@@ -1,0 +1,53 @@
+{
+  "feature": "mining_dimension:ladder",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 4
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:has_sturdy_face",
+            "offset": [
+              1,
+              -2,
+              0
+            ],
+            "direction": "up"
+          },
+          {
+            "type": "minecraft:has_sturdy_face",
+            "offset": [
+              -1,
+              -2,
+              0
+            ],
+            "direction": "up"
+          },
+          {
+            "type": "minecraft:has_sturdy_face",
+            "offset": [
+              0,
+              -2,
+              1
+            ],
+            "direction": "up"
+          },
+          {
+            "type": "minecraft:has_sturdy_face",
+            "offset": [
+              0,
+              -2,
+              -1
+            ],
+            "direction": "up"
+          }
+        ]
+      }
+    }
+  ]
+}

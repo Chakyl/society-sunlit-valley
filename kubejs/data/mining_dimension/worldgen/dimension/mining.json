@@ -1,0 +1,11 @@
+{
+  "type": "mining_dimension:mining",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "mining_dimension:cave"
+    },
+    "settings": "minecraft:overworld"
+  }
+}

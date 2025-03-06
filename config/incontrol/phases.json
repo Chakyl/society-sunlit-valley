@@ -12,5 +12,11 @@
       "daycount": "repeat(1,0,5)",
       "time": "range(15000,15050)"
     }
+  },
+  {
+    "name": "vexsummon",
+    "conditions": {
+      "time": "range(20000,24000)"
+    }
   }
 ]

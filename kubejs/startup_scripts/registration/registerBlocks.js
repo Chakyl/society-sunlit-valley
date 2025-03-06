@@ -47,16 +47,6 @@ StartupEvents.registry("block", (e) => {
       });
     });
 
-    e.create("society:boulder")
-    .defaultCutout()
-    .soundType("stone")
-    .hardness(4.5)
-    .resistance(9.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:needs_stone_tool")
-    .model("society:block/boulder");
-
   e.create("society:geode_node")
     .box(4, 0, 4, 12, 9, 12)
     .defaultCutout()
@@ -90,6 +80,24 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_diamond_tool")
     .model("society:block/omni_geode_node");
 
+  const createBoulder = (type) => {
+    e.create(`society:${type}`)
+      .texture("up", `society:block/${type}_top`)
+      .texture("down", `society:block/${type}_bottom`)
+      .texture("north", `society:block/${type}_side`)
+      .texture("east", `society:block/${type}_side`)
+      .texture("south", `society:block/${type}_side`)
+      .texture("west", `society:block/${type}_side`)
+      .mapColor("stone")
+      .soundType("stone")
+      .hardness(4.5)
+      .resistance(9.0)
+      .requiresTool(true)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .tagBlock("minecraft:needs_iron_tool")
+      .texture("particle", `society:block/${type}_side`);
+  };
+  createBoulder("boulder")
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)
@@ -507,5 +515,4 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .model("society:block/fantasy_catalog")
     .displayName(":axe: §eFantasy Catalog");
-
 });

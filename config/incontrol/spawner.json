@@ -72,5 +72,20 @@
       "dimension": "mining_dimension:mining",
       "maxthis": 10
     }
+  },
+  {
+    "mob": "minecraft:vex",
+    "phase": "vexsummon",
+    "persecond": 1,
+    "attempts": 3,
+    "amount": {
+      "minimum": 1,
+      "maximum": 3
+    },
+    "conditions": {
+      "dimension": "mining_dimension:mining",
+      "mindist": 10,
+      "maxthis": 20
+    }
   }
 ]

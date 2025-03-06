@@ -87,33 +87,42 @@
     "air": ["minecraft:cave", "minecraft:cave_extra_underground"]
   },
   "features": [
-    ["minecraft:lake_lava_underground"],
-    ["minecraft:monster_room", "minecraft:monster_room_deep"],
+
+    [
+      "mining_dimension:ladder",
+      "mining_dimension:rock"
+    ],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
     [],
     [],
     [
-      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
       "minecraft:ore_diorite_upper",
       "minecraft:ore_diorite_lower",
       "minecraft:ore_andesite_upper",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond_buried",
-      "minecraft:underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel",
-      "create:zinc_ore"
+      "minecraft:ore_andesite_lower"
     ],
     [],
-    ["minecraft:spring_water"],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal"
+    ],
+    [],
     [
       "minecraft:glow_lichen",
       "mining_dimension:blackstone_caves/magma_patch_floor",
@@ -121,7 +130,6 @@
       "mining_dimension:blackstone_caves/basalt_patch_floor",
       "mining_dimension:blackstone_caves/blackstone_patch_ceiling",
       "minecraft:lake_lava_underground"
-    ],
-    ["minecraft:freeze_top_layer"]
+    ]
   ]
 }
