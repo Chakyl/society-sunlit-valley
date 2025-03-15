@@ -64,15 +64,15 @@ StartupEvents.registry("block", (e) => {
       });
     });
 
-  // e.create("society:boulder")
-  //   .defaultCutout()
-  //   .soundType("stone")
-  //   .hardness(4.5)
-  //   .resistance(9.0)
-  //   .requiresTool(true)
-  //   .tagBlock("minecraft:mineable/pickaxe")
-  //   .tagBlock("minecraft:needs_stone_tool")
-  //   .model("society:block/boulder");
+  e.create("society:boulder")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(4.5)
+    .resistance(9.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_stone_tool")
+    .model("society:block/boulder");
 
   e.create("society:geode_node")
     .box(4, 0, 4, 12, 9, 12)

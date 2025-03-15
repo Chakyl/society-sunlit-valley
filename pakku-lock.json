@@ -352,6 +352,42 @@
             ]
         },
         {
+            "pakku_id": "Ir6eZjH8REf1Jox9",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "archery-expansion"
+            },
+            "name": {
+                "curseforge": "Archery Expansion"
+            },
+            "id": {
+                "curseforge": "1164945"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ArcheryExpansion-forge-1.20.1-1.0.4-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6299/428/ArcheryExpansion-forge-1.20.1-1.0.4-all.jar",
+                    "id": "6299428",
+                    "parent_id": "1164945",
+                    "hashes": {
+                        "sha1": "a21e84ca1685e2308ba29b6f638c89e3e3bd6bf0",
+                        "md5": "b991ee850acd30cc86df4b4401a81ebf"
+                    },
+                    "required_dependencies": [],
+                    "size": 365080,
+                    "date_published": "2025-03-13T11:11:28.550Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Z5ABSfuXE0jplGgO",
             "type": "MOD",
             "slug": {
@@ -2909,6 +2945,49 @@
                     "required_dependencies": [],
                     "size": 373450,
                     "date_published": "2025-01-01T05:07:58.170Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "HkGnO1qYViqd9xNT",
+            "pakku_links": [
+                "UgI7EbeCzWodOBqx",
+                "RfQus0WBOcfcKZ5x"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "doom-gloom"
+            },
+            "name": {
+                "curseforge": "Doom & Gloom"
+            },
+            "id": {
+                "curseforge": "1130903"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Doom  Gloom 1.20.1-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5869/577/Doom  Gloom 1.20.1-1.0.2.jar",
+                    "id": "5869577",
+                    "parent_id": "1130903",
+                    "hashes": {
+                        "sha1": "116857047ca9d2dc3e2e2510186e993e6df7ea46",
+                        "md5": "ac94a2f11ae42324ebfd62672298e7d9"
+                    },
+                    "required_dependencies": [
+                        "382216",
+                        "769203"
+                    ],
+                    "size": 6882167,
+                    "date_published": "2024-11-02T21:44:19.623Z"
                 }
             ]
         },
@@ -6894,6 +6973,47 @@
             ]
         },
         {
+            "pakku_id": "RfQus0WBOcfcKZ5x",
+            "pakku_links": [
+                "UgI7EbeCzWodOBqx"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "oreganized"
+            },
+            "name": {
+                "curseforge": "Oreganized"
+            },
+            "id": {
+                "curseforge": "769203"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Oreganized 1.20.1-3.1.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6276/242/Oreganized 1.20.1-3.1.4.jar",
+                    "id": "6276242",
+                    "parent_id": "769203",
+                    "hashes": {
+                        "sha1": "3895ca73b13f269e9be4e83bc7f5108e32d0fa9d",
+                        "md5": "dc02f5d5d449e206d2bc50fa3e551d30"
+                    },
+                    "required_dependencies": [
+                        "382216"
+                    ],
+                    "size": 6685784,
+                    "date_published": "2025-03-07T19:20:17.583Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "tJ8QX2V4rACVXhm2",
             "type": "MOD",
             "slug": {
@@ -8607,6 +8727,44 @@
                     ],
                     "size": 5362591,
                     "date_published": "2024-11-22T13:08:59.783Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ibctoZWAgIVADnLx",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "snuffles"
+            },
+            "name": {
+                "curseforge": "Snuffles"
+            },
+            "id": {
+                "curseforge": "556372"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "snuffles-1.0.7.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4579/538/snuffles-1.0.7.jar",
+                    "id": "4579538",
+                    "parent_id": "556372",
+                    "hashes": {
+                        "sha1": "231822b118fff9627ddf8c5b9f58c8d28160cd86",
+                        "md5": "4d90f07e58e199db61fd57cdc4904bc2"
+                    },
+                    "required_dependencies": [],
+                    "size": 219393,
+                    "date_published": "2023-06-11T05:14:19.783Z"
                 }
             ]
         },

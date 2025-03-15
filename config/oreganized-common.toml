@@ -1,0 +1,17 @@
+
+#Common
+[common]
+	#Should lead poisoning events give just Poison instead of Brain Damage?
+	poisonInsteadOfBrainDamage = false
+	#Should lead ore spawn dust clouds when broken without adjacent water?
+	leadDustCloud = true
+	#Pillagers have a chance to spawn with a lead bolt in their offhand
+	pillagerSpawnWithBolts = true
+	#The scribe is able to silk-touch pickaxe-related blocks
+	scribeSilkTouchStone = true
+	#Time in ticks molten lead waits until flowing downwards
+	#Range: 0 ~ 2000
+	moltenLeadDelay = 200
+	#Can lead blocks be placed into a cauldron to melt?
+	cauldronLeadMelting = true
+

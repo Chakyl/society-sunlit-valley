@@ -572,6 +572,17 @@
         "value": 1024
       }
     },
+    "oreganized:kinetic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
+      }
+    },
     "additional_attributes:looting": {
       "enabled": false,
       "min": {
