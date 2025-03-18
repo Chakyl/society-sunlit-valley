@@ -19,7 +19,7 @@ const checkConditions = (e) => {
     target.boundingBox.inflate(1)
   ).length;
 
-  if (entities > 5) return false;
+  if (entities > 6) return false;
 
   return true;
 };
@@ -555,7 +555,7 @@ ItemEvents.entityInteracted((e) => {
       ) {
         if (player.cooldowns.isOnCooldown(item)) return;
         data.affection = affection + 100;
-        item.count--;
+        if (!player.isCreative()) item.count--;
         server.runCommandSilent(
           `playsound aquaculture:fish_flop block @a ${player.x} ${player.y} ${player.z}`
         );
@@ -571,7 +571,7 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        player.addItemCooldown(item, 10);
+        player.addItemCooldown(item, 5);
       }
       if (item === "society:magic_shears")
         handleMagicHarvest(name, nonIdType, data, interactionCooldown, e);

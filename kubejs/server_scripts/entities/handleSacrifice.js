@@ -1,18 +1,21 @@
 EntityEvents.death((e) => {
   const { source, level, server, entity } = e;
+  const player = source.player;
   if (
-    source.player &&
-    source.player.getType() === "minecraft:player" &&
+    player &&
+    player.getType() === "minecraft:player" &&
     ["minecraft:sheep", "meadow:wooly_sheep"].includes(entity.type) &&
-    source.player.stages.has("sacrificial_lamb")
+    player.stages.has("sacrificial_lamb")
   ) {
     let sacrificeAffection = entity.persistentData.getInt("affection");
     if (sacrificeAffection < 200) return;
     let witnesses = level
-      .getEntitiesWithin(source.player.boundingBox.inflate(8))
-      .filter((entity) => global.checkEntityTag(entity.type, "society:husbandry_animal"));
+      .getEntitiesWithin(player.boundingBox.inflate(8))
+      .filter((entity) =>
+        global.checkEntityTag(entity, "society:husbandry_animal")
+      );
     server.runCommandSilent(
-      `playsound legendarycreatures:corpse_eater_death block @a ${source.player.x} ${source.player.y} ${source.player.z}`
+      `playsound legendarycreatures:corpse_eater_death block @a ${player.x} ${player.y} ${player.z}`
     );
     witnesses.forEach((animal) => {
       if (Math.random() < 0.5) {

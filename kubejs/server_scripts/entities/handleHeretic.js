@@ -3,7 +3,7 @@ EntityEvents.death((e) => {
   if (
     source.player &&
     source.player.getType() === "minecraft:player" &&
-    global.checkEntityTag(entity.type, "society:husbandry_animal") &&
+    global.checkEntityTag(entity, "society:husbandry_animal") &&
     source.player.stages.has("heretic")
   ) {
     let affection = entity.persistentData.getInt("affection");
