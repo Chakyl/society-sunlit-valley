@@ -13,9 +13,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(
-        Text.gray("Makes batteries from lightning storms. Doesn't protect area")
-      );
+      item.tooltip(Text.gray("Makes batteries from lightning storms. Doesn't protect area"));
       item.modelJson({
         parent: "society:block/charging_rod_off",
       });
@@ -65,9 +63,7 @@ StartupEvents.registry("block", (event) => {
       }
       if (block.properties.get("mature").toLowerCase() === "true") {
         block.popItemFromFace(
-          Item.of(
-            `${upgraded && season === "winter" ? 3 : 1}x society:battery`
-          ),
+          Item.of(`${upgraded && season === "winter" ? 3 : 1}x society:battery`),
           "up"
         );
         server.runCommandSilent(
@@ -79,7 +75,7 @@ StartupEvents.registry("block", (event) => {
         block.set(block.id, {
           working: false,
           mature: false,
-          upgraded: block.properties.get("upgraded"),
+          upgraded: upgraded,
           stage: "0",
         });
       }
@@ -94,12 +90,7 @@ StartupEvents.registry("block", (event) => {
         block.properties.get("mature").toLowerCase() === "false"
       ) {
         const season = global.getSeasonFromLevel(level);
-        if (
-          (!upgraded && season === "winter") ||
-          !level.raining ||
-          !block.canSeeSky
-        )
-          return;
+        if ((!upgraded && season === "winter") || !level.raining || !block.canSeeSky) return;
         if (season !== "winter" && !level.thundering) return;
         level.spawnParticles(
           "minecraft:campfire_cosy_smoke",
@@ -126,13 +117,13 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.handleBETick(entity, null, 1);
+        global.handleBETick(entity, null, 5);
       });
     }).blockstateJson = {
     multipart: [
       { apply: { model: "society:block/charging_rod_particle" } },
       {
-        when: { working: false, upgraded: false, mature: false  },
+        when: { working: false, upgraded: false, mature: false },
         apply: { model: "society:block/charging_rod_off" },
       },
       {
@@ -144,11 +135,11 @@ StartupEvents.registry("block", (event) => {
         apply: { model: "society:block/charging_rod_done" },
       },
       {
-        when: { working: false, upgraded: true, mature: false  },
+        when: { working: false, upgraded: true, mature: false },
         apply: { model: "society:block/charging_rod_upgraded_off" },
       },
       {
-        when: { working: true, upgraded: true, mature: false  },
+        when: { working: true, upgraded: true, mature: false },
         apply: { model: "society:block/charging_rod_upgraded" },
       },
       {

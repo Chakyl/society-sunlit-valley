@@ -31,8 +31,11 @@ ItemEvents.tooltip((tooltip) => {
       case "sun":
         value = 4096;
         break;
+      case "iridium_coin":
+        value = 32768;
+        break;
       case "ancient_coin":
-        value = 253952;
+        value = 262144;
         break;
       case "prismatic_coin":
         value = 16252928;
@@ -63,6 +66,7 @@ ItemEvents.tooltip((tooltip) => {
     "numismatics:cog",
     "numismatics:crown",
     "numismatics:sun",
+    "numismatics:iridium_coin",
     "numismatics:ancient_coin",
     "numismatics:prismatic_coin",
   ];
@@ -70,9 +74,7 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(
-            `${calculateCost(coin.split(":")[1], 1, item.count)} :coin:`
-          ),
+          Text.white(`${calculateCost(coin.split(":")[1], 1, item.count)} :coin:`),
           Text.gray(" Stack value"),
         ]);
       } else {
@@ -145,15 +147,19 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
     tooltip.add(artifact.item, Text.gray(":funeral_urn: Artifact"));
   });
-  tooltip.add(
-    "society:fish_pond",
-    Text.darkAqua("Needs a 3x4 of water behind pond")
-  );
+  tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
+    if (item.nbt) {
+      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type")].item}`))
+      text.add(2, Text.aqua(`Population: ${item.nbt.get("population")}/${item.nbt.get("max_population")} :fish:`));
+    } else {
+      text.add(1,Text.gray("Cultivates fish, roe, and various items"));
+      text.add(2,Text.gray("Right Click with a fish to add it to the pond"));
+      text.add(3,Text.gray("Shift + Right Click with an empty hand to take one out"));
+      text.add(4,Text.darkAqua("Needs a 3x4 of water behind pond"));
+    }
+  });
   // Furniture
-  tooltip.add(
-    "tanukidecor:diy_workbench",
-    Text.gray("Crafts any Catalog item for cheap")
-  );
+  tooltip.add("tanukidecor:diy_workbench", Text.gray("Crafts any Catalog item for cheap"));
   tooltip.add("society:tanuki_catalog", [
     Text.gray("Right click with 2 §6Gold Coins"),
     Text.gray("to purchase a §aTanuki Leaf§r."),
@@ -177,49 +183,17 @@ ItemEvents.tooltip((tooltip) => {
       tooltip.add(item, Text.green(":leaves: Tanuki collection"));
     }
   });
-  tooltip.add(
-    "society:architects_digest",
-    Text.gray("Used to craft :house: §fModern§r furniture")
-  );
-  tooltip.add(
-    "society:tanuki_leaf",
-    Text.gray("Used to craft :leaves: §aTanuki§r furniture")
-  );
-  tooltip.add(
-    /fantasyfurniture/,
-    Text.yellow(":crystal_ball: Fantasy collection")
-  );
-  tooltip.add(
-    "society:fantasy_dust",
-    Text.gray("Used to craft :leaves: §eFantasy§r furniture")
-  );
+  tooltip.add("society:architects_digest", Text.gray("Used to craft :house: §fModern§r furniture"));
+  tooltip.add("society:tanuki_leaf", Text.gray("Used to craft :leaves: §aTanuki§r furniture"));
+  tooltip.add(/fantasyfurniture/, Text.yellow(":crystal_ball: Fantasy collection"));
+  tooltip.add("society:fantasy_dust", Text.gray("Used to craft :leaves: §eFantasy§r furniture"));
   // Hammers
-  tooltip.add(
-    "justhammers:small_core",
-    Text.gray("Crafts hammers that mine a 3x3x1 area")
-  );
-  tooltip.add(
-    "justhammers:impact_core",
-    Text.gray("Crafts hammers that mine a 3x3x3 area")
-  );
-  tooltip.add(
-    "justhammers:reinforced_core",
-    Text.gray("Crafts hammers that mine a 5x5x1 area")
-  );
-  tooltip.add(
-    "justhammers:reinforced_impact_core",
-    Text.gray("Crafts hammers that mine a 5x5x3 area")
-  );
-  tooltip.add(
-    "justhammers:destructor_core",
-    Text.gray("Crafts hammers that mine a 5x5x5 area")
-  );
+  tooltip.add("justhammers:small_core", Text.gray("Crafts hammers that mine a 3x3x1 area"));
+  tooltip.add("justhammers:impact_core", Text.gray("Crafts hammers that mine a 3x3x3 area"));
   // Upgrades:
   tooltip.add(
     "society:ancient_cog",
-    Text.green(
-      "Use on §2Seed Maker§a to give it a 5% chance of producing an Ancient Fruit Seed"
-    )
+    Text.green("Use on §2Seed Maker§a to give it a 5% chance of producing an Ancient Fruit Seed")
   );
   tooltip.add(
     "society:stone_hand",
@@ -235,20 +209,13 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:black_opal",
-    Text.green(
-      "Use on §2Crystalarium§a to give it a 10% chance of producing pristine items"
-    )
+    Text.green("Use on §2Crystalarium§a to give it a 10% chance of producing pristine items")
   );
   tooltip.add(
     "society:tiny_gnome",
-    Text.green(
-      "Use on §2Loom§a to give it a 25% chance of producing rare furniture"
-    )
+    Text.green("Use on §2Loom§a to give it a 25% chance of producing rare furniture")
   );
-  tooltip.add(
-    "society:ancient_roe",
-    Text.green("Use on §2Fish Smoker§a to double output")
-  );
+  tooltip.add("society:ancient_roe", Text.green("Use on §2Fish Smoker§a to double output"));
   tooltip.add(
     "society:frosted_tip",
     Text.green("Use on §2Charging Rod§a to work and triple output in winter")
@@ -261,10 +228,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:inserter",
     Text.green("Use on §2Ancient Cask§a to let it process 4 items at a time")
   );
-  tooltip.add(
-    "society:cordycep",
-    Text.green("Use on §2Dehydrator§a to double mushroom output")
-  );
+  tooltip.add("society:cordycep", Text.green("Use on §2Dehydrator§a to double mushroom output"));
   tooltip.add(
     ["vintagedelight:gearo_berry", "minecraft:sweet_berries"],
     Text.gray("Will only grow when planted on farmland")
@@ -329,22 +293,10 @@ ItemEvents.tooltip((tooltip) => {
     "dew_drop_farmland_growth:pristine_quality_fertilizer",
     Text.green("Supremely increases the chance of quality crops on harvest")
   );
-  tooltip.add(
-    "etcetera:handbell",
-    Text.gray("Calls non-sitting pets and allays to you when rung")
-  );
-  tooltip.add(
-    "farm_and_charm:pitchfork",
-    Text.gray("Turns Fertilized Farmland into Dirt")
-  );
-  tooltip.add(
-    "farm_and_charm:pitchfork",
-    Text.green("50% chance to recover Fertilizer")
-  );
-  tooltip.add(
-    "farm_and_charm:pitchfork",
-    Text.red("Does not work on Hydrating Farmland")
-  );
+  tooltip.add("etcetera:handbell", Text.gray("Calls non-sitting pets and allays to you when rung"));
+  tooltip.add("farm_and_charm:pitchfork", Text.gray("Turns Fertilized Farmland into Dirt"));
+  tooltip.add("farm_and_charm:pitchfork", Text.green("50% chance to recover Fertilizer"));
+  tooltip.add("farm_and_charm:pitchfork", Text.red("Does not work on Hydrating Farmland"));
   tooltip.add(
     ["farm_and_charm:silo_wood", "farm_and_charm:silo_copper"],
     Text.gray("Dries grains placed inside")
@@ -353,14 +305,8 @@ ItemEvents.tooltip((tooltip) => {
     ["farm_and_charm:silo_wood", "farm_and_charm:silo_copper"],
     Text.green("Can be expanded to a max of 3x9x3")
   );
-  tooltip.add(
-    "farmersdelight:cooking_pot",
-    Text.green("Automatable using cooking guide")
-  );
-  tooltip.add(
-    "meadow:cooking_cauldron",
-    Text.gray("Decorative, has no recipes")
-  );
+  tooltip.add("farmersdelight:cooking_pot", Text.green("Automatable using cooking guide"));
+  tooltip.add("meadow:cooking_cauldron", Text.gray("Decorative, has no recipes"));
   tooltip.add(
     [
       "candlelight:red_nether_bricks_stove",
@@ -395,6 +341,8 @@ ItemEvents.tooltip((tooltip) => {
       "society:mayonnaise_machine",
       "society:preserves_jar",
       "society:seed_maker",
+      "society:tapper",
+      "society:recycling_machine",
     ],
     Text.gold(":gear: Artisan Machine")
   );
@@ -412,126 +360,66 @@ ItemEvents.tooltip((tooltip) => {
   ["society:large_warped_milk", "society:warped_milk"].forEach((milk) => {
     tooltip.add(
       milk,
-      Text.aqua(
-        "Milked from Wooly Cows that come through portals in Warped Forests"
-      )
+      Text.aqua("Milked from Wooly Cows that come through portals in Warped Forests")
     );
   });
-  tooltip.add(
-    "society:fine_wool",
-    Text.gray("Collected from happy Sheep and Rabbits")
-  );
-  tooltip.add(
-    "society:truffle",
-    Text.gray("Foraged by certain farm animals such as pigs")
-  );
+  tooltip.add("society:fine_wool", Text.gray("Collected from happy Sheep and Rabbits"));
+  tooltip.add("society:truffle", Text.gray("Foraged by certain farm animals such as pigs"));
   tooltip.add("society:milk_pail", Text.gray("Milks farm animals"));
   tooltip.add("society:tubasmoke_stick", Text.gray("Right click to smoke"));
   tooltip.add("society:tubasmoke_stick", Text.red("Must be 18+ years old"));
-  tooltip.add(
-    "society:cornucopia",
-    Text.gray("Harvest fruits from nearby trees")
-  );
+  tooltip.add("society:cornucopia", Text.gray("Harvest fruits from nearby trees"));
   tooltip.add(
     "society:animal_feed",
     Text.gray("Feeds farm animals manually or using Feeding Troughs")
   );
-  tooltip.add(
-    "society:magic_shears",
-    Text.gray("Harvests drops from farm animals")
-  );
+  tooltip.add("society:magic_shears", Text.gray("Harvests drops from farm animals"));
   tooltip.add("vintagedelight:deluxe_burger", Text.gray("Burger? I hardly..."));
-  tooltip.add(
-    "society:magic_shears",
-    Text.gray("with only a little discomfort!")
-  );
-  tooltip.add(
-    "society:magic_shears",
-    Text.red("Requires animals to trust you")
-  );
-  tooltip.add(
-    "society:miracle_potion",
-    Text.gray("Used to breed farm animals")
-  );
-  tooltip.add(
-    "meadow:cheese_stick",
-    Text.gray("Made in Fondue with cheese and bread")
-  );
+  tooltip.add("society:magic_shears", Text.gray("with only a little discomfort!"));
+  tooltip.add("society:magic_shears", Text.red("Requires animals to trust you"));
+  tooltip.add("society:miracle_potion", Text.gray("Used to breed farm animals"));
+  tooltip.add("meadow:cheese_stick", Text.gray("Made in Fondue with cheese and bread"));
   tooltip.add(
     "society:friendship_necklace",
     Text.gray('Used with the "Best Friends Forever" Husbandry skill')
   );
-  tooltip.add(
-    "society:frozen_tear",
-    Text.gray("Found in Slush. Chance increased with fortune")
-  );
-  tooltip.add(
-    "liltractor:liltractor",
-    Text.gray("Shift + Right Click to view inventory")
-  );
-  tooltip.add(
-    "liltractor:liltractor",
-    Text.gray("Space while riding to change modes")
-  );
+  tooltip.add("society:frozen_tear", Text.gray("Found in Slush. Chance increased with fortune"));
+  tooltip.add("liltractor:liltractor", Text.gray("Shift + Right Click to view inventory"));
+  tooltip.add("liltractor:liltractor", Text.gray("Space while riding to change modes"));
   tooltip.add(
     ["displaydelight:food_plate", "displaydelight:small_food_plate"],
     Text.gray("Displays certain Farmer's Delight foods as blocks")
   );
   tooltip.add("liltractor:liltractor", Text.gray("Dyeable"));
-  tooltip.add(
-    "society:prize_ticket",
-    Text.gray("Use on a Prize Machine for something good!")
-  );
+  tooltip.add("society:prize_ticket", Text.gray("Use on a Prize Machine for something good!"));
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
-  tooltip.add(
-    "tanukidecor:slot_machine",
-    Text.gray("Right click with any legal tender")
-  );
-  tooltip.add(
-    "society:relic_trove",
-    Text.gray("Can be opened using an Extractinator")
-  );
-  tooltip.add(
-    "society:artifact_trove",
-    Text.gray("Can be opened using an Extractinator")
-  );
-  tooltip.add(
-    "society:geode_buster",
-    Text.gray("Right click with geode in offhand")
-  );
+  tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
+  tooltip.add("society:relic_trove", Text.gray("Can be opened using an Extractinator"));
+  tooltip.add("society:artifact_trove", Text.gray("Can be opened using an Extractinator"));
+  tooltip.add("society:geode_buster", Text.gray("Right click with geode in offhand"));
   tooltip.add(
     "society:dragontooth_axe",
     Text.red("Will break if wielded by one without the Dragonslayer skill")
   );
+  tooltip.add("society:kinetic_blueprint", Text.gray("Not consumed in crafting"));
+  tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
   tooltip.add(
-    "society:kinetic_blueprint",
-    Text.gray("Not consumed in crafting")
+    "botania:apothecary_default",
+    Text.gold(":classical_building: Abandoned Farm reward")
   );
-  tooltip.add(
-    "society:kinetic_blueprint",
-    Text.gold(":classical_building: Boiler Room reward")
-  );
-  tooltip.add(
-    "mining_dimension:teleporter",
-    Text.gold(":classical_building: Vault reward")
-  );
-  tooltip.add(
-    "relics:magic_mirror",
-    Text.gold(":classical_building: Crafts Room reward")
-  );
+  tooltip.add("mining_dimension:teleporter", Text.gold(":classical_building: Vault reward"));
+  tooltip.add("relics:magic_mirror", Text.gold(":classical_building: Crafts Room reward"));
   tooltip.add(
     "moreminecarts:chiseled_organic_glass",
     Text.gray("Crops underneath grow in any season")
   );
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
+  tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
   tooltip.add(
     "gag:time_sand_pouch",
     Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")
   );
-  tooltip.add(
-    "extractinator:extractinator",
-    Text.gray("Right click with a geode to process")
-  );
+  tooltip.add("extractinator:extractinator", Text.gray("Right click with a geode to process"));
   tooltip.add(
     ["moreminecarts:chunkrodite_block", "moreminecarts:chunkrodite"],
     Text.gray("Adds time to Fueled Chunk Loader")
@@ -540,26 +428,10 @@ ItemEvents.tooltip((tooltip) => {
     "moreminecarts:chunk_loader",
     Text.green("Loads a 3x3 area using Chunkroderite and other items")
   );
-  tooltip.add(
-    "vintagedelight:evaporator",
-    Text.gray("Place next to water to make salt")
-  );
-  tooltip.add(
-    "treetap:tap",
-    Text.gray("Place on logs then click with a bucket")
-  );
-  tooltip.add(
-    "farmersdelight:rich_soil",
-    Text.gray("Grows colonies from red and")
-  );
-  tooltip.add(
-    "farmersdelight:rich_soil",
-    Text.gray("brown mushrooms planted on it")
-  );
-  tooltip.add(
-    "farmersdelight:tomato_seeds",
-    Text.red("Quality of seed has no effect")
-  );
+  tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
+  tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
+  tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
+  tooltip.add("farmersdelight:tomato_seeds", Text.red("Quality of seed has no effect"));
 
   tooltip.add("farm_and_charm:strawberry_seed", Text.white("Fertile Seasons:"));
   tooltip.add("farm_and_charm:strawberry_seed", Text.green(" Spring"));
@@ -724,6 +596,7 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(gem.item, Text.gray(":gem: Gem"));
   });
   [
+    "society:sparkstone",
     "minecraft:emerald",
     "minecraft:diamond",
     "minecraft:amethyst_shard",
@@ -808,15 +681,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:omni_geode",
   ];
   geodes.forEach((geode) => {
-    tooltip.add(
-      geode,
-      Text.gray("Something's inside! A Blacksmith can help break it open.")
-    );
+    tooltip.add(geode, Text.gray("Something's inside! A Blacksmith can help break it open."));
   });
   tooltip.addAdvanced("society:car_key", (item, advanced, text) => {
-    text.add(1, [
-      Text.gray("Right click on an Automobile to park inside the key"),
-    ]);
+    text.add(1, [Text.gray("Right click on an Automobile to park inside the key")]);
     if (item.nbt) {
       text.add(2, [Text.green("Car parked")]);
     } else {
@@ -841,20 +709,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.addAdvanced(
     ["society:pig_race_ticket", "society:multiplayer_pig_race_ticket"],
     (item, advanced, text) => {
-      text.add(1, [
-        Text.gold("Left click "),
-        Text.gray("to select pig to bet on"),
-      ]);
-      text.add(2, [
-        Text.gold("Right click "),
-        Text.gray("with bet in offhand to start"),
-      ]);
+      text.add(1, [Text.gold("Left click "), Text.gray("to select pig to bet on")]);
+      text.add(2, [Text.gold("Right click "), Text.gray("with bet in offhand to start")]);
       if (item.nbt) {
-        text.add(3, [
-          Text.gray(
-            `Betting on §${getPigColor(item.nbt.bet)}${item.nbt.bet} pig§r!`
-          ),
-        ]);
+        text.add(3, [Text.gray(`Betting on §${getPigColor(item.nbt.bet)}${item.nbt.bet} pig§r!`)]);
       } else {
         text.add(3, [Text.gray("No Pig selected")]);
       }
@@ -875,9 +733,7 @@ ItemEvents.tooltip((tooltip) => {
         ]);
         text.add(3, [
           Text.gray("Iron Ingot"),
-          Text.darkGray(
-            " - will emit redstone signal depending on the container status"
-          ),
+          Text.darkGray(" - will emit redstone signal depending on the container status"),
         ]);
         text.add(4, [
           Text.gold("Precision Mechanism"),
@@ -893,31 +749,33 @@ ItemEvents.tooltip((tooltip) => {
       }
     }
   );
+  const magnifyingBlocks = [
+    "Auto-Grabber",
+    "Artisan Hopper",
+    "Feeding Trough",
+    "Fish Pond Basket",
+    "Golden Clock",
+    "Mana Milker",
+    "All Sprinklers",
+  ];
+  // Translocators
+  tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {
+    if (tooltip.shift) {
+      magnifyingBlocks.forEach((block, index) => {
+        text.add(index + 1, Text.gold(block));
+      });
+    } else {
+      text.add(1, Text.green("Displays working area of some machines"));
+      text.add(2, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("] to view blocks")]);
+    }
+  });
   // Books
-  tooltip.add(
-    "society:yard_work_yearly",
-    Text.green("Right click to gain Farming experience")
-  );
-  tooltip.add(
-    "society:husbandry_hourly",
-    Text.green("Right click to gain Husbandry experience")
-  );
-  tooltip.add(
-    "society:mining_monthly",
-    Text.green("Right click to gain Mining experience")
-  );
-  tooltip.add(
-    "society:combat_quarterly",
-    Text.green("Right click to gain Adventuring experience")
-  );
-  tooltip.add(
-    "society:wet_weekly",
-    Text.green("Right click to gain Fishing experience")
-  );
-  tooltip.add(
-    "society:book_of_stars",
-    Text.green("Right click to gain experience in all skills")
-  );
+  tooltip.add("society:yard_work_yearly", Text.green("Right click to gain Farming experience"));
+  tooltip.add("society:husbandry_hourly", Text.green("Right click to gain Husbandry experience"));
+  tooltip.add("society:mining_monthly", Text.green("Right click to gain Mining experience"));
+  tooltip.add("society:combat_quarterly", Text.green("Right click to gain Adventuring experience"));
+  tooltip.add("society:wet_weekly", Text.green("Right click to gain Fishing experience"));
+  tooltip.add("society:book_of_stars", Text.green("Right click to gain experience in all skills"));
   tooltip.add(
     [
       "society:starcardi",
@@ -931,4 +789,7 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.red("Not placeable in Wine Racks")
   );
+  global.removedItems.forEach((item) => {
+    tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
+  });
 });

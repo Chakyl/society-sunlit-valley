@@ -307,7 +307,7 @@ const handleMagicHarvest = (name, type, data, interactionCooldown, e) => {
   );
   const capitalizedType = type.charAt(0).toUpperCase() + type.slice(1);
   const affection = data.getInt("affection");
-  const hearts = Math.floor(affection / 100);
+  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   let errorText = "";
 
   if (
@@ -373,7 +373,8 @@ ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
   const pet = global.checkEntityTag(target, "society:pet_animal");
   if (hand == "OFF_HAND") return;
-  if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
+  if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet)
+    return;
   const interactionCooldown = global.animalInteractionCooldown;
   loginResetFarmAnimal(target, level, interactionCooldown);
 
@@ -388,7 +389,7 @@ ItemEvents.entityInteracted((e) => {
       const peckish = !pet && level.time - ageLastFed > interactionCooldown;
       const hungry = !pet && level.time - ageLastFed > interactionCooldown * 2;
       const affection = data.getInt("affection");
-      const hearts = Math.floor(affection / 100);
+      const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
       initializeFarmAnimal(data, target, level);
       player.swing();
 
@@ -400,14 +401,7 @@ ItemEvents.entityInteracted((e) => {
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {
-        let timeMult = 1;
-        if (
-          target.type === "minecraft:goat" ||
-          target.type === "species:mammutilation"
-        )
-          timeMult = 2;
-        else if (target.type === "minecraft:sheep") timeMult = 1.5;
-
+        let timeMult = global.getMilkingTimeMult(target.type);
         handleMilk(
           name,
           nonIdType,
@@ -525,7 +519,7 @@ ItemEvents.entityInteracted((e) => {
         !data.bff
       ) {
         data.bff = true;
-        item.count--;
+        if (!player.isCreative()) item.count--;
         server.runCommandSilent(
           `playsound legendarycreatures:wisp_idle block @a ${player.x} ${player.y} ${player.z}`
         );
@@ -555,7 +549,7 @@ ItemEvents.entityInteracted((e) => {
       ) {
         if (player.cooldowns.isOnCooldown(item)) return;
         data.affection = affection + 100;
-        item.count--;
+        if (!player.isCreative()) item.count--;
         server.runCommandSilent(
           `playsound aquaculture:fish_flop block @a ${player.x} ${player.y} ${player.z}`
         );
@@ -571,7 +565,7 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        player.addItemCooldown(item, 10);
+        player.addItemCooldown(item, 4);
       }
       if (item === "society:magic_shears")
         handleMagicHarvest(name, nonIdType, data, interactionCooldown, e);

@@ -69,6 +69,27 @@ ServerEvents.recipes((e) => {
         },
       ],
     });
+    e.custom({
+      type: "create:emptying",
+      ingredients: [
+        {
+          item: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${juice}_grapejuice`,
+        },
+      ],
+      results: [
+        {
+          item: "vinery:wine_bottle",
+        },
+        {
+          amount: 250,
+          fluid: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${juice}_grape_juice`,
+        },
+      ],
+    });
   };
 
   grapeJuices.forEach((juice, index) => {
@@ -80,30 +101,13 @@ ServerEvents.recipes((e) => {
     type: "create:compacting",
     ingredients: [
       {
-        item: 'vinery:apple_mash',
+        item: "vinery:apple_mash",
       },
     ],
     results: [
-      {
-        amount: 50,
-        fluid: 'vinery:apple_juice'
-      },
-    ],
-  });
-  e.custom({
-    type: "create:filling",
-    ingredients: [
-      {
-        item: "vinery:wine_bottle",
-      },
       {
         amount: 250,
-        fluidTag: 'vinery:apple_juice',
-      },
-    ],
-    results: [
-      {
-        item: 'vinery:apple_juice',
+        fluid: "vinery:apple_juice",
       },
     ],
   });
@@ -111,30 +115,13 @@ ServerEvents.recipes((e) => {
     type: "create:compacting",
     ingredients: [
       {
-        item: 'society:ancient_fruit',
+        item: "society:ancient_fruit",
       },
     ],
     results: [
-      {
-        amount: 50,
-        fluid: 'society:ancient_fruit_juice'
-      },
-    ],
-  });
-  e.custom({
-    type: "create:filling",
-    ingredients: [
-      {
-        item: "vinery:wine_bottle",
-      },
       {
         amount: 250,
-        fluidTag: 'society:ancient_fruit_juice',
-      },
-    ],
-    results: [
-      {
-        item: 'society:ancient_juice',
+        fluid: "society:ancient_fruit_juice",
       },
     ],
   });
@@ -142,47 +129,13 @@ ServerEvents.recipes((e) => {
     type: "create:compacting",
     ingredients: [
       {
-        item: 'pamhc2trees:starfruititem',
+        item: "pamhc2trees:starfruititem",
       },
     ],
     results: [
-      {
-        amount: 125,
-        fluid: 'society:starfruit_juice'
-      },
-    ],
-  });
-  e.custom({
-    type: "create:filling",
-    ingredients: [
-      {
-        item: "vinery:wine_bottle",
-      },
       {
         amount: 250,
-        fluidTag: 'society:starfruit_juice',
-      },
-    ],
-    results: [
-      {
-        item: 'society:starfruit_juice',
-      },
-    ],
-  });
-  e.custom({
-    type: "create:filling",
-    ingredients: [
-      {
-        item: "minecraft:glass_bottle",
-      },
-      {
-        amount: 50,
-        fluidTag: 'relics:relic_experience',
-      },
-    ],
-    results: [
-      {
-        item: 'relics:relic_experience_bottle',
+        fluid: "society:starfruit_juice",
       },
     ],
   });

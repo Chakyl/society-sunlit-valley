@@ -216,10 +216,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 3), 0)
-        .set(
-          integerProperty.create("type", 0, global.seedMakerRecipes.length),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.seedMakerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
@@ -228,10 +225,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 3), 0)
-        .set(
-          integerProperty.create("type", 0, global.seedMakerRecipes.length),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.seedMakerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
@@ -266,17 +260,17 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+
       if (upgraded && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace("society:ancient_fruit_seed", facing);
       }
+      
       global.handleBERightClick(
         "unusualfishmod:crab_scuttling",
         click,
         global.seedMakerRecipes,
         3,
-        true,
-        false,
-        false
+        true
       );
     })
     .blockEntity((blockInfo) => {

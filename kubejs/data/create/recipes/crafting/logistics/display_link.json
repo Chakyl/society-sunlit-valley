@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:plates/silver"
+    },
+    "C": {
+      "item": "minecraft:redstone_torch"
+    },
+    "S": {
+      "item": "create:brass_casing"
+    }
+  },
+  "pattern": [
+    "C",
+    "S",
+    "A"
+  ],
+  "result": {
+    "item": "create:display_link"
+  },
+  "show_notification": true
+}

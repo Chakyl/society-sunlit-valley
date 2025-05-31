@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "R": {
+      "item": "minecraft:crafting_table"
+    },
+    "S": {
+      "item": "numismatics:sun"
+    }
+  },
+  "pattern": [
+    " B ",
+    "SCS",
+    " R "
+  ],
+  "result": {
+    "count": 3,
+    "item": "create:mechanical_crafter"
+  },
+  "show_notification": true
+}

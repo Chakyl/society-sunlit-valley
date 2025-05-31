@@ -10,6 +10,7 @@ global.mainUiElementIds = [
   "fishIcon",
   "fishName",
   "population",
+  "tapperMessage"
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};
@@ -84,8 +85,11 @@ global.calculateCoinValue = (coin) => {
     case "sun":
       value = 4096;
       break;
+    case "iridium_coin":
+      value = 32768;
+      break;
     case "ancient_coin":
-      value = 253952;
+      value = 262144;
       break;
     case "prismatic_coin":
       value = 16252928;
@@ -148,85 +152,52 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   let time = isDay
     ? `:sunrise: ${extraOutput ? "§6Day§r" : ""}`
     : `:moon: ${extraOutput ? "§8Night§r" : ""}`;
-  if (
-    biomeTags.includes("minecraft:is_ocean") ||
-    biomeTags.includes("minecraft:is_beach")
-  ) {
-    printFunction(
-      `    :ocean: ${extraOutput ? "§3Ocean§r" : ""}${weather} ${time}`
-    );
+  if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
+    printFunction(`    :ocean: ${extraOutput ? "§3Ocean§r" : ""}${weather} ${time}`);
     switch (season) {
       case "spring":
-        global.springOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.springOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "summer":
-        global.summerOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.summerOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "autumn":
-        global.autumnOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.autumnOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "winter":
-        global.winterOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.winterOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
     }
   } else if (biomeTags.includes("minecraft:is_river")) {
-    printFunction(
-      `    :droplet: ${extraOutput ? "§9River§r" : ""}${weather} ${time}`
-    );
+    printFunction(`    :droplet: ${extraOutput ? "§9River§r" : ""}${weather} ${time}`);
     switch (season) {
       case "spring":
-        global.springRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.springRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "summer":
-        global.summerRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.summerRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "autumn":
-        global.autumnRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.autumnRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "winter":
-        global.winterRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.winterRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
     }
   } else {
-    printFunction(
-      `:bubbles: ${extraOutput ? "§bFresh§r" : ""}${weather} ${time}`
-    );
+    printFunction(`:bubbles: ${extraOutput ? "§bFresh§r" : ""}${weather} ${time}`);
     switch (season) {
       case "spring":
-        global.springFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.springFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "summer":
-        global.summerFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.summerFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "autumn":
-        global.autumnFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.autumnFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "winter":
-        global.winterFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.winterFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
     }
   }
@@ -266,3 +237,107 @@ global.netherRadar = (e, local, printFunction) => {
   }
   return netherFish;
 };
+
+global.artisanMachineDefinitions = [
+  {
+    id: "society:loom",
+    recipes: global.loomRecipes,
+    stageCount: 1,
+    maxInput: 5,
+    upgrade: "society:tiny_gnome",
+  },
+  {
+    id: "society:aging_cask",
+    recipes: global.agingCaskRecipes,
+    stageCount: 10,
+    maxInput: 1,
+    upgrade: "society:broken_clock",
+  },
+  {
+    id: "society:ancient_cask",
+    recipes: global.ancientCaskRecipes,
+    stageCount: 20,
+    maxInput: 1,
+    upgrade: "society:inserter",
+  },
+  {
+    id: "society:crystalarium",
+    recipes: global.crystalariumCrystals,
+    stageCount: 5,
+    maxInput: 1,
+    upgrade: "society:black_opal",
+  },
+  {
+    id: "society:deluxe_worm_farm",
+    recipes: global.deluxeWormFarmRecipes,
+    stageCount: 2,
+    maxInput: 4,
+    upgrade: "society:infinity_worm",
+  },
+  {
+    id: "society:fish_smoker",
+    recipes: global.fishSmokerRecipes,
+    stageCount: 2,
+    maxInput: 1,
+    upgrade: "society:ancient_roe",
+  },
+  {
+    id: "society:bait_maker",
+    recipes: global.baitMakerRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+  {
+    id: "society:dehydrator",
+    recipes: global.dehydratorRecipes,
+    stageCount: 1,
+    maxInput: 8,
+    upgrade: "society:cordycep",
+  },
+  {
+    id: "society:mayonnaise_machine",
+    recipes: global.mayonnaiseMachineRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+  {
+    id: "society:preserves_jar",
+    recipes: global.preservesJarRecipes,
+    stageCount: 3,
+    maxInput: 5,
+    upgrade: "society:stone_hand",
+  },
+  {
+    id: "society:seed_maker",
+    recipes: global.seedMakerRecipes,
+    stageCount: 1,
+    maxInput: 3,
+    upgrade: "society:ancient_cog",
+  },
+  {
+    id: "society:charging_rod",
+    recipes: "society:battery",
+    stageCount: 5,
+    maxInput: 1,
+  },
+  {
+    id: "society:espresso_machine",
+    recipes: global.espressoMachineRecipes,
+    stageCount: 1,
+    maxInput: 4,
+  },
+  {
+    id: "society:tapper",
+    recipes: global.tapperRecipes,
+    stageCount: 7,
+    maxInput: 1,
+  },
+  {
+    id: "society:recycling_machine",
+    recipes: global.recyclingMachineRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+];
+
+global.artisanMachineIds = global.artisanMachineDefinitions.map((x) => x.id);

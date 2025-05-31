@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "oreganized:lead_ingot"
+    },
+    "C": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "  A"
+  ],
+  "result": {
+    "item": "create:hand_crank"
+  },
+  "show_notification": true
+}

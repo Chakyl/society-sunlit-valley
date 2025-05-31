@@ -1,9 +1,9 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "numismatics:crown"
+    "item": "oreganized:silver_sheet"
   },
-  "loops": 5,
+  "loops": 4,
   "results": [
     {
       "chance": 120.0,
@@ -12,7 +12,7 @@
     },
     {
       "chance": 8.0,
-      "item": "numismatics:crown"
+      "item": "oreganized:silver_ingot"
     },
     {
       "chance": 8.0,
@@ -20,11 +20,11 @@
     },
     {
       "chance": 5.0,
-      "item": "create:sprocket"
+      "item": "numismatics:sprocket"
     },
     {
       "chance": 3.0,
-      "item": "minecraft:bevel"
+      "item": "numismatics:crown"
     }
   ],
   "sequence": [
@@ -67,7 +67,7 @@
           "item": "create:incomplete_precision_mechanism"
         },
         {
-          "tag": "forge:nuggets/iron"
+          "item": "numismatics:crown"
         }
       ],
       "results": [

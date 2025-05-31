@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "society:rubber"
+    },
+    "T": {
+      "item": "create:copper_casing"
+    }
+  },
+  "pattern": [
+    "T",
+    "P"
+  ],
+  "result": {
+    "item": "create:spout"
+  },
+  "show_notification": true
+}

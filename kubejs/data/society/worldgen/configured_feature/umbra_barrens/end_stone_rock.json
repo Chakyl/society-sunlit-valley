@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 139,
+          "data": {
+            "Name": "society:end_stone_boulder"
+          }
+        },
+        {
+          "weight": 10,
+          "data": {
+            "Name": "society:deepslate_sparkstone_ore"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "society:omni_geode_node"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "society:deepslate_iridium_ore"
+          }
+        }
+      ]
+    }
+  }
+}

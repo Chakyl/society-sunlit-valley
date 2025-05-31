@@ -18,7 +18,7 @@ StartupEvents.registry("block", (event) => {
     .model("society:block/auto_worm_farm")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTick(1200, 0, (entity) => {
         const { x, y, z } = entity.block;
         entity.inventory.insertItem("aquaculture:worm", false);
         entity.level.server.runCommandSilent(

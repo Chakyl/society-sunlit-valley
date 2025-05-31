@@ -2,10 +2,7 @@ console.info("[SOCIETY] addCupRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
   e.shapeless("8x herbalbrews:water_cup", ["minecraft:water_bucket"]);
-  e.shapeless("herbalbrews:milk_coffee", [
-    "herbalbrews:coffee",
-    "#society:small_milk",
-  ]);
+  e.shapeless("herbalbrews:milk_coffee", ["herbalbrews:coffee", "#society:small_milk"]);
   e.custom({
     type: "herbalbrews:kettle_brewing",
     experience: 0.8,
@@ -97,11 +94,7 @@ ServerEvents.recipes((e) => {
     },
   });
 
-  e.shapeless("society:latte", [
-    "society:espresso",
-    "society:espresso",
-    "society:steamed_milk",
-  ]);
+  e.shapeless("society:latte", ["society:espresso", "society:espresso", "society:steamed_milk"]);
   e.shapeless("society:mocha", [
     "society:espresso",
     "bakery:chocolate_jam",
@@ -118,7 +111,6 @@ ServerEvents.recipes((e) => {
     "society:ground_cinnamon",
     "society:steamed_milk",
   ]);
-
   e.shapeless("society:truffle_tea", [
     "herbalbrews:yerba_mate_tea",
     "society:truffle",

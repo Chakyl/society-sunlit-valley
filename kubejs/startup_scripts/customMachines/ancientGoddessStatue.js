@@ -12,7 +12,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Offer crates of crops to recieve the goddess' blessing"));
+      item.tooltip(Text.gray("Offer a stack of crops to recieve the Goddess' blessing"));
       item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
       item.modelJson({
         parent: "society:block/ancient_goddess_statue",
@@ -45,13 +45,13 @@ StartupEvents.registry("block", (event) => {
                 item === "vintagedelight:ghost_pepper" &&
                 item.count === 64
               ) {
-                block.popItemFromFace("4x society:artifact_trove", facing);
+                block.popItemFromFace("16x society:sparkstone", facing);
                 if (!player.isCreative()) item.count = item.count - 64;
                 successParticles(level, block)
               } else {
                 player.tell(
                   Text.aqua(
-                    `Give me 64 of something spicy for a special trove...`
+                    `Give me 64 of something spicy for something sparky..`
                   )
                 );
               }

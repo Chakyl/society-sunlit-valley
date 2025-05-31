@@ -226,7 +226,7 @@
 		{
 			dependencies: ["472F40ECF199DD42"]
 			description: [
-				"There are 6 tiers of &6Coins&r, and they can be crafted up or down from the previous tier."
+				"There are 6 main tiers of &6Coins&r, and they can be crafted up or down from the previous tier."
 				""
 				"These are their values:"
 				""
@@ -235,7 +235,7 @@
 				"- Iron (&616&r)"
 				"- Brass (&664&r)"
 				"- Gold (&6512&r)"
-				"- Netherite (&64096&r)"
+				"- Silver (&64096&r)"
 			]
 			id: "73A85902CE35A43A"
 			rewards: [{
@@ -258,7 +258,7 @@
 			description: [
 				"With coins in your pocket, you have enough capital to start spending freely!"
 				""
-				"Start your village off with a &6Blacksmith&r, an essential villager that can help you open geodes and get to the &6Nether&r."
+				"Start your village off with a &6Blacksmith&r, an essential villager that can help you upgrade tools, open geodes, and get to the &6Nether&r."
 				""
 				"[ \"See \", { \"text\": \"Buying Goods\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"20C76D194ECEDB76\" } }, \" for more info.\" ]"
 			]
@@ -271,9 +271,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "49204E37296B4563"
-				item: "minecraft:smithing_table"
-				type: "item"
+				id: "0E99D2F7380F51CF"
+				title: "Understood!"
+				type: "checkmark"
 			}]
 			title: "Starting Your Village"
 			x: 7.0d
@@ -318,7 +318,7 @@
 				type: "item"
 			}]
 			title: "Early Game Storage"
-			x: 7.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -629,6 +629,30 @@
 			}]
 			title: "Crop Quality"
 			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66D159252C70D5F2"]
+			description: [
+				"&6Villagers&r can be tough to move around. You can carry them by &6shift + right clicking&r when both hands are empty. This also works on animals too!"
+				""
+				"If you ever run out of &6Villager Spawn Crates&r, more can be purchased from the "
+				"{ \"text\": \"Market.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6ADD884F3FFE5D42\" } }"
+			]
+			icon: "minecraft:villager_spawn_egg"
+			id: "443F42C8AFDA0C36"
+			rewards: [{
+				id: "02B2AE534E71FF64"
+				item: "minecraft:villager_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				id: "751D998BA38362A4"
+				item: "minecraft:cartography_table"
+				type: "item"
+			}]
+			title: "Managing Villagers"
+			x: 7.0d
 			y: 0.0d
 		}
 	]

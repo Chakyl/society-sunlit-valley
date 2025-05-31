@@ -16,4 +16,7 @@
 		#This is was done for developers who has mods that causes compatibilities with waterframes (or watermedia)
 		#Let those modders test waterframes x incompatible mods (i see you stellarity owner)
 		forceDevMode = false
+		#Enables compatibility with shaders
+		#This is not enabled by default because i am tired
+		shaderMode = false
 

@@ -218,7 +218,7 @@ Ponder.registry((e) => {
 
         scene.idle(10);
 
-        scene.text(80, "Netherite is the final tier. It can brew every drink, and the brewing minigame is optional.")
+        scene.text(80, "Reinforced is the final tier. It can brew every drink, and the brewing minigame is optional.")
 
         scene.idle(80);
 

@@ -4,7 +4,7 @@ global.loomRecipes = [
   { input: "#minecraft:wool", output: ["society:canvas"] },
   { input: "etcetera:cotton_flower", output: ["society:canvas"] },
   { input: "society:fine_wool", output: ["society:merino_wool"] },
-  { input: "botania:mana_string", output: ['botania:manaweave_cloth'] },
+  { input: "botania:mana_string", output: ["botania:manaweave_cloth"] },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -74,26 +74,20 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+      
       if (upgraded && block.properties.get("mature") === "true" && rnd25()) {
         const furniture = Ingredient.of("#society:loot_furniture").itemIds;
-        block.popItemFromFace(
-          furniture[Math.floor(Math.random() * furniture.length)],
-          facing
-        );
+        block.popItemFromFace(furniture[Math.floor(Math.random() * furniture.length)], facing);
       }
-      if (
-        player.stages.has("rancher") &&
-        block.properties.get("mature") === "true"
-      ) {
-        block.popItemFromFace(global.loomRecipes[Number(block.properties.get("type").toLowerCase()) - 1].output[0], facing);
-      }
+
       global.handleBERightClick(
         "minecraft:block.wool.fall",
         click,
         global.loomRecipes,
         5,
         true,
-        true
+        true,
+        player.stages.has("rancher") ? 2 : 1
       );
     })
     .blockEntity((blockInfo) => {

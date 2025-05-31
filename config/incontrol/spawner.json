@@ -31,106 +31,19 @@
     }
   },
   {
-    "mob": "quark:forgotten",
-    "persecond": 1,
-    "attempts": 20,
-    "amount": {
-      "minimum": 1,
-      "maximum": 1
-    },
-    "conditions": {
-      "dimension": "mining_dimension:mining",
-      "mindist": 45,
-      "minheight": 100,
-      "maxheight": 256,
-      "maxthis": 1
-    }
-  },
-  {
     "mobsfrombiome": "monster",
-    "persecond": 0.5,
+    "persecond": 0.25,
     "attempts": 10,
-    "amount": {
-      "minimum": 1,
-      "maximum": 2
-    },
-    "conditions": {
-      "dimension": "mining_dimension:mining",
-      "maxhostile": 200
-    }
-  },
-  {
-    "mob": "legendarycreatures:corpse_eater",
-    "persecond": 1,
-    "attempts": 20,
     "amount": {
       "minimum": 2,
       "maximum": 5
     },
     "conditions": {
-      "norestrictions": true,
-      "dimension": "mining_dimension:mining",
-      "maxthis": 10
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.5,
-    "attempts": 10,
-    "amount": {
-      "minimum": 2,
-      "maximum": 5,
-      "groupdistance": 3
-    },
-    "conditions": {
-      "dimension": "minecraft:overworld",
-      "maxthis": 40,
-      "minheight": -50,
-      "maxheight": 0
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.5,
-    "attempts": 10,
-    "amount": {
-      "minimum": 2,
-      "maximum": 5,
-      "groupdistance": 3
-    },
-    "conditions": {
-      "dimension": "minecraft:overworld",
-      "maxthis": 40,
-      "minheight": 0,
-      "maxheight": 50
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.5,
-    "attempts": 10,
-    "amount": {
-      "minimum": 2,
-      "maximum": 5,
-      "groupdistance": 3
-    },
-    "conditions": {
-      "dimension": "minecraft:the_nether",
-      "maxthis": 25
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.5,
-    "attempts": 10,
-    "amount": {
-      "minimum": 2,
-      "maximum": 5,
-      "groupdistance": 3
-    },
-    "conditions": {
-      "dimension": "mining_dimension:mining",
-      "maxthis": 50
+      "dimension": "society:skull_cavern",
+      "maxhostile": 200,
+      "mindist": 12,
+      "maxdist": 50,
+      "maxverticaldist": 20
     }
   }
 ]
