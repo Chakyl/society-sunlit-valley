@@ -19,6 +19,18 @@ StartupEvents.registry("fluid", (e) => {
     .displayName("Maple Syrup")
     .tag("society:maple_syrup");
 
+  e.create("society:vinegar")
+    .thickTexture(0x680000)
+    .bucketColor(0x680000)
+    .displayName("Vinegar")
+    .tag("society:vinegar");
+
+  e.create("society:alchemical_varnish")
+    .thickTexture(0xa2b7bd)
+    .bucketColor(0xa2b7bd)
+    .displayName("Alchemical Varnish")
+    .tag("society:alchemical_varnish");
+
   e.create("society:milk")
     .thinTexture(0xffffff)
     .bucketColor(0xffffff)

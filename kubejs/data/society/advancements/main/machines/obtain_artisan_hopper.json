@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/materials/obtain_sparkstone",
+  "criteria": {
+    "artisan_hopper": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:artisan_hopper"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_artisan_hopper.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:artisan_hopper"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_artisan_hopper.title"
+    }
+  },
+  "requirements": [["artisan_hopper"]],
+  "sends_telemetry_event": true
+}

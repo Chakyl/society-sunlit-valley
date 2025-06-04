@@ -43,7 +43,7 @@ ServerEvents.recipes((e) => {
     { egg: "quark:wraith_spawn_egg", mineral: "society:fire_opal", coin: "crown" },
     { egg: "quark:stoneling_spawn_egg", mineral: "society:helvite", coin: "crown" },
     { egg: "minecraft:parrot_spawn_egg", mineral: "society:marble", coin: "crown" },
-    { egg: "autumnity:turkey_spawn_egg", mineral: "society:jasper", coin: "crown" },
+    { egg: "autumnity:turkey_spawn_egg", mineral: "society:jasper", coin: "sun" },
     { egg: "autumnity:snail_spawn_egg", mineral: "society:amethyst_chunk", coin: "crown" },
     { egg: "buzzier_bees:grizzly_bear_spawn_egg", mineral: "society:beemonican_seal", coin: "ancient_coin" },
     { egg: "snowpig:snow_pig_spawn_egg", mineral: "society:frozen_tear", coin: "crown"},

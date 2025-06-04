@@ -6,6 +6,12 @@
   "diet": "diet.splendid_slimes.all_seeing",
   "foods": [{ "tag": "forge:vegetables" }],
   "favorite_food": { "item": "minecraft:golden_carrot" },
+  "innate_effects": [
+    {
+      "effect": "vinery:climbing_effect",
+      "amplifier": 0
+    }
+  ],
   "negative_emit_effects": [
     {
       "effect": "minecraft:poison",

@@ -20,7 +20,7 @@ ServerEvents.recipes((e) => {
       processingTime: 400,
       results: [
         {
-          count: outputCount * 9,
+          count: outputCount,
           item: output,
         },
       ],
@@ -32,7 +32,7 @@ ServerEvents.recipes((e) => {
       },
       recipe_type: "STONE",
       result: {
-        count: outputCount * 9,
+        count: outputCount,
         item: output,
       },
     });
@@ -40,7 +40,7 @@ ServerEvents.recipes((e) => {
   addKnifeRecipe("farm_and_charm:barley", "society:animal_feed", 3);
   addKnifeRecipe("farm_and_charm:corn", "society:animal_feed", 7);
   addKnifeRecipe("minecraft:wheat", "society:animal_feed", 12);
-  addMillRecipe("farm_and_charm:barley_ball", "society:animal_feed", 3);
-  addMillRecipe("farm_and_charm:corn_bag", "society:animal_feed", 7);
-  addMillRecipe("minecraft:hay_block", "society:animal_feed", 12);
+  addMillRecipe("farm_and_charm:barley_ball", "society:animal_feed_sack", 3);
+  addMillRecipe("farm_and_charm:corn_bag", "society:animal_feed_sack", 7);
+  addMillRecipe("minecraft:hay_block", "society:animal_feed_sack", 12);
 });

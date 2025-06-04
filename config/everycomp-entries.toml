@@ -146,11 +146,6 @@
 			light_ceiling_fan = false
 			kitchen_storage_cabinet = true
 
-		[entries.wood_type.beautify]
-			blinds = false
-			picture_frame = false
-			trellis = false
-
 		[entries.wood_type.functionalstorage]
 			1 = true
 			4 = true
@@ -158,4 +153,9 @@
 
 		[entries.wood_type.twigs]
 			table = false
+
+		[entries.wood_type.beautify]
+			trellis = true
+			blinds = true
+			picture_frame = true
 

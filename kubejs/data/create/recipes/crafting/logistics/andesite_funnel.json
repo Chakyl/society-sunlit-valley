@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "K": {
+      "item": "society:rubber"
+    }
+  },
+  "pattern": [
+    "A",
+    "K"
+  ],
+  "result": {
+    "count": 2,
+    "item": "create:andesite_funnel"
+  },
+  "show_notification": true
+}

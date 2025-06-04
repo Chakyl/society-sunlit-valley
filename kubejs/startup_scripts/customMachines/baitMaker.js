@@ -79,9 +79,7 @@ global.baitMakerRecipes = [];
 baitFish.forEach((fish) => {
   const splitFish = fish.split(":");
   let fishId = splitFish[1];
-  if (
-    !["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))
-  ) {
+  if (!["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))) {
     if (fishId.includes("raw_")) {
       if (fishId === "raw_snowflake") fishId = "frosty_fin";
       else fishId = fishId.substring(4, fishId.length);
@@ -117,10 +115,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 3), 0)
-        .set(
-          integerProperty.create("type", 0, global.baitMakerRecipes.length),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -128,20 +123,14 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 3), 0)
-        .set(
-          integerProperty.create("type", 0, global.baitMakerRecipes.length),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .rightClick((click) => {
       global.handleBERightClick(
         "aquaculture:fish_death",
         click,
         global.baitMakerRecipes,
-        1,
-        true,
-        false,
-        false
+        1
       );
     })
     .blockEntity((blockInfo) => {

@@ -35,8 +35,8 @@
 				item: "society:topaz"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.5d
+			x: -1.8214285714285694d
+			y: -2.4642857142857153d
 		}
 		{
 			id: "2C8583024AD65A84"
@@ -45,8 +45,8 @@
 				item: "society:ruby"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.5d
+			x: -0.3214285714285694d
+			y: -2.4642857142857153d
 		}
 		{
 			id: "13FA6EDE805D6664"
@@ -75,8 +75,8 @@
 				item: "minecraft:prismarine_crystals"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -0.5d
+			x: 1.1785714285714306d
+			y: -2.4642857142857153d
 		}
 		{
 			id: "740A85F55CE211D0"
@@ -85,8 +85,8 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: -3.3214285714285694d
+			y: -2.4642857142857153d
 		}
 		{
 			id: "1C34438B1B4384F7"
@@ -131,6 +131,7 @@
 				"1C34438B1B4384F7"
 				"13FA6EDE805D6664"
 				"740A85F55CE211D0"
+				"4A09A0A9EA9A83B5"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -176,6 +177,16 @@
 			title: "Gem Collection Complete!"
 			x: -1.0d
 			y: 3.0d
+		}
+		{
+			id: "4A09A0A9EA9A83B5"
+			tasks: [{
+				id: "153567B7D56E9B77"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
 		}
 	]
 	title: "Gems"

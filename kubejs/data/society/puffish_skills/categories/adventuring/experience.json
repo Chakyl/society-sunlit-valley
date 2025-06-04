@@ -26,7 +26,7 @@
         },
         "experience": [
           {
-            "expression": "max_health"
+            "expression": "max_health * 2"
           }
         ],
         "anti_farming": {
@@ -56,7 +56,7 @@
         "experience": [
           {
             "condition": "looting_chests",
-            "expression": "45"
+            "expression": "85"
           }
         ]
       }

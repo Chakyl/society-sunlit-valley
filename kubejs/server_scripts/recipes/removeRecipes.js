@@ -399,7 +399,7 @@ ServerEvents.recipes((e) => {
     "extractinator:extractinator",
     "create:mechanical_harvester",
     "create:brown_toolbox",
-    "mining_dimension:teleporter",
+    "society:teleporter",
     "minecraft:flint_and_steel",
     // Armorer
     "sophisticatedbackpacks:stack_upgrade_tier_4",
@@ -641,6 +641,8 @@ ServerEvents.recipes((e) => {
   const removeById = [
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",
+    "moredelight:cutting/sliced_bread",
+    "everycomp:db/betterarcheology/rotten_beam",
     // Botania
     "botania:mana_infusion/mana_diamond_block",
     "farm_and_charm:mincer/hops_seeds",
@@ -658,6 +660,8 @@ ServerEvents.recipes((e) => {
     "extractinator:extractinating/cobblestone",
     "extractinator:extractinating/sand",
     "extractinator:extractinating/gravel",
+    "aquaculture:tin_can_to_iron_nugget",
+    "aquaculture:tin_can_to_iron_nugget_from_blasting",
     // Create
     "create:mixing/andesite_alloy_from_zinc",
     "create:crafting/materials/andesite_alloy_from_zinc",

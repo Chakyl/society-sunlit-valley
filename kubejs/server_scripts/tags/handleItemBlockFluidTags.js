@@ -1,5 +1,5 @@
 // priority: 0
-console.info("[SOCIETY] handleItemBlockFluidTags.js.js loaded");
+console.info("[SOCIETY] handleItemBlockFluidTags.js loaded");
 
 ServerEvents.tags("item", (e) => {
   const stripTags = [
@@ -64,7 +64,6 @@ ServerEvents.tags("item", (e) => {
     "pamhc2trees:walnut_sapling",
     "pamhc2trees:pear_sapling",
     "pamhc2trees:nutmeg_sapling",
-
     "pamhc2trees:grapefruit_sapling",
     "pamhc2trees:pomegranate_sapling",
     "pamhc2trees:guava_sapling",
@@ -174,6 +173,10 @@ ServerEvents.tags("item", (e) => {
   stripTags.forEach((item) => {
     e.removeAllTagsFrom(item);
   });
+  global.removedItems.forEach((item) => {
+    e.removeAllTagsFrom(item);
+    e.add("furniture:trash_bag_blacklist", item);
+  });
 });
 const rawLogs = [
   "quark:blossom_log",
@@ -206,12 +209,19 @@ const rawLogs = [
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
+  e.add("forge:plates/lead", "oreganized:lead_sheet");
+  e.add("forge:plates", "oreganized:lead_sheet");
+  e.add("forge:plates/silver", "oreganized:silver_sheet");
+  e.add("forge:plates", "oreganized:silver_sheet");
   e.add("forge:crops", "society:ancient_fruit");
   e.add("forge:salt", "meadow:alpine_salt");
   e.add("forge:crops", "society:tubabbaco");
   e.add("forge:crops", "society:blueberry");
   e.add("forge:berries", "society:blueberry");
+  e.add("forge:grapes", "nethervinery:warped_grape");
+  e.add("forge:grapes", "nethervinery:crimson_grape");
   e.add("forge:crops", "society:eggplant");
+  e.add("forge:crops/cabbage", "farm_and_charm:lettuce");
   e.add("forge:vegetables/eggplant", "society:eggplant");
   e.add("forge:vegetables", "society:eggplant");
   e.add("meadow:water_bottles", "herbalbrews:water_cup");
@@ -303,27 +313,18 @@ ServerEvents.tags("item", (e) => {
     e.add("society:loot_furniture", item);
   });
   global.dehydratorRecipes.forEach((dehydratee) => {
-    e.add(
-      "society:dehydrated",
-      dehydratee.output[0].substring(2, dehydratee.output[0].length)
-    );
+    e.add("society:dehydrated", dehydratee.output[0].substring(2, dehydratee.output[0].length));
   });
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
-    if (
-      ["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))
-    )
-      return;
+    if (["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))) return;
     if (fishId.includes("raw_")) {
       if (fishId === "raw_snowflake") fishId = "frosty_fin";
       else fishId = fishId.substring(4, fishId.length);
     }
 
-    e.add(
-      `crabbersdelight:jei_display_results/society/${fishId}_bait`,
-      fish.item
-    );
+    e.add(`crabbersdelight:jei_display_results/society/${fishId}_bait`, fish.item);
   });
   global.agedRoe.forEach((preserve) => {
     e.add("society:aged_roe", preserve.item);
@@ -331,7 +332,7 @@ ServerEvents.tags("item", (e) => {
   global.pristine.forEach((mineral) => {
     e.add("society:pristine_mineral", mineral.item);
   });
-e.add("forge:eggs", "society:cracked_egg");
+  e.add("forge:eggs", "society:cracked_egg");
   [
     "society:large_egg",
     "society:large_duck_egg",
@@ -347,7 +348,7 @@ e.add("forge:eggs", "society:cracked_egg");
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
   });
-  const mirrors = [
+  [
     "furniture:cherry_mirror",
     "furniture:mangrove_mirror",
     "furniture:dark_oak_mirror",
@@ -356,9 +357,11 @@ e.add("forge:eggs", "society:cracked_egg");
     "furniture:jungle_mirror",
     "furniture:oak_mirror",
     "furniture:birch_mirror",
-  ];
-  mirrors.forEach((mirror) => {
+  ].forEach((mirror) => {
     e.add("society:mirrors", mirror);
+  });
+  ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
+    e.add("create:upright_on_belt", bottle);
   });
   // Geodes
   const geodeJunk = [
@@ -371,11 +374,7 @@ e.add("forge:eggs", "society:cracked_egg");
   geodeJunk.forEach((geodeItem) => {
     e.add("society:geode_junk", geodeItem);
   });
-  const geodeBonus = [
-    "minecraft:raw_iron",
-    "minecraft:raw_copper",
-    "minecraft:coal",
-  ];
+  const geodeBonus = ["minecraft:raw_iron", "minecraft:raw_copper", "minecraft:coal"];
   geodeBonus.forEach((geodeItem) => {
     e.add("society:geode_bonus", geodeItem);
   });
@@ -383,7 +382,7 @@ e.add("forge:eggs", "society:cracked_egg");
     e.add("society:geode_treasure", geodeItem.item);
     e.add("society:omni_geode_treasure", geodeItem.item);
   });
-  e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure")
+  e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
   const geodeRelic = ["relics:horse_flute", "relics:hunter_belt"];
@@ -434,7 +433,7 @@ e.add("forge:eggs", "society:cracked_egg");
     "minecraft:raw_iron",
     "minecraft:raw_gold",
     "minecraft:raw_zinc",
-    "minecraft:ancient_debris",
+    "minecraft:netherite_scrap",
   ];
   omniGeodeBonus.forEach((geodeItem) => {
     e.add("society:omni_geode_bonus", geodeItem);
@@ -477,36 +476,22 @@ e.add("forge:eggs", "society:cracked_egg");
   relics.forEach((relic) => e.add("society:relics", relic));
 
   Color.DYE.forEach((color) => {
-    e.add(
-      "society:botania_seeds",
-      `botania_seeds:${color}_mystical_flower_seed`
-    );
+    e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
   });
 
-  [
-    "aquaculture:jellyfish",
-    "aquaculture:goldfish",
-    "aquaculture:leech",
-    "society:neptuna",
-  ].forEach((fish) => e.add("minecraft:fishes", fish));
+  ["aquaculture:jellyfish", "aquaculture:goldfish", "aquaculture:leech", "society:neptuna"].forEach(
+    (fish) => e.add("minecraft:fishes", fish)
+  );
   // Artifacts
   global.artifacts.forEach((artifact) => {
     e.add("society:artifacts", artifact.item);
   });
   // Furniture Workbench tags
   global.lootFurniture.forEach((item) => {
-    if (item.includes("tanukidecor"))
-      e.add("refurbished_furniture:outdoors", item);
+    if (item.includes("tanukidecor")) e.add("refurbished_furniture:outdoors", item);
     else e.add("refurbished_furniture:kitchen", item);
   });
-  const fantasyCategories = [
-    "nordic",
-    "dunmer",
-    "venthyr",
-    "bone",
-    "royal",
-    "necrolord",
-  ];
+  const fantasyCategories = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
   Ingredient.of("@fantasyfurniture").stacks.forEach((item) => {
     if (item.toString().includes("furniture_station")) return;
     e.add("refurbished_furniture:bathroom", item.id);
@@ -607,6 +592,16 @@ ServerEvents.tags("block", (e) => {
   ].forEach((wool) => {
     e.add("minecraft:mineable/axe", wool);
   });
+  [
+    "minecraft:dark_oak_log",
+    "meadow:pine_log",
+    "minecraft:spruce_log",
+    "autumnity:maple_log",
+    "minecraft:acacia_log",
+    "minecraft:oak_log",
+  ].forEach((block) => {
+    e.add("society:tappable_blocks", block);
+  });
   const flowersMissingBlockTags = [
     "meadow:eriophorum_tall",
     "meadow:alpine_poppy",
@@ -621,9 +616,7 @@ ServerEvents.tags("block", (e) => {
   flowersMissingBlockTags.forEach((flower) => {
     e.add("minecraft:flowers", flower);
     e.add(
-      flower !== "meadow:eriophorum_tall"
-        ? "minecraft:small_flowers"
-        : "minecraft:tall_flowers",
+      flower !== "meadow:eriophorum_tall" ? "minecraft:small_flowers" : "minecraft:tall_flowers",
       flower
     );
   });
@@ -641,23 +634,19 @@ ServerEvents.tags("block", (e) => {
     "society:seed_maker",
     "society:fish_smoker",
     "society:bait_maker",
+    "society:recycling_machine",
+    "society:tapper",
   ];
   tickArtisanMachines.forEach((log) => {
     e.add("society:artisan_machine", log);
-  });
-  tickArtisanMachines.forEach((log) => {
     e.add("society:golden_clock_advanced", log);
   });
-  const randomTickMachines = [
-    "society:charging_rod",
-    "society:espresso_machine",
-  ];
+  const randomTickMachines = ["society:charging_rod", "society:espresso_machine"];
   randomTickMachines.forEach((log) => {
     e.add("society:artisan_machine", log);
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
   e.add("society:palm_leaves", "beachparty:palm_leaves");
-  
   const ftbChunksWhitelist = [
     "minecraft:crafting_table",
     "numismatics:andesite_depositor",

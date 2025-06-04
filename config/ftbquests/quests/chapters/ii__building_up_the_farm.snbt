@@ -32,7 +32,7 @@
 			tasks: [{
 				id: "6F097F151D433739"
 				item: "farmingforblockheads:market"
-				title: "Buying Seeds"
+				title: "Craft a market to buy seeds"
 				type: "item"
 			}]
 			title: "Starting Farming"
@@ -332,9 +332,9 @@
 		{
 			dependencies: ["07858B887B222BC2"]
 			description: [
-				"Oak, Dark Oak, Spruce, and Pine trees can be tapped using a &6Tree Tap&r. "
+				"Oak, Dark Oak, Spruce, and Pine trees can be tapped using a &6Tapper&r. "
 				""
-				"Hang a bucket of any kind from the tap and it will slowly accumulate fluid."
+				"The type of tree tapped will determine how many days it will take to complete as well as the output."
 			]
 			id: "2B3BEC36F6C0F6BE"
 			rewards: [{
@@ -344,7 +344,7 @@
 			}]
 			tasks: [{
 				id: "405D4A05415335C3"
-				item: "treetap:tap"
+				item: "society:tapper"
 				type: "item"
 			}]
 			title: "Tapping Wood"

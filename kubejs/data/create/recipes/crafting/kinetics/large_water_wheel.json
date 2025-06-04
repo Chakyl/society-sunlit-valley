@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "create:water_wheel"
+    },
+    "S": {
+      "item": "meadow:fire_log"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SCS",
+    " S "
+  ],
+  "result": {
+    "item": "create:large_water_wheel"
+  },
+  "show_notification": true
+}

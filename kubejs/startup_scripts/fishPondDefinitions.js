@@ -15,7 +15,7 @@ const basicQuests = [
       { item: "minecraft:raw_gold", count: 4 },
       { item: "society:oak_resin", count: 1 },
       { item: "farmersdelight:tomato", count: 1 },
-      { item: "society:maple_syrup", count: 4 },
+      { item: "society:sap", count: 4 },
     ],
   },
   {
@@ -2030,7 +2030,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 5,
-        requestedItems: [{ item: "nethervinery:crimson_grapejuice", count: 16 }],
+        requestedItems: [{ item: "snethervinery:crimson_grapejuice", count: 16 }],
       },
       {
         population: 7,
@@ -2939,7 +2939,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:oak_log", count: 64 },
-          { item: "treetap:tap", count: 8 },
+          { item: "society:tapper", count: 8 },
           { item: "minecraft:dark_oak_log", count: 64 },
         ],
       },
@@ -3154,7 +3154,7 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "society:maple_syrup", count: 16 },
+          { item: "society:rubber", count: 16 },
           { item: "beautify:crimson_blinds", count: 32 },
           { item: "society:bowl_of_soul", count: 8 },
         ],
@@ -3350,7 +3350,7 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "moreminecarts:chunkrodite_block", count: 16 },
           { item: "moreminecarts:chunkrodite", count: 48 },
-          { item: "minecraft:diamond", count: 16 },
+          { item: "society:sparkstone", count: 16 },
         ],
       },
       {

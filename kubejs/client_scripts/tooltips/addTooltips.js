@@ -31,8 +31,11 @@ ItemEvents.tooltip((tooltip) => {
       case "sun":
         value = 4096;
         break;
+      case "neptunium_coin":
+        value = 32768;
+        break;
       case "ancient_coin":
-        value = 253952;
+        value = 262144;
         break;
       case "prismatic_coin":
         value = 16252928;
@@ -63,6 +66,7 @@ ItemEvents.tooltip((tooltip) => {
     "numismatics:cog",
     "numismatics:crown",
     "numismatics:sun",
+    "numismatics:neptunium_coin",
     "numismatics:ancient_coin",
     "numismatics:prismatic_coin",
   ];
@@ -143,7 +147,22 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
     tooltip.add(artifact.item, Text.gray(":funeral_urn: Artifact"));
   });
-  tooltip.add("society:fish_pond", Text.darkAqua("Needs a 3x4 of water behind pond"));
+  tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
+    if (item.nbt) {
+      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type")].item}`));
+      text.add(
+        2,
+        Text.aqua(
+          `Population: ${item.nbt.get("population")}/${item.nbt.get("max_population")} :fish:`
+        )
+      );
+    } else {
+      text.add(1, Text.gray("Cultivates fish, roe, and various items"));
+      text.add(2, Text.gray("Right Click with a fish to add it to the pond"));
+      text.add(3, Text.gray("Shift + Right Click with an empty hand to take one out"));
+      text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
+    }
+  });
   // Furniture
   tooltip.add("tanukidecor:diy_workbench", Text.gray("Crafts any Catalog item for cheap"));
   tooltip.add("society:tanuki_catalog", [
@@ -176,12 +195,6 @@ ItemEvents.tooltip((tooltip) => {
   // Hammers
   tooltip.add("justhammers:small_core", Text.gray("Crafts hammers that mine a 3x3x1 area"));
   tooltip.add("justhammers:impact_core", Text.gray("Crafts hammers that mine a 3x3x3 area"));
-  tooltip.add("justhammers:reinforced_core", Text.gray("Crafts hammers that mine a 5x5x1 area"));
-  tooltip.add(
-    "justhammers:reinforced_impact_core",
-    Text.gray("Crafts hammers that mine a 5x5x3 area")
-  );
-  tooltip.add("justhammers:destructor_core", Text.gray("Crafts hammers that mine a 5x5x5 area"));
   // Upgrades:
   tooltip.add(
     "society:ancient_cog",
@@ -333,6 +346,8 @@ ItemEvents.tooltip((tooltip) => {
       "society:mayonnaise_machine",
       "society:preserves_jar",
       "society:seed_maker",
+      "society:tapper",
+      "society:recycling_machine",
     ],
     Text.gold(":gear: Artisan Machine")
   );
@@ -391,12 +406,14 @@ ItemEvents.tooltip((tooltip) => {
     "society:dragontooth_axe",
     Text.red("Will break if wielded by one without the Dragonslayer skill")
   );
+  tooltip.add("society:kinetic_blueprint", Text.gray("Not consumed in crafting"));
+  tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
   tooltip.add(
-    "society:kinetic_blueprint",
-    Text.gray(
-      "Given for free for completing the Boiler Room chapter in the questbook."
-    )
+    "botania:apothecary_default",
+    Text.gold(":classical_building: Abandoned Farm reward")
   );
+  "society:kinetic_blueprint",
+    Text.gray("Given for free for completing the Boiler Room chapter in the questbook.");
   tooltip.add("society:kinetic_blueprint", Text.green("Not consumed in crafting"));
   tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
   tooltip.add("mining_dimension:teleporter", Text.gold(":classical_building: Vault reward"));
@@ -406,6 +423,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Crops underneath grow in any season")
   );
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
+  tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
   tooltip.add(
     "gag:time_sand_pouch",
     Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")
@@ -420,7 +438,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.green("Loads a 3x3 area using Chunkroderite and other items")
   );
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
-  tooltip.add("treetap:tap", Text.gray("Place on logs then click with a bucket"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
   tooltip.add("farmersdelight:tomato_seeds", Text.red("Quality of seed has no effect"));
@@ -585,6 +602,7 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(gem.item, Text.gray(":gem: Gem"));
   });
   [
+    "society:sparkstone",
     "minecraft:emerald",
     "minecraft:diamond",
     "minecraft:amethyst_shard",
@@ -737,6 +755,26 @@ ItemEvents.tooltip((tooltip) => {
       }
     }
   );
+  const magnifyingBlocks = [
+    "Auto-Grabber",
+    "Artisan Hopper",
+    "Feeding Trough",
+    "Fish Pond Basket",
+    "Golden Clock",
+    "Mana Milker",
+    "All Sprinklers",
+  ];
+  // Translocators
+  tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {
+    if (tooltip.shift) {
+      magnifyingBlocks.forEach((block, index) => {
+        text.add(index + 1, Text.gold(block));
+      });
+    } else {
+      text.add(1, Text.green("Displays working area of some machines"));
+      text.add(2, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("] to view blocks")]);
+    }
+  });
   // Books
   tooltip.add("society:yard_work_yearly", Text.green("Right click to gain Farming experience"));
   tooltip.add("society:husbandry_hourly", Text.green("Right click to gain Husbandry experience"));
@@ -757,4 +795,7 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.red("Not placeable in Wine Racks")
   );
+  global.removedItems.forEach((item) => {
+    tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
+  });
 });

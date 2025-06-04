@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#B#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "society:rubber"
+        },
+        "B": {
+            "item": "minecraft:blue_dye"
+        }
+    },
+    "result": {
+        "item": "beachparty:rubber_ring_blue",
+        "count": 1
+    }
+}

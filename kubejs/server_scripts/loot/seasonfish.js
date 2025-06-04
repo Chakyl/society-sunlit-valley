@@ -161,6 +161,8 @@ LootJS.modifiers((e) => {
     false,
     false
   );
+
+  createSeasonLootTable(e, "spring", global.springOcean, global.springRiver, global.springFresh);
   createSeasonLootTable(
     e,
     "spring",

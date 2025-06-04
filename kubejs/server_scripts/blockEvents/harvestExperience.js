@@ -2,7 +2,7 @@ console.info("[SOCIETY] harvestExperience.js loaded");
 
 const deniedCrops = [
   "farmersdelight:tomatoes",
-  "farmersdelight:budding:tomatoes",
+  "farmersdelight:budding_tomatoes",
   "minecraft:melon_stem",
   "minecraft:pumpkin_stem",
   "minecraft:cocoa",

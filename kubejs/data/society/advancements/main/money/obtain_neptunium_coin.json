@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/money/obtain_sun",
+  "criteria": {
+    "neptunium_coin": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["numismatics:neptunium_coin"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_neptunium_coin.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "numismatics:neptunium_coin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_neptunium_coin.title"
+    }
+  },
+  "requirements": [["neptunium_coin"]],
+  "sends_telemetry_event": true
+}

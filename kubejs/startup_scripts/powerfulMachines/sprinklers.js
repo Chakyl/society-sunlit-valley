@@ -4,6 +4,7 @@ const generateSprinkler = (e, tier, radius) => {
   const tooltipRadius = 1 + radius * 2;
   e
     .create(`society:${tier}_sprinkler`)
+    .displayName(`${tier == "netherite" ? "Iridium" : tier.charAt(0).toUpperCase() + tier.slice(1)} Sprinker`)
     .property(booleanProperty.create("sticklogged"))
     .defaultState((state) => {
       state.set(booleanProperty.create("sticklogged"), false);

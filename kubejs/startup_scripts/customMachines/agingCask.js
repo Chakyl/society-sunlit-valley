@@ -49,7 +49,7 @@ global.ageableProductInputs = [
   { item: "society:starcardi", name: "Starcardi", time: 4 },
   { item: "society:star_coquito", name: "Star Coquito", time: 10 },
   { item: "nethervinery:blazewine_pinot", name: "Blazewine Pinot", time: 10 },
-  { item: "nethervinery:netherite_nectar", name: "Netherite Nectar", time: 10 },
+  { item: "nethervinery:netherite_nectar", name: "Iridium Nectar", time: 10 },
   { item: "nethervinery:ghastly_grenache", name: "Ghastly Grenache", time: 10 },
   { item: "nethervinery:lava_fizz", name: "Lava Fizz", time: 10 },
   { item: "nethervinery:nether_fizz", name: "Nether Fizz", time: 10 },
@@ -126,7 +126,7 @@ global.ageableProductInputs = [
 ];
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");
-  global.agingCaskRecipes.push({ 
+  global.agingCaskRecipes.push({
     input: product.item,
     output: [`1x society:aged_${splitProduct[1]}`],
     time: product.time,
@@ -151,17 +151,13 @@ StartupEvents.registry("block", (event) => {
         parent: "society:block/aging_cask",
       });
     })
-
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 10), 0)
-        .set(
-          integerProperty.create("type", 0, global.agingCaskRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.agingCaskRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -169,10 +165,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 10), 0)
-        .set(
-          integerProperty.create("type", 0, global.agingCaskRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.agingCaskRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -212,20 +205,12 @@ StartupEvents.registry("block", (event) => {
           player.tell(Text.red(`This can only be upgraded when not in use`));
         }
       }
-      if (
-        player.stages.has("aged_prize") &&
-        block.properties.get("mature") === "true" &&
-        rnd5()
-      ) {
+
+      if (player.stages.has("aged_prize") && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace("society:prize_ticket", facing);
       }
-      global.handleBERightClick(
-        "minecraft:block.wood.place",
-        click,
-        global.agingCaskRecipes,
-        10,
-        false
-      );
+
+      global.handleBERightClick("minecraft:block.wood.place", click, global.agingCaskRecipes, 10);
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {

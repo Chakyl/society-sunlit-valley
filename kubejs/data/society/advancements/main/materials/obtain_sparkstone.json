@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/materials/obtain_fire_quartz",
+  "criteria": {
+    "sparkstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:sparkstone"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_sparkstone.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:sparkstone"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_sparkstone.title"
+    }
+  },
+  "requirements": [["sparkstone"]],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,23 @@
+{
+  "type": "splendid_slimes:plort_ripping",
+  "ingredient": {
+    "item": "splendid_slimes:plort",
+    "nbt": {
+      "plort": {
+        "id": "splendid_slimes:bitwise"
+      }
+    }
+  },
+  "results": [
+    {
+      "item": "society:sparkstone",
+      "count": 8,
+      "weight": 12
+    }, 
+    {
+      "item": "society:battery",
+      "count": 1,
+      "weight": 1
+    }
+  ]
+}

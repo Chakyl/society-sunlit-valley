@@ -185,7 +185,7 @@
 				type: "item"
 			}]
 			title: "Growing Crystals"
-			x: 5.0d
+			x: 4.5d
 			y: 2.5d
 		}
 		{
@@ -282,7 +282,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -451,7 +451,7 @@
 				"3543D99A908C655B"
 				"401FD6FD108EA784"
 			]
-			description: ["The final tier of Sprinkler, the &6Netherite Sprinkler&r has the highest range out of any."]
+			description: ["The final tier of Sprinkler, the &6Iridium Sprinkler&r has the highest range out of any."]
 			id: "3CC16EE6106EAE95"
 			rewards: [{
 				id: "5F14699AAD857780"
@@ -487,14 +487,12 @@
 				type: "structure"
 			}]
 			x: 7.0d
-			y: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["401FD6FD108EA784"]
 			description: [
-				"The &6Master Cultivator&r villager can be made using a special cooking pot."
-				""
-				"You'll need to find a &dPrismatic Shard&r deep in the Skull Cavern to make it."
+				"The &6Master Cultivator&r villager can be made using a special cooking pot crafted from a &dPrismatic Shard&r."
 				""
 				"Higher value crops are sold by this villager, as well as expensive fruit trees."
 			]
@@ -510,8 +508,8 @@
 				type: "item"
 			}]
 			title: "Advanced Crops"
-			x: 13.5d
-			y: -1.0d
+			x: 13.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0C7D8F89BCF645AA"]
@@ -534,13 +532,13 @@
 				type: "item"
 			}]
 			title: "Smarter Selling"
-			x: 2.0d
-			y: 3.5d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["401FD6FD108EA784"]
 			description: [
-				"With a farm so valuable, keeping it secure is most valuable."
+				"Working underground can be a pain with mobs spawning."
 				""
 				"The magic of the shard can craft a &6Megatorch&r, blocking hostile spawns."
 			]
@@ -556,29 +554,8 @@
 				type: "item"
 			}]
 			title: "Blocking Mob Spawns"
-			x: 12.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"&6Mechanical Harvesters&r are the ultimate form of crop collecting, allowing you to automate your farm completely. You'll need Create to use one."
-				""
-				"Once crafted, it can be duplicated using a cheaper recipe."
-			]
-			id: "106883C7A25EC43E"
-			rewards: [{
-				id: "23F1F8DB5FA00A39"
-				item: "numismatics:sprocket"
-				type: "item"
-			}]
-			tasks: [{
-				id: "61604DB4A643E842"
-				item: "create:mechanical_harvester"
-				type: "item"
-			}]
-			x: 13.0d
-			y: 0.5d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["572D70993411EA53"]
@@ -734,35 +711,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0C7D8F89BCF645AA"]
-			description: [
-				"Manually harvesting from Worm Farms gets old fast. An &6Auto Worm Farm&r cultivates worms in an automatable way, with the added bonus of not needing any inputs!"
-				""
-				"It can be used to automate Crab Traps, provided you have an automated way to turn Worms into Crab Trap Bait."
-			]
-			id: "345432E72BD82727"
-			rewards: [
-				{
-					id: "6AD9F9C1ED7E3787"
-					item: "society:aquamarine"
-					type: "item"
-				}
-				{
-					id: "617E724CEDDF6AC0"
-					item: "minecraft:hopper"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7E0948BD5FC9E764"
-				item: "society:auto_worm_farm"
-				type: "item"
-			}]
-			title: "Worm Parade"
-			x: 1.0d
-			y: 2.5d
-		}
-		{
 			dependencies: ["44A512703C4A9990"]
 			description: [
 				"If you haven't been paying attention to your skills, you'll find that some of them directly map to certain enchantments!"
@@ -784,7 +732,7 @@
 				type: "item"
 			}]
 			title: "Enchanter"
-			x: 4.5d
+			x: 5.0d
 			y: -2.5d
 		}
 		{
@@ -807,8 +755,8 @@
 				type: "item"
 			}]
 			title: "Removing Quality"
-			x: 5.5d
-			y: -2.5d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
@@ -1050,6 +998,160 @@
 			title: "Slime Happiness"
 			x: 3.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["3291A30C1D1B009D"]
+			id: "70D15F67E3880A3A"
+			tasks: [{
+				id: "706BDE404DFE02FE"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["70D15F67E3880A3A"]
+			id: "3E4E14F5055B09B6"
+			tasks: [{
+				id: "33EF40E93DD4F698"
+				item: "society:artisan_hopper"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["70D15F67E3880A3A"]
+			id: "445BDEFC4FE5919C"
+			tasks: [{
+				id: "6D855019B3D7E539"
+				item: "society:auto_grabber"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["401FD6FD108EA784"]
+			description: [
+				"The &6Exotic Trader&r villager's workstation can be crafted with a &dPrismatic Shard&r."
+				""
+				"It will trade various farm items for Machine upgrades. These upgrades add special effects when applied to the machine."
+				""
+				"There are also some handy utility trades for useful but annoyinhg to obtain items, such as Wither Skeleton Skulls."
+			]
+			icon: "minecraft:fletching_table"
+			id: "7ECC14D99BC56382"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "782C8FCB6DABE4D5"
+				table_id: 6097669691163803424L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "3C94E045475D43B0"
+					item: "minecraft:fletching_table"
+					type: "item"
+				}
+				{
+					id: "4392ED87AF2BADD9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "society:sea_biscut"
+								}
+								{
+									Count: 1b
+									id: "society:broken_clock"
+								}
+								{
+									Count: 1b
+									id: "society:ancient_cog"
+								}
+								{
+									Count: 1b
+									id: "society:ancient_roe"
+								}
+								{
+									Count: 1b
+									id: "society:infinity_worm"
+								}
+								{
+									Count: 1b
+									id: "society:frosted_tip"
+								}
+								{
+									Count: 1b
+									id: "society:inserter"
+								}
+								{
+									Count: 1b
+									id: "society:cordycep"
+								}
+								{
+									Count: 1b
+									id: "society:black_opal"
+								}
+								{
+									Count: 1b
+									id: "society:stone_hand"
+								}
+								{
+									Count: 1b
+									id: "society:tiny_gnome"
+								}
+							]
+						}
+					}
+					title: "Any Upgrade"
+					type: "item"
+				}
+			]
+			title: "Machine Upgrades"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70D15F67E3880A3A"
+				"17D2933C4B133AA8"
+			]
+			id: "4CD98E31EC569CC3"
+			tasks: [{
+				id: "209753824F6D75ED"
+				item: "society:fish_pond_basket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["44A512703C4A9990"]
+			description: [
+				"There are 3 advanced tiers of &6Coins&r. The first two can be crafted up or down from the previous &dPrismatic Coins&r must be traded using a &6Bankers&r,"
+				""
+				"These are their values:"
+				""
+				"- Neptunium (&632,768&r) "
+				"- Ancient (&6262,144&r)"
+				"- Prismatic (&616,252,928&r)"
+				""
+				"These coins are needed for very late game items. Don't expect to need them anytime soon."
+			]
+			id: "527F7721ED60868C"
+			tasks: [{
+				id: "0FBC71E396E14EB1"
+				item: "numismatics:neptunium_coin"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
 		}
 	]
 	title: "III - Advanced Farming"

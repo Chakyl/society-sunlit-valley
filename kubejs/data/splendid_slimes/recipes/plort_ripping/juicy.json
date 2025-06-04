@@ -1,0 +1,38 @@
+{
+  "type": "splendid_slimes:plort_ripping",
+  "ingredient": {
+    "item": "splendid_slimes:plort",
+    "nbt": {
+      "plort": {
+        "id": "splendid_slimes:juicy"
+      }
+    }
+  },
+  "results": [
+    {
+      "item": "vintagedelight:gearo_berry",
+      "count": 1,
+      "weight": 1
+    },
+    {
+      "item": "vinery:red_grapejuice",
+      "count": 1,
+      "weight": 2
+    },
+    {
+      "item": "vinery:red_jungle_grapejuice",
+      "count": 1,
+      "weight": 2
+    },
+    {
+      "item": "vinery:red_savanna_grapejuice",
+      "count": 1,
+      "weight": 2
+    },
+    {
+      "item": "vinery:red_taiga_grapejuice",
+      "count": 1,
+      "weight": 2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:plates/silver"
+    },
+    "D": {
+      "item": "create:depot"
+    },
+    "I": {
+      "item": "create:cogwheel"
+    }
+  },
+  "pattern": [
+    "A",
+    "D",
+    "I"
+  ],
+  "result": {
+    "item": "create:weighted_ejector"
+  },
+  "show_notification": true
+}

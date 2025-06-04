@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:andesite_casing"
+    },
+    "C": {
+      "tag": "forge:rope"
+    },
+    "I": {
+      "tag": "forge:plates/lead"
+    }
+  },
+  "pattern": [
+    "B",
+    "C",
+    "I"
+  ],
+  "result": {
+    "item": "create:rope_pulley"
+  },
+  "show_notification": true
+}

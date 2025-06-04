@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/materials/obtain_fire_quartz",
+  "criteria": {
+    "recycling_machine": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:recycling_machine"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_recycling_machine.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:recycling_machine"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_recycling_machine.title"
+    }
+  },
+  "requirements": [["recycling_machine"]],
+  "sends_telemetry_event": true
+}

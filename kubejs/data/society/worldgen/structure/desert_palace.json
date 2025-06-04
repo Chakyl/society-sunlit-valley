@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#society:has_structure/desert",
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_pool": "society:desert_palace",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 128
+    },
+    "max_inclusive": {
+      "absolute": 256
+    }
+  },
+  "max_distance_from_center": 85,
+  "use_expansion_hack": false
+}

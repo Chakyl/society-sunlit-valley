@@ -11,8 +11,7 @@
       "minecraft:zombie_villager",
       "minecraft:husk",
       "minecraft:stray",
-      "trials:bogged",
-      "splendid_slimes:splendid_slime"
+      "trials:bogged"
     ],
     "dimension": "minecraft:overworld",
     "minheight": 50,
@@ -30,8 +29,7 @@
       "minecraft:zombie_villager",
       "minecraft:husk",
       "minecraft:stray",
-      "trials:bogged",
-      "splendid_slimes:splendid_slime"
+      "trials:bogged"
     ],
     "dimension": "minecraft:overworld",
     "maxheight": 50,
@@ -39,6 +37,11 @@
   },
   {
     "mod": "legendarycreatures",
+    "dimension": "minecraft:overworld",
+    "result": "deny"
+  },
+    {
+    "mod": "rottencreatures",
     "dimension": "minecraft:overworld",
     "result": "deny"
   },
@@ -115,194 +118,8 @@
     ]
   },
   {
-    "dimension": "mining_dimension:mining",
+    "dimension": "society:skull_cavern",
     "healthmultiply": 2,
     "damagemultiply": 2.5
-  },
-  {
-    "mob": "legendarycreatures:corpse_eater",
-    "dimension": "mining_dimension:mining",
-    "structure": [
-      "hopo:mineshaft/acacia_mineshaft",
-      "hopo:mineshaft/bamboo_mineshaft",
-      "hopo:mineshaft/birch_mineshaft",
-      "hopo:mineshaft/cherry_mineshaft",
-      "hopo:mineshaft/dark_oak_mineshaft",
-      "hopo:mineshaft/deepslate_mineshaft",
-      "hopo:mineshaft/jungle_mineshaft",
-      "hopo:mineshaft/mangrove_mineshaft",
-      "hopo:mineshaft/mud_mineshaft",
-      "hopo:mineshaft/oak_mineshaft",
-      "hopo:mineshaft/spruce_mineshaft",
-      "hopo:mineshaft/stone_mineshaft"
-    ],
-    "healthmultiply": 7,
-    "damagemultiply": 3,
-    "armoradd": 5,
-    "speedmultiply": 0.4,
-    "when": "onjoin",
-    "result": "default"
-  },
-  {
-    "mob": "legendarycreatures:corpse_eater",
-    "dimension": "mining_dimension:mining",
-    "when": "onjoin",
-    "result": "deny"
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "block": "minecraft:nether_bricks",
-    "structure": "minecraft:fortress",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:blazing"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "biome": "minecraft:soul_sand_valley",
-    "block": "tag:minecraft:soul_fire_base_blocks",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:bony"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "minheight": 90,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:weeping"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "random": 0.2,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:luminous",
-      "SecondaryBreed": "splendid_slimes:bony"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "random": 0.1,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:luminous",
-      "SecondaryBreed": "splendid_slimes:weeping"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:luminous"
-    }
-  },
-  {
-    "mob": "legendarycreatures:corpse_eater",
-    "dimension": "mining_dimension:mining",
-    "when": "onjoin",
-    "result": "deny"
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "structure": [
-      "hopo:mineshaft/acacia_mineshaft",
-      "hopo:mineshaft/bamboo_mineshaft",
-      "hopo:mineshaft/birch_mineshaft",
-      "hopo:mineshaft/cherry_mineshaft",
-      "hopo:mineshaft/dark_oak_mineshaft",
-      "hopo:mineshaft/deepslate_mineshaft",
-      "hopo:mineshaft/jungle_mineshaft",
-      "hopo:mineshaft/mangrove_mineshaft",
-      "hopo:mineshaft/mud_mineshaft",
-      "hopo:mineshaft/oak_mineshaft",
-      "hopo:mineshaft/spruce_mineshaft",
-      "hopo:mineshaft/stone_mineshaft"
-    ],
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:webby"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "random": 0.1,
-    "structure": [
-      "hopo:mineshaft/acacia_mineshaft",
-      "hopo:mineshaft/bamboo_mineshaft",
-      "hopo:mineshaft/birch_mineshaft",
-      "hopo:mineshaft/cherry_mineshaft",
-      "hopo:mineshaft/dark_oak_mineshaft",
-      "hopo:mineshaft/deepslate_mineshaft",
-      "hopo:mineshaft/jungle_mineshaft",
-      "hopo:mineshaft/mangrove_mineshaft",
-      "hopo:mineshaft/mud_mineshaft",
-      "hopo:mineshaft/oak_mineshaft",
-      "hopo:mineshaft/spruce_mineshaft",
-      "hopo:mineshaft/stone_mineshaft"
-    ],
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:all_seeing"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "biome": "mining_dimension:desert_caves",
-    "block": "minecraft:sand",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:dusty"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "biome": "mining_dimension:blackstone_caves",
-    "block": "minecraft:blackstone",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:blazing"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "random": 0.2,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:luminous",
-      "SecondaryBreed": "splendid_slimes:bitwise"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "random": 0.1,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:bony",
-      "SecondaryBreed": "splendid_slimes:bitwise"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:bitwise"
-    }
   }
 ]

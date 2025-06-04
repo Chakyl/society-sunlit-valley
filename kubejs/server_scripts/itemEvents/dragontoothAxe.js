@@ -14,7 +14,7 @@ const breakAxe = (item, server, player) => {
   }
 };
 
-const radius = 3;
+const galaxySmashRadius = 3;
 ItemEvents.firstLeftClicked((e) => {
   const { hand, item, player, level, server } = e;
   if (hand == "OFF_HAND") return;
@@ -22,8 +22,8 @@ ItemEvents.firstLeftClicked((e) => {
     breakAxe(item, server, player);
     if (player.cooldowns.isOnCooldown(item) || !player.stages.has("galaxy_smash") || !player.isCrouching()) return;
     for (let pos of BlockPos.betweenClosed(
-      new BlockPos(player.x - radius, player.y - 1, player.z - radius),
-      [player.x + radius, player.y + 1, player.z + radius]
+      new BlockPos(player.x - galaxySmashRadius, player.y - 1, player.z - galaxySmashRadius),
+      [player.x + galaxySmashRadius, player.y + 1, player.z + galaxySmashRadius]
     )) {
       if (pos.y === Math.round(player.y)) {
         level.spawnParticles(
@@ -41,7 +41,7 @@ ItemEvents.firstLeftClicked((e) => {
       }
     }
     let damageableMobs = level
-      .getEntitiesWithin(player.boundingBox.inflate(radius + 0.5))
+      .getEntitiesWithin(player.boundingBox.inflate(galaxySmashRadius + 0.5))
       .filter((entity) => entity.isMonster());
     let hammerDamage = player.potionEffects.isActive("minecraft:strength") ? 20 : 15;
     
