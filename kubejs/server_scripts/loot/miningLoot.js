@@ -160,7 +160,7 @@ LootJS.modifiers((e) => {
       });
     e.addBlockLootModifier(ore)
       .hasAnyStage("star_blessing")
-      .anyDimension("mining_dimension:mining")
+      .anyDimension("society:skull_cavern")
       .pool((p) => {
         p.not((n) =>
           n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
@@ -260,7 +260,7 @@ LootJS.modifiers((e) => {
       });
     e.addBlockLootModifier(ore)
       .hasAnyStage("star_blessing")
-      .anyDimension("mining_dimension:mining")
+      .anyDimension("society:skull_cavern")
       .pool((p) => {
         p.not((n) =>
           n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))

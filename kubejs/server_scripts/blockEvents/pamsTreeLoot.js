@@ -26,21 +26,20 @@ BlockEvents.rightClicked(
     const { block, player, server } = e;
     const fruitName = `${block.id.toString().split(":")[1]}`;
     if (
-      player.stages.has("tree_whisperer") &&
-      Number(block.properties.get("age")) == 7
-    ) {
+      player.isHoldingInAnyHand("minecraft:bone_meal") ||
+      player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
+      player.isHoldingInAnyHand("meadow:watering_can")
+    )
+      return;
+    if (player.stages.has("tree_whisperer") && Number(block.properties.get("age")) == 7) {
       const weirdFruit = weirdFruits.get(String(block.id));
       server.runCommandSilent(
         `puffish_skills experience add ${player.username} society:farming 40`
       );
       if (weirdFruit) {
-        block.popItem(
-          `2x ${weirdFruit}`
-        );
+        block.popItem(`2x ${weirdFruit}`);
       } else {
-        block.popItem(
-          `2x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`
-        );
+        block.popItem(`2x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`);
       }
     }
   }

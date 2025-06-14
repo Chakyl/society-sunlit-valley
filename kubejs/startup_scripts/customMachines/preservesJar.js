@@ -252,9 +252,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 5))
-    .property(
-      integerProperty.create("type", 0, global.preservesJarRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.preservesJarRecipes.length))
     .box(2, 0, 2, 14, 15, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -272,10 +270,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 5), 0)
-        .set(
-          integerProperty.create("type", 0, global.preservesJarRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.preservesJarRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -283,21 +278,12 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 5), 0)
-        .set(
-          integerProperty.create("type", 0, global.preservesJarRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.preservesJarRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
-      global.handleBERightClick(
-        "minecraft:block.wood.place",
-        click,
-        global.preservesJarRecipes,
-        upgraded ? 3 : 5,
-        true
-      );
+
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND" && !upgraded && item == "society:stone_hand") {
         if (!player.isCreative()) item.count--;
@@ -322,10 +308,18 @@ StartupEvents.registry("block", (event) => {
           stage: block.properties.get("stage"),
         });
       }
+      
+      global.handleBERightClick(
+        "minecraft:block.wood.place",
+        click,
+        global.preservesJarRecipes,
+        upgraded ? 3 : 5,
+        true
+      );
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.handleBETick(entity, global.preservesJarRecipes, 2);
+        global.handleBETick(entity, global.preservesJarRecipes, 3);
       });
     }).blockstateJson = {
     multipart: [

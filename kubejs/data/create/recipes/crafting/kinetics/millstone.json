@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "I": {
+      "tag": "forge:stone"
+    },
+    "S": {
+      "item": "create:andesite_casing"
+    },
+    "L": {
+      "item": "oreganized:lead_ingot"
+    }
+  },
+  "pattern": [
+    " C ",
+    "LSL",
+    " I "
+  ],
+  "result": {
+    "item": "create:millstone"
+  },
+  "show_notification": true
+}

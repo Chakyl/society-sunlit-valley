@@ -1,0 +1,48 @@
+{
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:translucent",
+	"textures": {
+		"1": "splendid_slimes:item/hat/sparkcat_hat"
+	},
+	"elements": [
+		{
+			"from": [3, 7, 7],
+			"to": [7, 14, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 7, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 7], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 7], "texture": "#1"},
+				"south": {"uv": [4, 0, 8, 7], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 7], "texture": "#1"},
+				"up": {"uv": [4, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [4, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [9, 7, 7],
+			"to": [13, 14, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11, 7, 7]},
+			"faces": {
+				"north": {"uv": [4, 0, 0, 7], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 7], "texture": "#1"},
+				"south": {"uv": [8, 0, 4, 7], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 7], "texture": "#1"},
+				"up": {"uv": [4, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [4, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.5, 0, 9],
+			"to": [9.5, 5, 12],
+			"rotation": {"angle": 45, "axis": "x", "origin": [6.5, 0, 12]},
+			"faces": {
+				"north": {"uv": [0, 7, 3, 12], "texture": "#1"},
+				"east": {"uv": [3, 7, 6, 12], "texture": "#1"},
+				"south": {"uv": [6, 7, 9, 12], "texture": "#1"},
+				"west": {"uv": [8, 0, 11, 5], "texture": "#1"},
+				"up": {"uv": [12, 8, 9, 5], "texture": "#1"},
+				"down": {"uv": [12, 8, 9, 11], "texture": "#1"}
+			}
+		}
+	]
+}

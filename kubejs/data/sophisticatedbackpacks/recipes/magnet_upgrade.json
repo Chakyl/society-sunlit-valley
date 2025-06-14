@@ -1,0 +1,24 @@
+{
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:magnet_upgrade"
+    }
+  ],
+  "key": {
+    "M": {
+      "item": "simplemagnets:basicmagnet"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "P": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    }
+  },
+  "pattern": ["III", "IPI", "IMI"],
+  "result": {
+    "item": "sophisticatedbackpacks:magnet_upgrade"
+  }
+}

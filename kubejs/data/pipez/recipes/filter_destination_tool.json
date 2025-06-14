@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "RGR",
+    "IBI"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/zinc"
+    },
+    "R": {
+      "item": "society:battery"
+    },
+    "G": {
+      "item": "waterframes:frame"
+    },
+    "B": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "result": {
+    "item": "pipez:filter_destination_tool",
+    "count": 1
+  }
+}

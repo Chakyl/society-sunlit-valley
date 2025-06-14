@@ -190,6 +190,7 @@ ServerEvents.recipes((e) => {
   recipes.forEach((recipe) => {
     createMixerRecipe(recipe.inputs, recipe.output, recipe.count || 1);
   });
+  // Additional recipes that don't fit the simple format
   e.custom({
     type: "create:mixing",
     ingredients: [
@@ -275,5 +276,64 @@ ServerEvents.recipes((e) => {
       },
     ],
     heatRequirement: "heated",
+  });
+
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "society:ancient_fruit",
+      },
+      {
+        fluid: "society:oak_resin",
+        amount: 50,
+      },
+      {
+        fluid: "society:vinegar",
+        amount: 500,
+      },
+    ],
+    results: [
+      {
+        fluid: "society:alchemical_varnish",
+        amount: 500,
+      },
+    ],
+    heatRequirement: "heated",
+  });
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "oreganized:lead_ingot",
+      },
+      {
+        item: "create:powdered_obsidian",
+      },
+    ],
+    results: [
+      {
+        fluid: "oreganized:molten_lead",
+        amount: 200,
+      },
+    ],
+    heatRequirement: "superheated",
+  });
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "minecraft:netherite_upgrade_smithing_template",
+      },
+      {
+        item: "create:powdered_obsidian",
+      },
+    ],
+    results: [
+      {
+        item: "oreganized:electrum_upgrade_smithing_template",
+      },
+    ],
+    heatRequirement: "superheated",
   });
 });

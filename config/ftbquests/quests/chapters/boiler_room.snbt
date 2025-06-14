@@ -134,12 +134,6 @@
 					item: { Count: 4, id: "society:fire_quartz" }
 					type: "item"
 				}
-				{
-					count: 4L
-					id: "6FB30BF21127F74A"
-					item: { Count: 4, id: "minecraft:ancient_debris" }
-					type: "item"
-				}
 			]
 			title: "Geologist's Bundle"
 			x: -1.5d
@@ -374,8 +368,9 @@
 					type: "item"
 				}
 				{
-					id: "18D411584A557A02"
-					item: "minecraft:nether_star"
+					count: 3L
+					id: "7FCA758588C563A4"
+					item: { Count: 3, id: "minecraft:wither_skeleton_skull" }
 					type: "item"
 				}
 			]

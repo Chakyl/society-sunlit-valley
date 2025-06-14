@@ -29,36 +29,24 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 4))
-    .property(
-      integerProperty.create("type", 0, global.espressoMachineRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.espressoMachineRecipes.length))
     .box(4, 0, 2, 12, 14, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(
-        Text.gray("Turns Ground Coffee into Espresso and steams milk")
-      );
+      item.tooltip(Text.gray("Turns Ground Coffee into Espresso and steams milk"));
       item.modelJson({
         parent: "society:block/espresso_machine",
       });
     })
-
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 4), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.espressoMachineRecipes.length
-          ),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.espressoMachineRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -66,26 +54,17 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 4), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.espressoMachineRecipes.length
-          ),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.espressoMachineRecipes.length), 0);
     })
     .rightClick((click) => {
       const { item, block, hand, player, server } = click;
+
       if (player.isFake()) return;
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
         global.espressoMachineRecipes.forEach((recipe, index) => {
           // Handle steamed milk
-          if (
-            recipe.output[0].includes("steamed_milk") &&
-            item == recipe.input
-          ) {
+          if (recipe.output[0].includes("steamed_milk") && item == recipe.input) {
             if (!player.isCreative()) item.count--;
             server.runCommandSilent(
               `playsound minecraft:block.lava.extinguish block @a ${player.x} ${player.y} ${player.z}`
@@ -99,6 +78,7 @@ StartupEvents.registry("block", (event) => {
           }
         });
       }
+
       global.handleBERightClick(
         "doapi:brewstation_whistle",
         click,

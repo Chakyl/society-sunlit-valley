@@ -8,7 +8,7 @@
 	#Allowed Values: ALL, ONLY_LIVING, NONE
 	playerDamageMode = "ALL"
 	#In order to prevent spam attacks, a minimum threshold of attack strength can be set before an attack can deal damage. Default: 0.75
-	minimumAttackStrength = 0.75
+	minimumAttackStrength = 0.0
 	#Whether a player is allowed to even swing if the threshold is not met. Default: true
 	allowNonFullStrengthAttacks = true
 	#Global multiplier to all knockback. Default: 1.0

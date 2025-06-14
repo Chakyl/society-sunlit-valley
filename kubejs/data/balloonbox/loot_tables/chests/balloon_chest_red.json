@@ -27,17 +27,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "splendid_slimes:slime_heart",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{slime:{id:\"splendid_slimes:phantom\"}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "weight": 1,
           "functions": [
             {
@@ -61,7 +50,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
-                "max": 83
+                "max": 16
               },
               "add": false
             }
@@ -237,22 +226,6 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
-                "max": 8
-              },
-              "add": false
-            }
-          ],
-          "name": "create:andesite_alloy"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 8,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
                 "max": 2
               },
               "add": false
@@ -391,22 +364,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 4
-              },
-              "add": false
-            }
-          ],
-          "name": "create:brass_ingot"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 3,
           "functions": [
             {
@@ -453,54 +410,21 @@
               "tag": "{slime:{id:\"splendid_slimes:webby\"}}"
             }
           ]
+        },        
+        {
+          "type": "minecraft:item",
+          "weight": 7,
+          "name": "society:iron_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 3
-              },
-              "add": false
-            }
-          ],
-          "name": "create:precision_mechanism"
+          "weight": 3,
+          "name": "society:gold_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 3
-              },
-              "add": false
-            }
-          ],
-          "name": "create:sturdy_sheet"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              },
-              "add": false
-            }
-          ],
-          "name": "create:brass_hand"
+          "weight": 1,
+          "name": "society:diamond_upgrade_smithing_template"
         }
       ]
     },
@@ -532,22 +456,6 @@
             }
           ],
           "name": "minecraft:diamond"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 3
-              },
-              "add": false
-            }
-          ],
-          "name": "minecraft:ancient_debris"
         },
         {
           "type": "minecraft:item",

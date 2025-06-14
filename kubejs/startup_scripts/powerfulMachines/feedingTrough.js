@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(
-        Text.gray("Feeds farm animals up to 5 blocks away using Animal Feed")
+        Text.gray("Feeds farm animals up to 6 blocks away using Animal Feed")
       );
       item.modelJson({
         parent: "farm_and_charm:block/feeding_trough_size_0",
@@ -25,8 +25,9 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.initialData({ fill: "0" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTick(300, 0, (entity) => {
         const { inventory, block, level } = entity;
+        if (global.inventoryHasItems(inventory, "society:animal_feed", 1) != 1) return;
         let slots = inventory.getSlots();
         let feedCount = 0;
 
@@ -47,26 +48,21 @@ StartupEvents.registry("block", (event) => {
               data.ageLastFed = level.time;
             }
             if (level.time - data.ageLastFed > global.animalInteractionCooldown) {
-              for (let i = 0; i < slots; i++) {
-                if (
-                  inventory.getStackInSlot(i).item.id === "society:animal_feed"
-                ) {
-                  inventory.getStackInSlot(i).count--;
-                  data.ageLastFed = level.time;
-                  level.spawnParticles(
-                    "legendarycreatures:wisp_particle",
-                    true,
-                    animal.x,
-                    animal.y + 1.5,
-                    animal.z,
-                    0.1 * rnd(1, 4),
-                    0.1 * rnd(1, 4),
-                    0.1 * rnd(1, 4),
-                    5,
-                    0.01
-                  );
-                  break;
-                }
+              let feedingResultCode = global.useInventoryItems(inventory, "society:animal_feed", 1);
+              if (feedingResultCode == 1) {
+                data.ageLastFed = level.time;
+                level.spawnParticles(
+                  "legendarycreatures:wisp_particle",
+                  true,
+                  animal.x,
+                  animal.y + 1.5,
+                  animal.z,
+                  0.1 * rnd(1, 4),
+                  0.1 * rnd(1, 4),
+                  0.1 * rnd(1, 4),
+                  5,
+                  0.01
+                );
               }
             }
           });
@@ -80,6 +76,7 @@ StartupEvents.registry("block", (event) => {
           else if (feedCount >= 128) fill = 2;
           else if (feedCount >= 8) fill = 1;
           entity.block.set(entity.block.id, {
+            facing: entity.block.properties.facing,
             fill: String(fill),
           });
         }

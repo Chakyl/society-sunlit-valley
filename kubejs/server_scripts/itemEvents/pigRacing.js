@@ -441,6 +441,7 @@ const validTicket = (e, bet) => {
   const coins = [
     "numismatics:crown",
     "numismatics:sun",
+    "numismatics:neptunium_coin",
     "numismatics:ancient_coin",
     "numismatics:prismatic_coin",
   ];

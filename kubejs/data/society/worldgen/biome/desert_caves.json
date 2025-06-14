@@ -1,0 +1,100 @@
+{
+  "temperature": -0.6,
+  "downfall": 0,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 14539968,
+    "fog_color": 14606250,
+    "water_color": 43775,
+    "water_fog_color": 4218032,
+    "grass_color": 5526612,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:husk",
+        "weight": 160,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "rottencreatures:mummy",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:phantom",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 50
+      },
+      {
+        "type": "legendarycreatures:desert_mojo",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 50
+      },
+      {
+        "type": "minecraft:creeper",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "axolotls": [],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:drowned",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["society:desert_caves/sandstone_ladder", "society:desert_caves/sandstone_rock"],
+    ["minecraft:lake_lava_underground"],
+    ["minecraft:monster_room", "minecraft:monster_room_deep"],
+    [],
+    [],
+    [
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower"
+    ],
+    [],
+    ["minecraft:spring_water"],
+    [
+      "minecraft:glow_lichen",
+      "society:desert_caves/dull_sand_patch_floor",
+      "society:desert_caves/sand_patch_floor",
+      "society:desert_caves/organic_glass_patch_ceiling",
+      "society:desert_caves/sandstone_patch_ceiling"
+    ],
+    ["minecraft:freeze_top_layer"]
+  ]
+}

@@ -1,4 +1,4 @@
-console.info("[SOCIETY] checkArtisanMachines.js.js loaded");
+console.info("[SOCIETY] checkArtisanMachines.js loaded");
 
 const idMap = new Map([
   ["vinery:savanna_grape_seeds_red", "Red Savanna Grape Seeds"],
@@ -43,58 +43,25 @@ const idMap = new Map([
   ["society:aged_beer_oat", "Aged Oat Beer"],
   ["society:aged_beer_wheat", "Aged Wheat Beer"],
   ["society:double_aged_glowing_wine", "Double-Aged Sun-kissed Wine"],
-  [
-    "society:double_aged_bottle_mojang_noir",
-    "Double-Aged Bottle of 'Mojang Noir'",
-  ],
-  [
-    "society:double_aged_villagers_fright",
-    "Double-Aged Bottle of 'Villagers Fright'",
-  ],
-  [
-    "society:double_aged_creepers_crush",
-    "Double-Aged Bottle of 'Creepers Crush'",
-  ],
+  ["society:double_aged_bottle_mojang_noir", "Double-Aged Bottle of 'Mojang Noir'"],
+  ["society:double_aged_villagers_fright", "Double-Aged Bottle of 'Villagers Fright'"],
+  ["society:double_aged_creepers_crush", "Double-Aged Bottle of 'Creepers Crush'"],
   ["society:double_aged_good_catawba", "Double-Aged Good Catawba"],
   ["society:double_aged_lilitu_wine", "Double-Aged Miss Lilitus Wine"],
-  [
-    "society:double_aged_whiskey_jamesons_malt",
-    "Double-Aged Jameson Malt Whisky",
-  ],
+  ["society:double_aged_whiskey_jamesons_malt", "Double-Aged Jameson Malt Whisky"],
   ["society:double_aged_whiskey_ak", "Double-Aged AK Reserve"],
-  [
-    "society:double_aged_whiskey_highland_hearth",
-    "Double-Aged Highland Hearth Signature",
-  ],
-  [
-    "society:double_aged_whiskey_carrasconlabel",
-    "Double-Aged Carrasconlabel Heritage",
-  ],
-  [
-    "society:double_aged_whiskey_cristelwalker",
-    "Double-Aged CristelWalker Original",
-  ],
-  [
-    "society:double_aged_whiskey_lilitusinglemalt",
-    "Double-Aged Lilitu Single Malt",
-  ],
+  ["society:double_aged_whiskey_highland_hearth", "Double-Aged Highland Hearth Signature"],
+  ["society:double_aged_whiskey_carrasconlabel", "Double-Aged Carrasconlabel Heritage"],
+  ["society:double_aged_whiskey_cristelwalker", "Double-Aged CristelWalker Original"],
+  ["society:double_aged_whiskey_lilitusinglemalt", "Double-Aged Lilitu Single Malt"],
   ["society:double_aged_whiskey_jojannik", "Double-Aged JoJannik Select"],
   ["society:double_aged_whiskey_maggoallan", "Triple-Aged MaggoAllan"],
   ["society:double_aged_whiskey_smokey_reverie", "Triple-Aged Smokey Reverie"],
-  [
-    "society:double_aged_buffalo_cheese_block",
-    "Double-Aged Buffalo Cheese Wheel",
-  ],
-  [
-    "society:double_aged_amethyst_cheese_block",
-    "Double-Aged Amethyst Cheese Wheel",
-  ],
+  ["society:double_aged_buffalo_cheese_block", "Double-Aged Buffalo Cheese Wheel"],
+  ["society:double_aged_amethyst_cheese_block", "Double-Aged Amethyst Cheese Wheel"],
   ["society:double_aged_grain_cheese_block", "Double-Aged Grain Cheese Wheel"],
   ["society:double_aged_sheep_cheese_block", "Double-Aged Sheep Cheese Wheel"],
-  [
-    "society:double_aged_warped_cheese_block",
-    "Double-Aged Warped Cheese Wheel",
-  ],
+  ["society:double_aged_warped_cheese_block", "Double-Aged Warped Cheese Wheel"],
   ["society:double_aged_goat_cheese_block", "Double-Aged Goat Cheese Wheel"],
   ["society:double_aged_cheese_block", "Double-Aged Cheese Wheel"],
   ["society:double_aged_beer_nettle", "Double-Aged Nettle Beer"],
@@ -106,33 +73,23 @@ const idMap = new Map([
   ["society:double_aged_beer_wheat", "Double-Aged Wheat Beer"],
 ]);
 
-const sendProgressMessage = (
-  clickEvent,
-  recipes,
-  blockStage,
-  stageCount,
-  machineId,
-  maxInput
-) => {
+const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machineId, maxInput) => {
   const { player, block, item, server } = clickEvent;
-  const status =
-    maxInput !== -1 ? "Requires more input for" : "Currently making";
+  const status = maxInput !== -1 ? "Requires more input for" : "Currently making";
   let primaryOutput;
   let recipe;
   let id;
 
   if (recipes === "society:battery") id = "society:battery";
   else {
-    recipe = recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+    recipe = global.getArtisanRecipe(recipes, block);
     if (!recipe) return;
     id = String(Item.of(recipe.output[0]).id);
     primaryOutput = idMap.get(id);
   }
   if (recipe?.input === item) return;
   let duration =
-    (block.properties.get("type") &&
-      recipes[Number(block.properties.get("type").toLowerCase()) - 1].time) ||
-    stageCount;
+    (block.properties.get("type") && global.getArtisanRecipe(recipes, block).time) || stageCount;
   if (
     machineId == "society:aging_cask" &&
     block.properties.get("upgraded").toLowerCase() === "true"
@@ -143,17 +100,14 @@ const sendProgressMessage = (
   if (!primaryOutput)
     primaryOutput = id
       .split(":")[1]
-      .replace(/^_*(.)|_+(.)/g, (s, c, d) =>
-        c ? c.toUpperCase() : " " + d.toUpperCase()
-      );
+      .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
   let outputString = "";
   for (let index = 0; index < pipCount; index++) {
     if (index < blockStage) outputString += "⬛";
     else outputString += "⬜";
   }
 
-  const upgrade =
-    block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
+  const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
   global.renderUiText(
     player,
     server,
@@ -219,108 +173,41 @@ const sendProgressMessage = (
     global.mainUiElementIds
   );
 };
-const artisanMachines = [
-  {
-    id: "society:loom",
-    recipes: global.loomRecipes,
-    stageCount: 1,
-    maxInput: 5,
-  },
-  {
-    id: "society:aging_cask",
-    recipes: global.agingCaskRecipes,
-    stageCount: 10,
-    maxInput: 1,
-  },
-  {
-    id: "society:ancient_cask",
-    recipes: global.ancientCaskRecipes,
-    stageCount: 20,
-    maxInput: 1,
-  },
-  {
-    id: "society:crystalarium",
-    recipes: global.crystalariumCrystals,
-    stageCount: 5,
-    maxInput: 1,
-  },
-  {
-    id: "society:deluxe_worm_farm",
-    recipes: global.deluxeWormFarmRecipes,
-    stageCount: 2,
-    maxInput: 4,
-  },
-  {
-    id: "society:fish_smoker",
-    recipes: global.fishSmokerRecipes,
-    stageCount: 2,
-    maxInput: 1,
-  },
-  {
-    id: "society:bait_maker",
-    recipes: global.baitMakerRecipes,
-    stageCount: 1,
-    maxInput: 1,
-  },
-  {
-    id: "society:dehydrator",
-    recipes: global.dehydratorRecipes,
-    stageCount: 1,
-    maxInput: 8,
-  },
-  {
-    id: "society:mayonnaise_machine",
-    recipes: global.mayonnaiseMachineRecipes,
-    stageCount: 1,
-    maxInput: 1,
-  },
-  {
-    id: "society:preserves_jar",
-    recipes: global.preservesJarRecipes,
-    stageCount: 2,
-    maxInput: 5,
-  },
-  {
-    id: "society:seed_maker",
-    recipes: global.seedMakerRecipes,
-    stageCount: 1,
-    maxInput: 3,
-  },
-  {
-    id: "society:charging_rod",
-    recipes: "society:battery",
-    stageCount: 5,
-    maxInput: 1,
-  },
-  {
-    id: "society:espresso_machine",
-    recipes: global.espressoMachineRecipes,
-    stageCount: 1,
-    maxInput: 4,
-  },
-];
-const artisanMachineIds = artisanMachines.map((x) => x.id);
 
-BlockEvents.rightClicked(artisanMachineIds, (e) => {
-  const { block, hand } = e;
-  const blockStage = block.properties.get("stage").toLowerCase();
-  if (hand == "OFF_HAND") return;
-
-  artisanMachines.forEach((machine) => {
-    if (
-      machine.id == block.id &&
-      block.properties.get("mature").toLowerCase() === "false"
-    ) {
+BlockEvents.rightClicked(
+  [
+    "society:bait_maker",
+    "society:aging_cask",
+    "society:ancient_cask",
+    "society:ancient_goddess_statue",
+    "society:charging_rod",
+    "society:crystalarium",
+    "society:deluxe_worm_farm",
+    "society:dehydrator",
+    "society:espresso_machine",
+    "society:fish_smoker",
+    "society:loom",
+    "society:mayonnaise_machine",
+    "society:preserves_jar",
+    "society:seed_maker",
+    "society:tapper",
+    "society:recycling_machine",
+  ],
+  (e) => {
+    const { block, hand } = e;
+    if (hand == "OFF_HAND") return;
+    const machine = global.artisanMachineDefinitions.filter((obj) => {
+      return obj.id === block.id;
+    })[0];
+    if (block.properties.get("mature").toLowerCase() === "false") {
       sendProgressMessage(
         e,
         machine.recipes,
-        blockStage,
+        block.properties.get("stage").toLowerCase(),
         machine.stageCount,
         machine.id,
-        block.properties.get("working").toLowerCase() === "false"
-          ? machine.maxInput
-          : -1
+        block.properties.get("working").toLowerCase() === "false" ? machine.maxInput : -1
       );
     }
-  });
-});
+  }
+);

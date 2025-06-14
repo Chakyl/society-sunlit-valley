@@ -149,7 +149,13 @@
 		}
 		{
 			dependencies: ["3F759C6DEEBC61FD"]
-			description: ["Coins can also be found in loot chests around the world. Exploring is a good option before you get your roots farming!"]
+			description: [
+				"Coins can also be found in loot chests around the world. "
+				""
+				"Exploring is a good way to make cash before you get your roots farming!"
+				""
+				"Keep an eye out for Pumpkins and Hay Bales in the world as well, they sell for good money early."
+			]
 			icon: "lootr:trophy"
 			id: "6BCAB845986C9D3A"
 			rewards: [{
@@ -168,7 +174,7 @@
 				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "Looting Coins"
+			title: "Foraging for Coins"
 			x: 0.5d
 			y: -3.5d
 		}
@@ -233,7 +239,7 @@
 				"- Iron (&616&r)"
 				"- Brass (&664&r)"
 				"- Gold (&6512&r)"
-				"- Netherite (&64096&r)"
+				"- Iridium (&64096&r)"
 			]
 			id: "73A85902CE35A43A"
 			rewards: [{
@@ -262,19 +268,26 @@
 			]
 			icon: "betterarcheology:villager_fossil"
 			id: "66D159252C70D5F2"
-			rewards: [{
-				count: 2
-				id: "3960776966CF1ACC"
-				item: "minecraft:villager_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "3960776966CF1ACC"
+					item: "minecraft:villager_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "71BC141AEB9C3428"
+					item: "create:clipboard"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0E99D2F7380F51CF"
 				title: "Understood!"
 				type: "checkmark"
 			}]
 			title: "Starting Your Village"
-			x: 7.5d
+			x: 7.0d
 			y: -1.5d
 		}
 		{
@@ -316,8 +329,8 @@
 				type: "item"
 			}]
 			title: "Early Game Storage"
-			x: 9.0d
-			y: 0.0d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
@@ -395,13 +408,13 @@
 				type: "item"
 			}]
 			title: "Cool Prizes"
-			x: 7.5d
-			y: -3.0d
+			x: 6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"There are 4 skill trees that can be leveled, unlocking special abilities useful to you. You can view these trees using &6K&r by default."
+				"There are 5 skill trees that can be leveled, unlocking special abilities useful to you. You can view these trees using &6K&r by default."
 				""
 				"&6Farming&r experience comes from harvesting crops, eating cooked meals, and using Artisan Machines (Such as Preserves Jars or Looms)"
 				""
@@ -486,7 +499,7 @@
 				}
 			]
 			title: "Constructing a Farmhouse"
-			x: 10.0d
+			x: 9.5d
 			y: -1.5d
 		}
 		{
@@ -650,7 +663,7 @@
 				type: "item"
 			}]
 			title: "Managing Villagers"
-			x: 7.5d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -681,6 +694,86 @@
 			title: "Eternal Summer"
 			x: 6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["459BA5CC983CFAB9"]
+			description: [
+				"Skill paths split multiple times, and you might not like what you've picked!"
+				""
+				"Thankfully the &6Cleric&r villager sells &6Crystals of Regret&r for each skill tree. They are one-time use, resetting your skill tree completely. "
+				""
+				"It refunds &65 skill points&r, so you don't have to start completely from 0."
+			]
+			icon: "society:crystal_of_regret_fishing"
+			id: "681EECD8B1D07F34"
+			rewards: [{
+				count: 4
+				id: "3A6F2BAF3D1FBCAD"
+				item: "society:book_of_stars"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C3B7B201B44B8AD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "society:crystal_of_regret_farming"
+							}
+							{
+								Count: 1b
+								id: "society:crystal_of_regret_husbandry"
+							}
+							{
+								Count: 1b
+								id: "society:crystal_of_regret_fishing"
+							}
+							{
+								Count: 1b
+								id: "society:crystal_of_regret_mining"
+							}
+							{
+								Count: 1b
+								id: "society:crystal_of_regret_adventuring"
+							}
+						]
+					}
+				}
+				title: "Any Crystal of Regret"
+				type: "item"
+			}]
+			title: "Picked the Wrong Skills?"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["77E2AE3656E32182"]
+			description: [
+				"You can share a bank account with your friends in multiplayer!"
+				""
+				"Purchase a &6Blaze Banker&r and a &6White ID Card&r + &6White Card&r for each player from the &6Banker&r villager. Each player must right click to bind the ID card and add it to the Blaze Banker."
+				""
+				"Finally, place &6White Card&r into the bottom left slot of the Blaze Banker to bind it. You can then access the account by right clicking a &6Bank Terminal&r with the card."
+			]
+			icon: "numismatics:white_card"
+			id: "1F0231C09608265D"
+			optional: true
+			rewards: [{
+				id: "63F50096B79005BF"
+				item: "numismatics:orange_card"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C512683D80242FE"
+				item: "numismatics:blaze_banker"
+				type: "item"
+			}]
+			title: "Shared Accounts"
+			x: 4.5d
+			y: 1.5d
 		}
 	]
 	title: "I - Getting Started"

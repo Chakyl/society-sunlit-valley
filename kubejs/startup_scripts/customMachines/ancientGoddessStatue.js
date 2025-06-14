@@ -12,7 +12,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Offer crates of crops to recieve the goddess' blessing"));
+      item.tooltip(Text.gray("Offer a stack of crops to recieve the Goddess' blessing"));
+      item.tooltip(Text.gray("Crops and rewards change every season"));
       item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
       item.modelJson({
         parent: "society:block/ancient_goddess_statue",
@@ -31,52 +32,38 @@ StartupEvents.registry("block", (event) => {
               if (item === "society:ancient_fruit" && item.count === 64) {
                 block.popItemFromFace("society:prismatic_shard", facing);
                 if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block)
+                successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(
-                    `Give me 64 of something ancient for something prismatic...`
-                  )
+                  Text.aqua(`Give me 64 of something ancient for something prismatic...`)
                 );
               }
               break;
             case "summer":
-              if (
-                item === "vintagedelight:ghost_pepper" &&
-                item.count === 64
-              ) {
-                block.popItemFromFace("4x society:artifact_trove", facing);
+              if (item === "vintagedelight:ghost_pepper" && item.count === 64) {
+                block.popItemFromFace("16x society:sparkstone", facing);
                 if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block)
+                successParticles(level, block);
               } else {
-                player.tell(
-                  Text.aqua(
-                    `Give me 64 of something spicy for a special trove...`
-                  )
-                );
+                player.tell(Text.aqua(`Give me 64 of something spicy for something sparky..`));
               }
               break;
             case "autumn":
               if (item === "farm_and_charm:corn" && item.count === 64) {
-                block.popItemFromFace(
-                  "4x society:pristine_star_shards",
-                  facing
-                );
+                block.popItemFromFace("4x society:pristine_star_shards", facing);
                 if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block)
+                successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(
-                    `Give me 64 of something american for a something pristine...`
-                  )
+                  Text.aqua(`Give me 64 of something cobbed for a something pristine...`)
                 );
               }
               break;
             case "winter":
               if (item === "snowyspirit:ginger" && item.count === 64) {
-                block.popItemFromFace("4x minecraft:ancient_debris", facing);
+                block.popItemFromFace("4x minecraft:netherite_scrap", facing);
                 if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block)
+                successParticles(level, block);
               } else {
                 player.tell(
                   Text.aqua(
@@ -88,11 +75,7 @@ StartupEvents.registry("block", (event) => {
           }
         }
       } else
-        player.tell(
-          Text.red(
-            `You need the skill "Farmer's Blessing" to recieve my blessing...`
-          )
-        );
+        player.tell(Text.red(`You need the skill "Farmer's Blessing" to recieve my blessing...`));
     }).blockstateJson = {
     multipart: [
       {

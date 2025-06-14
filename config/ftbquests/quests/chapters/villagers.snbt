@@ -242,33 +242,7 @@
 			}]
 			title: "Master Cultivator"
 			x: -1.0d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"36A9A59259467EB6"
-				"20C76D194ECEDB76"
-			]
-			description: [
-				"The &6Kinetic Mechanic&r sells items built using Kinetic Blueprints for convenience. It also sells certain items cheaper than other vendors."
-				""
-				"Completing the &6Boiler Room&r is required for this villager."
-			]
-			id: "2BC1A3E1327B1F30"
-			rewards: [{
-				id: "4EC82F420AED5FA6"
-				item: "numismatics:sprocket"
-				type: "item"
-			}]
-			subtitle: "Woodcutter"
-			tasks: [{
-				id: "08D6583950F6274F"
-				item: "meadow:woodcutter"
-				type: "item"
-			}]
-			title: "Kinetic Mechanic"
-			x: 3.0d
-			y: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["20C76D194ECEDB76"]
@@ -290,8 +264,8 @@
 				type: "item"
 			}]
 			title: "Barkeeper"
-			x: 0.5d
-			y: 1.0d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["20C76D194ECEDB76"]
@@ -310,7 +284,7 @@
 			}]
 			title: "Advanced Villagers"
 			x: 0.5d
-			y: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["774B43FCB1FFE9CC"]
@@ -333,7 +307,7 @@
 			}]
 			title: "Exotic Trader"
 			x: 2.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["774B43FCB1FFE9CC"]
@@ -356,7 +330,7 @@
 			}]
 			title: "Mystical Botanist"
 			x: 0.5d
-			y: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["20C76D194ECEDB76"]

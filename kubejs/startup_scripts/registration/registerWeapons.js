@@ -17,7 +17,7 @@ StartupEvents.registry("item", (e) => {
     .rarity("epic")
     .tier("prismatic")
     .displayName("§cG§6a§el§aa§9x§by §cS§6w§eo§ar§9d")
-    .attackDamageBaseline(8.0)
+    .attackDamageBaseline(10.0)
     .speed(3.0)
     .modifyTier((tier) => {
       tier.setRepairIngredient(

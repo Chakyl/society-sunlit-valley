@@ -28,9 +28,7 @@ StartupEvents.registry("block", (event) => {
     .create("shippingbin:basic_shipping_bin", "cardinal")
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
-      item.tooltip(
-        Text.gray("Sells items every morning and leaves coins in its inventory")
-      );
+      item.tooltip(Text.gray("Sells items every morning and leaves coins in its inventory"));
       item.modelJson({
         parent: "shippingbin:block/shipping_bin",
       });
@@ -48,12 +46,17 @@ StartupEvents.registry("block", (event) => {
           let value = 0;
           let playerAttributes;
           let binPlayer;
+          let binPlayerUUID;
+          let binDebt = 0;
+          let debtPaid;
+          let totalDebt;
           let removedSlots = [];
-          let calculationResults ;
+          let calculationResults;
           level.players.forEach((p) => {
             if (p.getUuid().toString() === block.getEntityData().data.owner) {
               playerAttributes = p.nbt.Attributes;
               binPlayer = p;
+              binPlayerUUID = binPlayer.getUuid().toString();
             }
           });
           if (playerAttributes) {
@@ -63,18 +66,50 @@ StartupEvents.registry("block", (event) => {
               playerAttributes,
               true
             );
-            value = calculationResults.calculatedValue
-            removedSlots = calculationResults.removedItems
+            value = Math.round(calculationResults.calculatedValue);
+            removedSlots = calculationResults.removedItems;
             if (value > 0) {
+              if (binPlayer.server.persistentData.debts) {
+                binDebt = binPlayer.server.persistentData.debts.filter((debt) => {
+                  return debt.uuid === binPlayerUUID;
+                });
+              }
+              if (binDebt.length > 0 && binDebt[0].amount > 0) {
+                totalDebt = binDebt[0].amount;
+                if (value >= totalDebt) {
+                  value = value - totalDebt;
+                  debtPaid = totalDebt;
+                  binPlayer.server.runCommandSilent(
+                    `immersivemessages sendcustom ${
+                      binPlayer.username
+                    } {anchor:7,background:1,color:"#55FF55",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 You paid off your :coin: ${global.formatPrice(
+                      debtPaid
+                    )} debt!`
+                  );
+
+                  global.setDebt(binPlayer.server, binPlayerUUID, 0);
+                } else {
+                  debtPaid = value;
+                  value = 0;
+                  binPlayer.server.runCommandSilent(
+                    `immersivemessages sendcustom ${
+                      binPlayer.username
+                    } {anchor:7,background:1,color:"#FF5555",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${global.formatPrice(
+                      debtPaid
+                    )} §7of your debt paid off...`
+                  );
+                  global.setDebt(binPlayer.server, binPlayerUUID, totalDebt - debtPaid);
+                }
+              }
               value = Math.round(value);
               let outputs = calculateCoinsFromValue(value, [], basicCoinMap);
+              if (!outputs) outputs = [];
+
               if (debug) {
                 console.log(`slots: ${slots}`);
                 console.log(`countNonEmpty: ${inventory.countNonEmpty()}`);
                 console.log(`RemovedSlots: ${removedSlots.length}`);
-                console.log(
-                  `calculateSlotsNeeded: ${calculateSlotsNeeded(outputs)}`
-                );
+                console.log(`calculateSlotsNeeded: ${calculateSlotsNeeded(outputs)}`);
               }
               if (
                 slots -
@@ -91,10 +126,7 @@ StartupEvents.registry("block", (event) => {
                     binPlayer.username
                   } {anchor:7,background:1,color:"#FFAA00",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${value
                     .toString()
-                    .replace(
-                      /\B(?=(\d{3})+(?!\d))/g,
-                      ","
-                    )} §7worth of goods sold`
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} §7worth of goods sold`
                 );
                 for (let i = 0; i < removedSlots.length; i++) {
                   inventory.setStackInSlot(removedSlots[i], "minecraft:air");
@@ -104,20 +136,37 @@ StartupEvents.registry("block", (event) => {
                   for (let index = 0; index <= count; index += 64) {
                     let difference = count - index;
                     for (let i = 0; i < slots; i++) {
-                      if (
-                        inventory.getStackInSlot(i).item.id === "minecraft:air"
-                      ) {
+                      if (inventory.getStackInSlot(i).item.id === "minecraft:air") {
                         inventory.setStackInSlot(
                           i,
-                          Item.of(
-                            `${difference > 64 ? 64 : difference}x ${coin}`
-                          )
+                          Item.of(`${difference > 64 ? 64 : difference}x ${coin}`)
                         );
                         break;
                       }
                     }
                   }
                 });
+                if (debtPaid > 0) {
+                  for (let j = 0; j < inventory.slots; j++) {
+                    if (inventory.getStackInSlot(j) === Item.of("minecraft:air")) {
+                      inventory.insertItem(
+                        j,
+                        Item.of(
+                          "candlelight:note_paper_written",
+                          `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+
+${binPlayer.username}, your profits were used to pay off your debt!
+
+:coin: ${global.formatPrice(debtPaid)} paid out of your :coin: ${global.formatPrice(
+                            totalDebt
+                          )} debt."],title:"Debt Payement Receipt"}`
+                        ),
+                        false
+                      );
+                      break;
+                    }
+                  }
+                }
               } else {
                 binPlayer.server.runCommandSilent(
                   `playsound stardew_fishing:fish_escape block @a ${binPlayer.x} ${binPlayer.y} ${binPlayer.z} 0.3`
@@ -139,13 +188,9 @@ StartupEvents.registry("block", (event) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     });
 });

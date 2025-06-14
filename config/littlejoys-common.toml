@@ -38,7 +38,7 @@
 [digSpots]
 	#The minimum distance between dig spots, preventing them from spawning too close together.
 	#Range: > -2147483648
-	minimumDistanceBetween = 64
+	minimumDistanceBetween = 128
 	#The distance dig spots will spawn from the player.
 	#Range: > -2147483648
 	spawnDistance = 32

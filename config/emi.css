@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -114,7 +114,7 @@
 	 * The maximum height the recipe screen will grow to be if space is available in
 	 * pixels.
 	 */
-	maximum-recipe-screen-height: 256;
+	maximum-recipe-screen-height: 384;
 
 	/**
 	 * The minimum width of the recipe screen in pixels. Controls how many tabs there
@@ -430,7 +430,7 @@
 	/**
 	 * Copies the hovered recipe's ID to the clipboard
 	 */
-	copy-recipe-id: "key.keyboard.unknown";
+	copy-recipe-id: "key.keyboard.keypad.add";
 
 	/**
 	 * In edit mode, hide the hovered stack

@@ -1,0 +1,27 @@
+{
+  "breed": "juicy",
+  "name": "slime.splendid_slimes.juicy",
+  "color": "#7d2ed8",
+  "hat_scale": 1.0,
+  "particle": { "item": "vinery:jungle_grape_seeds_red" },
+  "diet": "diet.splendid_slimes.juicy",
+  "foods": [{ "tag": "vinery:red_grape" }],
+  "favorite_food": {
+    "item": "vinery:jungle_grapes_red"
+  },
+  "traits": ["moody", "photosynthesizing"],
+  "emit_effect_particle": "rehooked:ender_hook_particle",
+  "negative_emit_effects": [
+    {
+      "effect": "brewery:drunk",
+      "duration": 120,
+      "amplifier": 2
+    }
+  ],
+  "innate_effects": [
+    {
+      "effect": "vinery:climbing_effect",
+      "amplifier": 0
+    }
+  ]
+}

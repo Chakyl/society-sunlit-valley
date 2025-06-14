@@ -64,16 +64,6 @@ StartupEvents.registry("block", (e) => {
       });
     });
 
-  // e.create("society:boulder")
-  //   .defaultCutout()
-  //   .soundType("stone")
-  //   .hardness(4.5)
-  //   .resistance(9.0)
-  //   .requiresTool(true)
-  //   .tagBlock("minecraft:mineable/pickaxe")
-  //   .tagBlock("minecraft:needs_stone_tool")
-  //   .model("society:block/boulder");
-
   e.create("society:geode_node")
     .box(4, 0, 4, 12, 9, 12)
     .defaultCutout()
@@ -107,6 +97,196 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_diamond_tool")
     .model("society:block/omni_geode_node");
 
+  // Skull Cavern
+  e.create("society:skull_cavern_teleporter")
+    .texture("up", "society:block/teleporter_top")
+    .texture("down", "society:block/teleporter_bottom")
+    .texture("north", "society:block/teleporter_side")
+    .texture("east", "society:block/teleporter_side")
+    .texture("south", "society:block/teleporter_side")
+    .texture("west", "society:block/teleporter_side")
+    .texture("particle", "society:block/teleporter_side")
+    .mapColor("stone")
+    .soundType("stone")
+    .hardness(1.0)
+    .resistance(1.0)
+    .lightLevel(1)
+    .requiresTool(false);
+
+  const createBoulder = (type) => {
+    e.create(`society:${type}_boulder`)
+      .texture("up", `society:block/${type}_boulder_top`)
+      .texture("down", `society:block/${type}_boulder`)
+      .texture("north", `society:block/${type}_boulder`)
+      .texture("east", `society:block/${type}_boulder`)
+      .texture("south", `society:block/${type}_boulder`)
+      .texture("west", `society:block/${type}_boulder`)
+      .texture("particle", `society:block/${type}_boulder`)
+      .soundType("stone")
+      .hardness(2)
+      .resistance(1.0)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .tagBlock("minecraft:needs_iron_tool");
+  };
+  createBoulder("stone");
+  createBoulder("ice");
+  createBoulder("sandstone");
+  createBoulder("blackstone");
+  createBoulder("end_stone");
+
+  const createSkullVariant = (type, path) => {
+    e.create(`society:skull_${type}`)
+      .soundType("stone")
+      .hardness(-1)
+      .resistance(3600000)
+      .requiresTool(true)
+      .textureAll(path)
+      .tagBlock("society:skull_block");
+  };
+  createSkullVariant("stone", "minecraft:block/stone");
+  createSkullVariant("permafrost", "quark:block/permafrost");
+  createSkullVariant("sandstone", "minecraft:block/sandstone_top");
+  createSkullVariant("arid_sandstone", "atmospheric:block/arid_sandstone_top");
+  createSkullVariant("blackstone", "minecraft:block/blackstone");
+  createSkullVariant("end_stone", "minecraft:block/end_stone");
+
+  e.create("society:iridium_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/iridium_ore");
+
+  e.create("society:deepslate_iridium_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/deepslate_iridium_ore");
+
+  e.create("society:sparkstone_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/sparkstone_ore");
+
+  e.create("society:deepslate_sparkstone_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/deepslate_sparkstone_ore");
+
+  e.create(`society:sparkstone_block`)
+    .soundType("amethyst")
+    .hardness(2)
+    .resistance(1.0)
+    .textureAll("society:block/sparkstone_block");
+
+  // Compressed Crops block
+  e.create("society:animal_feed_sack", "cardinal")
+    .model("society:block/animal_feed_sack")
+    .mapColor("dirt")
+    .soundType("sand")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false);
+
+  e.create("herbalbrews:coffee_beans_sack")
+    .texture("up", "quark:block/cocoa_beans_sack_top")
+    .texture("down", "quark:block/cocoa_beans_sack_bottom")
+    .texture("north", "quark:block/cocoa_beans_sack")
+    .texture("east", "quark:block/cocoa_beans_sack")
+    .texture("south", "quark:block/cocoa_beans_sack")
+    .texture("west", "quark:block/cocoa_beans_sack")
+    .mapColor("dirt")
+    .soundType("sand")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false)
+    .texture("particle", "quark:block/cocoa_beans_sack");
+  e.create("herbalbrews:yerba_mate_leaf_block")
+    .textureAll("herbalbrews:block/green_tea_leaf2")
+    .mapColor("grass")
+    .soundType("azalea_leaves")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false)
+    .texture("particle", "herbalbrews:block/green_tea_leaf2");
+
+  e.create("herbalbrews:rooibos_leaf_block")
+    .textureAll("herbalbrews:block/green_tea_leaf2")
+    .mapColor("grass")
+    .soundType("azalea_leaves")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false)
+    .texture("particle", "herbalbrews:block/green_tea_leaf2");
+
+  const createCrate = (type) => {
+    e.create(`society:${type}_crate`)
+      .texture("up", `society:block/${type}_crate_top`)
+      .texture("down", "farmersdelight:block/crate_bottom")
+      .texture("north", `society:block/${type}_crate_side`)
+      .texture("east", `society:block/${type}_crate_side`)
+      .texture("south", `society:block/${type}_crate_side`)
+      .texture("west", `society:block/${type}_crate_side`)
+      .texture("particle", `society:block/${type}_crate_top`)
+      .mapColor("grass")
+      .soundType("wood")
+      .hardness(1.0)
+      .resistance(1.0)
+      .requiresTool(false);
+  };
+
+  createCrate("blueberry");
+  createCrate("eggplant");
+  createCrate("ancient_fruit");
+
+  e.create("society:tubabacco_leaf_block")
+    .textureAll("herbalbrews:block/green_tea_leaf1")
+    .mapColor("grass")
+    .soundType("azalea_leaves")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false)
+    .texture("particle", "herbalbrews:block/green_tea_leaf1");
+
+  e
+    .create("society:sturdy_bamboo_block")
+    .tag("minecraft:logs")
+    .property(BlockProperties.AXIS)
+    .placementState((e) => e.set(BlockProperties.AXIS, e.clickedFace.axis))
+    .displayName("Sturdy Block of Bamboo")
+    .soundType("wood")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/axe").blockstateJson = {
+    variants: {
+      "axis=x": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+        y: 90,
+      },
+      "axis=y": {
+        model: "society:block/treated_log",
+      },
+      "axis=z": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+      },
+    },
+  };
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)
@@ -284,7 +464,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .model("society:block/drinks/beer_attunecore")
     .item((item) => {
-    item.modelJson({
+      item.modelJson({
         parent: "minecraft:item/generated",
         textures: {
           layer0: "society:item/drinks/beer_attunecore",
@@ -459,95 +639,6 @@ StartupEvents.registry("block", (e) => {
       });
       item.useAnimation("drink");
     });
-
-  // Compressed Crops block
-  e.create("herbalbrews:coffee_beans_sack")
-    .texture("up", "quark:block/cocoa_beans_sack_top")
-    .texture("down", "quark:block/cocoa_beans_sack_bottom")
-    .texture("north", "quark:block/cocoa_beans_sack")
-    .texture("east", "quark:block/cocoa_beans_sack")
-    .texture("south", "quark:block/cocoa_beans_sack")
-    .texture("west", "quark:block/cocoa_beans_sack")
-    .mapColor("dirt")
-    .soundType("sand")
-    .hardness(1.0)
-    .resistance(1.0)
-    .requiresTool(false)
-    .texture("particle", "quark:block/cocoa_beans_sack");
-
-  e.create("herbalbrews:yerba_mate_leaf_block")
-    .textureAll("herbalbrews:block/green_tea_leaf2")
-    .mapColor("grass")
-    .soundType("azalea_leaves")
-    .hardness(1.0)
-    .resistance(1.0)
-    .requiresTool(false)
-    .texture("particle", "herbalbrews:block/green_tea_leaf2");
-
-  e.create("herbalbrews:rooibos_leaf_block")
-    .textureAll("herbalbrews:block/green_tea_leaf2")
-    .mapColor("grass")
-    .soundType("azalea_leaves")
-    .hardness(1.0)
-    .resistance(1.0)
-    .requiresTool(false)
-    .texture("particle", "herbalbrews:block/green_tea_leaf2");
-
-  const createCrate = (type) => {
-    e.create(`society:${type}_crate`)
-      .texture("up", `society:block/${type}_crate_top`)
-      .texture("down", "farmersdelight:block/crate_bottom")
-      .texture("north", `society:block/${type}_crate_side`)
-      .texture("east", `society:block/${type}_crate_side`)
-      .texture("south", `society:block/${type}_crate_side`)
-      .texture("west", `society:block/${type}_crate_side`)
-      .texture("particle", `society:block/${type}_crate_top`)
-      .mapColor("grass")
-      .soundType("wood")
-      .hardness(1.0)
-      .resistance(1.0)
-      .requiresTool(false);
-  };
-
-  createCrate("blueberry");
-  createCrate("eggplant");
-  createCrate("ancient_fruit");
-
-  e.create("society:tubabacco_leaf_block")
-    .textureAll("herbalbrews:block/green_tea_leaf1")
-    .mapColor("grass")
-    .soundType("azalea_leaves")
-    .hardness(1.0)
-    .resistance(1.0)
-    .requiresTool(false)
-    .texture("particle", "herbalbrews:block/green_tea_leaf1");
-
-  e
-    .create("society:sturdy_bamboo_block")
-    .tag("minecraft:logs")
-    .property(BlockProperties.AXIS)
-    .placementState((e) => e.set(BlockProperties.AXIS, e.clickedFace.axis))
-    .displayName("Sturdy Block of Bamboo")
-    .soundType("wood")
-    .hardness(1.0)
-    .resistance(1.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/axe").blockstateJson = {
-    variants: {
-      "axis=x": {
-        model: "society:block/treated_log_horizontal",
-        x: 90,
-        y: 90,
-      },
-      "axis=y": {
-        model: "society:block/treated_log",
-      },
-      "axis=z": {
-        model: "society:block/treated_log_horizontal",
-        x: 90,
-      },
-    },
-  };
   // Catalogs
   e.create("society:tanuki_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)

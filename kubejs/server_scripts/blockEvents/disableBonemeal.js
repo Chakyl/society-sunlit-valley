@@ -1,20 +1,21 @@
 console.info("[SOCIETY] disableBonemeal.js loaded");
 
 BlockEvents.rightClicked((e) => {
+  const { player, block } = e;
   if (
-    e.player.isHoldingInAnyHand("minecraft:bone_meal") ||
-    e.player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
-    e.player.isHoldingInAnyHand("meadow:watering_can")
+    player.isHoldingInAnyHand("minecraft:bone_meal") ||
+    player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
+    player.isHoldingInAnyHand("meadow:watering_can")
   ) {
     if (
-      e.block.hasTag("minecraft:crops") ||
-      e.block.hasTag("minecraft:saplings") ||
-      e.block.hasTag("farmersdelight:wild_crops") ||
-      e.block.hasTag("farm_and_charm:wild_crops") ||
-      e.block.hasTag("sereneseasons:summer_crops") ||
-      e.block.hasTag("sereneseasons:autumn_crops") ||
-      e.block.hasTag("sereneseasons:spring_crops") ||
-      e.block.hasTag("sereneseasons:winter_crops") ||
+      block.hasTag("minecraft:crops") ||
+      block.hasTag("minecraft:saplings") ||
+      block.hasTag("farmersdelight:wild_crops") ||
+      block.hasTag("farm_and_charm:wild_crops") ||
+      block.hasTag("sereneseasons:summer_crops") ||
+      block.hasTag("sereneseasons:autumn_crops") ||
+      block.hasTag("sereneseasons:spring_crops") ||
+      block.hasTag("sereneseasons:winter_crops") ||
       [
         "veggiesdelight:wild_bellpeppers",
         "veggiesdelight:wild_sweet_potatoes",
@@ -51,7 +52,8 @@ BlockEvents.rightClicked((e) => {
         "herbalbrews:hibiscus",
         "minecraft:torchflower",
         "atmospheric:passion_vine",
-      ].includes(e.block.id)
+        "verdantvibes:bracket_mushroom",
+      ].includes(block.id)
     ) {
       e.cancel();
     }

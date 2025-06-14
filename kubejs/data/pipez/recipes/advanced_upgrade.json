@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DRD",
+    "RUR",
+    "DRD"
+  ],
+  "key": {
+    "R": {
+      "item": "create:precision_mechanism"
+    },
+    "D": {
+      "tag": "forge:storage_blocks/diamond"
+    },
+    "U": {
+      "item": "translocators:item_translocator"
+    }
+  },
+  "result": {
+    "item": "pipez:advanced_upgrade",
+    "count": 1
+  }
+}

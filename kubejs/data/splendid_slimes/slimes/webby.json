@@ -8,6 +8,12 @@
   "favorite_food": {
     "item": "veggiesdelight:garlic"
   },
+  "innate_effects": [
+    {
+      "effect": "vinery:climbing_effect",
+      "amplifier": 0
+    }
+  ],
   "negative_emit_effects": [
     {
       "effect": "minecraft:slowness",

@@ -12,11 +12,7 @@ const shippingBinThrottle = ((temp) => (entity, tick, identifier) => {
 })({});
 
 BlockEvents.leftClicked(
-  [
-    "shippingbin:shipping_bin",
-    "shippingbin:basic_shipping_bin",
-    "shippingbin:smart_shipping_bin",
-  ],
+  ["shippingbin:shipping_bin", "shippingbin:basic_shipping_bin", "shippingbin:smart_shipping_bin"],
   (e) => {
     const { player, block, level } = e;
     let binPlayer;
@@ -45,21 +41,15 @@ BlockEvents.leftClicked(
         player.tell(`§6${binPlayer.username}'s§7 Shipping Bin`);
         player.tell(":coin: §7Current sell multipliers:");
         player.tell(`:corn: Farmer products: §ax${crop[0] ? crop[0].Base : 1}`);
-        player.tell(
-          `:art: Artisan products: §ax${artisan[0] ? artisan[0].Base : 1}`
-        );
+        player.tell(`:art: Artisan products: §ax${artisan[0] ? artisan[0].Base : 1}`);
         player.tell(`:gem: Geologist products: §ax${gem[0] ? gem[0].Base : 1}`);
         player.tell(
-          `:crossed_swords: Adventurer products: §ax${
-            adventurer[0] ? adventurer[0].Base : 1
-          }`
+          `:crossed_swords: Adventurer products: §ax${adventurer[0] ? adventurer[0].Base : 1}`
         );
       }
     } else {
       player.tell(
-        Text.gray(
-          "This is a stranger's Shipping Bin. They aren't online to draw stats from..."
-        )
+        Text.gray("This is a stranger's Shipping Bin. They aren't online to draw stats from...")
       );
     }
   }

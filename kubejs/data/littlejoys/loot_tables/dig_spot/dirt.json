@@ -20,6 +20,16 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 3,
+          "name": "society:iron_upgrade_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "society:gold_upgrade_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "add": false,

@@ -1,5 +1,16 @@
 console.info("[SOCIETY] enrichedBonemeal.js loaded");
 
+const hasGreenhouseGlass = (level, cropPos) => {
+  let scannedBlock;
+  for (let i = 0; i < 16; i++) {
+    scannedBlock = level.getBlock(cropPos.offset(0, i + 1, 0));
+    if (scannedBlock.hasTag("sereneseasons:greenhouse_glass")) {
+      return true;
+    }
+  }
+  return false;
+};
+
 const enrichedBonemealThrottle = ((temp) => (entity, tick, identifier) => {
   const { age, uuid } = entity;
   const key = `${uuid}${identifier}`;
@@ -24,11 +35,7 @@ const cropDrop = [
 BlockEvents.rightClicked(cropDrop, (e) => {
   if (
     e.player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
-    enrichedBonemealThrottle(
-      e.player,
-      1,
-      "enriched_bonemeal_throttle_crop_drop"
-    )
+    enrichedBonemealThrottle(e.player, 1, "enriched_bonemeal_throttle_crop_drop")
   ) {
     e.player.getHeldItem("main_hand").count--;
     let crop = e.block.level.createEntity("minecraft:item");
@@ -59,11 +66,7 @@ const cropGrowth = ["minecraft:cave_vines", "minecraft:cave_vines_plant"];
 BlockEvents.rightClicked(cropGrowth, (e) => {
   if (
     e.player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
-    enrichedBonemealThrottle(
-      e.player,
-      1,
-      "enriched_bonemeal_throttle_crop_growth"
-    )
+    enrichedBonemealThrottle(e.player, 1, "enriched_bonemeal_throttle_crop_growth")
   ) {
     e.player.getHeldItem("main_hand").count--;
     e.block.set(e.block.id, { berries: "true" });
@@ -89,16 +92,12 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
   const { block, player } = e;
   const season = global.getSeasonFromLevel(player.level);
   let modifiedProperties = block.properties;
-  let throttle = enrichedBonemealThrottle(
-    player,
-    1,
-    "enriched_bonemeal_throttle_apple_leaves"
-  );
+  let throttle = enrichedBonemealThrottle(player, 1, "enriched_bonemeal_throttle_apple_leaves");
   if (
     block.properties.get("can_have_apples").toString() == "true" &&
     block.properties.get("has_apples").toString() == "true"
   ) {
-    if (season == "autumn") {
+    if (season == "autumn" || hasGreenhouseGlass(player.level, block.getPos())) {
       modifiedProperties.can_have_apples = false;
       modifiedProperties.has_apples = false;
       e.server.scheduleInTicks(5, () => {
@@ -108,10 +107,7 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
       player.tell("This tree only bears fruit in §6Autumn§r!");
       e.cancel();
     }
-  } else if (
-    player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
-    throttle
-  ) {
+  } else if (player.getHeldItem("main_hand") == "society:enriched_bone_meal" && throttle) {
     player.getHeldItem("main_hand").count--;
     modifiedProperties.can_have_apples = true;
     modifiedProperties.has_apples = true;
@@ -147,7 +143,7 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
     block.properties.get("can_have_cherries").toString() == "true" &&
     block.properties.get("has_cherries").toString() == "true"
   ) {
-    if (season == "spring") {
+    if (season == "spring" || hasGreenhouseGlass(player.level, block.getPos())) {
       modifiedProperties.can_have_cherries = false;
       modifiedProperties.has_cherries = false;
       e.server.scheduleInTicks(5, () => {
@@ -157,10 +153,7 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
       e.player.tell("This tree only bears fruit in §aSpring§r!");
       e.cancel();
     }
-  } else if (
-    player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
-    throttle
-  ) {
+  } else if (player.getHeldItem("main_hand") == "society:enriched_bone_meal" && throttle) {
     player.getHeldItem("main_hand").count--;
     modifiedProperties.can_have_cherries = true;
     modifiedProperties.has_cherries = true;

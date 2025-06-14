@@ -11,6 +11,8 @@ ServerEvents.recipes((e) => {
   compact("numismatics:crown", "numismatics:cog", 8);
   compact("numismatics:sun", "numismatics:crown", 8);
 
+  compact("society:sparkstone_block", "society:sparkstone", 9);
+  compact("society:animal_feed_sack", "society:animal_feed", 9);
   compact("herbalbrews:coffee_beans_sack", "herbalbrews:coffee_beans", 9);
   compact("herbalbrews:rooibos_leaf_block", "herbalbrews:rooibos_leaf", 9);
   compact(
@@ -25,7 +27,8 @@ ServerEvents.recipes((e) => {
   compact("society:tubasmoke_carton", "society:tubasmoke_stick", 9);
   compact("society:sturdy_bamboo_block", "minecraft:bamboo_block", 9);
  
-  compact("numismatics:ancient_coin", "numismatics:sun", 62);
+  compact("numismatics:neptunium_coin", "numismatics:sun", 8);
+  compact("numismatics:ancient_coin", "numismatics:neptunium_coin", 8);
   compact("numismatics:prismatic_coin", "numismatics:ancient_coin", 64);
 
   compact("etcetera:bismuth_ingot", "etcetera:bismuth_nugget", 9);

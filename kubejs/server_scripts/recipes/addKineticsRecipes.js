@@ -1,14 +1,14 @@
 console.info("[SOCIETY] addKineticsRecipes.jsloaded");
 
 ServerEvents.recipes((e) => {
-  e.shaped("society:kinetic_blueprint", [
+  e.shaped("2x society:kinetic_blueprint", [
     "ppp", 
     "pBp",
     "ppp"
   ], {
     B: "society:kinetic_blueprint",
     p: "minecraft:paper",
-  }).keepIngredient("society:kinetic_blueprint")
+  })
 
   e.shaped("create:windmill_bearing", [
     " B ", 
@@ -16,39 +16,29 @@ ServerEvents.recipes((e) => {
     "asa"
   ], {
     B: "society:kinetic_blueprint",
-    C: "numismatics:sprocket",
+    C: "oreganized:lead_block",
     s: "create:shaft",
     a: "create:andesite_casing"
   }).keepIngredient("society:kinetic_blueprint")
 
   e.shaped("create:water_wheel", [
-    "lBl", 
-    "lCl",
-    "lll"
+    "LlL", 
+    "lBl",
+    "LlL"
   ], {
     B: "society:kinetic_blueprint",
-    C: "numismatics:cog",
-    l: "#minecraft:logs",
+    L: "oreganized:lead_ingot",
+    l: "meadow:fire_log",
   }).keepIngredient("society:kinetic_blueprint")
 
   e.shaped("create:steam_engine", [
     " B ", 
-    " C ",
+    " L ",
     " c "
   ], {
     B: "society:kinetic_blueprint",
-    C: "numismatics:crown",
+    L: "oreganized:lead_block",
     c: "create:copper_casing"
-  }).keepIngredient("society:kinetic_blueprint")
-
-  e.shaped("meadow:woodcutter", [
-    " B ", 
-    " a ",
-    " L "
-  ], {
-    B: "society:kinetic_blueprint",
-    L: "#minecraft:logs",
-    a: "minecraft:iron_axe"
   }).keepIngredient("society:kinetic_blueprint")
 
 });

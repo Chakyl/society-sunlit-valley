@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        },
+        {
+          "block": "tanukidecor:cabana_bed",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "width": 1,
+            "depth": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tanukidecor:cabana_bed"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

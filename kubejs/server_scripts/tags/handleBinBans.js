@@ -148,7 +148,6 @@ ServerEvents.tags("item", (e) => {
     "minecraft:iron_pickaxe",
     "mysticaloaktree:wise_oak",
     "moreminecarts:chunk_loader",
-    "mining_dimension:teleporter",
     "minecraft:turtle_helmet",
     "minecraft:totem_of_undying",
     "minecraft:iron_sword",

@@ -1,0 +1,40 @@
+{
+    "parent": "block/block",
+    "render_type": "cutout",
+    "textures": {
+      "particle": "society:block/deepslate_sparkstone_ore",
+      "base": "minecraft:block/deepslate",
+      "lit": "society:block/sparkstone_emissive_overlay"
+    },
+    "elements": [
+      {
+        "from": [0, 0, 0],
+        "to": [16, 16, 16],
+        "faces": {
+          "down": { "texture": "#base", "cullface": "down" },
+          "up": { "texture": "#base", "cullface": "up" },
+          "north": { "texture": "#base", "cullface": "north" },
+          "south": { "texture": "#base", "cullface": "south" },
+          "west": { "texture": "#base", "cullface": "west" },
+          "east": { "texture": "#base", "cullface": "east" }
+        }
+      },
+      {
+        "from": [0, 0, 0],
+        "to": [16, 16, 16],
+        "faces": {
+          "down": { "texture": "#lit", "cullface": "down" },
+          "up": { "texture": "#lit", "cullface": "up" },
+          "north": { "texture": "#lit", "cullface": "north" },
+          "south": { "texture": "#lit", "cullface": "south" },
+          "west": { "texture": "#lit", "cullface": "west" },
+          "east": { "texture": "#lit", "cullface": "east" }
+        },
+        "forge_data": {
+            "color": "FFFFFFFF",
+            "block_light": 15,
+            "sky_light": 15
+        }
+      }
+    ]
+  }

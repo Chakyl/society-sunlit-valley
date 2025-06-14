@@ -1,16 +1,11 @@
 console.info("[SOCIETY] coinLeaderboard.js loaded");
 
-const NUMISMATICS = Java.loadClass(
-  "dev.ithundxr.createnumismatics.Numismatics"
-);
-const GLOBAL_BANK = NUMISMATICS.BANK;
-
 const updateLeaderboardMap = (server) => {
   let playerName;
   let playerList = server.persistentData.playerList;
   if (!playerList) return undefined
   let leaderboardMap = new Map();
-  GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
+  global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
     playerName = playerList[playerUUID];
     leaderboardMap.set(playerName, bankAccount.getBalance());
   });

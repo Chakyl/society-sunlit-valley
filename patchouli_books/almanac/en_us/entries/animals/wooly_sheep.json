@@ -1,0 +1,17 @@
+{
+  "name": "Wooly Sheep",
+  "category": "patchouli:animals",
+  "icon": "meadow:rocky_wool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Milk: Sheep Milk$(li)Milk Cooldown: 15m$(li)Shear drops: Wool, Fine Wool (50% chance) $(li)Drops: Raw Mutton, Wool$(br2)$(l)Notes$()$(br)Fine Wool only drops at 5+ hearts of affection"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "meadow:wooly_sheep",
+      "scale": 0.8,
+      "text": "A sheep with 4 variants that drop patterned wool."
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 {
-  "schema_version": "2",
+  "schema_version": 2,
+  "failed_reloads_per_session": 5,
   "default_packs": [
-    "file/glow_up-1.1-1.20.zip",
+    "file/Lopy-Create-Pipez.zip",
+    "file/glow_up-1.2-1.20.1.zip",
     "file/Icon Journey 1.1.zip",
     "file/JourneyMap Extended Mob Icons v2.0.zip",
     "file/updated_aquaculture-1.1.zip",
@@ -12,5 +14,28 @@
     "file/Create Simple Storage 2.1.zip",
     "file/Better tom's create storage 1.1.zip",
     "file/Fairy Wings Elytra.zip"
-  ]
+  ],
+  "default_overrides": {
+    "force_compatible": true
+  },
+  "pack_overrides": {
+    "1": [
+    "file/Lopy-Create-Pipez.zip",
+    "file/glow_up-1.2-1.20.1.zip",
+    "file/Icon Journey 1.1.zip",
+    "file/JourneyMap Extended Mob Icons v2.0.zip",
+    "file/updated_aquaculture-1.1.zip",
+    "file/MobCrates_1.20.1_v1.zip",
+    "file/JadeStardewValleyTheme.zip",
+    "file/Stardew_plaques v1.0.zip",
+    "file/CreateSophisticatedBackpacks.zip",
+    "file/Create Simple Storage 2.1.zip",
+    "file/Better tom's create storage 1.1.zip",
+    "file/Fairy Wings Elytra.zip"
+  ],
+    "$$1": {
+      "hidden": false,
+      "required": true
+    }
+  }
 }

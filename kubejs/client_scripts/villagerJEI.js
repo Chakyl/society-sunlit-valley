@@ -58,7 +58,6 @@ JEIAddedEvents.registerRecipes((e) => {
     { villager: "farmer", block: "minecraft:composter" },
     { villager: "cartographer", block: "minecraft:cartography_table" },
     { villager: "cook", block: "candlelight:cooking_pot" },
-    { villager: "hermit", block: "meadow:woodcutter" },
     { villager: "barkeeper", block: "beachparty:tiki_bar" },
     { villager: "fletcher", block: "minecraft:fletching_table" },
     { villager: "bard", block: "minecraft:note_block" },

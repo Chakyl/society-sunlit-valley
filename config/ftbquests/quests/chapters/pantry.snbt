@@ -29,25 +29,25 @@
 			}]
 			tasks: [
 				{
-					count: 32L
+					count: 16L
 					id: "1477F70DF8BDF00F"
 					item: "minecraft:potato"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "541D9F35016F7E24"
 					item: "veggiesdelight:cauliflower"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "1E18344D245791C0"
 					item: "farm_and_charm:lettuce"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "367F96A16FB9F550"
 					item: "farm_and_charm:strawberry"
 					type: "item"
@@ -68,28 +68,28 @@
 			}]
 			tasks: [
 				{
-					count: 32L
+					count: 16L
 					id: "739D0A34606397D0"
 					item: "veggiesdelight:bellpepper"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "00B8FD8C3A592142"
 					item: "minecraft:melon_slice"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 32L
+					count: 16L
 					id: "719F4811D89D19A8"
 					item: "society:blueberry"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "1E0BCCAB8CFEAD6B"
-					item: { Count: 32, id: "farm_and_charm:oat" }
+					item: { Count: 16, id: "farm_and_charm:oat" }
 					type: "item"
 				}
 			]
@@ -108,26 +108,26 @@
 			}]
 			tasks: [
 				{
-					count: 32L
+					count: 16L
 					id: "525A25679B6E936D"
 					item: "minecraft:beetroot"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "404255E4E397C094"
 					item: "minecraft:pumpkin"
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "4DFD6480E8FF485B"
 					item: "farm_and_charm:corn"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 32L
+					count: 16L
 					id: "720B181BB226B422"
 					item: "society:eggplant"
 					type: "item"
@@ -201,7 +201,7 @@
 					type: "item"
 				}
 				{
-					id: "13329DA529D1555A"
+					id: "13169DA529D1555A"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -257,49 +257,82 @@
 			y: -0.5d
 		}
 		{
+			description: ["Gold quality crops only. &63&r required for bundle completion."]
 			icon: "supplementaries:present_yellow"
 			id: "43591809C1D493F5"
-			rewards: [
+			rewards: [{
+				count: 2
+				id: "7E7399293510698C"
+				item: "minecraft:sniffer_egg"
+				type: "item"
+			}]
+			tasks: [
 				{
-					id: "7E7399293510698C"
-					item: "minecraft:sniffer_egg"
-					type: "item"
-				}
-				{
-					id: "2BDB5F4BD03F905A"
+					count: 5L
+					id: "499CB69BCD41BFE0"
 					item: {
 						Count: 1
-						id: "minecraft:painting"
+						id: "veggiesdelight:cauliflower"
 						tag: {
-							EntityTag: {
-								variant: "furniture:honey_fall"
+							quality_food: {
+								effects: [ ]
+								quality: 2
 							}
 						}
 					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6C57B3D989FFD624"
+					item: {
+						Count: 1
+						id: "veggiesdelight:bellpepper"
+						tag: {
+							quality_food: {
+								effects: [ ]
+								quality: 2
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2068F0BB063AD8B7"
+					item: {
+						Count: 1
+						id: "society:eggplant"
+						tag: {
+							quality_food: {
+								effects: [ ]
+								quality: 2
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4101FC59B4F4D5FE"
+					item: {
+						Count: 1
+						id: "farm_and_charm:corn"
+						tag: {
+							quality_food: {
+								effects: [ ]
+								quality: 2
+							}
+						}
+					}
+					match_nbt: true
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					count: 4L
-					id: "074AB3D6775DBD8A"
-					item: "minecraft:honeycomb_block"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "69CD6F1CEAD1E8E0"
-					item: "vintagedelight:honey_mason_jar"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "1212B461350C471A"
-					item: "buzzier_bees:bee_bottle"
-					type: "item"
-				}
-			]
-			title: "Beekeeping Bundle"
+			title: "Quality Bundle"
 			x: 3.0d
 			y: 0.2d
 		}

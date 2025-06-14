@@ -96,7 +96,7 @@
 			}]
 			title: "Leather Armor"
 			x: -8.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["48F1059FC059D3E5"]
@@ -151,10 +151,11 @@
 			}]
 			title: "Chainmail Armor"
 			x: -6.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0ACB2E342421B74E"]
+			description: ["&6Gold&r armors have increased protection and durability to &6Iron&r, unlike what you might expect in vanilla Minecraft."]
 			icon: {
 				Count: 1
 				id: "minecraft:golden_chestplate"
@@ -206,7 +207,7 @@
 			}]
 			title: "Gold Armor"
 			x: -2.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["21FD7614E314BA14"]
@@ -261,7 +262,7 @@
 			}]
 			title: "Iron Armor"
 			x: -4.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7A5974D470C5AA9C"]
@@ -316,10 +317,11 @@
 			}]
 			title: "Diamond Armor"
 			x: 0.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
+			description: ["&6Iridium&r armors are the equivalent of &6Netherite&r in vanilla minecraft, with slightly increased protection."]
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_chestplate"
@@ -366,12 +368,12 @@
 						]
 					}
 				}
-				title: "Any Netherite Armor"
+				title: "Any Iridium Armor"
 				type: "item"
 			}]
-			title: "Netherite Armor"
+			title: "Iridium Armor"
 			x: 2.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
@@ -431,7 +433,7 @@
 			}]
 			title: "Neptunium Armor"
 			x: 2.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["617AC2E80908BFD7"]
@@ -493,7 +495,7 @@
 			}]
 			title: "Wood Tools"
 			x: -8.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1B614E9E38B45BD0"]
@@ -555,10 +557,11 @@
 			}]
 			title: "Stone Tools"
 			x: -6.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["08241E18191275AE"]
+			description: ["&6Gold&r tools have increased attack damage, dig speed, and durability to &6Iron&r, unlike what you might expect in vanilla Minecraft."]
 			icon: {
 				Count: 1
 				id: "minecraft:golden_pickaxe"
@@ -617,7 +620,7 @@
 			}]
 			title: "Gold Tools"
 			x: -2.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["43C52E202277C5AA"]
@@ -679,7 +682,7 @@
 			}]
 			title: "Iron Tools"
 			x: -4.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["32FE1F4EF913EADA"]
@@ -741,10 +744,11 @@
 			}]
 			title: "Diamond Tools"
 			x: 0.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
+			description: ["&6Iridium&r tools and weapons are the equivalent of &6Netherite&r in vanilla minecraft, with slightly increased attack damage and dig speed."]
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_pickaxe"
@@ -798,12 +802,12 @@
 						]
 					}
 				}
-				title: "Any Netherite tool"
+				title: "Any Iridium tool"
 				type: "item"
 			}]
-			title: "Netherite Tools"
+			title: "Iridium Tools"
 			x: 2.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
@@ -872,7 +876,7 @@
 			}]
 			title: "Neptunium Tools"
 			x: 2.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["319129CE8210964A"]
@@ -899,7 +903,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3B30AFF91D59746A"]
@@ -1025,8 +1029,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["10C0B87E2EA1C8A5"]
@@ -1168,9 +1172,9 @@
 		{
 			dependencies: ["4EFD1F876D69591E"]
 			description: [
-				"The &6Netherite&r variants of the Backtank and Diving Helmet let you dive in lava, provided you have air."
+				"The &6Iridium&r variants of the Backtank and Diving Helmet let you dive in lava, provided you have air."
 				""
-				"You'll also need the full set of &6Netherite&r equipment to do so."
+				"You'll also need the full set of &6Iridium&r equipment to do so."
 			]
 			icon: {
 				Count: 1
@@ -1288,7 +1292,7 @@
 			description: ["Pickaxes and shovels aren't the only way to mine blocks. These tools are sidegrades for mining that have various effects that make mining easier."]
 			icon: {
 				Count: 1
-				id: "justhammers:netherite_destructor_hammer"
+				id: "justhammers:netherite_reinforced_hammer"
 				tag: {
 					Damage: 0
 				}
@@ -1330,7 +1334,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "justhammers:iron_destructor_hammer"
+				id: "justhammers:diamond_hammer"
 				tag: {
 					Damage: 0
 				}
@@ -1362,20 +1366,6 @@
 							{
 								Count: 1b
 								id: "justhammers:reinforced_core"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "justhammers:reinforced_impact_core"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "justhammers:destructor_core"
 								tag: {
 									Damage: 0
 								}
@@ -1427,6 +1417,7 @@
 				}
 			}
 			id: "6080E8F9B0DDAE72"
+			subtitle: "Requires Botania"
 			tasks: [{
 				id: "12DAF95F0B50680C"
 				item: {
@@ -1470,7 +1461,7 @@
 			}]
 			title: "Manasteel Armor"
 			x: -2.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6080E8F9B0DDAE72"]
@@ -1525,7 +1516,7 @@
 			}]
 			title: "Terrasteel Armor"
 			x: 2.0d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6080E8F9B0DDAE72"]
@@ -1580,7 +1571,132 @@
 			}]
 			title: "Elementium Armor"
 			x: 0.0d
-			y: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["38A0B8D54F85B846"]
+			description: ["&eElectrum Armor&r increases the speed of the user by a significant amount, making them ideal for long range travel. "]
+			icon: {
+				Count: 1
+				id: "oreganized:electrum_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6FDA9C1E5D681CDA"
+			subtitle: "Requires Create or Botania"
+			tasks: [{
+				id: "652F7B6F053D1586"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "oreganized:electrum_helmet"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "oreganized:electrum_chestplate"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "oreganized:electrum_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "oreganized:electrum_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Electrum armor"
+				type: "item"
+			}]
+			title: "Electrum Armor"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["54301E900FFA56D7"]
+			description: [
+				"&eElectrum Tools&r increase in damage the faster the wearer is. This combines well with the armor, allowing you to rip and tear through mobs."
+				""
+				"They also come built in with &6Fortune II&r."
+			]
+			icon: {
+				Count: 1
+				id: "oreganized:electrum_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "11207C347FC407E1"
+			subtitle: "Requires Create or Botania"
+			tasks: [{
+				id: "2712211EC08C9471"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "oreganized:electrum_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "oreganized:electrum_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "oreganized:electrum_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "oreganized:electrum_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "oreganized:electrum_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Electrum tool"
+				type: "item"
+			}]
+			title: "Electrum Tools"
+			x: 2.0d
+			y: 2.5d
 		}
 	]
 	title: "Equipment"

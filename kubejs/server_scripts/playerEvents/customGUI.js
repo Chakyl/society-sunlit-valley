@@ -14,7 +14,7 @@ const getPlayerBalance = (player) => {
 PlayerEvents.tick((e) => {
   const player = e.player;
   const curios = player.nbt.ForgeCaps["curios:inventory"];
-  if (player.age % 20 == 0) {
+  if (global.clockIcon && player.age % 20 == 0) {
     if (
       ["gag:energized_hearthstone", "gag:hearthstone"].includes(
         player.getHeldItem("main_hand").id

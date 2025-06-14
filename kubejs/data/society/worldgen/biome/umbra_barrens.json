@@ -1,0 +1,76 @@
+{
+  "temperature": -0.6,
+  "downfall": 0,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 14539968,
+    "fog_color": 10518688,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 5526612,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:shulker",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 60
+      },
+      {
+        "type": "legendarycreatures:ender_wisp",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "axolotls": [],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:drowned",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+
+    ["society:umbra_barrens/end_stone_ladder", "society:umbra_barrens/end_stone_rock"],
+    [],
+    [],
+    ["society:umbra_barrens/end_room", "society:umbra_barrens/end_room_2"],
+    [],
+    ["society:umbra_barrens/uni_geode"],
+    [],
+    ["minecraft:chorus_plant", "society:umbra_barrens/endstone_patch_floor"],
+    ["minecraft:freeze_top_layer"]
+  ]
+}

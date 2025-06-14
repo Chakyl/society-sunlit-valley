@@ -237,7 +237,7 @@
 			}]
 			title: "Collection: Brews"
 			x: 9.0d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["22E44CB981A4299B"]
@@ -282,7 +282,6 @@
 				"67F85F959DBBE0BD"
 				"47CF88FE788DD872"
 				"2D9AD3D0C59E682B"
-				"5314070EE4EEF773"
 			]
 			description: [
 				"You've scoured the lands, pillaged the mines, and annoyingly crafted too much food."
@@ -649,39 +648,6 @@
 			title: "Complete the Abandoned Farm"
 			x: 13.625000000000007d
 			y: -1.3214285714285765d
-		}
-		{
-			dependencies: ["2E7D98DEB5012260"]
-			icon: {
-				Count: 1
-				id: "trofers:large_pillar"
-				tag: {
-					BlockEntityTag: {
-						Trophy: "trofers:slimes"
-					}
-				}
-			}
-			id: "5314070EE4EEF773"
-			size: 1.0d
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:slimes"
-						}
-					}
-				}
-				id: "436BC7D1A7138973"
-				stat: "minecraft:play_time"
-				title: "Slimes collection complete"
-				type: "stat"
-				value: 1
-			}]
-			title: "Collection: Slimes"
-			x: 9.0d
-			y: -5.0d
 		}
 	]
 	title: "Perfection"

@@ -49,7 +49,7 @@ global.ancientCaskRecipes = [];
   { item: "society:starcardi", name: "Starcardi", time: 14 },
   { item: "society:star_coquito", name: "Star Coquito", time: 20 },
   { item: "nethervinery:blazewine_pinot", name: "Blazewine Pinot", time: 20 },
-  { item: "nethervinery:netherite_nectar", name: "Netherite Nectar", time: 20 },
+  { item: "nethervinery:netherite_nectar", name: "Iridium Nectar", time: 20 },
   { item: "nethervinery:ghastly_grenache", name: "Ghastly Grenache", time: 20 },
   { item: "nethervinery:lava_fizz", name: "Lava Fizz", time: 20 },
   { item: "nethervinery:nether_fizz", name: "Nether Fizz", time: 20 },
@@ -139,18 +139,14 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 20))
-    .property(
-      integerProperty.create("type", 0, global.ancientCaskRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.ancientCaskRecipes.length))
     .box(2, 0, 1, 14, 14, 15)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(
-        Text.gray("Ages already aged goods at an extremely slow rate")
-      );
+      item.tooltip(Text.gray("Ages already aged goods at an extremely slow rate"));
       item.tooltip(Text.red("Only usable if Ancient Aging skill unlocked"));
       item.modelJson({
         parent: "society:block/ancient_cask",
@@ -163,10 +159,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 20), 0)
-        .set(
-          integerProperty.create("type", 0, global.ancientCaskRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.ancientCaskRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -174,10 +167,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 20), 0)
-        .set(
-          integerProperty.create("type", 0, global.ancientCaskRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.ancientCaskRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -218,6 +208,7 @@ StartupEvents.registry("block", (event) => {
             player.tell(Text.red(`This can only be upgraded when not in use`));
           }
         }
+
         if (upgraded)
           global.handleBERightClick(
             "minecraft:block.wood.place",
@@ -233,13 +224,9 @@ StartupEvents.registry("block", (event) => {
             "minecraft:block.wood.place",
             click,
             global.ancientCaskRecipes,
-            20,
-            false
+            20
           );
-      } else
-        player.tell(
-          Text.red(`You need the Farming skill "Ancient Aging" to use this...`)
-        );
+      } else player.tell(Text.red(`You need the Farming skill "Ancient Aging" to use this...`));
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {

@@ -22,9 +22,7 @@ const hasFishTag = (tags) => {
 
 const sendFishPondMessage = (clickEvent, recipes, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
-  const fishId = String(
-    Item.of(recipes[Number(block.properties.get("type").toLowerCase()) - 1].item).id
-  );
+  const fishId = String(Item.of(global.getArtisanRecipe(recipes, block).item).id);
   let fishName = fishId
     .split(":")[1]
     .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
@@ -154,7 +152,7 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
       if (valid === "false") {
         player.tell(
           Text.red(
-            "Not a valid Fish pond! Requires a 3x4 pond behind it without other competing Fish Ponds to work. Nether fish need a lava pond. This may take some time to update."
+            "Not a valid Fish pond! Requires a 3x4 pond behind it without adjacent Fish Ponds to work. Nether fish need a lava pond."
           )
         );
       }

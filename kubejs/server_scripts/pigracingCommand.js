@@ -16,7 +16,9 @@ ServerEvents.commandRegistry((event) => {
     const coins = [
       "numismatics:crown",
       "numismatics:sun",
+      "numismatics:neptunium_coin",
       "numismatics:ancient_coin",
+      "numismatics:prismatic_coin",
     ];
     const bet = player.offHandItem;
     const betPigName = String(pig.toLowerCase()).charAt(0).toUpperCase() + String(pig.toLowerCase()).slice(1);

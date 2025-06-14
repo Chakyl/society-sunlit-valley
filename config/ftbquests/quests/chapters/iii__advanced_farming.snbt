@@ -185,7 +185,7 @@
 				type: "item"
 			}]
 			title: "Growing Crystals"
-			x: 5.0d
+			x: 4.5d
 			y: 2.5d
 		}
 		{
@@ -196,14 +196,31 @@
 				"Wines also have special affects that improve overtime as the wine exists in the world."
 				""
 				"To start, use the &6Grapevine Pot&r to make juice. You can hold &6W&r while hovering to see how."
+				""
+				"&oSeeds can be planted on Grass or Grapevine Stems. Jungle Seeds need Lattices.&r"
 			]
 			icon: "vinery:fermentation_barrel"
 			id: "18EB59F2591BAD51"
-			rewards: [{
-				id: "63DDF2012C456688"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3AAB21C07F5C22C3"
+					table_id: 8298743981735202683L
+					type: "choice"
+				}
+				{
+					count: 8
+					id: "46F02B3F8E3245F3"
+					item: "vinery:grapevine_stem"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7B53B6AFA4BBD05C"
+					item: "vinery:spruce_lattice"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "69DE0365011C79D3"
@@ -224,6 +241,7 @@
 				"18EB59F2591BAD51"
 				"3492FA6A5DFCC390"
 				"25569C0D687E6FA5"
+				"0F176FBF01ABB774"
 			]
 			description: [
 				"By now, your farm should have enough tools in order to make a steady income. Your next step should be unlocking the Skull Cavern."
@@ -282,7 +300,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -335,32 +353,33 @@
 			description: [
 				"The one thing that stands between you and mining wealth is the &6Skull Cavern Teleporter&r."
 				""
-				"Inside you'll find far tougher mobs, and difficult chambers that can be looted."
+				"Inside you'll find a deep mine that goes all the way down to y=0. The deeper you go, the better the reward. But there's a catch:"
 				""
-				"But you'll obtain more ore than you'll ever need, as well as &6Omni Geodes&r."
+				"&lYou will faint and be sent home if you're out past 5:50 AM.&r"
 				""
 				"&oBe sure you're absolutely prepared before entering, with enchanted armor and extra hearts..."
 			]
 			id: "3291A30C1D1B009D"
 			rewards: [{
-				id: "2A104B462D635A44"
+				id: "38538EA8C9CD5981"
 				item: {
 					Count: 1
-					id: "gag:hearthstone"
+					id: "gag:escape_rope"
 					tag: {
 						Damage: 0
 					}
 				}
 				type: "item"
 			}]
+			size: 1.5d
 			subtitle: "Complete the Vault Bundle"
 			tasks: [{
 				id: "142ACE7B003D9236"
-				item: "mining_dimension:teleporter"
+				item: "society:skull_cavern_teleporter"
 				type: "item"
 			}]
 			title: "The Skull Cavern"
-			x: 7.0d
+			x: 7.5d
 			y: -1.0d
 		}
 		{
@@ -377,11 +396,11 @@
 				item: "society:jade"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4EE2AD7C7BA3A6DE"]
+			dependencies: ["3291A30C1D1B009D"]
 			description: [
 				"&dPrismatic Shards&r are the ultimate form of power on Sunlit Valley."
 				""
@@ -400,7 +419,7 @@
 				item: "society:prismatic_shard"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -1.0d
 		}
 		{
@@ -421,7 +440,7 @@
 				item: "society:aging_cask"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: 1.5d
 		}
 		{
@@ -443,15 +462,15 @@
 				item: "society:omni_geode"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: -2.0d
 		}
 		{
 			dependencies: [
 				"3543D99A908C655B"
-				"401FD6FD108EA784"
+				"56BEF80EE652FAE0"
 			]
-			description: ["The final tier of Sprinkler, the &6Netherite Sprinkler&r has the highest range out of any."]
+			description: ["The final tier of Sprinkler, the &6Iridium Sprinkler&r has the highest range out of any."]
 			id: "3CC16EE6106EAE95"
 			rewards: [{
 				id: "5F14699AAD857780"
@@ -464,7 +483,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3291A30C1D1B009D"]
@@ -472,13 +491,22 @@
 				"&6Trial Chambers&r spawn sparsely in the Skull Cavern. "
 				""
 				"&dRelics&r can drop from both tiers of vaults, and they are one of the few ways of obtaining them."
+				""
+				"Having the &6Bad Omen&r effect increases the difficulty of the chambers but greatly increases the rewards."
 			]
 			id: "3827930046BC7657"
-			rewards: [{
-				id: "703739C800C78AF9"
-				item: "society:relic_trove"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "703739C800C78AF9"
+					item: "society:relic_trove"
+					type: "item"
+				}
+				{
+					id: "4A794E8DA7FB678A"
+					item: "trials:ominous_bottle"
+					type: "item"
+				}
+			]
 			tasks: [{
 				icon: "trials:trial_key_ominous"
 				id: "48933F7445A8905E"
@@ -486,15 +514,13 @@
 				title: "Find a Trial Chamber"
 				type: "structure"
 			}]
-			x: 7.0d
-			y: -3.0d
+			x: 8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["401FD6FD108EA784"]
 			description: [
-				"The &6Master Cultivator&r villager can be made using a special cooking pot."
-				""
-				"You'll need to find a &dPrismatic Shard&r deep in the Skull Cavern to make it."
+				"The &6Master Cultivator&r villager can be made using a special cooking pot crafted from a &dPrismatic Shard&r."
 				""
 				"Higher value crops are sold by this villager, as well as expensive fruit trees."
 			]
@@ -510,8 +536,8 @@
 				type: "item"
 			}]
 			title: "Advanced Crops"
-			x: 13.5d
-			y: -1.0d
+			x: 14.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0C7D8F89BCF645AA"]
@@ -536,49 +562,6 @@
 			title: "Smarter Selling"
 			x: 2.0d
 			y: 3.5d
-		}
-		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"With a farm so valuable, keeping it secure is most valuable."
-				""
-				"The magic of the shard can craft a &6Megatorch&r, blocking hostile spawns."
-			]
-			id: "4A98D8C1F1005F47"
-			rewards: [{
-				id: "4ED3547DA6F94C4F"
-				item: "gag:sacred_salve"
-				type: "item"
-			}]
-			tasks: [{
-				id: "01886E774607EF68"
-				item: "torchmaster:megatorch"
-				type: "item"
-			}]
-			title: "Blocking Mob Spawns"
-			x: 12.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"&6Mechanical Harvesters&r are the ultimate form of crop collecting, allowing you to automate your farm completely. You'll need Create to use one."
-				""
-				"Once crafted, it can be duplicated using a cheaper recipe."
-			]
-			id: "106883C7A25EC43E"
-			rewards: [{
-				id: "23F1F8DB5FA00A39"
-				item: "numismatics:sprocket"
-				type: "item"
-			}]
-			tasks: [{
-				id: "61604DB4A643E842"
-				item: "create:mechanical_harvester"
-				type: "item"
-			}]
-			x: 13.0d
-			y: 0.5d
 		}
 		{
 			dependencies: ["572D70993411EA53"]
@@ -641,7 +624,7 @@
 		}
 		{
 			dependencies: ["711AC0F5208316D5"]
-			description: ["&6Fertilizer&r can be used for crafting, but can be spread across multiple plants using right click to induce growth. "]
+			description: ["&6Plant Nutrients&r are made from Weak Fertilizer and can be used for crafting more advanced versions of them."]
 			id: "07938A28F31B7473"
 			rewards: [{
 				count: 4
@@ -673,8 +656,8 @@
 				item: "society:enriched_bone_meal"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.5d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
@@ -710,7 +693,7 @@
 			}]
 			title: "Advanced Ferilizers"
 			x: 2.5d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -734,35 +717,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0C7D8F89BCF645AA"]
-			description: [
-				"Manually harvesting from Worm Farms gets old fast. An &6Auto Worm Farm&r cultivates worms in an automatable way, with the added bonus of not needing any inputs!"
-				""
-				"It can be used to automate Crab Traps, provided you have an automated way to turn Worms into Crab Trap Bait."
-			]
-			id: "345432E72BD82727"
-			rewards: [
-				{
-					id: "6AD9F9C1ED7E3787"
-					item: "society:aquamarine"
-					type: "item"
-				}
-				{
-					id: "617E724CEDDF6AC0"
-					item: "minecraft:hopper"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7E0948BD5FC9E764"
-				item: "society:auto_worm_farm"
-				type: "item"
-			}]
-			title: "Worm Parade"
-			x: 1.0d
-			y: 2.5d
-		}
-		{
 			dependencies: ["44A512703C4A9990"]
 			description: [
 				"If you haven't been paying attention to your skills, you'll find that some of them directly map to certain enchantments!"
@@ -784,7 +738,7 @@
 				type: "item"
 			}]
 			title: "Enchanter"
-			x: 4.5d
+			x: 5.0d
 			y: -2.5d
 		}
 		{
@@ -807,8 +761,8 @@
 				type: "item"
 			}]
 			title: "Removing Quality"
-			x: 5.5d
-			y: -2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
@@ -846,7 +800,7 @@
 			]
 			title: "Slime Incubating"
 			x: 1.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["139B02AFBCBBF350"]
@@ -878,7 +832,7 @@
 			]
 			title: "Rippit!"
 			x: 5.5d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -908,14 +862,18 @@
 			}]
 			title: "Pressit!"
 			x: 3.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"01071E36A0370E13"
 				"41029F073ADDDC2F"
 			]
-			description: ["&6Corral Blocks&r keep your Slimes mostly safe, keeping them contained while allowing anything else to move in and out. When given a redstone signal, they will prevent non-slime mobs from leaving as well."]
+			description: [
+				"&6Corral Blocks&r keep your Slimes mostly safe, keeping them contained while allowing anything else to move in and out. "
+				""
+				"When given a redstone signal, they will prevent non-slime mobs from leaving as well."
+			]
 			id: "648FD0A599A54A0F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -929,7 +887,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -953,11 +911,11 @@
 			}]
 			title: "Largoit!"
 			x: 2.0d
-			y: 7.0d
+			y: 6.0d
 		}
 		{
 			description: [
-				"&6Splendid Sliems&r are lovely creatures that produce a valuable byproduct when fed: &6Plorts&r!"
+				"&6Splendid Slimes&r are lovely creatures that produce a valuable byproduct when fed: &6Plorts&r!"
 				""
 				"They start out as wild, but once you feed them a food in their diet, they'll be tamed and won't despawn."
 				""
@@ -990,7 +948,7 @@
 			}]
 			title: "Slime Ranching"
 			x: -1.5d
-			y: 6.75d
+			y: 5.75d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
@@ -1015,12 +973,12 @@
 			}]
 			title: "Slime Stealing"
 			x: 1.0d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5C9C7A5A88613109"]
 			description: [
-				"Slimes you capture in the wild are feral and require building trust! Every time they eat, their &6happiness&r will increase. It will increase even more if they're surrounded by similar types of Slimes"
+				"Slimes happiness depends on their hunger and living conditions. Every time they eat, their &6happiness&r will increase. If they're surrounded by similar types of Slimes, they'll get happier!"
 				""
 				"Happiness decreases when Slimes are hungry or crowded (more than &67&r in an area)."
 				""
@@ -1049,7 +1007,303 @@
 			}]
 			title: "Slime Happiness"
 			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3291A30C1D1B009D"]
+			description: [
+				"As you dive deeper into the Skull Cavern, you might encounter something called &dSparkstone&r."
+				""
+				"It is a gem filled with intense energy that can be used to power advanced farming equipment for automation."
+			]
+			id: "70D15F67E3880A3A"
+			rewards: [{
+				id: "76B63061E794A610"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				id: "706BDE404DFE02FE"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["70D15F67E3880A3A"]
+			description: [
+				"The &6Artisan Hopper&r is a machine powered by &dSparkstone&r that can automate collection from adjacent &6Artisan Machines&r!"
+				""
+				"Items placed in the inventory above it will automatically be inserted into nearby Artisan Machines that can take those items, no filtering needed!"
+				""
+				"It requires Sparkstone in its inventory an inventory below it to deposit items."
+			]
+			id: "3E4E14F5055B09B6"
+			rewards: [{
+				count: 8
+				id: "1640E07AB5324939"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33EF40E93DD4F698"
+				item: "society:artisan_hopper"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["70D15F67E3880A3A"]
+			description: [
+				"The &6Auto-Grabber&r is a machine powered by &dSparkstone&r that can automate collection from husbandry farm animals!"
+				""
+				"Unlike Create Deployers, these devices use any Husbandry skills you might have unlocked, and animals don't lose happiness from harvesting!"
+				""
+				"It requires Sparkstone in its inventory an inventory below it to deposit items."
+			]
+			id: "445BDEFC4FE5919C"
+			rewards: [{
+				count: 8
+				id: "6530E89D258B5B94"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D855019B3D7E539"
+				item: "society:auto_grabber"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["401FD6FD108EA784"]
+			description: [
+				"The &6Exotic Trader&r villager's workstation can be crafted with a &dPrismatic Shard&r."
+				""
+				"It will trade various farm items for Machine upgrades. These upgrades add special effects when applied to the machine."
+				""
+				"There are also some handy utility trades for useful but annoyinhg to obtain items, such as Wither Skeleton Skulls."
+			]
+			icon: "minecraft:fletching_table"
+			id: "7ECC14D99BC56382"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "782C8FCB6DABE4D5"
+				table_id: 6097669691163803424L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "3C94E045475D43B0"
+					item: "minecraft:fletching_table"
+					type: "item"
+				}
+				{
+					id: "4392ED87AF2BADD9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "society:sea_biscut"
+								}
+								{
+									Count: 1b
+									id: "society:broken_clock"
+								}
+								{
+									Count: 1b
+									id: "society:ancient_cog"
+								}
+								{
+									Count: 1b
+									id: "society:ancient_roe"
+								}
+								{
+									Count: 1b
+									id: "society:infinity_worm"
+								}
+								{
+									Count: 1b
+									id: "society:frosted_tip"
+								}
+								{
+									Count: 1b
+									id: "society:inserter"
+								}
+								{
+									Count: 1b
+									id: "society:cordycep"
+								}
+								{
+									Count: 1b
+									id: "society:black_opal"
+								}
+								{
+									Count: 1b
+									id: "society:stone_hand"
+								}
+								{
+									Count: 1b
+									id: "society:tiny_gnome"
+								}
+							]
+						}
+					}
+					title: "Any Upgrade"
+					type: "item"
+				}
+			]
+			title: "Machine Upgrades"
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70D15F67E3880A3A"
+				"17D2933C4B133AA8"
+			]
+			description: [
+				"The &6Fish Pond Basket&r is a machine powered by &dSparkstone&r that can automate collection from adjacent &6Fish Ponds&r!"
+				""
+				"It requires Sparkstone in its inventory an inventory below it to deposit items."
+			]
+			id: "4CD98E31EC569CC3"
+			rewards: [{
+				id: "645254E0E9308B72"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "209753824F6D75ED"
+				item: "society:fish_pond_basket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["44A512703C4A9990"]
+			description: [
+				"There are 3 advanced tiers of &6Coins&r. The first two can be crafted up or down from the previous &dPrismatic Coins&r must be traded using a &6Bankers&r,"
+				""
+				"These are their values:"
+				""
+				"- Neptunium (&632,768&r) "
+				"- Ancient (&6262,144&r)"
+				"- Prismatic (&616,252,928&r)"
+				""
+				"These coins are needed for very late game items. Don't expect to need them anytime soon."
+			]
+			id: "527F7721ED60868C"
+			tasks: [{
+				id: "0FBC71E396E14EB1"
+				item: "numismatics:neptunium_coin"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3291A30C1D1B009D"]
+			description: [
+				"The final layer of the &6Skull Cavern&r holds two different biomes."
+				""
+				"One of them is the &6Umbra Barrens&r, a place you might find familiar from another world..."
+				""
+				"&oIf you haven't noticed there is no End in Sunlit Valley.&r"
+			]
+			id: "7E57003B7EB58B32"
+			rewards: [{
+				id: "439D3025D0A92A86"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "society:umbra_barrens"
+				icon: "minecraft:end_stone"
+				id: "767C274777FE508C"
+				title: "Visit the Umbra Barrens"
+				type: "biome"
+			}]
+			title: "The Bottom of the Skull Cavern"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5C9C7A5A88613109"]
+			description: [
+				"Each &6Splendid Slime&r has different effects that may happen when they are unhappy or happy."
+				""
+				"On top of that, they may also have &6Traits&r: different behaviors or quarks that makes ranching them more difficult."
+				""
+				"Always check the traits of a Slime you're ranching by looking at the uses of a Slime in item form using JEI!"
+				""
+				"&oRocket Pods can be launched at your feet using the Slime Vac to rocket jump.&r"
+			]
+			icon: "simplehats:slime_head"
+			id: "1030BCF34FEAE03C"
+			rewards: [{
+				count: 8
+				id: "44E79EEB6DF983D7"
+				item: "splendid_slimes:rocket_pod"
+				type: "item"
+			}]
+			tasks: [{
+				id: "705E3A8298D7461D"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "Slime Traits"
+			x: 2.25d
 			y: 8.0d
+		}
+		{
+			dependencies: ["70D15F67E3880A3A"]
+			description: ["Infused with the energy of &dSparkstone&r, the &6Cornucopia&r causes nearby fruit trees to drop their fruits in a large radius around you when used."]
+			id: "46221EDDD393A7FE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "324615FD9F97DC28"
+				table_id: 2467450565259284777L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "79C696A7467682E8"
+				item: "society:cornucopia"
+				type: "item"
+			}]
+			title: "Easier Fruit Tree Harvesting"
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3291A30C1D1B009D"]
+			description: [
+				"Mining the different types of &6Boulders&r in the Skull Cavern has a small chance to yield &6Iridium Scrap&r. The lower you dive, the higher the chance it drops."
+				""
+				"4 scrap can be combined with 4 &6Bismuth Ingots&r to make an &6Iridium Ingot&r."
+				""
+				"&oYou may even find Iridium Ore at the lowest levels...&r"
+			]
+			id: "56BEF80EE652FAE0"
+			rewards: [{
+				id: "1FD5DB86412B2B0E"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0082721998C0DD38"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
 		}
 	]
 	title: "III - Advanced Farming"

@@ -279,14 +279,13 @@
 				"03F3D0F74A5BC0C4"
 				"3129F3C2D43EE6EE"
 			]
-			description: ["Completeting the Fish Tank gives you &34 Neptunium Ingots&r. These should be used wisely to either upgrade tools, or craft useful fish related machines."]
+			description: ["Completeting the Fish Tank gives you the &3Neptunium-Infused Hook&r. This can be added to your rod to give you higher luck and a chance to catch &6Relic Troves&r."]
 			icon: "furniture:iron_fish_tank"
 			id: "469CEB4C8B3C0EA9"
 			rewards: [
 				{
-					count: 4
 					id: "5762AA805B709BAB"
-					item: "aquaculture:neptunium_ingot"
+					item: "aquaculture:nether_star_hook"
 					type: "item"
 				}
 				{
@@ -303,7 +302,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Reward: 4x Neptunium Ingots"
+			subtitle: "Reward: Neptunium-Infused Hook"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "46B1148F60C66C53"

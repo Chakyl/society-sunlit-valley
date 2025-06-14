@@ -1,0 +1,55 @@
+#This is a list of when the mod should attempt to start a new weather event in ticks (DayTime)
+#Values must be between 1 and 24000 (inclusive)
+#Default is [20, 14000]
+weatherTimes = [20, 14000]
+#This is a list of lists, with a minimum and maximum value for random variance in weather Times, this list should be the same length as weatherTimes.
+#Example: a Weather Time of 12000 with a corresponding Weather Range of [-1000, 1000] will result in a Weather Time randomly being selected between 11000 and 13000 each day.
+#Values must be between -24000 and 24000 (inclusive), extreme values may result in the event not happening at all.
+#Default value: [[0,0],[0,2000]]
+weatherRanges = [[0, 0], [100, 200]]
+#This list of lists defines weather options that can be applied to a weather event, this list should be the same length as weatherTimes.
+#Valid Events are: "clear", "rain", "storm", "ignore"
+#the first three behave as you would expect from vanilla weather, ignore does nothing, allowing the current weather event to continue uninterrupted.
+#Default value: [["clear", "rain", "storm"],["ignore", "clear", "rain", "storm"]]
+weatherOptions = [["clear", "rain", "storm"], ["ignore", "clear", "rain", "storm"]]
+#This list of lists defines the weights of each weather event, this list should be the same length as weatherTimes, each sublist should be the same length as the corresponding Weather Options.
+#Values must be above 0
+#Default value: [[7,2,1],[7,1,1,1]]
+weatherWeights = [[7,2,1],[7,1,1,1]]
+#When enabled, print the scheduled weather events to server console at the beginning of the day, and the current event when a new event starts (including ignore events)
+logSchedule = false
+#If Serene Seasons is present, you can enable this to use an alternative set of lists for each season, these options work the same as the ones listed above and have identical default values.
+enableSeasons = true
+#Spring weather times
+weatherTimesSpring = [20, 6000]
+#Spring weather ranges
+weatherRangesSpring = [[0, 0], [100, 200]]
+#Spring weather options
+weatherOptionsSpring = [["clear", "rain", "storm"], ["ignore", "clear"]]
+#Spring weather weights
+weatherWeightsSpring = [[7, 3, 1], [3, 1]]
+#Summer weather times
+weatherTimesSummer = [20, 6000]
+#Summer weather ranges
+weatherRangesSummer = [[0, 0], [100, 200]]
+#Summer weather options
+weatherOptionsSummer = [["clear", "rain", "storm"], ["ignore", "clear"]]
+#Summer weather weights
+weatherWeightsSummer = [[7, 2, 2], [5, 1]]
+#Fall weather times
+weatherTimesFall = [20, 6000]
+#Fall weather ranges
+weatherRangesFall = [[0, 0], [100, 200]]
+#Fall weather options
+weatherOptionsFall = [["clear", "rain", "storm"], ["ignore", "clear"]]
+#Fall weather weights
+weatherWeightsFall = [[7, 1, 1], [6, 1]]
+#Winter weather times
+weatherTimesWinter = [20, 6000]
+#Winter weather ranges
+weatherRangesWinter = [[0, 0], [100, 200]]
+#Winter weather options
+weatherOptionsWinter =[["clear", "rain"], ["ignore", "clear", "rain"]]
+#Winter weather weights
+weatherWeightsWinter = [[7, 3], [2, 2, 2]]
+

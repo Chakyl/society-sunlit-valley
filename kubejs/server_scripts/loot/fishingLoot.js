@@ -42,11 +42,21 @@ LootJS.modifiers((e) => {
       p.limitCount([1, 4]);
     });
 
+  e.addLootTypeModifier(LootType.FISHING)
+    .playerPredicate((p) =>
+      p.getHeldItem("main_hand").nbt.Inventory
+        ? p
+            .getHeldItem("main_hand")
+            .nbt.Inventory.Items.toString()
+            .contains("aquaculture:nether_star_hook")
+        : false
+    )
+    .pool((p) => {
+      p.randomChance(0.04).addLoot("society:relic_trove");
+      p.limitCount([1, 1]);
+    });
+
   e.addLootTypeModifier(LootType.CHEST)
     .hasAnyStage("prismatic_bounty")
-    .replaceLoot(
-      "aquaculture:message_in_a_bottle",
-      "society:prismatic_shard",
-      true
-    );
+    .replaceLoot("aquaculture:message_in_a_bottle", "society:prismatic_shard", true);
 });

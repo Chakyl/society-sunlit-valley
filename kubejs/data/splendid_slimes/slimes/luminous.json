@@ -5,13 +5,14 @@
   "particle": { "item": "minecraft:glowstone" },
   "diet": "diet.splendid_slimes.luminous",
   "foods": [
-    { "item": "minecraft:quartz_block" },
-    { "item": "minecraft:nether_quartz_ore" },
-    { "item": "minecraft:quartz" },
-    { "item": "minecraft:smooth_quartz" }
-    ],
+    { "item": "vintagedelight:pickled_pitcher_pod" },
+    { "item": "vintagedelight:pickled_beetroot" },
+    { "item": "vintagedelight:pickled_onion" },
+    { "item": "vintagedelight:pickle" },
+    { "item": "vintagedelight:pickled_pepper" }
+  ],
   "favorite_food": {
-    "item": "minecraft:quartz_block"
+    "item": "vintagedelight:pickle"
   },
   "emit_effect_particle": "legendarycreatures:wisp_particle",
   "negative_emit_effects": [
@@ -20,5 +21,6 @@
       "duration": 220,
       "amplifier": 0
     }
-  ]
+  ],
+  "traits": ["photosynthesizing"]
 }

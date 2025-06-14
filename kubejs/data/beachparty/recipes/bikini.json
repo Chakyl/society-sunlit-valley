@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "society:merino_wool"
+        },
+        "S": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "beachparty:bikini",
+        "count": 1
+    }
+}

@@ -1,3 +1,4 @@
+// Priority: 1000
 // Spring Fish
 global.springOcean = [
   { fish: "aquaculture:atlantic_herring", weight: 16 },
@@ -197,3 +198,279 @@ global.winterFresh = [
   { fish: "unusualfishmod:raw_aero_mono", weight: 4 },
   { fish: "unusualfishmod:raw_hatchetfish", night: true, weight: 2 },
 ];
+
+global.getRoe = (fish) => {
+  let fishId = fish.split(":")[1];
+  if (fishId.includes("raw_")) {
+    if (fishId === "raw_snowflake") fishId = "frosty_fin";
+    else fishId = fishId.substring(4, fishId.length);
+  }
+  return `society:${fishId}_roe`;
+};
+
+global.getPondProperties = (block) => {
+  const properties = block.getProperties();
+  return {
+    facing: properties.get("facing"),
+    valid: properties.get("valid"),
+    mature: properties.get("mature").toLowerCase(),
+    upgraded: properties.get("upgraded").toLowerCase(),
+    quest: properties.get("quest").toLowerCase(),
+    quest_id: properties.get("quest_id").toLowerCase(),
+    type: properties.get("type").toLowerCase(),
+    population: properties.get("population").toLowerCase(),
+    max_population: properties.get("max_population").toLowerCase(),
+  };
+};
+
+global.handleFishHarvest = (fish, block, player, server, basket) => {
+  const { facing, valid, upgraded, quest, quest_id, type, population, max_population } =
+    global.getPondProperties(block);
+  let additionalMaxRoe = 0;
+  let harvestOutputs = [];
+  if (player.stages.has("caper_catcher")) additionalMaxRoe += 5;
+  if (player.stages.has("caviar_catcher")) additionalMaxRoe += 5;
+  const fishRoe = global.getRoe(fish.item);
+  const calculateRoe = rnd(
+    Math.floor(population / 4),
+    Math.floor(population / 2) + additionalMaxRoe
+  );
+  const roeCount = calculateRoe > 1 ? calculateRoe : 1;
+  harvestOutputs.push(`${roeCount}x ${fishRoe}`);
+  if (fish.additionalRewards) {
+    let fishPondRoll = 0;
+    fish.additionalRewards.forEach((reward) => {
+      fishPondRoll = Math.random();
+      let rewardChance = reward.chance;
+      if (upgraded == "true") rewardChance *= 2;
+      if (player.stages.has("scum_collector")) rewardChance *= 2;
+      if (population >= reward.minPopulation && fishPondRoll <= rewardChance) {
+        // Rewards scale to amount of fish population relative to when reward starts spawning
+        let calculateCount = Math.floor(
+          reward.count * ((population - reward.minPopulation) / (10 - reward.minPopulation))
+        );
+        if(population == 10) calculateCount = reward.count
+        harvestOutputs.push(`${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`);
+      }
+    });
+  }
+  server.runCommandSilent(
+    `playsound stardew_fishing:dwop block @a ${block.x} ${block.y} ${block.z}`
+  );
+  if (!basket) {
+    server.runCommandSilent(
+      `puffish_skills experience add ${player.username} society:fishing ${roeCount * 4}`
+    );
+  }
+  block.set(block.id, {
+    facing: facing,
+    valid: valid,
+    mature: false,
+    upgraded: upgraded,
+    quest: quest,
+    quest_id: quest_id,
+    population: population,
+    max_population: max_population,
+    type: type,
+  });
+  if (basket) return harvestOutputs;
+  harvestOutputs.forEach((item) => {
+    block.popItemFromFace(item, facing);
+  });
+};
+
+global.validatePond = (block, level, lavaFish) => {
+  const { x, y, z } = block;
+  const facing = block.properties.get("facing");
+  const pondWaterCheckMap = {
+    north: {
+      startX: 1,
+      startZ: 4,
+      endX: -1,
+      endZ: 1,
+    },
+    south: {
+      startX: -1,
+      startZ: -4,
+      endX: 1,
+      endZ: -1,
+    },
+    east: {
+      startX: -1,
+      startZ: 1,
+      endX: -4,
+      endZ: -1,
+    },
+    west: {
+      startX: 1,
+      startZ: -1,
+      endX: 4,
+      endZ: 1,
+    },
+  };
+  const pondCheckMap = {
+    north: {
+      xOffset: 0,
+      zOffset: 5,
+    },
+    south: {
+      xOffset: 0,
+      zOffset: -5,
+    },
+    east: {
+      xOffset: -5,
+      zOffset: 0,
+    },
+    west: {
+      xOffset: 5,
+      zOffset: 0,
+    },
+  };
+  const adjacentPondMap = {
+    north: {
+      xOffset: 1,
+      zOffset: 0,
+    },
+    south: {
+      xOffset: 1,
+      zOffset: 0,
+    },
+    east: {
+      xOffset: 0,
+      zOffset: 1,
+    },
+    west: {
+      xOffset: 0,
+      zOffset: 1,
+    },
+  };
+  const { startX, startZ, endX, endZ } = pondWaterCheckMap[facing];
+  const { xOffset, zOffset } = pondCheckMap[facing];
+  const blockAcross = new BlockPos(x + xOffset, y, z + zOffset);
+  const conflictingPonds =
+    level.getBlock(blockAcross).id === "society:fish_pond" ||
+    level.getBlock(
+      new BlockPos(x + adjacentPondMap[facing].xOffset, y, z + adjacentPondMap[facing].zOffset)
+    ).id === "society:fish_pond" ||
+    level.getBlock(
+      new BlockPos(x - adjacentPondMap[facing].xOffset, y, z - adjacentPondMap[facing].zOffset)
+    ).id === "society:fish_pond";
+  let waterAmount = 0;
+  let scannedId = "";
+  let scannedBlockProperties;
+
+  for (let pos of BlockPos.betweenClosed(new BlockPos(x + startX, y, z + startZ), [
+    x + endX,
+    y,
+    z + endZ,
+  ])) {
+    scannedBlockProperties = level.getBlock(pos).properties;
+    scannedId = level.getBlock(pos).id;
+    if (lavaFish && scannedId === "minecraft:lava") {
+      waterAmount += 1;
+    } else if (!lavaFish && (scannedId === "minecraft:water" || scannedId === "minecraft:ice")) {
+      waterAmount += 1;
+    } else if (scannedBlockProperties && scannedBlockProperties.get("waterlogged") == "true") {
+      waterAmount += 1;
+    }
+  }
+  if (waterAmount !== 12 || conflictingPonds) return false;
+  return true;
+};
+
+const fishPondTickRate = 100;
+
+const fishPondProgTime = 40;
+
+global.handleFishPondTick = (tickEvent) => {
+  const { block, level } = tickEvent;
+  const { x, y, z } = block;
+  let dayTime = level.dayTime();
+  let morningModulo = dayTime % 24000;
+  let blockProperties = level.getBlock(block.pos).getProperties();
+  if (!block.getEntityData().placer) {
+    block.popItemFromFace(block.id, "up");
+    block.set("minecraft:air");
+  }
+  if (blockProperties.get("mature") === "true") return;
+  const { facing, valid, mature, upgraded, quest, quest_id, type, population, max_population } =
+    global.getPondProperties(level.getBlock(block.pos));
+  if (type !== "0" && tickEvent.tick % 20 === 0) {
+    global.fishPondDefinitions.forEach((fish, index) => {
+      if (type == `${index + 1}`) {
+        block.set(block.id, {
+          facing: facing,
+          valid: global.validatePond(block, level, fish.lava),
+          mature: mature,
+          upgraded: upgraded,
+          quest: quest,
+          quest_id: quest_id,
+          population: population,
+          max_population: max_population,
+          type: type,
+        });
+      }
+    });
+  }
+  if (morningModulo >= fishPondProgTime && morningModulo < fishPondProgTime + fishPondTickRate) {
+    if (type !== "0" && valid === "true") {
+      if (Number(population) > 1) {
+        level.spawnParticles(
+          "supplementaries:suds",
+          true,
+          x + 0.5,
+          y + 1,
+          z + 0.5,
+          0.1 * rnd(1, 2),
+          0.1 * rnd(1, 2),
+          0.1 * rnd(1, 2),
+          rnd(2, 6),
+          0.001
+        );
+        block.set(block.id, {
+          facing: facing,
+          valid: valid,
+          mature: true,
+          upgraded: upgraded,
+          quest: quest,
+          quest_id: quest_id,
+          population: population,
+          max_population: max_population,
+          type: type,
+        });
+      }
+      if (max_population !== "10" && quest !== "true" && rnd25() && population == max_population) {
+        block.set(block.id, {
+          facing: facing,
+          valid: valid,
+          mature: false,
+          upgraded: upgraded,
+          quest: true,
+          quest_id: `${rnd(
+            0,
+            getRequestedItems(global.fishPondDefinitions[type - 1], max_population).length - 1
+          )}`,
+          population: population,
+          max_population: max_population,
+          type: type,
+        });
+      } else if (population !== max_population && rnd25()) {
+        successParticles(level, block);
+        level.server.runCommandSilent(
+          `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`
+        );
+        block.set(block.id, {
+          facing: facing,
+          valid: valid,
+          mature: true,
+          upgraded: upgraded,
+          quest: quest,
+          quest_id: quest_id,
+          population: increaseStage(population),
+          max_population: max_population,
+          type: type,
+        });
+      }
+    }
+  }
+};

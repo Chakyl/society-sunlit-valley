@@ -2,10 +2,7 @@
   "experience_per_level": {
     "type": "values",
     "data": {
-      "values": [
-        300, 500, 1000, 2000, 5000, 6000, 7000, 10000, 11000, 12000, 13000,
-        20000
-      ]
+      "values": [500, 1000, 2000, 4000, 7000, 9000, 10000, 12000, 18000, 20000, 22000, 26000]
     }
   },
   "sources": [
@@ -48,6 +45,19 @@
                 "type": "puffish_skills:test",
                 "data": {
                   "item": "society:fish_pond"
+                }
+              }
+            ]
+          },
+          "bait_maker": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:bait_maker"
                 }
               }
             ]
@@ -95,6 +105,10 @@
           {
             "condition": "fish_smoker",
             "expression": "400"
+          },
+          {
+            "condition": "bait_maker",
+            "expression": "600"
           },
           {
             "condition": "deluxe_worm_farm",

@@ -6,16 +6,22 @@
       "item": "create:andesite_casing"
     },
     "G": {
-      "item": "numismatics:crown"
+      "item": "oreganized:lead_block"
+    },
+    "e": {
+      "item": "create:electron_tube"
     },
     "S": {
       "item": "create:shaft"
+    },
+    "f": {
+      "item": "create:fluid_tank"
     }
   },
   "pattern": [
-    " S ",
-    "GAG",
-    " G "
+    "GSG",
+    "fAf",
+    "GeG"
   ],
   "result": {
     "item": "create_mechanical_extruder:mechanical_extruder"

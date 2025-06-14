@@ -9,8 +9,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
+    .soundType("copper")
     .item((item) => {
-      item.tooltip(Text.gray("Milks farm animals up to 8 blocks away"));
+      item.tooltip(Text.gray("Milks farm animals up to 10 blocks away"));
       item.tooltip(Text.aqua("Requires Botania mana from spreader"));
       item.modelJson({
         parent: "society:block/mana_milker",
@@ -21,7 +22,6 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(1200, 0, (entity) => {
         const { inventory, block, level } = entity;
-
         let mana = entity.persistentData.getInt("mana");
         inventory.allItems;
         let nearbyFarmAnimals;
@@ -34,18 +34,11 @@ StartupEvents.registry("block", (event) => {
           let data = animal.persistentData;
           let interactionCooldown = global.animalInteractionCooldown;
           if (mana >= MANA_PER_MILK) {
-            if (
-              animal.type === "minecraft:goat" ||
-              animal.type === "species:mammutilation"
-            ) {
-              interactionCooldown *= 2;
-            } else if (animal.type === "minecraft:sheep") {
-              interactionCooldown *= 1.5;
-            }
+            interactionCooldown *= global.getMilkingTimeMult(animal.type);
 
             let milkItem = global.getMilk(
               level,
-              animal,
+              animal, 
               data,
               undefined,
               interactionCooldown

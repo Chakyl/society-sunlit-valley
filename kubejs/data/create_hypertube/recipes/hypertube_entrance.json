@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "create:smart_chute"
+    },
+    "G": {
+      "item": "create:cogwheel"
+    },
+    "K": {
+      "item": "society:rubber"
+    },
+    "O": {
+      "item": "create:powdered_obsidian"
+    }
+  },
+  "pattern": [
+    " K ",
+    "OCO",
+    " G "
+  ],
+  "result": {
+    "item": "create_hypertube:hypertube_entrance"
+  },
+  "show_notification": true
+}

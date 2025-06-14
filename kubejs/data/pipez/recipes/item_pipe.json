@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ISI", "DDD", "ISI"],
+  "key": {
+    "D": {
+      "item": "society:rubber"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "I": {
+      "item": "oreganized:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "pipez:item_pipe",
+    "count": 16
+  }
+}

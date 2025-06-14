@@ -223,7 +223,7 @@ ServerEvents.recipes((e) => {
     "society:dragontooth_axe",
     "minecraft:netherite_upgrade_smithing_template",
     "minecraft:diamond_axe",
-    "society:prismatic_shard"
+    "minecraft:bone_block"
   );
   // Watering Cans
   e.smithing(

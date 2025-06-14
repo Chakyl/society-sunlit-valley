@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "surface": "ceiling",    
+    "depth": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 4
+      }
+    },
+    "vertical_range": 5,
+    "extra_bottom_block_chance": 0,
+    "extra_edge_column_chance": 0.3,    
+    "vegetation_chance": 0.02,
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "quark:red_corundum_cluster",
+              "Properties": {
+                "facing": "down",
+                "waterlogged": "false"
+              }
+            }
+          }
+        }
+      },
+      "placement": []
+    },
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 4
+      }
+    },
+    "replaceable": "#society:skull_block",
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 150,
+          "data": {
+            "Name": "oreganized:red_crystal_glass"
+          }
+        },
+        {
+          "weight": 50,
+          "data": {
+            "Name": "quark:waxed_red_corundum"
+          }
+        },
+        {
+          "weight": 50,
+          "data": {
+            "Name": "oreganized:red_crystal_glass_pane"
+          }
+        }
+      ]
+    }
+  }
+}

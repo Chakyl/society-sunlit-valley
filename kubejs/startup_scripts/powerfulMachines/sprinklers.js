@@ -4,6 +4,7 @@ const generateSprinkler = (e, tier, radius) => {
   const tooltipRadius = 1 + radius * 2;
   e
     .create(`society:${tier}_sprinkler`)
+    .displayName(`${tier == "netherite" ? "Iridium" : tier.charAt(0).toUpperCase() + tier.slice(1)} Sprinker`)
     .property(booleanProperty.create("sticklogged"))
     .defaultState((state) => {
       state.set(booleanProperty.create("sticklogged"), false);
@@ -18,7 +19,7 @@ const generateSprinkler = (e, tier, radius) => {
     .transparent(true)
     .box(2, 0, 2, 14, 16, 14)
     .item((item) => {
-      item.tooltip(Text.gray("Keeps surrounding farmland moist"));
+      item.tooltip(Text.gray("Waters crops before they dry out at 6am"));
       item.tooltip(Text.gray("Can be given a stick for decoration"));
       item.tooltip(Text.green(`Area: ${tooltipRadius}x${tooltipRadius}`));
       item.modelJson({

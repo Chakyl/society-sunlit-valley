@@ -304,7 +304,7 @@
   },
   "heretic": {
     "title": "Heretic",
-    "description": "Killing farm animals with high affection multiplies drops by 5",
+    "description": "Killing farm animals with high affection makes them drop 2 §6Sparkstone§7 for each heart. Their other drops will also be multiplied by 5.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -312,9 +312,9 @@
       }
     },
     "icon": {
-      "type": "effect",
+      "type": "item",
       "data": {
-        "effect": "poison"
+        "item": "society:sparkstone"
       }
     },
     "rewards": [

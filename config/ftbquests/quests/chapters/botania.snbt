@@ -11,16 +11,18 @@
 		}
 	}
 	id: "7D5C355F4BB66AE9"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"The &6Mystical Botanist&r sells a device used for elvish flower magic. "
+				"Completing the &6Abandoned Farm&r yields a device used for elvish flower magic. It's difficult to obtain but studying this magic will undoubtly be useful to developing your farm."
 				""
-				"It's expensive, but studying this magic will undoubtly be useful to developing your farm and earning money."
+				"The &6Mystical Botanist&r also has one of these for sale at a high markup."
 				""
 				"The &6Lexica Botania&r will tell you most things you need to know about magic, and this questline will highlight Sunlit Valley specific applications."
+				""
+				"&oBotania is not required for progression.&r"
 			]
 			id: "5E5E6E09E6C6DF02"
 			rewards: [{
@@ -28,14 +30,14 @@
 				item: "botania:lexicon"
 				type: "item"
 			}]
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "6062F75BE9F93639"
 				item: "botania:apothecary_default"
 				type: "item"
 			}]
 			title: "Intro to Flower Magic"
-			x: -2.5d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -276,7 +278,7 @@
 				"The Terra set of tools and weapons have various bonues."
 				""
 				"- &6Truncators&r fell trees in a single blow"
-				"- &6Shatterers&r allow you to mine in a large area, and can be upgraded using mana to increase the area mined"
+				"- &6Shatterers&r allow you to mine in a large area, and can be upgraded using mana to increase the area mined up to 9x9"
 				"- &6Blades&r come with an additional ranged attack using mana"
 			]
 			icon: {
@@ -753,6 +755,24 @@
 			x: 6.0d
 			y: 1.5d
 		}
+		{
+			dependencies: [
+				"221306DB217B8F93"
+				"5E5E6E09E6C6DF02"
+				"1D1F8EA9D17BCF81"
+			]
+			description: ["&6Mystical Flowers&r cannot be found in the world and &6Floral Fertilizer&r are disabled in this pack. Don't bother searching for hours around the world for either! "]
+			icon: "botania:orange_mystical_flower"
+			id: "078F0A0A709A1C67"
+			tasks: [{
+				id: "1840F64E466C295B"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "Why can't I find Mystical Flowers?"
+			x: -5.0d
+			y: 0.0d
+		}
 	]
-	title: "IV - Mystical Farming"
+	title: "IV.II - Mystical Farming"
 }

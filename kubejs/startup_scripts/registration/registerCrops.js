@@ -1,8 +1,6 @@
 StartupEvents.registry("block", (e) => {
   const surviveCheck = (level, pos) => {
-    const FARMLAND = Java.loadClass(
-      "net.minecraft.world.level.block.FarmBlock"
-    );
+    const FARMLAND = Java.loadClass("net.minecraft.world.level.block.FarmBlock");
     let blockState = level.getBlockState(pos.below());
     let mcBlock = blockState.block;
     if (mcBlock instanceof FARMLAND) {
@@ -20,15 +18,16 @@ StartupEvents.registry("block", (e) => {
         .shape(4, 0, 0, 0, 16, 8, 16)
         .shape(5, 0, 0, 0, 16, 16, 16)
         .shape(6, 0, 0, 0, 16, 16, 16)
-        .shape(7, 0, 0, 0, 16, 21, 16)
-        .shape(8, 0, 0, 0, 16, 21, 16)
-        .shape(9, 0, 0, 0, 16, 21, 16)
+        .shape(7, 0, 0, 0, 16, 16, 16)
+        .shape(8, 0, 0, 0, 16, 16, 16)
+        .shape(9, 0, 0, 0, 16, 16, 16)
         .shape(10, 0, 0, 0, 16, 24, 16);
     })
     .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:ancient_fruit", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/ancient_seed");
     }).blockstateJson = {
@@ -98,6 +97,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("society:tubabacco_leaf", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/tubabacco_seed");
     }).blockstateJson = {
@@ -160,6 +160,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("farm_and_charm:strawberry", 2)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("farm_and_charm:item/strawberry_seeds");
     }).blockstateJson = {
@@ -195,18 +196,19 @@ StartupEvents.registry("block", (e) => {
     .create("brewery:hop_trellis", "crop")
     .age(6, (builder) => {
       builder
-        .shape(0, 0, 0, 0, 16, 22, 16)
-        .shape(1, 0, 0, 0, 16, 22, 16)
-        .shape(2, 0, 0, 0, 16, 22, 16)
-        .shape(3, 0, 0, 0, 16, 22, 16)
-        .shape(4, 0, 0, 0, 16, 22, 16)
-        .shape(5, 0, 0, 0, 16, 22, 16)
+        .shape(0, 0, 0, 0, 16, 16, 16)
+        .shape(1, 0, 0, 0, 16, 16, 16)
+        .shape(2, 0, 0, 0, 16, 16, 16)
+        .shape(3, 0, 0, 0, 16, 16, 16)
+        .shape(4, 0, 0, 0, 16, 16, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16)
         .shape(6, 0, 0, 0, 16, 22, 16);
     })
     .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("brewery:hops", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("brewery:item/hops_seeds");
     }).blockstateJson = {
@@ -251,14 +253,15 @@ StartupEvents.registry("block", (e) => {
         .shape(2, 0, 0, 0, 16, 6, 16)
         .shape(3, 0, 0, 0, 16, 12, 16)
         .shape(4, 0, 0, 0, 16, 12, 16)
-        .shape(5, 0, 0, 0, 16, 20, 16)
-        .shape(6, 0, 0, 0, 16, 20, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16)
+        .shape(6, 0, 0, 0, 16, 16, 16)
         .shape(7, 0, 0, 0, 16, 20, 16);
     })
     .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:blueberry", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/blueberry_seeds");
     }).blockstateJson = {
@@ -314,6 +317,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("society:eggplant", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/eggplant_seeds");
     }).blockstateJson = {
@@ -366,6 +370,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("minecraft:carrot", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/carrot_seed");
     }).blockstateJson = {
@@ -414,6 +419,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("minecraft:potato", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/potato_seed");
     }).blockstateJson = {
@@ -459,6 +465,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("farm_and_charm:onion", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/onion_seed");
     }).blockstateJson = {
@@ -519,6 +526,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("veggiesdelight:sweet_potato", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/sweet_potato_seed");
     }).blockstateJson = {
@@ -561,6 +569,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("vintagedelight:peanut", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/peanut_seed");
     }).blockstateJson = {

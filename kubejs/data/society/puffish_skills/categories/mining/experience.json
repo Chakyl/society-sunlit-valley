@@ -2,10 +2,7 @@
   "experience_per_level": {
     "type": "values",
     "data": {
-      "values": [
-        250, 500, 1000, 2000, 5000, 6000, 8000, 10000, 13000, 16000, 20000,
-        25000
-      ]
+      "values": [250, 500, 1000, 2000, 5000, 6000, 8000, 10000, 13000, 16000, 20000, 25000]
     }
   },
   "sources": [
@@ -113,6 +110,32 @@
                 "type": "puffish_skills:test",
                 "data": {
                   "block": "diamond_ore"
+                }
+              }
+            ]
+          },
+          "sparkstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:sparkstone_ore"
+                }
+              }
+            ]
+          },
+          "iridium_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:iridium_ore"
                 }
               }
             ]
@@ -337,6 +360,32 @@
                 }
               }
             ]
+          },
+          "deepslate_sparkstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:deepslate_sparkstone_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_iridium_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:deepslate_iridium_ore"
+                }
+              }
+            ]
           }
         },
         "experience": [
@@ -387,6 +436,22 @@
           {
             "condition": "!silk_touch & (nether_gold_ore | nether_bismuth_ore | nether_quartz_ore)",
             "expression": "40"
+          },
+          {
+            "condition": "!silk_touch & sparkstone_ore",
+            "expression": "100"
+          },
+          {
+            "condition": "!silk_touch & deepslate_sparkstone_ore",
+            "expression": "200"
+          },
+          {
+            "condition": "!silk_touch & iridium_ore",
+            "expression": "200"
+          },
+          {
+            "condition": "!silk_touch & deepslate_iridium_ore",
+            "expression": "400"
           }
         ]
       }

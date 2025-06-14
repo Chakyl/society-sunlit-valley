@@ -11,11 +11,6 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "society:wheel_of_adaptation"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
           "name": "botania:overgrowth_seed"
         },
         {
@@ -63,6 +58,16 @@
           "type": "minecraft:item",
           "weight": 2,
           "name": "society:furniture_box"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "society:iron_upgrade_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "society:gold_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
@@ -160,7 +165,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 12,
           "name": "minecraft:air"
         }
       ],

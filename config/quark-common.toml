@@ -524,7 +524,7 @@
 	Emotes = true
 	"Enhanced Ladders" = true
 	"Glass Shard" = false
-	"Gold Tools Have Fortune" = false
+	"Gold Tools Have Fortune" = true
 	"Grab Chickens" = false
 	"Hoe Harvesting" = true
 	"Horses Swim" = true
@@ -616,13 +616,13 @@
 
 	[tweaks.gold_tools_have_fortune]
 		#Allowed values: [0,)
-		"Fortune Level" = 2
+		"Fortune Level" = 0
 		#Allowed values: [0,4]
-		"Harvest Level" = 2
+		"Harvest Level" = 3
 		"Display Baked Enchantments In Tooltip" = true
 		"Italic Tooltip" = true
 		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
-		"Baked Enchantments" = []
+		"Baked Enchantments" = ["oreganized:electrum_pickaxe+fortune@2", "oreganized:electrum_axe+fortune@2", "oreganized:electrum_hoe+fortune@2", "oreganized:electrum_shovel+fortune@2", "oreganized:electrum_knife+looting@2", "oreganized:electrum_sword+looting@2"]
 
 	[tweaks.grab_chickens]
 		"Needs No Helmet" = true
@@ -1104,18 +1104,18 @@
 
 			[world.corundum.generation_settings.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["mining_dimension:mining"]
+				Dimensions = ["society:skull_cavern"]
 
 			[world.corundum.generation_settings.biomes]
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.corundum.generation_settings.biomes.tags]
-					"Biome Tags" = []
-					"Is Blacklist" = true
+					"Biome Tags" = ["society:is_skull_cavern"]
+					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
 				[world.corundum.generation_settings.biomes.biomes]
-					Biomes = ["mining_dimension:mining"]
+					Biomes = []
 					"Is Blacklist" = false
 
 	[world.fairy_rings]

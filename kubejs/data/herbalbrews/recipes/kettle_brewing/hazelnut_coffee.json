@@ -1,0 +1,31 @@
+{
+  "type": "herbalbrews:kettle_brewing",
+  "experience": 0.8,
+  "crafting_duration": 20,
+  "fluid": [
+    {
+      "amount": 20
+    }
+  ],
+  "heat_needed": [
+    {
+      "amount": 50
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "herbalbrews:ground_coffee"
+    },
+    {
+      "item": "pamhc2trees:roastedhazelnutitem"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "herbalbrews:hazelnut_coffee",
+    "effect": "herbalbrews:deeprush",
+    "effectduration": 3600
+  }
+}

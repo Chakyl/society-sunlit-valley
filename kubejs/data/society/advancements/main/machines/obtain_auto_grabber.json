@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/materials/obtain_sparkstone",
+  "criteria": {
+    "auto_grabber": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:auto_grabber"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_auto_grabber.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:auto_grabber"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_auto_grabber.title"
+    }
+  },
+  "requirements": [["auto_grabber"]],
+  "sends_telemetry_event": true
+}

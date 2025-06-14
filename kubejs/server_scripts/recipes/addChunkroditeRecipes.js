@@ -81,7 +81,7 @@ ServerEvents.recipes((e) => {
     processingTime: 1024,
     results: [
       {
-        count: 24,
+        count: 8,
         item: "moreminecarts:chunkrodite_block",
       },
     ],

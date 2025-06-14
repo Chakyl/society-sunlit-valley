@@ -187,8 +187,13 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 32,
+        "itemKey": "numismatics:neptunium_coin",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -287,6 +292,22 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:crystal_of_regret_fishing_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "paraglider:goddess_statue",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 3
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 0,
+      "UTID": "minecraft:cleric_goddess_statue_for_sun"
     }
   ]
 }

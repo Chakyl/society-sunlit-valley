@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "AAB",
-    "AC ",
+    "A  ",
     "AAD"
   ],
   "key": {
@@ -11,9 +11,6 @@
     },
     "B": {
       "tag": "forge:gems/lapis"
-    },
-    "C": {
-      "tag": "forge:ender_pearls"
     },
     "D": {
       "item": "society:fire_quartz"

@@ -26,10 +26,13 @@ global.dehydratableMushrooms = [
   "minecraft:crimson_fungus",
   "minecraft:warped_fungus",
   "quark:glow_shroom",
+  "ribbits:toadstool",
   "species:alphacene_mushroom",
   "verdantvibes:bracket_mushroom",
 ];
+global.dehydratableMushroomOutputs = ["society:dried_shimmering_mushrooms"];
 global.dehydratableMushrooms.forEach((item) => {
+  global.dehydratableMushroomOutputs.push(`society:dried_${item.split(":")[1]}`);
   global.dehydratorRecipes.push({
     input: item,
     output: [`1x society:dried_${item.split(":")[1]}`],
@@ -101,9 +104,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 8))
-    .property(
-      integerProperty.create("type", 0, global.dehydratorRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.dehydratorRecipes.length))
     .box(1, 0, 4, 15, 16, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -121,10 +122,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 8), 0)
-        .set(
-          integerProperty.create("type", 0, global.dehydratorRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.dehydratorRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -132,10 +130,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 8), 0)
-        .set(
-          integerProperty.create("type", 0, global.dehydratorRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.dehydratorRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -168,25 +163,22 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+
       if (upgraded && block.properties.get("mature") === "true") {
-        let recipe =
-          global.dehydratorRecipes[
-            Number(block.properties.get("type").toLowerCase()) - 1
-          ];
+        let recipe = global.dehydratorglobal.getArtisanOutputs(recipes, block);
         recipe.output.forEach((id) => {
           if (global.dehydratableMushrooms.includes(recipe.input)) {
             block.popItemFromFace(Item.of(id), facing);
           }
         });
       }
+
       global.handleBERightClick(
         "species:block.alphacene_foliage.place",
         click,
         global.dehydratorRecipes,
         8,
-        true,
-        false,
-        false
+        true
       );
     })
     .blockEntity((blockInfo) => {
@@ -202,7 +194,6 @@ StartupEvents.registry("block", (event) => {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
       },
-    ]
-      .concat(getCardinalMultipartJson("dehydrator"))
+    ].concat(getCardinalMultipartJson("dehydrator")),
   };
 });

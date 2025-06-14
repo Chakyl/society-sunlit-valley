@@ -1,4 +1,7 @@
 // priority: -20
+const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
+global.GLOBAL_BANK = NUMISMATICS.BANK;
+
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {
     for (let z = 0; z <= 5; z++) {
@@ -11,7 +14,8 @@ global.showPonderLayer = (scene, speed, height, exclude) => {
 
 global.coinMap = [
   { coin: "numismatics:prismatic_coin", value: 16252928 },
-  { coin: "numismatics:ancient_coin", value: 253952 },
+  { coin: "numismatics:ancient_coin", value: 262144 },
+  { coin: "numismatics:neptunium_coin", value: 32768 },
   { coin: "numismatics:sun", value: 4096 },
   { coin: "numismatics:crown", value: 512 },
   { coin: "numismatics:cog", value: 64 },
@@ -19,6 +23,10 @@ global.coinMap = [
   { coin: "numismatics:bevel", value: 8 },
   { coin: "numismatics:spur", value: 1 },
 ];
+
+global.formatPrice = (number) => {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
 
 // For cases where prices are auto-generated, round
 const roundPrice = (price) => {
@@ -28,10 +36,7 @@ const roundPrice = (price) => {
     if (price % value === 0) {
       for (let k = 0; k < global.coinMap.length; k++) {
         if (price / global.coinMap[i - k].value <= 64) {
-          return (
-            global.coinMap[i - k].value *
-            Math.round(price / global.coinMap[i - k].value)
-          );
+          return global.coinMap[i - k].value * Math.round(price / global.coinMap[i - k].value);
         }
       }
     }
@@ -43,40 +48,45 @@ global.pristine = [];
 
 // Ores
 global.ore = [
-  { item: "minecraft:raw_copper", value: 2 },
-  { item: "minecraft:raw_copper_block", value: 18 },
-  { item: "minecraft:raw_iron", value: 4 },
-  { item: "minecraft:raw_iron_block", value: 36 },
-  { item: "minecraft:coal", value: 4 },
-  { item: "minecraft:coal_block", value: 36 },
-  { item: "minecraft:raw_gold", value: 8 },
-  { item: "minecraft:raw_gold_block", value: 72 },
-  { item: "create:raw_zinc", value: 4 },
-  { item: "create:raw_zinc_block", value: 36 },
-  { item: "minecraft:redstone", value: 4 },
-  { item: "minecraft:redstone_block", value: 36 },
-  { item: "minecraft:lapis_lazuli", value: 3 },
-  { item: "minecraft:lapis_block", value: 27 },
-  { item: "minecraft:emerald", value: 16 },
-  { item: "minecraft:emerald_block", value: 144 },
-  { item: "minecraft:amethyst_shard", value: 4 },
-  { item: "minecraft:amethyst_block", value: 16 },
-  { item: "minecraft:quartz", value: 4 },
-  { item: "minecraft:quartz_block", value: 16 },
+  { item: "minecraft:raw_copper", value: 4 },
+  { item: "minecraft:raw_copper_block", value: 36 },
+  { item: "minecraft:raw_iron", value: 8 },
+  { item: "minecraft:raw_iron_block", value: 72 },
+  { item: "minecraft:coal", value: 8 },
+  { item: "minecraft:coal_block", value: 72 },
+  { item: "minecraft:raw_gold", value: 16 },
+  { item: "minecraft:raw_gold_block", value: 144 },
+  { item: "create:raw_zinc", value: 8 },
+  { item: "create:raw_zinc_block", value: 72 },
+  { item: "minecraft:redstone", value: 8 },
+  { item: "minecraft:redstone_block", value: 72 },
+  { item: "minecraft:lapis_lazuli", value: 6 },
+  { item: "minecraft:lapis_block", value: 64 },
+  { item: "minecraft:emerald", value: 32 },
+  { item: "minecraft:emerald_block", value: 288 },
+  { item: "minecraft:amethyst_shard", value: 8 },
+  { item: "minecraft:amethyst_block", value: 32 },
+  { item: "minecraft:quartz", value: 8 },
+  { item: "minecraft:quartz_block", value: 32 },
+  { item: "etcetera:raw_bismuth", value: 32 },
+  { item: "etcetera:raw_bismuth_block", value: 288 },
+  { item: "oreganized:raw_lead", value: 48 },
+  { item: "oreganized:raw_lead_block", value: 432 },
+  { item: "society:sparkstone", value: 64 },
+  { item: "oreganized:raw_silver", value: 64 },
+  { item: "oreganized:raw_silver_block", value: 576 },
   { item: "minecraft:diamond", value: 256 },
   { item: "minecraft:diamond_block", value: 2304 },
-  { item: "minecraft:ancient_debris", value: 1024 },
+  { item: "minecraft:netherite_scrap", value: 1024 },
   { item: "aquaculture:neptunium_ingot", value: 2560 },
   { item: "aquaculture:neptunium_block", value: 23040 },
-  { item: "etcetera:raw_bismuth", value: 16 },
-  { item: "etcetera:raw_bismuth_block", value: 144 },
 ];
 [
-  { item: "minecraft:emerald", value: 16 },
+  { item: "minecraft:emerald", value: 32 },
   { item: "minecraft:diamond", value: 256 },
-  { item: "minecraft:lapis_lazuli", value: 3 },
-  { item: "minecraft:quartz", value: 4 },
-  { item: "minecraft:amethyst_shard", value: 4 },
+  { item: "minecraft:lapis_lazuli", value: 6 },
+  { item: "minecraft:quartz", value: 8 },
+  { item: "minecraft:amethyst_shard", value: 8 },
   { item: "minecraft:prismarine_crystals", value: 20 },
 ].forEach((mineral) => {
   global.pristine.push({
@@ -222,6 +232,7 @@ global.artifacts = [
   { item: "society:beemonican_seal", value: 2560 },
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
+  { item: "society:token_of_unity", value: 3 },
 ];
 
 // Relics
@@ -383,6 +394,7 @@ global.crops = [
   { item: "minecraft:sugar_cane", value: 12 },
   { item: "quark:sugar_cane_block", value: 108 },
   { item: "brewery:hops", value: 21 },
+  { item: "ribbits:toadstool", value: 20 },
   { item: "quark:glow_shroom", value: 24 },
   { item: "farmersdelight:rice", value: 16 },
   { item: "farmersdelight:rice_bag", value: 144 },
@@ -495,6 +507,7 @@ global.animalProducts = [
   // Misc
   { item: "minecraft:leather", value: 8 },
   { item: "netherdepthsupgrade:soul_sucker_leather", value: 16 },
+  { item: "netherdepthsupgrade:fortress_grouper_plate", value: 16 },
   { item: "quark:bonded_leather", value: 72 },
   { item: "minecraft:rabbit_hide", value: 12 },
   { item: "quark:bonded_rabbit_hide", value: 108 },
@@ -593,9 +606,7 @@ global.fruits.forEach((fruit) => {
   let itemId = fruit.item.split(":")[1];
   if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
   global.preserves.push({
-    item: fruit.altPreserveOutput
-      ? fruit.altPreserveOutput
-      : `society:${itemId}_preserves`,
+    item: fruit.altPreserveOutput ? fruit.altPreserveOutput : `society:${itemId}_preserves`,
     value: fruit.value * 15 + 64,
   });
   global.dehydrated.push({
@@ -611,6 +622,7 @@ global.mushrooms = [
   { item: "verdantvibes:bracket_mushroom", value: 32 },
   { item: "species:alphacene_mushroom", value: 32 },
   { item: "quark:glow_shroom", value: 24 },
+  { item: "ribbits:toadstool", value: 20 },
   // Tag equivalent
   { item: "botania:shimmering_mushrooms", value: 16 },
 ];
@@ -657,6 +669,8 @@ global.artisanGoods = [
   { item: "society:oak_resin", value: 48 },
   { item: "society:maple_syrup", value: 64 },
   { item: "society:pine_tar", value: 48 },
+  { item: "society:sap", value: 20 },
+  { item: "society:rubber", value: 30 },
   { item: "society:aged_cheese_block", value: 768 },
   { item: "society:aged_goat_cheese_block", value: 4608 },
   { item: "society:aged_warped_cheese_block", value: 4608 },
@@ -1501,6 +1515,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "automobility:dash_panel", value: 60 },
   { item: "create:experience_nugget", value: 2 },
   { item: "create:experience_block", value: 18 },
   { item: "society:gnome", value: 360 },
@@ -1511,6 +1526,14 @@ global.miscAdventurer = [
   { item: "twigs:bronzed_seashell", value: 32 },
   { item: "twigs:tangerine_seashell", value: 24 },
   { item: "aquaculture:tin_can", value: 1 },
+  { item: "simplehats:hatbag_common", value: 1 },
+  { item: "simplehats:hatbag_uncommon", value: 1 },
+  { item: "simplehats:hatbag_rare", value: 1 },
+  { item: "simplehats:hatbag_epic", value: 1 },
+  { item: "simplehats:hatbag_easter", value: 1 },
+  { item: "simplehats:hatbag_summer", value: 1 },
+  { item: "simplehats:hatbag_halloween", value: 1 },
+  { item: "simplehats:hatbag_festive", value: 1 },
   { item: "minecraft:nautilus_shell", value: 64 },
   { item: "crabbersdelight:nautilus_shell_block", value: 640 },
   { item: "minecraft:echo_shard", value: 192 },
@@ -1574,6 +1597,7 @@ global.miscAdventurer = [
   { item: "aquaculture:box", value: 32 },
   { item: "aquaculture:lockbox", value: 128 },
   { item: "aquaculture:treasure_chest", value: 512 },
+  { item: "rottencreatures:treasure_chest", value: 4096 },
   { item: "mysticaloaktree:wise_oak", value: 1024 },
   { item: "minecraft:enchanted_golden_apple", value: 4096 },
   { item: "minecraft:goat_horn", value: 512 },
@@ -1592,32 +1616,35 @@ global.miscAdventurer = [
   { item: "botania:terrasteel_block", value: 396864 },
   { item: "gamediscs:game_disc_flappy_bird", value: 490 },
   { item: "gamediscs:game_disc_slime", value: 999 },
-  { item: "gamediscs:game_disc_blocktris", value: 100000 },
+  { item: "gamediscs:game_disc_rabbit", value: 4096 },
+  { item: "gamediscs:game_disc_blocktris", value: 10000 },
   { item: "gamediscs:game_disc_tnt_sweeper", value: 2048 },
   { item: "gamediscs:game_disc_pong", value: 4900 },
   { item: "gamediscs:game_disc_froggie", value: 3200 },
 ];
 
 global.plorts = [
-  { type: "splendid_slimes:slimy", value: 128 },
-  { type: "splendid_slimes:dusty", value: 160 },
-  { type: "splendid_slimes:bony", value: 192 },
-  { type: "splendid_slimes:rotting", value: 192 },
-  { type: "splendid_slimes:webby", value: 184 },
+  { type: "splendid_slimes:slimy", value: 32 },
+  { type: "splendid_slimes:dusty", value: 64 },
+  { type: "splendid_slimes:bony", value: 72 },
+  { type: "splendid_slimes:rotting", value: 72 },
+  { type: "splendid_slimes:webby", value: 128 },
+  { type: "splendid_slimes:luminous", value: 132 },
+  { type: "splendid_slimes:juicy", value: 148 },
   { type: "splendid_slimes:puddle", value: 224 },
   { type: "splendid_slimes:boomcat", value: 256 },
-  { type: "splendid_slimes:all_seeing", value: 288 },
+  { type: "splendid_slimes:all_seeing", value: 256 },
   { type: "splendid_slimes:bitwise", value: 288 },
-  { type: "splendid_slimes:blazing", value: 288 },
-  { type: "splendid_slimes:luminous", value: 288 },
+  { type: "splendid_slimes:blazing", value: 256 },
   { type: "splendid_slimes:weeping", value: 320 },
   { type: "splendid_slimes:prisma", value: 400 },
-  { type: "splendid_slimes:sweet", value: 512 },
+  { type: "splendid_slimes:phantom", value: 512 },
+  { type: "splendid_slimes:sweet", value: 768 },
   { type: "splendid_slimes:shulking", value: 1024 },
   { type: "splendid_slimes:ender", value: 1024 },
-  { type: "splendid_slimes:phantom", value: 1024 },
   { type: "splendid_slimes:orby", value: 1280 },
   { type: "splendid_slimes:minty", value: 1280 },
+  { type: "splendid_slimes:sparkcat", value: 1400 },
   { type: "splendid_slimes:gold", value: 2048 },
 ];
 
@@ -1625,7 +1652,7 @@ global.slimeHearts = [];
 global.plorts.forEach((plort) => {
   global.slimeHearts.push({
     type: plort.type,
-    value: plort.value * 16 * 2,
+    value: Math.floor(plort.value * 16 * 1.5),
   });
 });
 

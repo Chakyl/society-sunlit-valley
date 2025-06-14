@@ -1,4 +1,5 @@
 console.info("[SOCIETY] globalServer.js loaded");
+
 global.mainUiElementIds = [
   "animalName",
   "animalNameIcons",
@@ -10,6 +11,9 @@ global.mainUiElementIds = [
   "fishIcon",
   "fishName",
   "population",
+  "tapperMessage",
+  "seedBiomeMessage",
+  "skullTeleportMessage",
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};
@@ -34,8 +38,8 @@ global.renderUiText = (player, server, messages, clearedMessages) => {
     clearUiPaint(player, clearedMessages);
     player.paint(messages);
     player.persistentData.ageLastShownMessage = player.age;
-    server.scheduleInTicks(80, () => {
-      if (player.age - player.persistentData.get("ageLastShownMessage") >= 80)
+    server.scheduleInTicks(100, () => {
+      if (player.age - player.persistentData.get("ageLastShownMessage") >= 100)
         clearUiPaint(player, clearedMessages);
     });
   });
@@ -58,11 +62,6 @@ global.renderUiItemText = (player, items, ids) => {
   global.clearUiItemPaint(player, ids);
   player.paint(items);
 };
-
-global.formatPrice = (number) => {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
-
 global.calculateCoinValue = (coin) => {
   let value = 0;
   switch (coin.id.split(":")[1]) {
@@ -84,8 +83,11 @@ global.calculateCoinValue = (coin) => {
     case "sun":
       value = 4096;
       break;
+    case "neptunium_coin":
+      value = 32768;
+      break;
     case "ancient_coin":
-      value = 253952;
+      value = 262144;
       break;
     case "prismatic_coin":
       value = 16252928;
@@ -148,85 +150,52 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   let time = isDay
     ? `:sunrise: ${extraOutput ? "§6Day§r" : ""}`
     : `:moon: ${extraOutput ? "§8Night§r" : ""}`;
-  if (
-    biomeTags.includes("minecraft:is_ocean") ||
-    biomeTags.includes("minecraft:is_beach")
-  ) {
-    printFunction(
-      `    :ocean: ${extraOutput ? "§3Ocean§r" : ""}${weather} ${time}`
-    );
+  if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
+    printFunction(`    :ocean: ${extraOutput ? "§3Ocean§r" : ""}${weather} ${time}`);
     switch (season) {
       case "spring":
-        global.springOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.springOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "summer":
-        global.summerOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.summerOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "autumn":
-        global.autumnOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.autumnOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "winter":
-        global.winterOcean.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.winterOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
     }
   } else if (biomeTags.includes("minecraft:is_river")) {
-    printFunction(
-      `    :droplet: ${extraOutput ? "§9River§r" : ""}${weather} ${time}`
-    );
+    printFunction(`    :droplet: ${extraOutput ? "§9River§r" : ""}${weather} ${time}`);
     switch (season) {
       case "spring":
-        global.springRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.springRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "summer":
-        global.summerRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.summerRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "autumn":
-        global.autumnRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.autumnRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "winter":
-        global.winterRiver.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.winterRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
     }
   } else {
-    printFunction(
-      `:bubbles: ${extraOutput ? "§bFresh§r" : ""}${weather} ${time}`
-    );
+    printFunction(`:bubbles: ${extraOutput ? "§bFresh§r" : ""}${weather} ${time}`);
     switch (season) {
       case "spring":
-        global.springFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.springFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "summer":
-        global.summerFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.summerFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "autumn":
-        global.autumnFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.autumnFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
       case "winter":
-        global.winterFresh.forEach((fish) =>
-          validateEntry(fish, isDay, level, local)
-        );
+        global.winterFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
         break;
     }
   }
@@ -265,4 +234,208 @@ global.netherRadar = (e, local, printFunction) => {
     printFunction(`            §4The Nether`);
   }
   return netherFish;
+};
+
+global.artisanMachineDefinitions = [
+  {
+    id: "society:loom",
+    recipes: global.loomRecipes,
+    stageCount: 1,
+    maxInput: 5,
+    upgrade: "society:tiny_gnome",
+  },
+  {
+    id: "society:aging_cask",
+    recipes: global.agingCaskRecipes,
+    stageCount: 10,
+    maxInput: 1,
+    upgrade: "society:broken_clock",
+  },
+  {
+    id: "society:ancient_cask",
+    recipes: global.ancientCaskRecipes,
+    stageCount: 20,
+    maxInput: 1,
+    upgrade: "society:inserter",
+  },
+  {
+    id: "society:crystalarium",
+    recipes: global.crystalariumCrystals,
+    stageCount: 5,
+    maxInput: 1,
+    upgrade: "society:black_opal",
+  },
+  {
+    id: "society:deluxe_worm_farm",
+    recipes: global.deluxeWormFarmRecipes,
+    stageCount: 2,
+    maxInput: 4,
+    upgrade: "society:infinity_worm",
+  },
+  {
+    id: "society:fish_smoker",
+    recipes: global.fishSmokerRecipes,
+    stageCount: 2,
+    maxInput: 1,
+    upgrade: "society:ancient_roe",
+  },
+  {
+    id: "society:bait_maker",
+    recipes: global.baitMakerRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+  {
+    id: "society:dehydrator",
+    recipes: global.dehydratorRecipes,
+    stageCount: 1,
+    maxInput: 8,
+    upgrade: "society:cordycep",
+  },
+  {
+    id: "society:mayonnaise_machine",
+    recipes: global.mayonnaiseMachineRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+  {
+    id: "society:preserves_jar",
+    recipes: global.preservesJarRecipes,
+    stageCount: 3,
+    maxInput: 5,
+    upgrade: "society:stone_hand",
+  },
+  {
+    id: "society:seed_maker",
+    recipes: global.seedMakerRecipes,
+    stageCount: 1,
+    maxInput: 3,
+    upgrade: "society:ancient_cog",
+  },
+  {
+    id: "society:charging_rod",
+    recipes: "society:battery",
+    stageCount: 5,
+    maxInput: 1,
+  },
+  {
+    id: "society:espresso_machine",
+    recipes: global.espressoMachineRecipes,
+    stageCount: 1,
+    maxInput: 4,
+  },
+  {
+    id: "society:tapper",
+    recipes: global.tapperRecipes,
+    stageCount: 7,
+    maxInput: 1,
+  },
+  {
+    id: "society:recycling_machine",
+    recipes: global.recyclingMachineRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+];
+
+global.artisanMachineIds = global.artisanMachineDefinitions.map((x) => x.id);
+
+global.handleFee = (server, player, reason) => {
+  const UUID = player.getUuid();
+  let amountToDeduct = 0;
+  let balance = 0;
+  let account = null;
+  let maxFee = 0;
+  let minimumFee = 512;
+
+  global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
+    if (UUID.toString() == playerUUID.toString()) {
+      balance = bankAccount.getBalance();
+      account = bankAccount;
+    }
+  });
+  if (reason === "death") {
+    maxFee = 4096;
+
+    amountToDeduct = Math.min(Math.round(balance * 0.1), maxFee);
+  }
+  if (reason === "skull_cavern") {
+    minimumFee = 1024;
+    maxFee = 8192;
+
+    amountToDeduct = Math.min(Math.round(balance * 0.15), maxFee);
+  }
+  if (amountToDeduct < minimumFee) {
+    let currentDebt = null;
+    let foundIndex = -1;
+    if (!server.persistentData.debts) server.persistentData.debts = [];
+    for (let index = 0; index < server.persistentData.debts.length; index++) {
+      if (String(UUID) === String(server.persistentData.debts[index].uuid)) {
+        currentDebt = Number(server.persistentData.debts[index].amount);
+        server.persistentData.debts[index].amount = currentDebt + minimumFee;
+        foundIndex = index;
+        break;
+      }
+    }
+    if (!currentDebt) {
+      server.persistentData.debts.push({ uuid: UUID.toString(), amount: maxFee });
+    }
+    player.give(
+      Item.of(
+        "candlelight:note_paper_written",
+        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+
+Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take 512 :coin: out of your profits until the fee is paid off. Be careful next time!
+
+Debt: ${global.formatPrice(server.persistentData.debts[foundIndex].amount)} :coin:
+"],title:"Hospital Receipt"}`
+      )
+    );
+  } else {
+    account.setBalance(balance - amountToDeduct);
+    player.give(
+      Item.of(
+        "candlelight:note_paper_written",
+        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+
+Looks like you passed out again! We\'ve treated you for a small fee.
+
+We\'ve taken it out of your bank account for convenience. Be careful next time!
+
+:coin: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
+      )
+    );
+  }
+};
+
+global.teleportHome = (player, server, level) => {
+  let respawnPosition = player.getRespawnPosition();
+  if (respawnPosition == null) {
+    respawnPosition = level.getSharedSpawnPos();
+  }
+  player.teleportTo(
+    server.getLevel(player.getRespawnDimension().location()),
+    respawnPosition.x,
+    respawnPosition.y,
+    respawnPosition.z,
+    [],
+    0.0,
+    0.0
+  );
+};
+
+/**
+ * Normally this behaivor would be handled buy Pufferfish Skills, but it's broken with shippingbin attributes
+ **/
+global.addAttributesFromStages = (player, server) => {
+  const stages = player.stages;
+  const attributeCommand = (type, mult) =>
+    `attribute ${player.username} shippingbin:${type}_sell_multiplier base set ${mult}`;
+  if (stages.has("tiller")) server.runCommandSilent(attributeCommand("crop", 1.1));
+  if (stages.has("artisan")) server.runCommandSilent(attributeCommand("wood", 1.2));
+  if (stages.has("artful_tycoon")) server.runCommandSilent(attributeCommand("wood", 1.8));
+  if (stages.has("gem_seller")) server.runCommandSilent(attributeCommand("gem", 1.5));
+  if (stages.has("gem_tycoon")) server.runCommandSilent(attributeCommand("gem", 2));
+  if (stages.has("fence")) server.runCommandSilent(attributeCommand("meat", 1.5));
+  if (stages.has("looting_tycoon")) server.runCommandSilent(attributeCommand("meat", 2));
 };

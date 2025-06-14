@@ -5,7 +5,7 @@
 	#Save sawmill recipes to disk. Enable this if you are the author of a modpack and want to disable dynamic recipe generation. To do so just turn of that config, turn this one on and after booting up the game just copy the generated recipes in the generated folder in your own datapack, then turn off this config
 	save_recipes = false
 	#Generates Sawmill recipes dynamically. Remove this if you plan to add all of them manually instead. Can speed up boot time slightly
-	dynamic_recipes = false
+	dynamic_recipes = true
 	#Allow crafting non-block items
 	allow_non_blocks = true
 	#Allows crafting non wood variant items (crafting table for example)

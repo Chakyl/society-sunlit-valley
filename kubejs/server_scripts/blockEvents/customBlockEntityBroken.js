@@ -1,165 +1,72 @@
 console.info("[SOCIETY] customBlockEntityBroken.js loaded");
 
-BlockEvents.broken("society:seed_maker", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.seedMakerRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
+const handleBrokenMachine = (block) => {
+  const machine = global.artisanMachineDefinitions.filter((obj) => {
+    return obj.id === block.id;
+  })[0];
+  if (!machine) return;
+  if (machine.upgrade && block.properties.get("upgraded").toLowerCase() == "true") {
+    block.popItem(machine.upgrade);
+  }
+  if (!block.properties.get("type")) return;
+  const currentRecipe = machine.recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+  if (block.properties.get("mature").toLowerCase() == "true") {
+    currentRecipe.output.forEach((element) => {
+      block.popItem(element);
     });
+  } else if (
+    block.properties.get("working").toLowerCase() == "true" &&
+    !["society:charging_rod", "society:tapper"].includes(block.id)
+  ) {
+    if (
+      block.id == "society:ancient_cask" &&
+      block.properties.get("upgraded").toLowerCase() == "true"
+    ) {
+      block.popItem(Item.of(`4x ${currentRecipe.input}`));
+    } else if (
+      block.id == "society:deluxe_worm_farm" &&
+      block.properties.get("upgraded").toLowerCase() == "true"
+    ) {
+      // Do nothing because of infinity worm upgrade
+    } else if (
+      block.id == "society:preserves_jar" &&
+      block.properties.get("upgraded").toLowerCase() == "true"
+    ) {
+      block.popItem(Item.of(`3x ${currentRecipe.input}`));
+    } else {
+      block.popItem(Item.of(`${machine.maxInput}x ${currentRecipe.input}`));
+    }
   }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:ancient_cog"));
-  }
-});
+};
 
-BlockEvents.broken("society:preserves_jar", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.preservesJarRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:stone_hand"));
-  }
-});
-
-BlockEvents.broken("society:dehydrator", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.dehydratorRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:cordycep"));
-  }
-});
-
-BlockEvents.broken("society:mayonnaise_machine", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.mayonnaiseMachineRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
-});
-
-BlockEvents.broken("society:crystalarium", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.crystalariumCrystals[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:black_opal"));
-  }
-});
-
-BlockEvents.broken("society:aging_cask", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.agingCaskRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:broken_clock"));
-  }
-});
-
-BlockEvents.broken("society:ancient_cask", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.ancientCaskRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:inserter"));
-  }
-});
-
-BlockEvents.broken("society:fish_smoker", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.fishSmokerRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:ancient_roe"));
-  }
-});
-
-BlockEvents.broken("society:bait_maker", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    global.baitMakerRecipes[
-      Number(e.block.properties.get("type").toLowerCase()) - 1
-    ].output.forEach((element) => {
-      e.block.popItem(element);
-    });
-  }
+BlockEvents.broken(global.artisanMachineIds, (e) => {
+  handleBrokenMachine(e.block);
 });
 
 BlockEvents.broken("society:fish_pond", (e) => {
-  const pondType = e.block.properties.get("type").toLowerCase();
+  const { block } = e;
+  const pondType = block.properties.get("type").toLowerCase();
   if (pondType !== "0") {
-    const fish = global.fishPondDefinitions[Number(pondType) - 1].item;
-    e.block.popItem(
-      Item.of(`${e.block.properties.get("population").toLowerCase()}x ${fish}`)
+    block.popItem(
+      Item.of(
+        "society:fish_pond",
+        `{type:${block.properties.get("type")},population:${block.properties.get(
+          "population"
+        )},max_population:${block.properties.get("max_population")},quest:${block.properties.get("quest")},quest_id:${block.properties.get("quest_id")}}`
+      )
     );
+  } else {
+    block.popItem(Item.of("society:fish_pond"));
   }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:sea_biscut"));
-  }
-    e.block.popItem(Item.of("society:fish_pond"));
-});
-
-BlockEvents.broken("society:deluxe_worm_farm", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    e.block.popItem(Item.of("4x crabbersdelight:deluxe_crab_trap_bait"));
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:infinity_worm"));
-  }
-});
-
-BlockEvents.broken("society:loom", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    e.block.popItem("society:canvas");
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:tiny_gnome"));
-  }
-});
-
-BlockEvents.broken("society:charging_rod", (e) => {
-  if (e.block.properties.get("mature").toLowerCase() == "true") {
-    e.block.popItem("society:battery");
-  }
-  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
-    e.block.popItem(Item.of("society:frosted_tip"));
+  if (block.properties.get("upgraded").toLowerCase() == "true") {
+    block.popItem(Item.of("society:sea_biscut"));
   }
 });
 
 BlockEvents.broken("society:prize_machine", (e) => {
-  e.block.popItem(
-    Item.of(
-      "society:prize_machine",
-      `{prize:${e.block.properties.get("prize")}}`
-    )
-  );
+  e.block.popItem(Item.of("society:prize_machine", `{prize:${e.block.properties.get("prize")}}`));
 });
+
 BlockEvents.broken(
   [
     "society:iron_sprinkler",

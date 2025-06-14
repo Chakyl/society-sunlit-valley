@@ -29,6 +29,15 @@ ItemEvents.modification((e) => {
       item.rarity = "epic";
     });
   });
+  e.modify("society:sparkstone", (item) => {
+    item.rarity = "epic";
+  });
+  e.modify(
+    ["numismatics:neptunium_coin", "numismatics:ancient_coin", "numismatics:prismatic_coin"],
+    (item) => {
+      item.rarity = "epic";
+    }
+  );
   e.modify(["society:bank_meter", "society:milk_pail"], (item) => {
     item.maxStackSize = 1;
   });
@@ -73,6 +82,7 @@ ItemEvents.modification((e) => {
   const goldHammers = [
     "justhammers:gold_reinforced_impact_hammer",
     "justhammers:gold_hammer",
+    "justhammers:gold_destructor_hammer",
     "justhammers:gold_impact_hammer",
     "justhammers:gold_reinforced_hammer",
   ];
@@ -136,4 +146,35 @@ ItemEvents.modification((e) => {
         food.saturation(0.5);
       })
   );
+  const netheriteTools = [
+    "minecraft:netherite_axe",
+    "minecraft:netherite_hoe",
+    "minecraft:netherite_pickaxe",
+    "minecraft:netherite_shovel",
+  ];
+  netheriteTools.forEach((armor) => {
+    e.modify(armor, (item) => {
+      item.setDigSpeed(item.digSpeed + 1);
+      item.setAttackDamage(item.attackDamage + 2);
+    });
+  });
+  e.modify("minecraft:netherite_sword", (item) => {
+    item.setAttackDamage(10);
+  });
+  e.modify("minecraft:netherite_helmet", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(4);
+  });
+  e.modify("minecraft:netherite_chestplate", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(9);
+  });
+  e.modify("minecraft:netherite_leggings", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(7);
+  });
+  e.modify("minecraft:netherite_boots", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(3);
+  });
 });

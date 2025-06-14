@@ -17,17 +17,11 @@ global.prizeMachineRewards = [
   },
   {
     hint: "upgradable",
-    possibleOutputs: [
-      "sophisticatedbackpacks:upgrade_base",
-      "sophisticatedstorage:upgrade_base",
-    ],
+    possibleOutputs: ["sophisticatedbackpacks:upgrade_base", "sophisticatedstorage:upgrade_base"],
   },
   {
     hint: "bearing red fruits",
-    possibleOutputs: [
-      "pamhc2trees:cherry_sapling",
-      "pamhc2trees:apple_sapling",
-    ],
+    possibleOutputs: ["pamhc2trees:cherry_sapling", "pamhc2trees:apple_sapling"],
   },
   {
     hint: "crabs love to chow on",
@@ -91,7 +85,7 @@ global.prizeMachineRewards = [
     hint: "capable of handling liquids",
     possibleOutputs: [
       "2x vintagedelight:fermenting_jar",
-      "2x treetap:tap",
+      "2x society:tapper",
       "2x vinery:fermentation_barrel",
     ],
   },
@@ -120,10 +114,7 @@ global.prizeMachineRewards = [
   },
   {
     hint: "with jaded fruit",
-    possibleOutputs: [
-      "pamhc2trees:pawpaw_sapling",
-      "pamhc2trees:hazelnut_sapling",
-    ],
+    possibleOutputs: ["pamhc2trees:pawpaw_sapling"],
   },
   {
     hint: "soothing and refreshing... Again",
@@ -170,6 +161,9 @@ global.prizeMachineRewards = [
   {
     hint: "only enjoyed by those of age",
     possibleOutputs: ["society:aging_cask", "tanukidecor:slot_machine"],
+  },  {
+    hint: "with jaded fruit... Again",
+    possibleOutputs: ["pamhc2trees:hazelnut_sapling"],
   },
   {
     hint: "spicy",
@@ -225,11 +219,7 @@ global.prizeMachineRewards = [
   },
   {
     hint: "sticky, from a tree",
-    possibleOutputs: [
-      "4x society:maple_syrup",
-      "4x society:pine_tar",
-      "4x society:oak_resin",
-    ],
+    possibleOutputs: ["4x society:maple_syrup", "4x society:pine_tar", "4x society:oak_resin"],
   },
   {
     hint: "wintery",
@@ -242,10 +232,7 @@ global.prizeMachineRewards = [
   },
   {
     hint: "relating to relics",
-    possibleOutputs: [
-      "society:relic_trove",
-      "64x relics:relic_experience_bottle",
-    ],
+    possibleOutputs: ["society:relic_trove", "64x relics:relic_experience_bottle"],
   },
   {
     hint: "fossilized",
@@ -272,10 +259,7 @@ global.prizeMachineRewards = [
   },
   {
     hint: "artly and factual",
-    possibleOutputs: [
-      "society:artifact_trove",
-      "betterarcheology:unidentified_artifact",
-    ],
+    possibleOutputs: ["society:artifact_trove", "betterarcheology:unidentified_artifact"],
   },
   {
     hint: "seedy that's hard to find",
@@ -311,9 +295,7 @@ global.prizeMachineRewards = [
 StartupEvents.registry("block", (event) => {
   event
     .create("society:prize_machine", "cardinal")
-    .property(
-      integerProperty.create("prize", 0, global.prizeMachineRewards.length)
-    )
+    .property(integerProperty.create("prize", 0, global.prizeMachineRewards.length))
     .box(1, 0, 4, 15, 28, 12)
     .defaultCutout()
     .soundType("copper")
@@ -325,25 +307,17 @@ StartupEvents.registry("block", (event) => {
         parent: "society:block/prize_machine",
       });
     })
-
     .defaultState((state) => {
-      state.set(
-        integerProperty.create("prize", 0, global.prizeMachineRewards.length),
-        0
-      );
+      state.set(integerProperty.create("prize", 0, global.prizeMachineRewards.length), 0);
     })
     .placementState((state) => {
-      state.set(
-        integerProperty.create("prize", 0, global.prizeMachineRewards.length),
-        0
-      );
+      state.set(integerProperty.create("prize", 0, global.prizeMachineRewards.length), 0);
     })
     .rightClick((click) => {
       const { item, block, hand, player, level, server } = click;
       const { x, y, z } = block;
       const prizeNumber = block.properties.get("prize").toLowerCase();
-      const prizeOutput =
-        global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
+      const prizeOutput = global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
       const prizeHint = global.prizeMachineRewards[Number(prizeNumber)].hint;
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND" && item === "society:prize_ticket") {
@@ -390,9 +364,7 @@ StartupEvents.registry("block", (event) => {
           `puffish_skills experience add ${player.username} society:adventuring 100`
         );
       } else {
-        player.tell(
-          Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`)
-        );
+        player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
       }
     }).blockstateJson = {
     multipart: [

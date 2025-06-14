@@ -4,6 +4,15 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "pipez:energy_pipe",
+    "pipez:fluid_pipe",
+    "pipez:gas_pipe",
+    "pipez:universal_pipe",
+    "pipez:ultimate_upgrade",
+    "pipez:improved_upgrade",
+    "pipez:infinity_upgrade",
+    "pipez:basic_upgrade",
+    "pipez:wrench",
     "waterframes:remote",
     "waterframes:frame",
     "waterframes:tv",
@@ -399,7 +408,7 @@ ServerEvents.recipes((e) => {
     "extractinator:extractinator",
     "create:mechanical_harvester",
     "create:brown_toolbox",
-    "mining_dimension:teleporter",
+    "society:teleporter",
     "minecraft:flint_and_steel",
     // Armorer
     "sophisticatedbackpacks:stack_upgrade_tier_4",
@@ -605,7 +614,6 @@ ServerEvents.recipes((e) => {
     // Butcher
     "numismatics:bank_terminal",
     "numismatics:vendor",
-    "numismatics:banking_guide",
     "numismatics:brass_depositor",
     "furniture:coffer",
     "numismatics:andesite_depositor",
@@ -639,8 +647,11 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    "oreganized:electrum_upgrade_smithing_template",
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",
+    "moredelight:cutting/sliced_bread",
+    "everycomp:db/betterarcheology/rotten_beam",
     // Botania
     "botania:mana_infusion/mana_diamond_block",
     "farm_and_charm:mincer/hops_seeds",
@@ -658,6 +669,8 @@ ServerEvents.recipes((e) => {
     "extractinator:extractinating/cobblestone",
     "extractinator:extractinating/sand",
     "extractinator:extractinating/gravel",
+    "aquaculture:tin_can_to_iron_nugget",
+    "aquaculture:tin_can_to_iron_nugget_from_blasting",
     // Create
     "create:mixing/andesite_alloy_from_zinc",
     "create:crafting/materials/andesite_alloy_from_zinc",

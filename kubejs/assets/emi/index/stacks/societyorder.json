@@ -24,9 +24,13 @@
       "stack": "item:numismatics:sun",
       "after": "item:numismatics:crown"
     },
+        {
+      "stack": "item:numismatics:neptunium_coin",
+      "after": "item:numismatics:sun"
+    },
     {
       "stack": "item:numismatics:ancient_coin",
-      "after": "item:numismatics:sun"
+      "after": "item:numismatics:neptunium_coin"
     },
     {
       "stack": "item:numismatics:prismatic_coin",

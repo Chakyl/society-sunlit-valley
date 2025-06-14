@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "N": {
+      "item": "numismatics:neptunium_coin"
+    },
+    "H": {
+      "item": "rehooked:wood_hook"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "P": {
+      "item": "minecraft:iron_pickaxe"
+    }
+  },
+  "pattern": ["INP", " HN", "C I"],
+  "result": {
+    "item": "rehooked:iron_hook"
+  },
+  "show_notification": true
+}

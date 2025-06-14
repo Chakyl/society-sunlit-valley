@@ -5,6 +5,19 @@
   "showOnActionTime": 4.0,
   "considerCanAttackBlock": true,
   "considerIsCorrectToolForDrops": true,
+  "considerCanBePlaced": false,
+  "overrides": [
+    {
+      "item": "minecraft:stick",
+      "block": "#minecraft:candles",
+      "show": true
+    },
+    {
+      "item": "all",
+      "block": "minecraft:nether_portal",
+      "show": false
+    }
+  ],
   "version": 0,
   "name": "selectivebounds"
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "society:rubber"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "item": "create:belt_connector",
+    "count": 4
+  },
+  "show_notification": true
+}

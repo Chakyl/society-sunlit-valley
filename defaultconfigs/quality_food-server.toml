@@ -62,7 +62,7 @@ farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_ferti
 	amplifier_addition = 2
 	#By how much the nutrition will get multiplied for
 	#Range: 1.0 ~ 100.0
-	nutrition_multiplier = 2.25
+	nutrition_multiplier = 1.5
 	#By how much the saturation will get multiplied for
 	#Range: 1.0 ~ 100.0
 	saturation_multiplier = 1.15
@@ -88,10 +88,10 @@ farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_ferti
 	amplifier_addition = 3
 	#By how much the nutrition will get multiplied for
 	#Range: 1.0 ~ 100.0
-	nutrition_multiplier = 1.5
+	nutrition_multiplier = 2.0
 	#By how much the saturation will get multiplied for
 	#Range: 1.0 ~ 100.0
-	saturation_multiplier = 1.2
+	saturation_multiplier = 1.3
 	#Additive bonus to the chance an ingredient gives (when crafting through a crafting table)
 	#This value is divided by the amount of ingredient types (which can have quality) (i.e. 1x diamond & 1x no quality -> total bonus of 0.35 (if diamond provides a bonus of 0.7))
 	#Range: 0.0 ~ 1.0

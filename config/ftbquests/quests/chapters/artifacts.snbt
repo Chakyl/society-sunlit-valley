@@ -35,7 +35,7 @@
 				item: "society:ribbit_gadget"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.0d
 			y: 1.5d
 		}
 		{
@@ -45,7 +45,7 @@
 				item: "society:heart_of_neptunium"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -71,7 +71,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: 1.5d
 		}
 		{
@@ -167,7 +167,7 @@
 				item: "society:beemonican_seal"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -190,6 +190,7 @@
 				"49790DACD8F6F042"
 				"47264B28B0B801AB"
 				"6F1185DF7F75728F"
+				"4AA3E179161C2AFE"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -264,7 +265,17 @@
 				item: "society:steamy_gadget"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			id: "4AA3E179161C2AFE"
+			tasks: [{
+				id: "27C26E20579F7201"
+				item: "society:token_of_unity"
+				type: "item"
+			}]
+			x: -4.5d
 			y: 1.5d
 		}
 	]

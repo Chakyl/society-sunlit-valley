@@ -1,0 +1,118 @@
+{
+  "temperature": -0.6,
+  "downfall": 0,
+  "has_precipitation": true,
+  "temperature_modifier": "frozen",
+  "effects": {
+    "sky_color": 13426431,
+    "fog_color": 12638463,
+    "water_color": 5035504,
+    "water_fog_color": 1538444,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "rottencreatures:zap",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:drowned",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:creeper",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "trials:breeze",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:cave_spider",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:witch",
+        "weight": 60,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "rottencreatures:immortal",
+        "weight": 60,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "species:limpet",
+        "weight": 60,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": [],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "axolotls": [],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:drowned",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    ["society:frozen_caves/ice_ladder", "society:frozen_caves/ice_rock"],
+    ["minecraft:monster_room", "minecraft:monster_room_deep"],
+    [],
+    [],
+    [
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower"
+    ],
+    [],
+    ["minecraft:spring_water"],
+    [
+      "society:glow_lichen",
+      "society:frozen_maelstrom/glance_patch_floor",
+      "society:frozen_maelstrom/ancient_glance_patch_floor",
+      "society:frozen_caves/ice_patch_ceiling",
+      "society:frozen_caves/slush_patch_ceiling"
+    ],
+    ["minecraft:freeze_top_layer"]
+  ]
+}

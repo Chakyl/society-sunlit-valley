@@ -1,0 +1,34 @@
+{
+  "breed": "sparkcat",
+  "name": "slime.splendid_slimes.sparkcat",
+  "color": "#c11a91",
+  "particle": { "item": "society:sparkstone" },
+  "diet": "diet.splendid_slimes.sparkcat",
+  "foods": [{ "tag": "society:smoked_fish" }],
+  "favorite_food": {
+    "item": "society:smoked_spindlefish"
+  },
+  "traits": ["explosive", "moody", "largoless", "defiant"],
+  "emit_effect_particle": "snowyspirit:glow_light",
+  "innate_effects": [
+    {
+      "effect": "minecraft:speed",
+      "amplifier": 4
+    },
+    {
+      "effect": "minecraft:jump_boost",
+      "amplifier": 4
+    },
+    {
+      "effect": "brewery:lightning_strike",
+      "amplifier": 0
+    }
+  ],
+  "negative_emit_effects": [
+    {
+      "effect": "brewery:lightning_strike",
+      "duration": 40,
+      "amplifier": 0
+    }
+  ]
+}

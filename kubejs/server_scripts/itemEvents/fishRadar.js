@@ -17,7 +17,6 @@ ItemEvents.rightClicked("society:fish_radar", (e) => {
   } else {
     fish = global.netherRadar(e, fish, playerTell);
   }
-  level.getBiome(player.pos).get();
   if (player.stages.has("mystical_ocean")) fish.push("society:neptuna");
   player.tell(Text.gray("======================"));
   fish.forEach((fish) => {
