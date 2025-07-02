@@ -164,13 +164,12 @@ StartupEvents.registry("block", (event) => {
         }
       }
 
+      let outputMult = 1;
       if (upgraded && block.properties.get("mature") === "true") {
-        let recipe = global.dehydratorglobal.getArtisanOutputs(recipes, block);
-        recipe.output.forEach((id) => {
-          if (global.dehydratableMushrooms.includes(recipe.input)) {
-            block.popItemFromFace(Item.of(id), facing);
-          }
-        });
+        let type = global.dehydratorRecipes[block.properties.get("type")];
+        if (global.dehydratableMushrooms.includes(type.input)) {
+          outputMult = 2;
+        }
       }
 
       global.handleBERightClick(
@@ -178,7 +177,9 @@ StartupEvents.registry("block", (event) => {
         click,
         global.dehydratorRecipes,
         8,
-        true
+        true,
+        false,
+        outputMult
       );
     })
     .blockEntity((blockInfo) => {
