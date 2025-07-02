@@ -109,15 +109,14 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.cheesePressRecipes, 2);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/cheese_press_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("cheese_press")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/cheese_press")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

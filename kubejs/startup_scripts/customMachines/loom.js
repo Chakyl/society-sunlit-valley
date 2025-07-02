@@ -74,7 +74,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-      
+
       if (upgraded && block.properties.get("mature") === "true" && rnd25()) {
         const furniture = Ingredient.of("#society:loot_furniture").itemIds;
         block.popItemFromFace(furniture[Math.floor(Math.random() * furniture.length)], facing);
@@ -94,15 +94,14 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.loomRecipes, 1);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/loom_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("loom")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/loom")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

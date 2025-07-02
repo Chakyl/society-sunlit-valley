@@ -136,7 +136,7 @@ StartupEvents.registry("block", (event) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing");
-      const type = global.dehydratorRecipes[block.properties.get("type")];
+      const type = global.dehydratorRecipes[block.properties.get("type")].input;
       const isMushroom = global.dehydratableMushrooms.includes(type);
 
       if (hand == "OFF_HAND") return;
@@ -166,15 +166,6 @@ StartupEvents.registry("block", (event) => {
         }
       }
 
-      if (upgraded && block.properties.get("mature") === "true") {
-        let recipe = global.dehydratorglobal.getArtisanOutputs(recipes, block);
-        recipe.output.forEach((id) => {
-          if (global.dehydratableMushrooms.includes(recipe.input)) {
-            block.popItemFromFace(Item.of(id), facing);
-          }
-        });
-      }
-
       global.handleBERightClick(
         "species:block.alphacene_foliage.place",
         click,
@@ -189,15 +180,13 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.dehydratorRecipes, 1);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/dehydrator_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("dehydrator")),
-  };
+    }).blockstateJson = MultipartBuilder("society:block/dehydrator")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

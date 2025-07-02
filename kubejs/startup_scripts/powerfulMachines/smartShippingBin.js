@@ -96,40 +96,10 @@ StartupEvents.registry("block", (event) => {
             blockEntity.inventory.getStackInSlot(slot)
           )
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/smart_shipping_bin",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/smart_shipping_bin",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/smart_shipping_bin",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/smart_shipping_bin",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/smart_shipping_bin")
+      .complex(
+        MultipartModifiers.directional()
+      )
+      .build();
 });

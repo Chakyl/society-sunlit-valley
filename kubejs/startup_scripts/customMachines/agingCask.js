@@ -220,95 +220,17 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.agingCaskRecipes, 10, true);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/aging_cask_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
-        when: { upgraded: false, facing: "north" },
-        apply: { model: "society:block/aging_cask_base", y: 0, uvlock: false },
-      },
-      {
-        when: { upgraded: false, facing: "east" },
-        apply: { model: "society:block/aging_cask_base", y: 90, uvlock: false },
-      },
-      {
-        when: { upgraded: false, facing: "south" },
-        apply: {
-          model: "society:block/aging_cask_base",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, facing: "west" },
-        apply: {
-          model: "society:block/aging_cask_base",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "north" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "east" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "south" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "west" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "north" },
-        apply: { model: "society:block/aging_cask_plug", y: 0, uvlock: false },
-      },
-      {
-        when: { working: true, facing: "east" },
-        apply: { model: "society:block/aging_cask_plug", y: 90, uvlock: false },
-      },
-      {
-        when: { working: true, facing: "south" },
-        apply: {
-          model: "society:block/aging_cask_plug",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "west" },
-        apply: {
-          model: "society:block/aging_cask_plug",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/aging_cask")
+      .particle()
+      .doneMark()
+      .complex( "{base}_base", // Sets up the cask's base model
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable()
+      )
+      .complex("{base}_plug", // Sets up the cask's plug model
+        MultipartModifiers.directional(),
+        MultipartModifiers.machineStateful(null, "", null)
+      )
+      .build();
 });

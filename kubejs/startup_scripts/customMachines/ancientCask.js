@@ -237,144 +237,18 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.ancientCaskRecipes, 20);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/ancient_cask_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
-        when: { upgraded: false, facing: "north" },
-        apply: {
-          model: "society:block/ancient_cask_base",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, facing: "east" },
-        apply: {
-          model: "society:block/ancient_cask_base",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, facing: "south" },
-        apply: {
-          model: "society:block/ancient_cask_base",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, facing: "west" },
-        apply: {
-          model: "society:block/ancient_cask_base",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "north" },
-        apply: {
-          model: "society:block/ancient_cask_base_upgraded",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "east" },
-        apply: {
-          model: "society:block/ancient_cask_base_upgraded",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "south" },
-        apply: {
-          model: "society:block/ancient_cask_base_upgraded",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "west" },
-        apply: {
-          model: "society:block/ancient_cask_base_upgraded",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, working: true, facing: "north" },
-        apply: {
-          model: "society:block/ancient_cask_plug",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, working: true, facing: "east" },
-        apply: {
-          model: "society:block/ancient_cask_plug",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, working: true, facing: "south" },
-        apply: {
-          model: "society:block/ancient_cask_plug",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, working: true, facing: "west" },
-        apply: {
-          model: "society:block/ancient_cask_plug",
-          y: -90,
-          uvlock: false,
-        },
-      },
-
-      {
-        when: { upgraded: true, working: true, facing: "north" },
-        apply: {
-          model: "society:block/ancient_cask_plug_upgraded",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, working: true, facing: "east" },
-        apply: {
-          model: "society:block/ancient_cask_plug_upgraded",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, working: true, facing: "south" },
-        apply: {
-          model: "society:block/ancient_cask_plug_upgraded",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, working: true, facing: "west" },
-        apply: {
-          model: "society:block/ancient_cask_plug_upgraded",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/ancient_cask")
+      .particle()
+      .doneMark()
+      .complex( "{base}_base", // Sets up the Cask's Base Model
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable(),
+      )
+      .complex("{base}_plug", // Sets up the Cask's plug model
+        MultipartModifiers.directional(),
+        MultipartModifiers.machineStateful(null, "", null),
+        MultipartModifiers.upgradable()
+      )
+      .build();
 });

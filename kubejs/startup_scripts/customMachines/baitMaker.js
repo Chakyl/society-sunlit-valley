@@ -137,111 +137,13 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.baitMakerRecipes, 1);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/bait_maker_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
-        when: { working: false, facing: "north" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "east" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "south" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "west" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "north" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "east" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "south" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "west" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "north" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "east" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "south" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "west" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/bait_maker")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

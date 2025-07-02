@@ -281,15 +281,14 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.seedMakerRecipes, 1);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/seed_maker_particle" },
-      },
-      {
-        when: { mature: "true" },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("seed_maker")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/seed_maker")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

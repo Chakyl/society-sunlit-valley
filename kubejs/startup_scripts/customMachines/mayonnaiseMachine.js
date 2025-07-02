@@ -117,15 +117,13 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.mayonnaiseMachineRecipes, 1);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/mayonnaise_machine_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("mayonnaise_machine")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/mayonnaise_machine")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

@@ -173,11 +173,13 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.fishSmokerRecipes, 2);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/fish_smoker_particle" },
-      },
-    ].concat(getCardinalMultipartJson("fish_smoker")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/fish_smoker")
+      .particle()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

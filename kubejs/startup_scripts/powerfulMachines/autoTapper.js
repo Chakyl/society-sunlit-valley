@@ -67,17 +67,14 @@ StartupEvents.registry("block", (event) => {
             return drained;
           })
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/auto_tapper_particle" },
-      },
-      {
-        when: { error: true },
-        apply: { model: "society:block/error" },
-      },
-    ].concat(getCardinalMultipartJsonBasic("auto_tapper")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/auto_tapper")
+      .particle()
+      .error({ error: true })
+      .complex(
+        MultipartModifiers.directional(),
+      )
+      .build();
 });
 global.runAutoTapper = (blockInfo) => {
   const { block, level, server } = blockInfo;

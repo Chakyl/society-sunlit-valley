@@ -80,7 +80,7 @@ StartupEvents.registry("block", (event) => {
         4,
         true
       );
-      
+
       if (upgraded && block.properties.get("working") === "false") {
         block.set(block.id, {
           facing: block.properties.get("facing"),
@@ -94,36 +94,16 @@ StartupEvents.registry("block", (event) => {
     })
     .randomTick((tick) => {
       global.handleBERandomTick(tick, rnd50(), 2);
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { upgraded: false },
-        apply: { model: "society:block/deluxe_worm_farm_base" },
-      },
-      {
-        when: { upgraded: true },
-        apply: { model: "society:block/deluxe_worm_farm_base_upgraded" },
-      },
-      {
-        when: { working: true, upgraded: false },
-        apply: { model: "society:block/deluxe_worm_farm" },
-      },
-      {
-        when: { mature: true, upgraded: false },
-        apply: { model: "society:block/deluxe_worm_farm" },
-      },
-      {
-        when: { working: true, upgraded: true },
-        apply: { model: "society:block/deluxe_worm_farm_upgraded" },
-      },
-      {
-        when: { mature: true, upgraded: true },
-        apply: { model: "society:block/deluxe_worm_farm_upgraded" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/deluxe_worm_farm")
+      .particle()
+      .doneMark()
+      .complex("{base}_base", // Worm Bin Bucket
+        MultipartModifiers.upgradable(),
+      )
+      .complex( // Worm Bin Lid
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(null, "", ""),
+      )
+      .build();
 });

@@ -1,4 +1,5 @@
 console.info("[SOCIETY] crystalarium.js loaded");
+
 global.crystalariumCrystals = [];
 const crystals = [
   { item: "society:ocean_stone", time: 3 },
@@ -138,7 +139,7 @@ StartupEvents.registry("block", (event) => {
           );
         });
       }
-      
+
       global.handleBERightClick(
         "minecraft:block.amethyst_block.step",
         click,
@@ -150,15 +151,14 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.crystalariumCrystals, 5);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/crystalarium_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("crystalarium")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/crystalarium")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

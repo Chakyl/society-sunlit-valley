@@ -308,7 +308,7 @@ StartupEvents.registry("block", (event) => {
           stage: block.properties.get("stage"),
         });
       }
-      
+
       global.handleBERightClick(
         "minecraft:block.wood.place",
         click,
@@ -321,36 +321,15 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.preservesJarRecipes, 3);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { upgraded: false },
-        apply: { model: "society:block/preserves_jar_base" },
-      },
-      {
-        when: { working: true },
-        apply: { model: "society:block/preserves_jar_lid" },
-      },
-      {
-        when: { mature: true, working: false },
-        apply: { model: "society:block/preserves_jar_lid_done" },
-      },
-      {
-        when: { upgraded: true },
-        apply: { model: "society:block/preserves_jar_base_upgraded" },
-      },
-      {
-        when: { working: true, upgraded: false },
-        apply: { model: "society:block/preserves_jar_base" },
-      },
-      {
-        when: { mature: true, upgraded: false },
-        apply: { model: "society:block/preserves_jar_base" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/preserves_jar")
+      .particle()
+      .doneMark()
+      .complex("{base}_base", // Jar Tub
+        MultipartModifiers.upgradable(),
+      )
+      .complex("{base}_lid", // Jar Lid
+        MultipartModifiers.machineStateful(null, "", "_done"),
+      )
+      .build();
 });

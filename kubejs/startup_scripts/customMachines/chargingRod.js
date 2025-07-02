@@ -119,37 +119,13 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, null, 5);
       });
-    }).blockstateJson = {
-    multipart: [
-      { apply: { model: "society:block/charging_rod_particle" } },
-      {
-        when: { working: false, upgraded: false, mature: false },
-        apply: { model: "society:block/charging_rod_off" },
-      },
-      {
-        when: { working: true, upgraded: false, mature: false },
-        apply: { model: "society:block/charging_rod" },
-      },
-      {
-        when: { working: false, upgraded: false, mature: true },
-        apply: { model: "society:block/charging_rod_done" },
-      },
-      {
-        when: { working: false, upgraded: true, mature: false },
-        apply: { model: "society:block/charging_rod_upgraded_off" },
-      },
-      {
-        when: { working: true, upgraded: true, mature: false },
-        apply: { model: "society:block/charging_rod_upgraded" },
-      },
-      {
-        when: { working: false, upgraded: true, mature: true },
-        apply: { model: "society:block/charging_rod_upgraded_done" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/charging_rod")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.upgradable(),
+        MultipartModifiers.machineStateful(),
+      )
+      .build();
 });

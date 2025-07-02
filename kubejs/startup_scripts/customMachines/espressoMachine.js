@@ -89,111 +89,16 @@ StartupEvents.registry("block", (event) => {
     })
     .randomTick((tick) => {
       global.handleBERandomTick(tick, true, 1);
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/espresso_machine_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
-        when: { working: false, mature: true, facing: "north" },
-        apply: {
-          model: "society:block/espresso_cup_full",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, mature: true, facing: "east" },
-        apply: {
-          model: "society:block/espresso_cup_full",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, mature: true, facing: "south" },
-        apply: {
-          model: "society:block/espresso_cup_full",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, mature: true, facing: "west" },
-        apply: {
-          model: "society:block/espresso_cup_full",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "north" },
-        apply: {
-          model: "society:block/espresso_cup_empty",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "east" },
-        apply: {
-          model: "society:block/espresso_cup_empty",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "south" },
-        apply: {
-          model: "society:block/espresso_cup_empty",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "west" },
-        apply: {
-          model: "society:block/espresso_cup_empty",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/espresso_machine",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/espresso_machine",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/espresso_machine",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/espresso_machine",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/espresso_machine")
+      .particle()
+      .doneMark()
+      .complex( // Espesso Machine Base
+        MultipartModifiers.directional()
+      )
+      .complex( "society:block/espresso_cup", // Espesso Cup
+        MultipartModifiers.directional(),
+        MultipartModifiers.machineStateful(null, "_empty", "_full")
+      )
+      .build();
 });

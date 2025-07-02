@@ -45,17 +45,14 @@ const generateSprinkler = (e, tier, radius) => {
           sticklogged: false,
         });
       }
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: `society:block/${tier}_sprinkler` },
-      },
-      {
+    })
+    .blockstateJson = MultipartBuilder(`society:block/${tier}_sprinkler`)
+      .complex()
+      .add({
         when: { sticklogged: true },
         apply: { model: "society:block/sprinkler_stick" },
-      },
-    ],
-  };
+      })
+      .build();
 };
 StartupEvents.registry("block", (e) => {
   generateSprinkler(e, "iron", 1);

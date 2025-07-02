@@ -372,43 +372,11 @@ StartupEvents.registry("block", (event) => {
       } else {
         player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
       }
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/prize_machine_particle" },
-      },
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/prize_machine",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/prize_machine",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/prize_machine",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/prize_machine",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/prize_machine")
+      .particle()
+      .complex(
+        MultipartModifiers.directional(),
+      )
+      .build();
 });

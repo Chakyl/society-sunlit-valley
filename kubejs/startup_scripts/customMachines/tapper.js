@@ -160,19 +160,13 @@ StartupEvents.registry("block", (event) => {
         if (entity.block.properties.get("error") !== "true")
           global.handleBETick(entity, global.tapperRecipes, 7);
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/tapper_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
-        when: { error: true },
-        apply: { model: "society:block/error" },
-      },
-    ].concat(getCardinalMultipartJsonBasic("tapper")),
-  };
+    })
+    .blockstateJson = MultipartBuilder("society:block/tapper")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+      )
+      .error({ error: true })
+      .build();
 });

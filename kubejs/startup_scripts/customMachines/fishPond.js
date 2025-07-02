@@ -243,82 +243,18 @@ StartupEvents.registry("block", (event) => {
         entity;
         global.handleFishPondTick(entity);
       });
-    }).blockstateJson = {
-    multipart: [
-      { apply: { model: "society:block/fish_pond_particle" } },
-      {
-        when: { facing: "north", upgraded: false },
-        apply: { model: "society:block/fish_pond", y: 0, uvlock: false },
-      },
-      {
-        when: { facing: "east", upgraded: false },
-        apply: {
-          model: "society:block/fish_pond",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south", upgraded: false },
-        apply: {
-          model: "society:block/fish_pond",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west", upgraded: false },
-        apply: {
-          model: "society:block/fish_pond",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "north", upgraded: true },
-        apply: {
-          model: "society:block/fish_pond_upgraded",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east", upgraded: true },
-        apply: {
-          model: "society:block/fish_pond_upgraded",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south", upgraded: true },
-        apply: {
-          model: "society:block/fish_pond_upgraded",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west", upgraded: true },
-        apply: {
-          model: "society:block/fish_pond_upgraded",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
+    })
+    .blockstateJson = MultipartBuilder("society:block/fish_pond")
+      .particle()
+      .doneMark()
+      .complex(
+        MultipartModifiers.directional(),
+        MultipartModifiers.upgradable()
+      )
+      .error()
+      .add({
         when: { quest: true, mature: false },
-        apply: { model: "society:block/pond_quest" },
-      },
-
-      {
-        when: { valid: false },
-        apply: { model: "society:block/error" },
-      },
-    ],
-  };
+        apply: { model: "society:block/pond_quest", uvlock: false },
+      })
+      .build();
 });
