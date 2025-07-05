@@ -1,0 +1,67 @@
+{
+    "name": "Oak Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "minecraft:oak_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌐 §5Year-round$(li)Sapling Price: :coin: 8$(li)Size: 1x1$(br2)$(l)Notes$()$(li)Has a rare large variant."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Oak Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  L  ",
+                        " L0L ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLL "
+                    ],
+                    [
+                        "LLLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "L": "minecraft:oak_leaves",
+                    "W": "minecraft:oak_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

@@ -21,8 +21,21 @@ global.husbandryAnimals = [
   "minecraft:panda",
   "species:mammutilation",
   "snuffles:snuffle",
-  "species:goober"
+  "species:goober",
+  "farmlife:domestic_tribull",
+  "wildernature:minisheep",
+  "wildernature:deer",
+  "wildernature:raccoon",
+  "wildernature:bison",
+  "minecraft:chicken",
+  "untitledduckmod:duck",
+  "untitledduckmod:goose",
+  "etcetera:chapple",
+  "autumnity:turkey",
+  "species:wraptor",
+  "wildernature:flamingo",
+  "wildernature:penguin",
+  "farmlife:galliraptor",
 ];
 
 global.animalMessageSettings = `{anchor:3,background:1,wrap:1,align:0,color:"#FF5555",y:-100}`;
-

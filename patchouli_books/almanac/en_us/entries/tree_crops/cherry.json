@@ -1,0 +1,26 @@
+{
+    "name": "Cherry 🌼",
+    "category": "patchouli:tree_crops",
+    "icon": "vinery:cherry",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 12$(li)🌼 §2Spring§r $(li)Yield: 4$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/cherry)Cherry Tree$(/l)$(li)See: $(l:trees/letsdo/darkcherry)Dark Cherry Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Apple Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "F": "pamhc2trees:pamcherry[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

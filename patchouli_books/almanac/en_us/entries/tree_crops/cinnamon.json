@@ -1,0 +1,28 @@
+{
+    "name": "Cinnamon 🍂❆",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:cinnamonitem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 160$(li)🍂 §4Autumn§r ❆ §bWinter§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/cinnamon)Cinnamon Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Plum Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "pamhc2trees:pamcinnamon[age=7]",
+                    "L": "pamhc2trees:pamcinnamon[age=6]",
+                    "H": "pamhc2trees:pamcinnamon[age=0]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["L"],
+                    ["H"]
+                ]
+            }
+        }
+    ]
+}

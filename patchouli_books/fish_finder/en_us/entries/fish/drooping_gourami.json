@@ -1,0 +1,19 @@
+{
+  "name": "Drooping Gourami",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_drooping_gourami",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 176$(li)§0🌼 §2Spring§0$(li)Water: Ocean$(li)Weather: Any$(li)Time: Day"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:drooping_gourami",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.8,
+      "text": "Droop dropp glip glorp."
+    }
+  ]
+}

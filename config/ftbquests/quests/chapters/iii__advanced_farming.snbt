@@ -1319,6 +1319,29 @@
 			x: 1.0d
 			y: 8.5d
 		}
+		{
+			dependencies: ["0C7D8F89BCF645AA"]
+			description: [
+				"The &6Auto-Cheese Press&r is an automated version of the &6Artisan Cheese Press&r. Hoppers can be used to insert and extract out of it."
+				""
+				"Unlike the base version, it requires &6Rennet&r for the production of cheeses."
+			]
+			id: "4EBBDECAF78C14ED"
+			rewards: [{
+				count: 16
+				id: "0079FF80FF8C18F5"
+				item: "meadow:rennet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D5F73A7858E1353"
+				item: "meadow:cheese_form"
+				type: "item"
+			}]
+			title: "Automated Cheese"
+			x: 3.0d
+			y: 1.0d
+		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"
 }

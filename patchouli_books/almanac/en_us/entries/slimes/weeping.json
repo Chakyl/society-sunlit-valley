@@ -1,0 +1,17 @@
+{
+  "name": "Weeping",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:weeping\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Biomes: Nether biomes outside of Soul Sand Valley$(br2)$(l)Risks:$()$(br)Just happy to be here!"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Weeping Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:weeping\"}",
+      "scale": 0.9
+    }
+  ]
+}

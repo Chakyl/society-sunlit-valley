@@ -139,6 +139,13 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+      if (
+        !player.stages.has("canadian_and_famous") &&
+        block.properties.get("mature") === "true" &&
+        Math.random() <= 0.01
+      ) {
+        block.popItemFromFace("society:canadian_and_famous", block.properties.get("facing"));
+      }
 
       global.handleBERightClick(
         "vinery:cabinet_close",
@@ -147,7 +154,7 @@ StartupEvents.registry("block", (event) => {
         7,
         false,
         false,
-        1,
+        player.stages.has("canadian_and_famous") ? 2 : 1,
         true
       );
       global.handleTapperRandomTick(click);

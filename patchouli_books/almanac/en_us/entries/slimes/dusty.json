@@ -1,0 +1,17 @@
+{
+  "name": "Dusty",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Biomes: Desert Caves, Desert Fault (Skull Cavern)$(li)Dig spots: Sand/stone$(br2)$(l)Risks:$()$(br)Causes the Convulsion effect and lightning strikes when upset."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Dusty Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:dusty\"}",
+      "scale": 0.9
+    }
+  ]
+}

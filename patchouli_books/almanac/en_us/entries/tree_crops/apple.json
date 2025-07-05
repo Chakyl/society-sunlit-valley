@@ -1,0 +1,26 @@
+{
+    "name": "Apple 🍂",
+    "category": "patchouli:tree_crops",
+    "icon": "minecraft:apple",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 8$(li)🍂 §4Autumn§r $(li)Yield: 4$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/apple)Apple Tree$(/l)$(li)See: $(l:trees/letsdo/apple)Dark Apple Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Apple Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "F": "pamhc2trees:pamapple[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

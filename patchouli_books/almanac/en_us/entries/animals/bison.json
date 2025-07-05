@@ -1,0 +1,17 @@
+{
+  "name": "Bison",
+  "category": "patchouli:animals",
+  "icon": "wildernature:bison_horn",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not Sold$(li)Milk: Buffalo Milk$(li)Milk Cooldown: 1 day$(li)Drops: Bison Meat, Leather, Bison Horn$(br2)$(l)Notes$()$(br)Found in taiga biomes. Will instinctively attack nearby players, even at high affection."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:bison",
+      "scale": 0.7,
+      "text": "Bison are temperamental and highly distrustful due to poaching."
+    }
+  ]
+}

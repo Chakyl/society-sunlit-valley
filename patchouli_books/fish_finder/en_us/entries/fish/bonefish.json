@@ -1,0 +1,19 @@
+{
+  "name": "Bonefish",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:bonefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 264$(li)Dimension: Nether$(li)Biome: Nether Wastes"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:bonefish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "A peacebone got found in the dinosaur wing."
+    }
+  ]
+}

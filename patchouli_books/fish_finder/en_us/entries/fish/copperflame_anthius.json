@@ -1,0 +1,18 @@
+{
+  "name": "Copperflame Anthius",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_copperflame_anthias",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 320$(li)\u00a70\ud83c\udf42 \u00a74Autumn\u00a70 \u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: Ocean$(li)Weather: Clear$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:copperflame",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "I'm not a big fan of mint chocolate chip ice cream."
+    }
+  ]
+}

@@ -211,7 +211,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.gray("Turns 3 of the same crop into seeds"));
       item.tooltip(Text.green("Preserves input quality"));
       item.modelJson({
-        parent: "society:block/seed_maker_off",
+        parent: "society:block/seed_maker/seed_maker_off",
       });
     })
     .defaultState((state) => {
@@ -282,14 +282,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.seedMakerRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/seed_maker_particle" },
-      },
-      {
-        when: { mature: "true" },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("seed_maker")),
+    multipart: getCardinalMultipartJson("seed_maker"),
   };
 });

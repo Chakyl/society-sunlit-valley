@@ -1,0 +1,26 @@
+{
+    "name": "Orange 🔥",
+    "category": "patchouli:tree_crops",
+    "icon": "atmospheric:orange",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 96$(li)🔥 §6Summer§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/orange)Orange Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Orange Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "F": "pamhc2trees:pamorange[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

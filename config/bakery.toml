@@ -1,0 +1,197 @@
+
+[Banner]
+	#Set to false to disable the banner's effect.
+	giveEffect = true
+	#Set to false to hide the banner's tooltip. If giveEffect is false, showTooltip is automatically false.
+	showTooltip = true
+
+[Nutrition]
+	#Nutrition value for Cake Dough
+	#Range: 0 ~ 20
+	cakeDoughNutrition = 5
+	#Saturation modifier for Cake Dough
+	#Range: 0.0 ~ 10.0
+	cakeDoughSaturation = 0.6
+	#Nutrition value for Sweet Dough
+	#Range: 0 ~ 20
+	sweetDoughNutrition = 5
+	#Saturation modifier for Sweet Dough
+	#Range: 0.0 ~ 10.0
+	sweetDoughSaturation = 0.6
+	#Nutrition value for Croissant
+	#Range: 0 ~ 20
+	croissantNutrition = 5
+	#Saturation modifier for Croissant
+	#Range: 0.0 ~ 10.0
+	croissantSaturation = 0.6
+	#Nutrition value for Crusty Bread
+	#Range: 0 ~ 20
+	crustyBreadNutrition = 5
+	#Saturation modifier for Crusty Bread
+	#Range: 0.0 ~ 10.0
+	crustyBreadSaturation = 1.2
+	#Nutrition value for Bread
+	#Range: 0 ~ 20
+	breadNutrition = 5
+	#Saturation modifier for Bread
+	#Range: 0.0 ~ 10.0
+	breadSaturation = 1.2
+	#Nutrition value for Baguette
+	#Range: 0 ~ 20
+	baguetteNutrition = 5
+	#Saturation modifier for Baguette
+	#Range: 0.0 ~ 10.0
+	baguetteSaturation = 1.2
+	#Nutrition value for Toast
+	#Range: 0 ~ 20
+	toastNutrition = 3
+	#Saturation modifier for Toast
+	#Range: 0.0 ~ 10.0
+	toastSaturation = 0.8
+	#Nutrition value for Braided Bread
+	#Range: 0 ~ 20
+	braidedBreadNutrition = 5
+	#Saturation modifier for Braided Bread
+	#Range: 0.0 ~ 10.0
+	braidedBreadSaturation = 1.2
+	#Nutrition value for Sandwich
+	#Range: 0 ~ 20
+	sandwichNutrition = 7
+	#Saturation modifier for Sandwich
+	#Range: 0.0 ~ 10.0
+	sandwichSaturation = 0.7
+	#Nutrition value for Vegetable Sandwich
+	#Range: 0 ~ 20
+	vegetableSandwichNutrition = 8
+	#Saturation modifier for Vegetable Sandwich
+	#Range: 0.0 ~ 10.0
+	vegetableSandwichSaturation = 0.6
+	#Nutrition value for Grilled Salmon Sandwich
+	#Range: 0 ~ 20
+	grilledSalmonSandwichNutrition = 6
+	#Saturation modifier for Grilled Salmon Sandwich
+	#Range: 0.0 ~ 10.0
+	grilledSalmonSandwichSaturation = 0.8
+	#Nutrition value for Grilled Bacon Sandwich
+	#Range: 0 ~ 20
+	grilledBaconSandwichNutrition = 7
+	#Saturation modifier for Grilled Bacon Sandwich
+	#Range: 0.0 ~ 10.0
+	grilledBaconSandwichSaturation = 0.7
+	#Nutrition value for Bread with Jam
+	#Range: 0 ~ 20
+	breadWithJamNutrition = 5
+	#Saturation modifier for Bread with Jam
+	#Range: 0.0 ~ 10.0
+	breadWithJamSaturation = 0.5
+	#Nutrition value for Strawberry Cake Slice
+	#Range: 0 ~ 20
+	strawberryCakeSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	strawberryCakeSliceSaturation = 0.7
+	#Nutrition value for Sweetberry Cake Slice
+	#Range: 0 ~ 20
+	sweetberryCakeSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	sweetberryCakeSliceSaturation = 0.7
+	#Nutrition value for Chocolate Cake Slice
+	#Range: 0 ~ 20
+	chocolateCakeSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	chocolateCakeSliceSaturation = 0.7
+	#Nutrition value for Chocolate Gateau Slice
+	#Range: 0 ~ 20
+	chocolateGateauSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	chocolateGateauSliceSaturation = 0.7
+	#Nutrition value for Bundt Cake Slice
+	#Range: 0 ~ 20
+	bundtCakeSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	bundtCakeSliceSaturation = 0.7
+	#Nutrition value for Linzer Tart Slice
+	#Range: 0 ~ 20
+	linzerTartSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	linzerTartSliceSaturation = 0.7
+	#Nutrition value for Apple Pie Slice
+	#Range: 0 ~ 20
+	applePieSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	applePieSliceSaturation = 0.7
+	#Nutrition value for Glowberry Pie Slice
+	#Range: 0 ~ 20
+	glowberryPieSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	glowberryPieSliceSaturation = 0.7
+	#Nutrition value for Chocolate Tart Slice
+	#Range: 0 ~ 20
+	chocolateTartSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	chocolateTartSliceSaturation = 0.7
+	#Nutrition value for Pudding Slice
+	#Range: 0 ~ 20
+	puddingSliceNutrition = 5
+	#Range: 0.0 ~ 10.0
+	puddingSliceSaturation = 0.7
+	#Nutrition value for Strawberry Glazed Cookie
+	#Range: 0 ~ 20
+	strawberryGlazedCookieNutrition = 3
+	#Range: 0.0 ~ 10.0
+	strawberryGlazedCookieSaturation = 0.5
+	#Nutrition value for Sweetberry Glazed Cookie
+	#Range: 0 ~ 20
+	sweetberryGlazedCookieNutrition = 3
+	#Range: 0.0 ~ 10.0
+	sweetberryGlazedCookieSaturation = 0.5
+	#Nutrition value for Chocolate Glazed Cookie
+	#Range: 0 ~ 20
+	chocolateGlazedCookieNutrition = 3
+	#Range: 0.0 ~ 10.0
+	chocolateGlazedCookieSaturation = 0.5
+	#Nutrition value for Strawberry Cupcake
+	#Range: 0 ~ 20
+	strawberryCupcakeNutrition = 3
+	#Range: 0.0 ~ 10.0
+	strawberryCupcakeSaturation = 0.5
+	#Nutrition value for Sweetberry Cupcake
+	#Range: 0 ~ 20
+	sweetberryCupcakeNutrition = 3
+	#Range: 0.0 ~ 10.0
+	sweetberryCupcakeSaturation = 0.5
+	#Nutrition value for Apple Cupcake
+	#Range: 0 ~ 20
+	appleCupcakeNutrition = 3
+	#Range: 0.0 ~ 10.0
+	appleCupcakeSaturation = 0.5
+	#Nutrition value for Cornet
+	#Range: 0 ~ 20
+	cornetNutrition = 3
+	#Range: 0.0 ~ 10.0
+	cornetSaturation = 0.5
+	#Nutrition value for Jam Roll
+	#Range: 0 ~ 20
+	jamRollNutrition = 3
+	#Range: 0.0 ~ 10.0
+	jamRollSaturation = 0.5
+	#Nutrition value for Bun
+	#Range: 0 ~ 20
+	bunNutrition = 5
+	#Range: 0.0 ~ 10.0
+	bunSaturation = 1.2
+	#Nutrition value for Waffle
+	#Range: 0 ~ 20
+	waffleNutrition = 5
+	#Range: 0.0 ~ 10.0
+	waffleSaturation = 0.5
+	#Nutrition value for Chocolate Truffle
+	#Range: 0 ~ 20
+	chocolateTruffleNutrition = 2
+	#Range: 0.0 ~ 10.0
+	chocolateTruffleSaturation = 0.4
+	#Nutrition value for Misslilitu Biscuit
+	#Range: 0 ~ 20
+	misslilituBiscuitNutrition = 6
+	#Range: 0.0 ~ 10.0
+	misslilituBiscuitSaturation = 0.6
+

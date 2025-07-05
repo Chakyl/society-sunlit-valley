@@ -1,0 +1,18 @@
+{
+  "name": "Picklefish",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_picklefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 48$(li)\u00a70\ud83c\udf42 \u00a74Autumn\u00a70$(li)Water: Ocean$(li)Weather: Rain Snow$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:picklefish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "I'm not gonna make the joke you can make it."
+    }
+  ]
+}

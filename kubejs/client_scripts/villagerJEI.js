@@ -4,13 +4,7 @@ JEIAddedEvents.registerCategories((e) => {
     category
       .title("Villager Purchase")
       .background(
-        guiHelper.createDrawable(
-          "society:textures/gui/villager_trade.png",
-          1,
-          1,
-          140,
-          20
-        )
+        guiHelper.createDrawable("society:textures/gui/villager_trade.png", 1, 1, 140, 20)
       )
       .icon(guiHelper.createDrawableItemStack("minecraft:villager_spawn_egg"))
       .isRecipeHandled(() => true)
@@ -19,6 +13,7 @@ JEIAddedEvents.registerCategories((e) => {
           workstation,
           priceItem,
           priceAmount,
+          isMintyPlort,
           additionalPriceItem,
           additionalPriceAmount,
           offerItem,
@@ -30,14 +25,16 @@ JEIAddedEvents.registerCategories((e) => {
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder
           .addSlot("input", 33, 2)
-          .addItemStack(Item.of(`${priceAmount}x ${priceItem}`))
+          .addItemStack(
+            isMintyPlort
+              ? Item.of("16x splendid_slimes:plort", '{plort:{id:"splendid_slimes:minty"}}')
+              : Item.of(`${priceAmount}x ${priceItem}`)
+          )
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         additionalPriceItem &&
           builder
             .addSlot("input", 57, 2)
-            .addItemStack(
-              Item.of(`${additionalPriceAmount}x ${additionalPriceItem}`)
-            )
+            .addItemStack(Item.of(`${additionalPriceAmount}x ${additionalPriceItem}`))
             .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder
           .addSlot("output", 118, 2)
@@ -72,6 +69,9 @@ JEIAddedEvents.registerRecipes((e) => {
         workstation: block,
         priceItem: trade.request.itemKey,
         priceAmount: trade.request.amount,
+        // Forgive me if you're reading this jank
+        isMintyPlort:
+          trade.request.advancedNBTData && trade.request.advancedNBTData.includes("minty"),
         additionalPriceItem: trade.additionalRequest?.itemKey,
         additionalPriceAmount: trade.additionalRequest?.amount,
         offerItem: trade.offer.itemKey,

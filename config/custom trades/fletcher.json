@@ -443,6 +443,25 @@
     },
     {
       "offer": {
+        "itemKey": "society:pink_matter",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "splendid_slimes:plort",
+        "amount": 16,
+        "priceModifier": 0,
+        "advancedNBTData": "{plort:{id:\"splendid_slimes:minty\"}}"
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fletcher_pink_matter_for_plort"
+    },
+    {
+      "offer": {
         "itemKey": "society:ancient_roe",
         "amount": 1,
         "priceModifier": 0

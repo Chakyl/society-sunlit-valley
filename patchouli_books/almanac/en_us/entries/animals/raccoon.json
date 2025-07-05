@@ -1,0 +1,17 @@
+{
+  "name": "Raccoon",
+  "category": "patchouli:animals",
+  "icon": "furniture:trash_bag",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Forage: ...trash? (50% chance)$(li)Drops: Tin Can$(br2)$(l)Notes$()$(br)Foraging requires 3+ hearts. Can be found in Plains biomes."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:raccoon",
+      "scale": 0.7,
+      "text": "These lil ones are best friends with Rotting Slimes!"
+    }
+  ]
+}

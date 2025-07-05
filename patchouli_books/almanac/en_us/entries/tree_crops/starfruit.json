@@ -1,0 +1,26 @@
+{
+    "name": "Starfruit 🌐",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:starfruititem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 200$(li)🌐 §5Year-round§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/starfruit)Starfruit Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Starfruit Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:jungle_leaves",
+                    "F": "pamhc2trees:pamstarfruit[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

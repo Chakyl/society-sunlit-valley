@@ -1,0 +1,113 @@
+{
+    "name": "Acacia Tree 🔥",
+    "category": "patchouli:trees",
+    "icon": "minecraft:acacia_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🔥 §6Summer§r$(li)Sapling Price: :coin: 8$(li)Size: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Oak Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "        ",
+                        "    L   ",
+                        "   LLL  ",
+                        "  LLLLL ",
+                        "   LLL  ",
+                        "    L   ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "  LLLLL ",
+                        " LLLLLLL",
+                        " LLLLLLL",
+                        " LLLWLLL",
+                        " LLLLLLL",
+                        " LLLLLLL",
+                        "  LLLLL ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "    W   ",
+                        "        ",
+                        " LLL    ",
+                        " LLL    ",
+                        " LLL    ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "    W   ",
+                        " LLL    ",
+                        "LLLLL   ",
+                        "LLWLL   ",
+                        "LLLLL   ",
+                        " LLL    "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "   W    ",
+                        "        ",
+                        "  W     ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "  W     ",
+                        "  W     ",
+                        "        ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "  W     ",
+                        "        ",
+                        "        ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "  W     ",
+                        "    0   ",
+                        "        ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:air",
+                    "L": "minecraft:acacia_leaves",
+                    "W": "minecraft:acacia_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Pollock",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:pollock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 56$(li)\u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: Ocean$(li)Weather: Rain Snow$(li)Time: Day"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:pollock",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "There's free carrots and paid carrots? Pollocks."
+    }
+  ]
+}

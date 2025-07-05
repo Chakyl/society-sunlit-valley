@@ -1,0 +1,17 @@
+{
+  "name": "Juicy",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:juicy\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Biome: Lush Caverns (Skull Cavern)$(li)Structure: Bee Hives (Skull Cavern)$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Climbs walls! Causes Drunk effect when upset."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Juicy Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:juicy\"}",
+      "scale": 0.9
+    }
+  ]
+}

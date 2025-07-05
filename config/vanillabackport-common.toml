@@ -11,10 +11,9 @@
 	#Determine if the wandering trader should have trades from the pale garden
 	paleTradesFromWanderer = false
 
-["Summer Drop"]
+["Chase the Skies"]
 	#Determine if dried ghasts should generate in Nether Fossils
 	generateDriedGhasts = true
-	#Determine the speed of happy ghasts when ridden
-	#Range: 0.0 ~ 10.0
-	happyGhastSpeedModifier = 1.0
+	#Determine if all leash connections should be dropped when using a firework rocket while elytra flying
+	dropLeashConnectionsOnFireworkBoost = true
 

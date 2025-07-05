@@ -1,0 +1,18 @@
+{
+  "name": "Brown Shrooma",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:brown_shrooma",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 264$(li)\u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: Ocean$(li)Weather: Rain Snow$(li)Time: Any"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:brown_shrooma",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "It just keeps saying \"Don't come to \"."
+    }
+  ]
+}

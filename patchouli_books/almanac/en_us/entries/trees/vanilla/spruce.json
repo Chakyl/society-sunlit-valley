@@ -1,0 +1,88 @@
+{
+    "name": "Spruce Tree 🌼🍂❆",
+    "category": "patchouli:trees",
+    "icon": "minecraft:spruce_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌼 §2Spring§r 🍂 §4Autumn§r ❆ §bWinter§r$(li)Sapling Price: :coin: 8$(li)Size: 1x1, 2x2"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Oak Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LLL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:spruce_leaves",
+                    "L": "minecraft:spruce_leaves",
+                    "W": "minecraft:spruce_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

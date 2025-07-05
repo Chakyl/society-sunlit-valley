@@ -194,6 +194,7 @@ BlockEvents.rightClicked(
     "society:seed_maker",
     "society:tapper",
     "society:recycling_machine",
+    "society:cheese_press",
   ],
   (e) => {
     const { block, hand } = e;

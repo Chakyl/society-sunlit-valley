@@ -259,6 +259,10 @@ global.prizeMachineRewards = [
     ],
   },
   {
+    hint: "something not of this world.",
+    possibleOutputs: ["1x minecraft:eye_armor_trim_smithing_template"],
+  },
+  {
     hint: "soothing and refreshing... Again",
     possibleOutputs: ["2x herbalbrews:oolong_tea"],
   },
@@ -294,6 +298,7 @@ global.prizeMachineRewards = [
       "society:ancient_roe",
       "society:infinity_worm",
       "society:cordycep",
+      "society:pink_matter",
     ],
   },
 ];
@@ -339,10 +344,11 @@ StartupEvents.registry("block", (event) => {
           10,
           0.1
         );
-        block.popItemFromFace(
-          prizeOutput[rnd(0, prizeOutput.length - 1)],
-          block.properties.get("facing")
-        );
+        const prize = prizeOutput[rnd(0, prizeOutput.length - 1)];
+        block.popItemFromFace(prize, block.properties.get("facing"));
+        if (player.stages.has("frogs_bounty_bazaar")) {
+          block.popItemFromFace(prize, block.properties.get("facing"));
+        }
         block.set(block.id, {
           facing: block.properties.get("facing"),
           prize:

@@ -1,0 +1,18 @@
+{
+  "name": "Bluegill",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:bluegill",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 16$(li)Year-Round$(li)Water: Fresh, River$(li)Weather: Any$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:bluegill",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "All I catch is these dumb fish!!!."
+    }
+  ]
+}

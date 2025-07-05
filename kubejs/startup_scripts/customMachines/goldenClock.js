@@ -10,6 +10,9 @@ global.handleProgress = (level, block) => {
     case "society:mayonnaise_machine":
       global.handleBETick(eventObj, global.mayonnaiseMachineRecipes, 1, false, true);
       break;
+          case "society:cheese_press":
+      global.handleBETick(eventObj, global.cheesePressRecipes, 2, false, true);
+      break;
     case "society:preserves_jar":
       global.handleBETick(eventObj, global.preservesJarRecipes, 3, false, true);
       break;

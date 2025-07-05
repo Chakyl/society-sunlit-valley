@@ -1,0 +1,17 @@
+{
+  "name": "Ender",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Structure: Umbra Barrens Slime Spawners (Skull Cavern)$(br2)$(l)Risks:$()$(br)Will teleport entities to itself and teleport itself to food sources."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Ender Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:ender\"}",
+      "scale": 0.9
+    }
+  ]
+}

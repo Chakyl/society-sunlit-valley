@@ -46,17 +46,15 @@ const bankMeterPainter = (curios, player) => {
     curios.toString().includes("society:bank_meter")
   ) {
     const balance = getPlayerBalance(player);
-    const balanceText = balance
-      .toString()
-      .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const balanceText = global.formatPrice(balance);
 
     player.paint({
       coinDisplayDropShadow: {
         type: "text",
-        x: 16.5 + xOffset,
+        x: 1+ xOffset,
         z: -1,
         y: 19,
-        text: balanceText,
+        text: `● ${balanceText}`,
         color: "#000000",
         alignX: "left",
         alignY: "top",
@@ -65,10 +63,10 @@ const bankMeterPainter = (curios, player) => {
     player.paint({
       coinDisplay: {
         type: "text",
-        x: 1.5 + xOffset,
+        x: xOffset,
         y: 18,
-        text: `:coin: ${balanceText}`,
-        color: "#FFAA00",
+        text: `● §6${balanceText}`,
+        color: "#FFFFFF",
         alignX: "left",
         alignY: "top",
       },
@@ -127,7 +125,7 @@ const fishRadarPainter = (curios, e) => {
         x: level.dimension == "minecraft:the_nether" ? -40 : 8,
         y: fishRadarStart + 8 + fishRadarPadding,
         text: localConditions,
-        color: "#FFAA00",
+        color: "#FFFFFFF",
         alignX: "left",
         alignY: "top",
       },

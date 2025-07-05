@@ -76,20 +76,15 @@ StartupEvents.registry("block", (event) => {
           nearbyFarmAnimals.forEach((animal) => {
             if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
             let data = animal.persistentData;
-            let interactionCooldown = global.animalInteractionCooldown;
-            const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
+            const day = Number((level.dayTime() / 24000).toFixed(0));
+            const hungry = day - data.getInt("ageLastFed") > 1;
             if (hungry) return;
             if (!global.getAnimalIsNotCramped(animal))
               data.affection = data.getInt("affection") - 50;
             if (global.checkEntityTag(animal, "society:milkable_animal")) {
-              interactionCooldown *= global.getMilkingTimeMult(animal.type);
-              let milkItem = global.getMilk(
-                level,
-                animal,
-                data,
-                attachedPlayer,
-                interactionCooldown
-              );
+              // TODO: hanlde milk mult
+              // interactionCooldown *= global.getMilkingTimeMult(animal.type);
+              let milkItem = global.getMilk(animal, data, attachedPlayer, day);
               if (milkItem !== -1) {
                 let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
                 if (insertedMilk) {

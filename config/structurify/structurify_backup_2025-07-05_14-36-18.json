@@ -1,0 +1,120 @@
+{
+  "config_version": "1.0.11",
+  "general": {
+    "min_structure_distance_from_world_center": 0,
+    "disable_all_structures": false,
+    "enable_global_spacing_and_separation_modifier": false,
+    "global_spacing_and_separation_modifier": 1.0
+  },
+  "structures": [
+    {
+      "name": "beautify:botanist_house_desert",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "beautify:botanist_house_plains",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "beautify:botanist_house_savanna",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "beautify:botanist_house_snowy",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "beautify:botanist_house_taiga",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "brewery:brewfest_tent",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 80,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 80,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "oreganized:boulder",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 10,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 10,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    }
+  ],
+  "structure_sets": [
+    {
+      "name": "betterarcheology:archeology_sites",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 40,
+      "separation": 22
+    },
+    {
+      "name": "betterarcheology:underwater_ruins",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 32,
+      "separation": 20
+    },
+    {
+      "name": "minecraft:villages",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 46,
+      "separation": 16
+    },
+    {
+      "name": "mvs:other_decoration/haystack",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 37,
+      "separation": 26
+    },
+    {
+      "name": "trials:trials_chambers",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 28,
+      "separation": 21
+    }
+  ]
+}

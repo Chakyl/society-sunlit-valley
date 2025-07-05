@@ -55,7 +55,6 @@ ServerEvents.recipes((e) => {
     g: "moreminecarts:organic_glass",
   });
   // Earth Crystal
-  e.shapeless("society:tapper", ["treetap:tap"]);
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
     l: "meadow:fire_log",
@@ -68,10 +67,15 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
     p: "society:pine_tar",
   });
-  e.shaped("meadow:cheese_form", [" C ", "pcp", " e "], {
-    c: "meadow:cheese_rack",
-    C: "numismatics:crown",
+  e.shaped("society:cheese_press", [" p ", "fef", "fff"], {
+    f: "meadow:fire_log",
     e: "society:earth_crystal",
+    p: "society:pine_tar",
+  });
+  e.shaped("meadow:cheese_form", [" C ", "pcp", " b "], {
+    c: "society:cheese_press",
+    C: "numismatics:sun",
+    b: "society:battery",
     p: "society:pine_tar",
   });
   e.shaped("brewery:wooden_brewingstation", ["eee", "lll", "fcc"], {
@@ -189,12 +193,11 @@ ServerEvents.recipes((e) => {
     C: "numismatics:crown",
     f: "society:fire_quartz",
   });
-  e.shaped("society:preserves_jar", ["LpL", "LbL", "CiC"], {
+  e.shaped("society:preserves_jar", ["LLL", "LbL", "CiC"], {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
     C: "#forge:storage_blocks/coal",
     i: "minecraft:iron_block",
-    p: "society:pine_tar",
   });
   e.shaped("society:dehydrator", ["LGL", "pbp", "LfL"], {
     b: "minecraft:barrel",
@@ -433,15 +436,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("crabbersdelight:crab_trap_bait", ["aquaculture:worm"]);
   e.shapeless("4x crabbersdelight:crab_trap_bait", ["aquaculture:minnow"]);
   e.shapeless("16x crabbersdelight:crab_trap_bait", ["aquaculture:leech"]);
-  // Dramatic Doors
-  e.shapeless("dramaticdoors:short_silver_door", [
-    "dramaticdoors:short_iron_door",
-    "oreganized:silver_ingot",
-  ]);
-  e.shapeless("dramaticdoors:tall_silver_door", [
-    "dramaticdoors:tall_iron_door",
-    "oreganized:silver_ingot",
-  ]);
+
   // Neptuna
   e.custom({
     type: "farmersdelight:cutting",

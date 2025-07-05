@@ -1,0 +1,17 @@
+{
+  "name": "All-Seeing",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:all_seeing\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Climbs walls and causes the Poison effect when upset."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "All-Seeing Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:all_seeing\"}",
+      "scale": 0.9
+    }
+  ]
+}

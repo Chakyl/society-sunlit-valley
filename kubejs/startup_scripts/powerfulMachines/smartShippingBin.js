@@ -25,14 +25,8 @@ StartupEvents.registry("block", (event) => {
     .create("shippingbin:smart_shipping_bin", "cardinal")
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
-      item.tooltip(
-        Text.gray(
-          "Sells inventory periodically and spits it out into the world"
-        )
-      );
-      item.tooltip(
-        Text.green("Automatically converts coins into highest denominations")
-      );
+      item.tooltip(Text.gray("Sells inventory periodically and spits it out into the world"));
+      item.tooltip(Text.green("Automatically converts coins into highest denominations"));
       item.modelJson({
         parent: "society:block/smart_shipping_bin",
       });
@@ -56,7 +50,8 @@ StartupEvents.registry("block", (event) => {
           value = global.processShippingBinInventory(
             inventory,
             slots,
-            playerAttributes
+            playerAttributes,
+            binPlayer.stages
           ).calculatedValue;
           if (value > 0) {
             value = Math.round(value);
@@ -66,9 +61,9 @@ StartupEvents.registry("block", (event) => {
             binPlayer.server.runCommandSilent(
               `immersivemessages sendcustom ${
                 binPlayer.username
-              } {anchor:7,background:1,color:"#FFAA00",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${value
-                .toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} §7worth of goods sold `
+              } {anchor:7,background:1,color:"#FFAA00",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 ● ${global.formatPrice(
+                value
+              )} §7worth of goods sold `
             );
             let outputs = calculateCoinsFromValue(value, []);
             outputs.forEach((output) => {
@@ -90,13 +85,9 @@ StartupEvents.registry("block", (event) => {
           .insertItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.insertItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     }).blockstateJson = {
     multipart: [

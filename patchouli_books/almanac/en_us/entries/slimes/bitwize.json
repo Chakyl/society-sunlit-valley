@@ -1,0 +1,17 @@
+{
+  "name": "Bitwise",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Biome: Frozen Maelstrom (Skull Cavern)$(br2)$(l)Risks:$()$(br)Causes the Confusion effect when upset."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Bitwise Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bitwise\"}",
+      "scale": 0.9
+    }
+  ]
+}

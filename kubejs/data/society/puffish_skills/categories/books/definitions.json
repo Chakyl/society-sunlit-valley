@@ -1,0 +1,173 @@
+{
+  "animal_fancy": {
+    "title": "Animal Fancy",
+    "description": "Increases affection gained from petting farm animals.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:animal_fancy"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s animal_fancy",
+          "lock_command": "kubejs stages remove @s animal_fancy"
+        }
+      }
+    ]
+  },
+    "banana_karenina": {
+    "title": "Banana Karenina",
+    "description": "Doubles Banana Tree output.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:banana_karenina"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s banana_karenina",
+          "lock_command": "kubejs stages remove @s banana_karenina"
+        }
+      }
+    ]
+  },
+  "canadian_and_famous": {
+    "title": "Canadian And Famous",
+    "description": "Tappers output double. Doesn't affect Auto-Tappers.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:canadian_and_famous"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s canadian_and_famous",
+          "lock_command": "kubejs stages remove @s canadian_and_famous"
+        }
+      }
+    ]
+  },
+  "debt_caverns": {
+    "title": "Debt: The First 5000 Caverns",
+    "description": "Fainting in the Skull Cavern no longer costs a fee or adds to debt.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:debt_caverns"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s debt_caverns",
+          "lock_command": "kubejs stages remove @s debt_caverns"
+        }
+      }
+    ]
+  },
+  "first_aid_guide": {
+    "title": "First Aid Guide",
+    "description": "Halves the maximum fee and debt from death.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:first_aid_guide"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s first_aid_guide",
+          "lock_command": "kubejs stages remove @s first_aid_guide"
+        }
+      }
+    ]
+  },
+  "frogs_bounty_bazaar": {
+    "title": "Frog's Bounty Bazaar",
+    "description": "Prize Tickets give double the prizes.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:frogs_bounty_bazaar"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s frogs_bounty_bazaar",
+          "lock_command": "kubejs stages remove @s frogs_bounty_bazaar"
+        }
+      }
+    ]
+  },
+  "intro_to_algorithms": {
+    "title": "Introduction to Algorithms",
+    "description": "Lead ore no longer causes Brain Damage clouds.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:intro_to_algorithms"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s intro_to_algorithms",
+          "lock_command": "kubejs stages remove @s intro_to_algorithms"
+        }
+      }
+    ]
+  },
+  "phenomenology_of_treasure": {
+    "title": "The Phenomenology of Treasure",
+    "description": "Artifacts and Relics are worth 200% more.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:phenomenology_of_treasure"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s phenomenology_of_treasure",
+          "lock_command": "kubejs stages remove @s phenomenology_of_treasure"
+        }
+      }
+    ]
+  },
+  "slouching_towards_artistry": {
+    "title": "Slouching Towards Artistry",
+    "description": "Filling an artisan machine progresses it by 1 day if the production time is greater than 1.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:slouching_towards_artistry"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s slouching_towards_artistry",
+          "lock_command": "kubejs stages remove @s slouching_towards_artistry"
+        }
+      }
+    ]
+  }
+}

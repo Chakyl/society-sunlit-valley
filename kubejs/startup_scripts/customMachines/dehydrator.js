@@ -72,7 +72,7 @@ global.dehydratableFruits.forEach((item) => {
     output: [`1x society:dried_${itemId}`],
   });
 });
-const shimmeringMushrooms = [
+global.shimmeringMushrooms = [
   "botania:white_mushroom",
   "botania:orange_mushroom",
   "botania:magenta_mushroom",
@@ -90,7 +90,7 @@ const shimmeringMushrooms = [
   "botania:light_gray_mushroom",
   "botania:gray_mushroom",
 ];
-shimmeringMushrooms.forEach((item) => {
+global.shimmeringMushrooms.forEach((item) => {
   global.dehydratorRecipes.push({
     input: item,
     output: [`1x society:dried_shimmering_mushrooms`],
@@ -113,7 +113,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Dehydrates 8 fruit or mushrooms"));
       item.modelJson({
-        parent: "society:block/dehydrator_off",
+        parent: "society:block/dehydrator/dehydrator_off",
       });
     })
     .defaultState((state) => {
@@ -136,6 +136,14 @@ StartupEvents.registry("block", (event) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing");
+      const type = block.properties.get("type");
+      let isMushroom;
+      if (Number(type) > 0) {
+        const input = global.dehydratorRecipes[Number(type) - 1].input;
+        isMushroom =
+          global.dehydratableMushrooms.includes(input) ||
+          global.shimmeringMushrooms.includes(input);
+      }
 
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
@@ -155,7 +163,7 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: facing,
-            type: block.properties.get("type"),
+            type: type,
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
@@ -164,21 +172,14 @@ StartupEvents.registry("block", (event) => {
         }
       }
 
-      if (upgraded && block.properties.get("mature") === "true") {
-        let recipe = global.dehydratorglobal.getArtisanOutputs(recipes, block);
-        recipe.output.forEach((id) => {
-          if (global.dehydratableMushrooms.includes(recipe.input)) {
-            block.popItemFromFace(Item.of(id), facing);
-          }
-        });
-      }
-
       global.handleBERightClick(
         "species:block.alphacene_foliage.place",
         click,
         global.dehydratorRecipes,
         8,
-        true
+        true,
+        false,
+        upgraded && isMushroom ? 2 : 1
       );
     })
     .blockEntity((blockInfo) => {
@@ -186,14 +187,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.dehydratorRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/dehydrator_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("dehydrator")),
+    multipart: getCardinalMultipartJson("dehydrator"),
   };
 });

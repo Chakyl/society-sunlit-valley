@@ -4,6 +4,8 @@ const deniedCrops = [
   "farmersdelight:tomatoes",
   "farmersdelight:budding_tomatoes",
   "minecraft:melon_stem",
+  "minecraft:pitcher_crop",
+  "minecraft:torchflower_crop",
   "minecraft:pumpkin_stem",
   "minecraft:cocoa",
   "supplementaries:flax",

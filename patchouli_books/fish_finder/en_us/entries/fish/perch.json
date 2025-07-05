@@ -1,0 +1,18 @@
+{
+  "name": "Perch",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:perch",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 16$(li)\u00a70\ud83c\udf3c \u00a72Spring\u00a70 \u00a70\ud83c\udf42 \u00a74Autumn\u00a70 \u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: Fresh$(li)Weather: Any$(li)Time: Spring, Autumn (Day), Winter (Night)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:perch",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Don't birds do that."
+    }
+  ]
+}

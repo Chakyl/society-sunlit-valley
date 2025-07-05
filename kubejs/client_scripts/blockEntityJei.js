@@ -123,6 +123,7 @@ JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "preserving", "preserves_jar", "Preserving", 5, 3);
   registerBECategory(e, "bait_upgrading", "deluxe_worm_farm", "Bait Upgrading", 4, 0.5);
   registerBECategory(e, "cask_aging", "aging_cask", "Cask Aging", 1, 10);
+  registerBECategory(e, "artisanal_cheese_pressing", "cheese_press", "Artisanal Cheese Pressing", 1, 2);
   registerBECategory(e, "ancient_aging", "ancient_cask", "Ancient Aging", 1, 20);
   registerBECategory(e, "dehydrating", "dehydrator", "Dehydrating", 8, 1);
   registerBECategory(e, "fish_smoking", "fish_smoker", "Fish Smoking", 1, 2);
@@ -190,6 +191,9 @@ JEIAddedEvents.registerRecipes((e) => {
   });
   global.deluxeWormFarmRecipes.forEach((element) => {
     e.custom("society:bait_upgrading").add(element);
+  });
+  global.cheesePressRecipes.forEach((element) => {
+    e.custom("society:artisanal_cheese_pressing").add(element);
   });
   global.agingCaskRecipes.forEach((element) => {
     e.custom("society:cask_aging").add(element);

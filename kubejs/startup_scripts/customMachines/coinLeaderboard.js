@@ -44,7 +44,7 @@ global.updateLeaderboard = (block, server) => {
 
   // Display leaderboard name
   entity = block.createEntity("minecraft:armor_stand");
-  entity.setCustomName(`:coin: Leaderboard`);
+  entity.setCustomName(`● Leaderboard`);
   entity.setCustomNameVisible(true);
   entity.setX(x + 0.5);
   entity.setY(calcY);
@@ -64,7 +64,7 @@ global.updateLeaderboard = (block, server) => {
       `§6${balanceStr[0]} §7- §6${balanceStr[1].replace(
         /\B(?=(\d{3})+(?!\d))/g,
         ","
-      )} :coin:`
+      )} ●`
     );
     entity.setCustomNameVisible(true);
     entity.setInvisible(true);

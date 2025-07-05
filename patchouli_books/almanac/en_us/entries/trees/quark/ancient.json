@@ -1,0 +1,250 @@
+{
+    "name": "Ashen Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "quark:ancient_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)❆ §bWinter§r$(li)Size: 1x1$(br2)$(l)Notes$()$(li)Obtained from Sniffer."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Ashen Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   L   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "   L   ",
+                        "  LWL  ",
+                        "   L   ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "  LLL  ",
+                        " LLLLL ",
+                        " LLWLL ",
+                        " LLLLL ",
+                        "  LLL  ",
+                        "       "
+                    ],
+                    [
+                        "  LLL  ",
+                        " LLLLL ",
+                        "LLLLLLL",
+                        "LLLWLLL",
+                        "LLLLLLL",
+                        " LLLLL ",
+                        "  LLL  "
+                    ],
+                    [
+                        "       ",
+                        "  LLL  ",
+                        " LLLLL ",
+                        " LLWLL ",
+                        " LLLLL ",
+                        "  LLL  ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "  LLL  ",
+                        " LLLLL ",
+                        " LLWLL ",
+                        " LLLLL ",
+                        "  LLL  ",
+                        "       "
+                    ],
+                    [
+                        "  LLL  ",
+                        " LLLLL ",
+                        "LLLLLLL",
+                        "LLLWLLL",
+                        "LLLLLLL",
+                        " LLLLL ",
+                        "  LLL  "
+                    ],
+                    [
+                        "       ",
+                        "  LLL  ",
+                        " LLLLL ",
+                        " LLWLL ",
+                        " LLLLL ",
+                        "  LLL  ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "  LLL  ",
+                        " LLLLL ",
+                        " LLWLL ",
+                        " LLLLL ",
+                        "  LLL  ",
+                        "       "
+                    ],
+                    [
+                        "  LLL  ",
+                        " LLLLL ",
+                        "LLLLLLL",
+                        "LLLWLLL",
+                        "LLLLLLL",
+                        " LLLLL ",
+                        "  LLL  "
+                    ],
+                    [
+                        "       ",
+                        "  LLL  ",
+                        " LLLLL ",
+                        " LLWLL ",
+                        " LLLLL ",
+                        "  LLL  ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   W   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ],
+                    [
+                        "       ",
+                        "       ",
+                        "       ",
+                        "   0   ",
+                        "       ",
+                        "       ",
+                        "       "
+                    ]
+                ],
+                "mapping": {
+                    "0": "quark:ancient_log[axis=y]",
+                    "L": "quark:ancient_leaves",
+                    "W": "quark:ancient_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

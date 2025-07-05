@@ -1,0 +1,84 @@
+{
+    "name": "Dark Apple Tree 🍂",
+    "category": "patchouli:trees",
+    "icon": "vinery:apple_tree_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🍂 §4Autumn§r $(li)Price: :coin: 256$(li)Size: 1x1$(li)Grows:$(l:tree_crops/apple)Apples$(/l)$(br2)$(l)Notes$()$(li)Saplings bought from Market."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Apple Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  1  ",
+                        " 102 ",
+                        "  3  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " 131 ",
+                        " 1W2 ",
+                        " 322 ",
+                        "     "
+                    ],
+                    [
+                        " 1213",
+                        "21231",
+                        "32W11",
+                        "11231",
+                        "2311 "
+                    ],
+                    [
+                        "3312 ",
+                        "31231",
+                        "12W21",
+                        "12331",
+                        "12313"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vinery:apple_leaves[has_apples=false]",
+                    "1": "vinery:apple_leaves[has_apples=false]",
+                    "2": "vinery:apple_leaves[can_have_apples=true, has_apples=true]",
+                    "3": "vinery:apple_leaves[can_have_apples=true]",
+                    "W": "vinery:apple_log"
+                }
+            }
+        }
+    ]
+}

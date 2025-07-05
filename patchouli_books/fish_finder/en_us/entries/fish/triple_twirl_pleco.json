@@ -1,0 +1,18 @@
+{
+  "name": "Triple Twirl Pleco",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_triple_twirl_pleco",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 208$(li)\u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: Ocean$(li)Weather: Any$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:triple_twirl_pleco",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "There I go Triple Twirling again."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Eyelash Fish",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_eyelash",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 480$(li)\u00a70\ud83c\udf3c \u00a72Spring\u00a70$(li)Water: Fresh$(li)Weather: Clear$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:eyelash",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Angelina Fishlie?"
+    }
+  ]
+}

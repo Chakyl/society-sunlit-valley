@@ -1,0 +1,17 @@
+{
+  "name": "Phantom",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text", 
+      "text": "$(l)Locations:$()$(li)Biome: Umbra Barrens (Skull Cavern)$(br2)$(l)Risks:$()$(br)Flies and causes Hearthstone effect (teleports you to your spawn) when upset."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Phantom Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:phantom\"}",
+      "scale": 0.9
+    }
+  ]
+}

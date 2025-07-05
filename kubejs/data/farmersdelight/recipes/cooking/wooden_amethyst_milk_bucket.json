@@ -1,20 +1,22 @@
 {
-    "type": "farmersdelight:cooking",
-    "cookingtime": 200,
-    "experience": 2.0,
-    "ingredients": [
-        {
-            "item": "minecraft:amethyst_cluster"
-        },
-        {
-            "tag": "forge:salt"
-        }
-    ],
-    "container": {
-      "item": "meadow:wooden_bucket"
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_cluster"
     },
-    "result": {
-      "item": "meadow:wooden_amethyst_milk_bucket"
+    {
+      "tag": "society:large_milk"
+    },
+    {
+      "tag": "forge:salt"
     }
+  ],
+  "container": {
+    "item": "meadow:wooden_bucket"
+  },
+  "result": {
+    "item": "society:large_amethyst_milk"
   }
-  
+}

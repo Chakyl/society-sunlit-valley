@@ -100,10 +100,16 @@
         "maxCount": 4
       },
       {
-        "type": "trials:bogged",
+        "type": "minecraft:skeleton",
         "weight": 100,
         "minCount": 1,
         "maxCount": 4
+      },
+      {
+        "type": "species:cliff_hanger",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 20
       },
       {
         "type": "splendid_slimes:splendid_slime",

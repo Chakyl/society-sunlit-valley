@@ -1,0 +1,67 @@
+{
+    "name": "Birch Tree 🌼🍂",
+    "category": "patchouli:trees",
+    "icon": "minecraft:birch_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌼 §2Spring§r 🍂 §4Autumn$(li)Sapling Price: :coin: 8$(li)Size: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Oak Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  L  ",
+                        " L0L ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLL "
+                    ],
+                    [
+                        "LLLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:birch_leaves",
+                    "L": "minecraft:birch_leaves",
+                    "W": "minecraft:birch_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

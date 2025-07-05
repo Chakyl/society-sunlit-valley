@@ -51,7 +51,7 @@ global.handleAdditionalArtisanMachineOutputs = (
     }
   }
 };
-
+// TODO: make artisan hopper set tappers
 global.getArtisanMachineData = (block, upgraded, stages) => {
   let machineData = {
     recipes: [],
@@ -100,6 +100,14 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         recipes: global.agingCaskRecipes,
         stageCount: 10,
         soundType: "minecraft:block.wood.place",
+      };
+      break;
+    case "society:cheese_press":
+      machineData = {
+        recipes: global.cheesePressRecipes,
+        stageCount: 2,
+        outputMult: stages.has("rancher") ? 2 : 1,
+        soundType: "species:block.frozen_meat.place",
       };
       break;
     case "society:ancient_cask":
@@ -180,6 +188,7 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         recipes: global.tapperRecipes,
         stageCount: 1,
         soundType: "vinery:cabinet_close",
+        outputMult: stages.has("canadian_and_famous") ? 2 : 1,
       };
       break;
     case "society:charging_rod":
@@ -244,6 +253,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             recipes,
             stageCount,
             outputMult,
+            artisanMachine.id === "society:cheese_press",
             true
           );
         }

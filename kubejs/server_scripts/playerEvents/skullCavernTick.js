@@ -2,11 +2,7 @@ console.info("[SOCIETY] skullCavernTick.js loaded");
 
 PlayerEvents.tick((e) => {
   const player = e.player;
-  if (
-    !global.relaxedSkullCavern &&
-    player.age % 200 == 0 &&
-    player.level.dimension === "society:skull_cavern"
-  ) {
+  if (player.age % 200 == 0 && player.level.dimension === "society:skull_cavern") {
     const timeModulo = player.level.dayTime() % 24000;
     const server = player.getServer();
     // 11 PM
@@ -41,7 +37,10 @@ PlayerEvents.tick((e) => {
       );
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
       player.potionEffects.add("minecraft:darkness", 310, 0, true, false);
-      if (global.enableDeathDebt) global.handleFee(server, player, "skull_cavern");
+      if (global.enableDeathDebt && !player.stages.has("debt_caverns")) {
+        global.handleFee(server, player, "skull_cavern");
+        if (Math.random() <= 0.02) player.give("society:debt_caverns");
+      }
     }
   }
 });

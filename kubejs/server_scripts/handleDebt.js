@@ -17,6 +17,7 @@ Take care next time!"],title:"Hospital Note"}`
       );
     } else {
       global.handleFee(server, player, "death");
+      if (Math.random() <= 0.1) player.give("society:first_aid_guide");
     }
     player.potionEffects.add("minecraft:slowness", 1200, 0, false, true);
   }

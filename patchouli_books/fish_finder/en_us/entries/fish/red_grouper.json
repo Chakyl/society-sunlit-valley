@@ -1,0 +1,18 @@
+{
+  "name": "Red Grouper",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:red_grouper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 80$(li)\u00a70\ud83d\udd25 \u00a76Summer\u00a70$(li)Water: Ocean$(li)Weather: Any$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:red_grouper",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "MIA fish observer."
+    }
+  ]
+}

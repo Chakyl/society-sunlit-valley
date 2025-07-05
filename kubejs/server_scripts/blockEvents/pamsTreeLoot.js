@@ -28,7 +28,10 @@ BlockEvents.rightClicked(
     if (
       player.isHoldingInAnyHand("minecraft:bone_meal") ||
       player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
-      player.isHoldingInAnyHand("meadow:watering_can")
+      player.isHoldingInAnyHand("meadow:watering_can") ||
+      player.isHoldingInAnyHand("minecraft:shears") ||
+      player.isHoldingInAnyHand("botania:manasteel_shears") ||
+      player.isHoldingInAnyHand("botania:elementium_shears")
     )
       return;
     if (player.stages.has("tree_whisperer") && Number(block.properties.get("age")) == 7) {
@@ -41,6 +44,21 @@ BlockEvents.rightClicked(
       } else {
         block.popItem(`2x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`);
       }
+    }
+    if (
+      block.id == "pamhc2trees:pambanana" &&
+      player.stages.has("banana_karenina") &&
+      Number(block.properties.get("age")) == 7
+    ) {
+      server.runCommandSilent(
+        `puffish_skills experience add ${player.username} society:farming 40`
+      );
+      block.popItem(
+        `${player.stages.has("tree_whisperer") ? 5 : 3}x pamhc2trees:${fruitName.substring(
+          3,
+          fruitName.length
+        )}item`
+      );
     }
   }
 );

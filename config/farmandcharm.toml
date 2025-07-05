@@ -1,0 +1,155 @@
+
+[Blocks]
+	enableBonemealEffect = false
+	#Range: 1 ~ 16
+	fertilizedSoilRange = 5
+	#Range: 1 ~ 32
+	waterSprinklerRange = 8
+	enableRainGrowthEffect = false
+	#Range: 0.1 ~ 2.0
+	rainGrowthMultiplier = 0.5
+	#Range: 1 ~ 16
+	feedingTroughRange = 8
+
+[Items]
+	enableFertilizer = false
+	enableDogFoodTaming = true
+	enableHorseTaming = true
+	enableHorseEffects = true
+	enableChickenEffects = true
+	enableCatTamingChance = true
+
+	[Items.Nutrition]
+		#Range: > 0
+		oatPancakeNutrition = 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		oatPancakeSaturationMod = 0.6
+		#Range: > 0
+		roastedCornNutrition = 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		roastedCornSaturationMod = 0.5
+		#Range: > 0
+		potatoWithRoastMeatNutrition = 7
+		#Range: 0.0 ~ 1.7976931348623157E308
+		potatoWithRoastMeatSaturationMod = 0.7
+		#Range: > 0
+		bakedLambHamNutrition = 8
+		#Range: 0.0 ~ 1.7976931348623157E308
+		bakedLambHamSaturationMod = 0.9
+		#Range: > 0
+		farmersBreakfastNutrition = 12
+		#Range: 0.0 ~ 1.7976931348623157E308
+		farmersBreakfastSaturationMod = 1.2
+		#Range: > 0
+		stuffedChickenNutrition = 8
+		#Range: 0.0 ~ 1.7976931348623157E308
+		stuffedChickenSaturationMod = 0.8
+		#Range: > 0
+		stuffedRabbitNutrition = 9
+		#Range: 0.0 ~ 1.7976931348623157E308
+		stuffedRabbitSaturationMod = 0.9
+		#Range: > 0
+		grandmothersStrawberryCakeNutrition = 4
+		#Range: 0.0 ~ 1.7976931348623157E308
+		grandmothersStrawberryCakeSaturationMod = 0.7
+		#Range: > 0
+		farmersBreadNutrition = 6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		farmersBreadSaturationMod = 0.8
+		#Range: > 0
+		farmerSaladNutrition = 7
+		#Range: 0.0 ~ 1.7976931348623157E308
+		farmerSaladSaturationMod = 0.6
+		#Range: > 0
+		goulashNutrition = 8
+		#Range: 0.0 ~ 1.7976931348623157E308
+		goulashSaturationMod = 0.9
+		#Range: > 0
+		simpleTomatoSoupNutrition = 6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		simpleTomatoSoupSaturationMod = 0.6
+		#Range: > 0
+		barleySoupNutrition = 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		barleySoupSaturationMod = 0.8
+		#Range: > 0
+		onionSoupNutrition = 7
+		#Range: 0.0 ~ 1.7976931348623157E308
+		onionSoupSaturationMod = 0.6
+		#Range: > 0
+		potatoSoupNutrition = 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		potatoSoupSaturationMod = 0.6
+		#Range: > 0
+		pastaWithOnionSauceNutrition = 6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		pastaWithOnionSauceSaturationMod = 0.7
+		#Range: > 0
+		cornGritsNutrition = 6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cornGritsSaturationMod = 0.5
+		#Range: > 0
+		oatmealWithStrawberriesNutrition = 4
+		#Range: 0.0 ~ 1.7976931348623157E308
+		oatmealWithStrawberriesSaturationMod = 0.8
+		#Range: > 0
+		sausageWithOatPattyNutrition = 8
+		#Range: 0.0 ~ 1.7976931348623157E308
+		sausageWithOatPattySaturationMod = 0.9
+		#Range: > 0
+		lambWithCornNutrition = 8
+		#Range: 0.0 ~ 1.7976931348623157E308
+		lambWithCornSaturationMod = 0.8
+		#Range: > 0
+		beefPattyWithVegetablesNutrition = 6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		beefPattyWithVegetablesSaturationMod = 0.8
+		#Range: > 0
+		barleyPattiesWithPotatoesNutrition = 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		barleyPattiesWithPotatoesSaturationMod = 0.9
+		#Range: > 0
+		baconWithEggsNutrition = 6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		baconWithEggsSaturationMod = 0.7
+		#Range: > 0
+		chickenWrappedInBaconNutrition = 9
+		#Range: 0.0 ~ 1.7976931348623157E308
+		chickenWrappedInBaconSaturationMod = 0.9
+		#Range: > 0
+		cookedSalmonNutrition = 7
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cookedSalmonSaturationMod = 0.9
+		#Range: > 0
+		cookedCodNutrition = 7
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cookedCodSaturationMod = 0.9
+		#Range: > 0
+		roastedChickenNutrition = 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		roastedChickenSaturationMod = 0.8
+
+	[Items.Effects]
+		#Range: 10 ~ 600
+		chickenEffectTickInterval = 120
+		#Range: 0 ~ 100
+		chickenEffectEggChance = 20
+		#Range: 0 ~ 100
+		chickenEffectFeatherChance = 20
+		#Range: 10 ~ 200
+		feastEffectSatiationInterval = 40
+		#Range: 50 ~ 600
+		feastEffectSustenanceInterval = 200
+		#Range: 1 ~ 5
+		feastEffectHealAmount = 1
+		#Range: 50 ~ 600
+		sustenanceEffectInterval = 200
+		#Range: 1 ~ 5
+		sustenanceEffectHealAmount = 1
+		#Range: 1 ~ 20
+		sustenanceEffectFoodIncrement = 1
+		#Range: 10 ~ 200
+		satiationEffectInterval = 40
+		#Range: 1 ~ 5
+		satiationEffectHealAmount = 1
+

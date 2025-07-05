@@ -24,19 +24,20 @@ StartupEvents.registry("item", (e) => {
 
   e.create("society:tanuki_leaf")
     .texture("society:item/tanuki_leaf")
-    .displayName(Text.green(":leaves: Tanuki Leaf"));
+    .displayName(Text.green("♤ Tanuki Leaf"));
   e.create("society:architects_digest")
     .texture("society:item/architects_digest")
-    .displayName(":house: Architect's Digest");
+    .displayName("♧ Architect's Digest");
   e.create("society:fantasy_dust")
     .texture("society:item/fantasy_dust")
-    .displayName(Text.yellow(":crystal_ball: Fantasy Dust"));
+    .displayName(Text.yellow("♡ Fantasy Dust"));
   e.create("society:stone_hand").texture("society:item/stone_hand");
+  e.create("society:ancient_cog").texture("society:item/ancient_cog");
+  e.create("society:pink_matter").texture("society:item/pink_matter");
   e.create("society:broken_clock").texture("society:item/broken_clock");
   e.create("society:sea_biscut").texture("society:item/sea_biscut").displayName("Sea Biscuit");
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
-  e.create("society:ancient_cog").texture("society:item/ancient_cog");
   e.create("society:ancient_roe").texture("society:item/aged_roe");
   e.create("society:infinity_worm").texture("society:item/infinity_worm");
   e.create("society:frosted_tip").texture("society:item/frosted_tip");
@@ -96,6 +97,7 @@ StartupEvents.registry("item", (e) => {
       .displayName(`Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`);
   });
   e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
+  e.create("society:scavenged_food_bag").texture("wildernature:item/loot_bag");
   e.create("society:sap").texture("society:item/sap");
   e.create("society:rubber").texture("society:item/rubber");
   e.create("society:pine_tar").texture("society:item/pine_tar");
@@ -255,12 +257,29 @@ StartupEvents.registry("item", (e) => {
     "mining_monthly",
     "wet_weekly",
     "combat_quarterly",
+    "animal_fancy",
+    "banana_karenina",
+    "canadian_and_famous",
+    "first_aid_guide",
+    "intro_to_algorithms",
+    "slouching_towards_artistry",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/books/${item}`);
   });
+  e.create("society:debt_caverns")
+    .displayName("Debt: The First 5000 Caverns")
+    .texture("society:item/books/debt_caverns");
+  e.create("society:frogs_bounty_bazaar")
+    .displayName("Frog's Bounty Bazaar")
+    .texture("society:item/books/frogs_bounty_bazaar");
+  e.create("society:phenomenology_of_treasure")
+    .displayName("The Phenomenology of Treasure")
+    .texture("society:item/books/phenomenology_of_treasure");
   // Husbandry
   [
     "animal_feed",
+    "mana_feed",
+    "candied_animal_feed",
     "milk_pail",
     "friendship_necklace",
     "fine_wool",
@@ -272,6 +291,9 @@ StartupEvents.registry("item", (e) => {
     "large_duck_egg",
     "large_goose_egg",
     "large_turkey_egg",
+    "large_galliraptor_egg",
+    "penguin_egg",
+    "flamingo_egg",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });
@@ -298,19 +320,22 @@ StartupEvents.registry("item", (e) => {
     "duck",
     "goose",
     "turkey",
+    "galliraptor",
     "turtle",
     "parrot",
     "birt",
     "springling",
+    "penguin",
     "wraptor",
     "sniffer",
     "petrified",
+    "flamingo",
     "cruncher",
     "golden",
     "dragon",
   ];
 
-  const largeMayoEggs = ["duck", "goose", "turkey"];
+  const largeMayoEggs = ["duck", "goose", "turkey", "galliraptor"];
   mayoEggs.forEach((egg) => {
     e.create(`society:${egg}_mayonnaise`)
       .texture(`society:item/mayo/${egg}_mayonnaise`)
@@ -332,14 +357,20 @@ StartupEvents.registry("item", (e) => {
   [
     "milk",
     "large_milk",
-    "goat_milk",
+    "sheep_milk",
     "large_sheep_milk",
     "buffalo_milk",
     "large_buffalo_milk",
+    "goat_milk",
     "large_goat_milk",
-    "sheep_milk",
     "warped_milk",
     "large_warped_milk",
+    "tri_bull_milk",
+    "large_tri_bull_milk",
+    "amethyst_milk",
+    "large_amethyst_milk",
+    "grain_milk",
+    "large_grain_milk",
   ].forEach((item) => {
     e.create(`society:${item}`)
       .texture(`society:item/husbandry/${item}`)

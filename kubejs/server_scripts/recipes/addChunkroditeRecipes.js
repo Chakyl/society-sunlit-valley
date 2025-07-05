@@ -2,6 +2,7 @@ console.info("[SOCIETY] addChunkroditeRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
   const addCrushingRecipes = (item, value) => {
+    let chunkroderiteCount = Math.max(Math.round(value / 32) * 2, 1);
     e.custom({
       type: "create:milling",
       ingredients: [
@@ -55,7 +56,7 @@ ServerEvents.recipes((e) => {
     processingTime: 64,
     results: [
       {
-        count: 8,
+        count: 4,
         item: "moreminecarts:chunkrodite",
       },
     ],
@@ -67,7 +68,7 @@ ServerEvents.recipes((e) => {
     },
     recipe_type: "STONE",
     result: {
-      count: 8,
+      count: 4,
       item: "moreminecarts:chunkrodite",
     },
   });
@@ -81,7 +82,7 @@ ServerEvents.recipes((e) => {
     processingTime: 1024,
     results: [
       {
-        count: 8,
+        count: 4,
         item: "moreminecarts:chunkrodite_block",
       },
     ],
@@ -93,7 +94,7 @@ ServerEvents.recipes((e) => {
     },
     recipe_type: "STONE",
     result: {
-      count: 8,
+      count: 4,
       item: "moreminecarts:chunkrodite_block",
     },
   });
@@ -107,7 +108,7 @@ ServerEvents.recipes((e) => {
     processingTime: 20000,
     results: [
       {
-        count: 32,
+        count: 16,
         item: "moreminecarts:chunkrodite_block",
       },
     ],
@@ -119,7 +120,7 @@ ServerEvents.recipes((e) => {
     },
     recipe_type: "STONE",
     result: {
-      count: 32,
+      count: 16,
       item: "moreminecarts:chunkrodite_block",
     },
   });

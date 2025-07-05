@@ -51,7 +51,7 @@ ServerEvents.commandRegistry((event) => {
     if (betValue < raceData.bets[0].bet) {
       player.tell(
         Text.red(
-          `You must bet at least §6${raceData.bets[0].bet} :coin:`
+          `You must bet at least §6${raceData.bets[0].bet} ●`
         )
       );
       return -1;
@@ -67,7 +67,7 @@ ServerEvents.commandRegistry((event) => {
       }
     }
     player.offHandItem = "minecraft:air";
-    server.tell(Text.gray(`§6${player.username}§r joined the pig race with §6${global.formatPrice(betValue)}§r :coin: on §${global.getPigColor(betPigName)}${betPigName}§r!`))
+    server.tell(Text.gray(`§6${player.username}§r joined the pig race with §6${global.formatPrice(betValue)}§r ● on §${global.getPigColor(betPigName)}${betPigName}§r!`))
     
     raceData.bets.push({ player: player.username, bet: betValue, betPig: betPigName });
     return 1;

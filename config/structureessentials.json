@@ -27,17 +27,32 @@
     "desc:": "Adjusts the structure spacing (average spawn distance) and separation (minimum spawn distance). Increasing the value makes structures spawn farther apart, while decreasing it makes them spawn closer together. Vanilla Default: 1.0",
     "spacingSeparationModifier": 1.0
   },
+  "logDuplicatedSalt": {
+    "desc:": "Structure sets use a salt value to determine the randomness of their placement. Duplicated use of the same salt value can cause structures to spawn on the same place, this config enables logging duplicated salt values. Default: true",
+    "logDuplicatedSalt": true
+  },
+  "minimumStructureDistance": {
+    "desc:": "Set a minimum distance in blocks between structures generated which prevents structure overlaps(not 100% but close). Not recommended to use higher values, as that may strain the worldgen due to repeated structure retries and can prevent surfaces structures when there is some in a cave below. If you want structures more spaced out than this use the spacing/seperation modifier. Default: 32 blocks, range 16-512",
+    "minimumStructureDistance": 32,
+    "enabled": false,
+    "logOverlaps": false
+  },
   "autoBiomeCompat": {
-    "desc:": "Automatically analyzes present biomes and adjust structure spawning to include fitting ones. Default: true",
-    "autoBiomeCompat": true
-  },
-  "autoBiomeCompatLogging": {
-    "desc:": "Enables logging for the autoBiomeCompat feature. Default: false",
-    "autoBiomeCompatLogging": false
-  },
-  "autoBiomeCompatStrictness": {
-    "desc:": "Sets a modifier for how strict the autoBiomeCompat is, lower allows adding less similar biomes to be added. E.g. 0.5 decreases the similarity requirements by 50% . Default: 1.0",
-    "autoBiomeCompatStrictness": 1.0
+    "desc:": "Automatically analyzes present biomes and adjust structure spawning to include fitting ones, Note that this may also spawn structures in undesired biomes, check the logging and adjust the strictness up/down to achieve a good result. Default: false",
+    "enableBiomeCompat": false,
+    "enableLogging": true,
+    "strictness": {
+      "desc:": "Sets a modifier for how strict the autoBiomeCompat is, lower allows adding less similar biomes to be added. E.g. 0.5 decreases the similarity requirements by 50% . Default: 1.2",
+      "autoBiomeCompatStrictness": 1.2
+    },
+    "dimensionWhitelist": {
+      "desc:": "List of allowed dimensions for automatic structure compat, by default only vanilla dimensions",
+      "dimensions": [
+        "minecraft:overworld",
+        "minecraft:the_nether",
+        "minecraft:the_end"
+      ]
+    }
   },
   "warnMissingRegistryEntry": {
     "desc:": "Prevents crashes due to missing registry entries (e.g., changes in mod structure IDs) by converting them into log error messages instead. Default: true",

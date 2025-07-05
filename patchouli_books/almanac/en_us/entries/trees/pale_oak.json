@@ -1,0 +1,105 @@
+{
+    "name": "Pale Oak Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "vanillabackport:pale_oak_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌐 §5Year-round§r $(li)Size: 2x2"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Pale Oak Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "        ",
+                        "   LL   ",
+                        "  LLLL  ",
+                        " LLLLLL ",
+                        " LLLLLL ",
+                        "  LLLL  ",
+                        "   LL   ",
+                        "        "
+                    ],
+                    [
+                        " LLLLL  ",
+                        "LLLLLLLL",
+                        "LLLLLLLL",
+                        "LLLWWLLL",
+                        "LLLWWLLL",
+                        "LLLLLLLL",
+                        " LLLLL  ",
+                        " LLLLL  "
+                    ],
+                    [
+                        " LLLLLL ",
+                        "LLLLLLLL",
+                        "LLLWWLWL",
+                        "LLLLWWWL",
+                        "LLLWWWLL",
+                        " LLLLWL ",
+                        " LLLLLL ",
+                        "  LLLL  "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "   WW W ",
+                        "    WWW ",
+                        "   WWW  ",
+                        "     W  ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "   WW W ",
+                        "    WW  ",
+                        "   WWW  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "      W ",
+                        "    WW  ",
+                        "    WW  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "    WW  ",
+                        "    WW  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "    WW  ",
+                        "    0W  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vanillabackport:pale_oak_log[axis=y]",
+                    "L": "vanillabackport:pale_oak_leaves",
+                    "W": "vanillabackport:pale_oak_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Blazefish",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:blazefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 408$(li)Dimension: Nether$(li)Biome: Any"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:blazefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "It's kinda like if Uranium but if it was fire."
+    }
+  ]
+}

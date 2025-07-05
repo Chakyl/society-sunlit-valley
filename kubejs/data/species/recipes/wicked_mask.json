@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "#M#", "###"],
+  "key": {
+    "#": {
+      "item": "botania:mana_string"
+    },
+    "M": {
+      "item": "species:wicked_wax"
+    }
+  },
+  "result": {
+    "item": "species:wicked_mask",
+    "count": 1
+  }
+}

@@ -104,7 +104,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.gray("Smokes a fish over a long period of time"));
       item.tooltip(Text.green("Preserves input quality"));
       item.modelJson({
-        parent: "society:block/fish_smoker_off",
+        parent: "society:block/fish_smoker/fish_smoker_off",
       });
     })
     .defaultState((state) => {
@@ -174,10 +174,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.fishSmokerRecipes, 2);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/fish_smoker_particle" },
-      },
-    ].concat(getCardinalMultipartJson("fish_smoker")),
+    multipart: getCardinalMultipartJson("fish_smoker", true),
   };
 });

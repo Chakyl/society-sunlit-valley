@@ -38,7 +38,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Turns junk into usable resources"));
       item.modelJson({
-        parent: "society:block/recycling_machine_off",
+        parent: "society:block/recycling_machine/recycling_machine_off",
       });
     })
     .defaultState((state) => {
@@ -70,14 +70,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.recyclingMachineRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/recycling_machine_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("recycling_machine")),
+    multipart: getCardinalMultipartJson("recycling_machine"),
   };
 });

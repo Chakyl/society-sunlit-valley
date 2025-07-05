@@ -1,0 +1,17 @@
+{
+  "name": "Shulking",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:shulking\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Structure: Umbra Barrens Slime Spawners (Skull Cavern)$(br2)$(l)Risks:$()$(br)Causes Levitation effect when upset and teleports to nearby food."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Shulking Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:shulking\"}",
+      "scale": 0.9
+    }
+  ]
+}

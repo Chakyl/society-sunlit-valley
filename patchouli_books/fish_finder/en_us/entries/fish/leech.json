@@ -1,0 +1,18 @@
+{
+  "name": "Leech",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:leech",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 136$(li)\uD83D\uDD25 §6Summer §0$(li)Water: Fresh$(li)Weather: Any$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:brown_shrooma",
+      "scale": 0.0,
+      "rotate": true,
+      "text": "Free money in summer!!"
+    }
+  ]
+}

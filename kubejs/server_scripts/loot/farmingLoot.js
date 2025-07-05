@@ -1,7 +1,5 @@
 console.info("[SOCIETY] farmingLoot.js loaded");
-const LevelData = Java.loadClass(
-  "de.cadentem.quality_food.capability.LevelData"
-);
+const LevelData = Java.loadClass("de.cadentem.quality_food.capability.LevelData");
 const qualityToInt = (quality) => {
   switch (quality) {
     case "DIAMOND":
@@ -84,7 +82,7 @@ const cropList = [
   "society:sweet_potato",
   "society:onion",
 ];
-
+const reeseedableCops = ["herbalbrews:yerba_mate","herbalbrews:rooibos","herbalbrews:coffee"];
 const checkMaxGrown = (destroyedBlock) => {
   return destroyedBlock.blockState.block.isMaxAge(destroyedBlock.blockState);
 };
@@ -93,32 +91,17 @@ const checkMaxGrownWithChance = (destroyedBlock, chance) => {
   return chance > Math.random() && checkMaxGrown(destroyedBlock);
 };
 const getFertilizer = (crop) => {
-  const block = crop
-    .getLevel()
-    .getBlock(crop.getPos().below().offset(-1, 0, 0));
-  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
-    return 1;
-  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland"))
-    return 2;
-  if (
-    block.hasTag(
-      "dew_drop_farmland_growth:pristine_quality_fertilized_farmland"
-    )
-  )
-    return 3;
+  const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0));
+  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland")) return 1;
+  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland")) return 2;
+  if (block.hasTag("dew_drop_farmland_growth:pristine_quality_fertilized_farmland")) return 3;
   return 0;
 };
 const getCropQuality = (crop, fertilizer) => {
-  const qualityName = LevelData.get(
-    crop.getLevel(),
-    crop.getPos().offset(-1, 0, 0),
-    false
-  );
+  const qualityName = LevelData.get(crop.getLevel(), crop.getPos().offset(-1, 0, 0), false);
   const seedQuality = qualityToInt(qualityName);
   const goldChance =
-    0.2 * ((seedQuality * 4.6) / 10) +
-    0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
-    0.01;
+    0.2 * ((seedQuality * 4.6) / 10) + 0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) + 0.01;
 
   if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
   if (Math.random() < goldChance) return 2;
@@ -130,8 +113,7 @@ LootJS.modifiers((e) => {
     c.forEachLoot((item) => {
       const fertilizer = getFertilizer(c.destroyedBlock);
       const quality = getCropQuality(c.destroyedBlock, fertilizer);
-      if (quality > 0)
-        item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
+      if (quality > 0) item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
     });
   });
   e.addBlockLootModifier(cropList)
@@ -166,7 +148,7 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier(cropList)
     .hasAnyStage("crop_collector")
     .modifyLoot(Ingredient.all, (itemStack) => {
-      itemStack.setCount(itemStack.getCount() * 2);
+      if (!reeseedableCops.includes(itemStack.id)) itemStack.setCount(itemStack.getCount() * 2);
       return itemStack;
     });
 });

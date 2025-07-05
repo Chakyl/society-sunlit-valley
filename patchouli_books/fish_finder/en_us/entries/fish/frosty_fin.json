@@ -1,0 +1,18 @@
+{
+  "name": "Frosty Fin",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_snowflake",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 96$(li)\u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: Fresh$(li)Weather: Rain Snow$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:snowflaketail",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "It's known as the blahaj blast of fish."
+    }
+  ]
+}

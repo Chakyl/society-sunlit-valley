@@ -1,0 +1,18 @@
+{
+  "name": "Duality Dasmelfish",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_duality_damselfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 448$(li)\u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: River$(li)Weather: Clear$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:duality_damselfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "A bit contradictory, you fish."
+    }
+  ]
+}

@@ -31,11 +31,12 @@ StartupEvents.registry("block", (event) => {
           .filter((entity) => global.checkEntityTag(entity, "society:milkable_animal"));
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
-          let interactionCooldown = global.animalInteractionCooldown;
           if (mana >= MANA_PER_MILK) {
-            interactionCooldown *= global.getMilkingTimeMult(animal.type);
+          const day = Number((level.dayTime() / 24000).toFixed(0));
+           // TODO: Milk mult
+            // interactionCooldown *= global.getMilkingTimeMult(animal.type);
 
-            let milkItem = global.getMilk(level, animal, data, undefined, interactionCooldown);
+            let milkItem = global.getMilk(animal, data, undefined, day);
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);
               if (success) {

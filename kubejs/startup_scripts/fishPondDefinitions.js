@@ -531,7 +531,7 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "society:aged_amethyst_cheese_block", count: 1 },
-          { item: "meadow:wooden_amethyst_milk_bucket", count: 1 },
+          { item: "society:large_amethyst_milk", count: 4 },
           { item: "meadow:piece_of_amethyst_cheese", count: 1 },
         ],
       },

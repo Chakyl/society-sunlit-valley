@@ -36,6 +36,12 @@
         "weight": 40
       },
       {
+        "type": "species:wicked",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 40
+      },
+      {
         "type": "minecraft:wither_skeleton",
         "weight": 80,
         "minCount": 1,
@@ -85,10 +91,7 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
-    [
-      "society:blackstone_caves/blackstone_ladder",
-      "society:blackstone_caves/blackstone_rock"
-    ],
+    ["society:blackstone_caves/blackstone_ladder", "society:blackstone_caves/blackstone_rock"],
     ["minecraft:lake_lava_underground"],
     ["minecraft:monster_room", "minecraft:monster_room_deep"],
     [],

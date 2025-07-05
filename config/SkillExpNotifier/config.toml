@@ -35,8 +35,10 @@
 	#Vertical pixel offset for the icon
 	#Range: 0 ~ 100
 	"Icon Y Offset" = 2
-	#Enable The Built-In File Watcher, Checks If This File Is Modified And Reloads The Config(Bypass Forge Mod Reloading
+	#Enable The Built-In File Watcher, Checks If This File Is Modified And Reloads The Config(Bypass Forge Reloading)
 	"Enable File Watcher" = false
+	#Completely Disable The Client Side Functionality
+	"Disable Toasts" = false
 
 ["Text Settings"]
 	#The Title Part To Display

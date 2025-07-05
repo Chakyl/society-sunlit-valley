@@ -61,6 +61,12 @@ ServerEvents.recipes((e) => {
     "minecraft:netherite_sword",
     "society:prismatic_shard"
   );
+  e.smithing(
+    "society:meowmageddon",
+    "simplehats:nekoears",
+    "society:galaxy_sword",
+    "society:prismatic_shard"
+  );
 
   const manasteelUpgrades = (type) => {
     e.smithing(
@@ -139,9 +145,7 @@ ServerEvents.recipes((e) => {
         tier === "netherite"
           ? "minecraft:netherite_upgrade_smithing_template"
           : `society:${tier}_upgrade_smithing_template`,
-        `farmersdelight:${
-          tier === "diamond" ? "golden" : knifeTiers[index - 1]
-        }_knife`,
+        `farmersdelight:${tier === "diamond" ? "golden" : knifeTiers[index - 1]}_knife`,
         `minecraft:${tier}${tier === "diamond" ? "" : "_ingot"}`
       );
     }
@@ -186,7 +190,7 @@ ServerEvents.recipes((e) => {
   const upgradeWool = (type, mappedType) => {
     e.smithing(
       `minecraft:chainmail_${mappedType}`,
-      "society:iron_upgrade_smithing_template",
+      "numismatics:cog",
       `sewingkit:wool_${type}`,
       "minecraft:chain"
     );

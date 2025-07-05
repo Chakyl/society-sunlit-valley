@@ -1,0 +1,18 @@
+{
+  "name": "Beaked Herring",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_beaked_herring",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 32$(li)\u00a70\ud83c\udf3c \u00a72Spring\u00a70$(li)Water: Fresh$(li)Weather: Any$(li)Time: Day"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:beaked_herring",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "I don't really see any beak?"
+    }
+  ]
+}

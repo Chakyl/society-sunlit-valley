@@ -8,7 +8,7 @@ ItemEvents.tooltip((tooltip) => {
     } else {
       value = number;
     }
-    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return global.formatPrice(value);
   };
   const calculateCost = (coin, count, stackSize) => {
     let value = 0;
@@ -48,13 +48,13 @@ ItemEvents.tooltip((tooltip) => {
   const getAttributeStr = (attribute) => {
     switch (attribute) {
       case "crop":
-        return ":corn: Farmer product";
+        return "🔱 §6Farmer product";
       case "wood":
-        return ":art: Artisan product";
+        return "✎ §6Artisan product";
       case "gem":
-        return ":gem: Geologist product";
+        return "🎣 §6Geologist product";
       case "meat":
-        return ":crossed_swords: Adventurer product";
+        return "🗡 §6Adventurer product";
       default:
         console.log(`Invalid attribute`);
     }
@@ -74,12 +74,12 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`${calculateCost(coin.split(":")[1], 1, item.count)} :coin:`),
+          Text.white(`${calculateCost(coin.split(":")[1], 1, item.count)} ●`),
           Text.gray(" Stack value"),
         ]);
       } else {
         text.add(1, [
-          Text.white(`${calculateCost(coin.split(":")[1], 1, 1)} :coin:`),
+          Text.white(`${calculateCost(coin.split(":")[1], 1, 1)} ●`),
           Text.darkGray(" Hold ["),
           Text.gray("Shift"),
           Text.darkGray("]"),
@@ -149,7 +149,40 @@ ItemEvents.tooltip((tooltip) => {
   ];
   artifactTooltips.forEach((artifact) => {
     tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
-    tooltip.add(artifact.item, Text.gray(":funeral_urn: Artifact"));
+    tooltip.add(artifact.item, Text.gray("🪣 Artifact"));
+  });
+  [
+    {
+      item: "society:animal_fancy",
+      description: "Increases affection gained from petting farm animals.",
+    },
+    { item: "society:banana_karenina", description: "Doubles Banana Tree output." },
+    {
+      item: "society:canadian_and_famous",
+      description: "Tappers output double. Doesn't affect Auto-Tappers.",
+    },
+    { item: "society:first_aid_guide", description: "Halves the maximum fee and debt from death." },
+    {
+      item: "society:intro_to_algorithms",
+      description: "Lead ore no longer causes Brain Damage clouds.",
+    },
+    {
+      item: "society:slouching_towards_artistry",
+      description:
+        "Filling an artisan machine progresses it by 1 day if the production time is greater than 1.",
+    },
+    {
+      item: "society:debt_caverns",
+      description: "Fainting in the Skull Cavern no longer costs a fee or adds to debt.",
+    },
+    {
+      item: "society:phenomenology_of_treasure",
+      description: "Artifacts and Relics are worth 200% more",
+    },
+    { item: "society:frogs_bounty_bazaar", description: "Prize Tickets give double the prizes." },
+  ].forEach((book) => {
+    tooltip.add(book.item, Text.gray(book.description));
+    tooltip.add(book.item, Text.green("Right click to learn this skill!"));
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
@@ -185,59 +218,63 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Shift + Right click to bulk purchase"),
   ]);
   global.lootFurniture.forEach((item) => {
-    tooltip.add(item, Text.gold(":chair: Rare furniture drop"));
+    tooltip.add(item, "♢ §6Rare furniture drop");
     if (!item.includes("tanuki")) {
-      tooltip.add(item, Text.white(":house: Modern collection"));
+      tooltip.add(item, Text.white("♧ Modern collection"));
     } else {
-      tooltip.add(item, Text.green(":leaves: Tanuki collection"));
+      tooltip.add(item, "♤ §aTanuki collection");
     }
   });
-  tooltip.add("society:architects_digest", Text.gray("Used to craft :house: §fModern§r furniture"));
-  tooltip.add("society:tanuki_leaf", Text.gray("Used to craft :leaves: §aTanuki§r furniture"));
-  tooltip.add(/fantasyfurniture/, Text.yellow(":crystal_ball: Fantasy collection"));
-  tooltip.add("society:fantasy_dust", Text.gray("Used to craft :leaves: §eFantasy§r furniture"));
+  tooltip.add("society:architects_digest", Text.gray("Used to craft ♧ §fModern§r furniture"));
+  tooltip.add("society:tanuki_leaf", Text.gray("Used to craft ♤ §aTanuki§r furniture"));
+  tooltip.add(/fantasyfurniture/, "♡ §eFantasy collection");
+  tooltip.add("society:fantasy_dust", Text.gray("Used to craft ♡ §eFantasy§r furniture"));
   // Hammers
   tooltip.add("justhammers:small_core", Text.gray("Crafts hammers that mine a 3x3x1 area"));
   tooltip.add("justhammers:impact_core", Text.gray("Crafts hammers that mine a 3x3x3 area"));
   // Upgrades:
   tooltip.add(
     "society:ancient_cog",
-    Text.green("Use on §2Seed Maker§a to give it a 5% chance of producing an Ancient Fruit Seed")
+    Text.green("Use on a §2Seed Maker§a to give it a 5% chance of producing an Ancient Fruit Seed")
+  );
+  tooltip.add(
+    "society:pink_matter",
+    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels")
   );
   tooltip.add(
     "society:stone_hand",
-    Text.green("Use on §2Preserves Jar§a to decrease input amount by 2")
+    Text.green("Use on a §2Preserves Jar§a to decrease input amount by 2")
   );
   tooltip.add(
     "society:broken_clock",
-    Text.green("Use on §2Aging Cask§a to decrease aging time by half")
+    Text.green("Use on an §2Aging Cask§a to decrease aging time by half")
   );
   tooltip.add(
     "society:sea_biscut",
-    Text.green("Use on §2Fish Pond§a to double chance of non-Roe items")
+    Text.green("Use on a §2Fish Pond§a to double chance of non-Roe items")
   );
   tooltip.add(
     "society:black_opal",
-    Text.green("Use on §2Crystalarium§a to give it a 10% chance of producing pristine items")
+    Text.green("Use on a §2Crystalarium§a to give it a 10% chance of producing pristine items")
   );
   tooltip.add(
     "society:tiny_gnome",
-    Text.green("Use on §2Loom§a to give it a 25% chance of producing rare furniture")
+    Text.green("Use on a §2Loom§a to give it a 25% chance of producing rare furniture")
   );
-  tooltip.add("society:ancient_roe", Text.green("Use on §2Fish Smoker§a to double output"));
+  tooltip.add("society:ancient_roe", Text.green("Use on a §2Fish Smoker§a to double output"));
   tooltip.add(
     "society:frosted_tip",
-    Text.green("Use on §2Charging Rod§a to work and triple output in winter")
+    Text.green("Use on a §2Charging Rod§a to work and triple output in winter")
   );
   tooltip.add(
     "society:infinity_worm",
-    Text.green("Use on §2Deluxe Worm Farm§a to let it work without inputs")
+    Text.green("Use on a §2Deluxe Worm Farm§a to let it work without inputs")
   );
   tooltip.add(
     "society:inserter",
-    Text.green("Use on §2Ancient Cask§a to let it process 4 items at a time")
+    Text.green("Use on an §2Ancient Cask§a to let it process 4 items at a time")
   );
-  tooltip.add("society:cordycep", Text.green("Use on §2Dehydrator§a to double mushroom output"));
+  tooltip.add("society:cordycep", Text.green("Use on a §2Dehydrator§a to double mushroom output"));
   tooltip.add(
     ["vintagedelight:gearo_berry", "minecraft:sweet_berries"],
     Text.gray("Will only grow when planted on farmland")
@@ -355,6 +392,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:seed_maker",
       "society:tapper",
       "society:recycling_machine",
+      "society:cheese_press",
     ],
     Text.gold(":gear: Artisan Machine")
   );
@@ -388,6 +426,16 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Feeds farm animals manually or using Feeding Troughs")
   );
   tooltip.add(
+    "society:candied_animal_feed",
+    Text.gray("Feeds farm animals manually or using Feeding Troughs")
+  );
+  tooltip.add("society:candied_animal_feed", Text.green("Increases affection by a full heart"));
+  tooltip.add(
+    "society:mana_feed",
+    Text.gray("Feeds farm animals manually or using Feeding Troughs")
+  );
+  tooltip.add("society:mana_feed", Text.green("Increases affection more than basic Animal Feed"));
+  tooltip.add(
     "society:animal_feed_sack",
     Text.red("Too large to feed farm animals manually or using Feeding Troughs")
   );
@@ -409,10 +457,10 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Displays certain Farmer's Delight foods as blocks")
   );
   tooltip.add("liltractor:liltractor", Text.gray("Dyeable"));
-  tooltip.add("society:prize_ticket", Text.gray("Use on a Prize Machine for something good!"));
+  tooltip.add("society:prize_ticket", Text.gray("Use on an a Prize Machine for something good!"));
   tooltip.add(
     "splendid_slimes:slime_ticket",
-    Text.gray("Use on a Splendid Slime to learn their primary breed's favorite food.")
+    Text.gray("Use on an a Splendid Slime to learn their primary breed's favorite food.")
   );
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
@@ -424,16 +472,13 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("Will break if wielded by one without the Dragonslayer skill")
   );
   tooltip.add("society:kinetic_blueprint", Text.gray("Not consumed in crafting"));
-  tooltip.add(
-    "botania:apothecary_default",
-    Text.gold(":classical_building: Abandoned Farm reward")
-  );
+  tooltip.add("botania:apothecary_default", "🏹 §6Abandoned Farm reward");
   "society:kinetic_blueprint",
     Text.gray("Given for free for completing the Boiler Room chapter in the questbook.");
   tooltip.add("society:kinetic_blueprint", Text.green("Not consumed in crafting"));
-  tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
-  tooltip.add("society:skull_cavern_teleporter", Text.gold(":classical_building: Vault reward"));
-  tooltip.add("relics:magic_mirror", Text.gold(":classical_building: Crafts Room reward"));
+  tooltip.add("society:kinetic_blueprint", "🏹 §6Boiler Room reward");
+  tooltip.add("society:skull_cavern_teleporter", "🏹 §6Vault reward");
+  tooltip.add("relics:magic_mirror", "🏹 §6Crafts Room reward");
   tooltip.add(
     "moreminecarts:chiseled_organic_glass",
     Text.gray("Crops underneath grow in any season")
@@ -445,6 +490,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("vinery:dark_cherry_sapling", Text.green(" Spring"));
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
   tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
+  tooltip.add("society:scavenged_food_bag", Text.gray("Right click to open"));
   tooltip.add(
     "gag:time_sand_pouch",
     Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")
@@ -456,15 +502,20 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "moreminecarts:chunk_loader",
-    Text.green("Loads a 3x3 chunk area using Chunkroderite and other items")
+    Text.green("Loads a 5x5 chunk area using Chunkroderite and other items")
   );
   tooltip.add("moreminecarts:chunk_loader", Text.red("Must be restarted when server restarts"));
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
-  tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));  
-    tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
+  tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
+  tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
     if (tooltip.shift) {
-      text.add(1, [Text.white("Fertile Seasons:"), Text.green(" Spring,"), Text.yellow(" Summer,"), Text.gold(" Autumn")]);
+      text.add(1, [
+        Text.white("Fertile Seasons:"),
+        Text.green(" Spring,"),
+        Text.yellow(" Summer,"),
+        Text.gold(" Autumn"),
+      ]);
       text.add(1, []);
     } else {
       text.add(1, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("]")]);
@@ -494,6 +545,7 @@ ItemEvents.tooltip((tooltip) => {
   // Prize Machine
   tooltip.add(
     [
+      "minecraft:eye_armor_trim_smithing_template",
       "pamhc2trees:hazelnut_sapling",
       "pamhc2trees:pawpaw_sapling",
       "pamhc2trees:pawpaw_sapling",
@@ -501,7 +553,7 @@ ItemEvents.tooltip((tooltip) => {
       "etcetera:eggple",
       "etcetera:golden_eggple",
     ],
-    Text.gold(":ticket: Prize Machine reward")
+    "🍖 §6Prize Machine reward"
   );
   const workstation = [
     { villager: "Bard", block: "minecraft:note_block" },
@@ -534,13 +586,13 @@ ItemEvents.tooltip((tooltip) => {
       }
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`${formatNumber(value * item.count, quality)} :coin:`),
+          Text.white(`${formatNumber(value * item.count, quality)} ●`),
           Text.gray(" Stack value"),
         ]);
-        text.add(2, [Text.gold(getAttributeStr(attribute))]);
+        text.add(2, [getAttributeStr(attribute)]);
       } else {
         text.add(1, [
-          Text.white(`${formatNumber(value, quality)} :coin:`),
+          Text.white(`${formatNumber(value, quality)} ●`),
           Text.darkGray(" Hold ["),
           Text.gray("Shift"),
           Text.darkGray("]"),
@@ -560,13 +612,13 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`${formatNumber(price * item.count, 0)} :coin:`),
+        Text.white(`${formatNumber(price * item.count, 0)} ●`),
         Text.gray(" Stack value"),
       ]);
-      text.add(2, [Text.gold(getAttributeStr("meat"))]);
+      text.add(2, [getAttributeStr("meat")]);
     } else {
       text.add(1, [
-        Text.white(`${formatNumber(price, 0)} :coin:`),
+        Text.white(`${formatNumber(price, 0)} ●`),
         Text.darkGray(" Hold ["),
         Text.gray("Shift"),
         Text.darkGray("]"),
@@ -585,13 +637,13 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`${formatNumber(price * item.count, 0)} :coin:`),
+        Text.white(`${formatNumber(price * item.count, 0)} ●`),
         Text.gray(" Stack value"),
       ]);
-      text.add(2, [Text.gold(getAttributeStr("meat"))]);
+      text.add(2, [getAttributeStr("meat")]);
     } else {
       text.add(1, [
-        Text.white(`${formatNumber(price, 0)} :coin:`),
+        Text.white(`${formatNumber(price, 0)} ●`),
         Text.darkGray(" Hold ["),
         Text.gray("Shift"),
         Text.darkGray("]"),
@@ -599,7 +651,6 @@ ItemEvents.tooltip((tooltip) => {
     }
   });
 
-  Item.of("splendid_slimes:plort", '{plort:{id:"splendid_slimes:slimy"}}');
   // Ore
   global.ore.forEach((item) => {
     addPriceTooltip(item, "gem");
@@ -612,7 +663,7 @@ ItemEvents.tooltip((tooltip) => {
   global.geodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:froggy_helm") {
       addPriceTooltip(geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.gray(":rock: Mineral"));
+      tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
       addPriceTooltip(geodeItem, "meat");
     }
@@ -620,7 +671,7 @@ ItemEvents.tooltip((tooltip) => {
   global.frozenGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_drum") {
       addPriceTooltip(geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.gray(":rock: Mineral"));
+      tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
       addPriceTooltip(geodeItem, "meat");
     }
@@ -628,7 +679,7 @@ ItemEvents.tooltip((tooltip) => {
   global.magmaGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_gadget") {
       addPriceTooltip(geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.gray(":rock: Mineral"));
+      tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
       addPriceTooltip(geodeItem, "meat");
     }
@@ -636,7 +687,7 @@ ItemEvents.tooltip((tooltip) => {
   // Gem
   global.gems.forEach((gem) => {
     addPriceTooltip(gem, "gem");
-    tooltip.add(gem.item, Text.gray(":gem: Gem"));
+    tooltip.add(gem.item, "🎣 §7Gem");
   });
   [
     "society:sparkstone",
@@ -647,7 +698,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:prismatic_shard",
     "minecraft:prismarine_crystals",
   ].forEach((gem) => {
-    tooltip.add(gem, Text.gray(":gem: Gem"));
+    tooltip.add(gem, "🎣 §7Gem");
   });
   global.miscGeologist.forEach((gem) => {
     addPriceTooltip(gem, "gem");
@@ -832,6 +883,25 @@ ItemEvents.tooltip((tooltip) => {
       "society:dewy_star",
     ],
     Text.red("Not placeable in Wine Racks")
+  );
+  tooltip.add(
+    [
+      "fantasyfurniture:nordic/bed_single",
+      "fantasyfurniture:nordic/bed_double",
+      "fantasyfurniture:dunmer/bed_single",
+      "fantasyfurniture:dunmer/bed_double",
+      "fantasyfurniture:venthyr/bed_single",
+      "fantasyfurniture:venthyr/bed_double",
+      "fantasyfurniture:bone/skeleton/bed_single",
+      "fantasyfurniture:bone/skeleton/bed_double",
+      "fantasyfurniture:bone/wither/bed_single",
+      "fantasyfurniture:bone/wither/bed_double",
+      "fantasyfurniture:royal/bed_single",
+      "fantasyfurniture:royal/bed_double",
+      "fantasyfurniture:necrolord/bed_single",
+      "fantasyfurniture:necrolord/bed_double",
+    ],
+    Text.red("Does not work with Magic Mirror!")
   );
   global.removedItems.forEach((item) => {
     tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));

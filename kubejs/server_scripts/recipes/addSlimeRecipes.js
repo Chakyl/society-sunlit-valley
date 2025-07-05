@@ -82,7 +82,7 @@ ServerEvents.recipes((e) => {
   addFusion("boomcat", "blazing", "bitwise");
   addFusion("weeping", "puddle", "prisma");
 
-  addItemFusion("vinery:chenet_wine", "slimy", "juicy");
+  addItemFusion("society:aged_chenet_wine", "slimy", "juicy");
   addItemFusion("society:magic_rock_candy", "slimy", "sweet");
   addItemFusion("numismatics:ancient_coin", "minty", "gold");
   addItemFusion("botania:life_essence", "ender", "minty");

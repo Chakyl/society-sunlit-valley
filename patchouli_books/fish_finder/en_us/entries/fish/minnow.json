@@ -1,0 +1,18 @@
+{
+  "name": "Minnow",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:minnow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 16$(li)Year-Round$(li)Water: Fresh River$(li)Weather: Any$(li)Time: Day"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:minnow",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "A fish never quite worth the effort it takes to catch"
+    }
+  ]
+}

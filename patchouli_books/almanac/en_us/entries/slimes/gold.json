@@ -1,0 +1,17 @@
+{
+  "name": "Gold",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Causes Bad Omen effect when upset and drains 512 :coin: from nearby players' bank accounts at a time. Extremely volatile moods."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Gold Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:gold\"}",
+      "scale": 0.9
+    }
+  ]
+}

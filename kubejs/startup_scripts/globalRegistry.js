@@ -461,17 +461,27 @@ global.animalProducts = [
   { item: "society:large_duck_egg", value: 32 },
   { item: "society:large_goose_egg", value: 64 },
   { item: "society:large_turkey_egg", value: 128 },
+  { item: "farmlife:galliraptor_egg", value: 256 },
+  { item: "society:large_galliraptor_egg", value: 1024 },
+  { item: "society:penguin_egg", value: 192 },
+  { item: "society:flamingo_egg", value: 384 },
   // Milk
   { item: "society:sheep_milk", value: 8 },
   { item: "society:milk", value: 16 },
+  { item: "society:grain_milk", value: 22 },
   { item: "society:buffalo_milk", value: 64 },
   { item: "society:goat_milk", value: 96 },
   { item: "society:warped_milk", value: 96 },
+  { item: "society:amethyst_milk", value: 144 },
+  { item: "society:tri_bull_milk", value: 192 },
   { item: "society:large_sheep_milk", value: 32 },
   { item: "society:large_milk", value: 64 },
+  { item: "society:large_grain_milk", value: 88 },
   { item: "society:large_buffalo_milk", value: 256 },
   { item: "society:large_goat_milk", value: 384 },
   { item: "society:large_warped_milk", value: 384 },
+  { item: "society:large_amethyst_milk", value: 576 },
+  { item: "society:large_tri_bull_milk", value: 768 },
   // Basic Raw
   { item: "minecraft:beef", value: 16 },
   { item: "minecraft:porkchop", value: 32 },
@@ -495,6 +505,12 @@ global.animalProducts = [
   { item: "crabbersdelight:glow_squid_barrel", value: 288 },
   { item: "crabbersdelight:raw_frog_leg", value: 40 },
   { item: "crabbersdelight:frog_leg_barrel", value: 360 },
+  { item: "farmlife:galliraptor", value: 900 },
+  { item: "farmlife:tribull_shank", value: 1800 },
+  { item: "wildernature:cassowary_meat", value: 90 },
+  { item: "wildernature:venison", value: 48 },
+  { item: "wildernature:bison_meat", value: 64 },
+  { item: "wildernature:pelican_meat", value: 32 },
   // Advanced Cooked
   { item: "snowpig:frozen_ham", value: 128 },
   { item: "buzzier_bees:glazed_porkchop", value: 144 },
@@ -653,6 +669,7 @@ global.artisanGoods = [
   { item: "society:duck_mayonnaise", value: 64 },
   { item: "society:goose_mayonnaise", value: 128 },
   { item: "society:turkey_mayonnaise", value: 256 },
+  { item: "society:galliraptor_mayonnaise", value: 2048 },
   { item: "society:parrot_mayonnaise", value: 512 },
   { item: "society:turtle_mayonnaise", value: 1024 },
   { item: "society:sniffer_mayonnaise", value: 1536 },
@@ -662,10 +679,13 @@ global.artisanGoods = [
   { item: "society:large_duck_mayonnaise", value: 256 },
   { item: "society:large_goose_mayonnaise", value: 512 },
   { item: "society:large_turkey_mayonnaise", value: 1024 },
+  { item: "society:large_galliraptor_mayonnaise", value: 8192 },
   { item: "society:birt_mayonnaise", value: 96 },
   { item: "society:wraptor_mayonnaise", value: 320 },
   { item: "society:springling_mayonnaise", value: 512 },
-  { item: "society:petrified_mayonnaise", value: 2048 },
+  { item: "society:springling_mayonnaise", value: 1024 },
+  { item: "society:penguin_mayonnaise", value: 1536 },
+  { item: "society:flamingo_mayonnaise", value: 3072 },
   { item: "society:cruncher_mayonnaise", value: 4096 },
   { item: "society:oak_resin", value: 48 },
   { item: "society:maple_syrup", value: 64 },
@@ -678,14 +698,16 @@ global.artisanGoods = [
   { item: "society:aged_buffalo_cheese_block", value: 3072 },
   { item: "society:aged_sheep_cheese_block", value: 384 },
   { item: "society:aged_grain_cheese_block", value: 1056 },
-  { item: "society:aged_amethyst_cheese_block", value: 1152 },
+  { item: "society:aged_amethyst_cheese_block", value: 6912 },
+  { item: "society:aged_tribull_cheese_wheel", value: 9216 },
   { item: "society:double_aged_cheese_block", value: 3072 },
   { item: "society:double_aged_goat_cheese_block", value: 18432 },
   { item: "society:double_aged_warped_cheese_block", value: 18432 },
   { item: "society:double_aged_buffalo_cheese_block", value: 12288 },
   { item: "society:double_aged_sheep_cheese_block", value: 1536 },
   { item: "society:double_aged_grain_cheese_block", value: 4224 },
-  { item: "society:double_aged_amethyst_cheese_block", value: 4708 },
+  { item: "society:double_aged_amethyst_cheese_block", value: 27648 },
+  { item: "society:double_aged_tribull_cheese_wheel", value: 36864 },
 ];
 
 // Ice value = 8
@@ -1074,14 +1096,22 @@ craftingTableRecipes.forEach((recipe) => {
 const cheeses = [
   // Values shouldn't be multiplied for balance
   { item: "vintagedelight:honey_mason_jar", value: 48 },
+  { item: "meadow:piece_of_sheep_cheese", value: 24 },
   { item: "meadow:sheep_cheese_block", value: 96 },
+  { item: "meadow:piece_of_cheese", value: 48 },
   { item: "meadow:cheese_block", value: 192 },
-  { item: "meadow:amethyst_cheese_block", value: 288 },
+  { item: "meadow:piece_of_grain_cheese", value: 66 },
   { item: "meadow:grain_cheese_block", value: 264 },
+  { item: "meadow:piece_of_buffalo_cheese", value: 192 },
   { item: "meadow:buffalo_cheese_block", value: 768 },
+  { item: "meadow:piece_of_goat_cheese", value: 288 },
   { item: "meadow:goat_cheese_block", value: 1152 },
+  { item: "meadow:piece_of_warped_cheese", value: 288 },
   { item: "meadow:warped_cheese_block", value: 1152 },
-  { item: "meadow:sausage_with_cheese", value: 336 },
+  { item: "meadow:piece_of_amethyst_cheese", value: 432 },
+  { item: "meadow:amethyst_cheese_block", value: 1728 },
+  { item: "farmlife:tribull_cheese_wedge", value: 576 },
+  { item: "farmlife:tribull_cheese_wheel", value: 2304 },
 ];
 cheeses.forEach((recipe) => {
   global.cooking.push({
@@ -1134,6 +1164,12 @@ const furnaceRecipes = [
   { item: "crabbersdelight:cooked_tropical_fish", value: 72 },
   { item: "crabbersdelight:cooked_squid_tentacles", value: 16 },
   { item: "crabbersdelight:cooked_glow_squid_tentacles", value: 32 },
+  { item: "farmlife:cooked_galliraptor", value: 900 },
+  { item: "farmlife:cooked_tribull_shank", value: 1800 },
+  { item: "wildernature:cooked_bison_meat", value: 64 },
+  { item: "wildernature:cooked_pelican_meat", value: 32 },
+  { item: "wildernature:cooked_venison", value: 48 },
+  { item: "wildernature:cooked_cassowary_meat", value: 90 },
   { item: "minecraft:cooked_salmon", value: 24 },
   { item: "quark:cooked_crab_leg", value: 24 },
   { item: "untitledduckmod:cooked_duck", value: 16 },
@@ -1285,6 +1321,7 @@ const cookingPotRecipes = [
   { item: "veggiesdelight:fish_and_chips", value: 92 },
   { item: "veggiesdelight:carrot_juice", value: 42 },
   { item: "veggiesdelight:cacciatore", value: 105 },
+  { item: "meadow:sausage_with_cheese", value: 168 },
 ];
 cookingPotRecipes.forEach((recipe) => {
   global.cooking.push({
@@ -1516,6 +1553,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "betterarcheology:growth_totem", value: 32000 },
   { item: "botania:black_lotus", value: 128 },
   { item: "automobility:dash_panel", value: 60 },
   { item: "create:experience_nugget", value: 2 },
@@ -1603,6 +1641,7 @@ global.miscAdventurer = [
   { item: "mysticaloaktree:wise_oak", value: 1024 },
   { item: "minecraft:enchanted_golden_apple", value: 4096 },
   { item: "minecraft:goat_horn", value: 512 },
+  { item: "wildernature:bison_horn", value: 3300 },
   { item: "botania:life_essence", value: 9999 },
   { item: "botania:manasteel_ingot", value: 32 },
   { item: "botania:manasteel_block", value: 288 },
@@ -1952,6 +1991,12 @@ global.lootFurniture = [
   "minecraft:bell",
   "furniture:coffer",
 ];
+
+global.animalFeed = [
+  "society:animal_feed",
+  "society:candied_animal_feed",
+  "society:mana_feed"
+]
 
 global.trades = new Map();
 global.ore.forEach((oreItem) => {

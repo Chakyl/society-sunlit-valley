@@ -1,0 +1,19 @@
+{
+  "name": "Soul Sucker",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:soulsucker",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 312$(li)Dimension: Nether$(li)Biome: Soul Sand Valley"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:soulsucker",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "I'm not gonna make the joke you can make it."
+    }
+  ]
+}
