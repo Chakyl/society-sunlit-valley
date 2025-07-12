@@ -1,0 +1,18 @@
+{
+  "name": "Box Turtle",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:box_turtle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 320$(li)\uD83D\uDD25 §6Summer §0$(li)Water: River$(li)Weather: Rain & Snow$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:box_turtle",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "It's gonna eat your fingy."
+    }
+  ]
+}

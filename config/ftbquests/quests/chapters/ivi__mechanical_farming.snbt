@@ -55,7 +55,7 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 12.5d
 			y: 3.5d
 		}
 		{
@@ -905,7 +905,7 @@
 				item: "createrailwaysnavigator:navigator"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.5d
 			y: 4.5d
 		}
 		{
@@ -999,7 +999,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.ivi__mechanical_farming.quest38.title}"
-			x: 10.5d
+			x: 11.0d
 			y: 2.0d
 		}
 		{
@@ -1019,6 +1019,44 @@
 			title: "{ftbquests.chapter.ivi__mechanical_farming.quest39.title}"
 			x: -5.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4C9E6CB01631C0B6"]
+			description: [
+				"The &6Blunderbuss&r is a ranged mechanical firearm intended for hunting monsters and balloons. "
+				""
+				"It has no charging time, making it perfect for dangerous areas such as the &6Skull Cavern&r."
+			]
+			id: "5A9808F763A6B9F8"
+			rewards: [
+				{
+					count: 4
+					id: "761FD507A978F690"
+					item: "wildernature:diamond_ammunition"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6328674A60D619A0"
+					item: "wildernature:flint_ammunition"
+					type: "item"
+				}
+			]
+			subtitle: "Not very cottagecore of you..."
+			tasks: [{
+				id: "140E1FEF8B3EC12D"
+				item: {
+					Count: 1
+					id: "wildernature:blunderbuss"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Mechanical Firepower"
+			x: 11.0d
+			y: 5.0d
 		}
 	]
 	title: "{ftbquests.chapter.ivi__mechanical_farming.title}"

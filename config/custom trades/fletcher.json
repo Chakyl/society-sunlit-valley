@@ -15,7 +15,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -33,7 +33,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -51,7 +51,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -69,7 +69,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -87,7 +87,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -105,7 +105,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -123,11 +123,29 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:fletcher_budding_amethyst_for_aged_amethyst_cheese_block"
+    },
+    {
+      "offer": {
+        "itemKey": "society:magic_rope",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "society:basalt_shard",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 32,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fletcher_magic_rope_for_basalt_shard"
     },
     {
       "offer": {
@@ -141,7 +159,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -159,7 +177,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -195,7 +213,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -213,7 +231,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -231,7 +249,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -249,7 +267,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -273,7 +291,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -291,7 +309,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -309,7 +327,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -327,7 +345,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -345,7 +363,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -363,7 +381,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -381,7 +399,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -399,7 +417,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -417,7 +435,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -435,11 +453,30 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:fletcher_infinity_worm_for_aquamagical_dust"
+    },
+    {
+      "offer": {
+        "itemKey": "society:pink_matter",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "splendid_slimes:plort",
+        "amount": 16,
+        "priceModifier": 0,
+        "advancedNBTData": "{plort:{id:\"splendid_slimes:minty\"}}"
+      },
+      "tradeExp": 2,
+      "maxUses": 32,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fletcher_pink_matter_for_plort"
     },
     {
       "offer": {
@@ -453,7 +490,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -471,7 +508,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -494,7 +531,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -517,7 +554,7 @@
         "priceModifier": 0
       },
       "tradeExp": 2,
-      "maxUses": 4,
+      "maxUses": 32,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,

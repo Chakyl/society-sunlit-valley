@@ -104,9 +104,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns a fish into 6 bait"));
+      item.tooltip(Text.gray("Turns a fish into 3 bait"));
       item.modelJson({
-        parent: "society:block/bait_maker_off",
+        parent: "society:block/bait_maker/bait_maker_off",
       });
     })
     .defaultState((state) => {
@@ -126,122 +126,13 @@ StartupEvents.registry("block", (event) => {
         .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .rightClick((click) => {
-      global.handleBERightClick(
-        "aquaculture:fish_death",
-        click,
-        global.baitMakerRecipes,
-        1
-      );
+      global.handleBERightClick("aquaculture:fish_death", click, global.baitMakerRecipes, 1);
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.baitMakerRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/bait_maker_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
-        when: { working: false, facing: "north" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "east" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "south" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "west" },
-        apply: {
-          model: "society:block/bait_maker_off",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "north" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "east" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "south" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "west" },
-        apply: {
-          model: "society:block/bait_maker",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "north" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "east" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "south" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { mature: true, facing: "west" },
-        apply: {
-          model: "society:block/bait_maker_done",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
+    multipart: getCardinalMultipartJson("bait_maker"),
   };
 });

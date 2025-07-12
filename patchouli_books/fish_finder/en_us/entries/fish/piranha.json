@@ -1,0 +1,18 @@
+{
+  "name": "Piranha",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:piranha",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 48$(li)\u00a70\ud83d\udd25 \u00a76Summer\u00a70$(li)Water: Fresh$(li)Weather: Rain Snow$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:piranha",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "It's gonna eat you."
+    }
+  ]
+}

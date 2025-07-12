@@ -187,6 +187,25 @@
     "result": "deny"
   },
   {
+    "mob": "meadow:wooly_cow",
+    "dimension": "minecraft:overworld",
+    "when": "onjoin",
+    "result": "default"
+  },
+  {
+    "mob": "meadow:wooly_cow",
+    "dimension": "minecraft:the_nether",
+    "biome": "minecraft:warped_forest",
+    "when": "onjoin",
+    "result": "default"
+  },
+  {
+    "mob": "meadow:wooly_cow",
+    "dimension": "society:the_nether",
+    "when": "onjoin",
+    "result": "deny"
+  },
+  {
     "mob": "splendid_slimes:splendid_slime",
     "dimension": "minecraft:the_nether",
     "block": "minecraft:nether_bricks",

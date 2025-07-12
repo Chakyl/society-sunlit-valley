@@ -1,0 +1,118 @@
+{
+    "name": "Morado Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "atmospheric:morado_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌐 §5Year-round§r$(li)Size: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Morado Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "         ",
+                        "      L  ",
+                        "     lLl ",
+                        "      l  ",
+                        "         ",
+                        "         ",
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "     lll ",
+                        "    lLlll",
+                        "    llWLl",
+                        "    lLLll",
+                        "     lll ",
+                        "         ",
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         ",
+                        "  lll W  ",
+                        " LlLll   ",
+                        " LLlll   ",
+                        " lLLll   ",
+                        "  lll    ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         ",
+                        " LlLlL   ",
+                        "lllLLWT  ",
+                        "LllWlll  ",
+                        "lllllll  ",
+                        "llLllll  ",
+                        " lllll   "
+                    ],
+                    [
+                        "         ",
+                        "         ",
+                        "         ",
+                        "    WT   ",
+                        "   W     ",
+                        "         ",
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         ",
+                        "         ",
+                        "    W    ",
+                        "   W     ",
+                        "         ",
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         ",
+                        "         ",
+                        "   WT    ",
+                        "   t     ",
+                        "         ",
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         ",
+                        "         ",
+                        "   W     ",
+                        "         ",
+                        "         ",
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         ",
+                        "         ",
+                        "   W0    ",
+                        "         ",
+                        "         ",
+                        "         ",
+                        "         "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:air",
+                    "l": "atmospheric:flowering_morado_leaves",
+                    "L": "atmospheric:morado_leaves",
+                    "W": "atmospheric:morado_log[axis=y]",
+                    "T": "atmospheric:morado_log[axis=z]",
+                    "t": "atmospheric:morado_log[axis=x]"
+                }
+            }
+        }
+    ]
+}

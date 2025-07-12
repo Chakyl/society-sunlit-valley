@@ -1,0 +1,17 @@
+{
+  "name": "Galliraptor",
+  "category": "patchouli:animals",
+  "icon": "farmlife:galliraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not Sold$(li)Egg: Galliraptor Egg$(li)Drops: Raw Galliraptor, Feather$(br2)$(l)Notes$()$(br)Engineered by using a Lunar Mutation Serum on a Goober. Hungry Galliraptors don't lay eggs, and unhappy ones lay them a lot less."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:galliraptor",
+      "scale": 0.7,
+      "text": "Is it pre-historic? Or post-historic?"
+    }
+  ]
+}

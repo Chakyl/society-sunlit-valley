@@ -29,6 +29,30 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 499
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:brine_and_punishment",
+          "weight": 1
+        }
+      ],
+      "conditions": [
+        {
+          "block": "vintagedelight:cucumber_crop",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "7"
+          }
+        }
+      ]
     }
   ]
 }

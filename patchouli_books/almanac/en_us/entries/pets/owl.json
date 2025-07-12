@@ -1,0 +1,17 @@
+{
+  "name": "Owl",
+  "category": "patchouli:pets",
+  "icon": "tanukidecor:owl_clock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Owl Clock$(br2)$(l)Taming$()$(br)Rotten Flesh"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:owl",
+      "scale": 0.7,
+      "text": "Keep this one away from smaller animals..."
+    }
+  ]
+}

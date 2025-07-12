@@ -5,7 +5,7 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 139,
+          "weight": 174,
           "data": {
             "Name": "society:end_stone_boulder"
           }
@@ -26,6 +26,12 @@
           "weight": 3,
           "data": {
             "Name": "society:deepslate_iridium_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "society:skull_cavern_teleporter"
           }
         }
       ]

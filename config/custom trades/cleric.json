@@ -10,8 +10,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 4,
+        "itemKey": "numismatics:crown",
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -19,7 +19,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:cleric_blaze_powder_for_cog"
+      "UTID": "minecraft:cleric_blaze_powder_for_crown"
     },
     {
       "offer": {
@@ -41,43 +41,7 @@
     },
     {
       "offer": {
-        "itemKey": "constructionwand:stone_wand",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 2,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:cleric_stone_wand_for_crown"
-    },
-    {
-      "offer": {
-        "itemKey": "constructionwand:iron_wand",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 4,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:cleric_iron_wand_for_sun"
-    },
-    {
-      "offer": {
-        "itemKey": "constructionwand:diamond_wand",
+        "itemKey": "quark:pickarang",
         "amount": 1,
         "priceModifier": 0
       },
@@ -86,45 +50,9 @@
         "amount": 16,
         "priceModifier": 0
       },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:cleric_diamond_wand_for_crown"
-    },
-    {
-      "offer": {
-        "itemKey": "constructionwand:infinity_wand",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 32,
-        "priceModifier": 0
-      },
       "additionalRequest": {
-        "itemKey": "society:prismatic_shard",
+        "itemKey": "minecraft:diamond_pickaxe",
         "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:cleric_infinity_wand_for_sun"
-    },
-    {
-      "offer": {
-        "itemKey": "quark:pickarang",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 3,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -133,29 +61,6 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:cleric_pickarang_for_crown"
-    },
-    {
-      "offer": {
-        "itemKey": "create:wand_of_symmetry",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 5,
-        "priceModifier": 0
-      },
-      "additionalRequest": {
-        "itemKey": "society:prismatic_shard",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:cleric_wand_of_symmetry_for_sun"
     },
     {
       "offer": {
@@ -220,6 +125,83 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:cleric_goddess_statue_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "constructionwand:stone_wand",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_stone_wand_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "constructionwand:core_angel",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_core_angel_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "constructionwand:core_destruction",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:prismatic_coin",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_core_destruction_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "itemKey": "create:wand_of_symmetry",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_wand_of_symmetry_for_sun"
     },
     {
       "offer": {

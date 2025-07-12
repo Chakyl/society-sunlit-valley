@@ -103,26 +103,31 @@ global.ageableProductInputs = [
     time: 4,
   },
   { item: "brewery:dark_brew", name: "Dark Brew", time: 6 },
-  { item: "meadow:cheese_block", name: "Cheese Wheel", time: 2 },
-  { item: "meadow:goat_cheese_block", name: "Goat Cheese Wheel", time: 2 },
-  { item: "meadow:warped_cheese_block", name: "Warped Cheese Wheel", time: 4 },
-  { item: "meadow:sheep_cheese_block", name: "Sheep Cheese Wheel", time: 2 },
-  { item: "meadow:grain_cheese_block", name: "Grain Cheese Wheel", time: 2 },
+  { item: "meadow:cheese_block", name: "Cheese Wheel", time: 3 },
+  { item: "meadow:goat_cheese_block", name: "Goat Cheese Wheel", time: 3 },
+  { item: "meadow:warped_cheese_block", name: "Warped Cheese Wheel", time: 3 },
+  { item: "meadow:sheep_cheese_block", name: "Sheep Cheese Wheel", time: 3 },
+  { item: "meadow:grain_cheese_block", name: "Grain Cheese Wheel", time: 3 },
   {
     item: "meadow:amethyst_cheese_block",
     name: "Amethyst Cheese Wheel",
-    time: 2,
+    time: 3,
   },
   {
     item: "meadow:buffalo_cheese_block",
     name: "Buffalo Cheese Wheel",
-    time: 2,
+    time: 3,
   },
   { item: "society:beer_london", name: "London Beer", time: 3 },
   { item: "society:ancient_vespertine", name: "Ancient Vespertine", time: 10 },
   { item: "society:dewy_star", name: "Dewy Star", time: 10 },
   { item: "society:ancient_cider", name: "Ancient Cider", time: 10 },
   { item: "society:beer_attunecore", name: "Attunecore Beer", time: 3 },
+  {
+    item: "farmlife:tribull_cheese_wheel",
+    name: "Tri-Bull Cheese Wheel",
+    time: 3,
+  },
 ];
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");
@@ -140,7 +145,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 10))
     .property(integerProperty.create("type", 0, global.agingCaskRecipes.length))
-    .box(2, 0, 1, 14, 14, 15)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
@@ -148,7 +152,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Ages a product over a long period of time"));
       item.modelJson({
-        parent: "society:block/aging_cask",
+        parent: "society:block/aging_cask/aging_cask",
       });
     })
     .defaultState((state) => {
@@ -199,7 +203,6 @@ StartupEvents.registry("block", (event) => {
             mature: block.properties.get("mature"),
             upgraded: true,
             stage: block.properties.get("stage"),
-            duration: block.properties.get("duration"),
           });
         } else if (!upgraded && item == "society:broken_clock") {
           player.tell(Text.red(`This can only be upgraded when not in use`));
@@ -209,7 +212,14 @@ StartupEvents.registry("block", (event) => {
       if (player.stages.has("aged_prize") && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace("society:prize_ticket", facing);
       }
-
+      if (
+        !player.stages.has("slouching_towards_artistry") &&
+        block.properties.get("mature") === "true" &&
+        Number(block.properties.get("stage")) > 5 &&
+        Math.random() <= 0.01
+      ) {
+        block.popItemFromFace("society:slouching_towards_artistry", block.properties.get("facing"));
+      }
       global.handleBERightClick("minecraft:block.wood.place", click, global.agingCaskRecipes, 10);
     })
     .blockEntity((blockInfo) => {
@@ -217,94 +227,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.agingCaskRecipes, 10, true);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/aging_cask_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-      {
-        when: { upgraded: false, facing: "north" },
-        apply: { model: "society:block/aging_cask_base", y: 0, uvlock: false },
-      },
-      {
-        when: { upgraded: false, facing: "east" },
-        apply: { model: "society:block/aging_cask_base", y: 90, uvlock: false },
-      },
-      {
-        when: { upgraded: false, facing: "south" },
-        apply: {
-          model: "society:block/aging_cask_base",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: false, facing: "west" },
-        apply: {
-          model: "society:block/aging_cask_base",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "north" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "east" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "south" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { upgraded: true, facing: "west" },
-        apply: {
-          model: "society:block/aging_cask_base_upgraded",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "north" },
-        apply: { model: "society:block/aging_cask_plug", y: 0, uvlock: false },
-      },
-      {
-        when: { working: true, facing: "east" },
-        apply: { model: "society:block/aging_cask_plug", y: 90, uvlock: false },
-      },
-      {
-        when: { working: true, facing: "south" },
-        apply: {
-          model: "society:block/aging_cask_plug",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "west" },
-        apply: {
-          model: "society:block/aging_cask_plug",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
+    multipart: getCardinalMultipartJson("aging_cask"),
   };
 });

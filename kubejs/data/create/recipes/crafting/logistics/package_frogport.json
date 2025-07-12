@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:item_vault"
+    },
+    "B": {
+      "tag": "forge:slimeballs"
+    },
+    "b": {
+      "item": "society:battery"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    },
+    "l": {
+      "item": "oreganized:lead_ingot"
+    }
+  },
+  "pattern": ["lbl", "BAB", "lCl"],
+  "result": {
+    "item": "create:package_frogport"
+  },
+  "show_notification": true
+}

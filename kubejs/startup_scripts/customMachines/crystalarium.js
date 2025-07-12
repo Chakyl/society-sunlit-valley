@@ -81,7 +81,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Duplicates any mineral or gem placed inside"));
       item.modelJson({
-        parent: "society:block/crystalarium",
+        parent: "society:block/crystalarium/crystalarium",
       });
     })
     .defaultState((state) => {
@@ -151,14 +151,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.crystalariumCrystals, 5);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/crystalarium_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("crystalarium")),
+    multipart: getCardinalMultipartJson("crystalarium"),
   };
 });

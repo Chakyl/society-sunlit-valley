@@ -500,6 +500,30 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:fisherman_gold_ring_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "patchouli:guide_book",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{\"patchouli:book\":\"patchouli:fish_finder\"}"
+      },
+      "request": {
+        "itemKey": "numismatics:neptunium_coin",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "aquaculture:neptunium_block",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_guide_book_for_neptunium_coin"
     }
   ]
 }

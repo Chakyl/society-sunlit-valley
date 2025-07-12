@@ -4,71 +4,72 @@ global.checkEntityTag = (entity, checkedTag) => {
   return entity.entityType.tags.anyMatch((tag) => tag.location() == checkedTag);
 };
 
-global.isFresh = (age, actionAge, interactionCooldown) => {
-  if (actionAge < interactionCooldown) return false;
-  return age < actionAge;
+global.isFresh = (day, actionAge) => {
+  return day < actionAge;
 };
 
 global.getAnimalIsNotCramped = (target) => {
   const level = target.getLevel();
-  const entities = level.getEntitiesWithin(target.boundingBox.inflate(1.1)).length;
+  const entities = level
+    .getEntitiesWithin(target.boundingBox.inflate(1.1))
+    .filter((e) => global.checkEntityTag(e, "society:husbandry_animal"));
 
-  return entities <= 6;
+  return entities.length <= 6;
+};
+global.isWarpedCow = (target) =>
+  target.type === "meadow:wooly_cow" && Number(target.getNbt().Variant) === 2;
+
+global.getMilkingTimeMult = (target, type) => {
+  const warped = global.isWarpedCow(target);
+  let mult;
+  global.husbandryMilkingDefinitions.forEach((definition) => {
+    if (!mult && definition.animal.equals(type.toString())) {
+      if (warped && definition.warped) mult = definition.cooldown;
+      if (!warped) mult = definition.cooldown;
+    }
+  });
+  return mult;
 };
 
-global.getMilkingTimeMult = (type) => {
-  if (type === "minecraft:goat" || type === "species:mammutilation") return 2;
-  else if (type === "minecraft:sheep") return 1.5;
-  return 1;
+const resolveMilk = (hearts, target, type) => {
+  const large = hearts > 5;
+  let milk;
+  const warped = global.isWarpedCow(target);
+  global.husbandryMilkingDefinitions.forEach((definition) => {
+    if (!milk && definition.animal.equals(type.toString())) {
+      if (warped && definition.warped) milk = large ? definition.milk.lg : definition.milk.sm;
+      if (!warped) milk = large ? definition.milk.lg : definition.milk.sm;
+    }
+  });
+  return milk;
 };
 
-const resolveMilk = (hearts, type, warped) => {
-  let size = "";
-  let resolvedType = "";
-  if (hearts > 5) {
-    size = "large_";
-  }
-  if (type === "mammutilation") return "species:ichor_bottle";
-  if (type === "goat") resolvedType = type;
-  if (type.includes("sheep")) resolvedType = "sheep";
-  if (warped) resolvedType = "warped";
-  if (type === "water buffalo") resolvedType = "buffalo";
-  return `${size}${resolvedType}${resolvedType === "" ? "" : "_"}milk`;
-};
-
-global.getMilk = (level, target, data, player, interactionCooldown, raiseEffection) => {
+global.getMilk = (target, data, player, day, raiseEffection) => {
   const ageLastMilked = data.getInt("ageLastMilked");
-  const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
-  const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
+  const hungry = day - data.getInt("ageLastFed") > 1;
   const affection = data.getInt("affection");
   let hearts = Math.floor(affection / 100);
-  const freshAnimal = global.isFresh(level.time, ageLastMilked, interactionCooldown);
+  const freshAnimal = global.isFresh(day, ageLastMilked);
   let affectionIncrease = 0;
-  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
-  let warped = false;
+  if (player) affectionIncrease = player.stages.has("animal_whisper.er") || data.bribed ? 20 : 10;
   let quality = 0;
 
-  if (nonIdType === "wooly cow" && Number(target.getNbt().Variant) === 2) {
-    warped = true;
-  }
   if (
     !target.isBaby() &&
     !hungry &&
-    (freshAnimal || level.time - ageLastMilked > interactionCooldown)
+    (freshAnimal || day > ageLastMilked + global.getMilkingTimeMult(target, target.type))
   ) {
     if (raiseEffection) data.affection = affection + affectionIncrease;
-    data.ageLastMilked = level.time;
+    data.ageLastMilked = day;
     if (hearts >= 10 || (hearts > 0 && hearts % 5 === 0)) {
       quality = 3;
     } else {
       quality = (hearts % 5) - 2;
     }
-    let milkId = resolveMilk(hearts, nonIdType, warped);
+    let milkId = resolveMilk(hearts, target, target.type);
     if (milkId == "species:ichor_bottle" && hearts >= 5) quality = 3;
     return Item.of(
-      `${player && player.stages.has("shepherd") ? 2 : 1}x ${
-        milkId.includes(":") ? milkId : `society:${milkId}`
-      }`,
+      `${player && player.stages.has("shepherd") ? 2 : 1}x ${milkId}`,
       quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
     );
   }
@@ -84,186 +85,56 @@ global.handleSpecialHarvest = (
   inventory,
   harvestFunction
 ) => {
-  const interactionCooldown = global.animalInteractionCooldown;
+  const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
   const data = target.persistentData;
   const ageLastFed = data.getInt("ageLastFed");
   const ageLastDroppedSpecial = data.getInt("ageLastDroppedSpecial") || 0;
   const type = target.type;
-  const freshAnimal = global.isFresh(level.time, ageLastDroppedSpecial, interactionCooldown);
-  const hungry = level.time - ageLastFed > interactionCooldown * 2;
+  const freshAnimal = global.isFresh(day, ageLastDroppedSpecial);
+  const hungry = day - ageLastFed > 1;
   const affection = data.getInt("affection") || 0;
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   const heartBonus = hearts === 10 ? 2 : 1;
-  if (freshAnimal || level.time - ageLastDroppedSpecial > interactionCooldown) {
-    if (["minecraft:pig", "snowpig:snow_pig", "minecraft:mooshroom"].includes(type))
-      harvestFunction(
-        data,
-        0.3,
-        hungry,
-        4,
-        heartBonus * player.stages.has("triple_truffle") ? 3 : 1,
-        "society:truffle",
-        true,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
-    if (type === "minecraft:rabbit") {
-      harvestFunction(
-        data,
-        0.33,
-        hungry,
-        3,
-        player.stages.has("coopmaster") ? 2 : 1,
-        "society:fine_wool",
-        true,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
-      harvestFunction(
-        data,
-        0.16,
-        hungry,
-        5,
-        heartBonus * player.stages.has("coopmaster") ? 2 : 1,
-        "minecraft:rabbit_foot",
-        true,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
-    }
-    if (["minecraft:sheep", "meadow:wooly_sheep", "snuffles:snuffle"].includes(type)) {
-      harvestFunction(data, 0.5, hungry, 4, heartBonus, "society:fine_wool", true, {
-        level: level,
-        target: target,
-        player: player,
-        server: server,
-        block: block,
-        inventory: inventory,
-      });
-    }
-    if (type === "buzzier_bees:moobloom") {
-      harvestFunction(data, 0.01, hungry, 10, 1, "betterarcheology:growth_totem", false, {
-        level: level,
-        target: target,
-        player: player,
-        server: server,
-        block: block,
-        inventory: inventory,
-      });
-    }
-    if (type === "autumnity:snail") {
-      harvestFunction(data, 1, hungry, 3, heartBonus * 2, "autumnity:snail_shell_piece", false, {
-        level: level,
-        target: target,
-        player: player,
-        server: server,
-        block: block,
-        inventory: inventory,
-      });
-    }
-    if (type === "minecraft:sniffer") {
-      harvestFunction(data, 1, hungry, 5, heartBonus, "betterarcheology:artifact_shards", false, {
-        level: level,
-        target: target,
-        player: player,
-        server: server,
-        block: block,
-        inventory: inventory,
-      });
-      harvestFunction(data, 0.25, hungry, 5, 1, "minecraft:sniffer_egg", true, {
-        level: level,
-        target: target,
-        player: player,
-        server: server,
-        block: block,
-        inventory: inventory,
-      });
-    }
-    if (type === "species:goober") {
-      harvestFunction(data, 0.25, hungry, 5, 1, "species:petrified_egg", true, {
-        level: level,
-        target: target,
-        player: player,
-        server: server,
-        block: block,
-        inventory: inventory,
-      });
-    }
-    if (type === "minecraft:panda") {
-      const pandaFruits = [
-        "pamhc2trees:mangoitem",
-        "atmospheric:orange",
-        "pamhc2trees:peachitem",
-        "pamhc2trees:pawpawitem",
-        "pamhc2trees:bananaitem",
-      ];
-      harvestFunction(
-        data,
-        0.75,
-        hungry,
-        2,
-        heartBonus,
-        pandaFruits[Math.floor(Math.random() * pandaFruits.length)],
-        true,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
-    }
-    if (global.checkEntityTag(target, "society:large_egg_animal")) {
-      let eggType = String(type).split(":")[1];
-      harvestFunction(
-        data,
-        1,
-        hungry,
-        4,
-        1,
-        `society:large${eggType === "chicken" ? "" : `_${eggType}`}_egg`,
-        true,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
-    }
+  if (freshAnimal || day > ageLastDroppedSpecial) {
+    let resolvedCount;
+    let resolvedItem;
+    global.husbandryForagingDefinitions.forEach((definition) => {
+      if (definition.animal.equals(type)) {
+        definition.forages.forEach((forage) => {
+          resolvedCount = forage.countMult;
+          if (forage.stage && player.stages.has(forage.stage.name)) {
+            resolvedCount = forage.stage.newCountMult;
+          }
+          if (forage.itemPool) {
+            resolvedItem = forage.itemPool[Math.floor(Math.random() * forage.itemPool.length)];
+          } else {
+            resolvedItem = forage.item;
+          }
+          harvestFunction(
+            data,
+            forage.chance,
+            hungry,
+            forage.minHearts,
+            heartBonus * resolvedCount,
+            resolvedItem,
+            forage.hasQuality,
+            {
+              level: level,
+              target: target,
+              player: player,
+              server: server,
+              block: block,
+              inventory: inventory,
+            }
+          );
+        });
+      }
+    });
     if (
       player.stages.has("coopmaster") &&
-      [
-        "minecraft:chicken",
-        "untitledduckmod:duck",
-        "untitledduckmod:goose",
-        "etcetera:chapple",
-        "autumnity:turkey",
-      ].includes(type)
+      global.checkEntityTag(target, "society:coopmaster_bird")
     ) {
-      harvestFunction(data, 0.02, hungry, 1, 1, "vintagedelight:golden_egg", false, {
+      harvestFunction(data, 0.02, hungry, 1, 1, "vintagedelight:golden_egg", true, {
         level: level,
         target: target,
         player: player,
@@ -282,8 +153,8 @@ global.handleSpecialHarvest = (
         inventory: inventory,
       });
     }
-    if (player.stages.has("reaping_scythe")) {
-      harvestFunction(data, 0.2, hungry, 1, 1, "quark:diamond_heart", false, {
+    if (!player.isFake() && !player.stages.has("animal_fancy")) {
+      harvestFunction(data, 0.05, hungry, 4, 1, "society:animal_fancy", false, {
         level: level,
         target: target,
         player: player,
@@ -292,6 +163,16 @@ global.handleSpecialHarvest = (
         inventory: inventory,
       });
     }
-    data.ageLastDroppedSpecial = level.time;
+    if (player.stages.has("reaping_scythe")) {
+      harvestFunction(data, 0.1, hungry, 1, 1, "quark:diamond_heart", false, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
+    }
+    data.ageLastDroppedSpecial = day;
   }
 };

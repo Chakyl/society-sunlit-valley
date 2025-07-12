@@ -15,8 +15,25 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
     if (level.dayTime() % 24000 > 18000) {
       errorText = "It's too late at night to enter the Skull Cavern...";
     } else {
+      if (!player.stages.has("skull_cavern_intro")) {
+        player.stages.add("skull_cavern_intro");
+        player.tell(Text.gold("A strange person hands you a note and vanishes..."));
+        player.give(Item.of("gag:escape_rope"));
+        player.give(
+          Item.of(
+            "candlelight:note_paper_written",
+            `{author:"someone...",text:["The Skull Cavern is a dangerous pit you can descend by finding ropes under ores and boulders.  
+
+It'll drain the life out of you if you stay in it too late.
+
+Use that Escape Rope I gave you to get out before 5AM..."],title:"A Warning"}`
+          )
+        );
+      }
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);
-      player.persistentData.skullCavernEnterDay = Number((level.dayTime() / 24000).toFixed(0));
+      player.persistentData.skullCavernEnterday = Number(
+        (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
+      );
       player.level.getBlock(x, 511, z).set("society:skull_cavern_teleporter");
     }
   } else {

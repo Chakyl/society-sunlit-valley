@@ -1,0 +1,17 @@
+{
+  "name": "Domestic Tri-bull",
+  "category": "patchouli:animals",
+  "icon": "society:large_tri_bull_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not Sold$(li)Milk: Tri-Bull Milk$(li)Milk Cooldown: 1 day$(li)Drops: Raw Tri-Bull Shank, Leather $(br2)$(l)Notes$()$(br)Engineered by using a Lunar Mutation Serum on a Cow."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:domestic_tribull",
+      "scale": 0.6,
+      "text": "It's not of this world... Eating its cheese cleanses you of a potion effect. "
+    }
+  ]
+}

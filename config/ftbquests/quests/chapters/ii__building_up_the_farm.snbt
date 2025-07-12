@@ -24,11 +24,18 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest1.description4}"
 			]
 			id: "6ADD884F3FFE5D42"
-			rewards: [{
-				id: "2040ACC30B4DC0CC"
-				item: "sereneseasons:calendar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2040ACC30B4DC0CC"
+					item: "sereneseasons:calendar"
+					type: "item"
+				}
+				{
+					id: "74190C8983D52EF8"
+					item: "quark:seed_pouch"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6F097F151D433739"
 				item: "farmingforblockheads:market"
@@ -617,12 +624,19 @@
 			]
 			icon: "candlelight:hearth"
 			id: "3D324E99DF28D224"
-			rewards: [{
-				count: 4
-				id: "252A2DDE789924B5"
-				item: "minecraft:name_tag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "252A2DDE789924B5"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					id: "6D01FAFFF7815F65"
+					item: "society:candied_animal_feed"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7F4B6A5EB91157E6"
 				title: "{ftbquests.chapter.ii__building_up_the_farm.quest21.task_9172542021134538726.title}"
@@ -832,21 +846,16 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description1}"
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description2}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description3}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description4}"
 			]
 			id: "75181B22DAF5E9A6"
 			rewards: [{
-				count: 16
-				id: "11759FDE56DE468B"
-				item: "meadow:rennet"
+				id: "5BC6F281781D8AF3"
+				item: "society:large_milk"
 				type: "item"
 			}]
 			tasks: [{
 				id: "10B6EDC1EF4BD4DE"
-				item: "meadow:cheese_form"
+				item: "society:cheese_press"
 				type: "item"
 			}]
 			x: 7.0d
@@ -1649,6 +1658,40 @@
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest56.title}"
 			x: 6.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["4A48308E11476E9B"]
+			description: [
+				"Figuring out which Fish can be caught in a given location can be tricky. Some have very specific spawning conditions on top of being very rare."
+				""
+				"The &6Fish Finder&r lists out every fish in the game and its exact spawn conditions. It can either be found or purchased from a &6Fisher&r."
+			]
+			id: "2A02C6E45ED944F4"
+			rewards: [{
+				id: "719226375F98A0BA"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:fish_finder"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BE2D06B565E866E"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:fish_finder"
+					}
+				}
+				type: "item"
+			}]
+			title: "Fishing Guide"
+			x: 11.0d
+			y: -7.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

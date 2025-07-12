@@ -6,16 +6,16 @@ ItemEvents.entityInteracted((e) => {
   if (target.type !== "minecraft:villager") return;
   let updateThis = false;
   const nbt = target.nbt.toString();
-  if (nbt.includes("shepherd") && (!nbt.includes("slime_vac") || !nbt.includes("name_tag")))
-    updateThis = true;
+  if (nbt.includes("leatherworker") && !nbt.includes("omega")) updateThis = true;
+  if (nbt.includes("weaponsmith") && !nbt.includes("omega")) updateThis = true;
   if (nbt.includes("botanist") && nbt.includes("cornucopia")) updateThis = true;
   if (nbt.includes("minecraft:farmer") && !nbt.includes("bakery")) updateThis = true;
   if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
   if (nbt.includes("toolsmith") && nbt.includes("reinforced_core")) updateThis = true;
-  if (nbt.includes("cleric") && !nbt.includes("goddess")) updateThis = true;
+  if (nbt.includes("cleric") && !nbt.includes("core_destruction")) updateThis = true;
   if (nbt.includes("cartographer") && nbt.includes("banking_guide")) updateThis = true;
-  if (nbt.includes("fletcher") && nbt.includes("ancient_debris")) updateThis = true;
-  if (nbt.includes("fisher") && nbt.includes("nether_star_hook")) updateThis = true;
+  if (nbt.includes("fletcher") && !nbt.includes("magic_rope")) updateThis = true;
+  if (nbt.includes("fisher") && !nbt.includes("guide_book")) updateThis = true;
 
   if (updateThis) {
     let freshVillager = level.createEntity("minecraft:villager");
@@ -318,6 +318,18 @@ ItemEvents.entityInteracted((e) => {
           priceMultiplier: 0.05,
           rewardExp: 1,
           sell: { Count: 1, id: "splendid_slimes:slime_ticket" },
+          specialPrice: 0,
+          uses: 0,
+          xp: 1,
+        },
+        {
+          buy: { Count: 1, id: "society:prismatic_shard" },
+          buyB: { Count: 0, id: "minecraft:air" },
+          demand: 0,
+          maxUses: 8,
+          priceMultiplier: 0.05,
+          rewardExp: 1,
+          sell: { Count: 4, id: "splendid_slimes:slime_candy" },
           specialPrice: 0,
           uses: 0,
           xp: 1,

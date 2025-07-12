@@ -1,0 +1,39 @@
+{
+  "parent": "bakery:main/place_stove",
+  "criteria": {
+    "pudding_slice": {
+      "conditions": {
+        "item": {
+          "items": [
+            "bakery:pudding_slice"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.bakery.eat_pudding_slice.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "bakery:pudding_slice"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.bakery.eat_pudding_slice"
+    }
+  },
+  "requirements": [
+    [
+      "pudding_slice"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  },
+  "sends_telemetry_event": true
+}

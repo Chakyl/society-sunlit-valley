@@ -13,7 +13,7 @@
   "emit_effect_particle": "rehooked:ender_hook_particle",
   "negative_emit_effects": [
     {
-      "effect": "brewery:drunk",
+      "effect": "minecraft:mining_fatigue",
       "duration": 120,
       "amplifier": 2
     }

@@ -52,7 +52,7 @@ StartupEvents.registry("block", (event) => {
           let totalDebt;
           let removedSlots = [];
           let calculationResults;
-          level.players.forEach((p) => {
+          level.getServer().players.forEach((p) => {
             if (p.getUuid().toString() === block.getEntityData().data.owner) {
               playerAttributes = p.nbt.Attributes;
               binPlayer = p;
@@ -64,6 +64,7 @@ StartupEvents.registry("block", (event) => {
               inventory,
               slots,
               playerAttributes,
+              binPlayer.stages,
               true
             );
             value = Math.round(calculationResults.calculatedValue);
@@ -82,7 +83,7 @@ StartupEvents.registry("block", (event) => {
                   binPlayer.server.runCommandSilent(
                     `immersivemessages sendcustom ${
                       binPlayer.username
-                    } {anchor:7,background:1,color:"#55FF55",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 You paid off your :coin: ${global.formatPrice(
+                    } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 §aYou paid off your §f● §a${global.formatPrice(
                       debtPaid
                     )} debt!`
                   );
@@ -94,7 +95,7 @@ StartupEvents.registry("block", (event) => {
                   binPlayer.server.runCommandSilent(
                     `immersivemessages sendcustom ${
                       binPlayer.username
-                    } {anchor:7,background:1,color:"#FF5555",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${global.formatPrice(
+                    } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 ● §6${global.formatPrice(
                       debtPaid
                     )} §7of your debt paid off...`
                   );
@@ -124,9 +125,7 @@ StartupEvents.registry("block", (event) => {
                 binPlayer.server.runCommandSilent(
                   `immersivemessages sendcustom ${
                     binPlayer.username
-                  } {anchor:7,background:1,color:"#FFAA00",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${value
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} §7worth of goods sold`
+                  } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 ● §6${global.formatPrice(value)} §7worth of goods sold`
                 );
                 for (let i = 0; i < removedSlots.length; i++) {
                   inventory.setStackInSlot(removedSlots[i], "minecraft:air");

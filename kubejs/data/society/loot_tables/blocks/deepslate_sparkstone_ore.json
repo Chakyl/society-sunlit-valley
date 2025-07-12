@@ -30,18 +30,21 @@
               "type": "minecraft:item",
               "functions": [
                 {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:set_count",
+                  "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "min": 2,
-                    "max": 4
+                    "max": 5.0,
+                    "min": 2.0
                   },
-                  "add": false
+                  "function": "minecraft:set_count"
+                },
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "bonusMultiplier": 1
+                  }
                 },
                 {
                   "function": "minecraft:explosion_decay"

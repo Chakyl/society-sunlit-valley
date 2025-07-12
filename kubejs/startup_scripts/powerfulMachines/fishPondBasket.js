@@ -61,7 +61,7 @@ StartupEvents.registry("block", (event) => {
         const { x, y, z } = block;
         const radius = 1;
         let attachedPlayer;
-        level.players.forEach((p) => {
+        level.getServer().players.forEach((p) => {
           if (p.getUuid().toString() === block.getEntityData().data.owner) {
             attachedPlayer = p;
           }

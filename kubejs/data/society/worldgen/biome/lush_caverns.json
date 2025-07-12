@@ -22,7 +22,6 @@
   "features": [
     [],
     ["society:ladder", "society:rock"],
-    ["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
     ["minecraft:amethyst_geode"],
 
     ["minecraft:monster_room", "minecraft:monster_room_deep"],
@@ -88,6 +87,12 @@
         "weight": 40
       },
       {
+        "type": "minecraft:zombie",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
         "type": "legendarycreatures:forest_mojo",
         "maxCount": 4,
         "minCount": 4,
@@ -100,10 +105,16 @@
         "maxCount": 4
       },
       {
-        "type": "trials:bogged",
+        "type": "minecraft:skeleton",
         "weight": 100,
         "minCount": 1,
         "maxCount": 4
+      },
+      {
+        "type": "species:cliff_hanger",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 20
       },
       {
         "type": "splendid_slimes:splendid_slime",

@@ -1,0 +1,130 @@
+{
+    "name": "Pine Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "meadow:pine_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌐 §5Year-round§r$(li)Price: :coin: 16$(li)Size: 1x1$(br2)$(l)Notes$()$(li)Saplings bought from Market.$(li)Transforms nearby dirt."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Pine Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  L  ",
+                        " LLL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  L  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "meadow:pine_log[axis=y]",
+                    "L": "meadow:pine_leaves",
+                    "W": "meadow:pine_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

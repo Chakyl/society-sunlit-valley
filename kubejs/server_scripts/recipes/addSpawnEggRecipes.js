@@ -45,9 +45,34 @@ ServerEvents.recipes((e) => {
     { egg: "minecraft:parrot_spawn_egg", mineral: "society:marble", coin: "crown" },
     { egg: "autumnity:turkey_spawn_egg", mineral: "society:jasper", coin: "sun" },
     { egg: "autumnity:snail_spawn_egg", mineral: "society:amethyst_chunk", coin: "crown" },
-    { egg: "buzzier_bees:grizzly_bear_spawn_egg", mineral: "society:beemonican_seal", coin: "ancient_coin" },
-    { egg: "snowpig:snow_pig_spawn_egg", mineral: "society:frozen_tear", coin: "crown"},
+    {
+      egg: "buzzier_bees:grizzly_bear_spawn_egg",
+      mineral: "society:beemonican_seal",
+      coin: "ancient_coin",
+    },
+    { egg: "snowpig:snow_pig_spawn_egg", mineral: "society:frozen_tear", coin: "crown" },
     { egg: "snuffles:snuffle_spawn_egg", mineral: "society:lemon_stone", coin: "crown" },
+    { egg: "wildernature:red_wolf_spawn_egg", mineral: "society:spider_silk", coin: "crown" },
+    { egg: "wildernature:cassowary_spawn_egg", mineral: "society:source_gem", coin: "crown" },
+    { egg: "wildernature:squirrel_spawn_egg", mineral: "society:living_flesh", coin: "crown" },
+    { egg: "wildernature:flamingo_spawn_egg", mineral: "society:magma_geode", coin: "sun" },
+    { egg: "wildernature:penguin_spawn_egg", mineral: "society:frozen_geode", coin: "sun" },
+    { egg: "wildernature:minisheep_spawn_egg", mineral: "society:lemon_stone", coin: "sun" },
+    { egg: "wildernature:raccoon_spawn_egg", mineral: "society:jade", coin: "crown" },
+    { egg: "wildernature:deer_spawn_egg", mineral: "society:geode", coin: "crown" },
+    {
+      egg: "wildernature:bison_spawn_egg",
+      mineral: "society:ember_crystal_cluster",
+      coin: "crown",
+    },
+    { egg: "wildernature:pelican_spawn_egg", mineral: "society:holy_symbol", coin: "crown" },
+    { egg: "wildernature:owl_spawn_egg", mineral: "society:legendary_ink", coin: "crown" },
+    { egg: "wildernature:dog_spawn_egg", mineral: "society:aquamarine", coin: "crown" },
+    {
+      egg: "wildernature:hedgehog_spawn_egg",
+      mineral: "society:wheel_of_adaptation",
+      coin: "crown",
+    },
   ];
 
   recipes.forEach((recipe) => {

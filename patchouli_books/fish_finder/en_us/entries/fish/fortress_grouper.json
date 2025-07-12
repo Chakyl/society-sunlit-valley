@@ -1,0 +1,19 @@
+{
+  "name": "Fortress Grouper",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:fortress_grouper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 666$(li)Dimension: Nether$(li)Biome: Any"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:fortressgrouper",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "A I A: Fish Observer"
+    }
+  ]
+}

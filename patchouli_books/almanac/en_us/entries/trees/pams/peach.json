@@ -1,0 +1,83 @@
+{
+    "name": "Peach Tree 🔥",
+    "category": "patchouli:trees",
+    "icon": "pamhc2trees:peach_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🔥 §6Summer§r $(li)Price: :coin: 16,384$(li)Size: 1x1$(li)Grows:$(l:tree_crops/peach)8x Peaches$(/l)$(br2)$(l)Notes$()$(li)Saplings bought from Market."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Peach Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "L": "minecraft:oak_leaves",
+                    "W": "minecraft:oak_log[axis=y]",
+                    "F": "pamhc2trees:pampeach[age=7]"
+                },
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  L  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "LLLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        " FFF ",
+                        " FWF ",
+                        " FFF ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ]
+            }
+        }
+    ]
+}

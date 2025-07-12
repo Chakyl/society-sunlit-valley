@@ -132,7 +132,7 @@
 		#Allows all baby mobs to be captured by cages
 		cage_allow_all_babies = true
 		#Dynamically allows all small mobs inside cages depending on their hitbox size
-		cage_auto_detect = true
+		cage_auto_detect = false
 		#Makes it so all (hostile) mobs captured by cages and jars will be set to persistent so they won't despawn when released
 		persistent_mobs = false
 		#Health percentage under which mobs will be allowed to be captured by cages and jars. Leave at 100 to accept any health level
@@ -208,8 +208,16 @@
 		#Time for a cannon to be able to fire again after it has been fired
 		#Range: 0 ~ 500
 		cooldown = 60
-		cannonball = true
 		music_disc_heave_ho = true
+
+		[functional.cannon.cannonball]
+			enabled = true
+			#Cannonball power scaling. Higher values will make cannonballs have more energy. Reminder that the damage and breaking power of a cannonball is proportional to its energy (speed squared) times this constant
+			#Range: 0.0 ~ 100.0
+			power_scaling = 3.5
+			#Radius of the 'explosion' when a cannonball hits a block. Set to 0 to disable
+			#Range: 0.0 ~ 10.0
+			break_radius = 1.1
 
 	[functional.lumisene]
 		enabled = true

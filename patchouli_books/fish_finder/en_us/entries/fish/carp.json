@@ -1,0 +1,18 @@
+{
+  "name": "Carp",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:carp",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 40$(li)Year-Round$(li)Water: Fresh$(li)Weather: Rain in spring, Any rest of the year$(li)Time: Day except in the winter"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:carp",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Carp me up."
+    }
+  ]
+}

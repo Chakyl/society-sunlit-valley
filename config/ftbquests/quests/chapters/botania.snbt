@@ -141,7 +141,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest4.title}"
-			x: 16.5d
+			x: 17.5d
 			y: -1.5d
 		}
 		{
@@ -181,7 +181,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.botania.quest5.title}"
-			x: 15.5d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
@@ -204,7 +204,7 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
@@ -269,7 +269,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest7.title}"
-			x: 12.5d
+			x: 13.5d
 			y: 1.5d
 		}
 		{
@@ -324,7 +324,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest8.title}"
-			x: 14.5d
+			x: 15.5d
 			y: 1.5d
 		}
 		{
@@ -415,7 +415,7 @@
 				item: "society:botanical_tribute"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
@@ -459,7 +459,7 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: -1.5d
 		}
 		{
@@ -482,7 +482,7 @@
 				item: "botania:mana_diamond"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: 1.0d
 		}
 		{
@@ -499,7 +499,7 @@
 				item: "botania:mana_pearl"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: -1.0d
 		}
 		{
@@ -565,7 +565,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.botania.quest16.title}"
-			x: 10.0d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
@@ -592,7 +592,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest17.title}"
-			x: 9.5d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -615,7 +615,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest18.title}"
-			x: 19.0d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -638,7 +638,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest19.title}"
-			x: 16.5d
+			x: 17.5d
 			y: 1.5d
 		}
 		{
@@ -668,7 +668,7 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
+			x: 12.5d
 			y: 0.0d
 		}
 		{
@@ -698,7 +698,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest21.title}"
-			x: 10.0d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -720,7 +720,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest22.title}"
-			x: 13.5d
+			x: 14.5d
 			y: -1.5d
 		}
 		{
@@ -752,7 +752,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest23.title}"
-			x: 6.0d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -772,6 +772,68 @@
 			title: "{ftbquests.chapter.botania.quest24.title}"
 			x: -5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["33B78DFDDC041570"]
+			description: [
+				"Infusing &6Animal Feed&r with mana by dropping it into a &6Mana Pool&r makes it tastier too farm animals!"
+				""
+				"It takes a decent amount of mana to make but it will save you tons of time when raising new animals."
+			]
+			id: "631D3F5020956DD7"
+			rewards: [{
+				count: 4
+				id: "74BCC347C67AF91F"
+				item: "society:mana_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C39686522168FA9"
+				item: "society:mana_feed"
+				type: "item"
+			}]
+			title: "Mana Feed"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B0A3083FFE1416B"]
+			description: [
+				"The &6Galliraptor&r and &6Tri-Bull&r are mysterious farm animals conjured from massive amounts of mana."
+				""
+				"You'll need an &bentire Mana Pool&r worth of mana to summon one, alongside an array of animal products to graft onto the hungry rune."
+			]
+			icon: "farmlife:galliraptor_spawn_egg"
+			id: "656E19A85C1146B4"
+			rewards: [{
+				id: "2ACF2741BA79BC87"
+				item: "society:candied_animal_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B98D183C624AEA4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "farmlife:domestic_tribull_spawn_egg"
+							}
+							{
+								Count: 1b
+								id: "farmlife:galliraptor_spawn_egg"
+							}
+						]
+					}
+				}
+				title: "Any Magical Farm Animal Crate"
+				type: "item"
+			}]
+			title: "Magical Animals"
+			x: 12.5d
+			y: -1.5d
 		}
 	]
 	title: "{ftbquests.chapter.botania.title}"

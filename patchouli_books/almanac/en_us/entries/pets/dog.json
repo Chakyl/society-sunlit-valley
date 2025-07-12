@@ -1,0 +1,17 @@
+{
+  "name": "Dog",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Sheep Fossil$(br2)$(l)Taming$()$(br)Bone"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:dog",
+      "scale": 0.7,
+      "text": "Not a big fan of cats"
+    }
+  ]
+}

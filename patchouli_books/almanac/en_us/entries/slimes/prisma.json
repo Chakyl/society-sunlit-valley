@@ -1,0 +1,17 @@
+{
+  "name": "Prisma",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text", 
+      "text": "$(l)Locations:$()$(li)Crab Traps: Deluxe Crab Trap Bait$(li)Slime Heart Fusion$(br2)$(l)Risks:$()$(br)Has thorns and will cause the Mining Fatigue effect when upset. Gets unhappy when outside of water!"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Prisma Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:prisma\"}",
+      "scale": 0.9
+    }
+  ]
+}

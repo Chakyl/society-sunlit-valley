@@ -1,0 +1,17 @@
+{
+  "name": "Minisheep",
+  "category": "patchouli:animals",
+  "icon": "society:fine_wool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: :coin: 1,024$(li)Milk: Sheep Milk$(li)Milk Cooldown: 2 days$(li)Shear drops: Wool, Fine Wool $(li)Drops: Raw Mutton, Wool$(br2)$(l)Notes$()$(br)Fine Wool only drops at 6+ hearts of affection"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:minisheep",
+      "scale": 0.8,
+      "text": "The fluffiest of fluffies! The finest of fine wools!"
+    }
+  ]
+}

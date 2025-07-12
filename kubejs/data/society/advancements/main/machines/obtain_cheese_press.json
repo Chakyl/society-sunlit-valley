@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/machines/obtain_tapper",
+  "criteria": {
+    "press": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:cheese_press"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_cheese_press.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:cheese_press"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_cheese_press.title"
+    }
+  },
+  "requirements": [["press"]],
+  "sends_telemetry_event": true
+}

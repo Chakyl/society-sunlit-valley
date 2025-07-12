@@ -1,0 +1,18 @@
+{
+  "name": "Arrau Turtle",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:arrau_turtle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 280$(li)\uD83C\uDF42 §4Autumn§0$(li)Water: River$(li)Weather: Rain & Snow$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:arrau_turtle",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Runs some kind of turtle club."
+    }
+  ]
+}

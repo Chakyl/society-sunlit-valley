@@ -1,0 +1,100 @@
+{
+  "parent": "bakery:main/place_stove",
+  "display": {
+    "icon": {
+      "item": "bakery:jar"
+    },
+    "title": {
+      "translate": "advancement.bakery.get_all_jams"
+    },
+    "description": {
+      "translate": "advancement.bakery.get_all_jams.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "criteria": {
+    "bakery:strawberry_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:strawberry_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:chocolate_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:chocolate_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:apple_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:apple_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:glowberry_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:glowberry_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:sweetberry_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:sweetberry_jam"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bakery:strawberry_jam"
+    ],
+    [
+      "bakery:chocolate_jam"
+    ],
+    [
+      "bakery:apple_jam"
+    ],
+    [
+      "bakery:glowberry_jam"
+    ],
+    [
+      "bakery:sweetberry_jam"
+    ]
+  ]
+}

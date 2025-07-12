@@ -1,0 +1,17 @@
+{
+  "name": "Penguin",
+  "category": "patchouli:animals",
+  "icon": "society:penguin_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Egg: Penguin Egg$(li)Drops: Feather$(br2)$(l)Notes$()$(br)Eggs require 2+ hearts. Can be found in Frozen Oceans and Ice Spikes biomes." 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:penguin",
+      "scale": 0.5,
+      "text": "I'm like the Penguin but a minecraft mob"
+    }
+  ]
+}

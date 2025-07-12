@@ -1,0 +1,17 @@
+{
+  "name": "Flamingo",
+  "category": "patchouli:animals",
+  "icon": "society:flamingo_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Egg: Flamingo Egg$(li)Drops: Feather$(br2)$(l)Notes$()$(br)Eggs require 4+ hearts. Can be found in Jungles." 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:flamingo",
+      "scale": 0.5,
+      "text": "Show off your natural hue, Flamingo!"
+    }
+  ]
+}

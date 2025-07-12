@@ -25,7 +25,7 @@
 				item: "society:ribbit_drum"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -55,7 +55,7 @@
 				item: "society:aquamagical_dust"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -0.5d
 		}
 		{
@@ -131,7 +131,7 @@
 				item: "society:mini_oni_eye"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -0.5d
 		}
 		{
@@ -141,7 +141,7 @@
 				item: "society:wheel_of_adaptation"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.0d
 			y: -0.5d
 		}
 		{
@@ -191,6 +191,7 @@
 				"47264B28B0B801AB"
 				"6F1185DF7F75728F"
 				"4AA3E179161C2AFE"
+				"68DB8018FDF785EE"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -245,7 +246,7 @@
 				item: "society:production_science_pack"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: -0.5d
 		}
 		{
@@ -277,6 +278,16 @@
 			}]
 			x: -4.5d
 			y: 1.5d
+		}
+		{
+			id: "68DB8018FDF785EE"
+			tasks: [{
+				id: "295C9C5D0E94BEAA"
+				item: "society:glitched_vhs"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
 		}
 	]
 	title: "{ftbquests.chapter.artifacts.title}"

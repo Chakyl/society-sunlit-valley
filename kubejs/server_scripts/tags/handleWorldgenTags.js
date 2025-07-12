@@ -36,5 +36,4 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("sereneseasons:tropical_biomes", "#atmospheric:is_dunes");
   e.add("sereneseasons:infertile_biomes", "#minecraft:is_nether");
   e.add("sereneseasons:infertile_biomes", "#minecraft:is_skull_cavern");
-  e.add("sereneseasons:infertile_biomes", "#minecraft:is_river");
 });

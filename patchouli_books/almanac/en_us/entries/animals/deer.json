@@ -1,0 +1,17 @@
+{
+  "name": "Deer",
+  "category": "patchouli:animals",
+  "icon": "society:dried_foul_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Forage: Dried Berries (25% chance)$(li)Drops: Venison, Leather$(br2)$(l)Notes$()$(br)Foraging requires 3+ hearts. Can be found in Forest biomes."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:deer",
+      "scale": 0.7,
+      "text": "Deer will forage for wild berries, sharing them if they like you! I wonder why they're dried..."
+    }
+  ]
+}

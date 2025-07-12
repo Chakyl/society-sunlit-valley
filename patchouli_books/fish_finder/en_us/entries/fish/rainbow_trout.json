@@ -1,0 +1,18 @@
+{
+  "name": "Rainbow Trout",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:rainbow_trout",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 64$(li)\u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: River$(li)Weather: Rain Snow$(li)Time: Day"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:rainbow_trout",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "You will definitely get that Prismatic Shard :slightly_smiling_face:"
+    }
+  ]
+}

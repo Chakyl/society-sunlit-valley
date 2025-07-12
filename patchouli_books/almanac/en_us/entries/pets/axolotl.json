@@ -1,0 +1,17 @@
+{
+  "name": "Axolotl",
+  "category": "patchouli:pets",
+  "icon": "beachparty:rubber_ring_axolotl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Axolotl Friend, Axolotl Rubber Ring"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:axolotl",
+      "scale": 0.8  ,
+      "text": "Lush Caves native that loves hunting fish"
+    }
+  ]
+}

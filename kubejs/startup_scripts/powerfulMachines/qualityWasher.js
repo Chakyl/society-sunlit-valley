@@ -43,12 +43,9 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray(
-          "Removes Quality from items and inserts them into the block below"
-        )
-      );
+      item.tooltip(Text.gray("Removes Quality from items and inserts them into the block below"));
       item.tooltip(Text.red("Quality can not be restored!"));
+      item.tooltip(Text.green("Automatable using hoppers"));
       item.modelJson({
         parent: "society:block/quality_washer",
       });
@@ -65,13 +62,9 @@ StartupEvents.registry("block", (event) => {
           .insertItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.insertItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     });
 });

@@ -1,0 +1,26 @@
+{
+    "name": "Passionfruit 🌼",
+    "category": "patchouli:tree_crops",
+    "icon": "atmospheric:passion_fruit",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 128$(li)🌼 §2Spring§r§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/passionfruit)Passionfruit Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Passionfruit Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:jungle_leaves",
+                    "F": "pamhc2trees:pampassionfruit[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

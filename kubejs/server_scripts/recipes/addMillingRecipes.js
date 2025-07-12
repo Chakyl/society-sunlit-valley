@@ -43,4 +43,5 @@ ServerEvents.recipes((e) => {
   addMillRecipe("farm_and_charm:barley_ball", "society:animal_feed_sack", 3);
   addMillRecipe("farm_and_charm:corn_bag", "society:animal_feed_sack", 7);
   addMillRecipe("minecraft:hay_block", "society:animal_feed_sack", 12);
+  addMillRecipe("society:animal_feed_sack", "society:animal_feed", 9);
 });

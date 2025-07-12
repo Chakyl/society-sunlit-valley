@@ -1,0 +1,303 @@
+{
+  "animal_fancy": {
+    "title": "Animal Fancy",
+    "description": "Increases affection gained from petting farm animals.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:animal_fancy"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s animal_fancy",
+          "lock_command": "kubejs stages remove @s animal_fancy"
+        }
+      }
+    ]
+  },
+  "banana_karenina": {
+    "title": "Banana Karenina",
+    "description": "Doubles Banana Tree output.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:banana_karenina"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s banana_karenina",
+          "lock_command": "kubejs stages remove @s banana_karenina"
+        }
+      }
+    ]
+  },
+  "brine_and_punishment": {
+    "title": "Brine And Punishment",
+    "description": "Pickled items are worth 100% more.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:brine_and_punishment"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s brine_and_punishment",
+          "lock_command": "kubejs stages remove @s brine_and_punishment"
+        }
+      }
+    ]
+  },
+  "bluegill_meridian": {
+    "title": "Bluegill Meridian",
+    "description": "Bluegill are now worth 666 §f●.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:bluegill_meridian"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s bluegill_meridian",
+          "lock_command": "kubejs stages remove @s bluegill_meridian"
+        }
+      }
+    ]
+  },
+  "canadian_and_famous": {
+    "title": "Canadian And Famous",
+    "description": "Tappers output double. Doesn't affect Auto-Tappers.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:canadian_and_famous"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s canadian_and_famous",
+          "lock_command": "kubejs stages remove @s canadian_and_famous"
+        }
+      }
+    ]
+  },
+  "debt_caverns": {
+    "title": "Debt: The First 5000 Caverns",
+    "description": "Fainting in the Skull Cavern no longer costs a fee or adds to debt.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:debt_caverns"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s debt_caverns",
+          "lock_command": "kubejs stages remove @s debt_caverns"
+        }
+      }
+    ]
+  },
+  "first_aid_guide": {
+    "title": "First Aid Guide",
+    "description": "Halves the maximum fee and debt from death.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:first_aid_guide"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s first_aid_guide",
+          "lock_command": "kubejs stages remove @s first_aid_guide"
+        }
+      }
+    ]
+  },
+  "frogs_bounty_bazaar": {
+    "title": "Frog's Bounty Bazaar",
+    "description": "Prize Tickets give double the prizes.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:frogs_bounty_bazaar"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s frogs_bounty_bazaar",
+          "lock_command": "kubejs stages remove @s frogs_bounty_bazaar"
+        }
+      }
+    ]
+  },
+  "hitting_hard_and_soft": {
+    "title": "Hitting Hard and Soft",
+    "description": "Melee attacks do an extra 4 damage.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:hitting_hard_and_soft"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s hitting_hard_and_soft",
+          "lock_command": "kubejs stages remove @s hitting_hard_and_soft"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 4,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "intro_to_algorithms": {
+    "title": "Introduction to Algorithms",
+    "description": "Lead ore no longer causes Brain Damage clouds.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:intro_to_algorithms"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s intro_to_algorithms",
+          "lock_command": "kubejs stages remove @s intro_to_algorithms"
+        }
+      }
+    ]
+  },
+  "no_name_for_the_sheep": {
+    "title": "No Name For the Sheep",
+    "description": "Naming animals grants an additional heart of affection.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:no_name_for_the_sheep"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s no_name_for_the_sheep",
+          "lock_command": "kubejs stages remove @s no_name_for_the_sheep"
+        }
+      }
+    ]
+  },
+  "paradise_crop": {
+    "title": "Paradise Crop",
+    "description": "1 additional crop drop per harvest.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:paradise_crop"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s paradise_crop",
+          "lock_command": "kubejs stages remove @s paradise_crop"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "additional_attributes:harvest",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "phenomenology_of_treasure": {
+    "title": "The Phenomenology of Treasure",
+    "description": "Artifacts and Relics are worth 200% more.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:phenomenology_of_treasure"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s phenomenology_of_treasure",
+          "lock_command": "kubejs stages remove @s phenomenology_of_treasure"
+        }
+      }
+    ]
+  },
+  "slime_contain_protect": {
+    "title": "Slime Contain Protect",
+    "description": "Incubating a Slime Heart has a chance to give you a Slime Ticket.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:slime_contain_protect"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s slime_contain_protect",
+          "lock_command": "kubejs stages remove @s slime_contain_protect"
+        }
+      }
+    ]
+  },
+  "slouching_towards_artistry": {
+    "title": "Slouching Towards Artistry",
+    "description": "Artisan Hoppers have a +5% chance to not consume Sparkstone for each day an output took to make. This only applies when harvesting from the machine.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:slouching_towards_artistry"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s slouching_towards_artistry",
+          "lock_command": "kubejs stages remove @s slouching_towards_artistry"
+        }
+      }
+    ]
+  }
+}

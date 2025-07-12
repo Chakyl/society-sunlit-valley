@@ -1,0 +1,18 @@
+{
+  "name": "Boulti",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:boulti",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 128$(li)\u00a70\ud83d\udd25 \u00a76Summer\u00a70$(li)Water: Fresh$(li)Weather: Any$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:boulti",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Bolting on what?"
+    }
+  ]
+}

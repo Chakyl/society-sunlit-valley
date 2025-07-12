@@ -1,0 +1,19 @@
+{
+  "name": "Aero Mono",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_aero_mono",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 128$(li)\u00a70\u2746 \u00a7bWinter\u00a70$(li)Water: Fresh$(li)Weather: Any$(li)Time: Day"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:aero_mono",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.3,
+      "text": "Air supply? I thought you were a fish."
+    }
+  ]
+}

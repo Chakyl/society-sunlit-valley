@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "bakery:chocolate_box"
+    ]
+  },
+  "criteria": {
+    "has_oak_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bakery:chocolate_box"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_oak_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

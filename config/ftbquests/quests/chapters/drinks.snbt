@@ -1067,6 +1067,7 @@
 				"594A9E5DBA22F02F"
 				"775F72DBDDB93C41"
 				"0C6E04C2255AD8F8"
+				"1D2808AF740F8C6A"
 			]
 			hide_dependency_lines: true
 			icon: "herbalbrews:tea_kettle"
@@ -1216,6 +1217,16 @@
 			}]
 			x: 15.0d
 			y: -2.5d
+		}
+		{
+			id: "1D2808AF740F8C6A"
+			tasks: [{
+				id: "787FDBE7E2343906"
+				item: "society:bowl_of_soul"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 3.0d
 		}
 	]
 	title: "{ftbquests.chapter.drinks.title}"

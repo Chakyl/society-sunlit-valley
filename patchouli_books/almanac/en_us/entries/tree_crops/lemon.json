@@ -1,0 +1,26 @@
+{
+    "name": "Lemon 🌼🔥",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:lemonitem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 160$(li)🌼 §2Spring§r 🔥 §6Summer§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/lemon)Lemon Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Lemon Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "F": "pamhc2trees:pamlemon[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

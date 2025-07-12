@@ -36,6 +36,123 @@
               }
             ]
           },
+          "alpine_coal_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_coal_ore"
+                }
+              }
+            ]
+          },
+          "alpine_copper_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_copper_ore"
+                }
+              }
+            ]
+          },
+          "alpine_iron_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_iron_ore"
+                }
+              }
+            ]
+          },
+          "alpine_lapis_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_lapis_ore"
+                }
+              }
+            ]
+          },
+          "alpine_emerald_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_emerald_ore"
+                }
+              }
+            ]
+          },
+          "alpine_gold_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_gold_ore"
+                }
+              }
+            ]
+          },
+          "alpine_diamond_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_diamond_ore"
+                }
+              }
+            ]
+          },
+          "alpine_redstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_redstone_ore"
+                }
+              }
+            ]
+          },
+          "alpine_salt_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_salt_ore"
+                }
+              }
+            ]
+          },
           "copper_ore": {
             "operations": [
               {
@@ -442,19 +559,19 @@
         },
         "experience": [
           {
-            "condition": "!silk_touch & (coal_ore | copper_ore)",
+            "condition": "!silk_touch & (coal_ore | copper_ore | alpine_coal_ore)",
             "expression": "5"
           },
           {
-            "condition": "!silk_touch & (iron_ore | lapis_ore)",
+            "condition": "!silk_touch & (iron_ore | lapis_ore | alpine_iron_ore | alpine_lapis_ore | alpine_salt_ore)",
             "expression": "6"
           },
           {
-            "condition": "!silk_touch & (gold_ore | redstone_ore | zinc_ore)",
+            "condition": "!silk_touch & (gold_ore | alpine_gold_ore | redstone_ore | alpine_redstone_ore | zinc_ore)",
             "expression": "7"
           },
           {
-            "condition": "!silk_touch & (diamond_ore | emerald_ore)",
+            "condition": "!silk_touch & (diamond_ore | emerald_ore | alpine_emerald_ore | alpine_diamond_ore )",
             "expression": "16"
           },
           {

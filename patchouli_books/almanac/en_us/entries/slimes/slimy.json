@@ -1,0 +1,17 @@
+{
+  "name": "Slimy",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Structure: Slime Spawners$(li)Dig spots: Overworld$(br2)$(l)Risks:$()$(br)When turned into a Largo, it will get upset when it doesn't eat from both diets (One after the other)."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Slimy Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:slimy\"}",
+      "scale": 0.9
+    }
+  ]
+}

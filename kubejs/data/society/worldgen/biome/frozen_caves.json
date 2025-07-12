@@ -42,6 +42,12 @@
         "maxCount": 1
       },
       {
+        "type": "species:bewereager",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 30
+      },
+      {
         "type": "splendid_slimes:splendid_slime",
         "weight": 10,
         "minCount": 1,
@@ -91,7 +97,6 @@
       "society:glow_lichen",
       "society:frozen_caves/ice_patch_floor",
       "society:frozen_caves/snow_patch_floor",
-      "society:frozen_caves/powder_snow_patch_floor",
       "society:frozen_caves/slush_patch_floor",
       "society:frozen_caves/ice_patch_ceiling",
       "society:frozen_caves/slush_patch_ceiling"

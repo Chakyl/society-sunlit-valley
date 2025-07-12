@@ -1,0 +1,17 @@
+{
+  "name": "Puddle",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:puddle\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text", 
+      "text": "$(l)Locations:$()$(li)Crab Traps: Crab Trap Bait, Deluxe Crab Trap Bait$(li)Fishing spots$(br2)$(l)Risks:$()$(br)Has thorns and gets unhappy when outside of water!"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Puddle Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:puddle\"}",
+      "scale": 0.9
+    }
+  ]
+}

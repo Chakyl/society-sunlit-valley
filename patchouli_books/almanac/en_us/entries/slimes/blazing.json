@@ -1,0 +1,17 @@
+{
+  "name": "Blazing",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Biome: Blackstone Caves (Skull Cavern)$(li)Structure: Nether Fortress, Bastion chests, Nether Slime Spawners$(li)Dig spots: Nether blocks$(br2)$(l)Risks:$()$(br)Starts fires when hungry and increase fire damage when mad."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Blazing Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:blazing\"}",
+      "scale": 0.9
+    }
+  ]
+}

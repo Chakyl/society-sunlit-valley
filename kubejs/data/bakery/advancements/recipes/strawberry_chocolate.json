@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "bakery:strawberry_chocolate"
+    ]
+  },
+  "criteria": {
+    "has_strawberry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farm_and_charm:strawberry"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bakery:strawberry_chocolate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_strawberry",
+      "has_the_recipe"
+    ]
+  ]
+}

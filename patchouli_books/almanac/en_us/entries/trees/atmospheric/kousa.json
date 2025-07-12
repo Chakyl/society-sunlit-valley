@@ -1,0 +1,124 @@
+{
+    "name": "Kousa Tree ❆",
+    "category": "patchouli:trees",
+    "icon": "atmospheric:kousa_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)❆ §bWinter§r$(li)Size: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Kousa Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "     L  ",
+                        "    LLL ",
+                        "     L  ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "  L     ",
+                        " LLL L  ",
+                        "  L LLL ",
+                        "   LLLLL",
+                        "    LLL ",
+                        "     L  "
+                    ],
+                    [
+                        "  L     ",
+                        " LLL    ",
+                        "LLLLLLL ",
+                        " LLLLLLL",
+                        " LLLLWLL",
+                        "  LLLLLL",
+                        "    LLL "
+                    ],
+                    [
+                        " LLL    ",
+                        "LLLLL   ",
+                        "LLWLLL  ",
+                        "LLLLLLL ",
+                        "LLLLWLLL",
+                        " LLLLLL ",
+                        "  L  L  "
+                    ],
+                    [
+                        "  L     ",
+                        " LLL    ",
+                        "LLWLL   ",
+                        "LLWLLL  ",
+                        "LLWWLLL ",
+                        "LLLLLL  ",
+                        " LLL    "
+                    ],
+                    [
+                        "        ",
+                        "  L     ",
+                        " LLL    ",
+                        " LLL    ",
+                        "LLWLL   ",
+                        " LLL    ",
+                        "  L     "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "  L     ",
+                        " LWL    ",
+                        "  L     ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "        ",
+                        "  W     ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "        ",
+                        "  W     ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "        ",
+                        "  W     ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "    0   ",
+                        "  W     ",
+                        "        ",
+                        "        "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:air",
+                    "L": "atmospheric:kousa_leaves",
+                    "W": "atmospheric:kousa_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

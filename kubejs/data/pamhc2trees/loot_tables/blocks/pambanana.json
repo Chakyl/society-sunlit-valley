@@ -1,47 +1,47 @@
 {
-    "type": "minecraft:block",
-    "pools":
-    [
-      {
-        "rolls": 1,
-        "entries":
-        [
-          {
-            "type": "minecraft:item",
-            "name": "pamhc2trees:pambanana"
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2trees:pambanana"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "tag": "forge:shears"
           }
-        ],
-        "conditions":
-        [
-          {
-            "condition": "minecraft:match_tool",
-            "predicate":
-            {
-              "tag": "forge:shears"
-            }
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2trees:bananaitem",
+          "weight": 999
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "society:banana_karenina",
+          "weight": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "pamhc2trees:pambanana",
+          "properties": {
+            "age": "7"
           }
-        ]
-      },
-      {
-        "rolls": 3,
-        "entries":
-        [
-          {
-            "type": "minecraft:item",
-            "name": "pamhc2trees:bananaitem"
-          }
-        ],
-        "conditions":
-        [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "pamhc2trees:pambanana",
-            "properties":
-            {
-              "age": "7"
-            }
-          }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ]
+}

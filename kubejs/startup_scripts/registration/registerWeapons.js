@@ -27,7 +27,7 @@ StartupEvents.registry("item", (e) => {
         })
       );
     });
-    e.create("society:dragontooth_axe", "axe")
+  e.create("society:dragontooth_axe", "axe")
     .texture("society:item/dragontooth_axe")
     .rarity("epic")
     .tier("prismatic")
@@ -47,6 +47,21 @@ StartupEvents.registry("item", (e) => {
     .tier("prismatic")
     .attackDamageBaseline(6.0)
     .speed(3.0)
+    .modifyTier((tier) => {
+      tier.setRepairIngredient(
+        Ingredient.custom((item) => {
+          if (item.id == "society:prismatic_shard") return true;
+          return false;
+        })
+      );
+    });
+  e.create("society:meowmageddon", "sword")
+    .texture("society:item/meowmageddon")
+    .rarity("epic")
+    .tier("prismatic")
+    .displayName("§bMeow§fmag§deddon")
+    .attackDamageBaseline(11.0)
+    .speed(4.0)
     .modifyTier((tier) => {
       tier.setRepairIngredient(
         Ingredient.custom((item) => {

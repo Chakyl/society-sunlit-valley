@@ -76,6 +76,7 @@ BlockEvents.placed(
     "waystones:red_sharestone",
     "waystones:waystone",
     "torchmaster:megatorch",
+    "society:skull_cavern_teleporter"
   ],
   (e) => {
     const { player, level, server } = e;

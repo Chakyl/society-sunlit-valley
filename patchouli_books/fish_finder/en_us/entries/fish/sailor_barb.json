@@ -1,0 +1,18 @@
+{
+  "name": "Sailor barb",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_sailor_barb",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 112$(li)\u00a70\ud83c\udf42 \u00a74Autumn\u00a70$(li)Water: Ocean$(li)Weather: Any$(li)Time: Day"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:sailor_barb",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Uh, I'm in my prime, Optimus."
+    }
+  ]
+}

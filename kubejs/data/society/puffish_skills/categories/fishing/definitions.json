@@ -39,7 +39,7 @@
   },
   "fly_fisher": {
     "title": "Fly Fisher",
-    "description": "+1 fish when caught in the Overworld.",
+    "description": "+1 fish when caught using any rod.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -208,7 +208,7 @@
   },
   "school_fisher": {
     "title": "School Fisher",
-    "description": "+3 fish when caught in the Overworld.",
+    "description": "+3 fish when caught using any rod.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -233,7 +233,7 @@
   },
   "prismatic_bounty": {
     "title": "Prismatic Bounty",
-    "description": "Chance to find §dPrismatic Shards§7 in Neptune's Bounty.",
+    "description": "Neptune's Bounties drops a §dPrismatic Shard§7 when mined without Silk Touch.",
     "frame": {
       "type": "advancement",
       "data": {

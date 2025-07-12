@@ -1,0 +1,17 @@
+{
+  "name": "Bony",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bony\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Biome: Soul Sand Valley$(li)Structure: Overworld Slime Spawners$(li)Dig spots: All$(li)Balloon Boxes: Red$(br2)$(l)Risks:$()$(br)Just happy to be here!"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Bony Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bony\"}",
+      "scale": 0.9
+    }
+  ]
+}

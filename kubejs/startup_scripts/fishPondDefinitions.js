@@ -507,7 +507,13 @@ global.fishPondDefinitions = [
       },
     ],
   },
-  { item: "minecraft:cod", quests: basicQuests },
+  {
+    item: "minecraft:cod",
+    quests: basicQuests,
+    additionalRewards: [
+      { minPopulation: 10, item: "wildernature:cod_catcher_banner", count: 1, chance: 0.01 },
+    ],
+  },
   {
     item: "aquaculture:pollock",
     quests: [
@@ -531,7 +537,7 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "society:aged_amethyst_cheese_block", count: 1 },
-          { item: "meadow:wooden_amethyst_milk_bucket", count: 1 },
+          { item: "society:large_amethyst_milk", count: 4 },
           { item: "meadow:piece_of_amethyst_cheese", count: 1 },
         ],
       },
@@ -1886,7 +1892,6 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "farm_and_charm:roaster", count: 4 },
           { item: "minecraft:furnace", count: 32 },
-          { item: "candlelight:cooking_hat", count: 4 },
         ],
       },
       {
@@ -2452,6 +2457,12 @@ global.fishPondDefinitions = [
         count: 1,
         chance: 0.18,
       },
+      {
+        minPopulation: 8,
+        item: "species:broken_links",
+        count: 12,
+        chance: 0.32,
+      },
     ],
   },
   {
@@ -2870,6 +2881,12 @@ global.fishPondDefinitions = [
       },
       {
         minPopulation: 8,
+        item: "species:coil",
+        count: 4,
+        chance: 0.14,
+      },
+      {
+        minPopulation: 8,
         item: "railways:riveted_locometal",
         count: 64,
         chance: 0.24,
@@ -3051,7 +3068,6 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "society:galaxy_sword", count: 1 },
-          { item: "quark:dragon_scale", count: 1 },
           { item: "society:relic_trove", count: 1 },
           { item: "society:artifact_trove", count: 1 },
         ],
@@ -3075,6 +3091,12 @@ global.fishPondDefinitions = [
         minPopulation: 7,
         item: "society:fantasy_dust",
         count: 1,
+        chance: 0.17,
+      },
+      {
+        minPopulation: 8,
+        item: "species:werefang",
+        count: 4,
         chance: 0.17,
       },
       {

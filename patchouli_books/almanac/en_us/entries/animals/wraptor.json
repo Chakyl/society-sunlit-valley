@@ -1,0 +1,17 @@
+{
+  "name": "Wraptor",
+  "category": "patchouli:animals",
+  "icon": "species:wraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Egg: Wraptor Egg $(br2)$(l)Notes$()$(br)Eggs require 2+ hearts. Can be found in Warped Forests. Will despawn if not nametagged!"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:wraptor",
+      "scale": 0.8,
+      "text": "They hate being outside the comforting warmth of the Nether."
+    }
+  ]
+}

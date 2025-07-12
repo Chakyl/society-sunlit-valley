@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["PLP", "DDD", "PLP"],
   "key": {
-    "P": { "item": "minecraft:oak_planks" },
-    "L": { "item": "minecraft:oak_log" },
+    "P": { "tag": "minecraft:planks" },
+    "L": { "tag": "society:raw_logs" },
     "D": { "item": "numismatics:cog" }
   },
   "result": {

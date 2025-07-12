@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "behaviors": {
     "aquaculture:tuna": {
       "idle_time": 30,
@@ -55,7 +56,7 @@
     },
 
     "aquaculture:minnow": {
-      "idle_time": 1,
+      "idle_time": 30,
       "top_speed": 2,
       "up_acceleration": 0.6,
       "down_acceleration": 0.6,

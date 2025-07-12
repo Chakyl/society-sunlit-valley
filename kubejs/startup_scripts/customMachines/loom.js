@@ -24,7 +24,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Processes 5 fibers into artisan items"));
       item.modelJson({
-        parent: "society:block/loom_off",
+        parent: "society:block/loom/loom_off",
       });
     })
     .defaultState((state) => {
@@ -95,14 +95,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.loomRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/loom_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("loom")),
+    multipart: getCardinalMultipartJson("loom"),
   };
 });

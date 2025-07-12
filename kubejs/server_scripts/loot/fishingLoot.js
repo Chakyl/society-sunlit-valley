@@ -55,8 +55,8 @@ LootJS.modifiers((e) => {
       p.randomChance(0.04).addLoot("society:relic_trove");
       p.limitCount([1, 1]);
     });
-
-  e.addLootTypeModifier(LootType.CHEST)
+  e.addBlockLootModifier("aquaculture:neptunes_bounty")
     .hasAnyStage("prismatic_bounty")
-    .replaceLoot("aquaculture:message_in_a_bottle", "society:prismatic_shard", true);
+    .not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")))
+    .replaceLoot("aquaculture:neptunes_bounty", "society:prismatic_shard", true);
 });

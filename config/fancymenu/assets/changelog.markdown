@@ -1,216 +1,88 @@
 ^^^
-## Iridium Sparks
-### v3.0.4
+## Library of Animals
+### v3.1.0
 ^^^
 --- 
-- Added completely redone Skull Cavern dimension and mechanics
-- Skull Cavern has new layer-based cave generation courtesy of Uni
-- Added new weather mechanics. No more watering plants right before rain! (Thanks coolbot100s)
-- Added Tapper - Replaces old Tap (Right click/craft to update)
-- Added Sparkstone ores & Sparkstone, a gem used for automating Artisan machines
-- Added Artisan Hopper, a machine for automating Artisan Machines using Sparkstone
-- Added Auto-Grabber, a machine for automating husbandry animal collection using Sparkstone
-- Added Auto-Tapper, a machine for collecting Tapper resources using Create
-- Added Iridium Coin to replace Netherite coin (Rename/retexture, items won't be lost)
-- Added Neptunium coin as tier between Iridium and Ancient 
-- Added Iridium Ore
-- Added Iridium Tier to replace Netherite (Just a rename/retexture)
-- Added Recycling Machine
-- Added Magnifying Glass
-- Added Bouquet Bag
-- Added Sap and Rubber
-- Added Happy Ghast and Pale Garden
-- Added tapping recipes to Birch and Wise Oak
-- Added Create-focused quest chapter and reworked entire Create progression/balance
-- Added Juicy and Sparkcat Splendid Slimes
-- Added Slime Ticket
-- Added Silver and Lead - Create focused resources
-- Added Electrum tier of tools/armor 
-- Added Hypertubes
-- Added tooltip to removed items
-- Added Animal Feed Sack (Storage Block)
-- Added new Cornucopia texture
-- Added Token of Unity Artifact
-- Added Smithing Templates to dig spot pool
-- Added Horseman and Ears mods
-- Added Chai Blend as crafting ingredient for Chait Tea
-- Added ores to Botania Orechids
-- Added fishing spots
-- Added Neptunium-Infused Hook to replace Fish Tank reward (Replaces Nether Star Hook)
-- Added recipes for Create Trains that don't require Create
-- Added chance for Neptune's Bounty to Stardew Fishing chests
-- Added Goddess Statues for sale from Cleric (removed from Wandering Trader)
-- Ancient Goddess Statue Artifact Trove trade changed to give Sparkstone
-- Artisan Machines now drop unfinished inputs when broken
-- All-Seeing and Webby Slimes now climb walls
-- Nether, Skull Cavern, and certain overworld blacklisted biomes (such as rivers) are now infertile
-- Most oceans and beaches are now tropical biomes
-- Gold Slimes now Largoless
-- Slimy Slimes are now Picky
-- Phantom Slimes are now Photosynthesizing 
-- Luminous Slimes now eat Veggies
-- Dragontooth Axe now requires Bone Block instead of Prismatic Shard
-- Changed Gaming Console recipe to not require Create
-- Seeds will now explain biomes that are always one season when planting incorrectly
-- Fish Ponds now mature once a day in the morning to match other mechanics
-- Fish Ponds preserve type, population, and max population when broken
-- Husbandry animals no longer appreciate being kept on a seat for eternity
-- Heretic Skill now also makes farm animals drop Sparkstone
-- Sprinklers now no longer need the previous tier to craft
-- Improved some loot pools
-- Increased max trades of common villager purchases to 4096
-- Increased prices of Blacksmith resources
-- Increased Dig speed, attack damage, and armor of all Netherite (Iridium) gear
-- Increased attack damage of Galaxy Sword by 2
-- Increased amount of fluid outputted from mechanically pressing fruits that have Apple Press recipe
-- Increased cost of Iron Hook
-- Increased cost of Turkey spawn eggs
-- Increased Auto Worm Farm production speed
-- Increased Prismatic Bounty odds
-- Increased chance/output of Fish Pond resources due to new mechanics
-- Increased Fishing skill leveling experience requirements
-- Increased Adventuring experience from killing mobs
-- Paw Paw and Hazelnut Saplings now guaranteed from Prize Machine
-- Replaced Bee Bundle in Pantry with Quality Crops Bundle (Pantry)
-- Replaced Nether Star requirement with Wither Skeleton Skulls in Adventurer's Bundle (Boiler Room)
-- Reduced Pantry crop requirements from 32 ->16
-- Reduced Tapper resource ingredient costs for some recipes
-- Reduced crafting cost of Fish Pond
-- Reduced chance of catching Neptuna
-- Reduced Chunkroderite Block value from Neptunium Ingots (24 -> 8)
-- Reduced cost of Conjuration catalyst
-- Reduced cost of Preserves Jars & Canvas Loom
-- Reduced cost of Mechanical Saw, Drill, and Harvester
-- Reduced cost of quality fertilizers
-- Reduced Plort value of low difficulty Slimes
-- Reduced value of Slime Hearts (2 x Plort value -> 1.5 x Plort Value)
-- Reduced Bait Maker output from 6 -> 3
-- Reduced feeding cooldown of Feeding Trough (5m -> 3m)
-- Removed Sweet Berries from market
-- Removed Destruction and Reinforced tiers of Hammers. Previously purchased Hammers not affected
-- Removed Bread cutting board recipe that outputted nothing
-- Removed all recipe conflicts + Polymorph
-- Removed rubber rings from loot table
-- Removed Ancient Coin trades due to new coin tier
-- Removed Pint Charisma effect
-- Removed Cornucopia from Mystical Botanist and added cheaper recipe
-- Removed Create items from Red Balloons and replaced them with upgrade templates
-- Removed potions from red/white wine tag
-- Reduced difficulty of Minnow in Fishing Minigame
-- Removed Phantom Slime Hearts from Balloon Chests
-- Removed Ancient Debris (Can be turned into iridium)
-- Removed Lava Lakes from the surface
-- Removed Kinetic Mechanic
-- Removed Curse of Vanishing and Binding
-- Removed some broken/sequence breaking blocks from structures 
-- Removed the End dimension by Removing Strongholds
-- Fixed Crimson/Warped fungus triggering treechop without felling
-- Fixed Feeding Trough and Mana Milker having incorrect radius on the tooltip
-- Fixed Charging Rods only taking 1 day to process
-- Fixed juices not having draining recipes
-- Fixed Apple and Cherry trees from vinery not working with greenhouse glass
-- Fixed Tomato Crop drop amount not matching Almanac
-- Fixed Lettuce not having tag
-- Fixed smoked fish not having cooked fish tag
-- Fixed Animal Feed recipes that outputted over a stack of items
-- Fixed Wooly Sheep not having an almanac entry
-- Fixed Fantasy Furniture paintings not dropping when broken
-- Fixed so many exploits and dupes
-- Fixed Gold Destructor Hammer having wrong tier
-- Fixed weirdness with not being able to spam attack'
-- Fixed issue where selling multipliers not applying on login
-- Fixed Kettle recipes weirdly not working sometimes
-- Fixed Fish Pond outputs sometimes minizing at 10 population
-- Fixed Atmospheric rainforest/dunes biomes not being considered tropical
-- Fixed Mammutilation milking resetting quality at 6 hearts of affection
-- Fixed bounding box making it difficult to water some crops
-- Fixed some impossible fish pond quests
-- Fixed mixers creating wrong amounts of dough
-- Fixed Evaporator Salt turning into snowballs again
-- Fixed Gold Swords being stronger than diamond
-- Fixed certain planks not being able to be crafted into chests
-- Fixed Deployers triggering "could use something to eat..." message
-
-# 3.0.1
-- Made Fish Pond population growth guaranteed every morning
-- Increased chance of Fish Pond quests (25% -> 75%)
-- Increased durability of escape rope so it can be used at the bottom of the Skull Cavern
-- Changed middle Triple Twirl Pleco quest requirements to not require Skull Cavern goods
-- Reduced ladder/rope climbing speed
-- Reduced Slime Spawner cooldown (70m -> 20m)
-- Removed masochistic Photosynthesizing trait from Phantom slimes
-- Fixed Immortals spawning
-- Fixed Reinforced Core not being properly removed
-- Fixed Prismatic Coin being wrong value
-- Fixed Fishing spots causing lag
-- Fixed Lead/Silver appearing in overworld
-- Fixed Golden Clock not working properly
-- Fixed Lava Pufferfish quest
-- Fixed Dandelion Leaves being improperly marked as removed
-- Fixed some errors with Skull Cavern regenerating air
-- Fixed certain blocks being placeable in the Skull Cavern
-- Fixed top layer boulders not regenerating
-
-## 3.0.2
-- Reverted pantry bundle change to fix bug preventing the completion of bundles (If you already completed the task/bundle, it will stay completed!)
-- Added Chunky and quest for Skull Cavern pre-generation
-- Added more clarity to Goobers in Farmer's Almanac
-- Added tooltip to vinery fruit trees stating season
-- Added Phantoms to Umbra Barrens to reduce Shulker spawns
-- Tweaked Skull Cavern enemy spawning to be less aggressive, especially in desert layer
-- Increased amount of stress Windmills produce by double
-- Increased chance of clear weather
-- Reduced Slime furious threshold from 200 -> 50. This makes it easier to get Slimes from furious to sad
-- Removed Phantoms from Desert Caves
-- Removed photosynthesizing trait from Luminous slime 
-- Removed login check for Skull Cavern to fix server issue
-- Reduced Sparkcat jump height
-- Reduced Slime sad threshold 400 -> 300
-- Removed peacock spiders from Desert Fault
-- Fixed Auto-Grabber bounding box freeing animals
-- Fixed EMI cheat mode being enabled by default
-- Fixed Cavern Air dropping in certain situations
-- Fixed Skull Cavern top layer not being infertile
-- Fixed error with jungle grapes
-- Fixed Fish Ponds voiding data when placed at certain angles
-- Fixed incorrect Feeding Trough tooltip
-
-## 3.0.3
-- Added Skill experience toasts (Thanks Space_Mex!)
-- Added bulk blasting for Raw Lead and Raw Silver blocks
-- Added Mason jar to bottle conversion recipe
-- Added special new trades to Wandering Baker 
-- Added every grape seed to Wandering Winemaker and changed trades to use Coins
-- Added additional clarity to skills Scum Collector and Gold Rush
-- Adjusted Skull Cavern mob spawning again. Mobs now scale in both frequency and difficulty the lower you go. No more ghost town ice caves and hell deserts!
-- Adjusted Skull Cavern loot tables (Sparkstone/geodes up, Iridium/Prismatic Gems down)
-- Increased chance of Wandering Winemaker of replacing Wandering Trader (10% -> 20%)
-- Increased Electrum tools' based fortune to III
-- Increased Sparkstone from Spindlefish ponds 4 -> 8
-- Increased Sparkstone from Reycling Artifact Shards 2 -> 6
-- Increased Sparkstone from Ancient Goddes Statue trade 16 -> 32
-- Reduced height drowned spawn
-- Reduced crafting amount of Enriched Bonemeal 32 -> 16
-- Updated Little Joys to fix fishing spot performance
-- Changed Spindlefish 7 population quest from Aged Amethyst Cheese to 8 Aged Jo's Special Mixture
-- Change Super Glue recipe to not require Create 
-- Fixed Lead and Silver not giving mining experience
-- Fixed blocks of raw Lead and Silver not having blasting recipe
-- Fixed infinite experience exploit
-- Fixed mincing Neptunium Ingot not matching crushing
-- Fixed Quality Bundle not completing at 3 tasks complete
-- Fixed structure that had non-working mob spawners and had skeletons in it
-- Fixed Cinnamon Coffee recipe
-- Fixed seasonal zombies not spawning
-- Fixed Fish Pond placement being weird and bad
-- Fixed Small Ships zoom not working
-- Fixed vanilla Slimes spawning below ground
-- Fixed Hoglins dropping sellable items
-- Fixed Splendid Slimes not spawning often in Skull Cavern
-- Fixed aging Iridium Nectar not showing right text
-
-## 3.0.4
-- Skull Cavern mobs no longer spawn around the same y-level as player, which gives you a break when a cave is cleared out
-- Removed skill experience gained sound
-- Fixed Sprinkler typo
-- Fixed performance in the Skull Cavern tanking as blocks broken
+- IMPORTANT: backup worlds before updating!
+- Updated the pack to Create 6
+- Reworked Husbandry mechanics to be on the day system rather than a clunky set time system. This should make husbandry animals more intuitive and less frustrating
+- Added 15 skill books found from certain actions or bought from Wandering Trader
+- Added Artisan Cheese Press and Pink Matter upgrade
+- Added Slime Feeder and Slime Candy
+- Added Miking, Special items, Pet Gifts, and loot boxes to JEI
+- Added new animals: Deer, Raccoon, Minisheep, Squirrel, Bison, Flamingo, Penguin as Husbandry animals
+- Added husbandry mechanics to animals: Frog, Wraptor
+- Added pets: Nether Wisp, Hedgehog, Red Wolf, Owl, Dog, Axolotl
+- Added new animals: Tri-Bull, Galliraptors - Botania exclusive husbandry animals
+- Added Slimes locations and risks to Farmer's Almanac
+- Added Bubonic Billionic Beach Hat to Leatherworker
+- Added values to Cheese Pieces and Growth Totem
+- Added Scavenged Food Bag
+- Added Fruit/Trees to Farmer's Almanac (Thanks Devon!)
+- Added Fish Finder - Book with all fish locations obtained through loot or trading (Thanks Copixel!)
+- Added Magic Rope (Staircase equivalent to Stardew) to Exotic Trader
+- Added Meowmageddon 
+- Added Candied Animal feed and Mana Animal Feed (Thanks Devon!)
+- Added new models for Mayonnaise Machine, Aging Cask and Ancient Cask
+- Added new Quality Washer texture
+- Added forages: Snuffle forages Frozen Hair, Mooshrooms forage for mushroom seats
+- Added Chicken Tortilla Soup
+- Added "Eye" Smithing Template as Prize Machine reward
+- Added new Spawn Crate textures for some Spawn eggs
+- Added new Gnome poses: Swing and Lantern (made by clicking with a lantern)
+- Added Inception upgrade to Leatherworker and removed original recipe
+- Added lanterns to charm slot 
+- Sniffer, Golden, and Petrified eggs now have quality
+- Changed Prismatic Bounty skill due to it not working: Neptune's Bounties drops a Prismatic Shard when mined without Silk Touch.
+- Cheese Wheels now always take 3/13 days to age/ancient age (Some were 2, some were 4)
+- Fly Fisher/School Fisher now work with Nether fishing (Reduced nether fish back to their original values because of this)
+- Increased animal affection gain by 2x
+- Increased Panda forage multiplier by 2
+- Increased chance of Skull Cavern boulders
+- Increased Fletcher trade amount by double
+- Improved recipe category sort order so loot/block drops are always last
+- Minty Slimes now give Bloodlust effect, Juicy now give mining fatigue
+- Fish Ponds no longer burn in lava
+- Updated Flamarang texture (Thanks Tilles)
+- Updated Hazelnut texture to use Wildernature's
+- Reduced cost of Preserves Jars to not use Pine Tar
+- Reduced chance of Reaping Scythe triggers 20% -> 10%
+- Reduced the cost of Flint and Steel (8 -> 6 Iridium Coins)
+- Reduced Hay Bale spawn chance
+- Reworked chickens, ducks, etc to have egg frequency scale with affection rather than not producing any eggs at 2 hearts 
+- Reworked Coin Leaderboard to use Text Displays instead of Armor Stands (no more losing items!)
+- Reworked Wooly Cows to spawn in Warped Forests and give milk less often
+- Reworked Construction Wand progression and added cores to cleric
+- Renamed old Cheese Press to Auto-Cheese Press
+- Removed crafting recipe for Milk Bottles to Large Milk
+- Removed Hearthstone cross-dimension durability debuff
+- Removed ability to cage Chickens
+- Removed advancement for bakery item
+- Removed Powdered Snow from Frozen Caves in the Skull Cavern
+- Removed Minecraft Cake from Bakery banner requirements
+- Re-wrote extractinator to fix bugs
+- Rivers are no longer infertile and instead use the global season
+- Fixed brewfest gear having old recipes
+- Fixed Jellyfish not having quality
+- Fixed Iridium tools and armor being repaired with diamond
+- Fixed crops growing underground in any season
+- Fixed newly domesticated husbandry animals not being able to be fed/milked/pet/etc
+- Fixed Crystals of Regret giving an inconsistent amount of points depending on the skill tree
+- Fixed Blaze Banker being unbreakable
+- Fixed Wool armor upgrade costing too much
+- Fixed Juicy Slime heart not being craftable
+- Fixed experience showing as 0 when fainting from Skull Cavern
+- Fixed ores broken with a hammer/shatterer not regenerating
+- Fixed Skull Cavern not regenerating in certain cases
+- Fixed Skull Cavern marking things as the next day at 6pm instead of 6am
+- Fixed Frosted Tip upgrade not dropping (Thanks MCSuchter!)
+- Fixed Toolbelt having its own slot
+- Fixed Impact Hammer not being craftable
+- Fixed Pale Oak not having the correct tags
+- Fixed Ancient Goddess Statue console spam
+- Fixed Pine/Dark Cherry Beam recipe conflicts
+- Fixed Electrum Swords/Knife only having looting II
+- Fixed Warped Tower's Slime Spawners being on cooldown
+- Fixed Farmers Bread recipe conflict
+- Fixed certain blocks such as Shipping Bins not working when bound player not in the same Dimension
+- Fixed Searing Cod having incompletable quest

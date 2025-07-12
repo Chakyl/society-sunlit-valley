@@ -9,7 +9,7 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "MAIN_HAND") {
     const data = target.persistentData;
     if (item === "minecraft:name_tag" && item.nbt?.display && !target.customName) {
-      data.affection = (data.affection || 0) + 100;
+      data.affection = (data.affection || 0) + (player.stages.has("no_name_for_the_sheep") ? 200 : 100);
       server.runCommandSilent(
         `playsound minecraft:entity.allay.item_given block @a ${player.x} ${player.y} ${player.z}`
       );

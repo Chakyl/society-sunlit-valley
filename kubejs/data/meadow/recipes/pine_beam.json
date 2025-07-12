@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wood",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "meadow:stripped_pine_log"
+    }
+  },
+  "result": {
+    "item": "meadow:pine_beam",
+    "count": 2
+  }
+}

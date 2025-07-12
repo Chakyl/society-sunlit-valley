@@ -1,7 +1,7 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
 
 const stoneRockTable = [
-  { block: "society:stone_boulder", weight: 90 },
+  { block: "society:stone_boulder", weight: 163 },
   { block: "minecraft:coal_ore", weight: 25 },
   { block: "minecraft:copper_ore", weight: 20 },
   { block: "minecraft:iron_ore", weight: 15 },
@@ -12,7 +12,7 @@ const stoneRockTable = [
 ];
 
 const iceRockTable = [
-  { block: "society:ice_boulder", weight: 91 },
+  { block: "society:ice_boulder", weight: 164 },
   { block: "minecraft:iron_ore", weight: 25 },
   { block: "create:zinc_ore", weight: 15 },
   { block: "oreganized:lead_ore", weight: 10 },
@@ -23,7 +23,7 @@ const iceRockTable = [
 ];
 
 const sandstoneRockTable = [
-  { block: "society:sandstone_boulder", weight: 90 },
+  { block: "society:sandstone_boulder", weight: 163 },
   { block: "minecraft:gold_ore", weight: 20 },
   { block: "oreganized:lead_ore", weight: 10 },
   { block: "minecraft:redstone_ore", weight: 6 },
@@ -37,7 +37,7 @@ const sandstoneRockTable = [
 ];
 
 const blackstoneRockTable = [
-  { block: "society:blackstone_boulder", weight: 94 },
+  { block: "society:blackstone_boulder", weight: 148 },
   { block: "minecraft:deepslate_gold_ore", weight: 20 },
   { block: "oreganized:deepslate_lead_ore", weight: 10 },
   { block: "minecraft:deepslate_redstone_ore", weight: 15 },
@@ -51,7 +51,7 @@ const blackstoneRockTable = [
 ];
 
 const endstoneRockTable = [
-  { block: "society:end_stone_boulder", weight: 139 },
+  { block: "society:end_stone_boulder", weight: 194 },
   { block: "society:deepslate_sparkstone_ore", weight: 14 },
   { block: "society:omni_geode_node", weight: 4, sturdy: true },
   { block: "society:deepslate_iridium_ore", weight: 3 },
@@ -130,97 +130,99 @@ const handleRegen = (server, level, block) => {
     block.set(newBlock);
   }
 };
-if (!global.relaxedSkullCavern) {
-  BlockEvents.broken(
-    [
-      "society:stone_boulder",
-      "society:ice_boulder",
-      "society:sandstone_boulder",
-      "society:blackstone_boulder",
-      "society:end_stone_boulder",
-      "minecraft:deepslate_copper_ore",
-      "oreganized:lead_ore",
-      "create:zinc_ore",
-      "create:zinc_ore",
-      "society:geode_node",
-      "society:magma_geode_node",
-      "society:omni_geode_node",
-      "society:earth_crystal",
-      "society:fire_quartz",
-      "minecraft:deepslate_emerald_ore",
-      "minecraft:emerald_ore",
-      "minecraft:deepslate_lapis_ore",
-      "minecraft:lapis_ore",
-      "minecraft:deepslate_diamond_ore",
-      "minecraft:diamond_ore",
-      "society:deepslate_sparkstone_ore",
-      "society:sparkstone_ore",
-      "society:deepslate_iridium_ore",
-      "society:iridium_ore",
-      "minecraft:copper_ore",
-      "minecraft:deepslate_iron_ore",
-      "minecraft:iron_ore",
-      "minecraft:coal_ore",
-      "minecraft:deepslate_coal_ore",
-      "minecraft:deepslate_redstone_ore",
-      "minecraft:redstone_ore",
-      "oreganized:deepslate_silver_ore",
-      "oreganized:silver_ore",
-      "minecraft:deepslate_gold_ore",
-      "minecraft:gold_ore",
-      "oreganized:deepslate_lead_ore",
-      "minecraft:deepslate_copper_ore",
-      "oreganized:lead_ore",
-      "create:zinc_ore",
-      "create:zinc_ore",
-      "society:geode_node",
-      "society:magma_geode_node",
-      "society:omni_geode_node",
-      "society:earth_crystal",
-      "society:fire_quartz",
-      "minecraft:deepslate_emerald_ore",
-      "minecraft:emerald_ore",
-      "minecraft:deepslate_lapis_ore",
-      "minecraft:lapis_ore",
-      "minecraft:deepslate_diamond_ore",
-      "minecraft:diamond_ore",
-      "society:deepslate_sparkstone_ore",
-      "society:sparkstone_ore",
-      "society:deepslate_iridium_ore",
-      "society:iridium_ore",
-      "minecraft:copper_ore",
-      "minecraft:deepslate_iron_ore",
-      "minecraft:iron_ore",
-      "minecraft:coal_ore",
-      "minecraft:deepslate_coal_ore",
-      "minecraft:deepslate_redstone_ore",
-      "minecraft:redstone_ore",
-      "oreganized:deepslate_silver_ore",
-      "oreganized:silver_ore",
-      "minecraft:deepslate_gold_ore",
-      "minecraft:gold_ore",
-      "oreganized:deepslate_lead_ore",
-    ],
-    (e) => {
-      const { level, block, server } = e;
-      const pos = block.getPos();
-
-      if (level.dimension === "society:skull_cavern") {
-        let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
-        server.scheduleInTicks(5, () => {
-          if (level.getBlock(pos) == "minecraft:air") {
-            let toggleBit =
-              level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
-            block.set("society:cavern_air", {
-              type: String(rockType),
-              chunkbit: toggleBit.toString(),
-            });
-            server.scheduleInTicks(4800, () => {
-              handleRegen(server, level, level.getBlock(pos));
-            });
-          }
-        });
-      }
+const scheduleFunction = (level, pos, server, rockType) => {
+  server.scheduleInTicks(5, () => {
+    if (level.getBlock(pos) == "minecraft:air") {
+      let toggleBit =
+        level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
+      level.getBlock(pos).set("society:cavern_air", {
+        type: String(rockType),
+        chunkbit: toggleBit.toString(),
+      });
+      server.scheduleInTicks(4800, () => {
+        handleRegen(server, level, level.getBlock(pos));
+      });
     }
-  );
-}
+  });
+};
+BlockEvents.broken(
+  [
+    "society:stone_boulder",
+    "society:ice_boulder",
+    "society:sandstone_boulder",
+    "society:blackstone_boulder",
+    "society:end_stone_boulder",
+    "minecraft:deepslate_copper_ore",
+    "oreganized:lead_ore",
+    "create:zinc_ore",
+    "create:deepslate_zinc_ore",
+    "society:geode_node",
+    "society:magma_geode_node",
+    "society:omni_geode_node",
+    "society:earth_crystal",
+    "society:fire_quartz",
+    "minecraft:deepslate_emerald_ore",
+    "minecraft:emerald_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:lapis_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:diamond_ore",
+    "society:deepslate_sparkstone_ore",
+    "society:sparkstone_ore",
+    "society:deepslate_iridium_ore",
+    "society:iridium_ore",
+    "minecraft:copper_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:iron_ore",
+    "minecraft:coal_ore",
+    "minecraft:deepslate_coal_ore",
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:redstone_ore",
+    "oreganized:deepslate_silver_ore",
+    "oreganized:silver_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:gold_ore",
+    "oreganized:deepslate_lead_ore",
+  ],
+  (e) => {
+    const { level, block, server } = e;
+    const pos = block.getPos();
+    console.log("broken block at: " + pos);
+    if (level.dimension === "society:skull_cavern") {
+      let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
+      scheduleFunction(level, pos.immutable(), server, rockType);
+    }
+  }
+);
+
+LevelEvents.beforeExplosion((e) => {
+  const { x, y, z, level, server, exploder } = e;
+  if (
+    level.dimension !== "society:skull_cavern" ||
+    exploder.type == "splendid_slimes:splendid_slime"
+  )
+    return;
+  const radius = 2;
+  let scanBlock;
+  let rockType;
+  for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+    x + radius,
+    y + radius,
+    z + radius,
+  ])) {
+    scanBlock = level.getBlock(pos);
+    if (scanBlock.hasTag("society:skull_cavern_regens")) {
+      level.destroyBlock(pos, true);
+      rockType = biomeAirTypeMap.get(`${scanBlock.biomeId.toString()}`);
+      scheduleFunction(level, pos.immutable(), server, rockType);
+    }
+  }
+  e.cancel();
+});
+BlockEvents.broken(
+  "society:skull_cavern_teleporter",
+  (e) => {
+    const { level } = e;
+    if (level.dimension === "society:skull_cavern") e.cancel();
+  }
+);

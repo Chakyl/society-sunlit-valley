@@ -1,0 +1,17 @@
+{
+  "name": "Hedgehog",
+  "category": "patchouli:pets",
+  "icon": "supplementaries:bamboo_spikes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Sonic Head"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:hedgehog",
+      "scale": 0.7,
+      "text": "A bookish animal known for its various dilemmas"
+    }
+  ]
+}

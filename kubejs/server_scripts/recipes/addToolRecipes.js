@@ -61,6 +61,12 @@ ServerEvents.recipes((e) => {
     "minecraft:netherite_sword",
     "society:prismatic_shard"
   );
+  e.smithing(
+    "society:meowmageddon",
+    "simplehats:nekoears",
+    "society:galaxy_sword",
+    "society:prismatic_shard"
+  );
 
   const manasteelUpgrades = (type) => {
     e.smithing(
@@ -139,9 +145,7 @@ ServerEvents.recipes((e) => {
         tier === "netherite"
           ? "minecraft:netherite_upgrade_smithing_template"
           : `society:${tier}_upgrade_smithing_template`,
-        `farmersdelight:${
-          tier === "diamond" ? "golden" : knifeTiers[index - 1]
-        }_knife`,
+        `farmersdelight:${tier === "diamond" ? "golden" : knifeTiers[index - 1]}_knife`,
         `minecraft:${tier}${tier === "diamond" ? "" : "_ingot"}`
       );
     }
@@ -163,6 +167,24 @@ ServerEvents.recipes((e) => {
       );
     }
   });
+  e.smithing(
+    "constructionwand:iron_wand",
+    "society:iron_upgrade_smithing_template",
+    "constructionwand:stone_wand",
+    "minecraft:iron_block"
+  );
+  e.smithing(
+    "constructionwand:diamond_wand",
+    "society:diamond_upgrade_smithing_template",
+    "constructionwand:iron_wand",
+    "minecraft:diamond_block"
+  );
+  e.smithing(
+    "constructionwand:infinity_wand",
+    "minecraft:netherite_upgrade_smithing_template",
+    "constructionwand:diamond_wand",
+    "minecraft:netherite_block"
+  );
   // Misc
   e.smithing(
     "create:netherite_backtank",
@@ -186,7 +208,7 @@ ServerEvents.recipes((e) => {
   const upgradeWool = (type, mappedType) => {
     e.smithing(
       `minecraft:chainmail_${mappedType}`,
-      "society:iron_upgrade_smithing_template",
+      "numismatics:cog",
       `sewingkit:wool_${type}`,
       "minecraft:chain"
     );

@@ -1,0 +1,17 @@
+{
+  "name": "Minty",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:minty\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Attacks players, has Strength III, flies, and causes the Drunk effect when upset. Has a chance to revive when killed by high damage attacks. Extremely dangerous."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Minty Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:minty\"}",
+      "scale": 0.9
+    }
+  ]
+}

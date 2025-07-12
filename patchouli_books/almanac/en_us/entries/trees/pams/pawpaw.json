@@ -1,0 +1,83 @@
+{
+    "name": "Pawpaw Tree 🍂",
+    "category": "patchouli:trees",
+    "icon": "pamhc2trees:pawpaw_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🍂 §4Autumn§r $(li)Size: 1x1$(li)Grows:$(l:tree_crops/pawpaw)8x Pawpaw$(/l)$(br2)$(l)Notes$()$(li)Saplings won from Prize Machine."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Pawpaw Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "L": "minecraft:oak_leaves",
+                    "W": "minecraft:oak_log[axis=y]",
+                    "F": "pamhc2trees:pampawpaw[age=7]"
+                },
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  L  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "LLLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        " FFF ",
+                        " FWF ",
+                        " FFF ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ]
+            }
+        }
+    ]
+}

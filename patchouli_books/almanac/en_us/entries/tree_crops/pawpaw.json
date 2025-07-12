@@ -1,0 +1,26 @@
+{
+    "name": "Pawpaw 🍂",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:pawpawitem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li):coin: 80$(li)🍂 §4Autumn§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/pawpaw)Pawpaw Tree$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Pawpaw Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "F": "pamhc2trees:pampawpaw[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

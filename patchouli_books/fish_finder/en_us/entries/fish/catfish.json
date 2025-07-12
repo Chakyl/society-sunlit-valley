@@ -1,0 +1,18 @@
+{
+  "name": "Catfish",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:catfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 144$(li)\u00a70\ud83c\udf3c \u00a72Spring\u00a70$(li)Water: River$(li)Weather: Rain Snow$(li)Time: Night"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:catfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Coquito fish!!! Coquito fish!!."
+    }
+  ]
+}

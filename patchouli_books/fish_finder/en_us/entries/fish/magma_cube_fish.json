@@ -1,0 +1,19 @@
+{
+  "name": "Magma Cube Fish",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:magmacubefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 620$(li)Dimension: Nether$(li)Biome: Basalt Deltas"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:magmacubefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "A jiggly lava-dweller puffed up"
+    }
+  ]
+}

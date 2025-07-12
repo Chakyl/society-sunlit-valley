@@ -1,0 +1,17 @@
+{
+  "name": "Red Wolf",
+  "category": "patchouli:pets",
+  "icon": "species:wicked_treat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Wolf Trapper Banner, Wolf-Fossil$(br2)$(l)Taming$()$(br)Bone"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:red_wolf",
+      "scale": 0.7,
+      "text": "A wolf that's red! What more do you want??"
+    }
+  ]
+}

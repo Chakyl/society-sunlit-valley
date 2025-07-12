@@ -1,0 +1,151 @@
+{
+    "name": "Aspen Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "atmospheric:aspen_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌐 §5Year-round§r$(li)Size: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Aspen Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  L  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        "  LL ",
+                        "     "
+                    ],
+                    [
+                        " L   ",
+                        "LLLL ",
+                        " LWL ",
+                        "LLL  ",
+                        "  L  "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        " LWLL",
+                        " LLLL",
+                        "  L  "
+                    ],
+                    [
+                        " LLL ",
+                        "  LL ",
+                        "LLWLL",
+                        " LLLL",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        " LL  ",
+                        "LLWLL",
+                        "LLLLL",
+                        " LL  "
+                    ],
+                    [
+                        "  LL ",
+                        " LLLL",
+                        "LLWL ",
+                        "LLLLL",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "atmospheric:aspen_log[axis=y]",
+                    "L": "atmospheric:aspen_leaves",
+                    "W": "atmospheric:aspen_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

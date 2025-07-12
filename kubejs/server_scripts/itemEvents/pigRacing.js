@@ -335,7 +335,7 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
               player.username
             }§r won §6${global.formatPrice(
               poolValue * 2
-            )}§r :coin: ${betPigString}`
+            )}§r ● ${betPigString}`
           )
         );
       }
@@ -350,7 +350,7 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
               player.username
             }§r won §6${global.formatPrice(
               poolValue / 2
-            )}§r :coin: ${betPigString}`
+            )}§r ● ${betPigString}`
           )
         );
       }
@@ -365,7 +365,7 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
               player.username
             }§r won §6${global.formatPrice(
               poolValue / 4
-            )}§r :coin: ${betPigString}`
+            )}§r ● ${betPigString}`
           )
         );
       }
@@ -508,14 +508,14 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
     Text.gray(
       `§6${player.username}§r started a pig race with §6${global.formatPrice(
         betValue
-      )}§r :coin: on §${global.getPigColor(betPig)}${betPig}§r!`
+      )}§r ● on §${global.getPigColor(betPig)}${betPig}§r!`
     )
   );
   server.tell(
     Text.gray(
       `Type §6/pigrace <pig>§r with §6${global.formatPrice(
         betValue
-      )}§r :coin: worth of coins`
+      )}§r ● worth of coins`
     )
   );
   server.tell(Text.gray(`or more in your offhand to join!`));
@@ -546,7 +546,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
         for (let index = 0; index < raceData.bets.length; index++) {
           prizePool += raceData.bets[index].bet;
         }
-        level.players.forEach((p) => {
+        level.getServer().players.forEach((p) => {
           for (let index = 0; index < raceData.bets.length; index++) {
             if (String(p.username) === String(raceData.bets[index].player)) {
               players.push(p);
@@ -582,7 +582,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
     });
 
     server.scheduleInTicks(210 + 40 + bettingPeriod, () => {
-      level.players.forEach((p) => {
+      level.getServer().players.forEach((p) => {
         for (let index = 0; index < raceData.bets.length; index++) {
           if (String(p.username) === String(raceData.bets[index].player)) {
             handleMPResults(

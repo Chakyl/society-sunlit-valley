@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": ["ppp", "iFi", "III"],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "p": {
+      "item": "splendid_slimes:plort"
+    },
+    "F": {
+      "item": "society:feeding_trough"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "splendid_slimes:slime_feeder"
+  },
+  "show_notification": true
+}

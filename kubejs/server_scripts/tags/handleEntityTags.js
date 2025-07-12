@@ -6,7 +6,7 @@ ServerEvents.tags("entity_type", (e) => {
     e.add("society:husbandry_animal", animal);
   });
 
-  const milkableAnimals = [
+  [
     "minecraft:cow",
     "minecraft:goat",
     "minecraft:sheep",
@@ -16,19 +16,25 @@ ServerEvents.tags("entity_type", (e) => {
     "minecraft:mooshroom",
     "buzzier_bees:moobloom",
     "species:mammutilation",
-  ];
-  milkableAnimals.forEach((animal) => {
+    "farmlife:domestic_tribull",
+    "wildernature:minisheep",
+    "wildernature:bison",
+  ].forEach((animal) => {
     e.add("society:milkable_animal", animal);
   });
 
-  const largeEggAnimals = [
+  [
     "minecraft:chicken",
     "untitledduckmod:duck",
     "untitledduckmod:goose",
+    "etcetera:chapple",
     "autumnity:turkey",
-  ];
-  largeEggAnimals.forEach((animal) => {
-    e.add("society:large_egg_animal", animal);
+    "species:wraptor",
+    "wildernature:flamingo",
+    "wildernature:penguin",
+    "farmlife:galliraptor",
+  ].forEach((animal) => {
+    e.add("society:coopmaster_bird", animal);
   });
 
   const petAnimals = [
@@ -42,6 +48,10 @@ ServerEvents.tags("entity_type", (e) => {
     "minecraft:horse",
     "minecraft:polar_bear",
     "hamsters:hamster",
+    "wildernature:red_wolf",
+    "wildernature:owl",
+    "wildernature:dog",
+    "minecraft:axolotl",
   ];
   petAnimals.forEach((animal) => {
     e.add("society:pet_animal", animal);

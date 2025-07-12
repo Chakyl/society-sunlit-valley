@@ -1,0 +1,84 @@
+{
+    "name": "Darkcherry Tree 🌼",
+    "category": "patchouli:trees",
+    "icon": "vinery:dark_cherry_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌼 §2Spring§r $(li)Sapling Price: :coin: 256$(li)Size: 1x1$(li)Grows:$(l:tree_crops/cherry)Cherries$(/l)$(br2)$(l)Notes$()$(li)Saplings bought from Market."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Oak Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  1  ",
+                        " 102 ",
+                        "  3  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " 131 ",
+                        " 1W2 ",
+                        " 322 ",
+                        "     "
+                    ],
+                    [
+                        " 1213",
+                        "21231",
+                        "32W11",
+                        "11231",
+                        "2311 "
+                    ],
+                    [
+                        "3312 ",
+                        "31231",
+                        "12W21",
+                        "12331",
+                        "12313"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vinery:dark_cherry_leaves[has_cherries=false]",
+                    "1": "vinery:dark_cherry_leaves[has_cherries=false]",
+                    "2": "vinery:dark_cherry_leaves[can_have_cherries=true, has_cherries=true]",
+                    "3": "vinery:dark_cherry_leaves[can_have_cherries=true]",
+                    "W": "vinery:dark_cherry_log"
+                }
+            }
+        }
+    ]
+}

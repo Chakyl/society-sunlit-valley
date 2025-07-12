@@ -42,20 +42,14 @@
         "maxCount": 4
       },
       {
-        "type": "minecraft:cave_spider",
-        "weight": 80,
+        "type": "species:quake",
+        "maxCount": 1,
         "minCount": 1,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:witch",
-        "weight": 60,
-        "minCount": 1,
-        "maxCount": 1
+        "weight": 20
       },
       {
         "type": "rottencreatures:immortal",
-        "weight": 60,
+        "weight": 20,
         "minCount": 1,
         "maxCount": 1
       },
@@ -113,6 +107,9 @@
       "society:frozen_caves/ice_patch_ceiling",
       "society:frozen_caves/slush_patch_ceiling"
     ],
+    [],
+    ["society:frozen_maelstrom/spectralibur_chamber"],
+    [],
     ["minecraft:freeze_top_layer"]
   ]
 }

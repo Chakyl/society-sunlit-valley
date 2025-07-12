@@ -1,0 +1,160 @@
+{
+    "name": "Yucca Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "atmospheric:yucca_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌐 §5Year-round§r$(li)Size: 1x1$(li)Yucca flowers grow at the top."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Yucca Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "      f      ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "            f",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "      F      ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "SS          F",
+                        "  f       f  ",
+                        "             ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "      LL     ",
+                        "     LLL     ",
+                        "      LL     ",
+                        " L         L ",
+                        "LLL       LLL",
+                        " LF       FLS",
+                        "       f     ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "     LLL     ",
+                        "     LWL     ",
+                        "     LLL     ",
+                        "LLL       LLL",
+                        "LWL       LWL",
+                        "LLL       LLL",
+                        "      LF     ",
+                        "     LLL     ",
+                        "      L      "
+                    ],
+                    [
+                        "      L      ",
+                        "     LLL     ",
+                        "      W      ",
+                        " L         LL",
+                        "LLW       WLL",
+                        " LL        L ",
+                        "     LLL     ",
+                        "     LWL     ",
+                        "     LLL     "
+                    ],
+                    [
+                        "             ",
+                        "             ",
+                        "      W      ",
+                        "             ",
+                        "   W     W   ",
+                        "             ",
+                        "      WL     ",
+                        "     LWL     ",
+                        "     LL      "
+                    ],
+                    [
+                        "             ",
+                        "             ",
+                        "      W      ",
+                        "             ",
+                        "    W   W    ",
+                        "             ",
+                        "      W      ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "             ",
+                        "             ",
+                        "             ",
+                        "      W      ",
+                        "     WWW     ",
+                        "      W      ",
+                        "             ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "      W      ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "      W      ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "      W      ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             "
+                    ],
+                    [
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "      W0     ",
+                        "             ",
+                        "             ",
+                        "             ",
+                        "             "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:air",
+                    "L": "atmospheric:yucca_leaves",
+                    "W": "atmospheric:yucca_log[axis=y]",
+                    "S": "atmospheric:yucca_flower",
+                    "f": "atmospheric:tall_yucca_flower[half=upper]",
+                    "F": "atmospheric:tall_yucca_flower[half=lower]"
+                }
+            }
+        }
+    ]
+}

@@ -117,6 +117,7 @@ StartupEvents.registry("block", (event) => {
       item.modelJson({
         parent: "society:block/fish_pond",
       });
+      item.fireResistant(true);
     })
     .defaultState((state) => {
       state

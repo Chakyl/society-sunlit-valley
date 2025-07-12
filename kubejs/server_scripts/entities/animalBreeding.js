@@ -36,11 +36,11 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
     let animalNbt = target.getNbt();
     let ageLastBred = target.persistentData.ageLastBred || 0;
-    if (global.isFresh(level.time, ageLastBred, 20000)) ageLastBred = 0;
-    if (Number(animalNbt.InLove) === 0 && level.time - ageLastBred > 20000) {
+    if (global.isFresh(day, ageLastBred)) ageLastBred = 0;
+    if (Number(animalNbt.InLove) === 0 && day > ageLastBred) {
       if (target.type === "minecraft:panda" && Math.random() > 0.2) {
         item.count--;
-        target.persistentData.ageLastBred = level.time;
+        target.persistentData.ageLastBred = day;
         server.runCommandSilent(
           `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 5 The Miracle Potion failed...`
         );
@@ -60,11 +60,11 @@ ItemEvents.entityInteracted((e) => {
           12,
           0.01
         );
-        target.persistentData.ageLastBred = level.time;
+        target.persistentData.ageLastBred = day;
         player.swing();
         player.addItemCooldown(item, 10);
       }
-    } else if (level.time - ageLastBred <= 20000) {
+    } else if (day > ageLastBred) {
       player.addItemCooldown("society:miracle_potion", 40);
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 4 This animal needs time to rest after taking a Miracle Potion...`

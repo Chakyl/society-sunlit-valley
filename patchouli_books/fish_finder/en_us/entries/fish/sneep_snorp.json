@@ -1,0 +1,18 @@
+{
+  "name": "Sneep Snorp",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_sneep_snorp",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 16$(li)\u00a70\ud83d\udd25 \u00a76Summer\u00a70$(li)Water: Ocean$(li)Weather: Any$(li)Time: Any"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:sneep_snorp",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "SNEEP SNORP."
+    }
+  ]
+}

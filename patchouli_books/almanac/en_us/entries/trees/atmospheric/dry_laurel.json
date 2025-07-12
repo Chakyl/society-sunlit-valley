@@ -1,0 +1,115 @@
+{
+    "name": "Dry Laurel Tree 🌐",
+    "category": "patchouli:trees",
+    "icon": "atmospheric:dry_laurel_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Stats$()$(li)🌐 §5Year-round§r$(li)Size: 2x2"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "Dry Laurel Tree",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "          L ",
+                        "         LLL",
+                        "         LL ",
+                        "            ",
+                        "      LL    ",
+                        "      LLL   ",
+                        "       L    ",
+                        "            "
+                    ],
+                    [
+                        "         LLL",
+                        "         LWL",
+                        "         LLL",
+                        "            ",
+                        "      LLL   ",
+                        "   LL LWL   ",
+                        "  LLL LLL   ",
+                        "   L        "
+                    ],
+                    [
+                        "       L LLL",
+                        "      LLLLLL",
+                        " LL    L  W ",
+                        "LLL      LLL",
+                        " LL    LLLL ",
+                        " LLLLLWLLLL ",
+                        " LLWLLLLLLL ",
+                        "  LLLL      "
+                    ],
+                    [
+                        "      LLLL L",
+                        "      LWL   ",
+                        "LLL   LWLLLL",
+                        "LWL      LWL",
+                        "LLL    LLWLL",
+                        " LWLLWL LWL ",
+                        " LWLWWL LLL ",
+                        " LLLLLL     "
+                    ],
+                    [
+                        "      LLL  L",
+                        "      LLL   ",
+                        " L     L LLL",
+                        "LLW    WWWLL",
+                        "LLW  W LLLL ",
+                        "  LLLL  LLL ",
+                        " LLLLLL LL  ",
+                        "  LLLLL     "
+                    ],
+                    [
+                        "      L L   ",
+                        "            ",
+                        " L        L ",
+                        "   W WW     ",
+                        "L         L ",
+                        "            ",
+                        " L      L   ",
+                        "   LL L     "
+                    ],
+                    [
+                        "      L L   ",
+                        "            ",
+                        " L   W    L ",
+                        "    WW      ",
+                        "L         L ",
+                        "            ",
+                        " L      L   ",
+                        "   LL L     "
+                    ],
+                    [
+                        "            ",
+                        "            ",
+                        "    WW      ",
+                        "    WW      ",
+                        "            ",
+                        "            ",
+                        "            ",
+                        "            "
+                    ],
+                    [
+                        "            ",
+                        "    W       ",
+                        "    WW      ",
+                        "   WWWWW    ",
+                        "    WW 0    ",
+                        "     W      ",
+                        "            ",
+                        "            "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:air",
+                    "L": "atmospheric:dry_laurel_leaves",
+                    "W": "atmospheric:laurel_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

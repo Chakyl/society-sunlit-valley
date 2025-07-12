@@ -1,0 +1,17 @@
+{
+  "name": "Frog",
+  "category": "patchouli:animals",
+  "icon": "society:ribbit_gadget",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Forage: Sap (20% chance), Ribbit Gadget (5% chance), Froglights (25% chance)$(br2)$(l)Notes$()$(br)Foraging requires 1+ hearts. Can be found in Swamp biomes."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:frog",
+      "scale": 0.7,
+      "text": "Loves completing bounties, hates Slimes!"
+    }
+  ]
+}

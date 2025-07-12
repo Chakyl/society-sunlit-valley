@@ -42,5 +42,20 @@ BlockEvents.rightClicked(
         block.popItem(`2x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`);
       }
     }
+    if (
+      block.id == "pamhc2trees:pambanana" &&
+      player.stages.has("banana_karenina") &&
+      Number(block.properties.get("age")) == 7
+    ) {
+      server.runCommandSilent(
+        `puffish_skills experience add ${player.username} society:farming 40`
+      );
+      block.popItem(
+        `${player.stages.has("tree_whisperer") ? 5 : 3}x pamhc2trees:${fruitName.substring(
+          3,
+          fruitName.length
+        )}item`
+      );
+    }
   }
 );

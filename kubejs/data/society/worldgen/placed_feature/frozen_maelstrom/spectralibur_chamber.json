@@ -1,0 +1,29 @@
+{
+  "feature": "society:frozen_maelstrom/spectralibur_chamber",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 80
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": -10,
+      "y_spread": 0
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 300
+        },
+        "max_inclusive": {
+          "absolute": 400
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

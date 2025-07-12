@@ -4,8 +4,8 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
-    "mining_dimension:teleporter",
-    "treetap:tap",
+    "constructionwand:core_angel",
+    "constructionwand:core_destruction",
     "create:schematicannon",
     "create:empty_schematic",
     "create:schematic_and_quill",
@@ -422,6 +422,7 @@ ServerEvents.recipes((e) => {
     "minecraft:flint_and_steel",
     // Armorer
     "sophisticatedbackpacks:stack_upgrade_tier_4",
+    "sophisticatedbackpacks:stack_upgrade_omega_tier",
     "sophisticatedbackpacks:stack_upgrade_starter_tier",
     "automobility:auto_mechanic_table",
     "automobility:automobile_assembler",
@@ -453,6 +454,14 @@ ServerEvents.recipes((e) => {
     "meadow:fur_chestplate",
     "meadow:fur_leggings",
     "meadow:fur_boots",
+    "brewery:brewfest_shoes",
+    "brewery:brewfest_dress",
+    "brewery:brewfest_blouse",
+    "brewery:brewfest_hat_red",
+    "brewery:brewfest_hat",
+    "brewery:brewfest_boots",
+    "brewery:brewfest_trousers",
+    "brewery:brewfest_regalia",
     "candlelight:cooking_hat",
     "candlelight:chefs_jacket",
     "candlelight:chefs_pants",
@@ -577,6 +586,8 @@ ServerEvents.recipes((e) => {
     "sophisticatedstorage:stack_upgrade_tier_3",
     "functionalstorage:gold_upgrade",
     "sophisticatedstorage:stack_upgrade_tier_4",
+    "sophisticatedbackpacks:inception_upgrade",
+    "sophisticatedstorage:stack_upgrade_omega_tier",
     "sophisticatedstorage:stack_upgrade_tier_5",
     "functionalstorage:copper_upgrade",
     // Farmer
@@ -657,6 +668,8 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    "quark:building/crafting/furnaces/blackstone_furnace",
+    "untitledduckmod:crafting_shaped/pumpkin_pie",
     "oreganized:electrum_upgrade_smithing_template",
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",
@@ -666,8 +679,6 @@ ServerEvents.recipes((e) => {
     "botania:mana_infusion/mana_diamond_block",
     "farm_and_charm:mincer/hops_seeds",
     "functionalstorage:oak_drawer_alternate_x1",
-    "treetap:syrup_from_maple_pams",
-    "treetap:water_from_crying_obsidian",
     "translocators:diamond",
     "translocators:diamond_nugget",
     // Seeds

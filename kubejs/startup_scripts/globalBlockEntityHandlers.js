@@ -12,8 +12,15 @@ const calculateQualityValue = (number, quality) => {
   return value;
 };
 
-global.processShippingBinInventory = (inventory, inventorySlots, attributes, returnRemoved) => {
+global.processShippingBinInventory = (
+  inventory,
+  inventorySlots,
+  attributes,
+  stages,
+  returnRemoved
+) => {
   let calculatedValue = 0;
+  let itemValue = 0;
   let removedItems = [];
   let slotItem;
   let isSellable;
@@ -37,8 +44,25 @@ global.processShippingBinInventory = (inventory, inventorySlots, attributes, ret
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
+      itemValue = calculateQualityValue(trade.value, quality);
+      if (stages.has("bluegill_meridian") && slotItem.id == "aquaculture:bluegill") {
+        itemValue = calculateQualityValue(trade.value, quality);
+      }
+      if (
+        stages.has("phenomenology_of_treasure") &&
+        (Item.of(slotItem).hasTag("society:artifacts") ||
+          Item.of(slotItem).hasTag("society:relics"))
+      ) {
+        itemValue *= 3;
+      }
+      if (
+        stages.has("brine_and_punishment") &&
+        Item.of(slotItem).hasTag("society:brine_and_punishment")
+      ) {
+        itemValue *= 2;
+      }
       calculatedValue +=
-        calculateQualityValue(trade.value, quality) *
+        itemValue *
         inventory.getStackInSlot(i).count *
         (Number(
           attributes.filter((obj) => {
@@ -152,7 +176,16 @@ const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
 global.getArtisanRecipe = (recipes, block) =>
   recipes[Number(block.properties.get("type").toLowerCase()) - 1];
 
-global.artisanHarvest = (block, recipes, stageCount, outputMult, artisanHopper, server, player) => {
+global.artisanHarvest = (
+  block,
+  recipes,
+  stageCount,
+  outputMult,
+  isCheesePress,
+  artisanHopper,
+  server,
+  player
+) => {
   let newProperties = block.getProperties();
   const hasQuality = newProperties.quality && newProperties.quality !== "0";
   if (block.properties.get("mature").toLowerCase() === "true") {
@@ -170,7 +203,18 @@ global.artisanHarvest = (block, recipes, stageCount, outputMult, artisanHopper, 
         id,
         hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
       );
-      if (outputMult > 1) harvestOutput.count = outputMult;
+      // Artisan Cheese Press upgrade: auto age cheese wheels only
+      if (
+        isCheesePress &&
+        (id.includes("wheel") || id.includes("block")) &&
+        block.properties.get("upgraded").toLowerCase() === "true"
+      ) {
+        harvestOutput = Item.of(
+          `society:aged_${id.split(":")[1]}`,
+          hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
+        );
+      }
+      if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
       newProperties.type = "0";
       newProperties.working = false;
@@ -251,14 +295,24 @@ global.handleBERightClick = (
   multipleInputs,
   hasTag,
   outputMult,
-  disableInput
+  disableInput,
+  isCheesePress
 ) => {
   const { item, block, hand, player, level, server } = clickEvent;
   // Prevent Deployers from using artisan machines
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
-    global.artisanHarvest(block, recipes, stageCount, outputMult, false, server, player);
+    global.artisanHarvest(
+      block,
+      recipes,
+      stageCount,
+      outputMult,
+      isCheesePress,
+      false,
+      server,
+      player
+    );
 
     if (!disableInput) {
       global.artisanInsert(
@@ -574,8 +628,17 @@ const getCardinalMultipartJsonBasic = (name) => {
     },
   ];
 };
-const getCardinalMultipartJson = (name) => {
-  const path = `society:block/${name}`;
+const getCardinalMultipartJson = (name, disableExclamation) => {
+  const path = `society:block/${name}/${name}`;
+  let exclamationJson = [
+    {
+      when: { mature: true },
+      apply: { model: "society:block/machine_done" },
+    },
+  ];
+  if (disableExclamation) {
+    exclamationJson = [];
+  }
   let offJson = [
     {
       when: { working: false, upgraded: false, facing: "north" },
@@ -646,6 +709,13 @@ const getCardinalMultipartJson = (name) => {
   ];
   return [
     {
+      apply: { model: `society:block/${name}/${name}_particle` },
+    },
+    {
+      when: { mature: true },
+      apply: { model: "society:block/machine_done" },
+    },
+    {
       when: { working: true, upgraded: false, facing: "north" },
       apply: { model: path, y: 0, uvlock: false },
     },
@@ -678,28 +748,7 @@ const getCardinalMultipartJson = (name) => {
       apply: { model: `${path}_upgraded`, y: -90, uvlock: false },
     },
   ]
+    .concat(exclamationJson)
     .concat(offJson)
     .concat(doneJson);
-};
-const getGnomeState = (name, type) => {
-  const path = `society:block/gnome/${name}`;
-  let cardianal = [
-    {
-      when: { type: type, facing: "north" },
-      apply: { model: path, y: 0, uvlock: false },
-    },
-    {
-      when: { type: type, facing: "east" },
-      apply: { model: path, y: 90, uvlock: false },
-    },
-    {
-      when: { type: type, facing: "south" },
-      apply: { model: path, y: 180, uvlock: false },
-    },
-    {
-      when: { type: type, facing: "west" },
-      apply: { model: path, y: -90, uvlock: false },
-    },
-  ];
-  return cardianal;
 };

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "bakery:bread_basket"
+    ]
+  },
+  "criteria": {
+    "has_tray": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:tray"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bakery:bread_basket"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tray",
+      "has_the_recipe"
+    ]
+  ]
+}

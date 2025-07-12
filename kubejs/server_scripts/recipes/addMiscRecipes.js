@@ -18,6 +18,49 @@ ServerEvents.recipes((e) => {
     tool: { tag: "forge:tools/shovels" },
     result: [{ item: "twigs:silt_ball", count: 4 }],
   });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    container: {
+      item: "minecraft:bowl",
+    },
+    ingredients: [
+      {
+        tag: "forge:raw_chicken",
+      },
+      {
+        item: "farm_and_charm:onion",
+      },
+      {
+        item: "farm_and_charm:corn",
+      },
+      {
+        item: "meadow:piece_of_cheese",
+      },
+      { item: "farmersdelight:tomato_sauce" },
+    ],
+    result: {
+      item: "society:chicken_tortilla_soup",
+    },
+  });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    ingredients: [
+      {
+        item: "farm_and_charm:corn",
+      },
+      {
+        item: "meadow:piece_of_cheese",
+      },
+      { item: "society:mayonnaise" },
+    ],
+    result: {
+      item: "society:mexican_street_corn",
+    },
+  });
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
@@ -55,7 +98,6 @@ ServerEvents.recipes((e) => {
     g: "moreminecarts:organic_glass",
   });
   // Earth Crystal
-  e.shapeless("society:tapper", ["treetap:tap"]);
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
     l: "meadow:fire_log",
@@ -68,10 +110,15 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
     p: "society:pine_tar",
   });
-  e.shaped("meadow:cheese_form", [" C ", "pcp", " e "], {
-    c: "meadow:cheese_rack",
-    C: "numismatics:crown",
+  e.shaped("society:cheese_press", [" p ", "fef", "fff"], {
+    f: "meadow:fire_log",
     e: "society:earth_crystal",
+    p: "society:pine_tar",
+  });
+  e.shaped("meadow:cheese_form", [" C ", "pcp", " b "], {
+    c: "society:cheese_press",
+    C: "numismatics:sun",
+    b: "society:battery",
     p: "society:pine_tar",
   });
   e.shaped("brewery:wooden_brewingstation", ["eee", "lll", "fcc"], {
@@ -189,12 +236,11 @@ ServerEvents.recipes((e) => {
     C: "numismatics:crown",
     f: "society:fire_quartz",
   });
-  e.shaped("society:preserves_jar", ["LpL", "LbL", "CiC"], {
+  e.shaped("society:preserves_jar", ["LLL", "LbL", "CiC"], {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
     C: "#forge:storage_blocks/coal",
     i: "minecraft:iron_block",
-    p: "society:pine_tar",
   });
   e.shaped("society:dehydrator", ["LGL", "pbp", "LfL"], {
     b: "minecraft:barrel",
@@ -433,15 +479,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("crabbersdelight:crab_trap_bait", ["aquaculture:worm"]);
   e.shapeless("4x crabbersdelight:crab_trap_bait", ["aquaculture:minnow"]);
   e.shapeless("16x crabbersdelight:crab_trap_bait", ["aquaculture:leech"]);
-  // Dramatic Doors
-  e.shapeless("dramaticdoors:short_silver_door", [
-    "dramaticdoors:short_iron_door",
-    "oreganized:silver_ingot",
-  ]);
-  e.shapeless("dramaticdoors:tall_silver_door", [
-    "dramaticdoors:tall_iron_door",
-    "oreganized:silver_ingot",
-  ]);
+
   // Neptuna
   e.custom({
     type: "farmersdelight:cutting",

@@ -1,0 +1,496 @@
+{
+  "parent": "bakery:main/get_yeast",
+  "display": {
+    "icon": {
+      "item": "bakery:bundt_cake"
+    },
+    "title": {
+      "translate": "advancement.bakery.get_everything"
+    },
+    "description": {
+      "translate": "advancement.bakery.get_everything.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 800,
+    "loot": [
+      "bakery:advancements/completionist"
+    ]
+  },
+  "criteria": {
+    "bakery:crusty_bread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:crusty_bread"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:bread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:bread"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:braided_bread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:braided_bread"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:bun": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:bun"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:baguette": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:baguette"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:glowberry_tart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:glowberry_tart"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:chocolate_tart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:chocolate_tart"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:croissant": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:croissant"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:apple_pie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:apple_pie"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:waffle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:waffle"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:bundt_cake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:bundt_cake"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:linzer_tart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:linzer_tart"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:vegetable_sandwich": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:vegetable_sandwich"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:sandwich": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:sandwich"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:strawberry_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:strawberry_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:chocolate_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:chocolate_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:apple_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:apple_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:glowberry_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:glowberry_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:sweetberry_jam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:sweetberry_jam"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:chocolate_cake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:chocolate_cake"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:sweetberry_cake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:sweetberry_cake"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:strawberry_cake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:strawberry_cake"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:strawberry_glazed_cookie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:strawberry_glazed_cookie"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:chocolate_glazed_cookie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:chocolate_glazed_cookie"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:sweetberry_glazed_cookie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:sweetberry_glazed_cookie"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:apple_cupcake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:apple_cupcake"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:sweetberry_cupcake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:sweetberry_cupcake"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:strawberry_cupcake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:strawberry_cupcake"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:misslilitu_biscuit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:misslilitu_biscuit"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:jam_roll": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:jam_roll"
+            ]
+          }
+        ]
+      }
+    },
+    "bakery:cornet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bakery:cornet"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bakery:crusty_bread"
+    ],
+    [
+      "bakery:bread"
+    ],
+    [
+      "bakery:braided_bread"
+    ],
+    [
+      "bakery:bun"
+    ],
+    [
+      "bakery:baguette"
+    ],
+    [
+      "bakery:glowberry_tart"
+    ],
+    [
+      "bakery:chocolate_tart"
+    ],
+    [
+      "bakery:croissant"
+    ],
+    [
+      "bakery:apple_pie"
+    ],
+    [
+      "bakery:waffle"
+    ],
+    [
+      "bakery:bundt_cake"
+    ],
+    [
+      "bakery:linzer_tart"
+    ],
+    [
+      "bakery:vegetable_sandwich"
+    ],
+    [
+      "bakery:sandwich"
+    ],
+    [
+      "bakery:strawberry_jam"
+    ],
+    [
+      "bakery:chocolate_jam"
+    ],
+    [
+      "bakery:apple_jam"
+    ],
+    [
+      "bakery:glowberry_jam"
+    ],
+    [
+      "bakery:sweetberry_jam"
+    ],
+    [
+      "bakery:chocolate_cake"
+    ],
+    [
+      "bakery:sweetberry_cake"
+    ],
+    [
+      "bakery:strawberry_cake"
+    ],
+    [
+      "bakery:chocolate_cake"
+    ],
+    [
+      "bakery:strawberry_glazed_cookie"
+    ],
+    [
+      "bakery:chocolate_glazed_cookie"
+    ],
+    [
+      "bakery:sweetberry_glazed_cookie"
+    ],
+    [
+      "bakery:apple_cupcake"
+    ],
+    [
+      "bakery:sweetberry_cupcake"
+    ],
+    [
+      "bakery:strawberry_cupcake"
+    ],
+    [
+      "bakery:misslilitu_biscuit"
+    ],
+    [
+      "bakery:jam_roll"
+    ],
+    [
+      "bakery:cornet"
+    ]
+  ]
+}

@@ -50,7 +50,7 @@ StartupEvents.registry("block", (event) => {
         Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
       );
       item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 5x5x5`));
+      item.tooltip(Text.green(`Area: 11x11x11`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
         parent: "society:block/auto_grabber",
@@ -67,7 +67,7 @@ StartupEvents.registry("block", (event) => {
         nearbyFarmAnimals = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
           .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
-        level.players.forEach((p) => {
+        level.getServer().players.forEach((p) => {
           if (p.getUuid().toString() === block.getEntityData().data.owner) {
             attachedPlayer = p;
           }
@@ -76,20 +76,13 @@ StartupEvents.registry("block", (event) => {
           nearbyFarmAnimals.forEach((animal) => {
             if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
             let data = animal.persistentData;
-            let interactionCooldown = global.animalInteractionCooldown;
-            const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
+            const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+            const hungry = day - data.getInt("ageLastFed") > 1;
             if (hungry) return;
             if (!global.getAnimalIsNotCramped(animal))
               data.affection = data.getInt("affection") - 50;
             if (global.checkEntityTag(animal, "society:milkable_animal")) {
-              interactionCooldown *= global.getMilkingTimeMult(animal.type);
-              let milkItem = global.getMilk(
-                level,
-                animal,
-                data,
-                attachedPlayer,
-                interactionCooldown
-              );
+              let milkItem = global.getMilk(animal, data, attachedPlayer, day);
               if (milkItem !== -1) {
                 let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
                 if (insertedMilk) {

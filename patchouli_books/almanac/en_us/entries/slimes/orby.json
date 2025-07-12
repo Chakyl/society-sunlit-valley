@@ -1,0 +1,17 @@
+{
+  "name": "Orby",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:orby\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Structure: Ancient City$(br2)$(l)Risks:$()$(br)Has Strength I and causes the Darkness effect when upset. Will hold an item given to it until killed/split."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Orby Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:orby\"}",
+      "scale": 0.9
+    }
+  ]
+}

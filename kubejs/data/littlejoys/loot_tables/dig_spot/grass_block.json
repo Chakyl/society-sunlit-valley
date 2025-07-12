@@ -20,6 +20,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 1,
+          "name": "society:paradise_crop"
+        },
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "add": false,
@@ -31,42 +36,42 @@
               "function": "minecraft:set_count"
             }
           ],
-          "weight": 2,
+          "weight": 8,
           "name": "atmospheric:currant_seedling"
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 6,
           "name": "society:ribbit_gadget"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 4,
           "name": "aquaculture:treasure_chest"
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 6,
           "name": "aquaculture:lockbox"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 10,
           "name": "aquaculture:box"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "society:furniture_box"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 10,
           "name": "society:iron_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "society:gold_upgrade_smithing_template"
         },
         {
@@ -82,23 +87,23 @@
               "function": "minecraft:set_count"
             }
           ],
-          "weight": 2,
+          "weight": 4,
           "name": "herbalbrews:tea_blossom"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "simplehats:hatbag_epic"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "simplehats:hatbag_rare"
         },
         {
           "type": "minecraft:item",
           "name": "splendid_slimes:slime_heart",
-          "weight": 2,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -109,7 +114,7 @@
         {
           "type": "minecraft:item",
           "name": "splendid_slimes:slime_heart",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -120,7 +125,7 @@
         {
           "type": "minecraft:item",
           "name": "splendid_slimes:slime_heart",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -130,42 +135,42 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "society:relic_trove"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "society:mini_oni_eye"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "society:wet_weekly"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "society:husbandry_hourly"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "society:combat_quarterly"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "society:book_of_stars"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "society:mining_monthly"
         },
         {
           "type": "minecraft:item",
-          "weight": 12,
+          "weight": 24,
           "name": "minecraft:air"
         }
       ],

@@ -1,0 +1,19 @@
+{
+  "name": "Eyeball Fish",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:eyeball_fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 408$(li)Dimension: Nether$(li)Biome: Crimson Forest"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:eyeball_fish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Terraria reference???"
+    }
+  ]
+}

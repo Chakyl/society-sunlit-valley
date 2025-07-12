@@ -1,0 +1,22 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "f": {
+      "item": "meadow:fire_log"
+    },
+    "R": {
+      "item": "society:ribbit_gadget"
+    },
+    "P": {
+      "item": "oreganized:electrum_upgrade_smithing_template"
+    },
+    "S": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "pattern": ["PRSSS", "ff   "],
+  "result": {
+    "item": "wildernature:blunderbuss"
+  }
+}

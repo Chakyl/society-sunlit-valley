@@ -1,0 +1,19 @@
+{
+  "name": "Searing Cod",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:searing_cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 264$(li)Dimension: Nether$(li)Biome: Any"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:searing_cod",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Nubby says ouch!"
+    }
+  ]
+}

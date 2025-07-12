@@ -96,6 +96,33 @@ global.prizeMachineRewards = [
   {
     hint: "large and wooden",
     possibleOutputs: ["2x brewery:barrel_main"],
+  },  {
+    hint: "good for reading",
+    possibleOutputs: [
+      "society:intro_to_algorithms",
+      "society:no_name_for_the_sheep",
+      "society:paradise_crop",
+      "society:slime_contain_protect",
+      "society:slouching_towards_artistry",
+      "society:debt_caverns",
+      "society:phenomenology_of_treasure",
+      "society:frogs_bounty_bazaar",
+      "society:hitting_hard_and_soft",
+      "society:paradise_crop",
+      "society:intro_to_algorithms",
+      "society:hitting_hard_and_soft",
+      "society:first_aid_guide",
+      "society:canadian_and_famous",
+      "society:bluegill_meridian",
+      "society:brine_and_punishment",
+      "society:animal_fancy",
+      "society:first_aid_guide",
+      "society:canadian_and_famous",
+      "society:bluegill_meridian",
+      "society:brine_and_punishment",
+      "society:banana_karenina",
+      "society:animal_fancy",
+    ],
   },
   {
     hint: "useful for mechanics",
@@ -259,6 +286,10 @@ global.prizeMachineRewards = [
     ],
   },
   {
+    hint: "something not of this world.",
+    possibleOutputs: ["1x minecraft:eye_armor_trim_smithing_template"],
+  },
+  {
     hint: "soothing and refreshing... Again",
     possibleOutputs: ["2x herbalbrews:oolong_tea"],
   },
@@ -294,6 +325,35 @@ global.prizeMachineRewards = [
       "society:ancient_roe",
       "society:infinity_worm",
       "society:cordycep",
+      "society:pink_matter",
+    ],
+  },
+  {
+    hint: "good for reading... again?",
+    possibleOutputs: [
+      "society:intro_to_algorithms",
+      "society:no_name_for_the_sheep",
+      "society:paradise_crop",
+      "society:slime_contain_protect",
+      "society:slouching_towards_artistry",
+      "society:debt_caverns",
+      "society:phenomenology_of_treasure",
+      "society:frogs_bounty_bazaar",
+      "society:hitting_hard_and_soft",
+      "society:paradise_crop",
+      "society:intro_to_algorithms",
+      "society:hitting_hard_and_soft",
+      "society:first_aid_guide",
+      "society:canadian_and_famous",
+      "society:bluegill_meridian",
+      "society:brine_and_punishment",
+      "society:animal_fancy",
+      "society:first_aid_guide",
+      "society:canadian_and_famous",
+      "society:bluegill_meridian",
+      "society:brine_and_punishment",
+      "society:banana_karenina",
+      "society:animal_fancy",
     ],
   },
 ];
@@ -339,10 +399,11 @@ StartupEvents.registry("block", (event) => {
           10,
           0.1
         );
-        block.popItemFromFace(
-          prizeOutput[rnd(0, prizeOutput.length - 1)],
-          block.properties.get("facing")
-        );
+        const prize = prizeOutput[rnd(0, prizeOutput.length - 1)];
+        block.popItemFromFace(prize, block.properties.get("facing"));
+        if (player.stages.has("frogs_bounty_bazaar")) {
+          block.popItemFromFace(prize, block.properties.get("facing"));
+        }
         block.set(block.id, {
           facing: block.properties.get("facing"),
           prize:
