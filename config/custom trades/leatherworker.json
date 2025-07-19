@@ -226,6 +226,24 @@
     },
     {
       "offer": {
+        "itemKey": "sophisticatedbackpacks:stack_upgrade_omega_tier",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:ancient_coin",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:leatherworker_stack_upgrade_omega_tier_for_ancient_coin"
+    },
+    {
+      "offer": {
         "itemKey": "sophisticatedbackpacks:inception_upgrade",
         "amount": 1,
         "priceModifier": 0

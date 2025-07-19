@@ -1,57 +1,41 @@
 
 [dropRush]
 	#The base chance for a drop rush to occur.
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	baseChance = 0.019999999552965164
 
 [goldRush]
 	#The base chance for a gold rush to occur.
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	baseChance = 0.019999999552965164
 
 [fishingSpots]
 	#The minimum distance between fishing spots, preventing them from spawning too close together.
-	#Range: > -2147483648
 	minimumDistanceBetween = 128
 	#The distance fishing spots will spawn from the player.
-	#Range: > -2147483648
 	spawnDistance = 32
 	#The seconds that must pass after a fishing spot appeared before another fishing spot can appear for a player.
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	spawnIntervalSeconds = 600.0
 	#The seconds that must pass after fishing a fishing spot before another fishing spot can appear for a player.
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	afterFishingCooldownSeconds = 600.0
 	#The maximum distance a bobber can be from a fishing spot to still trigger it.
-	#Range: > -2147483648
 	fishingRangeTolerance = 3
 	#Fishing spots will lure fish quicker than regular water. Set to -1 to disable.
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	secondsUntilLured = 2.0
 	#The limit of fishing spots that can spawn in a given chunk overall. Once this many fishing spots have spawned, the chunk will never spawn any again. Set to -1 to disable.
-	#Range: > -2147483648
 	totalLimitPerChunk = -1
 	#The offset applied to the spawn area in the direction the player is facing. Set to 0 to center it around the player.
-	#Range: > -2147483648
 	projectForwardDistance = 4
 
 [digSpots]
 	#The minimum distance between dig spots, preventing them from spawning too close together.
-	#Range: > -2147483648
 	minimumDistanceBetween = 128
 	#The distance dig spots will spawn from the player.
-	#Range: > -2147483648
 	spawnDistance = 32
 	#The seconds that must pass after a dig spot appeared before another dig spot can appear for a player.
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	spawnIntervalSeconds = 300.0
 	#The seconds that must pass after digging a dig spot before another dig spot can appear for a player.
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	afterDiggingCooldownSeconds = 1200.0
 	#The limit of dig spots that can spawn in a given chunk overall. Once this many dig spots have spawned, the chunk will never spawn any again. Set to -1 to disable.
-	#Range: > -2147483648
 	totalLimitPerChunk = -1
 	#The offset applied to the spawn area in the direction the player is facing. Set to 0 to center it around the player.
-	#Range: > -2147483648
 	projectForwardDistance = 25
 
