@@ -479,22 +479,18 @@
 				{
 					consume_items: true
 					count: 64L
-					id: "6D21C1D76292BD76"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "society:raw_logs"
-						}
-					}
-					title: "{ftbquests.chapter.getting_started.quest14.task_7863779555181510006.title}"
+					id: "32868E4039CBCDC9"
+					item: "minecraft:cobblestone"
 					type: "item"
 				}
 				{
-					consume_items: true
-					count: 64L
-					id: "32868E4039CBCDC9"
-					item: "minecraft:cobblestone"
+					count: 10L
+					id: "11214822A37DCD70"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
 					type: "item"
 				}
 			]

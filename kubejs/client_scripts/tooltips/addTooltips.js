@@ -317,7 +317,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("society:magic_rope", Text.gray("Teleports you down a level in the Skull Cavern"));
   tooltip.add(
     "society:magic_rope",
-    Text.red("Make sure you're carrying an Escape rope in case you get stuck...")
+    Text.red("Make sure you're carrying an Escape Rope in case you get stuck...")
   );
   tooltip.add(
     "society:magic_tunnel",
@@ -327,7 +327,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:magic_tunnel",
-    Text.red("Make sure you're carrying an Escape rope in case you get stuck...")
+    Text.red("Make sure you're carrying an Escape Rope in case you get stuck...")
   );
   // Fertilizers
   tooltip.add(

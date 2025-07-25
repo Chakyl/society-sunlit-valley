@@ -196,6 +196,7 @@ global.miscGeologist = [
   { item: "society:geode", value: 16 },
   { item: "society:frozen_geode", value: 32 },
   { item: "society:magma_geode", value: 48 },
+  { item: "society:omni_geode", value: 128 },
   { item: "society:prismatic_shard", value: 2048 },
   { item: "quark:diamond_heart", value: 752 },
   { item: "quark:red_corundum", value: 32 },
@@ -314,6 +315,8 @@ global.crops = [
   { item: "minecraft:nether_wart", value: 6 },
   { item: "quark:nether_wart_sack", value: 54 },
   { item: "minecraft:carrot", value: 23 },
+  { item: "minecraft:golden_carrot", value: 150 },
+  { item: "quark:golden_carrot_crate", value: 1350 },
   { item: "farm_and_charm:carrot_bag", value: 207 },
   { item: "farm_and_charm:corn", value: 28 },
   { item: "farm_and_charm:corn_bag", value: 252 },
@@ -1139,7 +1142,7 @@ cheeses.forEach((recipe) => {
 });
 
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
-const fermentingRecipes = [
+let fermentingRecipes = [
   { item: "vintagedelight:pickled_onion", value: 14 },
   { item: "vintagedelight:pickle", value: 72 },
   { item: "vintagedelight:century_egg", value: 136 },
@@ -1155,6 +1158,22 @@ const fermentingRecipes = [
   { item: "veggiesdelight:fermented_garlic_honey", value: 156 },
   { item: "supplementaries:lumisene_bottle", value: 24 },
 ];
+global.picklableVegetables = [
+  { item: "farmersdelight:pumpkin_slice", value: 20 },
+  { item: "farm_and_charm:lettuce", value: 24 },
+  { item: "minecraft:potato", value: 24 },
+  { item: "minecraft:carrot", value: 23 },
+  { item: "minecraft:golden_carrot", value: 150 },
+  { item: "snowyspirit:ginger", value: 24 },
+  { item: "veggiesdelight:garlic", value: 27 },
+  { item: "veggiesdelight:bellpepper", value: 32 },
+  { item: "society:eggplant", value: 42 },
+  { item: "veggiesdelight:cauliflower", value: 48 },
+];
+global.picklableVegetables.forEach((recipe) =>
+  fermentingRecipes.push({ item: `society:pickled_${recipe.item.split(":")[1]}`, value: recipe.value })
+);
+
 fermentingRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,

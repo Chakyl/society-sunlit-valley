@@ -1,4 +1,5 @@
 global.removedItems = [
+  "longwings:glass_jar",
   "everycomp:q/meadow/pine_leaf_carpet",
   "everycomp:rfm/meadow/pine_hedge",
   "sophisticatedbackpacks:alchemy_upgrade",

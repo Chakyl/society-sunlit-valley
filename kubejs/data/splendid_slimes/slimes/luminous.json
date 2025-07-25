@@ -5,11 +5,7 @@
   "particle": { "item": "minecraft:glowstone" },
   "diet": "diet.splendid_slimes.luminous",
   "foods": [
-    { "item": "vintagedelight:pickled_pitcher_pod" },
-    { "item": "vintagedelight:pickled_beetroot" },
-    { "item": "vintagedelight:pickled_onion" },
-    { "item": "vintagedelight:pickle" },
-    { "item": "vintagedelight:pickled_pepper" }
+    { "tag": "society:pickled_veggies" }
   ],
   "favorite_food": {
     "item": "vintagedelight:pickle"

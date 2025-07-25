@@ -11,7 +11,6 @@ const calculateQualityValue = (number, quality) => {
   }
   return value;
 };
-
 global.processShippingBinInventory = (
   inventory,
   inventorySlots,
@@ -88,6 +87,10 @@ const booleanProperty = Java.loadClass(
 
 const integerProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.IntegerProperty"
+);
+
+const directionProperty = Java.loadClass(
+  "net.minecraft.world.level.block.state.properties.DirectionProperty"
 );
 
 function rnd(min, max) {
@@ -351,8 +354,24 @@ const getOpposite = (facing, pos) => {
   }
 };
 
+const getFacing = (facing, pos) => {
+  switch (facing) {
+    case "north":
+      return pos.offset(0, 0, -1);
+    case "south":
+      return pos.offset(0, 0, 1);
+    case "west":
+      return pos.offset(-1, 0, 0);
+    case "east":
+      return pos.offset(1, 0, 0);
+  }
+};
+
 global.getTapperLog = (level, block) =>
   level.getBlock(getOpposite(block.properties.get("facing"), block.getPos()));
+
+global.getFermentingBarrel = (level, block) =>
+  level.getBlock(getFacing(block.getProperties().get("facing"), block.getPos()));
 
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
@@ -604,6 +623,43 @@ global.useInventoryItems = (inventory, id, count) => {
   }
   return 0;
 };
+
+/** All fluid handlers expect the following initialData with a capacity of 10000
+ *  
+ *  blockInfo.initialData({ Fluid: 0, FluidType: "" });
+ */
+
+global.getFluid = (blockInfo) => {
+  const foundFluid = blockInfo.persistentData.getString("FluidType");
+  if (!foundFluid) return Fluid.of("minecraft:water", 0);
+  return Fluid.of(foundFluid, blockInfo.persistentData.getInt("Fluid") || 0);
+};
+
+global.onFill = (blockInfo, fluid, sim) => {
+  const fluidData = blockInfo.persistentData.getInt("Fluid");
+  const filled = Math.min(10000 - fluidData, fluid.getAmount());
+  if (!sim) {
+    const storedFluidId = blockInfo.persistentData.getString("FluidType");
+    const incomingFluidId = fluid.getId();
+    if (storedFluidId === "" || fluidData === 0) {
+      blockInfo.persistentData.putString("FluidType", incomingFluidId);
+      blockInfo.persistentData.putInt("Fluid", fluidData + filled);
+    } else if (storedFluidId === incomingFluidId) {
+      blockInfo.persistentData.putInt("Fluid", fluidData + filled);
+    } else {
+      return (filled = 0);
+    }
+  }
+  return filled;
+};
+
+global.onDrain = (blockInfo, fluid, sim) => {
+  const fluidData = blockInfo.persistentData.getInt("Fluid");
+  const drained = Math.min(fluidData, fluid.getAmount());
+  if (!sim) blockInfo.persistentData.putInt("Fluid", fluidData - drained);
+  return drained;
+};
+
 const getCardinalMultipartJsonBasic = (name) => {
   const path = `society:block/${name}`;
   return [

@@ -4,6 +4,7 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "longwings:glass_jar",
     "wildernature:leveling_contract",
     "wildernature:uncommon_contract",
     "wildernature:rare_contract",

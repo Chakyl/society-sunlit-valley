@@ -480,13 +480,8 @@
 					consume_items: true
 					count: 64L
 					id: "6D21C1D76292BD76"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "society:raw_logs"
-						}
-					}
+
+					item: { Count: 40, id: "meadow:fire_log" }
 					title: "Any #society:raw_logs"
 					type: "item"
 				}

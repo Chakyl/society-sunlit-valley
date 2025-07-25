@@ -1,0 +1,10 @@
+#Introduction to using World Injection Worn Blueprints:
+#Place all your .bp files in this folder to have them automatically loaded into the world when a player enters it.
+#Using the WornBlueprintToRemove parameter, you can specify a list of .bp filenames to remove from the world (useful if you previously added some you no longer want).
+#The names must exactly match the filename of the blueprint to remove. For example: "house.bp","tower.bp"
+
+
+
+{
+  "WornBlueprintToRemove": []
+}

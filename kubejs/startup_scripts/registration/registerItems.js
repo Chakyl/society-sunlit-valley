@@ -486,8 +486,21 @@ StartupEvents.registry("item", (e) => {
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
 
+  global.picklableVegetables.forEach((product) => {
+    const splitProduct = product.item.split(":");
+    let texturePath = `${splitProduct[0]}:item/${splitProduct[1]}`;
+    e.create(`society:pickled_${splitProduct[1]}`)
+      .texture(texturePath)
+      .color(0, 0xd8f266)
+      .food((food) => {
+        food.hunger(4);
+        food.saturation(1);
+          food.effect("farmersdelight:nourishment", 600, 1, 1.0);
+      });
+  });
+
   global.preserves.forEach((jar) => {
-    if (jar.item.includes("society"))
+    if (jar.item.includes("society")) {
       e.create(`society:${jar.item.split(":")[1]}`)
         .texture(`society:item/preserves/${jar.item.split(":")[1]}`)
         .food((food) => {
@@ -496,6 +509,7 @@ StartupEvents.registry("item", (e) => {
           food.fastToEat(true);
           food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
         });
+    }
   });
   // Dehydrator outputs
   e.create(`society:raisins`)

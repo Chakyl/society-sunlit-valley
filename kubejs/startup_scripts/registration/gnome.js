@@ -69,7 +69,8 @@ StartupEvents.registry("block", (event) => {
   event
     .create("society:lantern_gnome", "cardinal")
     .property(integerProperty.create("type", 0, 3))
-    .defaultCutout().item((item) => {
+    .defaultCutout()
+    .item((item) => {
       item.tooltip(Text.gray("Right click a Gnome with a lantern to create"));
       item.modelJson({
         parent: "society:block/gnome/lantern",

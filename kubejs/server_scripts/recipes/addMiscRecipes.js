@@ -485,6 +485,21 @@ ServerEvents.recipes((e) => {
     b: "society:battery",
     P: "create:precision_mechanism",
   });
+  e.shaped("society:juice_inserter", ["fff", "rFb", "fff"], {
+    f: "meadow:fire_log",
+    F: "create:fluid_tank",
+    b: "minecraft:bamboo_block",
+    r: "society:rubber",
+  });
+  e.shaped("8x society:pink_flower_wallpaper", ["ppp", "pfp", "ppp"], {
+    f: "minecraft:pink_tulip",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:pink_flower_birch_baseboard", ["ppp", "pfp", "bbb"], {
+    f: "minecraft:pink_tulip",
+    p: "minecraft:paper",
+    b: "minecraft:birch_planks",
+  });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
   e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(0.35);
   // Crab trap bait

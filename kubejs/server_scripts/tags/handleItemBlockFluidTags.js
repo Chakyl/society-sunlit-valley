@@ -395,6 +395,7 @@ ServerEvents.tags("item", (e) => {
     "aquaculture:goldfish",
     "aquaculture:leech",
     "society:neptuna",
+    "netherdepthsupgrade:soulsucker",
     "aquaculture:box_turtle",
     "aquaculture:arrau_turtle",
     "aquaculture:starshell_turtle",

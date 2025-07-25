@@ -286,6 +286,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .texture("particle", "herbalbrews:block/green_tea_leaf1");
 
+  // Decor
   e
     .create("society:sturdy_bamboo_block")
     .tag("minecraft:logs")
@@ -312,6 +313,22 @@ StartupEvents.registry("block", (e) => {
       },
     },
   };
+  // Compressed Crops block
+  e.create("society:pink_flower_wallpaper", "cardinal")
+    .model("society:block/wallpapers/pink_flower")
+    .soundType("wood")
+    .hardness(1.0)
+    .resistance(1.0)
+    .tagBlock("minecraft:mineable/axe")
+    .requiresTool(true);
+
+  e.create("society:pink_flower_birch_baseboard", "cardinal")
+    .model("society:block/wallpapers/pink_flower_birch_baseboard")
+    .soundType("wood")
+    .hardness(1.0)
+    .resistance(1.0)
+    .tagBlock("minecraft:mineable/axe")
+    .requiresTool(true);
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)

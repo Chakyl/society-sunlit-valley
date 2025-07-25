@@ -20,12 +20,6 @@
 	#Before uploading the first log, requires the user to accept the privacy policy.
 	#Disabling this option may be illegal in some countries if you are modpack creator. Disable at your own risk.
 	enable_privacy_policy_acceptance = true
-	#Append comment text with notice about sending screenshot of this gui tells nothing to modpack creators.
-	show_dont_send_screenshot_of_gui_notice = true
-	#Animate border to request user attention even more.
-	screenshot_of_gui_notice_animated_border = true
-	#Animate border to request user attention even more.
-	upload_all_animated_border = true
 
 #Here you can change text of lang placeHolders.
 #Also you can change any text in lang files.
@@ -67,6 +61,9 @@
 	put_problematic_frame_to_message = true
 	#Puts analysis result(names of crash reasons) to message, instead of just count.
 	put_analysis_result_to_message = true
+	#Color modified mods count/analysis in msg with ANSI.
+	#Can be needed to be disabled if issues are reported to something not supporting ANSI codeblocks, like GitHub.
+	color_message = true
 
 #Settings of modlist feature.
 #Adds in generated msg block about which mods modpack user added/removed/updated.
@@ -77,6 +74,10 @@
 	#nicknames of players, who considered as modpack creator.
 	#Only this players can overwrite modlist.json
 	#If this feature is enabled and this array is empty, will be appended with nickname of current player.
+	#-----------------------------------------------------------------------------------------------------
+	#Warning! This is not displayed anywhere, it's just tech param used for modlist feature to work correctly.
+	#Here must be actual nicknames of people who work with the modpack and publishing releases!
+	#-----------------------------------------------------------------------------------------------------
 	modpack_creators = ["Chakyl"]
 	#If enabled, modlist.json will be overwritten on every launch(first tick of TitleScreen),
 	#then game is launched by modpack creator.
@@ -88,10 +89,9 @@
 	add_resourcepacks = false
 	#If enabled, will add modloader jar name to modlist, to easily track if user changed version of modloader.
 	add_modloader_jar_name = true
-	#If enabled, will add modlist.txt, with names of all mods to logs.
-	#false - only if general.help_link equals CHANGE_ME, will add modlist.txt to logs.
-	#true - anyways will add modlist.txt to logs.
-	force_add_full_modlist_as_log = false
+	#If enabled, will add generated modlist.txt, with names of all mods / modids / mixin configs / jarjar mods info to logs.
+	#
+	add_modlist_txt_as_log = true
 
 #Settings of '/crash_assistant crash' command feature.
 [crash_command]
@@ -128,4 +128,24 @@
 [compatibility]
 	#Enable feature.
 	enabled = true
+
+#You can customise GUI with this options.
+[gui_customisation]
+	#Append comment text with notice about sending screenshot of this gui tells nothing to modpack creators.
+	show_dont_send_screenshot_of_gui_notice = true
+	#Animate border to request user attention even more.
+	screenshot_of_gui_notice_animated_border = true
+	#You can make Upload All Button bigger/smaller to request user attention.
+	#Default Swing font size is 12, Default for this button in crash assistant is 16.
+	#Not recommended to set it more than 16, as it will affect the increase of GUI size because all text won't fit.
+	upload_all_button_font_size = 16
+	#Same as upload_all_button_font_size, but for Request Help button.
+	request_help_button_font_size = 16
+	#You can change Upload All Button color to request user attention.
+	#format is "R_G_B", range is 0-255, for example "255_0_0" is red color. Use "default" to use default swing color.
+	#Default for this button is "0_178_0" (dark green color).
+	upload_all_button_foreground_color = "0_178_0"
+	#Same as upload_all_button_foreground_color, but for Request Help button.
+	#Default for this button is "0_0_178" (dark blue color).
+	request_help_button_foreground_color = "0_0_178"
 

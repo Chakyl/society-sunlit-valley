@@ -1,0 +1,19 @@
+#List of block IDs ignored by the scanner (example: ["minecraft:stone", "minecraft:dirt"] )
+scannerIgnoredBlocks = ["minecraft:air"]
+#Scanner selection area color (default: "#00FFFF")
+scannerAreaColor = "#00FFFF"
+#Container selected area color (default: "#FFFF00")
+containerAreaColor = "#FFFF00"
+#Blueprint preview area color (default: "#0000FF")
+blueprintAreaColor = "#0000FF"
+#Enable scanner animation when creating a new blueprint (default: true)
+scanningAnimationEnabled = true
+#Enable texture borders in the scanner selected area, disabling it will show only outlines (default: true)
+scanningAreaTextureEnabled = true
+#Enable texture borders in the container area selected by blueprint, disabling it will show only outlines (default: true)
+selectedContainerAreaTextureEnabled = true
+#Default hologram transparency value (default: 0 | min: 0 | max: 100)
+defaultHologramTransparency = 0
+#Enables messages related to containers linked via the blueprint item
+containerMessagesEnabled = true
+
