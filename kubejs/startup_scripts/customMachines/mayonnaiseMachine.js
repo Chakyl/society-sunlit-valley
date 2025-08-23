@@ -148,7 +148,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-      if (upgraded && block.properties.get("mature") === "true" && rnd75()) {
+      if (upgraded && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace(
           "society:supreme_mayonnaise",
           block.properties.get("facing").toLowerCase()

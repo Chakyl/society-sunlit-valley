@@ -1,7 +1,7 @@
 global.handleLongwings = (entity, item) => {
   const { level } = entity;
   const entities = level
-    .getEntitiesWithin(entity.boundingBox.inflate(16))
+    .getEntitiesWithin(entity.boundingBox.inflate(8))
     .filter((e) => global.checkEntityTag(e, "society:longwing"));
   const radius = 4;
   const { x, y, z } = entity;

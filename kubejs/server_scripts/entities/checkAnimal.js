@@ -1,25 +1,12 @@
 console.info("[SOCIETY] checkAnimal.js loaded");
 
-BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
-  const { level, block, player, server, hand } = e;
-  if (hand == "OFF_HAND") return;
-  let errorText;
-  const attachedBlock = global.getTapperLog(level, block);
-  if (global.hasMultipleTappers(level, block)) {
-    errorText = "Too many Tappers attached to this log!";
-  }
-  if (!attachedBlock.hasTag("society:tappable_blocks")) {
-    errorText = "This block cannot be tapped for resources!";
-  }
-});
-
 ItemEvents.entityInteracted((e) => {
   const { hand, player, level, target, server } = e;
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:longwing")) return;
   if (hand == "MAIN_HAND") {
     let nearbyLongwings = level
-      .getEntitiesWithin(target.boundingBox.inflate(16))
+      .getEntitiesWithin(target.boundingBox.inflate(8))
       .filter((e) => global.checkEntityTag(e, "society:longwing"));
     let radius = 4;
     let { x, y, z } = target;
