@@ -12,7 +12,7 @@ const getRequestedItems = (fish, population) => {
 
 const sendFishPondMessage = (clickEvent, recipes, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
-  const fishId = String(Item.of(global.getArtisanRecipe(recipes, block).item).id);
+  const fishId = String(Item.of(global.getArtisanRecipe(recipes, block, true).item).id);
   let fishName = fishId
     .split(":")[1]
     .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));

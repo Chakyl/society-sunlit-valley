@@ -40,6 +40,15 @@ function rnd10() {
 function rnd5() {
   return Math.random() < 0.05;
 }
+
+let increaseDataStage = (block, count) => {
+  let nbt = block.getEntityData();
+  let currentStage = nbt.data.stage;
+  currentStage += count || 1;
+  nbt.merge({ data: { stage: currentStage } });
+  block.setEntityData(nbt);
+};
+
 let increaseStage = (input, count) => {
   let num = Number(input);
   num += count || 1;
@@ -86,7 +95,7 @@ const setQuality = (newProperties, itemQuality) => {
     newProperties.quality = itemQuality;
 };
 
-const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
+const getCanTakeItems = (item, properties, nbt, recipe, recipeIndex, hasTag) => {
   let itemCheck = item == recipe.input;
   if (hasTag && recipe.input.includes("#")) {
     itemCheck = hasWoolTag(item.getTags().toList());
@@ -95,13 +104,23 @@ const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
     itemCheck &&
     properties.get("working").toLowerCase() === "false" &&
     properties.get("mature").toLowerCase() === "false" &&
-    (properties.get("type").toLowerCase() == "" + (recipeIndex + 1) ||
-      properties.get("type").toLowerCase() == "0")
+    (nbt.data.type == recipeIndex + 1 || nbt.data.type == 0 || !nbt.data.contains("type"))
   );
 };
 
-global.getArtisanRecipe = (recipes, block) =>
-  recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+global.getArtisanRecipe = (recipes, block, legacy) => {
+  if (legacy && block.properties.get("type") != "0")
+    return recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+  let nbt = block.getEntityData();
+  if (!legacy && (!nbt.data.contains("type") || nbt.data.type == 0)) {
+    let legacyRefund;
+    global.typeConversionMap.forEach((item) => {
+      if (block.getId().equals(item.id)) legacyRefund = item;
+    });
+    return legacyRefund;
+  }
+  return recipes[Number(nbt.data.type) - 1];
+};
 
 global.artisanHarvest = (
   block,
@@ -123,7 +142,9 @@ global.artisanHarvest = (
         `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
       );
     }
-    global.getArtisanRecipe(recipes, block).output.forEach((id) => {
+    let legacy = newProperties.get("type") != null;
+
+    global.getArtisanRecipe(recipes, block, legacy).output.forEach((id) => {
       harvestOutput = Item.of(
         id,
         hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
@@ -138,10 +159,15 @@ global.artisanHarvest = (
       }
       if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
-      newProperties.type = "0";
+      if (legacy) {
+        newProperties.stage = "0";
+        newProperties.type = "0";
+      } else {
+        let nbt = block.getEntityData();
+        nbt.merge({ data: { stage: 0, type: 0 } });
+      }
       newProperties.working = false;
       newProperties.mature = false;
-      newProperties.stage = "0";
       if (newProperties.duration) newProperties.duration = "0";
       if (newProperties.quality) newProperties.quality = "0";
       block.set(block.id, newProperties);
@@ -164,16 +190,17 @@ global.artisanInsert = (
   player
 ) => {
   let newProperties = block.getProperties();
-  let blockStage = block.properties.get("stage").toLowerCase();
+  let nbt = block.getEntityData();
+  let blockStage = nbt.data.stage;
   const itemNbt = item.nbt;
   let itemQuality;
   let useCount = 0;
   recipes.forEach((recipe, index) => {
-    if (getCanTakeItems(item, block.properties, recipe, index, hasTag)) {
+    if (getCanTakeItems(item, block.properties, nbt, recipe, index, hasTag)) {
       newProperties = block.getProperties();
       successParticles(level, block);
       server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
-      newProperties.type = String(index + 1);
+      nbt.merge({ data: { type: index + 1 } });
       newProperties.working = false;
       newProperties.mature = false;
       if (newProperties.quality && itemNbt && itemNbt.quality_food) {
@@ -185,11 +212,11 @@ global.artisanInsert = (
         if (item.count >= stageCount - Number(blockStage)) {
           useCount = stageCount - Number(blockStage);
           if (itemQuality) setQuality(newProperties, itemQuality);
-          newProperties.stage = stageCount.toString();
+          nbt.merge({ data: { stage: stageCount } });
         } else {
           useCount = 1;
           if (itemQuality) setQuality(newProperties, itemQuality);
-          newProperties.stage = increaseStage(blockStage);
+          increaseDataStage(block);
         }
       } else {
         useCount = 1;
@@ -197,11 +224,11 @@ global.artisanInsert = (
           newProperties.quality = itemQuality;
         }
       }
-      if (newProperties.duration) newProperties.duration = String(recipe.time);
-      if (!multipleInputs || newProperties.stage === stageCount.toString()) {
+      if (!multipleInputs || nbt.data.stage === stageCount) {
         newProperties.working = true;
-        newProperties.stage = "0";
+        nbt.merge({ data: { stage: 0 } });
       }
+      block.setEntityData(nbt);
       block.set(block.id, newProperties);
       if (player && !player.isCreative()) item.count -= useCount;
     }
@@ -298,10 +325,10 @@ global.getFermentingBarrel = (level, block) =>
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
   let newProperties = block.getProperties();
+  let nbt = block.getEntityData();
   const attachedBlock = global.getTapperLog(level, block);
   let foundFluidData = undefined;
   let hasError = false;
-
   if (attachedBlock.hasTag("society:tappable_blocks")) {
     if (global.hasMultipleTappers(level, block)) {
       hasError = true;
@@ -318,19 +345,19 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
           }
           if (
             !returnFluidData &&
-            getCanTakeItems(attachedBlock.getId(), block.properties, recipe, index, false)
+            getCanTakeItems(attachedBlock.getId(), block.properties, nbt, recipe, index, false)
           ) {
             newProperties = block.getProperties();
             successParticles(level, block);
             server.runCommandSilent(
               `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
             );
-            newProperties.type = String(index + 1);
             newProperties.working = false;
             newProperties.mature = false;
-            newProperties.duration = String(recipe.time);
             newProperties.working = true;
-            newProperties.stage = "0";
+            let nbt = block.getEntityData();
+            nbt.merge({ data: { type: index + 1, stage: 0 } });
+            block.setEntityData(nbt);
           }
         });
     }
@@ -375,8 +402,8 @@ global.hasMultipleTappers = (level, block) => {
 global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
   const { block } = tickEvent;
   const { x, y, z } = block;
-  const blockStage = block.properties.get("stage").toLowerCase();
-  const mature = blockStage === (stageCount - 1).toString();
+  const blockStage = block.getEntityData().data.stage;
+  const mature = blockStage >= stageCount - 1;
   let newProperties = block.getProperties();
   if (block.properties.get("working").toLowerCase() === "true" && rndFunction) {
     tickEvent.level.spawnParticles(
@@ -393,7 +420,7 @@ global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
     );
     newProperties.working = !mature;
     newProperties.mature = mature;
-    newProperties.stage = increaseStage(blockStage);
+    increaseDataStage(block);
     block.set(block.id, newProperties);
   }
 };
@@ -410,23 +437,54 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
     forced ||
     (morningModulo >= artMachineProgTime && morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
-    let resolvedStageCount =
-      (recipes && recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
-      stageCount;
-
-    const blockStage = blockProperties.get("stage").toLowerCase();
-    let mature;
-    if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {
-      mature = Number(blockStage) >= resolvedStageCount / 2 - 1;
-    } else {
-      mature = Number(blockStage) >= resolvedStageCount - 1;
-    }
-
+    let legacy = blockProperties.get("type");
+    let nbt = block.getEntityData();
     let newProperties = level.getBlock(block.pos).getProperties();
-    newProperties.working = !mature;
-    newProperties.mature = mature;
-    newProperties.stage = increaseStage(blockStage);
-    block.set(block.id, newProperties);
+
+    if (!legacy && !nbt.data.contains("type")) {
+      newProperties.working = false;
+      newProperties.mature = true;
+      block.set(block.id, newProperties);
+    } else {
+      let mature;
+      if (legacy) {
+        let resolvedStageCount =
+          (recipes &&
+            recipes[
+              Number(
+                blockProperties.get("type") != "0"
+                  ? blockProperties.get("type").toLowerCase()
+                  : nbt.data.type
+              ) - 1
+            ].time) ||
+          stageCount;
+        const blockStage = nbt.data.stage;
+        if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {
+          mature = Number(blockStage) >= resolvedStageCount / 2 - 1;
+        } else {
+          mature = Number(blockStage) >= resolvedStageCount - 1;
+        }
+
+        newProperties.working = !mature;
+        newProperties.mature = mature;
+        increaseDataStage(block);
+        block.set(block.id, newProperties);
+      } else {
+        let resolvedStage = (recipes && recipes[Number(nbt.data.type) - 1].time) || stageCount;
+
+        const nbtStage = nbt.data.stage;
+        if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {
+          mature = Number(nbtStage) >= resolvedStage / 2 - 1;
+        } else {
+          mature = Number(nbtStage) >= resolvedStage - 1;
+        }
+
+        let newProperties = level.getBlock(block.pos).getProperties();
+        newProperties.mature = mature;
+        increaseDataStage(block);
+        block.set(block.id, newProperties);
+      }
+    }
   }
 };
 

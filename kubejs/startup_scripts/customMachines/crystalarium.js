@@ -73,7 +73,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 5))
     .property(integerProperty.create("type", 0, global.crystalariumCrystals.length))
     .box(2, 0, 2, 14, 16, 14)
     .defaultCutout()
@@ -91,7 +90,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0)
         .set(integerProperty.create("type", 0, global.crystalariumCrystals.length), 0);
     })
     .placementState((state) => {
@@ -99,7 +97,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0)
         .set(integerProperty.create("type", 0, global.crystalariumCrystals.length), 0);
     })
     .rightClick((click) => {
@@ -123,17 +120,15 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: block.properties.get("facing"),
-            type: block.properties.get("type"),
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         }
       }
 
       if (upgraded && block.properties.get("mature") === "true" && rnd10()) {
-        global.getArtisanRecipe(global.crystalariumCrystals, block).output.forEach((item) => {
+        global.getArtisanRecipe(global.crystalariumCrystals, block, true).output.forEach((item) => {
           block.popItemFromFace(
             `society:pristine_${Item.of(item).id.split(":")[1]}`,
             block.properties.get("facing").toLowerCase()
@@ -149,6 +144,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.crystalariumCrystals, 5);
       });

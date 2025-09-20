@@ -28,6 +28,7 @@ global.recyclingMachineRecipes = [
   { input: "atmospheric:grimwood_leaves", output: ["4x atmospheric:grimwood_sapling"] },
   { input: "society:butterfly_amber", output: ["4x society:sparkstone"] },
   { input: "society:moth_pollen", output: ["16x vintagedelight:organic_mash"] },
+  { input: "society:maple_syrup", output: ["4x vintagedelight:organic_mash"] },
   { input: "society:ruby", output: ["4x quark:red_corundum"] },
   { input: "society:topaz", output: ["4x quark:orange_corundum"] },
   { input: "society:fluorapatite", output: ["4x quark:violet_corundum"] },
@@ -37,6 +38,13 @@ global.recyclingMachineRecipes = [
   { input: "society:lemon_stone", output: ["4x quark:yellow_corundum"] },
   { input: "society:ghost_crystal", output: ["4x quark:blue_corundum"] },
   { input: "society:bixbyite", output: ["4x quark:black_corundum"] },
+  { input: "create:crushed_raw_iron", output: ["2x minecraft:raw_iron"] },
+  { input: "minecraft:raw_copper", output: ["2x create:crushed_raw_copper"] },
+  { input: "minecraft:raw_gold", output: ["2x create:crushed_raw_gold"] },
+  { input: "create:raw_zinc", output: ["2x create:crushed_raw_zinc"] },
+  { input: "oreganized:raw_lead", output: ["2x oreganized:raw_lead"] },
+  { input: "oreganized:raw_silver", output: ["2x create:crushed_raw_silver"] },
+  { input: "etcetera:raw_bismuth", output: ["2x create:crushed_raw_bismuth"] },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -45,8 +53,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 1))
-    .property(integerProperty.create("type", 0, global.recyclingMachineRecipes.length))
     .box(1, 0, 3, 15, 16, 13)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -62,17 +68,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 1), 0)
-        .set(integerProperty.create("type", 0, global.recyclingMachineRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 1), 0)
-        .set(integerProperty.create("type", 0, global.recyclingMachineRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       global.handleBERightClick(
@@ -83,6 +85,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.recyclingMachineRecipes, 1);
       });

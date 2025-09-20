@@ -210,7 +210,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 3))
     .property(integerProperty.create("type", 0, global.seedMakerRecipes.length))
     .property(integerProperty.create("quality", 0, 3))
     .box(2, 0, 2, 14, 19, 14)
@@ -231,7 +230,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
         .set(integerProperty.create("type", 0, global.seedMakerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
@@ -240,7 +238,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
         .set(integerProperty.create("type", 0, global.seedMakerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
@@ -271,7 +268,6 @@ StartupEvents.registry("block", (event) => {
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
             quality: block.properties.get("quality"),
           });
         }
@@ -290,6 +286,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.seedMakerRecipes, 1);
       });

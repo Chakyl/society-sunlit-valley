@@ -144,8 +144,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 20))
-    .property(integerProperty.create("type", 0, global.ancientCaskRecipes.length))
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
@@ -162,17 +160,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 20), 0)
-        .set(integerProperty.create("type", 0, global.ancientCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 20), 0)
-        .set(integerProperty.create("type", 0, global.ancientCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -203,11 +197,9 @@ StartupEvents.registry("block", (event) => {
             );
             block.set(block.id, {
               facing: facing,
-              type: block.properties.get("type"),
               working: block.properties.get("working"),
               mature: block.properties.get("mature"),
               upgraded: true,
-              stage: block.properties.get("stage"),
             });
           } else if (!upgraded && item == "society:inserter") {
             player.tell(Text.red(`This can only be upgraded when not in use`));
@@ -234,6 +226,7 @@ StartupEvents.registry("block", (event) => {
       } else player.tell(Text.red(`You need the Farming skill "Ancient Aging" to use this...`));
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.ancientCaskRecipes, 20);
       });

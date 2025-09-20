@@ -145,8 +145,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 10))
-    .property(integerProperty.create("type", 0, global.agingCaskRecipes.length))
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
@@ -161,22 +159,19 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 10), 0)
-        .set(integerProperty.create("type", 0, global.agingCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 10), 0)
-        .set(integerProperty.create("type", 0, global.agingCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing").toLowerCase();
+      const nbt = block.getEntityData();
 
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
@@ -200,11 +195,9 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: facing,
-            type: block.properties.get("type"),
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         } else if (!upgraded && item == "society:broken_clock") {
           player.tell(Text.red(`This can only be upgraded when not in use`));
@@ -217,7 +210,7 @@ StartupEvents.registry("block", (event) => {
       if (
         !player.stages.has("slouching_towards_artistry") &&
         block.properties.get("mature") === "true" &&
-        Number(block.properties.get("stage")) > 5 &&
+        Number(nbt.data.stage) > 5 &&
         Math.random() <= 0.01
       ) {
         block.popItemFromFace("society:slouching_towards_artistry", block.properties.get("facing"));
@@ -225,6 +218,7 @@ StartupEvents.registry("block", (event) => {
       global.handleBERightClick("minecraft:block.wood.place", click, global.agingCaskRecipes, 10);
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.agingCaskRecipes, 10, true);
       });

@@ -9,14 +9,14 @@ const handleBrokenMachine = (block) => {
   if (machine.upgrade && block.properties.get("upgraded").toLowerCase() == "true") {
     block.popItem(machine.upgrade);
   }
-  if (!block.properties.get("type")) return;
-  const currentRecipe = machine.recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+  const nbt = block.getEntityData();
+  const currentRecipe = machine.recipes[Number(nbt.data.type) - 1];
   if (block.properties.get("mature").toLowerCase() == "true") {
     currentRecipe.output.forEach((element) => {
       block.popItem(element);
     });
   } else if (!["society:charging_rod", "society:tapper"].includes(block.id)) {
-    let stage = Number(block.properties.get("stage"));
+    let stage = Number(nbt.data.stage);
     if (
       block.id == "society:ancient_cask" &&
       block.properties.get("upgraded").toLowerCase() == "true"

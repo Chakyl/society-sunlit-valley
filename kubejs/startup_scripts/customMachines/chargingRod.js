@@ -7,7 +7,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 5))
     .soundType("copper")
     .box(4, 0, 4, 12, 16, 12)
     .defaultCutout()
@@ -23,15 +22,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level, server } = click;
@@ -58,7 +55,6 @@ StartupEvents.registry("block", (event) => {
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         }
       }
@@ -75,7 +71,6 @@ StartupEvents.registry("block", (event) => {
           working: false,
           mature: false,
           upgraded: upgraded,
-          stage: "0",
         });
       }
     })
@@ -106,15 +101,18 @@ StartupEvents.registry("block", (event) => {
         Utils.server.runCommandSilent(
           `execute in ${level.dimension} run summon lightning_bolt ${block.x} ${block.y} ${block.z}`
         );
+        let nbt = block.getEntityData();
+        nbt.merge({ data: { stage: 0 } });
+        block.setEntityData(nbt);
         block.set(block.id, {
           working: true,
           mature: false,
           upgraded: upgraded,
-          stage: "0",
         });
       }
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, null, 5);
       });

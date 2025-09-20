@@ -86,8 +86,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(booleanProperty.create("error"))
-    .property(integerProperty.create("stage", 0, 7))
-    .property(integerProperty.create("type", 0, global.tapperRecipes.length))
     .soundType("copper")
     .defaultCutout()
     .box(3, 0, 6, 13, 16, 16)
@@ -106,8 +104,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(booleanProperty.create("error"), false)
-        .set(integerProperty.create("stage", 0, 7), 0)
-        .set(integerProperty.create("type", 0, global.tapperRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -115,8 +111,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(booleanProperty.create("error"), false)
-        .set(integerProperty.create("stage", 0, 7), 0)
-        .set(integerProperty.create("type", 0, global.tapperRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -143,7 +137,6 @@ StartupEvents.registry("block", (event) => {
             mature: block.properties.get("mature"),
             upgraded: true,
             error: block.properties.get("error"),
-            stage: block.properties.get("stage"),
           });
         }
       }
@@ -171,6 +164,7 @@ StartupEvents.registry("block", (event) => {
       global.handleTapperRandomTick(tick);
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         if (entity.block.properties.get("error") !== "true")
           global.handleBETick(entity, global.tapperRecipes, 7);

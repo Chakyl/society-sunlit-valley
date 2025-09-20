@@ -29,8 +29,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 4))
-    .property(integerProperty.create("type", 0, global.espressoMachineRecipes.length))
     .box(4, 0, 2, 12, 14, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -45,17 +43,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 4), 0)
-        .set(integerProperty.create("type", 0, global.espressoMachineRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 4), 0)
-        .set(integerProperty.create("type", 0, global.espressoMachineRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { item, block, hand, player, server } = click;
@@ -88,6 +82,9 @@ StartupEvents.registry("block", (event) => {
     })
     .randomTick((tick) => {
       global.handleBERandomTick(tick, true, 1);
+    })
+    .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
     }).blockstateJson = {
     multipart: [
       {
