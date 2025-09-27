@@ -57,10 +57,70 @@ ServerEvents.recipes((e) => {
       ],
     });
   };
-
+  const spoutBasicBottling = (juice, color) => {
+    e.custom({
+      type: "create:filling",
+      ingredients: [
+        {
+          item: "vinery:wine_bottle",
+        },
+        {
+          amount: 250,
+          fluidTag: `vinery:${juice}_grape_juice`,
+        },
+      ],
+      results: [
+        {
+          item: `vinery:${color}_grapejuice`,
+        },
+      ],
+    });
+  };
   netherGrapeJuices.forEach((juice, index) => {
     juiceFromPress(juice, nethergrapes[index]);
     spoutBottling(juice, nethergrapes[index]);
+  });
+
+  e.custom({
+    type: "create:emptying",
+    ingredients: [
+      {
+        item: `vinery:white_grapejuice`,
+      },
+    ],
+    results: [
+      {
+        item: "vinery:wine_bottle",
+      },
+      {
+        amount: 250,
+        fluid: `vinery:white_grape_juice`,
+      },
+    ],
+  });
+
+  e.custom({
+    type: "create:emptying",
+    ingredients: [
+      {
+        item: `vinery:red_grapejuice`,
+      },
+    ],
+    results: [
+      {
+        item: "vinery:wine_bottle",
+      },
+      {
+        amount: 250,
+        fluid: `vinery:red_grape_juice`,
+      },
+    ],
+  });
+  ["red", "red_savanna", "red_jungle", "red_taiga"].forEach((juice, index) => {
+    spoutBasicBottling(juice, "red");
+  });
+  ["white", "white_savanna", "white_jungle", "white_taiga"].forEach((juice, index) => {
+    spoutBasicBottling(juice, "white");
   });
   e.custom({
     type: "create:compacting",

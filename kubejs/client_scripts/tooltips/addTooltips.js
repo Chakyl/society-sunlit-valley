@@ -140,7 +140,6 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:wheel_of_adaptation",
       tooltip: "Was once used to summon a beast",
     },
-    { item: "society:spider_silk", tooltip: "Meticulously textured by a Nerdy Spider" },
     { item: "society:toy_train", tooltip: "« Limited to 2 passengers : ants »" },
     {
       item: "society:perfect_cherry",

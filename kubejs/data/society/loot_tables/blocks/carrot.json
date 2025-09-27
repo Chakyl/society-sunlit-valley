@@ -8,22 +8,33 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "conditions": [
+      "entries": [
         {
-          "block": "society:carrot",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "age": "7"
-          }
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 1,
-            "max": 2
-          }
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "society:carrot",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ],
+              "name": "minecraft:carrot"
+            }
+          ]
         }
       ],
       "rolls": 1.0

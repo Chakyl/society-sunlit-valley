@@ -4,6 +4,10 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "toms_storage" });
 
   // 4.0 TODO: Remove backwords compat
+  e.shapeless("dew_drop_farmland_growth:iron_sprinkler", ["society:iron_sprinkler"]);
+  e.shapeless("dew_drop_farmland_growth:gold_sprinkler", ["society:gold_sprinkler"]);
+  e.shapeless("dew_drop_farmland_growth:diamond_sprinkler", ["society:diamond_sprinkler"]);
+  e.shapeless("dew_drop_farmland_growth:netherite_sprinkler", ["society:netherite_sprinkler"]);
   e.shapeless("farm_and_charm:flour", ["create:wheat_flour"]);
   e.shapeless("numismatics_utils:bank_meter", ["society:bank_meter"]);
   e.shapeless("refinedstorage:cable", ["toms_storage:ts.inventory_cable"]);

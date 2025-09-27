@@ -5,7 +5,6 @@ const Block = Java.loadClass("net.minecraft.world.level.block.Block");
 global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
   const { level, block, inventory } = tickEvent;
   const { x, y, z } = pos;
-  console.log("running ribbit harvest");
   const server = level.server;
   let blockState;
   let scannedMCBlock;

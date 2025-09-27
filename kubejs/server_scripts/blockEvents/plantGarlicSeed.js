@@ -12,12 +12,16 @@ BlockEvents.rightClicked(
     "dew_drop_farmland_growth:pristine_quality_fertilized_farmland",
   ],
   (e) => {
-    const { item, player, level, block } = e;
+    const { item, player, level, server, block } = e;
     const aboveBlock = level.getBlock(block.getPos().above());
     if (aboveBlock.id === "minecraft:air") {
       if (item.id === "veggiesdelight:garlic_seed") {
-          aboveBlock.set("veggiesdelight:garlic_crop");
-          player.swing(); 
+        aboveBlock.set("veggiesdelight:garlic_crop");
+        item.shrink(1);
+        player.swing();
+        server.runCommandSilent(
+          `playsound minecraft:block.crop.break block @a ${player.x} ${player.y} ${player.z}`
+        );
       }
     }
   }

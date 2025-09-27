@@ -1,12 +1,7 @@
 console.info("[SOCIETY] addSewingRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const createSewingRecipe = (
-    material,
-    result,
-    additionalItem,
-    resultCount
-  ) => {
+  const createSewingRecipe = (material, result, additionalItem, resultCount) => {
     let sewingInputs = [
       {
         count: 1,
@@ -44,7 +39,7 @@ ServerEvents.recipes((e) => {
     ["blue", "society:ancient_fruit"],
     ["purple", "society:amethyst_chunk"],
     ["magenta", "pamhc2trees:plumitem"],
-    ["pink", 'brewery:whiskey_lilitusinglemalt'],
+    ["pink", "brewery:whiskey_lilitusinglemalt"],
     ["white", "beachparty:coconut_milkshake"],
     ["light_gray", "supplementaries:ash_brick"],
     ["gray", "society:truffle"],
@@ -89,9 +84,7 @@ ServerEvents.recipes((e) => {
     "etcetera:pink_hat",
   ].forEach((item) => {
     createSewingRecipe(
-      colorItems.get(
-        item.substring(item.indexOf(":") + 1, item.lastIndexOf("_"))
-      ),
+      colorItems.get(item.substring(item.indexOf(":") + 1, item.lastIndexOf("_"))),
       item,
       { count: 16, ingredient: { item: "etcetera:cotton_flower" } }
     );
@@ -106,14 +99,11 @@ ServerEvents.recipes((e) => {
   createSewingRecipe("herbalbrews:oolong_tea", "herbalbrews:top_hat");
   createSewingRecipe("society:holy_symbol", "herbalbrews:witch_hat");
 
-  [
-    "meadow:fur_boots",
-    "meadow:fur_leggings",
-    "meadow:fur_chestplate",
-    "meadow:fur_helmet",
-  ].forEach((item) => {
-    createSewingRecipe("society:aged_buffalo_cheese_block", item);
-  });
+  ["meadow:fur_boots", "meadow:fur_leggings", "meadow:fur_chestplate", "meadow:fur_helmet"].forEach(
+    (item) => {
+      createSewingRecipe("society:aged_buffalo_cheese_block", item);
+    }
+  );
   [
     "vinery:winemaker_apron",
     "vinery:winemaker_boots",
@@ -392,14 +382,7 @@ ServerEvents.recipes((e) => {
     "vikinghatbeard",
     "winghat",
   ].forEach((hat, index) => {
-    createHatSewingRecipe(
-      index,
-      global.artisanGoods.filter(
-        (good) => !good.item.includes("society:double_aged")
-      ),
-      4,
-      hat
-    );
+    createHatSewingRecipe(index, global.miscAdventurer, 4, hat);
   });
 
   [

@@ -660,6 +660,7 @@ global.preserves = [
   { item: "society:bell_pepper_preserves", value: 544 },
   { item: "vintagedelight:relish_mason_jar", value: 1440 },
   { item: "vintagedelight:pepper_jam_mason_jar", value: 604 },
+  { item: "society:cauliflower_preserves", value: 784 },
   { item: "society:eggplant_preserves", value: 694 },
   { item: "society:turnip_preserves", value: 784 },
   { item: "society:zucchini_preserves", value: 1440 },
@@ -876,6 +877,13 @@ global.logs = [
   { item: "farmersdelight:straw", value: 3 },
   { item: "farmersdelight:straw_bale", value: 27 },
   { item: "farmersdelight:canvas", value: 12 },
+  { item: "windswept:stripped_holly_log", value: 3 },
+  { item: "windswept:holly_log", value: 3 },
+  { item: "windswept:chestnut_log", value: 3 },
+  { item: "windswept:stripped_chestnut_log", value: 3 },
+  { item: "windswept:pine_log", value: 3 },
+  { item: "windswept:stripped_pine_log", value: 3 },
+  { item: "windswept:weathered_pine_log", value: 6 },
 ];
 
 /**

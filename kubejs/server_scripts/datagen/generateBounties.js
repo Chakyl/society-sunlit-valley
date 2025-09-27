@@ -13,7 +13,7 @@ const createDecree = (name, items, mult, pricyThreshold, amountFunction) => {
         content: item,
         rarity: pricy ? "UNCOMMON" : "COMMON",
         weightMult: pricy ? 0.5 : 1,
-        amount: amountFunction && amountFunction(pricy) || {
+        amount: (amountFunction && amountFunction(pricy)) || {
           min: pricy ? 1 : 2,
           max: pricy ? 4 : 8,
         },
@@ -196,5 +196,19 @@ if (runBountyDataGen) {
     3,
     48,
     (pricy) => ({ min: pricy ? 1 : 8, max: pricy ? 4 : 32 })
+  );
+  createDecree(
+    "artisan",
+    global.artisanGoods
+      .map((x) => x.item)
+      .filter((item) => !item.includes("aged"))
+      .concat(global.wines.map((x) => x.item).filter((item) => !item.includes("aged")))
+      .concat(global.brews.map((x) => x.item).filter((item) => !item.includes("aged"))),
+    3,
+    2048,
+    (pricy) => ({
+      min: pricy ? 1 : 2,
+      max: pricy ? 2 : 4,
+    })
   );
 }

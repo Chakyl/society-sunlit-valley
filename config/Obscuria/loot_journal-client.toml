@@ -41,7 +41,7 @@
 ["Filter Options"]
 	#Allowed Values: ALLOW_ALL, DENY_ALL
 	"Default Filter Rule" = "ALLOW_ALL"
-	"Item ID Blacklist" = []
+	"Item ID Blacklist" = ["minecraft:air"]
 	"Item ID Whitelist" = []
 	"Mod ID Blacklist" = []
 	"Mod ID Whitelist" = []

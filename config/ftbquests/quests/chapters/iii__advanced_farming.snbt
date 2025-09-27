@@ -985,12 +985,19 @@
 			]
 			icon: "society:butterfly_amber"
 			id: "3B6640956F047EC8"
-			rewards: [{
-				count: 4
-				id: "7206E75A9309D986"
-				item: "society:bouquet_bag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7206E75A9309D986"
+					item: "society:bouquet_bag"
+					type: "item"
+				}
+				{
+					id: "3C273BC02EC38EE8"
+					item: "sophisticatedstorage:advanced_magnet_upgrade"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "526CDEE7648DACB8"
 				item: {
@@ -1047,7 +1054,7 @@
 				"139B02AFBCBBF350"
 			]
 			description: [
-				"Slimes can be fed in a few ways. The simplest of which is tossing an item they like to eat at them. For Slimes that only eat animals and monsters, you'll need to wrangle on into their area."
+				"Slimes can be fed in a few ways. The simplest of which is tossing an item they like to eat at them. For Slimes that only eat animals and monsters, you'll need to wrangle one into their area."
 				""
 				"After being fed, they'll drop a &6Plort&r! These can be sold, used to make more slimes, or processed into more valuable goods!"
 			]

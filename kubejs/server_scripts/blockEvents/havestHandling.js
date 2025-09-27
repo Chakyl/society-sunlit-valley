@@ -11,17 +11,14 @@ const deniedCrops = [
   "minecraft:cocoa",
   "supplementaries:flax",
 ];
-const allowedBonemealCrops = [
-  "minecraft:crimson_fungus",
-  "minecraft:warped_fungus",
-];
+const allowedBonemealCrops = ["minecraft:crimson_fungus", "minecraft:warped_fungus"];
 const reseedableCrops = [
   "minecraft:potato",
   "minecraft:carrot",
   "farm_and_charm:onion",
   "veggiesdelight:sweet_potato",
   "vintagedelight:peanut",
-  "veggiesdelight:garlic_crop"
+  "veggiesdelight:garlic_crop",
 ];
 BlockEvents.rightClicked((e) => {
   const { block, player, server, hand, item, level } = e;
@@ -84,7 +81,7 @@ BlockEvents.rightClicked((e) => {
           "verdantvibes:bracket_mushroom",
         ].includes(block.id)
       ) {
-        player.tell("Bonemeal is too weak to grow this...")
+        player.tell("Bonemeal is too weak to grow this...");
         e.cancel();
       }
     }
@@ -131,4 +128,12 @@ BlockEvents.rightClicked((e) => {
       }
     }
   }
+});
+// Vinery grapevine leaf mechanic
+BlockEvents.rightClicked("vinery:grapevine_stem", (e) => {
+  const { block } = e;
+  let properties = block.getProperties();
+  properties.leaves_pending = false
+  properties.leaves_done = true
+  block.set(block.id, properties);
 });

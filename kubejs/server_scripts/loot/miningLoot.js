@@ -241,20 +241,44 @@ LootJS.modifiers((e) => {
         });
     }
   );
-
-  Ingredient.of("#forge:ores").itemIds.forEach((ore) => {
+  overworldOres.forEach((ore) => {
     e.addBlockLootModifier(ore)
       .hasAnyStage("the_spark_also_rises")
       .pool((p) => {
         p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
-        p.addLoot("2x society:sparkstone");
+        p.addLoot(Item.of("2x society:sparkstone"));
       });
   });
-  ['society:sparkstone_ore', 'society:deepslate_sparkstone_ore'].forEach((ore) => {
+  netherOres.forEach((ore) => {
     e.addBlockLootModifier(ore)
+      .hasAnyStage("the_spark_also_rises")
       .pool((p) => {
         p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
-        p.randomChance(0.01).addLoot("society:the_spark_also_rises");
+        p.addLoot(Item.of("2x society:sparkstone"));
       });
+  });
+  const skullCavernOres = [
+    "oreganized:lead_ore",
+    "oreganized:deepslate_lead_ore",
+    "oreganized:silver_ore",
+    "oreganized:deepslate_silver_ore",
+    "society:iridium_ore",
+    "society:deepslate_iridium_ore",
+    "society:sparkstone_ore",
+    "society:deepslate_sparkstone_ore",
+  ];
+  skullCavernOres.forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .hasAnyStage("the_spark_also_rises")
+      .pool((p) => {
+        p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
+        p.addLoot(Item.of("2x society:sparkstone"));
+      });
+  });
+  ["society:sparkstone_ore", "society:deepslate_sparkstone_ore"].forEach((ore) => {
+    e.addBlockLootModifier(ore).pool((p) => {
+      p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
+      p.randomChance(0.01).addLoot("society:the_spark_also_rises");
+    });
   });
 });

@@ -77,68 +77,68 @@ BlockEvents.rightClicked(
     }
   }
 );
-BlockEvents.placed(
-  ([
-    "minecraft:cactus",
-    "moreminecarts:glass_cactus",
-    "minecraft:sugar_cane",
-    "nethervinery:crimson_grape_bush",
-    "nethervinery:warped_grape_bush",
-    "vinery:jungle_grape_bush_red",
-    "vinery:jungle_grape_bush_white",
-    "vinery:taiga_grape_bush_white",
-    "vinery:taiga_grape_bush_red",
-    "vinery:savanna_grape_bush_white",
-    "vinery:savanna_grape_bush_red",
-    "vinery:white_grape_bush",
-    "vinery:red_grape_bush",
-    "windswept:wild_berry_bush",
-    "minecraft:sweet_berry_bush",
-  ],
-  (e) => {
-    const { player, block, server } = e;
-    let errorText;
-    if (
-      ["minecraft:cactus", "moreminecarts:glass_cactus", "minecraft:sugar_cane"].includes(block.id)
-    ) {
-      errorText = "This must be planted on Tilled Sand to grow";
-    }
-    if (block.id.includes("jungle")) {
-      errorText = "This Seed must be planted on a Vinery Lattice to grow";
-    } else if (block.id.includes("grape")) {
-      errorText = "This must be planted on a Grapevine Stem to grow";
-    }
-    if (block.id.includes("berry")) {
-      errorText = "This berry must be planted on farmland to grow";
-    }
+// BlockEvents.placed(
+//   ([
+//     "minecraft:cactus",
+//     "moreminecarts:glass_cactus",
+//     "minecraft:sugar_cane",
+//     "nethervinery:crimson_grape_bush",
+//     "nethervinery:warped_grape_bush",
+//     "vinery:jungle_grape_bush_red",
+//     "vinery:jungle_grape_bush_white",
+//     "vinery:taiga_grape_bush_white",
+//     "vinery:taiga_grape_bush_red",
+//     "vinery:savanna_grape_bush_white",
+//     "vinery:savanna_grape_bush_red",
+//     "vinery:white_grape_bush",
+//     "vinery:red_grape_bush",
+//     "windswept:wild_berry_bush",
+//     "minecraft:sweet_berry_bush",
+//   ],
+//   (e) => {
+//     const { player, block, server } = e;
+//     let errorText;
+//     if (
+//       ["minecraft:cactus", "moreminecarts:glass_cactus", "minecraft:sugar_cane"].includes(block.id)
+//     ) {
+//       errorText = "This must be planted on Tilled Sand to grow";
+//     }
+//     if (block.id.includes("jungle")) {
+//       errorText = "This Seed must be planted on a Vinery Lattice to grow";
+//     } else if (block.id.includes("grape")) {
+//       errorText = "This must be planted on a Grapevine Stem to grow";
+//     }
+//     if (block.id.includes("berry")) {
+//       errorText = "This berry must be planted on farmland to grow";
+//     }
 
-    if (errorText) {
-      global.renderUiText(
-        player,
-        server,
-        {
-          seedBiomeMessage: {
-            type: "text",
-            x: 0,
-            y: -90,
-            text: errorText,
-            color: "#FF5555",
-            alignX: "center",
-            alignY: "bottom",
-          },
-          seedBiomeMessageShadow: {
-            type: "text",
-            x: 1,
-            z: -1,
-            y: -89,
-            text: errorText,
-            color: "#000000",
-            alignX: "center",
-            alignY: "bottom",
-          },
-        },
-        global.mainUiElementIds
-      );
-    }
-  })
-);
+//     if (errorText) {
+//       global.renderUiText(
+//         player,
+//         server,
+//         {
+//           seedBiomeMessage: {
+//             type: "text",
+//             x: 0,
+//             y: -90,
+//             text: errorText,
+//             color: "#FF5555",
+//             alignX: "center",
+//             alignY: "bottom",
+//           },
+//           seedBiomeMessageShadow: {
+//             type: "text",
+//             x: 1,
+//             z: -1,
+//             y: -89,
+//             text: errorText,
+//             color: "#000000",
+//             alignX: "center",
+//             alignY: "bottom",
+//           },
+//         },
+//         global.mainUiElementIds
+//       );
+//     }
+//   })
+// );
