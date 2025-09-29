@@ -38,7 +38,7 @@ ItemEvents.modification((e) => {
       item.rarity = "epic";
     }
   );
-  e.modify(["society:bank_meter", "society:milk_pail", "society:magic_shears"], (item) => {
+  e.modify(["society:milk_pail", "society:magic_shears"], (item) => {
     item.maxStackSize = 1;
   });
   e.modify("society:aquamarine", (item) => {

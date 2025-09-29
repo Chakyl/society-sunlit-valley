@@ -49,6 +49,12 @@ global.handleAdditionalArtisanMachineOutputs = (
       }
       break;
     }
+    case "society:mayonnaise_machine": {
+      if (upgraded && rnd5()) {
+        global.insertBelow(level, block, "society:supreme_mayonnaise");
+      }
+      break;
+    }
   }
 };
 // TODO: make artisan hopper set tappers
