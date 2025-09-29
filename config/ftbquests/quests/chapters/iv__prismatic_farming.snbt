@@ -453,6 +453,8 @@
 				"{ftbquests.chapter.iii__advanced_farming.quest42.description2}"
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest42.description3}"
+				""
+				"It can be upgraded with Magic Shears to automatically harvest meat, though this does reduce their affection if they aren't pet every day."
 			]
 			id: "4D1F2652FD9DEF69"
 			rewards: [{
@@ -479,22 +481,9 @@
 				"{ftbquests.chapter.iii__advanced_farming.quest14.description3}"
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest14.description4}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description5}"
 			]
 			icon: "society:skull_cavern_teleporter"
 			id: "5A369FC904BCF5EE"
-			rewards: [{
-				id: "001B56F46D4EA351"
-				item: {
-					Count: 1
-					id: "gag:escape_rope"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
 			size: 1.5d
 			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest14.subtitle}"
 			tasks: [{
@@ -1082,11 +1071,6 @@
 				{
 					id: "7848173096FA0405"
 					item: "ribbits:ribbit_nitwit_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "7C8E972DB82CC7E7"
-					item: "ribbits:ribbit_gardener_spawn_egg"
 					type: "item"
 				}
 			]

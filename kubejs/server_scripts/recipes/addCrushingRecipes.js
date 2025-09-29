@@ -1,18 +1,20 @@
-console.info("[SOCIETY] addMiscRecipes.js loaded");
+console.info("[SOCIETY] addCrushingRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const crushedRecipes = (input, output, outputCount) => {
-    e.custom({
-      type: "farm_and_charm:mincer",
-      ingredient: {
-        item: input,
-      },
-      recipe_type: "MEAT",
-      result: {
-        count: outputCount,
-        item: output,
-      },
-    });
+  const crushedRecipes = (input, output, outputCount, ignoreMincer) => {
+    if (!ignoreMincer) {
+      e.custom({
+        type: "farm_and_charm:mincer",
+        ingredient: {
+          item: input,
+        },
+        recipe_type: "MEAT",
+        result: {
+          count: outputCount,
+          item: output,
+        },
+      });
+    }
     e.custom({
       type: "create:milling",
       ingredients: [
@@ -36,8 +38,10 @@ ServerEvents.recipes((e) => {
 
   crushedRecipes("pamhc2trees:cinnamonitem", "society:ground_cinnamon", 4);
   crushedRecipes("herbalbrews:coffee_beans", "herbalbrews:ground_coffee", 1);
-  crushedRecipes("dew_drop_farmland_growth:weak_fertilizer", "farm_and_charm:fertilizer", 1);
-
+  crushedRecipes("minecraft:beef", "farm_and_charm:minced_beef", 1, true);
+  crushedRecipes("minecraft:mutton", "farm_and_charm:lamb_ham", 1, true);
+  crushedRecipes("minecraft:baked_potato", "brewery:mashed_potatoes", 2, true);
+  
   const spoutingRecipes = [
     { input: "create:crushed_raw_iron", output: ["minecraft:raw_iron"] },
     { input: "minecraft:raw_copper", output: ["create:crushed_raw_copper"] },
@@ -47,5 +51,4 @@ ServerEvents.recipes((e) => {
     { input: "oreganized:raw_silver", output: ["create:crushed_raw_silver"] },
     { input: "etcetera:raw_bismuth", output: ["create:crushed_raw_bismuth"] },
   ];
-
 });

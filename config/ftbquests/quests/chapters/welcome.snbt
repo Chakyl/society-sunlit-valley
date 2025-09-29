@@ -236,15 +236,6 @@
 					silent: true
 					type: "command"
 				}
-				{
-					auto: "invisible"
-					command: "/ftbchunks admin extra_force_load_chunks @p set 13"
-					elevate_perms: true
-					id: "22B55DC3DCAA04CC"
-					ignore_reward_blocking: true
-					silent: true
-					type: "command"
-				}
 			]
 			tasks: [{
 				dimension: "minecraft:overworld"

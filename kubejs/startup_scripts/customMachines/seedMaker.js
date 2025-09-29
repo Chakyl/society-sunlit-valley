@@ -109,7 +109,7 @@ global.seedMakerRecipes = [
   },
   {
     input: "veggiesdelight:garlic",
-    output: ["6x veggiesdelight:garlic_seeds"],
+    output: ["6x veggiesdelight:garlic_seed"],
   },
   {
     input: "botania:green_mystical_flower",

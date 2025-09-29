@@ -1,0 +1,1016 @@
+{
+	"content": {
+		"artisan_battery": {
+			"type": "minecraft:item",
+			"content": "society:battery",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1200
+		},
+		"artisan_canvas": {
+			"type": "minecraft:item",
+			"content": "society:canvas",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 240
+		},
+		"artisan_merino_wool": {
+			"type": "minecraft:item",
+			"content": "society:merino_wool",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 12288
+		},
+		"artisan_mana_string": {
+			"type": "minecraft:item",
+			"content": "botania:mana_string",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"artisan_manaweave_cloth": {
+			"type": "minecraft:item",
+			"content": "botania:manaweave_cloth",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 18432
+		},
+		"artisan_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 96
+		},
+		"artisan_duck_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:duck_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 192
+		},
+		"artisan_goose_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:goose_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 384
+		},
+		"artisan_turkey_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:turkey_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 768
+		},
+		"artisan_galliraptor_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:galliraptor_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 6144
+		},
+		"artisan_parrot_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:parrot_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1536
+		},
+		"artisan_turtle_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:turtle_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3072
+		},
+		"artisan_sniffer_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:sniffer_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4608
+		},
+		"artisan_petrified_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:petrified_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 6144
+		},
+		"artisan_supreme_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:supreme_mayonnaise",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 29997
+		},
+		"artisan_golden_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:golden_mayonnaise",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 36864
+		},
+		"artisan_dragon_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:dragon_mayonnaise",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 36864
+		},
+		"artisan_large_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:large_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 384
+		},
+		"artisan_large_duck_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:large_duck_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 768
+		},
+		"artisan_large_goose_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:large_goose_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1536
+		},
+		"artisan_large_turkey_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:large_turkey_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3072
+		},
+		"artisan_large_galliraptor_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:large_galliraptor_mayonnaise",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 24576
+		},
+		"artisan_birt_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:birt_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 288
+		},
+		"artisan_wraptor_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:wraptor_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 960
+		},
+		"artisan_springling_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:springling_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3072
+		},
+		"artisan_penguin_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:penguin_mayonnaise",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4608
+		},
+		"artisan_flamingo_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:flamingo_mayonnaise",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 9216
+		},
+		"artisan_cruncher_mayonnaise": {
+			"type": "minecraft:item",
+			"content": "society:cruncher_mayonnaise",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 12288
+		},
+		"artisan_oak_resin": {
+			"type": "minecraft:item",
+			"content": "society:oak_resin",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 144
+		},
+		"artisan_maple_syrup": {
+			"type": "minecraft:item",
+			"content": "society:maple_syrup",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 576
+		},
+		"artisan_pine_tar": {
+			"type": "minecraft:item",
+			"content": "society:pine_tar",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 144
+		},
+		"artisan_sap": {
+			"type": "minecraft:item",
+			"content": "society:sap",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 60
+		},
+		"artisan_rubber": {
+			"type": "minecraft:item",
+			"content": "society:rubber",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 90
+		},
+		"artisan_forks_of_blue": {
+			"type": "minecraft:item",
+			"content": "society:forks_of_blue",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1728
+		},
+		"artisan_jo_special_mixture": {
+			"type": "minecraft:item",
+			"content": "vinery:jo_special_mixture",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4896
+		},
+		"artisan_cristel_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:cristel_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1728
+		},
+		"artisan_creepers_crush": {
+			"type": "minecraft:item",
+			"content": "vinery:creepers_crush",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1008
+		},
+		"artisan_villagers_fright": {
+			"type": "minecraft:item",
+			"content": "vinery:villagers_fright",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"artisan_glowing_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:glowing_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4320
+		},
+		"artisan_mead": {
+			"type": "minecraft:item",
+			"content": "vinery:mead",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1728
+		},
+		"artisan_bottle_mojang_noir": {
+			"type": "minecraft:item",
+			"content": "vinery:bottle_mojang_noir",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1440
+		},
+		"artisan_eiswein": {
+			"type": "minecraft:item",
+			"content": "vinery:eiswein",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 5472
+		},
+		"artisan_blazewine_pinot": {
+			"type": "minecraft:item",
+			"content": "nethervinery:blazewine_pinot",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 6624
+		},
+		"artisan_netherite_nectar": {
+			"type": "minecraft:item",
+			"content": "nethervinery:netherite_nectar",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 13152
+		},
+		"artisan_ghastly_grenache": {
+			"type": "minecraft:item",
+			"content": "nethervinery:ghastly_grenache",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1440
+		},
+		"artisan_lava_fizz": {
+			"type": "minecraft:item",
+			"content": "nethervinery:lava_fizz",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 2160
+		},
+		"artisan_nether_fizz": {
+			"type": "minecraft:item",
+			"content": "nethervinery:nether_fizz",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3744
+		},
+		"artisan_improved_lava_fizz": {
+			"type": "minecraft:item",
+			"content": "nethervinery:improved_lava_fizz",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 2400
+		},
+		"artisan_improved_nether_fizz": {
+			"type": "minecraft:item",
+			"content": "nethervinery:improved_nether_fizz",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4200
+		},
+		"artisan_chorus_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:chorus_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1440
+		},
+		"artisan_cherry_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:cherry_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1296
+		},
+		"artisan_magnetic_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:magnetic_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"artisan_noir_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:noir_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4320
+		},
+		"artisan_lilitu_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:lilitu_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 5472
+		},
+		"artisan_mellohi_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:mellohi_wine",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 13152
+		},
+		"artisan_stal_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:stal_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1800
+		},
+		"artisan_strad_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:strad_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"artisan_solaris_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:solaris_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1728
+		},
+		"artisan_bolvar_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:bolvar_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1512
+		},
+		"artisan_aegis_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:aegis_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3168
+		},
+		"artisan_clark_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:clark_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1440
+		},
+		"artisan_chenet_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:chenet_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3168
+		},
+		"artisan_kelp_cider": {
+			"type": "minecraft:item",
+			"content": "vinery:kelp_cider",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3780
+		},
+		"artisan_apple_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:apple_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"artisan_apple_cider": {
+			"type": "minecraft:item",
+			"content": "vinery:apple_cider",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 7776
+		},
+		"artisan_red_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:red_wine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1008
+		},
+		"artisan_good_catawba": {
+			"type": "minecraft:item",
+			"content": "society:good_catawba",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1512
+		},
+		"artisan_jellie_wine": {
+			"type": "minecraft:item",
+			"content": "vinery:jellie_wine",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 18144
+		},
+		"artisan_ancient_vespertine": {
+			"type": "minecraft:item",
+			"content": "society:ancient_vespertine",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 5472
+		},
+		"artisan_dewy_star": {
+			"type": "minecraft:item",
+			"content": "society:dewy_star",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 8064
+		},
+		"artisan_ancient_cider": {
+			"type": "minecraft:item",
+			"content": "society:ancient_cider",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 10272
+		},
+		"artisan_star_coquito": {
+			"type": "minecraft:item",
+			"content": "society:star_coquito",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 18000
+		},
+		"artisan_nutty_basil": {
+			"type": "minecraft:item",
+			"content": "society:nutty_basil",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1872
+		},
+		"artisan_beer_nettle": {
+			"type": "minecraft:item",
+			"content": "brewery:beer_nettle",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 441
+		},
+		"artisan_beer_hops": {
+			"type": "minecraft:item",
+			"content": "brewery:beer_hops",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 414
+		},
+		"artisan_beer_wheat": {
+			"type": "minecraft:item",
+			"content": "brewery:beer_wheat",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 846
+		},
+		"artisan_beer_barley": {
+			"type": "minecraft:item",
+			"content": "brewery:beer_barley",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 378
+		},
+		"artisan_beer_oat": {
+			"type": "minecraft:item",
+			"content": "brewery:beer_oat",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 684
+		},
+		"artisan_beer_haley": {
+			"type": "minecraft:item",
+			"content": "brewery:beer_haley",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 441
+		},
+		"artisan_beer_london": {
+			"type": "minecraft:item",
+			"content": "society:beer_london",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 2700
+		},
+		"artisan_beer_attunecore": {
+			"type": "minecraft:item",
+			"content": "society:beer_attunecore",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 954
+		},
+		"artisan_whiskey_carrasconlabel": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_carrasconlabel",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1035
+		},
+		"artisan_whiskey_maggoallan": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_maggoallan",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1278
+		},
+		"artisan_whiskey_jamesons_malt": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_jamesons_malt",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 648
+		},
+		"artisan_whiskey_smokey_reverie": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_smokey_reverie",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 954
+		},
+		"artisan_whiskey_highland_hearth": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_highland_hearth",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1116
+		},
+		"artisan_whiskey_ak": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_ak",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 873
+		},
+		"artisan_whiskey_cristelwalker": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_cristelwalker",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 792
+		},
+		"artisan_whiskey_lilitusinglemalt": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_lilitusinglemalt",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 810
+		},
+		"artisan_whiskey_jojannik": {
+			"type": "minecraft:item",
+			"content": "brewery:whiskey_jojannik",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 342
+		},
+		"artisan_dark_brew": {
+			"type": "minecraft:item",
+			"content": "brewery:dark_brew",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 7290
+		},
+		"artisan_starcardi": {
+			"type": "minecraft:item",
+			"content": "society:starcardi",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 2052
+		}
+	}
+}

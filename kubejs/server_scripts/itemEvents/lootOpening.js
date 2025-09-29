@@ -15,7 +15,6 @@ ItemEvents.rightClicked("society:furniture_box", (e) => {
   reward.z = player.z;
 
   reward.item = furniture[Math.floor(Math.random() * furniture.length)];
-
   reward.spawn();
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`

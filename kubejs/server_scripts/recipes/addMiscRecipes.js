@@ -686,7 +686,7 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("dew_drop_farmland_growth:gold_sprinkler", ["fef", " s ", " G "], {
     G: "minecraft:gold_block",
-    s: "society:iron_sprinkler",
+    s: "dew_drop_farmland_growth:iron_sprinkler",
     f: "society:fire_quartz",
     e: "society:earth_crystal",
   });
@@ -697,7 +697,7 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
   });
   e.shaped("dew_drop_farmland_growth:diamond_sprinkler", ["nDn", " s ", " b "], {
-    s: "society:gold_sprinkler",
+    s: "dew_drop_farmland_growth:gold_sprinkler",
     D: "minecraft:diamond_block",
     b: "society:battery",
     n: "aquaculture:neptunium_nugget",
@@ -709,7 +709,7 @@ ServerEvents.recipes((e) => {
     n: "aquaculture:neptunium_nugget",
   });
   e.shaped("dew_drop_farmland_growth:netherite_sprinkler", ["nNn", " s ", " j "], {
-    s: "society:diamond_sprinkler",
+    s: "dew_drop_farmland_growth:diamond_sprinkler",
     j: "society:jade",
     N: "minecraft:netherite_ingot",
     n: "aquaculture:neptunium_ingot",

@@ -46,7 +46,7 @@ const tanukiWordMap = [
   { word: "toy_plane", craftItem: "society:ribbit_gadget" },
   { word: "atm", craftItem: "numismatics:neptunium_coin" },
   { word: "phone", craftItem: 'society:steamy_gadget' },
-  { word: "paper_lantern", craftItem: 'society:artisan_canvas' },
+  { word: "paper_lantern", craftItem: 'society:canvas' },
   { word: "cash_register", craftItem: 'numismatics:sun' },
   { word: "mirror", craftItem: 'society:glitched_vhs' },
   { word: "stocking", craftItem: 'windswept:ginger_tea' },

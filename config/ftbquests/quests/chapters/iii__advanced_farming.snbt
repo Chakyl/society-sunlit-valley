@@ -88,7 +88,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 0.5d
 		}
 		{
@@ -207,8 +207,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -1.0d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
@@ -233,7 +233,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest9.title}"
-			x: 10.5d
+			x: 9.5d
 			y: 0.5d
 		}
 		{
@@ -320,7 +320,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest14.title}"
-			x: 13.25d
+			x: 12.25d
 			y: 0.5d
 		}
 		{
@@ -524,7 +524,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest30.title}"
-			x: 11.5d
+			x: 10.5d
 			y: -0.5d
 		}
 		{
@@ -772,7 +772,7 @@
 				type: "item"
 			}]
 			title: "Higher Tiers"
-			x: 11.5d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -985,12 +985,19 @@
 			]
 			icon: "society:butterfly_amber"
 			id: "3B6640956F047EC8"
-			rewards: [{
-				count: 4
-				id: "7206E75A9309D986"
-				item: "society:bouquet_bag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7206E75A9309D986"
+					item: "society:bouquet_bag"
+					type: "item"
+				}
+				{
+					id: "3C273BC02EC38EE8"
+					item: "sophisticatedstorage:advanced_magnet_upgrade"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "526CDEE7648DACB8"
 				item: {
@@ -1047,7 +1054,7 @@
 				"139B02AFBCBBF350"
 			]
 			description: [
-				"Slimes can be fed in a few ways. The simplest of which is tossing an item they like to eat at them. For Slimes that only eat animals and monsters, you'll need to wrangle on into their area."
+				"Slimes can be fed in a few ways. The simplest of which is tossing an item they like to eat at them. For Slimes that only eat animals and monsters, you'll need to wrangle one into their area."
 				""
 				"After being fed, they'll drop a &6Plort&r! These can be sold, used to make more slimes, or processed into more valuable goods!"
 			]
@@ -1149,6 +1156,64 @@
 			title: "Trash To Treasure"
 			x: 1.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["18EB59F2591BAD51"]
+			description: [
+				"&6Fermentation Barrels&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				""
+				"Recipes can use the following juices:"
+				""
+				"- &cRed&r/&aWhite&r grape juice"
+				"- &cCrimson&r/&aWarped&r grape juice"
+				"- &eApple Juice&r (made using an Apple Press)"
+				""
+				"Juices are inserted in the top left slot of the Fermentation Barrel."
+			]
+			icon: "vinery:red_grapejuice"
+			id: "180411EF1F7649DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47F40C9762972779"
+				table_id: 8298743981735202683L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "36017F8FB07D6021"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "vinery:white_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:red_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:warped_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:crimson_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:apple_juice"
+							}
+						]
+					}
+				}
+				title: "Any Fermentation Barrel juice"
+				type: "item"
+			}]
+			title: "Juicing up the Wine"
+			x: 2.5d
+			y: 0.5d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"
