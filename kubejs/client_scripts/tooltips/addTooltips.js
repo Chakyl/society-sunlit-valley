@@ -377,7 +377,6 @@ ItemEvents.tooltip((tooltip) => {
     "numismatics_utils:bank_meter",
     Text.gray("Shows balance in Bank Terminal when worn in curio slot")
   );
-  tooltip.add("society:bank_meter", Text.red("Removed! Craft into new one!"));
   tooltip.add(
     "society:fish_radar",
     Text.gray("Shows catchable fish at the current time and location")
@@ -1093,10 +1092,6 @@ ItemEvents.tooltip((tooltip) => {
   // Refined
   tooltip.add("refinedstorage:4k_storage_block", Text.green("Stores 4,000 items digitally"));
   tooltip.add("refinedstorage:64k_storage_block", Text.green("Stores 64,000 items digitally"));
-  tooltip.add(
-    "toms_storage:ts.adv_wireless_terminal",
-    Text.red("Shift + Right Click to convert into Wireless Crafting Grid and Dimension Card.")
-  );
   global.removedItems.forEach((item) => {
     tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
   });

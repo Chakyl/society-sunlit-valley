@@ -7,7 +7,6 @@ ServerEvents.tags("item", (e) => {
     "sophisticatedbackpacks",
     "sophisticatedstorage",
     "automobility",
-    "toms_storage",
     "relics",
     "betterarcheology",
     "pamhc2trees",

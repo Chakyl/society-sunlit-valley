@@ -1,0 +1,189 @@
+{
+  "shop_id": "poke_mart",
+  "name": "shop.society_trading.poke_mart",
+  "texture": "cobblemon:textures/item/poke_balls/poke_ball",
+  "jei_catalyst": { "item": "cobblemon:poke_ball" },
+  "villager_profession": "etched:bard",
+  "trades": [
+    {
+      "offer": {
+        "item": "cobblemon:poke_ball",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 192,
+      "trade_id": "pmart_poke_ball"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:great_ball",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "pmart_great_ball"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:ultra_ball",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "pmart_ultra_ball"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:potion",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "pmart_potion"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:super_potion",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "pmart_super_potion"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:hyper_potion",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "pmart_hyper_potion"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:revive",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 6
+      },
+      "numismatics_cost": 3072,
+      "trade_id": "pmart_revive"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:antidote",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "pmart_antidote"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:paralyze_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "pmart_paralyze_heal"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:awakening",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "pmart_awakening"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:burn_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "pmart_burn_heal"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:ice_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "pmart_ice_heal"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:full_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "pmart_full_heal"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:pc",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 8192,
+      "trade_id": "pmart_pc"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:healing_machine",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "pmart_healing_machine"
+    }
+  ]
+}

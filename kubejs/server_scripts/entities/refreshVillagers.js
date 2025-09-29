@@ -1,45 +1,5 @@
 console.info("[SOCIETY] refreshVillagers.js loaded");
 
-ItemEvents.entityInteracted((e) => {
-  const { hand, player, level, target, server } = e;
-  if (hand == "OFF_HAND") return;
-  if (target.type !== "minecraft:villager") return;
-  let updateThis = false;
-  const nbt = target.nbt.toString();
-  if (nbt.includes("leatherworker") && !nbt.includes("stylin_purple_hat")) updateThis = true;
-  if (nbt.includes("weaponsmith") && !nbt.includes("64k_storage_block")) updateThis = true;
-  if (nbt.includes("shepherd") && !nbt.includes("diamond_lasso")) updateThis = true;
-  if (nbt.includes("botanist") && !nbt.includes("endless_fortune")) updateThis = true;
-  if (nbt.includes("bountiful_fertilizer")) updateThis = true;
-  if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
-  if (nbt.includes("toolsmith") && nbt.includes("reinforced_core")) updateThis = true;
-  if (nbt.includes("cleric") && !nbt.includes("hostile_lasso")) updateThis = true;
-  if (nbt.includes("librarian") && !nbt.includes("silk_touch")) updateThis = true;
-  if (
-    nbt.includes("cartographer") &&
-    !nbt.includes("fletcher") &&
-    !nbt.includes("shipping_bin_monitor")
-  )
-    updateThis = true;
-  if (nbt.includes("fletcher") && !nbt.includes("enkephalin")) updateThis = true;
-  if (nbt.includes("fisher") && !nbt.includes("river_jelly")) updateThis = true;
-
-  if (updateThis) {
-    let freshVillager = level.createEntity("minecraft:villager");
-    let villagerNbt = freshVillager.getNbt();
-    villagerNbt.VillagerData.profession = target.nbt.VillagerData.profession;
-    villagerNbt.Brain.memories = target.nbt.Brain.memories;
-    freshVillager.customName = target.customName;
-    villagerNbt.Pos = [Number(target.x), Number(target.y), Number(target.z)];
-    freshVillager.setNbt(villagerNbt);
-    freshVillager.spawn();
-    target.setRemoved("unloaded_to_chunk");
-    server.runCommandSilent(
-      `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
-    );
-    player.tell(Text.green("Villager updated! Thanks for playing Sunlit Valley!"));
-  }
-});
 
 ItemEvents.entityInteracted((e) => {
   const { hand, level, target } = e;

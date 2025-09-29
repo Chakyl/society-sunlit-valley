@@ -2,13 +2,6 @@ console.info("[SOCIETY] coinUi.js loaded");
 
 const xOffset = 64;
 
-const Numismatics = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
-
-const getPlayerBalance = (player) => {
-  const playerAccount = Numismatics.BANK.accounts.get(player.getUuid());
-  return playerAccount ? playerAccount.getBalance() : 0;
-};
-
 PlayerEvents.tick((e) => {
   const player = e.player;
   const curios = player.nbt.ForgeCaps["curios:inventory"];
@@ -32,56 +25,8 @@ PlayerEvents.tick((e) => {
       });
     }
   }
-  bankMeterPainter(curios, player);
   fishRadarPainter(curios, e);
 });
-
-const bankMeterPainter = (curios, player) => {
-  if (player.age % 100 == 0 && curios.toString().includes("society:bank_meter")) {
-    const balance = getPlayerBalance(player);
-    const balanceText = global.formatPrice(balance);
-
-    player.paint({
-      coinDisplayDropShadow: {
-        type: "text",
-        x: 1 + xOffset,
-        z: -1,
-        y: 19,
-        text: `● ${balanceText}`,
-        color: "#000000",
-        alignX: "left",
-        alignY: "top",
-      },
-    });
-    player.paint({
-      coinDisplay: {
-        type: "text",
-        x: xOffset,
-        y: 18,
-        text: `● §6${balanceText}`,
-        color: "#FFFFFF",
-        alignX: "left",
-        alignY: "top",
-      },
-    });
-  } else if (player.age % 100 == 0 && !curios.toString().includes("society:bank_meter")) {
-    player.paint({
-      coinDisplay: {
-        type: "text",
-        text: "",
-      },
-    });
-    player.paint({
-      coinDisplayDropShadow: {
-        type: "text",
-        text: "",
-      },
-    });
-    player.paint({ coinDisplay: { remove: true } });
-    player.paint({ coinDisplayDropShadow: { remove: true } });
-  }
-};
-
 const fishRadarPadding = 2;
 const fishRadarPainter = (curios, e) => {
   const { player, level } = e;
