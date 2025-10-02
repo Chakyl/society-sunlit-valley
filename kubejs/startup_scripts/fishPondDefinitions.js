@@ -3383,7 +3383,7 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "minecraft:diamond", count: 8 },
-          { item: "quark:heart_of_diamond", count: 2 },
+          { item: "quark:diamond_heart", count: 2 },
         ],
       },
       {

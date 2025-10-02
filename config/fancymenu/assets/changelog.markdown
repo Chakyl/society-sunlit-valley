@@ -1,6 +1,6 @@
 ^^^
 ## Whimsical Trading
-### v3.3.2
+### v3.3.3
 ^^^
 --- 
 - Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
@@ -140,3 +140,26 @@
 - Fixed Recycling Machine recipes not working correctly
 - Fixed Mushroom soil not working
 - Fixed several Alpine wood items not being renamed
+
+## 3.3.3
+- Added ability to link Smart Shipping bins to shared accounts (read tooltip)
+- Added Caching to Shipping bins so they work when owner is offline with skills
+- Switched from TMRV back to JEI under the hood to fix recipe category bugs
+- Increased Ribbit Hut range by 1 to perfectly work with Golden Sprinklers (for real this time)
+- Removed drop rush from Lead to prevent brain damage with Introduction to Algorithms
+- Removed Splendid Slimes from entity activation range performance checks. Large server owners should gauge performance
+- Fixed Enkephalin not working with Artisan Hoppers
+- Fixed hoe AOE not checking for dirt
+- Fixed Hatchetfish quest requesting air
+- Fixed Ribbit Hut not actually having increased radius
+- Fixed Mayonnaise Machine's upgraded done state texture being incorrect
+- Fixed missing recipes for cooking
+- Fixed Spring Pantry bundle requiring 64 turnip instead of 32
+- Fixed Dark Oak textures being replaced by windswept
+- Fixed mobs giving extremely long amounts of freezing
+- Fixed Sacrificial Lamb not working
+- Fixed 2 name tags being consumed on naming an entity
+- Fixed popup messages displaying too long
+- Fixed memory leak with advanced loot info
+- Fixed Mushroom Stew value
+- Fixed Steadfast skill chance not being correct

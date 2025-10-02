@@ -18,6 +18,7 @@ const handleBrokenMachine = (block) => {
   } else if (!["society:charging_rod", "society:tapper"].includes(block.id)) {
     let stage = Number(block.properties.get("stage"));
     if (
+      currentRecipe &&
       block.id == "society:ancient_cask" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
@@ -29,12 +30,13 @@ const handleBrokenMachine = (block) => {
     ) {
       // Do nothing because of infinity worm upgrade
     } else if (
+      currentRecipe &&
       block.id == "society:preserves_jar" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
       if (working) block.popItem(Item.of(`3x ${currentRecipe.input}`));
       else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
-    } else {
+    } else if (currentRecipe) {
       if (working) block.popItem(Item.of(`${machine.maxInput}x ${currentRecipe.input}`));
       else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
     }

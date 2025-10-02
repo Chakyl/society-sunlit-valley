@@ -61,18 +61,22 @@ global.processShippingBinInventory = (
         quality = slotNbt.quality_food.quality;
       }
       itemValue = calculateQualityValue(trade.value, quality);
-      if (stages.has("bluegill_meridian") && slotItem.id == "aquaculture:bluegill") {
+      // UPDATE CACHING METHOD WHEN ADDING STAGES
+      if (
+        stages.toString().includes("bluegill_meridian") &&
+        slotItem.id == "aquaculture:bluegill"
+      ) {
         itemValue = calculateQualityValue(666, quality);
       }
       if (
-        stages.has("phenomenology_of_treasure") &&
+        stages.toString().includes("phenomenology_of_treasure") &&
         (Item.of(slotItem).hasTag("society:artifacts") ||
           Item.of(slotItem).hasTag("society:relics"))
       ) {
         itemValue *= 3;
       }
       if (
-        stages.has("brine_and_punishment") &&
+        stages.toString().includes("brine_and_punishment") &&
         Item.of(slotItem).hasTag("society:brine_and_punishment")
       ) {
         itemValue *= 2;
@@ -97,13 +101,14 @@ global.processShippingBinInventory = (
 const debugValueProcess = false;
 
 global.handleShippingBinDebt = (value, player, server, block, inventory, extenalOutput) => {
+  if (!player) return value;
   let playerUUID = player.getUuid().toString();
   let binDebt = 0;
   let debtPaid;
   let totalDebt;
   let receipt;
   let newValue = value;
-  if (!playerUUID) return newValue;
+  if (!playerUUID) return value;
   if (server.persistentData.debts) {
     binDebt = server.persistentData.debts.filter((debt) => {
       return debt.uuid === playerUUID;
@@ -117,7 +122,7 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 §aYou paid off your §f● §a${global.formatPrice(
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §aYou paid off your §f● §a${global.formatPrice(
           debtPaid
         )} debt!`
       );
@@ -128,7 +133,7 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 f● §6${global.formatPrice(
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §f● §6${global.formatPrice(
           debtPaid
         )} §7of your debt paid off...`
       );
@@ -168,7 +173,8 @@ global.processValueOutput = (
   server,
   block,
   inventory,
-  extenalOutput
+  extenalOutput,
+  ownerUUID
 ) => {
   if (value > 0) {
     let hasRoom = false;
@@ -189,22 +195,25 @@ global.processValueOutput = (
       extenalOutput ||
       slots - inventory.countNonEmpty() + removedSlots.length - calculateSlotsNeeded(outputs) >= 0;
     if (hasRoom) {
-      if (!block.level.hasNeighborSignal(block.pos)) {
+      if (!block.level.hasNeighborSignal(block.pos) && player) {
         server.runCommandSilent(
           `playsound etcetera:item.handbell.ring block @a ${player.x} ${player.y} ${player.z} 0.3`
         );
         server.runCommandSilent(
           `emberstextapi sendcustom ${
             player.username
-          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 ● §6${global.formatPrice(
+          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ● §6${global.formatPrice(
             value
           )} §7worth of goods sold`
         );
       }
       if (extenalOutput) {
         let facing = block.properties.get("facing");
-        let account = global.GLOBAL_BANK.getAccount(player.getUuid());
-
+        let account = global.GLOBAL_BANK.getAccount(ownerUUID);
+        let card = inventory.getStackInSlot(0);
+        if (card && card.hasTag("numismatics:cards")) {
+          account = global.GLOBAL_BANK.getAccount(card.nbt.getUUID("AccountID"));
+        }
         if (account && account.getBalance() + value < 2147483000) {
           account.deposit(value);
         } else {
@@ -242,13 +251,49 @@ global.processValueOutput = (
       }
     }
 
-    if (!hasRoom) {
+    if (!hasRoom && player) {
       server.runCommandSilent(
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 Your Basic Shipping Bin was too full to sell...`
+        `emberstextapi sendcustom ${player.username} {anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 Your Basic Shipping Bin was too full to sell...`
       );
     }
   }
+};
+
+global.cacheShippingBin = (entity) => {
+  const { level, block } = entity;
+  const attributeMapping = [
+    "shippingbin:crop_sell_multiplier",
+    "shippingbin:wood_sell_multiplier",
+    "shippingbin:gem_sell_multiplier",
+    "shippingbin:meat_sell_multiplier",
+  ];
+  const stagesToFind = ["bluegill_meridian", "phenomenology_of_treasure", "brine_and_punishment"];
+  let binPlayer;
+  level.getServer().players.forEach((p) => {
+    if (p.getUuid().toString() === block.getEntityData().data.owner) {
+      let newAttributes = [];
+      let stages = [];
+      attributeMapping.forEach((attr) => {
+        newAttributes.push({
+          Base: Number(
+            p.nbt.Attributes.filter((obj) => {
+              return obj.Name === attr;
+            })[0]?.Base
+          ),
+          Name: attr,
+        });
+      });
+      stagesToFind.forEach((stage) => {
+        if (p.stages.has(stage)) stages.push(stage);
+      });
+      let nbt = block.getEntityData();
+      nbt.merge({ data: { attributes: newAttributes, stages: stages } });
+      block.setEntityData(nbt);
+      binPlayer = p;
+    }
+  });
+  return binPlayer;
 };

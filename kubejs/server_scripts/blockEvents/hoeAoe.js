@@ -24,6 +24,7 @@ BlockEvents.rightClicked(
     let hoe = hoeTiers.get(`${item.id}`);
     if (hoe && player.crouching) {
       const { x, y, z } = block;
+      let scannedBlock;
       if (hoe < 1) {
         level.getBlock(block.pos).set("minecraft:farmland");
         const nextPos = global.getFacing(player.facing, block.pos);
@@ -37,7 +38,11 @@ BlockEvents.rightClicked(
           y,
           z + hoe,
         ])) {
-          if (level.getBlock(pos.above()).id == "minecraft:air") {
+          scannedBlock = level.getBlock(pos);
+          if (
+            scannedBlock.hasTag("minecraft:dirt") &&
+            level.getBlock(pos.above()).id == "minecraft:air"
+          ) {
             level
               .getBlock(pos)
               .set(

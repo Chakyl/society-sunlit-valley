@@ -41,39 +41,36 @@ StartupEvents.registry("block", (event) => {
         const { inventory, level, block } = entity;
         let dayTime = level.dayTime();
         let morningModulo = dayTime % 24000;
+        if (rnd5()) global.cacheShippingBin(entity);
         if (morningModulo >= 5 && morningModulo < 15) {
           let slots = inventory.getSlots();
           let value = 0;
-          let playerAttributes;
-          let binPlayer;
+          let binPlayer = global.cacheShippingBin(entity);
+          let blockData = block.getEntityData().data;
+          let playerAttributes = blockData.attributes;
+          let playerStages = blockData.stages;
           let removedSlots = [];
           let calculationResults;
-          level.getServer().players.forEach((p) => {
-            if (p.getUuid().toString() === block.getEntityData().data.owner) {
-              playerAttributes = p.nbt.Attributes;
-              binPlayer = p;
-            }
-          });
-          if (playerAttributes) {
-            calculationResults = global.processShippingBinInventory(
-              inventory,
-              slots,
-              playerAttributes,
-              binPlayer.stages,
-              true
-            );
-            value = Math.round(calculationResults.calculatedValue);
-            removedSlots = calculationResults.removedItems;
-            global.processValueOutput(
-              value,
-              slots,
-              removedSlots,
-              binPlayer,
-              binPlayer.server,
-              block,
-              inventory
-            );
-          }
+          if (!playerStages || !playerAttributes) return;
+
+          calculationResults = global.processShippingBinInventory(
+            inventory,
+            slots,
+            playerAttributes,
+            playerStages,
+            true
+          );
+          value = Math.round(calculationResults.calculatedValue);
+          removedSlots = calculationResults.removedItems;
+          global.processValueOutput(
+            value,
+            slots,
+            removedSlots,
+            binPlayer,
+            level.getServer(),
+            block,
+            inventory
+          );
         }
       }),
         blockInfo.rightClickOpensInventory();

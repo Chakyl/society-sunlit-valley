@@ -87,7 +87,7 @@ BlockEvents.rightClicked((e) => {
     }
   }
   if (hand == "MAIN_HAND") {
-    const initialBlock = level.getBlockState(block.pos);
+    let initialBlock = level.getBlockState(block.pos);
     let checkBlocked;
     let blockState;
     if (
@@ -120,12 +120,15 @@ BlockEvents.rightClicked((e) => {
           }
         }
       }
-      if (xpCount > 0) {
-        const xp = block.createEntity("experience_orb");
-        xp.mergeNbt({ Value: xpCount });
-        xp.spawn();
-        global.giveExperience(server, player, "farming", xpCount * 2);
-      }
+      server.scheduleInTicks(2, () => {
+        initialBlock = level.getBlockState(block.pos);
+        if (!initialBlock.block.isMaxAge(initialBlock) && xpCount > 0) {
+          const xp = block.createEntity("experience_orb");
+          xp.mergeNbt({ Value: xpCount });
+          xp.spawn();
+          global.giveExperience(server, player, "farming", xpCount * 2);
+        }
+      });
     }
   }
 });
@@ -133,7 +136,7 @@ BlockEvents.rightClicked((e) => {
 BlockEvents.rightClicked("vinery:grapevine_stem", (e) => {
   const { block } = e;
   let properties = block.getProperties();
-  properties.leaves_pending = false
-  properties.leaves_done = true
+  properties.leaves_pending = false;
+  properties.leaves_done = true;
   block.set(block.id, properties);
 });

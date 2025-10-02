@@ -46,7 +46,7 @@
             ]
         },
         {
-            "pakku_id": "3w6weNYVB0B9zYTH",
+            "pakku_id": "gm0iXcfB8uLXEmYP",
             "type": "MOD",
             "slug": {
                 "curseforge": "advanced-loot-info"
@@ -60,7 +60,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.3.5.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.3.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -69,16 +69,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7018/898/AdvancedLootInfo-forge-1.20.1-1.3.5.jar",
-                    "id": "7018898",
+                    "url": "https://edge.forgecdn.net/files/7058/809/AdvancedLootInfo-forge-1.20.1-1.3.8.jar",
+                    "id": "7058809",
                     "parent_id": "1205426",
                     "hashes": {
-                        "sha1": "a828010ebe246454209b6589dc8e105f20c82f13",
-                        "md5": "bde3ce5ee748049b5b7dd200678119df"
+                        "sha1": "8f01135292b0dd7716b58c5980b47752830738b1",
+                        "md5": "761aaa6c91ccfbfe3735b7fe613797f3"
                     },
                     "required_dependencies": [],
-                    "size": 587273,
-                    "date_published": "2025-09-21T12:22:28.203Z"
+                    "size": 601086,
+                    "date_published": "2025-10-02T18:23:34.887Z"
                 }
             ]
         },
@@ -6562,6 +6562,42 @@
             ]
         },
         {
+            "pakku_id": "vXW9e1e82vYe4iCL",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "jei"
+            },
+            "name": {
+                "curseforge": "Just Enough Items (JEI)"
+            },
+            "id": {
+                "curseforge": "238222"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "jei-1.20.1-forge-15.20.0.116.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7037/120/jei-1.20.1-forge-15.20.0.116.jar",
+                    "id": "7037120",
+                    "parent_id": "238222",
+                    "hashes": {
+                        "sha1": "ebb8d9033c29538824281b3ac651c49135aba78e",
+                        "md5": "89817a7201d47a7a23c3f9d217f891f4"
+                    },
+                    "required_dependencies": [],
+                    "size": 1387236,
+                    "date_published": "2025-09-27T01:04:44.357Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "4SPLyYqQHBk4GVVP",
             "pakku_links": [
                 "Z5ABSfuXE0jplGgO"
@@ -10654,7 +10690,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-0.5.jar",
+                    "file_name": "society_trading-0.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10662,18 +10698,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7039/486/society_trading-0.5.jar",
-                    "id": "7039486",
+                    "url": "https://edge.forgecdn.net/files/7056/289/society_trading-0.6.jar",
+                    "id": "7056289",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "adb2ee03ab538d565f466a06cd06d4e7e3dcfd80",
-                        "md5": "90fc6491efd99482e4fb224c6b9a7839"
+                        "sha1": "522ebabf93ff358a7cbe8676d2932d932502c953",
+                        "md5": "b98dfd930e6ab11b91388e54cca357c1"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 89780,
-                    "date_published": "2025-09-27T17:26:52.740Z"
+                    "size": 89910,
+                    "date_published": "2025-10-02T03:24:09.890Z"
                 }
             ]
         },
@@ -11705,48 +11741,6 @@
             ]
         },
         {
-            "pakku_id": "vf6ijmZDiqyjcnip",
-            "pakku_links": [
-                "EMZjAi5TpykS4ZaM"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "tmrv"
-            },
-            "name": {
-                "curseforge": "TooManyRecipeViewers (TMRV)"
-            },
-            "id": {
-                "curseforge": "1194921"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "toomanyrecipeviewers-0.6.3+mc.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6856/65/toomanyrecipeviewers-0.6.3+mc.20.1.jar",
-                    "id": "6856065",
-                    "parent_id": "1194921",
-                    "hashes": {
-                        "sha1": "38176b4ad936141c660d91d7a1d4a9d89fe89280",
-                        "md5": "3ee77fbbdedcb1b1e4b17e3578dfa1a3"
-                    },
-                    "required_dependencies": [
-                        "580555"
-                    ],
-                    "size": 1215669,
-                    "date_published": "2025-08-06T16:58:05.390Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "0ipPhcxOYIRuVRdU",
             "type": "MOD",
             "slug": {
@@ -12638,7 +12632,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "whimsy_deco-1.0.jar",
+                    "file_name": "whimsy_deco-1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12646,18 +12640,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7029/363/whimsy_deco-1.0.jar",
-                    "id": "7029363",
+                    "url": "https://edge.forgecdn.net/files/7058/899/whimsy_deco-1.1.jar",
+                    "id": "7058899",
                     "parent_id": "1351466",
                     "hashes": {
-                        "sha1": "dca8944740358e01a80a4645703a2bd5bf67a1c7",
-                        "md5": "ec03df34c1f8363b262c1cdb140fc1e0"
+                        "sha1": "7408d13c279d640879857fe59ab6d22c9feafed4",
+                        "md5": "3d749f7278f5168b75df42888f5f0067"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 538234,
-                    "date_published": "2025-09-24T15:22:22.810Z"
+                    "size": 538351,
+                    "date_published": "2025-10-02T18:50:53.200Z"
                 }
             ]
         },
