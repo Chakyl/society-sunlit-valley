@@ -1862,6 +1862,94 @@
             ]
         },
         {
+            "pakku_id": "KLdC9KivX0c50Mc0",
+            "pakku_links": [
+                "D3WNDlpUyoHOZWmi",
+                "5s7CrcTUORQxpIzh",
+                "Z5ABSfuXE0jplGgO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cobblemon-quests"
+            },
+            "name": {
+                "curseforge": "Cobblemon Quests"
+            },
+            "id": {
+                "curseforge": "922979"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cobblemon_quests-[1.20.1]-forge-1.1.11.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5640/1/cobblemon_quests-[1.20.1]-forge-1.1.11.jar",
+                    "id": "5640001",
+                    "parent_id": "922979",
+                    "hashes": {
+                        "sha1": "c0b615b40e9dfc34f0e6bfdabd9480fda6a0e32f",
+                        "md5": "3091630a3c53ff1f2cdd8ae9c57df9e1"
+                    },
+                    "required_dependencies": [
+                        "289412",
+                        "687131",
+                        "419699"
+                    ],
+                    "size": 52531,
+                    "date_published": "2024-08-18T10:10:29.690Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "FPcJqm1Ut7OedrS9",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh",
+                "JCsFAOuQHQwi2ASm"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cobblemonrider"
+            },
+            "name": {
+                "curseforge": "CobblemonRider"
+            },
+            "id": {
+                "curseforge": "990998"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cobblemonrider-1.2.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5445/719/cobblemonrider-1.2.4.jar",
+                    "id": "5445719",
+                    "parent_id": "990998",
+                    "hashes": {
+                        "sha1": "b06b6b1ea7549c043bf5c1b2834ec12081862843",
+                        "md5": "6ba03cea7504c57bb5a2017df2b4eede"
+                    },
+                    "required_dependencies": [
+                        "687131",
+                        "351264"
+                    ],
+                    "size": 49358,
+                    "date_published": "2024-06-19T16:57:04.577Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jlEEJlpFtjjsXLc0",
             "type": "MOD",
             "slug": {
@@ -5951,7 +6039,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "horseman-1.20.1-1.3.11-forge.jar",
+                    "file_name": "horseman-1.20.1-1.3.14-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5959,16 +6047,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6828/550/horseman-1.20.1-1.3.11-forge.jar",
-                    "id": "6828550",
+                    "url": "https://edge.forgecdn.net/files/7047/189/horseman-1.20.1-1.3.14-forge.jar",
+                    "id": "7047189",
                     "parent_id": "1082085",
                     "hashes": {
-                        "sha1": "6409d236699985747f50e219a383c5297e67b546",
-                        "md5": "3a30d97401ea09de40a284d2d8d31667"
+                        "sha1": "e36028ff3bba076f9624bc28f7137aef3c07b9e4",
+                        "md5": "d77ae6629006e229893640c9db373e80"
                     },
                     "required_dependencies": [],
-                    "size": 329057,
-                    "date_published": "2025-07-30T12:04:04.567Z"
+                    "size": 328967,
+                    "date_published": "2025-09-30T00:22:52.450Z"
                 }
             ]
         },
@@ -10241,6 +10329,43 @@
                     "required_dependencies": [],
                     "size": 14066,
                     "date_published": "2025-04-30T08:39:45.957Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "WEAX2SbVdsepEGt8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "simpletms-tms-and-trs-for-cobblemon"
+            },
+            "name": {
+                "curseforge": "SimpleTMs: TMs and TRs for Cobblemon"
+            },
+            "id": {
+                "curseforge": "959184"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "SimpleTMsForge-1.1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5080/374/SimpleTMsForge-1.1.2.jar",
+                    "id": "5080374",
+                    "parent_id": "959184",
+                    "hashes": {
+                        "sha1": "5bd648b08196658bcd515cb5d6f4e6f4248f81f2",
+                        "md5": "4cc6acc6a925ac20abbe84a688503af9"
+                    },
+                    "required_dependencies": [],
+                    "size": 1598405,
+                    "date_published": "2024-02-04T13:35:23.190Z"
                 }
             ]
         },
