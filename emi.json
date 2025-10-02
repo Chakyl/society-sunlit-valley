@@ -20,6 +20,8 @@
     }
   ],
   "lookup_history": [
+    "item:cobblemon:exp_candy_s",
+    "item:cobblemon:exp_candy_xs",
     "item:cobblemon:master_ball",
     "item:cobblemon:masterpiece_teacup",
     "item:candlelight:chefs_pants{Damage:0}",
@@ -84,7 +86,6 @@
     "item:cobblemon:growth_mulch",
     "item:cobblemon:medicinal_leek",
     "item:cobblemon:guard_spec",
-    "item:cobblemon:exp_candy_xs",
     "item:cobblemon:adamant_mint",
     "item:cobblemon:brave_mint",
     "item:cobblemon:berry_sweet",
@@ -1352,8 +1353,7 @@
     "item:everycomp:db/windswept/pine_palisade",
     "item:windswept:pine_wood",
     "item:windswept:music_disc_bumblebee",
-    "item:windswept:holly_berries_on_a_stick{Damage:0}",
-    "item:windswept:wooden_powder_snow_bucket{Damage:0}"
+    "item:windswept:holly_berries_on_a_stick{Damage:0}"
   ],
   "craft_history": [
     "meadow:fire_log",
@@ -1400,8 +1400,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},
