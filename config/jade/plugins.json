@@ -72,6 +72,13 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "cobblemonintegrations": {
+    "healer": true,
+    "apricorn": true,
+    "fossil_analyzer": true,
+    "pokemon_entity": true,
+    "berry_bush": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -103,12 +110,6 @@
   },
   "pipez": {
     "pipe": true
-  },
-  "strawgolem": {
-    "strawgolem_barrel": true,
-    "strawgolem_decay": true,
-    "strawgolem_hunger": true,
-    "strawgolem": true
   },
   "untitledduckmod": {
     "lay_egg": true

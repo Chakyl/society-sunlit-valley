@@ -1,0 +1,21 @@
+
+[waila]
+
+	#You can disable specific modules in the WAILA config.
+	[waila.pokemon]
+		#Valid TooltipTypes: TITLE, TITLE_GENDER, SPECIES, LEVEL, GENDER, HEALTH, TRAINER, NICKNAME, FRIENDSHIP, TYPES, REWARD_EVS, NATURE, ABILITY, IVS, EVS, DEX_ENTRY, SNEAK_HINT, BATTLE_HINT, EGG_GROUPS
+		pokemonTooltips = ["TITLE_GENDER:SHOW", "HEALTH:SHOW", "TRAINER:SHOW", "TYPES:SHOW", "REWARD_EVS:SHOW", "SNEAK_HINT:NO_SNEAK", "FRIENDSHIP:SNEAK", "NATURE:SNEAK", "ABILITY:SNEAK", "IVS:SNEAK", "EVS:SNEAK", "DEX_ENTRY:SNEAK"]
+
+	[waila.misc]
+		#Hide the Pokemon label/nametag completely.
+		hidePokemonLabel = false
+
+[waystones]
+	#Allow Pokemon to be used for Waystone teleportation.
+	allowWaystoneTeleport = true
+	#Does the Pokemon need to have Teleport accessible. If false, any psychic type can teleport.
+	requireTeleportMove = true
+	#Minimum level to Teleport.
+	#Range: 0 ~ 255
+	waystoneMinTeleportLevel = 0
+

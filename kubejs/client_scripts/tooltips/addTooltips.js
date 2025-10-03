@@ -1,15 +1,39 @@
-ItemEvents.tooltip((tooltip) => {
-  const formatNumber = (number, quality) => {
-    let value;
-    if (quality) {
-      if (quality == 1.0) value = Math.round(number * 1.25);
-      if (quality == 2.0) value = Math.round(number * 1.5);
-      if (quality == 3.0) value = Math.round(number * 2);
-    } else {
-      value = number;
+const formatNumber = (number, quality) => {
+  let value;
+  if (quality) {
+    if (quality == 1.0) value = Math.round(number * 1.25);
+    if (quality == 2.0) value = Math.round(number * 1.5);
+    if (quality == 3.0) value = Math.round(number * 2);
+  } else {
+    value = number;
+  }
+  return global.formatPrice(value);
+};
+global.addPriceTooltip = (tooltip, sellable, attribute) => {
+  let value = sellable.value;
+  tooltip.addAdvanced(sellable.item, (item, advanced, text) => {
+    let quality;
+    if (item.nbt && item.nbt.quality_food) {
+      quality = item.nbt.quality_food.quality;
     }
-    return global.formatPrice(value);
-  };
+    if (tooltip.shift) {
+      text.add(1, [
+        Text.white(`● ${formatNumber(value * item.count, quality)}`),
+        Text.gray(" Stack value"),
+      ]);
+      text.add(2, [getAttributeStr(attribute)]);
+    } else {
+      text.add(1, [
+        Text.white(`● ${formatNumber(value, quality)}`),
+        Text.darkGray(" Hold ["),
+        Text.gray("Shift"),
+        Text.darkGray("]"),
+      ]);
+    }
+  });
+};
+
+ItemEvents.tooltip((tooltip) => {
   const calculateCost = (coin, count, stackSize) => {
     let value = 0;
     switch (coin) {
@@ -733,29 +757,6 @@ ItemEvents.tooltip((tooltip) => {
   });
   Item.of("farm_and_charm:barley", "{quality_food:{quality:3}}");
   // Prices
-  const addPriceTooltip = (sellable, attribute) => {
-    let value = sellable.value;
-    tooltip.addAdvanced(sellable.item, (item, advanced, text) => {
-      let quality;
-      if (item.nbt && item.nbt.quality_food) {
-        quality = item.nbt.quality_food.quality;
-      }
-      if (tooltip.shift) {
-        text.add(1, [
-          Text.white(`● ${formatNumber(value * item.count, quality)}`),
-          Text.gray(" Stack value"),
-        ]);
-        text.add(2, [getAttributeStr(attribute)]);
-      } else {
-        text.add(1, [
-          Text.white(`● ${formatNumber(value, quality)}`),
-          Text.darkGray(" Hold ["),
-          Text.gray("Shift"),
-          Text.darkGray("]"),
-        ]);
-      }
-    });
-  };
 
   tooltip.addAdvanced("splendid_slimes:plort", (item, advanced, text) => {
     let plortType;
@@ -809,40 +810,40 @@ ItemEvents.tooltip((tooltip) => {
 
   // Ore
   global.ore.forEach((item) => {
-    addPriceTooltip(item, "gem");
+    global.addPriceTooltip(tooltip, item, "gem");
   });
   // Pristine
   global.pristine.forEach((item) => {
-    addPriceTooltip(item, "gem");
+    global.addPriceTooltip(tooltip, item, "gem");
   });
   // Geodes
   global.geodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:froggy_helm") {
-      addPriceTooltip(geodeItem, "gem");
+      global.addPriceTooltip(tooltip, geodeItem, "gem");
       tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
-      addPriceTooltip(geodeItem, "meat");
+      global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
   });
   global.frozenGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_drum") {
-      addPriceTooltip(geodeItem, "gem");
+      global.addPriceTooltip(tooltip, geodeItem, "gem");
       tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
-      addPriceTooltip(geodeItem, "meat");
+      global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
   });
   global.magmaGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_gadget") {
-      addPriceTooltip(geodeItem, "gem");
+      global.addPriceTooltip(tooltip, geodeItem, "gem");
       tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
-      addPriceTooltip(geodeItem, "meat");
+      global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
   });
   // Gem
   global.gems.forEach((gem) => {
-    addPriceTooltip(gem, "gem");
+    global.addPriceTooltip(tooltip, gem, "gem");
     tooltip.add(gem.item, "🎣 §7Gem");
   });
   [
@@ -857,72 +858,72 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(gem, "🎣 §7Gem");
   });
   global.miscGeologist.forEach((gem) => {
-    addPriceTooltip(gem, "gem");
+    global.addPriceTooltip(tooltip, gem, "gem");
   });
   // Artifact
   global.artifacts.forEach((artifact) => {
-    addPriceTooltip(artifact, "meat");
+    global.addPriceTooltip(tooltip, artifact, "meat");
   });
   global.relics.forEach((artifact) => {
-    addPriceTooltip(artifact, "meat");
+    global.addPriceTooltip(tooltip, artifact, "meat");
   });
   // Crops
   global.crops.forEach((crop) => {
-    addPriceTooltip(crop, "crop");
+    global.addPriceTooltip(tooltip, crop, "crop");
   });
   // Meat
   global.animalProducts.forEach((meat) => {
-    addPriceTooltip(meat, "crop");
+    global.addPriceTooltip(tooltip, meat, "crop");
   });
   // Wines
   global.wines.forEach((wine) => {
-    addPriceTooltip(wine, "wood");
+    global.addPriceTooltip(tooltip, wine, "wood");
   });
   // Brews
   global.brews.forEach((brew) => {
-    addPriceTooltip(brew, "wood");
+    global.addPriceTooltip(tooltip, brew, "wood");
   });
   // Preserves
   global.preserves.forEach((jar) => {
-    addPriceTooltip(jar, "wood");
+    global.addPriceTooltip(tooltip, jar, "wood");
   });
   // Dehydrated
   global.dehydrated.forEach((jar) => {
-    addPriceTooltip(jar, "wood");
+    global.addPriceTooltip(tooltip, jar, "wood");
   });
   // Artisan goods
   global.artisanGoods.forEach((good) => {
-    addPriceTooltip(good, "wood");
+    global.addPriceTooltip(tooltip, good, "wood");
   });
   // Fish
   global.fish.forEach((fish) => {
-    addPriceTooltip(fish, "crop");
+    global.addPriceTooltip(tooltip, fish, "crop");
   });
   global.smokedFish.forEach((fish) => {
-    addPriceTooltip(fish, "wood");
+    global.addPriceTooltip(tooltip, fish, "wood");
   });
   global.agedRoe.forEach((fish) => {
-    addPriceTooltip(fish, "wood");
+    global.addPriceTooltip(tooltip, fish, "wood");
   });
   // Cocktails
   global.cocktails.forEach((cocktail) => {
-    addPriceTooltip(cocktail, "crop");
+    global.addPriceTooltip(tooltip, cocktail, "crop");
   });
   // herbalbrews
   global.herbalBrews.forEach((brew) => {
-    addPriceTooltip(brew, "crop");
+    global.addPriceTooltip(tooltip, brew, "crop");
   });
   // Logs
   global.logs.forEach((log) => {
-    addPriceTooltip(log, "crop");
+    global.addPriceTooltip(tooltip, log, "crop");
   });
   // Cooking
   global.cooking.forEach((dish) => {
-    addPriceTooltip(dish, "crop");
+    global.addPriceTooltip(tooltip, dish, "crop");
   });
   // Misc
   global.miscAdventurer.forEach((miscItem) => {
-    addPriceTooltip(miscItem, "meat");
+    global.addPriceTooltip(tooltip, miscItem, "meat");
   });
   const geodes = [
     "society:geode",
