@@ -3,7 +3,6 @@
   "name": "shop.society_trading.poke_mart",
   "texture": "cobblemon:textures/item/poke_balls/poke_ball",
   "jei_catalyst": { "item": "cobblemon:poke_ball" },
-  "villager_profession": "etched:bard",
   "trades": [
     {
       "offer": {
@@ -27,6 +26,8 @@
         "count": 2
       },
       "numismatics_cost": 1024,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
       "trade_id": "pmart_great_ball"
     },
     {
@@ -39,6 +40,8 @@
         "count": 4
       },
       "numismatics_cost": 2048,
+      "stage_required": "trainer_lvl_4",
+      "unlock_description": "jei.society_trading.trainer_lvl_4",
       "trade_id": "pmart_ultra_ball"
     },
     {
@@ -63,6 +66,8 @@
         "count": 2
       },
       "numismatics_cost": 1024,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
       "trade_id": "pmart_super_potion"
     },
     {
@@ -75,6 +80,8 @@
         "count": 4
       },
       "numismatics_cost": 2048,
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
       "trade_id": "pmart_hyper_potion"
     },
     {
@@ -87,6 +94,8 @@
         "count": 6
       },
       "numismatics_cost": 3072,
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
       "trade_id": "pmart_revive"
     },
     {
@@ -111,6 +120,8 @@
         "count": 2
       },
       "numismatics_cost": 128,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
       "trade_id": "pmart_paralyze_heal"
     },
     {
@@ -123,6 +134,8 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
       "trade_id": "pmart_awakening"
     },
     {
@@ -135,6 +148,8 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
       "trade_id": "pmart_burn_heal"
     },
     {
@@ -147,6 +162,8 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
       "trade_id": "pmart_ice_heal"
     },
     {
@@ -159,6 +176,8 @@
         "count": 2
       },
       "numismatics_cost": 1024,
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
       "trade_id": "pmart_full_heal"
     },
     {

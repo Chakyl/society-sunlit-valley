@@ -1,0 +1,15 @@
+{
+  "name": "sunlit_cobblemon:poke_center",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "sunlit_cobblemon:poke_center",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
