@@ -27,27 +27,54 @@
     }
   ],
   "lookup_history": [
+    "item:cobblemon:blue_apricorn_seed",
+    {
+      "type": "item",
+      "id": "cobblemon:blue_apricorn",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:preserves_jar",
+      "amount": 4
+    },
+    "item:minecraft:iron_block",
+    "item:minecraft:coal_block",
+    {
+      "type": "item",
+      "id": "meadow:fire_log",
+      "amount": 20
+    },
+    {
+      "type": "item",
+      "id": "minecraft:barrel",
+      "amount": 7
+    },
+    {
+      "type": "item",
+      "id": "windswept:holly_berries",
+      "amount": 14
+    },
+    "item:cobblemon:shiny_stone",
+    "item:cobblemon:fire_stone",
+    "item:cobblemon:leaf_stone",
+    {
+      "type": "item",
+      "id": "cobblemon:relic_coin_pouch",
+      "amount": 7
+    },
+    "item:cobblemon:cracked_pot",
+    "item:twigs:polished_basalt_bricks",
     "item:cobblemon:relic_coin_sack",
     "item:cobblemon:apricorn_log",
     "item:society:pine_tar",
     "item:society:earth_crystal",
-    {
-      "type": "item",
-      "id": "meadow:fire_log",
-      "amount": 17
-    },
     "item:minecraft:feather",
     {
       "type": "item",
       "id": "cobblemon:ancient_poke_ball",
       "amount": 15
     },
-    {
-      "type": "item",
-      "id": "minecraft:coal_block",
-      "amount": 6
-    },
-    "item:minecraft:barrel",
     "item:twigs:twig",
     "item:cobblemon:roseli_berry",
     "item:cobblemon:vivichoke",
@@ -96,7 +123,6 @@
     },
     "item:cobblemon:mental_herb",
     "item:cobblemon:revival_herb",
-    "item:cobblemon:relic_coin_pouch",
     {
       "type": "item",
       "id": "cobblemon:roasted_leek",
@@ -126,11 +152,6 @@
     {
       "type": "item",
       "id": "society:oak_resin",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:blue_apricorn",
       "amount": 2
     },
     "item:cobblemon:yellow_apricorn",
@@ -238,11 +259,6 @@
       "id": "oreganized:polished_glance",
       "amount": 3
     },
-    {
-      "type": "item",
-      "id": "cobblemon:shiny_stone",
-      "amount": 64
-    },
     "item:cobblemon:normal_gem",
     "item:cobblemon:fairy_gem",
     {
@@ -251,7 +267,6 @@
       "amount": 63
     },
     "item:cobblemon:cleanse_tag",
-    "item:cobblemon:leaf_stone",
     {
       "type": "item",
       "id": "society:stone_boulder",
@@ -680,7 +695,6 @@
     "item:refurbished_furniture:raw_meatlovers_pizza",
     "item:dew_drop_farmland_growth:garden_pot",
     "item:windswept:frozen_branch",
-    "item:windswept:holly_berries",
     "item:windswept:frostbiter_trophy",
     "item:society:toy_train",
     "item:society:sparkstone_ore",
@@ -992,7 +1006,6 @@
     "item:twigs:compacted_dripstone",
     "item:twigs:gravel_bricks",
     "item:twigs:chiseled_smooth_basalt_bricks",
-    "item:twigs:polished_basalt_bricks",
     "item:windswept:lunalite",
     "item:windswept:shale",
     "item:windswept:dry_mossy_cobblestone",
@@ -1210,7 +1223,6 @@
     "item:society:white_grape_preserves",
     "item:society:garlic_preserves",
     "item:society:pumpkin_preserves",
-    "item:society:preserves_jar",
     "item:vintagedelight:fermenting_jar",
     {
       "type": "item",
@@ -1447,18 +1459,16 @@
     "item:species:ancient_pinecone",
     "item:windswept:light_gray_pinecone_shingle_stairs",
     "item:windswept:chestnut_crate",
-    "item:windswept:lavender_bale",
-    "item:botania:lavender_quartz",
-    "item:quark:lavender_blossom_leaves",
-    "item:windswept:ice_lantern",
-    "item:twigs:torchflower_paper_lantern"
+    "item:windswept:lavender_bale"
   ],
   "craft_history": [
-    "minecraft:kjs/society_cheese_press",
     "minecraft:kjs/society_preserves_jar",
+    "minecraft:coal_block",
+    "meadow:fire_log",
+    "cobblemon:relic_pouch_from_coin",
+    "minecraft:kjs/society_cheese_press",
     "minecraft:barrel",
     "minecraft:brush",
-    "meadow:fire_log",
     "minecraft:kjs/society_loom",
     "minecraft:kjs/society_tapper",
     "whimsy_deco:classic_tile",
@@ -1501,8 +1511,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},
