@@ -1,5 +1,8 @@
 // priority: -21
-global.cobbleGeology = [
+global.cobbleAdventuring = [
+  { item: "cobblemon:relic_coin", value: 64 },
+  { item: "cobblemon:relic_coin_pouch", value: 576 },
+  { item: "cobblemon:relic_coin_sack", value: 5184 },
   { item: "cobblemon:helix_fossil", value: 920 },
   { item: "cobblemon:dome_fossil", value: 9200 },
   { item: "cobblemon:old_amber_fossil", value: 920 },
@@ -9,12 +12,14 @@ global.cobbleGeology = [
   { item: "cobblemon:armor_fossil", value: 1290 },
   { item: "cobblemon:cover_fossil", value: 5999 },
   { item: "cobblemon:plume_fossil", value: 920 },
-  { item: "cobblemon:jaw_fossil", value: 9200 },
-  { item: "cobblemon:sail_fossil", value: 9200 },
-  { item: "cobblemon:fossilized_bird", value: 12096 },
-  { item: "cobblemon:fossilized_fish", value: 12096 },
-  { item: "cobblemon:fossilized_drake", value: 12096 },
-  { item: "cobblemon:fossilized_dino", value: 12096 },
+  { item: "cobblemon:jaw_fossil", value: 8200 },
+  { item: "cobblemon:sail_fossil", value: 8200 },
+  { item: "cobblemon:fossilized_bird", value: 10000 },
+  { item: "cobblemon:fossilized_fish", value: 10000 },
+  { item: "cobblemon:fossilized_drake", value: 10000 },
+  { item: "cobblemon:fossilized_dino", value: 10000 },
+];
+global.cobbleGeology = [
   { item: "cobblemon:tumblestone", value: 8 },
   { item: "cobblemon:black_tumblestone", value: 12 },
   { item: "cobblemon:sky_tumblestone", value: 16 },
@@ -47,11 +52,106 @@ global.cobbleGeology = [
   { item: "cobblemon:dawn_stone", value: 806 },
   { item: "cobblemon:ice_stone", value: 1020 },
 ];
-
+global.cobbleForaging = [
+  { item: "cobblemon:big_root", value: 4 },
+  { item: "cobblemon:energy_root", value: 16 },
+  { item: "cobblemon:medicinal_leek", value: 2 },
+  { item: "cobblemon:red_apricorn", value: 8 },
+  { item: "cobblemon:yellow_apricorn", value: 8 },
+  { item: "cobblemon:green_apricorn", value: 8 },
+  { item: "cobblemon:blue_apricorn", value: 8 },
+  { item: "cobblemon:pink_apricorn", value: 8 },
+  { item: "cobblemon:black_apricorn", value: 8 },
+  { item: "cobblemon:white_apricorn", value: 8 },
+  { item: "cobblemon:oran_berry", value: 4 },
+  { item: "cobblemon:cheri_berry", value: 4 },
+  { item: "cobblemon:chesto_berry", value: 4 },
+  { item: "cobblemon:pecha_berry", value: 4 },
+  { item: "cobblemon:rawst_berry", value: 4 },
+  { item: "cobblemon:aspear_berry", value: 4 },
+  { item: "cobblemon:persim_berry", value: 4 },
+  { item: "cobblemon:razz_berry", value: 4 },
+  { item: "cobblemon:bluk_berry", value: 4 },
+  { item: "cobblemon:nanab_berry", value: 4 },
+  { item: "cobblemon:wepear_berry", value: 4 },
+  { item: "cobblemon:pinap_berry", value: 4 },
+  { item: "cobblemon:occa_berry", value: 4 },
+  { item: "cobblemon:passho_berry", value: 4 },
+  { item: "cobblemon:wacan_berry", value: 4 },
+  { item: "cobblemon:rindo_berry", value: 4 },
+  { item: "cobblemon:yache_berry", value: 4 },
+  { item: "cobblemon:chople_berry", value: 4 },
+  { item: "cobblemon:kebia_berry", value: 4 },
+  { item: "cobblemon:shuca_berry", value: 4 },
+  { item: "cobblemon:coba_berry", value: 4 },
+  { item: "cobblemon:payapa_berry", value: 4 },
+  { item: "cobblemon:tanga_berry", value: 4 },
+  { item: "cobblemon:charti_berry", value: 4 },
+  { item: "cobblemon:kasib_berry", value: 4 },
+  { item: "cobblemon:haban_berry", value: 4 },
+  { item: "cobblemon:colbur_berry", value: 4 },
+  { item: "cobblemon:babiri_berry", value: 4 },
+  { item: "cobblemon:chilan_berry", value: 4 },
+  { item: "cobblemon:roseli_berry", value: 6 },
+  { item: "cobblemon:leppa_berry", value: 8 },
+  { item: "cobblemon:lum_berry", value: 8 },
+  { item: "cobblemon:figy_berry", value: 8 },
+  { item: "cobblemon:wiki_berry", value: 8 },
+  { item: "cobblemon:mago_berry", value: 8 },
+  { item: "cobblemon:aguav_berry", value: 8 },
+  { item: "cobblemon:iapapa_berry", value: 8 },
+  { item: "cobblemon:sitrus_berry", value: 16 },
+  { item: "cobblemon:touga_berry", value: 16 },
+  { item: "cobblemon:cornn_berry", value: 16 },
+  { item: "cobblemon:magost_berry", value: 16 },
+  { item: "cobblemon:rabuta_berry", value: 16 },
+  { item: "cobblemon:nomel_berry", value: 16 },
+  { item: "cobblemon:enigma_berry", value: 32 },
+  { item: "cobblemon:pomeg_berry", value: 32 },
+  { item: "cobblemon:kelpsy_berry", value: 32 },
+  { item: "cobblemon:qualot_berry", value: 32 },
+  { item: "cobblemon:hondew_berry", value: 32 },
+  { item: "cobblemon:grepa_berry", value: 32 },
+  { item: "cobblemon:tamato_berry", value: 32 },
+  { item: "cobblemon:spelon_berry", value: 32 },
+  { item: "cobblemon:pamtre_berry", value: 32 },
+  { item: "cobblemon:watmel_berry", value: 32 },
+  { item: "cobblemon:durin_berry", value: 32 },
+  { item: "cobblemon:belue_berry", value: 32 },
+  { item: "cobblemon:kee_berry", value: 64 },
+  { item: "cobblemon:maranga_berry", value: 64 },
+  { item: "cobblemon:hopo_berry", value: 16 },
+  { item: "cobblemon:liechi_berry", value: 64 },
+  { item: "cobblemon:ganlon_berry", value: 64 },
+  { item: "cobblemon:salac_berry", value: 64 },
+  { item: "cobblemon:petaya_berry", value: 64 },
+  { item: "cobblemon:apicot_berry", value: 64 },
+  { item: "cobblemon:lansat_berry", value: 64 },
+  { item: "cobblemon:starf_berry", value: 64 },
+  { item: "cobblemon:micle_berry", value: 64 },
+  { item: "cobblemon:custap_berry", value: 64 },
+  { item: "cobblemon:jaboca_berry", value: 64 },
+  { item: "cobblemon:rowap_berry", value: 64 },
+];
+global.cobbleAdventuring.forEach((miscItem) => {
+  const { item, value } = miscItem;
+  global.trades.set(item, {
+    value: value,
+    multiplier: "shippingbin:meat_sell_multiplier",
+  });
+});
 global.cobbleGeology.forEach((miscItem) => {
   const { item, value } = miscItem;
   global.trades.set(item, {
     value: value,
     multiplier: "shippingbin:gem_sell_multiplier",
+  });
+});
+
+global.cobbleForaging.forEach((miscItem) => {
+  const { item, value } = miscItem;
+  global.trades.set(item, {
+    value: value,
+    multiplier: "shippingbin:crop_sell_multiplier",
   });
 });

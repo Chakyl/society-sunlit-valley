@@ -1,27 +1,31 @@
 {
+	autofocus_id: "2FDF83431B2845C4"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "beginner"
-	group: "56FF5A80DA7689BB"
+	group: ""
+	icon: "cobblemon:poke_ball"
 	id: "210AA16BCC8B86BF"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"Welcome! There are 8 trainer tiers;"
-				"&4-Twig&r"
-				"&4-Rock&r "
-				"&4-Iron&r"
+				"There are 8 trainer tiers:"
+				"&c-Twig&r"
+				"&c-Rock&r "
+				"&c-Iron&r"
 				"&b-Gold&r"
 				"&b-Diamond&r"
 				"&b-Iridium&r"
 				"&d-Ancient&r "
-				"Lastly, the &dHARDEST&r one to complete"
-				"&d-Prismatic&r "
+				"&d-Prismatic&r"
 				""
-				"To complete the beginner tiers marked in red, you have to finish the following quests. Good luck trainer!"
+				"To complete the beginner tiers marked in red, you have to finish the following quests. "
+				""
+				"Good luck trainer!"
 			]
+			icon: "cobblemon:poke_ball"
 			id: "201D4A576453FB99"
 			rewards: [
 				{
@@ -35,6 +39,7 @@
 					type: "item"
 				}
 			]
+			size: 2.0d
 			tasks: [{
 				id: "5177AF695ADF4B3C"
 				title: "Aye Aye Captain"
@@ -42,12 +47,13 @@
 			}]
 			title: "Trainer Tiers"
 			x: 0.0d
-			y: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["201D4A576453FB99"]
 			description: [""]
-			icon: "twigs:twig"
+			hide_dependency_lines: true
+			icon: "minecraft:stick"
 			id: "7442F483A80F619A"
 			subtitle: "Dont be shy... click it.."
 			tasks: [{
@@ -56,8 +62,8 @@
 				type: "checkmark"
 			}]
 			title: "Twig Tier"
-			x: -1.0d
-			y: 0.0d
+			x: -6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7442F483A80F619A"]
@@ -95,11 +101,11 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Catch 5x Pokémon"
-			x: -2.0d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3445937422AC3866"]
+			dependencies: ["7442F483A80F619A"]
 			description: ["To &eLevel Up&r Pokémon you can either fight wild Pokémon, catch wild Pokémon, or use candies!"]
 			icon: "cobblemon:ultra_ball"
 			id: "0F9034B6551CB99E"
@@ -136,11 +142,11 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Level Up 10x"
-			x: -4.0d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4EEFAEB610213563"]
+			dependencies: ["7442F483A80F619A"]
 			icon: "cobblemon:great_ball"
 			id: "3445937422AC3866"
 			rewards: [{
@@ -169,11 +175,11 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Defeat 5x Pokémon"
-			x: -3.0d
+			x: -6.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["0F9034B6551CB99E"]
+			dependencies: ["7442F483A80F619A"]
 			description: ["Don't worry, they'll let you know when its time to evolve!"]
 			id: "6F67FB69D101E731"
 			rewards: [
@@ -208,14 +214,15 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: [
-				"50ADAAE60D5F0782"
 				"201D4A576453FB99"
+				"30F339B9F7D920A6"
 			]
+			hide_dependency_lines: true
 			icon: "twigs:pebble"
 			id: "578D98AA47DCD9C3"
 			subtitle: "The button doesn't bite"
@@ -226,23 +233,23 @@
 			}]
 			title: "Rock Tier"
 			x: 0.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"201D4A576453FB99"
-				"090EFCF45EEA4C6C"
-				"4D2AABA85E97B271"
+				"50C5F52359BCCD70"
 			]
-			icon: "minecraft:iron_ingot"
+			hide_dependency_lines: true
+			icon: "minecraft:raw_iron"
 			id: "1C80F9FD2A3E313F"
 			tasks: [{
 				id: "7E8C26224584FCC8"
 				title: "Iron Tier"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: 0.0d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["578D98AA47DCD9C3"]
@@ -271,11 +278,11 @@
 				title: "Catch 10x Pokémon"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["516FF5028F8EE1E5"]
+			dependencies: ["578D98AA47DCD9C3"]
 			icon: "cobblemon:great_ball"
 			id: "0F3E297B983F40DC"
 			rewards: [
@@ -293,7 +300,7 @@
 				}
 			]
 			tasks: [{
-				action: "level_up_to"
+				action: "level_up"
 				amount: 20L
 				biome: ""
 				dimension: ""
@@ -309,11 +316,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: -1.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["0F3E297B983F40DC"]
+			dependencies: ["578D98AA47DCD9C3"]
 			icon: "cobblemon:ultra_ball"
 			id: "2FDF83431B2845C4"
 			rewards: [{
@@ -341,13 +348,10 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: 0.0d
-			y: -4.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"1DEADEFA391B43CB"
-				"2FDF83431B2845C4"
-			]
+			dependencies: ["578D98AA47DCD9C3"]
 			icon: "cobblemon:luxury_ball"
 			id: "0331045680248A61"
 			rewards: [
@@ -381,8 +385,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C80F9FD2A3E313F"]
@@ -410,11 +414,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["760F59ABF3299A08"]
+			dependencies: ["1C80F9FD2A3E313F"]
 			icon: "cobblemon:great_ball"
 			id: "45BBB1C3DD5D7554"
 			rewards: [{
@@ -423,7 +427,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				action: "level_up_to"
+				action: "level_up"
 				amount: 30L
 				biome: ""
 				dimension: ""
@@ -439,11 +443,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 3.0d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["45BBB1C3DD5D7554"]
+			dependencies: ["1C80F9FD2A3E313F"]
 			icon: "cobblemon:ultra_ball"
 			id: "31D918AF6CE9ACA4"
 			rewards: [
@@ -477,11 +481,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 4.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["31D918AF6CE9ACA4"]
+			dependencies: ["1C80F9FD2A3E313F"]
 			icon: "candlelight:hearth"
 			id: "5128C6A1AC72BAF9"
 			rewards: [{
@@ -507,41 +511,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 5.0d
+			x: 9.0d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"50ADAAE60D5F0782"
-				"090EFCF45EEA4C6C"
-				"4D2AABA85E97B271"
-				"0714A56E3AD13915"
-				"43888630DF98F5E4"
-				"5CABD23ACF7F09D2"
-			]
-			description: ["Go get yourself something nice!"]
-			id: "1A137F317B77F908"
-			rewards: [
-				{
-					id: "1488B7ABE0E91B86"
-					item: "numismatics:sun"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "28CCE141D2E9957A"
-					item: "candlelight:salad"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "2BD81DB774B9F224"
-				title: "WOOO!!!!!!!!"
-				type: "checkmark"
-			}]
-			title: "Completion"
-			x: 0.0d
-			y: 1.5d
 		}
 		{
 			dependencies: ["578D98AA47DCD9C3"]
@@ -579,8 +550,8 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Catch 10x Normal Pokémon "
-			x: 0.7857142857142776d
-			y: -1.5105921883377533d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C80F9FD2A3E313F"]
@@ -609,8 +580,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.5357142857142705d
-			y: 0.7751220973765314d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C80F9FD2A3E313F"]
@@ -646,8 +617,147 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.5357142857142705d
-			y: -0.7248779026234615d
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0F9034B6551CB99E"
+				"4EEFAEB610213563"
+				"3445937422AC3866"
+				"6F67FB69D101E731"
+			]
+			id: "30F339B9F7D920A6"
+			rewards: [
+				{
+					id: "33ACEC1340E1EFEB"
+					item: "cobblemon:healing_machine"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p trainer_lvl_1"
+					elevate_perms: true
+					id: "4FC2E7C232487C1E"
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "71F2188D688AE0EF"
+				item: "twigs:twig"
+				type: "item"
+			}]
+			title: "Twig Tier Complete!"
+			x: -6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"56CF90AA0E7CB949"
+				"2FDF83431B2845C4"
+				"0331045680248A61"
+				"0F3E297B983F40DC"
+				"516FF5028F8EE1E5"
+			]
+			icon: "cobblemon:rock_gem"
+			id: "50C5F52359BCCD70"
+			rewards: [
+				{
+					id: "4E9293D055A60389"
+					item: "cobblemon:pc"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p trainer_lvl_2"
+					elevate_perms: true
+					id: "429B5FBA9448D2F3"
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "7684CCCE2AF83F95"
+				item: "twigs:twig"
+				type: "item"
+			}]
+			title: "Rock Tier Complete!"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"45BBB1C3DD5D7554"
+				"5128C6A1AC72BAF9"
+				"4846C41D43B92216"
+				"760F59ABF3299A08"
+				"72D0A8BDEF603EC8"
+				"31D918AF6CE9ACA4"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "5DA6D446CABC0364"
+			rewards: [
+				{
+					id: "1666B594E118CA3B"
+					item: "cobblemon:max_revive"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p trainer_lvl_3"
+					elevate_perms: true
+					id: "394458C60641A1A3"
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "05D4220133FE533C"
+				item: "twigs:twig"
+				type: "item"
+			}]
+			title: "Rock Tier Complete!"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"30F339B9F7D920A6"
+				"5DA6D446CABC0364"
+				"50C5F52359BCCD70"
+			]
+			description: ["Go get yourself something nice!"]
+			hide_dependency_lines: true
+			id: "666FB123AAD70030"
+			rewards: [
+				{
+					id: "33D01DDBDF274873"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3B7A72573D4C88DB"
+					item: "candlelight:salad"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "452BC3EBD6C7186B"
+				title: "WOOO!!!!!!!!"
+				type: "checkmark"
+			}]
+			title: "Beginner Graduation"
+			x: 0.0d
+			y: 6.0d
 		}
 	]
 	title: "Beginner"
