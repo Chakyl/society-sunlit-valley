@@ -103,7 +103,14 @@ JEIAddedEvents.registerRecipes((e) => {
   ];
 
   grapeJuices.forEach((juice, index) => {
+    if (juice.includes("red")) {
+      juiceJEIRecipe("red", grapes[index]);
+    } else if (juice.includes("white")) {
+      juiceJEIRecipe("white", grapes[index]);
+    } else {
     juiceJEIRecipe(juice, grapes[index]);
+
+    }
   });
 
   const cropDupes = [

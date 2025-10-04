@@ -47,10 +47,10 @@ global.plushieRightClick = (click) => {
     }
     if (item == "minecraft:air" && block.id === "whimsy_deco:adv_singing_frog_plushie") {
       server.runCommandSilent(`playsound species:music.disk.spawner block @a ${x} ${y} ${z}`);
-      block.set("whimsy_deco:singing_frog", block.properties);
+      block.set("whimsy_deco:sunlit_singing_frog", block.properties);
       server.scheduleInTicks(0, () => {
         server.scheduleInTicks(2740, () => {
-          if (level.getBlock(block.pos).id === "whimsy_deco:singing_frog") {
+          if (level.getBlock(block.pos).id === "whimsy_deco:sunlit_singing_frog") {
             block.set("whimsy_deco:adv_singing_frog_plushie", block.properties);
           }
         });

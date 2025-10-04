@@ -49,4 +49,14 @@
 	#Set depend on storage box can avoid block entities NBT overflow.
 	#Range: > 0
 	"block entity max stabilize para" = 204800
+	#--------------------------------------------------------------------------
+	#Default on this config will ignore one entity crush at first time.
+	#This can keep miner not broken at the first time crush for helping player.
+	keep_structure_at_first = true
+	#--------------------------------------------------------------------------
+	#The time record list refresh default 3600s
+	#If a structure is ignored at first time and if the second time less than 3600s
+	#The structure will controlled by this mod while more than 3600s will controlled by Create.
+	#Range: 0 ~ 36000
+	"keep structure refresh time(s)" = 3600
 

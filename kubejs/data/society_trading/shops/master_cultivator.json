@@ -3,7 +3,9 @@
   "name": "shop.society_trading.master_cultivator",
   "texture": "society:textures/block/ancient_fruit_crate_side",
   "stage_required": "master_cultivator_unlocked",
+  "unlock_description": "jei.society_trading.master_culitvator_unlocked",
   "villager_profession": "cook",
+  "jei_catalyst": { "item": "candlelight:cooking_pot" },
   "trades": [
     {
       "offer": {
@@ -31,7 +33,7 @@
     },
     {
       "offer": {
-        "item": "society:garlic_seed",
+        "item": "veggiesdelight:garlic_seed",
         "count": 1
       },
       "request": {

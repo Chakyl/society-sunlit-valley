@@ -2,6 +2,7 @@
   "shop_id": "bookseller",
   "name": "shop.society_trading.bookseller",
   "texture": "minecraft:textures/block/bookshelf",
+  "jei_catalyst": { "item": "whimsy_deco:phone" },
   "seasons_required": ["late_spring", "late_summer", "late_autumn", "late_winter"],
   "trades": [
     {
@@ -75,7 +76,8 @@
       },
       "numismatics_cost": 32768,
       "trade_id": "bookseller_phenomenology_of_treasure_for_sun",
-      "seasons_required": ["late_spring"]
+      "seasons_required": ["late_spring"],
+      "unlock_description": "jei.society_trading.only_spring"
     },
     {
       "offer": {
@@ -88,7 +90,8 @@
       },
       "numismatics_cost": 65536,
       "trade_id": "bookseller_bullfish_jobs_for_sun",
-      "seasons_required": ["late_spring"]
+      "seasons_required": ["late_spring"],
+      "unlock_description": "jei.society_trading.only_spring"
     },
     {
       "offer": {
@@ -101,7 +104,8 @@
       },
       "numismatics_cost": 81920,
       "trade_id": "bookseller_paradise_crop_for_sun",
-      "seasons_required": ["late_summer"]
+      "seasons_required": ["late_summer"],
+      "unlock_description": "jei.society_trading.only_summer"
     },
     {
       "offer": {
@@ -114,7 +118,8 @@
       },
       "numismatics_cost": 131072,
       "trade_id": "bookseller_frogs_bounty_bazaar_for_sun",
-      "seasons_required": ["late_summer"]
+      "seasons_required": ["late_summer"],
+      "unlock_description": "jei.society_trading.only_summer"
     },
     {
       "offer": {
@@ -127,7 +132,8 @@
       },
       "numismatics_cost": 4096,
       "trade_id": "bookseller_hitting_hard_and_soft_for_sun",
-      "seasons_required": ["late_autumn"]
+      "seasons_required": ["late_autumn"],
+      "unlock_description": "jei.society_trading.only_autumn"
     },
     {
       "offer": {
@@ -140,7 +146,8 @@
       },
       "numismatics_cost": 4096,
       "trade_id": "bookseller_canadian_and_famous_for_sun",
-      "seasons_required": ["late_autumn"]
+      "seasons_required": ["late_autumn"],
+      "unlock_description": "jei.society_trading.only_autumn"
     },
     {
       "offer": {
@@ -153,7 +160,8 @@
       },
       "numismatics_cost": 81920,
       "trade_id": "bookseller_bluegill_meridian_for_sun",
-      "seasons_required": ["late_winter"]
+      "seasons_required": ["late_winter"],
+      "unlock_description": "jei.society_trading.only_winter"
     },
     {
       "offer": {
@@ -166,7 +174,8 @@
       },
       "numismatics_cost": 69632,
       "trade_id": "bookseller_intro_to_algorithms_for_sun",
-      "seasons_required": ["late_winter"]
+      "seasons_required": ["late_winter"],
+      "unlock_description": "jei.society_trading.only_winter"
     },
     {
       "offer": {
@@ -251,6 +260,24 @@
       },
       "numismatics_cost": 65536,
       "trade_id": "bookseller_banana_karenina_for_sun"
+    },
+    {
+      "offer": { "item": "society:the_spark_also_rises", "count": 1 },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "bookseller_the_spark_also_rises"
+    },
+    {
+      "offer": { "item": "society:universal_methods_of_farming", "count": 1 },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 10
+      },
+      "numismatics_cost": 40960,
+      "trade_id": "bookseller_universal_methods_of_farming"
     },
     {
       "offer": {

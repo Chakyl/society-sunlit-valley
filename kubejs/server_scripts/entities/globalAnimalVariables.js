@@ -42,6 +42,7 @@ global.husbandryAnimals = [
   "minecraft:squid",
   "minecraft:glow_squid",
   "crittersandcompanions:red_panda",
+  "windswept:frostbiter",
 ];
 
 global.animalMessageSettings = `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-80}`;

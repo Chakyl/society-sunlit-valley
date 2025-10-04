@@ -1,37 +1,31 @@
 {
-  "type": "forge:conditional",
-  "recipes": [
+  "type": "herbalbrews:kettle_brewing",
+  "experience": 0.8,
+  "crafting_duration": 60,
+  "fluid": [
     {
-      "conditions": [
-        {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:mod_loaded",
-            "modid": "windswept_delights"
-          }
-        }
-      ],
-      "recipe": {
-        "type": "minecraft:crafting_shapeless",
-        "category": "misc",
-        "ingredients": [
-          {
-            "item": "minecraft:glass_bottle"
-          },
-          {
-            "item": "windswept:ginger_root"
-          },
-          {
-            "item": "windswept:ginger_root"
-          },
-          {
-            "item": "minecraft:sugar"
-          }
-        ],
-        "result": {
-          "item": "windswept:ginger_tea"
-        }
-      }
+      "amount": 20
     }
-  ]
+  ],
+  "heat_needed": [
+    {
+      "amount": 0
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "snowyspirit:ginger"
+    },
+    {
+      "item": "buzzier_bees:crystallized_honey_block"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "windswept:ginger_tea",
+    "effect": "minecraft:haste",
+    "effectduration": 1800
+  }
 }

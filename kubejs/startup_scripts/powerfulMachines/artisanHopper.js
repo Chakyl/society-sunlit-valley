@@ -5,6 +5,7 @@ const artisanMachineCanHaveAdditionalOutput = [
   "society:crystalarium",
   "society:seed_maker",
   "society:aging_cask",
+  "society:mayonnaise_machine",
 ];
 
 global.handleAdditionalArtisanMachineOutputs = (
@@ -46,6 +47,12 @@ global.handleAdditionalArtisanMachineOutputs = (
     case "society:aging_cask": {
       if (stages.has("aged_prize") && rnd5()) {
         global.insertBelow(level, block, "society:prize_ticket");
+      }
+      break;
+    }
+    case "society:mayonnaise_machine": {
+      if (upgraded && rnd5()) {
+        global.insertBelow(level, block, "society:supreme_mayonnaise");
       }
       break;
     }
@@ -221,6 +228,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       let type;
       let newProperties = artisanMachine.getProperties();
       let recycleSparkstone;
+
       if (
         newProperties.get("mature").toLowerCase() === "true" &&
         global.inventoryBelowHasRoom(

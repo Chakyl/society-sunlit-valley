@@ -1,11 +1,7 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
     "#minecraft:crops",
-    "minecraft:sugar_cane",
-    "minecraft:cactus",
-    { "id": "farmersdelight:rice", "required": false },
-    { "id": "farmersdelight:rich_soil", "required": false },
     { "id": "vintagedelight:gearo_berry_bush", "required": false },
     { "id": "vinery:grapevine_stem", "required": false },
     { "id": "vinery:oak_lattice", "required": false },

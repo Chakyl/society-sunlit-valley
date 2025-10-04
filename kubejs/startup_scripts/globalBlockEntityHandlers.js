@@ -290,7 +290,7 @@ global.setDebt = (server, UUID, amount) => {
   }
 };
 
-const getOpposite = (facing, pos) => {
+global.getOpposite = (facing, pos) => {
   switch (facing) {
     case "north":
       return pos.offset(0, 0, 1);
@@ -303,7 +303,7 @@ const getOpposite = (facing, pos) => {
   }
 };
 
-const getFacing = (facing, pos) => {
+global.getFacing = (facing, pos) => {
   switch (facing) {
     case "north":
       return pos.offset(0, 0, -1);
@@ -317,10 +317,10 @@ const getFacing = (facing, pos) => {
 };
 
 global.getTapperLog = (level, block) =>
-  level.getBlock(getOpposite(block.properties.get("facing"), block.getPos()));
+  level.getBlock(global.getOpposite(block.properties.get("facing"), block.getPos()));
 
 global.getFermentingBarrel = (level, block) =>
-  level.getBlock(getFacing(block.getProperties().get("facing"), block.getPos()));
+  level.getBlock(global.getFacing(block.getProperties().get("facing"), block.getPos()));
 
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
@@ -488,24 +488,29 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   }
 };
 
-global.inventoryBelowHasRoom = (level, block, item) => {
+global.isSameQuality = (itemA, itemB) => {
+  if (!itemA.nbt && !itemB.nbt) return true;
+  if ((itemA.nbt && !itemB.nbt) || (!itemA.nbt && itemB.nbt)) return false;
+  if (!itemA.nbt.quality_food && !itemB.nbt.quality_food) return false;
+  return (itemA.nbt.quality_food.quality === itemB.nbt.quality_food.quality);
+};
+
+global.inventoryHasRoom = (block, item) => {
   let belowItem;
-  const belowPos = block.getPos().below();
-  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
-  if (belowBlock.inventory && item && item !== Item.of("minecraft:air")) {
-    for (let j = 0; j < belowBlock.inventory.slots; j++) {
-      belowItem = belowBlock.inventory.getStackInSlot(j);
+  if (block.inventory && item && item !== Item.of("minecraft:air")) {
+    for (let j = 0; j < block.inventory.slots; j++) {
+      belowItem = block.inventory.getStackInSlot(j);
       if (
         belowItem.id === Item.of(item).id &&
+        global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          belowBlock.inventory.getSlotLimit(j) /
-            (64 / belowBlock.inventory.getStackInSlot(j).maxStackSize)
+          block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
         return true;
       }
     }
-    for (let j = 0; j < belowBlock.inventory.slots; j++) {
-      belowItem = belowBlock.inventory.getStackInSlot(j);
+    for (let j = 0; j < block.inventory.slots; j++) {
+      belowItem = block.inventory.getStackInSlot(j);
       if (belowItem === Item.of("minecraft:air")) {
         return true;
       }
@@ -514,39 +519,48 @@ global.inventoryBelowHasRoom = (level, block, item) => {
   return false;
 };
 
+global.inventoryBelowHasRoom = (level, block, item) => {
+  const belowPos = block.getPos().below();
+  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+  return global.inventoryHasRoom(belowBlock, item);
+};
 /**
  * @returns result code:
  * -1 - Failure - Operation attempted but couldn't be inserted
  * 0 - Neutral - Operation not attempted due to no below inventory or item
  * 1 - Success - Item successfully inserted
  */
-global.insertBelow = (level, block, item) => {
+global.insertInto = (block, item) => {
   let belowItem;
-  const belowPos = block.getPos().below();
-  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
-  if (belowBlock.inventory && item && item !== Item.of("minecraft:air")) {
-    for (let j = 0; j < belowBlock.inventory.slots; j++) {
-      belowItem = belowBlock.inventory.getStackInSlot(j);
+  if (block.inventory && item && item !== Item.of("minecraft:air")) {
+    for (let j = 0; j < block.inventory.slots; j++) {
+      belowItem = block.inventory.getStackInSlot(j);
       if (
         belowItem.id === Item.of(item).id &&
+        global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          belowBlock.inventory.getSlotLimit(j) /
-            (64 / belowBlock.inventory.getStackInSlot(j).maxStackSize)
+          block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
-        belowBlock.inventory.insertItem(j, item, false);
+        block.inventory.insertItem(j, item, false);
         return 1;
       }
     }
-    for (let j = 0; j < belowBlock.inventory.slots; j++) {
-      belowItem = belowBlock.inventory.getStackInSlot(j);
+    for (let j = 0; j < block.inventory.slots; j++) {
+      belowItem = block.inventory.getStackInSlot(j);
       if (belowItem === Item.of("minecraft:air")) {
-        belowBlock.inventory.insertItem(j, item, false);
+        block.inventory.insertItem(j, item, false);
         return 1;
       }
     }
     return -1;
   }
   return 0;
+};
+
+global.insertBelow = (level, block, item) => {
+  const belowPos = block.getPos().below();
+  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+  return global.insertInto(belowBlock, item);
 };
 
 /**
@@ -865,6 +879,115 @@ const getCardinalMultipartJsonBasicUpgradable = (name, upgraded) => {
       apply: { model: path, y: -90, uvlock: false },
     },
   ];
+};
+global.cropList = [
+  "minecraft:wheat",
+  "minecraft:pumpkin_stem",
+  "minecraft:melon_stem",
+  "minecraft:beetroots",
+  "snowyspirit:ginger",
+  "supplementaries:flax",
+  "herbalbrews:coffee_plant",
+  "herbalbrews:rooibos_plant",
+  "herbalbrews:tea_plant",
+  "herbalbrews:yerba_mate_plant",
+  "minecraft:sweet_berry_bush",
+  "farm_and_charm:tomato_crop",
+  "farm_and_charm:strawberry",
+  "farm_and_charm:lettuce_crop",
+  "farm_and_charm:barley_crop",
+  "farm_and_charm:onion_crop",
+  "farm_and_charm:tomato_crop_body",
+  "farm_and_charm:corn_crop",
+  "farm_and_charm:oat_crop",
+  "brewery:hops_crop",
+  "brewery:hops_crop_body",
+  "nethervinery:crimson_grape_bush",
+  "nethervinery:warped_grape_bush",
+  "vinery:savanna_grape_bush_white",
+  "vinery:jungle_grape_bush_red",
+  "vinery:savanna_grape_bush_red",
+  "vinery:white_grape_bush",
+  "vinery:red_grape_bush",
+  "vinery:taiga_grape_bush_red",
+  "vinery:taiga_grape_bush_white",
+  "vinery:jungle_grape_bush_white",
+  "vinery:jungle_grape_bush_red",
+  "pamhc2trees:pamorange",
+  "pamhc2trees:pamdragonfruit",
+  "pamhc2trees:pampeach",
+  "pamhc2trees:pamplum",
+  "pamhc2trees:pambanana",
+  "pamhc2trees:pamapple",
+  "pamhc2trees:pamcherry",
+  "pamhc2trees:pamstarfruit",
+  "pamhc2trees:pamlychee",
+  "pamhc2trees:pammango",
+  "pamhc2trees:pamhazelnut",
+  "pamhc2trees:pampawpaw",
+  "pamhc2trees:pamcinnamon",
+  "vintagedelight:ghost_pepper_crop",
+  "vintagedelight:cucumber_crop",
+  "farmersdelight:cabbages",
+  "farmersdelight:budding_tomatoes",
+  "farmersdelight:tomatoes",
+  "farmersdelight:rice",
+  "farmersdelight:rice_panicles",
+  "society:ancient_fruit",
+  "etcetera:cotton",
+  "society:tubabacco_leaf",
+  "brewery:hop_trellis",
+  "society:blueberry",
+  "veggiesdelight:cauliflower_crop",
+  "veggiesdelight:garlic_crop",
+  "veggiesdelight:bellpepper_crop",
+  "society:eggplant",
+  "society:potato",
+  "society:carrot",
+  "society:peanut",
+  "society:sweet_potato",
+  "society:onion",
+  "veggiesdelight:turnip_crop",
+  "veggiesdelight:zucchini_crop",
+  "veggiesdelight:broccoli_crop",
+];
+
+const qualityToInt = (quality) => {
+  switch (quality) {
+    case "DIAMOND":
+      return 3;
+    case "GOLD":
+      return 2;
+    case "IRON":
+      return 1;
+    case "NONE":
+    default:
+      return 0;
+  }
+};
+const getFertilizer = (crop) => {
+  const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0));
+  if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland")) return -1;
+  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland")) return 1;
+  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland")) return 2;
+  if (block.hasTag("dew_drop_farmland_growth:pristine_quality_fertilized_farmland")) return 3;
+  return 0;
+};
+
+const LevelData = Java.loadClass("de.cadentem.quality_food.capability.LevelData");
+
+global.getCropQuality = (crop) => {
+  const fertilizer = getFertilizer(crop);
+  if (fertilizer == -1) return 0;
+  const qualityName = LevelData.get(crop.getLevel(), crop.getPos().offset(-1, 0, 0), false);
+  const seedQuality = qualityToInt(qualityName);
+  const goldChance =
+    0.2 * ((seedQuality * 4.6) / 10) + 0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) + 0.01;
+
+  if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
+  if (Math.random() < goldChance) return 2;
+  if (Math.random() < goldChance * 2) return 1;
+  return 0;
 };
 
 const getCardinalMultipartJson = (name, disableExclamation) => {

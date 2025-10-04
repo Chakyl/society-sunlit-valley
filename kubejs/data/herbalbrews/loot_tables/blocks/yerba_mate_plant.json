@@ -23,39 +23,18 @@
                   }
                 }
               ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 4
+                  }
+                }
+              ],
               "name": "herbalbrews:yerba_mate_leaf"
             }
           ]
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "block": "herbalbrews:yerba_mate_plant",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "age": "3"
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "function": "minecraft:apply_bonus",
-              "parameters": {
-                "extra": 3,
-                "probability": 0.5715286
-              }
-            }
-          ],
-          "name": "herbalbrews:yerba_mate_leaf"
         }
       ],
       "rolls": 1.0

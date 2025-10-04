@@ -1,0 +1,14 @@
+{
+  "breed": "mechanic",
+  "name": "slime.splendid_slimes.mechanic",
+  "color": "#7a5a34",
+  "particle": {
+    "item": "create:cogwheel"
+  },
+  "diet": "diet.splendid_slimes.mechanic",
+  "foods": [{ "tag": "forge:ingots" }],
+  "favorite_food": {
+    "item": "oreganized:lead_ingot"
+  },
+  "traits": ["handy"]
+}

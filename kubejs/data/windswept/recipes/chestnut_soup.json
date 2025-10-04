@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "windswept:roasted_chestnuts"
+    },
+    {
+      "item": "windswept:roasted_chestnuts"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:potato"
+    }
+  ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "windswept:chestnut_soup",
+    "count": 1
+  }
+}

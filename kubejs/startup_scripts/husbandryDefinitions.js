@@ -392,6 +392,13 @@ global.husbandryForagingDefinitions = [
         minHearts: 4,
         hasQuality: true,
       },
+      {
+        item: "windswept:elder_feather",
+        countMult: 1,
+        chance: 0.2,
+        minHearts: 8,
+        hasQuality: true,
+      }
     ],
   },
   {
@@ -442,6 +449,24 @@ global.husbandryForagingDefinitions = [
       },
     ],
   },
+  {
+    animal: "windswept:frostbiter",
+    forages: [
+      {
+        item: "windswept:frozen_branch",
+        countMult: 1,
+        chance: 0.15,
+        minHearts: 5,
+        hasQuality: true,
+      },
+      {
+        item: "betterarcheology:artifact_shards",
+        countMult: 4,
+        chance: 1,
+        minHearts: 10,
+      },
+    ],
+  },
 ];
 
 const cowMilk = { sm: "society:milk", lg: "society:large_milk" };
@@ -451,7 +476,11 @@ const sheepMilk = { sm: "society:sheep_milk", lg: "society:large_sheep_milk" };
 global.husbandryMilkingDefinitions = [
   { animal: "minecraft:cow", cooldown: 1, milk: cowMilk },
   { animal: "minecraft:mooshroom", cooldown: 1, milk: cowMilk },
-  { animal: "buzzier_bees:moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  {
+    animal: "buzzier_bees:moobloom",
+    cooldown: 1,
+    milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" },
+  },
   { animal: "meadow:wooly_cow", warped: false, cooldown: 1, milk: cowMilk },
   {
     animal: "meadow:wooly_cow",
@@ -491,6 +520,16 @@ global.husbandryMilkingDefinitions = [
     animal: "minecraft:glow_squid",
     cooldown: 1,
     milk: { sm: "minecraft:glow_ink_sac", lg: "minecraft:glow_ink_sac" },
+  },
+  {
+    animal: "species:mammutilation",
+    cooldown: 2,
+    milk: { sm: "species:ichor_bottle", lg: "species:ichor_bottle" },
+  },
+  {
+    animal: "windswept:frostbiter",
+    cooldown: 1,
+    milk: cowMilk,
   },
 ];
 

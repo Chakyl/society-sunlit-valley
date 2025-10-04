@@ -21,6 +21,7 @@ ServerEvents.tags("entity_type", (e) => {
     "wildernature:bison",
     "minecraft:squid",
     "minecraft:glow_squid",
+    "windswept:frostbiter"
   ].forEach((animal) => {
     e.add("society:milkable_animal", animal);
   });

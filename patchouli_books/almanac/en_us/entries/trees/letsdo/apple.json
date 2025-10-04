@@ -74,8 +74,8 @@
                 "mapping": {
                     "0": "vinery:apple_leaves[has_apples=false]",
                     "1": "vinery:apple_leaves[has_apples=false]",
-                    "2": "vinery:apple_leaves[can_have_apples=true, has_apples=true]",
-                    "3": "vinery:apple_leaves[can_have_apples=true]",
+                    "2": "vinery:apple_leaves[can_grow_apples=true, has_apples=true]",
+                    "3": "vinery:apple_leaves[can_grow_apples=true]",
                     "W": "vinery:apple_log"
                 }
             }

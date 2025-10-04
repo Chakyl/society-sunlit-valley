@@ -4,6 +4,7 @@
   "texture": "botania:textures/block/mana_void",
   "stage_required": "mystical_botanist_unlocked",
   "villager_profession": "botanist",
+  "jei_catalyst": { "item": "beautify:botanist_workbench" },
   "trades": [
     {
       "offer": {
@@ -19,6 +20,24 @@
     },
     {
       "offer": {
+        "item": "society:ribbit_hut",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "second_request": {
+        "item": "pamhc2trees:starfruititem",
+        "count": 16
+      },
+      "stage_required": "community_center_complete",
+      "numismatics_cost": 32768,
+      "unlock_description": "jei.society_trading.community_center_complete",
+      "trade_id": "botanist_ribbit_hut"
+    },
+    {
+      "offer": {
         "item": "botania:apothecary_default",
         "count": 1
       },
@@ -28,6 +47,7 @@
       },
       "stage_required": "abandoned_farm_complete",
       "numismatics_cost": 4096,
+      "unlock_description": "jei.society_trading.abandoned_farm_complete",
       "trade_id": "botanist_apothecary_default_for_sun"
     },
     {
@@ -41,6 +61,7 @@
       },
       "numismatics_cost": 4096,
       "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
       "trade_id": "botanist_kinetic_blueprint_for_sun"
     },
     {

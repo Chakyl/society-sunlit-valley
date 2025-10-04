@@ -140,9 +140,10 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:wheel_of_adaptation",
       tooltip: "Was once used to summon a beast",
     },
+    { item: "society:toy_train", tooltip: "« Limited to 2 passengers : ants »" },
     {
-      item: "society:token_of_unity",
-      tooltip: "I love making mazes! I'm going to design the biggest maze ever!",
+      item: "society:perfect_cherry",
+      tooltip: "It wants you to eat it",
     },
     {
       item: "society:mini_oni_eye",
@@ -228,6 +229,14 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:wuthering_logs",
       description: "Trees have a 15% chance to drop Fire Logs when chopped.",
     },
+    {
+      item: "society:the_spark_also_rises",
+      description: "Minining any ore drops Sparkstone.",
+    },
+    {
+      item: "society:universal_methods_of_farming",
+      description: "The Market sells all basic seeds in every season.",
+    },
   ].forEach((book) => {
     tooltip.add(book.item, Text.gray(book.description));
     tooltip.add(book.item, Text.green("Right click to learn this skill!"));
@@ -248,6 +257,26 @@ ItemEvents.tooltip((tooltip) => {
       text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
     }
   });
+  tooltip.add("simplerecall:recall_potion", Text.gray("Teleports you to your spawn location"));
+  tooltip.add(
+    [
+      "whimsy_deco:phone",
+      "whimsy_deco:blue_phone",
+      "whimsy_deco:black_phone",
+      "whimsy_deco:red_phone",
+    ],
+    Text.gray("Can call all unlocked villagers to trade with them.")
+  );
+
+  tooltip.add(
+    [
+      "whimsy_deco:phone",
+      "whimsy_deco:blue_phone",
+      "whimsy_deco:black_phone",
+      "whimsy_deco:red_phone",
+    ],
+    Text.green("Has some unique villager shops")
+  );
   // Furniture
   tooltip.add("tanukidecor:diy_workbench", Text.gray("Crafts any Catalog item for cheap"));
   tooltip.add("society:tanuki_catalog", [
@@ -287,9 +316,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:pink_matter",
-    Text.green(
-      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry over Milk Quality"
-    )
+    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels.")
   );
   tooltip.add("society:pink_matter", Text.red("Does not carry over Milk Quality"));
   tooltip.add(
@@ -350,6 +377,7 @@ ItemEvents.tooltip((tooltip) => {
     "numismatics_utils:bank_meter",
     Text.gray("Shows balance in Bank Terminal when worn in curio slot")
   );
+  tooltip.add("society:bank_meter", Text.red("Removed! Craft into new one!"));
   tooltip.add(
     "society:fish_radar",
     Text.gray("Shows catchable fish at the current time and location")
@@ -455,6 +483,7 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.green("Has built-in oven")
   );
+
   tooltip.add(
     [
       "oreganized:silver_ore",
@@ -552,7 +581,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "splendid_slimes:slime_candy",
-    Text.gray("Feed to a Splendid Slime to greatly increase their affection.")
+    Text.gray("Feed to a Splendid Slime to greatly increase their happiness.")
   );
   tooltip.add(
     "splendid_slimes:slime_feeder",
@@ -591,8 +620,18 @@ ItemEvents.tooltip((tooltip) => {
       "moreminecarts:greenhouse_glass_stairs",
       "moreminecarts:greenhouse_glass_slab",
     ],
-    Text.gray("Crop underneath grows in any season")
+    Text.gray("Grows the first crop underneath in any season")
   );
+  tooltip.add(
+    [
+      "moreminecarts:chiseled_organic_glass",
+      "moreminecarts:chiseled_organic_glass_pane",
+      "moreminecarts:greenhouse_glass_stairs",
+      "moreminecarts:greenhouse_glass_slab",
+    ],
+    Text.green("Range: 16 blocks")
+  );
+
   tooltip.add("vinery:apple_tree_sapling", "Fruit Season:");
   tooltip.add("vinery:apple_tree_sapling", Text.gold(" Autumn"));
 
@@ -613,18 +652,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("extractinator:extractinator", Text.gray("Right click with a geode to process"));
   tooltip.add("extractinator:extractinator", Text.gray("Shift + Right click to process stack"));
   tooltip.add(
-    ["moreminecarts:chunkrodite_block", "moreminecarts:chunkrodite"],
-    Text.gray("Adds time to Fueled Chunk Loader")
-  );
-  tooltip.add(
     "pipez:item_pipe",
     Text.gray("Can be configured to extract using the Create mod Wrench")
   );
-  tooltip.add(
-    "moreminecarts:chunk_loader",
-    Text.green("Loads a 5x5 chunk area using Chunkroderite and other items")
-  );
-  tooltip.add("moreminecarts:chunk_loader", Text.red("Must be restarted when server restarts"));
+  tooltip.add("moreminecarts:chunk_loader", Text.red("Removed! Craft into money for your refund."));
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
@@ -981,6 +1012,8 @@ ItemEvents.tooltip((tooltip) => {
     "Mana Clock",
     "Mana Milker",
     "All Sprinklers",
+    "Growth Obelisk",
+    "Ribbit Hut",
   ];
   // Translocators
   tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {
@@ -998,6 +1031,26 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("society:overflow_token", Text.gray("to your coin leaderboard score,"));
   tooltip.add("society:overflow_token", Text.gray("bypassing the bank account's cap."));
   tooltip.add("society:overflow_token", Text.red("Overflow tokens cannot be recovered"));
+  // Sprinklers
+  const generateSprinklerTooltip = (tooltip, tier, radius) => {
+    const tooltipRadius = 1 + radius * 2;
+    tooltip.add(
+      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      Text.gray("Waters crops before they dry out at 6am")
+    );
+    tooltip.add(
+      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      Text.gray("Can be given a stick for decoration")
+    );
+    tooltip.add(
+      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      Text.green(`Area: ${tooltipRadius}x${tooltipRadius}`)
+    );
+  };
+  generateSprinklerTooltip(tooltip, "iron", 1);
+  generateSprinklerTooltip(tooltip, "gold", 2);
+  generateSprinklerTooltip(tooltip, "diamond", 3);
+  generateSprinklerTooltip(tooltip, "netherite", 4);
   // Books
   tooltip.add("society:yard_work_yearly", Text.green("Right click to gain Farming experience"));
   tooltip.add("society:husbandry_hourly", Text.green("Right click to gain Husbandry experience"));

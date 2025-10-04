@@ -58,7 +58,7 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
         fruitItem = "vinery:cherry";
         fruitItem.count = rnd(0, 4);
         success = true;
-        modifiedProperties.can_have_cherries = false;
+        modifiedProperties.can_grow_cherries = false;
         modifiedProperties.has_cherries = false;
         scannedBlock.set(scannedBlock.id, modifiedProperties);
       } else if (
@@ -69,7 +69,7 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
         fruitItem = "minecraft:apple";
         fruitItem.count = rnd(0, 4);
         success = true;
-        modifiedProperties.can_have_apples = false;
+        modifiedProperties.can_grow_apples = false;
         modifiedProperties.has_apples = false;
         scannedBlock.set(scannedBlock.id, modifiedProperties);
       }

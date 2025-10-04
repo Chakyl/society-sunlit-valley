@@ -777,6 +777,31 @@
 			x: 4.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["443F42C8AFDA0C36"]
+			description: [
+				"Can't be bothered to build a villager trading hall?"
+				""
+				"The &6Phone&r has you covered! Right clicking on it will allow you to select which villager to trade with over the phone. The &6Carpenter&r and &6Bookseller&r can only be accessed over the phone!"
+				""
+				"It is sold by the &6Banker&r Villager."
+			]
+			id: "23C02B36014CC450"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35928F071913970B"
+				table_id: 3483058636960571374L
+				type: "random"
+			}]
+			tasks: [{
+				id: "24C56E6ED4DB14F1"
+				item: "whimsy_deco:phone"
+				type: "item"
+			}]
+			title: "Phone Ordering"
+			x: 8.0d
+			y: 1.5d
+		}
 	]
 	title: "{ftbquests.chapter.getting_started.title}"
 }

@@ -242,4 +242,8 @@ LootJS.modifiers((e) => {
   e.addLootTypeModifier(LootType.CHEST).modifyLoot(Ingredient.all, (itemStack) => {
     return fixedStackSize(itemStack);
   });
+
+  e.addLootTypeModifier(LootType.CHEST)
+    .randomChance(0.15)
+    .replaceLoot("numismatics:cog", "simplerecall:recall_potion", true);
 });

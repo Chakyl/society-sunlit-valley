@@ -35,7 +35,7 @@
 				type: "dimension"
 			}]
 			x: -1.5d
-			y: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
@@ -56,7 +56,7 @@
 				item: "society:fire_quartz"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -88,8 +88,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: 0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
@@ -111,17 +111,20 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest4.title}"
-			x: 1.0d
-			y: 1.0d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["41FD632FA78AFB49"]
+			dependencies: [
+				"41FD632FA78AFB49"
+				"0F176FBF01ABB774"
+			]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest5.description1}"
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest5.description2}"
 			]
-			icon: "society:battery"
+			icon: "society:charging_rod"
 			id: "0C7D8F89BCF645AA"
 			rewards: [{
 				count: 4
@@ -129,24 +132,17 @@
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "433682C86A24FC4C"
-					item: "society:charging_rod"
-					type: "item"
-				}
-				{
-					id: "2FAA09F38056013F"
-					item: "society:battery"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "433682C86A24FC4C"
+				item: "society:charging_rod"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest5.title}"
-			x: 3.0d
-			y: 2.5d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["0C7D8F89BCF645AA"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest6.description1}"
 				""
@@ -163,30 +159,8 @@
 				item: "society:espresso_machine"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["0C7D8F89BCF645AA"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description2}"
-			]
-			id: "6EBF139D33C95729"
-			rewards: [{
-				id: "44F0B36D0FC6AF4C"
-				item: "society:mining_monthly"
-				type: "item"
-			}]
-			tasks: [{
-				id: "473C2896879CF42A"
-				item: "society:crystalarium"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest7.title}"
-			x: 4.5d
-			y: 2.5d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -233,16 +207,11 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"18EB59F2591BAD51"
-				"3492FA6A5DFCC390"
-				"25569C0D687E6FA5"
-				"0F176FBF01ABB774"
-			]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest9.description1}"
 				""
@@ -264,8 +233,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest9.title}"
-			x: 5.0d
-			y: -1.0d
+			x: 9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -277,16 +246,16 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "6A39934F61EB59BF"
-				item: "society:gold_sprinkler"
+				id: "6ED7E64530635F03"
+				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest10.title}"
-			x: 3.0d
-			y: -2.0d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["0C7D8F89BCF645AA"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: ["{ftbquests.chapter.iii__advanced_farming.quest11.description1}"]
 			id: "2746CBE8BDA47E40"
 			rewards: [{
@@ -295,34 +264,28 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "15363B698E92450C"
-				item: "society:diamond_sprinkler"
+				id: "5B08BD5F101D61C1"
+				item: "dew_drop_farmland_growth:diamond_sprinkler"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.5d
+			x: 8.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description1}"
+				"The &6Mincer&r is a cooking implement for finely grounding certain items. "
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description2}"
+				"It is a necessary tool for when chopping can't quite get the job done."
 			]
 			id: "711AC0F5208316D5"
-			rewards: [{
-				count: 32
-				id: "7BC5A2F167579D9B"
-				item: "moreminecarts:chunkrodite"
-				type: "item"
-			}]
 			tasks: [{
 				id: "58A708BD47826C8B"
 				item: "farm_and_charm:mincer"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.5d
+			x: 3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
@@ -357,172 +320,17 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest14.title}"
-			x: 7.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest15.description1}"]
-			id: "3543D99A908C655B"
-			rewards: [{
-				id: "5DB852C7314379CE"
-				item: "society:jade"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5394FA5C7000D4EB"
-				item: "society:jade"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description2}"
-			]
-			id: "401FD6FD108EA784"
-			rewards: [{
-				count: 16
-				id: "0E8493D5BB6AC3C3"
-				item: "snowyspirit:glow_lights_prismatic"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "2063797E8B7E358F"
-				item: "society:prismatic_shard"
-				type: "item"
-			}]
-			x: 12.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3543D99A908C655B"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest17.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest17.description2}"
-			]
-			id: "220D97C6133AB5F6"
-			rewards: [{
-				id: "3ACD476978BFB927"
-				item: "society:jade"
-				type: "item"
-			}]
-			tasks: [{
-				id: "234D2E77525E7C7C"
-				item: "society:aging_cask"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest18.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest18.description2}"
-			]
-			id: "4EE2AD7C7BA3A6DE"
-			rewards: [{
-				count: 4
-				id: "186C598CCDF37C2D"
-				item: "betterarcheology:bomb"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5E3EF94E12130E88"
-				item: "society:omni_geode"
-				type: "item"
-			}]
-			x: 9.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"3543D99A908C655B"
-				"56BEF80EE652FAE0"
-			]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest19.description1}"]
-			id: "3CC16EE6106EAE95"
-			rewards: [{
-				id: "5F14699AAD857780"
-				item: "minecraft:netherite_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1CA0791DB6D735DE"
-				item: "society:netherite_sprinkler"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description3}"
-			]
-			id: "3827930046BC7657"
-			rewards: [
-				{
-					id: "703739C800C78AF9"
-					item: "society:relic_trove"
-					type: "item"
-				}
-				{
-					id: "4A794E8DA7FB678A"
-					item: "trials:ominous_bottle"
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: "trials:trial_key_ominous"
-				id: "48933F7445A8905E"
-				structure: "trials:trials_chambers"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest20.task_5229593360924708958.title}"
-				type: "structure"
-			}]
-			x: 8.5d
+			x: 12.25d
 			y: 0.5d
 		}
 		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description2}"
-			]
-			id: "28F873731A6C967B"
-			rewards: [{
-				id: "6C3556C58F26DD67"
-				item: "candlelight:cooking_pot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "606908768A0FDC23"
-				item: "candlelight:cooking_pot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest21.title}"
-			x: 14.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0C7D8F89BCF645AA"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest22.description1}"
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest22.description2}"
+				""
+				"It will deposit coins directly into your bank account when sold. If you don't have one or its at the limit, it will shoot them out."
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest22.description3}"
 			]
@@ -538,8 +346,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest22.title}"
-			x: 2.0d
-			y: 3.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["572D70993411EA53"]
@@ -559,8 +367,8 @@
 				item: "farmersdelight:rich_soil"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -580,8 +388,8 @@
 				item: "vintagedelight:fermenting_jar"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["79C92AEDE15E7E6D"]
@@ -597,8 +405,8 @@
 				item: "vintagedelight:organic_mash"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["711AC0F5208316D5"]
@@ -616,8 +424,8 @@
 				item: "farm_and_charm:fertilizer"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
@@ -634,7 +442,7 @@
 				item: "society:enriched_bone_meal"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -3.0d
 		}
 		{
@@ -670,11 +478,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest28.title}"
-			x: 4.0d
-			y: -4.5d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["0F176FBF01ABB774"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest29.description1}"
 				""
@@ -691,8 +499,8 @@
 				item: "society:dehydrator"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
@@ -716,11 +524,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest30.title}"
-			x: 5.0d
-			y: -2.5d
+			x: 10.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["44A512703C4A9990"]
+			dependencies: ["0F176FBF01ABB774"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest31.description1}"
 				""
@@ -739,8 +547,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest31.title}"
-			x: 6.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
@@ -769,11 +577,11 @@
 				}
 			]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest32.title}"
-			x: 1.0d
-			y: 5.0d
+			x: 0.75d
+			y: 4.5d
 		}
 		{
-			dependencies: ["139B02AFBCBBF350"]
+			dependencies: ["07A551F04BB9A117"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest33.description1}"
 				""
@@ -801,44 +609,11 @@
 				}
 			]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest33.title}"
-			x: 5.5d
-			y: 5.0d
+			x: 8.75d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"139B02AFBCBBF350"
-				"0C7D8F89BCF645AA"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description3}"
-			]
-			hide_dependency_lines: false
-			id: "01071E36A0370E13"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7F204D2D5D058583"
-				table_id: 2207679701817321554L
-				type: "random"
-			}]
-			tasks: [{
-				id: "4C4EAA7798622AAC"
-				item: "splendid_slimes:plort_press"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest34.title}"
-			x: 3.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"01071E36A0370E13"
-				"41029F073ADDDC2F"
-			]
+			dependencies: ["2C9C87690BD8E23B"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest35.description1}"
 				""
@@ -856,11 +631,11 @@
 				item: "splendid_slimes:corral_block"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.0d
+			x: 3.25d
+			y: 4.5d
 		}
 		{
-			dependencies: ["5C9C7A5A88613109"]
+			dependencies: ["2C9C87690BD8E23B"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest36.description1}"
@@ -877,8 +652,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest36.title}"
-			x: 2.0d
-			y: 6.0d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			description: [
@@ -915,7 +690,7 @@
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest37.title}"
 			x: -1.5d
-			y: 5.75d
+			y: 5.5d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
@@ -939,14 +714,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest38.title}"
-			x: 1.0d
-			y: 7.0d
+			x: 0.75d
+			y: 6.5d
 		}
 		{
-			dependencies: [
-				"5C9C7A5A88613109"
-				"139B02AFBCBBF350"
-			]
+			dependencies: ["747B28CA5F55AFA7"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest39.description1}"
 				""
@@ -977,183 +749,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest39.title}"
-			x: 1.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest40.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest40.description2}"
-			]
-			id: "70D15F67E3880A3A"
-			rewards: [{
-				id: "76B63061E794A610"
-				item: "numismatics:crown"
-				type: "item"
-			}]
-			tasks: [{
-				id: "706BDE404DFE02FE"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description3}"
-			]
-			id: "3E4E14F5055B09B6"
-			rewards: [{
-				count: 8
-				id: "1640E07AB5324939"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			tasks: [{
-				id: "33EF40E93DD4F698"
-				item: "society:artisan_hopper"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description3}"
-			]
-			id: "445BDEFC4FE5919C"
-			rewards: [{
-				count: 8
-				id: "6530E89D258B5B94"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6D855019B3D7E539"
-				item: "society:auto_grabber"
-				type: "item"
-			}]
-			x: 8.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description3}"
-			]
-			icon: "minecraft:fletching_table"
-			id: "7ECC14D99BC56382"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "782C8FCB6DABE4D5"
-				table_id: 6097669691163803424L
-				type: "choice"
-			}]
-			tasks: [
-				{
-					id: "3C94E045475D43B0"
-					item: "minecraft:fletching_table"
-					type: "item"
-				}
-				{
-					id: "4392ED87AF2BADD9"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "society:sea_biscut"
-								}
-								{
-									Count: 1b
-									id: "society:broken_clock"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_cog"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_roe"
-								}
-								{
-									Count: 1b
-									id: "society:infinity_worm"
-								}
-								{
-									Count: 1b
-									id: "society:frosted_tip"
-								}
-								{
-									Count: 1b
-									id: "society:inserter"
-								}
-								{
-									Count: 1b
-									id: "society:cordycep"
-								}
-								{
-									Count: 1b
-									id: "society:black_opal"
-								}
-								{
-									Count: 1b
-									id: "society:stone_hand"
-								}
-								{
-									Count: 1b
-									id: "society:tiny_gnome"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.iii__advanced_farming.quest43.task_4869215314156170713.title}"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest43.title}"
-			x: 14.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest44.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest44.description2}"
-			]
-			id: "4CD98E31EC569CC3"
-			rewards: [{
-				id: "645254E0E9308B72"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			tasks: [{
-				id: "209753824F6D75ED"
-				item: "society:fish_pond_basket"
-				type: "item"
-			}]
 			x: 6.5d
-			y: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
@@ -1174,37 +771,12 @@
 				item: "numismatics:neptunium_coin"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			title: "Higher Tiers"
+			x: 10.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest46.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest46.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest46.description3}"
-			]
-			id: "7E57003B7EB58B32"
-			rewards: [{
-				id: "439D3025D0A92A86"
-				item: "minecraft:dragon_egg"
-				type: "item"
-			}]
-			tasks: [{
-				biome: "society:umbra_barrens"
-				icon: "minecraft:end_stone"
-				id: "767C274777FE508C"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest46.task_8537742181496934540.title}"
-				type: "biome"
-			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest46.title}"
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["5C9C7A5A88613109"]
+			dependencies: ["07A551F04BB9A117"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest47.description1}"
 				""
@@ -1228,53 +800,11 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest47.title}"
-			x: 2.25d
-			y: 8.0d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest48.description1}"]
-			id: "46221EDDD393A7FE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "324615FD9F97DC28"
-				table_id: 2467450565259284777L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "79C696A7467682E8"
-				item: "society:cornucopia"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest48.title}"
-			x: 8.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest49.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest49.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest49.description3}"
-			]
-			id: "56BEF80EE652FAE0"
-			rewards: [{
-				id: "1FD5DB86412B2B0E"
-				item: "minecraft:netherite_scrap"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0082721998C0DD38"
-				item: "minecraft:netherite_ingot"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5C9C7A5A88613109"]
+			dependencies: ["07A551F04BB9A117"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest50.description1}"
 				""
@@ -1293,62 +823,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest50.title}"
-			x: 1.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["0C7D8F89BCF645AA"]
-			description: [
-				"The &6Auto-Cheese Press&r is an automated version of the &6Artisan Cheese Press&r. Hoppers can be used to insert and extract out of it."
-				""
-				"Unlike the base version, it requires &6Rennet&r for the production of cheeses."
-			]
-			id: "4EBBDECAF78C14ED"
-			rewards: [{
-				count: 16
-				id: "0079FF80FF8C18F5"
-				item: "meadow:rennet"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6D5F73A7858E1353"
-				item: "meadow:cheese_form"
-				type: "item"
-			}]
-			title: "Automated Cheese"
-			x: 3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["7ECC14D99BC56382"]
-			description: [
-				"Getting to the bottom of the &6Skull Cavern&r can be a challenge. &6Magic Rope&r can be obtained from the Exotic Trader to instantly teleport you to the next layer down. "
-				""
-				"It can also be crafted into a &6Magic Tunnel&r, which teleports you to adjacent caves."
-			]
-			icon: "society:magic_rope"
-			id: "74F9C9296C92BE03"
-			rewards: [{
-				count: 2
-				id: "7F5802EA608AA10D"
-				item: "society:magic_rope"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7D182FF6E0733E10"
-					item: "society:magic_rope"
-					type: "item"
-				}
-				{
-					id: "24C8F0A11EF90428"
-					item: "society:magic_tunnel"
-					type: "item"
-				}
-			]
-			title: "Descending Faster"
-			x: 16.0d
-			y: 0.0d
+			x: 8.0d
+			y: 6.5d
 		}
 		{
 			description: [
@@ -1383,7 +859,7 @@
 			}]
 			title: "Catching Longwings"
 			x: -1.5d
-			y: -7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
@@ -1446,7 +922,7 @@
 			]
 			title: "Tasty Luring"
 			x: 0.5d
-			y: -6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
@@ -1467,7 +943,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
@@ -1496,7 +972,7 @@
 			}]
 			title: "The Handbook"
 			x: 1.0d
-			y: -7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
@@ -1509,12 +985,19 @@
 			]
 			icon: "society:butterfly_amber"
 			id: "3B6640956F047EC8"
-			rewards: [{
-				count: 4
-				id: "7206E75A9309D986"
-				item: "society:bouquet_bag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7206E75A9309D986"
+					item: "society:bouquet_bag"
+					type: "item"
+				}
+				{
+					id: "3C273BC02EC38EE8"
+					item: "sophisticatedstorage:advanced_magnet_upgrade"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "526CDEE7648DACB8"
 				item: {
@@ -1538,13 +1021,10 @@
 			}]
 			title: "The Butterfly Effect"
 			x: 3.0d
-			y: -7.0d
+			y: -6.0d
 		}
 		{
-			dependencies: [
-				"5C9C7A5A88613109"
-				"139B02AFBCBBF350"
-			]
+			dependencies: ["2C9C87690BD8E23B"]
 			description: [
 				"Slimes can be fed by tossing their food on the ground, or poviding a live mob for them to eat."
 				""
@@ -1565,8 +1045,175 @@
 				type: "item"
 			}]
 			title: "Feeding Slimes"
-			x: 3.0d
-			y: 7.0d
+			x: 3.25d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"5C9C7A5A88613109"
+				"139B02AFBCBBF350"
+			]
+			description: [
+				"Slimes can be fed in a few ways. The simplest of which is tossing an item they like to eat at them. For Slimes that only eat animals and monsters, you'll need to wrangle one into their area."
+				""
+				"After being fed, they'll drop a &6Plort&r! These can be sold, used to make more slimes, or processed into more valuable goods!"
+			]
+			id: "2C9C87690BD8E23B"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "79A4DD37EA638059"
+				item: "splendid_slimes:slime_candy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2933B9035E879D0D"
+				item: {
+					Count: 1
+					id: "splendid_slimes:plort"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "The Humble Plort"
+			x: 2.25d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0C7D8F89BCF645AA"]
+			id: "214BFF5CB710FFE2"
+			tasks: [{
+				id: "3E230604E4BD6C0A"
+				item: "society:battery"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["214BFF5CB710FFE2"]
+			description: [
+				"The &6Electricity Generator&r is capable of burning coal to power certain furniture devices."
+				""
+				"Most importantly, it poweres the &6Workbench&r, which can craft various furniture blocks that are otherwise difficult to obtain."
+				""
+				"You can link generators to blocks that need power using the &6Electric Wrench&r."
+			]
+			hide_dependency_lines: false
+			icon: "refurbished_furniture:light_electricity_generator"
+			id: "0462313FFAEC4054"
+			rewards: [{
+				id: "010FC9BAC3A786B3"
+				item: "refurbished_furniture:wrench"
+				type: "item"
+			}]
+			subtitle: "FE - Furniture Energy"
+			tasks: [{
+				icon: "refurbished_furniture:light_electricity_generator"
+				id: "1554E7905CF741CC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "refurbished_furniture:dark_electricity_generator"
+							}
+							{
+								Count: 1b
+								id: "refurbished_furniture:light_electricity_generator"
+							}
+						]
+					}
+				}
+				title: "Electricity Generator"
+				type: "item"
+			}]
+			title: "Furniture Constructing"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F176FBF01ABB774"]
+			description: [
+				"The &6Recycling Machine&r can turn items that would otherwise be junk into useful materials."
+				""
+				"It can also double the amount of ores you recieve from raw ore!"
+			]
+			id: "44ACDBB4DE598EA6"
+			rewards: [{
+				count: 4
+				id: "5519E022BD00A560"
+				item: "furniture:trash_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D74C54EF7A3C1F0"
+				item: "society:recycling_machine"
+				type: "item"
+			}]
+			title: "Trash To Treasure"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["18EB59F2591BAD51"]
+			description: [
+				"&6Fermentation Barrels&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				""
+				"Recipes can use the following juices:"
+				""
+				"- &cRed&r/&aWhite&r grape juice"
+				"- &cCrimson&r/&aWarped&r grape juice"
+				"- &eApple Juice&r (made using an Apple Press)"
+				""
+				"Juices are inserted in the top left slot of the Fermentation Barrel."
+			]
+			icon: "vinery:red_grapejuice"
+			id: "180411EF1F7649DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47F40C9762972779"
+				table_id: 8298743981735202683L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "36017F8FB07D6021"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "vinery:white_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:red_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:warped_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:crimson_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:apple_juice"
+							}
+						]
+					}
+				}
+				title: "Any Fermentation Barrel juice"
+				type: "item"
+			}]
+			title: "Juicing up the Wine"
+			x: 2.5d
+			y: 0.5d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

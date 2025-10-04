@@ -1,4 +1,5 @@
 console.info("[SOCIETY] harvestHandling.js loaded");
+// Yeah this filename has a typo. Fixing it would be more annoying than leaving it.
 
 const deniedCrops = [
   "farmersdelight:tomatoes",
@@ -10,16 +11,14 @@ const deniedCrops = [
   "minecraft:cocoa",
   "supplementaries:flax",
 ];
-const allowedBonemealCrops = [
-  "minecraft:crimson_fungus",
-  "minecraft:warped_fungus",
-];
+const allowedBonemealCrops = ["minecraft:crimson_fungus", "minecraft:warped_fungus"];
 const reseedableCrops = [
   "minecraft:potato",
   "minecraft:carrot",
   "farm_and_charm:onion",
   "veggiesdelight:sweet_potato",
   "vintagedelight:peanut",
+  "veggiesdelight:garlic_crop",
 ];
 BlockEvents.rightClicked((e) => {
   const { block, player, server, hand, item, level } = e;
@@ -82,13 +81,13 @@ BlockEvents.rightClicked((e) => {
           "verdantvibes:bracket_mushroom",
         ].includes(block.id)
       ) {
-        player.tell("Bonemeal is too weak to grow this...")
+        player.tell("Bonemeal is too weak to grow this...");
         e.cancel();
       }
     }
   }
   if (hand == "MAIN_HAND") {
-    const initialBlock = level.getBlockState(block.pos);
+    let initialBlock = level.getBlockState(block.pos);
     let checkBlocked;
     let blockState;
     if (
@@ -121,12 +120,23 @@ BlockEvents.rightClicked((e) => {
           }
         }
       }
-      if (xpCount > 0) {
-        const xp = block.createEntity("experience_orb");
-        xp.mergeNbt({ Value: xpCount });
-        xp.spawn();
-        global.giveExperience(server, player, "farming", xpCount * 2);
-      }
+      server.scheduleInTicks(2, () => {
+        initialBlock = level.getBlockState(block.pos);
+        if (!initialBlock.block.isMaxAge(initialBlock) && xpCount > 0) {
+          const xp = block.createEntity("experience_orb");
+          xp.mergeNbt({ Value: xpCount });
+          xp.spawn();
+          global.giveExperience(server, player, "farming", xpCount * 2);
+        }
+      });
     }
   }
+});
+// Vinery grapevine leaf mechanic
+BlockEvents.rightClicked("vinery:grapevine_stem", (e) => {
+  const { block } = e;
+  let properties = block.getProperties();
+  properties.leaves_pending = false;
+  properties.leaves_done = true;
+  block.set(block.id, properties);
 });

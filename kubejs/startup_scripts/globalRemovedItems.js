@@ -1,4 +1,23 @@
 global.removedItems = [
+  "windswept:gingerbread_cookie",
+  "windswept:frozen_flesh",
+  "whimsy_deco:gatcha_capsule",
+  "vinery:red_taiga_grapejuice",
+  "vinery:red_jungle_grapejuice",
+  "vinery:red_savanna_grapejuice",
+  "vinery:white_taiga_grapejuice",
+  "vinery:white_jungle_grapejuice",
+  "vinery:white_savanna_grapejuice",
+  "whimsy_deco:gold_lucky_cat",
+  "whimsy_deco:gnome",
+  "whimsy_deco:lantern_gnome",
+  "whimsy_deco:flower_pig_plushie",
+  "whimsy_deco:golden_pig_plushie",
+  "whimsy_deco:vocal_doll",
+  "whimsy_deco:fufu_plushie",
+  "whimsy_deco:big_panda_plushie",
+  "whimsy_deco:red_vocal_doll",
+  "whimsy_deco:singing_frog",
   "create:wheat_flour",
   "windswept:wooden_bucket",
   "windswept:wooden_water_bucket",
@@ -28,7 +47,6 @@ global.removedItems = [
   "crittersandcompanions:iron_dragonfly_armor",
   "crittersandcompanions:dragonfly_spawn_egg",
   "crittersandcompanions:dragonfly_wing",
-  "crittersandcompanions:clam",
   "crittersandcompanions:pearl",
   "crittersandcompanions:pearl_necklace_1",
   "crittersandcompanions:pearl_necklace_2",
@@ -232,7 +250,6 @@ global.removedItems = [
   "refinedstorage:storage_housing",
   "refinedstorage:wireless_fluid_grid",
   "refinedstorage:wrench",
-  "whimsy_deco:paw_carpet_entity",
   "tanukidecor:mayoral_mini_figure",
   "tanukidecor:developer_mini_figure",
   "perfectplushies:red_fox_plushie",
@@ -855,3 +872,44 @@ global.removedItems = [
   "atmospheric:dragon_fruit_crate",
   "atmospheric:dragon_fruit",
 ];
+
+global.hiddenItems = [
+  "society:diamond_sprinkler",
+  "society:gold_sprinkler",
+  "society:netherite_sprinkler",
+  "society:iron_sprinkler",
+  "minecraft:ancient_debris",
+  "society:growth_obelisk_upper",
+];
+const refinedBlocks = [
+  "controller",
+  "crafting_grid",
+  "detector",
+  "relay",
+  "network_transmitter",
+  "network_receiver",
+  "wireless_transmitter",
+  "security_manager",
+];
+const colors = [
+  "white",
+  "orange",
+  "magenta",
+  "yellow",
+  "lime",
+  "pink",
+  "gray",
+  "light_gray",
+  "cyan",
+  "purple",
+  "blue",
+  "brown",
+  "green",
+  "red",
+  "black",
+];
+refinedBlocks.forEach((block) => {
+  colors.forEach((color) => {
+    global.hiddenItems.push(`refinedstorage:${color}_${block}`);
+  });
+});

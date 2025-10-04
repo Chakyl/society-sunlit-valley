@@ -319,6 +319,44 @@
       }
     ]
   },
+  "the_spark_also_rises": {
+    "title": "The Spark Also Rises",
+    "description": "Minining any ore drops Sparkstone.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_spark_also_rises"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s the_spark_also_rises",
+          "lock_command": "kubejs stages remove @s the_spark_also_rises"
+        }
+      }
+    ]
+  },
+  "universal_methods_of_farming": {
+    "title": "Universal Methods of Farming",
+    "description": "The Market sells all basic seeds in every season.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:universal_methods_of_farming"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s universal_methods_of_farming",
+          "lock_command": "kubejs stages remove @s universal_methods_of_farming"
+        }
+      }
+    ]
+  },
   "wuthering_logs": {
     "title": "Wuthering Logs",
     "description": "Trees have a 15% chance to drop Fire Logs when chopped.",

@@ -11,6 +11,7 @@ const SlimeFavoriteFoods = {
   gold: { item: "society:bell_pepper_preserves" },
   juicy: { item: "vinery:jungle_grapes_red" },
   luminous: { item: "vintagedelight:pickle" },
+  mechanic: { item: "oreganized:lead_ingot" },
   minty: { entity: "Enderman" },
   orby: { entity: "Drowned" },
   phantom: { item: "minecraft:purple_bed" },

@@ -6,7 +6,25 @@
     "vertical_range": 5,
     "extra_bottom_block_chance": 0,
     "extra_edge_column_chance": 0.3,
-    "vegetation_chance": 0,
+    "vegetation_chance": 0.01,
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "windswept:icicles",
+              "Properties": {
+                "state": "normal",
+                "waterlogged": "false"
+              }
+            }
+          }
+        }
+      },
+      "placement": []
+    },
     "xz_radius": {
       "type": "minecraft:uniform",
       "value": {
@@ -31,7 +49,6 @@
           }
         }
       ]
-    },
-    "vegetation_feature": "minecraft:ice_spike"
+    }
   }
 }

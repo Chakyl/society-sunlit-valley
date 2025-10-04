@@ -1,0 +1,85 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"5": "society:block/ribbit_hut/two",
+		"6": "society:block/ribbit_hut/three",
+		"particle": "ribbits:block/swamp_lantern"
+	},
+	"elements": [
+		{
+			"from": [-0.5, 13, 0],
+			"to": [15.5, 18, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 32, 6]},
+			"faces": {
+				"north": {"uv": [3.25, 0, 7.25, 1.25], "texture": "#5"},
+				"east": {"uv": [2.5, 0, 6.5, 1.25], "texture": "#5"},
+				"south": {"uv": [3, 0, 7, 1.25], "texture": "#5"},
+				"west": {"uv": [2.5, 0, 6.5, 1.25], "texture": "#5"},
+				"up": {"uv": [7.25, 6.5, 3.25, 2.5], "texture": "#5"},
+				"down": {"uv": [13, -6, 9, -2], "texture": "#5"}
+			}
+		},
+		{
+			"from": [-7.5, 1, -7.5],
+			"to": [23.5, 1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9.5, -9, 8.5]},
+			"faces": {
+				"north": {"uv": [8, 12.5, 15.75, 12.5], "texture": "#6"},
+				"east": {"uv": [10.125, 0, 16, 0], "texture": "#6"},
+				"south": {"uv": [8, 12.5, 15.75, 12.5], "texture": "#6"},
+				"west": {"uv": [8.25, 2.75, 14.125, 2.75], "texture": "#6"}
+			}
+		},
+		{
+			"from": [-7.5, 1, 16],
+			"to": [0, 1, 23.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9.5, -9, 8.5]},
+			"faces": {
+				"north": {"uv": [13.875, 12.5, 15.75, 12.5], "texture": "#6"},
+				"east": {"uv": [8.25, 0, 10.125, 0], "texture": "#6"},
+				"south": {"uv": [8, 12.5, 9.875, 12.5], "texture": "#6"},
+				"west": {"uv": [14.125, 2.75, 16, 2.75], "texture": "#6"}
+			}
+		},
+		{
+			"from": [31.5, 14, -15.5],
+			"to": [31.5, 14, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [54.5, 15, 0.5]},
+			"faces": {
+				"north": {"uv": [0, 0.5, 0, 0.5], "texture": "#5"},
+				"east": {"uv": [7.875, 0, 11.75, 0], "texture": "#5"},
+				"south": {"uv": [0, 0.5, 0, 0.5], "texture": "#5"},
+				"up": {"uv": [0, 0, 0, 3.875], "texture": "#5"},
+				"down": {"uv": [0, 7.875, 0, 11.75], "texture": "#5"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bone",
+			"origin": [15, 11.75, -34],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		},
+		{
+			"name": "main",
+			"origin": [11, 59, -1],
+			"color": 0,
+			"children": [
+				{
+					"name": "mushroom",
+					"origin": [8, 59, 7],
+					"color": 0,
+					"children": []
+				}
+			]
+		},
+		{
+			"name": "main2",
+			"origin": [-1, 30, -20],
+			"color": 0,
+			"children": []
+		}
+	]
+}

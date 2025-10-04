@@ -88,4 +88,5 @@ ServerEvents.recipes((e) => {
   addItemFusion("botania:life_essence", "ender", "minty");
   addItemFusion("minecraft:dragon_egg", "ender", "minty");
   addItemFusion("society:token_of_unity", "boomcat", "sparkcat");
+  addItemFusion("society:magic_bulb", "orby", "mechanic");
 });

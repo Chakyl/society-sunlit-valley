@@ -1,88 +1,98 @@
 {
   "shop_id": "carpenter",
   "name": "shop.society_trading.carpenter",
-  "texture": "supplementaries:textures/block/fine_wood_side",
+  "texture": "supplementaries:textures/block/cabin_siding_side",
+  "jei_catalyst": { "item":"meadow:woodcutter" },
   "trades": [
     {
       "offer": { "item": "society:bee_wallpaper", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "trade_id": "carpenter_bee_wallpaper"
     },
     {
       "offer": { "item": "society:hive_wallpaper", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "trade_id": "carpenter_hive_wallpaper"
     },
     {
       "offer": { "item": "society:hive_baseboard", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "trade_id": "carpenter_hive_baseboard"
     },
     {
       "offer": { "item": "society:bunny_wallpaper", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "seasons_required": ["early_winter", "mid_swinter", "late_winter"],
+      "numismatics_cost": 256,
+      "trade_id": "carpenter_bunny_wallpaper"
     },
     {
       "offer": { "item": "society:bunny_baseboard", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "seasons_required": ["early_winter", "mid_swinter", "late_winter"],
+      "trade_id": "carpenter_bunny_baseboard"
     },
     {
       "offer": { "item": "society:cloud_wallpaper", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "numismatics_cost": 256,
+      "trade_id": "carpenter_cloud_wallpaper"
     },
     {
       "offer": { "item": "society:cloud_baseboard", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "trade_id": "carpenter_cloud_baseboard"
     },
     {
       "offer": { "item": "society:pink_flower_wallpaper", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "numismatics_cost": 256,
+      "trade_id": "carpenter_pink_flower_wallpaper"
     },
     {
       "offer": { "item": "society:pink_flower_baseboard", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "trade_id": "carpenter_pink_flower_baseboard"
     },
     {
       "offer": { "item": "minecraft:dirt", "count": 8 },
@@ -91,7 +101,7 @@
         "count": 4
       },
       "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "trade_id": "carpenter_dirt"
     },
     {
       "offer": { "item": "minecraft:gravel", "count": 8 },
@@ -100,7 +110,7 @@
         "count": 4
       },
       "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "trade_id": "carpenter_gravel"
     },
     {
       "offer": { "item": "minecraft:cobblestone", "count": 8 },
@@ -109,250 +119,241 @@
         "count": 4
       },
       "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "trade_id": "carpenter_cobblestone"
     },
     {
       "offer": { "item": "minecraft:cobbled_deepslate", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:sprocket",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 32,
+      "trade_id": "carpenter_cobbled_deepslate"
     },
     {
       "offer": { "item": "meadow:cobbled_limestone", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:sprocket",
+        "count": 1
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 16,
+      "trade_id": "carpenter_cobbled_limestone"
     },
     {
       "offer": { "item": "supplementaries:fine_wood", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 3
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 192,
+      "trade_id": "carpenter_fine_wood"
     },
     {
       "offer": { "item": "minecraft:glass", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:bevel",
+        "count": 3
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
-    },
-    {
-      "offer": { "item": "supplementaries:fine_wood", "count": 8 },
-      "request": {
-        "item": "numismatics:spur",
-        "count": 4
-      },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 24,
+      "trade_id": "carpenter_glass"
     },
     {
       "offer": { "item": "minecraft:terracotta", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:sprocket",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 32,
+      "trade_id": "carpenter_terracotta"
     },
     {
       "offer": { "item": "clayworks:concrete", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:sprocket",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 32,
+      "trade_id": "carpenter_concrete"
     },
     {
       "offer": { "item": "minecraft:bricks", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 1
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 64,
+      "trade_id": "carpenter_bricks"
     },
     {
       "offer": { "item": "supplementaries:ash_bricks", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 128,
+      "trade_id": "carpenter_ash_bricks"
     },
     {
       "offer": { "item": "supplementaries:daub", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:sprocket",
+        "count": 1
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 16,
+      "trade_id": "carpenter_daub"
     },
     {
       "offer": { "item": "minecraft:packed_mud", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:sprocket",
+        "count": 3
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 48,
+      "trade_id": "carpenter_packed_mud"
     },
     {
       "offer": { "item": "twigs:packed_silt", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 1
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 64,
+      "trade_id": "carpenter_packed_silt"
     },
     {
       "offer": { "item": "create:limestone", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 128,
+      "trade_id": "carpenter_limestone"
     },
     {
       "offer": { "item": "twigs:schist", "count": 8 },
       "request": {
         "item": "numismatics:spur",
-        "count": 4
+        "count": 7
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 7,
+      "trade_id": "carpenter_schist"
     },
     {
       "offer": { "item": "windswept:lunalite", "count": 8 },
       "request": {
         "item": "numismatics:spur",
-        "count": 4
+        "count": 7
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 7,
+      "trade_id": "carpenter_lunalite"
     },
     {
       "offer": { "item": "windswept:shale", "count": 8 },
       "request": {
         "item": "numismatics:spur",
-        "count": 4
+        "count": 7
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 7,
+      "trade_id": "carpenter_shale"
     },
     {
       "offer": { "item": "minecraft:prismarine", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 5
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 320,
+      "trade_id": "carpenter_prismarine"
     },
     {
       "offer": { "item": "minecraft:dark_prismarine", "count": 8 },
       "request": {
         "item": "numismatics:spur",
-        "count": 4
+        "count": 6
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 384,
+      "trade_id": "carpenter_dark_prismarine"
     },
     {
       "offer": { "item": "minecraft:polished_basalt", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "trade_id": "carpenter_polished_basalt"
     },
     {
       "offer": { "item": "minecraft:blackstone", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:cog",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 256,
+      "trade_id": "carpenter_blackstone"
     },
     {
       "offer": { "item": "create:scorchia", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 128,
+      "trade_id": "carpenter_scorchia"
     },
     {
       "offer": { "item": "twigs:bloodstone", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 128,
+      "trade_id": "carpenter_bloodstone"
     },
     {
       "offer": { "item": "create:scoria", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 128,
+      "trade_id": "carpenter_scoria"
     },
     {
       "offer": { "item": "twigs:rhyolite", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:cog",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 128,
+      "trade_id": "carpenter_rhyolite"
     },
     {
       "offer": { "item": "minecraft:end_stone", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:crown",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 1024,
+      "trade_id": "carpenter_end_stone"
     },
     {
       "offer": { "item": "quark:dusky_myalite", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
-        "count": 4
+        "item": "numismatics:crown",
+        "count": 2
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 1024,
+      "trade_id": "carpenterdusky_myalite_"
     },
     {
       "offer": { "item": "quark:myalite_crystal", "count": 8 },
       "request": {
-        "item": "numismatics:spur",
+        "item": "numismatics:crown",
         "count": 4
       },
-      "numismatics_cost": 4,
-      "trade_id": "carpenter_"
+      "numismatics_cost": 2048,
+      "trade_id": "carpenter_myalite_crystal"
     }
   ]
 }

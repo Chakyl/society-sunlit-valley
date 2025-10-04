@@ -88,13 +88,13 @@
 			]
 			id: "54B618CF0AB9DC20"
 			rewards: [{
-				id: "09B894343F6EDD1E"
-				item: "society:iron_sprinkler"
+				id: "05D8DB298A7C0CAD"
+				item: "dew_drop_farmland_growth:iron_sprinkler"
 				type: "item"
 			}]
 			tasks: [{
-				id: "47E630967268DE9A"
-				item: "society:iron_sprinkler"
+				id: "771C38A34236A7D8"
+				item: "dew_drop_farmland_growth:iron_sprinkler"
 				type: "item"
 			}]
 			x: 3.0d
@@ -1832,6 +1832,41 @@
 			title: "Wireless Access"
 			x: 16.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["6ADD884F3FFE5D42"]
+			description: [
+				"Tiers of hoes above wood have abilities!"
+				""
+				"&6Shift+Right click&r to till in an area"
+				""
+				"&6Right click crops&r to harvest in an area"
+				""
+				"&6Left click grass/crops&r to destroy in an area (be careful with this one!)"
+				""
+				"The higher the tier, the larger the working area."
+			]
+			id: "5FBE3685CF008A5A"
+			rewards: [{
+				count: 4
+				id: "40C6F28062432BDD"
+				item: "dew_drop_farmland_growth:low_quality_fertilizer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4CB767B95CEA4E1D"
+				item: {
+					Count: 1
+					id: "minecraft:stone_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Upgraded Hoes"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

@@ -26,7 +26,7 @@ BlockEvents.broken(global.plushies, (e) => {
   );
 });
 
-BlockEvents.broken("whimsy_deco:singing_frog", (e) => {
+BlockEvents.broken("whimsy_deco:sunlit_singing_frog", (e) => {
   const { block } = e;
   const type = block.properties.get("type").toLowerCase();
   if (type !== "0") {
@@ -45,7 +45,6 @@ BlockEvents.broken("whimsy_deco:singing_frog", (e) => {
 
 BlockEvents.rightClicked("whimsy_deco:gatcha_machine", (e) => {
   const { item, player, block, hand, server } = e;
-
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
     if (item.id.equals("numismatics:sun")) {

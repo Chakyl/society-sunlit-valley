@@ -8,6 +8,8 @@ BlockEvents.rightClicked((e) => {
       "farm_and_charm:onion",
       "veggiesdelight:sweet_potato",
       "vintagedelight:peanut",
+      "vintagedelight:peanut",
+      "veggiesdelight:garlic_crop",
     ].includes(e.item.getId())
   ) {
     if (e.block.hasTag("dewdrop:waterable")) {

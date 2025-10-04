@@ -110,7 +110,7 @@
   },
   "steadfast": {
     "title": "Steadfast",
-    "description": "+5% Resistance to all attacks",
+    "description": "20% chance to heal a hearts when hurt",
     "icon": {
       "type": "effect",
       "data": {
@@ -119,11 +119,10 @@
     },
     "rewards": [
       {
-        "type": "puffish_skills:attribute",
+        "type": "puffish_skills:command",
         "data": {
-          "attribute": "puffish_skills:player.resistance",
-          "value": 0.05,
-          "operation": "multiply_total"
+          "unlock_command": "kubejs stages add @s steadfast",
+          "lock_command": "kubejs stages remove @s steadfast"
         }
       }
     ]

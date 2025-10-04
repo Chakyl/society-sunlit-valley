@@ -17,6 +17,8 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:frogs_bounty_bazaar", skillId: "3fgcne477ni1rjxx" },
   { id: "society:phenomenology_of_treasure", skillId: "z68vn1cf2lucfbos" },
   { id: "society:slime_contain_protect", skillId: "uj8tnf4jgm0xyp13" },
+  { id: "society:the_spark_also_rises", skillId: "n3wgu1edjjl2t511" },
+  { id: "society:universal_methods_of_farming", skillId: "dm3efjm3y57v34ir" },
   { id: "society:wuthering_logs", skillId: "y1xltbgkupmcoe0i" },
 ].forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {

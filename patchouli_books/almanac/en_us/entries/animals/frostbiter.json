@@ -1,0 +1,17 @@
+{
+  "name": "Frostbiter",
+  "category": "patchouli:animals",
+  "icon": "windswept:frozen_branch",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Milk: Milk$(li)Milk Cooldown: 1 day$(li)Forage: Frozen Branch, Artifact Shards$(br2)$(l)Notes$()$(br)Foraging requires 5+ hearts. Can be tamed with Holly Berries."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "windswept:frostbiter",
+      "scale": 0.6,
+      "text": "Friend or Froze?"
+    }
+  ]
+}

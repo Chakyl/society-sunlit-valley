@@ -192,6 +192,8 @@
 				"6F1185DF7F75728F"
 				"4AA3E179161C2AFE"
 				"68DB8018FDF785EE"
+				"56F6E9B440580334"
+				"118335BC396DE305"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -287,6 +289,26 @@
 				type: "item"
 			}]
 			x: -3.0d
+			y: -0.5d
+		}
+		{
+			id: "56F6E9B440580334"
+			tasks: [{
+				id: "5721899A7DD3F569"
+				item: "society:perfect_cherry"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			id: "118335BC396DE305"
+			tasks: [{
+				id: "130EE6AB3E528370"
+				item: "society:toy_train"
+				type: "item"
+			}]
+			x: -6.0d
 			y: -0.5d
 		}
 	]

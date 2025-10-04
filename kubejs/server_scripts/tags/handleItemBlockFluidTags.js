@@ -213,20 +213,28 @@ ServerEvents.tags("item", (e) => {
     e.add("furniture:trash_bag_blacklist", item);
     e.add("c:hidden_from_recipe_viewers", item);
   });
+  global.hiddenItems.forEach((item) => {
+    e.add("furniture:trash_bag_blacklist", item);
+    e.add("c:hidden_from_recipe_viewers", item);
+  });
 });
 const rawLogs = [
-  "quark:blossom_log",
-  "quark:ancient_log",
-  "quark:azalea_log",
+  "minecraft:oak_log",
   "minecraft:dark_oak_log",
   "minecraft:mangrove_log",
   "minecraft:spruce_log",
   "minecraft:acacia_log",
-  "meadow:pine_log",
-  "minecraft:oak_log",
   "minecraft:birch_log",
   "minecraft:jungle_log",
   "minecraft:cherry_log",
+  "windswept:chestnut_log",
+  "windswept:holly_log",
+  "windswept:pine_log",
+  "windswept:weathered_pine_log",
+  "quark:blossom_log",
+  "quark:ancient_log",
+  "quark:azalea_log",
+  "meadow:pine_log",
   "betterarcheology:rotten_log",
   "vinery:dark_cherry_log",
   "beachparty:palm_log",
@@ -297,6 +305,15 @@ ServerEvents.tags("item", (e) => {
     e.add("society:need_seeds", crop);
     e.remove("minecraft:villager_plantable_seeds", crop);
     e.remove("quark:seed_pouch_holdable", crop);
+  });
+  [
+    "etcetera:nether_bismuth_ore",
+    "society:sparkstone_ore",
+    "society:deepslate_sparkstone_ore",
+    "society:iridium_ore",
+    "society:deepslate_iridium_ore",
+  ].forEach((ore) => {
+    e.add("forge:ores", ore);
   });
   [
     "society:boysenberry",
@@ -422,7 +439,7 @@ ServerEvents.tags("item", (e) => {
   ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
     e.add("create:upright_on_belt", bottle);
   });
-  e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth")
+  e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth");
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
@@ -674,7 +691,6 @@ ServerEvents.tags("block", (e) => {
   ].forEach((item) => {
     e.add("minecraft:sword_efficient", item);
   });
-
 });
 
 ServerEvents.tags("fluid", (e) => {

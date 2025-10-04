@@ -23,6 +23,15 @@
                   }
                 }
               ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 2
+                  }
+                }
+              ],
               "name": "herbalbrews:rooibos_leaf"
             }
           ]
@@ -30,36 +39,6 @@
       ],
       "rolls": 1
 
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "block": "herbalbrews:rooibos_plant",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "age": "3"
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "function": "minecraft:apply_bonus",
-              "parameters": {
-                "extra": 1,
-                "probability": 0.5714286
-              }
-            }
-          ],
-          "name": "herbalbrews:rooibos_leaf"
-        }
-      ],
-      "rolls": 1
     }
   ]
 }

@@ -18,8 +18,15 @@ BlockEvents.rightClicked("create:deployer", (e) => {
       "aquaculture:diamond_fishing_rod",
       "aquaculture:neptunium_fishing_rod",
     ].includes(e.player.getHeldItem("MAIN_HAND").id)
-  ){
-      e.player.tell(Text.red("This machine will break my rod... "))
-      e.cancel();
-    }
+  ) {
+    e.player.tell(Text.red("This machine will break my rod... "));
+    e.cancel();
+  }
 });
+
+ItemEvents.rightClicked(
+  ["refinedstorage:4k_storage_block", "refinedstorage:64k_storage_block"],
+  (e) => {
+    if (e.player.isCrouching()) e.cancel();
+  }
+);

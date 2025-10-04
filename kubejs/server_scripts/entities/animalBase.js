@@ -106,7 +106,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     }
     if (!hungry && peckish && !player.isFake() && !item.hasTag("society:animal_feed")) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100} 120 ${name} could use something to eat...`
+        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100} 40 ${name} could use something to eat...`
       );
     }
     if (hungry) {
@@ -114,7 +114,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     }
     if (errorText && !player.isFake()) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 ${errorText}`
+        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
       );
     }
   } else if (item === "minecraft:air") {
@@ -225,7 +225,7 @@ const handleMilk = (name, data, day, hungry, e) => {
   }
   if (errorText && !player.isFake()) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 60 ${errorText}`
+      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 20 ${errorText}`
     );
   }
 };
@@ -269,10 +269,40 @@ const handleFeed = (data, day, e) => {
     global.addItemCooldown(player, item, 10);
   }
 };
+const handleSheepMagicShears = (e) => {
+  const { target, level, server } = e;
+  if (target.readyForShearing()) {
+    target.setSheared(true);
+    let woolItem = Item.of(target.getColor().getName() + "_wool");
+    let i = Math.ceil(Math.random() * 4);
+    for (let j = 0; j < i; j++) {
+      let wool = level.createEntity("minecraft:item");
 
+      wool.x = target.x + rnd(0, 0.5);
+      wool.y = target.y + 0.5;
+      wool.z = target.z + rnd(0, 0.5);
+      wool.item = Item.of(woolItem);
+      wool.spawn();
+      wool.setDeltaMovement(
+        wool
+          .getDeltaMovement()
+          .add(
+            (Math.random() - Math.random()) * 0.1,
+            Math.random() * 0.05,
+            (Math.random() - Math.random()) * 0.1
+          )
+      );
+    }
+
+    server.runCommandSilent(
+      `playsound minecraft:entity.sheep.shear block @a ${target.x} ${target.y} ${target.z}`
+    );
+  }
+};
 const handleMagicHarvest = (name, data, e) => {
   const { player, level, target, item, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
+  if (target.type == "minecraft:sheep") handleSheepMagicShears(e);
   const affection = data.getInt("affection");
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   let errorText = "";
@@ -299,7 +329,7 @@ const handleMagicHarvest = (name, data, e) => {
     }
     if (!player.isFake())
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 ${errorText}`
+        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
       );
     global.addItemCooldown(player, item, 10);
   }
@@ -340,7 +370,6 @@ ItemEvents.entityInteracted((e) => {
       }
       if (
         player.stages.has("biomancer") &&
-        hearts >= 1 &&
         [
           "bakery:bread_knife",
           "farmersdelight:iron_knife",
@@ -358,32 +387,38 @@ ItemEvents.entityInteracted((e) => {
         ].includes(item.id)
       ) {
         if (player.cooldowns.isOnCooldown(item)) return;
-        let heart = level.createEntity("minecraft:item");
-        heart.x = player.x;
-        heart.y = player.y;
-        heart.z = player.z;
-        heart.item = Item.of("quark:diamond_heart");
-        heart.spawn();
-        server.runCommandSilent(
-          `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
-        );
-        server.runCommandSilent(
-          `playsound legendarycreatures:mojo_hurt block @a ${player.x} ${player.y} ${player.z} 0.1`
-        );
-        level.spawnParticles(
-          "minecraft:angry_villager",
-          true,
-          target.x,
-          target.y + 1.5,
-          target.z,
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          5,
-          0.01
-        );
-        data.affection = affection - 100;
-        global.addItemCooldown(player, item, 5);
+        if (hearts < 5) {
+          server.runCommandSilent(
+            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} doesn't trust you enough...`
+          );
+        } else {
+          let heart = level.createEntity("minecraft:item");
+          heart.x = player.x;
+          heart.y = player.y;
+          heart.z = player.z;
+          heart.item = Item.of("quark:diamond_heart");
+          heart.spawn();
+          server.runCommandSilent(
+            `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
+          );
+          server.runCommandSilent(
+            `playsound legendarycreatures:mojo_hurt block @a ${player.x} ${player.y} ${player.z} 0.1`
+          );
+          level.spawnParticles(
+            "minecraft:angry_villager",
+            true,
+            target.x,
+            target.y + 1.5,
+            target.z,
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            5,
+            0.01
+          );
+          data.affection = affection - 100;
+          global.addItemCooldown(player, item, 5);
+        }
       }
       if (player.stages.has("bribery") && item === "numismatics:crown" && !data.bribed) {
         if (player.cooldowns.isOnCooldown(item)) return;
@@ -432,7 +467,7 @@ ItemEvents.entityInteracted((e) => {
         if (data.bff) {
           data.bff = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 240 Its mind was corrupted and no longer gives Prismatic Shards...`
+            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 80 Its mind was corrupted and no longer gifts Prismatic Shards...`
           );
         }
       }
@@ -457,7 +492,7 @@ ItemEvents.entityInteracted((e) => {
         if (data.clockwork) {
           data.clockwork = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 240 Its mind was healed from being a souless machine!`
+            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 80 Its mind was healed from being a souless machine!`
           );
         }
       }
@@ -482,7 +517,9 @@ ItemEvents.entityInteracted((e) => {
         );
         global.addItemCooldown(player, item, 4);
       }
-      if (item === "society:magic_shears") handleMagicHarvest(name, data,e);
+      if (item === "society:magic_shears") {
+        handleMagicHarvest(name, data, e);
+      }
       if (affection > 1075) {
         // Cap affection at 1075
         data.affection = 1075;

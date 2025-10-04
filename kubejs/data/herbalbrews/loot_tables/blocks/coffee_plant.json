@@ -23,46 +23,21 @@
                   }
                 }
               ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 3
+                  }
+                }
+              ],
               "name": "herbalbrews:coffee_beans"
             }
           ]
         }
       ],
       "rolls": 1
-
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "block": "herbalbrews:coffee_plant",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "age": "3"
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "function": "minecraft:apply_bonus",
-              "parameters": {
-                "extra": 1,
-                "probability": 0.5714286
-              }
-            }
-          ],
-          "name": "herbalbrews:coffee_beans"
-        }
-      ],
-      "rolls": 1
-
     }
   ]
 }
-
- 

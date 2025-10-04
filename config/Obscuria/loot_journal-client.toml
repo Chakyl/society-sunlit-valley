@@ -1,33 +1,48 @@
 
-[Display]
+["Display Options"]
 	#Allowed Values: CLASSIC, FLAT, TEXT
-	style = "CLASSIC"
-	useRarityColor = true
-	itemsColor = "FFFFFF"
-	groupedItemsColor = "FFFFFF"
-	experienceColor = "55FF55"
-	displayExperience = true
-	displayTotal = true
+	"Message Style" = "CLASSIC"
 
-[Positioning]
+	["Display Options"."Item Pickup"]
+		"Show Item Pickups" = true
+		"Show Total Item Count" = true
+		"Use Minecraft Formatting" = true
+		"Text Color" = "FFFFFF"
+		"Italic Text" = false
+
+	["Display Options"."Aggregated Pickup"]
+		"Show Aggregated Pickups" = true
+		"Text Color" = "FFFFFF"
+		"Italic Text" = true
+
+	["Display Options"."Experience Pickup"]
+		"Show Experience Pickups" = true
+		"Text Color" = "55FF55"
+		"Italic Text" = false
+
+["Layout Options"]
 	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
-	anchor = "BOTTOM_RIGHT"
-	#Range: 0 ~ 256
-	anchorOffset = 3
+	"Screen Position" = "BOTTOM_RIGHT"
+	#Range: 0 ~ 200
+	Offset = 3
+	#Range: 0 ~ 50
+	"Relative Offset" = 10
+	#Range: 50 ~ 100
+	"Message Scale" = 100
 	#Range: 0 ~ 16
-	notificationSeparation = 3
+	"Line Spacing" = 3
 	#Range: 0 ~ 32
-	notificationLifetime = 6
+	"Message Duration" = 6
 	#Range: 1 ~ 64
-	maxVisibleNotifications = 12
+	"Max Visible Messages" = 9
 	#Range: 0 ~ 256
-	maxQueuedNotifications = 23
+	"Message Queue Size" = 9
 
-[Filtering]
-	#Allowed Values: ALL_WHITELISTED, ALL_BLACKLISTED
-	defaultBehavior = "ALL_WHITELISTED"
-	tabsBlacklist = []
-	itemsBlacklist = []
-	tabsWhitelist = []
-	itemsWhitelist = []
+["Filter Options"]
+	#Allowed Values: ALLOW_ALL, DENY_ALL
+	"Default Filter Rule" = "ALLOW_ALL"
+	"Item ID Blacklist" = ["minecraft:air"]
+	"Item ID Whitelist" = []
+	"Mod ID Blacklist" = []
+	"Mod ID Whitelist" = []
 

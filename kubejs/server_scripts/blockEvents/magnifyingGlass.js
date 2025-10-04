@@ -9,20 +9,23 @@ const magnifyingGlassBlocks = [
   { id: "society:fish_pond_basket", radius: 1, includeY: true },
   { id: "society:feeding_trough", radius: 6, includeY: true },
   { id: "splendid_slimes:slime_feeder", radius: 6, includeY: true },
-  { id: "society:iron_sprinkler", radius: 1 },
-  { id: "society:gold_sprinkler", radius: 2 },
-  { id: "society:diamond_sprinkler", radius: 3 },
-  { id: "society:netherite_sprinkler", radius: 4 },
+  { id: "dew_drop_farmland_growth:iron_sprinkler", radius: 1 },
+  { id: "dew_drop_farmland_growth:gold_sprinkler", radius: 2 },
+  { id: "dew_drop_farmland_growth:diamond_sprinkler", radius: 3 },
+  { id: "dew_drop_farmland_growth:netherite_sprinkler", radius: 4 },
   { id: "society:mana_milker", radius: 10, includeY: true },
   { id: "society:golden_clock", radius: 2, includeY: true },
   { id: "society:mana_clock", radius: 1, includeY: true },
   { id: "society:snow_melter", radius: 10 },
   { id: "farmingforblockheads:chicken_nest", radius: 8, includeY: true },
+  { id: "society:growth_obelisk", radius: 3, includeY: false },
+  { id: "society:ribbit_hut", radius: 7, includeY: false },
 ];
 const magnifyingGlassBlockIds = magnifyingGlassBlocks.map((x) => x.id);
 
 BlockEvents.rightClicked(magnifyingGlassBlockIds, (e) => {
   const { item, hand, player, server, level, block } = e;
+  let resolvedBlock = block;
   if (hand == "MAIN_HAND" && item == "society:magnifying_glass") {
     global.addItemCooldown(player, item, (DELAY * REPETITIONS) / 2);
     player.swing();
@@ -31,17 +34,24 @@ BlockEvents.rightClicked(magnifyingGlassBlockIds, (e) => {
     );
     magnifyingGlassBlocks.forEach((hitBlock) => {
       if (hitBlock.id == block.id) {
+        if (block.id === "society:ribbit_hut") {
+          resolvedBlock = global.getOpposite(block.getProperties().get("facing"), block.getPos());
+        }
         for (let index = 0; index < REPETITIONS; index++) {
           server.scheduleInTicks(DELAY * index, () => {
             for (let pos of BlockPos.betweenClosed(
               new BlockPos(
-                block.x - hitBlock.radius,
-                block.y - hitBlock.radius,
-                block.z - hitBlock.radius
+                resolvedBlock.x - hitBlock.radius,
+                resolvedBlock.y - hitBlock.radius,
+                resolvedBlock.z - hitBlock.radius
               ),
-              [block.x + hitBlock.radius, block.y + hitBlock.radius, block.z + hitBlock.radius]
+              [
+                resolvedBlock.x + hitBlock.radius,
+                resolvedBlock.y + hitBlock.radius,
+                resolvedBlock.z + hitBlock.radius,
+              ]
             )) {
-              if (pos.y === block.y || hitBlock.includeY) {
+              if (pos.y === resolvedBlock.y || hitBlock.includeY) {
                 level.spawnParticles(
                   "supplementaries:stasis",
                   true,

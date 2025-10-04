@@ -112,7 +112,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -132,7 +132,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: 0.5d
 		}
 		{
@@ -152,7 +152,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 0.5d
 		}
 		{
@@ -172,7 +172,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 0.5d
 		}
 		{
@@ -192,7 +192,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 0.5d
 		}
 		{
@@ -212,8 +212,8 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			id: "0D400BA3A1431963"
@@ -232,7 +232,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: 2.0d
 		}
 		{
@@ -252,7 +252,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: 2.0d
 		}
 		{
@@ -272,7 +272,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -292,7 +292,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 2.0d
 		}
 		{
@@ -312,7 +312,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 2.0d
 		}
 		{
@@ -332,8 +332,8 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.0d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			id: "7D61ED4C5AB846F5"
@@ -352,7 +352,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: 3.5d
 		}
 		{
@@ -372,7 +372,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: 3.5d
 		}
 		{
@@ -392,7 +392,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: 3.5d
 		}
 		{
@@ -439,6 +439,7 @@
 				"1C8A31BFFB563A1E"
 				"1D34087B3DA48BFB"
 				"5CDE401866D43985"
+				"321F14C492AF6793"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -509,7 +510,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -522,6 +523,25 @@
 					tag: {
 						plort: {
 							id: "splendid_slimes:juicy"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			id: "321F14C492AF6793"
+			tasks: [{
+				id: "540B77D4A0C02FBF"
+				item: {
+					Count: 1
+					id: "splendid_slimes:plort"
+					tag: {
+						plort: {
+							id: "splendid_slimes:mechanic"
 						}
 					}
 				}

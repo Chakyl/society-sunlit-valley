@@ -1,0 +1,13 @@
+
+["Recall Potion"]
+	#Recall potion use time in ticks
+	"Use Time" = 32
+	#Recall potion cooldown in seconds
+	Cooldown = 0
+	#Whether or not you can recall to spawn from other dimensions
+	Interdimensional = true
+	#Does recall potion have enchantment glow
+	Glow = true
+	#Main ingredient used to brew recall potions
+	Ingredient = "society:ancient_fruit"
+

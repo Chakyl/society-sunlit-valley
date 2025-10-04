@@ -1,27 +1,33 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
   "ingredients": [
     {
-      "item": "windswept:holly_berries"
-    },
-    {
-      "item": "windswept:ginger_root"
-    },
-    {
-      "item": "windswept:roasted_chestnuts"
+      "tag": "forge:eggs"
     },
     {
       "item": "minecraft:sugar"
     },
     {
-      "tag": "forge:eggs"
+      "item": "windswept:holly_berries"
     },
     {
-      "tag": "forge:crops/wheat"
+      "item": "snowyspirit:ginger"
+    },
+    {
+      "item": "windswept:roasted_chestnuts"
+    },
+    {
+      "tag": "society:large_milk"
     }
   ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "recipe_book_tab": "meals",
   "result": {
-    "item": "windswept:christmas_pudding"
+    "item": "windswept:christmas_pudding",
+    "count": 1
   }
 }

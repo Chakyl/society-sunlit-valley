@@ -2,6 +2,7 @@
   "shop_id": "banker",
   "name": "shop.society_trading.banker",
   "texture": "numismatics:textures/block/bank_terminal/bank_terminal_front",
+  "jei_catalyst": { "item": "minecraft:cartography_table" },
   "villager_profession": "cartographer",
   "trades": [
     {
@@ -87,6 +88,18 @@
       },
       "numismatics_cost": 64,
       "trade_id": "banker_shipping_bin_monitor_for_cog"
+    },
+    {
+      "offer": {
+        "item": "whimsy_deco:phone",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "phone_for_crown"
     },
     {
       "offer": {

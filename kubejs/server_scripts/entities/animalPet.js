@@ -16,7 +16,7 @@ ItemEvents.entityInteracted((e) => {
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#55FF55",y:-90} 240 ${
+        } {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#55FF55",y:-90} 80 ${
           name ? name : capitalizedType
         } really loves you!`
       );

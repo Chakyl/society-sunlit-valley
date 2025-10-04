@@ -951,7 +951,6 @@
 				"30BF1FB39C2E05BC"
 				"776A318885DAA6A6"
 				"0CA7CEED7DD5B11F"
-				"499DF6BED7398D99"
 				"6703BC8EAABB52B1"
 				"764FBC5CFBBC2FE7"
 				"0EF5C98143E6755B"
@@ -968,7 +967,6 @@
 				"796B98C9ED5A6396"
 				"304690207BD68F1F"
 				"14489A69C742E752"
-				"6FFC215CB02D27BF"
 				"6DC29F70056D062D"
 				"3D58FD07A68909E5"
 				"1B386D9CF0CA8BD9"
@@ -976,6 +974,16 @@
 				"3AF919E950F2D35B"
 				"15C9B5E9F455688F"
 				"438F91A0DCA3DDB0"
+				"44E8B05A2E37DF17"
+				"7C26F52DDAE17DA8"
+				"6710747DA9E05E6E"
+				"178FE5D04C197282"
+				"11A2F44D6368B1E3"
+				"2F4164B3A2F143B6"
+				"3C49EFEC3F2A03F7"
+				"150AC5D9FABDEC26"
+				"083E30851FA52517"
+				"13BB9EFD3B941D98"
 			]
 			description: ["{ftbquests.chapter.banners.quest81.description1}"]
 			hide_dependency_lines: true
@@ -1453,16 +1461,6 @@
 			y: 9.0d
 		}
 		{
-			id: "6FFC215CB02D27BF"
-			tasks: [{
-				id: "5C14A249515646A9"
-				item: "veggiesdelight:sweet_potato_mochi"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 8.0d
-		}
-		{
 			id: "15C9B5E9F455688F"
 			tasks: [{
 				id: "3F5B760CF0459127"
@@ -1471,16 +1469,6 @@
 			}]
 			x: 10.0d
 			y: 7.0d
-		}
-		{
-			id: "499DF6BED7398D99"
-			tasks: [{
-				id: "06532ED09213C1A2"
-				item: "veggiesdelight:whole_roasted_cauliflower"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 6.0d
 		}
 		{
 			id: "6703BC8EAABB52B1"
@@ -1599,8 +1587,8 @@
 				item: "veggiesdelight:carrot_juice"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 10.0d
+			x: 13.5d
+			y: 12.0d
 		}
 		{
 			id: "4BBEED8A907B5919"
@@ -1639,8 +1627,124 @@
 				item: "veggiesdelight:sweet_potato_cupcake"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 10.5d
+			x: 14.0d
+			y: 11.0d
+		}
+		{
+			id: "150AC5D9FABDEC26"
+			tasks: [{
+				id: "4ACDF83042410619"
+				item: {
+					Count: 1
+					id: "veggiesdelight:cauliflower_kuku"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			id: "7C26F52DDAE17DA8"
+			tasks: [{
+				id: "165123733BB5A860"
+				item: "veggiesdelight:stuffed_zucchinis"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			id: "44E8B05A2E37DF17"
+			tasks: [{
+				id: "4D3C27792E82F6BC"
+				item: "veggiesdelight:turnip_beef_stew"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 11.0d
+		}
+		{
+			id: "11A2F44D6368B1E3"
+			tasks: [{
+				id: "45548B66E7C582C9"
+				item: {
+					Count: 1
+					id: "veggiesdelight:turnip_cake"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 11.0d
+		}
+		{
+			id: "6710747DA9E05E6E"
+			tasks: [{
+				id: "0D40180981C5B2EF"
+				item: "veggiesdelight:broccoli_soup"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			id: "3C49EFEC3F2A03F7"
+			tasks: [{
+				id: "08713DDC0FCF58A5"
+				item: {
+					Count: 1
+					id: "veggiesdelight:pasta_with_broccoli"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 11.0d
+		}
+		{
+			id: "2F4164B3A2F143B6"
+			tasks: [{
+				id: "0219F98847EDB6A5"
+				item: {
+					Count: 1
+					id: "veggiesdelight:zucchini_sandwich"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			id: "178FE5D04C197282"
+			tasks: [{
+				id: "04610EE7181E3899"
+				item: "veggiesdelight:broccoli_salad"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 12.0d
+		}
+		{
+			id: "13BB9EFD3B941D98"
+			tasks: [{
+				id: "1BC9F2C06F7E24B8"
+				item: "veggiesdelight:turnip_water"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 12.0d
+		}
+		{
+			id: "083E30851FA52517"
+			tasks: [{
+				id: "480F859178EA7263"
+				item: "veggiesdelight:turnip_salad"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 10.0d
 		}
 	]
 	title: "{ftbquests.chapter.banners.title}"

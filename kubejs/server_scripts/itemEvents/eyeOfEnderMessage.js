@@ -13,5 +13,5 @@ const eyeThrottle = ((temp) => (entity, tick, identifier) => {
 
 ItemEvents.rightClicked("minecraft:ender_eye", (e) => {
   if (eyeThrottle(e.player, 400, "eye_throttle")) return;
-  e.player.tell(Text.red("The End does not seem to exist in Sunlit Summit..."));
+  e.player.tell(Text.red("The End does not seem to exist in Sunlit Valley..."));
 });

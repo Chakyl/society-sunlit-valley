@@ -3382,8 +3382,8 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "moreminecarts:chunkrodite_block", count: 16 },
-          { item: "moreminecarts:chunkrodite", count: 48 },
+          { item: "minecraft:diamond", count: 8 },
+          { item: "quark:diamond_heart", count: 2 },
         ],
       },
       {

@@ -1,0 +1,29 @@
+{
+  "type": "vintagedelight:fermenting",
+  "processingTime": 3000,
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "ingredients": [
+    {
+      "item": "windswept:pinecone"
+    },
+    {
+      "item": "windswept:pinecone"
+    },
+    {
+      "item": "windswept:pinecone"
+    },
+    {
+      "item": "windswept:pinecone"
+    },
+    {
+      "item": "windswept:pinecone"
+    },
+    { "item": "society:maple_syrup" }
+  ],
+  "output": {
+    "count": 1,
+    "item": "windswept:pinecone_jam_bottle"
+  }
+}
