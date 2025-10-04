@@ -1,13 +1,13 @@
 //priority: 100
 console.info("[SOCIETY] loom.js loaded");
 
-global.loomRecipes = [
-  { input: "#minecraft:wool", output: ["society:canvas"] },
-  { input: "etcetera:cotton_flower", output: ["society:canvas"] },
-  { input: "society:fine_wool", output: ["society:merino_wool"] },
-  { input: "botania:mana_string", output: ["botania:manaweave_cloth"] },
-  { input: "crittersandcompanions:silk", output: ["society:merino_wool"] },
-];
+global.loomRecipes = new Map([
+  ["#minecraft:wool", { output: ["society:canvas"] }],
+  ["etcetera:cotton_flower", { output: ["society:canvas"] }],
+  ["society:fine_wool", { output: ["society:merino_wool"] }],
+  ["botania:mana_string", { output: ["botania:manaweave_cloth"] }],
+  ["crittersandcompanions:silk", { output: ["society:merino_wool"] }],
+]);
 
 StartupEvents.registry("block", (event) => {
   event
@@ -31,13 +31,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -68,7 +68,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-      
+
       if (upgraded && block.properties.get("mature") === "true" && rnd25()) {
         const furniture = Ingredient.of("#society:loot_furniture").itemIds;
         block.popItemFromFace(furniture[Math.floor(Math.random() * furniture.length)], facing);

@@ -1,7 +1,7 @@
 //priority: 100
 console.info("[SOCIETY] fishSmoker.js loaded");
 
-global.fishSmokerRecipes = [];
+global.fishSmokerRecipes = new Map([]);
 const smokableFish = [
   "aquaculture:atlantic_herring",
   "minecraft:pufferfish",
@@ -84,8 +84,7 @@ smokableFish.forEach((fish) => {
     if (fishId === "raw_snowflake") fishId = "frosty_fin";
     else fishId = fishId.substring(4, fishId.length);
   }
-  global.fishSmokerRecipes.push({
-    input: fish,
+  global.fishSmokerRecipes.set(fish, {
     output: [`1x society:smoked_${fishId}`],
   });
 });

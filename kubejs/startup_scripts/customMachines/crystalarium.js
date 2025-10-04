@@ -1,7 +1,7 @@
 //priority: 100
 console.info("[SOCIETY] crystalarium.js loaded");
 
-global.crystalariumCrystals = [];
+global.crystalariumCrystals = new Map([]);
 const crystals = [
   { item: "society:ocean_stone", time: 3 },
   { item: "society:opal", time: 3 },
@@ -60,8 +60,7 @@ const crystals = [
   { item: "minecraft:quartz", time: 1 },
 ];
 crystals.forEach((crystal) => {
-  global.crystalariumCrystals.push({
-    input: crystal.item,
+  global.crystalariumCrystals.set(crystal.item, {
     output: [`2x ${crystal.item}`],
     time: crystal.time,
   });
@@ -135,7 +134,7 @@ StartupEvents.registry("block", (event) => {
           );
         });
       }
-      
+
       global.handleBERightClick(
         "minecraft:block.amethyst_block.step",
         click,

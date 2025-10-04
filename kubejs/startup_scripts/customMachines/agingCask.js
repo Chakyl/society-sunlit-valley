@@ -1,7 +1,7 @@
 //priority: 100
 console.info("[SOCIETY] agingCask.js loaded");
 
-global.agingCaskRecipes = [];
+global.agingCaskRecipes = new Map([]);
 // Both global variables as items are registered based on these
 global.ageableProductInputs = [
   { item: "vinery:cristel_wine", name: "Cristel Wine", time: 10 },
@@ -133,8 +133,7 @@ global.ageableProductInputs = [
 ];
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");
-  global.agingCaskRecipes.push({
-    input: product.item,
+  global.agingCaskRecipes.set(product.item, {
     output: [`1x society:aged_${splitProduct[1]}`],
     time: product.time,
   });

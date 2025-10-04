@@ -1,10 +1,10 @@
 //priority: 100
 console.info("[SOCIETY] dehydrator.js loaded");
 
-global.dehydratorRecipes = [
-  { input: "nethervinery:crimson_grape", output: [`1x society:nether_raisins`] },
-  { input: "nethervinery:warped_grape", output: [`1x society:nether_raisins`] },
-];
+global.dehydratorRecipes = new Map([
+  ["nethervinery:crimson_grape", { output: [`1x society:nether_raisins`] }],
+  ["nethervinery:warped_grape", { output: [`1x society:nether_raisins`] }],
+]);
 
 const overworldGrapes = [
   "vinery:red_grape",
@@ -17,8 +17,7 @@ const overworldGrapes = [
   "vinery:savanna_grapes_red",
 ];
 overworldGrapes.forEach((item) => {
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:raisins`],
   });
 });
@@ -35,8 +34,7 @@ global.dehydratableMushrooms = [
 global.dehydratableMushroomOutputs = ["society:dried_shimmering_mushrooms"];
 global.dehydratableMushrooms.forEach((item) => {
   global.dehydratableMushroomOutputs.push(`society:dried_${item.split(":")[1]}`);
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:dried_${item.split(":")[1]}`],
   });
 });
@@ -74,8 +72,7 @@ global.dehydratableFruits = [
 global.dehydratableFruits.forEach((item) => {
   let itemId = item.split(":")[1];
   if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:dried_${itemId}`],
   });
 });
@@ -98,8 +95,7 @@ global.shimmeringMushrooms = [
   "botania:gray_mushroom",
 ];
 global.shimmeringMushrooms.forEach((item) => {
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:dried_shimmering_mushrooms`],
   });
 });
@@ -125,13 +121,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;

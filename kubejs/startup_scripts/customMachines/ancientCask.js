@@ -1,7 +1,7 @@
 //priority: 100
 console.info("[SOCIETY] ancientCask.js loaded");
 
-global.ancientCaskRecipes = [];
+global.ancientCaskRecipes = new Map([]);
 [
   { item: "vinery:cristel_wine", name: "Cristel Wine", time: 20 },
   {
@@ -131,8 +131,7 @@ global.ancientCaskRecipes = [];
   },
 ].forEach((product) => {
   const splitProduct = product.item.split(":");
-  global.ancientCaskRecipes.push({
-    input: `society:aged_${splitProduct[1]}`,
+  global.ancientCaskRecipes.set(`society:aged_${splitProduct[1]}`, {
     output: [`1x society:double_aged_${splitProduct[1]}`],
     time: product.time,
   });

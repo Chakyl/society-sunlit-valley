@@ -1,27 +1,27 @@
 //priority: 100
 console.info("[SOCIETY] espressoMachine.js loaded");
 
-global.espressoMachineRecipes = [
-  { input: "herbalbrews:ground_coffee", output: ["1x society:espresso"] },
-  { input: "society:large_milk", output: ["4x society:steamed_milk"] },
-  { input: "society:large_sheep_milk", output: ["4x society:steamed_milk"] },
-  { input: "society:large_goat_milk", output: ["4x society:steamed_milk"] },
-  { input: "society:large_warped_milk", output: ["4x society:steamed_milk"] },
-  { input: "society:large_buffalo_milk", output: ["4x society:steamed_milk"] },
-  { input: "society:milk", output: ["1x society:steamed_milk"] },
-  { input: "society:sheep_milk", output: ["1x society:steamed_milk"] },
-  { input: "society:goat_milk", output: ["1x society:steamed_milk"] },
-  { input: "society:warped_milk", output: ["1x society:steamed_milk"] },
-  { input: "society:buffalo_milk", output: ["1x society:steamed_milk"] },
-  {
-    input: "farmersdelight:milk_bottle",
-    output: ["1x society:steamed_milk", "1x minecraft:glass_bottle"],
-  },
-  {
-    input: "vintagedelight:nut_milk_bottle",
-    output: ["1x society:steamed_milk", "1x minecraft:glass_bottle"],
-  },
-];
+global.espressoMachineRecipes = new Map([
+  ["herbalbrews:ground_coffee", { output: ["1x society:espresso"] }],
+  ["society:large_milk", { output: ["4x society:steamed_milk"] }],
+  ["society:large_sheep_milk", { output: ["4x society:steamed_milk"] }],
+  ["society:large_goat_milk", { output: ["4x society:steamed_milk"] }],
+  ["society:large_warped_milk", { output: ["4x society:steamed_milk"] }],
+  ["society:large_buffalo_milk", { output: ["4x society:steamed_milk"] }],
+  ["society:milk", { output: ["1x society:steamed_milk"] }],
+  ["society:sheep_milk", { output: ["1x society:steamed_milk"] }],
+  ["society:goat_milk", { output: ["1x society:steamed_milk"] }],
+  ["society:warped_milk", { output: ["1x society:steamed_milk"] }],
+  ["society:buffalo_milk", { output: ["1x society:steamed_milk"] }],
+  [
+    "farmersdelight:milk_bottle",
+    { output: ["1x society:steamed_milk", "1x minecraft:glass_bottle"] },
+  ],
+  [
+    "vintagedelight:nut_milk_bottle",
+    { output: ["1x society:steamed_milk", "1x minecraft:glass_bottle"] },
+  ],
+]);
 
 StartupEvents.registry("block", (event) => {
   event

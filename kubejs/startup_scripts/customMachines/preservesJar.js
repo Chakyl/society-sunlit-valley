@@ -78,168 +78,66 @@ const roeFish = [
   { item: "crittersandcompanions:koi_fish" },
 ];
 
-global.preservesJarRecipes = [
-  {
-    input: "vintagedelight:gearo_berry",
-    output: ["vintagedelight:gearo_berry_mason_jar"],
-  },
-  {
-    input: "vintagedelight:peanut",
-    output: ["vintagedelight:nut_mash_mason_jar"],
-  },
-  {
-    input: "vintagedelight:cucumber",
-    output: ["vintagedelight:relish_mason_jar"],
-  },
-  {
-    input: "vintagedelight:ghost_pepper",
-    output: ["vintagedelight:pepper_jam_mason_jar"],
-  },
-  {
-    input: "minecraft:glow_berries",
-    output: ["vintagedelight:glow_berry_mason_jar"],
-  },
-  {
-    input: "minecraft:sweet_berries",
-    output: ["vintagedelight:sweet_berry_mason_jar"],
-  },
-  {
-    input: "minecraft:apple",
-    output: ["vintagedelight:apple_sauce_mason_jar"],
-  },
-  {
-    input: "society:ancient_fruit",
-    output: ["society:ancient_fruit_preserves"],
-  },
-  {
-    input: "pamhc2trees:dragonfruititem",
-    output: ["society:dragonfruit_preserves"],
-  },
-  {
-    input: "pamhc2trees:starfruititem",
-    output: ["society:starfruit_preserves"],
-  },
-  { input: "atmospheric:orange", output: ["society:orange_preserves"] },
-  { input: "pamhc2trees:bananaitem", output: ["society:banana_preserves"] },
-  { input: "pamhc2trees:mangoitem", output: ["society:mango_preserves"] },
-  { input: "pamhc2trees:lycheeitem", output: ["society:lychee_preserves"] },
-  { input: "pamhc2trees:peachitem", output: ["society:peach_preserves"] },
-  { input: "vinery:cherry", output: ["society:cherry_preserves"] },
-  {
-    input: "farm_and_charm:strawberry",
-    output: ["society:strawberry_preserves"],
-  },
-  { input: "pamhc2trees:plumitem", output: ["society:plum_preserves"] },
-  { input: "pamhc2trees:pawpawitem", output: ["society:pawpaw_preserves"] },
-  { input: "minecraft:melon_slice", output: ["society:melon_preserves"] },
-  {
-    input: "farmersdelight:pumpkin_slice",
-    output: ["society:pumpkin_preserves"],
-  },
-  { input: "vinery:red_grape", output: ["society:red_grape_preserves"] },
-  {
-    input: "vinery:jungle_grapes_red",
-    output: ["society:red_grape_preserves"],
-  },
-  {
-    input: "vinery:savanna_grapes_red",
-    output: ["society:red_grape_preserves"],
-  },
-  { input: "vinery:taiga_grapes_red", output: ["society:red_grape_preserves"] },
-  { input: "vinery:white_grape", output: ["society:white_grape_preserves"] },
-  {
-    input: "vinery:jungle_grapes_white",
-    output: ["society:white_grape_preserves"],
-  },
-  {
-    input: "vinery:savanna_grapes_white",
-    output: ["society:white_grape_preserves"],
-  },
-  {
-    input: "vinery:taiga_grapes_white",
-    output: ["society:white_grape_preserves"],
-  },
-  {
-    input: "society:blueberry",
-    output: ["society:blueberry_preserves"],
-  },
-  {
-    input: "atmospheric:passion_fruit",
-    output: ["society:passion_fruit_preserves"],
-  },
-  {
-    input: "atmospheric:currant",
-    output: ["society:currant_preserves"],
-  },
-  {
-    input: "atmospheric:yucca_fruit",
-    output: ["society:yucca_preserves"],
-  },
-  {
-    input: "atmospheric:aloe_leaves",
-    output: ["society:aloe_preserves"],
-  },
-  {
-    input: "minecraft:carrot",
-    output: ["society:carrot_preserves"],
-  },
-  {
-    input: "minecraft:potato",
-    output: ["society:potato_preserves"],
-  },
-  {
-    input: "minecraft:beetroot",
-    output: ["society:beetroot_preserves"],
-  },
-  {
-    input: "farm_and_charm:corn",
-    output: ["society:corn_preserves"],
-  },
-  {
-    input: "farmersdelight:tomato",
-    output: ["society:tomato_preserves"],
-  },
-  {
-    input: "pamhc2trees:hazelnutitem",
-    output: ["society:hazelnut_mash"],
-  },
-  {
-    input: "autumnity:foul_berries",
-    output: ["society:foul_berries_preserves"],
-  },
-  {
-    input: "minecraft:chorus_fruit",
-    output: ["society:chorus_fruit_preserves"],
-  },
-  {
-    input: "pamhc2trees:lemonitem",
-    output: ["society:lemon_preserves"],
-  },
-  { input: "farm_and_charm:onion", output: ["society:onion_preserves"] },
-  { input: "society:eggplant", output: ["society:eggplant_preserves"] },
-  {
-    input: "veggiesdelight:cauliflower",
-    output: ["society:cauliflower_preserves"],
-  },
-  {
-    input: "veggiesdelight:bellpepper",
-    output: ["society:bell_pepper_preserves"],
-  },
-  {
-    input: "veggiesdelight:sweet_potato",
-    output: ["society:sweet_potato_preserves"],
-  },
-  { input: "veggiesdelight:garlic", output: ["society:garlic_preserves"] },
-  { input: "snowyspirit:ginger", output: ["society:ginger_preserves"] },
-  { input: "society:salmonberry", output: ["society:salmonberry_preserves"] },
-  { input: "society:boysenberry", output: ["society:boysenberry_preserves"] },
-  { input: "society:cranberry", output: ["society:cranberry_preserves"] },
-  { input: "society:crystalberry", output: ["society:crystalberry_preserves"] },
-  { input: "windswept:wild_berries", output: ["society:wild_berries_preserves"] },
-  { input: "veggiesdelight:zucchini", output: ["society:zucchini_preserves"] },
-  { input: "veggiesdelight:turnip", output: ["society:turnip_preserves"] },
-  { input: "veggiesdelight:broccoli", output: ["society:broccoli_preserves"] },
-];
+global.preservesJarRecipes = new Map([
+  ["vintagedelight:gearo_berry", { output: ["vintagedelight:gearo_berry_mason_jar"] }],
+  ["vintagedelight:peanut", { output: ["vintagedelight:nut_mash_mason_jar"] }],
+  ["vintagedelight:cucumber", { output: ["vintagedelight:relish_mason_jar"] }],
+  ["vintagedelight:ghost_pepper", { output: ["vintagedelight:pepper_jam_mason_jar"] }],
+  ["minecraft:glow_berries", { output: ["vintagedelight:glow_berry_mason_jar"] }],
+  ["minecraft:sweet_berries", { output: ["vintagedelight:sweet_berry_mason_jar"] }],
+  ["minecraft:apple", { output: ["vintagedelight:apple_sauce_mason_jar"] }],
+  ["society:ancient_fruit", { output: ["society:ancient_fruit_preserves"] }],
+  ["pamhc2trees:dragonfruititem", { output: ["society:dragonfruit_preserves"] }],
+  ["pamhc2trees:starfruititem", { output: ["society:starfruit_preserves"] }],
+  ["atmospheric:orange", { output: ["society:orange_preserves"] }],
+  ["pamhc2trees:bananaitem", { output: ["society:banana_preserves"] }],
+  ["pamhc2trees:mangoitem", { output: ["society:mango_preserves"] }],
+  ["pamhc2trees:lycheeitem", { output: ["society:lychee_preserves"] }],
+  ["pamhc2trees:peachitem", { output: ["society:peach_preserves"] }],
+  ["vinery:cherry", { output: ["society:cherry_preserves"] }],
+  ["farm_and_charm:strawberry", { output: ["society:strawberry_preserves"] }],
+  ["pamhc2trees:plumitem", { output: ["society:plum_preserves"] }],
+  ["pamhc2trees:pawpawitem", { output: ["society:pawpaw_preserves"] }],
+  ["minecraft:melon_slice", { output: ["society:melon_preserves"] }],
+  ["farmersdelight:pumpkin_slice", { output: ["society:pumpkin_preserves"] }],
+  ["vinery:red_grape", { output: ["society:red_grape_preserves"] }],
+  ["vinery:jungle_grapes_red", { output: ["society:red_grape_preserves"] }],
+  ["vinery:savanna_grapes_red", { output: ["society:red_grape_preserves"] }],
+  ["vinery:taiga_grapes_red", { output: ["society:red_grape_preserves"] }],
+  ["vinery:white_grape", { output: ["society:white_grape_preserves"] }],
+  ["vinery:jungle_grapes_white", { output: ["society:white_grape_preserves"] }],
+  ["vinery:savanna_grapes_white", { output: ["society:white_grape_preserves"] }],
+  ["vinery:taiga_grapes_white", { output: ["society:white_grape_preserves"] }],
+  ["society:blueberry", { output: ["society:blueberry_preserves"] }],
+  ["atmospheric:passion_fruit", { output: ["society:passion_fruit_preserves"] }],
+  ["atmospheric:currant", { output: ["society:currant_preserves"] }],
+  ["atmospheric:yucca_fruit", { output: ["society:yucca_preserves"] }],
+  ["atmospheric:aloe_leaves", { output: ["society:aloe_preserves"] }],
+  ["minecraft:carrot", { output: ["society:carrot_preserves"] }],
+  ["minecraft:potato", { output: ["society:potato_preserves"] }],
+  ["minecraft:beetroot", { output: ["society:beetroot_preserves"] }],
+  ["farm_and_charm:corn", { output: ["society:corn_preserves"] }],
+  ["farmersdelight:tomato", { output: ["society:tomato_preserves"] }],
+  ["pamhc2trees:hazelnutitem", { output: ["society:hazelnut_mash"] }],
+  ["autumnity:foul_berries", { output: ["society:foul_berries_preserves"] }],
+  ["minecraft:chorus_fruit", { output: ["society:chorus_fruit_preserves"] }],
+  ["pamhc2trees:lemonitem", { output: ["society:lemon_preserves"] }],
+  ["farm_and_charm:onion", { output: ["society:onion_preserves"] }],
+  ["society:eggplant", { output: ["society:eggplant_preserves"] }],
+  ["veggiesdelight:cauliflower", { output: ["society:cauliflower_preserves"] }],
+  ["veggiesdelight:bellpepper", { output: ["society:bell_pepper_preserves"] }],
+  ["veggiesdelight:sweet_potato", { output: ["society:sweet_potato_preserves"] }],
+  ["veggiesdelight:garlic", { output: ["society:garlic_preserves"] }],
+  ["snowyspirit:ginger", { output: ["society:ginger_preserves"] }],
+  ["society:salmonberry", { output: ["society:salmonberry_preserves"] }],
+  ["society:boysenberry", { output: ["society:boysenberry_preserves"] }],
+  ["society:cranberry", { output: ["society:cranberry_preserves"] }],
+  ["society:crystalberry", { output: ["society:crystalberry_preserves"] }],
+  ["windswept:wild_berries", { output: ["society:wild_berries_preserves"] }],
+  ["veggiesdelight:zucchini", { output: ["society:zucchini_preserves"] }],
+  ["veggiesdelight:turnip", { output: ["society:turnip_preserves"] }],
+  ["veggiesdelight:broccoli", { output: ["society:broccoli_preserves"] }],
+]);
 roeFish.forEach((fish) => {
   const splitFish = fish.item.split(":");
   let fishId = splitFish[1];
@@ -248,8 +146,7 @@ roeFish.forEach((fish) => {
       if (fishId === "raw_snowflake") fishId = "frosty_fin";
       else fishId = fishId.substring(4, fishId.length);
     }
-    global.preservesJarRecipes.push({
-      input: `society:${fishId}_roe`,
+    global.preservesJarRecipes.set(`society:${fishId}_roe`, {
       output: [`society:aged_${fishId}_roe`],
     });
   }
@@ -276,7 +173,7 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state

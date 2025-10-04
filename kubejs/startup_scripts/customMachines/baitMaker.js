@@ -77,7 +77,7 @@ const baitFish = [
   "unusualfishmod:raw_eyelash",
   "crittersandcompanions:koi_fish",
 ];
-global.baitMakerRecipes = [];
+global.baitMakerRecipes = new Map([]);
 baitFish.forEach((fish) => {
   const splitFish = fish.split(":");
   let fishId = splitFish[1];
@@ -86,8 +86,7 @@ baitFish.forEach((fish) => {
       if (fishId === "raw_snowflake") fishId = "frosty_fin";
       else fishId = fishId.substring(4, fishId.length);
     }
-    global.baitMakerRecipes.push({
-      input: fish,
+    global.baitMakerRecipes.set(fish, {
       output: [`3x society:${fishId}_bait`],
     });
   }

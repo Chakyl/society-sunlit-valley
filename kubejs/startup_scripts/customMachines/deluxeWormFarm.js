@@ -1,12 +1,9 @@
 //priority: 100
 console.info("[SOCIETY] deluxeWormFarm.js loaded");
 
-global.deluxeWormFarmRecipes = [
-  {
-    input: "crabbersdelight:crab_trap_bait",
-    output: ["4x crabbersdelight:deluxe_crab_trap_bait"],
-  },
-];
+global.deluxeWormFarmRecipes = new Map[
+  ["crabbersdelight:crab_trap_bait", { output: ["4x crabbersdelight:deluxe_crab_trap_bait"] }]
+]();
 
 StartupEvents.registry("block", (event) => {
   event
