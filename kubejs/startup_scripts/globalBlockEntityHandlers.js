@@ -95,13 +95,12 @@ const setQuality = (newProperties, stage, itemQuality) => {
     newProperties.quality = itemQuality;
 };
 
-const getCanTakeItems = (item, properties, nbt, hasTag) => {
-  let itemCheck = item == nbt.data.recipe;
-  if (hasTag) {
+const getCanTakeItems = (item, recipe, properties, nbt, hasTag) => {
+  let itemCheck = recipe !== undefined;
+  if (hasTag && !itemCheck) {
     itemCheck = hasWoolTag(item.getTags().toList());
   }
   return (
-    nbt.data.recipe.equals("") &&
     itemCheck &&
     properties.get("working").toLowerCase() === "false" &&
     properties.get("mature").toLowerCase() === "false"
@@ -117,7 +116,7 @@ global.convertFromLegacy = (recipes, level, block) => {
   let newRecipe;
   if (nbt.data.contains("recipe") || !nbt.data.contains("type")) return;
   if (nbt.data.type > 0) {
-    newRecipe = Array.from(recipes.keys())[nbt.data.type];
+    newRecipe = Array.from(recipes.keys())[Number(nbt.data.type) + 1];
   }
   if (newRecipe) {
     let newProperties = level.getBlock(block.pos).getProperties();
@@ -198,11 +197,11 @@ global.artisanInsert = (
   let itemQuality;
   let useCount = 0;
   const recipe = recipes.get(`${item.id}`);
-  if (recipe || getCanTakeItems(item, block.properties, nbt, hasTag)) {
+  if (getCanTakeItems(item, recipe, block.properties, nbt, hasTag)) {
     newProperties = block.getProperties();
     successParticles(level, block);
     server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
-    hasTag
+    hasTag && recipe === undefined
       ? nbt.merge({ data: { recipe: "#minecraft:wool" } })
       : nbt.merge({ data: { recipe: item.id } });
     newProperties.working = false;
