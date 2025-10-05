@@ -765,8 +765,8 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    "crittersandcompanions:ender_pearl_from_pearl",
     "quark:building/crafting/furnaces/blackstone_furnace",
-    "untitledduckmod:crafting_shaped/pumpkin_pie",
     "oreganized:electrum_upgrade_smithing_template",
     "farmersdelight:bread_from_smelting",
     "vintagedelight:bread_from_smelting",

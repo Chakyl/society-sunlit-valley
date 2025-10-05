@@ -585,7 +585,28 @@ ServerEvents.tags("block", (e) => {
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);
   });
-
+  [
+    "refinedstorage:hollow_cover",
+    "refinedstorage:cover",
+    "refinedstorage:wireless_transmitter",
+    "refinedstorage:network_transmitter",
+    "refinedstorage:security_manager",
+    "refinedstorage:detector",
+    "refinedstorage:network_receiver",
+    "refinedstorage:relay",
+    "refinedstorage:crafting_grid",
+    "nedstorage:controller",
+    "refinedstorage:storage_monitor",
+    "refinedstorage:importer",
+    "refinedstorage:exporter",
+    "refinedstorage:interface",
+    "refinedstorage:external_storage",
+    "refinedstorage:64k_storage_block",
+    "refinedstorage:4k_storage_block",
+    "refinedstorage:cable",
+  ].forEach((item) => {
+    e.add("create:wrench_pickup", item);
+  });
   global.plushies.forEach((item) => {
     e.add("quality_foods:quality_blocks", item);
   });

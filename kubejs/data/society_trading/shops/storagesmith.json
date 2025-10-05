@@ -151,6 +151,18 @@
     },
     {
       "offer": {
+        "item": "create:wrench",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "storagesmith_wrench"
+    },
+    {
+      "offer": {
         "item": "refinedstorage:controller",
         "count": 1
       },
