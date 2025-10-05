@@ -1,9 +1,9 @@
 //priority: 100
 console.info("[SOCIETY] deluxeWormFarm.js loaded");
 
-global.deluxeWormFarmRecipes = new Map[
-  ["crabbersdelight:crab_trap_bait", { output: ["4x crabbersdelight:deluxe_crab_trap_bait"] }]
-]();
+global.deluxeWormFarmRecipes = new Map([
+  ["crabbersdelight:crab_trap_bait", { output: ["4x crabbersdelight:deluxe_crab_trap_bait"] }],
+]);
 
 StartupEvents.registry("block", (event) => {
   event
@@ -73,7 +73,7 @@ StartupEvents.registry("block", (event) => {
 
       if (upgraded && block.properties.get("working") === "false") {
         let nbt = block.getEntityData();
-        nbt.merge({ data: { type: 1, stage: 0 } });
+        nbt.merge({ data: { recipe: "crabbersdelight:crab_trap_bait", stage: 0 } });
         block.setEntityData(nbt);
         block.set(block.id, {
           facing: block.properties.get("facing"),
@@ -87,7 +87,7 @@ StartupEvents.registry("block", (event) => {
       global.handleBERandomTick(tick, rnd50(), 2);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
     }).blockstateJson = {
     multipart: [
       {

@@ -184,7 +184,7 @@ StartupEvents.registry("block", (event) => {
       global.handleTapperRandomTick(tick);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         if (entity.block.properties.get("error") !== "true")
           global.handleBETick(entity, global.tapperRecipes, 7);

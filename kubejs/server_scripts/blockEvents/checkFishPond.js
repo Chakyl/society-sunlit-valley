@@ -1,19 +1,18 @@
 console.info("[SOCIETY] checkFishPond.js loaded");
 
-const getRequestedItems = (fish, population) => {
+const getRequestedItems = (type, population) => {
   let requestedItems = {};
-  fish.quests.forEach((quest) => {
+  global.fishPondDefinitions.get(type).quests.forEach((quest) => {
     if (quest.population == population) {
       requestedItems = quest.requestedItems;
     }
   });
   return requestedItems;
 };
-
-const sendFishPondMessage = (clickEvent, recipes, population, maxPopulation) => {
+// type: "", quest_id: 0, population: 0, max_population: 3
+const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
-  const fishId = String(Item.of(global.getArtisanRecipe(recipes, block, true).item).id);
-  let fishName = fishId
+  let fishName = type
     .split(":")[1]
     .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
   if (fishName.includes("Raw ")) {
@@ -55,7 +54,7 @@ const sendFishPondMessage = (clickEvent, recipes, population, maxPopulation) => 
         type: "item",
         x: 8,
         y: -84,
-        item: fishId,
+        item: type,
         alignX: "center",
         alignY: "bottom",
       },
@@ -104,40 +103,34 @@ const sendFishPondMessage = (clickEvent, recipes, population, maxPopulation) => 
 
 BlockEvents.rightClicked("society:fish_pond", (e) => {
   const { item, block, player } = e;
-  const properties = block.properties;
-  const mature = properties.get("mature").toLowerCase();
-  const valid = properties.get("valid").toLowerCase();
-  const population = properties.get("population").toLowerCase();
-  const max_population = properties.get("max_population").toLowerCase();
-  const type = properties.get("type").toLowerCase();
-  const quest = properties.get("quest").toLowerCase();
-  const quest_id = properties.get("quest_id").toLowerCase();
-
   if (!player.isCrouching()) {
     e.server.scheduleInTicks(1, () => {
+      const properties = block.getProperties();
+      const mature = properties.get("mature").toLowerCase();
+      const valid = properties.get("valid").toLowerCase();
+      const quest = properties.get("quest").toLowerCase();
+      const { type, population, max_population, quest_id } = block.getEntityData().data;
       if (mature == "false") {
-        if (type !== "0") {
-          sendFishPondMessage(e, global.fishPondDefinitions, population, max_population);
+        if (!type.equals("")) {
+          sendFishPondMessage(e, type, population, max_population);
         } else if (!(item && item.hasTag("minecraft:fishes"))) {
           player.tell(
             Text.gray("This Fish Pond is Empty! Right click with a fish to place it in the pond.")
           );
         }
-        if (type !== "0" && item && item.hasTag("minecraft:fishes")) {
-          if (global.fishPondDefinitions[Number(type) - 1].item !== item.id)
-            player.tell(Text.red(`🐟: We don't like that fish here...`));
+        if (!type.equals("") && item && item.hasTag("minecraft:fishes")) {
+          if (type !== item.id) player.tell(Text.red(`🐟: We don't like that fish here...`));
         }
       }
       if (mature === "false" && quest === "true") {
-        const questContent = getRequestedItems(
-          global.fishPondDefinitions[type - 1],
-          max_population
-        )[quest_id];
-        const questItem = Item.of(questContent.item).displayName;
-        player.tell(
-          Text.green(`🐟: We'd feel more at home with §3${questContent.count}§r of these:`)
-        );
-        player.tell(questItem);
+        const questContent = getRequestedItems(type, max_population)[quest_id];
+        if (questContent) {
+          const questItem = Item.of(questContent.item).displayName;
+          player.tell(
+            Text.green(`🐟: We'd feel more at home with §3${questContent.count}§r of these:`)
+          );
+          player.tell(questItem);
+        }
       }
       if (valid === "false") {
         player.tell(

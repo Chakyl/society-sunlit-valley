@@ -180,8 +180,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0)
-        .set(integerProperty.create("type", 0, global.preservesJarRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -219,7 +217,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.preservesJarRecipes, 3);
       });

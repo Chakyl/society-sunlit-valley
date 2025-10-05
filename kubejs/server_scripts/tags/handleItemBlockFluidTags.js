@@ -611,8 +611,8 @@ ServerEvents.tags("block", (e) => {
   ].forEach((wool) => {
     e.add("minecraft:mineable/axe", wool);
   });
-  global.tapperRecipes.forEach((recipe) => {
-    e.add("society:tappable_blocks", recipe.input);
+  Array.from(global.tapperRecipes.keys()).forEach((key) => {
+    e.add("society:tappable_blocks", key);
   });
   const flowersMissingBlockTags = [
     "meadow:eriophorum_tall",

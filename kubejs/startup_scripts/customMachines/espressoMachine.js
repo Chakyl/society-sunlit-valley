@@ -57,25 +57,24 @@ StartupEvents.registry("block", (event) => {
       if (player.isFake()) return;
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
-        global.espressoMachineRecipes.forEach((recipe, index) => {
-          // Handle steamed milk
-          if (recipe.output[0].includes("steamed_milk") && item == recipe.input) {
-            if (!player.isCreative()) item.count--;
-            server.runCommandSilent(
-              `playsound minecraft:block.lava.extinguish block @a ${player.x} ${player.y} ${player.z}`
-            );
-            global.giveExperience(server, player, "farming", 10);
-            global.espressoMachineRecipes[index].output.forEach((e) => {
-              block.popItemFromFace(e, block.properties.get("facing"));
-            });
-          }
-        });
+        let recipe = global.espressoMachineRecipes.get(`${item.id}`);
+        // Handle steamed milk
+        if (recipe && recipe.output[0].includes("steamed_milk")) {
+          if (!player.isCreative()) item.count--;
+          server.runCommandSilent(
+            `playsound minecraft:block.lava.extinguish block @a ${player.x} ${player.y} ${player.z}`
+          );
+          global.giveExperience(server, player, "farming", 10);
+          recipe.output.forEach((e) => {
+            block.popItemFromFace(e, block.properties.get("facing"));
+          });
+        }
       }
 
       global.handleBERightClick(
         "doapi:brewstation_whistle",
         click,
-        [global.espressoMachineRecipes[0]],
+        new Map([["herbalbrews:ground_coffee", { output: ["1x society:espresso"] }]]),
         4,
         true
       );
@@ -84,7 +83,7 @@ StartupEvents.registry("block", (event) => {
       global.handleBERandomTick(tick, true, 1);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
     }).blockstateJson = {
     multipart: [
       {

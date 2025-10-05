@@ -80,18 +80,20 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
   const blockStage = nbt.data.stage;
   const status = maxInput !== -1 ? "Requires more input for" : "Currently making";
   let primaryOutput;
-  let recipe;
+  let recipe = nbt.data.recipe;
   let id;
-
-  if (recipes === "society:battery") id = "society:battery";
-  else {
-    recipe = global.getArtisanRecipe(recipes, block, false);
-    if (!recipe) return;
-    id = String(Item.of(recipe.output[0]).id);
+  let duration;
+  const isChargingRod = machineId.equals("society:charging_rod");
+  if (!recipe && !isChargingRod) return;
+  if (isChargingRod) {
+    id = "society:battery";
+    duration = stageCount;
+  } else {
+    id = String(Item.of(recipes.get(recipe).output[0]).id);
     primaryOutput = idMap.get(id);
+    duration = recipes.get(recipe).time || stageCount;
+    if (recipe === item) return;
   }
-  if (recipe?.input === item) return;
-  let duration = (nbt.data.type && global.getArtisanRecipe(recipes, block, false).time) || stageCount;
   if (
     machineId == "society:aging_cask" &&
     block.properties.get("upgraded").toLowerCase() === "true"
@@ -203,7 +205,7 @@ BlockEvents.rightClicked(
     })[0];
     if (block.properties.get("mature").toLowerCase() === "false") {
       let nbt = block.getEntityData();
-      if (nbt.data.type == 0) return
+      if (nbt.data.type == 0) return;
       sendProgressMessage(
         e,
         machine.recipes,

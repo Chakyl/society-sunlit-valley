@@ -225,7 +225,7 @@ StartupEvents.registry("block", (event) => {
       } else player.tell(Text.red(`You need the Farming skill "Ancient Aging" to use this...`));
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.ancientCaskRecipes, 20);
       });

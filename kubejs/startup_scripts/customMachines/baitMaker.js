@@ -97,7 +97,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("type", 0, global.baitMakerRecipes.length))
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
     .soundType("copper")
@@ -114,20 +113,18 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .rightClick((click) => {
       global.handleBERightClick("aquaculture:fish_death", click, global.baitMakerRecipes, 1);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.baitMakerRecipes, 1);
       });
