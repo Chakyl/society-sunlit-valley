@@ -14,5 +14,5 @@
   { input: "cobblemon:white_mint_leaf", output: ["6x cobblemon:white_mint_seeds"] },
   { input: "cobblemon:vivichoke", output: ["6x cobblemon:vivichoke_seeds"] },
 ].forEach((recipe) => {
-  global.seedMakerRecipes.push(recipe);
+  global.seedMakerRecipes.set(recipe.input, { output: recipe.output });
 });

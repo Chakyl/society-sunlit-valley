@@ -27,6 +27,26 @@
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "farmersdelight:pumpkin_slice",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "minecraft:pumpkin",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:earth_crystal",
+      "amount": 7
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:green_apricorn_seed",
+      "amount": 64
+    },
     "item:cobblemon:blue_apricorn_seed",
     {
       "type": "item",
@@ -68,7 +88,6 @@
     "item:cobblemon:relic_coin_sack",
     "item:cobblemon:apricorn_log",
     "item:society:pine_tar",
-    "item:society:earth_crystal",
     "item:minecraft:feather",
     {
       "type": "item",
@@ -1458,6 +1477,7 @@
     "item:windswept:lavender_bale"
   ],
   "craft_history": [
+    "farmersdelight:cutting_board",
     "minecraft:kjs/society_preserves_jar",
     "minecraft:coal_block",
     "meadow:fire_log",

@@ -9,6 +9,21 @@ const formatNumber = (number, quality) => {
   }
   return global.formatPrice(value);
 };
+
+const getAttributeStr = (attribute) => {
+  switch (attribute) {
+    case "crop":
+      return "🔱 §6Farmer product";
+    case "wood":
+      return "✎ §6Artisan product";
+    case "gem":
+      return "🎣 §6Geologist product";
+    case "meat":
+      return "🗡 §6Adventurer product";
+    default:
+      console.log(`Invalid attribute`);
+  }
+};
 global.addPriceTooltip = (tooltip, sellable, attribute) => {
   let value = sellable.value;
   tooltip.addAdvanced(sellable.item, (item, advanced, text) => {
@@ -68,20 +83,6 @@ ItemEvents.tooltip((tooltip) => {
         console.log(`Invalid coin`);
     }
     return formatNumber(value * count * (stackSize || 1));
-  };
-  const getAttributeStr = (attribute) => {
-    switch (attribute) {
-      case "crop":
-        return "🔱 §6Farmer product";
-      case "wood":
-        return "✎ §6Artisan product";
-      case "gem":
-        return "🎣 §6Geologist product";
-      case "meat":
-        return "🗡 §6Adventurer product";
-      default:
-        console.log(`Invalid attribute`);
-    }
   };
   const coinTooltips = [
     "numismatics:spur",
