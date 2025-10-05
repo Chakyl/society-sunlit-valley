@@ -1,24 +1,24 @@
 //priority: 100
 console.info("[SOCIETY] mayonnaiseMachine.js loaded");
 
-global.cheesePressRecipes = [
-  { input: "society:sheep_milk", output: ["1x meadow:piece_of_sheep_cheese"] },
-  { input: "society:milk", output: ["1x meadow:piece_of_cheese"] },
-  { input: "society:buffalo_milk", output: ["1x meadow:piece_of_buffalo_cheese"] },
-  { input: "society:goat_milk", output: ["1x meadow:piece_of_goat_cheese"] },
-  { input: "society:warped_milk", output: ["1x meadow:piece_of_warped_cheese"] },
-  { input: "society:tri_bull_milk", output: ["1x farmlife:tribull_cheese_wedge"] },
-  { input: "society:grain_milk", output: ["1x meadow:piece_of_grain_cheese"] },
-  { input: "society:amethyst_milk", output: ["1x meadow:piece_of_amethyst_cheese"] },
-  { input: "society:large_sheep_milk", output: ["1x meadow:sheep_cheese_block"] },
-  { input: "society:large_milk", output: ["1x meadow:cheese_block"] },
-  { input: "society:large_buffalo_milk", output: ["1x meadow:buffalo_cheese_block"] },
-  { input: "society:large_goat_milk", output: ["1x meadow:goat_cheese_block"] },
-  { input: "society:large_warped_milk", output: ["1x meadow:warped_cheese_block"] },
-  { input: "society:large_tri_bull_milk", output: ["1x farmlife:tribull_cheese_wheel"] },
-  { input: "society:large_grain_milk", output: ["1x meadow:grain_cheese_block"] },
-  { input: "society:large_amethyst_milk", output: ["1x meadow:amethyst_cheese_block"] },
-];
+global.cheesePressRecipes = new Map([
+  ["society:sheep_milk", { output: ["1x meadow:piece_of_sheep_cheese"] }],
+  ["society:milk", { output: ["1x meadow:piece_of_cheese"] }],
+  ["society:buffalo_milk", { output: ["1x meadow:piece_of_buffalo_cheese"] }],
+  ["society:goat_milk", { output: ["1x meadow:piece_of_goat_cheese"] }],
+  ["society:warped_milk", { output: ["1x meadow:piece_of_warped_cheese"] }],
+  ["society:tri_bull_milk", { output: ["1x farmlife:tribull_cheese_wedge"] }],
+  ["society:grain_milk", { output: ["1x meadow:piece_of_grain_cheese"] }],
+  ["society:amethyst_milk", { output: ["1x meadow:piece_of_amethyst_cheese"] }],
+  ["society:large_sheep_milk", { output: ["1x meadow:sheep_cheese_block"] }],
+  ["society:large_milk", { output: ["1x meadow:cheese_block"] }],
+  ["society:large_buffalo_milk", { output: ["1x meadow:buffalo_cheese_block"] }],
+  ["society:large_goat_milk", { output: ["1x meadow:goat_cheese_block"] }],
+  ["society:large_warped_milk", { output: ["1x meadow:warped_cheese_block"] }],
+  ["society:large_tri_bull_milk", { output: ["1x farmlife:tribull_cheese_wheel"] }],
+  ["society:large_grain_milk", { output: ["1x meadow:grain_cheese_block"] }],
+  ["society:large_amethyst_milk", { output: ["1x meadow:amethyst_cheese_block"] }],
+]);
 
 StartupEvents.registry("block", (event) => {
   event
@@ -26,10 +26,8 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 2))
     .property(integerProperty.create("quality", 0, 3))
     .soundType("copper")
-    .property(integerProperty.create("type", 0, global.cheesePressRecipes.length))
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -48,8 +46,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 2), 0)
-        .set(integerProperty.create("type", 0, global.cheesePressRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
@@ -57,8 +53,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 2), 0)
-        .set(integerProperty.create("type", 0, global.cheesePressRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
@@ -84,11 +78,9 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: facing,
-            type: block.properties.get("type"),
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
             quality: block.properties.get("quality"),
           });
         }
@@ -107,7 +99,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.cheesePressRecipes, 2);
       });

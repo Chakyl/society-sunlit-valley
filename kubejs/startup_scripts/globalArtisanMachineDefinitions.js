@@ -112,3 +112,58 @@ global.artisanMachineDefinitions = [
 ];
 
 global.artisanMachineIds = global.artisanMachineDefinitions.map((x) => x.id);
+
+global.typeConversionMap = [
+  {
+    id: "society:loom",
+    output: ["society:merino_wool"],
+  },
+  {
+    id: "society:cheese_press",
+    output: ["society:aged_warped_cheese_block"],
+  },
+  {
+    id: "society:aging_cask",
+    output: ["society:aged_star_coquito"],
+  },
+  {
+    id: "society:ancient_cask",
+    output: ["society:double_aged_star_coquito"],
+  },
+  {
+    id: "society:deluxe_worm_farm",
+    output: ["4x crabbersdelight:deluxe_crab_trap_bait"],
+  },
+  {
+    id: "society:fish_smoker",
+    output: ["society:smoked_spindlefish"],
+  },
+  {
+    id: "society:dehydrator",
+    output: ["society:dried_starfruit"],
+  },
+  {
+    id: "society:mayonnaise_machine",
+    output: ["society:supreme_mayonnaise"],
+  },
+  {
+    id: "society:preserves_jar",
+    output: ["society:starfruit_preserves"],
+  },
+  {
+    id: "society:charging_rod",
+    output: ["society:battery"],
+  },
+  {
+    id: "society:tapper",
+    output: ["society:pine_tar"],
+  },
+  {
+    id: "society:espresso_machine",
+    output: ["society:espresso"],
+  },
+  {
+    id: "society:recycling_machine",
+    output: ["4x society:sparkstone"],
+  },
+];

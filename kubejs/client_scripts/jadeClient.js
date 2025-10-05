@@ -29,18 +29,15 @@ global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
 global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (accessor.getBlock().id !== "society:fish_pond") return;
   const properties = accessor.getBlockState();
-  const type = properties.getValue(
-    $IntegerProperty.create("type", 0, global.fishPondDefinitions.length)
-  );
-  if (Number(type) === 0) return;
-  let fish = global.fishPondDefinitions[Number(type) - 1].item;
-  const population = properties.getValue($IntegerProperty.create("population", 0, 10));
-  const maxPopulation = properties.getValue($IntegerProperty.create("max_population", 0, 10));
+  const nbt = accessor.getServerData();
+
+  if (nbt.type.equals("")) return;
+  let fish = nbt.type;
   const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
   let fishIcons = "";
 
-  for (let index = 0; index < maxPopulation; index++) {
-    if (index < population) fishIcons += "§3🐟§r";
+  for (let index = 0; index < nbt.max_population; index++) {
+    if (index < nbt.population) fishIcons += "§3🐟§r";
     else fishIcons += "§7🐟§r";
   }
   let blockName = accessor.getBlock().getDescriptionId();
@@ -63,26 +60,21 @@ global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
 global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (!global.artisanMachineIds.includes(accessor.getBlock().id)) return;
   const properties = accessor.getBlockState();
+  const nbt = accessor.getServerData();
+  if (!nbt) return;
   const machine = global.artisanMachineDefinitions.filter((obj) => {
     return obj.id === accessor.getBlock().id;
   })[0];
   if (!machine) return;
-  const type =
-    accessor.getBlock().id === "society:charging_rod"
-      ? 1
-      : properties.getValue($IntegerProperty.create("type", 0, machine.recipes.length));
-  const working = properties.getValue($BooleanProperty.create("working"));
-  if (Number(type) === 0 || !working) return;
+  const isChargingRod = accessor.getBlock().id === "society:charging_rod";
+  if (nbt.recipe.equals("") && !isChargingRod) return;
 
-  const recipe =
-    accessor.getBlock().id === "society:charging_rod"
-      ? {
-          output: ["society:battery"],
-        }
-      : machine.recipes[Number(type) - 1];
-  const stage = properties.getValue(
-    $IntegerProperty.create("stage", 0, Math.max(machine.stageCount, machine.maxInput))
-  );
+  const recipe = isChargingRod
+    ? {
+        output: ["society:battery"],
+      }
+    : machine.recipes.get(nbt.recipe);
+  const stage = nbt.stage;
   const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
   let duration = recipe.time || machine.stageCount;
   if (accessor.getBlock().id == "society:aging_cask" && upgraded) {
@@ -93,7 +85,7 @@ global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) =
     if (index < stage) progressIcons += "⬛";
     else progressIcons += "⬜";
   }
-  const progress = `Progress: ${stage}/${duration} `;
+  const progress = `Progress: ${Number(stage)}/${duration} `;
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   const helper = tooltip.getElementHelper();

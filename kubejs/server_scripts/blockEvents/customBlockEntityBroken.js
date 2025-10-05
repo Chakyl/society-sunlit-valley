@@ -9,21 +9,21 @@ const handleBrokenMachine = (block) => {
   if (machine.upgrade && block.properties.get("upgraded").toLowerCase() == "true") {
     block.popItem(machine.upgrade);
   }
-  if (!block.properties.get("type")) return;
-  const currentRecipe = machine.recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+  const nbt = block.getEntityData();
+  const currentRecipe = machine.recipes.get(nbt.data.recipe);
   if (block.properties.get("mature").toLowerCase() == "true") {
     currentRecipe.output.forEach((element) => {
       block.popItem(element);
     });
   } else if (!["society:charging_rod", "society:tapper"].includes(block.id)) {
-    let stage = Number(block.properties.get("stage"));
+    let stage = Number(nbt.data.stage);
     if (
       currentRecipe &&
       block.id == "society:ancient_cask" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      if (working) block.popItem(Item.of(`4x ${currentRecipe.input}`));
-      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`4x ${nbt.data.recipe}`));
+      else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
     } else if (
       block.id == "society:deluxe_worm_farm" &&
       block.properties.get("upgraded").toLowerCase() == "true"
@@ -34,11 +34,11 @@ const handleBrokenMachine = (block) => {
       block.id == "society:preserves_jar" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      if (working) block.popItem(Item.of(`3x ${currentRecipe.input}`));
-      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`3x ${nbt.data.recipe}`));
+      else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
     } else if (currentRecipe) {
-      if (working) block.popItem(Item.of(`${machine.maxInput}x ${currentRecipe.input}`));
-      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`${machine.maxInput}x ${nbt.data.recipe}`));
+      else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
     }
   }
 };

@@ -1,12 +1,9 @@
 //priority: 100
 console.info("[SOCIETY] deluxeWormFarm.js loaded");
 
-global.deluxeWormFarmRecipes = [
-  {
-    input: "crabbersdelight:crab_trap_bait",
-    output: ["4x crabbersdelight:deluxe_crab_trap_bait"],
-  },
-];
+global.deluxeWormFarmRecipes = new Map([
+  ["crabbersdelight:crab_trap_bait", { output: ["4x crabbersdelight:deluxe_crab_trap_bait"] }],
+]);
 
 StartupEvents.registry("block", (event) => {
   event
@@ -14,8 +11,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 4))
-    .property(integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length))
     .soundType("copper")
     .box(2, 0, 2, 14, 15, 14)
     .defaultCutout()
@@ -31,17 +26,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 4), 0)
-        .set(integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 4), 0)
-        .set(integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -65,11 +56,9 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: block.properties.get("facing"),
-            type: block.properties.get("type"),
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         }
       }
@@ -83,13 +72,14 @@ StartupEvents.registry("block", (event) => {
       );
 
       if (upgraded && block.properties.get("working") === "false") {
+        let nbt = block.getEntityData();
+        nbt.merge({ data: { recipe: "crabbersdelight:crab_trap_bait", stage: 0 } });
+        block.setEntityData(nbt);
         block.set(block.id, {
           facing: block.properties.get("facing"),
-          type: "1",
           working: true,
           mature: false,
           upgraded: upgraded,
-          stage: "0",
         });
       }
     })
@@ -97,7 +87,7 @@ StartupEvents.registry("block", (event) => {
       global.handleBERandomTick(tick, rnd50(), 2);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
     }).blockstateJson = {
     multipart: [
       {
