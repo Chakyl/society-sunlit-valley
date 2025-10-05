@@ -67,7 +67,8 @@ global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) =
   })[0];
   if (!machine) return;
   const isChargingRod = accessor.getBlock().id === "society:charging_rod";
-  if (nbt.recipe.equals("") && !isChargingRod) return;
+  const working = properties.getValue($BooleanProperty.create("working"));
+  if (!working || (nbt.recipe.equals("") && !isChargingRod)) return;
 
   const recipe = isChargingRod
     ? {
