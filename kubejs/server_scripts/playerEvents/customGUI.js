@@ -17,7 +17,7 @@ PlayerEvents.tick((e) => {
         clockIcon: {
           type: "item",
           x: 8,
-          y: 22,
+          y: 8,
           item: "minecraft:clock",
           alignX: "left",
           alignY: "top",
