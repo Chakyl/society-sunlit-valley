@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:vivichoke",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "cobblemon:vivichoke_seeds",
+              "properties": {
+                "age": "7"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

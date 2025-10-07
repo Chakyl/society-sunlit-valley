@@ -23,6 +23,9 @@ global.cobbleGeology = [
   { item: "cobblemon:tumblestone", value: 8 },
   { item: "cobblemon:black_tumblestone", value: 12 },
   { item: "cobblemon:sky_tumblestone", value: 16 },
+  { item: "cobblemon:tumblestone_block", value: 32 },
+  { item: "cobblemon:black_tumblestone_block", value: 48 },
+  { item: "cobblemon:sky_tumblestone_block", value: 64 },
   { item: "cobblemon:normal_gem", value: 512 },
   { item: "cobblemon:fire_gem", value: 512 },
   { item: "cobblemon:water_gem", value: 512 },
@@ -52,7 +55,8 @@ global.cobbleGeology = [
   { item: "cobblemon:dawn_stone", value: 806 },
   { item: "cobblemon:ice_stone", value: 1020 },
 ];
-global.cobbleForaging = [
+
+global.cobbleCrops = [
   { item: "cobblemon:big_root", value: 4 },
   { item: "cobblemon:energy_root", value: 16 },
   { item: "cobblemon:medicinal_leek", value: 2 },
@@ -63,6 +67,20 @@ global.cobbleForaging = [
   { item: "cobblemon:pink_apricorn", value: 8 },
   { item: "cobblemon:black_apricorn", value: 8 },
   { item: "cobblemon:white_apricorn", value: 8 },
+  { item: "cobblemon:white_mint_leaf", value: 44 },
+  { item: "cobblemon:green_mint_leaf", value: 44 },
+  { item: "cobblemon:pink_mint_leaf", value: 44 },
+  { item: "cobblemon:cyan_mint_leaf", value: 44 },
+  { item: "cobblemon:blue_mint_leaf", value: 44 },
+  { item: "cobblemon:red_mint_leaf", value: 44 },
+  { item: "cobblemon:vivichoke", value: 46 },
+  { item: "cobblemon:revival_herb", value: 52 },
+  { item: "cobblemon:mirror_herb", value: 120 },
+  { item: "cobblemon:mental_herb", value: 100 },
+  { item: "cobblemon:power_herb", value: 100 },
+  { item: "cobblemon:white_herb", value: 100 },
+];
+global.commonCobblemonBerries = [
   { item: "cobblemon:oran_berry", value: 4 },
   { item: "cobblemon:cheri_berry", value: 4 },
   { item: "cobblemon:chesto_berry", value: 4 },
@@ -92,6 +110,11 @@ global.cobbleForaging = [
   { item: "cobblemon:colbur_berry", value: 4 },
   { item: "cobblemon:babiri_berry", value: 4 },
   { item: "cobblemon:chilan_berry", value: 4 },
+];
+global.commonCobblemonBerries.forEach((recipe) => {
+  global.cobbleCrops.push(recipe);
+});
+global.uncommonCobblemonBerries = [
   { item: "cobblemon:roseli_berry", value: 6 },
   { item: "cobblemon:leppa_berry", value: 8 },
   { item: "cobblemon:lum_berry", value: 8 },
@@ -106,6 +129,11 @@ global.cobbleForaging = [
   { item: "cobblemon:magost_berry", value: 16 },
   { item: "cobblemon:rabuta_berry", value: 16 },
   { item: "cobblemon:nomel_berry", value: 16 },
+];
+global.uncommonCobblemonBerries.forEach((recipe) => {
+  global.cobbleCrops.push(recipe);
+});
+global.rareCobblemonBerries = [
   { item: "cobblemon:enigma_berry", value: 32 },
   { item: "cobblemon:pomeg_berry", value: 32 },
   { item: "cobblemon:kelpsy_berry", value: 32 },
@@ -118,6 +146,11 @@ global.cobbleForaging = [
   { item: "cobblemon:watmel_berry", value: 32 },
   { item: "cobblemon:durin_berry", value: 32 },
   { item: "cobblemon:belue_berry", value: 32 },
+];
+global.rareCobblemonBerries.forEach((recipe) => {
+  global.cobbleCrops.push(recipe);
+});
+global.legendaryCobblemonBerries = [
   { item: "cobblemon:kee_berry", value: 64 },
   { item: "cobblemon:maranga_berry", value: 64 },
   { item: "cobblemon:hopo_berry", value: 16 },
@@ -133,6 +166,22 @@ global.cobbleForaging = [
   { item: "cobblemon:jaboca_berry", value: 64 },
   { item: "cobblemon:rowap_berry", value: 64 },
 ];
+
+global.legendaryCobblemonBerries.forEach((recipe) => {
+  global.cobbleCrops.push(recipe);
+});
+/**
+ * Preserves
+ * Formula: Ingredient * 20
+ */
+global.cobblemonPreserves = [
+  { item: "sunlit_cobblemon:leek_preserves", value: 40 },
+  { item: "sunlit_cobblemon:vivichoke_preserves", value: 1280 },
+  { item: "sunlit_cobblemon:common_cobbleberry_preserves", value: 80 },
+  { item: "sunlit_cobblemon:uncommon_cobbleberry_preserves", value: 240 },
+  { item: "sunlit_cobblemon:rare_cobbleberry_preserves", value: 640 },
+  { item: "sunlit_cobblemon:legendary_cobbleberry_preserves", value: 1280 },
+];
 global.cobbleAdventuring.forEach((miscItem) => {
   const { item, value } = miscItem;
   global.trades.set(item, {
@@ -147,8 +196,14 @@ global.cobbleGeology.forEach((miscItem) => {
     multiplier: "shippingbin:gem_sell_multiplier",
   });
 });
-
-global.cobbleForaging.forEach((miscItem) => {
+global.cobblemonPreserves.forEach((miscItem) => {
+  const { item, value } = miscItem;
+  global.trades.set(item, {
+    value: value,
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.cobbleCrops.forEach((miscItem) => {
   const { item, value } = miscItem;
   global.trades.set(item, {
     value: value,

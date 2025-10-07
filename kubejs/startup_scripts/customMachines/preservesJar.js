@@ -179,7 +179,7 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -213,6 +213,7 @@ StartupEvents.registry("block", (event) => {
         click,
         global.preservesJarRecipes,
         upgraded ? 3 : 5,
+        true,
         true
       );
     })

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WW ", "WDS", " SS"],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "D": {
+      "item": "society:celestine"
+    },
+    "W": {
+      "item": "society:red_sheet"
+    }
+  },
+  "result": {
+    "item": "cobblemon:destiny_knot"
+  }
+}

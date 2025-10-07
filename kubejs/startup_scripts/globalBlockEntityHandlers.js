@@ -77,10 +77,11 @@ const successParticles = (level, block) => {
   );
 };
 
-const hasWoolTag = (tags) => {
+const itemHasTag = (item, tag) => {
+  let tags = item.getTags().toList();
   let found = false;
-  tags.forEach((tag) => {
-    if (tag.toString().includes("minecraft:wool")) {
+  tags.forEach((itemTag) => {
+    if (itemTag.toString().includes(tag.slice(1))) {
       found = true;
     }
   });
@@ -95,10 +96,15 @@ const setQuality = (newProperties, stage, itemQuality) => {
     newProperties.quality = itemQuality;
 };
 
-const getCanTakeItems = (item, recipe, properties, nbt, hasTag) => {
+const getCanTakeItems = (item, recipe, properties, hasTag, recipes, nbt) => {
   let itemCheck = recipe !== undefined;
   if (hasTag && !itemCheck) {
-    itemCheck = hasWoolTag(item.getTags().toList());
+    Array.from(recipes.keys()).forEach((key) => {
+      if (!itemCheck && key.includes("#")) {
+        itemCheck = itemHasTag(item, key);
+        if (itemCheck) nbt.merge({ data: { recipe: key } });
+      }
+    });
   }
   return (
     itemCheck &&
@@ -197,13 +203,12 @@ global.artisanInsert = (
   let itemQuality;
   let useCount = 0;
   const recipe = recipes.get(`${item.id}`);
-  if (getCanTakeItems(item, recipe, block.properties, nbt, hasTag)) {
+
+  if (getCanTakeItems(item, recipe, block.properties, hasTag, recipes, nbt)) {
     newProperties = block.getProperties();
     successParticles(level, block);
     server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
-    hasTag && recipe === undefined
-      ? nbt.merge({ data: { recipe: "#minecraft:wool" } })
-      : nbt.merge({ data: { recipe: item.id } });
+    if (!(hasTag && recipe === undefined)) nbt.merge({ data: { recipe: item.id } });
     newProperties.working = false;
     newProperties.mature = false;
     if (newProperties.quality && itemNbt && itemNbt.quality_food) {
@@ -348,7 +353,7 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
         }
         if (
           !returnFluidData &&
-          getCanTakeItems(attachedBlock.getId(), block.properties, nbt, false)
+          getCanTakeItems(attachedBlock.getId(), recipe, block.properties, false)
         ) {
           newProperties = block.getProperties();
           successParticles(level, block);

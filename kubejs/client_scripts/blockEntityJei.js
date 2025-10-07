@@ -24,10 +24,17 @@ const registerBECategory = (event, categoryID, block, title, inputCount, days) =
       .handleLookup((builder, recipe) => {
         const { input, output, fluidOutput } = recipe.data;
         const slotSize = 21;
-        builder
-          .addSlot("INPUT", 2, 2)
-          .addItemStack(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`)
-          .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        if (input.includes("#")) {
+          builder
+            .addSlot("INPUT", 2, 2)
+            .addIngredients([Ingredient.of(input, 2)])
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        } else {
+          builder
+            .addSlot("INPUT", 2, 2)
+            .addItemStack(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`)
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        }
         builder.addSlot("CATALYST", 52, 2).addItemStack(`society:${block}`);
         if (fluidOutput && categoryID !== "tapping") {
           builder

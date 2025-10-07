@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["P P", "WCW", "WWW"],
+  "key": {
+    "P": {
+      "item": "cobblemon:protector"
+    },
+    "C": {
+      "item": "society:jasper"
+    },
+    "W": {
+      "item": "society:red_sheet"
+    }
+  },
+  "result": {
+    "item": "cobblemon:assault_vest"
+  }
+}

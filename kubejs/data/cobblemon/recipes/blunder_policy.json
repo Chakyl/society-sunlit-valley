@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " R ",
+        " I ",
+        " P "
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:rabbit_foot"
+        },
+        "I": {
+            "item": "society:legendary_ink"
+        },
+        "P": {
+            "item": "candlelight:note_paper_written"
+        }
+    },
+    "result": {
+        "item": "cobblemon:blunder_policy"
+    }
+}

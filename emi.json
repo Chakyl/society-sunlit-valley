@@ -1,45 +1,353 @@
 {
   "favorites": [
     {
-      "stack": "item:meadow:stripped_pine_wood"
+      "stack": "item:cobblemon:calcium"
     },
     {
-      "stack": "item:meadow:stripped_pine_log"
-    },
-    {
-      "stack": "item:dramaticdoors:short_meadow_pine_door"
-    },
-    {
-      "stack": "item:dramaticdoors:tall_meadow_pine_door"
-    },
-    {
-      "stack": "item:dramaticdoors:short_meadow_pine_barn_door"
-    },
-    {
-      "stack": "item:dramaticdoors:tall_meadow_pine_barn_door"
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "minecraft:wheat",
-        "amount": 8
-      }
-    },
-    {
-      "stack": "item:minecraft:ender_pearl"
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "farmersdelight:tomato",
-        "amount": 6
-      }
+      "stack": "item:cobblemon:carbos"
     }
   ],
   "lookup_history": [
+    "item:cobblemon:blue_mint_leaf",
+    "item:cobblemon:cyan_mint_seeds",
+    "item:cobblemon:eject_button",
+    "item:cobblemon:destiny_knot",
+    "item:cobblemon:dragon_fang",
+    "item:cobblemon:dubious_disc",
+    "item:society:gray_sheet",
+    "item:cobblemon:covert_cloak",
+    {
+      "type": "item",
+      "id": "cobblemon:deep_sea_scale",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:deep_sea_tooth",
+      "amount": 64
+    },
+    "item:cobblemon:razor_fang",
+    "item:cobblemon:display_case",
+    "item:tanukidecor:display_case",
+    "item:tanukidecor:long_display_case",
+    "item:cobblemon:dire_hit",
+    {
+      "type": "item",
+      "id": "cobblemon:damp_rock",
+      "amount": 64
+    },
+    "item:wildernature:fur_cloak{Damage:0}",
+    "item:windswept:feather_cloak{Damage:0}",
+    {
+      "type": "item",
+      "id": "cobblemon:exp_share",
+      "amount": 64
+    },
+    "item:cobblemon:black_glasses",
+    "item:cobblemon:bright_powder",
+    "item:cobblemon:cleanse_tag",
+    "item:cobblemon:choice_specs",
+    "item:society:maple_syrup",
+    "item:cobblemon:citrine_ball",
+    "item:cobblemon:choice_band",
+    "item:cobblemon:choice_scarf",
+    "item:cobblemon:silk_scarf",
+    "item:cobblemon:wise_glasses",
+    "item:cobblemon:chipped_pot",
+    {
+      "type": "item",
+      "id": "cobblemon:charcoal_stick",
+      "amount": 64
+    },
+    "item:cobblemon:binding_band",
+    "item:cobblemon:black_belt",
+    {
+      "type": "item",
+      "id": "cobblemon:cell_battery",
+      "amount": 64
+    },
+    "item:cobblemon:carbos",
+    "item:cobblemon:calcium",
+    "item:cobblemon:blunder_policy",
+    "item:society:architects_digest",
+    "item:society:pink_matter",
+    "item:beachparty:sunglasses{Damage:0}",
+    "item:windswept:holly_chest",
+    "item:cobblemon:black_gilded_chest",
+    "item:create:belt_connector",
+    "item:cobblemon:berry_juice",
+    "item:cobblemon:black_augurite",
+    "item:cobblemon:ability_shield",
+    {
+      "type": "item",
+      "id": "cobblemon:assault_vest",
+      "amount": 64
+    },
+    "item:society:red_sheet",
+    "item:cobblemon:protector",
+    "item:cobblemon:ancient_citrine_ball",
+    "item:cobblemon:ancient_azure_ball",
+    "item:cobblemon:ancient_poke_ball",
+    {
+      "type": "item",
+      "id": "cobblemon:air_balloon",
+      "amount": 64
+    },
+    "item:cobblemon:absorb_bulb",
+    "item:botania:cosmetic_lusitanic_shield",
+    "item:species:ricoshield{Damage:0}",
+    "item:cobblemon:life_orb",
+    "item:cobblemon:poison_barb",
+    "item:cobblemon:weakness_policy",
+    "item:cobblemon:fire_stone",
+    "item:cobblemon:galarica_wreath",
+    "item:cobblemon:galarica_cuff",
+    "item:cobblemon:quick_claw",
+    "item:cobblemon:power_weight",
+    "item:cobblemon:power_anklet",
+    "item:cobblemon:power_band",
+    "item:cobblemon:power_belt",
+    "item:cobblemon:power_bracer",
+    "item:cobblemon:ability_capsule",
+    "item:cobblemon:sassy_mint",
+    "item:cobblemon:black_sludge",
+    "item:cobblemon:focus_band",
+    "item:cobblemon:ether",
+    "item:cobblemon:medicinal_brew",
+    "item:cobblemon:potion",
+    "item:vanillabackport:dried_ghast",
+    "item:cobblemon:rowap_berry",
+    "#item:sunlit_cobblemon:legendary_cobblemon_berries",
+    "item:sunlit_cobblemon:legendary_cobbleberry_preserves",
+    "item:sunlit_cobblemon:common_cobbleberry_preserves",
+    {
+      "type": "item",
+      "id": "minecraft:blue_wool",
+      "amount": 64
+    },
+    "item:cobblemon:chesto_berry",
+    "item:society:loom",
+    {
+      "type": "item",
+      "id": "cobblemon:oran_berry",
+      "amount": 5
+    },
+    "item:sunlit_cobblemon:uncommon_cobbleberry_preserves",
+    "item:sunlit_cobblemon:leek_preserves",
+    "item:society:seed_maker",
+    "item:society:preserves_jar",
+    {
+      "type": "item",
+      "id": "cobblemon:tumblestone_block",
+      "amount": 64
+    },
+    "item:cobblemon:black_tumblestone_block",
+    "item:cobblemon:masterpiece_teacup",
+    "item:cobblemon:flower_sweet",
+    "item:simpletms:tm_curse",
+    "item:cobblemon:berry_sweet",
+    "item:cobblemon:super_potion",
+    "item:cobblemon:hyper_potion",
+    "item:cobblemon:max_potion",
+    "item:cobblemon:vivichoke",
+    "item:cobblemon:max_ether",
+    "item:cobblemon:lum_berry",
+    "item:cobblemon:ancient_leaden_ball",
+    {
+      "type": "item",
+      "id": "cobblemon:pep_up_flower",
+      "amount": 14
+    },
+    "item:cobblemon:revival_herb",
+    "item:cobblemon:mental_herb",
+    "item:cobblemon:mirror_herb",
+    "#item:cobblemon:seeds",
+    "item:cobblemon:miracle_seed",
+    "item:cobblemon:jaboca_berry",
+    {
+      "type": "item",
+      "id": "society:pickled_pumpkin_slice",
+      "amount": 5
+    },
+    "item:society:nether_jelly",
+    {
+      "type": "item",
+      "id": "society:ocean_jelly",
+      "amount": 3
+    },
+    "item:society:sunlit_pearl",
+    {
+      "type": "item",
+      "id": "minecraft:tropical_fish",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    "item:farm_and_charm:fertilizer",
+    "item:dew_drop_farmland_growth:weak_fertilizer",
+    "item:minecraft:ender_pearl",
+    "item:farmersdelight:tomato{quality_food:{effects:[],quality:2}}",
+    "item:cobblemon:hopo_berry",
+    {
+      "type": "item",
+      "id": "society:fire_quartz",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "farmersdelight:pumpkin_slice",
+      "amount": 20
+    },
+    {
+      "type": "item",
+      "id": "veggiesdelight:turnip",
+      "amount": 3
+    },
+    "item:supplementaries:jar",
+    {
+      "type": "item",
+      "id": "cobblemon:leppa_berry",
+      "amount": 5
+    },
+    {
+      "type": "item",
+      "id": "moreminecarts:glass_spines",
+      "amount": 9
+    },
+    {
+      "type": "item",
+      "id": "farmersdelight:tomato_sauce",
+      "amount": 23
+    },
+    {
+      "type": "item",
+      "id": "farmersdelight:rice_panicle",
+      "amount": 7
+    },
+    "item:society:earth_crystal",
+    "item:simplemagnets:basicmagnet",
+    "item:farmersdelight:cooking_pot",
+    "item:farmersdelight:stove",
+    "item:minecraft:campfire",
+    "item:refurbished_furniture:dark_stove",
+    "item:crabbersdelight:pearl_block",
+    "item:crittersandcompanions:clam",
+    "item:society:river_jelly",
+    {
+      "type": "item",
+      "id": "aquaculture:leech",
+      "nbt": "{Damage:0,quality_food:{quality:2}}",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:tambaqui",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "farmersdelight:safety_net",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "meadow:pine_slab",
+      "amount": 2
+    },
+    "item:society:aquamarine",
+    "item:gag:escape_rope{Damage:0}",
+    {
+      "type": "item",
+      "id": "dew_drop_farmland_growth:iron_sprinkler",
+      "amount": 2
+    },
+    "item:cobblemon:mulch_base",
+    "item:cobblemon:sandy_mulch",
+    "item:cobblemon:humid_mulch",
+    "item:cobblemon:peat_mulch",
+    "item:cobblemon:loamy_mulch",
+    "item:cobblemon:surprise_mulch",
+    "item:cobblemon:rich_mulch",
+    "item:cobblemon:growth_mulch",
+    {
+      "type": "item",
+      "id": "society:pine_tar",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "minecraft:iron_block",
+      "amount": 8
+    },
+    "item:dew_drop_farmland_growth:gold_sprinkler",
+    {
+      "type": "item",
+      "id": "minecraft:gold_block",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "minecraft:glowstone_dust",
+      "amount": 17
+    },
+    {
+      "type": "item",
+      "id": "minecraft:quartz",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "farm_and_charm:strawberry",
+      "amount": 47
+    },
+    "item:minecraft:nautilus_shell",
+    {
+      "type": "item",
+      "id": "cobblemon:persim_berry",
+      "amount": 15
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:green_apricorn",
+      "amount": 7
+    },
+    {
+      "type": "item",
+      "id": "minecraft:coal_block",
+      "amount": 9
+    },
+    {
+      "type": "item",
+      "id": "minecraft:barrel",
+      "amount": 15
+    },
+    "item:society:juice_inserter",
+    "item:cobblemon:lure_ball",
+    "item:cobblemon:fast_ball",
+    "item:cobblemon:safari_ball",
+    "item:cobblemon:nest_ball",
+    "item:cobblemon:dive_ball",
+    "item:cobblemon:premier_ball",
+    "item:cobblemon:slate_ball",
+    "item:cobblemon:master_ball",
+    "item:cobblemon:park_ball",
+    "item:botania:flight_tiara{variant:8}",
+    "item:cobblemon:ultra_ball",
+    "item:cobblemon:ancient_ultra_ball",
+    "item:minecraft:raw_gold_block",
+    "item:minecraft:flint_and_steel{Damage:0}",
+    {
+      "type": "item",
+      "id": "supplementaries:flax",
+      "amount": 24
+    },
+    "item:cobblemon:leaf_stone",
+    "item:cobblemon:shiny_stone",
+    "item:cobblemon:fossilized_bird",
+    "item:cobblemon:thunder_stone",
+    "item:minecraft:tripwire_hook",
     "item:cobblemon:iron_ball",
     "item:cobblemon:loaded_dice",
-    "item:minecraft:flint_and_steel{Damage:0}",
     {
       "type": "item",
       "id": "meadow:piece_of_sheep_cheese",
@@ -54,18 +362,8 @@
     "item:quark:diamond_heart",
     {
       "type": "item",
-      "id": "farmersdelight:pumpkin_slice",
-      "amount": 4
-    },
-    {
-      "type": "item",
       "id": "minecraft:pumpkin",
       "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "society:earth_crystal",
-      "amount": 7
     },
     {
       "type": "item",
@@ -80,24 +378,9 @@
     },
     {
       "type": "item",
-      "id": "society:preserves_jar",
-      "amount": 4
-    },
-    "item:minecraft:iron_block",
-    "item:minecraft:coal_block",
-    {
-      "type": "item",
-      "id": "minecraft:barrel",
-      "amount": 7
-    },
-    {
-      "type": "item",
       "id": "windswept:holly_berries",
       "amount": 14
     },
-    "item:cobblemon:shiny_stone",
-    "item:cobblemon:fire_stone",
-    "item:cobblemon:leaf_stone",
     {
       "type": "item",
       "id": "cobblemon:relic_coin_pouch",
@@ -107,26 +390,15 @@
     "item:twigs:polished_basalt_bricks",
     "item:cobblemon:relic_coin_sack",
     "item:cobblemon:apricorn_log",
-    "item:society:pine_tar",
     "item:minecraft:feather",
-    {
-      "type": "item",
-      "id": "cobblemon:ancient_poke_ball",
-      "amount": 15
-    },
     "item:twigs:twig",
     "item:cobblemon:roseli_berry",
-    "item:cobblemon:vivichoke",
-    "item:cobblemon:max_potion",
     "item:cobblemon:full_restore",
     "item:cobblemon:paralyze_heal",
     "item:cobblemon:full_heal",
-    "item:cobblemon:lum_berry",
-    "item:cobblemon:ether",
     "item:cobblemon:x_accuracy",
     "#item:cobblemon:mints",
     "item:cobblemon:brave_mint",
-    "item:cobblemon:binding_band",
     "item:cobblemon:careful_mint",
     "item:cobblemon:naughty_mint",
     "item:cobblemon:quiet_mint",
@@ -134,17 +406,12 @@
     "item:cobblemon:relaxed_mint",
     "item:cobblemon:adamant_mint",
     "item:cobblemon:white_mint_leaf",
-    "item:cobblemon:blue_mint_leaf",
     "item:cobblemon:blue_mint_seeds",
     "item:cobblemon:cyan_mint_leaf",
-    "item:cobblemon:cyan_mint_seeds",
-    "item:cobblemon:oran_berry",
     "item:cobblemon:watmel_berry",
     "item:cobblemon:custap_berry",
     "item:cobblemon:chilan_berry",
     "item:cobblemon:strawberry_sweet",
-    "item:cobblemon:berry_sweet",
-    "item:cobblemon:flower_sweet",
     "item:cobblemon:star_sweet",
     "item:cobblemon:yellow_apricorn_seed",
     "item:cobblemon:power_herb",
@@ -154,23 +421,13 @@
       "amount": 63
     },
     "item:cobblemon:leek_and_potato_stew",
-    "item:cobblemon:mirror_herb",
-    {
-      "type": "item",
-      "id": "cobblemon:pep_up_flower",
-      "amount": 2
-    },
-    "item:cobblemon:mental_herb",
-    "item:cobblemon:revival_herb",
     {
       "type": "item",
       "id": "cobblemon:roasted_leek",
       "amount": 64
     },
     "item:cobblemon:energy_root",
-    "item:cobblemon:fossilized_bird",
     "#item:cobblemon:fossils",
-    "item:cobblemon:miracle_seed",
     "item:cobblemon:vivichoke_seeds",
     {
       "type": "item",
@@ -206,7 +463,6 @@
       "id": "create_central_kitchen:pumpkin_pie_slice",
       "amount": 4
     },
-    "item:cobblemon:ultra_ball",
     "item:cobblemon:black_apricorn",
     "item:meadow:stove_tiles_bench",
     "item:supplementaries:planter",
@@ -230,10 +486,8 @@
     "item:society:starfruit_juice",
     "item:vinery:apple_press",
     "item:cobblemon:mago_berry",
-    "item:cobblemon:park_ball",
     "item:cobblemon:wiki_berry",
     "item:cobblemon:sitrus_berry",
-    "item:cobblemon:green_apricorn",
     "item:cobblemon:pink_apricorn",
     "item:cobblemon:enigma_berry",
     "item:botania:horn_grass",
@@ -267,11 +521,6 @@
       "id": "society:spider_silk",
       "amount": 2
     },
-    {
-      "type": "item",
-      "id": "cobblemon:thunder_stone",
-      "amount": 2
-    },
     "item:minecraft:loom",
     {
       "type": "item",
@@ -285,7 +534,6 @@
     "item:minecraft:beef",
     "item:minecraft:cooked_beef",
     "item:cobblemon:fighting_gem",
-    "item:cobblemon:air_balloon",
     "item:cobblemon:moon_stone",
     {
       "type": "item",
@@ -305,7 +553,6 @@
       "id": "society:sandstone_boulder",
       "amount": 63
     },
-    "item:cobblemon:cleanse_tag",
     {
       "type": "item",
       "id": "society:stone_boulder",
@@ -317,7 +564,6 @@
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:juicy\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
     "item:minecraft:jungle_log",
-    "item:minecraft:quartz",
     "item:cobblemon:rock_gem",
     "item:cobblemon:flying_gem",
     "item:cobblemon:ground_gem",
@@ -354,12 +600,10 @@
     },
     "item:cobblemon:eviolite",
     "item:cobblemon:ability_patch",
-    "item:cobblemon:ability_capsule",
     "item:cobblemon:smooth_rock",
     "item:cobblemon:soft_sand",
     "item:cobblemon:clover_sweet",
     "item:cobblemon:twisted_spoon",
-    "item:cobblemon:masterpiece_teacup",
     "item:cobblemon:unremarkable_teacup",
     "item:cobblemon:auspicious_armor",
     "item:cobblemon:ribbon_sweet",
@@ -367,8 +611,6 @@
     "item:cobblemon:muscle_feather",
     "item:cobblemon:ring_target",
     "item:cobblemon:guard_spec",
-    "item:cobblemon:medicinal_brew",
-    "item:cobblemon:display_case",
     "item:cobblemon:automaton_armor_trim_smithing_template",
     "item:cobblemon:electric_gem",
     {
@@ -399,24 +641,18 @@
       "amount": 64
     },
     "item:cobblemon:exp_candy_s",
-    "item:cobblemon:master_ball",
     "item:candlelight:chefs_pants{Damage:0}",
     "item:atmospheric:forsythia",
     "item:cobblemon:pc",
     "item:cobblemon:revive",
     "item:cobblemon:max_revive",
-    "item:cobblemon:hyper_potion",
     "item:minecraft:cartography_table",
     "item:cobblemon:white_gilded_chest",
-    "item:cobblemon:black_tumblestone_block",
     "item:cobblemon:moon_stone_ore",
-    "item:cobblemon:mulch_base",
     "item:cobblemon:rabuta_berry",
     "item:cobblemon:kee_berry",
-    "item:cobblemon:rowap_berry",
     "item:windswept:chestnut_chest",
     "item:cobblemon:mystic_water",
-    "item:cobblemon:dive_ball",
     "item:cobblemon:dusk_stone",
     "item:cobblemon:sun_stone",
     {
@@ -427,11 +663,6 @@
     "item:cobblemon:dawn_stone_ore",
     "item:cobblemon:sun_stone_ore",
     "item:cobblemon:dripstone_moon_stone_ore",
-    "item:cobblemon:tumblestone_block",
-    "item:cobblemon:peat_mulch",
-    "item:cobblemon:surprise_mulch",
-    "item:cobblemon:rich_mulch",
-    "item:cobblemon:growth_mulch",
     "item:cobblemon:medicinal_leek",
     "item:cobbledex:cobbledex_item",
     "item:cobblemon:suspicious_sherd",
@@ -447,7 +678,6 @@
     "item:vinery:red_grapejuice",
     "item:nethervinery:warped_grapejuice",
     "item:society:blueberry",
-    "item:farm_and_charm:fertilizer",
     "item:vintagedelight:organic_mash",
     "item:refinedstorage:64k_storage_part",
     "item:minecraft:beetroot_seeds",
@@ -471,7 +701,6 @@
     "item:farm_and_charm:lamb_with_corn",
     "item:farm_and_charm:corn_grits",
     "item:herbalbrews:coffee_beans",
-    "item:supplementaries:flax",
     "item:society:large_grain_milk",
     "item:botania:apothecary_default",
     "item:simplerecall:recall_potion",
@@ -562,9 +791,7 @@
     "item:society:espresso_machine",
     "item:society:dehydrator",
     "item:society:crystalarium",
-    "item:society:seed_maker",
     "item:candlelight:cooking_pot",
-    "item:botania:flight_tiara{variant:8}",
     "item:torchmaster:megatorch",
     "item:farmersdelight:skillet{Damage:0}",
     "item:farm_and_charm:minced_beef",
@@ -611,7 +838,6 @@
     "item:snowyspirit:gingerbread",
     "item:windswept:ginger_root",
     "item:snowyspirit:ginger_flower",
-    "item:crittersandcompanions:clam",
     "item:windswept:pine_chest",
     "item:minecraft:ender_eye",
     "item:botania:ender_air_bottle",
@@ -665,7 +891,6 @@
     "item:whimsy_deco:bronze_cowbell",
     "item:whimsy_deco:yellow_froggy_chair",
     "item:whimsy_deco:dark_oak_desk_mirror",
-    "item:society:river_jelly",
     "item:numismatics:bevel",
     "item:numismatics:cog",
     "item:minecraft:cobweb",
@@ -755,7 +980,6 @@
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
     "item:society:sparkstone_block",
     "item:vintagedelight:peanut",
-    "item:farmersdelight:tomato",
     "item:society:milk_pail",
     "item:farm_and_charm:farmers_bread",
     "item:bakery:crusty_bread",
@@ -835,7 +1059,6 @@
     "item:supplementaries:candy",
     "item:windswept:mutton_pie",
     "#item:forge:cooked_mutton",
-    "item:society:maple_syrup",
     "item:windswept:pinecone_jam_bottle{}",
     "item:windswept:chestnut_soup",
     "item:atmospheric:orange_pudding",
@@ -955,11 +1178,9 @@
       "id": "oreganized:silver_nugget",
       "amount": 9
     },
-    "item:dew_drop_farmland_growth:weak_fertilizer",
     "item:minecraft:diamond_hoe{Damage:0}",
     "item:stardew_fishing:cork_bobber{Damage:0}",
     "item:society:inserter",
-    "item:society:aquamarine",
     "item:sophisticatedstorage:crafting_upgrade",
     {
       "type": "item",
@@ -1124,7 +1345,6 @@
     "item:society:aquamagical_dust",
     "item:botania:lime_shiny_flower",
     "item:botania:infused_seeds",
-    "item:society:sunlit_pearl",
     "item:society:heart_of_neptunium",
     "#item:crabbersdelight:jei_display_results/crabbersdelight/mana_crab_trap_bait",
     "item:society:neptuna",
@@ -1204,7 +1424,6 @@
     "item:society:paradise_crop",
     "item:society:no_name_for_the_sheep",
     "item:society:phenomenology_of_treasure",
-    "item:society:red_sheet",
     "item:aquaculture:neptunes_bounty",
     "item:society:frogs_bounty_bazaar",
     "item:numismatics:ancient_coin",
@@ -1267,234 +1486,22 @@
     "item:society:large_duck_egg",
     "item:society:large_goose_egg",
     "item:minecraft:egg",
-    "item:society:ancient_vespertine",
-    "item:society:aged_ancient_vespertine",
-    "item:society:geminite",
-    "item:society:loom",
-    "item:society:deluxe_worm_farm",
-    "item:society:car_key",
-    "item:quark:sturdy_stone",
-    "item:farm_and_charm:silo_wood",
-    "item:herbalbrews:tea_kettle",
-    "item:herbalbrews:copper_tea_kettle",
-    {
-      "type": "fluid",
-      "id": "society:pine_tar",
-      "amount": 0
-    },
-    "item:society:pine_tar_bucket",
-    {
-      "type": "item",
-      "id": "vinery:solaris_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "nethervinery:lava_fizz",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "nethervinery:ghastly_grenache",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "nethervinery:blazewine_pinot",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "society:dewy_star",
-      "amount": 64
-    },
-    "item:vinery:creepers_crush{Year:0}",
-    "item:vinery:apple_cider{Year:0}",
-    {
-      "type": "item",
-      "id": "society:nutty_basil",
-      "amount": 64
-    },
-    "item:vinery:mead",
-    "item:minecraft:melon",
-    "item:atmospheric:blood_orange",
-    "item:vinery:jo_special_mixture{Year:0}",
-    "item:bakery:chocolate_truffle",
-    "item:windswept:wooden_chocolate_bucket{Damage:0}",
-    "item:create:bar_of_chocolate",
-    "item:beachparty:chocolate_icecream",
-    "item:candlelight:chocolate_box",
-    {
-      "type": "fluid",
-      "id": "create:chocolate",
-      "amount": 0
-    },
-    "item:beachparty:icecream_chocolate",
-    "item:create:chocolate_glazed_berries",
-    "item:simplehats:chocolate_sauced",
-    "item:bakery:chocolate_box",
-    "item:society:dried_chorus_fruit",
-    "item:society:dried_strawberry",
-    "item:society:dried_gearo_berry",
-    "item:society:dried_lychee",
-    "item:society:dried_blueberry",
-    "item:society:dried_mango",
-    "item:society:dried_warped_fungus",
-    "item:society:dried_crimson_fungus",
-    "item:society:dried_toadstool",
-    "item:society:dried_red_mushroom",
-    "item:atmospheric:aloe_leaves",
-    {
-      "type": "item",
-      "id": "vinery:strad_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "nethervinery:netherite_nectar",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    "item:pamhc2trees:peachitem",
-    "item:vinery:kelp_cider{Year:0}",
-    "item:vinery:villagers_fright{Year:0}",
-    "item:vinery:lilitu_wine",
-    {
-      "type": "item",
-      "id": "vinery:glowing_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "vinery:noir_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "vinery:cherry_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "vinery:cristel_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "society:good_catawba",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "vinery:magnetic_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "vinery:clark_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "vinery:aegis_wine",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "society:starcardi",
-      "amount": 64
-    },
-    "item:vinery:taiga_grape_seeds_red",
-    "item:veggiesdelight:garlic_chicken_stew",
-    "item:veggiesdelight:roasted_garlic_clove",
-    "item:veggiesdelight:wild_garlic",
-    {
-      "type": "item",
-      "id": "windswept:wild_berries",
-      "amount": 64
-    },
-    "item:society:broccoli_preserves",
-    "item:society:wild_berries_preserves",
-    "item:minecraft:gunpowder",
-    "item:numismatics:prismatic_coin",
-    "item:society:mana_feed",
-    "item:society:geode",
-    "item:society:magic_rock_candy",
-    "item:minecraft:birch_log",
-    "item:unusualfishmod:ancient_weapon_smithing_template",
-    "item:beachparty:tiki_bar",
-    "item:beachparty:cabinet",
-    "item:beachparty:radio",
-    "item:beachparty:mini_fridge",
-    "item:windswept:candy_cane",
-    "item:windswept:chestnuts",
-    "item:windswept:pine_door",
-    {
-      "type": "item",
-      "id": "veggiesdelight:turnip",
-      "amount": 8
-    },
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
-    "item:minecraft:oak_planks",
-    "item:create:cut_deepslate_brick_stairs",
-    "item:create:polished_cut_scoria_wall",
-    "item:veggiesdelight:zucchini",
-    "item:veggiesdelight:zucchini_seeds",
-    "item:veggiesdelight:turnip_seeds",
-    "item:veggiesdelight:broccoli_seeds",
-    "item:veggiesdelight:turnip_crate",
-    "item:society:pickled_zucchini",
-    "item:society:pickled_turnip",
-    "item:society:pickled_broccoli",
-    "item:society:raisins",
-    "item:society:nether_raisins",
-    "item:society:dried_shimmering_mushrooms",
-    "item:society:turnip_preserves",
-    "item:society:zucchini_preserves",
-    "item:veggiesdelight:garlic",
-    "item:society:pickled_garlic",
-    "item:vintagedelight:cucumber",
-    "item:vintagedelight:ghost_pepper",
-    "#item:minecraft:wooden_slabs",
-    "item:railways:wooden_headstock_link_and_pin",
-    "item:railways:wooden_headstock_split_knuckle_coupler",
-    "item:railways:copycat_headstock_split_knuckle_coupler",
-    "item:railways:track_coupler",
-    "item:railways:link_and_pin",
-    "#item:railways:deco_couplers",
-    "item:railways:wooden_headstock",
-    {
-      "type": "item",
-      "id": "railways:copycat_headstock",
-      "amount": 64
-    },
-    "item:create:minecart_coupling",
-    "item:railways:wooden_headstock_screwlink_coupler",
-    "item:moreminecarts:coupler",
-    "item:society:pickled_ginger",
-    "item:windswept:pinecone_block",
-    "item:windswept:pinecone_shingles",
-    "item:windswept:light_gray_pinecone_shingles",
-    "item:windswept:pinecone_jam_block",
-    "item:windswept:carved_pinecone_block",
-    "item:species:ancient_pinecone"
+    "item:society:ancient_vespertine"
   ],
   "craft_history": [
+    "vintagedelight:fermenting_jar",
+    "farmersdelight:cooking_pot",
+    "simplemagnets:basicmagnet",
+    "farmersdelight:stove",
+    "minecraft:campfire",
+    "crabbersdelight:crab_trap",
+    "minecraft:kjs/dew_drop_farmland_growth_gold_sprinkler",
+    "minecraft:kjs/society_seed_maker",
+    "minecraft:kjs/dew_drop_farmland_growth_iron_sprinkler",
+    "minecraft:kjs/dew_drop_farmland_growth_gold_sprinkler_2",
+    "minecraft:kjs/society_preserves_jar",
     "meadow:fire_log",
     "farmersdelight:cutting_board",
-    "minecraft:kjs/society_preserves_jar",
     "minecraft:coal_block",
     "cobblemon:relic_pouch_from_coin",
     "minecraft:kjs/society_cheese_press",
@@ -1513,9 +1520,7 @@
     "minecraft:oak_fence",
     "minecraft:crafting_table",
     "minecraft:kjs/society_mayonnaise_machine",
-    "minecraft:kjs/society_seed_maker",
     "vintagedelight:jam/vinegar_jar_deconstruct",
-    "vintagedelight:fermenting_jar",
     "supplementaries:jar",
     "minecraft:composter",
     "vinery:grapevine_pot",
@@ -1524,7 +1529,6 @@
     "minecraft:iron_block",
     "minecraft:lightning_rod",
     "minecraft:copper_ingot",
-    "simplemagnets:basicmagnet",
     "farmersdelight:basket",
     "longwings:catching_net",
     "bountiful:crafting/bountyboard",
@@ -1542,8 +1546,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

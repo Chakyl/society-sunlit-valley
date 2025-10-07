@@ -10,4 +10,17 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:prismatic_tm_pack")
     .texture("sunlit_cobblemon:item/prismatic_tm_pack")
     .displayName("Prismatic TM Pack");
+
+  global.cobblemonPreserves.forEach((jar) => {
+    if (jar.item.includes("sunlit_cobblemon")) {
+      e.create(`sunlit_cobblemon:${jar.item.split(":")[1]}`)
+        .texture(`sunlit_cobblemon:item/preserves/${jar.item.split(":")[1]}`)
+        .food((food) => {
+          food.hunger(5);
+          food.saturation(1);
+          food.fastToEat(true);
+          food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
+        });
+    }
+  });
 });

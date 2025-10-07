@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "WPW",
+    "W W"
+  ],
+  "key": {
+    "W": {
+      "item": "society:gray_sheet"
+    },
+    "P": {
+      "item": "windswept:feather_cloak"
+    }
+  },
+  "result": {
+    "item": "cobblemon:covert_cloak"
+  }
+}

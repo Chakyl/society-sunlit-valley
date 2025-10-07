@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " SW",
+        "SsS",
+        "WS "
+    ],
+    "key": {
+        "S": {
+            "item": "farmersdelight:rope"
+        },
+        "s": {
+            "item": "society:calcite_gem"
+        },
+        "W": {
+            "item": "society:brown_sheet"
+        }
+    },
+    "result": {
+        "item": "cobblemon:binding_band"
+    }
+}
