@@ -11,7 +11,9 @@
 		{
 			description: [
 				"Craft a &6Drawer&r."
+				""
 				"Your basic building block for Functional Drawers."
+				""
 				"Stores &62,048&r of any one item."
 			]
 			icon: "functionalstorage:oak_1"
@@ -88,7 +90,7 @@
 				""
 				"&6Framed Drawers&r can be disguised as other blocks by combining them in your crafting grid."
 				""
-				"The &bfirst block&r will the outside of the &6Framed Drawer&r."
+				"The &bfirst block&r will be the outside of the &6Framed Drawer&r."
 				"The &bsecond block&r will be the inside."
 				"The &bthird block&r should be your &6Framed Drawer&r."
 			]
@@ -256,7 +258,7 @@
 					type: "item"
 				}
 			]
-			title: "Getting your drawers wet"
+			title: "Getting your Drawers Wet"
 			x: -3.0d
 			y: 0.0d
 		}
@@ -265,7 +267,7 @@
 			description: [
 				"Buy a &6Storage Controller&r from the &6Storage Smith&r."
 				""
-				"A &6Storage Controller&r allows &5you&r, or a &5hopping&r, or other &5fun&r items to access all of the connected &6Storage Drawers&r."
+				"A &6Storage Controller&r allows &5you&r, a &5hopping&r, or other &5fun&r items to access all of the connected &6Storage Drawers&r."
 				""
 				"Things could get &5interesting&r if connected to an &6External Storage Cable&r."
 			]
@@ -288,7 +290,7 @@
 				""
 				"So &b81&r &6Iron Nuggets&r will also be accessible as &b9&r &6Iron Ingots&r or &b1&r &6Iron Block&r."
 				""
-				"There's something... &5Uncrafty&r about this block."
+				"&oThere's something... &5Uncrafty&r about this block.&r"
 			]
 			id: "6A67DFC548700C96"
 			tasks: [{
@@ -315,7 +317,7 @@
 				item: "functionalstorage:controller_extension"
 				type: "item"
 			}]
-			title: "There can only be One"
+			title: "There Can Only be One"
 			x: 1.5d
 			y: -3.0d
 		}
@@ -340,7 +342,7 @@
 				}
 				type: "item"
 			}]
-			title: "Link 'em up"
+			title: "Link 'em Up"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -368,7 +370,7 @@
 				item: "functionalstorage:configuration_tool"
 				type: "item"
 			}]
-			title: "Lock 'em down and Cover 'em up"
+			title: "Lock 'em Down and Cover 'em Up"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -377,11 +379,11 @@
 			description: [
 				"Buy a &6Copper Upgrade&r from the &6Storage Smith&r."
 				""
-				"The &6Copper Upgrade&r allows you to store more &6items/fluids&r in your &6Drawers&r."
+				"The &6Copper Upgrade&r allows you to store more &5items/fluids&r in your &6Drawers&r."
 				""
 				"Careful! Each &6Drawer&r can only have &b4&r storage &6Upgrades&r at a time."
 				""
-				"To access the Upgrade Slots, right click on the &6edge&r of the &6Drawer&r."
+				"To access the Upgrade Slots, right click on the &5edge&r of the &6Drawer&r."
 			]
 			id: "29B95A67F9BC03A5"
 			tasks: [{
@@ -402,7 +404,7 @@
 				""
 				"This reduces the amount of items your &6Drawers&r can store."
 				""
-				"Why would you want to do that?"
+				"&5&oWhy would you want to do that?&r&r"
 			]
 			id: "1B30E68B63DA6E5F"
 			tasks: [{
@@ -460,7 +462,7 @@
 			description: [
 				"Craft the &6Puller Upgrade&r."
 				""
-				"Also acts like a &6Hopper&r in a &6Drawer&r, in that it will pull items from &6connected inventories&r."
+				"Also acts like a &6Hopper&r in a &6Drawer&r, in that it will &5pull&r items from &6connected inventories&r."
 				""
 				"Can also be configured to steal items from any side."
 				""
@@ -483,7 +485,7 @@
 				""
 				"Also acts like a &6Hopper&r in a &6Drawer&r, in that it will push items into &6connected inventories&r."
 				""
-				"Can also be configured to push items from any side."
+				"Can also be configured to &5push&r items from any side."
 				""
 				"&5&oHee Hee Hoooo!&r"
 			]
