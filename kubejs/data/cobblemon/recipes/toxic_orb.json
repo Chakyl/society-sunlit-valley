@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "STB",
+        "TET",
+		"BTS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "T": {
+            "item": "minecraft:tinted_glass"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "B": {
+            "item": "cobblemon:black_sludge"
+        }
+    },
+    "result": {
+        "item": "cobblemon:toxic_orb"
+    }
+}

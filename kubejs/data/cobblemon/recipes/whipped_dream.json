@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " B ",
+        "SMS",
+		"HSH"
+    ],
+    "key": {
+        "B": {
+            "item": "minecraft:sweet_berries"
+        },
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "M": {
+            "item": "minecraft:milk_bucket"
+        },
+        "H": {
+            "item": "society:maple_syrup"
+        }
+    },
+    "result": {
+        "item": "cobblemon:whipped_dream"
+    }
+}

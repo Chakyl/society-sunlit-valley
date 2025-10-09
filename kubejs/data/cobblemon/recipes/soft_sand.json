@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " RR",
+        "SSR",
+		"SS "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:sand"
+        },
+        "R": {
+            "item": "minecraft:rabbit_hide"
+        }
+    },
+    "result": {
+        "item": "cobblemon:soft_sand"
+    }
+}

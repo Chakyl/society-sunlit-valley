@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        "PCP",
+        "WHW"
+    ],
+    "key": {
+        "P": {
+            "tag": "minecraft:planks"
+        },
+        "C": {
+            "item": "cobblemon:pc"
+        },
+        "W": {
+            "item": "minecraft:wheat"
+        },
+        "H": {
+            "item": "minecraft:hopper"
+        }
+    },
+    "result": {
+        "item": "cobblemon:pasture"
+    }
+}

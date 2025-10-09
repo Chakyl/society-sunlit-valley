@@ -871,8 +871,6 @@ global.removedItems = [
   "farm_and_charm:water_sprinkler",
   "atmospheric:dragon_fruit_crate",
   "atmospheric:dragon_fruit",
-  "cobblemon:pc",
-  "cobblemon:healing_machine",
 ];
 
 global.hiddenItems = [

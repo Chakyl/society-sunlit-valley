@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MCD",
+    "C C",
+    "DCM"
+  ],
+  "key": {
+    "M": {
+      "item": "cobblemon:red_mint_leaf"
+    },
+    "C": {
+      "item": "minecraft:red_concrete"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "cobblemon:power_bracer"
+  }
+}

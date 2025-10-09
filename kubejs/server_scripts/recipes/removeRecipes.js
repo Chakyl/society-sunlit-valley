@@ -763,6 +763,10 @@ ServerEvents.recipes((e) => {
     "vintagedelight:cheese_pizza",
     "vintagedelight:cheese_pizza_slice",
     "refurbished_furniture:meatlovers_pizza_slice",
+    "cobblemon:pc",
+    "cobblemon:healing_machine",
+    "cobblemon:upgrade",
+    "cobblemon:dubious_disc",
   ];
   const removeById = [
     "crittersandcompanions:ender_pearl_from_pearl",

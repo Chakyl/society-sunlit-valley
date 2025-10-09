@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DAD",
+        "IGI",
+        "DRD"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "D": {
+            "item": "minecraft:cobbled_deepslate"
+        },
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "A": {
+            "item": "minecraft:amethyst_shard"
+        }
+    },
+    "result": {
+        "item": "cobblemon:fossil_analyzer"
+    }
+}

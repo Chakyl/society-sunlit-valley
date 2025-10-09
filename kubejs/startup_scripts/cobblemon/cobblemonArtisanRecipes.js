@@ -24,18 +24,51 @@
     input: "#sunlit_cobblemon:common_cobblemon_berries",
     output: ["sunlit_cobblemon:common_cobbleberry_preserves"],
   },
-    {
+  {
     input: "#sunlit_cobblemon:uncommon_cobblemon_berries",
     output: ["sunlit_cobblemon:uncommon_cobbleberry_preserves"],
   },
-    {
+  {
     input: "#sunlit_cobblemon:rare_cobblemon_berries",
     output: ["sunlit_cobblemon:rare_cobbleberry_preserves"],
   },
-    {
+  {
     input: "#sunlit_cobblemon:legendary_cobblemon_berries",
     output: ["sunlit_cobblemon:legendary_cobbleberry_preserves"],
   },
 ].forEach((recipe) => {
   global.preservesJarRecipes.set(recipe.input, { output: recipe.output });
+});
+
+[
+  {
+    input: "windswept:lavender_crown",
+    output: ["cobblemon:galarica_cuff"],
+  },
+  {
+    input: "windswept:holly_wreath",
+    output: ["cobblemon:galarica_wreath"],
+  },
+  {
+    input: "society:steamy_gadget",
+    output: ["cobblemon:upgrade"],
+  },
+  {
+    input: "gamediscs:game_disc_slime",
+    output: ["cobblemon:dubious_disc"],
+  },
+  {
+    input: "society:aged_apple_wine",
+    output: ["cobblemon:sweet_apple"],
+  },
+  {
+    input: "society:aged_apple_cider",
+    output: ["cobblemon:tart_apple"],
+  },
+  {
+    input: "farmersdelight:sweet_berry_cheesecake",
+    output: ["cobblemon:whipped_dream"],
+  },
+].forEach((recipe) => {
+  global.recyclingMachineRecipes.set(recipe.input, { output: recipe.output });
 });

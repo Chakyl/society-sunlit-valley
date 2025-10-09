@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SPS",
+        "LAF",
+		"MPM"
+    ],
+    "key": {
+        "P": {
+            "item": "society:purple_sheet"
+        },
+        "S": {
+            "item": "minecraft:string"
+        },
+        "M": {
+            "item": "society:magenta_sheet"
+        },
+        "L": {
+            "item": "minecraft:lilac"
+        },
+        "A": {
+            "item": "minecraft:allium"
+        },
+        "F": {
+            "item": "minecraft:peony"
+        }
+    },
+    "result": {
+        "item": "cobblemon:sachet"
+    }
+}

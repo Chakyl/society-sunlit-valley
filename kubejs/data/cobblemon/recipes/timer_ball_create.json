@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "c": {
+            "item": "create:precision_mechanism"
+        },
+        "r": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:black_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:timer_ball",
+        "count": 4
+    }
+}

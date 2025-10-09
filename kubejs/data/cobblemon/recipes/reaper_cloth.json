@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " W ",
+        "PGP",
+		"WPW"
+    ],
+    "key": {
+        "P": {
+            "item": "paraglider:spirit_orb"
+        },
+        "W": {
+            "item": "society:gray_sheet"
+        },
+        "G": {
+            "item": "society:holy_symbol"
+        }
+    },
+    "result": {
+        "item": "cobblemon:reaper_cloth"
+    }
+}

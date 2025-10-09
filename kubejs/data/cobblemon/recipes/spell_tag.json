@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" PG", "PRP", "WP "],
+  "key": {
+    "W": {
+      "item": "quark:soul_bead"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "G": {
+      "item": "paraglider:spirit_orb"
+    }
+  },
+  "result": {
+    "item": "cobblemon:spell_tag"
+  }
+}
