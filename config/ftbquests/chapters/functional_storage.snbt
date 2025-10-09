@@ -1,0 +1,610 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "functional_storage"
+	group: "439B0423947443D3"
+	icon: "functionalstorage:storage_controller"
+	id: "11F703F95B6101D8"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Craft a &6Drawer&r."
+				"Your basic building block for Functional Drawers."
+				"Stores &62,048&r of any one item."
+			]
+			icon: "functionalstorage:oak_1"
+			id: "033125D011ADD5AF"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "4C5851908F8752EB"
+					item: "functionalstorage:spruce_1"
+					type: "item"
+				}
+				{
+					id: "69B2931C574A79E3"
+					item: "functionalstorage:birch_1"
+					secret: true
+					type: "item"
+				}
+				{
+					id: "28ABF6E96B40B670"
+					item: "functionalstorage:jungle_1"
+					secret: true
+					type: "item"
+				}
+				{
+					id: "6A7EAF56C9BC3833"
+					item: "functionalstorage:acacia_1"
+					secret: true
+					type: "item"
+				}
+				{
+					id: "02C1A778CA235AA1"
+					item: "functionalstorage:oak_1"
+					type: "item"
+				}
+				{
+					id: "029721BCD43D426D"
+					item: "functionalstorage:dark_oak_1"
+					secret: true
+					type: "item"
+				}
+				{
+					id: "01FF40C386F08E2D"
+					item: "functionalstorage:crimson_1"
+					secret: true
+					type: "item"
+				}
+				{
+					id: "40506BC4D8CCD9AE"
+					item: "functionalstorage:warped_1"
+					secret: true
+					type: "item"
+				}
+				{
+					id: "07BAC1FEA23F5317"
+					item: "functionalstorage:mangrove_1"
+					secret: true
+					type: "item"
+				}
+				{
+					id: "6162E2ED361D76BD"
+					item: "functionalstorage:cherry_1"
+					secret: true
+					type: "item"
+				}
+			]
+			title: "Baby's First Drawers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"Craft a &6Framed Drawer&r."
+				""
+				"&6Framed Drawers&r can be disguised as other blocks by combining them in your crafting grid."
+				""
+				"The &bfirst block&r will the outside of the &6Framed Drawer&r."
+				"The &bsecond block&r will be the inside."
+				"The &bthird block&r should be your &6Framed Drawer&r."
+			]
+			id: "0C6723979EE23CDC"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "699D63FC457B235F"
+					item: "functionalstorage:framed_1"
+					type: "item"
+				}
+				{
+					id: "5D989EE7046192CD"
+					item: "functionalstorage:framed_2"
+					type: "item"
+				}
+				{
+					id: "4AE360A9419A763D"
+					item: "functionalstorage:framed_4"
+					type: "item"
+				}
+			]
+			title: "Hidden Drawers"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"Craft a &61x2 Drawer&r or a &62x2 Drawer&r."
+				""
+				"These Drawers still only hold &b2048&r items, but can can hold &b2&r (1x2) or &b4&r (2x2) items types."
+			]
+			id: "49C1FB5B93032946"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "1E89973A5DAFC254"
+					item: "functionalstorage:oak_2"
+					type: "item"
+				}
+				{
+					id: "2A100E7A9AD909EA"
+					item: "functionalstorage:spruce_2"
+					type: "item"
+				}
+				{
+					id: "180727F561DF6E9D"
+					item: "functionalstorage:birch_2"
+					type: "item"
+				}
+				{
+					id: "56B0162E074B86DB"
+					item: "functionalstorage:jungle_2"
+					type: "item"
+				}
+				{
+					id: "714659CB123D398A"
+					item: "functionalstorage:acacia_2"
+					type: "item"
+				}
+				{
+					id: "1B2C1EE97546433F"
+					item: "functionalstorage:dark_oak_2"
+					type: "item"
+				}
+				{
+					id: "17C0EAA1D9CB31C9"
+					item: "functionalstorage:crimson_2"
+					type: "item"
+				}
+				{
+					id: "376E925BA9DEA240"
+					item: "functionalstorage:warped_2"
+					type: "item"
+				}
+				{
+					id: "1D8954A0E2DE4B6D"
+					item: "functionalstorage:mangrove_2"
+					type: "item"
+				}
+				{
+					id: "303FE5B90BCC0267"
+					item: "functionalstorage:cherry_2"
+					type: "item"
+				}
+				{
+					id: "6A342F0E513279CC"
+					item: "functionalstorage:oak_4"
+					type: "item"
+				}
+				{
+					id: "219832AD77B3FA8E"
+					item: "functionalstorage:spruce_4"
+					type: "item"
+				}
+				{
+					id: "10D52C2861C9EDC5"
+					item: "functionalstorage:birch_4"
+					type: "item"
+				}
+				{
+					id: "222390AA848D09E4"
+					item: "functionalstorage:jungle_4"
+					type: "item"
+				}
+				{
+					id: "75772CCBB7642BD2"
+					item: "functionalstorage:acacia_4"
+					type: "item"
+				}
+				{
+					id: "4B00201930186FE7"
+					item: "functionalstorage:dark_oak_4"
+					type: "item"
+				}
+				{
+					id: "0449C6E5CA9C836D"
+					item: "functionalstorage:crimson_4"
+					type: "item"
+				}
+				{
+					id: "58F1F045DD7FC0E5"
+					item: "functionalstorage:warped_4"
+					type: "item"
+				}
+				{
+					id: "487C3F23AB6E18AF"
+					item: "functionalstorage:mangrove_4"
+					type: "item"
+				}
+				{
+					id: "06D443188A9D42F2"
+					item: "functionalstorage:cherry_4"
+					type: "item"
+				}
+			]
+			title: "A Drawer Divided"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"Craft a &6Fluid Drawer&r."
+				""
+				"These drawers can hold fluids."
+			]
+			id: "4A61E9EABEBC643A"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "3D61BF05B697D35C"
+					item: "functionalstorage:fluid_1"
+					type: "item"
+				}
+				{
+					id: "65C7278DF3094D59"
+					item: "functionalstorage:fluid_2"
+					type: "item"
+				}
+				{
+					id: "5CFFC947965EDB19"
+					item: "functionalstorage:fluid_4"
+					type: "item"
+				}
+			]
+			title: "Getting your drawers wet"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"Buy a &6Storage Controller&r from the &6Storage Smith&r."
+				""
+				"A &6Storage Controller&r allows &5you&r, or a &5hopping&r, or other &5fun&r items to access all of the connected &6Storage Drawers&r."
+				""
+				"Things could get &5interesting&r if connected to an &6External Storage Cable&r."
+			]
+			id: "6BE29042F18FBD9B"
+			tasks: [{
+				id: "05BD2E459453F703"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
+			title: "Control your Drawers"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"Buy a &6Compacting Drawer&r from the &6Storage Smith&r."
+				""
+				"These Drawers store items as their &b1x1&r, &b2x2&r, and &b3x3&r recipes all at the same time."
+				""
+				"So &b81&r &6Iron Nuggets&r will also be accessible as &b9&r &6Iron Ingots&r or &b1&r &6Iron Block&r."
+				""
+				"There's something... &5Uncrafty&r about this block."
+			]
+			id: "6A67DFC548700C96"
+			tasks: [{
+				id: "4AEA0B63F90C2080"
+				item: "functionalstorage:compacting_drawer"
+				type: "item"
+			}]
+			title: "Shrodinger's Ingot"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BE29042F18FBD9B"]
+			description: [
+				"Buy a &6Controller Access Point&r from the &6Storage Smith&r."
+				""
+				"A collection of &6Drawers&r may only have one &6Controller&r."
+				""
+				"The &6Controller Access Point&r functions as another point for &5hopping&r and &5fun&r items to access your drawers from."
+			]
+			id: "7044FD2CE67D6CF7"
+			tasks: [{
+				id: "09EB9C4B930B0A11"
+				item: "functionalstorage:controller_extension"
+				type: "item"
+			}]
+			title: "There can only be One"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6BE29042F18FBD9B"]
+			description: [
+				"Buy a &6Linking Tool&r from the &6Storage Smith&r."
+				""
+				"This is where the magic happens."
+				""
+				"Can link any Drawer within a &b17&rx&b17&rx&b17&r space centered around a &6Controller&r to that &6Controller&r."
+				""
+				"Unlike &6Sophisticated Storage&r, they don't even have to be touching!"
+			]
+			id: "15894173F5613E61"
+			tasks: [{
+				id: "445C5E9655582B7E"
+				item: {
+					Count: 1
+					id: "functionalstorage:linking_tool"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Link 'em up"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Buy a &6Configuration Tool&r from the &6Storage Smith&r."
+				""
+				"This tool does some cool things to your &6Drawers&r depending on what mode it's in."
+				""
+				"&9Locking&r: allows you to lock the &6Drawer&r to the item it contains, even when empty."
+				""
+				"&6Hide/Show Amounts&r: hide/show the number identifying how many items are in the &6Drawer&r."
+				""
+				"&aHide/Show Item Renders&r: hide/show the image of the stored item."
+				""
+				"&dHide/Show Upgrade Renders&r: hide/show the upgrade images on the &6Drawer&r."
+				""
+				"&4Swap Indicator&r: toggles a progress bar to indicate how full the &6Drawer&r is."
+			]
+			id: "2DFEA81B5CB986A6"
+			tasks: [{
+				id: "57E63A367EFDD947"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			title: "Lock 'em down and Cover 'em up"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"Buy a &6Copper Upgrade&r from the &6Storage Smith&r."
+				""
+				"The &6Copper Upgrade&r allows you to store more &6items/fluids&r in your &6Drawers&r."
+				""
+				"Careful! Each &6Drawer&r can only have &b4&r storage &6Upgrades&r at a time."
+				""
+				"To access the Upgrade Slots, right click on the &6edge&r of the &6Drawer&r."
+			]
+			id: "29B95A67F9BC03A5"
+			tasks: [{
+				id: "497432419CA25F6E"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			title: "Upgrade"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"Craft the &6Iron Downgrade&r."
+				""
+				"No, more is NOT better."
+				""
+				"This reduces the amount of items your &6Drawers&r can store."
+				""
+				"Why would you want to do that?"
+			]
+			id: "1B30E68B63DA6E5F"
+			tasks: [{
+				id: "235958A1BD1E5957"
+				item: "functionalstorage:iron_downgrade"
+				type: "item"
+			}]
+			title: "Downgrade"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6ACC0FCAA7777B3F"]
+			description: [
+				"Craft the &6Collector Upgrade&r."
+				""
+				"When installed on a &6Drawer&r, &5item entities&r will treat it like a &6Hopper&r. "
+				""
+				"But it can be configured to suck up items that touch any one side."
+				""
+				"&5&oSlooorp.&r"
+			]
+			id: "095008AAB6DE0625"
+			tasks: [{
+				id: "2041CA0FCBA01B00"
+				item: "functionalstorage:collector_upgrade"
+				type: "item"
+			}]
+			title: "Gotta Catch 'Em All"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["033125D011ADD5AF"]
+			description: [
+				"&6Utility Upgrades&r are wierd."
+				""
+				"To &5configure&r them, they must be &6right clicked&r while inside an &5inventory&r."
+				""
+				"&5Yours&r, a &5chest's&r, a &5drawer's&r, doesn't matter."
+				""
+				"Now show me you &5understand&r."
+			]
+			id: "6ACC0FCAA7777B3F"
+			tasks: [{
+				id: "0F3B0F147577168E"
+				title: "Utility Upgrades"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6ACC0FCAA7777B3F"]
+			description: [
+				"Craft the &6Puller Upgrade&r."
+				""
+				"Also acts like a &6Hopper&r in a &6Drawer&r, in that it will pull items from &6connected inventories&r."
+				""
+				"Can also be configured to steal items from any side."
+				""
+				"&5&oYoink!&r"
+			]
+			id: "281A023F20F47FDB"
+			tasks: [{
+				id: "2320712423F947B2"
+				item: "functionalstorage:puller_upgrade"
+				type: "item"
+			}]
+			title: "Also a Hopper Upgrade"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6ACC0FCAA7777B3F"]
+			description: [
+				"Craft the &6Pusher Upgrade&r."
+				""
+				"Also acts like a &6Hopper&r in a &6Drawer&r, in that it will push items into &6connected inventories&r."
+				""
+				"Can also be configured to push items from any side."
+				""
+				"&5&oHee Hee Hoooo!&r"
+			]
+			id: "4E01605AFBA8CA4C"
+			tasks: [{
+				id: "524E221E908DE673"
+				item: "functionalstorage:pusher_upgrade"
+				type: "item"
+			}]
+			title: "Yet Another Hopper Upgrade"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6ACC0FCAA7777B3F"]
+			description: [
+				"Buy a &6Void Upgrade&r from the &6Storage Smith&r."
+				""
+				"The &6Void Upgrade&r will allow a &6Drawer&r to continue to accept items even when full. "
+				""
+				"It will just banish them to the void, &5never to be seen again&r, instead of keeping them."
+				""
+				"&5&oYugi...No!&r"
+			]
+			id: "0E94A00E904EFAAB"
+			tasks: [{
+				id: "280D057C51B1A839"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			title: "To the Shadow Realm"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6ACC0FCAA7777B3F"]
+			description: [
+				"Craft the &6Redstone Upgrade&r."
+				""
+				"Causes the &6Drawer&r to emit a &5redstone signal&r proportionate to how full it is."
+				""
+				"Maximum signal strength is &b16&r, but you knew that."
+			]
+			id: "1C57C08044E84878"
+			tasks: [{
+				id: "5C36F9282D8A3CC9"
+				item: "functionalstorage:redstone_upgrade"
+				type: "item"
+			}]
+			title: "Compared to Who?"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6ACC0FCAA7777B3F"]
+			description: [
+				"Ha! You wish!"
+				""
+				"The Creative Upgrade cannot be obtained. For those of you who cheated for it, it allows a Drawer to never run out of the item stored in it."
+				""
+				"But you already cheated, so why would you need that?"
+			]
+			icon: "functionalstorage:creative_vending_upgrade"
+			id: "7001027A854835A9"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "58663BBFAD87F2FB"
+					item: "functionalstorage:creative_vending_upgrade"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "52D1D986EBE1DCCE"
+					secret: true
+					stat: "minecraft:leave_game"
+					type: "stat"
+					value: 1
+				}
+			]
+			title: "Unlimited Power!"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Craft the &6Armory Cabinet&r."
+				""
+				"This block will store ALL your &5armor&r and &5tools&r, without crashing your game!"
+				""
+				"It doesn't come with its own interface though. So you might want to connect it to something more...&5refined&r."
+			]
+			id: "373D13C8ACC4451E"
+			tasks: [{
+				id: "6D1B0DE0DB5B0ECC"
+				item: "functionalstorage:armory_cabinet"
+				type: "item"
+			}]
+			title: "A Blind Wardrobe"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Craft 2 &6Ender Drawer&rs."
+				""
+				"Through masterful use of quantum tunneling (and the &6Linking Tool&r), your Ender Drawer is both here and there at the same time!"
+				""
+				"&5&oRequires 2 drawers to function. Some assembly required. Ender Drawers do not actually use quantum tunneling and all claims of teleportation, elongated limbs, blackened skin, and uncontrollable screaming after excessive use have been disproven by the SSVFDA.&r"
+			]
+			id: "14ED7CBD5744303D"
+			tasks: [{
+				count: 2L
+				id: "7B08AB4DF8160FF5"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
+			}]
+			title: "Both Here and There"
+			x: -1.0d
+			y: 4.5d
+		}
+	]
+	title: "Functional Storage"
+}
