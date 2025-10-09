@@ -1,0 +1,11 @@
+{
+  "type": "littlejoys:gold_rush",
+  "eventCondition": {
+    "type": "is_state",
+    "state": {
+      "Name": "minecraft:nether_quartz_ore"
+    }
+  },
+  "lootTable": "society:util/gold_rush_nether_quartz",
+  "chanceMultiplier": 0.25
+}

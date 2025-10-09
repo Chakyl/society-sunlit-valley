@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "c": {
+            "item": "society:ocean_jelly"
+        },
+        "r": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:blue_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:dive_ball",
+        "count": 4
+    }
+}

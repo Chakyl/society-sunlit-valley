@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:pink_apricorn"
+        },
+        "c": {
+            "item": "society:butterfly_amber"
+        },
+        "r": {
+            "item": "cobblemon:pink_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:pink_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:love_ball",
+        "count": 4
+    }
+}

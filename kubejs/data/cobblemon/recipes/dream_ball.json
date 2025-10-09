@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:pink_apricorn"
+        },
+        "c": {
+            "item": "windswept:dream_catcher"
+        },
+        "r": {
+            "item": "cobblemon:pink_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:blue_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:dream_ball",
+        "count": 4
+    }
+}

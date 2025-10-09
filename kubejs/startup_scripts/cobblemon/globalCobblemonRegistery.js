@@ -123,48 +123,48 @@ global.uncommonCobblemonBerries = [
   { item: "cobblemon:mago_berry", value: 8 },
   { item: "cobblemon:aguav_berry", value: 8 },
   { item: "cobblemon:iapapa_berry", value: 8 },
-  { item: "cobblemon:sitrus_berry", value: 16 },
-  { item: "cobblemon:touga_berry", value: 16 },
-  { item: "cobblemon:cornn_berry", value: 16 },
-  { item: "cobblemon:magost_berry", value: 16 },
-  { item: "cobblemon:rabuta_berry", value: 16 },
-  { item: "cobblemon:nomel_berry", value: 16 },
+  { item: "cobblemon:sitrus_berry", value: 12 },
+  { item: "cobblemon:touga_berry", value: 12 },
+  { item: "cobblemon:cornn_berry", value: 12 },
+  { item: "cobblemon:magost_berry", value: 12 },
+  { item: "cobblemon:rabuta_berry", value: 12 },
+  { item: "cobblemon:nomel_berry", value: 12 },
+  { item: "cobblemon:hopo_berry", value: 12 },
 ];
 global.uncommonCobblemonBerries.forEach((recipe) => {
   global.cobbleCrops.push(recipe);
 });
 global.rareCobblemonBerries = [
-  { item: "cobblemon:enigma_berry", value: 32 },
-  { item: "cobblemon:pomeg_berry", value: 32 },
-  { item: "cobblemon:kelpsy_berry", value: 32 },
-  { item: "cobblemon:qualot_berry", value: 32 },
-  { item: "cobblemon:hondew_berry", value: 32 },
-  { item: "cobblemon:grepa_berry", value: 32 },
-  { item: "cobblemon:tamato_berry", value: 32 },
-  { item: "cobblemon:spelon_berry", value: 32 },
-  { item: "cobblemon:pamtre_berry", value: 32 },
-  { item: "cobblemon:watmel_berry", value: 32 },
-  { item: "cobblemon:durin_berry", value: 32 },
-  { item: "cobblemon:belue_berry", value: 32 },
+  { item: "cobblemon:enigma_berry", value: 16 },
+  { item: "cobblemon:pomeg_berry", value: 16 },
+  { item: "cobblemon:kelpsy_berry", value: 16 },
+  { item: "cobblemon:qualot_berry", value: 16 },
+  { item: "cobblemon:hondew_berry", value: 16 },
+  { item: "cobblemon:grepa_berry", value: 16 },
+  { item: "cobblemon:tamato_berry", value: 16 },
+  { item: "cobblemon:spelon_berry", value: 16 },
+  { item: "cobblemon:pamtre_berry", value: 16 },
+  { item: "cobblemon:watmel_berry", value: 16 },
+  { item: "cobblemon:durin_berry", value: 16 },
+  { item: "cobblemon:belue_berry", value: 16 },
 ];
 global.rareCobblemonBerries.forEach((recipe) => {
   global.cobbleCrops.push(recipe);
 });
 global.legendaryCobblemonBerries = [
-  { item: "cobblemon:kee_berry", value: 64 },
-  { item: "cobblemon:maranga_berry", value: 64 },
-  { item: "cobblemon:hopo_berry", value: 16 },
-  { item: "cobblemon:liechi_berry", value: 64 },
-  { item: "cobblemon:ganlon_berry", value: 64 },
-  { item: "cobblemon:salac_berry", value: 64 },
-  { item: "cobblemon:petaya_berry", value: 64 },
-  { item: "cobblemon:apicot_berry", value: 64 },
-  { item: "cobblemon:lansat_berry", value: 64 },
-  { item: "cobblemon:starf_berry", value: 64 },
-  { item: "cobblemon:micle_berry", value: 64 },
-  { item: "cobblemon:custap_berry", value: 64 },
-  { item: "cobblemon:jaboca_berry", value: 64 },
-  { item: "cobblemon:rowap_berry", value: 64 },
+  { item: "cobblemon:kee_berry", value: 32 },
+  { item: "cobblemon:maranga_berry", value: 32 },
+  { item: "cobblemon:liechi_berry", value: 32 },
+  { item: "cobblemon:ganlon_berry", value: 32 },
+  { item: "cobblemon:salac_berry", value: 32 },
+  { item: "cobblemon:petaya_berry", value: 32 },
+  { item: "cobblemon:apicot_berry", value: 32 },
+  { item: "cobblemon:lansat_berry", value: 32 },
+  { item: "cobblemon:starf_berry", value: 32 },
+  { item: "cobblemon:micle_berry", value: 32 },
+  { item: "cobblemon:custap_berry", value: 32 },
+  { item: "cobblemon:jaboca_berry", value: 32 },
+  { item: "cobblemon:rowap_berry", value: 32 },
 ];
 
 global.legendaryCobblemonBerries.forEach((recipe) => {
@@ -178,9 +178,9 @@ global.cobblemonPreserves = [
   { item: "sunlit_cobblemon:leek_preserves", value: 40 },
   { item: "sunlit_cobblemon:vivichoke_preserves", value: 1280 },
   { item: "sunlit_cobblemon:common_cobbleberry_preserves", value: 80 },
-  { item: "sunlit_cobblemon:uncommon_cobbleberry_preserves", value: 240 },
-  { item: "sunlit_cobblemon:rare_cobbleberry_preserves", value: 640 },
-  { item: "sunlit_cobblemon:legendary_cobbleberry_preserves", value: 1280 },
+  { item: "sunlit_cobblemon:uncommon_cobbleberry_preserves", value: 200 },
+  { item: "sunlit_cobblemon:rare_cobbleberry_preserves", value: 320 },
+  { item: "sunlit_cobblemon:legendary_cobbleberry_preserves", value: 640 },
 ];
 global.cobbleAdventuring.forEach((miscItem) => {
   const { item, value } = miscItem;

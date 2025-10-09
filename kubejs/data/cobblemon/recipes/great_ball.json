@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "c": {
+            "item": "society:earth_crystal"
+        },
+        "r": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:blue_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:great_ball",
+        "count": 4
+    }
+}

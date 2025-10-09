@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GCG",
+        "LHL",
+		"I I"
+    ],
+    "key": {
+        "I": {
+            "item": "oreganized:silver_ingot"
+        },
+        "G": {
+            "item": "society:sparkstone"
+        },
+        "C": {
+            "item": "minecraft:gold_ingot"
+        },
+        "L": {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "H": {
+            "item": "society:froggy_helm"
+        }
+    },
+    "result": {
+        "item": "cobblemon:exp_share"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "c": {
+            "item": "create:zinc_block"
+        },
+        "r": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:white_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:premier_ball",
+        "count": 4
+    }
+}

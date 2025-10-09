@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "c": {
+            "item": "crabbersdelight:pearl_block"
+        },
+        "r": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:white_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:net_ball",
+        "count": 4
+    }
+}

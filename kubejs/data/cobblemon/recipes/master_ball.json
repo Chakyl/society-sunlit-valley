@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" t ", "lcr", " b "],
+  "key": {
+    "t": {
+      "item": "minecraft:shulker_shell"
+    },
+    "l": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "c": {
+      "item": "numismatics:prismatic_coin"
+    },
+    "r": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "b": {
+      "item": "minecraft:shulker_shell"
+    }
+  },
+  "result": {
+    "item": "cobblemon:master_ball"
+  }
+}

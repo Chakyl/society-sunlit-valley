@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:tumblestone"
+        },
+        "c": {
+            "item": "create:zinc_block"
+        },
+        "r": {
+            "item": "cobblemon:tumblestone"
+        },
+        "b": {
+            "item": "cobblemon:green_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:ancient_verdant_ball",
+        "count": 4
+    }
+}

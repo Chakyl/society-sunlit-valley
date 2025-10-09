@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:sky_tumblestone"
+        },
+        "c": {
+            "item": "society:earth_crystal"
+        },
+        "r": {
+            "item": "cobblemon:sky_tumblestone"
+        },
+        "b": {
+            "item": "cobblemon:white_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:ancient_wing_ball",
+        "count": 4
+    }
+}

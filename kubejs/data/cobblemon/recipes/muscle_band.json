@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "WIW",
+        "D I",
+		"WDW"
+    ],
+    "key": {
+        "W": {
+            "item": "society:yellow_sheet"
+        },
+        "D": {
+            "item": "society:ruby"
+        },
+        "I": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "cobblemon:muscle_band"
+    }
+}

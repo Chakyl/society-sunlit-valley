@@ -538,7 +538,7 @@
 				dimension: ""
 				form: ""
 				gender: ""
-				icon: "minecraft:snowball"
+				icon: "cobblemon:normal_gem"
 				id: "4D2AABA85E97B271"
 				poke_ball_used: ""
 				pokemon: ""
@@ -555,7 +555,7 @@
 		}
 		{
 			dependencies: ["1C80F9FD2A3E313F"]
-			icon: "cobblemon:safari_ball"
+			icon: "cobblemon:grass_gem"
 			id: "72D0A8BDEF603EC8"
 			rewards: [{
 				count: 5
@@ -585,7 +585,7 @@
 		}
 		{
 			dependencies: ["1C80F9FD2A3E313F"]
-			icon: "minecraft:snowball"
+			icon: "cobblemon:water_gem"
 			id: "4846C41D43B92216"
 			rewards: [
 				{
@@ -602,7 +602,7 @@
 			]
 			tasks: [{
 				action: "catch"
-				amount: 15L
+				amount: 10L
 				biome: ""
 				dimension: ""
 				form: ""
@@ -610,7 +610,7 @@
 				id: "5CABD23ACF7F09D2"
 				poke_ball_used: ""
 				pokemon: ""
-				pokemon_type: "normal"
+				pokemon_type: "water"
 				region: ""
 				shiny: false
 				time_max: 24000L
@@ -662,7 +662,7 @@
 				"0F3E297B983F40DC"
 				"516FF5028F8EE1E5"
 			]
-			icon: "cobblemon:rock_gem"
+			icon: "cobblemon:smooth_rock"
 			id: "50C5F52359BCCD70"
 			rewards: [
 				{
@@ -723,7 +723,7 @@
 				item: "twigs:twig"
 				type: "item"
 			}]
-			title: "Rock Tier Complete!"
+			title: "Iron Tier Complete!"
 			x: 7.0d
 			y: 2.5d
 		}

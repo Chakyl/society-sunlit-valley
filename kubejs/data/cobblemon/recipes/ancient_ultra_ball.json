@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:tumblestone"
+        },
+        "c": {
+            "item": "society:fire_quartz"
+        },
+        "r": {
+            "item": "cobblemon:tumblestone"
+        },
+        "b": {
+            "item": "cobblemon:black_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:ancient_ultra_ball",
+        "count": 4
+    }
+}

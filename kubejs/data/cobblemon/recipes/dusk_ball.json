@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "c": {
+            "item": "society:moth_pollen"
+        },
+        "r": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:green_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:dusk_ball",
+        "count": 4
+    }
+}

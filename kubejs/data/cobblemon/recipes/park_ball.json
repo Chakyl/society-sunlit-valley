@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "c": {
+            "item": "veggiesdelight:turnip_salad"
+        },
+        "r": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:green_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:park_ball",
+        "count": 4
+    }
+}

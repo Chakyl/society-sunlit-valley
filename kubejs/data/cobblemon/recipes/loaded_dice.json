@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["SPS", "CDC", "SCS"],
+  "key": {
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "P": {
+      "item": "society:perfect_cherry"
+    },
+    "C": {
+      "item": "cobblemon:clover_sweet"
+    },
+    "D": {
+      "item": "etcetera:dice"
+    }
+  },
+  "result": {
+    "item": "cobblemon:loaded_dice"
+  }
+}

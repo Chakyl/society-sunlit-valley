@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "c": {
+            "item": "oreganized:lead_block"
+        },
+        "r": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:black_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:heavy_ball",
+        "count": 4
+    }
+}

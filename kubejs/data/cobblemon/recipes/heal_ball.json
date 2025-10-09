@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:pink_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "c": {
+            "item": "farm_and_charm:strawberry_bag"
+        },
+        "r": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:pink_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:heal_ball",
+        "count": 4
+    }
+}

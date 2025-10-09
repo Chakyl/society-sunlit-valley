@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PTS",
+        "TET",
+		"STP"
+    ],
+    "key": {
+        "S": {
+            "item": "cobblemon:fire_stone"
+        },
+        "T": {
+            "item": "minecraft:tinted_glass"
+        },
+        "E": {
+            "item": "crabbersdelight:pearl"
+        },
+        "P": {
+            "item": "society:fire_quartz"
+        }
+    },
+    "result": {
+        "item": "cobblemon:flame_orb"
+    }
+}

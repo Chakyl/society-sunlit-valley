@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:black_tumblestone"
+        },
+        "c": {
+            "item": "create:zinc_block"
+        },
+        "r": {
+            "item": "cobblemon:black_tumblestone"
+        },
+        "b": {
+            "item": "cobblemon:black_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:ancient_heavy_ball",
+        "count": 4
+    }
+}

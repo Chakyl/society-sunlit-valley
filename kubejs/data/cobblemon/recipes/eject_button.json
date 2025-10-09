@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "IBI",
+        "YPY",
+		"IRI"
+    ],
+    "key": {
+        "Y": {
+            "item": "minecraft:yellow_dye"
+        },
+        "I": {
+            "item": "create:zinc_block"
+        },
+        "B": {
+            "tag": "minecraft:buttons"
+        },
+        "R": {
+            "item": "society:battery"
+        },
+        "P": {
+            "item": "society:ribbit_gadget"
+        }
+    },
+    "result": {
+        "item": "cobblemon:eject_button"
+    }
+}

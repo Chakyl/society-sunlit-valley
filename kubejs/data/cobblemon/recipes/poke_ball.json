@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "c": {
+            "item": "create:zinc_block"
+        },
+        "r": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:red_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:poke_ball",
+        "count": 4
+    }
+}

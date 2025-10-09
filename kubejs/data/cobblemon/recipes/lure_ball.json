@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "c": {
+            "item": "society:aquamarine"
+        },
+        "r": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:red_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:lure_ball",
+        "count": 4
+    }
+}

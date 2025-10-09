@@ -73,19 +73,6 @@ BlockEvents.broken("society:prize_machine", (e) => {
   e.block.popItem(Item.of("society:prize_machine", `{prize:${e.block.properties.get("prize")}}`));
 });
 
-BlockEvents.broken(
-  [
-    "society:iron_sprinkler",
-    "society:gold_sprinkler",
-    "society:diamond_sprinkler",
-    "society:netherite_sprinkler",
-  ],
-  (e) => {
-    if (e.block.properties.get("sticklogged").toLowerCase() == "true") {
-      e.block.popItem("minecraft:stick");
-    }
-  }
-);
 BlockEvents.broken("society:coin_leaderboard", (e) => {
   global.clearOldTextDisplay(e.block, "leaderboard");
 });

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "c": {
+            "item": "society:fire_quartz"
+        },
+        "r": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:black_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:ultra_ball",
+        "count": 4
+    }
+}

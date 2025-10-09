@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "c": {
+            "item": "society:furniture_box"
+        },
+        "r": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:red_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:friend_ball",
+        "count": 4
+    }
+}

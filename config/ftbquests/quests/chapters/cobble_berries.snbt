@@ -1,0 +1,722 @@
+{
+	autofocus_id: "3AB4EA1D879A42B9"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cobble_berries"
+	group: "15230846E14B6926"
+	icon: "cobblemon:rawst_berry"
+	id: "77D1971B716B2E27"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			id: "24D64A1371457A64"
+			tasks: [{
+				id: "125DC5A006646784"
+				item: "cobblemon:oran_berry"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			id: "50952B56A751D45B"
+			tasks: [{
+				id: "7A5AD04C336FE00A"
+				item: "cobblemon:cheri_berry"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			id: "3D8901EE4F067780"
+			tasks: [{
+				id: "27A1D4E91A7A6497"
+				item: "cobblemon:chesto_berry"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			id: "3D69DB7478D39169"
+			tasks: [{
+				id: "605831E1901C37F1"
+				item: "cobblemon:pecha_berry"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			id: "20BADD71652C5405"
+			tasks: [{
+				id: "2E0EAA92BF5270A5"
+				item: "cobblemon:rawst_berry"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			id: "2DC1F5112005E003"
+			tasks: [{
+				id: "35F7DE0A9C13A284"
+				item: "cobblemon:aspear_berry"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			id: "0E07EFB5112B1DA2"
+			tasks: [{
+				id: "2FB719EE49FED4B3"
+				item: "cobblemon:persim_berry"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			id: "5EC24BECBF8CD599"
+			tasks: [{
+				id: "5EA99D93236BE955"
+				item: "cobblemon:razz_berry"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			id: "55C3F5D11427D7E1"
+			tasks: [{
+				id: "17607460489FCD61"
+				item: "cobblemon:bluk_berry"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -5.5d
+		}
+		{
+			id: "091EC44C624B394B"
+			tasks: [{
+				id: "0E246E7325F403C3"
+				item: "cobblemon:nanab_berry"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			id: "1F206BD57A1BE951"
+			tasks: [{
+				id: "0D733C78B68A9B67"
+				item: "cobblemon:wepear_berry"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			id: "0B692350C7FC55DF"
+			tasks: [{
+				id: "01883832D9BA93E4"
+				item: "cobblemon:pinap_berry"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			id: "2AC579BE878502A3"
+			tasks: [{
+				id: "2C48DBDDFE0B281B"
+				item: "cobblemon:occa_berry"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			id: "02675D90D3FF0A4C"
+			tasks: [{
+				id: "14164EEDE651CF7C"
+				item: "cobblemon:passho_berry"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			id: "4578B69F6B65FE1E"
+			tasks: [{
+				id: "17F97315B71866EB"
+				item: "cobblemon:wacan_berry"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			id: "2FBA9F694A0B46A4"
+			tasks: [{
+				id: "016D138D4538E59B"
+				item: "cobblemon:rindo_berry"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			id: "57566390DBF15A9A"
+			tasks: [{
+				id: "55F18228BE168E7A"
+				item: "cobblemon:yache_berry"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			id: "10964D674924A01C"
+			tasks: [{
+				id: "7A5A86DC0DC3D75B"
+				item: "cobblemon:chople_berry"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			id: "244AF05728403845"
+			tasks: [{
+				id: "571B2ADD5F3F34E3"
+				item: "cobblemon:kebia_berry"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			id: "2236EF5C93122CC4"
+			tasks: [{
+				id: "2C75948C707ED045"
+				item: "cobblemon:shuca_berry"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			id: "1FBA344DBA44547D"
+			tasks: [{
+				id: "7A8280971AA6C161"
+				item: "cobblemon:coba_berry"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "149E2BB4DCE97838"
+			tasks: [{
+				id: "472FA2FF77D4D972"
+				item: "cobblemon:payapa_berry"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "5CAC626E5B08960C"
+			tasks: [{
+				id: "43FBEE1971E7E083"
+				item: "cobblemon:tanga_berry"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			id: "2E041EFC968E9077"
+			tasks: [{
+				id: "1A8CF98D18B94652"
+				item: "cobblemon:charti_berry"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "47349F3738D3B158"
+			tasks: [{
+				id: "36B0F8C3301684F6"
+				item: "cobblemon:kasib_berry"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			id: "1A1C6FEEA80AD38C"
+			tasks: [{
+				id: "7E9319B0866CEAE1"
+				item: "cobblemon:colbur_berry"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			id: "24FAA3581C05FC21"
+			tasks: [{
+				id: "2E1B83E0F2493B8C"
+				item: "cobblemon:haban_berry"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "0B19FCEEA4E22481"
+			tasks: [{
+				id: "5811A484A7BDF09E"
+				item: "cobblemon:chilan_berry"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "02A5BA767419B561"
+			tasks: [{
+				id: "0F462578B98470F4"
+				item: "cobblemon:babiri_berry"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			id: "272A263092475741"
+			tasks: [{
+				id: "245EEC1D7A3456C3"
+				item: "cobblemon:roseli_berry"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "51688F2A55945EB8"
+			tasks: [{
+				id: "4980D5B4A1703477"
+				item: "cobblemon:leppa_berry"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			id: "646CD6F449B2EC23"
+			tasks: [{
+				id: "2ED09A0A55124101"
+				item: "cobblemon:lum_berry"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			id: "40D700A5AC529052"
+			tasks: [{
+				id: "5EB5EEBB0D96C37D"
+				item: "cobblemon:figy_berry"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			id: "3A3514857B55170A"
+			tasks: [{
+				id: "161788EA5C31A5DB"
+				item: "cobblemon:wiki_berry"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			id: "6DEB9B28BA4C17C8"
+			tasks: [{
+				id: "4CDC62E8BFE8A010"
+				item: "cobblemon:mago_berry"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "2FB52A00E4C00079"
+			tasks: [{
+				id: "2065D76ECB5E9DFC"
+				item: "cobblemon:aguav_berry"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			id: "09644FA0D03EA52B"
+			tasks: [{
+				id: "0D805AC31C7879C0"
+				item: "cobblemon:iapapa_berry"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			id: "772E8903055E1981"
+			tasks: [{
+				id: "18CA52B30298604C"
+				item: "cobblemon:sitrus_berry"
+				type: "item"
+			}]
+			x: -3.1666666666666856d
+			y: 4.047619047619044d
+		}
+		{
+			id: "03CECB87AF155722"
+			tasks: [{
+				id: "627FDB8A26147EBB"
+				item: "cobblemon:touga_berry"
+				type: "item"
+			}]
+			x: -1.6666666666666856d
+			y: 4.047619047619044d
+		}
+		{
+			id: "260A9022BA969651"
+			tasks: [{
+				id: "06BE58BB03F8CF30"
+				item: "cobblemon:cornn_berry"
+				type: "item"
+			}]
+			x: -0.16666666666668561d
+			y: 4.047619047619044d
+		}
+		{
+			id: "1E2CC0F3EE27031E"
+			tasks: [{
+				id: "0F255A6ADE91A4CE"
+				item: "cobblemon:rabuta_berry"
+				type: "item"
+			}]
+			x: 2.8333333333333144d
+			y: 4.047619047619044d
+		}
+		{
+			id: "06F036D7CF32D116"
+			tasks: [{
+				id: "4A20B5A273282BD7"
+				item: "cobblemon:magost_berry"
+				type: "item"
+			}]
+			x: 1.3333333333333144d
+			y: 4.047619047619044d
+		}
+		{
+			id: "7ED80368FE13E27D"
+			tasks: [{
+				id: "75E5D2E0BA4A1A5F"
+				item: "cobblemon:nomel_berry"
+				type: "item"
+			}]
+			x: 4.333333333333314d
+			y: 4.047619047619044d
+		}
+		{
+			id: "3CA6D1AC076027C4"
+			tasks: [{
+				id: "278FC918175F7BCF"
+				item: "cobblemon:enigma_berry"
+				type: "item"
+			}]
+			x: -3.1666666666666856d
+			y: 6.547619047619044d
+		}
+		{
+			id: "683B4B703AD025E0"
+			tasks: [{
+				id: "77C666ED3F30F0B5"
+				item: "cobblemon:pomeg_berry"
+				type: "item"
+			}]
+			x: -1.6666666666666856d
+			y: 6.547619047619044d
+		}
+		{
+			id: "1590B779C9BBA185"
+			tasks: [{
+				id: "04D336637B1D9451"
+				item: "cobblemon:kelpsy_berry"
+				type: "item"
+			}]
+			x: -0.16666666666668561d
+			y: 6.547619047619044d
+		}
+		{
+			id: "5B0D5FFCA7FF9FBE"
+			tasks: [{
+				id: "74C9EF4789573A53"
+				item: "cobblemon:qualot_berry"
+				type: "item"
+			}]
+			x: 1.3333333333333144d
+			y: 6.547619047619044d
+		}
+		{
+			id: "3608A6277CDBB907"
+			tasks: [{
+				id: "78FCBAEE396F30E5"
+				item: "cobblemon:hondew_berry"
+				type: "item"
+			}]
+			x: 2.8333333333333144d
+			y: 6.547619047619044d
+		}
+		{
+			id: "58BE633BDF246351"
+			tasks: [{
+				id: "51E5F67BA0A91E0F"
+				item: "cobblemon:grepa_berry"
+				type: "item"
+			}]
+			x: 4.333333333333314d
+			y: 6.547619047619044d
+		}
+		{
+			id: "6318E8527A0F3B9E"
+			tasks: [{
+				id: "4A1E0EF74233BA2F"
+				item: "cobblemon:tamato_berry"
+				type: "item"
+			}]
+			x: -3.1666666666666856d
+			y: 8.047619047619044d
+		}
+		{
+			id: "1705EA49315278B7"
+			tasks: [{
+				id: "28F8C2A3EB45E84A"
+				item: "cobblemon:spelon_berry"
+				type: "item"
+			}]
+			x: -1.6666666666666856d
+			y: 8.047619047619044d
+		}
+		{
+			id: "7984A3ED394C2FD1"
+			tasks: [{
+				id: "720BAB4F53176BB8"
+				item: "cobblemon:pamtre_berry"
+				type: "item"
+			}]
+			x: -0.16666666666668561d
+			y: 8.047619047619044d
+		}
+		{
+			id: "1AAE222372D25687"
+			tasks: [{
+				id: "6971DE4440E6EA3B"
+				item: "cobblemon:watmel_berry"
+				type: "item"
+			}]
+			x: 1.3333333333333144d
+			y: 8.047619047619044d
+		}
+		{
+			id: "1B28A3ABF638183F"
+			tasks: [{
+				id: "0EEDB7EE3DE67011"
+				item: "cobblemon:durin_berry"
+				type: "item"
+			}]
+			x: 2.8333333333333144d
+			y: 8.047619047619044d
+		}
+		{
+			id: "1B0AD1CA829FC20F"
+			tasks: [{
+				id: "37DBBAF58F009BEF"
+				item: "cobblemon:belue_berry"
+				type: "item"
+			}]
+			x: 4.333333333333314d
+			y: 8.047619047619044d
+		}
+		{
+			id: "7D46DFACB0DC9E0D"
+			tasks: [{
+				id: "2F1C3A89959B616B"
+				item: "cobblemon:kee_berry"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			id: "19C4337C187A7CA5"
+			tasks: [{
+				id: "56B60665ACF8B59A"
+				item: "cobblemon:maranga_berry"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			id: "70B07E5E68994DBC"
+			tasks: [{
+				id: "0A73416B94B1407A"
+				item: "cobblemon:custap_berry"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.5d
+		}
+		{
+			id: "799B7E91E378442B"
+			tasks: [{
+				id: "755523EE34D4B862"
+				item: "cobblemon:jaboca_berry"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			id: "7812AAF52C542E36"
+			tasks: [{
+				id: "5C5F6CE17BC11B05"
+				item: "cobblemon:rowap_berry"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"2E041EFC968E9077"
+				"06F036D7CF32D116"
+				"1B28A3ABF638183F"
+				"7812AAF52C542E36"
+				"24FAA3581C05FC21"
+				"47349F3738D3B158"
+				"646CD6F449B2EC23"
+				"2FB52A00E4C00079"
+				"0B19FCEEA4E22481"
+				"244AF05728403845"
+				"0B692350C7FC55DF"
+				"4578B69F6B65FE1E"
+				"272A263092475741"
+				"3D69DB7478D39169"
+				"1705EA49315278B7"
+				"02A5BA767419B561"
+				"57566390DBF15A9A"
+				"3CA6D1AC076027C4"
+				"5B0D5FFCA7FF9FBE"
+				"0E07EFB5112B1DA2"
+				"5EC24BECBF8CD599"
+				"7D46DFACB0DC9E0D"
+				"2236EF5C93122CC4"
+				"1F206BD57A1BE951"
+				"02675D90D3FF0A4C"
+				"5CAC626E5B08960C"
+				"6DEB9B28BA4C17C8"
+				"50952B56A751D45B"
+				"10964D674924A01C"
+				"70B07E5E68994DBC"
+				"1FBA344DBA44547D"
+				"1B0AD1CA829FC20F"
+				"09644FA0D03EA52B"
+				"091EC44C624B394B"
+				"55C3F5D11427D7E1"
+				"2DC1F5112005E003"
+				"1590B779C9BBA185"
+				"1AAE222372D25687"
+				"799B7E91E378442B"
+				"6318E8527A0F3B9E"
+				"2AC579BE878502A3"
+				"7ED80368FE13E27D"
+				"3D8901EE4F067780"
+				"20BADD71652C5405"
+				"24D64A1371457A64"
+				"1E2CC0F3EE27031E"
+				"19C4337C187A7CA5"
+				"51688F2A55945EB8"
+				"3A3514857B55170A"
+				"260A9022BA969651"
+				"58BE633BDF246351"
+				"40D700A5AC529052"
+				"772E8903055E1981"
+				"3608A6277CDBB907"
+				"1A1C6FEEA80AD38C"
+				"7984A3ED394C2FD1"
+				"149E2BB4DCE97838"
+				"683B4B703AD025E0"
+				"2FBA9F694A0B46A4"
+				"03CECB87AF155722"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:butterfly_moth"
+					}
+				}
+			}
+			id: "3AB4EA1D879A42B9"
+			rewards: [
+				{
+					id: "1392CC6D3CAB5D64"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:butterfly_moth"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5552859471F459D3"
+					item: "cobblemon:master_ball"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				icon: "cobblemon:enigma_berry"
+				id: "58D45D8C9849296B"
+				stat: "minecraft:play_time"
+				title: "Collect all Cobblemon Berries"
+				type: "stat"
+				value: 1
+			}]
+			title: "Cobble Berry Collection Complete!"
+			x: 0.5476190476190439d
+			y: 13.30952380952381d
+		}
+	]
+	title: "Cobble Berries"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["GEG", "EDE", "GEG"],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "D": {
+      "item": "society:prismatic_shard"
+    }
+  },
+  "result": {
+    "item": "cobblemon:beast_ball",
+    "count": 8
+  }
+}

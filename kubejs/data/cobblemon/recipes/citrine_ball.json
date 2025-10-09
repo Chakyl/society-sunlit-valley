@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "c": {
+            "item": "create:zinc_block"
+        },
+        "r": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:yellow_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:citrine_ball",
+        "count": 4
+    }
+}

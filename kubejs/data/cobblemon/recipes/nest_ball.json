@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "c": {
+            "item": "society:animal_feed_sack"
+        },
+        "r": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:green_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:nest_ball",
+        "count": 4
+    }
+}

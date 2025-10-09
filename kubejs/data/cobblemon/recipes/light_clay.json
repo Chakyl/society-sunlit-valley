@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["GCG", "CEC", "GCG"],
+  "key": {
+    "G": {
+      "item": "crabbersdelight:raw_glow_squid_tentacles"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "cobblemon:light_clay"
+  }
+}
