@@ -341,34 +341,22 @@ ItemEvents.tooltip((tooltip) => {
     { item: "unremarkable_teacup", desc: "Evolves Counterfeit Form Poltchageist into Unremarkable Form Sinistcha" },
     { item: "upgrade", desc: "Evolves Porygon into Porygon2", crit: "Requires Trade or Link Cable" },
     { item: "whipped_dream", desc: "Evolves Swirlix into Slurpuff", crit: "Requires Trade or Link Cable" },
-  ].forEach((item) => {
+ ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
     if (item.crit) tooltip.add(`cobblemon:${item.item}`, Text.darkPurple(item.crit));
     tooltip.add(`cobblemon:${item.item}`, Text.lightPurple("Evolution Item"));
   });
   [
-    { item: 'remedy', desc: "Restores a Pokémon's HP by 60" },
-    { item: 'fine_remedy', desc: "Restores a Pokémon's HP by 100" },
-    { item: 'superb_remedy', desc: "Restores a Pokémon's HP by 150" },
-    { item: 'potion', desc: "Restores a Pokémon's HP by 60" },
-    { item: 'super_potion', desc: "Restores a Pokémon's HP by 100" },
-    { item: 'hyper_potion', desc: "Restores a Pokémon's HP by 150" },
-    { item: 'max_potion', desc: "Fully Restores a Pokémon's HP" },
-    { item: 'full_restore', desc: "Fully Restores a Pokémon's HP and fully recovers any status conditions" },
-    { item: 'ether', desc: "Restores 10 PP to one of a Pokémon's moves" },
-    { item: 'max_ether', desc: "Restores all PP to one of a Pokémon's moves" },
-    { item: 'elixir', desc: "Restores 10 PP to all of a Pokémon's moves" },
-    { item: 'max_elixir', desc: "Restores all PP to all of a Pokémon's moves" },
-    { item: 'antidote', desc: "Cures a Pokémon of poison" },
-    { item: 'awakening', desc: "Cures a Pokémon of sleep" },
-    { item: 'burn_heal', desc: "Cures a Pokémon of burn" },
-    { item: 'ice_heal', desc: "Cures a Pokémon of freeze" },
-    { item: 'paralyze_heal', desc: "Cures a Pokémon of paralysis" },
-    { item: 'full_heal', desc: "Cures a Pokémon of all status conditions" },
-    { item: 'revive', desc: "Revives a fainted Pokémon to 50% of their max HP" },
-    { item: 'max_revive', desc: "Revives a fainted Pokémon with all their HP" }
+    { item: "calcium", desc: "Adds 10 Special Attack EVs to the target Pokémon"},
+    { item: "carbos", desc: "Adds 10 Speed EVs to the target Pokémon"},
+    { item: "hp_up", desc: "Adds 10 HP EVs to the target Pokémon"},
+    { item: "iron", desc: "Adds 10 Defense EVs to the target Pokémon"},
+    { item: "protein", desc: "Adds 10 Attack EVs to the target Pokémon"},
+    { item: "zinc", desc: "Adds 10 Special Defense EVs to the target Pokémon"},
+    { item: "pp_up", desc: "Raises the PP of a selected move by 20% of the move's base PP"},
+    { item: "pp_max", desc: "Raises the PP of a selected move to 160% of the move's base PP"},
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
-    tooltip.add(`cobblemon:${item.item}`, Text.lightPurple("Healing Item"));
+    tooltip.add(`cobblemon:${item.item}`, Text.aqua("Vitamin"));
   });
 });
