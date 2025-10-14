@@ -15,6 +15,139 @@
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "meadow:pine_sapling",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:pinap_berry",
+      "amount": 8
+    },
+    "item:society:cornucopia",
+    {
+      "type": "item",
+      "id": "oreganized:raw_silver",
+      "amount": 8
+    },
+    "item:society:fish_pond",
+    "item:aquaculture:tambaqui",
+    "item:aquaculture:leech{Damage:0,quality_food:{quality:2}}",
+    "item:minecraft:hopper",
+    "item:society:mayonnaise_machine",
+    "item:minecraft:dragon_egg",
+    "item:shippingbin:basic_shipping_bin",
+    "item:society:battery",
+    {
+      "type": "item",
+      "id": "brewery:dried_corn",
+      "amount": 20
+    },
+    {
+      "type": "item",
+      "id": "farm_and_charm:corn",
+      "amount": 56
+    },
+    {
+      "type": "item",
+      "id": "oreganized:silver_ingot",
+      "amount": 12
+    },
+    {
+      "type": "item",
+      "id": "veggiesdelight:bellpepper",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 3
+    },
+    "item:minecraft:barrel",
+    "item:sunlit_cobblemon:uncharged_battery",
+    "item:create:rose_quartz",
+    "item:vintagedelight:pickled_onion",
+    "item:vintagedelight:pickled_egg",
+    "item:vintagedelight:kimchi",
+    "item:unusualfishmod:raw_picklefish",
+    "item:society:pickled_pumpkin_slice",
+    "item:vintagedelight:pickled_pepper",
+    "item:society:smoked_picklefish",
+    "item:society:pickled_broccoli",
+    "item:society:pickled_turnip",
+    "item:society:pickled_zucchini",
+    "item:society:pickled_carrot",
+    "item:society:pickled_potato",
+    "item:society:pickled_golden_carrot",
+    "item:society:smoked_blind_sailfin",
+    "item:society:smoked_drooping_gourami",
+    "item:society:charging_rod",
+    "item:minecraft:quartz",
+    "item:cobblemon:cell_battery",
+    {
+      "type": "item",
+      "id": "atmospheric:morado_sapling",
+      "amount": 57
+    },
+    {
+      "type": "item",
+      "id": "atmospheric:morado_log",
+      "amount": 8
+    },
+    "item:cobblemon:pink_apricorn_seed",
+    "item:vinery:apple_tree_sapling",
+    "item:quark:orange_blossom_sapling",
+    "item:cobblemon:apricorn_log",
+    "item:atmospheric:stripped_yucca_log",
+    "item:society:smoked_jellyfish",
+    {
+      "type": "item",
+      "id": "cobble_workers:craft_station",
+      "amount": 63
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:jellyfish",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "unusualfishmod:raw_beaked_herring",
+      "amount": 64
+    },
+    "item:minecraft:blue_ice",
+    "item:society:smoked_beaked_herring",
+    "item:vintagedelight:salted_cod",
+    "item:society:smoked_magmacubefish",
+    "item:minecraft:cod",
+    "item:minecraft:cooked_cod",
+    "item:minecraft:slime_ball",
+    "item:minecraft:charcoal",
+    "item:pamhc2trees:roastedacornitem",
+    "item:unusualfishmod:raw_snowflake",
+    "item:cobblemon:master_ball",
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:iron_pills",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:calcium",
+      "amount": 0
+    },
+    "item:create_klinks_n_klangs:sport_ball_stencil",
+    "item:create_klinks_n_klangs:love_ball_stencil",
+    "item:create_klinks_n_klangs:lure_ball_stencil",
+    "item:create_klinks_n_klangs:heavy_ball_stencil",
+    "item:cobblemon:fast_ball",
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:pink_paint",
+      "amount": 1000
+    },
+    "item:create_klinks_n_klangs:blank_ball",
+    "item:create_klinks_n_klangs:unfinished_ball{Damage:0}",
+    "item:create_klinks_n_klangs:fast_ball_stencil",
+    "item:rehooked:ender_hook",
+    "item:create_klinks_n_klangs:unpainted_fast_ball",
     "item:cobblemon:calcium",
     "item:cobblemon:power_anklet",
     "item:cobblemon:power_bracer",
@@ -334,7 +467,6 @@
     "item:minecraft:rotten_flesh",
     "item:rehooked:wood_hook",
     "item:minecraft:netherite_scrap",
-    "item:society:battery",
     "item:society:recycling_machine",
     "item:minecraft:chain",
     "item:sophisticatedbackpacks:copper_backpack{contentsUuid:[I;-382085041,1833846479,-1286660169,545539153],inventorySlots:45,renderInfo:{upgradeItems:[{Count:1b,id:\"minecraft:air\",tag:{}}]},upgradeSlots:1}",
@@ -377,7 +509,6 @@
     },
     "item:refinedstorage:external_storage",
     "item:create:crushed_raw_silver",
-    "item:oreganized:silver_ingot",
     "item:oreganized:electrum_ingot",
     "item:cobblemon:timer_ball",
     "item:botania:red_string",
@@ -454,11 +585,6 @@
     "item:minecraft:netherite_ingot",
     "item:society:ancient_cog",
     "item:cobblemon:quick_ball",
-    {
-      "type": "item",
-      "id": "farm_and_charm:corn",
-      "amount": 27
-    },
     "item:meadow:pine_barn_trapdoor",
     "item:meadow:pine_trapdoor",
     "item:meadow:oil_lantern",
@@ -675,11 +801,6 @@
     },
     {
       "type": "item",
-      "id": "cobblemon:fast_ball",
-      "amount": 64
-    },
-    {
-      "type": "item",
       "id": "cobblemon:moon_ball",
       "amount": 64
     },
@@ -795,7 +916,6 @@
     },
     "item:sophisticatedstorage:chest{accentColor:16383998,mainColor:16383998}",
     "item:everycomp:fs/cobblemon/apricorn_4",
-    "item:cobblemon:apricorn_log",
     "item:minecraft:spruce_trapdoor",
     "item:cobblemon:healing_machine",
     "item:cobblemon:sticky_barb",
@@ -820,7 +940,6 @@
       "amount": 64
     },
     "item:numismatics:prismatic_coin",
-    "item:cobblemon:master_ball",
     {
       "type": "item",
       "id": "cobblemon:metal_powder",
@@ -944,11 +1063,6 @@
     },
     "item:cobblemon:binding_band",
     "item:cobblemon:black_belt",
-    {
-      "type": "item",
-      "id": "cobblemon:cell_battery",
-      "amount": 64
-    },
     "item:society:architects_digest",
     "item:society:pink_matter",
     "item:windswept:holly_chest",
@@ -1019,11 +1133,6 @@
     "item:cobblemon:mental_herb",
     "item:cobblemon:mirror_herb",
     "#item:cobblemon:seeds",
-    {
-      "type": "item",
-      "id": "society:pickled_pumpkin_slice",
-      "amount": 5
-    },
     "item:society:nether_jelly",
     {
       "type": "item",
@@ -1077,18 +1186,6 @@
     "item:crittersandcompanions:clam",
     {
       "type": "item",
-      "id": "aquaculture:leech",
-      "nbt": "{Damage:0,quality_food:{quality:2}}",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "aquaculture:tambaqui",
-      "nbt": "{quality_food:{effects:[],quality:1}}",
-      "amount": 2
-    },
-    {
-      "type": "item",
       "id": "farmersdelight:safety_net",
       "amount": 3
     },
@@ -1108,11 +1205,6 @@
       "id": "minecraft:glowstone_dust",
       "amount": 17
     },
-    {
-      "type": "item",
-      "id": "minecraft:quartz",
-      "amount": 64
-    },
     "item:minecraft:nautilus_shell",
     {
       "type": "item",
@@ -1123,11 +1215,6 @@
       "type": "item",
       "id": "minecraft:coal_block",
       "amount": 9
-    },
-    {
-      "type": "item",
-      "id": "minecraft:barrel",
-      "amount": 15
     },
     "item:society:juice_inserter",
     "item:botania:flight_tiara{variant:8}",
@@ -1147,7 +1234,6 @@
       "id": "meadow:piece_of_sheep_cheese",
       "amount": 2
     },
-    "item:unusualfishmod:raw_beaked_herring",
     {
       "type": "item",
       "id": "minecraft:pumpkin",
@@ -1428,7 +1514,6 @@
     "item:society:ancient_fruit",
     "item:society:onion_seed",
     "item:farm_and_charm:onion",
-    "item:vintagedelight:pickled_onion",
     "item:society:sparkstone",
     "item:vinery:white_taiga_grapejuice",
     "item:splendid_slimes:plort_rippit",
@@ -1499,14 +1584,11 @@
     "item:society:artisan_hopper",
     "item:society:coin_leaderboard",
     "item:society:tapper",
-    "item:society:mayonnaise_machine",
-    "item:society:fish_pond",
     "item:society:prize_machine",
     "item:society:fish_smoker",
     "item:society:bait_maker",
     "item:society:ancient_goddess_statue",
     "item:society:ancient_cask",
-    "item:society:charging_rod",
     "item:society:espresso_machine",
     "item:society:dehydrator",
     "item:society:crystalarium",
@@ -1692,7 +1774,6 @@
     "item:society:milk_pail",
     "item:farm_and_charm:farmers_bread",
     "item:bakery:crusty_bread",
-    "item:veggiesdelight:bellpepper",
     "item:numismatics:crown",
     "item:brewery:beer_standard",
     "item:windswept:gingerbread_brick_slab",
@@ -1724,144 +1805,59 @@
       "type": "item",
       "id": "society:beer_attunecore",
       "amount": 64
-    },
-    "item:vinery:red_jungle_grapejuice",
-    {
-      "type": "fluid",
-      "id": "vinery:white_taiga_grape_juice",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
-      "id": "vinery:red_jungle_grape_juice",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
-      "id": "nethervinery:crimson_grape_juice",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
-      "id": "nethervinery:warped_grape_juice",
-      "amount": 0
-    },
-    "item:vinery:red_savanna_grape_juice_bucket",
-    "item:vinery:savanna_grape_seeds_white",
-    "item:twigs:rhyolite",
-    "item:twigs:schist",
-    "item:twigs:packed_silt",
-    "item:twigs:silt",
-    "item:supplementaries:daub",
-    "item:minecraft:cobbled_deepslate",
-    "item:moreminecarts:chunk_loader",
-    "item:moreminecarts:chunkrodite_block",
-    "item:society:artifact_trove",
-    "item:society:cranberry",
-    "item:etcetera:bismuth_ingot",
-    "item:windswept:candy_cane_block",
-    "item:snowyspirit:candy_cane",
-    "item:supplementaries:candy",
-    "item:windswept:mutton_pie",
-    "#item:forge:cooked_mutton",
-    "item:windswept:pinecone_jam_bottle{}",
-    "item:windswept:chestnut_soup",
-    "item:atmospheric:orange_pudding",
-    "item:windswept:lavender_tea",
-    "item:windswept:ginger_soil",
-    "item:bakery:pudding",
-    "item:herbalbrews:lavender_blossom",
-    "item:minecraft:honey_block",
-    "item:herbalbrews:lavender_tea",
-    {
-      "type": "item",
-      "id": "herbalbrews:lavender",
-      "amount": 64
-    },
-    "item:veggiesdelight:stuffed_zucchinis",
-    "item:dew_drop_farmland_growth:hyper_fertilizer",
-    "item:oreganized:lead_ingot",
-    "item:simplehats:horsemask",
-    "item:whimsy_deco:adv_red_vocal_doll",
-    "item:species:alphacene_grass",
-    "item:brewery:gingerbread",
-    "item:whimsy_deco:yellow_toy_plane",
-    "item:whimsy_deco:swan_swimming_ring",
-    "item:society:pink_flower_baseboard",
-    "item:society:oak_resin_bucket",
-    "item:society:peanut_seed",
-    "item:moreminecarts:greenhouse_glass_stairs",
-    "item:justhammers:small_core",
-    "item:society:broken_clock",
-    "item:splendid_slimes:slime_ticket",
-    "item:whimsy_deco:froggy_chair",
-    "item:ribbits:toadstool",
-    "item:etcetera:tinted_light_bulb",
-    "item:etcetera:light_bulb",
-    "item:oreganized:lead_bulb"
+    }
   ],
   "craft_history": [
+    "minecraft:kjs/society_cornucopia_2",
+    "minecraft:hopper",
+    "minecraft:kjs/society_mayonnaise_machine",
+    "minecraft:kjs/shippingbin_smart_shipping_bin",
+    "shippingbin:shipping_bin",
+    "minecraft:barrel",
+    "minecraft:kjs/sunlit_cobblemon_uncharged_battery",
+    "create:crafting/materials/rose_quartz",
     "minecraft:netherite_ingot",
-    "minecraft:kjs/dew_drop_farmland_growth_diamond_sprinkler_2",
-    "minecraft:kjs/society_recycling_machine",
     "create:crafting/appliances/chain_from_zinc",
     "create:crafting/materials/zinc_nugget_from_decompacting",
     "minecraft:chain",
     "minecraft:leather_boots",
     "sophisticatedbackpacks:iron_backpack_from_copper",
-    "minecraft:kjs/dew_drop_farmland_growth_gold_sprinkler_2",
-    "minecraft:kjs/society_charging_rod",
     "create:crafting/materials/zinc_block_from_compacting",
     "minecraft:lightning_rod",
     "quark:building/crafting/blaze_lantern",
     "meadow:pine_barn_trapdoor",
     "meadow:oil_lantern",
     "minecraft:iron_nugget",
-    "minecraft:kjs/dew_drop_farmland_growth_gold_sprinkler",
     "minecraft:gold_block",
-    "minecraft:kjs/dew_drop_farmland_growth_iron_sprinkler",
     "minecraft:iron_block",
-    "minecraft:kjs/society_crystalarium",
     "oreganized:lead_block",
-    "minecraft:kjs/candlelight_cooking_pot",
     "farmersdelight:cooking_pot",
-    "minecraft:kjs/society_seed_maker",
     "minecraft:torch",
     "cobblemon:relic_pouch_from_coin",
-    "minecraft:kjs/society_magnifying_glass",
     "dew_drop_farmland_growth:strong_fertilizer",
     "minecraft:leather_leggings",
-    "minecraft:kjs/farm_and_charm_silo_wood",
     "sophisticatedbackpacks:copper_backpack",
     "vintagedelight:fermenting_jar",
     "simplemagnets:basicmagnet",
     "farmersdelight:stove",
     "minecraft:campfire",
     "crabbersdelight:crab_trap",
-    "minecraft:kjs/society_preserves_jar",
     "meadow:fire_log",
     "farmersdelight:cutting_board",
     "minecraft:coal_block",
-    "minecraft:kjs/society_cheese_press",
-    "minecraft:barrel",
     "minecraft:brush",
-    "minecraft:kjs/society_loom",
-    "minecraft:kjs/society_tapper",
     "whimsy_deco:classic_tile",
     "quark:building/crafting/vertplanks/vertical_oak_planks",
     "minecraft:oak_slab",
     "quark:building/crafting/hollowlogs/hollow_oak_log",
-    "minecraft:kjs/tropical_fish",
     "minecraft:diamond_block",
     "minecraft:diamond",
     "minecraft:oak_fence",
     "minecraft:crafting_table",
-    "minecraft:kjs/society_mayonnaise_machine",
     "vintagedelight:jam/vinegar_jar_deconstruct",
     "supplementaries:jar",
     "minecraft:composter",
     "vinery:grapevine_pot",
-    "minecraft:kjs/vinery_fermentation_barrel",
     "minecraft:copper_ingot",
     "farmersdelight:basket",
     "longwings:catching_net",
@@ -1879,7 +1875,6 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
       "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},

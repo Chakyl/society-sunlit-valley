@@ -10,7 +10,7 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:prismatic_tm_pack")
     .texture("sunlit_cobblemon:item/prismatic_tm_pack")
     .displayName("Prismatic TM Pack");
-
+  e.create("sunlit_cobblemon:uncharged_battery").texture("sunlit_cobblemon:item/uncharged_battery");
   global.cobblemonPreserves.forEach((jar) => {
     if (jar.item.includes("sunlit_cobblemon")) {
       e.create(`sunlit_cobblemon:${jar.item.split(":")[1]}`)
