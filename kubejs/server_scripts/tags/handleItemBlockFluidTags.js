@@ -595,7 +595,7 @@ ServerEvents.tags("block", (e) => {
     "refinedstorage:network_receiver",
     "refinedstorage:relay",
     "refinedstorage:crafting_grid",
-    "nedstorage:controller",
+    "refinedstorage:controller",
     "refinedstorage:storage_monitor",
     "refinedstorage:importer",
     "refinedstorage:exporter",
@@ -606,6 +606,7 @@ ServerEvents.tags("block", (e) => {
     "refinedstorage:cable",
   ].forEach((item) => {
     e.add("create:wrench_pickup", item);
+    e.add("oreganized:mineable/scribe", item);
   });
   global.plushies.forEach((item) => {
     e.add("quality_foods:quality_blocks", item);
@@ -712,6 +713,8 @@ ServerEvents.tags("block", (e) => {
   ].forEach((item) => {
     e.add("minecraft:sword_efficient", item);
   });
+  e.add("minecraft:mineable/axe", "beachparty:cabinet");
+  e.add("minecraft:mineable/pickaxe", "bakery:iron_bench");
 });
 
 ServerEvents.tags("fluid", (e) => {

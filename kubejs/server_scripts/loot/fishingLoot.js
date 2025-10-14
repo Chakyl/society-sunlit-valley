@@ -9,7 +9,7 @@ LootJS.modifiers((e) => {
       p.randomChance(0.1).addLoot("society:ocean_jelly");
     });
   e.addLootTypeModifier(LootType.FISHING)
-    .hasAnyStage("starting_items_up")
+    .hasAnyStage("wooden_pollution")
     .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:ocean_jelly");
