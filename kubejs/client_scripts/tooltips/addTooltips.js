@@ -268,7 +268,7 @@ ItemEvents.tooltip((tooltip) => {
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
-      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type") - 1].item}`));
+      text.add(1, Text.aqua(`Fish: ${Item.of(item.nbt.get("type")).id}`));
       text.add(
         2,
         Text.aqua(
