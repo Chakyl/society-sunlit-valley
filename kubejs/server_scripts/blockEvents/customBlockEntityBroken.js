@@ -49,16 +49,14 @@ BlockEvents.broken(global.artisanMachineIds, (e) => {
 
 BlockEvents.broken("society:fish_pond", (e) => {
   const { block } = e;
-  const pondType = block.properties.get("type").toLowerCase();
-  if (pondType !== "0") {
+  const nbt = block.getEntityData();
+  if (nbt.data.type !== "") {
     block.popItem(
       Item.of(
         "society:fish_pond",
-        `{type:${block.properties.get("type")},population:${block.properties.get(
-          "population"
-        )},max_population:${block.properties.get("max_population")},quest:${block.properties.get(
-          "quest"
-        )},quest_id:${block.properties.get("quest_id")}}`
+        `{type:"${nbt.data.type}",population:${Number(nbt.data.population)},max_population:${
+          Number(nbt.data.max_population)
+        },quest:${block.properties.get("quest")},quest_id:${Number(nbt.data.quest_id)}}`
       )
     );
   } else {
@@ -73,19 +71,6 @@ BlockEvents.broken("society:prize_machine", (e) => {
   e.block.popItem(Item.of("society:prize_machine", `{prize:${e.block.properties.get("prize")}}`));
 });
 
-BlockEvents.broken(
-  [
-    "society:iron_sprinkler",
-    "society:gold_sprinkler",
-    "society:diamond_sprinkler",
-    "society:netherite_sprinkler",
-  ],
-  (e) => {
-    if (e.block.properties.get("sticklogged").toLowerCase() == "true") {
-      e.block.popItem("minecraft:stick");
-    }
-  }
-);
 BlockEvents.broken("society:coin_leaderboard", (e) => {
   global.clearOldTextDisplay(e.block, "leaderboard");
 });

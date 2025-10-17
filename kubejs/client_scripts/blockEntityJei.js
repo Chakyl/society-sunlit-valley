@@ -309,7 +309,7 @@ JEIAddedEvents.registerRecipes((e) => {
   Array.from(global.fishPondDefinitions.keys()).forEach((element) => {
     recipe = global.fishPondDefinitions.get(element);
     e.custom("society:fish_farming").add({
-      input: element,
+      item: element,
       additionalRewards: recipe.additionalRewards,
     });
   });
