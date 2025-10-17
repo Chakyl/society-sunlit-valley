@@ -3,8 +3,8 @@
   "eventCondition": {
     "type": "is_state",
     "state": {
-      "Name": "oreganized:lead_ore"
+      "Name": "minecraft:nether_gold_ore"
     }
   },
-  "lootTable": "oreganized:blocks/lead_ore"
+  "lootTable": "society:util/gold_rush_nether_gold"
 }

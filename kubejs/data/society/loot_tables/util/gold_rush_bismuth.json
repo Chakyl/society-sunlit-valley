@@ -8,39 +8,44 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "add": false,
+              "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
+                "min": 1.0,
+                "max": 3.0
               },
-              "function": "minecraft:set_count"
+              "add": false
             },
             {
+              "function": "minecraft:apply_bonus",
               "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops",
-              "function": "minecraft:apply_bonus"
+              "formula": "minecraft:ore_drops"
             },
             {
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:raw_copper",
+          "name": "etcetera:raw_bismuth",
           "weight": 6
         },
         {
           "type": "item",
-          "name": "society:geode",
+          "name": "society:magma_geode",
           "weight": 3
         },
         {
           "type": "item",
-          "name": "society:earth_crystal",
+          "name": "society:fire_quartz",
           "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blaze_rod",
+          "weight": 1
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/coal_ore"
+  "random_sequence": "etcetera:blocks/nether_bismuth_ore"
 }

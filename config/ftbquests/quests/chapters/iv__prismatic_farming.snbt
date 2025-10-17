@@ -498,10 +498,7 @@
 			y: 6.75d
 		}
 		{
-			dependencies: [
-				"01B84BE72772B00B"
-				"0DC68C5CF6D82372"
-			]
+			dependencies: ["0DC68C5CF6D82372"]
 			description: [
 				"&6Lead&r is a grating ore that begins to spawn in the frozen layer. When broken, it spawns clouds of brain damage unless adjacent to water."
 				""
@@ -755,7 +752,7 @@
 		{
 			dependencies: ["4564673A6912E917"]
 			description: [
-				"&6Iridium Scrap&r can be combined with &6Bismuth Ingots&r to &6Iridium Ingots&r, an extremely durable alloy."
+				"&6Iridium Scrap&r can be combined with &6Bismuth Ingots&r to create &6Iridium Ingots&r, an extremely durable alloy."
 				""
 				"It can be made into some of the most powerful machinery and armor in the Sunlit Valley. "
 			]
@@ -951,7 +948,7 @@
 				item: "society:spark_gro"
 				type: "item"
 			}]
-			subtitle: "Its what plants crave"
+			subtitle: "It's what plants crave"
 			tasks: [
 				{
 					id: "3359F8B677711ADC"
@@ -1055,7 +1052,7 @@
 		{
 			dependencies: ["0C32D3E205443F0F"]
 			description: [
-				"Once the Community Center is complete, (Excluding the Abandoned Farm), the &6Mystical Botanist&r villager will sell you a &6Ribbit Hut&r!"
+				"Once the Community Center is complete, excluding the Abandoned Farm, the &6Mystical Botanist&r villager will sell you a &6Ribbit Hut&r!"
 				""
 				"This building houses Ribbits that can use their powerful magic to harvest crops in a large area around it without any upkeep!"
 				""

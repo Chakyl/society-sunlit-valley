@@ -13,8 +13,10 @@ const steadfastThrottle = ((temp) => (entity, tick, identifier) => {
 
 EntityEvents.hurt((e) => {
   const { server, level, entity } = e;
-  if (!entity.isPlayer() || steadfastThrottle(entity, 20, "steadfast_throttle")) return
-  if (entity.isPlayer() && Math.random() < 0.9 && entity.stages.has("steadfast")) {
+  // Fix windswept bug
+  if (entity.isPlayer() && entity.getTicksFrozen() > 140) entity.setTicksFrozen(140);
+  if (!entity.isPlayer() || steadfastThrottle(entity, 20, "steadfast_throttle")) return;
+  if (entity.isPlayer() && Math.random() < 0.2 && entity.stages.has("steadfast")) {
     entity.heal(2);
     level.spawnParticles(
       "minecraft:heart",

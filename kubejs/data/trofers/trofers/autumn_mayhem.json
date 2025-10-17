@@ -1,0 +1,27 @@
+{
+  "colors": {
+    "accent": "#FFAA00",
+    "base": "#FFAA00"
+  },
+  "display": {
+    "offset": { "x": 0, "y": 1, "z": 0 },
+    "scale": 2.0
+  },
+  "item": {
+    "item": "minecraft:pumpkin",
+    "count": 1
+  },
+  "animation": {
+    "type": "spinning",
+    "speed": 0.1
+  },
+  "effects": {
+    "sound": {
+      "soundEvent": "autumnity:entity.turkey.aggro"
+    }
+  },
+  "name": {
+    "color": "#FFAA00",
+    "text": "Building Contest Trophy - Autumn Mayhem"
+  }
+}

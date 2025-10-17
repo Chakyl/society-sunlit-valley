@@ -8,15 +8,6 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
-            },
-            {
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:ore_drops",
               "function": "minecraft:apply_bonus"
@@ -25,22 +16,27 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:raw_copper",
+          "name": "minecraft:quartz",
           "weight": 6
         },
         {
           "type": "item",
-          "name": "society:geode",
+          "name": "society:magma_geode",
           "weight": 3
         },
         {
           "type": "item",
-          "name": "society:earth_crystal",
-          "weight": 3
+          "name": "society:fire_quartz",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blaze_rod",
+          "weight": 2
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/coal_ore"
+  "random_sequence": "minecraft:blocks/nether_quartz_ore"
 }

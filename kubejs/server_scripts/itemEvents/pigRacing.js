@@ -425,13 +425,13 @@ const validTicket = (e, bet) => {
 
   if (!coins.includes(bet.id)) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 240 Place gold coins or higher in your offhand to bet money on your pig!`
+      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 80 Place gold coins or higher in your offhand to bet money on your pig!`
     );
     return false;
   }
   if (!item.nbt) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 240 Left click to select pig to bet on`
+      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 80 Left click to select pig to bet on`
     );
     return false;
   }
@@ -471,7 +471,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
 
   if (raceData.pigraceInProgress) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 240 There's already a pig race happening! Type /pigrace <pig> to join!`
+      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 80 There's already a pig race happening! Type /pigrace <pig> to join!`
     );
     return;
   }

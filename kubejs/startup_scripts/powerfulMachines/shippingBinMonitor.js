@@ -5,30 +5,24 @@ global.runShippingBinMonitor = (entity) => {
   const belowPos = block.getPos().below();
   const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
   if (belowBlock.hasTag("society:shipping_bin")) {
-    let owner = belowBlock.getEntityData().data.owner;
     let slots = belowBlock.inventory.getSlots();
-    let playerAttributes;
-    let binPlayer;
+    global.cacheShippingBin(entity);
+    let blockData = belowBlock.getEntityData().data;
+    let playerAttributes = blockData.attributes;
+    let playerStages = blockData.stages;
     let calculationResults = -1;
+    if (!playerStages || !playerAttributes) return;
 
-    level.getServer().players.forEach((p) => {
-      if (p.getUuid().toString() === owner) {
-        playerAttributes = p.nbt.Attributes;
-        binPlayer = p;
-      }
-    });
-    if (playerAttributes) {
-      calculationResults = Math.round(
-        global.processShippingBinInventory(
-          belowBlock.inventory,
-          slots,
-          playerAttributes,
-          binPlayer.stages,
-          false,
-          true
-        ).calculatedValue
-      );
-    }
+    calculationResults = Math.round(
+      global.processShippingBinInventory(
+        belowBlock.inventory,
+        slots,
+        playerAttributes,
+        playerStages,
+        false,
+        true
+      ).calculatedValue
+    );
     let nbt = entity.block.getEntityData();
     if (nbt.data.value !== calculationResults) {
       nbt.merge({ data: { value: calculationResults } });
@@ -37,8 +31,10 @@ global.runShippingBinMonitor = (entity) => {
       global.spawnTextDisplay(
         block,
         block.y + 0.25,
-        "shipping_bin_monitor", calculationResults === -1 ? "Offline" :
-        `●${calculationResults < 100000000 ? " " : ""}${global.formatPrice(calculationResults)}`
+        "shipping_bin_monitor",
+        calculationResults === -1
+          ? "Offline"
+          : `●${calculationResults < 100000000 ? " " : ""}${global.formatPrice(calculationResults)}`
       );
     }
   }
@@ -51,7 +47,11 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .box(0, 0, 0, 16, 3, 16)
     .item((item) => {
-      item.tooltip(Text.gray("Displays sell value of Shipping Bin below it with all bonuses applied. Updates every 10 seconds."));
+      item.tooltip(
+        Text.gray(
+          "Displays sell value of Shipping Bin below it with all bonuses applied. Updates every 10 seconds."
+        )
+      );
       item.modelJson({
         parent: "society:block/shipping_bin_monitor",
       });

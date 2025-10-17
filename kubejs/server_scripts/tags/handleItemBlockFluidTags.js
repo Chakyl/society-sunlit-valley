@@ -585,7 +585,29 @@ ServerEvents.tags("block", (e) => {
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);
   });
-
+  [
+    "refinedstorage:hollow_cover",
+    "refinedstorage:cover",
+    "refinedstorage:wireless_transmitter",
+    "refinedstorage:network_transmitter",
+    "refinedstorage:security_manager",
+    "refinedstorage:detector",
+    "refinedstorage:network_receiver",
+    "refinedstorage:relay",
+    "refinedstorage:crafting_grid",
+    "refinedstorage:controller",
+    "refinedstorage:storage_monitor",
+    "refinedstorage:importer",
+    "refinedstorage:exporter",
+    "refinedstorage:interface",
+    "refinedstorage:external_storage",
+    "refinedstorage:64k_storage_block",
+    "refinedstorage:4k_storage_block",
+    "refinedstorage:cable",
+  ].forEach((item) => {
+    e.add("create:wrench_pickup", item);
+    e.add("oreganized:mineable/scribe", item);
+  });
   global.plushies.forEach((item) => {
     e.add("quality_foods:quality_blocks", item);
   });
@@ -691,6 +713,8 @@ ServerEvents.tags("block", (e) => {
   ].forEach((item) => {
     e.add("minecraft:sword_efficient", item);
   });
+  e.add("minecraft:mineable/axe", "beachparty:cabinet");
+  e.add("minecraft:mineable/pickaxe", "bakery:iron_bench");
 });
 
 ServerEvents.tags("fluid", (e) => {

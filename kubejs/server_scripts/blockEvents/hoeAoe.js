@@ -24,10 +24,15 @@ BlockEvents.rightClicked(
     let hoe = hoeTiers.get(`${item.id}`);
     if (hoe && player.crouching) {
       const { x, y, z } = block;
+      let scannedBlock;
       if (hoe < 1) {
-        level.getBlock(block.pos).set("minecraft:farmland");
+        if (level.getBlock(block.pos).hasTag("minecraft:dirt")) {
+          level.getBlock(block.pos).set("minecraft:farmland");
+        }
         const nextPos = global.getFacing(player.facing, block.pos);
-        level.getBlock(nextPos).set("minecraft:farmland");
+        if (level.getBlock(nextPos).hasTag("minecraft:dirt")) {
+          level.getBlock(nextPos).set("minecraft:farmland");
+        }
         if (hoe > 0.2) {
           level.getBlock(global.getFacing(player.facing, nextPos)).set("minecraft:farmland");
         }
@@ -37,7 +42,11 @@ BlockEvents.rightClicked(
           y,
           z + hoe,
         ])) {
-          if (level.getBlock(pos.above()).id == "minecraft:air") {
+          scannedBlock = level.getBlock(pos);
+          if (
+            scannedBlock.hasTag("minecraft:dirt") &&
+            level.getBlock(pos.above()).id == "minecraft:air"
+          ) {
             level
               .getBlock(pos)
               .set(

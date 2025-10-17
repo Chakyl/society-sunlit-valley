@@ -1092,7 +1092,7 @@ const craftingTableRecipes = [
   { item: "minecraft:cookie", value: 12 },
   { item: "minecraft:bread", value: 16 },
   { item: "minecraft:pumpkin_pie", value: 87 },
-  { item: "minecraft:mushroom_stew", value: 8 },
+  { item: "minecraft:mushroom_stew", value: 16 },
   { item: "minecraft:cake", value: 318 },
   { item: "minecraft:rabbit_stew", value: 239 },
   { item: "netherdepthsupgrade:lava_pufferfish_roll", value: 552 },

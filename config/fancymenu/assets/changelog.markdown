@@ -1,6 +1,6 @@
 ^^^
 ## Whimsical Trading
-### v3.3.2
+### v3.3.4
 ^^^
 --- 
 - Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
@@ -140,3 +140,45 @@
 - Fixed Recycling Machine recipes not working correctly
 - Fixed Mushroom soil not working
 - Fixed several Alpine wood items not being renamed
+
+## 3.3.3
+- Added ability to link Smart Shipping bins to shared accounts (read tooltip)
+- Added Caching to Shipping bins so they work when owner is offline with skills
+- Switched from TMRV back to JEI under the hood to fix recipe category bugs
+- Increased Ribbit Hut range by 1 to perfectly work with Golden Sprinklers (for real this time)
+- Removed drop rush from Lead to prevent brain damage with Introduction to Algorithms
+- Removed Splendid Slimes from entity activation range performance checks. Large server owners should gauge performance
+- Fixed Enkephalin not working with Artisan Hoppers
+- Fixed hoe AOE not checking for dirt
+- Fixed Hatchetfish quest requesting air
+- Fixed Ribbit Hut not actually having increased radius
+- Fixed Mayonnaise Machine's upgraded done state texture being incorrect
+- Fixed missing recipes for cooking
+- Fixed Spring Pantry bundle requiring 64 turnip instead of 32
+- Fixed Dark Oak textures being replaced by windswept
+- Fixed mobs giving extremely long amounts of freezing
+- Fixed Sacrificial Lamb not working
+- Fixed 2 name tags being consumed on naming an entity
+- Fixed popup messages displaying too long
+- Fixed memory leak with advanced loot info
+- Fixed Mushroom Stew value
+- Fixed Steadfast skill chance not being correct
+
+## 3.3.4
+- Added unique loot tables for gold rushes from Nether ores
+- Added Scribe and Create Wrench pickup tags to Refined Storage blocks.
+- Added Create Wrench to Storagesmith
+- Adjusted overworld ore gold rush tables
+- Reduced maximum spawns of bottom two layers of the Skull Cavern and tweaked mummy weights
+- Fixed default forceloads on new worlds being 2 instead of 15 (old worlds will need to update using `/ftbchunks admin extra_force_load_chunks @p set 13`)
+- Fixed fishing Jellies not being caught without the Jelly Hook or Wooden Pollution skill
+- Fixed Apple Mash not having a Create Pressing recipe
+- Fixed certain Glance crushing recipe existing
+- Fixed Ender Pearl recipe containing removed Peral existing
+- Fixed Iron hoe voiding non-dirt
+- Fixed Pumpkin Pie recipe not existing
+- Fixed Tiki Cabinet and Iron Bench not dropping
+- Fixed Market not having Beetroot Seeds
+- Fixed Antique Phone not being considered a Phone
+- Fixed some quests having incorrect dependencies
+- Fixed Quakes shutting down when they get lonely

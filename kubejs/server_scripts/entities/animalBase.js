@@ -106,7 +106,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     }
     if (!hungry && peckish && !player.isFake() && !item.hasTag("society:animal_feed")) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100} 120 ${name} could use something to eat...`
+        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100} 40 ${name} could use something to eat...`
       );
     }
     if (hungry) {
@@ -114,7 +114,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     }
     if (errorText && !player.isFake()) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 ${errorText}`
+        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
       );
     }
   } else if (item === "minecraft:air") {
@@ -225,7 +225,7 @@ const handleMilk = (name, data, day, hungry, e) => {
   }
   if (errorText && !player.isFake()) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 60 ${errorText}`
+      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 20 ${errorText}`
     );
   }
 };
@@ -329,7 +329,7 @@ const handleMagicHarvest = (name, data, e) => {
     }
     if (!player.isFake())
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 ${errorText}`
+        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
       );
     global.addItemCooldown(player, item, 10);
   }
@@ -389,7 +389,7 @@ ItemEvents.entityInteracted((e) => {
         if (player.cooldowns.isOnCooldown(item)) return;
         if (hearts < 5) {
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 ${name} doesn't trust you enough...`
+            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} doesn't trust you enough...`
           );
         } else {
           let heart = level.createEntity("minecraft:item");
@@ -467,7 +467,7 @@ ItemEvents.entityInteracted((e) => {
         if (data.bff) {
           data.bff = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 240 Its mind was corrupted and no longer gives Prismatic Shards...`
+            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 80 Its mind was corrupted and no longer gifts Prismatic Shards...`
           );
         }
       }
@@ -492,7 +492,7 @@ ItemEvents.entityInteracted((e) => {
         if (data.clockwork) {
           data.clockwork = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 240 Its mind was healed from being a souless machine!`
+            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 80 Its mind was healed from being a souless machine!`
           );
         }
       }

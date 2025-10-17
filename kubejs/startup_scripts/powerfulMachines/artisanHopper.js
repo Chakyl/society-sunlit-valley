@@ -5,6 +5,7 @@ const artisanMachineCanHaveAdditionalOutput = [
   "society:crystalarium",
   "society:seed_maker",
   "society:aging_cask",
+  "society:mayonnaise_machine",
 ];
 
 global.handleAdditionalArtisanMachineOutputs = (

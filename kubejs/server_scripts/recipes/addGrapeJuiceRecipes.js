@@ -156,7 +156,19 @@ ServerEvents.recipes((e) => {
       },
     ],
   });
-
+  e.custom({
+    type: "create:compacting",
+    ingredients: [
+      {
+        item: "minecraft:apple",
+      },
+    ],
+    results: [
+      {
+        item: "vinery:apple_mash",
+      },
+    ],
+  });
   e.custom({
     type: "create:compacting",
     ingredients: [
