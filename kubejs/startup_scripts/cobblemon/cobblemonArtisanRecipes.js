@@ -21,19 +21,19 @@
   { input: "cobblemon:medicinal_leek", output: ["sunlit_cobblemon:leek_preserves"] },
   { input: "cobblemon:vivichoke", output: ["sunlit_cobblemon:vivichoke_preserves"] },
   {
-    input: "#sunlit_cobblemon:common_cobblemon_berries",
+    input: "#cobble_workers:common_berries",
     output: ["sunlit_cobblemon:common_cobbleberry_preserves"],
   },
   {
-    input: "#sunlit_cobblemon:uncommon_cobblemon_berries",
+    input: "#cobble_workers:uncommon_berries",
     output: ["sunlit_cobblemon:uncommon_cobbleberry_preserves"],
   },
   {
-    input: "#sunlit_cobblemon:rare_cobblemon_berries",
+    input: "#cobble_workers:rare_berries",
     output: ["sunlit_cobblemon:rare_cobbleberry_preserves"],
   },
   {
-    input: "#sunlit_cobblemon:legendary_cobblemon_berries",
+    input: "#cobble_workers:legendary_berries",
     output: ["sunlit_cobblemon:legendary_cobbleberry_preserves"],
   },
 ].forEach((recipe) => {

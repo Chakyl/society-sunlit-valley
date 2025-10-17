@@ -1,0 +1,68 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "rock",
+  "crafting_time": 200,
+  "speed_stat": "ATTACK",
+  "mult_stat": "SPECIAL_ATTACK",
+  "consume_chance": 0.15,
+  "ingredient": {
+    "tag": "cobble_workers:rare_berries"
+  },
+  "results": [
+    {
+      "item": "minecraft:cobblestone",
+      "count": 1,
+      "weight": 32
+    },
+    {
+      "item": "minecraft:coal",
+      "count": 4,
+      "weight": 8
+    },
+    {
+      "item": "minecraft:raw_copper",
+      "count": 4,
+      "weight": 6
+    },
+    {
+      "item": "minecraft:raw_iron",
+      "count": 2,
+      "weight": 4
+    },
+    {
+      "item": "minecraft:lapis_lazuli",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "item": "minecraft:raw_gold",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "item": "society:geode",
+      "count": 1,
+      "weight": 2
+    },
+    {
+      "item": "society:earth_crystal",
+      "count": 1,
+      "weight": 2
+    },
+    {
+      "item": "cobblemon:thunder_stone",
+      "count": 1,
+      "weight": 1
+    },
+    {
+      "item": "cobblemon:dusk_stone",
+      "count": 1,
+      "weight": 1
+    }
+  ]
+}

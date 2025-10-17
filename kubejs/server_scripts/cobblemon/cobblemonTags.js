@@ -139,19 +139,6 @@ ServerEvents.tags("item", (e) => {
     e.add("sereneseasons:winter_crops", crop);
   });
   e.add("society:raw_logs", "cobblemon:apricorn_log");
-
-  global.commonCobblemonBerries.forEach((recipe) => {
-    e.add("sunlit_cobblemon:common_cobblemon_berries", recipe.item);
-  });
-  global.uncommonCobblemonBerries.forEach((recipe) => {
-    e.add("sunlit_cobblemon:uncommon_cobblemon_berries", recipe.item);
-  });
-  global.rareCobblemonBerries.forEach((recipe) => {
-    e.add("sunlit_cobblemon:rare_cobblemon_berries", recipe.item);
-  });
-  global.legendaryCobblemonBerries.forEach((recipe) => {
-    e.add("sunlit_cobblemon:legendary_cobblemon_berries", recipe.item);
-  });
 });
 
 ServerEvents.tags("block", (e) => {

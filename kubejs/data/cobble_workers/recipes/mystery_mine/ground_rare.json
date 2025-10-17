@@ -1,0 +1,35 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "ground",
+  "crafting_time": 12000,
+  "speed_stat": "DEFENCE",
+  "consume_chance": 0.25,
+  "ingredient": {
+    "tag": "cobble_workers:rare_berries"
+  },
+  "results": [
+    { "item": "minecraft:flint", "count": 1, "weight": 32 },
+    { "item": "minecraft:candle", "count": 1, "weight": 32 },
+    { "item": "minecraft:coal", "count": 1, "weight": 32 },
+    { "item": "minecraft:gold_nugget", "count": 1, "weight": 32 },
+    { "item": "cobblemon:relic_coin", "count": 1, "weight": 24},
+    { "item": "betterarcheology:artifact_shards", "count": 1, "weight": 24},
+    { "item": "windswept:elder_feather", "count": 1, "weight": 24},
+    { "item": "minecraft:diamond", "count": 1, "weight": 24 },
+    { "item": "species:springling_egg", "count": 1, "weight": 20 },
+    { "item": "minecraft:blade_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:capture_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:bygone_sherd", "count": 1, "weight": 8 },
+    { "item": "atmospheric:sun_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "atmospheric:succulent_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "windswept:drupes_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "windswept:flake_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "windswept:offshoot_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "windswept:plumage_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:cover_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:dome_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:jaw_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:sail_fossil", "count": 1, "weight": 4},
+    { "item": "species:petrified_egg", "count": 1, "weight": 4}
+  ]
+}

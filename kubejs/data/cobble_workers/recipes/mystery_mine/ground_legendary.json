@@ -1,0 +1,36 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "ground",
+  "crafting_time": 12000,
+  "speed_stat": "DEFENCE",
+  "consume_chance": 0.25,
+  "ingredient": {
+    "tag": "cobble_workers:legendary_berries"
+  },
+  "results": [
+    { "item": "minecraft:flint", "count": 1, "weight": 32 },
+    { "item": "minecraft:coal", "count": 1, "weight": 32 },
+    { "item": "minecraft:gold_nugget", "count": 1, "weight": 32 },
+    { "item": "cobblemon:relic_coin", "count": 1, "weight": 32 },
+    { "item": "minecraft:emerald", "count": 1, "weight": 32 },
+    { "item": "betterarcheology:artifact_shards", "count": 1, "weight": 24},
+    { "item": "windswept:elder_feather", "count": 1, "weight": 24},
+    { "item": "minecraft:diamond", "count": 1, "weight": 20 },
+    { "item": "species:springling_egg", "count": 1, "weight": 20 },
+    { "item": "trials:guster_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "trials:flow_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:suspicious_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:nostalgic_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:helix_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:dome_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:angler_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:archer_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:arms_up_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "trials:scrape_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:fossilized_dino", "count": 1, "weight": 4},
+    { "item": "cobblemon:fossilized_drake", "count": 1, "weight": 4},
+    { "item": "cobblemon:fossilized_fish", "count": 1, "weight": 4},
+    { "item": "cobblemon:fossilized_bird", "count": 1, "weight": 4},
+    { "item": "species:cruncher_egg", "count": 1, "weight": 4}
+  ]
+}

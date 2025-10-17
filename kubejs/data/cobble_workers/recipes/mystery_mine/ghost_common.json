@@ -1,0 +1,18 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "ghost",
+  "crafting_time": 750,
+  "speed_stat": "SPECIAL_ATTACK",
+  "mult_stat": "SPECIAL_DEFENCE",
+  "consume_chance": 0.25,
+  "ingredient": {
+    "tag": "cobble_workers:common_berries"
+  },
+  "results": [
+    { "item": "minecraft:rotten_flesh", "count": 1, "weight": 64 },
+    { "item": "minecraft:bone", "count": 1, "weight": 48 },
+    { "item": "minecraft:gunpowder", "count": 1, "weight": 24 },
+    { "item": "society:spider_silk", "count": 1, "weight": 1 },
+    { "item": "society:living_flesh", "count": 1, "weight": 1 }
+  ]
+}

@@ -79,8 +79,6 @@ global.cobbleCrops = [
   { item: "cobblemon:mental_herb", value: 100 },
   { item: "cobblemon:power_herb", value: 100 },
   { item: "cobblemon:white_herb", value: 100 },
-];
-global.commonCobblemonBerries = [
   { item: "cobblemon:oran_berry", value: 4 },
   { item: "cobblemon:cheri_berry", value: 4 },
   { item: "cobblemon:chesto_berry", value: 4 },
@@ -110,11 +108,6 @@ global.commonCobblemonBerries = [
   { item: "cobblemon:colbur_berry", value: 4 },
   { item: "cobblemon:babiri_berry", value: 4 },
   { item: "cobblemon:chilan_berry", value: 4 },
-];
-global.commonCobblemonBerries.forEach((recipe) => {
-  global.cobbleCrops.push(recipe);
-});
-global.uncommonCobblemonBerries = [
   { item: "cobblemon:roseli_berry", value: 6 },
   { item: "cobblemon:leppa_berry", value: 8 },
   { item: "cobblemon:lum_berry", value: 8 },
@@ -130,11 +123,6 @@ global.uncommonCobblemonBerries = [
   { item: "cobblemon:rabuta_berry", value: 12 },
   { item: "cobblemon:nomel_berry", value: 12 },
   { item: "cobblemon:hopo_berry", value: 12 },
-];
-global.uncommonCobblemonBerries.forEach((recipe) => {
-  global.cobbleCrops.push(recipe);
-});
-global.rareCobblemonBerries = [
   { item: "cobblemon:enigma_berry", value: 16 },
   { item: "cobblemon:pomeg_berry", value: 16 },
   { item: "cobblemon:kelpsy_berry", value: 16 },
@@ -147,11 +135,6 @@ global.rareCobblemonBerries = [
   { item: "cobblemon:watmel_berry", value: 16 },
   { item: "cobblemon:durin_berry", value: 16 },
   { item: "cobblemon:belue_berry", value: 16 },
-];
-global.rareCobblemonBerries.forEach((recipe) => {
-  global.cobbleCrops.push(recipe);
-});
-global.legendaryCobblemonBerries = [
   { item: "cobblemon:kee_berry", value: 32 },
   { item: "cobblemon:maranga_berry", value: 32 },
   { item: "cobblemon:liechi_berry", value: 32 },
@@ -166,10 +149,6 @@ global.legendaryCobblemonBerries = [
   { item: "cobblemon:jaboca_berry", value: 32 },
   { item: "cobblemon:rowap_berry", value: 32 },
 ];
-
-global.legendaryCobblemonBerries.forEach((recipe) => {
-  global.cobbleCrops.push(recipe);
-});
 /**
  * Preserves
  * Formula: Ingredient * 20

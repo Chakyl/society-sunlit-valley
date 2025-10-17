@@ -1,0 +1,48 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "rock",
+  "crafting_time": 200,
+  "speed_stat": "ATTACK",
+  "mult_stat": "SPECIAL_ATTACK",
+  "consume_chance": 0.05,
+  "ingredient": {
+    "item": "netherdepthsupgrade:baked_searing_cod_stew"
+  },
+  "results": [
+    {
+      "item": "minecraft:netherrack",
+      "count": 1,
+      "weight": 128
+    },
+    {
+      "item": "minecraft:gold_nugget",
+      "count": 4,
+      "weight": 32
+    },
+    {
+      "item": "minecraft:quartz",
+      "count": 1,
+      "weight": 32
+    },
+    {
+      "item": "etcetera:raw_bismuth",
+      "count": 1,
+      "weight": 16
+    },
+    {
+      "item": "society:magma_geode",
+      "count": 1,
+      "weight": 8
+    },
+    {
+      "item": "society:fire_quartz",
+      "count": 1,
+      "weight": 4
+    },
+    {
+      "item": "minecraft:gilded_blackstone",
+      "count": 1,
+      "weight": 1
+    }
+  ]
+}

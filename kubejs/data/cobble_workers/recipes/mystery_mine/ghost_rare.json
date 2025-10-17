@@ -1,0 +1,27 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "ghost",
+  "crafting_time": 750,
+  "speed_stat": "SPECIAL_ATTACK",
+  "mult_stat": "SPECIAL_DEFENCE",
+  "consume_chance": 0.125,
+  "ingredient": {
+    "tag": "cobble_workers:rare_berries"
+  },
+  "results": [
+    { "item": "minecraft:rotten_flesh", "count": 1, "weight": 64 },
+    { "item": "minecraft:bone", "count": 1, "weight": 48 },
+    { "item": "minecraft:gunpowder", "count": 1, "weight": 24 },
+    { "item": "quark:soul_bead", "count": 1, "weight": 12 },
+    { "item": "trials:breeze_rod", "count": 1, "weight": 12 },
+    { "item": "rottencreatures:magma_rotten_flesh", "count": 1, "weight": 12 },
+    { "item": "rottencreatures:frozen_rotten_flesh", "count": 1, "weight": 12 },
+    { "item": "minecraft:blaze_rod", "count": 1, "weight": 12 },
+    { "item": "paraglider:spirit_orb", "count": 1, "weight": 4 },
+    { "item": "minecraft:ender_pearl", "count": 1, "weight": 4 },
+    { "item": "society:glitched_vhs", "count": 1, "weight": 1 },
+    { "item": "society:holy_symbol", "count": 1, "weight": 1 },
+    { "item": "society:spider_silk", "count": 1, "weight": 1 },
+    { "item": "society:living_flesh", "count": 1, "weight": 1 }
+  ]
+}

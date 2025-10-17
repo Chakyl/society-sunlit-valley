@@ -1,0 +1,36 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "ground",
+  "crafting_time": 12000,
+  "speed_stat": "DEFENCE",
+  "consume_chance": 0.25,
+  "ingredient": {
+    "tag": "cobble_workers:uncommon_berries"
+  },
+  "results": [
+    { "item": "minecraft:flint", "count": 1, "weight": 32 },
+    { "item": "minecraft:feather", "count": 1, "weight": 32 },
+    { "item": "minecraft:candle", "count": 1, "weight": 32 },
+    { "item": "minecraft:coal", "count": 1, "weight": 32 },
+    { "item": "minecraft:bone", "count": 1, "weight": 32 },
+    { "item": "cobblemon:relic_coin", "count": 1, "weight": 24},
+    { "item": "minecraft:wooden_hoe", "count": 1, "weight": 32 },
+    { "item": "minecraft:emerald", "count": 1, "weight": 24},
+    { "item": "betterarcheology:artifact_shards", "count": 1, "weight": 20},
+    { "item": "minecraft:diamond", "count": 1, "weight": 24 },
+    { "item": "windswept:hoot_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:snort_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:skull_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:shelter_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:sheaf_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "atmospheric:scythe_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:prize_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:plenty_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:mourner_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:plume_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:root_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:claw_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:armor_fossil", "count": 1, "weight": 4},
+    { "item": "minecraft:sniffer_egg", "count": 1, "weight": 4}
+  ]
+}

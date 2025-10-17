@@ -1,0 +1,21 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "dragon",
+  "crafting_time": 12000,
+  "speed_stat": "SPEED",
+  "mult_stat": "HP",
+  "consume_chance": 0.15,
+  "ingredient": {
+    "tag": "cobble_workers:rare_berries"
+  },
+  "results": [
+    { "item": "numismatics:crown", "count": 1, "weight": 4 },
+    { "item": "minecraft:amethyst_shard", "count": 1, "weight": 10 },
+    { "item": "minecraft:emerald", "count": 1, "weight": 8 },
+    { "item": "society:amethyst_chunk", "count": 1, "weight": 4 },
+    { "item": "society:aquamarine", "count": 1, "weight": 1 },
+    { "item": "society:topaz", "count": 1, "weight": 1 },
+    { "item": "minecraft:diamond", "count": 1, "weight": 1 },
+    { "item": "cobblemon:dragon_gem", "count": 1, "weight": 1 }
+  ]
+}

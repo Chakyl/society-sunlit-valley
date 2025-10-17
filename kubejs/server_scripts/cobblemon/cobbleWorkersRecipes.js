@@ -33,7 +33,7 @@ ServerEvents.recipes((e) => {
         },
         { item: outputItem.id, count: 2 },
         "steel",
-        6000,
+        3000, 
         "SPEED",
         "ATTACK"
       );

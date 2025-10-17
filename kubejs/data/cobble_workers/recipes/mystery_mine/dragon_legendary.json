@@ -1,0 +1,35 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "dragon",
+  "crafting_time": 12000,
+  "speed_stat": "SPEED",
+  "mult_stat": "HP",
+  "consume_chance": 0.1,
+  "ingredient": {
+    "tag": "cobble_workers:legendary_berries"
+  },
+  "results": [
+    { "item": "numismatics:crown", "count": 1, "weight": 2 },
+    { "item": "minecraft:amethyst_shard", "count": 1, "weight": 8 },
+    { "item": "minecraft:emerald", "count": 1, "weight": 6 },
+    { "item": "society:amethyst_chunk", "count": 1, "weight": 2 },
+    { "item": "society:aquamarine", "count": 1, "weight": 1 },
+    { "item": "society:topaz", "count": 1, "weight": 1 },
+    { "item": "society:ruby", "count": 1, "weight": 1 },
+    { "item": "minecraft:diamond", "count": 1, "weight": 1 },
+    { "item": "society:sparkstone", "count": 4, "weight": 1 },
+    { "item": "cobblemon:ice_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:rock_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:ghost_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:dragon_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:dark_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:steel_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:fairy_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:bug_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:psychic_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:flying_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:ground_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:poison_gem", "count": 1, "weight": 1 },
+    { "item": "cobblemon:fighting_gem", "count": 1, "weight": 1 }
+  ]
+}

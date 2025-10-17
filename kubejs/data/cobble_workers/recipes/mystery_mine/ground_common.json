@@ -1,0 +1,34 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "ground",
+  "crafting_time": 12000,
+  "speed_stat": "DEFENCE",
+  "consume_chance": 0.25,
+  "ingredient": {
+    "tag": "cobble_workers:common_berries"
+  },
+  "results": [
+    { "item": "minecraft:flint", "count": 1, "weight": 32 },
+    { "item": "minecraft:feather", "count": 1, "weight": 32 },
+    { "item": "minecraft:candle", "count": 1, "weight": 32 },
+    { "item": "minecraft:coal", "count": 1, "weight": 32 },
+    { "item": "minecraft:bone", "count": 1, "weight": 32 },
+    { "item": "minecraft:gold_nugget", "count": 1, "weight": 32 },
+    { "item": "minecraft:wooden_hoe", "count": 1, "weight": 32 },
+    { "item": "minecraft:emerald", "count": 1, "weight": 24},
+    { "item": "cobblemon:relic_coin", "count": 1, "weight": 24},
+    { "item": "betterarcheology:artifact_shards", "count": 1, "weight": 20},
+    { "item": "minecraft:miner_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:howl_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:heartbreak_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:heart_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:explorer_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:friend_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:danger_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:burn_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "minecraft:brewer_pottery_sherd", "count": 1, "weight": 8 },
+    { "item": "cobblemon:skull_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:helix_fossil", "count": 1, "weight": 4},
+    { "item": "cobblemon:old_amber_fossil", "count": 1, "weight": 4}
+  ]
+}

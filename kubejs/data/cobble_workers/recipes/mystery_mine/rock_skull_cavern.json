@@ -1,0 +1,103 @@
+{
+  "type": "cobble_workers:mystery_mine",
+  "elemental_type": "rock",
+  "crafting_time": 200,
+  "speed_stat": "ATTACK",
+  "mult_stat": "SPECIAL_ATTACK",
+  "consume_chance": 0.01,
+  "ingredient": {
+    "item": "nethervinery:netherite_nectar"
+  },
+  "results": [
+    {
+      "item": "minecraft:cobblestone",
+      "count": 1,
+      "weight": 128
+    },
+    {
+      "item": "minecraft:coal",
+      "count": 4,
+      "weight": 32
+    },
+    {
+      "item": "minecraft:raw_copper",
+      "count": 4,
+      "weight": 24
+    },
+    {
+      "item": "minecraft:raw_iron",
+      "count": 2,
+      "weight": 20
+    },
+    {
+      "item": "oreganized:raw_lead",
+      "count": 1,
+      "weight": 12
+    },
+    {
+      "item": "minecraft:lapis_lazuli",
+      "count": 4,
+      "weight": 8
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 4,
+      "weight": 8
+    },
+    {
+      "item": "minecraft:raw_gold",
+      "count": 2,
+      "weight": 8
+    },
+    {
+      "item": "oreganized:raw_silver",
+      "count": 1,
+      "weight": 5
+    },
+    {
+      "item": "society:earth_crystal",
+      "count": 1,
+      "weight": 6
+    },
+    {
+      "item": "society:fire_quartz",
+      "count": 1,
+      "weight": 4
+    },
+    {
+      "item": "society:jade",
+      "count": 1,
+      "weight": 2
+    },
+    {
+      "item": "society:sparkstone",
+      "count": 4,
+      "weight": 6
+    },
+    {
+      "item": "society:geode",
+      "count": 1,
+      "weight": 12
+    },
+    {
+      "item": "society:frozen_geode",
+      "count": 1,
+      "weight": 6
+    },
+    {
+      "item": "society:magma_geode",
+      "count": 1,
+      "weight": 3
+    },
+    {
+      "item": "society:omni_geode",
+      "count": 1,
+      "weight": 2
+    },
+    {
+      "item": "minecraft:netherite_scrap",
+      "count": 1,
+      "weight": 1
+    }
+  ]
+}

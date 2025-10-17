@@ -1,0 +1,9 @@
+{
+  "id": [
+    ["create:belt", "nbt.items.items"]
+  ],
+  "operate": [
+    ["create:fluid_tank", "nbt.Luminosity", "operate.limit$Luminosity$0$4"],
+    ["start:test", "stop", "operate.clear$restart"]
+  ]
+}
