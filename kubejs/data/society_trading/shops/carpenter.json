@@ -2,7 +2,7 @@
   "shop_id": "carpenter",
   "name": "shop.society_trading.carpenter",
   "texture": "supplementaries:textures/block/cabin_siding_side",
-  "jei_catalyst": { "item":"meadow:woodcutter" },
+  "jei_catalyst": { "item": "meadow:woodcutter" },
   "trades": [
     {
       "offer": { "item": "society:bee_wallpaper", "count": 8 },
@@ -354,6 +354,142 @@
       },
       "numismatics_cost": 2048,
       "trade_id": "carpenter_myalite_crystal"
+    },
+
+    {
+      "offer": { "item": "minecraft:oak_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_oak_sapling"
+    },
+    {
+      "offer": { "item": "minecraft:spruce_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_spruce_sapling"
+    },
+    {
+      "offer": { "item": "minecraft:birch_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_birch_sapling"
+    },
+    {
+      "offer": { "item": "minecraft:jungle_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_jungle_sapling"
+    },
+    {
+      "offer": { "item": "minecraft:acacia_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_acacia_sapling"
+    },
+    {
+      "offer": { "item": "minecraft:dark_oak_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_dark_oak_sapling"
+    },
+    {
+      "offer": { "item": "minecraft:cherry_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_cherry_sapling"
+    },
+    {
+      "offer": { "item": "minecraft:azalea", "count": 1 },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "market_azalea"
+    },
+    {
+      "offer": { "item": "minecraft:flowering_azalea", "count": 1 },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "market_flowering_azalea"
+    },
+    {
+      "offer": { "item": "minecraft:mangrove_propagule", "count": 1 },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "market_mangrove_propagule"
+    },
+    {
+      "offer": { "item": "autumnity:red_maple_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "market_red_maple_sapling"
+    },
+    {
+      "offer": { "item": "windswept:pine_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "market_pine_sapling"
+    },
+    {
+      "offer": { "item": "meadow:pine_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "market_pine_sapling"
+    },
+    {
+      "offer": { "item": "quark:orange_blossom_sapling", "count": 1 },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "market_orange_blossom_sapling"
+    },
+    {
+      "offer": { "item": "society:universal_methods_of_farming", "count": 1 },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "market_universal_methods_of_farming"
     }
   ]
 }
