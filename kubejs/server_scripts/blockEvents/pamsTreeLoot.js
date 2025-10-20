@@ -30,21 +30,18 @@ BlockEvents.rightClicked(
             player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
             player.isHoldingInAnyHand("meadow:watering_can")
         ) return;
-
-        if (Number(block.properties.get("age")) == 7) { // moved age check to be the first condition to avoid unnecessary calls
+        if (Number(block.properties.get("age")) >= 7) {
             if (player.stages.has("tree_whisperer")) {
                 const weirdFruit = weirdFruits.get(String(block.id));
-                global.giveExperience(server, player, "farming", 40);
                 if (weirdFruit) {
                     block.popItem(`2x ${weirdFruit}`);
                 } else {
                     block.popItem(`2x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`);
                 }
-            } else if (block.id == "pamhc2trees:pambanana" && player.stages.has("banana_karenina")){
-                global.giveExperience(server, player, "farming", 40);
-                block.popItem(`${player.stages.has("tree_whisperer") ? 5 : 3}x pamhc2trees:${fruitName.substring(3,fruitName.length)}item`);
-            } else { // default experience for normal harvest
-                global.giveExperience(server, player, "farming", 10);
             }
+            if (block.id == "pamhc2trees:pambanana" && player.stages.has("banana_karenina")) {
+                block.popItem(`${player.stages.has("tree_whisperer") ? 5 : 3}x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`);
+            }
+            global.giveExperience(server, player, "farming", 40);
         }
     });
