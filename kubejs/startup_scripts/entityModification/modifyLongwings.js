@@ -39,14 +39,14 @@ EntityJSEvents.modifyEntity((event) => {
   event.modify("longwings:moth", (modifyBuilder) => {
     modifyBuilder.tick((entity) => {
       if (entity.level.time % 6000 === 0) {
-        global.handleLongwings(entity, "society:butterfly_amber");
+        global.handleLongwings(entity, "society:moth_pollen");
       }
     });
   });
   event.modify("longwings:butterfly", (modifyBuilder) => {
     modifyBuilder.tick((entity) => {
       if (entity.level.time % 6000 === 0) {
-        global.handleLongwings(entity, "society:moth_pollen");
+        global.handleLongwings(entity, "society:butterfly_amber");
       }
     });
   });
