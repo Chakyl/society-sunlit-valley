@@ -25,17 +25,76 @@
     }
   ],
   "lookup_history": [
-    "item:unusualfishmod:raw_snowflake{quality_food:{effects:[],quality:3}}",
     {
       "type": "item",
-      "id": "society:battery",
+      "id": "cobblemon:green_apricorn",
+      "amount": 7
+    },
+    "item:sunlit_cobblemon:uncharged_battery",
+    "item:society:battery",
+    "item:create:rose_quartz",
+    "item:cobblemon:link_cable",
+    {
+      "type": "item",
+      "id": "cobblemon:rabuta_berry",
+      "amount": 15
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:shuca_berry",
+      "amount": 9
+    },
+    "item:cobblemon:hondew_berry",
+    "item:cobblemon:fossilized_drake",
+    {
+      "type": "item",
+      "id": "society:sparkstone_dust",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "unusualfishmod:raw_triple_twirl_pleco",
       "amount": 2
     },
+    {
+      "type": "item",
+      "id": "society:neptuna",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    "item:cobblemon:wacan_berry",
+    {
+      "type": "item",
+      "id": "aquaculture:blackfish",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:atlantic_herring",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:brown_shrooma",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:blue_apricorn",
+      "amount": 32
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:dusk_stone",
+      "amount": 9
+    },
+    "item:unusualfishmod:raw_snowflake{quality_food:{effects:[],quality:3}}",
     "item:society:froggy_helm",
     "item:society:spark_gro",
     "item:minecraft:loom",
-    "item:cobblemon:hondew_berry",
-    "item:cobblemon:rabuta_berry",
     "item:cobblemon:aguav_berry",
     "item:cobblemon:fossilized_dino",
     {
@@ -101,11 +160,6 @@
     "item:cobblemon:hp_up",
     "item:cobblemon:carbos",
     "item:cobblemon:protein",
-    {
-      "type": "item",
-      "id": "cobblemon:shuca_berry",
-      "amount": 13
-    },
     "item:cobblemon:nomel_berry",
     "item:society:merino_wool",
     {
@@ -128,11 +182,6 @@
     },
     "item:cobblemon:sitrus_berry",
     "item:society:ember_crystal_cluster",
-    {
-      "type": "item",
-      "id": "cobblemon:dusk_stone",
-      "amount": 4
-    },
     {
       "type": "item",
       "id": "cobblemon:thunder_stone",
@@ -317,11 +366,6 @@
     },
     {
       "type": "item",
-      "id": "cobblemon:green_apricorn",
-      "amount": 17
-    },
-    {
-      "type": "item",
       "id": "cobblemon:enigma_berry",
       "amount": 25
     },
@@ -396,13 +440,7 @@
     "item:society:magma_geode_node",
     "item:society:earth_crystal",
     "item:cobblemon:kasib_berry",
-    "item:cobblemon:wacan_berry",
     "item:society:aquamarine",
-    {
-      "type": "item",
-      "id": "society:sparkstone_dust",
-      "amount": 8
-    },
     "item:quark:sturdy_stone",
     "item:farm_and_charm:mincer",
     "item:society:magic_bulb",
@@ -471,8 +509,6 @@
       "nbt": "{quality_food:{effects:[],quality:1}}",
       "amount": 3
     },
-    "item:sunlit_cobblemon:uncharged_battery",
-    "item:create:rose_quartz",
     "item:vintagedelight:pickled_onion",
     "item:vintagedelight:pickled_egg",
     "item:vintagedelight:kimchi",
@@ -750,7 +786,6 @@
     "item:snowyspirit:wreath",
     "item:cobblemon:whipped_dream",
     "item:cobblemon:magmarizer",
-    "item:cobblemon:link_cable",
     {
       "type": "item",
       "id": "cobblemon:protector",
@@ -1530,11 +1565,6 @@
       "amount": 64
     },
     "item:cobblemon:blue_apricorn_seed",
-    {
-      "type": "item",
-      "id": "cobblemon:blue_apricorn",
-      "amount": 64
-    },
     "item:twigs:polished_basalt_bricks",
     "item:cobblemon:relic_coin_sack",
     "item:twigs:twig",
@@ -1711,7 +1741,6 @@
       "id": "cobblemon:armor_fossil",
       "amount": 64
     },
-    "item:cobblemon:fossilized_drake",
     "item:cobblemon:dragon_gem",
     "item:cobblemon:steel_gem",
     "item:cobblemon:grass_gem",
@@ -1939,16 +1968,15 @@
     "item:whimsy_deco:ship_helm",
     "item:whimsy_deco:red_toy_plane",
     "item:whimsy_deco:vintage_globe",
-    "item:whimsy_deco:blue_toy_plane",
-    "item:whimsy_deco:bamboo_candle",
-    "item:whimsy_deco:blue_atm",
-    "item:whimsy_deco:yellow_atm",
-    "item:whimsy_deco:black_curio_cash_register",
-    "item:whimsy_deco:gold_curio_cash_register"
+    "item:whimsy_deco:blue_toy_plane"
   ],
   "craft_history": [
-    "minecraft:kjs/society_spark_gro",
+    "cobblemon:dusk_ball",
+    "minecraft:kjs/sunlit_cobblemon_uncharged_battery",
+    "create:crafting/materials/rose_quartz",
     "minecraft:kjs/society_spark_gro_2",
+    "cobblemon:net_ball",
+    "minecraft:kjs/society_spark_gro",
     "minecraft:lever",
     "splendid_slimes:corral_block",
     "minecraft:stonecutter",

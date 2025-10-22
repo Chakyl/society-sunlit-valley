@@ -1,5 +1,7 @@
 console.info("[SOCIETY] cobblemonFishing.js loaded");
 
+const Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3");
+
 const getCobbleFishPool = (tier, season, waterType) => {
   return global.cobblemonfishPool
     .filter((entry) => entry.tiers.includes(tier))
@@ -72,7 +74,10 @@ global.handleCobblemonFish = (e) => {
       .filter((e) => e.type.equals("cobblemon:pokemon"));
     if (caughtPokemon && caughtPokemon.length > 0) {
       caughtPokemon = caughtPokemon[0];
-      caughtPokemon.setDeltaMovement(player.position().subtract(caughtPokemon).scale(0.5));
+      caughtPokemon.setDeltaMovement(new Vec3d(0, 1.5, 0));
+      server.scheduleInTicks(20, () => {
+        caughtPokemon.setDeltaMovement(player.position().subtract(caughtPokemon).scale(0.1));
+      });
     }
   }
 };
