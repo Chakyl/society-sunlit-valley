@@ -23,7 +23,8 @@ ServerEvents.tags("worldgen/biome", (e) => {
 
   e.add("cobblemon:is_magical", "society:umbra_barrens");
 });
-const cobblemonCrops = [
+
+const cobblemonAllSeasonCrops = [
   "cobblemon:red_apricorn",
   "cobblemon:yellow_apricorn",
   "cobblemon:green_apricorn",
@@ -31,13 +32,6 @@ const cobblemonCrops = [
   "cobblemon:pink_apricorn",
   "cobblemon:black_apricorn",
   "cobblemon:white_apricorn",
-  "cobblemon:vivichoke",
-  "cobblemon:mirror_herb",
-  "cobblemon:white_herb",
-  "cobblemon:power_herb",
-  "cobblemon:mental_herb",
-  "cobblemon:pep_up_flower",
-  "cobblemon:revival_herb",
   "cobblemon:energy_root",
   "cobblemon:big_root",
   "cobblemon:red_apricorn_seed",
@@ -47,20 +41,6 @@ const cobblemonCrops = [
   "cobblemon:pink_apricorn_seed",
   "cobblemon:black_apricorn_seed",
   "cobblemon:white_apricorn_seed",
-  "cobblemon:red_mint_seeds",
-  "cobblemon:blue_mint_seeds",
-  "cobblemon:cyan_mint_seeds",
-  "cobblemon:pink_mint_seeds",
-  "cobblemon:green_mint_seeds",
-  "cobblemon:white_mint_seeds",
-  "cobblemon:vivichoke_seeds",
-  "cobblemon:revival_herb",
-  "cobblemon:red_mint_leaf",
-  "cobblemon:blue_mint_leaf",
-  "cobblemon:cyan_mint_leaf",
-  "cobblemon:pink_mint_leaf",
-  "cobblemon:green_mint_leaf",
-  "cobblemon:white_mint_leaf",
   "cobblemon:oran_berry",
   "cobblemon:cheri_berry",
   "cobblemon:chesto_berry",
@@ -131,22 +111,69 @@ const cobblemonCrops = [
   "cobblemon:jaboca_berry",
   "cobblemon:rowap_berry",
 ];
+const cobblemonSpringCrops = [
+  "cobblemon:mirror_herb",
+  "cobblemon:white_herb",
+  "cobblemon:power_herb",
+  "cobblemon:mental_herb",
+  "cobblemon:pep_up_flower",
+  "cobblemon:revival_herb",
+];
+const cobblemonSummerCrops = [
+  "cobblemon:red_mint_seeds",
+  "cobblemon:blue_mint_seeds",
+  "cobblemon:cyan_mint_seeds",
+  "cobblemon:pink_mint_seeds",
+  "cobblemon:green_mint_seeds",
+  "cobblemon:white_mint_seeds",
+  "cobblemon:red_mint_leaf",
+  "cobblemon:blue_mint_leaf",
+  "cobblemon:cyan_mint_leaf",
+  "cobblemon:pink_mint_leaf",
+  "cobblemon:green_mint_leaf",
+  "cobblemon:white_mint_leaf",
+  "cobblemon:red_mint",
+  "cobblemon:blue_mint",
+  "cobblemon:cyan_mint",
+  "cobblemon:pink_mint",
+  "cobblemon:green_mint",
+  "cobblemon:white_mint",
+];
+const cobblemonAutumnCrops = ["cobblemon:vivichoke", "cobblemon:vivichoke_seeds"];
 ServerEvents.tags("item", (e) => {
-  cobblemonCrops.forEach((crop) => {
+  cobblemonAllSeasonCrops.forEach((crop) => {
     e.add("sereneseasons:spring_crops", crop);
     e.add("sereneseasons:autumn_crops", crop);
     e.add("sereneseasons:summer_crops", crop);
     e.add("sereneseasons:winter_crops", crop);
   });
+  cobblemonSpringCrops.forEach((crop) => {
+    e.add("sereneseasons:spring_crops", crop);
+  });
+  cobblemonSummerCrops.forEach((crop) => {
+    e.add("sereneseasons:summer_crops", crop);
+  });
+  cobblemonAutumnCrops.forEach((crop) => {
+    e.add("sereneseasons:autumn_crops", crop);
+  });
   e.add("society:raw_logs", "cobblemon:apricorn_log");
 });
 
 ServerEvents.tags("block", (e) => {
-  cobblemonCrops.forEach((crop) => {
+  cobblemonAllSeasonCrops.forEach((crop) => {
     e.add("sereneseasons:spring_crops", crop);
     e.add("sereneseasons:autumn_crops", crop);
     e.add("sereneseasons:summer_crops", crop);
     e.add("sereneseasons:winter_crops", crop);
+  });
+  cobblemonSpringCrops.forEach((crop) => {
+    e.add("sereneseasons:spring_crops", crop);
+  });
+  cobblemonSummerCrops.forEach((crop) => {
+    e.add("sereneseasons:summer_crops", crop);
+  });
+  cobblemonAutumnCrops.forEach((crop) => {
+    e.add("sereneseasons:autumn_crops", crop);
   });
   e.add("society:raw_logs", "cobblemon:apricorn_log");
 });
