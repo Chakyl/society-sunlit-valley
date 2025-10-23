@@ -152,3 +152,18 @@
 	# Valid range: 1 to 2147483647 (inclusive)
 	processingTime = 100
 
+# Recipe related properties
+[recipes]
+	# If enabled, the Frying Pan and Grill will inherit all the cooking recipes from the
+	# vanilla Campfire.
+	# Valid values: true, false
+	inheritCampfireRecipes = true
+
+# Television related properties
+[television]
+	# If enabled, when the weather is thunder, the television will strangely loose signal.
+	# There should be no reason this should happen, none at all. It might be a good idea
+	# to turn your television off until it clears up.
+	# Valid values: true, false
+	looseSignalDuringThunderstorm = true
+
