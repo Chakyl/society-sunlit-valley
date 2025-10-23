@@ -23,6 +23,14 @@ const getWaterType = (biome) => {
   }
   return "fresh";
 };
+const getBobberTier = (item) => {
+  let stringNbt = item.nbt.toString();
+  if (stringNbt.includes("sunlit_cobblemon:poke_bobber")) return "common";
+  if (stringNbt.includes("sunlit_cobblemon:great_poke_bobber")) return "uncommon";
+  if (stringNbt.includes("sunlit_cobblemon:ultra_poke_bobber")) return "rare";
+  if (stringNbt.includes("sunlit_cobblemon:master_poke_bobber")) return "epic";
+  return undefined;
+};
 
 const rollPokeFishingTable = (table) => {
   let roll = 0;
@@ -49,13 +57,16 @@ global.handleCobblemonFish = (e) => {
   const hook = e.getHookEntity();
   const server = player.getServer();
   const level = player.getLevel();
+  const bobberTier = getBobberTier(player.getHeldItem("main_hand"));
+  if (!bobberTier) return;
   if (player.isFake()) player.getHeldItem("main_hand").count--;
+
   if (level.dimension === "minecraft:the_nether") {
     console.log("fusghihng!@!!");
   } else {
     let biome = level.getBiome(hook.getPos());
     let caughtMon = rollPokeFishingTable(
-      getCobbleFishPool("common", global.getSeasonFromLevel(level), getWaterType(biome))
+      getCobbleFishPool(bobberTier, global.getSeasonFromLevel(level), getWaterType(biome))
     );
     if (!caughtMon) return;
     let pokeLevel = getPokemonLevel(caughtMon.lvlRange);

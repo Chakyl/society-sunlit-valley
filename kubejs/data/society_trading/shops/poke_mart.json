@@ -194,6 +194,64 @@
     },
     {
       "offer": {
+        "item": "sunlit_cobblemon:poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 2
+      },
+      "second_request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 10240,
+      "trade_id": "pmart_poke_bobber"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:great_poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 5
+      },
+      "numismatics_cost": 20480,
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "pmart_great_poke_bobber"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:ultra_poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 10
+      },
+      "numismatics_cost": 40960,
+      "stage_required": "trainer_lvl_6",
+      "unlock_description": "jei.society_trading.trainer_lvl_6",
+      "trade_id": "pmart_ultra_poke_bobber"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:master_poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 4
+      },
+      "numismatics_cost": 1048576,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_master_poke_bobber"
+    },
+    {
+      "offer": {
         "item": "cobblemon:healing_machine",
         "count": 1
       },

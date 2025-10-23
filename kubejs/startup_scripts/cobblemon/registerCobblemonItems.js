@@ -10,6 +10,23 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:prismatic_tm_pack")
     .texture("sunlit_cobblemon:item/prismatic_tm_pack")
     .displayName("Prismatic TM Pack");
+  e.create("sunlit_cobblemon:poke_bobber")
+    .texture("sunlit_cobblemon:item/poke_bobber")
+    .maxStackSize(1)
+    .displayName("Poké Bobber");
+  e.create("sunlit_cobblemon:great_poke_bobber")
+    .texture("sunlit_cobblemon:item/great_poke_bobber")
+    .maxStackSize(1)
+    .displayName("Great Poké Bobber");
+  e.create("sunlit_cobblemon:ultra_poke_bobber")
+    .texture("sunlit_cobblemon:item/ultra_poke_bobber")
+    .maxStackSize(1)
+    .displayName("Ultra Poké Bobber");
+  e.create("sunlit_cobblemon:master_poke_bobber")
+    .texture("sunlit_cobblemon:item/master_poke_bobber")
+    .maxStackSize(1)
+    .displayName("Master Poké Bobber");
+
   e.create("sunlit_cobblemon:uncharged_battery").texture("sunlit_cobblemon:item/uncharged_battery");
   global.cobblemonPreserves.forEach((jar) => {
     if (jar.item.includes("sunlit_cobblemon")) {

@@ -25,6 +25,32 @@
     }
   ],
   "lookup_history": [
+    "item:cobblemon:poke_ball",
+    "item:sunlit_cobblemon:master_poke_bobber",
+    "item:numismatics:neptunium_coin",
+    "item:society:cheese_press",
+    {
+      "type": "item",
+      "id": "cobblemon:hondew_berry",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:brown_trout",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 6
+    },
+    {
+      "type": "item",
+      "id": "unusualfishmod:raw_aero_mono",
+      "amount": 2
+    },
+    "item:cobblemon:sitrus_berry",
+    {
+      "type": "item",
+      "id": "cobblemon:dusk_stone",
+      "amount": 2
+    },
     {
       "type": "item",
       "id": "cobblemon:green_apricorn",
@@ -44,7 +70,6 @@
       "id": "cobblemon:shuca_berry",
       "amount": 9
     },
-    "item:cobblemon:hondew_berry",
     "item:cobblemon:fossilized_drake",
     {
       "type": "item",
@@ -85,11 +110,6 @@
       "type": "item",
       "id": "cobblemon:blue_apricorn",
       "amount": 32
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:dusk_stone",
-      "amount": 9
     },
     "item:unusualfishmod:raw_snowflake{quality_food:{effects:[],quality:3}}",
     "item:society:froggy_helm",
@@ -134,7 +154,6 @@
     },
     "item:rehooked:wood_hook",
     "item:rehooked:iron_hook",
-    "item:numismatics:neptunium_coin",
     "item:veggiesdelight:pasta_with_broccoli",
     "item:veggiesdelight:stuffed_zucchinis",
     "item:veggiesdelight:stuffed_bellpeppers",
@@ -180,7 +199,6 @@
       "id": "cobblemon:haban_berry",
       "amount": 11
     },
-    "item:cobblemon:sitrus_berry",
     "item:society:ember_crystal_cluster",
     {
       "type": "item",
@@ -1178,7 +1196,6 @@
       "id": "cobblemon:beast_ball",
       "amount": 64
     },
-    "item:cobblemon:poke_ball",
     "item:farm_and_charm:oatmeal_with_strawberries",
     "item:farm_and_charm:wild_strawberries",
     "item:cobblemon:strawberry_sweet",
@@ -1607,7 +1624,6 @@
       "amount": 2
     },
     "item:untitledduckmod:duck_feather",
-    "item:society:cheese_press",
     "item:society:treated_log",
     {
       "type": "item",
@@ -1965,12 +1981,10 @@
     "item:whimsy_deco:push_broom",
     "item:whimsy_deco:bathroom_rack",
     "item:windswept:ginger_tea",
-    "item:whimsy_deco:ship_helm",
-    "item:whimsy_deco:red_toy_plane",
-    "item:whimsy_deco:vintage_globe",
-    "item:whimsy_deco:blue_toy_plane"
+    "item:whimsy_deco:ship_helm"
   ],
   "craft_history": [
+    "minecraft:kjs/society_cheese_press",
     "cobblemon:dusk_ball",
     "minecraft:kjs/sunlit_cobblemon_uncharged_battery",
     "create:crafting/materials/rose_quartz",

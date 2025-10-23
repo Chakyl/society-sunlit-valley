@@ -141,6 +141,10 @@ const cobblemonSummerCrops = [
 ];
 const cobblemonAutumnCrops = ["cobblemon:vivichoke", "cobblemon:vivichoke_seeds"];
 ServerEvents.tags("item", (e) => {
+  e.add("stardew_fishing:bobbers", "sunlit_cobblemon:poke_bobber");
+  e.add("stardew_fishing:bobbers", "sunlit_cobblemon:great_poke_bobber");
+  e.add("stardew_fishing:bobbers", "sunlit_cobblemon:ultra_poke_bobber");
+  e.add("stardew_fishing:bobbers", "sunlit_cobblemon:master_poke_bobber");
   cobblemonAllSeasonCrops.forEach((crop) => {
     e.add("sereneseasons:spring_crops", crop);
     e.add("sereneseasons:autumn_crops", crop);

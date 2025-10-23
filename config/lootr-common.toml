@@ -3,7 +3,7 @@ convert_wooden_chests = true
 #list of loot tables which will decay (default blank, meaning no chests decay, in the format of (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
 decay_loot_tables = []
 #a list of additional chests that should be converted (in the format of ["modid:name", "modid:other_name"], must be a tile entity instance of RandomizableContainerBlockEntity)
-additional_chests = ["quark:purpur_chest", "quark:nether_brick_chest", "quark:crimson_chest"]
+additional_chests = ["quark:purpur_chest", "quark:nether_brick_chest", "quark:dark_oak_chest", "quark:crimson_chest"]
 #list of mod IDs whose loot tables will decay (default blank, meaning no chests decay, in the format ["modid", "othermodid"])
 decay_modids = []
 #list of modids whose loot tables shouldn't be converted (in the format of ["modid", "other_modid"])

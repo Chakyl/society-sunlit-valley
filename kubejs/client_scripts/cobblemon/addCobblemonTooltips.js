@@ -13,6 +13,11 @@ ItemEvents.tooltip((tooltip) => {
     global.addPriceTooltip(tooltip, item, "crop");
   });
 
+  tooltip.add("sunlit_cobblemon:poke_bobber", Text.gold("Fishes up a common Pokémon with every catch"));
+  tooltip.add("sunlit_cobblemon:great_poke_bobber", Text.gold("Fishes up an uncommon Pokémon with every catch"));
+  tooltip.add("sunlit_cobblemon:ultra_poke_bobber", Text.gold("Fishes up a rare Pokémon with every catch"));
+  tooltip.add("sunlit_cobblemon:master_poke_bobber", Text.gold("Fishes up an epic Pokémon with every catch"));
+  
   tooltip.add("sunlit_cobblemon:tm_pack", Text.gray("Right click to open"));
   tooltip.add("sunlit_cobblemon:tm_pack", Text.green("12% chance for a TM"));
 
