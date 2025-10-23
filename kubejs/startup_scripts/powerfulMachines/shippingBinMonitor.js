@@ -23,7 +23,7 @@ global.runShippingBinMonitor = (entity) => {
         true
       ).calculatedValue
     );
-    let nbt = entity.block.getEntityData();
+    let nbt = block.getEntityData();
     if (nbt.data.value !== calculationResults) {
       nbt.merge({ data: { value: calculationResults } });
       block.setEntityData(nbt);
@@ -60,5 +60,8 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ value: 0 });
       blockInfo.serverTick(200, 0, (entity) => global.runShippingBinMonitor(entity));
+    })
+    .rightClick((click) => {
+      global.runShippingBinMonitor({ block: click.block, level: click.level });
     });
 });

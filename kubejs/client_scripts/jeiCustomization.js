@@ -67,7 +67,36 @@ JEIAddedEvents.registerCategories((e) => {
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
       });
   });
+  e.custom("herbalbrews:tea_drying", (category) => {
+    category
+      .title("Tea Drying")
+      .background(guiHelper.createDrawable("society:textures/gui/drying.png", 1, 1, 122, 48))
+      .icon(guiHelper.createDrawableItemStack("herbalbrews:green_tea_leaf"))
+      .isRecipeHandled(() => true)
+      .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
+        guiGraphics.drawWordWrap(
+          Client.font,
+          Text.of("Place block and wait..."),
+          2,
+          36,
+          177,
+          0
+        );
+      })
+      .handleLookup((builder, recipe) => {
+        const { input, output } = recipe.data;
+        builder
+          .addSlot("input", 20, 14)
+          .addItemStack(Item.of(input))
+          .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        builder
+          .addSlot("output", 84, 14)
+          .addItemStack(Item.of(output))
+          .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+      });
+  });
 });
+
 JEIAddedEvents.registerRecipes((e) => {
   const nether = ["crimson", "warped"];
   const juiceJEIRecipe = (juice, grape) => {
@@ -108,8 +137,7 @@ JEIAddedEvents.registerRecipes((e) => {
     } else if (juice.includes("white")) {
       juiceJEIRecipe("white", grapes[index]);
     } else {
-    juiceJEIRecipe(juice, grapes[index]);
-
+      juiceJEIRecipe(juice, grapes[index]);
     }
   });
 
@@ -121,8 +149,7 @@ JEIAddedEvents.registerRecipes((e) => {
     { crop: "farm_and_charm:wild_nettle" },
     { crop: "vinery:cherry", bonemealTarget: "vinery:dark_cherry_leaves" },
     { crop: "minecraft:apple", bonemealTarget: "vinery:apple_leaves" },
-  ];
-  cropDupes.forEach((item) => {
+  ].forEach((item) => {
     const { crop, bonemealTarget } = item;
     e.custom("society:enriched_bone_mealing").add({
       crop: crop,
@@ -130,7 +157,7 @@ JEIAddedEvents.registerRecipes((e) => {
     });
   });
 
-  const catalogRecipes = [
+  [
     {
       catalog: "society:tanuki_catalog",
       cost: "2x numismatics:crown",
@@ -151,9 +178,25 @@ JEIAddedEvents.registerRecipes((e) => {
       cost: "1x numismatics:sun",
       output: "society:plushie_capsule",
     },
-  ];
-  catalogRecipes.forEach((item) => {
+  ].forEach((item) => {
     e.custom("society:furniture_catalog").add(item);
+  });
+
+  [
+    {
+      input: "herbalbrews:green_tea_leaf_block",
+      output: "herbalbrews:dried_out_green_tea_leaf_block",
+    },
+    {
+      input: "herbalbrews:dried_green_tea_leaf_block",
+      output: "herbalbrews:black_tea_leaf_block",
+    },
+    {
+      input: "herbalbrews:mixed_tea_leaf_block",
+      output: "herbalbrews:oolong_tea_leaf_block",
+    },
+  ].forEach((item) => {
+    e.custom("herbalbrews:tea_drying").add(item);
   });
 });
 // // JEI Catalysts broken on JEI version

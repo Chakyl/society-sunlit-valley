@@ -59,6 +59,7 @@ const stripTags = [
   "veggiesdelight:cauliflower_crop",
   "veggiesdelight:sweet_potato_crop",
   "veggiesdelight:sweet_potato",
+  "veggiesdelight:garlic_crop",
   "veggiesdelight:bellpepper_crop",
   "veggiesdelight:bellpepper",
   "veggiesdelight:bellpepper_seeds",

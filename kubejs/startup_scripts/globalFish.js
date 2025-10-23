@@ -299,10 +299,17 @@ global.handleFishExtraction = (block, player, server) => {
       quality > 0 ? `{quality_food:{quality:${quality}}}` : null
     );
   } else {
-    result = Item.of(
-      `${resultCount}x ${type}`,
-      quality > 0 ? `{quality_food:{quality:${quality}}}` : null
-    );
+    if (["aquaculture:leech", "aquaculture:minnow"].includes(item)) {
+      result = Item.of(
+        `${resultCount}x ${item}`,
+        quality > 0 ? `{Damage:0,quality_food:{quality:${quality},effects:[]}}` : `{Damage:0}`
+      );
+    } else {
+      result = Item.of(
+        `${resultCount}x ${item}`,
+        quality > 0 ? `{quality_food:{quality:${quality},effects:[]}}` : null
+      );
+    }
   }
   if (result) {
     block.set(block.id, {

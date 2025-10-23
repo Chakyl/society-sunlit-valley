@@ -14,7 +14,7 @@ const overworldGrapes = [
   "vinery:white_grape",
   "vinery:taiga_grapes_white",
   "vinery:jungle_grapes_white",
-  "vinery:savanna_grapes_red",
+  "vinery:savanna_grapes_white",
 ];
 overworldGrapes.forEach((item) => {
   global.dehydratorRecipes.set(item, {

@@ -1315,21 +1315,21 @@ dryingRecipes.forEach((recipe) => {
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 // Note: Raw value not divided by output count due to effort. Cookies multiplied by 1.5
 const cakingStationRecipes = [
-  { item: "bakery:apple_cupcake", value: 32 },
+  { item: "bakery:apple_cupcake", value: 8 },
   { item: "bakery:strawberry_cake", value: 48 },
-  { item: "bakery:strawberry_cupcake", value: 48 },
-  { item: "bakery:sweetberry_cupcake", value: 28 },
+  { item: "bakery:strawberry_cupcake", value: 12 },
+  { item: "bakery:sweetberry_cupcake", value: 7 },
   { item: "bakery:sweetberry_cake", value: 28 },
-  { item: "bakery:chocolate_glazed_cookie", value: 213 },
-  { item: "bakery:strawberry_glazed_cookie", value: 64 },
-  { item: "bakery:sweetberry_glazed_cookie", value: 48 },
+  { item: "bakery:chocolate_glazed_cookie", value: 54 },
+  { item: "bakery:strawberry_glazed_cookie", value: 16 },
+  { item: "bakery:sweetberry_glazed_cookie", value: 12 },
   { item: "bakery:chocolate_cake", value: 142 },
   { item: "bakery:chocolate_gateau", value: 25 },
 ];
 cakingStationRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: recipe.value * 5,
+    value: recipe.value * 4,
   });
 });
 const cookingPotRecipes = [
