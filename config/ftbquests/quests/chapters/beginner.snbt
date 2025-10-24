@@ -50,7 +50,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["201D4A576453FB99"]
 			description: [""]
 			hide_dependency_lines: true
 			icon: "minecraft:stick"
@@ -226,11 +225,6 @@
 			icon: "twigs:pebble"
 			id: "578D98AA47DCD9C3"
 			subtitle: "The button doesn't bite"
-			tasks: [{
-				id: "5A1AAEE67D357245"
-				title: "Aye Aye"
-				type: "checkmark"
-			}]
 			title: "Rock Tier"
 			x: 0.0d
 			y: -2.0d
@@ -243,11 +237,6 @@
 			hide_dependency_lines: true
 			icon: "minecraft:raw_iron"
 			id: "1C80F9FD2A3E313F"
-			tasks: [{
-				id: "7E8C26224584FCC8"
-				title: "Iron Tier"
-				type: "checkmark"
-			}]
 			x: 7.0d
 			y: -2.0d
 		}
@@ -463,7 +452,6 @@
 					type: "item"
 				}
 			]
-			subtitle: "Hey,, i thought of something funnier than 24..."
 			tasks: [{
 				action: "defeat"
 				amount: 25L
@@ -511,8 +499,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["578D98AA47DCD9C3"]
@@ -617,8 +605,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 7.0d
-			y: 1.0d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -627,6 +615,7 @@
 				"3445937422AC3866"
 				"6F67FB69D101E731"
 			]
+			icon: "twigs:twig"
 			id: "30F339B9F7D920A6"
 			rewards: [
 				{
@@ -636,7 +625,7 @@
 				}
 				{
 					auto: "invisible"
-					command: "/kjs stages add @p trainer_lvl_1"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
 					elevate_perms: true
 					id: "4FC2E7C232487C1E"
 					silent: true
@@ -646,9 +635,13 @@
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
-				id: "71F2188D688AE0EF"
-				item: "twigs:twig"
-				type: "item"
+				disable_toast: true
+				icon: "twigs:twig"
+				id: "6F6C8D949639DAEA"
+				stat: "minecraft:play_time"
+				title: "Twig Tier Achieved"
+				type: "stat"
+				value: 1
 			}]
 			title: "Twig Tier Complete!"
 			x: -6.0d
@@ -672,7 +665,7 @@
 				}
 				{
 					auto: "invisible"
-					command: "/kjs stages add @p trainer_lvl_2"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
 					elevate_perms: true
 					id: "429B5FBA9448D2F3"
 					silent: true
@@ -682,9 +675,13 @@
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
-				id: "7684CCCE2AF83F95"
-				item: "twigs:twig"
-				type: "item"
+				disable_toast: true
+				icon: "cobblemon:smooth_rock"
+				id: "627D9F22F3E857FB"
+				stat: "minecraft:play_time"
+				title: "Rock Tier Achieved"
+				type: "stat"
+				value: 1
 			}]
 			title: "Rock Tier Complete!"
 			x: 0.0d
@@ -709,7 +706,7 @@
 				}
 				{
 					auto: "invisible"
-					command: "/kjs stages add @p trainer_lvl_3"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
 					elevate_perms: true
 					id: "394458C60641A1A3"
 					silent: true
@@ -719,9 +716,13 @@
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
-				id: "05D4220133FE533C"
-				item: "twigs:twig"
-				type: "item"
+				disable_toast: true
+				icon: "minecraft:iron_ingot"
+				id: "3163DB74C0C9743D"
+				stat: "minecraft:play_time"
+				title: "Iron Tier Achieved"
+				type: "stat"
+				value: 1
 			}]
 			title: "Iron Tier Complete!"
 			x: 7.0d
@@ -735,6 +736,7 @@
 			]
 			description: ["Go get yourself something nice!"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "666FB123AAD70030"
 			rewards: [
 				{
@@ -749,16 +751,435 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 2.5d
 			tasks: [{
-				id: "452BC3EBD6C7186B"
-				title: "WOOO!!!!!!!!"
-				type: "checkmark"
+				disable_toast: true
+				icon: "cobblemon:great_ball"
+				id: "5A8F266719E7C536"
+				stat: "minecraft:play_time"
+				title: "Beginner Rank Complete!"
+				type: "stat"
+				value: 1
 			}]
 			title: "Beginner Graduation"
 			x: 0.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["44552987B2680A1B"]
+			icon: "cobblemon:ground_gem"
+			id: "496F315CCAEFEFF2"
+			rewards: [{
+				id: "3E3A41190A51D092"
+				item: "sunlit_cobblemon:berry_capsule"
+				type: "item"
+			}]
+			tasks: [{
+				action: "catch"
+				amount: 5L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "04B3E386254A3B37"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: "ground"
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -8.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["44552987B2680A1B"]
+			id: "5268630443AE445F"
+			rewards: [{
+				count: 10
+				id: "307B29D348287EF0"
+				item: "cobblemon:ultra_ball"
+				type: "item"
+			}]
+			tasks: [{
+				action: "catch"
+				amount: 20L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3A9676C5654B826A"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["44552987B2680A1B"]
+			icon: "cobblemon:great_ball"
+			id: "2225CAEF104DC64E"
+			rewards: [{
+				id: "1E7136405F251CDE"
+				item: "sunlit_cobblemon:greater_tm_pack"
+				type: "item"
+			}]
+			tasks: [{
+				action: "level_up"
+				amount: 50L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "03EBE759C5ED75E3"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["44552987B2680A1B"]
+			icon: "cobblemon:ultra_ball"
+			id: "50367C36C3FB46C8"
+			rewards: [
+				{
+					count: 5
+					id: "3E10D7AF3155B8FE"
+					item: "cobblemon:max_revive"
+					type: "item"
+				}
+				{
+					id: "31E2F5D522DF0276"
+					item: "cobblemon:exp_candy_xl"
+					type: "item"
+				}
+			]
+			tasks: [{
+				action: "defeat"
+				amount: 50L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1A1195AE26BC2B94"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["44552987B2680A1B"]
+			icon: "cobblemon:rock_gem"
+			id: "5A5008A4F02D7EB5"
+			rewards: [
+				{
+					id: "75B8B3600D2DBF5A"
+					item: "cobblemon:full_restore"
+					type: "item"
+				}
+				{
+					id: "2D8E2D372B721A45"
+					item: "cobblemon:exp_candy_l"
+					type: "item"
+				}
+			]
+			tasks: [{
+				action: "catch"
+				amount: 10L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6CE01E71A45BD746"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: "rock"
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["666FB123AAD70030"]
+			description: [""]
+			hide_dependency_lines: true
+			icon: "minecraft:raw_gold"
+			id: "44552987B2680A1B"
+			subtitle: "Dont be shy... click it.."
+			title: "Iron Tier"
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"50367C36C3FB46C8"
+				"2225CAEF104DC64E"
+				"5A5008A4F02D7EB5"
+				"5268630443AE445F"
+				"496F315CCAEFEFF2"
+			]
+			icon: "minecraft:gold_ingot"
+			id: "68F841C646C9F9E1"
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
+					elevate_perms: true
+					id: "5E47C95DABA998C3"
+					silent: true
+					type: "command"
+				}
+				{
+					id: "2D60D73CA617DBDA"
+					item: "cobblemon:pasture"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				icon: "minecraft:gold_ingot"
+				id: "126D9BC160E08050"
+				stat: "minecraft:play_time"
+				title: "Gold Tier Achieved"
+				type: "stat"
+				value: 1
+			}]
+			title: "Gold Tier Complete!"
+			x: -6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["666FB123AAD70030"]
+			description: [""]
+			hide_dependency_lines: true
+			icon: "minecraft:raw_gold"
+			id: "0227B5D0BA05ACB3"
+			subtitle: "Dont be shy... click it.."
+			title: "Iron Tier"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0227B5D0BA05ACB3"]
+			icon: "cobblemon:poison_gem"
+			id: "6DF3741C3754EC87"
+			rewards: [{
+				id: "6EA8DF60C4AFBC96"
+				item: "sunlit_cobblemon:berry_capsule"
+				type: "item"
+			}]
+			tasks: [{
+				action: "catch"
+				amount: 10L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "109732F4516A05CD"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: "poison"
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0227B5D0BA05ACB3"]
+			id: "409E50E24D3A21EB"
+			rewards: [{
+				count: 10
+				id: "0B177E995BFB6CDB"
+				item: "cobblemon:quick_ball"
+				type: "item"
+			}]
+			tasks: [{
+				action: "catch"
+				amount: 20L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "756EA1D7F23E9AD8"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0227B5D0BA05ACB3"]
+			icon: "cobblemon:great_ball"
+			id: "0645FB6ED21DB194"
+			rewards: [{
+				id: "5FC50AE28F8C5002"
+				item: "sunlit_cobblemon:greater_tm_pack"
+				type: "item"
+			}]
+			tasks: [{
+				action: "level_up"
+				amount: 50L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "36FFE52368C791EC"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0227B5D0BA05ACB3"]
+			icon: "cobblemon:ultra_ball"
+			id: "11DB564D7DAA04B9"
+			tasks: [{
+				action: "defeat"
+				amount: 50L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7C8C616AC7F1B0D3"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0227B5D0BA05ACB3"]
+			icon: "cobblemon:fire_gem"
+			id: "6DA840083729251E"
+			tasks: [{
+				action: "catch"
+				amount: 15L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "22D551F0952AC7EF"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: "fire"
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"0645FB6ED21DB194"
+				"11DB564D7DAA04B9"
+				"6DA840083729251E"
+				"6DF3741C3754EC87"
+				"409E50E24D3A21EB"
+				"301935045A947BFE"
+			]
+			icon: "minecraft:diamond"
+			id: "565B2D10A6CA81A4"
+			rewards: [{
+				auto: "invisible"
+				command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
+				elevate_perms: true
+				id: "29F66C2A1BE341DD"
+				silent: true
+				type: "command"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				icon: "minecraft:diamond"
+				id: "0B6A5139C7A2F5F5"
+				stat: "minecraft:play_time"
+				title: "Diamond Tier Achieved"
+				type: "stat"
+				value: 1
+			}]
+			title: "Diamond Tier Complete!"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0227B5D0BA05ACB3"]
+			icon: "cobblemon:helix_fossil"
+			id: "301935045A947BFE"
+			tasks: [{
+				action: "revive_fossil"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7E4C1C6F5D3EC6C3"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
 	]
-	title: "Beginner"
+	title: "Trainer Level"
 }

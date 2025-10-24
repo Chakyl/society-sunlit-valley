@@ -28,6 +28,12 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("sunlit_cobblemon:prismatic_tm_pack", Text.gray("Right click to open"));
   tooltip.add("sunlit_cobblemon:prismatic_tm_pack", Text.green("Only contains TMs"));
 
+  tooltip.add("sunlit_cobblemon:berry_capsule", Text.gray("Right click to open"));
+  tooltip.add("sunlit_cobblemon:berry_capsule", Text.green("Contains common berries"));
+
+  tooltip.add("cobblemon:ability_capsule", Text.gray("Changes the ability of the Pokémon it is used on to their alternative standard ability"));
+  tooltip.add("cobblemon:ability_patch", Text.gray("Changes the ability of the Pokémon it is used on to their alternative hidden ability"));
+
   [
     {
       item: "cobblemon:growth_mulch",

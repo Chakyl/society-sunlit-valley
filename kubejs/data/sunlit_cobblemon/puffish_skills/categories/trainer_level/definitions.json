@@ -1,0 +1,154 @@
+{
+  "twig": {
+    "title": "Twig",
+    "description": "New Poké Mart consumables\n§d+2 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "twigs:twig"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_1",
+          "lock_command": "kubejs stages remove @s trainer_lvl_1"
+        }
+      }
+    ]
+  },
+  "rock": {
+    "title": "Rock",
+    "description": "§d+2 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "cobblemon:smooth_rock"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_2",
+          "lock_command": "kubejs stages remove @s trainer_lvl_2"
+        }
+      }
+    ]
+  },
+  "iron": {
+    "title": "Iron",
+    "description": "New Poké Mart consumables\nGreat Poké Bobber\n§d+2 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_3",
+          "lock_command": "kubejs stages remove @s trainer_lvl_3"
+        }
+      }
+    ]
+  },
+  "gold": {
+    "title": "Gold",
+    "description": "New Poké Mart consumables\n§d+2 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_4",
+          "lock_command": "kubejs stages remove @s trainer_lvl_4"
+        }
+      }
+    ]
+  },
+  "diamond": {
+    "title": "Diamond",
+    "description": "New Poké Mart consumables\n§d+2 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_5",
+          "lock_command": "kubejs stages remove @s trainer_lvl_5"
+        }
+      }
+    ]
+  },
+  "iridium": {
+    "title": "Iridium",
+    "description": "Ultra Poké Bobber\n§d+2 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_6",
+          "lock_command": "kubejs stages remove @s trainer_lvl_6"
+        }
+      }
+    ]
+  },
+  "ancient": {
+    "title": "Ancient",
+    "description": "Ultra Poké Bobber\n§d+2 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:ancient_fruit"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_7",
+          "lock_command": "kubejs stages remove @s trainer_lvl_7"
+        }
+      }
+    ]
+  },
+  "prismatic": {
+    "title": "Prismatic",
+    "description": "Master Poké Bobber\n+4 Worker slots",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:prismatic_shard"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_8",
+          "lock_command": "kubejs stages remove @s trainer_lvl_8"
+        }
+      }
+    ]
+  }
+}

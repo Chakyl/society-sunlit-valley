@@ -61,4 +61,10 @@ JEIAddedEvents.registerRecipes((e) => {
   });
   addLootBoxRecipes(e, "society:plushie_capsule", "#society:plushies");
   addLootBoxRecipes(e, "society:bouquet_bag", "#society:bouquet_bag_flowers");
+  addLootBoxRecipes(e, "sunlit_cobblemon:tm_pack", "#sunlit_cobblemon:tm");
+  addLootBoxRecipes(e, "sunlit_cobblemon:tm_pack", "#sunlit_cobblemon:tr");
+  addLootBoxRecipes(e, "sunlit_cobblemon:greater_tm_pack", "#sunlit_cobblemon:tm");
+  addLootBoxRecipes(e, "sunlit_cobblemon:greater_tm_pack", "#sunlit_cobblemon:tr");
+  addLootBoxRecipes(e, "sunlit_cobblemon:prismatic_tm_pack", "#sunlit_cobblemon:tm");
+  addLootBoxRecipes(e, "sunlit_cobblemon:berry_capsule", "#cobble_workers:common_berries");
 });

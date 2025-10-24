@@ -25,6 +25,51 @@
     }
   ],
   "lookup_history": [
+    "item:twigs:twig",
+    "item:cobblemon:heat_rock",
+    "item:sunlit_cobblemon:poke_bobber",
+    "item:herbalbrews:dried_green_tea",
+    "item:herbalbrews:dried_out_green_tea_leaf_block",
+    "item:herbalbrews:green_tea_leaf_block",
+    "item:herbalbrews:mixed_tea_leaf_block",
+    "item:herbalbrews:oolong_tea_leaf_block",
+    "item:herbalbrews:dried_oolong_tea",
+    "item:herbalbrews:oolong_tea",
+    {
+      "type": "item",
+      "id": "create:crushed_raw_bismuth",
+      "amount": 64
+    },
+    "item:etcetera:bismuth_ingot",
+    "item:society:rubber",
+    {
+      "type": "item",
+      "id": "cobblemon:aguav_berry",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:perch",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    "item:sunlit_cobblemon:poke_genes",
+    "item:sunlit_cobblemon:uncharged_battery",
+    "item:sunlit_cobblemon:ultra_poke_bobber",
+    "item:sunlit_cobblemon:prismatic_tm_pack",
+    "item:simpletms:tm_wideguard",
+    "item:sunlit_cobblemon:tm_pack",
+    {
+      "type": "item",
+      "id": "sunlit_cobblemon:berry_capsule",
+      "amount": 64
+    },
+    "item:cobblemon:dawn_stone",
+    "item:sunlit_cobblemon:fairy_heart",
+    "item:numismatics:prismatic_coin",
+    "item:society:production_science_pack",
+    "item:society:friendship_necklace",
+    "item:society:ancient_juice",
     {
       "type": "item",
       "id": "society:butterfly_amber",
@@ -62,7 +107,6 @@
       "id": "cobblemon:green_apricorn",
       "amount": 7
     },
-    "item:sunlit_cobblemon:uncharged_battery",
     "item:society:battery",
     "item:create:rose_quartz",
     "item:cobblemon:link_cable",
@@ -121,7 +165,6 @@
     "item:society:froggy_helm",
     "item:society:spark_gro",
     "item:minecraft:loom",
-    "item:cobblemon:aguav_berry",
     "item:cobblemon:fossilized_dino",
     {
       "type": "item",
@@ -233,11 +276,6 @@
     },
     "item:cobble_workers:craft_station",
     "item:create:crushed_raw_silver",
-    {
-      "type": "item",
-      "id": "create:crushed_raw_bismuth",
-      "amount": 2
-    },
     "item:oreganized:raw_silver",
     "item:paraglider:goddess_statue",
     "item:society:ancient_goddess_statue",
@@ -308,7 +346,6 @@
     "item:cobblemon:leaf_stone",
     "item:cobblemon:moon_stone",
     "item:cobblemon:shiny_stone",
-    "item:cobblemon:dawn_stone",
     "item:cobblemon:ice_stone",
     "item:cobblemon:sun_stone",
     "item:cobblemon:dubious_disc",
@@ -683,7 +720,6 @@
     "item:society:wheel_of_adaptation",
     "item:cobblemon:blunder_policy",
     "item:numismatics:red_card",
-    "item:society:friendship_necklace",
     "item:cobblemon:soft_sand",
     "item:beachparty:coconut_milkshake",
     "item:society:white_sheet",
@@ -1289,7 +1325,6 @@
     "item:cobblemon:mystic_water",
     "item:cobblemon:muscle_band",
     "item:society:ancient_fruit_seed",
-    "item:numismatics:prismatic_coin",
     {
       "type": "item",
       "id": "cobblemon:metal_powder",
@@ -1310,7 +1345,6 @@
     "item:cobblemon:clover_sweet",
     "item:etcetera:dice",
     "item:cobblemon:light_ball",
-    "item:cobblemon:heat_rock",
     "item:cobblemon:heavy_duty_boots",
     "item:cobblemon:icy_rock",
     "item:whimsy_deco:golden_horseshoe",
@@ -1355,7 +1389,6 @@
       "id": "cobblemon:fairy_feather",
       "amount": 64
     },
-    "item:society:ancient_juice",
     "item:society:energy_drink",
     {
       "type": "item",
@@ -1580,7 +1613,6 @@
     "item:cobblemon:blue_apricorn_seed",
     "item:twigs:polished_basalt_bricks",
     "item:cobblemon:relic_coin_sack",
-    "item:twigs:twig",
     "item:cobblemon:roseli_berry",
     "item:cobblemon:full_restore",
     "item:cobblemon:paralyze_heal",
@@ -1957,27 +1989,7 @@
     "item:whimsy_deco:red_life_preserver_ring",
     "item:whimsy_deco:paper_lantern",
     "item:whimsy_deco:blue_paper_lantern",
-    "item:whimsy_deco:red_paper_lantern",
-    "item:whimsy_deco:wood_framed_paper_lantern",
-    "item:whimsy_deco:tree_paper_lantern",
-    "item:whimsy_deco:blue_phone",
-    "item:whimsy_deco:washing_machine",
-    "item:whimsy_deco:light_tile",
-    "item:whimsy_deco:classic_tile",
-    "item:whimsy_deco:antique_vintage_globe",
-    "item:whimsy_deco:traffic_cone",
-    "item:whimsy_deco:flamingo_swimming_ring",
-    "item:whimsy_deco:red_stocking",
-    "item:whimsy_deco:blue_stocking",
-    "item:whimsy_deco:black_swan_swimming_ring",
-    "item:whimsy_deco:yellow_lawn_mower",
-    "item:whimsy_deco:horseshoe",
-    "item:whimsy_deco:orange_life_preserver_ring",
-    "item:whimsy_deco:fan",
-    "item:whimsy_deco:push_broom",
-    "item:whimsy_deco:bathroom_rack",
-    "item:windswept:ginger_tea",
-    "item:whimsy_deco:ship_helm"
+    "item:whimsy_deco:red_paper_lantern"
   ],
   "craft_history": [
     "minecraft:kjs/society_cheese_press",

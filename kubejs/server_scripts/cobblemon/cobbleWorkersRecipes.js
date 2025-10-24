@@ -1,3 +1,4 @@
+// priority: -21
 console.info("[SOCIETY] cobbleWorkersRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
@@ -33,7 +34,7 @@ ServerEvents.recipes((e) => {
         },
         { item: outputItem.id, count: 2 },
         "steel",
-        3000, 
+        3000,
         "SPEED",
         "ATTACK"
       );
@@ -72,6 +73,20 @@ ServerEvents.recipes((e) => {
       });
     }
   });
+  createCobbleWorkerRecipe(
+    { item: "society:sap" },
+    { item: "society:rubber" },
+    "fire",
+    100,
+    "SPECIAL_ATTACK"
+  );
+  createCobbleWorkerRecipe(
+    { item: "create:crushed_raw_bismuth" },
+    { item: "etcetera:bismuth_ingot" },
+    "fire",
+    100,
+    "SPECIAL_ATTACK"
+  );
 
   [
     { sapling: "minecraft:oak_sapling", log: "minecraft:oak_log" },
@@ -137,6 +152,24 @@ ServerEvents.recipes((e) => {
     "electric",
     48000,
     "SPECIAL_ATTACK"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:friendship_necklace",
+    },
+    { item: "sunlit_cobblemon:fairy_heart", count: 1 },
+    "fairy",
+    72000,
+    "SPECIAL_DEFENCE"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:aged_ancient_cider",
+    },
+    { item: "sunlit_cobblemon:poke_genes", count: 1 },
+    "psychic",
+    72000,
+    "HP"
   );
   [
     { item: "vintagedelight:ghost_pepper", pickle: "vintagedelight:pickled_pepper" },

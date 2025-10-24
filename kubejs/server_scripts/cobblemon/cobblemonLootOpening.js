@@ -84,3 +84,27 @@ ItemEvents.rightClicked("sunlit_cobblemon:prismatic_tm_pack", (e) => {
   );
   global.addItemCooldown(player, "sunlit_cobblemon:prismatic_tm_pack", 2);
 });
+
+
+ItemEvents.rightClicked("sunlit_cobblemon:berry_capsule", (e) => {
+  const { server, player, item } = e;
+  server.runCommandSilent(
+    `playsound minecraft:ui.stonecutter.take_result block @a ${player.x} ${player.y} ${player.z}`
+  );
+
+  const furniture = Ingredient.of("#cobble_workers:common_berries").itemIds;
+
+  if (!player.isCreative()) item.count--;
+  let reward = player.level.createEntity("minecraft:item");
+  reward.x = player.x;
+  reward.y = player.y;
+  reward.z = player.z;
+
+  reward.item = Item.of(`1x ${furniture[Math.floor(Math.random() * furniture.length)]}`);
+
+  reward.spawn();
+  server.runCommandSilent(
+    `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
+  );
+  global.addItemCooldown(player, "sunlit_cobblemon:berry_capsule", 2);
+});
