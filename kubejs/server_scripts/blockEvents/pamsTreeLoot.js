@@ -31,27 +31,24 @@ BlockEvents.rightClicked(
       player.isHoldingInAnyHand("meadow:watering_can")
     )
       return;
-    if (player.stages.has("tree_whisperer") && Number(block.properties.get("age")) == 7) {
-      const weirdFruit = weirdFruits.get(String(block.id));
-      global.giveExperience(server, player, "farming", 40);
-      if (weirdFruit) {
-        block.popItem(`2x ${weirdFruit}`);
-      } else {
-        block.popItem(`2x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`);
+    if (Number(block.properties.get("age")) >= 7) {
+      if (player.stages.has("tree_whisperer")) {
+        const weirdFruit = weirdFruits.get(String(block.id));
+        if (weirdFruit) {
+          block.popItem(`2x ${weirdFruit}`);
+        } else {
+          block.popItem(`2x pamhc2trees:${fruitName.substring(3, fruitName.length)}item`);
+        }
       }
-    }
-    if (
-      block.id == "pamhc2trees:pambanana" &&
-      player.stages.has("banana_karenina") &&
-      Number(block.properties.get("age")) == 7
-    ) {
+      if (block.id == "pamhc2trees:pambanana" && player.stages.has("banana_karenina")) {
+        block.popItem(
+          `${player.stages.has("tree_whisperer") ? 5 : 3}x pamhc2trees:${fruitName.substring(
+            3,
+            fruitName.length
+          )}item`
+        );
+      }
       global.giveExperience(server, player, "farming", 40);
-      block.popItem(
-        `${player.stages.has("tree_whisperer") ? 5 : 3}x pamhc2trees:${fruitName.substring(
-          3,
-          fruitName.length
-        )}item`
-      );
     }
   }
 );

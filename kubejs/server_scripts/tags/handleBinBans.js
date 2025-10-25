@@ -27,6 +27,7 @@ ServerEvents.tags("item", (e) => {
     "createutilities",
     "chimes",
     "botania",
+    "botania_seeds",
     "farmingforblockheads",
     "numismatics",
   ];

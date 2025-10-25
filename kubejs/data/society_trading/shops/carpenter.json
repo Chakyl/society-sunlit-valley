@@ -5,6 +5,16 @@
   "jei_catalyst": { "item": "meadow:woodcutter" },
   "trades": [
     {
+      "offer": { "item": "society:fantasy_box_bone", "count": 1 },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "seasons_required": ["late_autumn"],
+      "trade_id": "carpenter_fantasy_box_bone"
+    },
+    {
       "offer": { "item": "society:bee_wallpaper", "count": 8 },
       "request": {
         "item": "numismatics:cog",

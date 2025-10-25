@@ -10,10 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3F759C6DEEBC61FD"
-				"0A39B0C0A77E57B0"
-			]
+			dependencies: ["0A39B0C0A77E57B0"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest1.description1}"
 				""
@@ -1633,14 +1630,8 @@
 			]
 			id: "2A02C6E45ED944F4"
 			rewards: [{
-				id: "719226375F98A0BA"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "patchouli:fish_finder"
-					}
-				}
+				id: "656C37C798D162C5"
+				item: "society:sea_biscut"
 				type: "item"
 			}]
 			tasks: [{

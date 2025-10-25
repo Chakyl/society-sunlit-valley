@@ -270,7 +270,7 @@ ItemEvents.entityInteracted((e) => {
           xp: 1,
         },
         {
-          buy: { Count: 1, id: "numismatics:cog" },
+          buy: { Count: 2, id: "numismatics:cog" },
           buyB: { Count: 0, id: "minecraft:air" },
           demand: 0,
           maxUses: 8,

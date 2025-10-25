@@ -34,7 +34,7 @@ Use that Escape Rope I gave you to get out before 5AM..."],title:"A Warning"}`
       player.persistentData.skullCavernEnterDay = Number(
         (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
       );
-      player.level.getBlock(x, 511, z).set("society:skull_cavern_teleporter");
+      player.getLevel().getBlock(x, 511, z).set("society:skull_cavern_teleporter");
     }
   } else {
     errorText = "This block doesn't work in this dimension";

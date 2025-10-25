@@ -5,7 +5,9 @@ ServerEvents.recipes((e) => {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",
   });
-  e.smelting("society:rubber", "society:sap");
+  e.smelting("society:rubber", "society:sap").xp(0.35)
+  e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7)
+  e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7)
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
@@ -61,7 +63,7 @@ ServerEvents.recipes((e) => {
       item: "society:mexican_street_corn",
     },
   });
-  e.shapeless("6x numismatics:neptunium_coin", ["moreminecarts:chunk_loader"])
+  e.shapeless("6x numismatics:neptunium_coin", ["moreminecarts:chunk_loader"]);
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);

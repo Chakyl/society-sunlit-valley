@@ -1,6 +1,6 @@
 ^^^
 ## Whimsical Trading
-### v3.3.4
+### v3.3.5
 ^^^
 --- 
 - Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
@@ -182,3 +182,34 @@
 - Fixed Antique Phone not being considered a Phone
 - Fixed some quests having incorrect dependencies
 - Fixed Quakes shutting down when they get lonely
+
+## 3.3.5
+- Added Search box to trade screen
+- Added icons to shop selector for seasonal/unlockable shops
+- Added JEI category for drying tea
+- Added ability to right click and update Shipping Bin Monitor
+- Added Bone Fantasy Box to Carpenter in late Autumn
+- Improved speed of Auto-Grabbers
+- Increased number of trades shown on trade screen as well as size of screens
+- Removed Bewereager jumpscare
+- Removed Milk from barkeeper
+- Removed water in cold biomes giving freezing effect
+- Reduced scaling of Caking Station recipes
+- Fixed Butterflies and Moths having swapped drops
+- Fixed issues with freezing slowness persisting
+- Fixed Garlic growing out of season
+- Fixed not being able to take Minnows and Leeches out of Fish Ponds
+- Fixed Bullfish Jobs Neptuna not being submittable to Abandoned Farm bundle (will only affect newly extracted Neptuna)
+- Fixed White Savannah Grapes not having a dehydrator recipe
+- Fixed Ribbit Hut not harvesting from Obsidian Stems
+- Fixed Smokey Reverie requiring Reinforced instead of Copper Brewingstation
+- Fixed snowy Sweet Berry Bush growing outside of farmland
+- Fixed Crushed Bismuth not having smelting recipe
+- Fixed structure having old Sprinklers
+- Fixed quest book inaccuracies
+- Fixed exploits
+- Fixed teas and tea products not having correct values (they were too low)
+- Fixed sawmill not having barrel recipes sometimes
+- Fixed fruit trees not dropping experience (thanks Space_Mex)
+- Fixed Cocoa beans and Nether Wart not being harvested by Ribbit Huts
+- Fixed Nether grapes having wrong season tooltip
