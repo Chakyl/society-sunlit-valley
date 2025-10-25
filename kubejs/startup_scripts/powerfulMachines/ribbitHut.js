@@ -46,16 +46,20 @@ const getPlantData = (block, mcBlock, blockState) => {
       newAge:
         "minecraft:sweet_berry_bush".equals(block.id) ||
         "autumnity:tall_foul_berry_bush".equals(block.id)
-          ? 1
-          : 2,
+          ? "1"
+          : "2",
     };
   }
   if ("vintagedelight:gearo_berry_bush".equals(block.id))
-    return { maxAge: properties.get("age").equals("4"), newAge: 2 };
+    return { maxAge: properties.get("age").equals("4"), newAge: "2" };
+  if ("minecraft:cocoa".equals(block.id))
+    return { maxAge: properties.get("age").equals("2"), newAge: "0" };
+  if ("minecraft:nether_wart".equals(block.id))
+    return { maxAge: properties.get("age").equals("3"), newAge: "0" };
   if (block.id.includes("vinery")) {
     return {
       maxAge: properties.get("age").equals("4"),
-      newAge: block.id.includes("lattice") ? 1 : 2,
+      newAge: block.id.includes("lattice") ? "1" : "2",
     };
   }
   if (["minecraft:melon_stem", "minecraft:pumpkin_stem"].includes(block.id)) {

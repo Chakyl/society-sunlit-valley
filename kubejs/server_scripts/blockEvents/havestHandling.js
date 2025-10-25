@@ -79,6 +79,8 @@ BlockEvents.rightClicked((e) => {
           "minecraft:torchflower",
           "atmospheric:passion_vine",
           "verdantvibes:bracket_mushroom",
+          "vinery:apple_leaves",
+          "vinery:dark_cherry_leaves"
         ].includes(block.id)
       ) {
         player.tell("Bonemeal is too weak to grow this...");
