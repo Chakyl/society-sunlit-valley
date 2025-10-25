@@ -150,6 +150,10 @@ const springCrops = [
   "vinery:red_grape",
   "vinery:white_grape_seeds",
   "vinery:white_grape",
+  "nethervinery:crimson_grape_seeds",
+  "nethervinery:warped_grape",
+  "nethervinery:crimson_grape",
+  "nethervinery:warped_grape_seeds",
 ];
 
 const summerCrops = [
@@ -283,6 +287,10 @@ const autumnCrops = [
   "vinery:red_grape",
   "vinery:white_grape_seeds",
   "vinery:white_grape",
+  "nethervinery:crimson_grape_seeds",
+  "nethervinery:warped_grape",
+  "nethervinery:crimson_grape",
+  "nethervinery:warped_grape_seeds",
 ];
 const winterCrops = [
   "society:crystalberry",
@@ -354,10 +362,6 @@ const allSeasonCrops = [
   "autumnity:yellow_maple_sapling",
   "autumnity:orange_maple_sapling",
   "autumnity:maple_sapling",
-  "nethervinery:crimson_grape_seeds",
-  "nethervinery:warped_grape",
-  "nethervinery:crimson_grape",
-  "nethervinery:warped_grape_seeds",
   "vinery:apple_tree_sapling",
   "vinery:dark_cherry_sapling",
   "quark:yellow_blossom_sapling",

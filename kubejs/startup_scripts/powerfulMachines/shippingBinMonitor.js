@@ -52,6 +52,7 @@ StartupEvents.registry("block", (event) => {
           "Displays sell value of Shipping Bin below it with all bonuses applied. Updates every 10 seconds."
         )
       );
+      item.tooltip(Text.gray("Right click to manually update"));
       item.modelJson({
         parent: "society:block/shipping_bin_monitor",
       });

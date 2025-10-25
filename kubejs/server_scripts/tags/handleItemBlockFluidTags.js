@@ -636,6 +636,28 @@ ServerEvents.tags("block", (e) => {
   Array.from(global.tapperRecipes.keys()).forEach((key) => {
     e.add("society:tappable_blocks", key);
   });
+  const unbreakableTags = [
+    "minecraft:wither_immune",
+    "buildinggadgets2:deny",
+    "minecraft:lava_pool_stone_cannot_replace",
+    "forge:relocation_not_supported",
+    "c:relocation_not_supported",
+    "create:non_movable",
+    "create:non_breakable",
+  ];
+  [
+    "society:cavern_air",
+    "society:skull_stone",
+    "society:skull_permafrost",
+    "society:skull_sandstone",
+    "society:skull_arid_sandstone",
+    "society:skull_blackstone",
+    "society:skull_end_stone",
+  ].forEach((block) => {
+    unbreakableTags.forEach((tag) => {
+      e.add(tag, block);
+    });
+  });
   const flowersMissingBlockTags = [
     "meadow:eriophorum_tall",
     "meadow:alpine_poppy",
