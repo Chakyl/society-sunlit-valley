@@ -214,7 +214,8 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
     const nbt = artisanMachine.getEntityData();
-    const currentStage = nbt.data.stage || 0;
+    const { stage, recipe } = nbt.data;
+    const currentStage = stage || 0;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
     const loadedData = global.getArtisanMachineData(artisanMachine, upgraded, player.stages);
     const season = global.getSeasonFromLevel(level);
@@ -236,7 +237,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
           block,
           artisanMachine.id === "society:charging_rod"
             ? chargingRodOutput
-            : global.getArtisanRecipe(recipes, artisanMachine, false).output[0]
+            : recipes.get(recipe).output[0]
         ) &&
         global.hasInventoryItems(inventory, "society:sparkstone", 1)
       ) {

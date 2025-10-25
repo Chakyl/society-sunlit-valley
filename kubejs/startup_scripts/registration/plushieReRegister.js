@@ -70,10 +70,6 @@ StartupEvents.registry("block", (event) => {
       modelPath = `tanukidecor:/block/mini_figure/${splitStr[1]}`;
     event
       .create(`${splitStr[0]}:adv_${splitStr[1]}`, "cardinal")
-      .property(integerProperty.create("type", 0, global.plushieTraits.length))
-      .property(integerProperty.create("quest_id", 0, 3))
-      .property(integerProperty.create("quality", 0, 4))
-      .property(integerProperty.create("affection", 0, 4))
       .defaultCutout()
       .box(2, 0, 2, 14, 14, 14)
       .soundType("wool")
@@ -84,20 +80,6 @@ StartupEvents.registry("block", (event) => {
         item.modelJson({
           parent: modelPath,
         });
-      })
-      .defaultState((state) => {
-        state
-          .set(integerProperty.create("type", 0, global.plushieTraits.length), 0)
-          .set(integerProperty.create("quest_id", 0, 3), 0)
-          .set(integerProperty.create("quality", 0, 4), 0)
-          .set(integerProperty.create("affection", 0, 4), 0);
-      })
-      .placementState((state) => {
-        state
-          .set(integerProperty.create("type", 0, global.plushieTraits.length), 0)
-          .set(integerProperty.create("quest_id", 0, 3), 0)
-          .set(integerProperty.create("quality", 0, 4), 0)
-          .set(integerProperty.create("affection", 0, 4), 0);
       })
       .rightClick((click) => global.plushieRightClick(click))
       .randomTick((tick) => {
@@ -114,7 +96,6 @@ StartupEvents.registry("block", (event) => {
           });
           tick.block.setEntityData(nbt);
         }
-        global.handleBERandomTick(tick, true, 1);
       })
       .blockEntity((blockInfo) => {
         blockInfo.initialData({ type: "", quest_id: 0, quality: 0, affection: 0 });

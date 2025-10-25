@@ -9,7 +9,7 @@ const getRequestedItems = (type, population) => {
   });
   return requestedItems;
 };
-// type: "", quest_id: 0, population: 0, max_population: 3
+
 const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
   let fishName = type
@@ -104,7 +104,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
 BlockEvents.rightClicked("society:fish_pond", (e) => {
   const { item, block, player } = e;
   if (!player.isCrouching()) {
-    e.server.scheduleInTicks(1, () => {
+    e.server.scheduleInTicks(4, () => {
       const properties = block.getProperties();
       const mature = properties.get("mature").toLowerCase();
       const valid = properties.get("valid").toLowerCase();

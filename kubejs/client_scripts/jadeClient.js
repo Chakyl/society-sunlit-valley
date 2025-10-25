@@ -6,7 +6,7 @@ const $BooleanProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.BooleanProperty"
 );
 const Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2");
-
+// TOOD: FIX
 global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (!global.plushies.includes(accessor.getBlock().id)) return;
   const properties = accessor.getBlockState();
