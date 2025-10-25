@@ -19,13 +19,13 @@
     "monster": [
       {
         "type": "minecraft:husk",
-        "weight": 150,
+        "weight": 130,
         "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "rottencreatures:mummy",
-        "weight": 40,
+        "weight": 20,
         "minCount": 1,
         "maxCount": 1
       },
@@ -37,21 +37,21 @@
       },
       {
         "type": "minecraft:phantom",
-        "maxCount": 1,
-        "minCount": 4,
-        "weight": 50
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 60
       },
       {
         "type": "legendarycreatures:desert_mojo",
         "maxCount": 1,
-        "minCount": 4,
+        "minCount": 1,
         "weight": 20
       },
       {
         "type": "legendarycreatures:scorpion",
         "maxCount": 1,
         "minCount": 1,
-        "weight": 15
+        "weight": 25
       },
       {
         "type": "minecraft:creeper",

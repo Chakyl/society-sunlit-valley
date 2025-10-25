@@ -1,6 +1,6 @@
 ^^^
 ## Whimsical Trading
-### v3.3.3
+### v3.3.5
 ^^^
 --- 
 - Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
@@ -163,3 +163,53 @@
 - Fixed memory leak with advanced loot info
 - Fixed Mushroom Stew value
 - Fixed Steadfast skill chance not being correct
+
+## 3.3.4
+- Added unique loot tables for gold rushes from Nether ores
+- Added Scribe and Create Wrench pickup tags to Refined Storage blocks.
+- Added Create Wrench to Storagesmith
+- Adjusted overworld ore gold rush tables
+- Reduced maximum spawns of bottom two layers of the Skull Cavern and tweaked mummy weights
+- Fixed default forceloads on new worlds being 2 instead of 15 (old worlds will need to update using `/ftbchunks admin extra_force_load_chunks @p set 13`)
+- Fixed fishing Jellies not being caught without the Jelly Hook or Wooden Pollution skill
+- Fixed Apple Mash not having a Create Pressing recipe
+- Fixed certain Glance crushing recipe existing
+- Fixed Ender Pearl recipe containing removed Peral existing
+- Fixed Iron hoe voiding non-dirt
+- Fixed Pumpkin Pie recipe not existing
+- Fixed Tiki Cabinet and Iron Bench not dropping
+- Fixed Market not having Beetroot Seeds
+- Fixed Antique Phone not being considered a Phone
+- Fixed some quests having incorrect dependencies
+- Fixed Quakes shutting down when they get lonely
+
+## 3.3.5
+- Added Search box to trade screen
+- Added icons to shop selector for seasonal/unlockable shops
+- Added JEI category for drying tea
+- Added ability to right click and update Shipping Bin Monitor
+- Added Bone Fantasy Box to Carpenter in late Autumn
+- Improved speed of Auto-Grabbers
+- Increased number of trades shown on trade screen as well as size of screens
+- Removed Bewereager jumpscare
+- Removed Milk from barkeeper
+- Removed water in cold biomes giving freezing effect
+- Reduced scaling of Caking Station recipes
+- Fixed Butterflies and Moths having swapped drops
+- Fixed issues with freezing slowness persisting
+- Fixed Garlic growing out of season
+- Fixed not being able to take Minnows and Leeches out of Fish Ponds
+- Fixed Bullfish Jobs Neptuna not being submittable to Abandoned Farm bundle (will only affect newly extracted Neptuna)
+- Fixed White Savannah Grapes not having a dehydrator recipe
+- Fixed Ribbit Hut not harvesting from Obsidian Stems
+- Fixed Smokey Reverie requiring Reinforced instead of Copper Brewingstation
+- Fixed snowy Sweet Berry Bush growing outside of farmland
+- Fixed Crushed Bismuth not having smelting recipe
+- Fixed structure having old Sprinklers
+- Fixed quest book inaccuracies
+- Fixed exploits
+- Fixed teas and tea products not having correct values (they were too low)
+- Fixed sawmill not having barrel recipes sometimes
+- Fixed fruit trees not dropping experience (thanks Space_Mex)
+- Fixed Cocoa beans and Nether Wart not being harvested by Ribbit Huts
+- Fixed Nether grapes having wrong season tooltip

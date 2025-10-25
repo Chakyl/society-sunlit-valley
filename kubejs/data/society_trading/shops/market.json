@@ -152,7 +152,7 @@
       "unlock_description": "jei.society_trading.master_culitvator_unlocked",
       "seasons_required": ["early_spring", "mid_spring", "late_spring"],
       "stage_override": "universal_methods_of_farming",
-      "trade_id": "market_cucumber_seeds_for_cog"
+      "trade_id": "market_garlic_seeds_for_cog"
     },
     {
       "offer": { "item": "society:blueberry_seed", "count": 1 },
@@ -278,6 +278,17 @@
       ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_barley_seeds"
+    },
+    {
+      "offer": { "item": "minecraft:beetroot_seeds", "count": 1 },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 4,
+      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "stage_override": "universal_methods_of_farming",
+      "trade_id": "market_pumpkin_seeds"
     },
     {
       "offer": { "item": "minecraft:pumpkin_seeds", "count": 1 },

@@ -797,17 +797,17 @@ global.herbalBrews = [
   { item: "herbalbrews:lavender_tea", value: 16 },
   { item: "windswept:lavender_tea", value: 80 },
   { item: "windswept:ginger_tea", value: 128 },
-  { item: "herbalbrews:green_tea", value: 16 },
-  { item: "herbalbrews:black_tea", value: 128 },
-  { item: "herbalbrews:chai_tea", value: 328 },
-  { item: "herbalbrews:oolong_tea", value: 512 },
-  { item: "herbalbrews:dried_green_tea", value: 8 },
-  { item: "herbalbrews:dried_black_tea", value: 64 },
-  { item: "herbalbrews:dried_oolong_tea", value: 256 },
+  { item: "herbalbrews:green_tea", value: 144 },
+  { item: "herbalbrews:black_tea", value: 1296 },
+  { item: "herbalbrews:chai_tea", value: 2643 },
+  { item: "herbalbrews:oolong_tea", value: 3840 },
+  { item: "herbalbrews:dried_green_tea", value: 120 },
+  { item: "herbalbrews:dried_black_tea", value: 1080 },
+  { item: "herbalbrews:dried_oolong_tea", value: 3200 },
   { item: "society:espresso", value: 128 },
   { item: "society:latte", value: 576 },
   { item: "society:mocha", value: 512 },
-  { item: "society:dirty_chai", value: 976 },
+  { item: "society:dirty_chai", value: 5574 },
   { item: "society:bowl_of_soul", value: 240 },
   { item: "society:truffle_tea", value: 2048 },
 ];
@@ -1315,21 +1315,21 @@ dryingRecipes.forEach((recipe) => {
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 // Note: Raw value not divided by output count due to effort. Cookies multiplied by 1.5
 const cakingStationRecipes = [
-  { item: "bakery:apple_cupcake", value: 32 },
+  { item: "bakery:apple_cupcake", value: 8 },
   { item: "bakery:strawberry_cake", value: 48 },
-  { item: "bakery:strawberry_cupcake", value: 48 },
-  { item: "bakery:sweetberry_cupcake", value: 28 },
+  { item: "bakery:strawberry_cupcake", value: 12 },
+  { item: "bakery:sweetberry_cupcake", value: 7 },
   { item: "bakery:sweetberry_cake", value: 28 },
-  { item: "bakery:chocolate_glazed_cookie", value: 213 },
-  { item: "bakery:strawberry_glazed_cookie", value: 64 },
-  { item: "bakery:sweetberry_glazed_cookie", value: 48 },
+  { item: "bakery:chocolate_glazed_cookie", value: 54 },
+  { item: "bakery:strawberry_glazed_cookie", value: 16 },
+  { item: "bakery:sweetberry_glazed_cookie", value: 12 },
   { item: "bakery:chocolate_cake", value: 142 },
   { item: "bakery:chocolate_gateau", value: 25 },
 ];
 cakingStationRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: recipe.value * 5,
+    value: recipe.value * 4,
   });
 });
 const cookingPotRecipes = [

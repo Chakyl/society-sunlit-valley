@@ -23,7 +23,7 @@ global.runShippingBinMonitor = (entity) => {
         true
       ).calculatedValue
     );
-    let nbt = entity.block.getEntityData();
+    let nbt = block.getEntityData();
     if (nbt.data.value !== calculationResults) {
       nbt.merge({ data: { value: calculationResults } });
       block.setEntityData(nbt);
@@ -52,6 +52,7 @@ StartupEvents.registry("block", (event) => {
           "Displays sell value of Shipping Bin below it with all bonuses applied. Updates every 10 seconds."
         )
       );
+      item.tooltip(Text.gray("Right click to manually update"));
       item.modelJson({
         parent: "society:block/shipping_bin_monitor",
       });
@@ -60,5 +61,8 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ value: 0 });
       blockInfo.serverTick(200, 0, (entity) => global.runShippingBinMonitor(entity));
+    })
+    .rightClick((click) => {
+      global.runShippingBinMonitor({ block: click.block, level: click.level });
     });
 });

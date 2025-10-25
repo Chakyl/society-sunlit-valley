@@ -99,6 +99,25 @@ StartupEvents.registry("block", (event) => {
           .set(integerProperty.create("quality", 0, 4), 0)
           .set(integerProperty.create("affection", 0, 4), 0);
       })
-      .rightClick((click) => global.plushieRightClick(click));
+      .rightClick((click) => global.plushieRightClick(click))
+      .randomTick((tick) => {
+        if (rnd25()) {
+          let properties = tick.block.getProperties();
+          let nbt = tick.block.getEntityData();
+          nbt.merge({
+            data: {
+              type: global.plushieTraits[Number(properties.get("type"))].trait,
+              quest_id: Number(properties.get("quest_id")),
+              quality: Number(properties.get("quality")),
+              affection: Number(properties.get("affection")),
+            },
+          });
+          tick.block.setEntityData(nbt);
+        }
+        global.handleBERandomTick(tick, true, 1);
+      })
+      .blockEntity((blockInfo) => {
+        blockInfo.initialData({ type: "", quest_id: 0, quality: 0, affection: 0 });
+      });
   });
 });
