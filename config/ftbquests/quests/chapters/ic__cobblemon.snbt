@@ -7,6 +7,357 @@
 	id: "0831A4AABC2726FF"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to &6Society: Sunlit Cobblemon&r, where farming meets creature collection!"
+				""
+				"To begin your journey, you'll need to equip the &6Silph Scope&r. This strange device will allow you to see &6Pokémon&r in the world!"
+				""
+				"Right click to wear it!"
+			]
+			icon: "cobblemon:poke_ball"
+			id: "68588C07B2EFCA55"
+			rewards: [{
+				id: "51636436764E2284"
+				item: "sunlit_cobblemon:silph_scope"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				action: "select_starter"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "63D21B7129414E77"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				title: "Select a starter by pressing &6M"
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Starting with Cobblemon"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["68588C07B2EFCA55"]
+			description: [
+				"Did your friends convince you to play this pack even though you don't like Cobblemon?"
+				""
+				"&n&aNot a problem!&r"
+				""
+				"Despite the name, Cobblemon are completely optional in this pack. You can play it like the base &6Society: Sunlit Valley&r!"
+				""
+				"Pokémon are not just a side activity however. You will be rewarded for engaging with them and can even let them farm and mine for you!"
+			]
+			icon: "refurbished_furniture:red_grill"
+			id: "32CD8E2368E6B4BD"
+			rewards: [
+				{
+					id: "19927350D1CD5232"
+					item: "refurbished_furniture:red_grill"
+					type: "item"
+				}
+				{
+					id: "5E3538DF3CD73A1F"
+					item: {
+						Count: 1
+						id: "refurbished_furniture:spatula"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3B65EEA537FDC7B8"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "I just want to farm..."
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7D2F9E3B2518309C"]
+			description: [
+				"&6Sunlit Valley&r is a new frontier! Untouched lands filled with wild Pokémon."
+				""
+				"Without any gyms around, you'll need to measure your progress. The Valley League will track your progress using the &6Trainer Level&r system instead!"
+				""
+				"As your farm develops and your experience grows, you'll unlock more trades from the &6Poké Mart&r, more help around your farm, and maybe even the ability to start your own gym..."
+				""
+				""
+				"{ \"text\": \"Visit the Trainer Levels tab! (Click me)\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"201D4A576453FB99\" } }"
+			]
+			icon: "wildernature:leveling_contract"
+			id: "063B238596D407D9"
+			rewards: [
+				{
+					count: 5
+					id: "274C0E4CEE4D2B04"
+					item: "cobblemon:poke_ball"
+					type: "item"
+				}
+				{
+					id: "0B788ACE2F30EABA"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "cobblepedia:cobblepedia"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "5E2ADB3139BC5AC0"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Trainer Levels"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["68588C07B2EFCA55"]
+			description: [
+				"With the &6Silph Scope&r equipped, you've spotted a wild Pokémon!"
+				""
+				"Pressing &6R&r while looking at it will start a battle. You can either attack and defeat it with your starter, or try to catch it when its at low health."
+				""
+				"&oThis quest line goes over more than the basics! Even if you've played Cobblemon/Pokémon before please read the main quest line!&r"
+			]
+			id: "7D2F9E3B2518309C"
+			rewards: [{
+				count: 5
+				id: "37660875E00EE680"
+				item: "cobblemon:poke_ball"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "meadow:camera"
+				id: "765084CC9EDC4516"
+				observe_type: 5
+				timer: 0L
+				title: "Witness a Pokemon"
+				to_observe: "cobblemon:pokemon"
+				type: "observation"
+			}]
+			title: "Pokémon Spotted!"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0CA84740D7922353"]
+			id: "75DDF6E50DAD20F0"
+			tasks: [{
+				id: "2FC310EB8E266FB0"
+				item: "cobble_workers:craft_station"
+				type: "item"
+			}]
+			title: "Putting them to WORK"
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			icon: "numismatics:crown"
+			id: "0CA84740D7922353"
+			rewards: [{
+				id: "16A4A43E0FA2454A"
+				item: "whimsy_deco:red_phone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "795BA2C23EAB4F67"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "The Poké Mart"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7D2F9E3B2518309C"]
+			icon: "cobblemon:rawst_berry"
+			id: "75C2C4761B35739F"
+			rewards: [{
+				id: "725660CCAFF70F09"
+				item: "sunlit_cobblemon:berry_capsule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F4095EFE6223194"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cobblemon:berries"
+					}
+				}
+				title: "Any #cobblemon:berries"
+				type: "item"
+			}]
+			title: "Cobble Berries"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75DDF6E50DAD20F0"]
+			id: "3A51DD86507A83F7"
+			rewards: [{
+				count: 8
+				id: "471D648534419938"
+				item: "cobblemon:surprise_mulch"
+				type: "item"
+			}]
+			subtitle: "Rock Types Yearn for the Mines"
+			tasks: [{
+				id: "142977AD5F543BF8"
+				item: "cobble_workers:mystery_mine"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"&6Healing Machines&r can restore the health of your entire team completely. They are scattered throughout the world at Poké Stops."
+				""
+				"They can be bought for home-use at a &6Poké Mart&r, or alternatively as a &6free&r reward by achieving the trainer tier"
+				"{ \"text\": \"Twig (Click Me).\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"30F339B9F7D920A6\" } }."
+			]
+			id: "49B1EE5FD231CF30"
+			rewards: [{
+				id: "7F268B709AFFF569"
+				item: "cobblemon:exp_candy_m"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CBA18A33C63555D"
+				item: "cobblemon:healing_machine"
+				type: "item"
+			}]
+			title: "Home Healing"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"&6PCs&r allow you to retrieve and store Pokémon once you have more than 6 total. They are scattered throughout the world at Poké Stops."
+				""
+				"They can be bought for home-use at a &6Poké Mart&r, or alternatively as a &6free&r reward by achieving the trainer tier"
+				"{ \"text\": \"Rock (Click Me).\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"50C5F52359BCCD70\" } }"
+			]
+			id: "43B535325E3201AE"
+			rewards: [{
+				count: 4
+				id: "37056D0D6FE912DA"
+				item: "cobblemon:exp_candy_xs"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2ADD36A58B2BE67E"
+				item: "cobblemon:pc"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0CA84740D7922353"]
+			description: [
+				"Archeology is a core aspect of exploration in Cobblemon. Be sure to throw a &6Brush&r in your backpack!"
+				""
+				"If you're lucky, you may find a &6Fossil&r. With the right technology you can revive it into a Pokémon."
+			]
+			icon: "cobblemon:helix_fossil"
+			id: "375BD349F42BAC72"
+			rewards: [{
+				id: "2D725D12EA66F0EE"
+				item: "cobblemon:relic_coin_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DDC3374B53CB3CC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cobblemon:fossils"
+					}
+				}
+				title: "Any Pokémon Fossil"
+				type: "item"
+			}]
+			title: "Sifting for Mons"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["375BD349F42BAC72"]
+			icon: "cobblemon:restoration_tank"
+			id: "2C65A2C19293943D"
+			tasks: [
+				{
+					id: "28D2D4B0B4B283B8"
+					item: "cobblemon:fossil_analyzer"
+					type: "item"
+				}
+				{
+					id: "72D07F585D503001"
+					item: "cobblemon:monitor"
+					type: "item"
+				}
+				{
+					id: "5D1583D097B69DB9"
+					item: "cobblemon:restoration_tank"
+					type: "item"
+				}
+			]
+			title: "Creating Life"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0CA84740D7922353"]
+			description: [
+				"If you've played Cobblemon before, you might be asking yourself where those Leeks are..."
+				""
+				"Unfortunately an invasive swarm of Farfetch'd hit the Valley several decades ago, completely wiping out the supply!"
+				""
+				"Until you manage to progress to advanced farming techniques you'll need to purchase medical supplies from a &6Poké Mart&r."
+			]
+			icon: "cobblemon:potion"
+			id: "621A320263EE43C2"
+			rewards: [{
+				count: 4
+				id: "7692647C10E52287"
+				item: "cobblemon:super_potion"
+				type: "item"
+			}]
+			tasks: [{
+				id: "585B05F710FB7CAE"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Crafting Medical Supplies?"
+			x: 9.5d
+			y: -2.0d
+		}
+	]
 	title: "I.C - Cobblemon"
 }

@@ -1,6 +1,11 @@
 console.info("[SOCIETY] registerCobblemonItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
+  e.create("sunlit_cobblemon:silph_scope")
+    .texture("sunlit_cobblemon:item/silph_scope")
+    .maxStackSize(1)
+    .displayName("Silph Scope");
+
   e.create("sunlit_cobblemon:tm_pack")
     .texture("sunlit_cobblemon:item/tm_pack")
     .displayName("TM Pack");

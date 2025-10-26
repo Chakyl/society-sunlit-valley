@@ -13,6 +13,8 @@ ItemEvents.tooltip((tooltip) => {
     global.addPriceTooltip(tooltip, item, "crop");
   });
 
+  tooltip.add('sunlit_cobblemon:silph_scope',Text.green("Allows you to enter the World of Pokémon!"));
+  tooltip.add('sunlit_cobblemon:silph_scope',Text.gold("Right click to equip!"));
   tooltip.add("sunlit_cobblemon:poke_bobber", Text.gold("Fishes up a common Pokémon with every catch"));
   tooltip.add("sunlit_cobblemon:great_poke_bobber", Text.gold("Fishes up an uncommon Pokémon with every catch"));
   tooltip.add("sunlit_cobblemon:ultra_poke_bobber", Text.gold("Fishes up a rare Pokémon with every catch"));

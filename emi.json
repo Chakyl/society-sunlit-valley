@@ -25,6 +25,57 @@
     }
   ],
   "lookup_history": [
+    "item:cobblemon:pasture",
+    "item:cobblemon:full_restore",
+    "item:cobblemon:max_potion",
+    "item:cobblemon:hyper_potion",
+    "item:cobblemon:super_potion",
+    "item:cobblemon:potion",
+    "item:cobblemon:medicinal_brew",
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:liquid_medicinal_brew",
+      "amount": 0
+    },
+    "item:cobblemon:medicinal_leek",
+    "item:cobblemon:quick_ball",
+    "item:create_klinks_n_klangs:unpainted_quick_ball",
+    "item:cobblemon:pc",
+    "item:cobblemon:healing_machine",
+    "item:cobblemon:oval_stone",
+    "item:cobblemon:protector",
+    "item:cobblemon:dragon_scale",
+    "item:minecraft:bow{Damage:0}",
+    "item:cobblemon:red_mint_seeds",
+    "item:cobblemon:blue_mint_seeds",
+    "item:cobblemon:cyan_mint_seeds",
+    "item:cobblemon:white_mint_seeds",
+    "item:cobblemon:yellow_apricorn_seed",
+    "item:cobblemon:starf_berry",
+    {
+      "type": "item",
+      "id": "society:glitched_vhs",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "cobblemon:pomeg_berry",
+      "amount": 2
+    },
+    "item:cobblemon:metal_coat",
+    "item:cobblemon:absorb_bulb",
+    "item:cobblemon:ability_shield",
+    "item:cobblemon:light_clay",
+    "item:cobblemon:shiny_stone",
+    "item:cobblemon:magmarizer",
+    "item:sunlit_cobblemon:fairy_heart",
+    "item:cobblemon:everstone",
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:molten_rare_candy",
+      "amount": 1000
+    },
+    "item:create_klinks_n_klangs:wrapper",
     "item:twigs:twig",
     "item:cobblemon:heat_rock",
     "item:sunlit_cobblemon:poke_bobber",
@@ -65,7 +116,6 @@
       "amount": 64
     },
     "item:cobblemon:dawn_stone",
-    "item:sunlit_cobblemon:fairy_heart",
     "item:numismatics:prismatic_coin",
     "item:society:production_science_pack",
     "item:society:friendship_necklace",
@@ -237,7 +287,6 @@
     },
     "item:minecraft:salmon",
     "item:cobblemon:water_stone",
-    "item:society:glitched_vhs",
     {
       "type": "item",
       "id": "cobblemon:haban_berry",
@@ -345,7 +394,6 @@
     "item:cobblemon:razor_fang",
     "item:cobblemon:leaf_stone",
     "item:cobblemon:moon_stone",
-    "item:cobblemon:shiny_stone",
     "item:cobblemon:ice_stone",
     "item:cobblemon:sun_stone",
     "item:cobblemon:dubious_disc",
@@ -771,7 +819,6 @@
     "item:farm_and_charm:nettle_tea",
     "item:bakery:toast",
     "item:bakery:braided_bread",
-    "item:cobblemon:medicinal_brew",
     "item:cobblemon:x_special_defence",
     "item:cobblemon:x_special_attack",
     {
@@ -835,12 +882,6 @@
     "item:windswept:cherry_wreath",
     "item:snowyspirit:wreath",
     "item:cobblemon:whipped_dream",
-    "item:cobblemon:magmarizer",
-    {
-      "type": "item",
-      "id": "cobblemon:protector",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "cobblemon:reaper_cloth",
@@ -868,15 +909,9 @@
     "item:society:aged_apple_cider",
     "item:society:aged_apple_wine",
     "item:vinery:apple_wine{EffectAmplifier:0,EffectDuration:1800}",
-    "item:cobblemon:light_clay",
     {
       "type": "item",
       "id": "cobblemon:prism_scale",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:dragon_scale",
       "amount": 64
     },
     "item:society:steamy_gadget",
@@ -886,11 +921,6 @@
     "item:gamediscs:game_disc_pong",
     {
       "type": "item",
-      "id": "cobblemon:oval_stone",
-      "amount": 64
-    },
-    {
-      "type": "item",
       "id": "cobblemon:black_augurite",
       "amount": 64
     },
@@ -898,7 +928,6 @@
     "item:refinedstorage:exporter",
     "item:pipez:item_pipe",
     "item:refinedstorage:cable",
-    "item:cobblemon:pc",
     {
       "type": "item",
       "id": "cobblemon:cracked_pot",
@@ -923,7 +952,6 @@
     "item:cobblemon:malicious_armor",
     "item:cobblemon:auspicious_armor",
     "item:cobblemon:razor_claw",
-    "item:cobblemon:metal_coat",
     "item:cobblemon:kings_rock",
     "item:cobblemon:deep_sea_tooth",
     "item:cobblemon:deep_sea_scale",
@@ -943,7 +971,6 @@
     "item:cobblemon:coba_berry",
     "item:cobblemon:rowap_berry",
     "item:cobblemon:micle_berry",
-    "item:cobblemon:starf_berry",
     "item:cobblemon:lansat_berry",
     "item:cobblemon:apicot_berry",
     "item:dew_drop_farmland_growth:gold_sprinkler",
@@ -1031,7 +1058,6 @@
     "item:society:aging_cask",
     "item:minecraft:netherite_ingot",
     "item:society:ancient_cog",
-    "item:cobblemon:quick_ball",
     "item:meadow:pine_barn_trapdoor",
     "item:meadow:pine_trapdoor",
     "item:meadow:oil_lantern",
@@ -1308,7 +1334,6 @@
     "item:sophisticatedstorage:chest{accentColor:16383998,mainColor:16383998}",
     "item:everycomp:fs/cobblemon/apricorn_4",
     "item:minecraft:spruce_trapdoor",
-    "item:cobblemon:healing_machine",
     "item:cobblemon:sticky_barb",
     "item:cobblemon:smoke_ball",
     "item:cobblemon:silver_powder",
@@ -1409,12 +1434,10 @@
     },
     "item:minecraft:redstone_block",
     "item:windswept:redstone_fairy_light",
-    "item:cobblemon:everstone",
     "item:cobblemon:hopo_berry",
     "item:cobblemon:love_sweet",
     "item:beachparty:overgrown_disc",
     "item:cobblemon:blue_mint_leaf",
-    "item:cobblemon:cyan_mint_seeds",
     "item:cobblemon:destiny_knot",
     "item:cobblemon:dragon_fang",
     "item:society:gray_sheet",
@@ -1445,7 +1468,6 @@
     "item:cobblemon:black_gilded_chest",
     "item:create:belt_connector",
     "item:cobblemon:berry_juice",
-    "item:cobblemon:ability_shield",
     {
       "type": "item",
       "id": "cobblemon:assault_vest",
@@ -1457,7 +1479,6 @@
       "id": "cobblemon:air_balloon",
       "amount": 64
     },
-    "item:cobblemon:absorb_bulb",
     "item:botania:cosmetic_lusitanic_shield",
     "item:species:ricoshield{Damage:0}",
     "item:cobblemon:galarica_wreath",
@@ -1465,7 +1486,6 @@
     "item:cobblemon:sassy_mint",
     "item:cobblemon:black_sludge",
     "item:cobblemon:ether",
-    "item:cobblemon:potion",
     "item:vanillabackport:dried_ghast",
     "item:sunlit_cobblemon:legendary_cobbleberry_preserves",
     "item:sunlit_cobblemon:common_cobbleberry_preserves",
@@ -1488,9 +1508,6 @@
     "item:cobblemon:flower_sweet",
     "item:simpletms:tm_curse",
     "item:cobblemon:berry_sweet",
-    "item:cobblemon:super_potion",
-    "item:cobblemon:hyper_potion",
-    "item:cobblemon:max_potion",
     "item:cobblemon:vivichoke",
     "item:cobblemon:max_ether",
     {
@@ -1614,7 +1631,6 @@
     "item:twigs:polished_basalt_bricks",
     "item:cobblemon:relic_coin_sack",
     "item:cobblemon:roseli_berry",
-    "item:cobblemon:full_restore",
     "item:cobblemon:paralyze_heal",
     "item:cobblemon:x_accuracy",
     "#item:cobblemon:mints",
@@ -1626,11 +1642,9 @@
     "item:cobblemon:relaxed_mint",
     "item:cobblemon:adamant_mint",
     "item:cobblemon:white_mint_leaf",
-    "item:cobblemon:blue_mint_seeds",
     "item:cobblemon:cyan_mint_leaf",
     "item:cobblemon:chilan_berry",
     "item:cobblemon:star_sweet",
-    "item:cobblemon:yellow_apricorn_seed",
     "item:cobblemon:power_herb",
     {
       "type": "item",
@@ -1817,7 +1831,6 @@
     "item:cobblemon:dawn_stone_ore",
     "item:cobblemon:sun_stone_ore",
     "item:cobblemon:dripstone_moon_stone_ore",
-    "item:cobblemon:medicinal_leek",
     "item:cobbledex:cobbledex_item",
     "item:cobblemon:suspicious_sherd",
     "item:cobblemon:monitor",
@@ -1981,15 +1994,7 @@
     "item:whimsy_deco:gray_cash_register",
     "item:whimsy_deco:cast_iron_ledge",
     "item:whimsy_deco:iron_curio_cash_register",
-    "item:whimsy_deco:recorder",
-    "item:whimsy_deco:rubber_duck",
-    "item:whimsy_deco:vine_rattan_chair",
-    "item:whimsy_deco:warped_rattan_chair",
-    "item:whimsy_deco:black_phone",
-    "item:whimsy_deco:red_life_preserver_ring",
-    "item:whimsy_deco:paper_lantern",
-    "item:whimsy_deco:blue_paper_lantern",
-    "item:whimsy_deco:red_paper_lantern"
+    "item:whimsy_deco:recorder"
   ],
   "craft_history": [
     "minecraft:kjs/society_cheese_press",
