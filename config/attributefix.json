@@ -1804,6 +1804,17 @@
         "value": 100
       }
     },
+    "cobble_workers:worker_cap": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell_type_chain_lightning": {
       "enabled": false,
       "min": {
@@ -2759,6 +2770,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "cobble_workers:workers_assigned": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/healing_circle": {

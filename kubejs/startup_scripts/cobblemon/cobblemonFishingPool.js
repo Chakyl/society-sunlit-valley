@@ -63,7 +63,7 @@ global.cobblemonfishPool = [
     { pokemon: "wailord", weight: 2, lvlRange: [40,50], tiers: ['rare','epic'], seasons: ['spring','summer','autumn'], waterTypes: ['ocean']},
     { pokemon: "barboach", weight: 20, lvlRange: [5,30], tiers: ['common','uncommon','rare'], seasons: ['summer','autumn'], waterTypes: ['ocean','river','fresh']},
     { pokemon: "whiscash", weight: 5, lvlRange: [30,50], tiers: ['uncommon','rare'], seasons: ['summer','autumn'], waterTypes: ['ocean','river','fresh']},
-    { pokemon: "corphish", weight: 20, lvlRange: [5,30], tiers: ['common','uncommon'], seasons: ['spring','summer','autumn'], waterTypes: ['river','fresh']},
+    // { pokemon: "corphish", weight: 20, lvlRange: [5,30], tiers: ['common','uncommon'], seasons: ['spring','summer','autumn'], waterTypes: ['river','fresh']},
     // { pokemon: "crawdaunt", weight: 5, lvlRange: [30,50], tiers: ['uncommon','rare'], seasons: ['spring','summer','autumn'], waterTypes: ['river','fresh']},
     { pokemon: "feebas", weight: 2, lvlRange: [3,7], tiers: ['rare','epic'], seasons: ['summer','autumn'], waterTypes: ['ocean']},
     { pokemon: "milotic", weight: 0.25, lvlRange: [15,50], tiers: ['epic'], seasons: ['summer','autumn'], waterTypes: ['ocean']},

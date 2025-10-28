@@ -25,6 +25,62 @@
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "society:battery",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "rottencreatures:frozen_rotten_flesh",
+      "amount": 31
+    },
+    "item:society:fish_smoker",
+    {
+      "type": "item",
+      "id": "minecraft:raw_copper_block",
+      "amount": 7
+    },
+    {
+      "type": "item",
+      "id": "society:tubabacco_leaf",
+      "amount": 24
+    },
+    "item:species:springling_egg",
+    {
+      "type": "item",
+      "id": "snowyspirit:ginger",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 21
+    },
+    "item:minecraft:cod",
+    "item:vintagedelight:salted_cod",
+    "item:minecraft:cod_spawn_egg",
+    "item:minecraft:salmon",
+    "item:minecraft:cooked_salmon{quality_food:{effects:[],quality:1}}",
+    {
+      "type": "item",
+      "id": "society:smoked_salmon",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 2
+    },
+    "item:quark:mangrove_post",
+    "#item:quark:posts",
+    "item:vinery:grapevine_stem",
+    "item:vinery:glowing_wine",
+    "item:vinery:grapevine_pot",
+    "item:vinery:fermentation_barrel",
+    "item:minecraft:iron_block",
+    "item:society:juice_inserter",
+    "item:meadow:fire_log",
+    "item:cobble_workers:mystery_mine",
+    {
+      "type": "item",
+      "id": "cobblemon:kee_berry",
+      "amount": 2
+    },
+    "item:cobblemon:grepa_berry",
+    "item:beachparty:crocs{Damage:0}",
     "item:cobblemon:pasture",
     "item:cobblemon:full_restore",
     "item:cobblemon:max_potion",
@@ -157,7 +213,6 @@
       "id": "cobblemon:green_apricorn",
       "amount": 7
     },
-    "item:society:battery",
     "item:create:rose_quartz",
     "item:cobblemon:link_cable",
     {
@@ -285,7 +340,6 @@
       "id": "farmersdelight:cabbage",
       "amount": 48
     },
-    "item:minecraft:salmon",
     "item:cobblemon:water_stone",
     {
       "type": "item",
@@ -318,11 +372,6 @@
       "amount": 7
     },
     "item:aquaculture:synodontis",
-    {
-      "type": "item",
-      "id": "cobble_workers:mystery_mine",
-      "amount": 64
-    },
     "item:cobble_workers:craft_station",
     "item:create:crushed_raw_silver",
     "item:oreganized:raw_silver",
@@ -401,7 +450,6 @@
     "item:minecraft:flint",
     "item:cobblemon:relic_coin_pouch",
     "item:cobblemon:relic_coin",
-    "item:species:springling_egg",
     "item:minecraft:gold_nugget",
     "item:cobblemon:plume_fossil",
     "item:windswept:elder_feather",
@@ -483,11 +531,6 @@
       "amount": 64
     },
     "item:rottencreatures:corrupted_wart",
-    {
-      "type": "item",
-      "id": "rottencreatures:frozen_rotten_flesh",
-      "amount": 63
-    },
     "item:rottencreatures:magma_rotten_flesh",
     "item:cobblemon:poison_gem",
     "item:cobblemon:normal_gem",
@@ -564,7 +607,6 @@
     "item:society:ribbit_gadget",
     "item:cobblemon:miracle_seed",
     "item:minecraft:wooden_sword{Damage:0}",
-    "item:minecraft:iron_block",
     {
       "type": "item",
       "id": "minecraft:iron_ingot",
@@ -653,9 +695,7 @@
     },
     "item:minecraft:blue_ice",
     "item:society:smoked_beaked_herring",
-    "item:vintagedelight:salted_cod",
     "item:society:smoked_magmacubefish",
-    "item:minecraft:cod",
     "item:minecraft:cooked_cod",
     "item:minecraft:slime_ball",
     "item:minecraft:charcoal",
@@ -1051,7 +1091,6 @@
     "item:society:aged_nutty_basil",
     "item:society:aged_star_coquito",
     "item:vinery:magnetic_wine",
-    "item:vinery:glowing_wine",
     "item:society:aged_glowing_wine",
     "item:society:double_aged_glowing_wine",
     "item:society:double_aged_good_catawba",
@@ -1062,11 +1101,6 @@
     "item:meadow:pine_trapdoor",
     "item:meadow:oil_lantern",
     "item:furniture:wooden_planter",
-    {
-      "type": "item",
-      "id": "meadow:fire_log",
-      "amount": 4
-    },
     "item:dew_drop_farmland_growth:diamond_sprinkler",
     "item:minecraft:gold_block",
     "item:dew_drop_farmland_growth:iron_sprinkler",
@@ -1601,7 +1635,6 @@
       "id": "minecraft:coal_block",
       "amount": 9
     },
-    "item:society:juice_inserter",
     "item:botania:flight_tiara{variant:8}",
     "item:minecraft:raw_gold_block",
     "item:minecraft:flint_and_steel{Damage:0}",
@@ -1826,7 +1859,6 @@
     "item:minecraft:cartography_table",
     "item:cobblemon:white_gilded_chest",
     "item:cobblemon:moon_stone_ore",
-    "item:cobblemon:kee_berry",
     "item:windswept:chestnut_chest",
     "item:cobblemon:dawn_stone_ore",
     "item:cobblemon:sun_stone_ore",
@@ -1854,9 +1886,7 @@
     "item:brewery:hop_trellis_seed",
     "item:society:truffle_oil",
     "item:bakery:chocolate_donut",
-    "item:society:tubabacco_leaf",
     "item:farm_and_charm:kernels",
-    "item:snowyspirit:ginger",
     "item:minecraft:beetroot",
     "item:farm_and_charm:wild_corn",
     "item:farm_and_charm:lamb_with_corn",
@@ -1937,7 +1967,6 @@
     "item:society:coin_leaderboard",
     "item:society:tapper",
     "item:society:prize_machine",
-    "item:society:fish_smoker",
     "item:society:bait_maker",
     "item:society:ancient_cask",
     "item:society:espresso_machine",
@@ -1983,20 +2012,16 @@
     "item:windswept:gingerbread_block",
     "item:windswept:gingerbread_bricks",
     "item:windswept:glazed_gingerbread_block",
-    "item:snowyspirit:gingerbread",
-    "item:windswept:ginger_root",
-    "item:snowyspirit:ginger_flower",
-    "item:windswept:pine_chest",
-    "item:minecraft:ender_eye",
-    "item:botania:ender_air_bottle",
-    "item:beautify:botanist_workbench",
-    "item:whimsy_deco:broom",
-    "item:whimsy_deco:gray_cash_register",
-    "item:whimsy_deco:cast_iron_ledge",
-    "item:whimsy_deco:iron_curio_cash_register",
-    "item:whimsy_deco:recorder"
+    "item:snowyspirit:gingerbread"
   ],
   "craft_history": [
+    "minecraft:raw_copper_block",
+    "minecraft:oak_wood",
+    "quark:building/crafting/mangrove_post",
+    "vinery:grapevine_pot",
+    "minecraft:kjs/vinery_fermentation_barrel",
+    "minecraft:iron_block",
+    "meadow:fire_log",
     "minecraft:kjs/society_cheese_press",
     "cobblemon:dusk_ball",
     "minecraft:kjs/sunlit_cobblemon_uncharged_battery",
@@ -2032,7 +2057,6 @@
     "minecraft:wooden_sword",
     "minecraft:anvil",
     "minecraft:iron_ingot_from_iron_block",
-    "minecraft:iron_block",
     "cobblemon:exp_share"
   ],
   "recipe_defaults": {
