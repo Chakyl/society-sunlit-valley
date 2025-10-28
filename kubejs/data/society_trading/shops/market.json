@@ -650,148 +650,250 @@
       "trade_id": "market_bamboo"
     },
     {
-      "offer": { "item": "minecraft:villager_spawn_egg", "count": 1 },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 4
+      "offer": {
+        "item": "patchouli:guide_book",
+        "count": 1,
+        "nbt": "{\"patchouli:book\":\"patchouli:almanac\"}"
       },
-      "numismatics_cost": 2048,
-      "trade_id": "market_villager_spawn_egg"
-    },
-    {
-      "offer": { "item": "minecraft:oak_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_oak_sapling"
-    },
-    {
-      "offer": { "item": "minecraft:spruce_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_spruce_sapling"
-    },
-    {
-      "offer": { "item": "minecraft:birch_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_birch_sapling"
-    },
-    {
-      "offer": { "item": "minecraft:jungle_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_jungle_sapling"
-    },
-    {
-      "offer": { "item": "minecraft:acacia_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_acacia_sapling"
-    },
-    {
-      "offer": { "item": "minecraft:dark_oak_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_dark_oak_sapling"
-    },
-    {
-      "offer": { "item": "minecraft:cherry_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_cherry_sapling"
-    },
-    {
-      "offer": { "item": "minecraft:azalea", "count": 1 },
-      "request": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      },
-      "numismatics_cost": 16,
-      "trade_id": "market_azalea"
-    },
-    {
-      "offer": { "item": "minecraft:flowering_azalea", "count": 1 },
-      "request": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      },
-      "numismatics_cost": 16,
-      "trade_id": "market_flowering_azalea"
-    },
-    {
-      "offer": { "item": "minecraft:mangrove_propagule", "count": 1 },
-      "request": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      },
-      "numismatics_cost": 16,
-      "trade_id": "market_mangrove_propagule"
-    },
-    {
-      "offer": { "item": "autumnity:red_maple_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 1
-      },
-      "numismatics_cost": 8,
-      "trade_id": "market_red_maple_sapling"
-    },
-    {
-      "offer": { "item": "windswept:pine_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      },
-      "numismatics_cost": 16,
-      "trade_id": "market_pine_sapling"
-    },
-    {
-      "offer": { "item": "meadow:pine_sapling", "count": 1 },
-      "request": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      },
-      "numismatics_cost": 16,
-      "trade_id": "market_pine_sapling"
-    },
-    {
-      "offer": { "item": "quark:orange_blossom_sapling", "count": 1 },
       "request": {
         "item": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 64,
-      "trade_id": "market_orange_blossom_sapling"
+      "trade_id": "farmer_guide_book_for_cog"
     },
     {
-      "offer": { "item": "society:universal_methods_of_farming", "count": 1 },
+      "offer": {
+        "item": "minecraft:bundle",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "leatherworker_bundle_white_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "sophisticatedbackpacks:backpack",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "leatherworker_backpack_for_crown"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 32,
+      "trade_id": "minecraft:farmer_hydrating_fertilizer_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "minecraft:farmer_low_quality_fertilizer_for_cog"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "minecraft:farmer_weak_fertilizer_for_cog"
+    },
+    {
+      "offer": {
+        "item": "meadow:alpine_salt",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "meadow:farmer_alpine_salt_for_cog"
+    },
+    {
+      "offer": {
+        "item": "minecraft:sugar",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "minecraft:farmer_sugar_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "minecraft:glass_bottle",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 4
+      },
+      "numismatics_cost": 4,
+      "trade_id": "minecraft:farmer_glass_bottle_for_spur"
+    },
+    {
+      "offer": {
+        "item": "bakery:jar",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "minecraft:farmer_glass_bottle_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "vinery:wine_bottle",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 2
+      },
+      "numismatics_cost": 2,
+      "trade_id": "minecraft:farmer_wine_bottle_for_spur"
+    },
+    {
+      "offer": {
+        "item": "brewery:beer_mug",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 4
+      },
+      "numismatics_cost": 4,
+      "trade_id": "minecraft_farmer_beer_mug_for_spur"
+    },
+    {
+      "offer": {
+        "item": "minecraft:bowl",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 4
+      },
+      "numismatics_cost": 4,
+      "trade_id": "minecraft_farmer_bowl_for_spur"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:pitchfork",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:sun",
-        "count": 20
+        "count": 18
       },
-      "numismatics_cost": 81920,
-      "trade_id": "market_universal_methods_of_farming"
+      "numismatics_cost": 73728,
+      "trade_id": "minecraft:farmer_pitchfork_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:dehydrator",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 5
+      },
+      "numismatics_cost": 20480,
+      "trade_id": "farmer_dehydrator_for_sun"
+    },
+    {
+      "offer": {
+        "item": "liltractor:liltractor",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 6
+      },
+      "numismatics_cost": 24576,
+      "trade_id": "farmer_liltractor_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create_central_kitchen:cooking_guide",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 8
+      },
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 32768,
+      "trade_id": "farmer_cooking_guide_for_sun"
+    },
+
+    {
+      "offer": {
+        "item": "sewingkit:sewing_station",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "leatherworker_sewing_station_for_crown"
+    },
+    {
+      "offer": {
+        "item": "sewingkit:iron_sewing_needle",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "leatherworker_iron_sewing_needle_for_cog"
+    },
+    {
+      "offer": {
+        "item": "naturescompass:naturescompass",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 6
+      },
+      "numismatics_cost": 24576,
+      "trade_id": "leatherworker_naturescompass_for_crown"
     }
   ]
 }
