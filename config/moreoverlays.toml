@@ -20,8 +20,13 @@
 	#Minimum save light level where no mobs can spawn
 	#Range: > 0
 	saveLevel = 1
-	#Finished 1.18 migration (don't change)
+	#Finished 1.18 migration (internal)
 	finishedMigration = true
+	#Render light levels as numbers instead of crosses
+	spawn_numbers = false
+	#Only update the light scanner every N client ticks/frames. Set to 1 to update every frame (disables throttling).
+	#Range: > 1
+	update_interval_frames = 1
 
 #Settings for the chunk bounds overlay
 [chunkbounds]
@@ -55,6 +60,14 @@
 	#Line width for spawn indication
 	#Range: 0.0 ~ 1.7976931348623157E308
 	spawn_line_width = 2.0
+	#Use thicker lines for chunk boundaries
+	chunk_line_thick = false
+	#Color for the number that marks "No spawns possible"
+	#Range: 0 ~ 16777215
+	spawn_safe_color = 65280
+	#Scale/size of the number overlay when enabled (world units)
+	#Range: 0.005 ~ 0.5
+	spawn_number_scale = 0.07
 
 #Settings for the search overlay
 [searchoverlay]
