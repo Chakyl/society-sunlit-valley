@@ -6,6 +6,7 @@ StartupEvents.registry("item", (e) => {
   e.create("herbalbrews:water_cup").texture("society:item/water_cup").maxStackSize(16);
   e.create("justhammers:small_core").texture("society:item/small_core");
   e.create("buildinggadgets2:gadget_core").texture("society:item/gadget_core");
+  /**
   const tiers = ["Stone, Leather, Chainmail, and Cotton", "Iron", "Gold", "Diamond", "Neptunium"];
   tiers.forEach((tier, index) => {
     if (index > 0) {
@@ -20,9 +21,49 @@ StartupEvents.registry("item", (e) => {
         .tooltip(Text.gray("Ingredients:"))
         .tooltip(Text.blue(`${tier} Ingot`));
     }
-  });
+  });*/
 
-  e.create("society:tanuki_leaf")
+    e.create("society:iron_upgrade_smithing_template")
+        .texture("society:item/smithing/iron")
+        .displayName("Smithing Template")
+        .tooltip(Text.translatable("tooltip.smithing_template.ingredients").blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.upgrade_of", Text.translatable("tier.society.iron")).gray())
+        .tooltip(Text.of(" "))
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to").gray())
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to_group.iron").blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.requires_ingot", Text.translatable("tier.society.iron")).gray());
+
+    e.create("society:gold_upgrade_smithing_template")
+        .texture("society:item/smithing/gold")
+        .displayName("Smithing Template")
+        .tooltip(Text.translatable("tooltip.smithing_template.ingredients").blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.upgrade_of", Text.translatable("tier.society.gold")).gray())
+        .tooltip(Text.of(" "))
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to").gray())
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to_tier", Text.translatable("tier.society.iron")).blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.requires_ingot", Text.translatable("tier.society.gold")).gray());
+
+    e.create("society:diamond_upgrade_smithing_template")
+        .texture("society:item/smithing/diamond")
+        .displayName("Smithing Template")
+        .tooltip(Text.translatable("tooltip.smithing_template.ingredients").blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.upgrade_of", Text.translatable("tier.society.diamond")).gray())
+        .tooltip(Text.of(" "))
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to").gray())
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to_tier", Text.translatable("tier.society.gold")).blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.requires_ingot", Text.translatable("tier.society.diamond")).gray());
+
+    e.create("society:neptunium_upgrade_smithing_template")
+        .texture("society:item/smithing/neptunium")
+        .displayName("Smithing Template")
+        .tooltip(Text.translatable("tooltip.smithing_template.ingredients").blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.upgrade_of", Text.translatable("tier.society.neptunium")).gray())
+        .tooltip(Text.of(" "))
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to").gray())
+        .tooltip(Text.translatable("tooltip.smithing_template.applies_to_tier", Text.translatable("tier.society.diamond")).blue())
+        .tooltip(Text.translatable("tooltip.smithing_template.requires_ingot", Text.translatable("tier.society.neptunium")).gray());
+
+    e.create("society:tanuki_leaf")
     .texture("society:item/tanuki_leaf")
     .displayName(Text.green("♤ Tanuki Leaf"));
   e.create("society:architects_digest")
