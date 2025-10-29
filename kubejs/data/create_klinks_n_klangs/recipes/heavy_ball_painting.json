@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_heavy_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:blue_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        }
+      ]
+    },
+   {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:black_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:blue_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        },
+        {
+          "item": "oreganized:lead_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_heavy_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:heavy_ball"
+    }
+  ],
+  "loops": 1
+}

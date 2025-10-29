@@ -386,8 +386,8 @@
 				item: "cobblemon:sitrus_berry"
 				type: "item"
 			}]
-			x: -3.1666666666666856d
-			y: 4.047619047619044d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			id: "03CECB87AF155722"
@@ -396,8 +396,8 @@
 				item: "cobblemon:touga_berry"
 				type: "item"
 			}]
-			x: -1.6666666666666856d
-			y: 4.047619047619044d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			id: "260A9022BA969651"
@@ -406,8 +406,8 @@
 				item: "cobblemon:cornn_berry"
 				type: "item"
 			}]
-			x: -0.16666666666668561d
-			y: 4.047619047619044d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			id: "1E2CC0F3EE27031E"
@@ -416,8 +416,8 @@
 				item: "cobblemon:rabuta_berry"
 				type: "item"
 			}]
-			x: 2.8333333333333144d
-			y: 4.047619047619044d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			id: "06F036D7CF32D116"
@@ -426,8 +426,8 @@
 				item: "cobblemon:magost_berry"
 				type: "item"
 			}]
-			x: 1.3333333333333144d
-			y: 4.047619047619044d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			id: "7ED80368FE13E27D"
@@ -436,8 +436,8 @@
 				item: "cobblemon:nomel_berry"
 				type: "item"
 			}]
-			x: 4.333333333333314d
-			y: 4.047619047619044d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			id: "3CA6D1AC076027C4"
@@ -716,6 +716,26 @@
 			title: "Cobble Berry Collection Complete!"
 			x: 0.5476190476190439d
 			y: 13.30952380952381d
+		}
+		{
+			id: "3EACED14B4F0350E"
+			tasks: [{
+				id: "62594395E1B00A6F"
+				item: "cobblemon:hopo_berry"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "7D458E7A350EB843"
+			tasks: [{
+				id: "2B7750F445944F3E"
+				item: "cobblemon:starf_berry"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.5d
 		}
 	]
 	title: "Cobble Berries"

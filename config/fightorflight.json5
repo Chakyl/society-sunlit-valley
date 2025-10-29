@@ -1,0 +1,123 @@
+{
+	// Do more aggressive Pokemon fight back when provoked?
+	"do_pokemon_attack": true,
+	// Do especially aggressive Pokemon attack unprovoked?
+	"do_pokemon_attack_unprovoked": false,
+	// Do aggro Pokemon attack their targets even if they're in the middle of a battles?
+	"do_pokemon_attack_in_battle": false,
+	// The minimum level a Pokemon needs to be to fight back when provoked.
+	"minimum_attack_level": 5,
+	// The minimum level a Pokemon needs to be to attack unprovoked.
+	"minimum_attack_unprovoked_level": 10,
+	// The multiplier used to calculate the wild Pokemon's aggression,a low value can make the high level Pokemon less aggressive
+	"aggression_level_multiplier": 1.0,
+	// Are Dark types more aggressive at or below light level 7 and less aggressive at or above light level 12
+	"dark_light_level_aggro": true,
+	// Are Ghost types more aggressive at or below light level 7 and less aggressive at or above light level 12
+	"ghost_light_level_aggro": true,
+	// Pokemon that will always be aggressive
+	"always_aggro": [
+		"mankey",
+		"primeape"
+	],
+	// Pokemon that will never be aggressive
+	"never_aggro": [
+		"slowpoke",
+		"pyukumuku"
+	],
+	// Pokemon that will be aggressive only when provoked(WIP)
+	"provoke_only_aggro": [],
+	// Pokemon that will always flee away from the player
+	"always_flee": [
+		"wimpod"
+	],
+	// Abilities that will reduce wild pokemon's aggro
+	"aggro_reducing_abilities": [
+		"intimidate",
+		"unnerve",
+		"pressure"
+	],
+	// Abilities that works like Mold Breaker(unused)
+	"mold_breaker_like_ablilities": [
+		"moldbreaker",
+		"turboblaze",
+		"teravolt"
+	],
+	// Allow the Pokemon to use the teleport move to flee if the Pokemon had learnt it.
+	"allow_teleport_to_flee": true,
+	// Do player Pokemon defend their owners when they attack or are attacked by other mobs?
+	"do_pokemon_defend_owner": false,
+	// Do player Pokemon defend their owners proactively? (follows the same rules as Iron Golems)
+	"do_pokemon_defend_proactive": false,
+	// Can player Pokemon target other players? (EXPERIMENTAL)
+	"do_player_pokemon_attack_other_players": false,
+	// Can player Pokemon target other player's Pokemon? (EXPERIMENTAL)
+	"do_player_pokemon_attack_other_player_pokemon": false,
+	// Will the wild pokemon cries for several times when angered,set to false so the pokemon will only cry one time when it's angered
+	"multiple_cries": true,
+	// Tick(1/20s by default) needed for the pokemon to cry again(it will only work when the multiple_cries is set to true)
+	"time_to_cry_again": 100,
+	// The exp. a pokemon can get by killing a pokemon without a battle
+	"experience_multiplier": 0.5,
+	// Your pokemon can gain ev by killing a pokemon without a battle
+	"can_gain_ev": true,
+	// If the Pokemon can evolve by using the move out of a Pokemon Battle
+	"can_progress_use_move_evoluiton": true,
+	// The  damage a pokemon would do on hit if it had 0 ATK
+	"minimum_attack_damage": 1.0,
+	// The  damage a pokemon would do on hit if it had reached the max stat
+	"maximum_attack_damage": 10.0,
+	// Attack stat required to reach the maximum damage,the default value is calculated with 50 level, 130 stat, 252 EVs, IVs of 31, and a helpful nature.
+	"maximum_attack_stat": 200,
+	// The movement speed multiplier of a pokemon if the Spe stat of this Pokemon is 0.
+	"minimum_movement_speed": 1.2999999523162842,
+	// The movement speed multiplier of a pokemon if the Spe stat of this Pokemon reaches the value in the config.
+	"maximum_movement_speed": 2.0,
+	// The speed stat required for a pokemon to reach the highest fleeing and pursuing speed.The default value(548) is the max speed stat of a lvl.100 Regieleki with a beneficial nature.
+	"speed_stat_limit": 548,
+	// The maximum damage reduction a pokemon can get from its defense/special defense(uses the highest one)
+	"max_damage_reduction_multiplier": 0.4000000059604645,
+	// The highest defense stat needed to get the highest damage reduction.
+	"defense_stat_limit": 161,
+	// When a player owned Pokemon hurts or is hurt by a wild pokemon, should a pokemon battle be started?
+	"force_wild_battle_on_pokemon_hurt": false,
+	// When a player owned Pokemon hurts or is hurt by another player's pokemon, should a pokemon battle be started? (EXPERIMENTAL)
+	"force_player_battle_on_pokemon_hurt": false,
+	// If wild pokemon can use the ranged attack.
+	"wild_pokemon_ranged_attack": false,
+	// The minimum time for pokemon to prepare(s).
+	"minimum_ranged_attack_interval": 1.0,
+	// The maximum time for pokemon to prepare(s).
+	"maximum_ranged_attack_interval": 3.0,
+	// The amount of damage a pokemon would do on contact if it had 0 Sp.ATK.
+	"minimum_ranged_attack_damage": 1.0,
+	// The amount of damage a pokemon would do on contact if it had reached the max stat
+	"maximum_ranged_attack_damage": 10.0,
+	// Special attack stat required to reach the maximum damage,the default value is calculated with 50 level, 130 stat, 252 EVs, IVs of 31, and a helpful nature.
+	"maximum_special_attack_stat": 200,
+	// Water type damage will be more effective on mobs like Blaze,Enderman,etc.
+	"water_type_super_effective_dmg_multiplier": 2.0,
+	// Fire type damage will be not very effective against fire immune entity.(set to 0 if you want a complete immune)
+	"fire_type_no_effect_dmg_multiplier": 0.10000000149011612,
+	// Ice type damage will be not very effective against entity that can't be frozen.(set to 0 if you want a complete immune)
+	"ice_type_no_effect_dmg_multiplier": 0.10000000149011612,
+	// Ice type damage will be more effective against entity that has a weaker resistant to the frost damage.
+	"ice_type_super_effective_dmg_multiplier": 2.0,
+	// Poison type damage will be not very effective against undead mobs.(set to 0 if you want a complete immune)
+	"poison_type_no_effect_dmg_multiplier": 0.10000000149011612,
+	// If the original updateMaxHealth() will be replaced by my version. This version uses the hp stat instead of the base hp stat.The following configurations needs this one to work.
+	"shouldOverrideUpdateMaxHealth": true,
+	// The minimum hp of a pokemon entity,shedinja is set to 1.0 and can't be changed.
+	"min_HP": 40,
+	// The medium hp value of a pokemon entity,the medium value is designed to allow you to better tweak the growth of HP value for the entity
+	"mid_HP": 80,
+	// The maximum hp of a pokemon entity.
+	"max_HP": 200,
+	// HP above this value will increase the HP of the entity
+	"min_HP_required_stat": 20,
+	// The medium hp value of a pokemon entity.
+	"mid_HP_required_stat": 160,
+	// The maximum hp of a pokemon entity.The max hp of a Blissey is 714.
+	"max_HP_required_stat": 500,
+	"stay_after_move_command": true
+}

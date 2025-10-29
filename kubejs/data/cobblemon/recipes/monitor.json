@@ -1,25 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "III",
-        "CGC",
-        "IRI"
-    ],
-    "key": {
-        "I": {
-            "item": "minecraft:iron_ingot"
-        },
-        "G": {
-            "item": "minecraft:glass"
-        },
-        "C": {
-            "item": "minecraft:copper_ingot"
-        },
-        "R": {
-            "item": "minecraft:redstone_torch"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ItI", "IGI", "IRI"],
+  "key": {
+    "I": {
+      "item": "oreganized:silver_ingot"
     },
-    "result": {
-        "item": "cobblemon:monitor"
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "t": {
+      "tag": "sunlit_cobblemon:tr"
+    },
+    "R": {
+      "item": "society:battery"
     }
+  },
+  "result": {
+    "item": "cobblemon:monitor"
+  }
 }

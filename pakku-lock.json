@@ -1,5 +1,5 @@
 {
-    "target": "curseforge",
+    "target": "multiplatform",
     "mc_versions": [
         "1.20.1"
     ],
@@ -1844,6 +1844,78 @@
             ]
         },
         {
+            "pakku_id": "WebOz7mVuUhOTrrh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cobblemon-counter"
+            },
+            "name": {
+                "curseforge": "Cobblemon Counter"
+            },
+            "id": {
+                "curseforge": "900238"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cobblemon-counter-1.5-forge-1.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5535/270/cobblemon-counter-1.5-forge-1.2.0.jar",
+                    "id": "5535270",
+                    "parent_id": "900238",
+                    "hashes": {
+                        "sha1": "6ceff984f48049b383207b9aab6d9445897fa489",
+                        "md5": "b5e39c5e879a3219d7a94f02d3ce4ebf"
+                    },
+                    "required_dependencies": [],
+                    "size": 95266,
+                    "date_published": "2024-07-15T17:34:31.030Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "S03MprZ6IZkUdYfP",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cobblemon-fight-or-flight-reborn"
+            },
+            "name": {
+                "curseforge": "Cobblemon Fight or Flight Reborn"
+            },
+            "id": {
+                "curseforge": "1168140"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fightorflight-forge-0.6.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7075/910/fightorflight-forge-0.6.2.jar",
+                    "id": "7075910",
+                    "parent_id": "1168140",
+                    "hashes": {
+                        "sha1": "063daa6f5d17a4b10cba91a3664fe42ee0715fc3",
+                        "md5": "849ff10fc0af4a087a1dbc13e38cdec4"
+                    },
+                    "required_dependencies": [],
+                    "size": 1182683,
+                    "date_published": "2025-10-07T02:23:32.003Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "77tBNUTRJWDWmnRW",
             "type": "MOD",
             "slug": {
@@ -2089,6 +2161,52 @@
                     ],
                     "size": 49358,
                     "date_published": "2024-06-19T16:57:04.577Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "bsPR1CXU9j23DilK",
+            "pakku_links": [
+                "Z5ABSfuXE0jplGgO",
+                "5s7CrcTUORQxpIzh",
+                "JCsFAOuQHQwi2ASm"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "cobbreeding"
+            },
+            "name": {
+                "modrinth": "Cobbreeding"
+            },
+            "id": {
+                "modrinth": "ItmVb4zY"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Cobbreeding-forge-1.7.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ItmVb4zY/versions/L7IKCpcg/Cobbreeding-forge-1.7.4.jar",
+                    "id": "L7IKCpcg",
+                    "parent_id": "ItmVb4zY",
+                    "hashes": {
+                        "sha512": "edaa3c58a472419b4aec5d32bc6ded9527f072f46d2709d3927b01ff02ced7f8654d09b136340e8f6bbd86d701ff65c3a367ff283aaf89e6dd324990595e6138",
+                        "sha1": "af601dd1c556e12e7e88bcb23b629c2891251dd6"
+                    },
+                    "required_dependencies": [
+                        "lhGA9TYQ",
+                        "MdwFAVRL",
+                        "ordsPcFz"
+                    ],
+                    "size": 92784,
+                    "date_published": "2024-12-08T13:14:44.842225Z"
                 }
             ]
         },
@@ -3178,6 +3296,48 @@
                     ],
                     "size": 351225,
                     "date_published": "2025-10-09T14:00:11.063Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PDWZGfsNywota0sG",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-klinks-n-klangs"
+            },
+            "name": {
+                "curseforge": "Create: Klinks n' Klangs (for Cobblemon)"
+            },
+            "id": {
+                "curseforge": "1022166"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_klinks_n_klangs-1.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5360/251/create_klinks_n_klangs-1.0.4.jar",
+                    "id": "5360251",
+                    "parent_id": "1022166",
+                    "hashes": {
+                        "sha1": "5dd6a0ae6f56b84170f414617135d67e37281994",
+                        "md5": "c1e12520a1a571463414e14bbbd758b6"
+                    },
+                    "required_dependencies": [
+                        "687131"
+                    ],
+                    "size": 692528,
+                    "date_published": "2024-05-21T00:18:26.137Z"
                 }
             ]
         },

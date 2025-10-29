@@ -1,0 +1,51 @@
+{
+	// Moves that spawn angry_villager particle around the pokemon
+	"self_angry_moves": [
+		"partingshot",
+		"lashout",
+		"ragingfury",
+		"thrash",
+		"outrage",
+		"temperflare"
+	],
+	// Moves that spawn soul_fire_flame particle around the pokemon's target
+	"target_soul_fire_moves": [
+		"willowisp",
+		"infernalparade",
+		"bitterblade"
+	],
+	// Moves that spawn soul particle around the pokemon's target
+	"target_soul_moves": [
+		"nightshade",
+		"astralbarrage"
+	],
+	"slicing_moves": [
+		"cut",
+		"razorleaf",
+		"slash",
+		"furycutter",
+		"aircutter",
+		"aerialace",
+		"leafblade",
+		"nightslash",
+		"airslash",
+		"x-scissor",
+		"psychocut",
+		"crosspoison",
+		"sacredsword",
+		"razorshell",
+		"secretsword",
+		"solarblade",
+		"behemothblade",
+		"stoneaxe",
+		"ceaselessedge",
+		"populationbomb",
+		"kowtowcleave",
+		"psyblade",
+		"bitterblade",
+		"aquacutter",
+		"mightycleave",
+		"tachyoncutter",
+		"spacialrend"
+	]
+}

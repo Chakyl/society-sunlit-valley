@@ -1,4 +1,5 @@
 {
+	autofocus_id: "063B238596D407D9"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ic__cobblemon"
@@ -83,7 +84,7 @@
 				type: "checkmark"
 			}]
 			title: "I just want to farm..."
-			x: 1.5d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -159,19 +160,41 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["0CA84740D7922353"]
+			dependencies: ["60A705547AE0B95E"]
+			description: [
+				"The &6 Craft Station&r allows workers to create items depending on their type."
+				""
+				"- &6Fire&r - Crafts all furnace recipes and smokes fish"
+				"- &6Fighting&r - Chops trees from Saplings"
+				"- &6Poison&r - Pickles items"
+				"- &6Electric&r - Charges Batteries from Uncharged Batteries"
+				"- &6Psychic&r - Synthesizes Poke-Genes"
+				"- &6Steel&r - Ore multiplying/limited recycling"
+			]
 			id: "75DDF6E50DAD20F0"
+			rewards: [{
+				id: "514023641B7EAEB3"
+				item: "cobblemon:exp_candy_l"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2FC310EB8E266FB0"
 				item: "cobble_workers:craft_station"
 				type: "item"
 			}]
 			title: "Putting them to WORK"
-			x: 10.5d
-			y: -0.5d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["063B238596D407D9"]
+			description: [
+				"The Poké Mart is your one-stop shop for trainer supplies such as Poké Balls and healing items!"
+				""
+				"At lower trainer levels its stock will be more limited, but the more you progress the more the Pokémon League will ship to you."
+				""
+				"It can be accessed using a &6Phone&r."
+			]
 			icon: "numismatics:crown"
 			id: "0CA84740D7922353"
 			rewards: [{
@@ -189,7 +212,12 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7D2F9E3B2518309C"]
+			dependencies: ["68588C07B2EFCA55"]
+			description: [
+				"&6Cobble Berries&r are found in the various biomes across the world. They grow slowly overtime, but have boosted growth every morning when planted on farmland."
+				""
+				"They have various effects in battle when a Pokémon holds them."
+			]
 			icon: "cobblemon:rawst_berry"
 			id: "75C2C4761B35739F"
 			rewards: [{
@@ -210,11 +238,19 @@
 				type: "item"
 			}]
 			title: "Cobble Berries"
-			x: 4.0d
-			y: 1.0d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["75DDF6E50DAD20F0"]
+			dependencies: ["60A705547AE0B95E"]
+			description: [
+				"The &6Mystery Mine&r is a block that workers to enter to obtain various resources. It's a long trip, so they'll need a steady supply of Cobble Berries! The more expensive the berry, the better the loot."
+				""
+				"- &6Ground&r - Digs for archeology drops"
+				"- &6Rock&r - Mines for Overworld, Nether, and Skull Cavern ores (dimensional ones require certain foods)"
+				"- &6Dragon&r - Finds Gems and Golds"
+				"- &6Ghost&r - Finds mob drops"
+			]
 			id: "3A51DD86507A83F7"
 			rewards: [{
 				count: 8
@@ -222,13 +258,12 @@
 				item: "cobblemon:surprise_mulch"
 				type: "item"
 			}]
-			subtitle: "Rock Types Yearn for the Mines"
 			tasks: [{
 				id: "142977AD5F543BF8"
 				item: "cobble_workers:mystery_mine"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: -2.0d
 		}
 		{
@@ -304,13 +339,34 @@
 				type: "item"
 			}]
 			title: "Sifting for Mons"
-			x: 9.0d
+			x: 9.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["375BD349F42BAC72"]
+			description: [
+				"The &6Resurrection Machine&r can bring Pokémon to life from Fossils! Place the &6Fossil Analyzer&r with a &6Data Monitor&r on top, and a &6Restoration Tank&r next to it."
+				""
+				"Placing a fossil in the analyzer and fill the tank with organic matter such as saplings or berries to begin reviving."
+				""
+				"Click on the tank with any Poké Ball to add it to your party."
+			]
 			icon: "cobblemon:restoration_tank"
 			id: "2C65A2C19293943D"
+			rewards: [
+				{
+					count: 8
+					id: "7B52A2D5FF761DCE"
+					item: "cobblemon:ancient_ultra_ball"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4394206CC820DC08"
+					table_id: 8085136845418756190L
+					type: "choice"
+				}
+			]
 			tasks: [
 				{
 					id: "28D2D4B0B4B283B8"
@@ -327,9 +383,26 @@
 					item: "cobblemon:restoration_tank"
 					type: "item"
 				}
+				{
+					action: "revive_fossil"
+					amount: 1L
+					biome: ""
+					dimension: ""
+					form: ""
+					gender: ""
+					id: "0A5DE473E11F80AD"
+					poke_ball_used: ""
+					pokemon: ""
+					pokemon_type: ""
+					region: ""
+					shiny: false
+					time_max: 24000L
+					time_min: 0L
+					type: "cobblemon_tasks:cobblemon_task"
+				}
 			]
 			title: "Creating Life"
-			x: 10.0d
+			x: 11.0d
 			y: 2.5d
 		}
 		{
@@ -357,6 +430,137 @@
 			title: "Crafting Medical Supplies?"
 			x: 9.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["0CA84740D7922353"]
+			description: [
+				"With so much farm work, there's no time to go out and train your team..."
+				""
+				"Why not try letting your Pokémon help you out! They can help with various tasks around your farm, like watering crops, chopping trees, and smelting ores quickly."
+				""
+				"The higher your trainer level, the more workers you can assign."
+			]
+			icon: {
+				Count: 1
+				id: "etcetera:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "60A705547AE0B95E"
+			rewards: [{
+				id: "4BE89F7DFBDC4B55"
+				item: "cobblemon:exp_candy_s"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				action: "catch"
+				amount: 4L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "79A8F9DFBA8764B7"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Putting them to WORK!"
+			x: 10.660714285714285d
+			y: -0.4999999999999929d
+		}
+		{
+			dependencies: ["60A705547AE0B95E"]
+			description: [
+				"The &6Gardening Station&r should be one of your first worker stations! It allows working mons to manage your crops."
+				""
+				"All workers will perform their actions in an area around the station depending on the level of the worker. "
+				""
+				"- &6Water&r - Waters crops in an area"
+				"- &6Grass&r - Grows crops in an area"
+				"- &6Dark&r -  Defeats Pokemon for experience"
+			]
+			id: "3BD199B4A938437F"
+			rewards: [{
+				id: "63E5DD67AB944756"
+				item: "cobblemon:exp_candy_l"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59B1B96B2056F1D8"
+				item: "cobble_workers:gardening_station"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3BD199B4A938437F"]
+			description: [
+				"Leving up your Pokémon is an important aspect of Cobblemon. It gives them better stats in battle, learn new moves, and even evolve them if they can."
+				""
+				"For workers, a Pokémon's level can influence how fast they work and the quality of it. Looking at the recipe will tell you what stats impact both."
+			]
+			icon: "cobblemon:rare_candy"
+			id: "12A48976D7B8F138"
+			rewards: [{
+				count: 3
+				id: "5AD4A31F4C051F6B"
+				item: "cobblemon:exp_candy_m"
+				type: "item"
+			}]
+			tasks: [{
+				action: "level_up"
+				amount: 5L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0A02B5F9FE5B0454"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Leveling up Mons"
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["75C2C4761B35739F"]
+			description: ["When two different &6Cobble Berries&r are planted next to each other, there is a small chance for a mutated berry that is worth more. Check &6JEI&r for possible mutations. "]
+			icon: "cobblemon:figy_berry"
+			id: "3A5238FBDCD86BD6"
+			rewards: [{
+				id: "70F4B6912E53365A"
+				item: "sunlit_cobblemon:berry_capsule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36BE15127E7362E9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cobble_workers:uncommon_berries"
+					}
+				}
+				title: "Any mutated berry"
+				type: "item"
+			}]
+			title: "Mutating Berries"
+			x: 3.5d
+			y: -3.5d
 		}
 	]
 	title: "I.C - Cobblemon"

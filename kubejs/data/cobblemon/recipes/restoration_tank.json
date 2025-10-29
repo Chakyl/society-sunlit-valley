@@ -1,25 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "III",
-        "GRG",
-        "GCG"
-    ],
-    "key": {
-        "I": {
-            "item": "minecraft:iron_ingot"
-        },
-        "G": {
-            "item": "minecraft:glass"
-        },
-        "R": {
-            "item": "cobblemon:revive"
-        },
-        "C": {
-            "item": "minecraft:composter"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["III", "GRG", "GCG"],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
     },
-    "result": {
-        "item": "cobblemon:restoration_tank"
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "cobblemon:revive"
+    },
+    "C": {
+      "item": "society:seed_maker"
     }
+  },
+  "result": {
+    "item": "cobblemon:restoration_tank"
+  }
 }
