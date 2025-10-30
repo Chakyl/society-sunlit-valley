@@ -1,10 +1,10 @@
 //priority: 100
 console.info("[SOCIETY] dehydrator.js loaded");
 
-global.dehydratorRecipes = [
-  { input: "nethervinery:crimson_grape", output: [`1x society:nether_raisins`] },
-  { input: "nethervinery:warped_grape", output: [`1x society:nether_raisins`] },
-];
+global.dehydratorRecipes = new Map([
+  ["nethervinery:crimson_grape", { output: [`1x society:nether_raisins`] }],
+  ["nethervinery:warped_grape", { output: [`1x society:nether_raisins`] }],
+]);
 
 const overworldGrapes = [
   "vinery:red_grape",
@@ -17,8 +17,7 @@ const overworldGrapes = [
   "vinery:savanna_grapes_white",
 ];
 overworldGrapes.forEach((item) => {
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:raisins`],
   });
 });
@@ -35,8 +34,7 @@ global.dehydratableMushrooms = [
 global.dehydratableMushroomOutputs = ["society:dried_shimmering_mushrooms"];
 global.dehydratableMushrooms.forEach((item) => {
   global.dehydratableMushroomOutputs.push(`society:dried_${item.split(":")[1]}`);
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:dried_${item.split(":")[1]}`],
   });
 });
@@ -74,8 +72,7 @@ global.dehydratableFruits = [
 global.dehydratableFruits.forEach((item) => {
   let itemId = item.split(":")[1];
   if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:dried_${itemId}`],
   });
 });
@@ -98,8 +95,7 @@ global.shimmeringMushrooms = [
   "botania:gray_mushroom",
 ];
 global.shimmeringMushrooms.forEach((item) => {
-  global.dehydratorRecipes.push({
-    input: item,
+  global.dehydratorRecipes.set(item, {
     output: [`1x society:dried_shimmering_mushrooms`],
   });
 });
@@ -110,8 +106,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 8))
-    .property(integerProperty.create("type", 0, global.dehydratorRecipes.length))
     .box(1, 0, 4, 15, 16, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -127,23 +121,19 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 8), 0)
-        .set(integerProperty.create("type", 0, global.dehydratorRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 8), 0)
-        .set(integerProperty.create("type", 0, global.dehydratorRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing");
-      const type = block.properties.get("type");
+      const type = block.getEntityData().data.type;
       let isMushroom;
       if (Number(type) > 0) {
         const input = global.dehydratorRecipes[Number(type) - 1].input;
@@ -170,11 +160,9 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: facing,
-            type: type,
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         }
       }
@@ -190,7 +178,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.dehydratorRecipes, 1);
       });

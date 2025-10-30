@@ -1,7 +1,7 @@
 //priority: 100
 console.info("[SOCIETY] fishSmoker.js loaded");
 
-global.fishSmokerRecipes = [];
+global.fishSmokerRecipes = new Map([]);
 const smokableFish = [
   "aquaculture:atlantic_herring",
   "minecraft:pufferfish",
@@ -84,8 +84,7 @@ smokableFish.forEach((fish) => {
     if (fishId === "raw_snowflake") fishId = "frosty_fin";
     else fishId = fishId.substring(4, fishId.length);
   }
-  global.fishSmokerRecipes.push({
-    input: fish,
+  global.fishSmokerRecipes.set(fish, {
     output: [`1x society:smoked_${fishId}`],
   });
 });
@@ -95,9 +94,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 2))
     .property(integerProperty.create("quality", 0, 3))
-    .property(integerProperty.create("type", 0, global.fishSmokerRecipes.length))
     .box(1, 0, 4, 15, 28, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -115,8 +112,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 2), 0)
-        .set(integerProperty.create("type", 0, global.fishSmokerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
@@ -124,8 +119,6 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 2), 0)
-        .set(integerProperty.create("type", 0, global.fishSmokerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
@@ -152,11 +145,9 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: facing,
-            type: block.properties.get("type"),
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
             quality: quality,
           });
         }
@@ -173,7 +164,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.fishSmokerRecipes, 2);
       });

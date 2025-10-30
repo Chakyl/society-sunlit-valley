@@ -24,10 +24,17 @@ const registerBECategory = (event, categoryID, block, title, inputCount, days) =
       .handleLookup((builder, recipe) => {
         const { input, output, fluidOutput } = recipe.data;
         const slotSize = 21;
-        builder
-          .addSlot("INPUT", 2, 2)
-          .addItemStack(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`)
-          .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        if (input.includes("#")) {
+          builder
+            .addSlot("INPUT", 2, 2)
+            .addIngredients([Ingredient.of(input, 2)])
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        } else {
+          builder
+            .addSlot("INPUT", 2, 2)
+            .addItemStack(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`)
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        }
         builder.addSlot("CATALYST", 52, 2).addItemStack(`society:${block}`);
         if (fluidOutput && categoryID !== "tapping") {
           builder
@@ -121,9 +128,17 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
 JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "seed_making", "seed_maker", "Seed Making", 3, 1);
   registerBECategory(e, "preserving", "preserves_jar", "Preserving", 5, 3);
+  registerBECategory(e, "wine_making", "wine_keg", "Wine Making", 3, 6);
   registerBECategory(e, "bait_upgrading", "deluxe_worm_farm", "Bait Upgrading", 4, 0.5);
   registerBECategory(e, "cask_aging", "aging_cask", "Cask Aging", 1, 10);
-  registerBECategory(e, "artisanal_cheese_pressing", "cheese_press", "Artisanal Cheese Pressing", 1, 2);
+  registerBECategory(
+    e,
+    "artisanal_cheese_pressing",
+    "cheese_press",
+    "Artisanal Cheese Pressing",
+    1,
+    2
+  );
   registerBECategory(e, "ancient_aging", "ancient_cask", "Ancient Aging", 1, 20);
   registerBECategory(e, "dehydrating", "dehydrator", "Dehydrating", 8, 1);
   registerBECategory(e, "fish_smoking", "fish_smoker", "Fish Smoking", 1, 2);
@@ -183,48 +198,140 @@ JEIAddedEvents.registerCategories((e) => {
 // });
 
 JEIAddedEvents.registerRecipes((e) => {
-  global.seedMakerRecipes.forEach((element) => {
-    e.custom("society:seed_making").add(element);
+  let recipe;
+  Array.from(global.seedMakerRecipes.keys()).forEach((element) => {
+    recipe = global.seedMakerRecipes.get(element);
+    e.custom("society:seed_making").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.preservesJarRecipes.forEach((element) => {
-    e.custom("society:preserving").add(element);
+  Array.from(global.preservesJarRecipes.keys()).forEach((element) => {
+    recipe = global.preservesJarRecipes.get(element);
+    e.custom("society:preserving").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.deluxeWormFarmRecipes.forEach((element) => {
-    e.custom("society:bait_upgrading").add(element);
+    Array.from(global.wineKegRecipes.keys()).forEach((element) => {
+    recipe = global.wineKegRecipes.get(element);
+    e.custom("society:wine_making").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.cheesePressRecipes.forEach((element) => {
-    e.custom("society:artisanal_cheese_pressing").add(element);
+  Array.from(global.deluxeWormFarmRecipes.keys()).forEach((element) => {
+    recipe = global.deluxeWormFarmRecipes.get(element);
+    e.custom("society:bait_upgrading").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.agingCaskRecipes.forEach((element) => {
-    e.custom("society:cask_aging").add(element);
+  Array.from(global.cheesePressRecipes.keys()).forEach((element) => {
+    recipe = global.cheesePressRecipes.get(element);
+    e.custom("society:artisanal_cheese_pressing").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.ancientCaskRecipes.forEach((element) => {
-    e.custom("society:ancient_aging").add(element);
+  Array.from(global.agingCaskRecipes.keys()).forEach((element) => {
+    recipe = global.agingCaskRecipes.get(element);
+    e.custom("society:cask_aging").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.dehydratorRecipes.forEach((element) => {
-    e.custom("society:dehydrating").add(element);
+  Array.from(global.ancientCaskRecipes.keys()).forEach((element) => {
+    recipe = global.ancientCaskRecipes.get(element);
+    e.custom("society:ancient_aging").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.fishSmokerRecipes.forEach((element) => {
-    e.custom("society:fish_smoking").add(element);
+  Array.from(global.dehydratorRecipes.keys()).forEach((element) => {
+    recipe = global.dehydratorRecipes.get(element);
+    e.custom("society:dehydrating").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.baitMakerRecipes.forEach((element) => {
-    e.custom("society:bait_making").add(element);
+  Array.from(global.fishSmokerRecipes.keys()).forEach((element) => {
+    recipe = global.fishSmokerRecipes.get(element);
+    e.custom("society:fish_smoking").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.mayonnaiseMachineRecipes.forEach((element) => {
-    e.custom("society:mayonnaise_making").add(element);
+  Array.from(global.baitMakerRecipes.keys()).forEach((element) => {
+    recipe = global.baitMakerRecipes.get(element);
+    e.custom("society:bait_making").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.loomRecipes.forEach((element) => {
-    e.custom("society:loom_weaving").add(element);
+  Array.from(global.mayonnaiseMachineRecipes.keys()).forEach((element) => {
+    recipe = global.mayonnaiseMachineRecipes.get(element);
+    e.custom("society:mayonnaise_making").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.crystalariumCrystals.forEach((element) => {
-    e.custom("society:crystal_growing").add(element);
+  Array.from(global.loomRecipes.keys()).forEach((element) => {
+    recipe = global.loomRecipes.get(element);
+    e.custom("society:loom_weaving").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.fishPondDefinitions.forEach((element) => {
-    e.custom("society:fish_farming").add(element);
+  Array.from(global.crystalariumCrystals.keys()).forEach((element) => {
+    recipe = global.crystalariumCrystals.get(element);
+    e.custom("society:crystal_growing").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
+  });
+  Array.from(global.fishPondDefinitions.keys()).forEach((element) => {
+    recipe = global.fishPondDefinitions.get(element);
+    e.custom("society:fish_farming").add({
+      item: element,
+      additionalRewards: recipe.additionalRewards,
+    });
   });
   e.custom("society:charging").add({ input: "", output: ["society:battery"] });
-  global.espressoMachineRecipes.forEach((element) => {
-    e.custom("society:espresso_brewing").add(element);
+  Array.from(global.espressoMachineRecipes.keys()).forEach((element) => {
+    recipe = global.espressoMachineRecipes.get(element);
+    e.custom("society:espresso_brewing").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
   [
     { input: "society:ancient_fruit", output: ["society:prismatic_shard"] },
@@ -240,13 +347,31 @@ JEIAddedEvents.registerRecipes((e) => {
   ].forEach((element) => {
     e.custom("society:goddess_offering").add(element);
   });
-  global.recyclingMachineRecipes.forEach((element) => {
-    e.custom("society:recycling").add(element);
+  Array.from(global.recyclingMachineRecipes.keys()).forEach((element) => {
+    recipe = global.recyclingMachineRecipes.get(element);
+    e.custom("society:recycling").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.tapperRecipes.forEach((element) => {
-    e.custom("society:tapping").add(element);
+  Array.from(global.tapperRecipes.keys()).forEach((element) => {
+    recipe = global.tapperRecipes.get(element);
+    e.custom("society:tapping").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
-  global.tapperRecipes.forEach((element) => {
-    e.custom("society:auto_tapping").add(element);
+  Array.from(global.tapperRecipes.keys()).forEach((element) => {
+    recipe = global.tapperRecipes.get(element);
+    e.custom("society:auto_tapping").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
   });
 });
