@@ -1616,7 +1616,7 @@
             ]
         },
         {
-            "pakku_id": "g6AeyzhGH1fH5z4b",
+            "pakku_id": "wDdbOthEDrls15F7",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -1634,7 +1634,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "classicpipes-forge-1.20.1-1.0.7.jar",
+                    "file_name": "classicpipes-forge-1.20.1-1.0.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1642,20 +1642,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7126/861/classicpipes-forge-1.20.1-1.0.7.jar",
-                    "id": "7126861",
+                    "url": "https://edge.forgecdn.net/files/7166/436/classicpipes-forge-1.20.1-1.0.8.jar",
+                    "id": "7166436",
                     "parent_id": "1351745",
                     "hashes": {
-                        "sha1": "db2b66e35dd45cb60e41e8fe99e3748c7b202a63",
-                        "md5": "b800a84c37b02b670e4d678973cbdafc"
+                        "sha1": "4509a3a2940d42aeb374db94feabe6f3bc19eb8e",
+                        "md5": "947532afbc3de0ce1d5bd2142f126aa8"
                     },
                     "required_dependencies": [],
-                    "size": 707327,
-                    "date_published": "2025-10-19T19:49:51.307Z"
+                    "size": 710459,
+                    "date_published": "2025-10-30T12:36:44.410Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "classicpipes-forge-1.20.1-1.0.7.jar",
+                    "file_name": "classicpipes-forge-1.20.1-1.0.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1663,16 +1663,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/xX5VOqpH/versions/R45iGAL9/classicpipes-forge-1.20.1-1.0.7.jar",
-                    "id": "R45iGAL9",
+                    "url": "https://cdn.modrinth.com/data/xX5VOqpH/versions/cDXxNXD0/classicpipes-forge-1.20.1-1.0.8.jar",
+                    "id": "cDXxNXD0",
                     "parent_id": "xX5VOqpH",
                     "hashes": {
-                        "sha512": "1b3ef389bc4346eeadaa6295816f496adb53e12fb5494f6427383da2e1305632ec19349e529bbd33e11e0626815a4a48e6927c4dc5cc147f05270f692e761856",
-                        "sha1": "db2b66e35dd45cb60e41e8fe99e3748c7b202a63"
+                        "sha512": "5722ab465570a3b5af65de987010bf83e1f8846bfd477134a35b5902d7e8756f1425f29d3b2618fe1f99a1be99ec14f1a1f3c26139919da04f56c78e7531e007",
+                        "sha1": "4509a3a2940d42aeb374db94feabe6f3bc19eb8e"
                     },
                     "required_dependencies": [],
-                    "size": 707327,
-                    "date_published": "2025-10-19T19:56:45.640494Z"
+                    "size": 710459,
+                    "date_published": "2025-10-30T12:28:00.909042Z"
                 }
             ]
         },
@@ -1824,6 +1824,47 @@
                     "required_dependencies": [],
                     "size": 20299,
                     "date_published": "2024-04-21T05:04:02.807Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "uTD9IEKcFJ1YwMw2",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cobble-workers"
+            },
+            "name": {
+                "curseforge": "Cobble Workers"
+            },
+            "id": {
+                "curseforge": "1375081"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cobble_workers-0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7165/311/cobble_workers-0.1.jar",
+                    "id": "7165311",
+                    "parent_id": "1375081",
+                    "hashes": {
+                        "sha1": "7964364837ea32290212f698be6550b663e3687d",
+                        "md5": "4b8776c652b627e8985bad0ff4747b3a"
+                    },
+                    "required_dependencies": [
+                        "687131"
+                    ],
+                    "size": 172701,
+                    "date_published": "2025-10-30T02:53:42.930Z"
                 }
             ]
         },
@@ -13015,6 +13056,43 @@
                     "required_dependencies": [],
                     "size": 10285195,
                     "date_published": "2025-10-10T01:50:18.257Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "lXws4VRivThsskel",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "xl-packets"
+            },
+            "name": {
+                "curseforge": "XL Packets"
+            },
+            "id": {
+                "curseforge": "391640"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "xlpackets-1.18.2-2.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4426/828/xlpackets-1.18.2-2.1.jar",
+                    "id": "4426828",
+                    "parent_id": "391640",
+                    "hashes": {
+                        "sha1": "f24208aa29e04b26366589061806d07d77d30034",
+                        "md5": "ee7f9b5dec68637fb20ba3849b2bff10"
+                    },
+                    "required_dependencies": [],
+                    "size": 4786,
+                    "date_published": "2023-03-07T08:33:17.493Z"
                 }
             ]
         },
