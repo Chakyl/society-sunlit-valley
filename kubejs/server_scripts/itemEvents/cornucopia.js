@@ -47,7 +47,15 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
     success = false;
     scannedBlock = level.getBlock(pos);
     fruitDrop = player.level.createEntity("minecraft:item");
-    if (["vinery:dark_cherry_leaves", "vinery:apple_leaves"].includes(scannedBlock.id)) {
+    if (scannedBlock.id.includes("apricorn") && scannedBlock.properties.get("age") == 3) {
+      fruitCount = 1;
+      fruitItem = Item.of(scannedBlock.id);
+      success = true;
+      scannedBlock.set(scannedBlock.id, {
+        facing: scannedBlock.properties.get("facing"),
+        age: "0",
+      });
+    } else if (["vinery:dark_cherry_leaves", "vinery:apple_leaves"].includes(scannedBlock.id)) {
       season = global.getSeasonFromLevel(player.level);
       modifiedProperties = scannedBlock.properties;
       if (

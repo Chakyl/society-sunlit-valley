@@ -6,6 +6,21 @@
       "entries": [
         {
           "type": "item",
+          "name": "cobblemon:lure_ball",
+          "entryName": "lure_ball",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "meadow:fire_log",
           "entryName": "fire_log",
           "weight": 1

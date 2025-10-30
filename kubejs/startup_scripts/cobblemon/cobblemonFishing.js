@@ -47,11 +47,12 @@ const rollPokeFishingTable = (table) => {
   }
   return;
 };
+
 const getPokemonLevel = (lvlRange) => {
   if (!lvlRange || lvlRange.length < 2) return 1;
   return Math.floor(Math.random() * (lvlRange[1] - lvlRange[0] + 1)) + lvlRange[0];
 };
-// TODO: Add bobbers
+
 global.handleCobblemonFish = (e) => {
   const player = e.getEntity();
   const hook = e.getHookEntity();

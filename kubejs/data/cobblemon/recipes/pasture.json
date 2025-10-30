@@ -1,25 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "PPP",
-        "PCP",
-        "WHW"
-    ],
-    "key": {
-        "P": {
-            "tag": "minecraft:planks"
-        },
-        "C": {
-            "item": "cobblemon:pc"
-        },
-        "W": {
-            "item": "minecraft:wheat"
-        },
-        "H": {
-            "item": "minecraft:hopper"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["PPP", "PCP", "WHW"],
+  "key": {
+    "P": {
+      "tag": "minecraft:planks"
     },
-    "result": {
-        "item": "cobblemon:pasture"
+    "C": {
+      "item": "cobblemon:pc"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "H": {
+      "item": "sunlit_cobblemon:fairy_heart"
     }
+  },
+  "result": {
+    "item": "cobblemon:pasture"
+  }
 }

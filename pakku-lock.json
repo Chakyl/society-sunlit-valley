@@ -1461,42 +1461,6 @@
             ]
         },
         {
-            "pakku_id": "cyFsDjmuY8fEQ3FF",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "champions-unofficial"
-            },
-            "name": {
-                "curseforge": "Champions Unofficial"
-            },
-            "id": {
-                "curseforge": "1074990"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "champions-forge-1.20.1-2.1.12.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6923/340/champions-forge-1.20.1-2.1.12.6.jar",
-                    "id": "6923340",
-                    "parent_id": "1074990",
-                    "hashes": {
-                        "sha1": "16f2cfed384d3755a9af8e30e948f27483adfe2e",
-                        "md5": "d048b8930a3d65df754a503147726bb6"
-                    },
-                    "required_dependencies": [],
-                    "size": 395325,
-                    "date_published": "2025-08-24T16:47:08.037Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "vg2Rzun4H4r66JOV",
             "type": "MOD",
             "side": "CLIENT",
@@ -1648,6 +1612,67 @@
                     "required_dependencies": [],
                     "size": 341451,
                     "date_published": "2024-05-06T07:10:57.567Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "g6AeyzhGH1fH5z4b",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "classic-pipes",
+                "modrinth": "classic-pipes"
+            },
+            "name": {
+                "curseforge": "Classic Pipes",
+                "modrinth": "Classic Pipes"
+            },
+            "id": {
+                "curseforge": "1351745",
+                "modrinth": "xX5VOqpH"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "classicpipes-forge-1.20.1-1.0.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7126/861/classicpipes-forge-1.20.1-1.0.7.jar",
+                    "id": "7126861",
+                    "parent_id": "1351745",
+                    "hashes": {
+                        "sha1": "db2b66e35dd45cb60e41e8fe99e3748c7b202a63",
+                        "md5": "b800a84c37b02b670e4d678973cbdafc"
+                    },
+                    "required_dependencies": [],
+                    "size": 707327,
+                    "date_published": "2025-10-19T19:49:51.307Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "classicpipes-forge-1.20.1-1.0.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/xX5VOqpH/versions/R45iGAL9/classicpipes-forge-1.20.1-1.0.7.jar",
+                    "id": "R45iGAL9",
+                    "parent_id": "xX5VOqpH",
+                    "hashes": {
+                        "sha512": "1b3ef389bc4346eeadaa6295816f496adb53e12fb5494f6427383da2e1305632ec19349e529bbd33e11e0626815a4a48e6927c4dc5cc147f05270f692e761856",
+                        "sha1": "db2b66e35dd45cb60e41e8fe99e3748c7b202a63"
+                    },
+                    "required_dependencies": [],
+                    "size": 707327,
+                    "date_published": "2025-10-19T19:56:45.640494Z"
                 }
             ]
         },

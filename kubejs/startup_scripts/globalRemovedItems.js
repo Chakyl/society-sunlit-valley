@@ -1,4 +1,5 @@
 global.removedItems = [
+  "create_klinks_n_klangs:wrapper",
   "windswept:gingerbread_cookie",
   "windswept:frozen_flesh",
   "whimsy_deco:gatcha_capsule",

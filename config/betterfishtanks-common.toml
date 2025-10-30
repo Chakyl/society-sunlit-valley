@@ -1,0 +1,21 @@
+
+#Better Fishtanks Mod Configuration
+[general]
+	#Require food for fish survival
+	requireFood = true
+	#Defines how water is displayed in Fish Tank UI
+	#PERCENT: Shows as percentage (0-100%)
+	#BUCKETS: Shows as whole buckets (B)
+	#MILLIBUCKETS: Shows as millibuckets (mB)
+	#Allowed Values: PERCENT, BUCKETS, MILLIBUCKETS
+	waterDisplayUnit = "PERCENT"
+
+[mob]
+	#Set to true to allow Drowned to be captured with the Fish Bag.
+	allowDrownedCapture = false
+	#Set to true to allow Guardians and Elder Guardians to be captured with the Fish Bag.
+	allowGuardianCapture = false
+	#Set to true to allow whales to be captured with the Fish Bag.
+	#WARNING: Large fish like whales may eat smaller fish in the same tank!
+	allowWhaleCapture = false
+

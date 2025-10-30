@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "cobblemon:green_mint_leaf"
+    },
+    {
+      "item": "cobblemon:green_mint_leaf"
+    },
+    {
+      "item": "cobblemon:tamato_berry"
+    },
+    {
+      "item": "cobblemon:tamato_berry"
+    },
+    {
+      "item": "bakery:toast"
+    },
+    {
+      "item": "bakery:toast"
+    },
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:liquid_medicinal_brew"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:carbos"
+    }
+  ]
+}

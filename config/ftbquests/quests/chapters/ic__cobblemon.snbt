@@ -286,8 +286,8 @@
 				type: "item"
 			}]
 			title: "Home Healing"
-			x: 7.0d
-			y: 1.0d
+			x: 6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["063B238596D407D9"]
@@ -561,6 +561,32 @@
 			title: "Mutating Berries"
 			x: 3.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"The &6Sunlit League&r is here to help you develop your farm!"
+				""
+				"Each time you defeat a wild Pokémon, the League will deposit money directly into your bank account."
+				""
+				"The amount will scale with your Trainer Level, as well as the level of the Pokémon you've defeated."
+			]
+			id: "0CA36182D78C1214"
+			rewards: [{
+				id: "2BD97E9EC30CD822"
+				item: "cobblemon:relic_coin_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "twigs:twig"
+				id: "1ACAD6973ECFAD65"
+				stage: "trainer_lvl_1"
+				title: "Reach Trainer Twig Trainer Level"
+				type: "gamestage"
+			}]
+			title: "Funding the Farm"
+			x: 7.0d
+			y: 1.0d
 		}
 	]
 	title: "I.C - Cobblemon"

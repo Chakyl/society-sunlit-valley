@@ -1,0 +1,37 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "cobblemon:pep_up_flower"
+    },
+    {
+      "item": "cobblemon:pep_up_flower"
+    },
+    {
+      "item": "cobblemon:leppa_berry"
+    },
+    {
+      "item": "cobblemon:leppa_berry"
+    },
+    {
+      "item": "cobblemon:vivichoke"
+    },
+    {
+      "item": "cobblemon:vivichoke"
+    },
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:liquid_medicinal_brew"
+    },
+    {
+      "amount": 750,
+      "fluid": "society:vinegar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:pp_up"
+    }
+  ]
+}

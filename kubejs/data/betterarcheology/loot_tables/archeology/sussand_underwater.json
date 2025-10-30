@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:archaeology/ocean_ruin_warm",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterarcheology:artifact_shards",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:relic_coin"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:archaeology/ocean_ruin_warm"
+}

@@ -99,7 +99,7 @@ global.processShippingBinInventory = (
 };
 
 const debugValueProcess = false;
-
+const toastOffset = 68;
 global.handleShippingBinDebt = (value, player, server, block, inventory, extenalOutput) => {
   if (!player) return value;
   let playerUUID = player.getUuid().toString();
@@ -122,7 +122,7 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §aYou paid off your §f● §a${global.formatPrice(
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:${toastOffset},offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §aYou paid off your §f● §a${global.formatPrice(
           debtPaid
         )} debt!`
       );
@@ -133,7 +133,7 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §f● §6${global.formatPrice(
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:${toastOffset},offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §f● §6${global.formatPrice(
           debtPaid
         )} §7of your debt paid off...`
       );
@@ -202,7 +202,7 @@ global.processValueOutput = (
         server.runCommandSilent(
           `emberstextapi sendcustom ${
             player.username
-          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ● §6${global.formatPrice(
+          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:${toastOffset},offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ● §6${global.formatPrice(
             value
           )} §7worth of goods sold`
         );
@@ -256,7 +256,7 @@ global.processValueOutput = (
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 Your Basic Shipping Bin was too full to sell...`
+        `emberstextapi sendcustom ${player.username} {anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:${toastOffset},offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 Your Basic Shipping Bin was too full to sell...`
       );
     }
   }

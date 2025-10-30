@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "cobblemon:white_mint_leaf"
+    },
+    {
+      "item": "cobblemon:white_mint_leaf"
+    },
+    {
+      "item": "cobblemon:pomeg_berry"
+    },
+    {
+      "item": "cobblemon:pomeg_berry"
+    },
+    {
+      "item": "society:penguin_mayonnaise"
+    },
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:liquid_medicinal_brew"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:hp_up"
+    }
+  ]
+}
