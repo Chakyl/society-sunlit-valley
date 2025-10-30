@@ -6,14 +6,15 @@ const $BooleanProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.BooleanProperty"
 );
 const Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2");
-
+// TOOD: FIX
 global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
-  if (!global.plushies.includes(accessor.getBlock().id)) return;
-  const properties = accessor.getBlockState();
-  const type = properties.getValue($IntegerProperty.create("type", 0, global.plushieTraits.length));
+  const nbt = accessor.getServerData();
+
+  if (nbt.type.equals("")) return;
+  const type = nbt.type
   let typeData = global.plushieTraits[type];
-  const quality = properties.getValue($IntegerProperty.create("quality", 0, 4));
-  const affection = properties.getValue($IntegerProperty.create("affection", 0, 4));
+  const affection = Number(nbt.affection)
+  const quality = Number(nbt.quality)
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   tooltip.add(Component.translatable(blockName));

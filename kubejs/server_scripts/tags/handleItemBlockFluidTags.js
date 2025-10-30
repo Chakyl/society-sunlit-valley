@@ -548,6 +548,7 @@ ServerEvents.tags("item", (e) => {
 ServerEvents.tags("block", (e) => {
   e.add("minecraft:crops", "farmersdelight:tomatoes");
   const buildingGadgetsDeny = [
+    "society:wine_keg",
     "society:aging_cask",
     "society:ancient_cask",
     "society:charging_rod",

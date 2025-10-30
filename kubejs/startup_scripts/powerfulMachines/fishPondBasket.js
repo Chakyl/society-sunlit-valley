@@ -7,14 +7,15 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   const { x, y, z } = fishPond;
   let machineOutputs;
   let newProperties = fishPond.getProperties();
-  const fishRecipe = global.getArtisanRecipe(global.fishPondDefinitions, fishPond);
+  let nbt = fishPond.getEntityData();
+  const { type, population } = nbt.data;
   if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
   if (
     newProperties.get("mature").toLowerCase() === "true" &&
     level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
-    Number(newProperties.get("population")) > 0
+    population > 0
   ) {
-    let fishie = global.handleFishExtraction(fishPond, player, server, fishRecipe.item);
+    let fishie = global.handleFishExtraction(fishPond, player, server);
     if (
       global.inventoryBelowHasRoom(level, block, fishie) &&
       global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
@@ -33,13 +34,13 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
         0.01
       );
     }
-  } 
+  }
   if (
     newProperties.get("mature").toLowerCase() === "true" &&
-    global.inventoryBelowHasRoom(level, block, global.getRoe(fishRecipe.item)) &&
+    global.inventoryBelowHasRoom(level, block, global.getRoe(type)) &&
     global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
   ) {
-    machineOutputs = global.handleFishHarvest(fishRecipe, fishPond, player, server, true);
+    machineOutputs = global.handleFishHarvest(fishPond, player, server, true);
 
     if (machineOutputs.length > 0) {
       machineOutputs.forEach((item) => {

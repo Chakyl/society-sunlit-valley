@@ -128,6 +128,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
 JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "seed_making", "seed_maker", "Seed Making", 3, 1);
   registerBECategory(e, "preserving", "preserves_jar", "Preserving", 5, 3);
+  registerBECategory(e, "wine_making", "wine_keg", "Wine Making", 3, 6);
   registerBECategory(e, "bait_upgrading", "deluxe_worm_farm", "Bait Upgrading", 4, 0.5);
   registerBECategory(e, "cask_aging", "aging_cask", "Cask Aging", 1, 10);
   registerBECategory(
@@ -210,6 +211,15 @@ JEIAddedEvents.registerRecipes((e) => {
   Array.from(global.preservesJarRecipes.keys()).forEach((element) => {
     recipe = global.preservesJarRecipes.get(element);
     e.custom("society:preserving").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
+  });
+    Array.from(global.wineKegRecipes.keys()).forEach((element) => {
+    recipe = global.wineKegRecipes.get(element);
+    e.custom("society:wine_making").add({
       input: element,
       output: recipe.output,
       time: recipe.time,

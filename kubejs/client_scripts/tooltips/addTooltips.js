@@ -189,6 +189,11 @@ ItemEvents.tooltip((tooltip) => {
         "An ancient handheld computer powered by steam. The word 'Uni' is ingraved on the back",
     },
     {
+      item: "society:amulet_of_light",
+      tooltip:
+        "A very normal and holy pendant",
+    },
+    {
       item: "society:aquamagical_dust",
       tooltip: "Feels mystical and oceanic...",
     },

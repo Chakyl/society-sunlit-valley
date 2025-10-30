@@ -113,10 +113,6 @@ const getCanTakeItems = (item, recipe, properties, hasTag, recipes, nbt) => {
   );
 };
 
-global.getArtisanRecipe = (recipes, block, legacy) => {
-  console.log("IF YOU SEE THIS RUN!!");
-};
-
 global.convertFromLegacy = (recipes, level, block) => {
   let nbt = block.getEntityData();
   let newRecipe;
