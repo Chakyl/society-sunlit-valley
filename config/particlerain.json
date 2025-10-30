@@ -1,9 +1,9 @@
 {
   "configVersion": 5,
   "perf": {
-    "maxParticleAmount": 1500,
-    "particleDensity": 100,
-    "particleStormDensity": 200,
+    "maxParticleAmount": 1000,
+    "particleDensity": 80,
+    "particleStormDensity": 160,
     "particleDistance": 16,
     "surfaceRange": 48
   },
@@ -480,7 +480,7 @@
       "presetParticleId": "particlerain:mist",
       "usePresetParticle": true,
       "id": "mist_after_rain",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "AFTER_WEATHER",
       "precipitation": [
@@ -521,7 +521,7 @@
       "presetParticleId": "particlerain:mist",
       "usePresetParticle": true,
       "id": "mist",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "ALWAYS",
       "precipitation": [
