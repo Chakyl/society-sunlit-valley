@@ -9,19 +9,17 @@ const Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2");
 // TOOD: FIX
 global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   const nbt = accessor.getServerData();
-
   if (nbt.type.equals("")) return;
-  const type = nbt.type
+  const type = nbt.type;
   let typeData = global.plushieTraits[type];
-  const affection = nbt.affection
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   tooltip.add(Component.translatable(blockName));
   tooltip.add(`§6${"★".repeat(nbt.quality + 1)}§8${"☆".repeat(3 - nbt.quality)}`);
   tooltip.add(`§${typeData.color}${global.formatName(typeData.trait)}`);
   tooltip.add(
-    `§c${affection > 0 ? `❤`.repeat(affection) : ""}§8${
-      affection < 4 ? `❤`.repeat(4 - affection) : ""
+    `§c${nbt.affection > 0 ? `❤`.repeat(nbt.affection) : ""}§8${
+      nbt.affection < 4 ? `❤`.repeat(4 - nbt.affection) : ""
     }`
   );
 };
