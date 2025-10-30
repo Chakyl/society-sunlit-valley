@@ -5,9 +5,9 @@ ServerEvents.recipes((e) => {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",
   });
-  e.smelting("society:rubber", "society:sap").xp(0.35)
-  e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7)
-  e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7)
+  e.smelting("society:rubber", "society:sap").xp(0.35);
+  e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
+  e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
@@ -236,10 +236,10 @@ ServerEvents.recipes((e) => {
     t: "society:treated_log",
   });
   e.shaped("vinery:fermentation_barrel", ["FoF", "IbI", "FfF"], {
-    b: "minecraft:barrel",
-    I: "minecraft:iron_block",
-    f: "society:fire_quartz",
-    o: "society:oak_resin",
+    b: "society:wine_keg",
+    I: "minecraft:gold_block",
+    f: "society:battery",
+    o: "minecraft:netherite_ingot",
     F: "meadow:fire_log",
   });
   e.shaped("herbalbrews:cauldron", [" C ", "fcf", " f "], {
@@ -251,7 +251,7 @@ ServerEvents.recipes((e) => {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
     C: "#forge:storage_blocks/coal",
-    i: "minecraft:iron_block",
+    i: "minecraft:copper_block",
   });
   e.shaped("society:dehydrator", ["LGL", "pbp", "LfL"], {
     b: "minecraft:barrel",
@@ -477,10 +477,18 @@ ServerEvents.recipes((e) => {
     p: "crabbersdelight:pearl",
     w: "#minecraft:wooden_slabs",
   });
+  e.shaped("society:wine_keg", ["FoF", "IbI", "FfF"], {
+    b: "minecraft:barrel",
+    I: "minecraft:iron_block",
+    I: "minecraft:iron_block",
+    f: "minecraft:quartz_block",
+    o: "society:oak_resin",
+    F: "meadow:fire_log",
+  });
 
   // Jade
   e.shaped("society:aging_cask", [" j ", "pbp", "SpS"], {
-    b: "vinery:fermentation_barrel",
+    b: "society:wine_keg",
     S: "oreganized:lead_block",
     j: "society:jade",
     p: "society:pine_tar",

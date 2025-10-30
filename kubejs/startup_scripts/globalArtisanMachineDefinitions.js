@@ -16,6 +16,12 @@ global.artisanMachineDefinitions = [
     upgrade: "society:pink_matter",
   },
   {
+    id: "society:wine_keg",
+    recipes: global.wineKegRecipes,
+    stageCount: 6,
+    maxInput: 3,
+  },
+  {
     id: "society:aging_cask",
     recipes: global.agingCaskRecipes,
     stageCount: 10,
