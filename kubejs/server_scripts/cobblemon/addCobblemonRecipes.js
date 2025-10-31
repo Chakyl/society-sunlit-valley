@@ -16,4 +16,18 @@ ServerEvents.recipes((e) => {
     f: "sunlit_cobblemon:fairy_heart",
     s: "numismatics:prismatic_coin",
   });
+  e.shaped("cobble_workers:gardening_station", ["fff", "fpf", "f f"], {
+    f: "meadow:fire_log",
+    p: "cobblemon:poke_ball",
+  });
+  e.shaped("cobble_workers:craft_station", ["fff", "bpb", "b b"], {
+    f: "meadow:fire_log",
+    p: "cobblemon:poke_ball",
+    b: "minecraft:bricks",
+  });
+  e.shaped("cobble_workers:mystery_mine", ["efe", "fpf", "efe"], {
+    f: "meadow:fire_log",
+    p: "cobblemon:poke_ball",
+    e: "society:earth_crystal",
+  });
 });

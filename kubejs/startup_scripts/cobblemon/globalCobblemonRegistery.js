@@ -167,6 +167,16 @@ global.cobblemonPreserves = [
   { item: "sunlit_cobblemon:rare_cobbleberry_preserves", value: 320 },
   { item: "sunlit_cobblemon:legendary_cobbleberry_preserves", value: 640 },
 ];
+/**
+ * Dried
+ * Formula:  Ingredient * 14 + 64,
+ */
+global.cobblemonDehydrated = [
+  { item: "sunlit_cobblemon:dried_common_cobbleberry", value: 120 },
+  { item: "sunlit_cobblemon:dried_uncommon_cobbleberry", value: 176 },
+  { item: "sunlit_cobblemon:dried_rare_cobbleberry", value: 288 },
+  { item: "sunlit_cobblemon:dried_legendary_cobbleberry", value: 512 },
+];
 global.cobbleAdventuring.forEach((miscItem) => {
   const { item, value } = miscItem;
   global.trades.set(item, {
@@ -183,6 +193,13 @@ global.cobbleGeology.forEach((miscItem) => {
 });
 global.cobblemonPreserves.forEach((miscItem) => {
   const { item, value } = miscItem;
+  global.trades.set(item, {
+    value: value,
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.cobblemonDehydrated.forEach((dehydratee) => {
+  const { item, value } = dehydratee;
   global.trades.set(item, {
     value: value,
     multiplier: "shippingbin:wood_sell_multiplier",

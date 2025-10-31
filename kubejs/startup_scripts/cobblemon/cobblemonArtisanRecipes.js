@@ -72,3 +72,26 @@
 ].forEach((recipe) => {
   global.recyclingMachineRecipes.set(recipe.input, { output: recipe.output });
 });
+
+[
+  { input: "cobblemon:medicinal_leek", output: ["sunlit_cobblemon:dried_leek"] },
+  { input: "cobblemon:vivichoke", output: ["sunlit_cobblemon:dried_vivichoke"] },
+  {
+    input: "#cobble_workers:common_berries",
+    output: ["sunlit_cobblemon:dried_common_cobbleberry"],
+  },
+  {
+    input: "#cobble_workers:uncommon_berries",
+    output: ["sunlit_cobblemon:dried_uncommon_cobbleberry"],
+  },
+  {
+    input: "#cobble_workers:rare_berries",
+    output: ["sunlit_cobblemon:dried_rare_cobbleberry"],
+  },
+  {
+    input: "#cobble_workers:legendary_berries",
+    output: ["sunlit_cobblemon:dried_legendary_cobbleberry"],
+  },
+].forEach((recipe) => {
+  global.dehydratorRecipes.set(recipe.input, { output: recipe.output });
+});

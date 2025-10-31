@@ -51,4 +51,21 @@ StartupEvents.registry("item", (e) => {
         });
     }
   });
+  const cobblemonDehydratorMapping = [
+    { item: "sunlit_cobblemon:dried_common_cobbleberry", hex: 0xdd5e8c },
+    { item: "sunlit_cobblemon:dried_uncommon_cobbleberry", hex: 0xc20e34 },
+    { item: "sunlit_cobblemon:dried_rare_cobbleberry", hex: 0x474976 },
+    { item: "sunlit_cobblemon:dried_legendary_cobbleberry", hex: 0xfcc112 },
+  ];
+  global.cobblemonDehydrated.forEach((item) => {
+    const itemHex = cobblemonDehydratorMapping.find((val) => val.item === item.item)?.hex;
+    e.create(item.item)
+      .texture(`society:item/dried_fruit`)
+      .color(0, itemHex)
+      .food((food) => {
+        food.hunger(9);
+        food.saturation(0.5);
+        food.fastToEat(true);
+      });
+  });
 });

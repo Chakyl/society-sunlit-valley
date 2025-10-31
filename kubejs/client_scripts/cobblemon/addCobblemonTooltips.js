@@ -9,17 +9,35 @@ ItemEvents.tooltip((tooltip) => {
   global.cobblemonPreserves.forEach((item) => {
     global.addPriceTooltip(tooltip, item, "wood");
   });
+  global.cobblemonDehydrated.forEach((item) => {
+    global.addPriceTooltip(tooltip, item, "wood");
+  });
   global.cobbleCrops.forEach((item) => {
     global.addPriceTooltip(tooltip, item, "crop");
   });
 
-  tooltip.add('sunlit_cobblemon:silph_scope',Text.green("Allows you to enter the World of Pokémon!"));
-  tooltip.add('sunlit_cobblemon:silph_scope',Text.gold("Right click to equip!"));
-  tooltip.add("sunlit_cobblemon:poke_bobber", Text.gold("Fishes up a common Pokémon with every catch"));
-  tooltip.add("sunlit_cobblemon:great_poke_bobber", Text.gold("Fishes up an uncommon Pokémon with every catch"));
-  tooltip.add("sunlit_cobblemon:ultra_poke_bobber", Text.gold("Fishes up a rare Pokémon with every catch"));
-  tooltip.add("sunlit_cobblemon:master_poke_bobber", Text.gold("Fishes up an epic Pokémon with every catch"));
-  
+  tooltip.add(
+    "sunlit_cobblemon:silph_scope",
+    Text.green("Allows you to enter the World of Pokémon!")
+  );
+  tooltip.add("sunlit_cobblemon:silph_scope", Text.gold("Right click to equip!"));
+  tooltip.add(
+    "sunlit_cobblemon:poke_bobber",
+    Text.gold("Fishes up a common Pokémon with every catch")
+  );
+  tooltip.add(
+    "sunlit_cobblemon:great_poke_bobber",
+    Text.gold("Fishes up an uncommon Pokémon with every catch")
+  );
+  tooltip.add(
+    "sunlit_cobblemon:ultra_poke_bobber",
+    Text.gold("Fishes up a rare Pokémon with every catch")
+  );
+  tooltip.add(
+    "sunlit_cobblemon:master_poke_bobber",
+    Text.gold("Fishes up an epic Pokémon with every catch")
+  );
+
   tooltip.add("sunlit_cobblemon:tm_pack", Text.gray("Right click to open"));
   tooltip.add("sunlit_cobblemon:tm_pack", Text.green("12% chance for a TM"));
 
@@ -33,8 +51,18 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("sunlit_cobblemon:berry_capsule", Text.gray("Right click to open"));
   tooltip.add("sunlit_cobblemon:berry_capsule", Text.green("Contains common berries"));
 
-  tooltip.add("cobblemon:ability_capsule", Text.gray("Changes the ability of the Pokémon it is used on to their alternative standard ability"));
-  tooltip.add("cobblemon:ability_patch", Text.gray("Changes the ability of the Pokémon it is used on to their alternative hidden ability"));
+  tooltip.add(
+    "cobblemon:ability_capsule",
+    Text.gray(
+      "Changes the ability of the Pokémon it is used on to their alternative standard ability"
+    )
+  );
+  tooltip.add(
+    "cobblemon:ability_patch",
+    Text.gray(
+      "Changes the ability of the Pokémon it is used on to their alternative hidden ability"
+    )
+  );
 
   [
     {
@@ -300,12 +328,18 @@ ItemEvents.tooltip((tooltip) => {
     { item: "soft_sand", desc: "Boosts the power of the holder's Ground-type moves." },
     { item: "spell_tag", desc: "Boosts the power of the holder's Ghost-type moves." },
     { item: "twisted_spoon", desc: "Boosts the power of the holder's Psychic-type moves." },
-    { item: 'power_anklet', desc: "Gives extra Speed EVs when the holder participates in battle" },
-    { item: 'power_band', desc: "Gives extra Special Defence EVs when the holder participates in battle" },
-    { item: 'power_belt', desc: "Gives extra Defense EVs when the holder participates in battle" },
-    { item: 'power_bracer', desc: "Gives extra Attack EVs when the holder participates in battle" },
-    { item: 'power_lens', desc: "Gives extra Special Attack EVs when the holder participates in battle" },
-    { item: 'power_weight', desc: "Gives extra HP EVs when the holder participates in battle" },
+    { item: "power_anklet", desc: "Gives extra Speed EVs when the holder participates in battle" },
+    {
+      item: "power_band",
+      desc: "Gives extra Special Defence EVs when the holder participates in battle",
+    },
+    { item: "power_belt", desc: "Gives extra Defense EVs when the holder participates in battle" },
+    { item: "power_bracer", desc: "Gives extra Attack EVs when the holder participates in battle" },
+    {
+      item: "power_lens",
+      desc: "Gives extra Special Attack EVs when the holder participates in battle",
+    },
+    { item: "power_weight", desc: "Gives extra HP EVs when the holder participates in battle" },
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
     tooltip.add(`cobblemon:${item.item}`, Text.gold("Held Item"));
@@ -316,58 +350,160 @@ ItemEvents.tooltip((tooltip) => {
     { item: "black_augurite", desc: "Evolves Scyther into Kleavor" },
     { item: "chipped_pot", desc: "Evolves Antique Form Sinistea into Antique Form Polteageist" },
     { item: "cracked_pot", desc: "Evolves Phony Form Sinistea into Phony Form Polteageist" },
-    { item: "deep_sea_scale", desc: "Evolves Clamperl into Gorebyss", crit: "Requires Trade or Link Cable" },
-    { item: "deep_sea_tooth", desc: "Evolves Clamperl into Huntail", crit: "Requires Trade or Link Cable" },
-    { item: "dragon_scale", desc: "Evolves Seadra into Kingdra", crit: "Requires Trade or Link Cable" },
-    { item: "dubious_disc", desc: "Evolves Porygon2 into Porygon-Z", crit: "Requires Trade or Link Cable" },
-    { item: "electirizer", desc: "Evolves Electabuzz into Electivire", crit: "Requires Trade or Link Cable" },
+    {
+      item: "deep_sea_scale",
+      desc: "Evolves Clamperl into Gorebyss",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "deep_sea_tooth",
+      desc: "Evolves Clamperl into Huntail",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "dragon_scale",
+      desc: "Evolves Seadra into Kingdra",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "dubious_disc",
+      desc: "Evolves Porygon2 into Porygon-Z",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "electirizer",
+      desc: "Evolves Electabuzz into Electivire",
+      crit: "Requires Trade or Link Cable",
+    },
     { item: "galarica_cuff", desc: "Evolves Galarian Slowpoke into Galarian Slowbro" },
     { item: "galarica_wreath", desc: "Evolves Galarian Slowpoke into Galarian Slowking" },
-    { item: "kings_rock", desc: "Evolves Poliwhirl into Politoed and Slowpoke into Slowking", crit: "Requires Trade or Link Cable" },
+    {
+      item: "kings_rock",
+      desc: "Evolves Poliwhirl into Politoed and Slowpoke into Slowking",
+      crit: "Requires Trade or Link Cable",
+    },
     { item: "link_cable", desc: "Evolves Pokémon that evolve via trading" },
-    { item: "magmarizer", desc: "Evolves Magmar into Magmortar", crit: "Requires Trade or Link Cable" },
+    {
+      item: "magmarizer",
+      desc: "Evolves Magmar into Magmortar",
+      crit: "Requires Trade or Link Cable",
+    },
     { item: "malicious_armor", desc: "Evolves Charcadet into Ceruledge" },
-    { item: "masterpiece_teacup", desc: "Evolves Artisan Form Poltchageist into Masterpiece Form Sinistcha" },
+    {
+      item: "masterpiece_teacup",
+      desc: "Evolves Artisan Form Poltchageist into Masterpiece Form Sinistcha",
+    },
     { item: "metal_alloy", desc: "Evolves Duraludon into Archaludon" },
-    { item: "metal_coat", desc: "Evolves Scyther into Scizor and Onix into Steelix", crit: "Requires Trade or Link Cable" },
+    {
+      item: "metal_coat",
+      desc: "Evolves Scyther into Scizor and Onix into Steelix",
+      crit: "Requires Trade or Link Cable",
+    },
     { item: "oval_stone", desc: "Evolves Happiny into Chansey" },
-    { item: "peat_block", desc: "Evolves Ursaring into Ursaluna", crit: "Requires a full moon at night" },
-    { item: "prism_scale", desc: "Evolves Feebas into Milotic", crit: "Requires Trade or Link Cable" },
-    { item: "protector", desc: "Evolves into Rhydon into Rhyperior", crit: "Requires Trade or Link Cable" },
-    { item: "razor_claw", desc: "Evolves into Sneasel into Weavile", crit: "Requires a level gained at night" },
-    { item: "razor_fang", desc: "Evolves into Gligar into Gliscor", crit: "Requires a level gained at night" },
-    { item: "reaper_cloth", desc: "Evolves into Dusclops into Dusknoir", crit: "Requires Trade or Link Cable" },
-    { item: "sachet", desc: "Evolves into Spritzee into Aromatisse", crit: "Requires Trade or Link Cable" },
+    {
+      item: "peat_block",
+      desc: "Evolves Ursaring into Ursaluna",
+      crit: "Requires a full moon at night",
+    },
+    {
+      item: "prism_scale",
+      desc: "Evolves Feebas into Milotic",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "protector",
+      desc: "Evolves into Rhydon into Rhyperior",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "razor_claw",
+      desc: "Evolves into Sneasel into Weavile",
+      crit: "Requires a level gained at night",
+    },
+    {
+      item: "razor_fang",
+      desc: "Evolves into Gligar into Gliscor",
+      crit: "Requires a level gained at night",
+    },
+    {
+      item: "reaper_cloth",
+      desc: "Evolves into Dusclops into Dusknoir",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "sachet",
+      desc: "Evolves into Spritzee into Aromatisse",
+      crit: "Requires Trade or Link Cable",
+    },
     { item: "scroll_of_darkness", desc: "Evolves Kubfu into Single Strike Style Urshifu" },
     { item: "scroll_of_waters", desc: "Evolves Kubfu into Rapid Strike Style Urshifu" },
     { item: "shell_helmet", desc: "Evolves Karrablast into Escavalier" },
-    { item: "strawberry_sweet", desc: "Evolves Milcery into Alcremie", crit: "Time of day and affects form" },
-    { item: "love_sweet", desc: "Evolves Milcery into Alcremie", crit: "Time of day and affects form" },
-    { item: "berry_sweet", desc: "Evolves Milcery into Alcremie", crit: "Time of day and affects form" },
-    { item: "clover_sweet", desc: "Evolves Milcery into Alcremie", crit: "Time of day and affects form" },
-    { item: "flower_sweet", desc: "Evolves Milcery into Alcremie", crit: "Time of day and affects form" },
-    { item: "star_sweet", desc: "Evolves Milcery into Alcremie", crit: "Time of day and affects form" },
-    { item: "ribbon_sweet", desc: "Evolves Milcery into Alcremie", crit: "Time of day and affects form" },
+    {
+      item: "strawberry_sweet",
+      desc: "Evolves Milcery into Alcremie",
+      crit: "Time of day and affects form",
+    },
+    {
+      item: "love_sweet",
+      desc: "Evolves Milcery into Alcremie",
+      crit: "Time of day and affects form",
+    },
+    {
+      item: "berry_sweet",
+      desc: "Evolves Milcery into Alcremie",
+      crit: "Time of day and affects form",
+    },
+    {
+      item: "clover_sweet",
+      desc: "Evolves Milcery into Alcremie",
+      crit: "Time of day and affects form",
+    },
+    {
+      item: "flower_sweet",
+      desc: "Evolves Milcery into Alcremie",
+      crit: "Time of day and affects form",
+    },
+    {
+      item: "star_sweet",
+      desc: "Evolves Milcery into Alcremie",
+      crit: "Time of day and affects form",
+    },
+    {
+      item: "ribbon_sweet",
+      desc: "Evolves Milcery into Alcremie",
+      crit: "Time of day and affects form",
+    },
     { item: "sweet_apple", desc: "Evolves Applin into Appletun" },
     { item: "syrupy_apple", desc: "Evolves Applin into Dipplin" },
     { item: "tart_apple", desc: "Evolves  Applin into Flapple" },
-    { item: "unremarkable_teacup", desc: "Evolves Counterfeit Form Poltchageist into Unremarkable Form Sinistcha" },
-    { item: "upgrade", desc: "Evolves Porygon into Porygon2", crit: "Requires Trade or Link Cable" },
-    { item: "whipped_dream", desc: "Evolves Swirlix into Slurpuff", crit: "Requires Trade or Link Cable" },
- ].forEach((item) => {
+    {
+      item: "unremarkable_teacup",
+      desc: "Evolves Counterfeit Form Poltchageist into Unremarkable Form Sinistcha",
+    },
+    {
+      item: "upgrade",
+      desc: "Evolves Porygon into Porygon2",
+      crit: "Requires Trade or Link Cable",
+    },
+    {
+      item: "whipped_dream",
+      desc: "Evolves Swirlix into Slurpuff",
+      crit: "Requires Trade or Link Cable",
+    },
+  ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
     if (item.crit) tooltip.add(`cobblemon:${item.item}`, Text.darkPurple(item.crit));
     tooltip.add(`cobblemon:${item.item}`, Text.lightPurple("Evolution Item"));
   });
   [
-    { item: "calcium", desc: "Adds 10 Special Attack EVs to the target Pokémon"},
-    { item: "carbos", desc: "Adds 10 Speed EVs to the target Pokémon"},
-    { item: "hp_up", desc: "Adds 10 HP EVs to the target Pokémon"},
-    { item: "iron", desc: "Adds 10 Defense EVs to the target Pokémon"},
-    { item: "protein", desc: "Adds 10 Attack EVs to the target Pokémon"},
-    { item: "zinc", desc: "Adds 10 Special Defense EVs to the target Pokémon"},
-    { item: "pp_up", desc: "Raises the PP of a selected move by 20% of the move's base PP"},
-    { item: "pp_max", desc: "Raises the PP of a selected move to 160% of the move's base PP"},
+    { item: "calcium", desc: "Adds 10 Special Attack EVs to the target Pokémon" },
+    { item: "carbos", desc: "Adds 10 Speed EVs to the target Pokémon" },
+    { item: "hp_up", desc: "Adds 10 HP EVs to the target Pokémon" },
+    { item: "iron", desc: "Adds 10 Defense EVs to the target Pokémon" },
+    { item: "protein", desc: "Adds 10 Attack EVs to the target Pokémon" },
+    { item: "zinc", desc: "Adds 10 Special Defense EVs to the target Pokémon" },
+    { item: "pp_up", desc: "Raises the PP of a selected move by 20% of the move's base PP" },
+    { item: "pp_max", desc: "Raises the PP of a selected move to 160% of the move's base PP" },
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
     tooltip.add(`cobblemon:${item.item}`, Text.aqua("Vitamin"));

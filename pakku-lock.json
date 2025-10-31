@@ -1845,26 +1845,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cobble_workers-0.1.jar",
+                    "file_name": "cobble_workers-0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7165/311/cobble_workers-0.1.jar",
-                    "id": "7165311",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7169/157/cobble_workers-0.2.jar",
+                    "id": "7169157",
                     "parent_id": "1375081",
                     "hashes": {
-                        "sha1": "7964364837ea32290212f698be6550b663e3687d",
-                        "md5": "4b8776c652b627e8985bad0ff4747b3a"
+                        "sha1": "f60f42a07d219b6acf685f64a0e8d9339d3f82a4",
+                        "md5": "95c6e397779b64f9bc013b9136c6d47d"
                     },
                     "required_dependencies": [
                         "687131"
                     ],
-                    "size": 172701,
-                    "date_published": "2025-10-30T02:53:42.930Z"
+                    "size": 176277,
+                    "date_published": "2025-10-31T03:18:07.237Z"
                 }
             ]
         },
@@ -6241,6 +6241,73 @@
             ]
         },
         {
+            "pakku_id": "qkyaD0fiCv4rfW49",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "globalpacks",
+                "modrinth": "globalpacks"
+            },
+            "name": {
+                "curseforge": "Global Packs",
+                "modrinth": "Global Packs"
+            },
+            "id": {
+                "curseforge": "317134",
+                "modrinth": "NRLPy2mk"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "globalpacks-forge-1.20.1-19.3.5.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6634/578/globalpacks-forge-1.20.1-19.3.5.jar",
+                    "id": "6634578",
+                    "parent_id": "317134",
+                    "hashes": {
+                        "sha1": "3de9fb8ace9994adf14616a43492704023b85870",
+                        "md5": "d0eee2adb34f813e2ad21b4d44a07c06"
+                    },
+                    "required_dependencies": [],
+                    "size": 24932,
+                    "date_published": "2025-06-09T21:48:47.793Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "globalpacks-forge-1.20.1-19.3.5.jar",
+                    "mc_versions": [
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/NRLPy2mk/versions/Kgn0YIHG/globalpacks-forge-1.20.1-19.3.5.jar",
+                    "id": "Kgn0YIHG",
+                    "parent_id": "NRLPy2mk",
+                    "hashes": {
+                        "sha512": "03f81e348ef380f202b3c86700a8498016154f2a8ac95532aa877cb1e28e92a4b413ff69bff43f478540a865a08cf38221f30e44ec6680a6a84121d10d030f1f",
+                        "sha1": "3de9fb8ace9994adf14616a43492704023b85870"
+                    },
+                    "required_dependencies": [],
+                    "size": 24932,
+                    "date_published": "2025-06-09T21:48:47.153607Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "skxrPk4MoUYR9jIV",
             "type": "RESOURCE_PACK",
             "slug": {
@@ -10289,7 +10356,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "seasonhud-forge-1.20.1-1.13.14.jar",
+                    "file_name": "seasonhud-forge-1.20.1-1.13.9.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -10299,16 +10366,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7148/860/seasonhud-forge-1.20.1-1.13.14.jar",
-                    "id": "7148860",
+                    "url": "https://edge.forgecdn.net/files/6933/197/seasonhud-forge-1.20.1-1.13.9.jar",
+                    "id": "6933197",
                     "parent_id": "690971",
                     "hashes": {
-                        "sha1": "af3c2d9753d3324f5a04a1923f10880d6f45b2d4",
-                        "md5": "437c6f31be715886f5bec5a1ae4d66da"
+                        "sha1": "3a12ab03cb351712f4decfc0207e18c94a1bb239",
+                        "md5": "fc2078f7fdbbe354d6bb5bc5f004ebb1"
                     },
                     "required_dependencies": [],
-                    "size": 297846,
-                    "date_published": "2025-10-25T16:32:22.203Z"
+                    "size": 297914,
+                    "date_published": "2025-08-27T07:14:48.513Z"
                 }
             ]
         },
@@ -10387,6 +10454,42 @@
                     ],
                     "size": 160887,
                     "date_published": "2025-04-08T06:27:11.480Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "49GPj00K3GQTcW6j",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "serializerdebug"
+            },
+            "name": {
+                "curseforge": "SerializerDebug"
+            },
+            "id": {
+                "curseforge": "1166778"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "serializer_debug-1.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6028/801/serializer_debug-1.0.1.jar",
+                    "id": "6028801",
+                    "parent_id": "1166778",
+                    "hashes": {
+                        "sha1": "2eb23fc7753d4c6e1621617501eea366fd1a0bed",
+                        "md5": "19de481a1d63cce26fec3e147b093821"
+                    },
+                    "required_dependencies": [],
+                    "size": 400461,
+                    "date_published": "2024-12-28T00:11:18.503Z"
                 }
             ]
         },
@@ -13060,39 +13163,63 @@
             ]
         },
         {
-            "pakku_id": "lXws4VRivThsskel",
+            "pakku_id": "D3FlOKDIRtFbjlVh",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
-                "curseforge": "xl-packets"
+                "curseforge": "xxl-packets",
+                "modrinth": "xxl-packets"
             },
             "name": {
-                "curseforge": "XL Packets"
+                "curseforge": "XXL Packets",
+                "modrinth": "XXL Packets"
             },
             "id": {
-                "curseforge": "391640"
+                "curseforge": "962921",
+                "modrinth": "SeCuopwJ"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "xlpackets-1.18.2-2.1.jar",
+                    "file_name": "xlpackets-forge-1.20.1-1.0.5.jar",
                     "mc_versions": [
-                        "1.20.1",
-                        "1.20"
+                        "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4426/828/xlpackets-1.18.2-2.1.jar",
-                    "id": "4426828",
-                    "parent_id": "391640",
+                    "url": "https://edge.forgecdn.net/files/5959/231/xlpackets-forge-1.20.1-1.0.5.jar",
+                    "id": "5959231",
+                    "parent_id": "962921",
                     "hashes": {
-                        "sha1": "f24208aa29e04b26366589061806d07d77d30034",
-                        "md5": "ee7f9b5dec68637fb20ba3849b2bff10"
+                        "sha1": "f35dd41709eae596bbc99bfa895489a4d8256a78",
+                        "md5": "3a612255d3e95de5206466c2837909da"
                     },
                     "required_dependencies": [],
-                    "size": 4786,
-                    "date_published": "2023-03-07T08:33:17.493Z"
+                    "size": 17337,
+                    "date_published": "2024-12-03T14:59:19.547Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "xlpackets-forge-1.20.1-1.0.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/SeCuopwJ/versions/dqaBUpHl/xlpackets-forge-1.20.1-1.0.5.jar",
+                    "id": "dqaBUpHl",
+                    "parent_id": "SeCuopwJ",
+                    "hashes": {
+                        "sha512": "883209d58b178d9c3936fd1b16c0726c89970a62ea39536f2d32985c3c0d1c14e46d4a824db9cad7ea45201afa6b443e3120a8acbcec2e270b9220ae942bbf1b",
+                        "sha1": "f35dd41709eae596bbc99bfa895489a4d8256a78"
+                    },
+                    "required_dependencies": [],
+                    "size": 17337,
+                    "date_published": "2024-12-03T14:52:26.287157Z"
                 }
             ]
         },
