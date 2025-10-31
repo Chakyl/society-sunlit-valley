@@ -189,6 +189,7 @@ element {
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
   image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
   element_type = image
   instance_identifier = 537cfc5f-f861-43e0-a482-03576d17761c-1731992642414
   appearance_delay = no_delay
@@ -199,13 +200,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 3440
-  auto_sizing_base_screen_height = 1370
+  auto_sizing_base_screen_width = 3442
+  auto_sizing_base_screen_height = 1371
   sticky_anchor = false
   anchor_point = top-centered
-  x = -199
-  y = 33
-  width = 404
+  x = -273
+  y = 38
+  width = 546
   height = 89
   stretch_x = false
   stretch_y = false
@@ -213,12 +214,13 @@ element {
   element_loading_requirement_container_identifier = e1ac6ec0-5e8d-4ad6-a09a-d3f96190853b-1731992642414
   [loading_requirement_container_meta:e1ac6ec0-5e8d-4ad6-a09a-d3f96190853b-1731992642414] = [groups:][instances:]
   enable_parallax = false
-  parallax_intensity = 0.5
+  parallax_intensity_v2 = 0.5
   invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
   in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {

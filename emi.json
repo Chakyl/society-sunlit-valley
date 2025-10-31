@@ -1,6 +1,16 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cobble_workers:mystery_mine",
+    "item:oreganized:raw_lead",
+    "item:minecraft:cod",
+    "item:minecraft:acacia_sapling",
+    "item:etcetera:raw_bismuth",
+    "item:sunlit_cobblemon:poke_genes",
+    "item:society:battery",
+    "item:atmospheric:aspen_sapling",
+    "item:society:smoked_tambaqui",
+    "item:society:pickled_broccoli",
     "item:minecraft:barrel",
     "item:atmospheric:barrel_cactus_batch",
     "item:minecraft:hopper",
@@ -21,7 +31,6 @@
     "item:classicpipes:obsidian_fluid_pipe",
     "item:classicpipes:iron_fluid_pipe",
     "item:classicpipes:birch_fluid_pipe",
-    "item:society:pickled_broccoli",
     "item:society:pickled_turnip",
     "item:society:pickled_cauliflower",
     "item:society:pickled_zucchini",
@@ -343,11 +352,6 @@
     },
     "item:create_klinks_n_klangs:nest_ball_stencil",
     "item:create_klinks_n_klangs:unpainted_nest_ball",
-    {
-      "type": "item",
-      "id": "sunlit_cobblemon:poke_genes",
-      "amount": 64
-    },
     "item:minecraft:fletching_table",
     "item:society:ancient_cog",
     "item:cobblemon:restoration_tank",
@@ -457,11 +461,6 @@
     "item:cobblemon:nostalgic_sherd",
     {
       "type": "item",
-      "id": "society:battery",
-      "amount": 3
-    },
-    {
-      "type": "item",
       "id": "rottencreatures:frozen_rotten_flesh",
       "amount": 31
     },
@@ -483,7 +482,6 @@
       "nbt": "{quality_food:{effects:[],quality:1}}",
       "amount": 21
     },
-    "item:minecraft:cod",
     "item:vintagedelight:salted_cod",
     "item:minecraft:cod_spawn_egg",
     "item:minecraft:salmon",
@@ -501,7 +499,6 @@
     "item:vinery:fermentation_barrel",
     "item:society:juice_inserter",
     "item:meadow:fire_log",
-    "item:cobble_workers:mystery_mine",
     {
       "type": "item",
       "id": "cobblemon:kee_berry",
@@ -843,7 +840,6 @@
     "#item:forge:gems",
     "item:cobblemon:rock_gem",
     "#item:cobble_workers:rare_berries",
-    "item:oreganized:raw_lead",
     "item:society:perfect_cherry",
     "item:society:holy_symbol",
     {
@@ -930,11 +926,6 @@
       "amount": 9
     },
     "item:cobblemon:exp_share",
-    {
-      "type": "item",
-      "id": "etcetera:raw_bismuth",
-      "amount": 24
-    },
     "item:minecraft:stripped_spruce_wood",
     {
       "type": "item",
@@ -1838,14 +1829,7 @@
     "item:cobblemon:muscle_feather",
     "item:cobblemon:guard_spec",
     "item:cobblemon:automaton_armor_trim_smithing_template",
-    "item:cobblemon:electric_gem",
-    {
-      "type": "item",
-      "id": "cobblemon:armor_fossil",
-      "amount": 64
-    },
-    "item:cobblemon:dragon_gem",
-    "item:cobblemon:grass_gem"
+    "item:cobblemon:electric_gem"
   ],
   "craft_history": [
     "minecraft:barrel",
