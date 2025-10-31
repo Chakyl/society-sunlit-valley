@@ -199,7 +199,7 @@ global.artisanInsert = (
   let itemQuality;
   let useCount = 0;
   const recipe = recipes.get(`${item.id}`);
-
+  if (multipleInputs && nbt.data.recipe !== "" && nbt.data.recipe !== item.id) return;
   if (getCanTakeItems(item, recipe, block.properties, hasTag, recipes, nbt)) {
     newProperties = block.getProperties();
     successParticles(level, block);

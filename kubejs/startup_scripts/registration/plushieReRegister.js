@@ -3,10 +3,8 @@ console.info("[SOCIETY] plushieReRegister.js loaded");
 global.plushieRightClick = (click) => {
   const { item, block, player, level, server, hand } = click;
   const { x, y, z } = block;
-  const properties = block.properties;
-  const affection = Number(properties.get("affection").toLowerCase());
-  const type = Number(properties.get("type").toLowerCase());
-  const quest_id = Number(properties.get("quest_id").toLowerCase());
+  let nbt = block.getEntityData();
+  const { type, quest_id, affection } = nbt.data;
 
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
@@ -32,13 +30,13 @@ global.plushieRightClick = (click) => {
           10,
           0.1
         );
-        block.set(block.id, {
-          facing: properties.get("facing").toLowerCase(),
-          quest_id: affection == 3 ? "0" : String(rnd(1, 3)),
-          affection: String(affection + 1),
-          quality: properties.get("quality").toLowerCase(),
-          type: String(type),
+        nbt.merge({
+          data: {
+            quest_id: affection == 3 ? "0" : String(rnd(1, 3)),
+            affection: affection + 1,
+          },
         });
+        block.setEntityData(nbt);
         player.tell("§c❤ §7Thank you for the wonderful gift!");
       } else {
         player.tell("§c❤ §7I would be much happier if I had this...");
@@ -48,10 +46,12 @@ global.plushieRightClick = (click) => {
     if (item == "minecraft:air" && block.id === "whimsy_deco:adv_singing_frog_plushie") {
       server.runCommandSilent(`playsound species:music.disk.spawner block @a ${x} ${y} ${z}`);
       block.set("whimsy_deco:sunlit_singing_frog", block.properties);
+      block.setEntityData(nbt);
       server.scheduleInTicks(0, () => {
         server.scheduleInTicks(2740, () => {
           if (level.getBlock(block.pos).id === "whimsy_deco:sunlit_singing_frog") {
             block.set("whimsy_deco:adv_singing_frog_plushie", block.properties);
+            block.setEntityData(nbt);
           }
         });
       });
@@ -82,21 +82,6 @@ StartupEvents.registry("block", (event) => {
         });
       })
       .rightClick((click) => global.plushieRightClick(click))
-      .randomTick((tick) => {
-        if (rnd25()) {
-          let properties = tick.block.getProperties();
-          let nbt = tick.block.getEntityData();
-          nbt.merge({
-            data: {
-              type: global.plushieTraits[Number(properties.get("type"))].trait,
-              quest_id: Number(properties.get("quest_id")),
-              quality: Number(properties.get("quality")),
-              affection: Number(properties.get("affection")),
-            },
-          });
-          tick.block.setEntityData(nbt);
-        }
-      })
       .blockEntity((blockInfo) => {
         blockInfo.initialData({ type: "", quest_id: 0, quality: 0, affection: 0 });
       });
