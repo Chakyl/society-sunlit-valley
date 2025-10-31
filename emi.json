@@ -1,6 +1,27 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:minecraft:barrel",
+    "item:atmospheric:barrel_cactus_batch",
+    "item:minecraft:hopper",
+    "item:farm_and_charm:strawberry",
+    "item:society:good_catawba",
+    "item:naturescompass:naturescompass",
+    "item:society:penguin_mayonnaise",
+    "item:cobblemon:hp_up",
+    "item:society:neptuna",
+    "item:crittersandcompanions:clam",
+    "item:oreganized:lead_block",
+    "item:society:aging_cask",
+    "item:simpletms:tr_ragingfury",
+    "item:vintagedelight:century_egg",
+    "item:society:wine_keg",
+    "item:minecraft:iron_block",
+    "item:minecraft:quartz_block",
+    "item:classicpipes:obsidian_fluid_pipe",
+    "item:classicpipes:iron_fluid_pipe",
+    "item:classicpipes:birch_fluid_pipe",
+    "item:society:pickled_broccoli",
     "item:society:pickled_turnip",
     "item:society:pickled_cauliflower",
     "item:society:pickled_zucchini",
@@ -115,7 +136,6 @@
     "item:cobblemon:max_potion",
     "item:cobblemon:full_restore",
     "item:cobblemon:medicinal_brew",
-    "item:cobblemon:hp_up",
     {
       "type": "fluid",
       "id": "create_klinks_n_klangs:hp_up",
@@ -162,7 +182,6 @@
       "id": "create_klinks_n_klangs:calcium",
       "amount": 0
     },
-    "item:society:penguin_mayonnaise",
     "item:society:large_goat_milk",
     "item:herbalbrews:dried_black_tea",
     "item:herbalbrews:black_tea_leaf_block",
@@ -480,7 +499,6 @@
     "item:vinery:grapevine_stem",
     "item:vinery:grapevine_pot",
     "item:vinery:fermentation_barrel",
-    "item:minecraft:iron_block",
     "item:society:juice_inserter",
     "item:meadow:fire_log",
     "item:cobble_workers:mystery_mine",
@@ -597,12 +615,6 @@
       "id": "unusualfishmod:raw_triple_twirl_pleco",
       "amount": 2
     },
-    {
-      "type": "item",
-      "id": "society:neptuna",
-      "nbt": "{quality_food:{effects:[],quality:1}}",
-      "amount": 2
-    },
     "item:cobblemon:wacan_berry",
     {
       "type": "item",
@@ -661,7 +673,6 @@
     "item:windswept:spicy_snow_cone",
     "item:windswept:roasted_chestnut_crate",
     "item:atmospheric:roasted_yucca_bundle",
-    "item:society:pickled_broccoli",
     "item:cobblemon:jaboca_berry",
     "item:cobblemon:nomel_berry",
     "item:society:merino_wool",
@@ -770,7 +781,6 @@
     "item:minecraft:gold_nugget",
     "item:cobblemon:plume_fossil",
     "item:simplemagnets:basicmagnet",
-    "item:minecraft:barrel",
     "item:meadow:pine_planks",
     {
       "type": "item",
@@ -931,7 +941,6 @@
       "id": "cobblemon:pinap_berry",
       "amount": 8
     },
-    "item:minecraft:hopper",
     "item:minecraft:dragon_egg",
     "item:shippingbin:basic_shipping_bin",
     {
@@ -1303,7 +1312,6 @@
     "item:society:aged_glowing_wine",
     "item:society:double_aged_glowing_wine",
     "item:society:double_aged_good_catawba",
-    "item:society:aging_cask",
     "item:minecraft:netherite_ingot",
     "item:meadow:pine_barn_trapdoor",
     "item:meadow:pine_trapdoor",
@@ -1312,7 +1320,6 @@
     "item:minecraft:gold_block",
     "item:dew_drop_farmland_growth:iron_sprinkler",
     "item:cobblemon:cornn_berry",
-    "item:oreganized:lead_block",
     "item:candlelight:cooking_pot",
     "item:farmersdelight:cooking_pot",
     "item:society:seed_maker",
@@ -1321,11 +1328,6 @@
       "type": "item",
       "id": "minecraft:torch",
       "amount": 37
-    },
-    {
-      "type": "item",
-      "id": "farm_and_charm:strawberry",
-      "amount": 64
     },
     "item:society:malachite",
     "item:society:magnifying_glass",
@@ -1626,7 +1628,6 @@
     "item:minecraft:campfire",
     "item:refurbished_furniture:dark_stove",
     "item:crabbersdelight:pearl_block",
-    "item:crittersandcompanions:clam",
     {
       "type": "item",
       "id": "farmersdelight:safety_net",
@@ -1844,26 +1845,15 @@
       "amount": 64
     },
     "item:cobblemon:dragon_gem",
-    "item:cobblemon:grass_gem",
-    "item:cobblemon:fire_gem",
-    "item:cobblemon:old_amber_fossil",
-    {
-      "type": "item",
-      "id": "cobblemon:root_fossil",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:exp_candy_xs",
-      "amount": 64
-    },
-    "item:cobblemon:exp_candy_s",
-    "item:candlelight:chefs_pants{Damage:0}",
-    "item:atmospheric:forsythia",
-    "item:minecraft:cartography_table",
-    "item:cobblemon:white_gilded_chest"
+    "item:cobblemon:grass_gem"
   ],
   "craft_history": [
+    "minecraft:barrel",
+    "quark:tweaks/crafting/utility/misc/easy_hopper",
+    "oreganized:lead_block",
+    "minecraft:kjs/society_wine_keg",
+    "minecraft:iron_block",
+    "minecraft:quartz_block",
     "minecraft:kjs/society_mayonnaise_machine",
     "rehooked:iron_hook",
     "minecraft:wooden_pickaxe",
@@ -1874,7 +1864,6 @@
     "quark:building/crafting/mangrove_post",
     "vinery:grapevine_pot",
     "minecraft:kjs/vinery_fermentation_barrel",
-    "minecraft:iron_block",
     "meadow:fire_log",
     "minecraft:kjs/society_cheese_press",
     "cobblemon:dusk_ball",
@@ -1894,7 +1883,6 @@
     "minecraft:chain",
     "sophisticatedstorage:magnet_upgrade",
     "simplemagnets:basicmagnet",
-    "minecraft:barrel",
     "meadow:pine_planks",
     "farmersdelight:basket",
     "minecraft:stone_bricks",
