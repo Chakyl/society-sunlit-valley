@@ -1,0 +1,49 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "palkia-1",
+      "pokemon": "palkia",
+      "type": "pokemon",
+      "context": "submerged",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#cobblemon:is_lukewarm"]
+      }
+    },
+    {
+      "id": "palkia-2",
+      "pokemon": "palkia",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#cobblemon:is_beach"],
+        "timeRange": "any",
+        "isRaining": false,
+        "neededBaseBlocks": ["minecraft:sand"]
+      }
+    },
+    {
+      "id": "palkia-3",
+      "pokemon": "palkia",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#minecraft:is_end"]
+      }
+    }
+  ]
+}

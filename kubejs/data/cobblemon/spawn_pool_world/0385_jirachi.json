@@ -1,0 +1,36 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "jirachi-1",
+      "pokemon": "jirachi",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "canSeeSky": true,
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#cobblemon:is_mountain", "#cobblemon:is_hills"],
+        "timeRange": "morning"
+      }
+    },
+    {
+      "id": "jirachi-2",
+      "pokemon": "jirachi",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#minecraft:is_end"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "roaringmoon-1",
+      "pokemon": "roaringmoon",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "timeRange": "night",
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#cobblemon:is_mountain"]
+      }
+    }
+  ]
+}

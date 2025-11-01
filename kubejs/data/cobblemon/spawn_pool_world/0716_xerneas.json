@@ -1,0 +1,36 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "xerneas-1",
+      "pokemon": "xerneas",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#cobblemon:is_floral"],
+        "timeRange": "day",
+        "isRaining": false,
+        "maxY": 150
+      }
+    },
+    {
+      "id": "xerneas-2",
+      "pokemon": "xerneas",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#minecraft:is_end"]
+      }
+    }
+  ]
+}

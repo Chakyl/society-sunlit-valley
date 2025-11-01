@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "tapukoko-1",
+      "pokemon": "tapukoko",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "canSeeSky": true,
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#cobblemon:is_forest", "#cobblemon:is_jungle"]
+      }
+    }
+  ]
+}

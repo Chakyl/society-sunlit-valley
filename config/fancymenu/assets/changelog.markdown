@@ -1,8 +1,19 @@
 ^^^
 ## Sunlit Cobblemon
-### vPLAYTEST-1.0.0
+### vPLAYTEST-2-1.0.0
 ^^^
 --- 
+## Playtest 2
+- Added prehistoric parodox pokemon to Skull Cavern
+- Added functionality to whimsy deco ATMs
+- Reduced difficulty of Rock tier
+- Fixed Cobble Workers not working in multiplayer
+- Fixed being able to obtain party pokemon models from workstations
+- Fixed errors from losing battles
+- Fixed Legendary Pokemon spawning
+- Fixed extra guide book 
+
+## Playtest 1
 - Sunlit Cobblemon Initial Release!!
 - Added Cobble Workers, new mod that lets you put Cobblemon to work on your farm
 - Added Trainer Level system

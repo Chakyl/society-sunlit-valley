@@ -1845,26 +1845,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cobble_workers-0.2.jar",
+                    "file_name": "cobble_workers-0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7169/157/cobble_workers-0.2.jar",
-                    "id": "7169157",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7175/788/cobble_workers-0.3.jar",
+                    "id": "7175788",
                     "parent_id": "1375081",
                     "hashes": {
-                        "sha1": "f60f42a07d219b6acf685f64a0e8d9339d3f82a4",
-                        "md5": "95c6e397779b64f9bc013b9136c6d47d"
+                        "sha1": "5f29165d01a8d78723580d10dfc9911d7b0e70aa",
+                        "md5": "7729946b09936776cf42302e9576366a"
                     },
                     "required_dependencies": [
                         "687131"
                     ],
-                    "size": 176277,
-                    "date_published": "2025-10-31T03:18:07.237Z"
+                    "size": 180268,
+                    "date_published": "2025-11-01T22:29:13.547Z"
                 }
             ]
         },
@@ -3466,7 +3466,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "numismatics_utils-1.1.jar",
+                    "file_name": "numismatics_utils-2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3474,20 +3474,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6956/294/numismatics_utils-1.1.jar",
-                    "id": "6956294",
+                    "url": "https://edge.forgecdn.net/files/7175/842/numismatics_utils-2.0.jar",
+                    "id": "7175842",
                     "parent_id": "1339392",
                     "hashes": {
-                        "sha1": "92e30cdac558c009908649bca631f16e4f1cfcf1",
-                        "md5": "a9f7cbbe6785cec89abd853e6410902d"
+                        "sha1": "8ebbad11ab62ee94989c53bd555b1ac4d350df56",
+                        "md5": "77436465bd7ca903c82d985a3467d610"
                     },
                     "required_dependencies": [
-                        "328085",
                         "889722",
+                        "328085",
                         "309927"
                     ],
-                    "size": 37051,
-                    "date_published": "2025-09-02T16:10:15.077Z"
+                    "size": 40849,
+                    "date_published": "2025-11-01T22:47:16.623Z"
                 }
             ]
         },

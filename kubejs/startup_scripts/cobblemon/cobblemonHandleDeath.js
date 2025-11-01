@@ -21,7 +21,7 @@ global.handleCobblemonDefeat = (e) => {
       loserLevel = element.originalPokemon.getLevel();
     });
   });
-  if (winningPlayer) {
+  if (winningPlayer && winningPlayer.isPlayer()) {
     let reward = Math.round(
       loserLevel * 4 * getTrainerLevel(winningPlayer) * Math.random() * (1.5 - 0.5) + 0.5
     );

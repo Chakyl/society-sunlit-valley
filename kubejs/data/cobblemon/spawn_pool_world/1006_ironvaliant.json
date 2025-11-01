@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "ironvaliant-1",
+      "pokemon": "ironvaliant",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "canSeeSky": false,
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#cobblemon:is_magical"],
+        "neededNearbyBlocks": ["minecraft:lightning_rod"]
+      }
+    },
+    {
+      "id": "ironvaliant-2",
+      "pokemon": "ironvaliant",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "dimensions": ["minecraft:the_end"],
+        "biomes": ["#minecraft:is_end"]
+      }
+    }
+  ]
+}

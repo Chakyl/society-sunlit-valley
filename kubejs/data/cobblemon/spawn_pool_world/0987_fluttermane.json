@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "fluttermane-1",
+      "pokemon": "fluttermane",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:umbra_barrens"]
+      },
+      "timeRange": "night"
+    },
+    {
+      "id": "fluttermane-2",
+      "pokemon": "fluttermane",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:blackstone_caves"]
+      },
+      "timeRange": "night"
+    }
+  ]
+}

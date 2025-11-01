@@ -1,6 +1,18 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cobblemon:red_apricorn_seed",
+    "item:society:seed_maker",
+    "item:society:ancient_cog",
+    "item:minecraft:copper_ingot",
+    "item:minecraft:copper_block",
+    "item:create:raw_zinc",
+    "item:create:zinc_ingot",
+    {
+      "type": "item",
+      "id": "cobblemon:poke_ball",
+      "amount": 62
+    },
     "item:cobble_workers:gardening_station",
     "item:cobble_workers:mystery_mine",
     "item:cobble_workers:craft_station",
@@ -236,7 +248,6 @@
     "item:cobblemon:great_ball",
     "item:cobblemon:premier_ball",
     "item:cobblemon:slate_ball",
-    "item:cobblemon:poke_ball",
     "item:create_klinks_n_klangs:great_ball_stencil",
     "item:create_klinks_n_klangs:unpainted_ultra_ball",
     "item:create_klinks_n_klangs:ultra_ball_stencil",
@@ -359,7 +370,6 @@
     "item:create_klinks_n_klangs:nest_ball_stencil",
     "item:create_klinks_n_klangs:unpainted_nest_ball",
     "item:minecraft:fletching_table",
-    "item:society:ancient_cog",
     "item:cobblemon:restoration_tank",
     "item:cobblemon:fossil_analyzer",
     "item:cobblemon:monitor",
@@ -790,12 +800,6 @@
       "amount": 3
     },
     "item:society:recycling_machine",
-    {
-      "type": "item",
-      "id": "create:raw_zinc",
-      "amount": 23
-    },
-    "item:create:zinc_ingot",
     "item:farmersdelight:basket",
     {
       "type": "item",
@@ -1318,7 +1322,6 @@
     "item:cobblemon:cornn_berry",
     "item:candlelight:cooking_pot",
     "item:farmersdelight:cooking_pot",
-    "item:society:seed_maker",
     "item:dew_drop_farmland_growth:garden_pot",
     {
       "type": "item",
@@ -1755,11 +1758,6 @@
     },
     {
       "type": "item",
-      "id": "minecraft:copper_block",
-      "amount": 4
-    },
-    {
-      "type": "item",
       "id": "windswept:weathered_pine_log",
       "amount": 16
     },
@@ -1827,8 +1825,7 @@
     "item:cobblemon:sail_fossil",
     "item:cobblemon:cover_fossil",
     "item:betterarcheology:ocelot_fossil",
-    "item:betterarcheology:wolf_fossil_body",
-    "item:betterarcheology:wolf_fossil_head"
+    "item:betterarcheology:wolf_fossil_body"
   ],
   "craft_history": [
     "minecraft:barrel",
