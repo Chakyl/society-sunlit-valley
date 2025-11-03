@@ -334,12 +334,15 @@ const handleMagicHarvest = (name, data, e) => {
     global.addItemCooldown(player, item, 10);
   }
 };
-
-ItemEvents.entityInteracted((e) => {
-  const { hand, player, item, target, level, server } = e;
+global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   const pet = global.checkEntityTag(target, "society:pet_animal");
-  if (hand == "OFF_HAND") return;
-  if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
+  const eventData = {
+    player: player,
+    item: item,
+    target: target,
+    level: level,
+    server: server,
+  };
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
       const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
@@ -359,14 +362,14 @@ ItemEvents.entityInteracted((e) => {
       const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
       player.swing();
 
-      handlePet(name, data, day, peckish, hungry, e);
+      handlePet(name, data, day, peckish, hungry, eventData);
       if (pet) return;
-      if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, e);
+      if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, eventData);
       if (
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {
-        handleMilk(name, data, day, hungry, e);
+        handleMilk(name, data, day, hungry, eventData);
       }
       if (
         player.stages.has("biomancer") &&
@@ -518,7 +521,7 @@ ItemEvents.entityInteracted((e) => {
         global.addItemCooldown(player, item, 4);
       }
       if (item === "society:magic_shears") {
-        handleMagicHarvest(name, data, e);
+        handleMagicHarvest(name, data, eventData);
       }
       if (affection > 1075) {
         // Cap affection at 1075
@@ -527,4 +530,8 @@ ItemEvents.entityInteracted((e) => {
       if (affection < 0) data.affection = 0;
     }
   });
+};
+ItemEvents.entityInteracted((e) => {
+  const { hand, player, item, target, level, server } = e;
+  global.handleHusbandryBase(hand, player, item, target, level, server);
 });
