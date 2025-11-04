@@ -14,16 +14,17 @@ const biomeAirTypeMap = new Map([
 
 const scheduleFunction = (level, pos, server, rockType) => {
   server.scheduleInTicks(5, () => {
-    if (level.getBlock(pos) == "minecraft:air") {
+    let newBlock = level.getBlock(pos);
+    if (newBlock == "minecraft:air") {
       let toggleBit =
         level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
-      level.getBlock(pos).set("society:cavern_air", {
+      newBlock.set("society:cavern_air", {
         type: String(rockType),
         chunkbit: toggleBit.toString(),
       });
-      server.scheduleInTicks(2400, () => {
-        global.handleSkullCavernRegen(server, level, level.getBlock(pos));
-      });
+      // server.scheduleInTicks(2400, () => {
+      //   global.handleSkullCavernRegen(server, level, level.getBlock(pos));
+      // });
     }
   });
 };
@@ -122,12 +123,7 @@ BlockEvents.broken(
     const { level, block, server } = e;
     const unplacablePos = block.getPos();
     if (level.dimension === "society:skull_cavern") {
-      scheduleUnplaceableRegenFunction(
-        level,
-        unplacablePos.immutable(),
-        server,
-        block.getId()
-      );
+      scheduleUnplaceableRegenFunction(level, unplacablePos.immutable(), server, block.getId());
     }
   }
 );

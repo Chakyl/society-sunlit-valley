@@ -1,4 +1,7 @@
 console.info("[SOCIETY] animalBeds.js loaded");
+
+global.animalBeds = ["coop", "deluxe_coop", "luxury_coop", "barn", "deluxe_barn", "luxury_barn"];
+
 const sleepParticles = (level, x, y, z) => {
   level.spawnParticles(
     "species:snoring",
@@ -26,10 +29,11 @@ const sleepParticles = (level, x, y, z) => {
   );
 };
 
-global.bindNearestAnimalToBed = (level, block, player, server) => {
+global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
+  console.log(`society:${bedType}_bed`);
   let nearbyFarmAnimals = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
-    .filter((scanEntity) => global.checkEntityTag(scanEntity, "society:husbandry_animal"));
+    .filter((scanEntity) => global.checkEntityTag(scanEntity, `society:${bedType}_bed`));
   let nbt = block.getEntityData();
   const { boundToAnimal } = nbt.data;
 
@@ -69,97 +73,94 @@ global.bindNearestAnimalToBed = (level, block, player, server) => {
   }
 };
 
-global.runAnimalBed = (blockEntity) => {
+global.runAnimalBed = (blockEntity, bedType) => {
   const { block, level } = blockEntity;
   let nbt = block.getEntityData();
   const { boundToAnimal, animalInside, entity, entityID } = nbt.data;
 
   if (!boundToAnimal) {
-    global.bindNearestAnimalToBed(level, block);
+    global.bindNearestAnimalToBed(level, block, bedType);
   } else {
     let nearbyPlayers = level
       .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
       .filter((scanEntity) => scanEntity.isPlayer());
-    if (!level.hasNeighborSignal(block.pos)) {
-      if (nearbyPlayers.length > 0 && animalInside) {
-        let animal = level.createEntity(entityID.toString());
-        entity.Pos[0] = Number(block.getX());
-        entity.Pos[1] = Number(block.getY() + 0.2);
-        entity.Pos[2] = Number(block.getZ());
-        animal.nbt = entity.copy();
-        animal.spawn();
-        nbt.merge({
-          data: {
-            animalInside: false,
-          },
+    if (!level.hasNeighborSignal(block.pos) && nearbyPlayers.length > 0 && animalInside) {
+      let animal = level.createEntity(entityID.toString());
+      entity.Pos[0] = Number(block.getX());
+      entity.Pos[1] = Number(block.getY() + 0.2);
+      entity.Pos[2] = Number(block.getZ());
+      animal.nbt = entity.copy();
+      animal.spawn();
+      nbt.merge({
+        data: {
+          animalInside: false,
+        },
+      });
+    } else if (nearbyPlayers.length == 0 && !animalInside) {
+      let nearbyFarmAnimals = level
+        .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
+        .filter((scanEntity) => global.checkEntityTag(scanEntity, `society:${bedType}_bed`));
+
+      console.log(nearbyFarmAnimals.length);
+      if (boundToAnimal) {
+        let foundBoundAnimal = false;
+        nearbyFarmAnimals.forEach((animal) => {
+          if (
+            !foundBoundAnimal &&
+            animal.getUuid().toString().equals(entity.getUUID("UUID").toString())
+          ) {
+            sleepParticles(level, animal.x, animal.y, animal.z);
+            nbt.merge({
+              data: {
+                entity: animal.getNbt(),
+                animalInside: true,
+              },
+            });
+            animal.setRemoved("unloaded_to_chunk");
+            block.setEntityData(nbt);
+            foundBoundAnimal = true;
+            console.log("Sleeping!");
+          }
         });
-        console.log("Waking up!");
-      } else if (nearbyPlayers.length == 0 && !animalInside) {
-        console.log("attempting sleep");
-        let nearbyFarmAnimals = level
-          .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
-          .filter((scanEntity) => global.checkEntityTag(scanEntity, "society:husbandry_animal"));
-
-        console.log(nearbyFarmAnimals.length);
-        if (boundToAnimal) {
-          let foundBoundAnimal = false;
-
-          nearbyFarmAnimals.forEach((animal) => {
-            console.log(animal.getUuid().toString());
-            console.log(entity.getUUID("UUID").toString());
-            console.log("Matches: " + animal.getUuid().toString().equals(entity.getUUID("UUID").toString()));
-            if (!foundBoundAnimal && animal.getUuid().toString().equals(entity.getUUID("UUID").toString())) {
-              sleepParticles(level, animal.x, animal.y, animal.z);
-              nbt.merge({
-                data: {
-                  entity: animal.getNbt(),
-                  animalInside: true,
-                },
-              });
-              animal.setRemoved("unloaded_to_chunk");
-              block.setEntityData(nbt);
-              foundBoundAnimal = true;
-              console.log("Sleeping!");
-            }
-          });
-        }
       }
-
-      // block.setEntityData(nbt);
     }
+
+    // block.setEntityData(nbt);
   }
 };
 
-StartupEvents.registry("block", (event) => {
-  event
-    .create("society:coop_bed", "cardinal")
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:mineable/axe")
-    .tagBlock("minecraft:needs_stone_tool")
-    .defaultCutout()
-    .item((item) => {
-      item.tooltip(
-        Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
-      );
-      item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.gold("Upgrade with Magic Shears to collect drops."));
-      item.modelJson({
-        parent: "society:block/artisan_hopper",
+global.animalBeds.forEach((bed) => {
+  StartupEvents.registry("block", (event) => {
+    event
+      .create(`society:${bed}_bed`, "cardinal")
+      .tagBlock("minecraft:mineable/pickaxe")
+      .tagBlock("minecraft:mineable/axe")
+      .tagBlock("minecraft:needs_stone_tool")
+      .box(0, 0, 0, 16, 4, 16)
+      .defaultCutout()
+      .item((item) => {
+        item.tooltip(
+          Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
+        );
+        item.tooltip(Text.gray("Uses the skills of player that places it."));
+        item.tooltip(Text.gold("Upgrade with Magic Shears to collect drops."));
+        item.modelJson({
+          parent: `society:block/${bed}_bed`,
+        });
+      })
+      .model(`society:block/${bed}_bed`)
+      .blockEntity((blockInfo) => {
+        blockInfo.enableSync();
+        blockInfo.initialData({
+          boundToAnimal: false,
+          animalInside: false,
+          persistentData: undefined,
+          entity: undefined,
+          entityID: undefined,
+        });
+        blockInfo.serverTick(200, 0, (entity) => {
+          global.runAnimalBed(entity, bed);
+        });
       });
-    })
-    .model("society:block/artisan_hopper")
-    .blockEntity((blockInfo) => {
-      blockInfo.enableSync();
-      blockInfo.initialData({
-        boundToAnimal: false,
-        animalInside: false,
-        persistentData: undefined,
-        entity: undefined,
-        entityID: undefined,
-      });
-      blockInfo.serverTick(200, 0, (entity) => {
-        global.runAnimalBed(entity);
-      });
-    })
-    .lightLevel(15);
+  });
 });

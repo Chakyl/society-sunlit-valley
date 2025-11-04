@@ -1,19 +1,24 @@
+//priority: -1
 global.renderBedAnimal = (renderer, context) => {
-  var lightLevel = LevelRenderer.getLightColor(
+  let lightLevel = LevelRenderer.getLightColor(
     context.blockEntity.level,
     context.blockEntityJS.blockPos.above()
   );
-  var poseStack = context.poseStack;
+  let poseStack = context.poseStack;
   poseStack.pushPose();
-  poseStack.translate(0.5, 0.5, 0.5);
-  poseStack.scale(5,5,5)
+  poseStack.translate(0.5, -0.26, 0.5);
+  poseStack.scale(4, 4, 4);
   if (context.blockEntity.block) {
     const nbt = context.blockEntity.block.getEntityData();
     if (nbt) {
       const { entityID, animalInside } = nbt.data;
       if (animalInside && entityID) {
+        const splitAnimal = entityID.split(":");
         RenderJSWorldRender.renderStatic(
-          Item.of("trofers:large_plate", `{BlockEntityTag:{Trophy:"trofers:blaze"}}`),
+          Item.of(
+            "trofers:large_plate",
+            `{BlockEntityTag:{Trophy:"trofers:bed/${splitAnimal[0]}_${splitAnimal[1]}"}}`
+          ),
           "ground",
           lightLevel,
           context.packedOverlay,
@@ -27,12 +32,15 @@ global.renderBedAnimal = (renderer, context) => {
   }
   poseStack.popPose();
 };
-ClientEvents.init((event) => {
-  event.registerBlockEntityRenderer("society:coop_bed", (c) =>
-    RenderJSBlockEntityRenderer.create(c)
-      .setShouldRenderOffScreen((b) => true)
-      .setCustomRender((renderer, context) => {
-        global.renderBedAnimal(renderer, context);
-      })
-  );
+
+global.animalBeds.forEach((bed) => {
+  ClientEvents.init((event) => {
+    event.registerBlockEntityRenderer(`society:${bed}_bed`, (c) =>
+      RenderJSBlockEntityRenderer.create(c)
+        .setShouldRenderOffScreen((b) => true)
+        .setCustomRender((renderer, context) => {
+          global.renderBedAnimal(renderer, context);
+        })
+    );
+  });
 });
