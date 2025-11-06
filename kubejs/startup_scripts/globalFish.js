@@ -26,7 +26,7 @@ global.springRiver = [
   { fish: "aquaculture:pink_salmon", weight: 9, night: true },
   { fish: "aquaculture:catfish", weight: 8, night: true, requiresRain: true },
   { fish: "aquaculture:bayad", weight: 5, night: true, requiresRain: true },
-  { fish: "unusualfishmod:raw_blind_sailfin", weight: 3 },
+  { fish: "unusualfishmod:raw_blind_sailfin", weight: 5 },
 ];
 global.springFresh = [
   { fish: "aquaculture:minnow", weight: 11 },
@@ -136,7 +136,7 @@ global.autumnFresh = [
   { fish: "aquaculture:perch", weight: 9 },
   { fish: "aquaculture:carp", weight: 10 },
   { fish: "aquaculture:gar", weight: 5, requiresRain: true },
-  { fish: "unusualfishmod:raw_bark_angelfish", weight: 2 },
+  { fish: "unusualfishmod:raw_bark_angelfish", weight: 4 },
   {
     fish: "unusualfishmod:raw_amber_goby",
     weight: 1,
@@ -267,7 +267,7 @@ global.handleFishHarvest = (block, player, server, basket) => {
     valid: valid,
     mature: false,
     upgraded: upgraded,
-    quest: quest
+    quest: quest,
   });
   if (basket) return harvestOutputs;
   harvestOutputs.forEach((item) => {
@@ -278,14 +278,15 @@ global.handleFishHarvest = (block, player, server, basket) => {
 global.handleFishExtraction = (block, player, server) => {
   const { facing, valid, mature, upgraded, quest } = global.getPondProperties(block);
   let nbt = block.getEntityData();
-  const { type, population } = nbt.data;
+  const { type, population, non_native_fish } = nbt.data;
+  let naturalPopulation = population - non_native_fish;
   let result;
-  let resultCount = player.stages.has("mitosis") ? 2 : 1;
+  let resultCount = player.stages.has("mitosis") && naturalPopulation > 0 ? 2 : 1;
   let quality = 0;
-  if (player.stages.has("bullfish_jobs") && Number(population) > 3) {
+  if (player.stages.has("bullfish_jobs") && Number(naturalPopulation) > 3) {
     quality = Math.floor((Number(population) - 3) / 2);
   }
-  if (player.stages.has("hot_hands")) {
+  if (player.stages.has("hot_hands") && naturalPopulation > 0) {
     server.runCommandSilent(
       `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`
     );

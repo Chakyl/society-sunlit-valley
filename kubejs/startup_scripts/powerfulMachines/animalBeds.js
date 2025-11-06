@@ -2,6 +2,83 @@ console.info("[SOCIETY] animalBeds.js loaded");
 
 global.animalBeds = ["coop", "deluxe_coop", "luxury_coop", "barn", "deluxe_barn", "luxury_barn"];
 
+global.bedDefinitions = new Map([
+  [
+    "barn",
+    [
+      "minecraft:cow",
+      "minecraft:sheep",
+      "snowpig:snow_pig",
+      "meadow:wooly_sheep",
+      "snuffles:snuffle",
+      "wildernature:deer",
+      "atmospheric:cochineal",
+    ],
+  ],
+  [
+    "deluxe_barn",
+    [
+      "minecraft:pig",
+      "meadow:wooly_cow",
+      "wildernature:bison",
+      "wildernature:raccoon",
+      "crittersandcompanions:red_panda",
+      "wildernature:minisheep",
+      "minecraft:panda",
+      "minecraft:mooshroom",
+      "meadow:water_buffalo",
+    ],
+  ],
+  [
+    "luxury_barn",
+    [
+      "minecraft:goat",
+      "buzzier_bees:moobloom",
+      "species:mammutilation",
+      "species:goober",
+      "farmlife:domestic_tribull",
+      "windswept:frostbiter",
+    ],
+  ],
+  [
+    "coop",
+    [
+      "minecraft:chicken",
+      "untitledduckmod:duck",
+      "minecraft:frog",
+      "minecraft:squid",
+      "minecraft:glow_squid",
+      "autumnity:snail",
+    ],
+  ],
+  [
+    "deluxe_coop",
+    ["untitledduckmod:goose", "minecraft:rabbit", "wildernature:squirrel", "autumnity:turkey"],
+  ],
+  [
+    "luxury_coop",
+    [
+      "species:wraptor",
+      "etcetera:chapple",
+      "wildernature:flamingo",
+      "wildernature:penguin",
+      "farmlife:galliraptor",
+    ],
+  ],
+]);
+
+global.getAnimalBedType = (animal) => {
+  let foundBed;
+  Array.from(global.bedDefinitions.keys()).forEach((element) => {
+    global.bedDefinitions.get(element).forEach((bedAnimal) => {
+      if (animal.equals(bedAnimal)) {
+        foundBed = element;
+      }
+    });
+  });
+  return global.formatName(foundBed);
+};
+
 const sleepParticles = (level, x, y, z) => {
   level.spawnParticles(
     "species:snoring",
@@ -30,7 +107,6 @@ const sleepParticles = (level, x, y, z) => {
 };
 
 global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
-  console.log(`society:${bedType}_bed`);
   let nearbyFarmAnimals = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
     .filter((scanEntity) => global.checkEntityTag(scanEntity, `society:${bedType}_bed`));
@@ -46,9 +122,13 @@ global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
         sleepParticles(level, animal.x, animal.y, animal.z);
         const { x, y, z } = block.getPos();
         data.boundBed = { x: x, y: y, z: z };
+        let animalNbt = animal.getNbt();
+        animalNbt.Pos[0] = Number(block.getX());
+        animalNbt.Pos[1] = Number(block.getY() + 0.2);
+        animalNbt.Pos[2] = Number(block.getZ());
         nbt.merge({
           data: {
-            entity: animal.getNbt(),
+            entity: animalNbt,
             entityID: animal.type,
             persistentData: data,
             boundToAnimal: true,
@@ -79,29 +159,29 @@ global.runAnimalBed = (blockEntity, bedType) => {
   const { boundToAnimal, animalInside, entity, entityID } = nbt.data;
 
   if (!boundToAnimal) {
-    global.bindNearestAnimalToBed(level, block, bedType);
+    global.bindNearestAnimalToBed(level, block, undefined, undefined, bedType);
   } else {
     let nearbyPlayers = level
       .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
       .filter((scanEntity) => scanEntity.isPlayer());
     if (!level.hasNeighborSignal(block.pos) && nearbyPlayers.length > 0 && animalInside) {
       let animal = level.createEntity(entityID.toString());
-      entity.Pos[0] = Number(block.getX());
-      entity.Pos[1] = Number(block.getY() + 0.2);
-      entity.Pos[2] = Number(block.getZ());
       animal.nbt = entity.copy();
+      animal.nbt.Pos[0] = Number(block.getX());
+      animal.nbt.Pos[1] = Number(block.getY() + 0.2);
+      animal.nbt.Pos[2] = Number(block.getZ());
       animal.spawn();
       nbt.merge({
         data: {
           animalInside: false,
         },
       });
-    } else if (nearbyPlayers.length == 0 && !animalInside) {
+      block.setEntityData(nbt);
+    } else if ((level.hasNeighborSignal(block.pos) || nearbyPlayers.length == 0) && !animalInside) {
       let nearbyFarmAnimals = level
-        .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
+        .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
         .filter((scanEntity) => global.checkEntityTag(scanEntity, `society:${bedType}_bed`));
 
-      console.log(nearbyFarmAnimals.length);
       if (boundToAnimal) {
         let foundBoundAnimal = false;
         nearbyFarmAnimals.forEach((animal) => {
@@ -110,6 +190,10 @@ global.runAnimalBed = (blockEntity, bedType) => {
             animal.getUuid().toString().equals(entity.getUUID("UUID").toString())
           ) {
             sleepParticles(level, animal.x, animal.y, animal.z);
+            let animalNbt = animal.getNbt();
+            animalNbt.Pos[0] = Number(block.getX());
+            animalNbt.Pos[1] = Number(block.getY() + 0.2);
+            animalNbt.Pos[2] = Number(block.getZ());
             nbt.merge({
               data: {
                 entity: animal.getNbt(),
@@ -119,13 +203,10 @@ global.runAnimalBed = (blockEntity, bedType) => {
             animal.setRemoved("unloaded_to_chunk");
             block.setEntityData(nbt);
             foundBoundAnimal = true;
-            console.log("Sleeping!");
           }
         });
       }
     }
-
-    // block.setEntityData(nbt);
   }
 };
 
@@ -139,11 +220,6 @@ global.animalBeds.forEach((bed) => {
       .box(0, 0, 0, 16, 4, 16)
       .defaultCutout()
       .item((item) => {
-        item.tooltip(
-          Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
-        );
-        item.tooltip(Text.gray("Uses the skills of player that places it."));
-        item.tooltip(Text.gold("Upgrade with Magic Shears to collect drops."));
         item.modelJson({
           parent: `society:block/${bed}_bed`,
         });

@@ -63,7 +63,7 @@ ServerEvents.recipes((e) => {
       item: "society:mexican_street_corn",
     },
   });
-  e.shapeless("6x numismatics:neptunium_coin", ["moreminecarts:chunk_loader"]);
+  e.shapeless("minecraft:magenta_dye", ["windswept:lavender"]);
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);

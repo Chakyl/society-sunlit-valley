@@ -15,6 +15,7 @@ global.handleFishInsertion = (clickEvent) => {
   const { item, block, player, level } = clickEvent;
   const { facing, upgraded } = global.getPondProperties(block);
   let nbt = block.getEntityData();
+  const { population, max_population, non_native_fish } = nbt.data;
   if (nbt.data.type.equals("") && global.fishPondDefinitions.has(`${item.id}`)) {
     successParticles(level, block);
     block.set(block.id, {
@@ -24,7 +25,26 @@ global.handleFishInsertion = (clickEvent) => {
       upgraded: upgraded,
       quest: false,
     });
-    nbt.merge({ data: { type: item.id, quest_id: 0, population: 0, max_population: 3 } });
+    nbt.merge({ data: { type: item.id, quest_id: 0, population: 1, max_population: 3, non_native_fish: 1 } });
+    block.setEntityData(nbt);
+    if (!player.isCreative()) item.count--;
+  } else if (population < max_population) {
+    server.runCommandSilent(
+      `playsound minecraft:entity.player.splash block @a ${block.x} ${block.y} ${block.z}`
+    );
+    level.spawnParticles(
+      "minecraft:splash",
+      true,
+      block.x + 0.5,
+      block.y + 0.9,
+      block.z + 0.5,
+      0.1 * rnd(1, 4),
+      0.1 * rnd(1, 4),
+      0.1 * rnd(1, 4),
+      10,
+      0.1
+    );
+    nbt.merge({ data: { population: increaseStage(population), non_native_fish: increaseStage(non_native_fish)  } });
     block.setEntityData(nbt);
     if (!player.isCreative()) item.count--;
   }
@@ -34,7 +54,7 @@ global.handleQuestSubmission = (type, clickEvent) => {
   const { item, block, player, level } = clickEvent;
   const { facing, valid, mature, upgraded } = global.getPondProperties(block);
   let nbt = block.getEntityData();
-  const { population, max_population, quest_id } = nbt.data;
+  const { max_population, quest_id } = nbt.data;
   const questContent = getRequestedItems(type, Number(max_population))[quest_id];
   if (item && item == questContent.item) {
     if (item.count >= questContent.count) {
@@ -80,7 +100,7 @@ global.handleFishPondRightClick = (clickEvent) => {
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
     let nbt = block.getEntityData();
-    const { type, population, max_population, quest_id } = nbt.data;
+    const { type, population, quest_id } = nbt.data;
     if (upgraded === false && item === "society:sea_biscut") {
       if (!player.isCreative()) item.count--;
       level.spawnParticles(
@@ -166,7 +186,7 @@ StartupEvents.registry("block", (event) => {
       global.handleFishPondRightClick(click);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ type: "", quest_id: 0, population: 0, max_population: 3 });
+      blockInfo.initialData({ type: "", quest_id: 0, population: 0, max_population: 3, non_native_fish: 0 });
       blockInfo.serverTick(fishPondTickRate, 0, (entity) => {
         global.handleFishPondTick(entity);
       });
