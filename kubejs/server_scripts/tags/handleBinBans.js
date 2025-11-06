@@ -29,6 +29,8 @@ ServerEvents.tags("item", (e) => {
     "botania_seeds",
     "farmingforblockheads",
     "numismatics",
+    "cobblemon",
+    "create_klinks_n_klangs",
   ];
   modBans.forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);
@@ -36,8 +38,8 @@ ServerEvents.tags("item", (e) => {
   e.add("furniture:trash_bag_blacklist", "#society:loot_furniture");
   e.add("furniture:trash_bag_blacklist", "#society:dish");
   const itemBans = [
-    "wildernature:stylin_purple_hat", 
-    "beachparty:crocs", 
+    "wildernature:stylin_purple_hat",
+    "beachparty:crocs",
     "minecraft:bedrock",
     "moblassos:creative_lasso",
     "botania:corporea_spark_creative",

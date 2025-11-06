@@ -1,6 +1,47 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cobblemon:great_ball",
+    "item:cobblemon:ancient_great_ball",
+    "item:create_klinks_n_klangs:blank_ball",
+    "item:cobblemon:citrine_ball",
+    "item:cobblemon:lure_ball",
+    "item:cobblemon:fast_ball",
+    "item:cobblemon:premier_ball",
+    "item:cobblemon:safari_ball",
+    "item:cobblemon:cherish_ball",
+    "item:cobblemon:quick_ball",
+    "item:cobblemon:ancient_gigaton_ball",
+    "item:cobblemon:ancient_jet_ball",
+    "item:cobblemon:ancient_feather_ball",
+    "item:cobblemon:ancient_leaden_ball",
+    "item:cobblemon:ancient_heavy_ball",
+    "item:cobblemon:ancient_wing_ball",
+    "item:cobblemon:ancient_ivory_ball",
+    "item:cobblemon:ancient_ultra_ball",
+    "item:cobblemon:slate_ball",
+    "item:cobblemon:azure_ball",
+    "item:cobblemon:verdant_ball",
+    "item:cobblemon:roseate_ball",
+    "item:cobblemon:poke_ball",
+    "item:sunlit_cobblemon:silph_scope",
+    {
+      "type": "item",
+      "id": "society:aged_ancient_cider",
+      "amount": 64
+    },
+    "item:sunlit_cobblemon:poke_genes",
+    {
+      "type": "item",
+      "id": "society:ancient_juice",
+      "amount": 64
+    },
+    "item:minecraft:mutton",
+    "item:society:friendship_necklace",
+    "item:cobblemon:pasture",
+    "item:cobblemon:ancient_poke_ball",
+    "item:minecraft:blackstone",
+    "#item:cobble_workers:uncommon_berries",
     "item:cobblemon:red_apricorn_seed",
     "item:society:seed_maker",
     "item:society:ancient_cog",
@@ -8,11 +49,6 @@
     "item:minecraft:copper_block",
     "item:create:raw_zinc",
     "item:create:zinc_ingot",
-    {
-      "type": "item",
-      "id": "cobblemon:poke_ball",
-      "amount": 62
-    },
     "item:cobble_workers:gardening_station",
     "item:cobble_workers:mystery_mine",
     "item:cobble_workers:craft_station",
@@ -24,7 +60,6 @@
     "item:minecraft:cod",
     "item:minecraft:acacia_sapling",
     "item:etcetera:raw_bismuth",
-    "item:sunlit_cobblemon:poke_genes",
     "item:society:battery",
     "item:atmospheric:aspen_sapling",
     "item:society:smoked_tambaqui",
@@ -95,19 +130,12 @@
     "item:cobblemon:steel_gem",
     "item:cobblemon:net_ball",
     "item:cobblemon:dive_ball",
-    "item:cobblemon:lure_ball",
     "item:sunlit_cobblemon:greater_tm_pack",
     "item:fightorflight:pokestaff",
     "item:fightorflight:oran_lucky_egg",
     "item:society:cornucopia",
     "item:simpletms:tm_blank",
     "item:sunlit_cobblemon:fairy_heart",
-    {
-      "type": "item",
-      "id": "cobblemon:pasture",
-      "amount": 64
-    },
-    "item:society:friendship_necklace",
     "item:cobblemon:dusk_stone",
     {
       "type": "item",
@@ -133,7 +161,6 @@
     },
     "item:cobblemon:timer_ball",
     "item:cobblemon:friend_ball",
-    "item:cobblemon:quick_ball",
     "item:cobblemon:dusk_ball",
     {
       "type": "item",
@@ -141,11 +168,6 @@
       "amount": 4
     },
     "item:society:butterfly_amber",
-    {
-      "type": "item",
-      "id": "cobblemon:safari_ball",
-      "amount": 64
-    },
     "item:cobblemon:nest_ball",
     "item:cobblemon:level_ball",
     "item:cobblemon:luxury_ball",
@@ -235,7 +257,6 @@
     "item:cobblemon:ancient_roseate_ball",
     "item:cobblemon:ancient_verdant_ball",
     "item:cobblemon:ancient_citrine_ball",
-    "item:cobblemon:ancient_poke_ball",
     "item:cobblemon:master_ball",
     "item:cobblemon:beast_ball",
     "item:cobblemon:dream_ball",
@@ -243,11 +264,7 @@
     "item:cobblemon:sport_ball",
     "item:cobblemon:moon_ball",
     "item:cobblemon:heavy_ball",
-    "item:cobblemon:fast_ball",
     "item:cobblemon:ultra_ball",
-    "item:cobblemon:great_ball",
-    "item:cobblemon:premier_ball",
-    "item:cobblemon:slate_ball",
     "item:create_klinks_n_klangs:great_ball_stencil",
     "item:create_klinks_n_klangs:unpainted_ultra_ball",
     "item:create_klinks_n_klangs:ultra_ball_stencil",
@@ -296,7 +313,6 @@
     "item:create_klinks_n_klangs:heavy_ball_stencil",
     "item:create_klinks_n_klangs:heal_ball_stencil",
     "item:create_klinks_n_klangs:unpainted_poke_ball",
-    "item:create_klinks_n_klangs:blank_ball",
     "item:create_klinks_n_klangs:unfinished_ball{Damage:0}",
     "item:create_klinks_n_klangs:poke_ball_button",
     "item:create_klinks_n_klangs:ball_lid",
@@ -374,8 +390,6 @@
     "item:cobblemon:fossil_analyzer",
     "item:cobblemon:monitor",
     "item:society:fish_pond",
-    "item:cobblemon:ancient_gigaton_ball",
-    "item:cobblemon:ancient_leaden_ball",
     "item:cobblemon:white_herb",
     "item:cobblemon:energy_root",
     "item:cobblemon:red_apricorn",
@@ -385,7 +399,6 @@
     "item:cobblemon:pink_mint_seeds",
     "item:cobblemon:vivichoke_seeds",
     "item:cobblemon:power_herb",
-    "item:cobblemon:ancient_feather_ball",
     "item:cobblemon:passho_berry",
     "item:cobblemon:sky_tumblestone_cluster",
     "item:cobblemon:water_gem",
@@ -420,7 +433,6 @@
     "item:oreganized:silver_ingot",
     "item:society:ribbit_gadget",
     "item:society:magic_bulb",
-    "item:society:aged_ancient_cider",
     "item:society:aged_starshell_turtle_roe",
     "item:botania:rune_wrath",
     "item:unusualfishmod:thunderous_shell{Damage:0}",
@@ -578,7 +590,6 @@
     "item:cobblemon:dawn_stone",
     "item:numismatics:prismatic_coin",
     "item:society:production_science_pack",
-    "item:society:ancient_juice",
     "item:cobblemon:thunder_stone",
     "item:sunlit_cobblemon:master_poke_bobber",
     "item:numismatics:neptunium_coin",
@@ -1369,31 +1380,6 @@
       "id": "cobblemon:ancient_slate_ball",
       "amount": 64
     },
-    {
-      "type": "item",
-      "id": "cobblemon:ancient_great_ball",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:ancient_ultra_ball",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:ancient_heavy_ball",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:ancient_jet_ball",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:ancient_wing_ball",
-      "amount": 64
-    },
     "item:farm_and_charm:oatmeal_with_strawberries",
     "item:farm_and_charm:wild_strawberries",
     "item:cobblemon:strawberry_sweet",
@@ -1421,11 +1407,6 @@
     "item:society:modern_catalog",
     "item:society:deepslate_sparkstone_ore",
     "item:candlelight:love_letter_open",
-    {
-      "type": "item",
-      "id": "cobblemon:roseate_ball",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "society:river_jelly",
@@ -1529,7 +1510,6 @@
     "item:cobblemon:bright_powder",
     "item:cobblemon:choice_specs",
     "item:society:maple_syrup",
-    "item:cobblemon:citrine_ball",
     "item:cobblemon:choice_band",
     "item:cobblemon:choice_scarf",
     {
@@ -1813,19 +1793,7 @@
     "item:minecraft:jungle_log",
     "item:cobblemon:ground_gem",
     "item:cobblemon:sky_tumblestone",
-    "item:cobblemon:black_tumblestone",
-    {
-      "type": "item",
-      "id": "cobblemon:tumblestone",
-      "amount": 64
-    },
-    "item:minecraft:large_amethyst_bud",
-    "item:cobblemon:dome_fossil",
-    "item:cobblemon:fossilized_fish",
-    "item:cobblemon:sail_fossil",
-    "item:cobblemon:cover_fossil",
-    "item:betterarcheology:ocelot_fossil",
-    "item:betterarcheology:wolf_fossil_body"
+    "item:cobblemon:black_tumblestone"
   ],
   "craft_history": [
     "minecraft:barrel",

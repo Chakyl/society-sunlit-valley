@@ -6,7 +6,6 @@ const getTrainerLevel = (player) => {
     if (player.stages.has(`trainer_lvl_${index}`)) trainerLevel++;
     else break;
   }
-  console.log(trainerLevel);
   return trainerLevel;
 };
 
@@ -22,9 +21,8 @@ global.handleCobblemonDefeat = (e) => {
     });
   });
   if (winningPlayer && winningPlayer.isPlayer()) {
-    let reward = Math.round(
-      loserLevel * 4 * getTrainerLevel(winningPlayer) * Math.random() * (1.5 - 0.5) + 0.5
-    );
+    let variance = Math.random() * (1.5 - 0.5) + 0.5;
+    let reward = Math.round(loserLevel * 4 * getTrainerLevel(winningPlayer) * variance);
     let account = global.GLOBAL_BANK.getAccount(winningPlayer.getUuid());
     if (account && account.getBalance() + reward < 2147483000) {
       account.deposit(reward);

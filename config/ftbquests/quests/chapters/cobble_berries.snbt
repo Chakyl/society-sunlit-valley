@@ -566,7 +566,7 @@
 				item: "cobblemon:kee_berry"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: 10.5d
 		}
 		{
@@ -576,7 +576,7 @@
 				item: "cobblemon:maranga_berry"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.5d
 			y: 10.5d
 		}
 		{
@@ -586,7 +586,7 @@
 				item: "cobblemon:custap_berry"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: 10.5d
 		}
 		{
@@ -596,7 +596,7 @@
 				item: "cobblemon:jaboca_berry"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 10.5d
 		}
 		{
@@ -606,7 +606,7 @@
 				item: "cobblemon:rowap_berry"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.0d
 			y: 10.5d
 		}
 		{
@@ -678,7 +678,7 @@
 				id: "trofers:large_pillar"
 				tag: {
 					BlockEntityTag: {
-						Trophy: "trofers:butterfly_moth"
+						Trophy: "trofers:cobble_berries"
 					}
 				}
 			}
@@ -691,7 +691,7 @@
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
-								Trophy: "trofers:butterfly_moth"
+								Trophy: "trofers:cobble_berries"
 							}
 						}
 					}
@@ -715,7 +715,7 @@
 			}]
 			title: "Cobble Berry Collection Complete!"
 			x: 0.5476190476190439d
-			y: 13.30952380952381d
+			y: 15.0d
 		}
 		{
 			id: "3EACED14B4F0350E"
@@ -732,6 +732,76 @@
 			tasks: [{
 				id: "2B7750F445944F3E"
 				item: "cobblemon:starf_berry"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			id: "729CF7B0F3CFDCA9"
+			tasks: [{
+				id: "3F21AAB32D5BB778"
+				item: "cobblemon:ganlon_berry"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.0d
+		}
+		{
+			id: "0DC6DDD77D1EB559"
+			tasks: [{
+				id: "34ECAA2FBBB51BE6"
+				item: "cobblemon:liechi_berry"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			id: "224028831DBBC8E4"
+			tasks: [{
+				id: "5CC5656BEE404890"
+				item: "cobblemon:micle_berry"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			id: "65CEF72586F6CEE9"
+			tasks: [{
+				id: "0766B75F5456A3B6"
+				item: "cobblemon:lansat_berry"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			id: "679C337F74025ED6"
+			tasks: [{
+				id: "4A21E428A84EAB87"
+				item: "cobblemon:apicot_berry"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			id: "745019A0C6084898"
+			tasks: [{
+				id: "7EF6B88F5D1873EC"
+				item: "cobblemon:petaya_berry"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			id: "26A6407FB6192663"
+			tasks: [{
+				id: "7CB4F14CFF17EB36"
+				item: "cobblemon:salac_berry"
 				type: "item"
 			}]
 			x: 5.0d

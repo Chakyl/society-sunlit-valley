@@ -1,0 +1,58 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "klang-1",
+      "pokemon": "klang",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "38-44",
+      "weight": 0.9,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_overworld"],
+        "neededNearbyBlocks": ["#c:redstone_ores", "minecraft:rail"]
+      },
+      "anticondition": {
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "klang-2",
+      "pokemon": "klang",
+      "presets": ["redstone"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "38-44",
+      "weight": 0.9,
+      "condition": {
+        "biomes": ["#cobblemon:is_overworld"],
+        "neededNearbyBlocks": [
+          "create:cogwheel",
+          "create:large_cogwheel",
+          "create:gearbox",
+          "create:vertical_gearbox"
+        ]
+      }
+    },
+    {
+      "id": "klang-3",
+      "pokemon": "klang",
+      "presets": ["primitive_tech"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "38-44",
+      "weight": 1,
+      "condition": {
+        "biomes": ["#cobblemon:is_overworld"]
+      }
+    }
+  ]
+}

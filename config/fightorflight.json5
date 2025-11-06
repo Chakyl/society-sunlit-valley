@@ -16,10 +16,7 @@
 	// Are Ghost types more aggressive at or below light level 7 and less aggressive at or above light level 12
 	"ghost_light_level_aggro": true,
 	// Pokemon that will always be aggressive
-	"always_aggro": [
-		"mankey",
-		"primeape"
-	],
+	"always_aggro": [],
 	// Pokemon that will never be aggressive
 	"never_aggro": [
 		"slowpoke",
@@ -106,7 +103,7 @@
 	// Poison type damage will be not very effective against undead mobs.(set to 0 if you want a complete immune)
 	"poison_type_no_effect_dmg_multiplier": 0.10000000149011612,
 	// If the original updateMaxHealth() will be replaced by my version. This version uses the hp stat instead of the base hp stat.The following configurations needs this one to work.
-	"shouldOverrideUpdateMaxHealth": true,
+	"shouldOverrideUpdateMaxHealth": false,
 	// The minimum hp of a pokemon entity,shedinja is set to 1.0 and can't be changed.
 	"min_HP": 40,
 	// The medium hp value of a pokemon entity,the medium value is designed to allow you to better tweak the growth of HP value for the entity

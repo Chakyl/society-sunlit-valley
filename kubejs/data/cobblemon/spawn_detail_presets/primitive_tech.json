@@ -1,0 +1,24 @@
+{
+  "condition": {
+    "neededBaseBlocks": [
+      "society:aging_cask",
+      "society:ancient_cask",
+      "society:bait_maker",
+      "society:cheese_press",
+      "society:crystalarium",
+      "society:dehydrator",
+      "society:deluxe_worm_farm",
+      "society:espresso_machine",
+      "society:fish_smoker",
+      "society:loom",
+      "society:mayonnaise_machine",
+      "society:preserves_jar",
+      "society:recycling_machine",
+      "society:seed_maker",
+      "society:tapper"
+    ]
+  },
+  "anticondition": {
+    "neededBaseBlocks": ["minecraft:farmland"]
+  }
+}

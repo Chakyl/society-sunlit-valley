@@ -6,16 +6,15 @@
     {
       "id": "roaringmoon-1",
       "pokemon": "roaringmoon",
-      "presets": [],
+      "presets": ["natural"],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "ultra-rare",
       "level": "50-70",
-      "weight": 3.0,
+      "weight": 1.0,
       "condition": {
-        "timeRange": "night",
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_mountain"]
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:desert_fault"]
       }
     }
   ]

@@ -1,0 +1,15 @@
+{
+  "condition": {
+    "neededBaseBlocks": [
+      "society:fish_pond_basket",
+      "society:auto_grabber",
+      "society:mini_artisan_hopper",
+      "society:artisan_hopper",
+      "society:golden_clock",
+      "society:sparkstone_recycler"
+    ]
+  },
+  "anticondition": {
+    "neededBaseBlocks": ["minecraft:farmland"]
+  }
+}

@@ -6,17 +6,15 @@
     {
       "id": "ironthorns",
       "pokemon": "ironthorns",
-      "presets": [],
       "type": "pokemon",
       "context": "grounded",
+      "presets": ["future_tech"],
       "bucket": "ultra-rare",
       "level": "50-70",
-      "weight": 3.0,
+      "weight": 1.0,
       "condition": {
-        "canSeeSky": false,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_lush"],
-        "neededNearbyBlocks": ["minecraft:lightning_rod"]
+        "canSeeSky": true,
+        "neededNearbyBlocks": ["society:charging_rod"]
       }
     }
   ]

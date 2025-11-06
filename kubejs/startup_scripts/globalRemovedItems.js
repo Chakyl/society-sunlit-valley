@@ -1,4 +1,5 @@
 global.removedItems = [
+  "cobblemon:repeat_ball",
   "create_klinks_n_klangs:wrapper",
   "windswept:gingerbread_cookie",
   "windswept:frozen_flesh",
@@ -20,12 +21,6 @@ global.removedItems = [
   "whimsy_deco:red_vocal_doll",
   "whimsy_deco:singing_frog",
   "create:wheat_flour",
-  "windswept:wooden_bucket",
-  "windswept:wooden_water_bucket",
-  "windswept:wooden_powder_snow_bucket",
-  "windswept:wooden_milk_bucket",
-  "windswept:wooden_honey_bucket",
-  "windswept:wooden_chocolate_bucket",
   "windswept:ginger_root",
   "windswept:ginger_root_crate",
   "windswept:candy_cane",

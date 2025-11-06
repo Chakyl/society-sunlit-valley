@@ -28,10 +28,12 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.living.MobEffectEvent$Appli
       "effect.minecraft.hero_of_the_village",
       "effect.vinery.trading",
       "effect.brewery.pintcharisma",
+      "effect.nethervinery.gravedigger",
+      "effect.nethervinery.improved_gravedigger",
     ].includes(event.getEffectInstance().getEffect().getDescriptionId()) &&
     event.getEntity().getType().toString() == "minecraft:player"
   ) {
     event.setResult(apiEvent.Result.DENY);
-    console.log("No heroes in industrial capitalism...");
+    console.log("No cheese in industrial capitalism...");
   }
 });
