@@ -1,46 +1,41 @@
 BlockEvents.placed(global.plushies, (e) => {
   const plushieNbt = e.player.getHeldItem("main_hand").getNbt();
   if (plushieNbt) {
-    e.block.set(e.block.id, {
-      facing: e.block.getProperties().get("facing"),
-      quest_id: plushieNbt.get("quest_id").toString(),
-      affection: plushieNbt.get("affection").toString(),
-      quality: plushieNbt.get("quality_food").get("quality").toString(),
-      type: plushieNbt.get("type").toString(),
+    let nbt = e.block.getEntityData();
+    nbt.merge({
+      data: {
+        type: plushieNbt.get("type"),
+        quest_id: plushieNbt.get("quest_id"),
+        affection: plushieNbt.get("affection"),
+        quality: plushieNbt.get("quality_food").get("quality"),
+      },
     });
+    e.block.setEntityData(nbt);
   }
 });
 
 BlockEvents.broken(global.plushies, (e) => {
   const { block } = e;
-  const type = block.properties.get("type").toLowerCase();
+  let nbt = block.getEntityData();
+  const { type, quest_id, affection, quality } = nbt.data;
   block.popItem(
     Item.of(
       block.id,
-      `{quality_food:{quality:${block.properties.get(
-        "quality"
-      )}},type:${type},quest_id:${block.properties.get(
-        "quest_id"
-      )},affection:${block.properties.get("affection")}}`
+      `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
     )
   );
 });
 
 BlockEvents.broken("whimsy_deco:sunlit_singing_frog", (e) => {
   const { block } = e;
-  const type = block.properties.get("type").toLowerCase();
-  if (type !== "0") {
-    block.popItem(
-      Item.of(
-        "whimsy_deco:adv_singing_frog_plushie",
-        `{quality_food:{quality:${block.properties.get(
-          "quality"
-        )}},type:${type},quest_id:${block.properties.get(
-          "quest_id"
-        )},affection:${block.properties.get("affection")}}`
-      )
-    );
-  }
+  let nbt = e.block.getEntityData();
+  const { type, quest_id, affection, quality } = nbt.data;
+  block.popItem(
+    Item.of(
+      block.id,
+      `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
+    )
+  );
 });
 
 BlockEvents.rightClicked("whimsy_deco:gatcha_machine", (e) => {

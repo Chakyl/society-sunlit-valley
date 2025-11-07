@@ -213,7 +213,9 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
   server.scheduleInTicks(delay, () => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
-    const currentStage = artisanMachine.properties.get("stage");
+    const nbt = artisanMachine.getEntityData();
+    const { stage, recipe } = nbt.data;
+    const currentStage = stage || 0;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
     const loadedData = global.getArtisanMachineData(artisanMachine, upgraded, player.stages);
     const season = global.getSeasonFromLevel(level);
@@ -235,7 +237,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
           block,
           artisanMachine.id === "society:charging_rod"
             ? chargingRodOutput
-            : global.getArtisanRecipe(recipes, artisanMachine).output[0]
+            : recipes.get(recipe).output[0]
         ) &&
         global.hasInventoryItems(inventory, "society:sparkstone", 1)
       ) {
@@ -259,7 +261,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else {
-          if (newProperties.get("type")) type = Number(newProperties.get("type"));
+          if (nbt.data.type != 0) type = Number(nbt.data.type);
           machineOutput = global.artisanHarvest(
             artisanMachine,
             recipes,

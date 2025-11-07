@@ -203,7 +203,6 @@ StartupEvents.registry("item", (e) => {
     .tag("numismatics:coins");
 
   e.create("society:elytra_wing").texture("society:item/elytra_wing");
-  e.create("society:bank_meter").texture("society:item/bank_meter");
   e.create("society:fish_radar").texture("society:item/fish_radar");
   e.create("society:car_key").texture("society:item/car_key").maxStackSize(1).rarity("epic");
   e.create("society:kinetic_blueprint").texture("society:item/kinetic_blueprint");

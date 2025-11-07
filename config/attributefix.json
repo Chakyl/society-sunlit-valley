@@ -1287,17 +1287,6 @@
         "value": 1000000
       }
     },
-    "forge:swim_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "irons_rpg_tweaks:natural_regen_amount": {
       "enabled": false,
       "min": {
@@ -1307,6 +1296,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "forge:swim_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "irons_spellbooks:fire_magic_resist": {

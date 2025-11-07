@@ -165,54 +165,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["0F176FBF01ABB774"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description3}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description4}"
-			]
-			icon: "vinery:fermentation_barrel"
-			id: "18EB59F2591BAD51"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3AAB21C07F5C22C3"
-					table_id: 8298743981735202683L
-					type: "choice"
-				}
-				{
-					count: 8
-					id: "46F02B3F8E3245F3"
-					item: "vinery:grapevine_stem"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "7B53B6AFA4BBD05C"
-					item: "vinery:spruce_lattice"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "69DE0365011C79D3"
-					item: "vinery:fermentation_barrel"
-					type: "item"
-				}
-				{
-					id: "730F90C38D9E6061"
-					item: "vinery:grapevine_pot"
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 0.5d
-		}
-		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest9.description1}"
@@ -1160,61 +1112,26 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["18EB59F2591BAD51"]
+			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"&6Fermentation Barrels&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				"Wines can be made with three fruits and even certain vegetables in a &6Wine Keg&r."
 				""
-				"Recipes can use the following juices:"
+				"This process is lengthy, but much more profitable per-fruit than preserving."
 				""
-				"- &cRed&r/&aWhite&r grape juice"
-				"- &cCrimson&r/&aWarped&r grape juice"
-				"- &eApple Juice&r (made using an Apple Press)"
-				""
-				"Juices are inserted in the top left slot of the Fermentation Barrel."
+				"{ftbquests.chapter.iii__advanced_farming.quest8.description2}"
 			]
-			icon: "vinery:red_grapejuice"
-			id: "180411EF1F7649DD"
+			id: "3C9A245CFCD5D8E8"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "47F40C9762972779"
-				table_id: 8298743981735202683L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "36017F8FB07D6021"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "vinery:white_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "vinery:red_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "nethervinery:warped_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "nethervinery:crimson_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "vinery:apple_juice"
-							}
-						]
-					}
-				}
-				title: "Any Fermentation Barrel juice"
+				id: "6766C5B6D5AD2DF5"
+				item: "society:wine_keg"
 				type: "item"
 			}]
-			title: "Juicing up the Wine"
-			x: 2.5d
+			tasks: [{
+				id: "42E7CABF0E6A19DC"
+				item: "society:wine_keg"
+				type: "item"
+			}]
+			x: 2.0d
 			y: 0.5d
 		}
 	]

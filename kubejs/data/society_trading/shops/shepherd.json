@@ -52,7 +52,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "trade_id": "librarian_name_tag_for_cog"
+      "trade_id": "shepherd_name_tag_for_cog"
     },
     {
       "offer": {
@@ -89,6 +89,18 @@
       },
       "numismatics_cost": 1024,
       "trade_id": "shepherd_miracle_potion_for_cog"
+    },
+    {
+      "offer": {
+        "item": "minecraft:saddle",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "leatherworker_saddle_for_cog"
     },
     {
       "offer": {

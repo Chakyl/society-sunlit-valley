@@ -75,23 +75,25 @@ const idMap = new Map([
   ["society:double_aged_beer_wheat", "Double-Aged Wheat Beer"],
 ]);
 
-const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machineId, maxInput) => {
+const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, maxInput) => {
   const { player, block, item, server } = clickEvent;
+  const blockStage = nbt.data.stage;
   const status = maxInput !== -1 ? "Requires more input for" : "Currently making";
   let primaryOutput;
-  let recipe;
+  let recipe = nbt.data.recipe;
   let id;
-
-  if (recipes === "society:battery") id = "society:battery";
-  else {
-    recipe = global.getArtisanRecipe(recipes, block);
-    if (!recipe) return;
-    id = String(Item.of(recipe.output[0]).id);
+  let duration;
+  const isChargingRod = machineId.equals("society:charging_rod");
+  if (!recipe && !isChargingRod) return;
+  if (isChargingRod) {
+    id = "society:battery";
+    duration = stageCount;
+  } else {
+    id = String(Item.of(recipes.get(recipe).output[0]).id);
     primaryOutput = idMap.get(id);
+    duration = recipes.get(recipe).time || stageCount;
+    if (recipe === item) return;
   }
-  if (recipe?.input === item) return;
-  let duration =
-    (block.properties.get("type") && global.getArtisanRecipe(recipes, block).time) || stageCount;
   if (
     machineId == "society:aging_cask" &&
     block.properties.get("upgraded").toLowerCase() === "true"
@@ -202,10 +204,12 @@ BlockEvents.rightClicked(
       return obj.id === block.id;
     })[0];
     if (block.properties.get("mature").toLowerCase() === "false") {
+      let nbt = block.getEntityData();
+      if (nbt.data.type == 0) return;
       sendProgressMessage(
         e,
         machine.recipes,
-        block.properties.get("stage").toLowerCase(),
+        nbt,
         machine.stageCount,
         machine.id,
         block.properties.get("working").toLowerCase() === "false" ? machine.maxInput : -1

@@ -21,11 +21,10 @@ ServerEvents.tags("entity_type", (e) => {
     "wildernature:bison",
     "minecraft:squid",
     "minecraft:glow_squid",
-    "windswept:frostbiter"
+    "windswept:frostbiter",
   ].forEach((animal) => {
     e.add("society:milkable_animal", animal);
   });
-
   [
     "minecraft:chicken",
     "untitledduckmod:duck",
@@ -38,6 +37,11 @@ ServerEvents.tags("entity_type", (e) => {
     "farmlife:galliraptor",
   ].forEach((animal) => {
     e.add("society:coopmaster_bird", animal);
+  });
+  global.animalBeds.forEach((bed) => {
+    global.bedDefinitions.get(bed).forEach((animal) => {
+      e.add(`society:${bed}_bed`, animal);
+    });
   });
 
   const petAnimals = [

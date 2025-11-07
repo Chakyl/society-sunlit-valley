@@ -51,6 +51,17 @@
 			pine = true
 			flowering_acacia = true
 
+		[types.leaves_type.cluttered]
+			willow = true
+			flowering_willow = true
+			poplar = true
+			flowering_poplar = true
+			crabapple = true
+			flowering_crabapple = true
+			sycamore = true
+			fluorescent_maple = true
+			flowering_fluorescent_maple = true
+
 	[types.wood_type]
 
 		[types.wood_type.autumnity]
@@ -93,6 +104,18 @@
 			holly = true
 			chestnut = true
 			pine = true
+
+		[types.wood_type.cluttered]
+			willow = true
+			flowering_willow = true
+			poplar = true
+			flowering_poplar = true
+			crabapple = true
+			flowering_crabapple = true
+			sycamore = true
+			fluorescent_maple = true
+			blue_mushroom = true
+			red_mushroom = true
 
 	[types.cake]
 

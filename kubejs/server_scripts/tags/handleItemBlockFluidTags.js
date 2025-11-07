@@ -548,6 +548,7 @@ ServerEvents.tags("item", (e) => {
 ServerEvents.tags("block", (e) => {
   e.add("minecraft:crops", "farmersdelight:tomatoes");
   const buildingGadgetsDeny = [
+    "society:wine_keg",
     "society:aging_cask",
     "society:ancient_cask",
     "society:charging_rod",
@@ -633,8 +634,8 @@ ServerEvents.tags("block", (e) => {
   ].forEach((wool) => {
     e.add("minecraft:mineable/axe", wool);
   });
-  global.tapperRecipes.forEach((recipe) => {
-    e.add("society:tappable_blocks", recipe.input);
+  Array.from(global.tapperRecipes.keys()).forEach((key) => {
+    e.add("society:tappable_blocks", key);
   });
   const unbreakableTags = [
     "minecraft:wither_immune",

@@ -650,48 +650,6 @@
 			y: 0.0d
 		}
 		{
-			id: "1E444BE7C291B777"
-			tasks: [{
-				id: "5588C906B6645C0E"
-				item: {
-					Count: 1
-					id: "relics:holy_locket"
-					tag: {
-						abilities: {
-							belief: {
-								points: 0
-								stats: {
-									amount: 0.12199d
-									capacity: 10.53543d
-									count: 1.85878d
-									radius: 3.55636d
-								}
-							}
-							blessing: {
-								points: 0
-								stats: {
-									consumption: 6.69482d
-								}
-								temp: {
-									ticking: 1b
-								}
-							}
-							repentance: {
-								points: 0
-								stats: {
-									damage: 0.1729d
-									radius: 4.09646d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 0.5d
-			y: 0.0d
-		}
-		{
 			id: "74DAEBEF604D17EA"
 			tasks: [{
 				id: "3637C05CA3E79DBC"
@@ -733,37 +691,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			id: "724A8A39244F4BE7"
-			tasks: [{
-				id: "60E2E3299DA947BA"
-				item: {
-					Count: 1
-					id: "relics:infinity_ham"
-					tag: {
-						abilities: {
-							autophagy: {
-								points: 0
-								stats: {
-									feed: 1.26202d
-								}
-							}
-							infusion: {
-								points: 0
-								stats: {
-									duration: 1.0383d
-								}
-							}
-						}
-						pieces: 10
-					}
-				}
-				type: "item"
-			}]
-			x: 3.5d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -788,8 +716,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			id: "112CDD1578C3E293"
@@ -812,8 +740,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			id: "19B466150B9315AE"
@@ -837,7 +765,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: 1.5d
 		}
 		{
@@ -862,13 +790,12 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 1.5d
 		}
 		{
 			dependencies: [
 				"280921A71837871A"
-				"1E444BE7C291B777"
 				"5071B813994955AD"
 				"0EFE2499355F7A3F"
 				"77CD933D6316E6AA"
@@ -879,7 +806,6 @@
 				"74DAEBEF604D17EA"
 				"0C3DE2F95AD3DA0D"
 				"0BA55825757FB024"
-				"724A8A39244F4BE7"
 				"601AF949E5E96321"
 				"363C3FA4BEC4D2C0"
 				"19B466150B9315AE"

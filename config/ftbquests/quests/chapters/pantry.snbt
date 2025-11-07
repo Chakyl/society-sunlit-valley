@@ -29,27 +29,23 @@
 			}]
 			tasks: [
 				{
-					count: 32L
-					id: "541D9F35016F7E24"
-					item: "veggiesdelight:cauliflower"
+					id: "0B35C5DE8BB5F9F6"
+					item: "veggiesdelight:turnip"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "1E18344D245791C0"
+					id: "668E84D9EE57A1A8"
 					item: "farm_and_charm:lettuce"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "367F96A16FB9F550"
-					item: "farm_and_charm:strawberry"
+					id: "7CDE2B20B7CC5880"
+					item: "veggiesdelight:cauliflower"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "784D6E488DCDEBE0"
-					item: { Count: 32, id: "veggiesdelight:turnip" }
+					id: "3F5BC351515794BE"
+					item: "farm_and_charm:strawberry"
 					type: "item"
 				}
 			]
@@ -68,29 +64,23 @@
 			}]
 			tasks: [
 				{
-					count: 32L
-					id: "739D0A34606397D0"
+					id: "2DCE90F8655627E2"
+					item: "farm_and_charm:oat"
+					type: "item"
+				}
+				{
+					id: "1B1C690E927AA97F"
 					item: "veggiesdelight:bellpepper"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "00B8FD8C3A592142"
-					item: "minecraft:melon_slice"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 32L
-					id: "719F4811D89D19A8"
+					id: "6DCE2F477E7CA601"
 					item: "society:blueberry"
 					type: "item"
 				}
 				{
-					consume_items: true
-					count: 32L
-					id: "1E0BCCAB8CFEAD6B"
-					item: "farm_and_charm:oat"
+					id: "3033562FFE412612"
+					item: "minecraft:melon"
 					type: "item"
 				}
 			]
@@ -103,34 +93,29 @@
 			id: "2074A4FFF17266DB"
 			rewards: [{
 				count: 3
-				id: "3AF5A0C4AE27B4CB"
+				id: "761491DBA60727EF"
 				item: "society:preserves_jar"
 				type: "item"
 			}]
 			tasks: [
 				{
-					count: 32L
-					id: "525A25679B6E936D"
-					item: "minecraft:beetroot"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "404255E4E397C094"
-					item: "minecraft:pumpkin"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "4DFD6480E8FF485B"
+					id: "10528A18EFA1224B"
 					item: "farm_and_charm:corn"
 					type: "item"
 				}
 				{
-					consume_items: true
-					count: 32L
-					id: "720B181BB226B422"
+					id: "2A66DE4B86C12568"
 					item: "society:eggplant"
+					type: "item"
+				}
+				{
+					id: "1765579326FB757D"
+					item: "minecraft:pumpkin"
+					type: "item"
+				}
+				{
+					id: "350C1AD567DB67EC"
+					item: "minecraft:beetroot"
 					type: "item"
 				}
 			]
@@ -148,34 +133,6 @@
 				type: "random"
 			}]
 			tasks: [
-				{
-					count: 8L
-					id: "179F23D91B7F215D"
-					item: "minecraft:egg"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "268538858E35B911"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "untitledduckmod:goose_egg"
-								}
-								{
-									Count: 1b
-									id: "untitledduckmod:duck_egg"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.pantry.quest4.task_2775686891611470097.title}"
-					type: "item"
-				}
 				{
 					id: "6311F3FAC9E5755D"
 					item: {
@@ -223,29 +180,18 @@
 					type: "item"
 				}
 				{
-					id: "750B5529B27F849B"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "society:truffle"
-								}
-								{
-									Count: 1b
-									id: "minecraft:rabbit_foot"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.pantry.quest4.task_8433928364758107291.title}"
+					id: "1E3334D99216AE48"
+					item: "society:fine_wool"
 					type: "item"
 				}
 				{
-					id: "1E3334D99216AE48"
-					item: "society:fine_wool"
+					id: "4C6092038147B063"
+					item: "society:large_egg"
+					type: "item"
+				}
+				{
+					id: "38CA49D3F5035787"
+					item: "society:large_duck_egg"
 					type: "item"
 				}
 			]
