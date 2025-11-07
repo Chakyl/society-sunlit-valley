@@ -1,0 +1,56 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "gigalith-1",
+      "pokemon": "gigalith",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "34-52",
+      "weight": 0.1,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_overworld"],
+        "maxY": 0
+      },
+      "anticondition": {
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "gigalith-2",
+      "pokemon": "gigalith",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "34-52",
+      "weight": 0.1,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "gigalith-3",
+      "pokemon": "gigalith",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "52-70",
+      "weight": 0.1,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["society:blackstone_caves"]
+      }
+    }
+  ]
+}

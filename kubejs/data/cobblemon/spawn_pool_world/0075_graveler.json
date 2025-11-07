@@ -1,0 +1,98 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "graveler-1",
+      "pokemon": "graveler",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "25-39",
+      "weight": 0.9,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_mountain"]
+      }
+    },
+    {
+      "id": "graveler-2",
+      "pokemon": "graveler",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "25-39",
+      "weight": 0.9,
+      "condition": {
+        "canSeeSky": false,
+        "biomes": ["#cobblemon:is_overworld"]
+      },
+      "anticondition": {
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "graveler-alolan-3",
+      "pokemon": "graveler alolan",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "25-39",
+      "weight": 1.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_mountain"]
+      }
+    },
+    {
+      "id": "graveler-alolan-4",
+      "pokemon": "graveler alolan",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "25-39",
+      "weight": 1.0,
+      "weightMultiplier": {
+        "multiplier": 5.0,
+        "condition": {
+          "isThundering": true
+        }
+      },
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_tropical_island", "#c:stony_shores"]
+      }
+    },
+    {
+      "id": "graveler-3",
+      "pokemon": "graveler",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "25-39",
+      "weight": 0.9,
+      "condition": {
+        "biomes": ["society:is_skull_cavern"]
+      }
+    },
+    {
+      "id": "graveler-alolan-4",
+      "pokemon": "graveler alolan",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "39-65",
+      "weight": 1.0,
+      "condition": {
+        "biomes": ["society:frozen_maelstrom", "society:desert_caves"]
+      }
+    }
+  ]
+}

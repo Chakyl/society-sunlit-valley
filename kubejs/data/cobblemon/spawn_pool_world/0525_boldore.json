@@ -1,0 +1,56 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "boldore-1",
+      "pokemon": "boldore",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "25-39",
+      "weight": 0.9,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_overworld"],
+        "maxY": 0
+      },
+      "anticondition": {
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "boldore-2",
+      "pokemon": "boldore",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "25-39",
+      "weight": 0.9,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "boldore-3",
+      "pokemon": "boldore",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "39-48",
+      "weight": 0.9,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["society:skull_caves"]
+      }
+    }
+  ]
+}

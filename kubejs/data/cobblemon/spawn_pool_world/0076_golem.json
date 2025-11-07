@@ -1,0 +1,72 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "golem-1",
+      "pokemon": "golem",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "34-50",
+      "weight": 0.1,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_mountain"]
+      }
+    },
+    {
+      "id": "golem-2",
+      "pokemon": "golem",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "34-50",
+      "weight": 0.1,
+      "condition": {
+        "canSeeSky": false,
+        "biomes": ["#cobblemon:is_overworld"]
+      },
+      "anticondition": {
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "golem-alolan-3",
+      "pokemon": "golem alolan",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "34-50",
+      "weight": 0.1,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_mountain"]
+      }
+    },
+    {
+      "id": "golem-alolan-4",
+      "pokemon": "golem alolan",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "34-50",
+      "weight": 0.1,
+      "weightMultiplier": {
+        "multiplier": 5.0,
+        "condition": {
+          "isThundering": true
+        }
+      },
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_tropical_island", "#c:stony_shores"]
+      }
+    }
+  ]
+}

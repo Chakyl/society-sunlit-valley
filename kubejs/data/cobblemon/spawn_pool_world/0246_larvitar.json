@@ -1,0 +1,55 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "larvitar-1",
+      "pokemon": "larvitar",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "5-30",
+      "weight": 9.0,
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "biomes": ["#cobblemon:is_mountain"]
+      },
+      "anticondition": {
+        "biomes": ["#cobblemon:is_freezing"]
+      }
+    },
+    {
+      "id": "larvitar-2",
+      "pokemon": "larvitar",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "5-30",
+      "weight": 9.0,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_mountain"]
+      }
+    },
+    {
+      "id": "larvitar-3",
+      "pokemon": "larvitar",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "5-30",
+      "weight": 9.0,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["society:blackstone_caves"]
+      }
+    }
+  ]
+}

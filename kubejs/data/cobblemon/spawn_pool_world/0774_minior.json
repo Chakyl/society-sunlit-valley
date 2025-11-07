@@ -1,0 +1,117 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "minior-1",
+      "pokemon": "minior",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "30-52",
+      "weight": 20.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": ["#society:is_skull_cavern"]
+      }
+    },
+    {
+      "id": "minior-2",
+      "pokemon": "minior core=red",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "40-70",
+      "weight": 20.0,
+      "condition": {
+        "biomes": ["society:blackstone_caves"]
+      }
+    },
+    {
+      "id": "minior-3",
+      "pokemon": "minior core=orange",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "40-70",
+      "weight": 20.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": ["society:desert_fault"]
+      }
+    },
+    {
+      "id": "minior-4",
+      "pokemon": "minior core=yellow",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "40-70",
+      "weight": 20.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": ["society:desert_caves"]
+      }
+    },
+    {
+      "id": "minior-5",
+      "pokemon": "minior core=green",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "40-70",
+      "weight": 20.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": ["society:lush_caverns"]
+      }
+    },
+    {
+      "id": "minior-6",
+      "pokemon": "minior core=blue",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "40-70",
+      "weight": 20.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": ["society:frozen_caves"]
+      }
+    },
+    {
+      "id": "minior-7",
+      "pokemon": "minior core=indigo",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "40-70",
+      "weight": 20.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": ["society:frozen_maelstrom"]
+      }
+    },
+    {
+      "id": "minior-8",
+      "pokemon": "minior core=violet",
+      "presets": [],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "40-70",
+      "weight": 20.0,
+      "condition": {
+        "biomes": ["society:umbra_barrens"]
+      }
+    }
+  ]
+}

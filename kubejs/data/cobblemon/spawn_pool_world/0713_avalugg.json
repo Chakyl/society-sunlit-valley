@@ -1,0 +1,100 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "avalugg-1",
+      "pokemon": "avalugg",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "37-51",
+      "weight": 1.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_frozen_ocean"]
+      }
+    },
+    {
+      "id": "avalugg-2",
+      "pokemon": "avalugg",
+      "presets": ["water_surface"],
+      "type": "pokemon",
+      "context": "surface",
+      "bucket": "common",
+      "level": "37-51",
+      "weight": 1.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_frozen_ocean"]
+      }
+    },
+    {
+      "id": "avalugg-3",
+      "pokemon": "avalugg",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "37-51",
+      "weight": 1.0,
+      "condition": {
+        "biomes": ["#cobblemon:is_nether_frozen"]
+      }
+    },
+    {
+      "id": "avalugg-4",
+      "pokemon": "avalugg",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "45-71",
+      "weight": 1.0,
+      "condition": {
+        "biomes": ["society:frozen_caves"]
+      }
+    },
+    {
+      "id": "avalugg-hisuian-4",
+      "pokemon": "avalugg hisuian",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "30-60",
+      "weight": 8.0,
+      "condition": {
+        "biomes": ["#cobblemon:is_glacial"]
+      }
+    },
+    {
+      "id": "avalugg-hisuian-5",
+      "pokemon": "avalugg hisuian",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "30-60",
+      "weight": 8.0,
+      "condition": {
+        "biomes": ["#cobblemon:is_snowy_forest"]
+      }
+    },
+    {
+      "id": "avalugg-hisuian-6",
+      "pokemon": "avalugg hisuian",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "50-72",
+      "weight": 8.0,
+      "condition": {
+        "biomes": ["society:frozen_maelstrom"]
+      }
+    }
+  ]
+}

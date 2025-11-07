@@ -1,0 +1,589 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rare_pokmon"
+	group: "13003519EF914BA5"
+	icon: "cobblemon:beast_ball"
+	id: "6B6EF767526A7A1C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [""]
+			id: "5258D723273DF790"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nUmbra Barrens"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "697E23AEF7B006DE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:screamtail"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Scream Trail"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			description: [""]
+			id: "1ACEB759746487FE"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nUmbra Barrens/Blackstone Caves\\nNight"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "76CCE9B5609D3D37"
+				poke_ball_used: ""
+				pokemon: "cobblemon:fluttermane"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Flutter Mane"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "7B7B77F0C9ED1DE3"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nSkull Caves"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1176CF273C343CE7"
+				poke_ball_used: ""
+				pokemon: "cobblemon:slitherwing"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Slither Wing"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "3ED55D8417213673"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nDesert Fault"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2D9C5114670A8C0E"
+				poke_ball_used: ""
+				pokemon: "cobblemon:roaringmoon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Roaring Moon"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "497269BD63D3CAB5"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3281ADB2B78A791D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:walkingwake"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Roaring Moon"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "4AC2C482DBE3C0B2"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "61F690193F2D87AB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ragingbolt"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Roaring Moon"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [""]
+			id: "780266EEBC9BBDA1"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nRequires Sparkstone Machines nearby\\nMore common in cold biomes"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "51ADB8A8466A7699"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironbundle"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Iron Bundle"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			description: [""]
+			id: "16080D969B4C44E9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nRequires Sparkstone Machines nearby\\nHills \\& Deserts"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "22FEDC60FD421EBB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironmoth"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Iron Moth"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [""]
+			id: "713853BE7205B351"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nRequires Sparkstone Machines nearby\\nRequires Charging Rods nearby"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "62AE049CF8915159"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironthorns"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Iron Thorns"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: [""]
+			id: "53335158164831B9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nRequires Sparkstone Machines nearby\\nRequires Charging Rods nearby"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "34E7B445883EA04D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironvaliant"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Iron Valiant"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [""]
+			id: "71091CADB01BBBD9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nRequires Sparkstone Machines nearby\\nRequires Charging Rods nearby\\nFloral Biomes"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "71C417C809587020"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironleaves"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Iron Valiant"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4AC2C482DBE3C0B2"
+				"713853BE7205B351"
+				"3ED55D8417213673"
+				"7B7B77F0C9ED1DE3"
+				"5258D723273DF790"
+				"780266EEBC9BBDA1"
+				"71091CADB01BBBD9"
+				"497269BD63D3CAB5"
+				"53335158164831B9"
+				"16080D969B4C44E9"
+				"1ACEB759746487FE"
+			]
+			hide_dependency_lines: true
+			icon: "cobblemon:timer_ball"
+			id: "5DE5D055D7BC2BFE"
+			rewards: [{
+				id: "5CBCC9A4A9570F25"
+				item: "society:frosted_tip"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				icon: "tanukidecor:crystal_clock"
+				id: "042AA31A7E1092C0"
+				stat: "minecraft:play_time"
+				title: "Obtain all Paradox Pokémon"
+				type: "stat"
+				value: 1
+			}]
+			title: "Paradox Master"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			description: [""]
+			id: "46AC1742C4A72259"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "455F03A6C678FECF"
+				poke_ball_used: ""
+				pokemon: "cobblemon:nihilego"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Nihilego"
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "7169193680597E82"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6990275CBACAA27F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:buzzwole"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Buzzwole"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "1B20E6F6F396A6B0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "45C90627D902DE58"
+				poke_ball_used: ""
+				pokemon: "cobblemon:xurkitree"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Xurkitree"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "0AFC79E0751923A6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "74C789F556D5657C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:kartana"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Kartana"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "40782D6A62B4B8D0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "61F1CCFD39F66E62"
+				poke_ball_used: ""
+				pokemon: "cobblemon:guzzlord"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Guzzlord"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "0899C51F59322D7B"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1C0371E3BBCC4E1E"
+				poke_ball_used: ""
+				pokemon: "cobblemon:poipole"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Poipole"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "604EF840F7D138AE"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "67C38FA697462ED3"
+				poke_ball_used: ""
+				pokemon: "cobblemon:naganadel"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Naganadel"
+			x: 8.0d
+			y: -5.0d
+		}
+		{
+			description: [""]
+			id: "0FD10C2F7AE4677E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2BABA96B57FA3BFE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:blacephalon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Naganadel"
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"46AC1742C4A72259"
+				"1B20E6F6F396A6B0"
+				"604EF840F7D138AE"
+				"0AFC79E0751923A6"
+				"7169193680597E82"
+				"0FD10C2F7AE4677E"
+				"40782D6A62B4B8D0"
+				"0899C51F59322D7B"
+			]
+			hide_dependency_lines: true
+			icon: "cobblemon:timer_ball"
+			id: "6C472A1603AF02C5"
+			rewards: [{
+				id: "7735136D0F08557A"
+				item: "society:frosted_tip"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				icon: "sunlit_cobblemon:poke_genes"
+				id: "55426B8228B339F1"
+				stat: "minecraft:play_time"
+				title: "Obtain all Ultra Beast Pokémon"
+				type: "stat"
+				value: 1
+			}]
+			title: "Ultra Beast Master"
+			x: -7.0d
+			y: -5.0d
+		}
+	]
+	title: "Rare Pokémon"
+}

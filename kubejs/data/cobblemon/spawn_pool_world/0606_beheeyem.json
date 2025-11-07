@@ -1,0 +1,73 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "beheeyem-1",
+      "pokemon": "beheeyem",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "49-72",
+      "weight": 1.0,
+      "condition": {
+        "biomes": ["society:umbra_barrens"]
+      },
+      "drops": {
+        "amount": 6,
+        "entries": [
+          {
+            "item": "minecraft:ender_pearl",
+            "quantityRange": "0-2"
+          },
+          {
+            "item": "minecraft:chorus_fruit",
+            "quantityRange": "0-2"
+          },
+          {
+            "item": "cobblemon:light_clay",
+            "percentage": 5.0
+          },
+          {
+            "item": "cobblemon:colbur_berry",
+            "percentage": 5.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "beheeyem-2",
+      "pokemon": "beheeyem",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "42-49",
+      "weight": 1.0,
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "biomes": ["#cobblemon:is_overworld"],
+        "timeRange": "night",
+        "neededNearbyBlocks": ["minecraft:wheat"]
+      }
+    },
+    {
+      "id": "beheeyem-3",
+      "pokemon": "beheeyem",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "42-49",
+      "weight": 0.6,
+      "condition": {
+        "biomes": ["the_bumblezone:howling_constructs"]
+      },
+      "anticondition": {
+        "structures": ["#the_bumblezone:sempiternal_sanctums"]
+      }
+    }
+  ]
+}
