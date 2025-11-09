@@ -6,6 +6,9 @@ ItemEvents.tooltip((tooltip) => {
   global.cobbleGeology.forEach((item) => {
     global.addPriceTooltip(tooltip, item, "gem");
   });
+    global.cobblemonCooking.forEach((item) => {
+    global.addPriceTooltip(tooltip, item, "wood");
+  });
   global.cobblemonPreserves.forEach((item) => {
     global.addPriceTooltip(tooltip, item, "wood");
   });

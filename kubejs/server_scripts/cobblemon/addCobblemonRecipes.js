@@ -5,7 +5,6 @@ ServerEvents.recipes((e) => {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",
   });
-
   e.shaped("cobblemon:ability_capsule", ["gsf"], {
     g: "sunlit_cobblemon:poke_genes",
     f: "sunlit_cobblemon:fairy_heart",

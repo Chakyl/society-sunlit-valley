@@ -74,8 +74,6 @@
 });
 
 [
-  { input: "cobblemon:medicinal_leek", output: ["sunlit_cobblemon:dried_leek"] },
-  { input: "cobblemon:vivichoke", output: ["sunlit_cobblemon:dried_vivichoke"] },
   {
     input: "#cobble_workers:common_berries",
     output: ["sunlit_cobblemon:dried_common_cobbleberry"],

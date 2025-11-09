@@ -58,6 +58,7 @@ ServerEvents.recipes((e) => {
         if (
           !(
             Item.of(ingredient).hasTag("minecraft:fishes") ||
+            ingredient.id == "minecraft:salmon" ||
             global.removedItems.includes(Item.of(ingredient).id) ||
             global.removedItems.includes(Item.of(r.originalRecipeResult).id)
           )

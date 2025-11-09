@@ -18,12 +18,12 @@ global.cobbleAdventuring = [
   { item: "cobblemon:fossilized_fish", value: 5000 },
   { item: "cobblemon:fossilized_drake", value: 5000 },
   { item: "cobblemon:fossilized_dino", value: 5000 },
-  { item:"cobblemon:bygone_sherd", value: 256 },
-  { item:"cobblemon:capture_sherd", value: 1000 },
-  { item:"cobblemon:dome_sherd", value: 256 },
-  { item:"cobblemon:helix_sherd", value: 256 },
-  { item:"cobblemon:nostalgic_sherd", value: 256 },
-  { item:"cobblemon:suspicious_sherd", value: 256 },
+  { item: "cobblemon:bygone_sherd", value: 256 },
+  { item: "cobblemon:capture_sherd", value: 1000 },
+  { item: "cobblemon:dome_sherd", value: 256 },
+  { item: "cobblemon:helix_sherd", value: 256 },
+  { item: "cobblemon:nostalgic_sherd", value: 256 },
+  { item: "cobblemon:suspicious_sherd", value: 256 },
 ];
 global.cobbleGeology = [
   { item: "cobblemon:tumblestone", value: 8 },
@@ -62,6 +62,12 @@ global.cobbleGeology = [
   { item: "cobblemon:ice_stone", value: 1020 },
 ];
 
+global.cobblemonCooking = [
+  { item: "cobblemon:braised_vivichoke", value: 69 },
+  { item: "cobblemon:roasted_leek", value: 3 },
+  { item: "cobblemon:leek_and_potato_stew", value: 55 },
+  { item: "cobblemon:vivichoke_dip", value: 1 },
+];
 global.cobbleCrops = [
   { item: "cobblemon:big_root", value: 4 },
   { item: "cobblemon:energy_root", value: 16 },
@@ -189,6 +195,13 @@ global.cobbleGeology.forEach((miscItem) => {
   global.trades.set(item, {
     value: value,
     multiplier: "shippingbin:gem_sell_multiplier",
+  });
+});
+global.cobblemonCooking.forEach((dish) => {
+  const { item, value } = dish;
+  global.trades.set(item, {
+    value: value,
+    multiplier: "shippingbin:crop_sell_multiplier",
   });
 });
 global.cobblemonPreserves.forEach((miscItem) => {

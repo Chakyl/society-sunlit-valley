@@ -1,11 +1,20 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cobblemon:braised_vivichoke",
+    "item:cobblemon:leek_and_potato_stew",
+    "item:cobblemon:roasted_leek",
+    "item:cobblemon:medicinal_leek",
+    "item:cobblemon:dome_sherd",
+    "item:cobblemon:vivichoke_dip",
+    "item:everycomp:rfm/cobblemon/apricorn_mail_box",
+    "item:refurbished_furniture:birch_mail_box",
+    "item:everycomp:rfm/windswept/pine_mail_box",
+    "item:everycomp:rfm/beachparty/palm_mail_box",
+    "item:everycomp:rfm/atmospheric/aspen_mail_box",
+    "item:everycomp:rfm/atmospheric/grimwood_mail_box",
+    "item:minecraft:salmon",
     "item:tanukidecor:minimalist_clock",
-    "item:opposing_force:copper_enoki",
-    "item:opposing_force:raincap",
-    "item:opposing_force:infested_amethyst_block",
-    "item:opposing_force:cave_patty",
     "item:society:dehydrator",
     "item:twigs:tangerine_seashell",
     "#item:crabbersdelight:jei_display_results/crabbersdelight/crab_trap_bait",
@@ -436,7 +445,6 @@
     "item:cobblemon:razor_claw",
     "item:cobblemon:quick_powder",
     "item:cobblemon:metal_coat",
-    "item:cobblemon:medicinal_leek",
     "item:cobblemon:shiny_stone",
     "item:cobblemon:tart_apple",
     "item:cobblemon:prism_scale",
@@ -499,7 +507,6 @@
     },
     "item:cobblemon:bygone_sherd",
     "item:cobblemon:capture_sherd",
-    "item:cobblemon:dome_sherd",
     "item:cobblemon:helix_sherd",
     "item:cobblemon:suspicious_sherd",
     "item:cobblemon:nostalgic_sherd",
@@ -528,7 +535,6 @@
     },
     "item:vintagedelight:salted_cod",
     "item:minecraft:cod_spawn_egg",
-    "item:minecraft:salmon",
     "item:minecraft:cooked_salmon{quality_food:{effects:[],quality:1}}",
     {
       "type": "item",
@@ -1687,17 +1693,6 @@
     "item:cobblemon:cyan_mint_leaf",
     "item:cobblemon:chilan_berry",
     "item:cobblemon:star_sweet",
-    {
-      "type": "item",
-      "id": "cobblemon:braised_vivichoke",
-      "amount": 63
-    },
-    "item:cobblemon:leek_and_potato_stew",
-    {
-      "type": "item",
-      "id": "cobblemon:roasted_leek",
-      "amount": 64
-    },
     "#item:cobblemon:fossils",
     {
       "type": "item",
@@ -1766,14 +1761,7 @@
       "type": "item",
       "id": "society:spider_silk",
       "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "windswept:lavender",
-      "amount": 2
-    },
-    "item:cobblemon:big_root",
-    "item:minecraft:beef"
+    }
   ],
   "craft_history": [
     "minecraft:barrel",

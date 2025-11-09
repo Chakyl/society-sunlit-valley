@@ -173,7 +173,7 @@ StartupEvents.registry("block", (event) => {
         global.dehydratorRecipes,
         8,
         true,
-        false,
+        true,
         upgraded && isMushroom ? 2 : 1
       );
     })
