@@ -1,4 +1,5 @@
 global.removedItems = [
+  "nethervinery:obsidian_stem",
   "candlelight:gold_ring",
   "relics:infinity_ham",
   "relics:holy_locket",

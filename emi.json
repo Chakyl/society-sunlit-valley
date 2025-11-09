@@ -1,6 +1,39 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:nethervinery:obsidian_stem",
+    "item:quark:slime_in_a_bucket",
+    "item:society:pristine_petrified_slime",
+    "item:society:petrified_slime",
+    "item:meadow:fire_log",
+    "item:quark:charcoal_block",
+    "item:society:wuthering_logs",
+    "item:farm_and_charm:raw_pasta",
+    "item:brewery:half_chicken",
+    "item:farm_and_charm:lamb_ham",
+    "item:farm_and_charm:minced_beef",
+    "item:candlelight:tomato_mozzarella_salad",
+    {
+      "type": "item",
+      "id": "candlelight:harvest_plate",
+      "amount": 63
+    },
+    {
+      "type": "item",
+      "id": "candlelight:tropical_fish_supreme",
+      "nbt": "{StoredEffects:[]}",
+      "amount": 63
+    },
+    {
+      "type": "item",
+      "id": "candlelight:fillet_steak",
+      "nbt": "{StoredEffects:[]}",
+      "amount": 63
+    },
+    "item:candlelight:mozzarella",
+    "item:candlelight:candlelight_standard",
+    "item:bakery:bread",
+    "item:minecraft:wandering_trader_spawn_egg",
     "item:windswept:pinecone_shingles",
     "item:snowyspirit:glow_lights_black",
     "item:snowyspirit:glow_lights_blue",
@@ -41,7 +74,6 @@
     "item:autumnity:foul_berries",
     "item:refurbished_furniture:raw_meatlovers_pizza",
     "item:minecraft:glowstone_dust",
-    "item:farm_and_charm:raw_pasta",
     "item:cluttered:lunar_observatory_basket_of_papers",
     "item:railways:fuel_tank",
     "item:society:juice_inserter",
@@ -250,11 +282,6 @@
     "item:rottencreatures:frozen_rotten_flesh",
     "item:snowyspirit:candy_cane",
     "item:snowyspirit:ginger",
-    {
-      "type": "item",
-      "id": "meadow:fire_log",
-      "amount": 64
-    },
     "item:numismatics:sun",
     "item:numismatics:crown",
     "item:minecraft:tropical_fish",
@@ -451,7 +478,6 @@
     "item:createutilities:polished_amethyst",
     "item:farmersdelight:fish_stew",
     "item:society:aged_jellyfish_roe",
-    "item:candlelight:tropical_fish_supreme",
     "item:twigs:polished_amethyst",
     "item:minecraft:amethyst_block",
     "item:aquaculture:diamond_fishing_rod{Damage:0}",
