@@ -453,7 +453,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           5,
           0.01
         );
-        global.addItemCooldown(player, item, 10);
+        global.addItemCooldown(player, item, 1);
       }
       if (
         player.stages.has("clockwork") &&
@@ -528,7 +528,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           5,
           0.01
         );
-        global.addItemCooldown(player, item, 4);
+        global.addItemCooldown(player, item, 1);
       }
       if (item === "society:magic_shears") {
         handleMagicHarvest(name, data, eventData);

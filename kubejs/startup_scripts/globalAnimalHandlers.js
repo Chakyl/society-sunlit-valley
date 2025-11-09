@@ -93,8 +93,6 @@ global.handleSpecialHarvest = (
   const freshAnimal = global.isFresh(day, ageLastDroppedSpecial);
   const hungry = day - ageLastFed > 1;
   const affection = data.getInt("affection") || 0;
-  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const heartBonus = hearts === 10 ? 2 : 1;
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
     let resolvedItem;
@@ -115,7 +113,7 @@ global.handleSpecialHarvest = (
             forage.chance,
             hungry,
             forage.minHearts,
-            heartBonus * resolvedCount,
+            resolvedCount,
             resolvedItem,
             forage.hasQuality,
             {

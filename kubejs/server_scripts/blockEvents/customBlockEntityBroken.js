@@ -37,8 +37,17 @@ const handleBrokenMachine = (block) => {
       if (working) block.popItem(Item.of(`3x ${nbt.data.recipe}`));
       else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
     } else if (currentRecipe) {
-      if (working) block.popItem(Item.of(`${machine.maxInput}x ${nbt.data.recipe}`));
-      else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
+      if (nbt.data.originalInputs && nbt.data.originalInputs.length > 0) {
+        console.log("yeet");
+        console.log(nbt.data.originalInputs);
+        nbt.data.originalInputs.forEach((item) => {
+          console.log(item);
+          block.popItem(Item.of(`${item.Count}x ${item.id}`));
+        });
+      } else {
+        if (working) block.popItem(Item.of(`${machine.maxInput}x ${nbt.data.recipe}`));
+        else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
+      }
     }
   }
 };
@@ -54,9 +63,9 @@ BlockEvents.broken("society:fish_pond", (e) => {
     block.popItem(
       Item.of(
         "society:fish_pond",
-        `{type:"${nbt.data.type}",population:${Number(nbt.data.population)},max_population:${
-          Number(nbt.data.max_population)
-        },quest:${block.properties.get("quest")},quest_id:${Number(nbt.data.quest_id)}}`
+        `{type:"${nbt.data.type}",population:${Number(nbt.data.population)},max_population:${Number(
+          nbt.data.max_population
+        )},quest:${block.properties.get("quest")},quest_id:${Number(nbt.data.quest_id)}}`
       )
     );
   } else {
@@ -68,7 +77,8 @@ BlockEvents.broken("society:fish_pond", (e) => {
 });
 
 BlockEvents.broken("society:prize_machine", (e) => {
-  e.block.popItem(Item.of("society:prize_machine", `{prize:${e.block.properties.get("prize")}}`));
+  const nbt = e.block.getEntityData();
+  e.block.popItem(Item.of("society:prize_machine", `{prize:${nbt.data.prize}}`));
 });
 
 BlockEvents.broken("society:coin_leaderboard", (e) => {

@@ -96,13 +96,24 @@ const setQuality = (newProperties, stage, itemQuality) => {
     newProperties.quality = itemQuality;
 };
 
-const getCanTakeItems = (item, recipe, properties, hasTag, recipes, nbt) => {
+const getCanTakeItems = (item, recipe, properties, hasTag, inputCount, recipes, nbt) => {
   let itemCheck = recipe !== undefined;
-  if (hasTag && !itemCheck) {
+  if (hasTag) {
     Array.from(recipes.keys()).forEach((key) => {
-      if (!itemCheck && key.includes("#")) {
-        itemCheck = itemHasTag(item, key);
-        if (itemCheck) nbt.merge({ data: { recipe: key } });
+      if (key.includes("#")) {
+        if (itemHasTag(item, key)) {
+          itemCheck = true;
+          if (nbt.data.recipe.equals("") || nbt.data.recipe == undefined) {
+            nbt.merge({ data: { recipe: key, originalInputs: [] } });
+          }
+          if (inputCount != -1) {
+            let inputArray = nbt.data.originalInputs.copy();
+            let usedItem = item.copy();
+            usedItem.count = inputCount;
+            inputArray.push(usedItem);
+            nbt.merge({ data: { originalInputs: inputArray } });
+          }
+        }
       }
     });
   }
@@ -194,13 +205,24 @@ global.artisanInsert = (
 ) => {
   let newProperties = block.getProperties();
   let nbt = block.getEntityData();
-  let blockStage = nbt.data.stage;
+  let stage = nbt.data.stage;
   const itemNbt = item.nbt;
   let itemQuality;
-  let useCount = 0;
+  let useCount =
+    multipleInputs && item.count >= stageCount - Number(stage) ? stageCount - Number(stage) : 1;
   const recipe = recipes.get(`${item.id}`);
-  if (multipleInputs && nbt.data.recipe !== "" && nbt.data.recipe !== item.id) return;
-  if (getCanTakeItems(item, recipe, block.properties, hasTag, recipes, nbt)) {
+  if (!multipleInputs && nbt.data.recipe !== item.id) return;
+  if (
+    getCanTakeItems(
+      item,
+      recipe,
+      block.properties,
+      hasTag,
+      multipleInputs ? useCount : -1,
+      recipes,
+      nbt
+    )
+  ) {
     newProperties = block.getProperties();
     successParticles(level, block);
     server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
@@ -213,20 +235,12 @@ global.artisanInsert = (
       itemQuality = "0";
     }
     if (multipleInputs) {
-      if (item.count >= stageCount - Number(blockStage)) {
-        useCount = stageCount - Number(blockStage);
-        if (itemQuality) setQuality(newProperties, blockStage, itemQuality);
+      if (item.count >= stageCount - Number(stage)) {
         nbt.merge({ data: { stage: stageCount } });
       } else {
-        useCount = 1;
-        if (itemQuality) setQuality(newProperties, blockStage, itemQuality);
         increaseDataStage(block);
       }
-    } else {
-      useCount = 1;
-      if (itemQuality) {
-        newProperties.quality = itemQuality;
-      }
+      if (itemQuality) setQuality(newProperties, stage, itemQuality);
     }
     if (!multipleInputs || nbt.data.stage === stageCount) {
       newProperties.working = true;
@@ -334,7 +348,7 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   let foundFluidData = undefined;
   let hasError = false;
   if (attachedBlock.hasTag("society:tappable_blocks")) {
-    if (global.hasMultipleTappers(level, block)) {
+    if (!nbt.data.recipe.equals(attachedBlock.id) || global.hasMultipleTappers(level, block)) {
       hasError = true;
     }
     if (
@@ -406,8 +420,8 @@ global.hasMultipleTappers = (level, block) => {
 global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
   const { block } = tickEvent;
   const { x, y, z } = block;
-  const blockStage = block.getEntityData().data.stage;
-  const mature = blockStage >= stageCount - 1;
+  const stage = block.getEntityData().data.stage;
+  const mature = stage >= stageCount - 1;
   let newProperties = block.getProperties();
   if (block.properties.get("working").toLowerCase() === "true" && rndFunction) {
     tickEvent.level.spawnParticles(

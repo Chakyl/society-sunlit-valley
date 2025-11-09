@@ -7,10 +7,13 @@ BlockEvents.placed("society:prize_machine", (e) => {
   if (item.id !== "society:prize_machine") return;
   prizeNbt = item.getNbt();
   if (!prizeNbt.isEmpty()) {
-    e.block.set(e.block.id, {
-      facing: e.block.properties.get("facing"),
-      prize: prizeNbt.get("prize"),
+    let nbt = e.block.getEntityData();
+    nbt.merge({
+      data: {
+        prize: Number(prizeNbt.get("prize")),
+      },
     });
+    e.block.setEntityData(nbt);
   }
 });
 

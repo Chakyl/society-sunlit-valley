@@ -276,7 +276,6 @@ global.handleFishHarvest = (block, player, server, basket) => {
 };
 
 global.handleFishExtraction = (block, player, server) => {
-  const { facing, valid, mature, upgraded, quest } = global.getPondProperties(block);
   let nbt = block.getEntityData();
   const { type, population, non_native_fish } = nbt.data;
   let naturalPopulation = population - non_native_fish;
@@ -300,29 +299,23 @@ global.handleFishExtraction = (block, player, server) => {
       quality > 0 ? `{quality_food:{quality:${quality}}}` : null
     );
   } else {
-    if (["aquaculture:leech", "aquaculture:minnow"].includes(item)) {
+    if (["aquaculture:leech", "aquaculture:minnow"].includes(type)) {
       result = Item.of(
-        `${resultCount}x ${item}`,
+        `${resultCount}x ${type}`,
         quality > 0 ? `{Damage:0,quality_food:{quality:${quality},effects:[]}}` : `{Damage:0}`
       );
     } else {
       result = Item.of(
-        `${resultCount}x ${item}`,
+        `${resultCount}x ${type}`,
         quality > 0 ? `{quality_food:{quality:${quality},effects:[]}}` : null
       );
     }
   }
   if (result) {
-    block.set(block.id, {
-      facing: facing,
-      valid: valid,
-      mature: mature,
-      upgraded: upgraded,
-      quest: quest,
-    });
     nbt.merge({
       data: {
         population: decreaseStage(population),
+        non_native_fish: non_native_fish > 0 ? decreaseStage(non_native_fish) : 0,
       },
     });
 
@@ -450,7 +443,7 @@ global.handleFishPondTick = (tickEvent) => {
     level.getBlock(block.pos)
   );
   let nbt = block.getEntityData();
-  const { type, population, max_population, quest_id } = nbt.data;
+  const { type, population, max_population, non_native_fish } = nbt.data;
   const fish = global.fishPondDefinitions.get(type);
   if (!type.equals("") && tickEvent.tick % 20 === 0) {
     block.set(block.id, {
@@ -512,13 +505,14 @@ global.handleFishPondTick = (tickEvent) => {
           },
         });
         block.setEntityData(nbt);
-        block.set(block.id, {
-          facing: facing,
-          valid: valid,
-          mature: true,
-          upgraded: upgraded,
-          quest: quest,
+      }
+      if (population === max_population && non_native_fish > 0) {
+        nbt.merge({
+          data: {
+            non_native_fish: decreaseStage(non_native_fish),
+          },
         });
+        block.setEntityData(nbt);
       }
     }
   }

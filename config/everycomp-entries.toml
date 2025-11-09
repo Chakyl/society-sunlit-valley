@@ -53,13 +53,13 @@
 
 		[types.leaves_type.cluttered]
 			willow = true
-			flowering_willow = true
+			flowering_willow = false
 			poplar = true
-			flowering_poplar = true
-			crabapple = true
-			flowering_crabapple = true
+			flowering_poplar = false
+			crabapple = false
+			flowering_crabapple = false
 			sycamore = true
-			fluorescent_maple = true
+			fluorescent_maple = false
 			flowering_fluorescent_maple = true
 
 	[types.wood_type]
@@ -107,15 +107,15 @@
 
 		[types.wood_type.cluttered]
 			willow = true
-			flowering_willow = true
+			flowering_willow = false
 			poplar = true
-			flowering_poplar = true
-			crabapple = true
-			flowering_crabapple = true
+			flowering_poplar = false
+			crabapple = false
+			flowering_crabapple = false
 			sycamore = true
-			fluorescent_maple = true
-			blue_mushroom = true
-			red_mushroom = true
+			fluorescent_maple = false
+			blue_mushroom = false
+			red_mushroom = false
 
 	[types.cake]
 

@@ -8,6 +8,10 @@ ItemEvents.rightClicked("farm_and_charm:fertilizer", (e) => {
   e.cancel();
 });
 
+ItemEvents.rightClicked("vanillabackport:pale_oak_boat", (e) => {
+  e.cancel();
+});
+
 BlockEvents.rightClicked("create:deployer", (e) => {
   if (
     [
