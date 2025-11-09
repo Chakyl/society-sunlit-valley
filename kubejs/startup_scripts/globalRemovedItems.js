@@ -1,4 +1,5 @@
 global.removedItems = [
+  "rctmod:trainer_card",
   "cobblemon:repeat_ball",
   "create_klinks_n_klangs:wrapper",
   "nethervinery:obsidian_stem",

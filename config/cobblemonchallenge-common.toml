@@ -1,0 +1,13 @@
+
+[cobblemonchallenge]
+	#Set to false if you don't want a distance restriction on challenges
+	challengeDistanceRestriction = true
+	#Max distance of a challenge if challengeDistanceRestriction is set to true
+	maxChallengeDistance = 50
+	#The default level to set teams to if there is no challenge specified
+	defaultChallengeLevel = 50
+	#Time in millis before a challenge request expires
+	challengeExpirationTime = 60000
+	#Time in millis before a player can send a consecutive challenge
+	challengeCooldownTime = 5000
+

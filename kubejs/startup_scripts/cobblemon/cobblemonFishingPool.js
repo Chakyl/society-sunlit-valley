@@ -1,3 +1,5 @@
+console.info("[SOCIETY-S-COBBLEMON] cobblemonFishingPool.js loaded");
+
 global.cobblemonfishPool = [
     { pokemon: "squirtle", weight: 2, lvlRange: [5,15], tiers: ['rare', 'epic'], seasons:['spring', 'summer'], waterTypes: ['ocean', 'river']},
     { pokemon: "wartortle", weight: .75, lvlRange: [16,35], tiers: ['epic'], seasons: ['spring', 'summer'], waterTypes: ['ocean', 'river']},

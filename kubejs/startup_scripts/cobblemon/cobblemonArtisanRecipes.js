@@ -1,3 +1,5 @@
+console.info("[SOCIETY-S-COBBLEMON] cobblemonArtisanRecipes.js loaded");
+
 [
   { input: "cobblemon:red_apricorn", output: ["6x cobblemon:red_apricorn_seed"] },
   { input: "cobblemon:yellow_apricorn", output: ["6x cobblemon:yellow_apricorn_seed"] },

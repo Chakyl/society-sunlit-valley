@@ -23,10 +23,11 @@ EntityEvents.spawned((e) => {
   const { entity, level } = e;
   // Cobblemon contingent upon a nearby playing wearing a Silph Scope.
   // Second check only surpresses Wild pokemon spawns, leaving Pasture Blocks
-  // and player pokemon in-tact.
+  // trainers pokemon, and player pokemon in-tact. 
   if (
     entity.type == "cobblemon:pokemon" &&
-    entity.getNbt().Pokemon.PokemonOriginalTrainerType == "NONE"
+    entity.getNbt().Pokemon.PokemonOriginalTrainerType == "NONE" &&
+    !entity.getNbt().Pokemon.PokemonData.includes("uncatchable")
   ) {
     let area = entity.getBoundingBox().inflate(64);
     let spawnPokemon = false;

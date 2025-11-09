@@ -1,4 +1,4 @@
-console.info("[SOCIETY] cobblemonFishing.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobblemonFishing.js loaded");
 
 const Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3");
 

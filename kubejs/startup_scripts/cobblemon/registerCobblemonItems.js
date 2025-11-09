@@ -1,4 +1,4 @@
-console.info("[SOCIETY] registerCobblemonItems.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] registerCobblemonItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:silph_scope")

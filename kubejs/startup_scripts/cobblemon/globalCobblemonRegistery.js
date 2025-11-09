@@ -1,4 +1,6 @@
 // priority: -21
+console.info("[SOCIETY-S-COBBLEMON] globalCobblemonRegistry.js loaded");
+
 global.cobbleAdventuring = [
   { item: "cobblemon:relic_coin", value: 64 },
   { item: "cobblemon:relic_coin_pouch", value: 576 },

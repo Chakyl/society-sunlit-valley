@@ -1829,6 +1829,69 @@
             ]
         },
         {
+            "pakku_id": "cQcg4puxQWuJUOuB",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "cluttered",
+                "modrinth": "cluttered"
+            },
+            "name": {
+                "curseforge": "Cluttered",
+                "modrinth": "Cluttered"
+            },
+            "id": {
+                "curseforge": "826308",
+                "modrinth": "UnAEo77V"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cluttered-[Forge]-3.0.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7180/920/cluttered-[Forge]-3.0.2-1.20.1.jar",
+                    "id": "7180920",
+                    "parent_id": "826308",
+                    "hashes": {
+                        "sha1": "3529dc56ab21f355176032d5ff7456a6bc95f129",
+                        "md5": "add9f9eab965fa630166f4ce8b7766e0"
+                    },
+                    "required_dependencies": [],
+                    "size": 5552095,
+                    "date_published": "2025-11-03T04:06:15.200Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "cluttered-[Forge]-3.0.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/UnAEo77V/versions/mNiR4gid/cluttered-[Forge]-3.0.2-1.20.1.jar",
+                    "id": "mNiR4gid",
+                    "parent_id": "UnAEo77V",
+                    "hashes": {
+                        "sha512": "fef1c379ef924324137dfdd0c533fc78a1f22f6568b5cb7dfa692bbfedc7ce98f4b2f6fc0b94d36237d9a19876e13136710f0052523e4c4b3ecefe120292c25d",
+                        "sha1": "3529dc56ab21f355176032d5ff7456a6bc95f129"
+                    },
+                    "required_dependencies": [],
+                    "size": 5552095,
+                    "date_published": "2025-11-03T04:07:12.772326Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "5s7CrcTUORQxpIzh",
             "pakku_links": [
                 "JCsFAOuQHQwi2ASm"
@@ -2268,6 +2331,77 @@
                     ],
                     "size": 49358,
                     "date_published": "2024-06-19T16:57:04.577Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "mYcEgHQaCT4OBQIz",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh",
+                "Z5ABSfuXE0jplGgO"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "cobblemontrainers",
+                "modrinth": "cobblemontrainers"
+            },
+            "name": {
+                "curseforge": "CobblemonTrainers (Discontinued)",
+                "modrinth": "CobblemonTrainers (Discontinued)"
+            },
+            "id": {
+                "curseforge": "959503",
+                "modrinth": "1QV9wNCJ"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CobblemonTrainers-1.1.11+1.5.2-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5601/803/CobblemonTrainers-1.1.11+1.5.2-forge.jar",
+                    "id": "5601803",
+                    "parent_id": "959503",
+                    "hashes": {
+                        "sha1": "5a7309a14211f4d3c5900b405c99588d7d00fe80",
+                        "md5": "6935a24c8e582453eb886ec3b7a5ee03"
+                    },
+                    "required_dependencies": [
+                        "687131",
+                        "419699"
+                    ],
+                    "size": 218546,
+                    "date_published": "2024-08-06T14:02:28.957Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "CobblemonTrainers-1.1.11+1.5.2-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/1QV9wNCJ/versions/fyqgHfzB/CobblemonTrainers-1.1.11+1.5.2-forge.jar",
+                    "id": "fyqgHfzB",
+                    "parent_id": "1QV9wNCJ",
+                    "hashes": {
+                        "sha512": "923607cfd68a5c9c3e9f7510babf47245c0ba64ebf5a52f8126fe19f0687828eaacf5cd729a6f32aed9b558a15af4c6a2e55d5781859d4dc31b8b668f2916055",
+                        "sha1": "5a7309a14211f4d3c5900b405c99588d7d00fe80"
+                    },
+                    "required_dependencies": [
+                        "MdwFAVRL",
+                        "lhGA9TYQ"
+                    ],
+                    "size": 218546,
+                    "date_published": "2024-08-06T14:01:34.285232Z"
                 }
             ]
         },
@@ -9974,6 +10108,77 @@
             ]
         },
         {
+            "pakku_id": "31qWKTTO8o9sG7iy",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh",
+                "mYcEgHQaCT4OBQIz"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "rctmod",
+                "modrinth": "rctmod"
+            },
+            "name": {
+                "curseforge": "Radical Cobblemon Trainers",
+                "modrinth": "Radical Cobblemon Trainers"
+            },
+            "id": {
+                "curseforge": "1009534",
+                "modrinth": "lRwTUnD7"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rctmod-forge-1.20.1-0.12.1-beta.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5993/954/rctmod-forge-1.20.1-0.12.1-beta.jar",
+                    "id": "5993954",
+                    "parent_id": "1009534",
+                    "hashes": {
+                        "sha1": "6254cae31f23d7d9800436f15e0d796083b0a971",
+                        "md5": "bca2189b3473a4d2dfe0ded51f53b668"
+                    },
+                    "required_dependencies": [
+                        "687131",
+                        "959503"
+                    ],
+                    "size": 2389627,
+                    "date_published": "2024-12-15T18:41:35.733Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "rctmod-forge-1.20.1-0.12.1-beta.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/lRwTUnD7/versions/8edTHlEm/rctmod-forge-1.20.1-0.12.1-beta.jar",
+                    "id": "8edTHlEm",
+                    "parent_id": "lRwTUnD7",
+                    "hashes": {
+                        "sha512": "304d390c8f664278ae1f340e30f71833592cd841a37233aa1f3171220ef56821c94994ee509bf7b5c1603d06c95c5e2ae8cd11c0f2c824f9accee5775ecaf072",
+                        "sha1": "6254cae31f23d7d9800436f15e0d796083b0a971"
+                    },
+                    "required_dependencies": [
+                        "1QV9wNCJ",
+                        "MdwFAVRL"
+                    ],
+                    "size": 2389627,
+                    "date_published": "2024-12-15T18:41:43.807157Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ODSmiQQ2AtsKdJXY",
             "type": "MOD",
             "slug": {
@@ -10420,6 +10625,59 @@
                     ],
                     "size": 2218573,
                     "date_published": "2025-02-11T20:06:51.840Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "f6TyjNFu8mIAvgpi",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rocket-mons"
+            },
+            "name": {
+                "curseforge": "Rocket Mons [Cobblemon]"
+            },
+            "id": {
+                "curseforge": "1176743"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rocket_mons-1.0.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.2-Snapshot",
+                        "1.20.5-Snapshot",
+                        "1.20.3-Snapshot",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20-Snapshot"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6073/696/rocket_mons-1.0.jar",
+                    "id": "6073696",
+                    "parent_id": "1176743",
+                    "hashes": {
+                        "sha1": "9ceaef2fc3ca742768d5295dc3daa5031c751a03",
+                        "md5": "31bed742c4c0672b765c7cdc5e223d14"
+                    },
+                    "required_dependencies": [
+                        "687131"
+                    ],
+                    "size": 189946,
+                    "date_published": "2025-01-10T16:26:21.187Z"
                 }
             ]
         },
