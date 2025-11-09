@@ -1828,47 +1828,6 @@
             ]
         },
         {
-            "pakku_id": "uTD9IEKcFJ1YwMw2",
-            "pakku_links": [
-                "5s7CrcTUORQxpIzh"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "cobble-workers"
-            },
-            "name": {
-                "curseforge": "Cobble Workers"
-            },
-            "id": {
-                "curseforge": "1375081"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "cobble_workers-0.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7175/788/cobble_workers-0.3.jar",
-                    "id": "7175788",
-                    "parent_id": "1375081",
-                    "hashes": {
-                        "sha1": "5f29165d01a8d78723580d10dfc9911d7b0e70aa",
-                        "md5": "7729946b09936776cf42302e9576366a"
-                    },
-                    "required_dependencies": [
-                        "687131"
-                    ],
-                    "size": 180268,
-                    "date_published": "2025-11-01T22:29:13.547Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "5s7CrcTUORQxpIzh",
             "pakku_links": [
                 "JCsFAOuQHQwi2ASm"
@@ -1942,6 +1901,47 @@
                     "required_dependencies": [],
                     "size": 95266,
                     "date_published": "2024-07-15T17:34:31.030Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "l2aAIdJDi666aBnV",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cobblemon-farmers"
+            },
+            "name": {
+                "curseforge": "Cobblemon Farmers"
+            },
+            "id": {
+                "curseforge": "1375081"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cobble_workers-0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7175/788/cobble_workers-0.3.jar",
+                    "id": "7175788",
+                    "parent_id": "1375081",
+                    "hashes": {
+                        "sha1": "5f29165d01a8d78723580d10dfc9911d7b0e70aa",
+                        "md5": "7729946b09936776cf42302e9576366a"
+                    },
+                    "required_dependencies": [
+                        "687131"
+                    ],
+                    "size": 180268,
+                    "date_published": "2025-11-01T22:29:13.547Z"
                 }
             ]
         },
