@@ -8,6 +8,7 @@ ServerEvents.recipes((e) => {
   e.smelting("society:rubber", "society:sap").xp(0.35);
   e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
   e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
+  e.smelting("quark:charcoal_block", "meadow:fire_log").xp(4.0);
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
@@ -63,6 +64,11 @@ ServerEvents.recipes((e) => {
       item: "society:mexican_street_corn",
     },
   });
+  e.shapeless("quark:slime_in_a_bucket", [
+    "society:petrified_slime",
+    "species:youth_potion",
+    "minecraft:bucket",
+  ]);
   e.shapeless("minecraft:magenta_dye", ["windswept:lavender"]);
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);

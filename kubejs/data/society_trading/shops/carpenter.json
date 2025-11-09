@@ -3,6 +3,7 @@
   "name": "shop.society_trading.carpenter",
   "texture": "supplementaries:textures/block/cabin_siding_side",
   "jei_catalyst": { "item": "meadow:woodcutter" },
+  "selector_weight": -96,
   "trades": [
     {
       "offer": { "item": "society:fantasy_box_bone", "count": 1 },
@@ -15,24 +16,14 @@
       "trade_id": "carpenter_fantasy_box_bone"
     },
     {
-      "offer": { "item": "society:bee_wallpaper", "count": 8 },
+      "offer": { "item": "tanukidecor:holiday_tree", "count": 1 },
       "request": {
-        "item": "numismatics:cog",
-        "count": 4
+        "item": "numismatics:crown",
+        "count": 1
       },
-      "numismatics_cost": 256,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
-      "trade_id": "carpenter_bee_wallpaper"
-    },
-    {
-      "offer": { "item": "society:hive_wallpaper", "count": 8 },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 4
-      },
-      "numismatics_cost": 256,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
-      "trade_id": "carpenter_hive_wallpaper"
+      "numismatics_cost": 512,
+      "seasons_required": ["late_winter"],
+      "trade_id": "carpenter_holiday_tree"
     },
     {
       "offer": { "item": "society:hive_baseboard", "count": 8 },
@@ -41,7 +32,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": ["early_spring"],
       "trade_id": "carpenter_hive_baseboard"
     },
     {
@@ -50,7 +41,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
-      "seasons_required": ["early_winter", "mid_swinter", "late_winter"],
+      "seasons_required": ["early_winter"],
       "numismatics_cost": 256,
       "trade_id": "carpenter_bunny_wallpaper"
     },
@@ -61,7 +52,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_winter", "mid_swinter", "late_winter"],
+      "seasons_required": ["early_winter"],
       "trade_id": "carpenter_bunny_baseboard"
     },
     {
@@ -70,7 +61,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": ["early_summer"],
       "numismatics_cost": 256,
       "trade_id": "carpenter_cloud_wallpaper"
     },
@@ -81,7 +72,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": ["early_summer"],
       "trade_id": "carpenter_cloud_baseboard"
     },
     {
@@ -90,7 +81,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": ["early_autumn"],
       "numismatics_cost": 256,
       "trade_id": "carpenter_pink_flower_wallpaper"
     },
@@ -101,7 +92,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": ["early_autumn"],
       "trade_id": "carpenter_pink_flower_baseboard"
     },
     {
@@ -234,9 +225,9 @@
       "offer": { "item": "create:limestone", "count": 8 },
       "request": {
         "item": "numismatics:cog",
-        "count": 2
+        "count": 1
       },
-      "numismatics_cost": 128,
+      "numismatics_cost": 64,
       "trade_id": "carpenter_limestone"
     },
     {
@@ -500,6 +491,450 @@
       },
       "numismatics_cost": 81920,
       "trade_id": "market_universal_methods_of_farming"
+    }
+  ],
+  "random_sets": [
+    {
+      "random_style": "per_day",
+      "rolled_count": 1,
+      "seasons_required": ["early_spring"],
+      "trades": [
+        {
+          "offer": { "item": "society:bee_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_bee_wallpaper"
+        },
+        {
+          "offer": { "item": "society:hive_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_hive_wallpaper"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["mid_spring"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:checkered_green_strawberry_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_checkered_green_strawberry_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_green_grapes", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_green_grapes"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_strawberry", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_strawberry"
+        },
+        {
+          "offer": { "item": "cluttered:checkered_pink_strawberry_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_checkered_pink_strawberry_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_lemon", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_lemon"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["late_spring"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:striped_floral_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_striped_floral_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:confectionary_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_confectionary_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:tartan_yellow_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_tartan_yellow_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:checkered_pink_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_checkered_pink_wallpaperr"
+        },
+        {
+          "offer": { "item": "cluttered:checkered_green_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_checkered_green_wallpaper"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["mid_summer"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_blueberry", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_blueberry"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_orange", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_orange"
+        },
+        {
+          "offer": { "item": "cluttered:checkered_fruit_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_checkered_fruit_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:chic_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_chic_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:pink_striped_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_pink_striped_wallpaper"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["late_summer"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:blue_rose_striped_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_blue_rose_striped_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:rialto_gold_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_rialto_gold_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:marigold_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_marigold_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:fish_wallpaper_tropical", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_fish_wallpaper_tropical"
+        },
+        {
+          "offer": { "item": "cluttered:floral_berry_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_floral_berry_wallpaper"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["mid_autumn"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_red_mushroom", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_red_mushroom"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_brown_mushroom", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_brown_mushroom"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_plum", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_plum"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_pear", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_pear"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_apple", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_apple"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["late_autumn"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:apple_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_apple_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:halloween_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_halloween_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:ghost_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_floral_ghost_wallpaper"
+        },
+
+        {
+          "offer": { "item": "cluttered:ghost_wallpaper_wainscoting", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_ghost_wallpaper_wainscoting"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_bones", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_bones"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["mid_winter"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_blackberry", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_blackberry"
+        },
+        {
+          "offer": { "item": "cluttered:retro_rainbow_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_retro_rainbow_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_purple_grapes", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_purple_grapes"
+        },
+        {
+          "offer": { "item": "cluttered:diamond_wallpaper_anchor", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_diamond_wallpaper_anchor"
+        },
+        {
+          "offer": { "item": "cluttered:floral_border_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_floral_border_wallpaper"
+        }
+      ]
+    },
+    {
+      "random_style": "per_day",
+      "rolled_count": 2,
+      "seasons_required": ["late_winter"],
+      "trades": [
+        {
+          "offer": { "item": "cluttered:fish_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_fish_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:dark_starry_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_dark_starry_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:starry_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_starry_wallpaper"
+        },
+        {
+          "offer": { "item": "cluttered:mint_wallpaper", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 4
+          },
+          "numismatics_cost": 256,
+          "trade_id": "carpenter_mint_wallpaper"
+        },
+        {
+          "offer": { "item": "windswept:pinecone_shingles", "count": 8 },
+          "request": {
+            "item": "numismatics:cog",
+            "count": 2
+          },
+          "numismatics_cost": 128,
+          "trade_id": "carpenter_pinecone_shingles"
+        }
+      ]
     }
   ]
 }

@@ -26,7 +26,7 @@ global.springRiver = [
   { fish: "aquaculture:pink_salmon", weight: 9, night: true },
   { fish: "aquaculture:catfish", weight: 8, night: true, requiresRain: true },
   { fish: "aquaculture:bayad", weight: 5, night: true, requiresRain: true },
-  { fish: "unusualfishmod:raw_blind_sailfin", weight: 3 },
+  { fish: "unusualfishmod:raw_blind_sailfin", weight: 5 },
 ];
 global.springFresh = [
   { fish: "aquaculture:minnow", weight: 11 },
@@ -136,7 +136,7 @@ global.autumnFresh = [
   { fish: "aquaculture:perch", weight: 9 },
   { fish: "aquaculture:carp", weight: 10 },
   { fish: "aquaculture:gar", weight: 5, requiresRain: true },
-  { fish: "unusualfishmod:raw_bark_angelfish", weight: 2 },
+  { fish: "unusualfishmod:raw_bark_angelfish", weight: 4 },
   {
     fish: "unusualfishmod:raw_amber_goby",
     weight: 1,
@@ -267,7 +267,7 @@ global.handleFishHarvest = (block, player, server, basket) => {
     valid: valid,
     mature: false,
     upgraded: upgraded,
-    quest: quest
+    quest: quest,
   });
   if (basket) return harvestOutputs;
   harvestOutputs.forEach((item) => {
@@ -276,16 +276,16 @@ global.handleFishHarvest = (block, player, server, basket) => {
 };
 
 global.handleFishExtraction = (block, player, server) => {
-  const { facing, valid, mature, upgraded, quest } = global.getPondProperties(block);
   let nbt = block.getEntityData();
-  const { type, population } = nbt.data;
+  const { type, population, non_native_fish } = nbt.data;
+  let naturalPopulation = population - non_native_fish;
   let result;
-  let resultCount = player.stages.has("mitosis") ? 2 : 1;
+  let resultCount = player.stages.has("mitosis") && naturalPopulation > 0 ? 2 : 1;
   let quality = 0;
-  if (player.stages.has("bullfish_jobs") && Number(population) > 3) {
+  if (player.stages.has("bullfish_jobs") && Number(naturalPopulation) > 3) {
     quality = Math.floor((Number(population) - 3) / 2);
   }
-  if (player.stages.has("hot_hands")) {
+  if (player.stages.has("hot_hands") && naturalPopulation > 0) {
     server.runCommandSilent(
       `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`
     );
@@ -299,29 +299,23 @@ global.handleFishExtraction = (block, player, server) => {
       quality > 0 ? `{quality_food:{quality:${quality}}}` : null
     );
   } else {
-    if (["aquaculture:leech", "aquaculture:minnow"].includes(item)) {
+    if (["aquaculture:leech", "aquaculture:minnow"].includes(type)) {
       result = Item.of(
-        `${resultCount}x ${item}`,
+        `${resultCount}x ${type}`,
         quality > 0 ? `{Damage:0,quality_food:{quality:${quality},effects:[]}}` : `{Damage:0}`
       );
     } else {
       result = Item.of(
-        `${resultCount}x ${item}`,
+        `${resultCount}x ${type}`,
         quality > 0 ? `{quality_food:{quality:${quality},effects:[]}}` : null
       );
     }
   }
   if (result) {
-    block.set(block.id, {
-      facing: facing,
-      valid: valid,
-      mature: mature,
-      upgraded: upgraded,
-      quest: quest,
-    });
     nbt.merge({
       data: {
         population: decreaseStage(population),
+        non_native_fish: non_native_fish > 0 ? decreaseStage(non_native_fish) : 0,
       },
     });
 
@@ -449,7 +443,7 @@ global.handleFishPondTick = (tickEvent) => {
     level.getBlock(block.pos)
   );
   let nbt = block.getEntityData();
-  const { type, population, max_population, quest_id } = nbt.data;
+  const { type, population, max_population, non_native_fish } = nbt.data;
   const fish = global.fishPondDefinitions.get(type);
   if (!type.equals("") && tickEvent.tick % 20 === 0) {
     block.set(block.id, {
@@ -511,13 +505,14 @@ global.handleFishPondTick = (tickEvent) => {
           },
         });
         block.setEntityData(nbt);
-        block.set(block.id, {
-          facing: facing,
-          valid: valid,
-          mature: true,
-          upgraded: upgraded,
-          quest: quest,
+      }
+      if (population === max_population && non_native_fish > 0) {
+        nbt.merge({
+          data: {
+            non_native_fish: decreaseStage(non_native_fish),
+          },
         });
+        block.setEntityData(nbt);
       }
     }
   }

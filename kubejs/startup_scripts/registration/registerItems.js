@@ -484,10 +484,12 @@ StartupEvents.registry("item", (e) => {
       food.saturation(0.5);
       food.effect("minecraft:nausea", 600, 1, 1.0);
     })
+    .tag("society:small_mayonnaise")
     .useAnimation("drink");
 
   e.create("society:large_mayonnaise")
     .texture("society:item/mayo/large_mayonnaise")
+    .tag("society:large_mayonnaise")
     .food((food) => {
       food.hunger(8);
       food.saturation(0.5);
@@ -518,6 +520,7 @@ StartupEvents.registry("item", (e) => {
   mayoEggs.forEach((egg) => {
     e.create(`society:${egg}_mayonnaise`)
       .texture(`society:item/mayo/${egg}_mayonnaise`)
+      .tag("society:small_mayonnaise")
       .food((food) => {
         food.hunger(4);
         food.saturation(0.5);
@@ -526,6 +529,7 @@ StartupEvents.registry("item", (e) => {
     if (largeMayoEggs.includes(egg)) {
       e.create(`society:large_${egg}_mayonnaise`)
         .texture(`society:item/mayo/large_${egg}_mayonnaise`)
+        .tag("society:large_mayonnaise")
         .food((food) => {
           food.hunger(8);
           food.saturation(0.5);

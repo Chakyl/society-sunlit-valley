@@ -30,7 +30,7 @@ global.runFeedingTrough = (be, inventory, block, level) => {
         boost = 100;
       } else if (hasManaFeed && global.useInventoryItems(inventory, "society:mana_feed", 1) == 1) {
         fed = true;
-        boost = 40;
+        boost = 30;
       } else if (
         hasAnimalFeed &&
         global.useInventoryItems(inventory, "society:animal_feed", 1) == 1

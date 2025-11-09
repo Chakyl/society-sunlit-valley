@@ -52,7 +52,7 @@ global.getMilk = (target, data, player, day, raiseEffection) => {
   let hearts = Math.floor(affection / 100);
   const freshAnimal = global.isFresh(day, ageLastMilked);
   let affectionIncrease = 0;
-  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
+  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 10 : 5;
   let quality = 0;
   if (
     !target.isBaby() &&
@@ -93,8 +93,6 @@ global.handleSpecialHarvest = (
   const freshAnimal = global.isFresh(day, ageLastDroppedSpecial);
   const hungry = day - ageLastFed > 1;
   const affection = data.getInt("affection") || 0;
-  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const heartBonus = hearts === 10 ? 2 : 1;
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
     let resolvedItem;
@@ -115,7 +113,7 @@ global.handleSpecialHarvest = (
             forage.chance,
             hungry,
             forage.minHearts,
-            heartBonus * resolvedCount,
+            resolvedCount,
             resolvedItem,
             forage.hasQuality,
             {
@@ -190,7 +188,7 @@ global.getMagicShearsOutput = (level, target, player, server) => {
   let newLoot = [];
   if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
     data.ageLastMagicHarvested = day;
-    data.affection = affection - 15;
+    data.affection = affection - 7;
     level.spawnParticles(
       "snowyspirit:glow_light",
       true,
@@ -223,7 +221,7 @@ global.getMagicShearsOutput = (level, target, player, server) => {
     if (player.stages.has("heretic")) {
       newLoot.push(Item.of("3x society:sparkstone"));
       target.attack(2);
-      data.affection = affection - 35;
+      data.affection = affection - 20;
     }
     return newLoot;
   } else return -1;

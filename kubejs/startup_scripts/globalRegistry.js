@@ -496,7 +496,7 @@ global.animalProducts = [
   { item: "society:large_duck_egg", value: 32 },
   { item: "society:large_goose_egg", value: 64 },
   { item: "society:large_turkey_egg", value: 128 },
-  { item: "farmlife:galliraptor_egg", value: 256 },
+  { item: "farmlife:galliraptor_egg", value: 200 },
   { item: "society:large_galliraptor_egg", value: 1024 },
   { item: "species:birt_egg", value: 12 },
   { item: "species:wraptor_egg", value: 40 },
@@ -719,7 +719,7 @@ global.artisanGoods = [
   { item: "society:duck_mayonnaise", value: 64 },
   { item: "society:goose_mayonnaise", value: 128 },
   { item: "society:turkey_mayonnaise", value: 256 },
-  { item: "society:galliraptor_mayonnaise", value: 2048 },
+  { item: "society:galliraptor_mayonnaise", value: 1600 },
   { item: "society:parrot_mayonnaise", value: 512 },
   { item: "society:turtle_mayonnaise", value: 1024 },
   { item: "society:sniffer_mayonnaise", value: 1536 },
@@ -731,12 +731,12 @@ global.artisanGoods = [
   { item: "society:large_duck_mayonnaise", value: 256 },
   { item: "society:large_goose_mayonnaise", value: 512 },
   { item: "society:large_turkey_mayonnaise", value: 1024 },
-  { item: "society:large_galliraptor_mayonnaise", value: 8192 },
+  { item: "society:large_galliraptor_mayonnaise", value: 4096 },
   { item: "society:birt_mayonnaise", value: 96 },
   { item: "society:wraptor_mayonnaise", value: 320 },
   { item: "society:springling_mayonnaise", value: 1024 },
   { item: "society:penguin_mayonnaise", value: 1536 },
-  { item: "society:flamingo_mayonnaise", value: 3072 },
+  { item: "society:flamingo_mayonnaise", value: 2400 },
   { item: "society:cruncher_mayonnaise", value: 4096 },
   { item: "society:oak_resin", value: 48 },
   { item: "society:maple_syrup", value: 192 },
@@ -1827,7 +1827,7 @@ global.slimeHearts = [];
 global.plorts.forEach((plort) => {
   global.slimeHearts.push({
     type: plort.type,
-    value: Math.floor(plort.value * 16 * 1.5),
+    value: Math.floor(plort.value * 16),
   });
 });
 
@@ -2013,13 +2013,13 @@ global.plorts.forEach((plort) => {
   const { type, value } = plort;
   global.trades.set(`splendid_slimes:plort/${type}`, {
     value: value,
-    multiplier: "shippingbin:meat_sell_multiplier",
+    multiplier: "shippingbin:crop_sell_multiplier",
   });
 });
 global.slimeHearts.forEach((heart) => {
   const { type, value } = heart;
   global.trades.set(`splendid_slimes:slime_heart/${type}`, {
     value: value,
-    multiplier: "shippingbin:meat_sell_multiplier",
+    multiplier: "shippingbin:crop_sell_multiplier",
   });
 });

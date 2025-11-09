@@ -190,8 +190,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:amulet_of_light",
-      tooltip:
-        "A very normal and holy pendant",
+      tooltip: "A very normal and holy pendant",
     },
     {
       item: "society:aquamagical_dust",
@@ -1006,6 +1005,33 @@ ItemEvents.tooltip((tooltip) => {
       }
     }
   );
+  // Beds
+  global.animalBeds.forEach((bed) => {
+    tooltip.addAdvanced(`society:${bed}_bed`, (item, advanced, text) => {
+      if (tooltip.shift) {
+        text.add(1, Text.green("Supports these animals:"));
+        global.bedDefinitions.get(bed).forEach((animal, index) => {
+          text.add(
+            index + 2,
+            Text.gold(global.formatName(String(animal.split(":")[1]).replace(/_/g, " ")))
+          );
+        });
+      } else {
+        text.add(
+          1,
+          Text.gray("Houses a farm animal, allowing it to have a higher maximum affection")
+        );
+        text.add(2, Text.gold("Only certain animals like this bed!"));
+        text.add(3, [
+          Text.darkGray("Hold ["),
+          Text.gray("Shift"),
+          Text.darkGray("] to view animals"),
+        ]);
+      }
+    });
+  });
+
+  // Magnifying
   const magnifyingBlocks = [
     "Auto-Grabber",
     "Artisan Hoppers",
@@ -1021,7 +1047,6 @@ ItemEvents.tooltip((tooltip) => {
     "Growth Obelisk",
     "Ribbit Hut",
   ];
-  // Translocators
   tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {
     if (tooltip.shift) {
       magnifyingBlocks.forEach((block, index) => {
