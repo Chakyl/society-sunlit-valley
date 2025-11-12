@@ -198,8 +198,8 @@ BlockEvents.rightClicked(
     "society:cheese_press",
   ],
   (e) => {
-    const { block, hand } = e;
-    if (hand == "OFF_HAND") return;
+    const { block, hand, item } = e;
+    if (hand == "OFF_HAND" || item !== "minecraft:air") return;
     const machine = global.artisanMachineDefinitions.filter((obj) => {
       return obj.id === block.id;
     })[0];

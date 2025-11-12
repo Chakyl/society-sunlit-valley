@@ -4,7 +4,7 @@
   "texture": "minecraft:textures/block/loom_front",
   "villager_profession": "shepherd",
   "selector_weight": -97,
-  "jei_catalyst": { "item":"minecraft:loom" },
+  "jei_catalyst": { "item": "minecraft:loom" },
   "trades": [
     {
       "offer": {
@@ -141,15 +141,79 @@
     },
     {
       "offer": {
-        "item": "society:friendship_necklace",
+        "item": "society:coop_bed",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "shepherd_coop_bed"
+    },
+    {
+      "offer": {
+        "item": "society:deluxe_coop_bed",
         "count": 1
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 48
+        "count": 1
       },
-      "numismatics_cost": 196608,
-      "trade_id": "shepherd_friendship_necklace_for_sun"
+      "numismatics_cost": 4096,
+      "trade_id": "shepherd_deluxe_coop_bed"
+    },
+    {
+      "offer": {
+        "item": "society:luxury_coop_bed",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "shepherd_luxury_coop_bed"
+    },
+    {
+      "offer": {
+        "item": "society:barn_bed",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 3
+      },
+      "numismatics_cost": 1536,
+      "trade_id": "shepherd_barn_bed"
+    },
+    {
+      "offer": {
+        "item": "society:deluxe_barn_bed",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "second_request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 6144,
+      "trade_id": "shepherd_deluxe_barn_bed"
+    },
+    {
+      "offer": {
+        "item": "society:luxury_barn_bed",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 6
+      },
+      "numismatics_cost": 24576,
+      "trade_id": "shepherd_luxury_barn_bed"
     },
     {
       "offer": {
@@ -234,6 +298,18 @@
       },
       "numismatics_cost": 16484,
       "trade_id": "shepherd_goat_spawn_egg_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:friendship_necklace",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 48
+      },
+      "numismatics_cost": 196608,
+      "trade_id": "shepherd_friendship_necklace_for_sun"
     }
   ]
 }

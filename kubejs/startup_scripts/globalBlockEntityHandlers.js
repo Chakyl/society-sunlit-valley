@@ -211,7 +211,7 @@ global.artisanInsert = (
   let useCount =
     multipleInputs && item.count >= stageCount - Number(stage) ? stageCount - Number(stage) : 1;
   const recipe = recipes.get(`${item.id}`);
-  // if (!multipleInputs && nbt.data.recipe !== item.id) return;
+  if (multipleInputs && recipe && nbt.data.recipe !== "" && nbt.data.recipe !== item.id) return;
   if (
     getCanTakeItems(
       item,
@@ -662,7 +662,7 @@ global.clearOldTextDisplay = (block, id) => {
     });
 };
 
-global.textDisplayRotationFromFacing = (facing) => {
+global.rotationFromFacing = (facing) => {
   switch (facing) {
     case "north":
       return 180;
@@ -683,10 +683,7 @@ global.spawnTextDisplay = (block, y, id, text) => {
   let newNbt = entity.getNbt();
   newNbt.text = `{"text":"${text}"}`;
   newNbt.background = 0;
-  newNbt.Rotation = [
-    NBT.f(global.textDisplayRotationFromFacing(block.properties.get("facing"))),
-    NBT.f(0),
-  ];
+  newNbt.Rotation = [NBT.f(global.rotationFromFacing(block.properties.get("facing"))), NBT.f(0)];
   entity.setNbt(newNbt);
   entity.setX(x + 0.5);
   entity.setY(y);

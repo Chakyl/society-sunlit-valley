@@ -1,4 +1,6 @@
 //priority: -1
+const Axis = Java.loadClass("com.mojang.math.Axis")
+
 global.renderBedAnimal = (renderer, context) => {
   let lightLevel = LevelRenderer.getLightColor(
     context.blockEntity.level,
@@ -9,6 +11,7 @@ global.renderBedAnimal = (renderer, context) => {
   poseStack.translate(0.5, -0.26, 0.5);
   poseStack.scale(4, 4, 4);
   if (context.blockEntity.block) {
+  poseStack.mulPose(Axis.YP.rotationDegrees(global.rotationFromFacing(context.blockEntity.block.getProperties().get("facing"))));
     const nbt = context.blockEntity.block.getEntityData();
     if (nbt) {
       const { entityID, animalInside } = nbt.data;
