@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "brambleghast-1",
+            "pokemon": "brambleghast",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "28-42",
+            "weight": 3.5,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_desert"
+                ]
+            }
+        }
+    ]
+}

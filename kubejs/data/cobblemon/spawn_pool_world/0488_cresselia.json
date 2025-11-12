@@ -2,36 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "darkrai",
-      "pokemon": "darkrai",
-      "presets": ["natural", "wild"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_plains"],
-        "moonPhase": 4
-      }
-    },
-    {
-      "id": "darkrai",
-      "pokemon": "darkrai",
-      "presets": ["natural", "wild"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_plains"],
-        "moonPhase": 6
-      }
-    }
-  ]
+  "spawns": []
 }

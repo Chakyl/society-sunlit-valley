@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "bombirdier-1",
+            "pokemon": "bombirdier",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "25-44",
+            "weight": 4.25,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_plains"
+                ]
+            }
+        }
+    ]
+}

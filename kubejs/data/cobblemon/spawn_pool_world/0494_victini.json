@@ -2,21 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "victini-1",
-      "pokemon": "victini",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 3.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_savanna"],
-        "timeRange": "morning",
-        "neededBaseBlocks": ["minecraft:grass_block"]
-      }
-    }
-  ]
+  "spawns": []
 }

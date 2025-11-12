@@ -2,20 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "shaymin-1",
-      "pokemon": "shaymin",
-      "presets": ["natural"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 3.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_floral"]
-      }
-    }
-  ]
+  "spawns": []
 }

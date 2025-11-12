@@ -15,10 +15,10 @@ const getWaterType = (biome) => {
     .map((tagkey) => tagkey.location())
     .toList()
     .toString();
-  if (biomeTags.includes("#minecraft:is_ocean", "#minecraft:is_beach")) {
+  if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
     return "ocean";
   }
-  if (biomeTags.includes("minecraft:is_rive")) {
+  if (biomeTags.includes("minecraft:is_river")) {
     return "river";
   }
   return "fresh";

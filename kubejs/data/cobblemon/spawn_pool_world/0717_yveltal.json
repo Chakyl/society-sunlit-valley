@@ -2,20 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "yveltal-1",
-      "pokemon": "yveltal",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_spooky"],
-        "timeRange": "night"
-      }
-    }
-  ]
+  "spawns": []
 }

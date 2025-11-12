@@ -2,34 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "zekrom-1",
-      "pokemon": "zekrom",
-      "presets": ["natural"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "isThundering": true,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_mountain"]
-      }
-    },
-    {
-      "id": "zekrom-2",
-      "pokemon": "zekrom",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#minecraft:is_end"]
-      }
-    }
-  ]
+  "spawns": []
 }

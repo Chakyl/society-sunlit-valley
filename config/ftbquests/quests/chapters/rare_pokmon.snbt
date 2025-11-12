@@ -32,7 +32,7 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Scream Trail"
-			x: -4.0d
+			x: -2.0d
 			y: -1.0d
 		}
 		{
@@ -59,7 +59,7 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Flutter Mane"
-			x: -2.0d
+			x: 0.0d
 			y: -1.0d
 		}
 		{
@@ -85,7 +85,7 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Slither Wing"
-			x: 0.0d
+			x: 2.0d
 			y: -1.0d
 		}
 		{
@@ -111,14 +111,14 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Roaring Moon"
-			x: 2.0d
+			x: 4.0d
 			y: -1.0d
 		}
 		{
 			id: "497269BD63D3CAB5"
 			shape: "none"
 			size: 2.0d
-			subtitle: "Not Yet Implemented"
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nFrozen Caves"
 			tasks: [{
 				action: "catch"
 				amount: 1L
@@ -136,15 +136,15 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Roaring Moon"
-			x: 4.0d
+			title: "Walking Wake"
+			x: 6.0d
 			y: -1.0d
 		}
 		{
 			id: "4AC2C482DBE3C0B2"
 			shape: "none"
 			size: 2.0d
-			subtitle: "Not Yet Implemented"
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nFrozen Maelstrom"
 			tasks: [{
 				action: "catch"
 				amount: 1L
@@ -163,7 +163,7 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Roaring Moon"
-			x: 6.0d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -583,6 +583,59 @@
 			title: "Ultra Beast Master"
 			x: -7.0d
 			y: -5.0d
+		}
+		{
+			id: "2118ADCB33C9C583"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nBlackstone Caves"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "28897306AB4A7D7F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:gougingfire"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Gouging Fire"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			description: [""]
+			id: "3E1B759B00428FB6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "&6Ultra-Rare&r\\nSkull Cavern\\nDesert Caves"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "494A8021733D582F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:sandyshocks"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Sandy Shocks"
+			x: -4.0d
+			y: -1.0d
 		}
 	]
 	title: "Rare Pokémon"

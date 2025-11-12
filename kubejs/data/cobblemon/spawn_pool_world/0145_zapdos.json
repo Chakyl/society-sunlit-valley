@@ -2,37 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "zapdos",
-      "pokemon": "zapdos",
-      "presets": ["natural"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "canSeeSky": true,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_peak"],
-        "isThundering": true
-      }
-    },
-    {
-      "id": "zapdos-galarian",
-      "pokemon": "zapdos galarian",
-      "presets": ["natural"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "canSeeSky": true,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_floral"]
-      }
-    }
-  ]
+  "spawns": []
 }

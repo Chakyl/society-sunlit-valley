@@ -2,35 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "reshiram-1",
-      "pokemon": "reshiram",
-      "presets": ["natural"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "isRaining": false,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_mountain"],
-        "timeRange": "day"
-      }
-    },
-    {
-      "id": "reshiram-2",
-      "pokemon": "reshiram",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#minecraft:is_nether"]
-      }
-    }
-  ]
+  "spawns": []
 }

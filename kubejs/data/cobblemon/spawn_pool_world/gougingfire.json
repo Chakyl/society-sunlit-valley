@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "gougingfire-1",
+      "pokemon": "gougingfire",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:blackstone_caves"]
+      }
+    }
+  ]
+}

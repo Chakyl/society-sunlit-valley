@@ -2,34 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "groudon-1",
-      "pokemon": "groudon",
-      "presets": ["natural"],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "isRaining": false,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_badlands", "#cobblemon:is_savanna"]
-      }
-    },
-    {
-      "id": "groudon-2",
-      "pokemon": "groudon",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#minecraft:is_nether"]
-      }
-    }
-  ]
+  "spawns": []
 }

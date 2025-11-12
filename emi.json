@@ -1,6 +1,25 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cobblemon:medicinal_brew",
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:liquid_medicinal_brew",
+      "amount": 1000
+    },
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:liquid_potion",
+      "amount": 250
+    },
+    "item:cobblemon:potion",
+    "item:minecraft:cobblestone",
+    "#item:forge:cobblestone",
+    "#item:minecraft:stone_tool_materials",
+    "item:minecraft:stone_pickaxe{Damage:0}",
+    "item:meadow:cobbled_limestone",
+    "item:minecraft:wooden_pickaxe{Damage:0}",
+    "item:minecraft:iron_pickaxe{Damage:0}",
     "item:society:relic_trove",
     "item:cobblemon:small_budding_sky_tumblestone",
     "item:brewery:beer_hops",
@@ -183,9 +202,7 @@
       "id": "society:mayonnaise_machine",
       "amount": 3
     },
-    "item:minecraft:iron_pickaxe{Damage:0}",
     "item:society:iron_upgrade_smithing_template",
-    "item:minecraft:stone_pickaxe{Damage:0}",
     "item:rehooked:wood_hook",
     "item:dew_drop_farmland_growth:high_quality_fertilizer",
     "item:cobblemon:surprise_mulch",
@@ -224,7 +241,6 @@
     "item:cobblemon:hyper_potion",
     "item:cobblemon:max_potion",
     "item:cobblemon:full_restore",
-    "item:cobblemon:medicinal_brew",
     {
       "type": "fluid",
       "id": "create_klinks_n_klangs:hp_up",
@@ -281,11 +297,6 @@
     "item:herbalbrews:mixed_tea_leaf_block",
     "item:herbalbrews:oolong_tea_leaf_block",
     "item:herbalbrews:dried_oolong_tea",
-    {
-      "type": "fluid",
-      "id": "create_klinks_n_klangs:liquid_medicinal_brew",
-      "amount": 0
-    },
     "item:create_klinks_n_klangs:wrapper",
     {
       "type": "fluid",
@@ -386,11 +397,6 @@
     },
     {
       "type": "fluid",
-      "id": "create_klinks_n_klangs:liquid_potion",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
       "id": "create_klinks_n_klangs:protein",
       "amount": 0
     },
@@ -444,7 +450,6 @@
     "item:cobblemon:flying_gem",
     "item:cobblemon:ability_capsule",
     "item:cobblemon:float_stone",
-    "item:cobblemon:potion",
     "item:cobblemon:red_card",
     "item:cobblemon:cleanse_tag",
     "item:cobblemon:deep_sea_tooth",
@@ -859,11 +864,6 @@
     "item:quark:permafrost",
     "item:quark:permafrost_wall",
     "item:cobblemon:dusk_stone_ore",
-    {
-      "type": "item",
-      "id": "minecraft:cobblestone",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "pamhc2trees:plumitem",
@@ -1745,11 +1745,7 @@
       "type": "fluid",
       "id": "society:starfruit_juice",
       "amount": 250
-    },
-    "item:society:starfruit_juice",
-    "item:vinery:apple_press",
-    "item:cobblemon:wiki_berry",
-    "item:botania:horn_grass"
+    }
   ],
   "craft_history": [
     "minecraft:barrel",

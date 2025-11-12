@@ -2,34 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "cosmog-1",
-      "pokemon": "cosmog",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "30-50",
-      "weight": 1.0,
-      "condition": {
-        "canSeeSky": true,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_floral"],
-        "timeRange": "any"
-      }
-    },
-    {
-      "id": "cosmog-2",
-      "pokemon": "cosmog",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "30-50",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#minecraft:is_end"]
-      }
-    }
-  ]
+  "spawns": []
 }

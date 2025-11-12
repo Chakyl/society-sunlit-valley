@@ -2,24 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "tapulele-1",
-      "pokemon": "tapulele",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "canSeeSky": true,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": [
-          "#cobblemon:is_forest",
-          "#cobblemon:is_jungle",
-          "#cobblemon:is_beach"
-        ]
-      }
-    }
-  ]
+  "spawns": []
 }

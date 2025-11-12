@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "sandaconda-1",
+            "pokemon": "sandaconda",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "14-35",
+            "weight": 3.3,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_desert"
+                ]
+            }
+        }
+    ]
+}

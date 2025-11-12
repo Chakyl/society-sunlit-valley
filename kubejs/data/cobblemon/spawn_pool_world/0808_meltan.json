@@ -2,20 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "meltan-1",
-      "pokemon": "meltan",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "10-31",
-      "weight": 3.0,
-      "condition": {
-        "canSeeSky": false,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_deep_dark"]
-      }
-    }
-  ]
+  "spawns": []
 }

@@ -2,20 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "genesect-1",
-      "pokemon": "genesect",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 3.0,
-      "condition": {
-        "canSeeSky": true,
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_peak", "#cobblemon:is_mountain"]
-      }
-    }
-  ]
+  "spawns": []
 }

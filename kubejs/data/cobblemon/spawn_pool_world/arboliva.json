@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "arboliva-1",
+            "pokemon": "arboliva",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "35-48",
+            "weight": 2.25,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_plains"
+                ]
+            }
+        }
+    ]
+}

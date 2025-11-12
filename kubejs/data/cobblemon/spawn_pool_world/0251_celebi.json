@@ -2,21 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "celebi-1",
-      "pokemon": "celebi",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 3.0,
-      "condition": {
-        "canSeeSky": true,
-        "biomes": ["#cobblemon:is_forest"],
-        "dimensions": ["minecraft:the_end"],
-        "time_range": ["13500-22500"]
-      }
-    }
-  ]
+  "spawns": []
 }

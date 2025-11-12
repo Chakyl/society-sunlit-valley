@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "sandyshocks-1",
+      "pokemon": "sandyshocks",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:desert_caves"]
+      }
+    }
+  ]
+}

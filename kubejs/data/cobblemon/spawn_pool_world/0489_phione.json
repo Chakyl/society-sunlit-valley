@@ -2,19 +2,5 @@
   "enabled": true,
   "neededInstalledMods": [],
   "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "phione-1",
-      "pokemon": "phione",
-      "type": "pokemon",
-      "context": "submerged",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 3.0,
-      "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_ocean"]
-      }
-    }
-  ]
+  "spawns": []
 }
