@@ -1,5 +1,5 @@
 // priority: 0
-console.info("[SOCIETY] cobblemonTags.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobblemonTags.js loaded");
 
 ServerEvents.tags("worldgen/biome", (e) => {
   // Skull Cavern Cobblemon biomes

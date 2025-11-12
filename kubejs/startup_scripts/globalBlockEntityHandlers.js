@@ -211,7 +211,7 @@ global.artisanInsert = (
   let useCount =
     multipleInputs && item.count >= stageCount - Number(stage) ? stageCount - Number(stage) : 1;
   const recipe = recipes.get(`${item.id}`);
-  if (!multipleInputs && nbt.data.recipe !== item.id) return;
+  // if (!multipleInputs && nbt.data.recipe !== item.id) return;
   if (
     getCanTakeItems(
       item,

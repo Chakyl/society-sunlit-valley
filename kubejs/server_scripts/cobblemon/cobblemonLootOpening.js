@@ -1,4 +1,4 @@
-console.info("[SOCIETY] cobblemonLootOpening.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobblemonLootOpening.js loaded");
 
 ItemEvents.rightClicked("sunlit_cobblemon:tm_pack", (e) => {
   const { server, player, item } = e;

@@ -1,5 +1,5 @@
 // priority: -21
-console.info("[SOCIETY] cobbleWorkersRecipes.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobbleWorkersRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
   const createCobbleWorkerRecipe = (

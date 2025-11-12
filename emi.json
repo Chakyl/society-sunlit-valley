@@ -1,6 +1,27 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:society:relic_trove",
+    "item:cobblemon:small_budding_sky_tumblestone",
+    "item:brewery:beer_hops",
+    {
+      "type": "item",
+      "id": "atmospheric:orange",
+      "amount": 18
+    },
+    "item:cobblemon:ancient_citrine_ball",
+    "item:sunlit_cobblemon:dried_legendary_cobbleberry",
+    "item:sunlit_cobblemon:dried_rare_cobbleberry",
+    "item:sunlit_cobblemon:dried_uncommon_cobbleberry",
+    "item:sunlit_cobblemon:dried_common_cobbleberry",
+    "item:society:dried_crystalberry",
+    "item:society:dried_wild_berries",
+    "item:society:recycling_machine",
+    {
+      "type": "item",
+      "id": "society:butterfly_amber",
+      "amount": 64
+    },
     "item:cobblemon:braised_vivichoke",
     "item:cobblemon:leek_and_potato_stew",
     "item:cobblemon:roasted_leek",
@@ -77,10 +98,6 @@
     "item:cobble_workers:gardening_station",
     "item:cobble_workers:mystery_mine",
     "item:cobble_workers:craft_station",
-    "item:sunlit_cobblemon:dried_legendary_cobbleberry",
-    "item:sunlit_cobblemon:dried_rare_cobbleberry",
-    "item:sunlit_cobblemon:dried_uncommon_cobbleberry",
-    "item:sunlit_cobblemon:dried_common_cobbleberry",
     "item:oreganized:raw_lead",
     "item:minecraft:cod",
     "item:minecraft:acacia_sapling",
@@ -135,7 +152,6 @@
     "item:vinery:bolvar_wine",
     "item:vinery:noir_wine",
     "item:vinery:strad_wine",
-    "item:brewery:beer_hops",
     "item:cobblemon:relic_coin_pouch",
     "item:cobblemon:pp_up",
     "item:betterarcheology:sheep_fossil_head",
@@ -192,7 +208,6 @@
       "id": "cobblemon:love_ball",
       "amount": 4
     },
-    "item:society:butterfly_amber",
     "item:cobblemon:nest_ball",
     "item:cobblemon:level_ball",
     "item:cobblemon:luxury_ball",
@@ -281,7 +296,6 @@
     "item:cobblemon:air_balloon",
     "item:cobblemon:ancient_roseate_ball",
     "item:cobblemon:ancient_verdant_ball",
-    "item:cobblemon:ancient_citrine_ball",
     "item:cobblemon:master_ball",
     "item:cobblemon:beast_ball",
     "item:cobblemon:dream_ball",
@@ -832,7 +846,6 @@
       "id": "numismatics:cog",
       "amount": 3
     },
-    "item:society:recycling_machine",
     "item:farmersdelight:basket",
     {
       "type": "item",
@@ -1736,32 +1749,7 @@
     "item:society:starfruit_juice",
     "item:vinery:apple_press",
     "item:cobblemon:wiki_berry",
-    "item:botania:horn_grass",
-    {
-      "type": "item",
-      "id": "meadow:wooden_bucket",
-      "amount": 16
-    },
-    {
-      "type": "item",
-      "id": "windswept:weathered_pine_log",
-      "amount": 16
-    },
-    {
-      "type": "item",
-      "id": "windswept:pinecone",
-      "amount": 27
-    },
-    {
-      "type": "item",
-      "id": "windswept:roasted_chestnuts",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "society:spider_silk",
-      "amount": 2
-    }
+    "item:botania:horn_grass"
   ],
   "craft_history": [
     "minecraft:barrel",

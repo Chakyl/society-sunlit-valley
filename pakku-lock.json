@@ -1038,6 +1038,49 @@
             ]
         },
         {
+            "pakku_id": "dYx3g0zUP8Tw6kGQ",
+            "pakku_links": [
+                "5s7CrcTUORQxpIzh"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "bonimons"
+            },
+            "name": {
+                "modrinth": "BoniMons"
+            },
+            "id": {
+                "modrinth": "mNsZrKvy"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "BoniMons.zip",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "datapack"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/mNsZrKvy/versions/go6G55ma/BoniMons.zip",
+                    "id": "go6G55ma",
+                    "parent_id": "mNsZrKvy",
+                    "hashes": {
+                        "sha512": "79b8b72aac7eb962f3efbf1f46fb87e7de405a3169fa83f06375548f2ed206f058cfc10bf2f1206ed7e2cef2d969cccd09f44b4c9a3c3bf2a9733c1aab7c61b6",
+                        "sha1": "c1902a61b3f2af57cd0d1627266bb7cee1a6ab61"
+                    },
+                    "required_dependencies": [
+                        "MdwFAVRL"
+                    ],
+                    "size": 611385,
+                    "date_published": "2025-04-18T03:38:24.014817Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "847NCyjjQ31hGN4d",
             "type": "MOD",
             "slug": {
@@ -10104,6 +10147,72 @@
                     ],
                     "size": 47170,
                     "date_published": "2024-12-28T05:54:52.323Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "lKnR48y5jVaq8g9l",
+            "pakku_links": [
+                "31qWKTTO8o9sG7iy"
+            ],
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "rct-trainer-textures-plus",
+                "modrinth": "rct-trainer-textures-plus"
+            },
+            "name": {
+                "curseforge": "Radical Cobblemon Trainer Textures Plus",
+                "modrinth": "Radical Cobblemon Trainer Textures Plus"
+            },
+            "id": {
+                "curseforge": "1118199",
+                "modrinth": "ARGDWSQq"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "RCT Trainers+ [1.5] v1.4.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5811/979/RCT Trainers+ [1.5] v1.4.zip",
+                    "id": "5811979",
+                    "parent_id": "1118199",
+                    "hashes": {
+                        "sha1": "c97fbdfc9a764c576acc2f47f36f2d2411c27f43",
+                        "md5": "f21a631792a03fc30512ea6122f3bebf"
+                    },
+                    "required_dependencies": [
+                        "1009534"
+                    ],
+                    "size": 1687924,
+                    "date_published": "2024-10-14T17:18:20.933Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "RCT Trainers+ [1.5] v1.4.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ARGDWSQq/versions/aDaCCzML/RCT Trainers+ [1.5] v1.4.zip",
+                    "id": "aDaCCzML",
+                    "parent_id": "ARGDWSQq",
+                    "hashes": {
+                        "sha512": "bd2f134baf96d9ef0081ab033f62056be2d1e6982d16943bfe2a19bb17cc2d90c5b0b35681d435d720e5c1093f0a6c5c6027cd7503f52bb78dda039d6bae31d6",
+                        "sha1": "c97fbdfc9a764c576acc2f47f36f2d2411c27f43"
+                    },
+                    "required_dependencies": [
+                        "lRwTUnD7"
+                    ],
+                    "size": 1687924,
+                    "date_published": "2024-10-14T17:10:28.419294Z"
                 }
             ]
         },

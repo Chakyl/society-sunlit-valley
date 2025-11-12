@@ -3,7 +3,7 @@ console.info("[SOCIETY-S-COBBLEMON] trainerPodium.js loaded");
 global.runTrainerPodium = (entity) => {
   const { level, block } = entity;
   let nbt = block.getEntityData();
-  const { owner, winStreak } = nbt.data;
+  const { owner } = nbt.data;
   let nearbyPlayers = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
     .filter((scanEntity) => scanEntity.isPlayer());
@@ -14,6 +14,7 @@ global.runTrainerPodium = (entity) => {
     if (player.getUuid().toString() === owner) ownerPlayer = player;
   });
   if (ownerPlayer) {
+    let winStreak = ownerPlayer.persistentData.winStreak
     let nearbyTrainers = level
       .getEntitiesWithin(AABB.ofBlock(block).inflate(16))
       .filter((entityType) => entityType.type === "rctmod:trainer");
@@ -26,7 +27,7 @@ global.runTrainerPodium = (entity) => {
       });
     }
     if (spawnTrainer) {
-      let levelTier = Math.round(global.getPartyLevel(ownerPlayer) / 5) * 5;
+      let levelTier = global.getPlayerPodiumLevelTier(ownerPlayer);
       let trainer = global.getRandomTrainer(Math.min(100, levelTier));
       level
         .getServer()
@@ -44,7 +45,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
-    .box(0, 0, 0, 16, 4, 16)
+    .box(0, 0, 0, 18, 2, 18)
     .defaultCutout()
     .item((item) => {
       item.modelJson({

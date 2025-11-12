@@ -135,13 +135,13 @@
 [too_many_changes_warning]
 	#Set to the positive integer to enable feature. Set to negative integer to disable.
 	#How many changes end user should make for warning to be displayed.
-	count = -1
+	count = 10
 	#With this option, you can select the formulation of this warning, currently supported:
 	#   - NOTIFY: Just saying to the end user that what they made many changes and adding random mods or clicking
 	#the "Update All" button is not a good idea without proper testing. It is expected to crash.
 	#   - DROP_SUPPORT: Saying what you are not providing support for that amount of changes, suggesting the end user to
 	#re-install modpack or they are on their own with that amount of changes.
-	formulation_type = "NOTIFY"
+	formulation_type = "DROP_SUPPORT"
 
 #Settings of analysis feature.
 #Analysing logs for most common reasons of crashes and displaying recommendations with fixes.

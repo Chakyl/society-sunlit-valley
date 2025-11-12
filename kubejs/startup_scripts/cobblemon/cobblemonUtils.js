@@ -445,6 +445,27 @@ const trainerBuckets = new Map([
 ]);
 
 global.getRandomTrainer = (levelBucket) => {
-  const trainerBucket = trainerBuckets.get(Math.min(10, levelBucket - 5));
+  const trainerBucket = trainerBuckets.get(levelBucket);
+  const trainer = trainerBucket[rnd(0, trainerBucket.length)];
+  console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
   return trainerBucket[rnd(0, trainerBucket.length)];
+};
+
+global.getPlayerPodiumLevelTier = (player) =>
+  Math.max(
+    10,
+    Math.round(global.getPartyLevel(player) / 5) * 5 +
+      Math.floor(player.persistentData.winStreak / 10) * 5 -
+      5
+  );
+
+global.getTrainerLevelTier = (trainerID) => {
+  let foundLevel = -1;
+  Array.from(trainerBuckets.keys()).forEach((bucket) => {
+    let foundIndex = trainerBuckets
+      .get(bucket)
+      .findIndex((bucketTrainerID) => bucketTrainerID === trainerID);
+    if (foundIndex !== -1) foundLevel = bucket;
+  });
+  return foundLevel;
 };

@@ -1,4 +1,4 @@
-console.info("[SOCIETY] cobblemonLoot.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobblemonLoot.js loaded");
 
 LootJS.modifiers((e) => {
   e.addBlockLootModifier("society:stone_boulder").pool((p) => {

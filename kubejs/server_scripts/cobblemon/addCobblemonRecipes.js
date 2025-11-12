@@ -1,4 +1,4 @@
-console.info("[SOCIETY] addCobblemonRecipes.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] addCobblemonRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
   e.shaped("sunlit_cobblemon:uncharged_battery", [" zr", "zrz", "rz "], {
