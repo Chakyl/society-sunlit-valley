@@ -3,7 +3,9 @@ console.info("[SOCIETY] animalSpecial.js loaded");
 const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuality, e) => {
   const { player, target, level, server } = e;
   const affection = data.getInt("affection") || 0;
-  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  const bedless = global.animalHasNoBed(data);
+  if (bedless) hearts = 3;
   let quality = 0;
 
   if (!hungry && hearts >= minHearts && Math.random() <= chance) {

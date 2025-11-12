@@ -1,7 +1,7 @@
 console.info("[SOCIETY] animalBeds.js loaded");
 
 global.animalBeds = ["coop", "deluxe_coop", "luxury_coop", "barn", "deluxe_barn", "luxury_barn"];
-
+global.animalHasNoBed = (data) => data.get("boundBed") == null || data.get("boundBed") == "-1";
 global.bedDefinitions = new Map([
   [
     "barn",
@@ -118,7 +118,7 @@ global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
 
     nearbyFarmAnimals.forEach((animal) => {
       let data = animal.persistentData;
-      if (!foundBoundable && data && data.boundBed == undefined) {
+      if (!foundBoundable && data && global.animalHasNoBed(data)) {
         sleepParticles(level, animal.x, animal.y, animal.z);
         const { x, y, z } = block.getPos();
         data.boundBed = { x: x, y: y, z: z };
@@ -145,9 +145,9 @@ global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
             `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 40 ${name} felt at home in the bed!`
           );
         }
-        animal.setRemoved("unloaded_to_chunk");
         block.setEntityData(nbt);
         foundBoundable = true;
+        animal.setRemoved("unloaded_to_chunk");
       }
     });
   }
@@ -162,11 +162,11 @@ global.runAnimalBed = (blockEntity, bedType) => {
     global.bindNearestAnimalToBed(level, block, undefined, undefined, bedType);
   } else {
     let nearbyPlayers = level
-      .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
+      .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
       .filter((scanEntity) => scanEntity.isPlayer());
     if (!level.hasNeighborSignal(block.pos) && nearbyPlayers.length > 0 && animalInside) {
       let animal = level.createEntity(entityID.toString());
-      animal.nbt = entity.copy();
+      animal.nbt = entity;
       animal.nbt.Pos[0] = Number(block.getX());
       animal.nbt.Pos[1] = Number(block.getY() + 0.2);
       animal.nbt.Pos[2] = Number(block.getZ());
@@ -179,7 +179,7 @@ global.runAnimalBed = (blockEntity, bedType) => {
       block.setEntityData(nbt);
     } else if ((level.hasNeighborSignal(block.pos) || nearbyPlayers.length == 0) && !animalInside) {
       let nearbyFarmAnimals = level
-        .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
+        .getEntitiesWithin(AABB.ofBlock(block).inflate(20))
         .filter((scanEntity) => global.checkEntityTag(scanEntity, `society:${bedType}_bed`));
 
       if (boundToAnimal) {
@@ -200,9 +200,10 @@ global.runAnimalBed = (blockEntity, bedType) => {
                 animalInside: true,
               },
             });
-            animal.setRemoved("unloaded_to_chunk");
             block.setEntityData(nbt);
             foundBoundAnimal = true;
+            console.log("removing");
+            animal.setRemoved("unloaded_to_chunk");
           }
         });
       }
@@ -211,20 +212,22 @@ global.runAnimalBed = (blockEntity, bedType) => {
 };
 
 global.animalBeds.forEach((bed) => {
+  let bedWidth = bed.includes("barn") ? 20 : 16;
   StartupEvents.registry("block", (event) => {
     event
       .create(`society:${bed}_bed`, "cardinal")
       .tagBlock("minecraft:mineable/pickaxe")
       .tagBlock("minecraft:mineable/axe")
       .tagBlock("minecraft:needs_stone_tool")
-      .box(0, 0, 0, 16, 4, 16)
+      .box(0, 0, 0, bedWidth, 4, bedWidth)
       .defaultCutout()
+      .tagBlock("society:animal_bed")
       .item((item) => {
         item.modelJson({
-          parent: `society:block/${bed}_bed`,
+          parent: `society:block/animal_beds/${bed}_bed`,
         });
       })
-      .model(`society:block/${bed}_bed`)
+      .model(`society:block/animal_beds/${bed}_bed`)
       .blockEntity((blockInfo) => {
         blockInfo.enableSync();
         blockInfo.initialData({

@@ -6,7 +6,7 @@
 
 //     let newNbt = carpet.getNbt();
 //     newNbt.Rotation = [
-//       NBT.f(global.textDisplayRotationFromFacing(player.getHorizontalFacing())),
+//       NBT.f(global.rotationFromFacing(player.getHorizontalFacing())),
 //       NBT.f(0),
 //     ];
 //     newNbt.CanUpdate = 0;

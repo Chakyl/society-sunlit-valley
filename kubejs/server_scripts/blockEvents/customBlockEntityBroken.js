@@ -38,10 +38,7 @@ const handleBrokenMachine = (block) => {
       else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
     } else if (currentRecipe) {
       if (nbt.data.originalInputs && nbt.data.originalInputs.length > 0) {
-        console.log("yeet");
-        console.log(nbt.data.originalInputs);
         nbt.data.originalInputs.forEach((item) => {
-          console.log(item);
           block.popItem(Item.of(`${item.Count}x ${item.id}`));
         });
       } else {

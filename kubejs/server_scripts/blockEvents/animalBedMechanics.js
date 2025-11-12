@@ -4,16 +4,44 @@ global.animalBeds.forEach((bed) => {
   BlockEvents.rightClicked(`society:${bed}_bed`, (e) => {
     const { player, item, hand, block, level, server } = e;
     let nbt = block.getEntityData();
-    const { boundToAnimal, animalInside, entityID } = nbt.data;
+    const { boundToAnimal, animalInside, entity, entityID } = nbt.data;
     if (boundToAnimal && animalInside) {
       let animal = level.createEntity(entityID.toString());
-      animal.nbt = nbt.data.entity;
+      animal.nbt = entity;
       global.handleHusbandryBase(hand, player, item, animal, level, server);
+      global.handleSpecialHarvest(
+        level,
+        animal,
+        player,
+        server,
+        undefined,
+        undefined,
+        handleSpecialItem
+      );
     }
   });
 
   BlockEvents.placed(`society:${bed}_bed`, (e) => {
-    global.bindNearestAnimalToBed(e.level, e.block, e.player, e.server, bed);
+    const { player, level, block, server } = e;
+    if (bed.includes("barn")) {
+      let open = true;
+      let scannedBlock;
+      for (let pos of BlockPos.betweenClosed(new BlockPos(block.x - 1, block.y, block.z - 1), [
+        block.x + 1,
+        block.y,
+        block.z + 1,
+      ])) {
+        scannedBlock = level.getBlock(pos);
+        if (scannedBlock.id !== "minecraft:air" && !block.getPos().equals(pos)) {
+          open = false;
+        }
+      }
+      if (!open) {
+        player.tell(Text.red("Not enough room to place this Barn Bed"));
+        e.cancel();
+      }
+    }
+    global.bindNearestAnimalToBed(level, block, player, server, bed);
   });
 
   BlockEvents.broken(`society:${bed}_bed`, (e) => {
