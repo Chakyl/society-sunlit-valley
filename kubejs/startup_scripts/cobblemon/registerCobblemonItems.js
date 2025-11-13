@@ -38,6 +38,10 @@ StartupEvents.registry("item", (e) => {
     .texture("sunlit_cobblemon:item/poke_genes")
     .displayName("Poké Genes");
   e.create("sunlit_cobblemon:fairy_heart").texture("sunlit_cobblemon:item/fairy_heart");
+  e.create("sunlit_cobblemon:prismatic_ice")
+  e.create("sunlit_cobblemon:pixie_ice")
+    .texture("sunlit_cobblemon:item/pixie_ice")
+    .displayName("Pixie of Ice");
 
   global.cobblemonPreserves.forEach((jar) => {
     if (jar.item.includes("sunlit_cobblemon")) {

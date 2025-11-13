@@ -206,6 +206,8 @@ const trainerBuckets = new Map([
       "gentleman_norton_01a8",
       "ruin_mamoac_brandon_025a",
       "ruin_mamoac_foster_0246",
+      "painter_daisy_020e",
+      "painter_rayna_0233"
     ],
   ],
   [
@@ -242,11 +244,25 @@ const trainerBuckets = new Map([
       "ruin_mamoac_lawson_025f",
       "ruin_mamoac_layton_026c",
       "ruin_mamoac_stanly_020c",
+      "hiker_daryl_0248",
+      "painter_celina_0232",
+      "painter_edna_025c",
+      "painter_rayna_02bf",
+      "psychic_rodette_024b",
+      "psychic_laura_0260",
+      "psychic_jaclyn_0205",
+      "ranger_jackson_0254",
+      "camper_riley_026a",
+      "black_belt_hugh_02b9"
     ],
   ],
   [
     50,
     [
+      "black_belt_hugh_02ba",
+      "ranger_jackson_02d4",
+      "psychic_jaclyn_02c8",
+      "psychic_rodette_02ce",
       "picnicker_susie_0294",
       "tamer_evan_02d3",
       "black_belt_aaron_0140",
@@ -270,11 +286,16 @@ const trainerBuckets = new Map([
       "picnicker_missy_02ac",
       "picnicker_missy_02ad",
       "pokemaniac_mark_0284",
+      "crush_girl_tanya_02b5",
+      "psychic_tyron_0119",
+      "psychic_johan_0118"
     ],
   ],
   [
     55,
     [
+      "crush_girl_tanya_02b6",
+      "cue_ball_raul_00fc",
       "bird_keeper_benny_0130",
       "bird_keeper_beck_013b",
       "bug_catcher_colton_02db",
@@ -325,6 +346,7 @@ const trainerBuckets = new Map([
       "picnicker_irene_01d9",
       "juggler_kayden_0124",
       "juggler_kirk_0120",
+      "picnicker_irene_01d9"
     ],
   ],
   [
@@ -427,6 +449,9 @@ const trainerBuckets = new Map([
       "beauty_sheila_010d",
       "picnicker_alma_01d2",
       "lass_ann_007e",
+      "crush_girl_tanya_0228",
+      "ranger_beth_0255",
+      "black_belt_hugh_022a"
     ],
   ],
   [
@@ -448,7 +473,7 @@ global.getRandomTrainer = (levelBucket) => {
   const trainerBucket = trainerBuckets.get(levelBucket);
   const trainer = trainerBucket[rnd(0, trainerBucket.length)];
   console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
-  return trainerBucket[rnd(0, trainerBucket.length)];
+  return trainerBucket[rnd(0, trainerBucket.length -1)];
 };
 
 global.getPlayerPodiumLevelTier = (player) =>
@@ -468,4 +493,10 @@ global.getTrainerLevelTier = (trainerID) => {
     if (foundIndex !== -1) foundLevel = bucket;
   });
   return foundLevel;
+};
+
+global.hasScope = (entity) => {
+  return entity.nbt.ForgeCaps["curios:inventory"]
+    .toString()
+    .includes("sunlit_cobblemon:silph_scope");
 };

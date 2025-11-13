@@ -1,0 +1,130 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 929,
+  "name": "Dolliv",
+  "primaryType": "grass",
+  "secondaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 119,
+  "pokedex": [
+    "cobblemon.species.dolliv.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "earlybird",
+    "h:harvest"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 52,
+    "attack": 53,
+    "defence": 60,
+    "special_attack": 78,
+    "special_defence": 78,
+    "speed": 33
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 124,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:big_root",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:kebia_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:sweetscent",
+    "5:absorb",
+    "7:growth",
+    "10:razorleaf",
+    "13:helpinghand",
+    "16:flail",
+    "20:megadrain",
+    "23:grassyterrain",
+    "29:seedbomb",
+    "34:energyball",
+    "37:leechseed",
+    "42:terrainpulse",
+    "egg:memento",
+    "egg:strengthsap",
+    "egg:synthesis",
+    "egg:weatherball",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:earthpower",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:protect",
+    "tm:rest",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:solarblade",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:terrainpulse",
+    "tm:trailblaze",
+    "tm:weatherball",
+    "tutor:earthpower",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:synthesis",
+    "tutor:terrainpulse"
+  ],
+  "preEvolution": "smoliv",
+  "evolutions": [
+    {
+      "id": "dolliv_arboliva",
+      "variant": "level_up",
+      "result": "arboliva",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 35
+        }
+      ]
+    }
+  ]
+}

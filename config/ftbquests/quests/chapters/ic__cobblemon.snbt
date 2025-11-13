@@ -19,30 +19,45 @@
 			]
 			icon: "cobblemon:poke_ball"
 			id: "68588C07B2EFCA55"
+			min_required_tasks: 1
 			rewards: [{
 				id: "51636436764E2284"
 				item: "sunlit_cobblemon:silph_scope"
 				type: "item"
 			}]
 			size: 1.5d
-			tasks: [{
-				action: "select_starter"
-				amount: 1L
-				biome: ""
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "63D21B7129414E77"
-				poke_ball_used: ""
-				pokemon: ""
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				title: "Select a starter by pressing &6M"
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
+			tasks: [
+				{
+					action: "select_starter"
+					amount: 1L
+					biome: ""
+					dimension: ""
+					form: ""
+					gender: ""
+					id: "63D21B7129414E77"
+					poke_ball_used: ""
+					pokemon: ""
+					pokemon_type: ""
+					region: ""
+					shiny: false
+					time_max: 24000L
+					time_min: 0L
+					title: "Select a starter by pressing &6M"
+					type: "cobblemon_tasks:cobblemon_task"
+				}
+				{
+					id: "7594E9C9693EBE05"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "cobblemon:berries"
+						}
+					}
+					title: "Any #cobblemon:berries"
+					type: "item"
+				}
+			]
 			title: "Starting with Cobblemon"
 			x: 0.5d
 			y: -0.5d
@@ -60,24 +75,17 @@
 			]
 			icon: "refurbished_furniture:red_grill"
 			id: "32CD8E2368E6B4BD"
-			rewards: [
-				{
-					id: "19927350D1CD5232"
-					item: "refurbished_furniture:red_grill"
-					type: "item"
-				}
-				{
-					id: "5E3538DF3CD73A1F"
-					item: {
-						Count: 1
-						id: "refurbished_furniture:spatula"
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "1810A5C4ECC43B73"
+				item: {
+					Count: 1
+					id: "vinery:winemaker_apron"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B65EEA537FDC7B8"
 				title: "Understood!"
@@ -101,25 +109,12 @@
 			]
 			icon: "wildernature:leveling_contract"
 			id: "063B238596D407D9"
-			rewards: [
-				{
-					count: 5
-					id: "274C0E4CEE4D2B04"
-					item: "cobblemon:poke_ball"
-					type: "item"
-				}
-				{
-					id: "0B788ACE2F30EABA"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "cobblepedia:cobblepedia"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 5
+				id: "274C0E4CEE4D2B04"
+				item: "cobblemon:poke_ball"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "5E2ADB3139BC5AC0"
@@ -170,6 +165,7 @@
 				"- &6Electric&r - Charges Batteries from Uncharged Batteries"
 				"- &6Psychic&r - Synthesizes Poke-Genes"
 				"- &6Steel&r - Ore multiplying/limited recycling"
+				"- &6Bug&r - Crafts healing items"
 			]
 			id: "75DDF6E50DAD20F0"
 			rewards: [{
@@ -252,12 +248,19 @@
 				"- &6Ghost&r - Finds mob drops"
 			]
 			id: "3A51DD86507A83F7"
-			rewards: [{
-				count: 8
-				id: "471D648534419938"
-				item: "cobblemon:surprise_mulch"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "471D648534419938"
+					item: "cobblemon:surprise_mulch"
+					type: "item"
+				}
+				{
+					id: "65E97B639FE00FDD"
+					item: "sunlit_cobblemon:berry_capsule"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "142977AD5F543BF8"
 				item: "cobble_workers:mystery_mine"
@@ -577,6 +580,7 @@
 				item: "cobblemon:relic_coin_pouch"
 				type: "item"
 			}]
+			subtitle: "Press K to level up Trainer Level"
 			tasks: [{
 				icon: "twigs:twig"
 				id: "1ACAD6973ECFAD65"
@@ -587,6 +591,140 @@
 			title: "Funding the Farm"
 			x: 7.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["12A48976D7B8F138"]
+			description: [
+				"Getting to &bDiamond Rank&r will allow the Sunlit League to recognize you as an influential figure in the Valley!"
+				""
+				"You are rewarded a &6Trainer Podium&r where trainers from all around will gather to battle."
+				""
+				"Trainers will be matched with the level of your party, allowing you to train up your Pokémon no matter the level."
+				""
+				"Every &610 wins&r, you'll recieve a multiplier for reward money from battles, and the trainers will become more difficult..."
+			]
+			icon: "cobblemon:power_bracer"
+			id: "43DCB8601B40FB9A"
+			rewards: [{
+				id: "23612DCB6BD28D56"
+				item: "cobblemon:rare_candy"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "576B5C9F27004180"
+				item: "sunlit_cobblemon:trainer_podium"
+				type: "item"
+			}]
+			title: "Starting Your Gym"
+			x: 19.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12A48976D7B8F138"]
+			description: [
+				"The most important factor for a Pokémon's states ones are their &6level&r and &6base stats&r. "
+				""
+				"The higher the Pokémon's level gets, the stronger it becomes."
+				""
+				"Base stats are specific to each Pokémon's species. "
+				""
+				"&6IVs&r and &6EVs&r determine the rest of the total stats. IVs do not improve stats drastically and EVs are obtained through normal gameplay,  so most players won't need to worry much about them."
+			]
+			icon: "cobblemon:power_herb"
+			id: "62276614C16063B7"
+			rewards: [{
+				id: "5C3AC1D8AEF1F193"
+				item: "cobblemon:exp_candy_m"
+				type: "item"
+			}]
+			tasks: [{
+				id: "733F7407DEED58D2"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Pokémon Stats"
+			x: 17.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["62276614C16063B7"]
+			description: [
+				"&6Individual Values&r (IV) can be thought of as a Pokémon's genes since they are innate to each Pokémon."
+				""
+				"&6Effort Values&r (EV) are a Pokémon's combat experiences. The more they take part in battles, the better and more knowledgeable they become based on what Pokémon they fight. "
+			]
+			icon: "cobblemon:calcium"
+			id: "127DAB9080BE7D68"
+			rewards: [{
+				id: "55A6CA33AD3E514F"
+				item: "cobblemon:calcium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "047E11663200DE0C"
+				title: "IVs and EVs"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["127DAB9080BE7D68"]
+			description: [
+				"You can get certain &6EVs&r by defeating certain Pokémon in fights. "
+				""
+				"Pidgey for example has a high base Speed stat. Your Pokémon will gain 1 Speed EV after beating each Pidgey. "
+				""
+				"For every 4 EV points, your total stat will be increased by 1. Along with the total EV cap of &6510&r, you can only have &6252&r EV in one specific stat. "
+				""
+				"For EV training, you generally want to dedicate &6252&r EV to Speed and &6252&r to Atk (or Special Atk) and dump 4 into whichever."
+			]
+			icon: "cobblemon:power_anklet"
+			id: "7B0A1FE4BD8D89B8"
+			rewards: [{
+				count: 4
+				id: "086D677A30105AA6"
+				item: "cobblemon:level_ball"
+				type: "item"
+			}]
+			subtitle: "Stats for nerds!"
+			tasks: [{
+				id: "7E017CAC2944CB2F"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "EVs in Detail"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["127DAB9080BE7D68"]
+			description: [
+				"The maximum &6IVs&r a Pokémon can have for each stat is 31 and the minimum is 0."
+				""
+				"Generally, you want to have the highest IVs possible to make your Pokémon reach its absolute limit."
+				""
+				"In most situations, you want Pokémon with high IVs. However, the stats in which the IVs are distributed in also matter. "
+				""
+				"For example, physical attackers will want to have high &6HP&r, &6Attack&r, &6Defence&r, &6Special Defence&r, and &6Speed&r. Special Attack does not matter for physical attackers."
+			]
+			icon: "minecraft:turtle_egg"
+			id: "4AA0BB45D0A6782F"
+			rewards: [{
+				id: "29BFAE1233B81B34"
+				item: "sunlit_cobblemon:berry_capsule"
+				type: "item"
+			}]
+			subtitle: "Breeding for Nerds!"
+			tasks: [{
+				id: "7B00E8F0BB4D5E9B"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "IVs in Detail"
+			x: 18.0d
+			y: 2.0d
 		}
 	]
 	title: "I.C - Cobblemon"

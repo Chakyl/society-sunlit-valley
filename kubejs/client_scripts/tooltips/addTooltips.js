@@ -1019,10 +1019,11 @@ ItemEvents.tooltip((tooltip) => {
       } else {
         text.add(
           1,
-          Text.gray("Houses a farm animal, allowing it to have a higher maximum affection")
+          Text.gray("Houses a farm animal, allowing it to have a higher maximum affection.")
         );
-        text.add(2, Text.gold("Only certain animals like this bed!"));
-        text.add(3, [
+        text.add(2, Text.gray("Animals won't leave when block has a Redstone Signal"));
+        text.add(3, Text.gold("Only certain animals like this bed!"));
+        text.add(4, [
           Text.darkGray("Hold ["),
           Text.gray("Shift"),
           Text.darkGray("] to view animals"),

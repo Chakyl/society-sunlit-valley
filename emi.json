@@ -1,6 +1,68 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": "item:cobblemon:fairy_feather"
+    }
+  ],
   "lookup_history": [
+    "item:cobble_workers:gardening_station",
+    "item:sunlit_cobblemon:pixie_ice",
+    "item:society:beemonican_seal",
+    {
+      "type": "item",
+      "id": "quark:diamond_heart",
+      "amount": 64
+    },
+    "item:society:wheel_of_adaptation",
+    "item:sunlit_cobblemon:prismatic_ice",
+    "item:sunlit_cobblemon:poke_genes",
+    "item:cobblemon:full_restore",
+    "item:cobblemon:max_potion",
+    "item:cobblemon:potion",
+    "item:cobblemon:super_potion",
+    "item:cobblemon:hyper_potion",
+    {
+      "type": "item",
+      "id": "society:starfruit_juice",
+      "amount": 64
+    },
+    "item:society:ancient_juice",
+    "item:buzzier_bees:honey_lamp",
+    "item:create:honeyed_apple",
+    "item:cobblemon:silver_powder",
+    "item:minecraft:honeycomb_block",
+    "item:buzzier_bees:glazed_porkchop",
+    {
+      "type": "item",
+      "id": "vintagedelight:honey_mason_jar",
+      "amount": 16
+    },
+    "item:minecraft:honey_bottle",
+    {
+      "type": "item",
+      "id": "windswept:pinecone_jam_bottle",
+      "remainder": "item:minecraft:glass_bottle"
+    },
+    "item:windswept:pinecone_jam_block",
+    "item:atmospheric:aloe_gel_bottle",
+    "item:cobblemon:antidote",
+    {
+      "type": "item",
+      "id": "cobblemon:dusk_ball",
+      "amount": 63
+    },
+    "item:society:moth_pollen",
+    "item:cobblemon:dive_ball",
+    "item:cobblemon:net_ball",
+    "item:cobblemon:poke_ball",
+    "item:cobblemon:pc",
+    "item:sunlit_cobblemon:trainer_podium",
+    "#item:cobblemon:held/is_held_item",
+    "item:cobblemon:fairy_feather",
+    "item:cobblemon:green_mint_seeds",
+    "item:cobblemon:white_mint_seeds",
+    "item:society:onion_seed",
+    "item:cobblemon:vivichoke_seeds",
     "item:cobblemon:medicinal_brew",
     {
       "type": "fluid",
@@ -12,7 +74,6 @@
       "id": "create_klinks_n_klangs:liquid_potion",
       "amount": 250
     },
-    "item:cobblemon:potion",
     "item:minecraft:cobblestone",
     "#item:forge:cobblestone",
     "#item:minecraft:stone_tool_materials",
@@ -88,17 +149,10 @@
     "item:cobblemon:azure_ball",
     "item:cobblemon:verdant_ball",
     "item:cobblemon:roseate_ball",
-    "item:cobblemon:poke_ball",
     "item:sunlit_cobblemon:silph_scope",
     {
       "type": "item",
       "id": "society:aged_ancient_cider",
-      "amount": 64
-    },
-    "item:sunlit_cobblemon:poke_genes",
-    {
-      "type": "item",
-      "id": "society:ancient_juice",
       "amount": 64
     },
     "item:minecraft:mutton",
@@ -114,7 +168,6 @@
     "item:minecraft:copper_block",
     "item:create:raw_zinc",
     "item:create:zinc_ingot",
-    "item:cobble_workers:gardening_station",
     "item:cobble_workers:mystery_mine",
     "item:cobble_workers:craft_station",
     "item:oreganized:raw_lead",
@@ -188,8 +241,6 @@
     "item:cobblemon:water_stone",
     "item:cobblemon:ice_stone",
     "item:cobblemon:steel_gem",
-    "item:cobblemon:net_ball",
-    "item:cobblemon:dive_ball",
     "item:sunlit_cobblemon:greater_tm_pack",
     "item:fightorflight:pokestaff",
     "item:fightorflight:oran_lucky_egg",
@@ -219,7 +270,6 @@
     },
     "item:cobblemon:timer_ball",
     "item:cobblemon:friend_ball",
-    "item:cobblemon:dusk_ball",
     {
       "type": "item",
       "id": "cobblemon:love_ball",
@@ -238,9 +288,6 @@
     "item:botania:elementium_ingot",
     "item:cobblemon:heal_ball",
     "item:create_klinks_n_klangs:unpainted_friend_ball",
-    "item:cobblemon:hyper_potion",
-    "item:cobblemon:max_potion",
-    "item:cobblemon:full_restore",
     {
       "type": "fluid",
       "id": "create_klinks_n_klangs:hp_up",
@@ -341,11 +388,9 @@
     "item:society:animal_feed_sack",
     "item:meadow:oil_lantern",
     "item:torchmaster:frozen_pearl",
-    "item:society:moth_pollen",
     "item:create_klinks_n_klangs:unpainted_moon_ball",
     "item:relics:rage_glove{abilities:{phlebotomy:{points:0,stats:{attack_speed:0.00638d,heal:1.9E-4d,movement_speed:0.01466d}},rage:{points:0,stats:{dealt_damage:0.06739d,duration:3.18902d,incoming_damage:0.03754d}},spurt:{points:0,stats:{cooldown:16.64931d,damage:0.1911d,distance:7.40015d}}}}",
     "item:society:earth_crystal",
-    "item:quark:diamond_heart",
     "item:minecraft:heart_pottery_sherd",
     "item:simplehats:floatinghearts",
     "item:candlelight:hearth",
@@ -372,7 +417,6 @@
     "item:create_klinks_n_klangs:net_ball_stencil",
     "item:oreganized:silver_sheet",
     "item:create_klinks_n_klangs:level_ball_stencil",
-    "item:cobblemon:silver_powder",
     "item:create_klinks_n_klangs:washed_apricorn",
     "item:create_klinks_n_klangs:unpainted_dream_ball",
     {
@@ -439,10 +483,8 @@
     "item:cobblemon:energy_root",
     "item:cobblemon:red_apricorn",
     "item:cobblemon:pink_apricorn",
-    "item:cobblemon:green_mint_seeds",
     "item:cobblemon:pink_mint_leaf",
     "item:cobblemon:pink_mint_seeds",
-    "item:cobblemon:vivichoke_seeds",
     "item:cobblemon:power_herb",
     "item:cobblemon:passho_berry",
     "item:cobblemon:sky_tumblestone_cluster",
@@ -575,8 +617,6 @@
     },
     "item:cobblemon:grepa_berry",
     "item:beachparty:crocs{Damage:0}",
-    "item:cobblemon:super_potion",
-    "item:cobblemon:pc",
     "item:cobblemon:healing_machine",
     "item:cobblemon:oval_stone",
     "item:cobblemon:protector",
@@ -585,7 +625,6 @@
     "item:cobblemon:red_mint_seeds",
     "item:cobblemon:blue_mint_seeds",
     "item:cobblemon:cyan_mint_seeds",
-    "item:cobblemon:white_mint_seeds",
     "item:cobblemon:yellow_apricorn_seed",
     "item:cobblemon:starf_berry",
     {
@@ -1120,7 +1159,6 @@
       "id": "cobblemon:weakness_policy",
       "amount": 64
     },
-    "item:society:wheel_of_adaptation",
     "item:cobblemon:blunder_policy",
     "item:numismatics:red_card",
     "item:cobblemon:soft_sand",
@@ -1499,11 +1537,6 @@
       "id": "cobblemon:flame_orb",
       "amount": 64
     },
-    {
-      "type": "item",
-      "id": "cobblemon:fairy_feather",
-      "amount": 64
-    },
     "item:society:energy_drink",
     {
       "type": "item",
@@ -1712,40 +1745,7 @@
       "id": "minecraft:stick",
       "amount": 2
     },
-    "item:untitledduckmod:duck_feather",
-    "item:society:treated_log",
-    {
-      "type": "item",
-      "id": "minecraft:oak_log",
-      "amount": 5
-    },
-    "item:cobblemon:yellow_apricorn",
-    "item:minecraft:pumpkin_pie",
-    {
-      "type": "item",
-      "id": "create_central_kitchen:pumpkin_pie_slice",
-      "amount": 4
-    },
-    "item:cobblemon:black_apricorn",
-    "item:meadow:stove_tiles_bench",
-    "item:supplementaries:planter",
-    "item:refurbished_furniture:red_sofa",
-    "item:furniture:sofa_red",
-    "item:minecraft:honey_bottle",
-    {
-      "type": "fluid",
-      "id": "vinery:apple_juice",
-      "amount": 0
-    },
-    "item:vinery:apple_mash",
-    "item:vinery:apple_juice",
-    "item:bakery:apple_jam",
-    "item:pamhc2trees:starfruititem",
-    {
-      "type": "fluid",
-      "id": "society:starfruit_juice",
-      "amount": 250
-    }
+    "item:untitledduckmod:duck_feather"
   ],
   "craft_history": [
     "minecraft:barrel",

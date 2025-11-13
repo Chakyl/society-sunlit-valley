@@ -1158,21 +1158,28 @@
 				"6DA840083729251E"
 				"6DF3741C3754EC87"
 				"409E50E24D3A21EB"
-				"301935045A947BFE"
 				"081919C8B667A323"
 				"7B927AB7B13FFFFB"
 				"5D7933D069120536"
+				"07E1572255DB805D"
 			]
 			icon: "minecraft:diamond"
 			id: "565B2D10A6CA81A4"
-			rewards: [{
-				auto: "invisible"
-				command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
-				elevate_perms: true
-				id: "29F66C2A1BE341DD"
-				silent: true
-				type: "command"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
+					elevate_perms: true
+					id: "29F66C2A1BE341DD"
+					silent: true
+					type: "command"
+				}
+				{
+					id: "63ADE1E50F7B7EC4"
+					item: "sunlit_cobblemon:trainer_podium"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
@@ -1189,7 +1196,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["3AC05A3C1AE2DBB8"]
 			icon: "cobblemon:helix_fossil"
 			id: "301935045A947BFE"
 			tasks: [{
@@ -1210,7 +1217,7 @@
 				title: "Revive 1 Fossil"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
+			x: 6.0d
 			y: 10.0d
 		}
 		{
@@ -1270,8 +1277,8 @@
 				title: "Level up a Pokémon to Level 50"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -0.5d
-			y: 12.0d
+			x: 0.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["565B2D10A6CA81A4"]
@@ -1296,23 +1303,30 @@
 			dependencies: [
 				"2D94FDC9C3511DDE"
 				"3DC94224FC36F53F"
-				"07E1572255DB805D"
 				"5A1F3015336F0E33"
 				"59C598EBB9AFAC09"
 				"5838565EAA6C8520"
 				"2376172C07043895"
 				"7EDC20FE5F42795D"
+				"301935045A947BFE"
 			]
 			icon: "minecraft:netherite_ingot"
 			id: "779E4A54071E24F4"
-			rewards: [{
-				auto: "invisible"
-				command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
-				elevate_perms: true
-				id: "478C71831202BD57"
-				silent: true
-				type: "command"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
+					elevate_perms: true
+					id: "478C71831202BD57"
+					silent: true
+					type: "command"
+				}
+				{
+					id: "6C66B8E5EA185FF3"
+					item: "sunlit_cobblemon:poke_genes"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
@@ -1576,7 +1590,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["0227B5D0BA05ACB3"]
 			icon: "cobblemon:steel_gem"
 			id: "07E1572255DB805D"
 			rewards: [{
@@ -1602,8 +1616,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 6.0d
-			y: 10.0d
+			x: -0.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [

@@ -15,6 +15,11 @@ ServerEvents.recipes((e) => {
     f: "sunlit_cobblemon:fairy_heart",
     s: "numismatics:prismatic_coin",
   });
+  e.shaped("sunlit_cobblemon:pixie_ice", [" g ", "fsf", " g "], {
+    g: "sunlit_cobblemon:prismatic_ice",
+    f: "sunlit_cobblemon:fairy_heart",
+    s: "society:wheel_of_adaptation",
+  });
   e.shaped("cobble_workers:gardening_station", ["fff", "fpf", "f f"], {
     f: "meadow:fire_log",
     p: "cobblemon:poke_ball",

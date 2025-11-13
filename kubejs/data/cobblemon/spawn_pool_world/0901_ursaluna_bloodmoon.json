@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "ursaluna-3",
+      "pokemon": "ursaluna bloodmoon",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "70",
+      "weight": 1,
+      "condition": {
+        "biomes": ["#cobblemon:is_magical"],
+        "moonPhase": 1
+      }
+    }
+  ]
+}

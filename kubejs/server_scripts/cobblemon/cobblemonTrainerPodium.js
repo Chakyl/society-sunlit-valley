@@ -30,10 +30,9 @@ BlockEvents.rightClicked(["sunlit_cobblemon:trainer_podium"], (e) => {
 
 ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
-  if (!target.type === "rctmod:trainer") return;
-
   if (hand == "OFF_HAND") return;
-  if (hand == "MAIN_HAND") {
+  if (target.type !== "rctmod:trainer") return;
+
     let currentLevel = global.getPlayerPodiumLevelTier(player);
     let trainerLevel = global.getTrainerLevelTier(target.getNbt().TrainerId.toString());
     if (trainerLevel !== currentLevel) {
@@ -47,5 +46,4 @@ ItemEvents.entityInteracted((e) => {
       );
       e.cancel();
     }
-  }
 });

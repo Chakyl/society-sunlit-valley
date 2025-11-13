@@ -69,6 +69,11 @@ global.cobblemonCooking = [
   { item: "cobblemon:roasted_leek", value: 3 },
   { item: "cobblemon:leek_and_potato_stew", value: 55 },
   { item: "cobblemon:vivichoke_dip", value: 1 },
+  { item: "cobblemon:potion", value: 128 },
+  { item: "cobblemon:super_potion", value: 512 },
+  { item: "cobblemon:hyper_potion", value: 1024 },
+  { item: "cobblemon:max_potion", value: 2048 },
+  { item: "cobblemon:full_restore", value: 3072 },
 ];
 global.cobbleCrops = [
   { item: "cobblemon:big_root", value: 4 },

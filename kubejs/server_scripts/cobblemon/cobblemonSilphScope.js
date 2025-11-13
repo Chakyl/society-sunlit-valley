@@ -14,11 +14,6 @@ const PLAYER_CONDITION = $TargetingConditions.forNonCombat().selector((entity) =
   return true;
 });
 
-const hasScope = (entity) => {
-  return entity.nbt.ForgeCaps["curios:inventory"]
-    .toString()
-    .includes("sunlit_cobblemon:silph_scope");
-};
 EntityEvents.spawned((e) => {
   const { entity, level } = e;
   // Cobblemon contingent upon a nearby playing wearing a Silph Scope.
@@ -33,7 +28,7 @@ EntityEvents.spawned((e) => {
     let spawnPokemon = false;
     let players = level.getNearbyPlayers(PLAYER_CONDITION, null, area);
     players.forEach((p) => {
-      if (hasScope(p)) {
+      if (global.hasScope(p)) {
         spawnPokemon = true;
       }
     });

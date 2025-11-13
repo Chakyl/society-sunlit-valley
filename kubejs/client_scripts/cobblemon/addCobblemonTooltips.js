@@ -40,7 +40,9 @@ ItemEvents.tooltip((tooltip) => {
     "sunlit_cobblemon:master_poke_bobber",
     Text.gold("Fishes up an epic Pokémon with every catch")
   );
-
+  // Legendaries
+  tooltip.add("sunlit_cobblemon:pixie_ice", Text.aqua("Give to a Mammutilation to summon Chien-Pao"))
+  // TM Packs
   tooltip.add("sunlit_cobblemon:tm_pack", Text.gray("Right click to open"));
   tooltip.add("sunlit_cobblemon:tm_pack", Text.green("12% chance for a TM"));
 

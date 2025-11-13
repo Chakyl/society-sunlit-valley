@@ -314,13 +314,15 @@
 				"53335158164831B9"
 				"16080D969B4C44E9"
 				"1ACEB759746487FE"
+				"3E1B759B00428FB6"
+				"2118ADCB33C9C583"
 			]
 			hide_dependency_lines: true
 			icon: "cobblemon:timer_ball"
 			id: "5DE5D055D7BC2BFE"
 			rewards: [{
-				id: "5CBCC9A4A9570F25"
-				item: "society:frosted_tip"
+				id: "1576918DE5DD48FC"
+				item: "society:mana_clock"
 				type: "item"
 			}]
 			size: 2.0d
@@ -564,13 +566,8 @@
 				"0899C51F59322D7B"
 			]
 			hide_dependency_lines: true
-			icon: "cobblemon:timer_ball"
+			icon: "cobblemon:beast_ball"
 			id: "6C472A1603AF02C5"
-			rewards: [{
-				id: "7735136D0F08557A"
-				item: "society:frosted_tip"
-				type: "item"
-			}]
 			size: 2.0d
 			tasks: [{
 				icon: "sunlit_cobblemon:poke_genes"
@@ -636,6 +633,457 @@
 			title: "Sandy Shocks"
 			x: -4.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"33312768E1E4BA1D"
+				"7783E2BC686C0B13"
+				"4F9FF6CF73A046F1"
+				"3FB31EE76423D1B4"
+				"444BE411AB96960F"
+				"538E4C357205FB5B"
+				"322ACE3883EF0B1B"
+				"1E0508A8E8FE6814"
+				"1C6F513A824DAE33"
+				"13509631E719D409"
+				"26AD3C36EA9987B0"
+				"582C75B20BE4A328"
+				"3B337B0AEB93D2B8"
+				"237C9725D6792C55"
+				"72A7C88BB579C98D"
+				"65F2AB32EFCF4051"
+			]
+			hide_dependency_lines: true
+			icon: "cobblemon:master_ball"
+			id: "302AA9BB1D2219A8"
+			size: 2.0d
+			tasks: [{
+				icon: "society:legendary_ink"
+				id: "2A07A81D198CD7AF"
+				stat: "minecraft:play_time"
+				title: "Obtain all LegendaryPokémon"
+				type: "stat"
+				value: 1
+			}]
+			title: "Ultra Master"
+			x: -7.0d
+			y: -15.0d
+		}
+		{
+			description: [""]
+			id: "1C6F513A824DAE33"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Summoned using a Pixie of Ice"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "443C1F1B7EAAA769"
+				poke_ball_used: ""
+				pokemon: "cobblemon:chienpao"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Chien-Pao"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			description: [""]
+			id: "3FB31EE76423D1B4"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "13FB719A9444CF0C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:chiyu"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Chi-Yu"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			description: [""]
+			id: "4F9FF6CF73A046F1"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "76C50E7A71CBAFAD"
+				poke_ball_used: ""
+				pokemon: "cobblemon:fezandipiti"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Fezandipiti"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			description: [""]
+			id: "13509631E719D409"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "797DFB6E2EF63B7C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:okidogi"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Okidogi"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			description: [""]
+			id: "72A7C88BB579C98D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6E663692DCD76699"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ogerpon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Ogerpon"
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			description: [""]
+			id: "33312768E1E4BA1D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "10EF21C643A8F6EE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:articuno"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Articuno"
+			x: -4.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "322ACE3883EF0B1B"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6E997BE85F937877"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zapdos"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Zapdos"
+			x: -2.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "444BE411AB96960F"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "33C9A60CA25A74F9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:moltres"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Moltres"
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "26AD3C36EA9987B0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2CB1305F46ADF46B"
+				poke_ball_used: ""
+				pokemon: "cobblemon:mewtwo"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Mewtwo"
+			x: 3.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "237C9725D6792C55"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7C7AEA0E1CE876AA"
+				poke_ball_used: ""
+				pokemon: "cobblemon:regirock"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Nihilego"
+			x: -4.0d
+			y: -14.0d
+		}
+		{
+			description: [""]
+			id: "1E0508A8E8FE6814"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "093A6A24993DE50E"
+				poke_ball_used: ""
+				pokemon: "cobblemon:regice"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Regice"
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			description: [""]
+			id: "65F2AB32EFCF4051"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6B6D9D92D763D719"
+				poke_ball_used: ""
+				pokemon: "cobblemon:registeel"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Registeel"
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			description: [""]
+			id: "582C75B20BE4A328"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6C314B8C804CE8B9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:kyogre"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Kyogre"
+			x: 3.0d
+			y: -14.0d
+		}
+		{
+			description: [""]
+			id: "7783E2BC686C0B13"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0E5CCEB93C62C5BE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:groudon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Groudon"
+			x: 5.0d
+			y: -14.0d
+		}
+		{
+			description: [""]
+			id: "3B337B0AEB93D2B8"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6B8FB5D0868AE608"
+				poke_ball_used: ""
+				pokemon: "cobblemon:rayquaza"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Rayquaza"
+			x: 7.0d
+			y: -14.0d
+		}
+		{
+			id: "538E4C357205FB5B"
+			tasks: [{
+				id: "569A2013321EC5A2"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "There will be more Legendaries here Chakyl is lazy to do the quests"
+			x: -4.5d
+			y: -10.5d
 		}
 	]
 	title: "Rare Pokémon"

@@ -1,0 +1,311 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 676,
+  "name": "Furfrou",
+  "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 280,
+  "pokedex": [
+    "cobblemon.species.furfrou.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [
+    "natural-trim"
+  ],
+  "abilities": [
+    "furcoat",
+    "h:furcoat"
+  ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 75,
+    "attack": 80,
+    "defence": 60,
+    "special_attack": 65,
+    "special_defence": 90,
+    "speed": 102
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 165,
+  "experienceGroup": "medium_fast",
+  "catchRate": 160,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:bone",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:white_wool",
+        "quantityRange": "1-2"
+      },
+      {
+        "item": "cobblemon:silk_scarf",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:growl",
+    "5:sandattack",
+    "9:babydolleyes",
+    "12:headbutt",
+    "15:tailwhip",
+    "22:bite",
+    "27:odorsleuth",
+    "33:retaliate",
+    "35:takedown",
+    "38:charm",
+    "42:suckerpunch",
+    "48:cottonguard",
+    "egg:captivate",
+    "egg:mimic",
+    "egg:refresh",
+    "egg:roleplay",
+    "egg:workup",
+    "tm:babydolleyes",
+    "tm:captivate",
+    "tm:chargebeam",
+    "tm:charm",
+    "tm:darkpulse",
+    "tm:dig",
+    "tm:echoedvoice",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:hypervoice",
+    "tm:irontail",
+    "tm:lastresort",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:roar",
+    "tm:rocksmash",
+    "tm:roleplay",
+    "tm:sleeptalk",
+    "tm:snarl",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:sunnyday",
+    "tm:surf",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunderwave",
+    "tm:uproar",
+    "tm:uturn",
+    "tm:wildcharge",
+    "tm:workup",
+    "tm:zenheadbutt",
+    "tutor:babydolleyes",
+    "tutor:chargebeam",
+    "tutor:darkpulse",
+    "tutor:endeavor",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:irontail",
+    "tutor:lastresort",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:roleplay",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:suckerpunch",
+    "tutor:uproar",
+    "tutor:wildcharge",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Heart",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-heart.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "heart-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Star",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-star.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "star-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Diamond",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-diamond.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "diamond-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Debutante",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-debutante.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "debutante-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Matron",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-matron.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "matron-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Dandy",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-dandy.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "dandy-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "La-Reine",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-lareine.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "la_reine-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Kabuki",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-kabuki.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "kabuki-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Pharaoh",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 280,
+      "pokedex": [
+        "cobblemon.species.furfrou-pharaoh.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "pharaoh-trim"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
+}

@@ -144,7 +144,23 @@ ServerEvents.recipes((e) => {
       "SPECIAL_DEFENCE"
     );
   });
-
+  [
+    { item: "minecraft:honey_bottle", potion: "cobblemon:potion" },
+    { item: "society:sap", potion: "cobblemon:super_potion" },
+    { item: "society:maple_syrup", potion: "cobblemon:hyper_potion" },
+    { item: "society:ancient_juice", potion: "cobblemon:max_potion" },
+    { item: "society:starfruit_juice", potion: "cobblemon:full_restore" },
+  ].forEach((recipe) => {
+    createCobbleWorkerRecipe(
+      {
+        item: recipe.item,
+      },
+      { item: recipe.potion, count: 1 },
+      "bug",
+      1200,
+      "DEFENCE"
+    );
+  });
   createCobbleWorkerRecipe(
     {
       item: "sunlit_cobblemon:uncharged_battery",
@@ -162,6 +178,15 @@ ServerEvents.recipes((e) => {
     "fairy",
     72000,
     "SPECIAL_DEFENCE"
+  );
+    createCobbleWorkerRecipe(
+    {
+      item: "society:prismatic_shard",
+    },
+    { item: "sunlit_cobblemon:prismatic_ice", count: 1 },
+    "ice",
+    72000,
+    "DEFENCE"
   );
   createCobbleWorkerRecipe(
     {
