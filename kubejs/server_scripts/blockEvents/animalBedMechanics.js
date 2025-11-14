@@ -32,7 +32,7 @@ global.animalBeds.forEach((bed) => {
         block.z + 1,
       ])) {
         scannedBlock = level.getBlock(pos);
-        if (scannedBlock.id !== "minecraft:air" && !block.getPos().equals(pos)) {
+        if (!scannedBlock.hasTag("minecraft:replaceable") && !block.getPos().equals(pos)) {
           open = false;
         }
       }

@@ -95,7 +95,6 @@ Playtest 3
 - Removed max affection doubling husbandry drops
 - Removed Obsidian Stems
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
-- Fixed https://github.com/SirJain0/PerfectPlushies/issues/12
 - Fixed certain sherds not having values
 - Fixed certain vegetables not being considered pickles
 - Fixed Mechanic Slime not having a Farmer's Almanac entry

@@ -33,6 +33,7 @@ global.bedDefinitions = new Map([
     "luxury_barn",
     [
       "minecraft:goat",
+      "minecraft:sniffer",
       "buzzier_bees:moobloom",
       "species:mammutilation",
       "species:goober",
@@ -66,6 +67,22 @@ global.bedDefinitions = new Map([
     ],
   ],
 ]);
+
+let sendCustomPayload = (level, pos, nbt) => {
+  level.players
+    .stream()
+    .filter((player) => player.distanceToSqr(pos) <= 4096)
+    .forEach((player) => {
+      player.sendData("society:animal_bed_data", {
+        entityData: nbt,
+        bed: {
+          x: pos.x,
+          y: pos.y,
+          z: pos.z,
+        },
+      });
+    });
+};
 
 global.getAnimalBedType = (animal) => {
   let foundBed;
@@ -130,11 +147,11 @@ global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
           data: {
             entity: animalNbt,
             entityID: animal.type,
-            persistentData: data,
             boundToAnimal: true,
             animalInside: true,
           },
         });
+        sendCustomPayload(level, block.pos, nbt);
         if (player && server) {
           let name = animal.customName ? animal.customName.getString() : undefined;
           if (!name) {
@@ -176,6 +193,7 @@ global.runAnimalBed = (blockEntity, bedType) => {
           animalInside: false,
         },
       });
+      sendCustomPayload(level, block.pos, nbt);
       block.setEntityData(nbt);
     } else if ((level.hasNeighborSignal(block.pos) || nearbyPlayers.length == 0) && !animalInside) {
       let nearbyFarmAnimals = level
@@ -189,21 +207,33 @@ global.runAnimalBed = (blockEntity, bedType) => {
             !foundBoundAnimal &&
             animal.getUuid().toString().equals(entity.getUUID("UUID").toString())
           ) {
-            sleepParticles(level, animal.x, animal.y, animal.z);
-            let animalNbt = animal.getNbt();
-            animalNbt.Pos[0] = Number(block.getX());
-            animalNbt.Pos[1] = Number(block.getY() + 0.2);
-            animalNbt.Pos[2] = Number(block.getZ());
-            nbt.merge({
-              data: {
-                entity: animal.getNbt(),
-                animalInside: true,
-              },
-            });
-            block.setEntityData(nbt);
-            foundBoundAnimal = true;
-            console.log("removing");
-            animal.setRemoved("unloaded_to_chunk");
+            if (!global.animalHasNoBed(animal.persistentData)) {
+              sleepParticles(level, animal.x, animal.y, animal.z);
+              let animalNbt = animal.getNbt();
+              animalNbt.Pos[0] = Number(block.getX());
+              animalNbt.Pos[1] = Number(block.getY() + 0.2);
+              animalNbt.Pos[2] = Number(block.getZ());
+              nbt.merge({
+                data: {
+                  entity: animal.getNbt(),
+                  animalInside: true,
+                },
+              });
+              block.setEntityData(nbt);
+              foundBoundAnimal = true;
+              sendCustomPayload(level, block.pos, nbt);
+              animal.setRemoved("unloaded_to_chunk");
+            } else {
+              nbt.merge({
+                data: {
+                  entity: "",
+                  entityID: "",
+                  boundToAnimal: false,
+                  animalInside: false,
+                },
+              });
+              block.setEntityData(nbt);
+            }
           }
         });
       }

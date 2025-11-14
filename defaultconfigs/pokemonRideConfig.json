@@ -328,6 +328,27 @@
       "passengersOffSet": [[0.0, 0.0, 0.0]],
       "speedModifier": 1.0
     },
+    "Hydreigon": {
+      "stamina": 0,
+      "mountType": ["WALK", "FLY"],
+      "ridingOffSet": [0.0, 1.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 1.0
+    },
+    "Noivern": {
+      "stamina": 0,
+      "mountType": ["WALK", "FLY"],
+      "ridingOffSet": [0.0, 1.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 1.0
+    },
+    "Scyther": {
+      "stamina": 0,
+      "mountType": ["FLY"],
+      "ridingOffSet": [0.0, 1.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 1.0
+    },
     "Sharpedo": {
       "stamina": 0,
       "mountType": ["SWIM"],
@@ -354,7 +375,35 @@
       "mountType": ["WALK"],
       "ridingOffSet": [0.0, 2.0, 0.0],
       "passengersOffSet": [[0.0, 0.0, 0.0]],
-      "speedModifier": 1.0
+      "speedModifier": 0.8
+    },
+    "Rhyhorn": {
+      "stamina": 0,
+      "mountType": ["WALK"],
+      "ridingOffSet": [0.0, 2.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 0.5
+    },
+    "Gogoat": {
+      "stamina": 0,
+      "mountType": ["WALK"],
+      "ridingOffSet": [0.0, 2.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 0.8
+    },
+    "Amaura": {
+      "stamina": 0,
+      "mountType": ["WALK"],
+      "ridingOffSet": [0.0, 2.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 0.9
+    },
+    "Aurorus": {
+      "stamina": 0,
+      "mountType": ["WALK"],
+      "ridingOffSet": [0.0, 2.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 0.9
     },
     "Scolipede": {
       "stamina": 0,
@@ -371,6 +420,13 @@
       "speedModifier": 1.0
     },
     "Lapras": {
+      "stamina": 0,
+      "mountType": ["SWIM"],
+      "ridingOffSet": [0.0, 0.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 1.0
+    },
+    "Milotic": {
       "stamina": 0,
       "mountType": ["SWIM"],
       "ridingOffSet": [0.0, 0.0, 0.0],
@@ -418,6 +474,13 @@
       "ridingOffSet": [0.0, 2.0, 0.0],
       "passengersOffSet": [[0.0, 0.0, 0.0]],
       "speedModifier": 1.0
+    },
+    "Groundon": {
+      "stamina": 0,
+      "mountType": ["WALK"],
+      "ridingOffSet": [0.0, 2.0, 0.0],
+      "passengersOffSet": [[0.0, 0.0, 0.0]],
+      "speedModifier": 0.6
     },
     "Feraligatr": {
       "stamina": 0,
