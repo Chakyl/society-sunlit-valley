@@ -4,7 +4,7 @@ const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuali
   const { player, target, level, server, block, inventory } = e;
   const affection = data.getInt("affection") || 0;
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const bedless = global.animalHasNoBed(data);
+  const bedless = false
   if (bedless) hearts = 3;
   let quality = 0;
 

@@ -184,7 +184,7 @@ global.getMagicShearsOutput = (level, target, player, server) => {
   const freshAnimal = global.isFresh(day, ageLastMagicHarvested);
   const affection = data.getInt("affection");
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const bedless = global.animalHasNoBed(data);
+  const bedless = false
   if (bedless) hearts = 3;
   const targetId =
     target.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : target.type.split(":");

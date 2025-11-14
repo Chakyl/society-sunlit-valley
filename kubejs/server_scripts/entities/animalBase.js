@@ -58,7 +58,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
   const { player, item, target, level, server } = e;
   const ageLastPet = data.getInt("ageLastPet");
   const affection = data.getInt("affection");
-  const bedless = global.animalHasNoBed(data);
+  const bedless = false
   const heartsToDisplay = bedless ? 3 : 10;
   let hearts = Math.floor(affection / 100);
   let nameColor = "#55FF55";
@@ -317,7 +317,7 @@ const handleMagicHarvest = (name, data, e) => {
   if (target.type == "minecraft:sheep") handleSheepMagicShears(e);
   const affection = data.getInt("affection");
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const bedless = global.animalHasNoBed(data);
+  const bedless = false
   if (bedless) hearts = 3;
 
   let errorText = "";
@@ -374,26 +374,14 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       }
       const boundBed = data.get("boundBed");
       if (!global.animalHasNoBed(data)) {
-        if (
-          new BlockPos(boundBed.x, boundBed.y, boundBed.z).distToCenterSqr(
-            target.x,
-            target.y,
-            target.z
-          ) > 48 ||
-          !level.getBlock(boundBed.x, boundBed.y, boundBed.z).hasTag("society:animal_bed")
-        ) {
-          server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} got too far from its bed...`
-          );
-          data.boundBed = "-1";
-        }
+        data.boundBed = "-1";
       }
       const ageLastFed = data.getInt("ageLastFed");
       const peckish = !pet && day - ageLastFed == 1;
       const hungry = !pet && day - ageLastFed > 1;
       const affection = data.getInt("affection");
       let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-      const bedless = global.animalHasNoBed(data);
+      const bedless = false
       if (bedless) hearts = 3;
       player.swing();
 

@@ -8,6 +8,8 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
   const { x, z } = block;
   let errorText;
   if (!player.stages.has("entered_skull_cavern")) player.stages.add("entered_skull_cavern");
+  if (!player.stages.has("master_cultivator_unlocked")) player.stages.add("master_cultivator_unlocked");
+  if (!player.stages.has("exotic_trader_unlocked")) player.stages.add("exotic_trader_unlocked");
   if (level.dimension === "society:skull_cavern") {
     player.persistentData.skullCavernEnterDay = -1;
     global.teleportHome(player, server, level);

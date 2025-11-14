@@ -1,9 +1,14 @@
 ^^^
 ## Sunlit Cobblemon
-### vPLAYTEST-3-1.0.0
+### vPLAYTEST-4-1.0.0
 ^^^
 --- 
-Playtest 3
+## Playtest 4
+- Removed bed system since Chalky hates it. Please break beds and free your animals before the next playtest 
+- Fixed Multiplayer issues with shops
+- Fixed Master Cultivator/Exotic Trader not being accessible (unlocked after entering skull cavern)
+
+## Playtest 3
 - Added Trainer Podium - Gym mechanics for Diamond tier 
 - Added Rare Pokemon collection chapter
 - Added Future Paradox Pokemon spawning conditions in the overworld (Sparkstone Machines)
