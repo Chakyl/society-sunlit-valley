@@ -380,7 +380,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
             target.y,
             target.z
           ) > 48 ||
-          !level.getBlock(boundBed.x, boundBed.y, boundBed.z).hasTag("society:bed")
+          !level.getBlock(boundBed.x, boundBed.y, boundBed.z).hasTag("society:animal_bed")
         ) {
           server.runCommandSilent(
             `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} got too far from its bed...`

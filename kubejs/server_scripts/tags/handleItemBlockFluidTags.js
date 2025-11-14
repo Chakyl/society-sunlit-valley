@@ -280,6 +280,7 @@ ServerEvents.tags("item", (e) => {
   e.add("meadow:cheese_blocks", "meadow:amethyst_cheese_block");
   e.add("netherdepthsupgrade:lava_fishing_rod", "forge:tools/fishing_rods");
   e.add("forge:rope", "brewery:rope");
+  e.add("forge:cobblestone", "meadow:cobbled_limestone");
   e.remove("forge:chests/ender", "minecraft:ender_chest");
   e.remove("forge:chests", "minecraft:ender_chest");
   // Vinery leaf fix

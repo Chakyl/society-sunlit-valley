@@ -67,7 +67,7 @@ StartupEvents.registry("block", (event) => {
     const splitStr = plushie.split(":");
     let modelPath = `${splitStr[0]}:block/${splitStr[1]}`;
     if (splitStr[0].equals("tanukidecor"))
-      modelPath = `tanukidecor:/block/mini_figure/${splitStr[1]}`;
+      modelPath = `tanukidecor:block/mini_figure/${splitStr[1]}`;
     event
       .create(`${splitStr[0]}:adv_${splitStr[1]}`, "cardinal")
       .defaultCutout()

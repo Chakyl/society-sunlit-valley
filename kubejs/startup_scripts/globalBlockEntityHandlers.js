@@ -208,6 +208,7 @@ global.artisanInsert = (
   let stage = nbt.data.stage;
   const itemNbt = item.nbt;
   let itemQuality;
+  let hasQuality = newProperties.quality;
   let useCount =
     multipleInputs && item.count >= stageCount - Number(stage) ? stageCount - Number(stage) : 1;
   const recipe = recipes.get(`${item.id}`);
@@ -229,9 +230,9 @@ global.artisanInsert = (
     if (!(hasTag && recipe === undefined)) nbt.merge({ data: { recipe: item.id } });
     newProperties.working = false;
     newProperties.mature = false;
-    if (newProperties.quality && itemNbt && itemNbt.quality_food) {
+    if (hasQuality && itemNbt && itemNbt.quality_food) {
       itemQuality = String(itemNbt.quality_food.quality);
-    } else if (newProperties.quality) {
+    } else if (hasQuality) {
       itemQuality = "0";
     }
     if (multipleInputs) {
@@ -241,6 +242,8 @@ global.artisanInsert = (
         increaseDataStage(block);
       }
       if (itemQuality) setQuality(newProperties, stage, itemQuality);
+    } else if (itemQuality) {
+      newProperties.quality = itemQuality;
     }
     if (!multipleInputs || nbt.data.stage === stageCount) {
       newProperties.working = true;
