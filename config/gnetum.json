@@ -1,0 +1,388 @@
+{
+  "enabled": {
+    "value": "ON"
+  },
+  "showHudFps": {
+    "value": "ON"
+  },
+  "numberOfPasses": 3,
+  "maxFps": 60,
+  "mapVanillaElements": {
+    "minecraft:record_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:portal": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "gnetum.packedElement.right": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:jump_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "create:toolbox": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:fps_graph": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "patchouli:multiblock_progress": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "botania:hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "relics:active_abilities": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "oreganized:stunning": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "seasonhud:journeymap": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "horseman:horseman_xp_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "treechop:chopping_indicator": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:hotbar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:potion_icons": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "liltractor:tractor_hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "ok_zoomer:ok_zoomer_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "gnetum:minecraft_hand": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:item_name": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:experience_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "create:remaining_air": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:scoreboard": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "sophisticatedstorage:storage_tool_info": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:subtitles": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:chat_panel": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "supplementaries:slimed_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "seasonhud:seasonhud": {
+      "enabled": {
+        "value": "ON"
+      },
+      "pass": 3
+    },
+    "zetter:painting_info": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "create:value_settings": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "paraglider:stamina_wheel": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "patchouli:book_right_click": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:frostbite": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:boss_event_progress": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "gnetum.packedElement.left": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "create:schematic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "sophisticatedstorage:paintbrush_info": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "create:train_hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "refurbished_furniture:power_indicator": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "create:blueprint": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:player_list": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "create:track_placement": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "shouldersurfing:pre_crosshair": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "supplementaries:cannon_charge_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:title_text": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "numismatics_utils:numismatics_utils": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "shouldersurfing:post_crosshair": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "create:linked_controller": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:sleep_fade": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "relics:researching_hint": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "windswept:carved_pinecone": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "supplementaries:quiver_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "refurbished_furniture:cutting_board_helper": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "horseman:horseman_food_level": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:spyglass": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:helmet": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:debug_text": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "create:goggle_info": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    }
+  },
+  "mapModdedElementsPre": {
+    "journeymap": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    }
+  },
+  "mapModdedElementsPost": {
+    "watut": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "emberstextapi": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "architectury": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "renderjs": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    }
+  }
+}

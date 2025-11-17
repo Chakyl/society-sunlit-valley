@@ -134,7 +134,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "alltheleaks-1.0.8+1.20.1-forge.jar",
+                    "file_name": "alltheleaks-1.1.0+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -142,16 +142,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7107/566/alltheleaks-1.0.8+1.20.1-forge.jar",
-                    "id": "7107566",
+                    "url": "https://edge.forgecdn.net/files/7189/127/alltheleaks-1.1.0+1.20.1-forge.jar",
+                    "id": "7189127",
                     "parent_id": "1091339",
                     "hashes": {
-                        "sha1": "cc58ad397f1e40eb7b5ee006195815a8bef131bf",
-                        "md5": "4d96599f1bbe8d03540a1066509dc005"
+                        "sha1": "d38ae474a0d8d9c6671fe7419e36c1ac859c9e68",
+                        "md5": "a1284d5c8ee99ba6de078db3b22709c6"
                     },
                     "required_dependencies": [],
-                    "size": 1176184,
-                    "date_published": "2025-10-14T20:58:29.273Z"
+                    "size": 1186965,
+                    "date_published": "2025-11-05T14:35:56.437Z"
                 }
             ]
         },
@@ -2922,7 +2922,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "numismatics_utils-1.1.jar",
+                    "file_name": "numismatics_utils-2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2930,20 +2930,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6956/294/numismatics_utils-1.1.jar",
-                    "id": "6956294",
+                    "url": "https://edge.forgecdn.net/files/7175/842/numismatics_utils-2.0.jar",
+                    "id": "7175842",
                     "parent_id": "1339392",
                     "hashes": {
-                        "sha1": "92e30cdac558c009908649bca631f16e4f1cfcf1",
-                        "md5": "a9f7cbbe6785cec89abd853e6410902d"
+                        "sha1": "8ebbad11ab62ee94989c53bd555b1ac4d350df56",
+                        "md5": "77436465bd7ca903c82d985a3467d610"
                     },
                     "required_dependencies": [
-                        "328085",
                         "889722",
+                        "328085",
                         "309927"
                     ],
-                    "size": 37051,
-                    "date_published": "2025-09-02T16:10:15.077Z"
+                    "size": 40849,
+                    "date_published": "2025-11-01T22:47:16.623Z"
                 }
             ]
         },
@@ -5763,6 +5763,42 @@
                     "required_dependencies": [],
                     "size": 314813,
                     "date_published": "2025-06-30T00:21:55.847Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Ox8bJTtecFvBgOJc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "gnetum"
+            },
+            "name": {
+                "curseforge": "Gnetum"
+            },
+            "id": {
+                "curseforge": "1220460"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "gnetum-2.3.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7224/441/gnetum-2.3.1.jar",
+                    "id": "7224441",
+                    "parent_id": "1220460",
+                    "hashes": {
+                        "sha1": "058331f26f0a305164d6ccec5b93f26ad5f9b161",
+                        "md5": "832681f734401836dd2fd876814db0e0"
+                    },
+                    "required_dependencies": [],
+                    "size": 716406,
+                    "date_published": "2025-11-15T12:47:46.987Z"
                 }
             ]
         },
@@ -10595,7 +10631,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-0.8.jar",
+                    "file_name": "society_trading-0.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10603,18 +10639,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7199/991/society_trading-0.8.jar",
-                    "id": "7199991",
+                    "url": "https://edge.forgecdn.net/files/7221/661/society_trading-0.9.jar",
+                    "id": "7221661",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "85924be83531fdce89418501d116afe25bd70141",
-                        "md5": "9d48579822c10a28f3694be54a9671ec"
+                        "sha1": "ed031a403c223cbe1994c81d6f4ce18c993153bc",
+                        "md5": "eb9bed4a78e93fdba914a56ec1d3a8c8"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 105034,
-                    "date_published": "2025-11-08T19:03:18.233Z"
+                    "size": 105382,
+                    "date_published": "2025-11-14T18:24:48.170Z"
                 }
             ]
         },
@@ -12037,6 +12073,43 @@
                     "required_dependencies": [],
                     "size": 705425,
                     "date_published": "2025-04-06T20:04:14.860Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "E3plrzihRC9VhO9v",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "vndialog"
+            },
+            "name": {
+                "curseforge": "VNDialog"
+            },
+            "id": {
+                "curseforge": "1263982"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "VNDialog-1.1.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6890/682/VNDialog-1.1.2-1.20.1.jar",
+                    "id": "6890682",
+                    "parent_id": "1263982",
+                    "hashes": {
+                        "sha1": "d122bdfdf8b87b24163a25ed74c92d173a49f8ef",
+                        "md5": "71ae559f062b85d293b624b759cf2fe4"
+                    },
+                    "required_dependencies": [],
+                    "size": 1232529,
+                    "date_published": "2025-08-15T20:16:39.560Z"
                 }
             ]
         },

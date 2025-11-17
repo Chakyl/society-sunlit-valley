@@ -3026,6 +3026,420 @@
 			x: -10.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{image:society:textures/gui/buildings/barn_vibrantown.png width:198 height:198 align:center}"]
+			icon: "meadow:shelf"
+			id: "6FA681B69F95DD3D"
+			min_required_tasks: 3
+			rewards: [{
+				id: "7C9AC22947167DD8"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 14 blocks deep, 14 blocks wide, and 8 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "3E60E71672FC824D"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "10A9C887766C0FF5"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "59CB6C652CEA90C2"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: " Vibrantown Barn"
+			x: -13.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{image:society:textures/gui/buildings/coop_vibrantown.png width:198 height:198 align:center}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "38E4027733F17671"
+			min_required_tasks: 3
+			rewards: [{
+				id: "71D05B1CF4813241"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 10 blocks wide, 10 blocks deep, 7 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "41F0FC79E1811D02"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3671E7F09B074449"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6D2DF4CA7D0BD5A0"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Vibrantown Coop"
+			x: -9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{image:society:textures/gui/buildings/shed_vibrantown.png width:198 height:198 align:center}"]
+			icon: "minecraft:bricks"
+			id: "47F3725020E30F73"
+			min_required_tasks: 3
+			rewards: [{
+				id: "2F03584CD25038D1"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 12 blocks wide, 12 blocks deep, 8 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "48DB6F9E43F86A64"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "24C16A2738048AC3"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "22C450414901475C"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Vibrantown Shed"
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{image:society:textures/gui/buildings/large_shed_vibrantown.png width:198 height:198 align:center}"]
+			icon: "quark:blue_framed_glass"
+			id: "053FDFA0E3AF728B"
+			min_required_tasks: 3
+			rewards: [{
+				id: "01BEEB4CB4599A64"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 15 blocks wide, 17 blocks deep, 9 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "259F92A7B81AB336"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "2C604B94609E05BA"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "49B3902D8137C1D0"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Vibrantown Large Shed"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{image:society:textures/gui/buildings/house_vibrantown.png width:198 height:198 align:center}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "5AC27B3010B9AB76"
+			min_required_tasks: 3
+			rewards: [{
+				id: "528DC5074FD472BC"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 15 blocks wide, 15 blocks deep, 16 blocks tall"
+			tasks: [
+				{
+					count: 8L
+					id: "6DEF049F8D9445A8"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "642CF4EC2713EEAA"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "716CA091141660D7"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Vibrantown Farmhouse"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_vibrantown.png width:198 height:198 align:center}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "3C3C7DFB42B72A2F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "072234544AF69E9E"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 20 blocks wide, 20 blocks deep, 10 blocks tall"
+			tasks: [
+				{
+					count: 20L
+					id: "1F55613F99BA4CF2"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "2CB55BB9FBBCC3E6"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "567844B2259953A1"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Vibrantown Deluxe Barn"
+			x: -13.0d
+			y: 0.0d
+		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"
 }
