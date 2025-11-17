@@ -201,7 +201,7 @@ global.winterFresh = [
 ];
 
 global.getRoe = (fish) => {
-  let fishId = fish.split(":")[1];
+  let fishId = fish.path;
   if (fishId.includes("raw_")) {
     if (fishId === "raw_snowflake") fishId = "frosty_fin";
     else fishId = fishId.substring(4, fishId.length);
@@ -289,7 +289,7 @@ global.handleFishExtraction = (block, player, server) => {
     server.runCommandSilent(
       `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`
     );
-    let smokedFishId = type.split(":")[1];
+    let smokedFishId = type.path;
     if (smokedFishId.includes("raw_")) {
       if (smokedFishId === "raw_snowflake") smokedFishId = "frosty_fin";
       else smokedFishId = smokedFishId.substring(4, smokedFishId.length);

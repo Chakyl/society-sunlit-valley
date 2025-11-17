@@ -96,7 +96,7 @@ global.ore = [
   { item: "minecraft:prismarine_crystals", value: 20 },
 ].forEach((mineral) => {
   global.pristine.push({
-    item: `society:pristine_${mineral.item.split(":")[1]}`,
+    item: `society:pristine_${mineral.item.path}`,
     value: mineral.value * 4,
   });
 });
@@ -125,7 +125,7 @@ global.geodeList = [
 global.geodeList.forEach((mineral) => {
   if (mineral.item !== "society:froggy_helm")
     global.pristine.push({
-      item: `society:pristine_${mineral.item.split(":")[1]}`,
+      item: `society:pristine_${mineral.item.path}`,
       value: mineral.value * 6,
     });
 });
@@ -152,7 +152,7 @@ global.frozenGeodeList = [
 global.frozenGeodeList.forEach((mineral) => {
   if (mineral.item !== "society:ribbit_drum")
     global.pristine.push({
-      item: `society:pristine_${mineral.item.split(":")[1]}`,
+      item: `society:pristine_${mineral.item.path}`,
       value: mineral.value * 6,
     });
 });
@@ -177,7 +177,7 @@ global.magmaGeodeList = [
 global.magmaGeodeList.forEach((mineral) => {
   if (mineral.item !== "society:ribbit_gadget")
     global.pristine.push({
-      item: `society:pristine_${mineral.item.split(":")[1]}`,
+      item: `society:pristine_${mineral.item.path}`,
       value: mineral.value * 6,
     });
 });
@@ -191,7 +191,7 @@ global.gems = [
 ];
 global.gems.forEach((mineral) => {
   global.pristine.push({
-    item: `society:pristine_${mineral.item.split(":")[1]}`,
+    item: `society:pristine_${mineral.item.path}`,
     value: mineral.value * 6,
   });
 });
@@ -672,7 +672,7 @@ global.dehydrated = [
   { item: "society:nether_raisins", value: 400 },
 ];
 global.fruits.forEach((fruit) => {
-  let itemId = fruit.item.split(":")[1];
+  let itemId = fruit.item.path;
   if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
   global.preserves.push({
     item: fruit.altPreserveOutput ? fruit.altPreserveOutput : `society:${itemId}_preserves`,
@@ -696,7 +696,7 @@ global.mushrooms = [
   { item: "botania:shimmering_mushrooms", value: 16 },
 ];
 global.mushrooms.forEach((shroom) => {
-  let itemId = shroom.item.split(":")[1];
+  let itemId = shroom.item.path;
   global.dehydrated.push({
     item: `society:dried_${itemId}`,
     value: shroom.value * 12 + 32,
@@ -936,11 +936,11 @@ global.wines = [
 
 global.wines.forEach((wine) => {
   global.artisanGoods.push({
-    item: `society:aged_${wine.item.split(":")[1]}`,
+    item: `society:aged_${wine.item.path}`,
     value: wine.value * 4,
   });
   global.artisanGoods.push({
-    item: `society:double_aged_${wine.item.split(":")[1]}`,
+    item: `society:double_aged_${wine.item.path}`,
     value: wine.value * 16,
   });
 });
@@ -977,11 +977,11 @@ brewingStationRecipes.forEach((recipe) => {
 
 global.brews.forEach((brew) => {
   global.artisanGoods.push({
-    item: `society:aged_${brew.item.split(":")[1]}`,
+    item: `society:aged_${brew.item.path}`,
     value: brew.value * 4,
   });
   global.artisanGoods.push({
-    item: `society:double_aged_${brew.item.split(":")[1]}`,
+    item: `society:double_aged_${brew.item.path}`,
     value: brew.value * 16,
   });
 });
@@ -993,11 +993,11 @@ const miscAged = [
 
 miscAged.forEach((brew) => {
   global.artisanGoods.push({
-    item: `society:aged_${brew.item.split(":")[1]}`,
+    item: `society:aged_${brew.item.path}`,
     value: brew.value * 4,
   });
   global.artisanGoods.push({
-    item: `society:double_aged_${brew.item.split(":")[1]}`,
+    item: `society:double_aged_${brew.item.path}`,
     value: brew.value * 16,
   });
 });
@@ -1228,7 +1228,7 @@ global.picklableVegetables = [
 ];
 global.picklableVegetables.forEach((recipe) =>
   fermentingRecipes.push({
-    item: `society:pickled_${recipe.item.split(":")[1]}`,
+    item: `society:pickled_${recipe.item.path}`,
     value: recipe.value,
   })
 );

@@ -33,7 +33,7 @@ global.handleAdditionalArtisanMachineOutputs = (
     case "society:crystalarium": {
       if (upgraded && rnd10()) {
         recipes[type - 1].output.forEach((item) => {
-          global.insertBelow(level, block, `society:pristine_${Item.of(item).id.split(":")[1]}`);
+          global.insertBelow(level, block, `society:pristine_${Item.of(item).id.path}`);
         });
       }
       break;

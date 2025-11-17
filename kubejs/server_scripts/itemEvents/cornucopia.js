@@ -77,7 +77,7 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
       fruitTreeBlocks.includes(scannedBlock.id) &&
       scannedBlock.properties.get("age") == 7
     ) {
-      fruitType = String(scannedBlock.id.split(":")[1]);
+      fruitType = String(scannedBlock.id.path);
       fruitCount = 1;
       success = true;
       if (dropThree.includes(scannedBlock.id)) fruitCount = 3;

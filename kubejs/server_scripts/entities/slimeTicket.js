@@ -29,7 +29,7 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
   const { hand, player, level, target, server, item } = e;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND" && item === "splendid_slimes:slime_ticket") {
-    const slimeType = target.nbt.Breed.toString().split(":")[1];
+    const slimeType = target.nbt.Breed.toString().path;
     const favorites = SlimeFavoriteFoods[slimeType];
     server.runCommandSilent(
       `playsound chimes:block.iron.chime block @a ${player.x} ${player.y} ${player.z}`

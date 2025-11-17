@@ -174,7 +174,7 @@ global.artisanHarvest = (
         (id.includes("wheel") || id.includes("block")) &&
         block.properties.get("upgraded").toLowerCase() === "true"
       ) {
-        harvestOutput = Item.of(`society:aged_${id.split(":")[1]}`);
+        harvestOutput = Item.of(`society:aged_${id.path}`);
       }
       if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));

@@ -99,12 +99,12 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`● ${calculateCost(coin.split(":")[1], 1, item.count)}`),
+          Text.white(`● ${calculateCost(coin.path, 1, item.count)}`),
           Text.gray(" Stack value"),
         ]);
       } else {
         text.add(1, [
-          Text.white(`● ${calculateCost(coin.split(":")[1], 1, 1)}`),
+          Text.white(`● ${calculateCost(coin.path, 1, 1)}`),
           Text.darkGray(" Hold ["),
           Text.gray("Shift"),
           Text.darkGray("]"),
@@ -1013,7 +1013,7 @@ ItemEvents.tooltip((tooltip) => {
         global.bedDefinitions.get(bed).forEach((animal, index) => {
           text.add(
             index + 2,
-            Text.gold(global.formatName(String(animal.split(":")[1]).replace(/_/g, " ")))
+            Text.gold(global.formatName(String(animal.path).replace(/_/g, " ")))
           );
         });
       } else {

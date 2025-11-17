@@ -1,4 +1,5 @@
-npcDefinitions.set("carpenter", {
+// Priority: -100
+runNpcDatagen("carpenter", {
   name: "Danny",
   intro: [
     "Hey stranger, my name is Danny. I'm here to help you build the village you're starting in Sunlit Valley.",

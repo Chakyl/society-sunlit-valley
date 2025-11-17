@@ -8,7 +8,7 @@ const createDecree = (name, items, mult, pricyThreshold, amountFunction) => {
     tradeEntry = global.trades.get(item);
     if (tradeEntry) {
       pricy = tradeEntry.value > pricyThreshold;
-      objs.content[`${name}_${item.split(":")[1]}`] = {
+      objs.content[`${name}_${item.path}`] = {
         type: "minecraft:item",
         content: item,
         rarity: pricy ? "UNCOMMON" : "COMMON",
@@ -38,7 +38,7 @@ const createSeasonalDecree = (season, items) => {
     if (tradeEntry) {
       pricy = tradeEntry.value > 64;
       crop = Item.of(item).hasTag("forge:crops");
-      objs.content[`${season}_${item.split(":")[1]}`] = {
+      objs.content[`${season}_${item.path}`] = {
         type: "minecraft:item",
         content: item,
         rarity: pricy ? "UNCOMMON" : "COMMON",

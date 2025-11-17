@@ -26,7 +26,7 @@ BlockEvents.rightClicked(
   (e) => {
     const { item, player, hand, block, server } = e;
     const { price, outputItem, outputDisplayName, outputCount } =
-      catalogMap[block.id.toString().split(":")[1]];
+      catalogMap[block.id.toString().path];
 
     if (hand == "OFF_HAND") return;
     if (hand == "MAIN_HAND") {

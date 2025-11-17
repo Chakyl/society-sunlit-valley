@@ -33,9 +33,9 @@ global.dehydratableMushrooms = [
 ];
 global.dehydratableMushroomOutputs = ["society:dried_shimmering_mushrooms"];
 global.dehydratableMushrooms.forEach((item) => {
-  global.dehydratableMushroomOutputs.push(`society:dried_${item.split(":")[1]}`);
+  global.dehydratableMushroomOutputs.push(`society:dried_${item.path}`);
   global.dehydratorRecipes.set(item, {
-    output: [`1x society:dried_${item.split(":")[1]}`],
+    output: [`1x society:dried_${item.path}`],
   });
 });
 global.dehydratableFruits = [
@@ -70,7 +70,7 @@ global.dehydratableFruits = [
   "windswept:wild_berries",
 ];
 global.dehydratableFruits.forEach((item) => {
-  let itemId = item.split(":")[1];
+  let itemId = item.path;
   if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
   global.dehydratorRecipes.set(item, {
     output: [`1x society:dried_${itemId}`],

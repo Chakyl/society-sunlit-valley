@@ -124,7 +124,7 @@ ItemEvents.modification((e) => {
   ];
   goldTools.forEach((tool) => {
     e.modify(tool, (item) => {
-      item.maxDamage *= tool.split(":")[0] === "justhammers" ? 2 : 16;
+      item.maxDamage *= tool.namespace === "justhammers" ? 2 : 16;
     });
   });
   e.modify("minecraft:golden_helmet", (item) => {
