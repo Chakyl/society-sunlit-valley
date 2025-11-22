@@ -345,7 +345,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         let outputCount;
         for (let i = 0; i < slots; i++) {
           slotStack = aboveBlock.inventory.getStackInSlot(i);
-          if (!(multipleInputs && slotStack.count < stageCount)) {
+          if (!(multipleInputs && !slotStack.isEmpty() && slotStack.count < stageCount)) {
             outputCount = global.artisanInsert(
               artisanMachine,
               slotStack,

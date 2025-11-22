@@ -254,6 +254,8 @@ const rawLogs = [
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
+  e.add("stardew_fishing:bobbers", "society:needle_bobber");
+  e.add("stardew_fishing:bobbers", "society:net_bobber");
   e.add("forge:plates/lead", "oreganized:lead_sheet");
   e.add("forge:plates", "oreganized:lead_sheet");
   e.add("forge:plates/silver", "oreganized:silver_sheet");

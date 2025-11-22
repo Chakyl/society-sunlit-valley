@@ -642,32 +642,15 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "0FF144C9BACD9442"
+				id: "2535B0A23A9A9D48"
 				item: {
 					Count: 1
-					id: "itemfilters:or"
+					id: "itemfilters:tag"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:egg"
-							}
-							{
-								Count: 1b
-								id: "untitledduckmod:goose_egg"
-							}
-							{
-								Count: 1b
-								id: "untitledduckmod:duck_egg"
-							}
-							{
-								Count: 1b
-								id: "autumnity:turkey_egg"
-							}
-						]
+						value: "forge:eggs"
 					}
 				}
-				title: "{ftbquests.chapter.ii__building_up_the_farm.quest23.task_1148775013169337410.title}"
+				title: "Any Egg"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest23.title}"

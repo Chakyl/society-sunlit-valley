@@ -1,0 +1,208 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "backend"
+	group: ""
+	icon: "functionalstorage:creative_vending_upgrade"
+	id: "4B006888C6DC9177"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3EAC4E1772F0AAB6"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "38AE34D343E97679"
+					secret: true
+					stage: "farmers_blessing"
+					type: "gamestage"
+				}
+				{
+					id: "528F0FE6A887A6F4"
+					secret: true
+					stage: "crop_collector"
+					type: "gamestage"
+				}
+				{
+					id: "07E4C68ED0D3FEC5"
+					secret: true
+					stage: "artful_tycoon"
+					type: "gamestage"
+				}
+				{
+					id: "7AA83B191AA2B592"
+					secret: true
+					stage: "ancient_aging"
+					type: "gamestage"
+				}
+			]
+			title: "Max Level Farming"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "265C25CBBBE510A1"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "3453BA3466ED5CF2"
+					secret: true
+					stage: "clockwork"
+					type: "gamestage"
+				}
+				{
+					id: "6A81B5D852416990"
+					secret: true
+					stage: "heretic"
+					type: "gamestage"
+				}
+				{
+					id: "628CAEBBC3F9D6B3"
+					secret: true
+					stage: "triple_truffle"
+					type: "gamestage"
+				}
+				{
+					id: "03B9A8EF762CA1C4"
+					secret: true
+					stage: "bff"
+					type: "gamestage"
+				}
+			]
+			title: "Max Level Husbandry"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "1B40A79E3BB1AF91"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "7AE05EC8FA33E1D2"
+					secret: true
+					stage: "prismatic_prospector"
+					type: "gamestage"
+				}
+				{
+					id: "0C2AF2245B8738A4"
+					secret: true
+					stage: "high_roller"
+					type: "gamestage"
+				}
+				{
+					id: "4D7AE137507184E8"
+					secret: true
+					stage: "gem_tycoon"
+					type: "gamestage"
+				}
+				{
+					id: "42C13ADD23461199"
+					secret: true
+					stage: "star_blessing"
+					type: "gamestage"
+				}
+			]
+			title: "Max Level Mining"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			id: "4A59A141B885AE58"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "4D67F2BD5C3CC039"
+					secret: true
+					stage: "school_fisher"
+					type: "gamestage"
+				}
+				{
+					id: "0583E2E98B3894B2"
+					secret: true
+					stage: "prismatic_bounty"
+					type: "gamestage"
+				}
+				{
+					id: "097BF47B9D081CFE"
+					secret: true
+					stage: "scum_collector"
+					type: "gamestage"
+				}
+				{
+					id: "29A73694824EB5A2"
+					secret: true
+					stage: "mitosis"
+					type: "gamestage"
+				}
+			]
+			title: "Max Level Fishing"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			id: "254362231063D66A"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "60A2FF98632658C4"
+					secret: true
+					stage: "clockwork"
+					type: "gamestage"
+				}
+				{
+					id: "547E698FA3D7ACEB"
+					secret: true
+					stage: "looting_tycoon"
+					type: "gamestage"
+				}
+				{
+					id: "37EC165DD412591A"
+					secret: true
+					stage: "prismatic_realm"
+					type: "gamestage"
+				}
+				{
+					id: "24BAAB91ECA941B9"
+					secret: true
+					stage: "stuffed"
+					type: "gamestage"
+				}
+			]
+			title: "Max Level Adventuring"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"265C25CBBBE510A1"
+				"4A59A141B885AE58"
+				"254362231063D66A"
+				"3EAC4E1772F0AAB6"
+				"1B40A79E3BB1AF91"
+			]
+			id: "1A5334E8302500AA"
+			rewards: [{
+				auto: "invisible"
+				command: "/puffish_skills category unlock @p society:mastery"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "3532267C71EFC28B"
+				ignore_reward_blocking: true
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "64342FD45D5E3A60"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "Unlock mastery"
+			x: 3.0d
+			y: 2.0d
+		}
+	]
+	title: "Backend"
+}

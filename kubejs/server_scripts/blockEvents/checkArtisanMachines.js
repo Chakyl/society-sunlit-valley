@@ -102,9 +102,9 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
   }
   const pipCount = maxInput !== -1 ? maxInput : duration;
   if (!primaryOutput)
-    primaryOutput = id
-      .path
-      .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
+    primaryOutput = id.path.replace(/^_*(.)|_+(.)/g, (s, c, d) =>
+      c ? c.toUpperCase() : " " + d.toUpperCase()
+    );
   let outputString = "";
   for (let index = 0; index < pipCount; index++) {
     if (index < blockStage) outputString += "⬛";
@@ -185,6 +185,7 @@ BlockEvents.rightClicked(
     "society:ancient_cask",
     "society:charging_rod",
     "society:crystalarium",
+    "society:wine_keg",
     "society:deluxe_worm_farm",
     "society:dehydrator",
     "society:espresso_machine",

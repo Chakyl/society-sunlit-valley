@@ -141,7 +141,7 @@
       "data": {
         "item": "society:dragontooth_axe"
       }
-  },
+    },
     "rewards": [
       {
         "type": "puffish_skills:command",
@@ -331,6 +331,13 @@
           "attribute": "generic.max_health",
           "value": 10,
           "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s stuffed",
+          "lock_command": "kubejs stages remove @s stuffed"
         }
       }
     ]

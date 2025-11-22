@@ -252,8 +252,8 @@ global.artisanInsert = (
     block.setEntityData(nbt);
     block.set(block.id, newProperties);
     if (player && !player.isCreative()) item.count -= useCount;
+    if (artisanHopper) return useCount;
   }
-  if (artisanHopper) return useCount;
 };
 
 global.handleBERightClick = (
@@ -351,7 +351,11 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   let foundFluidData = undefined;
   let hasError = false;
   if (attachedBlock.hasTag("society:tappable_blocks")) {
-    if (!nbt.data.recipe.equals(attachedBlock.id) || global.hasMultipleTappers(level, block)) {
+    if (
+      !nbt.data.recipe ||
+      !nbt.data.recipe.equals(attachedBlock.id) ||
+      global.hasMultipleTappers(level, block)
+    ) {
       hasError = true;
     }
     if (
@@ -361,8 +365,11 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
     ) {
       if (global.tapperRecipes) {
         const recipe = global.tapperRecipes.get(`${attachedBlock.getId()}`);
-        if (returnFluidData && !foundFluidData && attachedBlock.getId() === nbt.data.recipe) {
+        let nbt = block.getEntityData();
+        if (returnFluidData && !foundFluidData && recipe) {
           foundFluidData = { fluid: recipe.fluidOutput, time: recipe.time };
+          nbt.merge({ data: { recipe: `${attachedBlock.getId()}` } });
+          hasError = false;
         }
         if (
           !returnFluidData &&
@@ -376,10 +383,10 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
           newProperties.working = false;
           newProperties.mature = false;
           newProperties.working = true;
-          let nbt = block.getEntityData();
           nbt.merge({ data: { recipe: `${attachedBlock.getId()}`, stage: 0 } });
-          block.setEntityData(nbt);
+          hasError = false;
         }
+        block.setEntityData(nbt);
       }
     }
     if (returnFluidData) {
@@ -699,6 +706,9 @@ global.giveExperience = (server, player, category, xp) => {
   if (!player.isFake()) {
     server.runCommandSilent(
       `puffish_skills experience add ${player.username} society:${category} ${xp}`
+    );
+    server.runCommandSilent(
+      `puffish_skills experience add ${player.username} society:mastery ${xp}`
     );
   }
 };

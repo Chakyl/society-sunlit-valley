@@ -205,6 +205,13 @@
           "value": 4,
           "operation": "addition"
         }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s high_roller",
+          "lock_command": "kubejs stages remove @s high_roller"
+        }
       }
     ]
   },

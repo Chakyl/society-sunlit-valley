@@ -141,7 +141,7 @@ global.husbandryForagingDefinitions = [
     forages: [
       {
         item: "betterarcheology:artifact_shards",
-        countMult: 2,
+        countMult: 6,
         chance: 1,
         minHearts: 5,
       },
@@ -461,7 +461,7 @@ global.husbandryForagingDefinitions = [
       },
       {
         item: "betterarcheology:artifact_shards",
-        countMult: 4,
+        countMult: 12,
         chance: 1,
         minHearts: 10,
       },
@@ -479,7 +479,7 @@ global.husbandryMilkingDefinitions = [
   {
     animal: "buzzier_bees:moobloom",
     cooldown: 1,
-    milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" },
+    milk: { sm: "society:amethyst_milk", lg: "society:amethyst_milk" },
   },
   { animal: "meadow:wooly_cow", warped: false, cooldown: 1, milk: cowMilk },
   {
