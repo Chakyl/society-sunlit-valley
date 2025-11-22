@@ -10,10 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"2F83B8F22344FAD7"
-			]
+			dependencies: ["2F83B8F22344FAD7"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest46.description1}"
 				""
@@ -40,10 +37,7 @@
 			y: 21.0d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"0DC68C5CF6D82372"
-			]
+			dependencies: ["0DC68C5CF6D82372"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest20.description1}"
 				""
@@ -75,10 +69,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"0DC68C5CF6D82372"
-			]
+			dependencies: ["0DC68C5CF6D82372"]
 			description: ["{ftbquests.chapter.iii__advanced_farming.quest15.description1}"]
 			id: "0E4EA6B5E8E6361C"
 			rewards: [{
@@ -112,10 +103,7 @@
 			y: 20.5d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"3FA607115DB107D9"
-			]
+			dependencies: ["3FA607115DB107D9"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest49.description1}"
 				""
@@ -160,7 +148,6 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["3291A30C1D1B009D"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest16.description1}"
 				""
@@ -323,10 +310,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"6A94BB4CB99D814E"
-			]
+			dependencies: ["6A94BB4CB99D814E"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest18.description1}"
 				""
@@ -367,7 +351,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["3291A30C1D1B009D"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest40.description1}"
 				""
