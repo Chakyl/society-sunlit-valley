@@ -66,6 +66,237 @@
 			},
 			"unitWorth": 288
 		},
+		"fishing_raw_eyelash": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_eyelash",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1920
+		},
+		"fishing_raw_spindlefish": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_spindlefish",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1472
+		},
+		"fishing_raw_snowflake": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_snowflake",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 384
+		},
+		"fishing_raw_aero_mono": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_aero_mono",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 512
+		},
+		"fishing_raw_sailor_barb": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_sailor_barb",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 448
+		},
+		"fishing_raw_bark_angelfish": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_bark_angelfish",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 576
+		},
+		"fishing_raw_picklefish": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_picklefish",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 192
+		},
+		"fishing_raw_amber_goby": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_amber_goby",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"fishing_raw_beaked_herring": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_beaked_herring",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 128
+		},
+		"fishing_raw_blind_sailfin": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_blind_sailfin",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 896
+		},
+		"fishing_raw_circus_fish": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_circus_fish",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1280
+		},
+		"fishing_raw_copperflame_anthias": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_copperflame_anthias",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1280
+		},
+		"fishing_raw_demon_herring": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_demon_herring",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 768
+		},
+		"fishing_raw_drooping_gourami": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_drooping_gourami",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 704
+		},
+		"fishing_raw_duality_damselfish": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_duality_damselfish",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1792
+		},
+		"fishing_raw_forkfish": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_forkfish",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 384
+		},
+		"fishing_raw_hatchetfish": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_hatchetfish",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1408
+		},
+		"fishing_raw_sneep_snorp": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_sneep_snorp",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 64
+		},
+		"fishing_raw_triple_twirl_pleco": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:raw_triple_twirl_pleco",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 832
+		},
+		"fishing_cooked_aero_mono_stick": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:cooked_aero_mono_stick",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"fishing_cooked_unusual_fillet": {
+			"type": "minecraft:item",
+			"content": "unusualfishmod:cooked_unusual_fillet",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 384
+		},
 		"fishing_atlantic_cod": {
 			"type": "minecraft:item",
 			"content": "aquaculture:atlantic_cod",
@@ -373,237 +604,6 @@
 				"max": 4
 			},
 			"unitWorth": 768
-		},
-		"fishing_raw_eyelash": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_eyelash",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1920
-		},
-		"fishing_raw_spindlefish": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_spindlefish",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1472
-		},
-		"fishing_raw_snowflake": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_snowflake",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 384
-		},
-		"fishing_raw_aero_mono": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_aero_mono",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 512
-		},
-		"fishing_raw_sailor_barb": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_sailor_barb",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 448
-		},
-		"fishing_raw_bark_angelfish": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_bark_angelfish",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 576
-		},
-		"fishing_raw_picklefish": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_picklefish",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 192
-		},
-		"fishing_raw_amber_goby": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_amber_goby",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1152
-		},
-		"fishing_raw_beaked_herring": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_beaked_herring",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 128
-		},
-		"fishing_raw_blind_sailfin": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_blind_sailfin",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 896
-		},
-		"fishing_raw_circus_fish": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_circus_fish",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1280
-		},
-		"fishing_raw_copperflame_anthias": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_copperflame_anthias",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1280
-		},
-		"fishing_raw_demon_herring": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_demon_herring",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 768
-		},
-		"fishing_raw_drooping_gourami": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_drooping_gourami",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 704
-		},
-		"fishing_raw_duality_damselfish": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_duality_damselfish",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1792
-		},
-		"fishing_raw_forkfish": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_forkfish",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 384
-		},
-		"fishing_raw_hatchetfish": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_hatchetfish",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1408
-		},
-		"fishing_raw_sneep_snorp": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_sneep_snorp",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 64
-		},
-		"fishing_raw_triple_twirl_pleco": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_triple_twirl_pleco",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 832
-		},
-		"fishing_cooked_aero_mono_stick": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:cooked_aero_mono_stick",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1152
-		},
-		"fishing_cooked_unusual_fillet": {
-			"type": "minecraft:item",
-			"content": "unusualfishmod:cooked_unusual_fillet",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 384
 		},
 		"fishing_lava_pufferfish": {
 			"type": "minecraft:item",

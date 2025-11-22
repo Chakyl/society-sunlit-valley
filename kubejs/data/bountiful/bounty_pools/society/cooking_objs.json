@@ -724,7 +724,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 33
+			"unitWorth": 66
 		},
 		"cooking_cake": {
 			"type": "minecraft:item",
@@ -2517,7 +2517,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 480
+			"unitWorth": 96
 		},
 		"cooking_strawberry_cake": {
 			"type": "minecraft:item",
@@ -2528,7 +2528,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 720
+			"unitWorth": 576
 		},
 		"cooking_strawberry_cupcake": {
 			"type": "minecraft:item",
@@ -2539,7 +2539,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 720
+			"unitWorth": 144
 		},
 		"cooking_sweetberry_cupcake": {
 			"type": "minecraft:item",
@@ -2550,7 +2550,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 420
+			"unitWorth": 84
 		},
 		"cooking_sweetberry_cake": {
 			"type": "minecraft:item",
@@ -2561,29 +2561,29 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 420
+			"unitWorth": 336
 		},
 		"cooking_chocolate_glazed_cookie": {
 			"type": "minecraft:item",
 			"content": "bakery:chocolate_glazed_cookie",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
+			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 1,
-				"max": 4
+				"min": 2,
+				"max": 8
 			},
-			"unitWorth": 3195
+			"unitWorth": 648
 		},
 		"cooking_strawberry_glazed_cookie": {
 			"type": "minecraft:item",
 			"content": "bakery:strawberry_glazed_cookie",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
+			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 1,
-				"max": 4
+				"min": 2,
+				"max": 8
 			},
-			"unitWorth": 960
+			"unitWorth": 192
 		},
 		"cooking_sweetberry_glazed_cookie": {
 			"type": "minecraft:item",
@@ -2594,7 +2594,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 720
+			"unitWorth": 144
 		},
 		"cooking_chocolate_cake": {
 			"type": "minecraft:item",
@@ -2605,7 +2605,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2130
+			"unitWorth": 1704
 		},
 		"cooking_chocolate_gateau": {
 			"type": "minecraft:item",
@@ -2616,7 +2616,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 375
+			"unitWorth": 300
 		},
 		"cooking_goat_stew": {
 			"type": "minecraft:item",
