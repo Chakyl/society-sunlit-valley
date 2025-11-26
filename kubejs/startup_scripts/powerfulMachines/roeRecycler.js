@@ -1,6 +1,8 @@
-console.info("[SOCIETY] picklingVat.js loaded");
+// priority: -21
+console.info("[SOCIETY] roeRecycler.js loaded");
 
-global.handlePicklingVat = (e) => {
+
+global.handleRoeRecycler = (e) => {
   const { inventory, level, block } = e;
   let slots = inventory.getSlots();
   let slotItem;
@@ -11,16 +13,24 @@ global.handlePicklingVat = (e) => {
   if (belowBlock.inventory && !inventory.isEmpty()) {
     for (let i = 0; i < slots; i++) {
       slotItem = inventory.getStackInSlot(i);
-      if (slotItem !== Item.of("minecraft:air")) {
+      if (
+        slotItem !== Item.of("minecraft:air") &&
+        global.picklingRecipes.get(`${slotItem.id}`)
+      ) {
         for (let j = 0; j < belowBlock.inventory.slots; j++) {
           belowItem = belowBlock.inventory.getStackInSlot(j);
+          let pickle = global.picklingRecipes.get(`${slotItem.id}`).pickle;
           if (
             belowItem === Item.of("minecraft:air") ||
-            (belowItem === Item.of(slotItem.id) &&
+            (belowItem === pickle &&
               belowItem.count < belowBlock.inventory.getSlotLimit(j))
           ) {
-            sentItem = slotItem.copy();
-            if (slotItem.nbt && slotItem.nbt.quality_food && !slotItem.hasTag('society:plushies')) {
+            sentItem = pickle;
+            if (
+              slotItem.nbt &&
+              slotItem.nbt.quality_food &&
+              !slotItem.hasTag("society:plushies")
+            ) {
               sentItem.nbt = null;
             }
             sentItem.count = 1;
@@ -36,23 +46,27 @@ global.handlePicklingVat = (e) => {
 
 StartupEvents.registry("block", (event) => {
   event
-    .create("society:pickling_vat", "cardinal")
+    .create("society:roe_recycler", "cardinal")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Pickles vegetables automatically and inserts them into the block below"));
-      item.tooltip(Text.green("Preserves input quality"));
+      item.tooltip(
+        Text.gray(
+          "Pickles vegetables automatically and inserts them into the block below"
+        )
+      );
+      item.tooltip(Text.red("Only usable if Fishing Mastery unlocked"));
       item.modelJson({
-        parent: "society:block/pickling_vat",
+        parent: "society:block/roe_recycler",
       });
     })
-    .model("society:block/pickling_vat")
+    .model("society:block/roe_recycler")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(20, 0, (entity) => {
-        global.handlePicklingVat(entity);
+        global.handleRoeRecycler(entity);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
@@ -60,9 +74,13 @@ StartupEvents.registry("block", (event) => {
           .insertItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.insertItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
+          .getSlotLimit((blockEntity, slot) =>
+            blockEntity.inventory.getSlotLimit(slot)
+          )
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
+          .getStackInSlot((blockEntity, slot) =>
+            blockEntity.inventory.getStackInSlot(slot)
+          )
       );
     });
 });
