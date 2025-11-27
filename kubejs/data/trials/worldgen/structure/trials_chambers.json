@@ -1,0 +1,16 @@
+{
+  "type": "trials:trialschambers",
+  "start_pool": "trials:entrance",
+  "biomes": "#society:is_skull_cavern",
+  "step": "underground_structures",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 256
+    },
+    "max_inclusive": {
+      "absolute": 348
+    }
+  },
+  "spawn_overrides": {}
+}

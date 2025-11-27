@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trials:trial_key_ominous",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:aquamagical_dust",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:hitting_hard_and_soft",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
