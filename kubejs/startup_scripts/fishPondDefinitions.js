@@ -3292,7 +3292,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:verdant_froglight", count: 8 },
-          { item: "copperandtuffbackport:copper_bulb", count: 16 },
+          { item: "trials:copper_bulb", count: 16 },
         ],
       },
       {
