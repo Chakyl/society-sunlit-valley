@@ -229,7 +229,7 @@ const paintPig = (player, server, xOffset, speeds, halfwayPoint, ranking) => {
     ) {
       secondWindChange = speeds[index][1] > speeds[index][0];
       server.runCommandSilent(
-        `playsound ${secondWindChange ? "trials:breeze_idle" : "windswept:entity.chilled.death"} player @a ${
+        `playsound ${secondWindChange ? "trials:breeze_idle" : "trials:spawner_summon"} player @a ${
           player.x
         } ${player.y} ${player.z}`
       );

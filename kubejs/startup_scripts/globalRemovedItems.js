@@ -512,6 +512,7 @@ global.removedItems = [
   "farmingforblockheads:fertilized_farmland_healthy_stable",
   "farmingforblockheads:fertilized_farmland_rich_stable",
   "farmingforblockheads:fertilized_farmland_rich",
+  "trials:crafter",
   "crafting_on_a_stick:anvil",
   "crafting_on_a_stick:chipped_anvil",
   "crafting_on_a_stick:damaged_anvil",
