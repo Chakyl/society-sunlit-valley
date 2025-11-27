@@ -2915,14 +2915,14 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "rottencreatures:frozen_rotten_flesh", count: 4 },
+          { item: "trials:breeze_rod", count: 4 },
           { item: "create:asurine", count: 64 },
-          { item: "species:cranktrap", count: 4 },
+          { item: "trials:trial_key_ominous", count: 4 },
         ],
       },
       {
         population: 7,
-        requestedItems: [{ item: "species:kinetic_core", count: 1 }],
+        requestedItems: [{ item: "trials:heavy_core", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -2934,7 +2934,7 @@ global.fishPondDefinitions = [
       },
       {
         minPopulation: 6,
-        item: "rottencreatures:frozen_rotten_flesh",
+        item: "trials:breeze_rod",
         count: 8,
         chance: 0.22,
       },
@@ -3059,14 +3059,16 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:rotten_flesh", count: 16 },
+          { item: "trials:trial_key", count: 8 },
+          { item: "trials:ominous_bottle", count: 4 },
+          { item: "trials:breeze_rod", count: 4 },
           { item: "rottencreatures:frozen_rotten_flesh", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "species:cranktrap", count: 1 },
+          { item: "trials:trial_key_ominous", count: 4 },
           { item: "minecraft:blaze_rod", count: 32 },
           { item: "society:holy_symbol", count: 1 },
         ],

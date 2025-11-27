@@ -301,6 +301,7 @@ ServerEvents.recipes((e) => {
     "candlelight:cooking_pan",
     "farmingforblockheads:feeding_trough",
     "minecraft:elytra",
+    "trials:crafter",
     "crafting_on_a_stick:anvil",
     "crafting_on_a_stick:chipped_anvil",
     "crafting_on_a_stick:damaged_anvil",

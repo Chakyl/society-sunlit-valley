@@ -30,6 +30,8 @@ ServerEvents.tags("item", (e) => {
     "botania_seeds",
     "farmingforblockheads",
     "numismatics",
+    "whimsydeco",
+    "cluttered",
   ];
   modBans.forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);
