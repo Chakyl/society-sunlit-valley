@@ -1810,6 +1810,7 @@ global.plorts = [
   { type: "splendid_slimes:juicy", value: 148 },
   { type: "splendid_slimes:puddle", value: 224 },
   { type: "splendid_slimes:boomcat", value: 256 },
+  { type: "splendid_slimes:bear", value: 200 },
   { type: "splendid_slimes:all_seeing", value: 256 },
   { type: "splendid_slimes:bitwise", value: 288 },
   { type: "splendid_slimes:blazing", value: 256 },

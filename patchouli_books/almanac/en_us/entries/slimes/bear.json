@@ -1,0 +1,17 @@
+{
+  "name": "Bear",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bear\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Loves you and makes you sticky from honey"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Bear Slime",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bear\"}",
+      "scale": 0.9
+    }
+  ]
+}

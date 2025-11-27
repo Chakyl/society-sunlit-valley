@@ -802,8 +802,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest47.title}"
-			x: 8.0d
-			y: 4.5d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
@@ -1216,6 +1216,27 @@
 			title: "Juicing up the Wine"
 			x: 2.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["07A551F04BB9A117"]
+			description: [
+				"Farming Slimes can be tricky! They all have different dreams and desires, and one wrong move will cause them to rip apart the fabric of your farm..."
+				""
+				"Luckily the &6Slime Inspector&r is here to help! Right clicking on a Slime with it will tell you if there's anything getting in the way of their happiness and your profits!"
+			]
+			id: "66C1440EFF12DC66"
+			rewards: [{
+				id: "47A229EC3B1CEBC8"
+				item: "splendid_slimes:slime_candy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D9713E05007CC59"
+				item: "splendid_slimes:slime_inspector"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

@@ -22,23 +22,6 @@
           "weight": 40
         },
         {
-          "type": "minecraft:tag",
-          "expand": true,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:saplings",
-          "weight": 40
-        },
-        {
           "type": "minecraft:item",
           "functions": [
             {
