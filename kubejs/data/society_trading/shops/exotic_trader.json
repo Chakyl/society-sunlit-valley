@@ -162,6 +162,33 @@
     },
     {
       "offer": {
+        "item": "supplementaries:cartographers_quill",
+        "count": 1,
+        "nbt": "{decoration:\"minecraft:red_x\",display:{Name:'{\"translate\":\"filled_map.trial_chamber\"}'},maxSearchRadius:50000,skinKnown:0b,targetStructure:\"trials:trials_chambers\",zoomLevel:1}"
+      },
+      "request": {
+        "item": "society:geode",
+        "count": 32
+      },
+      "second_request": {
+        "item": "society:magma_geode",
+        "count": 16
+      },
+      "trade_id": "minecraft:fletcher_cartographers_quill_for_geodes"
+    },
+    {
+      "offer": {
+        "item": "society:relic_trove",
+        "count": 1
+      },
+      "request": {
+        "item": "trials:trial_key_ominous",
+        "count": 4
+      },
+      "trade_id": "minecraft:fletcher_relic_trove_for_trial_key_ominous"
+    },
+    {
+      "offer": {
         "item": "society:artifact_trove",
         "count": 1
       },
