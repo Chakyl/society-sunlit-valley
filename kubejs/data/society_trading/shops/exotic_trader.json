@@ -151,17 +151,6 @@
     },
     {
       "offer": {
-        "item": "trials:breeze_rod",
-        "count": 8
-      },
-      "request": {
-        "item": "society:amethyst_chunk",
-        "count": 1
-      },
-      "trade_id": "minecraft:fletcher_breeze_rod_for_amethyst_chunk"
-    },
-    {
-      "offer": {
         "item": "society:prize_ticket",
         "count": 1
       },
@@ -170,22 +159,6 @@
         "count": 10
       },
       "trade_id": "minecraft:fletcher_prize_ticket_for_omni_geode"
-    },
-    {
-      "offer": {
-        "item": "supplementaries:cartographers_quill",
-        "count": 1,
-        "nbt": "{decoration:\"minecraft:red_x\",display:{Name:'{\"translate\":\"filled_map.trial_chamber\"}'},maxSearchRadius:50000,skinKnown:0b,targetStructure:\"trials:trials_chambers\",zoomLevel:1}"
-      },
-      "request": {
-        "item": "society:geode",
-        "count": 32
-      },
-      "second_request": {
-        "item": "society:magma_geode",
-        "count": 16
-      },
-      "trade_id": "minecraft:fletcher_cartographers_quill_for_geodes"
     },
     {
       "offer": {

@@ -5,9 +5,10 @@ ServerEvents.recipes((e) => {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",
   });
-  e.smelting("society:rubber", "society:sap").xp(0.35)
-  e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7)
-  e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7)
+  e.smelting("society:rubber", "society:sap").xp(0.35);
+  e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
+  e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
+  e.smelting("quark:charcoal_block", "meadow:fire_log").xp(4.0);
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
@@ -63,7 +64,12 @@ ServerEvents.recipes((e) => {
       item: "society:mexican_street_corn",
     },
   });
-  e.shapeless("6x numismatics:neptunium_coin", ["moreminecarts:chunk_loader"]);
+  e.shapeless("quark:slime_in_a_bucket", [
+    "society:petrified_slime",
+    "species:youth_potion",
+    "minecraft:bucket",
+  ]);
+  e.shapeless("minecraft:magenta_dye", ["windswept:lavender"]);
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
@@ -236,10 +242,10 @@ ServerEvents.recipes((e) => {
     t: "society:treated_log",
   });
   e.shaped("vinery:fermentation_barrel", ["FoF", "IbI", "FfF"], {
-    b: "minecraft:barrel",
-    I: "minecraft:iron_block",
-    f: "society:fire_quartz",
-    o: "society:oak_resin",
+    b: "society:wine_keg",
+    I: "minecraft:gold_block",
+    f: "society:battery",
+    o: "minecraft:netherite_ingot",
     F: "meadow:fire_log",
   });
   e.shaped("herbalbrews:cauldron", [" C ", "fcf", " f "], {
@@ -251,7 +257,7 @@ ServerEvents.recipes((e) => {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
     C: "#forge:storage_blocks/coal",
-    i: "minecraft:iron_block",
+    i: "minecraft:copper_block",
   });
   e.shaped("society:dehydrator", ["LGL", "pbp", "LfL"], {
     b: "minecraft:barrel",
@@ -542,18 +548,18 @@ ServerEvents.recipes((e) => {
   // Pristine uncrafting
   global.geodeList.forEach((geode) => {
     if (geode.item === "society:froggy_helm") return;
-    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.split(":")[1]}`]);
+    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.path}`]);
   });
   global.frozenGeodeList.forEach((geode) => {
     if (geode.item === "society:ribbit_drum") return;
-    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.split(":")[1]}`]);
+    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.path}`]);
   });
   global.magmaGeodeList.forEach((geode) => {
     if (geode.item === "society:ribbit_gadget") return;
-    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.split(":")[1]}`]);
+    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.path}`]);
   });
   global.gems.forEach((gem) => {
-    e.shapeless(`3x ${gem.item}`, [`society:pristine_${gem.item.split(":")[1]}`]);
+    e.shapeless(`3x ${gem.item}`, [`society:pristine_${gem.item.path}`]);
   });
   const vanillaPristine = [
     "minecraft:emerald",
@@ -564,7 +570,7 @@ ServerEvents.recipes((e) => {
     "minecraft:quartz",
   ];
   vanillaPristine.forEach((gem) => {
-    e.shapeless(`3x ${gem}`, [`society:pristine_${gem.split(":")[1]}`]);
+    e.shapeless(`3x ${gem}`, [`society:pristine_${gem.path}`]);
   });
   e.custom({
     type: "vintagedelight:fermenting",
@@ -678,7 +684,7 @@ ServerEvents.recipes((e) => {
     "netherdepthsupgrade:eyeball_fish",
     "society:neptuna",
   ].forEach((fish) => {
-    e.shapeless(fish, [`society:smoked_${fish.split(":")[1]}`, "1x minecraft:blue_ice"]);
+    e.shapeless(fish, [`society:smoked_${fish.path}`, "1x minecraft:blue_ice"]);
   });
   // Sprinklers
   e.shaped("dew_drop_farmland_growth:iron_sprinkler", [" C ", "IlI", " l "], {

@@ -10,10 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"2F83B8F22344FAD7"
-			]
+			dependencies: ["2F83B8F22344FAD7"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest46.description1}"
 				""
@@ -40,10 +37,7 @@
 			y: 21.0d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"0DC68C5CF6D82372"
-			]
+			dependencies: ["0DC68C5CF6D82372"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest20.description1}"
 				""
@@ -75,10 +69,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"0DC68C5CF6D82372"
-			]
+			dependencies: ["0DC68C5CF6D82372"]
 			description: ["{ftbquests.chapter.iii__advanced_farming.quest15.description1}"]
 			id: "0E4EA6B5E8E6361C"
 			rewards: [{
@@ -112,10 +103,7 @@
 			y: 20.5d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"3FA607115DB107D9"
-			]
+			dependencies: ["3FA607115DB107D9"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest49.description1}"
 				""
@@ -160,7 +148,6 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["3291A30C1D1B009D"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest16.description1}"
 				""
@@ -323,10 +310,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: [
-				"3291A30C1D1B009D"
-				"6A94BB4CB99D814E"
-			]
+			dependencies: ["6A94BB4CB99D814E"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest18.description1}"
 				""
@@ -367,7 +351,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["3291A30C1D1B009D"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest40.description1}"
 				""
@@ -472,7 +455,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["44A512703C4A9990"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest14.description1}"
 				""
@@ -1079,6 +1061,110 @@
 			title: "Ribbit Harvesting"
 			x: -14.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["38AC25E172172654"]
+			description: [
+				"The &6Advanced Wine Keg&r offers more complex but faster winemaking."
+				""
+				"{ftbquests.chapter.iii__advanced_farming.quest8.description3}"
+				""
+				"{ftbquests.chapter.iii__advanced_farming.quest8.description4}"
+			]
+			icon: "vinery:fermentation_barrel"
+			id: "506B32619EB8477F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33A9A1A691675DA7"
+					table_id: 8298743981735202683L
+					type: "choice"
+				}
+				{
+					count: 8
+					id: "677FB0F6F906FCDA"
+					item: "vinery:grapevine_stem"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "55395074B1C31027"
+					item: "vinery:spruce_lattice"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "123ECB8B6E58D6DD"
+					item: "vinery:fermentation_barrel"
+					type: "item"
+				}
+				{
+					id: "3012554BB871A2D7"
+					item: "vinery:grapevine_pot"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["506B32619EB8477F"]
+			description: [
+				"&6Advanced Wine Kegs&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				""
+				"Recipes can use the following juices:"
+				""
+				"- &cRed&r/&aWhite&r grape juice"
+				"- &cCrimson&r/&aWarped&r grape juice"
+				"- &eApple Juice&r (made using an Apple Press)"
+				""
+				"Juices are inserted in the top left slot of the Fermentation Barrel."
+			]
+			icon: "vinery:red_grapejuice"
+			id: "094497558E9DB19C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B7CCCDAF7C48D42"
+				table_id: 8298743981735202683L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "6F925B01C27987B2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "vinery:white_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:red_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:warped_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:crimson_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:apple_juice"
+							}
+						]
+					}
+				}
+				title: "Any Fermentation Barrel juice"
+				type: "item"
+			}]
+			title: "Juicing up the Wine"
+			x: -7.5d
+			y: 22.5d
 		}
 	]
 	title: "IV - Prismatic Farming"

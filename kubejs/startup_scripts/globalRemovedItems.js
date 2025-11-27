@@ -1,4 +1,5 @@
 global.removedItems = [
+  "nethervinery:obsidian_stem",
   "windswept:gingerbread_cookie",
   "windswept:frozen_flesh",
   "whimsy_deco:gatcha_capsule",
@@ -511,7 +512,6 @@ global.removedItems = [
   "farmingforblockheads:fertilized_farmland_healthy_stable",
   "farmingforblockheads:fertilized_farmland_rich_stable",
   "farmingforblockheads:fertilized_farmland_rich",
-  "trials:crafter",
   "crafting_on_a_stick:anvil",
   "crafting_on_a_stick:chipped_anvil",
   "crafting_on_a_stick:damaged_anvil",

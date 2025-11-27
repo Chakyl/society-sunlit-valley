@@ -26,7 +26,7 @@ global.springRiver = [
   { fish: "aquaculture:pink_salmon", weight: 9, night: true },
   { fish: "aquaculture:catfish", weight: 8, night: true, requiresRain: true },
   { fish: "aquaculture:bayad", weight: 5, night: true, requiresRain: true },
-  { fish: "unusualfishmod:raw_blind_sailfin", weight: 3 },
+  { fish: "unusualfishmod:raw_blind_sailfin", weight: 4 },
 ];
 global.springFresh = [
   { fish: "aquaculture:minnow", weight: 11 },
@@ -136,7 +136,7 @@ global.autumnFresh = [
   { fish: "aquaculture:perch", weight: 9 },
   { fish: "aquaculture:carp", weight: 10 },
   { fish: "aquaculture:gar", weight: 5, requiresRain: true },
-  { fish: "unusualfishmod:raw_bark_angelfish", weight: 2 },
+  { fish: "unusualfishmod:raw_bark_angelfish", weight: 4 },
   {
     fish: "unusualfishmod:raw_amber_goby",
     weight: 1,

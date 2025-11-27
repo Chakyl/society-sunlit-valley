@@ -3457,7 +3457,7 @@ global.fishPondDefinitions = [
       {
         minPopulation: 10,
         item: "society:sparkstone",
-        count: 8,
+        count: 16,
         chance: 0.25,
       },
     ],

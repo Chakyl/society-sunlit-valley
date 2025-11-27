@@ -1,0 +1,70 @@
+{
+  "shop_id": "wandering_winemaker",
+  "name": "shop.society_trading.wandering_winemaker",
+  "texture": "vinery:textures/block/dark_cherry_cabinet_front",
+  "entity": "vinery:wandering_winemaker",
+  "hidden_from_selector": true,
+  "jei_catalyst": { "item": "vinery:wandering_winemaker_spawn_egg" },
+  "trades": [
+    {
+      "request": { "count": 1, "item": "numismatics:cog" },
+      "offer": { "count": 1, "item": "vinery:red_grape_seeds" },
+      "numismatics_cost": 256,
+      "trade_id": "wandering_winemaker_red_grape_seeds"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:cog" },
+      "offer": { "count": 1, "item": "vinery:white_grape_seeds" },
+      "numismatics_cost": 256,
+      "trade_id": "wandering_winemaker_white_grape_seeds"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_red" },
+      "numismatics_cost": 512,
+      "trade_id": "wandering_winemaker_taiga_grape_seeds_red"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_white" },
+      "numismatics_cost": 512,
+      "trade_id": "wandering_winemaker_taiga_grape_seeds_white"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_red" },
+      "numismatics_cost": 512,
+      "trade_id": "wandering_winemaker_savanna_grape_seeds_red"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_white" },
+      "numismatics_cost": 512,
+      "trade_id": "wandering_winemaker_savanna_grape_seeds_white"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_red" },
+      "numismatics_cost": 512,
+      "trade_id": "wandering_winemaker_jungle_grape_seeds_red"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_white" },
+      "numismatics_cost": 512,
+      "trade_id": "wandering_winemaker_jungle_grape_seeds_white"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "nethervinery:crimson_grape_seeds" },
+      "numismatics_cost": 2048,
+      "trade_id": "wandering_winemaker_crimson_grape_seeds"
+    },
+    {
+      "request": { "count": 1, "item": "numismatics:crown" },
+      "offer": { "count": 1, "item": "nethervinery:warped_grape_seeds" },
+      "numismatics_cost": 2048,
+      "trade_id": "wandering_winemaker_warped_grape_seeds"
+    }
+  ]
+}

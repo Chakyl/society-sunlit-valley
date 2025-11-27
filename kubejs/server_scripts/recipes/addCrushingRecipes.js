@@ -41,7 +41,38 @@ ServerEvents.recipes((e) => {
   crushedRecipes("minecraft:beef", "farm_and_charm:minced_beef", 1, true);
   crushedRecipes("minecraft:mutton", "farm_and_charm:lamb_ham", 1, true);
   crushedRecipes("minecraft:baked_potato", "brewery:mashed_potatoes", 2, true);
-  
+  e.custom({
+    type: "farmersdelight:cutting",
+    ingredients: [
+      {
+        tag: "forge:dough",
+      },
+    ],
+    result: [
+      {
+        item: "farm_and_charm:raw_pasta",
+      },
+    ],
+    tool: {
+      tag: "forge:tools/knives",
+    },
+  });
+  e.custom({
+    type: "farmersdelight:cutting",
+    ingredients: [
+      {
+        item: "minecraft:cooked_chicken",
+      },
+    ],
+    result: [
+      {
+        item: "brewery:half_chicken",
+      },
+    ],
+    tool: {
+      tag: "forge:tools/knives",
+    },
+  });
   const spoutingRecipes = [
     { input: "create:crushed_raw_iron", output: ["minecraft:raw_iron"] },
     { input: "minecraft:raw_copper", output: ["create:crushed_raw_copper"] },

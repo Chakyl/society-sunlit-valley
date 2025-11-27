@@ -1,0 +1,26 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    [
+      { "item": "minecraft:cake" },
+      { "item": "veggiesdelight:carrot_cake" },
+      { "item": "bakery:strawberry_cake" },
+      { "item": "bakery:sweetberry_cake" },
+      { "item": "bakery:chocolate_cake" },
+      { "item": "farm_and_charm:grandmothers_strawberry_cake" },
+      { "item": "veggiesdelight:turnip_cake" },
+      { "item": "meadow:cheesecake" },
+      { "item": "farmersdelight:sweet_berry_cheesecake" }
+    ],
+    {
+      "amount": 500,
+      "fluid": "minecraft:lava",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "create:blaze_cake"
+    }
+  ]
+}

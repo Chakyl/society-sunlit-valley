@@ -14,15 +14,14 @@
     { "item": "aquaculture:fish_bones" },
     { "item": "netherdepthsupgrade:bonefish" },
     { "item": "minecraft:skeleton_spawn_egg" },
-    { "item": "minecraft:stray_spawn_egg" },
-    { "item": "trials:bogged_spawn_egg" }
+    { "item": "minecraft:stray_spawn_egg" }
   ],
   "favorite_food": {
     "item": "netherdepthsupgrade:bonefish"
   },
   "traits": ["picky"],
-  "entities": ["minecraft:stray", "minecraft:skeleton", "trials:bogged"],
-  "favorite_entity": "trials:bogged",
+  "entities": ["minecraft:stray", "minecraft:skeleton"],
+  "favorite_entity": "minecraft:stray",
   "emit_effect_particle": "supplementaries:air_burst",
   "negative_commands": [
     "execute at @p[distance=..6] run summon minecraft:lightning_bolt",

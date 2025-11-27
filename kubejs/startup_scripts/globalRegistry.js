@@ -96,7 +96,7 @@ global.ore = [
   { item: "minecraft:prismarine_crystals", value: 20 },
 ].forEach((mineral) => {
   global.pristine.push({
-    item: `society:pristine_${mineral.item.split(":")[1]}`,
+    item: `society:pristine_${mineral.item.path}`,
     value: mineral.value * 4,
   });
 });
@@ -125,7 +125,7 @@ global.geodeList = [
 global.geodeList.forEach((mineral) => {
   if (mineral.item !== "society:froggy_helm")
     global.pristine.push({
-      item: `society:pristine_${mineral.item.split(":")[1]}`,
+      item: `society:pristine_${mineral.item.path}`,
       value: mineral.value * 6,
     });
 });
@@ -152,7 +152,7 @@ global.frozenGeodeList = [
 global.frozenGeodeList.forEach((mineral) => {
   if (mineral.item !== "society:ribbit_drum")
     global.pristine.push({
-      item: `society:pristine_${mineral.item.split(":")[1]}`,
+      item: `society:pristine_${mineral.item.path}`,
       value: mineral.value * 6,
     });
 });
@@ -177,7 +177,7 @@ global.magmaGeodeList = [
 global.magmaGeodeList.forEach((mineral) => {
   if (mineral.item !== "society:ribbit_gadget")
     global.pristine.push({
-      item: `society:pristine_${mineral.item.split(":")[1]}`,
+      item: `society:pristine_${mineral.item.path}`,
       value: mineral.value * 6,
     });
 });
@@ -191,7 +191,7 @@ global.gems = [
 ];
 global.gems.forEach((mineral) => {
   global.pristine.push({
-    item: `society:pristine_${mineral.item.split(":")[1]}`,
+    item: `society:pristine_${mineral.item.path}`,
     value: mineral.value * 6,
   });
 });
@@ -241,6 +241,7 @@ global.artifacts = [
   { item: "society:mini_oni_eye", value: 704 },
   { item: "society:production_science_pack", value: 1024 },
   { item: "society:steamy_gadget", value: 649 },
+  { item: "society:amulet_of_light", value: 1282 },
   { item: "society:beemonican_seal", value: 2560 },
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
@@ -497,7 +498,7 @@ global.animalProducts = [
   { item: "society:large_duck_egg", value: 32 },
   { item: "society:large_goose_egg", value: 64 },
   { item: "society:large_turkey_egg", value: 128 },
-  { item: "farmlife:galliraptor_egg", value: 256 },
+  { item: "farmlife:galliraptor_egg", value: 200 },
   { item: "society:large_galliraptor_egg", value: 1024 },
   { item: "species:birt_egg", value: 12 },
   { item: "species:wraptor_egg", value: 40 },
@@ -671,7 +672,7 @@ global.dehydrated = [
   { item: "society:nether_raisins", value: 400 },
 ];
 global.fruits.forEach((fruit) => {
-  let itemId = fruit.item.split(":")[1];
+  let itemId = fruit.item.path;
   if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
   global.preserves.push({
     item: fruit.altPreserveOutput ? fruit.altPreserveOutput : `society:${itemId}_preserves`,
@@ -695,7 +696,7 @@ global.mushrooms = [
   { item: "botania:shimmering_mushrooms", value: 16 },
 ];
 global.mushrooms.forEach((shroom) => {
-  let itemId = shroom.item.split(":")[1];
+  let itemId = shroom.item.path;
   global.dehydrated.push({
     item: `society:dried_${itemId}`,
     value: shroom.value * 12 + 32,
@@ -720,7 +721,7 @@ global.artisanGoods = [
   { item: "society:duck_mayonnaise", value: 64 },
   { item: "society:goose_mayonnaise", value: 128 },
   { item: "society:turkey_mayonnaise", value: 256 },
-  { item: "society:galliraptor_mayonnaise", value: 2048 },
+  { item: "society:galliraptor_mayonnaise", value: 1600 },
   { item: "society:parrot_mayonnaise", value: 512 },
   { item: "society:turtle_mayonnaise", value: 1024 },
   { item: "society:sniffer_mayonnaise", value: 1536 },
@@ -732,12 +733,12 @@ global.artisanGoods = [
   { item: "society:large_duck_mayonnaise", value: 256 },
   { item: "society:large_goose_mayonnaise", value: 512 },
   { item: "society:large_turkey_mayonnaise", value: 1024 },
-  { item: "society:large_galliraptor_mayonnaise", value: 8192 },
+  { item: "society:large_galliraptor_mayonnaise", value: 4096 },
   { item: "society:birt_mayonnaise", value: 96 },
   { item: "society:wraptor_mayonnaise", value: 320 },
   { item: "society:springling_mayonnaise", value: 1024 },
   { item: "society:penguin_mayonnaise", value: 1536 },
-  { item: "society:flamingo_mayonnaise", value: 3072 },
+  { item: "society:flamingo_mayonnaise", value: 2400 },
   { item: "society:cruncher_mayonnaise", value: 4096 },
   { item: "society:oak_resin", value: 48 },
   { item: "society:maple_syrup", value: 192 },
@@ -914,7 +915,7 @@ global.wines = [
   { item: "vinery:lilitu_wine", value: 1824 },
   { item: "vinery:mellohi_wine", value: 4384 },
   { item: "vinery:stal_wine", value: 600 },
-  { item: "vinery:strad_wine", value: 384 },
+  { item: "vinery:strad_wine", value: 336 },
   { item: "vinery:solaris_wine", value: 576 },
   { item: "vinery:bolvar_wine", value: 504 },
   { item: "vinery:aegis_wine", value: 1056 },
@@ -935,11 +936,11 @@ global.wines = [
 
 global.wines.forEach((wine) => {
   global.artisanGoods.push({
-    item: `society:aged_${wine.item.split(":")[1]}`,
+    item: `society:aged_${wine.item.path}`,
     value: wine.value * 4,
   });
   global.artisanGoods.push({
-    item: `society:double_aged_${wine.item.split(":")[1]}`,
+    item: `society:double_aged_${wine.item.path}`,
     value: wine.value * 16,
   });
 });
@@ -976,11 +977,11 @@ brewingStationRecipes.forEach((recipe) => {
 
 global.brews.forEach((brew) => {
   global.artisanGoods.push({
-    item: `society:aged_${brew.item.split(":")[1]}`,
+    item: `society:aged_${brew.item.path}`,
     value: brew.value * 4,
   });
   global.artisanGoods.push({
-    item: `society:double_aged_${brew.item.split(":")[1]}`,
+    item: `society:double_aged_${brew.item.path}`,
     value: brew.value * 16,
   });
 });
@@ -992,11 +993,11 @@ const miscAged = [
 
 miscAged.forEach((brew) => {
   global.artisanGoods.push({
-    item: `society:aged_${brew.item.split(":")[1]}`,
+    item: `society:aged_${brew.item.path}`,
     value: brew.value * 4,
   });
   global.artisanGoods.push({
-    item: `society:double_aged_${brew.item.split(":")[1]}`,
+    item: `society:double_aged_${brew.item.path}`,
     value: brew.value * 16,
   });
 });
@@ -1227,7 +1228,7 @@ global.picklableVegetables = [
 ];
 global.picklableVegetables.forEach((recipe) =>
   fermentingRecipes.push({
-    item: `society:pickled_${recipe.item.split(":")[1]}`,
+    item: `society:pickled_${recipe.item.path}`,
     value: recipe.value,
   })
 );
@@ -1727,16 +1728,17 @@ global.miscAdventurer = [
   { item: "society:furniture_box", value: 64 },
   { item: "crabbersdelight:pearl", value: 64 },
   { item: "crabbersdelight:pearl_block", value: 512 },
-  { item: "trials:ominous_bottle", value: 64 },
-  { item: "trials:trial_key", value: 112 },
   { item: "betterarcheology:vase_green", value: 112 },
   { item: "betterarcheology:vase", value: 128 },
   { item: "betterarcheology:vase_creeper", value: 144 },
-  { item: "trials:trial_key_ominous", value: 224 },
-  { item: "trials:heavy_core", value: 6144 },
-  { item: "trials:guster_pottery_sherd", value: 160 },
-  { item: "trials:flow_pottery_sherd", value: 160 },
-  { item: "trials:scrape_pottery_sherd", value: 160 },
+  { item: "windswept:hoot_pottery_sherd", value: 182 },
+  { item: "windswept:plumage_pottery_sherd", value: 182 },
+  { item: "windswept:offshoot_pottery_sherd", value: 256 },
+  { item: "windswept:flake_pottery_sherd", value: 256 },
+  { item: "windswept:drupes_pottery_sherd", value: 256 },
+  { item: "atmospheric:scythe_pottery_sherd", value: 512 },
+  { item: "atmospheric:succulent_pottery_sherd", value: 512 },
+  { item: "atmospheric:sun_pottery_sherd", value: 512 },
   { item: "minecraft:angler_pottery_sherd", value: 192 },
   { item: "minecraft:snort_pottery_sherd", value: 192 },
   { item: "minecraft:shelter_pottery_sherd", value: 192 },
@@ -1820,7 +1822,7 @@ global.slimeHearts = [];
 global.plorts.forEach((plort) => {
   global.slimeHearts.push({
     type: plort.type,
-    value: Math.floor(plort.value * 16 * 1.5),
+    value: Math.floor(plort.value * 16),
   });
 });
 
@@ -2006,13 +2008,13 @@ global.plorts.forEach((plort) => {
   const { type, value } = plort;
   global.trades.set(`splendid_slimes:plort/${type}`, {
     value: value,
-    multiplier: "shippingbin:meat_sell_multiplier",
+    multiplier: "shippingbin:crop_sell_multiplier",
   });
 });
 global.slimeHearts.forEach((heart) => {
   const { type, value } = heart;
   global.trades.set(`splendid_slimes:slime_heart/${type}`, {
     value: value,
-    multiplier: "shippingbin:meat_sell_multiplier",
+    multiplier: "shippingbin:crop_sell_multiplier",
   });
 });

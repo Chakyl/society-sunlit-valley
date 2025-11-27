@@ -1026,7 +1026,6 @@ ItemEvents.tooltip((tooltip) => {
       text.add(2, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("] to view blocks")]);
     }
   });
-  tooltip.add("trials:ominous_bottle", Text.blue("Bad Omen (10:00)"));
   tooltip.add("society:overflow_token", Text.gray("Permanantly adds ● 1,006,632,960"));
   tooltip.add("society:overflow_token", Text.gray("to your coin leaderboard score,"));
   tooltip.add("society:overflow_token", Text.gray("bypassing the bank account's cap."));

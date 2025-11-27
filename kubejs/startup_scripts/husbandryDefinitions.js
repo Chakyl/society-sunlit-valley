@@ -141,7 +141,7 @@ global.husbandryForagingDefinitions = [
     forages: [
       {
         item: "betterarcheology:artifact_shards",
-        countMult: 2,
+        countMult: 4,
         chance: 1,
         minHearts: 5,
       },
@@ -461,7 +461,7 @@ global.husbandryForagingDefinitions = [
       },
       {
         item: "betterarcheology:artifact_shards",
-        countMult: 4,
+        countMult: 8,
         chance: 1,
         minHearts: 10,
       },
