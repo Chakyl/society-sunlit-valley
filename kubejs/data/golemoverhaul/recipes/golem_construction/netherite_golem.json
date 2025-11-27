@@ -1,0 +1,17 @@
+{
+  "type": "golemoverhaul:golem_construction",
+  "blockScale": 0.75,
+  "entity": "golemoverhaul:netherite_golem",
+  "entityScale": 0.45,
+  "item": "golemoverhaul:netherite_golem_spawn_egg",
+  "key": {
+    "#": "minecraft:netherite_block",
+    "^": "minecraft:carved_pumpkin",
+    "~": "minecraft:air"
+  },
+  "pattern": [
+    "~^~",
+    "###",
+    "~#~"
+  ]
+}

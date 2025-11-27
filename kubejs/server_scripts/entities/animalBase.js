@@ -450,7 +450,7 @@ ItemEvents.entityInteracted((e) => {
         data.clockwork = true;
         item.count--;
         server.runCommandSilent(
-          `playsound trials:vault_activate block @a ${player.x} ${player.y} ${player.z}`
+          `playsound create:fwoomp block @a ${player.x} ${player.y} ${player.z}`
         );
         level.spawnParticles(
           "supplementaries:bomb_explosion",

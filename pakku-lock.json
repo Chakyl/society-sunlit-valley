@@ -2122,6 +2122,43 @@
             ]
         },
         {
+            "pakku_id": "I1aZWO83zqRaEijr",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "copper-tuff-backport-fabric"
+            },
+            "name": {
+                "curseforge": "Copper & Tuff Backport (from 1.21) [Fabric | Forge]"
+            },
+            "id": {
+                "curseforge": "950738"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "copperandtuffbackport-1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5081/431/copperandtuffbackport-1.2.jar",
+                    "id": "5081431",
+                    "parent_id": "950738",
+                    "hashes": {
+                        "sha1": "5a4d0ab2034cdfb55c501b2184103b9cf82d79fd",
+                        "md5": "936af7f7481cb25383eeb9548540dc75"
+                    },
+                    "required_dependencies": [],
+                    "size": 754116,
+                    "date_published": "2024-02-04T21:20:24.763Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "3oRMmwud30j7AXmm",
             "type": "MOD",
             "slug": {
@@ -2352,6 +2389,42 @@
                     "required_dependencies": [],
                     "size": 1084001,
                     "date_published": "2025-11-21T19:49:05.137Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "sU5WuHM09A7JmuRd",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "crash-utilities"
+            },
+            "name": {
+                "curseforge": "Crash Utilities"
+            },
+            "id": {
+                "curseforge": "371813"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "crashutilities-8.1.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4716/86/crashutilities-8.1.4.jar",
+                    "id": "4716086",
+                    "parent_id": "371813",
+                    "hashes": {
+                        "sha1": "e3c00b7591fd5ea99cfbb853b9369fb999d68ed0",
+                        "md5": "f996d6d7e5b3376448204b6bb002b37b"
+                    },
+                    "required_dependencies": [],
+                    "size": 233000,
+                    "date_published": "2023-08-21T21:46:22.287Z"
                 }
             ]
         },
@@ -11378,42 +11451,6 @@
             ]
         },
         {
-            "pakku_id": "sT2XuJvcyq3sUz4J",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "terrablender"
-            },
-            "name": {
-                "curseforge": "TerraBlender (Forge)"
-            },
-            "id": {
-                "curseforge": "563928"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6290/448/TerraBlender-forge-1.20.1-3.0.1.10.jar",
-                    "id": "6290448",
-                    "parent_id": "563928",
-                    "hashes": {
-                        "sha1": "3bd99fb59e8b06b04e78b5153790c1e08b2be5dc",
-                        "md5": "9d8e305b95ae5a8f7b446d6346324267"
-                    },
-                    "required_dependencies": [],
-                    "size": 107532,
-                    "date_published": "2025-03-10T23:40:16.850Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "M7n6B3q9nnmFawiF",
             "pakku_links": [
                 "847NCyjjQ31hGN4d"
@@ -11875,42 +11912,6 @@
                     ],
                     "size": 117791,
                     "date_published": "2025-03-18T15:01:26.440Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "cep2hkYD6I2VaArR",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "trials-chambers-backport"
-            },
-            "name": {
-                "curseforge": "Trials Chambers [1.20.1 Backport]"
-            },
-            "id": {
-                "curseforge": "1012027"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Trials-2.3.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6008/720/Trials-2.3.3.jar",
-                    "id": "6008720",
-                    "parent_id": "1012027",
-                    "hashes": {
-                        "sha1": "606bf9c8cb50b6f8560f892af70387db037f2ca7",
-                        "md5": "af46de5d7e2cad2edb8d6873e51aba08"
-                    },
-                    "required_dependencies": [],
-                    "size": 8337747,
-                    "date_published": "2024-12-20T22:23:51.857Z"
                 }
             ]
         },

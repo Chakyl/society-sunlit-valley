@@ -772,7 +772,7 @@ ItemEvents.tooltip((tooltip) => {
         Text.white(`● ${formatNumber(price * item.count, 0)}`),
         Text.gray(" Stack value"),
       ]);
-      text.add(2, [getAttributeStr("meat")]);
+      text.add(2, [getAttributeStr("crop")]);
     } else {
       text.add(1, [
         Text.white(`● ${formatNumber(price, 0)}`),
@@ -797,7 +797,7 @@ ItemEvents.tooltip((tooltip) => {
         Text.white(`● ${formatNumber(price * item.count, 0)}`),
         Text.gray(" Stack value"),
       ]);
-      text.add(2, [getAttributeStr("meat")]);
+      text.add(2, [getAttributeStr("crop")]);
     } else {
       text.add(1, [
         Text.white(`● ${formatNumber(price, 0)}`),

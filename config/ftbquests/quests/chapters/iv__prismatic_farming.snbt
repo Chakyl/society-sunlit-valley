@@ -38,38 +38,6 @@
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description3}"
-			]
-			id: "68915F617033BDF9"
-			rewards: [
-				{
-					id: "1B15F9B82259AC47"
-					item: "society:relic_trove"
-					type: "item"
-				}
-				{
-					id: "1BF1079BA4BB41FA"
-					item: "trials:ominous_bottle"
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: "trials:trial_key_ominous"
-				id: "238260076624C9BF"
-				structure: "trials:trials_chambers"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest20.task_5229593360924708958.title}"
-				type: "structure"
-			}]
-			x: -3.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["0DC68C5CF6D82372"]
 			description: ["{ftbquests.chapter.iii__advanced_farming.quest15.description1}"]
 			id: "0E4EA6B5E8E6361C"
 			rewards: [{

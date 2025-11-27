@@ -47,7 +47,6 @@ ServerEvents.tags("entity_type", (e) => {
     "quark:foxhound",
     "quark:shiba",
     "minecraft:allay",
-    "legendarycreatures:ender_wisp",
     "minecraft:horse",
     "minecraft:polar_bear",
     "hamsters:hamster",

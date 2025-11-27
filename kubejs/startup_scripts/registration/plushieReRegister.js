@@ -114,7 +114,6 @@ StartupEvents.registry("block", (event) => {
           });
           tick.block.setEntityData(nbt);
         }
-        global.handleBERandomTick(tick, true, 1);
       })
       .blockEntity((blockInfo) => {
         blockInfo.initialData({ type: "", quest_id: 0, quality: 0, affection: 0 });

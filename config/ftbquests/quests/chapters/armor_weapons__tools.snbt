@@ -1377,33 +1377,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["617AC2E80908BFD7"]
-			description: [
-				"{ftbquests.chapter.armor_weapons__tools.quest33.description1}"
-				""
-				"{ftbquests.chapter.armor_weapons__tools.quest33.description2}"
-			]
-			id: "5F4010794D91F156"
-			rewards: [{
-				id: "19C3A68AD67F9FEC"
-				item: "numismatics:cog"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6E2B85BCC7DED7C0"
-				item: {
-					Count: 1
-					id: "trials:mace"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -12.0d
-			y: -4.0d
-		}
-		{
 			dependencies: ["7A5974D470C5AA9C"]
 			icon: {
 				Count: 1

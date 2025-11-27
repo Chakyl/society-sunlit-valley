@@ -2915,14 +2915,14 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "trials:breeze_rod", count: 4 },
+          { item: "rottencreatures:frozen_rotten_flesh", count: 4 },
           { item: "create:asurine", count: 64 },
-          { item: "trials:trial_key_ominous", count: 4 },
+          { item: "species:cranktrap", count: 4 },
         ],
       },
       {
         population: 7,
-        requestedItems: [{ item: "trials:heavy_core", count: 1 }],
+        requestedItems: [{ item: "species:kinetic_core", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -2934,7 +2934,7 @@ global.fishPondDefinitions = [
       },
       {
         minPopulation: 6,
-        item: "trials:breeze_rod",
+        item: "rottencreatures:frozen_rotten_flesh",
         count: 8,
         chance: 0.22,
       },
@@ -3059,15 +3059,14 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "trials:trial_key", count: 8 },
-          { item: "trials:ominous_bottle", count: 4 },
-          { item: "trials:breeze_rod", count: 4 },
+          { item: "minecraft:rotten_flesh", count: 16 },
+          { item: "rottencreatures:frozen_rotten_flesh", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "trials:trial_key_ominous", count: 8 },
+          { item: "species:cranktrap", count: 1 },
           { item: "minecraft:blaze_rod", count: 32 },
           { item: "society:holy_symbol", count: 1 },
         ],
@@ -3083,10 +3082,10 @@ global.fishPondDefinitions = [
     ],
     additionalRewards: [
       {
-        minPopulation: 4,
-        item: "trials:ominous_bottle",
-        count: 4,
-        chance: 0.34,
+        minPopulation: 6,
+        item: 'society:magic_rope',
+        count: 1,
+        chance: 0.24,
       },
 
       {
@@ -3293,7 +3292,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:verdant_froglight", count: 8 },
-          { item: "trials:copper_bulb", count: 16 },
+          { item: "copperandtuffbackport:copper_bulb", count: 16 },
         ],
       },
       {

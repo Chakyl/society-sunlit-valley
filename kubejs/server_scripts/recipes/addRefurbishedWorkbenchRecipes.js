@@ -8,7 +8,7 @@ const getCraftingItems = (name, wordMap, defaultItem) => {
   return craftItem;
 };
 const fantasyWordMap = [
-  { word: "nordic", craftItem: "trials:breeze_rod" },
+  { word: "nordic", craftItem: "rottencreatures:frozen_rotten_flesh" },
   { word: "bone", craftItem: "minecraft:bone" },
   { word: "wither", craftItem: "minecraft:wither_rose" },
   { word: "venthyr", craftItem: "quark:soul_bead" },
