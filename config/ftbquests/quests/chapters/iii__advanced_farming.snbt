@@ -96,9 +96,9 @@
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest4.description1}"
 				""
-				"They can be found in the traditional way by killing Blazes, but can also be found embedded in some ores."
-				""
 				"{ftbquests.chapter.iii__advanced_farming.quest4.description2}"
+				""
+				"{ftbquests.chapter.iii__advanced_farming.quest4.description3}"
 			]
 			id: "41FD632FA78AFB49"
 			rewards: [{
@@ -167,13 +167,13 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7.description4}"
 			]
 			icon: "vinery:fermentation_barrel"
 			id: "18EB59F2591BAD51"
@@ -215,11 +215,11 @@
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest9.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest8.description1}"
 				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.iii__advanced_farming.quest9.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4B9634D942E590AB\"}}]"
+				"[\"\",{\"translate\":\"ftbquests.chapter.iii__advanced_farming.quest8.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4B9634D942E590AB\"}}]"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest9.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest8.description3}"
 			]
 			id: "44A512703C4A9990"
 			min_required_dependencies: 1
@@ -234,13 +234,13 @@
 				item: { Count: 10, id: "numismatics:sun" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest9.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest8.title}"
 			x: 9.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest10.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest9.description1}"]
 			id: "3492FA6A5DFCC390"
 			rewards: [{
 				id: "51B4932933C92BF1"
@@ -252,13 +252,13 @@
 				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest10.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest9.title}"
 			x: 2.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest11.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest10.description1}"]
 			id: "2746CBE8BDA47E40"
 			rewards: [{
 				id: "674EAF8B280ADA6F"
@@ -276,9 +276,9 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"The &6Mincer&r is a cooking implement for finely grounding certain items. "
+				"{ftbquests.chapter.iii__advanced_farming.quest11.description1}"
 				""
-				"It is a necessary tool for when chopping can't quite get the job done."
+				"{ftbquests.chapter.iii__advanced_farming.quest11.description2}"
 			]
 			id: "711AC0F5208316D5"
 			tasks: [{
@@ -292,15 +292,15 @@
 		{
 			dependencies: ["44A512703C4A9990"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest12.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest12.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest12.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest12.description4}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description5}"
+				"{ftbquests.chapter.iii__advanced_farming.quest12.description5}"
 			]
 			id: "3291A30C1D1B009D"
 			rewards: [{
@@ -315,26 +315,26 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest14.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest12.subtitle}"
 			tasks: [{
 				id: "142ACE7B003D9236"
 				item: "society:skull_cavern_teleporter"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest14.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest12.title}"
 			x: 12.25d
 			y: 0.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest22.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest13.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest22.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest13.description2}"
 				""
-				"It will deposit coins directly into your bank account when sold. If you don't have one or its at the limit, it will shoot them out."
+				"{ftbquests.chapter.iii__advanced_farming.quest13.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest22.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest13.description4}"
 			]
 			id: "1AA78CF8A14DEE76"
 			rewards: [{
@@ -347,16 +347,16 @@
 				item: "shippingbin:smart_shipping_bin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest22.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest13.title}"
 			x: 6.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["572D70993411EA53"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest23.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest14.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest23.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest14.description2}"
 			]
 			id: "473D0A5E8D57CD4B"
 			rewards: [{
@@ -375,9 +375,9 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest24.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest15.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest24.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest15.description2}"
 			]
 			id: "79C92AEDE15E7E6D"
 			rewards: [{
@@ -395,7 +395,7 @@
 		}
 		{
 			dependencies: ["79C92AEDE15E7E6D"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest25.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest16.description1}"]
 			id: "572D70993411EA53"
 			rewards: [{
 				id: "212C9E001544957C"
@@ -412,7 +412,7 @@
 		}
 		{
 			dependencies: ["711AC0F5208316D5"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest26.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest17.description1}"]
 			id: "07938A28F31B7473"
 			rewards: [{
 				count: 4
@@ -420,7 +420,7 @@
 				item: "farm_and_charm:fertilizer"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest26.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest17.subtitle}"
 			tasks: [{
 				id: "0862068B0CEA00ED"
 				item: "farm_and_charm:fertilizer"
@@ -431,7 +431,7 @@
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest27.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest18.description1}"]
 			id: "291360E395E2BA29"
 			rewards: [{
 				count: 16
@@ -449,7 +449,7 @@
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest28.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest19.description1}"]
 			icon: "dew_drop_farmland_growth:strong_fertilizer"
 			id: "1D21615AEE411491"
 			rewards: [{
@@ -476,19 +476,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.iii__advanced_farming.quest28.task_4081101955221834706.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest19.task_4081101955221834706.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest28.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest19.title}"
 			x: 4.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest29.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest20.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest29.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest20.description2}"
 			]
 			id: "25569C0D687E6FA5"
 			rewards: [{
@@ -507,11 +507,11 @@
 		{
 			dependencies: ["44A512703C4A9990"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest21.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest21.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest21.description3}"
 			]
 			id: "6DF608316146EDC9"
 			rewards: [{
@@ -525,16 +525,16 @@
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest30.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest21.title}"
 			x: 10.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest31.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest22.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest31.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest22.description2}"
 			]
 			id: "08CFE766C9645FC8"
 			rewards: [{
@@ -548,16 +548,16 @@
 				item: "society:quality_washer"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest31.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest22.title}"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest32.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest23.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest32.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest23.description2}"
 			]
 			icon: "splendid_slimes:slime_incubator"
 			id: "139B02AFBCBBF350"
@@ -578,18 +578,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest32.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest23.title}"
 			x: 0.75d
 			y: 4.5d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest33.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest24.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest33.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest24.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest33.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest24.description3}"
 			]
 			icon: "splendid_slimes:plort_rippit"
 			id: "41029F073ADDDC2F"
@@ -610,16 +610,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest33.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest24.title}"
 			x: 8.75d
 			y: 5.5d
 		}
 		{
 			dependencies: ["2C9C87690BD8E23B"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest35.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest25.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest35.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest25.description2}"
 			]
 			id: "648FD0A599A54A0F"
 			rewards: [{
@@ -640,30 +640,30 @@
 			dependencies: ["2C9C87690BD8E23B"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest36.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest26.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest36.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest26.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest36.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest26.description3}"
 			]
 			icon: "minecraft:slime_spawn_egg"
 			id: "747B28CA5F55AFA7"
 			tasks: [{
 				id: "21F03480B5D4F77D"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest36.task_2445512325073270653.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest26.task_2445512325073270653.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest36.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest26.title}"
 			x: 4.5d
 			y: 5.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest37.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest27.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest37.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest27.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest37.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest27.description3}"
 			]
 			id: "632578AFE8A0D12D"
 			rewards: [{
@@ -672,7 +672,7 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest37.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest27.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -686,22 +686,22 @@
 				id: "65C4C6928BF2A227"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.iii__advanced_farming.quest37.task_7333204425981469223.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest27.task_7333204425981469223.title}"
 				to_observe: "splendid_slimes:splendid_slime"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest37.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest27.title}"
 			x: -1.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest38.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest28.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest38.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest28.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest38.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest28.description3}"
 			]
 			id: "5C9C7A5A88613109"
 			rewards: [{
@@ -715,18 +715,18 @@
 				item: "splendid_slimes:slime_vac"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest38.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest28.title}"
 			x: 0.75d
 			y: 6.5d
 		}
 		{
 			dependencies: ["747B28CA5F55AFA7"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest39.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest29.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest39.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest29.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest39.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest29.description3}"
 			]
 			icon: {
 				Count: 1
@@ -747,25 +747,25 @@
 			}]
 			tasks: [{
 				id: "380838F0BF3B7E91"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest39.task_4037539672589303441.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest29.task_4037539672589303441.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest39.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest29.title}"
 			x: 6.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest45.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest30.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest45.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest30.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest45.description3}"
-				"{ftbquests.chapter.iii__advanced_farming.quest45.description4}"
-				"{ftbquests.chapter.iii__advanced_farming.quest45.description5}"
+				"{ftbquests.chapter.iii__advanced_farming.quest30.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest30.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest30.description5}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest45.description6}"
+				"{ftbquests.chapter.iii__advanced_farming.quest30.description6}"
 			]
 			id: "527F7721ED60868C"
 			tasks: [{
@@ -773,20 +773,20 @@
 				item: "numismatics:neptunium_coin"
 				type: "item"
 			}]
-			title: "Higher Tiers"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest30.title}"
 			x: 10.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest47.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest31.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest47.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest31.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest47.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest31.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest47.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest31.description4}"
 			]
 			icon: "simplehats:slime_head"
 			id: "1030BCF34FEAE03C"
@@ -798,19 +798,19 @@
 			}]
 			tasks: [{
 				id: "705E3A8298D7461D"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest47.task_8096973512643135005.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest31.task_8096973512643135005.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest47.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest31.title}"
 			x: 6.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest50.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest32.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest50.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest32.description2}"
 			]
 			icon: "splendid_slimes:slime_ticket"
 			id: "668AEE0B5CD49EE4"
@@ -821,20 +821,20 @@
 			}]
 			tasks: [{
 				id: "7D9ADA6687719BF7"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest50.task_9050786535048322039.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest32.task_9050786535048322039.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest50.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest32.title}"
 			x: 8.0d
 			y: 6.5d
 		}
 		{
 			description: [
-				"As you wander around the world you might notice &6Butterflies&r and &6Moths&r flying around! "
+				"{ftbquests.chapter.iii__advanced_farming.quest33.description1}"
 				""
-				"With a &6Catching Net&r, you can pick them up and collect each of the different kinds."
+				"{ftbquests.chapter.iii__advanced_farming.quest33.description2}"
 				""
-				"While they will never be the most profitable part of your farm, building a sanctuary for these creatures will provide you with unique benefits."
+				"{ftbquests.chapter.iii__advanced_farming.quest33.description3}"
 			]
 			id: "6F8709C925DE7237"
 			rewards: [{
@@ -847,7 +847,7 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "Butterflies and Moths"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest33.subtitle}"
 			tasks: [{
 				id: "48EAD831424A0BC8"
 				item: {
@@ -859,16 +859,16 @@
 				}
 				type: "item"
 			}]
-			title: "Catching Longwings"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest33.title}"
 			x: -1.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
 			description: [
-				"Butterflies and Moths can be lured to your base using different types of brews!"
+				"{ftbquests.chapter.iii__advanced_farming.quest34.description1}"
 				""
-				"You can right click on a &6Butterfly Drip-Lure&r to fill it. Different types of brews will attract different kinds."
+				"{ftbquests.chapter.iii__advanced_farming.quest34.description2}"
 			]
 			icon: "longwings:butterfly_driplure"
 			id: "7ADD57C8AF4092B2"
@@ -918,17 +918,17 @@
 							]
 						}
 					}
-					title: "Any Brew"
+					title: "{ftbquests.chapter.iii__advanced_farming.quest34.task_1508105008365289908.title}"
 					type: "item"
 				}
 			]
-			title: "Tasty Luring"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest34.title}"
 			x: 0.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
-			description: ["&6Butterfly Feeders&r can be placed and filled with Sugar Water to strength butterflies as well as make them more trusting of nearby players."]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest35.description1}"]
 			id: "1571D0424A7A34D1"
 			rewards: [{
 				id: "7BC53903BE8140F0"
@@ -950,11 +950,11 @@
 		{
 			dependencies: ["6F8709C925DE7237"]
 			description: [
-				"The Butterfly \\& Moth handbook provides information on where to find every single variant that exists."
+				"{ftbquests.chapter.iii__advanced_farming.quest36.description1}"
 				""
-				"The spawning of specific variants is determined by the current biome's &6Temperature&r and &6Humidity&r."
+				"{ftbquests.chapter.iii__advanced_farming.quest36.description2}"
 				""
-				"It also acts as a way to view your collection outside of the quest book, though it needs to be in your inventory for every catch."
+				"{ftbquests.chapter.iii__advanced_farming.quest36.description3}"
 			]
 			icon: {
 				Count: 1
@@ -969,21 +969,21 @@
 			}]
 			tasks: [{
 				id: "662E408F671C6556"
-				title: "Understood!"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest36.task_7362893425451754838.title}"
 				type: "checkmark"
 			}]
-			title: "The Handbook"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest36.title}"
 			x: 1.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
 			description: [
-				"Butterflies and Moths produce &6Butterfly Amber&r and &6Moth Pollen&r respectively."
+				"{ftbquests.chapter.iii__advanced_farming.quest37.description1}"
 				""
-				"The rate is determined by two factors: how many other butterflies and moths are nearby (negatively), and the amount of unique flowers nearby (positively)."
+				"{ftbquests.chapter.iii__advanced_farming.quest37.description2}"
 				""
-				"Flowers will very occasionally be eaten, requiring a little bit of work to maintain a lush garden of flowers."
+				"{ftbquests.chapter.iii__advanced_farming.quest37.description3}"
 			]
 			icon: "society:butterfly_amber"
 			id: "3B6640956F047EC8"
@@ -1018,21 +1018,21 @@
 						]
 					}
 				}
-				title: "Butterfly Amber or Moth Pollen"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest37.task_5939367094000659640.title}"
 				type: "item"
 			}]
-			title: "The Butterfly Effect"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest37.title}"
 			x: 3.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2C9C87690BD8E23B"]
 			description: [
-				"Slimes can be fed by tossing their food on the ground, or poviding a live mob for them to eat."
+				"{ftbquests.chapter.iii__advanced_farming.quest38.description1}"
 				""
-				"This can be done in a more convenient way with the &6Slime Feeder&r, which feeds nearby Slimes with foods from their diet."
+				"{ftbquests.chapter.iii__advanced_farming.quest38.description2}"
 				""
-				"Additionally, if a Slime has the \"Picky\" trait, the Slime Feeder will only feed the food item that won't make it angry."
+				"{ftbquests.chapter.iii__advanced_farming.quest38.description3}"
 			]
 			id: "54E81642A0E67042"
 			min_required_dependencies: 1
@@ -1046,7 +1046,7 @@
 				item: "splendid_slimes:slime_feeder"
 				type: "item"
 			}]
-			title: "Feeding Slimes"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest38.title}"
 			x: 3.25d
 			y: 6.5d
 		}
@@ -1056,9 +1056,9 @@
 				"139B02AFBCBBF350"
 			]
 			description: [
-				"Slimes can be fed in a few ways. The simplest of which is tossing an item they like to eat at them. For Slimes that only eat animals and monsters, you'll need to wrangle one into their area."
+				"{ftbquests.chapter.iii__advanced_farming.quest39.description1}"
 				""
-				"After being fed, they'll drop a &6Plort&r! These can be sold, used to make more slimes, or processed into more valuable goods!"
+				"{ftbquests.chapter.iii__advanced_farming.quest39.description2}"
 			]
 			id: "2C9C87690BD8E23B"
 			min_required_dependencies: 1
@@ -1077,7 +1077,7 @@
 				match_nbt: false
 				type: "item"
 			}]
-			title: "The Humble Plort"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest39.title}"
 			x: 2.25d
 			y: 5.5d
 		}
@@ -1095,11 +1095,11 @@
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"The &6Electricity Generator&r is capable of burning coal to power certain furniture devices."
+				"{ftbquests.chapter.iii__advanced_farming.quest41.description1}"
 				""
-				"Most importantly, it poweres the &6Workbench&r, which can craft various furniture blocks that are otherwise difficult to obtain."
+				"{ftbquests.chapter.iii__advanced_farming.quest41.description2}"
 				""
-				"You can link generators to blocks that need power using the &6Electric Wrench&r."
+				"{ftbquests.chapter.iii__advanced_farming.quest41.description3}"
 			]
 			hide_dependency_lines: false
 			icon: "refurbished_furniture:light_electricity_generator"
@@ -1109,7 +1109,7 @@
 				item: "refurbished_furniture:wrench"
 				type: "item"
 			}]
-			subtitle: "FE - Furniture Energy"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest41.subtitle}"
 			tasks: [{
 				icon: "refurbished_furniture:light_electricity_generator"
 				id: "1554E7905CF741CC"
@@ -1129,19 +1129,19 @@
 						]
 					}
 				}
-				title: "Electricity Generator"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest41.task_1537107980061196748.title}"
 				type: "item"
 			}]
-			title: "Furniture Constructing"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest41.title}"
 			x: 7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"The &6Recycling Machine&r can turn items that would otherwise be junk into useful materials."
+				"{ftbquests.chapter.iii__advanced_farming.quest42.description1}"
 				""
-				"It can also double the amount of ores you recieve from raw ore!"
+				"{ftbquests.chapter.iii__advanced_farming.quest42.description2}"
 			]
 			id: "44ACDBB4DE598EA6"
 			rewards: [{
@@ -1155,22 +1155,22 @@
 				item: "society:recycling_machine"
 				type: "item"
 			}]
-			title: "Trash To Treasure"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest42.title}"
 			x: 1.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["18EB59F2591BAD51"]
 			description: [
-				"&6Fermentation Barrels&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				"{ftbquests.chapter.iii__advanced_farming.quest43.description1}"
 				""
-				"Recipes can use the following juices:"
+				"{ftbquests.chapter.iii__advanced_farming.quest43.description2}"
 				""
-				"- &cRed&r/&aWhite&r grape juice"
-				"- &cCrimson&r/&aWarped&r grape juice"
-				"- &eApple Juice&r (made using an Apple Press)"
+				"{ftbquests.chapter.iii__advanced_farming.quest43.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest43.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest43.description5}"
 				""
-				"Juices are inserted in the top left slot of the Fermentation Barrel."
+				"{ftbquests.chapter.iii__advanced_farming.quest43.description6}"
 			]
 			icon: "vinery:red_grapejuice"
 			id: "180411EF1F7649DD"
@@ -1210,19 +1210,19 @@
 						]
 					}
 				}
-				title: "Any Fermentation Barrel juice"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest43.task_3891531808142876705.title}"
 				type: "item"
 			}]
-			title: "Juicing up the Wine"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest43.title}"
 			x: 2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"Farming Slimes can be tricky! They all have different dreams and desires, and one wrong move will cause them to rip apart the fabric of your farm..."
+				"{ftbquests.chapter.iii__advanced_farming.quest44.description1}"
 				""
-				"Luckily the &6Slime Inspector&r is here to help! Right clicking on a Slime with it will tell you if there's anything getting in the way of their happiness and your profits!"
+				"{ftbquests.chapter.iii__advanced_farming.quest44.description2}"
 			]
 			id: "66C1440EFF12DC66"
 			rewards: [{

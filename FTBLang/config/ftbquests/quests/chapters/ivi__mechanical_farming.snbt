@@ -5,7 +5,7 @@
 	group: "457DCF55318282CA"
 	icon: "create:wrench"
 	id: "16656DF4FC427FB2"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -55,7 +55,7 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 12.5d
 			y: 3.5d
 		}
 		{
@@ -240,8 +240,6 @@
 				"{ftbquests.chapter.ivi__mechanical_farming.quest11.description1}"
 				""
 				"{ftbquests.chapter.ivi__mechanical_farming.quest11.description2}"
-				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest11.description3}"
 			]
 			icon: "create:wrench"
 			id: "221306DB217B8F93"
@@ -375,29 +373,8 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["221306DB217B8F93"]
-			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest16.description1}"
-				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest16.description2}"
-				""
-				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest16.description3}"
-			]
-			icon: "create:mechanical_bearing"
-			id: "1D1F8EA9D17BCF81"
-			tasks: [{
-				id: "1D688CDC40C31E99"
-				title: "{ftbquests.chapter.ivi__mechanical_farming.quest16.task_2119098502285041305.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest16.title}"
-			x: -5.0d
-			y: 3.0d
-		}
-		{
 			dependencies: ["6A931F456D6FEA3E"]
-			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest17.description1}"]
+			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest16.description1}"]
 			id: "5BAFB04B1F3B8150"
 			rewards: [{
 				id: "752E5EF148153A7F"
@@ -409,16 +386,16 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest17.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest16.title}"
 			x: 3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["1A1129507F643085"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest18.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest17.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest18.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest17.description2}"
 			]
 			id: "3B74A3D3DABA26EF"
 			rewards: [{
@@ -431,16 +408,16 @@
 				item: "create_mechanical_extruder:mechanical_extruder"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest18.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest17.title}"
 			x: 8.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5BAFB04B1F3B8150"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest19.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest18.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest19.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest18.description2}"
 			]
 			id: "7282287A6621FF82"
 			rewards: [{
@@ -453,13 +430,13 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest19.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest18.title}"
 			x: 5.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7282287A6621FF82"]
-			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest20.description1}"]
+			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest19.description1}"]
 			id: "018699F88064119B"
 			rewards: [{
 				count: 4
@@ -478,9 +455,9 @@
 		{
 			dependencies: ["6A931F456D6FEA3E"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest21.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest20.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest21.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest20.description2}"
 			]
 			icon: "create:white_sail"
 			id: "5704D9E5E98945DF"
@@ -513,7 +490,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest21.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest20.title}"
 			x: 1.5d
 			y: 3.5d
 		}
@@ -523,9 +500,9 @@
 				"018699F88064119B"
 			]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest22.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest21.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest22.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest21.description2}"
 			]
 			icon: "create:mechanical_crafter"
 			id: "3D532DC93531B0D0"
@@ -577,7 +554,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.ivi__mechanical_farming.quest22.task_7649308294649766540.title}"
+					title: "{ftbquests.chapter.ivi__mechanical_farming.quest21.task_7649308294649766540.title}"
 					type: "item"
 				}
 			]
@@ -587,9 +564,9 @@
 		{
 			dependencies: ["3D532DC93531B0D0"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest23.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest22.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest23.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest22.description2}"
 			]
 			icon: "create:crushing_wheel"
 			id: "4C9E6CB01631C0B6"
@@ -610,16 +587,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest23.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest22.title}"
 			x: 10.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["5BAFB04B1F3B8150"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest24.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest23.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest24.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest23.description2}"
 			]
 			id: "25B8A904433E17B3"
 			rewards: [{
@@ -632,13 +609,13 @@
 				item: "create:sturdy_sheet"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest24.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest23.title}"
 			x: 3.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["7282287A6621FF82"]
-			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest25.description1}"]
+			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest24.description1}"]
 			id: "48C83D8D34DBFB4B"
 			rewards: [{
 				id: "6901D568CABDDAC2"
@@ -650,16 +627,16 @@
 				item: "createutilities:void_steel_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest25.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest24.title}"
 			x: 5.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7282287A6621FF82"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest26.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest25.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest26.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest25.description2}"
 			]
 			id: "140472B5516ED9F1"
 			rewards: [{
@@ -678,9 +655,9 @@
 		{
 			dependencies: ["48C83D8D34DBFB4B"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest27.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest26.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest27.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest26.description2}"
 			]
 			id: "3C0965E47666E5B3"
 			rewards: [{
@@ -699,9 +676,9 @@
 		{
 			dependencies: ["48C83D8D34DBFB4B"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest28.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest27.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest28.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest27.description2}"
 			]
 			id: "5108E61542739DFC"
 			rewards: [{
@@ -720,9 +697,9 @@
 		{
 			dependencies: ["48C83D8D34DBFB4B"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest29.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest28.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest29.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest28.description2}"
 			]
 			id: "26AF7B63E961DF18"
 			rewards: [{
@@ -741,9 +718,9 @@
 		{
 			dependencies: ["4C9E6CB01631C0B6"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest30.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest29.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest30.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest29.description2}"
 			]
 			id: "514F85795846913A"
 			rewards: [{
@@ -762,9 +739,9 @@
 		{
 			dependencies: ["4C9E6CB01631C0B6"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest31.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest30.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest31.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest30.description2}"
 			]
 			id: "17D2933C4B133AA8"
 			rewards: [{
@@ -782,7 +759,7 @@
 		}
 		{
 			dependencies: ["5BAFB04B1F3B8150"]
-			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest32.description1}"]
+			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest31.description1}"]
 			icon: "create:fluid_pipe"
 			id: "505BE1C2FA826879"
 			ignore_reward_blocking: true
@@ -803,18 +780,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest32.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest31.title}"
 			x: 3.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["505BE1C2FA826879"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest33.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest32.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest33.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest32.description2}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest33.description3}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest32.description3}"
 			]
 			icon: {
 				Count: 1
@@ -845,16 +822,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest33.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest32.title}"
 			x: 3.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["018699F88064119B"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest34.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest33.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest34.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest33.description2}"
 			]
 			id: "32605975ECF63278"
 			rewards: [{
@@ -881,7 +858,7 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.ivi__mechanical_farming.quest34.task_8989848798899683493.title}"
+				title: "{ftbquests.chapter.ivi__mechanical_farming.quest33.task_8989848798899683493.title}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -890,9 +867,9 @@
 		{
 			dependencies: ["3D532DC93531B0D0"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest35.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest34.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest35.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest34.description2}"
 			]
 			id: "523925A720130B12"
 			rewards: [{
@@ -905,17 +882,17 @@
 				item: "createrailwaysnavigator:navigator"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["25B8A904433E17B3"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest36.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest35.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest36.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest35.description2}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest36.description3}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest35.description3}"
 			]
 			id: "36ACACFB9D5A97F9"
 			rewards: [{
@@ -924,13 +901,13 @@
 				item: "pipez:item_pipe"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.ivi__mechanical_farming.quest36.subtitle}"
+			subtitle: "{ftbquests.chapter.ivi__mechanical_farming.quest35.subtitle}"
 			tasks: [{
 				id: "5BF79EC021D56A30"
 				item: "pipez:item_pipe"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest36.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest35.title}"
 			x: 3.5d
 			y: 5.0d
 		}
@@ -940,11 +917,11 @@
 				"4575948F05E18615"
 			]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest37.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest36.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest37.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest36.description2}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest37.description3}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest36.description3}"
 			]
 			icon: "pipez:advanced_upgrade"
 			id: "45D9A962F73792EA"
@@ -971,9 +948,9 @@
 		{
 			dependencies: ["4C9E6CB01631C0B6"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest38.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest37.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest38.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest37.description2}"
 			]
 			icon: "create_hypertube:hypertube_entrance"
 			id: "75472A79424BCD40"
@@ -998,27 +975,189 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest38.title}"
-			x: 10.5d
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest37.title}"
+			x: 11.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["221306DB217B8F93"]
 			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest39.description1}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest38.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest39.description2}"
+				"{ftbquests.chapter.ivi__mechanical_farming.quest38.description2}"
 			]
 			icon: "create:schematicannon"
 			id: "4694534F6E99EAAD"
 			tasks: [{
 				id: "19676C8502E80842"
-				title: "{ftbquests.chapter.ivi__mechanical_farming.quest39.task_1830551092084607042.title}"
+				title: "{ftbquests.chapter.ivi__mechanical_farming.quest38.task_1830551092084607042.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest39.title}"
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest38.title}"
 			x: -5.0d
-			y: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C9E6CB01631C0B6"]
+			description: [
+				"{ftbquests.chapter.ivi__mechanical_farming.quest39.description1}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest39.description2}"
+			]
+			id: "5A9808F763A6B9F8"
+			rewards: [
+				{
+					count: 4
+					id: "761FD507A978F690"
+					item: "wildernature:diamond_ammunition"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6328674A60D619A0"
+					item: "wildernature:flint_ammunition"
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.ivi__mechanical_farming.quest39.subtitle}"
+			tasks: [{
+				id: "140E1FEF8B3EC12D"
+				item: {
+					Count: 1
+					id: "wildernature:blunderbuss"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest39.title}"
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4C9E6CB01631C0B6"]
+			description: [
+				"{ftbquests.chapter.ivi__mechanical_farming.quest40.description1}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest40.description2}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest40.description3}"
+			]
+			icon: "oreganized:molten_lead_bucket"
+			id: "7718055315817CB1"
+			rewards: [{
+				id: "15301D9B9720AB6A"
+				item: "society:alchemical_varnish_bucket"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.ivi__mechanical_farming.quest40.subtitle}"
+			tasks: [{
+				id: "1346109CC1B282E8"
+				title: "{ftbquests.chapter.ivi__mechanical_farming.quest40.task_1388815800541020904.title}"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["472A339723DE2777"]
+			description: [
+				"{ftbquests.chapter.ivi__mechanical_farming.quest41.description1}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest41.description2}"
+			]
+			id: "5384CAC9635C71E5"
+			rewards: [{
+				id: "499721765F7F78CB"
+				item: "nethervinery:crimson_grape_juice_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CEDED2175C3ACFD"
+				item: "society:juice_inserter"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest41.title}"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6A931F456D6FEA3E"]
+			description: [
+				"{ftbquests.chapter.ivi__mechanical_farming.quest42.description1}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest42.description2}"
+			]
+			id: "501D5F9B05EF9B3F"
+			rewards: [{
+				count: 32
+				id: "3A530F4875905870"
+				item: "minecraft:chain"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C26CC7ACDAF8EFB"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest42.title}"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["501D5F9B05EF9B3F"]
+			description: [
+				"{ftbquests.chapter.ivi__mechanical_farming.quest43.description1}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest43.description2}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest43.description3}"
+			]
+			icon: "create:package_frogport"
+			id: "3211E60DF860BE29"
+			rewards: [{
+				id: "585D48B3E2E22AE1"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.ivi__mechanical_farming.quest43.subtitle}"
+			tasks: [
+				{
+					id: "0F4561AAF7D3AF22"
+					item: "create:package_frogport"
+					type: "item"
+				}
+				{
+					id: "4C7D16417CF3321D"
+					item: "create:packager"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["472A339723DE2777"]
+			description: [
+				"{ftbquests.chapter.ivi__mechanical_farming.quest44.description1}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest44.description2}"
+			]
+			id: "54B5FB32B885916A"
+			rewards: [{
+				id: "352303D920F6A3CF"
+				item: "create_factory_logistics:jar_packager"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FC134345139BE3D"
+				item: "create_factory_logistics:jar_packager"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest44.title}"
+			x: -4.5d
+			y: 4.5d
 		}
 	]
 	title: "{ftbquests.chapter.ivi__mechanical_farming.title}"

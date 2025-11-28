@@ -14,7 +14,7 @@ LootJS.modifiers((e) => {
     .addLoot("society:glitched_vhs");
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
-    .addLoot("society:holy_symbol");
+  .addLoot("society:holy_symbol");
   e.addLootTableModifier("minecraft:entities/shulker")
     .randomChance(0.1)
     .addLoot("society:production_science_pack");
@@ -27,6 +27,9 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("legendarycreatures:entities/corpse_eater")
     .randomChance(0.05)
     .addLoot("society:wheel_of_adaptation");
+  e.addLootTableModifier("minecraft:entities/wither")
+    .randomChance(0.8)
+    .addLoot("society:amulet_of_light");
   e.addLootTableModifier("minecraft:entities/enderman")
     .randomChance(0.05)
     .addLoot("minecraft:eye_armor_trim_smithing_template");
@@ -52,10 +55,20 @@ LootJS.modifiers((e) => {
     .limitCount([1, 4], [5, 9]);
   e.addLootTableModifier("minecraft:chests/abandoned_mineshaft")
     .randomChance(0.2)
-    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:webby"}}'));
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:webby"}}'
+      )
+    );
   e.addLootTableModifier("minecraft:chests/simple_dungeon")
     .randomChance(0.1)
-    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:webby"}}'));
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:webby"}}'
+      )
+    );
   e.addLootTableModifier("minecraft:chests/buried_treasure")
     .randomChance(0.9)
     .addLoot("numismatics:cog")
@@ -130,7 +143,12 @@ LootJS.modifiers((e) => {
     .limitCount([1, 2]);
   e.addLootTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.2)
-    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:orby"}}'));
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:orby"}}'
+      )
+    );
   e.addLootTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.2)
     .addLoot("numismatics:sun")
@@ -161,11 +179,23 @@ LootJS.modifiers((e) => {
     .limitCount([1, 4], [5, 9]);
   e.addLootTableModifier("minecraft:chests/bastion_treasure")
     .randomChance(0.2)
-    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:blazing"}}'));
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:blazing"}}'
+      )
+    );
   e.addLootTableModifier("minecraft:chests/bastion_treasure")
     .randomChance(0.6)
-    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:weeping"}}'));
-  e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot("minecraft:diamond_sword");
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:weeping"}}'
+      )
+    );
+  e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot(
+    "minecraft:diamond_sword"
+  );
   e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot(
     "minecraft:diamond_helmet"
   );
@@ -205,10 +235,20 @@ LootJS.modifiers((e) => {
     .limitCount([1, 1]);
   e.addLootTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.2)
-    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:shulking"}}'));
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:shulking"}}'
+      )
+    );
   e.addLootTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.2)
-    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:ender"}}'));
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:ender"}}'
+      )
+    );
 
   // Seeds
   e.addBlockLootModifier("minecraft:grass").removeLoot("#forge:seeds");
@@ -217,7 +257,9 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier("minecraft:tall_fern").removeLoot("#forge:seeds");
 
   // Artisan Machines that save nbt on drop
-  e.addBlockLootModifier("society:prize_machine").removeLoot("society:prize_machine");
+  e.addBlockLootModifier("society:prize_machine").removeLoot(
+    "society:prize_machine"
+  );
   e.addBlockLootModifier("society:fish_pond").removeLoot("society:fish_pond");
   e.addBlockLootModifier(global.plushies).removeLoot("*");
 
@@ -239,9 +281,12 @@ LootJS.modifiers((e) => {
     .replaceLoot("minecraft:flint_and_steel", "numismatics:cog", true);
 
   // Fix
-  e.addLootTypeModifier(LootType.CHEST).modifyLoot(Ingredient.all, (itemStack) => {
-    return fixedStackSize(itemStack);
-  });
+  e.addLootTypeModifier(LootType.CHEST).modifyLoot(
+    Ingredient.all,
+    (itemStack) => {
+      return fixedStackSize(itemStack);
+    }
+  );
 
   e.addLootTypeModifier(LootType.CHEST)
     .randomChance(0.15)

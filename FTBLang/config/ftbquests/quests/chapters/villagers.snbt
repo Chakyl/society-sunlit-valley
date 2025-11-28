@@ -16,8 +16,6 @@
 				"{ftbquests.chapter.villagers.quest1.description2}"
 				""
 				"{ftbquests.chapter.villagers.quest1.description3}"
-				""
-				"{ftbquests.chapter.villagers.quest1.description4}"
 			]
 			id: "20C76D194ECEDB76"
 			rewards: [{
@@ -229,11 +227,21 @@
 			description: ["{ftbquests.chapter.villagers.quest11.description1}"]
 			hide_until_deps_visible: true
 			id: "019719A32C5E6E62"
-			rewards: [{
-				id: "26DDE63951682EC4"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "26DDE63951682EC4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p master_cultivator_unlocked"
+					elevate_perms: true
+					id: "30FE5EEFA12838A4"
+					silent: true
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "6B3278D45DAED2F9"
 				item: "candlelight:cooking_pot"
@@ -278,9 +286,10 @@
 			id: "774B43FCB1FFE9CC"
 			size: 1.5d
 			tasks: [{
-				id: "3B8424059D5FE50D"
-				title: "{ftbquests.chapter.villagers.quest13.task_4288592351697298701.title}"
-				type: "checkmark"
+				disable_toast: true
+				id: "741980CFDEDA2481"
+				item: "society:prismatic_shard"
+				type: "item"
 			}]
 			title: "{ftbquests.chapter.villagers.quest13.title}"
 			x: 0.5d
@@ -294,11 +303,21 @@
 				"{ftbquests.chapter.villagers.quest14.description2}"
 			]
 			id: "7384B959FEEC54F1"
-			rewards: [{
-				id: "59348105B542A969"
-				item: "numismatics:sprocket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "59348105B542A969"
+					item: "numismatics:sprocket"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p exotic_trader_unlocked"
+					elevate_perms: true
+					id: "0751C08B7354C12C"
+					silent: true
+					type: "command"
+				}
+			]
 			subtitle: "{ftbquests.chapter.villagers.quest14.subtitle}"
 			tasks: [{
 				id: "4943DC0F7E44BDF4"
@@ -317,11 +336,22 @@
 				"{ftbquests.chapter.villagers.quest15.description2}"
 			]
 			id: "4CD86031FF05AC1F"
-			rewards: [{
-				id: "7B384D0123F0CB69"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7B384D0123F0CB69"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p mystical_botanist_unlocked"
+					elevate_perms: true
+					id: "0D312ADEEEC17D62"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
 			subtitle: "{ftbquests.chapter.villagers.quest15.subtitle}"
 			tasks: [{
 				id: "2010D08970F3DA02"

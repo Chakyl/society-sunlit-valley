@@ -1,0 +1,635 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "minerals"
+	group: "15230846E14B6926"
+	icon: "society:fire_opal"
+	id: "67332F7DBC6DB88B"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "451A3152ACB2CF87"
+			tasks: [{
+				id: "5D6A01B3BDF39FDD"
+				item: "society:limestone_pebble"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			id: "37AEB6307309A93E"
+			tasks: [{
+				id: "5A9BE53357061652"
+				item: "society:mudstone"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			id: "161E0C0ECC06D937"
+			tasks: [{
+				id: "4E2A6EE3D48E264C"
+				item: "society:earth_crystal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			id: "682A0D6E669BC1E7"
+			tasks: [{
+				id: "280B73ACFD18F073"
+				item: "society:sandstone_slate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			id: "551E2050F129458B"
+			tasks: [{
+				id: "1E748C561D2C1D31"
+				item: "society:calcite_gem"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			id: "0D3C551C835E6268"
+			tasks: [{
+				id: "1F45BFFFFCF7091E"
+				item: "society:orpiment"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			id: "0A9814CF8A5E0360"
+			tasks: [{
+				id: "481977408882DA0F"
+				item: "society:petrified_slime"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "1CDA62572583788E"
+			tasks: [{
+				id: "3780762A3135FCEA"
+				item: "society:nekoite"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			id: "0B53221AEAEB78CC"
+			tasks: [{
+				id: "57C58E466549EBFF"
+				item: "society:slate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "0FE3C229F9B85108"
+			tasks: [{
+				id: "21BBFF91481865EA"
+				item: "society:celestine"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "146A8D69064C011E"
+			tasks: [{
+				id: "4FABFB9B2FC1BB64"
+				item: "society:allanite"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			id: "0AF2CA8B2FE442B6"
+			tasks: [{
+				id: "0F669004B3781B2C"
+				item: "society:jamborite"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			id: "17B392E25AF34232"
+			tasks: [{
+				id: "0A31CD20968FDF29"
+				item: "society:granite_slate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "4DD509470C61A384"
+			tasks: [{
+				id: "6B83A6041E27931E"
+				item: "society:thunder_egg"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "51DD4222853CE8AB"
+			tasks: [{
+				id: "0BEF091C13238207"
+				item: "society:malachite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "3A90CE8E42E5FCA5"
+			tasks: [{
+				id: "2D8161B3F57E5C2F"
+				item: "society:jagoite"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			id: "3F050293E8C2F064"
+			tasks: [{
+				id: "41467F7314FE758E"
+				item: "society:esperite"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			id: "1061DD0E64C73068"
+			tasks: [{
+				id: "02866B4B8A18002C"
+				item: "society:marble"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			id: "507886F968A9DB89"
+			tasks: [{
+				id: "72E19C8FE73BB9ED"
+				item: "society:opal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			id: "098FE50A576F2348"
+			tasks: [{
+				id: "47AEE45113840657"
+				item: "society:hematite"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			id: "3363D80D85B582AF"
+			tasks: [{
+				id: "1BD21DD89371E4E1"
+				item: "society:geminite"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "637B71B6F2A20CB6"
+			tasks: [{
+				id: "0DE6AC28FBF620DC"
+				item: "society:soapstone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "63433DB8A0DAB49F"
+			tasks: [{
+				id: "1F006877E86E4A03"
+				item: "society:pyrite"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			id: "688E32EA7B5F4294"
+			tasks: [{
+				id: "6356E45C40707486"
+				item: "society:lunarite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "741BD8ED3180C2D6"
+			tasks: [{
+				id: "513E86B2A95B3596"
+				item: "society:ghost_crystal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			id: "658132017754F6FF"
+			tasks: [{
+				id: "131D64F375656CA7"
+				item: "society:fluorapatite"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "4ACF2C5D36F62A03"
+			tasks: [{
+				id: "7A323E6B48B55189"
+				item: "society:ocean_stone"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			id: "1E1239871FE71A9A"
+			tasks: [{
+				id: "44B4841539FC2537"
+				item: "society:aerinite"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			id: "556E98EAE9B9FD11"
+			tasks: [{
+				id: "55CA11E15F658D21"
+				item: "society:fairy_stone"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			id: "1FDF317E8637A59B"
+			tasks: [{
+				id: "408B95AE8BF7541A"
+				item: "society:kyanite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			id: "60B425EA38A7B22C"
+			tasks: [{
+				id: "497EAEE85B9BC8B4"
+				item: "society:baryte"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			id: "50F4BF0922A27CE2"
+			tasks: [{
+				id: "5E1BF3B6BAA63ECB"
+				item: "society:fire_quartz"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			id: "036B4963C9129BA2"
+			tasks: [{
+				id: "539C3202D1BB2550"
+				item: "society:jasper"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			id: "3A1925B2F73BE78C"
+			tasks: [{
+				id: "67AB412535162061"
+				item: "society:basalt_shard"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			id: "1051C88A33EDF079"
+			tasks: [{
+				id: "6FF4064E94F45097"
+				item: "society:lemon_stone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			id: "2CEA32456F8217FE"
+			tasks: [{
+				id: "70C019265F00734C"
+				item: "society:pure_obsidian"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			id: "1377A71373767632"
+			tasks: [{
+				id: "7851D5EAA9570DBB"
+				item: "society:dolomite"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			id: "095D11CDAC0A97E1"
+			tasks: [{
+				id: "741D8B048C6A2819"
+				item: "society:tigerseye"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			id: "16F292EE33E10129"
+			tasks: [{
+				id: "7F58C28C9FA4817F"
+				item: "society:bixbyite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			id: "7D99F215C7E36CED"
+			tasks: [{
+				id: "73B36FF14B0C2352"
+				item: "society:fire_opal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			id: "6530E79B56125727"
+			tasks: [{
+				id: "679F24B5EDACC08D"
+				item: "society:neptunite"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			id: "58663337F541FC71"
+			tasks: [{
+				id: "372999838906BAD4"
+				item: "society:star_shards"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			id: "25074546C0EC6913"
+			tasks: [{
+				id: "4893F7ED702F272B"
+				item: "society:helvite"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			id: "127E2C4A69D9C255"
+			tasks: [{
+				id: "55CA10B7AAF3630C"
+				item: "society:frozen_tear"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1CDA62572583788E"
+				"161E0C0ECC06D937"
+				"51DD4222853CE8AB"
+				"0A9814CF8A5E0360"
+				"37AEB6307309A93E"
+				"0AF2CA8B2FE442B6"
+				"551E2050F129458B"
+				"0B53221AEAEB78CC"
+				"17B392E25AF34232"
+				"146A8D69064C011E"
+				"0D3C551C835E6268"
+				"4DD509470C61A384"
+				"682A0D6E669BC1E7"
+				"0FE3C229F9B85108"
+				"451A3152ACB2CF87"
+				"3A90CE8E42E5FCA5"
+			]
+			hide_dependency_lines: true
+			icon: "society:geode"
+			id: "1B75D6174593D5E5"
+			rewards: [{
+				id: "2EBFB7C4335F509E"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				icon: "society:geode"
+				id: "1FD6880BC6E90A7E"
+				stat: "minecraft:play_time"
+				title: "Find all Geode minerals"
+				type: "stat"
+				value: 1
+			}]
+			title: "Geode Mineral Collection Complete!"
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1377A71373767632"
+				"58663337F541FC71"
+				"7D99F215C7E36CED"
+				"1051C88A33EDF079"
+				"2CEA32456F8217FE"
+				"16F292EE33E10129"
+				"60B425EA38A7B22C"
+				"036B4963C9129BA2"
+				"095D11CDAC0A97E1"
+				"3A1925B2F73BE78C"
+				"50F4BF0922A27CE2"
+				"6530E79B56125727"
+				"25074546C0EC6913"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "society:magma_geode"
+			id: "378EF12075D01F1C"
+			rewards: [{
+				count: 5
+				id: "7E16A488A0047023"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				icon: "society:magma_geode"
+				id: "7BA4C34E2910EBC5"
+				stat: "minecraft:play_time"
+				title: "Find all Magma Geode minerals"
+				type: "stat"
+				value: 1
+			}]
+			title: "Magma Geode Mineral Collection Complete!"
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"741BD8ED3180C2D6"
+				"1061DD0E64C73068"
+				"507886F968A9DB89"
+				"098FE50A576F2348"
+				"4ACF2C5D36F62A03"
+				"1E1239871FE71A9A"
+				"658132017754F6FF"
+				"556E98EAE9B9FD11"
+				"1FDF317E8637A59B"
+				"688E32EA7B5F4294"
+				"3F050293E8C2F064"
+				"3363D80D85B582AF"
+				"127E2C4A69D9C255"
+				"637B71B6F2A20CB6"
+				"63433DB8A0DAB49F"
+			]
+			hide_dependency_lines: true
+			icon: "society:frozen_geode"
+			id: "329C4304D2EDEE72"
+			rewards: [{
+				count: 2
+				id: "6C54749D381B4273"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				icon: "society:frozen_geode"
+				id: "2313FD2F31AC09D4"
+				stat: "minecraft:play_time"
+				title: "Find all Frozen Geode minerals"
+				type: "stat"
+				value: 1
+			}]
+			title: "Frozen Geode Mineral Collection Complete!"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"378EF12075D01F1C"
+				"1B75D6174593D5E5"
+				"329C4304D2EDEE72"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:minerals"
+					}
+				}
+			}
+			id: "7BA3A7D6D37CFA69"
+			rewards: [
+				{
+					count: 4
+					id: "165F920C2B6F9F23"
+					item: "society:geode_node"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "726D0E68F0F40E80"
+					item: "society:magma_geode_node"
+					type: "item"
+				}
+				{
+					id: "3A4F4D94D02D9375"
+					item: "society:omni_geode_node"
+					type: "item"
+				}
+				{
+					id: "6184D21F24D7A1D1"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:minerals"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				icon: "society:omni_geode"
+				id: "445CBBEAFC66083B"
+				stat: "minecraft:play_time"
+				title: "Collect all minerals"
+				type: "stat"
+				value: 1
+			}]
+			title: "Mineral Collection Complete!"
+			x: 13.0d
+			y: 3.0d
+		}
+	]
+	title: "Minerals"
+}

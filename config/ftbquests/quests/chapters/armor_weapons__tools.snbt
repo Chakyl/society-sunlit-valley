@@ -1386,7 +1386,7 @@
 				}
 			}
 			id: "6080E8F9B0DDAE72"
-			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest34.subtitle}"
+			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest33.subtitle}"
 			tasks: [{
 				id: "12DAF95F0B50680C"
 				item: {
@@ -1425,10 +1425,10 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest34.task_1358672424212654092.title}"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest33.task_1358672424212654092.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest34.title}"
+			title: "{ftbquests.chapter.armor_weapons__tools.quest33.title}"
 			x: -2.0d
 			y: -5.0d
 		}
@@ -1480,10 +1480,10 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest35.task_9140715795379747285.title}"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest34.task_9140715795379747285.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest35.title}"
+			title: "{ftbquests.chapter.armor_weapons__tools.quest34.title}"
 			x: 2.0d
 			y: -6.5d
 		}
@@ -1535,16 +1535,16 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest36.task_232572099384710594.title}"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest35.task_232572099384710594.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest36.title}"
+			title: "{ftbquests.chapter.armor_weapons__tools.quest35.title}"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
-			description: ["{ftbquests.chapter.armor_weapons__tools.quest37.description1}"]
+			description: ["{ftbquests.chapter.armor_weapons__tools.quest36.description1}"]
 			icon: {
 				Count: 1
 				id: "oreganized:electrum_chestplate"
@@ -1553,7 +1553,7 @@
 				}
 			}
 			id: "6FDA9C1E5D681CDA"
-			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest37.subtitle}"
+			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest36.subtitle}"
 			tasks: [{
 				id: "652F7B6F053D1586"
 				item: {
@@ -1592,19 +1592,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest37.task_7291182038495597958.title}"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest36.task_7291182038495597958.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest37.title}"
+			title: "{ftbquests.chapter.armor_weapons__tools.quest36.title}"
 			x: 2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
 			description: [
-				"{ftbquests.chapter.armor_weapons__tools.quest38.description1}"
+				"{ftbquests.chapter.armor_weapons__tools.quest37.description1}"
 				""
-				"{ftbquests.chapter.armor_weapons__tools.quest38.description2}"
+				"{ftbquests.chapter.armor_weapons__tools.quest37.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1614,7 +1614,7 @@
 				}
 			}
 			id: "11207C347FC407E1"
-			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest38.subtitle}"
+			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest37.subtitle}"
 			tasks: [{
 				id: "2712211EC08C9471"
 				item: {
@@ -1660,19 +1660,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest38.task_2815349133023155313.title}"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest37.task_2815349133023155313.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest38.title}"
+			title: "{ftbquests.chapter.armor_weapons__tools.quest37.title}"
 			x: 2.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["0B85DF081F75ECA7"]
 			description: [
-				"   "
 				""
-				"        Meow?"
+				""
+				"{ftbquests.chapter.armor_weapons__tools.quest38.description1}"
 			]
 			id: "062C9E95DF7C987D"
 			rewards: [{

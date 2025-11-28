@@ -242,11 +242,10 @@ ServerEvents.recipes((e) => {
     t: "society:treated_log",
   });
   e.shaped("vinery:fermentation_barrel", ["FoF", "IbI", "FfF"], {
-    b: "society:wine_keg",
-    I: "minecraft:gold_block",
-    f: "society:battery",
-    o: "minecraft:netherite_ingot",
-    F: "meadow:fire_log",
+    b: "minecraft:barrel",
+    I: "minecraft:iron_block",
+    f: "society:fire_quartz",
+    o: "society:oak_resin",
   });
   e.shaped("herbalbrews:cauldron", [" C ", "fcf", " f "], {
     c: "minecraft:cauldron",
