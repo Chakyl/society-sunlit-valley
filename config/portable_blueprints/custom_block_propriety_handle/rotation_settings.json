@@ -36,7 +36,7 @@
       "properties": [
         { "condition": "axis=z", "result": [ { "name": "axis","value": "z" } ] },
         { "condition": "axis=y", "result": [ { "name": "axis","value": "y" } ] },
-        { "condition": "axis=x", "result": [ { "name": "axis","value": "x" } ] }
+        { "condition": "axis=x", "result": [ { "name": "axis","value": "x" } ] },
         { "condition": "axis=y,connect_north=none,connect_south=other_post", "result": [ { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "other_post" } ] },
         { "condition": "axis=y,connect_north=other_post,connect_south=none", "result": [ { "name": "connect_north","value": "other_post" }, { "name": "connect_south","value": "none" } ] }
 
