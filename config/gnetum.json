@@ -20,12 +20,6 @@
       },
       "pass": 1
     },
-    "gnetum.packedElement.right": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "minecraft:jump_bar": {
       "enabled": {
         "value": "AUTO"
@@ -88,7 +82,7 @@
     },
     "minecraft:hotbar": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 1
     },
@@ -127,12 +121,6 @@
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "create:remaining_air": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
     },
     "minecraft:scoreboard": {
       "enabled": {
@@ -201,12 +189,6 @@
       "pass": 1
     },
     "minecraft:boss_event_progress": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "gnetum.packedElement.left": {
       "enabled": {
         "value": "AUTO"
       },
@@ -296,6 +278,12 @@
       },
       "pass": 3
     },
+    "gnetum:status_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
     "relics:researching_hint": {
       "enabled": {
         "value": "AUTO"
@@ -319,12 +307,6 @@
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "horseman:horseman_food_level": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
     },
     "minecraft:spyglass": {
       "enabled": {
