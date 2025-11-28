@@ -3113,7 +3113,7 @@
 						blueprint_name: "coop_vibrantown"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Coop\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Coop\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -3251,7 +3251,7 @@
 						blueprint_name: "large_shed_vibrantown"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Large Shed\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Large Shed\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -3316,7 +3316,7 @@
 						blueprint_name: "home_vibrantown"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Farmhouse\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Farmhouse\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -3381,7 +3381,7 @@
 						blueprint_name: "deluxe_barn_vibrantown"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Deluxe Barn\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Deluxe Barn\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -3563,7 +3563,7 @@
 				}
 			]
 			title: "Bamboo Barn"
-			x: -14.0d
+			x: -14.5d
 			y: -8.0d
 		}
 		{
@@ -3701,7 +3701,7 @@
 				}
 			]
 			title: "Bamboo Coop"
-			x: -10.0d
+			x: -10.5d
 			y: -8.0d
 		}
 		{
@@ -3791,7 +3791,7 @@
 						blueprint_name: "large_shed_bavarian"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Large Shed\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Large Shed\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -4030,7 +4030,7 @@
 				}
 			]
 			title: "Bamboo Deluxe Barn"
-			x: -14.0d
+			x: -14.5d
 			y: 1.0d
 		}
 		{
@@ -4095,7 +4095,7 @@
 				}
 			]
 			title: "Bamboo Farmhouse"
-			x: -10.0d
+			x: -10.5d
 			y: 1.0d
 		}
 		{
@@ -4160,7 +4160,7 @@
 				}
 			]
 			title: "Bamboo Large Shed"
-			x: -6.0d
+			x: -6.5d
 			y: 1.0d
 		}
 		{
@@ -4229,8 +4229,410 @@
 				}
 			]
 			title: "Bamboo Shed"
-			x: -6.0d
+			x: -6.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{image:society:textures/gui/buildings/barn_arid.png width:198 height:198 align:center}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "4D3D8CD6FFFBBAF6"
+			min_required_tasks: 3
+			rewards: [{
+				id: "3EFDB1157717B657"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Saphichu&r - 17 blocks wide, 17 blocks deep, 6 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "2C735FCE45A3F9D7"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "33B40F358EA74D1A"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "1063CE46A772CE34"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Arid Barn"
+			x: -13.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{image:society:textures/gui/buildings/coop_arid.png width:198 height:198 align:center}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "2C51358614E10FE9"
+			min_required_tasks: 3
+			rewards: [{
+				id: "546AE74E3FE974DE"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Saphichu&r - 14 blocks wide, 13 blocks deep, 5 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "190B0C7F63ABAEBB"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2C916288B9F7A932"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "15C33D4402FD8A78"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Arid Coop"
+			x: -9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{image:society:textures/gui/buildings/shed_arid.png width:198 height:198 align:center}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "4B66EF0879248ABE"
+			min_required_tasks: 3
+			rewards: [{
+				id: "0DD7309EC020B069"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Saphichu&r - 13 blocks wide, 19 blocks deep, 6 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "4353EFEF4737F2C1"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3E10269D997F8238"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "109EF48FB88841A6"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Arid Shed"
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{image:society:textures/gui/buildings/large_shed_arid.png width:198 height:198 align:center}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "49BFE2655BB149AA"
+			min_required_tasks: 3
+			rewards: [{
+				id: "2F86C3CB08DA196C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Saphichu&r - 29 blocks wide, 17 blocks deep, 23 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "273DC1E0A8E9FE78"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "320AAC27C2955E7A"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "0B55DC4785F34343"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Arid Large Shed"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{image:society:textures/gui/buildings/home_arid.png width:198 height:198 align:center}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "24B098107A13D2F1"
+			min_required_tasks: 3
+			rewards: [{
+				id: "7AD2D7278B9FD9A4"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Saphichu&r - 27 blocks wide, 13 blocks deep, 25 blocks tall"
+			tasks: [
+				{
+					count: 8L
+					id: "7501B35A31E84894"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "45336085558AE5CB"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "73E7724C970EAA0D"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Arid Farmhouse"
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_arid.png width:198 height:198 align:center}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "091D496B90F43A3C"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4625CAF906102043"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Saphichu&r - 23 blocks wide, 23 blocks deep, 11 blocks tall"
+			tasks: [
+				{
+					count: 20L
+					id: "34F04072F1F0902E"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "20467314E523E98E"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "4DDF191A5CA524D7"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Arid Deluxe Barn"
+			x: -13.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"

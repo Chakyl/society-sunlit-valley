@@ -152,7 +152,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 0.5d
 		}
 		{
@@ -172,7 +172,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 0.5d
 		}
 		{
@@ -192,8 +192,8 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			id: "23AF18CF0081AFEF"
@@ -212,7 +212,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: 2.0d
 		}
 		{
@@ -232,7 +232,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: 2.0d
 		}
 		{
@@ -252,7 +252,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -272,7 +272,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 2.0d
 		}
 		{
@@ -292,7 +292,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 2.0d
 		}
 		{
@@ -312,8 +312,8 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.0d
+			x: -4.5d
+			y: 3.5d
 		}
 		{
 			id: "44C829CA1FB1673A"
@@ -332,7 +332,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 3.5d
 		}
 		{
@@ -352,7 +352,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: 3.5d
 		}
 		{
@@ -372,7 +372,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 3.5d
 		}
 		{
@@ -392,7 +392,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 3.5d
 		}
 		{
@@ -440,6 +440,7 @@
 				"1D34087B3DA48BFB"
 				"5CDE401866D43985"
 				"321F14C492AF6793"
+				"3A108FB6BA7E60D6"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -510,7 +511,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 3.5d
 		}
 		{
@@ -534,6 +535,7 @@
 		}
 		{
 			id: "321F14C492AF6793"
+			subtitle: "Craftable Slime Heart"
 			tasks: [{
 				id: "540B77D4A0C02FBF"
 				item: {
@@ -550,6 +552,26 @@
 			}]
 			x: 3.0d
 			y: -1.0d
+		}
+		{
+			id: "3A108FB6BA7E60D6"
+			subtitle: "Craftable Slime Heart"
+			tasks: [{
+				id: "7EB7C316D34FB01F"
+				item: {
+					Count: 1
+					id: "splendid_slimes:plort"
+					tag: {
+						plort: {
+							id: "splendid_slimes:bear"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.slimes.subtitle0}"]

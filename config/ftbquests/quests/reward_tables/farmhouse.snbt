@@ -227,6 +227,38 @@
 				}
 			}
 		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_vibrantown"
+					buildAnyway: 0b
+					display: {
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Farmhouse\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_vibrantown"
+					owner: "worn"
+					owner_name: "Duy Luong"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 1b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
 	]
 	title: "{ftbquests.loot_table_1441633631928763452.title}"
 }

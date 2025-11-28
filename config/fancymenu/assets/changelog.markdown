@@ -1,215 +1,49 @@
 ^^^
-## Whimsical Trading
-### v3.3.5
+## The Sun Golems
+### v3.4.0
 ^^^
 --- 
-- Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
-- Added Ribbit Hut, a giant block that harvests crops around it using Ribbit Magic
-- Added Whimsy Deco - furniture mod featuring art by Nitbe!
-- Added Growth Obelisk - a block that uses Spark-Gro to grow crops in a 7x7 daily
-- Added Windswept - Biome mod focusing on temperate and colder biomes
-- Added Spark-Gro and Crushed Sparkstone
-- Added Garden Pots and Tilled Sand 
-- Added Deluxe Hydrating Fertilizer
-- Added Portable Bank Terminal
-- Added Smart Shipping Bin functionality: Deposits directly into bank account
-- Added Cacti, Sugar Cane, Rice, and Grapevine Stems and Lattices to the daily cycle. The first three will still grow without farmland until 4.0 for backwards compat.
-- Added Supply Crates to Skull Cavern that rarely spawn and drop rare seeds, materials, and other useful items
-- Added Recall Potions that teleport you to your spawn
-- Added Turnips to market
-- Added Broccoli and Zucchini crops unique to crates in Skull Cavern
-- Added functionality to Extractinator to process entire stack with shift + right click
-- Added values to completed fossils
-- Added Frostbiter as Husbandry Animal
-- Added unique Ribbit Fisher trades
-- Added Carpenter shop available via phone
-- Added Bookseller shop available via phone at the end of every season
-- Added Mana Crab Trap Bait
-- Added Overflow Tokens - adds money to coin leaderboard permanently to bypass bank account limit
-- Added Skill Books: Universal Methods of Farming& The Spark Also Rises
-- Added Kata and Geraldine dolls by Altessa
-- Added additional roll of Jelly to Wooden Pollution skill
-- Added Sunlit Pearl to Treasure chest loot pool
-- Added animal feed milling to oat
-- Added Create milling recipes for mincer recipes
-- Added Crushed Raw Bismuth
-- Added Mechanic Slime
-- Added Fossilized Clam
-- Added Elder Feather Forage to turkey
-- Added washing byproducts to crushed ore that don't have them
-- Added ore doubling using recycling machines
-- Added PT-BR translation for mod overrides by SrPalha
-- Increased FTB force Chunks to 15 and soft removed fueled chunk loaders
-- Increased sell values of all wines
-- Increased chance of Nether Jelly from nether fishing treasure
-- Increased value mult of cooking: Cooking Pot: 1.5 -> 2, Caking Station: 4-> 5, Crafting Table: 1.2 -> 1.5, Stove, Roaster, Mixing Bowl: 2 -> 3
-- Increased sell values of grapes 4 ->20 (24 for nether)
-- Increased sell value of Sweet Berries 2 -> 4
-- Increased sell value of Ancient Fruit: 96 -> 128
-- Increased sell value of Maple Syrup 64 -> 192
-- Increased the processing time for most Tapper resources 
-- Increased price of Animal Feed 8 -> 16
-- Increased Frozen Treasure skill chance 20% -> 45%
-- Increased chance of Silver Ore in Skull Cavern
-- Increased affection requirement for Biomancer 1 -> 5
-- Increased Mana Feed boost in troughs 20 -> 40
-- Increased Sparkstone max drop rate from fortune 5 -> 8
-- Magic Shears now shear sheep literally
-- Market now sells products based on current season (only applies to new worlds/players)
-- Greenhouse Glass blocks now easily breakable with Scribe
-- Reworked wine crafting: Most wines now have simplified recipes of 3 of the same fruit. Unified all grape juice to be red or white no matter the variety.
-- Reworked Boiler Room rewards: Blacksmith's Bundle gives Extractinator (formerly furniture boxes), Mineralogist Bundle gives Relic Trove (formerly Extractinator)
-- Reworked Husbandy Bundle reward: Replaced Feeding Trough chance with Artisan Cheese Press
-- Reworked Steadfast skill: Now gives 20% chance to heal a heart when hurt
-- Reduced check radius for butterfly/moth checking (Effectively increases moth pollen and butterfly amber rates)
-- Reduced amount of aged items requested by fish ponds in most cases by half
-- Reduced crafting cost price wise of Crystalarium, Mayonnaise Machine, Charging Rod, Fermentation Barrel, Aging Cask, Apple Press, Mincer, Seed Maker, Roaster, Cooking Pot, Silo, Kettle, Smart Shipping Bin, Recycling Machine, Fermentation Jar, and Quality Washer
-- Reduced cost of Kinetic Blueprint & Petal Apothecary, and Skull Cavern Teleporter but locked trades behind bundles
-- Reduced cost of several skill books
-- Reduced sadistic Fish Pond recipe (made water bucket a bucket)
-- Removed Gunpowder requirement from Boiler Room
-- Removed Fillet Knives
-- Removed Create flour (with conversion recipe)
-- Removed sell value from Bark
-- Removed Fortune's impact on crops
-- Removed Experience food diversity effect
-- Removed Slime Incubator from Shepherd
-- Renamed the deluxe burger to "The Emma Burger"
-- Renamed Pine wood set to Alpine
-- Renamed Alpine Salt to Salt
-- Nether Jelly is now fire resistant
-- Fixed Nether Jelly dropping far too often 
-- Fixed Enkephalin chances not matching tooltip
-- Fixed Fish Finder missing Wither Bonefish and having incorrect prices
-- Fixed Moobloom having a price in the Farmer's Almanac
-- Fixed removed items showing up in EMI
-- Fixed Birt Egg being used as representation of egg tag
-- Fixed Artisan Hoppers voiding items with stack size less than 64
-- Fixed Artisan Hoppers and other machines voiding items with mismatched nbt they attempt to merge
-- Fixed hammers not regenerating natural Skull Cavern blocks
-- Fixed Sewing Table crash
-- Fixed Datura flowers not dropping from Bouquet Bags
-- Fixed Glance crushing recipe not being disabled
-- Fixed Bullfish Jobs not working
-- Fixed Orange Pudding having a non-cooking pot recipe
-- Fixed Mammutiation not being milkable
-- Fixed Let's Do - Meadow advancements being unintentionally deleted
-- Fixed Yerba Mate dropping too little from harvest
-- Fixed Blaze Banker accidental destruction with proper checks
-- Fixed Raw Meat Pizza being uncraftable
-
-## 3.3.1
-- Added Create crushing/milling recipes for some Mincer exclusive items
-- Added crafting conversion recipes for outdated Sprinklers
-- Removed Grapevine leaves mechanic from additional harvests
-- Removed seed error message due to unreliability
-- Cleaned up come quests
-- Fixed Farmer's Delight Cooking Pot recipe
-- Fixed Air triggering pickup notification
-- Fixed 6am crash with Sweet Berries
-- Fixed Phone recipe existing
-- Fixed Sewing table crash
-- Fixed Artisan decree values not matching updated values and added items
-
-## 3.3.2
-- Added shift + right click aoe tilling to hoes. Radius increases with tier of hoe
-- Increased Ribbit Hut range by 1 to perfectly work with Golden Sprinklers
-- Updated ATL to fix log/chat spam
-- Removed FTBchunks force load backwards compatibility for server owners
-- Removed ability to deconstruct RS storage blocks
-- Quest cleanup
-- Changed Plant Nutrients recycling recipe to use Enriched Bone Meal due to bugs
-- Fixed Cauliflower Preserves being nuked
-- Fixed Deluxe Hydrating Farmland not working correctly
-- Fixed Fish Ponds requesting Chunkroderite
-- Fixed Sprinkler upgrading recipes
-- Fixed Lavender Quartz recipe not using Lavender
-- Fixed Carrots not dropping
-- Fixed Seed Maker not working with Garlic Seeds
-- Fixed Hatchetfish first quest requiring Chunkroderite
-- Fixed Windswept logs not having values or the correct tag
-- Fixed certain grape juices not having create spouting recipes
-- Fixed console spam
-- Fixed The Spark Also Rises not working
-- Fixed Garlic Seeds not consuming and having sound
-- Fixed Juicy Plort rippiting into removed grape juices
-- Fixed Ribbit Hut being weird with onions and flax and harvests
-- Fixed various issues with crop drop tables
-- Fixed Enrich Bonemealing not working correctly on vinery fruit trees
-- Fixed Chilled Spawning above ground
-- Fixed Recycling Machine recipes not working correctly
-- Fixed Mushroom soil not working
-- Fixed several Alpine wood items not being renamed
-
-## 3.3.3
-- Added ability to link Smart Shipping bins to shared accounts (read tooltip)
-- Added Caching to Shipping bins so they work when owner is offline with skills
-- Switched from TMRV back to JEI under the hood to fix recipe category bugs
-- Increased Ribbit Hut range by 1 to perfectly work with Golden Sprinklers (for real this time)
-- Removed drop rush from Lead to prevent brain damage with Introduction to Algorithms
-- Removed Splendid Slimes from entity activation range performance checks. Large server owners should gauge performance
-- Fixed Enkephalin not working with Artisan Hoppers
-- Fixed hoe AOE not checking for dirt
-- Fixed Hatchetfish quest requesting air
-- Fixed Ribbit Hut not actually having increased radius
-- Fixed Mayonnaise Machine's upgraded done state texture being incorrect
-- Fixed missing recipes for cooking
-- Fixed Spring Pantry bundle requiring 64 turnip instead of 32
-- Fixed Dark Oak textures being replaced by windswept
-- Fixed mobs giving extremely long amounts of freezing
-- Fixed Sacrificial Lamb not working
-- Fixed 2 name tags being consumed on naming an entity
-- Fixed popup messages displaying too long
-- Fixed memory leak with advanced loot info
-- Fixed Mushroom Stew value
-- Fixed Steadfast skill chance not being correct
-
-## 3.3.4
-- Added unique loot tables for gold rushes from Nether ores
-- Added Scribe and Create Wrench pickup tags to Refined Storage blocks.
-- Added Create Wrench to Storagesmith
-- Adjusted overworld ore gold rush tables
-- Reduced maximum spawns of bottom two layers of the Skull Cavern and tweaked mummy weights
-- Fixed default forceloads on new worlds being 2 instead of 15 (old worlds will need to update using `/ftbchunks admin extra_force_load_chunks @p set 13`)
-- Fixed fishing Jellies not being caught without the Jelly Hook or Wooden Pollution skill
-- Fixed Apple Mash not having a Create Pressing recipe
-- Fixed certain Glance crushing recipe existing
-- Fixed Ender Pearl recipe containing removed Peral existing
-- Fixed Iron hoe voiding non-dirt
-- Fixed Pumpkin Pie recipe not existing
-- Fixed Tiki Cabinet and Iron Bench not dropping
-- Fixed Market not having Beetroot Seeds
-- Fixed Antique Phone not being considered a Phone
-- Fixed some quests having incorrect dependencies
-- Fixed Quakes shutting down when they get lonely
-
-## 3.3.5
-- Added Search box to trade screen
-- Added icons to shop selector for seasonal/unlockable shops
-- Added JEI category for drying tea
-- Added ability to right click and update Shipping Bin Monitor
-- Added Bone Fantasy Box to Carpenter in late Autumn
-- Improved speed of Auto-Grabbers
-- Increased number of trades shown on trade screen as well as size of screens
-- Removed Bewereager jumpscare
-- Removed Milk from barkeeper
-- Removed water in cold biomes giving freezing effect
-- Reduced scaling of Caking Station recipes
-- Fixed Butterflies and Moths having swapped drops
-- Fixed issues with freezing slowness persisting
-- Fixed Garlic growing out of season
-- Fixed not being able to take Minnows and Leeches out of Fish Ponds
-- Fixed Bullfish Jobs Neptuna not being submittable to Abandoned Farm bundle (will only affect newly extracted Neptuna)
-- Fixed White Savannah Grapes not having a dehydrator recipe
-- Fixed Ribbit Hut not harvesting from Obsidian Stems
-- Fixed Smokey Reverie requiring Reinforced instead of Copper Brewingstation
-- Fixed snowy Sweet Berry Bush growing outside of farmland
-- Fixed Crushed Bismuth not having smelting recipe
-- Fixed structure having old Sprinklers
-- Fixed quest book inaccuracies
-- Fixed exploits
-- Fixed teas and tea products not having correct values (they were too low)
-- Fixed sawmill not having barrel recipes sometimes
-- Fixed fruit trees not dropping experience (thanks Space_Mex)
-- Fixed Cocoa beans and Nether Wart not being harvested by Ribbit Huts
-- Fixed Nether grapes having wrong season tooltip
+- Added Sun Golems with a work in progress Creature chapter of the questbook
+- Added Arid, Bamboo, Bavarian, Vibrantown building sets to the Building Shop
+- Added Cluttered, with most furniture items falling under Modern set
+- Added Rotating seasonal wallpapers to Carpenter. Rotates through trades every day and every sub-season
+- Added Bear Slime
+- Added Fire Log -> Charcoal Block smelting recipe
+- Added Petrified Slime -> Bucket of Slime crafting recipe
+- Added alternative Blaze Cake recipe
+- Added proper quests for Candlelight/Bakery in the Cooking Collection
+- Added Cutting Board recipes to Raw Pasta and Half Chicken 
+- Added Wandering/ribbit traders to advanced training screen
+- Added Slime Inspector - tool for diagnosing why a Slime is unhappy
+- Added ability to hoe farmland in water
+- Improved performance of gui elements with Gnetum
+- Increased weights of Blind Sailfin and Bark Angelfish
+- Increased Sniffer/Frostbiter Artifact shard drops by 2x
+- Increased Spindlefish Pond drops
+- Plorts and Slime Hearts are now Farmer products (from Adventurer)
+- Reduced cost of Preserves Jar (Iron Block -> Copper Block)
+- Reduced cost of Flint and Steel 20,480 ->12,288
+- Reduced cost of Refined Storage Controller/Grids 16,384 -> 8,192
+- Reduced Cost of Iron Hook by 1 Neptunium Coin
+- Reduced crowding check range (3 air blocks between corrals)
+- Removed Flamingos from Jungle
+- Removed Champions from Skull Cavern
+- Removed Obsidian Stems
+- Removed bonus value from Slime Hearts
+- Removed Wisps due to crashes
+- Fixed certain sherds not having values
+- Fixed Windswept Mailboxes not having simplified crafting recipes
+- Fixed Bismuth not having Crushing recipes
+- Fixed Light Blue Pinecone Shingles not being craftable
+- Fixed certain vegetables not being considered pickles
+- Fixed Mechanic Slime not having a Farmer's Almanac entry
+- Fixed some bugs relating to quality
+- Fixed various quest related issues   
+- Fixed Slime Vac picking up Slimes in item mode
+- Fixed crowding check not working correctly for pure Splendid Slimes
+- Fixed Splendid Slimes phasing through blocks when increasing in size
+- Fixed Splendid Slime disappearing bug maaaaybe?
+- Fixed Splendid Slime/Tarr hitboxes being tiny
+- Fixed aoe how related bugs (Thanks hypercross)
+- Fixed plushie related console spam
+- Fixed exploits of unspecified nature
