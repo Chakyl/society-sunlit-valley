@@ -6,16 +6,18 @@
 - Added Sun Golems with a work in progress Creature chapter of the questbook
 - Added Arid, Bamboo, Bavarian, Vibrantown building sets to the Building Shop
 - Added Cluttered, with most furniture items falling under Modern set
-- Added Rotating seasonal wallpapers to Carpenter. Rotates through trades every day and every sub-season
+- Added rotating seasonal wallpapers to Carpenter. Rotates through trades every day and every sub-season
 - Added Bear Slime
 - Added Fire Log -> Charcoal Block smelting recipe
 - Added Petrified Slime -> Bucket of Slime crafting recipe
 - Added alternative Blaze Cake recipe
 - Added proper quests for Candlelight/Bakery in the Cooking Collection
 - Added Cutting Board recipes to Raw Pasta and Half Chicken 
-- Added Wandering/ribbit traders to advanced training screen
+- Added Wandering/Ribbit traders to advanced trading screen
+- Added Amulet of Light artifact
 - Added Slime Inspector - tool for diagnosing why a Slime is unhappy
 - Added ability to hoe farmland in water
+- Add wip `zh_cn` translation (Thanks Thirace!)
 - Improved performance of gui elements with Gnetum
 - Increased weights of Blind Sailfin and Bark Angelfish
 - Increased Sniffer/Frostbiter Artifact shard drops by 2x
@@ -44,6 +46,8 @@
 - Fixed Splendid Slimes phasing through blocks when increasing in size
 - Fixed Splendid Slime disappearing bug maaaaybe?
 - Fixed Splendid Slime/Tarr hitboxes being tiny
-- Fixed aoe how related bugs (Thanks hypercross)
+- Fixed hoe/hoe aoe related bugs like not being able to hoe in water (Thanks hypercross)
+- Fixed crash with Skull Cavern and aoe miners like Hammers
 - Fixed plushie related console spam
-- Fixed exploits of unspecified nature
+- Fixed Cinnamon Coffee recipe
+- Fixed exploits 

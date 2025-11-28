@@ -80,7 +80,8 @@ const hasWoolTag = (tags) => {
 
 const setQuality = (newProperties, itemQuality) => {
   if (
-    (Number(newProperties.quality) === 0 && Number(newProperties.stage) === 0) ||
+    (Number(newProperties.quality) === 0 &&
+      Number(newProperties.stage) === 0) ||
     Number(itemQuality) < Number(newProperties.quality)
   )
     newProperties.quality = itemQuality;
@@ -136,8 +137,10 @@ global.artisanHarvest = (
       ) {
         harvestOutput = Item.of(`society:aged_${id.split(":")[1]}`);
       }
-      if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
-      if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
+      if (outputMult > 1)
+        harvestOutput.count = harvestOutput.count * outputMult;
+      if (!artisanHopper)
+        block.popItemFromFace(harvestOutput, block.properties.get("facing"));
       newProperties.type = "0";
       newProperties.working = false;
       newProperties.mature = false;
@@ -172,7 +175,9 @@ global.artisanInsert = (
     if (getCanTakeItems(item, block.properties, recipe, index, hasTag)) {
       newProperties = block.getProperties();
       successParticles(level, block);
-      server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
+      server.runCommandSilent(
+        `playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`
+      );
       newProperties.type = String(index + 1);
       let nbt = block.getEntityData();
       nbt.merge({ data: { type: index + 1, stage: 0 } });
@@ -293,10 +298,14 @@ global.getFacing = (facing, pos) => {
 };
 
 global.getTapperLog = (level, block) =>
-  level.getBlock(global.getOpposite(block.properties.get("facing"), block.getPos()));
+  level.getBlock(
+    global.getOpposite(block.properties.get("facing"), block.getPos())
+  );
 
 global.getFermentingBarrel = (level, block) =>
-  level.getBlock(global.getFacing(block.getProperties().get("facing"), block.getPos()));
+  level.getBlock(
+    global.getFacing(block.getProperties().get("facing"), block.getPos())
+  );
 
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
@@ -316,12 +325,22 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
     ) {
       global.tapperRecipes &&
         global.tapperRecipes.forEach((recipe, index) => {
-          if (returnFluidData && !foundFluidData && attachedBlock.getId() === recipe.input) {
+          if (
+            returnFluidData &&
+            !foundFluidData &&
+            attachedBlock.getId() === recipe.input
+          ) {
             foundFluidData = { fluid: recipe.fluidOutput, time: recipe.time };
           }
           if (
             !returnFluidData &&
-            getCanTakeItems(attachedBlock.getId(), block.properties, recipe, index, false)
+            getCanTakeItems(
+              attachedBlock.getId(),
+              block.properties,
+              recipe,
+              index,
+              false
+            )
           ) {
             newProperties = block.getProperties();
             successParticles(level, block);
@@ -366,7 +385,11 @@ global.hasMultipleTappers = (level, block) => {
     if (
       ["society:tapper", "society:auto_tapper"].includes(
         level.getBlock(
-          new BlockPos(attachedBlock.x + offset[0], attachedBlock.y, attachedBlock.z + offset[1])
+          new BlockPos(
+            attachedBlock.x + offset[0],
+            attachedBlock.y,
+            attachedBlock.z + offset[1]
+          )
         ).id
       )
     )
@@ -411,10 +434,12 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
 
   if (
     forced ||
-    (morningModulo >= artMachineProgTime && morningModulo < artMachineProgTime + artMachineTickRate)
+    (morningModulo >= artMachineProgTime &&
+      morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
     let resolvedStageCount =
-      (recipes && recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
+      (recipes &&
+        recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
       stageCount;
 
     const blockStage = blockProperties.get("stage").toLowerCase();
@@ -437,7 +462,7 @@ global.isSameQuality = (itemA, itemB) => {
   if (!itemA.nbt && !itemB.nbt) return true;
   if ((itemA.nbt && !itemB.nbt) || (!itemA.nbt && itemB.nbt)) return false;
   if (!itemA.nbt.quality_food && !itemB.nbt.quality_food) return false;
-  return (itemA.nbt.quality_food.quality === itemB.nbt.quality_food.quality);
+  return itemA.nbt.quality_food.quality === itemB.nbt.quality_food.quality;
 };
 
 global.inventoryHasRoom = (block, item) => {
@@ -449,7 +474,8 @@ global.inventoryHasRoom = (block, item) => {
         belowItem.id === Item.of(item).id &&
         global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
+          block.inventory.getSlotLimit(j) /
+            (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
         return true;
       }
@@ -484,7 +510,8 @@ global.insertInto = (block, item) => {
         belowItem.id === Item.of(item).id &&
         global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
+          block.inventory.getSlotLimit(j) /
+            (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
         block.inventory.insertItem(j, item, false);
         return 1;
@@ -741,14 +768,21 @@ const rollReplaceTable = (table, hasRope) => {
 };
 
 global.handleSkullCavernRegen = (server, level, block) => {
-  if (!level.persistentData || !level.persistentData.chunkParityMap) return;
+  if (
+    !level.persistentData ||
+    (!level.persistentData.chunkParityMap &&
+      block.id.equals("society:cavern_air"))
+  )
+    return;
   let belowPos;
   let belowBlock;
   let belowBelowPos;
   let hasRope;
 
   let toggleBit =
-    level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
+    level.persistentData.chunkParityMap[
+      level.getChunkAt(block.getPos()).pos.toString()
+    ].toggleBit;
   if (String(toggleBit) == block.getProperties().get("chunkbit")) {
     server.scheduleInTicks(2400, () => {
       global.handleSkullCavernRegen(server, level, block);
@@ -898,23 +932,41 @@ const qualityToInt = (quality) => {
   }
 };
 const getFertilizer = (crop) => {
-  const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0));
-  if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland")) return -1;
-  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland")) return 1;
-  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland")) return 2;
-  if (block.hasTag("dew_drop_farmland_growth:pristine_quality_fertilized_farmland")) return 3;
+  const block = crop
+    .getLevel()
+    .getBlock(crop.getPos().below().offset(-1, 0, 0));
+  if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
+    return -1;
+  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
+    return 1;
+  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland"))
+    return 2;
+  if (
+    block.hasTag(
+      "dew_drop_farmland_growth:pristine_quality_fertilized_farmland"
+    )
+  )
+    return 3;
   return 0;
 };
 
-const LevelData = Java.loadClass("de.cadentem.quality_food.capability.LevelData");
+const LevelData = Java.loadClass(
+  "de.cadentem.quality_food.capability.LevelData"
+);
 
 global.getCropQuality = (crop) => {
   const fertilizer = getFertilizer(crop);
   if (fertilizer == -1) return 0;
-  const qualityName = LevelData.get(crop.getLevel(), crop.getPos().offset(-1, 0, 0), false);
+  const qualityName = LevelData.get(
+    crop.getLevel(),
+    crop.getPos().offset(-1, 0, 0),
+    false
+  );
   const seedQuality = qualityToInt(qualityName);
   const goldChance =
-    0.2 * ((seedQuality * 4.6) / 10) + 0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) + 0.01;
+    0.2 * ((seedQuality * 4.6) / 10) +
+    0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
+    0.01;
 
   if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
   if (Math.random() < goldChance) return 2;
