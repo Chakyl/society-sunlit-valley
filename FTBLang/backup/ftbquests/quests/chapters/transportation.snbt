@@ -6,7 +6,7 @@
 	group: "439B0423947443D3"
 	icon: "minecraft:minecart"
 	id: "7F2FF813A6AF57FE"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -142,8 +142,8 @@
 				type: "item"
 			}]
 			title: "Paving the Road"
-			x: -0.5d
-			y: -5.0d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
@@ -520,7 +520,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -6.5d
 		}
 		{
@@ -590,6 +590,27 @@
 			title: "Waystones \\& Sharestones"
 			x: -4.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["71C32483EE2418CA"]
+			description: [
+				"&6Recall Potions&r are consumables found throughout the world or brewed that will take you home from anywhere."
+				""
+				"Usefull early on for exploring without missing 6am!"
+			]
+			id: "12FC0701CC742176"
+			rewards: [{
+				id: "4754C31F1F92BAB5"
+				item: "simplerecall:recall_potion"
+				type: "item"
+			}]
+			tasks: [{
+				id: "591E4BAA778640F1"
+				item: "simplerecall:recall_potion"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
 		}
 	]
 	title: "Transportation"

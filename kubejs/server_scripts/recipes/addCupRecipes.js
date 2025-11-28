@@ -3,7 +3,6 @@ console.info("[SOCIETY] addCupRecipes.js loaded");
 ServerEvents.recipes((e) => {
   e.shapeless("8x herbalbrews:water_cup", ["minecraft:water_bucket"]);
   e.shapeless("herbalbrews:milk_coffee", ["herbalbrews:coffee", "#society:small_milk"]);
-  e.shapeless("herbalbrews:cinnamon_coffee", ["herbalbrews:coffee", "society:ground_cinnamon"]);
   e.shapeless("society:chai_blend", [
     "herbalbrews:dried_black_tea",
     "minecraft:sugar",

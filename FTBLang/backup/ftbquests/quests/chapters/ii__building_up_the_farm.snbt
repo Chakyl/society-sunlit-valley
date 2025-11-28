@@ -10,25 +10,29 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3F759C6DEEBC61FD"
-				"0A39B0C0A77E57B0"
-			]
+			dependencies: ["0A39B0C0A77E57B0"]
 			description: [
 				"Your journey into farming starts with the &6Market&r, which sells a variety of basic seeds and saplings."
 				""
-				"Some crops only grow in certain seasons, which is designated in each crops's tooltip. "
+				"Some crops only grow in certain seasons, which is designated in the crops's tooltip. "
 				""
 				"Seasons last &630 minecraft days&r, and hot or cold biomes will be always be Summer and Winter respectively."
 				""
 				"Equipping the Calendar will show the current sub-season in the top left of your screen."
 			]
 			id: "6ADD884F3FFE5D42"
-			rewards: [{
-				id: "2040ACC30B4DC0CC"
-				item: "sereneseasons:calendar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2040ACC30B4DC0CC"
+					item: "sereneseasons:calendar"
+					type: "item"
+				}
+				{
+					id: "74190C8983D52EF8"
+					item: "quark:seed_pouch"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6F097F151D433739"
 				item: "farmingforblockheads:market"
@@ -81,13 +85,13 @@
 			]
 			id: "54B618CF0AB9DC20"
 			rewards: [{
-				id: "09B894343F6EDD1E"
-				item: "society:iron_sprinkler"
+				id: "05D8DB298A7C0CAD"
+				item: "dew_drop_farmland_growth:iron_sprinkler"
 				type: "item"
 			}]
 			tasks: [{
-				id: "47E630967268DE9A"
-				item: "society:iron_sprinkler"
+				id: "771C38A34236A7D8"
+				item: "dew_drop_farmland_growth:iron_sprinkler"
 				type: "item"
 			}]
 			x: 3.0d
@@ -158,46 +162,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"54B618CF0AB9DC20"
-				"2134CA6B3880D089"
-			]
-			description: [
-				"By now you might have run out of money while getting your crops started. "
-				""
-				"It's a good time to dig into stone to get materials needed to craft sprinklers or upgrade tools."
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:iron_pickaxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "02327F6FDF987266"
-			rewards: [{
-				id: "25F280C7FDC94599"
-				item: {
-					Count: 1
-					id: "gag:escape_rope"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				count: 16L
-				id: "4B15A9D1420596BE"
-				item: { Count: 16, id: "minecraft:raw_iron" }
-				type: "item"
-			}]
-			title: "Hitting the Mines"
-			x: 5.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["02327F6FDF987266"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
 				"While caving, you might come across these rare minerals."
 				""
@@ -217,7 +182,7 @@
 				type: "item"
 			}]
 			title: "Hidden in the Stone"
-			x: 7.0d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
@@ -281,8 +246,8 @@
 				type: "item"
 			}]
 			title: "All on Fertilizers"
-			x: 2.0d
-			y: 1.0d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -327,7 +292,7 @@
 				type: "item"
 			}]
 			title: "Getting Cooking"
-			x: 8.0d
+			x: 7.0d
 			y: -3.0d
 		}
 		{
@@ -349,7 +314,7 @@
 				type: "item"
 			}]
 			title: "Tapping Wood"
-			x: 9.0d
+			x: 8.0d
 			y: -1.5d
 		}
 		{
@@ -372,7 +337,7 @@
 				item: "society:seed_maker"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 11.5d
 			y: -3.5d
 		}
 		{
@@ -393,7 +358,7 @@
 				item: "moreminecarts:chiseled_organic_glass"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -410,7 +375,7 @@
 				item: "society:pine_tar"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 10.0d
 			y: -2.5d
 		}
 		{
@@ -427,7 +392,7 @@
 				item: "society:oak_resin"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 10.0d
 			y: -0.5d
 		}
 		{
@@ -460,13 +425,14 @@
 				}
 			]
 			title: "Brewing Beer"
-			x: 12.5d
+			x: 11.5d
 			y: 0.5d
 		}
 		{
 			dependencies: [
 				"7B2EB2B56F155E49"
 				"230E02067CBC21CF"
+				"2B3BEC36F6C0F6BE"
 			]
 			description: [
 				"Each sellable item in the pack has one of four categories:"
@@ -488,6 +454,7 @@
 				}
 			}
 			id: "2DD84A5F127B1463"
+			min_required_dependencies: 2
 			min_required_tasks: 1
 			rewards: [{
 				id: "0EE0C090E1074FF2"
@@ -500,7 +467,7 @@
 				type: "checkmark"
 			}]
 			title: "Artisan Goods?"
-			x: 13.0d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -510,7 +477,7 @@
 				""
 				"The most important right now is:"
 				""
-				"{ \"text\": \"The Spring Crops Bundle (Click Me)\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7D155FD0EFEEB5AC\" } }"
+				"[\"\",{\"underlined\":1,\"text\":\"The Spring Crops Bundle (Click Me)\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D155FD0EFEEB5AC\"}}]"
 				""
 				"Consisting of products that can grow on your farm."
 			]
@@ -527,7 +494,7 @@
 				title: "Bundles"
 				type: "checkmark"
 			}]
-			x: 15.0d
+			x: 14.0d
 			y: -1.5d
 		}
 		{
@@ -556,7 +523,7 @@
 				type: "item"
 			}]
 			title: "Getting to the Nether"
-			x: 18.0d
+			x: 17.0d
 			y: -1.5d
 		}
 		{
@@ -617,12 +584,19 @@
 			]
 			icon: "candlelight:hearth"
 			id: "3D324E99DF28D224"
-			rewards: [{
-				count: 4
-				id: "252A2DDE789924B5"
-				item: "minecraft:name_tag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "252A2DDE789924B5"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					id: "6D01FAFFF7815F65"
+					item: "society:candied_animal_feed"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7F4B6A5EB91157E6"
 				title: "Understood"
@@ -666,7 +640,7 @@
 				id: "231B8DF626FF312D"
 				item: "farmingforblockheads:chicken_nest"
 				type: "item"
-			}]	
+			}]
 			tasks: [{
 				id: "0FF144C9BACD9442"
 				item: {
@@ -835,14 +809,13 @@
 			]
 			id: "75181B22DAF5E9A6"
 			rewards: [{
-				count: 16
-				id: "11759FDE56DE468B"
-				item: "meadow:rennet"
+				id: "5BC6F281781D8AF3"
+				item: "society:large_milk"
 				type: "item"
 			}]
 			tasks: [{
 				id: "10B6EDC1EF4BD4DE"
-				item: "meadow:cheese_form"
+				item: "society:cheese_press"
 				type: "item"
 			}]
 			x: 7.0d
@@ -851,7 +824,7 @@
 		{
 			dependencies: ["20C76D194ECEDB76"]
 			description: [
-				"Fish are valuable, and a great way to make money early game."
+				"Fish are a fast and valuable way to make money early game."
 				""
 				"Your first rod will come from the &6Fisher&r villager, and they otherwise sell aquatic and fishing related supplies."
 			]
@@ -878,6 +851,8 @@
 				"Upgraded rods can be equipped with attachments using a &6Tackle Box&r."
 				""
 				"They will also have a chance to upgrade enchantments from succesful catches. The chance increases on higher upgraded rods."
+				""
+				"Higher tiers of rods will also increase the size of the minigame bobber!"
 			]
 			icon: {
 				Count: 1
@@ -940,9 +915,9 @@
 		{
 			dependencies: ["21B07E7D0C412FFA"]
 			description: [
-				"&6Tackle Box&r are used to customize your rod using the slots on the right. They also retain their inventory when broken."
+				"&6Tackle Boxes&r are used to customize your rod using the slots on the right. They also retain their inventory when broken."
 				""
-				"&oOnly upgraded rods can be customized.&r"
+				"&oOnly upgraded rods can have hooks attached&r"
 			]
 			id: "63FDC7BA6801CF64"
 			rewards: [{
@@ -1229,8 +1204,8 @@
 				item: "society:treated_log"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.5d
+			x: 10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["761F68396065119B"]
@@ -1323,7 +1298,7 @@
 				type: "item"
 			}]
 			title: "Fruit Trees"
-			x: 0.5d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -1342,7 +1317,7 @@
 				type: "item"
 			}]
 			title: "Weaker Bone Meal"
-			x: 0.5d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -1433,7 +1408,7 @@
 			dependencies: ["429FEBEC239B975F"]
 			description: [
 				""
-				"The fish you'll catch depends on two things: &aSeason&r, &6Location&r and &5Time&r."
+				"The fish you'll catch depends on 4 factors: &aSeason&r, &6Location&r &aWeather&r, and &6Time&r."
 				""
 				"Each of the four &aseasons&r have their own fish. Each &6location&r (Ocean, River, or Freshwater) has its own pool."
 				""
@@ -1473,7 +1448,7 @@
 				item: "society:frozen_geode"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
@@ -1555,7 +1530,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["230E02067CBC21CF"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
 				"&6Preserve Jars&r turn fruits and vegetables into preserves in &64&r days, multiplying their selling value by over &63&r."
 				""
@@ -1572,34 +1547,8 @@
 				item: "society:preserves_jar"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["2134CA6B3880D089"]
-			description: [
-				"Tropical biomes such as &6Savannas&r and &6Jungles&r will always be treated as &6Summer&r for crop growth only."
-				""
-				"This can be used to create a secondary farm that has no need to worry about seasons!"
-				""
-				"The same applies to frozen biomes for &6Winter&r."
-			]
-			icon: "atmospheric:sun_pottery_sherd"
-			id: "24F09C4D4D9DDF79"
-			rewards: [{
-				id: "46FC4901A1D7B8C2"
-				item: "beachparty:coconut_cocktail"
-				type: "item"
-			}]
-			tasks: [{
-				biome: "#sereneseasons:tropical_biomes"
-				id: "556DB951D3C9AA77"
-				title: "Visit a tropical Biome"
-				type: "biome"
-			}]
-			title: "Eternal Summer"
 			x: 4.0d
-			y: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]
@@ -1644,11 +1593,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["02327F6FDF987266"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
 				"&6Watering Cans&r can be upgraded to hold more water, work faster, and also work in an area!"
 				""
-				"Hold &6Right Click&r to charge up the area of affect watering ability. Higher tiers have higher areas!"
+				"Hold &6Shift + Right Click&r to charge up the area of affect watering ability. Higher tiers have higher areas!"
 			]
 			id: "0EE5A175B0417403"
 			rewards: [{
@@ -1669,8 +1618,246 @@
 				type: "item"
 			}]
 			title: "Upgraded Watering"
-			x: 6.0d
+			x: 0.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["4A48308E11476E9B"]
+			description: [
+				"Figuring out which Fish can be caught in a given location can be tricky. Some have very specific spawning conditions on top of being very rare."
+				""
+				"The &6Fish Finder&r lists out every fish in the game and its exact spawn conditions. It can either be found or purchased from a &6Fisher&r."
+			]
+			id: "2A02C6E45ED944F4"
+			rewards: [{
+				id: "656C37C798D162C5"
+				item: "society:sea_biscut"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BE2D06B565E866E"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:fish_finder"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "Fishing Guide"
+			x: 11.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["21B07E7D0C412FFA"]
+			description: [
+				"Bobbers can be attached to any kind of fishing rod by dragging it over and right clicking on it."
+				""
+				"They have various effects on the fishing minigame, such as revealing the fish on the line or increasing the bobber size even more!"
+			]
+			icon: {
+				Count: 1
+				id: "stardew_fishing:trap_bobber"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77690255DF58F118"
+			rewards: [{
+				id: "6014646708F6EAAD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E8C2AD5FDF6B94F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "stardew_fishing:treasure_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:sonar_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:cork_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:trap_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:quality_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Bobber"
+				type: "item"
+			}]
+			title: "Minigame modifications"
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5B6FD08D6063D6AA"]
+			description: [
+				"By now your chests might be an overflowing mess."
+				""
+				"Luckily the &6Storagesmith villager&r sells a variety of items to help manage the mess."
+				""
+				"Most notable is the &6Controller&r, a block that can help manage entire storage systems. Items in its storage can be viewed using a &6Crafting Terminal&r placed next to it or connected with &6Cables&r."
+				""
+				""
+			]
+			icon: "refinedstorage:crafting_grid"
+			id: "61501449BF31B773"
+			rewards: [{
+				count: 16
+				id: "5DC9285D66B2B4E6"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "10E465DFCFE2145D"
+					item: "refinedstorage:crafting_grid"
+					type: "item"
+				}
+				{
+					id: "124F45DDBD1834CC"
+					item: "refinedstorage:controller"
+					type: "item"
+				}
+			]
+			title: "Farming Storage"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61501449BF31B773"]
+			description: [
+				"The &6Controller&r can't actually store any items on its own. "
+				""
+				"Existing chests or other inventories such as Drawers can be added to the network using an &6External Storage&r."
+				""
+				"If you prefer digitally storing items for easy transportation, &64k Storage Blocks&r can be placed to allow for up to &64,000&r items on its own."
+			]
+			icon: "refinedstorage:4k_storage_block"
+			id: "69C3121C90AABBF4"
+			tasks: [
+				{
+					id: "48B9D6CA4DCEE524"
+					item: "refinedstorage:external_storage"
+					type: "item"
+				}
+				{
+					id: "1F58F668CB26451B"
+					item: "refinedstorage:4k_storage_block"
+					type: "item"
+				}
+			]
+			title: "Adding Storage Space"
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["61501449BF31B773"]
+			description: [
+				"The &6Wireless Crafting Grid&r allows you to access your storage network from a distance!"
+				""
+				"You'll also need to purchase a &6Wireless Transmitter&r and place it somewhere on your network. Multiple can be added at different areas of your base to cover a wider area!"
+				""
+				"Alternatively, their range can be extended with &6Range Upgrades&r."
+			]
+			icon: {
+				Count: 1
+				id: "refinedstorageaddons:wireless_crafting_grid"
+				tag: { }
+			}
+			id: "55D658B5939D9DEB"
+			rewards: [{
+				id: "3CEC38B315AC2E57"
+				item: "refinedstorage:range_upgrade"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C4975F5156BCFCC"
+					item: {
+						Count: 1
+						id: "refinedstorageaddons:wireless_crafting_grid"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7300B5298A729EE8"
+					item: "refinedstorage:wireless_transmitter"
+					type: "item"
+				}
+			]
+			title: "Wireless Access"
+			x: 16.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6ADD884F3FFE5D42"]
+			description: [
+				"Tiers of hoes above wood have abilities!"
+				""
+				"&6Shift+Right click&r to till in an area"
+				""
+				"&6Right click crops&r to harvest in an area"
+				""
+				"&6Left click grass/crops&r to destroy in an area (be careful with this one!)"
+				""
+				"The higher the tier, the larger the working area."
+			]
+			id: "5FBE3685CF008A5A"
+			rewards: [{
+				count: 4
+				id: "40C6F28062432BDD"
+				item: "dew_drop_farmland_growth:low_quality_fertilizer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4CB767B95CEA4E1D"
+				item: {
+					Count: 1
+					id: "minecraft:stone_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Upgraded Hoes"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "II - Farm Building"

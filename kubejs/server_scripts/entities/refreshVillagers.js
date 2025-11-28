@@ -532,3 +532,29 @@ ItemEvents.entityInteracted((e) => {
     target.setRemoved("unloaded_to_chunk");
   }
 });
+
+ItemEvents.entityInteracted((e) => {
+  const { hand, level, target } = e;
+  if (hand == "OFF_HAND") return;
+  if (target.type !== "ribbits:ribbit") return;
+  let updateThis = false;
+  const nbt = target.nbt.toString();
+  if (nbt.includes("gardener")) updateThis = true;
+
+  if (updateThis) {
+    let freshVillager = level.createEntity("ribbits:ribbit");
+    let villagerNbt = freshVillager.getNbt();
+    villagerNbt.Brain.memories = target.nbt.Brain.memories;
+    freshVillager.customName = target.customName;
+    villagerNbt.Pos = [Number(target.x), Number(target.y), Number(target.z)];
+    freshVillager.setNbt(villagerNbt);
+    villagerNbt.RibbitData = {
+      umbrella: "ribbits:umbrella_3",
+      instrument: "ribbits:none",
+      profession: "ribbits:fisherman",
+    };
+    freshVillager.setNbt(villagerNbt);
+    freshVillager.spawn();
+    target.setRemoved("unloaded_to_chunk");
+  }
+});

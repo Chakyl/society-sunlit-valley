@@ -21,17 +21,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"4B9634D942E590AB"
-				"469CEB4C8B3C0EA9"
-				"3428ADDC87A77916"
-				"7CBAF0748446A0C2"
-				"7591439B35772AB2"
-			]
 			description: ["Only &66&r required for bundle completion."]
 			icon: "supplementaries:present_green"
 			id: "661A3A466ABF29BA"
-			min_required_dependencies: 2
 			min_required_tasks: 6
 			rewards: [{
 				id: "23C19AD4A368AA0F"
@@ -154,6 +146,14 @@
 					item: "botania:apothecary_default"
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p abandoned_farm_complete"
+					elevate_perms: true
+					id: "699EAE14FFE8E2AB"
+					silent: true
+					type: "command"
+				}
 			]
 			subtitle: "Reward: Petal Apothecary (Botania)"
 			tasks: [{
@@ -169,5 +169,6 @@
 			y: 1.0d
 		}
 	]
+	subtitle: ["Reward: Botania Unlocked"]
 	title: "Abandoned Farm"
 }

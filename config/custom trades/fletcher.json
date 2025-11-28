@@ -239,24 +239,6 @@
     },
     {
       "offer": {
-        "itemKey": "trials:breeze_rod",
-        "amount": 8,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "society:amethyst_chunk",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 2,
-      "maxUses": 32,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:fletcher_breeze_rod_for_amethyst_chunk"
-    },
-    {
-      "offer": {
         "itemKey": "society:prize_ticket",
         "amount": 1,
         "priceModifier": 0
@@ -272,48 +254,6 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:fletcher_prize_ticket_for_omni_geode"
-    },
-    {
-      "offer": {
-        "itemKey": "supplementaries:cartographers_quill",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{decoration:\"minecraft:red_x\",display:{Name:'{\"translate\":\"filled_map.trial_chamber\"}'},maxSearchRadius:50000,skinKnown:0b,targetStructure:\"trials:trials_chambers\",zoomLevel:1}"
-      },
-      "request": {
-        "itemKey": "society:geode",
-        "amount": 32,
-        "priceModifier": 0
-      },
-      "additionalRequest": {
-        "itemKey": "society:magma_geode",
-        "amount": 16,
-        "priceModifier": 0
-      },
-      "tradeExp": 2,
-      "maxUses": 32,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:fletcher_cartographers_quill_for_geodes"
-    },
-    {
-      "offer": {
-        "itemKey": "society:relic_trove",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "trials:trial_key_ominous",
-        "amount": 4,
-        "priceModifier": 0
-      },
-      "tradeExp": 2,
-      "maxUses": 32,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:fletcher_relic_trove_for_trial_key_ominous"
     },
     {
       "offer": {

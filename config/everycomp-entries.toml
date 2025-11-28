@@ -42,14 +42,25 @@
 			yellow_blossom = true
 			red_blossom = true
 
-		[types.leaves_type.vanillabackport]
-			pale_oak = true
-
 		[types.leaves_type.windswept]
 			holly = true
 			chestnut = true
 			pine = true
 			flowering_acacia = true
+
+		[types.leaves_type.cluttered]
+			willow = true
+			flowering_willow = false
+			poplar = true
+			flowering_poplar = false
+			crabapple = false
+			flowering_crabapple = false
+			sycamore = true
+			fluorescent_maple = false
+			flowering_fluorescent_maple = true
+
+		[types.leaves_type.vanillabackport]
+			pale_oak = true
 
 	[types.wood_type]
 
@@ -86,13 +97,25 @@
 			livingwood = true
 			dreamwood = true
 
-		[types.wood_type.vanillabackport]
-			pale_oak = true
-
 		[types.wood_type.windswept]
 			holly = true
 			chestnut = true
 			pine = true
+
+		[types.wood_type.cluttered]
+			willow = true
+			flowering_willow = false
+			poplar = true
+			flowering_poplar = false
+			crabapple = false
+			flowering_crabapple = false
+			sycamore = true
+			fluorescent_maple = false
+			blue_mushroom = false
+			red_mushroom = false
+
+		[types.wood_type.vanillabackport]
+			pale_oak = true
 
 	[types.cake]
 

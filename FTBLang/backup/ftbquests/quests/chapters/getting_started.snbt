@@ -14,8 +14,8 @@
 			id: "3862A7D1A471A215"
 			rewards: [{
 				count: 4
-				id: "329BF163F878D2C7"
-				item: "bakery:vegetable_sandwich"
+				id: "071BAFAC9167564D"
+				item: "meadow:cheese_sandwich"
 				type: "item"
 			}]
 			size: 1.5d
@@ -124,19 +124,12 @@
 				"Items placed inside that have a sell value will be sold at &66 AM&r for the value listed in the tooltip."
 			]
 			id: "3F759C6DEEBC61FD"
-			rewards: [
-				{
-					count: 9
-					id: "1B89BB30B2C03782"
-					item: "farmersdelight:tomato_seeds"
-					type: "item"
-				}
-				{
-					id: "032EA113F5A62635"
-					item: "numismatics:sprocket"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "0675D9BCC3957125"
+				item: "veggiesdelight:turnip_seeds"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "303017FCE69EB127"
@@ -367,17 +360,30 @@
 			]
 			icon: "bountiful:bountyboard"
 			id: "34FCF481CDFD3380"
-			rewards: [{
-				id: "6DB78FE4AB9F93FA"
-				item: {
-					Count: 1
-					id: "bountiful:decree"
-					tag: {
-						"bountiful:decree_data": "{}"
+			rewards: [
+				{
+					id: "6DB78FE4AB9F93FA"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{}"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0479CC3534ABA5D5"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{\"ids\":[\"spring\"]}"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "68532046A994CD92"
 				item: "bountiful:bountyboard"
@@ -416,13 +422,13 @@
 			description: [
 				"There are 5 skill trees that can be leveled, unlocking special abilities useful to you. You can view these trees using &6K&r by default."
 				""
-				"&6Farming&r experience comes from harvesting crops, eating cooked meals, and using Artisan Machines (Such as Preserves Jars or Looms)"
+				"&6Farming&r experience comes from harvesting crops, eating cooked meals, and using Artisan Machines (such as Preserves Jars or Looms)."
 				""
-				"&6Husbandry&r experience comes from taking care of animals"
+				"&6Husbandry&r experience comes from taking care of animals."
 				""
-				"&6Mining&r experience comes from mining ores and Geode Nodes, provided you aren't using Silk Touch"
+				"&6Mining&r experience comes from mining ores and Geode Nodes, provided you aren't using Silk Touch."
 				""
-				"&6Fishing&r experience comes from catching fish, crafting fishing equipment, and harvesting from Fish Ponds"
+				"&6Fishing&r experience comes from catching fish, crafting fishing equipment, and harvesting from Fish Ponds."
 				""
 				"&6Adventuring&r experience comes from killing mobs and especially from looting chests."
 			]
@@ -459,11 +465,11 @@
 				""
 				"You can see a preview of these in the Building Shop."
 				""
-				"&6Right Click&r with a Capsule to preview the structure. Click again to build."
+				"&6Right click&r on a block with a blueprint to place a preview. Right click again on the preview to build."
 				""
-				"&6Left Click&r to rotate, &6Shift + Left Click&r to mirror"
+				"&6Shift + Right Click&r in the air to mirror, flip or rotate the preview."
 				""
-				"&oNote: If the preview doesn't show at first, use &6Left Click&r&o to rotate."
+				"&6Scroll Wheel&r can be used to position more precisely."
 			]
 			icon: "tanukidecor:antique_bed"
 			id: "1A4FD076999BF29F"
@@ -479,17 +485,19 @@
 				{
 					consume_items: true
 					count: 64L
-					id: "6D21C1D76292BD76"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "Any #society:raw_logs"
+					id: "32868E4039CBCDC9"
+					item: "minecraft:cobblestone"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
-					id: "32868E4039CBCDC9"
-					item: "minecraft:cobblestone"
+					count: 10L
+					id: "11214822A37DCD70"
+					item: {
+						Count: 1
+						id: "meadow:fire_log"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
@@ -751,6 +759,8 @@
 				"Purchase a &6Blaze Banker&r and a &6White ID Card&r + &6White Card&r for each player from the &6Banker&r villager. Each player must right click to bind the ID card and add it to the Blaze Banker."
 				""
 				"Finally, place &6White Card&r into the bottom left slot of the Blaze Banker to bind it. You can then access the account by right clicking a &6Bank Terminal&r with the card."
+				""
+				"Placing the White Card in your curio slot will allow you to purchase items from villagers using shared funds."
 			]
 			icon: "numismatics:white_card"
 			id: "1F0231C09608265D"
@@ -767,6 +777,31 @@
 			}]
 			title: "Shared Accounts"
 			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["443F42C8AFDA0C36"]
+			description: [
+				"Can't be bothered to build a villager trading hall?"
+				""
+				"The &6Phone&r has you covered! Right clicking on it will allow you to select which villager to trade with over the phone. The &6Carpenter&r and &6Bookseller&r can only be accessed over the phone!"
+				""
+				"It is sold by the &6Banker&r Villager."
+			]
+			id: "23C02B36014CC450"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35928F071913970B"
+				table_id: 3483058636960571374L
+				type: "random"
+			}]
+			tasks: [{
+				id: "24C56E6ED4DB14F1"
+				item: "whimsy_deco:phone"
+				type: "item"
+			}]
+			title: "Phone Ordering"
+			x: 8.0d
 			y: 1.5d
 		}
 	]

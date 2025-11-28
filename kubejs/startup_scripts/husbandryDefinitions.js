@@ -141,7 +141,7 @@ global.husbandryForagingDefinitions = [
     forages: [
       {
         item: "betterarcheology:artifact_shards",
-        countMult: 2,
+        countMult: 4,
         chance: 1,
         minHearts: 5,
       },
@@ -461,7 +461,7 @@ global.husbandryForagingDefinitions = [
       },
       {
         item: "betterarcheology:artifact_shards",
-        countMult: 4,
+        countMult: 8,
         chance: 1,
         minHearts: 10,
       },
@@ -535,8 +535,6 @@ global.husbandryMilkingDefinitions = [
 
 global.petGifts = [
   { animal: "buzzier_bees:grizzly_bear", gifts: ["society:beemonican_seal"] },
-  { animal: "legendarycreatures:nether_wisp", gifts: ["legendarycreatures:nether_wisp_spawn_egg"] },
-  { animal: "legendarycreatures:ender_wisp", gifts: ["simplehats:pika_ears"] },
   { animal: "minecraft:wolf", gifts: ["simplehats:longfoxears", "betterarcheology:wolf_fossil"] },
   { animal: "minecraft:cat", gifts: ["simplehats:nekoears", "betterarcheology:ocelot_fossil"] },
   { animal: "quark:foxhound", gifts: ["simplehats:fireworks"] },

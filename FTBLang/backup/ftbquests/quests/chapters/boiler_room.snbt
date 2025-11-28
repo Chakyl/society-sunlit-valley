@@ -29,8 +29,6 @@
 				"Completing the Boiler Room gives you the &6Kinetic Blueprint&r!"
 				""
 				"This item allows you to craft power sources for the &6Create&r mod, allowing you to fully automate your farm! "
-				""
-				"You can also craft the workstation for the &6Kinetic Mechanic&r, a villager that sells items crafted with the &6Kinetic Blueprint&r for convenience."
 			]
 			icon: "furniture:tool_box"
 			id: "3428ADDC87A77916"
@@ -53,6 +51,14 @@
 					}
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p boiler_room_complete"
+					elevate_perms: true
+					id: "3DE1133EC784FE2F"
+					silent: true
+					type: "command"
+				}
 			]
 			subtitle: "Reward: Create Power Sources"
 			tasks: [{
@@ -71,9 +77,8 @@
 			icon: "supplementaries:present_purple"
 			id: "3889A9F0A1CF45FF"
 			rewards: [{
-				count: 4
-				id: "128D9ADF0B117BB3"
-				item: "society:furniture_box"
+				id: "4897B3F9C4577A1D"
+				item: "extractinator:extractinator"
 				type: "item"
 			}]
 			tasks: [
@@ -143,8 +148,8 @@
 			icon: "supplementaries:present_blue"
 			id: "0B45A918213371FA"
 			rewards: [{
-				id: "2E1D5F990A42CA9F"
-				item: "extractinator:extractinator"
+				id: "6E3C4F2F04BA9298"
+				item: "society:relic_trove"
 				type: "item"
 			}]
 			tasks: [
@@ -359,12 +364,6 @@
 					count: 64L
 					id: "68A69AF7F1C0F0D8"
 					item: { Count: 64, id: "minecraft:bone" }
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "0795C5A1B9E2672A"
-					item: { Count: 64, id: "minecraft:gunpowder" }
 					type: "item"
 				}
 				{

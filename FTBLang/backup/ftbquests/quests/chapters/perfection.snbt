@@ -324,11 +324,21 @@
 			]
 			icon: "society:furniture_box"
 			id: "45120BEE01BB36B4"
-			rewards: [{
-				id: "54E1A2C64E4C892B"
-				item: "society:double_aged_dewy_star"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "54E1A2C64E4C892B"
+					item: "society:double_aged_dewy_star"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p community_center_complete"
+					elevate_perms: true
+					id: "5C52F171AEBC2238"
+					silent: true
+					type: "command"
+				}
+			]
 			size: 2.0d
 			subtitle: "Complete all Bundles"
 			tasks: [{

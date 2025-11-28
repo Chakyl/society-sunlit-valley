@@ -18,9 +18,9 @@
 			description: [
 				"{ftbquests.chapter.botania.quest1.description1}"
 				""
-				"{ftbquests.chapter.botania.quest1.description3}"
+				"{ftbquests.chapter.botania.quest1.description2}"
 				""
-				"{ftbquests.chapter.botania.quest1.description4}"
+				"{ftbquests.chapter.botania.quest1.description3}"
 			]
 			id: "5E5E6E09E6C6DF02"
 			rewards: [{
@@ -773,9 +773,9 @@
 		{
 			dependencies: ["33B78DFDDC041570"]
 			description: [
-				"Infusing &6Animal Feed&r with mana by dropping it into a &6Mana Pool&r makes it tastier to farm animals!"
+				"{ftbquests.chapter.botania.quest25.description1}"
 				""
-				"It takes a decent amount of mana to make, but it will save you tons of time when raising new animals."
+				"{ftbquests.chapter.botania.quest25.description2}"
 			]
 			id: "631D3F5020956DD7"
 			rewards: [{
@@ -789,16 +789,16 @@
 				item: "society:mana_feed"
 				type: "item"
 			}]
-			title: "Mana Feed"
+			title: "{ftbquests.chapter.botania.quest25.title}"
 			x: 5.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3B0A3083FFE1416B"]
 			description: [
-				"The &6Galliraptor&r and &6Tri-Bull&r are mysterious farm animals conjured from massive amounts of mana."
+				"{ftbquests.chapter.botania.quest26.description1}"
 				""
-				"You'll need an &bentire Mana Pool&r worth of mana to summon one, alongside an array of animal products to graft onto the hungry rune."
+				"{ftbquests.chapter.botania.quest26.description2}"
 			]
 			icon: "farmlife:galliraptor_spawn_egg"
 			id: "656E19A85C1146B4"
@@ -825,21 +825,21 @@
 						]
 					}
 				}
-				title: "Any Magical Farm Animal Crate"
+				title: "{ftbquests.chapter.botania.quest26.task_8906098627020369572.title}"
 				type: "item"
 			}]
-			title: "Magical Animals"
+			title: "{ftbquests.chapter.botania.quest26.title}"
 			x: 12.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["13A0704DCABC95E9"]
 			description: [
-				"Sparkstone is not an easy resource to aquire. &bMana&r can be used to harness the remnants from Sparkstone consuming machines."
+				"{ftbquests.chapter.botania.quest27.description1}"
 				""
-				"&6Sparkstone Recyclers&r can be attached to any side of the machine. The recycling chance stacks additively for each of them attached."
+				"{ftbquests.chapter.botania.quest27.description2}"
 				""
-				"Mana Spreaders must be used to give them &bMana&r."
+				"{ftbquests.chapter.botania.quest27.description3}"
 			]
 			id: "52AB7E364A737557"
 			rewards: [{
@@ -862,11 +862,11 @@
 		{
 			dependencies: ["13A0704DCABC95E9"]
 			description: [
-				"The &6Flugel Tiara&r is one of the few forms of creative flight in Sunlit Valley."
+				"{ftbquests.chapter.botania.quest28.description1}"
 				""
-				"It consumes &bMana&r from rings or tablets in your inventory, and a dash can be performed by double tapping the directional keys."
+				"{ftbquests.chapter.botania.quest28.description2}"
 				""
-				"&oMight need some extra pocket change to afford making this...&r"
+				"{ftbquests.chapter.botania.quest28.description3}"
 			]
 			id: "61F2F0C46147E002"
 			rewards: [{
@@ -891,9 +891,9 @@
 		{
 			dependencies: ["46F86152B5B36A3B"]
 			description: [
-				"The &6Mana Clock&r is a machine that heavily uses &bMana&r from a Mana Spreader to altar time around it."
+				"{ftbquests.chapter.botania.quest29.description1}"
 				""
-				"It is used in conjunction with &6Aging Casks&r and &6Ancient Casks&r to reduce the overall amount of time they take to process."
+				"{ftbquests.chapter.botania.quest29.description2}"
 			]
 			id: "768A5A2162C079D0"
 			rewards: [{
@@ -916,9 +916,9 @@
 		{
 			dependencies: ["69A2A84A2830134C"]
 			description: [
-				"&6Mana Crab Trap Bait&r can be crafted from various magical materials on a Runic Altar."
+				"{ftbquests.chapter.botania.quest30.description1}"
 				""
-				"It catches even less trash and more fish than &6Deluxe Crab Trap Bait&r, with a chance to fish up rare and valuable aquatic loot."
+				"{ftbquests.chapter.botania.quest30.description2}"
 			]
 			id: "24D0021DB56E9E46"
 			rewards: [{
@@ -932,7 +932,7 @@
 				item: "crabbersdelight:mana_crab_trap_bait"
 				type: "item"
 			}]
-			title: "Botanical Fishing"
+			title: "{ftbquests.chapter.botania.quest30.title}"
 			x: 11.5d
 			y: 1.0d
 		}

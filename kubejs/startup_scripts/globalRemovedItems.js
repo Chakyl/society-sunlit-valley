@@ -1,4 +1,5 @@
 global.removedItems = [
+  "nethervinery:obsidian_stem",
   "windswept:gingerbread_cookie",
   "windswept:frozen_flesh",
   "whimsy_deco:gatcha_capsule",

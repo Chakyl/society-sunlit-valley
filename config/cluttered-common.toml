@@ -1,0 +1,8 @@
+
+["Cluttered Configs"]
+	#Should old Cluttered blocks be replaced with their new counterparts? 
+	#If the old version is not installed and this is set to false they will disappear.
+	#This setting may not work correctly if changed AFTER loading a world. Be sure to make a backup.
+	#Defaults to true.
+	"Replace old blocks:" = false
+

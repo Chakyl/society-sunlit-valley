@@ -1,0 +1,41 @@
+{
+  "shop_id": "ribbit_merchant",
+  "name": "shop.society_trading.ribbit_merchant",
+  "texture": "ribbits:textures/block/red_toadstool",
+  "entity": "ribbits:ribbit",
+  "entity_data": "ribbits:merchant",
+  "hidden_from_selector": true,
+  "jei_catalyst": { "item": "ribbits:ribbit_merchant_spawn_egg" },
+  "trades": [
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "offer": { "item": "ribbits:brown_toadstool", "count": 13 },
+      "trade_id": "ribbit_merchant_brown_toadstool"
+    },
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "offer": { "item": "ribbits:red_toadstool", "count": 10 },
+      "trade_id": "ribbit_merchant_red_toadstool"
+    },
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "offer": { "item": "ribbits:toadstool_stem", "count": 15 },
+      "trade_id": "ribbit_merchant_toadstool_stem"
+    },
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "offer": { "item": "ribbits:mossy_oak_planks", "count": 30 },
+      "trade_id": "ribbit_merchant_mossy_oak_planks"
+    },
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 3 },
+      "offer": { "item": "ribbits:swamp_lantern", "count": 5 },
+      "trade_id": "ribbit_merchant_swamp_lantern"
+    },
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 7 },
+      "offer": { "item": "ribbits:maraca", "count": 1 },
+      "trade_id": "ribbit_merchant_maraca"
+    }
+  ]
+}

@@ -70,6 +70,38 @@
 			y: -6.0d
 		}
 		{
+			dependencies: [
+				"60B2CC4F9C09DAB1"
+				"653BE5A2FCF950A5"
+				"2469DF52032CDADF"
+				"7DF4FF48EE1D86EA"
+				"3CBD02655B9E3908"
+				"0DCE2584C2CA348E"
+				"6157F3158A1C6411"
+				"5088A974205886F5"
+				"6F100194A26A593A"
+				"65ED4471C99E1D17"
+				"4FE3006C4C9C4E85"
+				"54FE51A668B8FDB6"
+				"5F6E585D095B233E"
+				"58527870E5D80061"
+				"0532ED6D3BAB24AB"
+				"1DC9B18070F98550"
+				"1E718BD9E47886B2"
+				"646917656F9B1DF0"
+				"04FFDB6486480174"
+				"2072B1F5A120178D"
+				"31831BD5BC45E37E"
+				"457B7A312B02FAE5"
+				"150522D0C50EA66A"
+				"7DE88AD6008783CE"
+				"36041EBE524C7CC1"
+				"488DE48D13E2751B"
+				"3B5CF272356259B2"
+				"79ECFD2110BB5689"
+			]
+			description: ["{ftbquests.chapter.banners.quest2.description1}"]
+			hide_dependency_lines: true
 			id: "1280C34AE9A4EE7B"
 			rewards: [{
 				id: "5095A3D6613D239D"
@@ -78,14 +110,54 @@
 			}]
 			size: 2.0d
 			tasks: [{
-				id: "3000EF536FF50CDE"
-				item: "bakery:bakery_standard"
-				type: "item"
+				icon: "candlelight:candlelight_standard"
+				id: "765B171872302421"
+				stat: "minecraft:play_time"
+				title: "{ftbquests.chapter.banners.quest2.task_8528435713118577697.title}"
+				type: "stat"
+				value: 1
 			}]
+			title: "{ftbquests.chapter.banners.quest2.title}"
 			x: -3.0d
 			y: -2.0d
 		}
 		{
+			dependencies: [
+				"4949E40DEE1A9D98"
+				"7D540636A634D990"
+				"7A2890CF01DD497D"
+				"7FDEA45A73045389"
+				"66716EF44F12D51D"
+				"416AF765B9EB166B"
+				"6882812251D8F768"
+				"3457472C371B5B75"
+				"5FBB8D9F2D68C195"
+				"46FA860740238484"
+				"3826AA888C598E2B"
+				"78D720F1A954096E"
+				"134F9B6C310372BD"
+				"2BFD1960255F099D"
+				"15B1A136B778849F"
+				"0E6FB2B3EC37C18B"
+				"53E03722DE660105"
+				"5E09F937C072716E"
+				"6279D30F7DAE997C"
+				"405819D801A78442"
+				"3E241508F65A6C53"
+				"717F2A1E8D0DDB0B"
+				"7AADC3B71DFBE208"
+				"75B03A095825BE76"
+				"4F14409EF50F6CE9"
+				"1D5D7EA479DDAD57"
+				"4BC2FB247FB23FE7"
+				"58B0E4A8F22798C8"
+				"6E6588DBC047B041"
+				"5E94562368270D69"
+				"560CDD4660AA1159"
+				"791EFE3588B3D3A6"
+			]
+			description: ["{ftbquests.chapter.banners.quest3.description1}"]
+			hide_dependency_lines: true
 			id: "7A159242A6B053C8"
 			rewards: [{
 				id: "4D838DB7489854D9"
@@ -94,10 +166,14 @@
 			}]
 			size: 2.0d
 			tasks: [{
-				id: "0CBF16B1681DF513"
-				item: "candlelight:candlelight_standard"
-				type: "item"
+				icon: "bakery:bakery_standard"
+				id: "3AD3A245C817EDF9"
+				stat: "minecraft:play_time"
+				title: "{ftbquests.chapter.banners.quest3.task_4238910094879223289.title}"
+				type: "stat"
+				value: 1
 			}]
+			title: "{ftbquests.chapter.banners.quest3.title}"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -951,7 +1027,6 @@
 				"30BF1FB39C2E05BC"
 				"776A318885DAA6A6"
 				"0CA7CEED7DD5B11F"
-				"499DF6BED7398D99"
 				"6703BC8EAABB52B1"
 				"764FBC5CFBBC2FE7"
 				"0EF5C98143E6755B"
@@ -968,7 +1043,6 @@
 				"796B98C9ED5A6396"
 				"304690207BD68F1F"
 				"14489A69C742E752"
-				"6FFC215CB02D27BF"
 				"6DC29F70056D062D"
 				"3D58FD07A68909E5"
 				"1B386D9CF0CA8BD9"
@@ -976,33 +1050,23 @@
 				"3AF919E950F2D35B"
 				"15C9B5E9F455688F"
 				"438F91A0DCA3DDB0"
+				"44E8B05A2E37DF17"
+				"7C26F52DDAE17DA8"
+				"6710747DA9E05E6E"
+				"178FE5D04C197282"
+				"11A2F44D6368B1E3"
+				"2F4164B3A2F143B6"
+				"3C49EFEC3F2A03F7"
+				"150AC5D9FABDEC26"
+				"083E30851FA52517"
+				"13BB9EFD3B941D98"
 			]
 			description: ["{ftbquests.chapter.banners.quest81.description1}"]
 			hide_dependency_lines: true
 			id: "44256671D7500BEA"
 			rewards: [{
-				id: "04DB5A5F23F3A7EF"
-				item: {
-					Count: 1
-					id: "relics:infinity_ham"
-					tag: {
-						abilities: {
-							autophagy: {
-								points: 0
-								stats: {
-									feed: 1.51582d
-								}
-							}
-							infusion: {
-								points: 0
-								stats: {
-									duration: 2.05742d
-								}
-							}
-						}
-						pieces: 10
-					}
-				}
+				id: "41B656E2B16D51AD"
+				item: "society:magic_rock_candy"
 				type: "item"
 			}]
 			size: 2.0d
@@ -1453,16 +1517,6 @@
 			y: 9.0d
 		}
 		{
-			id: "6FFC215CB02D27BF"
-			tasks: [{
-				id: "5C14A249515646A9"
-				item: "veggiesdelight:sweet_potato_mochi"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 8.0d
-		}
-		{
 			id: "15C9B5E9F455688F"
 			tasks: [{
 				id: "3F5B760CF0459127"
@@ -1471,16 +1525,6 @@
 			}]
 			x: 10.0d
 			y: 7.0d
-		}
-		{
-			id: "499DF6BED7398D99"
-			tasks: [{
-				id: "06532ED09213C1A2"
-				item: "veggiesdelight:whole_roasted_cauliflower"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 6.0d
 		}
 		{
 			id: "6703BC8EAABB52B1"
@@ -1599,8 +1643,8 @@
 				item: "veggiesdelight:carrot_juice"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 10.0d
+			x: 13.5d
+			y: 12.0d
 		}
 		{
 			id: "4BBEED8A907B5919"
@@ -1639,8 +1683,830 @@
 				item: "veggiesdelight:sweet_potato_cupcake"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 10.5d
+			x: 14.0d
+			y: 11.0d
+		}
+		{
+			id: "150AC5D9FABDEC26"
+			tasks: [{
+				id: "4ACDF83042410619"
+				item: {
+					Count: 1
+					id: "veggiesdelight:cauliflower_kuku"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			id: "7C26F52DDAE17DA8"
+			tasks: [{
+				id: "165123733BB5A860"
+				item: "veggiesdelight:stuffed_zucchinis"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			id: "44E8B05A2E37DF17"
+			tasks: [{
+				id: "4D3C27792E82F6BC"
+				item: "veggiesdelight:turnip_beef_stew"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 11.0d
+		}
+		{
+			id: "11A2F44D6368B1E3"
+			tasks: [{
+				id: "45548B66E7C582C9"
+				item: {
+					Count: 1
+					id: "veggiesdelight:turnip_cake"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 11.0d
+		}
+		{
+			id: "6710747DA9E05E6E"
+			tasks: [{
+				id: "0D40180981C5B2EF"
+				item: "veggiesdelight:broccoli_soup"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			id: "3C49EFEC3F2A03F7"
+			tasks: [{
+				id: "08713DDC0FCF58A5"
+				item: {
+					Count: 1
+					id: "veggiesdelight:pasta_with_broccoli"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 11.0d
+		}
+		{
+			id: "2F4164B3A2F143B6"
+			tasks: [{
+				id: "0219F98847EDB6A5"
+				item: {
+					Count: 1
+					id: "veggiesdelight:zucchini_sandwich"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			id: "178FE5D04C197282"
+			tasks: [{
+				id: "04610EE7181E3899"
+				item: "veggiesdelight:broccoli_salad"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 12.0d
+		}
+		{
+			id: "13BB9EFD3B941D98"
+			tasks: [{
+				id: "1BC9F2C06F7E24B8"
+				item: "veggiesdelight:turnip_water"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 12.0d
+		}
+		{
+			id: "083E30851FA52517"
+			tasks: [{
+				id: "480F859178EA7263"
+				item: "veggiesdelight:turnip_salad"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 10.0d
+		}
+		{
+			id: "75B03A095825BE76"
+			tasks: [{
+				id: "147101C1C2141D40"
+				item: "bakery:bread"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			id: "15B1A136B778849F"
+			tasks: [{
+				id: "59E177136CB4430D"
+				item: "bakery:crusty_bread"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			id: "7A2890CF01DD497D"
+			tasks: [{
+				id: "7484D45B68FADCE6"
+				item: "bakery:baguette"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			id: "53E03722DE660105"
+			tasks: [{
+				id: "78D50279966385BE"
+				item: "bakery:toast"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			id: "66716EF44F12D51D"
+			tasks: [{
+				id: "63441CA5C0D65F07"
+				item: "bakery:braided_bread"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			id: "3826AA888C598E2B"
+			tasks: [{
+				id: "3C3103B69DD1FDF8"
+				item: "bakery:bun"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			id: "6279D30F7DAE997C"
+			tasks: [{
+				id: "68FF9E1FB0385BB5"
+				item: "bakery:sweetberry_cake"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			id: "405819D801A78442"
+			tasks: [{
+				id: "2462EBA7D40FD0BF"
+				item: "bakery:sweetberry_cupcake"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			id: "5E94562368270D69"
+			tasks: [{
+				id: "5D096239FF3379A9"
+				item: "bakery:sweetberry_glazed_cookie"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			id: "3457472C371B5B75"
+			tasks: [{
+				id: "33CC375AB7CB0C32"
+				item: "bakery:chocolate_glazed_cookie"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			id: "4949E40DEE1A9D98"
+			tasks: [{
+				id: "1C5257AC92BBB247"
+				item: "bakery:chocolate_cake"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			id: "717F2A1E8D0DDB0B"
+			tasks: [{
+				id: "450C4B51A9621B4D"
+				item: "bakery:apple_cupcake"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			id: "134F9B6C310372BD"
+			tasks: [{
+				id: "504EC4BF6680079C"
+				item: "bakery:strawberry_cake"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			id: "5FBB8D9F2D68C195"
+			tasks: [{
+				id: "02724318785772FE"
+				item: "bakery:strawberry_glazed_cookie"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			id: "78D720F1A954096E"
+			tasks: [{
+				id: "5948C80C0BD105A1"
+				item: "bakery:strawberry_cupcake"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			id: "4F14409EF50F6CE9"
+			tasks: [{
+				id: "65FB519BAF5FF2D6"
+				item: "bakery:croissant"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			id: "416AF765B9EB166B"
+			tasks: [{
+				id: "18BD8F0B6D4632E0"
+				item: "bakery:misslilitu_biscuit"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			id: "7FDEA45A73045389"
+			tasks: [{
+				id: "67778F2C446C448D"
+				item: "bakery:bread_with_jam"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			id: "1D5D7EA479DDAD57"
+			tasks: [{
+				id: "0CAC2BBD04F2A1AD"
+				item: "bakery:chocolate_gateau"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			id: "560CDD4660AA1159"
+			tasks: [{
+				id: "7479233D67C50A5B"
+				item: "bakery:bundt_cake"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.0d
+		}
+		{
+			id: "2BFD1960255F099D"
+			tasks: [{
+				id: "791B708172D4FF3F"
+				item: "bakery:linzer_tart"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			id: "4BC2FB247FB23FE7"
+			tasks: [{
+				id: "09CBFAB5E8ED45B4"
+				item: "bakery:chocolate_tart"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			id: "7D540636A634D990"
+			tasks: [{
+				id: "711F56C34590FB84"
+				item: "bakery:pudding"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			id: "7AADC3B71DFBE208"
+			tasks: [{
+				id: "7BD2A6B46EEB80DD"
+				item: "bakery:glowberry_tart"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			id: "3E241508F65A6C53"
+			tasks: [{
+				id: "6F691145C5FC9C33"
+				item: "bakery:apple_pie"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -3.0d
+		}
+		{
+			id: "46FA860740238484"
+			tasks: [{
+				id: "62C58DD482C9221C"
+				item: "bakery:cornet"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			id: "5E09F937C072716E"
+			tasks: [{
+				id: "2B2D04CD59CC56E2"
+				item: "bakery:jam_roll"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -1.0d
+		}
+		{
+			id: "6882812251D8F768"
+			tasks: [{
+				id: "0F7BB9BFB4E16E84"
+				item: "bakery:grilled_salmon_sandwich"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -3.0d
+		}
+		{
+			id: "58B0E4A8F22798C8"
+			tasks: [{
+				id: "0FB73F9F4EAA0BD0"
+				item: "bakery:sandwich"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			id: "0E6FB2B3EC37C18B"
+			tasks: [{
+				id: "102B0898E0011A28"
+				item: "bakery:grilled_bacon_sandwich"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -1.0d
+		}
+		{
+			id: "791EFE3588B3D3A6"
+			tasks: [{
+				id: "189D906B1E089C71"
+				item: "bakery:grilled_salmon_sandwich"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			id: "6E6588DBC047B041"
+			tasks: [{
+				id: "0E88A8780C5E5DBE"
+				item: "bakery:chocolate_donut"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			id: "09E68F4E9AE935D8"
+			tasks: [{
+				id: "0575FD7C23D5FA0E"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			id: "31831BD5BC45E37E"
+			tasks: [{
+				id: "7DDDFECE87F76690"
+				item: "candlelight:salad"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			id: "2469DF52032CDADF"
+			tasks: [{
+				id: "3B22F7A6C84E7F9F"
+				item: "candlelight:fresh_garden_salad"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			id: "7DE88AD6008783CE"
+			tasks: [{
+				id: "2A75775FC88202E5"
+				item: "candlelight:harvest_plate"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			id: "2072B1F5A120178D"
+			tasks: [{
+				id: "655D592E41D22305"
+				item: "candlelight:tomato_mozzarella_salad"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			id: "488DE48D13E2751B"
+			tasks: [{
+				id: "3F3C1211B88ED11E"
+				item: {
+					Count: 1
+					id: "candlelight:salmon_on_white_wine"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			id: "58527870E5D80061"
+			tasks: [{
+				id: "115F8E52A296C635"
+				item: {
+					Count: 1
+					id: "candlelight:tropical_fish_supreme"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			id: "150522D0C50EA66A"
+			tasks: [{
+				id: "36599FFE0E904C31"
+				item: "candlelight:omelet"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			id: "6F100194A26A593A"
+			tasks: [{
+				id: "0ECC1B6236C2E723"
+				item: "candlelight:pasta_with_lettuce"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			id: "457B7A312B02FAE5"
+			tasks: [{
+				id: "05A5E5798CCBEF77"
+				item: {
+					Count: 1
+					id: "candlelight:lasagne"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			id: "4FE3006C4C9C4E85"
+			tasks: [{
+				id: "57F37F9248474EF7"
+				item: {
+					Count: 1
+					id: "candlelight:tomato_soup"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "1E718BD9E47886B2"
+			tasks: [{
+				id: "16984F5739AD3920"
+				item: {
+					Count: 1
+					id: "candlelight:mushroom_soup"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			id: "1DC9B18070F98550"
+			tasks: [{
+				id: "03F49C2D4670DE47"
+				item: "candlelight:beetroot_salad"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			id: "646917656F9B1DF0"
+			tasks: [{
+				id: "5C84005EAA18461A"
+				item: {
+					Count: 1
+					id: "candlelight:pasta_with_mozzarella"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			id: "7DF4FF48EE1D86EA"
+			tasks: [{
+				id: "3ADD46DEF4C5A56F"
+				item: {
+					Count: 1
+					id: "candlelight:bolognese"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			id: "3CBD02655B9E3908"
+			tasks: [{
+				id: "37840D3FB8861663"
+				item: "candlelight:chicken_teriyaki"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			id: "60B2CC4F9C09DAB1"
+			tasks: [{
+				id: "1F46452438BA2E8B"
+				item: "candlelight:chocolate_mousse"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -1.0d
+		}
+		{
+			id: "0DCE2584C2CA348E"
+			tasks: [{
+				id: "1439A5A1DB96E3AA"
+				item: "candlelight:beef_tartare"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			id: "04FFDB6486480174"
+			tasks: [{
+				id: "3E0E8B919FAC47F2"
+				item: {
+					Count: 1
+					id: "candlelight:beef_wellington"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			id: "5088A974205886F5"
+			tasks: [{
+				id: "75AB1D0148550206"
+				item: "candlelight:khinkali"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			id: "65ED4471C99E1D17"
+			tasks: [{
+				id: "0A51B5424D702FF1"
+				item: {
+					Count: 1
+					id: "candlelight:chicken_alfredo"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			id: "79ECFD2110BB5689"
+			tasks: [{
+				id: "11D22BC12B3AA1D0"
+				item: {
+					Count: 1
+					id: "candlelight:chicken_with_vegetables"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			id: "36041EBE524C7CC1"
+			tasks: [{
+				id: "3F2570A2D648496B"
+				item: {
+					Count: 1
+					id: "candlelight:pasta_with_bolognese"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			id: "54FE51A668B8FDB6"
+			tasks: [{
+				id: "3E95A0B07B3624C7"
+				item: {
+					Count: 1
+					id: "candlelight:fillet_steak"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			id: "3B5CF272356259B2"
+			tasks: [{
+				id: "2E79BF5524A1281D"
+				item: {
+					Count: 1
+					id: "candlelight:roasted_lamb_with_lettuce"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: -3.0d
+		}
+		{
+			id: "6157F3158A1C6411"
+			tasks: [{
+				id: "774E70F10C969972"
+				item: {
+					Count: 1
+					id: "candlelight:roastbeef_with_glazed_carrots"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			id: "0532ED6D3BAB24AB"
+			tasks: [{
+				id: "2FDB7E09BDB207E9"
+				item: "candlelight:mozzarella"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -2.0d
+		}
+		{
+			id: "653BE5A2FCF950A5"
+			tasks: [{
+				id: "2CF4C1DAA8C7EDF5"
+				item: {
+					Count: 1
+					id: "candlelight:beef_with_mushroom_in_wine_and_potatoes"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			id: "5F6E585D095B233E"
+			tasks: [{
+				id: "723DD2AD590B8497"
+				item: {
+					Count: 1
+					id: "candlelight:pork_ribs"
+					tag: {
+						StoredEffects: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: -2.0d
 		}
 	]
 	title: "{ftbquests.chapter.banners.title}"

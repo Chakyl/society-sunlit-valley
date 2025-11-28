@@ -13,12 +13,11 @@
     },
     "I": {
       "tag": "forge:ingots/iron"
-    },
-    "P": {
-      "item": "minecraft:iron_pickaxe"
     }
   },
-  "pattern": ["INP", " HN", "C I"],
+  "pattern": ["IIN", 
+              " HI", 
+              "C I"],
   "result": {
     "item": "rehooked:iron_hook"
   },

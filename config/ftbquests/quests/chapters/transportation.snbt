@@ -6,7 +6,7 @@
 	group: "439B0423947443D3"
 	icon: "minecraft:minecart"
 	id: "7F2FF813A6AF57FE"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -594,9 +594,9 @@
 		{
 			dependencies: ["71C32483EE2418CA"]
 			description: [
-				"&6Recall Potions&r are consumables found throughout the world or brewed that will take you home from anywhere."
+				"{ftbquests.chapter.transportation.quest20.description1}"
 				""
-				"Usefull early on for exploring without missing 6am!"
+				"{ftbquests.chapter.transportation.quest20.description2}"
 			]
 			id: "12FC0701CC742176"
 			rewards: [{

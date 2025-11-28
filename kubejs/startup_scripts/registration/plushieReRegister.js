@@ -67,7 +67,7 @@ StartupEvents.registry("block", (event) => {
     const splitStr = plushie.split(":");
     let modelPath = `${splitStr[0]}:block/${splitStr[1]}`;
     if (splitStr[0].equals("tanukidecor"))
-      modelPath = `tanukidecor:/block/mini_figure/${splitStr[1]}`;
+      modelPath = `tanukidecor:block/mini_figure/${splitStr[1]}`;
     event
       .create(`${splitStr[0]}:adv_${splitStr[1]}`, "cardinal")
       .property(integerProperty.create("type", 0, global.plushieTraits.length))
@@ -114,7 +114,6 @@ StartupEvents.registry("block", (event) => {
           });
           tick.block.setEntityData(nbt);
         }
-        global.handleBERandomTick(tick, true, 1);
       })
       .blockEntity((blockInfo) => {
         blockInfo.initialData({ type: "", quest_id: 0, quality: 0, affection: 0 });

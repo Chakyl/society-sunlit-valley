@@ -3062,12 +3062,13 @@ global.fishPondDefinitions = [
           { item: "trials:trial_key", count: 8 },
           { item: "trials:ominous_bottle", count: 4 },
           { item: "trials:breeze_rod", count: 4 },
+          { item: "rottencreatures:frozen_rotten_flesh", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "trials:trial_key_ominous", count: 8 },
+          { item: "trials:trial_key_ominous", count: 4 },
           { item: "minecraft:blaze_rod", count: 32 },
           { item: "society:holy_symbol", count: 1 },
         ],
@@ -3083,10 +3084,10 @@ global.fishPondDefinitions = [
     ],
     additionalRewards: [
       {
-        minPopulation: 4,
-        item: "trials:ominous_bottle",
-        count: 4,
-        chance: 0.34,
+        minPopulation: 6,
+        item: 'society:magic_rope',
+        count: 1,
+        chance: 0.24,
       },
 
       {
@@ -3457,7 +3458,7 @@ global.fishPondDefinitions = [
       {
         minPopulation: 10,
         item: "society:sparkstone",
-        count: 8,
+        count: 16,
         chance: 0.25,
       },
     ],

@@ -516,7 +516,6 @@ StartupEvents.registry("block", (e) => {
         food.alwaysEdible(true);
         food.fastToEat(true);
         food.effect("vinery:jellie", 200, 1, 1.0);
-        food.effect("trials:oozing", 1200, 1, 1.0);
       });
       item.useAnimation("drink");
     })
