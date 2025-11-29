@@ -15,7 +15,7 @@
 	quests: [
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest1.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn.png width:221 height:183 align:center}"]
 			icon: "minecraft:chest"
 			id: "159D294DF1634063"
 			min_required_tasks: 3
@@ -54,7 +54,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest1.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest1.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -79,13 +79,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest1.title}"
+			title: "Basic Barn"
 			x: -15.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest2.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_cherry.png width:221 height:183 align:center}"]
 			icon: "quark:cherry_chest"
 			id: "2E10B40D6EA21C06"
 			min_required_tasks: 3
@@ -124,7 +124,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest2.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest2.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -149,13 +149,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest2.title}"
+			title: "Cherry Barn"
 			x: -14.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest3.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed.png width:221 height:183 align:center}"]
 			icon: "minecraft:chest"
 			id: "48A453D05E39ECC5"
 			min_required_tasks: 3
@@ -194,7 +194,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest3.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -219,7 +219,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest3.title}"
+			title: "Shed"
 			x: -7.0d
 			y: -11.0d
 		}
@@ -227,7 +227,7 @@
 			dependencies: ["118A9A2B8922DA00"]
 			description: [
 				""
-				"{ftbquests.chapter.building_shop.quest4.image0}"
+				"{image:society:textures/gui/buildings/large_shed.png width:256 height:192 align:center}"
 			]
 			icon: "minecraft:chest"
 			id: "58E58FA16E362F3F"
@@ -267,7 +267,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest4.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest4.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -288,13 +288,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest4.title}"
+			title: "Large Shed"
 			x: -7.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest5.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_cherry.png width:221 height:183 align:center}"]
 			icon: "quark:cherry_chest"
 			id: "5982663C283E77C0"
 			min_required_tasks: 3
@@ -333,7 +333,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest5.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest5.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -354,7 +354,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest5.title}"
+			title: "Cherry Large Shed"
 			x: -6.0d
 			y: -2.0d
 		}
@@ -362,9 +362,9 @@
 			can_repeat: false
 			dependencies: ["049EB48B999881A3"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest6.description1}"
+				"Sheds are utility buildings for storing Artisan Machines, chests, and anything else you need."
 				""
-				"{ftbquests.chapter.building_shop.quest6.description2}"
+				"No machines included! This is just a basic farm structure to keep you organized."
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -373,16 +373,16 @@
 			size: 1.5d
 			tasks: [{
 				id: "5C2383EED4776FAE"
-				title: "{ftbquests.chapter.building_shop.quest6.task_6639295337464295342.title}"
+				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest6.title}"
+			title: "Sheds"
 			x: -6.0d
 			y: -12.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest7.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_cherry.png width:221 height:183 align:center}"]
 			icon: "quark:cherry_chest"
 			id: "4D5FE0A0485EE5D5"
 			min_required_tasks: 3
@@ -421,7 +421,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest7.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -446,7 +446,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest7.title}"
+			title: "Cherry Shed"
 			x: -6.0d
 			y: -11.0d
 		}
@@ -454,9 +454,9 @@
 			can_repeat: false
 			dependencies: ["049EB48B999881A3"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest8.description1}"
+				"Large Sheds are as you may expect; larger sheds. They have plenty of room, and fit neatly in a single chunk (excluding walls). Press &6F3&r + &6G&r to see chunk boundries."
 				""
-				"{ftbquests.chapter.building_shop.quest8.description2}"
+				"No machines included! This is just a basic farm structure to keep you organized."
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -465,10 +465,10 @@
 			size: 1.5d
 			tasks: [{
 				id: "62909AC02C9A7963"
-				title: "{ftbquests.chapter.building_shop.quest8.task_7102346762535991651.title}"
+				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest8.title}"
+			title: "Large Sheds"
 			x: -6.0d
 			y: -3.5d
 		}
@@ -476,9 +476,9 @@
 			can_repeat: false
 			dependencies: ["049EB48B999881A3"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest9.description1}"
+				"Barns are perfectly sized for indoor farm animals. The first floor is intended for animals, perfectly spaced so Feeding Troughs don't leave them hungry."
 				""
-				"{ftbquests.chapter.building_shop.quest9.description2}"
+				"Two &6Feeding Troughs&r are included in the building. "
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -488,10 +488,10 @@
 			size: 1.5d
 			tasks: [{
 				id: "2115EFA4F1F6CEB9"
-				title: "{ftbquests.chapter.building_shop.quest9.task_2384075069475704505.title}"
+				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest9.title}"
+			title: "Barns"
 			x: -14.0d
 			y: -12.5d
 		}
@@ -499,29 +499,29 @@
 			can_repeat: false
 			dependencies: ["66D159252C70D5F2"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest10.description1}"
+				"This chapter contains pre-built buildings that can be purchased with currency and resources."
 				""
-				"{ftbquests.chapter.building_shop.quest10.description2}"
+				"&6Right click&r on a block with a blueprint to place a preview. Right click again on the preview to build."
 				""
-				"{ftbquests.chapter.building_shop.quest10.description3}"
+				"&6Shift + Right Click&r in the air to mirror, flip or rotate the preview."
 				""
-				"{ftbquests.chapter.building_shop.quest10.description4}"
+				"&6Scroll Wheel&r can be used to position more precisely."
 			]
 			icon: "minecraft:spruce_door"
 			id: "049EB48B999881A3"
 			size: 2.0d
 			tasks: [{
 				id: "2584D5E401EEFB26"
-				title: "{ftbquests.chapter.building_shop.quest10.task_2703520851590839078.title}"
+				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest10.title}"
+			title: "Building Shop"
 			x: -10.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest11.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_prismarine.png width:198 height:154 align:center}"]
 			icon: "quark:prismarine_chest"
 			id: "71B7C3D4C9EC4CAC"
 			min_required_tasks: 3
@@ -559,7 +559,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 23 blocks wide, 29 blocks deep, 13 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -580,7 +580,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest11.title}"
+			title: "Prismarine Deluxe Barn"
 			x: -15.0d
 			y: -1.0d
 		}
@@ -588,9 +588,9 @@
 			can_repeat: false
 			dependencies: ["049EB48B999881A3"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest12.description1}"
+				"Deluxe Barns are larger, grander versions of barns, with seperate sections to divide up animals."
 				""
-				"{ftbquests.chapter.building_shop.quest12.description2}"
+				"It includes 4 &6Feeding Troughs&r to cover the area of the buildings."
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -599,10 +599,10 @@
 			size: 1.5d
 			tasks: [{
 				id: "441DDFCE3589E529"
-				title: "{ftbquests.chapter.building_shop.quest12.task_4908325245658195241.title}"
+				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest12.title}"
+			title: "Deluxe Barns"
 			x: -14.0d
 			y: -3.5d
 		}
@@ -610,9 +610,9 @@
 			can_repeat: false
 			dependencies: ["049EB48B999881A3"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest13.description1}"
+				"Farmhouses are the main housing of your farm."
 				""
-				"{ftbquests.chapter.building_shop.quest13.description2}"
+				"You can put anything in there really, but you should at least have a bed."
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -621,16 +621,16 @@
 			size: 1.5d
 			tasks: [{
 				id: "7E975B5359DCAEA1"
-				title: "{ftbquests.chapter.building_shop.quest13.task_9121859983810277025.title}"
+				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest13.title}"
+			title: "Farmhouses"
 			x: -10.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest14.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_tudor.png width:221 height:183 align:center}"]
 			icon: "minecraft:chest"
 			id: "0DE08377D5510577"
 			min_required_tasks: 3
@@ -669,7 +669,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest14.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest15.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -690,13 +690,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest14.title}"
+			title: "Tudor Farmhouse"
 			x: -11.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest15.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_siberian.png width:221 height:183 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "6493A6EC5C197458"
 			min_required_tasks: 3
@@ -735,7 +735,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest15.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest16.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -756,13 +756,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest15.title}"
+			title: "Siberian Farmhouse"
 			x: -9.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest16.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_siberian.png width:221 height:183 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "07BB9D445D97EBF5"
 			min_required_tasks: 3
@@ -801,7 +801,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest16.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -826,13 +826,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest16.title}"
+			title: "Siberian Shed"
 			x: -5.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest17.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_siberian.png width:221 height:183 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "35740442BFA1EBB5"
 			min_required_tasks: 3
@@ -871,7 +871,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest17.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest18.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -896,13 +896,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest17.title}"
+			title: "Siberian Barn"
 			x: -13.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest18.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_prismarine.png width:198 height:154 align:center}"]
 			icon: "quark:prismarine_chest"
 			id: "094C6DED5CE8D9E5"
 			min_required_tasks: 3
@@ -940,7 +940,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest18.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 11 blocks wide, 17 blocks deep, 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -965,13 +965,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest18.title}"
+			title: "Prismarine Shed"
 			x: -7.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest19.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_alpine.png width:198 height:154 align:center}"]
 			icon: "meadow:shelf"
 			id: "28A1164FD04782DB"
 			min_required_tasks: 3
@@ -1009,7 +1009,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 17 blocks deep, 25 blocks wide, and 19 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -1030,13 +1030,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest19.title}"
+			title: "Alpine Farmhouse"
 			x: -10.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest20.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_prismarine.png width:198 height:154 align:center}"]
 			icon: "quark:prismarine_chest"
 			id: "7080056E1C1CBCE9"
 			min_required_tasks: 3
@@ -1074,7 +1074,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 13 blocks wide, 15 blocks deep, 19 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1099,13 +1099,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest20.title}"
+			title: "Prismarine Barn"
 			x: -15.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest21.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_prismarine.png width:198 height:154 align:center}"]
 			icon: "quark:prismarine_chest"
 			id: "2FBDE6A8B7ABE074"
 			min_required_tasks: 3
@@ -1143,7 +1143,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 20 blocks wide, 22 blocks deep, 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1164,13 +1164,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest21.title}"
+			title: "Prismarine Large Shed"
 			x: -7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest22.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_siberian.png width:221 height:183 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "5197C4847648B6A8"
 			min_required_tasks: 3
@@ -1209,7 +1209,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest23.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -1230,13 +1230,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest22.title}"
+			title: "Siberian Large Shed"
 			x: -5.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest23.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_cherry.png width:221 height:183 align:center}"]
 			icon: "quark:cherry_chest"
 			id: "0FB188BA0CE07CC6"
 			min_required_tasks: 3
@@ -1275,7 +1275,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest23.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest24.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -1296,13 +1296,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest23.title}"
+			title: "Cherry Farmhouse"
 			x: -10.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest24.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_siberian.png width:221 height:183 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "4B66E59F25F6CF77"
 			min_required_tasks: 3
@@ -1341,7 +1341,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest24.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest25.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1362,13 +1362,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest24.title}"
+			title: "Siberian Deluxe Barn"
 			x: -13.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest25.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_cherry.png width:221 height:183 align:center}"]
 			icon: "quark:cherry_chest"
 			id: "46B41FB9B429E374"
 			min_required_tasks: 3
@@ -1407,7 +1407,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest25.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest26.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1428,13 +1428,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest25.title}"
+			title: "Cherry Deluxe Barn"
 			x: -14.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest26.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn.png width:221 height:183 align:center}"]
 			icon: "minecraft:chest"
 			id: "4029ADC0C59A181D"
 			min_required_tasks: 3
@@ -1473,7 +1473,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest26.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest27.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1494,13 +1494,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest26.title}"
+			title: "Deluxe Barn"
 			x: -15.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest27.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_alpine.png width:198 height:154 align:center}"]
 			icon: "meadow:shelf"
 			id: "1B13E51438458C85"
 			min_required_tasks: 3
@@ -1538,7 +1538,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest27.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 19 blocks deep, 15 blocks wide, and 10 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1563,13 +1563,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest27.title}"
+			title: "Alpine Barn"
 			x: -14.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest28.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_entrana.png width:221 height:183 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "1EE50E55155925ED"
 			min_required_tasks: 3
@@ -1608,7 +1608,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest28.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest21.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -1633,13 +1633,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest28.title}"
+			title: "Entrana Barn"
 			x: -13.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest29.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_alpine.png width:198 height:154 align:center}"]
 			icon: "meadow:shelf"
 			id: "487A09BA84C203C5"
 			min_required_tasks: 3
@@ -1677,7 +1677,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest29.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 25 blocks deep, 21 blocks wide, and 12 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -1698,13 +1698,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest29.title}"
+			title: "Alpine Deluxe Barn"
 			x: -14.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest30.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_entrana.png width:221 height:183 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "1B18A02B9B3EF71A"
 			min_required_tasks: 3
@@ -1742,7 +1742,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest30.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest11.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1763,13 +1763,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest30.title}"
+			title: "Entrana Deluxe Barn"
 			x: -13.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest31.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_entrana.png width:221 height:183 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "5281409C93ABC5AB"
 			min_required_tasks: 3
@@ -1808,7 +1808,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest31.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest20.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -1829,13 +1829,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest31.title}"
+			title: "Entrana Farmhouse"
 			x: -9.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest32.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_prismarine.png width:198 height:154 align:center}"]
 			icon: "quark:prismarine_chest"
 			id: "01543A85C9957430"
 			min_required_tasks: 3
@@ -1873,7 +1873,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest32.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 19 blocks wide, 20 blocks deep, 15 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -1894,13 +1894,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest32.title}"
+			title: "Prismarine Farmhouse"
 			x: -11.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest33.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_alpine.png width:198 height:154 align:center}"]
 			icon: "meadow:shelf"
 			id: "36B8DAFE6620E7C6"
 			min_required_tasks: 3
@@ -1938,7 +1938,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest33.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 19 blocks deep, 15 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1963,13 +1963,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest33.title}"
+			title: "Alpine Shed"
 			x: -6.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest34.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_entrana.png width:221 height:183 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "5C1AE4AC1EC670F8"
 			min_required_tasks: 3
@@ -2008,7 +2008,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest34.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2033,13 +2033,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest34.title}"
+			title: "Entrana Shed"
 			x: -5.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest35.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_alpine.png width:198 height:154 align:center}"]
 			icon: "meadow:shelf"
 			id: "1FD402CC4C58E58D"
 			min_required_tasks: 3
@@ -2077,7 +2077,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest35.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 23 blocks deep, 22 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2098,13 +2098,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest35.title}"
+			title: "Alpine Large Shed"
 			x: -6.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest36.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_entrana.png width:221 height:183 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "118DEF3CA6FB5713"
 			min_required_tasks: 3
@@ -2143,7 +2143,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest36.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest22.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -2164,7 +2164,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest36.title}"
+			title: "Entrana Large Shed"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -2172,9 +2172,9 @@
 			can_repeat: false
 			dependencies: ["049EB48B999881A3"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest37.description1}"
+				"Coops are small cozy homes for all types of egg-laying animals."
 				""
-				"{ftbquests.chapter.building_shop.quest37.description2}"
+				"One &6Feeding Trough&r is included that covers the entire working area of the Coop"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -2183,16 +2183,16 @@
 			size: 1.5d
 			tasks: [{
 				id: "62A5BE0503E59BE6"
-				title: "{ftbquests.chapter.building_shop.quest37.task_7108296515623689190.title}"
+				title: "Understood"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest37.title}"
+			title: "Coops"
 			x: -10.0d
 			y: -12.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest38.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop.png width:198 height:168 align:center}"]
 			icon: "minecraft:chest"
 			id: "26786C93CF7A75C3"
 			min_required_tasks: 3
@@ -2231,7 +2231,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest38.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 14 blocks deep, 9 blocks wide, and 10 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2256,13 +2256,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest38.title}"
+			title: "Coop"
 			x: -11.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest39.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_cherry.png width:198 height:178 align:center}"]
 			icon: "quark:cherry_chest"
 			id: "674C3D7DFF93154F"
 			min_required_tasks: 3
@@ -2301,7 +2301,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest39.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 12 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2326,13 +2326,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest39.title}"
+			title: "Cherry Coop"
 			x: -10.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest40.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_siberian.png width:198 height:178 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "2705D27735C4858B"
 			min_required_tasks: 3
@@ -2371,7 +2371,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest40.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 10 blocks deep, 12 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2396,13 +2396,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest40.title}"
+			title: "Siberian Coop"
 			x: -9.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest41.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_prismarine.png width:198 height:178 align:center}"]
 			icon: "quark:prismarine_chest"
 			id: "24F24D2941BCF17C"
 			min_required_tasks: 3
@@ -2440,7 +2440,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest41.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 14 blocks deep, 13 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2465,13 +2465,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest41.title}"
+			title: "Prismarine Coop"
 			x: -11.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest42.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_alpine.png width:198 height:174 align:center}"]
 			icon: "meadow:shelf"
 			id: "03C9745F9E9D8B24"
 			min_required_tasks: 3
@@ -2509,7 +2509,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest42.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 19 blocks deep, 15 blocks wide, and 13 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2534,13 +2534,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest42.title}"
+			title: "Alpine Coop"
 			x: -10.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest43.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_entrana.png width:198 height:178 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "517BDCBA749E1F0F"
 			min_required_tasks: 3
@@ -2579,7 +2579,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest43.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 11 blocks deep, 14 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2604,13 +2604,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest43.title}"
+			title: "Entrana Coop"
 			x: -9.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest44.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_mason.png width:198 height:174 align:center}"]
 			icon: "minecraft:bricks"
 			id: "69490758ABE15175"
 			min_required_tasks: 3
@@ -2648,7 +2648,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest44.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 17 blocks wide, 15 blocks deep, 10 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2673,13 +2673,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest44.title}"
+			title: "Mason Shed"
 			x: -6.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest45.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_mason.png width:198 height:154 align:center}"]
 			icon: "minecraft:bricks"
 			id: "5563F1AAEE97AC72"
 			min_required_tasks: 3
@@ -2717,7 +2717,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest45.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 19 blocks wide, 26 blocks deep, 21 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2738,13 +2738,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest45.title}"
+			title: "Mason Large Shed"
 			x: -6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest46.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_mason.png width:198 height:178 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
@@ -2786,7 +2786,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest46.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 17 blocks wide, 10 blocks deep, 10 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2811,13 +2811,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest46.title}"
+			title: "Mason Coop"
 			x: -10.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest47.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_mason.png width:198 height:184 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
@@ -2859,7 +2859,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest47.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 22 blocks wide, 15 blocks deep, 10 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2884,13 +2884,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest47.title}"
+			title: "Mason Barn"
 			x: -14.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest48.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_mason.png width:198 height:174 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
@@ -2932,7 +2932,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest48.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 27 blocks wide, 23 blocks deep, 14 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -2953,13 +2953,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest48.title}"
+			title: "Mason Deluxe Barn"
 			x: -14.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest49.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_mason.png width:198 height:174 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
@@ -3001,7 +3001,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest49.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 27 blocks wide, 23 blocks deep, 15 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -3022,13 +3022,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest49.title}"
+			title: "Mason Farmhouse"
 			x: -10.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest50.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_vibrantown.png width:198 height:198 align:center}"]
 			icon: "quark:cyan_framed_glass"
 			id: "6FA681B69F95DD3D"
 			min_required_tasks: 3
@@ -3066,7 +3066,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest50.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 14 blocks deep, 14 blocks wide, and 8 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3091,13 +3091,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest50.title}"
+			title: "Vibrantown Barn"
 			x: -13.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest51.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_vibrantown.png width:198 height:198 align:center}"]
 			icon: "quark:cyan_framed_glass"
 			id: "38E4027733F17671"
 			min_required_tasks: 3
@@ -3135,7 +3135,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest51.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 10 blocks wide, 10 blocks deep, 7 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -3160,13 +3160,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest51.title}"
+			title: "Vibrantown Coop"
 			x: -9.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest52.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_vibrantown.png width:198 height:198 align:center}"]
 			icon: "quark:cyan_framed_glass"
 			id: "47F3725020E30F73"
 			min_required_tasks: 3
@@ -3204,7 +3204,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest52.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 12 blocks wide, 12 blocks deep, 8 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3229,13 +3229,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest52.title}"
+			title: "Vibrantown Shed"
 			x: -5.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest53.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_vibrantown.png width:198 height:198 align:center}"]
 			icon: "quark:cyan_framed_glass"
 			id: "053FDFA0E3AF728B"
 			min_required_tasks: 3
@@ -3273,7 +3273,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest53.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 15 blocks wide, 17 blocks deep, 9 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3294,13 +3294,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest53.title}"
+			title: "Vibrantown Large Shed"
 			x: -5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest54.image0}"]
+			description: ["{image:society:textures/gui/buildings/house_vibrantown.png width:198 height:198 align:center}"]
 			icon: "quark:cyan_framed_glass"
 			id: "5AC27B3010B9AB76"
 			min_required_tasks: 3
@@ -3338,7 +3338,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest54.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 15 blocks wide, 15 blocks deep, 16 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -3359,13 +3359,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest54.title}"
+			title: "Vibrantown Farmhouse"
 			x: -9.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest55.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_vibrantown.png width:198 height:198 align:center}"]
 			icon: "quark:cyan_framed_glass"
 			id: "3C3C7DFB42B72A2F"
 			min_required_tasks: 3
@@ -3403,7 +3403,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest55.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 20 blocks wide, 20 blocks deep, 10 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -3424,13 +3424,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest55.title}"
+			title: "Vibrantown Deluxe Barn"
 			x: -13.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest56.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_bavarian.png width:198 height:198 align:center}"]
 			icon: "minecraft:deepslate_bricks"
 			id: "3D75CA25CE21493A"
 			min_required_tasks: 3
@@ -3468,7 +3468,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest56.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 16 blocks wide, 17 blocks deep, 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3493,13 +3493,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest56.title}"
+			title: "Bavarian Barn"
 			x: -15.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest57.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_bamboo.png width:198 height:198 align:center}"]
 			icon: "quark:vertical_bamboo_planks"
 			id: "761D03447DFE449F"
 			min_required_tasks: 3
@@ -3537,7 +3537,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest57.subtitle}"
+			subtitle: "Designed by &6aviahime&r - 13 blocks wide, 14 blocks deep, 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3562,13 +3562,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest57.title}"
+			title: "Bamboo Barn"
 			x: -14.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest58.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_bavarian.png width:198 height:198 align:center}"]
 			icon: "minecraft:deepslate_bricks"
 			id: "660475427DB244F2"
 			min_required_tasks: 3
@@ -3606,7 +3606,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest58.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 17 blocks wide, 11 blocks deep, 12 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -3631,13 +3631,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest58.title}"
+			title: "Bavarian Coop"
 			x: -11.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest59.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_bamboo.png width:198 height:198 align:center}"]
 			icon: "quark:vertical_bamboo_planks"
 			id: "06DA8770E428E29F"
 			min_required_tasks: 3
@@ -3675,7 +3675,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest59.subtitle}"
+			subtitle: "Designed by &6aviahime&r - 14 blocks wide, 12 blocks deep, 10 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -3700,13 +3700,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest59.title}"
+			title: "Bamboo Coop"
 			x: -10.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest60.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_bavarian.png width:198 height:198 align:center}"]
 			icon: "minecraft:deepslate_bricks"
 			id: "0857CE4957BA5627"
 			min_required_tasks: 3
@@ -3744,7 +3744,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest60.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 19 blocks wide, 15 blocks deep, 12 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3769,13 +3769,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest60.title}"
+			title: "Bavarian Shed"
 			x: -7.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest61.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_bavarian.png width:198 height:198 align:center}"]
 			icon: "minecraft:deepslate_bricks"
 			id: "19BE79555053EA26"
 			min_required_tasks: 3
@@ -3813,7 +3813,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest61.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 29 blocks wide, 25 blocks deep, 16 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3834,13 +3834,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest61.title}"
+			title: "Bavarian Large Shed"
 			x: -7.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest62.image0}"]
+			description: ["{image:society:textures/gui/buildings/home_bavarian.png width:198 height:198 align:center}"]
 			icon: "minecraft:deepslate_bricks"
 			id: "053E02ED2AC4853A"
 			min_required_tasks: 3
@@ -3878,7 +3878,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest62.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 28 blocks wide, 27 blocks deep, 30 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -3899,13 +3899,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest62.title}"
+			title: "Bavarian Farmhouse"
 			x: -11.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest63.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_bavarian.png width:198 height:198 align:center}"]
 			icon: "minecraft:deepslate_bricks"
 			id: "06032CEB13B1D93C"
 			min_required_tasks: 3
@@ -3943,7 +3943,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest63.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 27 blocks wide, 28 blocks deep, 18 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -3964,13 +3964,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest63.title}"
+			title: "Bavarian Deluxe Barn"
 			x: -15.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest64.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_bamboo.png width:198 height:198 align:center}"]
 			icon: "quark:vertical_bamboo_planks"
 			id: "5CC19C34EF18C98D"
 			min_required_tasks: 3
@@ -4008,7 +4008,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest64.subtitle}"
+			subtitle: "Designed by &6aviahime&r - 24 blocks wide, 25 blocks deep, 13 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -4029,13 +4029,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest64.title}"
+			title: "Bamboo Deluxe Barn"
 			x: -14.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest65.image0}"]
+			description: ["{image:society:textures/gui/buildings/home_bamboo.png width:198 height:198 align:center}"]
 			icon: "quark:vertical_bamboo_planks"
 			id: "108B1FD13737EC05"
 			min_required_tasks: 3
@@ -4073,7 +4073,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest65.subtitle}"
+			subtitle: "Designed by &6aviahime&r - 26 blocks wide, 19 blocks deep, 16 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -4094,13 +4094,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest65.title}"
+			title: "Bamboo Farmhouse"
 			x: -10.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest66.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_bamboo.png width:198 height:198 align:center}"]
 			icon: "quark:vertical_bamboo_planks"
 			id: "6A7A71EC084AF0BB"
 			min_required_tasks: 3
@@ -4138,7 +4138,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest66.subtitle}"
+			subtitle: "Designed by &6aviahime&r - 27 blocks wide, 23 blocks deep, 12 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -4159,13 +4159,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest66.title}"
+			title: "Bamboo Large Shed"
 			x: -6.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest67.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_bamboo.png width:198 height:198 align:center}"]
 			icon: "quark:vertical_bamboo_planks"
 			id: "3C315C59E797FDCB"
 			min_required_tasks: 3
@@ -4203,7 +4203,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest67.subtitle}"
+			subtitle: "Designed by &6aviahime&r - 12 blocks wide, 14 blocks deep, 8 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -4228,13 +4228,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest67.title}"
+			title: "Bamboo Shed"
 			x: -6.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest68.image0}"]
+			description: ["{image:society:textures/gui/buildings/barn_arid.png width:198 height:198 align:center}"]
 			icon: "atmospheric:chiseled_arid_sandstone"
 			id: "4D3D8CD6FFFBBAF6"
 			min_required_tasks: 3
@@ -4272,7 +4272,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest68.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 17 blocks wide, 17 blocks deep, 6 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -4297,13 +4297,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest68.title}"
+			title: "Arid Barn"
 			x: -13.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest69.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_arid.png width:198 height:198 align:center}"]
 			icon: "atmospheric:chiseled_arid_sandstone"
 			id: "2C51358614E10FE9"
 			min_required_tasks: 3
@@ -4341,7 +4341,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest69.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 14 blocks wide, 13 blocks deep, 5 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -4366,13 +4366,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest69.title}"
+			title: "Arid Coop"
 			x: -9.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest70.image0}"]
+			description: ["{image:society:textures/gui/buildings/shed_arid.png width:198 height:198 align:center}"]
 			icon: "atmospheric:chiseled_arid_sandstone"
 			id: "4B66EF0879248ABE"
 			min_required_tasks: 3
@@ -4410,7 +4410,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest70.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 13 blocks wide, 19 blocks deep, 6 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -4435,13 +4435,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest70.title}"
+			title: "Arid Shed"
 			x: -5.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest71.image0}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_arid.png width:198 height:198 align:center}"]
 			icon: "atmospheric:chiseled_arid_sandstone"
 			id: "49BFE2655BB149AA"
 			min_required_tasks: 3
@@ -4479,7 +4479,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest71.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 29 blocks wide, 17 blocks deep, 23 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -4500,13 +4500,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest71.title}"
+			title: "Arid Large Shed"
 			x: -5.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest72.image0}"]
+			description: ["{image:society:textures/gui/buildings/home_arid.png width:198 height:198 align:center}"]
 			icon: "atmospheric:chiseled_arid_sandstone"
 			id: "24B098107A13D2F1"
 			min_required_tasks: 3
@@ -4544,7 +4544,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest72.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 27 blocks wide, 13 blocks deep, 25 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -4565,13 +4565,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest72.title}"
+			title: "Arid Farmhouse"
 			x: -9.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest73.image0}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_arid.png width:198 height:198 align:center}"]
 			icon: "atmospheric:chiseled_arid_sandstone"
 			id: "091D496B90F43A3C"
 			min_required_tasks: 3
@@ -4609,7 +4609,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest73.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 23 blocks wide, 23 blocks deep, 11 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -4630,10 +4630,10 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest73.title}"
+			title: "Arid Deluxe Barn"
 			x: -13.5d
 			y: 1.0d
 		}
 	]
-	title: "{ftbquests.chapter.building_shop.title}"
+	title: "Building Shop"
 }

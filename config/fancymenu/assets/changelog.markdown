@@ -1,6 +1,6 @@
 ^^^
 ## The Sun Golems
-### v3.4.0
+### v3.4.1
 ^^^
 --- 
 - Added Sun Golems with a work in progress Creature chapter of the questbook
@@ -51,3 +51,8 @@
 - Fixed plushie related console spam
 - Fixed Cinnamon Coffee recipe
 - Fixed exploits 
+
+## 3.4.1
+- Fixed crash with building shop
+- Fixed farmhouse quest not having all the new farmhouses
+- Fixed Fermentation Barrel recipe
