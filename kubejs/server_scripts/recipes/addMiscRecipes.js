@@ -246,6 +246,7 @@ ServerEvents.recipes((e) => {
     I: "minecraft:iron_block",
     f: "society:fire_quartz",
     o: "society:oak_resin",
+    F: "meadow:fire_log",
   });
   e.shaped("herbalbrews:cauldron", [" C ", "fcf", " f "], {
     c: "minecraft:cauldron",
