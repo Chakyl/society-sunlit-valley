@@ -35,7 +35,7 @@
 				type: "dimension"
 			}]
 			x: -1.5d
-			y: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
@@ -56,7 +56,7 @@
 				item: "society:fire_quartz"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -88,13 +88,15 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: 0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
 			description: [
 				"In order to channel the power of lightning, a large amount of &6Blaze Rods&r will be needed. "
+				""
+				"They can be found in the traditional way by killing Blazes, but can also be found embedded in some ores."
 				""
 				"Aim for at least &67&r of them."
 			]
@@ -111,17 +113,20 @@
 				type: "item"
 			}]
 			title: "Harnessing Fire"
-			x: 1.0d
-			y: 1.0d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["41FD632FA78AFB49"]
+			dependencies: [
+				"41FD632FA78AFB49"
+				"0F176FBF01ABB774"
+			]
 			description: [
 				"&6Charging Rods&r take lightning from storms and create Batteries, used in crafting items that use electricity."
 				""
 				"They don't work in Winter, as no stormy weather occurs."
 			]
-			icon: "society:battery"
+			icon: "society:charging_rod"
 			id: "0C7D8F89BCF645AA"
 			rewards: [{
 				count: 4
@@ -129,24 +134,17 @@
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "433682C86A24FC4C"
-					item: "society:charging_rod"
-					type: "item"
-				}
-				{
-					id: "2FAA09F38056013F"
-					item: "society:battery"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "433682C86A24FC4C"
+				item: "society:charging_rod"
+				type: "item"
+			}]
 			title: "Capturing Lightning"
-			x: 3.0d
-			y: 2.5d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["0C7D8F89BCF645AA"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"Batteries are needed to craft the &6Espresso Machine&r, which lets you make &6Espresso&r and &6Steamed Milk&r."
 				""
@@ -163,30 +161,8 @@
 				item: "society:espresso_machine"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["0C7D8F89BCF645AA"]
-			description: [
-				"Expensive and slow, the &6Crystalarium&r will duplicate any gem or mineral placed inside. The amount of days to complete will depend on the inserted item."
-				""
-				"They should be your first goal if you dislike mining for crafting minerals."
-			]
-			id: "6EBF139D33C95729"
-			rewards: [{
-				id: "44F0B36D0FC6AF4C"
-				item: "society:mining_monthly"
-				type: "item"
-			}]
-			tasks: [{
-				id: "473C2896879CF42A"
-				item: "society:crystalarium"
-				type: "item"
-			}]
-			title: "Growing Crystals"
-			x: 4.5d
-			y: 2.5d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -233,20 +209,15 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"18EB59F2591BAD51"
-				"3492FA6A5DFCC390"
-				"25569C0D687E6FA5"
-				"0F176FBF01ABB774"
-			]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"By now, your farm should have enough tools in order to make a steady income. Your next step should be unlocking the Skull Cavern."
 				""
-				"{ \"text\": \"Complete the Vault (Click Me)\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4B9634D942E590AB\" } }"
+				"[\"\",{\"underlined\":1,\"text\":\"Complete the Vault (Click Me)\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4B9634D942E590AB\"}}]"
 				""
 				"The rewards on their own will make up for the cost."
 			]
@@ -264,8 +235,8 @@
 				type: "item"
 			}]
 			title: "Making Real Money"
-			x: 5.0d
-			y: -1.0d
+			x: 9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -277,16 +248,16 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "6A39934F61EB59BF"
-				item: "society:gold_sprinkler"
+				id: "6ED7E64530635F03"
+				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
 			title: "Gold Sprinklers"
-			x: 3.0d
-			y: -2.0d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["0C7D8F89BCF645AA"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: ["&6Diamond Sprinklers&r are far more expensive than the previous tier, but work in a significant area."]
 			id: "2746CBE8BDA47E40"
 			rewards: [{
@@ -295,58 +266,28 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "15363B698E92450C"
-				item: "society:diamond_sprinkler"
+				id: "5B08BD5F101D61C1"
+				item: "dew_drop_farmland_growth:diamond_sprinkler"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.5d
+			x: 8.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"The &6Mincer&r is a cooking implement for prepping ingredients, but has a secondary use: &6Chunkroderite&r. "
+				"The &6Mincer&r is a cooking implement for finely grounding certain items. "
 				""
-				"Any geode mineral can be ground up, with the amount of &6Chunkroderite&r increasing with the value of the mineral."
+				"It is a necessary tool for when chopping can't quite get the job done."
 			]
 			id: "711AC0F5208316D5"
-			rewards: [{
-				count: 32
-				id: "7BC5A2F167579D9B"
-				item: "moreminecarts:chunkrodite"
-				type: "item"
-			}]
 			tasks: [{
 				id: "58A708BD47826C8B"
 				item: "farm_and_charm:mincer"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["711AC0F5208316D5"]
-			description: [
-				"The primary use for &6Chunkroderite&r is fuel for the &6Fueled Chunk Loader&r. It force loads a 3x3 chunk area, while allowing crops to grow unlike any other chunk loaders."
-				""
-				"Outside of &6Chunkroderite,&r gems such as &6Diamonds&r and &6Emeralds&r can be used to add time."
-				""
-				"This can be used to chunkload an area without the need for claiming a chunk."
-			]
-			id: "69DE075921E80EF1"
-			rewards: [{
-				count: 4
-				id: "74DD18FC9F376510"
-				item: "moreminecarts:chunkrodite_block"
-				type: "item"
-			}]
-			tasks: [{
-				id: "69BABDD91E8AB8FE"
-				item: "moreminecarts:chunk_loader"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -4.0d
+			x: 3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
@@ -381,172 +322,17 @@
 				type: "item"
 			}]
 			title: "The Skull Cavern"
-			x: 7.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: ["&6Jade&r can be found from &6Omni Geode Nodes&r. It's an expensive mineral used for a handful of useful crafts."]
-			id: "3543D99A908C655B"
-			rewards: [{
-				id: "5DB852C7314379CE"
-				item: "society:jade"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5394FA5C7000D4EB"
-				item: "society:jade"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"&dPrismatic Shards&r are the ultimate form of power on Sunlit Valley."
-				""
-				"They craft into many of the most powerful items, and have various hidden uses. "
-			]
-			id: "401FD6FD108EA784"
-			rewards: [{
-				count: 16
-				id: "0E8493D5BB6AC3C3"
-				item: "snowyspirit:glow_lights_prismatic"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "2063797E8B7E358F"
-				item: "society:prismatic_shard"
-				type: "item"
-			}]
-			x: 12.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3543D99A908C655B"]
-			description: [
-				"The &6Aging Cask&r ages items over large periods of time, multiplying their sell value by &64&r."
-				""
-				"Wine will take take &610&r days to age, while other items like Beer, Whisky, and Cheese take a shorter amount of time."
-			]
-			id: "220D97C6133AB5F6"
-			rewards: [{
-				id: "3ACD476978BFB927"
-				item: "society:jade"
-				type: "item"
-			}]
-			tasks: [{
-				id: "234D2E77525E7C7C"
-				item: "society:aging_cask"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"Mining ore in the Skull Cavern has a chance to drop &6Omni Geodes&r."
-				""
-				"They can be extracted for any tier of mineral, and have a chance to drop &6Iridium Scrap&r and &dPrismatic Shards&r when extracted."
-			]
-			id: "4EE2AD7C7BA3A6DE"
-			rewards: [{
-				count: 4
-				id: "216F4F479C9800AC"
-				item: "society:omni_geode"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5E3EF94E12130E88"
-				item: "society:omni_geode"
-				type: "item"
-			}]
-			x: 9.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"3543D99A908C655B"
-				"56BEF80EE652FAE0"
-			]
-			description: ["The final tier of Sprinkler, the &6Iridium Sprinkler&r has the highest range out of any."]
-			id: "3CC16EE6106EAE95"
-			rewards: [{
-				id: "5F14699AAD857780"
-				item: "minecraft:netherite_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1CA0791DB6D735DE"
-				item: "society:netherite_sprinkler"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"&6Trial Chambers&r spawn sparsely in the Skull Cavern. "
-				""
-				"&dRelics&r can drop from both tiers of vaults, and they are one of the few ways of obtaining them."
-				""
-				"Having the &6Bad Omen&r effect increases the difficulty of the chambers but greatly increases the rewards."
-			]
-			id: "3827930046BC7657"
-			rewards: [
-				{
-					id: "703739C800C78AF9"
-					item: "society:relic_trove"
-					type: "item"
-				}
-				{
-					id: "4A794E8DA7FB678A"
-					item: "trials:ominous_bottle"
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: "trials:trial_key_ominous"
-				id: "48933F7445A8905E"
-				structure: "trials:trials_chambers"
-				title: "Find a Trial Chamber"
-				type: "structure"
-			}]
-			x: 8.5d
+			x: 12.25d
 			y: 0.5d
 		}
 		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"The &6Master Cultivator&r villager can be made using a special cooking pot crafted from a &dPrismatic Shard&r."
-				""
-				"Higher value crops are sold by this villager, as well as expensive fruit trees."
-			]
-			id: "28F873731A6C967B"
-			rewards: [{
-				id: "6C3556C58F26DD67"
-				item: "candlelight:cooking_pot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "606908768A0FDC23"
-				item: "candlelight:cooking_pot"
-				type: "item"
-			}]
-			title: "Advanced Crops"
-			x: 14.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0C7D8F89BCF645AA"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"The &6Basic Shipping Bin&r is too simple for mass selling goods as your farm grows."
 				""
 				"The &6Smart Shipping Bin&r fixes many issues with not being able to sell goods, such as when there's not enough space for coins. It sells every 5 minutes."
+				""
+				"It will deposit coins directly into your bank account when sold. If you don't have one or its at the limit, it will shoot them out."
 				""
 				"A &6Basket&r can be placed underneath the output face to capture coins."
 			]
@@ -562,8 +348,8 @@
 				type: "item"
 			}]
 			title: "Smarter Selling"
-			x: 2.0d
-			y: 3.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["572D70993411EA53"]
@@ -583,8 +369,8 @@
 				item: "farmersdelight:rich_soil"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -604,8 +390,8 @@
 				item: "vintagedelight:fermenting_jar"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["79C92AEDE15E7E6D"]
@@ -621,8 +407,8 @@
 				item: "vintagedelight:organic_mash"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["711AC0F5208316D5"]
@@ -640,8 +426,8 @@
 				item: "farm_and_charm:fertilizer"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
@@ -658,8 +444,8 @@
 				item: "society:enriched_bone_meal"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -5.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
@@ -694,11 +480,11 @@
 				type: "item"
 			}]
 			title: "Advanced Ferilizers"
-			x: 2.5d
-			y: -5.5d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["0F176FBF01ABB774"]
+			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"The &6Dehydrator&r can be used to dry fruits or vegetables in &61&r day. Fast, but not as profitable as other means."
 				""
@@ -715,8 +501,8 @@
 				item: "society:dehydrator"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
@@ -740,11 +526,11 @@
 				type: "item"
 			}]
 			title: "Enchanter"
-			x: 5.0d
-			y: -2.5d
+			x: 10.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["44A512703C4A9990"]
+			dependencies: ["0F176FBF01ABB774"]
 			description: [
 				"High quality items can lead to a huge increase in profits, but it can make automation and storage a hassle."
 				""
@@ -763,15 +549,15 @@
 				type: "item"
 			}]
 			title: "Removing Quality"
-			x: 6.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
 			description: [
 				"During exploration you may have come across a &6Slime Heart&r. These are precious items that can be used to begin Slime Incubating!"
 				""
-				"To start, right click a &6Slime Incubator&r with the heart. Both can be purchased from a &6Shepherd&r as well."
+				"To start, right click a &6Slime Incubator&r with the heart."
 			]
 			icon: "splendid_slimes:slime_incubator"
 			id: "139B02AFBCBBF350"
@@ -793,11 +579,11 @@
 				}
 			]
 			title: "Slime Incubating"
-			x: 1.0d
-			y: 5.0d
+			x: 0.75d
+			y: 4.5d
 		}
 		{
-			dependencies: ["139B02AFBCBBF350"]
+			dependencies: ["07A551F04BB9A117"]
 			description: [
 				"Each &6Slime&r will drop a different type of &6Plort&r when fed a food in their diet. The humble &dSlimy Slimes&r will eat berries, but more advanced Slimes will have higher standards. You can tell a Slime's diet by hovering over it in world."
 				""
@@ -825,44 +611,11 @@
 				}
 			]
 			title: "Rippit!"
-			x: 5.5d
-			y: 5.0d
+			x: 8.75d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"139B02AFBCBBF350"
-				"0C7D8F89BCF645AA"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"Slimes cannot reproduce by breeding. Instead, their &6Plorts&r must be pressed using a &6Plort Press&r into another &6Slime Hearts&r."
-				""
-				"Hearts can also be combined to make new ones using the top and bottom slots."
-				""
-				"&oHearts are worth twice as much as their Plort!&r"
-			]
-			hide_dependency_lines: false
-			id: "01071E36A0370E13"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7F204D2D5D058583"
-				table_id: 2207679701817321554L
-				type: "random"
-			}]
-			tasks: [{
-				id: "4C4EAA7798622AAC"
-				item: "splendid_slimes:plort_press"
-				type: "item"
-			}]
-			title: "Pressit!"
-			x: 3.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"01071E36A0370E13"
-				"41029F073ADDDC2F"
-			]
+			dependencies: ["2C9C87690BD8E23B"]
 			description: [
 				"&6Corral Blocks&r keep your Slimes mostly safe, keeping them contained while allowing anything else to move in and out. "
 				""
@@ -880,17 +633,14 @@
 				item: "splendid_slimes:corral_block"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.0d
+			x: 3.25d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"01071E36A0370E13"
-				"5C9C7A5A88613109"
-			]
+			dependencies: ["2C9C87690BD8E23B"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Sllimes can be turned into a &6Largo&r by feeding a &6Plort&r of a breed to it!"
+				"Sllimes can be turned into a &6Largo&r by feeding a &6Plort&r of a different breed to it!"
 				""
 				"Largos inherit all the qualities of both slimes, dropping one plort of each kind."
 				""
@@ -904,8 +654,8 @@
 				type: "checkmark"
 			}]
 			title: "Largoit!"
-			x: 2.0d
-			y: 6.0d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			description: [
@@ -942,7 +692,7 @@
 			}]
 			title: "Slime Ranching"
 			x: -1.5d
-			y: 5.75d
+			y: 5.5d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
@@ -966,11 +716,11 @@
 				type: "item"
 			}]
 			title: "Slime Stealing"
-			x: 1.0d
-			y: 7.0d
+			x: 0.75d
+			y: 6.5d
 		}
 		{
-			dependencies: ["5C9C7A5A88613109"]
+			dependencies: ["747B28CA5F55AFA7"]
 			description: [
 				"Slimes' happiness depends on their hunger and living conditions. Every time they eat, their &6happiness&r will increase. If they're surrounded by similar types of Slimes, they'll get happier!"
 				""
@@ -988,6 +738,7 @@
 				}
 			}
 			id: "07A551F04BB9A117"
+			min_required_dependencies: 1
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0AF350DA4D7F6BE5"
@@ -1000,183 +751,8 @@
 				type: "checkmark"
 			}]
 			title: "Slime Happiness"
-			x: 3.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"As you dive deeper into the Skull Cavern, you might encounter something called &dSparkstone&r."
-				""
-				"It is a gem filled with intense energy that can be used to power advanced farming equipment for automation."
-			]
-			id: "70D15F67E3880A3A"
-			rewards: [{
-				id: "76B63061E794A610"
-				item: "numismatics:crown"
-				type: "item"
-			}]
-			tasks: [{
-				id: "706BDE404DFE02FE"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: [
-				"The &6Artisan Hopper&r is a machine powered by &dSparkstone&r that can automate collection from adjacent &6Artisan Machines&r!"
-				""
-				"Items placed in the inventory above it will automatically be inserted into nearby Artisan Machines that can take those items, no filtering needed!"
-				""
-				"It requires sparkstone in its inventory and an inventory below it to deposit items."
-			]
-			id: "3E4E14F5055B09B6"
-			rewards: [{
-				count: 8
-				id: "1640E07AB5324939"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			tasks: [{
-				id: "33EF40E93DD4F698"
-				item: "society:artisan_hopper"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: [
-				"The &6Auto-Grabber&r is a machine powered by &dSparkstone&r that can automate collection from husbandry farm animals!"
-				""
-				"Unlike Create Deployers, these devices use any Husbandry skills you might have unlocked, and animals don't lose happiness from harvesting!"
-				""
-				"It requires sparkstone in its inventory and an inventory below it to deposit items."
-			]
-			id: "445BDEFC4FE5919C"
-			rewards: [{
-				count: 8
-				id: "6530E89D258B5B94"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6D855019B3D7E539"
-				item: "society:auto_grabber"
-				type: "item"
-			}]
-			x: 8.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"The &6Exotic Trader&r villager's workstation can be crafted with a &dPrismatic Shard&r."
-				""
-				"It will trade various farm items for Machine upgrades. These upgrades add special effects when applied to the machine."
-				""
-				"There are also some handy utility trades for useful but annoying to obtain items, such as Wither Skeleton Skulls."
-			]
-			icon: "minecraft:fletching_table"
-			id: "7ECC14D99BC56382"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "782C8FCB6DABE4D5"
-				table_id: 6097669691163803424L
-				type: "choice"
-			}]
-			tasks: [
-				{
-					id: "3C94E045475D43B0"
-					item: "minecraft:fletching_table"
-					type: "item"
-				}
-				{
-					id: "4392ED87AF2BADD9"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "society:sea_biscut"
-								}
-								{
-									Count: 1b
-									id: "society:broken_clock"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_cog"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_roe"
-								}
-								{
-									Count: 1b
-									id: "society:infinity_worm"
-								}
-								{
-									Count: 1b
-									id: "society:frosted_tip"
-								}
-								{
-									Count: 1b
-									id: "society:inserter"
-								}
-								{
-									Count: 1b
-									id: "society:cordycep"
-								}
-								{
-									Count: 1b
-									id: "society:black_opal"
-								}
-								{
-									Count: 1b
-									id: "society:stone_hand"
-								}
-								{
-									Count: 1b
-									id: "society:tiny_gnome"
-								}
-							]
-						}
-					}
-					title: "Any Upgrade"
-					type: "item"
-				}
-			]
-			title: "Machine Upgrades"
-			x: 14.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: [
-				"The &6Fish Pond Basket&r is a machine powered by &dSparkstone&r that can automate collection from adjacent &6Fish Ponds&r!"
-				""
-				"It requires sparkstone in its inventory and an inventory below it to deposit items."
-			]
-			id: "4CD98E31EC569CC3"
-			rewards: [{
-				id: "645254E0E9308B72"
-				item: "society:sparkstone"
-				type: "item"
-			}]
-			tasks: [{
-				id: "209753824F6D75ED"
-				item: "society:fish_pond_basket"
-				type: "item"
-			}]
 			x: 6.5d
-			y: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
@@ -1197,37 +773,12 @@
 				item: "numismatics:neptunium_coin"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			title: "Higher Tiers"
+			x: 10.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"The final layer of the &6Skull Cavern&r holds two different biomes."
-				""
-				"One of them is the &6Umbra Barrens&r, a place you might find familiar from another world..."
-				""
-				"&oIf you haven't noticed there is no End in Sunlit Valley.&r"
-			]
-			id: "7E57003B7EB58B32"
-			rewards: [{
-				id: "439D3025D0A92A86"
-				item: "minecraft:dragon_egg"
-				type: "item"
-			}]
-			tasks: [{
-				biome: "society:umbra_barrens"
-				icon: "minecraft:end_stone"
-				id: "767C274777FE508C"
-				title: "Visit the Umbra Barrens"
-				type: "biome"
-			}]
-			title: "The Bottom of the Skull Cavern"
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["5C9C7A5A88613109"]
+			dependencies: ["07A551F04BB9A117"]
 			description: [
 				"Each &6Splendid Slime&r has different effects that may happen when they are unhappy or happy."
 				""
@@ -1251,53 +802,11 @@
 				type: "checkmark"
 			}]
 			title: "Slime Traits"
-			x: 2.25d
-			y: 8.0d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["70D15F67E3880A3A"]
-			description: ["Infused with the energy of &dSparkstone&r, the &6Cornucopia&r causes nearby fruit trees to drop their fruits in a large radius around you when used."]
-			id: "46221EDDD393A7FE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "324615FD9F97DC28"
-				table_id: 2467450565259284777L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "79C696A7467682E8"
-				item: "society:cornucopia"
-				type: "item"
-			}]
-			title: "Easier Fruit Tree Harvesting"
-			x: 8.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["3291A30C1D1B009D"]
-			description: [
-				"Mining Sandstone and lower types of &6Boulders&r in the Skull Cavern has a small chance to yield &6Iridium Scrap&r. The lower you dive, the higher the chance it drops."
-				""
-				"4 scrap can be combined with 4 &6Bismuth Ingots&r to make an &6Iridium Ingot&r."
-				""
-				"&oYou may even find Iridium Ore at the lowest levels...&r"
-			]
-			id: "56BEF80EE652FAE0"
-			rewards: [{
-				id: "1FD5DB86412B2B0E"
-				item: "minecraft:netherite_scrap"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0082721998C0DD38"
-				item: "minecraft:netherite_ingot"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5C9C7A5A88613109"]
+			dependencies: ["07A551F04BB9A117"]
 			description: [
 				"Each Slime breed has a favorite food. Feeding it to them will give them a big boost in happiness, while also causing them to produce &6double plorts&r!"
 				""
@@ -1316,8 +825,418 @@
 				type: "checkmark"
 			}]
 			title: "Favorite Foods :pink_heart:"
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			description: [
+				"As you wander around the world you might notice &6Butterflies&r and &6Moths&r flying around! "
+				""
+				"With a &6Catching Net&r, you can pick them up and collect each of the different kinds."
+				""
+				"While they will never be the most profitable part of your farm, building a sanctuary for these creatures will provide you with unique benefits."
+			]
+			id: "6F8709C925DE7237"
+			rewards: [{
+				id: "23B7515792CD7747"
+				item: {
+					Count: 1
+					id: "longwings:butterfly_handbook"
+					tag: { }
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Butterflies and Moths"
+			tasks: [{
+				id: "48EAD831424A0BC8"
+				item: {
+					Count: 1
+					id: "longwings:catching_net"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Catching Longwings"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6F8709C925DE7237"]
+			description: [
+				"Butterflies and Moths can be lured to your base using different types of brews!"
+				""
+				"You can right click on a &6Butterfly Drip-Lure&r to fill it. Different types of brews will attract different kinds."
+			]
+			icon: "longwings:butterfly_driplure"
+			id: "7ADD57C8AF4092B2"
+			rewards: [{
+				id: "7098A56E92FB337B"
+				item: "longwings:berry_butterfly_brew_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "22554590BBCA1DF0"
+					item: "longwings:butterfly_driplure"
+					type: "item"
+				}
+				{
+					id: "14EDDD83CB99C1B4"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "longwings:berry_butterfly_brew_bottle"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "longwings:apple_butterfly_brew_bottle"
+								}
+								{
+									Count: 1b
+									id: "longwings:melon_butterfly_brew_bottle"
+								}
+								{
+									Count: 1b
+									id: "longwings:melon_butterfly_brew_block"
+								}
+								{
+									Count: 1b
+									id: "longwings:apple_butterfly_brew_block"
+								}
+								{
+									Count: 1b
+									id: "longwings:berry_butterfly_brew_block"
+								}
+							]
+						}
+					}
+					title: "Any Brew"
+					type: "item"
+				}
+			]
+			title: "Tasty Luring"
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6F8709C925DE7237"]
+			description: ["&6Butterfly Feeders&r can be placed and filled with Sugar Water to strength butterflies as well as make them more trusting of nearby players."]
+			id: "1571D0424A7A34D1"
+			rewards: [{
+				id: "7BC53903BE8140F0"
+				item: "longwings:sugar_water_bowl"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75B8E4FE58AD10CB"
+				item: {
+					Count: 1
+					id: "longwings:butterfly_bowl_feeder"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6F8709C925DE7237"]
+			description: [
+				"The Butterfly \\& Moth handbook provides information on where to find every single variant that exists."
+				""
+				"The spawning of specific variants is determined by the current biome's &6Temperature&r and &6Humidity&r."
+				""
+				"It also acts as a way to view your collection outside of the quest book, though it needs to be in your inventory for every catch."
+			]
+			icon: {
+				Count: 1
+				id: "longwings:butterfly_handbook"
+				tag: { }
+			}
+			id: "4DC073ABF3D72467"
+			rewards: [{
+				id: "2E19FA6FA274E294"
+				item: "society:merino_wool"
+				type: "item"
+			}]
+			tasks: [{
+				id: "662E408F671C6556"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "The Handbook"
 			x: 1.0d
-			y: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6F8709C925DE7237"]
+			description: [
+				"Butterflies and Moths produce &6Butterfly Amber&r and &6Moth Pollen&r respectively."
+				""
+				"The rate is determined by two factors: how many other butterflies and moths are nearby (negatively), and the amount of unique flowers nearby (positively)."
+				""
+				"Flowers will very occasionally be eaten, requiring a little bit of work to maintain a lush garden of flowers."
+			]
+			icon: "society:butterfly_amber"
+			id: "3B6640956F047EC8"
+			rewards: [
+				{
+					count: 4
+					id: "7206E75A9309D986"
+					item: "society:bouquet_bag"
+					type: "item"
+				}
+				{
+					id: "3C273BC02EC38EE8"
+					item: "sophisticatedstorage:advanced_magnet_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "526CDEE7648DACB8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "society:moth_pollen"
+							}
+							{
+								Count: 1b
+								id: "society:butterfly_amber"
+							}
+						]
+					}
+				}
+				title: "Butterfly Amber or Moth Pollen"
+				type: "item"
+			}]
+			title: "The Butterfly Effect"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2C9C87690BD8E23B"]
+			description: [
+				"Slimes can be fed by tossing their food on the ground, or poviding a live mob for them to eat."
+				""
+				"This can be done in a more convenient way with the &6Slime Feeder&r, which feeds nearby Slimes with foods from their diet."
+				""
+				"Additionally, if a Slime has the \"Picky\" trait, the Slime Feeder will only feed the food item that won't make it angry."
+			]
+			id: "54E81642A0E67042"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "1DD372F2BF6522C8"
+				item: "splendid_slimes:slime_ticket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D4E38A68FEE0DC1"
+				item: "splendid_slimes:slime_feeder"
+				type: "item"
+			}]
+			title: "Feeding Slimes"
+			x: 3.25d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"5C9C7A5A88613109"
+				"139B02AFBCBBF350"
+			]
+			description: [
+				"Slimes can be fed in a few ways. The simplest of which is tossing an item they like to eat at them. For Slimes that only eat animals and monsters, you'll need to wrangle one into their area."
+				""
+				"After being fed, they'll drop a &6Plort&r! These can be sold, used to make more slimes, or processed into more valuable goods!"
+			]
+			id: "2C9C87690BD8E23B"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "79A4DD37EA638059"
+				item: "splendid_slimes:slime_candy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2933B9035E879D0D"
+				item: {
+					Count: 1
+					id: "splendid_slimes:plort"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "The Humble Plort"
+			x: 2.25d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0C7D8F89BCF645AA"]
+			id: "214BFF5CB710FFE2"
+			tasks: [{
+				id: "3E230604E4BD6C0A"
+				item: "society:battery"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["214BFF5CB710FFE2"]
+			description: [
+				"The &6Electricity Generator&r is capable of burning coal to power certain furniture devices."
+				""
+				"Most importantly, it poweres the &6Workbench&r, which can craft various furniture blocks that are otherwise difficult to obtain."
+				""
+				"You can link generators to blocks that need power using the &6Electric Wrench&r."
+			]
+			hide_dependency_lines: false
+			icon: "refurbished_furniture:light_electricity_generator"
+			id: "0462313FFAEC4054"
+			rewards: [{
+				id: "010FC9BAC3A786B3"
+				item: "refurbished_furniture:wrench"
+				type: "item"
+			}]
+			subtitle: "FE - Furniture Energy"
+			tasks: [{
+				icon: "refurbished_furniture:light_electricity_generator"
+				id: "1554E7905CF741CC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "refurbished_furniture:dark_electricity_generator"
+							}
+							{
+								Count: 1b
+								id: "refurbished_furniture:light_electricity_generator"
+							}
+						]
+					}
+				}
+				title: "Electricity Generator"
+				type: "item"
+			}]
+			title: "Furniture Constructing"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F176FBF01ABB774"]
+			description: [
+				"The &6Recycling Machine&r can turn items that would otherwise be junk into useful materials."
+				""
+				"It can also double the amount of ores you recieve from raw ore!"
+			]
+			id: "44ACDBB4DE598EA6"
+			rewards: [{
+				count: 4
+				id: "5519E022BD00A560"
+				item: "furniture:trash_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D74C54EF7A3C1F0"
+				item: "society:recycling_machine"
+				type: "item"
+			}]
+			title: "Trash To Treasure"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["18EB59F2591BAD51"]
+			description: [
+				"&6Fermentation Barrels&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				""
+				"Recipes can use the following juices:"
+				""
+				"- &cRed&r/&aWhite&r grape juice"
+				"- &cCrimson&r/&aWarped&r grape juice"
+				"- &eApple Juice&r (made using an Apple Press)"
+				""
+				"Juices are inserted in the top left slot of the Fermentation Barrel."
+			]
+			icon: "vinery:red_grapejuice"
+			id: "180411EF1F7649DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47F40C9762972779"
+				table_id: 8298743981735202683L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "36017F8FB07D6021"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "vinery:white_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:red_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:warped_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:crimson_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:apple_juice"
+							}
+						]
+					}
+				}
+				title: "Any Fermentation Barrel juice"
+				type: "item"
+			}]
+			title: "Juicing up the Wine"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["07A551F04BB9A117"]
+			description: [
+				"Farming Slimes can be tricky! They all have different dreams and desires, and one wrong move will cause them to rip apart the fabric of your farm..."
+				""
+				"Luckily the &6Slime Inspector&r is here to help! Right clicking on a Slime with it will tell you if there's anything getting in the way of their happiness and your profits!"
+			]
+			id: "66C1440EFF12DC66"
+			rewards: [{
+				id: "47A229EC3B1CEBC8"
+				item: "splendid_slimes:slime_candy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D9713E05007CC59"
+				item: "splendid_slimes:slime_inspector"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
 		}
 	]
 	title: "III - Advanced Farming"

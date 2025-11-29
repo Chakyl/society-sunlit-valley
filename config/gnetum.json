@@ -20,12 +20,6 @@
       },
       "pass": 1
     },
-    "gnetum.packedElement.right": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "minecraft:jump_bar": {
       "enabled": {
         "value": "AUTO"
@@ -66,7 +60,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 1
+      "pass": 3
     },
     "seasonhud:journeymap": {
       "enabled": {
@@ -88,7 +82,7 @@
     },
     "minecraft:hotbar": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 1
     },
@@ -102,7 +96,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 1
+      "pass": 3
     },
     "ok_zoomer:ok_zoomer_overlay": {
       "enabled": {
@@ -126,13 +120,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
-    },
-    "create:remaining_air": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
+      "pass": 3
     },
     "minecraft:scoreboard": {
       "enabled": {
@@ -166,9 +154,9 @@
     },
     "seasonhud:seasonhud": {
       "enabled": {
-        "value": "ON"
+        "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "zetter:painting_info": {
       "enabled": {
@@ -201,12 +189,6 @@
       "pass": 1
     },
     "minecraft:boss_event_progress": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "gnetum.packedElement.left": {
       "enabled": {
         "value": "AUTO"
       },
@@ -276,7 +258,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 1
+      "pass": 3
     },
     "shouldersurfing:post_crosshair": {
       "enabled": {
@@ -295,6 +277,12 @@
         "value": "AUTO"
       },
       "pass": 3
+    },
+    "gnetum:status_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
     },
     "relics:researching_hint": {
       "enabled": {
@@ -319,12 +307,6 @@
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "horseman:horseman_food_level": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
     },
     "minecraft:spyglass": {
       "enabled": {
@@ -352,11 +334,17 @@
     }
   },
   "mapModdedElementsPre": {
-    "journeymap": {
+    "via_romana": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 1
+    },
+    "journeymap": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     }
   },
   "mapModdedElementsPost": {
@@ -373,12 +361,6 @@
       "pass": 3
     },
     "architectury": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
-    "renderjs": {
       "enabled": {
         "value": "AUTO"
       },

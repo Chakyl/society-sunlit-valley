@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1748314678765
+  last_edited_time = 1764208683344
   is_enabled = true
   randommode = true
   randomgroup = 10
   randomonlyfirsttime = true
   layout_index = 0
   custom_menu_title = Society: Sunlit Valley
-  [loading_requirement_container_meta:4bc855c6-3562-429b-9261-5d9051ddb7b5-1748314518149] = [groups:][instances:]
+  [loading_requirement_container_meta:0d2f0ff4-fe8f-4d67-9c54-870fbaac7502-1764207106256] = [groups:][instances:]
 }
 
 customization {
@@ -26,6 +26,7 @@ customization {
 
 menu_background {
   panorama_name = siberia
+  instance_identifier = 330dac14-13a1-446f-ab7d-c6eab60c1e3d-1764207106256
   background_type = panorama
 }
 
@@ -771,207 +772,27 @@ vanilla_button {
   nine_slice_slider_handle_border_y = 5
 }
 
-deep_element {
-  element_type = title_screen_logo
-  instance_identifier = deep:title_screen_logo
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 3441
-  auto_sizing_base_screen_height = 1371
-  sticky_anchor = false
-  anchor_point = vanilla
-  x = 436
-  y = 30
-  width = 274
-  height = 52
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 2dbbcf11-9868-43ba-b696-60d942ad14c2-1731790192756
-  [loading_requirement_container_meta:2dbbcf11-9868-43ba-b696-60d942ad14c2-1731790192756] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
+vanilla_button {
+  element_type = vanilla_button
   is_hidden = true
+  instance_identifier = minecraft_logo_widget
 }
 
-deep_element {
-  element_type = title_screen_branding
-  instance_identifier = deep:title_screen_branding
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 3441
-  auto_sizing_base_screen_height = 1371
-  sticky_anchor = false
-  anchor_point = vanilla
-  x = 2
-  y = 406
-  width = 128
-  height = 49
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 871a6b97-6cbb-431c-982e-669441133848-1731790192756
-  [loading_requirement_container_meta:871a6b97-6cbb-431c-982e-669441133848-1731790192756] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
+vanilla_button {
+  element_type = vanilla_button
   is_hidden = true
+  instance_identifier = minecraft_branding_widget
 }
 
-deep_element {
-  element_type = title_screen_splash
-  instance_identifier = deep:title_screen_splash
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 3441
-  auto_sizing_base_screen_height = 1371
-  sticky_anchor = false
-  anchor_point = vanilla
-  x = 0
-  y = 0
-  width = 100
-  height = 30
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 2e0503bf-0881-412f-956f-b073030b53cc-1731790192756
-  [loading_requirement_container_meta:2e0503bf-0881-412f-956f-b073030b53cc-1731790192756] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
+vanilla_button {
+  element_type = vanilla_button
   is_hidden = true
+  instance_identifier = minecraft_splash_widget
 }
 
-deep_element {
-  element_type = title_screen_realms_notification
-  instance_identifier = deep:title_screen_realms_notification
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 3441
-  auto_sizing_base_screen_height = 1440
-  sticky_anchor = false
-  anchor_point = vanilla
-  x = 655
-  y = 220
-  width = 60
-  height = 13
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = fb4d1cd3-abd3-4a71-86ff-950184f0c4c3-1731790192756
-  [loading_requirement_container_meta:fb4d1cd3-abd3-4a71-86ff-950184f0c4c3-1731790192756] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
+vanilla_button {
+  element_type = vanilla_button
   is_hidden = true
-}
-
-deep_element {
-  element_type = title_screen_forge_copyright
-  instance_identifier = deep:title_screen_forge_copyright
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 3441
-  auto_sizing_base_screen_height = 1371
-  sticky_anchor = false
-  anchor_point = vanilla
-  x = 675
-  y = 340
-  width = 228
-  height = 9
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 9d76c437-5c8e-4074-867e-4d9d519e99aa-1731790192756
-  [loading_requirement_container_meta:9d76c437-5c8e-4074-867e-4d9d519e99aa-1731790192756] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  is_hidden = false
-}
-
-deep_element {
-  element_type = title_screen_forge_top
-  instance_identifier = deep:title_screen_forge_top
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 3441
-  auto_sizing_base_screen_height = 1371
-  sticky_anchor = false
-  anchor_point = vanilla
-  x = 318
-  y = 4
-  width = 268
-  height = 19
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 8fb28e27-9a80-4bfa-944a-bf08e7f42838-1731790192756
-  [loading_requirement_container_meta:8fb28e27-9a80-4bfa-944a-bf08e7f42838-1731790192756] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  is_hidden = false
+  instance_identifier = minecraft_realms_notification_icons_widget
 }
 

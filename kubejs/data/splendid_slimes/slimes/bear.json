@@ -1,0 +1,36 @@
+{
+  "breed": "bear",
+  "name": "slime.splendid_slimes.bear",
+  "color": "#E79A3F",
+  "particle": {
+    "item": "minecraft:honey_block"
+  },
+  "diet": "diet.splendid_slimes.bear",
+  "foods": [
+    { "item": "minecraft:honeycomb" },
+    { "item": "minecraft:honey_bottle" },
+    { "item": "minecraft:honey_block" },
+    { "item": "minecraft:honeycomb_block" },
+    { "item": "buzzier_bees:crystallized_honey_block" }
+  ],
+  "favorite_food": {
+    "item": "buzzier_bees:crystallized_honey_block"
+  },
+  "traits": ["dominant", "friendly"],
+  "emit_effect_particle": "minecraft:dripping_honey",
+  "hostile_to_entities": ["minecraft:bee"],
+  "positive_emit_effects": [
+    {
+      "effect": "minecraft:slowness",
+      "duration": 120,
+      "amplifier": 1
+    }
+  ],
+  "negative_emit_effects": [
+    {
+      "effect": "minecraft:slowness",
+      "duration": 120,
+      "amplifier": 2
+    }
+  ]
+}

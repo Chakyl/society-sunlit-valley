@@ -465,11 +465,11 @@
 				""
 				"{ftbquests.chapter.getting_started.quest14.description2}"
 				""
-				"&6Right click&r on a block with a blueprint to place a preview. Right click again on the preview to build."
+				"{ftbquests.chapter.getting_started.quest14.description3}"
 				""
-				"&6Shift + Right Click&r in the air to mirror, flip or rotate the preview."
+				"{ftbquests.chapter.getting_started.quest14.description4}"
 				""
-				"&6Scroll Wheel&r can be used to position more precisely."
+				"{ftbquests.chapter.getting_started.quest14.description5}"
 			]
 			icon: "tanukidecor:antique_bed"
 			id: "1A4FD076999BF29F"
@@ -760,7 +760,7 @@
 				""
 				"{ftbquests.chapter.getting_started.quest22.description3}"
 				""
-				"Placing the White Card in your curio slot will allow you to purchase items from villagers using shared funds."
+				"{ftbquests.chapter.getting_started.quest22.description4}"
 			]
 			icon: "numismatics:white_card"
 			id: "1F0231C09608265D"
@@ -782,11 +782,11 @@
 		{
 			dependencies: ["443F42C8AFDA0C36"]
 			description: [
-				"Can't be bothered to build a villager trading hall?"
+				"{ftbquests.chapter.getting_started.quest23.description1}"
 				""
-				"The &6Phone&r has you covered! Right clicking on it will allow you to select which villager to trade with over the phone. The &6Carpenter&r and &6Bookseller&r can only be accessed over the phone!"
+				"{ftbquests.chapter.getting_started.quest23.description2}"
 				""
-				"It is sold by the &6Banker&r Villager."
+				"{ftbquests.chapter.getting_started.quest23.description3}"
 			]
 			id: "23C02B36014CC450"
 			rewards: [{
@@ -800,7 +800,7 @@
 				item: "whimsy_deco:phone"
 				type: "item"
 			}]
-			title: "Phone Ordering"
+			title: "{ftbquests.chapter.getting_started.quest23.title}"
 			x: 8.0d
 			y: 1.5d
 		}

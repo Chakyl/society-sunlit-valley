@@ -12,11 +12,11 @@
 		{
 			dependencies: ["2F83B8F22344FAD7"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest46.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest1.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest46.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest1.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest46.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest1.description3}"
 			]
 			id: "146475549DD7BF4A"
 			rewards: [{
@@ -29,10 +29,10 @@
 				biome: "society:umbra_barrens"
 				icon: "minecraft:end_stone"
 				id: "52727B8A0D17120B"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest46.task_8537742181496934540.title}"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest1.task_5940946691310424587.title}"
 				type: "biome"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest46.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest1.title}"
 			x: -4.5d
 			y: 21.0d
 		}
@@ -87,7 +87,7 @@
 		}
 		{
 			dependencies: ["38AC25E172172654"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest19.description1}"]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest3.description1}"]
 			id: "6635A53C7AF81CB3"
 			rewards: [{
 				id: "494951B9286CC669"
@@ -105,9 +105,9 @@
 		{
 			dependencies: ["3FA607115DB107D9"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest49.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest49.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4.description2}"
 			]
 			id: "4564673A6912E917"
 			rewards: [{
@@ -129,9 +129,9 @@
 				"3C61AB99F40B709F"
 			]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest17.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest17.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5.description2}"
 			]
 			id: "40AD1233DF08EBCC"
 			rewards: [{
@@ -149,11 +149,11 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6.description2}"
 				""
-				"They can be found more commonly the lower you go into the Skull Cavern, and can also be recieved from specific Skills."
+				"{ftbquests.chapter.iv__prismatic_farming.quest6.description3}"
 			]
 			id: "6412C4FB8294A6E2"
 			rewards: [{
@@ -174,9 +174,9 @@
 		{
 			dependencies: ["6412C4FB8294A6E2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest7.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest7.description2}"
 			]
 			id: "283AF4C18CF3880D"
 			rewards: [{
@@ -189,18 +189,18 @@
 				item: "candlelight:cooking_pot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest21.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest7.title}"
 			x: -11.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["6412C4FB8294A6E2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest8.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest8.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest8.description3}"
 			]
 			icon: "minecraft:fletching_table"
 			id: "41C453E806763C4F"
@@ -270,20 +270,20 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.iii__advanced_farming.quest43.task_4869215314156170713.title}"
+					title: "{ftbquests.chapter.iv__prismatic_farming.quest8.task_7493457486177475867.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest43.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest8.title}"
 			x: -12.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
 			description: [
-				"Getting to the bottom of the &6Skull Cavern&r can be a challenge. &6Magic Rope&r can be obtained from the Exotic Trader to instantly teleport you to the next layer down. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest9.description1}"
 				""
-				"It can also be crafted into a &6Magic Tunnel&r, which teleports you to adjacent caves."
+				"{ftbquests.chapter.iv__prismatic_farming.quest9.description2}"
 			]
 			icon: "society:magic_rope"
 			id: "1A81A877A381DB97"
@@ -305,16 +305,16 @@
 					type: "item"
 				}
 			]
-			title: "Descending Faster"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest9.title}"
 			x: -12.0d
 			y: 16.5d
 		}
 		{
 			dependencies: ["6A94BB4CB99D814E"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest18.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest10.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest18.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest10.description2}"
 			]
 			id: "115795B60C6CA0ED"
 			rewards: [{
@@ -333,7 +333,7 @@
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest48.description1}"]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest11.description1}"]
 			id: "4E5BF157FDA7490A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -346,15 +346,15 @@
 				item: "society:cornucopia"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest48.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest11.title}"
 			x: 1.0d
 			y: 12.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest40.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest12.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest40.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest12.description2}"
 			]
 			id: "7B26713E5E4E25CB"
 			rewards: [{
@@ -368,16 +368,16 @@
 				item: "society:sparkstone"
 				type: "item"
 			}]
-			title: "The Automation Era"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest12.title}"
 			x: 2.5d
 			y: 12.5d
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest44.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest13.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest44.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest13.description2}"
 			]
 			id: "42B424793E1E91D3"
 			rewards: [{
@@ -396,11 +396,11 @@
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest14.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest14.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest14.description3}"
 			]
 			icon: "society:artisan_hopper"
 			id: "4759B2BFFF26E78F"
@@ -412,7 +412,7 @@
 				item: "society:sparkstone"
 				type: "item"
 			}]
-			subtitle: "Now in Mini form!"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest14.subtitle}"
 			tasks: [
 				{
 					id: "5B988B04E253D0CA"
@@ -431,13 +431,13 @@
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest15.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest15.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest15.description3}"
 				""
-				"It can be upgraded with Magic Shears to automatically harvest meat, though this does reduce their affection if they aren't pet every day."
+				"{ftbquests.chapter.iv__prismatic_farming.quest15.description4}"
 			]
 			id: "4D1F2652FD9DEF69"
 			rewards: [{
@@ -456,37 +456,37 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest16.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest16.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest16.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description4}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest16.description4}"
 			]
 			icon: "society:skull_cavern_teleporter"
 			id: "5A369FC904BCF5EE"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest14.subtitle}"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest16.subtitle}"
 			tasks: [{
 				dimension: "society:skull_cavern"
 				icon: "minecraft:skeleton_skull"
 				id: "53F45DEC3FD0866C"
-				title: "Enter the Skull Cavern"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest16.task_6049563468729714284.title}"
 				type: "dimension"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest14.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest16.title}"
 			x: -4.5d
 			y: 6.75d
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
 			description: [
-				"&6Lead&r is a grating ore that begins to spawn in the frozen layer. When broken, it spawns clouds of brain damage unless adjacent to water."
+				"{ftbquests.chapter.iv__prismatic_farming.quest17.description1}"
 				""
-				"&oThere may be ways to mitigate this risk...&r"
+				"{ftbquests.chapter.iv__prismatic_farming.quest17.description2}"
 				""
-				"Its main use is heavy machinery, particularly in the Create mod."
+				"{ftbquests.chapter.iv__prismatic_farming.quest17.description3}"
 			]
 			id: "3C61AB99F40B709F"
 			rewards: [{
@@ -500,16 +500,16 @@
 				item: "oreganized:raw_lead"
 				type: "item"
 			}]
-			title: "Coughing and Spitting"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest17.title}"
 			x: -3.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["5A369FC904BCF5EE"]
 			description: [
-				"The first layer of the Skull Cavern is relatively safe. It contains a variety of overworld ores, and it doesn't present much danger to you."
+				"{ftbquests.chapter.iv__prismatic_farming.quest18.description1}"
 				""
-				"&oYou should aim to get through this area as fast as possible...&r"
+				"{ftbquests.chapter.iv__prismatic_farming.quest18.description2}"
 			]
 			id: "6A94BB4CB99D814E"
 			rewards: [{
@@ -525,19 +525,19 @@
 				type: "questsadditions:break"
 				value: 1L
 			}]
-			title: "Layer I - The Cavern Shallows"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest18.title}"
 			x: -4.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["6A94BB4CB99D814E"]
 			description: [
-				"The second layer consists of two different ice biomes: the Frozen Caves and Frozen Maelstrom. By now you may have noticed two things:"
+				"{ftbquests.chapter.iv__prismatic_farming.quest19.description1}"
 				""
-				"- Certain mobs only spawn in certain biomes"
-				"- Blocks you place in the Skull Cavern don't get destroyed overnight."
+				"{ftbquests.chapter.iv__prismatic_farming.quest19.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest19.description3}"
 				""
-				"Use these facts to your advantage to get lower faster, especially since this layer will start to be a real challenge from mobs..."
+				"{ftbquests.chapter.iv__prismatic_farming.quest19.description4}"
 			]
 			id: "0DC68C5CF6D82372"
 			rewards: [{
@@ -554,18 +554,18 @@
 				type: "questsadditions:break"
 				value: 1L
 			}]
-			title: "Layer II - Frozen Depths"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest19.title}"
 			x: -4.5d
 			y: 12.5d
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
 			description: [
-				"The third layer will greatly test your ability to survive. You'll start to encounter &6Iridium Scrap&r, &6Silver&r, and a variety of deadly new enemies that can efficiently kill you."
+				"{ftbquests.chapter.iv__prismatic_farming.quest20.description1}"
 				""
-				"If you're struggling to survive here, you should focus on getting better gear. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest20.description2}"
 				""
-				"In particular, things that will allow you to get around faster like hooks and attack from range like bows will be key."
+				"{ftbquests.chapter.iv__prismatic_farming.quest20.description3}"
 			]
 			id: "3FA607115DB107D9"
 			rewards: [{
@@ -581,18 +581,18 @@
 				type: "questsadditions:break"
 				value: 1L
 			}]
-			title: "Layer III - The Deep Desert"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest20.title}"
 			x: -4.5d
 			y: 16.5d
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
 			description: [
-				"The fourth and final layer of the Skull Cavern is made up of the Umbra Barrens and Blackstone Caves. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest21.description1}"
 				""
-				"Both provide a unique set of ores, but you might not have enough time in the day to efficiently mine them."
+				"{ftbquests.chapter.iv__prismatic_farming.quest21.description2}"
 				""
-				"You can also find &6Skull Cavern Teleports&r down at this layer, allowing you to instantly leave without penalty."
+				"{ftbquests.chapter.iv__prismatic_farming.quest21.description3}"
 			]
 			icon: "society:end_stone_boulder"
 			id: "2F83B8F22344FAD7"
@@ -621,7 +621,7 @@
 					value: 1L
 				}
 			]
-			title: "Layer IV - The Final Depth"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest21.title}"
 			x: -4.5d
 			y: 19.0d
 		}
@@ -631,9 +631,9 @@
 				"38AC25E172172654"
 			]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest22.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest22.description2}"
 			]
 			id: "7D25F7C2281DBCD0"
 			rewards: [{
@@ -646,16 +646,16 @@
 				item: "society:crystalarium"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest7.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest22.title}"
 			x: -8.5d
 			y: 19.0d
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
 			description: [
-				"&6Silver Ore&r is an elusive ore that starts to spawn in the third layer."
+				"{ftbquests.chapter.iv__prismatic_farming.quest23.description1}"
 				""
-				"It is used in mass quantities for delicate electronics in &6Create&r, but otherwise is used decoratively. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest23.description2}"
 			]
 			id: "4A96DC00D7D0CAD6"
 			rewards: [{
@@ -677,9 +677,9 @@
 				"38AC25E172172654"
 			]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest32.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest24.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest32.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest24.description2}"
 			]
 			icon: "splendid_slimes:slime_incubator"
 			id: "62CB7BAB9BBB4030"
@@ -700,7 +700,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest32.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest24.title}"
 			x: -6.5d
 			y: 19.0d
 		}
@@ -708,11 +708,11 @@
 			dependencies: ["38AC25E172172654"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest25.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest25.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest25.description3}"
 			]
 			hide_dependency_lines: false
 			id: "4ABFC024D15BFC10"
@@ -727,16 +727,16 @@
 				item: "splendid_slimes:plort_press"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest34.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest25.title}"
 			x: -6.5d
 			y: 20.0d
 		}
 		{
 			dependencies: ["4564673A6912E917"]
 			description: [
-				"&6Iridium Scrap&r can be combined with &6Bismuth Ingots&r to create &6Iridium Ingots&r, an extremely durable alloy."
+				"{ftbquests.chapter.iv__prismatic_farming.quest26.description1}"
 				""
-				"It can be made into some of the most powerful machinery and armor in the Sunlit Valley. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest26.description2}"
 			]
 			id: "38AC25E172172654"
 			rewards: [{
@@ -762,9 +762,9 @@
 				"38AC25E172172654"
 			]
 			description: [
-				"The &6Auto-Cheese Press&r is an automated version of the &6Artisan Cheese Press&r. Hoppers can be used to insert and extract out of it."
+				"{ftbquests.chapter.iv__prismatic_farming.quest27.description1}"
 				""
-				"Unlike the base version, it requires &6Rennet&r for the production of cheeses and does not carry over quality. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest27.description2}"
 			]
 			id: "4092A4464F986217"
 			rewards: [{
@@ -778,16 +778,16 @@
 				item: "meadow:cheese_form"
 				type: "item"
 			}]
-			title: "Automated Cheese"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest27.title}"
 			x: -8.5d
 			y: 20.0d
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
 			description: [
-				"The &6Ancient Fruit&r is an extremely valuable farmland crop with a long growing time."
+				"{ftbquests.chapter.iv__prismatic_farming.quest28.description1}"
 				""
-				"Upgrading a &6Seed Maker&r with an &6Ancient Cog&r will give you a chance to get its seed with every harvest."
+				"{ftbquests.chapter.iv__prismatic_farming.quest28.description2}"
 			]
 			icon: "society:ancient_cog"
 			id: "5558DB4DE54C890D"
@@ -809,13 +809,13 @@
 					type: "item"
 				}
 			]
-			title: "Cogs of the Ancients"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest28.title}"
 			x: -11.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["5558DB4DE54C890D"]
-			description: ["&6Ancient Fruits&r take an excrutiatingly long time to grow. It's best to focus on getting more seeds with the first few harvests before jumping into profits."]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest29.description1}"]
 			id: "72CCDB6B078E8908"
 			rewards: [{
 				id: "724608884B0BFC47"
@@ -833,9 +833,9 @@
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
 			description: [
-				"The &6Scribe&r can be used to break glass fast and always drop it. It can also be used to create grooves in ice."
+				"{ftbquests.chapter.iv__prismatic_farming.quest30.description1}"
 				""
-				"Very useful for moving your greenhouse."
+				"{ftbquests.chapter.iv__prismatic_farming.quest30.description2}"
 			]
 			id: "6C729A76F44E32D0"
 			rewards: [{
@@ -860,9 +860,9 @@
 		{
 			dependencies: ["0E4EA6B5E8E6361C"]
 			description: [
-				"&6Hyper Fertilizer&r is the fastest and most expensive of them all, shortening grow times by 3 days."
+				"{ftbquests.chapter.iv__prismatic_farming.quest31.description1}"
 				""
-				"It can be used for painfully slow growing crops, or to make quickly growing crops a daily harvest."
+				"{ftbquests.chapter.iv__prismatic_farming.quest31.description2}"
 			]
 			id: "52A790F80019F520"
 			rewards: [{
@@ -881,9 +881,9 @@
 		{
 			dependencies: ["41C453E806763C4F"]
 			description: [
-				"The &6Black Opal&r upgrade can be used on a &6Crystalarium&r to let it produce Pristine versions of the mineneral or gem grown."
+				"{ftbquests.chapter.iv__prismatic_farming.quest32.description1}"
 				""
-				"Not only are these more valuable, but they can also be broken down into multiple of the basic versions."
+				"{ftbquests.chapter.iv__prismatic_farming.quest32.description2}"
 			]
 			id: "0E13E56F342F243F"
 			rewards: [{
@@ -902,9 +902,9 @@
 		{
 			dependencies: ["0E13E56F342F243F"]
 			description: [
-				"&6Pristine Quality Fertilizer&r has the highest chance for quality possible."
+				"{ftbquests.chapter.iv__prismatic_farming.quest33.description1}"
 				""
-				"When combined with diamond quality seeds, it practicially garuntees you'll get high quality crops."
+				"{ftbquests.chapter.iv__prismatic_farming.quest33.description2}"
 			]
 			id: "35A8A8F8898AE3E5"
 			tasks: [{
@@ -918,9 +918,9 @@
 		{
 			dependencies: ["63F8C52D082BBCB3"]
 			description: [
-				"&6Growth Obelisks&r are a farmer's best friend, harnessing Ribbit magic to grow crops in a wide area around them every morning at 7am."
+				"{ftbquests.chapter.iv__prismatic_farming.quest34.description1}"
 				""
-				"Every time they work, they consume 1 &6Spark-Gro&r, a delicate mix of fertilizers and &6Sparkstone&r."
+				"{ftbquests.chapter.iv__prismatic_farming.quest34.description2}"
 			]
 			icon: "society:growth_obelisk"
 			id: "003782D1F1A74349"
@@ -930,7 +930,7 @@
 				item: "society:spark_gro"
 				type: "item"
 			}]
-			subtitle: "It's what plants crave"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest34.subtitle}"
 			tasks: [
 				{
 					id: "3359F8B677711ADC"
@@ -949,9 +949,9 @@
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
 			description: [
-				"The &dMagic Bulb&r is a strange device capable of harnessing the sun."
+				"{ftbquests.chapter.iv__prismatic_farming.quest35.description1}"
 				""
-				"It will require studying of all three ribbit artifacts to craft."
+				"{ftbquests.chapter.iv__prismatic_farming.quest35.description2}"
 			]
 			id: "63F8C52D082BBCB3"
 			rewards: [{
@@ -964,19 +964,19 @@
 				item: "society:magic_bulb"
 				type: "item"
 			}]
-			title: "Ribbit Sun Magic"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest35.title}"
 			x: -1.5d
 			y: 18.5d
 		}
 		{
 			dependencies: ["3C61AB99F40B709F"]
 			description: [
-				"&6Lead&r is a sturdy enough material to build trains in your world!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest36.description1}"
 				""
-				"Unlike what you may be used to, trains from Create do not require create progress or power."
+				"{ftbquests.chapter.iv__prismatic_farming.quest36.description2}"
 				""
 				""
-				"{ \"text\": \"More information can be found here.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"53836B96EE81A695\" } }"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.iv__prismatic_farming.quest36.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"53836B96EE81A695\"}}]"
 			]
 			id: "53C771625381F8F8"
 			rewards: [{
@@ -995,9 +995,9 @@
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"&6Garden Pots&r grow planted crops indoors during any season, making them a cheap and decorative alternative to &6Greenhouse Glass&r."
+				"{ftbquests.chapter.iv__prismatic_farming.quest37.description1}"
 				""
-				"The catch? Sprinklers can't hydrate them, though Garden Pots will never dry out and break your crop. &6Deluxe Hydrating Fertilizer&r can be used to keep them watered forever."
+				"{ftbquests.chapter.iv__prismatic_farming.quest37.description2}"
 			]
 			id: "33BD4404990D4D89"
 			rewards: [{
@@ -1016,7 +1016,7 @@
 		}
 		{
 			dependencies: ["6412C4FB8294A6E2"]
-			description: ["The &6Mystical Botanist&r villager sells expensive but incredibly useful magic items for your farm."]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest38.description1}"]
 			id: "0C32D3E205443F0F"
 			rewards: [{
 				id: "3E9C4B4AB7D540B2"
@@ -1034,11 +1034,11 @@
 		{
 			dependencies: ["0C32D3E205443F0F"]
 			description: [
-				"Once the Community Center is complete, excluding the Abandoned Farm, the &6Mystical Botanist&r villager will sell you a &6Ribbit Hut&r!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest39.description1}"
 				""
-				"This building houses Ribbits that can use their powerful magic to harvest crops in a large area around it without any upkeep!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest39.description2}"
 				""
-				"This is a large building, requiring a 3x3x3 area of space to place. You can access its inventory from the door block."
+				"{ftbquests.chapter.iv__prismatic_farming.quest39.description3}"
 			]
 			id: "4AAC2F98960E49A7"
 			rewards: [
@@ -1058,7 +1058,7 @@
 				item: "society:ribbit_hut"
 				type: "item"
 			}]
-			title: "Ribbit Harvesting"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest39.title}"
 			x: -14.0d
 			y: 15.0d
 		}
@@ -1167,5 +1167,5 @@
 			y: 22.5d
 		}
 	]
-	title: "IV - Prismatic Farming"
+	title: "{ftbquests.chapter.iv__prismatic_farming.title}"
 }

@@ -64,7 +64,7 @@ ServerEvents.recipes((e) => {
         item: "splendid_slimes:slime_heart",
         nbt: {
           slime: {
-          id: `splendid_slimes:${bottom}`,
+            id: `splendid_slimes:${bottom}`,
           },
         },
       },
@@ -89,4 +89,20 @@ ServerEvents.recipes((e) => {
   addItemFusion("minecraft:dragon_egg", "ender", "minty");
   addItemFusion("society:token_of_unity", "boomcat", "sparkcat");
   addItemFusion("society:magic_bulb", "orby", "mechanic");
+
+  e.custom({
+    type: "splendid_slimes:plort_pressing",
+    ingredient: {
+      item: "golemoverhaul:honey_blob",
+      count: 16,
+    },
+    result: {
+      item: "splendid_slimes:slime_heart",
+      nbt: {
+        slime: {
+          id: `splendid_slimes:bear`,
+        },
+      },
+    },
+  });
 });

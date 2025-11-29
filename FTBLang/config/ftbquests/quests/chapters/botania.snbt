@@ -11,7 +11,7 @@
 		}
 	}
 	id: "7D5C355F4BB66AE9"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -21,8 +21,6 @@
 				"{ftbquests.chapter.botania.quest1.description2}"
 				""
 				"{ftbquests.chapter.botania.quest1.description3}"
-				""
-				"{ftbquests.chapter.botania.quest1.description4}"
 			]
 			id: "5E5E6E09E6C6DF02"
 			rewards: [{
@@ -141,7 +139,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest4.title}"
-			x: 16.5d
+			x: 17.5d
 			y: -1.5d
 		}
 		{
@@ -181,7 +179,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.botania.quest5.title}"
-			x: 15.5d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
@@ -204,7 +202,7 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
@@ -269,7 +267,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest7.title}"
-			x: 12.5d
+			x: 13.5d
 			y: 1.5d
 		}
 		{
@@ -324,7 +322,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest8.title}"
-			x: 14.5d
+			x: 15.5d
 			y: 1.5d
 		}
 		{
@@ -415,8 +413,8 @@
 				item: "society:botanical_tribute"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.0d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1BF054DD14781BAD"]
@@ -459,8 +457,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
@@ -482,7 +480,7 @@
 				item: "botania:mana_diamond"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 1.0d
 		}
 		{
@@ -499,7 +497,7 @@
 				item: "botania:mana_pearl"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -565,7 +563,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.botania.quest16.title}"
-			x: 10.0d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
@@ -592,7 +590,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest17.title}"
-			x: 9.5d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -615,7 +613,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest18.title}"
-			x: 19.0d
+			x: 19.5d
 			y: 0.0d
 		}
 		{
@@ -638,7 +636,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest19.title}"
-			x: 16.5d
+			x: 17.5d
 			y: 1.5d
 		}
 		{
@@ -668,7 +666,7 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -698,7 +696,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest21.title}"
-			x: 10.0d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -720,7 +718,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest22.title}"
-			x: 13.5d
+			x: 15.5d
 			y: -1.5d
 		}
 		{
@@ -752,14 +750,13 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest23.title}"
-			x: 6.0d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
 			dependencies: [
 				"221306DB217B8F93"
 				"5E5E6E09E6C6DF02"
-				"1D1F8EA9D17BCF81"
 			]
 			description: ["{ftbquests.chapter.botania.quest24.description1}"]
 			icon: "botania:orange_mystical_flower"
@@ -772,6 +769,172 @@
 			title: "{ftbquests.chapter.botania.quest24.title}"
 			x: -5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["33B78DFDDC041570"]
+			description: [
+				"{ftbquests.chapter.botania.quest25.description1}"
+				""
+				"{ftbquests.chapter.botania.quest25.description2}"
+			]
+			id: "631D3F5020956DD7"
+			rewards: [{
+				count: 4
+				id: "74BCC347C67AF91F"
+				item: "society:mana_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C39686522168FA9"
+				item: "society:mana_feed"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.botania.quest25.title}"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B0A3083FFE1416B"]
+			description: [
+				"{ftbquests.chapter.botania.quest26.description1}"
+				""
+				"{ftbquests.chapter.botania.quest26.description2}"
+			]
+			icon: "farmlife:galliraptor_spawn_egg"
+			id: "656E19A85C1146B4"
+			rewards: [{
+				id: "2ACF2741BA79BC87"
+				item: "society:candied_animal_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B98D183C624AEA4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "farmlife:domestic_tribull_spawn_egg"
+							}
+							{
+								Count: 1b
+								id: "farmlife:galliraptor_spawn_egg"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.botania.quest26.task_8906098627020369572.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.botania.quest26.title}"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13A0704DCABC95E9"]
+			description: [
+				"{ftbquests.chapter.botania.quest27.description1}"
+				""
+				"{ftbquests.chapter.botania.quest27.description2}"
+				""
+				"{ftbquests.chapter.botania.quest27.description3}"
+			]
+			id: "52AB7E364A737557"
+			rewards: [{
+				id: "33ADB279EAF02CC2"
+				item: "botania:mana_pylon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "485786DF564CFDD5"
+				item: {
+					Count: 1
+					id: "society:sparkstone_recycler"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 21.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["13A0704DCABC95E9"]
+			description: [
+				"{ftbquests.chapter.botania.quest28.description1}"
+				""
+				"{ftbquests.chapter.botania.quest28.description2}"
+				""
+				"{ftbquests.chapter.botania.quest28.description3}"
+			]
+			id: "61F2F0C46147E002"
+			rewards: [{
+				id: "3095C6FED15E64BB"
+				item: "botania:quartz_blaze"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F3CC185B8FF80D3"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 21.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46F86152B5B36A3B"]
+			description: [
+				"{ftbquests.chapter.botania.quest29.description1}"
+				""
+				"{ftbquests.chapter.botania.quest29.description2}"
+			]
+			id: "768A5A2162C079D0"
+			rewards: [{
+				id: "596991571993533D"
+				item: "furniture:spruce_grandfather_clock"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DCA9053294233FF"
+				item: {
+					Count: 1
+					id: "society:mana_clock"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["69A2A84A2830134C"]
+			description: [
+				"{ftbquests.chapter.botania.quest30.description1}"
+				""
+				"{ftbquests.chapter.botania.quest30.description2}"
+			]
+			id: "24D0021DB56E9E46"
+			rewards: [{
+				count: 4
+				id: "64C0142B7B187005"
+				item: "crabbersdelight:mana_crab_trap_bait"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AC03820EA1202FA"
+				item: "crabbersdelight:mana_crab_trap_bait"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.botania.quest30.title}"
+			x: 11.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.chapter.botania.title}"

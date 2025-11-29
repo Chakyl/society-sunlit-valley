@@ -682,13 +682,13 @@
 		{
 			dependencies: ["31F6C5811A72396C"]
 			description: [
-				"The blueprinting system used for the Building Shop can also be used to make your own blueprints!"
+				"{ftbquests.chapter.tools.quest18.description1}"
 				""
-				"The &6Scanner&r is used to capture a build."
+				"{ftbquests.chapter.tools.quest18.description2}"
 				""
-				"The &6Tablet&r is used to obtain blueprints to use, or share them with other players."
+				"{ftbquests.chapter.tools.quest18.description3}"
 				""
-				"You can use this to plan builds in creative first!"
+				"{ftbquests.chapter.tools.quest18.description4}"
 			]
 			icon: "portable_blueprints:tablet"
 			id: "54B6F31A66A23AD4"
@@ -713,7 +713,7 @@
 					type: "item"
 				}
 			]
-			title: "Blueprints"
+			title: "{ftbquests.chapter.tools.quest18.title}"
 			x: 1.0d
 			y: 2.5d
 		}

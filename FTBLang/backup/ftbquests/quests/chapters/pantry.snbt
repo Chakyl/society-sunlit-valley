@@ -29,27 +29,27 @@
 			}]
 			tasks: [
 				{
-					count: 16L
-					id: "1477F70DF8BDF00F"
-					item: "minecraft:potato"
-					type: "item"
-				}
-				{
-					count: 16L
+					count: 32L
 					id: "541D9F35016F7E24"
 					item: "veggiesdelight:cauliflower"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "1E18344D245791C0"
 					item: "farm_and_charm:lettuce"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "367F96A16FB9F550"
 					item: "farm_and_charm:strawberry"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "784D6E488DCDEBE0"
+					item: { Count: 32, id: "veggiesdelight:turnip" }
 					type: "item"
 				}
 			]
@@ -62,34 +62,35 @@
 			id: "3EF57F71C1C786FE"
 			require_sequential_tasks: false
 			rewards: [{
-				id: "6E15114F2B2D8547"
-				item: "society:gold_sprinkler"
+				id: "6517D1EFE1E30357"
+				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
 			tasks: [
 				{
-					count: 16L
+					count: 32L
 					id: "739D0A34606397D0"
 					item: "veggiesdelight:bellpepper"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "00B8FD8C3A592142"
 					item: "minecraft:melon_slice"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 16L
+					count: 32L
 					id: "719F4811D89D19A8"
 					item: "society:blueberry"
 					type: "item"
 				}
 				{
-					count: 16L
+					consume_items: true
+					count: 32L
 					id: "1E0BCCAB8CFEAD6B"
-					item: { Count: 16, id: "farm_and_charm:oat" }
+					item: "farm_and_charm:oat"
 					type: "item"
 				}
 			]
@@ -108,26 +109,26 @@
 			}]
 			tasks: [
 				{
-					count: 16L
+					count: 32L
 					id: "525A25679B6E936D"
 					item: "minecraft:beetroot"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "404255E4E397C094"
 					item: "minecraft:pumpkin"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "4DFD6480E8FF485B"
 					item: "farm_and_charm:corn"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 16L
+					count: 32L
 					id: "720B181BB226B422"
 					item: "society:eggplant"
 					type: "item"
@@ -189,10 +190,6 @@
 								{
 									Count: 1b
 									id: "society:large_sheep_milk"
-								}
-								{
-									Count: 1b
-									id: "society:large_goat_milk"
 								}
 							]
 						}
@@ -257,9 +254,10 @@
 			y: -0.5d
 		}
 		{
-			description: ["Gold quality crops only. &63&r required for bundle completion."]
+			description: ["Gold quality crops only. Only &63&r tasks required for bundle completion."]
 			icon: "supplementaries:present_yellow"
 			id: "43591809C1D493F5"
+			min_required_tasks: 3
 			rewards: [{
 				count: 2
 				id: "7E7399293510698C"

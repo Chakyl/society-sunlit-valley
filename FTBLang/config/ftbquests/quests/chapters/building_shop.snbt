@@ -23,20 +23,32 @@
 				id: "16BF49CFC6B5C49C"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn"
+						buildAnyway: 0b
 						display: {
-							color: 5055259
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Barn\"}"
 						}
-						isReward: 1b
-						label: "Basic Barn"
-						oneUse: 1b
-						size: 17
-						state: 5
-						structureName: "config/capsule/rewards/barn.nbt"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -52,32 +64,24 @@
 				}
 				{
 					count: 128L
-					id: "3DCA6787CE5F9C86"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest1.task_4452485014589774982.title}"
-					type: "item"
-				}
-				{
-					count: 128L
 					id: "7D7F7DCB27F556EB"
 					item: { Count: 128, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "7564CC08F154B52D"
-					ignoreState: false
-					layer: false
-					name: "barn"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest1.task_8459110338889299245.title}"
-					type: "questsadditions:structure"
+					count: 20L
+					id: "1E927B78EBA2718B"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest1.title}"
-			x: -16.0d
-			y: -7.0d
+			x: -15.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -89,22 +93,32 @@
 				id: "0F1B0A120DFE317E"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 9926515
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Barn\"}"
 						}
-						isReward: 1b
-						label: "Cherry Barn"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "COUNTERCLOCKWISE_90"
-						size: 17
-						state: 5
-						structureName: "config/capsule/rewards/barn_cherry.nbt"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -120,32 +134,24 @@
 				}
 				{
 					count: 128L
-					id: "338CD6C71EA20411"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest2.task_3714579943374586897.title}"
-					type: "item"
-				}
-				{
-					count: 128L
 					id: "60CC3C08751FE037"
 					item: { Count: 128, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "6800A48755C41AA7"
-					ignoreState: false
-					layer: false
-					name: "barn_cherry"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest2.task_7494170681110960807.title}"
-					type: "questsadditions:structure"
+					count: 20L
+					id: "5DEA7F239DC19655"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest2.title}"
-			x: -17.5d
-			y: -7.0d
+			x: -14.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -157,22 +163,32 @@
 				id: "4502F6B5E7C88D62"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed"
+						buildAnyway: 0b
 						display: {
-							color: 9926987
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Shed\"}"
 						}
-						isReward: 1b
-						label: "Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -188,32 +204,24 @@
 				}
 				{
 					count: 64L
-					id: "2D35EE04F325E578"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest3.task_3257771610499048824.title}"
-					type: "item"
-				}
-				{
-					count: 64L
 					id: "0C82FD627D74E1D0"
 					item: { Count: 64, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "0AB80C877E497F8D"
-					ignoreState: false
-					layer: false
-					name: "shed"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest3.task_772381112172904333.title}"
-					type: "questsadditions:structure"
+					count: 10L
+					id: "5B77000EC9ECF852"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest3.title}"
-			x: -4.0d
-			y: -7.0d
+			x: -7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -228,22 +236,32 @@
 				id: "1781AAA30A33896B"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed"
+						buildAnyway: 0b
 						display: {
-							color: 9926987
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Large Shed\"}"
 						}
-						isReward: 1b
-						label: "Large Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "CLOCKWISE_90"
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -259,32 +277,20 @@
 				}
 				{
 					count: 256L
-					id: "58DCFC115AC56724"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest4.task_6403269921681532708.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "53B43D44F1F9207D"
 					item: { Count: 256, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "6D284D3D8B6199F6"
-					ignoreState: false
-					layer: false
-					name: "large_shed"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest4.task_7865621675929344502.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "5E54237C68F45EF2"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest4.title}"
-			x: -4.0d
-			y: -5.0d
+			x: -7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -296,22 +302,32 @@
 				id: "7C3D2DBBB488E608"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 11832713
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Large Shed\"}"
 						}
-						isReward: 1b
-						label: "Cherry Large Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "CLOCKWISE_90"
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -327,41 +343,31 @@
 				}
 				{
 					count: 256L
-					id: "2F46355DEF5E2C1D"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest5.task_3406468845716515869.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "42881160122ED553"
 					item: { Count: 256, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "353F2552E926CB19"
-					ignoreState: false
-					layer: false
-					name: "large_shed_cherry"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest5.task_3836826445572131609.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "44865A0C36082EF9"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest5.title}"
-			x: -2.5d
-			y: -5.0d
+			x: -6.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: false
-			dependencies: ["6A4ABA3348125A3C"]
+			dependencies: ["049EB48B999881A3"]
 			description: [
 				"{ftbquests.chapter.building_shop.quest6.description1}"
 				""
 				"{ftbquests.chapter.building_shop.quest6.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "society:preserves_jar"
 			id: "62D0735680A06D71"
 			size: 1.5d
@@ -371,8 +377,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest6.title}"
-			x: -6.5d
-			y: -7.0d
+			x: -6.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -384,22 +390,32 @@
 				id: "74A87C8C53AB8273"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 11832713
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Shed\"}"
 						}
-						isReward: 1b
-						label: "Cherry Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -415,61 +431,58 @@
 				}
 				{
 					count: 64L
-					id: "58B44F590F591966"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest7.task_6391821015073757542.title}"
-					type: "item"
-				}
-				{
-					count: 64L
 					id: "789FB5FBB3DC2C72"
 					item: { Count: 64, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "1983036EFFCC3599"
-					ignoreState: false
-					layer: false
-					name: "shed_cherry"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest7.task_1838316848170153369.title}"
-					type: "questsadditions:structure"
+					count: 10L
+					id: "390DADCA6C8DB6E2"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest7.title}"
-			x: -2.5d
-			y: -7.0d
+			x: -6.0d
+			y: -11.0d
 		}
 		{
 			can_repeat: false
-			dependencies: ["6A4ABA3348125A3C"]
+			dependencies: ["049EB48B999881A3"]
 			description: [
 				"{ftbquests.chapter.building_shop.quest8.description1}"
 				""
 				"{ftbquests.chapter.building_shop.quest8.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "society:aging_cask"
 			id: "118A9A2B8922DA00"
 			size: 1.5d
 			tasks: [{
-				id: "57A6189427F3031E"
-				title: "{ftbquests.chapter.building_shop.quest8.task_6315762552038163230.title}"
+				id: "62909AC02C9A7963"
+				title: "{ftbquests.chapter.building_shop.quest8.task_7102346762535991651.title}"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest8.title}"
-			x: -6.5d
-			y: -5.0d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			can_repeat: false
-			dependencies: ["6A4ABA3348125A3C"]
+			dependencies: ["049EB48B999881A3"]
 			description: [
 				"{ftbquests.chapter.building_shop.quest9.description1}"
 				""
 				"{ftbquests.chapter.building_shop.quest9.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_details_until_startable: false
 			icon: "society:milk"
 			id: "0B3AAC4CEC0098A3"
 			size: 1.5d
@@ -479,8 +492,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest9.title}"
-			x: -13.5d
-			y: -7.0d
+			x: -14.0d
+			y: -12.5d
 		}
 		{
 			can_repeat: false
@@ -504,39 +517,46 @@
 			}]
 			title: "{ftbquests.chapter.building_shop.quest10.title}"
 			x: -10.0d
-			y: -9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest11.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest11.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{ftbquests.chapter.building_shop.quest11.image0}"]
+			icon: "quark:prismarine_chest"
 			id: "71B7C3D4C9EC4CAC"
 			min_required_tasks: 3
 			rewards: [{
-				id: "3A34351B609BAEB8"
+				id: "408CADD51D7B9846"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_prismarine"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Entrana Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_prismarine"
+						owner: "worn"
+						owner_name: "AndieCherries"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
 			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
@@ -549,41 +569,31 @@
 				}
 				{
 					count: 256L
-					id: "49287E2EF533808A"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest11.task_5271602103984554122.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "6AA0DAEEB356253E"
 					item: "minecraft:stone_bricks"
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "7D43B3DC3F42C7B7"
-					ignoreState: false
-					layer: false
-					name: "deluxe_barn_entrana"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest11.task_9026255836716124087.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "4D0F39ACDA66C908"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest11.title}"
-			x: -20.5d
-			y: -5.0d
+			x: -15.0d
+			y: -1.0d
 		}
 		{
 			can_repeat: false
-			dependencies: ["6A4ABA3348125A3C"]
+			dependencies: ["049EB48B999881A3"]
 			description: [
 				"{ftbquests.chapter.building_shop.quest12.description1}"
 				""
 				"{ftbquests.chapter.building_shop.quest12.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "society:large_milk"
 			id: "07FEA26673F89CE0"
 			size: 1.5d
@@ -593,8 +603,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest12.title}"
-			x: -13.5d
-			y: -5.0d
+			x: -14.0d
+			y: -3.5d
 		}
 		{
 			can_repeat: false
@@ -602,49 +612,25 @@
 			description: [
 				"{ftbquests.chapter.building_shop.quest13.description1}"
 				""
-				""
 				"{ftbquests.chapter.building_shop.quest13.description2}"
-				""
-				"{ftbquests.chapter.building_shop.quest13.description3}"
-				""
-				"{ftbquests.chapter.building_shop.quest13.description4}"
 			]
-			icon: "exposure:camera"
-			id: "6A4ABA3348125A3C"
-			size: 2.0d
-			subtitle: "{ftbquests.chapter.building_shop.quest13.subtitle}"
-			tasks: [{
-				id: "26CC337AED0A141A"
-				title: "{ftbquests.chapter.building_shop.quest13.task_2795666071746122778.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.building_shop.quest13.title}"
-			x: -10.0d
-			y: -6.0d
-		}
-		{
-			can_repeat: false
-			dependencies: ["049EB48B999881A3"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest14.description1}"
-				""
-				"{ftbquests.chapter.building_shop.quest14.description2}"
-			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "tanukidecor:antique_bed"
 			id: "145DAA4D0C7740A3"
 			size: 1.5d
 			tasks: [{
 				id: "7E975B5359DCAEA1"
-				title: "{ftbquests.chapter.building_shop.quest14.task_9121859983810277025.title}"
+				title: "{ftbquests.chapter.building_shop.quest13.task_9121859983810277025.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.building_shop.quest14.title}"
+			title: "{ftbquests.chapter.building_shop.quest13.title}"
 			x: -10.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest15.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest14.image0}"]
 			icon: "minecraft:chest"
 			id: "0DE08377D5510577"
 			min_required_tasks: 3
@@ -652,39 +638,43 @@
 				id: "03D9B5B292CD4F2D"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 8072841
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_tudor"
+						buildAnyway: 0b
 						display: {
-							color: 14714914
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Tudor Farmhouse"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_tudor"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_tudor"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest15.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest14.subtitle}"
 			tasks: [
 				{
 					count: 8L
 					id: "394C9B0EA634CC89"
 					item: { Count: 8, id: "numismatics:sun" }
-					type: "item"
-				}
-				{
-					count: 256L
-					id: "04DF0A07D1A33633"
-					item: { Count: 256, id: "minecraft:oak_log" }
 					type: "item"
 				}
 				{
@@ -694,23 +684,19 @@
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "61CBB247512B7D5D"
-					ignoreState: false
-					layer: false
-					name: "home_tudor"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest15.task_7046922061325499741.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "5B51DC8A7C74414D"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest15.title}"
-			x: -12.5d
-			y: -1.5d
+			title: "{ftbquests.chapter.building_shop.quest14.title}"
+			x: -11.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest16.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest15.image0}"]
 			icon: "quark:spruce_chest"
 			id: "6493A6EC5C197458"
 			min_required_tasks: 3
@@ -718,41 +704,43 @@
 				id: "03595A7BE69C5DDA"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 0
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9532749
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Siberian Farmhouse"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 19
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest16.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest15.subtitle}"
 			tasks: [
 				{
 					count: 8L
 					id: "783F74F6BA70D175"
 					item: { Count: 8, id: "numismatics:sun" }
-					type: "item"
-				}
-				{
-					count: 256L
-					id: "531EA2E918CD5E57"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest16.task_5989403676476530263.title}"
 					type: "item"
 				}
 				{
@@ -762,23 +750,19 @@
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "3F13A5AEFA307A53"
-					ignoreState: false
-					layer: false
-					name: "home_siberian"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest16.task_4545158619887336019.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "107F82D0D6322B6B"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest16.title}"
+			title: "{ftbquests.chapter.building_shop.quest15.title}"
 			x: -9.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{ftbquests.chapter.building_shop.quest17.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest16.image0}"]
 			icon: "quark:spruce_chest"
 			id: "07BB9D445D97EBF5"
 			min_required_tasks: 3
@@ -786,28 +770,38 @@
 				id: "0818C4A7BA4D0066"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 16777215
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9849600
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Shed\"}"
 						}
-						isReward: 1b
-						label: "Siberian Shed"
-						mirror: "FRONT_BACK"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest17.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest16.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -817,36 +811,28 @@
 				}
 				{
 					count: 64L
-					id: "7D857B39D345C708"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest17.task_9044770914931427080.title}"
-					type: "item"
-				}
-				{
-					count: 64L
 					id: "6CEDFE469A83BBC4"
 					item: { Count: 64, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "1B8DE81E00A3027B"
-					ignoreState: false
-					layer: false
-					name: "shed_siberian"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest17.task_1985498226297602683.title}"
-					type: "questsadditions:structure"
+					count: 10L
+					id: "0FD15DD8110345ED"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest17.title}"
-			x: -1.0d
-			y: -7.0d
+			title: "{ftbquests.chapter.building_shop.quest16.title}"
+			x: -5.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{ftbquests.chapter.building_shop.quest18.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest17.image0}"]
 			icon: "quark:spruce_chest"
 			id: "35740442BFA1EBB5"
 			min_required_tasks: 3
@@ -854,26 +840,38 @@
 				id: "7C002C937DEDFDF0"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 16777215
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9849600
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Barn\"}"
 						}
-						isReward: 1b
-						label: "Siberian Barn"
-						oneUse: 1b
-						size: 19
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/barn_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest18.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest17.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -883,67 +881,66 @@
 				}
 				{
 					count: 128L
-					id: "2D48991F6CAF528B"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest18.task_3263026290276389515.title}"
-					type: "item"
-				}
-				{
-					count: 128L
 					id: "4011667932B2AACD"
 					item: { Count: 128, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "7CE87D9E3D784A89"
-					ignoreState: false
-					layer: false
-					name: "barn_siberian"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest18.task_9000581973889534601.title}"
-					type: "questsadditions:structure"
+					count: 20L
+					id: "5574521A5B42B8CD"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest18.title}"
-			x: -19.0d
-			y: -7.0d
+			title: "{ftbquests.chapter.building_shop.quest17.title}"
+			x: -13.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest19.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest19.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{ftbquests.chapter.building_shop.quest18.image0}"]
+			icon: "quark:prismarine_chest"
 			id: "094C6DED5CE8D9E5"
 			min_required_tasks: 3
 			rewards: [{
-				id: "096F0A80FF2F5BC2"
+				id: "0259E2FCFFF8E5FD"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_prismarine"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Shed\"}"
 						}
-						isReward: 1b
-						label: "Entrana Shed"
-						oneUse: 1b
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_prismarine"
+						owner: "worn"
+						owner_name: "AndieCherries"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest18.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -953,67 +950,66 @@
 				}
 				{
 					count: 64L
-					id: "7F8327BFA0ABD2E9"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest19.task_9188231368753795817.title}"
-					type: "item"
-				}
-				{
-					count: 64L
 					id: "155B88621ABDD0E2"
 					item: { Count: 64, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "26CD201AF28A9A93"
-					ignoreState: false
-					layer: false
-					name: "shed_entrana"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest19.task_2795926243777354387.title}"
-					type: "questsadditions:structure"
+					count: 10L
+					id: "52A701015E07A20F"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest19.title}"
-			x: 0.5d
-			y: -7.0d
+			title: "{ftbquests.chapter.building_shop.quest18.title}"
+			x: -7.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest20.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest20.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{ftbquests.chapter.building_shop.quest19.image0}"]
+			icon: "meadow:shelf"
 			id: "28A1164FD04782DB"
 			min_required_tasks: 3
 			rewards: [{
-				id: "7DCB4B9045C028B7"
+				id: "24B31EEC4E9FAA0C"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_alpine"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Entrana Farmhouse"
-						oneUse: 1b
-						size: 19
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_alpine"
+						owner: "worn"
+						owner_name: "Krewella"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -1022,58 +1018,63 @@
 					type: "item"
 				}
 				{
-					count: 256L
-					id: "781F85C4D09C3073"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest20.task_8655784089189363827.title}"
-					type: "item"
-				}
-				{
 					count: 512L
 					id: "45A883DE53ABE251"
 					item: { Count: 512, id: "minecraft:cobblestone" }
 					type: "item"
 				}
+				{
+					count: 40L
+					id: "46E8AA332D37B2EA"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest20.title}"
-			x: -7.5d
-			y: -1.5d
+			title: "{ftbquests.chapter.building_shop.quest19.title}"
+			x: -10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest21.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest21.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{ftbquests.chapter.building_shop.quest20.image0}"]
+			icon: "quark:prismarine_chest"
 			id: "7080056E1C1CBCE9"
 			min_required_tasks: 3
 			rewards: [{
-				id: "6DC496FBE675427F"
+				id: "70928182B6CF52B5"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_prismarine"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Barn\"}"
 						}
-						isReward: 1b
-						label: "Entrana Barn"
-						oneUse: 1b
-						size: 17
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/barn_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_prismarine"
+						owner: "worn"
+						owner_name: "AndieCherries"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -1083,67 +1084,66 @@
 				}
 				{
 					count: 128L
-					id: "3DD0601B927E197D"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest21.task_4454165703007541629.title}"
-					type: "item"
-				}
-				{
-					count: 128L
 					id: "44485C70AC8A279A"
 					item: { Count: 128, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "4F66B4C1459825A5"
-					ignoreState: false
-					layer: false
-					name: "barn_entrana"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest21.task_5721459118810080677.title}"
-					type: "questsadditions:structure"
+					count: 20L
+					id: "388C2E0CF2D38F11"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest21.title}"
-			x: -20.5d
-			y: -7.0d
+			title: "{ftbquests.chapter.building_shop.quest20.title}"
+			x: -15.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest22.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest22.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{ftbquests.chapter.building_shop.quest21.image0}"]
+			icon: "quark:prismarine_chest"
 			id: "2FBDE6A8B7ABE074"
 			min_required_tasks: 3
 			rewards: [{
-				id: "3D6BE83EEB3D826A"
+				id: "139BE8B943952346"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_prismarine"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Large Shed\"}"
 						}
-						isReward: 1b
-						label: "Entrana Large Shed"
-						oneUse: 1b
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_prismarine"
+						owner: "worn"
+						owner_name: "AndieCherries"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -1153,36 +1153,24 @@
 				}
 				{
 					count: 256L
-					id: "0B6437DBDE5E1C98"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest22.task_820842449556348056.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "4280A0C06207CAB5"
 					item: { Count: 256, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "23350EE45DB4C8D7"
-					ignoreState: false
-					layer: false
-					name: "large_shed_entrana"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest22.task_2536950339080603863.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "5A90E31DDC3523D2"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest22.title}"
-			x: 0.5d
-			y: -5.0d
+			title: "{ftbquests.chapter.building_shop.quest21.title}"
+			x: -7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{ftbquests.chapter.building_shop.quest23.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest22.image0}"]
 			icon: "quark:spruce_chest"
 			id: "5197C4847648B6A8"
 			min_required_tasks: 3
@@ -1190,26 +1178,38 @@
 				id: "18A9A2BE7CC94F7E"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 5544791
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 7105644
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Large Shed\"}"
 						}
-						isReward: 1b
-						label: "large_shed_siberian"
-						oneUse: 1b
-						size: 23
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest23.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -1219,36 +1219,24 @@
 				}
 				{
 					count: 256L
-					id: "611ADDB556F4B633"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest23.task_6997148741991183923.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "60C9CFA4CEB6374A"
 					item: { Count: 256, id: "minecraft:stone_bricks" }
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "16230A32FDEA8FEF"
-					ignoreState: false
-					layer: false
-					name: "large_shed_siberian"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest23.task_1595129907143938031.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "47A1EF8ECF70943B"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest23.title}"
-			x: -1.0d
-			y: -5.0d
+			title: "{ftbquests.chapter.building_shop.quest22.title}"
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{ftbquests.chapter.building_shop.quest24.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest23.image0}"]
 			icon: "quark:cherry_chest"
 			id: "0FB188BA0CE07CC6"
 			min_required_tasks: 3
@@ -1256,37 +1244,43 @@
 				id: "76CF6CBE5B174080"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 9926515
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Cherry Farmhouse"
-						oneUse: 1b
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest24.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest23.subtitle}"
 			tasks: [
 				{
 					count: 8L
 					id: "6F6963CE5793534D"
 					item: { Count: 8, id: "numismatics:sun" }
-					type: "item"
-				}
-				{
-					count: 256L
-					id: "3055C9D0D99D0304"
-					item: { Count: 256, id: "minecraft:oak_log" }
 					type: "item"
 				}
 				{
@@ -1296,23 +1290,19 @@
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "4D990C1F2170E75D"
-					ignoreState: false
-					layer: false
-					name: "home_cherry"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest24.task_5591513740201748317.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "7679EB6EE895BCBA"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest24.title}"
-			x: -11.0d
-			y: -1.5d
+			title: "{ftbquests.chapter.building_shop.quest23.title}"
+			x: -10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest25.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest24.image0}"]
 			icon: "quark:spruce_chest"
 			id: "4B66E59F25F6CF77"
 			min_required_tasks: 3
@@ -1320,26 +1310,38 @@
 				id: "1C9C706C6994BEB3"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 16777215
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9849600
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Siberian Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest25.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest24.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1349,36 +1351,24 @@
 				}
 				{
 					count: 256L
-					id: "748ECD105591DE48"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest25.task_8398875825131347528.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "23F34B06770DB8DC"
 					item: "minecraft:stone_bricks"
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "7E816EB036593B20"
-					ignoreState: false
-					layer: false
-					name: "deluxe_barn_siberian"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest25.task_9115688823879711520.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "0CD3011CF24405BE"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest25.title}"
-			x: -19.0d
-			y: -5.0d
+			title: "{ftbquests.chapter.building_shop.quest24.title}"
+			x: -13.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest26.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest25.image0}"]
 			icon: "quark:cherry_chest"
 			id: "46B41FB9B429E374"
 			min_required_tasks: 3
@@ -1386,26 +1376,38 @@
 				id: "57A5A89DA047C2FA"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 9926515
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Cherry Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest26.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest25.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1415,36 +1417,24 @@
 				}
 				{
 					count: 256L
-					id: "0677B1F1F18445EB"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest26.task_466036739153348075.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "0ACF0D3AD770DE2A"
 					item: "minecraft:stone_bricks"
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "1DC07A435CBAEB07"
-					ignoreState: false
-					layer: false
-					name: "deluxe_barn_cherry"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest26.task_2143847852365507335.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "7ABF5EB84A3B511F"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest26.title}"
-			x: -17.5d
-			y: -5.0d
+			title: "{ftbquests.chapter.building_shop.quest25.title}"
+			x: -14.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{ftbquests.chapter.building_shop.quest27.image0}"]
+			description: ["{ftbquests.chapter.building_shop.quest26.image0}"]
 			icon: "minecraft:chest"
 			id: "4029ADC0C59A181D"
 			min_required_tasks: 3
@@ -1452,26 +1442,38 @@
 				id: "4C61D52DDE1A5535"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn"
+						buildAnyway: 0b
 						display: {
-							color: 5055259
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest27.subtitle}"
+			subtitle: "{ftbquests.chapter.building_shop.quest26.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1481,32 +1483,3156 @@
 				}
 				{
 					count: 256L
-					id: "38ACACCC40524341"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.building_shop.quest27.task_4083828955370636097.title}"
-					type: "item"
-				}
-				{
-					count: 256L
 					id: "4BF0AF0CEFD43B23"
 					item: "minecraft:stone_bricks"
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					id: "0824FA6D72A5AA8B"
-					ignoreState: false
-					layer: false
-					name: "deluxe_barn"
-					rightclick: false
-					title: "{ftbquests.chapter.building_shop.quest27.task_586869199446846091.title}"
-					type: "questsadditions:structure"
+					count: 40L
+					id: "09BB7AFFD4A39EA7"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest26.title}"
+			x: -15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{ftbquests.chapter.building_shop.quest27.image0}"]
+			icon: "meadow:shelf"
+			id: "1B13E51438458C85"
+			min_required_tasks: 3
+			rewards: [{
+				id: "56921EA7EF94B72C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_alpine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_alpine"
+						owner: "worn"
+						owner_name: "Krewella"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest27.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "6694509D727A5D70"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "4EAE328598512C78"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "18959E5F1BB22A68"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest27.title}"
-			x: -16.0d
-			y: -5.0d
+			x: -14.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{ftbquests.chapter.building_shop.quest28.image0}"]
+			icon: "quark:ancient_chest"
+			id: "1EE50E55155925ED"
+			min_required_tasks: 3
+			rewards: [{
+				id: "468D64E988468629"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest28.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "7EAFD413176B0B1A"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "26214902F8DB666E"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "691EE59D9012A4B8"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest28.title}"
+			x: -13.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{ftbquests.chapter.building_shop.quest29.image0}"]
+			icon: "meadow:shelf"
+			id: "487A09BA84C203C5"
+			min_required_tasks: 3
+			rewards: [{
+				id: "61FB63DC201367D7"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_alpine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_alpine"
+						owner: "worn"
+						owner_name: "Krewella"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest29.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "61E52B97E11BB005"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "4963E595CB89AAD0"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "5BCECF7C6F999EBF"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest29.title}"
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{ftbquests.chapter.building_shop.quest30.image0}"]
+			icon: "quark:ancient_chest"
+			id: "1B18A02B9B3EF71A"
+			min_required_tasks: 3
+			rewards: [{
+				id: "49D9E74D3550C685"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest30.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "6919C6727EE3D34B"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "0DFD3DFA7C9C1B2A"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "5AF91E966003D57B"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest30.title}"
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{ftbquests.chapter.building_shop.quest31.image0}"]
+			icon: "quark:ancient_chest"
+			id: "5281409C93ABC5AB"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6B114022FFCCBD35"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest31.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "5F441BE615D3C402"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "3EF9B0D4CD1C3C42"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "6EA8B412C60A4F86"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest31.title}"
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{ftbquests.chapter.building_shop.quest32.image0}"]
+			icon: "quark:prismarine_chest"
+			id: "01543A85C9957430"
+			min_required_tasks: 3
+			rewards: [{
+				id: "479551B6F4087E69"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_prismarine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_prismarine"
+						owner: "worn"
+						owner_name: "AndieCherries"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest32.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "6B1DACFCB18DDE45"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "47580B163019E319"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "2E2704D6A673AA77"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest32.title}"
+			x: -11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{ftbquests.chapter.building_shop.quest33.image0}"]
+			icon: "meadow:shelf"
+			id: "36B8DAFE6620E7C6"
+			min_required_tasks: 3
+			rewards: [{
+				id: "5B2DA2951BE08B95"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_alpine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_alpine"
+						owner: "worn"
+						owner_name: "Krewella"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest33.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "22DA561DC103D748"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "34F7EF8F68CB266F"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "69167ACD45FC9D49"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest33.title}"
+			x: -6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{ftbquests.chapter.building_shop.quest34.image0}"]
+			icon: "quark:ancient_chest"
+			id: "5C1AE4AC1EC670F8"
+			min_required_tasks: 3
+			rewards: [{
+				id: "615D99D909E1DF03"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest34.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "671688842DE2BD7B"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6125ED67199DD242"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4ECCA1F0F3AF5D7C"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest34.title}"
+			x: -5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{ftbquests.chapter.building_shop.quest35.image0}"]
+			icon: "meadow:shelf"
+			id: "1FD402CC4C58E58D"
+			min_required_tasks: 3
+			rewards: [{
+				id: "5C384B4190EEFB3A"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_alpine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_alpine"
+						owner: "worn"
+						owner_name: "Krewella"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest35.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "533E1222BDF546B2"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "33B8725ACD51216C"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "14B051236972948E"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest35.title}"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{ftbquests.chapter.building_shop.quest36.image0}"]
+			icon: "quark:ancient_chest"
+			id: "118DEF3CA6FB5713"
+			min_required_tasks: 3
+			rewards: [{
+				id: "01F2922E9BB6A978"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest36.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "7996ABB2832E092B"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "12D602155DA1DE25"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "47CB0FDFB77B4ECD"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest36.title}"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["049EB48B999881A3"]
+			description: [
+				"{ftbquests.chapter.building_shop.quest37.description1}"
+				""
+				"{ftbquests.chapter.building_shop.quest37.description2}"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "minecraft:egg"
+			id: "1BAF470C2BE0A492"
+			size: 1.5d
+			tasks: [{
+				id: "62A5BE0503E59BE6"
+				title: "{ftbquests.chapter.building_shop.quest37.task_7108296515623689190.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.building_shop.quest37.title}"
+			x: -10.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest38.image0}"]
+			icon: "minecraft:chest"
+			id: "26786C93CF7A75C3"
+			min_required_tasks: 3
+			rewards: [{
+				id: "34102F22D83E5D16"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest38.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "531E9D9087F98916"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7CC3581A951DA3EE"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "518A5CB149515B70"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest38.title}"
+			x: -11.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest39.image0}"]
+			icon: "quark:cherry_chest"
+			id: "674C3D7DFF93154F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "58B4EDEC3D936173"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_cherry"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_cherry"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest39.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "3B642829761622F7"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "51299C0D628071B5"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "712EEE6B22C9F8F1"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest39.title}"
+			x: -10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest40.image0}"]
+			icon: "quark:spruce_chest"
+			id: "2705D27735C4858B"
+			min_required_tasks: 3
+			rewards: [{
+				id: "560D8581CA604817"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_siberian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_siberian"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest40.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "2AC20E1D8082AD0C"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1B02CC500E229BBC"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "238ED80C34F468C3"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest40.title}"
+			x: -9.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest41.image0}"]
+			icon: "quark:prismarine_chest"
+			id: "24F24D2941BCF17C"
+			min_required_tasks: 3
+			rewards: [{
+				id: "50E6A6292A9C6051"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_prismarine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_prismarine"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest41.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "4209EC5FA2683AD0"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0E0586D67DA3D946"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "356DD17DEC83FAEE"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest41.title}"
+			x: -11.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest42.image0}"]
+			icon: "meadow:shelf"
+			id: "03C9745F9E9D8B24"
+			min_required_tasks: 3
+			rewards: [{
+				id: "06CE6994362AE418"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_alpine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_alpine"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest42.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "6C4A680032747257"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5CC8EB1297315581"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "664A073404C74553"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest42.title}"
+			x: -10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest43.image0}"]
+			icon: "quark:ancient_chest"
+			id: "517BDCBA749E1F0F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "41012E5CEE23F9D8"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_entrana"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest43.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "276E65F335DDDF6D"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "12CCB6E07B2E1FA0"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7B0690A5DDCC6DAF"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest43.title}"
+			x: -9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{ftbquests.chapter.building_shop.quest44.image0}"]
+			icon: "minecraft:bricks"
+			id: "69490758ABE15175"
+			min_required_tasks: 3
+			rewards: [{
+				id: "1876180E47078532"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest44.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "2AD84A9289D8AD4A"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "17B9FCAB153592D7"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "5F9A6B85D235CF4A"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest44.title}"
+			x: -6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{ftbquests.chapter.building_shop.quest45.image0}"]
+			icon: "minecraft:bricks"
+			id: "5563F1AAEE97AC72"
+			min_required_tasks: 3
+			rewards: [{
+				id: "591F3C66FD947C51"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest45.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "47D47DA9CA98B191"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "1009F98847D657F7"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "083D9F4D1B1D59AB"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest45.title}"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest46.image0}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "520F3B27A8B6E7CB"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6C91767CF301CC9C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest46.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "303A46735AA49AF4"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "48644BE14B608717"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "5E9D4EAD7E3D03A7"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest46.title}"
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{ftbquests.chapter.building_shop.quest47.image0}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "1C7B6E3FADAF796F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4C40722A6E27BB96"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest47.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "72A1615EBF56BF36"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "33708CA94B2D67C7"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "15B58919DF2F9985"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest47.title}"
+			x: -14.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{ftbquests.chapter.building_shop.quest48.image0}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "2C702A38BF57AFDA"
+			min_required_tasks: 3
+			rewards: [{
+				id: "206B4E47BA26CEC0"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest48.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "08C656A8524E61C1"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "4828A81C3A7FA561"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "543B188DB5C003C3"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest48.title}"
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{ftbquests.chapter.building_shop.quest49.image0}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "284CCC590B3DAF52"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6C641B289BDC6A76"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest49.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "04F7B138810C4D26"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "4510841514826D25"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "7170D4E37A6C4632"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest49.title}"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{ftbquests.chapter.building_shop.quest50.image0}"]
+			icon: "quark:cyan_framed_glass"
+			id: "6FA681B69F95DD3D"
+			min_required_tasks: 3
+			rewards: [{
+				id: "7C9AC22947167DD8"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest50.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "3E60E71672FC824D"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "10A9C887766C0FF5"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "59CB6C652CEA90C2"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest50.title}"
+			x: -13.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest51.image0}"]
+			icon: "quark:cyan_framed_glass"
+			id: "38E4027733F17671"
+			min_required_tasks: 3
+			rewards: [{
+				id: "71D05B1CF4813241"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest51.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "41F0FC79E1811D02"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3671E7F09B074449"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6D2DF4CA7D0BD5A0"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest51.title}"
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{ftbquests.chapter.building_shop.quest52.image0}"]
+			icon: "quark:cyan_framed_glass"
+			id: "47F3725020E30F73"
+			min_required_tasks: 3
+			rewards: [{
+				id: "2F03584CD25038D1"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest52.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "48DB6F9E43F86A64"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "24C16A2738048AC3"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "22C450414901475C"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest52.title}"
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{ftbquests.chapter.building_shop.quest53.image0}"]
+			icon: "quark:cyan_framed_glass"
+			id: "053FDFA0E3AF728B"
+			min_required_tasks: 3
+			rewards: [{
+				id: "01BEEB4CB4599A64"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest53.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "259F92A7B81AB336"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "2C604B94609E05BA"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "49B3902D8137C1D0"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest53.title}"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{ftbquests.chapter.building_shop.quest54.image0}"]
+			icon: "quark:cyan_framed_glass"
+			id: "5AC27B3010B9AB76"
+			min_required_tasks: 3
+			rewards: [{
+				id: "528DC5074FD472BC"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest54.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "6DEF049F8D9445A8"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "642CF4EC2713EEAA"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "716CA091141660D7"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest54.title}"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{ftbquests.chapter.building_shop.quest55.image0}"]
+			icon: "quark:cyan_framed_glass"
+			id: "3C3C7DFB42B72A2F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "072234544AF69E9E"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest55.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "1F55613F99BA4CF2"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "2CB55BB9FBBCC3E6"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "567844B2259953A1"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest55.title}"
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{ftbquests.chapter.building_shop.quest56.image0}"]
+			icon: "minecraft:deepslate_bricks"
+			id: "3D75CA25CE21493A"
+			min_required_tasks: 3
+			rewards: [{
+				id: "06C58215EE4F4A97"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_bavarian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_bavarian"
+						owner: "worn"
+						owner_name: "Howester84"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest56.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "01023CBF5CE2C2CE"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "05F18871ED0F64D9"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "107C34500A32D960"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest56.title}"
+			x: -15.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{ftbquests.chapter.building_shop.quest57.image0}"]
+			icon: "quark:vertical_bamboo_planks"
+			id: "761D03447DFE449F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4AD07AE762A955A3"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_bamboo"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bamboo Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_bamboo"
+						owner: "worn"
+						owner_name: "aviahime"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest57.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "5C1A9577C7E85C9D"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "500CB95DB6CF786D"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "1D3BE4017018B76D"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest57.title}"
+			x: -14.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest58.image0}"]
+			icon: "minecraft:deepslate_bricks"
+			id: "660475427DB244F2"
+			min_required_tasks: 3
+			rewards: [{
+				id: "05DE27951B0C0AF9"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_bavarian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_bavarian"
+						owner: "worn"
+						owner_name: "Howester84"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest58.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "3CE703F8D1E2813D"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3C3E2241E3399196"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "34409E6837F13A24"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest58.title}"
+			x: -11.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest59.image0}"]
+			icon: "quark:vertical_bamboo_planks"
+			id: "06DA8770E428E29F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "17AEFA199819C0F3"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_bamboo"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bamboo Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_bamboo"
+						owner: "worn"
+						owner_name: "aviahime"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest59.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "26E6B7B6BECDBD79"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1C5CFDF4860AD89D"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4F91EBF5D6864B25"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest59.title}"
+			x: -10.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{ftbquests.chapter.building_shop.quest60.image0}"]
+			icon: "minecraft:deepslate_bricks"
+			id: "0857CE4957BA5627"
+			min_required_tasks: 3
+			rewards: [{
+				id: "0229BDEF21786D0D"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_bavarian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_bavarian"
+						owner: "worn"
+						owner_name: "Howester84"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest60.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "7CDDCCE104D3CB27"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "44694ACE6871F54A"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2404E5DC3646A4AE"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest60.title}"
+			x: -7.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{ftbquests.chapter.building_shop.quest61.image0}"]
+			icon: "minecraft:deepslate_bricks"
+			id: "19BE79555053EA26"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4E50E21F78E06EB7"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_bavarian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_bavarian"
+						owner: "worn"
+						owner_name: "Howester84"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest61.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "69A1B07D40175EB5"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "3788BBE85CB18151"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "60B60B4E4AEAC153"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest61.title}"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{ftbquests.chapter.building_shop.quest62.image0}"]
+			icon: "minecraft:deepslate_bricks"
+			id: "053E02ED2AC4853A"
+			min_required_tasks: 3
+			rewards: [{
+				id: "7362A3B96D5256BD"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_bavarian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_bavarian"
+						owner: "worn"
+						owner_name: "Howester84"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest62.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "252E2168D2CB3DE5"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "3923ACC13D09FD9E"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "2AF8E219A98AF491"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest62.title}"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{ftbquests.chapter.building_shop.quest63.image0}"]
+			icon: "minecraft:deepslate_bricks"
+			id: "06032CEB13B1D93C"
+			min_required_tasks: 3
+			rewards: [{
+				id: "06FFED6FFF6EE1EF"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_bavarian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_bavarian"
+						owner: "worn"
+						owner_name: "Howester84"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest63.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "735B56F1141E2682"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "0FB72082709793BC"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "1C960E37A698DCCF"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest63.title}"
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{ftbquests.chapter.building_shop.quest64.image0}"]
+			icon: "quark:vertical_bamboo_planks"
+			id: "5CC19C34EF18C98D"
+			min_required_tasks: 3
+			rewards: [{
+				id: "778FE70FD4327087"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_bamboo"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bamboo Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_bamboo"
+						owner: "worn"
+						owner_name: "aviahime"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest64.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "3EC4737877B0B00D"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "7DBDA1B61D91A55C"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "3D9DE890DC6BE085"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest64.title}"
+			x: -14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{ftbquests.chapter.building_shop.quest65.image0}"]
+			icon: "quark:vertical_bamboo_planks"
+			id: "108B1FD13737EC05"
+			min_required_tasks: 3
+			rewards: [{
+				id: "21B69A9A593168FA"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_bamboo"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bamboo Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_bamboo"
+						owner: "worn"
+						owner_name: "aviahime"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest65.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "532CB1CB02BBEF90"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "51412E6D280C72B4"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "180C98A35FB3AA05"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest65.title}"
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{ftbquests.chapter.building_shop.quest66.image0}"]
+			icon: "quark:vertical_bamboo_planks"
+			id: "6A7A71EC084AF0BB"
+			min_required_tasks: 3
+			rewards: [{
+				id: "0AFC2A750DE06242"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_bamboo"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bamboo Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_bamboo"
+						owner: "worn"
+						owner_name: "aviahime"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest66.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "13A90DAB5AEEFF79"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "0355593E1EC1F675"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "33D9C163F7BF6077"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest66.title}"
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{ftbquests.chapter.building_shop.quest67.image0}"]
+			icon: "quark:vertical_bamboo_planks"
+			id: "3C315C59E797FDCB"
+			min_required_tasks: 3
+			rewards: [{
+				id: "49D09D9627D6D560"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_bamboo"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bamboo Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_bamboo"
+						owner: "worn"
+						owner_name: "aviahime"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest67.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "085AF346E6C2916B"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "64A6193BE28E8946"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "661972315B32EBEC"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest67.title}"
+			x: -6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{ftbquests.chapter.building_shop.quest68.image0}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "4D3D8CD6FFFBBAF6"
+			min_required_tasks: 3
+			rewards: [{
+				id: "3EFDB1157717B657"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest68.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "2C735FCE45A3F9D7"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "33B40F358EA74D1A"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "1063CE46A772CE34"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest68.title}"
+			x: -13.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest69.image0}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "2C51358614E10FE9"
+			min_required_tasks: 3
+			rewards: [{
+				id: "546AE74E3FE974DE"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest69.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "190B0C7F63ABAEBB"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2C916288B9F7A932"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "15C33D4402FD8A78"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest69.title}"
+			x: -9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{ftbquests.chapter.building_shop.quest70.image0}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "4B66EF0879248ABE"
+			min_required_tasks: 3
+			rewards: [{
+				id: "0DD7309EC020B069"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest70.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "4353EFEF4737F2C1"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3E10269D997F8238"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "109EF48FB88841A6"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest70.title}"
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{ftbquests.chapter.building_shop.quest71.image0}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "49BFE2655BB149AA"
+			min_required_tasks: 3
+			rewards: [{
+				id: "2F86C3CB08DA196C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest71.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "273DC1E0A8E9FE78"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "320AAC27C2955E7A"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "0B55DC4785F34343"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest71.title}"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{ftbquests.chapter.building_shop.quest72.image0}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "24B098107A13D2F1"
+			min_required_tasks: 3
+			rewards: [{
+				id: "7AD2D7278B9FD9A4"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest72.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "7501B35A31E84894"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "45336085558AE5CB"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "73E7724C970EAA0D"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest72.title}"
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{ftbquests.chapter.building_shop.quest73.image0}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "091D496B90F43A3C"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4625CAF906102043"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_arid"
+						owner: "worn"
+						owner_name: "Saphichu"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest73.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "34F04072F1F0902E"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "20467314E523E98E"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "4DDF191A5CA524D7"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest73.title}"
+			x: -13.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"

@@ -1,0 +1,1139 @@
+{
+	autofocus_id: "5A369FC904BCF5EE"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iv__prismatic_farming"
+	group: "457DCF55318282CA"
+	icon: "society:prismatic_shard"
+	id: "2B2A6AA10AFF0156"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2F83B8F22344FAD7"]
+			description: [
+				"The final layer of the &6Skull Cavern&r holds two different biomes."
+				""
+				"One of them is the &6Umbra Barrens&r, a place you might find familiar from another world..."
+				""
+				"&oIf you haven't noticed there is no End in Sunlit Valley.&r"
+			]
+			id: "146475549DD7BF4A"
+			rewards: [{
+				id: "16FA21060F818568"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				biome: "society:umbra_barrens"
+				icon: "minecraft:end_stone"
+				id: "52727B8A0D17120B"
+				title: "Visit the Umbra Barrens"
+				type: "biome"
+			}]
+			title: "The Bottom of the Skull Cavern"
+			x: -4.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["0DC68C5CF6D82372"]
+			description: ["&6Jade&r can be found from &6Omni Geode Nodes&r. It's an expensive mineral used for a handful of useful crafts."]
+			id: "0E4EA6B5E8E6361C"
+			rewards: [{
+				id: "589BBF90DAD504D7"
+				item: "society:jade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "288F14D3BD201355"
+				item: "society:jade"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["38AC25E172172654"]
+			description: ["The final tier of Sprinkler, the &6Iridium Sprinkler&r has the highest range out of any."]
+			id: "6635A53C7AF81CB3"
+			rewards: [{
+				id: "494951B9286CC669"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58304EBAF06978FC"
+				item: "dew_drop_farmland_growth:netherite_sprinkler"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["3FA607115DB107D9"]
+			description: [
+				"Mining Sandstone and lower types of &6Boulders&r in the Skull Cavern has a small chance to yield &6Iridium Scrap&r. The lower you dive, the higher the chance it drops."
+				""
+				"&oYou may even find Iridium Ore at the lowest levels...&r"
+			]
+			id: "4564673A6912E917"
+			rewards: [{
+				id: "034A85215B26EE9D"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65C1369C4D45E546"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"0E4EA6B5E8E6361C"
+				"3C61AB99F40B709F"
+			]
+			description: [
+				"The &6Aging Cask&r ages items over large periods of time, multiplying their sell value by &64&r."
+				""
+				"Wine will take take &610&r days to age, while other items like Beer, Whisky, and Cheese take a shorter amount of time."
+			]
+			id: "40AD1233DF08EBCC"
+			rewards: [{
+				id: "0CF9290B08560164"
+				item: "society:jade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "39FA5736FEC4E918"
+				item: "society:aging_cask"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 14.5d
+		}
+		{
+			description: [
+				"&dPrismatic Shards&r are the ultimate form of power on Sunlit Valley."
+				""
+				"They craft into many of the most powerful items, and have various hidden uses. "
+				""
+				"They can be found more commonly the lower you go into the Skull Cavern, and can also be recieved from specific Skills."
+			]
+			id: "6412C4FB8294A6E2"
+			rewards: [{
+				count: 16
+				id: "3F51F04ABA052D79"
+				item: "snowyspirit:glow_lights_prismatic"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "69082C0613DBB6E6"
+				item: "society:prismatic_shard"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6412C4FB8294A6E2"]
+			description: [
+				"The &6Master Cultivator&r villager can be made using a special cooking pot crafted from a &dPrismatic Shard&r."
+				""
+				"Higher value crops are sold by this villager, as well as expensive fruit trees."
+			]
+			id: "283AF4C18CF3880D"
+			rewards: [{
+				id: "6696DACF68498C87"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1436D5607671A4CA"
+				item: "candlelight:cooking_pot"
+				type: "item"
+			}]
+			title: "Advanced Crops"
+			x: -11.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6412C4FB8294A6E2"]
+			description: [
+				"The &6Exotic Trader&r villager's workstation can be crafted with a &dPrismatic Shard&r."
+				""
+				"It will trade various farm items for Machine upgrades. These upgrades add special effects when applied to the machine."
+				""
+				"There are also some handy utility trades for useful but annoying to obtain items, such as Wither Skeleton Skulls."
+			]
+			icon: "minecraft:fletching_table"
+			id: "41C453E806763C4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24BFB48AD8A08D85"
+				table_id: 6097669691163803424L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "2E54E4D447F32B2E"
+					item: "minecraft:fletching_table"
+					type: "item"
+				}
+				{
+					id: "67FE1BE1B3199D1B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "society:sea_biscut"
+								}
+								{
+									Count: 1b
+									id: "society:broken_clock"
+								}
+								{
+									Count: 1b
+									id: "society:ancient_cog"
+								}
+								{
+									Count: 1b
+									id: "society:ancient_roe"
+								}
+								{
+									Count: 1b
+									id: "society:infinity_worm"
+								}
+								{
+									Count: 1b
+									id: "society:frosted_tip"
+								}
+								{
+									Count: 1b
+									id: "society:inserter"
+								}
+								{
+									Count: 1b
+									id: "society:cordycep"
+								}
+								{
+									Count: 1b
+									id: "society:black_opal"
+								}
+								{
+									Count: 1b
+									id: "society:stone_hand"
+								}
+								{
+									Count: 1b
+									id: "society:tiny_gnome"
+								}
+							]
+						}
+					}
+					title: "Any Upgrade"
+					type: "item"
+				}
+			]
+			title: "Machine Upgrades"
+			x: -12.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["41C453E806763C4F"]
+			description: [
+				"Getting to the bottom of the &6Skull Cavern&r can be a challenge. &6Magic Rope&r can be obtained from the Exotic Trader to instantly teleport you to the next layer down. "
+				""
+				"It can also be crafted into a &6Magic Tunnel&r, which teleports you to adjacent caves."
+			]
+			icon: "society:magic_rope"
+			id: "1A81A877A381DB97"
+			rewards: [{
+				count: 2
+				id: "03FBDCD4230B5F36"
+				item: "society:magic_rope"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7BC5B7D2CA05F1FC"
+					item: "society:magic_rope"
+					type: "item"
+				}
+				{
+					id: "7B61EB8AE7870571"
+					item: "society:magic_tunnel"
+					type: "item"
+				}
+			]
+			title: "Descending Faster"
+			x: -12.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6A94BB4CB99D814E"]
+			description: [
+				"Mining ore in the Skull Cavern has a chance to drop &6Omni Geodes&r."
+				""
+				"They can be extracted for any tier of mineral, and have a chance to drop &6Iridium Scrap&r and &dPrismatic Shards&r when extracted."
+			]
+			id: "115795B60C6CA0ED"
+			rewards: [{
+				count: 4
+				id: "45D17A044792C909"
+				item: "betterarcheology:bomb"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45C48ED92B2075B0"
+				item: "society:omni_geode"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7B26713E5E4E25CB"]
+			description: ["Infused with the energy of &dSparkstone&r, the &6Cornucopia&r causes nearby fruit trees to drop their fruits in a large radius around you when used."]
+			id: "4E5BF157FDA7490A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "167474A1E9459387"
+				table_id: 2467450565259284777L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "262D19FF5BE49481"
+				item: "society:cornucopia"
+				type: "item"
+			}]
+			title: "Easier Fruit Tree Harvesting"
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			description: [
+				"As you dive deeper into the Skull Cavern, you might encounter something called &dSparkstone&r."
+				""
+				"It is a gem filled with intense energy that can be used to power advanced farming equipment for automation."
+			]
+			id: "7B26713E5E4E25CB"
+			rewards: [{
+				id: "7A27688C970441D2"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "2872389F0A2BEB89"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			title: "The Automation Era"
+			x: 2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7B26713E5E4E25CB"]
+			description: [
+				"The &6Fish Pond Basket&r is a machine powered by &dSparkstone&r that can automate collection from adjacent &6Fish Ponds&r!"
+				""
+				"It requires sparkstone in its inventory and an inventory below it to deposit items."
+			]
+			id: "42B424793E1E91D3"
+			rewards: [{
+				id: "43ED0EB0377903E0"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20CA021C8F42B190"
+				item: "society:fish_pond_basket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7B26713E5E4E25CB"]
+			description: [
+				"The &6Artisan Hopper&r is a machine powered by &dSparkstone&r that can automate collection from adjacent &6Artisan Machines&r!"
+				""
+				"Items placed in the inventory above it will automatically be inserted into nearby Artisan Machines that can take those items, no filtering needed!"
+				""
+				"It requires sparkstone in its inventory and an inventory below it to deposit items."
+			]
+			icon: "society:artisan_hopper"
+			id: "4759B2BFFF26E78F"
+			min_required_dependencies: 1
+			min_required_tasks: 1
+			rewards: [{
+				count: 8
+				id: "54C087DFC457C8B3"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			subtitle: "Now in Mini form!"
+			tasks: [
+				{
+					id: "5B988B04E253D0CA"
+					item: "society:artisan_hopper"
+					type: "item"
+				}
+				{
+					id: "0CCDEEBEF03B0BD2"
+					item: "society:mini_artisan_hopper"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7B26713E5E4E25CB"]
+			description: [
+				"The &6Auto-Grabber&r is a machine powered by &dSparkstone&r that can automate collection from husbandry farm animals!"
+				""
+				"Unlike Create Deployers, these devices use any Husbandry skills you might have unlocked, and animals don't lose happiness from harvesting!"
+				""
+				"It requires sparkstone in its inventory and an inventory below it to deposit items."
+				""
+				"It can be upgraded with Magic Shears to automatically harvest meat, though this does reduce their affection if they aren't pet every day."
+			]
+			id: "4D1F2652FD9DEF69"
+			rewards: [{
+				count: 8
+				id: "166F86F1B96C8759"
+				item: "society:sparkstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B6C4C3AEC3F8F2D"
+				item: "society:auto_grabber"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"The one thing that stands between you and mining wealth is the &6Skull Cavern Teleporter&r."
+				""
+				"As you mine &6Boulders and Ore&r you'll find ropes going down, taking you to more dangerous and rewarding areas. "
+				""
+				"&cStaying in the Skull Cavern overnight is dangerous.&r"
+				""
+				"&c&lYou will faint and be sent home if you're inside it past 5:50 AM.&r"
+			]
+			icon: "society:skull_cavern_teleporter"
+			id: "5A369FC904BCF5EE"
+			size: 1.5d
+			subtitle: "Complete the Vault Bundle"
+			tasks: [{
+				dimension: "society:skull_cavern"
+				icon: "minecraft:skeleton_skull"
+				id: "53F45DEC3FD0866C"
+				title: "Enter the Skull Cavern"
+				type: "dimension"
+			}]
+			title: "The Skull Cavern"
+			x: -4.5d
+			y: 6.75d
+		}
+		{
+			dependencies: ["0DC68C5CF6D82372"]
+			description: [
+				"&6Lead&r is a grating ore that begins to spawn in the frozen layer. When broken, it spawns clouds of brain damage unless adjacent to water."
+				""
+				"&oThere may be ways to mitigate this risk...&r"
+				""
+				"Its main use is heavy machinery, particularly in the Create mod."
+			]
+			id: "3C61AB99F40B709F"
+			rewards: [{
+				count: 4
+				id: "0FFE1A6FD3B741BB"
+				item: "candlelight:harvest_plate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A9B2BB9B94A06CB"
+				item: "oreganized:raw_lead"
+				type: "item"
+			}]
+			title: "Coughing and Spitting"
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["5A369FC904BCF5EE"]
+			description: [
+				"The first layer of the Skull Cavern is relatively safe. It contains a variety of overworld ores, and it doesn't present much danger to you."
+				""
+				"&oYou should aim to get through this area as fast as possible...&r"
+			]
+			id: "6A94BB4CB99D814E"
+			rewards: [{
+				id: "66841DEAD5EDBE16"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				block: "society:stone_boulder"
+				block_type: 0
+				checkItem: false
+				id: "41E4A7710122FD0C"
+				type: "questsadditions:break"
+				value: 1L
+			}]
+			title: "Layer I - The Cavern Shallows"
+			x: -4.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6A94BB4CB99D814E"]
+			description: [
+				"The second layer consists of two different ice biomes: the Frozen Caves and Frozen Maelstrom. By now you may have noticed two things:"
+				""
+				"- Certain mobs only spawn in certain biomes"
+				"- Blocks you place in the Skull Cavern don't get destroyed overnight."
+				""
+				"Use these facts to your advantage to get lower faster, especially since this layer will start to be a real challenge from mobs..."
+			]
+			id: "0DC68C5CF6D82372"
+			rewards: [{
+				count: 2
+				id: "522C17343C0A45AB"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				block: "society:ice_boulder"
+				block_type: 0
+				checkItem: false
+				id: "6EF00A20A9462000"
+				type: "questsadditions:break"
+				value: 1L
+			}]
+			title: "Layer II - Frozen Depths"
+			x: -4.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0DC68C5CF6D82372"]
+			description: [
+				"The third layer will greatly test your ability to survive. You'll start to encounter &6Iridium Scrap&r, &6Silver&r, and a variety of deadly new enemies that can efficiently kill you."
+				""
+				"If you're struggling to survive here, you should focus on getting better gear. "
+				""
+				"In particular, things that will allow you to get around faster like hooks and attack from range like bows will be key."
+			]
+			id: "3FA607115DB107D9"
+			rewards: [{
+				id: "55976A2122FF8914"
+				item: "numismatics:sun"
+				type: "item"
+			}]
+			tasks: [{
+				block: "society:sandstone_boulder"
+				block_type: 0
+				checkItem: false
+				id: "27B7C7049FF1F53D"
+				type: "questsadditions:break"
+				value: 1L
+			}]
+			title: "Layer III - The Deep Desert"
+			x: -4.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["3FA607115DB107D9"]
+			description: [
+				"The fourth and final layer of the Skull Cavern is made up of the Umbra Barrens and Blackstone Caves. "
+				""
+				"Both provide a unique set of ores, but you might not have enough time in the day to efficiently mine them."
+				""
+				"You can also find &6Skull Cavern Teleports&r down at this layer, allowing you to instantly leave without penalty."
+			]
+			icon: "society:end_stone_boulder"
+			id: "2F83B8F22344FAD7"
+			min_required_dependencies: 1
+			rewards: [{
+				count: 2
+				id: "3282B024758E1B42"
+				item: "numismatics:sun"
+				type: "item"
+			}]
+			tasks: [
+				{
+					block: "society:blackstone_boulder"
+					block_type: 0
+					checkItem: false
+					id: "4239A35022824728"
+					type: "questsadditions:break"
+					value: 1L
+				}
+				{
+					block: "society:end_stone_boulder"
+					block_type: 0
+					checkItem: false
+					id: "3CA57068C39098E2"
+					type: "questsadditions:break"
+					value: 1L
+				}
+			]
+			title: "Layer IV - The Final Depth"
+			x: -4.5d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"214BFF5CB710FFE2"
+				"38AC25E172172654"
+			]
+			description: [
+				"Expensive and slow, the &6Crystalarium&r will duplicate any gem or mineral placed inside. The amount of days to complete will depend on the inserted item."
+				""
+				"They should be your first goal if you dislike mining for crafting minerals."
+			]
+			id: "7D25F7C2281DBCD0"
+			rewards: [{
+				id: "7ACB99673EA78200"
+				item: "society:mining_monthly"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BEAF5EF4A3B8977"
+				item: "society:crystalarium"
+				type: "item"
+			}]
+			title: "Growing Crystals"
+			x: -8.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["3FA607115DB107D9"]
+			description: [
+				"&6Silver Ore&r is an elusive ore that starts to spawn in the third layer."
+				""
+				"It is used in mass quantities for delicate electronics in &6Create&r, but otherwise is used decoratively. "
+			]
+			id: "4A96DC00D7D0CAD6"
+			rewards: [{
+				id: "5B09A9E60F4AD7DA"
+				item: "numismatics:sun"
+				type: "item"
+			}]
+			tasks: [{
+				id: "688B05AFD742D910"
+				item: "oreganized:raw_silver"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"632578AFE8A0D12D"
+				"38AC25E172172654"
+			]
+			description: [
+				"During exploration you may have come across a &6Slime Heart&r. These are precious items that can be used to begin Slime Incubating!"
+				""
+				"To start, right click a &6Slime Incubator&r with the heart."
+			]
+			icon: "splendid_slimes:slime_incubator"
+			id: "62CB7BAB9BBB4030"
+			rewards: [{
+				id: "130DFC5746CD789A"
+				item: "splendid_slimes:slime_ticket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6E66E78EAC35C439"
+					item: "splendid_slimes:slime_incubator"
+					type: "item"
+				}
+				{
+					id: "101FB480709F5DFB"
+					item: "splendid_slimes:slime_heart"
+					type: "item"
+				}
+			]
+			title: "Slime Incubating"
+			x: -6.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["38AC25E172172654"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Slimes cannot reproduce by breeding. Instead, their &6Plorts&r must be pressed into another &6Slime Heart&r using a &6Plort Press&r."
+				""
+				"Hearts can also be combined to make new ones using the top and bottom slots."
+				""
+				"&oHearts are worth twice as much as their Plort!&r"
+			]
+			hide_dependency_lines: false
+			id: "4ABFC024D15BFC10"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "013B5B6DDFC50CD9"
+				table_id: 2207679701817321554L
+				type: "random"
+			}]
+			tasks: [{
+				id: "080ED1B31DF3E9F2"
+				item: "splendid_slimes:plort_press"
+				type: "item"
+			}]
+			title: "Pressit!"
+			x: -6.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["4564673A6912E917"]
+			description: [
+				"&6Iridium Scrap&r can be combined with &6Bismuth Ingots&r to create &6Iridium Ingots&r, an extremely durable alloy."
+				""
+				"It can be made into some of the most powerful machinery and armor in the Sunlit Valley. "
+			]
+			id: "38AC25E172172654"
+			rewards: [{
+				id: "3E34C59B31A159AD"
+				item: {
+					Count: 1
+					id: "nethervinery:netherite_nectar"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "127ADEE09CA25855"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"214BFF5CB710FFE2"
+				"38AC25E172172654"
+			]
+			description: [
+				"The &6Auto-Cheese Press&r is an automated version of the &6Artisan Cheese Press&r. Hoppers can be used to insert and extract out of it."
+				""
+				"Unlike the base version, it requires &6Rennet&r for the production of cheeses and does not carry over quality. "
+			]
+			id: "4092A4464F986217"
+			rewards: [{
+				count: 16
+				id: "55E860F5FB918453"
+				item: "meadow:rennet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "249CCE95116AE9B8"
+				item: "meadow:cheese_form"
+				type: "item"
+			}]
+			title: "Automated Cheese"
+			x: -8.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["41C453E806763C4F"]
+			description: [
+				"The &6Ancient Fruit&r is an extremely valuable farmland crop with a long growing time."
+				""
+				"Upgrading a &6Seed Maker&r with an &6Ancient Cog&r will give you a chance to get its seed with every harvest."
+			]
+			icon: "society:ancient_cog"
+			id: "5558DB4DE54C890D"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "46175F1CF1C87A2E"
+				item: "society:seed_maker"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6062C4A31D0BC480"
+					item: "society:ancient_cog"
+					type: "item"
+				}
+				{
+					id: "0CB5981FD6CF3E3D"
+					item: "society:ancient_fruit_seed"
+					type: "item"
+				}
+			]
+			title: "Cogs of the Ancients"
+			x: -11.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5558DB4DE54C890D"]
+			description: ["&6Ancient Fruits&r take an excrutiatingly long time to grow. It's best to focus on getting more seeds with the first few harvests before jumping into profits."]
+			id: "72CCDB6B078E8908"
+			rewards: [{
+				id: "724608884B0BFC47"
+				item: "society:ancient_fruit_seed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "499FB1276ABDD43C"
+				item: "society:ancient_fruit"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["4A96DC00D7D0CAD6"]
+			description: [
+				"The &6Scribe&r can be used to break glass fast and always drop it. It can also be used to create grooves in ice."
+				""
+				"Very useful for moving your greenhouse."
+			]
+			id: "6C729A76F44E32D0"
+			rewards: [{
+				id: "61B2573C969032BE"
+				item: "moreminecarts:chiseled_organic_glass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70219D7E929580DB"
+				item: {
+					Count: 1
+					id: "oreganized:scribe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["0E4EA6B5E8E6361C"]
+			description: [
+				"&6Hyper Fertilizer&r is the fastest and most expensive of them all, shortening grow times by 3 days."
+				""
+				"It can be used for painfully slow growing crops, or to make quickly growing crops a daily harvest."
+			]
+			id: "52A790F80019F520"
+			rewards: [{
+				id: "0FFE0D3F83EB0BCD"
+				item: "society:bonefish_bait"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A255EE6EF6BBB75"
+				item: "dew_drop_farmland_growth:hyper_fertilizer"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["41C453E806763C4F"]
+			description: [
+				"The &6Black Opal&r upgrade can be used on a &6Crystalarium&r to let it produce Pristine versions of the mineneral or gem grown."
+				""
+				"Not only are these more valuable, but they can also be broken down into multiple of the basic versions."
+			]
+			id: "0E13E56F342F243F"
+			rewards: [{
+				id: "14F813AF1E11DC78"
+				item: "society:pristine_opal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D6BBB724045158A"
+				item: "society:black_opal"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0E13E56F342F243F"]
+			description: [
+				"&6Pristine Quality Fertilizer&r has the highest chance for quality possible."
+				""
+				"When combined with diamond quality seeds, it practicially garuntees you'll get high quality crops."
+			]
+			id: "35A8A8F8898AE3E5"
+			tasks: [{
+				id: "747623C805336417"
+				item: "dew_drop_farmland_growth:pristine_quality_fertilizer"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["63F8C52D082BBCB3"]
+			description: [
+				"&6Growth Obelisks&r are a farmer's best friend, harnessing Ribbit magic to grow crops in a wide area around them every morning at 7am."
+				""
+				"Every time they work, they consume 1 &6Spark-Gro&r, a delicate mix of fertilizers and &6Sparkstone&r."
+			]
+			icon: "society:growth_obelisk"
+			id: "003782D1F1A74349"
+			rewards: [{
+				count: 4
+				id: "790571F89800F098"
+				item: "society:spark_gro"
+				type: "item"
+			}]
+			subtitle: "It's what plants crave"
+			tasks: [
+				{
+					id: "3359F8B677711ADC"
+					item: "society:growth_obelisk"
+					type: "item"
+				}
+				{
+					id: "67967E61D688C162"
+					item: "society:spark_gro"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["4A96DC00D7D0CAD6"]
+			description: [
+				"The &dMagic Bulb&r is a strange device capable of harnessing the sun."
+				""
+				"It will require studying of all three ribbit artifacts to craft."
+			]
+			id: "63F8C52D082BBCB3"
+			rewards: [{
+				id: "22565FBE1DC78158"
+				item: "society:artifact_trove"
+				type: "item"
+			}]
+			tasks: [{
+				id: "51DEE1103CE40AB2"
+				item: "society:magic_bulb"
+				type: "item"
+			}]
+			title: "Ribbit Sun Magic"
+			x: -1.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3C61AB99F40B709F"]
+			description: [
+				"&6Lead&r is a sturdy enough material to build trains in your world!"
+				""
+				"Unlike what you may be used to, trains from Create do not require create progress or power."
+				""
+				""
+				"{ \"text\": \"More information can be found here.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"53836B96EE81A695\" } }"
+			]
+			id: "53C771625381F8F8"
+			rewards: [{
+				id: "648E24CF711DD824"
+				item: "society:ribbit_gadget"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B94672A2238F6EC"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["7B26713E5E4E25CB"]
+			description: [
+				"&6Garden Pots&r grow planted crops indoors during any season, making them a cheap and decorative alternative to &6Greenhouse Glass&r."
+				""
+				"The catch? Sprinklers can't hydrate them, though Garden Pots will never dry out and break your crop. &6Deluxe Hydrating Fertilizer&r can be used to keep them watered forever."
+			]
+			id: "33BD4404990D4D89"
+			rewards: [{
+				count: 2
+				id: "280FC65D6624C825"
+				item: "dew_drop_farmland_growth:garden_pot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F3C5B69FBD0192F"
+				item: "dew_drop_farmland_growth:garden_pot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6412C4FB8294A6E2"]
+			description: ["The &6Mystical Botanist&r villager sells expensive but incredibly useful magic items for your farm."]
+			id: "0C32D3E205443F0F"
+			rewards: [{
+				id: "3E9C4B4AB7D540B2"
+				item: "society:tanuki_leaf"
+				type: "item"
+			}]
+			tasks: [{
+				id: "401197E781DCCDC8"
+				item: "beautify:botanist_workbench"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0C32D3E205443F0F"]
+			description: [
+				"Once the Community Center is complete, excluding the Abandoned Farm, the &6Mystical Botanist&r villager will sell you a &6Ribbit Hut&r!"
+				""
+				"This building houses Ribbits that can use their powerful magic to harvest crops in a large area around it without any upkeep!"
+				""
+				"This is a large building, requiring a 3x3x3 area of space to place. You can access its inventory from the door block."
+			]
+			id: "4AAC2F98960E49A7"
+			rewards: [
+				{
+					id: "0055FC250B11E0A0"
+					item: "ribbits:ribbit_sorcerer_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "7848173096FA0405"
+					item: "ribbits:ribbit_nitwit_spawn_egg"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "63EB3001225261A5"
+				item: "society:ribbit_hut"
+				type: "item"
+			}]
+			title: "Ribbit Harvesting"
+			x: -14.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["38AC25E172172654"]
+			description: [
+				"The &6Advanced Wine Keg&r offers more complex but faster winemaking."
+				""
+				"To start, use the &6Grapevine Pot&r to make juice. You can hold &6W&r while hovering to see how."
+				""
+				"&oSeeds can be planted on Grass or Grapevine Stems. Jungle Seeds need Lattices.&r"
+			]
+			icon: "vinery:fermentation_barrel"
+			id: "506B32619EB8477F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33A9A1A691675DA7"
+					table_id: 8298743981735202683L
+					type: "choice"
+				}
+				{
+					count: 8
+					id: "677FB0F6F906FCDA"
+					item: "vinery:grapevine_stem"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "55395074B1C31027"
+					item: "vinery:spruce_lattice"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "123ECB8B6E58D6DD"
+					item: "vinery:fermentation_barrel"
+					type: "item"
+				}
+				{
+					id: "3012554BB871A2D7"
+					item: "vinery:grapevine_pot"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["506B32619EB8477F"]
+			description: [
+				"&6Advanced Wine Kegs&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				""
+				"Recipes can use the following juices:"
+				""
+				"- &cRed&r/&aWhite&r grape juice"
+				"- &cCrimson&r/&aWarped&r grape juice"
+				"- &eApple Juice&r (made using an Apple Press)"
+				""
+				"Juices are inserted in the top left slot of the Fermentation Barrel."
+			]
+			icon: "vinery:red_grapejuice"
+			id: "094497558E9DB19C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B7CCCDAF7C48D42"
+				table_id: 8298743981735202683L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "6F925B01C27987B2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "vinery:white_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:red_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:warped_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "nethervinery:crimson_grapejuice"
+							}
+							{
+								Count: 1b
+								id: "vinery:apple_juice"
+							}
+						]
+					}
+				}
+				title: "Any Fermentation Barrel juice"
+				type: "item"
+			}]
+			title: "Juicing up the Wine"
+			x: -7.5d
+			y: 22.5d
+		}
+	]
+	title: "IV - Prismatic Farming"
+}

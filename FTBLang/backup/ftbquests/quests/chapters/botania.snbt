@@ -11,14 +11,12 @@
 		}
 	}
 	id: "7D5C355F4BB66AE9"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"Completing the &6Abandoned Farm&r yields a device used for elvish flower magic. It's difficult to obtain, but studying this magic will undoubtedly be useful for developing your farm."
-				""
-				"The &6Mystical Botanist&r also has one of these for sale at a high markup."
+				"Completing the &6Abandoned Farm&r yields a device used for elvish flower magic. It's difficult to obtain but studying this magic will undoubtly be useful to developing your farm."
 				""
 				"The &6Lexica Botania&r will tell you most things you need to know about magic, and this questline will highlight Sunlit Valley specific applications."
 				""
@@ -141,7 +139,7 @@
 				type: "item"
 			}]
 			title: "Elven Fruits"
-			x: 16.5d
+			x: 17.5d
 			y: -1.5d
 		}
 		{
@@ -181,7 +179,7 @@
 				}
 			]
 			title: "Gateway to Alfheim"
-			x: 15.5d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
@@ -204,7 +202,7 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
@@ -269,7 +267,7 @@
 				type: "item"
 			}]
 			title: "Terrasteel Armor"
-			x: 12.5d
+			x: 13.5d
 			y: 1.5d
 		}
 		{
@@ -324,7 +322,7 @@
 				type: "item"
 			}]
 			title: "Terra Tools"
-			x: 14.5d
+			x: 15.5d
 			y: 1.5d
 		}
 		{
@@ -415,8 +413,8 @@
 				item: "society:botanical_tribute"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.0d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1BF054DD14781BAD"]
@@ -459,8 +457,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
@@ -482,7 +480,7 @@
 				item: "botania:mana_diamond"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 1.0d
 		}
 		{
@@ -499,7 +497,7 @@
 				item: "botania:mana_pearl"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -565,7 +563,7 @@
 				}
 			]
 			title: "Magical Weather Shells"
-			x: 10.0d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
@@ -592,7 +590,7 @@
 				type: "item"
 			}]
 			title: "Crafting Runes"
-			x: 9.5d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -615,7 +613,7 @@
 				type: "item"
 			}]
 			title: "The Mystical Arena"
-			x: 19.0d
+			x: 19.5d
 			y: 0.0d
 		}
 		{
@@ -638,7 +636,7 @@
 				type: "item"
 			}]
 			title: "Magical Harvesting"
-			x: 16.5d
+			x: 17.5d
 			y: 1.5d
 		}
 		{
@@ -668,7 +666,7 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -698,7 +696,7 @@
 				type: "item"
 			}]
 			title: "Functional Flora"
-			x: 10.0d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -720,7 +718,7 @@
 				type: "item"
 			}]
 			title: "Mana Milking"
-			x: 13.5d
+			x: 15.5d
 			y: -1.5d
 		}
 		{
@@ -752,14 +750,13 @@
 				type: "item"
 			}]
 			title: "Generating Flora"
-			x: 6.0d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
 			dependencies: [
 				"221306DB217B8F93"
 				"5E5E6E09E6C6DF02"
-				"1D1F8EA9D17BCF81"
 			]
 			description: ["&6Mystical Flowers&r cannot be found in the world and &6Floral Fertilizer&r are disabled in this pack. Don't bother searching for hours around the world for either! "]
 			icon: "botania:orange_mystical_flower"
@@ -772,6 +769,172 @@
 			title: "Why can't I find Mystical Flowers?"
 			x: -5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["33B78DFDDC041570"]
+			description: [
+				"Infusing &6Animal Feed&r with mana by dropping it into a &6Mana Pool&r makes it tastier to farm animals!"
+				""
+				"It takes a decent amount of mana to make, but it will save you tons of time when raising new animals."
+			]
+			id: "631D3F5020956DD7"
+			rewards: [{
+				count: 4
+				id: "74BCC347C67AF91F"
+				item: "society:mana_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C39686522168FA9"
+				item: "society:mana_feed"
+				type: "item"
+			}]
+			title: "Mana Feed"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B0A3083FFE1416B"]
+			description: [
+				"The &6Galliraptor&r and &6Tri-Bull&r are mysterious farm animals conjured from massive amounts of mana."
+				""
+				"You'll need an &bentire Mana Pool&r worth of mana to summon one, alongside an array of animal products to graft onto the hungry rune."
+			]
+			icon: "farmlife:galliraptor_spawn_egg"
+			id: "656E19A85C1146B4"
+			rewards: [{
+				id: "2ACF2741BA79BC87"
+				item: "society:candied_animal_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B98D183C624AEA4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "farmlife:domestic_tribull_spawn_egg"
+							}
+							{
+								Count: 1b
+								id: "farmlife:galliraptor_spawn_egg"
+							}
+						]
+					}
+				}
+				title: "Any Magical Farm Animal Crate"
+				type: "item"
+			}]
+			title: "Magical Animals"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13A0704DCABC95E9"]
+			description: [
+				"Sparkstone is not an easy resource to aquire. &bMana&r can be used to harness the remnants from Sparkstone consuming machines."
+				""
+				"&6Sparkstone Recyclers&r can be attached to any side of the machine. The recycling chance stacks additively for each of them attached."
+				""
+				"Mana Spreaders must be used to give them &bMana&r."
+			]
+			id: "52AB7E364A737557"
+			rewards: [{
+				id: "33ADB279EAF02CC2"
+				item: "botania:mana_pylon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "485786DF564CFDD5"
+				item: {
+					Count: 1
+					id: "society:sparkstone_recycler"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 21.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["13A0704DCABC95E9"]
+			description: [
+				"The &6Flugel Tiara&r is one of the few forms of creative flight in Sunlit Valley."
+				""
+				"It consumes &bMana&r from rings or tablets in your inventory, and a dash can be performed by double tapping the directional keys."
+				""
+				"&oMight need some extra pocket change to afford making this...&r"
+			]
+			id: "61F2F0C46147E002"
+			rewards: [{
+				id: "3095C6FED15E64BB"
+				item: "botania:quartz_blaze"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F3CC185B8FF80D3"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 21.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46F86152B5B36A3B"]
+			description: [
+				"The &6Mana Clock&r is a machine that heavily uses &bMana&r from a Mana Spreader to altar time around it."
+				""
+				"It is used in conjunction with &6Aging Casks&r and &6Ancient Casks&r to reduce the overall amount of time they take to process."
+			]
+			id: "768A5A2162C079D0"
+			rewards: [{
+				id: "596991571993533D"
+				item: "furniture:spruce_grandfather_clock"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DCA9053294233FF"
+				item: {
+					Count: 1
+					id: "society:mana_clock"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["69A2A84A2830134C"]
+			description: [
+				"&6Mana Crab Trap Bait&r can be crafted from various magical materials on a Runic Altar."
+				""
+				"It catches even less trash and more fish than &6Deluxe Crab Trap Bait&r, with a chance to fish up rare and valuable aquatic loot."
+			]
+			id: "24D0021DB56E9E46"
+			rewards: [{
+				count: 4
+				id: "64C0142B7B187005"
+				item: "crabbersdelight:mana_crab_trap_bait"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AC03820EA1202FA"
+				item: "crabbersdelight:mana_crab_trap_bait"
+				type: "item"
+			}]
+			title: "Botanical Fishing"
+			x: 11.5d
+			y: 1.0d
 		}
 	]
 	title: "IV.II - Mystical Farming"

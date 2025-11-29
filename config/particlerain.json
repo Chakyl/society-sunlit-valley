@@ -2,13 +2,13 @@
   "configVersion": 5,
   "perf": {
     "maxParticleAmount": 1000,
-    "particleDensity": 80,
-    "particleStormDensity": 160,
+    "particleDensity": 100,
+    "particleStormDensity": 200,
     "particleDistance": 16,
     "surfaceRange": 48
   },
   "sound": {
-    "rainVolume": 0.2,
+    "rainVolume": 0.0,
     "snowVolume": 0.1,
     "windVolume": 0.1,
     "blockVolume": 0.07

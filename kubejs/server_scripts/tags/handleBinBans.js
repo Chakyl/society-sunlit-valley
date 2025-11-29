@@ -30,6 +30,8 @@ ServerEvents.tags("item", (e) => {
     "botania_seeds",
     "farmingforblockheads",
     "numismatics",
+    "whimsydeco",
+    "cluttered",
   ];
   modBans.forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);
@@ -37,6 +39,10 @@ ServerEvents.tags("item", (e) => {
   e.add("furniture:trash_bag_blacklist", "#society:loot_furniture");
   e.add("furniture:trash_bag_blacklist", "#society:dish");
   const itemBans = [
+    "trials:trial_key",
+    "trials:trial_key_ominous",
+    "trials:heavy_core",
+    "trials:ominous_bottle",
     "wildernature:stylin_purple_hat", 
     "beachparty:crocs", 
     "minecraft:bedrock",
@@ -175,8 +181,6 @@ ServerEvents.tags("item", (e) => {
     "solonion:lunchbag",
     "solonion:lunchbox",
     "supplementaries:red_merchant_spawn_egg",
-    "trials:heavy_core",
-    "trials:ominous_bottle",
     "railways:fuel_tank",
     "vintagedelight:golden_egg",
     "vintagedelight:ghost_pepper_seeds",
@@ -199,8 +203,6 @@ ServerEvents.tags("item", (e) => {
     "vinery:vinery_standard",
     "vinery:apple_press",
     "vinery:fermentation_barrel",
-    "trials:trial_key",
-    "trials:trial_key_ominous",
     "railways:portable_fuel_interface",
     "railways:remote_lens",
     "simplemagnets:advanced_demagnetization_coil",

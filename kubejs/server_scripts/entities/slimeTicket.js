@@ -24,6 +24,7 @@ const SlimeFavoriteFoods = {
   sweet: { item: "atmospheric:orange" },
   webby: { item: "veggiesdelight:garlic" },
   weeping: { item: "pamhc2trees:bananaitem" },
+  bear: { item: "buzzier_bees:crystallized_honey_block" },
 };
 ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
   const { hand, player, level, target, server, item } = e;

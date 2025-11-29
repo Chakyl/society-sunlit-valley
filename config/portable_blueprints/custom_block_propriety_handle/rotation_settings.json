@@ -25,7 +25,10 @@
         { "condition": "axis=y,connect_north=other_post,connect_down=other_post", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" } ] },
         { "condition": "axis=z", "result": [ { "name": "axis","value": "x" } ] },
         { "condition": "axis=z,connect_south=other_post", "result": [ { "name": "axis","value": "x" }, { "name": "connect_west","value": "other_post" }, { "name": "connect_south","value": "none" } ] },
-        { "condition": "axis=z,connect_north=other_post", "result": [ { "name": "axis","value": "x" }, { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" } ] }
+        { "condition": "axis=z,connect_north=other_post", "result": [ { "name": "axis","value": "x" }, { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_south=other_post", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_west","value": "other_post" }, { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=y,connect_north=none,connect_south=other_post", "result": [ { "name": "connect_west","value": "other_post" }, { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_south=none", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "none" } ] }
       ]
     },
     {
@@ -33,15 +36,35 @@
       "properties": [
         { "condition": "axis=z", "result": [ { "name": "axis","value": "z" } ] },
         { "condition": "axis=y", "result": [ { "name": "axis","value": "y" } ] },
-        { "condition": "axis=x", "result": [ { "name": "axis","value": "x" } ] }
+        { "condition": "axis=x", "result": [ { "name": "axis","value": "x" } ] },
+        { "condition": "axis=y,connect_north=none,connect_south=other_post", "result": [ { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "other_post" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_south=none", "result": [ { "name": "connect_north","value": "other_post" }, { "name": "connect_south","value": "none" } ] }
+
       ]
     },
     {
       "rotation": 3,
       "properties": [
         { "condition": "axis=x", "result": [ { "name": "axis","value": "z" } ] },
+        { "condition": "axis=x,connect_east=other_post,connect_west=other_post", "result": [ { "name": "axis","value": "z" }, { "name": "connect_north","value": "other_post" }, { "name": "connect_south","value": "other_post" }, { "name": "connect_east","value": "none" }, { "name": "connect_west","value": "none" } ] },
+        { "condition": "axis=x,connect_west=other_post", "result": [ { "name": "axis","value": "z" }, { "name": "connect_north","value": "other_post" }, { "name": "connect_east","value": "none" }, { "name": "connect_west","value": "none" } ] },
+        { "condition": "axis=x,connect_east=other_post", "result": [ { "name": "axis","value": "z" }, { "name": "connect_south","value": "other_post" }, { "name": "connect_east","value": "none" }, { "name": "connect_west","value": "none" } ] },
         { "condition": "axis=y", "result": [ { "name": "axis","value": "y" } ] },
-        { "condition": "axis=z", "result": [ { "name": "axis","value": "x" } ] }
+        { "condition": "axis=y,connect_west=other_post", "result": [ { "name": "connect_north","value": "other_post" }, { "name": "connect_east","value": "none" }, { "name": "connect_west","value": "none" } ] },
+        { "condition": "axis=y,connect_west=other_post,connect_east=other_post", "result": [ { "name": "connect_south","value": "other_post" }, { "name": "connect_north","value": "other_post" }, { "name": "connect_east","value": "none" }, { "name": "connect_west","value": "none" } ] },
+        { "condition": "axis=y,connect_east=other_post", "result": [ { "name": "connect_south","value": "other_post" }, { "name": "connect_east","value": "none" }, { "name": "connect_west","value": "none" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_south=other_post,connect_up=other_post,connect_down=other_post", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_west","value": "other_post" }, { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=y,connect_east=other_post,connect_south=other_post,connect_up=other_post,connect_down=other_post", "result": [ { "name": "connect_east","value": "none" }, { "name": "connect_west","value": "other_post" },{ "name": "connect_south","value": "other_post" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_up=other_post", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" } ] },
+        { "condition": "axis=y,connect_south=other_post,connect_up=other_post", "result": [ { "name": "connect_west","value": "other_post" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=y,connect_south=other_post,connect_down=other_post", "result": [ { "name": "connect_west","value": "other_post" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_down=other_post", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" } ] },
+        { "condition": "axis=z", "result": [ { "name": "axis","value": "x" } ] },
+        { "condition": "axis=z,connect_south=other_post", "result": [ { "name": "axis","value": "x" }, { "name": "connect_west","value": "other_post" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=z,connect_north=other_post", "result": [ { "name": "axis","value": "x" }, { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_south=other_post", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_west","value": "other_post" }, { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=y,connect_north=none,connect_south=other_post", "result": [ { "name": "connect_west","value": "other_post" }, { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "none" } ] },
+        { "condition": "axis=y,connect_north=other_post,connect_south=none", "result": [ { "name": "connect_east","value": "other_post" }, { "name": "connect_north","value": "none" }, { "name": "connect_south","value": "none" } ] }
       ]
     }
   ],
@@ -216,6 +239,748 @@
         { "condition": "type=south", "result": [ { "name": "type","value": "east" } ] },
         { "condition": "type=west", "result": [ { "name": "type","value": "south" } ] },
         { "condition": "type=north", "result": [ { "name": "type","value": "west" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:minecraft/brick_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:minecraft/cobblestone_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:minecraft/mud_brick_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:create/polished_cut_calcite_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:minecraft/stone_brick_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:minecraft/sandstone_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:minecraft/andesite_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:minecraft/polished_deepslate_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalwalls:atmospheric/arid_sandstone_wall": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalfences:atmospheric/yucca_fence": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalfences:minecraft/spruce_fence": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalfences:minecraft/dark_oak_fence": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalfences:autumnity/maple_fence": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
+      ]
+    }
+  ],
+  "diagonalfences:meadow/pine_railing": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "north_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "east", "value": "true" }, { "name": "south", "value": "true" }, { "name": "west","value": "false" }, { "name": "north","value": "false" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "south", "value": "true" }, { "name": "west", "value": "false" },{ "name": "north","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "north", "value": "false" }, { "name": "west", "value": "true" }, { "name": "east","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "north", "value": "true" }, { "name": "east", "value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "false" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "south_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_east","value": "true" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "north=true,west=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "east=true,north=true", "result": [ { "name": "east","value": "false" }, { "name": "west","value": "true" }, { "name": "north","value": "true" } ] },
+        { "condition": "east=true,south=true", "result": [ { "name": "south","value": "false" }, { "name": "north","value": "north" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true,south=true", "result": [ { "name": "east","value": "false" }, { "name": "east","value": "true" }, { "name": "south","value": "true" } ] },
+        { "condition": "north=true", "result": [ { "name": "north","value": "false" }, { "name": "west","value": "true" } ] },
+        { "condition": "east=true", "result": [ { "name": "east","value": "false" }, { "name": "north","value": "true" } ] },
+        { "condition": "south=true", "result": [ { "name": "south","value": "false" }, { "name": "east","value": "true" } ] },
+        { "condition": "west=true", "result": [ { "name": "west","value": "false" }, { "name": "south","value": "true" } ] },
+        { "condition": "south_east=true", "result": [ { "name": "south_east","value": "false" }, { "name": "north_east","value": "true" } ] },
+        { "condition": "south_west=true", "result": [ { "name": "south_west","value": "false" }, { "name": "south_east","value": "true" } ] },
+        { "condition": "north_east=true", "result": [ { "name": "north_east","value": "false" }, { "name": "north_west","value": "true" } ] },
+        { "condition": "north_west=true", "result": [ { "name": "north_west","value": "false" }, { "name": "south_west","value": "true" } ] }
       ]
     }
   ]

@@ -195,6 +195,8 @@
 	upload_all_button_font_size = 16
 	#Same as upload_all_button_font_size, but for Request Help button.
 	request_help_button_font_size = 16
+	#Same as upload_all_button_font_size, but for the Simple Mode toggle button.
+	simple_mode_button_font_size = 16
 	#You can change Upload All Button color to request user attention.
 	#format is "R_G_B", range is 0-255, for example "255_0_0" is red color. Use "default" to use default swing color.
 	#Default for this button is "0_178_0" (dark green color).

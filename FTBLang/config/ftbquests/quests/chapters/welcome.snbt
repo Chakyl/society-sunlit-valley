@@ -272,6 +272,83 @@
 			x: 1.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["18490F31FFAB134E"]
+			description: [
+				"{ftbquests.chapter.welcome.quest10.description1}"
+				""
+				"{ftbquests.chapter.welcome.quest10.description2}"
+				"{ftbquests.chapter.welcome.quest10.description3}"
+				"{ftbquests.chapter.welcome.quest10.description4}"
+				""
+				"{ftbquests.chapter.welcome.quest10.description5}"
+				""
+				"{ftbquests.chapter.welcome.quest10.description6}"
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "25305BECA3C32315"
+			tasks: [{
+				id: "5F3330533AD364D1"
+				title: "{ftbquests.chapter.welcome.quest10.task_6859879791442748625.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.welcome.quest10.title}"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			description: [
+				"{ftbquests.chapter.welcome.quest11.description1}"
+				""
+				"{ftbquests.chapter.welcome.quest11.description2}"
+				""
+				"{ftbquests.chapter.welcome.quest11.description3}"
+			]
+			icon: "etched:radio"
+			id: "67486880FE3E2CCD"
+			subtitle: "{ftbquests.chapter.welcome.quest11.subtitle}"
+			tasks: [{
+				id: "5330CA06B1E9BEE3"
+				title: "{ftbquests.chapter.welcome.quest11.task_5994513234133630691.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.welcome.quest11.title}"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1375AE2ECAC8C147"]
+			description: [
+				"{ftbquests.chapter.welcome.quest12.description1}"
+				""
+				"{ftbquests.chapter.welcome.quest12.description2}"
+				""
+				"{ftbquests.chapter.welcome.quest12.description3}"
+			]
+			icon: "supplementaries:slice_map"
+			id: "5FDA526D348C8A0F"
+			rewards: [{
+				command: "/kjs stages add @p ftbchunks_mapping"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "supplementaries:slice_map"
+				id: "757BB197D52F88E4"
+				ignore_reward_blocking: true
+				silent: true
+				team_reward: false
+				title: "{ftbquests.chapter.welcome.quest12.reward_8465555190247819492.title}"
+				type: "command"
+			}]
+			tasks: [{
+				id: "278FC13CCE8B9572"
+				title: "{ftbquests.chapter.welcome.quest12.task_2850709556056266098.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.welcome.quest12.title}"
+			x: 2.5d
+			y: -2.5d
+		}
 	]
 	title: "{ftbquests.chapter.welcome.title}"
 }

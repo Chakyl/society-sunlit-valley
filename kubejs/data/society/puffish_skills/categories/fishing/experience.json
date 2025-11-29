@@ -10,19 +10,6 @@
       "type": "puffish_skills:craft_item",
       "data": {
         "variables": {
-          "crab_trap_bait": {
-            "operations": [
-              {
-                "type": "get_crafted_item_stack"
-              },
-              {
-                "type": "puffish_skills:test",
-                "data": {
-                  "item": "crabbersdelight:crab_trap_bait"
-                }
-              }
-            ]
-          },
           "crab_trap": {
             "operations": [
               {
@@ -90,10 +77,6 @@
           }
         },
         "experience": [
-          {
-            "condition": "crab_trap_bait",
-            "expression": "5"
-          },
           {
             "condition": "crab_trap",
             "expression": "100"

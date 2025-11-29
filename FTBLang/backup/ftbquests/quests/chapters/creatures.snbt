@@ -1,0 +1,288 @@
+{
+	autofocus_id: "5045DE566B4AC009"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "creatures"
+	group: "439B0423947443D3"
+	icon: "minecraft:allay_spawn_egg"
+	id: "7DC080E5FD09BC9E"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Sun Golems&r are interesting creatures that come from the ancient power of the valley. "
+				""
+				"They can either be found in the world or built, and will provide various benefits for a farmer that can utilize them."
+			]
+			icon: "minecraft:carved_pumpkin"
+			id: "5045DE566B4AC009"
+			rewards: [{
+				id: "6D98C9DC104C8E07"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "2CC012367F3008BF"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Sun Golems"
+			x: 5.25d
+			y: 2.25d
+		}
+		{
+			description: [
+				"&6Barrel Golems&r are full of stuff! But they need &6Emeralds&r, the currency of the ancient world."
+				""
+				"They can be found in Villages and traded with just like Piglins."
+			]
+			id: "33E3889DD46DF291"
+			rewards: [{
+				id: "62AC6390E9ECAE80"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Villages"
+			tasks: [{
+				icon: "minecraft:barrel"
+				id: "7371A850C556BDEC"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Barrel Golem"
+				to_observe: "golemoverhaul:barrel_golem"
+				type: "observation"
+			}]
+			title: "Barrel Golem"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"&6Candle Golems&r can be created by crafting a &6Candle Golem Block&r. Like a pet, they can be told to sit or stand."
+				""
+				"When lit, they'll shoot nearby mobs with projectiles as long as they last."
+			]
+			id: "28EE10222BF1A1E6"
+			rewards: [{
+				count: 4
+				id: "7C52DD0801ED9D81"
+				item: "whimsy_deco:bamboo_candle"
+				type: "item"
+			}]
+			subtitle: "Constructable"
+			tasks: [
+				{
+					icon: "golemoverhaul:candle_golem_block"
+					id: "48ACC80FE89FEF9D"
+					observe_type: 5
+					timer: 0L
+					title: "Summon a Candle Golem"
+					to_observe: "golemoverhaul:candle_golem"
+					type: "observation"
+				}
+				{
+					id: "700A8CA62D9BAF13"
+					item: "golemoverhaul:candle_golem_block"
+					type: "item"
+				}
+			]
+			title: "Candle Golem"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"&6Honey Golems&r love bees! They'll act as mobile hives that produce a special kind of honey."
+				""
+				"&6Honey Blobs&r can be made into a &6Bear Slime Heart&r in a Plort Press."
+			]
+			id: "3225DF52212FAF3E"
+			rewards: [{
+				id: "2C285208A3317B3B"
+				item: "buzzier_bees:bee_bottle"
+				type: "item"
+			}]
+			subtitle: "Birch Forests"
+			tasks: [{
+				icon: "golemoverhaul:honey_blob"
+				id: "5040984A6FB06C1E"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Honey Golem"
+				to_observe: "golemoverhaul:honey_golem"
+				type: "observation"
+			}]
+			title: "Honey Golem"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"&6Hay Golems&r love to garden!"
+				""
+				"They can be found in Villages or built by hand (View recipes for a Carved Pumpkin). "
+				""
+				"They will periodically upgrade the quality of nearby farmland, provided that no other &6Hay Golems&r are nearby to disturb them."
+			]
+			id: "6021F749EAFF7359"
+			rewards: [{
+				id: "035A90641648C7BA"
+				item: "minecraft:hay_block"
+				type: "item"
+			}]
+			subtitle: "Villages, Constructable"
+			tasks: [{
+				icon: "farm_and_charm:scarecrow"
+				id: "0F83D9F009EFB8AB"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Hay Golem"
+				to_observe: "golemoverhaul:hay_golem"
+				type: "observation"
+			}]
+			title: "Hay Golem"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"&6Terracotta Golems&r are fierce fighters with and artisans. They can be found in Badlands or crafted using a &6Clay Golem Statue&r that's placed near fire."
+				""
+				"They can be given a &6Cactus&r or a &6Dead Bush&r to improve their combat abilities."
+				""
+				"More importantly, they will turn nearby &6Coarse Dirt&r into &6Clay&r."
+			]
+			id: "7BEAE861B07734BE"
+			rewards: [{
+				id: "2F37C29312D4A82A"
+				item: "clayworks:kiln"
+				type: "item"
+			}]
+			subtitle: "Badlands, Constructable"
+			tasks: [{
+				icon: "golemoverhaul:clay_golem_statue"
+				id: "41A7F16CE512A270"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Terracotta Golem"
+				to_observe: "golemoverhaul:terracotta_golem"
+				type: "observation"
+			}]
+			title: "Terracotta Golem"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"&6Kelp Golems&r love taking on drowned, especially with a nearby Conduit. They need water to breathe!"
+				""
+				"They can be crafted (see recipes for Dried Kelp) and water nearby Garden Pots periodically."
+			]
+			id: "5FEA1AC9BA13CC63"
+			rewards: [{
+				id: "3E98A007581FA574"
+				item: "minecraft:heart_of_the_sea"
+				type: "item"
+			}]
+			subtitle: "Constructable"
+			tasks: [{
+				icon: "minecraft:dried_kelp_block"
+				id: "71E5D254AB607AB2"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Kelp Golem"
+				to_observe: "golemoverhaul:kelp_golem"
+				type: "observation"
+			}]
+			title: "Kelp Golem"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&6Slime Golems&r are natural therapists, and will improve the happiness of nearby Splendid Slimes."
+				""
+				"Unfortunately, these golems get frustrated by their petty splendid problems and will take it out on the Slimes..."
+				""
+				"They can be found in Slime chunks."
+			]
+			id: "66C03C4DA3F21900"
+			rewards: [{
+				id: "27B1109DBB060572"
+				item: "splendid_slimes:slime_ticket"
+				type: "item"
+			}]
+			subtitle: "Slime Chunks"
+			tasks: [{
+				icon: "minecraft:slime_spawn_egg"
+				id: "3106C0E203B13B16"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Slime Golem"
+				to_observe: "golemoverhaul:slime_golem"
+				type: "observation"
+			}]
+			title: "Slime Golem"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&6Coal Golems&r hang around their ores, waiting to be lit with a Flint and Steel to fight monsters."
+				""
+				"They're mostly here for moral support."
+			]
+			id: "148CCCD216B274F0"
+			rewards: [{
+				count: 8
+				id: "1BBED16256D297E0"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "Coal Ore"
+			tasks: [{
+				icon: "minecraft:coal"
+				id: "697BA82CD29CF667"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Coal Golem"
+				to_observe: "golemoverhaul:coal_golem"
+				type: "observation"
+			}]
+			title: "Coal Golem"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"&6Reinforced Golems&r are hulking beasts of immense wealth."
+				""
+				"They are built by the hardened hands of wealthy farmers (View recipes for a Carved Pumpkin). "
+				""
+				"They can be ridden and lit with a &6Lava Bucket&r for combat purposes, but they're mainly a status symbol in the valley."
+			]
+			id: "1050F9A99E0D71CE"
+			rewards: [{
+				id: "5382BD614408317C"
+				item: "functionalstorage:netherite_upgrade"
+				type: "item"
+			}]
+			subtitle: "Villages, Constructable"
+			tasks: [{
+				icon: "minecraft:netherite_ingot"
+				id: "50E5413F069A19C0"
+				observe_type: 5
+				timer: 0L
+				title: "Observe a Reinforced Golem"
+				to_observe: "golemoverhaul:netherite_golem"
+				type: "observation"
+			}]
+			title: "Reinforced Golem"
+			x: 7.5d
+			y: 0.5d
+		}
+	]
+	title: "Creatures"
+}

@@ -578,6 +578,7 @@ ServerEvents.tags("block", (e) => {
     "trials:trial_vault",
     "trials:trial_vault_ominous",
     "fastpaintings:painting",
+    "fastpaintings:painting",
     "lootr:lootr_barrel",
     "lootr:lootr_chest",
     "lootr:lootr_trapped_chest",
