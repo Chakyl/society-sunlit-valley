@@ -767,11 +767,11 @@ const rollReplaceTable = (table, hasRope) => {
   return "minecraft:obsidian";
 };
 
-global.handleSkullCavernRegen = (server, level, block) => {
+global.handleSkullCavernRegen = (level, block) => {
   if (
     !level.persistentData ||
-    (!level.persistentData.chunkParityMap &&
-      block.id.equals("society:cavern_air"))
+    !level.persistentData.chunkParityMap ||
+    !block.id.equals("society:cavern_air")
   )
     return;
   let belowPos;
@@ -783,11 +783,7 @@ global.handleSkullCavernRegen = (server, level, block) => {
     level.persistentData.chunkParityMap[
       level.getChunkAt(block.getPos()).pos.toString()
     ].toggleBit;
-  if (String(toggleBit) == block.getProperties().get("chunkbit")) {
-    server.scheduleInTicks(2400, () => {
-      global.handleSkullCavernRegen(server, level, block);
-    });
-  } else {
+  if (String(toggleBit) != block.getProperties().get("chunkbit")) {
     belowPos = block.getPos().below();
     belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
     belowBelowPos = belowBlock.getPos().below();
