@@ -1,6 +1,6 @@
 ^^^
 ## The Sun Golems
-### v3.4.1
+### v3.4.2
 ^^^
 --- 
 - Added Sun Golems with a work in progress Creature chapter of the questbook
@@ -56,3 +56,10 @@
 - Fixed crash with building shop
 - Fixed farmhouse quest not having all the new farmhouses
 - Fixed Fermentation Barrel recipe
+
+## 3.4.2 
+- Rework skull cavern regeneration (again) to prevent crashes but also work slower
+- Fixed new crash with building shop! No more crashes on this page I promise
+- Fixed Bogged spawning above ground
+- Fixed Hay golem not constructing without shift+clicking fences
+- Fixed exploit

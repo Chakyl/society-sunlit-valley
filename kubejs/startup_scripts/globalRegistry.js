@@ -440,8 +440,6 @@ global.crops = [
   { item: "farm_and_charm:wild_ribwort", value: 24 },
   { item: "farm_and_charm:wild_nettle", value: 24 },
   { item: "species:ancient_pinecone", value: 32 },
-  { item: "windswept:pinecone", value: 4 },
-  { item: "windswept:pinecone_block", value: 36 },
   { item: "windswept:chestnuts", value: 2 },
   { item: "windswept:chestnut_crate", value: 18 },
   { item: "windswept:holly_berries", value: 3 },
