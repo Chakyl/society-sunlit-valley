@@ -1,0 +1,23 @@
+{
+    "name": "수평 벽",
+    "sortnum": 1,
+    "category": "buildinggadgets2:modes",
+    "icon": "buildinggadgets2:textures/book/mode/horizontal_wall.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "수평 벽 모드는 몇 가지 다른 방식으로 작동합니다. 위에 놓기가 활성화되면 플레이어가 보는 블록 위에 영역을 건설하거나 옆 면을 가리키는 경우 플레이어 쪽으로 확장됩니다. $(br2)위에 놓기가 비활성화되면 플레이어가 보는 블록 주위에 건설됩니다.$(br2)오른쪽 그림에서 다른 옵션을 확인하세요."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "수평 벽 모드",
+            "images": [
+                "buildinggadgets2:textures/book/images/horzwall1.png",
+                "buildinggadgets2:textures/book/images/horzwall3.png",
+                "buildinggadgets2:textures/book/images/horzwall2.png"
+            ],
+            "border": true,
+            "text": "위의 이미지를 전환하여 다른 옵션을 확인하세요"
+        }
+    ]
+}

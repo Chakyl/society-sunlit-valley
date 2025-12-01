@@ -1,0 +1,22 @@
+{
+    "name": "격자",
+    "sortnum": 1,
+    "category": "buildinggadgets2:modes",
+    "icon": "buildinggadgets2:textures/book/mode/grid.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "격자 모드는 블록을 격자로 배치합니다! 횃불, 발광석 등을 설치할 때 유용합니다. 범위가 증가함에 따라 블록은 서로 더 멀어지고 결국 영역이 더 커집니다. $(br2)이 모드는 교환 가젯에서도 사용할 수 있습니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "격자 모드",
+            "images": [
+                "buildinggadgets2:textures/book/images/mode_grid.png",
+                "buildinggadgets2:textures/book/images/mode_grid2.png"
+            ],
+            "border": true,
+            "text": "위의 이미지를 전환하여 다른 옵션을 확인하세요"
+        }
+    ]
+}

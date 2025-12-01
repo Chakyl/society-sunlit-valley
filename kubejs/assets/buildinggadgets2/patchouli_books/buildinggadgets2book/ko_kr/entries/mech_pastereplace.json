@@ -1,0 +1,16 @@
+{
+    "name": "붙여넣을 블록 교체",
+    "sortnum": 1,
+    "category": "buildinggadgets2:mechanics",
+    "icon": "buildinggadgets2:textures/book/icons/paste_replace.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "붙여넣을 블록 교체는 잘라내기 붙여넣기 가젯 또는 복사 붙여넣기 가젯에서만 사용할 수 있습니다. $(br2)비활성화되면 장치는 일반적으로 덮어쓸 수 있는 블록(예: 물이나 잔디)을 제외하고 세계의 블록을 교체하지 않습니다. 이 설정은 잘라내기 붙여넣기 장치에서는 블록이 사라질 수 있는 위험이 있습니다."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "활성화되면 장치는 세계의 모든 블록을 붙여넣을 대상의 블럭으로 교체합니다(공기 포함!). 산에 집을 지을 때 유용합니다.$(br2)참고: 이러한 방식으로 교체된 블록은 $(bold)삭제$(clear)되며 아이템을 드롭하거나 반환하지 않습니다."
+        }
+    ]
+}

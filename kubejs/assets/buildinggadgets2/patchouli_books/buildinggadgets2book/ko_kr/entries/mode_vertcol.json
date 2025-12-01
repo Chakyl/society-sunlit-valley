@@ -1,0 +1,23 @@
+{
+    "name": "수직 기둥",
+    "sortnum": 1,
+    "category": "buildinggadgets2:modes",
+    "icon": "buildinggadgets2:textures/book/mode/vertical_column.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "수직 기둥 모드는 건설 및 교환 가젯 모두에서 사용할 수 있습니다.$(br2)블록 상단이나 하단을 보는 경우 위 또는 아래로 건설하며, 측면을 보는 경우 위아래로 뻗어나가도록 건설합니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "수직 기둥",
+            "images": [
+                "buildinggadgets2:textures/book/images/vertcolumn1.png",
+                "buildinggadgets2:textures/book/images/vertcolumn3.png",
+                "buildinggadgets2:textures/book/images/vertcolumn2.png"
+            ],
+            "border": true,
+            "text": "위의 이미지를 전환하여 다른 옵션을 확인하세요"
+        }
+    ]
+}

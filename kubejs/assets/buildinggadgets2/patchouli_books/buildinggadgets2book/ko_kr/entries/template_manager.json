@@ -1,0 +1,60 @@
+{
+    "name": "템플릿 관리자",
+    "sortnum": 1,
+    "category": "buildinggadgets2:templates",
+    "icon": "buildinggadgets2:template_manager",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "템플릿 관리자를 사용하면 $(l:buildinggadgets2:copypaste)복사 붙여넣기 가젯$(/l)으로 좋아하는 구조물을 저장할 수 있습니다!  $(br2)이 블록을 사용하면 구조물을 아이템으로 저장하거나 외부에서 공유할 수도 있습니다!$(br2)시작하려면 복사 붙여넣기 가젯을 상단 슬롯에 넣고 종이 한 장을 하단에 넣으세요."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "템플릿 관리자",
+            "images": [
+                "buildinggadgets2:textures/book/images/templatemanager1.png"
+            ],
+            "border": true,
+            "text": "1단계"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "'저장'을 클릭하여 종이를 템플릿으로 변환합니다. 동시에 구조물의 미리보기가 화면에 나타납니다.$(br2)마우스 버튼으로 미리보기를 이동하고 회전하거나 휠을 스크롤하여 확대/축소할 수 있습니다. $(br2)템플릿에서 가젯으로 구조물을 다시 복사하려면 '불러오기'를 클릭하세요."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "미리보기",
+            "images": [
+                "buildinggadgets2:textures/book/images/templatemanager2.png"
+            ],
+            "border": true,
+            "text": "미리보기로 알기 쉽습니다"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "'미리보기' 버튼을 클릭하여 재료 목록으로 전환하면 구조물을 짓는 데 필요한 재료 목록이 표시됩니다.$(br2)재료 목록 버튼을 클릭하여 미리보기 모드로 다시 전환하세요."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "재료 목록",
+            "images": [
+                "buildinggadgets2:textures/book/images/templatemanager3.png"
+            ],
+            "border": true,
+            "text": "너무 많은 아이템"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "템플릿 이름을 지정할 수 있습니다. 이름은 템플릿 아이템에 나타납니다.$(br2)'복사'를 클릭하면 JSON 문자열이 생성되어 컴퓨터 클립보드에 저장됩니다. 마인크래프트 외부에서 친구들과 공유할 수 있습니다. 친구가 동일한 문자열을 클립보드에 복사하고 이 GUI에서 '붙여넣기' 버튼을 클릭하면 구조물이 복제됩니다!$(br2)붙여넣기를 클릭할 때 하단 슬롯에 종이가 있는지 확인하세요."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "이름 지정",
+            "images": [
+                "buildinggadgets2:textures/book/images/templatemanager4.png"
+            ],
+            "border": true,
+            "text": "정말 멋진 집입니다."
+        }
+    ]
+}
