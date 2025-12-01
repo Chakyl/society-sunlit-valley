@@ -1,0 +1,19 @@
+{
+  "name": "에어로모노",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_aero_mono",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 128$(li)\u00a70\u2746 \u00a7b겨울\u00a70$(li)수역: 담수$(li)날씨: 언제나$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:aero_mono",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.3,
+      "text": "공기 공급? 물고기 아니었어?"
+    }
+  ]
+}

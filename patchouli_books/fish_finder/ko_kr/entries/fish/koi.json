@@ -1,0 +1,18 @@
+{
+  "name": "비단잉어",
+  "category": "patchouli:fish",
+  "icon": "crittersandcompanions:koi_fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 340$(li)\u00a70\ud83d\udd25 \u00a76여름\u00a70$(li)수역: 담수$(li)날씨: 맑음$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:koi_fish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "비단의 재료로는 못 씁니다."
+    }
+  ]
+}

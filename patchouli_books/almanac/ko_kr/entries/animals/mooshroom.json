@@ -1,0 +1,17 @@
+{
+  "name": "무시룸",
+  "category": "patchouli:animals",
+  "icon": "minecraft:red_mushroom",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 우유$(li)착유 간격: 1일$(li)채집: 트러플, 버섯 스툴$(li)드롭 아이템: 소고기, 가죽$(br2)$(l)메모$()$(br)호감도 4하트 이상부터 트러플 채집 가능. 8하트 이상부터 버섯 스툴 채집 가능."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:mooshroom",
+      "scale": 0.8,
+      "text": "버섯을 만들어내는 희귀한 소."
+    }
+  ]
+}

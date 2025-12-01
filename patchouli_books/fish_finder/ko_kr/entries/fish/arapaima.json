@@ -1,0 +1,20 @@
+{
+  "name": "피라루쿠",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:arapaima",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 224$(li)\u00a70\ud83d\udd25 \u00a76여름\u00a70$(li)수역: 담수$(li)날씨: 비, 눈$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:arapaima",
+      "scale": 0.8,
+      "rotate": true,
+      "default_rotation": 180,
+      "offset": -0.3,
+      "text": "아주 커다랗습니다 :)"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "다람쥐",
+  "category": "patchouli:animals",
+  "icon": "pamhc2trees:hazelnutitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)채집: 베리, 헤이즐넛$(li)드롭 아이템: 헤이즐넛$(br2)$(l)메모$()$(br)호감도 2하트 이상부터 채집 가능. 숲 또는 평원 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:squirrel",
+      "scale": 0.7,
+      "text": "나무를 탈 수 있기 때문에 기르기 까다롭습니다."
+    }
+  ]
+}

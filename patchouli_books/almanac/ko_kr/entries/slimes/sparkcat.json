@@ -1,0 +1,17 @@
+{
+  "name": "스파크냥이",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)구조물: 그림자 불모지 슬라임 생성기 (해골 광산)$(li)심장 합성$(br2)$(l)주의사항:$()$(br)기분이 나쁠 때 번개 강타 효과를 부여합니다. 화났을 때 블록을 파괴하는 폭발을 합니다. 기분 변화가 심합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "스파크냥이 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:sparkcat\"}",
+      "scale": 0.9
+    }
+  ]
+}

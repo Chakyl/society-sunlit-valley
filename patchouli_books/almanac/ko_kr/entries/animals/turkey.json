@@ -1,0 +1,17 @@
+{
+  "name": "칠면조",
+  "category": "patchouli:animals",
+  "icon": "autumnity:turkey_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 칠면조 알$(li)드롭 아이템: 칠면조고기, 깃털$(br2)$(l)메모$()$(br)배고픈 칠면조는 알을 낳지 않습니다. 행복하지 않은 칠면조는 알을 적게 낳습니다. 칠면조는 다른 가금류보다 산란 주기가 깁니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "autumnity:turkey",
+      "scale": 0.8,
+      "text": "모두가 칠면조에게 감사를 표합니다."
+    }
+  ]
+}

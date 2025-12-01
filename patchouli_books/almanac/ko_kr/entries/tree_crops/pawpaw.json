@@ -1,0 +1,26 @@
+{
+    "name": "포포 🍂",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:pawpawitem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li):coin: 80$(li)🍂 §4가을§r$(li)수확량: 1$(li)성장 단계: 8$(br2)$(l)메모$()$(li)참조: $(l:trees/pams/pawpaw)포포나무$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "포포나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "F": "pamhc2trees:pampawpaw[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

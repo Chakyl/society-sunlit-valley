@@ -1,0 +1,17 @@
+{
+  "name": "양",
+  "category": "patchouli:animals",
+  "icon": "society:large_sheep_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: :coin: 1,024$(li)착유: 양젖$(li)착유 간격: 2일$(li)가위질 드랍: 양털, 고운 털 $(li)드롭 아이템: 양고기, 양털$(br2)$(l)메모$()$(br)호감도 5하트 이상부터 고운 털 생산."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sheep",
+      "scale": 0.8,
+      "text": "우유의 생산성은 조금 낮지만 다재다능한 가축."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "요새그루퍼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:fortress_grouper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 666$(li)차원: 네더$(li)생물군계: 전체"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:fortressgrouper",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "요새 밑바닥의 거대한 녀석"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "분홍",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)구조물: 슬라임 생성기$(li)채굴 지점: 오버월드 블록"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "분홍 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:slimy\"}",
+      "scale": 0.9
+    }
+  ]
+}

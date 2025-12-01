@@ -1,0 +1,105 @@
+{
+    "name": "짙은 참나무 🍂",
+    "category": "patchouli:trees",
+    "icon": "minecraft:oak_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🍂 §4가을§r $(li)묘목 가격: :coin: 8$(li)크기: 2x2"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "짙은 참나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "        ",
+                        "   LL   ",
+                        "  LLLL  ",
+                        " LLLLLL ",
+                        " LLLLLL ",
+                        "  LLLL  ",
+                        "   LL   ",
+                        "        "
+                    ],
+                    [
+                        " LLLLL  ",
+                        "LLLLLLLL",
+                        "LLLLLLLL",
+                        "LLLWWLLL",
+                        "LLLWWLLL",
+                        "LLLLLLLL",
+                        " LLLLL  ",
+                        " LLLLL  "
+                    ],
+                    [
+                        " LLLLLL ",
+                        "LLLLLLLL",
+                        "LLLWWLWL",
+                        "LLLLWWWL",
+                        "LLLWWWLL",
+                        " LLLLWL ",
+                        " LLLLLL ",
+                        "  LLLL  "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "   WW W ",
+                        "    WWW ",
+                        "   WWW  ",
+                        "     W  ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "   WW W ",
+                        "    WW  ",
+                        "   WWW  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "      W ",
+                        "    WW  ",
+                        "    WW  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "    WW  ",
+                        "    WW  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ],
+                    [
+                        "        ",
+                        "        ",
+                        "        ",
+                        "    WW  ",
+                        "    0W  ",
+                        "        ",
+                        "        ",
+                        "        "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:dark_oak_log[axis=y]",
+                    "L": "minecraft:dark_oak_leaves",
+                    "W": "minecraft:dark_oak_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

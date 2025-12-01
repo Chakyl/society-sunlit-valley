@@ -1,0 +1,17 @@
+{
+  "name": "주스",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:juicy\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)생물군계: 무성한 동굴 (해골 광산)$(li)구조물: 벌집 (해골 광산)$(li)심장 합성$(br2)$(l)주의사항:$()$(br)벽을 기어오를 수 있습니다! 기분이 나쁠 때 취함 효과를 부여합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "주스 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:juicy\"}",
+      "scale": 0.9
+    }
+  ]
+}

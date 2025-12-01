@@ -1,0 +1,17 @@
+{
+  "name": "페럿",
+  "category": "patchouli:pets",
+  "icon": "minecraft:iron_shovel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)점핑 스파이더 생성 상자$(br)$(l)길들이기:$()$(br)익히지 않은 토끼고기$(br2)$(l)메모$()$(br)숲 또는 평원 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:ferret",
+      "scale": 0.7,
+      "text": "익히지 않은 닭고기를 주면 무언가를 파낼겁니다!"
+    }
+  ]
+}

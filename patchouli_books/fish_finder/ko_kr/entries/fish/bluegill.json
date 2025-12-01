@@ -1,0 +1,18 @@
+{
+  "name": "블루길",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:bluegill",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 16$(li)연중$(li)수역: 담수, 강$(li)날씨: 언제나$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:bluegill",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "맨날 이 녀석만 낚여!!!"
+    }
+  ]
+}

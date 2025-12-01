@@ -1,0 +1,26 @@
+{
+  "name": "기어로 베리 🌼",
+  "category": "patchouli:crops",
+  "icon": "vintagedelight:gearo_berry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)🌼 §2봄$(li)수확량: 1-2$(li)성장 시간: 4일$(li)재성장 시간: 2일$(br2)$(l)메모$()$(br)보타니아의 엘프와의 거래 또는 주스 슬라임 플로트에서 얻을 수 있습니다.$(br)씨앗이 따로 없기 때문에 열매를 심으면 됩니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "기어로 베리 덤불",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "vintagedelight:gearo_berry_bush[age=4]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

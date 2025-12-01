@@ -1,0 +1,17 @@
+{
+  "name": "거위",
+  "category": "patchouli:animals",
+  "icon": "untitledduckmod:goose_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 거위알$(li)드롭 아이템: 거위고기, 거위발$(br2)$(l)메모$()$(br)배고픈 거위는 알을 낳지 않습니다. 행복하지 않은 거위는 알을 적게 낳습니다. 해초로 길들일 수 있습니다." 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "untitledduckmod:goose",
+      "scale": 0.8,
+      "text": "당신의 아이템을 훔치려드는 악독한 녀석들. 공격하면 반격할 겁니다."
+    }
+  ]
+}

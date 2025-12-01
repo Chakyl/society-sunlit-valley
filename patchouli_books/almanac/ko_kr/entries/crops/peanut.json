@@ -1,0 +1,26 @@
+{
+  "name": "땅콩 🍂",
+  "category": "patchouli:crops",
+  "icon": "vintagedelight:peanut",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)🍂 §4가을$(li)씨앗 가격: :coin: 512$(li)수확량: 1-3$(li)성장 시간: 7일$(br2)$(l)메모$()$(br)달인 재배자에게서 씨앗을 구매할 수 있습니다.$(br)낮은 확률로 마법 땅콩을 얻을 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "땅콩 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "vintagedelight:peanut_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

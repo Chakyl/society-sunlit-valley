@@ -1,0 +1,17 @@
+{
+  "name": "무블룸",
+  "category": "patchouli:animals",
+  "icon": "betterarcheology:growth_totem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 우유$(li)착유 간격: 1일$(li)채집: 발광 토템$(li)드롭 아이템: 소고기, 가죽$(br2)$(l)메모$()$(br)호감도 10하트 이상부터 채집 가능."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "buzzier_bees:moobloom",
+      "scale": 0.8,
+      "text": "당신의 하루를 특별한 꽃으로 장식해줍니다."
+    }
+  ]
+}

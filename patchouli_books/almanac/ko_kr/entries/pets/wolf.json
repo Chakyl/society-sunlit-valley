@@ -1,0 +1,17 @@
+{
+  "name": "늑대",
+  "category": "patchouli:pets",
+  "icon": "minecraft:bone",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)긴 여우 귀 (모자), 늑대 화석$(br2)$(l)길들이기:$()$(br)뼈"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:wolf",
+      "scale": 0.7,
+      "text": "모두의 친구."
+    }
+  ]
+}

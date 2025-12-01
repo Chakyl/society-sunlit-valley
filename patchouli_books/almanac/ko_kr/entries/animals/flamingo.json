@@ -1,0 +1,17 @@
+{
+  "name": "플라밍고",
+  "category": "patchouli:animals",
+  "icon": "society:flamingo_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 플라밍고 알$(li)드롭 아이템: 깃털$(br2)$(l)메모$()$(br)알을 얻으려면 4하트 필요. 교배 불가." 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:flamingo",
+      "scale": 0.5,
+      "text": "너의 색채를 뽐내봐, 플라밍고!"
+    }
+  ]
+}

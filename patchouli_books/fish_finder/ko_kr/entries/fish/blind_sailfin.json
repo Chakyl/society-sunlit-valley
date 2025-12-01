@@ -1,0 +1,18 @@
+{
+  "name": "눈먼돛지느러미고기",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_blind_sailfin",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 224$(li)\u00a70\ud83c\udf3c \u00a72봄\u00a70$(li)수역: 강$(li)날씨: 언제나$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:blindsailfin",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "눈이 멀었는데 돛을 피고 헤엄친다고? 거 참 위험하네."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "복어",
+  "category": "patchouli:fish",
+  "icon": "minecraft:pufferfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 16$(li)§0🌼 §2봄§0 🔥 §6여름§0 🍂 §4가을§0$(li)수역: 바다$(li)날씨: 맑음$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pufferfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "아주 좋은 스킬 모드"
+    }
+  ]
+}

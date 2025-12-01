@@ -1,0 +1,17 @@
+{
+  "name": "오리",
+  "category": "patchouli:animals",
+  "icon": "untitledduckmod:duck_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: :coin: 512$(li)산란: 오리알$(li)드롭 아이템: 오리고기, 오리 깃털$(br2)$(l)메모$()$(br)배고픈 오리는 알을 낳지 않습니다. 행복하지 않은 오리는 알을 적게 낳습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "untitledduckmod:duck",
+      "scale": 0.8,
+      "text": "닭보다 깃털과 고기의 질이 좋습니다."
+    }
+  ]
+}
