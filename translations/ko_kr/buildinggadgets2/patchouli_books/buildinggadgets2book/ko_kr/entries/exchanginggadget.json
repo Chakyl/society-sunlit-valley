@@ -1,0 +1,33 @@
+{
+    "name": "교환 가젯",
+    "sortnum": 2,
+    "category": "buildinggadgets2:gadgets",
+    "icon": "buildinggadgets2:gadget_exchanging{energy:500000}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "교환 가젯은 한 묶음의 블록을 다른 묶음으로 교체할 수 있습니다! 그러나 공기 블록은 교체할 수 없습니다. 이를 위해서는 $(l:buildinggadgets2:buildinggadget)건축 가젯$(/l)을 사용하세요! $(br2)먼저 가젯에 에너지가 있는지 확인하세요. $(br2)그 다음, 교환할 블록을 지정하려면 설치된 블록을 시프트 + 우클릭하세요."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "설정 키를 길게 눌러 $(l:buildinggadgets2:modes)교환 모드$(/l)를 선택할 수 있습니다. 각 모드는 이 책의 해당 항목에 설명되어 있습니다. 기본 모드는 $(l:buildinggadgets2:mode_surface)지표면$(/l)입니다. $(br2)블록을 주시하면 기존 블록을 대체하는 미리보기가 표시됩니다. 블록을 배치하는 데 필요한 아이템이나 에너지가 부족하면 빨간색 오버레이가 표시됩니다. 우클릭하면 표시된 대로 블록이 교환됩니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "교환 미리보기",
+            "images": [
+                "buildinggadgets2:textures/book/images/ghost_render_exchange.png"
+            ],
+            "border": true,
+            "text": "교환될 항목의 미리보기 보기"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "우클릭하면 교환이 시작됩니다. 아이템을 보관함에서 소비하고, 필요한 아이템이 없는 블록은 건너뜁니다. $(br2)제거된 블록의 아이템은 당신에게 반환됩니다. $(br2)참고: 이 도구에 섬세한 손길 마법 부여를 할 수 있습니다. 그렇지 않으면 잔디는 흙으로 반환됩니다."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "교환 가젯으로 $(l:buildinggadgets2:undo)되돌리기$(/l)를 할 수 있지만 필요한 아이템이 있어야 합니다.$(br2)예를 들어 잔디를 석재 벽돌로 교환한 경우 이 교환을 되돌리려면 보관함에 잔디가 있어야 합니다. 필요한 경우 섬세한 손길을 적용하는 것을 잊지 마세요!"
+        }
+    ]
+}

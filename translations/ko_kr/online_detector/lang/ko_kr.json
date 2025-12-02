@@ -1,0 +1,19 @@
+{
+    "_comment": "블록",
+    "block.online_detector.online_detector": "온라인 감지기",
+    "block.online_detector.advanced_online_detector": "고급 온라인 감지기",
+    "_comment1": "GUI",
+    "gui.online_detector.advanced_online_detector": "고급 온라인 감지기",
+    "gui.online_detector.tracking": "현재 추적 중:",
+    "gui.online_detector.available": "추적 가능한 플레이어:",
+    "_comment2": "설정",
+    "text.autoconfig.online_detector.title": "온라인 감지기 설정",
+    "text.autoconfig.online_detector.category.common": "일반",
+    "text.autoconfig.online_detector.category.client": "클라이언트",
+    "text.autoconfig.online_detector.option.ODCommonConfig.onlineCheckFrequency.@PrefixText": "온라인 감지기 블록이 할당된 플레이어가 온라인 상태인지 확인해야 하는 빈도입니다. 이 값은 틱 단위로 측정됩니다(20틱은 1초). 이 값을 20 미만으로 설정하는 것은 권장되지 않습니다.",
+    "text.autoconfig.online_detector.option.ODCommonConfig.onlineCheckFrequency": "온라인 확인 빈도",
+    "text.autoconfig.online_detector.option.ODClientConfig.shouldShowRedstoneParticles.@PrefixText": "온라인 감지기 블록이 활성 상태인 동안 레드스톤 입자를 표시할지 여부입니다.",
+    "text.autoconfig.online_detector.option.ODClientConfig.shouldShowRedstoneParticles": "레드스톤 입자 표시 여부",
+    "text.autoconfig.online_detector.option.ODClientConfig.shouldShowPortalParticles.@PrefixText": "온라인 감지기 블록이 활성 상태인 동안 차원문 입자를 표시할지 여부입니다.",
+    "text.autoconfig.online_detector.option.ODClientConfig.shouldShowPortalParticles": "차원문 입자 표시 여부"
+}
