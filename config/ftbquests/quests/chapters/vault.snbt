@@ -51,7 +51,7 @@
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "8,192 Bundle"
+			title: "{ftbquests.chapter.vault.quest2.title}"
 			x: -1.5d
 			y: -0.5d
 		}
@@ -69,7 +69,7 @@
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "16,384 Bundle"
+			title: "{ftbquests.chapter.vault.quest3.title}"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -82,12 +82,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 6L
+				count: 6Ln
 				id: "4FE5D5E3C4364207"
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "24,576 Bundle"
+			title: "{ftbquests.chapter.vault.quest4.title}"
 			x: 3.0d
 			y: 0.2d
 		}
