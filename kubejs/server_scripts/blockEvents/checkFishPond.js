@@ -13,7 +13,7 @@ const getRequestedItems = (type, population) => {
 const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
   let fishName = type
-    .split(":")[1]
+    .path
     .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
   if (fishName.includes("Raw ")) {
     if (fishName === "Raw Snowflake") fishName = "Frosty Fin";

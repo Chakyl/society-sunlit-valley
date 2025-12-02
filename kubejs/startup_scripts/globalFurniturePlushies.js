@@ -675,7 +675,6 @@ global.lootFurniture = [
   "whimsy_deco:warped_rattan_chair",
   "whimsy_deco:rattan_stool",
   "whimsy_deco:rubber_duck",
-  "whimsy_deco:ship_helm",
   "whimsy_deco:shower",
   "whimsy_deco:red_stocking",
   "whimsy_deco:green_stocking",

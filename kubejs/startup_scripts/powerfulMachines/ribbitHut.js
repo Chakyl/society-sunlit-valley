@@ -136,10 +136,10 @@ global.runRibbitHut = (tickEvent) => {
   let attachedPlayer;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
-  const goldenClockProgTime = 2000;
+  const ribbitHutProgTime = 1000;
   if (
-    morningModulo >= goldenClockProgTime &&
-    morningModulo < goldenClockProgTime + artMachineTickRate
+    morningModulo >= ribbitHutProgTime &&
+    morningModulo < ribbitHutProgTime + artMachineTickRate
   ) {
     level.getServer().players.forEach((p) => {
       if (p.getUuid().toString() === block.getEntityData().data.owner) {
@@ -170,7 +170,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.gray("Creates a hut in a 3x3x3 space centered around it."));
-      item.tooltip(Text.gray("Ribbits will collect crops at 8am every morning."));
+      item.tooltip(Text.gray("Ribbits will collect crops at 7am every morning."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
       item.tooltip(Text.green(`Area: 15x3x15`));
       item.modelJson({

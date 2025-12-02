@@ -10,7 +10,7 @@ ItemEvents.entityInteracted((e) => {
     let gift = level.createEntity("minecraft:item");
 
     if (!data.gifted && data.affection >= 1000) {
-      let nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
+      let nonIdType = String(target.type.path).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       let capitalizedType = global.formatName(nonIdType);
       server.runCommandSilent(

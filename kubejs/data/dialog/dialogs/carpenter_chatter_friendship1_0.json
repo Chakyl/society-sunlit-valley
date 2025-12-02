@@ -1,0 +1,47 @@
+{
+	"id": "carpenter_chatter_friendship1_0",
+	"title": "[0] carpenter chatter at friendship level: friendship1",
+	"description": "dialog.npc.carpenter.chatter.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.chatter_friendship1.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.chatter_friendship1.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		}
+	]
+}

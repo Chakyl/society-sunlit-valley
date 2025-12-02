@@ -174,7 +174,7 @@ global.artisanHarvest = (
         (id.includes("wheel") || id.includes("block")) &&
         block.properties.get("upgraded").toLowerCase() === "true"
       ) {
-        harvestOutput = Item.of(`society:aged_${id.split(":")[1]}`);
+        harvestOutput = Item.of(`society:aged_${id.path}`);
       }
       if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
@@ -252,8 +252,8 @@ global.artisanInsert = (
     block.setEntityData(nbt);
     block.set(block.id, newProperties);
     if (player && !player.isCreative()) item.count -= useCount;
+    if (artisanHopper) return useCount;
   }
-  if (artisanHopper) return useCount;
 };
 
 global.handleBERightClick = (
@@ -338,10 +338,14 @@ global.getFacing = (facing, pos) => {
 };
 
 global.getTapperLog = (level, block) =>
-  level.getBlock(global.getOpposite(block.properties.get("facing"), block.getPos()));
+  level.getBlock(
+    global.getOpposite(block.properties.get("facing"), block.getPos())
+  );
 
 global.getFermentingBarrel = (level, block) =>
-  level.getBlock(global.getFacing(block.getProperties().get("facing"), block.getPos()));
+  level.getBlock(
+    global.getFacing(block.getProperties().get("facing"), block.getPos())
+  );
 
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
@@ -351,7 +355,11 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   let foundFluidData = undefined;
   let hasError = false;
   if (attachedBlock.hasTag("society:tappable_blocks")) {
-    if (!nbt.data.recipe.equals(attachedBlock.id) || global.hasMultipleTappers(level, block)) {
+    if (
+      !nbt.data.recipe ||
+      !nbt.data.recipe.equals(attachedBlock.id) ||
+      global.hasMultipleTappers(level, block)
+    ) {
       hasError = true;
     }
     if (
@@ -361,8 +369,11 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
     ) {
       if (global.tapperRecipes) {
         const recipe = global.tapperRecipes.get(`${attachedBlock.getId()}`);
-        if (returnFluidData && !foundFluidData && attachedBlock.getId() === nbt.data.recipe) {
+        let nbt = block.getEntityData();
+        if (returnFluidData && !foundFluidData && recipe) {
           foundFluidData = { fluid: recipe.fluidOutput, time: recipe.time };
+          nbt.merge({ data: { recipe: `${attachedBlock.getId()}` } });
+          hasError = false;
         }
         if (
           !returnFluidData &&
@@ -376,10 +387,10 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
           newProperties.working = false;
           newProperties.mature = false;
           newProperties.working = true;
-          let nbt = block.getEntityData();
           nbt.merge({ data: { recipe: `${attachedBlock.getId()}`, stage: 0 } });
-          block.setEntityData(nbt);
+          hasError = false;
         }
+        block.setEntityData(nbt);
       }
     }
     if (returnFluidData) {
@@ -411,7 +422,11 @@ global.hasMultipleTappers = (level, block) => {
     if (
       ["society:tapper", "society:auto_tapper"].includes(
         level.getBlock(
-          new BlockPos(attachedBlock.x + offset[0], attachedBlock.y, attachedBlock.z + offset[1])
+          new BlockPos(
+            attachedBlock.x + offset[0],
+            attachedBlock.y,
+            attachedBlock.z + offset[1]
+          )
         ).id
       )
     )
@@ -456,7 +471,8 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
 
   if (
     forced ||
-    (morningModulo >= artMachineProgTime && morningModulo < artMachineProgTime + artMachineTickRate)
+    (morningModulo >= artMachineProgTime &&
+      morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
     global.convertFromLegacy(recipes, level, block);
     let nbt = block.getEntityData();
@@ -495,7 +511,8 @@ global.inventoryHasRoom = (block, item) => {
         belowItem.id === Item.of(item).id &&
         global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
+          block.inventory.getSlotLimit(j) /
+            (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
         return true;
       }
@@ -530,7 +547,8 @@ global.insertInto = (block, item) => {
         belowItem.id === Item.of(item).id &&
         global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
+          block.inventory.getSlotLimit(j) /
+            (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
         block.inventory.insertItem(j, item, false);
         return 1;
@@ -700,6 +718,9 @@ global.giveExperience = (server, player, category, xp) => {
     server.runCommandSilent(
       `puffish_skills experience add ${player.username} society:${category} ${xp}`
     );
+    server.runCommandSilent(
+      `puffish_skills experience add ${player.username} society:mastery ${xp}`
+    );
   }
 };
 
@@ -783,20 +804,23 @@ const rollReplaceTable = (table, hasRope) => {
   return "minecraft:obsidian";
 };
 
-global.handleSkullCavernRegen = (server, level, block) => {
-  if (!level.persistentData || !level.persistentData.chunkParityMap) return;
+global.handleSkullCavernRegen = (level, block) => {
+  if (
+    !level.persistentData ||
+    !level.persistentData.chunkParityMap ||
+    !block.id.equals("society:cavern_air")
+  )
+    return;
   let belowPos;
   let belowBlock;
   let belowBelowPos;
   let hasRope;
 
   let toggleBit =
-    level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
-  if (String(toggleBit) == block.getProperties().get("chunkbit")) {
-    server.scheduleInTicks(2400, () => {
-      global.handleSkullCavernRegen(server, level, block);
-    });
-  } else {
+    level.persistentData.chunkParityMap[
+      level.getChunkAt(block.getPos()).pos.toString()
+    ].toggleBit;
+  if (String(toggleBit) != block.getProperties().get("chunkbit")) {
     belowPos = block.getPos().below();
     belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
     belowBelowPos = belowBlock.getPos().below();
@@ -901,19 +925,6 @@ global.cropList = [
   "vinery:taiga_grape_bush_white",
   "vinery:jungle_grape_bush_white",
   "vinery:jungle_grape_bush_red",
-  "pamhc2trees:pamorange",
-  "pamhc2trees:pamdragonfruit",
-  "pamhc2trees:pampeach",
-  "pamhc2trees:pamplum",
-  "pamhc2trees:pambanana",
-  "pamhc2trees:pamapple",
-  "pamhc2trees:pamcherry",
-  "pamhc2trees:pamstarfruit",
-  "pamhc2trees:pamlychee",
-  "pamhc2trees:pammango",
-  "pamhc2trees:pamhazelnut",
-  "pamhc2trees:pampawpaw",
-  "pamhc2trees:pamcinnamon",
   "vintagedelight:ghost_pepper_crop",
   "vintagedelight:cucumber_crop",
   "farmersdelight:cabbages",
@@ -954,23 +965,41 @@ const qualityToInt = (quality) => {
   }
 };
 const getFertilizer = (crop) => {
-  const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0));
-  if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland")) return -1;
-  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland")) return 1;
-  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland")) return 2;
-  if (block.hasTag("dew_drop_farmland_growth:pristine_quality_fertilized_farmland")) return 3;
+  const block = crop
+    .getLevel()
+    .getBlock(crop.getPos().below().offset(-1, 0, 0));
+  if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
+    return -1;
+  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
+    return 1;
+  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland"))
+    return 2;
+  if (
+    block.hasTag(
+      "dew_drop_farmland_growth:pristine_quality_fertilized_farmland"
+    )
+  )
+    return 3;
   return 0;
 };
 
-const LevelData = Java.loadClass("de.cadentem.quality_food.capability.LevelData");
+const LevelData = Java.loadClass(
+  "de.cadentem.quality_food.capability.LevelData"
+);
 
 global.getCropQuality = (crop) => {
   const fertilizer = getFertilizer(crop);
   if (fertilizer == -1) return 0;
-  const qualityName = LevelData.get(crop.getLevel(), crop.getPos().offset(-1, 0, 0), false);
+  const qualityName = LevelData.get(
+    crop.getLevel(),
+    crop.getPos().offset(-1, 0, 0),
+    false
+  );
   const seedQuality = qualityToInt(qualityName);
   const goldChance =
-    0.2 * ((seedQuality * 4.6) / 10) + 0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) + 0.01;
+    0.2 * ((seedQuality * 4.6) / 10) +
+    0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
+    0.01;
 
   if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
   if (Math.random() < goldChance) return 2;

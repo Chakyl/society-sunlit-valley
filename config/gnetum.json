@@ -20,12 +20,6 @@
       },
       "pass": 1
     },
-    "gnetum.packedElement.right": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "minecraft:jump_bar": {
       "enabled": {
         "value": "AUTO"
@@ -60,7 +54,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "oreganized:stunning": {
       "enabled": {
@@ -72,7 +66,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "horseman:horseman_xp_bar": {
       "enabled": {
@@ -88,7 +82,7 @@
     },
     "minecraft:hotbar": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 1
     },
@@ -126,13 +120,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
-    },
-    "create:remaining_air": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
+      "pass": 3
     },
     "minecraft:scoreboard": {
       "enabled": {
@@ -144,13 +132,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
-    },
-    "champions:champions_health_overlay": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
+      "pass": 1
     },
     "minecraft:subtitles": {
       "enabled": {
@@ -168,19 +150,19 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "seasonhud:seasonhud": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "zetter:painting_info": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "create:value_settings": {
       "enabled": {
@@ -212,12 +194,6 @@
       },
       "pass": 2
     },
-    "gnetum.packedElement.left": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "create:schematic": {
       "enabled": {
         "value": "AUTO"
@@ -228,7 +204,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "create:train_hud": {
       "enabled": {
@@ -248,12 +224,6 @@
       },
       "pass": 1
     },
-    "cobblemonrider:stamina_bar": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
     "minecraft:player_list": {
       "enabled": {
         "value": "AUTO"
@@ -270,7 +240,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "supplementaries:cannon_charge_overlay": {
       "enabled": {
@@ -308,35 +278,35 @@
       },
       "pass": 3
     },
+    "gnetum:status_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
     "relics:researching_hint": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "windswept:carved_pinecone": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "supplementaries:quiver_overlay": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "refurbished_furniture:cutting_board_helper": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "horseman:horseman_food_level": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
     },
     "minecraft:spyglass": {
       "enabled": {
@@ -374,7 +344,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 1
+      "pass": 3
     }
   },
   "mapModdedElementsPost": {

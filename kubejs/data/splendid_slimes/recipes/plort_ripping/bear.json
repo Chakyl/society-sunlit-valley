@@ -1,0 +1,18 @@
+{
+  "type": "splendid_slimes:plort_ripping",
+  "ingredient": {
+    "item": "splendid_slimes:plort",
+    "nbt": {
+      "plort": {
+        "id": "splendid_slimes:bear"
+      }
+    }
+  },
+  "results": [
+    { "item": "meadow:flecked_wool", "count": 4, "weight": 44 },
+    { "item": "society:fine_wool", "count": 1, "weight": 22 },
+    { "item": "species:werefang", "count": 1, "weight": 10 },
+    { "item": "buzzier_bees:moobloom_spawn_egg", "count": 1, "weight": 5 },
+    { "item": "society:beemonican_seal", "count": 1, "weight": 1 }
+  ]
+}

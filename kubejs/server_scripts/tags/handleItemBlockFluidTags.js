@@ -254,6 +254,8 @@ const rawLogs = [
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
+  e.add("stardew_fishing:bobbers", "society:needle_bobber");
+  e.add("stardew_fishing:bobbers", "society:net_bobber");
   e.add("forge:plates/lead", "oreganized:lead_sheet");
   e.add("forge:plates", "oreganized:lead_sheet");
   e.add("forge:plates/silver", "oreganized:silver_sheet");
@@ -280,6 +282,7 @@ ServerEvents.tags("item", (e) => {
   e.add("meadow:cheese_blocks", "meadow:amethyst_cheese_block");
   e.add("netherdepthsupgrade:lava_fishing_rod", "forge:tools/fishing_rods");
   e.add("forge:rope", "brewery:rope");
+  e.add("forge:cobblestone", "meadow:cobbled_limestone");
   e.remove("forge:chests/ender", "minecraft:ender_chest");
   e.remove("forge:chests", "minecraft:ender_chest");
   // Vinery leaf fix
@@ -574,6 +577,7 @@ ServerEvents.tags("block", (e) => {
     "minecraft:spawner",
     "trials:trial_vault",
     "trials:trial_vault_ominous",
+    "fastpaintings:painting",
     "fastpaintings:painting",
     "lootr:lootr_barrel",
     "lootr:lootr_chest",

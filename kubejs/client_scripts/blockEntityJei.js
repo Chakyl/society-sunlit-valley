@@ -77,7 +77,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
       })
       .handleLookup((builder, recipe) => {
         const { item, additionalRewards } = recipe.data;
-        let fishId = item.split(":")[1];
+        let fishId = item.path;
         if (fishId.includes("raw_")) {
           if (fishId === "raw_snowflake") fishId = "frosty_fin";
           else fishId = fishId.substring(4, fishId.length);

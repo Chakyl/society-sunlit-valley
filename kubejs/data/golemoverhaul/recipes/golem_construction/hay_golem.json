@@ -1,0 +1,18 @@
+{
+  "type": "golemoverhaul:golem_construction",
+  "blockScale": 0.75,
+  "entity": "golemoverhaul:hay_golem",
+  "entityScale": 0.6,
+  "item": "golemoverhaul:hay_golem_spawn_egg",
+  "key": {
+    "#": "minecraft:hay_block",
+    "/": "diagonalfences:minecraft/oak_fence",
+    "^": "minecraft:carved_pumpkin",
+    "~": "minecraft:air"
+  },
+  "pattern": [
+    "~^~",
+    "/#/",
+    "~/~"
+  ]
+}

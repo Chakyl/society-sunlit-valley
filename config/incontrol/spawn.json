@@ -16,8 +16,8 @@
       "minecraft:zombie_villager",
       "minecraft:husk",
       "minecraft:stray",
-      "minecraft:slime",
       "trials:bogged",
+      "minecraft:slime",
       "minecraft:skeleton_horse",
       "species:limpet",
       "windswept:chilled"
@@ -132,12 +132,6 @@
   },
   {
     "mob": "wildernature:flamingo",
-    "biome": "minecraft:beach",
-    "result": "deny"
-  },
-  {
-    "mob": "wildernature:flamingo",
-    "mincount": 1,
     "result": "deny"
   },
   {

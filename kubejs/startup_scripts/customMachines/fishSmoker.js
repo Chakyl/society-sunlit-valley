@@ -79,7 +79,7 @@ const smokableFish = [
   "crittersandcompanions:koi_fish",
 ];
 smokableFish.forEach((fish) => {
-  let fishId = fish.split(":")[1];
+  let fishId = fish.path;
   if (fishId.includes("raw_")) {
     if (fishId === "raw_snowflake") fishId = "frosty_fin";
     else fishId = fishId.substring(4, fishId.length);

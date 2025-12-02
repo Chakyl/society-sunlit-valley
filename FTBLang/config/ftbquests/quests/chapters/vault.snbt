@@ -59,8 +59,8 @@
 			icon: "supplementaries:present_yellow"
 			id: "5629152AF2F5D6EE"
 			rewards: [{
-				id: "6003010D81447E5E"
-				item: "moreminecarts:chunk_loader"
+				id: "4A564B58A7CFA60B"
+				item: "society:charging_rod"
 				type: "item"
 			}]
 			tasks: [{
@@ -125,6 +125,14 @@
 						}
 					}
 					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p vault_complete"
+					elevate_perms: true
+					id: "547F885D1C8553E3"
+					silent: true
+					type: "command"
 				}
 			]
 			subtitle: "{ftbquests.chapter.vault.quest5.subtitle}"

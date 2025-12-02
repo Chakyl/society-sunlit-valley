@@ -33,7 +33,7 @@ global.handleAdditionalArtisanMachineOutputs = (
     case "society:crystalarium": {
       if (upgraded && rnd10()) {
         recipes[type - 1].output.forEach((item) => {
-          global.insertBelow(level, block, `society:pristine_${Item.of(item).id.split(":")[1]}`);
+          global.insertBelow(level, block, `society:pristine_${Item.of(item).id.path}`);
         });
       }
       break;
@@ -345,7 +345,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         let outputCount;
         for (let i = 0; i < slots; i++) {
           slotStack = aboveBlock.inventory.getStackInSlot(i);
-          if (!(multipleInputs && slotStack.count < stageCount)) {
+          if (!(multipleInputs && !slotStack.isEmpty() && slotStack.count < stageCount)) {
             outputCount = global.artisanInsert(
               artisanMachine,
               slotStack,

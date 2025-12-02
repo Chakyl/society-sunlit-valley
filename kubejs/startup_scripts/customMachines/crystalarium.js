@@ -127,7 +127,7 @@ StartupEvents.registry("block", (event) => {
         let nbt = block.getEntityData();
         global.crystalariumCrystals.get(nbt.data.type).output.forEach((item) => {
           block.popItemFromFace(
-            `society:pristine_${Item.of(item).id.split(":")[1]}`,
+            `society:pristine_${Item.of(item).id.path}`,
             block.properties.get("facing").toLowerCase()
           );
         });

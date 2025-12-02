@@ -323,5 +323,5 @@ LootJS.modifiers((e) => {
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 3);
       return itemStack;
-    });
+    })
 });

@@ -155,7 +155,7 @@ global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
         if (player && server) {
           let name = animal.customName ? animal.customName.getString() : undefined;
           if (!name) {
-            name = global.formatName(String(animal.type.split(":")[1]).replace(/_/g, " "));
+            name = global.formatName(String(animal.type.path).replace(/_/g, " "));
             if (name.equals("Domestic tribull")) name = "Domestic tri-bull";
           }
           server.runCommandSilent(

@@ -132,6 +132,17 @@
         "value": 100
       }
     },
+    "turtlecore:thrown_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell_type_portal": {
       "enabled": false,
       "min": {
@@ -265,6 +276,17 @@
       }
     },
     "reforgingstation:projectile_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "turtlecore:healing_effectiveness": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -913,6 +935,17 @@
         "value": 100
       }
     },
+    "turtlecore:armor_penetration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "forge:entity_gravity": {
       "enabled": false,
       "min": {
@@ -1043,6 +1076,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "turtlecore:cooldown_reduction": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell_type_invisibility": {
@@ -1241,6 +1285,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "turtlecore:life_steal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell_type_poison_breath": {
@@ -1474,6 +1529,17 @@
         "value": 100
       }
     },
+    "turtlecore:damage_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:innate_school/irons_spellbooks/ice": {
       "enabled": false,
       "min": {
@@ -1604,6 +1670,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "turtlecore:critical_damage": {
+      "enabled": false,
+      "min": {
+        "default": 1.5,
+        "value": 1.5
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell_type_heat_surge": {
@@ -1835,6 +1912,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "turtlecore:critical_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "irons_spellbooks:lightning_magic_resist": {
@@ -2256,6 +2344,17 @@
       }
     },
     "forge:block_reach": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "turtlecore:player_size": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -2882,6 +2981,28 @@
         "value": 100
       }
     },
+    "turtlecore:ranged_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "turtlecore:hit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell_type_abyssal_shroud": {
       "enabled": false,
       "min": {
@@ -3256,6 +3377,17 @@
         "value": 100
       }
     },
+    "turtlecore:dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/heartstop": {
       "enabled": false,
       "min": {
@@ -3474,6 +3606,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "turtlecore:magic_amp": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell_type_cone_of_cold": {

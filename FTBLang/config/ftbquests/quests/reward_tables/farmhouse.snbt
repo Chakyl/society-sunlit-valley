@@ -6,88 +6,256 @@
 		{
 			item: {
 				Count: 1
-				id: "capsule:capsule"
+				id: "portable_blueprints:worn_blueprint"
 				tag: {
-					author: "Chakyl"
-					canRotate: 1b
-					color: 8072841
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_tudor"
+					buildAnyway: 0b
 					display: {
-						color: 14714914
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Farmhouse\"}"
 					}
-					isReward: 1b
-					label: "Tudor Farmhouse"
-					mirror: "NONE"
-					oneUse: 1b
-					rotation: "NONE"
-					size: 21
-					state: 5
-					structureName: "minecraft:config/capsule/rewards/home_tudor"
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_tudor"
+					owner: "worn"
+					owner_name: "Chakyl"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 0b
+					worn_set: 1b
 				}
 			}
 		}
 		{
 			item: {
 				Count: 1
-				id: "capsule:capsule"
+				id: "portable_blueprints:worn_blueprint"
 				tag: {
-					author: "Chakyl"
-					canRotate: 1b
-					color: 12408663
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_siberian"
+					buildAnyway: 0b
 					display: {
-						color: 8072841
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Farmhouse\"}"
 					}
-					isReward: 1b
-					label: "Siberian Farmhouse"
-					mirror: "NONE"
-					oneUse: 1b
-					rotation: "NONE"
-					size: 19
-					state: 5
-					structureName: "minecraft:config/capsule/rewards/home_siberian"
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_siberian"
+					owner: "worn"
+					owner_name: "Chakyl"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 0b
+					worn_set: 1b
 				}
 			}
 		}
 		{
 			item: {
 				Count: 1
-				id: "capsule:capsule"
+				id: "portable_blueprints:worn_blueprint"
 				tag: {
-					author: "Chakyl"
-					canRotate: 1b
-					color: 13092290
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_cherry"
+					buildAnyway: 0b
 					display: {
-						color: 9926515
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Farmhouse\"}"
 					}
-					isReward: 1b
-					label: "Cherry Farmhouse"
-					mirror: "NONE"
-					oneUse: 1b
-					rotation: "COUNTERCLOCKWISE_90"
-					size: 21
-					state: 5
-					structureName: "minecraft:config/capsule/rewards/home_cherry"
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_cherry"
+					owner: "worn"
+					owner_name: "Chakyl"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 0b
+					worn_set: 1b
 				}
 			}
 		}
 		{
 			item: {
 				Count: 1
-				id: "capsule:capsule"
+				id: "portable_blueprints:worn_blueprint"
 				tag: {
-					author: "JadeClouds"
-					canRotate: 1b
-					color: 170
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_prismarine"
+					buildAnyway: 0b
 					display: {
-						color: 16777215
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Farmhouse\"}"
 					}
-					isReward: 1b
-					label: "Entrana Farmhouse"
-					mirror: "NONE"
-					oneUse: 1b
-					rotation: "CLOCKWISE_90"
-					size: 19
-					state: 5
-					structureName: "minecraft:config/capsule/rewards/home_entrana"
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_prismarine"
+					owner: "worn"
+					owner_name: "AndieCherries"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 0b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_alpine"
+					buildAnyway: 0b
+					display: {
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Farmhouse\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_alpine"
+					owner: "worn"
+					owner_name: "Krewella"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 0b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_entrana"
+					buildAnyway: 0b
+					display: {
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Farmhouse\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_entrana"
+					owner: "worn"
+					owner_name: "JadeClouds"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 0b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_mason"
+					buildAnyway: 0b
+					display: {
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Farmhouse\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_mason"
+					owner: "worn"
+					owner_name: "Kanlamari"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 1b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_vibrantown"
+					buildAnyway: 0b
+					display: {
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Farmhouse\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_vibrantown"
+					owner: "worn"
+					owner_name: "Duy Luong"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 1b
+					wasHolding: 1b
+					worn_set: 1b
 				}
 			}
 		}

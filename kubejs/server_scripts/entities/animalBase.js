@@ -366,7 +366,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
-      const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
+      const nonIdType = String(target.type.path).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
         name = global.formatName(nonIdType);

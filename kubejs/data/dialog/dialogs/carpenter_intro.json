@@ -1,68 +1,87 @@
 {
-  "id": "carpenter_intro",
-  "title": "Carpenter Intro",
-  "description": "Introduction the carpenter gives the player",
-  "start": "start",
-  "entries": [
-    {
-      "id": "start",
-      "speaker": { "translate": "npc.society.carpenter.name", "color": "orange" },
-      "text": [
-        {
-          "translate": "Heya, I'm CARPENTER_NAME, here to help you build out the village you're building in Sunlit Valley."
-        }
-      ],
-      "portraits": [
-        {
-          "path": "tlipoca.png",
-          "position": "INLINE",
-          "brightness": 1.0,
-          "animationType": "FADE_IN"
-        }
-      ]
-    },
-    {
-      "id": "1",
-      "speaker": { "translate": "npc.society.carpenter.name", "color": "orange" },
-      "text": {
-        "translate": "You can come talk to help you build suitable homes for those you'd like to invite."
-      },
-      "portraits": [
-        {
-          "path": "tlipoca.png",
-          "position": "INLINE",
-          "brightness ": 1.0
-        }
-      ],
-      "next": "2"
-    },
-    {
-      "id": "2",
-      "speaker": { "translate": "npc.society.carpenter.name", "color": "orange" },
-      "text": {
-        "translate": "If you'd prefer to do the building yourself, just let me know and I can give you the invitations and any building supplies you'll need."
-      },
-      "portraits": [
-        {
-          "path": "tlipoca.png",
-          "position": "INLINE",
-          "brightness ": 1.0
-        }
-      ]
-    },
-    {
-      "id": "end",
-      "speaker": { "translate": "npc.society.carpenter.name", "color": "orange" },
-      "text": {
-        "translate": "That's all I have for now, you really have your work cut out for you here. Come see me if you need anything!"
-      },
-      "portraits": [
-        {
-          "path": "tlipoca.png",
-          "position": "INLINE",
-          "brightness ": 1.0
-        }
-      ]
-    }
-  ]
+	"id": "carpenter_intro",
+	"title": "carpenter introduction",
+	"description": "dialog.npc.carpenter.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		}
+	]
 }

@@ -5,6 +5,7 @@
   "entity": "farmingforblockheads:merchant",
   "villager_profession": "farmer",
   "block_tag": "society:opens_market",
+  "selector_weight": -99,
   "jei_catalyst": { "item": "farmingforblockheads:market" },
   "selector_weight": -99,
   "trades": [
@@ -322,6 +323,7 @@
         "late_winter"
       ],
       "stage_required": "master_cultivator_unlocked",
+      "stage_override": "universal_methods_of_farming",
       "unlock_description": "jei.society_trading.master_culitvator_unlocked",
       "trade_id": "market_cabbage_seeds_for_cog"
     },

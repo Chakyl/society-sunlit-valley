@@ -13,7 +13,7 @@
 		}
 	}
 	id: "38639EECD8CDEFB3"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -678,6 +678,44 @@
 			title: "Schematics!"
 			x: 1.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			description: [
+				"The blueprinting system used for the Building Shop can also be used to make your own blueprints!"
+				""
+				"The &6Scanner&r is used to capture a build."
+				""
+				"The &6Tablet&r is used to obtain blueprints to use, or share them with other players."
+				""
+				"You can use this to plan builds in creative first!"
+			]
+			icon: "portable_blueprints:tablet"
+			id: "54B6F31A66A23AD4"
+			rewards: [{
+				id: "21EC0DE21DADD12C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "058F9B403F01B939"
+					item: {
+						Count: 1
+						id: "portable_blueprints:scanner"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "20E2F8E9F43039FE"
+					item: "portable_blueprints:tablet"
+					type: "item"
+				}
+			]
+			title: "Blueprints"
+			x: 1.0d
+			y: 2.5d
 		}
 	]
 	title: "Building Tools"

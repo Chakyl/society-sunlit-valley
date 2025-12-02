@@ -272,6 +272,83 @@
 			x: 1.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["18490F31FFAB134E"]
+			description: [
+				"Due to the complex world generation of the Skull Cavern, we suggest pre-generating the dimension using Chunky! To do so, run the following commands:"
+				""
+				"&6/chunky world society:skull_cavern&r"
+				"&6/chunky radius 1000&r (increase number for larger servers)"
+				"&6/chunky start&r"
+				""
+				"For additional info on chunky, run &6/chunky help&r"
+				""
+				"&oIt's best to do this when nobody is online for performance reasons&r"
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "25305BECA3C32315"
+			tasks: [{
+				id: "5F3330533AD364D1"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Pregenerating the Skull Cavern"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			description: [
+				"This pack has a lot of animals that can make sounds that get old very quickly."
+				""
+				"To mute specific mobs/sounds, you can click on the volume icon in your inventory."
+				""
+				"If you dislike the ambient sounds in the pack, you can edit the file &6config/ambientsounds-client.json&r and set the volume to a lower value. You can also just remove the mod without losing the ability to connect to servers using the pack."
+			]
+			icon: "etched:radio"
+			id: "67486880FE3E2CCD"
+			subtitle: "I can't stand the squirrels"
+			tasks: [{
+				id: "5330CA06B1E9BEE3"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Muting Sounds"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1375AE2ECAC8C147"]
+			description: [
+				"The FTB Chunks map is disabled to prevent confusion from having two maps."
+				""
+				"If you're familiar with modded minecraft and prefer that map, click the check mark!"
+				""
+				"&cThis cannot be undone!&r"
+			]
+			icon: "supplementaries:slice_map"
+			id: "5FDA526D348C8A0F"
+			rewards: [{
+				command: "/kjs stages add @p ftbchunks_mapping"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "supplementaries:slice_map"
+				id: "757BB197D52F88E4"
+				ignore_reward_blocking: true
+				silent: true
+				team_reward: false
+				title: "Enabled FTB Chunks Map"
+				type: "command"
+			}]
+			tasks: [{
+				id: "278FC13CCE8B9572"
+				title: "Enable FTB Chunks Map"
+				type: "checkmark"
+			}]
+			title: "Prefer FTB Chunks?"
+			x: 2.5d
+			y: -2.5d
+		}
 	]
 	title: "Welcome"
 }

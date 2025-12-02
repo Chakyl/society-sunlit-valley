@@ -100,7 +100,7 @@
 				"3B5CF272356259B2"
 				"79ECFD2110BB5689"
 			]
-			description: ["Cook all dishes from &6Let's Do: Candlelight&r."]
+			description: ["{ftbquests.chapter.banners.quest2.description1}"]
 			hide_dependency_lines: true
 			id: "1280C34AE9A4EE7B"
 			rewards: [{
@@ -113,11 +113,11 @@
 				icon: "candlelight:candlelight_standard"
 				id: "765B171872302421"
 				stat: "minecraft:play_time"
-				title: "Complete all Candlelight Dishes"
+				title: "{ftbquests.chapter.banners.quest2.task_8528435713118577697.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Candlelight Champion"
+			title: "{ftbquests.chapter.banners.quest2.title}"
 			x: -3.0d
 			y: -2.0d
 		}
@@ -156,7 +156,7 @@
 				"560CDD4660AA1159"
 				"791EFE3588B3D3A6"
 			]
-			description: ["Cook all dishes from &6Let's Do: Bakery&r."]
+			description: ["{ftbquests.chapter.banners.quest3.description1}"]
 			hide_dependency_lines: true
 			id: "7A159242A6B053C8"
 			rewards: [{
@@ -169,11 +169,11 @@
 				icon: "bakery:bakery_standard"
 				id: "3AD3A245C817EDF9"
 				stat: "minecraft:play_time"
-				title: "Bake all Baked goods"
+				title: "{ftbquests.chapter.banners.quest3.task_4238910094879223289.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Bakery Blaster"
+			title: "{ftbquests.chapter.banners.quest3.title}"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -1065,28 +1065,8 @@
 			hide_dependency_lines: true
 			id: "44256671D7500BEA"
 			rewards: [{
-				id: "04DB5A5F23F3A7EF"
-				item: {
-					Count: 1
-					id: "relics:infinity_ham"
-					tag: {
-						abilities: {
-							autophagy: {
-								points: 0
-								stats: {
-									feed: 1.51582d
-								}
-							}
-							infusion: {
-								points: 0
-								stats: {
-									duration: 2.05742d
-								}
-							}
-						}
-						pieces: 10
-					}
-				}
+				id: "41B656E2B16D51AD"
+				item: "society:magic_rock_candy"
 				type: "item"
 			}]
 			size: 2.0d
@@ -1104,7 +1084,7 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Delightful Darling"
+			title: "{ftbquests.chapter.banners.quest81.title}"
 			x: 1.5d
 			y: 2.5d
 		}

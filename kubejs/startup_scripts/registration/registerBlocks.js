@@ -171,7 +171,7 @@ StartupEvents.registry("block", (e) => {
     .hardness(-1)
     .resistance(3600000)
     .randomTick((tick) => {
-      if (rnd10()) global.handleSkullCavernRegen(tick.server, tick.level, tick.block);
+      global.handleSkullCavernRegen(tick.level, tick.block);
     })
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 4), 0);
@@ -516,7 +516,6 @@ StartupEvents.registry("block", (e) => {
         food.alwaysEdible(true);
         food.fastToEat(true);
         food.effect("vinery:jellie", 200, 1, 1.0);
-        food.effect("trials:oozing", 1200, 1, 1.0);
       });
       item.useAnimation("drink");
     })

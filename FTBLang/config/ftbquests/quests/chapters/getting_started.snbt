@@ -14,8 +14,8 @@
 			id: "3862A7D1A471A215"
 			rewards: [{
 				count: 4
-				id: "329BF163F878D2C7"
-				item: "bakery:vegetable_sandwich"
+				id: "071BAFAC9167564D"
+				item: "meadow:cheese_sandwich"
 				type: "item"
 			}]
 			size: 1.5d
@@ -124,19 +124,12 @@
 				"{ftbquests.chapter.getting_started.quest3.description2}"
 			]
 			id: "3F759C6DEEBC61FD"
-			rewards: [
-				{
-					count: 9
-					id: "1B89BB30B2C03782"
-					item: "farmersdelight:tomato_seeds"
-					type: "item"
-				}
-				{
-					id: "032EA113F5A62635"
-					item: "numismatics:sprocket"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "0675D9BCC3957125"
+				item: "veggiesdelight:turnip_seeds"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "303017FCE69EB127"
@@ -367,17 +360,30 @@
 			]
 			icon: "bountiful:bountyboard"
 			id: "34FCF481CDFD3380"
-			rewards: [{
-				id: "6DB78FE4AB9F93FA"
-				item: {
-					Count: 1
-					id: "bountiful:decree"
-					tag: {
-						"bountiful:decree_data": "{}"
+			rewards: [
+				{
+					id: "6DB78FE4AB9F93FA"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{}"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0479CC3534ABA5D5"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{\"ids\":[\"spring\"]}"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "68532046A994CD92"
 				item: "bountiful:bountyboard"
@@ -479,17 +485,19 @@
 				{
 					consume_items: true
 					count: 64L
-					id: "6D21C1D76292BD76"
-
-					item: { Count: 40, id: "meadow:fire_log" }
-					title: "{ftbquests.chapter.getting_started.quest14.task_7863779555181510006.title}"
+					id: "32868E4039CBCDC9"
+					item: "minecraft:cobblestone"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
-					id: "32868E4039CBCDC9"
-					item: "minecraft:cobblestone"
+					count: 10L
+					id: "11214822A37DCD70"
+					item: {
+						Count: 1
+						id: "meadow:fire_log"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
@@ -751,6 +759,8 @@
 				"{ftbquests.chapter.getting_started.quest22.description2}"
 				""
 				"{ftbquests.chapter.getting_started.quest22.description3}"
+				""
+				"{ftbquests.chapter.getting_started.quest22.description4}"
 			]
 			icon: "numismatics:white_card"
 			id: "1F0231C09608265D"
@@ -767,6 +777,31 @@
 			}]
 			title: "{ftbquests.chapter.getting_started.quest22.title}"
 			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["443F42C8AFDA0C36"]
+			description: [
+				"{ftbquests.chapter.getting_started.quest23.description1}"
+				""
+				"{ftbquests.chapter.getting_started.quest23.description2}"
+				""
+				"{ftbquests.chapter.getting_started.quest23.description3}"
+			]
+			id: "23C02B36014CC450"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35928F071913970B"
+				table_id: 3483058636960571374L
+				type: "random"
+			}]
+			tasks: [{
+				id: "24C56E6ED4DB14F1"
+				item: "whimsy_deco:phone"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.getting_started.quest23.title}"
+			x: 8.0d
 			y: 1.5d
 		}
 	]

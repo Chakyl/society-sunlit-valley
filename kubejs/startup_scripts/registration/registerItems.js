@@ -220,6 +220,8 @@ StartupEvents.registry("item", (e) => {
   e.create("crabbersdelight:crab_trap_bait").texture("society:item/crab_trap_bait");
   e.create("crabbersdelight:deluxe_crab_trap_bait").texture("society:item/deluxe_crab_trap_bait");
   e.create("crabbersdelight:mana_crab_trap_bait").texture("society:item/mana_crab_trap_bait");
+  e.create("society:net_bobber").texture("society:item/net_bobber").maxStackSize(1);
+  e.create("society:needle_bobber").texture("sewingkit:item/netherite_sewing_needle").maxStackSize(1);
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
   e.create("society:pig_race_ticket").texture("society:item/pig_race_ticket");
   e.create("society:multiplayer_pig_race_ticket").texture(
@@ -266,9 +268,7 @@ StartupEvents.registry("item", (e) => {
   global.artifacts.forEach((artifact) => {
     const { item } = artifact;
     if (item !== "society:princess_hairbrush" && item !== "society:perfect_cherry") {
-      e.create(item)
-        .texture(`society:item/artifacts/${item.split(":")[1]}`)
-        .rarity("uncommon");
+      e.create(item).texture(`society:item/artifacts/${item.path}`).rarity("uncommon");
     }
   });
   e.create("society:perfect_cherry")
@@ -580,31 +580,23 @@ StartupEvents.registry("item", (e) => {
 
   global.geodeList.forEach((geode) => {
     if (geode.item !== "society:earth_crystal")
-      e.create(`society:${geode.item.split(":")[1]}`).texture(
-        `society:item/geode/${geode.item.split(":")[1]}`
-      );
+      e.create(`society:${geode.item.path}`).texture(`society:item/geode/${geode.item.path}`);
   });
 
   e.create("society:frozen_geode").texture("society:item/frozen_geode/frozen_geode");
 
   global.frozenGeodeList.forEach((geode) => {
-    e.create(`society:${geode.item.split(":")[1]}`).texture(
-      `society:item/frozen_geode/${geode.item.split(":")[1]}`
-    );
+    e.create(`society:${geode.item.path}`).texture(`society:item/frozen_geode/${geode.item.path}`);
   });
   e.create("society:magma_geode").texture("society:item/magma_geode/magma_geode");
 
   global.magmaGeodeList.forEach((geode) => {
     if (geode.item !== "society:fire_quartz")
-      e.create(`society:${geode.item.split(":")[1]}`).texture(
-        `society:item/magma_geode/${geode.item.split(":")[1]}`
-      );
+      e.create(`society:${geode.item.path}`).texture(`society:item/magma_geode/${geode.item.path}`);
   });
 
   global.gems.forEach((gem) => {
-    e.create(`society:${gem.item.split(":")[1]}`).texture(
-      `society:item/gems/${gem.item.split(":")[1]}`
-    );
+    e.create(`society:${gem.item.path}`).texture(`society:item/gems/${gem.item.path}`);
   });
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
@@ -629,8 +621,8 @@ StartupEvents.registry("item", (e) => {
 
   global.preserves.forEach((jar) => {
     if (jar.item.includes("society")) {
-      e.create(`society:${jar.item.split(":")[1]}`)
-        .texture(`society:item/preserves/${jar.item.split(":")[1]}`)
+      e.create(`society:${jar.item.path}`)
+        .texture(`society:item/preserves/${jar.item.path}`)
         .food((food) => {
           food.hunger(5);
           food.saturation(1);
@@ -667,7 +659,7 @@ StartupEvents.registry("item", (e) => {
   ];
   global.dehydratableMushrooms.forEach((item) => {
     const itemHex = dehydratorMushroomMapping.find((val) => val.item === item)?.hex;
-    e.create(`society:dried_${item.split(":")[1]}`)
+    e.create(`society:dried_${item.path}`)
       .texture(`society:item/dried_mushrooms`)
       .color(0, itemHex)
       .food((food) => {
@@ -709,7 +701,7 @@ StartupEvents.registry("item", (e) => {
   ];
   global.dehydratableFruits.forEach((item) => {
     const itemHex = dehydratorFruitMapping.find((val) => val.item === item)?.hex;
-    let itemId = item.split(":")[1];
+    let itemId = item.path;
     if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
     e.create(`society:dried_${itemId}`)
       .texture(`society:item/dried_fruit`)
@@ -948,31 +940,31 @@ StartupEvents.registry("item", (e) => {
   // Pristine gems
   global.geodeList.forEach((geode) => {
     if (geode.item === "society:froggy_helm") return;
-    e.create(`society:pristine_${geode.item.split(":")[1]}`)
-      .texture(`society:item/geode/${geode.item.split(":")[1]}`)
+    e.create(`society:pristine_${geode.item.path}`)
+      .texture(`society:item/geode/${geode.item.path}`)
       .glow(true)
       .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.frozenGeodeList.forEach((geode) => {
     if (geode.item === "society:ribbit_drum") return;
-    e.create(`society:pristine_${geode.item.split(":")[1]}`)
-      .texture(`society:item/frozen_geode/${geode.item.split(":")[1]}`)
+    e.create(`society:pristine_${geode.item.path}`)
+      .texture(`society:item/frozen_geode/${geode.item.path}`)
       .glow(true)
       .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.magmaGeodeList.forEach((geode) => {
     if (geode.item === "society:ribbit_gadget") return;
-    e.create(`society:pristine_${geode.item.split(":")[1]}`)
-      .texture(`society:item/magma_geode/${geode.item.split(":")[1]}`)
+    e.create(`society:pristine_${geode.item.path}`)
+      .texture(`society:item/magma_geode/${geode.item.path}`)
       .glow(true)
       .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.gems.forEach((gem) => {
-    e.create(`society:pristine_${gem.item.split(":")[1]}`)
-      .texture(`society:item/gems/${gem.item.split(":")[1]}`)
+    e.create(`society:pristine_${gem.item.path}`)
+      .texture(`society:item/gems/${gem.item.path}`)
       .glow(true)
       .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
@@ -986,8 +978,8 @@ StartupEvents.registry("item", (e) => {
     "minecraft:quartz",
   ];
   vanillaPristine.forEach((gem) => {
-    e.create(`society:pristine_${gem.split(":")[1]}`)
-      .texture(`minecraft:item/${gem.split(":")[1]}`)
+    e.create(`society:pristine_${gem.path}`)
+      .texture(`minecraft:item/${gem.path}`)
       .glow(true)
       .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });

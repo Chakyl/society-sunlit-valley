@@ -184,7 +184,9 @@ global.fishPondDefinitions = new Map([
         },
         {
           population: 7,
-          requestedItems: [{ item: "veggiesdelight:stuffed_bellpeppers", count: 16 }],
+          requestedItems: [
+            { item: "veggiesdelight:stuffed_bellpeppers", count: 16 },
+          ],
         },
       ],
       additionalRewards: [
@@ -529,7 +531,12 @@ global.fishPondDefinitions = new Map([
     {
       quests: basicQuests,
       additionalRewards: [
-        { minPopulation: 10, item: "wildernature:cod_catcher_banner", count: 1, chance: 0.01 },
+        {
+          minPopulation: 10,
+          item: "wildernature:cod_catcher_banner",
+          count: 1,
+          chance: 0.01,
+        },
       ],
     },
   ],
@@ -646,7 +653,9 @@ global.fishPondDefinitions = new Map([
         },
         {
           population: 7,
-          requestedItems: [{ item: "betterarcheology:unidentified_artifact", count: 1 }],
+          requestedItems: [
+            { item: "betterarcheology:unidentified_artifact", count: 1 },
+          ],
         },
       ],
       additionalRewards: [
@@ -687,7 +696,9 @@ global.fishPondDefinitions = new Map([
         },
         {
           population: 5,
-          requestedItems: [{ item: "snowyspirit:glow_lights_prismatic", count: 64 }],
+          requestedItems: [
+            { item: "snowyspirit:glow_lights_prismatic", count: 64 },
+          ],
         },
         {
           population: 7,
@@ -1154,7 +1165,10 @@ global.fishPondDefinitions = new Map([
         {
           population: 5,
           requestedItems: [
-            { item: "create_mechanical_extruder:mechanical_extruder", count: 1 },
+            {
+              item: "create_mechanical_extruder:mechanical_extruder",
+              count: 1,
+            },
             { item: "create:brass_ingot", count: 16 },
             { item: "snowyspirit:ginger", count: 30 },
           ],
@@ -1930,10 +1944,22 @@ global.fishPondDefinitions = new Map([
       ],
     },
   ],
-  ["crabbersdelight:shrimp", { quests: crabTrapQuests, additionalRewards: crabTrapRewards }],
-  ["crabbersdelight:clawster", { quests: crabTrapQuests, additionalRewards: crabTrapRewards }],
-  ["crabbersdelight:crab", { quests: crabTrapQuests, additionalRewards: crabTrapRewards }],
-  ["crabbersdelight:clam", { quests: crabTrapQuests, additionalRewards: crabTrapRewards }],
+  [
+    "crabbersdelight:shrimp",
+    { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+  ],
+  [
+    "crabbersdelight:clawster",
+    { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+  ],
+  [
+    "crabbersdelight:crab",
+    { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+  ],
+  [
+    "crabbersdelight:clam",
+    { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+  ],
   [
     "netherdepthsupgrade:searing_cod",
     {
@@ -2101,7 +2127,9 @@ global.fishPondDefinitions = new Map([
         },
         {
           population: 5,
-          requestedItems: [{ item: "nethervinery:crimson_grapejuice", count: 16 }],
+          requestedItems: [
+            { item: "nethervinery:crimson_grapejuice", count: 16 },
+          ],
         },
         {
           population: 7,
@@ -2119,7 +2147,12 @@ global.fishPondDefinitions = new Map([
           count: 64,
           chance: 0.48,
         },
-        { minPopulation: 6, item: "society:fire_quartz", count: 4, chance: 0.44 },
+        {
+          minPopulation: 6,
+          item: "society:fire_quartz",
+          count: 4,
+          chance: 0.44,
+        },
         {
           minPopulation: 9,
           item: "tanukidecor:gorgeous_lamp",
@@ -2390,7 +2423,12 @@ global.fishPondDefinitions = new Map([
           count: 16,
           chance: 0.23,
         },
-        { minPopulation: 5, item: "society:magma_geode", count: 8, chance: 0.32 },
+        {
+          minPopulation: 5,
+          item: "society:magma_geode",
+          count: 8,
+          chance: 0.32,
+        },
         {
           minPopulation: 7,
           item: "society:basalt_shard",
@@ -2527,7 +2565,12 @@ global.fishPondDefinitions = new Map([
           count: 32,
           chance: 0.45,
         },
-        { minPopulation: 6, item: "society:fire_quartz", count: 4, chance: 0.24 },
+        {
+          minPopulation: 6,
+          item: "society:fire_quartz",
+          count: 4,
+          chance: 0.24,
+        },
         {
           minPopulation: 8,
           item: "netherdepthsupgrade:soul_sucker_leather",
@@ -2629,7 +2672,12 @@ global.fishPondDefinitions = new Map([
           chance: 0.27,
         },
         { minPopulation: 6, item: "society:tigerseye", count: 1, chance: 0.22 },
-        { minPopulation: 7, item: "minecraft:ender_eye", count: 3, chance: 0.26 },
+        {
+          minPopulation: 7,
+          item: "minecraft:ender_eye",
+          count: 3,
+          chance: 0.26,
+        },
         {
           minPopulation: 8,
           item: "society:mini_oni_eye",
@@ -3160,7 +3208,7 @@ global.fishPondDefinitions = new Map([
         {
           population: 5,
           requestedItems: [
-            { item: "trials:trial_key_ominous", count: 8 },
+            { item: "trials:trial_key_ominous", count: 4 },
             { item: "minecraft:blaze_rod", count: 32 },
             { item: "society:holy_symbol", count: 1 },
           ],
@@ -3176,12 +3224,11 @@ global.fishPondDefinitions = new Map([
       ],
       additionalRewards: [
         {
-          minPopulation: 4,
-          item: "trials:ominous_bottle",
-          count: 4,
-          chance: 0.34,
+          minPopulation: 6,
+          item: "society:magic_rope",
+          count: 1,
+          chance: 0.24,
         },
-
         {
           minPopulation: 6,
           item: "society:combat_quarterly",
@@ -3439,7 +3486,9 @@ global.fishPondDefinitions = new Map([
       quests: [
         {
           population: 3,
-          requestedItems: [{ item: "society:aged_whiskey_lilitusinglemalt", count: 8 }],
+          requestedItems: [
+            { item: "society:aged_whiskey_lilitusinglemalt", count: 8 },
+          ],
         },
         {
           population: 5,
@@ -3537,7 +3586,9 @@ global.fishPondDefinitions = new Map([
         },
         {
           population: 5,
-          requestedItems: [{ item: "society:aged_improved_nether_fizz", count: 8 }],
+          requestedItems: [
+            { item: "society:aged_improved_nether_fizz", count: 8 },
+          ],
         },
         {
           population: 7,
@@ -3564,7 +3615,7 @@ global.fishPondDefinitions = new Map([
         {
           minPopulation: 10,
           item: "society:sparkstone",
-          count: 8,
+          count: 16,
           chance: 0.25,
         },
       ],
