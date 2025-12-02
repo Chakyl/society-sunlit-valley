@@ -1,6 +1,15 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:whimsy_deco:phone",
+    {
+      "type": "item",
+      "id": "meadow:fire_log",
+      "amount": 4
+    },
+    "item:minecraft:cartography_table",
+    "item:dew_drop_farmland_growth:hydrating_fertilizer",
+    "item:dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
     "item:trials:music_disc_creator_box",
     "item:trials:waxed_chiseled_copper_exposed",
     "item:trials:chiseled_tuff_bricks",
@@ -162,7 +171,6 @@
     "item:quark:slime_in_a_bucket",
     "item:society:pristine_petrified_slime",
     "item:society:petrified_slime",
-    "item:meadow:fire_log",
     "item:quark:charcoal_block",
     "item:society:wuthering_logs",
     "item:farm_and_charm:raw_pasta",
@@ -707,7 +715,10 @@
     "item:windswept:blue_rose",
     "item:windswept:blue_rose_bush"
   ],
-  "craft_history": [],
+  "craft_history": [
+    "meadow:fire_log",
+    "minecraft:cartography_table"
+  ],
   "recipe_defaults": {
     "added": [],
     "tags": {},

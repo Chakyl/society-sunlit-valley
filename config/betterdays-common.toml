@@ -51,7 +51,7 @@
 	interpolatedTimeSmoothingFactor = 0.25
 	#These are the pairs that define what speed time should run at, at the specified day/night tick
 	#The two default pairs need to exist, but their time speed values can be modified
-	interpolatedTimeList = ["0,1.0", "11600,1.0", "11850,0.5", "12200,0.1", "12800,0.1", "13900,1.0", "22500,1.0", "23000,0.1", "23900,0.4", "24000,1.0"]
+	interpolatedTimeList = ["0,1.0", "1020,1.0", "1021,0.5", "13000,1.0", "24000,1.0"]
 
 	[time.effects]
 		#When applied, this effect syncs the passage of weather with the current speed of time.
