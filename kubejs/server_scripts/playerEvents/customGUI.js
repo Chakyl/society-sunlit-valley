@@ -44,7 +44,7 @@ const fishRadarPainter = (curios, e) => {
       fish = global.netherRadar(e, fish, setLocalConditions);
     }
     if (player.stages.has("mystical_ocean")) fish.push("society:neptuna");
-    let fishRadarStart = 48;
+    let fishRadarStart = 2;
     player.paint({
       fishRadarDisplay: {
         type: "text",
@@ -52,7 +52,7 @@ const fishRadarPainter = (curios, e) => {
         y: fishRadarStart,
         text: "=[ §aFish Radar§7 ]=",
         color: "#AAAAAA",
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       },
       fishConditions: {
@@ -61,7 +61,7 @@ const fishRadarPainter = (curios, e) => {
         y: fishRadarStart + 8 + fishRadarPadding,
         text: localConditions,
         color: "#FFFFFFF",
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       },
       fishRadarBottom: {
@@ -70,7 +70,7 @@ const fishRadarPainter = (curios, e) => {
         y: fishRadarStart + 16 + fishRadarPadding * 2,
         text: "==============",
         color: "#AAAAAA",
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       },
     });
@@ -85,7 +85,7 @@ const fishRadarPainter = (curios, e) => {
         x: 10 + (index >= 5 ? (index - 5) * 18 : index * 18),
         y: fishRadarStart + 32 + fishRadarPadding * 4 + (index >= 5 ? 18 : 0),
         item: fishItem,
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       };
     });

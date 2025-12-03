@@ -26,7 +26,7 @@ global.handleCobblemonDefeat = (e) => {
     let reward = 0;
     loserLevels.forEach((loserLevel) => {
       let variance = Math.random() * (1.5 - 0.5) + 0.5;
-      reward += Math.round(loserLevel * 4 * getTrainerLevel(winningPlayer) * variance);
+      reward += Math.max(Math.round(loserLevel * 4 * getTrainerLevel(winningPlayer) * variance), 16);
     });
     if (losingPlayer && losingPlayer.type == "rctmod:trainer") {
       let winStreak = winningPlayer.persistentData.winStreak;

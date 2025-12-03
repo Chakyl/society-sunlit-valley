@@ -1,6 +1,40 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cobblemon:medicinal_brew",
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:liquid_medicinal_brew",
+      "amount": 250
+    },
+    "item:cobblemon:potion",
+    {
+      "type": "item",
+      "id": "cobblemon:super_potion",
+      "amount": 64
+    },
+    {
+      "type": "fluid",
+      "id": "create_klinks_n_klangs:liquid_potion",
+      "amount": 250
+    },
+    "item:refinedstorage:cover{Item:{Count:1b,id:\"cluttered:halloween_wallpaper\"}}",
+    "item:minecraft:birch_log",
+    "item:unimplemented_items:power_weight",
+    "item:unimplemented_items:repel",
+    "item:unimplemented_items:bottle_cap_atk",
+    "item:unimplemented_items:ability_patch",
+    "item:unimplemented_items:bottle_cap_hp",
+    "item:unimplemented_items:bottle_cap_spd",
+    "item:unimplemented_items:bottle_cap_sd",
+    "item:unimplemented_items:bottle_cap_sa",
+    "item:unimplemented_items:bottle_cap_def",
+    "item:unimplemented_items:bottle_cap",
+    "item:unimplemented_items:dry_root",
+    "item:unimplemented_items:potion",
+    "item:refinedstorage:cover{Item:{Count:1b,id:\"candlelight:warped_chair\"}}",
+    "item:twigs:white_packed_silt",
+    "item:farmersdelight:cabbage_seeds",
     "item:society:barn_bed",
     "item:sunlit_cobblemon:prismatic_ice",
     "item:cobblemon:yache_berry",
@@ -17,8 +51,6 @@
     "item:sunlit_cobblemon:poke_genes",
     "item:cobblemon:full_restore",
     "item:cobblemon:max_potion",
-    "item:cobblemon:potion",
-    "item:cobblemon:super_potion",
     "item:cobblemon:hyper_potion",
     {
       "type": "item",
@@ -62,17 +94,6 @@
     "item:cobblemon:white_mint_seeds",
     "item:society:onion_seed",
     "item:cobblemon:vivichoke_seeds",
-    "item:cobblemon:medicinal_brew",
-    {
-      "type": "fluid",
-      "id": "create_klinks_n_klangs:liquid_medicinal_brew",
-      "amount": 1000
-    },
-    {
-      "type": "fluid",
-      "id": "create_klinks_n_klangs:liquid_potion",
-      "amount": 250
-    },
     "item:minecraft:cobblestone",
     "#item:forge:cobblestone",
     "#item:minecraft:stone_tool_materials",
@@ -1716,24 +1737,7 @@
       "amount": 64
     },
     "item:cobblemon:blue_apricorn_seed",
-    "item:twigs:polished_basalt_bricks",
-    "item:cobblemon:relic_coin_sack",
-    "item:cobblemon:roseli_berry",
-    "item:cobblemon:paralyze_heal",
-    "item:cobblemon:x_accuracy",
-    "#item:cobblemon:mints",
-    "item:cobblemon:brave_mint",
-    "item:cobblemon:careful_mint",
-    "item:cobblemon:naughty_mint",
-    "item:cobblemon:quiet_mint",
-    "item:cobblemon:mild_mint",
-    "item:cobblemon:relaxed_mint",
-    "item:cobblemon:adamant_mint",
-    "item:cobblemon:white_mint_leaf",
-    "item:cobblemon:cyan_mint_leaf",
-    "item:cobblemon:chilan_berry",
-    "item:cobblemon:star_sweet",
-    "#item:cobblemon:fossils"
+    "item:twigs:polished_basalt_bricks"
   ],
   "craft_history": [
     "minecraft:barrel",

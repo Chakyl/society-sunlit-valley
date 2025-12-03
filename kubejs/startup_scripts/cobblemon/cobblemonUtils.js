@@ -268,7 +268,7 @@ const trainerBuckets = new Map([
       "black_belt_aaron_0140",
       "juggler_mason_02cf",
       "aroma_lady_rose_0241",
-      "aroma_lady_miah_024carm,",
+      "aroma_lady_miah_024c",
       "ace_trainer_michelle_0258",
       "ace_trainer_leroy_0257",
       "beauty_grace_029a",

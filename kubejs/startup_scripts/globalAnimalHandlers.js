@@ -50,7 +50,7 @@ global.getMilk = (target, data, player, day, raiseEffection) => {
   const hungry = day - data.getInt("ageLastFed") > 1;
   const affection = data.getInt("affection");
   let hearts = Math.floor(affection / 100);
-  const bedless = global.animalHasNoBed(data);
+  const bedless = false
   if (bedless) hearts = 3;
   const freshAnimal = global.isFresh(day, ageLastMilked);
   let affectionIncrease = 0;
