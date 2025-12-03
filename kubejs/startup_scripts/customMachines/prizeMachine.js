@@ -382,7 +382,8 @@ StartupEvents.registry("block", (event) => {
     .rightClick((click) => {
       const { item, block, hand, player, level, server } = click;
       const { x, y, z } = block;
-      const prizeNumber = block.properties.get("prize").toLowerCase();
+      let nbt = block.getEntityData();
+      const prizeNumber = nbt.data.prize;
       const prizeOutput = global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
       const prizeHint = global.prizeMachineRewards[Number(prizeNumber)].hint;
       if (hand == "OFF_HAND") return;
@@ -405,13 +406,15 @@ StartupEvents.registry("block", (event) => {
         if (player.stages.has("frogs_bounty_bazaar")) {
           block.popItemFromFace(prize, block.properties.get("facing"));
         }
-        block.set(block.id, {
-          facing: block.properties.get("facing"),
-          prize:
-            Number(prizeNumber) === global.prizeMachineRewards.length - 1
-              ? "8"
-              : increaseStage(block.properties.get("prize").toLowerCase()),
+        nbt.merge({
+          data: {
+            prize:
+              Number(prizeNumber) === global.prizeMachineRewards.length - 1
+                ? 8
+                : (nbt.data.prize += 1),
+          },
         });
+        block.setEntityData(nbt);
         click.server.runCommandSilent(
           `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
         );
@@ -423,9 +426,6 @@ StartupEvents.registry("block", (event) => {
       } else {
         player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
       }
-      let nbt = block.getEntityData();
-      nbt.merge({ data: { prize: Number(prizeNumber) } });
-      block.setEntityData(nbt);
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ prize: 0 });

@@ -242,10 +242,10 @@ ServerEvents.recipes((e) => {
     t: "society:treated_log",
   });
   e.shaped("vinery:fermentation_barrel", ["FoF", "IbI", "FfF"], {
-    b: "minecraft:barrel",
-    I: "minecraft:iron_block",
-    f: "society:fire_quartz",
-    o: "society:oak_resin",
+    b: "society:wine_keg",
+    I: "minecraft:gold_block",
+    f: "society:battery",
+    o: "minecraft:netherite_ingot",
     F: "meadow:fire_log",
   });
   e.shaped("herbalbrews:cauldron", [" C ", "fcf", " f "], {
@@ -483,10 +483,18 @@ ServerEvents.recipes((e) => {
     p: "crabbersdelight:pearl",
     w: "#minecraft:wooden_slabs",
   });
+  e.shaped("society:wine_keg", ["FoF", "IbI", "FfF"], {
+    b: "minecraft:barrel",
+    I: "minecraft:iron_block",
+    I: "minecraft:iron_block",
+    f: "minecraft:quartz_block",
+    o: "society:oak_resin",
+    F: "meadow:fire_log",
+  });
 
   // Jade
   e.shaped("society:aging_cask", [" j ", "pbp", "SpS"], {
-    b: "vinery:fermentation_barrel",
+    b: "society:wine_keg",
     S: "oreganized:lead_block",
     j: "society:jade",
     p: "society:pine_tar",

@@ -615,32 +615,19 @@
 				}
 			}
 			id: "0C17CF9D782787BE"
-			rewards: [
-				{
-					id: "537C79FE89D50F96"
-					item: {
-						Count: 1
-						id: "candlelight:gold_ring"
-						tag: {
-							Damage: 0
+			rewards: [{
+				id: "436CC95C4472006E"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:fish"
 						}
 					}
-					type: "item"
 				}
-				{
-					id: "436CC95C4472006E"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:fish"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 3.0d
 			tasks: [{

@@ -1,0 +1,127 @@
+{
+  "farming_mastery": {
+    "title": "Farming Mastery",
+    "description": "Wizard now sells Spark-Pods.\nQuality Crops are now worth 300% more.",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:netherite_hoe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s farming_mastery",
+          "lock_command": "kubejs stages remove @s farming_mastery"
+        }
+      }
+    ]
+  },
+  "husbandry_mastery": {
+    "title": "Husbandry Mastery",
+    "description": "You can now find Golden Animal Crackers.",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:milk_pail"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s husbandry_mastery",
+          "lock_command": "kubejs stages remove @s husbandry_mastery"
+        }
+      }
+    ]
+  },
+  "mining_mastery": {
+    "title": "Mining Mastery",
+    "description": "Exotic Trader sells Recycled Core.\nGem ores drop double",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_mastery",
+          "lock_command": "kubejs stages remove @s mining_mastery"
+        }
+      }
+    ]
+  },
+  "fishing_mastery": {
+    "title": "Husbandry Mastery",
+    "description": "Adds ability to use the Roe Recycler.\nFisher sells Needle Bobber and Magnet Bobber",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "fishing_rod"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_mastery",
+          "lock_command": "kubejs stages remove @s fishing_mastery"
+        }
+      }
+    ]
+  },
+  "adventuring_mastery": {
+    "title": "Adventuring Mastery",
+    "description": "You can now find Companion Chests in the world.",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s adventuring_mastery",
+          "lock_command": "kubejs stages remove @s adventuring_mastery"
+        }
+      }
+    ]
+  }
+}

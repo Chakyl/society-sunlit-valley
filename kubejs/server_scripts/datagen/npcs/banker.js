@@ -1,0 +1,82 @@
+// Priority: -100
+runNpcDatagen("banker", {
+  name: "Danny",
+  intro: [
+    "Hey stranger, my name is Danny. I'm here to help you build the village you're starting in Sunlit Valley.",
+    "If you're looking to invite more villagers, come talk to me and I can help you build homes for them.",
+    "If you'd prefer to do the building yourself, just let me know and I can give you the invitations and sell any building supplies you'll need.",
+    "That's all I have for now, you really have your work cut out for you here. Come see me if you need anything!",
+  ],
+  chatter: {
+    friendship0: [["Friendship level 0 chatter 1 line 1"]],
+    friendship1: [
+      [
+        "Sorry, I don't loan money to farmers.",
+        "One bad season and they come to you crying about their interest rates.",
+      ],
+      ["Friendship level 1 chatter 2 line 1"],
+      ["Friendship level 1 chatter 3 line 1", "Friendship level 1 chatter 3 line 2"],
+    ],
+    friendship2: [
+      ["Friendship level 2 chatter 1 line 1", "Friendship level 2 chatter 1 line 2"],
+      ["I believe in talking behind peoples' backs. That way, they hear it more than once."],
+    ],
+    friendship3: [["Friendship level 3 chatter 2 line 1"]],
+    friendship4: [["Friendship level 4 chatter 2 line 1"]],
+    friendship5: [
+      ["Friendship level 5 chatter 1 line 1", "Friendship level 5 chatter 1 line 2"],
+      ["Friendship level 5 chatter 2 line 1"],
+      ["Friendship level 5 chatter 3 line 1", "Friendship level 5 chatter 3 line 2"],
+    ],
+  },
+  giftResponse: {
+    loved: [
+      "I didn't know you were capable of having taste.",
+      "Where did you manage to find something like this?",
+      "Maybe it's not so bad around here.",
+      "My horse would love something like this.",
+      "Who told you I like this? You're a snake.",
+      "Passe une bonne journée.",
+      "Smells like home.",
+    ],
+    liked: [
+      "I already have a few of these, I suppose it saves me a trip to the store.",
+      "This barely changes how I think of you.",
+      "I know someone who would appreciate this.",
+      "Finally someone with some manners around here.",
+      "Interesting.",
+    ],
+    neutral: [
+      "Why are you giving this to me...",
+      "I don't really need this.",
+      "Do you think I'm poor or something?",
+      "How simple.",
+      "Are you even trying to get me to like you?",
+    ],
+    disliked: [
+      "Is this a joke?",
+      "Of course someone like you would get me this",
+      "Ugh...",
+      "Okay...",
+      "Turn around and walk away.",
+      "You can't be serious.",
+      "Horrendous.",
+      "Please leave.",
+      "Tasteless, but I don't know what I was expecting from you.",
+      "This offends me.",
+      "That's just terrible.",
+    ],
+    hated: [
+      "Get out of my face with that.",
+      "Why did I even come to this backwater town.",
+      "Keep this up and you won't have a bank around soon.",
+      "I'm going to throw up.",
+      "I didn't know you think as little of me as I do you.",
+      "Revolting.",
+      "Disgusting.",
+      "Impolite and crass.",
+      "Apologize to your parents for becoming a person that does things like this.",
+      "Get that away from me.",
+    ],
+  },
+});

@@ -78,6 +78,7 @@ BlockEvents.broken(
 
 const scheduleUnplaceableRegenFunction = (level, pos, server, id) => {
   server.scheduleInTicks(100, () => {
+    console.log("scheduleUnplaceableRegenFunction")
     if (level.getBlock(pos) == "minecraft:air") {
       level.getBlock(pos).set(id);
       level.spawnParticles(
@@ -118,12 +119,7 @@ BlockEvents.broken(
     const { level, block, server } = e;
     const unplacablePos = block.getPos();
     if (level.dimension === "society:skull_cavern") {
-      scheduleUnplaceableRegenFunction(
-        level,
-        unplacablePos.immutable(),
-        server,
-        block.getId()
-      );
+      scheduleUnplaceableRegenFunction(level, unplacablePos.immutable(), server, block.getId());
     }
   }
 );
@@ -152,6 +148,8 @@ LevelEvents.beforeExplosion((e) => {
   for (let i = 0; i < blocks.length; i++) {
     let { xi, yi, zi, id } = blocks[i];
     server.scheduleInTicks(i, () => {
+      
+    console.log("explosion scheduler")
       level.getBlock(xi, yi, zi).set(id);
     });
   }

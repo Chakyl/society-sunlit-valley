@@ -10,6 +10,7 @@ const debugData = (player, level, data, hearts) => {
   player.tell(`Dropped Special: ${data.getInt("ageLastDroppedSpecial")}`);
   player.tell(`Milked: ${data.getInt("ageLastMilked")}`);
   player.tell(`Magic Harvested: ${data.getInt("ageLastMagicHarvested")}`);
+  player.tell(`Bed bound: ${data.get("boundBed")}`);
 };
 
 const initializeFarmAnimal = (day, target, level) => {
@@ -57,6 +58,8 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
   const { player, item, target, level, server } = e;
   const ageLastPet = data.getInt("ageLastPet");
   const affection = data.getInt("affection");
+  const bedless = global.animalHasNoBed(data);
+  const heartsToDisplay = bedless ? 3 : 10;
   let hearts = Math.floor(affection / 100);
   let nameColor = "#55FF55";
   if (peckish) {
@@ -69,7 +72,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
   else if (hearts < 0) hearts = 0;
   let affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
   if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
-  let affectionIncrease = 20 * affectionIncreaseMult;
+  let affectionIncrease = 10 * affectionIncreaseMult;
 
   if (target.isBaby()) {
     affectionIncrease = affectionIncrease * (player.stages.has("fostering") ? 10 : 2);
@@ -83,7 +86,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
       data.affection = affection + affectionIncrease;
     }
     if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
-      data.affection = affection - (hungry ? 25 : 50);
+      data.affection = affection - (hungry ? 15 : 25);
     }
     data.ageLastPet = day;
     level.spawnParticles(
@@ -103,6 +106,15 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     global.giveExperience(server, player, "husbandry", 10);
     if (!livableArea && !data.clockwork) {
       errorText = `${name} feels crowded and unhappy...`;
+    }
+    if (hearts > 3 && bedless) {
+      player.tell(
+        Text.gold(
+          `${name} needs a ${global
+            .getAnimalBedType(target.type)
+            .replace(/_/g, " ")} bed from the Shepherd!`
+        )
+      );
     }
     if (!hungry && peckish && !player.isFake() && !item.hasTag("society:animal_feed")) {
       server.runCommandSilent(
@@ -156,8 +168,8 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
           type: "text",
           x: 0,
           y: -66,
-          text: `§c${hearts > 0 ? `❤`.repeat(hearts) : ""}§0${
-            hearts < 10 ? `❤`.repeat(10 - hearts) : ""
+          text: `§c${hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""}§0${
+            hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
           }`,
           color: "#FFAA00",
           alignX: "center",
@@ -168,7 +180,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
           x: 1,
           z: -1,
           y: -65,
-          text: "❤❤❤❤❤❤❤❤❤❤",
+          text: `❤`.repeat(heartsToDisplay),
           color: "#000000",
           alignX: "center",
           alignY: "bottom",
@@ -236,9 +248,9 @@ const handleFeed = (data, day, e) => {
   const ageLastFed = data.getInt("ageLastFed");
   const affection = data.getInt("affection");
   const affectionIncrease = {
-    "society:animal_feed": 20,
+    "society:animal_feed": 10,
     "society:candied_animal_feed": 100,
-    "society:mana_feed": 40,
+    "society:mana_feed": 30,
   }[item.id];
   let affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
   if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
@@ -304,7 +316,10 @@ const handleMagicHarvest = (name, data, e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   if (target.type == "minecraft:sheep") handleSheepMagicShears(e);
   const affection = data.getInt("affection");
-  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  const bedless = global.animalHasNoBed(data);
+  if (bedless) hearts = 3;
+
   let errorText = "";
   const droppedLoot = global.getMagicShearsOutput(level, target, player, server);
   if (droppedLoot !== -1) {
@@ -334,10 +349,15 @@ const handleMagicHarvest = (name, data, e) => {
     global.addItemCooldown(player, item, 10);
   }
 };
-
-ItemEvents.entityInteracted((e) => {
-  const { hand, player, item, target, level, server } = e;
+global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   const pet = global.checkEntityTag(target, "society:pet_animal");
+  const eventData = {
+    player: player,
+    item: item,
+    target: target,
+    level: level,
+    server: server,
+  };
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
   server.scheduleInTicks(1, () => {
@@ -346,27 +366,45 @@ ItemEvents.entityInteracted((e) => {
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
-      const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
+      const nonIdType = String(target.type.path).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
         name = global.formatName(nonIdType);
         if (name.equals("Domestic tribull")) name = "Domestic tri-bull";
       }
+      const boundBed = data.get("boundBed");
+      if (!global.animalHasNoBed(data)) {
+        if (
+          new BlockPos(boundBed.x, boundBed.y, boundBed.z).distToCenterSqr(
+            target.x,
+            target.y,
+            target.z
+          ) > 48 ||
+          !level.getBlock(boundBed.x, boundBed.y, boundBed.z).hasTag("society:animal_bed")
+        ) {
+          server.runCommandSilent(
+            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} got too far from its bed...`
+          );
+          data.boundBed = "-1";
+        }
+      }
       const ageLastFed = data.getInt("ageLastFed");
       const peckish = !pet && day - ageLastFed == 1;
       const hungry = !pet && day - ageLastFed > 1;
       const affection = data.getInt("affection");
-      const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+      let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+      const bedless = global.animalHasNoBed(data);
+      if (bedless) hearts = 3;
       player.swing();
 
-      handlePet(name, data, day, peckish, hungry, e);
+      handlePet(name, data, day, peckish, hungry, eventData);
       if (pet) return;
-      if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, e);
+      if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, eventData);
       if (
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {
-        handleMilk(name, data, day, hungry, e);
+        handleMilk(name, data, day, hungry, eventData);
       }
       if (
         player.stages.has("biomancer") &&
@@ -440,7 +478,7 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        global.addItemCooldown(player, item, 10);
+        global.addItemCooldown(player, item, 1);
       }
       if (
         player.stages.has("clockwork") &&
@@ -515,10 +553,10 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        global.addItemCooldown(player, item, 4);
+        global.addItemCooldown(player, item, 1);
       }
       if (item === "society:magic_shears") {
-        handleMagicHarvest(name, data, e);
+        handleMagicHarvest(name, data, eventData);
       }
       if (affection > 1075) {
         // Cap affection at 1075
@@ -527,4 +565,8 @@ ItemEvents.entityInteracted((e) => {
       if (affection < 0) data.affection = 0;
     }
   });
+};
+ItemEvents.entityInteracted((e) => {
+  const { hand, player, item, target, level, server } = e;
+  global.handleHusbandryBase(hand, player, item, target, level, server);
 });

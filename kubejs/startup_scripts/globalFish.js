@@ -26,7 +26,7 @@ global.springRiver = [
   { fish: "aquaculture:pink_salmon", weight: 9, night: true },
   { fish: "aquaculture:catfish", weight: 8, night: true, requiresRain: true },
   { fish: "aquaculture:bayad", weight: 5, night: true, requiresRain: true },
-  { fish: "unusualfishmod:raw_blind_sailfin", weight: 4 },
+  { fish: "unusualfishmod:raw_blind_sailfin", weight: 5 },
 ];
 global.springFresh = [
   { fish: "aquaculture:minnow", weight: 11 },
@@ -201,7 +201,7 @@ global.winterFresh = [
 ];
 
 global.getRoe = (fish) => {
-  let fishId = fish.split(":")[1];
+  let fishId = fish.path;
   if (fishId.includes("raw_")) {
     if (fishId === "raw_snowflake") fishId = "frosty_fin";
     else fishId = fishId.substring(4, fishId.length);
@@ -217,16 +217,14 @@ global.getPondProperties = (block) => {
     mature: properties.get("mature").toLowerCase(),
     upgraded: properties.get("upgraded").toLowerCase(),
     quest: properties.get("quest").toLowerCase(),
-    quest_id: properties.get("quest_id").toLowerCase(),
-    type: properties.get("type").toLowerCase(),
-    population: properties.get("population").toLowerCase(),
-    max_population: properties.get("max_population").toLowerCase(),
   };
 };
 
-global.handleFishHarvest = (fish, block, player, server, basket) => {
-  const { facing, valid, upgraded, quest, quest_id, type, population, max_population } =
-    global.getPondProperties(block);
+global.handleFishHarvest = (block, player, server, basket) => {
+  const { facing, valid, upgraded, quest } = global.getPondProperties(block);
+  let nbt = block.getEntityData();
+  const { quest_id, type, population, max_population } = nbt.data;
+  const fish = global.fishPondDefinitions.get(type);
   let additionalMaxRoe = 0;
   let harvestOutputs = [];
   if (Math.random() < 0.01 && !player.stages.has("bullfish_jobs")) {
@@ -234,7 +232,7 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
   }
   if (player.stages.has("caper_catcher")) additionalMaxRoe += 5;
   if (player.stages.has("caviar_catcher")) additionalMaxRoe += 5;
-  const fishRoe = global.getRoe(fish.item);
+  const fishRoe = global.getRoe(type);
   const calculateRoe = rnd(
     Math.floor(population / 4),
     Math.floor(population / 2) + additionalMaxRoe
@@ -270,10 +268,6 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
     mature: false,
     upgraded: upgraded,
     quest: quest,
-    quest_id: quest_id,
-    population: population,
-    max_population: max_population,
-    type: type,
   });
   if (basket) return harvestOutputs;
   harvestOutputs.forEach((item) => {
@@ -281,20 +275,21 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
   });
 };
 
-global.handleFishExtraction = (block, player, server, item) => {
-  const { facing, valid, mature, upgraded, quest, quest_id, type, population, max_population } =
-    global.getPondProperties(block);
+global.handleFishExtraction = (block, player, server) => {
+  let nbt = block.getEntityData();
+  const { type, population, non_native_fish } = nbt.data;
+  let naturalPopulation = population - non_native_fish;
   let result;
-  let resultCount = player.stages.has("mitosis") ? 2 : 1;
+  let resultCount = player.stages.has("mitosis") && naturalPopulation > 0 ? 2 : 1;
   let quality = 0;
-  if (player.stages.has("bullfish_jobs") && Number(population) > 3) {
+  if (player.stages.has("bullfish_jobs") && Number(naturalPopulation) > 3) {
     quality = Math.floor((Number(population) - 3) / 2);
   }
-  if (player.stages.has("hot_hands")) {
+  if (player.stages.has("hot_hands") && naturalPopulation > 0) {
     server.runCommandSilent(
       `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`
     );
-    let smokedFishId = item.split(":")[1];
+    let smokedFishId = type.path;
     if (smokedFishId.includes("raw_")) {
       if (smokedFishId === "raw_snowflake") smokedFishId = "frosty_fin";
       else smokedFishId = smokedFishId.substring(4, smokedFishId.length);
@@ -304,30 +299,27 @@ global.handleFishExtraction = (block, player, server, item) => {
       quality > 0 ? `{quality_food:{quality:${quality}}}` : null
     );
   } else {
-    if (["aquaculture:leech", "aquaculture:minnow"].includes(item)) {
+    if (["aquaculture:leech", "aquaculture:minnow"].includes(type)) {
       result = Item.of(
-        `${resultCount}x ${item}`,
+        `${resultCount}x ${type}`,
         quality > 0 ? `{Damage:0,quality_food:{quality:${quality},effects:[]}}` : `{Damage:0}`
       );
     } else {
       result = Item.of(
-        `${resultCount}x ${item}`,
+        `${resultCount}x ${type}`,
         quality > 0 ? `{quality_food:{quality:${quality},effects:[]}}` : null
       );
     }
   }
   if (result) {
-    block.set(block.id, {
-      facing: facing,
-      valid: valid,
-      mature: mature,
-      upgraded: upgraded,
-      quest: quest,
-      quest_id: quest_id,
-      population: decreaseStage(population),
-      max_population: max_population,
-      type: type,
+    nbt.merge({
+      data: {
+        population: decreaseStage(population),
+        non_native_fish: non_native_fish > 0 ? decreaseStage(non_native_fish) : 0,
+      },
     });
+
+    block.setEntityData(nbt);
   }
   return result;
 };
@@ -447,37 +439,23 @@ global.handleFishPondTick = (tickEvent) => {
   let blockProperties = level.getBlock(block.pos).getProperties();
 
   if (blockProperties.get("mature") === "true") return;
-  const { facing, valid, mature, upgraded, quest, quest_id, type, population, max_population } =
-    global.getPondProperties(level.getBlock(block.pos));
-  if (type !== "0" && tickEvent.tick % 20 === 0) {
-    global.fishPondDefinitions.forEach((fish, index) => {
-      if (type == `${index + 1}`) {
-        block.set(block.id, {
-          facing: facing,
-          valid: global.validatePond(block, level, fish.lava),
-          mature: mature,
-          upgraded: upgraded,
-          quest: quest,
-          quest_id: quest_id,
-          population: population,
-          max_population: max_population,
-          type: type,
-        });
-      }
+  const { facing, valid, mature, upgraded, quest } = global.getPondProperties(
+    level.getBlock(block.pos)
+  );
+  let nbt = block.getEntityData();
+  const { type, population, max_population, non_native_fish } = nbt.data;
+  const fish = global.fishPondDefinitions.get(type);
+  if (!type.equals("") && tickEvent.tick % 20 === 0) {
+    block.set(block.id, {
+      facing: facing,
+      valid: global.validatePond(block, level, fish.lava),
+      mature: mature,
+      upgraded: upgraded,
+      quest: quest,
     });
   }
   if (morningModulo >= fishPondProgTime && morningModulo < fishPondProgTime + fishPondTickRate) {
-    if (type !== "0" && valid === "true") {
-      let nbt = block.getEntityData();
-      nbt.merge({
-        data: {
-          type: type,
-          quest_id: quest_id,
-          population: population,
-          max_population: max_population,
-        },
-      });
-      block.setEntityData(nbt);
+    if (!type.equals("") && valid === "true") {
       if (Number(population) > 1) {
         level.spawnParticles(
           "supplementaries:suds",
@@ -497,43 +475,44 @@ global.handleFishPondTick = (tickEvent) => {
           mature: true,
           upgraded: upgraded,
           quest: quest,
-          quest_id: quest_id,
-          population: population,
-          max_population: max_population,
-          type: type,
         });
       }
-      if (max_population !== "10" && quest !== "true" && rnd75() && population == max_population) {
+      if (max_population !== 10 && quest !== "true" && rnd75() && population == max_population) {
         block.set(block.id, {
           facing: facing,
           valid: valid,
           mature: false,
           upgraded: upgraded,
           quest: true,
-          quest_id: `${rnd(
-            0,
-            getRequestedItems(global.fishPondDefinitions[type - 1], max_population).length - 1
-          )}`,
-          population: population,
-          max_population: max_population,
-          type: type,
         });
+        nbt.merge({
+          data: {
+            quest_id: `${rnd(
+              0,
+              getRequestedItems(global.fishPondDefinitions[type - 1], max_population).length - 1
+            )}`,
+          },
+        });
+        block.setEntityData(nbt);
       } else if (population !== max_population) {
         successParticles(level, block);
         level.server.runCommandSilent(
           `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`
         );
-        block.set(block.id, {
-          facing: facing,
-          valid: valid,
-          mature: true,
-          upgraded: upgraded,
-          quest: quest,
-          quest_id: quest_id,
-          population: increaseStage(population),
-          max_population: max_population,
-          type: type,
+        nbt.merge({
+          data: {
+            population: increaseStage(population),
+          },
         });
+        block.setEntityData(nbt);
+      }
+      if (population === max_population && non_native_fish > 0) {
+        nbt.merge({
+          data: {
+            non_native_fish: decreaseStage(non_native_fish),
+          },
+        });
+        block.setEntityData(nbt);
       }
     }
   }

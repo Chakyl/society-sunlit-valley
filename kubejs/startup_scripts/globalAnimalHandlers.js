@@ -50,9 +50,11 @@ global.getMilk = (target, data, player, day, raiseEffection) => {
   const hungry = day - data.getInt("ageLastFed") > 1;
   const affection = data.getInt("affection");
   let hearts = Math.floor(affection / 100);
+  const bedless = global.animalHasNoBed(data);
+  if (bedless) hearts = 3;
   const freshAnimal = global.isFresh(day, ageLastMilked);
   let affectionIncrease = 0;
-  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
+  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 10 : 5;
   let quality = 0;
   if (
     !target.isBaby() &&
@@ -93,8 +95,6 @@ global.handleSpecialHarvest = (
   const freshAnimal = global.isFresh(day, ageLastDroppedSpecial);
   const hungry = day - ageLastFed > 1;
   const affection = data.getInt("affection") || 0;
-  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const heartBonus = hearts === 10 ? 2 : 1;
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
     let resolvedItem;
@@ -115,7 +115,7 @@ global.handleSpecialHarvest = (
             forage.chance,
             hungry,
             forage.minHearts,
-            heartBonus * resolvedCount,
+            resolvedCount,
             resolvedItem,
             forage.hasQuality,
             {
@@ -183,14 +183,16 @@ global.getMagicShearsOutput = (level, target, player, server) => {
   const ageLastMagicHarvested = data.getInt("ageLastMagicHarvested");
   const freshAnimal = global.isFresh(day, ageLastMagicHarvested);
   const affection = data.getInt("affection");
-  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  const bedless = global.animalHasNoBed(data);
+  if (bedless) hearts = 3;
   const targetId =
     target.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : target.type.split(":");
   const droppedLoot = Utils.rollChestLoot(`${targetId[0]}:entities/${targetId[1]}`).toArray();
   let newLoot = [];
   if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
     data.ageLastMagicHarvested = day;
-    data.affection = affection - 15;
+    data.affection = affection - 7;
     level.spawnParticles(
       "snowyspirit:glow_light",
       true,
@@ -203,6 +205,12 @@ global.getMagicShearsOutput = (level, target, player, server) => {
       20,
       2
     );
+    for (let i = 0; i < droppedLoot.length; i++) {
+      droppedLoot[i] = Item.of(
+        droppedLoot[i].id,
+        `{quality_food:{effects:[],quality:${Math.floor((hearts % 11) / 2 - 2)}}}`
+      );
+    }
     if (player.stages.has("mana_hand")) {
       let dropItem;
       for (let i = 0; i < droppedLoot.length; i++) {
@@ -223,8 +231,32 @@ global.getMagicShearsOutput = (level, target, player, server) => {
     if (player.stages.has("heretic")) {
       newLoot.push(Item.of("3x society:sparkstone"));
       target.attack(2);
-      data.affection = affection - 35;
+      data.affection = affection - 20;
     }
     return newLoot;
   } else return -1;
 };
+
+// global.applyToBedsInAreaAsAnimals = (level, block, radius, function) => {
+//   const { x, y, z } = block;
+//   let foundBedsAsAnimals = [];
+//   let scanBlock;
+//   for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+//     x + radius,
+//     y + radius,
+//     z + radius,
+//   ])) {
+//     scanBlock = level.getBlock(pos);
+//     if (scanBlock.hasTag("society:animal_bed")) {
+//       let nbt = scanBlock.getEntityData();
+//       let animal = undefined;
+//       const { boundToAnimal, animalInside, entity, entityID } = nbt.data;
+//       if (boundToAnimal && animalInside) {
+//         animal = level.createEntity(entityID.toString());
+//         animal.nbt = entity.copy();
+//         foundBedsAsAnimals.push(animal);
+//       }
+//     }
+//   }
+//   return foundBedsAsAnimals;
+// };

@@ -40,16 +40,25 @@ function rnd10() {
 function rnd5() {
   return Math.random() < 0.05;
 }
+
+let increaseDataStage = (block, count) => {
+  let nbt = block.getEntityData();
+  let currentStage = nbt.data.stage;
+  currentStage += count || 1;
+  nbt.merge({ data: { stage: currentStage } });
+  block.setEntityData(nbt);
+};
+
 let increaseStage = (input, count) => {
   let num = Number(input);
   num += count || 1;
-  return num.toString();
+  return num;
 };
 
 let decreaseStage = (input) => {
   let num = Number(input);
   num -= 1;
-  return num.toString();
+  return num;
 };
 
 const successParticles = (level, block) => {
@@ -68,41 +77,69 @@ const successParticles = (level, block) => {
   );
 };
 
-const hasWoolTag = (tags) => {
+const itemHasTag = (item, tag) => {
+  let tags = item.getTags().toList();
   let found = false;
-  tags.forEach((tag) => {
-    if (tag.toString().includes("minecraft:wool")) {
+  tags.forEach((itemTag) => {
+    if (itemTag.toString().includes(tag.slice(1))) {
       found = true;
     }
   });
   return found;
 };
 
-const setQuality = (newProperties, itemQuality) => {
+const setQuality = (newProperties, stage, itemQuality) => {
   if (
-    (Number(newProperties.quality) === 0 &&
-      Number(newProperties.stage) === 0) ||
+    (Number(newProperties.quality) === 0 && Number(stage) === 0) ||
     Number(itemQuality) < Number(newProperties.quality)
   )
     newProperties.quality = itemQuality;
 };
 
-const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
-  let itemCheck = item == recipe.input;
-  if (hasTag && recipe.input.includes("#")) {
-    itemCheck = hasWoolTag(item.getTags().toList());
+const getCanTakeItems = (item, recipe, properties, hasTag, inputCount, recipes, nbt) => {
+  let itemCheck = recipe !== undefined;
+  if (hasTag) {
+    Array.from(recipes.keys()).forEach((key) => {
+      if (key.includes("#")) {
+        if (itemHasTag(item, key)) {
+          itemCheck = true;
+          if (nbt.data.recipe.equals("") || nbt.data.recipe == undefined) {
+            nbt.merge({ data: { recipe: key, originalInputs: [] } });
+          }
+          if (inputCount != -1) {
+            let inputArray = nbt.data.originalInputs.copy();
+            let usedItem = item.copy();
+            usedItem.count = inputCount;
+            inputArray.push(usedItem);
+            nbt.merge({ data: { originalInputs: inputArray } });
+          }
+        }
+      }
+    });
   }
   return (
     itemCheck &&
     properties.get("working").toLowerCase() === "false" &&
-    properties.get("mature").toLowerCase() === "false" &&
-    (properties.get("type").toLowerCase() == "" + (recipeIndex + 1) ||
-      properties.get("type").toLowerCase() == "0")
+    properties.get("mature").toLowerCase() === "false"
   );
 };
 
-global.getArtisanRecipe = (recipes, block) =>
-  recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+global.convertFromLegacy = (recipes, level, block) => {
+  let nbt = block.getEntityData();
+  let newRecipe;
+  if (nbt.data.contains("recipe") || !nbt.data.contains("type")) return;
+  if (nbt.data.type > 0) {
+    newRecipe = Array.from(recipes.keys())[Number(nbt.data.type) + 1];
+  }
+  if (newRecipe) {
+    let newProperties = level.getBlock(block.pos).getProperties();
+    newProperties.working = false;
+    newProperties.mature = true;
+    nbt.merge({ data: { recipe: newRecipe } });
+    block.setEntityData(nbt);
+    block.set(block.id, newProperties);
+  }
+};
 
 global.artisanHarvest = (
   block,
@@ -124,7 +161,9 @@ global.artisanHarvest = (
         `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
       );
     }
-    global.getArtisanRecipe(recipes, block).output.forEach((id) => {
+    let nbt = block.getEntityData();
+
+    recipes.get(nbt.data.recipe).output.forEach((id) => {
       harvestOutput = Item.of(
         id,
         hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
@@ -135,16 +174,14 @@ global.artisanHarvest = (
         (id.includes("wheel") || id.includes("block")) &&
         block.properties.get("upgraded").toLowerCase() === "true"
       ) {
-        harvestOutput = Item.of(`society:aged_${id.split(":")[1]}`);
+        harvestOutput = Item.of(`society:aged_${id.path}`);
       }
-      if (outputMult > 1)
-        harvestOutput.count = harvestOutput.count * outputMult;
-      if (!artisanHopper)
-        block.popItemFromFace(harvestOutput, block.properties.get("facing"));
-      newProperties.type = "0";
+      if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
+      if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
+      nbt.merge({ data: { stage: 0, recipe: "" } });
+      block.setEntityData(nbt);
       newProperties.working = false;
       newProperties.mature = false;
-      newProperties.stage = "0";
       if (newProperties.duration) newProperties.duration = "0";
       if (newProperties.quality) newProperties.quality = "0";
       block.set(block.id, newProperties);
@@ -152,7 +189,7 @@ global.artisanHarvest = (
     if (artisanHopper) return harvestOutput;
   }
 };
-
+// Converted
 global.artisanInsert = (
   block,
   item,
@@ -167,54 +204,56 @@ global.artisanInsert = (
   player
 ) => {
   let newProperties = block.getProperties();
-  let blockStage = block.properties.get("stage").toLowerCase();
+  let nbt = block.getEntityData();
+  let stage = nbt.data.stage;
   const itemNbt = item.nbt;
   let itemQuality;
-  let useCount = 0;
-  recipes.forEach((recipe, index) => {
-    if (getCanTakeItems(item, block.properties, recipe, index, hasTag)) {
-      newProperties = block.getProperties();
-      successParticles(level, block);
-      server.runCommandSilent(
-        `playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`
-      );
-      newProperties.type = String(index + 1);
-      let nbt = block.getEntityData();
-      nbt.merge({ data: { type: index + 1, stage: 0 } });
-      block.setEntityData(nbt);
-      newProperties.working = false;
-      newProperties.mature = false;
-      if (newProperties.quality && itemNbt && itemNbt.quality_food) {
-        itemQuality = String(itemNbt.quality_food.quality);
-      } else if (newProperties.quality) {
-        itemQuality = "0";
-      }
-      if (multipleInputs) {
-        if (item.count >= stageCount - Number(blockStage)) {
-          useCount = stageCount - Number(blockStage);
-          if (itemQuality) setQuality(newProperties, itemQuality);
-          newProperties.stage = stageCount.toString();
-        } else {
-          useCount = 1;
-          if (itemQuality) setQuality(newProperties, itemQuality);
-          newProperties.stage = increaseStage(blockStage);
-        }
-      } else {
-        useCount = 1;
-        if (itemQuality) {
-          newProperties.quality = itemQuality;
-        }
-      }
-      if (newProperties.duration) newProperties.duration = String(recipe.time);
-      if (!multipleInputs || newProperties.stage === stageCount.toString()) {
-        newProperties.working = true;
-        newProperties.stage = "0";
-      }
-      block.set(block.id, newProperties);
-      if (player && !player.isCreative()) item.count -= useCount;
+  let hasQuality = newProperties.quality;
+  let useCount =
+    multipleInputs && item.count >= stageCount - Number(stage) ? stageCount - Number(stage) : 1;
+  const recipe = recipes.get(`${item.id}`);
+  if (multipleInputs && recipe && nbt.data.recipe !== "" && nbt.data.recipe !== item.id) return;
+  if (
+    getCanTakeItems(
+      item,
+      recipe,
+      block.properties,
+      hasTag,
+      multipleInputs ? useCount : -1,
+      recipes,
+      nbt
+    )
+  ) {
+    newProperties = block.getProperties();
+    successParticles(level, block);
+    server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
+    if (!(hasTag && recipe === undefined)) nbt.merge({ data: { recipe: item.id } });
+    newProperties.working = false;
+    newProperties.mature = false;
+    if (hasQuality && itemNbt && itemNbt.quality_food) {
+      itemQuality = String(itemNbt.quality_food.quality);
+    } else if (hasQuality) {
+      itemQuality = "0";
     }
-  });
-  if (artisanHopper) return useCount;
+    if (multipleInputs) {
+      if (item.count >= stageCount - Number(stage)) {
+        nbt.merge({ data: { stage: stageCount } });
+      } else {
+        increaseDataStage(block);
+      }
+      if (itemQuality) setQuality(newProperties, stage, itemQuality);
+    } else if (itemQuality) {
+      newProperties.quality = itemQuality;
+    }
+    if (!multipleInputs || nbt.data.stage === stageCount) {
+      newProperties.working = true;
+      nbt.merge({ data: { stage: 0 } });
+    }
+    block.setEntityData(nbt);
+    block.set(block.id, newProperties);
+    if (player && !player.isCreative()) item.count -= useCount;
+    if (artisanHopper) return useCount;
+  }
 };
 
 global.handleBERightClick = (
@@ -233,6 +272,7 @@ global.handleBERightClick = (
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
+    global.convertFromLegacy(recipes, level, block);
     global.artisanHarvest(
       block,
       recipes,
@@ -310,12 +350,16 @@ global.getFermentingBarrel = (level, block) =>
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
   let newProperties = block.getProperties();
+  let nbt = block.getEntityData();
   const attachedBlock = global.getTapperLog(level, block);
   let foundFluidData = undefined;
   let hasError = false;
-
   if (attachedBlock.hasTag("society:tappable_blocks")) {
-    if (global.hasMultipleTappers(level, block)) {
+    if (
+      !nbt.data.recipe ||
+      !nbt.data.recipe.equals(attachedBlock.id) ||
+      global.hasMultipleTappers(level, block)
+    ) {
       hasError = true;
     }
     if (
@@ -323,38 +367,31 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
       (block.properties.get("working").toLowerCase() === "false" &&
         block.properties.get("mature").toLowerCase() === "false")
     ) {
-      global.tapperRecipes &&
-        global.tapperRecipes.forEach((recipe, index) => {
-          if (
-            returnFluidData &&
-            !foundFluidData &&
-            attachedBlock.getId() === recipe.input
-          ) {
-            foundFluidData = { fluid: recipe.fluidOutput, time: recipe.time };
-          }
-          if (
-            !returnFluidData &&
-            getCanTakeItems(
-              attachedBlock.getId(),
-              block.properties,
-              recipe,
-              index,
-              false
-            )
-          ) {
-            newProperties = block.getProperties();
-            successParticles(level, block);
-            server.runCommandSilent(
-              `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
-            );
-            newProperties.type = String(index + 1);
-            newProperties.working = false;
-            newProperties.mature = false;
-            newProperties.duration = String(recipe.time);
-            newProperties.working = true;
-            newProperties.stage = "0";
-          }
-        });
+      if (global.tapperRecipes) {
+        const recipe = global.tapperRecipes.get(`${attachedBlock.getId()}`);
+        let nbt = block.getEntityData();
+        if (returnFluidData && !foundFluidData && recipe) {
+          foundFluidData = { fluid: recipe.fluidOutput, time: recipe.time };
+          nbt.merge({ data: { recipe: `${attachedBlock.getId()}` } });
+          hasError = false;
+        }
+        if (
+          !returnFluidData &&
+          getCanTakeItems(attachedBlock.getId(), recipe, block.properties, false)
+        ) {
+          newProperties = block.getProperties();
+          successParticles(level, block);
+          server.runCommandSilent(
+            `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
+          );
+          newProperties.working = false;
+          newProperties.mature = false;
+          newProperties.working = true;
+          nbt.merge({ data: { recipe: `${attachedBlock.getId()}`, stage: 0 } });
+          hasError = false;
+        }
+        block.setEntityData(nbt);
+      }
     }
     if (returnFluidData) {
       if (hasError) newProperties.error = true;
@@ -401,8 +438,8 @@ global.hasMultipleTappers = (level, block) => {
 global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
   const { block } = tickEvent;
   const { x, y, z } = block;
-  const blockStage = block.properties.get("stage").toLowerCase();
-  const mature = blockStage === (stageCount - 1).toString();
+  const stage = block.getEntityData().data.stage;
+  const mature = stage >= stageCount - 1;
   let newProperties = block.getProperties();
   if (block.properties.get("working").toLowerCase() === "true" && rndFunction) {
     tickEvent.level.spawnParticles(
@@ -419,7 +456,7 @@ global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
     );
     newProperties.working = !mature;
     newProperties.mature = mature;
-    newProperties.stage = increaseStage(blockStage);
+    increaseDataStage(block);
     block.set(block.id, newProperties);
   }
 };
@@ -437,23 +474,23 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
     (morningModulo >= artMachineProgTime &&
       morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
-    let resolvedStageCount =
-      (recipes &&
-        recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
-      stageCount;
-
-    const blockStage = blockProperties.get("stage").toLowerCase();
+    global.convertFromLegacy(recipes, level, block);
+    let nbt = block.getEntityData();
     let mature;
+    let recipe = recipes && recipes.get(nbt.data.recipe);
+    let resolvedStage = (recipes && recipe.time) || stageCount;
+
+    const nbtStage = nbt.data.stage;
     if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {
-      mature = Number(blockStage) >= resolvedStageCount / 2 - 1;
+      mature = Number(nbtStage) >= resolvedStage / 2 - 1;
     } else {
-      mature = Number(blockStage) >= resolvedStageCount - 1;
+      mature = Number(nbtStage) >= resolvedStage - 1;
     }
 
     let newProperties = level.getBlock(block.pos).getProperties();
-    newProperties.working = !mature;
     newProperties.mature = mature;
-    newProperties.stage = increaseStage(blockStage);
+    if (mature) newProperties.working = false;
+    increaseDataStage(block);
     block.set(block.id, newProperties);
   }
 };
@@ -646,7 +683,7 @@ global.clearOldTextDisplay = (block, id) => {
     });
 };
 
-global.textDisplayRotationFromFacing = (facing) => {
+global.rotationFromFacing = (facing) => {
   switch (facing) {
     case "north":
       return 180;
@@ -667,10 +704,7 @@ global.spawnTextDisplay = (block, y, id, text) => {
   let newNbt = entity.getNbt();
   newNbt.text = `{"text":"${text}"}`;
   newNbt.background = 0;
-  newNbt.Rotation = [
-    NBT.f(global.textDisplayRotationFromFacing(block.properties.get("facing"))),
-    NBT.f(0),
-  ];
+  newNbt.Rotation = [NBT.f(global.rotationFromFacing(block.properties.get("facing"))), NBT.f(0)];
   entity.setNbt(newNbt);
   entity.setX(x + 0.5);
   entity.setY(y);
@@ -683,6 +717,9 @@ global.giveExperience = (server, player, category, xp) => {
   if (!player.isFake()) {
     server.runCommandSilent(
       `puffish_skills experience add ${player.username} society:${category} ${xp}`
+    );
+    server.runCommandSilent(
+      `puffish_skills experience add ${player.username} society:mastery ${xp}`
     );
   }
 };

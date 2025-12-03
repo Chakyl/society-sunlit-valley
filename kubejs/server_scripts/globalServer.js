@@ -69,7 +69,7 @@ global.renderUiItemText = (player, items, ids) => {
 };
 global.calculateCoinValue = (coin) => {
   let value = 0;
-  switch (coin.id.split(":")[1]) {
+  switch (coin.id.path) {
     case "spur":
       value = 1;
       break;

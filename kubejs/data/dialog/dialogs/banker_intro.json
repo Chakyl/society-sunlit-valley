@@ -1,0 +1,87 @@
+{
+	"id": "banker_intro",
+	"title": "banker introduction",
+	"description": "dialog.npc.banker.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.intro.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.intro.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.intro.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.intro.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+
+#对话系统客户端配置
+[dialog_client]
+
+	#对话框UI配置
+	[dialog_client.ui]
+		#对话框宽度
+		dialogBoxWidth = 220
+		#对话框高度
+		dialogBoxHeight = 72
+		#对话框内边距
+		dialogBoxPadding = 10
+		#对话文本默认颜色 (ARGB格式)
+		dialogTextColor = -1
+		#对话框背景默认颜色 (RGB格式)
+		dialogBackgroundColor = 0
+		#对话框背景不透明度 (0-255)
+		dialogBackgroundOpacity = 200
+
+	#立绘配置
+	[dialog_client.portrait]
+		#启用立绘动画
+		enablePortraitAnimations = true
+
+	#对话系统配置
+	[dialog_client.system]
+		#是否在对话时暂停游戏（仅单人模式）
+		isPauseScreen = false
+		#自动推进对话的延迟时间（毫秒）
+		autoAdvanceDelay = 700
+		#是否显示说话者的名称
+		showSpeakerName = true
+		#文本逐字显示的速度（每秒字符数，设置为0则立即显示全部文本）
+		#Range: 0 ~ 1000
+		textAnimationSpeed = 20
+

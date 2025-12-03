@@ -3,7 +3,9 @@ console.info("[SOCIETY] autoGrabber.js loaded");
 const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuality, e) => {
   const { player, target, level, server, block, inventory } = e;
   const affection = data.getInt("affection") || 0;
-  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  const bedless = global.animalHasNoBed(data);
+  if (bedless) hearts = 3;
   let quality = 0;
 
   if (!hungry && hearts >= minHearts && Math.random() <= chance) {
@@ -33,6 +35,113 @@ const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuali
         3,
         0.01
       );
+    }
+  }
+};
+
+global.autoGrabAnimal = (entity, player, animal) => {
+  const { inventory, block, level } = entity;
+  let data = animal.persistentData;
+  const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+  const hungry = day - data.getInt("ageLastFed") > 1;
+  if (!hungry) {
+    if (
+      global.checkEntityTag(animal, "society:milkable_animal") &&
+      global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
+    ) {
+      let milkItem = global.getMilk(animal, data, player, day);
+      if (milkItem !== -1) {
+        let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
+        if (insertedMilk) {
+          if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+            console.error("Sparkstone not consumed when it should have been!");
+          if (!global.getAnimalIsNotCramped(animal)) data.affection = data.getInt("affection") - 50;
+          level.server.runCommandSilent(
+            `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
+          );
+          level.spawnParticles(
+            "atmospheric:aloe_blossom",
+            true,
+            animal.x,
+            animal.y + 1.5,
+            animal.z,
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            5,
+            0.01
+          );
+        }
+      }
+    }
+    if (global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1) {
+      global.handleSpecialHarvest(
+        level,
+        animal,
+        player,
+        player.server,
+        block,
+        inventory,
+        handleSpecialItem
+      );
+    }
+    if (
+      level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
+      global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
+    ) {
+      let droppedLoot = global.getMagicShearsOutput(level, animal, player, level.server);
+      if (droppedLoot !== -1) {
+        level.server.runCommandSilent(
+          `playsound minecraft:entity.sheep.shear block @a ${block.x} ${block.y} ${block.z}`
+        );
+        let insertedMagicDrops = false;
+        for (let i = 0; i < droppedLoot.length; i++) {
+          insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
+        }
+        if (insertedMagicDrops) {
+          if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+            console.error("Sparkstone not consumed when it should have been!");
+          if (!global.getAnimalIsNotCramped(animal)) data.affection = data.getInt("affection") - 50;
+        }
+      }
+    }
+  }
+};
+global.runAutoGrabber = (entity) => {
+  const { block, level } = entity;
+  let radius = 5;
+  let attachedPlayer;
+  let nearbyFarmAnimals;
+  nearbyFarmAnimals = level
+    .getEntitiesWithin(AABB.ofBlock(block).inflate(radius))
+    .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
+  level.getServer().players.forEach((p) => {
+    if (p.getUuid().toString() === block.getEntityData().data.owner) {
+      attachedPlayer = p;
+    }
+  });
+  if (attachedPlayer) {
+    nearbyFarmAnimals.forEach((animal) => {
+      global.autoGrabAnimal(entity, attachedPlayer, animal);
+    });
+    let { x, y, z } = block;
+    let scanBlock;
+    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+      x + radius,
+      y + radius,
+      z + radius,
+    ])) {
+      scanBlock = level.getBlock(pos);
+      if (scanBlock.hasTag("society:animal_bed")) {
+        let nbt = scanBlock.getEntityData();
+        let animal = undefined;
+        let { boundToAnimal, animalInside, entityID } = nbt.data;
+        if (boundToAnimal && animalInside) {
+          animal = level.createEntity(entityID.toString());
+          animal.nbt = nbt.data.entity;
+          global.autoGrabAnimal(entity, attachedPlayer, animal);
+        }
+      }
     }
   }
 };
@@ -69,93 +178,7 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(600, 0, (entity) => {
-        const { inventory, block, level } = entity;
-        let attachedPlayer;
-        let nearbyFarmAnimals;
-        nearbyFarmAnimals = level
-          .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
-          .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
-        level.getServer().players.forEach((p) => {
-          if (p.getUuid().toString() === block.getEntityData().data.owner) {
-            attachedPlayer = p;
-          }
-        });
-        if (attachedPlayer) {
-          nearbyFarmAnimals.forEach((animal) => {
-            let data = animal.persistentData;
-            const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
-            const hungry = day - data.getInt("ageLastFed") > 1;
-            if (!hungry) {
-              if (
-                global.checkEntityTag(animal, "society:milkable_animal") &&
-                global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
-              ) {
-                let milkItem = global.getMilk(animal, data, attachedPlayer, day);
-                if (milkItem !== -1) {
-                  let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
-                  if (insertedMilk) {
-                    if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
-                      console.error("Sparkstone not consumed when it should have been!");
-                    if (!global.getAnimalIsNotCramped(animal))
-                      data.affection = data.getInt("affection") - 50;
-                    level.server.runCommandSilent(
-                      `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
-                    );
-                    level.spawnParticles(
-                      "atmospheric:aloe_blossom",
-                      true,
-                      animal.x,
-                      animal.y + 1.5,
-                      animal.z,
-                      0.1 * rnd(1, 4),
-                      0.1 * rnd(1, 4),
-                      0.1 * rnd(1, 4),
-                      5,
-                      0.01
-                    );
-                  }
-                }
-              }
-              if (global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1) {
-                global.handleSpecialHarvest(
-                  level,
-                  animal,
-                  attachedPlayer,
-                  attachedPlayer.server,
-                  block,
-                  inventory,
-                  handleSpecialItem
-                );
-              }
-              if (
-                level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
-                global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
-              ) {
-                let droppedLoot = global.getMagicShearsOutput(
-                  level,
-                  animal,
-                  attachedPlayer,
-                  level.server
-                );
-                if (droppedLoot !== -1) {
-                  level.server.runCommandSilent(
-                    `playsound minecraft:entity.sheep.shear block @a ${block.x} ${block.y} ${block.z}`
-                  );
-                  let insertedMagicDrops = false;
-                  for (let i = 0; i < droppedLoot.length; i++) {
-                    insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
-                  }
-                  if (insertedMagicDrops) {
-                    if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
-                      console.error("Sparkstone not consumed when it should have been!");
-                    if (!global.getAnimalIsNotCramped(animal))
-                      data.affection = data.getInt("affection") - 50;
-                  }
-                }
-              }
-            }
-          });
-        }
+        global.runAutoGrabber(entity);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(

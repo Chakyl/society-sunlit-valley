@@ -1,0 +1,67 @@
+{
+  "infrastructure_check_radius": 2,
+  "path_quality_threshold": 0.3,
+  "node_distance_minimum": 4,
+  "node_distance_maximum": 8,
+  "node_utility_distance": 3,
+  "path_block_ids": [
+    "minecraft:dirt_path",
+    "minecraft:packed_mud",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt"
+  ],
+  "path_block_tags": [],
+  "path_block_strings": [
+    "sandstone",
+    "polished",
+    "cobble",
+    "brick",
+    "smooth",
+    "basalt",
+    "path",
+    "road",
+    "concrete",
+    "pavement",
+    "glazed",
+    "tile",
+    "_wall",
+    "_fence",
+    "_slab",
+    "_stairs",
+    "_wool",
+    "_carpet",
+    "_plank",
+    "_log",
+    "_wood",
+    "rail",
+    "_button",
+    "_pressure_plate"
+  ],
+  "block_string_blacklist": [
+    "diagonalwalls:",
+    "diagonalfences:",
+    "diagonalwindows:"
+  ],
+  "invalid_dimensions": [],
+  "invalid_entities": [],
+  "warp_block_ids": [
+    "via_romana:warp_block"
+  ],
+  "warp_block_tags": [
+    "minecraft:all_signs"
+  ],
+  "travel_fatigue_cooldown": 10,
+  "fog_of_war_distance": 10,
+  "spline_animation_speed": 2.0,
+  "maximum_map_dimension": 512,
+  "map_refresh_interval": 10,
+  "map_save_interval": 5,
+  "biomeColor": [],
+  "use_biome_fallback_for_lowres": true,
+  "enable_surveyor_landmark": false,
+  "enable_surveyor_landmark_coloring": false,
+  "invalid_block_overlay_opacity": 0.4,
+  "biome_map_opacity": 0.3,
+  "node_vignette_opacity": 1.0,
+  "enable_teleport_particles": true
+}
