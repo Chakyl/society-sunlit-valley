@@ -738,6 +738,7 @@ ServerEvents.tags("block", (e) => {
   });
   e.add("minecraft:mineable/axe", "beachparty:cabinet");
   e.add("minecraft:mineable/pickaxe", "bakery:iron_bench");
+  e.add("minecraft:mineable/shovel", "vinery:dirt_path_slab")
 });
 
 ServerEvents.tags("fluid", (e) => {

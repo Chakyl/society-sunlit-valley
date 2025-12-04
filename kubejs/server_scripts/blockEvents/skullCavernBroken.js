@@ -141,6 +141,9 @@ LevelEvents.beforeExplosion((e) => {
           let block = level.getBlock(xi, yi, zi);
           if (block.hasTag("society:skull_cavern_bomb_denied")) {
             blocks.push({ xi: xi, yi: yi, zi: zi, dist: dist, id: block.id });
+          } else if (block.hasTag("society:skull_cavern_regens")) {
+            let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
+            scheduleFunction(level, block.pos.immutable(), server, rockType);
           }
         }
       }
