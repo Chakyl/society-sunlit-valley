@@ -1,0 +1,67 @@
+{
+    "name": "참나무 🌐",
+    "category": "patchouli:trees",
+    "icon": "minecraft:oak_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🌐 §5연중$(li)묘목 가격: :coin: 8$(li)크기: 1x1$(br2)$(l)메모$()$(li)커다랗게 자라기도 합니다."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "참나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  L  ",
+                        " L0L ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLL "
+                    ],
+                    [
+                        "LLLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "L": "minecraft:oak_leaves",
+                    "W": "minecraft:oak_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

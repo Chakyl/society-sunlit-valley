@@ -1,0 +1,28 @@
+{
+  "name": "악취 열매 🍂",
+  "category": "patchouli:crops",
+  "icon": "autumnity:foul_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 4$(li)🍂 §4가을§r$(li)수확량: 2/4$(li)성장 단계: 4/5$(li)재성장 단계: 1/2$(br2)$(l)메모$()$(br)단풍나무 숲 생물군계에서 발견 가능$(br)씨앗이 따로 없기 때문에 열매를 심으면 됩니다.$(br)수확 가능한 단계가 2개입니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "키 큰 악취 열매 덤불",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["U"],
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "U": "autumnity:tall_foul_berry_bush[age=3,half=upper]",
+          "0": "autumnity:tall_foul_berry_bush[age=3,half=lower]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "곰",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bear\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)심장 합성$(br2)$(l)주의사항:$()$(br)당신을 너무 좋아해서 꿀을 잔뜩 바릅니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "곰 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bear\"}",
+      "scale": 0.9
+    }
+  ]
+}

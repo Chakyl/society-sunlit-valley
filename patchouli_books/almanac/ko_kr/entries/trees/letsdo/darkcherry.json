@@ -1,0 +1,84 @@
+{
+    "name": "짙은 체리나무 🌼",
+    "category": "patchouli:trees",
+    "icon": "vinery:dark_cherry_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🌼 §2봄§r $(li)묘목 가격: :coin: 256$(li)크기: 1x1$(li)결실:$(l:tree_crops/cherry)체리$(/l)$(br2)$(l)메모$()$(li)시장에서 묘목을 구매할 수 있습니다. 커다랗게 자라기도 합니다."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "짙은 체리나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  1  ",
+                        " 102 ",
+                        "  3  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " 131 ",
+                        " 1W2 ",
+                        " 322 ",
+                        "     "
+                    ],
+                    [
+                        " 1213",
+                        "21231",
+                        "32W11",
+                        "11231",
+                        "2311 "
+                    ],
+                    [
+                        "3312 ",
+                        "31231",
+                        "12W21",
+                        "12331",
+                        "12313"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vinery:dark_cherry_leaves[has_cherries=false]",
+                    "1": "vinery:dark_cherry_leaves[has_cherries=false]",
+                    "2": "vinery:dark_cherry_leaves[can_grow_cherries=true, has_cherries=true]",
+                    "3": "vinery:dark_cherry_leaves[can_grow_cherries=true]",
+                    "W": "vinery:dark_cherry_log"
+                }
+            }
+        }
+    ]
+}

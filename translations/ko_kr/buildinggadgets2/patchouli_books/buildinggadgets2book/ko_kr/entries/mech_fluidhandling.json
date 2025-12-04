@@ -1,0 +1,35 @@
+{
+    "name": "유체 처리",
+    "sortnum": 1,
+    "category": "buildinggadgets2:mechanics",
+    "icon": "minecraft:water_bucket",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "장치는 유체와 상호 작용할 수 있습니다! 시프트 + 우클릭으로 유체를 선택하려면 $(l:buildinggadgets2:mech_raytrace_fluids)유체 인식$(/l)이 활성화되어 있는지 확인하세요. $(br2)유체를 배치하려면 적절한 유체가 들어 있는 양동이가 필요합니다. $(br2)혹은, Mekanism과 같이 탱크를 추가하는 모드를 사용할 수 있으며 유체는 탱크에서 소비/반환됩니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "유체 처리",
+            "images": [
+                "buildinggadgets2:textures/book/images/fluidhandling1.png",
+                "buildinggadgets2:textures/book/images/fluidhandling2.png"
+            ],
+            "border": true,
+            "text": "위의 이미지를 전환하여 다양한 옵션을 확인하세요."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "복사 붙여넣기 장치도 유체를 처리할 수 있습니다!$(br2)유체를 되돌리거나 교환할 때 장치는 유체를 넣을 장소(빈 양동이 또는 탱크와 같은)를 찾으려고 시도하지만 찾을 수 없으면 유체를 삭제합니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "유체 처리",
+            "images": [
+                "buildinggadgets2:textures/book/images/fluidhandling3.png"
+            ],
+            "border": true,
+            "text": "유체 복사 붙여넣기"
+        }
+    ]
+}

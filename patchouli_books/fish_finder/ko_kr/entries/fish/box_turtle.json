@@ -1,0 +1,18 @@
+{
+  "name": "상자거북",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:box_turtle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 320$(li)\uD83D\uDD25 §6여름 §0$(li)수역: 강$(li)날씨: 비, 눈$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:box_turtle",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "당신의 손가락을 간식으로 생각하고 있습니다."
+    }
+  ]
+}

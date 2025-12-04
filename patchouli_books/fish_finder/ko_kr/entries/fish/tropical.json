@@ -1,0 +1,18 @@
+{
+  "name": "열대어",
+  "category": "patchouli:fish",
+  "icon": "minecraft:tropical_fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 72$(li)§0🌼 §2봄§0 🔥 §6여름§0$(li)수역: 바다$(li)날씨: 언제나$(li)시간: 밤 (봄), 언제나 (여름)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:tropical_fish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "계속 헤엄쳐?"
+    }
+  ]
+}

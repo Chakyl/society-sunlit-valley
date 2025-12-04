@@ -1,0 +1,28 @@
+{
+    "name": "시나몬 🍂❆",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:cinnamonitem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li):coin: 160$(li)🍂 §4가을§r ❆ §b겨울§r$(li)수확량: 1$(li)성장 단계: 8$(br2)$(l)메모$()$(li)참조: $(l:trees/pams/cinnamon)시나몬나무$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "시나몬나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "pamhc2trees:pamcinnamon[age=7]",
+                    "L": "pamhc2trees:pamcinnamon[age=6]",
+                    "H": "pamhc2trees:pamcinnamon[age=0]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["L"],
+                    ["H"]
+                ]
+            }
+        }
+    ]
+}

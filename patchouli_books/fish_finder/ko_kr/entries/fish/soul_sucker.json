@@ -1,0 +1,19 @@
+{
+  "name": "영혼빨판고기",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:soulsucker",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 312$(li)차원: 네더$(li)생물군계: 영혼 모래 골짜기"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:soulsucker",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "그 빨판으로 영혼을 빨아 먹을 겁니다."
+    }
+  ]
+}

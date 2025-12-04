@@ -1,0 +1,18 @@
+{
+  "name": "피라미",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:minnow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 16$(li)연중$(li)수역: 담수, 강$(li)날씨: 언제나$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:minnow",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "잡는데 들이는 노력에 비해 소득이 없는 녀석."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "붉은 늑대",
+  "category": "patchouli:pets",
+  "icon": "species:wicked_treat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)늑대 사냥꾼 현수막, 늑대 화석$(br)$(l)길들이기:$()$(br)뼈$(br2)$(l)메모$()$(br)소나무 원시 타이가 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:red_wolf",
+      "scale": 0.7,
+      "text": "붉은 색의 늑대에요! 뭔가 더 필요한가요??"
+    }
+  ]
+}

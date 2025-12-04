@@ -1,0 +1,23 @@
+{
+  "name": "애호박 🔥",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:zucchini",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 72$(li)🔥 §6여름§r $(li)씨앗 가격: 구매 불가$(li)수확량: 1-2$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "애호박 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [["0"], ["F"]],
+        "mapping": {
+          "0": "veggiesdelight:zucchini_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

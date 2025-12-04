@@ -1,0 +1,17 @@
+{
+  "name": "메카닉",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:mechanic\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)심장 합성$(br2)$(l)주의사항:$()$(br)아이템을 손에 들 수 있고, 죽을 때까지 내려놓지 않습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "메카닉 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:mechanic\"}",
+      "scale": 0.9
+    }
+  ]
+}

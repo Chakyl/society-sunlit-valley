@@ -1,0 +1,17 @@
+{
+  "name": "달콤",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)심장 합성$(br2)$(l)주의사항:$()$(br)기분이 나쁠 때 속도 증가 효과를 부여합니다. 기분 변화가 심합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "달콤 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:sweet\"}",
+      "scale": 0.9
+    }
+  ]
+}

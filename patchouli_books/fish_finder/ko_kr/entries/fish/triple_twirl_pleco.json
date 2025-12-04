@@ -1,0 +1,18 @@
+{
+  "name": "삼중나선플레코",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_triple_twirl_pleco",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 208$(li)\u00a70\u2746 \u00a7b겨울\u00a70$(li)수역: 바다$(li)날씨: 언제나$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:triple_twirl_pleco",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "트리플악셀을 할 수 있을까요?"
+    }
+  ]
+}

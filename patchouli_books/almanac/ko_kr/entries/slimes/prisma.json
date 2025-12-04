@@ -1,0 +1,17 @@
+{
+  "name": "프리즈마",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text", 
+      "text": "$(l)획득처:$()$(li)게잡이 통발: 디럭스 게잡이 통발 미끼$(li)심장 합성$(br2)$(l)주의사항:$()$(br)가시를 가지고 있고, 기분이 나쁠 때 채굴 피로 효과를 부여합니다. 물 밖에 있으면 행복해하지 않습니다!"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "프리즈마 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:prisma\"}",
+      "scale": 0.9
+    }
+  ]
+}

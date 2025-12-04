@@ -1,0 +1,17 @@
+{
+  "name": "비트와이즈",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)생물군계: 얼어붙은 소용돌이 (해골 광산)$(br2)$(l)주의사항:$()$(br)기분이 나쁠 때 혼란 효과를 부여합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "비트와이즈 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bitwise\"}",
+      "scale": 0.9
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "염소",
+  "category": "patchouli:animals",
+  "icon": "society:large_goat_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: :coin: 16,384$(li)착유: 염소젖$(li)착유 간격: 2일$(li)드롭 아이템: 염소 뿔$(br2)$(l)메모$()$(br)염소 뿔은 탐험가 생산품입니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:goat",
+      "scale": 0.8,
+      "text": "기르는 것은 힘들겠지만 뿔과 염소젖은 그만한 가치가 있습니다."
+    }
+  ]
+}

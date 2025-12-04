@@ -1,0 +1,17 @@
+{
+  "name": "달팽이",
+  "category": "patchouli:animals",
+  "icon": "autumnity:snail_shell_piece",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)채집: 달팽이 껍데기$(li)드롭 아이템: 달팽이 점액$(br2)$(l)메모$()$(br)호감도 3하트 이상부터 채집 가능."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "autumnity:snail",
+      "scale": 0.8,
+      "text": "느리고 촉촉한 작은 녀석"
+    }
+  ]
+}
