@@ -1,0 +1,17 @@
+{
+  "name": "고양이",
+  "category": "patchouli:pets",
+  "icon": "minecraft:cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)고양이 귀 (모자), 오실롯 화석$(br2)$(l)길들이기:$()$(br)물고기"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cat",
+      "scale": 0.7,
+      "text": "당신의 꽃병을 노리는 귀여운 악마."
+    }
+  ]
+}

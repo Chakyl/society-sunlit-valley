@@ -1,0 +1,17 @@
+{
+  "name": "개",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)양 화석$(br)$(l)길들이기:$()$(br)뼈$(br2)$(l)메모$()$(br)평원 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:dog",
+      "scale": 0.7,
+      "text": "고양이를 별로 좋아하지 않습니다."
+    }
+  ]
+}

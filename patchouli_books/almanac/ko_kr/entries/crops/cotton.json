@@ -1,0 +1,26 @@
+{
+  "name": "목화 🔥",
+  "category": "patchouli:crops",
+  "icon": "etcetera:cotton_flower",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)🔥 §6여름§r$(li)수확량: 2$(li)성장 시간: 3일$(br2)$(l)메모$()$(br)초록 풍선, 채굴 지점, 숲 모조에게서 획득 가능."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "목화 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "etcetera:cotton[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

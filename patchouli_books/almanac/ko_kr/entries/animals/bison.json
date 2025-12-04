@@ -1,0 +1,17 @@
+{
+  "name": "바이슨",
+  "category": "patchouli:animals",
+  "icon": "wildernature:bison_horn",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 물소 우유$(li)착유 간격: 1일$(li)드롭 아이템: 바이슨 고기, 가죽, 바이슨 뿔$(br2)$(l)메모$()$(br)타이가 생물군계에서 출현. 호감도가 높아도 플레이어를 들이받으려 할 것입니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:bison",
+      "scale": 0.7,
+      "text": "자신의 영역에 들어오면 신경질적으로 반응합니다."
+    }
+  ]
+}

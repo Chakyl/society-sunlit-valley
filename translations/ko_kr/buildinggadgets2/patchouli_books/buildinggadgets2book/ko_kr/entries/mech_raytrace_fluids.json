@@ -1,0 +1,21 @@
+{
+    "name": "유체 인식",
+    "sortnum": 1,
+    "category": "buildinggadgets2:mechanics",
+    "icon": "buildinggadgets2:textures/book/icons/raytrace_fluid.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "유체 인식를 사용하면 장치가 유체와 상호 작용할 수 있습니다. 켜져 있으면 교환 가젯은 유체를 교체할 수 있고 건축 가젯은 유체 위에 건설할 수 있습니다. $(br2)꺼져 있으면 이러한 장치는 유체를 무시하고 뒤에 있는 블록 위에 건설합니다.$(br2)자세한 내용은 $(l:buildinggadgets2:mech_fluidhandling)유체 처리$(/l) 챕터를 참조하세요."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "유체 인식",
+            "images": [
+                "buildinggadgets2:textures/book/images/raytracefluids.png"
+            ],
+            "border": true,
+            "text": "유체에 영향을 줌!"
+        }
+    ]
+}

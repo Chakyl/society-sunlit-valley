@@ -1,0 +1,18 @@
+{
+  "name": "햄스터",
+  "category": "patchouli:pets",
+  "icon": "hamsters:hamster",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)작은 노움$(br)$(l)길들이기:$()$(br)씨앗$()$(br2)$(l)메모$()$(br)평원 생물군계에 출현. 들어올려지는 것을 싫어해서 호감도를 전부 잃을 것입니다."
+    },
+    
+    {
+      "type": "patchouli:entity",
+      "entity": "hamsters:hamster",
+      "scale": 0.7,
+      "text": "너무 먹이면 터질지도 모릅니다."
+    }
+  ]
+}

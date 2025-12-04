@@ -1,0 +1,26 @@
+{
+  "name": "오이 🌼",
+  "category": "patchouli:crops",
+  "icon": "vintagedelight:cucumber",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 72$(li)🌼 §2봄§r$(li)씨앗 가격: :coin: 64$(li)수확량: 1$(li)성장 시간: 7일$(br2)$(l)메모$()$(br)달인 재배자에게서 씨앗을 구매할 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "오이 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "vintagedelight:cucumber_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "대구",
+  "category": "patchouli:fish",
+  "icon": "minecraft:cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 16$(li)§0🌼 §2봄§0 ❆ §b겨울§0$(li)수역: 바다$(li)날씨: 언제나$(li)시간: 밤 (봄), 언제나 (겨울)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cod",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "익숙한 녀석."
+    }
+  ]
+}

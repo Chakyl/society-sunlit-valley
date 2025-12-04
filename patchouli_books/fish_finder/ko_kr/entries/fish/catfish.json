@@ -1,0 +1,18 @@
+{
+  "name": "메기",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:catfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 144$(li)\u00a70\ud83c\udf3c \u00a72봄\u00a70$(li)수역: 강$(li)날씨: 비, 눈$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:catfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "멋들어진 수염이구만!"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "물소",
+  "category": "patchouli:animals",
+  "icon": "society:large_buffalo_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 물소 우유$(li)착유 간격: 1일$(li)드롭 아이템: 물소 고기, 가죽$(br2)$(l)메모$()$(br)강가, 특히 사바나 생물군계에서 자주 보입니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "meadow:water_buffalo",
+      "scale": 0.7,
+      "text": "커다랗고 다부진 소. 물소 우유는 고급으로 통합니다."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "알레이",
+  "category": "patchouli:pets",
+  "icon": "minecraft:amethyst_shard",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)치이의 귀 (모자)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:allay",
+      "scale": 0.8  ,
+      "text": "Sophisticated Storage의 자석 업그레이드가 더 나을겁니다."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "무지개송어",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:rainbow_trout",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 64$(li)\u00a70\u2746 \u00a7b겨울\u00a70$(li)수역: 강$(li)날씨: 비, 눈$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:rainbow_trout",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "무지갯빛 파편을 어디서 구해오는 걸까요? :slightly_smiling_face:"
+    }
+  ]
+}

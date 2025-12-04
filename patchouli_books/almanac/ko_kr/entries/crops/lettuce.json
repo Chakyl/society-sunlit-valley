@@ -1,0 +1,26 @@
+{
+  "name": "양상추 🌼",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:lettuce",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)🌼 §2봄§r$(li)씨앗 가격: :coin: 4$(li)수확량: 1$(li)성장 시간: 3일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "양상추 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:lettuce_crop[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

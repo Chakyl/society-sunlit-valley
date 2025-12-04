@@ -1,0 +1,17 @@
+{
+  "name": "돼지",
+  "category": "patchouli:animals",
+  "icon": "society:truffle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: :coin: 8,192$(li)채집: 트러플$(li)드롭 아이템: 돼지고기$(br2)$(l)메모$()$(br)호감도 4하트 이상부터 채집 가능."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pig",
+      "scale": 0.7,
+      "text": "값비싼 트러플을 찾기 전까지 많은 관심이 필요합니다."
+    }
+  ]
+}

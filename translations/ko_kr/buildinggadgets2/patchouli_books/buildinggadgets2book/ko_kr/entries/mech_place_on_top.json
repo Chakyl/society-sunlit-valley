@@ -1,0 +1,22 @@
+{
+    "name": "위에 놓기",
+    "sortnum": 1,
+    "category": "buildinggadgets2:mechanics",
+    "icon": "buildinggadgets2:textures/book/icons/place_on_top.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "위에 놓기는 각 모드마다 약간 다르게 작동하며 일부 모드에서는 아무런 영향을 미치지 않습니다.$(br2)일반적으로 보는 대상을 포함하여 배치하는 대신 블록 위에 배치합니다. 사용해보고 미리보기를 통해 어떻게 다른지 확인하세요!$(br2)오른쪽의 두 그림에서 예를 확인하세요."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "위에 놓기",
+            "images": [
+                "buildinggadgets2:textures/book/images/placeontop1.png",
+                "buildinggadgets2:textures/book/images/placeontop2.png"
+            ],
+            "border": true,
+            "text": "위의 이미지를 전환하여 다양한 옵션을 확인하세요."
+        }
+    ]
+}

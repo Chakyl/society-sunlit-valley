@@ -1,0 +1,23 @@
+{
+    "name": "수직 벽",
+    "sortnum": 1,
+    "category": "buildinggadgets2:modes",
+    "icon": "buildinggadgets2:textures/book/mode/vertical_wall.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "수직 벽은 보는 블록의 상단 또는 하단에서 위쪽 또는 아래쪽으로 벽을 건설합니다. $(br2)블록의 측면을 보는 경우 주위에 건설됩니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "수직 벽",
+            "images": [
+                "buildinggadgets2:textures/book/images/vertwall2.png",
+                "buildinggadgets2:textures/book/images/vertwall4.png",
+                "buildinggadgets2:textures/book/images/vertwall3.png"
+            ],
+            "border": true,
+            "text": "위의 이미지를 전환하여 다른 옵션을 확인하세요"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "매머틸레이션",
+  "category": "patchouli:animals",
+  "icon": "species:ichor_bottle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)착유: 이코르 병$(li)착유 간격: 2일$(li)드롭 아이템: 없음$(br2)$(l)메모$()$(br)오른쪽의 모양으로 설치하고 번개를 맞춰야합니다. 얼어붙은 바다 속에서 유해를 발견할 수 있습니다..."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "설치하고 번개를 기다리세요",
+      "enable_visualize": true,
+      "symmetrical": true,
+      "multiblock": {
+        "pattern": [
+          [
+            " BBB ",
+            "SBBBN",
+            " BBB ",
+            "     "
+          ],
+          [
+            " BBB ",
+            " B0B ",
+            "TBPBT",
+            "T   T"
+          ],
+          [
+            " BBB ",
+            " BBB ",
+            " BBB ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "T": "minecraft:bone_block[axis=x]",
+          "P": "minecraft:carved_pumpkin[facing=east]",
+          "B": "#species:mammutilation_body_blocks",
+          "0": "#species:mammutilation_body_blocks",
+          "S": "minecraft:lightning_rod[facing=north]",
+          "N": "minecraft:lightning_rod[facing=south]"
+        }
+      }
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:mammutilation",
+      "scale": 0.8,
+      "text": "잊혀진 시간의, 혐오스러운 생물"
+    }
+  ]
+}

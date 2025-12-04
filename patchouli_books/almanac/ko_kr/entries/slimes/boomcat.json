@@ -1,0 +1,17 @@
+{
+  "name": "폭냥이",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:boomcat\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)생물군계: 해골 동굴 (해골 광산)$(li)심장 합성$(li)채굴 지점: 얼음, 눈 블록$(li)크리퍼 처치$(br2)$(l)주의사항:$()$(br)배고플 때 블록을 파괴하지 않는 폭발을 합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "폭냥이 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:boomcat\"}",
+      "scale": 0.9
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "토마토 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "farmersdelight:tomato",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)🌼 §2봄§r 🔥 §6여름§r 🍂 §4가을$(li)씨앗 가격: :coin: 4$(li)수확량: 1$(li)성장 시간: 4일$(li)재성장 시간: 3일$(br2)$(l)메모$()$(br)작물 위의 농사 밧줄을 타고 오릅니다.$(br)낮은 확률로 썩은 토마토를 얻을 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "토마토 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "farmersdelight:tomatoes[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

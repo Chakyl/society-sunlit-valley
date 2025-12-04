@@ -1,0 +1,19 @@
+{
+  "name": "위더뼈고기",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:wither_bonefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 412$(li)차원: 네더$(li)생물군계: 영혼 모래 골짜기"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:wither_bonefish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "석탄을 잔뜩 먹었나 봅니다."
+    }
+  ]
+}

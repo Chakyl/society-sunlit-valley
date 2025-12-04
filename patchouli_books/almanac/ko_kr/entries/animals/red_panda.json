@@ -1,0 +1,17 @@
+{
+  "name": "레서판다",
+  "category": "patchouli:animals",
+  "icon": "society:ruby",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)채집: 루비, 영롱한 루비$(br2)$(l)메모$()$(br)호감도 3하트 이상부터 채집 가능. 달콤한 열매로 길들일 수 있습니다. 기적의 물약을 사용해도 높은 확률로 교배에 실패합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:red_panda",
+      "scale": 0.8,
+      "text": "(위협의 포즈)"
+    }
+  ]
+}

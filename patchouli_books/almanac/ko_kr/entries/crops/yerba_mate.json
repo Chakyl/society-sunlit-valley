@@ -1,0 +1,26 @@
+{
+  "name": "예르바 마테 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:yerba_mate_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 6$(li)🌼 §2봄§r 🔥 §6여름§r 🍂 §4가을$(li)수확량: 1-4$(li)성장 시간: 3일$(br2)$(l)메모$()$(br)산 태그의 생물군계에서 발견 가능.$(br)씨앗이 따로 없기 때문에 잎을 심으면 됩니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "예르바 마테 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "herbalbrews:yerba_mate_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}
