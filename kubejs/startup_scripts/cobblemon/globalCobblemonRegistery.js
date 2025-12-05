@@ -27,13 +27,7 @@ global.cobbleAdventuring = [
   { item: "cobblemon:nostalgic_sherd", value: 256 },
   { item: "cobblemon:suspicious_sherd", value: 256 },
 ];
-global.cobbleGeology = [
-  { item: "cobblemon:tumblestone", value: 8 },
-  { item: "cobblemon:black_tumblestone", value: 12 },
-  { item: "cobblemon:sky_tumblestone", value: 16 },
-  { item: "cobblemon:tumblestone_block", value: 32 },
-  { item: "cobblemon:black_tumblestone_block", value: 48 },
-  { item: "cobblemon:sky_tumblestone_block", value: 64 },
+global.cobbleTypeGems = [
   { item: "cobblemon:normal_gem", value: 512 },
   { item: "cobblemon:fire_gem", value: 512 },
   { item: "cobblemon:water_gem", value: 512 },
@@ -52,6 +46,21 @@ global.cobbleGeology = [
   { item: "cobblemon:dark_gem", value: 512 },
   { item: "cobblemon:steel_gem", value: 512 },
   { item: "cobblemon:fairy_gem", value: 512 },
+];
+global.cobblePristineTypeGems = [];
+global.cobbleTypeGems.forEach((gem) => {
+  global.cobblePristineTypeGems.push({
+    item: `sunlit_cobblemon:pristine_${gem.item.path}`,
+    value: gem.value * 4,
+  });
+});
+global.cobbleGeology = [
+  { item: "cobblemon:tumblestone", value: 8 },
+  { item: "cobblemon:black_tumblestone", value: 12 },
+  { item: "cobblemon:sky_tumblestone", value: 16 },
+  { item: "cobblemon:tumblestone_block", value: 32 },
+  { item: "cobblemon:black_tumblestone_block", value: 48 },
+  { item: "cobblemon:sky_tumblestone_block", value: 64 },
   { item: "cobblemon:fire_stone", value: 2048 },
   { item: "cobblemon:water_stone", value: 820 },
   { item: "cobblemon:thunder_stone", value: 500 },
@@ -63,6 +72,7 @@ global.cobbleGeology = [
   { item: "cobblemon:dawn_stone", value: 806 },
   { item: "cobblemon:ice_stone", value: 1020 },
 ];
+global.cobbleTypeGems.forEach((gem) => global.cobbleGeology.push(gem));
 
 global.cobblemonCooking = [
   { item: "cobblemon:braised_vivichoke", value: 69 },
@@ -198,6 +208,13 @@ global.cobbleAdventuring.forEach((miscItem) => {
   });
 });
 global.cobbleGeology.forEach((miscItem) => {
+  const { item, value } = miscItem;
+  global.trades.set(item, {
+    value: value,
+    multiplier: "shippingbin:gem_sell_multiplier",
+  });
+});
+global.cobblePristineTypeGems.forEach((miscItem) => {
   const { item, value } = miscItem;
   global.trades.set(item, {
     value: value,

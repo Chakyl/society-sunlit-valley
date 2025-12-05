@@ -53,7 +53,11 @@ ServerEvents.recipes((e) => {
     );
   });
   e.forEachRecipe({ type: "minecraft:smelting" }, (r) => {
-    if (r !== null && r.originalRecipeIngredients !== null && r.originalRecipeIngredients[0]) {
+    if (
+      r !== null &&
+      r.originalRecipeIngredients !== null &&
+      r.originalRecipeIngredients[0]
+    ) {
       r.originalRecipeIngredients[0].getItemIds().forEach((ingredient) => {
         if (
           !(
@@ -95,9 +99,15 @@ ServerEvents.recipes((e) => {
     { sapling: "minecraft:spruce_sapling", log: "minecraft:spruce_log" },
     { sapling: "minecraft:jungle_sapling", log: "minecraft:jungle_log" },
     { sapling: "minecraft:acacia_sapling", log: "minecraft:acacia_log" },
-    { sapling: "windswept:flowering_acacia_sapling", log: "minecraft:acacia_log" },
+    {
+      sapling: "windswept:flowering_acacia_sapling",
+      log: "minecraft:acacia_log",
+    },
     { sapling: "minecraft:dark_oak_sapling", log: "minecraft:dark_oak_log" },
-    { sapling: "vanillabackport:pale_oak_sapling", log: "vanillabackport:pale_oak_log" },
+    {
+      sapling: "vanillabackport:pale_oak_sapling",
+      log: "vanillabackport:pale_oak_log",
+    },
     { sapling: "minecraft:cherry_sapling", log: "minecraft:cherry_log" },
     { sapling: "minecraft:mangrove_propagule", log: "minecraft:mangrove_log" },
     { sapling: "windswept:chestnut_sapling", log: "windswept:chestnut_log" },
@@ -108,13 +118,22 @@ ServerEvents.recipes((e) => {
     { sapling: "quark:yellow_blossom_sapling", log: "quark:blossom_log" },
     { sapling: "quark:orange_blossom_sapling", log: "quark:blossom_log" },
     { sapling: "quark:lavender_blossom_sapling", log: "quark:blossom_log" },
-    { sapling: "atmospheric:rosewood_sapling", log: "atmospheric:rosewood_log" },
+    {
+      sapling: "atmospheric:rosewood_sapling",
+      log: "atmospheric:rosewood_log",
+    },
     { sapling: "atmospheric:morado_sapling", log: "atmospheric:morado_log" },
     { sapling: "atmospheric:yucca_sapling", log: "atmospheric:yucca_log" },
-    { sapling: "atmospheric:grimwood_sapling", log: "atmospheric:grimwood_log" },
+    {
+      sapling: "atmospheric:grimwood_sapling",
+      log: "atmospheric:grimwood_log",
+    },
     { sapling: "windswept:holly_sapling", log: "windswept:holly_log" },
     { sapling: "atmospheric:aspen_sapling", log: "atmospheric:aspen_log" },
-    { sapling: "atmospheric:green_aspen_sapling", log: "atmospheric:aspen_log" },
+    {
+      sapling: "atmospheric:green_aspen_sapling",
+      log: "atmospheric:aspen_log",
+    },
     { sapling: "autumnity:orange_maple_sapling", log: "autumnity:maple_log" },
     { sapling: "autumnity:red_maple_sapling", log: "autumnity:maple_log" },
     { sapling: "autumnity:yellow_maple_sapling", log: "autumnity:maple_log" },
@@ -127,7 +146,10 @@ ServerEvents.recipes((e) => {
     { sapling: "meadow:pine_sapling", log: "meadow:pine_log" },
     { sapling: "cobblemon:red_apricorn_seed", log: "cobblemon:apricorn_log" },
     { sapling: "cobblemon:green_apricorn_seed", log: "cobblemon:apricorn_log" },
-    { sapling: "cobblemon:yellow_apricorn_seed", log: "cobblemon:apricorn_log" },
+    {
+      sapling: "cobblemon:yellow_apricorn_seed",
+      log: "cobblemon:apricorn_log",
+    },
     { sapling: "cobblemon:white_apricorn_seed", log: "cobblemon:apricorn_log" },
     { sapling: "cobblemon:black_apricorn_seed", log: "cobblemon:apricorn_log" },
     { sapling: "cobblemon:blue_apricorn_seed", log: "cobblemon:apricorn_log" },
@@ -145,11 +167,19 @@ ServerEvents.recipes((e) => {
     );
   });
   [
-    { item: "minecraft:honey_bottle", potion: "cobblemon:potion" },
-    { item: "society:sap", potion: "cobblemon:super_potion" },
-    { item: "society:maple_syrup", potion: "cobblemon:hyper_potion" },
-    { item: "society:ancient_juice", potion: "cobblemon:max_potion" },
-    { item: "society:starfruit_juice", potion: "cobblemon:full_restore" },
+    { item: "sunlit_cobblemon:berry_smoothie", potion: "cobblemon:potion" },
+    {
+      item: "sunlit_cobblemon:super_berry_smoothie",
+      potion: "cobblemon:super_potion",
+    },
+    {
+      item: "sunlit_cobblemon:hyper_berry_smoothie",
+      potion: "cobblemon:hyper_potion",
+    },
+    {
+      item: "sunlit_cobblemon:max_berry_smoothie",
+      potion: "cobblemon:max_potion",
+    },
   ].forEach((recipe) => {
     createCobbleWorkerRecipe(
       {
@@ -172,24 +202,6 @@ ServerEvents.recipes((e) => {
   );
   createCobbleWorkerRecipe(
     {
-      item: "society:friendship_necklace",
-    },
-    { item: "sunlit_cobblemon:fairy_heart", count: 1 },
-    "fairy",
-    72000,
-    "SPECIAL_DEFENCE"
-  );
-    createCobbleWorkerRecipe(
-    {
-      item: "society:prismatic_shard",
-    },
-    { item: "sunlit_cobblemon:prismatic_ice", count: 1 },
-    "ice",
-    72000,
-    "DEFENCE"
-  );
-  createCobbleWorkerRecipe(
-    {
       item: "society:aged_ancient_cider",
     },
     { item: "sunlit_cobblemon:poke_genes", count: 1 },
@@ -198,9 +210,15 @@ ServerEvents.recipes((e) => {
     "HP"
   );
   [
-    { item: "vintagedelight:ghost_pepper", pickle: "vintagedelight:pickled_pepper" },
+    {
+      item: "vintagedelight:ghost_pepper",
+      pickle: "vintagedelight:pickled_pepper",
+    },
     { item: "vintagedelight:cucumber", pickle: "vintagedelight:pickle" },
-    { item: "minecraft:pitcher_pod", pickle: "vintagedelight:pickled_pitcher_pod" },
+    {
+      item: "minecraft:pitcher_pod",
+      pickle: "vintagedelight:pickled_pitcher_pod",
+    },
     { item: "minecraft:beetroot", pickle: "vintagedelight:pickled_beetroot" },
     { item: "farm_and_charm:onion", pickle: "vintagedelight:pickled_onion" },
     { item: "farmersdelight:cabbage_leaf", pickle: "vintagedelight:kimchi" },
@@ -237,4 +255,72 @@ ServerEvents.recipes((e) => {
       "HP"
     );
   });
+  global.crystalariumCrystals.forEach((crystal) => {
+    createCobbleWorkerRecipe(
+      {
+        item: crystal.item,
+      },
+      { item: crystal.item, count: 1 },
+      "ice",
+      10000 * crystal.time,
+      "HP",
+      "SPECIAL_ATTACK"
+    );
+  });
+
+  // Legendary Items
+  createCobbleWorkerRecipe(
+    {
+      item: "society:friendship_necklace",
+    },
+    { item: "sunlit_cobblemon:fairy_heart", count: 1 },
+    "fairy",
+    72000,
+    "SPECIAL_DEFENCE"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:prismatic_shard",
+    },
+    { item: "sunlit_cobblemon:prismatic_ice", count: 1 },
+    "ice",
+    72000,
+    "DEFENCE"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:prismatic_shard",
+    },
+    { item: "sunlit_cobblemon:unbreakable_cog", count: 1 },
+    "steel",
+    72000,
+    "SPEED"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:prismatic_shard",
+    },
+    { item: "sunlit_cobblemon:tabula_rasa", count: 1 },
+    "rock",
+    72000,
+    "SPEED"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:prismatic_shard",
+    },
+    { item: "sunlit_cobblemon:endless_battery", count: 1 },
+    "electric",
+    72000,
+    "ATTACK"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:prismatic_shard",
+    },
+    { item: "sunlit_cobblemon:blazing_stone", count: 1 },
+    "fire",
+    72000,
+    "HP"
+  );
 });

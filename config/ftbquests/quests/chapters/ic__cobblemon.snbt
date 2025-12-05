@@ -165,7 +165,7 @@
 				"- &6Electric&r - Charges Batteries from Uncharged Batteries"
 				"- &6Psychic&r - Synthesizes Poke-Genes"
 				"- &6Steel&r - Ore multiplying/limited recycling"
-				"- &6Bug&r - Crafts healing items"
+				"- &6Bug&r - Crafts potions from Smoothies"
 			]
 			id: "75DDF6E50DAD20F0"
 			rewards: [{
@@ -629,7 +629,7 @@
 				""
 				"Base stats are specific to each Pokémon's species. "
 				""
-				"&6IVs&r and &6EVs&r determine the rest of the total stats. IVs do not improve stats drastically and EVs are obtained through normal gameplay,  so most players won't need to worry much about them."
+				"&6IVs&r and &6EVs&r determine the rest of the total stats. IVs do not improve stats drastically and EVs are obtained through normal gameplay, so most players won't need to worry much about them."
 			]
 			icon: "cobblemon:power_herb"
 			id: "62276614C16063B7"
@@ -725,6 +725,41 @@
 			title: "IVs in Detail"
 			x: 18.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["75DDF6E50DAD20F0"]
+			description: [
+				"&6Berry Smoothies&r are special mixes that Bug type Pokémon can craft into Potions!"
+				""
+				"With &6Medicinal Brew&r being a controlled substance, these are the first ways you'll be able to craft &6Potions&r for use or for profit..."
+			]
+			id: "63B9101CAACBF5AE"
+			rewards: [{
+				count: 4
+				id: "660291E1B1F2FD06"
+				item: "sunlit_cobblemon:hyper_berry_smoothie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6389FCC8EF2461C7"
+				item: "sunlit_cobblemon:berry_smoothie"
+				type: "item"
+			}]
+			title: "King Smoothies"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["43DCB8601B40FB9A"]
+			id: "4441EAF3D8A0A3CB"
+			tasks: [{
+				id: "1DA944B5A3C4675B"
+				item: "sunlit_cobblemon:star_pixie"
+				type: "item"
+			}]
+			title: "Hunting Legendaries"
+			x: 21.5d
+			y: -0.5d
 		}
 	]
 	title: "I.C - Cobblemon"

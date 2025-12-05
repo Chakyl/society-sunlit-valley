@@ -31,17 +31,60 @@ StartupEvents.registry("item", (e) => {
     .texture("sunlit_cobblemon:item/master_poke_bobber")
     .maxStackSize(1)
     .displayName("Master Poké Bobber");
-
-  e.create("sunlit_cobblemon:berry_capsule").texture("sunlit_cobblemon:item/berry_capsule");
-  e.create("sunlit_cobblemon:uncharged_battery").texture("sunlit_cobblemon:item/uncharged_battery");
+  // Smoothies
+  e.create("sunlit_cobblemon:berry_smoothie")
+    .texture("sunlit_cobblemon:item/berry_smoothie")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(1);
+      food.fastToEat(true);
+    })
+    .useAnimation("drink");
+  e.create("sunlit_cobblemon:super_berry_smoothie")
+    .texture("sunlit_cobblemon:item/super_berry_smoothie")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(1);
+      food.fastToEat(true);
+    })
+    .useAnimation("drink");
+  e.create("sunlit_cobblemon:hyper_berry_smoothie")
+    .texture("sunlit_cobblemon:item/hyper_berry_smoothie")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(1);
+      food.fastToEat(true);
+    })
+    .useAnimation("drink");
+  e.create("sunlit_cobblemon:max_berry_smoothie")
+    .texture("sunlit_cobblemon:item/max_berry_smoothie")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(1);
+      food.fastToEat(true);
+    })
+    .useAnimation("drink");
+  // Misc
+  e.create("sunlit_cobblemon:berry_capsule").texture(
+    "sunlit_cobblemon:item/berry_capsule"
+  );
+  e.create("sunlit_cobblemon:uncharged_battery").texture(
+    "sunlit_cobblemon:item/uncharged_battery"
+  );
   e.create("sunlit_cobblemon:poke_genes")
     .texture("sunlit_cobblemon:item/poke_genes")
     .displayName("Poké Genes");
-  e.create("sunlit_cobblemon:fairy_heart").texture("sunlit_cobblemon:item/fairy_heart");
-  e.create("sunlit_cobblemon:prismatic_ice")
-  e.create("sunlit_cobblemon:pixie_ice")
-    .texture("sunlit_cobblemon:item/pixie_ice")
-    .displayName("Pixie of Ice");
+  e.create("sunlit_cobblemon:fairy_heart").texture(
+    "sunlit_cobblemon:item/fairy_heart"
+  );
+  e.create("sunlit_cobblemon:star_pixie").texture(
+    "sunlit_cobblemon:item/star_pixie"
+  );
+  e.create("sunlit_cobblemon:blazing_stone");
+  e.create("sunlit_cobblemon:endless_battery");
+  e.create("sunlit_cobblemon:tabula_rasa");
+  e.create("sunlit_cobblemon:prismatic_ice");
+  e.create("sunlit_cobblemon:unbreakable_cog");
 
   global.cobblemonPreserves.forEach((jar) => {
     if (jar.item.includes("sunlit_cobblemon")) {
@@ -62,7 +105,9 @@ StartupEvents.registry("item", (e) => {
     { item: "sunlit_cobblemon:dried_legendary_cobbleberry", hex: 0xfcc112 },
   ];
   global.cobblemonDehydrated.forEach((item) => {
-    const itemHex = cobblemonDehydratorMapping.find((val) => val.item === item.item)?.hex;
+    const itemHex = cobblemonDehydratorMapping.find(
+      (val) => val.item === item.item
+    )?.hex;
     e.create(item.item)
       .texture(`society:item/dried_fruit`)
       .color(0, itemHex)
@@ -71,5 +116,12 @@ StartupEvents.registry("item", (e) => {
         food.saturation(0.5);
         food.fastToEat(true);
       });
+  });
+  // Pristine gems
+  global.cobbleTypeGems.forEach((gem) => {
+    e.create(`sunlit_cobblemon:pristine_${gem.item.path}`)
+      .texture(`cobblemon:item/type_gem/${gem.item.path}`)
+      .glow(true)
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 });

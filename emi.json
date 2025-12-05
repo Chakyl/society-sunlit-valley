@@ -1,17 +1,99 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": "item:sunlit_cobblemon:uncharged_battery",
+      "recipe": "minecraft:kjs/sunlit_cobblemon_uncharged_battery"
+    },
+    {
+      "stack": "item:cobblemon:potion",
+      "recipe": "emi:brewing/forge/cobblemon/medicinal_brew/cobblemon/oran_berry/cobblemon/potion"
+    },
+    {
+      "stack": "item:cobblemon:super_potion"
+    },
+    {
+      "stack": "item:cobblemon:hyper_potion"
+    },
+    {
+      "stack": "item:cobblemon:max_potion"
+    }
+  ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "sunlit_cobblemon:star_pixie",
+      "nbt": "{type:\"ice\"}",
+      "amount": 61
+    },
+    {
+      "type": "item",
+      "id": "sunlit_cobblemon:unbreakable_cog",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:amulet_of_light",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:source_gem",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "sunlit_cobblemon:fairy_heart",
+      "amount": 60
+    },
+    "item:sunlit_cobblemon:endless_battery",
+    "item:sunlit_cobblemon:blazing_stone",
+    "item:cobblemon:cell_battery",
+    "item:sunlit_cobblemon:tabula_rasa",
+    "item:society:barn_bed",
+    {
+      "type": "item",
+      "id": "society:wheel_of_adaptation",
+      "amount": 63
+    },
+    "item:sunlit_cobblemon:max_berry_smoothie",
+    "item:sunlit_cobblemon:hyper_berry_smoothie",
+    "item:sunlit_cobblemon:super_berry_smoothie",
+    "item:cobblemon:potion",
+    "item:sunlit_cobblemon:berry_smoothie",
+    "item:cobblemon:super_potion",
+    "item:cobblemon:hyper_potion",
+    "item:cobblemon:max_potion",
+    "item:society:earth_crystal",
+    "item:society:ancient_juice",
+    "item:fantasyfurniture:decorations/fairy_lights_1",
+    "item:society:friendship_necklace",
+    "item:sunlit_cobblemon:uncharged_battery",
+    {
+      "type": "item",
+      "id": "splendid_slimes:plort",
+      "nbt": "{plort:{id:\"splendid_slimes:sparkcat\"}}",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:battery",
+      "amount": 4
+    },
+    "item:sunlit_cobblemon:dried_legendary_cobbleberry",
+    "item:sunlit_cobblemon:dried_rare_cobbleberry",
+    "item:sunlit_cobblemon:dried_common_cobbleberry",
+    "item:sunlit_cobblemon:trainer_podium",
+    "item:sunlit_cobblemon:silph_scope",
+    "item:sunlit_cobblemon:berry_capsule",
+    "item:sunlit_cobblemon:prismatic_ice",
+    "item:cobblemon:ice_gem",
+    "item:cobblemon:normal_gem",
+    "item:cobblemon:grass_gem",
     "item:cobblemon:medicinal_brew",
     {
       "type": "fluid",
       "id": "create_klinks_n_klangs:liquid_medicinal_brew",
       "amount": 250
-    },
-    "item:cobblemon:potion",
-    {
-      "type": "item",
-      "id": "cobblemon:super_potion",
-      "amount": 64
     },
     {
       "type": "fluid",
@@ -20,44 +102,25 @@
     },
     "item:refinedstorage:cover{Item:{Count:1b,id:\"cluttered:halloween_wallpaper\"}}",
     "item:minecraft:birch_log",
-    "item:unimplemented_items:power_weight",
-    "item:unimplemented_items:repel",
-    "item:unimplemented_items:bottle_cap_atk",
-    "item:unimplemented_items:ability_patch",
-    "item:unimplemented_items:bottle_cap_hp",
-    "item:unimplemented_items:bottle_cap_spd",
-    "item:unimplemented_items:bottle_cap_sd",
-    "item:unimplemented_items:bottle_cap_sa",
-    "item:unimplemented_items:bottle_cap_def",
-    "item:unimplemented_items:bottle_cap",
-    "item:unimplemented_items:dry_root",
-    "item:unimplemented_items:potion",
     "item:refinedstorage:cover{Item:{Count:1b,id:\"candlelight:warped_chair\"}}",
     "item:twigs:white_packed_silt",
     "item:farmersdelight:cabbage_seeds",
-    "item:society:barn_bed",
-    "item:sunlit_cobblemon:prismatic_ice",
     "item:cobblemon:yache_berry",
     "item:cobblemon:pomeg_berry",
     "item:cobble_workers:gardening_station",
-    "item:sunlit_cobblemon:pixie_ice",
     "item:society:beemonican_seal",
     {
       "type": "item",
       "id": "quark:diamond_heart",
       "amount": 64
     },
-    "item:society:wheel_of_adaptation",
     "item:sunlit_cobblemon:poke_genes",
     "item:cobblemon:full_restore",
-    "item:cobblemon:max_potion",
-    "item:cobblemon:hyper_potion",
     {
       "type": "item",
       "id": "society:starfruit_juice",
       "amount": 64
     },
-    "item:society:ancient_juice",
     "item:buzzier_bees:honey_lamp",
     "item:create:honeyed_apple",
     "item:cobblemon:silver_powder",
@@ -87,7 +150,6 @@
     "item:cobblemon:net_ball",
     "item:cobblemon:poke_ball",
     "item:cobblemon:pc",
-    "item:sunlit_cobblemon:trainer_podium",
     "#item:cobblemon:held/is_held_item",
     "item:cobblemon:fairy_feather",
     "item:cobblemon:green_mint_seeds",
@@ -110,10 +172,7 @@
       "amount": 18
     },
     "item:cobblemon:ancient_citrine_ball",
-    "item:sunlit_cobblemon:dried_legendary_cobbleberry",
-    "item:sunlit_cobblemon:dried_rare_cobbleberry",
     "item:sunlit_cobblemon:dried_uncommon_cobbleberry",
-    "item:sunlit_cobblemon:dried_common_cobbleberry",
     "item:society:dried_crystalberry",
     "item:society:dried_wild_berries",
     "item:society:recycling_machine",
@@ -169,14 +228,12 @@
     "item:cobblemon:azure_ball",
     "item:cobblemon:verdant_ball",
     "item:cobblemon:roseate_ball",
-    "item:sunlit_cobblemon:silph_scope",
     {
       "type": "item",
       "id": "society:aged_ancient_cider",
       "amount": 64
     },
     "item:minecraft:mutton",
-    "item:society:friendship_necklace",
     "item:cobblemon:pasture",
     "item:cobblemon:ancient_poke_ball",
     "item:minecraft:blackstone",
@@ -194,7 +251,6 @@
     "item:minecraft:cod",
     "item:minecraft:acacia_sapling",
     "item:etcetera:raw_bismuth",
-    "item:society:battery",
     "item:atmospheric:aspen_sapling",
     "item:society:smoked_tambaqui",
     "item:society:pickled_broccoli",
@@ -250,7 +306,6 @@
     "item:betterarcheology:villager_fossil_head",
     "item:betterarcheology:villager_fossil_body",
     "item:cobblemon:jaw_fossil",
-    "item:sunlit_cobblemon:berry_capsule",
     "item:cobblemon:leaf_stone",
     "item:society:yard_work_yearly",
     "item:simpletms:tr_rocksmash",
@@ -266,7 +321,6 @@
     "item:fightorflight:oran_lucky_egg",
     "item:society:cornucopia",
     "item:simpletms:tm_blank",
-    "item:sunlit_cobblemon:fairy_heart",
     "item:cobblemon:dusk_stone",
     {
       "type": "item",
@@ -388,8 +442,6 @@
     "item:society:jade",
     "item:create:precision_mechanism",
     "item:windswept:holly_wreath",
-    "item:cobblemon:cell_battery",
-    "item:sunlit_cobblemon:uncharged_battery",
     "item:create_klinks_n_klangs:unpainted_repeat_ball",
     "item:create:pulse_repeater",
     "item:oreganized:electrum_ingot",
@@ -410,7 +462,6 @@
     "item:torchmaster:frozen_pearl",
     "item:create_klinks_n_klangs:unpainted_moon_ball",
     "item:relics:rage_glove{abilities:{phlebotomy:{points:0,stats:{attack_speed:0.00638d,heal:1.9E-4d,movement_speed:0.01466d}},rage:{points:0,stats:{dealt_damage:0.06739d,duration:3.18902d,incoming_damage:0.03754d}},spurt:{points:0,stats:{cooldown:16.64931d,damage:0.1911d,distance:7.40015d}}}}",
-    "item:society:earth_crystal",
     "item:minecraft:heart_pottery_sherd",
     "item:simplehats:floatinghearts",
     "item:candlelight:hearth",
@@ -959,7 +1010,6 @@
     "item:rottencreatures:corrupted_wart",
     "item:rottencreatures:magma_rotten_flesh",
     "item:cobblemon:poison_gem",
-    "item:cobblemon:normal_gem",
     "item:nethervinery:netherite_nectar{EffectAmplifier:0,EffectDuration:1800,Year:2}",
     {
       "type": "item",
@@ -1735,11 +1785,14 @@
       "type": "item",
       "id": "cobblemon:green_apricorn_seed",
       "amount": 64
-    },
-    "item:cobblemon:blue_apricorn_seed",
-    "item:twigs:polished_basalt_bricks"
+    }
   ],
   "craft_history": [
+    "minecraft:kjs/sunlit_cobblemon_star_pixie_5",
+    "minecraft:kjs/sunlit_cobblemon_star_pixie_3",
+    "minecraft:kjs/sunlit_cobblemon_star_pixie_2",
+    "minecraft:kjs/sunlit_cobblemon_star_pixie",
+    "minecraft:kjs/sunlit_cobblemon_uncharged_battery",
     "minecraft:barrel",
     "quark:tweaks/crafting/utility/misc/easy_hopper",
     "oreganized:lead_block",
@@ -1759,7 +1812,6 @@
     "meadow:fire_log",
     "minecraft:kjs/society_cheese_press",
     "cobblemon:dusk_ball",
-    "minecraft:kjs/sunlit_cobblemon_uncharged_battery",
     "create:crafting/materials/rose_quartz",
     "minecraft:kjs/society_spark_gro_2",
     "cobblemon:net_ball",

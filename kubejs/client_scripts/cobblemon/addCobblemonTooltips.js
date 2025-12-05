@@ -6,6 +6,9 @@ ItemEvents.tooltip((tooltip) => {
   global.cobbleGeology.forEach((item) => {
     global.addPriceTooltip(tooltip, item, "gem");
   });
+  global.cobblePristineTypeGems.forEach((item) => {
+    global.addPriceTooltip(tooltip, item, "gem");
+  });
   global.cobblemonCooking.forEach((item) => {
     global.addPriceTooltip(tooltip, item, "crop");
   });
@@ -23,7 +26,10 @@ ItemEvents.tooltip((tooltip) => {
     "sunlit_cobblemon:silph_scope",
     Text.green("Allows you to enter the World of Pokémon!")
   );
-  tooltip.add("sunlit_cobblemon:silph_scope", Text.gold("Right click to equip!"));
+  tooltip.add(
+    "sunlit_cobblemon:silph_scope",
+    Text.gold("Right click to equip!")
+  );
   tooltip.add(
     "sunlit_cobblemon:poke_bobber",
     Text.gold("Fishes up a common Pokémon with every catch")
@@ -41,23 +47,76 @@ ItemEvents.tooltip((tooltip) => {
     Text.gold("Fishes up an epic Pokémon with every catch")
   );
   // Legendaries
-  tooltip.add(
-    "sunlit_cobblemon:pixie_ice",
-    Text.aqua("Give to a Mammutilation to summon Chien-Pao")
-  );
+
+  tooltip.addAdvanced("sunlit_cobblemon:star_pixie", (item, advanced, text) => {
+    if (item.nbt && item.nbt.getString("type")) {
+      let data = global.cobblemonLegendaryMap.get(
+        `${item.nbt.getString("type")}`
+      );
+      if (data) {
+        if (tooltip.shift) {
+          data.legendaries.forEach((legendary, index) => {
+            text.add(
+              index + 1,
+              [
+                Text.gray(
+                  `Summons §${data.color}${legendary.pokemonName} §7from a §${data.color}`
+                ),
+                Text.translate(
+                  `entity.${legendary.entity.namespace}.${legendary.entity.path}`
+                ).gold(),
+              ]
+            );
+          });
+        } else {
+          text.add(1, [
+            `§7Pixe Type: §${data.color}${global.formatName(
+              `${item.nbt.getString("type")}`
+            )}`,
+          ]);
+          text.add(2, [
+            Text.darkGray("Hold ["),
+            Text.gray("Shift"),
+            Text.darkGray("] to view Pokémon that can be summoned"),
+          ]);
+        }
+      }
+    }
+  });
   // TM Packs
   tooltip.add("sunlit_cobblemon:tm_pack", Text.gray("Right click to open"));
   tooltip.add("sunlit_cobblemon:tm_pack", Text.green("12% chance for a TM"));
 
-  tooltip.add("sunlit_cobblemon:greater_tm_pack", Text.gray("Right click to open"));
-  tooltip.add("sunlit_cobblemon:greater_tm_pack", Text.green("20% chance for a TM"));
-  tooltip.add("sunlit_cobblemon:greater_tm_pack", Text.green("At least one TM guaranteed!"));
+  tooltip.add(
+    "sunlit_cobblemon:greater_tm_pack",
+    Text.gray("Right click to open")
+  );
+  tooltip.add(
+    "sunlit_cobblemon:greater_tm_pack",
+    Text.green("20% chance for a TM")
+  );
+  tooltip.add(
+    "sunlit_cobblemon:greater_tm_pack",
+    Text.green("At least one TM guaranteed!")
+  );
 
-  tooltip.add("sunlit_cobblemon:prismatic_tm_pack", Text.gray("Right click to open"));
-  tooltip.add("sunlit_cobblemon:prismatic_tm_pack", Text.green("Only contains TMs"));
+  tooltip.add(
+    "sunlit_cobblemon:prismatic_tm_pack",
+    Text.gray("Right click to open")
+  );
+  tooltip.add(
+    "sunlit_cobblemon:prismatic_tm_pack",
+    Text.green("Only contains TMs")
+  );
 
-  tooltip.add("sunlit_cobblemon:berry_capsule", Text.gray("Right click to open"));
-  tooltip.add("sunlit_cobblemon:berry_capsule", Text.green("Contains common berries"));
+  tooltip.add(
+    "sunlit_cobblemon:berry_capsule",
+    Text.gray("Right click to open")
+  );
+  tooltip.add(
+    "sunlit_cobblemon:berry_capsule",
+    Text.green("Contains common berries")
+  );
 
   tooltip.add(
     "cobblemon:ability_capsule",
@@ -142,7 +201,10 @@ ItemEvents.tooltip((tooltip) => {
       item: "blunder_policy",
       desc: "Increases the holder's Speed by 2 stages if the holder's move misses.",
     },
-    { item: "bright_powder", desc: "Reduces the accuracy of enemy pokemon's moves by 10%." },
+    {
+      item: "bright_powder",
+      desc: "Reduces the accuracy of enemy Pokémon's moves by 10%.",
+    },
     {
       item: "cell_battery",
       desc: "Raises the holder's Attack by one stage when hit by a damaging Electric-type move.",
@@ -164,7 +226,10 @@ ItemEvents.tooltip((tooltip) => {
       item: "covert_cloak",
       desc: "Protects the holder from additional effects from other Pokémon.",
     },
-    { item: "damp_rock", desc: "Extends the duration of rain from 5 to 8 turns." },
+    {
+      item: "damp_rock",
+      desc: "Extends the duration of rain from 5 to 8 turns.",
+    },
     { item: "deep_sea_scale", desc: "Boosts Clamperl's Sp. Def stat." },
     { item: "deep_sea_tooth", desc: "Boosts Clamperl's Sp. Atk stat." },
     {
@@ -202,23 +267,38 @@ ItemEvents.tooltip((tooltip) => {
       item: "focus_sash",
       desc: "At full HP, guarantees the holder survives a hit that would KO it, leaving it with 1 HP.",
     },
-    { item: "heat_rock", desc: "Extends the duration of harsh sunlight from 5 to 8 turns." },
+    {
+      item: "heat_rock",
+      desc: "Extends the duration of harsh sunlight from 5 to 8 turns.",
+    },
     {
       item: "heavy_duty_boots",
       desc: "Prevents the effects of traps set on the battlefield.",
     },
-    { item: "icy_rock", desc: "Extends the duration of hail or snow from 5 to 8 turns." },
-    { item: "iron_ball", desc: "Reduces the holder's Speed by 50% and grounds the holder." },
+    {
+      item: "icy_rock",
+      desc: "Extends the duration of hail or snow from 5 to 8 turns.",
+    },
+    {
+      item: "iron_ball",
+      desc: "Reduces the holder's Speed by 50% and grounds the holder.",
+    },
     {
       item: "kings_rock",
       desc: "When the holder successfully inflicts damage, the target may also flinch.",
     },
-    { item: "leftovers", desc: "Gradually restores the holder's HP throughout a battle." },
+    {
+      item: "leftovers",
+      desc: "Gradually restores the holder's HP throughout a battle.",
+    },
     {
       item: "life_orb",
       desc: "Boosts the power of the holder's moves, but causes recoil damage.",
     },
-    { item: "light_ball", desc: "Doubles the Attack and Sp. Atk of Pikachu when held." },
+    {
+      item: "light_ball",
+      desc: "Doubles the Attack and Sp. Atk of Pikachu when held.",
+    },
     {
       item: "light_clay",
       desc: "Protective moves like Light Screen and Reflect will be effective longer.",
@@ -235,17 +315,26 @@ ItemEvents.tooltip((tooltip) => {
       item: "medicinal_leek",
       desc: "Boosts the critical hit ratio of a Farfetch'd or Sirfetch'd that holds it by two stages.",
     },
-    { item: "mental_herb", desc: "Grounds the holder, and halves their speed." },
+    {
+      item: "mental_herb",
+      desc: "Grounds the holder, and halves their speed.",
+    },
     {
       item: "metal_powder",
       desc: "Raises and untransformed Ditto's Defense and Special Defense by 50%.",
     },
-    { item: "metronome", desc: "Boosts the power of moves used consecutively." },
+    {
+      item: "metronome",
+      desc: "Boosts the power of moves used consecutively.",
+    },
     {
       item: "mirror_herb",
       desc: "Allows the holder to mirror an opponent's stat increases to boost its own stats. Consumed after use.",
     },
-    { item: "muscle_band", desc: "Boosts the power of the holder's physical moves." },
+    {
+      item: "muscle_band",
+      desc: "Boosts the power of the holder's physical moves.",
+    },
     {
       item: "power_herb",
       desc: "Allows the holder to immediately use a move that normally requires a change of turn to charge. Consumed after use.",
@@ -260,7 +349,10 @@ ItemEvents.tooltip((tooltip) => {
     },
     { item: "quick_claw", desc: "Grants the holder a chance of going first." },
     { item: "quick_powder", desc: "Doubles an untransformed Ditto's speed." },
-    { item: "razor_claw", desc: "Boosts the critical-hit ratio of the holder's moves." },
+    {
+      item: "razor_claw",
+      desc: "Boosts the critical-hit ratio of the holder's moves.",
+    },
     {
       item: "razor_fang",
       desc: "When the holder successfully inflicts damage, the target may also flinch.",
@@ -283,13 +375,19 @@ ItemEvents.tooltip((tooltip) => {
       desc: "Grants the holder immunity to powder and spore moves and damage from weather.",
     },
     { item: "scope_lens", desc: "Boosts the holder's critical hit ratio." },
-    { item: "shed_shell", desc: "Allows the holder to switch out in any situation." },
+    {
+      item: "shed_shell",
+      desc: "Allows the holder to switch out in any situation.",
+    },
     {
       item: "shell_bell",
       desc: "Restores 1/8 HP to holder based on damage dealt by moves to opponents.",
     },
     { item: "smoke_ball", desc: "Has no effect." },
-    { item: "smooth_rock", desc: "Extends the duration of sandstorms from 5 to 8 turns." },
+    {
+      item: "smooth_rock",
+      desc: "Extends the duration of sandstorms from 5 to 8 turns.",
+    },
     {
       item: "soothe_bell",
       desc: "No battle effect. Increases the holder's friendship earned by 50%.",
@@ -315,39 +413,108 @@ ItemEvents.tooltip((tooltip) => {
       item: "weakness_policy",
       desc: "Raises the holder's Attack and Sp. Atk by 2 stages when holder is hit by a super effective move.",
     },
-    { item: "white_herb", desc: "Restores any lower stat in battle. Consumed after use." },
+    {
+      item: "white_herb",
+      desc: "Restores any lower stat in battle. Consumed after use.",
+    },
     { item: "wide_lens", desc: "Boosts the holder's Accuracy." },
-    { item: "wise_glasses", desc: "Boosts the power of the holder's special moves." },
+    {
+      item: "wise_glasses",
+      desc: "Boosts the power of the holder's special moves.",
+    },
     { item: "zoom_lens", desc: "Boosts the holder's Accuracy." },
-    { item: "black_belt", desc: "Boosts the power of the holder's Fighting-type moves." },
-    { item: "black_glasses", desc: "Boosts the power of the holder's Dark-type moves." },
-    { item: "charcoal_stick", desc: "Boosts the power of the holder's Fire-type moves." },
-    { item: "dragon_fang", desc: "Boosts the power of the holder's Dragon-type moves." },
-    { item: "hard_stone", desc: "Boosts the power of the holder's Rock-type moves." },
-    { item: "magnet", desc: "Boosts the power of the holder's Electric-type moves." },
-    { item: "metal_coat", desc: "Boosts the power of the holder's Steel-type moves." },
-    { item: "miracle_seed", desc: "Boosts the power of the holder's Grass-type moves." },
-    { item: "mystic_water", desc: "Boosts the power of the holder's Water-type moves." },
-    { item: "never_melt_ice", desc: "Boosts the power of the holder's Ice-type moves." },
-    { item: "poison_barb", desc: "Boosts the power of the holder's Poison-type moves." },
-    { item: "sharp_beak", desc: "Boosts the power of the holder's Flying-type moves." },
-    { item: "silk_scarf", desc: "Boosts the power of the holder's Normal-type moves." },
-    { item: "silver_powder", desc: "Boosts the power of the holder's Bug-type moves." },
-    { item: "soft_sand", desc: "Boosts the power of the holder's Ground-type moves." },
-    { item: "spell_tag", desc: "Boosts the power of the holder's Ghost-type moves." },
-    { item: "twisted_spoon", desc: "Boosts the power of the holder's Psychic-type moves." },
-    { item: "power_anklet", desc: "Gives extra Speed EVs when the holder participates in battle" },
+    {
+      item: "black_belt",
+      desc: "Boosts the power of the holder's Fighting-type moves.",
+    },
+    {
+      item: "black_glasses",
+      desc: "Boosts the power of the holder's Dark-type moves.",
+    },
+    {
+      item: "charcoal_stick",
+      desc: "Boosts the power of the holder's Fire-type moves.",
+    },
+    {
+      item: "dragon_fang",
+      desc: "Boosts the power of the holder's Dragon-type moves.",
+    },
+    {
+      item: "hard_stone",
+      desc: "Boosts the power of the holder's Rock-type moves.",
+    },
+    {
+      item: "magnet",
+      desc: "Boosts the power of the holder's Electric-type moves.",
+    },
+    {
+      item: "metal_coat",
+      desc: "Boosts the power of the holder's Steel-type moves.",
+    },
+    {
+      item: "miracle_seed",
+      desc: "Boosts the power of the holder's Grass-type moves.",
+    },
+    {
+      item: "mystic_water",
+      desc: "Boosts the power of the holder's Water-type moves.",
+    },
+    {
+      item: "never_melt_ice",
+      desc: "Boosts the power of the holder's Ice-type moves.",
+    },
+    {
+      item: "poison_barb",
+      desc: "Boosts the power of the holder's Poison-type moves.",
+    },
+    {
+      item: "sharp_beak",
+      desc: "Boosts the power of the holder's Flying-type moves.",
+    },
+    {
+      item: "silk_scarf",
+      desc: "Boosts the power of the holder's Normal-type moves.",
+    },
+    {
+      item: "silver_powder",
+      desc: "Boosts the power of the holder's Bug-type moves.",
+    },
+    {
+      item: "soft_sand",
+      desc: "Boosts the power of the holder's Ground-type moves.",
+    },
+    {
+      item: "spell_tag",
+      desc: "Boosts the power of the holder's Ghost-type moves.",
+    },
+    {
+      item: "twisted_spoon",
+      desc: "Boosts the power of the holder's Psychic-type moves.",
+    },
+    {
+      item: "power_anklet",
+      desc: "Gives extra Speed EVs when the holder participates in battle",
+    },
     {
       item: "power_band",
       desc: "Gives extra Special Defence EVs when the holder participates in battle",
     },
-    { item: "power_belt", desc: "Gives extra Defense EVs when the holder participates in battle" },
-    { item: "power_bracer", desc: "Gives extra Attack EVs when the holder participates in battle" },
+    {
+      item: "power_belt",
+      desc: "Gives extra Defense EVs when the holder participates in battle",
+    },
+    {
+      item: "power_bracer",
+      desc: "Gives extra Attack EVs when the holder participates in battle",
+    },
     {
       item: "power_lens",
       desc: "Gives extra Special Attack EVs when the holder participates in battle",
     },
-    { item: "power_weight", desc: "Gives extra HP EVs when the holder participates in battle" },
+    {
+      item: "power_weight",
+      desc: "Gives extra HP EVs when the holder participates in battle",
+    },
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
     tooltip.add(`cobblemon:${item.item}`, Text.gold("Held Item"));
@@ -356,8 +523,14 @@ ItemEvents.tooltip((tooltip) => {
   [
     { item: "auspicious_armor", desc: "Evolves Charcadet into Armarouge" },
     { item: "black_augurite", desc: "Evolves Scyther into Kleavor" },
-    { item: "chipped_pot", desc: "Evolves Antique Form Sinistea into Antique Form Polteageist" },
-    { item: "cracked_pot", desc: "Evolves Phony Form Sinistea into Phony Form Polteageist" },
+    {
+      item: "chipped_pot",
+      desc: "Evolves Antique Form Sinistea into Antique Form Polteageist",
+    },
+    {
+      item: "cracked_pot",
+      desc: "Evolves Phony Form Sinistea into Phony Form Polteageist",
+    },
     {
       item: "deep_sea_scale",
       desc: "Evolves Clamperl into Gorebyss",
@@ -383,8 +556,14 @@ ItemEvents.tooltip((tooltip) => {
       desc: "Evolves Electabuzz into Electivire",
       crit: "Requires Trade or Link Cable",
     },
-    { item: "galarica_cuff", desc: "Evolves Galarian Slowpoke into Galarian Slowbro" },
-    { item: "galarica_wreath", desc: "Evolves Galarian Slowpoke into Galarian Slowking" },
+    {
+      item: "galarica_cuff",
+      desc: "Evolves Galarian Slowpoke into Galarian Slowbro",
+    },
+    {
+      item: "galarica_wreath",
+      desc: "Evolves Galarian Slowpoke into Galarian Slowking",
+    },
     {
       item: "kings_rock",
       desc: "Evolves Poliwhirl into Politoed and Slowpoke into Slowking",
@@ -443,8 +622,14 @@ ItemEvents.tooltip((tooltip) => {
       desc: "Evolves into Spritzee into Aromatisse",
       crit: "Requires Trade or Link Cable",
     },
-    { item: "scroll_of_darkness", desc: "Evolves Kubfu into Single Strike Style Urshifu" },
-    { item: "scroll_of_waters", desc: "Evolves Kubfu into Rapid Strike Style Urshifu" },
+    {
+      item: "scroll_of_darkness",
+      desc: "Evolves Kubfu into Single Strike Style Urshifu",
+    },
+    {
+      item: "scroll_of_waters",
+      desc: "Evolves Kubfu into Rapid Strike Style Urshifu",
+    },
     { item: "shell_helmet", desc: "Evolves Karrablast into Escavalier" },
     {
       item: "strawberry_sweet",
@@ -500,18 +685,28 @@ ItemEvents.tooltip((tooltip) => {
     },
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
-    if (item.crit) tooltip.add(`cobblemon:${item.item}`, Text.darkPurple(item.crit));
+    if (item.crit)
+      tooltip.add(`cobblemon:${item.item}`, Text.darkPurple(item.crit));
     tooltip.add(`cobblemon:${item.item}`, Text.lightPurple("Evolution Item"));
   });
   [
-    { item: "calcium", desc: "Adds 10 Special Attack EVs to the target Pokémon" },
+    {
+      item: "calcium",
+      desc: "Adds 10 Special Attack EVs to the target Pokémon",
+    },
     { item: "carbos", desc: "Adds 10 Speed EVs to the target Pokémon" },
     { item: "hp_up", desc: "Adds 10 HP EVs to the target Pokémon" },
     { item: "iron", desc: "Adds 10 Defense EVs to the target Pokémon" },
     { item: "protein", desc: "Adds 10 Attack EVs to the target Pokémon" },
     { item: "zinc", desc: "Adds 10 Special Defense EVs to the target Pokémon" },
-    { item: "pp_up", desc: "Raises the PP of a selected move by 20% of the move's base PP" },
-    { item: "pp_max", desc: "Raises the PP of a selected move to 160% of the move's base PP" },
+    {
+      item: "pp_up",
+      desc: "Raises the PP of a selected move by 20% of the move's base PP",
+    },
+    {
+      item: "pp_max",
+      desc: "Raises the PP of a selected move to 160% of the move's base PP",
+    },
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item.item}`, Text.gray(item.desc));
     tooltip.add(`cobblemon:${item.item}`, Text.aqua("Vitamin"));

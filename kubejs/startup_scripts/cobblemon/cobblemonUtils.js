@@ -1,6 +1,8 @@
 // priority: -21
 console.info("[SOCIETY-S-COBBLEMON] cobblemonUtils.js loaded");
-const $CobblemonAPI = Java.loadClass("com.cobblemon.mod.common.Cobblemon").INSTANCE;
+const $CobblemonAPI = Java.loadClass(
+  "com.cobblemon.mod.common.Cobblemon"
+).INSTANCE;
 
 global.getPlayerParty = (player) => {
   return $CobblemonAPI.getStorage().getParty(player.uuid);
@@ -207,7 +209,7 @@ const trainerBuckets = new Map([
       "ruin_mamoac_brandon_025a",
       "ruin_mamoac_foster_0246",
       "painter_daisy_020e",
-      "painter_rayna_0233"
+      "painter_rayna_0233",
     ],
   ],
   [
@@ -253,7 +255,7 @@ const trainerBuckets = new Map([
       "psychic_jaclyn_0205",
       "ranger_jackson_0254",
       "camper_riley_026a",
-      "black_belt_hugh_02b9"
+      "black_belt_hugh_02b9",
     ],
   ],
   [
@@ -288,7 +290,7 @@ const trainerBuckets = new Map([
       "pokemaniac_mark_0284",
       "crush_girl_tanya_02b5",
       "psychic_tyron_0119",
-      "psychic_johan_0118"
+      "psychic_johan_0118",
     ],
   ],
   [
@@ -346,7 +348,7 @@ const trainerBuckets = new Map([
       "picnicker_irene_01d9",
       "juggler_kayden_0124",
       "juggler_kirk_0120",
-      "picnicker_irene_01d9"
+      "picnicker_irene_01d9",
     ],
   ],
   [
@@ -451,7 +453,7 @@ const trainerBuckets = new Map([
       "lass_ann_007e",
       "crush_girl_tanya_0228",
       "ranger_beth_0255",
-      "black_belt_hugh_022a"
+      "black_belt_hugh_022a",
     ],
   ],
   [
@@ -473,7 +475,7 @@ global.getRandomTrainer = (levelBucket) => {
   const trainerBucket = trainerBuckets.get(levelBucket);
   const trainer = trainerBucket[rnd(0, trainerBucket.length)];
   console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
-  return trainerBucket[rnd(0, trainerBucket.length -1)];
+  return trainerBucket[rnd(0, trainerBucket.length - 1)];
 };
 
 global.getPlayerPodiumLevelTier = (player) =>
@@ -500,3 +502,101 @@ global.hasScope = (entity) => {
     .toString()
     .includes("sunlit_cobblemon:silph_scope");
 };
+
+global.cobblemonLegendaryMap = new Map([
+  ["fighting", { color: "4", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["psychic", { color: "d", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["poison", { color: "5", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["dragon", { color: "1", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["ghost", { color: "5", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["dark", { color: "8", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["ground", { color: "c", legendaries: [{ entity: "", pokemon: "" }] }],
+  [
+    "fire",
+    {
+      color: "c",
+      legendaries: [
+        {
+          entity: "wildernature:flamingo",
+          pokemonName: "Moltres",
+          pokemonId: "moltres",
+          sound: "wildernature:flamingo_death",
+        },
+      ],
+    },
+  ],
+  ["fairy", { color: "d", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["water", { color: "9", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["flying", { color: "b", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["normal", { color: "f", legendaries: [{ entity: "", pokemon: "" }] }],
+  [
+    "rock",
+    {
+      color: "6",
+      legendaries: [
+        {
+          entity: "golemoverhaul:netherite_golem",
+          pokemonName: "Regirock",
+          pokemonId: "regirock",
+          sound: "golemoverhaul:netherite_golem_death",
+        },
+      ],
+    },
+  ],
+  [
+    "electric",
+    {
+      color: "e",
+      legendaries: [
+        {
+          entity: "wildernature:flamingo",
+          pokemonName: "Zapdos",
+          pokemonId: "zapdos",
+          sound: "wildernature:flamingo_death",
+        },
+      ],
+    },
+  ],
+  ["bug", { color: "2", legendaries: [{ entity: "", pokemon: "" }] }],
+  ["grass", { color: "a", legendaries: [{ entity: "", pokemon: "" }] }],
+  [
+    "ice",
+    {
+      color: "b",
+      legendaries: [
+        {
+          entity: "wildernature:flamingo",
+          pokemonName: "Articuno",
+          pokemonId: "articuno",
+          sound: "wildernature:flamingo_death",
+        },
+        {
+          entity: "golemoverhaul:netherite_golem",
+          pokemonName: "Regice",
+          pokemonId: "regice",
+          sound: "golemoverhaul:netherite_golem_death",
+        },
+        {
+          entity: "species:mammutilation",
+          pokemonName: "Chien-Pao",
+          pokemonId: "chienpao",
+          sound: "species:entity.mammutilation.mammutiful_howl",
+        },
+      ],
+    },
+  ],
+  [
+    "steel",
+    {
+      color: "7",
+      legendaries: [
+        {
+          entity: "golemoverhaul:netherite_golem",
+          pokemonName: "Registeel",
+          pokemonId: "registeel",
+          sound: "golemoverhaul:netherite_golem_death",
+        },
+      ],
+    },
+  ],
+]);
