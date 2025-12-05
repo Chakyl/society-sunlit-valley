@@ -2109,7 +2109,6 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "minecraft:obsidian", count: 16 },
-          { item: "nethervinery:obsidian_stem", count: 8 },
           { item: "minecraft:crying_obsidian", count: 4 },
         ],
       },

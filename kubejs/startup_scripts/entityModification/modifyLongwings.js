@@ -9,6 +9,7 @@ global.handleLongwings = (entity, item) => {
   let scannedBlocks = 0;
   let scannedFlowers = [];
   let stolenBlock;
+  if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] modifyLongwings.js");
   for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
     x + radius,
     y + radius,

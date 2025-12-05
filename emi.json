@@ -1,6 +1,22 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:create_mechanical_extruder:mechanical_extruder",
+    "item:society:double_aged_ancient_cider",
+    "item:society:double_aged_dewy_star",
+    "item:society:double_aged_beer_attunecore",
+    "item:society:double_aged_buffalo_cheese_block",
+    "item:society:double_aged_beer_london",
+    "item:society:espresso_machine",
+    "item:cluttered:willow_fence_gate",
+    "item:cluttered:kitchen_set_light_green_counter_outer_corner_right",
+    "item:cluttered:kitchen_set_light_green_counter_outer_corner_left",
+    "item:cluttered:kitchen_set_yellow_counter_outer_corner_left",
+    "item:cluttered:kitchen_set_yellow_counter_outer_corner_right",
+    "item:cluttered:lily_hills_tile",
+    "item:cluttered:sycamore_sapling",
+    "item:cluttered:willow_sapling",
+    "item:quark:seed_pouch",
     "item:minecraft:diamond",
     "item:whimsy_deco:gatcha_capsule",
     "item:vinery:loam_slab",
@@ -10,7 +26,6 @@
     "item:vintagedelight:pad_thai",
     "item:veggiesdelight:shakshouka",
     "item:veggiesdelight:broccoli_soup",
-    "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"veggiesdelight:broccoli_seeds\"}}",
     "item:veggiesdelight:pasta_with_broccoli",
     "item:create:blaze_cake",
     "item:beachparty:sunglasses{Damage:0}",
@@ -300,7 +315,11 @@
     "item:create:crushed_raw_lead",
     "item:bakery:iron_bench"
   ],
-  "craft_history": [],
+  "craft_history": [
+    "minecraft:light_green_outer_counter_left_recipe_1",
+    "minecraft:yellow_outer_counter_right_recipe_1",
+    "minecraft:light_green_outer_counter_right_recipe_1"
+  ],
   "recipe_defaults": {
     "added": [],
     "tags": {},

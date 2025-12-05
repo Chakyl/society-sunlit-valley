@@ -156,7 +156,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "rain_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -192,7 +192,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "snow_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.2,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -228,7 +228,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "dust_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "DURING_WEATHER",
       "precipitation": [
