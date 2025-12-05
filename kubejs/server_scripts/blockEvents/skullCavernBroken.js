@@ -13,15 +13,22 @@ const biomeAirTypeMap = new Map([
 ]);
 
 const scheduleFunction = (level, pos, server, rockType) => {
-    if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] skullCavernBroken.js - Regen Air");
+  if (global.susFunctionLogging)
+    console.log("[SOCIETY-SUSFN] skullCavernBroken.js - Regen Air");
   server.schedule(5, () => {
     let toggleBit =
       level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()]
         .toggleBit;
-    level.getBlock(pos).set("society:cavern_air", {
-      type: String(rockType),
-      chunkbit: toggleBit.toString(),
-    });
+    if (
+      ["minecraft:air", "minecraft:void_air", "minecraft:cave_air"].includes(
+        level.getBlock(pos).id
+      )
+    ) {
+      level.getBlock(pos).set("society:cavern_air", {
+        type: String(rockType),
+        chunkbit: toggleBit.toString(),
+      });
+    }
   });
 };
 BlockEvents.broken(
@@ -132,7 +139,8 @@ BlockEvents.broken(
 LevelEvents.beforeExplosion((e) => {
   const { x, y, z, size, level, server } = e;
   if (level.dimension === "society:skull_cavern") {
-    if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] skullCavernBroken.js - explosion");
+    if (global.susFunctionLogging)
+      console.log("[SOCIETY-SUSFN] skullCavernBroken.js - explosion");
     let range = Math.round(Math.floor((size * 1.3) / 0.225) * 0.5);
     let blocks = [];
 
