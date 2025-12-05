@@ -1,0 +1,17 @@
+{
+  "name": "흰머리오목눈이",
+  "category": "patchouli:pets",
+  "icon": "relics:elytra_booster",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)겉날개 부스터$(br)$(l)길들이기:$()$(br)씨앗$(br2)$(l)메모$()$(br)눈 덮인 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:shima_enaga",
+      "scale": 0.7,
+      "text": "난 뱁새가 아니라고!!!"
+    }
+  ]
+}

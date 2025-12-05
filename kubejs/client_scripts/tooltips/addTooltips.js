@@ -1246,7 +1246,12 @@ ItemEvents.tooltip((tooltip) => {
         ]);
         text.add(5, [Text.green("Right click with item to upgrade")]);
       } else {
-        text.add(1, [
+        text.add(
+          Text.red(
+            "Will be removed in 4.0 due to crashes and performance issues"
+          )
+        );
+        text.add(2, [
           Text.darkGray("Hold ["),
           Text.gray("Shift"),
           Text.darkGray("] to view upgrades"),
@@ -1384,6 +1389,19 @@ ItemEvents.tooltip((tooltip) => {
       "society:dewy_star",
     ],
     Text.red("Not placeable in Wine Racks")
+  );
+  // Temp: Dramatic Doors
+  tooltip.add(
+    [
+      "dramaticdoors:tall_create_andesite_door",
+      "dramaticdoors:tall_create_brass_door",
+      "dramaticdoors:tall_create_copper_door",
+      "dramaticdoors:tall_create_framed_glass_door",
+      "dramaticdoors:tall_create_train_door",
+    ],
+    Text.darkRed(
+      "Temporarily removed due to breaking worlds when on a Create Contraption"
+    )
   );
   tooltip.add(
     [

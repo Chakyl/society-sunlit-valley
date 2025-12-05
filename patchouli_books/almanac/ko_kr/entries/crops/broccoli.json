@@ -1,0 +1,26 @@
+{
+  "name": "브로콜리 🍂",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:broccoli",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 54$(li)🍂 §4가을$(li)씨앗 가격: 구매 불가$(li)수확량: 1$(li)성장 시간: 5일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "브로콜리 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:broccoli_crop[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

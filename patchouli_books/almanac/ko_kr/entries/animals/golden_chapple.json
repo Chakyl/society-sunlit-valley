@@ -1,0 +1,17 @@
+{
+  "name": "황금 채플",
+  "category": "patchouli:animals",
+  "icon": "minecraft:golden_apple",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 황금 사과$(li)드롭 아이템: 닭고기, 깃털$(br2)$(l)메모$()$(br)배고프거나 행복하지 않은 (호감도 2하트 미만) 채플은 사과를 낳지 않습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "etcetera:chapple{Type:golden}",
+      "scale": 0.8,
+      "text": "보루 잔해에서 발견 가능한 황금 에그플에서 부화하는 기묘한 종."
+    }
+  ]
+}

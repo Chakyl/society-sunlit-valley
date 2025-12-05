@@ -1,0 +1,19 @@
+{
+  "name": "뼈고기",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:bonefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 364$(li)차원: 네더$(li)생물군계: 네더 황무지"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:bonefish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "이 뜨겁고도 묵직한 감각."
+    }
+  ]
+}

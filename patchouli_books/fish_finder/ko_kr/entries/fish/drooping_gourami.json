@@ -1,0 +1,19 @@
+{
+  "name": "늘어진구라미",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_drooping_gourami",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 176$(li)§0🌼 §2봄§0$(li)수역: 바다$(li)날씨: 언제나$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:drooping_gourami",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.8,
+      "text": "흐늘흐늘 뚝뚝."
+    }
+  ]
+}

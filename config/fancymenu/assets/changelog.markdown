@@ -1,6 +1,6 @@
 ^^^
 ## The Sun Golems
-### v3.4.2
+### v3.4.3
 ^^^
 --- 
 - Added Sun Golems with a work in progress Creature chapter of the questbook
@@ -63,3 +63,27 @@
 - Fixed Bogged spawning above ground
 - Fixed Hay golem not constructing without shift+clicking fences
 - Fixed exploit
+
+## 3.4.3
+- Rework skull cavern regeneration (again) to prevent crashes but also work slower
+- Fixed new crash with building shop! No more crashes on this page I promise
+- Fixed Bogged spawning above ground
+- Fixed Hay golem not constructing without shift+clicking fences
+- Fixed exploit
+
+3.4.3
+- Added `ko_kr` translation (Thanks HexaKurumi!)
+- Added Bobby (configured at a lower render distance by default)
+- Increased Hay Golem activation time
+- Reduced rain particles and removed rain haze for lower end pcs
+- Marked Translocators for removal in 4.0
+- Temporarily removed Dramatic Doors Create compat due to world-bricking crash
+- Fixed Shakshouka and Pad Thai having incorrect recipes
+- Fixed bombs destroying Skull Cavern air
+- Fixed bombs destroying Skull Cavern Teleporter
+- Fix Hay Golem destroying High Quality Fertilizer
+- Fixed Enriched Bonemeal not being able to create Glowberries on vines for aesthetic purposes 
+- Fixed Obsidianfish requesting Obsidian Stems
+- Fixed a bunch of random typos
+- Fixed regeneration happening outside of the Skull Cavern
+- Fixed Gold Rushes being nuked in the Skull CAVERN

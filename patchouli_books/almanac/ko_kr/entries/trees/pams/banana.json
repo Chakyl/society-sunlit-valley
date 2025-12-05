@@ -1,0 +1,83 @@
+{
+    "name": "바나나나무 🔥",
+    "category": "patchouli:trees",
+    "icon": "pamhc2trees:banana_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🔥 §6여름§r $(li)가격: :coin: 512$(li)크기: 1x1$(li)결실:$(l:tree_crops/banana)바나나 8개$(/l)$(br2)$(l)메모$()$(li)시장에서 묘목을 구매할 수 있습니다."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "바나나나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:jungle_leaves",
+                    "L": "minecraft:jungle_leaves",
+                    "W": "minecraft:jungle_log[axis=y]",
+                    "F": "pamhc2trees:pambanana[age=7]"
+                },
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  L  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " LLL ",
+                        " LWL ",
+                        " LLL ",
+                        "     "
+                    ],
+                    [
+                        "LLLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        " FFF ",
+                        " FWF ",
+                        " FFF ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ]
+            }
+        }
+    ]
+}

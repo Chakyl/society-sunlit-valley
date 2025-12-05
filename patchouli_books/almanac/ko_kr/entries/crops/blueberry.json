@@ -1,0 +1,26 @@
+{
+  "name": "블루베리 🔥",
+  "category": "patchouli:crops",
+  "icon": "society:blueberry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)🔥 §6여름§r$(li)씨앗 가격: :coin: 4$(li)수확량: 3-4$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "블루베리 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "society:blueberry[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

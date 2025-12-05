@@ -1,0 +1,17 @@
+{
+  "name": "올빼미",
+  "category": "patchouli:pets",
+  "icon": "tanukidecor:owl_clock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)올빼미 시계$(br)$(l)길들이기:$()$(br)썩은 살점$(br2)$(l)메모$()$(br)숲 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:owl",
+      "scale": 0.7,
+      "text": "작은 동물들과 멀리 떨어뜨려 놓으세요..."
+    }
+  ]
+}

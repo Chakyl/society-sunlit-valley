@@ -1,0 +1,24 @@
+{
+    "name": "수평 줄",
+    "sortnum": 1,
+    "category": "buildinggadgets2:modes",
+    "icon": "buildinggadgets2:textures/book/mode/horizontal_row.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "수평 줄 모드는 플레이어가 보는 방향을 기준으로 플레이어로부터 먼 쪽으로 짓습니다. 이것은 다리 건설에 유용합니다! $(br2)'위에 놓기'를 토글하여 배치가 어떻게 변하는지 확인하세요. $(br2)이것은 교환 가젯에서도 사용할 수 있으며 플레이어가 보는 방향의 '왼쪽과 오른쪽'으로 영역이 뻗어나갑니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "수평 줄 모드",
+            "images": [
+                "buildinggadgets2:textures/book/images/horzrow1.png",
+                "buildinggadgets2:textures/book/images/horzrow3.png",
+                "buildinggadgets2:textures/book/images/horzrow2.png",
+                "buildinggadgets2:textures/book/images/horzrow4.png"
+            ],
+            "border": true,
+            "text": "위의 이미지를 전환하여 다른 옵션을 확인하세요"
+        }
+    ]
+}

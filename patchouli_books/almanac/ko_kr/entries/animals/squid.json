@@ -1,0 +1,17 @@
+{
+  "name": "오징어",
+  "category": "patchouli:animals",
+  "icon": "minecraft:ink_sac",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 먹물 주머니$(li)착유 간격: 1일$(li)채집: 오징어 촉수, 고대 잉크 $(li)드롭 아이템: 먹물 주머니$(br2)$(l)메모$()$(br)호감도 5하트 이상부터 채집 가능."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:squid",
+      "scale": 0.4,
+      "text": "오징어에게서... 착유한다고?"
+    }
+  ]
+}

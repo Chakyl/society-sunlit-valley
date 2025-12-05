@@ -1,0 +1,28 @@
+{
+  "name": "쌀 🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "farmersdelight:rice",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 16$(li)🔥 §6여름§r 🍂 §4가을$(li)씨앗 가격: :coin: 64$(li)수확량: 1$(li)성장 시간: 6일$(li)재성장 시간: 3일$(br2)$(l)메모$()$(br)물 한 칸에 잠긴 경작지에 심어야 합니다. "
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "쌀 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["U"],
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "U": "farmersdelight:rice_panicles[age=3]",
+          "0": "farmersdelight:rice[age=3,supporting=true]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

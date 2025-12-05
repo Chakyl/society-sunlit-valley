@@ -1,0 +1,26 @@
+{
+  "name": "고구마 🍂",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:sweet_potato",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 20$(li)🍂 §4가을$(li)씨앗 가격: :coin: 64$(li)수확량: 1-4$(li)성장 시간: 5일$(br2)$(l)메모$()$(br)달인 재배자에게서 씨앗을 구매할 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "고구마 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:sweet_potato_crop[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "알로에 베라 🔥",
+  "category": "patchouli:crops",
+  "icon": "atmospheric:aloe_leaves",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 16$(li)🔥 §6여름§r$(li)수확량: 1-2$(li)성장 단계: 5-8$(br2)$(l)메모$()$(br)번창하는 사구 생물군계에서 발견 가능.$(br)성장 단계 5에서 수확 가능.$(br)더 자라면 노란 꽃잎을 얻을 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "알로에 베라 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["1"],
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "1": "atmospheric:tall_aloe_vera[age=8,half=upper]",
+          "0": "atmospheric:tall_aloe_vera[age=8,half=lower]",
+          "F": "minecraft:sand"
+        }
+      }
+    }
+  ]
+}

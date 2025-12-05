@@ -1,0 +1,67 @@
+{
+    "name": "자작나무 🌼🍂",
+    "category": "patchouli:trees",
+    "icon": "minecraft:birch_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🌼 §2봄§r 🍂 §4가을$(li)묘목 가격: :coin: 8$(li)크기: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "자작나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  L  ",
+                        " L0L ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLLL",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLL "
+                    ],
+                    [
+                        "LLLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        "LLLLL"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "minecraft:birch_leaves",
+                    "L": "minecraft:birch_leaves",
+                    "W": "minecraft:birch_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

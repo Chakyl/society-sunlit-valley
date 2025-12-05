@@ -1,0 +1,17 @@
+{
+  "name": "눈물",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:weeping\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)생물군계: 영혼 모래 골짜기를 제외한 네더 생물군계$(br2)$(l)주의사항:$()$(br)주기적으로 울어서 주변을 물바다로 만듭니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "눈물 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:weeping\"}",
+      "scale": 0.9
+    }
+  ]
+}

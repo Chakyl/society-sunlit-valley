@@ -1,0 +1,18 @@
+{
+  "name": "대서양청어",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:atlantic_herring",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 16$(li)\u00a70\ud83c\udf3c \u00a72봄\u00a70 \u00a70\u2746 \u00a7b겨울\u00a70$(li)수역: 바다$(li)날씨: 언제나$(li)시간: 언제나"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:atlantic_herring",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "가자미랑 헷갈리면 안 돼요."
+    }
+  ]
+}

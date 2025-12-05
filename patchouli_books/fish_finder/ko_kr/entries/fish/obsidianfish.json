@@ -1,0 +1,19 @@
+{
+  "name": "흑요어",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:obsidianfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 512$(li)차원: 네더$(li)생물군계: 현무암 삼각주"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:obsidianfish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "비늘에 베이면 아플 것 같습니다."
+    }
+  ]
+}

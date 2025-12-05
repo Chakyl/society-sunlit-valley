@@ -1,0 +1,26 @@
+{
+  "name": "홉 🔥",
+  "category": "patchouli:crops",
+  "icon": "brewery:hops",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 21$(li)🔥 §6여름§r$(li)수확량: 2$(li)성장 시간: 6일$(br2)$(l)메모$()$(br)타이가 생물군계에서 발견 가능."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "홉 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "brewery:hop_trellis[age=6]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

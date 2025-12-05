@@ -1,0 +1,24 @@
+{
+  "name": "털 소",
+  "category": "patchouli:animals",
+  "icon": "meadow:highland_wool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 우유$(li)착유 간격: 1일$(li)가위질 드랍: 하이랜드/그림자 양털$(li)드롭 아이템: 하이랜드/그림자 양털, 소고기, 가죽$(br2)$(l)메모$()$(br)두 변종은 각각 목초지와 어두운 숲 생물군계에서 발견할 수 있습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "하이랜드 털 소",
+      "entity": "meadow:wooly_cow{Variant:0}",
+      "scale": 0.8,
+      "text": "특이한 털이 자라는 푹신푹신한 소"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "그림자 털 소",
+      "entity": "meadow:wooly_cow{Variant:1}",
+      "scale": 0.8
+    }
+  ]
+}

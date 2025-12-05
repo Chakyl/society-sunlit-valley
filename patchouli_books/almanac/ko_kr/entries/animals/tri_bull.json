@@ -1,0 +1,17 @@
+{
+  "name": "길들여진 트라이불",
+  "category": "patchouli:animals",
+  "icon": "society:large_tri_bull_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 트라이불 우유$(li)착유 간격: 1일$(li)드롭 아이템: 트라이불 고기, 가죽 $(br2)$(l)메모$()$(br)테라스틸 집적 판에서 연성하는 마법의 동물."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:domestic_tribull",
+      "scale": 0.6,
+      "text": "이 세상의 생물이 아닙니다. 트라이불 치즈를 먹으면 물약 효과를 정화합니다. "
+    }
+  ]
+}

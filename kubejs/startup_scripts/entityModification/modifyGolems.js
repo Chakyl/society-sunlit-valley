@@ -33,7 +33,7 @@ global.handleHayGolem = (entity) => {
           )
         ) {
           scanBlock.set(
-            "dew_drop_farmland_growth:supreme_quality_fertilized_farmland",
+            "dew_drop_farmland_growth:pristine_quality_fertilized_farmland",
             scanBlock.getProperties()
           );
         }
@@ -114,7 +114,7 @@ global.handleSlimeGolem = (entity) => {
 EntityJSEvents.modifyEntity((event) => {
   event.modify("golemoverhaul:hay_golem", (modifyBuilder) => {
     modifyBuilder.tick((entity) => {
-      if (entity.level.time % 1200 === 0) {
+      if (entity.level.time % 3600 === 0) {
         global.handleHayGolem(entity);
       }
     });

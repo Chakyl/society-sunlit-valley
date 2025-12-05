@@ -1,0 +1,26 @@
+{
+  "name": "밀 🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "minecraft:wheat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 46$(li)🔥 §6여름§r 🍂 §4가을$(li)씨앗 가격: :coin: 8$(li)수확량: 1$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "밀 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "minecraft:wheat[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,9 @@
 global.removedItems = [
+  "dramaticdoors:tall_create_andesite_door",
+  "dramaticdoors:tall_create_brass_door",
+  "dramaticdoors:tall_create_copper_door",
+  "dramaticdoors:tall_create_framed_glass_door",
+  "dramaticdoors:tall_create_train_door",
   "nethervinery:obsidian_stem",
   "candlelight:gold_ring",
   "relics:infinity_ham",
