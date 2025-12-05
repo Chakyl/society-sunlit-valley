@@ -13,13 +13,13 @@ const formatNumber = (number, quality) => {
 const getAttributeStr = (attribute) => {
   switch (attribute) {
     case "crop":
-      return "🔱 §6Farmer product";
+      return Text.translate("tooltip.society.farmer_product");
     case "wood":
-      return "✎ §6Artisan product";
+      return Text.translate("tooltip.society.artisan_product");
     case "gem":
-      return "🎣 §6Geologist product";
+      return Text.translate("tooltip.society.geologist_product");
     case "meat":
-      return "🗡 §6Adventurer product";
+      return Text.translate("tooltip.society.adventurer_product");
     default:
       console.log(`Invalid attribute`);
   }
@@ -33,16 +33,16 @@ global.addPriceTooltip = (tooltip, sellable, attribute) => {
     }
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`● ${formatNumber(value * item.count, quality)}`),
-        Text.gray(" Stack value"),
+        Text.translate("tooltip.society.coins", `${formatNumber(value * item.count, quality)}`).white(),
+        Text.of(" "),
+        Text.translate("tooltip.society.stack_value").gray(),
       ]);
       text.add(2, [getAttributeStr(attribute)]);
     } else {
       text.add(1, [
-        Text.white(`● ${formatNumber(value, quality)}`),
-        Text.darkGray(" Hold ["),
-        Text.gray("Shift"),
-        Text.darkGray("]"),
+        Text.translate("tooltip.society.coins", `${formatNumber(value, quality)}`).white(),
+        Text.of(" "),
+        Text.translate("tooltip.society.hold_key", Text.translate("key.keyboard.shift").gray()).darkGray(),
       ]);
     }
   });
@@ -99,15 +99,15 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`● ${calculateCost(coin.path, 1, item.count)}`),
-          Text.gray(" Stack value"),
+          Text.translate("tooltip.society.coins", `${calculateCost(coin.path, 1, item.count)}`).white(),
+          Text.of(" "),
+          Text.translate("tooltip.society.stack_value").gray(),
         ]);
       } else {
         text.add(1, [
-          Text.white(`● ${calculateCost(coin.path, 1, 1)}`),
-          Text.darkGray(" Hold ["),
-          Text.gray("Shift"),
-          Text.darkGray("]"),
+          Text.translate("tooltip.society.coins", `${calculateCost(coin.path, 1, 1)}`).white(),
+          Text.of(" "),
+          Text.translate("tooltip.society.hold_key", Text.translate("key.keyboard.shift").gray()).darkGray(),
         ]);
       }
     });
@@ -118,7 +118,7 @@ ItemEvents.tooltip((tooltip) => {
       if (item.nbt) {
         if (item.nbt.getCompound("quality_food"))
           text.add(1, [
-            "§6★ §7Rarity: ",
+            Text.translate("tooltip.society.plushies.rarity"),
             Text.gold(
               "★".repeat(
                 item.nbt.getCompound("quality_food").getInt("quality") + 1
@@ -133,19 +133,19 @@ ItemEvents.tooltip((tooltip) => {
         else text.add(1, [Text.gray("☆".repeat(4))]);
         let type = global.plushieTraits[Number(item.nbt.getInt("type"))];
         text.add(2, [
-          "§b♫ §7Trait: ",
+          Text.translate("tooltip.society.plushies.trait"),
           `§${type.color}${global.formatName(type.trait)}`,
         ]);
         let affection = item.nbt.getInt("affection");
         text.add(3, [
-          "§c❤ §7Affection: ",
+          Text.translate("tooltip.society.plushies.affection"),
           `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${
             affection < 4 ? `❤`.repeat(4 - affection) : ""
           }`,
         ]);
-        text.add(4, ["♢ §6Plushie"]);
+        text.add(4, [Text.translate("tooltip.society.plushies")]);
       } else {
-        text.add(1, ["♢ §6Plushie"]);
+        text.add(1, [Text.translate("tooltip.society.plushies")]);
       }
     });
   });
@@ -220,8 +220,8 @@ ItemEvents.tooltip((tooltip) => {
     },
   ];
   artifactTooltips.forEach((artifact) => {
-    tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
-    tooltip.add(artifact.item, Text.gray("🪣 Artifact"));
+    tooltip.add(artifact.item, global.translatableWithFallback(`item.society.${artifact.item.path}.description`, artifact.description).darkPurple());
+    tooltip.add(artifact.item, Text.translate("tooltip.society.artifact").gray());
   });
   [
     {
@@ -305,28 +305,21 @@ ItemEvents.tooltip((tooltip) => {
       description: "The Market sells all basic seeds in every season.",
     },
   ].forEach((book) => {
-    tooltip.add(book.item, Text.gray(book.description));
-    tooltip.add(book.item, Text.green("Right click to learn this skill!"));
+    tooltip.add(book.item, global.translatableWithFallback(`item.society.${book.item.path}.description`, book.description).gray());
+    tooltip.add(book.item, Text.translate("tooltip.society.skill_book.use").green());
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
-      text.add(1, Text.aqua(`Fish: ${Item.of(item.nbt.get("type")).id}`));
+      text.add(1, Text.translate("block.society.fish_pond.fish.type", `${Item.of(item.nbt.get("type")).id}`).aqua());
       text.add(
         2,
-        Text.aqua(
-          `Population: ${item.nbt.get("population")}/${item.nbt.get(
-            "max_population"
-          )} :fish:`
-        )
+        Text.translate("block.society.fish_pond.fish.population", 
+          `${item.nbt.get("population")}`, `${item.nbt.get("max_population")}`
+        ).aqua()
       );
     } else {
-      text.add(1, Text.gray("Cultivates fish, roe, and various items"));
-      text.add(2, Text.gray("Right Click with a fish to add it to the pond"));
-      text.add(
-        3,
-        Text.gray("Shift + Right Click with an empty hand to take one out")
-      );
-      text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
+      text.add(1, Text.translatable("block.society.fish_pond.description").gray());
+      text.add(2, Text.translatable("block.society.fish_pond.place").darkAqua());
     }
   });
   tooltip.add(
