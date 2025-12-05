@@ -183,16 +183,25 @@
 				"1B40A79E3BB1AF91"
 			]
 			id: "1A5334E8302500AA"
-			rewards: [{
-				auto: "invisible"
-				command: "/puffish_skills category unlock @p society:mastery"
-				elevate_perms: true
-				exclude_from_claim_all: true
-				id: "3532267C71EFC28B"
-				ignore_reward_blocking: true
-				silent: true
-				type: "command"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/puffish_skills category unlock @p society:mastery"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					id: "3532267C71EFC28B"
+					ignore_reward_blocking: true
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					id: "18FFA037883541E8"
+					ignore_reward_blocking: true
+					stage: "mastery_unlocked"
+					type: "gamestage"
+				}
+			]
 			tasks: [{
 				id: "64342FD45D5E3A60"
 				stat: "minecraft:play_time"
