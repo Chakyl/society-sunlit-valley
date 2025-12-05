@@ -13,13 +13,13 @@ const formatNumber = (number, quality) => {
 const getAttributeStr = (attribute) => {
   switch (attribute) {
     case "crop":
-      return "🔱 §6Farmer product";
+      return Text.translatable("tooltip.society.farmer_product");
     case "wood":
-      return "✎ §6Artisan product";
+      return Text.translatable("tooltip.society.artisan_product");
     case "gem":
-      return "🎣 §6Geologist product";
+      return Text.translatable("tooltip.society.geologist_product");
     case "meat":
-      return "🗡 §6Adventurer product";
+      return Text.translatable("tooltip.society.adventurer_product");
     default:
       console.log(`Invalid attribute`);
   }
@@ -33,16 +33,16 @@ global.addPriceTooltip = (tooltip, sellable, attribute) => {
     }
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`● ${formatNumber(value * item.count, quality)}`),
-        Text.gray(" Stack value"),
+        Text.translatable("tooltip.society.coins", `${formatNumber(value * item.count, quality)}`).white(),
+        Text.of(" "),
+        Text.translatable("tooltip.society.stack_value").gray(),
       ]);
       text.add(2, [getAttributeStr(attribute)]);
     } else {
       text.add(1, [
-        Text.white(`● ${formatNumber(value, quality)}`),
-        Text.darkGray(" Hold ["),
-        Text.gray("Shift"),
-        Text.darkGray("]"),
+        Text.translatable("tooltip.society.coins", `${formatNumber(value, quality)}`).white(),
+        Text.of(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
       ]);
     }
   });
@@ -99,15 +99,15 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`● ${calculateCost(coin.path, 1, item.count)}`),
-          Text.gray(" Stack value"),
+          Text.translatable("tooltip.society.coins", `${calculateCost(coin.path, 1, item.count)}`).white(),
+          Text.of(" "),
+          Text.translatable("tooltip.society.stack_value").gray(),
         ]);
       } else {
         text.add(1, [
-          Text.white(`● ${calculateCost(coin.path, 1, 1)}`),
-          Text.darkGray(" Hold ["),
-          Text.gray("Shift"),
-          Text.darkGray("]"),
+          Text.translatable("tooltip.society.coins", `${calculateCost(coin.path, 1, 1)}`).white(),
+          Text.of(" "),
+          Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
         ]);
       }
     });
@@ -118,7 +118,7 @@ ItemEvents.tooltip((tooltip) => {
       if (item.nbt) {
         if (item.nbt.getCompound("quality_food"))
           text.add(1, [
-            "§6★ §7Rarity: ",
+            Text.translatable("tooltip.society.plushies.rarity"),
             Text.gold(
               "★".repeat(
                 item.nbt.getCompound("quality_food").getInt("quality") + 1
@@ -133,19 +133,19 @@ ItemEvents.tooltip((tooltip) => {
         else text.add(1, [Text.gray("☆".repeat(4))]);
         let type = global.plushieTraits[Number(item.nbt.getInt("type"))];
         text.add(2, [
-          "§b♫ §7Trait: ",
+          Text.translatable("tooltip.society.plushies.trait"),
           `§${type.color}${global.formatName(type.trait)}`,
         ]);
         let affection = item.nbt.getInt("affection");
         text.add(3, [
-          "§c❤ §7Affection: ",
+          Text.translatable("tooltip.society.plushies.affection"),
           `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${
             affection < 4 ? `❤`.repeat(4 - affection) : ""
           }`,
         ]);
-        text.add(4, ["♢ §6Plushie"]);
+        text.add(4, [Text.translatable("tooltip.society.plushies")]);
       } else {
-        text.add(1, ["♢ §6Plushie"]);
+        text.add(1, [Text.translatable("tooltip.society.plushies")]);
       }
     });
   });
@@ -220,8 +220,10 @@ ItemEvents.tooltip((tooltip) => {
     },
   ];
   artifactTooltips.forEach((artifact) => {
-    tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
-    tooltip.add(artifact.item, Text.gray("🪣 Artifact"));
+    tooltip.add(artifact.item, 
+      global.translatableWithFallback(`item.society.${artifact.item.path}.description`, artifact.description).darkPurple());
+    tooltip.add(artifact.item, 
+      Text.translatable("tooltip.society.item_type.artifact").gray());
   });
   [
     {
@@ -305,33 +307,28 @@ ItemEvents.tooltip((tooltip) => {
       description: "The Market sells all basic seeds in every season.",
     },
   ].forEach((book) => {
-    tooltip.add(book.item, Text.gray(book.description));
-    tooltip.add(book.item, Text.green("Right click to learn this skill!"));
+    tooltip.add(book.item, 
+      global.translatableWithFallback(`item.society.${book.item.path}.description`, book.description).gray());
+    tooltip.add(book.item, 
+      Text.translatable("tooltip.society.skill_book.use").green());
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
-      text.add(1, Text.aqua(`Fish: ${Item.of(item.nbt.get("type")).id}`));
+      text.add(1, Text.translatable("block.society.fish_pond.fish.type", `${Item.of(item.nbt.get("type")).id}`).aqua());
       text.add(
         2,
-        Text.aqua(
-          `Population: ${item.nbt.get("population")}/${item.nbt.get(
-            "max_population"
-          )} :fish:`
-        )
+        Text.translatable("block.society.fish_pond.fish.population", 
+          `${item.nbt.get("population")}`, `${item.nbt.get("max_population")}`
+        ).aqua()
       );
     } else {
-      text.add(1, Text.gray("Cultivates fish, roe, and various items"));
-      text.add(2, Text.gray("Right Click with a fish to add it to the pond"));
-      text.add(
-        3,
-        Text.gray("Shift + Right Click with an empty hand to take one out")
-      );
-      text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
+      text.add(1, Text.translatable("block.society.fish_pond.description").gray());
+      text.add(2, Text.translatable("block.society.fish_pond.place").darkAqua());
     }
   });
   tooltip.add(
     "simplerecall:recall_potion",
-    Text.gray("Teleports you to your spawn location")
+    Text.translatable("tooltip.society.recall_potion").gray()
   );
   tooltip.add(
     [
@@ -340,7 +337,7 @@ ItemEvents.tooltip((tooltip) => {
       "whimsy_deco:black_phone",
       "whimsy_deco:red_phone",
     ],
-    Text.gray("Can call all unlocked villagers to trade with them.")
+    Text.translatable("tooltip.society.phone").gray()
   );
 
   tooltip.add(
@@ -350,124 +347,143 @@ ItemEvents.tooltip((tooltip) => {
       "whimsy_deco:black_phone",
       "whimsy_deco:red_phone",
     ],
-    Text.green("Has some unique villager shops")
+    Text.translatable("tooltip.society.phone.tip").green()
   );
   // Furniture
   tooltip.add(
     "tanukidecor:diy_workbench",
-    Text.gray("Crafts any Catalog item for cheap")
+    Text.translatable("tooltip.society.diy_workbench").gray()
   );
   tooltip.add("society:tanuki_catalog", [
-    Text.gray("Right click with 2 §6Gold Coins"),
-    Text.gray("to purchase a §aTanuki Leaf§r."),
-    Text.gray("Shift + Right click to bulk purchase"),
+    Text.translatable("tooltip.society.furniture_catalog",
+      2, Text.translatable("item.numismatics.crown").gold(),
+      Text.translatable("item.society.tanuki_leaf").green()
+    ).gray(),
   ]);
   tooltip.add("society:modern_catalog", [
-    Text.gray("Right click with 6 §6Gold Coins§r"),
-    Text.gray("to purchase an §fArchitect's Digest§r."),
-    Text.gray("Shift + Right click to bulk purchase"),
+    Text.translatable("tooltip.society.furniture_catalog",
+      6, Text.translatable("item.numismatics.crown").gold(),
+      Text.translatable("item.society.architects_digest").white()
+    ).gray(),
   ]);
   tooltip.add("society:fantasy_catalog", [
-    Text.gray("Right click with 4 §6Gold Coins"),
-    Text.gray("to purchase §eFantasy Dust§r."),
-    Text.gray("Shift + Right click to bulk purchase"),
+    Text.translatable("tooltip.society.furniture_catalog",
+      4, Text.translatable("item.numismatics.crown").gold(),
+      Text.translatable("item.society.fantasy_dust").yellow()
+    ).gray(),
   ]);
   global.lootFurniture.forEach((item) => {
-    tooltip.add(item, "♢ §6Rare furniture drop");
+    tooltip.add(item, Text.translatable("tooltip.society.loot_furniture").white());
     if (!item.includes("tanuki") && !item.includes("whimsy_deco")) {
-      tooltip.add(item, Text.white("♧ Modern collection"));
+      tooltip.add(item, Text.translatable("tooltip.society.furnitures.modern").white());
     } else {
-      tooltip.add(item, "♤ §aTanuki collection");
+      tooltip.add(item, Text.translatable("tooltip.society.furnitures.tanuki").white());
     }
   });
   tooltip.add(
     "society:architects_digest",
-    Text.gray("Used to craft ♧ §fModern§r furniture")
+    Text.translatable("item.society.architects_digest.description").gray()
   );
   tooltip.add(
     "society:tanuki_leaf",
-    Text.gray("Used to craft ♤ §aTanuki§r furniture")
+    Text.translatable("item.society.tanuki_leaf.description").gray()
   );
-  tooltip.add(/fantasyfurniture/, "♡ §eFantasy collection");
+  tooltip.add(/fantasyfurniture/, Text.translatable("tooltip.society.furnitures.fantasy").white());
   tooltip.add(
     "society:fantasy_dust",
-    Text.gray("Used to craft ♡ §eFantasy§r furniture")
+    Text.translatable("item.society.fantasy_dust.description").gray()
   );
   // Hammers
   tooltip.add(
     "justhammers:small_core",
-    Text.gray("Crafts hammers that mine a 3x3x1 area")
+    Text.translatable("tooltip.society.hammer_core", "3x3x1").gray()
   );
   tooltip.add(
     "justhammers:impact_core",
-    Text.gray("Crafts hammers that mine a 3x3x3 area")
+    Text.translatable("tooltip.society.hammer_core", "3x3x3").gray()
   );
   // Upgrades:
   tooltip.add(
     "society:ancient_cog",
-    Text.green(
-      "Use on a §2Seed Maker§a to give it a 5% chance of producing an Ancient Fruit Seed"
-    )
+    Text.translatable("item.society.ancient_cog.description",
+      Text.translatable("block.society.seed_maker").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:pink_matter",
-    Text.green(
-      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels."
-    )
+    Text.translatable("item.society.pink_matter.description",
+      Text.translatable("block.society.cheese_press").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:pink_matter",
-    Text.red("Does not carry over Milk Quality")
+    Text.translatable("item.society.pink_matter.description").red()
   );
   tooltip.add(
     "society:stone_hand",
-    Text.green("Use on a §2Preserves Jar§a to decrease input amount by 2")
+    Text.translatable("item.society.stone_hand.description",
+      Text.translatable("block.society.preserves_jar").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:broken_clock",
-    Text.green("Use on an §2Aging Cask§a to decrease aging time by half")
+    Text.translatable("item.society.broken_clock.description",
+      Text.translatable("block.society.aging_cask").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:sea_biscut",
-    Text.green("Use on a §2Fish Pond§a to double chance of non-Roe items")
+    Text.translatable("item.society.sea_biscut.description",
+      Text.translatable("block.society.fish_pond").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:black_opal",
-    Text.green(
-      "Use on a §2Crystalarium§a to give it a 10% chance of producing pristine items"
-    )
+    Text.translatable("item.society.black_opal.description",
+      Text.translatable("block.society.crystalarium").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:enkephalin",
-    Text.green(
-      "Use on a §2Mayonnaise Machine§a to give it a 5% chance of producing Supreme Mayonnaise"
-    )
+    Text.translatable("item.society.enkephalin.description",
+      Text.translatable("block.society.mayonnaise_machine").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:tiny_gnome",
-    Text.green(
-      "Use on a §2Loom§a to give it a 25% chance of producing rare furniture"
-    )
+    Text.translatable("item.society.tiny_gnome.description",
+      Text.translatable("block.society.loom").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:ancient_roe",
-    Text.green("Use on a §2Fish Smoker§a to double output")
+    Text.translatable("item.society.ancient_roe.description",
+      Text.translatable("block.society.fish_smoker").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:frosted_tip",
-    Text.green("Use on a §2Charging Rod§a to work and triple output in winter")
+    Text.translatable("item.society.frosted_tip.description",
+      Text.translatable("block.society.charging_rod").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:infinity_worm",
-    Text.green("Use on a §2Deluxe Worm Farm§a to let it work without inputs")
+    Text.translatable("item.society.infinity_worm.description",
+      Text.translatable("block.society.deluxe_worm_farm").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:inserter",
-    Text.green("Use on an §2Ancient Cask§a to let it process 4 items at a time")
+    Text.translatable("item.society.inserter.description",
+      Text.translatable("block.society.ancient_cask").darkGreen()
+    ).green()
   );
   tooltip.add(
     "society:cordycep",
-    Text.green("Use on a §2Dehydrator§a to double mushroom output")
+    Text.translatable("item.society.cordycep.description",
+      Text.translatable("block.society.dehydrator").darkGreen()
+    ).green()
   );
   tooltip.add(
     [
@@ -476,7 +492,7 @@ ItemEvents.tooltip((tooltip) => {
       "windswept:wild_berries",
       "farmersdelight:rice",
     ],
-    Text.gray("Will only grow when planted on farmland")
+    Text.translatable("tooltip.society.plant_on_farmland").gray()
   );
   // Misc
   tooltip.add(
@@ -486,134 +502,124 @@ ItemEvents.tooltip((tooltip) => {
       "botania:floating_agricarnation",
       "botania:floating_agricarnation_chibi",
     ],
-    Text.darkRed("Does not work on farmland crops")
+    Text.translatable("tooltip.society.not_work_on_farmland").darkRed()
   );
   tooltip.add(
     "numismatics_utils:bank_meter",
-    Text.gray("Shows balance in Bank Terminal when worn in curio slot")
+    Text.translatable("tooltip.society.bank_meter").gray()
   );
   tooltip.add(
     "society:fish_radar",
-    Text.gray("Shows catchable fish at the current time and location")
+    Text.translatable("tooltip.society.fish_rader").gray()
   );
   tooltip.add(
     "tradingpost:trading_post",
-    Text.gray("Trade with all nearby villagers in one place")
+    Text.translatable("tooltip.society.trading_post").gray()
   );
   tooltip.add(
     "society:magic_rope",
-    Text.gray("Teleports you down a level in the Skull Cavern")
+    Text.translatable("tooltip.society.magic_rope").gray()
   );
   tooltip.add(
     "society:magic_rope",
-    Text.red(
-      "Make sure you're carrying an Escape Rope in case you get stuck..."
-    )
+    Text.translatable("tooltip.society.magic_rope.warn").red()
   );
   tooltip.add(
     "society:magic_tunnel",
-    Text.gray(
-      "Teleports you to the nearest cave in the direction of the block you've clicked in the Skull Cavern"
-    )
+    Text.translatable("tooltip.society.magic_tunnel").gray()
   );
   tooltip.add(
     "society:magic_tunnel",
-    Text.red(
-      "Make sure you're carrying an Escape Rope in case you get stuck..."
-    )
+    Text.translatable("tooltip.society.magic_rope.warn").red()
   );
   // Fertilizers
   tooltip.add(
     "dew_drop_farmland_growth:weak_fertilizer",
-    Text.green("Decreases time it takes for crop to mature by 1 day")
+    Text.translatable("tooltip.society.weak_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:strong_fertilizer",
-    Text.green("Decreases time it takes for crop to mature by 2 days")
+    Text.translatable("tooltip.society.strong_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:hyper_fertilizer",
-    Text.green("Decreases time it takes for crop to mature by 3 days")
+    Text.translatable("tooltip.society.hyper_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:hydrating_fertilizer",
-    Text.green("Keeps farmland watered until crop is half grown (rounded down)")
+    Text.translatable("tooltip.society.hydrating_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
-    Text.green("Never dries out")
+    Text.translatable("tooltip.society.deluxe_hydrating_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:bountiful_fertilizer",
-    Text.green("Crops have a 25% chance to drop 1 extra when harvested")
+    Text.translatable("tooltip.society.bountiful_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:bountiful_fertilizer",
-    Text.red("Crops can no longer have quality")
+    Text.translatable("tooltip.society.bountiful_fertilizer.warn").red()
   );
   tooltip.add(
     "dew_drop_farmland_growth:low_quality_fertilizer",
-    Text.green("Increases the chance of quality crops on harvest")
+    Text.translatable("tooltip.society.low_quality_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:high_quality_fertilizer",
-    Text.green("Greatly increases the chance of quality crops on harvest")
+    Text.translatable("tooltip.society.high_quality_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:pristine_quality_fertilizer",
-    Text.green("Supremely increases the chance of quality crops on harvest")
+    Text.translatable("tooltip.society.pristine_quality_fertilizer").green()
   );
   tooltip.add(
     "dew_drop_farmland_growth:garden_pot",
-    Text.gray(
-      "Grow crops indoors during any season. Cannot be watered with Sprinklers"
-    )
+    Text.translatable("tooltip.society.garden_pot").gray()
   );
   tooltip.add(
     "dew_drop_farmland_growth:garden_pot",
-    Text.green(
-      "Can be upgraded with Deluxe Hydrating Fertilizer and hung from chains and ropes"
-    )
+    Text.translatable("tooltip.society.garden_pot.tip").green()
   );
   tooltip.add(
     "minecraft:fishing_rod",
-    Text.gray("Remove attached bobbers before upgrading")
+    Text.translatable("tooltip.society.fishing_rod").gray()
   );
   tooltip.add(
     "etcetera:handbell",
-    Text.gray("Calls non-sitting pets and allays to you when rung")
+    Text.translatable("tooltip.society.handbell").gray()
   );
   tooltip.add(
     "farm_and_charm:pitchfork",
-    Text.gray("Turns Fertilized Farmland into Dirt")
+    Text.translatable("tooltip.society.pitchfork").gray()
   );
   tooltip.add(
     "farm_and_charm:pitchfork",
-    Text.green("50% chance to recover Fertilizer")
+    Text.translatable("tooltip.society.pitchfork.tip").green()
   );
   tooltip.add(
     "farm_and_charm:pitchfork",
-    Text.red("Does not work on Hydrating Farmland")
+    Text.translatable("tooltip.society.pitchfork.warn").red()
   );
   tooltip.add(
     ["farm_and_charm:silo_wood", "farm_and_charm:silo_copper"],
-    Text.gray("Dries grains placed inside")
+    Text.translatable("tooltip.society.silo").gray()
   );
   tooltip.add(
     ["farm_and_charm:silo_wood", "farm_and_charm:silo_copper"],
-    Text.green("Can be expanded to a max of 3x9x3")
+    Text.translatable("tooltip.society.silo.tip").green()
   );
   tooltip.add(
     "farmersdelight:cooking_pot",
-    Text.green("Automatable using cooking guide")
+    Text.translatable("tooltip.society.cooking_pot").green()
   );
   tooltip.add(
     "meadow:cooking_cauldron",
-    Text.gray("Decorative, has no recipes")
+    Text.translatable("tooltip.society.cooking_cauldron").gray()
   );
   tooltip.add(
     "candlelight:cooking_pot",
-    Text.gray("Only a villager workstation, has no recipes")
+    Text.translatable("tooltip.society.master_cooking_pot").gray()
   );
   tooltip.add(
     [
@@ -630,7 +636,7 @@ ItemEvents.tooltip((tooltip) => {
       "candlelight:deepslate_stove",
       "candlelight:granite_stove",
     ],
-    Text.green("Has built-in oven")
+    Text.translatable("tooltip.society.stove").green()
   );
 
   tooltip.add(
@@ -641,7 +647,7 @@ ItemEvents.tooltip((tooltip) => {
       "oreganized:deepslate_lead_ore",
       "minecraft:ancient_debris",
     ],
-    Text.gold("Spawns exclusively in the Skull Cavern")
+    Text.translatable("tooltip.society.skull_cavern_ore").gold()
   );
   tooltip.add(
     [
@@ -663,7 +669,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:recycling_machine",
       "society:cheese_press",
     ],
-    "✉ §6Artisan Machine"
+    Text.translatable("tooltip.society.artisan_machine").white()
   );
   tooltip.add(
     [
@@ -674,166 +680,155 @@ ItemEvents.tooltip((tooltip) => {
       "meadow:wooden_buffalo_milk_bucket",
       "meadow:wooden_goat_milk_bucket",
     ],
-    Text.red("Unobtainable, use a milking pail")
+    Text.translatable("tooltip.society.banned_milk_bucket").red()
   );
   ["society:large_warped_milk", "society:warped_milk"].forEach((milk) => {
     tooltip.add(
       milk,
-      Text.aqua("Milked from Wooly Cows that spawn in Warped Forests")
+      Text.translatable("item.society.warped_milk.description").aqua()
     );
   });
   tooltip.add(
     "society:fine_wool",
-    Text.gray("Collected from happy Sheep and Rabbits")
+    Text.translatable("item.society.fine_wool.description").gray()
   );
   tooltip.add(
     "society:truffle",
-    Text.gray("Foraged by certain farm animals such as pigs")
+    Text.translatable("item.society.truffle.description").gray()
   );
-  tooltip.add("society:milk_pail", Text.gray("Milks farm animals"));
-  tooltip.add("society:tubasmoke_stick", Text.gray("Right click to smoke"));
-  tooltip.add("society:tubasmoke_stick", Text.red("Must be 18+ years old"));
+  tooltip.add("society:milk_pail", Text.translatable("item.society.milk_pail.description").gray());
+  tooltip.add("society:tubasmoke_stick", Text.translatable("item.society.tubasmoke_stick.description").gray());
+  tooltip.add("society:tubasmoke_stick", Text.translatable("item.society.tubasmoke_stick.description.warn").red());
   tooltip.add(
     "society:cornucopia",
-    Text.gray("Harvest fruits from nearby trees")
+    Text.translatable("item.society.cornucopia.description").gray()
   );
   tooltip.add(
     "society:animal_feed",
-    Text.gray("Feeds farm animals manually or using Feeding Troughs")
+    Text.translatable("item.society.animal_feed.description").gray()
   );
   tooltip.add(
     "society:candied_animal_feed",
-    Text.gray("Feeds farm animals manually or using Feeding Troughs")
+    Text.translatable("item.society.animal_feed.description").gray()
   );
   tooltip.add(
     "society:candied_animal_feed",
-    Text.green("Increases affection by a full heart")
+    Text.translatable("item.society.candied_animal_feed.description").green()
   );
   tooltip.add(
     "society:mana_feed",
-    Text.gray("Feeds farm animals manually or using Feeding Troughs")
+    Text.translatable("item.society.animal_feed.description").gray()
   );
   tooltip.add(
     "society:mana_feed",
-    Text.green("Increases affection more than basic Animal Feed")
+    Text.translatable("item.society.mana_feed.description").green()
   );
   tooltip.add(
     "society:animal_feed_sack",
-    Text.red("Too large to feed farm animals manually or using Feeding Troughs")
+    Text.translatable("item.society.animal_feed_sack.description").red()
   );
   tooltip.add(
     "society:magic_shears",
-    Text.gray("Harvests drops from farm animals")
+    Text.translatable("item.society.magic_shears.description").gray()
   );
-  tooltip.add("vintagedelight:deluxe_burger", Text.gray("Burger? I hardly..."));
+  tooltip.add("vintagedelight:deluxe_burger", 
+    Text.translatable("tooltip.society.deluxe_burger").gray());
   tooltip.add(
     "society:magic_shears",
-    Text.gray("with only a little discomfort!")
-  );
-  tooltip.add(
-    "society:magic_shears",
-    Text.red("Requires animals to trust you")
+    Text.translatable("item.society.magic_shears.description.warn").red()
   );
   tooltip.add(
     "society:miracle_potion",
-    Text.gray("Used to breed farm animals")
+    Text.translatable("item.society.miracle_potion.description").gray()
   );
   tooltip.add(
     "meadow:cheese_stick",
-    Text.gray("Made in Fondue with cheese and bread")
+    Text.translatable("tooltip.society.cheese_stick").gray()
   );
   tooltip.add(
     "meadow:cheese_form",
-    Text.gray("Turns Large Milks into Cheese Wheels using Rennet")
+    Text.translatable("tooltip.society.cheese_form").gray()
   );
-  tooltip.add("meadow:cheese_form", Text.green("Automatable using hoppers"));
+  tooltip.add("meadow:cheese_form", 
+    Text.translatable("tooltip.society.cheese_form.tip").green());
   tooltip.add(
     "society:friendship_necklace",
-    Text.gray('Used with the "Best Friends Forever" Husbandry skill')
+    Text.translatable("item.society.friendship_necklace.description").gray()
   );
   tooltip.add(
     "society:frozen_tear",
-    Text.gray("Found in Slush. Chance increased with fortune")
+    Text.translatable("item.society.frozen_tear.description").gray()
   );
   tooltip.add(
     "liltractor:liltractor",
-    Text.gray("Shift + Right Click to view inventory")
-  );
-  tooltip.add(
-    "liltractor:liltractor",
-    Text.gray("Space while riding to change modes")
+    Text.translatable("tooltip.society.liltractor").gray()
   );
   tooltip.add(
     ["displaydelight:food_plate", "displaydelight:small_food_plate"],
-    Text.gray("Displays certain Farmer's Delight foods as blocks")
+    Text.translatable("tooltip.society.food_plate").gray()
   );
-  tooltip.add("liltractor:liltractor", Text.gray("Dyeable"));
   tooltip.add(
     "society:prize_ticket",
-    Text.gray("Use on an a Prize Machine for something good!")
+    Text.translatable("item.society.prize_ticket.description").gray()
   );
   tooltip.add(
     "splendid_slimes:slime_ticket",
-    Text.gray(
-      "Use on an a Splendid Slime to learn their primary breed's favorite food."
-    )
+    Text.translatable("tooltip.society.slime_ticket").gray()
   );
   tooltip.add(
     "splendid_slimes:slime_candy",
-    Text.gray("Feed to a Splendid Slime to greatly increase their happiness.")
+    Text.translatable("tooltip.society.slime_candy").gray()
   );
   tooltip.add(
     "splendid_slimes:slime_feeder",
-    Text.gray(
-      "Feeds nearby Splendid Slimes automatically. Handles tricky traits such as 'Picky' when applicable."
-    )
+    Text.translatable("tooltip.society.slime_feeder").gray()
   );
-  tooltip.add("splendid_slimes:slime_feeder", Text.green(`Area: 13x13x13`));
-  tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
+  tooltip.add("splendid_slimes:slime_feeder", Text.translatable("tooltip.society.area", `13x13x13`).green());
+  tooltip.add("create:creative_blaze_cake", Text.translatable("tooltip.society.creative_blaze_cake").gray());
   tooltip.add(
     "tanukidecor:slot_machine",
-    Text.gray("Right click with any legal tender")
+    Text.translatable("tooltip.society.slot_machine").gray()
   );
   tooltip.add(
     "whimsy_deco:statue_endless_fortune",
-    Text.gray("Gives a valuable item once a day")
+    Text.translatable("tooltip.society.statue_endless_fortune").gray()
   );
   tooltip.add(
     "whimsy_deco:statue_endless_fortune",
-    Text.red("Definitely not overpriced.")
+    Text.translatable("tooltip.society.statue_endless_fortune.warn").red()
   );
   tooltip.add(
     "whimsy_deco:gatcha_machine",
-    Text.gray("Right click with an Iridium Coin to purchase a Plushie Capsule")
+    Text.translatable("tooltip.society.gatcha_machine").gray()
   );
   tooltip.add(
     "society:relic_trove",
-    Text.gray("Can be opened using an Extractinator")
+    Text.translatable("item.society.relic_trove.description").gray()
   );
   tooltip.add(
     "society:artifact_trove",
-    Text.gray("Can be opened using an Extractinator")
+    Text.translatable("item.society.relic_trove.description").gray()
   );
   tooltip.add(
     "society:geode_buster",
-    Text.gray("Right click with geode in offhand")
+    Text.translatable("item.society.geode_buster.description").gray()
   );
   tooltip.add(
     "society:dragontooth_axe",
-    Text.red("Will break if wielded by one without the Dragonslayer skill")
+    Text.translatable("item.society.dragontooth_axe.description").red()
   );
-  tooltip.add("botania:apothecary_default", "🏹 §6Abandoned Farm reward");
-  "society:kinetic_blueprint",
-    Text.gray(
-      "Given for free for completing the Boiler Room chapter in the questbook."
-    );
+  tooltip.add("botania:apothecary_default", Text.translatable("tooltip.society.petal_apothecary.obtain"));
   tooltip.add(
     "society:kinetic_blueprint",
-    Text.green("Not consumed in crafting")
+    Text.translatable("item.society.kinetic_blueprint.description").gray()
   );
-  tooltip.add("society:kinetic_blueprint", "🏹 §6Boiler Room reward");
-  tooltip.add("society:skull_cavern_teleporter", "🏹 §6Vault reward");
-  tooltip.add("relics:magic_mirror", "🏹 §6Crafts Room reward");
+  tooltip.add(
+    "society:kinetic_blueprint",
+    Text.translatable("item.society.kinetic_blueprint.description.tip").green()
+  );
+  tooltip.add("society:kinetic_blueprint", Text.translatable("tooltip.society.kinetic_blurprint.obtain"));
+  tooltip.add("society:skull_cavern_teleporter", Text.translatable("tooltip.society.skull_cavern_teleporter.obtain"));
+  tooltip.add("relics:magic_mirror", Text.translatable("tooltip.society.magic_mirror.obtain"));
 
   tooltip.add(
     [
@@ -842,7 +837,7 @@ ItemEvents.tooltip((tooltip) => {
       "moreminecarts:greenhouse_glass_stairs",
       "moreminecarts:greenhouse_glass_slab",
     ],
-    Text.gray("Grows the first crop underneath in any season")
+    Text.translatable("tooltip.society.greenhouse_glass").gray()
   );
   tooltip.add(
     [
@@ -851,100 +846,63 @@ ItemEvents.tooltip((tooltip) => {
       "moreminecarts:greenhouse_glass_stairs",
       "moreminecarts:greenhouse_glass_slab",
     ],
-    Text.green("Range: 16 blocks")
+    Text.translatable("tooltip.society.greenhouse_glass.range").green()
   );
 
-  tooltip.add("vinery:apple_tree_sapling", "Fruit Season:");
-  tooltip.add("vinery:apple_tree_sapling", Text.gold(" Autumn"));
+  tooltip.add("vinery:apple_tree_sapling", Text.translatable("tooltip.society.fruit_bearing_season"));
+  tooltip.add("vinery:apple_tree_sapling", Text.of(" ").gold().append(Text.translatable("desc.sereneseasons.autumn")));
 
-  tooltip.add("vinery:dark_cherry_sapling", "Fruit Season:");
-  tooltip.add("vinery:dark_cherry_sapling", Text.green(" Spring"));
-  tooltip.add("society:plushie_capsule", Text.gray("Right click to open"));
-  tooltip.add("society:furniture_box", Text.gray("Right click to open"));
-  tooltip.add("furniture:bin", Text.red("Deletes any items you click into it"));
-  tooltip.add("furniture:bin", Text.green("Creates Trash Bags"));
+  tooltip.add("vinery:dark_cherry_sapling", Text.translatable("tooltip.society.fruit_bearing_season"));
+  tooltip.add("vinery:dark_cherry_sapling", Text.of(" ").green().append(Text.translatable("desc.sereneseasons.spring")));
+  tooltip.add("society:plushie_capsule", Text.translatable("tooltip.society.right_click_open").gray());
+  tooltip.add("society:furniture_box", Text.translatable("tooltip.society.right_click_open").gray());
+  tooltip.add("furniture:bin", Text.translatable("tooltip.society.trash_bin").red());
+  tooltip.add("furniture:bin", Text.translatable("tooltip.society.trash_bin.tip").green());
   tooltip.add(
     "furniture:trash_bag",
-    Text.gray("Created from trashing items in a Bin")
+    Text.translatable("tooltip.society.trash_bag").gray()
   );
-  tooltip.add("society:bouquet_bag", Text.green("Contains random flowers"));
-  tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
-  tooltip.add("society:scavenged_food_bag", Text.gray("Right click to open"));
+  tooltip.add("society:bouquet_bag", Text.translatable("tooltip.society.bouquet_bag").green());
+  tooltip.add("society:bouquet_bag", Text.translatable("tooltip.society.right_click_open").gray());
+  tooltip.add("society:scavenged_food_bag", Text.translatable("tooltip.society.right_click_open").gray());
   tooltip.add(
     "gag:time_sand_pouch",
-    Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")
+    Text.translatable("tooltip.society.time_sand_pouch").red()
   );
   tooltip.add(
     "extractinator:extractinator",
-    Text.gray("Right click with a geode to process")
-  );
-  tooltip.add(
-    "extractinator:extractinator",
-    Text.gray("Shift + Right click to process stack")
+    Text.translatable("tooltip.society.extractinator").gray()
   );
   tooltip.add(
     "pipez:item_pipe",
-    Text.gray("Can be configured to extract using the Create mod Wrench")
+    Text.translatable("tooltip.society.item_pipe").gray()
   );
   tooltip.add(
     "moreminecarts:chunk_loader",
-    Text.red("Removed! Craft into money for your refund.")
+    Text.translatable("tooltip.society.chunk_loader").red()
   );
   tooltip.add(
     "vintagedelight:evaporator",
-    Text.gray("Place next to water to make salt")
+    Text.translatable("tooltip.society.evaporator").gray()
   );
   tooltip.add(
     "farmersdelight:rich_soil",
-    Text.gray("Grows colonies from red and")
-  );
-  tooltip.add(
-    "farmersdelight:rich_soil",
-    Text.gray("brown mushrooms planted on it")
-  );
-  tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
-    if (tooltip.shift) {
-      text.add(1, [
-        Text.white("Fertile Seasons:"),
-        Text.green(" Spring,"),
-        Text.yellow(" Summer,"),
-        Text.gold(" Autumn"),
-      ]);
-      text.add(1, []);
-    } else {
-      text.add(1, [
-        Text.darkGray("Hold ["),
-        Text.gray("Shift"),
-        Text.darkGray("]"),
-      ]);
-    }
-  });
-  tooltip.addAdvanced(
-    "farm_and_charm:strawberry_seed",
-    (item, advanced, text) => {
-      if (tooltip.shift) {
-        text.add(1, [Text.white("Fertile Seasons:"), Text.green(" Spring")]);
-        text.add(1, []);
-      } else {
-        text.add(1, [
-          Text.darkGray("Hold ["),
-          Text.gray("Shift"),
-          Text.darkGray("]"),
-        ]);
-      }
-    }
+    Text.translatable("tooltip.society.rich_soil").gray()
   );
   tooltip.add(
     "relics:jellyfish_necklace",
-    Text.red("Hurts nearby animals when worn!")
+    Text.translatable("tooltip.society.jellyfish_necklace").red()
   );
 
-  tooltip.add("society:river_jelly", Text.blue("Fished up in River biomes"));
-  tooltip.add(
-    "society:ocean_jelly",
-    Text.aqua("Fished up in Ocean & Beach biomes")
+  tooltip.add("society:river_jelly", 
+    Text.translatable("item.society.river_jelly.description").blue()
   );
-  tooltip.add("society:nether_jelly", Text.gold("Fished up in Nether biomes"));
+  tooltip.add("society:ocean_jelly", 
+    Text.translatable("item.society.ocean_jelly.description").aqua()
+  );
+  tooltip.add("society:nether_jelly", 
+    Text.translatable("item.society.nether_jelly.description").gold()
+  );
   const craftingMaterials = [
     "society:fire_quartz",
     "society:earth_crystal",
@@ -973,24 +931,24 @@ ItemEvents.tooltip((tooltip) => {
     "🍖 §6Prize Machine reward"
   );
   const workstation = [
-    { villager: "Bard", block: "minecraft:note_block" },
-    { villager: "Storagesmith", block: "minecraft:grindstone" },
-    { villager: "Fisher", block: "minecraft:barrel" },
-    { villager: "Shepherd", block: "minecraft:loom" },
-    { villager: "Leatherworker", block: "minecraft:cauldron" },
-    { villager: "Blacksmith", block: "minecraft:smithing_table" },
-    { villager: "Librarian", block: "minecraft:lectern" },
-    { villager: "Cleric", block: "minecraft:brewing_stand" },
-    { villager: "Farmer", block: "minecraft:composter" },
-    { villager: "Banker", block: "minecraft:cartography_table" },
-    { villager: "Master Cultivator", block: "candlelight:cooking_pot" },
-    { villager: "Barkeeper", block: "beachparty:tiki_bar" },
-    { villager: "Exotic Trader", block: "minecraft:fletching_table" },
-    { villager: "Mystical Botanist", block: "beautify:botanist_workbench" },
+    { villager: Text.translatable("entity.minecraft.villager.etched.bard"), block: "minecraft:note_block" },
+    { villager: Text.translatable("entity.minecraft.villager.weaponsmith"), block: "minecraft:grindstone" },
+    { villager: Text.translatable("entity.minecraft.villager.fisherman"), block: "minecraft:barrel" },
+    { villager: Text.translatable("entity.minecraft.villager.shepherd"), block: "minecraft:loom" },
+    { villager: Text.translatable("entity.minecraft.villager.leatherworker"), block: "minecraft:cauldron" },
+    { villager: Text.translatable("entity.minecraft.villager.toolsmith"), block: "minecraft:smithing_table" },
+    { villager: Text.translatable("entity.minecraft.villager.librarian"), block: "minecraft:lectern" },
+    { villager: Text.translatable("entity.minecraft.villager.cleric"), block: "minecraft:brewing_stand" },
+    { villager: Text.translatable("entity.minecraft.villager.farmer"), block: "minecraft:composter" },
+    { villager: Text.translatable("entity.minecraft.villager.cartographer"), block: "minecraft:cartography_table" },
+    { villager: Text.translatable("entity.minecraft.villager.candlelight.cook"), block: "candlelight:cooking_pot" },
+    { villager: Text.translatable("entity.minecraft.villager.beachparty.barkeeper"), block: "beachparty:tiki_bar" },
+    { villager: Text.translatable("entity.minecraft.villager.fletcher"), block: "minecraft:fletching_table" },
+    { villager: Text.translatable("entity.minecraft.villager.beautify.botanist"), block: "beautify:botanist_workbench" },
   ];
   workstation.forEach((station) => {
     const { villager, block } = station;
-    tooltip.add(block, `✂ §6${villager} workstation`);
+    tooltip.add(block, Text.translatable("tooltip.society.villager_workstation", villager).gold());
   });
   Item.of("farm_and_charm:barley", "{quality_food:{quality:3}}");
   // Prices
@@ -1006,16 +964,16 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`● ${formatNumber(price * item.count, 0)}`),
-        Text.gray(" Stack value"),
+        Text.translatable("tooltip.society.coins", `${formatNumber(price * item.count, 0)}`).white(),
+        Text.of(" "),
+        Text.translatable("tooltip.society.stack_value").gray(),
       ]);
       text.add(2, [getAttributeStr("crop")]);
     } else {
       text.add(1, [
-        Text.white(`● ${formatNumber(price, 0)}`),
-        Text.darkGray(" Hold ["),
-        Text.gray("Shift"),
-        Text.darkGray("]"),
+        Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
+        Text.of(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
       ]);
     }
   });
@@ -1031,16 +989,16 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`● ${formatNumber(price * item.count, 0)}`),
-        Text.gray(" Stack value"),
+        Text.translatable("tooltip.society.coins", `${formatNumber(price * item.count, 0)}`).white(),
+        Text.of(" "),
+        Text.translatable("tooltip.society.stack_value").gray(),
       ]);
       text.add(2, [getAttributeStr("crop")]);
     } else {
       text.add(1, [
-        Text.white(`● ${formatNumber(price, 0)}`),
-        Text.darkGray(" Hold ["),
-        Text.gray("Shift"),
-        Text.darkGray("]"),
+        Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
+        Text.of(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
       ]);
     }
   });
@@ -1057,7 +1015,7 @@ ItemEvents.tooltip((tooltip) => {
   global.geodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:froggy_helm") {
       global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, "🪓 §7Mineral");
+      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
     } else {
       global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
@@ -1065,7 +1023,7 @@ ItemEvents.tooltip((tooltip) => {
   global.frozenGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_drum") {
       global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, "🪓 §7Mineral");
+      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
     } else {
       global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
@@ -1073,7 +1031,7 @@ ItemEvents.tooltip((tooltip) => {
   global.magmaGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_gadget") {
       global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, "🪓 §7Mineral");
+      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
     } else {
       global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
@@ -1081,7 +1039,7 @@ ItemEvents.tooltip((tooltip) => {
   // Gem
   global.gems.forEach((gem) => {
     global.addPriceTooltip(tooltip, gem, "gem");
-    tooltip.add(gem.item, "🎣 §7Gem");
+    tooltip.add(gem.item, Text.translatable("tooltip.society.item_type.gem").gray());
   });
   [
     "society:sparkstone",
@@ -1092,7 +1050,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:prismatic_shard",
     "minecraft:prismarine_crystals",
   ].forEach((gem) => {
-    tooltip.add(gem, "🎣 §7Gem");
+    tooltip.add(gem, Text.translatable("tooltip.society.item_type.gem").gray());
   });
   global.miscGeologist.forEach((gem) => {
     global.addPriceTooltip(tooltip, gem, "gem");
@@ -1171,53 +1129,46 @@ ItemEvents.tooltip((tooltip) => {
   geodes.forEach((geode) => {
     tooltip.add(
       geode,
-      Text.gray("Something's inside! A Blacksmith can help break it open.")
+      Text.translatable("item.society.geode.description").gray()
     );
   });
   tooltip.addAdvanced("society:car_key", (item, advanced, text) => {
     text.add(1, [
-      Text.gray("Right click on an Automobile to park inside the key"),
+      Text.translatable("item.society.car_key.description").gray(),
     ]);
     if (item.nbt) {
-      text.add(2, [Text.green("Car parked")]);
+      text.add(2, [Text.translatable("item.society.car_key.description.parked").green()]);
     } else {
-      text.add(2, [Text.red("No car parked")]);
+      text.add(2, [Text.translatable("item.society.car_key.description.empty").red()]);
     }
   });
-  const getPigColor = (pig) => {
+  const getPigColoredName = (pig) => {
     switch (pig) {
       case "Red":
-        return "c";
+        return Text.translatable("society.pig_race.red_pig").red();
       case "Blue":
-        return "b";
+        return Text.translatable("society.pig_race.blue_pig").blue();
       case "Yellow":
-        return "e";
+        return Text.translatable("society.pig_race.yellow_pig").yellow();
       case "Green":
-        return "a";
+        return Text.translatable("society.pig_race.green_pig").green();
       default:
         console.log(`Invalid pig color`);
     }
-    return;
+    return Text.of("Undefined");
   };
   tooltip.addAdvanced(
     ["society:pig_race_ticket", "society:multiplayer_pig_race_ticket"],
     (item, advanced, text) => {
       text.add(1, [
-        Text.gold("Left click "),
-        Text.gray("to select pig to bet on"),
-      ]);
-      text.add(2, [
-        Text.gold("Right click "),
-        Text.gray("with bet in offhand to start"),
+        Text.translatable("item.society.pig_race_ticket.description").gray(),
       ]);
       if (item.nbt) {
-        text.add(3, [
-          Text.gray(
-            `Betting on §${getPigColor(item.nbt.bet)}${item.nbt.bet} pig§r!`
-          ),
+        text.add(2, [
+          Text.translatable("item.society.pig_race_ticket.description.bet", getPigColoredName(item.nbt.bet)).gray(),
         ]);
       } else {
-        text.add(3, [Text.gray("No Pig selected")]);
+        text.add(2, [Text.translatable("item.society.pig_race_ticket.description.no_pig").gray()]);
       }
     }
   );
