@@ -55,13 +55,16 @@ BlockEvents.rightClicked(cropDrop, (e) => {
 
 const cropGrowth = ["minecraft:cave_vines", "minecraft:cave_vines_plant"];
 BlockEvents.rightClicked(cropGrowth, (e) => {
-  const { player, item, block, server } = e;
+  const { player, item, block, hand, server } = e;
+  if (hand == "OFF_HAND") return;
   if (
     player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
     !player.cooldowns.isOnCooldown(item)
   ) {
     player.getHeldItem("main_hand").count--;
-    block.set(block.id, { berries: "true" });
+    server.scheduleInTicks(1, () => {
+      block.set(block.id, { berries: "true" });
+    });
     block.level.spawnParticles(
       "minecraft:happy_villager",
       true,
@@ -90,7 +93,10 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
     block.properties.get("has_apples").toString() == "true" &&
     !player.cooldowns.isOnCooldown(item)
   ) {
-    if (season == "autumn" || hasGreenhouseGlass(player.level, block.getPos())) {
+    if (
+      season == "autumn" ||
+      hasGreenhouseGlass(player.level, block.getPos())
+    ) {
       modifiedProperties.can_grow_apples = false;
       modifiedProperties.has_apples = false;
       modifiedProperties.age = "0";
@@ -138,7 +144,10 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
     block.properties.get("has_cherries").toString() == "true" &&
     !player.cooldowns.isOnCooldown(item)
   ) {
-    if (season == "spring" || hasGreenhouseGlass(player.level, block.getPos())) {
+    if (
+      season == "spring" ||
+      hasGreenhouseGlass(player.level, block.getPos())
+    ) {
       modifiedProperties.can_grow_cherries = false;
       modifiedProperties.has_cherries = false;
       modifiedProperties.age = "0";
@@ -156,7 +165,7 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
     player.getHeldItem("main_hand").count--;
     modifiedProperties.can_grow_cherries = true;
     modifiedProperties.has_cherries = true;
-      modifiedProperties.age = "3";
+    modifiedProperties.age = "3";
     block.set(block.id, modifiedProperties);
     block.level.spawnParticles(
       "minecraft:happy_villager",

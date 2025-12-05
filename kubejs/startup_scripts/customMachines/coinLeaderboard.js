@@ -26,6 +26,7 @@ global.updateLeaderboard = (block, server) => {
   let calcY = block.y + 3;
   let leaderboardMap = updateLeaderboardMap(server);
   if (!leaderboardMap) return;
+  if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
   global.clearOldTextDisplay(block, "leaderboard");
 
   // Display leaderboard name

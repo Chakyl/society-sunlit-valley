@@ -269,7 +269,7 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:vegetables", "society:eggplant");
   e.add("meadow:water_bottles", "herbalbrews:water_cup");
   e.add("farm_and_charm:water_bottles", "herbalbrews:water_cup");
-  e.add("forge:water_bottles", "herbalbrews:water_cup");
+e.add("forge:water_bottles", "herbalbrews:water_cup");
   e.add("forge:food/raw_pasta", "farm_and_charm:raw_pasta");
   e.add("forge:seeds", "farm_and_charm:strawberry_seed");
   e.add("forge:salad_ingredients", "farm_and_charm:lettuce");
@@ -282,6 +282,7 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:rope", "brewery:rope");
   e.remove("forge:chests/ender", "minecraft:ender_chest");
   e.remove("forge:chests", "minecraft:ender_chest");
+  e.remove("whimsy_deco:gatcha_machine_accepts", "minecraft:diamond");
   // Vinery leaf fix
   e.add("minecraft:mineable/hoe", "vinery:apple_leaves");
   e.add("minecraft:mineable/hoe", "vinery:dark_cherry_leaves");
@@ -379,18 +380,27 @@ ServerEvents.tags("item", (e) => {
     e.add("society:plushies", item);
   });
   global.dehydratorRecipes.forEach((dehydratee) => {
-    e.add("society:dehydrated", dehydratee.output[0].substring(2, dehydratee.output[0].length));
+    e.add(
+      "society:dehydrated",
+      dehydratee.output[0].substring(2, dehydratee.output[0].length)
+    );
   });
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
-    if (["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))) return;
+    if (
+      ["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))
+    )
+      return;
     if (fishId.includes("raw_")) {
       if (fishId === "raw_snowflake") fishId = "frosty_fin";
       else fishId = fishId.substring(4, fishId.length);
     }
 
-    e.add(`crabbersdelight:jei_display_results/society/${fishId}_bait`, fish.item);
+    e.add(
+      `crabbersdelight:jei_display_results/society/${fishId}_bait`,
+      fish.item
+    );
   });
   global.agedRoe.forEach((preserve) => {
     e.add("society:aged_roe", preserve.item);
@@ -436,9 +446,11 @@ ServerEvents.tags("item", (e) => {
   ].forEach((mirror) => {
     e.add("society:mirrors", mirror);
   });
-  ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
-    e.add("create:upright_on_belt", bottle);
-  });
+  ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach(
+    (bottle) => {
+      e.add("create:upright_on_belt", bottle);
+    }
+  );
   e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth");
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
@@ -450,11 +462,16 @@ ServerEvents.tags("item", (e) => {
   });
 
   Color.DYE.forEach((color) => {
-    e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
+    e.add(
+      "society:botania_seeds",
+      `botania_seeds:${color}_mystical_flower_seed`
+    );
   });
-  ["society:animal_feed", "society:candied_animal_feed", "society:mana_feed"].forEach((item) =>
-    e.add("society:animal_feed", item)
-  );
+  [
+    "society:animal_feed",
+    "society:candied_animal_feed",
+    "society:mana_feed",
+  ].forEach((item) => e.add("society:animal_feed", item));
   [
     "aquaculture:jellyfish",
     "aquaculture:goldfish",
@@ -471,7 +488,14 @@ ServerEvents.tags("item", (e) => {
       e.add("refurbished_furniture:outdoors", item);
     else e.add("refurbished_furniture:kitchen", item);
   });
-  const fantasyCategories = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
+  const fantasyCategories = [
+    "nordic",
+    "dunmer",
+    "venthyr",
+    "bone",
+    "royal",
+    "necrolord",
+  ];
   Ingredient.of("@fantasyfurniture").stacks.forEach((item) => {
     if (item.toString().includes("furniture_station")) return;
     e.add("refurbished_furniture:bathroom", item.id);
@@ -673,7 +697,9 @@ ServerEvents.tags("block", (e) => {
   flowersMissingBlockTags.forEach((flower) => {
     e.add("minecraft:flowers", flower);
     e.add(
-      flower !== "meadow:eriophorum_tall" ? "minecraft:small_flowers" : "minecraft:tall_flowers",
+      flower !== "meadow:eriophorum_tall"
+        ? "minecraft:small_flowers"
+        : "minecraft:tall_flowers",
       flower
     );
   });
@@ -687,7 +713,10 @@ ServerEvents.tags("block", (e) => {
   agingCasks.forEach((log) => {
     e.add("society:aging_cask", log);
   });
-  const randomTickMachines = ["society:charging_rod", "society:espresso_machine"];
+  const randomTickMachines = [
+    "society:charging_rod",
+    "society:espresso_machine",
+  ];
   randomTickMachines.forEach((log) => {
     e.add("society:artisan_machine", log);
   });
@@ -738,6 +767,7 @@ ServerEvents.tags("block", (e) => {
   });
   e.add("minecraft:mineable/axe", "beachparty:cabinet");
   e.add("minecraft:mineable/pickaxe", "bakery:iron_bench");
+  e.add("minecraft:mineable/shovel", "vinery:dirt_path_slab");
 });
 
 ServerEvents.tags("fluid", (e) => {
