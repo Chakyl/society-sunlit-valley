@@ -7,6 +7,7 @@ global.handleSnowMelter = (entity) => {
   const radius = 10;
   const verticalRadius = 2;
   let scanBlock;
+  if (global.susFunctionLogging) console.log('[SOCIETY-SUSFN] snowMelter.js')
   for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - verticalRadius, z - radius), [
     x + radius,
     y + verticalRadius,

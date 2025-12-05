@@ -1,0 +1,18 @@
+{
+  "name": "아라우거북",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:arrau_turtle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 280$(li)\uD83C\uDF42 §4가을§0$(li)수역: 강$(li)날씨: 비, 눈$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:arrau_turtle",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "거북이 클럽을 운영하는듯 합니다."
+    }
+  ]
+}

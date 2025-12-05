@@ -1,0 +1,18 @@
+{
+  "name": "별딱지거북",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:starshell_turtle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 240$(li)§0❆ §b겨울§0$(li)수역: 강$(li)날씨: 비, 눈$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:starshell_turtle",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "돌바다에서 산다는데요...?"
+    }
+  ]
+}

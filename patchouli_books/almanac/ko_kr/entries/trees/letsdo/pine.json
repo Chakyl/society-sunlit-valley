@@ -1,0 +1,130 @@
+{
+    "name": "알파인나무 🌐",
+    "category": "patchouli:trees",
+    "icon": "meadow:pine_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🌐 §5연중§r$(li)가격: :coin: 16$(li)크기: 1x1$(br2)$(l)메모$()$(li)시장에서 묘목을 구매할 수 있습니다.$(li)주변 땅을 망가뜨립니다."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "알파인나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  L  ",
+                        " LLL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  L  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        "     ",
+                        "  L  ",
+                        " LWL ",
+                        "  L  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  0  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "meadow:pine_log[axis=y]",
+                    "L": "meadow:pine_leaves",
+                    "W": "meadow:pine_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

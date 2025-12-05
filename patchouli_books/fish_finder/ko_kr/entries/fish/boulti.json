@@ -1,0 +1,18 @@
+{
+  "name": "나일틸라피아",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:boulti",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 128$(li)\u00a70\ud83d\udd25 \u00a76여름\u00a70$(li)수역: 담수$(li)날씨: 언제나$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:boulti",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "나일 강의 작은 친구"
+    }
+  ]
+}

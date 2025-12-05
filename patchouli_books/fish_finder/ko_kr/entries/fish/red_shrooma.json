@@ -1,0 +1,18 @@
+{
+  "name": "붉은시루마",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:red_shrooma",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 264$(li)\u00a70\ud83c\udf42 \u00a74가을\u00a70$(li)수역: 바다$(li)날씨: 비, 눈$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:red_shrooma",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "화려한 버섯이지만 이건 먹어도 됩니다."
+    }
+  ]
+}

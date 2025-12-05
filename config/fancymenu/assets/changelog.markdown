@@ -1,8 +1,29 @@
 ^^^
 ## Sunlit Cobblemon
-### vPLAYTEST-4-1.0.0
+### vPLAYTEST-5-1.0.0
 ^^^
 --- 
+## Playtest 5
+- Improved performance of workstations buy a significant amount. You may have to reassign your workers!
+- Added Star Pixie (removed Pixie of Ice) for summoning certain Sub-Legendry Pokemon
+- Added summoning for Moltres, Articuno, Zapdos, Regice, Registeel, Regirock
+- Added Berry Smoothies, replacing old system for crafting potions using Bug types
+- Added more Pokemon to poke-fishing pool
+- Added Nether fishing for Poke-Fishing
+- Added changes from Sunlit Valley 3.4.3
+- Added Crystalarium functionality to Ice worker types
+- Added recycling recipes for TM/TR packs
+- Added something else
+- Tweaked Trainer Podium trainer loot pools
+- Removed Gmax, signature, and Z-Moves from TM/TR pool
+- Reduced Fairy Heart recipe base time 3600s-> 2400s
+- Fixed aroma lady miah crash
+- Fixed rewards at level 0 trainer tear being evil
+- Fixed trainer podium trainers that can't be fought
+- Fixed trainer podium trainers level checking being off by 5
+- Fixed Farfetch'd being impossible to spawn and replaced its drop
+- Fixed regional variants showing wrong UI in Cobble Workers. Still haven't quite figured out the Pokemon Rendering :/
+
 ## Playtest 4
 - Removed bed system since Chalky hates it. Please break beds and free your animals before the next playtest 
 - Fixed Multiplayer issues with shops
@@ -68,39 +89,22 @@
 --- 
 - Added Wine Keg - Artisan Machine for making wines without the need for juice
 - Added Bed system for Husbandry animals higher than 3 affection
-- Added Cluttered, with most furniture items falling under Modern set
 - Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish.
-- Added proper quests for Candlelight/Bakery in the Cooking Collection
-- Added Cutting Board recipes to Raw Pasta and Half Chicken 
-- Added Fire Log -> Charcoal Block smelting recipe
-- Added Petrified Slime -> Bucket of Slime crafting recipe
-- Added Wandering/ribbit traders to advanced training screen
-- Added Rotating seasonal wallpapers to Carpenter. Rotates through trades every day and every sub-season
+- Added traits Recessive to Juicy and Ender Slimes and Dominant to Orby and Rotting Slimes
 - Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates.
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
+- Ribbit Hut now works at 7am (from 8am)
 - Magic Shears now output quality based on affection
-- Plorts and Slime Hearts are now Farmer products (from Adventurer)
-- Increased weights of Blind Sailfin and Bark Angelfish
-- Reduced cost of Preserves Jar (Iron Block -> Copper Block)
-- Reduced cost of Refined Storage Controller/Grids 16,384 -> 8,192
-- Reduced cost of Flint and Steel 20,480 ->12,288
+- Increased Sniffer/Frostbiter Artifact shard drops by 1.5x
 - Reduced all Pantry & Blacksmith bundles to one item per task
-- Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle (Blacksmith)
+- Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle (Blacksmith)-   
+- Reduced value of Galliraptor eggs 256 -> 200, 1024 -> 512 (L) and Flamingo Eggs 384 -> 300
 - Reduced cost of Vault 83,968 -> 51,200
 - Reduced difficulty of Fish Tank by selecting more common fish for bundles
-- Reduced value of Galliraptor eggs 256 -> 200, 1024 -> 512 (L) and Flamingo Eggs 384 -> 300
 - Reduced affection increases and decreases by half (excluding candied animal feed)
-- Reduced Cost of Iron Hook by 1 Neptunium Coin
 - Removed Tom's Simple Storage
 - Removed Brewer's Bundle from Crafts room (Replaced with Foraging bundle)
-- Removed bonus value from Slime Hearts
-- Removed Champions from Skull Cavern
-- Removed Holy Locket and Infinity Ham
 - Removed Gold Ring (functionality still here)
 - Removed max affection doubling husbandry drops
-- Removed Obsidian Stems
+- Removed Holy Locket and Infinity Ham
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
-- Fixed certain sherds not having values
-- Fixed certain vegetables not being considered pickles
-- Fixed Mechanic Slime not having a Farmer's Almanac entry
-- Fixed Windswept Mailboxes not having simplified crafting recipes

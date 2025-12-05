@@ -1,0 +1,18 @@
+{
+  "name": "서커스고기",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_circus_fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 320$(li)\u00a70\ud83d\udd25 \u00a76여름\u00a70$(li)수역: 담수$(li)날씨: 언제나$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:circus",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "저글링 같은 것도 할 줄 아나?"
+    }
+  ]
+}

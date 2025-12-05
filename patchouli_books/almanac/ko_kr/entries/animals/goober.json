@@ -1,0 +1,17 @@
+{
+  "name": "구버",
+  "category": "patchouli:animals",
+  "icon": "species:petrified_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 석화된 알$(br2)$(l)메모$()$(br)호감도 5하트 이상부터 산란."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:goober",
+      "scale": 0.8,
+      "text": "알이 부화하려면 마그마와 같은 열기가 필요합니다."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "대서양대구",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:atlantic_cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 120$(li)\u00a70\u2746 \u00a7b겨울\u00a70$(li)수역: 바다$(li)날씨: 언제나$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:atlantic_cod",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "대짜 대구!"
+    }
+  ]
+}

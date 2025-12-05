@@ -1,0 +1,18 @@
+{
+  "name": "포크고기",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_forkfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 96$(li)\u00a70\ud83c\udf42 \u00a74가을\u00a70$(li)수역: 바다$(li)날씨: 언제나$(li)시간: 언제나"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:forkfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "나이프는 어디있을까."
+    }
+  ]
+}

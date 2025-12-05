@@ -1,0 +1,26 @@
+{
+  "name": "야생 열매 ❆",
+  "category": "patchouli:crops",
+  "icon": "windswept:wild_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 8$(li)❆ §b겨울$(li)수확량: 1-2$(li)성장 시간: 3일$(li)재성장 시간: 1일$(br2)$(l)메모$()$(br)눈 덮인 생물군계에서 발견 가능.$(br)씨앗이 따로 없기 때문에 열매를 심으면 됩니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "야생 열매 덤불",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "windswept:wild_berry_bush[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

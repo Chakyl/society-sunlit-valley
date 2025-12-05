@@ -1,0 +1,18 @@
+{
+  "name": "가아",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:gar",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 88$(li)\u00a70\ud83c\udf42 \u00a74가을\u00a70$(li)수역: 담수$(li)날씨: 비, 눈$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:gar",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "저리 가아."
+    }
+  ]
+}

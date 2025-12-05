@@ -54,6 +54,7 @@ global.runAutoTapper = (blockInfo) => {
     { block: block, level: level, server: level.getServer() },
     true
   );
+  if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] autoTapper.js");
   if (fluidData && block.properties.get("error") == "false") {
     fluidHandler.fill(Fluid.of(fluidData.fluid, Math.round(10 / fluidData.time)), "execute");
   }

@@ -1,0 +1,29 @@
+{
+    "name": "건설 가젯",
+    "sortnum": 1,
+    "category": "buildinggadgets2:gadgets",
+    "icon": "buildinggadgets2:gadget_building{energy:500000}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "건설 가젯을 사용하면 한 번에 많은 블록을 매우 쉽게 건설할 수 있습니다! $(br2)먼저 가젯에 에너지가 있는지 확인하세요. $(br2)그 다음, 설치된 블록을 시프트 우클릭하여 건설할 블록을 지정합니다."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "설정 키를 누르고 있으면 $(l:buildinggadgets2:modes)건설 모드$(/l)를 선택할 수 있습니다. 각 모드는 이 책의 해당 항목에 설명되어 있습니다. 기본 모드는 $(l:buildinggadgets2:mode_build_to_me)내 위치까지$(/l)입니다. $(br2)설치 위치를 주시하면 배치될 블록의 미리보기가 표시됩니다. 이러한 블록을 배치하는 데 필요한 아이템이나 에너지가 부족하면 빨간색 오버레이가 표시됩니다. 우클릭하여 표시된 대로 블록을 배치합니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "건설 결과 미리보기",
+            "images": [
+                "buildinggadgets2:textures/book/images/ghost_render.png"
+            ],
+            "border": true,
+            "text": "건설 후 결과의 미리보기"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "우클릭하면 건설이 시작됩니다. 보관함에서 설치에 필요한 아이템을 소모하고, 필요한 아이템이 없는 블록은 건너뜁니다. $(br2)실수를 했다면 $(l:buildinggadgets2:undo)되돌리기$(/l)를 할 수 있다는 것을 잊지 마세요!"
+        }
+    ]
+}

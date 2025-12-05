@@ -1,0 +1,21 @@
+{
+    "name": "앵커",
+    "sortnum": 1,
+    "category": "buildinggadgets2:mechanics",
+    "icon": "buildinggadgets2:textures/book/icons/anchor.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "앵커를 사용하면 보고 있는 블록을 '잠글' 수 있으므로 자유롭게 이동하거나 둘러볼 수 있습니다. 단축키를 누르거나 설정 메뉴에서 지정할 수 있습니다. $(br2) 앵커가 고정되어도 언제든지 우클릭하여 구조물을 건설할 수 있습니다.$(br2)참고: 범위를 변경해도 앵커를 제거했다가 다시 설치할 때까지 적용되지 않을 수 있습니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "앵커",
+            "images": [
+                "buildinggadgets2:textures/book/images/anchor1.png"
+            ],
+            "border": true,
+            "text": "미리보기를 고정하세요!"
+        }
+    ]
+}

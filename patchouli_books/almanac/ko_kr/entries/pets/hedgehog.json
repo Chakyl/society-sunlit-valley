@@ -1,0 +1,17 @@
+{
+  "name": "고슴도치",
+  "category": "patchouli:pets",
+  "icon": "supplementaries:bamboo_spikes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)소닉 머리 (모자)$(br2)$(l)메모$()$(br)숲 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:hedgehog",
+      "scale": 0.7,
+      "text": "딜레마 속에 사는 동물."
+    }
+  ]
+}

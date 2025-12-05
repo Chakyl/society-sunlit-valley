@@ -96,7 +96,15 @@ const setQuality = (newProperties, stage, itemQuality) => {
     newProperties.quality = itemQuality;
 };
 
-const getCanTakeItems = (item, recipe, properties, hasTag, inputCount, recipes, nbt) => {
+const getCanTakeItems = (
+  item,
+  recipe,
+  properties,
+  hasTag,
+  inputCount,
+  recipes,
+  nbt
+) => {
   let itemCheck = recipe !== undefined;
   if (hasTag) {
     Array.from(recipes.keys()).forEach((key) => {
@@ -176,8 +184,10 @@ global.artisanHarvest = (
       ) {
         harvestOutput = Item.of(`society:aged_${id.path}`);
       }
-      if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
-      if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
+      if (outputMult > 1)
+        harvestOutput.count = harvestOutput.count * outputMult;
+      if (!artisanHopper)
+        block.popItemFromFace(harvestOutput, block.properties.get("facing"));
       nbt.merge({ data: { stage: 0, recipe: "" } });
       block.setEntityData(nbt);
       newProperties.working = false;
@@ -210,9 +220,17 @@ global.artisanInsert = (
   let itemQuality;
   let hasQuality = newProperties.quality;
   let useCount =
-    multipleInputs && item.count >= stageCount - Number(stage) ? stageCount - Number(stage) : 1;
+    multipleInputs && item.count >= stageCount - Number(stage)
+      ? stageCount - Number(stage)
+      : 1;
   const recipe = recipes.get(`${item.id}`);
-  if (multipleInputs && recipe && nbt.data.recipe !== "" && nbt.data.recipe !== item.id) return;
+  if (
+    multipleInputs &&
+    recipe &&
+    nbt.data.recipe !== "" &&
+    nbt.data.recipe !== item.id
+  )
+    return;
   if (
     getCanTakeItems(
       item,
@@ -226,8 +244,11 @@ global.artisanInsert = (
   ) {
     newProperties = block.getProperties();
     successParticles(level, block);
-    server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
-    if (!(hasTag && recipe === undefined)) nbt.merge({ data: { recipe: item.id } });
+    server.runCommandSilent(
+      `playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`
+    );
+    if (!(hasTag && recipe === undefined))
+      nbt.merge({ data: { recipe: item.id } });
     newProperties.working = false;
     newProperties.mature = false;
     if (hasQuality && itemNbt && itemNbt.quality_food) {
@@ -377,7 +398,12 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
         }
         if (
           !returnFluidData &&
-          getCanTakeItems(attachedBlock.getId(), recipe, block.properties, false)
+          getCanTakeItems(
+            attachedBlock.getId(),
+            recipe,
+            block.properties,
+            false
+          )
         ) {
           newProperties = block.getProperties();
           successParticles(level, block);
@@ -704,7 +730,10 @@ global.spawnTextDisplay = (block, y, id, text) => {
   let newNbt = entity.getNbt();
   newNbt.text = `{"text":"${text}"}`;
   newNbt.background = 0;
-  newNbt.Rotation = [NBT.f(global.rotationFromFacing(block.properties.get("facing"))), NBT.f(0)];
+  newNbt.Rotation = [
+    NBT.f(global.rotationFromFacing(block.properties.get("facing"))),
+    NBT.f(0),
+  ];
   entity.setNbt(newNbt);
   entity.setX(x + 0.5);
   entity.setY(y);
@@ -718,9 +747,11 @@ global.giveExperience = (server, player, category, xp) => {
     server.runCommandSilent(
       `puffish_skills experience add ${player.username} society:${category} ${xp}`
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:mastery ${xp}`
-    );
+    if (player.stages.has("mastery_unlocked")) {
+      server.runCommandSilent(
+        `puffish_skills experience add ${player.username} society:mastery ${xp}`
+      );
+    }
   }
 };
 

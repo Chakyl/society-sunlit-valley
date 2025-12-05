@@ -1,0 +1,17 @@
+{
+  "name": "소",
+  "category": "patchouli:animals",
+  "icon": "society:large_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: :coin: 512$(li)착유: 우유$(li)착유 간격: 1일$(li)드롭 아이템: 소고기, 가죽"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cow",
+      "scale": 0.8,
+      "text": "가장 기본이 되는 가축. 기르기 쉽지만 큰 돈을 가져오지는 못 할 겁니다."
+    }
+  ]
+}

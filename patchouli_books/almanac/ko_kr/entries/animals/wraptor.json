@@ -1,0 +1,17 @@
+{
+  "name": "랩터",
+  "category": "patchouli:animals",
+  "icon": "species:wraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 랩터 알 $(br2)$(l)메모$()$(br)호감도 2하트 이상부터 산란. 뒤틀린 숲 생물군계에 출현. 이름표를 붙이지 않으면 디스폰합니다!"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:wraptor",
+      "scale": 0.8,
+      "text": "네더의 온기에 적응하여 밖에 있는 것을 싫어합니다."
+    }
+  ]
+}

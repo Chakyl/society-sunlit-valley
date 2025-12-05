@@ -28,6 +28,7 @@ StartupEvents.registry("block", (event) => {
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(4000, 0, (entity) => {
         const { inventory, block, level } = entity;
+        if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] smartShippingBin.js");
         let slots = entity.inventory.getSlots();
         let value = 0;
         let binPlayer = global.cacheShippingBin(entity);

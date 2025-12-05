@@ -1,0 +1,26 @@
+{
+  "name": "보리 🍂❆",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:barley",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 11$(li)🍂 §4가을 §r❆ §b겨울$(li)씨앗 가격: :coin: 2$(li)수확량: 2$(li)성장 시간: 4일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "보리 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:barley_crop[age=4]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

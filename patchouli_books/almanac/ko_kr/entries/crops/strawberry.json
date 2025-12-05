@@ -1,0 +1,26 @@
+{
+  "name": "딸기 🌼",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:strawberry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 18$(li)🌼 §2봄§r$(li)씨앗 가격: :coin: 3$(li)수확량: 1$(li)성장 시간: 5일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "딸기 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:strawberry_crop[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

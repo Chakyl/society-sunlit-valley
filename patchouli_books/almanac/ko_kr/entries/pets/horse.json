@@ -1,0 +1,17 @@
+{
+  "name": "말",
+  "category": "patchouli:pets",
+  "icon": "relics:horse_flute",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)말 피리"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:horse",
+      "scale": 0.7,
+      "text": "자동차보다 저렴합니다!"
+    }
+  ]
+}

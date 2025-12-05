@@ -33,3 +33,9 @@ global.multiplayerSharestones = false;
  * Skull Cavern will decay blocks placed after 30 seconds and torches after 1 minute
  */
 global.skullCavernHardmode = false;
+
+/**
+ * Only server needs to change this
+ * Dev tool for large servers to diagnose crashes. May spam your console!
+ */
+global.susFunctionLogging = false;
