@@ -1038,6 +1038,42 @@
             ]
         },
         {
+            "pakku_id": "94SxjZK6dZbZ5aBK",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "bobby-reforged"
+            },
+            "name": {
+                "curseforge": "Bobby Reforged"
+            },
+            "id": {
+                "curseforge": "883502"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "bobby-1.20.1_v5.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4650/227/bobby-1.20.1_v5.0.1.jar",
+                    "id": "4650227",
+                    "parent_id": "883502",
+                    "hashes": {
+                        "sha1": "8c98ee795e2e32189cb1b9bea53a7e310742e19a",
+                        "md5": "bcdd05bc35229e30d1d8ab1b3449def6"
+                    },
+                    "required_dependencies": [],
+                    "size": 86682,
+                    "date_published": "2023-07-17T21:33:02.067Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "dYx3g0zUP8Tw6kGQ",
             "pakku_links": [
                 "5s7CrcTUORQxpIzh"
@@ -1896,6 +1932,43 @@
             ]
         },
         {
+            "pakku_id": "jlEEJlpFtjjsXLc0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cluttered"
+            },
+            "name": {
+                "curseforge": "Cluttered"
+            },
+            "id": {
+                "curseforge": "826308"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cluttered-[Forge]-3.0.2-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7180/920/cluttered-[Forge]-3.0.2-1.20.1.jar",
+                    "id": "7180920",
+                    "parent_id": "826308",
+                    "hashes": {
+                        "sha1": "3529dc56ab21f355176032d5ff7456a6bc95f129",
+                        "md5": "add9f9eab965fa630166f4ce8b7766e0"
+                    },
+                    "required_dependencies": [],
+                    "size": 5552095,
+                    "date_published": "2025-11-03T04:06:15.200Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "5s7CrcTUORQxpIzh",
             "pakku_links": [
                 "JCsFAOuQHQwi2ASm"
@@ -2452,43 +2525,6 @@
                     ],
                     "size": 92784,
                     "date_published": "2024-12-08T13:14:44.842225Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "jlEEJlpFtjjsXLc0",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "cluttered"
-            },
-            "name": {
-                "curseforge": "Cluttered"
-            },
-            "id": {
-                "curseforge": "826308"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "cluttered-[Forge]-3.0.2-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7180/920/cluttered-[Forge]-3.0.2-1.20.1.jar",
-                    "id": "7180920",
-                    "parent_id": "826308",
-                    "hashes": {
-                        "sha1": "3529dc56ab21f355176032d5ff7456a6bc95f129",
-                        "md5": "add9f9eab965fa630166f4ce8b7766e0"
-                    },
-                    "required_dependencies": [],
-                    "size": 5552095,
-                    "date_published": "2025-11-03T04:06:15.200Z"
                 }
             ]
         },
