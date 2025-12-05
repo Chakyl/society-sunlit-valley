@@ -1,6 +1,8 @@
 console.info("[SOCIETY-S-COBBLEMON] addCobblemonRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
+  e.shapeless("sunlit_cobblemon:tm_pack", ["9x #sunlit_cobblemon:tr"]);
+  e.shapeless("sunlit_cobblemon:greater_tm_pack", ["9x #sunlit_cobblemon:tm"]);
   e.shaped("sunlit_cobblemon:uncharged_battery", [" zr", "zrz", "rz "], {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",

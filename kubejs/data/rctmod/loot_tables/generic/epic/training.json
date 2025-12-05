@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:everstone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ability_capsule"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ability_patch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:lucky_egg"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/epic/training"
+}

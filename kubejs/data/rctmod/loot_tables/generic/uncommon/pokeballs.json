@@ -1,0 +1,79 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:premier_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:safari_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:heal_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_poke_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_slate_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_ivory_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_citrine_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_heavy_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_azure_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_feather_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_roseate_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_verdant_ball"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/uncommon/pokeballs"
+}

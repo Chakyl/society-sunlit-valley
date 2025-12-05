@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:beast_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:dream_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_origin_ball"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/legendary/pokeballs"
+}

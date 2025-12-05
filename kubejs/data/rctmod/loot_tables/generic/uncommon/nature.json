@@ -1,0 +1,171 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:fine_remedy",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "rctmod:level_range",
+              "range": {
+                "min": 16,
+                "max": 37
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:red_apricorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:red_mint_leaf"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:white_mint_leaf"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:blue_mint_leaf"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:pink_mint_leaf"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:cyan_mint_leaf"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:rich_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:medicinal_leek"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:green_mint_leaf"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:white_apricorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:pink_apricorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:humid_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:loamy_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:coarse_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:sandy_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:melon_slice"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potato"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_pie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:mirror_herb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:white_herb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:power_herb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:mental_herb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:energy_root"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/uncommon/nature"
+}

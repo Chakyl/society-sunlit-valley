@@ -9,13 +9,22 @@ const getCobbleFishPool = (tier, season, waterType) => {
     .filter((entry) => entry.waterTypes.includes(waterType));
 };
 
+const getCobbleNetherFishPool = (tier) => {
+  return global.cobblemonNetherFishPool.filter((entry) =>
+    entry.tiers.includes(tier)
+  );
+};
+
 const getWaterType = (biome) => {
   const biomeTags = biome
     .tags()
     .map((tagkey) => tagkey.location())
     .toList()
     .toString();
-  if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
+  if (
+    biomeTags.includes("minecraft:is_ocean") ||
+    biomeTags.includes("minecraft:is_beach")
+  ) {
     return "ocean";
   }
   if (biomeTags.includes("minecraft:is_river")) {
@@ -26,7 +35,8 @@ const getWaterType = (biome) => {
 const getBobberTier = (item) => {
   let stringNbt = item.nbt.toString();
   if (stringNbt.includes("sunlit_cobblemon:poke_bobber")) return "common";
-  if (stringNbt.includes("sunlit_cobblemon:great_poke_bobber")) return "uncommon";
+  if (stringNbt.includes("sunlit_cobblemon:great_poke_bobber"))
+    return "uncommon";
   if (stringNbt.includes("sunlit_cobblemon:ultra_poke_bobber")) return "rare";
   if (stringNbt.includes("sunlit_cobblemon:master_poke_bobber")) return "epic";
   return undefined;
@@ -50,9 +60,36 @@ const rollPokeFishingTable = (table) => {
 
 const getPokemonLevel = (lvlRange) => {
   if (!lvlRange || lvlRange.length < 2) return 1;
-  return Math.floor(Math.random() * (lvlRange[1] - lvlRange[0] + 1)) + lvlRange[0];
+  return (
+    Math.floor(Math.random() * (lvlRange[1] - lvlRange[0] + 1)) + lvlRange[0]
+  );
 };
 
+const catchPokemon = (caughtMon, level, hook, server, player) => {
+  if (!caughtMon) return;
+  let pokeLevel = getPokemonLevel(caughtMon.lvlRange);
+  if (pokeLevel == 1) {
+    console.log(`[WARNING] PokeFishing returned invalid level:`);
+    console.log(caughtMon);
+  }
+  server.runCommandSilent(
+    `pokespawnat ${hook.x} ${hook.y} ${hook.z} ${
+      caughtMon.pokemon
+    } level=${pokeLevel} ${caughtMon.variant ? caughtMon.variant : ""}`
+  );
+  let caughtPokemon = level
+    .getEntitiesWithin(AABB.ofBlock(level.getBlock(hook.getPos())).inflate(1))
+    .filter((e) => e.type.equals("cobblemon:pokemon"));
+  if (caughtPokemon && caughtPokemon.length > 0) {
+    caughtPokemon = caughtPokemon[0];
+    caughtPokemon.setDeltaMovement(new Vec3d(0, 1.5, 0));
+    server.scheduleInTicks(20, () => {
+      caughtPokemon.setDeltaMovement(
+        player.position().subtract(caughtPokemon).scale(0.1)
+      );
+    });
+  }
+};
 global.handleCobblemonFish = (e) => {
   const player = e.getEntity();
   const hook = e.getHookEntity();
@@ -63,37 +100,25 @@ global.handleCobblemonFish = (e) => {
   if (player.isFake()) player.getHeldItem("main_hand").count--;
 
   if (level.dimension === "minecraft:the_nether") {
-    console.log("fusghihng!@!!");
+    let caughtMon = rollPokeFishingTable(getCobbleNetherFishPool(bobberTier));
+
+    catchPokemon(caughtMon, level, hook, server, player);
   } else {
     let biome = level.getBiome(hook.getPos());
     let caughtMon = rollPokeFishingTable(
-      getCobbleFishPool(bobberTier, global.getSeasonFromLevel(level), getWaterType(biome))
+      getCobbleFishPool(
+        bobberTier,
+        global.getSeasonFromLevel(level),
+        getWaterType(biome)
+      )
     );
-    if (!caughtMon) return;
-    let pokeLevel = getPokemonLevel(caughtMon.lvlRange);
-    if (pokeLevel == 1) {
-      console.log(`[WARNING] PokeFishing returned invalid level:`);
-      console.log(caughtMon);
-    }
-    server.runCommandSilent(
-      `pokespawnat ${hook.x} ${hook.y} ${hook.z} ${caughtMon.pokemon} level=${pokeLevel} ${
-        caughtMon.variant ? caughtMon.variant : ""
-      }`
-    );
-
-    let caughtPokemon = level
-      .getEntitiesWithin(AABB.ofBlock(level.getBlock(hook.getPos())).inflate(1))
-      .filter((e) => e.type.equals("cobblemon:pokemon"));
-    if (caughtPokemon && caughtPokemon.length > 0) {
-      caughtPokemon = caughtPokemon[0];
-      caughtPokemon.setDeltaMovement(new Vec3d(0, 1.5, 0));
-      server.scheduleInTicks(20, () => {
-        caughtPokemon.setDeltaMovement(player.position().subtract(caughtPokemon).scale(0.1));
-      });
-    }
+    catchPokemon(caughtMon, level, hook, server, player);
   }
 };
 
-ForgeEvents.onEvent("net.minecraftforge.event.entity.player.ItemFishedEvent", (e) => {
-  global.handleCobblemonFish(e);
-});
+ForgeEvents.onEvent(
+  "net.minecraftforge.event.entity.player.ItemFishedEvent",
+  (e) => {
+    global.handleCobblemonFish(e);
+  }
+);

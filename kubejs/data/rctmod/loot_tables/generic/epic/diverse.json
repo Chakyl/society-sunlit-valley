@@ -1,0 +1,213 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sniffer_egg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_star"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:aqua_affinity",
+                "minecraft:binding_curse",
+                "minecraft:blast_protection",
+                "minecraft:depth_strider",
+                "minecraft:efficiency",
+                "minecraft:channeling",
+                "minecraft:bane_of_arthropods",
+                "minecraft:feather_falling",
+                "minecraft:fire_aspect",
+                "minecraft:fire_protection",
+                "minecraft:fortune",
+                "minecraft:frost_walker",
+                "minecraft:impaling",
+                "minecraft:infinity",
+                "minecraft:knockback",
+                "minecraft:looting",
+                "minecraft:loyalty",
+                "minecraft:luck_of_the_sea",
+                "minecraft:lure",
+                "minecraft:mending",
+                "minecraft:multishot",
+                "minecraft:piercing",
+                "minecraft:power",
+                "minecraft:projectile_protection",
+                "minecraft:protection",
+                "minecraft:punch",
+                "minecraft:quick_charge",
+                "minecraft:respiration",
+                "minecraft:riptide",
+                "minecraft:sharpness",
+                "minecraft:silk_touch",
+                "minecraft:smite",
+                "minecraft:soul_speed",
+                "minecraft:sweeping",
+                "minecraft:swift_sneak",
+                "minecraft:thorns",
+                "minecraft:unbreaking",
+                "minecraft:vanishing_curse"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_cat"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_otherside"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flower_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:creeper_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:skull_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mojang_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:globe_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:piglin_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:relic_coin_pouch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:disc_fragment_5"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/epic/diverse"
+}

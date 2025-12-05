@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:sail_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:fossilized_bird"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:dome_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:claw_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:fossilized_drake"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:plume_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:jaw_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:fossilized_fish"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:old_amber_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:skull_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:cover_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:armor_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:helix_fossil"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:fossilized_dino"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:automaton_armor_trim_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_upgrade_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ancient_origin_ball"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/legendary/archeology"
+}

@@ -1,0 +1,55 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/battle",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/berries",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/medicine",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/nature",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/pokeballs",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/training",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/evolution",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/archeology",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rctmod:generic/uncommon/diverse",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }
+  

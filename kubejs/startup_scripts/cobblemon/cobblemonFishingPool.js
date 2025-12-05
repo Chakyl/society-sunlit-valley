@@ -51,7 +51,7 @@ global.cobblemonfishPool = [
     { pokemon: "corsola", weight: 20, lvlRange: [15,40], tiers: ['common','uncommon'], seasons: ['spring','summer','autumn'], waterTypes: ['ocean']},
     { pokemon: "remoraid", weight: 15, lvlRange: [5,30], tiers: ['common','uncommon'], seasons: ['spring','summer','autumn'], waterTypes: ['ocean']},
     { pokemon: "octillery", weight: 5, lvlRange: [25,50], tiers: ['uncommon','rare'], seasons: ['summer','autumn'], waterTypes: ['ocean']},
-    { pokemon: "mantine", weight: 15, lvlRange: [30,50], tiers: ['uncommon','rare'], seasons: ['spring','summer','autumn'], waterTypes: ['ocean']},
+    // { pokemon: "mantine", weight: 15, lvlRange: [30,50], tiers: ['uncommon','rare'], seasons: ['spring','summer','autumn'], waterTypes: ['ocean']},
     { pokemon: "kingdra", weight: 1, lvlRange: [40,50], tiers: ['rare','epic'], seasons: ['summer','autumn'], waterTypes: ['ocean']},
     { pokemon: "mudkip", weight: 2, lvlRange: [5,15], tiers: ['rare','epic'], seasons: ['summer'], waterTypes: ['fresh']},
     { pokemon: "marshtomp", weight: 0.75, lvlRange: [16,35], tiers: ['epic'], seasons: ['summer'], waterTypes: ['fresh']},
@@ -134,7 +134,7 @@ global.cobblemonfishPool = [
     { pokemon: "dondozo", weight: 2, lvlRange: [30,40], tiers: ['rare'], seasons: ['spring','summer','autumn'], waterTypes: ['ocean']}
 ]
 
-global.cobblemonfishPool.nether = [
+global.cobblemonNetherFishPool = [
     { pokemon: "charmander", weight: 2, lvlRange: [5,15], tiers: ['rare', 'epic']},
     { pokemon: "charmeleon", weight: 0.75, lvlRange: [16,35], tiers: ['epic']},
     { pokemon: "charizard", weight: 0.25, lvlRange: [36,50], tiers: ['epic']},

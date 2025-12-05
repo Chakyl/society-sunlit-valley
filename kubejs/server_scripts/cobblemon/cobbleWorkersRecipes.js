@@ -206,7 +206,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:poke_genes", count: 1 },
     "psychic",
-    72000,
+    48000,
     "HP"
   );
   [
@@ -255,14 +255,14 @@ ServerEvents.recipes((e) => {
       "HP"
     );
   });
-  global.crystalariumCrystals.forEach((crystal) => {
+  Array.from(global.crystalariumCrystals.keys()).forEach((crystal) => {
     createCobbleWorkerRecipe(
       {
-        item: crystal.item,
+        item: crystal,
       },
-      { item: crystal.item, count: 1 },
+      { item: crystal, count: 1 },
       "ice",
-      10000 * crystal.time,
+      10000 * global.crystalariumCrystals.get(crystal).time,
       "HP",
       "SPECIAL_ATTACK"
     );
@@ -275,7 +275,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:fairy_heart", count: 1 },
     "fairy",
-    72000,
+    48000,
     "SPECIAL_DEFENCE"
   );
   createCobbleWorkerRecipe(
@@ -284,7 +284,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:prismatic_ice", count: 1 },
     "ice",
-    72000,
+    48000,
     "DEFENCE"
   );
   createCobbleWorkerRecipe(
@@ -293,7 +293,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:unbreakable_cog", count: 1 },
     "steel",
-    72000,
+    48000,
     "SPEED"
   );
   createCobbleWorkerRecipe(
@@ -302,7 +302,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:tabula_rasa", count: 1 },
     "rock",
-    72000,
+    48000,
     "SPEED"
   );
   createCobbleWorkerRecipe(
@@ -311,7 +311,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:endless_battery", count: 1 },
     "electric",
-    72000,
+    48000,
     "ATTACK"
   );
   createCobbleWorkerRecipe(
@@ -320,7 +320,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:blazing_stone", count: 1 },
     "fire",
-    72000,
+    48000,
     "HP"
   );
 });

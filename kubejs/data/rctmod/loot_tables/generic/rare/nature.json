@@ -1,0 +1,171 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:big_root"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:superb_remedy",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "rctmod:level_range",
+              "range": {
+                "min": 38,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:gentle_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:hasty_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:black_apricorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:serious_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:naughty_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:lax_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:calm_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:peat_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:green_apricorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:quiet_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:impish_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:surprise_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:rash_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sunlit_cobblemon:berry_capsule"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:relaxed_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:timid_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:jolly_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:yellow_apricorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:naive_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:careful_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:lonely_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:bold_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:modest_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:brave_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:blue_apricorn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:adamant_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:mild_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:sassy_mint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cocoa_beans"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:melon_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:revival_herb"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/rare/nature"
+}

@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:thunder_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:ice_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:fire_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:leaf_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:water_stone"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/uncommon/evolution"
+}
