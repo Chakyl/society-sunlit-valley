@@ -503,6 +503,29 @@ global.hasScope = (entity) => {
     .includes("sunlit_cobblemon:silph_scope");
 };
 
+global.rollPokeWeightedTable = (table) => {
+  let roll = 0;
+  const totalWeight = table.reduce((acc, current) => acc + current.weight, 0);
+  let currentWeight = 0;
+  if (totalWeight > 1) {
+    roll = rnd(0, totalWeight);
+    for (let index = 0; index < table.length; index++) {
+      currentWeight += table[index].weight;
+      if (currentWeight >= roll) {
+        return table[index];
+      }
+    }
+  }
+  return;
+};
+
+global.getPokemonLevel = (lvlRange) => {
+  if (!lvlRange || lvlRange.length < 2) return 1;
+  return (
+    Math.floor(Math.random() * (lvlRange[1] - lvlRange[0] + 1)) + lvlRange[0]
+  );
+};
+
 global.cobblemonLegendaryMap = new Map([
   ["fighting", { color: "4", legendaries: [{ entity: "", pokemon: "" }] }],
   ["psychic", { color: "d", legendaries: [{ entity: "", pokemon: "" }] }],

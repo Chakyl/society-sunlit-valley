@@ -1,0 +1,406 @@
+{
+  "implemented": true,
+  "name": "Farfetch’d",
+  "nationalPokedexNumber": 83,
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "abilities": [
+    "keeneye",
+    "innerfocus",
+    "h:defiant"
+  ],
+  "baseStats": {
+    "hp": 52,
+    "attack": 90,
+    "defence": 55,
+    "special_attack": 58,
+    "special_defence": 62,
+    "speed": 60
+  },
+  "features": [
+    "galarian"
+  ],
+  "catchRate": 45,
+  "maleRatio": 0.5,
+  "shoulderMountable": false,
+  "forms": [
+    {
+      "name": "Galar",
+      "primaryType": "fighting",
+      "abilities": [
+        "steadfast",
+        "h:scrappy"
+      ],
+      "baseStats": {
+        "hp": 52,
+        "attack": 95,
+        "defence": 55,
+        "special_attack": 58,
+        "special_defence": 62,
+        "speed": 55
+      },
+      "catchRate": 45,
+      "maleRatio": 0.5,
+      "baseExperienceYield": 132,
+      "baseFriendship": 50,
+      "evYield": {
+        "hp": 0,
+        "attack": 1,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "experienceGroup": "medium_fast",
+      "eggCycles": 20,
+      "eggGroups": [
+        "flying",
+        "field"
+      ],
+      "moves": [
+        "1:peck",
+        "1:sandattack",
+        "5:leer",
+        "10:furycutter",
+        "15:rocksmash",
+        "20:brutalswing",
+        "25:detect",
+        "30:knockoff",
+        "35:defog",
+        "40:brickbreak",
+        "45:swordsdance",
+        "50:slam",
+        "55:leafblade",
+        "60:finalgambit",
+        "65:bravebird",
+        "egg:counter",
+        "egg:covet",
+        "egg:curse",
+        "egg:doubleedge",
+        "egg:feint",
+        "egg:flail",
+        "egg:nightslash",
+        "egg:quickattack",
+        "egg:quickguard",
+        "egg:simplebeam",
+        "egg:skyattack",
+        "tm:assurance",
+        "tm:attract",
+        "tm:bodyslam",
+        "tm:bravebird",
+        "tm:brickbreak",
+        "tm:brutalswing",
+        "tm:closecombat",
+        "tm:endure",
+        "tm:facade",
+        "tm:focusenergy",
+        "tm:helpinghand",
+        "tm:leafblade",
+        "tm:poisonjab",
+        "tm:protect",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:revenge",
+        "tm:round",
+        "tm:sleeptalk",
+        "tm:snore",
+        "tm:solarblade",
+        "tm:steelwing",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:superpower",
+        "tm:swordsdance",
+        "tm:throatchop",
+        "tm:workup",
+        "tutor:dualwingbeat"
+      ],
+      "labels": [
+        "gen8",
+        "galar_regional"
+      ],
+      "aspects": [
+        "galarian"
+      ],
+      "height": 8,
+      "weight": 150,
+      "evolutions": [
+        {
+          "id": "farfetchd_sirfetchd",
+          "variant": "level_up",
+          "result": "sirfetchd",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "battle_critical_hits",
+              "amount": 3
+            }
+          ]
+        }
+      ],
+      "cannotDynamax": false,
+      "battleOnly": false,
+      "drops": {
+        "amount": 4,
+        "entries": [
+          {
+            "item": "minecraft:feather",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "minecraft:chicken"
+          },
+          {
+            "item": "cobblemon:roasted_leek",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "cobblemon:coba_berry",
+            "percentage": 2.5
+          }
+        ]
+      }
+    }
+  ],
+  "baseExperienceYield": 132,
+  "experienceGroup": "medium_fast",
+  "eggCycles": 20,
+  "eggGroups": [
+    "flying",
+    "field"
+  ],
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "depth": "normal",
+      "light": "0-4"
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "walkSpeed": 0.3
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:roasted_leek",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:chilan_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:peck",
+    "1:poisonjab",
+    "1:sandattack",
+    "5:leer",
+    "7:furyattack",
+    "10:furycutter",
+    "15:cut",
+    "20:aerialace",
+    "25:aircutter",
+    "30:knockoff",
+    "33:nightslash",
+    "35:falseswipe",
+    "37:acrobatics",
+    "40:slash",
+    "43:feint",
+    "45:swordsdance",
+    "50:airslash",
+    "55:leafblade",
+    "60:agility",
+    "65:bravebird",
+    "egg:covet",
+    "egg:curse",
+    "egg:featherdance",
+    "egg:feint",
+    "egg:finalgambit",
+    "egg:firstimpression",
+    "egg:flail",
+    "egg:foresight",
+    "egg:gust",
+    "egg:leafblade",
+    "egg:mirrormove",
+    "egg:mudslap",
+    "egg:nightslash",
+    "egg:quickattack",
+    "egg:revenge",
+    "egg:roost",
+    "egg:simplebeam",
+    "egg:skyattack",
+    "egg:steelwing",
+    "egg:trumpcard",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:airslash",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:bodyslam",
+    "tm:bravebird",
+    "tm:brutalswing",
+    "tm:captivate",
+    "tm:closecombat",
+    "tm:confide",
+    "tm:cut",
+    "tm:defog",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fly",
+    "tm:focusenergy",
+    "tm:frustration",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:irontail",
+    "tm:leafblade",
+    "tm:naturalgift",
+    "tm:pluck",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:psychup",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:return",
+    "tm:revenge",
+    "tm:roost",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarblade",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:toxic",
+    "tm:uproar",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:agility",
+    "tutor:aircutter",
+    "tutor:airslash",
+    "tutor:attract",
+    "tutor:batonpass",
+    "tutor:bide",
+    "tutor:bodyslam",
+    "tutor:covet",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:defog",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dualwingbeat",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:falseswipe",
+    "tutor:feint",
+    "tutor:flail",
+    "tutor:fly",
+    "tutor:focusenergy",
+    "tutor:foresight",
+    "tutor:frustration",
+    "tutor:furyattack",
+    "tutor:furycutter",
+    "tutor:gust",
+    "tutor:headbutt",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hiddenpower",
+    "tutor:irontail",
+    "tutor:knockoff",
+    "tutor:laserfocus",
+    "tutor:lastresort",
+    "tutor:leafblade",
+    "tutor:leer",
+    "tutor:mimic",
+    "tutor:mirrormove",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:peck",
+    "tutor:poisonjab",
+    "tutor:protect",
+    "tutor:psychup",
+    "tutor:quickattack",
+    "tutor:rage",
+    "tutor:razorleaf",
+    "tutor:razorwind",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:roost",
+    "tutor:sandattack",
+    "tutor:skullbash",
+    "tutor:skyattack",
+    "tutor:slash",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelwing",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:swordsdance",
+    "tutor:tailwind",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:throatchop",
+    "tutor:toxic",
+    "tutor:twister",
+    "tutor:uproar",
+    "tutor:uturn",
+    "tutor:whirlwind",
+    "tutor:wish",
+    "tutor:yawn"
+  ],
+  "labels": [
+    "gen1",
+    "kanto_regional"
+  ],
+  "pokedex": [
+    "cobblemon.species.farfetchd.desc"
+  ],
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.0,
+    "fixed": false
+  },
+  "baseFriendship": 50,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "height": 8,
+  "weight": 150,
+  "aspects": [],
+  "evolutions": [],
+  "cannotDynamax": false
+}

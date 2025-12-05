@@ -1,4 +1,5 @@
 global.removedItems = [
+  "cobblemon:medicinal_leek",
   "simpletms:tm_gmaxdrumsolo",
   "simpletms:tm_gmaxwildfire",
   "simpletms:tm_gmaxvinelash",

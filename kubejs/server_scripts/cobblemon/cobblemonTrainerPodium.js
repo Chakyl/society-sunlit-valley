@@ -17,13 +17,20 @@ BlockEvents.rightClicked(["sunlit_cobblemon:trainer_podium"], (e) => {
     }
   });
   if (podiumPlayer) {
-    if (!podiumPlayer.persistentData.winStreak) podiumPlayer.persistentData.winStreak = 0;
+    if (!podiumPlayer.persistentData.winStreak)
+      podiumPlayer.persistentData.winStreak = 0;
     player.tell(`§6${podiumPlayer.username}'s§7 Trainer Podium`);
-    player.tell(`§7Current Win Streak: §6${podiumPlayer.persistentData.winStreak}`);
-    player.tell(`§7Trainer Level Tier: §6${global.getPlayerPodiumLevelTier(podiumPlayer)}`);
+    player.tell(
+      `§7Current Win Streak: §6${podiumPlayer.persistentData.winStreak}`
+    );
+    player.tell(
+      `§7Trainer Level Tier: §6${global.getPlayerPodiumLevelTier(podiumPlayer)}`
+    );
   } else {
     player.tell(
-      Text.gray("This is a stranger's Trainer Podium. They aren't online to draw stats from...")
+      Text.gray(
+        "This is a stranger's Trainer Podium. They aren't online to draw stats from..."
+      )
     );
   }
 });
@@ -33,17 +40,19 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "OFF_HAND") return;
   if (target.type !== "rctmod:trainer") return;
 
-    let currentLevel = global.getPlayerPodiumLevelTier(player);
-    let trainerLevel = global.getTrainerLevelTier(target.getNbt().TrainerId.toString());
-    if (trainerLevel !== currentLevel) {
+  let currentLevel = global.getPlayerPodiumLevelTier(player);
+  let trainerLevel = global.getTrainerLevelTier(
+    target.getNbt().TrainerId.toString()
+  );
+  if (trainerLevel !== currentLevel) {
     let tooHigh = currentLevel < trainerLevel;
-      server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${
-          global.animalMessageSettings
-        } 120 This trainer's level is too ${
-          tooHigh ? "high" : "low"
-        } for your team! You need an average level of ${trainerLevel}.`
-      );
-      e.cancel();
-    }
+    server.runCommandSilent(
+      `emberstextapi sendcustom ${player.username} ${
+        global.animalMessageSettings
+      } 120 This trainer's level is too ${
+        tooHigh ? "high" : "low"
+      } for your team! You need an average level of ${trainerLevel + 5}.`
+    );
+    e.cancel();
+  }
 });

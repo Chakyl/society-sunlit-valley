@@ -1,0 +1,129 @@
+{
+  "implemented": true,
+  "name": "Sirfetch’d",
+  "nationalPokedexNumber": 865,
+  "primaryType": "fighting",
+  "abilities": [
+    "steadfast",
+    "h:scrappy"
+  ],
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:roasted_leek"
+      },
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "baseStats": {
+    "hp": 62,
+    "attack": 135,
+    "defence": 95,
+    "special_attack": 68,
+    "special_defence": 82,
+    "speed": 65
+  },
+  "catchRate": 45,
+  "maleRatio": 0.5,
+  "shoulderMountable": false,
+  "baseExperienceYield": 177,
+  "experienceGroup": "medium_fast",
+  "eggCycles": 20,
+  "eggGroups": [
+    "flying",
+    "field"
+  ],
+  "moves": [
+    "1:firstimpression",
+    "1:furycutter",
+    "1:leer",
+    "1:peck",
+    "1:sandattack",
+    "15:rocksmash",
+    "20:brutalswing",
+    "25:detect",
+    "30:knockoff",
+    "35:defog",
+    "40:brickbreak",
+    "45:swordsdance",
+    "50:slam",
+    "55:leafblade",
+    "60:finalgambit",
+    "65:bravebird",
+    "70:meteorassault",
+    "tm:assurance",
+    "tm:attract",
+    "tm:bodyslam",
+    "tm:bravebird",
+    "tm:brickbreak",
+    "tm:brutalswing",
+    "tm:closecombat",
+    "tm:endure",
+    "tm:facade",
+    "tm:focusenergy",
+    "tm:helpinghand",
+    "tm:irondefense",
+    "tm:leafblade",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:revenge",
+    "tm:round",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarblade",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superpower",
+    "tm:swordsdance",
+    "tm:throatchop",
+    "tm:workup",
+    "tutor:brutalswing",
+    "tutor:coaching",
+    "tutor:detect",
+    "tutor:dualwingbeat",
+    "tutor:furycutter",
+    "tutor:grassyglide",
+    "tutor:meteorassault"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "pokedex": [
+    "cobblemon.species.sirfetchd.desc"
+  ],
+  "preEvolution": "farfetchd galarian",
+  "evolutions": [],
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.0,
+    "fixed": false
+  },
+  "baseFriendship": 50,
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "height": 8,
+  "weight": 1170,
+  "aspects": [],
+  "cannotDynamax": false
+}

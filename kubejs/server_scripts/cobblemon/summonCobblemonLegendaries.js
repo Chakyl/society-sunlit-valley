@@ -8,7 +8,6 @@ ItemEvents.entityInteracted((e) => {
       player.tell(Text.red("You can't see Pokemon!"));
       return;
     }
-    let legendaryData;
     let foundLegendary;
     global.cobblemonLegendaryMap
       .get(`${item.nbt.getString("type")}`)

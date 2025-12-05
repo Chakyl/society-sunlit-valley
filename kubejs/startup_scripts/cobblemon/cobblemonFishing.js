@@ -3,7 +3,7 @@ console.info("[SOCIETY-S-COBBLEMON] cobblemonFishing.js loaded");
 const Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3");
 
 const getCobbleFishPool = (tier, season, waterType) => {
-  return global.cobblemonfishPool
+  return global.cobblemonFishPool
     .filter((entry) => entry.tiers.includes(tier))
     .filter((entry) => entry.seasons.includes(season))
     .filter((entry) => entry.waterTypes.includes(waterType));
@@ -42,50 +42,44 @@ const getBobberTier = (item) => {
   return undefined;
 };
 
-const rollPokeFishingTable = (table) => {
-  let roll = 0;
-  const totalWeight = table.reduce((acc, current) => acc + current.weight, 0);
-  let currentWeight = 0;
-  if (totalWeight > 1) {
-    roll = rnd(0, totalWeight);
-    for (let index = 0; index < table.length; index++) {
-      currentWeight += table[index].weight;
-      if (currentWeight >= roll) {
-        return table[index];
-      }
-    }
-  }
-  return;
-};
-
-const getPokemonLevel = (lvlRange) => {
-  if (!lvlRange || lvlRange.length < 2) return 1;
-  return (
-    Math.floor(Math.random() * (lvlRange[1] - lvlRange[0] + 1)) + lvlRange[0]
-  );
-};
-
-const catchPokemon = (caughtMon, level, hook, server, player) => {
+const catchPokemon = (caughtMon, level, hook, server, player, nether) => {
   if (!caughtMon) return;
-  let pokeLevel = getPokemonLevel(caughtMon.lvlRange);
+  let pokeLevel = global.getPokemonLevel(caughtMon.lvlRange);
   if (pokeLevel == 1) {
     console.log(`[WARNING] PokeFishing returned invalid level:`);
     console.log(caughtMon);
   }
-  server.runCommandSilent(
-    `pokespawnat ${hook.x} ${hook.y} ${hook.z} ${
-      caughtMon.pokemon
-    } level=${pokeLevel} ${caughtMon.variant ? caughtMon.variant : ""}`
-  );
+  if (nether) {
+    server.runCommandSilent(
+      `execute in minecraft:the_nether run pokespawnat ${hook.x} ${hook.y} ${
+        hook.z
+      } ${caughtMon.pokemon} level=${pokeLevel} ${
+        caughtMon.variant ? caughtMon.variant : ""
+      }`
+    );
+  } else {
+    server.runCommandSilent(
+      `pokespawnat ${hook.x} ${hook.y + 2} ${hook.z} ${
+        caughtMon.pokemon
+      } level=${pokeLevel} ${caughtMon.variant ? caughtMon.variant : ""}`
+    );
+  }
+
+  // TODO: Pokemon get kinda stuck in the lava
   let caughtPokemon = level
-    .getEntitiesWithin(AABB.ofBlock(level.getBlock(hook.getPos())).inflate(1))
+    .getEntitiesWithin(
+      AABB.ofBlock(level.getBlock(hook.getPos())).inflate(nether ? 3 : 1)
+    )
     .filter((e) => e.type.equals("cobblemon:pokemon"));
   if (caughtPokemon && caughtPokemon.length > 0) {
     caughtPokemon = caughtPokemon[0];
     caughtPokemon.setDeltaMovement(new Vec3d(0, 1.5, 0));
     server.scheduleInTicks(20, () => {
       caughtPokemon.setDeltaMovement(
-        player.position().subtract(caughtPokemon).scale(0.1)
+        player
+          .position()
+          .subtract(caughtPokemon)
+          .scale(nether ? 0.3 : 0.1)
       );
     });
   }
@@ -96,16 +90,17 @@ global.handleCobblemonFish = (e) => {
   const server = player.getServer();
   const level = player.getLevel();
   const bobberTier = getBobberTier(player.getHeldItem("main_hand"));
-  if (!bobberTier) return;
+  if (!bobberTier || !global.hasScope(player)) return;
   if (player.isFake()) player.getHeldItem("main_hand").count--;
 
   if (level.dimension === "minecraft:the_nether") {
-    let caughtMon = rollPokeFishingTable(getCobbleNetherFishPool(bobberTier));
-
-    catchPokemon(caughtMon, level, hook, server, player);
+    let caughtMon = global.rollPokeWeightedTable(
+      getCobbleNetherFishPool(bobberTier)
+    );
+    catchPokemon(caughtMon, level, hook, server, player, true);
   } else {
     let biome = level.getBiome(hook.getPos());
-    let caughtMon = rollPokeFishingTable(
+    let caughtMon = global.rollPokeWeightedTable(
       getCobbleFishPool(
         bobberTier,
         global.getSeasonFromLevel(level),
