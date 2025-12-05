@@ -1,6 +1,3 @@
-
-
-
 ItemEvents.tooltip((tooltip) => {
   const formatNumber = (number, quality) => {
     let value;
