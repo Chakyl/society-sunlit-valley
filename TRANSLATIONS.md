@@ -3,7 +3,7 @@ Want to help translate? We rely on high quality community contributions to trans
 
 ## Before translating
 - Be sure to join the [Discord](https://discord.com/invite/GdcZkrZqkj) as a translation community exists there already! This helps prevent repeated work and can also get you help if there's others out there that want to translate the same language.
-- **Absolutely no AI/LLM/Machine generated translations!** I believe no translation is better than a translation that is unvetted, misleading, or even incorrect. Small high quality translations are better than no translations! 
+- **Absolutely no AI/LLM/Machine generated translations!** I believe not having a translation is better than a translation that is unvetted, misleading, or even incorrect. Small high quality translations are better than no translations! 
 
 ## What files to translate
 There are four categories of translation files:
