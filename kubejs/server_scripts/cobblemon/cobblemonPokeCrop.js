@@ -132,7 +132,33 @@ const specialSpawns = new Map([
       { pokemon: "ribombee", weight: 1, lvlRange: [25, 40] },
     ],
   ],
+  [
+    "farmersdelight:cabbages",
+    [
+      { pokemon: "leafeon", weight: 1, lvlRange: [25, 35] },
+      { pokemon: "spewpa", weight: 5, lvlRange: [5, 20] },
+    ],
+  ],
+  [
+    "etcetera:cotton",
+    [
+      { pokemon: "whimsicott", weight: 3, lvlRange: [20, 30] },
+      { pokemon: "cottonee", weight: 3, lvlRange: [5, 20] },
+    ],
+  ],
+  [
+    "pamhc2trees:pampawpaw",
+    [{ pokemon: "exeggcute", weight: 1, lvlRange: [5, 25] }],
+  ],
+  [
+    "minecraft:potatoes",
+    [
+      { pokemon: "kricketot", weight: 3, lvlRange: [5, 25] },
+      { pokemon: "kricketune", weight: 1, lvlRange: [20, 30] },
+    ],
+  ],
 ]);
+
 const getCropPool = (crop) => {
   let basePool = crop.includes("pamhc2trees")
     ? genericTreeSpawns
