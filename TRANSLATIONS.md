@@ -7,10 +7,10 @@ Want to help translate? We rely on high quality community contributions to trans
 
 ## What files to translate
 There are four categories of translation files:
-- Mod translations (For example, a Create mod translation). These should be submitted to the mod author if possible!
-- Modpack specific overrides. If two mods add the same thing or is named something I don't like, I rename it! These can be found in `kubejs/assets/MODID/lang/en_us` folders for every mod.
-- Society items and blocks. These can be found [here](https://github.com/Chakyl/society-sunlit-valley/blob/master/kubejs/assets/society/lang/en_us_template.json) and the contents should be added to `society/lang/lang_code.json` file. It's done this way because Sunlit Valley is made in English and that template file is generated every update for all the Society items/blocks in the pack.
-- Quests translations are located in `kubejs/assets/ftbquestlocalizer/lang`. **These translations are low priority as it takes a ton of time and effort to translate, and quests often change every update**.
+- **Mod translations** (For example, a Create mod translation). These should be submitted to the mod author if possible!
+- **Modpack specific overrides**. If two mods add the same thing or is named something I don't like, I rename it! These can be found in `kubejs/assets/MODID/lang/en_us` folders for every mod.
+- **Society items and blocks**. These can be found [here](https://github.com/Chakyl/society-sunlit-valley/blob/master/kubejs/assets/society/lang/en_us_template.json) and the contents should be added to `society/lang/lang_code.json` file. It's done this way because Sunlit Valley is made in English and that template file is generated every update for all the Society items/blocks in the pack.
+- **Quests translations** are located in `kubejs/assets/ftbquestlocalizer/lang`. **These translations are low priority as it takes a ton of time and effort to translate, and quests often change every update**.
 
 There is also the `translations` folder which contains all translation files for a language. This is useful for organizing translations and keeping all language specific files in one place, but not strictly required at the moment.
 
