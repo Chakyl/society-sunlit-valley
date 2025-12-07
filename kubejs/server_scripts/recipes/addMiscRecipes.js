@@ -70,7 +70,10 @@ ServerEvents.recipes((e) => {
     "minecraft:bucket",
   ]);
   e.shapeless("minecraft:magenta_dye", ["windswept:lavender"]);
-  e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
+  e.shapeless("3x society:prismatic_shard", [
+    "society:token_of_unity",
+    "society:prismatic_shard",
+  ]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
   e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
@@ -79,8 +82,12 @@ ServerEvents.recipes((e) => {
   e.shapeless("3x minecraft:glass_bottle", ["vintagedelight:mason_jar"]);
   e.shapeless("society:magic_tunnel", ["society:magic_rope"]);
   e.shapeless("society:magic_rope", ["society:magic_tunnel"]);
-  e.shapeless("refinedstorage:network_transmitter", ["refinedstorage:network_receiver"]);
-  e.shapeless("refinedstorage:network_receiver", ["refinedstorage:network_transmitter"]);
+  e.shapeless("refinedstorage:network_transmitter", [
+    "refinedstorage:network_receiver",
+  ]);
+  e.shapeless("refinedstorage:network_receiver", [
+    "refinedstorage:network_transmitter",
+  ]);
   e.shaped("meadow:cobbled_limestone", ["cs ", "sc "], {
     c: "minecraft:cobblestone",
     s: "meadow:alpine_salt",
@@ -114,10 +121,22 @@ ServerEvents.recipes((e) => {
     f: "society:jade",
     g: "moreminecarts:organic_glass",
   });
-  e.stonecutting("moreminecarts:greenhouse_glass_stairs", "moreminecarts:chiseled_organic_glass");
-  e.stonecutting("moreminecarts:chiseled_organic_glass", "moreminecarts:greenhouse_glass_stairs");
-  e.stonecutting("moreminecarts:greenhouse_glass_slab", "moreminecarts:chiseled_organic_glass");
-  e.stonecutting("moreminecarts:chiseled_organic_glass", "moreminecarts:greenhouse_glass_slab");
+  e.stonecutting(
+    "moreminecarts:greenhouse_glass_stairs",
+    "moreminecarts:chiseled_organic_glass"
+  );
+  e.stonecutting(
+    "moreminecarts:chiseled_organic_glass",
+    "moreminecarts:greenhouse_glass_stairs"
+  );
+  e.stonecutting(
+    "moreminecarts:greenhouse_glass_slab",
+    "moreminecarts:chiseled_organic_glass"
+  );
+  e.stonecutting(
+    "moreminecarts:chiseled_organic_glass",
+    "moreminecarts:greenhouse_glass_slab"
+  );
   // Earth Crystal
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
@@ -196,11 +215,12 @@ ServerEvents.recipes((e) => {
     z: "create:zinc_ingot",
   });
   // Fire Quartz
-  e.shaped("society:seed_maker", [" f ", "pcp", "ggg"], {
+  e.shaped("society:seed_maker", [" f ", "pcp", "FgF"], {
     g: "minecraft:gold_block",
     c: "minecraft:composter",
     f: "society:earth_crystal",
     p: "society:pine_tar",
+    F: "meadow:fire_log",
   });
   e.shaped("brewery:copper_brewingstation", ["tct", "cbc", "fcf"], {
     t: "society:pine_tar",
@@ -278,10 +298,11 @@ ServerEvents.recipes((e) => {
     I: "minecraft:iron_block",
   });
   // Battery
-  e.shaped("society:crystalarium", ["iii", "SDS", "ibi"], {
+  e.shaped("society:crystalarium", ["III", "SDS", "ibi"], {
     D: "minecraft:diamond_block",
     S: "minecraft:netherite_ingot",
     b: "society:battery",
+    I: "oreganized:lead_ingot",
     i: "oreganized:lead_block",
   });
   e.shaped("society:espresso_machine", ["iii", "ltl", "bib"], {
@@ -289,6 +310,13 @@ ServerEvents.recipes((e) => {
     l: "minecraft:lime_dye",
     b: "society:battery",
     i: "create:zinc_ingot",
+  });
+  e.shaped("society:pickling_can", ["zbz", "scs", "zlz"], {
+    l: "vintagedelight:salt_lamp_green",
+    c: "minecraft:cactus",
+    s: "oreganized:silver_ingot",
+    b: "society:battery",
+    z: "create:zinc_block",
   });
   e.shaped("beachparty:mini_fridge", ["zlz", "ziz", "zbz"], {
     l: "minecraft:lime_dye",
@@ -302,7 +330,10 @@ ServerEvents.recipes((e) => {
     b: "society:battery",
   });
   // Prismatic
-  e.shapeless("society:car_key", ["relics:horse_flute", "society:prismatic_shard"]);
+  e.shapeless("society:car_key", [
+    "relics:horse_flute",
+    "society:prismatic_shard",
+  ]);
   e.shaped("society:prize_machine", ["ttt", "tbt", "ttt"], {
     b: "bountiful:bountyboard",
     t: "society:prize_ticket",
@@ -353,7 +384,10 @@ ServerEvents.recipes((e) => {
     "paraglider:goddess_statue",
     "society:prismatic_shard",
   ]);
-  e.shapeless("rehooked:red_hook", ["rehooked:diamond_hook", "society:prismatic_shard"]);
+  e.shapeless("rehooked:red_hook", [
+    "rehooked:diamond_hook",
+    "society:prismatic_shard",
+  ]);
   e.shaped("society:ancient_cask", [" p ", "vav", " p "], {
     a: "society:aging_cask",
     p: "society:prismatic_shard",
@@ -523,7 +557,9 @@ ServerEvents.recipes((e) => {
   });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
   e.shapeless("society:plushie_capsule", ["4x #society:plushies"]);
-  e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(0.35);
+  e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(
+    0.35
+  );
   // Crab trap bait
   e.shapeless("crabbersdelight:crab_trap_bait", ["aquaculture:worm"]);
   e.shapeless("4x crabbersdelight:crab_trap_bait", ["aquaculture:minnow"]);
@@ -628,7 +664,12 @@ ServerEvents.recipes((e) => {
   e.shapeless("society:death_liquid", [
     "minecraft:skeleton_skull",
     "society:battery",
-    ["society:salmonberry", "society:boysenberry", "society:cranberry", "society:crystalberry"],
+    [
+      "society:salmonberry",
+      "society:boysenberry",
+      "society:cranberry",
+      "society:crystalberry",
+    ],
   ]);
   e.shapeless("4x farmersdelight:canvas", ["society:canvas"]);
   e.shapeless("1x society:tubasmoke_stick", [
@@ -712,30 +753,46 @@ ServerEvents.recipes((e) => {
     f: "society:fire_quartz",
     e: "society:earth_crystal",
   });
-  e.shaped("dew_drop_farmland_growth:diamond_sprinkler", ["nDn", " s ", " b "], {
-    s: "dew_drop_farmland_growth:gold_sprinkler",
-    D: "minecraft:diamond_block",
-    b: "society:battery",
-    n: "aquaculture:neptunium_nugget",
-  });
-  e.shaped("dew_drop_farmland_growth:diamond_sprinkler", ["nDn", "blb", " l "], {
-    l: "#society:raw_logs",
-    D: "minecraft:diamond_block",
-    b: "society:battery",
-    n: "aquaculture:neptunium_nugget",
-  });
-  e.shaped("dew_drop_farmland_growth:netherite_sprinkler", ["nNn", " s ", " j "], {
-    s: "dew_drop_farmland_growth:diamond_sprinkler",
-    j: "society:jade",
-    N: "minecraft:netherite_ingot",
-    n: "aquaculture:neptunium_ingot",
-  });
-  e.shaped("dew_drop_farmland_growth:netherite_sprinkler", ["nNn", "jlj", " l "], {
-    l: "#society:raw_logs",
-    j: "society:jade",
-    N: "minecraft:netherite_ingot",
-    n: "aquaculture:neptunium_ingot",
-  });
+  e.shaped(
+    "dew_drop_farmland_growth:diamond_sprinkler",
+    ["nDn", " s ", " b "],
+    {
+      s: "dew_drop_farmland_growth:gold_sprinkler",
+      D: "minecraft:diamond_block",
+      b: "society:battery",
+      n: "aquaculture:neptunium_nugget",
+    }
+  );
+  e.shaped(
+    "dew_drop_farmland_growth:diamond_sprinkler",
+    ["nDn", "blb", " l "],
+    {
+      l: "#society:raw_logs",
+      D: "minecraft:diamond_block",
+      b: "society:battery",
+      n: "aquaculture:neptunium_nugget",
+    }
+  );
+  e.shaped(
+    "dew_drop_farmland_growth:netherite_sprinkler",
+    ["nNn", " s ", " j "],
+    {
+      s: "dew_drop_farmland_growth:diamond_sprinkler",
+      j: "society:jade",
+      N: "minecraft:netherite_ingot",
+      n: "aquaculture:neptunium_ingot",
+    }
+  );
+  e.shaped(
+    "dew_drop_farmland_growth:netherite_sprinkler",
+    ["nNn", "jlj", " l "],
+    {
+      l: "#society:raw_logs",
+      j: "society:jade",
+      N: "minecraft:netherite_ingot",
+      n: "aquaculture:neptunium_ingot",
+    }
+  );
 
   // Botania
   e.shaped("society:botanical_tribute", ["CCC", "CMC", "CCC"], {

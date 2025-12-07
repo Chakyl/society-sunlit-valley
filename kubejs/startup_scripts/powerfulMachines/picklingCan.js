@@ -8,6 +8,16 @@ global.picklingRecipes = new Map([
   ["minecraft:beetroot", { pickle: "vintagedelight:pickled_beetroot" }],
   ["farm_and_charm:onion", { pickle: "vintagedelight:pickled_onion" }],
   ["farmersdelight:cabbage", { pickle: "vintagedelight:kimchi" }],
+  ["farmersdelight:cabbage_leaf", { pickle: "vintagedelight:kimchi" }],
+  ["minecraft:egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["minecraft:turtle_egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["untitledduckmod:duck_egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["untitledduckmod:goose_egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["autumnity:turkey_egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["farmlife:galliraptor_egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["society:penguin_egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["society:flamingo_egg", { pickle: "vintagedelight:pickled_egg" }],
+  ["society:cracked_egg", { pickle: "vintagedelight:pickled_egg" }],
 ]);
 global.picklableVegetables.forEach((pickle) => {
   global.picklingRecipes.set(pickle.item, {
@@ -16,10 +26,10 @@ global.picklableVegetables.forEach((pickle) => {
 });
 global.handlePicklingCan = (e) => {
   const { inventory, level, block } = e;
+  const { x, y, z } = block;
+  let radius = 1;
   let slots = inventory.getSlots();
   let slotItem;
-  let sentItem;
-  let belowItem;
   const belowPos = block.getPos().below();
   const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
   if (belowBlock.inventory && !inventory.isEmpty()) {
@@ -29,26 +39,32 @@ global.handlePicklingCan = (e) => {
         slotItem !== Item.of("minecraft:air") &&
         global.picklingRecipes.get(`${slotItem.id}`)
       ) {
-        for (let j = 0; j < belowBlock.inventory.slots; j++) {
-          belowItem = belowBlock.inventory.getStackInSlot(j);
-          let pickle = global.picklingRecipes.get(`${slotItem.id}`).pickle;
-          if (
-            belowItem === Item.of("minecraft:air") ||
-            (belowItem === pickle &&
-              belowItem.count < belowBlock.inventory.getSlotLimit(j))
-          ) {
-            sentItem = pickle;
-            if (
-              slotItem.nbt &&
-              slotItem.nbt.quality_food &&
-              !slotItem.hasTag("society:plushies")
-            ) {
-              sentItem.nbt = null;
+        let pickle = global.picklingRecipes.get(`${slotItem.id}`).pickle;
+        let pickleItem = Item.of(`1x ${pickle}`, slotItem.nbt);
+        if (global.inventoryBelowHasRoom(level, block, pickleItem)) {
+          let scanBlock;
+          for (let pos of BlockPos.betweenClosed(
+            new BlockPos(x - radius, y - radius, z - radius),
+            [x + radius, y + radius, z + radius]
+          )) {
+            scanBlock = level.getBlock(pos);
+            if (scanBlock.id === "vintagedelight:salt") {
+              let saltProperties = scanBlock.getProperties();
+              if (rnd50()) {
+                if (Number(saltProperties.get("layers")) > 1) {
+                  saltProperties.layers = `${
+                    Number(saltProperties.get("layers")) - 1
+                  }`;
+                  scanBlock.set(scanBlock.id, saltProperties);
+                } else {
+                  scanBlock.set("minecraft:air");
+                }
+              }
+
+              global.insertBelow(level, block, pickleItem);
+              slotItem.count--;
+              return;
             }
-            sentItem.count = 1;
-            belowBlock.inventory.insertItem(j, sentItem, false);
-            slotItem.count--;
-            return;
           }
         }
       }
@@ -58,16 +74,20 @@ global.handlePicklingCan = (e) => {
 
 StartupEvents.registry("block", (event) => {
   event
-    .create("society:pickling_can", "cardinal")
+    .create("society:pickling_can")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .box(0, 0, 0, 16, 16, 16)
+    .soundType("copper")
+    .box(1, 0, 1, 15, 15, 15)
     .defaultCutout()
     .item((item) => {
       item.tooltip(
         Text.gray(
           "Pickles vegetables automatically and inserts them into the block below"
         )
+      );
+      item.tooltip(
+        Text.red("Requires adjacent Salt Layers from an Evaporator")
       );
       item.tooltip(Text.green("Preserves input quality"));
       item.modelJson({
@@ -77,7 +97,7 @@ StartupEvents.registry("block", (event) => {
     .model("etcetera:block/prickly_can")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(20, 0, (entity) => {
+      blockInfo.serverTick(600, 0, (entity) => {
         global.handlePicklingCan(entity);
       }),
         blockInfo.rightClickOpensInventory();

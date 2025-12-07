@@ -1,6 +1,74 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": "item:minecraft:oak_stairs"
+    }
+  ],
   "lookup_history": [
+    "item:quark:vertical_oak_planks",
+    "item:numismatics:neptunium_coin",
+    "item:simplehats:cucumbereyemask",
+    "item:vintagedelight:kimchi",
+    "item:society:pickling_can",
+    {
+      "type": "item",
+      "id": "minecraft:oak_slab",
+      "amount": 64
+    },
+    "item:vintagedelight:smooth_salt_block",
+    "item:vintagedelight:salt_bricks",
+    "item:vintagedelight:mixed_salt_bricks",
+    "item:vintagedelight:mixed_salt_brick_slab",
+    {
+      "type": "item",
+      "id": "vintagedelight:salt_brick_slab",
+      "amount": 64
+    },
+    "item:vintagedelight:salt_lamp_green",
+    "item:vintagedelight:salt_lamp_lime",
+    "item:vintagedelight:mixed_salt_brick_wall",
+    "item:vintagedelight:salt_lamp_yellow",
+    "item:vintagedelight:salted_cod",
+    "item:vintagedelight:salt_lamp_brown",
+    "item:vintagedelight:salt_lamp_blue",
+    "item:vintagedelight:salt_lamp_gray",
+    "item:vintagedelight:salt_pillar",
+    "item:vintagedelight:salt_block",
+    "item:society:wine_keg",
+    "item:minecraft:gold_block",
+    "item:society:pine_tar",
+    "item:society:oak_resin",
+    "item:minecraft:copper_block",
+    {
+      "type": "item",
+      "id": "society:espresso_machine",
+      "amount": 64
+    },
+    "item:oreganized:silver_ingot",
+    "item:oreganized:raw_silver",
+    "item:society:jade",
+    "item:vintagedelight:fermenting_jar",
+    {
+      "type": "item",
+      "id": "oreganized:lead_ingot",
+      "amount": 9
+    },
+    "item:oreganized:lead_block",
+    "item:society:seed_maker",
+    {
+      "type": "item",
+      "id": "vintagedelight:cucumber",
+      "nbt": "{quality_food:{effects:[],quality:2}}",
+      "amount": 64
+    },
+    "item:minecraft:oak_fence_gate",
+    {
+      "type": "item",
+      "id": "vintagedelight:pickle",
+      "nbt": "{quality_food:{effects:[],quality:2}}",
+      "amount": 62
+    },
+    "item:vintagedelight:evaporator",
     "item:whimsy_deco:phone",
     {
       "type": "item",
@@ -22,11 +90,6 @@
     "item:farm_and_charm:oat",
     "item:unusualfishmod:raw_picklefish",
     "item:minecraft:egg",
-    {
-      "type": "item",
-      "id": "vintagedelight:kimchi",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "farmersdelight:cabbage_leaf",
@@ -159,7 +222,6 @@
     "item:society:flamingo_egg{quality_food:{effects:[],quality:3}}",
     "item:minecraft:netherite_ingot",
     "item:oreganized:electrum_ingot",
-    "item:oreganized:silver_ingot",
     "item:minecraft:gold_ingot",
     "item:minecraft:copper_ingot",
     "item:minecraft:iron_ingot",
@@ -480,9 +542,7 @@
     "item:vintagedelight:century_egg",
     "item:vintagedelight:pickle_soup",
     "item:vintagedelight:sweet_berry_jam_bottle",
-    "item:vintagedelight:fermenting_jar",
     "item:vintagedelight:magic_vine",
-    "item:vintagedelight:salt_lamp_blue",
     "item:vintagedelight:salt_lamp_light_gray",
     "item:vintagedelight:wild_cucumbers",
     "item:vintagedelight:salt_lamp_pink",
@@ -551,7 +611,6 @@
     "item:society:zucchini_preserves",
     "item:veggiesdelight:garlic",
     "item:society:pickled_garlic",
-    "item:vintagedelight:cucumber",
     "item:vintagedelight:ghost_pepper",
     "#item:minecraft:wooden_slabs",
     "item:railways:wooden_headstock_link_and_pin",
