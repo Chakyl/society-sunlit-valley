@@ -1,0 +1,41 @@
+{
+  "name": "포도 🌐",
+  "category": "patchouli:crops",
+  "icon": "vinery:red_grape",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 4$(li)🌐 종류별 (지지대/격자)$(li)🌐 §5연중§r (덤불/덩굴)$(li)성장 시간: 2일 (지지대/격자)$(li)성장 단계: 3(덤불/덩굴)$(br2)$(l)메모$()$(br)각 포도 이름과 대응되는 생물군계에서 발견 가능. 땅에 심어 덤불로 기를 수도 있고, 포도 지지대나 격자판에 심어 생산량을 늘릴 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "포도 지지대",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "vinery:grapevine_stem[age=4,grape=red]",
+          "F": "vinery:grapevine_stem"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "포도 덤불",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "vinery:red_grape_bush[age=3]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "고대 과일 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "society:ancient_fruit",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 128$(li)🌼 §2봄§r 🔥 §6여름§r 🍂 §4가을$(li)수확량: 1$(li)성장 시간: 10일$(br2)$(l)메모$()$(br)씨앗은 극도로 희귀합니다. 고대 톱니바퀴를 사용하는 것이 가장 쉬운 획득처입니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "고대 과일 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "society:ancient_fruit[age=10]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

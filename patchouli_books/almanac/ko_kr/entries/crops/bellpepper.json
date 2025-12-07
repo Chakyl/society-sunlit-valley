@@ -1,0 +1,26 @@
+{
+  "name": "피망 🔥",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:bellpepper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 32$(li)🔥 §6여름§r$(li)씨앗 가격: :coin: 64$(li)수확량: 1-3$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "피망 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:bellpepper_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

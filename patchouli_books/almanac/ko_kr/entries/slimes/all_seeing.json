@@ -1,0 +1,17 @@
+{
+  "name": "점쟁이",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:all_seeing\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)심장 합성$(br2)$(l)주의사항:$()$(br)벽을 기어오를 수 있으며, 기분이 나쁠 때 독 효과를 부여합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "점쟁이 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:all_seeing\"}",
+      "scale": 0.9
+    }
+  ]
+}

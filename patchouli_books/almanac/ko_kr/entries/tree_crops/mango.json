@@ -1,0 +1,26 @@
+{
+    "name": "망고 🔥",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:mangoitem",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li):coin: 64$(li)🔥 §6여름§r$(li)수확량: 1$(li)성장 단계: 8$(br2)$(l)메모$()$(li)참조: $(l:trees/pams/mango)망고나무$(/l)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "망고나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "0": "minecraft:oak_leaves",
+                    "F": "pamhc2trees:pammango[age=7]"
+                },
+                "pattern": [
+                    ["0"],
+                    ["F"]
+                ]
+            }
+        }
+    ]
+}

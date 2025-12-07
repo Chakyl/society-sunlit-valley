@@ -1,0 +1,17 @@
+{
+  "name": "북극곰",
+  "category": "patchouli:pets",
+  "icon": "minecraft:snowball",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)테디 베어 (모자)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:polar_bear",
+      "scale": 0.7,
+      "text": "화나게 하지 마세요."
+    }
+  ]
+}

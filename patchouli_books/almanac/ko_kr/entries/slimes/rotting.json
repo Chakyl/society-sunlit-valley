@@ -1,0 +1,17 @@
+{
+  "name": "부패",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:rotting\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)생물군계: 얼어붙은 동굴 (해골 광산)$(li)구조물: 슬라임 생성기$(li)채굴 지점: 오버월드 블록$(li)풍선 상자: 빨간색$(br2)$(l)주의사항:$()$(br)기분이 나쁠 때 허기 효과를 부여합니다. 슬라임 좀비를 소환하여 주민을 공격합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "부패 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:rotting\"}",
+      "scale": 0.9
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "눈송이지느러미고기",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_snowflake",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 96$(li)\u00a70\u2746 \u00a7b겨울\u00a70$(li)수역: 담수$(li)날씨: 비, 눈$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:snowflaketail",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "파랗고 귀엽게 생긴 녀석이에요!"
+    }
+  ]
+}

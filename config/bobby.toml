@@ -1,0 +1,15 @@
+
+#Bobby Reforged Settings
+[Settings]
+
+	[Settings."General Settings"]
+		"Do not load block entities in fake chunks" = true
+		"Reduce the light levels in fake chunks" = false
+		"Integrated Server View Distance override" = 0
+		"Max Render Distance" = 12
+		"Enable Bobby" = true
+
+	[Settings.Unloading]
+		"Delay for deleting regions from the disk cache (days)" = -1
+		"Delay for unloading of chunks which are outside your view distance (seconds)" = 60
+

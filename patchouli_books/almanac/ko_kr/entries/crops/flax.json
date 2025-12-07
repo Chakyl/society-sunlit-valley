@@ -1,0 +1,28 @@
+{
+  "name": "아마 🌼",
+  "category": "patchouli:crops",
+  "icon": "supplementaries:flax",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 68$(li)🌼 §2봄$(li)씨앗 가격: :coin: 8$(li)수확량: 1$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "아마 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["1"],
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "1": "supplementaries:flax[age=7,half=upper]",
+          "0": "supplementaries:flax[age=7,half=lower]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

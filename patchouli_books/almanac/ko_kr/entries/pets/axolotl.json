@@ -1,0 +1,17 @@
+{
+  "name": "아홀로틀",
+  "category": "patchouli:pets",
+  "icon": "beachparty:rubber_ring_axolotl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)아홀로틀 친구, 아홀로틀 고무 튜브"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:axolotl",
+      "scale": 0.8  ,
+      "text": "무성한 동굴에 사는 물고기 사냥꾼."
+    }
+  ]
+}

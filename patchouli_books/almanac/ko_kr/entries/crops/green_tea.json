@@ -1,0 +1,26 @@
+{
+  "name": "녹차 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:green_tea_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 4$(li)🌼 §2봄§r 🔥 §6여름§r 🍂 §4가을$(li)수확량: 1$(li)성장 시간: 3일$(br2)$(l)메모$()$(br)초록 풍선에서 획득 가능.$(br)녹차 잎 블록을 설치하여 건조할 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "녹차 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "herbalbrews:tea_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

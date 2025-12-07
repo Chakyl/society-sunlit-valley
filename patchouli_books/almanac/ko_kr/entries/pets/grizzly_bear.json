@@ -1,0 +1,17 @@
+{
+  "name": "회색곰",
+  "category": "patchouli:pets",
+  "icon": "buzzier_bees:honey_apple",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)비모니칸 인장$(br2)$(l)메모$()$(br)생성 상자로만 만날 수 있습니다. JEI에서 숨겨져 있습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "buzzier_bees:grizzly_bear",
+      "scale": 0.6,
+      "text": "어디서 온 걸까요..."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
     "name": "Society Sunlit Valley",
-    "version": "3.4.2",
+    "version": "3.4.3",
     "overrides": [
         "config",
         "defaultconfigs",
@@ -22,6 +22,9 @@
             "side": "CLIENT"
         },
         "bad-wither-no-cookie-reloaded": {
+            "side": "CLIENT"
+        },
+        "bobby": {
             "side": "CLIENT"
         },
         "chat-heads": {

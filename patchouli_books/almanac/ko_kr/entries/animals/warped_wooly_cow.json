@@ -1,0 +1,18 @@
+{
+  "name": "뒤틀린 털 소",
+  "category": "patchouli:animals",
+  "icon": "society:large_warped_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)착유: 뒤틀린 우유$(li)착유 간격: 2일$(li)가위질 드랍: 뒤틀린 양털$(li)드롭 아이템: 뒤틀린 양털, 소고기, 가죽$(br2)$(l)메모$()$(br)뒤틀린 숲 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Warped Wooly Cow",
+      "entity": "meadow:wooly_cow{Variant:2}",
+      "scale": 0.8,
+      "text": "뒤틀린 우유로 만든 치즈는 품질이 아주 좋습니다."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "폭스하운드",
+  "category": "patchouli:pets",
+  "icon": "minecraft:coal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)선물 목록:$()$(br)불꽃 (모자)$(br2)$(l)길들이기:$()$(br)화염 저항 효과가 있는 상태에서 석탄을 주기."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "quark:foxhound",
+      "scale": 0.7,
+      "text": "이 화끈한 친구들은 자신이 앉아 있는 화로를 가속시킵니다."
+    }
+  ]
+}

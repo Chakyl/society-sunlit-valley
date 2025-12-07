@@ -1,0 +1,26 @@
+{
+  "name": "커피 콩 🌼",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:coffee_beans",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 8$(li)🌼 §2봄§r$(li)수확량: 1-2$(li)성장 시간: 3일$(br2)$(l)메모$()$(br)정글 생물군계에서 발견 가능.$(br)씨앗이 따로 없기 때문에 열매를 심으면 됩니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "커피 콩 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "herbalbrews:coffee_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

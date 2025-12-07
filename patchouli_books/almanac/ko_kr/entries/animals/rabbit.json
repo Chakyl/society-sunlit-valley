@@ -1,0 +1,17 @@
+{
+  "name": "토끼",
+  "category": "patchouli:animals",
+  "icon": "minecraft:rabbit_foot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: :coin: 4,096$(li)채집: 고운 털, 토끼발$(li)드롭 아이템: 토끼고기, 토끼 가죽$(br2)$(l)메모$()$(br)호감도 3하트 이상부터 고운 털 채집 가능. 7하트 이상부터 토끼발 채집 가능."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:rabbit",
+      "scale": 0.8,
+      "text": "쓰다듬으려하면 도망가지만, 친해진다면 남는 발...을 줄겁니다..."
+    }
+  ]
+}

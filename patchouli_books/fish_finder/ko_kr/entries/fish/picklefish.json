@@ -1,0 +1,18 @@
+{
+  "name": "피클고기",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_picklefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 48$(li)\u00a70\ud83c\udf42 \u00a74가을\u00a70$(li)수역: 바다$(li)날씨: 비, 눈$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:picklefish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "실제로 물고기로 피클을 담그지는 마세요."
+    }
+  ]
+}

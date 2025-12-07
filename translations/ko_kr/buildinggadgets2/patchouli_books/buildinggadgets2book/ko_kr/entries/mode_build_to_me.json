@@ -1,0 +1,21 @@
+{
+    "name": "내 위치까지",
+    "sortnum": 1,
+    "category": "buildinggadgets2:modes",
+    "icon": "buildinggadgets2:textures/book/mode/build_to_me.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "내 위치까지 모드는 플레이어가 보는 블록 면에서 플레이어까지 블록 한 줄을 건설합니다. 이는 플레이어가 보는 블록 면에 따라 수평 또는 수직이 될 수 있습니다. $(br2)이 모드에서는 범위 설정이 무시됩니다.$(br2)\"위에 놓기\" 설정이 활성화되면 플레이어의 발이 아닌 머리까지 건설됩니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "내 위치까지",
+            "images": [
+                "buildinggadgets2:textures/book/images/ghost_render.png"
+            ],
+            "border": true,
+            "text": "플레이어 위치까지 건설"
+        }
+    ]
+}

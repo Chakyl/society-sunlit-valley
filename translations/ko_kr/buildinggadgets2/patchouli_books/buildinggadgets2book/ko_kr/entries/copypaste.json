@@ -1,0 +1,73 @@
+{
+    "name": "복사 붙여넣기 가젯",
+    "sortnum": 3,
+    "category": "buildinggadgets2:gadgets",
+    "icon": "buildinggadgets2:gadget_copy_paste{energy:1000000}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "복사 붙여넣기 가젯을 사용하면 구조물을 훨씬 쉽게 복제할 수 있습니다! 시작하려면 설정 메뉴에서 '복사' 모드에 있는지 확인하세요. $(br2)구조물의 한쪽 모서리를 우클릭한 다음 반대쪽 모서리를 시프트 + 우클릭합니다. 올바르게 완료되면 초록색 윤곽선이 구조물을 둘러쌉니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "복사하기",
+            "images": [
+                "buildinggadgets2:textures/book/images/copy.png"
+            ],
+            "border": true,
+            "text": "영역을 지정한 모습"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "가젯을 '붙여넣기' 모드로 전환하면 복사한 구조물의 미리보기가 표시됩니다. 처음에 우클릭한 블록이 붙여넣기의 기준점이 됩니다. $(br2)구조물을 세계에 배치하려면 우클릭하세요! 건설에 필요한 모든 아이템이 보관함에서 소모되고, 아이템이 없는 블록은 건너뜁니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "붙여넣기",
+            "images": [
+                "buildinggadgets2:textures/book/images/paste.png"
+            ],
+            "border": true,
+            "text": "붙여넣기 미리보기"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "필요한 아이템 목록을 보려면 설정 메뉴를 열고 '재료 목록' 옵션을 선택하세요. $(br2)이것은 당신이 가지고 있거나 가지고 있지 않은 아이템을 보여주는 스크롤 가능한 목록이며, 여러 가지 방법으로 정렬할 수 있습니다. 한번 사용해 보세요!"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "재료 목록",
+            "images": [
+                "buildinggadgets2:textures/book/images/materiallist.png"
+            ],
+            "border": true,
+            "text": "필요한 재료"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "설정 메뉴에서 배치 조정 창을 열어 복사 영역을 미세 조정할 수 있습니다.$(br2)여기에서 영역의 시작 블록과 끝 블록의 위치를 조정할 수 있습니다. 플러스 및 마이너스 버튼을 클릭하면 초록색 상자가 실시간으로 변경되는 것을 볼 수 있습니다.$(br2)절대 좌표 모드로 전환하여 게임 내 월드 좌표를 입력할 수도 있습니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "복사 영역 조정",
+            "images": [
+                "buildinggadgets2:textures/book/images/copy_adjustment.png"
+            ],
+            "border": true,
+            "text": "복사하는 영역 변경"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "붙여넣기 모드에 대한 유사한 옵션이 있습니다. $(br2)이 UI에서는 기준점의 위치를 조정합니다. 버튼을 클릭하면 실시간으로 미리보기가 갱신됩니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "붙여넣기 조정",
+            "images": [
+                "buildinggadgets2:textures/book/images/paste_adjustment.png"
+            ],
+            "border": true,
+            "text": "붙여넣기 위치 변경"
+        }
+    ]
+}

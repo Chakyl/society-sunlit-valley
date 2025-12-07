@@ -1,0 +1,19 @@
+{
+  "name": "용암복어",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:lava_pufferfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 264$(li)차원: 네더$(li)생물군계: 전체"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:lava_pufferfish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "압착기에 한 번 찍은 것 같아요."
+    }
+  ]
+}

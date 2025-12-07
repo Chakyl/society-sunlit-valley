@@ -732,8 +732,8 @@
 				item: "society:truffle"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.0d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
@@ -780,8 +780,8 @@
 				item: "society:mayonnaise_machine"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5B5A764F0E02E5FF"]
@@ -801,8 +801,8 @@
 				item: "society:cheese_press"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.0d
+			x: 6.5d
+			y: 4.5d
 		}
 		{
 			description: [
@@ -1842,7 +1842,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3D324E99DF28D224"]
+			dependencies: ["780F1E73497414A0"]
 			description: [
 				"When a farm animal reaches &63&r affection or higher, it will need a proper bed! Place it near an animal that doesn't have a bed to assign it to that bed."
 				""
@@ -1880,9 +1880,9 @@
 				title: "Any Basic Animal Bed"
 				type: "item"
 			}]
-			title: "Housing Animals"
-			x: 5.5d
-			y: 4.5d
+			title: "Don't look at me"
+			x: 14.0d
+			y: 7.0d
 		}
 		{
 			description: [
@@ -1922,9 +1922,9 @@
 				title: "Any Upgraded Bed"
 				type: "item"
 			}]
-			title: "Picky Animals"
-			x: 7.5d
-			y: 4.5d
+			title: "Don't look at me either"
+			x: 15.0d
+			y: 7.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"
