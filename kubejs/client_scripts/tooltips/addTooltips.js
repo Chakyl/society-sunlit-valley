@@ -1295,23 +1295,28 @@ ItemEvents.tooltip((tooltip) => {
   // Books
   tooltip.add(
     "society:yard_work_yearly",
-    Text.translatable("item.society.yard_work_yearly.description").green()
+    Text.translatable("item.society.skill_book.description", 
+      global.translatableWithFallback("society_skills.farming.category.title", "Farming")).green()
   );
   tooltip.add(
     "society:husbandry_hourly",
-    Text.translatable("item.society.husbandry_hourly.description").green()
+    Text.translatable("item.society.skill_book.description", 
+      global.translatableWithFallback("society_skills.husbandry.category.title", "Husbandry")).green()
   );
   tooltip.add(
     "society:mining_monthly",
-    Text.translatable("item.society.mining_monthly.description").green()
+    Text.translatable("item.society.skill_book.description", 
+      global.translatableWithFallback("society_skills.mining.category.title", "Mining")).green()
   );
   tooltip.add(
     "society:combat_quarterly",
-    Text.translatable("item.society.combat_quarterly.description").green()
+    Text.translatable("item.society.skill_book.description", 
+      global.translatableWithFallback("society_skills.adventuring.category.title", "Adventuring")).green()
   );
   tooltip.add(
     "society:wet_weekly",
-    Text.translatable("item.society.wet_weekly.description").green()
+    Text.translatable("item.society.skill_book.description", 
+      global.translatableWithFallback("society_skills.fishing.category.title", "Fishing")).green()
   );
   tooltip.add(
     "society:book_of_stars",
