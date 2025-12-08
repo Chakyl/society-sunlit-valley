@@ -915,7 +915,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:ocean_jelly",
   ];
   craftingMaterials.forEach((item) => {
-    tooltip.add(item, Text.gray("Crafting material"));
+    tooltip.add(item, Text.translatable("tooltip.society.item_type.crafting_material").gray());
   });
   // Prize Machine
   tooltip.add(
@@ -928,7 +928,7 @@ ItemEvents.tooltip((tooltip) => {
       "etcetera:eggple",
       "etcetera:golden_eggple",
     ],
-    "🍖 §6Prize Machine reward"
+    Text.translatable("tooltip.society.item_type.prize_machine_reward").gold()
   );
   const workstation = [
     { villager: Text.translatable("entity.minecraft.villager.etched.bard"), block: "minecraft:note_block" },
@@ -1214,23 +1214,22 @@ ItemEvents.tooltip((tooltip) => {
   global.animalBeds.forEach((bed) => {
     tooltip.addAdvanced(`society:${bed}_bed`, (item, advanced, text) => {
       if (tooltip.shift) {
-        text.add(1, Text.green("Supports these animals:"));
+        text.add(1, Text.translatable("block.society.coop_bed.description.supports").green());
         global.bedDefinitions.get(bed).forEach((animal, index) => {
           text.add(
             index + 2,
-            Text.gold(global.formatName(String(animal.path).replace(/_/g, " ")))
+            Text.translatable(global.translatedEntityName(animal)).gold()
           );
         });
       } else {
         text.add(
           1,
-          Text.gray("Houses a farm animal, allowing it to have a higher maximum affection")
+          Text.translatable("block.society.coop_bed.description").gray()
         );
-        text.add(2, Text.gold("Only certain animals like this bed!"));
+        text.add(2, Text.translatable("block.society.coop_bed.description.tip").gold());
         text.add(3, [
-          Text.darkGray("Hold ["),
-          Text.gray("Shift"),
-          Text.darkGray("] to view animals"),
+          Text.translatable("block.society.coop_bed.description.view_animal", 
+            Text.translatable("key.keyboard.shift").gray()).darkGray(),
         ]);
       }
     });
@@ -1238,19 +1237,19 @@ ItemEvents.tooltip((tooltip) => {
 
   // Magnifying
   const magnifyingBlocks = [
-    "Auto-Grabber",
-    "Artisan Hoppers",
-    "Chicken Nest",
-    "Feeding Trough",
-    "Slime Feeder",
-    "Snow Melter",
-    "Fish Pond Basket",
-    "Golden Clock",
-    "Mana Clock",
-    "Mana Milker",
-    "All Sprinklers",
-    "Growth Obelisk",
-    "Ribbit Hut",
+    Text.translatable("block.society.auto_grabber"),
+    Text.translatable("block.society.artisan_hopper"),
+    Text.translatable("block.farmingforblockheads.chicken_nest"),
+    Text.translatable("block.society.feeding_trough"),
+    Text.translatable("block.splendid_slimes.slime_feeder"),
+    Text.translatable("block.society.snow_melter"),
+    Text.translatable("block.society.fish_pond_basket"),
+    Text.translatable("block.society.golden_clock"),
+    Text.translatable("block.society.mana_clock"),
+    Text.translatable("block.society.mana_milker"),
+    Text.translatable("item.society.magnifying_glass.description.view_block.sprinklers"),
+    Text.translatable("block.society.growth_obelisk"),
+    Text.translatable("block.society.ribbit_hut"),
   ];
   tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {
     if (tooltip.shift) {
@@ -1258,45 +1257,35 @@ ItemEvents.tooltip((tooltip) => {
         text.add(index + 1, Text.gold(block));
       });
     } else {
-      text.add(1, Text.green("Displays working area of some machines"));
+      text.add(1, Text.translatable("item.society.magnifying_glass.description").green());
       text.add(2, [
-        Text.darkGray("Hold ["),
-        Text.gray("Shift"),
-        Text.darkGray("] to view blocks"),
+          Text.translatable("item.society.magnifying_glass.description.view_block", 
+            Text.translatable("key.keyboard.shift").gray()).darkGray(),
       ]);
     }
   });
-  tooltip.add("trials:ominous_bottle", Text.blue("Bad Omen (10:00)"));
-  tooltip.add(
-    "society:overflow_token",
-    Text.gray("Permanantly adds ● 1,006,632,960")
+  tooltip.add("trials:ominous_bottle", 
+    Text.translatable("effect.minecraft.bad_omen").blue().append(Text.of(" (10:00)"))
   );
   tooltip.add(
     "society:overflow_token",
-    Text.gray("to your coin leaderboard score,")
+    Text.translatable("item.society.overflow_token.description", 
+      Text.translatable("tooltip.society.coins", "1,006,632,960")).gray()
   );
   tooltip.add(
     "society:overflow_token",
-    Text.gray("bypassing the bank account's cap.")
-  );
-  tooltip.add(
-    "society:overflow_token",
-    Text.red("Overflow tokens cannot be recovered")
+    Text.translatable("item.society.overflow_token.description.warn").red()
   );
   // Sprinklers
   const generateSprinklerTooltip = (tooltip, tier, radius) => {
     const tooltipRadius = 1 + radius * 2;
     tooltip.add(
       `dew_drop_farmland_growth:${tier}_sprinkler`,
-      Text.gray("Waters crops before they dry out at 6am")
+      Text.translatable("tooltip.society.sprinkler").gray()
     );
     tooltip.add(
       `dew_drop_farmland_growth:${tier}_sprinkler`,
-      Text.gray("Can be given a stick for decoration")
-    );
-    tooltip.add(
-      `dew_drop_farmland_growth:${tier}_sprinkler`,
-      Text.green(`Area: ${tooltipRadius}x${tooltipRadius}`)
+      Text.translatable("tooltip.society.area", `${tooltipRadius}x${tooltipRadius}`).green()
     );
   };
   generateSprinklerTooltip(tooltip, "iron", 1);
@@ -1306,27 +1295,27 @@ ItemEvents.tooltip((tooltip) => {
   // Books
   tooltip.add(
     "society:yard_work_yearly",
-    Text.green("Right click to gain Farming experience")
+    Text.translatable("item.society.yard_work_yearly.description").green()
   );
   tooltip.add(
     "society:husbandry_hourly",
-    Text.green("Right click to gain Husbandry experience")
+    Text.translatable("item.society.husbandry_hourly.description").green()
   );
   tooltip.add(
     "society:mining_monthly",
-    Text.green("Right click to gain Mining experience")
+    Text.translatable("item.society.mining_monthly.description").green()
   );
   tooltip.add(
     "society:combat_quarterly",
-    Text.green("Right click to gain Adventuring experience")
+    Text.translatable("item.society.combat_quarterly.description").green()
   );
   tooltip.add(
     "society:wet_weekly",
-    Text.green("Right click to gain Fishing experience")
+    Text.translatable("item.society.wet_weekly.description").green()
   );
   tooltip.add(
     "society:book_of_stars",
-    Text.green("Right click to gain experience in all skills")
+    Text.translatable("item.society.book_of_stars.description").green()
   );
   tooltip.add(
     [
@@ -1339,7 +1328,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:ancient_vespertine",
       "society:dewy_star",
     ],
-    Text.red("Not placeable in Wine Racks")
+    Text.translatable("tooltip.society.wine_rack_incompatible").red()
   );
   // Temp: Dramatic Doors
   tooltip.add(
@@ -1350,9 +1339,7 @@ ItemEvents.tooltip((tooltip) => {
       "dramaticdoors:tall_create_framed_glass_door",
       "dramaticdoors:tall_create_train_door",
     ],
-    Text.darkRed(
-      "Temporarily removed due to breaking worlds when on a Create Contraption"
-    )
+    Text.translatable("tooltip.society.temporarily_remove_door").darkRed()
   );
   tooltip.add(
     [
@@ -1371,12 +1358,16 @@ ItemEvents.tooltip((tooltip) => {
       "fantasyfurniture:necrolord/bed_single",
       "fantasyfurniture:necrolord/bed_double",
     ],
-    Text.red("Does not work with Magic Mirror!")
+    Text.translatable("tooltip.society.magic_mirror_incompatible").red()
   );
   // Refined
-  tooltip.add("refinedstorage:4k_storage_block", Text.green("Stores 4,000 items digitally"));
-  tooltip.add("refinedstorage:64k_storage_block", Text.green("Stores 64,000 items digitally"));
+  tooltip.add("refinedstorage:4k_storage_block", 
+    Text.translatable("tooltip.society.storage_block", "4,000").green()
+  );
+  tooltip.add("refinedstorage:64k_storage_block", 
+    Text.translatable("tooltip.society.storage_block", "64,000").green()
+  );
   global.removedItems.forEach((item) => {
-    tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
+    tooltip.add(item, Text.translatable("tooltip.society.removed_items").red());
   });
 });
