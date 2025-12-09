@@ -158,7 +158,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
     let biome = 
       Text.of("   🌊 ").append(extraOutput ? Text.translatable("society.fish_radar.ocean").darkAqua() : Text.empty());
-    printFunction(Text.join(" ", [biome, weather, time]));
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -176,7 +176,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   } else if (biomeTags.includes("minecraft:is_river")) {
     let biome = 
       Text.of("   ☔ ").append(extraOutput ? Text.translatable("society.fish_radar.river").blue() : Text.empty());
-    printFunction(Text.join(" ", [biome, weather, time]));
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -194,7 +194,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   } else {
     let biome = 
       Text.of("   ☄ ").append(extraOutput ? Text.translatable("society.fish_radar.fresh").aqua() : Text.empty());
-    printFunction(Text.join(" ", [biome, weather, time]));
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -308,7 +308,7 @@ global.handleFee = (server, player, reason) => {
     player.give(
       Item.of(
         "candlelight:note_paper_written",
-        `{author:"${_author}",text:['{"translate":"society.hospital_receipt.debt", "with":["${_amountToDeduct}"]}'],title:"${_title}"}`
+        `{author:"${_author}",text:['{"translate":"society.hospital_receipt.fee_taked", "with":["${_amountToDeduct}"]}'],title:"${_title}"}`
       )
     );
   }
