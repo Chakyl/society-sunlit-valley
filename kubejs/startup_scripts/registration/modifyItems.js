@@ -38,7 +38,7 @@ ItemEvents.modification((e) => {
       item.rarity = "epic";
     }
   );
-  e.modify(["society:bank_meter", "society:milk_pail", "society:magic_shears"], (item) => {
+  e.modify(["society:milk_pail", "society:magic_shears"], (item) => {
     item.maxStackSize = 1;
   });
   e.modify("society:aquamarine", (item) => {
@@ -124,7 +124,7 @@ ItemEvents.modification((e) => {
   ];
   goldTools.forEach((tool) => {
     e.modify(tool, (item) => {
-      item.maxDamage *= tool.split(":")[0] === "justhammers" ? 2 : 16;
+      item.maxDamage *= tool.namespace === "justhammers" ? 2 : 16;
     });
   });
   e.modify("minecraft:golden_helmet", (item) => {

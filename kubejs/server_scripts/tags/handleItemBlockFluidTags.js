@@ -254,6 +254,8 @@ const rawLogs = [
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
+  e.add("stardew_fishing:bobbers", "society:needle_bobber");
+  e.add("stardew_fishing:bobbers", "society:net_bobber");
   e.add("forge:plates/lead", "oreganized:lead_sheet");
   e.add("forge:plates", "oreganized:lead_sheet");
   e.add("forge:plates/silver", "oreganized:silver_sheet");
@@ -280,6 +282,7 @@ e.add("forge:water_bottles", "herbalbrews:water_cup");
   e.add("meadow:cheese_blocks", "meadow:amethyst_cheese_block");
   e.add("netherdepthsupgrade:lava_fishing_rod", "forge:tools/fishing_rods");
   e.add("forge:rope", "brewery:rope");
+  e.add("forge:cobblestone", "meadow:cobbled_limestone");
   e.remove("forge:chests/ender", "minecraft:ender_chest");
   e.remove("forge:chests", "minecraft:ender_chest");
   e.remove("whimsy_deco:gatcha_machine_accepts", "minecraft:diamond");
@@ -572,6 +575,7 @@ e.add("forge:water_bottles", "herbalbrews:water_cup");
 ServerEvents.tags("block", (e) => {
   e.add("minecraft:crops", "farmersdelight:tomatoes");
   const buildingGadgetsDeny = [
+    "society:wine_keg",
     "society:aging_cask",
     "society:ancient_cask",
     "society:charging_rod",
@@ -658,8 +662,8 @@ ServerEvents.tags("block", (e) => {
   ].forEach((wool) => {
     e.add("minecraft:mineable/axe", wool);
   });
-  global.tapperRecipes.forEach((recipe) => {
-    e.add("society:tappable_blocks", recipe.input);
+  Array.from(global.tapperRecipes.keys()).forEach((key) => {
+    e.add("society:tappable_blocks", key);
   });
   const unbreakableTags = [
     "minecraft:wither_immune",

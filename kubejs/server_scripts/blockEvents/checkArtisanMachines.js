@@ -75,23 +75,25 @@ const idMap = new Map([
   ["society:double_aged_beer_wheat", "Double-Aged Wheat Beer"],
 ]);
 
-const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machineId, maxInput) => {
+const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, maxInput) => {
   const { player, block, item, server } = clickEvent;
+  const blockStage = nbt.data.stage;
   const status = maxInput !== -1 ? "Requires more input for" : "Currently making";
   let primaryOutput;
-  let recipe;
+  let recipe = nbt.data.recipe;
   let id;
-
-  if (recipes === "society:battery") id = "society:battery";
-  else {
-    recipe = global.getArtisanRecipe(recipes, block);
-    if (!recipe) return;
-    id = String(Item.of(recipe.output[0]).id);
+  let duration;
+  const isChargingRod = machineId.equals("society:charging_rod");
+  if (!recipe && !isChargingRod) return;
+  if (isChargingRod) {
+    id = "society:battery";
+    duration = stageCount;
+  } else {
+    id = String(Item.of(recipes.get(recipe).output[0]).id);
     primaryOutput = idMap.get(id);
+    duration = recipes.get(recipe).time || stageCount;
+    if (recipe === item) return;
   }
-  if (recipe?.input === item) return;
-  let duration =
-    (block.properties.get("type") && global.getArtisanRecipe(recipes, block).time) || stageCount;
   if (
     machineId == "society:aging_cask" &&
     block.properties.get("upgraded").toLowerCase() === "true"
@@ -100,9 +102,9 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
   }
   const pipCount = maxInput !== -1 ? maxInput : duration;
   if (!primaryOutput)
-    primaryOutput = id
-      .split(":")[1]
-      .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
+    primaryOutput = id.path.replace(/^_*(.)|_+(.)/g, (s, c, d) =>
+      c ? c.toUpperCase() : " " + d.toUpperCase()
+    );
   let outputString = "";
   for (let index = 0; index < pipCount; index++) {
     if (index < blockStage) outputString += "⬛";
@@ -183,6 +185,7 @@ BlockEvents.rightClicked(
     "society:ancient_cask",
     "society:charging_rod",
     "society:crystalarium",
+    "society:wine_keg",
     "society:deluxe_worm_farm",
     "society:dehydrator",
     "society:espresso_machine",
@@ -196,16 +199,18 @@ BlockEvents.rightClicked(
     "society:cheese_press",
   ],
   (e) => {
-    const { block, hand } = e;
-    if (hand == "OFF_HAND") return;
+    const { block, hand, item } = e;
+    if (hand == "OFF_HAND" || item !== "minecraft:air") return;
     const machine = global.artisanMachineDefinitions.filter((obj) => {
       return obj.id === block.id;
     })[0];
     if (block.properties.get("mature").toLowerCase() === "false") {
+      let nbt = block.getEntityData();
+      if (nbt.data.type == 0) return;
       sendProgressMessage(
         e,
         machine.recipes,
-        block.properties.get("stage").toLowerCase(),
+        nbt,
         machine.stageCount,
         machine.id,
         block.properties.get("working").toLowerCase() === "false" ? machine.maxInput : -1
