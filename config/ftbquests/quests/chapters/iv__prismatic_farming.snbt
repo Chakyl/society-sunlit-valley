@@ -854,8 +854,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 19.0d
+			x: -1.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["0E4EA6B5E8E6361C"]
@@ -1165,6 +1165,31 @@
 			title: "Juicing up the Wine"
 			x: -7.5d
 			y: 22.5d
+		}
+		{
+			dependencies: ["4A96DC00D7D0CAD6"]
+			description: [
+				"The &6Pickling Can&r is an efficient way to pickle certain vegetables."
+				""
+				"It requires adjacent Salt Layers produced by an &6Evaporator&r, but does its job faster than other methods. "
+				""
+				"High quality vegetables will produce high quality pickles!"
+			]
+			id: "038D4A6A3CA1C015"
+			rewards: [{
+				count: 8
+				id: "61BD13A2B1C52924"
+				item: "vintagedelight:cucumber_seeds"
+				type: "item"
+			}]
+			tasks: [{
+				id: "43B657F11F0AAEA9"
+				item: "society:pickling_can"
+				type: "item"
+			}]
+			title: "Quality Pickling"
+			x: -3.0d
+			y: 19.0d
 		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"

@@ -1,14 +1,32 @@
-const registerBECategory = (event, categoryID, block, title, inputCount, days) => {
+const registerBECategory = (
+  event,
+  categoryID,
+  block,
+  title,
+  inputCount,
+  days
+) => {
   event.custom(`society:${categoryID}`, (category) => {
     const {
       jeiHelpers: { guiHelper },
     } = category;
     category
       .title(title)
-      .background(guiHelper.createDrawable("society:textures/gui/block_entity.png", 1, 1, 142, 42))
+      .background(
+        guiHelper.createDrawable(
+          "society:textures/gui/block_entity.png",
+          1,
+          1,
+          142,
+          42
+        )
+      )
       .icon(guiHelper.createDrawableItemStack(Item.of(`society:${block}`)))
       .isRecipeHandled((recipe) => {
-        return !!(recipe?.data?.input !== undefined && recipe?.data?.output !== undefined);
+        return !!(
+          recipe?.data?.input !== undefined &&
+          recipe?.data?.output !== undefined
+        );
       })
       .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
         let dayCount = recipe.getRecipeData().time || days;
@@ -36,7 +54,9 @@ const registerBECategory = (event, categoryID, block, title, inputCount, days) =
         } else {
           builder
             .addSlot("INPUT", 2, 2)
-            .addItemStack(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`)
+            .addItemStack(
+              `${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`
+            )
             .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         }
         builder.addSlot("CATALYST", 52, 2).addItemStack(`society:${block}`);
@@ -69,16 +89,18 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
       .isRecipeHandled((recipe) => {
         return !!(recipe?.data?.item !== undefined);
       })
-      .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-        global["textDrawHandler"](
-          category.jeiHelpers,
-          recipe,
-          recipeSlotsView,
-          guiGraphics,
-          mouseX,
-          mouseY
-        );
-      })
+      .setDrawHandler(
+        (recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+          global["textDrawHandler"](
+            category.jeiHelpers,
+            recipe,
+            recipeSlotsView,
+            guiGraphics,
+            mouseX,
+            mouseY
+          );
+        }
+      )
       .handleLookup((builder, recipe) => {
         const { item, additionalRewards } = recipe.data;
         let fishId = item.path;
@@ -101,7 +123,12 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
           .addSlot("INPUT", 2, 2)
           .addItemStack(`${item}`)
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
-        global["textDrawHandler"] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics) => {
+        global["textDrawHandler"] = (
+          jeiHelpers,
+          recipe,
+          recipeSlotsView,
+          guiGraphics
+        ) => {
           guiGraphics.drawWordWrap(
             Client.font,
             Text.translatable("jei.society.working_block_entity.item"),
@@ -114,7 +141,11 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
         outputs.forEach((reward, index) => {
           const line = index > 6 ? 28 : 2;
           builder
-            .addSlot("OUTPUT", 26 + (index > 6 ? index - 7 : index) * slotSize, line)
+            .addSlot(
+              "OUTPUT",
+              26 + (index > 6 ? index - 7 : index) * slotSize,
+              line
+            )
             .addItemStack(Item.of(`${reward.count}x ${reward.item}`))
             .addTooltipCallback((slotView, tooltip) => {
               if (reward.minPopulation) {
@@ -161,6 +192,7 @@ JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "recycling", "recycling_machine", Text.translatable("jei.society.category.recycling"), 1, 1);
   registerBECategory(e, "tapping", "tapper", Text.translatable("jei.society.category.tapping"), 1, 7);
   registerBECategory(e, "auto_tapping", "auto_tapper", Text.translatable("jei.society.category.auto_tapping"), 1, 0.5);
+  registerBECategory(e, "pickling", "pickling_can", "Pickling", 1, 0.5);
 });
 
 // JEI Catalysts broken on JEI version
@@ -225,7 +257,7 @@ JEIAddedEvents.registerRecipes((e) => {
       fluidData: recipe.fluidData,
     });
   });
-    Array.from(global.wineKegRecipes.keys()).forEach((element) => {
+  Array.from(global.wineKegRecipes.keys()).forEach((element) => {
     recipe = global.wineKegRecipes.get(element);
     e.custom("society:wine_making").add({
       input: element,
@@ -378,6 +410,15 @@ JEIAddedEvents.registerRecipes((e) => {
     e.custom("society:auto_tapping").add({
       input: element,
       output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
+  });
+  Array.from(global.picklingRecipes.keys()).forEach((element) => {
+    recipe = global.picklingRecipes.get(element);
+    e.custom("society:pickling").add({
+      input: element,
+      output: [recipe.pickle],
       time: recipe.time,
       fluidData: recipe.fluidData,
     });
