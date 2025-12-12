@@ -50,7 +50,7 @@ BlockEvents.rightClicked("whimsy_deco:gatcha_machine", (e) => {
       );
       global.addItemCooldown(player, item.id, 1);
     } else {
-      player.tell(`§7Right click with an §6Iridium Coin§7 to purchase a Plushie Capsule!`);
+      player.tell(Text.translatable("tooltip.society.gatcha_machine", Text.translatable("item.numismatics.sun").gold()));
     }
   }
 });

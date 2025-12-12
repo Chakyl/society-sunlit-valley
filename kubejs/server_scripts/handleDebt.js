@@ -5,15 +5,11 @@ CommonAddedEvents.playerRespawn((e) => {
   if (global.enableDeathDebt) {
     if (!player.stages.has("first_death")) {
       player.stages.add("first_death");
+      let _title = Text.translatable("society.hospital_receipt.first_death.title").getString();
+      let _author = Text.translatable("society.hospital_receipt.author").getString();
+      let _text = Text.translatable("society.hospital_receipt.first_death").toJson();
       player.give(
-        Item.of(
-          "candlelight:note_paper_written",
-          `{author:"Sunlit Valley Hospital",text:["  Sunlit Valley Hospital
-
-Welcome to Sunlit Valley! Someone brought you in, looks like you got knocked out! Normally we charge a small fee for treatment, but since it\'s your first time we\'ve treated you free of charge.
-
-Take care next time!"],title:"Hospital Note"}`
-        )
+        global.getNotePaperItem(_author, _text, _title)
       );
     } else {
       global.handleFee(server, player, "death");

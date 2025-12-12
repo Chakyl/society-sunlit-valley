@@ -103,21 +103,21 @@ global.calculateCoinValue = (coin) => {
   return value * coin.count;
 };
 
-global.getPigColor = (pig) => {
-  switch (pig) {
-    case "Red":
-      return "c";
-    case "Blue":
-      return "b";
-    case "Yellow":
-      return "e";
-    case "Green":
-      return "a";
-    default:
-      console.log(`Invalid pig color`);
-  }
-  return;
-};
+global.getPigColoredName = (pig) => {
+    switch (pig) {
+      case "Red":
+        return Text.translatable("society.pig_race.red_pig").red();
+      case "Blue":
+        return Text.translatable("society.pig_race.blue_pig").blue();
+      case "Yellow":
+        return Text.translatable("society.pig_race.yellow_pig").yellow();
+      case "Green":
+        return Text.translatable("society.pig_race.green_pig").green();
+      default:
+        console.log(`Invalid pig color`);
+    }
+    return Text.of(`${pig}`);
+  };
 
 global.calculateCoinsFromValue = (price, output) => {
   for (let i = 0; i < global.coinMap.length; i++) {
@@ -150,11 +150,15 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   const biomeTags = level.getBiome(player.pos).tags().toList().toString();
   const isDay = level.getDayTime() % 24000 < 12999;
   let weather = level.raining
-    ? `🌧 ${extraOutput ? "§9Rain§r" : ""}`
-    : `☂ ${extraOutput ? "§eClear§r" : ""}`;
-  let time = isDay ? `☀ ${extraOutput ? "§6Day§r" : ""}` : `⛈ ${extraOutput ? "§8Night§r" : ""}`;
+    ? Text.of("🌧 ").append(extraOutput ? Text.translatable("society.fish_radar.rain").blue() : Text.empty())
+    : Text.of("☂ ").append(extraOutput ? Text.translatable("society.fish_radar.clear").yellow() : Text.empty());
+  let time = isDay 
+    ? Text.of("☀ ").append(extraOutput ? Text.translatable("society.fish_radar.day").gold() : Text.empty()) 
+    : Text.of("⛈ ").append(extraOutput ? Text.translatable("society.fish_radar.night").darkGray() : Text.empty());
   if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
-    printFunction(`   🌊 ${extraOutput ? "§3Ocean§r" : ""} ${weather} ${time}`);
+    let biome = 
+      Text.of("   🌊 ").append(extraOutput ? Text.translatable("society.fish_radar.ocean").darkAqua() : Text.empty());
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -170,7 +174,9 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else if (biomeTags.includes("minecraft:is_river")) {
-    printFunction(`   ☔ ${extraOutput ? "§9River§r" : ""} ${weather} ${time}`);
+    let biome = 
+      Text.of("   ☔ ").append(extraOutput ? Text.translatable("society.fish_radar.river").blue() : Text.empty());
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -186,7 +192,9 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else {
-    printFunction(`   ☄ ${extraOutput ? "§bFresh§r" : ""} ${weather} ${time}`);
+    let biome = 
+      Text.of("   ☄ ").append(extraOutput ? Text.translatable("society.fish_radar.fresh").aqua() : Text.empty());
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -215,26 +223,27 @@ global.netherRadar = (e, local, printFunction) => {
   let netherFish = local.concat(defaultFish);
   const { level, player } = e;
   let biome = level.getBiome(player.pos).toString();
+  let space = Text.of("            ").darkRed();
 
   if (biome.includes("minecraft:nether_wastes")) {
-    printFunction(`            §4Nether Wastes`);
+    printFunction(space.append(Text.translatable("biome.minecraft.nether_wastes")));
     netherFish.push("netherdepthsupgrade:bonefish");
   } else if (biome.includes("minecraft:soul_sand_valley")) {
-    printFunction(`          §4Soul Sand Valley`);
+    printFunction(space.append(Text.translatable("biome.minecraft.soul_sand_valley")));
     netherFish.push("netherdepthsupgrade:wither_bonefish");
     netherFish.push("netherdepthsupgrade:soulsucker");
   } else if (biome.includes("minecraft:basalt_deltas")) {
-    printFunction(`            §4Basalt Deltas`);
+    printFunction(space.append(Text.translatable("biome.minecraft.basalt_deltas")));
     netherFish.push("netherdepthsupgrade:magmacubefish");
     netherFish.push("netherdepthsupgrade:obsidianfish");
   } else if (biome.includes("minecraft:crimson_forest")) {
-    printFunction(`            §4Crimson Forest`);
+    printFunction(space.append(Text.translatable("biome.minecraft.crimson_forest")));
     netherFish.push("netherdepthsupgrade:eyeball_fish");
   } else if (biome.includes("minecraft:warped_forest")) {
-    printFunction(`            §4Warped Forest`);
+    printFunction(space.append(Text.translatable("biome.minecraft.warped_forest")));
     netherFish.push("netherdepthsupgrade:glowdine");
   } else {
-    printFunction(`            §4The Nether`);
+    printFunction(space.append(Text.translatable("society.fish_radar.nether")));
   }
   return netherFish;
 };
@@ -281,34 +290,22 @@ global.handleFee = (server, player, reason) => {
     if (!currentDebt) {
       server.persistentData.debts.push({ uuid: UUID.toString(), amount: amountToDeduct });
     }
+    let _amountToDeduct = global.formatPrice(amountToDeduct);
+    let _currentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
+    let _title = Text.translatable("society.hospital_receipt.title").getString();
+    let _author = Text.translatable("society.hospital_receipt.author").getString();
+    let _text = Text.translatable("society.hospital_receipt.debt", `${_amountToDeduct}`, `${_currentDebt}`).toJson();
     player.give(
-      Item.of(
-        "candlelight:note_paper_written",
-        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
-
-Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take ${global.formatPrice(
-          amountToDeduct
-        )} :coin: out of your profits until the fee is paid off. Be careful next time!
-
-Debt: ${global.formatPrice(
-          !currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount
-        )} :coin:
-"],title:"Hospital Receipt"}`
-      )
+      global.getNotePaperItem(_author, _text, _title)
     );
   } else {
     account.setBalance(balance - amountToDeduct);
+    let _amountToDeduct = global.formatPrice(amountToDeduct);
+    let _title = Text.translatable("society.hospital_receipt.title").getString();
+    let _author = Text.translatable("society.hospital_receipt.author").getString();
+    let _text = Text.translatable("society.hospital_receipt.fee_taked", `${_amountToDeduct}`).toJson();
     player.give(
-      Item.of(
-        "candlelight:note_paper_written",
-        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
-
-Looks like you passed out again! We\'ve treated you for a small fee.
-
-We\'ve taken it out of your bank account for convenience. Be careful next time!
-
-:coin: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
-      )
+      global.getNotePaperItem(_author, _text, _title)
     );
   }
 };
