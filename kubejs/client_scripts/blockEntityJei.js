@@ -168,7 +168,13 @@ JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "seed_making", "seed_maker", Text.translatable("jei.society.category.seed_making"), 3, 1);
   registerBECategory(e, "preserving", "preserves_jar", Text.translatable("jei.society.category.preserving"), 5, 3);
   registerBECategory(e, "wine_making", "wine_keg", Text.translatable("jei.society.category.wine_making"), 3, 6);
-  registerBECategory(e, "bait_upgrading", "deluxe_worm_farm", Text.translatable("jei.society.category.bait_upgrading"), 4, 0.5);
+  registerBECategory(e, 
+    "bait_upgrading", 
+    "deluxe_worm_farm", 
+    Text.translatable("jei.society.category.bait_upgrading"), 
+    4, 
+    0.5
+  );
   registerBECategory(e, "cask_aging", "aging_cask", Text.translatable("jei.society.category.cask_aging"), 1, 10);
   registerBECategory(
     e,
@@ -178,21 +184,51 @@ JEIAddedEvents.registerCategories((e) => {
     1,
     2
   );
-  registerBECategory(e, "ancient_aging", "ancient_cask", Text.translatable("jei.society.category.ancient_aging"), 1, 20);
+  registerBECategory(e, 
+    "ancient_aging", 
+    "ancient_cask", 
+    Text.translatable("jei.society.category.ancient_aging"), 
+    1, 
+    20
+  );
   registerBECategory(e, "dehydrating", "dehydrator", Text.translatable("jei.society.category.dehydrating"), 8, 1);
   registerBECategory(e, "fish_smoking", "fish_smoker", Text.translatable("jei.society.category.fish_smoking"), 1, 2);
   registerBECategory(e, "bait_making", "bait_maker", Text.translatable("jei.society.category.bait_making"), 1, 1);
-  registerBECategory(e, "mayonnaise_making", "mayonnaise_machine", Text.translatable("jei.society.category.mayonnaise_making"), 1, 1);
+  registerBECategory(e, 
+    "mayonnaise_making", 
+    "mayonnaise_machine", 
+    Text.translatable("jei.society.category.mayonnaise_making"), 
+    1, 
+    1
+  );
   registerBECategory(e, "loom_weaving", "loom", Text.translatable("jei.society.category.loom_weaving"), 5, 1);
-  registerBECategory(e, "crystal_growing", "crystalarium", Text.translatable("jei.society.category.crystal_growing"), 1, 5);
+  registerBECategory(e, 
+    "crystal_growing", 
+    "crystalarium", 
+    Text.translatable("jei.society.category.crystal_growing"), 
+    1, 
+    5
+  );
   registerFishPondCategory(e, "fish_farming", "fish_pond", Text.translatable("jei.society.category.fish_farming"));
   registerBECategory(e, "charging", "charging_rod", Text.translatable("jei.society.category.charging"), 1, 5);
-  registerBECategory(e, "espresso_brewing", "espresso_machine", Text.translatable("jei.society.category.espresso_brewing"), 4, 0.5);
-  registerBECategory(e, "goddess_offering", "ancient_goddess_statue", Text.translatable("jei.society.category.goddess_offering"), 64, 0);
+  registerBECategory(e, 
+    "espresso_brewing", 
+    "espresso_machine", 
+    Text.translatable("jei.society.category.espresso_brewing"), 
+    4, 
+    0.5
+  );
+  registerBECategory(e, 
+    "goddess_offering", 
+    "ancient_goddess_statue", 
+    Text.translatable("jei.society.category.goddess_offering"), 
+    64, 
+    0
+  );
   registerBECategory(e, "recycling", "recycling_machine", Text.translatable("jei.society.category.recycling"), 1, 1);
   registerBECategory(e, "tapping", "tapper", Text.translatable("jei.society.category.tapping"), 1, 7);
   registerBECategory(e, "auto_tapping", "auto_tapper", Text.translatable("jei.society.category.auto_tapping"), 1, 0.5);
-  registerBECategory(e, "pickling", "pickling_can", "Pickling", 1, 0.5);
+  registerBECategory(e, "pickling", "pickling_can", Text.translatable("jei.society.category.pickling"), 1, 0.5);
 });
 
 // JEI Catalysts broken on JEI version
