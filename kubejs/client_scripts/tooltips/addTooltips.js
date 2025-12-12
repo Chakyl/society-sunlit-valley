@@ -97,6 +97,9 @@ ItemEvents.tooltip((tooltip) => {
   ];
   coinTooltips.forEach((coin) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
+      if (!coin.includes("_coin")) {
+        text.remove(1);
+      }
       if (tooltip.shift) {
         text.add(1, [
           Text.translatable("tooltip.society.coins", `${calculateCost(coin.path, 1, item.count)}`).white(),
@@ -356,19 +359,19 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add("society:tanuki_catalog", [
     Text.translatable("tooltip.society.furniture_catalog",
-      2, Text.translatable("item.numismatics.crown").gold(),
+      "2", Text.translatable("item.numismatics.crown").gold(),
       Text.translatable("item.society.tanuki_leaf").green()
     ).gray(),
   ]);
   tooltip.add("society:modern_catalog", [
     Text.translatable("tooltip.society.furniture_catalog",
-      6, Text.translatable("item.numismatics.crown").gold(),
+      "6", Text.translatable("item.numismatics.crown").gold(),
       Text.translatable("item.society.architects_digest").white()
     ).gray(),
   ]);
   tooltip.add("society:fantasy_catalog", [
     Text.translatable("tooltip.society.furniture_catalog",
-      4, Text.translatable("item.numismatics.crown").gold(),
+      "4", Text.translatable("item.numismatics.crown").gold(),
       Text.translatable("item.society.fantasy_dust").yellow()
     ).gray(),
   ]);
@@ -417,7 +420,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:pink_matter",
-    Text.translatable("item.society.pink_matter.description").red()
+    Text.translatable("item.society.pink_matter.description.warn").red()
   );
   tooltip.add(
     "society:stone_hand",
@@ -820,13 +823,9 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("botania:apothecary_default", Text.translatable("tooltip.society.petal_apothecary.obtain"));
   tooltip.add(
     "society:kinetic_blueprint",
-    Text.translatable("item.society.kinetic_blueprint.description").gray()
-  );
-  tooltip.add(
-    "society:kinetic_blueprint",
     Text.translatable("item.society.kinetic_blueprint.description.tip").green()
   );
-  tooltip.add("society:kinetic_blueprint", Text.translatable("tooltip.society.kinetic_blurprint.obtain"));
+  tooltip.add("society:kinetic_blueprint", Text.translatable("tooltip.society.kinetic_blueprint.obtain"));
   tooltip.add("society:skull_cavern_teleporter", Text.translatable("tooltip.society.skull_cavern_teleporter.obtain"));
   tooltip.add("relics:magic_mirror", Text.translatable("tooltip.society.magic_mirror.obtain"));
 
@@ -1218,7 +1217,7 @@ ItemEvents.tooltip((tooltip) => {
         global.bedDefinitions.get(bed).forEach((animal, index) => {
           text.add(
             index + 2,
-            Text.translatable(global.translatedEntityName(animal)).gold()
+            global.getTranslatedEntityName(animal).gold()
           );
         });
       } else {
@@ -1295,27 +1294,27 @@ ItemEvents.tooltip((tooltip) => {
   // Books
   tooltip.add(
     "society:yard_work_yearly",
-    Text.translatable("item.society.skill_book.description", 
+    Text.translatable("tooltip.society.skill_book.description", 
       global.translatableWithFallback("society_skills.farming.category.title", "Farming")).green()
   );
   tooltip.add(
     "society:husbandry_hourly",
-    Text.translatable("item.society.skill_book.description", 
+    Text.translatable("tooltip.society.skill_book.description", 
       global.translatableWithFallback("society_skills.husbandry.category.title", "Husbandry")).green()
   );
   tooltip.add(
     "society:mining_monthly",
-    Text.translatable("item.society.skill_book.description", 
+    Text.translatable("tooltip.society.skill_book.description", 
       global.translatableWithFallback("society_skills.mining.category.title", "Mining")).green()
   );
   tooltip.add(
     "society:combat_quarterly",
-    Text.translatable("item.society.skill_book.description", 
+    Text.translatable("tooltip.society.skill_book.description", 
       global.translatableWithFallback("society_skills.adventuring.category.title", "Adventuring")).green()
   );
   tooltip.add(
     "society:wet_weekly",
-    Text.translatable("item.society.skill_book.description", 
+    Text.translatable("tooltip.society.skill_book.description", 
       global.translatableWithFallback("society_skills.fishing.category.title", "Fishing")).green()
   );
   tooltip.add(

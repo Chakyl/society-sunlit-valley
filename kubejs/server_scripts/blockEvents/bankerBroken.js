@@ -8,8 +8,10 @@ BlockEvents.rightClicked("numismatics:blaze_banker", (e) => {
   const { item, block, level, player } = e;
 
   if (item.hasTag("minecraft:pickaxes")) {
-    player.tell(block.getEntityData().TrustListInv.Items.length);
-    if (block.getEntityData().TrustListInv.Items.length > 0) {
+    if (
+      block.getEntityData().TrustListInv 
+      && block.getEntityData().TrustListInv.Items.length > 0
+    ) {
       player.tell(
         Text.translatable("society.blaze_banker.break.not_empty").red()
       );

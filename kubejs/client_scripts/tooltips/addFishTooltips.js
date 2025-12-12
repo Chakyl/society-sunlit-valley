@@ -5,7 +5,7 @@ ItemEvents.tooltip((tooltip) => {
   let autumnFish = [];
   let winterFish = [];
 
-  tooltip.add(yearRound, [Text.of(" "), Text.translatable("desc.sereneseasons.year_round").lightPurple()]);
+  tooltip.add(yearRound, [Text.of(" ").append(Text.translatable("desc.sereneseasons.year_round").lightPurple())]);
   const addSeasonTooltip = (item, seasonText, seasonArray) => {
     if (!yearRound.includes(item) && !seasonArray.includes(item)) {
       seasonArray.push(item);

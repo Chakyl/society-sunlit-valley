@@ -16,7 +16,7 @@ const registerMilkingCategory = (event, equipment, title) => {
           Text.translatable(
             "jei.society.husbandry.cooldown",
             Text.translatable(
-              `jei.society.working_time.day${recipe.getRecipeData().cooldown > 1 ? "s" : ""}`,
+              `jei.society.working_block_entity.day${recipe.getRecipeData().cooldown > 1 ? "s" : ""}`,
               `${recipe.getRecipeData().cooldown}`
             )
           ),

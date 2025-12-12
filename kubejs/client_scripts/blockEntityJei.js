@@ -15,10 +15,10 @@ const registerBECategory = (event, categoryID, block, title, inputCount, days) =
         guiGraphics.drawWordWrap(
           Client.font,
           dayCount < 1 
-            ? Text.translatable("jei.society.working_time.short")
+            ? Text.translatable("jei.society.working_block_entity.short")
             : dayCount > 1 
-              ? Text.translatable("jei.society.working_time.days", dayCount)
-              : Text.translatable("jei.society.working_time.day", dayCount),
+              ? Text.translatable("jei.society.working_block_entity.days", `${dayCount}`)
+              : Text.translatable("jei.society.working_block_entity.day", `${dayCount}`),
           72,
           29,
           177,

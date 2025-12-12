@@ -609,7 +609,7 @@ ItemEvents.firstLeftClicked(
           type: "text",
           x: 0,
           y: -90,
-          text: pigSelectedText.toJson(),
+          text: `${pigSelectedText.toJson()}`,
           color: "#AAAAAA",
           alignX: "center",
           alignY: "bottom",
