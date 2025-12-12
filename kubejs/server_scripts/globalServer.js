@@ -103,21 +103,21 @@ global.calculateCoinValue = (coin) => {
   return value * coin.count;
 };
 
-global.getPigColor = (pig) => {
-  switch (pig) {
-    case "Red":
-      return "c";
-    case "Blue":
-      return "b";
-    case "Yellow":
-      return "e";
-    case "Green":
-      return "a";
-    default:
-      console.log(`Invalid pig color`);
-  }
-  return;
-};
+global.getPigColoredName = (pig) => {
+    switch (pig) {
+      case "Red":
+        return Text.translatable("society.pig_race.red_pig").red();
+      case "Blue":
+        return Text.translatable("society.pig_race.blue_pig").blue();
+      case "Yellow":
+        return Text.translatable("society.pig_race.yellow_pig").yellow();
+      case "Green":
+        return Text.translatable("society.pig_race.green_pig").green();
+      default:
+        console.log(`Invalid pig color`);
+    }
+    return Text.of(`${pig}`);
+  };
 
 global.calculateCoinsFromValue = (price, output) => {
   for (let i = 0; i < global.coinMap.length; i++) {
@@ -290,26 +290,22 @@ global.handleFee = (server, player, reason) => {
     if (!currentDebt) {
       server.persistentData.debts.push({ uuid: UUID.toString(), amount: amountToDeduct });
     }
-    let _title = Text.translatable("society.hospital_receipt.title").getString();
-    let _author = Text.translatable("society.hospital_receipt.author").getString();
     let _amountToDeduct = global.formatPrice(amountToDeduct);
     let _currentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
+    let _title = Text.translatable("society.hospital_receipt.title").getString();
+    let _author = Text.translatable("society.hospital_receipt.author").getString();
+    let _text = Text.translatable("society.hospital_receipt.debt", `${_amountToDeduct}`, `${_currentDebt}`).toJson();
     player.give(
-      Item.of(
-        "candlelight:note_paper_written",
-        `{author:"${_author}",text:['{"translate":"society.hospital_receipt.debt", "with":["${_amountToDeduct}", "${_currentDebt}"]}'],title:"${_title}"}`
-      )
+      global.getNotePaperItem(_author, _text, _title)
     );
   } else {
     account.setBalance(balance - amountToDeduct);
+    let _amountToDeduct = global.formatPrice(amountToDeduct);
     let _title = Text.translatable("society.hospital_receipt.title").getString();
     let _author = Text.translatable("society.hospital_receipt.author").getString();
-    let _amountToDeduct = global.formatPrice(amountToDeduct);
+    let _text = Text.translatable("society.hospital_receipt.fee_taked", `${_amountToDeduct}`).toJson();
     player.give(
-      Item.of(
-        "candlelight:note_paper_written",
-        `{author:"${_author}",text:['{"translate":"society.hospital_receipt.fee_taked", "with":["${_amountToDeduct}"]}'],title:"${_title}"}`
-      )
+      global.getNotePaperItem(_author, _text, _title)
     );
   }
 };

@@ -7,6 +7,7 @@ BlockEvents.placed((e) => {
       block.hasTag("society:skull_cavern_unplacable") &&
       !player.isCreative()
     ) {
+      let message = Text.translatable("society.skull_cavern.prevent_block_place").getString();
       global.renderUiText(
         player,
         server,
@@ -15,7 +16,7 @@ BlockEvents.placed((e) => {
             type: "text",
             x: 0,
             y: -90,
-            text: "A magical force prevents you from placing this...",
+            text: message,
             color: "#FF5555",
             alignX: "center",
             alignY: "bottom",
@@ -25,7 +26,7 @@ BlockEvents.placed((e) => {
             x: 1,
             z: -1,
             y: -89,
-            text: "A magical force prevents you from placing this...",
+            text: message,
             color: "#000000",
             alignX: "center",
             alignY: "bottom",

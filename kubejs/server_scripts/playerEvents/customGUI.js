@@ -52,7 +52,12 @@ const fishRadarPainter = (curios, e) => {
         type: "text",
         x: fishRadarPadding,
         y: fishRadarStart,
-        text: "=[ §aFish Radar§7 ]=",
+        text: 
+          `${
+            Text.of("=[ ").gray()
+              .append(Text.translatable("item.society.fish_radar").green())
+              .append(" ]=").toJson()
+          }`,
         color: "#AAAAAA",
         alignX: "left",
         alignY: "top",

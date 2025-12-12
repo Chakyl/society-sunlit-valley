@@ -37,7 +37,7 @@ global.animalBeds.forEach((bed) => {
         }
       }
       if (!open) {
-        player.tell(Text.red("Not enough room to place this Barn Bed"));
+        player.tell(Text.translatable("society.animal_bed.not_enough_room").red());
         e.cancel();
       }
     }

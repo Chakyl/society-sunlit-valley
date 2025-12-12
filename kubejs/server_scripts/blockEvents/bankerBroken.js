@@ -1,7 +1,7 @@
 console.info("[SOCIETY] bankerBroken.js loaded");
 
 BlockEvents.broken("numismatics:blaze_banker", (e) => {
-  e.player.tell(Text.red("If block doesn't break, right click with a pickaxe."));
+  e.player.tell(Text.translatable("society.blaze_banker.break").red());
 });
 
 BlockEvents.rightClicked("numismatics:blaze_banker", (e) => {
@@ -11,7 +11,7 @@ BlockEvents.rightClicked("numismatics:blaze_banker", (e) => {
     player.tell(block.getEntityData().TrustListInv.Items.length);
     if (block.getEntityData().TrustListInv.Items.length > 0) {
       player.tell(
-        Text.red("Empty out ID cards and bank account money! Right click with a pickaxe.")
+        Text.translatable("society.blaze_banker.break.not_empty").red()
       );
     } else level.destroyBlock(block.pos, true);
   }

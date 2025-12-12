@@ -10,16 +10,16 @@ const formatNumber = (number, quality) => {
   return global.formatPrice(value);
 };
 
-const getAttributeStr = (attribute) => {
+const getAttributeText = (attribute) => {
   switch (attribute) {
     case "crop":
-      return Text.translatable("tooltip.society.farmer_product");
+      return Text.translatable("tooltip.society.farmer_product").gold();
     case "wood":
-      return Text.translatable("tooltip.society.artisan_product");
+      return Text.translatable("tooltip.society.artisan_product").gold();
     case "gem":
-      return Text.translatable("tooltip.society.geologist_product");
+      return Text.translatable("tooltip.society.geologist_product").gold();
     case "meat":
-      return Text.translatable("tooltip.society.adventurer_product");
+      return Text.translatable("tooltip.society.adventurer_product").gold();
     default:
       console.log(`Invalid attribute`);
   }
@@ -37,7 +37,7 @@ global.addPriceTooltip = (tooltip, sellable, attribute) => {
         Text.of(" "),
         Text.translatable("tooltip.society.stack_value").gray(),
       ]);
-      text.add(2, [getAttributeStr(attribute)]);
+      text.add(2, [getAttributeText(attribute)]);
     } else {
       text.add(1, [
         Text.translatable("tooltip.society.coins", `${formatNumber(value, quality)}`).white(),
@@ -323,7 +323,7 @@ ItemEvents.tooltip((tooltip) => {
       );
     } else {
       text.add(1, Text.translatable("block.society.fish_pond.description").gray());
-      text.add(2, Text.translatable("block.society.fish_pond.place").darkAqua());
+      text.add(2, Text.translatable("block.society.fish_pond.description.place").darkAqua());
     }
   });
   tooltip.add(
@@ -799,7 +799,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "whimsy_deco:gatcha_machine",
-    Text.translatable("tooltip.society.gatcha_machine").gray()
+    Text.translatable("tooltip.society.gatcha_machine", Text.translatable("item.numismatics.sun")).gray()
   );
   tooltip.add(
     "society:relic_trove",
@@ -968,7 +968,7 @@ ItemEvents.tooltip((tooltip) => {
         Text.of(" "),
         Text.translatable("tooltip.society.stack_value").gray(),
       ]);
-      text.add(2, [getAttributeStr("crop")]);
+      text.add(2, [getAttributeText("crop")]);
     } else {
       text.add(1, [
         Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
@@ -993,7 +993,7 @@ ItemEvents.tooltip((tooltip) => {
         Text.of(" "),
         Text.translatable("tooltip.society.stack_value").gray(),
       ]);
-      text.add(2, [getAttributeStr("crop")]);
+      text.add(2, [getAttributeText("crop")]);
     } else {
       text.add(1, [
         Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
@@ -1155,7 +1155,7 @@ ItemEvents.tooltip((tooltip) => {
       default:
         console.log(`Invalid pig color`);
     }
-    return Text.of("Undefined");
+    return Text.of(`${pig}`);
   };
   tooltip.addAdvanced(
     ["society:pig_race_ticket", "society:multiplayer_pig_race_ticket"],

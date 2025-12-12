@@ -54,7 +54,7 @@ BlockEvents.rightClicked("tanukidecor:slot_machine", (e) => {
           Math.random() < (heldItem === "numismatics:sun" ? 0.005 : 0.1)
         ) {
           block.popItemFromFace(`1x society:prismatic_shard`, facing);
-          server.tell(Text.gray(`§6${player.username}§r won big at the slots!`));
+          server.tell(Text.translatable("society.slot_machine.win_big", Text.gold(`${player.username}`)).gray());
         }
       } else {
         server.runCommandSilent(
