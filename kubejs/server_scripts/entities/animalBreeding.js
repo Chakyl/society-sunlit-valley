@@ -27,7 +27,12 @@ ItemEvents.entityInteracted((e) => {
   if (!global.checkEntityTag(target, "society:husbandry_animal") || target.isBaby()) return;
   if (breedingItems.includes(item.id)) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 This animal can only be bred with a Miracle Potion!`
+      global.getEmbersTextAPICommand(
+        player.username, 
+        global.animalMessageSettings, 
+        160, 
+        Text.translatable("society.husbandry.breeding.need_potion").getString()
+      )
     );
     e.cancel();
   }
@@ -36,7 +41,12 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
     if (global.checkEntityTag(target, "society:infertile")) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 This animal cannot breed.`
+        global.getEmbersTextAPICommand(
+          player.username, 
+          global.animalMessageSettings, 
+          120, 
+          Text.translatable("society.husbandry.breeding.infertile").getString()
+        )
       );
       e.cancel();
     }
@@ -52,7 +62,12 @@ ItemEvents.entityInteracted((e) => {
         item.count--;
         target.persistentData.ageLastBred = day;
         server.runCommandSilent(
-          `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 The Miracle Potion failed...`
+          global.getEmbersTextAPICommand(
+            player.username, 
+            global.animalMessageSettings, 
+            160, 
+            Text.translatable("society.husbandry.breeding.fail").getString()
+          )
         );
       } else {
         animalNbt.InLove = 2000;
@@ -77,7 +92,12 @@ ItemEvents.entityInteracted((e) => {
     } else if (day > ageLastBred) {
       global.addItemCooldown(player, "society:miracle_potion", 40);
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 This animal needs time to rest after taking a Miracle Potion...`
+        global.getEmbersTextAPICommand(
+          player.username, 
+          global.animalMessageSettings, 
+          120, 
+          Text.translatable("society.husbandry.breeding.cooldown").getString()
+        )
       );
     }
   }

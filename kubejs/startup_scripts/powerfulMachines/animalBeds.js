@@ -85,15 +85,14 @@ let sendCustomPayload = (level, pos, nbt) => {
 };
 
 global.getAnimalBedType = (animal) => {
-  let foundBed;
-  Array.from(global.bedDefinitions.keys()).forEach((element) => {
-    global.bedDefinitions.get(element).forEach((bedAnimal) => {
+  for (const [bedType, animals] of global.bedDefinitions.entries()) {
+    for (const bedAnimal of animals) {
       if (animal.equals(bedAnimal)) {
-        foundBed = element;
+        return bedType;
       }
-    });
-  });
-  return global.formatName(foundBed);
+    }
+  }
+  return null;
 };
 
 const sleepParticles = (level, x, y, z) => {

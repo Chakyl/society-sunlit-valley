@@ -105,24 +105,29 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     );
     global.giveExperience(server, player, "husbandry", 10);
     if (!livableArea && !data.clockwork) {
-      errorText = `${name} feels crowded and unhappy...`;
+      errorText = Text.translatable("society.husbandry.crowded", `${name}`).getString();
     }
     if (hearts > 3 && bedless) {
       player.tell(
-        Text.gold(
-          `${name} needs a ${global
-            .getAnimalBedType(target.type)
-            .replace(/_/g, " ")} bed from the Shepherd!`
-        )
+        Text.translatable(
+          "society.husbandry.bedless", 
+          `${name}`, 
+          Text.translatable(`block.society.${global.getAnimalBedType(target.type)}_bed`)
+        ).gold()
       );
     }
     if (!hungry && peckish && !player.isFake() && !item.hasTag("society:animal_feed")) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100} 40 ${name} could use something to eat...`
+        global.getEmbersTextAPICommand(
+          player.username, 
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100}`, 
+          40, 
+          Text.translatable("society.husbandry.peckish", `${name}`).getString()
+        )
       );
     }
     if (hungry) {
-      errorText = `${name} went too long without food...`;
+      errorText = Text.translatable("society.husbandry.starved", `${name}`).getString();
     }
     if (errorText && !player.isFake()) {
       server.runCommandSilent(
@@ -229,11 +234,11 @@ const handleMilk = (name, data, day, hungry, e) => {
       0.01
     );
   } else if (target.isBaby()) {
-    errorText = `${name} is too young to produce milk!`;
+    errorText = Text.translatable("society.husbandry.action.young", `${name}`).getString();
   } else if (hungry) {
-    errorText = `${name} is too hungry to produce milk!`;
+    errorText = Text.translatable("society.husbandry.action.hungry", `${name}`).getString();
   } else {
-    errorText = `${name} needs rest ...`;
+    errorText = Text.translatable("society.husbandry.action.cooldown_1", `${name}`).getString();
   }
   if (errorText && !player.isFake()) {
     server.runCommandSilent(
@@ -338,9 +343,9 @@ const handleMagicHarvest = (name, data, e) => {
     }
     global.addItemCooldown(player, item, 1);
   } else {
-    errorText = `${name} needs some time to rest`;
+    errorText = Text.translatable("society.husbandry.action.cooldown_2", `${name}`).getString();
     if (hearts < 5) {
-      errorText = `${name} doesn't trust you enough...`;
+      errorText = Text.translatable("society.husbandry.action.need_hearts", `${name}`).getString();
     }
     if (!player.isFake())
       server.runCommandSilent(
@@ -366,11 +371,12 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
-      const nonIdType = String(target.type.path).replace(/_/g, " ");
+      const nonIdType = String(target.type).path.replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
-        name = global.formatName(nonIdType);
-        if (name.equals("Domestic tribull")) name = "Domestic tri-bull";
+        let fallbackName = global.formatName(nonIdType);
+        if (fallbackName.equals("Domestic tribull")) fallbackName = "Domestic tri-bull";
+        name = global.getTranslatedEntityName(String(target.type), fallbackName).getString();
       }
       const boundBed = data.get("boundBed");
       if (!global.animalHasNoBed(data)) {
@@ -383,7 +389,12 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           !level.getBlock(boundBed.x, boundBed.y, boundBed.z).hasTag("society:animal_bed")
         ) {
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} got too far from its bed...`
+            global.getEmbersTextAPICommand(
+              player.username, 
+              global.animalMessageSettings, 
+              40, 
+              Text.translatable("society.husbandry.bed_lost", `${name}`).getString()
+            )
           );
           data.boundBed = "-1";
         }
@@ -427,7 +438,12 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (player.cooldowns.isOnCooldown(item)) return;
         if (hearts < 5) {
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} doesn't trust you enough...`
+            global.getEmbersTextAPICommand(
+              player.username, 
+              global.animalMessageSettings, 
+              40, 
+              Text.translatable("society.husbandry.action.need_hearts", `${name}`).getString()
+            )
           );
         } else {
           let heart = level.createEntity("minecraft:item");
@@ -505,7 +521,12 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (data.bff) {
           data.bff = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 80 Its mind was corrupted and no longer gifts Prismatic Shards...`
+            global.getEmbersTextAPICommand(
+              player.username, 
+              global.animalMessageSettings, 
+              80, 
+              Text.translatable("society.husbandry.mechanization").getString()
+            )
           );
         }
       }
@@ -530,7 +551,12 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (data.clockwork) {
           data.clockwork = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 80 Its mind was healed from being a souless machine!`
+            global.getEmbersTextAPICommand(
+              player.username, 
+              `{anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`, 
+              80, 
+              Text.translatable("society.husbandry.emancipation").getString()
+            )
           );
         }
       }
