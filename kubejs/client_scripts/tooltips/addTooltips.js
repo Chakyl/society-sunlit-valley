@@ -513,7 +513,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:fish_radar",
-    Text.translatable("tooltip.society.fish_rader").gray()
+    Text.translatable("item.society.fish_rader.description").gray()
   );
   tooltip.add(
     "tradingpost:trading_post",
@@ -521,19 +521,19 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:magic_rope",
-    Text.translatable("tooltip.society.magic_rope").gray()
+    Text.translatable("item.society.magic_rope.description").gray()
   );
   tooltip.add(
     "society:magic_rope",
-    Text.translatable("tooltip.society.magic_rope.warn").red()
+    Text.translatable("item.society.magic_rope.description.warn").red()
   );
   tooltip.add(
     "society:magic_tunnel",
-    Text.translatable("tooltip.society.magic_tunnel").gray()
+    Text.translatable("item.society.magic_tunnel.description").gray()
   );
   tooltip.add(
     "society:magic_tunnel",
-    Text.translatable("tooltip.society.magic_rope.warn").red()
+    Text.translatable("item.society.magic_rope.description.warn").red()
   );
   // Fertilizers
   tooltip.add(
@@ -578,11 +578,11 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "dew_drop_farmland_growth:garden_pot",
-    Text.translatable("tooltip.society.garden_pot").gray()
+    Text.translatable("item.society.garden_pot.description").gray()
   );
   tooltip.add(
     "dew_drop_farmland_growth:garden_pot",
-    Text.translatable("tooltip.society.garden_pot.tip").green()
+    Text.translatable("item.society.garden_pot.description.tip").green()
   );
   tooltip.add(
     "minecraft:fishing_rod",
