@@ -113,7 +113,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Place on tree to tap for resources"));
+      item.tooltip(Text.translatable("block.society.tapper.description").gray());
       item.modelJson({
         parent: "society:block/tapper",
       });

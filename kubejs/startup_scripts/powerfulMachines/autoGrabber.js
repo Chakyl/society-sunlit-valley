@@ -155,13 +155,11 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 30, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
-      );
-      item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.gold("Upgrade with Magic Shears to collect drops."));
-      item.tooltip(Text.green(`Area: 11x11x11`));
-      item.tooltip(Text.lightPurple("Requires Sparkstone"));
+      item.tooltip(Text.translatable("block.society.auto_grabber.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
+      item.tooltip(Text.translatable("block.society.auto_grabber.description.upgrade").gold());
+      item.tooltip(Text.translatable("tooltip.society.area", `11x11x11`).green());
+      item.tooltip(Text.translatable("block.society.auto_grabber.description.fuel").lightPurple());
       item.modelJson({
         parent: "society:block/auto_grabber",
       });

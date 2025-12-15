@@ -63,7 +63,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns 3 of the same crop into wine"));
+      item.tooltip(Text.translatable("block.society.wine_keg.description").gray());
       item.modelJson({
         parent: "society:block/wine_keg/wine_keg",
       });

@@ -170,10 +170,9 @@ StartupEvents.registry("block", (e) => {
     .soundType("shroomlight")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Creates a hut in a 3x3x3 space centered around it."));
-      item.tooltip(Text.gray("Ribbits will collect crops at 7am every morning."));
-      item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 15x3x15`));
+      item.tooltip(Text.translatable("block.society.ribbit_hut.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `15x3x15`).green());
       item.modelJson({
         parent: "minecraft:item/generated",
         textures: {

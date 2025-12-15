@@ -35,8 +35,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .displayName("Artisan Cheese Press")
     .item((item) => {
-      item.tooltip(Text.gray("Turns any milk into cheese"));
-      item.tooltip(Text.green("Preserves input quality"));
+      item.tooltip(Text.translatable("block.society.cheese_press.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
       item.modelJson({
         parent: "society:block/cheese_press/cheese_press_off",
       });

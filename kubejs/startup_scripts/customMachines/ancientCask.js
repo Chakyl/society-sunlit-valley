@@ -148,8 +148,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Ages already aged goods at an extremely slow rate"));
-      item.tooltip(Text.red("Only usable if Ancient Aging skill unlocked"));
+      item.tooltip(Text.translatable("block.society.ancient_cask.description").gray());
+      item.tooltip(Text.translatable("block.society.ancient_cask.description.warn").red());
       item.modelJson({
         parent: "society:block/ancient_cask/ancient_cask",
       });
@@ -201,7 +201,7 @@ StartupEvents.registry("block", (event) => {
               upgraded: true,
             });
           } else if (!upgraded && item == "society:inserter") {
-            player.tell(Text.red(`This can only be upgraded when not in use`));
+            player.tell(Text.translatable("society.working_block_entity.cannot_upgrade").red());
           }
         }
 
@@ -222,7 +222,7 @@ StartupEvents.registry("block", (event) => {
             global.ancientCaskRecipes,
             20
           );
-      } else player.tell(Text.red(`You need the Farming skill "Ancient Aging" to use this...`));
+      } else player.tell(Text.translatable("block.society.ancient_cask.no_skill").red());
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });

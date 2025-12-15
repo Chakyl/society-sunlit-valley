@@ -13,9 +13,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Offer a stack of crops to recieve the Goddess' blessing"));
-      item.tooltip(Text.gray("Crops and rewards change every season"));
-      item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
+      item.tooltip(Text.translatable("block.society.ancient_goddess_statue.description").gray());
+      item.tooltip(Text.translatable("block.society.ancient_goddess_statue.description.warn").red());
       item.modelJson({
         parent: "society:block/ancient_goddess_statue",
       });
@@ -36,7 +35,7 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(`Give me 64 of something ancient for something prismatic...`)
+                  Text.translatable("block.society.ancient_goddess_statue.spring").aqua()
                 );
               }
               break;
@@ -46,7 +45,9 @@ StartupEvents.registry("block", (event) => {
                 if (!player.isCreative()) item.count = item.count - 64;
                 successParticles(level, block);
               } else {
-                player.tell(Text.aqua(`Give me 64 of something spicy for something sparky..`));
+                player.tell(
+                  Text.translatable("block.society.ancient_goddess_statue.summer").aqua()
+                );
               }
               break;
             case "autumn":
@@ -56,7 +57,7 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(`Give me 64 of something cobbed for a something pristine...`)
+                  Text.translatable("block.society.ancient_goddess_statue.autumn").aqua()
                 );
               }
               break;
@@ -67,16 +68,14 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(
-                    `Give me 64 of something that only grows in the cold for something from the depths...`
-                  )
+                  Text.translatable("block.society.ancient_goddess_statue.winter").aqua()
                 );
               }
               break;
           }
         }
       } else
-        player.tell(Text.red(`You need the skill "Farmer's Blessing" to recieve my blessing...`));
+        player.tell(Text.translatable("block.society.ancient_goddess_statue.no_skill").red());
     }).blockstateJson = {
     multipart: [
       {

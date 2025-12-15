@@ -57,7 +57,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns junk into usable resources"));
+      item.tooltip(Text.translatable("block.society.recycling_machine.description").gray());
       item.modelJson({
         parent: "society:block/recycling_machine/recycling_machine_off",
       });

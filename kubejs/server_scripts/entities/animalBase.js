@@ -374,9 +374,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       const nonIdType = String(target.type).path.replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
-        let fallbackName = global.formatName(nonIdType);
-        if (fallbackName.equals("Domestic tribull")) fallbackName = "Domestic tri-bull";
-        name = global.getTranslatedEntityName(String(target.type), fallbackName).getString();
+        name = global.getTranslatedEntityName(String(target.type)).getString();
       }
       const boundBed = data.get("boundBed");
       if (!global.animalHasNoBed(data)) {

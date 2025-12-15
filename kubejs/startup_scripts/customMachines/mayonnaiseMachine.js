@@ -44,8 +44,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns an egg into mayonnaise"));
-      item.tooltip(Text.green("Preserves input quality"));
+      item.tooltip(Text.translatable("block.society.mayonnaise_machine.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
       item.modelJson({
         parent: "society:block/mayonnaise_machine/mayonnaise_machine_off",
       });

@@ -9,16 +9,16 @@ StartupEvents.registry("item", (e) => {
   const tiers = ["Stone, Leather, Chainmail, and Cotton", "Iron", "Gold", "Diamond", "Neptunium"];
   tiers.forEach((tier, index) => {
     if (index > 0) {
-      e.create(`society:${tier.toLowerCase()}_upgrade_smithing_template`)
+      let templateId = `society:${tier.toLowerCase()}_upgrade_smithing_template`;
+      e.create(templateId)
         .texture(`society:item/smithing/${tier.toLowerCase()}`)
         .displayName("Smithing Template")
-        .tooltip(Text.blue("Ingredients:"))
-        .tooltip(Text.gray(`${tier} Upgrade`))
+        .tooltip(Text.gray(`${templateId}.upgrade`))
         .tooltip(Text.of(" "))
-        .tooltip(Text.gray("Applies to:"))
-        .tooltip(Text.blue(`${tiers[index - 1]} Equipment`))
-        .tooltip(Text.gray("Ingredients:"))
-        .tooltip(Text.blue(`${tier} Ingot`));
+        .tooltip(Text.gray("item.minecraft.smithing_template.applies_to"))
+        .tooltip(Text.of(" ").append(Text.blue(`${templateId}.applies_to`)))
+        .tooltip(Text.gray("item.minecraft.smithing_template.ingredients"))
+        .tooltip(Text.of(" ").append(Text.blue(`${templateId}.ingredients`)));
     }
   });
 
@@ -122,7 +122,7 @@ StartupEvents.registry("item", (e) => {
   fantasyBoxes.forEach((theme) => {
     e.create(`society:fantasy_box_${theme}`)
       .texture(`society:item/fantasy_box_${theme}`)
-      .tooltip(Text.gray("Right click to open"))
+      .tooltip(Text.translatable("tooltip.society.right_click_open").gray())
       .displayName(`Fantasy Box: ${global.formatName(theme)} Set`);
   });
   e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
@@ -232,36 +232,61 @@ StartupEvents.registry("item", (e) => {
   e.create(`society:crystal_of_regret_farming`)
     .displayName("Crystal of Regret: Farming")
     .texture("society:item/crystal_of_regret")
-    .tooltip(Text.red("Right click to reset Farming skills. Refunds 5 Skill Points"))
-    .tooltip(Text.red("Must be level 7 or higher to use"))
+    .tooltip(
+      Text.translatable(
+        "society.crystal_of_regret.description",
+        global.translatableWithFallback(`society_skills.farming.category.title`, `Farming`)
+      ).red()
+    )
+    .tooltip(Text.translatable("society.crystal_of_regret.description.warn").red())
     .color(0, 0x087814);
 
   e.create(`society:crystal_of_regret_husbandry`)
     .displayName("Crystal of Regret: Husbandry")
     .texture("society:item/crystal_of_regret")
-    .tooltip(Text.red("Right click to reset Husbandry skills. Refunds 5 Skill Points"))
-    .tooltip(Text.red("Must be level 7 or higher to use"))
+    .tooltip(
+      Text.translatable(
+        "society.crystal_of_regret.description",
+        global.translatableWithFallback(`society_skills.husbandry.category.title`, `Husbandry`)
+      ).red()
+    )
+    .tooltip(Text.translatable("society.crystal_of_regret.description.warn").red())
     .color(0, 0x4f370d);
 
   e.create(`society:crystal_of_regret_mining`)
     .displayName("Crystal of Regret: Mining")
     .texture("society:item/crystal_of_regret")
-    .tooltip(Text.red("Right click to reset Mining skills. Refunds 5 Skill Points"))
-    .tooltip(Text.red("Must be level 7 or higher to use"))
+    .tooltip(
+      Text.translatable(
+        "society.crystal_of_regret.description",
+        global.translatableWithFallback(`society_skills.mining.category.title`, `Mining`)
+      ).red()
+    )
+    .tooltip(Text.translatable("society.crystal_of_regret.description.warn").red())
     .color(0, 0x383735);
 
   e.create(`society:crystal_of_regret_fishing`)
     .displayName("Crystal of Regret: Fishing")
     .texture("society:item/crystal_of_regret")
-    .tooltip(Text.red("Right click to reset Fishing skills. Refunds 5 Skill Points"))
-    .tooltip(Text.red("Must be level 7 or higher to use"))
+    .tooltip(
+      Text.translatable(
+        "society.crystal_of_regret.description",
+        global.translatableWithFallback(`society_skills.fishing.category.title`, `Fishing`)
+      ).red()
+    )
+    .tooltip(Text.translatable("society.crystal_of_regret.description.warn").red())
     .color(0, 0x1eabd6);
 
   e.create(`society:crystal_of_regret_adventuring`)
     .displayName("Crystal of Regret: Adventuring")
     .texture("society:item/crystal_of_regret")
-    .tooltip(Text.red("Right click to reset Adventuring skills. Refunds 5 Skill Points"))
-    .tooltip(Text.red("Must be level 7 or higher to use"))
+    .tooltip(
+      Text.translatable(
+        "society.crystal_of_regret.description",
+        global.translatableWithFallback(`society_skills.adventuring.category.title`, `Adventuring`)
+      ).red()
+    )
+    .tooltip(Text.translatable("society.crystal_of_regret.description.warn").red())
     .color(0, 0x6e1313);
 
   // Artifacts
@@ -318,7 +343,7 @@ StartupEvents.registry("item", (e) => {
     .useAnimation("drink");
   e.create("society:death_liquid")
     .texture("society:item/drinks/death_liquid")
-    .tooltip(Text.darkPurple("stupid straightedge water"))
+    .tooltip(Text.translatable("item.society.death_liquid.description").darkPurple())
     .food((food) => {
       food.fastToEat(true);
       food.effect("minecraft:poison", 800, 2, 1.0);
@@ -934,7 +959,7 @@ StartupEvents.registry("item", (e) => {
       .texture("society:item/fish_bait")
       .color(0, roeHex)
       .tag("crabbersdelight:crab_trap_bait")
-      .tooltip(Text.gray(`Catches fish in any season or location`));
+      .tooltip(Text.translatable("society.fish_bait.description").gray());
   });
 
   // Pristine gems
@@ -943,7 +968,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/geode/${geode.item.path}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
+      .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
   global.frozenGeodeList.forEach((geode) => {
@@ -951,7 +976,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/frozen_geode/${geode.item.path}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
+      .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
   global.magmaGeodeList.forEach((geode) => {
@@ -959,14 +984,14 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/magma_geode/${geode.item.path}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
+      .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
   global.gems.forEach((gem) => {
     e.create(`society:pristine_${gem.item.path}`)
       .texture(`society:item/gems/${gem.item.path}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
+      .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
   const vanillaPristine = [
@@ -981,7 +1006,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${gem.path}`)
       .texture(`minecraft:item/${gem.path}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
+      .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
   e.create("veggiesdelight:garlic_seed").texture("veggiesdelight:item/garlic_seed");

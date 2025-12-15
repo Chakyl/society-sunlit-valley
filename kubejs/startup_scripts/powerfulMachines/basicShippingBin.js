@@ -28,7 +28,7 @@ StartupEvents.registry("block", (event) => {
     .create("shippingbin:basic_shipping_bin", "cardinal")
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
-      item.tooltip(Text.gray("Sells items every morning and leaves coins in its inventory"));
+      item.tooltip(Text.translatable("tooltip.society.shipping_bin").gray());
       item.modelJson({
         parent: "shippingbin:block/shipping_bin",
       });

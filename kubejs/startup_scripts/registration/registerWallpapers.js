@@ -18,8 +18,8 @@ StartupEvents.registry("block", (e) => {
       e.create(`society:${wallpaperType}_baseboard`)
         .model(`society:block/wallpaper/${wallpaperType}_baseboard`)
         .item((item) => {
-          item.tooltip(Text.gray("Right click with planks to change type"));
-          item.tooltip(Text.green("Types: Birch, Dark Oak, Jungle, Oak, Spruce"));
+          item.tooltip(Text.translatable("society.wallpaper.description").gray());
+          item.tooltip(Text.translatable("society.wallpaper.description.tip").green());
         })
         .soundType("wood")
         .hardness(1.0)

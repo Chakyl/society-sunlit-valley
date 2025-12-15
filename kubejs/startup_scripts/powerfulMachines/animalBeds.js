@@ -154,11 +154,10 @@ global.bindNearestAnimalToBed = (level, block, player, server, bedType) => {
         if (player && server) {
           let name = animal.customName ? animal.customName.getString() : undefined;
           if (!name) {
-            name = global.formatName(String(animal.type.path).replace(/_/g, " "));
-            if (name.equals("Domestic tribull")) name = "Domestic tri-bull";
+            name = global.getTranslatedEntityName(String(animal.type)).getString();
           }
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 40 ${name} felt at home in the bed!`
+            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 40 ${Text.translatable("society.husbandry.bed_bind", name).getString()}`
           );
         }
         block.setEntityData(nbt);

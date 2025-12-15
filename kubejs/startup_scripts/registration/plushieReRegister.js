@@ -37,9 +37,9 @@ global.plushieRightClick = (click) => {
           },
         });
         block.setEntityData(nbt);
-        player.tell("§c❤ §7Thank you for the wonderful gift!");
+        player.tell(Text.translatable("society.plushie.thank").gray());
       } else {
-        player.tell("§c❤ §7I would be much happier if I had this...");
+        player.tell(Text.translatable("society.plushie.want_gift").gray());
         player.tell(questName);
       }
     }

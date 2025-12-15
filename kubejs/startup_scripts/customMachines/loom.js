@@ -22,7 +22,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Processes 5 fibers into artisan items"));
+      item.tooltip(Text.translatable("block.society.loom.description").gray());
       item.modelJson({
         parent: "society:block/loom/loom_off",
       });

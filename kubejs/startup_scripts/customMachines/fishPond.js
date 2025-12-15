@@ -82,17 +82,13 @@ global.handleQuestSubmission = (type, clickEvent) => {
 
       block.setEntityData(nbt);
       clickEvent.server.scheduleInTicks(2, () => {
-        player.tell(Text.green(`🐟: This really makes us feel at home!`));
+        player.tell(Text.translatable("block.society.fish_pond.fish_quest.complete").green());
       });
       if (!player.isCreative()) item.count = item.count - questContent.count;
     } else {
       clickEvent.server.scheduleInTicks(2, () => {
         player.tell(
-          Text.red(
-            `🐟: Thanks but we need §3${
-              questContent.count - item.count
-            }§r more of these to be happy§r...`
-          )
+          Text.translatable("block.society.fish_pond.fish_quest.partial", `${questContent.count - item.count}`).red()
         );
       });
     }
@@ -157,7 +153,7 @@ global.handleFishPondRightClick = (clickEvent) => {
             },
           });
         } else {
-          player.tell(Text.red("Right click with a fishing rod to clear fish type."));
+          player.tell(Text.translatable("block.society.fish_pond.fishing_rod").red());
         }
       }
     } else if (population > 0) {
