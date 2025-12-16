@@ -592,40 +592,6 @@
 			y: 0.0d
 		}
 		{
-			id: "77CD933D6316E6AA"
-			tasks: [{
-				id: "3CA9C2E774CDE459"
-				item: {
-					Count: 1
-					id: "relics:midnight_robe"
-					tag: {
-						abilities: {
-							backstab: {
-								points: 0
-								stats: {
-									damage: 1.4106d
-									distance: 15.56351d
-								}
-							}
-							vanish: {
-								points: 0
-								stats: {
-									light: 1.08378d
-									speed: 0.29434d
-								}
-								temp: {
-									ticking: 1b
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
 			id: "3A243F8D8DA80F76"
 			tasks: [{
 				id: "6CC9192B537E198F"
@@ -798,7 +764,6 @@
 				"280921A71837871A"
 				"5071B813994955AD"
 				"0EFE2499355F7A3F"
-				"77CD933D6316E6AA"
 				"02D8FB295EFF06C3"
 				"54CB08353EFCB5CD"
 				"3DA56D0FAFDAF2FF"

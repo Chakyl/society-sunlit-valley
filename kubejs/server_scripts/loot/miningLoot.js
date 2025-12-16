@@ -246,7 +246,7 @@ LootJS.modifiers((e) => {
       .hasAnyStage("the_spark_also_rises")
       .pool((p) => {
         p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
-        p.addLoot(Item.of("2x society:sparkstone"));
+        p.addLoot(Item.of("1x society:sparkstone"));
       });
   });
   netherOres.forEach((ore) => {
@@ -254,7 +254,7 @@ LootJS.modifiers((e) => {
       .hasAnyStage("the_spark_also_rises")
       .pool((p) => {
         p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
-        p.addLoot(Item.of("2x society:sparkstone"));
+        p.addLoot(Item.of("1x society:sparkstone"));
       });
   });
   const skullCavernOres = [
@@ -272,7 +272,7 @@ LootJS.modifiers((e) => {
       .hasAnyStage("the_spark_also_rises")
       .pool((p) => {
         p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
-        p.addLoot(Item.of("2x society:sparkstone"));
+        p.addLoot(Item.of("1x society:sparkstone"));
       });
   });
   ["society:sparkstone_ore", "society:deepslate_sparkstone_ore"].forEach((ore) => {

@@ -1,18 +1,33 @@
 console.info("[SOCIETY] animalSpecial.js loaded");
 
-const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuality, e) => {
+const handleSpecialItem = (
+  data,
+  day,
+  chance,
+  hungry,
+  minHearts,
+  mult,
+  item,
+  hasQuality,
+  e
+) => {
   const { player, target, level, server } = e;
   const affection = data.getInt("affection") || 0;
+  const mood = global.getOrFetchMood(level, target, day, player);
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const bedless = global.animalHasNoBed(data);
-  if (bedless) hearts = 3;
   let quality = 0;
 
   if (!hungry && hearts >= minHearts && Math.random() <= chance) {
-    data.affection = affection + (player.stages.has("animal_whisperer") ? 20 : 10);
+    if (item.includes("large")) {
+      if (Math.random() > (mood + hearts * 10) / 256) {
+        return;
+      }
+    }
+    data.affection =
+      affection + (player.stages.has("animal_whisperer") ? 20 : 10);
     let specialItem = level.createEntity("minecraft:item");
-    if (hasQuality && hearts > 0) {
-      quality = Math.floor((hearts % 11) / 2 - 2);
+    if (hasQuality && mood >= 160) {
+      quality = global.getHusbandryQuality(hearts, mood);
     }
     specialItem.x = player.x;
     specialItem.y = player.y;
@@ -46,6 +61,11 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:husbandry_animal")) return;
   if (hand == "MAIN_HAND") {
+    const day = Number(
+      (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
+    );
+    const mood = global.getOrFetchMood(level, target, day, player);
+    if (mood < 64 && Math.random() < mood / 64) return;
     global.handleSpecialHarvest(
       level,
       target,

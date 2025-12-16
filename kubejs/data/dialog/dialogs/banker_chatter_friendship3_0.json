@@ -22,6 +22,26 @@
 					"animationType": "FADE_IN"
 				}
 			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.chatter_friendship3.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1,
+					"animationType": "FADE_IN"
+				}
+			]
 		}
 	]
 }

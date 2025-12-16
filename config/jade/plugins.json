@@ -59,9 +59,6 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
-  "champions": {
-    "enable_affix_compact": true
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -71,6 +68,9 @@
     "exact_block": true,
     "goggles.detailed": false,
     "placard": true
+  },
+  "collectorsreap": {
+    "crop_progress": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -103,12 +103,6 @@
   },
   "pipez": {
     "pipe": true
-  },
-  "strawgolem": {
-    "strawgolem_barrel": true,
-    "strawgolem_decay": true,
-    "strawgolem_hunger": true,
-    "strawgolem": true
   },
   "untitledduckmod": {
     "lay_egg": true
