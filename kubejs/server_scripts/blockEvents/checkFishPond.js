@@ -29,9 +29,11 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
   const pondHeaderText = 
     Text.empty().gray()
-      .append(Text.of(`==[ §a${upgrade}§r `))
+      .append(Text.of(`==[ `))
+      .append(Text.green(upgrade)).append(" ")
       .append(Text.translatable("block.society.fish_pond").darkAqua())
-      .append(Text.of(` §a${upgrade}§r ]==`));
+      .append(" ").append(Text.green(upgrade))
+      .append(Text.of(` ]==`));
 
   global.renderUiText(
     player,

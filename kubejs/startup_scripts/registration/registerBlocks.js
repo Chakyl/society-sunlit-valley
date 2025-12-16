@@ -476,7 +476,7 @@ StartupEvents.registry("block", (e) => {
         food.alwaysEdible(true);
         food.effect("legendarycreatures:convulsion", 1600, 1, 1.0);
       });
-      item.tooltip(Text.translatable("item.society.truffle_tea.description").darkPurple());
+      item.tooltip(Text.translatable("block.society.truffle_tea.description").darkPurple());
       item.useAnimation("drink");
     });
 

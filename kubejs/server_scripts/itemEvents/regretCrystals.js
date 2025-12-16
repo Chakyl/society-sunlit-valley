@@ -21,7 +21,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_farming", (e) => {
     resetSkills("farming", server, player, 15500);
     item.count--;
   } else {
-    player.tell(Text.translation("society.crystal_of_regret.fail").red());
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -31,7 +31,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_husbandry", (e) => {
     resetSkills("husbandry", server, player, 2500);
     item.count--;
   } else {
-    player.tell(Text.translation("society.crystal_of_regret.fail").red());
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -41,7 +41,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_mining", (e) => {
     resetSkills("mining", server, player, 8750);
     item.count--;
   } else {
-    player.tell(Text.translation("society.crystal_of_regret.fail").red());
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -51,7 +51,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_fishing", (e) => {
     resetSkills("fishing", server, player, 14500);
     item.count--;
   } else {
-    player.tell(Text.translation("society.crystal_of_regret.fail").red());
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -61,6 +61,6 @@ ItemEvents.rightClicked("society:crystal_of_regret_adventuring", (e) => {
     resetSkills("adventuring", server, player, 8750);
     item.count--;
   } else {
-    player.tell(Text.translation("society.crystal_of_regret.fail").red());
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });

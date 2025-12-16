@@ -430,6 +430,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.artisan_hopper.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `7x7x7`).green());
       item.tooltip(Text.translatable("block.society.artisan_hopper.description.fuel").lightPurple());
       item.modelJson({

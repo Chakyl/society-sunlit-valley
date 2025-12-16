@@ -112,7 +112,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
     if (index < blockStage) outputString += "⬛";
     else outputString += "⬜";
   }
-  let translatedPrimaryOutput = global.getTranslatedItemName(id, primaryOutput).getString();
+  let translatedPrimaryOutput = String(global.getTranslatedItemName(id, primaryOutput).getString()).replace(/§./g, "");
 
   const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
   global.renderUiText(

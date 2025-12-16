@@ -11,9 +11,9 @@ ItemEvents.rightClicked("society:fish_radar", (e) => {
 
   let fish = [];
   player.tell(
-    Text.of("=[ ").gray()
+    Text.of("=====[ ").gray()
       .append(Text.translatable("item.society.fish_radar").green())
-      .append(" ]=")
+      .append(" ]=====")
   );
 
   if (level.dimension !== "minecraft:the_nether") {

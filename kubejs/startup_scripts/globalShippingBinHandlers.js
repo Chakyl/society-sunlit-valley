@@ -122,7 +122,7 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ${Text.translatable("society.shipping_bin.debt_paid_all", global.formatPrice(debtPaid)).getString()}`
+        } {anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ${Text.translatable("society.shipping_bin.debt_paid_all", global.formatPrice(debtPaid.toFixed())).getString()}`
       );
       global.setDebt(server, playerUUID, 0);
     } else {
@@ -131,14 +131,14 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ${Text.translatable("society.shipping_bin.debt_paid", global.formatPrice(debtPaid)).getString()}`
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ${Text.translatable("society.shipping_bin.debt_paid", global.formatPrice(debtPaid.toFixed())).getString()}`
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
     }
   }
   if (debtPaid > 0) {
     const receiptAuthor = Text.translatable("society.hospital_receipt.author").getString();
-    const receiptText = Text.translatable("society.shipping_bin.debt_paid_note", player.username, global.formatPrice(debtPaid), global.formatPrice(totalDebt)).getString();
+    const receiptText = Text.translatable("society.shipping_bin.debt_paid_note", player.username, global.formatPrice(debtPaid.toFixed()), global.formatPrice(totalDebt.toFixed())).getString();
     const receiptTitle = Text.translatable("society.shipping_bin.debt_paid_note.title").getString();
     receipt = global.getNotePaperItem(receiptAuthor, receiptText, receiptTitle);
     if (extenalOutput) {
@@ -192,7 +192,7 @@ global.processValueOutput = (
         server.runCommandSilent(
           `emberstextapi sendcustom ${
             player.username
-          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ${Text.translatable("society.shipping_bin.goods_sold", global.formatPrice(value)).getString()}`
+          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ${Text.translatable("society.shipping_bin.goods_sold", global.formatPrice(value.toFixed())).getString()}`
         );
       }
       if (extenalOutput) {

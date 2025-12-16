@@ -57,7 +57,7 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
           `{BlockEntityTag:{Description:"${
             Text.translatable("society.slime_ticket.favorite.item", translatedSlimeName).getString()
           }",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"${
-            translatedItemName
+            favorites.item
           }"}],Recipient:"${player.username}",Sender:"${presentSender}",id:"supplementaries:present"}}`
         )
       );

@@ -551,7 +551,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           server.runCommandSilent(
             global.getEmbersTextAPICommand(
               player.username, 
-              `{anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`, 
+              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`, 
               80, 
               Text.translatable("society.husbandry.emancipation").getString()
             )

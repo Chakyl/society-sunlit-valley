@@ -13,12 +13,12 @@ StartupEvents.registry("item", (e) => {
       e.create(templateId)
         .texture(`society:item/smithing/${tier.toLowerCase()}`)
         .displayName("Smithing Template")
-        .tooltip(Text.gray(`${templateId}.upgrade`))
+        .tooltip(Text.translatable(`item.society.${tier.toLowerCase()}_upgrade_smithing_template.upgrade`).gray())
         .tooltip(Text.of(" "))
-        .tooltip(Text.gray("item.minecraft.smithing_template.applies_to"))
-        .tooltip(Text.of(" ").append(Text.blue(`${templateId}.applies_to`)))
-        .tooltip(Text.gray("item.minecraft.smithing_template.ingredients"))
-        .tooltip(Text.of(" ").append(Text.blue(`${templateId}.ingredients`)));
+        .tooltip(Text.translatable("item.minecraft.smithing_template.applies_to").gray())
+        .tooltip(Text.of(" ").append(Text.translatable(`item.society.${tier.toLowerCase()}_upgrade_smithing_template.applies_to`).blue()))
+        .tooltip(Text.translatable("item.minecraft.smithing_template.ingredients").gray())
+        .tooltip(Text.of(" ").append(Text.translatable(`item.society.${tier.toLowerCase()}_upgrade_smithing_template.ingredients`).blue()));
     }
   });
 
