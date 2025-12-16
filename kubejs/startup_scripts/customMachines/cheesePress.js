@@ -12,12 +12,21 @@ global.cheesePressRecipes = new Map([
   ["society:amethyst_milk", { output: ["1x meadow:piece_of_amethyst_cheese"] }],
   ["society:large_sheep_milk", { output: ["1x meadow:sheep_cheese_block"] }],
   ["society:large_milk", { output: ["1x meadow:cheese_block"] }],
-  ["society:large_buffalo_milk", { output: ["1x meadow:buffalo_cheese_block"] }],
+  [
+    "society:large_buffalo_milk",
+    { output: ["1x meadow:buffalo_cheese_block"] },
+  ],
   ["society:large_goat_milk", { output: ["1x meadow:goat_cheese_block"] }],
   ["society:large_warped_milk", { output: ["1x meadow:warped_cheese_block"] }],
-  ["society:large_tri_bull_milk", { output: ["1x farmlife:tribull_cheese_wheel"] }],
+  [
+    "society:large_tri_bull_milk",
+    { output: ["1x farmlife:tribull_cheese_wheel"] },
+  ],
   ["society:large_grain_milk", { output: ["1x meadow:grain_cheese_block"] }],
-  ["society:large_amethyst_milk", { output: ["1x meadow:amethyst_cheese_block"] }],
+  [
+    "society:large_amethyst_milk",
+    { output: ["1x meadow:amethyst_cheese_block"] },
+  ],
 ]);
 
 StartupEvents.registry("block", (event) => {
@@ -85,7 +94,10 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-
+      let outputCount = 1;
+      if (player.stages.has("rancher") && Math.random() <= 0.2) {
+        outputCount = 2;
+      }
       global.handleBERightClick(
         "species:block.frozen_meat.place",
         click,
@@ -93,7 +105,7 @@ StartupEvents.registry("block", (event) => {
         3,
         false,
         false,
-        player.stages.has("rancher") ? 2 : 1,
+        outputCount,
         false,
         true
       );

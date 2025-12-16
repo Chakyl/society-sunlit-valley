@@ -18,11 +18,17 @@ global.prizeMachineRewards = [
   },
   {
     hint: "upgradable",
-    possibleOutputs: ["sophisticatedbackpacks:upgrade_base", "sophisticatedstorage:upgrade_base"],
+    possibleOutputs: [
+      "sophisticatedbackpacks:upgrade_base",
+      "sophisticatedstorage:upgrade_base",
+    ],
   },
   {
     hint: "bearing red fruits",
-    possibleOutputs: ["pamhc2trees:cherry_sapling", "pamhc2trees:apple_sapling"],
+    possibleOutputs: [
+      "pamhc2trees:cherry_sapling",
+      "pamhc2trees:apple_sapling",
+    ],
   },
   {
     hint: "crabs love to chow on",
@@ -251,7 +257,11 @@ global.prizeMachineRewards = [
   },
   {
     hint: "sticky, from a tree",
-    possibleOutputs: ["4x society:maple_syrup", "4x society:pine_tar", "4x society:oak_resin"],
+    possibleOutputs: [
+      "4x society:maple_syrup",
+      "4x society:pine_tar",
+      "4x society:oak_resin",
+    ],
   },
   {
     hint: "wintery",
@@ -264,7 +274,10 @@ global.prizeMachineRewards = [
   },
   {
     hint: "relating to relics",
-    possibleOutputs: ["society:relic_trove", "64x relics:relic_experience_bottle"],
+    possibleOutputs: [
+      "society:relic_trove",
+      "64x relics:relic_experience_bottle",
+    ],
   },
   {
     hint: "fossilized",
@@ -295,7 +308,10 @@ global.prizeMachineRewards = [
   },
   {
     hint: "artly and factual",
-    possibleOutputs: ["society:artifact_trove", "betterarcheology:unidentified_artifact"],
+    possibleOutputs: [
+      "society:artifact_trove",
+      "betterarcheology:unidentified_artifact",
+    ],
   },
   {
     hint: "seedy that's hard to find",
@@ -318,6 +334,7 @@ global.prizeMachineRewards = [
       "society:stone_hand",
       "society:frosted_tip",
       "society:tiny_gnome",
+      "society:gray_anatomy",
       "society:broken_clock",
       "society:black_opal",
       "society:sea_biscut",
@@ -361,7 +378,9 @@ global.prizeMachineRewards = [
 StartupEvents.registry("block", (event) => {
   event
     .create("society:prize_machine", "cardinal")
-    .property(integerProperty.create("prize", 0, global.prizeMachineRewards.length))
+    .property(
+      integerProperty.create("prize", 0, global.prizeMachineRewards.length)
+    )
     .box(1, 0, 4, 15, 28, 12)
     .defaultCutout()
     .soundType("copper")
@@ -374,17 +393,24 @@ StartupEvents.registry("block", (event) => {
       });
     })
     .defaultState((state) => {
-      state.set(integerProperty.create("prize", 0, global.prizeMachineRewards.length), 0);
+      state.set(
+        integerProperty.create("prize", 0, global.prizeMachineRewards.length),
+        0
+      );
     })
     .placementState((state) => {
-      state.set(integerProperty.create("prize", 0, global.prizeMachineRewards.length), 0);
+      state.set(
+        integerProperty.create("prize", 0, global.prizeMachineRewards.length),
+        0
+      );
     })
     .rightClick((click) => {
       const { item, block, hand, player, level, server } = click;
       const { x, y, z } = block;
       let nbt = block.getEntityData();
       const prizeNumber = nbt.data.prize;
-      const prizeOutput = global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
+      const prizeOutput =
+        global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
       const prizeHint = global.prizeMachineRewards[Number(prizeNumber)].hint;
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND" && item === "society:prize_ticket") {
@@ -424,7 +450,9 @@ StartupEvents.registry("block", (event) => {
         global.giveExperience(server, player, "adventuring", 100);
         global.giveExperience(server, player, "fishing", 100);
       } else {
-        player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
+        player.tell(
+          Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`)
+        );
       }
     })
     .blockEntity((blockInfo) => {

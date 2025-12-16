@@ -38,12 +38,7 @@ ServerEvents.tags("entity_type", (e) => {
   ].forEach((animal) => {
     e.add("society:coopmaster_bird", animal);
   });
-  global.animalBeds.forEach((bed) => {
-    global.bedDefinitions.get(bed).forEach((animal) => {
-      e.add(`society:${bed}_bed`, animal);
-    });
-  });
-
+  
   const petAnimals = [
     "buzzier_bees:grizzly_bear",
     "minecraft:wolf",

@@ -3,7 +3,7 @@
   "name": "shop.society_trading.trader",
   "texture": "minecraft:textures/block/fletching_table_side",
   "stage_required": "exotic_trader_unlocked",
-  "jei_catalyst": { "item":"minecraft:fletching_table" },
+  "jei_catalyst": { "item": "minecraft:fletching_table" },
   "villager_profession": "fletcher",
   "trades": [
     {
@@ -270,10 +270,10 @@
         "count": 1
       },
       "request": {
-        "item": "society:dirty_chai",
+        "item": "society:frozen_tear",
         "count": 16
       },
-      "trade_id": "minecraft:fletcher_frosted_tip_for_dirty_chai"
+      "trade_id": "minecraft:fletcher_frosted_tip_for_frozen_tear"
     },
     {
       "offer": {
@@ -308,6 +308,17 @@
         "count": 32
       },
       "trade_id": "minecraft:fletcher_ancient_roe_for_aged_minnow_roe"
+    },
+    {
+      "offer": {
+        "item": "society:gray_anatomy",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_whiskey_highland_hearth",
+        "count": 8
+      },
+      "trade_id": "minecraft:fletcher_gray_anatomy_for_aged_whiskey_highland_hearth"
     },
     {
       "offer": {

@@ -44,6 +44,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:inserter").texture("society:item/inserter");
   e.create("society:cordycep").texture("society:item/cordycep");
   e.create("society:enkephalin").texture("society:item/enkephalin");
+  e.create("society:gray_anatomy").texture("society:item/gray_anatomy");
   e.create("society:blueberry")
     .texture("society:item/blueberry")
     .food((food) => {
@@ -222,6 +223,8 @@ StartupEvents.registry("item", (e) => {
   e.create("crabbersdelight:mana_crab_trap_bait").texture("society:item/mana_crab_trap_bait");
   e.create("society:net_bobber").texture("society:item/net_bobber").maxStackSize(1);
   e.create("society:needle_bobber").texture("sewingkit:item/netherite_sewing_needle").maxStackSize(1);
+  e.create("society:animal_cracker").texture("society:item/animal_cracker");
+  e.create("society:sunlit_crystal").texture("society:item/sunlit_crystal");
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
   e.create("society:pig_race_ticket").texture("society:item/pig_race_ticket");
   e.create("society:multiplayer_pig_race_ticket").texture(

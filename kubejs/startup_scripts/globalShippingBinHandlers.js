@@ -27,6 +27,16 @@ const calculateCoinsFromValue = (price, output, coinMap) => {
   }
 };
 
+global.getAttributeMultiplier = (attributes, multiplier) => {
+  return (
+    Number(
+      attributes.filter((obj) => {
+        return obj.Name === multiplier;
+      })[0]?.Base
+    ) || 1
+  );
+};
+
 global.processShippingBinInventory = (
   inventory,
   inventorySlots,
@@ -44,7 +54,9 @@ global.processShippingBinInventory = (
     slotItem = inventory.getStackInSlot(i).item;
     isSellable =
       global.trades.has(String(slotItem.id)) ||
-      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id);
+      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(
+        slotItem.id
+      );
     if (isSellable) {
       let trade = global.trades.get(String(slotItem.id));
       let quality;
@@ -52,9 +64,15 @@ global.processShippingBinInventory = (
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }
-      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
-        if (slotNbt.slime) trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
-        if (slotNbt.plort) trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
+      if (
+        slotNbt &&
+        ((slotNbt.slime && slotNbt.slime.id) ||
+          (slotNbt.plort && slotNbt.plort.id))
+      ) {
+        if (slotNbt.slime)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
+        if (slotNbt.plort)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
 
       if (slotNbt && slotNbt.quality_food) {
@@ -81,14 +99,11 @@ global.processShippingBinInventory = (
       ) {
         itemValue *= 2;
       }
-      calculatedValue +=
+      calculatedValue += Math.round(
         itemValue *
-        inventory.getStackInSlot(i).count *
-        (Number(
-          attributes.filter((obj) => {
-            return obj.Name === trade.multiplier;
-          })[0]?.Base
-        ) || 1);
+          inventory.getStackInSlot(i).count *
+          global.getAttributeMultiplier(attributes, trade.multiplier)
+      );
     }
     if (isSellable && !simulated) {
       if (returnRemoved) removedItems.push(i);
@@ -100,7 +115,14 @@ global.processShippingBinInventory = (
 
 const debugValueProcess = false;
 
-global.handleShippingBinDebt = (value, player, server, block, inventory, extenalOutput) => {
+global.handleShippingBinDebt = (
+  value,
+  player,
+  server,
+  block,
+  inventory,
+  extenalOutput
+) => {
   if (!player) return value;
   let playerUUID = player.getUuid().toString();
   let binDebt = 0;
@@ -147,7 +169,9 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
 
 ${player.username}, your profits were used to pay off your debt!
 
-:coin: ${global.formatPrice(debtPaid)} paid out of your :coin: ${global.formatPrice(
+:coin: ${global.formatPrice(
+        debtPaid
+      )} paid out of your :coin: ${global.formatPrice(
         totalDebt
       )} debt."],title:"Debt Payment Receipt"}`
     );
@@ -179,9 +203,20 @@ global.processValueOutput = (
   if (value > 0) {
     let hasRoom = false;
     value = Math.round(
-      global.handleShippingBinDebt(value, player, server, block, inventory, extenalOutput)
+      global.handleShippingBinDebt(
+        value,
+        player,
+        server,
+        block,
+        inventory,
+        extenalOutput
+      )
     );
-    let outputs = calculateCoinsFromValue(value, [], extenalOutput ? global.coinMap : basicCoinMap);
+    let outputs = calculateCoinsFromValue(
+      value,
+      [],
+      extenalOutput ? global.coinMap : basicCoinMap
+    );
 
     if (!outputs) outputs = [];
 
@@ -193,7 +228,11 @@ global.processValueOutput = (
     }
     hasRoom =
       extenalOutput ||
-      slots - inventory.countNonEmpty() + removedSlots.length - calculateSlotsNeeded(outputs) >= 0;
+      slots -
+        inventory.countNonEmpty() +
+        removedSlots.length -
+        calculateSlotsNeeded(outputs) >=
+        0;
     if (hasRoom) {
       if (!block.level.hasNeighborSignal(block.pos) && player) {
         server.runCommandSilent(
@@ -212,7 +251,9 @@ global.processValueOutput = (
         let account = global.GLOBAL_BANK.getAccount(ownerUUID);
         let card = inventory.getStackInSlot(0);
         if (card && card.hasTag("numismatics:cards")) {
-          account = global.GLOBAL_BANK.getAccount(card.nbt.getUUID("AccountID"));
+          account = global.GLOBAL_BANK.getAccount(
+            card.nbt.getUUID("AccountID")
+          );
         }
         if (account && account.getBalance() + value < 2147483000) {
           account.deposit(value);
@@ -221,7 +262,10 @@ global.processValueOutput = (
             let { coin, count } = output;
             for (let index = 0; index <= count; index += 64) {
               let difference = count - index;
-              block.popItemFromFace(`${difference > 64 ? 64 : difference}x ${coin}`, facing);
+              block.popItemFromFace(
+                `${difference > 64 ? 64 : difference}x ${coin}`,
+                facing
+              );
             }
           });
         }
@@ -270,7 +314,11 @@ global.cacheShippingBin = (entity) => {
     "shippingbin:gem_sell_multiplier",
     "shippingbin:meat_sell_multiplier",
   ];
-  const stagesToFind = ["bluegill_meridian", "phenomenology_of_treasure", "brine_and_punishment"];
+  const stagesToFind = [
+    "bluegill_meridian",
+    "phenomenology_of_treasure",
+    "brine_and_punishment",
+  ];
   let binPlayer;
   level.getServer().players.forEach((p) => {
     if (p.getUuid().toString() === block.getEntityData().data.owner) {

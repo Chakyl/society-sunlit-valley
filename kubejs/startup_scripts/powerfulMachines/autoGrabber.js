@@ -1,16 +1,28 @@
 console.info("[SOCIETY] autoGrabber.js loaded");
 
-const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuality, e) => {
+const handleAutoGrabSpecialItem = (
+  data,
+  day,
+  chance,
+  hungry,
+  minHearts,
+  mult,
+  item,
+  hasQuality,
+  e
+) => {
   const { player, target, level, server, block, inventory } = e;
   const affection = data.getInt("affection") || 0;
+  const mood = global.getOrFetchMood(level, target, day, player);
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const bedless = global.animalHasNoBed(data);
-  if (bedless) hearts = 3;
   let quality = 0;
 
   if (!hungry && hearts >= minHearts && Math.random() <= chance) {
-    if (hasQuality && hearts > 0) {
-      quality = Math.floor((hearts % 11) / 2 - 2);
+    if (item.includes("large") && Math.random() > (mood + hearts * 10) / 256) {
+      return;
+    }
+    if (hasQuality && mood >= 160) {
+      quality = global.getHusbandryQuality(hearts, mood);
     }
     let specialItem = Item.of(
       `${mult}x ${item}`,
@@ -42,20 +54,25 @@ const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuali
 global.autoGrabAnimal = (entity, player, animal) => {
   const { inventory, block, level } = entity;
   let data = animal.persistentData;
-  const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+  const day = Number(
+    (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
+  );
+  const mood = global.getOrFetchMood(level, target, day, player);
   const hungry = day - data.getInt("ageLastFed") > 1;
+  if (mood < 64 && Math.random() < mood / 64) return;
   if (!hungry) {
     if (
       global.checkEntityTag(animal, "society:milkable_animal") &&
       global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
     ) {
-      let milkItem = global.getMilk(animal, data, player, day);
+      let milkItem = global.getMilk(level, animal, data, player, day);
       if (milkItem !== -1) {
         let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
         if (insertedMilk) {
           if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
             console.error("Sparkstone not consumed when it should have been!");
-          if (!global.getAnimalIsNotCramped(animal)) data.affection = data.getInt("affection") - 50;
+          if (!global.getAnimalIsNotCramped(animal, 1.1))
+            data.affection = data.getInt("affection") - 50;
           level.server.runCommandSilent(
             `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
           );
@@ -82,26 +99,33 @@ global.autoGrabAnimal = (entity, player, animal) => {
         player.server,
         block,
         inventory,
-        handleSpecialItem
+        handleAutoGrabSpecialItem
       );
     }
     if (
       level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
       global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
     ) {
-      let droppedLoot = global.getMagicShearsOutput(level, animal, player, level.server);
+      let droppedLoot = global.getMagicShearsOutput(
+        level,
+        animal,
+        player,
+        level.server
+      );
       if (droppedLoot !== -1) {
         level.server.runCommandSilent(
           `playsound minecraft:entity.sheep.shear block @a ${block.x} ${block.y} ${block.z}`
         );
         let insertedMagicDrops = false;
         for (let i = 0; i < droppedLoot.length; i++) {
-          insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
+          insertedMagicDrops =
+            global.insertBelow(level, block, droppedLoot[i]) == 1;
         }
         if (insertedMagicDrops) {
           if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
             console.error("Sparkstone not consumed when it should have been!");
-          if (!global.getAnimalIsNotCramped(animal)) data.affection = data.getInt("affection") - 50;
+          if (!global.getAnimalIsNotCramped(animal, 1.1))
+            data.affection = data.getInt("affection") - 50;
         }
       }
     }
@@ -114,7 +138,9 @@ global.runAutoGrabber = (entity) => {
   let nearbyFarmAnimals;
   nearbyFarmAnimals = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(radius))
-    .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
+    .filter((entity) =>
+      global.checkEntityTag(entity, "society:husbandry_animal")
+    );
   level.getServer().players.forEach((p) => {
     if (p.getUuid().toString() === block.getEntityData().data.owner) {
       attachedPlayer = p;
@@ -126,11 +152,10 @@ global.runAutoGrabber = (entity) => {
     });
     let { x, y, z } = block;
     let scanBlock;
-    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-      x + radius,
-      y + radius,
-      z + radius,
-    ])) {
+    for (let pos of BlockPos.betweenClosed(
+      new BlockPos(x - radius, y - radius, z - radius),
+      [x + radius, y + radius, z + radius]
+    )) {
       scanBlock = level.getBlock(pos);
       if (scanBlock.hasTag("society:animal_bed")) {
         let nbt = scanBlock.getEntityData();
@@ -156,7 +181,9 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(
-        Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
+        Text.gray(
+          "Harvests Milk and Special items from Farm Animals into inventory below."
+        )
       );
       item.tooltip(Text.gray("Uses the skills of player that places it."));
       item.tooltip(Text.gold("Upgrade with Magic Shears to collect drops."));
@@ -189,13 +216,19 @@ StartupEvents.registry("block", (event) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
+          .getSlotLimit((blockEntity, slot) =>
+            blockEntity.inventory.getSlotLimit(slot)
+          )
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
+          .getStackInSlot((blockEntity, slot) =>
+            blockEntity.inventory.getStackInSlot(slot)
+          )
       );
     }).blockstateJson = {
     multipart: []
       .concat(getCardinalMultipartJsonBasicUpgradable("auto_grabber", "false"))
-      .concat(getCardinalMultipartJsonBasicUpgradable("auto_grabber_upgraded", "true")),
+      .concat(
+        getCardinalMultipartJsonBasicUpgradable("auto_grabber_upgraded", "true")
+      ),
   };
 });
