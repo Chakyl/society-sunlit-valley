@@ -81,6 +81,32 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
+      const { player, item, block, hand, level } = click;
+      const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
+
+      if (hand == "OFF_HAND") return;
+      if (hand == "MAIN_HAND" && !upgraded && item == "society:gray_anatomy") {
+        if (!player.isCreative()) item.count--;
+        level.spawnParticles(
+          "farmersdelight:star",
+          true,
+          block.x,
+          block.y + 1,
+          block.z,
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          3,
+          0.01
+        );
+        block.set(block.id, {
+          facing: block.properties.get("facing"),
+          working: block.properties.get("working"),
+          mature: block.properties.get("mature"),
+          upgraded: true,
+        });
+      }
+
       global.handleBERightClick(
         "minecraft:block.wood.place",
         click,

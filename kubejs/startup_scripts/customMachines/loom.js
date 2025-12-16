@@ -73,7 +73,10 @@ StartupEvents.registry("block", (event) => {
         const furniture = Ingredient.of("#society:loot_furniture").itemIds;
         block.popItemFromFace(furniture[Math.floor(Math.random() * furniture.length)], facing);
       }
-
+      let outputCount = 1;
+      if (player.stages.has("rancher") && Math.random() <= 0.2) {
+        outputCount = 2;
+      }
       global.handleBERightClick(
         "minecraft:block.wool.fall",
         click,
@@ -81,7 +84,7 @@ StartupEvents.registry("block", (event) => {
         5,
         true,
         true,
-        player.stages.has("rancher") ? 2 : 1
+        outputCount
       );
     })
     .blockEntity((blockInfo) => {

@@ -1,0 +1,440 @@
+
+[loot]
+	#Range: 0.0 ~ 1.0
+	goldenEggChance = 0.002
+	#Range: 0.0 ~ 1.0
+	royalHoneycombChance = 0.0
+
+	[loot.chances]
+		#chance for accessory_box.ancient_city
+		#Range: 0.0 ~ 1.0
+		accessory_box_ancient_city = 0.0
+		#chance for accessory_box.bastion_treasure
+		#Range: 0.0 ~ 1.0
+		accessory_box_bastion_treasure = 0.0
+		#chance for accessory_box.buried_treasure
+		#Range: 0.0 ~ 1.0
+		accessory_box_buried_treasure = 0.0
+		#chance for accessory_box.desert_pyramid
+		#Range: 0.0 ~ 1.0
+		accessory_box_desert_pyramid = 0.0
+		#chance for accessory_box.end_city_treasure
+		#Range: 0.0 ~ 1.0
+		accessory_box_end_city_treasure = 0.0
+		#chance for accessory_box.jungle_temple
+		#Range: 0.0 ~ 1.0
+		accessory_box_jungle_temple = 0.0
+		#chance for accessory_box.pillager_outpost
+		#Range: 0.0 ~ 1.0
+		accessory_box_pillager_outpost = 0.0
+		#chance for accessory_box.ruined_portal
+		#Range: 0.0 ~ 1.0
+		accessory_box_ruined_portal = 0.0
+		#chance for accessory_box.shipwreck_treasure
+		#Range: 0.0 ~ 1.0
+		accessory_box_shipwreck_treasure = 0.0
+		#chance for accessory_box.simple_dungeon
+		#Range: 0.0 ~ 1.0
+		accessory_box_simple_dungeon = 0.0
+		#chance for accessory_box.stronghold_corridor
+		#Range: 0.0 ~ 1.0
+		accessory_box_stronghold_corridor = 0.0
+		#chance for accessory_box.stronghold_crossing
+		#Range: 0.0 ~ 1.0
+		accessory_box_stronghold_crossing = 0.0
+		#chance for accessory_box.village_desert_house
+		#Range: 0.0 ~ 1.0
+		accessory_box_village_desert_house = 0.0
+		#chance for accessory_box.village_plains_house
+		#Range: 0.0 ~ 1.0
+		accessory_box_village_plains_house = 0.0
+		#chance for accessory_box.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		accessory_box_village_savanna_house = 0.0
+		#chance for accessory_box.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		accessory_box_village_snowy_house = 0.0
+		#chance for accessory_box.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		accessory_box_village_taiga_house = 0.0
+		#chance for accessory_box.woodland_mansion
+		#Range: 0.0 ~ 1.0
+		accessory_box_woodland_mansion = 0.0
+		#chance for all_purpose_seasoning.village_desert_house
+		#Range: 0.0 ~ 1.0
+		all_purpose_seasoning_village_desert_house = 0.0
+		#chance for all_purpose_seasoning.village_plains_house
+		#Range: 0.0 ~ 1.0
+		all_purpose_seasoning_village_plains_house = 0.0
+		#chance for all_purpose_seasoning.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		all_purpose_seasoning_village_taiga_house = 0.0
+		#chance for all_purpose_seasoning.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		all_purpose_seasoning_village_savanna_house = 0.0
+		#chance for all_purpose_seasoning.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		all_purpose_seasoning_village_snowy_house = 0.0
+		#chance for amplifier_stone.abandoned_mineshaft
+		#Range: 0.0 ~ 1.0
+		amplifier_stone_abandoned_mineshaft = 0.0
+		#chance for ancient_chisel.desert_pyramid
+		#Range: 0.0 ~ 1.0
+		ancient_chisel_desert_pyramid = 0.0
+		#chance for anklet_of_fortune.village_desert_house
+		#Range: 0.0 ~ 1.0
+		anklet_of_fortune_village_desert_house = 0.0
+		#chance for anklet_of_fortune.village_plains_house
+		#Range: 0.0 ~ 1.0
+		anklet_of_fortune_village_plains_house = 0.0
+		#chance for anklet_of_fortune.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		anklet_of_fortune_village_taiga_house = 0.0
+		#chance for anklet_of_fortune.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		anklet_of_fortune_village_savanna_house = 0.0
+		#chance for anklet_of_fortune.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		anklet_of_fortune_village_snowy_house = 0.0
+		#chance for black_belt.pillager
+		#Range: 0.0 ~ 1.0
+		black_belt_pillager = 0.0
+		#chance for black_belt.vindicator
+		#Range: 0.0 ~ 1.0
+		black_belt_vindicator = 0.0
+		#chance for blade_shoes.village_desert_house
+		#Range: 0.0 ~ 1.0
+		blade_shoes_village_desert_house = 0.0
+		#chance for blade_shoes.village_plains_house
+		#Range: 0.0 ~ 1.0
+		blade_shoes_village_plains_house = 0.0
+		#chance for blade_shoes.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		blade_shoes_village_taiga_house = 0.0
+		#chance for blade_shoes.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		blade_shoes_village_savanna_house = 0.0
+		#chance for blade_shoes.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		blade_shoes_village_snowy_house = 0.0
+		#chance for bloody_knife.zombie
+		#Range: 0.0 ~ 1.0
+		bloody_knife_zombie = 0.0
+		#chance for bloody_knife.husk
+		#Range: 0.0 ~ 1.0
+		bloody_knife_husk = 0.0
+		#chance for bloody_knife.witch
+		#Range: 0.0 ~ 1.0
+		bloody_knife_witch = 0.0
+		#chance for burning_soul.warden
+		#Range: 0.0 ~ 1.0
+		burning_soul_warden = 0.0
+		#chance for cursed_doll_head.witch
+		#Range: 0.0 ~ 1.0
+		cursed_doll_head_witch = 0.0
+		#chance for devils_eyeball.bastion_treasure
+		#Range: 0.0 ~ 1.0
+		devils_eyeball_bastion_treasure = 0.0
+		#chance for devils_eyeball.nether_bridge
+		#Range: 0.0 ~ 1.0
+		devils_eyeball_nether_bridge = 0.0
+		#chance for durable_spring.village_armorer
+		#Range: 0.0 ~ 1.0
+		durable_spring_village_armorer = 0.0
+		#chance for durable_spring.village_desert_house
+		#Range: 0.0 ~ 1.0
+		durable_spring_village_desert_house = 0.0
+		#chance for durable_spring.village_plains_house
+		#Range: 0.0 ~ 1.0
+		durable_spring_village_plains_house = 0.0
+		#chance for durable_spring.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		durable_spring_village_savanna_house = 0.0
+		#chance for durable_spring.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		durable_spring_village_snowy_house = 0.0
+		#chance for durable_spring.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		durable_spring_village_taiga_house = 0.0
+		#chance for fossil_shark_tooth.ocean_ruin_cold
+		#Range: 0.0 ~ 1.0
+		fossil_shark_tooth_ocean_ruin_cold = 0.0
+		#chance for fossil_shark_tooth.ocean_ruin_warm
+		#Range: 0.0 ~ 1.0
+		fossil_shark_tooth_ocean_ruin_warm = 0.0
+		#chance for hero_emblem.ender_dragon
+		#Range: 0.0 ~ 1.0
+		hero_emblem_ender_dragon = 0.0
+		#chance for large_paddle.village_fisher
+		#Range: 0.0 ~ 1.0
+		large_paddle_village_fisher = 0.0
+		#chance for large_paddle.village_desert_house
+		#Range: 0.0 ~ 1.0
+		large_paddle_village_desert_house = 0.0
+		#chance for large_paddle.village_plains_house
+		#Range: 0.0 ~ 1.0
+		large_paddle_village_plains_house = 0.0
+		#chance for large_paddle.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		large_paddle_village_savanna_house = 0.0
+		#chance for large_paddle.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		large_paddle_village_snowy_house = 0.0
+		#chance for large_paddle.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		large_paddle_village_taiga_house = 0.0
+		#chance for life_jacket_belt.shipwreck_treasure
+		#Range: 0.0 ~ 1.0
+		life_jacket_belt_shipwreck_treasure = 0.0
+		#chance for magick_quiver.pillager_outpost
+		#Range: 0.0 ~ 1.0
+		magick_quiver_pillager_outpost = 0.0
+		#chance for moon_stone.end_city_treasure
+		#Range: 0.0 ~ 1.0
+		moon_stone_end_city_treasure = 0.0
+		#chance for power_crystal.abandoned_mineshaft
+		#Range: 0.0 ~ 1.0
+		power_crystal_abandoned_mineshaft = 0.0
+		#chance for rose_of_temptation.simple_dungeon
+		#Range: 0.0 ~ 1.0
+		rose_of_temptation_simple_dungeon = 0.0
+		#chance for rusty_guillotine_blade.ruined_portal
+		#Range: 0.0 ~ 1.0
+		rusty_guillotine_blade_ruined_portal = 0.0
+		#chance for sharp_fishing_hook.shipwreck_supply
+		#Range: 0.0 ~ 1.0
+		sharp_fishing_hook_shipwreck_supply = 0.0
+		#chance for shiny_stone.jungle_temple
+		#Range: 0.0 ~ 1.0
+		shiny_stone_jungle_temple = 0.0
+		#chance for silver_cat_tail.woodland_mansion
+		#Range: 0.0 ~ 1.0
+		silver_cat_tail_woodland_mansion = 0.0
+		#chance for small_propulsion_device.village_weaponsmith
+		#Range: 0.0 ~ 1.0
+		small_propulsion_device_village_weaponsmith = 0.0
+		#chance for small_propulsion_device.village_desert_house
+		#Range: 0.0 ~ 1.0
+		small_propulsion_device_village_desert_house = 0.0
+		#chance for small_propulsion_device.village_plains_house
+		#Range: 0.0 ~ 1.0
+		small_propulsion_device_village_plains_house = 0.0
+		#chance for small_propulsion_device.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		small_propulsion_device_village_savanna_house = 0.0
+		#chance for small_propulsion_device.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		small_propulsion_device_village_snowy_house = 0.0
+		#chance for small_propulsion_device.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		small_propulsion_device_village_taiga_house = 0.0
+		#chance for snow_golem_doll.igloo_chest
+		#Range: 0.0 ~ 1.0
+		snow_golem_doll_igloo_chest = 0.0
+		#chance for soul_gem.stronghold_corridor
+		#Range: 0.0 ~ 1.0
+		soul_gem_stronghold_corridor = 0.0
+		#chance for soul_gem.stronghold_crossing
+		#Range: 0.0 ~ 1.0
+		soul_gem_stronghold_crossing = 0.0
+		#chance for starved_wolf_skull.desert_pyramid
+		#Range: 0.0 ~ 1.0
+		starved_wolf_skull_desert_pyramid = 0.0
+		#chance for starved_wolf_skull.desert_well
+		#Range: 0.0 ~ 1.0
+		starved_wolf_skull_desert_well = 0.0
+		#chance for still_beating_heart.piglin_brute
+		#Range: 0.0 ~ 1.0
+		still_beating_heart_piglin_brute = 0.0
+		#chance for strong_sticky_slime_ball.slime
+		#Range: 0.0 ~ 1.0
+		strong_sticky_slime_ball_slime = 0.0
+		#chance for sun_stone.ancient_city
+		#Range: 0.0 ~ 1.0
+		sun_stone_ancient_city = 0.0
+		#chance for survival_belt.village_desert_house
+		#Range: 0.0 ~ 1.0
+		survival_belt_village_desert_house = 0.0
+		#chance for survival_belt.village_plains_house
+		#Range: 0.0 ~ 1.0
+		survival_belt_village_plains_house = 0.0
+		#chance for survival_belt.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		survival_belt_village_taiga_house = 0.0
+		#chance for survival_belt.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		survival_belt_village_savanna_house = 0.0
+		#chance for survival_belt.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		survival_belt_village_snowy_house = 0.0
+		#chance for supreme_meat.hoglin
+		#Range: 0.0 ~ 1.0
+		supreme_meat_hoglin = 0.0
+		#chance for suspicious_mushroom.mooshroom
+		#Range: 0.0 ~ 1.0
+		suspicious_mushroom_mooshroom = 0.0
+		#chance for tabi.pillager
+		#Range: 0.0 ~ 1.0
+		tabi_pillager = 0.0
+		#chance for tabi.vindicator
+		#Range: 0.0 ~ 1.0
+		tabi_vindicator = 0.0
+		#chance for tool_belt.village_toolsmith
+		#Range: 0.0 ~ 1.0
+		tool_belt_village_toolsmith = 0.0
+		#chance for tool_belt.village_desert_house
+		#Range: 0.0 ~ 1.0
+		tool_belt_village_desert_house = 0.0
+		#chance for tool_belt.village_plains_house
+		#Range: 0.0 ~ 1.0
+		tool_belt_village_plains_house = 0.0
+		#chance for tool_belt.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		tool_belt_village_savanna_house = 0.0
+		#chance for tool_belt.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		tool_belt_village_snowy_house = 0.0
+		#chance for tool_belt.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		tool_belt_village_taiga_house = 0.0
+		#chance for waist_warmer.village_desert_house
+		#Range: 0.0 ~ 1.0
+		waist_warmer_village_desert_house = 0.0
+		#chance for waist_warmer.village_plains_house
+		#Range: 0.0 ~ 1.0
+		waist_warmer_village_plains_house = 0.0
+		#chance for waist_warmer.village_taiga_house
+		#Range: 0.0 ~ 1.0
+		waist_warmer_village_taiga_house = 0.0
+		#chance for waist_warmer.village_savanna_house
+		#Range: 0.0 ~ 1.0
+		waist_warmer_village_savanna_house = 0.0
+		#chance for waist_warmer.village_snowy_house
+		#Range: 0.0 ~ 1.0
+		waist_warmer_village_snowy_house = 0.0
+		#chance for withered_heart.nether_bridge
+		#Range: 0.0 ~ 1.0
+		withered_heart_nether_bridge = 0.0
+
+[charm]
+	#Range: 0.0 ~ 512.0
+	amplifierStoneRadius = 24.0
+	#Range: 0.0 ~ 10000.0
+	amplifierStoneDamage = 2.0
+	#Range: -10.0 ~ 100.0
+	ancientChiselMining = 0.5
+	#Range: 0.0 ~ 100.0
+	burningSoulLevelCost = 2.0
+	#Range: 0.0 ~ 512.0
+	cursedDollHeadEffectRadius = 48.0
+	#Range: 0.0 ~ 1.0
+	devilsEyeballCriticalChance = 0.2
+	#Range: -10.0 ~ 100.0
+	devilsEyeballCriticalDamage = 0.2
+	#Range: -1000.0 ~ 1000.0
+	fossilSharkToothPenetration = 5.0
+	#Range: 0.0 ~ 10000.0
+	goldenEggDamage = 8.0
+	#Range: -1000.0 ~ 10000.0
+	heroEmblemAttackDamage = 2.0
+	#Range: -10.0 ~ 100.0
+	heroEmblemArrowDamage = 0.1
+	#Range: -1000.0 ~ 10000.0
+	heroEmblemLowHpAttackDamage = 4.0
+	#Range: -10.0 ~ 100.0
+	heroEmblemLowHpArrowDamage = 0.2
+	#Range: -10.0 ~ 100.0
+	heroEmblemLowHpMovementSpeed = 0.2
+	#Range: -1000.0 ~ 10000.0
+	heroEmblem1HpAttackDamage = 6.0
+	#Range: -10.0 ~ 100.0
+	heroEmblem1HpArrowDamage = 0.3
+	#Range: 0.0 ~ 1.0
+	heroEmblem1HpDodgeChance = 0.2
+	#Range: 0.0 ~ 1.0
+	heroEmblem1HpCriticalChance = 0.2
+	#Range: -10.0 ~ 100.0
+	magickQuiverArrowDamage = 0.3
+	#Range: -10.0 ~ 100.0
+	magickQuiverArrowVelocity = 0.2
+	#Range: -1000.0 ~ 1000.0
+	moonStoneAttackDamage = 4.0
+	#Range: -1000.0 ~ 1000.0
+	moonStoneArmor = 4.0
+	#Range: -10.0 ~ 100.0
+	moonStoneArrowDamage = 0.2
+	#Range: 0.0 ~ 1.0
+	moonStoneCriticalChance = 0.2
+	#Range: -10.0 ~ 100.0
+	moonStoneMiningSpeed = 0.25
+	#Range: 0 ~ 10000
+	moonStoneAttackSpeed = 1
+	#Range: 0 ~ 600
+	moonStoneHealSec = 6
+	#Range: -1000.0 ~ 1000.0
+	sharpFishingHookDamage = 2.0
+	#Range: 0.0 ~ 100.0
+	smallPropulsionMultiplier = 1.3
+	#Range: -1000.0 ~ 10000.0
+	snowGolemDollSnowballDamage = 2.0
+	#Range: 0.0 ~ 1000.0
+	soulGemHeal = 2.0
+	#Range: 0.0 ~ 1000.0
+	starvedWolfSkullHeal = 1.0
+	#Range: -10.0 ~ 100.0
+	starvedWolfSkullMovementSpeed = 0.3
+	#Range: -1000.0 ~ 10000.0
+	starvedWolfSkullAttackDamage = 6.0
+	#Range: -1000.0 ~ 10000.0
+	sunStoneAttackDamage = 4.0
+	#Range: -1000.0 ~ 10000.0
+	sunStoneArmor = 4.0
+	#Range: -10.0 ~ 100.0
+	sunStoneArrowDamage = 0.2
+	#Range: 0.0 ~ 1.0
+	sunStoneCriticalChance = 0.2
+	#Range: -10.0 ~ 100.0
+	sunStoneMiningSpeed = 0.25
+	#Range: 0 ~ 10000
+	sunStoneAttackSpeed = 1
+	#Range: 0 ~ 600
+	sunStoneHealSec = 6
+	#Range: 0.0 ~ 1000.0
+	supremeMeatAttackDamage = 5.0
+	#Range: 0.0 ~ 1000.0
+	supremeMeatArmor = 10.0
+	#Range: 0.0 ~ 10.0
+	supremeMeatMovementSpeed = 0.3
+	#Range: -1000.0 ~ 1000.0
+	witheredHeartMaxHp = 1.0
+
+[belt]
+	#Range: 0.0 ~ 1.0
+	blackBeltDodgeChance = 0.15
+	#Range: -1000.0 ~ 10000.0
+	championshipBeltUnarmedAttackDamage = 6.0
+	#Range: -10.0 ~ 1000.0
+	championshipBeltUnarmedAttackSpeed = 2.0
+	#Range: -1000.0 ~ 10000.0
+	championshipBeltArmor = 4.0
+	#Range: -10.0 ~ 100.0
+	championshipBeltMovementSpeed = 0.05
+	#Range: 0.0 ~ 1.0
+	championshipBeltDodgeChance = 0.05
+	#Range: 0.0 ~ 1.0
+	championshipBeltKnockbackResistance = 0.1
+	#Range: 0.0 ~ 100.0
+	silverCatTailSprintSpeed = 0.1
+	#Range: -10.0 ~ 1000.0
+	toolBeltBlockReach = 2.0
+
+[feet]
+	#Range: 0.0 ~ 1.0
+	ankletOfFortuneDebuffNegateChance = 0.5
+	#Range: -10.0 ~ 100.0
+	durableSpringMovementSpeed = 0.05
+	#Range: 1 ~ 12000
+	rocketShoesMaxTicks = 40
+	#Range: -10.0 ~ 100.0
+	tabiWalkSpeed = 0.1
+

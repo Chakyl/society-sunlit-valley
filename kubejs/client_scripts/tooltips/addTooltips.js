@@ -1,152 +1,52 @@
-const formatNumber = (number, quality) => {
-  let value;
-  if (quality) {
-    if (quality == 1.0) value = Math.round(number * 1.25);
-    if (quality == 2.0) value = Math.round(number * 1.5);
-    if (quality == 3.0) value = Math.round(number * 2);
-  } else {
-    value = number;
-  }
-  return global.formatPrice(value);
-};
-
-const getAttributeText = (attribute) => {
-  switch (attribute) {
-    case "crop":
-      return Text.translatable("tooltip.society.farmer_product").gold();
-    case "wood":
-      return Text.translatable("tooltip.society.artisan_product").gold();
-    case "gem":
-      return Text.translatable("tooltip.society.geologist_product").gold();
-    case "meat":
-      return Text.translatable("tooltip.society.adventurer_product").gold();
-    default:
-      console.log(`Invalid attribute`);
-  }
-};
-global.addPriceTooltip = (tooltip, sellable, attribute) => {
-  let value = sellable.value;
-  tooltip.addAdvanced(sellable.item, (item, advanced, text) => {
-    let quality;
-    if (item.nbt && item.nbt.quality_food) {
-      quality = item.nbt.quality_food.quality;
-    }
-    if (tooltip.shift) {
-      text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(value * item.count, quality)}`).white(),
-        Text.of(" "),
-        Text.translatable("tooltip.society.stack_value").gray(),
-      ]);
-      text.add(2, [getAttributeText(attribute)]);
-    } else {
-      text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(value, quality)}`).white(),
-        Text.of(" "),
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
-    }
-  });
-};
-
 ItemEvents.tooltip((tooltip) => {
-  const calculateCost = (coin, count, stackSize) => {
-    let value = 0;
-    switch (coin) {
-      case "spur":
-        value = 1;
-        break;
-      case "bevel":
-        value = 8;
-        break;
-      case "sprocket":
-        value = 16;
-        break;
-      case "cog":
-        value = 64;
-        break;
-      case "crown":
-        value = 512;
-        break;
-      case "sun":
-        value = 4096;
-        break;
-      case "neptunium_coin":
-        value = 32768;
-        break;
-      case "ancient_coin":
-        value = 262144;
-        break;
-      case "prismatic_coin":
-        value = 16777216;
-        break;
-      default:
-        console.log(`Invalid coin`);
-    }
-    return formatNumber(value * count * (stackSize || 1));
-  };
-  const coinTooltips = [
-    "numismatics:spur",
-    "numismatics:bevel",
-    "numismatics:sprocket",
-    "numismatics:cog",
-    "numismatics:crown",
-    "numismatics:sun",
-    "numismatics:neptunium_coin",
-    "numismatics:ancient_coin",
-    "numismatics:prismatic_coin",
-  ];
-  coinTooltips.forEach((coin) => {
-    tooltip.addAdvanced(coin, (item, advanced, text) => {
-      if (!coin.includes("_coin")) {
-        text.remove(1);
-      }
-      if (tooltip.shift) {
-        text.add(1, [
-          Text.translatable("tooltip.society.coins", `${calculateCost(coin.path, 1, item.count)}`).white(),
-          Text.of(" "),
-          Text.translatable("tooltip.society.stack_value").gray(),
-        ]);
-      } else {
-        text.add(1, [
-          Text.translatable("tooltip.society.coins", `${calculateCost(coin.path, 1, 1)}`).white(),
-          Text.of(" "),
-          Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-        ]);
-      }
-    });
-  });
-
   global.plushies.forEach((plush) => {
     tooltip.addAdvanced(plush, (item, advanced, text) => {
       if (item.nbt) {
-        if (item.nbt.getCompound("quality_food"))
-          text.add(1, [
-            Text.translatable("tooltip.society.plushies.rarity"),
-            Text.gold(
-              "★".repeat(
-                item.nbt.getCompound("quality_food").getInt("quality") + 1
-              )
-            ),
-            Text.gray(
-              "☆".repeat(
-                3 - item.nbt.getCompound("quality_food").getInt("quality")
-              )
-            ),
-          ]);
-        else text.add(1, [Text.gray("☆".repeat(4))]);
         let type = global.plushieTraits[Number(item.nbt.getInt("type"))];
-        text.add(2, [
-          Text.translatable("tooltip.society.plushies.trait"),
-          `§${type.color}${global.formatName(type.trait)}`,
-        ]);
-        let affection = item.nbt.getInt("affection");
-        text.add(3, [
-          Text.translatable("tooltip.society.plushies.affection"),
-          `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${
-            affection < 4 ? `❤`.repeat(4 - affection) : ""
-          }`,
-        ]);
-        text.add(4, [Text.translatable("tooltip.society.plushies")]);
+        if (tooltip.shift) {
+          text.add(1, [
+            Text.translatable("tooltip.society.plushies.trait"),
+            global.getTranslatedTextWithColorCode(type.color, `society.item.plushie.${type.trait}`),
+          ]);
+          text.add(2, [
+            Text.translate(`society.item.plushie.trait.description`).darkGray(),
+          ]);
+          text.add(3, [
+            Text.translate(
+              `society.item.plushie.${type.trait}.description`
+            ).gray(),
+          ]);
+        } else {
+          if (item.nbt.getCompound("quality_food"))
+            text.add(1, [
+              Text.translatable("tooltip.society.plushies.rarity"),
+              Text.gold(
+                "★".repeat(
+                  item.nbt.getCompound("quality_food").getInt("quality") + 1
+                )
+              ),
+              Text.gray(
+                "☆".repeat(
+                  3 - item.nbt.getCompound("quality_food").getInt("quality")
+                )
+              ),
+            ]);
+          else text.add(1, [Text.gray("☆".repeat(4))]);
+          let affection = item.nbt.getInt("affection");
+          text.add(2, [
+            Text.translatable("tooltip.society.plushies.affection"),
+            `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${
+              affection < 4 ? `❤`.repeat(4 - affection) : ""
+            }`,
+          ]);
+          text.add(3, [
+            Text.translatable("tooltip.society.plushies.trait"),
+            global.getTranslatedTextWithColorCode(type.color, `society.item.plushie.${type.trait}`),
+            Text.of(" "),
+            Text.translatable("tooltip.society.hold_key", global.getTranslatedTextWithColorCode(type.color, "key.keyboard.shift")).gray(),
+          ]);
+          text.add(4, [Text.translatable("tooltip.society.plushies")]);
+        }
       } else {
         text.add(1, [Text.translatable("tooltip.society.plushies")]);
       }
@@ -286,7 +186,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:phenomenology_of_treasure",
-      description: "Artifacts and Relics are worth 200% more",
+      description: "Artifacts and Relics are worth 200% more.",
     },
     {
       item: "society:frogs_bounty_bazaar",
@@ -489,6 +389,12 @@ ItemEvents.tooltip((tooltip) => {
     ).green()
   );
   tooltip.add(
+    "society:gray_anatomy",
+    Text.green(
+      "Use on a §2Wine Keg§a to give it a 5% chance of producing a Relic Trove"
+    )
+  );
+  tooltip.add(
     [
       "vintagedelight:gearo_berry",
       "minecraft:sweet_berries",
@@ -496,6 +402,24 @@ ItemEvents.tooltip((tooltip) => {
       "farmersdelight:rice",
     ],
     Text.translatable("tooltip.society.plant_on_farmland").gray()
+  );
+  // Crops with special conditions
+  tooltip.add(
+    [
+      "vinery:red_grape_seeds",
+      "vinery:white_grape_seeds",
+      "vinery:savanna_grape_seeds_red",
+      "vinery:savanna_grape_seeds_white",
+      "vinery:taiga_grape_seeds_red",
+      "vinery:taiga_grape_seeds_white",
+      "nethervinery:crimson_grape_seeds",
+      "nethervinery:warped_grape_seeds",
+    ],
+    Text.gray("Will only grow when planted on Grapevine Stem")
+  );
+  tooltip.add(
+    ["vinery:jungle_grape_seeds_red", "vinery:jungle_grape_seeds_white"],
+    Text.gray("Will only grow when planted on Grapevine Lattice")
   );
   // Misc
   tooltip.add(
@@ -671,6 +595,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:tapper",
       "society:recycling_machine",
       "society:cheese_press",
+      "society:wine_keg"
     ],
     Text.translatable("tooltip.society.artisan_machine").white()
   );
@@ -950,175 +875,7 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(block, Text.translatable("tooltip.society.villager_workstation", villager).gold());
   });
   Item.of("farm_and_charm:barley", "{quality_food:{quality:3}}");
-  // Prices
 
-  tooltip.addAdvanced("splendid_slimes:plort", (item, advanced, text) => {
-    let plortType;
-    let price;
-    if (item.nbt && item.nbt.plort) {
-      plortType = item.nbt.plort.id;
-    }
-    global.plorts.forEach((plort) => {
-      if (plort.type == plortType) price = plort.value;
-    });
-    if (tooltip.shift) {
-      text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(price * item.count, 0)}`).white(),
-        Text.of(" "),
-        Text.translatable("tooltip.society.stack_value").gray(),
-      ]);
-      text.add(2, [getAttributeText("crop")]);
-    } else {
-      text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
-        Text.of(" "),
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
-    }
-  });
-
-  tooltip.addAdvanced("splendid_slimes:slime_heart", (item, advanced, text) => {
-    let heartType;
-    let price;
-    if (item.nbt && item.nbt.slime) {
-      heartType = item.nbt.slime.id;
-    }
-    global.slimeHearts.forEach((heart) => {
-      if (heart.type == heartType) price = heart.value;
-    });
-    if (tooltip.shift) {
-      text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(price * item.count, 0)}`).white(),
-        Text.of(" "),
-        Text.translatable("tooltip.society.stack_value").gray(),
-      ]);
-      text.add(2, [getAttributeText("crop")]);
-    } else {
-      text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
-        Text.of(" "),
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
-    }
-  });
-
-  // Ore
-  global.ore.forEach((item) => {
-    global.addPriceTooltip(tooltip, item, "gem");
-  });
-  // Pristine
-  global.pristine.forEach((item) => {
-    global.addPriceTooltip(tooltip, item, "gem");
-  });
-  // Geodes
-  global.geodeList.forEach((geodeItem) => {
-    if (geodeItem.item !== "society:froggy_helm") {
-      global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
-    } else {
-      global.addPriceTooltip(tooltip, geodeItem, "meat");
-    }
-  });
-  global.frozenGeodeList.forEach((geodeItem) => {
-    if (geodeItem.item !== "society:ribbit_drum") {
-      global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
-    } else {
-      global.addPriceTooltip(tooltip, geodeItem, "meat");
-    }
-  });
-  global.magmaGeodeList.forEach((geodeItem) => {
-    if (geodeItem.item !== "society:ribbit_gadget") {
-      global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
-    } else {
-      global.addPriceTooltip(tooltip, geodeItem, "meat");
-    }
-  });
-  // Gem
-  global.gems.forEach((gem) => {
-    global.addPriceTooltip(tooltip, gem, "gem");
-    tooltip.add(gem.item, Text.translatable("tooltip.society.item_type.gem").gray());
-  });
-  [
-    "society:sparkstone",
-    "minecraft:emerald",
-    "minecraft:diamond",
-    "minecraft:amethyst_shard",
-    "minecraft:quartz",
-    "society:prismatic_shard",
-    "minecraft:prismarine_crystals",
-  ].forEach((gem) => {
-    tooltip.add(gem, Text.translatable("tooltip.society.item_type.gem").gray());
-  });
-  global.miscGeologist.forEach((gem) => {
-    global.addPriceTooltip(tooltip, gem, "gem");
-  });
-  // Artifact
-  global.artifacts.forEach((artifact) => {
-    global.addPriceTooltip(tooltip, artifact, "meat");
-  });
-  global.relics.forEach((artifact) => {
-    global.addPriceTooltip(tooltip, artifact, "meat");
-  });
-  // Crops
-  global.crops.forEach((crop) => {
-    global.addPriceTooltip(tooltip, crop, "crop");
-  });
-  // Meat
-  global.animalProducts.forEach((meat) => {
-    global.addPriceTooltip(tooltip, meat, "crop");
-  });
-  // Wines
-  global.wines.forEach((wine) => {
-    global.addPriceTooltip(tooltip, wine, "wood");
-  });
-  // Brews
-  global.brews.forEach((brew) => {
-    global.addPriceTooltip(tooltip, brew, "wood");
-  });
-  // Preserves
-  global.preserves.forEach((jar) => {
-    global.addPriceTooltip(tooltip, jar, "wood");
-  });
-  // Dehydrated
-  global.dehydrated.forEach((jar) => {
-    global.addPriceTooltip(tooltip, jar, "wood");
-  });
-  // Artisan goods
-  global.artisanGoods.forEach((good) => {
-    global.addPriceTooltip(tooltip, good, "wood");
-  });
-  // Fish
-  global.fish.forEach((fish) => {
-    global.addPriceTooltip(tooltip, fish, "crop");
-  });
-  global.smokedFish.forEach((fish) => {
-    global.addPriceTooltip(tooltip, fish, "wood");
-  });
-  global.agedRoe.forEach((fish) => {
-    global.addPriceTooltip(tooltip, fish, "wood");
-  });
-  // Cocktails
-  global.cocktails.forEach((cocktail) => {
-    global.addPriceTooltip(tooltip, cocktail, "crop");
-  });
-  // herbalbrews
-  global.herbalBrews.forEach((brew) => {
-    global.addPriceTooltip(tooltip, brew, "crop");
-  });
-  // Logs
-  global.logs.forEach((log) => {
-    global.addPriceTooltip(tooltip, log, "crop");
-  });
-  // Cooking
-  global.cooking.forEach((dish) => {
-    global.addPriceTooltip(tooltip, dish, "crop");
-  });
-  // Misc
-  global.miscAdventurer.forEach((miscItem) => {
-    global.addPriceTooltip(tooltip, miscItem, "meat");
-  });
   const geodes = [
     "society:geode",
     "society:frozen_geode",
@@ -1171,68 +928,6 @@ ItemEvents.tooltip((tooltip) => {
       }
     }
   );
-  // Translocators
-  tooltip.addAdvanced(
-    ["translocators:item_translocator", "translocators:fluid_translocator"],
-    (item, advanced, text) => {
-      if (tooltip.shift) {
-        text.add(1, [
-          Text.red("Redstone Dust"),
-          Text.darkGray(" - Allows toggling input/output with redstone signal"),
-        ]);
-        text.add(2, [
-          Text.yellow("Glowstone Dust"),
-          Text.darkGray(" - Transfers stacks/buckets at a time"),
-        ]);
-        text.add(3, [
-          Text.gray("Iron Ingot"),
-          Text.darkGray(
-            " - will emit redstone signal depending on the container status"
-          ),
-        ]);
-        text.add(4, [
-          Text.gold("Precision Mechanism"),
-          Text.darkGray(" - Maintain amount of items set in the filter"),
-        ]);
-        text.add(5, [Text.green("Right click with item to upgrade")]);
-      } else {
-        text.add(
-          Text.red(
-            "Will be removed in 4.0 due to crashes and performance issues"
-          )
-        );
-        text.add(2, [
-          Text.darkGray("Hold ["),
-          Text.gray("Shift"),
-          Text.darkGray("] to view upgrades"),
-        ]);
-      }
-    }
-  );
-  // Beds
-  global.animalBeds.forEach((bed) => {
-    tooltip.addAdvanced(`society:${bed}_bed`, (item, advanced, text) => {
-      if (tooltip.shift) {
-        text.add(1, Text.translatable("block.society.coop_bed.description.supports").green());
-        global.bedDefinitions.get(bed).forEach((animal, index) => {
-          text.add(
-            index + 2,
-            global.getTranslatedEntityName(animal).gold()
-          );
-        });
-      } else {
-        text.add(
-          1,
-          Text.translatable("block.society.coop_bed.description").gray()
-        );
-        text.add(2, Text.translatable("block.society.coop_bed.description.tip").gold());
-        text.add(3, [
-          Text.translatable("block.society.coop_bed.description.view_animal", 
-            Text.translatable("key.keyboard.shift").gray()).darkGray(),
-        ]);
-      }
-    });
-  });
 
   // Magnifying
   const magnifyingBlocks = [
