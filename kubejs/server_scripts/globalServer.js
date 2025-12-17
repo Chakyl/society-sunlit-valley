@@ -290,22 +290,22 @@ global.handleFee = (server, player, reason) => {
     if (!currentDebt) {
       server.persistentData.debts.push({ uuid: UUID.toString(), amount: amountToDeduct });
     }
-    let _amountToDeduct = global.formatPrice(amountToDeduct);
-    let _currentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
-    let _title = Text.translatable("society.hospital_receipt.title").getString();
-    let _author = Text.translatable("society.hospital_receipt.author").getString();
-    let _text = Text.translatable("society.hospital_receipt.debt", `${_amountToDeduct}`, `${_currentDebt}`).toJson();
+    let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
+    let formattedCurrentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
+    let noteTitle = Text.translatable("society.hospital_receipt.title").getString();
+    let noteAuthor = Text.translatable("society.hospital_receipt.author").getString();
+    let noteText = Text.translatable("society.hospital_receipt.debt", `${formattedAmountToDeduct}`, `${formattedCurrentDebt}`).toJson();
     player.give(
-      global.getNotePaperItem(_author, _text, _title)
+      global.getNotePaperItem(noteAuthor, noteText, noteTitle)
     );
   } else {
     account.setBalance(balance - amountToDeduct);
-    let _amountToDeduct = global.formatPrice(amountToDeduct);
-    let _title = Text.translatable("society.hospital_receipt.title").getString();
-    let _author = Text.translatable("society.hospital_receipt.author").getString();
-    let _text = Text.translatable("society.hospital_receipt.fee_taked", `${_amountToDeduct}`).toJson();
+    let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
+    let noteTitle = Text.translatable("society.hospital_receipt.title").getString();
+    let noteAuthor = Text.translatable("society.hospital_receipt.author").getString();
+    let noteText = Text.translatable("society.hospital_receipt.fee_taked", `${formattedAmountToDeduct}`).toJson();
     player.give(
-      global.getNotePaperItem(_author, _text, _title)
+      global.getNotePaperItem(noteAuthor, noteText, noteTitle)
     );
   }
 };

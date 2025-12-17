@@ -19,11 +19,11 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
         player.stages.add("skull_cavern_intro");
         player.tell(Text.translatable("society.skull_cavern.intro").gold());
         player.give(Item.of("gag:escape_rope"));
-        let _title = Text.translatable("society.skull_cavern.intro.note.title").getString();
-        let _author = Text.translatable("society.skull_cavern.intro.note.author").getString();
-        let _text = Text.translatable("society.skull_cavern.intro.note").toJson();
+        let noteTitle = Text.translatable("society.skull_cavern.intro.note.title").getString();
+        let noteAuthor = Text.translatable("society.skull_cavern.intro.note.author").getString();
+        let noteText = Text.translatable("society.skull_cavern.intro.note").toJson();
         player.give(
-          global.getNotePaperItem(_author, _text, _title)
+          global.getNotePaperItem(noteAuthor, noteText, noteTitle)
         );
       }
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);

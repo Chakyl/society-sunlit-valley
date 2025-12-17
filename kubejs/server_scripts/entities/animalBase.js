@@ -144,7 +144,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     }
     if (errorText && !player.isFake()) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
+        global.getEmbersTextAPICommand(player.username, global.animalMessageSettings, 40, errorText)
       );
     }
   } else if (item === "minecraft:air") {
@@ -257,7 +257,7 @@ const handleMilk = (name, data, day, hungry, e) => {
   }
   if (errorText && !player.isFake()) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 20 ${errorText}`
+      global.getEmbersTextAPICommand(player.username, global.animalMessageSettings, 20, errorText)
     );
   }
 };
@@ -372,7 +372,7 @@ const handleMagicHarvest = (name, data, e) => {
     }
     if (!player.isFake())
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
+        global.getEmbersTextAPICommand(player.username, global.animalMessageSettings, 40, errorText)
       );
     global.addItemCooldown(player, item, 10);
   }

@@ -5,11 +5,11 @@ CommonAddedEvents.playerRespawn((e) => {
   if (global.enableDeathDebt) {
     if (!player.stages.has("first_death")) {
       player.stages.add("first_death");
-      let _title = Text.translatable("society.hospital_receipt.first_death.title").getString();
-      let _author = Text.translatable("society.hospital_receipt.author").getString();
-      let _text = Text.translatable("society.hospital_receipt.first_death").toJson();
+      let noteTitle = Text.translatable("society.hospital_receipt.first_death.title").getString();
+      let noteAuthor = Text.translatable("society.hospital_receipt.author").getString();
+      let noteText = Text.translatable("society.hospital_receipt.first_death").toJson();
       player.give(
-        global.getNotePaperItem(_author, _text, _title)
+        global.getNotePaperItem(noteAuthor, noteText, noteTitle)
       );
     } else {
       global.handleFee(server, player, "death");

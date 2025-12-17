@@ -813,6 +813,32 @@ ItemEvents.tooltip((tooltip) => {
     "farmersdelight:rich_soil",
     Text.translatable("tooltip.society.rich_soil").gray()
   );
+  tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(1, [
+        Text.white("").append(Text.translatable("desc.sereneseasons.fertile_seasons")).append(":"),
+        Text.of(" "), Text.translatable("desc.sereneseasons.spring").green().append(","),
+        Text.of(" "), Text.translatable("desc.sereneseasons.summer").yellow().append(","),
+        Text.of(" "), Text.translatable("desc.sereneseasons.autumn").gold(),
+      ]);
+    } else {
+      text.add(1, [
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
+  tooltip.addAdvanced("farm_and_charm:strawberry_seed", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(1, [
+        Text.white("").append(Text.translatable("desc.sereneseasons.fertile_seasons")).append(":"),
+        Text.of(" "), Text.translatable("desc.sereneseasons.spring").green(),
+      ]);
+    } else {
+      text.add(1, [
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
   tooltip.add(
     "relics:jellyfish_necklace",
     Text.translatable("tooltip.society.jellyfish_necklace").red()

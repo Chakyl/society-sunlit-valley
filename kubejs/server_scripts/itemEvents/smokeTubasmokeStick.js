@@ -32,7 +32,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
       `execute in ${level.dimension} run summon lightning_bolt ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 60 ${Text.translatable("society.endless_entrana.text.0").getString()}`
+      global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 60, Text.translatable("society.endless_entrana.text.0").getString())
     );
   }
   if (Math.random() < 0.01 && !item.nbt) {
@@ -40,7 +40,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
       `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.1").getString()}`
+      global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.1").getString())
     );
     server.scheduleInTicks(1, () => {
       player.give(
@@ -55,16 +55,16 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
     let giveNew = true;
     if (item.nbt.edition === 500)
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.2").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.2").getString())
       );
     if (item.nbt.edition === 650) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.3").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.3").getString())
       );
     }
     if (item.nbt.edition === 666) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.4").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.4").getString())
       );
       server.scheduleInTicks(100, () => {
         server.runCommandSilent(`kill ${player.username}`);
@@ -73,7 +73,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
 
     if (item.nbt.edition === 999) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 1200 ${Text.translatable("society.endless_entrana.text.5").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 1200, Text.translatable("society.endless_entrana.text.5").getString())
       );
       server.scheduleInTicks(648000, () => {
         server.runCommandSilent(`kill ${player.username}`);
@@ -82,31 +82,31 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
 
     if (item.nbt.edition === 2000) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.6").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.6").getString())
       );
     }
 
     if (item.nbt.edition === 2100) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.7").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.7").getString())
       );
     }
     if (item.nbt.edition === 5000) {
       player.give("numismatics:spur");
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.8").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.8").getString())
       );
     }
     if (item.nbt.edition > 10000 && Math.random() < 0.001) {
       player.give("numismatics:bevel");
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.9").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.9").getString())
       );
     }
     if (item.nbt.edition > 10000 && Math.random() < 0.001) {
       player.give("numismatics:sprocket");
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.9").getString()}`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.9").getString())
       );
     }
     if (item.nbt.edition > 1000000000 && Math.random() < 0.0001) {
@@ -114,12 +114,12 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
         player.give("create:creative_blaze_cake");
         player.offHandItem.count--;
         server.runCommandSilent(
-          `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.11").getString()}`
+          global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.11").getString())
         );
         giveNew = false;
       } else {
         server.runCommandSilent(
-          `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 ${Text.translatable("society.endless_entrana.text.10").getString()}`
+          global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.10").getString())
         );
       }
     }
@@ -138,7 +138,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
     server.scheduleInTicks(800, () => {
       server.runCommandSilent(`effect give ${player.username} minecraft:wither 40 3`);
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 60 ${Text.translatable("society.endless_entrana.text.0").getString()}`
+        global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 60, Text.translatable("society.endless_entrana.text.0").getString())
       );
     });
   }
