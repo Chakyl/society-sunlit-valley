@@ -149,7 +149,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Ages a product over a long period of time"));
+      item.tooltip(Text.translatable("block.society.aging_cask.description").gray());
       item.modelJson({
         parent: "society:block/aging_cask/aging_cask",
       });
@@ -199,7 +199,7 @@ StartupEvents.registry("block", (event) => {
             upgraded: true,
           });
         } else if (!upgraded && item == "society:broken_clock") {
-          player.tell(Text.red(`This can only be upgraded when not in use`));
+          player.tell(Text.translatable("society.working_block_entity.cannot_upgrade").red());
         }
       }
 

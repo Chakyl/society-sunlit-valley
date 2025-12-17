@@ -387,7 +387,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Redeem Prize Tickets for a reward!"));
+      item.tooltip(Text.translatable("block.society.prize_machine.description").gray());
       item.modelJson({
         parent: "society:block/prize_machine",
       });
@@ -451,7 +451,13 @@ StartupEvents.registry("block", (event) => {
         global.giveExperience(server, player, "fishing", 100);
       } else {
         player.tell(
-          Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`)
+          Text.translatable(
+            "block.society.prize_machine.next",
+            global.translatableWithFallback(
+              `society.prize_machine.hint.${prizeNumber}`,
+              `Something §6${prizeHint}§r...`
+            )
+          ).gray()
         );
       }
     })

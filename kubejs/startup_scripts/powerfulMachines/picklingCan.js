@@ -81,15 +81,10 @@ StartupEvents.registry("block", (event) => {
     .box(1, 0, 1, 15, 15, 15)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray(
-          "Pickles vegetables automatically and inserts them into the block below"
-        )
-      );
-      item.tooltip(
-        Text.red("Requires adjacent Salt Layers from an Evaporator")
-      );
-      item.tooltip(Text.green("Preserves input quality"));
+      item.tooltip(Text.translatable("block.society.prickly_can.description").gray());
+      item.tooltip(Text.translatable("block.society.prickly_can.description.warn").red());
+      item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
+      item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
       item.modelJson({
         parent: "etcetera:block/prickly_can",
       });

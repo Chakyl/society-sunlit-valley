@@ -78,7 +78,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Duplicates any mineral or gem placed inside"));
+      item.tooltip(Text.translatable("block.society.crystalarium.description").gray());
       item.modelJson({
         parent: "society:block/crystalarium/crystalarium",
       });
@@ -127,7 +127,7 @@ StartupEvents.registry("block", (event) => {
         let nbt = block.getEntityData();
         global.crystalariumCrystals.get(nbt.data.type).output.forEach((item) => {
           block.popItemFromFace(
-            `society:pristine_${Item.of(item).id.path}`,
+            `society:pristine_${String(Item.of(item).id).path}`,
             block.properties.get("facing").toLowerCase()
           );
         });

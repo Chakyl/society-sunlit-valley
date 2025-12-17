@@ -30,7 +30,7 @@ global.updateLeaderboard = (block, server) => {
   global.clearOldTextDisplay(block, "leaderboard");
 
   // Display leaderboard name
-  global.spawnTextDisplay(block, calcY, "leaderboard", "● Leaderboard");
+  global.spawnTextDisplay(block, calcY, "leaderboard", Text.translatable("block.society.coin_leaderboard.title").getString());
   // Display leaderboard accounts
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
@@ -52,7 +52,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Displays top 10 richest players on the server"));
+      item.tooltip(Text.translatable("block.society.coin_leaderboard.description").gray());
       item.modelJson({
         parent: "society:block/coin_leaderboard",
       });

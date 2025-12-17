@@ -104,7 +104,12 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
         block.set(block.id, modifiedProperties);
       });
     } else {
-      player.tell("This tree only bears fruit in §6Autumn§r!");
+      player.tell(
+        Text.translatable(
+          "item.society.enriched_bone_meal.tree_fruit_season", 
+          Text.translatable("desc.sereneseasons.autumn").gold()
+        )
+      );
       e.cancel();
     }
   } else if (
@@ -155,7 +160,12 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
         block.set(block.id, modifiedProperties);
       });
     } else {
-      e.player.tell("This tree only bears fruit in §aSpring§r!");
+      e.player.tell(
+        Text.translatable(
+          "item.society.enriched_bone_meal.tree_fruit_season", 
+          Text.translatable("desc.sereneseasons.spring").green()
+        )
+      );
       e.cancel();
     }
   } else if (

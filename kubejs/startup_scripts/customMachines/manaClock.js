@@ -52,9 +52,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Advances Aging Casks and Ancient Casks that have no progress by 1 day"));
-      item.tooltip(Text.aqua("Requires Botania mana from spreader"));
-      item.tooltip(Text.green(`Area: 3x3`));
+      item.tooltip(Text.translatable("block.society.mana_clock.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.need_mana").aqua());
+      item.tooltip(Text.translatable("tooltip.society.area", `3x3`).green());
       item.modelJson({
         parent: "society:block/mana_clock",
       });

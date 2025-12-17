@@ -13,21 +13,17 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
     global.teleportHome(player, server, level);
   } else if (level.dimension === "minecraft:overworld") {
     if (level.dayTime() % 24000 > 18000) {
-      errorText = "It's too late at night to enter the Skull Cavern...";
+      errorText = Text.translatable("society.skull_cavern.too_late").getString();
     } else {
       if (!player.stages.has("skull_cavern_intro")) {
         player.stages.add("skull_cavern_intro");
-        player.tell(Text.gold("A strange person hands you a note and vanishes..."));
+        player.tell(Text.translatable("society.skull_cavern.intro").gold());
         player.give(Item.of("gag:escape_rope"));
+        let noteTitle = Text.translatable("society.skull_cavern.intro.note.title").getString();
+        let noteAuthor = Text.translatable("society.skull_cavern.intro.note.author").getString();
+        let noteText = Text.translatable("society.skull_cavern.intro.note").toJson();
         player.give(
-          Item.of(
-            "candlelight:note_paper_written",
-            `{author:"someone...",text:["The Skull Cavern is a dangerous pit you can descend by finding ropes under ores and boulders.  
-
-It'll drain the life out of you if you stay in it too late.
-
-Use that Escape Rope I gave you to get out before 5AM..."],title:"A Warning"}`
-          )
+          global.getNotePaperItem(noteAuthor, noteText, noteTitle)
         );
       }
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);
@@ -37,7 +33,7 @@ Use that Escape Rope I gave you to get out before 5AM..."],title:"A Warning"}`
       player.getLevel().getBlock(x, 511, z).set("society:skull_cavern_teleporter");
     }
   } else {
-    errorText = "This block doesn't work in this dimension";
+    errorText = Text.translatable("society.skull_cavern.invalid_dimension").getString();
   }
   if (errorText) {
     global.renderUiText(

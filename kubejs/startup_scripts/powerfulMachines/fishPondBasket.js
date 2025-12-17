@@ -70,11 +70,11 @@ StartupEvents.registry("block", (event) => {
     .waterlogged()
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Harvests outputs of Fish Ponds into inventory below."));
-      item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.gold("Upgrade with a Bucket to extract fish when mature."));
-      item.tooltip(Text.green(`Area: 3x3x3`));
-      item.tooltip(Text.lightPurple("Requires Sparkstone"));
+      item.tooltip(Text.translatable("block.society.fish_pond_basket.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
+      item.tooltip(Text.translatable("block.society.fish_pond_basket.description.upgrade").gold());
+      item.tooltip(Text.translatable("tooltip.society.area", `3x3x3`).green());
+      item.tooltip(Text.translatable("block.society.fish_pond_basket.description.fuel").lightPurple());
       item.modelJson({
         parent: "society:block/fish_pond_basket",
       });

@@ -27,7 +27,7 @@ BlockEvents.rightClicked(
     if (hand == "OFF_HAND") return;
     if (block.properties.get("type").toString() === "single") return;
     if ("sophisticatedstorage:basic_tier_upgrade" === item.id && block.getEntityData().Items.length > 0) {
-      player.tell(Text.red("This chest cannot be upgraded while full."));
+      player.tell(Text.translatable("society.chest_upgrade.void_warn").red());
       e.cancel();
     }
   }

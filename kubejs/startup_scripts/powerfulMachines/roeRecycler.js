@@ -52,12 +52,8 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray(
-          "Pickles vegetables automatically and inserts them into the block below"
-        )
-      );
-      item.tooltip(Text.red("Only usable if Fishing Mastery unlocked"));
+      item.tooltip(Text.translatable("block.society.roe_recycler.description").gray());
+      item.tooltip(Text.translatable("block.society.roe_recycler.description.warn").red());
       item.modelJson({
         parent: "society:block/roe_recycler",
       });

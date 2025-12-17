@@ -115,8 +115,8 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 2, 16, 12, 14)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Feeds nearby farm animals using Animal Feed"));
-      item.tooltip(Text.green(`Area: 13x13x13`));
+      item.tooltip(Text.translatable("block.society.feeding_trough.description").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `13x13x13`).green());
       item.modelJson({
         parent: "farm_and_charm:block/feeding_trough_size_0",
       });

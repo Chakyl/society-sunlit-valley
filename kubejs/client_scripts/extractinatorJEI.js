@@ -36,7 +36,7 @@ const registerExtractingCategory = (event, title) => {
   });
 };
 JEIAddedEvents.registerCategories((e) => {
-  registerExtractingCategory(e, "Extracting");
+  registerExtractingCategory(e, Text.translatable("jei.society.category.extracting"));
 });
 
 JEIAddedEvents.registerRecipes((e) => {

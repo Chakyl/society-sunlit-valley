@@ -34,7 +34,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns Ground Coffee into Espresso and steams milk"));
+      item.tooltip(Text.translatable("block.society.espresso_machine.description").gray());
       item.modelJson({
         parent: "society:block/espresso_machine",
       });
