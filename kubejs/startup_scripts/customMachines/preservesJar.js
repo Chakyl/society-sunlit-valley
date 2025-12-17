@@ -164,7 +164,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns 5 of the same crop into a preserve"));
+      item.tooltip(Text.translatable("block.society.preserves_jar.description").gray());
       item.modelJson({
         parent: "society:block/preserves_jar",
       });

@@ -36,11 +36,7 @@ global.handleAdditionalArtisanMachineOutputs = (
     case "society:crystalarium": {
       if (upgraded && rnd10()) {
         recipes[type - 1].output.forEach((item) => {
-          global.insertBelow(
-            level,
-            block,
-            `society:pristine_${Item.of(item).id.path}`
-          );
+          global.insertBelow(level, block, `society:pristine_${String(Item.of(item).id).path}`);
         });
       }
       break;
@@ -477,19 +473,10 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray("Inserts items into Artisan Machines from inventory above.")
-      );
-      item.tooltip(
-        Text.gray(
-          "Harvests outputs from Artisan Machines into inventory below."
-        )
-      );
-      item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 7x7x7`));
-      item.tooltip(
-        Text.lightPurple("Requires Sparkstone for each insert and extract")
-      );
+      item.tooltip(Text.translatable("block.society.artisan_hopper.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `7x7x7`).green());
+      item.tooltip(Text.translatable("block.society.artisan_hopper.description.fuel").lightPurple());
       item.modelJson({
         parent: "society:block/artisan_hopper",
       });
@@ -529,19 +516,10 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray("Inserts items into Artisan Machines from inventory above.")
-      );
-      item.tooltip(
-        Text.gray(
-          "Harvests outputs from Artisan Machines into inventory below."
-        )
-      );
-      item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 3x3x3`));
-      item.tooltip(
-        Text.lightPurple("Requires Sparkstone for each insert and extract")
-      );
+      item.tooltip(Text.translatable("block.society.artisan_hopper.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `3x3x3`).green());
+      item.tooltip(Text.translatable("block.society.artisan_hopper.description.fuel").lightPurple());
       item.modelJson({
         parent: "society:block/mini_artisan_hopper",
       });

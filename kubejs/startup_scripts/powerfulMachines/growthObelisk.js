@@ -33,9 +33,9 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Grows crops by one stage once a day at 7am"));
-      item.tooltip(Text.green(`Area: 7x1x7`));
-      item.tooltip(Text.lightPurple("Requires Spark-Gro each day"));
+      item.tooltip(Text.translatable("block.society.growth_obelisk.description").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `7x1x7`).green());
+      item.tooltip(Text.translatable("block.society.growth_obelisk.description.fuel").lightPurple());
       item.modelJson({
         parent: "society:block/growth_obelisk/display",
       });

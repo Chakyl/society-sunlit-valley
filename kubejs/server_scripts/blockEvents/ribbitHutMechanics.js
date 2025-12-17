@@ -68,7 +68,7 @@ BlockEvents.placed("society:ribbit_hut", (e) => {
   let space = scanArea(level, block);
 
   if (!space) {
-    player.tell(Text.red("Not enough room to place ribbit hut!"));
+    player.tell(Text.translatable("block.society.ribbit_hut.not_enough_room").red());
     e.cancel();
   } else {
     setRibbitHutBlocks(level, block, player, server);
@@ -76,7 +76,7 @@ BlockEvents.placed("society:ribbit_hut", (e) => {
 });
 
 BlockEvents.leftClicked(["society:ribbit_hut_block"], (e) => {
-  e.player.tell(Text.red("Break the door to demolish the Ribbit Hut"));
+  e.player.tell(Text.translatable("block.society.ribbit_hut.break").red());
 });
 
 BlockEvents.broken(["society:ribbit_hut"], (e) => {

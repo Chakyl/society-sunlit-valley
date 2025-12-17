@@ -23,19 +23,19 @@ console.info("[SOCIETY] skillBooks.js loaded");
 ].forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;
-    const stageName = item.id.path;
+    const stageName = String(item.id).path;
     if (!player.stages.has(stageName)) {
       server.runCommandSilent(
         `puffish_skills skills unlock ${player.username} society:books ${book.skillId}`
       );
-      player.tell(Text.green("You learned the skill!"));
+      player.tell(Text.translatable("society.skill_book.learn").green());
       server.runCommandSilent(
         `playsound minecraft:block.enchantment_table.use block @a ${player.x} ${player.y} ${player.z}`
       );
       item.count--;
       global.addItemCooldown(player, item, 20);
     } else {
-      player.tell(Text.red("You've already learned this skill!"));
+      player.tell(Text.translatable("society.skill_book.already_learn").red());
       global.addItemCooldown(player, item, 20);
     }
   });

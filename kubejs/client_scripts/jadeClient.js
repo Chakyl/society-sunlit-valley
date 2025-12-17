@@ -88,7 +88,7 @@ global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) =
     if (index < stage) progressIcons += "⬛";
     else progressIcons += "⬜";
   }
-  const progress = `Progress: ${Number(stage)}/${duration} `;
+  const progress = Text.translatable("jade.society.working_block_entity.progress", `${Number(stage)}`, `${duration}`);
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   const helper = tooltip.getElementHelper();

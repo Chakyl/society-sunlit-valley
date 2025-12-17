@@ -83,7 +83,7 @@ BlockEvents.rightClicked((e) => {
           "vinery:dark_cherry_leaves"
         ].includes(block.id)
       ) {
-        player.tell("Bonemeal is too weak to grow this...");
+        player.tell(Text.translatable("society.bone_meal.weak"));
         e.cancel();
       }
     }

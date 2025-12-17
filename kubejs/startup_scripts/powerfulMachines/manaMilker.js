@@ -11,10 +11,10 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .soundType("copper")
     .item((item) => {
-      item.tooltip(Text.gray("Milks nearby farm animals"));
-      item.tooltip(Text.green("Automatable using hoppers"));
-      item.tooltip(Text.aqua("Requires Botania mana from spreader"));
-      item.tooltip(Text.green(`Area: 10x10x10`));
+      item.tooltip(Text.translatable("block.society.mana_milker.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
+      item.tooltip(Text.translatable("society.working_block_entity.need_mana").aqua());
+      item.tooltip(Text.translatable("tooltip.society.area", `10x10x10`).green());
       item.modelJson({
         parent: "society:block/mana_milker",
       });

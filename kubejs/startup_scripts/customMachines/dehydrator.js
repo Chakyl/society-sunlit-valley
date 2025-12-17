@@ -112,7 +112,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Dehydrates 8 fruit or mushrooms"));
+      item.tooltip(Text.translatable("block.society.dehydrator.description").gray());
       item.modelJson({
         parent: "society:block/dehydrator/dehydrator_off",
       });

@@ -53,7 +53,7 @@ ItemEvents.rightClicked("society:magic_rope", (e) => {
   const { level, server, item, player } = e;
   let errorText;
   if (level.dimension !== "society:skull_cavern") {
-    errorText = "This can only be used in the Skull Cavern";
+    errorText = Text.translatable("item.society.magic_rope.invalid_dimension").getString();
   } else {
     if (canTeleportDown(level, player, player.onPos)) {
       item.count--;
@@ -61,7 +61,7 @@ ItemEvents.rightClicked("society:magic_rope", (e) => {
         `playsound minecraft:entity.enderman.teleport block @a ${player.x} ${player.y} ${player.z}`
       );
       global.addItemCooldown(player, item, 150);
-    } else errorText = "There isn't a cave below you...";
+    } else errorText = Text.translatable("item.society.magic_rope.no_room_below").getString();
   }
   if (errorText) {
     global.addItemCooldown(player, item, 2);
@@ -100,7 +100,7 @@ BlockEvents.rightClicked((e) => {
   player.facing;
   if (item.id == "society:magic_tunnel")
     if (level.dimension !== "society:skull_cavern") {
-      errorText = "This can only be used in the Skull Cavern";
+      errorText = Text.translatable("item.society.magic_rope.invalid_dimension").getString();
     } else {
       if (canTeleportSide(level, player, block.pos)) {
         item.count--;
@@ -108,7 +108,7 @@ BlockEvents.rightClicked((e) => {
           `playsound minecraft:entity.enderman.teleport block @a ${player.x} ${player.y} ${player.z}`
         );
         global.addItemCooldown(player, item, 150);
-      } else errorText = "There isn't a cave close enough...";
+      } else errorText = Text.translatable("item.society.magic_rope.no_room_side").getString();
     }
   if (errorText) {
     global.addItemCooldown(player, item, 2);

@@ -538,8 +538,7 @@ StartupEvents.registry("block", (e) => {
         food.alwaysEdible(true);
         food.effect("legendarycreatures:convulsion", 1600, 1, 1.0);
       });
-      item.tooltip(Text.darkPurple("It's said to promote relaxation."));
-      item.tooltip(Text.darkPurple("What do you have to lose?"));
+      item.tooltip(Text.translatable("block.society.truffle_tea.description").darkPurple());
       item.useAnimation("drink");
     });
 
@@ -750,10 +749,8 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .item((item) => {
-      item.tooltip(Text.red("Do not drink."));
-      item.tooltip(
-        Text.gray("Created by the Mayonnaise Machine upgrade: Enkephalin")
-      );
+      item.tooltip(Text.translatable("block.society.supreme_mayonnaise.description").red());
+      item.tooltip(Text.translatable("block.society.supreme_mayonnaise.description.obtain").gray());
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("vinery:creeper_effect", 120, 4, 1.0);

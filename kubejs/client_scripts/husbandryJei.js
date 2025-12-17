@@ -13,10 +13,12 @@ const registerMilkingCategory = (event, equipment, title) => {
       .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
         guiGraphics.drawWordWrap(
           Client.font,
-          Text.of(
-            `Milking cooldown: ${recipe.getRecipeData().cooldown} day${
-              recipe.getRecipeData().cooldown > 1 ? "s" : ""
-            }`
+          Text.translatable(
+            "jei.society.husbandry.cooldown",
+            Text.translatable(
+              `jei.society.working_block_entity.day${recipe.getRecipeData().cooldown > 1 ? "s" : ""}`,
+              `${recipe.getRecipeData().cooldown}`
+            )
           ),
           2,
           26,
@@ -51,9 +53,9 @@ const registerMilkingCategory = (event, equipment, title) => {
             .addItemStack(Item.of(`${reward.count}x ${reward.item}`))
             .addTooltipCallback((slotView, tooltip) => {
               if (index == 0) {
-                tooltip.add(1, Text.lightPurple(`1-5 ❤ affection required`));
+                tooltip.add(1, Text.translatable("jei.society.husbandry.affection.range", `1-5`).lightPurple());
               } else {
-                tooltip.add(1, Text.lightPurple(`6+ ❤ affection required`));
+                tooltip.add(1, Text.translatable("jei.society.husbandry.affection.over", `6`).lightPurple());
               }
             })
             .setBackground(guiHelper.getSlotDrawable(), -1, -1);
@@ -94,7 +96,7 @@ const registerForagingCategory = (event, title) => {
         global["textDrawHandler"] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics) => {
           guiGraphics.drawWordWrap(
             Client.font,
-            Text.of("Hover over items for more info."),
+            Text.translatable("jei.society.working_block_entity.item"),
             2,
             28,
             177,
@@ -109,20 +111,20 @@ const registerForagingCategory = (event, title) => {
                 .addSlot("OUTPUT", 50 + (index + poolIndex) * slotSize, 2)
                 .addItemStack(Item.of(`${forage.countMult}x ${poolItem}`))
                 .addTooltipCallback((slotView, tooltip) => {
-                  tooltip.add(1, Text.lightPurple(`${forage.minHearts}+ ❤ affection required`));
-                  tooltip.add(2, Text.gold(`Part of an item pool:`));
+                  tooltip.add(1, Text.translatable("jei.society.husbandry.affection.over", `${forage.minHearts}`).lightPurple());
+                  tooltip.add(2, Text.translatable("jei.society.husbandry.pool").gold());
                   tooltip.add(
                     3,
-                    Text.gold(` ${Math.round(forage.chance * 100)}% chance to roll the pool`)
+                    Text.translatable("jei.society.husbandry.pool.roll", `${Math.round(forage.chance * 100)}`).gold()
                   );
                   tooltip.add(
                     4,
-                    Text.gold(
-                      ` ${Math.round((1 / forage.itemPool.length) * 100)}% chance to be selected`
-                    )
+                    Text.translatable(
+                      "jei.society.husbandry.pool.select", `${Math.round((1 / forage.itemPool.length) * 100)}`
+                    ).gold()
                   );
                   if (forage.hasQuality) {
-                    tooltip.add(5, Text.green("Affection raises quality"));
+                    tooltip.add(5, Text.translatable("jei.society.husbandry.affection.quality").green());
                   }
                 })
                 .setBackground(guiHelper.getSlotDrawable(), -1, -1);
@@ -132,10 +134,10 @@ const registerForagingCategory = (event, title) => {
               .addSlot("OUTPUT", 50 + index * slotSize, 2)
               .addItemStack(Item.of(`${forage.countMult}x ${forage.item}`))
               .addTooltipCallback((slotView, tooltip) => {
-                tooltip.add(1, Text.lightPurple(`${forage.minHearts}+ ❤ affection required`));
-                tooltip.add(2, Text.gold(`${Math.round(forage.chance * 100)}% chance`));
+                tooltip.add(1, Text.translatable("jei.society.husbandry.affection.over", `${forage.minHearts}`).lightPurple());
+                tooltip.add(2, Text.translatable("jei.society.husbandry.chance", `${Math.round(forage.chance * 100)}`).gold());
                 if (forage.hasQuality) {
-                  tooltip.add(3, Text.green("Affection raises quality"));
+                  tooltip.add(3, Text.translatable("jei.society.husbandry.affection.quality").green());
                 }
               })
               .setBackground(guiHelper.getSlotDrawable(), -1, -1);
@@ -177,7 +179,7 @@ const registerGiftCategory = (event, title) => {
         global["textDrawHandler"] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics) => {
           guiGraphics.drawWordWrap(
             Client.font,
-            Text.of("Hover over items for more info."),
+            Text.translatable("jei.society.working_block_entity.item"),
             2,
             28,
             177,
@@ -189,10 +191,10 @@ const registerGiftCategory = (event, title) => {
             .addSlot("OUTPUT", 50 + index * slotSize, 2)
             .addItemStack(Item.of(`1x ${item}`))
             .addTooltipCallback((slotView, tooltip) => {
-              tooltip.add(1, Text.lightPurple(`At 10 ❤ affection`));
+              tooltip.add(1, Text.translatable("jei.society.husbandry.affection.at", `10`).lightPurple());
               tooltip.add(
                 2,
-                Text.gold(`${Math.round((1 / gifts.length) * 100)}% chance to be selected`)
+                Text.translatable("jei.society.husbandry.pool.select", `${Math.round((1 / gifts.length) * 100)}`).gold()
               );
             })
             .setBackground(guiHelper.getSlotDrawable(), -1, -1);
@@ -202,9 +204,9 @@ const registerGiftCategory = (event, title) => {
 };
 
 JEIAddedEvents.registerCategories((e) => {
-  registerMilkingCategory(e, "society:milk_pail", "Milking");
-  registerForagingCategory(e, "Farm Animal Foraging");
-  registerGiftCategory(e, "Pet Gifts");
+  registerMilkingCategory(e, "society:milk_pail", Text.translatable("jei.society.category.milking"));
+  registerForagingCategory(e, Text.translatable("jei.society.category.foraging"));
+  registerGiftCategory(e, Text.translatable("jei.society.category.pet_gifts"));
 });
 
 JEIAddedEvents.registerRecipes((e) => {

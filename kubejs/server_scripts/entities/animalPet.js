@@ -10,15 +10,16 @@ ItemEvents.entityInteracted((e) => {
     let gift = level.createEntity("minecraft:item");
 
     if (!data.gifted && data.affection >= 1000) {
-      let nonIdType = String(target.type.path).replace(/_/g, " ");
+      let nonIdType = String(target.type).path.replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
-      let capitalizedType = global.formatName(nonIdType);
+      let translatedName = global.getTranslatedEntityName(String(target.type), global.formatName(nonIdType)).getString();
       server.runCommandSilent(
-        `emberstextapi sendcustom ${
-          player.username
-        } {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#55FF55",y:-90} 80 ${
-          name ? name : capitalizedType
-        } really loves you!`
+        global.getEmbersTextAPICommand(
+          player.username, 
+          `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#55FF55",y:-90}`, 
+          80, 
+          Text.translatable("society.husbandry.pet.max_affection", `${name ? name : translatedName}`).getString()
+        )
       );
 
       global.petGifts.forEach((gift) => {

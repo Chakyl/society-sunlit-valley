@@ -142,39 +142,33 @@ global.handleShippingBinDebt = (
       newValue = value - totalDebt;
       debtPaid = totalDebt;
       server.runCommandSilent(
-        `emberstextapi sendcustom ${
-          player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §aYou paid off your §f● §a${global.formatPrice(
-          debtPaid
-        )} debt!`
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          Text.translatable("society.shipping_bin.debt_paid_all", global.formatPrice(debtPaid.toFixed())).getString()
+        )
       );
       global.setDebt(server, playerUUID, 0);
     } else {
       debtPaid = value;
       newValue = 0;
       server.runCommandSilent(
-        `emberstextapi sendcustom ${
-          player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §f● §6${global.formatPrice(
-          debtPaid
-        )} §7of your debt paid off...`
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          Text.translatable("society.shipping_bin.debt_paid", global.formatPrice(debtPaid.toFixed())).getString()
+        )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
     }
   }
   if (debtPaid > 0) {
-    receipt = Item.of(
-      "candlelight:note_paper_written",
-      `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
-
-${player.username}, your profits were used to pay off your debt!
-
-:coin: ${global.formatPrice(
-        debtPaid
-      )} paid out of your :coin: ${global.formatPrice(
-        totalDebt
-      )} debt."],title:"Debt Payment Receipt"}`
-    );
+    const receiptAuthor = Text.translatable("society.hospital_receipt.author").getString();
+    const receiptText = Text.translatable("society.shipping_bin.debt_paid_note", player.username, global.formatPrice(debtPaid.toFixed()), global.formatPrice(totalDebt.toFixed())).getString();
+    const receiptTitle = Text.translatable("society.shipping_bin.debt_paid_note.title").getString();
+    receipt = global.getNotePaperItem(receiptAuthor, receiptText, receiptTitle);
     if (extenalOutput) {
       block.popItemFromFace(receipt, block.properties.get("facing"));
     } else {
@@ -239,11 +233,12 @@ global.processValueOutput = (
           `playsound etcetera:item.handbell.ring block @a ${player.x} ${player.y} ${player.z} 0.3`
         );
         server.runCommandSilent(
-          `emberstextapi sendcustom ${
-            player.username
-          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ● §6${global.formatPrice(
-            value
-          )} §7worth of goods sold`
+          global.getEmbersTextAPICommand(
+            player.username,
+            `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+            160,
+            Text.translatable("society.shipping_bin.goods_sold", global.formatPrice(value.toFixed())).getString()
+          )
         );
       }
       if (extenalOutput) {
@@ -300,7 +295,7 @@ global.processValueOutput = (
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 Your Basic Shipping Bin was too full to sell...`
+        global.getEmbersTextAPICommand(player.username, `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`, 160, Text.translatable("society.shipping_bin.full").getString())
       );
     }
   }
