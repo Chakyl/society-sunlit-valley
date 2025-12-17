@@ -1,5 +1,61 @@
 StartupEvents.registry("block", (e) => {
   e
+    .create("society:statue_of_cravings", "cardinal")
+    .box(3, 0, 3, 13, 20, 13)
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(4.5)
+    .resistance(9.0)
+    .requiresTool(false)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_stone_tool")
+    .item((item) => {
+      item.tooltip(
+        Text.gray("Offer a stack of crops to recieve the Goddess' blessing")
+      );
+      item.tooltip(Text.gray("Crops and rewards change every season"));
+      item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
+      item.modelJson({
+        parent: "society:block/statue_of_cravings",
+      });
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { facing: "north" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: 0,
+          uvlock: false,
+        },
+      },
+      {
+        when: { facing: "east" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: 90,
+          uvlock: false,
+        },
+      },
+      {
+        when: { facing: "south" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: 180,
+          uvlock: false,
+        },
+      },
+      {
+        when: { facing: "west" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: -90,
+          uvlock: false,
+        },
+      },
+    ],
+  };
+
+  e
     .create("society:treated_log")
     .soundType("wood")
     .property(BlockProperties.AXIS)
@@ -159,9 +215,15 @@ StartupEvents.registry("block", (e) => {
       .tagBlock("society:supply_crate");
   };
   createSupplyCrate("oak", "refurbished_furniture:block/oak_crate_closed");
-  createSupplyCrate("spruce", "refurbished_furniture:block/spruce_crate_closed");
+  createSupplyCrate(
+    "spruce",
+    "refurbished_furniture:block/spruce_crate_closed"
+  );
   createSupplyCrate("palm", "everycomp:block/rfm/beachparty/palm_crate_closed");
-  createSupplyCrate("grimwood", "everycomp:block/rfm/atmospheric/grimwood_crate_closed");
+  createSupplyCrate(
+    "grimwood",
+    "everycomp:block/rfm/atmospheric/grimwood_crate_closed"
+  );
 
   e.create("society:cavern_air")
     .box(0, 0, 0, 0, 0, 0)
@@ -689,7 +751,9 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .item((item) => {
       item.tooltip(Text.red("Do not drink."));
-      item.tooltip(Text.gray("Created by the Mayonnaise Machine upgrade: Enkephalin"));
+      item.tooltip(
+        Text.gray("Created by the Mayonnaise Machine upgrade: Enkephalin")
+      );
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("vinery:creeper_effect", 120, 4, 1.0);
