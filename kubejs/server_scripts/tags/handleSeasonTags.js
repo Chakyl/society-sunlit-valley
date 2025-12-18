@@ -2,6 +2,7 @@ console.info("[SOCIETY] handleSeasonTags.js loaded");
 
 // Remove tags
 const stripTags = [
+  "veggiesdelight:garlic_clove",
   "minecraft:apple",
   "pamhc2trees:lycheeitem",
   "pamhc2trees:bananaitem",

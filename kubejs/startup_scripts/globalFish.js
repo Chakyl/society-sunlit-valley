@@ -230,8 +230,8 @@ global.handleFishHarvest = (block, player, server, basket) => {
   if (Math.random() < 0.01 && !player.stages.has("bullfish_jobs")) {
     harvestOutputs.push("society:bullfish_jobs");
   }
-  if (player.stages.has("caper_catcher")) additionalMaxRoe += 5;
-  if (player.stages.has("caviar_catcher")) additionalMaxRoe += 5;
+  if (player.stages.has("caper_catcher")) additionalMaxRoe += 3;
+  if (player.stages.has("caviar_catcher")) additionalMaxRoe += 2;
   const fishRoe = global.getRoe(type);
   const calculateRoe = rnd(
     Math.floor(population / 4),

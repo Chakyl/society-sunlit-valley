@@ -4,6 +4,7 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "whimsy_deco:phone",
     "dew_drop_farmland_growth:iron_sprinkler",
     "dew_drop_farmland_growth:gold_sprinkler",
     "dew_drop_farmland_growth:diamond_sprinkler",
