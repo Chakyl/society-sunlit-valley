@@ -3215,7 +3215,6 @@ global.fishPondDefinitions = new Map([
         {
           population: 7,
           requestedItems: [
-            { item: "society:galaxy_sword", count: 1 },
             { item: "society:relic_trove", count: 1 },
             { item: "society:artifact_trove", count: 1 },
           ],
