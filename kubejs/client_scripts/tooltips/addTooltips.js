@@ -6,7 +6,10 @@ ItemEvents.tooltip((tooltip) => {
         if (tooltip.shift) {
           text.add(1, [
             Text.translatable("tooltip.society.plushies.trait"),
-            global.getTranslatedTextWithColorCode(type.color, `society.item.plushie.${type.trait}`),
+            global.getTranslatedTextWithColorCode(
+              type.color,
+              `society.item.plushie.${type.trait}`
+            ),
           ]);
           text.add(2, [
             Text.translate(`society.item.plushie.trait.description`).darkGray(),
@@ -41,9 +44,18 @@ ItemEvents.tooltip((tooltip) => {
           ]);
           text.add(3, [
             Text.translatable("tooltip.society.plushies.trait"),
-            global.getTranslatedTextWithColorCode(type.color, `society.item.plushie.${type.trait}`),
+            global.getTranslatedTextWithColorCode(
+              type.color,
+              `society.item.plushie.${type.trait}`
+            ),
             Text.of(" "),
-            Text.translatable("tooltip.society.hold_key", global.getTranslatedTextWithColorCode(type.color, "key.keyboard.shift")).gray(),
+            Text.translatable(
+              "tooltip.society.hold_key",
+              global.getTranslatedTextWithColorCode(
+                type.color,
+                "key.keyboard.shift"
+              )
+            ).gray(),
           ]);
           text.add(4, [Text.translatable("tooltip.society.plushies")]);
         }
@@ -123,10 +135,19 @@ ItemEvents.tooltip((tooltip) => {
     },
   ];
   artifactTooltips.forEach((artifact) => {
-    tooltip.add(artifact.item, 
-      global.translatableWithFallback(`item.society.${artifact.item.path}.description`, artifact.description).darkPurple());
-    tooltip.add(artifact.item, 
-      Text.translatable("tooltip.society.item_type.artifact").gray());
+    tooltip.add(
+      artifact.item,
+      global
+        .translatableWithFallback(
+          `item.society.${artifact.item.path}.description`,
+          artifact.description
+        )
+        .darkPurple()
+    );
+    tooltip.add(
+      artifact.item,
+      Text.translatable("tooltip.society.item_type.artifact").gray()
+    );
   });
   [
     {
@@ -210,23 +231,48 @@ ItemEvents.tooltip((tooltip) => {
       description: "The Market sells all basic seeds in every season.",
     },
   ].forEach((book) => {
-    tooltip.add(book.item, 
-      global.translatableWithFallback(`item.society.${book.item.path}.description`, book.description).gray());
-    tooltip.add(book.item, 
-      Text.translatable("tooltip.society.skill_book.use").green());
+    tooltip.add(
+      book.item,
+      global
+        .translatableWithFallback(
+          `item.society.${book.item.path}.description`,
+          book.description
+        )
+        .gray()
+    );
+    tooltip.add(
+      book.item,
+      Text.translatable("tooltip.society.skill_book.use").green()
+    );
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
-      text.add(1, Text.translatable("block.society.fish_pond.fish.type", `${Item.of(item.nbt.get("type")).id}`).aqua());
+      text.add(
+        1,
+        Text.translatable(
+          "block.society.fish_pond.fish.type",
+          `${Item.of(item.nbt.get("type")).id}`
+        ).aqua()
+      );
       text.add(
         2,
-        Text.translatable("block.society.fish_pond.fish.population", 
-          `${item.nbt.get("population")}`, `${item.nbt.get("max_population")}`
+        Text.translatable(
+          "block.society.fish_pond.fish.population",
+          `${item.nbt.get("population")}`,
+          `${item.nbt.get("max_population")}`
         ).aqua()
       );
     } else {
-      text.add(1, Text.translatable("block.society.fish_pond.description").gray());
-      text.add(2, Text.translatable("block.society.fish_pond.description.place").darkAqua());
+      text.add(
+        1,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+      text.add(
+        2,
+        Text.translatable(
+          "block.society.fish_pond.description.place"
+        ).darkAqua()
+      );
     }
   });
   tooltip.add(
@@ -258,29 +304,44 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.diy_workbench").gray()
   );
   tooltip.add("society:tanuki_catalog", [
-    Text.translatable("tooltip.society.furniture_catalog",
-      "2", Text.translatable("item.numismatics.crown").gold(),
+    Text.translatable(
+      "tooltip.society.furniture_catalog",
+      "2",
+      Text.translatable("item.numismatics.crown").gold(),
       Text.translatable("item.society.tanuki_leaf").green()
     ).gray(),
   ]);
   tooltip.add("society:modern_catalog", [
-    Text.translatable("tooltip.society.furniture_catalog",
-      "6", Text.translatable("item.numismatics.crown").gold(),
+    Text.translatable(
+      "tooltip.society.furniture_catalog",
+      "6",
+      Text.translatable("item.numismatics.crown").gold(),
       Text.translatable("item.society.architects_digest").white()
     ).gray(),
   ]);
   tooltip.add("society:fantasy_catalog", [
-    Text.translatable("tooltip.society.furniture_catalog",
-      "4", Text.translatable("item.numismatics.crown").gold(),
+    Text.translatable(
+      "tooltip.society.furniture_catalog",
+      "4",
+      Text.translatable("item.numismatics.crown").gold(),
       Text.translatable("item.society.fantasy_dust").yellow()
     ).gray(),
   ]);
   global.lootFurniture.forEach((item) => {
-    tooltip.add(item, Text.translatable("tooltip.society.loot_furniture").white());
+    tooltip.add(
+      item,
+      Text.translatable("tooltip.society.loot_furniture").white()
+    );
     if (!item.includes("tanuki") && !item.includes("whimsy_deco")) {
-      tooltip.add(item, Text.translatable("tooltip.society.furnitures.modern").white());
+      tooltip.add(
+        item,
+        Text.translatable("tooltip.society.furnitures.modern").white()
+      );
     } else {
-      tooltip.add(item, Text.translatable("tooltip.society.furnitures.tanuki").white());
+      tooltip.add(
+        item,
+        Text.translatable("tooltip.society.furnitures.tanuki").white()
+      );
     }
   });
   tooltip.add(
@@ -291,7 +352,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:tanuki_leaf",
     Text.translatable("item.society.tanuki_leaf.description").gray()
   );
-  tooltip.add(/fantasyfurniture/, Text.translatable("tooltip.society.furnitures.fantasy").white());
+  tooltip.add(
+    /fantasyfurniture/,
+    Text.translatable("tooltip.society.furnitures.fantasy").white()
+  );
   tooltip.add(
     "society:fantasy_dust",
     Text.translatable("item.society.fantasy_dust.description").gray()
@@ -308,13 +372,15 @@ ItemEvents.tooltip((tooltip) => {
   // Upgrades:
   tooltip.add(
     "society:ancient_cog",
-    Text.translatable("item.society.ancient_cog.description",
+    Text.translatable(
+      "item.society.ancient_cog.description",
       Text.translatable("block.society.seed_maker").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:pink_matter",
-    Text.translatable("item.society.pink_matter.description",
+    Text.translatable(
+      "item.society.pink_matter.description",
       Text.translatable("block.society.cheese_press").darkGreen()
     ).green()
   );
@@ -324,67 +390,78 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:stone_hand",
-    Text.translatable("item.society.stone_hand.description",
+    Text.translatable(
+      "item.society.stone_hand.description",
       Text.translatable("block.society.preserves_jar").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:broken_clock",
-    Text.translatable("item.society.broken_clock.description",
+    Text.translatable(
+      "item.society.broken_clock.description",
       Text.translatable("block.society.aging_cask").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:sea_biscut",
-    Text.translatable("item.society.sea_biscut.description",
+    Text.translatable(
+      "item.society.sea_biscut.description",
       Text.translatable("block.society.fish_pond").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:black_opal",
-    Text.translatable("item.society.black_opal.description",
+    Text.translatable(
+      "item.society.black_opal.description",
       Text.translatable("block.society.crystalarium").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:enkephalin",
-    Text.translatable("item.society.enkephalin.description",
+    Text.translatable(
+      "item.society.enkephalin.description",
       Text.translatable("block.society.mayonnaise_machine").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:tiny_gnome",
-    Text.translatable("item.society.tiny_gnome.description",
+    Text.translatable(
+      "item.society.tiny_gnome.description",
       Text.translatable("block.society.loom").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:ancient_roe",
-    Text.translatable("item.society.ancient_roe.description",
+    Text.translatable(
+      "item.society.ancient_roe.description",
       Text.translatable("block.society.fish_smoker").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:frosted_tip",
-    Text.translatable("item.society.frosted_tip.description",
+    Text.translatable(
+      "item.society.frosted_tip.description",
       Text.translatable("block.society.charging_rod").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:infinity_worm",
-    Text.translatable("item.society.infinity_worm.description",
+    Text.translatable(
+      "item.society.infinity_worm.description",
       Text.translatable("block.society.deluxe_worm_farm").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:inserter",
-    Text.translatable("item.society.inserter.description",
+    Text.translatable(
+      "item.society.inserter.description",
       Text.translatable("block.society.ancient_cask").darkGreen()
     ).green()
   );
   tooltip.add(
     "society:cordycep",
-    Text.translatable("item.society.cordycep.description",
+    Text.translatable(
+      "item.society.cordycep.description",
       Text.translatable("block.society.dehydrator").darkGreen()
     ).green()
   );
@@ -595,7 +672,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:tapper",
       "society:recycling_machine",
       "society:cheese_press",
-      "society:wine_keg"
+      "society:wine_keg",
     ],
     Text.translatable("tooltip.society.artisan_machine").white()
   );
@@ -624,9 +701,18 @@ ItemEvents.tooltip((tooltip) => {
     "society:truffle",
     Text.translatable("item.society.truffle.description").gray()
   );
-  tooltip.add("society:milk_pail", Text.translatable("item.society.milk_pail.description").gray());
-  tooltip.add("society:tubasmoke_stick", Text.translatable("item.society.tubasmoke_stick.description").gray());
-  tooltip.add("society:tubasmoke_stick", Text.translatable("item.society.tubasmoke_stick.description.warn").red());
+  tooltip.add(
+    "society:milk_pail",
+    Text.translatable("item.society.milk_pail.description").gray()
+  );
+  tooltip.add(
+    "society:tubasmoke_stick",
+    Text.translatable("item.society.tubasmoke_stick.description").gray()
+  );
+  tooltip.add(
+    "society:tubasmoke_stick",
+    Text.translatable("item.society.tubasmoke_stick.description.warn").red()
+  );
   tooltip.add(
     "society:cornucopia",
     Text.translatable("item.society.cornucopia.description").gray()
@@ -659,8 +745,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:magic_shears",
     Text.translatable("item.society.magic_shears.description").gray()
   );
-  tooltip.add("vintagedelight:deluxe_burger", 
-    Text.translatable("tooltip.society.deluxe_burger").gray());
+  tooltip.add(
+    "vintagedelight:deluxe_burger",
+    Text.translatable("tooltip.society.deluxe_burger").gray()
+  );
   tooltip.add(
     "society:magic_shears",
     Text.translatable("item.society.magic_shears.description.warn").red()
@@ -677,8 +765,10 @@ ItemEvents.tooltip((tooltip) => {
     "meadow:cheese_form",
     Text.translatable("tooltip.society.cheese_form").gray()
   );
-  tooltip.add("meadow:cheese_form", 
-    Text.translatable("tooltip.society.cheese_form.tip").green());
+  tooltip.add(
+    "meadow:cheese_form",
+    Text.translatable("tooltip.society.cheese_form.tip").green()
+  );
   tooltip.add(
     "society:friendship_necklace",
     Text.translatable("item.society.friendship_necklace.description").gray()
@@ -711,8 +801,14 @@ ItemEvents.tooltip((tooltip) => {
     "splendid_slimes:slime_feeder",
     Text.translatable("tooltip.society.slime_feeder").gray()
   );
-  tooltip.add("splendid_slimes:slime_feeder", Text.translatable("tooltip.society.area", `13x13x13`).green());
-  tooltip.add("create:creative_blaze_cake", Text.translatable("tooltip.society.creative_blaze_cake").gray());
+  tooltip.add(
+    "splendid_slimes:slime_feeder",
+    Text.translatable("tooltip.society.area", `13x13x13`).green()
+  );
+  tooltip.add(
+    "create:creative_blaze_cake",
+    Text.translatable("tooltip.society.creative_blaze_cake").gray()
+  );
   tooltip.add(
     "tanukidecor:slot_machine",
     Text.translatable("tooltip.society.slot_machine").gray()
@@ -727,7 +823,10 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "whimsy_deco:gatcha_machine",
-    Text.translatable("tooltip.society.gatcha_machine", Text.translatable("item.numismatics.sun")).gray()
+    Text.translatable(
+      "tooltip.society.gatcha_machine",
+      Text.translatable("item.numismatics.sun")
+    ).gray()
   );
   tooltip.add(
     "society:relic_trove",
@@ -745,14 +844,26 @@ ItemEvents.tooltip((tooltip) => {
     "society:dragontooth_axe",
     Text.translatable("item.society.dragontooth_axe.description").red()
   );
-  tooltip.add("botania:apothecary_default", Text.translatable("tooltip.society.petal_apothecary.obtain"));
+  tooltip.add(
+    "botania:apothecary_default",
+    Text.translatable("tooltip.society.petal_apothecary.obtain")
+  );
   tooltip.add(
     "society:kinetic_blueprint",
     Text.translatable("item.society.kinetic_blueprint.description.tip").green()
   );
-  tooltip.add("society:kinetic_blueprint", Text.translatable("tooltip.society.kinetic_blueprint.obtain"));
-  tooltip.add("society:skull_cavern_teleporter", Text.translatable("tooltip.society.skull_cavern_teleporter.obtain"));
-  tooltip.add("relics:magic_mirror", Text.translatable("tooltip.society.magic_mirror.obtain"));
+  tooltip.add(
+    "society:kinetic_blueprint",
+    Text.translatable("tooltip.society.kinetic_blueprint.obtain")
+  );
+  tooltip.add(
+    "society:skull_cavern_teleporter",
+    Text.translatable("tooltip.society.skull_cavern_teleporter.obtain")
+  );
+  tooltip.add(
+    "relics:magic_mirror",
+    Text.translatable("tooltip.society.magic_mirror.obtain")
+  );
 
   tooltip.add(
     [
@@ -773,22 +884,55 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.greenhouse_glass.range").green()
   );
 
-  tooltip.add("vinery:apple_tree_sapling", Text.translatable("tooltip.society.fruit_bearing_season"));
-  tooltip.add("vinery:apple_tree_sapling", Text.of(" ").gold().append(Text.translatable("desc.sereneseasons.autumn")));
+  tooltip.add(
+    "vinery:apple_tree_sapling",
+    Text.translatable("tooltip.society.fruit_bearing_season")
+  );
+  tooltip.add(
+    "vinery:apple_tree_sapling",
+    Text.of(" ").gold().append(Text.translatable("desc.sereneseasons.autumn"))
+  );
 
-  tooltip.add("vinery:dark_cherry_sapling", Text.translatable("tooltip.society.fruit_bearing_season"));
-  tooltip.add("vinery:dark_cherry_sapling", Text.of(" ").green().append(Text.translatable("desc.sereneseasons.spring")));
-  tooltip.add("society:plushie_capsule", Text.translatable("tooltip.society.right_click_open").gray());
-  tooltip.add("society:furniture_box", Text.translatable("tooltip.society.right_click_open").gray());
-  tooltip.add("furniture:bin", Text.translatable("tooltip.society.trash_bin").red());
-  tooltip.add("furniture:bin", Text.translatable("tooltip.society.trash_bin.tip").green());
+  tooltip.add(
+    "vinery:dark_cherry_sapling",
+    Text.translatable("tooltip.society.fruit_bearing_season")
+  );
+  tooltip.add(
+    "vinery:dark_cherry_sapling",
+    Text.of(" ").green().append(Text.translatable("desc.sereneseasons.spring"))
+  );
+  tooltip.add(
+    "society:plushie_capsule",
+    Text.translatable("tooltip.society.right_click_open").gray()
+  );
+  tooltip.add(
+    "society:furniture_box",
+    Text.translatable("tooltip.society.right_click_open").gray()
+  );
+  tooltip.add(
+    "furniture:bin",
+    Text.translatable("tooltip.society.trash_bin").red()
+  );
+  tooltip.add(
+    "furniture:bin",
+    Text.translatable("tooltip.society.trash_bin.tip").green()
+  );
   tooltip.add(
     "furniture:trash_bag",
     Text.translatable("tooltip.society.trash_bag").gray()
   );
-  tooltip.add("society:bouquet_bag", Text.translatable("tooltip.society.bouquet_bag").green());
-  tooltip.add("society:bouquet_bag", Text.translatable("tooltip.society.right_click_open").gray());
-  tooltip.add("society:scavenged_food_bag", Text.translatable("tooltip.society.right_click_open").gray());
+  tooltip.add(
+    "society:bouquet_bag",
+    Text.translatable("tooltip.society.bouquet_bag").green()
+  );
+  tooltip.add(
+    "society:bouquet_bag",
+    Text.translatable("tooltip.society.right_click_open").gray()
+  );
+  tooltip.add(
+    "society:scavenged_food_bag",
+    Text.translatable("tooltip.society.right_click_open").gray()
+  );
   tooltip.add(
     "gag:time_sand_pouch",
     Text.translatable("tooltip.society.time_sand_pouch").red()
@@ -816,41 +960,61 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
     if (tooltip.shift) {
       text.add(1, [
-        Text.white("").append(Text.translatable("desc.sereneseasons.fertile_seasons")).append(":"),
-        Text.of(" "), Text.translatable("desc.sereneseasons.spring").green().append(","),
-        Text.of(" "), Text.translatable("desc.sereneseasons.summer").yellow().append(","),
-        Text.of(" "), Text.translatable("desc.sereneseasons.autumn").gold(),
+        Text.white("")
+          .append(Text.translatable("desc.sereneseasons.fertile_seasons"))
+          .append(":"),
+        Text.of(" "),
+        Text.translatable("desc.sereneseasons.spring").green().append(","),
+        Text.of(" "),
+        Text.translatable("desc.sereneseasons.summer").yellow().append(","),
+        Text.of(" "),
+        Text.translatable("desc.sereneseasons.autumn").gold(),
       ]);
     } else {
       text.add(1, [
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+        Text.translatable(
+          "tooltip.society.hold_key",
+          Text.translatable("key.keyboard.shift").gray()
+        ).darkGray(),
       ]);
     }
   });
-  tooltip.addAdvanced("farm_and_charm:strawberry_seed", (item, advanced, text) => {
-    if (tooltip.shift) {
-      text.add(1, [
-        Text.white("").append(Text.translatable("desc.sereneseasons.fertile_seasons")).append(":"),
-        Text.of(" "), Text.translatable("desc.sereneseasons.spring").green(),
-      ]);
-    } else {
-      text.add(1, [
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
+  tooltip.addAdvanced(
+    "farm_and_charm:strawberry_seed",
+    (item, advanced, text) => {
+      if (tooltip.shift) {
+        text.add(1, [
+          Text.white("")
+            .append(Text.translatable("desc.sereneseasons.fertile_seasons"))
+            .append(":"),
+          Text.of(" "),
+          Text.translatable("desc.sereneseasons.spring").green(),
+        ]);
+      } else {
+        text.add(1, [
+          Text.translatable(
+            "tooltip.society.hold_key",
+            Text.translatable("key.keyboard.shift").gray()
+          ).darkGray(),
+        ]);
+      }
     }
-  });
+  );
   tooltip.add(
     "relics:jellyfish_necklace",
     Text.translatable("tooltip.society.jellyfish_necklace").red()
   );
 
-  tooltip.add("society:river_jelly", 
+  tooltip.add(
+    "society:river_jelly",
     Text.translatable("item.society.river_jelly.description").blue()
   );
-  tooltip.add("society:ocean_jelly", 
+  tooltip.add(
+    "society:ocean_jelly",
     Text.translatable("item.society.ocean_jelly.description").aqua()
   );
-  tooltip.add("society:nether_jelly", 
+  tooltip.add(
+    "society:nether_jelly",
     Text.translatable("item.society.nether_jelly.description").gold()
   );
   const craftingMaterials = [
@@ -865,7 +1029,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:ocean_jelly",
   ];
   craftingMaterials.forEach((item) => {
-    tooltip.add(item, Text.translatable("tooltip.society.item_type.crafting_material").gray());
+    tooltip.add(
+      item,
+      Text.translatable("tooltip.society.item_type.crafting_material").gray()
+    );
   });
   // Prize Machine
   tooltip.add(
@@ -881,24 +1048,73 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.item_type.prize_machine_reward").gold()
   );
   const workstation = [
-    { villager: Text.translatable("entity.minecraft.villager.etched.bard"), block: "minecraft:note_block" },
-    { villager: Text.translatable("entity.minecraft.villager.weaponsmith"), block: "minecraft:grindstone" },
-    { villager: Text.translatable("entity.minecraft.villager.fisherman"), block: "minecraft:barrel" },
-    { villager: Text.translatable("entity.minecraft.villager.shepherd"), block: "minecraft:loom" },
-    { villager: Text.translatable("entity.minecraft.villager.leatherworker"), block: "minecraft:cauldron" },
-    { villager: Text.translatable("entity.minecraft.villager.toolsmith"), block: "minecraft:smithing_table" },
-    { villager: Text.translatable("entity.minecraft.villager.librarian"), block: "minecraft:lectern" },
-    { villager: Text.translatable("entity.minecraft.villager.cleric"), block: "minecraft:brewing_stand" },
-    { villager: Text.translatable("entity.minecraft.villager.farmer"), block: "minecraft:composter" },
-    { villager: Text.translatable("entity.minecraft.villager.cartographer"), block: "minecraft:cartography_table" },
-    { villager: Text.translatable("entity.minecraft.villager.candlelight.cook"), block: "candlelight:cooking_pot" },
-    { villager: Text.translatable("entity.minecraft.villager.beachparty.barkeeper"), block: "beachparty:tiki_bar" },
-    { villager: Text.translatable("entity.minecraft.villager.fletcher"), block: "minecraft:fletching_table" },
-    { villager: Text.translatable("entity.minecraft.villager.beautify.botanist"), block: "beautify:botanist_workbench" },
+    {
+      villager: Text.translatable("entity.minecraft.villager.etched.bard"),
+      block: "minecraft:note_block",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.weaponsmith"),
+      block: "minecraft:grindstone",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.fisherman"),
+      block: "minecraft:barrel",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.shepherd"),
+      block: "minecraft:loom",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.leatherworker"),
+      block: "minecraft:cauldron",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.toolsmith"),
+      block: "minecraft:smithing_table",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.librarian"),
+      block: "minecraft:lectern",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.cleric"),
+      block: "minecraft:brewing_stand",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.farmer"),
+      block: "minecraft:composter",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.cartographer"),
+      block: "minecraft:cartography_table",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.candlelight.cook"),
+      block: "candlelight:cooking_pot",
+    },
+    {
+      villager: Text.translatable(
+        "entity.minecraft.villager.beachparty.barkeeper"
+      ),
+      block: "beachparty:tiki_bar",
+    },
+    {
+      villager: Text.translatable("entity.minecraft.villager.fletcher"),
+      block: "minecraft:fletching_table",
+    },
+    {
+      villager: Text.translatable(
+        "entity.minecraft.villager.beautify.botanist"
+      ),
+      block: "beautify:botanist_workbench",
+    },
   ];
   workstation.forEach((station) => {
     const { villager, block } = station;
-    tooltip.add(block, Text.translatable("tooltip.society.villager_workstation", villager).gold());
+    tooltip.add(
+      block,
+      Text.translatable("tooltip.society.villager_workstation", villager).gold()
+    );
   });
   Item.of("farm_and_charm:barley", "{quality_food:{quality:3}}");
 
@@ -915,13 +1131,15 @@ ItemEvents.tooltip((tooltip) => {
     );
   });
   tooltip.addAdvanced("society:car_key", (item, advanced, text) => {
-    text.add(1, [
-      Text.translatable("item.society.car_key.description").gray(),
-    ]);
+    text.add(1, [Text.translatable("item.society.car_key.description").gray()]);
     if (item.nbt) {
-      text.add(2, [Text.translatable("item.society.car_key.description.parked").green()]);
+      text.add(2, [
+        Text.translatable("item.society.car_key.description.parked").green(),
+      ]);
     } else {
-      text.add(2, [Text.translatable("item.society.car_key.description.empty").red()]);
+      text.add(2, [
+        Text.translatable("item.society.car_key.description.empty").red(),
+      ]);
     }
   });
   const getPigColoredName = (pig) => {
@@ -947,10 +1165,17 @@ ItemEvents.tooltip((tooltip) => {
       ]);
       if (item.nbt) {
         text.add(2, [
-          Text.translatable("item.society.pig_race_ticket.description.bet", getPigColoredName(item.nbt.bet)).gray(),
+          Text.translatable(
+            "item.society.pig_race_ticket.description.bet",
+            getPigColoredName(item.nbt.bet)
+          ).gray(),
         ]);
       } else {
-        text.add(2, [Text.translatable("item.society.pig_race_ticket.description.no_pig").gray()]);
+        text.add(2, [
+          Text.translatable(
+            "item.society.pig_race_ticket.description.no_pig"
+          ).gray(),
+        ]);
       }
     }
   );
@@ -967,7 +1192,9 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("block.society.golden_clock"),
     Text.translatable("block.society.mana_clock"),
     Text.translatable("block.society.mana_milker"),
-    Text.translatable("item.society.magnifying_glass.description.view_block.sprinklers"),
+    Text.translatable(
+      "item.society.magnifying_glass.description.view_block.sprinklers"
+    ),
     Text.translatable("block.society.growth_obelisk"),
     Text.translatable("block.society.ribbit_hut"),
   ];
@@ -977,20 +1204,30 @@ ItemEvents.tooltip((tooltip) => {
         text.add(index + 1, Text.gold(block));
       });
     } else {
-      text.add(1, Text.translatable("item.society.magnifying_glass.description").green());
+      text.add(
+        1,
+        Text.translatable("item.society.magnifying_glass.description").green()
+      );
       text.add(2, [
-          Text.translatable("item.society.magnifying_glass.description.view_block", 
-            Text.translatable("key.keyboard.shift").gray()).darkGray(),
+        Text.translatable(
+          "item.society.magnifying_glass.description.view_block",
+          Text.translatable("key.keyboard.shift").gray()
+        ).darkGray(),
       ]);
     }
   });
-  tooltip.add("trials:ominous_bottle", 
-    Text.translatable("effect.minecraft.bad_omen").blue().append(Text.of(" (10:00)"))
+  tooltip.add(
+    "trials:ominous_bottle",
+    Text.translatable("effect.minecraft.bad_omen")
+      .blue()
+      .append(Text.of(" (10:00)"))
   );
   tooltip.add(
     "society:overflow_token",
-    Text.translatable("item.society.overflow_token.description", 
-      Text.translatable("tooltip.society.coins", "1,006,632,960")).gray()
+    Text.translatable(
+      "item.society.overflow_token.description",
+      Text.translatable("tooltip.society.coins", "1,006,632,960")
+    ).gray()
   );
   tooltip.add(
     "society:overflow_token",
@@ -1005,7 +1242,10 @@ ItemEvents.tooltip((tooltip) => {
     );
     tooltip.add(
       `dew_drop_farmland_growth:${tier}_sprinkler`,
-      Text.translatable("tooltip.society.area", `${tooltipRadius}x${tooltipRadius}`).green()
+      Text.translatable(
+        "tooltip.society.area",
+        `${tooltipRadius}x${tooltipRadius}`
+      ).green()
     );
   };
   generateSprinklerTooltip(tooltip, "iron", 1);
@@ -1015,28 +1255,53 @@ ItemEvents.tooltip((tooltip) => {
   // Books
   tooltip.add(
     "society:yard_work_yearly",
-    Text.translatable("tooltip.society.skill_book.description", 
-      global.translatableWithFallback("society_skills.farming.category.title", "Farming")).green()
+    Text.translatable(
+      "tooltip.society.skill_book.description",
+      global.translatableWithFallback(
+        "society_skills.farming.category.title",
+        "Farming"
+      )
+    ).green()
   );
   tooltip.add(
     "society:husbandry_hourly",
-    Text.translatable("tooltip.society.skill_book.description", 
-      global.translatableWithFallback("society_skills.husbandry.category.title", "Husbandry")).green()
+    Text.translatable(
+      "tooltip.society.skill_book.description",
+      global.translatableWithFallback(
+        "society_skills.husbandry.category.title",
+        "Husbandry"
+      )
+    ).green()
   );
   tooltip.add(
     "society:mining_monthly",
-    Text.translatable("tooltip.society.skill_book.description", 
-      global.translatableWithFallback("society_skills.mining.category.title", "Mining")).green()
+    Text.translatable(
+      "tooltip.society.skill_book.description",
+      global.translatableWithFallback(
+        "society_skills.mining.category.title",
+        "Mining"
+      )
+    ).green()
   );
   tooltip.add(
     "society:combat_quarterly",
-    Text.translatable("tooltip.society.skill_book.description", 
-      global.translatableWithFallback("society_skills.adventuring.category.title", "Adventuring")).green()
+    Text.translatable(
+      "tooltip.society.skill_book.description",
+      global.translatableWithFallback(
+        "society_skills.adventuring.category.title",
+        "Adventuring"
+      )
+    ).green()
   );
   tooltip.add(
     "society:wet_weekly",
-    Text.translatable("tooltip.society.skill_book.description", 
-      global.translatableWithFallback("society_skills.fishing.category.title", "Fishing")).green()
+    Text.translatable(
+      "tooltip.society.skill_book.description",
+      global.translatableWithFallback(
+        "society_skills.fishing.category.title",
+        "Fishing"
+      )
+    ).green()
   );
   tooltip.add(
     "society:book_of_stars",
@@ -1086,10 +1351,12 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.magic_mirror_incompatible").red()
   );
   // Refined
-  tooltip.add("refinedstorage:4k_storage_block", 
+  tooltip.add(
+    "refinedstorage:4k_storage_block",
     Text.translatable("tooltip.society.storage_block", "4,000").green()
   );
-  tooltip.add("refinedstorage:64k_storage_block", 
+  tooltip.add(
+    "refinedstorage:64k_storage_block",
     Text.translatable("tooltip.society.storage_block", "64,000").green()
   );
   global.removedItems.forEach((item) => {

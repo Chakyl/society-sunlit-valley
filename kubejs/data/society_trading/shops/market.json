@@ -7,7 +7,6 @@
   "block_tag": "society:opens_market",
   "selector_weight": -99,
   "jei_catalyst": { "item": "farmingforblockheads:market" },
-  "selector_weight": -99,
   "trades": [
     {
       "offer": { "item": "farmersdelight:tomato_seeds", "count": 1 },
@@ -680,18 +679,6 @@
     },
     {
       "offer": {
-        "item": "sophisticatedbackpacks:backpack",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 2
-      },
-      "numismatics_cost": 1024,
-      "trade_id": "leatherworker_backpack_for_crown"
-    },
-    {
-      "offer": {
         "item": "dew_drop_farmland_growth:hydrating_fertilizer",
         "count": 1
       },
@@ -886,18 +873,6 @@
       },
       "numismatics_cost": 256,
       "trade_id": "leatherworker_iron_sewing_needle_for_cog"
-    },
-    {
-      "offer": {
-        "item": "naturescompass:naturescompass",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 6
-      },
-      "numismatics_cost": 24576,
-      "trade_id": "leatherworker_naturescompass_for_crown"
     }
   ]
 }

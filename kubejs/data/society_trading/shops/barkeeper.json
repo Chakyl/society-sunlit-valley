@@ -8,15 +8,15 @@
   "trades": [
     {
       "offer": {
-        "item": "bakery:crusty_bread",
+        "item": "farm_and_charm:pasta_with_onion_sauce",
         "count": 1
       },
       "request": {
         "item": "numismatics:cog",
-        "count": 1
+        "count": 2
       },
-      "numismatics_cost": 64,
-      "trade_id": "barkeeper_crusty_bread_for_cog"
+      "numismatics_cost": 128,
+      "trade_id": "barkeeper_pasta_with_onion_sauce_for_cog"
     },
     {
       "offer": {
@@ -32,15 +32,15 @@
     },
     {
       "offer": {
-        "item": "brewery:mashed_potatoes",
+        "item": "farm_and_charm:barley_soup",
         "count": 1
       },
       "request": {
         "item": "numismatics:cog",
-        "count": 1
+        "count": 3
       },
-      "numismatics_cost": 64,
-      "trade_id": "barkeeper_potato_salad_for_cog"
+      "numismatics_cost": 196,
+      "trade_id": "barkeeper_barley_soup_for_cog"
     },
     {
       "offer": {
@@ -65,18 +65,6 @@
       },
       "numismatics_cost": 128,
       "trade_id": "barkeeper_coffee_for_sprocket"
-    },
-    {
-      "offer": {
-        "item": "brewery:beer_hops",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 4
-      },
-      "numismatics_cost": 256,
-      "trade_id": "barkeeper_beer_hops_for_cog"
     },
     {
       "offer": {

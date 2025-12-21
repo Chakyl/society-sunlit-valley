@@ -11,7 +11,7 @@ global.removedItems = [
   "uniqueaccessories:withered_heart",
   "uniqueaccessories:burning_soul",
   "uniqueaccessories:golden_egg_charm",
- "relics:midnight_robe",
+  "relics:midnight_robe",
   "relics:infinity_ham",
   "relics:holy_locket",
   "windswept:gingerbread_cookie",

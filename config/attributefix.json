@@ -1947,6 +1947,17 @@
         "value": 10
       }
     },
+    "confluence:crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "attributeslib:ghost_health": {
       "enabled": false,
       "min": {
@@ -1967,17 +1978,6 @@
       "max": {
         "default": 100,
         "value": 100
-      }
-    },
-    "confluence:crit_chance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "minecraft:generic.follow_range": {

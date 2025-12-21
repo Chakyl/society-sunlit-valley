@@ -164,20 +164,6 @@
     },
     {
       "offer": {
-        "item": "society:skull_cavern_teleporter",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 1
-      },
-      "numismatics_cost": 4096,
-      "stage_required": "vault_complete",
-      "trade_id": "blacksmith_teleporter_for_sun",
-      "unlock_description": "jei.society_trading.vault_complete"
-    },
-    {
-      "offer": {
         "item": "create:brown_toolbox",
         "count": 1
       },
@@ -190,18 +176,6 @@
     },
     {
       "offer": {
-        "item": "rehooked:wood_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 16384,
-      "trade_id": "blacksmith_wood_hook_for_sun"
-    },
-    {
-      "offer": {
         "item": "refurbished_furniture:workbench",
         "count": 1
       },
@@ -211,30 +185,6 @@
       },
       "numismatics_cost": 65536,
       "trade_id": "blacksmith_crafter_for_cog"
-    },
-    {
-      "offer": {
-        "item": "automobility:automobile_assembler",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 4
-      },
-      "numismatics_cost": 2048,
-      "trade_id": "blacksmith_automobile_assembler_for_crown"
-    },
-    {
-      "offer": {
-        "item": "automobility:auto_mechanic_table",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 48
-      },
-      "numismatics_cost": 196608,
-      "trade_id": "blacksmith_auto_mechanic_table_for_sun"
     },
     {
       "offer": {
