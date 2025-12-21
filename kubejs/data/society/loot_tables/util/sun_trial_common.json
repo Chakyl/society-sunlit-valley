@@ -1,0 +1,187 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "numismatics:sun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "numismatics:crown",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "oreganized:raw_lead",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "society:sparkstone",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 4,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "paraglider:spirit_orb",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "betterarcheology:artifact_shards",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "aquaculture:neptunium_nugget",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "society:fantasy_dust",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:decorated_pot_sherds",
+          "expand": true,
+          "weight": 0.1
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "trials:trial_key"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:heart_of_the_sea"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "botania:blacker_lotus"
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "botania:black_lotus"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "simplehats:hatbag_common"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "simplehats:hatbag_uncommon"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "society:bouquet_bag"
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "society:furniture_box"
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "quark:diamond_heart"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "society:plushie_capsule"
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "name": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "society:scavenged_food_bag"
+        }
+      ]
+    }
+  ]
+}
