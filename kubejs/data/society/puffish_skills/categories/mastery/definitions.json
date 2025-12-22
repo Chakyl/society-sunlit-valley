@@ -1,7 +1,7 @@
 {
   "farming_mastery": {
-    "title": "Farming Mastery",
-    "description": "Wizard now sells Spark-Pods.\nQuality Crops are now worth 300% more.",
+    "title": {"translate": "society_skills.mastery.farming_mastery"},
+    "description": {"translate": "society_skills.mastery.farming_mastery.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -25,8 +25,8 @@
     ]
   },
   "husbandry_mastery": {
-    "title": "Husbandry Mastery",
-    "description": "You can now find Golden Animal Crackers.",
+    "title": {"translate": "society_skills.mastery.husbandry_mastery"},
+    "description": {"translate": "society_skills.mastery.husbandry_mastery.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -50,8 +50,8 @@
     ]
   },
   "mining_mastery": {
-    "title": "Mining Mastery",
-    "description": "Exotic Trader sells Recycled Core.\nGem ores drop double",
+    "title": {"translate": "society_skills.mastery.mining_mastery"},
+    "description": {"translate": "society_skills.mastery.mining_mastery.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -75,8 +75,8 @@
     ]
   },
   "fishing_mastery": {
-    "title": "Husbandry Mastery",
-    "description": "Adds ability to use the Roe Recycler.\nFisher sells Needle Bobber and Magnet Bobber",
+    "title": {"translate": "society_skills.mastery.fishing_mastery"},
+    "description": {"translate": "society_skills.mastery.fishing_mastery.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -100,8 +100,8 @@
     ]
   },
   "adventuring_mastery": {
-    "title": "Adventuring Mastery",
-    "description": "You can now find Companion Chests in the world.",
+    "title": {"translate": "society_skills.mastery.adventuring_mastery"},
+    "description": {"translate": "society_skills.mastery.adventuring_mastery.description"},
     "frame": {
       "type": "advancement",
       "data": {

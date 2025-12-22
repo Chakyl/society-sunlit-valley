@@ -1,7 +1,7 @@
 {
   "healing+5%": {
-    "title": "+5% Healing",
-    "description": "All healing provides an extra 5% health",
+    "title": {"translate": "society_skills.husbandry.healing"},
+    "description": {"translate": "society_skills.husbandry.healing.description"},
     "icon": {
       "type": "effect",
       "data": {
@@ -20,8 +20,8 @@
     ]
   },
   "stamina+5%": {
-    "title": "+5% Stamina",
-    "description": "Hunger bar decreases 5% slower",
+    "title": {"translate": "society_skills.husbandry.stamina"},
+    "description": {"translate": "society_skills.husbandry.stamina.description"},
     "icon": {
       "type": "effect",
       "data": {
@@ -40,8 +40,8 @@
     ]
   },
   "bribery": {
-    "title": "Bribery",
-    "description": "Using a §6Gold Coin§7 on a farm animal increases affection by 1 and makes it gain affection faster",
+    "title": {"translate": "society_skills.husbandry.bribery"},
+    "description": {"translate": "society_skills.husbandry.bribery.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -65,8 +65,8 @@
     ]
   },
   "mana_hand": {
-    "title": "Mana Hand",
-    "description": "Using §6Magic Shears§7 drops double items",
+    "title": {"translate": "society_skills.husbandry.mana_hand"},
+    "description": {"translate": "society_skills.husbandry.mana_hand.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -84,8 +84,8 @@
     ]
   },
   "biomancer": {
-    "title": "Biomancer",
-    "description": "Right clicking a farm animal with a §6Knife§7 exchanges affection for §6Heart of Diamond. They need to trust you first.",
+    "title": {"translate": "society_skills.husbandry.biomancer"},
+    "description": {"translate": "society_skills.husbandry.biomancer.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -103,8 +103,8 @@
     ]
   },
   "animal_whisperer": {
-    "title": "Animal Whisperer",
-    "description": "Farm animals gain affection faster",
+    "title": {"translate": "society_skills.husbandry.animal_whisperer"},
+    "description": {"translate": "society_skills.husbandry.animal_whisperer.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -128,8 +128,8 @@
     ]
   },
   "triple_truffle": {
-    "title": "Triple Truffle",
-    "description": "Pigs drop triple §6Truffles",
+    "title": {"translate": "society_skills.husbandry.triple_truffle"},
+    "description": {"translate": "society_skills.husbandry.triple_truffle.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -153,8 +153,8 @@
     ]
   },
   "sacrificial_lamb": {
-    "title": "Sacrificial Lamb",
-    "description": "Killing a §6Sheep§7 passes half of its affection to some nearby farm animals",
+    "title": {"translate": "society_skills.husbandry.sacrificial_lamb"},
+    "description": {"translate": "society_skills.husbandry.sacrificial_lamb.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -178,8 +178,8 @@
     ]
   },
   "transplanting": {
-    "title": "Transplanting",
-    "description": "Using a §6Heart of Diamond§7 on a farm animal adds a heart of affection",
+    "title": {"translate": "society_skills.husbandry.transplanting"},
+    "description": {"translate": "society_skills.husbandry.transplanting.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -203,8 +203,8 @@
     ]
   },
   "shepherd": {
-    "title": "Shepherd",
-    "description": "Farm animals produce double milk",
+    "title": {"translate": "society_skills.husbandry.shepherd"},
+    "description": {"translate": "society_skills.husbandry.shepherd.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -228,8 +228,8 @@
     ]
   },
   "coopmaster": {
-    "title": "Coopmaster",
-    "description": "Birds have a small chance to give §6Golden Eggs§7 and Rabbits give double items",
+    "title": {"translate": "society_skills.husbandry.coopmaster"},
+    "description": {"translate": "society_skills.husbandry.coopmaster.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -253,8 +253,8 @@
     ]
   },
   "bff": {
-    "title": "Best Friends Forever",
-    "description": "Animals can be given a Friendship Necklace to have a small chance of gifting a §dPrismatic Shard§7 at max affection.",
+    "title": {"translate": "society_skills.husbandry.bff"},
+    "description": {"translate": "society_skills.husbandry.bff.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -278,8 +278,8 @@
     ]
   },
   "clockwork": {
-    "title": "Clockwork Implant",
-    "description": "Using a §6Precision Mechanism§7 on a Farm animal prevents its affection from decreasing from deployers.",
+    "title": {"translate": "society_skills.husbandry.clockwork"},
+    "description": {"translate": "society_skills.husbandry.clockwork.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -303,8 +303,8 @@
     ]
   },
   "heretic": {
-    "title": "Heretic",
-    "description": "Using Magic Shears painfully extracts 3 §6Sparkstone§7 from the animal.",
+    "title": {"translate": "society_skills.husbandry.heretic"},
+    "description": {"translate": "society_skills.husbandry.heretic.description"},
     "frame": {
       "type": "advancement",
       "data": {
