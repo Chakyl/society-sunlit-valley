@@ -3611,7 +3611,7 @@ global.fishPondDefinitions = new Map([
           chance: 0.17,
         },
         {
-          minPopulation: 10,
+          minPopulation: 5,
           item: "society:sparkstone",
           count: 16,
           chance: 0.25,

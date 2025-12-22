@@ -389,6 +389,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet)
     return;
+  if (item.id === "society:sunlit_crystal") return;
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
       const day = Number(

@@ -724,8 +724,8 @@
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest24.description1}"]
 			id: "3719F024051F60DA"
 			rewards: [{
-				id: "66CC0638F629C86F"
-				item: "society:truffle_tea"
+				id: "5E94113982847280"
+				item: "bakery:chocolate_donut"
 				type: "item"
 			}]
 			tasks: [{
@@ -1841,91 +1841,6 @@
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest60.title}"
 			x: 0.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["780F1E73497414A0"]
-			description: [
-				"When a farm animal reaches &63&r affection or higher, it will need a proper bed! Place it near an animal that doesn't have a bed to assign it to that bed."
-				""
-				"&6Coop Beds&r house birds and small animals such as Chickens and Rabbits"
-				""
-				"&6Barn Beds&r house larger animals such as Cows, Sheep, and Pigs."
-				""
-				"They can be bought from the &6Shepherd Villager&r."
-			]
-			icon: "society:coop_bed"
-			id: "4A627C3CED76F30B"
-			rewards: [{
-				id: "78AAEC42FC0DFAFE"
-				item: "society:candied_animal_feed"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2B2A662CB344EDE3"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "society:coop_bed"
-							}
-							{
-								Count: 1b
-								id: "society:barn_bed"
-							}
-						]
-					}
-				}
-				title: "Any Basic Animal Bed"
-				type: "item"
-			}]
-			title: "Don't look at me"
-			x: 14.0d
-			y: 7.0d
-		}
-		{
-			description: [
-				"Certain animals will need higher tiers of beds! "
-				""
-				"&6Deluxe&r and &6Luxury&r beds support more profitable animals, though have a higher up front cost."
-				""
-				"Holding &6shift&r while hovering over a bed in your inventory will tell you what animals it supports."
-			]
-			id: "780F1E73497414A0"
-			tasks: [{
-				id: "7A96BD9BAB846549"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "society:deluxe_coop_bed"
-							}
-							{
-								Count: 1b
-								id: "society:luxury_coop_bed"
-							}
-							{
-								Count: 1b
-								id: "society:deluxe_barn_bed"
-							}
-							{
-								Count: 1b
-								id: "society:luxury_barn_bed"
-							}
-						]
-					}
-				}
-				title: "Any Upgraded Bed"
-				type: "item"
-			}]
-			title: "Don't look at me either"
-			x: 15.0d
-			y: 7.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

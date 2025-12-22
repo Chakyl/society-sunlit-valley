@@ -57,7 +57,25 @@ ItemEvents.tooltip((tooltip) => {
               )
             ).gray(),
           ]);
-          text.add(4, [Text.translatable("tooltip.society.plushies")]);
+          if (item.nbt.animal) {
+          let animal = item.nbt.getCompound("animal");
+            text.add(4, [
+              Text.translatable("tooltip.society.plushies.animal_type"),
+              Text.translate(
+                global.getTranslatedEntityName(String(animal.type)).getString()
+              ).gold(),
+            ]);
+            if (animal.name) {
+              text.add(5, [
+                Text.translatable(
+                  "tooltip.society.plushies.animal_name",
+                  ` ${animal.name}`
+                ),
+              ]);
+            }
+          } else {
+            text.add(4, [Text.translatable("tooltip.society.plushies")]);
+          }
         }
       } else {
         text.add(1, [Text.translatable("tooltip.society.plushies")]);
@@ -1359,7 +1377,59 @@ ItemEvents.tooltip((tooltip) => {
     "refinedstorage:64k_storage_block",
     Text.translatable("tooltip.society.storage_block", "64,000").green()
   );
-  global.removedItems.forEach((item) => {
-    tooltip.add(item, Text.translatable("tooltip.society.removed_items").red());
-  });
+  tooltip.add(
+    global.removedItems,
+    Text.translatable("tooltip.society.removed_items").red()
+  );
+  // Mastery
+  tooltip.add(
+    "society:net_bobber",
+    Text.translatable("item.society.net_bobber.description").gray()
+  );
+  tooltip.add(
+    "society:needle_bobber",
+    Text.translatable("item.society.needle_bobber.description").gray()
+  );
+  tooltip.add(
+    "domesticationinnovation:collar_tag",
+    Text.translatable("item.society.collar_tag.description").gray()
+  );
+  tooltip.add(
+    "domesticationinnovation:pet_bed_white",
+    Text.translatable("item.society.pet_bed_white.description").gray()
+  );
+  tooltip.add(
+    "domesticationinnovation:drum",
+    Text.translatable("item.society.drum.description").gray()
+  );
+  tooltip.add(
+    "domesticationinnovation:wayward_lantern",
+    Text.translatable("item.society.wayward_lantern.description").gray()
+  );
+  tooltip.add(
+    "society:animal_cracker",
+    Text.translatable("item.society.animal_cracker.description").gray()
+  );
+  tooltip.add(
+    "society:sunlit_crystal",
+    Text.translatable("item.society.sunlit_crystal.description").gray()
+  );
+  tooltip.add(
+    ["society:animal_cracker", "society:sunlit_crystal"],
+    Text.translatable("tooltip.society.husbandry_mastery.required")
+  );
+  tooltip.add(
+    ["society:roe_recycler", "society:net_bobber", "society:needle_bobber"],
+    Text.translatable("tooltip.society.fishing_mastery.required")
+  );
+  tooltip.add(
+    [
+      "domesticationinnovation:pet_bed_white",
+      "domesticationinnovation:drum",
+      "domesticationinnovation:wayward_lantern",
+      "domesticationinnovation:collar_tag",
+    ],
+    Text.translatable("tooltip.society.adventuring_mastery.required")
+  );
+  [];
 });

@@ -209,6 +209,14 @@ global.getRoe = (fish) => {
   return `society:${fishId}_roe`;
 };
 
+global.getFishFromRoe = (roe) => {
+  let roeId = roe.split(":")[1].slice(0, -4);
+  if (roeId.includes("frosty_fin")) roeId = "raw_snowflake";
+  return Array.from(global.fishPondDefinitions.keys()).find((fish) =>
+    fish.includes(roeId)
+  );
+};
+
 global.getPondProperties = (block) => {
   const properties = block.getProperties();
   return {
@@ -249,10 +257,13 @@ global.handleFishHarvest = (block, player, server, basket) => {
       if (population >= reward.minPopulation && fishPondRoll <= rewardChance) {
         // Rewards scale to amount of fish population relative to when reward starts spawning
         let calculateCount = Math.floor(
-          reward.count * ((population - reward.minPopulation) / (10 - reward.minPopulation))
+          reward.count *
+            ((population - reward.minPopulation) / (10 - reward.minPopulation))
         );
         if (population == 10) calculateCount = reward.count;
-        harvestOutputs.push(`${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`);
+        harvestOutputs.push(
+          `${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`
+        );
       }
     });
   }
@@ -280,7 +291,8 @@ global.handleFishExtraction = (block, player, server) => {
   const { type, population, non_native_fish } = nbt.data;
   let naturalPopulation = population - non_native_fish;
   let result;
-  let resultCount = player.stages.has("mitosis") && naturalPopulation > 0 ? 2 : 1;
+  let resultCount =
+    player.stages.has("mitosis") && naturalPopulation > 0 ? 2 : 1;
   let quality = 0;
   if (player.stages.has("bullfish_jobs") && Number(naturalPopulation) > 3) {
     quality = Math.floor((Number(population) - 3) / 2);
@@ -295,14 +307,18 @@ global.handleFishExtraction = (block, player, server) => {
       else smokedFishId = smokedFishId.substring(4, smokedFishId.length);
     }
     result = Item.of(
-      `${resultCount}x ${rnd25() ? "minecraft:coal" : `society:smoked_${smokedFishId}`}`,
+      `${resultCount}x ${
+        rnd25() ? "minecraft:coal" : `society:smoked_${smokedFishId}`
+      }`,
       quality > 0 ? `{quality_food:{quality:${quality}}}` : null
     );
   } else {
     if (["aquaculture:leech", "aquaculture:minnow"].includes(type)) {
       result = Item.of(
         `${resultCount}x ${type}`,
-        quality > 0 ? `{Damage:0,quality_food:{quality:${quality},effects:[]}}` : `{Damage:0}`
+        quality > 0
+          ? `{Damage:0,quality_food:{quality:${quality},effects:[]}}`
+          : `{Damage:0}`
       );
     } else {
       result = Item.of(
@@ -315,7 +331,8 @@ global.handleFishExtraction = (block, player, server) => {
     nbt.merge({
       data: {
         population: decreaseStage(population),
-        non_native_fish: non_native_fish > 0 ? decreaseStage(non_native_fish) : 0,
+        non_native_fish:
+          non_native_fish > 0 ? decreaseStage(non_native_fish) : 0,
       },
     });
 
@@ -395,25 +412,35 @@ global.validatePond = (block, level, lavaFish) => {
   const conflictingPonds =
     level.getBlock(blockAcross).id === "society:fish_pond" ||
     level.getBlock(
-      new BlockPos(x + adjacentPondMap[facing].xOffset, y, z + adjacentPondMap[facing].zOffset)
+      new BlockPos(
+        x + adjacentPondMap[facing].xOffset,
+        y,
+        z + adjacentPondMap[facing].zOffset
+      )
     ).id === "society:fish_pond" ||
     level.getBlock(
-      new BlockPos(x - adjacentPondMap[facing].xOffset, y, z - adjacentPondMap[facing].zOffset)
+      new BlockPos(
+        x - adjacentPondMap[facing].xOffset,
+        y,
+        z - adjacentPondMap[facing].zOffset
+      )
     ).id === "society:fish_pond";
   let waterAmount = 0;
   let scannedId = "";
   let scannedBlockProperties;
 
-  for (let pos of BlockPos.betweenClosed(new BlockPos(x + startX, y, z + startZ), [
-    x + endX,
-    y,
-    z + endZ,
-  ])) {
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(x + startX, y, z + startZ),
+    [x + endX, y, z + endZ]
+  )) {
     scannedBlockProperties = level.getBlock(pos).properties;
     scannedId = level.getBlock(pos).id;
     if (lavaFish && scannedId === "minecraft:lava") {
       waterAmount += 1;
-    } else if (!lavaFish && (scannedId === "minecraft:water" || scannedId === "minecraft:ice")) {
+    } else if (
+      !lavaFish &&
+      (scannedId === "minecraft:water" || scannedId === "minecraft:ice")
+    ) {
       waterAmount += 1;
     } else if (
       !lavaFish &&
@@ -454,7 +481,10 @@ global.handleFishPondTick = (tickEvent) => {
       quest: quest,
     });
   }
-  if (morningModulo >= fishPondProgTime && morningModulo < fishPondProgTime + fishPondTickRate) {
+  if (
+    morningModulo >= fishPondProgTime &&
+    morningModulo < fishPondProgTime + fishPondTickRate
+  ) {
     if (!type.equals("") && valid === "true") {
       if (Number(population) > 1) {
         level.spawnParticles(
@@ -477,7 +507,12 @@ global.handleFishPondTick = (tickEvent) => {
           quest: quest,
         });
       }
-      if (max_population !== 10 && quest !== "true" && rnd75() && population == max_population) {
+      if (
+        max_population !== 10 &&
+        quest !== "true" &&
+        rnd75() &&
+        population == max_population
+      ) {
         block.set(block.id, {
           facing: facing,
           valid: valid,
@@ -489,7 +524,10 @@ global.handleFishPondTick = (tickEvent) => {
           data: {
             quest_id: `${rnd(
               0,
-              getRequestedItems(global.fishPondDefinitions[type - 1], max_population).length - 1
+              getRequestedItems(
+                global.fishPondDefinitions[type - 1],
+                max_population
+              ).length - 1
             )}`,
           },
         });
@@ -515,5 +553,17 @@ global.handleFishPondTick = (tickEvent) => {
         block.setEntityData(nbt);
       }
     }
+  }
+};
+
+global.hasBobber = (rod, bobberId) => {
+  let stringNbt = rod.nbt.toString();
+  if (
+    rod.id == "minecraft:fishing_rod" ||
+    rod.id == "netherdepthsupgrade:lava_fishing_rod"
+  ) {
+    return stringNbt.includes(`{bobber:{Count:1b,id:"${bobberId}"}}`);
+  } else {
+    return stringNbt.includes(`{Count:1b,Slot:3,id:"${bobberId}"}`);
   }
 };

@@ -14,7 +14,7 @@ global.plushieRightClick = (click) => {
       let questOffset = 3;
       if (questList.length < 12) questOffset = 2;
       if (questList.length > 36) questOffset = 6;
-      let questItem = questList[affection * questOffset + quest_id - 1];
+      let questItem = questList[affection * questOffset + Number(quest_id) - 1];
       let questName = Item.of(questItem).displayName;
       if (item && item == questItem) {
         if (!player.isCreative()) item.count--;

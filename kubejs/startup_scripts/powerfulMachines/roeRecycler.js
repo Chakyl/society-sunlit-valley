@@ -1,47 +1,93 @@
 // priority: -21
 console.info("[SOCIETY] roeRecycler.js loaded");
 
-
 global.handleRoeRecycler = (e) => {
   const { inventory, level, block } = e;
+  const { x, y, z } = block;
   let slots = inventory.getSlots();
   let slotItem;
-  let sentItem;
-  let belowItem;
   const belowPos = block.getPos().below();
   const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
-  if (belowBlock.inventory && !inventory.isEmpty()) {
+  if (rnd10() && belowBlock.inventory && !inventory.isEmpty()) {
     for (let i = 0; i < slots; i++) {
       slotItem = inventory.getStackInSlot(i);
       if (
         slotItem !== Item.of("minecraft:air") &&
-        global.picklingRecipes.get(`${slotItem.id}`)
+        slotItem.id.includes("_roe") &&
+        !slotItem.id.includes("aged_")
       ) {
-        for (let j = 0; j < belowBlock.inventory.slots; j++) {
-          belowItem = belowBlock.inventory.getStackInSlot(j);
-          let pickle = global.picklingRecipes.get(`${slotItem.id}`).pickle;
-          if (
-            belowItem === Item.of("minecraft:air") ||
-            (belowItem === pickle &&
-              belowItem.count < belowBlock.inventory.getSlotLimit(j))
-          ) {
-            sentItem = pickle;
+        let roeOutputs = [];
+        let fish = global.fishPondDefinitions.get(
+          global.getFishFromRoe(slotItem.id)
+        );
+        if (fish && fish.additionalRewards) {
+          let fishPondRoll = 0;
+          let population = rnd(1, 10);
+          fish.additionalRewards.forEach((reward) => {
+            fishPondRoll = Math.random();
             if (
-              slotItem.nbt &&
-              slotItem.nbt.quality_food &&
-              !slotItem.hasTag("society:plushies")
+              population >= reward.minPopulation &&
+              fishPondRoll <= reward.chance / 2
             ) {
-              sentItem.nbt = null;
+              let calculateCount = Math.floor(
+                Math.max(1, reward.count / 4) *
+                  ((population - reward.minPopulation) /
+                    (10 - reward.minPopulation))
+              );
+              if (population == 10) calculateCount = reward.count;
+              roeOutputs.push(
+                `${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`
+              );
             }
-            sentItem.count = 1;
-            belowBlock.inventory.insertItem(j, sentItem, false);
-            slotItem.count--;
-            return;
+          });
+        }
+        if (roeOutputs.length == 0 && rnd10()) {
+          roeOutputs.push("1x aquaculture:algae");
+        }
+        let hasRoom = true;
+        roeOutputs.forEach((item) => {
+          if (!global.inventoryBelowHasRoom(level, block, item)) {
+            hasRoom = false;
           }
+        });
+        if (hasRoom) {
+          roeOutputs.forEach((item) => {
+            global.insertBelow(level, block, item);
+          });
+          slotItem.count--;
+          level.server.runCommandSilent(
+            `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`
+          );
+          level.spawnParticles(
+            "supplementaries:suds",
+            true,
+            x + 0.5,
+            y + 1,
+            z + 0.5,
+            0.1 * rnd(1, 2),
+            0.1 * rnd(1, 2),
+            0.1 * rnd(1, 2),
+            rnd(2, 6),
+            0.001
+          );
+          break;
         }
       }
     }
   }
+
+  level.spawnParticles(
+    "domesticationinnovation:simple_bubble",
+    true,
+    x,
+    y + 1,
+    z,
+    0.2 * rnd(1, 1.5),
+    0.2 * rnd(1, 1.5),
+    0.2 * rnd(1, 1.5),
+    3,
+    0.01
+  );
 };
 
 StartupEvents.registry("block", (event) => {
@@ -52,8 +98,9 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.roe_recycler.description").gray());
-      item.tooltip(Text.translatable("block.society.roe_recycler.description.warn").red());
+      item.tooltip(
+        Text.translatable("block.society.roe_recycler.description").gray()
+      );
       item.modelJson({
         parent: "society:block/roe_recycler",
       });

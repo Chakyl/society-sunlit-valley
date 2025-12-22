@@ -41,7 +41,7 @@ StartupEvents.registry("block", (event) => {
               break;
             case "summer":
               if (item === "vintagedelight:ghost_pepper" && item.count === 64) {
-                block.popItemFromFace("16x society:sparkstone_block", facing);
+                block.popItemFromFace("64x society:sparkstone", facing);
                 if (!player.isCreative()) item.count = item.count - 64;
                 successParticles(level, block);
               } else {

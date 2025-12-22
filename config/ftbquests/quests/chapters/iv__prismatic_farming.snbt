@@ -1191,6 +1191,241 @@
 			x: -3.0d
 			y: 19.0d
 		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: [
+				"Unlocking &6Fishing Mastery&r provides special tools for both manual fishing and ponds when unlocked."
+				""
+				"Once unlocked, the associated items can be bought from the &6Fisher&r."
+			]
+			id: "21671DA370EA7A37"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "aquaculture:neptunium_fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "7162E14466460F42"
+				stage: "fishing_mastery"
+				title: "Unlock Fishing Mastery"
+				type: "gamestage"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21671DA370EA7A37"]
+			icon: "society:needle_bobber"
+			id: "785F3754068D5C2D"
+			rewards: [{
+				id: "3CF7E830E51BAB65"
+				item: "society:river_jelly"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5102E21B6D44F962"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "society:needle_bobber"
+							}
+							{
+								Count: 1b
+								id: "society:net_bobber"
+							}
+						]
+					}
+				}
+				title: "Needle or Net Bobber"
+				type: "item"
+			}]
+			title: "Masterful Bobbers"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: ["Unlocking &6Husbandry Mastery&r provides"]
+			id: "3979B0AD660A33D2"
+			size: 1.5d
+			tasks: [{
+				icon: "society:milk_pail"
+				id: "5492353782FA1337"
+				stage: "husbandry_mastery"
+				title: "Unlock Fishing Mastery"
+				type: "gamestage"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21671DA370EA7A37"]
+			id: "1DCBAC91CE9AAD60"
+			tasks: [{
+				id: "441B5FDB7DFE9725"
+				item: "society:roe_recycler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: [
+				"Unlocking &6Adventuring Mastery&r provides ways to improve the combat abilities of pets."
+				""
+				"Once unlocked, certain associated items can be bought from the &6Guild&r."
+			]
+			id: "76A60EE6F3E0FF72"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "60760AF29A6A1954"
+				secret: true
+				stage: "adventuring_mastery"
+				title: "Unlock Adventuring Mastery"
+				type: "gamestage"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["76A60EE6F3E0FF72"]
+			id: "181794D54A635F81"
+			tasks: [{
+				id: "22F5A370A1A215F2"
+				item: "domesticationinnovation:collar_tag"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["76A60EE6F3E0FF72"]
+			id: "40C8DC3C2A22F632"
+			tasks: [{
+				id: "571CF103F79F06DE"
+				item: "domesticationinnovation:pet_bed_white"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3979B0AD660A33D2"]
+			description: [
+				"&6Animal Crackers&r are mystical foods that allow farm animals to produce double when eaten by one. "
+				""
+				"They can be found randomly throughout the world from your daily farming activities."
+			]
+			id: "505C0E636F881791"
+			rewards: [{
+				id: "437F5ED7B6B9B6B5"
+				item: "society:animal_cracker"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BFF4068FEBDDC13"
+				item: "society:animal_cracker"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3979B0AD660A33D2"]
+			id: "06308BDE5F4EC0D2"
+			rewards: [{
+				id: "498C6634A87E0288"
+				item: "society:sunlit_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "41FDA43ADEA36D5B"
+				item: "society:sunlit_crystal"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: ["Unlocking &6Farming Mastery&r "]
+			id: "40845F4C88AD03CB"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "224A29585E36B057"
+				stage: "farming_mastery"
+				title: "Unlock Farming Mastery"
+				type: "gamestage"
+			}]
+			x: -6.0d
+			y: 3.25d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: ["Unlocking &6Farming Mastery&r "]
+			id: "3C12A8CA17EACA0B"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0AD01E5BA4169E25"
+				stage: "mining_mastery"
+				title: "Unlock Mining Mastery"
+				type: "gamestage"
+			}]
+			x: -3.0d
+			y: 3.25d
+		}
+		{
+			description: [""]
+			icon: "society:book_of_stars"
+			id: "25677844C218103A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B3ADE6005BB80E9"
+				table_id: 148309168996942632L
+				type: "random"
+			}]
+			size: 1.5d
+			subtitle: "Reach level 12 in every skill"
+			tasks: [{
+				icon: "society:book_of_stars"
+				id: "3FE67ED6D7C3F44B"
+				stage: "mastery_unlocked"
+				title: "Unlock Skill Mastery"
+				type: "gamestage"
+			}]
+			title: "Skill Mastery"
+			x: -4.5d
+			y: 1.5d
+		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"
 }

@@ -3,7 +3,7 @@
   "name": "shop.society_trading.fisher",
   "texture": "minecraft:textures/block/barrel_side",
   "villager_profession": "fisherman",
-  "jei_catalyst": { "item":"minecraft:barrel" },
+  "jei_catalyst": { "item": "minecraft:barrel" },
   "selector_weight": -95,
   "trades": [
     {
@@ -73,6 +73,24 @@
       },
       "numismatics_cost": 32768,
       "trade_id": "fisherman_fish_pond_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:roe_recycler",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 2
+      },
+      "second_request": {
+        "item": "society:sunlit_pearl",
+        "count": 3
+      },
+      "numismatics_cost": 65536,
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_roe_recyclern"
     },
     {
       "offer": {
@@ -185,6 +203,32 @@
       },
       "numismatics_cost": 65536,
       "trade_id": "fisherman_diamond_hook_for_crown"
+    },
+    {
+      "offer": {
+        "item": "society:needle_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "society:heart_of_neptunium",
+        "count": 1
+      },
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_needle_bobber_for_heart_of_neptunium"
+    },
+    {
+      "offer": {
+        "item": "society:net_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "society:heart_of_neptunium",
+        "count": 1
+      },
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_net_bobber_for_heart_of_neptunium"
     },
     {
       "offer": {

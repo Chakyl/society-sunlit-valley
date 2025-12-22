@@ -346,3 +346,38 @@ global.addAttributesFromStages = (player, server) => {
 global.addItemCooldown = (player, item, time) => {
   if (!player.isFake()) player.addItemCooldown(item, time);
 };
+
+global.getPlushieItemNbt = (currentNbt, type, customName, animalData, animalNbt) => {
+  let newNbt = currentNbt.copy();
+  newNbt.animal = {};
+  newNbt.animal.type = type;
+  // Aggressive with the conditionals here since invalid nbt will definitely crash the game
+  if (customName) {
+    newNbt.animal.name = customName;
+  }
+  if (animalData.ageLastDroppedSpecial) {
+    newNbt.animal.ageLastDroppedSpecial = animalData.ageLastDroppedSpecial;
+  }
+  if (animalData.ageLastMilked) {
+    newNbt.animal.ageLastDroppedSpecial = animalData.ageLastMilked;
+  }
+  if (animalData.ageLastMagicHarvested) {
+    newNbt.animal.ageLastDroppedSpecial = animalData.ageLastMagicHarvested;
+  }
+  if (animalData.clockwork) {
+    newNbt.animal.clockwork = true;
+  }
+  if (animalData.bribed) {
+    newNbt.animal.bribed = true;
+  }
+  if (animalData.bff) {
+    newNbt.animal.bff = true;
+  }
+  if (animalData.animalCracker) {
+    newNbt.animal.animalCracker = true;
+  }
+  if (animalNbt.Variant) {
+    newNbt.animal.Variant = animalNbt.Variant;
+  }
+  return newNbt;
+};
