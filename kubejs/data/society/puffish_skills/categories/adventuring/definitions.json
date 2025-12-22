@@ -1,6 +1,6 @@
 {
   "ranged+2": {
-    "title": "+2 Ranged Damage",
+    "title": {"translate": "society_skills.adventuring.ranged"},
     "icon": {
       "type": "item",
       "data": {
@@ -19,7 +19,7 @@
     ]
   },
   "protection+1": {
-    "title": "+I Protection",
+    "title": {"translate": "society_skills.adventuring.protection"},
     "icon": {
       "type": "effect",
       "data": {
@@ -38,7 +38,7 @@
     ]
   },
   "looting+1": {
-    "title": "+I Looting",
+    "title": {"translate": "society_skills.adventuring.looting"},
     "icon": {
       "type": "effect",
       "data": {
@@ -57,8 +57,8 @@
     ]
   },
   "fence": {
-    "title": "Fence",
-    "description": "🗡 Adventurer products worth 50% more",
+    "title": {"translate": "society_skills.adventuring.fence"},
+    "description": {"translate": "society_skills.adventuring.fence.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -89,8 +89,8 @@
     ]
   },
   "quick_feet": {
-    "title": "Quick Feet",
-    "description": "+20% Movement Speed",
+    "title": {"translate": "society_skills.adventuring.quick_feet"},
+    "description": {"translate": "society_skills.adventuring.quick_feet.description"},
     "icon": {
       "type": "effect",
       "data": {
@@ -109,8 +109,8 @@
     ]
   },
   "steadfast": {
-    "title": "Steadfast",
-    "description": "20% chance to heal a heart when hurt",
+    "title": {"translate": "society_skills.adventuring.steadfast"},
+    "description": {"translate": "society_skills.adventuring.steadfast.description"},
     "icon": {
       "type": "effect",
       "data": {
@@ -128,8 +128,8 @@
     ]
   },
   "dragonslayer": {
-    "title": "Dragonslayer",
-    "description": "Gives the ability to use the §6Dragontooth Axe",
+    "title": {"translate": "society_skills.adventuring.dragonslayer"},
+    "description": {"translate": "society_skills.adventuring.dragonslayer.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -153,8 +153,8 @@
     ]
   },
   "looting_tycoon": {
-    "title": "Looting Tycoon",
-    "description": "🗡 Adventurer products worth 100% more.\n\n§cDoes not stack with previous skills.",
+    "title": {"translate": "society_skills.adventuring.looting_tycoon"},
+    "description": {"translate": "society_skills.adventuring.looting_tycoon.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -185,8 +185,8 @@
     ]
   },
   "galaxy_smash": {
-    "title": "Axe Ability: §6Galaxy Smash",
-    "description": "Adds a smash attack to the Dragontooth Axe that only targets hostiles\n\n§cShift + Left click to use",
+    "title": {"translate": "society_skills.adventuring.galaxy_smash"},
+    "description": {"translate": "society_skills.adventuring.galaxy_smash.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -210,8 +210,8 @@
     ]
   },
   "handleshot": {
-    "title": "Axe Ability: §6Handleshot",
-    "description": "Adds a ranged ability to the Dragontooth Axe\n\n§cShift + Right click to use",
+    "title": {"translate": "society_skills.adventuring.handleshot"},
+    "description": {"translate": "society_skills.adventuring.handleshot.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -235,8 +235,8 @@
     ]
   },
   "relic_hunter": {
-    "title": "Relic Hunter",
-    "description": "Chance to find §6Relic Troves§7 in loot chests",
+    "title": {"translate": "society_skills.adventuring.relic_hunter"},
+    "description": {"translate": "society_skills.adventuring.relic_hunter.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -260,8 +260,8 @@
     ]
   },
   "artifact_hunter": {
-    "title": "Artifact Hunter",
-    "description": "Chance to find §6Artifact Troves§7 in loot chests",
+    "title": {"translate": "society_skills.adventuring.artifact_hunter"},
+    "description": {"translate": "society_skills.adventuring.artifact_hunter.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -285,8 +285,8 @@
     ]
   },
   "prismatic_realm": {
-    "title": "Prismatic Realm",
-    "description": "Chance to find §dPrismatic Shards§7 in loot chests",
+    "title": {"translate": "society_skills.adventuring.prismatic_realm"},
+    "description": {"translate": "society_skills.adventuring.prismatic_realm.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -310,8 +310,8 @@
     ]
   },
   "stuffed": {
-    "title": "Stuffed",
-    "description": "+10 Health",
+    "title": {"translate": "society_skills.adventuring.stuffed"},
+    "description": {"translate": "society_skills.adventuring.stuffed.description"},
     "frame": {
       "type": "advancement",
       "data": {
