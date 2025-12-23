@@ -96,6 +96,34 @@
     },
     {
       "offer": {
+        "item": "society:women_who_run_with_the_plushies",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 2
+      },
+      "numismatics_cost": 65536,
+      "trade_id": "bookseller_women_who_run_with_the_plushies_for_sun",
+      "seasons_required": ["late_spring"],
+      "unlock_description": "jei.society_trading.only_spring"
+    },
+    {
+      "offer": {
+        "item": "society:the_red_and_the_black",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 12
+      },
+      "numismatics_cost": 49152,
+      "trade_id": "bookseller_the_red_and_the_black_for_sun",
+      "seasons_required": ["late_summer"],
+      "unlock_description": "jei.society_trading.only_summer"
+    },
+    {
+      "offer": {
         "item": "society:paradise_crop",
         "count": 1
       },
@@ -175,6 +203,20 @@
       },
       "numismatics_cost": 69632,
       "trade_id": "bookseller_intro_to_algorithms_for_sun",
+      "seasons_required": ["late_winter"],
+      "unlock_description": "jei.society_trading.only_winter"
+    },
+    {
+      "offer": {
+        "item": "society:pond_house_five",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 1
+      },
+      "numismatics_cost": 16777216,
+      "trade_id": "bookseller_pond_house_five_for_prismatic",
       "seasons_required": ["late_winter"],
       "unlock_description": "jei.society_trading.only_winter"
     },

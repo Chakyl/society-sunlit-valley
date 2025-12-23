@@ -2,15 +2,11 @@ let $BlockEntity = Java.loadClass(
   "net.minecraft.world.level.block.entity.BlockEntity"
 );
 
-const registerKey = (blockEntity, tag, key, compoundValues) => {
+const registerKey = (blockEntity, tag, key) => {
   if (blockEntity.data != null) {
     if (blockEntity.data[key] != null && !Number.isNaN(blockEntity.data[key])) {
       if (typeof blockEntity.data[key] == Number) {
         tag.putInt(key, blockEntity.data[key]);
-      } else if (typeof blockEntity.data[key] == Object) {
-        compoundValues.forEach((compoundKey) => {
-          tag.putString(key, blockEntity.data[key].compoundKey);
-        });
       } else {
         tag.putString(key, blockEntity.data[key]);
       }
@@ -28,15 +24,17 @@ JadeEvents.onCommonRegistration((e) => {
     }
   );
 
-  const plushieNbtKeys = ["type", "quality", "affection", "animal"];
-  const plushieAnimalKeys = ["type", "name"];
+  const plushieNbtKeys = ["type", "quality", "affection"];
   e.blockDataProvider("society:plushie_jade", $BlockEntity).setCallback(
     (tag, accessor) => {
       const { blockEntity } = accessor;
 
-      ["type", "quality", "affection", "animal"].forEach((key) => {
-        registerKey(blockEntity, tag, key, plushieAnimalKeys);
+      plushieNbtKeys.forEach((key) => {
+        registerKey(blockEntity, tag, key);
       });
+      if (blockEntity.data != null && blockEntity.data.animal != null) {
+        tag.putString("animal", blockEntity.data.animal.type);
+      }
     }
   );
 

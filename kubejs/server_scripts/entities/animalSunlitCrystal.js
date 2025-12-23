@@ -80,7 +80,7 @@ ItemEvents.entityInteracted((e) => {
         0.01
       );
 
-      target.setRemoved("unloaded_to_chunk");
+      // target.setRemoved("unloaded_to_chunk");
     }
   }
 });

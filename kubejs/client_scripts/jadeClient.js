@@ -12,20 +12,28 @@ global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   const nbt = accessor.getServerData();
 
   if (nbt.type.equals("")) return;
-  const type = nbt.type
+  const type = nbt.type;
   let typeData = global.plushieTraits[type];
-  const affection = Number(nbt.affection)
-  const quality = Number(nbt.quality)
+  const affection = Number(nbt.affection);
+  const quality = Number(nbt.quality);
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   tooltip.add(Component.translatable(blockName));
   tooltip.add(`§6${"★".repeat(quality + 1)}§8${"☆".repeat(3 - quality)}`);
   tooltip.add(`§${typeData.color}${global.formatName(typeData.trait)}`);
-  tooltip.add(
-    `§c${affection > 0 ? `❤`.repeat(affection) : ""}§8${
-      affection < 4 ? `❤`.repeat(4 - affection) : ""
-    }`
-  );
+  if (nbt.animal) {
+    tooltip.add(
+      Text.translate(
+        global.getTranslatedEntityName(String(nbt.animal)).getString()
+      )
+    );
+  } else {
+    tooltip.add(
+      `§c${affection > 0 ? `❤`.repeat(affection) : ""}§8${
+        affection < 4 ? `❤`.repeat(4 - affection) : ""
+      }`
+    );
+  }
 };
 
 global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
@@ -45,13 +53,19 @@ global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   const helper = tooltip.getElementHelper();
-  const fishIcon = helper.item(Item.of(fish), 0.5).message(null).translate(Vec2(-2, -1));
+  const fishIcon = helper
+    .item(Item.of(fish), 0.5)
+    .message(null)
+    .translate(Vec2(-2, -1));
   tooltip.add(Component.translatable(blockName));
   tooltip["add(snownee.jade.api.ui.IElement)"](fishIcon);
   tooltip.append(Component.translatable(Item.of(fish).getDescriptionId()));
   if (upgraded) {
     tooltip["add(snownee.jade.api.ui.IElement)"](
-      helper.item(Item.of("society:sea_biscut"), 0.5).message(null).translate(Vec2(-2, -1))
+      helper
+        .item(Item.of("society:sea_biscut"), 0.5)
+        .message(null)
+        .translate(Vec2(-2, -1))
     );
     tooltip.append(fishIcons);
   } else {
@@ -59,7 +73,11 @@ global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   }
 };
 
-global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) => {
+global["JadeArtisanMachineClientCallback"] = (
+  tooltip,
+  accessor,
+  pluginConfig
+) => {
   if (!global.artisanMachineIds.includes(accessor.getBlock().id)) return;
   const properties = accessor.getBlockState();
   const nbt = accessor.getServerData();
@@ -88,7 +106,11 @@ global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) =
     if (index < stage) progressIcons += "⬛";
     else progressIcons += "⬜";
   }
-  const progress = Text.translatable("jade.society.working_block_entity.progress", `${Number(stage)}`, `${duration}`);
+  const progress = Text.translatable(
+    "jade.society.working_block_entity.progress",
+    `${Number(stage)}`,
+    `${duration}`
+  );
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   const helper = tooltip.getElementHelper();
@@ -98,29 +120,47 @@ global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) =
     .translate(Vec2(-2, -1));
   tooltip.add(Component.translatable(blockName));
   tooltip["add(snownee.jade.api.ui.IElement)"](recipeIcon);
-  tooltip.append(Component.translatable(Item.of(recipe.output[0]).getDescriptionId()));
+  tooltip.append(
+    Component.translatable(Item.of(recipe.output[0]).getDescriptionId())
+  );
 
   if (upgraded) {
     tooltip["add(snownee.jade.api.ui.IElement)"](
-      helper.item(Item.of(machine.upgrade), 0.5).message(null).translate(Vec2(-2, -1))
+      helper
+        .item(Item.of(machine.upgrade), 0.5)
+        .message(null)
+        .translate(Vec2(-2, -1))
     );
     tooltip.append(progress);
   } else {
     tooltip.add(progress);
   }
   tooltip["append(snownee.jade.api.ui.IElement)"](
-    helper.item(Item.of("minecraft:clock"), 0.5).message(null).translate(Vec2(-2, -1))
+    helper
+      .item(Item.of("minecraft:clock"), 0.5)
+      .message(null)
+      .translate(Vec2(-2, -1))
   );
 };
 
 JadeEvents.onClientRegistration((e) => {
-  e.block("society:plushie_jade", $Block).tooltip((tooltip, accessor, pluginConfig) => {
-    global["JadePlushieClientCallback"](tooltip, accessor, pluginConfig);
-  });
-  e.block("society:fish_pond_jade", $Block).tooltip((tooltip, accessor, pluginConfig) => {
-    global["JadeFishPondClientCallback"](tooltip, accessor, pluginConfig);
-  });
-  e.block("society:artisan_machine_jade", $Block).tooltip((tooltip, accessor, pluginConfig) => {
-    global["JadeArtisanMachineClientCallback"](tooltip, accessor, pluginConfig);
-  });
+  e.block("society:plushie_jade", $Block).tooltip(
+    (tooltip, accessor, pluginConfig) => {
+      global["JadePlushieClientCallback"](tooltip, accessor, pluginConfig);
+    }
+  );
+  e.block("society:fish_pond_jade", $Block).tooltip(
+    (tooltip, accessor, pluginConfig) => {
+      global["JadeFishPondClientCallback"](tooltip, accessor, pluginConfig);
+    }
+  );
+  e.block("society:artisan_machine_jade", $Block).tooltip(
+    (tooltip, accessor, pluginConfig) => {
+      global["JadeArtisanMachineClientCallback"](
+        tooltip,
+        accessor,
+        pluginConfig
+      );
+    }
+  );
 });

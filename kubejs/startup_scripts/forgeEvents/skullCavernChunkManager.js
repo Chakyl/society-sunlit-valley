@@ -5,9 +5,7 @@ global.chunkLoadManager = (e) => {
 
   if (level.dimension === "society:skull_cavern" && !level.isClientSide()) {
     if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] skullCavernChunkManager.js");
-    const day = Number(
-      (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
-    );
+    const day = global.getDay(level);
 
     if (!level.persistentData.chunkParityMap)
       level.persistentData.chunkParityMap = {};

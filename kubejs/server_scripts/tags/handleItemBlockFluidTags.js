@@ -251,6 +251,16 @@ const rawLogs = [
   "atmospheric:grimwood_log",
   "vintagedelight:magic_vine",
   "vanillabackport:pale_oak_log",
+  "cluttered:willow_log",
+  "cluttered:flowering_willow_log",
+  "cluttered:poplar_log",
+  "cluttered:flowering_poplar_log",
+  "cluttered:crabapple_log",
+  "cluttered:flowering_crabapple_log",
+  "cluttered:sycamore_log",
+  "cluttered:fluorescent_maple_log",
+  "cluttered:blue_mushroom_log",
+  "cluttered:red_mushroom_log",
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
@@ -260,13 +270,15 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:plates", "oreganized:lead_sheet");
   e.add("forge:plates/silver", "oreganized:silver_sheet");
   e.add("forge:plates", "oreganized:silver_sheet");
-  e.add("forge:crops", "society:ancient_fruit");
   e.add("forge:salt", "meadow:alpine_salt");
+  e.add("forge:crops", "society:ancient_fruit");
   e.add("forge:crops", "society:tubabbaco");
+  e.add("forge:crops", "society:eggplant");
+  e.add("forge:crops", "farm_and_charm:strawberry");
+  e.add("forge:crops", "herbalbrews:green_tea_leaf");
+  e.add("forge:crops/cabbage", "farm_and_charm:lettuce");
   e.add("forge:grapes", "nethervinery:warped_grape");
   e.add("forge:grapes", "nethervinery:crimson_grape");
-  e.add("forge:crops", "society:eggplant");
-  e.add("forge:crops/cabbage", "farm_and_charm:lettuce");
   e.add("forge:vegetables/eggplant", "society:eggplant");
   e.add("forge:vegetables", "society:eggplant");
   e.add("meadow:water_bottles", "herbalbrews:water_cup");
@@ -376,9 +388,6 @@ ServerEvents.tags("item", (e) => {
   // Bulk
   global.preserves.forEach((preserve) => {
     e.add("society:preserves", preserve.item);
-  });
-  global.lootFurniture.forEach((item) => {
-    e.add("society:loot_furniture", item);
   });
   global.plushies.forEach((item) => {
     e.add("society:plushies", item);
@@ -640,6 +649,10 @@ ServerEvents.tags("block", (e) => {
   });
   global.plushies.forEach((item) => {
     e.add("quality_foods:quality_blocks", item);
+    e.add("society:plushies", item);
+  });
+  global.lootFurniture.forEach((furniture) => {
+    e.add("society:loot_furniture", furniture);
   });
   e.remove("minecraft:dirt", "farmersdelight:rich_soil");
   rawLogs.forEach((log) => {

@@ -86,7 +86,6 @@ BlockEvents.broken(
 
 const scheduleUnplaceableRegenFunction = (level, pos, server, id) => {
   server.scheduleInTicks(100, () => {
-    console.log("scheduleUnplaceableRegenFunction")
     if (level.getBlock(pos) == "minecraft:air") {
       level.getBlock(pos).set(id);
       level.spawnParticles(

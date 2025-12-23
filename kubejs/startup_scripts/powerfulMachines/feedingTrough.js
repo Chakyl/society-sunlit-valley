@@ -62,7 +62,7 @@ global.runFeedingTrough = (be, inventory, block, level) => {
   let feedCount = 0;
 
   let nearbyFarmAnimals;
-  let day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+  let day = global.getDay(level);
   nearbyFarmAnimals = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(radius))
     .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));

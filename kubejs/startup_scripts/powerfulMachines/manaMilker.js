@@ -11,10 +11,18 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .soundType("copper")
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.mana_milker.description").gray());
-      item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      item.tooltip(Text.translatable("society.working_block_entity.need_mana").aqua());
-      item.tooltip(Text.translatable("tooltip.society.area", `10x10x10`).green());
+      item.tooltip(
+        Text.translatable("block.society.mana_milker.description").gray()
+      );
+      item.tooltip(
+        Text.translatable("society.working_block_entity.can_use_hopper").green()
+      );
+      item.tooltip(
+        Text.translatable("society.working_block_entity.need_mana").aqua()
+      );
+      item.tooltip(
+        Text.translatable("tooltip.society.area", `10x10x10`).green()
+      );
       item.modelJson({
         parent: "society:block/mana_milker",
       });
@@ -29,11 +37,13 @@ StartupEvents.registry("block", (event) => {
         let nearbyFarmAnimals;
         nearbyFarmAnimals = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
-          .filter((entity) => global.checkEntityTag(entity, "society:milkable_animal"));
+          .filter((entity) =>
+            global.checkEntityTag(entity, "society:milkable_animal")
+          );
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
           if (mana >= MANA_PER_MILK) {
-            const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+            const day = global.getDay(level);
             let milkItem = global.getMilk(level, animal, data, undefined, day);
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);
@@ -69,9 +79,13 @@ StartupEvents.registry("block", (event) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
+          .getSlotLimit((blockEntity, slot) =>
+            blockEntity.inventory.getSlotLimit(slot)
+          )
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
+          .getStackInSlot((blockEntity, slot) =>
+            blockEntity.inventory.getStackInSlot(slot)
+          )
       );
       blockInfo.attachCapability(
         BotaniaCapabilityBuilder.MANA.blockEntity()

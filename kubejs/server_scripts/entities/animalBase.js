@@ -66,20 +66,95 @@ const handleFarmAnimalBackwardsCompat = (target, day) => {
     data.ageLastFed = newDay;
   }
 };
-
+const checkAnimal = (
+  player,
+  level,
+  server,
+  data,
+  name,
+  mood,
+  hearts,
+  color
+) => {
+  const nameColor = color || "#55FF55";
+  const heartsToDisplay = 10;
+  let icons = [];
+  if (mood < 64) icons.push("☹");
+  if (mood > 160) icons.push("☺");
+  if (data.animalCracker) icons.push("🡅");
+  if (data.clockwork) icons.push("⚙");
+  if (data.bff) icons.push("❤");
+  if (data.bribed) icons.push("💰");
+  let iconString = "";
+  icons.forEach((icon, index) => {
+    iconString += icon;
+    if (index < icons.length - 1) iconString += " ";
+  });
+  global.renderUiText(
+    player,
+    server,
+    {
+      animalNameIcons: {
+        type: "text",
+        x: 0,
+        y: -88,
+        text: iconString,
+        color: nameColor,
+        alignX: "center",
+        alignY: "bottom",
+      },
+      animalName: {
+        type: "text",
+        x: 0,
+        y: -78,
+        text: `${name}`,
+        color: nameColor,
+        alignX: "center",
+        alignY: "bottom",
+      },
+      animalNameShadow: {
+        type: "text",
+        x: 1,
+        z: -1,
+        y: -77,
+        text: name,
+        color: "#000000",
+        alignX: "center",
+        alignY: "bottom",
+      },
+      affection: {
+        type: "text",
+        x: 0,
+        y: -66,
+        text: `§c${
+          hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""
+        }§0${
+          hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
+        }`,
+        color: "#FFAA00",
+        alignX: "center",
+        alignY: "bottom",
+      },
+      affectionShadow: {
+        type: "text",
+        x: 1,
+        z: -1,
+        y: -65,
+        text: `❤`.repeat(heartsToDisplay),
+        color: "#000000",
+        alignX: "center",
+        alignY: "bottom",
+      },
+    },
+    global.mainUiElementIds
+  );
+  debug && debugData(player, level, data, hearts);
+};
 const handlePet = (name, data, mood, day, peckish, hungry, e) => {
   const { player, item, target, level, server } = e;
   const ageLastPet = data.getInt("ageLastPet");
   const affection = data.getInt("affection");
-  const heartsToDisplay = 10;
   let hearts = Math.floor(affection / 100);
-  let nameColor = "#55FF55";
-  if (peckish) {
-    nameColor = "#FFAA00";
-  }
-  if (hungry) {
-    nameColor = "#FF5555";
-  }
   if (hearts > 10) hearts = 10;
   else if (hearts < 0) hearts = 0;
   let affectionIncreaseMult =
@@ -94,7 +169,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
   let errorText = "";
 
   if (day > ageLastPet) {
-    const livableArea = global.getAnimalIsNotCramped(target, 1.1);
+    let livableArea = global.getAnimalIsNotCramped(target, 1.1);
     if (!player.isFake()) {
       debug &&
         player.tell(
@@ -122,7 +197,10 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     );
     global.giveExperience(server, player, "husbandry", 10);
     if (!livableArea && !data.clockwork) {
-      errorText = Text.translatable("society.husbandry.crowded", `${name}`).getString();
+      errorText = Text.translatable(
+        "society.husbandry.crowded",
+        `${name}`
+      ).getString();
     }
     if (
       !hungry &&
@@ -132,83 +210,38 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     ) {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
-          player.username, 
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100}`, 
-          40, 
+          player.username,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100}`,
+          40,
           Text.translatable("society.husbandry.peckish", `${name}`).getString()
         )
       );
     }
     if (hungry) {
-      errorText = Text.translatable("society.husbandry.starved", `${name}`).getString();
+      errorText = Text.translatable(
+        "society.husbandry.starved",
+        `${name}`
+      ).getString();
     }
     if (errorText && !player.isFake()) {
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, global.animalMessageSettings, 40, errorText)
+        global.getEmbersTextAPICommand(
+          player.username,
+          global.animalMessageSettings,
+          40,
+          errorText
+        )
       );
     }
   } else if (item === "minecraft:air") {
-    global.renderUiText(
-      player,
-      server,
-      {
-        animalNameIcons: {
-          type: "text",
-          x: 0,
-          y: -88,
-          text: `${mood < 64 ? "☹ " : ""}${mood > 160 ? "☺ " : ""}${data.clockwork ? "⚙" : ""}${data.bff ? "❤" : ""}${
-            data.bribed && data.clockwork ? " " : ""
-          }${data.bribed ? "💰" : ""}`,
-          color: nameColor,
-          alignX: "center",
-          alignY: "bottom",
-        },
-        animalName: {
-          type: "text",
-          x: 0,
-          y: -78,
-          text: `${name}`,
-          color: nameColor,
-          alignX: "center",
-          alignY: "bottom",
-        },
-        animalNameShadow: {
-          type: "text",
-          x: 1,
-          z: -1,
-          y: -77,
-          text: name,
-          color: "#000000",
-          alignX: "center",
-          alignY: "bottom",
-        },
-        affection: {
-          type: "text",
-          x: 0,
-          y: -66,
-          text: `§c${
-            hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""
-          }§0${
-            hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
-          }`,
-          color: "#FFAA00",
-          alignX: "center",
-          alignY: "bottom",
-        },
-        affectionShadow: {
-          type: "text",
-          x: 1,
-          z: -1,
-          y: -65,
-          text: `❤`.repeat(heartsToDisplay),
-          color: "#000000",
-          alignX: "center",
-          alignY: "bottom",
-        },
-      },
-      global.mainUiElementIds
-    );
-    debug && debugData(player, level, data, hearts);
+    let nameColor;
+    if (peckish) {
+      nameColor = "#FFAA00";
+    }
+    if (hungry) {
+      nameColor = "#FF5555";
+    }
+    checkAnimal(player, level, server, data, name, mood, hearts, nameColor);
   }
   // Raise Max health
   const affectionHealth = hearts * 4;
@@ -249,15 +282,29 @@ const handleMilk = (name, data, day, hungry, e) => {
       0.01
     );
   } else if (target.isBaby()) {
-    errorText = Text.translatable("society.husbandry.action.young", `${name}`).getString();
+    errorText = Text.translatable(
+      "society.husbandry.action.young",
+      `${name}`
+    ).getString();
   } else if (hungry) {
-    errorText = Text.translatable("society.husbandry.action.hungry", `${name}`).getString();
+    errorText = Text.translatable(
+      "society.husbandry.action.hungry",
+      `${name}`
+    ).getString();
   } else {
-    errorText = Text.translatable("society.husbandry.action.cooldown_1", `${name}`).getString();
+    errorText = Text.translatable(
+      "society.husbandry.action.cooldown_1",
+      `${name}`
+    ).getString();
   }
   if (errorText && !player.isFake()) {
     server.runCommandSilent(
-      global.getEmbersTextAPICommand(player.username, global.animalMessageSettings, 20, errorText)
+      global.getEmbersTextAPICommand(
+        player.username,
+        global.animalMessageSettings,
+        20,
+        errorText
+      )
     );
   }
 };
@@ -366,17 +413,132 @@ const handleMagicHarvest = (name, data, e) => {
     }
     global.addItemCooldown(player, item, 1);
   } else {
-    errorText = Text.translatable("society.husbandry.action.cooldown_2", `${name}`).getString();
+    errorText = Text.translatable(
+      "society.husbandry.action.cooldown_2",
+      `${name}`
+    ).getString();
     if (hearts < 5) {
-      errorText = Text.translatable("society.husbandry.action.need_hearts", `${name}`).getString();
+      errorText = Text.translatable(
+        "society.husbandry.action.need_hearts",
+        `${name}`
+      ).getString();
     }
     if (!player.isFake())
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, global.animalMessageSettings, 40, errorText)
+        global.getEmbersTextAPICommand(
+          player.username,
+          global.animalMessageSettings,
+          40,
+          errorText
+        )
       );
     global.addItemCooldown(player, item, 10);
   }
 };
+
+const handleSpecialItem = (
+  data,
+  day,
+  chance,
+  hungry,
+  minHearts,
+  mult,
+  item,
+  hasQuality,
+  plushieModifiers,
+  e
+) => {
+  const { player, target, level, server } = e;
+  let affection;
+  let mood;
+  let resolvedItem = item;
+  let resolvedChance = chance;
+  if (plushieModifiers) {
+    affection = 1000;
+    mood = 256;
+    resolvedChance = chance + plushieModifiers.probabilityIncrease;
+    if (plushieModifiers.processItems) {
+      let processOutput = global.mayonnaiseMachineRecipes.get(item);
+      if (processOutput) {
+        resolvedItem = Item.of(processOutput.output[0]).id;
+      }
+    }
+  } else {
+    affection = data.getInt("affection") || 0;
+    mood = global.getOrFetchMood(level, target, day, player);
+  }
+  let hearts = Math.floor(affection / 100);
+
+  let quality = 0;
+
+  if (
+    (!hungry || plushieModifiers) &&
+    hearts >= minHearts &&
+    Math.random() <= resolvedChance
+  ) {
+    if (item.includes("large")) {
+      if (Math.random() > (mood + hearts * 10) / 256) {
+        return;
+      }
+    }
+    if (plushieModifiers) {
+      data.affection =
+        affection + (player.stages.has("animal_whisperer") ? 20 : 10);
+    }
+    let specialItem = level.createEntity("minecraft:item");
+    if (hasQuality && mood >= 160) {
+      quality = global.getHusbandryQuality(hearts, mood);
+    }
+    specialItem.x = player.x;
+    specialItem.y = player.y;
+    specialItem.z = player.z;
+    specialItem.item = Item.of(
+      `${
+        mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1)
+      }x ${resolvedItem}`,
+      quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
+    );
+    specialItem.spawn();
+    server.runCommandSilent(
+      `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
+    );
+    global.giveExperience(server, player, "husbandry", 60);
+    if (target.x) {
+      level.spawnParticles(
+        "farmersdelight:star",
+        true,
+        target.x,
+        target.y + 1,
+        target.z,
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        3,
+        0.01
+      );
+    }
+  }
+};
+
+const upgradeAnimal = (level, server, item, target, sound, particle) => {
+  item.count--;
+  server.runCommandSilent(
+    `playsound ${sound} block @a ${target.x} ${target.y} ${target.z}`
+  );
+  level.spawnParticles(
+    particle,
+    true,
+    target.x,
+    target.y + 1.5,
+    target.z,
+    0.2 * rnd(0, 2),
+    0.2 * rnd(0, 2),
+    0.2 * rnd(0, 2),
+    3,
+    0.01
+  );
+};
+
 global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   const pet = global.checkEntityTag(target, "society:pet_animal");
   const eventData = {
@@ -392,13 +554,10 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   if (item.id === "society:sunlit_crystal") return;
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
-      const day = Number(
-        (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
-      );
+      const day = global.getDay(level);
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
-      const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
         name = global.getTranslatedEntityName(String(target.type)).getString();
@@ -415,13 +574,23 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       if (pet) return;
       if (item.hasTag("society:animal_feed") && !pet)
         handleFeed(data, day, eventData);
-
-      if (
-        !lostProduce &&
-        item === "society:milk_pail" &&
-        global.checkEntityTag(target, "society:milkable_animal")
-      ) {
-        handleMilk(name, data, day, hungry, eventData);
+      if (!lostProduce) {
+        if (
+          item === "society:milk_pail" &&
+          global.checkEntityTag(target, "society:milkable_animal")
+        ) {
+          handleMilk(name, data, day, hungry, eventData);
+        }
+        global.handleSpecialHarvest(
+          level,
+          target,
+          player,
+          server,
+          undefined,
+          undefined,
+          undefined,
+          handleSpecialItem
+        );
       }
       if (
         player.stages.has("biomancer") &&
@@ -445,10 +614,13 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (hearts < 5) {
           server.runCommandSilent(
             global.getEmbersTextAPICommand(
-              player.username, 
-              global.animalMessageSettings, 
-              40, 
-              Text.translatable("society.husbandry.action.need_hearts", `${name}`).getString()
+              player.username,
+              global.animalMessageSettings,
+              40,
+              Text.translatable(
+                "society.husbandry.action.need_hearts",
+                `${name}`
+              ).getString()
             )
           );
         } else {
@@ -512,33 +684,43 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         !data.clockwork
       ) {
         data.clockwork = true;
-        item.count--;
-        server.runCommandSilent(
-          `playsound trials:vault_activate block @a ${player.x} ${player.y} ${player.z}`
-        );
-        level.spawnParticles(
-          "supplementaries:bomb_explosion",
-          true,
-          target.x,
-          target.y + 1.5,
-          target.z,
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          3,
-          0.01
+        upgradeAnimal(
+          level,
+          server,
+          item,
+          target,
+          "trials:vault_activate",
+          "supplementaries:bomb_explosion"
         );
         if (data.bff) {
           data.bff = false;
           server.runCommandSilent(
             global.getEmbersTextAPICommand(
-              player.username, 
-              global.animalMessageSettings, 
-              80, 
+              player.username,
+              global.animalMessageSettings,
+              80,
               Text.translatable("society.husbandry.mechanization").getString()
             )
           );
         }
+      }
+      if (
+        player.stages.has("husbandry_mastery") &&
+        item === "society:animal_cracker" &&
+        !data.animalCracker
+      ) {
+        data.animalCracker = true;
+        server.runCommandSilent(
+          `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
+        );
+        upgradeAnimal(
+          level,
+          server,
+          item,
+          target,
+          "stardew_fishing:chest_get",
+          "farmersdelight:star"
+        );
       }
       if (
         mood > 160 &&
@@ -547,29 +729,21 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         !data.bff
       ) {
         data.bff = true;
-        if (!player.isCreative()) item.count--;
-        server.runCommandSilent(
-          `playsound legendarycreatures:wisp_idle block @a ${player.x} ${player.y} ${player.z}`
-        );
-        level.spawnParticles(
-          "buzzier_bees:buttercup_bloom",
-          true,
-          target.x,
-          target.y + 1.5,
-          target.z,
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          10,
-          0.01
+        upgradeAnimal(
+          level,
+          server,
+          item,
+          target,
+          "legendarycreatures:wisp_idle",
+          "buzzier_bees:buttercup_bloom"
         );
         if (data.clockwork) {
           data.clockwork = false;
           server.runCommandSilent(
             global.getEmbersTextAPICommand(
-              player.username, 
-              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`, 
-              80, 
+              player.username,
+              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+              80,
               Text.translatable("society.husbandry.emancipation").getString()
             )
           );
@@ -611,7 +785,138 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
     }
   });
 };
+
 ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
   global.handleHusbandryBase(hand, player, item, target, level, server);
+});
+
+BlockEvents.rightClicked((e) => {
+  const { level, hand, player, item, server, block } = e;
+  if (hand == "OFF_HAND") return;
+  if (!block.hasTag("society:plushies")) return;
+  let nbt = block.getEntityData();
+  const { animal } = nbt.data;
+  if (!animal) return;
+  if (item === "minecraft:air") {
+    checkAnimal(
+      player,
+      level,
+      server,
+      animal,
+      animal.name ||
+        global.getTranslatedEntityName(String(animal.type)).getString(),
+      256,
+      10
+    );
+  }
+  global.executePlushieHusbandry(
+    level,
+    server,
+    player,
+    item,
+    block,
+    handleSpecialItem
+  );
+  if (
+    player.stages.has("clockwork") &&
+    item === "create:precision_mechanism" &&
+    !animal.clockwork
+  ) {
+    nbt.merge({
+      data: {
+        animal: {
+          clockwork: true,
+        },
+      },
+    });
+    upgradeAnimal(
+      level,
+      server,
+      item,
+      block,
+      "trials:vault_activate",
+      "supplementaries:bomb_explosion"
+    );
+    if (animal.bff) {
+      nbt.merge({
+        data: {
+          animal: {
+            bff: false,
+          },
+        },
+      });
+      server.runCommandSilent(
+        global.getEmbersTextAPICommand(
+          player.username,
+          global.animalMessageSettings,
+          80,
+          Text.translatable("society.husbandry.mechanization").getString()
+        )
+      );
+    }
+  }
+  if (
+    player.stages.has("husbandry_mastery") &&
+    item === "society:animal_cracker" &&
+    !animal.animalCracker
+  ) {
+    nbt.merge({
+      data: {
+        animal: {
+          animalCracker: true,
+        },
+      },
+    });
+    server.runCommandSilent(
+      `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
+    );
+    upgradeAnimal(
+      level,
+      server,
+      item,
+      block,
+      "stardew_fishing:chest_get",
+      "farmersdelight:star"
+    );
+  }
+  if (
+    player.stages.has("bff") &&
+    item === "society:friendship_necklace" &&
+    !animal.bff
+  ) {
+    nbt.merge({
+      data: {
+        animal: {
+          bff: true,
+        },
+      },
+    });
+    upgradeAnimal(
+      level,
+      server,
+      item,
+      block,
+      "legendarycreatures:wisp_idle",
+      "buzzier_bees:buttercup_bloom"
+    );
+    if (animal.clockwork) {
+      nbt.merge({
+        data: {
+          animal: {
+            clockwork: false,
+          },
+        },
+      });
+      server.runCommandSilent(
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+          80,
+          Text.translatable("society.husbandry.emancipation").getString()
+        )
+      );
+    }
+  }
+  block.setEntityData(nbt);
 });

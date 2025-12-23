@@ -6,10 +6,14 @@ BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
   let errorText;
   const attachedBlock = global.getTapperLog(level, block);
   if (global.hasMultipleTappers(level, block)) {
-    errorText = Text.translatable("block.society.tapper.too_many_tapper").getString();
+    errorText = Text.translatable(
+      "block.society.tapper.too_many_tapper"
+    ).getString();
   }
   if (!attachedBlock.hasTag("society:tappable_blocks")) {
-    errorText = Text.translatable("block.society.tapper.invalid_block").getString();
+    errorText = Text.translatable(
+      "block.society.tapper.invalid_block"
+    ).getString();
   }
   if (errorText) {
     global.renderUiText(

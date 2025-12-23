@@ -12,28 +12,33 @@ const getRequestedItems = (type, population) => {
 
 const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
-  let fishName = type
-    .path
-    .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
+  let fishName = type.path.replace(/^_*(.)|_+(.)/g, (s, c, d) =>
+    c ? c.toUpperCase() : " " + d.toUpperCase()
+  );
   if (fishName.includes("Raw ")) {
     if (fishName === "Raw Snowflake") fishName = "Frosty Fin";
     else fishName = fishName.substring(4, fishName.length);
   }
   let fishIcons = "";
-  let translatedFishName = global.getTranslatedItemName(type, fishName).getString();
+  let translatedFishName = global
+    .getTranslatedItemName(type, fishName)
+    .getString();
 
   for (let index = 0; index < maxPopulation; index++) {
     if (index < population) fishIcons += "§3🐟§r";
     else fishIcons += "§7🐟§r";
   }
-  const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
-  const pondHeaderText = 
-    Text.empty().gray()
-      .append(Text.of(`==[ `))
-      .append(Text.green(upgrade)).append(" ")
-      .append(Text.translatable("block.society.fish_pond").darkAqua())
-      .append(" ").append(Text.green(upgrade))
-      .append(Text.of(` ]==`));
+  const upgrade =
+    block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
+  const pondHeaderText = Text.empty()
+    .gray()
+    .append(Text.of(`==[ `))
+    .append(Text.green(upgrade))
+    .append(" ")
+    .append(Text.translatable("block.society.fish_pond").darkAqua())
+    .append(" ")
+    .append(Text.green(upgrade))
+    .append(Text.of(` ]==`));
 
   global.renderUiText(
     player,
@@ -117,7 +122,8 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
       const mature = properties.get("mature").toLowerCase();
       const valid = properties.get("valid").toLowerCase();
       const quest = properties.get("quest").toLowerCase();
-      const { type, population, max_population, quest_id } = block.getEntityData().data;
+      const { type, population, max_population, quest_id } =
+        block.getEntityData().data;
       if (mature == "false") {
         if (!type.equals("")) {
           sendFishPondMessage(e, type, population, max_population);
@@ -127,15 +133,24 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
           );
         }
         if (!type.equals("") && item && item.hasTag("minecraft:fishes")) {
-          if (type !== item.id) player.tell(Text.translatable("block.society.fish_pond.cross_type_fish").red());
+          if (type !== item.id)
+            player.tell(
+              Text.translatable("block.society.fish_pond.cross_type_fish").red()
+            );
         }
       }
       if (mature === "false" && quest === "true") {
         const questContent = getRequestedItems(type, max_population)[quest_id];
         if (questContent) {
           const questItem = Item.of(questContent.item).displayName;
+          let checkedCount = player.stages.has("pond_house_five")
+            ? Math.round(questContent.count / 2)
+            : questContent.count;
           player.tell(
-            Text.translatable("block.society.fish_pond.fish_quest", Text.darkAqua(`${questContent.count}`)).green()
+            Text.translatable(
+              "block.society.fish_pond.fish_quest",
+              Text.darkAqua(`${checkedCount}`)
+            ).green()
           );
           player.tell(questItem);
         }

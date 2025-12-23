@@ -45,6 +45,36 @@ global.husbandryAnimals = [
   "windswept:frostbiter",
 ];
 
+global.milkableAnimals = [
+  "minecraft:cow",
+  "minecraft:goat",
+  "minecraft:sheep",
+  "meadow:wooly_sheep",
+  "meadow:wooly_cow",
+  "meadow:water_buffalo",
+  "minecraft:mooshroom",
+  "buzzier_bees:moobloom",
+  "species:mammutilation",
+  "farmlife:domestic_tribull",
+  "wildernature:minisheep",
+  "wildernature:bison",
+  "minecraft:squid",
+  "minecraft:glow_squid",
+  "windswept:frostbiter",
+];
+
+global.coopMasterAnimals = [
+  "minecraft:chicken",
+  "untitledduckmod:duck",
+  "untitledduckmod:goose",
+  "etcetera:chapple",
+  "autumnity:turkey",
+  "species:wraptor",
+  "wildernature:flamingo",
+  "wildernature:penguin",
+  "farmlife:galliraptor",
+];
+
 global.tierTwoHusbandryAnimals = [
   "minecraft:pig",
   "meadow:wooly_cow",
@@ -81,8 +111,7 @@ global.coldMobs = [
   "wildernature:penguin",
   "snowpig:snow_pig",
   "snuffles:snuffle",
-
-]
+];
 
 global.hotMobs = [
   "species:wraptor",
@@ -91,5 +120,5 @@ global.hotMobs = [
   "crittersandcompanions:red_panda",
   "species:goober",
   "minecraft:sniffer",
-]
+];
 global.animalMessageSettings = `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-80}`;

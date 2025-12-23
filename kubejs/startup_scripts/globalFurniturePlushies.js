@@ -747,6 +747,11 @@ global.originalPlushies = [
   "kata:jungle_kata_doll",
   "kata:prince_kata_doll",
   "kata:geraldine_plushie",
+  "cluttered:pastel_bunny_plushie",
+  "cluttered:sand_seal_plush_blue",
+  "cluttered:sand_seal_plush_green",
+  "cluttered:sand_seal_plush_red",
+  "cluttered:teddy_bear",
 ];
 
 global.plushies = [];

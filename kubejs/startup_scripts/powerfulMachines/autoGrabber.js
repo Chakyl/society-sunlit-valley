@@ -9,15 +9,37 @@ const handleAutoGrabSpecialItem = (
   mult,
   item,
   hasQuality,
+  plushieModifiers,
   e
 ) => {
   const { player, target, level, server, block, inventory } = e;
-  const affection = data.getInt("affection") || 0;
-  const mood = global.getOrFetchMood(level, target, day, player);
-  let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  let affection;
+  let mood;
+  let resolvedItem = item;
+  let resolvedChance = chance;
+  if (plushieModifiers) {
+    affection = 1000;
+    mood = 256;
+    resolvedChance = chance + plushieModifiers.probabilityIncrease;
+    if (plushieModifiers.processItems) {
+      let processOutput = global.mayonnaiseMachineRecipes.get(item);
+      if (processOutput) {
+        resolvedItem = Item.of(processOutput.output[0]).id;
+      }
+    }
+  } else {
+    affection = data.getInt("affection") || 0;
+    mood = global.getOrFetchMood(level, target, day, player);
+  }
+  let hearts = Math.floor(affection / 100);
+
   let quality = 0;
 
-  if (!hungry && hearts >= minHearts && Math.random() <= chance) {
+  if (
+    (!hungry || plushieModifiers) &&
+    hearts >= minHearts &&
+    Math.random() <= resolvedChance
+  ) {
     if (item.includes("large") && Math.random() > (mood + hearts * 10) / 256) {
       return;
     }
@@ -25,7 +47,9 @@ const handleAutoGrabSpecialItem = (
       quality = global.getHusbandryQuality(hearts, mood);
     }
     let specialItem = Item.of(
-      `${mult}x ${item}`,
+      `${
+        mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1)
+      }x ${resolvedItem}`,
       quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
     );
     let specialItemResultCode = global.insertBelow(level, block, specialItem);
@@ -33,45 +57,69 @@ const handleAutoGrabSpecialItem = (
       if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
         console.error("Sparkstone not consumed when it should have been!");
       server.runCommandSilent(
-        `playsound stardew_fishing:dwop block @a ${target.x} ${target.y} ${target.z}`
+        `playsound stardew_fishing:dwop block @a ${block.x} ${block.y} ${block.z}`
       );
-      level.spawnParticles(
-        "farmersdelight:star",
-        true,
-        target.x,
-        target.y + 1,
-        target.z,
-        0.2 * rnd(1, 4),
-        0.2 * rnd(1, 4),
-        0.2 * rnd(1, 4),
-        3,
-        0.01
-      );
+      if (target.x) {
+        level.spawnParticles(
+          "farmersdelight:star",
+          true,
+          target.x,
+          target.y + 1,
+          target.z,
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          3,
+          0.01
+        );
+      }
     }
   }
 };
 
-global.autoGrabAnimal = (entity, player, animal) => {
+global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
   const { inventory, block, level } = entity;
-  let data = animal.persistentData;
-  const day = Number(
-    (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
-  );
-  const mood = global.getOrFetchMood(level, target, day, player);
-  const hungry = day - data.getInt("ageLastFed") > 1;
+  let data;
+  let nbt;
+  if (plushieModifiers) {
+    nbt = animal.getEntityData();
+    data = nbt.data.animal;
+  } else {
+    data = animal.persistentData;
+  }
+  const day = global.getDay(level);
+  let mood;
+  let hungry;
+  if (plushieModifiers) {
+    hungry = false;
+    mood = 256;
+  } else {
+    hungry = day - data.getInt("ageLastFed") > 1;
+    mood = global.getOrFetchMood(level, target, day, player);
+  }
   if (mood < 64 && Math.random() < mood / 64) return;
   if (!hungry) {
     if (
-      global.checkEntityTag(animal, "society:milkable_animal") &&
+      (plushieModifiers
+        ? global.milkableAnimals.includes(data.type)
+        : global.checkEntityTag(animal, "society:milkable_animal")) &&
       global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
     ) {
-      let milkItem = global.getMilk(level, animal, data, player, day);
+      let milkItem = global.getMilk(
+        level,
+        plushieModifiers ? data : animal,
+        data,
+        player,
+        day,
+        false,
+        plushieModifiers
+      );
       if (milkItem !== -1) {
         let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
         if (insertedMilk) {
           if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
             console.error("Sparkstone not consumed when it should have been!");
-          if (!global.getAnimalIsNotCramped(animal, 1.1))
+          if (!plushieModifiers && !global.getAnimalIsNotCramped(animal, 1.1))
             data.affection = data.getInt("affection") - 50;
           level.server.runCommandSilent(
             `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
@@ -88,19 +136,40 @@ global.autoGrabAnimal = (entity, player, animal) => {
             5,
             0.01
           );
+          if (plushieModifiers) {
+            nbt.merge({
+              data: {
+                animal: {
+                  ageLastMilked: day,
+                },
+              },
+            });
+            animal.setEntityData(nbt);
+          }
         }
       }
     }
     if (global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1) {
       global.handleSpecialHarvest(
         level,
-        animal,
+        plushieModifiers ? data : animal,
         player,
         player.server,
         block,
         inventory,
+        plushieModifiers,
         handleAutoGrabSpecialItem
       );
+      if (plushieModifiers) {
+        nbt.merge({
+          data: {
+            animal: {
+              ageLastDroppedSpecial: day,
+            },
+          },
+        });
+        animal.setEntityData(nbt);
+      }
     }
     if (
       level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
@@ -131,6 +200,7 @@ global.autoGrabAnimal = (entity, player, animal) => {
     }
   }
 };
+
 global.runAutoGrabber = (entity) => {
   const { block, level } = entity;
   let radius = 5;
@@ -157,14 +227,15 @@ global.runAutoGrabber = (entity) => {
       [x + radius, y + radius, z + radius]
     )) {
       scanBlock = level.getBlock(pos);
-      if (scanBlock.hasTag("society:animal_bed")) {
+      if (scanBlock.hasTag("society:plushies")) {
         let nbt = scanBlock.getEntityData();
-        let animal = undefined;
-        let { boundToAnimal, animalInside, entityID } = nbt.data;
-        if (boundToAnimal && animalInside) {
-          animal = level.createEntity(entityID.toString());
-          animal.nbt = nbt.data.entity;
-          global.autoGrabAnimal(entity, attachedPlayer, animal);
+        if (nbt.data.animal) {
+          global.autoGrabAnimal(
+            entity,
+            attachedPlayer,
+            scanBlock,
+            global.getPlushieModifiers(level, nbt.data, block)
+          );
         }
       }
     }
@@ -180,11 +251,27 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 30, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.auto_grabber.description").gray());
-      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
-      item.tooltip(Text.translatable("block.society.auto_grabber.description.upgrade").gold());
-      item.tooltip(Text.translatable("tooltip.society.area", `11x11x11`).green());
-      item.tooltip(Text.translatable("block.society.auto_grabber.description.fuel").lightPurple());
+      item.tooltip(
+        Text.translatable("block.society.auto_grabber.description").gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "society.working_block_entity.apply_player_skill"
+        ).gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.auto_grabber.description.upgrade"
+        ).gold()
+      );
+      item.tooltip(
+        Text.translatable("tooltip.society.area", `11x11x11`).green()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.auto_grabber.description.fuel"
+        ).lightPurple()
+      );
       item.modelJson({
         parent: "society:block/auto_grabber",
       });

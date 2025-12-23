@@ -20,6 +20,9 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:the_spark_also_rises", skillId: "n3wgu1edjjl2t511" },
   { id: "society:universal_methods_of_farming", skillId: "dm3efjm3y57v34ir" },
   { id: "society:wuthering_logs", skillId: "y1xltbgkupmcoe0i" },
+  { id: "society:pond_house_five", skillId: "ajxn495vvckv1pow" },
+  { id: "society:the_red_and_the_black", skillId: "ysthrzir822oedus" },
+  { id: "society:women_who_run_with_the_plushies", skillId: "2vo8noqvq4aj1egy" },
 ].forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;

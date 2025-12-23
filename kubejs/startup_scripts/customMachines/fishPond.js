@@ -26,7 +26,13 @@ global.handleFishInsertion = (clickEvent) => {
       quest: false,
     });
     nbt.merge({
-      data: { type: item.id, quest_id: 0, population: 1, max_population: 3, non_native_fish: 1 },
+      data: {
+        type: item.id,
+        quest_id: 0,
+        population: 1,
+        max_population: 3,
+        non_native_fish: 1,
+      },
     });
     block.setEntityData(nbt);
     if (!player.isCreative()) item.count--;
@@ -62,9 +68,14 @@ global.handleQuestSubmission = (type, clickEvent) => {
   const { facing, valid, mature, upgraded } = global.getPondProperties(block);
   let nbt = block.getEntityData();
   const { max_population, quest_id } = nbt.data;
-  const questContent = getRequestedItems(type, Number(max_population))[quest_id];
+  const questContent = getRequestedItems(type, Number(max_population))[
+    quest_id
+  ];
   if (item && item == questContent.item) {
-    if (item.count >= questContent.count) {
+    let checkedCount = player.stages.has("pond_house_five")
+      ? Math.round(questContent.count / 2)
+      : questContent.count;
+    if (item.count >= checkedCount) {
       successParticles(level, block);
       block.set(block.id, {
         facing: facing,
@@ -76,19 +87,32 @@ global.handleQuestSubmission = (type, clickEvent) => {
       nbt.merge({
         data: {
           quest_id: 0,
-          max_population: increaseStage(max_population, Number(max_population) === 7 ? 3 : 2),
+          max_population: increaseStage(
+            max_population,
+            Number(max_population) === 7 ? 3 : 2
+          ),
         },
       });
 
       block.setEntityData(nbt);
+      if (!player.stages.has("pond_house_five") && Math.random() <= 0.01) {
+        block.popItemFromFace("society:pond_house_five", facing);
+      }
       clickEvent.server.scheduleInTicks(2, () => {
-        player.tell(Text.translatable("block.society.fish_pond.fish_quest.complete").green());
+        player.tell(
+          Text.translatable(
+            "block.society.fish_pond.fish_quest.complete"
+          ).green()
+        );
       });
-      if (!player.isCreative()) item.count = item.count - questContent.count;
+      if (!player.isCreative()) item.count = item.count - checkedCount;
     } else {
       clickEvent.server.scheduleInTicks(2, () => {
         player.tell(
-          Text.translatable("block.society.fish_pond.fish_quest.partial", `${questContent.count - item.count}`).red()
+          Text.translatable(
+            "block.society.fish_pond.fish_quest.partial",
+            `${checkedCount - item.count}`
+          ).red()
         );
       });
     }
@@ -97,7 +121,8 @@ global.handleQuestSubmission = (type, clickEvent) => {
 
 global.handleFishPondRightClick = (clickEvent) => {
   const { item, block, hand, player, server, level } = clickEvent;
-  const { facing, valid, mature, upgraded, quest } = global.getPondProperties(block);
+  const { facing, valid, mature, upgraded, quest } =
+    global.getPondProperties(block);
   // Prevent Deployers from using artisan machines
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
@@ -153,7 +178,9 @@ global.handleFishPondRightClick = (clickEvent) => {
             },
           });
         } else {
-          player.tell(Text.translatable("block.society.fish_pond.fishing_rod").red());
+          player.tell(
+            Text.translatable("block.society.fish_pond.fishing_rod").red()
+          );
         }
       }
     } else if (population > 0) {

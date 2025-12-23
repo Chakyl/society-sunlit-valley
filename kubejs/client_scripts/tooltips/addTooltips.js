@@ -14,11 +14,13 @@ ItemEvents.tooltip((tooltip) => {
           text.add(2, [
             Text.translate(`society.item.plushie.trait.description`).darkGray(),
           ]);
-          text.add(3, [
-            Text.translate(
-              `society.item.plushie.${type.trait}.description`
-            ).gray(),
-          ]);
+          let description = Text.translate(
+            `society.item.plushie.${type.trait}.description`
+          )
+            .getString()
+            .split("\n");
+          text.add(3, [Text.gray(description[0])]);
+          text.add(4, [description[1]]);
         } else {
           if (item.nbt.getCompound("quality_food"))
             text.add(1, [
@@ -58,7 +60,7 @@ ItemEvents.tooltip((tooltip) => {
             ).gray(),
           ]);
           if (item.nbt.animal) {
-          let animal = item.nbt.getCompound("animal");
+            let animal = item.nbt.getCompound("animal");
             text.add(4, [
               Text.translatable("tooltip.society.plushies.animal_type"),
               Text.translate(
@@ -247,6 +249,19 @@ ItemEvents.tooltip((tooltip) => {
     {
       item: "society:universal_methods_of_farming",
       description: "The Market sells all basic seeds in every season.",
+    },
+    {
+      item: "society:the_red_and_the_black",
+      description: "Geodes, loot items, and Slot Machines drop one more item.",
+    },
+    {
+      item: "society:pond_house_five",
+      description: "Fish Ponds will ask for half the items.",
+    },
+    {
+      item: "society:women_who_run_with_the_plushies",
+      description:
+        "Plushies will start at 3 hearts of affection. Increases rates of high quality Plushies.",
     },
   ].forEach((book) => {
     tooltip.add(

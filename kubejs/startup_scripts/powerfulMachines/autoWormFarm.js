@@ -19,6 +19,7 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(1200, 0, (entity) => {
         const { x, y, z } = entity.block;
+        if (entity.tick < 20) return;
         entity.inventory.insertItem("aquaculture:worm", false);
         entity.level.server.runCommandSilent(
           `playsound minecraft:block.composter.fill block @a ${x} ${y} ${z}`

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 // Priority: 1000
-
+global.getDay = (level) =>
+  Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 const artMachineTickRate = 20;
 
 const artMachineProgTime = 20;
@@ -1161,4 +1162,23 @@ const getCardinalMultipartJson = (name, disableExclamation) => {
     .concat(exclamationJson)
     .concat(offJson)
     .concat(doneJson);
+};
+
+global.getTaggedBlocksInRadius = (level, scanTag, centerPos, radius, returnTagged) => {
+  const { x, y, z } = centerPos;
+  let scanBlock;
+  let scannedBlocks = 0;
+  let taggedBlocks = [];
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(x - radius, y - radius, z - radius),
+    [x + radius, y + radius, z + radius]
+  )) {
+    scanBlock = level.getBlock(pos);
+    if (scanBlock.hasTag(scanTag)) {
+      scannedBlocks++;
+      if (returnTagged) taggedBlocks.push(scanBlock.id);
+    }
+  }
+  if (returnTagged) return taggedBlocks;
+  return scannedBlocks;
 };

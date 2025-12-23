@@ -165,9 +165,9 @@ global.handleShippingBinDebt = (
     }
   }
   if (debtPaid > 0) {
-    const receiptAuthor = Text.translatable("society.hospital_receipt.author").getString();
-    const receiptText = Text.translatable("society.shipping_bin.debt_paid_note", player.username, global.formatPrice(debtPaid.toFixed()), global.formatPrice(totalDebt.toFixed())).getString();
-    const receiptTitle = Text.translatable("society.shipping_bin.debt_paid_note.title").getString();
+    let receiptAuthor = Text.translatable("society.hospital_receipt.author").getString();
+    let receiptText = Text.translatable("society.shipping_bin.debt_paid_note", player.username, global.formatPrice(debtPaid.toFixed()), global.formatPrice(totalDebt.toFixed())).getString();
+    let receiptTitle = Text.translatable("society.shipping_bin.debt_paid_note.title").getString();
     receipt = global.getNotePaperItem(receiptAuthor, receiptText, receiptTitle);
     if (extenalOutput) {
       block.popItemFromFace(receipt, block.properties.get("facing"));

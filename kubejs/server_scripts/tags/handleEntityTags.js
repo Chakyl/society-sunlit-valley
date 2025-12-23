@@ -6,36 +6,11 @@ ServerEvents.tags("entity_type", (e) => {
     e.add("society:husbandry_animal", animal);
   });
 
-  [
-    "minecraft:cow",
-    "minecraft:goat",
-    "minecraft:sheep",
-    "meadow:wooly_sheep",
-    "meadow:wooly_cow",
-    "meadow:water_buffalo",
-    "minecraft:mooshroom",
-    "buzzier_bees:moobloom",
-    "species:mammutilation",
-    "farmlife:domestic_tribull",
-    "wildernature:minisheep",
-    "wildernature:bison",
-    "minecraft:squid",
-    "minecraft:glow_squid",
-    "windswept:frostbiter",
-  ].forEach((animal) => {
+  global.milkableAnimals.forEach((animal) => {
     e.add("society:milkable_animal", animal);
   });
-  [
-    "minecraft:chicken",
-    "untitledduckmod:duck",
-    "untitledduckmod:goose",
-    "etcetera:chapple",
-    "autumnity:turkey",
-    "species:wraptor",
-    "wildernature:flamingo",
-    "wildernature:penguin",
-    "farmlife:galliraptor",
-  ].forEach((animal) => {
+  
+  global.coopMasterAnimals.forEach((animal) => {
     e.add("society:coopmaster_bird", animal);
   });
   
