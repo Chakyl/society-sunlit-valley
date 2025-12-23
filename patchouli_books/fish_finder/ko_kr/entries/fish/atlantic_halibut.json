@@ -1,0 +1,18 @@
+{
+  "name": "대서양가자미",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:atlantic_halibut",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 232$(li)\u00a70\ud83c\udf3c \u00a72봄\u00a70$(li)수역: 바다$(li)날씨: 비, 눈$(li)시간: 낮"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:atlantic_halibut",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "청어랑 헷갈리면 안 돼요."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "가지 🍂",
+  "category": "patchouli:crops",
+  "icon": "society:eggplant",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 42$(li)🍂 §4가을$(li)씨앗 가격: :coin: 8$(li)수확량: 1$(li)성장 시간: 6일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "가지 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "society:eggplant[age=6]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

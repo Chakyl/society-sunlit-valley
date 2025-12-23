@@ -1,0 +1,17 @@
+{
+  "name": "라쿤",
+  "category": "patchouli:animals",
+  "icon": "furniture:trash_bag",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)채집: ...쓰레기?$(li)드롭 아이템: 빈 깡통$(br2)$(l)메모$()$(br)호감도 3하트 이상부터 채집 가능. 평원 생물군계에 출현."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:raccoon",
+      "scale": 0.7,
+      "text": "부패 슬라임의 제일가는 친구!"
+    }
+  ]
+}

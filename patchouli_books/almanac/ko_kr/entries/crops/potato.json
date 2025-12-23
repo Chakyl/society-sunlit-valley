@@ -1,0 +1,26 @@
+{
+  "name": "감자 🌼",
+  "category": "patchouli:crops",
+  "icon": "minecraft:potato",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)🌼 §2봄$(li)씨앗 가격: :coin: 2$(li)수확량: 1-2$(li)성장 시간: 7일$(br2)$(l)메모$()$(br)낮은 확률로 독이 든 감자를 얻을 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "감자 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "minecraft:potatoes[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

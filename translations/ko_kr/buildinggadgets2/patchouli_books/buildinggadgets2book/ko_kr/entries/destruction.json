@@ -1,0 +1,26 @@
+{
+    "name": "파괴 가젯",
+    "sortnum": 5,
+    "category": "buildinggadgets2:gadgets",
+    "icon": "buildinggadgets2:gadget_destruction{energy:1000000}",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "파괴 가젯은 넓은 영역을 매우 쉽게 정리할 수 있게 해줍니다. 정리된 모든 블록은 $(bold)삭제됩니다!$(clear). $(br2)먼저 설정 메뉴를 열고 영역을 조정합니다. 이 영역은 보고 있는 블록(및 블록 면)을 기준으로 합니다. $(br2)선택 영역에서 '위/앞'은 플레이어의 화면을 기준으로 합니다."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "파괴 영역",
+            "images": [
+                "buildinggadgets2:textures/book/images/destruction1.png",
+                "buildinggadgets2:textures/book/images/destruction2.png"
+            ],
+            "border": true,
+            "text": "파괴 영역의 작동 방식. 화살표를 클릭하여 비교해 보세요!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "설정에 만족하면 블록을 우클릭하여 강조 표시된 모든 블록을 삭제합니다. 블록은 제거되고, 아이템을 떨구지 않습니다. $(br2)실수를 했다면 이 액션을 되돌릴 수 있습니다. 가젯이 삭제된 블록을 원래대로 되돌리기만 하므로 보관함에서 아이템을 소비하지 않습니다."
+        }
+    ]
+}

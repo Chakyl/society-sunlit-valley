@@ -1,0 +1,84 @@
+{
+    "name": "짙은 사과나무 🍂",
+    "category": "patchouli:trees",
+    "icon": "vinery:apple_tree_sapling",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🍂 §4가을§r $(li)가격: :coin: 256$(li)크기: 1x1$(li)결실:$(l:tree_crops/apple)사과$(/l)$(br2)$(l)메모$()$(li)시장에서 묘목을 구매할 수 있습니다. 커다랗게 자라기도 합니다."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "사과나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  1  ",
+                        " 102 ",
+                        "  3  ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        " 131 ",
+                        " 1W2 ",
+                        " 322 ",
+                        "     "
+                    ],
+                    [
+                        " 1213",
+                        "21231",
+                        "32W11",
+                        "11231",
+                        "2311 "
+                    ],
+                    [
+                        "3312 ",
+                        "31231",
+                        "12W21",
+                        "12331",
+                        "12313"
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vinery:apple_leaves[has_apples=false]",
+                    "1": "vinery:apple_leaves[has_apples=false]",
+                    "2": "vinery:apple_leaves[can_grow_apples=true, has_apples=true]",
+                    "3": "vinery:apple_leaves[can_grow_apples=true]",
+                    "W": "vinery:apple_log"
+                }
+            }
+        }
+    ]
+}

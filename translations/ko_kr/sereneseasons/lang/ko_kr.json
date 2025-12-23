@@ -1,0 +1,43 @@
+{
+  "commands.sereneseasons.usage": "/season <get/set> [args]",
+  "commands.sereneseasons.getseason.success": "현재 계절: %s, %s/%s일, %s/%s틱",
+  "commands.sereneseasons.setseason.success": "계절 변경됨: %s",
+  "commands.sereneseasons.setseason.fail": "잘못된 계절: %s",
+  "commands.sereneseasons.setseason.disabled": "계절 시스템이 비활성화 되어 있습니다!",
+
+  "gamerule.doSeasonCycle": "계절이 흐르도록 합니다.",
+  "itemGroup.tabSereneSeasons": "Serene Seasons",
+
+  "block.sereneseasons.season_sensor": "계절 감지기",
+  
+  "item.sereneseasons.ss_icon": "SS 아이콘",
+  "item.sereneseasons.calendar": "달력",
+
+  "desc.sereneseasons.fertile_seasons": "성장 계절",
+  "desc.sereneseasons.year_round": "연중",
+  "desc.sereneseasons.day_counter": "%s/%s일",
+  "desc.sereneseasons.tropical_day_counter": " (%s/%s)일",
+  "desc.sereneseasons.spring": "봄",
+  "desc.sereneseasons.early_spring": "초봄",
+  "desc.sereneseasons.mid_spring": "한봄",
+  "desc.sereneseasons.late_spring": "늦봄",
+  "desc.sereneseasons.summer": "여름",
+  "desc.sereneseasons.early_summer": "초여름",
+  "desc.sereneseasons.mid_summer": "한여름",
+  "desc.sereneseasons.late_summer": "늦여름",
+  "desc.sereneseasons.autumn": "가을",
+  "desc.sereneseasons.early_autumn": "초가을",
+  "desc.sereneseasons.mid_autumn": "한가을",
+  "desc.sereneseasons.late_autumn": "늦가을",
+  "desc.sereneseasons.winter": "겨울",
+  "desc.sereneseasons.early_winter": "초겨울",
+  "desc.sereneseasons.mid_winter": "한겨울",
+  "desc.sereneseasons.late_winter": "늦겨울",
+  
+  "desc.sereneseasons.early_wet": "우기 초반",
+  "desc.sereneseasons.mid_wet": "우기 중반",
+  "desc.sereneseasons.late_wet": "우기 후반",
+  "desc.sereneseasons.early_dry": "건기 초반",
+  "desc.sereneseasons.mid_dry": "건기 중반",
+  "desc.sereneseasons.late_dry": "건기 후반"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "갈리랩터",
+  "category": "patchouli:animals",
+  "icon": "farmlife:galliraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 갈리랩터 알$(li)드롭 아이템: 갈리랩터 고기, 깃털$(br2)$(l)메모$()$(br)테라스틸 집적 판에서 연성하는 마법의 동물. 배고픈 갈리랩터는 알을 낳지 않습니다. 행복하지 않은 갈리랩터는 알을 적게 낳습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:galliraptor",
+      "scale": 0.7,
+      "text": "선사시대 생물인가, 역사시대 생물인가?"
+    }
+  ]
+}

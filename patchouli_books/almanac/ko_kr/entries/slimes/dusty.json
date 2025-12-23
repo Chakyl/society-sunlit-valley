@@ -1,0 +1,17 @@
+{
+  "name": "모래",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)생물군계: 사막 동굴, 사막 단층 (해골 광산)$(li)채굴 지점: 모래, 돌 블록$(br2)$(l)주의사항:$()$(br)기분이 나쁠 때 경련 효과를 부여하고 번개를 떨굽니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "모래 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:dusty\"}",
+      "scale": 0.9
+    }
+  ]
+}

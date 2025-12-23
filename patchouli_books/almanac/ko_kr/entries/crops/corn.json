@@ -1,0 +1,26 @@
+{
+  "name": "옥수수 🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:corn",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 28$(li)🔥 §6여름§r 🍂 §4가을$(li)씨앗 가격: :coin: 4$(li)수확량: 1$(li)성장 시간: 4일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "옥수수 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:corn_crop[age=4]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

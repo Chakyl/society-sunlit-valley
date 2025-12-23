@@ -1,0 +1,18 @@
+{
+  "name": "갈색시루마",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:brown_shrooma",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 264$(li)\u00a70\u2746 \u00a7b겨울\u00a70$(li)수역: 바다$(li)날씨: 비, 눈$(li)시간: 언제나"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:brown_shrooma",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "습한 곳에서 살아서 버섯이 자랐나봅니다."
+    }
+  ]
+}

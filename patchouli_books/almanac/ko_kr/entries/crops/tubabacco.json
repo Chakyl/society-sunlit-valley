@@ -1,0 +1,26 @@
+{
+  "name": "투바바코 🌼❆",
+  "category": "patchouli:crops",
+  "icon": "society:tubabacco_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 87$(li)🌼 §2봄§r ❆ §b겨울$(li)씨앗 가격: :coin: 512$(li)수확량: 1$(li)성장 시간: 9일$(br2)$(l)메모$()$(br)달인 재배자에게서 씨앗을 구매할 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "투바바코 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "society:tubabacco_leaf[age=9]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

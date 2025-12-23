@@ -1,0 +1,26 @@
+{
+  "name": "콜리플라워 🌼",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:cauliflower",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 48$(li)🌼 §2봄§r$(li)씨앗 가격: :coin: 6$(li)수확량: 2$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "콜리플라워 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:cauliflower_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

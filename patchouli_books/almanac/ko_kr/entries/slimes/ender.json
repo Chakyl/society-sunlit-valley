@@ -1,0 +1,17 @@
+{
+  "name": "엔더",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)구조물: 그림자 불모지 슬라임 생성기 (해골 광산)$(br2)$(l)주의사항:$()$(br)엔티티를 자신에게 순간 이동시키거나, 먹을 것이 있는 곳으로 순간 이동합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "엔더 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:ender\"}",
+      "scale": 0.9
+    }
+  ]
+}

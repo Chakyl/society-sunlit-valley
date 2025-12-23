@@ -1,0 +1,19 @@
+{
+  "name": "글로우다인",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:glowdine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 448$(li)차원: 네더$(li)생물군계: 뒤틀린 숲"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:glowdine",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "어항에 넣으면 조명이 필요없겠어요."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+    "name": "노란색 단풍나무 🌐",
+    "category": "patchouli:trees",
+    "icon": "autumnity:yellow_maple_sapling",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l)정보$()$(li)🌐 §5연중§r$(li)크기: 1x1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name ": "노란색 단풍나무",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "  LL ",
+                        " L0L ",
+                        " LL  ",
+                        "     "
+                    ],
+                    [
+                        "  L  ",
+                        "LLLL ",
+                        "LLLLL",
+                        " LLL ",
+                        "  L  "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        " LLL ",
+                        "LLLLL",
+                        "LLWLL",
+                        "LLLLL",
+                        " LLL "
+                    ],
+                    [
+                        " LL  ",
+                        "LLLLL",
+                        "LLWLL",
+                        " LLLL",
+                        " LL  "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "     ",
+                        "     ",
+                        "  W  ",
+                        "     ",
+                        "     "
+                    ]
+                ],
+                "mapping": {
+                    "0": "autumnity:yellow_maple_leaves",
+                    "L": "autumnity:yellow_maple_leaves",
+                    "W": "autumnity:maple_log[axis=y]"
+                }
+            }
+        }
+    ]
+}

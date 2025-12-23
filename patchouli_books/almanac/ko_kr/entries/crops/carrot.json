@@ -1,0 +1,26 @@
+{
+  "name": "당근 🌼🍂",
+  "category": "patchouli:crops",
+  "icon": "minecraft:carrot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 23$(li)🌼 §2봄§r 🍂 §4가을$(li)씨앗 가격: :coin: 2$(li)수확량: 1-3$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "당근 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "minecraft:carrots[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

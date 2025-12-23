@@ -1,0 +1,19 @@
+{
+  "name": "블레이즈피시",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:blazefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 408$(li)차원: 네더$(li)생물군계: 전체"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:blazefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "우라늄처럼 열량은 높겠네요."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "펭귄",
+  "category": "patchouli:animals",
+  "icon": "society:penguin_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 펭귄 알$(li)드롭 아이템: 깃털$(br2)$(l)메모$()$(br)호감도 2하트 이상부터 산란. 얼어붙은 바다 또는 역고드름 생물군계에 출현." 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:penguin",
+      "scale": 0.5,
+      "text": "마다가스카에는 가고 싶지 않을 겁니다"
+    }
+  ]
+}

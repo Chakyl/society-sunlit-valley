@@ -1,0 +1,19 @@
+{
+  "name": "호박망둥이",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_amber_goby",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 288$(li)\u00a70\ud83c\udf42 \u00a74가을\u00a70$(li)수역: 담수$(li)날씨: 맑음$(li)시간: 밤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:amber_goby",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.3,
+      "text": "그대의 머릿결처럼 붉은 색이오."
+    }
+  ]
+}

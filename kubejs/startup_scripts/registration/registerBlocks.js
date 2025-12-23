@@ -109,7 +109,7 @@ StartupEvents.registry("block", (e) => {
     .mapColor("stone")
     .soundType("stone")
     .hardness(1.0)
-    .resistance(1.0)
+    .resistance(3600000.0)
     .lightLevel(1)
     .requiresTool(false);
 

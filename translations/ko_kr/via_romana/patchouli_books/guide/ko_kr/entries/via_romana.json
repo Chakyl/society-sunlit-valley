@@ -1,0 +1,43 @@
+{
+    "name": "로마의 길",
+    "icon": "minecraft:oak_sign",
+    "sortnum": 2,
+    "priority": true,
+    "category": "via_romana:default",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "이 가이드는 경로를 건설하고, 연결하거나 해제하고, 두 지점 사이를 빠르게 이동하는 방법을 알려줍니다."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "경로 설정",
+            "item": "minecraft:dirt_path",
+            "text": "경로가 유효하려면 충분히 많은 $(thing)인프라 블록$()이 있어야 합니다. 경로에 자연 블록이 너무 많으면 유효하지 않습니다. JEI에 #path_block을 검색하여 도로로 인정되는 블록을 볼 수 있습니다."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "표지판 연결",
+            "item": "minecraft:oak_sign",
+            "text": "경로가 유효한 경우, 먼 거리에 떨어진 두 표지판을 연결할 수 있습니다.$(br2)표지판을 연결하려면 연결하려는 표지판을 $(thing)웅크리기 + 공격$()한 다음, 도착 지점의 표지판을 $(thing)웅크리기 + 공격$()하십시오."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "표지판 연결 해제",
+            "item": "minecraft:iron_axe",
+            "text": "$(thing)웅크리기 + 파괴$()로 연결된 표지판을 부술 수 있습니다. 이렇게 하면 반대쪽에서 연결된 표지판의 연결도 해제됩니다."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "경로 상태",
+            "item": "minecraft:barrier",
+            "text": "경로에 문제가 있는 경우 경고가 표시됩니다. 경로가 유효하면 완료 시 표지판이 연결됩니다."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "빠른 이동",
+            "item": "minecraft:leather_boots",
+            "text": "연결된 두 표지판 사이를 빠른 이동하려면 연결된 표지판을 $(thing)공격$()하면 연결된 다른 표지판으로 순간이동됩니다."
+        }
+    ]
+}

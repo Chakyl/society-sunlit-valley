@@ -1,0 +1,22 @@
+{
+    "text.entityculling.title": "개체 컬링",
+    "key.entityculling.toggle": "디버그 토글 컬링",
+    "key.entityculling.toggleBoxes": "컬링 상자 표시",
+    "text.entityculling.tab.general_options": "일반",
+    "text.entityculling.tab.tick_culling": "틱 컬링 건너뛰기",
+    "text.entityculling.tab.tick_culling.tooltip": "이 탭에서 선택한 개체는 컬링될 때 틱 메서드가 최적화되지 않습니다. 이는 보트와 같이 틱 처리가 필요한 개체에 유용합니다.",
+    "text.entityculling.tab.entity_culling": "개체 건너뛰기",
+    "text.entityculling.tab.entity_culling.tooltip": "이 탭에서 선택한 개체는 전혀 컬링되지 않습니다. 이는 주로 클라이언트 측 개체 또는 가시성에 관계없이 렌더링해야 하는 개체에 필요합니다.",
+    "text.entityculling.tab.block_entity_culling": "블록 개체 건너뛰기.",
+    "text.entityculling.tab.block_entity_culling.tooltip": "이 탭에서 선택한 블록 개체는 전혀 컬링되지 않습니다. 이는 주로 가시성에 관계없이 렌더링해야 하는 블록 개체에 필요합니다.",
+    "text.entityculling.renderNametagsThroughWalls": "벽을 통해 이름표 렌더링",
+    "text.entityculling.renderNametagsThroughWalls.tooltip": "이 기능을 끄면,",
+    "text.entityculling.tickCulling": "틱 컬링",
+    "text.entityculling.tickCulling.tooltip": "이 기능을 켜면,",
+    "text.entityculling.disableF3": "F3 디버그 정보 비활성화",
+    "text.entityculling.disableF3.tooltip": "이 기능을 켜면,",
+    "text.entityculling.skipEntityCulling": "개체 컬링 건너뛰기",
+    "text.entityculling.skipEntityCulling.tooltip": "이 기능을 켜면,",
+    "text.entityculling.skipBlockEntityCulling": "블록 개체 컬링 건너뛰기",
+    "text.entityculling.skipBlockEntityCulling.tooltip": "이 기능을 켜면,"
+}

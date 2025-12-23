@@ -1,0 +1,19 @@
+{
+  "name": "마그마큐브피시",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:magmacubefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 620$(li)차원: 네더$(li)생물군계: 현무암 삼각주"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:magmacubefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "용암 속에서 통통 튑니다."
+    }
+  ]
+}

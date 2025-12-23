@@ -1,0 +1,17 @@
+{
+  "name": "블레이즈",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)생물군계: 흑암 동굴 (해골 광산)$(li)구조물: 네더 요새 또는 보루 잔해 전리품 상자, 네더 슬라임 생성기$(li)채굴 지점: 네더 블록$(br2)$(l)주의사항:$()$(br)배고플 때 주변에 불을 붙이고 기분이 나쁠 때 화염 피해가 상승합니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "블레이즈 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:blazing\"}",
+      "scale": 0.9
+    }
+  ]
+}

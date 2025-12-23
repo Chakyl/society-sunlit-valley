@@ -1,0 +1,17 @@
+{
+  "name": "닭",
+  "category": "patchouli:animals",
+  "icon": "minecraft:egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: :coin: 256$(li)산란: 달걀$(li)드롭 아이템: 닭고기, 깃털$(br2)$(l)메모$()$(br)배고픈 닭은 알을 낳지 않습니다. 행복하지 않은 닭은 알을 적게 낳습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:chicken",
+      "scale": 0.8,
+      "text": "이 얌전한 새는 밥만 잘 챙겨주면 만족합니다."
+    }
+  ]
+}

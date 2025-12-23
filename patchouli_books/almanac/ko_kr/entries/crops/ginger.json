@@ -1,0 +1,26 @@
+{
+  "name": "생강 ❆",
+  "category": "patchouli:crops",
+  "icon": "snowyspirit:ginger",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 24$(li)❆ §b겨울$(li)씨앗 가격: :coin: 4$(li)수확량: 1$(li)성장 시간: 7일"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "생강 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "snowyspirit:ginger[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "스너플",
+  "category": "patchouli:animals",
+  "icon": "snuffles:snuffle_fluff",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가위질 드랍: 스너플 솜털, 서리가 내린 솜털, 고운 털, 얼어붙은 털 $(li)드롭 아이템: 얼어붙은 눈물$(br2)$(l)메모$()$(br)호감도 5하트 이상부터 고운 털 생산. 7하트 이상부터 얼어붙은 털 생산. 털은 긴 시간 후에 다시 자라며, 눈을 맞으면 서리가 내립니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "snuffles:snuffle",
+      "scale": 0.8,
+      "text": "슬라임볼로 헤어스타일을 바꿔줄 수 있습니다!"
+    }
+  ]
+}

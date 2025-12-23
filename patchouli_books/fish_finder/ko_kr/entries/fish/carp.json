@@ -1,0 +1,18 @@
+{
+  "name": "잉어",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:carp",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 40$(li)연중$(li)수역: 담수$(li)날씨: 비 (봄), 언제나 (여름, 가을, 겨울)$(li)시간: 낮 (봄, 여름, 가을), 밤 (겨울)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:carp",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "잉잉잉."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "횃불꽃 🔥",
+  "category": "patchouli:crops",
+  "icon": "minecraft:torchflower",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 128$(li)🔥 §6여름§r$(li)수확량: 1$(li)성장 시간: 4일$(br2)$(l)메모$()$(br)씨앗은 스니퍼가 찾을 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "횃불꽃 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "minecraft:torchflower",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

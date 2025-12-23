@@ -1,0 +1,26 @@
+{
+  "name": "루이보스 🔥",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:rooibos_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li):coin: 8$(li)🔥 §6여름$(li)수확량: 2$(li)성장 시간: 3일$(br2)$(l)메모$()$(br)사바나 생물군계에서 발견 가능.$(br)씨앗이 따로 없기 때문에 잎을 심으면 됩니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "루이보스 작물",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "herbalbrews:rooibos_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "오비",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:orby\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)획득처:$()$(li)구조물: 고대 도시$(br2)$(l)주의사항:$()$(br)힘 I 효과를 가지고 있고, 기분이 나쁠 때 어둠 효과를 부여합니다. 다른 슬라임의 부정적 효과를 긍정적으로 만듭니다. 아이템을 손에 들 수 있고, 죽을 때까지 내려놓지 않습니다."
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "오비 슬라임",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:orby\"}",
+      "scale": 0.9
+    }
+  ]
+}
