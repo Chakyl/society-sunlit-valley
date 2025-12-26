@@ -63,7 +63,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.wine_keg.description").gray());
+      item.tooltip(
+        Text.translatable("block.society.wine_keg.description").gray()
+      );
       item.modelJson({
         parent: "society:block/wine_keg/wine_keg",
       });
@@ -106,7 +108,13 @@ StartupEvents.registry("block", (event) => {
           upgraded: true,
         });
       }
-
+      if (
+        block.properties.get("upgraded") === "true" &&
+        block.properties.get("mature") === "true" &&
+        rnd5()
+      ) {
+        block.popItemFromFace("society:relic_trove", facing);
+      }
       global.handleBERightClick(
         "minecraft:block.wood.place",
         click,

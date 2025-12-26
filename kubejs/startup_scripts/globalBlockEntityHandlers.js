@@ -164,6 +164,7 @@ global.artisanHarvest = (
   let hasQuality = newProperties.quality && newProperties.quality !== "0";
   if (block.properties.get("mature").toLowerCase() === "true") {
     let harvestOutput;
+    let hopperOutputs = [];
     if (!artisanHopper) {
       global.giveExperience(server, player, "farming", stageCount * 20);
       server.runCommandSilent(
@@ -187,8 +188,11 @@ global.artisanHarvest = (
       }
       if (outputMult > 1)
         harvestOutput.count = harvestOutput.count * outputMult;
-      if (!artisanHopper)
+      if (!artisanHopper) {
         block.popItemFromFace(harvestOutput, block.properties.get("facing"));
+      } else {
+        hopperOutputs.push(harvestOutput);
+      }
       nbt.merge({ data: { stage: 0, recipe: "" } });
       block.setEntityData(nbt);
       newProperties.working = false;
@@ -197,7 +201,7 @@ global.artisanHarvest = (
       if (newProperties.quality) newProperties.quality = "0";
       block.set(block.id, newProperties);
     });
-    if (artisanHopper) return harvestOutput;
+    if (artisanHopper) return hopperOutputs;
   }
 };
 // Converted
@@ -558,6 +562,16 @@ global.inventoryBelowHasRoom = (level, block, item) => {
   const belowPos = block.getPos().below();
   const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
   return global.inventoryHasRoom(belowBlock, item);
+};
+
+global.inventoryBelowHasRoomForAll = (level, block, items) => {
+  const belowPos = block.getPos().below();
+  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+  let hasRoom = true;
+  items.forEach((item) => {
+    if (!global.inventoryHasRoom(belowBlock, item)) hasRoom = false;
+  });
+  return hasRoom;
 };
 /**
  * @returns result code:
@@ -1028,6 +1042,7 @@ global.getCropQuality = (crop) => {
     false
   );
   const seedQuality = qualityToInt(qualityName);
+  console.log(seedQuality);
   const goldChance =
     0.2 * ((seedQuality * 4.6) / 10) +
     0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
@@ -1164,7 +1179,13 @@ const getCardinalMultipartJson = (name, disableExclamation) => {
     .concat(doneJson);
 };
 
-global.getTaggedBlocksInRadius = (level, scanTag, centerPos, radius, returnTagged) => {
+global.getTaggedBlocksInRadius = (
+  level,
+  scanTag,
+  centerPos,
+  radius,
+  returnTagged
+) => {
   const { x, y, z } = centerPos;
   let scanBlock;
   let scannedBlocks = 0;

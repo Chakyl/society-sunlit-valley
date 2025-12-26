@@ -36,7 +36,11 @@ global.handleAdditionalArtisanMachineOutputs = (
     case "society:crystalarium": {
       if (upgraded && rnd10()) {
         recipes[type - 1].output.forEach((item) => {
-          global.insertBelow(level, block, `society:pristine_${String(Item.of(item).id).path}`);
+          global.insertBelow(
+            level,
+            block,
+            `society:pristine_${String(Item.of(item).id).path}`
+          );
         });
       }
       break;
@@ -50,6 +54,12 @@ global.handleAdditionalArtisanMachineOutputs = (
     case "society:aging_cask": {
       if (stages.has("aged_prize") && rnd5()) {
         global.insertBelow(level, block, "society:prize_ticket");
+      }
+      break;
+    }
+    case "society:wine_keg": {
+      if (upgraded && rnd5()) {
+        global.insertBelow(level, block, "society:relic_trove");
       }
       break;
     }
@@ -107,6 +117,13 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
         recipes: global.crystalariumCrystals,
         stageCount: 5,
         soundType: "minecraft:block.amethyst_block.step",
+      };
+      break;
+    case "society:wine_keg":
+      machineData = {
+        recipes: global.wineKegRecipes,
+        stageCount: 6,
+        soundType: "minecraft:block.wood.place",
       };
       break;
     case "society:aging_cask":
@@ -235,7 +252,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       `${upgraded && season === "winter" ? 3 : 1}x society:battery`
     );
     if (loadedData) {
-      const {
+      let {
         recipes,
         stageCount,
         multipleInputs,
@@ -243,29 +260,30 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         outputMult,
         soundType,
       } = loadedData;
-      const hasInfinityWorm =
+      let hasInfinityWorm =
         artisanMachine.id === "society:deluxe_worm_farm" && upgraded;
-      let machineOutput;
+      let machineOutputs;
       let type;
       let newProperties = artisanMachine.getProperties();
       let recycleSparkstone;
 
       if (
         newProperties.get("mature").toLowerCase() === "true" &&
-        global.inventoryBelowHasRoom(
-          level,
-          block,
-          artisanMachine.id === "society:charging_rod"
-            ? chargingRodOutput
-            : recipes.get(recipe).output[0]
-        ) &&
+        (artisanMachine.id === "society:charging_rod"
+          ? global.inventoryBelowHasRoom(level, block, chargingRodOutput)
+          : recipes.has(recipe) &&
+            global.inventoryBelowHasRoomForAll(
+              level,
+              block,
+              recipes.get(recipe).output
+            )) &&
         global.hasInventoryItems(inventory, "society:sparkstone", 1)
       ) {
         server.runCommandSilent(
           `playsound stardew_fishing:dwop block @a ${x} ${y} ${z}`
         );
         if (artisanMachine.id === "society:charging_rod") {
-          machineOutput = chargingRodOutput;
+          machineOutputs.push(chargingRodOutput);
           artisanMachine.set(artisanMachine.id, {
             working: false,
             mature: false,
@@ -273,7 +291,9 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else if (hasInfinityWorm) {
-          machineOutput = Item.of("4x crabbersdelight:deluxe_crab_trap_bait");
+          machineOutputs.push(
+            Item.of("4x crabbersdelight:deluxe_crab_trap_bait")
+          );
           artisanMachine.set(artisanMachine.id, {
             facing: artisanMachine.properties.get("facing"),
             type: "1",
@@ -284,7 +304,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
           });
         } else {
           if (nbt.data.type != 0) type = Number(nbt.data.type);
-          machineOutput = global.artisanHarvest(
+          machineOutputs = global.artisanHarvest(
             artisanMachine,
             recipes,
             stageCount,
@@ -294,14 +314,16 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
           );
         }
 
-        if (machineOutput) {
+        if (machineOutputs && machineOutputs.length > 0) {
           recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
           if (
             artisanMachine.id === "society:dehydrator" &&
             upgraded &&
-            global.dehydratableMushroomOutputs.includes(machineOutput.id)
+            global.dehydratableMushroomOutputs.includes(machineOutputs[0].id)
           ) {
-            machineOutput.count = 2;
+            machineOutputs.forEach((output) => {
+              output.count = 2;
+            });
           }
           if (
             artisanMachineCanHaveAdditionalOutput.includes(artisanMachine.id)
@@ -336,30 +358,26 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               0.01
             );
           }
-          let specialItemResultCode = global.insertBelow(
-            level,
-            block,
-            machineOutput
+          machineOutputs.forEach((output) => {
+            global.insertBelow(level, block, output);
+          });
+          level.spawnParticles(
+            "species:ascending_dust",
+            true,
+            x,
+            y + 1,
+            z,
+            0.2 * rnd(1, 1.5),
+            0.2 * rnd(1, 1.5),
+            0.2 * rnd(1, 1.5),
+            3,
+            0.01
           );
-          if (specialItemResultCode == 1) {
-            level.spawnParticles(
-              "species:ascending_dust",
-              true,
-              x,
-              y + 1,
-              z,
-              0.2 * rnd(1, 1.5),
-              0.2 * rnd(1, 1.5),
-              0.2 * rnd(1, 1.5),
-              3,
-              0.01
-            );
-          }
         }
       }
 
-      const abovePos = block.getPos().above();
-      const aboveBlock = level.getBlock(abovePos.x, abovePos.y, abovePos.z);
+      let abovePos = block.getPos().above();
+      let aboveBlock = level.getBlock(abovePos.x, abovePos.y, abovePos.z);
 
       if (
         recipes &&
@@ -368,7 +386,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         aboveBlock.inventory &&
         !aboveBlock.inventory.isEmpty()
       ) {
-        const slots = aboveBlock.inventory.getSlots();
+        let slots = aboveBlock.inventory.getSlots();
         let slotStack;
         let outputCount;
         for (let i = 0; i < slots; i++) {
@@ -473,10 +491,20 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.artisan_hopper.description").gray());
-      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
+      item.tooltip(
+        Text.translatable("block.society.artisan_hopper.description").gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "society.working_block_entity.apply_player_skill"
+        ).gray()
+      );
       item.tooltip(Text.translatable("tooltip.society.area", `7x7x7`).green());
-      item.tooltip(Text.translatable("block.society.artisan_hopper.description.fuel").lightPurple());
+      item.tooltip(
+        Text.translatable(
+          "block.society.artisan_hopper.description.fuel"
+        ).lightPurple()
+      );
       item.modelJson({
         parent: "society:block/artisan_hopper",
       });
@@ -516,10 +544,20 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.artisan_hopper.description").gray());
-      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
+      item.tooltip(
+        Text.translatable("block.society.artisan_hopper.description").gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "society.working_block_entity.apply_player_skill"
+        ).gray()
+      );
       item.tooltip(Text.translatable("tooltip.society.area", `3x3x3`).green());
-      item.tooltip(Text.translatable("block.society.artisan_hopper.description.fuel").lightPurple());
+      item.tooltip(
+        Text.translatable(
+          "block.society.artisan_hopper.description.fuel"
+        ).lightPurple()
+      );
       item.modelJson({
         parent: "society:block/mini_artisan_hopper",
       });

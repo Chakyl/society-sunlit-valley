@@ -40,6 +40,54 @@
     }
   ],
   "lookup_history": [
+    "item:copycats:copycat_vertical_stairs",
+    "item:copycats:copycat_stairs",
+    "item:rehooked:diamond_hook",
+    "item:society:gray_anatomy",
+    "item:society:wine_keg",
+    "item:society:aging_cask",
+    "item:vinery:fermentation_barrel",
+    "item:rehooked:red_hook",
+    "item:society:animal_cracker",
+    "item:society:feeding_trough",
+    "item:society:grimwood_supply_crate",
+    {
+      "type": "item",
+      "id": "alloy_smelter:forge_controller_tier1",
+      "amount": 63
+    },
+    {
+      "type": "item",
+      "id": "minecraft:raw_copper",
+      "amount": 64
+    },
+    "item:minecraft:copper_ingot",
+    "item:alloy_smelter:forge_controller_tier3",
+    "item:alloy_smelter:forge_controller_tier2",
+    "item:society:sparkstone",
+    {
+      "type": "item",
+      "id": "society:palm_supply_crate",
+      "amount": 64
+    },
+    "item:moblassos:diamond_lasso",
+    "item:brewery:whiskey_highland_hearth",
+    {
+      "type": "item",
+      "id": "society:aged_whiskey_highland_hearth",
+      "amount": 8
+    },
+    "item:species:werefang",
+    {
+      "type": "item",
+      "id": "society:aged_bolvar_wine",
+      "amount": 6
+    },
+    "item:society:bluegill_roe",
+    "item:society:atlantic_herring_roe",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:mechanic\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:dusty\"}}",
     "item:society:sunlit_crystal",
     "item:society:crystal_of_regret_adventuring",
     "item:society:crystal_of_regret_mining",
@@ -99,7 +147,6 @@
     "item:pamhc2trees:bananaitem",
     "item:pamhc2trees:pambanana",
     "item:society:banana_karenina",
-    "item:society:animal_cracker",
     "item:candlelight:lasagne{StoredEffects:[]}",
     "item:vintagedelight:cucumber_seeds",
     "item:society:heart_of_neptunium",
@@ -137,11 +184,6 @@
     "item:relics:jellyfish_necklace{abilities:{paralysis:{points:0,stats:{duration:0.7109d}},shock:{points:0,stats:{damage:0.69544d},temp:{ticking:1b}}}}",
     {
       "type": "item",
-      "id": "society:bluegill_roe",
-      "amount": 63
-    },
-    {
-      "type": "item",
       "id": "unusualfishmod:tendril",
       "amount": 60
     },
@@ -172,11 +214,6 @@
     },
     "item:society:pufferfish_roe",
     "item:society:aged_atlantic_herring_roe",
-    {
-      "type": "item",
-      "id": "society:atlantic_herring_roe",
-      "amount": 64
-    },
     "item:society:aged_pink_salmon_roe",
     {
       "type": "item",
@@ -338,7 +375,6 @@
     "item:classicpipes:diamond_fluid_pipe",
     "item:classicpipes:brick_fluid_pipe",
     "item:classicpipes:iron_fluid_pipe",
-    "item:society:gray_anatomy",
     {
       "type": "item",
       "id": "vinery:chorus_wine",
@@ -368,7 +404,6 @@
     "item:society:petrified_mayonnaise",
     "item:society:large_galliraptor_mayonnaise",
     "item:society:warped_milk",
-    "item:brewery:whiskey_highland_hearth",
     "item:brewery:whiskey_ak",
     "item:brewery:whiskey_maggoallan",
     "item:vinery:apple_juice",
@@ -402,7 +437,6 @@
       "id": "atmospheric:yucca_fruit",
       "amount": 64
     },
-    "item:society:wine_keg",
     "item:society:mana_feed",
     "item:nethervinery:netherite_nectar",
     "item:minecraft:netherite_ingot",
@@ -694,7 +728,6 @@
     "item:minecraft:furnace",
     "item:oreganized:electrum_ingot",
     "item:minecraft:gold_ingot",
-    "item:minecraft:copper_ingot",
     "item:minecraft:iron_ingot",
     "item:minecraft:raw_iron",
     "item:rsinfinitybooster:infinity_card",

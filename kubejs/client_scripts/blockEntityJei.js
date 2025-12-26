@@ -109,7 +109,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
           else fishId = fishId.substring(4, fishId.length);
         }
         const outputs = [
-          {
+          { 
             item: `society:${fishId}_roe`,
             count: 1,
           },

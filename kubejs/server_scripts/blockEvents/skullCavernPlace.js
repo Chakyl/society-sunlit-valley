@@ -40,7 +40,6 @@ BlockEvents.placed((e) => {
         server.scheduleInTicks(
           block.id === "minecraft:torch" ? 1200 : 200,
           () => {
-            console.log("block place scheduler");
             level.destroyBlock(block.pos, true);
             level.spawnParticles(
               "snowyspirit:glow_light",
