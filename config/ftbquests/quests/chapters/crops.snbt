@@ -769,6 +769,7 @@
 				"16F48C90D9C411FA"
 				"29EA13A93B288D70"
 				"59A219E8E50885CD"
+				"45B303A7A34B4AD8"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -1120,6 +1121,27 @@
 			}]
 			x: -3.5d
 			y: -5.5d
+		}
+		{
+			id: "1817B00DD389CAE3"
+			subtitle: "Optional"
+			tasks: [{
+				id: "712A5AB5AF8E2B18"
+				item: "society:mana_fruit"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			id: "45B303A7A34B4AD8"
+			tasks: [{
+				id: "6B3542F71273325A"
+				item: "society:sparkpod"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
 		}
 	]
 	title: "{ftbquests.chapter.crops.title}"

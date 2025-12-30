@@ -271,7 +271,6 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:plates/silver", "oreganized:silver_sheet");
   e.add("forge:plates", "oreganized:silver_sheet");
   e.add("forge:salt", "meadow:alpine_salt");
-  e.add("forge:crops", "society:ancient_fruit");
   e.add("forge:crops", "society:tubabbaco");
   e.add("forge:crops", "society:eggplant");
   e.add("forge:crops", "farm_and_charm:strawberry");
@@ -343,6 +342,12 @@ ServerEvents.tags("item", (e) => {
     e.add("forge:berries", berry);
     e.add("forge:fruits", berry);
   });
+  ["society:ancient_fruit", "society:mana_fruit", "society:sparkpod"].forEach(
+    (berry) => {
+      e.add("forge:crops", berry);
+      e.add("forge:fruits", berry);
+    }
+  );
   [
     "minecraft:apple",
     "minecraft:sweet_berries",
@@ -580,29 +585,37 @@ ServerEvents.tags("item", (e) => {
   ].forEach((item) => {
     e.add("splendid_slimes:animal_spawn_eggs", item);
   });
+  e.add("society:sellable", "splendid_slimes:plort");
+  e.add("society:sellable", "splendid_slimes:slime_heart");
+  e.add("society:farmer_product", "splendid_slimes:plort");
+  e.add("society:farmer_product", "splendid_slimes:slime_heart");
+  Array.from(global.trades.keys()).forEach((trade) => {
+    if (!trade.includes("plort") && !trade.includes("slime_heart")) {
+      let tradeDef = global.trades.get(trade);
+      e.add("society:sellable", trade);
+      switch (tradeDef.multiplier) {
+        case "shippingbin:crop_sell_multiplier":
+          e.add("society:farmer_product", trade);
+          break;
+        case "shippingbin:gem_sell_multiplier":
+          e.add("society:geologist_product", trade);
+          break;
+        case "shippingbin:wood_sell_multiplier":
+          e.add("society:artisan_product", trade);
+          break;
+        case "shippingbin:meat_sell_multiplier":
+        default:
+          e.add("society:adventurer_product", trade);
+      }
+    }
+  });
 });
 
 ServerEvents.tags("block", (e) => {
   e.add("minecraft:crops", "farmersdelight:tomatoes");
   const buildingGadgetsDeny = [
-    "society:wine_keg",
-    "society:aging_cask",
-    "society:ancient_cask",
-    "society:charging_rod",
     "society:coin_leaderboard",
-    "society:deluxe_worm_farm",
-    "society:fish_pond",
-    "society:loom",
-    "society:crystalarium",
-    "society:espresso_machine",
-    "society:fish_smoker",
-    "society:mayonnaise_machine",
-    "society:preserves_jar",
     "society:prize_machine",
-    "society:seed_maker",
-    "society:dehydrator",
-    "society:recycling_machine",
-    "society:tapper",
     "translocators:item_translocator",
     "cb_multipart:multipart",
     "translocators:fluid_translocator",
@@ -726,6 +739,7 @@ ServerEvents.tags("block", (e) => {
   global.artisanMachineIds.forEach((log) => {
     e.add("society:artisan_machine", log);
     e.add("society:golden_clock_advanced", log);
+    e.add("buildinggadgets2:deny", log);
   });
   const agingCasks = ["society:aging_cask", "society:ancient_cask"];
   agingCasks.forEach((log) => {

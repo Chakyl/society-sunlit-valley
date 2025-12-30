@@ -137,6 +137,8 @@ global.preservesJarRecipes = new Map([
   ["veggiesdelight:zucchini", { output: ["society:zucchini_preserves"] }],
   ["veggiesdelight:turnip", { output: ["society:turnip_preserves"] }],
   ["veggiesdelight:broccoli", { output: ["society:broccoli_preserves"] }],
+  ["society:mana_fruit", { output: ["society:mana_fruit_preserves"] }],
+  ["society:sparkpod", { output: ["society:sparkpod_preserves"] }],
 ]);
 roeFish.forEach((fish) => {
   const splitFish = fish.item.split(":");

@@ -77,8 +77,8 @@ global.ore = [
   { item: "etcetera:raw_bismuth_block", value: 288 },
   { item: "oreganized:raw_lead", value: 48 },
   { item: "oreganized:raw_lead_block", value: 432 },
-  { item: "society:sparkstone", value: 64 },
-  { item: "society:sparkstone_block", value: 576 },
+  { item: "society:sparkstone", value: 16 },
+  { item: "society:sparkstone_block", value: 144 },
   { item: "oreganized:raw_silver", value: 64 },
   { item: "oreganized:raw_silver_block", value: 576 },
   { item: "minecraft:diamond", value: 256 },
@@ -457,6 +457,10 @@ global.crops = [
   { item: "minecraft:pitcher_plant", value: 64 },
   { item: "society:ancient_fruit", value: 128 },
   { item: "society:ancient_fruit_crate", value: 1152 },
+  { item: "society:sparkpod", value: 100 },
+  { item: "society:sparkpod_crate", value: 900 },
+  { item: "society:mana_fruit", value: 256 },
+  { item: "society:mana_fruit_crate", value: 1024 },
   { item: "atmospheric:aloe_leaves", value: 16 },
   { item: "atmospheric:aloe_bundle", value: 144 },
   // Tree fruits
@@ -629,6 +633,8 @@ global.fruits = [
   { item: "pamhc2trees:pawpawitem", value: 80 },
   { item: "pamhc2trees:plumitem", value: 96 },
   { item: "society:ancient_fruit", value: 128 },
+  { item: "society:mana_fruit", value: 256 },
+  { item: "society:sparkpod", value: 100 },
   { item: "atmospheric:orange", value: 96 },
   { item: "pamhc2trees:dragonfruititem", value: 128 },
   { item: "atmospheric:passion_fruit", value: 128 },
@@ -761,6 +767,31 @@ global.artisanGoods = [
   { item: "society:double_aged_tribull_cheese_wheel", value: 20736 },
 ];
 
+const cheeses = [
+  // Values shouldn't be multiplied for balance
+  { item: "meadow:piece_of_sheep_cheese", value: 24 },
+  { item: "meadow:sheep_cheese_block", value: 96 },
+  { item: "meadow:piece_of_cheese", value: 48 },
+  { item: "meadow:cheese_block", value: 192 },
+  { item: "meadow:piece_of_grain_cheese", value: 66 },
+  { item: "meadow:grain_cheese_block", value: 264 },
+  { item: "meadow:piece_of_buffalo_cheese", value: 192 },
+  { item: "meadow:buffalo_cheese_block", value: 768 },
+  { item: "meadow:piece_of_goat_cheese", value: 288 },
+  { item: "meadow:goat_cheese_block", value: 1152 },
+  { item: "meadow:piece_of_warped_cheese", value: 288 },
+  { item: "meadow:warped_cheese_block", value: 1152 },
+  { item: "meadow:piece_of_amethyst_cheese", value: 432 },
+  { item: "meadow:amethyst_cheese_block", value: 1728 },
+  { item: "farmlife:tribull_cheese_wedge", value: 576 },
+  { item: "farmlife:tribull_cheese_wheel", value: 2304 },
+];
+cheeses.forEach((recipe) => {
+  global.artisanGoods.push({
+    item: recipe.item,
+    value: recipe.value,
+  });
+});
 // Ice value = 8
 // Snow value = 2
 global.cocktails = [
@@ -1026,6 +1057,7 @@ miscAged.forEach((brew) => {
 global.cooking = [];
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 const craftingTableRecipes = [
+  { item: "vintagedelight:honey_mason_jar", value: 24 },
   { item: "veggiesdelight:zucchini_sandwich", value: 134 },
   { item: "veggiesdelight:turnip_salad", value: 60 },
   { item: "veggiesdelight:broccoli_salad", value: 92 },
@@ -1161,33 +1193,6 @@ craftingTableRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
     value: Math.floor(recipe.value * 1.4),
-  });
-});
-
-const cheeses = [
-  // Values shouldn't be multiplied for balance
-  { item: "vintagedelight:honey_mason_jar", value: 48 },
-  { item: "meadow:piece_of_sheep_cheese", value: 24 },
-  { item: "meadow:sheep_cheese_block", value: 96 },
-  { item: "meadow:piece_of_cheese", value: 48 },
-  { item: "meadow:cheese_block", value: 192 },
-  { item: "meadow:piece_of_grain_cheese", value: 66 },
-  { item: "meadow:grain_cheese_block", value: 264 },
-  { item: "meadow:piece_of_buffalo_cheese", value: 192 },
-  { item: "meadow:buffalo_cheese_block", value: 768 },
-  { item: "meadow:piece_of_goat_cheese", value: 288 },
-  { item: "meadow:goat_cheese_block", value: 1152 },
-  { item: "meadow:piece_of_warped_cheese", value: 288 },
-  { item: "meadow:warped_cheese_block", value: 1152 },
-  { item: "meadow:piece_of_amethyst_cheese", value: 432 },
-  { item: "meadow:amethyst_cheese_block", value: 1728 },
-  { item: "farmlife:tribull_cheese_wedge", value: 576 },
-  { item: "farmlife:tribull_cheese_wheel", value: 2304 },
-];
-cheeses.forEach((recipe) => {
-  global.cooking.push({
-    item: recipe.item,
-    value: recipe.value,
   });
 });
 

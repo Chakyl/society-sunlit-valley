@@ -346,10 +346,12 @@ StartupEvents.registry("block", (e) => {
     "blueberry",
     "eggplant",
     "ancient_fruit",
+    "sparkpod",
     "salmonberry",
     "boysenberry",
     "cranberry",
     "crystalberry",
+    "mana_fruit",
   ];
   crates.forEach((crate) => {
     createCrate(crate);

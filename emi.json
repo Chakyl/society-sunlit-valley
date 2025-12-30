@@ -1,45 +1,51 @@
 {
   "favorites": [
     {
-      "stack": {
-        "type": "item",
-        "id": "society:mini_oni_eye",
-        "amount": 24
-      }
-    },
-    {
-      "stack": "item:society:production_science_pack"
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "minecraft:amethyst_cluster",
-        "amount": 13
-      }
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "society:fire_quartz",
-        "amount": 6
-      }
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "society:searing_cod_roe",
-        "amount": 64
-      }
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "meadow:cobbled_limestone",
-        "amount": 64
-      }
+      "stack": "item:atmospheric:currant"
     }
   ],
   "lookup_history": [
+    "item:society:furniture_box",
+    "item:society:sparkpod",
+    "item:society:mana_fruit",
+    "item:society:blueberry",
+    "item:society:ancient_fruit",
+    "item:vintagedelight:honey_mason_jar",
+    "item:meadow:cheese_block",
+    "item:minecraft:stripped_oak_log",
+    "item:botania:terrasteel_ingot",
+    "item:botania:black_lotus",
+    "item:botania:blacker_lotus",
+    "item:society:net_bobber",
+    "item:society:needle_bobber",
+    {
+      "type": "item",
+      "id": "aquaculture:algae",
+      "amount": 59
+    },
+    {
+      "type": "item",
+      "id": "society:neptuna_roe",
+      "amount": 4
+    },
+    "item:domesticationinnovation:pet_bed_white",
+    "item:domesticationinnovation:collar_tag",
+    "item:domesticationinnovation:wayward_lantern",
+    "item:botania:manaweave_chestplate{Damage:0}",
+    "item:atmospheric:laurel_hanging_sign",
+    "item:botania:infrangible_platform",
+    "item:etcetera:hammer{Damage:0}",
+    "item:atmospheric:currant",
+    "item:cluttered:red_mushroom_planks",
+    "item:cluttered:fluorescent_maple_window_pane",
+    "item:everycomp:q/autumnity/vertical_maple_planks",
+    "item:everycomp:q/cluttered/vertical_poplar_planks",
+    "item:everycomp:q/cluttered/vertical_sycamore_planks",
+    "item:everycomp:q/cluttered/vertical_willow_planks",
+    "item:everycomp:q/meadow/vertical_pine_planks",
+    "item:everycomp:q/atmospheric/vertical_rosewood_planks",
+    "item:everycomp:q/atmospheric/vertical_yucca_planks",
+    "item:everycomp:q/atmospheric/vertical_aspen_planks",
     "item:copycats:copycat_vertical_stairs",
     "item:copycats:copycat_stairs",
     "item:rehooked:diamond_hook",
@@ -53,17 +59,10 @@
     "item:society:grimwood_supply_crate",
     {
       "type": "item",
-      "id": "alloy_smelter:forge_controller_tier1",
-      "amount": 63
-    },
-    {
-      "type": "item",
       "id": "minecraft:raw_copper",
       "amount": 64
     },
     "item:minecraft:copper_ingot",
-    "item:alloy_smelter:forge_controller_tier3",
-    "item:alloy_smelter:forge_controller_tier2",
     "item:society:sparkstone",
     {
       "type": "item",
@@ -117,7 +116,6 @@
     },
     "item:atmospheric:yucca_planks",
     "item:quark:vertical_cherry_planks",
-    "item:society:furniture_box",
     "item:cluttered:filing_box",
     "item:windswept:flake_pottery_sherd",
     "item:minecraft:brewer_pottery_sherd",
@@ -138,7 +136,6 @@
     "item:farmersdelight:red_mushroom_colony",
     "item:society:truffle",
     "item:minecraft:oak_door",
-    "item:knightlib:empty_grail",
     "item:quark:oak_post",
     "item:minecraft:oak_stairs",
     "item:minecraft:spruce_planks",
@@ -155,16 +152,9 @@
     "item:aquaculture:neptunium_shovel{Damage:0}",
     "item:aquaculture:neptunium_ingot",
     "item:bakery:chocolate_donut",
-    "item:domesticationinnovation:collar_tag",
     "item:society:roe_recycler",
     "item:domesticationinnovation:drum",
     "item:domesticationinnovation:deed_of_ownership",
-    {
-      "type": "item",
-      "id": "aquaculture:algae",
-      "amount": 13
-    },
-    "item:society:neptuna_roe",
     "item:society:circus_fish_roe",
     "item:society:clam_roe",
     "item:society:aged_clam_roe",
@@ -223,7 +213,6 @@
     "item:minecraft:sniffer_egg",
     "item:domesticationinnovation:feather_on_a_stick{Damage:0}",
     "item:domesticationinnovation:pet_bed_light_gray",
-    "item:domesticationinnovation:pet_bed_white",
     "item:domesticationinnovation:pet_bed_orange",
     "item:domesticationinnovation:pet_bed_yellow",
     "item:botania:thunder_sword{Damage:0}",
@@ -231,7 +220,6 @@
     "item:botania:elementium_sword{Damage:0}",
     "item:botania:manasteel_sword{Damage:0}",
     "item:create:cardboard_sword",
-    "item:domesticationinnovation:wayward_lantern",
     "item:minecraft:leather_helmet{Damage:0}",
     "item:minecraft:leather_leggings{Damage:0}",
     "item:brewery:whiskey_jojannik",
@@ -276,7 +264,6 @@
     "item:bakery:bread",
     "item:bakery:baguette",
     "item:bakery:crusty_bread",
-    "item:botania:black_lotus",
     "item:society:stone_hand",
     "item:society:sea_biscut",
     "item:society:relic_trove",
@@ -307,7 +294,6 @@
     "item:minecraft:stripped_oak_wood",
     "item:minecraft:oak_pressure_plate",
     "item:windswept:music_disc_bumblebee",
-    "item:society:ancient_fruit",
     "item:dramaticdoors:tall_quark_ancient_door",
     "item:minecraft:fermented_spider_eye",
     "item:minecraft:potion{Potion:\"minecraft:harming\"}",
@@ -340,7 +326,6 @@
     "item:windswept:christmas_pudding",
     "item:atmospheric:passion_fruit_tart",
     "item:oreganized:deepslate_silver_ore",
-    "item:society:blueberry",
     "item:society:blueberry_seed",
     "item:society:blueberry_crate",
     "item:farmersdelight:cooking_pot",
@@ -496,7 +481,6 @@
     "item:vinery:jungle_lattice",
     "item:society:treated_log",
     "item:society:botanical_tribute",
-    "item:botania:terrasteel_ingot",
     "item:botania:terrasteel_block",
     "item:pamhc2trees:dragonfruititem",
     "item:unusualfishmod:raw_snowflake",
@@ -944,7 +928,6 @@
     "item:cluttered:flowering_crabapple_bookshelf",
     "item:cluttered:flowering_crabapple_fence_gate",
     "item:cluttered:flowering_crabapple_button",
-    "item:cluttered:fluorescent_maple_window_pane",
     "item:cluttered:sycamore_wainscoting",
     "item:cluttered:sycamore_sapling",
     "item:cluttered:red_mushroom_log",
@@ -1024,7 +1007,6 @@
     "item:vintagedelight:salt_lamp_light_gray",
     "item:vintagedelight:wild_cucumbers",
     "item:vintagedelight:salt_lamp_pink",
-    "item:vintagedelight:honey_mason_jar",
     "item:vintagedelight:nut_milk_bottle",
     "item:vintagedelight:overnight_oats",
     "item:vintagedelight:gearo_berry_jam_bottle",

@@ -186,8 +186,9 @@ global.artisanHarvest = (
       ) {
         harvestOutput = Item.of(`society:aged_${id.path}`);
       }
-      if (outputMult > 1)
+      if (outputMult > 1 && !recipes.get(nbt.data.recipe).multExempt) {
         harvestOutput.count = harvestOutput.count * outputMult;
+      }
       if (!artisanHopper) {
         block.popItemFromFace(harvestOutput, block.properties.get("facing"));
       } else {
@@ -1013,7 +1014,7 @@ const qualityToInt = (quality) => {
 const getFertilizer = (crop) => {
   const block = crop
     .getLevel()
-    .getBlock(crop.getPos().below().offset(-1, 0, 0));
+    .getBlock(crop.getPos().below().offset(0, -1, 0));
   if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
     return -1;
   if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
@@ -1038,11 +1039,10 @@ global.getCropQuality = (crop) => {
   if (fertilizer == -1) return 0;
   const qualityName = LevelData.get(
     crop.getLevel(),
-    crop.getPos().offset(-1, 0, 0),
+    crop.getPos().offset(0, -1, 0),
     false
   );
   const seedQuality = qualityToInt(qualityName);
-  console.log(seedQuality);
   const goldChance =
     0.2 * ((seedQuality * 4.6) / 10) +
     0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +

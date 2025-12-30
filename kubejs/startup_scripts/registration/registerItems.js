@@ -79,6 +79,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:cordycep").texture("society:item/cordycep");
   e.create("society:enkephalin").texture("society:item/enkephalin");
   e.create("society:gray_anatomy").texture("society:item/gray_anatomy");
+  e.create("society:recycled_core").texture("society:item/recycled_core");
   e.create("society:blueberry")
     .texture("society:item/blueberry")
     .food((food) => {
@@ -104,6 +105,14 @@ StartupEvents.registry("item", (e) => {
     .food((food) => {
       food.hunger(6);
       food.saturation(3);
+      food.fastToEat(true);
+    });
+  e.create("society:sparkpod")
+    .texture("society:item/sparkpod")
+    .food((food) => {
+      food.hunger(3);
+      food.saturation(1);
+      food.effect("minecraft:haste", 2000, 2, 1.0);
       food.fastToEat(true);
     });
   e.create("society:salmonberry")
@@ -258,6 +267,14 @@ StartupEvents.registry("item", (e) => {
   e.create("society:botanical_tribute").texture(
     "society:item/botanical_tribute"
   );
+  e.create("society:mana_fruit")
+    .texture("society:item/mana_fruit")
+    .food((food) => {
+      food.hunger(3);
+      food.saturation(1);
+      food.effect("botania:soul_cross", 3000, 2, 1.0);
+      food.fastToEat(true);
+    });
   e.create("society:canvas")
     .texture("society:item/canvas")
     .displayName("Artisan Canvas");
@@ -857,6 +874,8 @@ StartupEvents.registry("item", (e) => {
     { item: "society:cranberry", hex: 0xb33831 },
     { item: "society:crystalberry", hex: 0xb33831 },
     { item: "windswept:wild_berries", hex: 0xa53982 },
+    { item: "society:mana_fruit", hex: 0x37fcf7 },
+    { item: "society:sparkpod", hex: 0x9d1576 },
   ];
   global.dehydratableFruits.forEach((item) => {
     const itemHex = dehydratorFruitMapping.find(

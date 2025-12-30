@@ -68,6 +68,8 @@ global.dehydratableFruits = [
   "society:cranberry",
   "society:crystalberry",
   "windswept:wild_berries",
+  "society:mana_fruit",
+  "society:sparkpod",
 ];
 global.dehydratableFruits.forEach((item) => {
   let itemId = item.path;

@@ -500,9 +500,17 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:gray_anatomy",
-    Text.green(
-      "Use on a §2Wine Keg§a to give it a 5% chance of producing a Relic Trove"
-    )
+    Text.translatable(
+      "item.society.gray_anatomy.description",
+      Text.translatable("block.society.wine_keg").darkGreen()
+    ).green()
+  );
+  tooltip.add(
+    "society:recycled_core",
+    Text.translatable(
+      "item.society.recycled_core.description",
+      Text.translatable("block.society.recycling_machine").darkGreen()
+    ).green()
   );
   tooltip.add(
     [

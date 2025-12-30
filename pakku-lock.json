@@ -1837,62 +1837,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cluttered-[Forge]-3.0.2-1.20.1.jar",
+                    "file_name": "cluttered-[Forge]-3.0.3-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7180/920/cluttered-[Forge]-3.0.2-1.20.1.jar",
-                    "id": "7180920",
+                    "url": "https://edge.forgecdn.net/files/7385/618/cluttered-[Forge]-3.0.3-1.20.1.jar",
+                    "id": "7385618",
                     "parent_id": "826308",
                     "hashes": {
-                        "sha1": "3529dc56ab21f355176032d5ff7456a6bc95f129",
-                        "md5": "add9f9eab965fa630166f4ce8b7766e0"
+                        "sha1": "c1dca582de21cc540f1a84188db40d65d14c8153",
+                        "md5": "37f5585d706cda153b34e4c523881fda"
                     },
                     "required_dependencies": [],
-                    "size": 5552095,
-                    "date_published": "2025-11-03T04:06:15.200Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "jlEEJlpFtjjsXLc0",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "cluttered"
-            },
-            "name": {
-                "curseforge": "Cluttered"
-            },
-            "id": {
-                "curseforge": "826308"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "cluttered-[Forge]-3.0.2-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7180/920/cluttered-[Forge]-3.0.2-1.20.1.jar",
-                    "id": "7180920",
-                    "parent_id": "826308",
-                    "hashes": {
-                        "sha1": "3529dc56ab21f355176032d5ff7456a6bc95f129",
-                        "md5": "add9f9eab965fa630166f4ce8b7766e0"
-                    },
-                    "required_dependencies": [],
-                    "size": 5552095,
-                    "date_published": "2025-11-03T04:06:15.200Z"
+                    "size": 5551679,
+                    "date_published": "2025-12-27T19:23:08.850Z"
                 }
             ]
         },
@@ -9912,47 +9875,6 @@
                     ],
                     "size": 1518437,
                     "date_published": "2025-09-08T14:01:37.067Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "sd8PHVXpyabb9cJX",
-            "pakku_links": [
-                "3F0ul19NH4mCx9lj"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "renderjs"
-            },
-            "name": {
-                "curseforge": "RenderJS"
-            },
-            "id": {
-                "curseforge": "1064413"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "renderjs-forge-2001.2.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6126/826/renderjs-forge-2001.2.1.jar",
-                    "id": "6126826",
-                    "parent_id": "1064413",
-                    "hashes": {
-                        "sha1": "6edcb7c9f49c3a964d7b3ba5bb664966022e7ca9",
-                        "md5": "a7f833971a65e0c6ae9a3670c4cbc347"
-                    },
-                    "required_dependencies": [
-                        "238086"
-                    ],
-                    "size": 82753,
-                    "date_published": "2025-01-26T14:13:28.913Z"
                 }
             ]
         },

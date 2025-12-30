@@ -1199,6 +1199,12 @@
 				"Once unlocked, the associated items can be bought from the &6Fisher&r."
 			]
 			id: "21671DA370EA7A37"
+			rewards: [{
+				count: 3
+				id: "39F51536A4154B47"
+				item: "society:furniture_box"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				icon: {
@@ -1218,6 +1224,11 @@
 		}
 		{
 			dependencies: ["21671DA370EA7A37"]
+			description: [
+				"The &6Needle Bobber&r and &6Net Bobbers&r are two sides of the same coin, making the fishing minigame much more difficult for a huge boost in rewards."
+				""
+				"They'll only be useful to rod champion (or a person that's just upgraded their rod a ton)."
+			]
 			icon: "society:needle_bobber"
 			id: "785F3754068D5C2D"
 			rewards: [{
@@ -1254,6 +1265,12 @@
 			dependencies: ["25677844C218103A"]
 			description: ["Unlocking &6Husbandry Mastery&r provides"]
 			id: "3979B0AD660A33D2"
+			rewards: [{
+				count: 3
+				id: "7007FA81A1833E20"
+				item: "society:furniture_box"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				icon: "society:milk_pail"
@@ -1267,7 +1284,20 @@
 		}
 		{
 			dependencies: ["21671DA370EA7A37"]
+			description: [
+				"If you've more than a handful of &6Fish Ponds&r, you may be overflowing with &6Roe&r from fish whos produce items are more valuable than the money its worth."
+				""
+				"The &6Roe Recycler&r addresses this, allowing you to get a few more chances at items with every peice of roe. "
+				""
+				"It rolls the entire Fish Pond loot table at a random population for each Roe processed. If it doesn't drop anything, it'll have a 10% chance to produce &6Algae&r."
+			]
 			id: "1DCBAC91CE9AAD60"
+			rewards: [{
+				count: 4
+				id: "6968D75B40D5CA6C"
+				item: "society:neptuna_roe"
+				type: "item"
+			}]
 			tasks: [{
 				id: "441B5FDB7DFE9725"
 				item: "society:roe_recycler"
@@ -1279,11 +1309,17 @@
 		{
 			dependencies: ["25677844C218103A"]
 			description: [
-				"Unlocking &6Adventuring Mastery&r provides ways to improve the combat abilities of pets."
+				"Unlocking &6Adventuring Mastery&r allows you to take your beloved pets on grand adventures without the fear of losing them! It also allows more options with enchanting past the skill tree enchantments."
 				""
-				"Once unlocked, certain associated items can be bought from the &6Guild&r."
+				"Once unlocked, certain associated items can be bought from the &6Guild&r and &6Wizard&r."
 			]
 			id: "76A60EE6F3E0FF72"
+			rewards: [{
+				count: 3
+				id: "6BD0845771266214"
+				item: "society:furniture_box"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				icon: {
@@ -1304,25 +1340,67 @@
 		}
 		{
 			dependencies: ["76A60EE6F3E0FF72"]
+			description: ["The &6Guild&r will now sell you &6Collar Tags&r, a conduit for enchanting your pets to make them battle-ready."]
 			id: "181794D54A635F81"
+			rewards: [{
+				id: "284F02BE3A8C125C"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "domesticationinnovation:total_recall"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "22F5A370A1A215F2"
 				item: "domesticationinnovation:collar_tag"
 				type: "item"
 			}]
+			title: "Powerful Beasts"
 			x: -1.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["76A60EE6F3E0FF72"]
+			description: [
+				"Now that your pets are ready to adventure with you, the &6Guild&r will now sells supplies to keep them safe."
+				""
+				"Most notable is the &6Pet Bed&r, which allows your pets to respawn if they somehow lose the battle. "
+				""
+				"Make sure you see the ZZZs above the pet's bed after placing them there!"
+			]
+			icon: "domesticationinnovation:pet_bed_white"
 			id: "40C8DC3C2A22F632"
-			tasks: [{
-				id: "571CF103F79F06DE"
-				item: "domesticationinnovation:pet_bed_white"
+			rewards: [{
+				id: "25201E8D8F8BD51B"
+				item: "domesticationinnovation:collar_tag"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			tasks: [
+				{
+					id: "571CF103F79F06DE"
+					item: "domesticationinnovation:pet_bed_white"
+					type: "item"
+				}
+				{
+					id: "134FB6AEE27347DC"
+					item: "domesticationinnovation:wayward_lantern"
+					type: "item"
+				}
+				{
+					id: "44F41EF1A2B25FE1"
+					item: "domesticationinnovation:drum"
+					type: "item"
+				}
+			]
+			title: "Pet Utilities"
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3979B0AD660A33D2"]
@@ -1349,8 +1427,9 @@
 			dependencies: ["3979B0AD660A33D2"]
 			id: "06308BDE5F4EC0D2"
 			rewards: [{
-				id: "498C6634A87E0288"
-				item: "society:sunlit_crystal"
+				count: 3
+				id: "1E0CA77911A70BF6"
+				item: "society:plushie_capsule"
 				type: "item"
 			}]
 			tasks: [{
@@ -1365,6 +1444,12 @@
 			dependencies: ["25677844C218103A"]
 			description: ["Unlocking &6Farming Mastery&r "]
 			id: "40845F4C88AD03CB"
+			rewards: [{
+				count: 3
+				id: "1074DD0BB4922E18"
+				item: "society:furniture_box"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				icon: {
@@ -1386,6 +1471,12 @@
 			dependencies: ["25677844C218103A"]
 			description: ["Unlocking &6Farming Mastery&r "]
 			id: "3C12A8CA17EACA0B"
+			rewards: [{
+				count: 3
+				id: "0CF6E309829FC8C6"
+				item: "society:furniture_box"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				icon: {
@@ -1425,6 +1516,36 @@
 			title: "Skill Mastery"
 			x: -4.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["76A60EE6F3E0FF72"]
+			description: [
+				"The &6Wizard&r now sells the &6Enchanting Table&r. This will allow you to unlock the final level for enchantments such as Fortune or Looting, alongside enchantments that aren't included in the skill tree."
+				""
+				"The maximums of enchantments that are in the skill tree has been lowered!"
+			]
+			id: "410784379F435E05"
+			rewards: [{
+				id: "05B38EF7A3C4EC93"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "domesticationinnovation:chain_lightning"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "596D4FBD82E84D10"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
 		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"

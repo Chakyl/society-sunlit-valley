@@ -3,9 +3,9 @@
   "name": "shop.society_trading.wizard",
   "texture": "botania:textures/block/mana_void",
   "villager_profession": "cleric",
-  "jei_catalyst": { "item":"minecraft:brewing_stand" },
+  "jei_catalyst": { "item": "minecraft:brewing_stand" },
   "trades": [
-        {
+    {
       "offer": {
         "item": "labels:label",
         "count": 1
@@ -60,9 +60,11 @@
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 16
+        "count": 8
       },
-      "numismatics_cost": 65536,
+      "numismatics_cost": 32768,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
       "trade_id": "librarian_enchanting_table_for_sun"
     },
     {
@@ -247,7 +249,7 @@
       "numismatics_cost": 20480,
       "trade_id": "cleric_wand_of_symmetry_for_sun"
     },
-        {
+    {
       "offer": {
         "item": "society:ribbit_hut",
         "count": 1

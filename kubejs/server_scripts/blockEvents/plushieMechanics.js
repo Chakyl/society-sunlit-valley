@@ -1,3 +1,5 @@
+console.info("[SOCIETY] plushieMechanics.js loaded");
+
 BlockEvents.placed(global.plushies, (e) => {
   const plushieNbt = e.player.getHeldItem("main_hand").getNbt();
   if (plushieNbt) {
