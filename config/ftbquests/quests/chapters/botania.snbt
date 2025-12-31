@@ -139,7 +139,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest4.title}"
-			x: 17.5d
+			x: 21.0d
 			y: -1.5d
 		}
 		{
@@ -179,7 +179,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.botania.quest5.title}"
-			x: 16.5d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -202,7 +202,7 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -267,7 +267,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest7.title}"
-			x: 13.5d
+			x: 17.0d
 			y: 1.5d
 		}
 		{
@@ -322,7 +322,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest8.title}"
-			x: 15.5d
+			x: 19.0d
 			y: 1.5d
 		}
 		{
@@ -580,8 +580,8 @@
 			]
 			id: "69A2A84A2830134C"
 			rewards: [{
-				id: "2FE3F7ECFCD11150"
-				item: "numismatics:crown"
+				id: "72B73ED830786C22"
+				item: "botania:pure_daisy"
 				type: "item"
 			}]
 			tasks: [{
@@ -613,7 +613,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest18.title}"
-			x: 19.5d
+			x: 23.0d
 			y: 0.0d
 		}
 		{
@@ -636,11 +636,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest19.title}"
-			x: 17.5d
+			x: 21.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["69A2A84A2830134C"]
+			dependencies: ["6DAC81A05E481E58"]
 			description: [
 				"{ftbquests.chapter.botania.quest20.description1}"
 				""
@@ -666,7 +666,7 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
+			x: 15.5d
 			y: 0.0d
 		}
 		{
@@ -718,7 +718,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest22.title}"
-			x: 15.5d
+			x: 19.0d
 			y: -1.5d
 		}
 		{
@@ -829,7 +829,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest26.title}"
-			x: 12.0d
+			x: 15.5d
 			y: -1.5d
 		}
 		{
@@ -856,7 +856,7 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
+			x: 25.0d
 			y: 1.0d
 		}
 		{
@@ -885,7 +885,7 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
+			x: 25.0d
 			y: -1.0d
 		}
 		{
@@ -910,7 +910,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
+			x: 17.0d
 			y: -1.5d
 		}
 		{
@@ -935,6 +935,39 @@
 			title: "{ftbquests.chapter.botania.quest30.title}"
 			x: 11.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["69A2A84A2830134C"]
+			description: [
+				"&6Mana Fruits&r are the heart of advanced magical constructs. "
+				""
+				"They are filled with mana during growth using a &6Mana Spreader&r, and wither away when they don't have enough mana to grow."
+				""
+				"&oIf you haven't done so at this point, you should look to increase your automatic production of mana.&r"
+			]
+			icon: "society:mana_fruit"
+			id: "6DAC81A05E481E58"
+			rewards: [{
+				id: "5E17942584FE76C7"
+				item: "botania:lens_power"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "44DA3AEA8733A65B"
+					item: "society:mana_fruit_crop"
+					type: "item"
+				}
+				{
+					id: "3FF24FA8CD1A07A9"
+					item: "society:mana_fruit"
+					type: "item"
+				}
+			]
+			title: "Mana Fruit"
+			x: 13.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.botania.title}"

@@ -16,7 +16,7 @@
     "item": "minecraft:amethyst_shard"
   },
   "emit_effect_particle": "minecraft:dragon_breath",
-  "traits": ["foodporting", "recessive"],
+  "traits": ["foodporting"],
   "postive_commands": [
     "tp @e[distance=..2] @e[limit=1,sort=nearest]",
     "playsound minecraft:entity.enderman.teleport block @a[distance=..10]"

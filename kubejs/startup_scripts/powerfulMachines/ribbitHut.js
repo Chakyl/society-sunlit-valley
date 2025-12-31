@@ -7,9 +7,9 @@ const getDrops = (block, blockState, level, pos, player) => {
     if (grape.length == 1) {
       return [
         Item.of(
-          `4x ${["crimson", "warped"].includes(grape[0]) ? "nethervinery" : "vinery"}:${
-            grape[0]
-          }_grape`
+          `4x ${
+            ["crimson", "warped"].includes(grape[0]) ? "nethervinery" : "vinery"
+          }:${grape[0]}_grape`
         ),
       ];
     }
@@ -21,7 +21,14 @@ const getDrops = (block, blockState, level, pos, player) => {
   if (block.id.equals("autumnity:tall_foul_berry_bush")) {
     return [Item.of(`2x autumnity:foul_berries`)];
   }
-  return Block.getDrops(blockState, level, pos, null, player, Item.of("minecraft:hoe"));
+  return Block.getDrops(
+    blockState,
+    level,
+    pos,
+    null,
+    player,
+    Item.of("minecraft:hoe")
+  );
 };
 const getPlantData = (block, mcBlock, blockState) => {
   let properties = block.getProperties();
@@ -50,6 +57,8 @@ const getPlantData = (block, mcBlock, blockState) => {
           : "2",
     };
   }
+  if ("society:mana_fruit_crop".equals(block.id))
+    return { maxAge: properties.get("age").equals("7"), newAge: "0" };
   if ("vintagedelight:gearo_berry_bush".equals(block.id))
     return { maxAge: properties.get("age").equals("4"), newAge: "2" };
   if ("minecraft:cocoa".equals(block.id))
@@ -79,8 +88,21 @@ const setHarvested = (level, pos, server, block, age) => {
     block.set("minecraft:air");
   }
   const { x, y, z } = pos;
-  server.runCommandSilent(`playsound minecraft:block.grass.break block @a ${x} ${y} ${z} 0.5`);
-  level.spawnParticles("ribbits:spell", true, x + 0.5, y + 0.5, z + 0.5, 0, 0.1, 0, 1, 0.0001);
+  server.runCommandSilent(
+    `playsound minecraft:block.grass.break block @a ${x} ${y} ${z} 0.5`
+  );
+  level.spawnParticles(
+    "ribbits:spell",
+    true,
+    x + 0.5,
+    y + 0.5,
+    z + 0.5,
+    0,
+    0.1,
+    0,
+    1,
+    0.0001
+  );
 };
 global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
   const { level, block } = tickEvent;
@@ -92,7 +114,7 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
   let inserted = false;
   let valid = true;
   let plantData;
-  if (global.susFunctionLogging) console.log('[SOCIETY-SUSFN] ribbitHut.js')
+  if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] ribbitHut.js");
   server.scheduleInTicks(delay, () => {
     if (scannedBlock.hasTag("society:ribbit_hut_harvests")) {
       blockState = level.getBlockState(pos);
@@ -111,6 +133,10 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
           if (quality > 0) {
             drop.nbt = `{quality_food:{effects:[],quality:${quality}}}`;
           }
+          if (scannedBlock.id == "society:mana_fruit_crop") {
+            if (player.stages.has("paradise_crop")) drop.count += 1;
+            if (player.stages.has("crop_collector")) drop.count *= 2;
+          }
           if (global.inventoryHasRoom(block, drop)) {
             global.insertInto(block, drop);
             inserted = true;
@@ -121,7 +147,9 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
         inserted = false;
         if (scannedBlock.id === "supplementaries:flax") {
           scannedBlock.set("minecraft:air");
-          level.getBlock(pos.below()).set("supplementaries:flax", { age: "0", half: "lower" });
+          level
+            .getBlock(pos.below())
+            .set("supplementaries:flax", { age: "0", half: "lower" });
         } else {
           setHarvested(level, pos, server, scannedBlock, plantData.newAge);
         }
@@ -131,7 +159,10 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
 };
 global.runRibbitHut = (tickEvent) => {
   const { level, block } = tickEvent;
-  let centerBlock = global.getOpposite(block.getProperties().get("facing"), block.getPos());
+  let centerBlock = global.getOpposite(
+    block.getProperties().get("facing"),
+    block.getPos()
+  );
   const { x, y, z } = centerBlock;
   let scannedBlocks = 0;
   let attachedPlayer;
@@ -151,12 +182,16 @@ global.runRibbitHut = (tickEvent) => {
       level.server.runCommandSilent(
         `playsound ribbits:entity.ribbit.ambient block @a ${x} ${y} ${z}`
       );
-      for (let pos of BlockPos.betweenClosed(new BlockPos(x - 7, y - 1, z - 7), [
-        x + 7,
-        y + 1,
-        z + 7,
-      ])) {
-        global.handleRibbitHarvest(tickEvent, pos.immutable(), attachedPlayer, scannedBlocks);
+      for (let pos of BlockPos.betweenClosed(
+        new BlockPos(x - 7, y - 1, z - 7),
+        [x + 7, y + 1, z + 7]
+      )) {
+        global.handleRibbitHarvest(
+          tickEvent,
+          pos.immutable(),
+          attachedPlayer,
+          scannedBlocks
+        );
         scannedBlocks++;
       }
     }
@@ -170,9 +205,17 @@ StartupEvents.registry("block", (e) => {
     .soundType("shroomlight")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.ribbit_hut.description").gray());
-      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
-      item.tooltip(Text.translatable("tooltip.society.area", `15x3x15`).green());
+      item.tooltip(
+        Text.translatable("block.society.ribbit_hut.description").gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "society.working_block_entity.apply_player_skill"
+        ).gray()
+      );
+      item.tooltip(
+        Text.translatable("tooltip.society.area", `15x3x15`).green()
+      );
       item.modelJson({
         parent: "minecraft:item/generated",
         textures: {
@@ -205,9 +248,13 @@ StartupEvents.registry("block", (e) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
+          .getSlotLimit((blockEntity, slot) =>
+            blockEntity.inventory.getSlotLimit(slot)
+          )
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
+          .getStackInSlot((blockEntity, slot) =>
+            blockEntity.inventory.getStackInSlot(slot)
+          )
       );
     });
   e.create("society:ribbit_hut_block", "cardinal")

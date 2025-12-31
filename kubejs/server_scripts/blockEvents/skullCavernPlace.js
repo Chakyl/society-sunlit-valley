@@ -7,7 +7,9 @@ BlockEvents.placed((e) => {
       block.hasTag("society:skull_cavern_unplacable") &&
       !player.isCreative()
     ) {
-      let message = Text.translatable("society.skull_cavern.prevent_block_place").getString();
+      let message = Text.translatable(
+        "society.skull_cavern.prevent_block_place"
+      ).getString();
       global.renderUiText(
         player,
         server,
@@ -34,6 +36,7 @@ BlockEvents.placed((e) => {
         },
         global.mainUiElementIds
       );
+      e.player.inventoryMenu.broadcastFullState();
       e.cancel();
     } else if (global.skullCavernHardmode) {
       server.scheduleInTicks(0, () => {

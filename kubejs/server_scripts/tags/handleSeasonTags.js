@@ -319,6 +319,15 @@ const winterCrops = [
   "vinery:taiga_grape_seeds_white",
 ];
 const allSeasonCrops = [
+  "cluttered:willow_sapling",
+  "cluttered:poplar_sapling",
+  "cluttered:crabapple_sapling",
+  "cluttered:sycamore_sapling",
+  "cluttered:fluorescent_maple_sapling",
+  "society:sparkpod",
+  "society:sparkpod_seed",
+  "society:mana_fruit",
+  "society:mana_fruit_crop",
   "atmospheric:laurel_sapling",
   "atmospheric:dry_laurel_sapling",
   "botania_seeds:white_mystical_flower_seed",

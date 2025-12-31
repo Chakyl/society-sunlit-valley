@@ -1547,6 +1547,28 @@
 			x: -0.5d
 			y: 0.5d
 		}
+		{
+			dependencies: ["40845F4C88AD03CB"]
+			id: "76672EF7299492DF"
+			tasks: [{
+				id: "3211101688780CC5"
+				item: "society:sparkpod_seed"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C12A8CA17EACA0B"]
+			id: "642F0375D7805A1B"
+			tasks: [{
+				id: "21411FD800D50B90"
+				item: "society:recycled_core"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"
 }

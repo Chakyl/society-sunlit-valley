@@ -1451,6 +1451,7 @@ ItemEvents.tooltip((tooltip) => {
       "domesticationinnovation:drum",
       "domesticationinnovation:wayward_lantern",
       "domesticationinnovation:collar_tag",
+      "minecraft:enchanting_table",
     ],
     Text.translatable("tooltip.society.adventuring_mastery.required")
   );

@@ -18,6 +18,10 @@ const directionProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.DirectionProperty"
 );
 
+const CropGrowthUtils = Java.loadClass(
+  "cool.bot.dewdropfarmland.utils.CropHandlerUtils"
+);
+
 function rnd(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -41,6 +45,15 @@ function rnd10() {
 function rnd5() {
   return Math.random() < 0.05;
 }
+
+global.surviveCheck = (level, pos) => {
+  const FARMLAND = Java.loadClass("net.minecraft.world.level.block.FarmBlock");
+  let blockState = level.getBlockState(pos.below());
+  let mcBlock = blockState.block;
+  if (mcBlock instanceof FARMLAND) {
+    return true;
+  } else return false;
+};
 
 let increaseDataStage = (block, count) => {
   let nbt = block.getEntityData();

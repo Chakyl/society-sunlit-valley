@@ -261,6 +261,10 @@ LootJS.modifiers((e) => {
     "society:prize_machine"
   );
   e.addBlockLootModifier("society:fish_pond").removeLoot("society:fish_pond");
+  e.addBlockLootModifier("society:mana_fruit_crop").removeLoot(
+    "society:mana_fruit_crop"
+  );
+
   e.addBlockLootModifier(global.plushies).removeLoot("*");
 
   // Replace Loot

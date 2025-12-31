@@ -1,6 +1,5 @@
 console.info("[SOCIETY] growthObelisk.js loaded");
 
-const CropGrowthUtils = Java.loadClass("cool.bot.dewdropfarmland.utils.CropHandlerUtils");
 const RandomSource = Java.loadClass("net.minecraft.util.RandomSource");
 
 global.runGrowthObelisk = (tickEvent) => {
