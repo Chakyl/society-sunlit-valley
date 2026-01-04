@@ -26,7 +26,7 @@ global.tapperRecipes = new Map([
       leaves: ["minecraft:oak_leaves"],
       output: ["1x society:oak_resin"],
       fluidOutput: "society:oak_resin",
-      time: 3,
+      time: 5,
     },
   ],
   [
@@ -95,6 +95,15 @@ global.tapperRecipes = new Map([
       output: ["1x society:pine_tar"],
       fluidOutput: "society:pine_tar",
       time: 5,
+    },
+  ],
+  [
+    "cluttered:willow_log",
+    {
+      leaves: ["cluttered:flowering_willow_leaves", "cluttered:willow_leaves"],
+      output: ["1x society:mystic_syrup"],
+      fluidOutput: "society:mystic_syrup",
+      time:7,
     },
   ],
 ]);

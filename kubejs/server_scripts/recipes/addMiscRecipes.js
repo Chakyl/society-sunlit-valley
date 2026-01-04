@@ -70,6 +70,7 @@ ServerEvents.recipes((e) => {
     "minecraft:bucket",
   ]);
   e.shapeless("minecraft:magenta_dye", ["windswept:lavender"]);
+  e.shapeless("create:tree_fertilizer", ['4x farmersdelight:straw', '4x society:sap', 'twigs:pebble']);
   e.shapeless("3x society:prismatic_shard", [
     "society:token_of_unity",
     "society:prismatic_shard",

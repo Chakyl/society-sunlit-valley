@@ -1437,6 +1437,24 @@ ItemEvents.tooltip((tooltip) => {
     "society:sunlit_crystal",
     Text.translatable("item.society.sunlit_crystal.description").gray()
   );
+
+  tooltip.add(
+    [
+      "society:mystic_syrup",
+      "cluttered:willow_log",
+      "cluttered:willow_sapling",
+      "society:bubble_totem",
+      "society:treasure_totem",
+      "society:sparkpod_seed",
+      "society:sparkpod",
+      "society:statue_of_cravings",
+    ],
+    Text.translatable("tooltip.society.farming_mastery.required")
+  );
+  tooltip.add(
+    ["society:recycled_core"],
+    Text.translatable("tooltip.society.mining_mastery.required")
+  );
   tooltip.add(
     ["society:animal_cracker", "society:sunlit_crystal"],
     Text.translatable("tooltip.society.husbandry_mastery.required")

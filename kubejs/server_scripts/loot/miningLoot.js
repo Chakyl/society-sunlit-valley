@@ -355,7 +355,7 @@ LootJS.modifiers((e) => {
   addMiningLootToAllOres(
     e,
     "husbandry_mastery",
-    0.07,
+    0.01,
     Item.of("1x society:animal_cracker"),
     [
       "society:oak_supply_crate",

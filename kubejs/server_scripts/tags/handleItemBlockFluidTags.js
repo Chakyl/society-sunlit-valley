@@ -297,7 +297,6 @@ ServerEvents.tags("item", (e) => {
   e.remove("forge:chests/ender", "minecraft:ender_chest");
   e.remove("forge:chests", "minecraft:ender_chest");
   e.remove("whimsy_deco:gatcha_machine_accepts", "minecraft:diamond");
-  e.add("forge:vegetables", "farm_and_charm:strawberry");
   // Vinery leaf fix
   e.add("minecraft:mineable/hoe", "vinery:apple_leaves");
   e.add("minecraft:mineable/hoe", "vinery:dark_cherry_leaves");

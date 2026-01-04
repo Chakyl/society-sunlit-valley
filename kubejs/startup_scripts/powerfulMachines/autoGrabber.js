@@ -95,7 +95,7 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
     mood = 256;
   } else {
     hungry = day - data.getInt("ageLastFed") > 1;
-    mood = global.getOrFetchMood(level, target, day, player);
+    mood = global.getOrFetchMood(level, animal, day, player);
   }
   if (mood < 64 && Math.random() < mood / 64) return;
   if (!hungry) {
@@ -177,9 +177,9 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
     ) {
       let droppedLoot = global.getMagicShearsOutput(
         level,
-        animal,
+        plushieModifiers ? data : animal,
         player,
-        level.server
+        plushieModifiers
       );
       if (droppedLoot !== -1) {
         level.server.runCommandSilent(
@@ -193,7 +193,7 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
         if (insertedMagicDrops) {
           if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
             console.error("Sparkstone not consumed when it should have been!");
-          if (!global.getAnimalIsNotCramped(animal, 1.1))
+          if (!plushieModifiers && !global.getAnimalIsNotCramped(animal, 1.1))
             data.affection = data.getInt("affection") - 50;
         }
       }

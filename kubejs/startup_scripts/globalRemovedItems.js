@@ -1,4 +1,9 @@
 global.removedItems = [
+  "cluttered:pastel_bunny_plushie",
+  "cluttered:sand_seal_plush_blue",
+  "cluttered:sand_seal_plush_green",
+  "cluttered:sand_seal_plush_red",
+  "cluttered:teddy_bear",
   "botania:creative_pool",
   "botania:infrangible_platform",
   "botania:lens_storm",

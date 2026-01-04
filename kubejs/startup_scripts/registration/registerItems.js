@@ -300,6 +300,9 @@ StartupEvents.registry("item", (e) => {
   e.create("crabbersdelight:mana_crab_trap_bait").texture(
     "society:item/mana_crab_trap_bait"
   );
+  e.create("society:treasure_totem").texture("society:item/treasure_totem");
+  e.create("society:bubble_totem").texture("society:item/bubble_totem");
+  e.create("society:mystic_syrup").texture("society:item/mystic_syrup");
   e.create("society:net_bobber")
     .texture("society:item/net_bobber")
     .maxStackSize(1);

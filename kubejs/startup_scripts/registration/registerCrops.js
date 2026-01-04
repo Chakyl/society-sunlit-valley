@@ -32,7 +32,7 @@ StartupEvents.registry("block", (e) => {
   //   .survive((state, level, pos) => global.surviveCheck(level, pos))
   //   .dropSeed(false)
   //   .tagBlock("minecraft:mineable/hoe")
-  //   .tagBlock("forge:crops")
+  //   .tagBlock("minecraft:crops")
   //   .property(integerProperty.create("type", 0, 4))
   //   .defaultState((state) => {
   //     state.set(integerProperty.create("type", 0, 4), 0);
@@ -83,7 +83,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("society:ancient_fruit", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/ancient_seed");
@@ -154,7 +154,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("society:tubabacco_leaf", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/tubabacco_seed");
@@ -218,7 +218,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("farm_and_charm:strawberry", 2)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("farm_and_charm:item/strawberry_seeds");
@@ -267,7 +267,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("brewery:hops", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("brewery:item/hops_seeds");
@@ -321,7 +321,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("society:blueberry", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/blueberry_seeds");
@@ -378,7 +378,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("society:eggplant", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/eggplant_seeds");
@@ -432,7 +432,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("minecraft:carrot", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/carrot_seed");
@@ -482,7 +482,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("minecraft:potato", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/potato_seed");
@@ -529,7 +529,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("farm_and_charm:onion", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/onion_seed");
@@ -591,7 +591,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("veggiesdelight:sweet_potato", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/sweet_potato_seed");
@@ -635,7 +635,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("vintagedelight:peanut", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/peanut_seed");
@@ -743,7 +743,7 @@ StartupEvents.registry("block", (e) => {
     .dropSeed(false)
     .crop("society:sparkpod", 1)
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/sparkpod_spores");

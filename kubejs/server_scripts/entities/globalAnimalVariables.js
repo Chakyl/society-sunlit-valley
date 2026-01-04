@@ -113,12 +113,4 @@ global.coldMobs = [
   "snuffles:snuffle",
 ];
 
-global.hotMobs = [
-  "species:wraptor",
-  "minecraft:panda",
-  "wildernature:flamingo",
-  "crittersandcompanions:red_panda",
-  "species:goober",
-  "minecraft:sniffer",
-];
 global.animalMessageSettings = `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-80}`;

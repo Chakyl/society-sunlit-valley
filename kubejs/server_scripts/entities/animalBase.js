@@ -391,12 +391,7 @@ const handleMagicHarvest = (name, data, e) => {
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
 
   let errorText = "";
-  const droppedLoot = global.getMagicShearsOutput(
-    level,
-    target,
-    player,
-    server
-  );
+  const droppedLoot = global.getMagicShearsOutput(level, target, player);
   if (droppedLoot !== -1) {
     server.runCommandSilent(
       `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`

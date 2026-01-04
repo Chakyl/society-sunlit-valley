@@ -80,7 +80,7 @@ StartupEvents.registry("block", (e) => {
       state.set(integerProperty.create("age", 0, 7), 0);
     })
     .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("forge:crops")
+    .tagBlock("minecraft:crops")
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(20, 0, (entity) => global.handleManaFruit(entity)),
         blockInfo.attachCapability(

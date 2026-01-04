@@ -371,6 +371,41 @@
     },
     {
       "offer": {
+        "item": "society:sparkpod_seed",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "stage_required": "farming_mastery",
+      "unlock_description": "jei.society_trading.farming_mastery_unlocked",
+      "trade_id": "market_sparkpod_seed_for_crown"
+    },
+    {
+      "offer": {
+        "item": "cluttered:willow_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "atmospheric:grimwood_sapling",
+        "count": 1
+      },
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "stage_required": "farming_mastery",
+      "unlock_description": "jei.society_trading.farming_mastery_unlocked",
+      "trade_id": "market_willow_sapling_for_crown"
+    },
+    {
+      "offer": {
         "item": "society:tubabacco_leaf_seed",
         "count": 1
       },
