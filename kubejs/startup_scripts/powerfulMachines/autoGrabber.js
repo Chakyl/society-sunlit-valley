@@ -72,6 +72,7 @@ StartupEvents.registry("block", (event) => {
         const { inventory, block, level } = entity;
         let attachedPlayer;
         let nearbyFarmAnimals;
+        let grabberBlock;
         nearbyFarmAnimals = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
           .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
@@ -127,8 +128,11 @@ StartupEvents.registry("block", (event) => {
                   handleSpecialItem
                 );
               }
+              grabberBlock = level.getBlock(block.pos);
               if (
-                level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
+                grabberBlock &&
+                grabberBlock.getProperties() &&
+                grabberBlock.getProperties().get("upgraded") === "true" &&
                 global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
               ) {
                 let droppedLoot = global.getMagicShearsOutput(

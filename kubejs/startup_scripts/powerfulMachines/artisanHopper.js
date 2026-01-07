@@ -220,7 +220,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const chargingRodOutput = Item.of(
       `${upgraded && season === "winter" ? 3 : 1}x society:battery`
     );
-    if (loadedData) {
+    if (loadedData && artisanMachine) {
       const { recipes, stageCount, multipleInputs, hasTag, outputMult, soundType } = loadedData;
       const hasInfinityWorm = artisanMachine.id === "society:deluxe_worm_farm" && upgraded;
       let machineOutput;
