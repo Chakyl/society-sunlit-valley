@@ -1026,7 +1026,6 @@ const qualityToInt = (quality) => {
 };
 const getFertilizer = (crop) => {
   const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0));
-  console.log(block)
   if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
     return -1;
   if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
@@ -1060,10 +1059,11 @@ global.getCropQuality = (crop) => {
     0.2 * ((seedQuality * 4.6) / 10) +
     0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
     0.01;
-  console.log(crop)
-  console.log("Seed quality " + seedQuality);
-  console.log("Fertilizer quality " + fertilizer);
-  console.log("Chance for gold: " + goldChance);
+  // Debug Quality
+  // console.log(crop)
+  // console.log("Seed quality " + seedQuality);
+  // console.log("Fertilizer quality " + fertilizer);
+  // console.log("Chance for gold: " + goldChance);
   if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
   if (Math.random() < goldChance) return 2;
   if (Math.random() < goldChance * 2) return 1;

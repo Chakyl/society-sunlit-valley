@@ -747,7 +747,7 @@ global.artisanGoods = [
   { item: "society:cruncher_mayonnaise", value: 2048 },
   { item: "society:oak_resin", value: 128 },
   { item: "society:maple_syrup", value: 192 },
-  { item: "society:mystic_syrup", value: 192 },
+  { item: "society:mystic_syrup", value: 1000 },
   { item: "society:pine_tar", value: 128 },
   { item: "society:sap", value: 4 },
   { item: "society:rubber", value: 30 },

@@ -1425,6 +1425,14 @@
 		}
 		{
 			dependencies: ["3979B0AD660A33D2"]
+			description: [
+				"Normally farm animals are picky about their living conditions and food! The &6Wizard&r sells ancient magic that can shrink them into a plushie, making it a luxurious home."
+				""
+				"Plushies that have been imbued using a &6Sunlit Crystal&r will have special effects "
+				""
+				""
+				"&oBoth the plushie and the animal must be at max affection.&r"
+			]
 			id: "06308BDE5F4EC0D2"
 			rewards: [{
 				count: 3
@@ -1442,7 +1450,7 @@
 		}
 		{
 			dependencies: ["25677844C218103A"]
-			description: ["Unlocking &6Farming Mastery&r "]
+			description: ["Unlocking &6Farming Mastery&r will give you powerful new plants to grow on your farm that can be obtained from the &6Market&r using &6Prismatic Shards&r."]
 			id: "40845F4C88AD03CB"
 			rewards: [{
 				count: 3
@@ -1549,7 +1557,19 @@
 		}
 		{
 			dependencies: ["40845F4C88AD03CB"]
+			description: [
+				"&6Sparkpods&r are rough otherworldly fruits that can be sourced from the &6Market&r. "
+				""
+				"They are filled with energy and can be mashed into &6Sparkstone&r using a variety of methods."
+				""
+				"Unlike most crops, they have no seeds, making them unable to be cultivated using a &6Seed Maker&r..."
+			]
 			id: "76672EF7299492DF"
+			rewards: [{
+				id: "039F60D5EE60F51E"
+				item: "society:sparkpod_seed"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3211101688780CC5"
 				item: "society:sparkpod_seed"
@@ -1560,13 +1580,60 @@
 		}
 		{
 			dependencies: ["3C12A8CA17EACA0B"]
+			description: [
+				"The &6Recycled Core&r is a smith's best friend, doubling the output of all &6Recycling Machine&r recipes. "
+				""
+				"It can be purchased from the &6Trader&r."
+				""
+				"&oRecipes similar to hook recycling do not double.&r"
+			]
 			id: "642F0375D7805A1B"
+			rewards: [{
+				id: "4742A82742201122"
+				item: "oreganized:raw_silver"
+				type: "item"
+			}]
 			tasks: [{
 				id: "21411FD800D50B90"
 				item: "society:recycled_core"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40845F4C88AD03CB"]
+			description: [
+				"The &6Market&r will trade a &6Mystic Willow Sapling&r, which can be tapped for its valuable syrup."
+				""
+				"You'll first need the rare &6Grimwood sapling&r, found in the world or rarely dug up from harvesting crops. "
+			]
+			icon: "cluttered:willow_sapling"
+			id: "458EC4BFA0C47FCB"
+			rewards: [{
+				id: "5FB77FCF4E2CC6AF"
+				item: "society:treasure_totem"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5E5F0F37070C1C9A"
+					item: "atmospheric:grimwood_sapling"
+					type: "item"
+				}
+				{
+					id: "3E554AEF9F6856CD"
+					item: "cluttered:willow_sapling"
+					type: "item"
+				}
+				{
+					id: "5E6A674C5A2310A8"
+					item: "society:mystic_syrup"
+					type: "item"
+				}
+			]
+			title: "Purple Syrup"
+			x: -5.5d
 			y: 4.5d
 		}
 	]

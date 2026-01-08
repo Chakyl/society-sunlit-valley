@@ -1406,8 +1406,12 @@ ItemEvents.tooltip((tooltip) => {
   );
   // Mastery
   tooltip.add(
-    "society:net_bobber",
-    Text.translatable("item.society.net_bobber.description").gray()
+    "society:treasure_totem",
+    Text.translatable("item.society.treasure_totem.description").gray()
+  );
+  tooltip.add(
+    "society:bubble_totem",
+    Text.translatable("item.society.bubble_totem.description").gray()
   );
   tooltip.add(
     "society:needle_bobber",

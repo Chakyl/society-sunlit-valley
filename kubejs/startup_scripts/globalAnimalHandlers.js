@@ -318,7 +318,7 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers) => {
   const ageLastMagicHarvested = data.getInt("ageLastMagicHarvested");
   const freshAnimal = plushieModifiers
     ? false
-    : global.isFresh(day, ageLastDroppedSpecial);
+    : global.isFresh(day, ageLastMagicHarvested);
   let affection;
   let mood;
   if (plushieModifiers) {

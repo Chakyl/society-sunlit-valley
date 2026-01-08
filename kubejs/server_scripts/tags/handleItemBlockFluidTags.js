@@ -422,6 +422,18 @@ ServerEvents.tags("item", (e) => {
   global.agedRoe.forEach((preserve) => {
     e.add("society:aged_roe", preserve.item);
   });
+  global.geodeList.forEach((mineral) => {
+    if (mineral.item !== "society:froggy_helm")
+      e.add("society:mineral", mineral.item);
+  });
+  global.frozenGeodeList.forEach((mineral) => {
+    if (mineral.item !== "society:ribbit_drum")
+      e.add("society:mineral", mineral.item);
+  });
+  global.magmaGeodeList.forEach((mineral) => {
+    if (mineral.item !== "society:ribbit_gadget")
+      e.add("society:mineral", mineral.item);
+  });
   global.pristine.forEach((mineral) => {
     e.add("society:pristine_mineral", mineral.item);
   });

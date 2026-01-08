@@ -75,7 +75,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1.5",
+          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1.25",
           "lock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1"
         }
       },
@@ -303,7 +303,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 2",
+          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1.5",
           "lock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1"
         }
       },
