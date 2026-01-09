@@ -1,5 +1,5 @@
 //priority: 100
-console.info("[SOCIETY] seedMaker.js loaded");
+console.info("[SOCIETY] ancientGoddessStatue.js loaded");
 
 StartupEvents.registry("block", (event) => {
   event

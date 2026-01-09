@@ -1263,7 +1263,7 @@
 		}
 		{
 			dependencies: ["25677844C218103A"]
-			description: ["Unlocking &6Husbandry Mastery&r provides"]
+			description: ["Unlocking &6Husbandry Mastery&r allows you to upgrade the production of your animals significantly."]
 			id: "3979B0AD660A33D2"
 			rewards: [{
 				count: 3
@@ -1276,7 +1276,7 @@
 				icon: "society:milk_pail"
 				id: "5492353782FA1337"
 				stage: "husbandry_mastery"
-				title: "Unlock Fishing Mastery"
+				title: "Unlock Husbandry Mastery"
 				type: "gamestage"
 			}]
 			x: -7.0d
@@ -1477,7 +1477,7 @@
 		}
 		{
 			dependencies: ["25677844C218103A"]
-			description: ["Unlocking &6Farming Mastery&r "]
+			description: ["Unlocking &6Mining Mastery&r "]
 			id: "3C12A8CA17EACA0B"
 			rewards: [{
 				count: 3
@@ -1634,6 +1634,17 @@
 			]
 			title: "Purple Syrup"
 			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C12A8CA17EACA0B"]
+			id: "224AC273D2E3D1D7"
+			tasks: [{
+				id: "4A45494A3132F91A"
+				item: "society:moon_pylon"
+				type: "item"
+			}]
+			x: -3.5d
 			y: 4.5d
 		}
 	]

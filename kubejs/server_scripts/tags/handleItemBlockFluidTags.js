@@ -481,6 +481,7 @@ ServerEvents.tags("item", (e) => {
     }
   );
   e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth");
+  e.add("forge:raw_materials", "etcetera:raw_bismuth");
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");

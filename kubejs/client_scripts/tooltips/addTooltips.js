@@ -1418,6 +1418,10 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("item.society.needle_bobber.description").gray()
   );
   tooltip.add(
+    "society:net_bobber",
+    Text.translatable("item.society.net_bobber.description").gray()
+  );
+  tooltip.add(
     "domesticationinnovation:collar_tag",
     Text.translatable("item.society.collar_tag.description").gray()
   );

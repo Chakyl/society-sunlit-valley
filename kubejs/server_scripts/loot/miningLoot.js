@@ -88,6 +88,100 @@ const addMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
     });
   }
 };
+const addWeightedMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
+  overworldOres.forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .hasAnyStage(stage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(chance).addWeightedLoot(item);
+      });
+  });
+  netherOres.forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .hasAnyStage(stage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(chance).addWeightedLoot(item);
+      });
+  });
+
+  skullCavernOres.forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .hasAnyStage(stage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(chance).addWeightedLoot(item);
+      });
+  });
+  if (otherPool && otherPool.length > 0) {
+    otherPool.forEach((ore) => {
+      e.addBlockLootModifier(ore)
+        .hasAnyStage(stage)
+        .pool((p) => {
+          p.not((n) =>
+            n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+          );
+          p.randomChance(chance).addWeightedLoot(item);
+        });
+    });
+  }
+};
+const addAdditionalGeodeRoll = (e, geodeStage) => {
+  overworldOres.forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .hasAnyStage(geodeStage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(0.1).addLoot("society:geode");
+      });
+    e.addBlockLootModifier(ore)
+      .biome("#forge:is_cold")
+      .hasAnyStage(geodeStage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(0.1).addLoot("society:frozen_geode");
+      });
+    e.addBlockLootModifier(ore)
+      .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
+      .hasAnyStage(geodeStage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(0.1).addLoot("society:frozen_geode");
+      });
+    e.addBlockLootModifier(ore)
+      .biome("#society:is_skull_cavern")
+      .hasAnyStage(geodeStage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(0.04).addLoot("society:omni_geode");
+      });
+  });
+  netherOres.forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .hasAnyStage(geodeStage)
+      .pool((p) => {
+        p.not((n) =>
+          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+        );
+        p.randomChance(0.1).addLoot("society:magma_geode");
+      });
+  });
+};
 LootJS.modifiers((e) => {
   overworldOres.forEach((ore) => {
     e.addBlockLootModifier(ore).pool((p) => {
@@ -99,14 +193,6 @@ LootJS.modifiers((e) => {
       });
       p.randomChance(0.1).addLoot("society:geode");
     });
-    e.addBlockLootModifier(ore)
-      .hasAnyStage("excavator")
-      .pool((p) => {
-        p.not((n) =>
-          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
-        );
-        p.randomChance(0.1).addLoot("society:geode");
-      });
     e.addBlockLootModifier(ore)
       .hasAnyStage("mineralogist")
       .pool((p) => {
@@ -127,15 +213,6 @@ LootJS.modifiers((e) => {
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
     e.addBlockLootModifier(ore)
-      .biome("#forge:is_cold")
-      .hasAnyStage("excavator")
-      .pool((p) => {
-        p.not((n) =>
-          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
-        );
-        p.randomChance(0.1).addLoot("society:frozen_geode");
-      });
-    e.addBlockLootModifier(ore)
       .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
       .pool((p) => {
         p.not((n) =>
@@ -144,15 +221,6 @@ LootJS.modifiers((e) => {
         p.matchEntity((entity) => {
           entity.anyType("minecraft:player");
         });
-        p.randomChance(0.1).addLoot("society:frozen_geode");
-      });
-    e.addBlockLootModifier(ore)
-      .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
-      .hasAnyStage("excavator")
-      .pool((p) => {
-        p.not((n) =>
-          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
-        );
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
     e.addBlockLootModifier(ore)
@@ -173,15 +241,6 @@ LootJS.modifiers((e) => {
         p.matchEntity((entity) => {
           entity.anyType("minecraft:player");
         });
-        p.randomChance(0.04).addLoot("society:omni_geode");
-      });
-    e.addBlockLootModifier(ore)
-      .biome("#society:is_skull_cavern")
-      .hasAnyStage("excavator")
-      .pool((p) => {
-        p.not((n) =>
-          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
-        );
         p.randomChance(0.04).addLoot("society:omni_geode");
       });
     e.addBlockLootModifier(ore)
@@ -281,14 +340,6 @@ LootJS.modifiers((e) => {
       p.randomChance(0.1).addLoot("society:magma_geode");
     });
     e.addBlockLootModifier(ore)
-      .hasAnyStage("excavator")
-      .pool((p) => {
-        p.not((n) =>
-          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
-        );
-        p.randomChance(0.1).addLoot("society:magma_geode");
-      });
-    e.addBlockLootModifier(ore)
       .hasAnyStage("mineralogist")
       .pool((p) => {
         p.not((n) =>
@@ -374,4 +425,24 @@ LootJS.modifiers((e) => {
       });
     }
   );
+
+  addAdditionalGeodeRoll(e, "excavator");
+
+  // Mastery Moon Pylon
+  const remains = Ingredient.of("#society:fossilish").itemIds;
+  const weightedRemains = [];
+  remains.forEach((remain) =>
+    weightedRemains.push(Item.of(remain).withChance(1))
+  );
+
+  addWeightedMiningLootToAllOres(e, "pylon_remains", 0.05, remains);
+  addAdditionalGeodeRoll(e, "pylon_geode_roll");
+
+  e.addBlockLootModifier(overworldOres)
+    .hasAnyStage("pylon_extra_ore")
+    .modifyLoot(Ingredient.all, (itemStack) => {
+      if (itemStack.hasTag("forge:raw_materials"))
+        itemStack.setCount(itemStack.getCount() + 1);
+      return itemStack;
+    });
 });
