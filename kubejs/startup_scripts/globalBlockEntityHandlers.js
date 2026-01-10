@@ -783,33 +783,35 @@ global.handleSkullCavernRegen = (level, block) => {
     level.persistentData.chunkParityMap[
       level.getChunkAt(block.getPos()).pos.toString()
     ].toggleBit;
-  if (String(toggleBit) != block.getProperties().get("chunkbit")) {
-    belowPos = block.getPos().below();
-    belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
-    belowBelowPos = belowBlock.getPos().below();
-    hasRope =
-      level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
-      "farmersdelight:rope";
-    let newBlock;
-    switch (Number(block.properties.get("type"))) {
-      case 4:
-        newBlock = rollReplaceTable(endstoneRockTable, hasRope);
-        break;
-      case 3:
-        newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
-        break;
-      case 2:
-        newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
-        break;
-      case 1:
-        newBlock = rollReplaceTable(iceRockTable, hasRope);
-        break;
-      default:
-      case 0:
-        newBlock = rollReplaceTable(stoneRockTable, hasRope);
-        break;
+  if (block && block.getProperties() && block.getProperties().has("chunkbit")) {
+    if (String(toggleBit) != block.getProperties().get("chunkbit")) {
+      belowPos = block.getPos().below();
+      belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+      belowBelowPos = belowBlock.getPos().below();
+      hasRope =
+        level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
+        "farmersdelight:rope";
+      let newBlock;
+      switch (Number(block.properties.get("type"))) {
+        case 4:
+          newBlock = rollReplaceTable(endstoneRockTable, hasRope);
+          break;
+        case 3:
+          newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
+          break;
+        case 2:
+          newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
+          break;
+        case 1:
+          newBlock = rollReplaceTable(iceRockTable, hasRope);
+          break;
+        default:
+        case 0:
+          newBlock = rollReplaceTable(stoneRockTable, hasRope);
+          break;
+      }
+      block.set(newBlock);
     }
-    block.set(newBlock);
   }
 };
 const getCardinalMultipartJsonBasic = (name) => {

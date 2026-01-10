@@ -20,6 +20,7 @@ const scheduleFunction = (level, pos, server, rockType) => {
       level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()]
         .toggleBit;
     if (
+      level.getBlock(pos) &&
       ["minecraft:air", "minecraft:void_air", "minecraft:cave_air"].includes(
         level.getBlock(pos).id
       )
