@@ -5,6 +5,11 @@
     }
   ],
   "lookup_history": [
+    "item:minecraft:spruce_log",
+    "item:beachparty:sandwaves",
+    "item:numismatics:prismatic_coin",
+    "item:numismatics:ancient_coin",
+    "item:numismatics:crown",
     "item:vintagedelight:fermenting_jar",
     "item:society:oil_maker",
     "item:society:cheese_press",
@@ -691,11 +696,6 @@
     "item:gamediscs:game_disc_slime",
     "item:numismatics:sun",
     "item:minecraft:enchanted_golden_apple",
-    {
-      "type": "item",
-      "id": "numismatics:crown",
-      "amount": 2
-    },
     "item:trials:trial_key",
     "item:betterarcheology:guardian_fossil_body",
     "item:moblassos:hostile_lasso",
@@ -705,7 +705,6 @@
     "item:herbalbrews:flask",
     "item:cluttered:chiseled_gold_block",
     "item:mysticaloaktree:wise_oak",
-    "item:numismatics:ancient_coin",
     "item:quark:hollow_spruce_log",
     "item:minecraft:stripped_oak_wood",
     "item:minecraft:oak_pressure_plate",
@@ -1020,7 +1019,6 @@
     "item:create:crushed_raw_zinc",
     "item:create:crushed_raw_lead",
     "item:etcetera:nether_bismuth_ore",
-    "item:minecraft:spruce_log",
     "item:minecraft:spruce_wood",
     "item:minecraft:spruce_stairs",
     "item:etcetera:terracotta_vase",
@@ -1304,9 +1302,7 @@
     "item:cluttered:art_nouveau_door_dark",
     "item:cluttered:blue_rose_striped_wallpaper_top",
     "item:cluttered:antique_bricks_border",
-    "item:cluttered:antique_bricks",
-    "item:cluttered:wicker_block",
-    "item:cluttered:pok_ta_pok_hoop"
+    "item:cluttered:antique_bricks"
   ],
   "craft_history": [
     "minecraft:kjs/society_crystalarium",

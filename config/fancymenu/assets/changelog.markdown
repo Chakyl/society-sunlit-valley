@@ -1,5 +1,5 @@
 ^^^
-## The Heart of the Community
+## Masterful Community
 ### v4.0.0
 ^^^
 --- 
