@@ -3072,6 +3072,48 @@
             ]
         },
         {
+            "pakku_id": "MNHZNfjJYmjByNrg",
+            "pakku_links": [
+                "OjsYMehqACUhUBxE"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-schematicchecker"
+            },
+            "name": {
+                "curseforge": "Create: Schematic Checker"
+            },
+            "id": {
+                "curseforge": "1357430"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CreateSchematicChecker-0.21.13-6.0-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7420/638/CreateSchematicChecker-0.21.13-6.0-forge-1.20.1.jar",
+                    "id": "7420638",
+                    "parent_id": "1357430",
+                    "hashes": {
+                        "sha1": "1532ddc1256144545bd42d11b95c04dfd8afd04c",
+                        "md5": "8a4b5292099654a628d5514527b8ceee"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 203310,
+                    "date_published": "2026-01-05T11:48:53.320Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "JIJ7zwWniSI2I0rQ",
             "type": "MOD",
             "slug": {
@@ -4066,6 +4108,46 @@
             ]
         },
         {
+            "pakku_id": "K4NfSe5EvNNWTgqN",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "easy-npc-core",
+                "modrinth": "easy-npc-core"
+            },
+            "name": {
+                "curseforge": "Easy NPC: Core",
+                "modrinth": "Easy NPC: Core"
+            },
+            "id": {
+                "curseforge": "1308987",
+                "modrinth": "Epm6R3P2"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "easy_npc-forge-1.20.1-6.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7287/117/easy_npc-forge-1.20.1-6.1.0.jar",
+                    "id": "7287117",
+                    "parent_id": "1308987",
+                    "hashes": {
+                        "sha1": "122083fd49e9a6eb273a549bfd226431f11f83ee",
+                        "md5": "255de5e2a8f0aef706586b538344f3ae"
+                    },
+                    "required_dependencies": [],
+                    "size": 1519447,
+                    "date_published": "2025-12-02T20:32:01.007Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "enYb9sPrtN1zNFex",
             "type": "MOD",
             "side": "CLIENT",
@@ -4828,7 +4910,7 @@
                 "curseforge": "ftb-quests-forge"
             },
             "name": {
-                "curseforge": "FTB Quests (Forge)"
+                "curseforge": "FTB Quests (NeoForge)"
             },
             "id": {
                 "curseforge": "289412"
@@ -4836,7 +4918,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-quests-forge-2001.4.14.jar",
+                    "file_name": "ftb-quests-forge-2001.4.17.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4844,20 +4926,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6829/212/ftb-quests-forge-2001.4.14.jar",
-                    "id": "6829212",
+                    "url": "https://edge.forgecdn.net/files/7260/736/ftb-quests-forge-2001.4.17.jar",
+                    "id": "7260736",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "479d9ad654984f5cedf23c14a311f3cff4efbcb7",
-                        "md5": "a02b8885bc618a54f41885ddb24e2d8f"
+                        "sha1": "f7e4fec8991ce2b036ed4628e01fb48446a25ec7",
+                        "md5": "35f79e8e8b0849d6038cd4cd9c86b08a"
                     },
                     "required_dependencies": [
-                        "419699",
+                        "404468",
                         "404465",
-                        "404468"
+                        "419699"
                     ],
-                    "size": 1222711,
-                    "date_published": "2025-07-30T15:39:30.857Z"
+                    "size": 1227820,
+                    "date_published": "2025-11-25T11:37:06.847Z"
                 }
             ]
         },
@@ -6014,7 +6096,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "golemoverhaul-forge-1.20.1-1.0.0.jar",
+                    "file_name": "golemoverhaul-forge-1.20.1-1.0.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6023,21 +6105,21 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7254/850/golemoverhaul-forge-1.20.1-1.0.0.jar",
-                    "id": "7254850",
+                    "url": "https://edge.forgecdn.net/files/7423/325/golemoverhaul-forge-1.20.1-1.0.1.jar",
+                    "id": "7423325",
                     "parent_id": "618752",
                     "hashes": {
-                        "sha1": "e9a8ee05b926490f232ce5e22eaae9aca77f56dc",
-                        "md5": "60c5b6f9105be4ce2b4d121b6e538c01"
+                        "sha1": "8ce8009340a9b04e546a18b75630b9975fd8a60e",
+                        "md5": "14398670abfd28524d93ba55c0e92e9f"
                     },
                     "required_dependencies": [
-                        "388172",
                         "714059",
-                        "419699",
-                        "570073"
+                        "388172",
+                        "570073",
+                        "419699"
                     ],
-                    "size": 1655721,
-                    "date_published": "2025-11-23T19:52:30.787Z"
+                    "size": 1028510,
+                    "date_published": "2026-01-06T00:19:59.477Z"
                 }
             ]
         },
@@ -8801,7 +8883,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "particlerain-4.0.0-beta.3+1.20.1-forge.jar",
+                    "file_name": "particlerain-4.0.0-beta.5+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -8810,18 +8892,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7134/900/particlerain-4.0.0-beta.3+1.20.1-forge.jar",
-                    "id": "7134900",
+                    "url": "https://edge.forgecdn.net/files/7378/848/particlerain-4.0.0-beta.5+1.20.1-forge.jar",
+                    "id": "7378848",
                     "parent_id": "421897",
                     "hashes": {
-                        "sha1": "f0cb2f9f008e8c03c4bbff2906588ed1d415a875",
-                        "md5": "d7185cd6133b862c9b00161df6b6a6d9"
+                        "sha1": "f0776c78f8ef74b34137ce3acb5ce229a8152d3b",
+                        "md5": "de69e6b8aba913513305cbe469fc5d3d"
                     },
-                    "required_dependencies": [
-                        "667299"
-                    ],
-                    "size": 774930,
-                    "date_published": "2025-10-21T22:58:52.727Z"
+                    "required_dependencies": [],
+                    "size": 1226152,
+                    "date_published": "2025-12-26T00:44:06.273Z"
                 }
             ]
         },
@@ -10040,7 +10120,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Ribbits-1.20.1-Forge-3.0.4.jar",
+                    "file_name": "Ribbits-1.20.1-Forge-3.0.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10048,19 +10128,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6182/692/Ribbits-1.20.1-Forge-3.0.4.jar",
-                    "id": "6182692",
+                    "url": "https://edge.forgecdn.net/files/7354/928/Ribbits-1.20.1-Forge-3.0.5.jar",
+                    "id": "7354928",
                     "parent_id": "622967",
                     "hashes": {
-                        "sha1": "71ea783348537edaf992366b3be306f9ede9a6d4",
-                        "md5": "a43ce8463310788ec0535c98f255a958"
+                        "sha1": "5cc73d3399248300a188164406cd801cc4ae00b3",
+                        "md5": "78738d0963058eb2dd061146a6fd86e8"
                     },
                     "required_dependencies": [
                         "388172",
                         "421850"
                     ],
-                    "size": 2218573,
-                    "date_published": "2025-02-11T20:06:51.840Z"
+                    "size": 2223589,
+                    "date_published": "2025-12-19T20:39:22.690Z"
                 }
             ]
         },
@@ -11335,7 +11415,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stardew_fishing-3.3-1.20.1.jar",
+                    "file_name": "stardew_fishing-3.5-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11343,16 +11423,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7266/346/stardew_fishing-3.3-1.20.1.jar",
-                    "id": "7266346",
+                    "url": "https://edge.forgecdn.net/files/7409/704/stardew_fishing-3.5-1.20.1.jar",
+                    "id": "7409704",
                     "parent_id": "1066037",
                     "hashes": {
-                        "sha1": "445eea2c164dc5527d8c1d3cda9ddd00d316eb50",
-                        "md5": "1784be3e24a480f7faf85a3f56281110"
+                        "sha1": "5cd0ab913eb925b29ac11b8d6a89700e4568c119",
+                        "md5": "c412634132e8acd634ca6c5d754613cd"
                     },
                     "required_dependencies": [],
-                    "size": 876083,
-                    "date_published": "2025-11-27T00:24:21.323Z"
+                    "size": 885533,
+                    "date_published": "2026-01-02T20:56:36.440Z"
                 }
             ]
         },
@@ -11610,7 +11690,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-5.1.jar",
+                    "file_name": "dew_drop_farmland_growth-6.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11618,18 +11698,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7133/472/dew_drop_farmland_growth-5.1.jar",
-                    "id": "7133472",
+                    "url": "https://edge.forgecdn.net/files/7410/800/dew_drop_farmland_growth-6.0.jar",
+                    "id": "7410800",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "84cc830e448b9a86080f6f7786f86c3063a7156e",
-                        "md5": "7fab64bdfed4048e047150c90ebbe92d"
+                        "sha1": "398a63d4a21b95f35e8708e06cb566f54051c4d0",
+                        "md5": "6852cde819926e4596f16e822659d76c"
                     },
                     "required_dependencies": [
                         "1062753"
                     ],
-                    "size": 145932,
-                    "date_published": "2025-10-21T15:55:48.270Z"
+                    "size": 146879,
+                    "date_published": "2026-01-03T03:33:41.373Z"
                 }
             ]
         },
@@ -12015,6 +12095,69 @@
                     "required_dependencies": [],
                     "size": 253567,
                     "date_published": "2024-11-22T20:33:59.630Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "hE0Pmky6ePLljAGD",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "tooltip-overhaul",
+                "modrinth": "tooltip-overhaul"
+            },
+            "name": {
+                "curseforge": "Tooltip Overhaul",
+                "modrinth": "Tooltip Overhaul"
+            },
+            "id": {
+                "curseforge": "1327508",
+                "modrinth": "vRFcG5n6"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tooltipoverhaul-forge-1.20.1-1.4.0.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7357/419/tooltipoverhaul-forge-1.20.1-1.4.0.jar",
+                    "id": "7357419",
+                    "parent_id": "1327508",
+                    "hashes": {
+                        "sha1": "144718a8920cc18d434dbc9bc1901bc50fff07ae",
+                        "md5": "0ea94d1480ab67cc2474df9f84937c56"
+                    },
+                    "required_dependencies": [],
+                    "size": 455823,
+                    "date_published": "2025-12-20T14:48:50.810Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tooltipoverhaul-forge-1.20.1-1.4.0.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/vRFcG5n6/versions/GJm61NXX/tooltipoverhaul-forge-1.20.1-1.4.0.jar",
+                    "id": "GJm61NXX",
+                    "parent_id": "vRFcG5n6",
+                    "hashes": {
+                        "sha512": "f778bbd74ad67b28d25aa3523bc79b3da15bece0fcbd05b5b6cbe857ca775e39bb2b6c56500db299d4d708d26fa9acd3aa28151da3102ab203727156597af9a3",
+                        "sha1": "144718a8920cc18d434dbc9bc1901bc50fff07ae"
+                    },
+                    "required_dependencies": [],
+                    "size": 455823,
+                    "date_published": "2025-12-20T14:49:03.437920Z"
                 }
             ]
         },

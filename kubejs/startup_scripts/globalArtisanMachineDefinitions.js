@@ -117,6 +117,12 @@ global.artisanMachineDefinitions = [
     maxInput: 1,
     upgrade: "society:recycled_core",
   },
+  {
+    id: "society:oil_maker",
+    recipes: global.oilMakerRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
 ];
 
 global.artisanMachineIds = global.artisanMachineDefinitions.map((x) => x.id);

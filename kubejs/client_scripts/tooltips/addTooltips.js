@@ -714,6 +714,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:recycling_machine",
       "society:cheese_press",
       "society:wine_keg",
+      "society:oil_maker",
     ],
     Text.translatable("tooltip.society.artisan_machine").white()
   );

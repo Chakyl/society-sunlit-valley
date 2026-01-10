@@ -767,6 +767,9 @@ global.artisanGoods = [
   { item: "society:double_aged_grain_cheese_block", value: 2376 },
   { item: "society:double_aged_amethyst_cheese_block", value: 15552 },
   { item: "society:double_aged_tribull_cheese_wheel", value: 20736 },
+  { item: "society:truffle_oil", value: 1536 },
+  { item: "society:oil", value: 112 },
+  { item: "society:coconut_oil", value: 64 },
 ];
 
 const cheeses = [
@@ -1206,7 +1209,6 @@ let fermentingRecipes = [
   { item: "vintagedelight:century_egg", value: 136 },
   { item: "vintagedelight:surstromming", value: 48 },
   { item: "vintagedelight:pickled_pepper", value: 38 },
-  { item: "society:truffle_oil", value: 2752 },
   { item: "vintagedelight:overnight_oats", value: 120 },
   { item: "vintagedelight:pickled_beetroot", value: 26 },
   { item: "vintagedelight:pickled_egg", value: 16 },
@@ -1402,7 +1404,7 @@ const cookingPotRecipes = [
   { item: "bakery:glowberry_jam", value: 27 },
   { item: "farm_and_charm:simple_tomato_soup", value: 55 },
   { item: "bakery:sweetberry_jam", value: 7 },
-  { item: "bakery:chocolate_donut", value: 3144 },
+  { item: "bakery:chocolate_donut", value: 427 },
   { item: "farmersdelight:vegetable_noodles", value: 136 },
   { item: "vintagedelight:pad_thai", value: 372 },
   { item: "farm_and_charm:potato_soup", value: 36 },

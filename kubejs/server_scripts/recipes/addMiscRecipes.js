@@ -290,6 +290,13 @@ ServerEvents.recipes((e) => {
     C: "society:jade",
     f: "society:fire_quartz",
   });
+    e.shaped("society:oil_maker", ["ccj", "ccs", "fgf"], {
+    c: "minecraft:copper_block",
+    g: "minecraft:gold_block",
+    j: "society:jade",
+    s: "supplementaries:jar",
+    f: "meadow:fire_log",
+  });
   e.shaped("society:preserves_jar", ["LLL", "LbL", "CiC"], {
     b: "minecraft:barrel",
     L: "meadow:fire_log",

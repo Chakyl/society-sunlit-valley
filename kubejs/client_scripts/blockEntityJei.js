@@ -226,6 +226,7 @@ JEIAddedEvents.registerCategories((e) => {
     0
   );
   registerBECategory(e, "recycling", "recycling_machine", Text.translatable("jei.society.category.recycling"), 1, 1);
+  registerBECategory(e, "oil_making", "oil_maker", Text.translatable("jei.society.category.oil_making"), 1, 1);
   registerBECategory(e, "tapping", "tapper", Text.translatable("jei.society.category.tapping"), 1, 7);
   registerBECategory(e, "auto_tapping", "auto_tapper", Text.translatable("jei.society.category.auto_tapping"), 1, 0.5);
   registerBECategory(e, "pickling", "pickling_can", Text.translatable("jei.society.category.pickling"), 1, 0.5);
@@ -426,6 +427,15 @@ JEIAddedEvents.registerRecipes((e) => {
   Array.from(global.recyclingMachineRecipes.keys()).forEach((element) => {
     recipe = global.recyclingMachineRecipes.get(element);
     e.custom("society:recycling").add({
+      input: element,
+      output: recipe.output,
+      time: recipe.time,
+      fluidData: recipe.fluidData,
+    });
+  });
+    Array.from(global.oilMakerRecipes.keys()).forEach((element) => {
+    recipe = global.oilMakerRecipes.get(element);
+    e.custom("society:oil_making").add({
       input: element,
       output: recipe.output,
       time: recipe.time,

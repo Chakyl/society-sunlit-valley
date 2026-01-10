@@ -215,6 +215,13 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
         outputMult: upgraded ? 2 : 1,
       };
       break;
+        case "society:oil_maker":
+      machineData = {
+        recipes: global.oilMakerRecipes,
+        stageCount: 1,
+        soundType: "supplementaries:block.jar.place"
+      };
+      break;
     case "society:tapper":
       machineData = {
         recipes: global.tapperRecipes,

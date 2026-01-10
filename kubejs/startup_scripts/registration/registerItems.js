@@ -720,6 +720,8 @@ StartupEvents.registry("item", (e) => {
       })
       .useAnimation("drink");
   });
+  e.create("society:oil").texture("society:item/oil");
+  e.create("society:coconut_oil").texture("society:item/coconut_oil");
   e.create("society:butterfly_amber").texture("society:item/butterfly_amber");
   e.create("society:moth_pollen").texture("society:item/moth_pollen");
   e.create(`society:magic_rope`).texture(`society:item/magic_rope`);
@@ -807,95 +809,15 @@ StartupEvents.registry("item", (e) => {
     }
   });
   // Dehydrator outputs
-  e.create(`society:raisins`)
-    .texture(`society:item/raisins`)
+  global.dehydrated.forEach((dried) => {
+      e.create(dried.item)
+    .texture(`society:item/dried/${dried.item.path}`)
     .food((food) => {
       food.hunger(9);
       food.saturation(0.5);
       food.fastToEat(true);
     });
-  e.create(`society:nether_raisins`)
-    .texture(`society:item/nether_raisins`)
-    .food((food) => {
-      food.hunger(9);
-      food.saturation(0.5);
-      food.fastToEat(true);
-    });
-  e.create(`society:dried_shimmering_mushrooms`).texture(
-    `society:item/dried_shimmering_mushrooms`
-  );
-  const dehydratorMushroomMapping = [
-    { item: "minecraft:brown_mushroom", hex: 0xca9777 },
-    { item: "minecraft:red_mushroom", hex: 0xfb2929 },
-    { item: "minecraft:crimson_fungus", hex: 0xa82812 },
-    { item: "minecraft:warped_fungus", hex: 0x14b283 },
-    { item: "quark:glow_shroom", hex: 0xc1f0dc },
-    { item: "ribbits:toadstool", hex: 0xab1c2c },
-    { item: "species:alphacene_mushroom", hex: 0xecdb74 },
-    { item: "verdantvibes:bracket_mushroom", hex: 0x7d563b },
-  ];
-  global.dehydratableMushrooms.forEach((item) => {
-    const itemHex = dehydratorMushroomMapping.find(
-      (val) => val.item === item
-    )?.hex;
-    e.create(`society:dried_${item.path}`)
-      .texture(`society:item/dried_mushrooms`)
-      .color(0, itemHex)
-      .food((food) => {
-        food.hunger(9);
-        food.saturation(0.5);
-        food.fastToEat(true);
-      });
-  });
-  const dehydratorFruitMapping = [
-    { item: "minecraft:sweet_berries", hex: 0xa30700 },
-    { item: "farm_and_charm:strawberry", hex: 0xe6472d },
-    { item: "autumnity:foul_berries", hex: 0xd0af33 },
-    { item: "minecraft:apple", hex: 0xfc1c2a },
-    { item: "minecraft:melon_slice", hex: 0xbd3023 },
-    { item: "minecraft:chorus_fruit", hex: 0xa17fa0 },
-    { item: "vintagedelight:gearo_berry", hex: 0xf068df },
-    { item: "minecraft:glow_berries", hex: 0xee9444 },
-    { item: "society:blueberry", hex: 0x4c64b2 },
-    { item: "society:ancient_fruit", hex: 0x06b5c5 },
-    { item: "atmospheric:currant", hex: 0x2d2e32 },
-    { item: "atmospheric:yucca_fruit", hex: 0xb6fc67 },
-    { item: "atmospheric:orange", hex: 0xfc9919 },
-    { item: "atmospheric:passion_fruit", hex: 0xebb020 },
-    { item: "pamhc2trees:starfruititem", hex: 0xf8d035 },
-    { item: "pamhc2trees:mangoitem", hex: 0xf1bc2e },
-    { item: "pamhc2trees:lycheeitem", hex: 0xd5dce2 },
-    { item: "vinery:cherry", hex: 0xa2252e },
-    { item: "pamhc2trees:peachitem", hex: 0xeb996e },
-    { item: "pamhc2trees:plumitem", hex: 0xcc7dd1 },
-    { item: "pamhc2trees:pawpawitem", hex: 0x96bf75 },
-    { item: "pamhc2trees:bananaitem", hex: 0xe0c930 },
-    { item: "pamhc2trees:dragonfruititem", hex: 0xd5dce2 },
-    { item: "pamhc2trees:lemonitem", hex: 0xf8d035 },
-    { item: "society:salmonberry", hex: 0xe83b3b },
-    { item: "society:boysenberry", hex: 0xcf657f },
-    { item: "society:cranberry", hex: 0xb33831 },
-    { item: "society:crystalberry", hex: 0xb33831 },
-    { item: "windswept:wild_berries", hex: 0xa53982 },
-    { item: "society:mana_fruit", hex: 0x37fcf7 },
-    { item: "society:sparkpod", hex: 0x9d1576 },
-  ];
-  global.dehydratableFruits.forEach((item) => {
-    const itemHex = dehydratorFruitMapping.find(
-      (val) => val.item === item
-    )?.hex;
-    let itemId = item.path;
-    if (itemId.includes("item"))
-      itemId = itemId.substring(0, itemId.length - 4);
-    e.create(`society:dried_${itemId}`)
-      .texture(`society:item/dried_fruit`)
-      .color(0, itemHex)
-      .food((food) => {
-        food.hunger(9);
-        food.saturation(0.5);
-        food.fastToEat(true);
-      });
-  });
+  })
   const ageableProductsTextureMap = [
     {
       item: "vinery:creepers_crush",
