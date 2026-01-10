@@ -13,8 +13,16 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.ancient_goddess_statue.description").gray());
-      item.tooltip(Text.translatable("block.society.ancient_goddess_statue.description.warn").red());
+      item.tooltip(
+        Text.translatable(
+          "block.society.ancient_goddess_statue.description"
+        ).gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.ancient_goddess_statue.description.warn"
+        ).red()
+      );
       item.modelJson({
         parent: "society:block/ancient_goddess_statue",
       });
@@ -35,7 +43,9 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.translatable("block.society.ancient_goddess_statue.spring").aqua()
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.spring"
+                  ).aqua()
                 );
               }
               break;
@@ -46,18 +56,25 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.translatable("block.society.ancient_goddess_statue.summer").aqua()
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.summer"
+                  ).aqua()
                 );
               }
               break;
             case "autumn":
               if (item === "farm_and_charm:corn" && item.count === 64) {
-                block.popItemFromFace("4x society:pristine_star_shards", facing);
+                block.popItemFromFace(
+                  "4x society:pristine_star_shards",
+                  facing
+                );
                 if (!player.isCreative()) item.count = item.count - 64;
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.translatable("block.society.ancient_goddess_statue.autumn").aqua()
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.autumn"
+                  ).aqua()
                 );
               }
               break;
@@ -68,14 +85,20 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.translatable("block.society.ancient_goddess_statue.winter").aqua()
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.winter"
+                  ).aqua()
                 );
               }
               break;
           }
         }
       } else
-        player.tell(Text.translatable("block.society.ancient_goddess_statue.no_skill").red());
+        player.tell(
+          Text.translatable(
+            "block.society.ancient_goddess_statue.no_skill"
+          ).red()
+        );
     }).blockstateJson = {
     multipart: [
       {

@@ -1460,7 +1460,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.farming_mastery.required")
   );
   tooltip.add(
-    ["society:recycled_core"],
+    ["society:recycled_core", "society:moon_pylon"],
     Text.translatable("tooltip.society.mining_mastery.required")
   );
   tooltip.add(

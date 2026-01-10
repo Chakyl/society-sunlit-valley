@@ -7,7 +7,7 @@
 			"id": "start",
 			"speaker": {
 				"translate": "dialog.npc.witch.name",
-				"color": "white"
+				"color": "gold"
 			},
 			"text": [
 				{
@@ -18,8 +18,7 @@
 				{
 					"path": "witch.png",
 					"position": "INLINE",
-					"brightness": 1,
-					"animationType": "FADE_IN"
+					"brightness": 1
 				}
 			]
 		}

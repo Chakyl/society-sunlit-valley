@@ -7,7 +7,7 @@
 			"id": "start",
 			"speaker": {
 				"translate": "dialog.npc.carpenter.name",
-				"color": "white"
+				"color": "gold"
 			},
 			"text": [
 				{
@@ -18,8 +18,7 @@
 				{
 					"path": "carpenter.png",
 					"position": "INLINE",
-					"brightness": 1,
-					"animationType": "FADE_IN"
+					"brightness": 1
 				}
 			]
 		},
@@ -27,7 +26,7 @@
 			"id": 1,
 			"speaker": {
 				"translate": "dialog.npc.carpenter.name",
-				"color": "white"
+				"color": "gold"
 			},
 			"text": [
 				{
@@ -38,8 +37,7 @@
 				{
 					"path": "carpenter.png",
 					"position": "INLINE",
-					"brightness": 1,
-					"animationType": "FADE_IN"
+					"brightness": 1
 				}
 			]
 		},
@@ -47,7 +45,7 @@
 			"id": 2,
 			"speaker": {
 				"translate": "dialog.npc.carpenter.name",
-				"color": "white"
+				"color": "gold"
 			},
 			"text": [
 				{
@@ -58,8 +56,7 @@
 				{
 					"path": "carpenter.png",
 					"position": "INLINE",
-					"brightness": 1,
-					"animationType": "FADE_IN"
+					"brightness": 1
 				}
 			]
 		},
@@ -67,7 +64,7 @@
 			"id": "end",
 			"speaker": {
 				"translate": "dialog.npc.carpenter.name",
-				"color": "white"
+				"color": "gold"
 			},
 			"text": [
 				{
@@ -78,8 +75,7 @@
 				{
 					"path": "carpenter.png",
 					"position": "INLINE",
-					"brightness": 1,
-					"animationType": "FADE_IN"
+					"brightness": 1
 				}
 			]
 		}

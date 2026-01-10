@@ -72,7 +72,7 @@ StartupEvents.registry("item", (e) => {
     .displayName("Sea Biscuit");
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
-  e.create("society:ancient_roe").texture("society:item/aged_roe");
+  e.create("society:ancient_roe").texture("society:item/ancient_roe");
   e.create("society:infinity_worm").texture("society:item/infinity_worm");
   e.create("society:frosted_tip").texture("society:item/frosted_tip");
   e.create("society:inserter").texture("society:item/inserter");

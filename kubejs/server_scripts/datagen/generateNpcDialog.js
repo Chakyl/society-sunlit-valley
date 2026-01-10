@@ -8,14 +8,13 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
     entries.push({
       id:
         index == 0 ? "start" : index == dialogLines.length - 1 ? "end" : index,
-      speaker: { translate: `dialog.npc.${npcId}.name`, color: "white" },
+      speaker: { translate: `dialog.npc.${npcId}.name`, color: "gold" },
       text: [{ translate: lineTranslationKey }],
       portraits: [
         {
           path: `${npcId}.png`,
           position: "INLINE",
-          brightness: 1.0,
-          animationType: "FADE_IN",
+          brightness: 1.0
         },
       ],
     });

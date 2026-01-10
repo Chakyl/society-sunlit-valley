@@ -1,0 +1,26 @@
+{
+	"id": "shepherd_intro",
+	"title": "shepherd introduction",
+	"description": "dialog.npc.shepherd.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.intro.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

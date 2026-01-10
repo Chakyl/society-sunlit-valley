@@ -1,0 +1,26 @@
+{
+	"id": "shepherd_chatter_friendship4_0",
+	"title": "[0] shepherd chatter at friendship level: friendship4",
+	"description": "dialog.npc.shepherd.chatter.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.chatter_friendship4.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}
