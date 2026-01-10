@@ -129,6 +129,10 @@ global.ancientCaskRecipes = new Map([]);
     name: "Tri-Bull Cheese Wheel",
     time: 13,
   },
+  { item: "society:violet_moon", name: "Violet Moon", time: 10 },
+  { item: "society:laputa_franc", name: "Laputa Franc", time: 20 },
+  { item: "society:sparkling_le_roy", name: "Sparkling Le Roy", time: 10 },
+  { item: "society:mana_king", name: "Mana King", time: 20 },
 ].forEach((product) => {
   const splitProduct = product.item.split(":");
   global.ancientCaskRecipes.set(`society:aged_${splitProduct[1]}`, {

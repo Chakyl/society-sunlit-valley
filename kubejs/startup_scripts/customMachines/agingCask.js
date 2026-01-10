@@ -130,6 +130,10 @@ global.ageableProductInputs = [
     name: "Tri-Bull Cheese Wheel",
     time: 3,
   },
+  { item: "society:violet_moon", name: "Violet Moon", time: 5 },
+  { item: "society:laputa_franc", name: "Laputa Franc", time: 10 },
+  { item: "society:sparkling_le_roy", name: "Sparkling Le Roy", time: 5 },
+  { item: "society:mana_king", name: "Mana King", time: 10 },
 ];
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");
@@ -149,7 +153,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.aging_cask.description").gray());
+      item.tooltip(
+        Text.translatable("block.society.aging_cask.description").gray()
+      );
       item.modelJson({
         parent: "society:block/aging_cask/aging_cask",
       });
@@ -199,11 +205,19 @@ StartupEvents.registry("block", (event) => {
             upgraded: true,
           });
         } else if (!upgraded && item == "society:broken_clock") {
-          player.tell(Text.translatable("society.working_block_entity.cannot_upgrade").red());
+          player.tell(
+            Text.translatable(
+              "society.working_block_entity.cannot_upgrade"
+            ).red()
+          );
         }
       }
 
-      if (player.stages.has("aged_prize") && block.properties.get("mature") === "true" && rnd5()) {
+      if (
+        player.stages.has("aged_prize") &&
+        block.properties.get("mature") === "true" &&
+        rnd5()
+      ) {
         block.popItemFromFace("society:prize_ticket", facing);
       }
       if (
@@ -212,9 +226,17 @@ StartupEvents.registry("block", (event) => {
         Number(nbt.data.stage) > 5 &&
         Math.random() <= 0.01
       ) {
-        block.popItemFromFace("society:slouching_towards_artistry", block.properties.get("facing"));
+        block.popItemFromFace(
+          "society:slouching_towards_artistry",
+          block.properties.get("facing")
+        );
       }
-      global.handleBERightClick("minecraft:block.wood.place", click, global.agingCaskRecipes, 10);
+      global.handleBERightClick(
+        "minecraft:block.wood.place",
+        click,
+        global.agingCaskRecipes,
+        10
+      );
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });

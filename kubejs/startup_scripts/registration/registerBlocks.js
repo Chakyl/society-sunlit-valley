@@ -540,7 +540,9 @@ StartupEvents.registry("block", (e) => {
         food.alwaysEdible(true);
         food.effect("legendarycreatures:convulsion", 1600, 1, 1.0);
       });
-      item.tooltip(Text.translatable("block.society.truffle_tea.description").darkPurple());
+      item.tooltip(
+        Text.translatable("block.society.truffle_tea.description").darkPurple()
+      );
       item.useAnimation("drink");
     });
 
@@ -584,26 +586,6 @@ StartupEvents.registry("block", (e) => {
     })
     .displayName("Attunecore Beer");
 
-  e.create("society:ancient_vespertine", "cardinal")
-    .box(2, 0, 2, 14, 14, 14)
-    .soundType("glass")
-    .defaultCutout()
-    .model("society:block/drinks/ancient_vespertine")
-    .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/ancient_vespertine",
-        },
-      });
-      item.food((food) => {
-        food.alwaysEdible(true);
-        food.effect("vinery:luck_effect", 2400, 1, 1.0);
-        food.fastToEat(true);
-      });
-      item.useAnimation("drink");
-    });
-
   e.create("society:ancient_cider", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
@@ -619,6 +601,26 @@ StartupEvents.registry("block", (e) => {
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("nethervinery:netherite", 400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:ancient_vespertine", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/ancient_vespertine",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("vinery:luck_effect", 2400, 1, 1.0);
         food.fastToEat(true);
       });
       item.useAnimation("drink");
@@ -679,6 +681,86 @@ StartupEvents.registry("block", (e) => {
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("brewery:haley", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:violet_moon", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .defaultCutout()
+    .soundType("glass")
+    .model("society:block/drinks/dewy_star")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/violet_moon",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("brewery:lightning_strike", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:sparkling_le_roy", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/sparkling_le_roy",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("windswept:frost_resistance", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:laputa_franc", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/laputa_franc",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("botania:soul_cross", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:mana_king", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/mana_king",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("botania:clear", 2400, 1, 1.0);
         food.fastToEat(true);
       });
       item.useAnimation("drink");
@@ -751,8 +833,14 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.supreme_mayonnaise.description").red());
-      item.tooltip(Text.translatable("block.society.supreme_mayonnaise.description.obtain").gray());
+      item.tooltip(
+        Text.translatable("block.society.supreme_mayonnaise.description").red()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.supreme_mayonnaise.description.obtain"
+        ).gray()
+      );
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("vinery:creeper_effect", 120, 4, 1.0);

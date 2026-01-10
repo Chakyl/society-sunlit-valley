@@ -418,10 +418,6 @@ ItemEvents.tooltip((tooltip) => {
     ).green()
   );
   tooltip.add(
-    "society:pink_matter",
-    Text.translatable("item.society.pink_matter.description.warn").red()
-  );
-  tooltip.add(
     "society:stone_hand",
     Text.translatable(
       "item.society.stone_hand.description",

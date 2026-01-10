@@ -1,0 +1,13 @@
+{
+  "type": "vinery:apple_fermenting",
+  "input": {
+    "item": "society:sparkpod"
+  },
+  "wine_bottle": {
+    "required": true
+  },
+  "output": {
+    "item": "society:sparkpod_juice",
+    "count": 1
+  }
+}

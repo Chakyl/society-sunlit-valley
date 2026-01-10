@@ -966,6 +966,10 @@ global.wines = [
   { item: "society:ancient_cider", value: 3424 },
   { item: "society:star_coquito", value: 6000 },
   { item: "society:nutty_basil", value: 624 },
+  { item: 'society:violet_moon', value: 1488 },
+  { item: 'society:laputa_franc', value: 3648 },
+  { item: 'society:sparkling_le_roy',  value: 2872 },
+{ item: 'society:mana_king', value: 3296 },
 ];
 
 global.wines.forEach((wine) => {

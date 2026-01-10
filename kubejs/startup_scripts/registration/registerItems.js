@@ -144,19 +144,35 @@ StartupEvents.registry("item", (e) => {
       food.fastToEat(true);
     });
   e.create("society:ancient_juice")
-    .texture("society:item/ancient_juice")
+    .texture("society:item/drinks/ancient_juice")
     .food((food) => {
       food.hunger(6);
       food.fastToEat(true);
-      food.saturation(12);
+      food.saturation(4);
     })
     .useAnimation("drink");
   e.create("society:starfruit_juice")
-    .texture("society:item/starfruit_juice")
+    .texture("society:item/drinks/starfruit_juice")
     .food((food) => {
       food.hunger(6);
       food.fastToEat(true);
-      food.saturation(8);
+      food.saturation(3);
+    })
+    .useAnimation("drink");
+  e.create("society:sparkpod_juice")
+    .texture("society:item/drinks/sparkpod_juice")
+    .food((food) => {
+      food.hunger(5);
+      food.fastToEat(true);
+      food.saturation(2);
+    })
+    .useAnimation("drink");
+  e.create("society:mana_fruit_juice")
+    .texture("society:item/drinks/mana_fruit_juice")
+    .food((food) => {
+      food.hunger(6);
+      food.fastToEat(true);
+      food.saturation(42);
     })
     .useAnimation("drink");
   e.create("society:prize_ticket").texture("society:item/prize_ticket");
@@ -810,14 +826,14 @@ StartupEvents.registry("item", (e) => {
   });
   // Dehydrator outputs
   global.dehydrated.forEach((dried) => {
-      e.create(dried.item)
-    .texture(`society:item/dried/${dried.item.path}`)
-    .food((food) => {
-      food.hunger(9);
-      food.saturation(0.5);
-      food.fastToEat(true);
-    });
-  })
+    e.create(dried.item)
+      .texture(`society:item/dried/${dried.item.path}`)
+      .food((food) => {
+        food.hunger(9);
+        food.saturation(0.5);
+        food.fastToEat(true);
+      });
+  });
   const ageableProductsTextureMap = [
     {
       item: "vinery:creepers_crush",

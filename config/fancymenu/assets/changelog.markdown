@@ -12,7 +12,7 @@
 - Added Roe Recycler, Needle Bobber, and Net Bobber to Fishing Mastery
 - Added Domestic Innovation and moved enchanting to Adventuring Mastery
 - Added new art for Minerals, Preserves, Artifacts, and so much more by NifastGreentail
-- Added Mood system for husbandry animals, an independent system from affection that tracks how well you are taking care of them and impacts their production
+- Added Mood system for husbandry animals that tracks how well you are taking care of them and impacts their production
 - Added Wine Keg - Artisan Machine for making wines without the need for juice
 - Added Oil Maker and rebalanced Truffle Oil accordingly
 - Added Oil and Coconut Oil

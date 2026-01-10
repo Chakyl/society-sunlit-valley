@@ -454,6 +454,56 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   }
 };
 
+global.handleMushroomLogRandomTick = (tickEvent) => {
+  const { block, level, server } = tickEvent;
+  let newProperties = block.getProperties();
+  let nbt = block.getEntityData();
+  const attachedBlock = global.getTapperLog(level, block);
+  let foundFluidData = undefined;
+  let hasError = false;
+  if (attachedBlock.hasTag("society:tappable_blocks")) {
+    if (
+      !nbt.data.recipe ||
+      !nbt.data.recipe.equals(attachedBlock.id) ||
+      global.hasMultipleTappers(level, block)
+    ) {
+      hasError = true;
+    }
+    if (
+      (block.properties.get("working").toLowerCase() === "false" &&
+        block.properties.get("mature").toLowerCase() === "false")
+    ) {
+      if (global.tapperRecipes) {
+        const recipe = global.tapperRecipes.get(`${attachedBlock.getId()}`);
+        let nbt = block.getEntityData();
+        if (
+          getCanTakeItems(
+            attachedBlock.getId(),
+            recipe,
+            block.properties,
+            false
+          )
+        ) {
+          newProperties = block.getProperties();
+          successParticles(level, block);
+          server.runCommandSilent(
+            `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
+          );
+          newProperties.working = false;
+          newProperties.mature = false;
+          newProperties.working = true;
+          nbt.merge({ data: { recipe: `${attachedBlock.getId()}`, stage: 0 } });
+          hasError = false;
+        }
+        block.setEntityData(nbt);
+      }
+    }
+    block.set(block.id, newProperties);
+  } else {
+    block.set(block.id, newProperties);
+  }
+};
+
 global.hasMultipleTappers = (level, block) => {
   const attachedBlock = global.getTapperLog(level, block);
   const offsetsToCheck = [
