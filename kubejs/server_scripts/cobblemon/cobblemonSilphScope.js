@@ -10,9 +10,11 @@ const $TargetingConditions = Java.loadClass(
   care less if they're in creative or invulnerable or the game is in peaceful,
   which most readily accessible selectors fail against.
 */
-const PLAYER_CONDITION = $TargetingConditions.forNonCombat().selector((entity) => {
-  return true;
-});
+const PLAYER_CONDITION = $TargetingConditions
+  .forNonCombat()
+  .selector((entity) => {
+    return true;
+  });
 
 EntityEvents.spawned((e) => {
   const { entity, level } = e;
@@ -21,6 +23,7 @@ EntityEvents.spawned((e) => {
   // trainers pokemon, and player pokemon in-tact.
   if (
     entity.type == "cobblemon:pokemon" &&
+    entity.getNbt().Pokemon &&
     entity.getNbt().Pokemon.PokemonOriginalTrainerType == "NONE" &&
     !entity.getNbt().Pokemon.PokemonData.toString().includes("uncatchable")
   ) {

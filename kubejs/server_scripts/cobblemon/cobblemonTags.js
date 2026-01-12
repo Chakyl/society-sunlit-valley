@@ -180,4 +180,5 @@ ServerEvents.tags("block", (e) => {
     e.add("sereneseasons:autumn_crops", crop);
   });
   e.add("society:raw_logs", "cobblemon:apricorn_log");
+  e.add("minecraft:crops", "#cobblemon:berries");
 });
