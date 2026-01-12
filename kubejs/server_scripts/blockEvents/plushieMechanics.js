@@ -39,7 +39,7 @@ BlockEvents.broken(global.plushies, (e) => {
           global.getPlushieItemNbt(
             baseItem.getNbt(),
             animal.type,
-            animal.customName,
+            animal.name,
             animal,
             animal
           )

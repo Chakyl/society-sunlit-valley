@@ -336,6 +336,7 @@ ServerEvents.tags("item", (e) => {
     "society:crystalberry",
     "society:cranberry",
     "society:blueberry",
+    "society:mossberry",
   ].forEach((berry) => {
     e.add("forge:crops", berry);
     e.add("forge:berries", berry);
@@ -347,6 +348,17 @@ ServerEvents.tags("item", (e) => {
       e.add("forge:fruits", berry);
     }
   );
+  [
+    "cluttered:fly_agaric",
+    "species:alphacene_mushroom",
+    "verdantvibes:bracket_mushroom",
+    "cluttered:blue_roundhead",
+    "quark:glow_shroom",
+    "minecraft:warped_fungus",
+    "minecraft:crimson_fungus",
+  ].forEach((shroom) => {
+    e.add("forge:mushrooms", shroom);
+  });
   [
     "minecraft:apple",
     "minecraft:sweet_berries",
@@ -703,6 +715,13 @@ ServerEvents.tags("block", (e) => {
   });
   Array.from(global.tapperRecipes.keys()).forEach((key) => {
     e.add("society:tappable_blocks", key);
+  });
+  Array.from(global.mushroomLogRecipes.keys()).forEach((key) => {
+    e.add("society:mushroom_log_detects", key);
+  });
+  Array.from(global.dominantMushroomLogBlocks.keys()).forEach((key) => {
+    e.add("society:mushroom_log_detects", key);
+    e.add("society:mushroom_log_dominant", key);
   });
   const unbreakableTags = [
     "minecraft:wither_immune",

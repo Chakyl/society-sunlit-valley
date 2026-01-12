@@ -76,6 +76,7 @@ global.seedMakerRecipes = new Map([
   ["veggiesdelight:turnip", { output: ["6x veggiesdelight:turnip_seeds"] }],
   ["veggiesdelight:broccoli", { output: ["6x veggiesdelight:broccoli_seeds"] }],
   ["veggiesdelight:zucchini", { output: ["6x veggiesdelight:zucchini_seeds"] }],
+  ["society:cranberry", { output: ["6x society:cranberry_seed"] }],
 ]);
 
 StartupEvents.registry("block", (event) => {

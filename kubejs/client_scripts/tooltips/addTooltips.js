@@ -69,10 +69,8 @@ ItemEvents.tooltip((tooltip) => {
             ]);
             if (animal.name) {
               text.add(5, [
-                Text.translatable(
-                  "tooltip.society.plushies.animal_name",
-                  ` ${animal.name}`
-                ),
+                Text.translatable("tooltip.society.plushies.animal_name"),
+                `§6${String(animal.name)}`,
               ]);
             }
           } else {
@@ -170,6 +168,10 @@ ItemEvents.tooltip((tooltip) => {
     );
   });
   [
+    {
+      item: "society:alias_moss",
+      description: "Mossberries can be found in any season.",
+    },
     {
       item: "society:animal_fancy",
       description: "Increases affection gained from petting farm animals.",
@@ -711,6 +713,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:cheese_press",
       "society:wine_keg",
       "society:oil_maker",
+      "society:mushroom_log",
     ],
     Text.translatable("tooltip.society.artisan_machine").white()
   );

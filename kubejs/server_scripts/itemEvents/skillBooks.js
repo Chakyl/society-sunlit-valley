@@ -1,6 +1,7 @@
 console.info("[SOCIETY] skillBooks.js loaded");
 
 [
+  { id: "society:alias_moss", skillId: "b2zbjhxyrcwlwb9e" },
   { id: "society:animal_fancy", skillId: "dk83vl5zi9fw3ovi" },
   { id: "society:banana_karenina", skillId: "76yv8nz8x47d80oe" },
   { id: "society:brine_and_punishment", skillId: "p5dklukq9ggwgfa4" },

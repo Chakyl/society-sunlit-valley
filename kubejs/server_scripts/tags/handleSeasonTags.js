@@ -232,6 +232,8 @@ const summerCrops = [
 ];
 const autumnCrops = [
   "society:cranberry",
+  "society:cranberry_seed",
+  "society:mossberry",
   "farm_and_charm:barley_crop",
   "farm_and_charm:corn_crop",
   "minecraft:beetroot",

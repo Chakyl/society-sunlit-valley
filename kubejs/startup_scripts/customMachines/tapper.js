@@ -35,7 +35,7 @@ global.tapperRecipes = new Map([
       leaves: ["minecraft:dark_oak_leaves"],
       output: ["1x society:oak_resin"],
       fluidOutput: "society:oak_resin",
-      time: 3,
+      time: 5,
     },
   ],
   [

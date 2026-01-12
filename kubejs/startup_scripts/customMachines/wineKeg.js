@@ -51,6 +51,7 @@ global.wineKegRecipes = new Map([
   ["pamhc2trees:lycheeitem", { output: ["vinery:bottle_mojang_noir"] }],
   ["society:sparkpod", { output: ["society:violet_moon"] }],
   ["society:mana_fruit", { output: ["society:laputa_franc"] }],
+  ["society:mossberry", { output: ["vinery:noir_wine"] }],
 ]);
 
 StartupEvents.registry("block", (event) => {

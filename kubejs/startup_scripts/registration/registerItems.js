@@ -143,6 +143,14 @@ StartupEvents.registry("item", (e) => {
       food.saturation(1);
       food.fastToEat(true);
     });
+  e.create("society:mossberry")
+    .texture("society:item/mossberry")
+    .food((food) => {
+      food.hunger(2);
+      food.saturation(3);
+      food.fastToEat(true);
+      food.effect("minecraft:resistance", 1200, 0, 1.0);
+    });
   e.create("society:ancient_juice")
     .texture("society:item/drinks/ancient_juice")
     .food((food) => {
@@ -569,7 +577,14 @@ StartupEvents.registry("item", (e) => {
       food.saturation(4);
       food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
     });
-
+  e.create("society:mossberry_stew")
+    .texture("society:item/mossberry_stew")
+    .food((food) => {
+      food.hunger(5);
+      food.saturation(3);
+      food.fastToEat(true);
+      food.effect("minecraft:resistance", 2400, 0, 1.0);
+    });
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
   e.create("society:chai_blend").texture("society:item/chai_blend");
 
@@ -594,6 +609,7 @@ StartupEvents.registry("item", (e) => {
     "mining_monthly",
     "wet_weekly",
     "combat_quarterly",
+    "alias_moss",
     "animal_fancy",
     "banana_karenina",
     "brine_and_punishment",

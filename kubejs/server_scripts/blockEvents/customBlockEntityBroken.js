@@ -15,7 +15,7 @@ const handleBrokenMachine = (block) => {
     currentRecipe.output.forEach((element) => {
       block.popItem(element);
     });
-  } else if (!["society:charging_rod", "society:tapper"].includes(block.id)) {
+  } else if (!["society:charging_rod", "society:tapper", "society:mushroom_log"].includes(block.id)) {
     let stage = Number(nbt.data.stage);
     if (
       currentRecipe &&

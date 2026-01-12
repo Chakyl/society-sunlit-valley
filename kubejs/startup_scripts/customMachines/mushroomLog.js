@@ -1,91 +1,78 @@
 //priority: 100
 console.info("[SOCIETY] mushroomLog.js loaded");
 
-const shimmeringOutputs = [
-  "botania:white_mushroom",
-  "botania:light_gray_mushroom",
-  "botania:gray_mushroom",
-  "botania:black_mushroom",
-  "botania:brown_mushroom",
-  "botania:red_mushroom",
-  "botania:orange_mushroom",
-  "botania:yellow_mushroom",
-  "botania:lime_mushroom",
-  "botania:green_mushroom",
-  "botania:cyan_mushroom",
-  "botania:light_blue_mushroom",
-  "botania:blue_mushroom",
-  "botania:purple_mushroom",
-  "botania:magenta_mushroom",
-  "botania:pink_mushroom",
-];
 
 global.mushroomLogRecipes = new Map([
     // Red/brown mushroom
-    ["meadow:pine_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["autumnity:maple_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["windswept:pine_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["minecraft:acacia_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["minecraft:jungle_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["beachparty:palm_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["minecraft:spruce_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["minecraft:cherry_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["quark:blossom_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
-    ["minecraft:mangrove_log", { outputs: ["minecraft:red_mushroom", "minecraft:brown_mushroom"], mult: 2 }]
+    ["minecraft:mushroom_stem", { output: ["2x minecraft:brown_mushroom"]}],
+    ["meadow:pine_log", { output: ["2x minecraft:brown_mushroom"]}],
+    ["autumnity:maple_log", { output: ["2x minecraft:brown_mushroom"]}],
+    ["windswept:pine_log", { output: ["2x minecraft:brown_mushroom"]}],
+    ["minecraft:acacia_log", { output: ["2x minecraft:brown_mushroom"]}],
+    ["minecraft:jungle_log", { output: ["2x minecraft:red_mushroom"]}],
+    ["beachparty:palm_log", { output: ["2x minecraft:red_mushroom"]}],
+    ["minecraft:spruce_log", { output: ["2x minecraft:red_mushroom"]}],
+    ["minecraft:cherry_log", { output: ["2x minecraft:red_mushroom"]}],
+    ["quark:blossom_log", { output: ["2x minecraft:red_mushroom"]}],
+    ["minecraft:mangrove_log", { output: ["2x minecraft:red_mushroom" ]}],
     // Red colony
-    ["windswept:weathered_pine_log", { outputs: ["farmersdelight:red_mushroom_colony"], mult: 1 }]
-    ["minecraft:oak_log", { outputs: ["farmersdelight:red_mushroom_colony"], mult: 1 }]
-    ["vinery:dark_cherry_log", { outputs: ["farmersdelight:red_mushroom_colony"], mult: 1 }],
-    ["cluttered:crabapple_log", { outputs: ["farmersdelight:red_mushroom_colony"], mult: 1 }],
-    ["atmospheric:grimwood_log", { outputs: ["farmersdelight:red_mushroom_colony"], mult: 1 }],
+    ["windswept:weathered_pine_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["minecraft:oak_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["vinery:dark_cherry_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["cluttered:crabapple_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["atmospheric:grimwood_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
     // Brown colony
-    ["windswept:chestnut_log", { outputs: ["farmersdelight:brown_mushroom_colony"], mult: 1 }],
-    ["minecraft:pale_oak_log", { outputs: ["farmersdelight:brown_mushroom_colony"], mult: 1 }],
-    ["cluttered:poplar_log", { outputs: ["farmersdelight:brown_mushroom_colony"], mult: 1 }],
-    ["atmospheric:aspen_log", { outputs: ["farmersdelight:brown_mushroom_colony"], mult: 1 }],
-    ["minecraft:dark_oak_log", { outputs: ["farmersdelight:brown_mushroom_colony"], mult: 1 }],
+    ["windswept:chestnut_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["minecraft:pale_oak_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["cluttered:poplar_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["atmospheric:aspen_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["minecraft:dark_oak_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
     // Toadstool
-    ["atmospheric:rosewood_log", { outputs: ['ribbits:toadstool'], mult: 3 }],
-    ["atmospheric:morado_log", { outputs: ['ribbits:toadstool'], mult: 3 }],
-    ["atmospheric:yucca_log", { outputs: ['ribbits:toadstool'], mult: 3 }],
-    ["atmospheric:laurel_log", { outputs: ['ribbits:toadstool'], mult: 3 }],
-    ["vinery:apple_log", { outputs: ['ribbits:toadstool'], mult: 3 }],
-    ["windswept:holly_log", { outputs: ['ribbits:toadstool'], mult: 3 }],
+    ["atmospheric:rosewood_log", { output: ["3x ribbits:toadstool"]}],
+    ["atmospheric:morado_log", { output: ["3x ribbits:toadstool"]}],
+    ["atmospheric:yucca_log", { output: ["3x ribbits:toadstool"]}],
+    ["atmospheric:laurel_log", { output: ["3x ribbits:toadstool"]}],
+    ["vinery:apple_log", { output: ["3x ribbits:toadstool"]}],
+    ["windswept:holly_log", { output: ["3x ribbits:toadstool"]}],
     // Bracket
-    ["quark:ancient_log", { outputs: ["verdantvibes:bracket_mushroom"], mult: 1 }],
-    ["atmospheric:kousa_log", { outputs: ["verdantvibes:bracket_mushroom"], mult: 1 }],
-    ["quark:azalea_log", { outputs: ["verdantvibes:bracket_mushroom"], mult: 1 }],
+    ["quark:ancient_log", { output: ["1x verdantvibes:bracket_mushroom"]}],
+    ["atmospheric:kousa_log", { output: ["1x verdantvibes:bracket_mushroom"]}],
+    ["quark:azalea_log", { output: ["1x verdantvibes:bracket_mushroom"]}],
     // Shimmering
-    ["atmospheric:watchful_aspen_log", { outputs: shimmeringOutputs, mult: 3 }],
-    ["atmospheric:crustose_log", { outputs: shimmeringOutputs, mult: 3 }],
-    ["cluttered:flowering_poplar_log", { outputs: shimmeringOutputs, mult: 3 }],
-    ["cluttered:flowering_crabapple_log", { outputs: shimmeringOutputs, mult: 3 }],
+    ["atmospheric:watchful_aspen_log", { output: ["1x botania:yellow_mushroom"]}],
+    ["atmospheric:crustose_log", { output: ["1x botania:yellow_mushroom"]}],
+    ["cluttered:flowering_poplar_log", { output: ["1x botania:yellow_mushroom"]}],
+    ["cluttered:flowering_crabapple_log", { output: ["1x botania:pink_mushroom"]}],
     // Glow 
-    ["cluttered:fluorescent_maple_log", { outputs: ['quark:glow_shroom'], mult: 3 }],
-    ["vintagedelight:magic_vine", { outputs: ['quark:glow_shroom'], mult: 4 }],
+    ["cluttered:fluorescent_maple_log", { output: ["3x quark:glow_shroom"]}],
+    ["vintagedelight:magic_vine", { output: ["4x quark:glow_shroom"]}],
     // Warped crimson
-    ['minecraft:crimson_stem', { outputs: ['minecraft:crimson_fungus'], mult: 3 }], 
-    ['minecraft:warped_stem', { outputs: ['minecraft:warped_fungus'], mult: 3 }], 
+    ["minecraft:crimson_stem", { output: ["3x minecraft:crimson_fungus"]}], 
+    ["minecraft:warped_stem", { output: ["3x minecraft:warped_fungus"]}], 
     // Alphacene
-    ['betterarcheology:rotten_log', { outputs: ['species:alphacene_mushroom'], mult: 2 }], 
+    ["betterarcheology:rotten_log", { output: ["2x species:alphacene_mushroom"]}], 
     // Cluttershroms
-    ['cluttered:blue_mushroom_cap', { outputs: ['cluttered:blue_roundhead'], mult: 2 }], 
-    ['cluttered:blue_mushroom_log', { outputs: ['cluttered:blue_roundhead'], mult: 2 }], 
-    ['cluttered:red_mushroom_log', { outputs: ['cluttered:fly_agaric'], mult: 2 }], 
-    ['cluttered:red_mushroom_cap', { outputs: ['cluttered:fly_agaric'], mult: 2 }], 
+    ["cluttered:blue_mushroom_cap", { output: ["1x cluttered:blue_roundhead"]}], 
+    ["cluttered:blue_mushroom_log", { output: ["1x cluttered:blue_roundhead"]}], 
+    ["cluttered:red_mushroom_log", { output: ["1x cluttered:fly_agaric"]}], 
+    ["cluttered:red_mushroom_cap", { output: ["1x cluttered:fly_agaric"]}], 
+    ["cluttered:sycamore_log", { output: ["1x cluttered:blue_roundhead"]}],
 ]);
 global.dominantMushroomLogBlocks = new Map([
-    ['species:alphacene_mushroom_block', { outputs: ['species:alphacene_mushroom'], mult: 2 }], 
-    ['minecraft:birch_log', { outputs: ['verdantvibes:bracket_mushroom'], mult: 2 }], 
-    ['cluttered:willow_log', { outputs: shimmeringOutputs, mult: 6 }], 
-    ['cluttered:flowering_willow_log', { outputs: shimmeringOutputs, mult: 6 }], 
-    ['quark:glow_shroom_stem', { outputs: ['quark:glow_shroom'], mult: 4 }], 
-    ['minecraft:brown_mushroom_block', { outputs: ['farmersdelight:brown_mushroom_colony'], mult: 2 }], 
-    ['minecraft:red_mushroom_block', { outputs: ['farmersdelight:red_mushroom_colony'], mult: 2 }], 
-    ['ribbits:toadstool_stem', { outputs: ['ribbits:toadstool'], mult: 4 }], 
-    ['ribbits:brown_toadstool', { outputs: ['ribbits:toadstool'], mult: 4 }], 
-    ['ribbits:red_toadstool', { outputs: ['ribbits:toadstool'],  mult: 4 }], 
+    ["species:alphacene_mushroom_block", { output: ["2x species:alphacene_mushroom"]}], 
+    ["minecraft:birch_log", { output: ["2x verdantvibes:bracket_mushroom"]}], 
+    ["cluttered:willow_log", { output: ["4x botania:magenta_mushroom"]}], 
+    ["cluttered:flowering_willow_log", { output: ["4x botania:purple_mushroom"],}], 
+    ["quark:glow_shroom_stem", { output: ["3x quark:glow_shroom"]}], 
+    ["minecraft:brown_mushroom_block", { output: ["2x farmersdelight:brown_mushroom_colony"]}], 
+    ["minecraft:red_mushroom_block", { output: ["2x farmersdelight:red_mushroom_colony"]}], 
+    ["ribbits:toadstool_stem", { output: ["4x ribbits:toadstool"]}], 
+    ["ribbits:brown_toadstool", { output: ["4x ribbits:toadstool"]}], 
+    ["ribbits:red_toadstool", { output: ["4x ribbits:toadstool"]}], 
 ])
+Array.from(global.dominantMushroomLogBlocks.keys()).forEach((recipe) => {
+  global.mushroomLogRecipes.set(recipe, global.dominantMushroomLogBlocks.get(recipe));
+});
 StartupEvents.registry("block", (event) => {
   event
     .create("society:mushroom_log", "cardinal")
@@ -95,6 +82,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("error"))
     .soundType("wood")
     .defaultCutout()
+    .box(0, 0, 0, 16, 13, 16)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
@@ -119,15 +107,15 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
-      const { player, item, block, hand, level } = click;
+      let nbt = click.block.getEntityData();
       global.handleBERightClick(
-        "vinery:cabinet_close",
+        "species:block.alphacene_moss.place",
         click,
         global.mushroomLogRecipes,
         7,
         false,
         false,
-        1,
+        nbt && nbt.data && nbt.data.baseCount ? nbt.data.baseCount : 1,
         true
       );
       global.handleMushroomLogRandomTick(click);
@@ -138,8 +126,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        if (entity.block.properties.get("error") !== "true")
-          global.handleBETick(entity, global.mushroomLogRecipes, 7);
+          global.handleBETick(entity, global.mushroomLogRecipes, 4);
       });
     }).blockstateJson = {
     multipart: getCardinalMultipartJson("mushroom_log"),

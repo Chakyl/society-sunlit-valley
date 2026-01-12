@@ -361,7 +361,53 @@ StartupEvents.registry("block", (e) => {
       },
     ],
   };
-
+  e
+    .create("society:cranberry", "crop")
+    .age(7, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 6, 16)
+        .shape(3, 0, 0, 0, 16, 12, 16)
+        .shape(4, 0, 0, 0, 16, 12, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16)
+    })
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("society:cranberry", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
+    .randomTick((tick) => {})
+    .item((seedItem) => {
+      seedItem.texture("society:item/cranberry_seeds");
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { age: 0 },
+        apply: { model: "society:block/crops/cranberry_crop_stage0" },
+      },
+      {
+        when: { age: 1 },
+        apply: { model: "society:block/crops/cranberry_crop_stage1" },
+      },
+      {
+        when: { age: 2 },
+        apply: { model: "society:block/crops/cranberry_crop_stage2" },
+      },
+      {
+        when: { age: 3 },
+        apply: { model: "society:block/crops/cranberry_crop_stage3" },
+      },
+      {
+        when: { age: 4 },
+        apply: { model: "society:block/crops/cranberry_crop_stage4" },
+      },
+      {
+        when: { age: 5 },
+        apply: { model: "society:block/crops/cranberry_crop_stage5" },
+      },
+    ],
+  };
   e
     .create("society:eggplant", "crop")
     .age(6, (builder) => {

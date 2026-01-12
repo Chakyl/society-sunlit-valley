@@ -1,15 +1,15 @@
 {
-  "name": "Blueberry 🔥",
+  "name": "Cranberry 🍂",
   "category": "patchouli:crops",
-  "icon": "society:blueberry",
+  "icon": "society:cranberry",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li):coin: 24$(li)🔥 §6Summer§r$(li)Seed Price: :coin: 8$(li)Yield: 3-4$(li)Grow time: 7 days"
+      "text": "$(l)Stats$()$(li):coin: 18$(li)🍂 §6Summer§r$(li)Seed Price: :coin: 12$(li)Yield: 3-4$(li)Grow time: 5 days"
     },
     {
       "type": "patchouli:multiblock",
-      "name ": "Blueberry Crop",
+      "name ": "Cranberry Crop",
       "enable_visualize": false,
       "multiblock": {
         "pattern": [
@@ -17,7 +17,7 @@
           ["F"]
         ],
         "mapping": {
-          "0": "society:blueberry[age=7]",
+          "0": "society:cranberry[age=5]",
           "F": "minecraft:farmland[moisture=7]"
         }
       }

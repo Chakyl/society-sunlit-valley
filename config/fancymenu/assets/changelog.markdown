@@ -14,19 +14,24 @@
 - Added new art for Minerals, Preserves, Artifacts, and so much more by NifastGreentail
 - Added Mood system for husbandry animals that tracks how well you are taking care of them and impacts their production
 - Added Wine Keg - Artisan Machine for making wines without the need for juice
+- Added Mushroom Log - Artisan Machine for growing mushrooms
 - Added Oil Maker and rebalanced Truffle Oil accordingly
 - Added Oil and Coconut Oil
 - Added Pickling Can
+- Added Mossberry & Mossberry Stew
+- Added Cranberry crop
 - Added Gray Anatomy upgrade
-- Added Skill Books: Pond House Five, The Red and the Black, and Women Who Run With the Plushies
+- Added Skill Books: Alias Moss, Pond House Five, The Red and the Black, and Women Who Run With the Plushies
 - Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish.
 - Added traits Recessive to Juicy and Ender Slimes and Dominant to Orby and Rotting Slimes
 - Added full value calculations to items when holding shift
 - Added Mana Fruit crop and reworked parts of Botania Progression around it
+- Added Wines: Violet Moon, Sparkling Le Roy, Laputa Franc, and Mana King
 - Added society:sellable tag for easy JEI/EMI searching
-- Added tags for each of the product types (farmer/artisan/geologist/adventurer) for easy JEI/EMI searching
+- Added tags for each of the product types for easy JEI/EMI searching
 - Added value for Honey Blob
 - Added recipe for Tree Fertilizer
+- Added Fish Pond drops to Cod and Salmon
 - Added Wiki link to the pause screen in the place of unusable vanilla buttons
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
 - Changed recipe of Grapevine Stems/Lattices to use treated logs
@@ -37,6 +42,7 @@
 - Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
 - Ribbit Hut now works at 7am (from 8am)
 - Magic Shears now output quality based on affection
+- Increased value of Botania mushrooms (12 -> 24)
 - Increased Oak Resin tapping time (3->5)
 - Increased bar size of Lava Fishing Rod by 12
 - Increased weight of Fortress Grouper (1 -> 3)
@@ -45,6 +51,7 @@
 - Increased Sniffer/Frostbiter Artifact shard drops by 1.5x
 - Increased value of Pine Tar and Oak Resin (48->128)
 - Rebalanced Plort values
+- Reduced cost of Lava Fishing Rod 98,304 ->73,728
 - Reduced cost of Seed Maker (3 gold blocks -> 1)
 - Reduced cost of Crystalarium (5 lead blocks -> 2)
 - Reduced cost of Mechanical Extruder (4 lead blocks -> 2)
@@ -58,16 +65,19 @@
 - Reduced affection increases and decreases by half (excluding candied animal feed)
 - Reduced value of Large Turkey Egg (128 -> 96), Penguin Egg (192 -> 128), and Flamingo Egg (384 -> 256) 
 - Reduced Ancient Goddess Statue Sparkstone trade (16 sparkstone blocks -> 64 sparkstone)
+- Reduced food values for certain juices
 - Reduced mult of mayonnaise machine (8x -> 4x)
 - Reduced Moth Pollen to Organic Mash recycling recipe (16 -> 4)
 - Reduced Spindlefish Sparkstone population requirement 10 -> 5
 - Reduced value of Sparkstone 64 -> 16
 - Reduced value of Sap (20 -> 4)
 - Removed Pickaxe cost from Pickarang
+- Removed Quality Preserving from Cheese Press
 - Removed Tom's Simple Storage
 - Removed Brewer's Bundle from Crafts room (Replaced with Foraging bundle)
 - Removed Gold Ring (functionality still here)
 - Removed max affection doubling forage drops
+- Removed quality preserving from Artisan Cheese Press
 - Removed Holy Locket, Midnight Robe, and Infinity Ham
 - Removed Demon Herring's Galaxy Sword quest due to unfortunate incidents
 - Renamed Vinery Lattices to Grapevine Lattice

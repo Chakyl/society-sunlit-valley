@@ -6,469 +6,1403 @@
 	group: "15230846E14B6926"
 	icon: "minecraft:carrot"
 	id: "3FDDC935FECB660C"
+	images: [
+		{
+			height: 4.0d
+			image: "society:textures/gui/sheet.png"
+			order: 5
+			rotation: -8.0d
+			width: 4.0d
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			height: 3.0d
+			image: "society:textures/gui/seal_green.png"
+			order: 6
+			rotation: 0.0d
+			width: 3.0d
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.455782312925159d
+			y: 3.010204081632658d
+		}
+		{
+			height: 14.0d
+			image: "society:textures/gui/background_crops.png"
+			order: 1
+			rotation: -4.0d
+			width: 13.5d
+			x: 14.923809523809524d
+			y: -0.16428571428572525d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 10.92857142857143d
+			y: -4.057142857142857d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.547619047619037d
+			y: -4.99285714285714d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.1802721088435248d
+			y: -4.841836734693878d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.14625850340137703d
+			y: -4.678571428571431d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.4931972789115804d
+			y: -4.556122448979593d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.819727891156475d
+			y: -4.413265306122447d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.146258503401377d
+			y: -4.290816326530617d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.6428571428571317d
+			y: -3.80952380952381d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.309523809523796d
+			y: -3.6190476190476204d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.023809523809532607d
+			y: -3.4761904761904816d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.3571428571428754d
+			y: -3.3809523809523796d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.690476190476204d
+			y: -3.2142857142857153d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.000000000000014d
+			y: -3.095238095238095d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.7925170068027043d
+			y: -2.5612244897959258d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.4659863945578095d
+			y: -2.3979591836734784d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.9013605442176953d
+			y: -1.867346938775519d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.0986394557822976d
+			y: -2.2959183673469497d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.2278911564625972d
+			y: -2.1530612244898037d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.5748299319728005d
+			y: -1.9897959183673564d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.9190476190476176d
+			y: -1.370408163265303d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.588435374149654d
+			y: -1.2193877551020336d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.2414965986394506d
+			y: -1.0765306122448877d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.095238095238102d
+			y: -0.9251700680272066d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.423809523809524d
+			y: -0.7418367346938695d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.7666666666666657d
+			y: -0.5989795918367307d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.0333333333333314d
+			y: -0.17040816326530717d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.7190476190476147d
+			y: 0.0010204081632707585d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.3761904761904731d
+			y: 0.14387755102040956d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.9380952380952436d
+			y: 0.28673469387755546d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.30952380952381d
+			y: 0.42959183673469425d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.652380952380959d
+			y: 0.5724489795918402d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.204761904761895d
+			y: 1.0295918367346957d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.3190476190476232d
+			y: 2.1438775510204096d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.461904761904769d
+			y: 3.2295918367346985d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.8333333333333286d
+			y: 1.1438775510204024d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.9761904761904674d
+			y: 2.2867346938775484d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.519047619047619d
+			y: 1.3153061224489733d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.6047619047619008d
+			y: 2.429591836734687d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.8523809523809547d
+			y: 1.4295918367346871d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.1666666666666714d
+			y: 1.6010204081632509d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.509523809523813d
+			y: 1.686734693877547d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.7380952380952408d
+			y: 2.543877551020408d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.0523809523809575d
+			y: 2.7438775510203968d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.395238095238099d
+			y: 2.8581632653061106d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 12.376190476190473d
+			y: -4.1880952380952365d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 13.828571428571422d
+			y: -4.307142857142857d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 15.280952380952378d
+			y: -4.402380952380952d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 16.733333333333327d
+			y: -4.497619047619047d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 18.185714285714276d
+			y: -4.592857142857142d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 11.014285714285712d
+			y: -2.857142857142854d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 12.471428571428568d
+			y: -2.9738095238095212d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 13.899999999999991d
+			y: -3.069047619047616d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 15.352380952380948d
+			y: -3.164285714285711d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 16.804761904761897d
+			y: -3.259523809523806d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 18.257142857142846d
+			y: -3.354761904761901d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 11.114285714285707d
+			y: -1.6404761904761926d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 12.542857142857137d
+			y: -1.7357142857142804d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 13.995238095238093d
+			y: -1.8309523809523753d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 15.447619047619042d
+			y: -1.9261904761904702d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 16.9d
+			y: -2.0214285714285722d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 18.352380952380948d
+			y: -2.1404761904761855d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 11.185714285714283d
+			y: -0.40238095238095184d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 12.614285714285707d
+			y: -0.5214285714285651d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 14.066666666666663d
+			y: -0.6166666666666671d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 15.519047619047612d
+			y: -0.711904761904762d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 16.971428571428568d
+			y: -0.807142857142864d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 18.423809523809517d
+			y: -0.902380952380959d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 11.280952380952371d
+			y: 0.788095238095238d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 12.709523809523809d
+			y: 0.6690476190476176d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 14.161904761904758d
+			y: 0.5738095238095227d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 15.590476190476181d
+			y: 0.47857142857142776d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 17.066666666666663d
+			y: 0.38333333333333286d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 18.51904761904762d
+			y: 0.26428571428571246d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 11.352380952380955d
+			y: 1.9309523809523768d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 12.804761904761904d
+			y: 1.8357142857142819d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 14.258843537414968d
+			y: 1.7336734693877602d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 15.7078231292517d
+			y: 1.611224489795923d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 11.442517006802731d
+			y: 3.060204081632662d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 12.891496598639463d
+			y: 2.9581632653061263d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 14.32006802721088d
+			y: 2.8561224489795976d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 15.789455782312935d
+			y: 2.754081632653069d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 17.140476190476186d
+			y: 1.5285714285714391d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 18.592857142857135d
+			y: 1.4333333333333371d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 17.211904761904762d
+			y: 2.671428571428578d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 18.688095238095237d
+			y: 2.576190476190483d
+		}
+		{
+			height: 2.0d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.48571428571428d
+			y: 1.6285714285714192d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.3142857142857025d
+			y: 2.3999999999999915d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 8.599999999999987d
+			y: 2.3428571428571345d
+		}
+		{
+			height: 4.0d
+			image: "society:textures/gui/background_light_blue.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 7.464285714285715d
+			y: 2.2933673469387656d
+		}
+		{
+			height: 14.0d
+			image: "society:textures/gui/background_crops.png"
+			order: 1
+			rotation: 6.0d
+			width: 12.5d
+			x: 0.5238095238095184d
+			y: -0.4285714285714306d
+		}
+		{
+			height: 10.0d
+			image: "society:textures/gui/blueberries.png"
+			rotation: 100.0d
+			width: 16.5d
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			height: 16.5d
+			image: "society:textures/gui/strawberries.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 23.0d
+			y: 1.0d
+		}
+		{
+			height: 8.0d
+			image: "society:textures/gui/ancient_fruits.png"
+			rotation: 0.0d
+			width: 18.0d
+			x: 7.30952380952381d
+			y: 6.797619047619065d
+		}
+		{
+			height: 14.0d
+			image: "society:textures/gui/starfruit.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.0428571428571445d
+			y: 3.376190476190466d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			id: "182AFC574EF22382"
+			shape: "none"
 			tasks: [{
 				id: "5C2F6F4FA9697D39"
 				item: "vinery:white_grape"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: -3.2210884353741562d
+			y: 1.0459183673469212d
 		}
 		{
 			id: "03C998FCC9C88D6E"
+			shape: "none"
 			tasks: [{
 				id: "48649922686D3FD3"
 				item: "vinery:red_grape"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.0d
+			x: -1.8333333333333357d
+			y: 1.14795918367345d
 		}
 		{
 			id: "4A1F53A6A7E3BEA3"
+			shape: "none"
 			tasks: [{
 				id: "797441CBBA17E7F5"
 				item: "vinery:savanna_grapes_white"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.0d
+			x: -0.5680272108843596d
+			y: 1.331632653061206d
 		}
 		{
 			id: "7367AFA876B29972"
+			shape: "none"
 			tasks: [{
 				id: "393290913BD76A79"
 				item: "vinery:savanna_grapes_red"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: 0.8401360544217624d
+			y: 1.4540816326530432d
 		}
 		{
 			id: "5C72DE0C4250FE9C"
+			shape: "none"
 			tasks: [{
 				id: "01179AB15F788A9B"
 				item: "vinery:taiga_grapes_white"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 2.1666666666666643d
+			y: 1.6173469387754906d
 		}
 		{
 			id: "2728EFA18B82FE07"
+			shape: "none"
 			tasks: [{
 				id: "4A9B93516732D426"
 				item: "vinery:taiga_grapes_red"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 3.493197278911559d
+			y: 1.739795918367335d
 		}
 		{
 			id: "5A9F07DC93864187"
+			shape: "none"
 			tasks: [{
 				id: "4E90387A453A92D9"
 				item: "vinery:jungle_grapes_white"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			x: -0.4047619047619122d
+			y: 0.16836734693875144d
 		}
 		{
 			description: [""]
 			id: "63FE67406861C9B5"
+			shape: "none"
 			tasks: [{
 				id: "7DCCE8084588A795"
 				item: "vinery:jungle_grapes_red"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.5d
+			x: 0.9217687074829897d
+			y: 0.31122448979590445d
 		}
 		{
 			id: "0BB3F52A90719860"
+			shape: "none"
 			tasks: [{
 				id: "450365F766909E6E"
 				item: "nethervinery:warped_grape"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: 2.2482993197278844d
+			y: 0.43367346938774176d
 		}
 		{
 			id: "4FFAC84EBFFB0ED3"
+			shape: "none"
 			tasks: [{
 				id: "1B4F950389A4CAF0"
 				item: "nethervinery:crimson_grape"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.5d
+			x: 3.6156462585033964d
+			y: 0.5969387755101891d
 		}
 		{
 			id: "61366DE675746326"
+			shape: "none"
 			tasks: [{
 				id: "3B87AFAE278E37C8"
 				item: "minecraft:sweet_berries"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.5d
+			x: 1.5000000000000142d
+			y: -4.547619047619051d
 		}
 		{
 			id: "0C6D3FEFAFAD9162"
+			shape: "none"
 			tasks: [{
 				id: "5B551F340C71CB9D"
 				item: "herbalbrews:yerba_mate_leaf"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 2.0238095238095184d
+			y: 2.7602040816326365d
 		}
 		{
 			id: "09E4E46A657AA2AD"
+			shape: "none"
 			tasks: [{
 				id: "6378C6E4589BC8C0"
 				item: "herbalbrews:green_tea_leaf"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.5d
+			x: 3.3707482993197218d
+			y: 2.8826530612244667d
 		}
 		{
 			id: "651AC5C7DB8F0237"
+			shape: "none"
 			tasks: [{
 				id: "17EED783BA0B0C14"
 				item: "brewery:hops"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -4.0d
+			x: 18.24761904761906d
+			y: -3.346428571428561d
 		}
 		{
 			id: "07C2F4002C25B290"
+			shape: "none"
 			tasks: [{
 				id: "202A6E26DBBCED70"
 				item: "farm_and_charm:barley"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: 1.4210854715202004E-14d
+			y: -3.4285714285714306d
 		}
 		{
 			id: "2A5675FDBA6ADA94"
+			shape: "none"
 			tasks: [{
 				id: "42A681592AB130C5"
 				item: "farm_and_charm:corn"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.0d
+			x: -2.6428571428571317d
+			y: -3.80952380952381d
 		}
 		{
 			id: "582C2D1B8BC60930"
+			shape: "none"
 			tasks: [{
 				id: "1C0A7FF5EACC255E"
 				item: "farm_and_charm:oat"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.0d
+			x: -1.3333333333333215d
+			y: -3.6190476190476204d
 		}
 		{
 			id: "51250BA0BFFE960B"
+			shape: "none"
 			tasks: [{
 				id: "483205FD5018E931"
 				item: "minecraft:carrot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -5.5d
+			x: -1.2380952380952266d
+			y: -4.833333333333336d
 		}
 		{
 			id: "742FFD7566EF6FE1"
+			shape: "none"
 			tasks: [{
 				id: "17561A691673323D"
 				item: "minecraft:melon_slice"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 2.6666666666666785d
+			y: -3.2125850340135997d
 		}
 		{
 			id: "2131DCB6116F5148"
+			shape: "none"
 			tasks: [{
 				id: "7983B1AF0F306B64"
 				item: "minecraft:cactus"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -2.5d
+			x: 12.533333333333339d
+			y: -1.703571428571422d
 		}
 		{
 			id: "4229BDFD64706E94"
+			shape: "none"
 			tasks: [{
 				id: "67361294553DDEEE"
 				item: "minecraft:brown_mushroom"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -2.809523809523796d
+			y: -2.617346938775512d
 		}
 		{
 			id: "78C2FCC610571926"
+			shape: "none"
 			tasks: [{
 				id: "38F9D3BDA06659B3"
 				item: "minecraft:red_mushroom"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.5d
+			x: -1.4999999999999858d
+			y: -2.4506802721088405d
 		}
 		{
 			id: "00C3328B0684FEB5"
+			shape: "none"
 			tasks: [{
 				id: "2971ACA23319AC4D"
 				item: "minecraft:wheat"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.5d
+			x: -0.11904761904760619d
+			y: -2.3078231292517017d
 		}
 		{
 			id: "44D64F9AD67DCC5E"
+			shape: "none"
 			tasks: [{
 				id: "7D8E36AD4ABBFF0F"
 				item: "snowyspirit:ginger"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.5d
+			x: 1.190476190476204d
+			y: -2.1411564625850374d
 		}
 		{
 			id: "0F3ABAC9B0E54867"
+			shape: "none"
 			tasks: [{
 				id: "1D4D96BDFF432407"
 				item: "minecraft:potato"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			x: 0.142857142857153d
+			y: -4.666666666666664d
 		}
 		{
 			id: "5E9C5A7383377C62"
+			shape: "none"
 			tasks: [{
 				id: "140DD7F489A86702"
 				item: "farm_and_charm:strawberry"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.5d
+			x: 3.901360544217681d
+			y: -1.8520408163265571d
 		}
 		{
 			id: "6B2B12C77B489AC7"
+			shape: "none"
 			tasks: [{
 				id: "01786F9FCA6E0B0C"
 				item: "herbalbrews:rooibos_leaf"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.5d
+			x: 0.7380952380952337d
+			y: 2.596938775510182d
 		}
 		{
 			id: "69104D880452E802"
+			shape: "none"
 			tasks: [{
 				id: "74076946E8CD8989"
 				item: "minecraft:beetroot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.0d
+			x: 1.0714285714285694d
+			y: -0.892857142857153d
 		}
 		{
 			id: "1DC2617472C21890"
+			shape: "none"
 			tasks: [{
 				id: "43E10EAD00F5D8EA"
 				item: "supplementaries:flax"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.0d
+			x: -3.0714285714285694d
+			y: -0.1309523809523938d
 		}
 		{
 			id: "505F16C948C5D64D"
+			shape: "none"
 			tasks: [{
 				id: "2FED534E67D40235"
 				item: "minecraft:pumpkin"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 3.9829931972789225d
+			y: -3.0867346938775526d
 		}
 		{
 			id: "2BFBF1339342625B"
+			shape: "none"
 			tasks: [{
 				id: "3B7A308D13F93521"
 				item: "farm_and_charm:lettuce"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 2.411564625850332d
+			y: -0.6887755102041027d
 		}
 		{
 			id: "31323405E4D37434"
+			shape: "none"
 			tasks: [{
 				id: "66985BDFEDD0CC63"
 				item: "farm_and_charm:onion"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 3.7380952380952266d
+			y: -0.5459183673469568d
 		}
 		{
 			id: "3B4FD0DF4257FFD4"
+			shape: "none"
 			tasks: [{
 				id: "7C271C9A9C639DA7"
 				item: "herbalbrews:coffee_beans"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: -0.6292517006802782d
+			y: 2.4336734693877347d
 		}
 		{
 			id: "330CA835E3875E1D"
+			shape: "none"
 			tasks: [{
 				id: "45A3CF2A1588A301"
 				item: "minecraft:sugar_cane"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -2.9353741496598715d
+			y: -1.3214285714285907d
 		}
 		{
 			id: "23F35DF56CCB45C3"
+			shape: "none"
 			tasks: [{
 				id: "53CBA616C911B918"
 				item: "minecraft:nether_wart"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -1.0d
+			x: 11.176190476190477d
+			y: -0.41785714285713027d
 		}
 		{
 			id: "772C142CFDDFA059"
+			shape: "none"
 			tasks: [{
 				id: "4BD9DD0AE298F863"
 				item: "minecraft:glow_berries"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.5d
+			x: 4.142857142857153d
+			y: -4.285714285714292d
 		}
 		{
 			id: "22B1B6E53B4AF464"
+			shape: "none"
 			tasks: [{
 				id: "066F6BBBAB05A6B5"
 				item: "minecraft:cocoa_beans"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -4.0d
+			x: 13.854761904761908d
+			y: -3.0607142857142833d
 		}
 		{
 			id: "473D2CBFA1E8F121"
+			shape: "none"
 			tasks: [{
 				id: "460047030CC599AF"
 				item: "quark:ancient_fruit"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -4.0d
+			x: 15.323809523809537d
+			y: -3.17380952380951d
 		}
 		{
 			id: "5E96E14E86996022"
+			shape: "none"
 			tasks: [{
 				id: "6FA9AE908D57E90A"
 				item: "minecraft:apple"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 2.0d
+			x: 11.347619047619062d
+			y: 1.921428571428585d
 		}
 		{
 			id: "61275A93612AE88A"
+			shape: "none"
 			tasks: [{
 				id: "367370B923D1B562"
 				item: "vinery:cherry"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 2.0d
+			x: 12.776190476190486d
+			y: 1.8500000000000156d
 		}
 		{
 			id: "50517DAA66DAE26C"
+			shape: "none"
 			tasks: [{
 				id: "42A7A18070F068AC"
 				item: "beachparty:coconut"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -2.5d
+			x: 11.104761904761908d
+			y: -1.6321428571428456d
 		}
 		{
 			id: "1BC3C14F51B04E45"
+			shape: "none"
 			tasks: [{
 				id: "61E300776A0331CC"
 				item: "minecraft:torchflower"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -4.0d
+			x: 10.995238095238093d
+			y: -2.86666666666666d
 		}
 		{
 			id: "7AB7A59F20160E2A"
+			shape: "none"
 			tasks: [{
 				id: "388191451FFEA617"
 				item: "minecraft:pitcher_plant"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -4.0d
+			x: 12.466666666666683d
+			y: -2.9595238095237946d
 		}
 		{
 			id: "5A54B95EF1CA2A60"
+			shape: "none"
 			tasks: [{
 				id: "322DF0546DB5AC71"
 				item: "moreminecarts:glass_cactus"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -2.5d
+			x: 13.966666666666669d
+			y: -1.8166666666666487d
 		}
 		{
 			id: "3759149843616EB9"
+			shape: "none"
 			tasks: [{
 				id: "65D62EEC46BF9676"
 				item: "minecraft:chorus_fruit"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -2.5d
+			x: 15.395238095238106d
+			y: -1.935714285714269d
 		}
 		{
 			id: "5071DA7D4C178747"
+			shape: "none"
 			tasks: [{
 				id: "701A391DAD486F63"
 				item: "farmersdelight:tomato"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 1.329931972789126d
+			y: -3.3724489795918373d
 		}
 		{
 			description: [
@@ -477,24 +1411,26 @@
 				"{ftbquests.chapter.crops.quest47.description2}"
 			]
 			id: "262E7E71CF6AD26A"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest47.subtitle}"
 			tasks: [{
 				id: "4E0B4FEE5F9B497E"
 				item: "farmersdelight:cabbage"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.5d
+			x: 12.680952380952384d
+			y: 0.6595238095238258d
 		}
 		{
 			id: "41B3FCBE28E3F495"
+			shape: "none"
 			tasks: [{
 				id: "001CA7DA502FB416"
 				item: "farmersdelight:rice"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.0d
+			x: -1.731292517006807d
+			y: 0.00510204081631116d
 		}
 		{
 			description: [
@@ -503,14 +1439,15 @@
 				"{ftbquests.chapter.crops.quest49.description2}"
 			]
 			id: "0FF95378E683DF5E"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest49.subtitle}"
 			tasks: [{
 				id: "139EB44EBB2C6495"
 				item: "vintagedelight:peanut"
 				type: "item"
 			}]
-			x: 17.0d
-			y: -1.0d
+			x: 16.926190476190484d
+			y: -0.7749999999999844d
 		}
 		{
 			description: [
@@ -519,14 +1456,15 @@
 				"{ftbquests.chapter.crops.quest50.description2}"
 			]
 			id: "18E4EF841B0D1DC7"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest50.subtitle}"
 			tasks: [{
 				id: "4DC4C3119CF01A49"
 				item: "vintagedelight:ghost_pepper"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -1.0d
+			x: 14.06190476190477d
+			y: -0.5785714285714079d
 		}
 		{
 			description: [
@@ -535,25 +1473,27 @@
 				"{ftbquests.chapter.crops.quest51.description2}"
 			]
 			id: "56865D2E8C786C7D"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest51.subtitle}"
 			tasks: [{
 				id: "552AA3E8B98FF5DB"
 				item: "vintagedelight:cucumber"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -1.0d
+			x: 15.533333333333339d
+			y: -0.6678571428571303d
 		}
 		{
 			description: [""]
 			id: "267B2278B71805DD"
+			shape: "none"
 			tasks: [{
 				id: "6C217F92F9098809"
 				item: "vintagedelight:gearo_berry"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -1.0d
+			x: 12.585714285714296d
+			y: -0.5071428571428385d
 		}
 		{
 			description: [
@@ -562,14 +1502,15 @@
 				"{ftbquests.chapter.crops.quest53.description2}"
 			]
 			id: "3A1EFD1023C8C09B"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest53.subtitle}"
 			tasks: [{
 				id: "36514AEE32301F45"
 				item: "pamhc2trees:lycheeitem"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 0.5d
+			x: 15.56190476190477d
+			y: 0.46904761904763603d
 		}
 		{
 			description: [
@@ -578,14 +1519,15 @@
 				"{ftbquests.chapter.crops.quest54.description2}"
 			]
 			id: "12716A71DB8FB7B8"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest54.subtitle}"
 			tasks: [{
 				id: "1BC26BC3178F72D3"
 				item: "pamhc2trees:bananaitem"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 0.5d
+			x: 17.038095238095245d
+			y: 0.37380952380954824d
 		}
 		{
 			description: [
@@ -594,14 +1536,15 @@
 				"{ftbquests.chapter.crops.quest55.description2}"
 			]
 			id: "3E57558B04952D59"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest55.subtitle}"
 			tasks: [{
 				id: "0130993A589F918B"
 				item: "pamhc2trees:peachitem"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 0.5d
+			x: 18.514285714285727d
+			y: 0.25476190476192073d
 		}
 		{
 			description: [
@@ -609,15 +1552,17 @@
 				""
 				"{ftbquests.chapter.crops.quest56.description2}"
 			]
+			hide_dependency_lines: true
 			id: "6C656EEBAD2B5DAF"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest56.subtitle}"
 			tasks: [{
 				id: "71BEC726204AE10B"
 				item: "pamhc2trees:plumitem"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 2.0d
+			x: 14.228571428571435d
+			y: 1.7547619047619207d
 		}
 		{
 			description: [
@@ -626,14 +1571,15 @@
 				"{ftbquests.chapter.crops.quest57.description2}"
 			]
 			id: "071B9936A0F6425F"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest57.subtitle}"
 			tasks: [{
 				id: "15A51121384FB49C"
 				item: "pamhc2trees:mangoitem"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 2.0d
+			x: 15.71190476190477d
+			y: 1.6535714285714391d
 		}
 		{
 			description: [
@@ -642,14 +1588,15 @@
 				"{ftbquests.chapter.crops.quest58.description2}"
 			]
 			id: "1D39A308673157BA"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest58.subtitle}"
 			tasks: [{
 				id: "5347F6226E74E47C"
 				item: "atmospheric:orange"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 2.0d
+			x: 17.13333333333334d
+			y: 1.51666666666668d
 		}
 		{
 			description: [
@@ -658,14 +1605,15 @@
 				"{ftbquests.chapter.crops.quest59.description2}"
 			]
 			id: "7ED74D28362C25CE"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest59.subtitle}"
 			tasks: [{
 				id: "1CB79A19BD74B467"
 				item: "pamhc2trees:dragonfruititem"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 3.5d
+			x: 12.8904761904762d
+			y: 2.939285714285731d
 		}
 		{
 			description: [
@@ -674,14 +1622,15 @@
 				"{ftbquests.chapter.crops.quest60.description2}"
 			]
 			id: "34AD1E2CEE6966B5"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest60.subtitle}"
 			tasks: [{
 				id: "51D5DC2521CB0EFD"
 				item: "pamhc2trees:starfruititem"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -4.0d
+			x: 7.4285714285714235d
+			y: 2.9897959183673564d
 		}
 		{
 			dependencies: [
@@ -802,7 +1751,7 @@
 					type: "item"
 				}
 			]
-			shape: "octagon"
+			shape: "none"
 			size: 3.0d
 			tasks: [{
 				icon: {
@@ -824,61 +1773,67 @@
 		}
 		{
 			description: ["{ftbquests.chapter.crops.quest62.description1}"]
+			icon_scale: 1.5d
 			id: "455F9A4D9B1FF43E"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest62.subtitle}"
 			tasks: [{
 				id: "4B298DAC8939CE4F"
 				item: "society:ancient_fruit"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.5d
+			x: 7.4285714285714235d
+			y: 1.6734693877550981d
 		}
 		{
 			description: ["{ftbquests.chapter.crops.quest63.description1}"]
 			id: "751852642BED95D0"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest63.subtitle}"
 			tasks: [{
 				id: "22919A73C577461C"
 				item: "pamhc2trees:pawpawitem"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 3.5d
+			x: 18.680952380952398d
+			y: 2.564285714285731d
 		}
 		{
 			description: ["{ftbquests.chapter.crops.quest64.description1}"]
 			id: "449B0ECBBD4E743D"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest64.subtitle}"
 			tasks: [{
 				id: "5703E9BC753916D6"
 				item: "pamhc2trees:hazelnutitem"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 3.5d
+			x: 17.20476190476191d
+			y: 2.659523809523826d
 		}
 		{
 			description: ["{ftbquests.chapter.crops.quest65.description1}"]
 			id: "354AB867025A3019"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest65.subtitle}"
 			tasks: [{
 				id: "2E9453049DBD8724"
 				item: "pamhc2trees:cinnamonitem"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 3.5d
+			x: 14.283333333333339d
+			y: 2.8321428571428697d
 		}
 		{
 			id: "4809FA86B301057C"
+			shape: "none"
 			tasks: [{
 				id: "57E325A3165B5356"
 				item: "etcetera:cotton_flower"
 				type: "item"
 			}]
-			x: 17.0d
-			y: -4.0d
+			x: 16.78333333333334d
+			y: -3.2749999999999915d
 		}
 		{
 			description: [
@@ -887,64 +1842,70 @@
 				"{ftbquests.chapter.crops.quest67.description2}"
 			]
 			id: "5C6688D9ADAB129D"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest67.subtitle}"
 			tasks: [{
 				id: "5BC5D85279454506"
 				item: "society:tubabacco_leaf"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.5d
+			x: 14.13333333333334d
+			y: 0.5880952380952493d
 		}
 		{
 			id: "758715708E6110B4"
+			shape: "none"
 			tasks: [{
 				id: "15B3AF7F92D05704"
 				item: "atmospheric:passion_fruit"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 3.5d
+			x: 15.747619047619054d
+			y: 2.7607142857143003d
 		}
 		{
 			id: "25C97E279E59E80C"
+			shape: "none"
 			tasks: [{
 				id: "167633458AB93B13"
 				item: "society:blueberry"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.5d
+			x: 2.8037414965986116d
+			y: -4.390816326530633d
 		}
 		{
 			id: "2EDDE9CF53DDEC80"
+			shape: "none"
 			tasks: [{
 				id: "0AEB6931F912046F"
 				item: "autumnity:foul_berries"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -2.5d
+			x: 18.319047619047616d
+			y: -2.1321428571428456d
 		}
 		{
 			id: "1A8D4FF9970E2760"
+			shape: "none"
 			tasks: [{
 				id: "3DBC902FC74E7C6C"
 				item: "pamhc2trees:lemonitem"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 3.5d
+			x: 11.419047619047632d
+			y: 3.0880952380952564d
 		}
 		{
 			id: "4E065B6F4D72DFDF"
+			shape: "none"
 			tasks: [{
 				id: "341679F913CEE4BA"
 				item: "veggiesdelight:bellpepper"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 0.5d
+			x: -1.6088435374149697d
+			y: -1.1785714285714448d
 		}
 		{
 			description: [
@@ -953,34 +1914,37 @@
 				"{ftbquests.chapter.crops.quest73.description2}"
 			]
 			id: "4CE5E17948C31E2A"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest73.subtitle}"
 			tasks: [{
 				id: "53E8C57AF7BE0A8D"
 				item: "veggiesdelight:garlic"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -1.0d
+			x: 18.42619047619049d
+			y: -0.9178571428571303d
 		}
 		{
 			id: "60EF74EA8CA9EECA"
+			shape: "none"
 			tasks: [{
 				id: "0175EAA947B2EAB6"
 				item: "veggiesdelight:cauliflower"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.5d
+			x: -0.2619047619047663d
+			y: -1.035714285714299d
 		}
 		{
 			id: "35F8CFD09F6E7253"
+			shape: "none"
 			tasks: [{
 				id: "7073A1C23D2B8951"
 				item: "society:eggplant"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 2.547619047619065d
+			y: -1.9744897959183731d
 		}
 		{
 			description: [
@@ -989,127 +1953,140 @@
 				"{ftbquests.chapter.crops.quest76.description2}"
 			]
 			id: "530890B3F0CE32B1"
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crops.quest76.subtitle}"
 			tasks: [{
 				id: "3D7DDDF60546C23E"
 				item: "veggiesdelight:sweet_potato"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 0.5d
+			x: 11.21190476190477d
+			y: 0.8321428571428697d
 		}
 		{
 			id: "747C13EC9FA295FB"
+			shape: "none"
 			tasks: [{
 				id: "08FD7A72FC6AFC36"
 				item: "atmospheric:blood_orange"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 2.0d
+			x: 18.561904761904778d
+			y: 1.4452380952381176d
 		}
 		{
 			id: "4F81826897B74EE0"
+			shape: "none"
 			tasks: [{
 				id: "7CA77EEEE4850330"
 				item: "atmospheric:aloe_leaves"
 				type: "item"
 			}]
-			x: 17.0d
-			y: -2.5d
+			x: 16.890476190476193d
+			y: -2.0249999999999915d
 		}
 		{
 			id: "38AF906C01C82C4E"
+			shape: "none"
 			tasks: [{
 				id: "1F8CCEF348DD055C"
 				item: "atmospheric:currant"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -5.5d
+			x: 18.1404761904762d
+			y: -4.560714285714283d
 		}
 		{
 			id: "29DB37EC353F9B6E"
+			shape: "none"
 			tasks: [{
 				id: "294051F7E487172C"
 				item: "atmospheric:yucca_fruit"
 				type: "item"
 			}]
 			x: -3.5d
-			y: 5.0d
+			y: 3.249999999999986d
 		}
 		{
 			id: "0F6038DFCF3087B8"
+			shape: "none"
 			tasks: [{
 				id: "187A421E35209762"
 				item: "society:salmonberry"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -5.5d
+			x: 10.909523809523805d
+			y: -4.0547619047618895d
 		}
 		{
 			id: "4903AF88B0996BE7"
+			shape: "none"
 			tasks: [{
 				id: "0D72EAA4A6ADF84D"
 				item: "society:boysenberry"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -5.5d
+			x: 12.366666666666667d
+			y: -4.169047619047603d
 		}
 		{
 			id: "2F27CD4D551DD305"
+			shape: "none"
 			tasks: [{
 				id: "668CD89F089326D3"
 				item: "society:cranberry"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -5.5d
+			x: 13.81904761904763d
+			y: -4.274999999999999d
 		}
 		{
 			id: "19A3DC6691B0D3B6"
+			shape: "none"
 			tasks: [{
 				id: "7CBF2AEDEA09DE6A"
 				item: "society:crystalberry"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -5.5d
+			x: 15.247619047619061d
+			y: -4.417857142857137d
 		}
 		{
 			id: "16F48C90D9C411FA"
+			shape: "none"
 			tasks: [{
 				id: "7C5E9C2F5626D728"
 				item: "windswept:wild_berries"
 				type: "item"
 			}]
-			x: 17.0d
-			y: -5.5d
+			x: 16.747619047619054d
+			y: -4.453571428571422d
 		}
 		{
 			id: "29EA13A93B288D70"
+			shape: "none"
 			tasks: [{
 				id: "421C506D745A3469"
 				item: "veggiesdelight:zucchini"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -3.357142857142854d
+			y: 2.154761904761898d
 		}
 		{
 			id: "59A219E8E50885CD"
+			shape: "none"
 			tasks: [{
 				id: "693F638F6BC17497"
 				item: "veggiesdelight:broccoli"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.5d
+			x: -1.9965986394557902d
+			y: 2.3112244897958973d
 		}
 		{
 			id: "7362B0C8F73D533E"
+			shape: "none"
 			tasks: [{
 				id: "6BEEF3CC5BFC990F"
 				item: {
@@ -1119,29 +2096,42 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.5d
+			x: -2.571428571428555d
+			y: -5.0d
 		}
 		{
 			id: "1817B00DD389CAE3"
+			shape: "none"
 			subtitle: "Optional"
 			tasks: [{
 				id: "712A5AB5AF8E2B18"
 				item: "society:mana_fruit"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 6.285714285714285d
+			y: 2.4285714285714235d
 		}
 		{
 			id: "45B303A7A34B4AD8"
+			shape: "none"
 			tasks: [{
 				id: "6B3542F71273325A"
 				item: "society:sparkpod"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 8.599999999999987d
+			y: 2.3714285714285595d
+		}
+		{
+			id: "09C8F1B6D3B0232B"
+			shape: "none"
+			tasks: [{
+				id: "70E7252AD4B471A3"
+				item: "society:mossberry"
+				type: "item"
+			}]
+			x: -2.0428571428571445d
+			y: 3.404761904761898d
 		}
 	]
 	title: "{ftbquests.chapter.crops.title}"

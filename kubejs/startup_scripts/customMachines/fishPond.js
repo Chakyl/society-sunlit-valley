@@ -3,7 +3,7 @@ console.info("[SOCIETY] fishPond.js loaded");
 
 const getRequestedItems = (type, population) => {
   let requestedItems = {};
-  global.fishPondDefinitions.get(type).quests.forEach((quest) => {
+  global.fishPondDefinitions.get(`${type}`).quests.forEach((quest) => {
     if (quest.population == population) {
       requestedItems = quest.requestedItems;
     }

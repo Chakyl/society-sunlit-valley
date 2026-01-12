@@ -7720,30 +7720,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "midnightlib-forge-1.9.1+1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7254/893/midnightlib-forge-1.9.1+1.20.1.jar",
-                    "id": "7254893",
-                    "parent_id": "488090",
-                    "hashes": {
-                        "sha1": "3cda3669d41388cd5cd84a5f8c5f722b7af462cd",
-                        "md5": "a5c0f321377a4ca4c429eefbba4eebf4"
-                    },
-                    "required_dependencies": [],
-                    "size": 62281,
-                    "date_published": "2025-11-23T20:10:53.850Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "midnightlib-forge-1.9.1+1.20.1.jar",
+                    "file_name": "midnightlib-forge-1.9.2+1.20.1.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -7752,16 +7730,38 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/codAaoxh/versions/fNBU1ZYk/midnightlib-forge-1.9.1+1.20.1.jar",
-                    "id": "fNBU1ZYk",
+                    "url": "https://cdn.modrinth.com/data/codAaoxh/versions/EVVb5nP3/midnightlib-forge-1.9.2+1.20.1.jar",
+                    "id": "EVVb5nP3",
                     "parent_id": "codAaoxh",
                     "hashes": {
-                        "sha512": "d88e5d151b8290997a84e626fc3a6f9cf0c8f7954c93ec334909ea5e0ddda73e9cdb56f39002704ea04dcfa767351fa560a6a69ebbf64bffa63b8c43afe33123",
-                        "sha1": "3cda3669d41388cd5cd84a5f8c5f722b7af462cd"
+                        "sha512": "a4f50d46ad30de0f5622fd6aa8415a949889d114a1dc051b2d8d15ff505273aff80f8b40d61193ca71112567a3be396899e96d0ff1c26af31e77a9c68f70e896",
+                        "sha1": "ff01aa718b71249012c41d9926d3fd2982809fdb"
                     },
                     "required_dependencies": [],
-                    "size": 62281,
-                    "date_published": "2025-11-23T20:10:53.250537Z"
+                    "size": 61987,
+                    "date_published": "2025-12-11T00:14:17.524928Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "midnightlib-forge-1.9.2+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7318/663/midnightlib-forge-1.9.2+1.20.1.jar",
+                    "id": "7318663",
+                    "parent_id": "488090",
+                    "hashes": {
+                        "sha1": "ff01aa718b71249012c41d9926d3fd2982809fdb",
+                        "md5": "e4903bab4c3cf86d64cadb21cd4f279e"
+                    },
+                    "required_dependencies": [],
+                    "size": 61987,
+                    "date_published": "2025-12-11T00:14:18.203Z"
                 }
             ]
         },
@@ -12651,7 +12651,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "via_romana-2.2.1+1.20.1-forge.jar",
+                    "file_name": "via_romana-2.2.2+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12660,24 +12660,24 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/FVToiKwr/versions/t1PeFVM5/via_romana-2.2.1+1.20.1-forge.jar",
-                    "id": "t1PeFVM5",
+                    "url": "https://cdn.modrinth.com/data/FVToiKwr/versions/hPBpjlxa/via_romana-2.2.2+1.20.1-forge.jar",
+                    "id": "hPBpjlxa",
                     "parent_id": "FVToiKwr",
                     "hashes": {
-                        "sha512": "58c675b566afc5730296109128662c5cb17c92581442e023497af8423be98d1de77ada558d3c8e1b6060085029e2b5eb1fbb98b28298358be9fc89191a68043f",
-                        "sha1": "88fa28d07b2cfab1017506c0f1e00ceeaa5dcc90"
+                        "sha512": "ff43275784ad94fd7f6107be95cdf0a9709b6d815eb1758769beac905043f45a4ea2f668801785fbdf03c6908370d8b3d89d9be9a6b6e04bd628867d3452ef80",
+                        "sha1": "2d96968a650213da21cd5bf6e3f74e72ff7b36b4"
                     },
                     "required_dependencies": [
+                        "codAaoxh",
                         "z2XEADmE",
-                        "twkfQtEc",
-                        "codAaoxh"
+                        "twkfQtEc"
                     ],
-                    "size": 1245690,
-                    "date_published": "2025-12-08T22:23:41.371810Z"
+                    "size": 1246319,
+                    "date_published": "2026-01-06T23:40:08.129910Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "via_romana-2.2.1+1.20.1-forge.jar",
+                    "file_name": "via_romana-2.2.2+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12686,20 +12686,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7309/567/via_romana-2.2.1+1.20.1-forge.jar",
-                    "id": "7309567",
+                    "url": "https://edge.forgecdn.net/files/7427/731/via_romana-2.2.2+1.20.1-forge.jar",
+                    "id": "7427731",
                     "parent_id": "1026508",
                     "hashes": {
-                        "sha1": "88fa28d07b2cfab1017506c0f1e00ceeaa5dcc90",
-                        "md5": "e32c93c8835b88474b8b2565f1abbd07"
+                        "sha1": "2d96968a650213da21cd5bf6e3f74e72ff7b36b4",
+                        "md5": "8c3a7d02cfd147705de77375c8b912a0"
                     },
                     "required_dependencies": [
+                        "1203668",
                         "499980",
-                        "488090",
-                        "1203668"
+                        "488090"
                     ],
-                    "size": 1245690,
-                    "date_published": "2025-12-08T22:22:41.657Z"
+                    "size": 1246319,
+                    "date_published": "2026-01-07T00:24:42.873Z"
                 }
             ]
         },

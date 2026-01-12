@@ -353,16 +353,16 @@ global.getPlushieItemNbt = (currentNbt, type, customName, animalData, animalNbt)
   newNbt.animal.type = type;
   // Aggressive with the conditionals here since invalid nbt will definitely crash the game
   if (customName) {
-    newNbt.animal.name = customName;
+    newNbt.animal.name = String(Component.of(customName).getString());
   }
   if (animalData.ageLastDroppedSpecial) {
     newNbt.animal.ageLastDroppedSpecial = animalData.ageLastDroppedSpecial;
   }
   if (animalData.ageLastMilked) {
-    newNbt.animal.ageLastDroppedSpecial = animalData.ageLastMilked;
+    newNbt.animal.ageLastMilked = animalData.ageLastMilked;
   }
   if (animalData.ageLastMagicHarvested) {
-    newNbt.animal.ageLastDroppedSpecial = animalData.ageLastMagicHarvested;
+    newNbt.animal.ageLastMagicHarvested = animalData.ageLastMagicHarvested;
   }
   if (animalData.clockwork) {
     newNbt.animal.clockwork = true;

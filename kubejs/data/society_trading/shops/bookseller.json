@@ -180,6 +180,20 @@
     },
     {
       "offer": {
+        "item": "society:alias_moss",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 6
+      },
+      "numismatics_cost": 20480,
+      "trade_id": "bookseller_alias_moss",
+      "seasons_required": ["alias_moss"],
+      "unlock_description": "jei.society_trading.only_autumn"
+    },
+    {
+      "offer": {
         "item": "society:bluegill_meridian",
         "count": 1
       },

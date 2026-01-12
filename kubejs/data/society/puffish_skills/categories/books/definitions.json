@@ -1,4 +1,25 @@
 {
+  "alias_moss": {
+    "title": { "translate": "item.society.alias_moss" },
+    "description": {
+      "translate": "society_skills.books.alias_moss.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:alias_moss"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s alias_moss",
+          "lock_command": "kubejs stages remove @s alias_moss"
+        }
+      }
+    ]
+  },
   "animal_fancy": {
     "title": { "translate": "item.society.animal_fancy" },
     "description": {

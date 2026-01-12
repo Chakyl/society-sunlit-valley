@@ -371,22 +371,22 @@ global.crops = [
   { item: "beachparty:coconut", value: 8 },
   { item: "minecraft:apple", value: 8 },
   { item: "vinery:apple_bag", value: 72 },
-  { item: "botania:white_mushroom", value: 12 },
-  { item: "botania:orange_mushroom", value: 12 },
-  { item: "botania:magenta_mushroom", value: 12 },
-  { item: "botania:light_blue_mushroom", value: 12 },
-  { item: "botania:yellow_mushroom", value: 12 },
-  { item: "botania:lime_mushroom", value: 12 },
-  { item: "botania:pink_mushroom", value: 12 },
-  { item: "botania:black_mushroom", value: 12 },
-  { item: "botania:red_mushroom", value: 12 },
-  { item: "botania:green_mushroom", value: 12 },
-  { item: "botania:brown_mushroom", value: 12 },
-  { item: "botania:blue_mushroom", value: 12 },
-  { item: "botania:purple_mushroom", value: 12 },
-  { item: "botania:cyan_mushroom", value: 12 },
-  { item: "botania:light_gray_mushroom", value: 12 },
-  { item: "botania:gray_mushroom", value: 12 },
+  { item: "botania:white_mushroom", value: 24 },
+  { item: "botania:orange_mushroom", value: 24 },
+  { item: "botania:magenta_mushroom", value: 24 },
+  { item: "botania:light_blue_mushroom", value: 24 },
+  { item: "botania:yellow_mushroom", value: 24 },
+  { item: "botania:lime_mushroom", value: 24 },
+  { item: "botania:pink_mushroom", value: 24 },
+  { item: "botania:black_mushroom", value: 24 },
+  { item: "botania:red_mushroom", value: 24 },
+  { item: "botania:green_mushroom", value: 24 },
+  { item: "botania:brown_mushroom", value: 24 },
+  { item: "botania:blue_mushroom", value: 24 },
+  { item: "botania:purple_mushroom", value: 24 },
+  { item: "botania:cyan_mushroom", value: 24 },
+  { item: "botania:light_gray_mushroom", value: 24 },
+  { item: "botania:gray_mushroom", value: 24 },
   { item: "minecraft:red_mushroom", value: 8 },
   { item: "farmersdelight:red_mushroom_colony", value: 48 },
   { item: "minecraft:brown_mushroom", value: 8 },
@@ -396,6 +396,8 @@ global.crops = [
   { item: "minecraft:warped_fungus", value: 16 },
   { item: "mynethersdelight:warped_fungus_colony", value: 96 },
   { item: "verdantvibes:bracket_mushroom", value: 32 },
+  { item: "cluttered:blue_roundhead", value: 140 },
+  { item: "cluttered:fly_agaric", value: 140 },
   { item: "species:alphacene_mushroom", value: 32 },
   { item: "minecraft:bamboo_block", value: 9 },
   { item: "society:sturdy_bamboo_block", value: 81 },
@@ -418,6 +420,7 @@ global.crops = [
   { item: "society:crystalberry_crate", value: 198 },
   { item: "society:blueberry", value: 24 },
   { item: "society:blueberry_crate", value: 216 },
+  { item: "society:mossberry", value: 96 },
   { item: "farmersdelight:cabbage", value: 70 },
   { item: "farmersdelight:cabbage_crate", value: 630 },
   { item: "minecraft:wheat", value: 46 },
@@ -646,6 +649,7 @@ global.fruits = [
   { item: "society:cranberry", value: 18 },
   { item: "society:crystalberry", value: 22 },
   { item: "windswept:wild_berries", value: 8 },
+  { item: "society:mossberry", value: 96 },
 ];
 global.preserves = [
   { item: "society:red_grape_preserves", value: 124 },
@@ -697,8 +701,10 @@ global.mushrooms = [
   { item: "species:alphacene_mushroom", value: 32 },
   { item: "quark:glow_shroom", value: 24 },
   { item: "ribbits:toadstool", value: 20 },
+  { item: "cluttered:blue_roundhead", value: 140 },
+  { item: "cluttered:fly_agaric", value: 140 },
   // Tag equivalent
-  { item: "botania:shimmering_mushrooms", value: 16 },
+  { item: "botania:shimmering_mushrooms", value: 24 },
 ];
 global.mushrooms.forEach((shroom) => {
   let itemId = shroom.item.path;
@@ -969,7 +975,7 @@ global.wines = [
   { item: 'society:violet_moon', value: 1488 },
   { item: 'society:laputa_franc', value: 3648 },
   { item: 'society:sparkling_le_roy',  value: 2872 },
-{ item: 'society:mana_king', value: 3296 },
+  { item: 'society:mana_king', value: 3296 },
 ];
 
 global.wines.forEach((wine) => {
@@ -1345,6 +1351,7 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: "society:mossberry_stew", value: 288 },
   { item: "windswept:goat_stew", value: 190 },
   { item: "windswept:chestnut_soup", value: 80 },
   { item: "windswept:christmas_pudding", value: 160 },

@@ -59,20 +59,14 @@ global.processShippingBinInventory = (
       );
     if (isSellable) {
       let trade = global.trades.get(String(slotItem.id));
-      let quality;
-      let slotNbt;
+      let quality = undefined;
+      let slotNbt = undefined;
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }
-      if (
-        slotNbt &&
-        ((slotNbt.slime && slotNbt.slime.id) ||
-          (slotNbt.plort && slotNbt.plort.id))
-      ) {
-        if (slotNbt.slime)
-          trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
-        if (slotNbt.plort)
-          trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
+      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
+        if (slotNbt.slime) trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
+        if (slotNbt.plort) trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
 
       if (slotNbt && slotNbt.quality_food) {

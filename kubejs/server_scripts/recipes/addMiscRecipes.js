@@ -290,7 +290,7 @@ ServerEvents.recipes((e) => {
     C: "society:jade",
     f: "society:fire_quartz",
   });
-    e.shaped("society:oil_maker", ["ccj", "ccs", "fgf"], {
+  e.shaped("society:oil_maker", ["ccj", "ccs", "fgf"], {
     c: "minecraft:copper_block",
     g: "minecraft:gold_block",
     j: "society:jade",
@@ -320,6 +320,12 @@ ServerEvents.recipes((e) => {
     L: "meadow:fire_log",
     f: "society:fire_quartz",
     I: "minecraft:iron_block",
+  });
+  e.shaped("society:mushroom_log", ["LLL", "LML", "mPm"], {
+    L: "meadow:fire_log",
+    P: "society:mossberry_preserves",
+    m: "society:mossberry",
+    M: "farmersdelight:rich_soil",
   });
   // Battery
   e.shaped("society:crystalarium", ["III", "SDS", "ibi"], {

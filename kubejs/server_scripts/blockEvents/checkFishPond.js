@@ -117,13 +117,14 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
 BlockEvents.rightClicked("society:fish_pond", (e) => {
   const { item, block, player } = e;
   if (!player.isCrouching()) {
-    e.server.scheduleInTicks(4, () => {
+    const { type, population, max_population, quest_id } =
+      block.getEntityData().data;
+    e.server.scheduleInTicks(1, () => {
       const properties = block.getProperties();
       const mature = properties.get("mature").toLowerCase();
       const valid = properties.get("valid").toLowerCase();
       const quest = properties.get("quest").toLowerCase();
-      const { type, population, max_population, quest_id } =
-        block.getEntityData().data;
+
       if (mature == "false") {
         if (!type.equals("")) {
           sendFishPondMessage(e, type, population, max_population);
@@ -141,7 +142,7 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
       }
       if (mature === "false" && quest === "true") {
         const questContent = getRequestedItems(type, max_population)[quest_id];
-        if (questContent) {
+        if (questContent && questContent.item !== item.id) {
           const questItem = Item.of(questContent.item).displayName;
           let checkedCount = player.stages.has("pond_house_five")
             ? Math.round(questContent.count / 2)

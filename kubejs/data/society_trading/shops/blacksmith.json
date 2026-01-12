@@ -200,6 +200,19 @@
     },
     {
       "offer": {
+        "item": "society:moon_pylon",
+        "count": 1
+      },
+      "request": {
+        "item": "minecraft:netherite_ingot",
+        "count": 20
+      },
+      "stage_required": "mining_mastery",
+      "unlock_description": "jei.society_trading.mining_mastery_unlocked",
+      "trade_id": "blacksmith_moon_pylon"
+    },
+    {
+      "offer": {
         "item": "buildinggadgets2:gadget_core",
         "count": 1
       },

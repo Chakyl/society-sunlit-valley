@@ -429,7 +429,6 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
           server.runCommandSilent(
             `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
           );
-          newProperties.working = false;
           newProperties.mature = false;
           newProperties.working = true;
           nbt.merge({ data: { recipe: `${attachedBlock.getId()}`, stage: 0 } });
@@ -453,54 +452,77 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
     if (returnFluidData) return undefined;
   }
 };
-
+const getMushroomLogData = (level, centerPos, radius) => {
+  const { x, y, z } = centerPos;
+  let scanBlock;
+  let scannedBlocks = 0;
+  let regularOutputs = [];
+  let dominantOutputs = [];
+  let airBlocks = 0;
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(x - radius, y - radius, z - radius),
+    [x + radius, y + radius, z + radius]
+  )) {
+    scanBlock = level.getBlock(pos);
+    if (scanBlock.hasTag("society:mushroom_log_detects")) {
+      scannedBlocks++;
+      if (scanBlock.hasTag("society:mushroom_log_dominant")) {
+        if (!dominantOutputs.includes(scanBlock.id))
+          dominantOutputs.push(scanBlock.id);
+      } else {
+        if (!regularOutputs.includes(scanBlock.id))
+          regularOutputs.push(scanBlock.id);
+      }
+    } else if (scanBlock.id === "minecraft:air") airBlocks++;
+  }
+  return {
+    count: airBlocks < 100 ? 4 : scannedBlocks,
+    possibleOutputs: dominantOutputs.length > 0 ? dominantOutputs : regularOutputs,
+  };
+};
 global.handleMushroomLogRandomTick = (tickEvent) => {
   const { block, level, server } = tickEvent;
   let newProperties = block.getProperties();
-  let nbt = block.getEntityData();
-  const attachedBlock = global.getTapperLog(level, block);
-  let foundFluidData = undefined;
-  let hasError = false;
-  if (attachedBlock.hasTag("society:tappable_blocks")) {
-    if (
-      !nbt.data.recipe ||
-      !nbt.data.recipe.equals(attachedBlock.id) ||
-      global.hasMultipleTappers(level, block)
-    ) {
-      hasError = true;
-    }
-    if (
-      (block.properties.get("working").toLowerCase() === "false" &&
-        block.properties.get("mature").toLowerCase() === "false")
-    ) {
-      if (global.tapperRecipes) {
-        const recipe = global.tapperRecipes.get(`${attachedBlock.getId()}`);
-        let nbt = block.getEntityData();
-        if (
-          getCanTakeItems(
-            attachedBlock.getId(),
-            recipe,
-            block.properties,
-            false
-          )
-        ) {
-          newProperties = block.getProperties();
-          successParticles(level, block);
-          server.runCommandSilent(
-            `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
-          );
-          newProperties.working = false;
-          newProperties.mature = false;
-          newProperties.working = true;
-          nbt.merge({ data: { recipe: `${attachedBlock.getId()}`, stage: 0 } });
-          hasError = false;
-        }
-        block.setEntityData(nbt);
+  if (
+    block.properties.get("working").toLowerCase() === "false" &&
+    block.properties.get("mature").toLowerCase() === "false"
+  ) {
+    const leafCount = global.getTaggedBlocksInRadius(
+      level,
+      "society:mushroom_log_leaves",
+      new BlockPos(block.x, block.y + 4, block.z),
+      8
+    );
+    const logData = getMushroomLogData(level, block.pos, 8);
+    if (!logData || logData.count == 0 || logData.possibleOutputs.length == 0)
+      return;
+    let baseCount = Math.max(
+      1,
+      Math.floor(Math.min(8, logData.count / 4) + Math.min(8, leafCount / 4))
+    );
+    if (global.mushroomLogRecipes) {
+      let rolledRecipe =
+        logData.possibleOutputs[
+          Math.floor(Math.random() * logData.possibleOutputs.length)
+        ];
+
+      const recipe = global.mushroomLogRecipes.get(`${rolledRecipe}`);
+      let nbt = block.getEntityData();
+      if (getCanTakeItems(rolledRecipe, recipe, block.properties, false)) {
+        newProperties = block.getProperties();
+        successParticles(level, block);
+        server.runCommandSilent(
+          `playsound species:block.alphacene_foliage.place block @a ${block.x} ${block.y} ${block.z}`
+        );
+        newProperties.mature = false;
+        newProperties.working = true;
+        nbt.merge({
+          data: { recipe: `${rolledRecipe}`, stage: 0, baseCount: baseCount },
+        });
       }
+      block.setEntityData(nbt);
+      block.set(block.id, newProperties);
     }
-    block.set(block.id, newProperties);
-  } else {
-    block.set(block.id, newProperties);
   }
 };
 
@@ -1075,7 +1097,9 @@ const qualityToInt = (quality) => {
   }
 };
 const getFertilizer = (crop) => {
-  const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0));
+  const block = crop
+    .getLevel()
+    .getBlock(crop.getPos().below().offset(-1, 0, 0));
   if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
     return -1;
   if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))

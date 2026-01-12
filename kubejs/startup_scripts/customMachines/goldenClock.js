@@ -53,6 +53,9 @@ global.handleProgress = (level, block) => {
       if (block.properties.get("error") !== "true")
         global.handleBETick(eventObj, global.tapperRecipes, 7, false, true);
       break;
+    case "society:mushroom_log":
+        global.handleBETick(eventObj, global.mushroomLogRecipes, 4, false, true);
+      break;
     case "society:bait_maker":
       global.handleBETick(eventObj, null, 7, false, false, false, true);
       break;

@@ -335,7 +335,57 @@ global.fishPondDefinitions = new Map([
       ],
     },
   ],
-  ["minecraft:salmon", { quests: basicQuests }],
+  [
+    "minecraft:salmon",
+    {
+      quests: [
+        {
+          population: 3,
+          requestedItems: [
+            { item: "meadow:pine_log", count: 64 },
+            { item: "society:salmonberry", count: 16 },
+            { item: "meadow:alpine_poppy", count: 3 },
+          ],
+        },
+        {
+          population: 5,
+          requestedItems: [
+            { item: "minecraft:oak_log", count: 64 },
+            { item: "society:tapper", count: 8 },
+            { item: "minecraft:dark_oak_log", count: 64 },
+          ],
+        },
+        {
+          population: 7,
+          requestedItems: [
+            { item: "society:mossberry", count: 16 },
+            { item: "society:mossberry_preserves", count: 4 },
+            { item: "society:dried_mossberry", count: 2 },
+          ],
+        },
+      ],
+      additionalRewards: [
+        {
+          minPopulation: 4,
+          item: "meadow:pine_log",
+          count: 16,
+          chance: 0.34,
+        },
+        {
+          minPopulation: 6,
+          item: "windswept:pinecone",
+          count: 32,
+          chance: 0.31,
+        },
+        {
+          minPopulation: 8,
+          item: "society:mossberry",
+          count: 3,
+          chance: 0.82,
+        },
+      ],
+    },
+  ],
   ["aquaculture:blackfish", { quests: basicQuests }],
   [
     "aquaculture:brown_trout",
@@ -531,6 +581,18 @@ global.fishPondDefinitions = new Map([
     {
       quests: basicQuests,
       additionalRewards: [
+        {
+          minPopulation: 4,
+          item: "minecraft:seagrass",
+          count: 64,
+          chance: 0.64,
+        },
+        {
+          minPopulation: 6,
+          item: "minecraft:kelp",
+          count: 32,
+          chance: 0.32,
+        },
         {
           minPopulation: 10,
           item: "wildernature:cod_catcher_banner",

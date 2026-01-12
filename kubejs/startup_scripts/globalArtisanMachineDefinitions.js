@@ -123,6 +123,12 @@ global.artisanMachineDefinitions = [
     stageCount: 1,
     maxInput: 1,
   },
+  {
+    id: "society:mushroom_log",
+    recipes: global.mushroomLogRecipes,
+    stageCount: 4,
+    maxInput: 1,
+  },
 ];
 
 global.artisanMachineIds = global.artisanMachineDefinitions.map((x) => x.id);

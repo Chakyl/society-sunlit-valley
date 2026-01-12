@@ -264,6 +264,21 @@
       "trade_id": "market_eggplant_seed"
     },
     {
+      "offer": { "item": "society:cranberry_seed", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "second_request": {
+        "item": "numismatics:spur",
+        "count": 4
+      },
+      "numismatics_cost": 12,
+      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "stage_override": "universal_methods_of_farming",
+      "trade_id": "market_cranberry_seed"
+    },
+    {
       "offer": { "item": "farm_and_charm:barley_seeds", "count": 1 },
       "request": {
         "item": "numismatics:spur",
