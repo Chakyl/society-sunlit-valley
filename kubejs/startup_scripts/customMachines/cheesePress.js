@@ -12,12 +12,21 @@ global.cheesePressRecipes = new Map([
   ["society:amethyst_milk", { output: ["1x meadow:piece_of_amethyst_cheese"] }],
   ["society:large_sheep_milk", { output: ["1x meadow:sheep_cheese_block"] }],
   ["society:large_milk", { output: ["1x meadow:cheese_block"] }],
-  ["society:large_buffalo_milk", { output: ["1x meadow:buffalo_cheese_block"] }],
+  [
+    "society:large_buffalo_milk",
+    { output: ["1x meadow:buffalo_cheese_block"] },
+  ],
   ["society:large_goat_milk", { output: ["1x meadow:goat_cheese_block"] }],
   ["society:large_warped_milk", { output: ["1x meadow:warped_cheese_block"] }],
-  ["society:large_tri_bull_milk", { output: ["1x farmlife:tribull_cheese_wheel"] }],
+  [
+    "society:large_tri_bull_milk",
+    { output: ["1x farmlife:tribull_cheese_wheel"] },
+  ],
   ["society:large_grain_milk", { output: ["1x meadow:grain_cheese_block"] }],
-  ["society:large_amethyst_milk", { output: ["1x meadow:amethyst_cheese_block"] }],
+  [
+    "society:large_amethyst_milk",
+    { output: ["1x meadow:amethyst_cheese_block"] },
+  ],
 ]);
 
 StartupEvents.registry("block", (event) => {
@@ -26,7 +35,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("quality", 0, 3))
     .soundType("copper")
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
@@ -35,8 +43,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .displayName("Artisan Cheese Press")
     .item((item) => {
-      item.tooltip(Text.gray("Turns any milk into cheese"));
-      item.tooltip(Text.green("Preserves input quality"));
+      item.tooltip(Text.translatable("block.society.cheese_press.description").gray());
       item.modelJson({
         parent: "society:block/cheese_press/cheese_press_off",
       });
@@ -46,14 +53,12 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -81,11 +86,13 @@ StartupEvents.registry("block", (event) => {
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            quality: block.properties.get("quality"),
           });
         }
       }
-
+      let outputCount = 1;
+      if (player.stages.has("rancher") && Math.random() <= 0.2) {
+        outputCount = 2;
+      }
       global.handleBERightClick(
         "species:block.frozen_meat.place",
         click,
@@ -93,7 +100,7 @@ StartupEvents.registry("block", (event) => {
         3,
         false,
         false,
-        player.stages.has("rancher") ? 2 : 1,
+        outputCount,
         false,
         true
       );

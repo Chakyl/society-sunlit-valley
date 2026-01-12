@@ -33,6 +33,17 @@
         "value": 100
       }
     },
+    "attributeslib:armor_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
+      }
+    },
     "irons_spellbooks:nature_spell_power": {
       "enabled": false,
       "min": {
@@ -53,6 +64,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "attributeslib:armor_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/blood_step": {
@@ -913,6 +935,28 @@
         "value": 100
       }
     },
+    "attributeslib:overheal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "attributeslib:healing_received": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/scorch": {
       "enabled": false,
       "min": {
@@ -1021,6 +1065,28 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "attributeslib:cold_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "attributeslib:experience_gained": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "additional_attributes:spell_type_poison_arrow": {
@@ -1573,6 +1639,17 @@
         "value": 1000000
       }
     },
+    "attributeslib:draw_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 4,
+        "value": 4
+      }
+    },
     "additional_attributes:spell_type_shockwave": {
       "enabled": false,
       "min": {
@@ -1727,6 +1804,17 @@
         "value": 100
       }
     },
+    "attributeslib:current_hp_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:spell_school_nature": {
       "enabled": false,
       "min": {
@@ -1826,15 +1914,37 @@
         "value": 100
       }
     },
-    "additional_attributes:innate_spell/irons_spellbooks/earthquake": {
+    "attributeslib:arrow_damage": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
+      }
+    },
+    "attributeslib:arrow_velocity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "attributeslib:life_steal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "confluence:crit_chance": {
@@ -1848,6 +1958,28 @@
         "value": 10
       }
     },
+    "attributeslib:ghost_health": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "additional_attributes:innate_spell/irons_spellbooks/earthquake": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "minecraft:generic.follow_range": {
       "enabled": true,
       "min": {
@@ -1857,6 +1989,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "attributeslib:prot_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "runiclib:generic.vulnerability_multiplier": {
@@ -2189,6 +2332,17 @@
         "value": 1000
       }
     },
+    "attributeslib:crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "minecraft:generic.armor_toughness": {
       "enabled": true,
       "min": {
@@ -2442,6 +2596,17 @@
         "value": 1024
       }
     },
+    "attributeslib:prot_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 34,
+        "value": 34
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/blood_needles": {
       "enabled": false,
       "min": {
@@ -2484,6 +2649,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "attributeslib:mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "botania:pixie_spawn_chance": {
@@ -3014,6 +3190,17 @@
         "value": 100
       }
     },
+    "attributeslib:dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "spells_and_shields:generic.mana_regeneration": {
       "enabled": false,
       "min": {
@@ -3045,6 +3232,17 @@
       "max": {
         "default": 10000,
         "value": 10000
+      }
+    },
+    "attributeslib:fire_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "irons_spellbooks:ice_spell_power": {
@@ -3151,6 +3349,17 @@
       "min": {
         "default": 0,
         "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "attributeslib:crit_damage": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
       },
       "max": {
         "default": 100,

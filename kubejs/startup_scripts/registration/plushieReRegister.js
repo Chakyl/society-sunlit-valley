@@ -4,20 +4,22 @@ global.plushieRightClick = (click) => {
   const { item, block, player, level, server, hand } = click;
   const { x, y, z } = block;
   let nbt = block.getEntityData();
-  const { type, quest_id, affection } = nbt.data;
+  const { type, quest_id, affection, animal } = nbt.data;
 
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
-    if (quest_id > 0) {
-      let questList = Ingredient.of(global.plushieTraits[type].tag).itemIds;
-      let questOffset = 3;
-      if (questList.length < 12) questOffset = 2;
-      if (questList.length > 36) questOffset = 6;
-      let questItem = questList[affection * questOffset + quest_id - 1];
-      let questName = Item.of(questItem).displayName;
-      if (item && item == questItem) {
-        if (!player.isCreative()) item.count--;
+    if (!animal) {
+      if (
+        player.stages.has("women_who_run_with_the_plushies") &&
+        affection < 3
+      ) {
+        nbt.merge({
+          data: {
+            affection: 3,
+          },
+        });
+        block.setEntityData(nbt);
         level.spawnParticles(
           "minecraft:heart",
           true,
@@ -30,35 +32,78 @@ global.plushieRightClick = (click) => {
           10,
           0.1
         );
-        nbt.merge({
-          data: {
-            quest_id: affection == 3 ? "0" : String(rnd(1, 3)),
-            affection: affection + 1,
-          },
-        });
-        block.setEntityData(nbt);
-        player.tell("§c❤ §7Thank you for the wonderful gift!");
-      } else {
-        player.tell("§c❤ §7I would be much happier if I had this...");
-        player.tell(questName);
       }
-    }
-    if (item == "minecraft:air" && block.id === "whimsy_deco:adv_singing_frog_plushie") {
-      server.runCommandSilent(`playsound species:music.disk.spawner block @a ${x} ${y} ${z}`);
-      block.set("whimsy_deco:sunlit_singing_frog", block.properties);
-      block.setEntityData(nbt);
-      server.scheduleInTicks(0, () => {
-        server.scheduleInTicks(2740, () => {
-          if (level.getBlock(block.pos).id === "whimsy_deco:sunlit_singing_frog") {
-            block.set("whimsy_deco:adv_singing_frog_plushie", block.properties);
-            block.setEntityData(nbt);
+      if (quest_id > 0) {
+        let questList = Ingredient.of(global.plushieTraits[type].tag).itemIds;
+        let questOffset = 3;
+        if (questList.length < 12) questOffset = 2;
+        if (questList.length > 36) questOffset = 6;
+        let questItem =
+          questList[affection * questOffset + Number(quest_id) - 1];
+        let questName = Item.of(questItem).displayName;
+        if (item && item == questItem) {
+          if (!player.isCreative()) item.count--;
+          level.spawnParticles(
+            "minecraft:heart",
+            true,
+            x + 0.5,
+            y + 0.5,
+            z + 0.5,
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            10,
+            0.1
+          );
+          nbt.merge({
+            data: {
+              quest_id: affection == 3 ? "0" : String(rnd(1, 3)),
+              affection: affection + 1,
+            },
+          });
+          if (
+            !player.stages.has("women_who_run_with_the_plushies") &&
+            Math.random() <= 0.05
+          ) {
+            block.popItemFromFace(
+              "society:women_who_run_with_the_plushies",
+              block.properties.get("facing")
+            );
           }
+          block.setEntityData(nbt);
+          player.tell(Text.translatable("society.plushie.thank").gray());
+        } else {
+          player.tell(Text.translatable("society.plushie.want_gift").gray());
+          player.tell(questName);
+        }
+      }
+      if (
+        item == "minecraft:air" &&
+        block.id === "whimsy_deco:adv_singing_frog_plushie"
+      ) {
+        server.runCommandSilent(
+          `playsound species:music.disk.spawner block @a ${x} ${y} ${z}`
+        );
+        block.set("whimsy_deco:sunlit_singing_frog", block.properties);
+        block.setEntityData(nbt);
+        server.scheduleInTicks(0, () => {
+          server.scheduleInTicks(2740, () => {
+            if (
+              level.getBlock(block.pos).id === "whimsy_deco:sunlit_singing_frog"
+            ) {
+              block.set(
+                "whimsy_deco:adv_singing_frog_plushie",
+                block.properties
+              );
+              block.setEntityData(nbt);
+            }
+          });
         });
-      });
-    } else
-      server.runCommandSilent(
-        `playsound tanukidecor:block.mini_figure.squeak block @a ${x} ${y} ${z}`
-      );
+      } else
+        server.runCommandSilent(
+          `playsound tanukidecor:block.mini_figure.squeak block @a ${x} ${y} ${z}`
+        );
+    }
   }
 };
 
@@ -83,7 +128,12 @@ StartupEvents.registry("block", (event) => {
       })
       .rightClick((click) => global.plushieRightClick(click))
       .blockEntity((blockInfo) => {
-        blockInfo.initialData({ type: "", quest_id: 0, quality: 0, affection: 0 });
+        blockInfo.initialData({
+          type: "",
+          quest_id: 0,
+          quality: 0,
+          affection: 0,
+        });
       });
   });
 });

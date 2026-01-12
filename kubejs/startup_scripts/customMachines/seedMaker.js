@@ -76,6 +76,7 @@ global.seedMakerRecipes = new Map([
   ["veggiesdelight:turnip", { output: ["6x veggiesdelight:turnip_seeds"] }],
   ["veggiesdelight:broccoli", { output: ["6x veggiesdelight:broccoli_seeds"] }],
   ["veggiesdelight:zucchini", { output: ["6x veggiesdelight:zucchini_seeds"] }],
+  ["society:cranberry", { output: ["6x society:cranberry_seed"] }],
 ]);
 
 StartupEvents.registry("block", (event) => {
@@ -92,8 +93,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns 3 of the same crop into seeds"));
-      item.tooltip(Text.green("Preserves input quality"));
+      item.tooltip(Text.translatable("block.society.seed_maker.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
       item.modelJson({
         parent: "society:block/seed_maker/seed_maker_off",
       });

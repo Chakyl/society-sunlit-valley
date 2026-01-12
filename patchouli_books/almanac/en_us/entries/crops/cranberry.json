@@ -1,0 +1,26 @@
+{
+  "name": "Cranberry 🍂",
+  "category": "patchouli:crops",
+  "icon": "society:cranberry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 18$(li)🍂 §6Summer§r$(li)Seed Price: :coin: 12$(li)Yield: 3-4$(li)Grow time: 5 days"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Cranberry Crop",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "society:cranberry[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

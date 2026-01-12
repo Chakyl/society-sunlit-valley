@@ -26,7 +26,7 @@ global.tapperRecipes = new Map([
       leaves: ["minecraft:oak_leaves"],
       output: ["1x society:oak_resin"],
       fluidOutput: "society:oak_resin",
-      time: 3,
+      time: 5,
     },
   ],
   [
@@ -35,7 +35,7 @@ global.tapperRecipes = new Map([
       leaves: ["minecraft:dark_oak_leaves"],
       output: ["1x society:oak_resin"],
       fluidOutput: "society:oak_resin",
-      time: 3,
+      time: 5,
     },
   ],
   [
@@ -97,6 +97,15 @@ global.tapperRecipes = new Map([
       time: 5,
     },
   ],
+  [
+    "cluttered:willow_log",
+    {
+      leaves: ["cluttered:flowering_willow_leaves", "cluttered:willow_leaves"],
+      output: ["1x society:mystic_syrup"],
+      fluidOutput: "society:mystic_syrup",
+      time:7,
+    },
+  ],
 ]);
 
 StartupEvents.registry("block", (event) => {
@@ -113,7 +122,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Place on tree to tap for resources"));
+      item.tooltip(Text.translatable("block.society.tapper.description").gray());
       item.modelJson({
         parent: "society:block/tapper",
       });

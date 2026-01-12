@@ -17,7 +17,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Upgrades 4 Crab Trap Bait at a time"));
+      item.tooltip(Text.translatable("block.society.deluxe_worm_farm.description").gray());
       item.modelJson({
         parent: "society:block/deluxe_worm_farm",
       });

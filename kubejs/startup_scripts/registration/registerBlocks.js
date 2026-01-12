@@ -1,5 +1,61 @@
 StartupEvents.registry("block", (e) => {
   e
+    .create("society:statue_of_cravings", "cardinal")
+    .box(3, 0, 3, 13, 20, 13)
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(4.5)
+    .resistance(9.0)
+    .requiresTool(false)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_stone_tool")
+    .item((item) => {
+      item.tooltip(
+        Text.gray("Offer a stack of crops to recieve the Goddess' blessing")
+      );
+      item.tooltip(Text.gray("Crops and rewards change every season"));
+      item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
+      item.modelJson({
+        parent: "society:block/statue_of_cravings",
+      });
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { facing: "north" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: 0,
+          uvlock: false,
+        },
+      },
+      {
+        when: { facing: "east" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: 90,
+          uvlock: false,
+        },
+      },
+      {
+        when: { facing: "south" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: 180,
+          uvlock: false,
+        },
+      },
+      {
+        when: { facing: "west" },
+        apply: {
+          model: "society:block/statue_of_cravings",
+          y: -90,
+          uvlock: false,
+        },
+      },
+    ],
+  };
+
+  e
     .create("society:treated_log")
     .soundType("wood")
     .property(BlockProperties.AXIS)
@@ -159,9 +215,15 @@ StartupEvents.registry("block", (e) => {
       .tagBlock("society:supply_crate");
   };
   createSupplyCrate("oak", "refurbished_furniture:block/oak_crate_closed");
-  createSupplyCrate("spruce", "refurbished_furniture:block/spruce_crate_closed");
+  createSupplyCrate(
+    "spruce",
+    "refurbished_furniture:block/spruce_crate_closed"
+  );
   createSupplyCrate("palm", "everycomp:block/rfm/beachparty/palm_crate_closed");
-  createSupplyCrate("grimwood", "everycomp:block/rfm/atmospheric/grimwood_crate_closed");
+  createSupplyCrate(
+    "grimwood",
+    "everycomp:block/rfm/atmospheric/grimwood_crate_closed"
+  );
 
   e.create("society:cavern_air")
     .box(0, 0, 0, 0, 0, 0)
@@ -284,10 +346,12 @@ StartupEvents.registry("block", (e) => {
     "blueberry",
     "eggplant",
     "ancient_fruit",
+    "sparkpod",
     "salmonberry",
     "boysenberry",
     "cranberry",
     "crystalberry",
+    "mana_fruit",
   ];
   crates.forEach((crate) => {
     createCrate(crate);
@@ -476,8 +540,9 @@ StartupEvents.registry("block", (e) => {
         food.alwaysEdible(true);
         food.effect("legendarycreatures:convulsion", 1600, 1, 1.0);
       });
-      item.tooltip(Text.darkPurple("It's said to promote relaxation."));
-      item.tooltip(Text.darkPurple("What do you have to lose?"));
+      item.tooltip(
+        Text.translatable("block.society.truffle_tea.description").darkPurple()
+      );
       item.useAnimation("drink");
     });
 
@@ -521,26 +586,6 @@ StartupEvents.registry("block", (e) => {
     })
     .displayName("Attunecore Beer");
 
-  e.create("society:ancient_vespertine", "cardinal")
-    .box(2, 0, 2, 14, 14, 14)
-    .soundType("glass")
-    .defaultCutout()
-    .model("society:block/drinks/ancient_vespertine")
-    .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/ancient_vespertine",
-        },
-      });
-      item.food((food) => {
-        food.alwaysEdible(true);
-        food.effect("vinery:luck_effect", 2400, 1, 1.0);
-        food.fastToEat(true);
-      });
-      item.useAnimation("drink");
-    });
-
   e.create("society:ancient_cider", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
@@ -556,6 +601,26 @@ StartupEvents.registry("block", (e) => {
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("nethervinery:netherite", 400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:ancient_vespertine", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/ancient_vespertine",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("vinery:luck_effect", 2400, 1, 1.0);
         food.fastToEat(true);
       });
       item.useAnimation("drink");
@@ -616,6 +681,86 @@ StartupEvents.registry("block", (e) => {
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("brewery:haley", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:violet_moon", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .defaultCutout()
+    .soundType("glass")
+    .model("society:block/drinks/dewy_star")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/violet_moon",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("brewery:lightning_strike", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:sparkling_le_roy", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/sparkling_le_roy",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("windswept:frost_resistance", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:laputa_franc", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/laputa_franc",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("botania:soul_cross", 2400, 1, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
+
+  e.create("society:mana_king", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .soundType("glass")
+    .defaultCutout()
+    .model("society:block/drinks/ancient_vespertine")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/mana_king",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("botania:clear", 2400, 1, 1.0);
         food.fastToEat(true);
       });
       item.useAnimation("drink");
@@ -688,8 +833,14 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .item((item) => {
-      item.tooltip(Text.red("Do not drink."));
-      item.tooltip(Text.gray("Created by the Mayonnaise Machine upgrade: Enkephalin"));
+      item.tooltip(
+        Text.translatable("block.society.supreme_mayonnaise.description").red()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.supreme_mayonnaise.description.obtain"
+        ).gray()
+      );
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("vinery:creeper_effect", 120, 4, 1.0);

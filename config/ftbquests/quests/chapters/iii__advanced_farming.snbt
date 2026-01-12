@@ -60,10 +60,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"4A48308E11476E9B"
-				"66E1AC55824DF1D9"
-			]
+			dependencies: ["66E1AC55824DF1D9"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest3.description1}"
 				""
@@ -88,8 +85,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
@@ -396,8 +393,8 @@
 				item: "society:enriched_bone_meal"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
@@ -432,7 +429,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest19.title}"
-			x: 4.5d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -1129,8 +1126,8 @@
 				item: "society:wine_keg"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
@@ -1152,6 +1149,52 @@
 			}]
 			x: 8.0d
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"51772B6C1CD5DD1E"
+				"473D0A5E8D57CD4B"
+			]
+			description: [
+				"Not all mushrooms can be cultivated on &6Mushroom Soil&r. The power of the &6Mossberry&r can be used to make the &6Mushroom Log&r!"
+				""
+				"It draws from nearby trees to form different kinds of mushrooms every 4 days depending on the tree types. "
+				""
+				"The quantity of them is impacted by the amount of nearby trees."
+			]
+			id: "0C5EB5F66FB04A29"
+			rewards: [{
+				id: "59AF65650E1BB645"
+				item: "society:cordycep"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1096A414E32EC541"
+				item: "society:mushroom_log"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"&6Mossberries&r are the jewels of &6Autumn&r!"
+				""
+				"They rarely form in trees and dropped when chopped. Unlike other crops, they cannot be farmed like crops."
+			]
+			id: "51772B6C1CD5DD1E"
+			rewards: [{
+				id: "03E0A5A2565799B6"
+				item: "society:mossberry_stew"
+				type: "item"
+			}]
+			tasks: [{
+				id: "424BBA830B722735"
+				item: "society:mossberry"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.0d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

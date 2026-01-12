@@ -121,9 +121,9 @@
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 4
+        "count": 2
       },
-      "numismatics_cost": 16384,
+      "numismatics_cost": 8192,
       "trade_id": "blacksmith_diamond_upgrade_smithing_template_for_sun"
     },
     {
@@ -133,9 +133,9 @@
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 22
+        "count": 11
       },
-      "numismatics_cost": 99112,
+      "numismatics_cost": 49556,
       "trade_id": "blacksmith_netherite_upgrade_smithing_template_for_crown"
     },
     {
@@ -164,20 +164,6 @@
     },
     {
       "offer": {
-        "item": "society:skull_cavern_teleporter",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 1
-      },
-      "numismatics_cost": 4096,
-      "stage_required": "vault_complete",
-      "trade_id": "blacksmith_teleporter_for_sun",
-      "unlock_description": "jei.society_trading.vault_complete"
-    },
-    {
-      "offer": {
         "item": "create:brown_toolbox",
         "count": 1
       },
@@ -187,18 +173,6 @@
       },
       "numismatics_cost": 384,
       "trade_id": "blacksmith_brown_toolbox_for_cog"
-    },
-    {
-      "offer": {
-        "item": "rehooked:wood_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 16384,
-      "trade_id": "blacksmith_wood_hook_for_sun"
     },
     {
       "offer": {
@@ -214,30 +188,6 @@
     },
     {
       "offer": {
-        "item": "automobility:automobile_assembler",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 4
-      },
-      "numismatics_cost": 2048,
-      "trade_id": "blacksmith_automobile_assembler_for_crown"
-    },
-    {
-      "offer": {
-        "item": "automobility:auto_mechanic_table",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 48
-      },
-      "numismatics_cost": 196608,
-      "trade_id": "blacksmith_auto_mechanic_table_for_sun"
-    },
-    {
-      "offer": {
         "item": "furniture:bin",
         "count": 1
       },
@@ -247,6 +197,19 @@
       },
       "numismatics_cost": 16384,
       "trade_id": "blacksmith_bin_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:moon_pylon",
+        "count": 1
+      },
+      "request": {
+        "item": "minecraft:netherite_ingot",
+        "count": 20
+      },
+      "stage_required": "mining_mastery",
+      "unlock_description": "jei.society_trading.mining_mastery_unlocked",
+      "trade_id": "blacksmith_moon_pylon"
     },
     {
       "offer": {

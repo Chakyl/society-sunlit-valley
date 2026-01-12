@@ -2,6 +2,7 @@ console.info("[SOCIETY] handleSeasonTags.js loaded");
 
 // Remove tags
 const stripTags = [
+  "veggiesdelight:garlic_clove",
   "minecraft:apple",
   "pamhc2trees:lycheeitem",
   "pamhc2trees:bananaitem",
@@ -231,6 +232,8 @@ const summerCrops = [
 ];
 const autumnCrops = [
   "society:cranberry",
+  "society:cranberry_seed",
+  "society:mossberry",
   "farm_and_charm:barley_crop",
   "farm_and_charm:corn_crop",
   "minecraft:beetroot",
@@ -318,6 +321,15 @@ const winterCrops = [
   "vinery:taiga_grape_seeds_white",
 ];
 const allSeasonCrops = [
+  "cluttered:willow_sapling",
+  "cluttered:poplar_sapling",
+  "cluttered:crabapple_sapling",
+  "cluttered:sycamore_sapling",
+  "cluttered:fluorescent_maple_sapling",
+  "society:sparkpod",
+  "society:sparkpod_seed",
+  "society:mana_fruit",
+  "society:mana_fruit_crop",
   "atmospheric:laurel_sapling",
   "atmospheric:dry_laurel_sapling",
   "botania_seeds:white_mystical_flower_seed",

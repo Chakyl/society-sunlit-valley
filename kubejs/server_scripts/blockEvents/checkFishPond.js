@@ -12,20 +12,33 @@ const getRequestedItems = (type, population) => {
 
 const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
-  let fishName = type
-    .path
-    .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
+  let fishName = type.path.replace(/^_*(.)|_+(.)/g, (s, c, d) =>
+    c ? c.toUpperCase() : " " + d.toUpperCase()
+  );
   if (fishName.includes("Raw ")) {
     if (fishName === "Raw Snowflake") fishName = "Frosty Fin";
     else fishName = fishName.substring(4, fishName.length);
   }
   let fishIcons = "";
+  let translatedFishName = global
+    .getTranslatedItemName(type, fishName)
+    .getString();
 
   for (let index = 0; index < maxPopulation; index++) {
     if (index < population) fishIcons += "§3🐟§r";
     else fishIcons += "§7🐟§r";
   }
-  const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
+  const upgrade =
+    block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
+  const pondHeaderText = Text.empty()
+    .gray()
+    .append(Text.of(`==[ `))
+    .append(Text.green(upgrade))
+    .append(" ")
+    .append(Text.translatable("block.society.fish_pond").darkAqua())
+    .append(" ")
+    .append(Text.green(upgrade))
+    .append(Text.of(` ]==`));
 
   global.renderUiText(
     player,
@@ -35,7 +48,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         type: "text",
         x: 0,
         y: -110,
-        text: `==[ §a${upgrade}§r §3Fish Pond§r §a${upgrade}§r ]==`,
+        text: `${pondHeaderText.toJson()}`,
         color: "#AAAAAA",
         alignX: "center",
         alignY: "bottom",
@@ -45,7 +58,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         x: 1,
         z: -1,
         y: -109,
-        text: `==[ ${upgrade} Fish Pond ${upgrade} ]==`,
+        text: `${pondHeaderText.getString()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -62,7 +75,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         type: "text",
         x: 0,
         y: -78,
-        text: `${population}/${maxPopulation} ${fishName}`,
+        text: `${population}/${maxPopulation} ${translatedFishName}`,
         color: "#00AAAA",
         alignX: "center",
         alignY: "bottom",
@@ -72,7 +85,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         x: 1,
         z: -1,
         y: -77,
-        text: `${population}/${maxPopulation} ${fishName}`,
+        text: `${population}/${maxPopulation} ${translatedFishName}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -104,39 +117,48 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
 BlockEvents.rightClicked("society:fish_pond", (e) => {
   const { item, block, player } = e;
   if (!player.isCrouching()) {
-    e.server.scheduleInTicks(4, () => {
+    const { type, population, max_population, quest_id } =
+      block.getEntityData().data;
+    e.server.scheduleInTicks(1, () => {
       const properties = block.getProperties();
       const mature = properties.get("mature").toLowerCase();
       const valid = properties.get("valid").toLowerCase();
       const quest = properties.get("quest").toLowerCase();
-      const { type, population, max_population, quest_id } = block.getEntityData().data;
+
       if (mature == "false") {
         if (!type.equals("")) {
           sendFishPondMessage(e, type, population, max_population);
         } else if (!(item && item.hasTag("minecraft:fishes"))) {
           player.tell(
-            Text.gray("This Fish Pond is Empty! Right click with a fish to place it in the pond.")
+            Text.translatable("block.society.fish_pond.pond_is_empty").gray()
           );
         }
         if (!type.equals("") && item && item.hasTag("minecraft:fishes")) {
-          if (type !== item.id) player.tell(Text.red(`🐟: We don't like that fish here...`));
+          if (type !== item.id)
+            player.tell(
+              Text.translatable("block.society.fish_pond.cross_type_fish").red()
+            );
         }
       }
       if (mature === "false" && quest === "true") {
         const questContent = getRequestedItems(type, max_population)[quest_id];
-        if (questContent) {
+        if (questContent && questContent.item !== item.id) {
           const questItem = Item.of(questContent.item).displayName;
+          let checkedCount = player.stages.has("pond_house_five")
+            ? Math.round(questContent.count / 2)
+            : questContent.count;
           player.tell(
-            Text.green(`🐟: We'd feel more at home with §3${questContent.count}§r of these:`)
+            Text.translatable(
+              "block.society.fish_pond.fish_quest",
+              Text.darkAqua(`${checkedCount}`)
+            ).green()
           );
           player.tell(questItem);
         }
       }
       if (valid === "false") {
         player.tell(
-          Text.red(
-            "Not a valid Fish pond! Requires a 3x4 pond behind it without adjacent Fish Ponds to work. Nether fish need a lava pond."
-          )
+          Text.translatable("block.society.fish_pond.not_valid").red()
         );
       }
     });

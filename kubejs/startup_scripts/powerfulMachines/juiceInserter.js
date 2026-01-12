@@ -7,8 +7,7 @@ StartupEvents.registry("block", (event) => {
     .box(1, 0, 1, 15, 16, 15)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Inserts juice fluids into Fermenting Barrels."));
-      item.tooltip(Text.gray("Fluids must be pumped directly into its tank."));
+      item.tooltip(Text.translatable("block.society.juice_inserter.description").gray());
       item.modelJson({
         parent: "society:block/juice_inserter",
       });

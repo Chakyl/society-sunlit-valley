@@ -13,7 +13,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Makes batteries from lightning storms. Doesn't protect area"));
+      item.tooltip(Text.translatable("block.society.charging_rod.description").gray());
       item.modelJson({
         parent: "society:block/charging_rod_off",
       });

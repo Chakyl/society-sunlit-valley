@@ -16,8 +16,7 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 18, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Collects Tapper resources automatically."));
-      item.tooltip(Text.gray("Tapped fluid in its tank must be pumped out."));
+      item.tooltip(Text.translatable("block.society.auto_tapper.description").gray());
       item.modelJson({
         parent: "society:block/auto_tapper",
       });

@@ -28,8 +28,7 @@ StartupEvents.registry("block", (e) => {
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Right click to toggle poses"));
-      item.tooltip(Text.gray("Right click with lantern to create a light source"));
+      item.tooltip(Text.translatable("block.society.gnome.description").gray());
       item.modelJson({
         parent: "society:block/gnome/base",
       });
@@ -70,7 +69,7 @@ StartupEvents.registry("block", (e) => {
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Right click a Gnome with a lantern to create"));
+      item.tooltip(Text.translatable("block.society.lantern_gnome.description").gray());
       item.modelJson({
         parent: "society:block/gnome/lantern",
       });

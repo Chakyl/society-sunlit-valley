@@ -14,7 +14,7 @@ LootJS.modifiers((e) => {
     .addLoot("society:glitched_vhs");
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
-  .addLoot("society:holy_symbol");
+    .addLoot("society:holy_symbol");
   e.addLootTableModifier("minecraft:entities/shulker")
     .randomChance(0.1)
     .addLoot("society:production_science_pack");
@@ -261,6 +261,10 @@ LootJS.modifiers((e) => {
     "society:prize_machine"
   );
   e.addBlockLootModifier("society:fish_pond").removeLoot("society:fish_pond");
+  e.addBlockLootModifier("society:mana_fruit_crop").removeLoot(
+    "society:mana_fruit_crop"
+  );
+
   e.addBlockLootModifier(global.plushies).removeLoot("*");
 
   // Replace Loot
@@ -280,7 +284,7 @@ LootJS.modifiers((e) => {
     .randomChance(1)
     .replaceLoot("minecraft:flint_and_steel", "numismatics:cog", true);
 
-  // Fix
+  // Fix unstackable item voiding bug
   e.addLootTypeModifier(LootType.CHEST).modifyLoot(
     Ingredient.all,
     (itemStack) => {
@@ -288,7 +292,15 @@ LootJS.modifiers((e) => {
     }
   );
 
+  e.addLootTypeModifier(LootType.CHEST).pool((p) => {
+    p.randomChance(0.05).addLoot("society:recall_potion");
+  });
+
+  // Mastery
   e.addLootTypeModifier(LootType.CHEST)
-    .randomChance(0.15)
-    .replaceLoot("numismatics:cog", "simplerecall:recall_potion", true);
+    .hasAnyStage("husbandry_mastery")
+    .pool((p) => {
+      p.randomChance(0.1).addLoot("society:plushie_capsule");
+      p.randomChance(0.05).addLoot("society:animal_cracker");
+    });
 });

@@ -78,7 +78,9 @@ const idMap = new Map([
 const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, maxInput) => {
   const { player, block, item, server } = clickEvent;
   const blockStage = nbt.data.stage;
-  const status = maxInput !== -1 ? "Requires more input for" : "Currently making";
+  const status = maxInput !== -1 
+    ? Text.translatable("society.working_block_entity.more_input").getString() 
+    : Text.translatable("society.working_block_entity.making").getString();
   let primaryOutput;
   let recipe = nbt.data.recipe;
   let id;
@@ -110,6 +112,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
     if (index < blockStage) outputString += "⬛";
     else outputString += "⬜";
   }
+  let translatedPrimaryOutput = String(global.getTranslatedItemName(id, primaryOutput).getString()).replace(/§./g, "");
 
   const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
   global.renderUiText(
@@ -139,7 +142,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         type: "text",
         x: 0,
         y: -78,
-        text: primaryOutput,
+        text: translatedPrimaryOutput,
         color: "#FFAA00",
         alignX: "center",
         alignY: "bottom",
@@ -149,7 +152,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         x: 1,
         z: -1,
         y: -77,
-        text: primaryOutput,
+        text: translatedPrimaryOutput,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -197,6 +200,8 @@ BlockEvents.rightClicked(
     "society:tapper",
     "society:recycling_machine",
     "society:cheese_press",
+    "society:oil_maker",
+    "society:mushroom_log",
   ],
   (e) => {
     const { block, hand, item } = e;

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 // Priority: 1000
-
+global.getDay = (level) =>
+  Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 const artMachineTickRate = 20;
 
 const artMachineProgTime = 20;
@@ -15,6 +16,10 @@ const integerProperty = Java.loadClass(
 
 const directionProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.DirectionProperty"
+);
+
+const CropGrowthUtils = Java.loadClass(
+  "cool.bot.dewdropfarmland.utils.CropHandlerUtils"
 );
 
 function rnd(min, max) {
@@ -40,6 +45,15 @@ function rnd10() {
 function rnd5() {
   return Math.random() < 0.05;
 }
+
+global.surviveCheck = (level, pos) => {
+  const FARMLAND = Java.loadClass("net.minecraft.world.level.block.FarmBlock");
+  let blockState = level.getBlockState(pos.below());
+  let mcBlock = blockState.block;
+  if (mcBlock instanceof FARMLAND) {
+    return true;
+  } else return false;
+};
 
 let increaseDataStage = (block, count) => {
   let nbt = block.getEntityData();
@@ -163,6 +177,7 @@ global.artisanHarvest = (
   let hasQuality = newProperties.quality && newProperties.quality !== "0";
   if (block.properties.get("mature").toLowerCase() === "true") {
     let harvestOutput;
+    let hopperOutputs = [];
     if (!artisanHopper) {
       global.giveExperience(server, player, "farming", stageCount * 20);
       server.runCommandSilent(
@@ -184,10 +199,14 @@ global.artisanHarvest = (
       ) {
         harvestOutput = Item.of(`society:aged_${id.path}`);
       }
-      if (outputMult > 1)
+      if (outputMult > 1 && !recipes.get(nbt.data.recipe).multExempt) {
         harvestOutput.count = harvestOutput.count * outputMult;
-      if (!artisanHopper)
+      }
+      if (!artisanHopper) {
         block.popItemFromFace(harvestOutput, block.properties.get("facing"));
+      } else {
+        hopperOutputs.push(harvestOutput);
+      }
       nbt.merge({ data: { stage: 0, recipe: "" } });
       block.setEntityData(nbt);
       newProperties.working = false;
@@ -196,7 +215,7 @@ global.artisanHarvest = (
       if (newProperties.quality) newProperties.quality = "0";
       block.set(block.id, newProperties);
     });
-    if (artisanHopper) return harvestOutput;
+    if (artisanHopper) return hopperOutputs;
   }
 };
 // Converted
@@ -410,7 +429,6 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
           server.runCommandSilent(
             `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
           );
-          newProperties.working = false;
           newProperties.mature = false;
           newProperties.working = true;
           nbt.merge({ data: { recipe: `${attachedBlock.getId()}`, stage: 0 } });
@@ -432,6 +450,79 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
     newProperties.error = true;
     block.set(block.id, newProperties);
     if (returnFluidData) return undefined;
+  }
+};
+const getMushroomLogData = (level, centerPos, radius) => {
+  const { x, y, z } = centerPos;
+  let scanBlock;
+  let scannedBlocks = 0;
+  let regularOutputs = [];
+  let dominantOutputs = [];
+  let airBlocks = 0;
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(x - radius, y - radius, z - radius),
+    [x + radius, y + radius, z + radius]
+  )) {
+    scanBlock = level.getBlock(pos);
+    if (scanBlock.hasTag("society:mushroom_log_detects")) {
+      scannedBlocks++;
+      if (scanBlock.hasTag("society:mushroom_log_dominant")) {
+        if (!dominantOutputs.includes(scanBlock.id))
+          dominantOutputs.push(scanBlock.id);
+      } else {
+        if (!regularOutputs.includes(scanBlock.id))
+          regularOutputs.push(scanBlock.id);
+      }
+    } else if (scanBlock.id === "minecraft:air") airBlocks++;
+  }
+  return {
+    count: airBlocks < 100 ? 4 : scannedBlocks,
+    possibleOutputs: dominantOutputs.length > 0 ? dominantOutputs : regularOutputs,
+  };
+};
+global.handleMushroomLogRandomTick = (tickEvent) => {
+  const { block, level, server } = tickEvent;
+  let newProperties = block.getProperties();
+  if (
+    block.properties.get("working").toLowerCase() === "false" &&
+    block.properties.get("mature").toLowerCase() === "false"
+  ) {
+    const leafCount = global.getTaggedBlocksInRadius(
+      level,
+      "society:mushroom_log_leaves",
+      new BlockPos(block.x, block.y + 4, block.z),
+      8
+    );
+    const logData = getMushroomLogData(level, block.pos, 8);
+    if (!logData || logData.count == 0 || logData.possibleOutputs.length == 0)
+      return;
+    let baseCount = Math.max(
+      1,
+      Math.floor(Math.min(8, logData.count / 4) + Math.min(8, leafCount / 4))
+    );
+    if (global.mushroomLogRecipes) {
+      let rolledRecipe =
+        logData.possibleOutputs[
+          Math.floor(Math.random() * logData.possibleOutputs.length)
+        ];
+
+      const recipe = global.mushroomLogRecipes.get(`${rolledRecipe}`);
+      let nbt = block.getEntityData();
+      if (getCanTakeItems(rolledRecipe, recipe, block.properties, false)) {
+        newProperties = block.getProperties();
+        successParticles(level, block);
+        server.runCommandSilent(
+          `playsound species:block.alphacene_foliage.place block @a ${block.x} ${block.y} ${block.z}`
+        );
+        newProperties.mature = false;
+        newProperties.working = true;
+        nbt.merge({
+          data: { recipe: `${rolledRecipe}`, stage: 0, baseCount: baseCount },
+        });
+      }
+      block.setEntityData(nbt);
+      block.set(block.id, newProperties);
+    }
   }
 };
 
@@ -557,6 +648,16 @@ global.inventoryBelowHasRoom = (level, block, item) => {
   const belowPos = block.getPos().below();
   const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
   return global.inventoryHasRoom(belowBlock, item);
+};
+
+global.inventoryBelowHasRoomForAll = (level, block, items) => {
+  const belowPos = block.getPos().below();
+  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+  let hasRoom = true;
+  items.forEach((item) => {
+    if (!global.inventoryHasRoom(belowBlock, item)) hasRoom = false;
+  });
+  return hasRoom;
 };
 /**
  * @returns result code:
@@ -1023,15 +1124,20 @@ global.getCropQuality = (crop) => {
   if (fertilizer == -1) return 0;
   const qualityName = LevelData.get(
     crop.getLevel(),
-    crop.getPos().offset(-1, 0, 0),
+    crop.getPos().offset(0, -1, 0),
     false
   );
-  const seedQuality = qualityToInt(qualityName);
+  let seedQuality = qualityToInt(qualityName);
+  if (fertilizer > 1 && seedQuality < 1) seedQuality = 1;
   const goldChance =
     0.2 * ((seedQuality * 4.6) / 10) +
     0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
     0.01;
-
+  // Debug Quality
+  // console.log(crop)
+  // console.log("Seed quality " + seedQuality);
+  // console.log("Fertilizer quality " + fertilizer);
+  // console.log("Chance for gold: " + goldChance);
   if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
   if (Math.random() < goldChance) return 2;
   if (Math.random() < goldChance * 2) return 1;
@@ -1161,4 +1267,29 @@ const getCardinalMultipartJson = (name, disableExclamation) => {
     .concat(exclamationJson)
     .concat(offJson)
     .concat(doneJson);
+};
+
+global.getTaggedBlocksInRadius = (
+  level,
+  scanTag,
+  centerPos,
+  radius,
+  returnTagged
+) => {
+  const { x, y, z } = centerPos;
+  let scanBlock;
+  let scannedBlocks = 0;
+  let taggedBlocks = [];
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(x - radius, y - radius, z - radius),
+    [x + radius, y + radius, z + radius]
+  )) {
+    scanBlock = level.getBlock(pos);
+    if (scanBlock.hasTag(scanTag)) {
+      scannedBlocks++;
+      if (returnTagged) taggedBlocks.push(scanBlock.id);
+    }
+  }
+  if (returnTagged) return taggedBlocks;
+  return scannedBlocks;
 };

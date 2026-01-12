@@ -4,13 +4,18 @@ const debug = false;
 
 const debugData = (player, level, data, hearts) => {
   player.tell(`:heart: ${data.getInt("affection")}-${hearts} hearts`);
-  player.tell(`Day: ${Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed())}`);
+  player.tell(
+    `Day: ${Number(
+      (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
+    )}`
+  );
+  player.tell(`Mood: ${data.getInt("lastMood")}`);
   player.tell(`Pet: ${data.getInt("ageLastPet")}`);
   player.tell(`Fed: ${data.getInt("ageLastFed")}`);
+  player.tell(`Boosted feed: ${data.getInt("ageLastBoosted")}`);
   player.tell(`Dropped Special: ${data.getInt("ageLastDroppedSpecial")}`);
   player.tell(`Milked: ${data.getInt("ageLastMilked")}`);
   player.tell(`Magic Harvested: ${data.getInt("ageLastMagicHarvested")}`);
-  player.tell(`Bed bound: ${data.get("boundBed")}`);
 };
 
 const initializeFarmAnimal = (day, target, level) => {
@@ -33,17 +38,25 @@ const initializeFarmAnimal = (day, target, level) => {
   const newBaseDay = day - 1;
   if (!data.getInt("ageLastPet")) data.ageLastPet = newBaseDay;
   if (!data.getInt("ageLastFed")) data.ageLastFed = newBaseDay;
-  if (!data.getInt("ageLastDroppedSpecial")) data.ageLastDroppedSpecial = newBaseDay;
-  if (!data.getInt("ageLastMagicHarvested")) data.ageLastMagicHarvested = newBaseDay;
+  if (!data.getInt("ageLastDroppedSpecial"))
+    data.ageLastDroppedSpecial = newBaseDay;
+  if (!data.getInt("ageLastMagicHarvested"))
+    data.ageLastMagicHarvested = newBaseDay;
   if (!data.getInt("ageLastBred")) data.ageLastBred = newBaseDay;
-  if (!data.getInt("ageLastMilked") && global.checkEntityTag(target, "society:milkable_animal"))
+  if (
+    !data.getInt("ageLastMilked") &&
+    global.checkEntityTag(target, "society:milkable_animal")
+  )
     data.ageLastMilked = newBaseDay;
 };
 
 // Anti-frustration feature to be forgiving when re-logging
 const handleFarmAnimalBackwardsCompat = (target, day) => {
   const data = target.persistentData;
-  if (day < data.getInt("ageLastPet") || data.getInt("ageLastPet") - day > 5000) {
+  if (
+    day < data.getInt("ageLastPet") ||
+    data.getInt("ageLastPet") - day > 5000
+  ) {
     let newDay = day - 1;
     data.ageLastPet = newDay;
     data.ageLastMagicHarvested = newDay;
@@ -53,36 +66,115 @@ const handleFarmAnimalBackwardsCompat = (target, day) => {
     data.ageLastFed = newDay;
   }
 };
-
-const handlePet = (name, data, day, peckish, hungry, e) => {
+const checkAnimal = (
+  player,
+  level,
+  server,
+  data,
+  name,
+  mood,
+  hearts,
+  color
+) => {
+  const nameColor = color || "#55FF55";
+  const heartsToDisplay = 10;
+  let icons = [];
+  if (mood < 64) icons.push("☹");
+  if (mood > 160) icons.push("☺");
+  if (data.animalCracker) icons.push("🡅");
+  if (data.clockwork) icons.push("⚙");
+  if (data.bff) icons.push("❤");
+  if (data.bribed) icons.push("💰");
+  let iconString = "";
+  icons.forEach((icon, index) => {
+    iconString += icon;
+    if (index < icons.length - 1) iconString += " ";
+  });
+  global.renderUiText(
+    player,
+    server,
+    {
+      animalNameIcons: {
+        type: "text",
+        x: 0,
+        y: -88,
+        text: iconString,
+        color: nameColor,
+        alignX: "center",
+        alignY: "bottom",
+      },
+      animalName: {
+        type: "text",
+        x: 0,
+        y: -78,
+        text: `${name}`,
+        color: nameColor,
+        alignX: "center",
+        alignY: "bottom",
+      },
+      animalNameShadow: {
+        type: "text",
+        x: 1,
+        z: -1,
+        y: -77,
+        text: name,
+        color: "#000000",
+        alignX: "center",
+        alignY: "bottom",
+      },
+      affection: {
+        type: "text",
+        x: 0,
+        y: -66,
+        text: `§c${
+          hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""
+        }§0${
+          hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
+        }`,
+        color: "#FFAA00",
+        alignX: "center",
+        alignY: "bottom",
+      },
+      affectionShadow: {
+        type: "text",
+        x: 1,
+        z: -1,
+        y: -65,
+        text: `❤`.repeat(heartsToDisplay),
+        color: "#000000",
+        alignX: "center",
+        alignY: "bottom",
+      },
+    },
+    global.mainUiElementIds
+  );
+  debug && debugData(player, level, data, hearts);
+};
+const handlePet = (name, data, mood, day, peckish, hungry, e) => {
   const { player, item, target, level, server } = e;
   const ageLastPet = data.getInt("ageLastPet");
   const affection = data.getInt("affection");
-  const bedless = false
-  const heartsToDisplay = bedless ? 3 : 10;
   let hearts = Math.floor(affection / 100);
-  let nameColor = "#55FF55";
-  if (peckish) {
-    nameColor = "#FFAA00";
-  }
-  if (hungry) {
-    nameColor = "#FF5555";
-  }
   if (hearts > 10) hearts = 10;
   else if (hearts < 0) hearts = 0;
-  let affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
+  let affectionIncreaseMult =
+    player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
   if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
   let affectionIncrease = 10 * affectionIncreaseMult;
 
   if (target.isBaby()) {
-    affectionIncrease = affectionIncrease * (player.stages.has("fostering") ? 10 : 2);
+    affectionIncrease =
+      affectionIncrease * (player.stages.has("fostering") ? 10 : 2);
   }
   let errorText = "";
 
   if (day > ageLastPet) {
-    const livableArea = global.getAnimalIsNotCramped(target);
+    let livableArea = global.getAnimalIsNotCramped(target, 1.1);
     if (!player.isFake()) {
-      debug && player.tell(`Increased Affection by: ${affectionIncrease} from petting`);
+      debug &&
+        player.tell(
+          `Increased Affection by: ${affectionIncrease} from petting`
+        );
       data.affection = affection + affectionIncrease;
     }
     if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
@@ -105,90 +197,51 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     );
     global.giveExperience(server, player, "husbandry", 10);
     if (!livableArea && !data.clockwork) {
-      errorText = `${name} feels crowded and unhappy...`;
+      errorText = Text.translatable(
+        "society.husbandry.crowded",
+        `${name}`
+      ).getString();
     }
-    if (hearts > 3 && bedless) {
-      player.tell(
-        Text.gold(
-          `${name} needs a ${global
-            .getAnimalBedType(target.type)
-            .replace(/_/g, " ")} bed from the Shepherd!`
+    if (
+      !hungry &&
+      peckish &&
+      !player.isFake() &&
+      !item.hasTag("society:animal_feed")
+    ) {
+      server.runCommandSilent(
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100}`,
+          40,
+          Text.translatable("society.husbandry.peckish", `${name}`).getString()
         )
       );
     }
-    if (!hungry && peckish && !player.isFake() && !item.hasTag("society:animal_feed")) {
-      server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100} 40 ${name} could use something to eat...`
-      );
-    }
     if (hungry) {
-      errorText = `${name} went too long without food...`;
+      errorText = Text.translatable(
+        "society.husbandry.starved",
+        `${name}`
+      ).getString();
     }
     if (errorText && !player.isFake()) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
+        global.getEmbersTextAPICommand(
+          player.username,
+          global.animalMessageSettings,
+          40,
+          errorText
+        )
       );
     }
   } else if (item === "minecraft:air") {
-    global.renderUiText(
-      player,
-      server,
-      {
-        animalNameIcons: {
-          type: "text",
-          x: 0,
-          y: -88,
-          text: `${data.clockwork ? "⚙" : ""}${data.bff ? "❤" : ""}${
-            data.bribed && data.clockwork ? " " : ""
-          }${data.bribed ? "💰" : ""}`,
-          color: nameColor,
-          alignX: "center",
-          alignY: "bottom",
-        },
-        animalName: {
-          type: "text",
-          x: 0,
-          y: -78,
-          text: `${name}`,
-          color: nameColor,
-          alignX: "center",
-          alignY: "bottom",
-        },
-        animalNameShadow: {
-          type: "text",
-          x: 1,
-          z: -1,
-          y: -77,
-          text: name,
-          color: "#000000",
-          alignX: "center",
-          alignY: "bottom",
-        },
-        affection: {
-          type: "text",
-          x: 0,
-          y: -66,
-          text: `§c${hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""}§0${
-            hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
-          }`,
-          color: "#FFAA00",
-          alignX: "center",
-          alignY: "bottom",
-        },
-        affectionShadow: {
-          type: "text",
-          x: 1,
-          z: -1,
-          y: -65,
-          text: `❤`.repeat(heartsToDisplay),
-          color: "#000000",
-          alignX: "center",
-          alignY: "bottom",
-        },
-      },
-      global.mainUiElementIds
-    );
-    debug && debugData(player, level, data, hearts);
+    let nameColor;
+    if (peckish) {
+      nameColor = "#FFAA00";
+    }
+    if (hungry) {
+      nameColor = "#FF5555";
+    }
+    checkAnimal(player, level, server, data, name, mood, hearts, nameColor);
   }
   // Raise Max health
   const affectionHealth = hearts * 4;
@@ -203,7 +256,7 @@ const handleMilk = (name, data, day, hungry, e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   if (player.isFake() && data.getInt("affection") < 100) return;
   let errorText;
-  let milkItem = global.getMilk(target, data, player, day, true);
+  let milkItem = global.getMilk(level, target, data, player, day, true);
 
   if (milkItem !== -1) {
     let milk = level.createEntity("minecraft:item");
@@ -229,15 +282,29 @@ const handleMilk = (name, data, day, hungry, e) => {
       0.01
     );
   } else if (target.isBaby()) {
-    errorText = `${name} is too young to produce milk!`;
+    errorText = Text.translatable(
+      "society.husbandry.action.young",
+      `${name}`
+    ).getString();
   } else if (hungry) {
-    errorText = `${name} is too hungry to produce milk!`;
+    errorText = Text.translatable(
+      "society.husbandry.action.hungry",
+      `${name}`
+    ).getString();
   } else {
-    errorText = `${name} needs rest ...`;
+    errorText = Text.translatable(
+      "society.husbandry.action.cooldown_1",
+      `${name}`
+    ).getString();
   }
   if (errorText && !player.isFake()) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 20 ${errorText}`
+      global.getEmbersTextAPICommand(
+        player.username,
+        global.animalMessageSettings,
+        20,
+        errorText
+      )
     );
   }
 };
@@ -252,10 +319,14 @@ const handleFeed = (data, day, e) => {
     "society:candied_animal_feed": 100,
     "society:mana_feed": 30,
   }[item.id];
-  let affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
+  let affectionIncreaseMult =
+    player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
   if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
   // Cap affection increase at 100
-  const totalNewAffection = Math.min(affectionIncrease * affectionIncreaseMult, 100);
+  const totalNewAffection = Math.min(
+    affectionIncrease * affectionIncreaseMult,
+    100
+  );
   if (day > ageLastFed) {
     server.runCommandSilent(
       `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
@@ -263,7 +334,8 @@ const handleFeed = (data, day, e) => {
     target.heal(4);
     global.giveExperience(server, player, "husbandry", 20);
     data.affection = affection + totalNewAffection;
-    debug && player.tell(`Increased Affection by: ${totalNewAffection} from feeding`);
+    debug &&
+      player.tell(`Increased Affection by: ${totalNewAffection} from feeding`);
     data.ageLastFed = day;
     level.spawnParticles(
       "legendarycreatures:wisp_particle",
@@ -317,11 +389,9 @@ const handleMagicHarvest = (name, data, e) => {
   if (target.type == "minecraft:sheep") handleSheepMagicShears(e);
   const affection = data.getInt("affection");
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const bedless = false
-  if (bedless) hearts = 3;
 
   let errorText = "";
-  const droppedLoot = global.getMagicShearsOutput(level, target, player, server);
+  const droppedLoot = global.getMagicShearsOutput(level, target, player);
   if (droppedLoot !== -1) {
     server.runCommandSilent(
       `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
@@ -338,17 +408,132 @@ const handleMagicHarvest = (name, data, e) => {
     }
     global.addItemCooldown(player, item, 1);
   } else {
-    errorText = `${name} needs some time to rest`;
+    errorText = Text.translatable(
+      "society.husbandry.action.cooldown_2",
+      `${name}`
+    ).getString();
     if (hearts < 5) {
-      errorText = `${name} doesn't trust you enough...`;
+      errorText = Text.translatable(
+        "society.husbandry.action.need_hearts",
+        `${name}`
+      ).getString();
     }
     if (!player.isFake())
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${errorText}`
+        global.getEmbersTextAPICommand(
+          player.username,
+          global.animalMessageSettings,
+          40,
+          errorText
+        )
       );
     global.addItemCooldown(player, item, 10);
   }
 };
+
+const handleSpecialItem = (
+  data,
+  day,
+  chance,
+  hungry,
+  minHearts,
+  mult,
+  item,
+  hasQuality,
+  plushieModifiers,
+  e
+) => {
+  const { player, target, level, server } = e;
+  let affection;
+  let mood;
+  let resolvedItem = item;
+  let resolvedChance = chance;
+  if (plushieModifiers) {
+    affection = 1000;
+    mood = 256;
+    resolvedChance = chance + plushieModifiers.probabilityIncrease;
+    if (plushieModifiers.processItems) {
+      let processOutput = global.mayonnaiseMachineRecipes.get(item);
+      if (processOutput) {
+        resolvedItem = Item.of(processOutput.output[0]).id;
+      }
+    }
+  } else {
+    affection = data.getInt("affection") || 0;
+    mood = global.getOrFetchMood(level, target, day, player);
+  }
+  let hearts = Math.floor(affection / 100);
+
+  let quality = 0;
+
+  if (
+    (!hungry || plushieModifiers) &&
+    hearts >= minHearts &&
+    Math.random() <= resolvedChance
+  ) {
+    if (item.includes("large")) {
+      if (Math.random() > (mood + hearts * 10) / 256) {
+        return;
+      }
+    }
+    if (plushieModifiers) {
+      data.affection =
+        affection + (player.stages.has("animal_whisperer") ? 20 : 10);
+    }
+    let specialItem = level.createEntity("minecraft:item");
+    if (hasQuality && mood >= 160) {
+      quality = global.getHusbandryQuality(hearts, mood);
+    }
+    specialItem.x = player.x;
+    specialItem.y = player.y;
+    specialItem.z = player.z;
+    specialItem.item = Item.of(
+      `${
+        mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1)
+      }x ${resolvedItem}`,
+      quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
+    );
+    specialItem.spawn();
+    server.runCommandSilent(
+      `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
+    );
+    global.giveExperience(server, player, "husbandry", 60);
+    if (target.x) {
+      level.spawnParticles(
+        "farmersdelight:star",
+        true,
+        target.x,
+        target.y + 1,
+        target.z,
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        3,
+        0.01
+      );
+    }
+  }
+};
+
+const upgradeAnimal = (level, server, item, target, sound, particle) => {
+  item.count--;
+  server.runCommandSilent(
+    `playsound ${sound} block @a ${target.x} ${target.y} ${target.z}`
+  );
+  level.spawnParticles(
+    particle,
+    true,
+    target.x,
+    target.y + 1.5,
+    target.z,
+    0.2 * rnd(0, 2),
+    0.2 * rnd(0, 2),
+    0.2 * rnd(0, 2),
+    3,
+    0.01
+  );
+};
+
 global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   const pet = global.checkEntityTag(target, "society:pet_animal");
   const eventData = {
@@ -359,40 +544,48 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
     server: server,
   };
   if (hand == "OFF_HAND") return;
-  if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
+  if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet)
+    return;
+  if (item.id === "society:sunlit_crystal") return;
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
-      const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+      const day = global.getDay(level);
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
-      const nonIdType = String(target.type.path).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
-        name = global.formatName(nonIdType);
-        if (name.equals("Domestic tribull")) name = "Domestic tri-bull";
-      }
-      const boundBed = data.get("boundBed");
-      if (!global.animalHasNoBed(data)) {
-        data.boundBed = "-1";
+        name = global.getTranslatedEntityName(String(target.type)).getString();
       }
       const ageLastFed = data.getInt("ageLastFed");
       const peckish = !pet && day - ageLastFed == 1;
       const hungry = !pet && day - ageLastFed > 1;
       const affection = data.getInt("affection");
+      const lostProduce = mood < 64 && Math.random() < mood / 64;
       let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-      const bedless = false
-      if (bedless) hearts = 3;
       player.swing();
-
-      handlePet(name, data, day, peckish, hungry, eventData);
+      const mood = global.getOrFetchMood(level, target, day, player);
+      handlePet(name, data, mood, day, peckish, hungry, eventData);
       if (pet) return;
-      if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, eventData);
-      if (
-        item === "society:milk_pail" &&
-        global.checkEntityTag(target, "society:milkable_animal")
-      ) {
-        handleMilk(name, data, day, hungry, eventData);
+      if (item.hasTag("society:animal_feed") && !pet)
+        handleFeed(data, day, eventData);
+      if (!lostProduce) {
+        if (
+          item === "society:milk_pail" &&
+          global.checkEntityTag(target, "society:milkable_animal")
+        ) {
+          handleMilk(name, data, day, hungry, eventData);
+        }
+        global.handleSpecialHarvest(
+          level,
+          target,
+          player,
+          server,
+          undefined,
+          undefined,
+          undefined,
+          handleSpecialItem
+        );
       }
       if (
         player.stages.has("biomancer") &&
@@ -415,7 +608,15 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (player.cooldowns.isOnCooldown(item)) return;
         if (hearts < 5) {
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${name} doesn't trust you enough...`
+            global.getEmbersTextAPICommand(
+              player.username,
+              global.animalMessageSettings,
+              40,
+              Text.translatable(
+                "society.husbandry.action.need_hearts",
+                `${name}`
+              ).getString()
+            )
           );
         } else {
           let heart = level.createEntity("minecraft:item");
@@ -446,7 +647,11 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           global.addItemCooldown(player, item, 5);
         }
       }
-      if (player.stages.has("bribery") && item === "numismatics:crown" && !data.bribed) {
+      if (
+        player.stages.has("bribery") &&
+        item === "numismatics:crown" &&
+        !data.bribed
+      ) {
         if (player.cooldowns.isOnCooldown(item)) return;
         data.bribed = true;
         data.affection = affection + 100;
@@ -474,55 +679,76 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         !data.clockwork
       ) {
         data.clockwork = true;
-        item.count--;
-        server.runCommandSilent(
-          `playsound trials:vault_activate block @a ${player.x} ${player.y} ${player.z}`
-        );
-        level.spawnParticles(
-          "supplementaries:bomb_explosion",
-          true,
-          target.x,
-          target.y + 1.5,
-          target.z,
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          3,
-          0.01
+        upgradeAnimal(
+          level,
+          server,
+          item,
+          target,
+          "trials:vault_activate",
+          "supplementaries:bomb_explosion"
         );
         if (data.bff) {
           data.bff = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 80 Its mind was corrupted and no longer gifts Prismatic Shards...`
+            global.getEmbersTextAPICommand(
+              player.username,
+              global.animalMessageSettings,
+              80,
+              Text.translatable("society.husbandry.mechanization").getString()
+            )
           );
         }
       }
-      if (player.stages.has("bff") && item === "society:friendship_necklace" && !data.bff) {
-        data.bff = true;
-        if (!player.isCreative()) item.count--;
+      if (
+        player.stages.has("husbandry_mastery") &&
+        item === "society:animal_cracker" &&
+        !data.animalCracker
+      ) {
+        data.animalCracker = true;
         server.runCommandSilent(
-          `playsound legendarycreatures:wisp_idle block @a ${player.x} ${player.y} ${player.z}`
+          `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
         );
-        level.spawnParticles(
-          "buzzier_bees:buttercup_bloom",
-          true,
-          target.x,
-          target.y + 1.5,
-          target.z,
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          0.2 * rnd(0, 2),
-          10,
-          0.01
+        upgradeAnimal(
+          level,
+          server,
+          item,
+          target,
+          "stardew_fishing:chest_get",
+          "farmersdelight:star"
+        );
+      }
+      if (
+        mood > 160 &&
+        player.stages.has("bff") &&
+        item === "society:friendship_necklace" &&
+        !data.bff
+      ) {
+        data.bff = true;
+        upgradeAnimal(
+          level,
+          server,
+          item,
+          target,
+          "legendarycreatures:wisp_idle",
+          "buzzier_bees:buttercup_bloom"
         );
         if (data.clockwork) {
           data.clockwork = false;
           server.runCommandSilent(
-            `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:220,wrap:1,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100} 80 Its mind was healed from being a souless machine!`
+            global.getEmbersTextAPICommand(
+              player.username,
+              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+              80,
+              Text.translatable("society.husbandry.emancipation").getString()
+            )
           );
         }
       }
-      if (player.stages.has("transplanting") && item === "quark:diamond_heart" && hearts < 10) {
+      if (
+        player.stages.has("transplanting") &&
+        item === "quark:diamond_heart" &&
+        hearts < 10
+      ) {
         if (player.cooldowns.isOnCooldown(item)) return;
         data.affection = affection + 100;
         if (!player.isCreative()) item.count--;
@@ -543,7 +769,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         );
         global.addItemCooldown(player, item, 1);
       }
-      if (item === "society:magic_shears") {
+      if (!lostProduce && item === "society:magic_shears") {
         handleMagicHarvest(name, data, eventData);
       }
       if (affection > 1075) {
@@ -554,7 +780,138 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
     }
   });
 };
+
 ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
   global.handleHusbandryBase(hand, player, item, target, level, server);
+});
+
+BlockEvents.rightClicked((e) => {
+  const { level, hand, player, item, server, block } = e;
+  if (hand == "OFF_HAND") return;
+  if (!block.hasTag("society:plushies")) return;
+  let nbt = block.getEntityData();
+  const { animal } = nbt.data;
+  if (!animal) return;
+  if (item === "minecraft:air") {
+    checkAnimal(
+      player,
+      level,
+      server,
+      animal,
+      animal.name ||
+        global.getTranslatedEntityName(String(animal.type)).getString(),
+      256,
+      10
+    );
+  }
+  global.executePlushieHusbandry(
+    level,
+    server,
+    player,
+    item,
+    block,
+    handleSpecialItem
+  );
+  if (
+    player.stages.has("clockwork") &&
+    item === "create:precision_mechanism" &&
+    !animal.clockwork
+  ) {
+    nbt.merge({
+      data: {
+        animal: {
+          clockwork: true,
+        },
+      },
+    });
+    upgradeAnimal(
+      level,
+      server,
+      item,
+      block,
+      "trials:vault_activate",
+      "supplementaries:bomb_explosion"
+    );
+    if (animal.bff) {
+      nbt.merge({
+        data: {
+          animal: {
+            bff: false,
+          },
+        },
+      });
+      server.runCommandSilent(
+        global.getEmbersTextAPICommand(
+          player.username,
+          global.animalMessageSettings,
+          80,
+          Text.translatable("society.husbandry.mechanization").getString()
+        )
+      );
+    }
+  }
+  if (
+    player.stages.has("husbandry_mastery") &&
+    item === "society:animal_cracker" &&
+    !animal.animalCracker
+  ) {
+    nbt.merge({
+      data: {
+        animal: {
+          animalCracker: true,
+        },
+      },
+    });
+    server.runCommandSilent(
+      `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
+    );
+    upgradeAnimal(
+      level,
+      server,
+      item,
+      block,
+      "stardew_fishing:chest_get",
+      "farmersdelight:star"
+    );
+  }
+  if (
+    player.stages.has("bff") &&
+    item === "society:friendship_necklace" &&
+    !animal.bff
+  ) {
+    nbt.merge({
+      data: {
+        animal: {
+          bff: true,
+        },
+      },
+    });
+    upgradeAnimal(
+      level,
+      server,
+      item,
+      block,
+      "legendarycreatures:wisp_idle",
+      "buzzier_bees:buttercup_bloom"
+    );
+    if (animal.clockwork) {
+      nbt.merge({
+        data: {
+          animal: {
+            clockwork: false,
+          },
+        },
+      });
+      server.runCommandSilent(
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+          80,
+          Text.translatable("society.husbandry.emancipation").getString()
+        )
+      );
+    }
+  }
+  block.setEntityData(nbt);
 });

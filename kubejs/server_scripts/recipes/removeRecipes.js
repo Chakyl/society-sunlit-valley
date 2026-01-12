@@ -4,6 +4,11 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "domesticationinnovation:drum",
+    "domesticationinnovation:pet_bed_white",
+    "domesticationinnovation:collar_tag",
+    "domesticationinnovation:wayward_lantern",
+    "whimsy_deco:phone",
     "dew_drop_farmland_growth:iron_sprinkler",
     "dew_drop_farmland_growth:gold_sprinkler",
     "dew_drop_farmland_growth:diamond_sprinkler",
@@ -1084,7 +1089,7 @@ ServerEvents.recipes((e) => {
   global.removedItems.forEach((item) => {
     e.remove({ output: item });
   });
-   global.lootFurniture.forEach((item) => {
+  global.lootFurniture.forEach((item) => {
     e.remove({ output: item });
   });
   removeByInput.forEach((item) => {

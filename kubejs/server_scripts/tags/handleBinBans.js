@@ -40,6 +40,7 @@ ServerEvents.tags("item", (e) => {
   e.add("furniture:trash_bag_blacklist", "#society:loot_furniture");
   e.add("furniture:trash_bag_blacklist", "#society:dish");
   const itemBans = [
+    "splendid_slimes:tarr_tarr",
     "trials:trial_key",
     "trials:trial_key_ominous",
     "trials:heavy_core",

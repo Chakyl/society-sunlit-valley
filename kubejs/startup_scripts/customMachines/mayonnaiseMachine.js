@@ -8,7 +8,10 @@ global.mayonnaiseMachineRecipes = new Map([
   ["quark:egg_parrot_red_blue", { output: ["1x society:parrot_mayonnaise"] }],
   ["quark:egg_parrot_blue", { output: ["1x society:parrot_mayonnaise"] }],
   ["quark:egg_parrot_green", { output: ["1x society:parrot_mayonnaise"] }],
-  ["quark:egg_parrot_yellow_blue", { output: ["1x society:parrot_mayonnaise"] }],
+  [
+    "quark:egg_parrot_yellow_blue",
+    { output: ["1x society:parrot_mayonnaise"] },
+  ],
   ["quark:egg_parrot_gray", { output: ["1x society:parrot_mayonnaise"] }],
   ["minecraft:turtle_egg", { output: ["1x society:turtle_mayonnaise"] }],
   ["minecraft:sniffer_egg", { output: ["1x society:sniffer_mayonnaise"] }],
@@ -17,8 +20,14 @@ global.mayonnaiseMachineRecipes = new Map([
   ["autumnity:turkey_egg", { output: ["1x society:turkey_mayonnaise"] }],
   ["society:large_egg", { output: ["1x society:large_mayonnaise"] }],
   ["society:large_duck_egg", { output: ["1x society:large_duck_mayonnaise"] }],
-  ["society:large_goose_egg", { output: ["1x society:large_goose_mayonnaise"] }],
-  ["society:large_turkey_egg", { output: ["1x society:large_turkey_mayonnaise"] }],
+  [
+    "society:large_goose_egg",
+    { output: ["1x society:large_goose_mayonnaise"] },
+  ],
+  [
+    "society:large_turkey_egg",
+    { output: ["1x society:large_turkey_mayonnaise"] },
+  ],
   ["species:birt_egg", { output: ["1x society:birt_mayonnaise"] }],
   ["species:wraptor_egg", { output: ["1x society:wraptor_mayonnaise"] }],
   ["species:springling_egg", { output: ["1x society:springling_mayonnaise"] }],
@@ -26,8 +35,14 @@ global.mayonnaiseMachineRecipes = new Map([
   ["species:cruncher_egg", { output: ["1x society:cruncher_mayonnaise"] }],
   ["society:flamingo_egg", { output: ["1x society:flamingo_mayonnaise"] }],
   ["society:penguin_egg", { output: ["1x society:penguin_mayonnaise"] }],
-  ["farmlife:galliraptor_egg", { output: ["1x society:galliraptor_mayonnaise"] }],
-  ["society:large_galliraptor_egg", { output: ["1x society:large_galliraptor_mayonnaise"] }],
+  [
+    "farmlife:galliraptor_egg",
+    { output: ["1x society:galliraptor_mayonnaise"] },
+  ],
+  [
+    "society:large_galliraptor_egg",
+    { output: ["1x society:large_galliraptor_mayonnaise"] },
+  ],
 ]);
 
 StartupEvents.registry("block", (event) => {
@@ -44,8 +59,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns an egg into mayonnaise"));
-      item.tooltip(Text.green("Preserves input quality"));
+      item.tooltip(Text.translatable("block.society.mayonnaise_machine.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
       item.modelJson({
         parent: "society:block/mayonnaise_machine/mayonnaise_machine_off",
       });
@@ -98,6 +113,10 @@ StartupEvents.registry("block", (event) => {
           block.properties.get("facing").toLowerCase()
         );
       }
+      let outputCount = 1;
+      if (player.stages.has("rancher") && Math.random() <= 0.2) {
+        outputCount = 2;
+      }
       global.handleBERightClick(
         "minecraft:block.sniffer_egg.plop",
         click,
@@ -105,7 +124,7 @@ StartupEvents.registry("block", (event) => {
         3,
         false,
         false,
-        player.stages.has("rancher") ? 2 : 1
+        outputCount
       );
     })
     .blockEntity((blockInfo) => {

@@ -10,10 +10,10 @@
 # Thanks to the universal nature of schematics, CSC can scan and validate content from Create and all its related mods!
 # If users opt in, CSC can even connect online to automatically sync rule updates to the local server. Whenever the CSC team discovers a new exploit,
 # the configuration file will be updated automatically, allowing potential threats to be removed without restarting the server.
-# Choose a language you want to use     zh_ch / en_us 
+# Choose a language you want to use     zh_cn / en_us 
 Language = "en_us"
 
-UUID = "56c23698-db53-4482-9208-988fc3f08dc9"
+UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
 
 [core]
     # #----------------------------------------------------------------------
@@ -22,6 +22,22 @@ UUID = "56c23698-db53-4482-9208-988fc3f08dc9"
     # #----------------------------------------------------------------------
     # The time if checker is timeout!
     DelayTime = 10
+    # #----------------------------------------------------------------------
+    # Whether to enable whitelist mode. Recommended to enable, as it can directly eliminate blueprint vulnerabilities caused by unfamiliar mods
+    WhiteListModEnable = true
+    # #----------------------------------------------------------------------
+    # Only mods listed here will be allowed to retain NBT. Enter the modid (e.g., for minecraft:dirt, enter minecraft)
+    WhiteListModList = [
+        "create",
+        "minecraft",
+        "createdieselgenerators",
+        "createrailwaysnavigator",
+        "createaddition",
+        "railways",
+        "copycats",
+        "createsifter",
+        "computercraft",
+        "yuushya" ]
     # #----------------------------------------------------------------------
     # The Block or Item you don't want to emerge in Schematic
     # Any block will clear if remove method failed!
@@ -79,7 +95,8 @@ UUID = "56c23698-db53-4482-9208-988fc3f08dc9"
     # When the KillEntity feature is set to false, this feature will be enabled. Any entity listed here will be removed from the schematic.
     # However, entities in the whitelist cannot be removed, so do not use the same ID in both lists.
     BanEntity = [
-        "minecraft:armor_stand" ]
+        "minecraft:armor_stand",
+        "create:crafting_blueprint" ]
     # #----------------------------------------------------------------------
     # Entities in the whitelist. They must not conflict with the blacklist. Once added, these entities will be preserved when the KillEntity feature is enabled.
     # Note: Only the entities listed below will be validated by the algorithm. Other entities will retain their NBT data using default matching.
@@ -92,7 +109,7 @@ UUID = "56c23698-db53-4482-9208-988fc3f08dc9"
     # Whether to output the list of detected blueprint items in the chat. This may flood the chat, but it shows block statistics within the blueprint.
     DebugTotalBlock = true
     # #----------------------------------------------------------------------
-    # config.DebugCheatFind
+    # Whether to broadcast cheaters and cheating blueprints when CSC detects a cheating blueprint
     DebugCheatFind = true
     # #----------------------------------------------------------------------
     # Whether to allow CSC to back up blueprints. This feature will back up the blueprint file after each upload, named by timestamp/player.
@@ -121,6 +138,9 @@ UUID = "56c23698-db53-4482-9208-988fc3f08dc9"
     # Maximum allowed number of mismatched drive wheels. If the number of drive wheels with mismatched checksums in the schematic exceeds this threshold, the schematic will be deemed a cheat schematic
     # If the number of checksum mismatches is less than this value, the schematic will only remove the problematic drive wheels
     maxConveyorCheatLimit = 10
+    # #----------------------------------------------------------------------
+    # Conveyor's max degree, Can't get more than 45degree in Create. Only change nbt can.
+    maxConveyorAllowDegree = 45
 
 [online]
     # #----------------------------------------------------------------------
@@ -143,6 +163,9 @@ UUID = "56c23698-db53-4482-9208-988fc3f08dc9"
     # #----------------------------------------------------------------------
     # Enable automatic update reminders. When set to true, if CSC has vulnerabilities that require a version update to fix, a reminder will be sent
     UpdateInfo = true
+    # #----------------------------------------------------------------------
+    # Whether to upload uncheck schematics. Default is true, this can help many people and CSC!
+    report = true
     [debug.debug]
         # #----------------------------------------------------------------------
         # enable debug mod

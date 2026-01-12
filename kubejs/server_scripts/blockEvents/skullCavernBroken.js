@@ -86,7 +86,6 @@ BlockEvents.broken(
 
 const scheduleUnplaceableRegenFunction = (level, pos, server, id) => {
   server.scheduleInTicks(100, () => {
-    console.log("scheduleUnplaceableRegenFunction")
     if (level.getBlock(pos) == "minecraft:air") {
       level.getBlock(pos).set(id);
       level.spawnParticles(
@@ -127,7 +126,12 @@ BlockEvents.broken(
     const { level, block, server } = e;
     const unplacablePos = block.getPos();
     if (level.dimension === "society:skull_cavern") {
-      scheduleUnplaceableRegenFunction(level, unplacablePos.immutable(), server, block.getId());
+      scheduleUnplaceableRegenFunction(
+        level,
+        unplacablePos.immutable(),
+        server,
+        block.getId()
+      );
     }
   }
 );
@@ -172,3 +176,49 @@ BlockEvents.broken("society:skull_cavern_teleporter", (e) => {
   const { level } = e;
   if (level.dimension === "society:skull_cavern") e.cancel();
 });
+
+BlockEvents.broken(
+  [
+    "society:stone_boulder",
+    "society:ice_boulder",
+    "society:sandstone_boulder",
+    "society:blackstone_boulder",
+    "society:end_stone_boulder",
+  ],
+  (e) => {
+    const { level, player, server, block } = e;
+    if (player.stages.has("pylon_rope_reveal") &&  Math.random() < 0.15) {
+      const { x, y, z } = block;
+      let scanBlock;
+      let abovePos;
+      let radius = 8;
+      for (let pos of BlockPos.betweenClosed(
+        new BlockPos(x - radius, y - radius, z - radius),
+        [x + radius, y + radius, z + radius]
+      )) {
+        scanBlock = level.getBlock(pos);
+        abovePos = scanBlock.getPos().above();
+        if (
+          scanBlock.id == "farmersdelight:rope" &&
+          level.getBlock(abovePos).id != "farmersdelight:rope"
+        ) {
+          level.spawnParticles(
+            "species:spectre_pop",
+            true,
+            abovePos.x,
+            abovePos.y + 0.5,
+            abovePos.z,
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            5,
+            0.01
+          );
+          server.runCommandSilent(
+            `playsound create:peculiar_bell_use block @a ${abovePos.x} ${abovePos.y} ${abovePos.z}`
+          );
+        }
+      }
+    }
+  }
+);

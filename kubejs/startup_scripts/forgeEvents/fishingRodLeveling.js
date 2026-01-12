@@ -49,7 +49,7 @@ ForgeEvents.onEvent(
           }
         }
         mainHandItem.enchantStack("minecraft:lure", lureLevel + 1);
-        player.tell(Text.gold("Your fishing rod leveled up! Lure Increased"));
+        player.tell(Text.translatable("society.fishing_rod.level_up.lure").gold());
       } else if (luckOfTheSeaLevel < maxLuckOfTheSeaLevel) {
         for (let i = 0; i < enchantmentTags.size(); i++) {
           let enchantment = enchantmentTags.get(i);
@@ -61,9 +61,7 @@ ForgeEvents.onEvent(
           "minecraft:luck_of_the_sea",
           luckOfTheSeaLevel + 1
         );
-        player.tell(
-          Text.gold("Your fishing rod leveled up! Luck of the Sea Increased")
-        );
+        player.tell(Text.translatable("society.fishing_rod.level_up.lots").gold());
       }
     }
   }

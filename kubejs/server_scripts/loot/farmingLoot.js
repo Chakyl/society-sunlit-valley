@@ -31,7 +31,8 @@ LootJS.modifiers((e) => {
     c.forEachLoot((item) => {
       const quality = global.getCropQuality(c.destroyedBlock);
       // 4.0 TODO: remove effects:[] from this data
-      if (quality > 0) item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
+      if (quality > 0)
+        item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
     });
   });
   e.addBlockLootModifier(global.cropList)
@@ -66,7 +67,31 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier(global.cropList)
     .hasAnyStage("crop_collector")
     .modifyLoot(Ingredient.all, (itemStack) => {
-      if (!cropCollectorDenied.includes(itemStack.id)) itemStack.setCount(itemStack.getCount() * 2);
+      if (!cropCollectorDenied.includes(itemStack.id))
+        itemStack.setCount(itemStack.getCount() * 2);
       return itemStack;
+    });
+
+  // Mastery
+  e.addBlockLootModifier(global.cropList)
+    .hasAnyStage("husbandry_mastery")
+    .apply((c) => {
+      if (checkMaxGrownWithChance(c.destroyedBlock, 0.005)) {
+        c.addLoot("society:plushie_capsule");
+      }
+    });
+  e.addBlockLootModifier(global.cropList)
+    .hasAnyStage("husbandry_mastery")
+    .apply((c) => {
+      if (checkMaxGrownWithChance(c.destroyedBlock, 0.001)) {
+        c.addLoot("society:animal_cracker");
+      }
+    });
+  e.addBlockLootModifier(global.cropList)
+    .hasAnyStage("farming_mastery")
+    .apply((c) => {
+      if (checkMaxGrownWithChance(c.destroyedBlock, 0.005)) {
+        c.addLoot("atmospheric:grimwood_sapling");
+      }
     });
 });
