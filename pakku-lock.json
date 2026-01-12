@@ -9095,39 +9095,63 @@
             ]
         },
         {
-            "pakku_id": "rnUVx6UTgHozgbGe",
+            "pakku_id": "3c39HbP7FyIalhiX",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "platform"
+                "curseforge": "platform",
+                "modrinth": "platform"
             },
             "name": {
-                "curseforge": "Platform"
+                "curseforge": "Platform",
+                "modrinth": "Platform"
             },
             "id": {
-                "curseforge": "997634"
+                "curseforge": "997634",
+                "modrinth": "i6fiqm5y"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Platform-forge-1.20.1-1.2.10.1.jar",
+                    "file_name": "Platform-forge-1.20.1-1.2.11.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6673/724/Platform-forge-1.20.1-1.2.10.1.jar",
-                    "id": "6673724",
+                    "url": "https://edge.forgecdn.net/files/7227/584/Platform-forge-1.20.1-1.2.11.3.jar",
+                    "id": "7227584",
                     "parent_id": "997634",
                     "hashes": {
-                        "sha1": "882bd514acc3f2e3dabfd6a659161c5e2253a4ed",
-                        "md5": "56f7e9a7c45b438820ff0cb29314b196"
+                        "sha1": "cea96c84a359f202f89622626a7625c41572804a",
+                        "md5": "59135c5d24bcb664824f0c846b239246"
                     },
                     "required_dependencies": [],
-                    "size": 409864,
-                    "date_published": "2025-06-20T04:25:29.510Z"
+                    "size": 512498,
+                    "date_published": "2025-11-16T06:31:51.623Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Platform-forge-1.20.1-1.2.11.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/i6fiqm5y/versions/WB3OJw4I/Platform-forge-1.20.1-1.2.11.3.jar",
+                    "id": "WB3OJw4I",
+                    "parent_id": "i6fiqm5y",
+                    "hashes": {
+                        "sha512": "098ba2c6f510f0010be8de881b94185f3b77bc7666cdeb9d9ea0bce963b585902310f9cd12741cc5b7a39b366562915f982c9fa734e749fde3acdb7d55d52437",
+                        "sha1": "cea96c84a359f202f89622626a7625c41572804a"
+                    },
+                    "required_dependencies": [],
+                    "size": 512498,
+                    "date_published": "2025-11-16T06:30:33.410567Z"
                 }
             ]
         },
@@ -12547,7 +12571,7 @@
         {
             "pakku_id": "U4HYjZU4gAby64gC",
             "pakku_links": [
-                "rnUVx6UTgHozgbGe"
+                "3c39HbP7FyIalhiX"
             ],
             "type": "MOD",
             "slug": {
