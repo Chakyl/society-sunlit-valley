@@ -47,30 +47,10 @@
 				type: "checkmark"
 			}]
 			title: "Trainer Tiers"
-			x: 0.0d
-			y: -4.5d
+			x: -16.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["201D4A576453FB99"]
-			description: [""]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "minecraft:stick"
-			id: "7442F483A80F619A"
-			tasks: [{
-				icon: "minecraft:stick"
-				id: "025D5A2CB4A358E8"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Twig Tier"
-			x: -5.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7442F483A80F619A"]
 			description: ["To &eCatch&r a Pokémon you just chuck a Pokè Ball at its head.."]
 			id: "4EEFAEB610213563"
 			rewards: [
@@ -105,11 +85,10 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Catch 5x Pokémon"
-			x: -7.0d
+			x: -24.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7442F483A80F619A"]
 			description: ["To &eLevel Up&r Pokémon you can either fight wild Pokémon, catch wild Pokémon, or use candies!"]
 			icon: "cobblemon:great_ball"
 			id: "0F9034B6551CB99E"
@@ -145,12 +124,11 @@
 				title: "Level Up x10"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Level Up 10x"
-			x: -6.0d
+			title: "Level Up 10x Pokemon"
+			x: -22.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7442F483A80F619A"]
 			icon: "cobblemon:ultra_ball"
 			id: "3445937422AC3866"
 			rewards: [{
@@ -179,12 +157,12 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Defeat 5x Pokémon"
-			x: -5.0d
+			x: -20.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7442F483A80F619A"]
 			description: ["Don't worry, they'll let you know when its time to evolve!"]
+			icon: "cobblemon:luxury_ball"
 			id: "6F67FB69D101E731"
 			rewards: [
 				{
@@ -218,53 +196,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -4.0d
+			x: -18.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"201D4A576453FB99"
-				"30F339B9F7D920A6"
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "twigs:pebble"
-			id: "578D98AA47DCD9C3"
-			tasks: [{
-				icon: "twigs:pebble"
-				id: "60738AA74159F907"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Rock Tier"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"201D4A576453FB99"
-				"50C5F52359BCCD70"
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "minecraft:raw_iron"
-			id: "1C80F9FD2A3E313F"
-			tasks: [{
-				icon: "minecraft:raw_iron"
-				id: "1176BA9BFC0D8009"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Iron Tier"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["578D98AA47DCD9C3"]
+			dependencies: ["4EEFAEB610213563"]
 			id: "516FF5028F8EE1E5"
 			rewards: [{
 				count: 5
@@ -290,11 +226,11 @@
 				title: "Catch 10x Pokémon"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -24.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["578D98AA47DCD9C3"]
+			dependencies: ["0F9034B6551CB99E"]
 			icon: "cobblemon:great_ball"
 			id: "0F3E297B983F40DC"
 			rewards: [
@@ -328,11 +264,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -1.0d
-			y: 0.0d
+			x: -22.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["578D98AA47DCD9C3"]
+			dependencies: ["6F67FB69D101E731"]
 			icon: "cobblemon:luxury_ball"
 			id: "2FDF83431B2845C4"
 			rewards: [{
@@ -359,11 +295,11 @@
 				title: "Evolve 3x Pokémon"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -18.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["578D98AA47DCD9C3"]
+			dependencies: ["3445937422AC3866"]
 			icon: "cobblemon:ultra_ball"
 			id: "0331045680248A61"
 			rewards: [
@@ -397,11 +333,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.0d
-			y: 0.0d
+			x: -20.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["1C80F9FD2A3E313F"]
+			dependencies: ["516FF5028F8EE1E5"]
 			id: "760F59ABF3299A08"
 			rewards: [{
 				count: 5
@@ -426,11 +362,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: -24.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["1C80F9FD2A3E313F"]
+			dependencies: ["0F3E297B983F40DC"]
 			icon: "cobblemon:great_ball"
 			id: "45BBB1C3DD5D7554"
 			rewards: [{
@@ -455,11 +391,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: -22.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["1C80F9FD2A3E313F"]
+			dependencies: ["0331045680248A61"]
 			icon: "cobblemon:ultra_ball"
 			id: "31D918AF6CE9ACA4"
 			rewards: [
@@ -492,11 +428,10 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 7.0d
-			y: 0.0d
+			x: -20.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["1C80F9FD2A3E313F"]
 			description: [
 				"Keeping your PC tidy is essential to being a good trainer!"
 				""
@@ -527,11 +462,10 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: -13.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["578D98AA47DCD9C3"]
 			id: "56CF90AA0E7CB949"
 			rewards: [
 				{
@@ -565,11 +499,10 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: -13.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["1C80F9FD2A3E313F"]
 			icon: "cobblemon:grass_gem"
 			id: "72D0A8BDEF603EC8"
 			rewards: [{
@@ -595,11 +528,10 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: -13.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["1C80F9FD2A3E313F"]
 			icon: "cobblemon:water_gem"
 			id: "4846C41D43B92216"
 			rewards: [
@@ -632,8 +564,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: -13.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -671,8 +603,8 @@
 				value: 1
 			}]
 			title: "Twig Tier Complete!"
-			x: -5.5d
-			y: 2.25d
+			x: -16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -711,8 +643,8 @@
 				value: 1
 			}]
 			title: "Rock Tier Complete!"
-			x: 0.0d
-			y: 2.5d
+			x: -16.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -722,6 +654,7 @@
 				"760F59ABF3299A08"
 				"72D0A8BDEF603EC8"
 				"31D918AF6CE9ACA4"
+				"6858A84A546BC064"
 			]
 			icon: "minecraft:iron_ingot"
 			id: "5DA6D446CABC0364"
@@ -753,8 +686,8 @@
 				value: 1
 			}]
 			title: "Iron Tier Complete!"
-			x: 6.0d
-			y: 2.5d
+			x: -16.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -780,7 +713,7 @@
 					type: "item"
 				}
 			]
-			size: 2.5d
+			size: 2.0d
 			tasks: [{
 				disable_toast: true
 				icon: "cobblemon:great_ball"
@@ -791,11 +724,11 @@
 				value: 1
 			}]
 			title: "Beginner Graduation"
-			x: 0.0d
-			y: 6.0d
+			x: -16.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["44552987B2680A1B"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:ground_gem"
 			id: "496F315CCAEFEFF2"
 			rewards: [{
@@ -820,11 +753,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -8.0d
+			x: -13.0d
 			y: 11.0d
 		}
 		{
-			dependencies: ["44552987B2680A1B"]
+			dependencies: ["666FB123AAD70030"]
 			id: "5268630443AE445F"
 			rewards: [{
 				count: 10
@@ -849,11 +782,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -7.0d
-			y: 11.0d
+			x: -24.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["44552987B2680A1B"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:great_ball"
 			id: "2225CAEF104DC64E"
 			rewards: [{
@@ -878,11 +811,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -6.0d
-			y: 11.0d
+			x: -22.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["44552987B2680A1B"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:ultra_ball"
 			id: "50367C36C3FB46C8"
 			rewards: [
@@ -915,11 +848,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -5.0d
-			y: 11.0d
+			x: -20.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["44552987B2680A1B"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:rock_gem"
 			id: "5A5008A4F02D7EB5"
 			rewards: [
@@ -951,27 +884,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -6.0d
+			x: -13.0d
 			y: 12.0d
-		}
-		{
-			dependencies: ["666FB123AAD70030"]
-			description: [""]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "minecraft:raw_gold"
-			id: "44552987B2680A1B"
-			tasks: [{
-				icon: "minecraft:raw_gold"
-				id: "11417D48088E183D"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Gold Tier"
-			x: -6.0d
-			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -981,6 +895,7 @@
 				"5268630443AE445F"
 				"496F315CCAEFEFF2"
 				"5553E125FCEB3B9A"
+				"459615A6E11C27A5"
 			]
 			icon: "minecraft:gold_ingot"
 			id: "68F841C646C9F9E1"
@@ -1011,30 +926,11 @@
 				value: 1
 			}]
 			title: "Gold Tier Complete!"
-			x: -6.0d
-			y: 14.0d
+			x: -16.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["68F841C646C9F9E1"]
-			description: [""]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "minecraft:diamond_ore"
-			id: "0227B5D0BA05ACB3"
-			tasks: [{
-				icon: "minecraft:diamond_ore"
-				id: "03E0A6A1BA4E4BE6"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Diamond Tier"
-			x: 0.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:poison_gem"
 			id: "6DF3741C3754EC87"
 			rewards: [{
@@ -1060,11 +956,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -2.0d
-			y: 11.0d
+			x: -13.0d
+			y: 14.0d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["5268630443AE445F"]
 			id: "409E50E24D3A21EB"
 			rewards: [{
 				count: 10
@@ -1089,11 +985,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -1.0d
-			y: 11.0d
+			x: -24.0d
+			y: 15.0d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["50367C36C3FB46C8"]
 			icon: "cobblemon:ultra_ball"
 			id: "11DB564D7DAA04B9"
 			rewards: [{
@@ -1119,11 +1015,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.0d
-			y: 11.0d
+			x: -20.0d
+			y: 15.0d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:fire_gem"
 			id: "6DA840083729251E"
 			rewards: [{
@@ -1149,8 +1045,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 2.0d
-			y: 11.0d
+			x: -13.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1192,11 +1088,11 @@
 				value: 1
 			}]
 			title: "Diamond Tier Complete!"
-			x: 0.0d
-			y: 14.0d
+			x: -16.0d
+			y: 15.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:helix_fossil"
 			id: "301935045A947BFE"
 			tasks: [{
@@ -1217,11 +1113,11 @@
 				title: "Revive 1 Fossil"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 6.0d
-			y: 10.0d
+			x: -13.0d
+			y: 17.0d
 		}
 		{
-			dependencies: ["44552987B2680A1B"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:bug_gem"
 			id: "5553E125FCEB3B9A"
 			rewards: [{
@@ -1247,11 +1143,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -4.0d
-			y: 11.0d
+			x: -13.0d
+			y: 13.0d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["2225CAEF104DC64E"]
 			icon: "cobblemon:rare_candy"
 			id: "081919C8B667A323"
 			rewards: [{
@@ -1277,27 +1173,8 @@
 				title: "Level up a Pokémon to Level 50"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["565B2D10A6CA81A4"]
-			description: [""]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "minecraft:netherite_scrap"
-			id: "3AC05A3C1AE2DBB8"
-			tasks: [{
-				icon: "minecraft:netherite_scrap"
-				id: "628BC7604CA0BBFA"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Iridium Tier"
-			x: 6.0d
-			y: 8.5d
+			x: -22.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1309,6 +1186,7 @@
 				"2376172C07043895"
 				"7EDC20FE5F42795D"
 				"301935045A947BFE"
+				"79652361E24ABCD5"
 			]
 			icon: "minecraft:netherite_ingot"
 			id: "779E4A54071E24F4"
@@ -1339,11 +1217,11 @@
 				value: 1
 			}]
 			title: "Iridium Tier Complete!"
-			x: 6.0d
-			y: 14.0d
+			x: -16.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["081919C8B667A323"]
 			icon: "cobblemon:great_ball"
 			id: "2376172C07043895"
 			rewards: [{
@@ -1369,11 +1247,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 6.0d
-			y: 11.0d
+			x: -22.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["11DB564D7DAA04B9"]
 			icon: "cobblemon:ultra_ball"
 			id: "7EDC20FE5F42795D"
 			rewards: [{
@@ -1399,11 +1277,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 7.0d
-			y: 11.0d
+			x: -20.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["409E50E24D3A21EB"]
 			id: "59C598EBB9AFAC09"
 			rewards: [{
 				count: 4
@@ -1428,11 +1306,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 5.0d
-			y: 11.0d
+			x: -24.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["459615A6E11C27A5"]
 			icon: "cobblemon:luxury_ball"
 			id: "7B927AB7B13FFFFB"
 			rewards: [
@@ -1466,11 +1344,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 11.0d
+			x: -18.0d
+			y: 15.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:electric_gem"
 			id: "3DC94224FC36F53F"
 			rewards: [{
@@ -1496,11 +1374,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 4.0d
-			y: 11.0d
+			x: -13.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:ice_gem"
 			id: "2D94FDC9C3511DDE"
 			rewards: [{
@@ -1526,11 +1404,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 8.0d
-			y: 11.0d
+			x: -13.0d
+			y: 19.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:flying_gem"
 			id: "5A1F3015336F0E33"
 			rewards: [{
@@ -1556,11 +1434,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 6.5d
-			y: 12.0d
+			x: -14.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["3AC05A3C1AE2DBB8"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:fighting_gem"
 			id: "5838565EAA6C8520"
 			rewards: [{
@@ -1586,11 +1464,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 5.5d
-			y: 12.0d
+			x: -12.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:steel_gem"
 			id: "07E1572255DB805D"
 			rewards: [{
@@ -1616,8 +1494,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -0.5d
-			y: 12.0d
+			x: -14.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1648,7 +1526,7 @@
 					type: "item"
 				}
 			]
-			size: 2.5d
+			size: 2.0d
 			tasks: [{
 				disable_toast: true
 				icon: "cobblemon:ultra_ball"
@@ -1659,27 +1537,8 @@
 				value: 1
 			}]
 			title: "Intermediate Graduation"
-			x: 0.0d
-			y: 17.5d
-		}
-		{
-			dependencies: ["1D5ABDB54D158E4D"]
-			description: [""]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "society:ancient_fruit_seed"
-			id: "79D661EA8977E63E"
-			tasks: [{
-				icon: "society:ancient_fruit_seed"
-				id: "32CC9B272092EC51"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Ancient Tier"
-			x: 0.0d
-			y: 21.0d
+			x: -16.0d
+			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -1715,11 +1574,11 @@
 				value: 1
 			}]
 			title: "Ancient Tier Complete!"
-			x: 0.0d
-			y: 27.25d
+			x: -16.0d
+			y: 25.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "1CA2FC305179160B"
 			tasks: [{
 				action: "catch"
@@ -1739,11 +1598,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.0d
-			y: 24.0d
+			x: -14.0d
+			y: 25.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "0DE8106C1FE7EADD"
 			tasks: [{
 				action: "catch"
@@ -1763,11 +1622,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -1.0d
-			y: 24.0d
+			x: -12.0d
+			y: 26.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "01D1CCF3974F6E32"
 			tasks: [{
 				action: "catch"
@@ -1787,11 +1646,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
+			x: -13.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:fairy_gem"
 			id: "6C2BCBA35F638C82"
 			tasks: [{
@@ -1811,11 +1670,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 23.0d
+			x: -12.0d
+			y: 24.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "768EF27402366575"
 			tasks: [{
 				action: "catch"
@@ -1834,11 +1693,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 24.0d
+			x: -24.0d
+			y: 25.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:ultra_ball"
 			id: "1F98B9A7FB2C7506"
 			tasks: [{
@@ -1858,13 +1717,18 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.0d
+			x: -20.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:luxury_ball"
 			id: "762B08326046D3EF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5BA8DC865444B1E8"
+				type: "choice"
+			}]
 			tasks: [{
 				action: "evolve"
 				amount: 20L
@@ -1882,11 +1746,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -1.0d
+			x: -18.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "candlelight:hearth"
 			id: "6828E83CB0C77B98"
 			tasks: [{
@@ -1906,11 +1770,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 2.0d
-			y: 24.0d
+			x: -11.0d
+			y: 25.0d
 		}
 		{
-			dependencies: ["79D661EA8977E63E"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "06CF329242494B90"
 			tasks: [{
 				action: "revive_fossil"
@@ -1931,11 +1795,11 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Revive 5 Fossils"
-			x: -2.0d
-			y: 24.0d
+			x: -12.0d
+			y: 25.0d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["768EF27402366575"]
 			id: "30C955A454C25A97"
 			tasks: [{
 				action: "catch"
@@ -1954,11 +1818,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 33.0d
+			x: -24.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:rare_candy"
 			id: "78D53D4EAFB02D71"
 			tasks: [{
@@ -1979,11 +1843,11 @@
 				title: "Level up a Pokémon to Level 100"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 34.0d
+			x: -14.0d
+			y: 27.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1F98B9A7FB2C7506"]
 			icon: "cobblemon:ultra_ball"
 			id: "164F1746CC584AD6"
 			rewards: [{
@@ -2008,11 +1872,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.0d
-			y: 33.0d
+			x: -20.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["4D85B3E15AF80E87"]
 			icon: "cobblemon:great_ball"
 			id: "3DCBD4C514E77198"
 			rewards: [{
@@ -2037,11 +1901,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -1.0d
-			y: 33.0d
+			x: -22.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "34E0DD9947CA5E8C"
 			rewards: [{
 				id: "4691BB352919229F"
@@ -2066,11 +1930,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -3.0d
-			y: 32.0d
+			x: -13.0d
+			y: 30.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "5762649B5D929785"
 			rewards: [{
 				id: "1F413BF6197C6182"
@@ -2095,11 +1959,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -1.0d
-			y: 32.0d
+			x: -12.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:fairy_gem"
 			id: "2F02359A5820BB8A"
 			rewards: [{
@@ -2124,11 +1988,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -4.0d
-			y: 32.0d
+			x: -14.0d
+			y: 30.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "6FBCBA225C5C53FD"
 			rewards: [{
 				id: "3987E9D91F12420D"
@@ -2153,11 +2017,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 32.0d
+			x: -12.0d
+			y: 30.5d
 		}
 		{
-			dependencies: ["0227B5D0BA05ACB3"]
+			dependencies: ["666FB123AAD70030"]
 			id: "5D7933D069120536"
 			rewards: [{
 				id: "031625652837D0F3"
@@ -2182,11 +2046,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.5d
-			y: 12.0d
+			x: -13.0d
+			y: 16.0d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:fire_gem"
 			id: "600720BA7503027F"
 			rewards: [{
@@ -2211,11 +2075,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -3.0d
-			y: 31.0d
+			x: -13.0d
+			y: 28.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:fighting_gem"
 			id: "1F78516865785CE0"
 			rewards: [{
@@ -2240,11 +2104,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -4.0d
-			y: 31.0d
+			x: -14.0d
+			y: 28.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:flying_gem"
 			id: "295F22BBC2F8FE12"
 			rewards: [{
@@ -2269,11 +2133,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 3.0d
-			y: 32.0d
+			x: -9.0d
+			y: 28.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:ice_gem"
 			id: "0194964246818245"
 			rewards: [{
@@ -2298,11 +2162,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 4.0d
-			y: 32.0d
+			x: -9.0d
+			y: 30.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "1B145096D24DFD84"
 			rewards: [{
 				id: "056BEFCDC818ABA5"
@@ -2327,11 +2191,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 2.0d
-			y: 32.0d
+			x: -10.0d
+			y: 30.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:electric_gem"
 			id: "045ED216DB979B29"
 			rewards: [{
@@ -2356,11 +2220,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -1.0d
-			y: 31.0d
+			x: -13.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:bug_gem"
 			id: "3E88406D2E44AB42"
 			rewards: [{
@@ -2385,11 +2249,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 0.0d
-			y: 31.0d
+			x: -11.0d
+			y: 28.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:rock_gem"
 			id: "5F9758F41B295918"
 			rewards: [{
@@ -2414,11 +2278,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 2.0d
-			y: 31.0d
+			x: -10.0d
+			y: 28.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:ground_gem"
 			id: "44FEB5E8E2C24D89"
 			rewards: [{
@@ -2443,11 +2307,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -2.0d
-			y: 31.0d
+			x: -14.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:grass_gem"
 			id: "4BC70629B87DD5E7"
 			rewards: [{
@@ -2472,11 +2336,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.0d
-			y: 31.0d
+			x: -11.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:water_gem"
 			id: "7354A38C926B60F4"
 			rewards: [{
@@ -2501,11 +2365,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 1.0d
-			y: 32.0d
+			x: -11.0d
+			y: 30.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			id: "531C3B54950AEFCD"
 			rewards: [{
 				id: "00DEC508886AC9A2"
@@ -2530,11 +2394,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 4.0d
-			y: 31.0d
+			x: -9.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:steel_gem"
 			id: "0595C472ADA6A105"
 			rewards: [{
@@ -2559,11 +2423,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 3.0d
-			y: 31.0d
+			x: -10.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:poison_gem"
 			id: "0B3FAC8345DB8DAB"
 			rewards: [{
@@ -2588,18 +2452,25 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -2.0d
-			y: 32.0d
+			x: -12.0d
+			y: 28.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["762B08326046D3EF"]
 			icon: "cobblemon:luxury_ball"
 			id: "6F4B8D14EF61AF39"
-			rewards: [{
-				id: "370540DABB26F3F5"
-				item: "sunlit_cobblemon:fairy_heart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "370540DABB26F3F5"
+					item: "sunlit_cobblemon:fairy_heart"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "128730F2A1F59B76"
+					type: "choice"
+				}
+			]
 			tasks: [{
 				action: "evolve"
 				amount: 50L
@@ -2617,11 +2488,11 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -2.0d
-			y: 33.0d
+			x: -18.0d
+			y: 29.5d
 		}
 		{
-			dependencies: ["6E1D78CAD3A51774"]
+			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "sunlit_cobblemon:fairy_heart"
 			id: "4350C5EFABB9B8A1"
 			rewards: [{
@@ -2647,8 +2518,8 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			title: "Catch Xerneas"
-			x: 2.0d
-			y: 33.0d
+			x: -14.0d
+			y: 31.5d
 		}
 		{
 			dependencies: [
@@ -2699,30 +2570,22 @@
 				value: 1
 			}]
 			title: "Prismatic Tier Complete!"
-			x: 0.0d
-			y: 35.75d
-		}
-		{
-			dependencies: ["279B9BE5A850C517"]
-			description: [""]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "society:omni_geode"
-			id: "6E1D78CAD3A51774"
-			tasks: [{
-				icon: "society:omni_geode"
-				id: "2585E22CD9760F64"
-				stat: "minecraft:play_time"
-				title: "Begin Training"
-				type: "stat"
-				value: 1
-			}]
-			title: "Prismatic Tier"
-			x: 0.0d
+			x: -16.0d
 			y: 29.5d
 		}
 		{
-			dependencies: ["1CB70EFDB8061E2D"]
+			dependencies: [
+				"666FB123AAD70030"
+				"1D5ABDB54D158E4D"
+				"279B9BE5A850C517"
+				"565B2D10A6CA81A4"
+				"68F841C646C9F9E1"
+				"779E4A54071E24F4"
+				"5DA6D446CABC0364"
+				"50C5F52359BCCD70"
+				"30F339B9F7D920A6"
+				"1CB70EFDB8061E2D"
+			]
 			description: ["Go get yourself something nice!"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -2751,8 +2614,127 @@
 				value: 1
 			}]
 			title: "Master Graduation"
-			x: 0.0d
-			y: 39.0d
+			x: -16.0d
+			y: 33.20238095238099d
+		}
+		{
+			dependencies: ["2FDF83431B2845C4"]
+			icon: "cobblemon:luxury_ball"
+			id: "6858A84A546BC064"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01189F332C323CA0"
+				type: "choice"
+			}]
+			tasks: [{
+				action: "evolve"
+				amount: 5L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2CFA2C5BCC3AB599"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -18.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["666FB123AAD70030"]
+			id: "459615A6E11C27A5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5716AEBA340774F9"
+				type: "choice"
+			}]
+			tasks: [{
+				action: "evolve"
+				amount: 10L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				icon: "cobblemon:luxury_ball"
+				id: "759349C752A1D122"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -18.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7B927AB7B13FFFFB"]
+			icon: "cobblemon:luxury_ball"
+			id: "79652361E24ABCD5"
+			rewards: [
+				{
+					count: 5
+					id: "02A7A0F2D31316A3"
+					item: "cobblemon:rare_candy"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D0BC2F140B0BACB"
+					type: "choice"
+				}
+			]
+			tasks: [{
+				action: "evolve"
+				amount: 15L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1B06F49F4F4D10D1"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -18.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1D5ABDB54D158E4D"]
+			id: "4D85B3E15AF80E87"
+			tasks: [{
+				action: "level_up"
+				amount: 75L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				icon: "cobblemon:great_ball"
+				id: "155D708A02DE8188"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: -22.0d
+			y: 25.0d
 		}
 	]
 	title: "Trainer Level"

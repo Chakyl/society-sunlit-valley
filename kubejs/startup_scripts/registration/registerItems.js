@@ -344,7 +344,7 @@ StartupEvents.registry("item", (e) => {
   // Regret Crystals
   e.create(`society:crystal_of_regret_farming`)
     .displayName("Crystal of Regret: Farming")
-    .texture("society:item/crystal_of_regret")
+    .texture("society:item/crystal_of_regret_farming")
     .tooltip(
       Text.translatable(
         "society.crystal_of_regret.description",
@@ -357,11 +357,10 @@ StartupEvents.registry("item", (e) => {
     .tooltip(
       Text.translatable("society.crystal_of_regret.description.warn").red()
     )
-    .color(0, 0x087814);
 
   e.create(`society:crystal_of_regret_husbandry`)
     .displayName("Crystal of Regret: Husbandry")
-    .texture("society:item/crystal_of_regret")
+    .texture("society:item/crystal_of_regret_husbandry")
     .tooltip(
       Text.translatable(
         "society.crystal_of_regret.description",
@@ -374,11 +373,10 @@ StartupEvents.registry("item", (e) => {
     .tooltip(
       Text.translatable("society.crystal_of_regret.description.warn").red()
     )
-    .color(0, 0x4f370d);
 
   e.create(`society:crystal_of_regret_mining`)
     .displayName("Crystal of Regret: Mining")
-    .texture("society:item/crystal_of_regret")
+    .texture("society:item/crystal_of_regret_mining")
     .tooltip(
       Text.translatable(
         "society.crystal_of_regret.description",
@@ -391,11 +389,10 @@ StartupEvents.registry("item", (e) => {
     .tooltip(
       Text.translatable("society.crystal_of_regret.description.warn").red()
     )
-    .color(0, 0x383735);
 
   e.create(`society:crystal_of_regret_fishing`)
     .displayName("Crystal of Regret: Fishing")
-    .texture("society:item/crystal_of_regret")
+    .texture("society:item/crystal_of_regret_fishing")
     .tooltip(
       Text.translatable(
         "society.crystal_of_regret.description",
@@ -408,11 +405,10 @@ StartupEvents.registry("item", (e) => {
     .tooltip(
       Text.translatable("society.crystal_of_regret.description.warn").red()
     )
-    .color(0, 0x1eabd6);
 
   e.create(`society:crystal_of_regret_adventuring`)
     .displayName("Crystal of Regret: Adventuring")
-    .texture("society:item/crystal_of_regret")
+    .texture("society:item/crystal_of_regret_adventuring")
     .tooltip(
       Text.translatable(
         "society.crystal_of_regret.description",
@@ -425,7 +421,6 @@ StartupEvents.registry("item", (e) => {
     .tooltip(
       Text.translatable("society.crystal_of_regret.description.warn").red()
     )
-    .color(0, 0x6e1313);
 
   // Artifacts
   global.artifacts.forEach((artifact) => {
