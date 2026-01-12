@@ -49,6 +49,9 @@ global.wineKegRecipes = new Map([
   ["farmersdelight:tomato", { output: ["vinery:stal_wine"] }],
   ["pamhc2trees:peachitem", { output: ["vinery:chenet_wine"] }],
   ["pamhc2trees:lycheeitem", { output: ["vinery:bottle_mojang_noir"] }],
+  ["society:sparkpod", { output: ["society:violet_moon"] }],
+  ["society:mana_fruit", { output: ["society:laputa_franc"] }],
+  ["society:mossberry", { output: ["vinery:noir_wine"] }],
 ]);
 
 StartupEvents.registry("block", (event) => {
@@ -63,7 +66,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns 3 of the same crop into wine"));
+      item.tooltip(
+        Text.translatable("block.society.wine_keg.description").gray()
+      );
       item.modelJson({
         parent: "society:block/wine_keg/wine_keg",
       });
@@ -81,6 +86,38 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
+      const { player, item, block, hand, level } = click;
+      const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
+
+      if (hand == "OFF_HAND") return;
+      if (hand == "MAIN_HAND" && !upgraded && item == "society:gray_anatomy") {
+        if (!player.isCreative()) item.count--;
+        level.spawnParticles(
+          "farmersdelight:star",
+          true,
+          block.x,
+          block.y + 1,
+          block.z,
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          3,
+          0.01
+        );
+        block.set(block.id, {
+          facing: block.properties.get("facing"),
+          working: block.properties.get("working"),
+          mature: block.properties.get("mature"),
+          upgraded: true,
+        });
+      }
+      if (
+        block.properties.get("upgraded") === "true" &&
+        block.properties.get("mature") === "true" &&
+        rnd5()
+      ) {
+        block.popItemFromFace("society:relic_trove", facing);
+      }
       global.handleBERightClick(
         "minecraft:block.wood.place",
         click,

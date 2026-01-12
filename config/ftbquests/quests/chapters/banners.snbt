@@ -154,7 +154,6 @@
 				"6E6588DBC047B041"
 				"5E94562368270D69"
 				"560CDD4660AA1159"
-				"791EFE3588B3D3A6"
 			]
 			description: ["{ftbquests.chapter.banners.quest3.description1}"]
 			hide_dependency_lines: true
@@ -2103,16 +2102,6 @@
 			y: -1.0d
 		}
 		{
-			id: "791EFE3588B3D3A6"
-			tasks: [{
-				id: "189D906B1E089C71"
-				item: "bakery:grilled_salmon_sandwich"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -3.0d
-		}
-		{
 			id: "6E6588DBC047B041"
 			tasks: [{
 				id: "0E88A8780C5E5DBE"
@@ -2120,7 +2109,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			id: "09E68F4E9AE935D8"
@@ -2130,7 +2119,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			id: "31831BD5BC45E37E"

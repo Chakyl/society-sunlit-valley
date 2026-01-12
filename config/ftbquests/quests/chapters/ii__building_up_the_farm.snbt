@@ -155,6 +155,7 @@
 						"patchouli:book": "patchouli:almanac"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest5.title}"
@@ -304,8 +305,8 @@
 			]
 			id: "2B3BEC36F6C0F6BE"
 			rewards: [{
-				id: "31BE8C469A71C6EC"
-				item: "meadow:wooden_bucket"
+				id: "5D0CB0AFFFFB6FCE"
+				item: "society:pristine_earth_crystal"
 				type: "item"
 			}]
 			tasks: [{
@@ -723,8 +724,8 @@
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest24.description1}"]
 			id: "3719F024051F60DA"
 			rewards: [{
-				id: "66CC0638F629C86F"
-				item: "society:truffle_tea"
+				id: "5E94113982847280"
+				item: "bakery:chocolate_donut"
 				type: "item"
 			}]
 			tasks: [{
@@ -733,7 +734,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
@@ -1840,6 +1841,30 @@
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest60.title}"
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E4EA6B5E8E6361C"
+				"3719F024051F60DA"
+			]
+			description: [
+				"The &6Oil Maker&r is an Artisan Machine for turning rough products into valuable artisanal oil."
+				""
+				"Its best use is for making &6Truffle Oil&r"
+			]
+			id: "6971F0B3FC26D411"
+			rewards: [{
+				id: "6515152543861EE5"
+				item: "society:oil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B83A80BBA2CE38D"
+				item: "society:oil_maker"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

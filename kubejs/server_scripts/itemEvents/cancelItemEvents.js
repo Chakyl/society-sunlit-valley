@@ -23,7 +23,7 @@ BlockEvents.rightClicked("create:deployer", (e) => {
       "aquaculture:neptunium_fishing_rod",
     ].includes(e.player.getHeldItem("MAIN_HAND").id)
   ) {
-    e.player.tell(Text.red("This machine will break my rod... "));
+    e.player.tell(Text.translatable("society.fishing_rod.on_deployer").red());
     e.cancel();
   }
 });

@@ -10,7 +10,11 @@ ItemEvents.rightClicked("society:fish_radar", (e) => {
   }
 
   let fish = [];
-  player.tell(Text.gray("=====[ §aFish Radar§7 ]====="));
+  player.tell(
+    Text.of("=====[ ").gray()
+      .append(Text.translatable("item.society.fish_radar").green())
+      .append(" ]=====")
+  );
 
   if (level.dimension !== "minecraft:the_nether") {
     fish = global.overworldRadar(e, fish, playerTell, true);

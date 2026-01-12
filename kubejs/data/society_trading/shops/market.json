@@ -7,7 +7,6 @@
   "block_tag": "society:opens_market",
   "selector_weight": -99,
   "jei_catalyst": { "item": "farmingforblockheads:market" },
-  "selector_weight": -99,
   "trades": [
     {
       "offer": { "item": "farmersdelight:tomato_seeds", "count": 1 },
@@ -265,6 +264,21 @@
       "trade_id": "market_eggplant_seed"
     },
     {
+      "offer": { "item": "society:cranberry_seed", "count": 1 },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "second_request": {
+        "item": "numismatics:spur",
+        "count": 4
+      },
+      "numismatics_cost": 12,
+      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "stage_override": "universal_methods_of_farming",
+      "trade_id": "market_cranberry_seed"
+    },
+    {
       "offer": { "item": "farm_and_charm:barley_seeds", "count": 1 },
       "request": {
         "item": "numismatics:spur",
@@ -369,6 +383,41 @@
       "seasons_required": ["early_winter", "mid_winter", "late_winter"],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_ginger_flower"
+    },
+    {
+      "offer": {
+        "item": "society:sparkpod_seed",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "stage_required": "farming_mastery",
+      "unlock_description": "jei.society_trading.farming_mastery_unlocked",
+      "trade_id": "market_sparkpod_seed_for_crown"
+    },
+    {
+      "offer": {
+        "item": "cluttered:willow_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "atmospheric:grimwood_sapling",
+        "count": 1
+      },
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "stage_required": "farming_mastery",
+      "unlock_description": "jei.society_trading.farming_mastery_unlocked",
+      "trade_id": "market_willow_sapling_for_crown"
     },
     {
       "offer": {
@@ -680,18 +729,6 @@
     },
     {
       "offer": {
-        "item": "sophisticatedbackpacks:backpack",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 2
-      },
-      "numismatics_cost": 1024,
-      "trade_id": "leatherworker_backpack_for_crown"
-    },
-    {
-      "offer": {
         "item": "dew_drop_farmland_growth:hydrating_fertilizer",
         "count": 1
       },
@@ -886,18 +923,6 @@
       },
       "numismatics_cost": 256,
       "trade_id": "leatherworker_iron_sewing_needle_for_cog"
-    },
-    {
-      "offer": {
-        "item": "naturescompass:naturescompass",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 6
-      },
-      "numismatics_cost": 24576,
-      "trade_id": "leatherworker_naturescompass_for_crown"
     }
   ]
 }

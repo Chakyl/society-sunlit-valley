@@ -1,6 +1,6 @@
 const starvationPrevention = (entity, affectionPenaltyMult) => {
   let entityNbt = entity.getNbt();
-  const day = Number((entity.level.dayTime() / 24000).toFixed(0));
+  const day = global.getDay(entity.level);
   if (day - entity.persistentData.getInt("ageLastFed") > 1) {
     entityNbt.EggLayTime = 20400;
   } else if (Math.random() > entity.persistentData.getInt("affection") / 1000) {
@@ -42,7 +42,7 @@ EntityJSEvents.modifyEntity((event) => {
     modifyBuilder.tick((entity) => {
       if (entity.level.time % 1000 === 0) {
         let entityNbt = entity.getNbt();
-        const day = Number((entity.level.dayTime() / 24000).toFixed(0));
+        const day = global.getDay(entity.level);
         if (day - entity.persistentData.getInt("ageLastFed") > 1) {
           entityNbt.AppleLayTime = 20400;
         } else if (entityNbt.AppleLayTime > 12000) entityNbt.AppleLayTime = 10240;

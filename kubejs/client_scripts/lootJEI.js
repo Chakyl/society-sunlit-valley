@@ -32,7 +32,7 @@ const registerLootCategory = (event, title) => {
   });
 };
 JEIAddedEvents.registerCategories((e) => {
-  registerLootCategory(e, "Loot Box Opening");
+  registerLootCategory(e, Text.translatable("jei.society.category.loot_box"));
 });
 const addLootBoxRecipes = (e, input, outptTag) => {
   let output = [];

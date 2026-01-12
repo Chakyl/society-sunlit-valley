@@ -3,9 +3,9 @@
   "name": "shop.society_trading.wizard",
   "texture": "botania:textures/block/mana_void",
   "villager_profession": "cleric",
-  "jei_catalyst": { "item":"minecraft:brewing_stand" },
+  "jei_catalyst": { "item": "minecraft:brewing_stand" },
   "trades": [
-        {
+    {
       "offer": {
         "item": "labels:label",
         "count": 1
@@ -55,15 +55,21 @@
     },
     {
       "offer": {
-        "item": "minecraft:enchanting_table",
+        "item": "society:sunlit_crystal",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
-        "count": 16
+        "item": "numismatics:neptunium_coin",
+        "count": 1
       },
-      "numismatics_cost": 65536,
-      "trade_id": "librarian_enchanting_table_for_sun"
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 32768,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
+      "trade_id": "librarian_enchanting_guide_for_crown"
     },
     {
       "offer": {
@@ -93,6 +99,20 @@
     },
     {
       "offer": {
+        "item": "minecraft:enchanting_table",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 8
+      },
+      "numismatics_cost": 32768,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
+      "trade_id": "librarian_enchanting_table_for_sun"
+    },
+    {
+      "offer": {
         "item": "create_enchantment_industry:disenchanter",
         "count": 1
       },
@@ -101,6 +121,8 @@
         "count": 16
       },
       "numismatics_cost": 65536,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
       "trade_id": "librarian_disenchanter_for_sun"
     },
     {
@@ -113,6 +135,8 @@
         "count": 64
       },
       "numismatics_cost": 262144,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
       "trade_id": "librarian_printer_for_sun"
     },
     {
@@ -125,47 +149,9 @@
         "count": 6
       },
       "numismatics_cost": 24576,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
       "trade_id": "librarian_enchanting_guide_for_crown"
-    },
-    {
-      "offer": {
-        "item": "minecraft:blaze_powder",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 2
-      },
-      "numismatics_cost": 1024,
-      "trade_id": "cleric_blaze_powder_for_crown"
-    },
-    {
-      "offer": {
-        "item": "moreminecarts:levitation_powder",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 1
-      },
-      "numismatics_cost": 64,
-      "trade_id": "cleric_levitation_powder_for_cog"
-    },
-    {
-      "offer": {
-        "item": "quark:pickarang",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 16
-      },
-      "second_request": {
-        "item": "minecraft:diamond_pickaxe",
-        "count": 1
-      },
-      "numismatics_cost": 64536,
-      "trade_id": "cleric_pickarang_for_crown"
     },
     {
       "offer": {
@@ -197,22 +183,6 @@
         "count": 1
       },
       "numismatics_cost": 163840,
-      "trade_id": "cleric_hearthstone_for_sun"
-    },
-    {
-      "offer": {
-        "item": "moblassos:hostile_lasso",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:neptunium_coin",
-        "count": 4
-      },
-      "second_request": {
-        "item": "society:prismatic_shard",
-        "count": 1
-      },
-      "numismatics_cost": 131072,
       "trade_id": "cleric_hearthstone_for_sun"
     },
     {
@@ -279,7 +249,7 @@
       "numismatics_cost": 20480,
       "trade_id": "cleric_wand_of_symmetry_for_sun"
     },
-        {
+    {
       "offer": {
         "item": "society:ribbit_hut",
         "count": 1
@@ -295,7 +265,7 @@
       "stage_required": "community_center_complete",
       "numismatics_cost": 32768,
       "unlock_description": "jei.society_trading.community_center_complete",
-      "trade_id": "botanist_ribbit_hut"
+      "trade_id": "wizard_ribbit_hut"
     },
     {
       "offer": {
@@ -309,7 +279,7 @@
       "stage_required": "abandoned_farm_complete",
       "numismatics_cost": 4096,
       "unlock_description": "jei.society_trading.abandoned_farm_complete",
-      "trade_id": "botanist_apothecary_default_for_sun"
+      "trade_id": "wizard_apothecary_default_for_sun"
     },
     {
       "offer": {
@@ -323,7 +293,7 @@
       "numismatics_cost": 4096,
       "stage_required": "boiler_room_complete",
       "unlock_description": "jei.society_trading.boiler_room_complete",
-      "trade_id": "botanist_kinetic_blueprint_for_sun"
+      "trade_id": "wizard_kinetic_blueprint_for_sun"
     },
     {
       "offer": {
@@ -335,7 +305,7 @@
         "count": 1
       },
       "numismatics_cost": 262144,
-      "trade_id": "botanist_overgrowth_seed_for_ancient_coin"
+      "trade_id": "wizard_overgrowth_seed_for_ancient_coin"
     },
     {
       "offer": {
@@ -347,7 +317,7 @@
         "count": 24
       },
       "numismatics_cost": 98304,
-      "trade_id": "botanist_tanuki_catalog_for_sun"
+      "trade_id": "wizard_tanuki_catalog_for_sun"
     },
     {
       "offer": {
@@ -359,7 +329,7 @@
         "count": 3
       },
       "numismatics_cost": 262144,
-      "trade_id": "botanist_modern_catalog_for_ancient_coin"
+      "trade_id": "wizard_modern_catalog_for_ancient_coin"
     },
     {
       "offer": {
@@ -371,7 +341,7 @@
         "count": 4
       },
       "numismatics_cost": 1048576,
-      "trade_id": "botanist_fantasy_catalog_for_ancient_coin"
+      "trade_id": "wizard_fantasy_catalog_for_ancient_coin"
     },
     {
       "offer": {
@@ -383,7 +353,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "botanist_red_sharestone_for_ancient_coin"
+      "trade_id": "wizard_red_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -395,7 +365,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "botanist_blue_sharestone_for_ancient_coin"
+      "trade_id": "wizard_blue_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -407,7 +377,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "botanist_green_sharestone_for_ancient_coin"
+      "trade_id": "wizard_green_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -419,7 +389,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "botanist_purple_sharestone_for_ancient_coin"
+      "trade_id": "wizard_purple_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -431,7 +401,7 @@
         "count": 20
       },
       "numismatics_cost": 5242880,
-      "trade_id": "botanist_warp_stone_for_ancient_coin"
+      "trade_id": "wizard_warp_stone_for_ancient_coin"
     },
     {
       "offer": {
@@ -443,7 +413,7 @@
         "count": 8
       },
       "numismatics_cost": 32768,
-      "trade_id": "botanist_bound_scroll_for_sun"
+      "trade_id": "wizard_bound_scroll_for_sun"
     },
     {
       "offer": {
@@ -455,7 +425,7 @@
         "count": 32
       },
       "numismatics_cost": 8388608,
-      "trade_id": "botanist_statue_endless_fortune_for_ancient_coin"
+      "trade_id": "wizard_statue_endless_fortune_for_ancient_coin"
     },
     {
       "offer": {
@@ -467,7 +437,7 @@
         "count": 1
       },
       "numismatics_cost": 16777216,
-      "trade_id": "botanist_golden_clock_for_prismatic_coin"
+      "trade_id": "wizard_golden_clock_for_prismatic_coin"
     },
     {
       "offer": {
@@ -479,7 +449,7 @@
         "count": 4
       },
       "numismatics_cost": 67108864,
-      "trade_id": "botanist_diy_workbench_for_prismatic_coin"
+      "trade_id": "wizard_diy_workbench_for_prismatic_coin"
     },
     {
       "offer": {
@@ -491,7 +461,7 @@
         "count": 16
       },
       "numismatics_cost": 268435456,
-      "trade_id": "botanist_scarecrow_for_prismatic_coin"
+      "trade_id": "wizard_scarecrow_for_prismatic_coin"
     },
     {
       "offer": {

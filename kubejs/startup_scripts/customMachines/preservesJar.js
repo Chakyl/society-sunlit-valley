@@ -137,6 +137,9 @@ global.preservesJarRecipes = new Map([
   ["veggiesdelight:zucchini", { output: ["society:zucchini_preserves"] }],
   ["veggiesdelight:turnip", { output: ["society:turnip_preserves"] }],
   ["veggiesdelight:broccoli", { output: ["society:broccoli_preserves"] }],
+  ["society:mana_fruit", { output: ["society:mana_fruit_preserves"] }],
+  ["society:sparkpod", { output: ["society:sparkpod_preserves"] }],
+  ["society:mossberry", { output: ["society:mossberry_preserves"] }],
 ]);
 roeFish.forEach((fish) => {
   const splitFish = fish.item.split(":");
@@ -164,7 +167,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns 5 of the same crop into a preserve"));
+      item.tooltip(Text.translatable("block.society.preserves_jar.description").gray());
       item.modelJson({
         parent: "society:block/preserves_jar",
       });

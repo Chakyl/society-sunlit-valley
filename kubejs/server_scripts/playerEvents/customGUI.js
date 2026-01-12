@@ -30,7 +30,7 @@ PlayerEvents.tick((e) => {
 const fishRadarPadding = 2;
 const fishRadarPainter = (curios, e) => {
   const { player, level } = e;
-  let localConditions = "";
+  let localConditions = Text.empty();
 
   function setLocalConditions(x) {
     localConditions = x;
@@ -50,7 +50,12 @@ const fishRadarPainter = (curios, e) => {
         type: "text",
         x: fishRadarPadding,
         y: fishRadarStart,
-        text: "=[ §aFish Radar§7 ]=",
+        text: 
+          `${
+            Text.of("=[ ").gray()
+              .append(Text.translatable("item.society.fish_radar").green())
+              .append(" ]=").toJson()
+          }`,
         color: "#AAAAAA",
         alignX: "center",
         alignY: "top",
@@ -59,7 +64,7 @@ const fishRadarPainter = (curios, e) => {
         type: "text",
         x: level.dimension == "minecraft:the_nether" ? -40 : 8,
         y: fishRadarStart + 8 + fishRadarPadding,
-        text: localConditions,
+        text: `${localConditions.toJson()}`,
         color: "#FFFFFFF",
         alignX: "center",
         alignY: "top",

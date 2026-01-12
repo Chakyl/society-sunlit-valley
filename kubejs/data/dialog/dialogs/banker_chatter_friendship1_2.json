@@ -7,19 +7,18 @@
 			"id": "start",
 			"speaker": {
 				"translate": "dialog.npc.banker.name",
-				"color": "white"
+				"color": "gold"
 			},
 			"text": [
 				{
-					"translate": "dialog.npc.banker.chatter_friendship1.line_0"
+					"translate": "dialog.npc.banker.chatter_friendship1.2.line_0"
 				}
 			],
 			"portraits": [
 				{
 					"path": "banker.png",
 					"position": "INLINE",
-					"brightness": 1,
-					"animationType": "FADE_IN"
+					"brightness": 1
 				}
 			]
 		},
@@ -27,19 +26,18 @@
 			"id": "end",
 			"speaker": {
 				"translate": "dialog.npc.banker.name",
-				"color": "white"
+				"color": "gold"
 			},
 			"text": [
 				{
-					"translate": "dialog.npc.banker.chatter_friendship1.line_1"
+					"translate": "dialog.npc.banker.chatter_friendship1.2.line_1"
 				}
 			],
 			"portraits": [
 				{
 					"path": "banker.png",
 					"position": "INLINE",
-					"brightness": 1,
-					"animationType": "FADE_IN"
+					"brightness": 1
 				}
 			]
 		}

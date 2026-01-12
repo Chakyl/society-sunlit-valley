@@ -30,6 +30,8 @@ global.dehydratableMushrooms = [
   "ribbits:toadstool",
   "species:alphacene_mushroom",
   "verdantvibes:bracket_mushroom",
+  "cluttered:blue_roundhead",
+  "cluttered:fly_agaric",
 ];
 global.dehydratableMushroomOutputs = ["society:dried_shimmering_mushrooms"];
 global.dehydratableMushrooms.forEach((item) => {
@@ -66,8 +68,11 @@ global.dehydratableFruits = [
   "society:salmonberry",
   "society:boysenberry",
   "society:cranberry",
+  "society:mossberry",
   "society:crystalberry",
   "windswept:wild_berries",
+  "society:mana_fruit",
+  "society:sparkpod",
 ];
 global.dehydratableFruits.forEach((item) => {
   let itemId = item.path;
@@ -112,7 +117,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Dehydrates 8 fruit or mushrooms"));
+      item.tooltip(Text.translatable("block.society.dehydrator.description").gray());
       item.modelJson({
         parent: "society:block/dehydrator/dehydrator_off",
       });
@@ -133,10 +138,9 @@ StartupEvents.registry("block", (event) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing");
-      const type = block.getEntityData().data.type;
+      const input = block.getEntityData().data.recipe;
       let isMushroom;
-      if (Number(type) > 0) {
-        const input = global.dehydratorRecipes[Number(type) - 1].input;
+      if (input) {
         isMushroom =
           global.dehydratableMushrooms.includes(input) ||
           global.shimmeringMushrooms.includes(input);

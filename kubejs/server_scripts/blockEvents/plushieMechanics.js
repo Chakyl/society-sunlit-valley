@@ -1,3 +1,5 @@
+console.info("[SOCIETY] plushieMechanics.js loaded");
+
 BlockEvents.placed(global.plushies, (e) => {
   const plushieNbt = e.player.getHeldItem("main_hand").getNbt();
   if (plushieNbt) {
@@ -10,6 +12,14 @@ BlockEvents.placed(global.plushies, (e) => {
         quality: plushieNbt.get("quality_food").get("quality"),
       },
     });
+    let animal = plushieNbt.get("animal");
+    if (animal) {
+      nbt.merge({
+        data: {
+          animal: animal,
+        },
+      });
+    }
     e.block.setEntityData(nbt);
   }
 });
@@ -17,24 +27,48 @@ BlockEvents.placed(global.plushies, (e) => {
 BlockEvents.broken(global.plushies, (e) => {
   const { block } = e;
   let nbt = block.getEntityData();
-  const { type, quest_id, affection, quality } = nbt.data;
+  const { type, quest_id, affection, quality, animal } = nbt.data;
+  let baseItem = Item.of(
+    block.id,
+    `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
+  );
   block.popItem(
-    Item.of(
-      block.id,
-      `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
-    )
+    animal
+      ? Item.of(
+          block.id,
+          global.getPlushieItemNbt(
+            baseItem.getNbt(),
+            animal.type,
+            animal.name,
+            animal,
+            animal
+          )
+        )
+      : baseItem
   );
 });
 
 BlockEvents.broken("whimsy_deco:sunlit_singing_frog", (e) => {
   const { block } = e;
   let nbt = e.block.getEntityData();
-  const { type, quest_id, affection, quality } = nbt.data;
+  const { type, quest_id, affection, quality, animal } = nbt.data;
+  let baseItem = Item.of(
+    block.id,
+    `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
+  );
   block.popItem(
-    Item.of(
-      block.id,
-      `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
-    )
+    animal
+      ? Item.of(
+          block.id,
+          global.getPlushieItemNbt(
+            baseItem.getNbt(),
+            animal.type,
+            animal.customName,
+            animal,
+            animal
+          )
+        )
+      : baseItem
   );
 });
 
@@ -44,13 +78,21 @@ BlockEvents.rightClicked("whimsy_deco:gatcha_machine", (e) => {
   if (hand == "MAIN_HAND") {
     if (item.id.equals("numismatics:sun")) {
       item.count -= 1;
-      block.popItemFromFace("society:plushie_capsule", block.properties.get("facing"));
+      block.popItemFromFace(
+        "society:plushie_capsule",
+        block.properties.get("facing")
+      );
       server.runCommandSilent(
         `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
       );
       global.addItemCooldown(player, item.id, 1);
     } else {
-      player.tell(`§7Right click with an §6Iridium Coin§7 to purchase a Plushie Capsule!`);
+      player.tell(
+        Text.translatable(
+          "tooltip.society.gatcha_machine",
+          Text.translatable("item.numismatics.sun").gold()
+        )
+      );
     }
   }
 });

@@ -1,5 +1,5 @@
 //priority: 100
-console.info("[SOCIETY] seedMaker.js loaded");
+console.info("[SOCIETY] ancientGoddessStatue.js loaded");
 
 StartupEvents.registry("block", (event) => {
   event
@@ -13,9 +13,16 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Offer a stack of crops to recieve the Goddess' blessing"));
-      item.tooltip(Text.gray("Crops and rewards change every season"));
-      item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
+      item.tooltip(
+        Text.translatable(
+          "block.society.ancient_goddess_statue.description"
+        ).gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.ancient_goddess_statue.description.warn"
+        ).red()
+      );
       item.modelJson({
         parent: "society:block/ancient_goddess_statue",
       });
@@ -36,27 +43,38 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(`Give me 64 of something ancient for something prismatic...`)
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.spring"
+                  ).aqua()
                 );
               }
               break;
             case "summer":
               if (item === "vintagedelight:ghost_pepper" && item.count === 64) {
-                block.popItemFromFace("16x society:sparkstone_block", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(Text.aqua(`Give me 64 of something spicy for something sparky..`));
-              }
-              break;
-            case "autumn":
-              if (item === "farm_and_charm:corn" && item.count === 64) {
-                block.popItemFromFace("4x society:pristine_star_shards", facing);
+                block.popItemFromFace("64x society:sparkstone", facing);
                 if (!player.isCreative()) item.count = item.count - 64;
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(`Give me 64 of something cobbed for a something pristine...`)
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.summer"
+                  ).aqua()
+                );
+              }
+              break;
+            case "autumn":
+              if (item === "farm_and_charm:corn" && item.count === 64) {
+                block.popItemFromFace(
+                  "4x society:pristine_star_shards",
+                  facing
+                );
+                if (!player.isCreative()) item.count = item.count - 64;
+                successParticles(level, block);
+              } else {
+                player.tell(
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.autumn"
+                  ).aqua()
                 );
               }
               break;
@@ -67,16 +85,20 @@ StartupEvents.registry("block", (event) => {
                 successParticles(level, block);
               } else {
                 player.tell(
-                  Text.aqua(
-                    `Give me 64 of something that only grows in the cold for something from the depths...`
-                  )
+                  Text.translatable(
+                    "block.society.ancient_goddess_statue.winter"
+                  ).aqua()
                 );
               }
               break;
           }
         }
       } else
-        player.tell(Text.red(`You need the skill "Farmer's Blessing" to recieve my blessing...`));
+        player.tell(
+          Text.translatable(
+            "block.society.ancient_goddess_statue.no_skill"
+          ).red()
+        );
     }).blockstateJson = {
     multipart: [
       {

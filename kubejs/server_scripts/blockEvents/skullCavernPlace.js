@@ -7,6 +7,9 @@ BlockEvents.placed((e) => {
       block.hasTag("society:skull_cavern_unplacable") &&
       !player.isCreative()
     ) {
+      let message = Text.translatable(
+        "society.skull_cavern.prevent_block_place"
+      ).getString();
       global.renderUiText(
         player,
         server,
@@ -15,7 +18,7 @@ BlockEvents.placed((e) => {
             type: "text",
             x: 0,
             y: -90,
-            text: "A magical force prevents you from placing this...",
+            text: message,
             color: "#FF5555",
             alignX: "center",
             alignY: "bottom",
@@ -25,7 +28,7 @@ BlockEvents.placed((e) => {
             x: 1,
             z: -1,
             y: -89,
-            text: "A magical force prevents you from placing this...",
+            text: message,
             color: "#000000",
             alignX: "center",
             alignY: "bottom",
@@ -33,13 +36,13 @@ BlockEvents.placed((e) => {
         },
         global.mainUiElementIds
       );
+      e.player.inventoryMenu.broadcastFullState();
       e.cancel();
     } else if (global.skullCavernHardmode) {
       server.scheduleInTicks(0, () => {
         server.scheduleInTicks(
           block.id === "minecraft:torch" ? 1200 : 200,
           () => {
-            console.log("block place scheduler");
             level.destroyBlock(block.pos, true);
             level.spawnParticles(
               "snowyspirit:glow_light",

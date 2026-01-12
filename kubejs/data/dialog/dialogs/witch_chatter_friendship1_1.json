@@ -1,0 +1,26 @@
+{
+	"id": "witch_chatter_friendship1_1",
+	"title": "[1] witch chatter at friendship level: friendship1",
+	"description": "dialog.npc.witch.chatter.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.chatter_friendship1.1.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

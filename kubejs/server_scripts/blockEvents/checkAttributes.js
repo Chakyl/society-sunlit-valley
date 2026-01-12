@@ -38,18 +38,45 @@ BlockEvents.leftClicked(
         return obj.Name === "shippingbin:meat_sell_multiplier";
       });
       if (binPlayer) {
-        player.tell(`§6${binPlayer.username}'s§7 Shipping Bin`);
-        player.tell("● §7Current sell multipliers:");
-        player.tell(`🔱 Farmer products: §ax${crop[0] ? crop[0].Base : 1}`);
-        player.tell(`✎ Artisan products: §ax${artisan[0] ? artisan[0].Base : 1}`);
-        player.tell(`🎣 Geologist products: §ax${gem[0] ? gem[0].Base : 1}`);
         player.tell(
-          `🗡 Adventurer products: §ax${adventurer[0] ? adventurer[0].Base : 1}`
+          Text.translatable(
+            "society.shipping_bin.owner", 
+            Text.of(`${binPlayer.username}`).gold()
+          )
+        );
+        player.tell(Text.translatable("society.shipping_bin.sell_multipliers").gray());
+        player.tell(
+          Text.translatable(
+            "society.shipping_bin.multiplier", 
+            Text.translatable("tooltip.society.farmer_product"), 
+            Text.green(`${crop[0] ? crop[0].Base : 1}`)
+          )
+        );
+        player.tell(
+          Text.translatable(
+            "society.shipping_bin.multiplier",
+            Text.translatable("tooltip.society.artisan_product"),
+            Text.green(`${artisan[0] ? artisan[0].Base : 1}`)
+          )
+        );
+        player.tell(
+          Text.translatable(
+            "society.shipping_bin.multiplier",
+            Text.translatable("tooltip.society.geologist_product"),
+            Text.green(`${gem[0] ? gem[0].Base : 1}`)
+          )
+        );
+        player.tell(
+          Text.translatable(
+            "society.shipping_bin.multiplier",
+            Text.translatable("tooltip.society.adventurer_product"),
+            Text.green(`${adventurer[0] ? adventurer[0].Base : 1}`)
+          )
         );
       }
     } else {
       player.tell(
-        Text.gray("This is a stranger's Shipping Bin. They aren't online to draw stats from...")
+        Text.translatable("society.shipping_bin.offline").gray()
       );
     }
   }

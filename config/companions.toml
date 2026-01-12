@@ -1,0 +1,630 @@
+
+[General]
+	#Probability (0.0–1.0) that demon flesh will drop when defeating certain enemies.
+	#
+	#Default: 0.2
+	#Range: 0.0 ~ 1.0
+	DEMON_FLESH_DROP_RATE = 0.2
+	#Respawn totem spawn charges when activated.
+	#
+	#Default: 5
+	#Range: 0 ~ 200
+	RESPAWN_TOTEM_CHARGES = 5
+	#Maximum number of charges a single shade altar can store.
+	#
+	#Default: 20
+	#Range: 0 ~ 1000
+	SHADOW_ALTAR_MAX_CHARGES = 20
+	#Number of blood charges a shade altar can hold.
+	#
+	#Default: 4
+	#Range: 0 ~ 1000
+	SHADOW_ALTAR_BLOOD_CHARGES_AMOUNT = 4
+	#Whether companions are allowed to wander when neither following nor sitting.
+	#
+	#Default: true
+	SHOULD_COMPANIONS_WANDER = true
+	#The maximum distance (in blocks) at which companions will teleport to their owner (in a valid position).
+	#
+	#Default: 20
+	#Range: 0 ~ 1000
+	COMPANIONS_FOLLOW_OWNER_TELEPORT_DISTANCE = 20
+	#Should the soul furnace constantly have max charges without needing to fill it
+	#
+	#Default: false
+	SOUL_FURNACE_CONSTANT_MAX_CHARGES = false
+
+[Dinamo]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks, and it will not visually render the Tesla connection rays. Keeping the chunk loaded is therefore necessary for full
+	#functionality in this entity.
+	#
+	#Default: true
+	DINAMO_KEEP_CHUNK_LOADED = true
+	#The maximum number of tesla modules that can be connected in a chain without using a voltaic repeater, starting from a Dinamo. For
+	#example, if set to 3, the Dinamo can connect to coil 1, which connects to coil 2, which connects to coil 3.
+	#
+	#Default: 7
+	#Range: 0 ~ 50
+	#
+	#Note: Any additional tesla modules beyond this limit will not be powered.
+	DINAMO_MAX_CHAIN_CONNECTIONS = 7
+	#The maximum distance a tesla module can connect to another
+	#
+	#Default: 13
+	#Range: 0 ~ 100
+	DINAMO_MAX_CONNECTION_DISTANCE = 13
+	#Max life of the Dinamo
+	#
+	#Default: 65.0
+	#Range: 0.0 ~ 5000.0
+	DINAMO_MAX_LIFE = 65.0
+	#Electricity damage from both Dinamo and tesla network blocks.
+	#
+	#Default: 7.5
+	#Range: 0.0 ~ 500.0
+	ELECTRICITY_DAMAGE = 7.5
+
+[Antlion]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	ANTLION_KEEP_CHUNK_LOADED = true
+	#Damage dealt by the Antlion in its normal phase
+	#
+	#Default: 7.0
+	#Range: 0.0 ~ 500.0
+	ANTLION_NORMAL_DAMAGE = 7.0
+	#Max life of the Antlion in its normal phase
+	#
+	#Default: 70.0
+	#Range: 0.0 ~ 1000.0
+	ANTLION_NORMAL_MAX_LIFE = 70.0
+	#Damage dealt by the Antlion in its soldier phase
+	#
+	#Default: 10.0
+	#Range: 0.0 ~ 1000.0
+	ANTLION_SOLDIER_DAMAGE = 10.0
+	#Max life of the Antlion in its soldier phase
+	#
+	#Default: 70.0
+	#Range: 0.0 ~ 2000.0
+	ANTLION_SOLDIER_MAX_LIFE = 70.0
+	#Damage dealt by the Antlion in its flying phase
+	#
+	#Default: 10.0
+	#Range: 0.0 ~ 100.0
+	ANTLION_FLYER_DAMAGE = 10.0
+	#Max life of the Antlion in its flying phase
+	#
+	#Default: 45.0
+	#Range: 0.0 ~ 1500.0
+	ANTLION_FLYER_MAX_LIFE = 45.0
+	#Damage dealt by the Antlion in its tank phase
+	#
+	#Default: 6.0
+	#Range: 0.0 ~ 200.0
+	ANTLION_TANK_DAMAGE = 6.0
+	#Max life of the Antlion in its tank phase
+	#
+	#Default: 120.0
+	#Range: 0.0 ~ 5000.0
+	ANTLION_TANK_MAX_LIFE = 120.0
+	#Damage dealt by the Antlion's sand projectile in its soldier phase
+	#
+	#Default: 10.0
+	#Range: 0.0 ~ 200.0
+	ANTLION_SOLDIER_PROJECTILE_DAMAGE = 10.0
+
+[Cornelius]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	CORNELIUS_KEEP_CHUNK_LOADED = true
+	#Ender Frog Heal Projectile heal amount
+	#
+	#Default: 2.5
+	#Range: 0.0 ~ 100.0
+	ENDER_FROG_HEAL_PROJECTILE_HEAL_AMOUNT = 2.5
+	#Max life of the Cornelius
+	#
+	#Default: 70.0
+	#Range: 0.0 ~ 5000.0
+	CORNELIUS_MAX_LIFE = 70.0
+	#Cornelius jackblack bets: [item; item; item; tag; item; ...] the order doesn't matter
+	#
+	#Default: companions:copper_coin; companions:nether_coin; companions:end_coin
+	#Range: -Infinity ~ Infinity
+	CORNELIUS_JACKBLACK_BETS = "companions:copper_coin; companions:nether_coin; companions:end_coin"
+
+["Croissant Dragon"]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	CROISSANT_DRAGON_KEEP_CHUNK_LOADED = true
+	#The amount of time the croissant dragon needs to hatch.
+	#
+	#Default: 6000
+	#Range: 10 ~ 100000
+	#
+	#Note: The time is measured in ticks
+	CROISSANT_EGG_LIFETIME = 6000
+	#Max life of the Croissant Dragon
+	#
+	#Default: 80.0
+	#Range: 0.0 ~ 5000.0
+	CROISSANT_DRAGON_MAX_LIFE = 80.0
+
+[Teddy]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	TEDDY_KEEP_CHUNK_LOADED = true
+	#Max life of the Teddy
+	#
+	#Default: 70.0
+	#Range: 0.0 ~ 5000.0
+	TEDDY_MAX_LIFE = 70.0
+	#Damage dealt by the Teddy
+	#
+	#Default: 7.0
+	#Range: 0.0 ~ 50.0
+	TEDDY_DAMAGE = 7.0
+	#Max life of the Teddy in mutant phase
+	#
+	#Default: 130.0
+	#Range: 0.0 ~ 2000.0
+	TEDDY_MUTANT_MAX_LIFE = 130.0
+	#Damage dealt by the Teddy in mutant phase
+	#
+	#Default: 8.5
+	#Range: 0.0 ~ 100.0
+	TEDDY_MUTANT_DAMAGE = 8.5
+	#Should the Teddy heal over time in its mutant form?
+	#
+	#Default: true
+	TEDDY_MUTANT_HEALS_OVER_TIME = true
+
+["Soul Mage"]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	SOUL_MAGE_KEEP_CHUNK_LOADED = true
+	#Max life of the Soul Mage
+	#
+	#Default: 75.0
+	#Range: 0.0 ~ 5000.0
+	SOUL_MAGE_MAX_LIFE = 75.0
+
+["Shadow Sword"]
+	#The amount of lifetime of the shadow sword
+	#
+	#Default: 4800
+	#Range: 0 ~ 100000
+	#
+	#Note: The time is measured in ticks (20 ticks = 1 second)
+	SHADOW_SWORD_LIFETIME = 4800
+	#Max life of the Shadow Sword
+	#
+	#Default: 70.0
+	#Range: 0.0 ~ 5000.0
+	SHADOW_SWORD_MAX_LIFE = 70.0
+	#Damage dealt by the Shadow Sword
+	#
+	#Default: 8.0
+	#Range: 0.0 ~ 500.0
+	SHADOW_SWORD_DAMAGE = 8.0
+	#Shadow Sword stats multiplier on its blood state. For example, if set to 1.2, a default damage of 10 will be 12 when the blood
+	#upgrade is active. This is only applied to Health and Attack Damage attributes.
+	#
+	#Default: 1.2
+	#Range: 0.0 ~ 10.0
+	SHADOW_SWORD_BLOOD_MULTIPLIER = 1.2
+
+["Shadow Maw"]
+	#The amount of lifetime of the shadow maw
+	#
+	#Default: 4800
+	#Range: 0 ~ 100000
+	#
+	#Note: The time is measured in ticks (20 ticks = 1 second)
+	SHADOW_MAW_LIFETIME = 4800
+	#Max life of the Shadow Maw
+	#
+	#Default: 100.0
+	#Range: 0.0 ~ 5000.0
+	SHADOW_MAW_MAX_LIFE = 100.0
+	#Damage dealt by the Shadow Maw
+	#
+	#Default: 6.0
+	#Range: 0.0 ~ 500.0
+	SHADOW_MAW_DAMAGE = 6.0
+	#Shadow Maw stats multiplier on its blood state. For example, if set to 1.2, a default damage of 10 will be 12 when the blood
+	#upgrade is active. This is only applied to Health and Attack Damage attributes.
+	#
+	#Default: 1.2
+	#Range: 0.0 ~ 10.0
+	SHADOW_MAW_BLOOD_MULTIPLIER = 1.2
+
+[Minion]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	MINION_KEEP_CHUNK_LOADED = true
+	#Max life of the Minion
+	#
+	#Default: 70.0
+	#Range: 0.0 ~ 5000.0
+	MINION_MAX_LIFE = 70.0
+
+[Mankh]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	MANKH_KEEP_CHUNK_LOADED = true
+	#Max life of the Mankh
+	#
+	#Default: 85.0
+	#Range: 0.0 ~ 5000.0
+	MANKH_MAX_LIFE = 85.0
+	#Damage dealt by the Mankh
+	#
+	#Default: 8.5
+	#Range: 0.0 ~ 500.0
+	MANKH_DAMAGE = 8.5
+
+[Cloak]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	CLOAK_KEEP_CHUNK_LOADED = true
+	#Max life of the Cloak
+	#
+	#Default: 75.0
+	#Range: 0.0 ~ 5000.0
+	CLOAK_MAX_LIFE = 75.0
+	#Damage dealt by the Cloak
+	#
+	#Default: 8.0
+	#Range: 0.0 ~ 500.0
+	CLOAK_DAMAGE = 8.0
+
+[Puppet]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	PUPPET_KEEP_CHUNK_LOADED = true
+	#Max life of the Puppet
+	#
+	#Default: 85.0
+	#Range: 0.0 ~ 1000.0
+	PUPPET_MAX_LIFE = 85.0
+	#Damage dealt by the Puppet
+	#
+	#Default: 7.0
+	#Range: 0.0 ~ 100.0
+	PUPPET_DAMAGE = 7.0
+
+["Puppet Glove"]
+	#Determines whether this entity keeps its current chunk loaded. If false, the entity will not teleport to its owner from unloaded
+	#chunks.
+	#
+	#Default: true
+	PUPPET_GLOVE_KEEP_CHUNK_LOADED = true
+	#Max life of the Puppet Glove
+	#
+	#Default: 35.0
+	#Range: 0.0 ~ 1000.0
+	PUPPET_GLOVE_MAX_LIFE = 35.0
+	#Damage dealt by the Puppet Glove
+	#
+	#Default: 6.5
+	#Range: 0.0 ~ 100.0
+	PUPPET_GLOVE_DAMAGE = 6.5
+
+["Sacred Pontiff"]
+	#Max life of the Sacred Pontiff
+	#
+	#Default: 225.0
+	#Range: 0.0 ~ 5000.0
+	SACRED_PONTIFF_MAX_LIFE = 225.0
+	#Damage dealt by the Sacred Pontiff
+	#
+	#Default: 7.0
+	#Range: 0.0 ~ 500.0
+	SACRED_PONTIFF_DAMAGE = 7.0
+	#Max life of His Holiness
+	#
+	#Default: 350.0
+	#Range: 0.0 ~ 5000.0
+	HIS_HOLINESS_MAX_LIFE = 350.0
+	#Damage dealt by His Holiness
+	#
+	#Default: 9.0
+	#Range: 0.0 ~ 500.0
+	HIS_HOLINESS_DAMAGE = 9.0
+
+["Magic Books"]
+	#Damage dealt by each fragment of the magic ray.
+	#
+	#Default: 5.5
+	#Range: 1.0 ~ 1000.0
+	MAGIC_PIECE_DAMAGE = 5.5
+	#Damage dealt by the ice tornado spell.
+	#
+	#Default: 3.0
+	#Range: 1.0 ~ 1000.0
+	ICE_TORNADO_DAMAGE = 3.0
+	#Damage dealt by the stone spike spell.
+	#
+	#Default: 4.0
+	#Range: 1.0 ~ 1000.0
+	STONE_SPIKE_DAMAGE = 4.0
+	#Radius (in blocks) of the Fire Mark spell's effect.
+	#
+	#Default: 2.5
+	#Range: 1.0 ~ 1000.0
+	FIRE_MARK_EFFECT_RADIUS = 2.5
+	#Amount of health restored by the healing ring spell.
+	#
+	#Default: 6.0
+	#Range: 0.0 ~ 1000.0
+	HEAL_RING_HEALING = 6.0
+	#Attraction radius (in blocks) of the black hole spell.
+	#
+	#Default: 12.0
+	#Range: 0.0 ~ 1000.0
+	BLACK_HOLE_ATTRACTION_RADIUS = 12.0
+	#Speed at which entities are pulled toward the black hole.
+	#
+	#Default: 1.45
+	#Range: 0.0 ~ 100.0
+	BLACK_HOLE_ATTRACTION_SPEED = 1.45
+	#Damage dealt by each small ice shard.
+	#
+	#Default: 2.5
+	#Range: 0.0 ~ 100.0
+	SMALL_ICE_SHARD_DAMAGE = 2.5
+	#Duration (in ticks) that a single small ice shard freezes a target
+	#
+	#Default: 100
+	#Range: 0 ~ 10000
+	SMALL_ICE_SHARD_FREEZE_TICKS = 100
+	#Cooldown (in ticks) of the black hole magic book
+	#
+	#Default: 160
+	#Range: 0 ~ 10000
+	BLACK_HOLE_COOLDOWN = 160
+	#Cooldown (in ticks) of the naginata magic book
+	#
+	#Default: 140
+	#Range: 0 ~ 10000
+	NAGINATA_COOLDOWN = 140
+	#Cooldown (in ticks) of the brace magic book
+	#
+	#Default: 160
+	#Range: 0 ~ 10000
+	BRACE_COOLDOWN = 160
+	#Cooldown (in ticks) of the fire mark magic book
+	#
+	#Default: 140
+	#Range: 0 ~ 10000
+	FIRE_MARK_COOLDOWN = 140
+	#Cooldown (in ticks) of the heal ring magic book
+	#
+	#Default: 200
+	#Range: 0 ~ 10000
+	HEAL_RING_COOLDOWN = 200
+	#Cooldown (in ticks) of the ice shard magic book
+	#
+	#Default: 180
+	#Range: 0 ~ 10000
+	ICE_SHARD_COOLDOWN = 180
+	#Cooldown (in ticks) of the ice tornado magic book
+	#
+	#Default: 200
+	#Range: 0 ~ 10000
+	ICE_TORNADO_COOLDOWN = 200
+	#Cooldown (in ticks) of the magic ray magic book
+	#
+	#Default: 200
+	#Range: 0 ~ 10000
+	MAGIC_RAY_COOLDOWN = 200
+	#Cooldown (in ticks) of the stone spikes magic book
+	#
+	#Default: 140
+	#Range: 0 ~ 10000
+	STONE_SPIKES_COOLDOWN = 140
+
+[Armoury]
+	#Crystallized Blood armor stats: [helmet, chest, legs, boots, toughness, knockbackRes, durabilityMult]. Don't use negative values
+	#and stick to the format.
+	#
+	#Default: 3, 8, 6, 3, 2.5, 0.05, 35
+	#Range: -Infinity ~ Infinity
+	CRYSTALLIZED_BLOOD_SET_STATS = "3, 8, 6, 3, 2.5, 0.05, 35"
+	#Mage armor stats: [helmet, chest, legs, boots, toughness, knockbackRes, durabilityMult]. Don't use negative values and stick to the
+	#format.
+	#
+	#Default: 3, 8, 6, 3, 2.5, 0.05, 35
+	#Range: -Infinity ~ Infinity
+	MAGE_SET_STATS = "3, 8, 6, 3, 2.5, 0.05, 35"
+	#Holy Robe armor stats: [helmet, chest, legs, boots, toughness, knockbackRes, durabilityMult]. Don't use negative values and stick
+	#to the format.
+	#
+	#Default: 3, 8, 6, 3, 2.5, 0.05, 35
+	#Range: -Infinity ~ Infinity
+	HOLY_ROBE_SET_STATS = "3, 8, 6, 3, 2.5, 0.05, 35"
+	#Netherite Dagger stats: [miningLvl, durability, miningSpeed, baseDmg, enchantability]. Don't use negative values and stick to the
+	#format.
+	#
+	#Default: 4, 1300, 6, 1, 15
+	#Range: -Infinity ~ Infinity
+	NETHERITE_DAGGER_STATS = "4, 1300, 6, 1, 15"
+	#Crystallized Blood weapon stats: [miningLvl, durability, miningSpeed, baseDmg, enchant, axeDmg, scytheDmg, swordDmg, axeSpd,
+	#scytheSpd, swordSpd]. Stick to the format.
+	#
+	#Default: 4, 2031, 9, 4, 15, 5, 1, 3, -3, -2.8, -2.4
+	#Range: -Infinity ~ Infinity
+	CRYSTALLIZED_BLOOD_WEAPON_STATS = "4, 2031, 9, 4, 15, 5, 1, 3, -3, -2.8, -2.4"
+	#Damage reduction per hit per piece of Crystallized Blood armor.
+	#
+	#Default: 0.1
+	#Range: 0.0 ~ 1.0
+	CRYSTALLIZED_BLOOD_SET_REDUCTION = 0.1
+	#Crystallized Blood Axe cooldown
+	#
+	#Default: 200
+	#Range: 0 ~ 10000
+	CRYSTALLIZED_BLOOD_AXE_COOLDOWN = 200
+	#Crystallized Blood Sword cooldown
+	#
+	#Default: 200
+	#Range: 0 ~ 10000
+	CRYSTALLIZED_BLOOD_SWORD_COOLDOWN = 200
+	#Minimum health % required to activate Crystallized Blood armor effect.
+	#
+	#Default: 0.5
+	#Range: 0.0 ~ 1.0
+	CRYSTALLIZED_BLOOD_SET_MIN_HEALTH = 0.5
+	#Magic damage reduction per hit per piece of Mage armor.
+	#
+	#Default: 0.1
+	#Range: 0.0 ~ 1.0
+	MAGE_SET_DAMAGE_REDUCTION = 0.1
+	#Cooldown reduction fraction for Mage armor when using magic books. Reduction per piece.
+	#
+	#Default: 0.15
+	#Range: 0.0 ~ 1.0
+	MAGE_SET_COOLDOWN_REDUCTION = 0.15
+	#Damage reduction per piece of Holy Robe armor.
+	#
+	#Default: 0.07
+	#Range: 0.0 ~ 1.0
+	HOLY_ROBE_DAMAGE_REDUCTION = 0.07
+	#Chance per hit to spawn a Fire Ring from Holy Robe armor.
+	#
+	#Default: 0.1
+	#Range: 0.0 ~ 1.0
+	HOLY_ROBE_FIRE_RING_SPAWN_CHANCE = 0.1
+	#Damage dealt by Naginata weapon.
+	#
+	#Default: 8.0
+	#Range: 0.0 ~ 1000.0
+	NAGINATA_DAMAGE = 8.0
+	#Damage dealt by Fire Ring ability.
+	#
+	#Default: 5.0
+	#Range: 0.0 ~ 1000.0
+	FIRE_RING_DAMAGE = 5.0
+	#Damage dealt by Needle projectile.
+	#
+	#Default: 5.0
+	#Range: 0.0 ~ 1000.0
+	NEEDLE_PROJECTILE_DAMAGE = 5.0
+	#Damage dealt by Needle item on hit (both player and target).
+	#
+	#Default: 2.0
+	#Range: 0.0 ~ 1000.0
+	NEEDLE_ITEM_DAMAGE = 2.0
+	#Damage dealt by Holiness Star when thrown.
+	#
+	#Default: 8.0
+	#Range: 0.0 ~ 1000.0
+	HOLINESS_STAR_DAMAGE = 8.0
+	#Damage dealt by Brace projectile per hit.
+	#
+	#Default: 4.0
+	#Range: 0.0 ~ 1000.0
+	BRACE_PROJECTILE_DAMAGE = 4.0
+	#Lifesteal fraction per hit for Crystallized Blood Scythe.
+	#
+	#Default: 0.15
+	#Range: 0.0 ~ 1.0
+	#
+	#Note: 0.10 = heal 10% of damage dealt
+	CRYSTALLIZED_BLOOD_SCYTHE_LIFE_STEAL = 0.15
+	#Damage dealt by Blood Tornado (axe ability).
+	#
+	#Default: 4.0
+	#Range: 0.0 ~ 1000.0
+	BLOOD_TORNADO_DAMAGE = 4.0
+	#Damage dealt by Blood Slash (sword ability).
+	#
+	#Default: 7.5
+	#Range: 0.0 ~ 1000.0
+	BLOOD_SLASH_DAMAGE = 7.5
+	#Travel speed of Blood Slash projectile.
+	#
+	#Default: 0.5225
+	#Range: 0.0 ~ 1000.0
+	BLOOD_SLASH_SPEED = 0.5225
+
+["Spawn Rates"]
+	#Golden allay spawnrate: [weight, minAmount, maxAmount, biomes and tags... (as many as you want)]
+	#
+	#Default: 20, 1, 1, minecraft:swamp, minecraft:mangrove_swamp, #forge:is_swamp
+	#Range: -Infinity ~ Infinity
+	GOLDEN_ALLAY_SPAWN = "20, 1, 1, minecraft:swamp, minecraft:mangrove_swamp, #forge:is_swamp"
+	#Cornelius spawnrate: [weight, minAmount, maxAmount, biomes and tags... (as many as you want)]
+	#
+	#Default: 15, 1, 1, minecraft:swamp, minecraft:mangrove_swamp, #forge:is_swamp
+	#Range: -Infinity ~ Infinity
+	CORNELIUS_SPAWN = "15, 1, 1, minecraft:swamp, minecraft:mangrove_swamp, #forge:is_swamp"
+	#Wild Antlion spawnrate: [weight, minAmount, maxAmount, biomes and tags... (as many as you want)]
+	#
+	#Default: 15, 1, 1, minecraft:desert, #forge:is_desert
+	#Range: -Infinity ~ Infinity
+	WILD_ANTLION_SPAWN = "15, 1, 1, minecraft:desert, #forge:is_desert"
+
+[Food]
+	#Should the mutant flesh tp the player to the opposite position when looking at a target?
+	#
+	#Default: true
+	MUTANT_FLESH_SHOULD_TP = true
+	#Should the mutant flesh hurt the player?
+	#
+	#Default: true
+	MUTANT_FLESH_SHOULD_HURT = true
+	#Should the antlion fur set the player on fire?
+	#
+	#Default: true
+	ANTLION_FUR_SHOULD_FIRE = true
+
+[Bonanza]
+	#Bonanza item reward drops from 2 teddy heads: [item, chance, amount (can be either exact, n, or ranged, n-m); ...]
+	#
+	#Default: minecraft:golden_apple, 1.0, 1;minecraft:feather, 1.0, 1-4;minecraft:ender_pearl, 0.5, 1;minecraft:enchanted_golden_apple,
+	#0.25, 1;minecraft:netherite_scrap, 0.05, 1;minecraft:wither_skeleton_skull, 0.10, 1;minecraft:axolotl_bucket, 0.10,
+	#1;minecraft:music_disc_pigstep, 0.05, 1;minecraft:diamond, 0.15, 1;minecraft:emerald, 0.20, 1-2;minecraft:experience_bottle, 0.10,
+	#1-3;minecraft:nether_star, 0.005, 1
+	#Range: -Infinity ~ Infinity
+	BONANZA_2_TEDDY_HEADS_DROPS = "minecraft:golden_apple, 1.0, 1;minecraft:feather, 1.0, 1-4;minecraft:ender_pearl, 0.5, 1;minecraft:enchanted_golden_apple, 0.25, 1;minecraft:netherite_scrap, 0.05, 1;minecraft:wither_skeleton_skull, 0.10, 1;minecraft:axolotl_bucket, 0.10, 1;minecraft:music_disc_pigstep, 0.05, 1;minecraft:diamond, 0.15, 1;minecraft:emerald, 0.20, 1-2;minecraft:experience_bottle, 0.10, 1-3;minecraft:nether_star, 0.005, 1"
+	#Bonanza item reward drops from 3 teddy heads: [item, chance, amount (can be either exact, n, or ranged, n-m); ...]
+	#
+	#Default: minecraft:golden_apple, 1.0, 1-3;minecraft:enchanted_golden_apple, 0.8, 1-3;minecraft:ender_pearl, 0.75,
+	#1-2;minecraft:ender_eye, 0.75, 1-2;minecraft:diamond, 0.65, 1-9;minecraft:gold_ingot, 0.85, 1-19;minecraft:cake, 0.55,
+	#1;minecraft:netherite_scrap, 0.30, 1;minecraft:netherite_ingot, 0.10, 1;minecraft:nether_star, 0.05, 1;
+	#Range: -Infinity ~ Infinity
+	BONANZA_3_TEDDY_HEADS_DROPS = "minecraft:golden_apple, 1.0, 1-3;minecraft:enchanted_golden_apple, 0.8, 1-3;minecraft:ender_pearl, 0.75, 1-2;minecraft:ender_eye, 0.75, 1-2;minecraft:diamond, 0.65, 1-9;minecraft:gold_ingot, 0.85, 1-19;minecraft:cake, 0.55, 1;minecraft:netherite_scrap, 0.30, 1;minecraft:netherite_ingot, 0.10, 1;minecraft:nether_star, 0.05, 1;"
+	#Bonanza entity spawns from 3 skull heads: [entity, amount; ...]
+	#
+	#Default: minecraft:warden, 1
+	#Range: -Infinity ~ Infinity
+	BONANZA_3_SKULL_DROP_ENTITIES = "minecraft:warden, 1"
+	#Bonanza curency-amount pair. The first value corresponds to the item used as currency, and the latter value indicates how many
+	#attempts that item provides. For example: minecraft:iron_ingot, 1; minecraft:gold_ingot, 2; ...
+	#
+	#Default: companions:copper_coin, 1; companions:nether_coin, 3; companions:end_coin, 5
+	#Range: -Infinity ~ Infinity
+	BONANZA_CURRENCY_TYPES = "companions:copper_coin, 1; companions:nether_coin, 3; companions:end_coin, 5"
+

@@ -3,7 +3,7 @@ EntityEvents.death((e) => {
   if (
     source.player &&
     source.player.getType() === "minecraft:player" &&
-    ["minecraft:sheep", "meadow:wooly_sheep"].includes(entity.type) &&
+    ["minecraft:sheep", "wildernature:minisheep", "meadow:wooly_sheep"].includes(entity.type) &&
     source.player.stages.has("sacrificial_lamb")
   ) {
     let sacrificeAffection = entity.persistentData.getInt("affection");

@@ -20,6 +20,7 @@ global.artisanMachineDefinitions = [
     recipes: global.wineKegRecipes,
     stageCount: 6,
     maxInput: 3,
+    upgrade: "society:gray_anatomy",
   },
   {
     id: "society:aging_cask",
@@ -113,6 +114,19 @@ global.artisanMachineDefinitions = [
     id: "society:recycling_machine",
     recipes: global.recyclingMachineRecipes,
     stageCount: 1,
+    maxInput: 1,
+    upgrade: "society:recycled_core",
+  },
+  {
+    id: "society:oil_maker",
+    recipes: global.oilMakerRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+  {
+    id: "society:mushroom_log",
+    recipes: global.mushroomLogRecipes,
+    stageCount: 4,
     maxInput: 1,
   },
 ];
