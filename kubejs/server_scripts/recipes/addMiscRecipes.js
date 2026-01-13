@@ -143,9 +143,10 @@ ServerEvents.recipes((e) => {
     "moreminecarts:greenhouse_glass_slab"
   );
   // Mastery
-  e.shaped("society:treasure_totem", ["fmf", "fsf", "fmf"], {
+  e.shaped("society:treasure_totem", ["fmf", "fsf", "fdf"], {
     s: "society:mystic_syrup",
     m: "#society:mineral",
+    d: "society:dried_mossberry",
     f: "meadow:fire_log",
   });
   e.shaped("society:bubble_totem", ["fjf", "fsf", "fSf"], {

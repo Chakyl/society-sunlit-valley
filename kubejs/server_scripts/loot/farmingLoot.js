@@ -83,7 +83,7 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier(global.cropList)
     .hasAnyStage("husbandry_mastery")
     .apply((c) => {
-      if (checkMaxGrownWithChance(c.destroyedBlock, 0.001)) {
+      if (checkMaxGrownWithChance(c.destroyedBlock, 0.003)) {
         c.addLoot("society:animal_cracker");
       }
     });

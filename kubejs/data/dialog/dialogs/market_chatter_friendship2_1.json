@@ -1,0 +1,26 @@
+{
+	"id": "market_chatter_friendship2_1",
+	"title": "[1] market chatter at friendship level: friendship2",
+	"description": "dialog.npc.market.chatter.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.chatter_friendship2.1.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

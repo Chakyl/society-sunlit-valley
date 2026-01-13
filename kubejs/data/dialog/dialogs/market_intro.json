@@ -1,0 +1,26 @@
+{
+	"id": "market_intro",
+	"title": "market introduction",
+	"description": "dialog.npc.market.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.intro.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

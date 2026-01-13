@@ -1393,6 +1393,77 @@
             ]
         },
         {
+            "pakku_id": "7geYbOgorz2fJuiP",
+            "pakku_links": [
+                "D3WNDlpUyoHOZWmi"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "certain-questing-additions",
+                "modrinth": "certain-questing-additions"
+            },
+            "name": {
+                "curseforge": "Certain Questing Additions",
+                "modrinth": "Certain Questing Additions"
+            },
+            "id": {
+                "curseforge": "1372051",
+                "modrinth": "5BPpCYUe"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "certain_questing_additions-forge-1.1.3+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7450/465/certain_questing_additions-forge-1.1.3+mc1.20.1.jar",
+                    "id": "7450465",
+                    "parent_id": "1372051",
+                    "hashes": {
+                        "sha1": "7dedfdc2b8d772ecbecf2eeaec003909e69f8c02",
+                        "md5": "19ee41acbbbec8e61a1108c72c742bc9"
+                    },
+                    "required_dependencies": [
+                        "289412"
+                    ],
+                    "size": 693270,
+                    "date_published": "2026-01-12T13:24:38.633Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "certain_questing_additions-forge-1.1.3+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/5BPpCYUe/versions/JtUWjDf0/certain_questing_additions-forge-1.1.3+mc1.20.1.jar",
+                    "id": "JtUWjDf0",
+                    "parent_id": "5BPpCYUe",
+                    "hashes": {
+                        "sha512": "3607da52b0713f06719c45f5d6580be1d0361f38a14df51285d941e5bf58627aee8d972ed6bf3645e47460392d65cf7fd2f48649f28594588cfa0c61a9ecc860",
+                        "sha1": "7dedfdc2b8d772ecbecf2eeaec003909e69f8c02"
+                    },
+                    "required_dependencies": [],
+                    "size": 693270,
+                    "date_published": "2026-01-12T13:26:39.593459Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "vg2Rzun4H4r66JOV",
             "type": "MOD",
             "side": "CLIENT",
@@ -11069,7 +11140,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society-1.3.jar",
+                    "file_name": "society-1.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11077,16 +11148,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7442/665/society-1.3.jar",
-                    "id": "7442665",
+                    "url": "https://edge.forgecdn.net/files/7449/64/society-1.4.jar",
+                    "id": "7449064",
                     "parent_id": "1424785",
                     "hashes": {
-                        "sha1": "d12a19e6de4dabb23588061f913c7dbb0bead626",
-                        "md5": "11702779626e04105ba8f7e3465908f4"
+                        "sha1": "f8b42fe44d0a0e3087ab744f98fc885c6ef91c17",
+                        "md5": "bbb250fa75c49fb5e1acf737ef271727"
                     },
                     "required_dependencies": [],
-                    "size": 14542725,
-                    "date_published": "2026-01-10T17:33:06.337Z"
+                    "size": 14626212,
+                    "date_published": "2026-01-12T02:49:48.113Z"
                 }
             ]
         },

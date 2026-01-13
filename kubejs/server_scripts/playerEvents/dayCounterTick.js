@@ -8,8 +8,13 @@ const pylonBuffs = [
 ];
 PlayerEvents.tick((e) => {
   const { player, level } = e;
-  
-  if (player.age % 400 == 0 && player.stages.has("mining_mastery")) {
+
+  if (
+    player.age % 400 == 0 &&
+    player.stages.has("mining_mastery") &&
+    player.persistentData.days &&
+    player.persistentData.days.manaPylonDay
+  ) {
     let dayData = player.persistentData.days.manaPylonDay;
     if (dayData != -1 && global.getDay(level) != dayData) {
       pylonBuffs.forEach((buff) => {
