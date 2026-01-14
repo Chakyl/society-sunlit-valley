@@ -10,17 +10,16 @@ const validExtractinatorItems = [
 ];
 const processGeodeLootTable = (lootTable, block, server, doubled) => {
   let drops;
+  let drop;
+  ("");
   lootTable.forEach((entry) => {
     if (Math.random() < entry.drop_chance) {
       drops = Ingredient.of(entry.drop).itemIds;
-      block.popItemFromFace(
-        Item.of(
-          `${doubled ? 2 : 1}x ${
-            drops[Math.floor(Math.random() * drops.length)]
-          }`
-        ),
-        "up"
-      );
+      drop = drops[Math.floor(Math.random() * drops.length)];
+      block.popItemFromFace(Item.of(`1x ${drop}`), "up");
+      if (doubled) {
+        block.popItemFromFace(Item.of(`1x ${drop}`), "up");
+      }
     }
   });
   server.runCommandSilent(

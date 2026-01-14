@@ -363,7 +363,7 @@ StartupEvents.registry("block", (e) => {
   };
   e
     .create("society:cranberry", "crop")
-    .age(7, (builder) => {
+    .age(5, (builder) => {
       builder
         .shape(0, 0, 0, 0, 16, 4, 16)
         .shape(1, 0, 0, 0, 16, 6, 16)

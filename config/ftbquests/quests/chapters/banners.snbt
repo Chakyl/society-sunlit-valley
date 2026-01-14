@@ -853,6 +853,127 @@
 			y: 7.0d
 		}
 		{
+			dependencies: [
+				"4685CADECD7E7667"
+				"3524BCD11C9EA4A8"
+				"0AA3766E1DEDBA24"
+				"56E57694719DBF68"
+				"0617BB08B451334B"
+				"322D65EEC4AE546B"
+				"3214800EE887635B"
+				"6FC8FB07A04B460D"
+				"478FDE299DD250FE"
+				"6BFF39FA33B916F6"
+				"773A1513745B36A2"
+				"3367993B473D8C70"
+				"3FAEF5D8D953AEF6"
+				"64FACA423E7FACD1"
+				"31F745FDD7FDEAA0"
+				"62CD97770B4E3BEF"
+				"2CD553256D9A3EB1"
+				"7D33570ACBF79AD5"
+				"5B2B1CB6E1293069"
+				"56ED31A51AF4F8E2"
+				"39F5195F7D5F14AB"
+				"6A34339F71914FE5"
+				"464BD74A1CABE08A"
+				"569FA000F2E1FCDA"
+				"58E1B73CDDDDCF27"
+				"2539833D5BF53616"
+				"1F38ADD3F9FC76BE"
+				"2923FA2F1AAA658F"
+				"15EBC1DB4F43D1D8"
+				"28352E21F9E0C9D8"
+				"21D97A948BBFF19E"
+				"664BB596D168D8D8"
+				"0FFBFDA4D6177C67"
+				"0EEBEF908CAB907F"
+				"77B0E84CA56FC9BC"
+				"2AB23A7465F8AFCF"
+				"369C255C6068F99B"
+				"49E346E1ED87A731"
+				"31EBA41931DE65DA"
+				"2B24C98150468FD4"
+				"23A913FBC392B8F7"
+				"38BB096BEB44A52C"
+				"33FE238CF7B97172"
+				"74AF388B2584905D"
+				"58F9D24AC167E5E9"
+				"132AEC18C5383774"
+				"4C10C1B271AF0B73"
+				"2BC28581132BB26A"
+				"2E2BA03F054B08BA"
+				"73D649D2F0E6EBEB"
+				"07ECC644BB4C0DCD"
+				"5AE3A06F64BEDCBB"
+				"11E5B34B3BFA42DE"
+				"011A1EDD02F5BC3E"
+				"009EC0AF7065697A"
+				"66EC7A9C34D48655"
+				"3225299E8746CC8E"
+				"19035186A855AA64"
+				"6E24F9E03D102BE1"
+				"6E56B91C12DE2E6C"
+				"303E7F3C27173B6B"
+				"270B71B8B39F6232"
+				"5C9D259126E1508D"
+				"187B4A3D4DA28644"
+				"350F695122FD8EA3"
+				"2492865EF15173BA"
+				"1C7EA6EEE7885EB0"
+				"38217DCF56AB37ED"
+				"7D140B3BA6E5E223"
+				"55A7F4F5AD8F5D31"
+				"2D45B4DA0619B8B6"
+				"1BA86B807736256F"
+				"0D17ACA202F600B5"
+				"1CF562E654642421"
+				"41EB85DB7B7DC75A"
+				"30BF1FB39C2E05BC"
+				"776A318885DAA6A6"
+				"764FBC5CFBBC2FE7"
+				"0EF5C98143E6755B"
+				"6C8991E2085E1678"
+				"0008F2109468C9FD"
+				"2A52328BAF4FAED9"
+				"4C841A9AE0E5E928"
+				"4BBEED8A907B5919"
+				"5FF416E509D9459F"
+				"4CDE1A1C5EBAD4E0"
+				"6665C1194E7ECD9B"
+				"1BA72C1A8B13418F"
+				"0AA0A62C8DABD741"
+				"796B98C9ED5A6396"
+				"304690207BD68F1F"
+				"14489A69C742E752"
+				"6DC29F70056D062D"
+				"3D58FD07A68909E5"
+				"1B386D9CF0CA8BD9"
+				"4DB47A66FA91ABF4"
+				"3AF919E950F2D35B"
+				"15C9B5E9F455688F"
+				"438F91A0DCA3DDB0"
+				"44E8B05A2E37DF17"
+				"7C26F52DDAE17DA8"
+				"6710747DA9E05E6E"
+				"178FE5D04C197282"
+				"11A2F44D6368B1E3"
+				"2F4164B3A2F143B6"
+				"3C49EFEC3F2A03F7"
+				"150AC5D9FABDEC26"
+				"083E30851FA52517"
+				"13BB9EFD3B941D98"
+				"334DAB97A86F2574"
+				"5919563A830D3AAA"
+				"1AFAEA748AB9E1B3"
+				"426E241A2BE5ED15"
+				"3DD9CFE690ED298A"
+				"5B37B31BA3C5CCD3"
+				"58A0B7418235B06F"
+				"2FDC611338D67682"
+				"01B0EFE30AC97294"
+				"6E0DE2216041B2B3"
+			]
 			description: ["{ftbquests.chapter.banners.quest81.description1}"]
 			hide_dependency_lines: true
 			id: "3A844AA9D5482F06"
@@ -1273,17 +1394,7 @@
 			y: 6.0d
 		}
 		{
-			id: "590238F3411C2974"
-			tasks: [{
-				id: "473D016B8A7616B2"
-				item: "veggiesdelight:stuffed_bellpeppers"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 7.0d
-		}
-		{
-			id: "0A4540E543FBA393"
+			id: "3D58FD07A68909E5"
 			tasks: [{
 				id: "61BE31990BEF7ED7"
 				item: "veggiesdelight:mashed_potatoes"
@@ -1313,17 +1424,7 @@
 			y: 7.0d
 		}
 		{
-			id: "6BF397C1C79EB117"
-			tasks: [{
-				id: "028D21FD75C0FA13"
-				item: "veggiesdelight:cauliflower_burger"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 6.0d
-		}
-		{
-			id: "0FB36D74E9B6678E"
+			id: "0AA0A62C8DABD741"
 			tasks: [{
 				id: "740B1CF21EFA2E33"
 				item: "veggiesdelight:chicken_fajitas_wrap"
@@ -2293,6 +2394,106 @@
 			}]
 			x: -13.0d
 			y: -2.0d
+		}
+		{
+			id: "334DAB97A86F2574"
+			tasks: [{
+				id: "6638166BFA190A6C"
+				item: "veggiesdelight:vegetarian_burger"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			id: "6E0DE2216041B2B3"
+			tasks: [{
+				id: "47218587348F949B"
+				item: "veggiesdelight:stuffed_bellpeppers_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			id: "2FDC611338D67682"
+			tasks: [{
+				id: "5478744F07CE4386"
+				item: "veggiesdelight:sweet_potato_pancakes"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 12.0d
+		}
+		{
+			id: "3DD9CFE690ED298A"
+			tasks: [{
+				id: "542D69B5C2BDC46E"
+				item: "veggiesdelight:turnip_mutton_skewer"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			id: "5B37B31BA3C5CCD3"
+			tasks: [{
+				id: "17E07F26FC39146E"
+				item: "veggiesdelight:zucchini_quiche"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			id: "426E241A2BE5ED15"
+			tasks: [{
+				id: "772D199DC6356DB9"
+				item: "veggiesdelight:stuffed_zucchini_boat"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			id: "01B0EFE30AC97294"
+			tasks: [{
+				id: "5AF4924EA0BB6E82"
+				item: "veggiesdelight:steak_and_broccoli"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 9.0d
+		}
+		{
+			id: "1AFAEA748AB9E1B3"
+			tasks: [{
+				id: "3684EC060C0B0398"
+				item: "veggiesdelight:rice_and_vegetables"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 10.0d
+		}
+		{
+			id: "5919563A830D3AAA"
+			tasks: [{
+				id: "6E161B3FBFDD1372"
+				item: "veggiesdelight:lasagna_pan"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			id: "58A0B7418235B06F"
+			tasks: [{
+				id: "307441AA7D425B06"
+				item: "veggiesdelight:vegetables_wrap"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 12.0d
 		}
 	]
 	title: "{ftbquests.chapter.banners.title}"

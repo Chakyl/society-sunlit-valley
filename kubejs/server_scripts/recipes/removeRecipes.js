@@ -700,6 +700,8 @@ ServerEvents.recipes((e) => {
     "cobblemon:dubious_disc",
   ];
   const removeById = [
+    "veggiesdelight:stuffed_zucchini_boat",
+    "veggiesdelight:zucchini_quiche",
     "jei:/sawmill/vanillabackport_pale_oak_boat_0",
     "crittersandcompanions:ender_pearl_from_pearl",
     "quark:building/crafting/furnaces/blackstone_furnace",

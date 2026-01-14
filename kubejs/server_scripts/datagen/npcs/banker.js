@@ -1,6 +1,6 @@
 // Priority: -100
 runNpcDatagen("banker", {
-  name: "Danny",
+  name: "Caroline",
   intro: [
     "Hey stranger, my name is Danny. I'm here to help you build the village you're starting in Sunlit Valley.",
     "If you're looking to invite more villagers, come talk to me and I can help you build homes for them.",
@@ -57,6 +57,8 @@ runNpcDatagen("banker", {
       "Who told you I like this? You're a snake.",
       "Passe une bonne journée.",
       "Smells like home.",
+      "Flattery will get you everywhere with me!",
+      "Is this from your farm? I hope you're selling more of these.",
     ],
     liked: [
       "I already have a few of these, I suppose it saves me a trip to the store.",
@@ -64,6 +66,9 @@ runNpcDatagen("banker", {
       "I know someone who would appreciate this.",
       "Finally someone with some manners around here.",
       "Interesting.",
+      "Hmmm I can use this I think",
+      "I'll take this.",
+      "It's about time you did something nice for me.",
     ],
     neutral: [
       "Why are you giving this to me...",
@@ -71,6 +76,9 @@ runNpcDatagen("banker", {
       "Do you think I'm poor or something?",
       "How simple.",
       "Are you even trying to get me to like you?",
+      "...",
+      "This is almost worth something.",
+      "You waste my time with these trinkets.",
     ],
     disliked: [
       "Is this a joke?",
@@ -84,6 +92,7 @@ runNpcDatagen("banker", {
       "Tasteless, but I don't know what I was expecting from you.",
       "This offends me.",
       "That's just terrible.",
+      "You waste my time with these awful paperweights.",
     ],
     hated: [
       "Get out of my face with that.",
@@ -96,6 +105,12 @@ runNpcDatagen("banker", {
       "Impolite and crass.",
       "Apologize to your parents for becoming a person that does things like this.",
       "Get that away from me.",
+      "This is almost garbage.",
+      "Ugh.",
+      "Leave.",
+      "Turn around and walk.",
+      "If this is how you run this place I'm wasting my time here.",
+      "Leave me out of your pathetic jokes."
     ],
   },
 });

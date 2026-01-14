@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/root",
+  "criteria": {
+    "mossberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:mossberry"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_mossberry.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:mossberry"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_mossberry.title"
+    }
+  },
+  "requirements": [["mossberry"]],
+  "sends_telemetry_event": true
+}

@@ -1,6 +1,6 @@
 // Priority: -100
 runNpcDatagen("shepherd", {
-  name: "Eve",
+  name: "Maria",
   intro: [
     "I can help you with raising your animals on your farm! If you need any supplies just let me know."
   ],
@@ -47,19 +47,59 @@ runNpcDatagen("shepherd", {
   },
   giftResponse: {
     loved: [
-      "I didn't know you were capable of having taste.",
+      "This makes me feel very at home.",
+      "You're so sweet to me, this is one of my favorites!",
+      "This is one of my favorites!",
+      "What a sweet gift.",
+      "This makes me feel very welcome here.",
+      "How'd you know I love these?",
+      "Wow! This is so luxurious.",
+      "I really love this!",
+      "This is an amazing gift."
     ],
     liked: [
-      "I already have a few of these, I suppose it saves me a trip to the store.",
+      "Thank you, I really appreciate it.",
+      "I know the perfect spot for this!",
+      "I was looking for this at the market the other day! How'd you know?",
+      "So thoughtful! Thank you.",
+      "Is this from your farm? This is lovely.",
+      "This is a very considerate gift.",
+      "Very lovely, I appreciate this.",
+      "You're a sweetheart!",
+      "It's so nice to have people like you here.",
+      "Thank you very much!"
     ],
     neutral: [
-      "Why are you giving this to me...",
+      "Thank you!",
+      "That's sweet of you.",
+      "I think one of my friends would like this!",
+      "You're very kind.",
+      "Is this from your farm? I've never seen one quite like this.",
+      "Thanks!",
+      "I'll take it!",
     ],
     disliked: [
-      "Is this a joke?",
+      "Oh! I wasn't expecting something like this.",
+      "You must know animals way better than people...",
+      "Sometimes it's better to not give gifts.",
+      "Oh!",
+      "Oh...",
+      "Ah... Okay... Cool...",
+      "Did you mean to give this to someone else?",
+      "We don't really have to give gifts to eachother...",
     ],
     hated: [
-      "Get out of my face with that."
+      "Why...",
+      "Why?",
+      "...",
+      "You can just ask me to leave directly.",
+      "No thank you.",
+      "This doesn't make me feel good...",
+      "I'm not sure I want this...",
+      "Can you leave me alone please.",
+      "I don't like these kinds of jokes.",
+      "Sorry but I really don't want this...",
+      "This might be the worst thing I've ever been given..."
     ],
   },
 });

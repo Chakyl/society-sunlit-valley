@@ -331,7 +331,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/net_bobber")
     .maxStackSize(1);
   e.create("society:needle_bobber")
-    .texture("sewingkit:item/netherite_sewing_needle")
+    .texture("society:item/needle_bobber")
     .maxStackSize(1);
   e.create("society:animal_cracker").texture("society:item/animal_cracker");
   e.create("society:sunlit_crystal").texture("society:item/sunlit_crystal");

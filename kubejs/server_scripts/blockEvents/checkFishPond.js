@@ -117,7 +117,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
 BlockEvents.rightClicked("society:fish_pond", (e) => {
   const { item, block, player } = e;
   if (!player.isCrouching()) {
-    const { type, population, max_population, quest_id } =
+    let { type, population, max_population, quest_id } =
       block.getEntityData().data;
     e.server.scheduleInTicks(1, () => {
       const properties = block.getProperties();
