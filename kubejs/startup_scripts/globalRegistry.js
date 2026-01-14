@@ -188,6 +188,7 @@ global.gems = [
   { item: "society:amethyst_chunk", value: 112 },
   { item: "society:topaz", value: 192 },
   { item: "society:jade", value: 512 },
+  { item: "society:spinel", value: 1024 },
 ];
 global.gems.forEach((mineral) => {
   global.pristine.push({
@@ -1072,6 +1073,12 @@ miscAged.forEach((brew) => {
 global.cooking = [];
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 const craftingTableRecipes = [
+  { item: "veggiesdelight:turnip_mutton_skewer", value: 60 }, 
+  { item: "veggiesdelight:vegetables_wrap", value: 195 }, 
+  { item: "veggiesdelight:vegetarian_burger", value: 188 }, 
+  { item: "veggiesdelight:zucchini_quiche", value: 939 }, 
+  { item: "veggiesdelight:stuffed_zucchini_boat", value: 270 }, 
+  { item: "veggiesdelight:steak_and_broccoli", value: 165 }, 
   { item: "vintagedelight:honey_mason_jar", value: 24 },
   { item: "veggiesdelight:zucchini_sandwich", value: 134 },
   { item: "veggiesdelight:turnip_salad", value: 60 },
@@ -1259,6 +1266,7 @@ fermentingRecipes.forEach((recipe) => {
 
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 const furnaceRecipes = [
+  { item: "veggiesdelight:roasted_zucchini", value: 72 },
   { item: "buzzier_bees:crystallized_honey_block", value: 24 },
   { item: "unusualfishmod:cooked_unusual_fillet", value: 64 },
   { item: "vintagedelight:ghost_charcoal", value: 36 },
@@ -1351,11 +1359,14 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: "veggiesdelight:rice_and_vegetables", value: 221 },
+  { item: "veggiesdelight:sweet_potato_pancakes", value: 336 },
+  { item: "society:mossberry_stew", value: 288 },
   { item: "society:mossberry_stew", value: 288 },
   { item: "windswept:goat_stew", value: 190 },
   { item: "windswept:chestnut_soup", value: 80 },
   { item: "windswept:christmas_pudding", value: 160 },
-  { item: "veggiesdelight:garlic_chicken_stew", value: 185 },
+  { item: "veggiesdelight:garlic_chicken_stew", value: 137 },
   { item: "society:chicken_tortilla_soup", value: 279 },
   { item: "society:mexican_street_corn", value: 162 },
   { item: "farmersdelight:tomato_sauce", value: 52 },
@@ -1433,7 +1444,7 @@ const cookingPotRecipes = [
   { item: "farmersdelight:pumpkin_soup", value: 140 },
   { item: "farmersdelight:stuffed_pumpkin_block", value: 300 },
   { item: "farmersdelight:dumplings", value: 102 },
-  { item: "veggiesdelight:cauliflower_soup", value: 132 },
+  { item: "veggiesdelight:cauliflower_soup", value: 84 },
   { item: "veggiesdelight:mashed_potatoes", value: 112 },
   { item: "veggiesdelight:potato_noodles", value: 44 },
   { item: "veggiesdelight:shakshouka", value: 165 },
@@ -1445,8 +1456,8 @@ const cookingPotRecipes = [
   { item: "veggiesdelight:carrot_juice", value: 42 },
   { item: "veggiesdelight:cacciatore", value: 105 },
   { item: "meadow:sausage_with_cheese", value: 168 },
-  { item: "veggiesdelight:cauliflower_kuku", value: 222 },
-  { item: "veggiesdelight:broccoli_soup", value: 196 },
+  { item: "veggiesdelight:cauliflower_kuku", value: 174 },
+  { item: "veggiesdelight:broccoli_soup", value: 148 },
   { item: "veggiesdelight:stuffed_zucchinis", value: 186 },
   { item: "veggiesdelight:turnip_water", value: 76 },
   { item: "veggiesdelight:turnip_beef_stew", value: 75 },

@@ -27,6 +27,7 @@
 				table_id: 2467450565259284777L
 				type: "random"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "198E9AF012E7021F"
@@ -69,8 +70,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.crafts_room.quest3.title}"
-			x: 0.0d
-			y: -1.3d
+			x: -0.028571428571424917d
+			y: -1.2142857142857224d
 		}
 		{
 			description: ["{ftbquests.chapter.crafts_room.quest4.description1}"]
@@ -119,6 +120,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "02A73FD2EF76B0FA"
@@ -191,6 +193,7 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			tasks: [
 				{
 					id: "6EE8BE6F502E597C"
@@ -215,8 +218,8 @@
 				}
 			]
 			title: "Winter Bundle"
-			x: 3.0d
-			y: 0.2d
+			x: 3.028571428571432d
+			y: 0.3285714285714221d
 		}
 		{
 			dependencies: [
@@ -267,6 +270,7 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			subtitle: "{ftbquests.chapter.crafts_room.quest6.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -277,8 +281,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.crafts_room.quest6.title}"
-			x: 0.0d
-			y: 1.0d
+			x: -0.028571428571424917d
+			y: 1.0714285714285694d
 		}
 		{
 			description: ["Only &65&r required for bundle completion."]
@@ -290,6 +294,7 @@
 				item: "vintagedelight:magic_peanut"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "4DDAC0F27F56E261"
@@ -328,8 +333,8 @@
 				}
 			]
 			title: "Foraging Bundle"
-			x: -1.5d
-			y: -0.5d
+			x: -1.5428571428571445d
+			y: -0.44285714285715017d
 		}
 		{
 			description: ["Only &65&r required for bundle completion."]
@@ -341,6 +346,7 @@
 				item: "society:artifact_trove"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "61374B75325BA963"
@@ -393,8 +399,8 @@
 				}
 			]
 			title: "Brewing Bundle"
-			x: -3.0d
-			y: 0.2d
+			x: -3.057142857142857d
+			y: 0.29999999999999716d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.crafts_room.subtitle0}"]

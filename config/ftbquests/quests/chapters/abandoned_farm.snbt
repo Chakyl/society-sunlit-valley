@@ -36,6 +36,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "476FF1529844DA7D"
@@ -116,8 +117,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.abandoned_farm.quest1.title}"
-			x: 0.0d
-			y: -1.3d
+			x: -0.028571428571424917d
+			y: -1.2714285714285793d
 		}
 		{
 			dependencies: ["661A3A466ABF29BA"]
@@ -155,6 +156,7 @@
 					type: "command"
 				}
 			]
+			shape: "none"
 			subtitle: "{ftbquests.chapter.abandoned_farm.quest2.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -165,8 +167,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.abandoned_farm.quest2.title}"
-			x: 0.0d
-			y: 1.0d
+			x: -0.028571428571424917d
+			y: 1.0999999999999872d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.abandoned_farm.subtitle0}"]

@@ -58,6 +58,7 @@ const crystals = [
   { item: "minecraft:amethyst_shard", time: 1 },
   { item: "minecraft:prismarine_crystals", time: 1 },
   { item: "minecraft:quartz", time: 1 },
+  { item: "society:spinel", time: 6 },
 ];
 crystals.forEach((crystal) => {
   global.crystalariumCrystals.set(crystal.item, {

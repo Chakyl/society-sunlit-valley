@@ -27,6 +27,7 @@
 				item: "dew_drop_farmland_growth:weak_fertilizer"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "0B35C5DE8BB5F9F6"
@@ -50,8 +51,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.pantry.quest1.title}"
-			x: -3.0d
-			y: 0.2d
+			x: -3.057142857142857d
+			y: 0.3285714285714221d
 		}
 		{
 			icon: "supplementaries:present_red"
@@ -62,6 +63,7 @@
 				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "2DCE90F8655627E2"
@@ -85,8 +87,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.pantry.quest2.title}"
-			x: -1.5d
-			y: -0.5d
+			x: -1.5428571428571445d
+			y: -0.44285714285715017d
 		}
 		{
 			icon: "supplementaries:present_orange"
@@ -97,6 +99,7 @@
 				item: "society:preserves_jar"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "10528A18EFA1224B"
@@ -121,7 +124,7 @@
 			]
 			title: "{ftbquests.chapter.pantry.quest3.title}"
 			x: 0.0d
-			y: -1.3d
+			y: -1.2142857142857224d
 		}
 		{
 			icon: "supplementaries:present_purple"
@@ -132,6 +135,7 @@
 				table_id: 9002246533416223198L
 				type: "random"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "6311F3FAC9E5755D"
@@ -196,8 +200,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.pantry.quest4.title}"
-			x: 1.5d
-			y: -0.5d
+			x: 1.4857142857142875d
+			y: -0.4714285714285751d
 		}
 		{
 			description: ["{ftbquests.chapter.pantry.quest5.description1}"]
@@ -210,6 +214,7 @@
 				item: "minecraft:sniffer_egg"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					count: 5L
@@ -277,8 +282,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.pantry.quest5.title}"
-			x: 3.0d
-			y: 0.2d
+			x: 2.999999999999993d
+			y: 0.3285714285714221d
 		}
 		{
 			dependencies: [
@@ -312,6 +317,7 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			subtitle: "{ftbquests.chapter.pantry.quest6.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -322,8 +328,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.pantry.quest6.title}"
-			x: 0.0d
-			y: 1.0d
+			x: -0.05714285714285694d
+			y: 1.0714285714285694d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.pantry.subtitle0}"]

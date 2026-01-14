@@ -1,7 +1,11 @@
 console.info("[SOCIETY] plushieMechanics.js loaded");
 
 BlockEvents.placed(global.plushies, (e) => {
-  const plushieNbt = e.player.getHeldItem("main_hand").getNbt();
+  let item = e.player.getHeldItem("main_hand");
+  let plushieNbt;
+  if (item.id !== e.block.id) item = e.player.getHeldItem("off_hand");
+  if (item.id !== e.block.id) return;
+  plushieNbt = item.getNbt();
   if (plushieNbt) {
     let nbt = e.block.getEntityData();
     nbt.merge({
@@ -49,12 +53,16 @@ BlockEvents.broken(global.plushies, (e) => {
 });
 
 BlockEvents.broken("whimsy_deco:sunlit_singing_frog", (e) => {
-  const { block } = e;
-  let nbt = e.block.getEntityData();
+  const { block, server } = e;
+  const { x, y, z } = block;
+  let nbt = block.getEntityData();
   const { type, quest_id, affection, quality, animal } = nbt.data;
   let baseItem = Item.of(
-    block.id,
+    "whimsy_deco:adv_singing_frog_plushie",
     `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
+  );
+  server.runCommandSilent(
+    `execute positioned ${x} ${y} ${z} run stopsound @e[type=player,distance=..4] block`
   );
   block.popItem(
     animal

@@ -26,6 +26,7 @@
 				item: "simplehats:hatbag_epic"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
 				count: 4L
 				id: "22FC2E88EA6ABB6A"
@@ -33,8 +34,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.vault.quest1.title}"
-			x: -3.0d
-			y: 0.2d
+			x: -3.085714285714289d
+			y: 0.3285714285714221d
 		}
 		{
 			icon: "supplementaries:present_orange"
@@ -45,6 +46,7 @@
 				item: "dew_drop_farmland_growth:high_quality_fertilizer"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
 				count: 2L
 				id: "393D8C55AE6556DC"
@@ -52,8 +54,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.vault.quest2.title}"
-			x: -1.5d
-			y: -0.5d
+			x: -1.5428571428571445d
+			y: -0.5000000000000071d
 		}
 		{
 			icon: "supplementaries:present_yellow"
@@ -63,6 +65,7 @@
 				item: "society:charging_rod"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
 				count: 4L
 				id: "3E532DD7361F4599"
@@ -81,14 +84,15 @@
 				item: "society:crystalarium"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
 				id: "4FE5D5E3C4364207"
 				item: "numismatics:sun"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.vault.quest4.title}"
-			x: 3.0d
-			y: 0.2d
+			x: 3.028571428571432d
+			y: 0.29999999999999716d
 		}
 		{
 			dependencies: [
@@ -134,6 +138,7 @@
 					type: "command"
 				}
 			]
+			shape: "none"
 			subtitle: "{ftbquests.chapter.vault.quest5.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -144,8 +149,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.vault.quest5.title}"
-			x: 0.0d
-			y: 1.0d
+			x: -0.05714285714285694d
+			y: 1.0142857142857125d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.vault.subtitle0}"]

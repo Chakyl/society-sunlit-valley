@@ -5,9 +5,90 @@
     },
     {
       "stack": "item:society:milk_pail"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "society:blueberry_preserves",
+        "amount": 16
+      }
     }
   ],
   "lookup_history": [
+    "item:via_romana:charting_map",
+    "item:botania:auto_crafting_halo",
+    "item:cluttered:blue_mushroom_sign",
+    "item:veggiesdelight:steak_and_broccoli",
+    "item:farmersdelight:pie_crust",
+    "item:veggiesdelight:roasted_zucchini",
+    "item:veggiesdelight:turnip_mutton_skewer",
+    "item:veggiesdelight:sweet_potato_pancakes",
+    "item:veggiesdelight:garlic_chicken_stew",
+    "item:veggiesdelight:fermented_garlic_honey",
+    "item:veggiesdelight:cauliflower_soup",
+    "item:veggiesdelight:garlic_rice_with_cauliflower",
+    "item:veggiesdelight:broccoli_soup",
+    "item:farm_and_charm:yeast",
+    "item:veggiesdelight:sweet_potato_dough",
+    "#item:forge:eggs",
+    "#item:forge:vegetables",
+    "item:veggiesdelight:rice_and_vegetables",
+    "item:veggiesdelight:stuffed_zucchini_boat",
+    "item:veggiesdelight:zucchini_quiche",
+    [
+      "item:candlelight:pork_ribs",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
+      "item:minecraft:cooked_porkchop",
+      "item:farmersdelight:cooked_bacon",
+      "#item:forge:cooked_chicken",
+      "#item:forge:cooked_beef",
+      "#item:forge:cooked_mutton"
+    ],
+    "#item:c:cheese",
+    "item:veggiesdelight:vegetarian_burger",
+    "#item:forge:bread",
+    "item:veggiesdelight:cooked_vegetarian_patty",
+    "item:veggiesdelight:raw_vegetarian_patty",
+    [
+      "#item:forge:crops/zucchini",
+      "#item:forge:crops/cauliflower",
+      "#item:forge:crops/potato"
+    ],
+    "#item:forge:grain",
+    "#item:forge:cabbage",
+    "item:veggiesdelight:vegetables_wrap",
+    [
+      "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
+      "#item:forge:mushrooms"
+    ],
+    "item:veggiesdelight:smoked_bellpepper",
+    [
+      "item:veggiesdelight:broccoli",
+      "#item:forge:cabbage"
+    ],
+    "item:minecraft:cooked_mutton",
+    "#item:forge:cooked_mutton",
+    "item:veggiesdelight:lasagna_pan",
+    "item:candlelight:lasagne",
+    "item:veggiesdelight:stuffed_bellpeppers_block",
+    {
+      "type": "item",
+      "id": "society:truffle",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 6
+    },
+    "item:society:crystalarium",
+    "item:oreganized:lead_block",
+    "item:society:prismatic_shard",
+    {
+      "type": "item",
+      "id": "minecraft:ochre_froglight",
+      "amount": 8
+    },
+    "item:society:artifact_trove",
+    "item:minecraft:oak_log",
     {
       "type": "item",
       "id": "society:mossberry_preserves",
@@ -62,11 +143,6 @@
     ],
     {
       "type": "item",
-      "id": "veggiesdelight:stuffed_bellpeppers_block",
-      "amount": 5
-    },
-    {
-      "type": "item",
       "id": "society:blueberry",
       "amount": 702
     },
@@ -103,8 +179,6 @@
       "id": "society:wine_keg",
       "amount": 7
     },
-    "item:oreganized:lead_block",
-    "item:society:crystalarium",
     "item:vinery:stal_wine",
     "item:society:aged_stal_wine",
     {
@@ -178,8 +252,6 @@
       "id": "atmospheric:currant_muffin",
       "amount": 16
     },
-    "item:veggiesdelight:smoked_bellpepper",
-    "item:veggiesdelight:fermented_garlic_honey",
     "item:veggiesdelight:broccoli",
     "item:veggiesdelight:turnip_seeds",
     "item:veggiesdelight:garlic",
@@ -194,7 +266,6 @@
     "item:veggiesdelight:sweet_potato_pie",
     "item:veggiesdelight:sweet_potato_pie_slice",
     "item:veggiesdelight:sweet_potato_cupcake",
-    "item:veggiesdelight:sweet_potato_pancakes",
     "item:dew_drop_farmland_growth:diamond_sprinkler",
     "item:dew_drop_farmland_growth:gold_sprinkler",
     "item:dew_drop_farmland_growth:iron_sprinkler",
@@ -312,7 +383,6 @@
     "item:minecraft:quartz",
     "item:botania:mana_diamond",
     "item:society:ruby",
-    "item:society:prismatic_shard",
     "item:society:aquamarine",
     "item:minecraft:prismarine_crystals",
     "item:society:sparkstone",
@@ -522,7 +592,6 @@
     "item:beautify:lamp_jar",
     "item:longwings:glass_jar",
     "item:minecraft:torchflower",
-    "item:society:truffle",
     "item:beachparty:coconut_open",
     "item:minecraft:torchflower_seeds",
     "item:meadow:oil_lantern",
@@ -612,7 +681,6 @@
     "item:cluttered:willow_sapling",
     "item:perfectplushies:adv_lion_cub_plushie{affection:3,quality_food:{quality:0},quest_id:1,type:4}",
     "item:minecraft:arrow",
-    "item:society:artifact_trove",
     "item:candlelight:chefs_boots{Damage:0}",
     "item:candlelight:chefs_pants{Damage:0}",
     "item:autumnity:turkey_spawn_egg",
@@ -732,7 +800,6 @@
     "item:create:zinc_ingot",
     "item:society:feeding_trough",
     "item:windswept:chestnut_sapling",
-    "item:minecraft:ochre_froglight",
     {
       "type": "item",
       "id": "minecraft:flint",
@@ -781,7 +848,6 @@
       "id": "minecraft:name_tag",
       "amount": 2
     },
-    "item:veggiesdelight:cauliflower_soup",
     "item:farmersdelight:cutting_board",
     "#item:forge:crops/cauliflower",
     {
@@ -968,7 +1034,6 @@
     "item:minecraft:spruce_planks",
     "item:society:dried_banana",
     "item:society:banana_karenina",
-    "item:candlelight:lasagne{StoredEffects:[]}",
     "item:vintagedelight:cucumber_seeds",
     "item:candlelight:fillet_steak",
     "item:candlelight:khinkali",
@@ -1429,42 +1494,12 @@
     "item:cluttered:kitchen_set_pink_cabinet_open",
     "item:cluttered:yellow_notepad",
     "item:cluttered:puzzle_piece_table_pastel_pink",
-    "item:cluttered:endtable_sunshine",
-    "item:cluttered:teddy_bear",
-    "item:cluttered:record_player_white",
-    "item:cluttered:plant_ladder",
-    "item:cluttered:mini_hanging_terrariums",
-    "item:cluttered:hanging_plant_pot_flowers",
-    "item:cluttered:rose_end_table",
-    "item:cluttered:puzzle_piece_table_yellow",
-    "item:cluttered:polaroids_c",
-    "item:cluttered:paint_water_jar",
-    "item:cluttered:darkwood_cabinet",
-    "item:cluttered:kitchen_set_white_cabinet_outer_corner",
-    "item:cluttered:kitchen_set_yellow_counter_outer_corner_right",
-    "item:cluttered:kitchen_set_yellow_cabinet_glass",
-    "item:cluttered:kitchen_set_yellow_counter",
-    "item:meadow:piece_of_warped_cheese",
-    "item:society:large_warped_milk",
-    "item:society:grain_milk",
-    "item:minecraft:turtle_egg",
-    "item:society:animal_feed_sack",
-    "item:society:large_duck_egg",
-    "item:society:large_sheep_milk",
-    "item:society:large_egg",
-    "item:windswept:light_blue_pinecone_shingle_stairs",
-    "item:windswept:light_blue_pinecone_shingle_slab",
-    "item:cluttered:chalcedony_polished",
-    "item:cluttered:raw_chalcedony",
-    "item:cluttered:chalcedony_stairs",
-    "item:cluttered:chalcedony_pillar_doric",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:rotting\"}}",
-    "item:meadow:cobbled_limestone",
-    "item:minecraft:furnace",
-    "item:oreganized:electrum_ingot",
-    "item:minecraft:gold_ingot"
+    "item:cluttered:endtable_sunshine"
   ],
   "craft_history": [
+    "minecraft:kjs/society_crystalarium",
+    "oreganized:lead_block",
+    "minecraft:fletching_table",
     "minecraft:kjs/society_mushroom_log",
     "minecraft:kjs/society_preserves_jar",
     "minecraft:copper_block",
@@ -1476,8 +1511,6 @@
     "minecraft:iron_block",
     "minecraft:kjs/society_sunlit_pearl",
     "minecraft:kjs/society_wine_keg",
-    "oreganized:lead_block",
-    "minecraft:kjs/society_crystalarium",
     "vintagedelight:fermenting_jar",
     "farmersdelight:basket",
     "minecraft:kjs/society_loom",
@@ -1549,7 +1582,6 @@
     "sophisticatedbackpacks:copper_backpack",
     "minecraft:kjs/society_large_sheep_milk",
     "minecraft:gold_ingot_from_gold_block",
-    "minecraft:fletching_table",
     "farmersdelight:cutting_board",
     "vinery:grapevine_stem",
     "minecraft:shears",

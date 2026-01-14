@@ -32,6 +32,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "39BC4C648654AE4F"
@@ -61,8 +62,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.fish_tank.quest1.title}"
-			x: -3.0d
-			y: 0.2d
+			x: -3.085714285714289d
+			y: 0.27142857142856514d
 		}
 		{
 			icon: "supplementaries:present_blue"
@@ -72,6 +73,7 @@
 				item: "society:fish_smoker"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "1BFE309FC8ED472C"
@@ -95,8 +97,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.fish_tank.quest2.title}"
-			x: 0.0d
-			y: -1.3d
+			x: -0.028571428571424917d
+			y: -1.2714285714285793d
 		}
 		{
 			icon: "supplementaries:present_light_blue"
@@ -106,6 +108,7 @@
 				item: "vintagedelight:evaporator"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "5FF4C0CAA1EE6B48"
@@ -129,8 +132,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.fish_tank.quest3.title}"
-			x: 1.5d
-			y: -0.5d
+			x: 1.4571428571428555d
+			y: -0.5000000000000071d
 		}
 		{
 			icon: "supplementaries:present_green"
@@ -160,6 +163,7 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			tasks: [
 				{
 					id: "7A8F2C3A72DFA35B"
@@ -219,8 +223,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.fish_tank.quest4.title}"
-			x: 3.0d
-			y: 0.2d
+			x: 2.999999999999993d
+			y: 0.27142857142856514d
 		}
 		{
 			icon: "supplementaries:present_red"
@@ -231,6 +235,7 @@
 				item: "crabbersdelight:crab_trap"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "7065B41BA0E27103"
@@ -254,8 +259,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.fish_tank.quest5.title}"
-			x: -1.5d
-			y: -0.5d
+			x: -1.5428571428571445d
+			y: -0.4714285714285751d
 		}
 		{
 			dependencies: [
@@ -288,6 +293,7 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			subtitle: "{ftbquests.chapter.fish_tank.quest6.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -298,8 +304,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.fish_tank.quest6.title}"
-			x: 0.0d
-			y: 1.0d
+			x: -0.028571428571424917d
+			y: 1.0714285714285694d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.fish_tank.subtitle0}"]

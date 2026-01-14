@@ -23,7 +23,6 @@ ItemEvents.entityInteracted((e) => {
       errorString = "society.husbandry.sunlit_crystal.has_animal";
     }
     if (errorString) {
-      player.tell(Text.translatable(errorString).getString());
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,

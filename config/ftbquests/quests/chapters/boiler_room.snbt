@@ -60,6 +60,7 @@
 					type: "command"
 				}
 			]
+			shape: "none"
 			subtitle: "{ftbquests.chapter.boiler_room.quest1.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -70,8 +71,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.boiler_room.quest1.title}"
-			x: 0.0d
-			y: 1.0d
+			x: -0.028571428571424917d
+			y: 1.057142857142857d
 		}
 		{
 			icon: "supplementaries:present_purple"
@@ -81,6 +82,7 @@
 				item: "extractinator:extractinator"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "78A93D2099B01AF1"
@@ -104,8 +106,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.boiler_room.quest2.title}"
-			x: -3.0d
-			y: 0.2d
+			x: -3.1142857142857068d
+			y: 0.2857142857142705d
 		}
 		{
 			icon: "supplementaries:present_light_blue"
@@ -116,6 +118,7 @@
 				item: "society:omni_geode"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "0B110BED5FE81EBB"
@@ -134,8 +137,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.boiler_room.quest3.title}"
-			x: -1.5d
-			y: -0.5d
+			x: -1.5714285714285623d
+			y: -0.48571428571430175d
 		}
 		{
 			description: ["Only &63&r required for bundle completion."]
@@ -147,6 +150,7 @@
 				item: "society:relic_trove"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "6359E72D652B83E1"
@@ -344,6 +348,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					count: 8L
@@ -371,8 +376,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.boiler_room.quest5.title}"
-			x: 3.0d
-			y: 0.2d
+			x: 3.000000000000007d
+			y: 0.2857142857142705d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.boiler_room.subtitle0}"]
