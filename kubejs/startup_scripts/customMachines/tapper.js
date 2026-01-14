@@ -62,15 +62,6 @@ global.tapperRecipes = new Map([
     },
   ],
   [
-    "minecraft:birch_log",
-    {
-      leaves: ["minecraft:birch_log_leaves"],
-      output: ["4x verdantvibes:bracket_mushroom"],
-      fluidOutput: "create_central_kitchen:sap",
-      time: 2,
-    },
-  ],
-  [
     "mysticaloaktree:wise_oak",
     {
       leaves: ["minecraft:oak_leaves"],
@@ -124,7 +115,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.tapper.description").gray());
       item.modelJson({
-        parent: "society:block/tapper",
+        parent: "society:block/kubejs/tapper",
       });
     })
     .defaultState((state) => {
@@ -201,15 +192,15 @@ StartupEvents.registry("block", (event) => {
     }).blockstateJson = {
     multipart: [
       {
-        apply: { model: "society:block/tapper_particle" },
+        apply: { model: "society:block/kubejs/tapper_particle" },
       },
       {
         when: { mature: true },
-        apply: { model: "society:block/machine_done" },
+        apply: { model: "society:block/kubejs/machine_done" },
       },
       {
         when: { error: true },
-        apply: { model: "society:block/error" },
+        apply: { model: "society:block/kubejs/error" },
       },
     ].concat(getCardinalMultipartJsonBasic("tapper")),
   };

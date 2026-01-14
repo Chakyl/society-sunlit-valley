@@ -471,7 +471,9 @@ global.getOrFetchMood = (level, target, day, player) => {
   }
   return data.lastMood;
 };
-
+/**
+ * Plushie Trait related drops and mechanics
+ */
 global.getPlushieModifiers = (level, data, plushieBlock) => {
   let newDrops = [];
   let doubleDrops = false;
@@ -520,7 +522,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
       break;
     case 5:
       // Sunlit
-      if (roll < 0.1 * qualityMult) {
+      if (roll < (0.05 * qualityMult)) {
         newDrops.push(Item.of("society:sunlit_crystal"));
       }
       break;

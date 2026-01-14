@@ -1,32 +1,32 @@
 //priority: 100
-console.info("[SOCIETY] moonPylon.js loaded");
+console.info("[SOCIETY] moonStatue.js loaded");
 
-const pylonBuffs = [
-  "pylon_extra_ore",
-  "pylon_geode_roll",
-  "pylon_rope_reveal",
-  "pylon_remains",
-  "pylon_damage",
+const statueBuffs = [
+  "moon_extra_ore",
+  "moon_geode_roll",
+  "moon_rope_reveal",
+  "moon_remains",
+  "moon_damage",
 ];
-global.handleMoonPylonClick = (click) => {
+global.handleMoonStatueClick = (click) => {
   const { player, server, hand, block, level } = click;
 
-  if (player.stages.has("mining_mastery")) {
+  if (!player.isFake() && player.stages.has("mining_mastery")) {
     if (hand == "OFF_HAND") return;
     if (hand == "MAIN_HAND") {
       let day = global.getDay(level);
-      let dayData = player.persistentData.days.manaPylonDay;
+      let dayData = player.persistentData.days.moonStatueDay;
       if (dayData == undefined || dayData < day) {
         let selectedBuff =
-          pylonBuffs[Math.floor(Math.random() * pylonBuffs.length)];
+          statueBuffs[Math.floor(Math.random() * statueBuffs.length)];
         player.tell(
-          Text.translatable(`block.society.moon_pylon.announce`).aqua()
+          Text.translatable(`block.society.moon_statue.announce`).aqua()
         );
         player.tell(
-          Text.translatable(`block.society.moon_pylon.${selectedBuff}`).green()
+          Text.translatable(`block.society.moon_statue.${selectedBuff}`).green()
         );
-        player.persistentData.days.manaPylonDay = day;
-        pylonBuffs.forEach((buff) => {
+        player.persistentData.days.moonStatueDay = day;
+        statueBuffs.forEach((buff) => {
           player.stages.remove(buff);
         });
         player.stages.add(selectedBuff);
@@ -47,33 +47,35 @@ global.handleMoonPylonClick = (click) => {
         );
       } else {
         player.tell(
-          Text.translatable("block.society.moon_pylon.already_taken").red()
+          Text.translatable("block.society.moon_statue.already_taken").red()
         );
       }
     }
   } else
-    player.tell(Text.translatable("block.society.moon_pylon.no_mastery").red());
+    player.tell(Text.translatable("block.society.moon_statue.no_mastery").red());
 };
 StartupEvents.registry("block", (event) => {
   event
-    .create("society:moon_pylon", "cardinal")
-    .box(3, 0, 3, 13, 16, 13)
+    .create("society:moon_statue", "cardinal")
+    .displayName("Statue of The Moon Gnome")
     .defaultCutout()
     .soundType("stone")
     .hardness(4.5)
     .resistance(9.0)
+    .lightLevel(0.8)
     .requiresTool(false)
+    .model("society:block/kubejs/moon_statue")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(
-        Text.translatable("block.society.moon_pylon.description").gray()
+        Text.translatable("block.society.moon_statue.description").gray()
       );
       item.modelJson({
-        parent: "society:block/moon_pylon",
+        parent: "society:block/kubejs/moon_statue",
       });
     })
     .rightClick((click) => {
-      global.handleMoonPylonClick(click);
+      global.handleMoonStatueClick(click);
     });
 });

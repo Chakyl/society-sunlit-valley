@@ -97,10 +97,6 @@ ServerEvents.recipes((e) => {
     c: "minecraft:cobblestone",
     s: "meadow:alpine_salt",
   });
-  e.shaped("minecraft:bundle", [" s ", " l "], {
-    s: "minecraft:string",
-    l: "minecraft:leather",
-  });
   e.shaped("16x society:enriched_bone_meal", ["bbb", "bfb", "bbb"], {
     f: "farm_and_charm:fertilizer",
     b: "minecraft:bone_block",

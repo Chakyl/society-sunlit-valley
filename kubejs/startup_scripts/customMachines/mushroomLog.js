@@ -91,7 +91,7 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("block.society.mushroom_log.description").gray()
       );
       item.modelJson({
-        parent: "society:block/mushroom_log/mushroom_log_off",
+        parent: "society:block/kubejs/mushroom_log/mushroom_log_off",
       });
     })
     .defaultState((state) => {

@@ -1,4 +1,4 @@
-console.info("[SOCIETY] moonPylonDamage.js loaded");
+console.info("[SOCIETY] moonStatueDamage.js loaded");
 
 EntityEvents.hurt((e) => {
   const { server, level, entity, source } = e;
@@ -8,7 +8,7 @@ EntityEvents.hurt((e) => {
   if (
     source.player &&
     source.player.getType() === "minecraft:player" &&
-    source.player.stages.has("pylon_damage") &&
+    source.player.stages.has("moon_damage") &&
     Math.random() < 0.05
   ) {
     entity.attack(100);

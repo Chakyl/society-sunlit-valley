@@ -155,7 +155,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.ancient_cask.description").gray());
       item.tooltip(Text.translatable("block.society.ancient_cask.description.warn").red());
       item.modelJson({
-        parent: "society:block/ancient_cask/ancient_cask",
+        parent: "society:block/kubejs/ancient_cask/ancient_cask",
       });
     })
 

@@ -1,4 +1,6 @@
 global.removedItems = [
+  "minecraft:brown_egg",
+  "minecraft:blue_egg",
   // 4.1 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
   "cluttered:pastel_bunny_plushie",

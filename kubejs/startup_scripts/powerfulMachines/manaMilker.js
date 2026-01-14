@@ -24,10 +24,10 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("tooltip.society.area", `10x10x10`).green()
       );
       item.modelJson({
-        parent: "society:block/mana_milker",
+        parent: "society:block/kubejs/mana_milker",
       });
     })
-    .model("society:block/mana_milker")
+    .model("society:block/kubejs/mana_milker")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(1200, 0, (entity) => {

@@ -59,10 +59,10 @@ StartupEvents.registry("block", (event) => {
       );
       item.tooltip(Text.translatable("tooltip.society.area", `3x3`).green());
       item.modelJson({
-        parent: "society:block/mana_clock",
+        parent: "society:block/kubejs/mana_clock",
       });
     })
-    .model("society:block/mana_clock")
+    .model("society:block/kubejs/mana_clock")
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(200, 0, (entity) => global.manaClockTick(entity)),
         blockInfo.attachCapability(

@@ -49,10 +49,10 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.shipping_bin_monitor.description").gray());
       item.modelJson({
-        parent: "society:block/shipping_bin_monitor",
+        parent: "society:block/kubejs/shipping_bin_monitor",
       });
     })
-    .model("society:block/shipping_bin_monitor")
+    .model("society:block/kubejs/shipping_bin_monitor")
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ value: 0 });
       blockInfo.serverTick(200, 0, (entity) => global.runShippingBinMonitor(entity));

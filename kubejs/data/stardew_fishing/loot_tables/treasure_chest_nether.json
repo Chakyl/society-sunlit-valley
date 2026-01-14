@@ -8,16 +8,21 @@
         {
           "type": "stardew_fishing:optional",
           "name": "aquaculture:lockbox",
-          "weight": 2
+          "weight": 4
         },
         {
           "type": "stardew_fishing:optional",
           "name": "aquaculture:box",
-          "weight": 3
+          "weight": 6
         },
         {
           "type": "stardew_fishing:optional",
           "name": "aquaculture:treasure_chest",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:heart_of_neptunium",
           "weight": 1
         }
       ]

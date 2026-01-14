@@ -9,7 +9,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.juice_inserter.description").gray());
       item.modelJson({
-        parent: "society:block/juice_inserter",
+        parent: "society:block/kubejs/juice_inserter",
       });
     })
     .blockEntity((blockInfo) => {
@@ -27,7 +27,7 @@ StartupEvents.registry("block", (event) => {
     }).blockstateJson = {
     multipart: [
       {
-        apply: { model: "society:block/juice_inserter_particle" },
+        apply: { model: "society:block/kubejs/juice_inserter_particle" },
       },
     ].concat(getCardinalMultipartJsonBasic("juice_inserter")),
   };

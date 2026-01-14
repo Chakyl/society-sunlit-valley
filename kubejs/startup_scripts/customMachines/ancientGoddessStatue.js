@@ -10,6 +10,7 @@ StartupEvents.registry("block", (event) => {
     .hardness(4.5)
     .resistance(9.0)
     .requiresTool(false)
+    .model("society:block/kubejs/ancient_goddess_statue")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
@@ -24,7 +25,7 @@ StartupEvents.registry("block", (event) => {
         ).red()
       );
       item.modelJson({
-        parent: "society:block/ancient_goddess_statue",
+        parent: "society:block/kubejs/ancient_goddess_statue",
       });
     })
     .rightClick((click) => {
@@ -99,40 +100,5 @@ StartupEvents.registry("block", (event) => {
             "block.society.ancient_goddess_statue.no_skill"
           ).red()
         );
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    })
 });

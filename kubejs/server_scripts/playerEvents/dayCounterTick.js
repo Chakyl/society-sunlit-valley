@@ -1,10 +1,10 @@
 console.info("[SOCIETY] dayCounterTick.js loaded");
-const pylonBuffs = [
-  "pylon_extra_ore",
-  "pylon_geode_roll",
-  "pylon_rope_reveal",
-  "pylon_remains",
-  "pylon_damage",
+const statueBuffs = [
+  "moon_extra_ore",
+  "moon_geode_roll",
+  "moon_rope_reveal",
+  "moon_remains",
+  "moon_damage",
 ];
 PlayerEvents.tick((e) => {
   const { player, level } = e;
@@ -13,14 +13,14 @@ PlayerEvents.tick((e) => {
     player.age % 400 == 0 &&
     player.stages.has("mining_mastery") &&
     player.persistentData.days &&
-    player.persistentData.days.manaPylonDay
+    player.persistentData.days.moonStatueDay
   ) {
-    let dayData = player.persistentData.days.manaPylonDay;
+    let dayData = player.persistentData.days.moonStatueDay;
     if (dayData != -1 && global.getDay(level) != dayData) {
-      pylonBuffs.forEach((buff) => {
+      statueBuffs.forEach((buff) => {
         player.stages.remove(buff);
       });
-      player.persistentData.days.manaPylonDay = -1;
+      player.persistentData.days.moonStatueDay = -1;
     }
   }
 });

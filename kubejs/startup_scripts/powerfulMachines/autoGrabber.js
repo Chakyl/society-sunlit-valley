@@ -273,10 +273,10 @@ StartupEvents.registry("block", (event) => {
         ).lightPurple()
       );
       item.modelJson({
-        parent: "society:block/auto_grabber",
+        parent: "society:block/kubejs/auto_grabber",
       });
     })
-    .model("society:block/auto_grabber")
+    .model("society:block/kubejs/auto_grabber")
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state.set(booleanProperty.create("upgraded"), false);

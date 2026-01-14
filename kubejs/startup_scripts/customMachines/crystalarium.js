@@ -81,7 +81,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.crystalarium.description").gray());
       item.modelJson({
-        parent: "society:block/crystalarium/crystalarium",
+        parent: "society:block/kubejs/crystalarium/crystalarium",
       });
     })
     .defaultState((state) => {

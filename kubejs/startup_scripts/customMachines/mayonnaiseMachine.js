@@ -62,7 +62,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.mayonnaise_machine.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
       item.modelJson({
-        parent: "society:block/mayonnaise_machine/mayonnaise_machine_off",
+        parent: "society:block/kubejs/mayonnaise_machine/mayonnaise_machine_off",
       });
     })
     .defaultState((state) => {

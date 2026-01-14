@@ -46,10 +46,10 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.quality_washer.description.warn").red());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
       item.modelJson({
-        parent: "society:block/quality_washer",
+        parent: "society:block/kubejs/quality_washer",
       });
     })
-    .model("society:block/quality_washer")
+    .model("society:block/kubejs/quality_washer")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(20, 0, (entity) => {

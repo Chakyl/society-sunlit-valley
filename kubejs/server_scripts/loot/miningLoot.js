@@ -428,18 +428,18 @@ LootJS.modifiers((e) => {
 
   addAdditionalGeodeRoll(e, "excavator");
 
-  // Mastery Moon Pylon
+  // Mastery Moon Statue
   const remains = Ingredient.of("#society:fossilish").itemIds;
   const weightedRemains = [];
   remains.forEach((remain) =>
     weightedRemains.push(Item.of(remain).withChance(1))
   );
 
-  addWeightedMiningLootToAllOres(e, "pylon_remains", 0.05, remains);
-  addAdditionalGeodeRoll(e, "pylon_geode_roll");
+  addWeightedMiningLootToAllOres(e, "moon_remains", 0.05, remains);
+  addAdditionalGeodeRoll(e, "moon_geode_roll");
 
   e.addBlockLootModifier(overworldOres)
-    .hasAnyStage("pylon_extra_ore")
+    .hasAnyStage("moon_extra_ore")
     .modifyLoot(Ingredient.all, (itemStack) => {
       if (itemStack.hasTag("forge:raw_materials"))
         itemStack.setCount(itemStack.getCount() + 1);

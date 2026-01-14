@@ -982,7 +982,7 @@ global.handleSkullCavernRegen = (level, block) => {
   }
 };
 const getCardinalMultipartJsonBasic = (name) => {
-  const path = `society:block/${name}`;
+  const path = `society:block/kubejs/${name}`;
   return [
     {
       when: { facing: "north" },
@@ -1004,7 +1004,7 @@ const getCardinalMultipartJsonBasic = (name) => {
 };
 
 const getCardinalMultipartJsonBasicUpgradable = (name, upgraded) => {
-  const path = `society:block/${name}`;
+  const path = `society:block/kubejs/${name}`;
   return [
     {
       when: { facing: "north", upgraded: upgraded },
@@ -1145,11 +1145,11 @@ global.getCropQuality = (crop) => {
 };
 
 const getCardinalMultipartJson = (name, disableExclamation) => {
-  const path = `society:block/${name}/${name}`;
+  const path = `society:block/kubejs/${name}/${name}`;
   let exclamationJson = [
     {
       when: { mature: true },
-      apply: { model: "society:block/machine_done" },
+      apply: { model: "society:block/kubejs/machine_done" },
     },
   ];
   if (disableExclamation) {
@@ -1225,11 +1225,11 @@ const getCardinalMultipartJson = (name, disableExclamation) => {
   ];
   return [
     {
-      apply: { model: `society:block/${name}/${name}_particle` },
+      apply: { model: `society:block/kubejs/${name}/${name}_particle` },
     },
     {
       when: { mature: true },
-      apply: { model: "society:block/machine_done" },
+      apply: { model: "society:block/kubejs/machine_done" },
     },
     {
       when: { working: true, upgraded: false, facing: "north" },

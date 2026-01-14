@@ -16,10 +16,11 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
+    .model("society:block/kubejs/deluxe_worm_farm")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.deluxe_worm_farm.description").gray());
       item.modelJson({
-        parent: "society:block/deluxe_worm_farm",
+        parent: "society:block/kubejs/deluxe_worm_farm",
       });
     })
     .defaultState((state) => {
@@ -92,31 +93,31 @@ StartupEvents.registry("block", (event) => {
     multipart: [
       {
         when: { upgraded: false },
-        apply: { model: "society:block/deluxe_worm_farm_base" },
+        apply: { model: "society:block/kubejs/deluxe_worm_farm_base" },
       },
       {
         when: { upgraded: true },
-        apply: { model: "society:block/deluxe_worm_farm_base_upgraded" },
+        apply: { model: "society:block/kubejs/deluxe_worm_farm_base_upgraded" },
       },
       {
         when: { working: true, upgraded: false },
-        apply: { model: "society:block/deluxe_worm_farm" },
+        apply: { model: "society:block/kubejs/deluxe_worm_farm" },
       },
       {
         when: { mature: true, upgraded: false },
-        apply: { model: "society:block/deluxe_worm_farm" },
+        apply: { model: "society:block/kubejs/deluxe_worm_farm" },
       },
       {
         when: { working: true, upgraded: true },
-        apply: { model: "society:block/deluxe_worm_farm_upgraded" },
+        apply: { model: "society:block/kubejs/deluxe_worm_farm_upgraded" },
       },
       {
         when: { mature: true, upgraded: true },
-        apply: { model: "society:block/deluxe_worm_farm_upgraded" },
+        apply: { model: "society:block/kubejs/deluxe_worm_farm_upgraded" },
       },
       {
         when: { mature: true },
-        apply: { model: "society:block/machine_done" },
+        apply: { model: "society:block/kubejs/machine_done" },
       },
     ],
   };

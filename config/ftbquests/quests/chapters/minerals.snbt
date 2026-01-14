@@ -9,6 +9,7 @@
 		{
 			height: 5.5d
 			image: "society:textures/gui/background_brown.png"
+			order: 2
 			rotation: 0.0d
 			width: 14.0d
 			x: 3.8035714285714306d
@@ -17,7 +18,7 @@
 		{
 			height: 5.5d
 			image: "society:textures/gui/background_light_blue.png"
-			order: 1
+			order: 2
 			rotation: 0.0d
 			width: 14.0d
 			x: 8.79761904761903d
@@ -26,10 +27,11 @@
 		{
 			height: 5.5d
 			image: "society:textures/gui/background_red.png"
+			order: 2
 			rotation: 0.0d
 			width: 14.0d
-			x: 3.6869047619047848d
-			y: 6.950340136054372d
+			x: 3.739285714285714d
+			y: 6.99672619047616d
 		}
 		{
 			height: 3.0d
@@ -52,6 +54,7 @@
 		{
 			height: 3.0d
 			image: "society:textures/gui/seal_red.png"
+			order: 5
 			rotation: 0.0d
 			width: 3.0d
 			x: 8.613095238095227d
@@ -63,8 +66,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 12.0d
-			y: 1.0d
+			x: 12.187500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -72,8 +75,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 10.5d
-			y: 1.0d
+			x: 10.687500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -81,8 +84,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 9.0d
-			y: 1.0d
+			x: 9.187500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -90,8 +93,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 7.5d
-			y: 1.0d
+			x: 7.687500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -99,8 +102,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 12.0d
-			y: 2.0d
+			x: 12.187500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -108,8 +111,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 10.5d
-			y: 2.0d
+			x: 10.687500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -117,33 +120,17 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 9.0d
-			y: 2.0d
+			x: 9.187500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: -0.5d
-			y: 8.0d
-		}
-		{
-			height: 1.25d
-			image: "society:textures/gui/circle_white.png"
-			order: 2
-			rotation: 0.0d
-			width: 1.25d
-			x: 7.5d
-			y: 2.0d
-		}
-		{
-			height: 1.25d
-			image: "society:textures/gui/circle_white.png"
-			rotation: 0.0d
-			width: 1.25d
-			x: 6.0d
-			y: 2.0d
+			x: -0.3601190476190297d
+			y: 7.941113945578188d
 		}
 		{
 			height: 1.25d
@@ -151,8 +138,16 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 6.0d
-			y: 1.0d
+			x: 7.687500000000021d
+			y: 1.9887329931972317d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.187500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -160,8 +155,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.5d
-			y: 1.0d
+			x: 6.187500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -169,8 +164,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 6.0d
-			y: 3.0d
+			x: 4.687500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -178,8 +173,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 7.5d
-			y: 3.0d
+			x: 6.187500000000021d
+			y: 2.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -187,8 +182,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.5d
-			y: 2.0d
+			x: 7.687500000000021d
+			y: 2.9887329931972317d
 		}
 		{
 			height: 1.25d
@@ -196,24 +191,35 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.5d
-			y: 3.0d
+			x: 4.687500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.25d
-			x: 7.0d
-			y: -4.0d
+			x: 4.687500000000021d
+			y: 2.9887329931972317d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 5.5d
-			y: -4.0d
+			x: 7.235119047619065d
+			y: -4.154124149659911d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.735119047619065d
+			y: -4.154124149659911d
 		}
 		{
 			height: 2.0d
@@ -221,120 +227,134 @@
 			order: 6
 			rotation: 0.0d
 			width: 2.0d
-			x: 8.534438775510203d
-			y: -1.4818877551020577d
+			x: 8.57015306122451d
+			y: -1.4653486394558186d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.0d
-			y: -4.0d
+			x: 4.235119047619065d
+			y: -4.154124149659911d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 2.5d
-			y: -4.0d
+			x: 2.735119047619065d
+			y: -4.154124149659911d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 1.0d
-			y: -4.0d
+			x: 1.2351190476190652d
+			y: -4.154124149659911d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: -0.5d
-			y: -4.0d
+			x: -0.2648809523809348d
+			y: -4.154124149659911d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: -0.5d
-			y: -3.0d
+			x: -0.2648809523809348d
+			y: -3.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 1.0d
-			y: -3.0d
+			x: 1.2351190476190652d
+			y: -3.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 2.5d
-			y: -3.0d
+			x: 2.735119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.0d
-			y: -3.0d
+			x: 4.235119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 5.5d
-			y: -3.0d
+			x: 5.735119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 7.0d
-			y: -3.0d
+			x: 7.235119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: -0.5d
-			y: -2.0d
+			x: -0.2648809523809348d
+			y: -2.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 1.0d
-			y: -2.0d
+			x: 1.2351190476190652d
+			y: -2.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 2.5d
-			y: -2.0d
+			x: 2.735119047619065d
+			y: -2.1541241496599106d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.0d
-			y: -2.0d
+			x: 4.235119047619065d
+			y: -2.1541241496599106d
 		}
 		{
 			height: 2.0d
@@ -342,12 +362,13 @@
 			order: 5
 			rotation: 0.0d
 			width: 2.0d
-			x: 13.735119047619051d
-			y: 3.7204931972788984d
+			x: 13.76743197278914d
+			y: 3.7591411564625403d
 		}
 		{
 			height: 2.0d
 			image: "society:textures/gui/circle_white.png"
+			order: 6
 			rotation: 0.0d
 			width: 2.0d
 			x: 8.61607142857143d
@@ -356,103 +377,115 @@
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: -0.5d
-			y: 6.0d
+			x: -0.3601190476190297d
+			y: 5.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 1.0d
-			y: 6.0d
+			x: 1.1398809523809703d
+			y: 5.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 2.5d
-			y: 6.0d
+			x: 2.6398809523809703d
+			y: 5.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.0d
-			y: 6.0d
+			x: 4.13988095238097d
+			y: 5.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 5.5d
-			y: 6.0d
+			x: 5.63988095238097d
+			y: 5.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 7.0d
-			y: 6.0d
+			x: 7.13988095238097d
+			y: 5.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 1.0d
-			y: 7.0d
+			x: 1.1398809523809703d
+			y: 6.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: -0.5d
-			y: 7.0d
+			x: -0.3601190476190297d
+			y: 6.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 4.0d
-			y: 7.0d
+			x: 4.13988095238097d
+			y: 6.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 2.5d
-			y: 7.0d
+			x: 2.6398809523809703d
+			y: 6.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 5.5d
-			y: 7.0d
+			x: 5.63988095238097d
+			y: 6.941113945578188d
 		}
 		{
 			height: 1.25d
 			image: "society:textures/gui/circle_white.png"
+			order: 4
 			rotation: 0.0d
 			width: 1.25d
-			x: 7.0d
-			y: 7.0d
+			x: 7.13988095238097d
+			y: 6.941113945578188d
 		}
 		{
 			height: 3.0d
 			image: "society:textures/gui/seal_gray.png"
-			order: 1
+			order: 4
 			rotation: 0.0d
 			width: 3.0d
 			x: 0.6470238095238159d
@@ -461,26 +494,31 @@
 		{
 			height: 4.0d
 			image: "society:textures/gui/sheet.png"
+			order: 1
 			rotation: 12.0d
 			width: 4.0d
 			x: 0.644047619047619d
 			y: 1.85510204081627d
 		}
 		{
+			dependency: "329C4304D2EDEE72"
 			height: 5.5d
 			image: "society:textures/gui/crystals_blue.png"
+			order: 1
 			rotation: 0.0d
 			width: 8.2d
-			x: 12.950000000000003d
-			y: -1.383588435374186d
+			x: 13.0d
+			y: -1.0d
 		}
 		{
+			dependency: "378EF12075D01F1C"
 			height: 5.5d
 			image: "society:textures/gui/crystals_red.png"
+			order: 4
 			rotation: 0.0d
 			width: 8.2d
-			x: -0.5988095238094999d
-			y: 9.407482993197242d
+			x: -0.46785714285716296d
+			y: 9.42797619047618d
 		}
 		{
 			height: 1.25d
@@ -488,8 +526,16 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.25d
+			x: 6.187500000000021d
+			y: 1.9887329931972317d
+		}
+		{
+			height: 40.0d
+			image: "society:textures/gui/cave_background.png"
+			rotation: 0.0d
+			width: 40.0d
 			x: 6.0d
-			y: 2.0d
+			y: 1.5d
 		}
 	]
 	order_index: 3
@@ -503,8 +549,8 @@
 				item: "society:limestone_pebble"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: -0.2648809523809348d
+			y: -4.154124149659911d
 		}
 		{
 			id: "37AEB6307309A93E"
@@ -514,8 +560,8 @@
 				item: "society:mudstone"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 1.2351190476190652d
+			y: -4.154124149659911d
 		}
 		{
 			id: "161E0C0ECC06D937"
@@ -525,8 +571,8 @@
 				item: "society:earth_crystal"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 2.735119047619065d
+			y: -4.154124149659911d
 		}
 		{
 			id: "682A0D6E669BC1E7"
@@ -536,8 +582,8 @@
 				item: "society:sandstone_slate"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 4.235119047619065d
+			y: -4.154124149659911d
 		}
 		{
 			id: "551E2050F129458B"
@@ -547,8 +593,8 @@
 				item: "society:calcite_gem"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.0d
+			x: 5.735119047619065d
+			y: -4.154124149659911d
 		}
 		{
 			id: "0D3C551C835E6268"
@@ -558,8 +604,8 @@
 				item: "society:orpiment"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -4.0d
+			x: 7.235119047619065d
+			y: -4.154124149659911d
 		}
 		{
 			id: "0A9814CF8A5E0360"
@@ -569,8 +615,8 @@
 				item: "society:petrified_slime"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: -0.2648809523809348d
+			y: -3.1541241496599106d
 		}
 		{
 			id: "1CDA62572583788E"
@@ -580,8 +626,8 @@
 				item: "society:nekoite"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 1.2351190476190652d
+			y: -3.1541241496599106d
 		}
 		{
 			id: "0B53221AEAEB78CC"
@@ -591,8 +637,8 @@
 				item: "society:slate"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: 2.735119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			id: "0FE3C229F9B85108"
@@ -602,8 +648,8 @@
 				item: "society:celestine"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.0d
+			x: 4.235119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			id: "146A8D69064C011E"
@@ -613,8 +659,8 @@
 				item: "society:allanite"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.0d
+			x: 5.735119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			id: "0AF2CA8B2FE442B6"
@@ -624,8 +670,8 @@
 				item: "society:jamborite"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -3.0d
+			x: 7.235119047619065d
+			y: -3.1541241496599106d
 		}
 		{
 			id: "17B392E25AF34232"
@@ -635,8 +681,8 @@
 				item: "society:granite_slate"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.0d
+			x: -0.2648809523809348d
+			y: -2.1541241496599106d
 		}
 		{
 			id: "4DD509470C61A384"
@@ -646,8 +692,8 @@
 				item: "society:thunder_egg"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 1.2351190476190652d
+			y: -2.1541241496599106d
 		}
 		{
 			id: "51DD4222853CE8AB"
@@ -657,8 +703,8 @@
 				item: "society:malachite"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.0d
+			x: 2.735119047619065d
+			y: -2.1541241496599106d
 		}
 		{
 			id: "3A90CE8E42E5FCA5"
@@ -668,8 +714,8 @@
 				item: "society:jagoite"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.0d
+			x: 4.235119047619065d
+			y: -2.1541241496599106d
 		}
 		{
 			id: "3F050293E8C2F064"
@@ -679,8 +725,8 @@
 				item: "society:esperite"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: 6.187500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			id: "1061DD0E64C73068"
@@ -690,8 +736,8 @@
 				item: "society:marble"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 7.687500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			id: "507886F968A9DB89"
@@ -701,8 +747,8 @@
 				item: "society:opal"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.0d
+			x: 9.187500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			id: "098FE50A576F2348"
@@ -712,8 +758,8 @@
 				item: "society:hematite"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.0d
+			x: 10.687500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			id: "3363D80D85B582AF"
@@ -723,8 +769,8 @@
 				item: "society:geminite"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: 12.187500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			id: "637B71B6F2A20CB6"
@@ -734,8 +780,8 @@
 				item: "society:soapstone"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.0d
+			x: 4.687500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			id: "63433DB8A0DAB49F"
@@ -745,8 +791,8 @@
 				item: "society:pyrite"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
+			x: 6.187500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			id: "688E32EA7B5F4294"
@@ -756,8 +802,8 @@
 				item: "society:lunarite"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.0d
+			x: 7.687500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			id: "741BD8ED3180C2D6"
@@ -767,8 +813,8 @@
 				item: "society:ghost_crystal"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.0d
+			x: 9.187500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			id: "658132017754F6FF"
@@ -778,8 +824,8 @@
 				item: "society:fluorapatite"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 2.0d
+			x: 10.687500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			id: "4ACF2C5D36F62A03"
@@ -789,8 +835,8 @@
 				item: "society:ocean_stone"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.0d
+			x: 12.187500000000021d
+			y: 1.9887329931972317d
 		}
 		{
 			id: "1E1239871FE71A9A"
@@ -800,8 +846,8 @@
 				item: "society:aerinite"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.0d
+			x: 4.687500000000021d
+			y: 2.9887329931972317d
 		}
 		{
 			id: "556E98EAE9B9FD11"
@@ -811,8 +857,8 @@
 				item: "society:fairy_stone"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 6.187500000000021d
+			y: 2.9887329931972317d
 		}
 		{
 			id: "1FDF317E8637A59B"
@@ -822,8 +868,8 @@
 				item: "society:kyanite"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 7.687500000000021d
+			y: 2.9887329931972317d
 		}
 		{
 			id: "60B425EA38A7B22C"
@@ -833,8 +879,8 @@
 				item: "society:baryte"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 6.0d
+			x: -0.3601190476190297d
+			y: 5.941113945578188d
 		}
 		{
 			id: "50F4BF0922A27CE2"
@@ -844,8 +890,8 @@
 				item: "society:fire_quartz"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.0d
+			x: 1.1398809523809703d
+			y: 5.941113945578188d
 		}
 		{
 			id: "036B4963C9129BA2"
@@ -855,8 +901,8 @@
 				item: "society:jasper"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 6.0d
+			x: 2.6398809523809703d
+			y: 5.941113945578188d
 		}
 		{
 			id: "3A1925B2F73BE78C"
@@ -866,8 +912,8 @@
 				item: "society:basalt_shard"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			x: 4.13988095238097d
+			y: 5.941113945578188d
 		}
 		{
 			id: "1051C88A33EDF079"
@@ -877,8 +923,8 @@
 				item: "society:lemon_stone"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 6.0d
+			x: 5.63988095238097d
+			y: 5.941113945578188d
 		}
 		{
 			id: "2CEA32456F8217FE"
@@ -888,8 +934,8 @@
 				item: "society:pure_obsidian"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 7.13988095238097d
+			y: 5.941113945578188d
 		}
 		{
 			id: "1377A71373767632"
@@ -899,8 +945,8 @@
 				item: "society:dolomite"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 7.0d
+			x: 1.1398809523809703d
+			y: 6.941113945578188d
 		}
 		{
 			id: "095D11CDAC0A97E1"
@@ -910,8 +956,8 @@
 				item: "society:tigerseye"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.0d
+			x: -0.3601190476190297d
+			y: 6.941113945578188d
 		}
 		{
 			id: "16F292EE33E10129"
@@ -921,8 +967,8 @@
 				item: "society:bixbyite"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.0d
+			x: 2.6398809523809703d
+			y: 6.941113945578188d
 		}
 		{
 			id: "7D99F215C7E36CED"
@@ -932,8 +978,8 @@
 				item: "society:fire_opal"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.0d
+			x: 4.13988095238097d
+			y: 6.941113945578188d
 		}
 		{
 			id: "6530E79B56125727"
@@ -943,8 +989,8 @@
 				item: "society:neptunite"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.0d
+			x: 5.63988095238097d
+			y: 6.941113945578188d
 		}
 		{
 			id: "58663337F541FC71"
@@ -954,8 +1000,8 @@
 				item: "society:star_shards"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 7.0d
+			x: 7.13988095238097d
+			y: 6.941113945578188d
 		}
 		{
 			id: "25074546C0EC6913"
@@ -965,8 +1011,8 @@
 				item: "society:helvite"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 8.0d
+			x: -0.3601190476190297d
+			y: 7.941113945578188d
 		}
 		{
 			id: "127E2C4A69D9C255"
@@ -976,8 +1022,8 @@
 				item: "society:frozen_tear"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.0d
+			x: 4.687500000000021d
+			y: 0.9887329931972317d
 		}
 		{
 			dependencies: [
@@ -1017,8 +1063,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.minerals.quest45.title}"
-			x: 8.534013605442176d
-			y: -1.4801870748299706d
+			x: 8.57015306122451d
+			y: -1.4449404761905171d
 		}
 		{
 			dependencies: [
@@ -1057,8 +1103,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.minerals.quest46.title}"
-			x: 8.61607142857143d
-			y: 8.603826530612238d
+			x: 8.577721088435354d
+			y: 8.591964285714255d
 		}
 		{
 			dependencies: [
@@ -1098,8 +1144,8 @@
 				value: 1
 			}]
 			title: "{ftbquests.chapter.minerals.quest47.title}"
-			x: 13.749999999999986d
-			y: 3.7068877551020094d
+			x: 13.767431972789133d
+			y: 3.779549319727849d
 		}
 		{
 			dependencies: [

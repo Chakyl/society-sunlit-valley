@@ -15,7 +15,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.charging_rod.description").gray());
       item.modelJson({
-        parent: "society:block/charging_rod_off",
+        parent: "society:block/kubejs/charging_rod_off",
       });
     })
     .defaultState((state) => {
@@ -118,34 +118,34 @@ StartupEvents.registry("block", (event) => {
       });
     }).blockstateJson = {
     multipart: [
-      { apply: { model: "society:block/charging_rod_particle" } },
+      { apply: { model: "society:block/kubejs/charging_rod_particle" } },
       {
         when: { working: false, upgraded: false, mature: false },
-        apply: { model: "society:block/charging_rod_off" },
+        apply: { model: "society:block/kubejs/charging_rod_off" },
       },
       {
         when: { working: true, upgraded: false, mature: false },
-        apply: { model: "society:block/charging_rod" },
+        apply: { model: "society:block/kubejs/charging_rod" },
       },
       {
         when: { working: false, upgraded: false, mature: true },
-        apply: { model: "society:block/charging_rod_done" },
+        apply: { model: "society:block/kubejs/charging_rod_done" },
       },
       {
         when: { working: false, upgraded: true, mature: false },
-        apply: { model: "society:block/charging_rod_upgraded_off" },
+        apply: { model: "society:block/kubejs/charging_rod_upgraded_off" },
       },
       {
         when: { working: true, upgraded: true, mature: false },
-        apply: { model: "society:block/charging_rod_upgraded" },
+        apply: { model: "society:block/kubejs/charging_rod_upgraded" },
       },
       {
         when: { working: false, upgraded: true, mature: true },
-        apply: { model: "society:block/charging_rod_upgraded_done" },
+        apply: { model: "society:block/kubejs/charging_rod_upgraded_done" },
       },
       {
         when: { mature: true },
-        apply: { model: "society:block/machine_done" },
+        apply: { model: "society:block/kubejs/machine_done" },
       },
     ],
   };

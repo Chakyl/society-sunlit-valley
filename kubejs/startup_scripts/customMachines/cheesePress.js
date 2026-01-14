@@ -45,7 +45,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.cheese_press.description").gray());
       item.modelJson({
-        parent: "society:block/cheese_press/cheese_press_off",
+        parent: "society:block/kubejs/cheese_press/cheese_press_off",
       });
     })
     .defaultState((state) => {

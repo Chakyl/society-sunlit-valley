@@ -13,7 +13,7 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("tooltip.society.smart_shipping_bin.warn").red()
       );
       item.modelJson({
-        parent: "society:block/smart_shipping_bin",
+        parent: "society:block/kubejs/smart_shipping_bin",
       });
     })
     .blockEntity((blockInfo) => {
@@ -64,7 +64,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "north" },
         apply: {
-          model: "society:block/smart_shipping_bin",
+          model: "society:block/kubejs/smart_shipping_bin",
           y: 0,
           uvlock: false,
         },
@@ -72,7 +72,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "east" },
         apply: {
-          model: "society:block/smart_shipping_bin",
+          model: "society:block/kubejs/smart_shipping_bin",
           y: 90,
           uvlock: false,
         },
@@ -80,7 +80,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "south" },
         apply: {
-          model: "society:block/smart_shipping_bin",
+          model: "society:block/kubejs/smart_shipping_bin",
           y: 180,
           uvlock: false,
         },
@@ -88,7 +88,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "west" },
         apply: {
-          model: "society:block/smart_shipping_bin",
+          model: "society:block/kubejs/smart_shipping_bin",
           y: -90,
           uvlock: false,
         },
