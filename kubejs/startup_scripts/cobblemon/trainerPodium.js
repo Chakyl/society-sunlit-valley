@@ -1,28 +1,21 @@
 console.info("[SOCIETY-S-COBBLEMON] trainerPodium.js loaded");
 
-global.runTrainerPodium = (entity) => {
-  const { level, block } = entity;
-  let nbt = block.getEntityData();
-  const { owner } = nbt.data;
-  let nearbyPlayers = level
-    .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
-    .filter((scanEntity) => scanEntity.isPlayer());
-
-  let ownerPlayer;
-  let spawnTrainer = false;
-  nearbyPlayers.forEach((player) => {
-    if (player.getUuid().toString() === owner) ownerPlayer = player;
-  });
+global.removeNearbyTrainers = (level, block, forceRemoval) => {
+  let noTrainers = false;
   let nearbyTrainers = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
     .filter((entityType) => entityType.type === "rctmod:trainer");
   if (nearbyTrainers.length == 0) {
-    spawnTrainer = true;
+    noTrainers = true;
   } else {
     let foundTrainer = nearbyTrainers[0];
     let foundTrainerNBT = foundTrainer.getNbt();
-    if (foundTrainerNBT.Defeats > 0 || foundTrainerNBT.Wins > 0) {
-      spawnTrainer = true;
+    if (
+      forceRemoval ||
+      foundTrainerNBT.Defeats > 0 ||
+      foundTrainerNBT.Wins > 0
+    ) {
+      noTrainers = true;
       foundTrainer.setRemoved("unloaded_to_chunk");
       level.spawnParticles(
         "species:ascending_dust",
@@ -38,23 +31,45 @@ global.runTrainerPodium = (entity) => {
       );
     }
   }
+  return noTrainers;
+};
+
+global.runTrainerPodium = (entity) => {
+  const { level, block } = entity;
+  let nbt = block.getEntityData();
+  const { owner } = nbt.data;
+  let nearbyPlayers = level
+    .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
+    .filter((scanEntity) => scanEntity.isPlayer());
+
+  let ownerPlayer;
+  nearbyPlayers.forEach((player) => {
+    if (player.getUuid().toString() === owner) ownerPlayer = player;
+  });
+
+  let spawnTrainer = global.removeNearbyTrainers(level, block);
   if (ownerPlayer) {
     if (spawnTrainer) {
-      let levelTier = global.getPlayerPodiumLevelTier(ownerPlayer);
+      let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
+      let levelTier = global.getPlayerPodiumLevelTier(ownerPlayer, levelAverage);
       let trainer = global.getRandomTrainer(Math.min(100, levelTier));
       let freshTrainer = level.createEntity("rctmod:trainer");
       let trainerNBT = freshTrainer.getNbt();
       trainerNBT.TrainerId = trainer;
       trainerNBT.NoAI = true;
-      trainerNBT.Pos = [Number(block.x) + 0.5, Number(block.y), Number(block.z) + 0.5];
+      trainerNBT.Pos = [
+        Number(block.x) + 0.5,
+        Number(block.y),
+        Number(block.z) + 0.5,
+      ];
       freshTrainer.setNbt(trainerNBT);
       freshTrainer.spawn();
       level.spawnParticles(
         "species:ascending_dust",
         true,
-        foundTrainer.x,
-        foundTrainer.y + 0.5,
-        foundTrainer.z,
+        freshTrainer.x,
+        freshTrainer.y + 0.5,
+        freshTrainer.z,
         0.1 * rnd(1, 4),
         0.1 * rnd(1, 4),
         0.1 * rnd(1, 4),

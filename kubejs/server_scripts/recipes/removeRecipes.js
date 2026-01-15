@@ -700,6 +700,13 @@ ServerEvents.recipes((e) => {
     "cobblemon:dubious_disc",
   ];
   const removeById = [
+    "create_klinks_n_klangs:poke_ball_stencil_compact",
+    "create_klinks_n_klangs:citrine_ball_stencil_compact",
+    "create_klinks_n_klangs:verdant_ball_stencil_compact",
+    "create_klinks_n_klangs:azure_ball_stencil_compact",
+    "create_klinks_n_klangs:roseate_ball_stencil_compact",
+    "create_klinks_n_klangs:slate_ball_stencil_compact",
+    "create_klinks_n_klangs:premier_ball_stencil_compact",
     "veggiesdelight:stuffed_zucchini_boat",
     "veggiesdelight:zucchini_quiche",
     "jei:/sawmill/vanillabackport_pale_oak_boat_0",

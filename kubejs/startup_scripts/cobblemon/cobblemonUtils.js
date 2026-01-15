@@ -16,6 +16,7 @@ global.getPartyLevel = (player) => {
   let levelSum = 0;
   let levelHighest = 0;
   party.forEach((pokemon) => {
+    if (pokemon.isLegendary() || pokemon.isMythical()) levelSum += 99999;
     levelSum += pokemon.level;
     if (levelHighest < pokemon.level) levelHighest = pokemon.level;
     partyCount++;
@@ -473,15 +474,15 @@ const trainerBuckets = new Map([
 
 global.getRandomTrainer = (levelBucket) => {
   const trainerBucket = trainerBuckets.get(levelBucket);
-  const trainer = trainerBucket[rnd(0, trainerBucket.length)];
-  console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
+  // const trainer = trainerBucket[rnd(0, trainerBucket.length)];
+  // console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
   return trainerBucket[rnd(0, trainerBucket.length - 1)];
 };
 
-global.getPlayerPodiumLevelTier = (player) =>
+global.getPlayerPodiumLevelTier = (player, partyLevel) =>
   Math.max(
     10,
-    Math.round(global.getPartyLevel(player) / 5) * 5 +
+    Math.round(partyLevel / 5) * 5 +
       Math.floor(player.persistentData.winStreak / 10) * 5 -
       5
   );

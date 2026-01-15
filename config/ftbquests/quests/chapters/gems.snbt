@@ -15,8 +15,8 @@
 				item: "society:prismatic_shard"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -0.5d
+			x: 1.2587256995150113d
+			y: -0.41725927615559755d
 		}
 		{
 			id: "1329C926D42C3761"
@@ -25,8 +25,8 @@
 				item: "society:jade"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -0.5d
+			x: -1.7412743004849887d
+			y: -0.41725927615559755d
 		}
 		{
 			id: "07F6FE2E6C8CB6F6"
@@ -132,6 +132,7 @@
 				"13FA6EDE805D6664"
 				"740A85F55CE211D0"
 				"4A09A0A9EA9A83B5"
+				"3870CDB4B95B3324"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -185,8 +186,18 @@
 				item: "society:sparkstone"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -0.5d
+			x: -3.2412743004849887d
+			y: -0.41725927615559755d
+		}
+		{
+			id: "3870CDB4B95B3324"
+			tasks: [{
+				id: "47411891E20B1384"
+				item: "society:spinel"
+				type: "item"
+			}]
+			x: -0.24127430048498866d
+			y: -0.41725927615559755d
 		}
 	]
 	title: "{ftbquests.chapter.gems.title}"

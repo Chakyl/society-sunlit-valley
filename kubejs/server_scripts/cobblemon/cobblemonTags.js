@@ -181,4 +181,5 @@ ServerEvents.tags("block", (e) => {
   });
   e.add("society:raw_logs", "cobblemon:apricorn_log");
   e.add("minecraft:crops", "#cobblemon:berries");
+  e.add("minecraft:dirt", "#dewdrop:waterable");
 });

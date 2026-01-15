@@ -1,4 +1,5 @@
 global.removedItems = [
+  "create_klinks_n_klangs:repeat_ball_stencil",
   "cobblemon:medicinal_leek",
   "simpletms:tm_gmaxdrumsolo",
   "simpletms:tm_gmaxwildfire",
