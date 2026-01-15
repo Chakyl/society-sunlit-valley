@@ -21,25 +21,6 @@
 					"brightness": 1
 				}
 			]
-		},
-		{
-			"id": "end",
-			"speaker": {
-				"translate": "dialog.npc.banker.name",
-				"color": "gold"
-			},
-			"text": [
-				{
-					"translate": "dialog.npc.banker.chatter_friendship1.2.line_1"
-				}
-			],
-			"portraits": [
-				{
-					"path": "banker.png",
-					"position": "INLINE",
-					"brightness": 1
-				}
-			]
 		}
 	]
 }

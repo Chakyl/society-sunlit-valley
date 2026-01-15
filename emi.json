@@ -29,9 +29,71 @@
     },
     {
       "stack": "item:minecraft:rabbit_spawn_egg"
+    },
+    {
+      "stack": "item:aquaculture:muskellunge"
+    },
+    {
+      "stack": "item:netherdepthsupgrade:lava_pufferfish{quality_food:{effects:[],quality:3}}"
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "society:mossberry_preserves",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "society:heart_of_neptunium",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "society:furniture_box",
+      "amount": 2
+    },
+    "item:aquaculture:blackfish",
+    "item:unusualfishmod:raw_forkfish{quality_food:{effects:[],quality:2}}",
+    {
+      "type": "item",
+      "id": "unusualfishmod:raw_sailor_barb",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    "item:society:sunlit_pearl",
+    {
+      "type": "item",
+      "id": "society:perfect_cherry",
+      "amount": 2
+    },
+    "item:aquaculture:neptunium_ingot",
+    {
+      "type": "item",
+      "id": "aquaculture:neptunium_nugget",
+      "amount": 6
+    },
+    "item:meadow:wooden_bucket",
+    "item:society:fish_pond",
+    "item:society:sparkstone_block",
+    "item:society:aged_starshell_turtle_roe",
+    "item:society:artifact_trove",
+    "item:cluttered:sweetheart_table",
+    "item:society:bubble_totem",
+    "item:numismatics:neptunium_coin",
+    "item:numismatics:ancient_coin",
+    "item:society:auto_grabber",
+    "item:minecraft:netherite_ingot",
+    "item:vinery:cristel_wine",
+    "item:vinery:red_wine",
+    "item:vinery:cherry_wine",
+    "item:nethervinery:lava_fizz",
+    "item:nethervinery:netherite_nectar",
+    "item:vinery:chorus_wine",
+    "item:vinery:stal_wine",
+    "item:vinery:bolvar_wine",
+    "item:society:shipping_bin_monitor",
+    "item:minecraft:cartography_table",
     {
       "type": "item",
       "id": "botania:purple_mushroom",
@@ -102,7 +164,6 @@
     "item:society:quality_washer",
     "item:society:geode_node",
     "item:society:ribbit_hut",
-    "item:society:sparkstone_block",
     "item:society:milk_bucket",
     "item:society:villager_home",
     "item:society:artisan_hopper",
@@ -156,11 +217,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
+      "item:candlelight:pork_ribs",
+      "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
       "item:farm_and_charm:bacon_with_eggs",
-      "item:farmersdelight:cooked_bacon",
       "item:minecraft:cooked_porkchop",
-      "item:candlelight:pork_ribs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -171,16 +232,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -207,13 +268,7 @@
       "id": "minecraft:ochre_froglight",
       "amount": 8
     },
-    "item:society:artifact_trove",
     "item:minecraft:oak_log",
-    {
-      "type": "item",
-      "id": "society:mossberry_preserves",
-      "amount": 2
-    },
     "item:vinery:magnetic_wine",
     {
       "type": "item",
@@ -240,13 +295,11 @@
       "id": "vintagedelight:organic_mash",
       "amount": 12
     },
-    "item:aquaculture:neptunium_ingot",
     {
       "type": "item",
       "id": "aquaculture:algae",
       "amount": 2
     },
-    "item:aquaculture:neptunium_nugget",
     {
       "type": "item",
       "id": "minecraft:beef",
@@ -280,11 +333,6 @@
     },
     {
       "type": "item",
-      "id": "society:sunlit_pearl",
-      "amount": 3
-    },
-    {
-      "type": "item",
       "id": "society:nether_jelly",
       "amount": 3
     },
@@ -298,7 +346,6 @@
       "id": "society:wine_keg",
       "amount": 7
     },
-    "item:vinery:stal_wine",
     "item:society:aged_stal_wine",
     {
       "type": "item",
@@ -412,7 +459,6 @@
       "id": "society:aquamagical_dust",
       "amount": 2
     },
-    "item:society:heart_of_neptunium",
     {
       "type": "item",
       "id": "society:mystic_syrup",
@@ -477,8 +523,6 @@
       "id": "minecraft:hay_block",
       "amount": 4
     },
-    "item:numismatics:ancient_coin",
-    "item:society:auto_grabber",
     "item:society:sparkstone_recycler",
     {
       "type": "item",
@@ -665,7 +709,6 @@
     "item:society:double_aged_beer_attunecore",
     "item:society:living_flesh",
     "item:society:crystal_of_regret_mining",
-    "item:society:bubble_totem",
     "item:society:recycled_core",
     "item:society:dewy_star",
     "item:society:latte",
@@ -821,7 +864,6 @@
     },
     "item:bakery:chocolate_truffle",
     "item:society:recycling_machine",
-    "item:society:fish_pond",
     "item:society:merino_wool",
     {
       "type": "item",
@@ -938,7 +980,6 @@
     },
     "item:farmersdelight:cutting_board",
     "#item:forge:crops/cauliflower",
-    "item:meadow:wooden_bucket",
     "item:tanukidecor:antique_bed",
     "item:meadow:stripped_pine_log",
     {
@@ -958,7 +999,6 @@
     "#item:minecraft:wooden_slabs",
     "item:create:mechanical_saw",
     "item:farmingforblockheads:market",
-    "item:minecraft:cartography_table",
     "item:minecraft:fletching_table",
     "item:simplehats:icedragonskull",
     "item:vinery:jungle_grape_seeds_red",
@@ -1014,7 +1054,6 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
     "item:minecraft:wet_sponge",
     "item:minecraft:sponge",
-    "item:society:furniture_box",
     "item:vintagedelight:honey_mason_jar",
     "item:meadow:cheese_block",
     "item:minecraft:stripped_oak_log",
@@ -1308,12 +1347,6 @@
     "item:classicpipes:diamond_fluid_pipe",
     "item:classicpipes:brick_fluid_pipe",
     "item:classicpipes:iron_fluid_pipe",
-    {
-      "type": "item",
-      "id": "vinery:chorus_wine",
-      "nbt": "{EffectAmplifier:0,EffectDuration:1800,Year:11}",
-      "amount": 64
-    },
     "item:whimsy_deco:flamingo_swimming_ring",
     "item:society:flamingo_egg",
     "item:society:penguin_egg",
@@ -1370,8 +1403,6 @@
       "amount": 64
     },
     "item:society:mana_feed",
-    "item:nethervinery:netherite_nectar",
-    "item:minecraft:netherite_ingot",
     "item:functionalstorage:netherite_upgrade",
     "item:society:deepslate_iridium_ore",
     "item:justhammers:netherite_impact_hammer{Damage:0}",
@@ -1440,7 +1471,6 @@
     "item:species:frozen_meat",
     "item:numismatics:blaze_banker",
     "item:quark:vertical_oak_planks",
-    "item:numismatics:neptunium_coin",
     "item:simplehats:cucumbereyemask",
     "item:vintagedelight:kimchi",
     "item:vintagedelight:smooth_salt_block",
@@ -1487,25 +1517,16 @@
     },
     "item:dew_drop_farmland_growth:hydrating_fertilizer",
     "item:dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
-    "item:trials:music_disc_creator_box",
-    "item:trials:waxed_chiseled_copper_exposed",
-    "item:trials:chiseled_tuff_bricks",
-    "item:trials:tuff_stairs",
-    "item:trials:tuff_slab",
-    "item:trials:tuff_wall",
-    "item:trials:chiseled_tuff",
-    "item:quark:deepslate_tile_vertical_slab",
-    "item:splendid_slimes:slime_vac",
-    "item:farm_and_charm:oat",
-    "item:unusualfishmod:raw_picklefish",
-    "item:minecraft:egg",
-    {
-      "type": "item",
-      "id": "farmersdelight:cabbage_leaf",
-      "amount": 64
-    }
+    "item:trials:music_disc_creator_box"
   ],
   "craft_history": [
+    "minecraft:kjs/numismatics_ancient_coin",
+    "minecraft:kjs/society_mushroom_log",
+    "minecraft:kjs/society_sunlit_pearl",
+    "aquaculture:neptunium_ingot_from_nuggets",
+    "meadow:wooden_bucket",
+    "minecraft:kjs/society_bubble_totem",
+    "minecraft:netherite_ingot",
     "create:crafting/kinetics/white_seat",
     "minecraft:kjs/wildernature_raccoon_spawn_egg",
     "minecraft:bone_block",
@@ -1513,16 +1534,13 @@
     "minecraft:kjs/society_crystalarium",
     "oreganized:lead_block",
     "minecraft:fletching_table",
-    "minecraft:kjs/society_mushroom_log",
     "minecraft:kjs/society_preserves_jar",
     "minecraft:copper_block",
     "minecraft:coal_block",
     "minecraft:kjs/farmersdelight_rich_soil",
-    "aquaculture:neptunium_ingot_from_nuggets",
     "minecraft:kjs/farm_and_charm_mincer",
     "quark:building/crafting/sturdy_stone",
     "minecraft:iron_block",
-    "minecraft:kjs/society_sunlit_pearl",
     "minecraft:kjs/society_wine_keg",
     "vintagedelight:fermenting_jar",
     "farmersdelight:basket",
@@ -1545,7 +1563,6 @@
     "minecraft:bricks",
     "minecraft:kjs/society_deluxe_worm_farm",
     "crabbersdelight:pearl_block",
-    "minecraft:kjs/society_bubble_totem",
     "minecraft:kjs/society_cheese_press",
     "minecraft:kjs/society_fish_pond_basket",
     "minecraft:hopper",
@@ -1581,7 +1598,6 @@
     "minecraft:kjs/society_seed_maker",
     "minecraft:composter",
     "vintagedelight:evaporator",
-    "minecraft:netherite_ingot",
     "minecraft:kjs/society_recycling_machine",
     "sophisticatedstorage:advanced_magnet_upgrade_from_basic",
     "sophisticatedstorage:magnet_upgrade",
@@ -1598,7 +1614,6 @@
     "vinery:grapevine_stem",
     "minecraft:shears",
     "minecraft:stone_bricks",
-    "meadow:wooden_bucket",
     "minecraft:oak_slab",
     "minecraft:kjs/society_magic_bulb",
     "minecraft:kjs/dew_drop_farmland_growth_iron_sprinkler",

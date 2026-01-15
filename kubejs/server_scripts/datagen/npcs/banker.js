@@ -8,43 +8,209 @@ runNpcDatagen("banker", {
     "That's all I have for now, you really have your work cut out for you here. Come see me if you need anything!",
   ],
   chatter: {
-    friendship0: [["Friendship level 0 chatter 1 line 1"]],
-    friendship1: [
+    friendship0: [
+      ["What do you need from me?"],
+      [
+        "Don't expect me to lend you any money for your farm.",
+        "I'm already doing so much to support this settlement.",
+      ],
       [
         "Sorry, I don't loan money to farmers.",
         "One bad season and they come to you crying about their interest rates.",
       ],
-      ["Friendship level 1 chatter 2 line 1"],
+      ["I have things I need to be doing right now."],
+      ["I don't have time to chat with you."],
+      ["Don't you have some work you should be doing?"],
       [
-        "Friendship level 1 chatter 3 line 1",
-        "Friendship level 1 chatter 3 line 2",
+        "I hope you're not slacking off when so many people here are depending on you.",
+      ],
+      ["Ugh, do you need something from me?"],
+      ["What do you want?"],
+      [
+        "Developing towns are such a drag.",
+        "No culture, just labor and filth.",
+      ],
+      ["My time is worth more than yours, don't waste it."],
+      ["You're wasting both of our time right now."],
+      ["I'm perfectly capable of keeping busy without your interruptions."],
+      [
+        "It's rude to interrupt someone while they're working.",
+        "Not that I would expect a simple farmer like you to have manners.",
+      ],
+      [
+        "What is that smell?",
+        "Don't tell me you came over here without cleaning yourself up...",
+      ],
+    ],
+    friendship1: [
+      ["I suppose there's worse places to live than here."],
+      [
+        "Why do you insist on the chit-chat.",
+        "I hope it's clear that I have things to do.",
+      ],
+      ["Do I seem like the type of person you can just bug every day?"],
+      ["You again, great."],
+      ["What."],
+      ["Must you keep coming back."],
+      ["Hmmm? I'm busy."],
+      ["No more small talk."],
+      ["You stench of farm."],
+      ["There's more pleasant smelling fertilizers out there you know."],
+      ["I think I've said enough to you."],
+      ["..."],
+      [
+        "The most irritating people are the one who can't tell they're not wanted.",
+      ],
+      ["Either buy something or walk away."],
+      ["Yes?"],
+      ["There's no need to chat right now."],
+      ["I have far too much to do."],
+      [
+        "I don't want to chat with you.",
+        "Keep it professional, if you are even capable of that.",
+      ],
+      ["You aren't a very good listener."],
+      [
+        "You're the only person here that doesn't listen to the things I say.",
+        "That's not a compliment.",
       ],
     ],
     friendship2: [
       [
-        "Friendship level 2 chatter 1 line 1",
-        "Friendship level 2 chatter 1 line 2",
+        "There's so many natural resources to exploit around here.",
+        "And yet, all you do is talk.",
       ],
       [
-        "I believe in talking behind peoples' backs. That way, they hear it more than once.",
+        "Try to diversify your income streams.",
+        "I don't want this town relying on a single point of failure.",
+      ],
+      ["What calls you to keep speaking to me so often."],
+      ["I recognized that scent from across the valley."],
+      [
+        "I believe in talking behind peoples' backs.",
+        "That way, they hear what I have to say more than once.",
+      ],
+      [
+        "Are you the one who's been buying all that animal feed?",
+        "I've had to order more stock twice this season.",
+      ],
+      [
+        "You should be making more money right now than you are.",
+        "Please stop slacking and try harder.",
+      ],
+      ["A weaker person would have given up talking to me by now."],
+      ["Do you need something from me or are you just wasting my time."],
+      ["Some of your recent purcahses have...", "Dissapointed me."],
+      [
+        "I've seen many small settlements just like this one fail time and time again.",
+        "Don't add another to the list.",
+      ],
+      [
+        "The local economy seems strong lately.",
+        "I must be doing something right.",
+      ],
+      [
+        "Have you ever thought about how shop keepers magically have all the things you need?",
+        "You seem like the type to be oblivious to matters like these.",
+        "Everything here happens because I allow it to. Remember that.",
       ],
     ],
     friendship3: [
+      ["What do you want."],
+      ["I'm busy right now."],
+      ["Stop slacking off again, I know what you're up to."],
+      [
+        "I'm still not used to the sounds of the wilderness.",
+        "It's unpleasant.",
+      ],
+      [
+        "Our relationship is strictly professional.",
+        "I would not recommend testing this boundary.",
+      ],
       [
         "I once knew a person that constantly tried to defraud the Sunlit Valley Hospital...",
         "Terrible person all around, never lent them a dollar.",
       ],
-    ],
-    friendship4: [["Friendship level 4 chatter 2 line 1"]],
-    friendship5: [
       [
-        "Friendship level 5 chatter 1 line 1",
-        "Friendship level 5 chatter 1 line 2",
+        "You're keeping me from some important things right now, make it quick.",
       ],
-      ["Friendship level 5 chatter 2 line 1"],
+      ["Need I remind you that my time is worth more than yours."],
+      ["I hate all these bugs, someone should really do something about them."],
+    ],
+    friendship4: [
       [
-        "Friendship level 5 chatter 3 line 1",
-        "Friendship level 5 chatter 3 line 2",
+        "I don't appreciate all your attempts to get closer to me.",
+        "Once my work here is done I'll be installing a proxy and moving on to better things.",
+      ],
+      [
+        "Do you think talking to me every day and showering me with phoned-in gifts will make me like you?",
+        "At least make the gifts good.",
+      ],
+      ["I don't have time to chat with you today."],
+      ["How are things on the farm?", "Your numbers are up lately."],
+      [
+        "There's that smell again. Do you smell that too?",
+        "You've probably gone nose blind.",
+      ],
+      [
+        "Have you made a Smart Shipping Bin yet?",
+        "It should cut down on your manual labor by a small amount.",
+        "You need all the help you can get.",
+      ],
+      [
+        "You're putting in so much effort into getting to know me.",
+        "Please direct that energy into more profitable work.",
+      ],
+      [
+        "Hmmm...",
+        "What? You should know not to interrupt me like that by now.",
+      ],
+      ["I can't talk right now."],
+      ["I just don't have the time for idle chit-chat today."],
+      ["Ah, need something?"],
+    ],
+    friendship5: [
+      ["I hope things are going well on your farm."],
+      ["Do you continually pester everyone like this?"],
+      ["What can I help you with today?"],
+      ["The town is thriving, keep it up."],
+      [
+        "Ugh, the warehouse has been backed up for two seasons now.",
+        "I can't let this impact production here.",
+      ],
+      [
+        "I'm having trouble keeping everything in stock lately.",
+        "Busy season?",
+      ],
+      [
+        "You should have more than enough money at this point to enjoy a pig race every now and again.",
+      ],
+      [
+        "Just so you know, the town went slightly past budget last season.",
+        "I was able to cover the difference this time.",
+        "Don't get used to it.",
+      ],
+      ["Still not showering?"],
+      ["What's on the agenda today?"],
+      [
+        "Cooked anything interesting lately?",
+        "I'm tired of all these pedestrian meals.",
+      ],
+      ["I don't have much time to chat, let's talk later"],
+      [
+        "Some people are impressed by your progress here and will tell you as much.",
+        "Don't let it get to your head.",
+      ],
+      [
+        "Noticed a few shops were running low on stock latey.",
+        "You must really be expanding production, impressive.",
+      ],
+      ["I could use a nice bottle of Cristel right now."],
+      ["You shouldn't be relaxing, you have things to do."],
+      ["You haven't disappointed me yet, but that can always change."],
+      [
+        "The economic stability of this town depends on you.",
+        "Don't let these people down.",
       ],
     ],
   },
@@ -110,7 +276,7 @@ runNpcDatagen("banker", {
       "Leave.",
       "Turn around and walk.",
       "If this is how you run this place I'm wasting my time here.",
-      "Leave me out of your pathetic jokes."
+      "Leave me out of your pathetic jokes.",
     ],
   },
 });
