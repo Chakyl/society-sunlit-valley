@@ -119,7 +119,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.dehydrator.description").gray());
       item.modelJson({
-        parent: "society:block/dehydrator/dehydrator_off",
+        parent: "society:block/kubejs/dehydrator/dehydrator_off",
       });
     })
     .defaultState((state) => {

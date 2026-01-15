@@ -169,7 +169,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.preserves_jar.description").gray());
       item.modelJson({
-        parent: "society:block/preserves_jar",
+        parent: "society:block/kubejs/preserves_jar",
       });
     })
     .defaultState((state) => {
@@ -229,31 +229,31 @@ StartupEvents.registry("block", (event) => {
     multipart: [
       {
         when: { upgraded: false },
-        apply: { model: "society:block/preserves_jar_base" },
+        apply: { model: "society:block/kubejs/preserves_jar_base" },
       },
       {
         when: { working: true },
-        apply: { model: "society:block/preserves_jar_lid" },
+        apply: { model: "society:block/kubejs/preserves_jar_lid" },
       },
       {
         when: { mature: true, working: false },
-        apply: { model: "society:block/preserves_jar_lid_done" },
+        apply: { model: "society:block/kubejs/preserves_jar_lid_done" },
       },
       {
         when: { upgraded: true },
-        apply: { model: "society:block/preserves_jar_base_upgraded" },
+        apply: { model: "society:block/kubejs/preserves_jar_base_upgraded" },
       },
       {
         when: { working: true, upgraded: false },
-        apply: { model: "society:block/preserves_jar_base" },
+        apply: { model: "society:block/kubejs/preserves_jar_base" },
       },
       {
         when: { mature: true, upgraded: false },
-        apply: { model: "society:block/preserves_jar_base" },
+        apply: { model: "society:block/kubejs/preserves_jar_base" },
       },
       {
         when: { mature: true },
-        apply: { model: "society:block/machine_done" },
+        apply: { model: "society:block/kubejs/machine_done" },
       },
     ],
   };

@@ -1589,7 +1589,8 @@
 			]
 			id: "642F0375D7805A1B"
 			rewards: [{
-				id: "4742A82742201122"
+				count: 4
+				id: "79143B01F669F7C5"
 				item: "oreganized:raw_silver"
 				type: "item"
 			}]
@@ -1638,11 +1639,29 @@
 		}
 		{
 			dependencies: ["3C12A8CA17EACA0B"]
-			description: ["Right click it once a day. You get buff. If you're reading this in 4.0 chalky for got to uipdate"]
+			description: [
+				"The &6Statue of The Moon Gnome&r channels the ancient power of Selene. "
+				""
+				"Right clicking on it will give you a random mining related Moon Blessing that lasts the entire day."
+			]
 			id: "224AC273D2E3D1D7"
+			rewards: [
+				{
+					count: 4
+					id: "41E81F8ACC763C1E"
+					item: "cluttered:moon_pendant"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7FB8AB3B2A9907AA"
+					item: "cluttered:moon_decoration"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4A45494A3132F91A"
-				item: "society:moon_pylon"
+				item: "society:moon_statue"
 				type: "item"
 			}]
 			x: -3.5d

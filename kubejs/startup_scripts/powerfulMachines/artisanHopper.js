@@ -524,11 +524,11 @@ StartupEvents.registry("block", (event) => {
         ).lightPurple()
       );
       item.modelJson({
-        parent: "society:block/artisan_hopper",
+        parent: "society:block/kubejs/artisan_hopper",
       });
     })
     .soundType("copper")
-    .model("society:block/artisan_hopper")
+    .model("society:block/kubejs/artisan_hopper")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -577,11 +577,11 @@ StartupEvents.registry("block", (event) => {
         ).lightPurple()
       );
       item.modelJson({
-        parent: "society:block/mini_artisan_hopper",
+        parent: "society:block/kubejs/mini_artisan_hopper",
       });
     })
     .soundType("copper")
-    .model("society:block/mini_artisan_hopper")
+    .model("society:block/kubejs/mini_artisan_hopper")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });

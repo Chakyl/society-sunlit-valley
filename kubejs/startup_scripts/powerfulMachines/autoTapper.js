@@ -18,7 +18,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.auto_tapper.description").gray());
       item.modelJson({
-        parent: "society:block/auto_tapper",
+        parent: "society:block/kubejs/auto_tapper",
       });
     })
     .blockEntity((blockInfo) => {
@@ -36,11 +36,11 @@ StartupEvents.registry("block", (event) => {
     }).blockstateJson = {
     multipart: [
       {
-        apply: { model: "society:block/auto_tapper_particle" },
+        apply: { model: "society:block/kubejs/auto_tapper_particle" },
       },
       {
         when: { error: true },
-        apply: { model: "society:block/error" },
+        apply: { model: "society:block/kubejs/error" },
       },
     ].concat(getCardinalMultipartJsonBasic("auto_tapper")),
   };

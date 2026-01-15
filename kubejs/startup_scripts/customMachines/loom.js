@@ -24,7 +24,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.loom.description").gray());
       item.modelJson({
-        parent: "society:block/loom/loom_off",
+        parent: "society:block/kubejs/loom/loom_off",
       });
     })
     .defaultState((state) => {

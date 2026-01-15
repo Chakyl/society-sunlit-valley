@@ -46,19 +46,19 @@ StartupEvents.registry("block", (e) => {
   //   multipart: [
   //     {
   //       when: { age: 0 },
-  //       apply: { model: "society:block/berry_bush/start" },
+  //       apply: { model: "society:block/kubejs/berry_bush/start" },
   //     },
   //     {
   //       when: { age: 1 },
-  //       apply: { model: "society:block/berry_bush/middle" },
+  //       apply: { model: "society:block/kubejs/berry_bush/middle" },
   //     },
   //     {
   //       when: { age: 2 },
-  //       apply: { model: "society:block/berry_bush/base" },
+  //       apply: { model: "society:block/kubejs/berry_bush/base" },
   //     },
   //     {
   //       when: { age: 3 },
-  //       apply: { model: "society:block/berry_bush/base" },
+  //       apply: { model: "society:block/kubejs/berry_bush/base" },
   //     },
   //   ],
   // };
@@ -91,47 +91,47 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage2" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage3" },
       },
       {
         when: { age: 7 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage3" },
       },
       {
         when: { age: 8 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage4" },
       },
       {
         when: { age: 9 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage4" },
       },
       {
         when: { age: 10 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage5" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage5" },
       },
     ],
   };
@@ -162,43 +162,43 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage0" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage0" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage0" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage0" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage0" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage1" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage1" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage1" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage1" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage2" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage2" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage2" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage2" },
       },
       {
         when: { age: 7 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage3" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage3" },
       },
       {
         when: { age: 8 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage3" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage3" },
       },
       {
         when: { age: 9 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage4" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage4" },
       },
     ],
   };
@@ -275,31 +275,31 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/hops_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/hops_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/hops_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/hops_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/hops_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/hops_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage3" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/hops_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage4" },
       },
     ],
   };
@@ -329,35 +329,35 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/blueberry_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/blueberry_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/blueberry_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/blueberry_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/blueberry_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/blueberry_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage3" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/blueberry_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage4" },
       },
       {
         when: { age: 7 },
-        apply: { model: "society:block/crops/blueberry_crop_stage5" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage5" },
       },
     ],
   };
@@ -384,27 +384,27 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/cranberry_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/cranberry_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/cranberry_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage2" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/cranberry_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage3" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/cranberry_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage4" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/cranberry_crop_stage5" },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage5" },
       },
     ],
   };
@@ -432,31 +432,31 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/eggplant_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/eggplant_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/eggplant_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/eggplant_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/eggplant_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/eggplant_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage3" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/eggplant_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage4" },
       },
     ],
   };
@@ -726,7 +726,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .item((item) => {
       item.modelJson({
-        parent: "society:block/berry_bush/base",
+        parent: "society:block/kubejs/berry_bush/base",
       });
     })
     .defaultState((state) => {
@@ -750,23 +750,23 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { type: "0" },
-        apply: { model: "society:block/berry_bush/base" },
+        apply: { model: "society:block/kubejs/berry_bush/base" },
       },
       {
         when: { type: "1" },
-        apply: { model: "society:block/berry_bush/salmonberry" },
+        apply: { model: "society:block/kubejs/berry_bush/salmonberry" },
       },
       {
         when: { type: "2" },
-        apply: { model: "society:block/berry_bush/boysenberry" },
+        apply: { model: "society:block/kubejs/berry_bush/boysenberry" },
       },
       {
         when: { type: "3" },
-        apply: { model: "society:block/berry_bush/cranberry" },
+        apply: { model: "society:block/kubejs/berry_bush/cranberry" },
       },
       {
         when: { type: "4" },
-        apply: { model: "society:block/berry_bush/crystalberry" },
+        apply: { model: "society:block/kubejs/berry_bush/crystalberry" },
       },
     ],
   };
@@ -797,39 +797,39 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage0" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage1" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage2" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage3" },
       },
       {
         when: { age: 7 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage3" },
       },
       {
         when: { age: 8 },
-        apply: { model: "society:block/crops/sparkpod_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage4" },
       },
     ],
   };

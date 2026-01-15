@@ -40,6 +40,7 @@ BlockEvents.rightClicked((e) => {
       if (
         block.hasTag("minecraft:crops") ||
         block.hasTag("minecraft:saplings") ||
+        block.hasTag("vinery:lattice") ||
         block.hasTag("farmersdelight:wild_crops") ||
         block.hasTag("farm_and_charm:wild_crops") ||
         block.hasTag("sereneseasons:summer_crops") ||

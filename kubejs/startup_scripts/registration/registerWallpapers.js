@@ -8,7 +8,7 @@ StartupEvents.registry("block", (e) => {
   ];
   ["bee", "hive", "bunny", "cloud", "pink_flower"].forEach((wallpaperType) => {
     e.create(`society:${wallpaperType}_wallpaper`)
-      .model(`society:block/wallpaper/${wallpaperType}_wallpaper`)
+      .model(`society:block/kubejs/wallpaper/${wallpaperType}_wallpaper`)
       .soundType("wool")
       .hardness(1.0)
       .resistance(1.0)
@@ -16,7 +16,7 @@ StartupEvents.registry("block", (e) => {
       .requiresTool(true);
     if (wallpaperType !== "bee") {
       e.create(`society:${wallpaperType}_baseboard`)
-        .model(`society:block/wallpaper/${wallpaperType}_baseboard`)
+        .model(`society:block/kubejs/wallpaper/${wallpaperType}_baseboard`)
         .item((item) => {
           item.tooltip(Text.translatable("society.wallpaper.description").gray());
           item.tooltip(Text.translatable("society.wallpaper.description.tip").green());

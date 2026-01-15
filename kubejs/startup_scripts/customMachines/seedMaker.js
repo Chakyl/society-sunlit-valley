@@ -77,6 +77,7 @@ global.seedMakerRecipes = new Map([
   ["veggiesdelight:broccoli", { output: ["6x veggiesdelight:broccoli_seeds"] }],
   ["veggiesdelight:zucchini", { output: ["6x veggiesdelight:zucchini_seeds"] }],
   ["society:cranberry", { output: ["6x society:cranberry_seed"] }],
+  ["society:sparkpod", { output: ["1x society:sparkpod_seed"] }],
 ]);
 
 StartupEvents.registry("block", (event) => {
@@ -96,7 +97,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.seed_maker.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
       item.modelJson({
-        parent: "society:block/seed_maker/seed_maker_off",
+        parent: "society:block/kubejs/seed_maker/seed_maker_off",
       });
     })
     .defaultState((state) => {

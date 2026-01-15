@@ -36,10 +36,10 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(Text.translatable("block.society.snow_melter.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `19x5x19`).green());
       item.modelJson({
-        parent: "society:block/snow_melter",
+        parent: "society:block/kubejs/snow_melter",
       });
     })
-    .model("society:block/snow_melter")
+    .model("society:block/kubejs/snow_melter")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(600, 0, (entity) => {

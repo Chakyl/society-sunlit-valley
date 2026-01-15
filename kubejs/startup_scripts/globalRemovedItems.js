@@ -294,7 +294,6 @@ global.removedItems = [
   "simpletms:tm_hydrosteam",
   "simpletms:tm_psyblade",
   "simpletms:tm_risingvoltage",
-
   "simpletms:tr_gmaxdrumsolo",
   "simpletms:tr_gmaxwildfire",
   "simpletms:tr_gmaxvinelash",
@@ -591,6 +590,8 @@ global.removedItems = [
   "rctmod:trainer_card",
   "cobblemon:repeat_ball",
   "create_klinks_n_klangs:wrapper",
+  "minecraft:brown_egg",
+  "minecraft:blue_egg",
   // 4.1 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
   "cluttered:pastel_bunny_plushie",

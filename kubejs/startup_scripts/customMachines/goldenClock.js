@@ -105,10 +105,10 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.golden_clock.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `5x5`).green());
       item.modelJson({
-        parent: "society:block/golden_clock",
+        parent: "society:block/kubejs/golden_clock",
       });
     })
-    .model("society:block/golden_clock")
+    .model("society:block/kubejs/golden_clock")
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => global.runGoldenClock(entity));
     });

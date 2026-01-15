@@ -26,11 +26,17 @@ global.updateLeaderboard = (block, server) => {
   let calcY = block.y + 3;
   let leaderboardMap = updateLeaderboardMap(server);
   if (!leaderboardMap) return;
-  if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
+  if (global.susFunctionLogging)
+    console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
   global.clearOldTextDisplay(block, "leaderboard");
 
   // Display leaderboard name
-  global.spawnTextDisplay(block, calcY, "leaderboard", Text.translatable("block.society.coin_leaderboard.title").getString());
+  global.spawnTextDisplay(
+    block,
+    calcY,
+    "leaderboard",
+    Text.translatable("block.society.coin_leaderboard.title").getString()
+  );
   // Display leaderboard accounts
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
@@ -40,7 +46,10 @@ global.updateLeaderboard = (block, server) => {
       block,
       calcY,
       "leaderboard",
-      `§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
+      `§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(
+        /\B(?=(\d{3})+(?!\d))/g,
+        ","
+      )}`
     );
   });
 };
@@ -51,10 +60,13 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
+    .model("society:block/kubejs/coin_leaderboard")
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.coin_leaderboard.description").gray());
+      item.tooltip(
+        Text.translatable("block.society.coin_leaderboard.description").gray()
+      );
       item.modelJson({
-        parent: "society:block/coin_leaderboard",
+        parent: "society:block/kubejs/coin_leaderboard",
       });
     })
     .blockEntity((be) => {

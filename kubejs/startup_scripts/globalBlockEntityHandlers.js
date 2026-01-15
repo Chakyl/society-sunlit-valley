@@ -207,7 +207,7 @@ global.artisanHarvest = (
       } else {
         hopperOutputs.push(harvestOutput);
       }
-      nbt.merge({ data: { stage: 0, recipe: "" } });
+      nbt.merge({ data: { stage: 0, recipe: "", originalInputs: [] } });
       block.setEntityData(nbt);
       newProperties.working = false;
       newProperties.mature = false;
@@ -477,7 +477,8 @@ const getMushroomLogData = (level, centerPos, radius) => {
   }
   return {
     count: airBlocks < 100 ? 4 : scannedBlocks,
-    possibleOutputs: dominantOutputs.length > 0 ? dominantOutputs : regularOutputs,
+    possibleOutputs:
+      dominantOutputs.length > 0 ? dominantOutputs : regularOutputs,
   };
 };
 global.handleMushroomLogRandomTick = (tickEvent) => {
@@ -982,7 +983,7 @@ global.handleSkullCavernRegen = (level, block) => {
   }
 };
 const getCardinalMultipartJsonBasic = (name) => {
-  const path = `society:block/${name}`;
+  const path = `society:block/kubejs/${name}`;
   return [
     {
       when: { facing: "north" },
@@ -1004,7 +1005,7 @@ const getCardinalMultipartJsonBasic = (name) => {
 };
 
 const getCardinalMultipartJsonBasicUpgradable = (name, upgraded) => {
-  const path = `society:block/${name}`;
+  const path = `society:block/kubejs/${name}`;
   return [
     {
       when: { facing: "north", upgraded: upgraded },
@@ -1138,18 +1139,18 @@ global.getCropQuality = (crop) => {
   // console.log("Seed quality " + seedQuality);
   // console.log("Fertilizer quality " + fertilizer);
   // console.log("Chance for gold: " + goldChance);
-  if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
+  if (fertilizer >= 2 && Math.random() < goldChance / 2) return 3;
   if (Math.random() < goldChance) return 2;
   if (Math.random() < goldChance * 2) return 1;
   return 0;
 };
 
 const getCardinalMultipartJson = (name, disableExclamation) => {
-  const path = `society:block/${name}/${name}`;
+  const path = `society:block/kubejs/${name}/${name}`;
   let exclamationJson = [
     {
       when: { mature: true },
-      apply: { model: "society:block/machine_done" },
+      apply: { model: "society:block/kubejs/machine_done" },
     },
   ];
   if (disableExclamation) {
@@ -1225,11 +1226,11 @@ const getCardinalMultipartJson = (name, disableExclamation) => {
   ];
   return [
     {
-      apply: { model: `society:block/${name}/${name}_particle` },
+      apply: { model: `society:block/kubejs/${name}/${name}_particle` },
     },
     {
       when: { mature: true },
-      apply: { model: "society:block/machine_done" },
+      apply: { model: "society:block/kubejs/machine_done" },
     },
     {
       when: { working: true, upgraded: false, facing: "north" },

@@ -389,7 +389,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.prize_machine.description").gray());
       item.modelJson({
-        parent: "society:block/prize_machine",
+        parent: "society:block/kubejs/prize_machine",
       });
     })
     .defaultState((state) => {
@@ -466,12 +466,12 @@ StartupEvents.registry("block", (event) => {
     }).blockstateJson = {
     multipart: [
       {
-        apply: { model: "society:block/prize_machine_particle" },
+        apply: { model: "society:block/kubejs/prize_machine_particle" },
       },
       {
         when: { facing: "north" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: 0,
           uvlock: false,
         },
@@ -479,7 +479,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "east" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: 90,
           uvlock: false,
         },
@@ -487,7 +487,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "south" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: 180,
           uvlock: false,
         },
@@ -495,7 +495,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "west" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: -90,
           uvlock: false,
         },

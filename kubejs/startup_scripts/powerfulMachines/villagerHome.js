@@ -11,10 +11,10 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Brings the invited villager to its housing and sets its home point."));
       item.modelJson({
-        parent: "society:block/villager_home",
+        parent: "society:block/kubejs/villager_home",
       });
     })
-    .model("society:block/villager_home")
+    .model("society:block/kubejs/villager_home")
     .blockEntity((blockInfo) => {
       blockInfo.enableSync();
       blockInfo.initialData({ placer: "-1", type: "", spawned: false });

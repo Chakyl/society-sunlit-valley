@@ -187,7 +187,7 @@ BlockEvents.broken(
   ],
   (e) => {
     const { level, player, server, block } = e;
-    if (player.stages.has("pylon_rope_reveal") &&  Math.random() < 0.15) {
+    if (player.stages.has("moon_rope_reveal") &&  Math.random() < 0.15) {
       const { x, y, z } = block;
       let scanBlock;
       let abovePos;

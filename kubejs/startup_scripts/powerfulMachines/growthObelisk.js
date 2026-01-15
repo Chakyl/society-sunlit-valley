@@ -36,11 +36,11 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(Text.translatable("tooltip.society.area", `7x1x7`).green());
       item.tooltip(Text.translatable("block.society.growth_obelisk.description.fuel").lightPurple());
       item.modelJson({
-        parent: "society:block/growth_obelisk/display",
+        parent: "society:block/kubejs/growth_obelisk/display",
       });
     })
     .soundType("stone")
-    .model("society:block/growth_obelisk/lower")
+    .model("society:block/kubejs/growth_obelisk/lower")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -68,5 +68,5 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .soundType("stone")
-    .model("society:block/growth_obelisk/upper");
+    .model("society:block/kubejs/growth_obelisk/upper");
 });

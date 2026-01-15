@@ -8,8 +8,34 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   let machineOutputs;
   let newProperties = fishPond.getProperties();
   let nbt = fishPond.getEntityData();
-  const { type, population } = nbt.data;
+  const { type, max_population, population } = nbt.data;
   if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
+  if (
+    newProperties.get("mature").toLowerCase() === "true" &&
+    max_population === population &&
+    global.inventoryBelowHasRoom(level, block, global.getRoe(type)) &&
+    global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
+  ) {
+    machineOutputs = global.handleFishHarvest(fishPond, player, server, true);
+
+    if (machineOutputs.length > 0) {
+      machineOutputs.forEach((item) => {
+        global.insertBelow(level, block, item);
+      });
+      level.spawnParticles(
+        "species:ascending_dust",
+        true,
+        x,
+        y + 1,
+        z,
+        0.2 * rnd(1, 1.5),
+        0.2 * rnd(1, 1.5),
+        0.2 * rnd(1, 1.5),
+        3,
+        0.01
+      );
+    }
+  }
   if (
     newProperties.get("mature").toLowerCase() === "true" &&
     level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
@@ -35,31 +61,6 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
       );
     }
   }
-  if (
-    newProperties.get("mature").toLowerCase() === "true" &&
-    global.inventoryBelowHasRoom(level, block, global.getRoe(type)) &&
-    global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
-  ) {
-    machineOutputs = global.handleFishHarvest(fishPond, player, server, true);
-
-    if (machineOutputs.length > 0) {
-      machineOutputs.forEach((item) => {
-        global.insertBelow(level, block, item);
-      });
-      level.spawnParticles(
-        "species:ascending_dust",
-        true,
-        x,
-        y + 1,
-        z,
-        0.2 * rnd(1, 1.5),
-        0.2 * rnd(1, 1.5),
-        0.2 * rnd(1, 1.5),
-        3,
-        0.01
-      );
-    }
-  }
 };
 
 StartupEvents.registry("block", (event) => {
@@ -70,23 +71,41 @@ StartupEvents.registry("block", (event) => {
     .waterlogged()
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.fish_pond_basket.description").gray());
-      item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
-      item.tooltip(Text.translatable("block.society.fish_pond_basket.description.upgrade").gold());
+      item.tooltip(
+        Text.translatable("block.society.fish_pond_basket.description").gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "society.working_block_entity.apply_player_skill"
+        ).gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.fish_pond_basket.description.upgrade"
+        ).gold()
+      );
       item.tooltip(Text.translatable("tooltip.society.area", `3x3x3`).green());
-      item.tooltip(Text.translatable("block.society.fish_pond_basket.description.fuel").lightPurple());
+      item.tooltip(
+        Text.translatable(
+          "block.society.fish_pond_basket.description.fuel"
+        ).lightPurple()
+      );
       item.modelJson({
-        parent: "society:block/fish_pond_basket",
+        parent: "society:block/kubejs/fish_pond_basket",
       });
     })
     .soundType("copper")
-    .model("society:block/fish_pond_basket")
+    .model("society:block/kubejs/fish_pond_basket")
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
-      state.set(booleanProperty.create("upgraded"), false).set(BlockProperties.WATERLOGGED, false);
+      state
+        .set(booleanProperty.create("upgraded"), false)
+        .set(BlockProperties.WATERLOGGED, false);
     })
     .placementState((state) => {
-      state.set(booleanProperty.create("upgraded"), false).set(BlockProperties.WATERLOGGED, false);
+      state
+        .set(booleanProperty.create("upgraded"), false)
+        .set(BlockProperties.WATERLOGGED, false);
     })
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
@@ -103,11 +122,10 @@ StartupEvents.registry("block", (event) => {
         });
         if (attachedPlayer) {
           let scanBlock;
-          for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-            x + radius,
-            y + radius,
-            z + radius,
-          ])) {
+          for (let pos of BlockPos.betweenClosed(
+            new BlockPos(x - radius, y - radius, z - radius),
+            [x + radius, y + radius, z + radius]
+          )) {
             scanBlock = level.getBlock(pos);
             if (scanBlock.id === "society:fish_pond") {
               global.runFishPondBasket(entity, pos.immutable(), attachedPlayer);
@@ -124,19 +142,23 @@ StartupEvents.registry("block", (event) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
+          .getSlotLimit((blockEntity, slot) =>
+            blockEntity.inventory.getSlotLimit(slot)
+          )
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
+          .getStackInSlot((blockEntity, slot) =>
+            blockEntity.inventory.getStackInSlot(slot)
+          )
       );
     }).blockstateJson = {
     multipart: [
       {
         when: { upgraded: "false" },
-        apply: { model: "society:block/fish_pond_basket" },
+        apply: { model: "society:block/kubejs/fish_pond_basket" },
       },
       {
         when: { upgraded: "true" },
-        apply: { model: "society:block/fish_pond_basket_upgraded" },
+        apply: { model: "society:block/kubejs/fish_pond_basket_upgraded" },
       },
     ],
   };

@@ -232,7 +232,7 @@ StartupEvents.registry("block", (e) => {
       state.set(booleanProperty.create("upgraded"), false);
     })
     .soundType("stone")
-    .model("society:block/ribbit_hut/bottom_front_center")
+    .model("society:block/kubejs/ribbit_hut/bottom_front_center")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 3);
       blockInfo.initialData({ owner: "-1" });

@@ -24,7 +24,7 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("block.society.oil_maker.description").gray()
       );
       item.modelJson({
-        parent: "society:block/oil_maker/oil_maker_off",
+        parent: "society:block/kubejs/oil_maker/oil_maker_off",
       });
     })
     .defaultState((state) => {

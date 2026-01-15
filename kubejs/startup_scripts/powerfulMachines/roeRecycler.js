@@ -102,10 +102,10 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("block.society.roe_recycler.description").gray()
       );
       item.modelJson({
-        parent: "society:block/roe_recycler",
+        parent: "society:block/kubejs/roe_recycler",
       });
     })
-    .model("society:block/roe_recycler")
+    .model("society:block/kubejs/roe_recycler")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(20, 0, (entity) => {

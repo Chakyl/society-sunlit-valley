@@ -1,0 +1,45 @@
+{
+	"id": "banker_chatter_friendship3_5",
+	"title": "[5] banker chatter at friendship level: friendship3",
+	"description": "dialog.npc.banker.chatter.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.chatter_friendship3.5.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.chatter_friendship3.5.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

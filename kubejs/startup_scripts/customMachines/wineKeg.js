@@ -70,7 +70,7 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("block.society.wine_keg.description").gray()
       );
       item.modelJson({
-        parent: "society:block/wine_keg/wine_keg",
+        parent: "society:block/kubejs/wine_keg/wine_keg",
       });
     })
     .defaultState((state) => {

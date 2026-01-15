@@ -105,7 +105,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.bait_maker.description").gray());
       item.modelJson({
-        parent: "society:block/bait_maker/bait_maker_off",
+        parent: "society:block/kubejs/bait_maker/bait_maker_off",
       });
     })
     .defaultState((state) => {
