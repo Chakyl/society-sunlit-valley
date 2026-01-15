@@ -1,4 +1,17 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
+const crashableHammers = [
+  "botania:terra_pick",
+  "justhammers:diamond_impact_hammer",
+  "justhammers:gold_impact_hammer",
+  "justhammers:iron_impact_hammer",
+  "justhammers:stone_impact_hammer",
+  "justhammers:netherite_hammer",
+  "justhammers:diamond_hammer",
+  "justhammers:gold_hammer",
+  "justhammers:iron_hammer",
+  "justhammers:stone_hammer",
+  "justhammers:netherite_impact_hammer",
+];
 
 const biomeAirTypeMap = new Map([
   ["society:cavern_top", 0],
@@ -76,9 +89,17 @@ BlockEvents.broken(
     "society:palm_supply_crate",
   ],
   (e) => {
-    const { level, block, server } = e;
+    const { level, block, player, server } = e;
     const pos = block.getPos();
     if (level.dimension === "society:skull_cavern") {
+      if (crashableHammers.includes(player.getHeldItem("main_hand").id)) {
+        e.player.tell(
+          Text.red(
+            "This mining tool has been temporarily disabled in the Skull Cavern to investigate crashing issues on CDU! Apologies for the inconvenience! - Chakyl :skamtebord:"
+          )
+        );
+        e.cancel();
+      }
       let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
       scheduleFunction(level, pos.immutable(), server, rockType);
     }
