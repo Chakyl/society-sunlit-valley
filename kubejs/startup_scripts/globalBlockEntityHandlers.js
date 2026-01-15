@@ -207,7 +207,7 @@ global.artisanHarvest = (
       } else {
         hopperOutputs.push(harvestOutput);
       }
-      nbt.merge({ data: { stage: 0, recipe: "" } });
+      nbt.merge({ data: { stage: 0, recipe: "", originalInputs: [] } });
       block.setEntityData(nbt);
       newProperties.working = false;
       newProperties.mature = false;
@@ -477,7 +477,8 @@ const getMushroomLogData = (level, centerPos, radius) => {
   }
   return {
     count: airBlocks < 100 ? 4 : scannedBlocks,
-    possibleOutputs: dominantOutputs.length > 0 ? dominantOutputs : regularOutputs,
+    possibleOutputs:
+      dominantOutputs.length > 0 ? dominantOutputs : regularOutputs,
   };
 };
 global.handleMushroomLogRandomTick = (tickEvent) => {
