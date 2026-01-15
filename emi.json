@@ -40,6 +40,20 @@
   "lookup_history": [
     {
       "type": "item",
+      "id": "society:ember_crystal_cluster",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "society:sap",
+      "amount": 8
+    },
+    "item:netherdepthsupgrade:obsidianfish{quality_food:{effects:[],quality:3}}",
+    "item:society:sparkstone_recycler",
+    "item:society:auto_grabber",
+    "item:numismatics:ancient_coin",
+    {
+      "type": "item",
       "id": "society:mossberry_preserves",
       "amount": 4
     },
@@ -81,8 +95,6 @@
     "item:cluttered:sweetheart_table",
     "item:society:bubble_totem",
     "item:numismatics:neptunium_coin",
-    "item:numismatics:ancient_coin",
-    "item:society:auto_grabber",
     "item:minecraft:netherite_ingot",
     "item:vinery:cristel_wine",
     "item:vinery:red_wine",
@@ -523,7 +535,6 @@
       "id": "minecraft:hay_block",
       "amount": 4
     },
-    "item:society:sparkstone_recycler",
     {
       "type": "item",
       "id": "farm_and_charm:fertilizer",
@@ -937,11 +948,6 @@
       "amount": 3
     },
     "item:create:tree_fertilizer",
-    {
-      "type": "item",
-      "id": "society:sap",
-      "amount": 2
-    },
     "item:twigs:pebble",
     "item:numismatics:sprocket",
     "item:splendid_slimes:plort_rippit",
@@ -1515,11 +1521,10 @@
       "nbt": "{quality_food:{effects:[],quality:2}}",
       "amount": 62
     },
-    "item:dew_drop_farmland_growth:hydrating_fertilizer",
-    "item:dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
-    "item:trials:music_disc_creator_box"
+    "item:dew_drop_farmland_growth:hydrating_fertilizer"
   ],
   "craft_history": [
+    "minecraft:kjs/society_auto_grabber",
     "minecraft:kjs/numismatics_ancient_coin",
     "minecraft:kjs/society_mushroom_log",
     "minecraft:kjs/society_sunlit_pearl",

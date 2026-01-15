@@ -1139,7 +1139,7 @@ global.getCropQuality = (crop) => {
   // console.log("Seed quality " + seedQuality);
   // console.log("Fertilizer quality " + fertilizer);
   // console.log("Chance for gold: " + goldChance);
-  if (fertilizer == 3 && Math.random() < goldChance / 2) return 3;
+  if (fertilizer >= 2 && Math.random() < goldChance / 2) return 3;
   if (Math.random() < goldChance) return 2;
   if (Math.random() < goldChance * 2) return 1;
   return 0;
