@@ -1700,6 +1700,7 @@ global.miscAdventurer = [
   { item: "windswept:elder_feather", value: 128 },
   { item: "windswept:frozen_branch", value: 200 },
   { item: "crittersandcompanions:silk", value: 128 },
+  { item: "crittersandcompanions:dragonfly_wing", value: 3300 },
   { item: "society:river_jelly", value: 128 },
   { item: "society:ocean_jelly", value: 256 },
   { item: "society:nether_jelly", value: 512 },
