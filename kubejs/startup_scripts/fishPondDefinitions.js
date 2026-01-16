@@ -3654,7 +3654,6 @@ global.fishPondDefinitions = new Map([
           population: 7,
           requestedItems: [
             { item: "society:aged_energy_drink", count: 8 },
-            { item: "society:petrified_mayonnaise", count: 1 },
             { item: "society:pristine_amethyst_chunk", count: 1 },
           ],
         },
@@ -3673,7 +3672,7 @@ global.fishPondDefinitions = new Map([
           chance: 0.17,
         },
         {
-          minPopulation: 5,
+          minPopulation: 6,
           item: "society:sparkstone",
           count: 16,
           chance: 0.25,

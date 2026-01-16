@@ -712,7 +712,6 @@ global.removedItems = [
   "crittersandcompanions:gold_dragonfly_armor",
   "crittersandcompanions:iron_dragonfly_armor",
   "crittersandcompanions:dragonfly_spawn_egg",
-  "crittersandcompanions:dragonfly_wing",
   "crittersandcompanions:pearl",
   "crittersandcompanions:pearl_necklace_1",
   "crittersandcompanions:pearl_necklace_2",

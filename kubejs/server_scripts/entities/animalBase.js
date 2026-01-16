@@ -448,15 +448,18 @@ const handleSpecialItem = (
   let mood;
   let resolvedItem = item;
   let resolvedChance = chance;
+  let resolvedHasQuality = hasQuality
+  let dropAmount =
+    mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1);
   if (plushieModifiers) {
     affection = 1000;
     mood = 256;
     resolvedChance = chance + plushieModifiers.probabilityIncrease;
     if (plushieModifiers.processItems) {
-      let processOutput = global.mayonnaiseMachineRecipes.get(item);
-      if (processOutput) {
-        resolvedItem = Item.of(processOutput.output[0]).id;
-      }
+      let processOutput = global.getProcessedItem(item, dropAmount);
+      resolvedItem = processOutput.item;
+      dropAmount = Math.round(dropAmount / processOutput.divisor);
+      resolvedHasQuality = processOutput.preserveQuality
     }
   } else {
     affection = data.getInt("affection") || 0;
@@ -481,16 +484,14 @@ const handleSpecialItem = (
         affection + (player.stages.has("animal_whisperer") ? 20 : 10);
     }
     let specialItem = level.createEntity("minecraft:item");
-    if (hasQuality && mood >= 160) {
+    if (resolvedHasQuality && mood >= 160) {
       quality = global.getHusbandryQuality(hearts, mood);
     }
     specialItem.x = player.x;
     specialItem.y = player.y;
     specialItem.z = player.z;
     specialItem.item = Item.of(
-      `${
-        mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1)
-      }x ${resolvedItem}`,
+      `${dropAmount}x ${resolvedItem}`,
       quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
     );
     specialItem.spawn();
