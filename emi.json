@@ -40,6 +40,42 @@
   "lookup_history": [
     {
       "type": "item",
+      "id": "windswept:pinecone",
+      "amount": 32
+    },
+    "item:society:mossberry",
+    "item:pamhc2trees:starfruititem",
+    "item:crittersandcompanions:jumping_spider_spawn_egg",
+    "item:aquaculture:turtle_soup",
+    "item:society:aged_starshell_turtle_roe",
+    "item:crittersandcompanions:shima_enaga_spawn_egg",
+    "item:crittersandcompanions:koi_fish_spawn_egg",
+    "item:crittersandcompanions:red_panda_spawn_egg",
+    "item:crittersandcompanions:ferret_spawn_egg",
+    {
+      "type": "item",
+      "id": "vinery:aegis_wine",
+      "nbt": "{EffectAmplifier:0,EffectDuration:1800,Year:25,quality_food:{effects:[],quality:3}}",
+      "amount": 2
+    },
+    "item:wildernature:squirrel_spawn_egg",
+    "item:minecraft:panda_spawn_egg",
+    "item:whimsy_deco:adv_big_panda_plushie",
+    "item:perfectplushies:adv_red_panda_plushie",
+    "item:perfectplushies:adv_panda_plushie",
+    {
+      "type": "item",
+      "id": "windswept:frozen_branch",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "atmospheric:orange",
+      "amount": 2
+    },
+    {
+      "type": "item",
       "id": "society:ember_crystal_cluster",
       "amount": 2
     },
@@ -90,7 +126,6 @@
     "item:meadow:wooden_bucket",
     "item:society:fish_pond",
     "item:society:sparkstone_block",
-    "item:society:aged_starshell_turtle_roe",
     "item:society:artifact_trove",
     "item:cluttered:sweetheart_table",
     "item:society:bubble_totem",
@@ -229,11 +264,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
+      "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -244,9 +279,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/zucchini",
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -282,11 +317,6 @@
     },
     "item:minecraft:oak_log",
     "item:vinery:magnetic_wine",
-    {
-      "type": "item",
-      "id": "society:mossberry",
-      "amount": 8
-    },
     "item:society:preserves_jar",
     "item:minecraft:copper_block",
     "item:minecraft:coal_block",
@@ -641,7 +671,6 @@
     "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"botania:yellow_mushroom\"}}",
     "item:society:ancient_fruit",
     "item:society:crystalberry",
-    "item:atmospheric:orange",
     "item:pamhc2trees:dragonfruititem",
     "item:vintagedelight:sweet_berry_mason_jar",
     "item:pamhc2trees:peachitem",
@@ -761,7 +790,6 @@
     "item:pamhc2trees:pawpawitem",
     "item:pamhc2trees:hazelnutitem",
     "item:pamhc2trees:mangoitem",
-    "item:pamhc2trees:starfruititem",
     "item:pamhc2trees:roastedhazelnutitem",
     "item:society:foul_berries_preserves",
     "item:society:melon_preserves",
@@ -1460,7 +1488,6 @@
     "item:unusualfishmod:raw_aero_mono",
     "item:botania:rune_winter",
     "item:windswept:wild_berries",
-    "item:windswept:frozen_branch",
     "item:society:frozen_geode",
     "item:simplehats:frozenhead",
     "item:species:frozen_hair",
@@ -1490,38 +1517,7 @@
     },
     "item:vintagedelight:salt_lamp_lime",
     "item:vintagedelight:mixed_salt_brick_wall",
-    "item:vintagedelight:salt_lamp_yellow",
-    "item:vintagedelight:salted_cod",
-    "item:vintagedelight:salt_lamp_brown",
-    "item:vintagedelight:salt_lamp_blue",
-    "item:vintagedelight:salt_lamp_gray",
-    "item:vintagedelight:salt_pillar",
-    {
-      "type": "item",
-      "id": "society:espresso_machine",
-      "amount": 64
-    },
-    "item:oreganized:raw_silver",
-    "item:society:jade",
-    {
-      "type": "item",
-      "id": "oreganized:lead_ingot",
-      "amount": 9
-    },
-    {
-      "type": "item",
-      "id": "vintagedelight:cucumber",
-      "nbt": "{quality_food:{effects:[],quality:2}}",
-      "amount": 64
-    },
-    "item:minecraft:oak_fence_gate",
-    {
-      "type": "item",
-      "id": "vintagedelight:pickle",
-      "nbt": "{quality_food:{effects:[],quality:2}}",
-      "amount": 62
-    },
-    "item:dew_drop_farmland_growth:hydrating_fertilizer"
+    "item:vintagedelight:salt_lamp_yellow"
   ],
   "craft_history": [
     "minecraft:kjs/society_auto_grabber",

@@ -1,0 +1,17 @@
+{
+  "name": "Shima Enaga",
+  "category": "patchouli:animals",
+  "icon": "atmospheric:currant",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Forage: Currant (100% chance), Cherry (65% chance), Mossberry (10% chance)$(li)Drops: Feather$(br2)$(l)Notes$()$(br)Foraging requires 2+ hearts. Can be found in snowy biomes and tamed with seeds."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:shima_enaga",
+      "scale": 0.7,
+      "text": "Adorable snow bird!!!@"
+    }
+  ]
+}

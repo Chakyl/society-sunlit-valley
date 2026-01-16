@@ -857,6 +857,29 @@ global.giveExperience = (server, player, category, xp) => {
   }
 };
 
+/**
+ * If you can figure out a way to simplify this in a way that doesn't make it
+ * More difficult to read you get an artifact in-game.
+ */
+global.getProcessedItem = (item, dropAmount) => {
+  let processOutput = global.mayonnaiseMachineRecipes.get(item);
+  if (processOutput)
+    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
+  processOutput = global.wineKegRecipes.get(item);
+  if (processOutput && dropAmount >= 3)
+    return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+  processOutput = global.oilMakerRecipes.get(item);
+  if (processOutput && dropAmount >= 5)
+    return { divisor: 5, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+  processOutput = global.loomRecipes.get(item);
+  if (processOutput)
+    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+  processOutput = global.recyclingMachineRecipes.get(item);
+  if (processOutput)
+    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+  return { divisor: 1, item: item, preserveQuality: true };
+};
+
 const stoneRockTable = [
   { block: "society:stone_boulder", weight: 163 },
   { block: "minecraft:coal_ore", weight: 25 },

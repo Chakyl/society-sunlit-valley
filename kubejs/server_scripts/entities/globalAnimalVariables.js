@@ -43,6 +43,9 @@ global.husbandryAnimals = [
   "minecraft:glow_squid",
   "crittersandcompanions:red_panda",
   "windswept:frostbiter",
+  "minecraft:bat",
+  "crittersandcompanions:shima_enaga",
+  "minecraft:turtle",
 ];
 
 global.milkableAnimals = [
@@ -73,6 +76,7 @@ global.coopMasterAnimals = [
   "wildernature:flamingo",
   "wildernature:penguin",
   "farmlife:galliraptor",
+  "crittersandcompanions:shima_enaga",
 ];
 
 global.tierTwoHusbandryAnimals = [
@@ -89,6 +93,7 @@ global.tierTwoHusbandryAnimals = [
   "minecraft:rabbit",
   "wildernature:squirrel",
   "autumnity:turkey",
+  "minecraft:turtle",
 ];
 
 global.tierThreeHusbandryAnimals = [
@@ -103,6 +108,7 @@ global.tierThreeHusbandryAnimals = [
   "wildernature:flamingo",
   "wildernature:penguin",
   "farmlife:galliraptor",
+  "crittersandcompanions:shima_enaga",
 ];
 
 global.coldMobs = [

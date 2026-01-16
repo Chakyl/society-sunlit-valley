@@ -227,7 +227,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("amethyst")
     .hardness(2)
     .resistance(1.0)
-    .textureAll("society:block/kubejs/sparkstone_block");
+    .textureAll("society:block/sparkstone_block");
 
   // Compressed Crops block
   e.create("society:animal_feed_sack", "cardinal")
