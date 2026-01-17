@@ -3,12 +3,7 @@
 global.springOcean = [
   { fish: "aquaculture:atlantic_herring", weight: 16 },
   { fish: "aquaculture:atlantic_herring", weight: 16, night: true },
-  {
-    fish: "minecraft:pufferfish",
-    weight: 9,
-    night: true,
-    requiresClear: true,
-  },
+  { fish: "minecraft:pufferfish", weight: 9, night: true, requiresClear: true },
   { fish: "aquaculture:jellyfish", weight: 9, night: true },
   { fish: "minecraft:tropical_fish", weight: 8 },
   { fish: "minecraft:tropical_fish", weight: 8, night: true },
@@ -213,7 +208,7 @@ global.getFishFromRoe = (roe) => {
   let roeId = roe.split(":")[1].slice(0, -4);
   if (roeId.includes("frosty_fin")) roeId = "raw_snowflake";
   return Array.from(global.fishPondDefinitions.keys()).find((fish) =>
-    fish.includes(roeId)
+    fish.includes(roeId),
   );
 };
 
@@ -243,7 +238,7 @@ global.handleFishHarvest = (block, player, server, basket) => {
   const fishRoe = global.getRoe(type);
   const calculateRoe = rnd(
     Math.floor(population / 4),
-    Math.floor(population / 2) + additionalMaxRoe
+    Math.floor(population / 2) + additionalMaxRoe,
   );
   const roeCount = calculateRoe > 1 ? calculateRoe : 1;
   harvestOutputs.push(`${roeCount}x ${fishRoe}`);
@@ -258,17 +253,17 @@ global.handleFishHarvest = (block, player, server, basket) => {
         // Rewards scale to amount of fish population relative to when reward starts spawning
         let calculateCount = Math.floor(
           reward.count *
-            ((population - reward.minPopulation) / (10 - reward.minPopulation))
+            ((population - reward.minPopulation) / (10 - reward.minPopulation)),
         );
         if (population == 10) calculateCount = reward.count;
         harvestOutputs.push(
-          `${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`
+          `${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`,
         );
       }
     });
   }
   server.runCommandSilent(
-    `playsound stardew_fishing:dwop block @a ${block.x} ${block.y} ${block.z}`
+    `playsound stardew_fishing:dwop block @a ${block.x} ${block.y} ${block.z}`,
   );
   if (!basket) {
     global.giveExperience(server, player, "fishing", roeCount * 4);
@@ -299,7 +294,7 @@ global.handleFishExtraction = (block, player, server) => {
   }
   if (player.stages.has("hot_hands") && naturalPopulation > 0) {
     server.runCommandSilent(
-      `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`
+      `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`,
     );
     let smokedFishId = type.path;
     if (smokedFishId.includes("raw_")) {
@@ -310,7 +305,7 @@ global.handleFishExtraction = (block, player, server) => {
       `${resultCount}x ${
         rnd25() ? "minecraft:coal" : `society:smoked_${smokedFishId}`
       }`,
-      quality > 0 ? `{quality_food:{quality:${quality}}}` : null
+      quality > 0 ? `{quality_food:{quality:${quality}}}` : null,
     );
   } else {
     if (["aquaculture:leech", "aquaculture:minnow"].includes(type)) {
@@ -318,12 +313,12 @@ global.handleFishExtraction = (block, player, server) => {
         `${resultCount}x ${type}`,
         quality > 0
           ? `{Damage:0,quality_food:{quality:${quality},effects:[]}}`
-          : `{Damage:0}`
+          : `{Damage:0}`,
       );
     } else {
       result = Item.of(
         `${resultCount}x ${type}`,
-        quality > 0 ? `{quality_food:{quality:${quality},effects:[]}}` : null
+        quality > 0 ? `{quality_food:{quality:${quality},effects:[]}}` : null,
       );
     }
   }
@@ -345,66 +340,22 @@ global.validatePond = (block, level, lavaFish) => {
   const { x, y, z } = block;
   const facing = block.properties.get("facing");
   const pondWaterCheckMap = {
-    north: {
-      startX: 1,
-      startZ: 4,
-      endX: -1,
-      endZ: 1,
-    },
-    south: {
-      startX: -1,
-      startZ: -4,
-      endX: 1,
-      endZ: -1,
-    },
-    east: {
-      startX: -1,
-      startZ: 1,
-      endX: -4,
-      endZ: -1,
-    },
-    west: {
-      startX: 1,
-      startZ: -1,
-      endX: 4,
-      endZ: 1,
-    },
+    north: { startX: 1, startZ: 4, endX: -1, endZ: 1 },
+    south: { startX: -1, startZ: -4, endX: 1, endZ: -1 },
+    east: { startX: -1, startZ: 1, endX: -4, endZ: -1 },
+    west: { startX: 1, startZ: -1, endX: 4, endZ: 1 },
   };
   const pondCheckMap = {
-    north: {
-      xOffset: 0,
-      zOffset: 5,
-    },
-    south: {
-      xOffset: 0,
-      zOffset: -5,
-    },
-    east: {
-      xOffset: -5,
-      zOffset: 0,
-    },
-    west: {
-      xOffset: 5,
-      zOffset: 0,
-    },
+    north: { xOffset: 0, zOffset: 5 },
+    south: { xOffset: 0, zOffset: -5 },
+    east: { xOffset: -5, zOffset: 0 },
+    west: { xOffset: 5, zOffset: 0 },
   };
   const adjacentPondMap = {
-    north: {
-      xOffset: 1,
-      zOffset: 0,
-    },
-    south: {
-      xOffset: 1,
-      zOffset: 0,
-    },
-    east: {
-      xOffset: 0,
-      zOffset: 1,
-    },
-    west: {
-      xOffset: 0,
-      zOffset: 1,
-    },
+    north: { xOffset: 1, zOffset: 0 },
+    south: { xOffset: 1, zOffset: 0 },
+    east: { xOffset: 0, zOffset: 1 },
+    west: { xOffset: 0, zOffset: 1 },
   };
   const { startX, startZ, endX, endZ } = pondWaterCheckMap[facing];
   const { xOffset, zOffset } = pondCheckMap[facing];
@@ -415,15 +366,15 @@ global.validatePond = (block, level, lavaFish) => {
       new BlockPos(
         x + adjacentPondMap[facing].xOffset,
         y,
-        z + adjacentPondMap[facing].zOffset
-      )
+        z + adjacentPondMap[facing].zOffset,
+      ),
     ).id === "society:fish_pond" ||
     level.getBlock(
       new BlockPos(
         x - adjacentPondMap[facing].xOffset,
         y,
-        z - adjacentPondMap[facing].zOffset
-      )
+        z - adjacentPondMap[facing].zOffset,
+      ),
     ).id === "society:fish_pond";
   let waterAmount = 0;
   let scannedId = "";
@@ -431,7 +382,7 @@ global.validatePond = (block, level, lavaFish) => {
 
   for (let pos of BlockPos.betweenClosed(
     new BlockPos(x + startX, y, z + startZ),
-    [x + endX, y, z + endZ]
+    [x + endX, y, z + endZ],
   )) {
     scannedBlockProperties = level.getBlock(pos).properties;
     scannedId = level.getBlock(pos).id;
@@ -458,6 +409,21 @@ const fishPondTickRate = 100;
 
 const fishPondProgTime = 40;
 
+global.convertPondFromLegacy = (block) => {
+  let nbt = block.getEntityData();
+  let newRecipe;
+  if (!nbt.data.contains("type")) return;
+  if (!String(nbt.data.type).includes(":")) {
+    newRecipe = Array.from(global.fishPondDefinitions.keys())[
+      Number(nbt.data.type) - 1
+    ];
+    if (newRecipe) {
+      nbt.merge({ data: { type: newRecipe } });
+      block.setEntityData(nbt);
+    }
+  }
+};
+
 global.handleFishPondTick = (tickEvent) => {
   const { block, level } = tickEvent;
   const { x, y, z } = block;
@@ -465,12 +431,26 @@ global.handleFishPondTick = (tickEvent) => {
   let morningModulo = dayTime % 24000;
   let blockProperties = level.getBlock(block.pos).getProperties();
 
-  if (blockProperties.get("mature") === "true") return;
-  const { facing, valid, mature, upgraded, quest } = global.getPondProperties(
-    level.getBlock(block.pos)
-  );
   let nbt = block.getEntityData();
+  if (
+    blockProperties.get("mature") === "true" &&
+    String(nbt.data.type).includes(":")
+  )
+    return;
+  const { facing, valid, mature, upgraded, quest } = global.getPondProperties(
+    level.getBlock(block.pos),
+  );
   const { type, population, max_population, non_native_fish } = nbt.data;
+  if (type == 0) {
+    let defaultNbt = block.getEntityData();
+    defaultNbt.merge({ data: { type: "" } });
+    block.setEntityData(defaultNbt);
+    return;
+  }
+  if (!String(type).includes(":")) {
+    global.convertPondFromLegacy(block);
+    return;
+  }
   const fish = global.fishPondDefinitions.get(type);
   if (!type.equals("") && tickEvent.tick % 20 === 0) {
     block.set(block.id, {
@@ -497,7 +477,7 @@ global.handleFishPondTick = (tickEvent) => {
           0.1 * rnd(1, 2),
           0.1 * rnd(1, 2),
           rnd(2, 6),
-          0.001
+          0.001,
         );
         block.set(block.id, {
           facing: facing,
@@ -526,8 +506,8 @@ global.handleFishPondTick = (tickEvent) => {
               0,
               getRequestedItems(
                 global.fishPondDefinitions[type - 1],
-                max_population
-              ).length - 1
+                max_population,
+              ).length - 1,
             )}`,
           },
         });
@@ -535,20 +515,14 @@ global.handleFishPondTick = (tickEvent) => {
       } else if (population !== max_population) {
         successParticles(level, block);
         level.server.runCommandSilent(
-          `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`
+          `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`,
         );
-        nbt.merge({
-          data: {
-            population: increaseStage(population),
-          },
-        });
+        nbt.merge({ data: { population: increaseStage(population) } });
         block.setEntityData(nbt);
       }
       if (population === max_population && non_native_fish > 0) {
         nbt.merge({
-          data: {
-            non_native_fish: decreaseStage(non_native_fish),
-          },
+          data: { non_native_fish: decreaseStage(non_native_fish) },
         });
         block.setEntityData(nbt);
       }

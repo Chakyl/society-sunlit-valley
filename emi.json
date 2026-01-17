@@ -35,6 +35,9 @@
     },
     {
       "stack": "item:netherdepthsupgrade:lava_pufferfish{quality_food:{effects:[],quality:3}}"
+    },
+    {
+      "stack": "item:minecraft:stripped_spruce_log"
     }
   ],
   "lookup_history": [
@@ -270,11 +273,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -285,16 +288,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/zucchini",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/potato",
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
