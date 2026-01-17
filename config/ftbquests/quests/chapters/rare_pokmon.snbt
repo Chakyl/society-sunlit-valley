@@ -665,9 +665,9 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Ultra Master"
+			title: "Legendary Master"
 			x: -7.0d
-			y: -15.0d
+			y: -18.5d
 		}
 		{
 			description: [""]
@@ -694,7 +694,7 @@
 			}]
 			title: "Chien-Pao"
 			x: -4.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			description: [""]
@@ -721,7 +721,7 @@
 			}]
 			title: "Chi-Yu"
 			x: -2.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			description: [""]
@@ -748,7 +748,7 @@
 			}]
 			title: "Fezandipiti"
 			x: 2.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			description: [""]
@@ -775,7 +775,7 @@
 			}]
 			title: "Okidogi"
 			x: 0.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			description: [""]
@@ -802,7 +802,7 @@
 			}]
 			title: "Ogerpon"
 			x: 4.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			description: [""]
@@ -829,7 +829,7 @@
 			}]
 			title: "Articuno"
 			x: -4.0d
-			y: -16.0d
+			y: -19.5d
 		}
 		{
 			description: [""]
@@ -856,7 +856,7 @@
 			}]
 			title: "Zapdos"
 			x: -2.0d
-			y: -16.0d
+			y: -19.5d
 		}
 		{
 			description: [""]
@@ -883,7 +883,7 @@
 			}]
 			title: "Moltres"
 			x: 0.0d
-			y: -16.0d
+			y: -19.5d
 		}
 		{
 			description: [""]
@@ -910,7 +910,7 @@
 			}]
 			title: "Mewtwo"
 			x: 3.0d
-			y: -16.0d
+			y: -19.5d
 		}
 		{
 			description: [""]
@@ -937,7 +937,7 @@
 			}]
 			title: "Regirock"
 			x: -4.0d
-			y: -14.0d
+			y: -17.5d
 		}
 		{
 			description: [""]
@@ -964,7 +964,7 @@
 			}]
 			title: "Regice"
 			x: -2.0d
-			y: -14.0d
+			y: -17.5d
 		}
 		{
 			description: [""]
@@ -991,7 +991,7 @@
 			}]
 			title: "Registeel"
 			x: 0.0d
-			y: -14.0d
+			y: -17.5d
 		}
 		{
 			description: [""]
@@ -1018,7 +1018,7 @@
 			}]
 			title: "Kyogre"
 			x: 3.0d
-			y: -14.0d
+			y: -17.5d
 		}
 		{
 			description: [""]
@@ -1045,7 +1045,7 @@
 			}]
 			title: "Groudon"
 			x: 5.0d
-			y: -14.0d
+			y: -17.5d
 		}
 		{
 			description: [""]
@@ -1072,7 +1072,7 @@
 			}]
 			title: "Rayquaza"
 			x: 7.0d
-			y: -14.0d
+			y: -17.5d
 		}
 		{
 			id: "538E4C357205FB5B"
@@ -1082,8 +1082,332 @@
 				type: "checkmark"
 			}]
 			title: "There will be more Legendaries here Chakyl is lazy to do the quests"
-			x: -4.5d
-			y: -10.5d
+			x: -6.0d
+			y: -15.0d
+		}
+		{
+			description: [""]
+			id: "3A174D139C314784"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Summoned using a Psychic Star Pixie"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "25B95035B6D7A378"
+				poke_ball_used: ""
+				pokemon: "cobblemon:uxie"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Uxie"
+			x: -4.0d
+			y: -15.5d
+		}
+		{
+			description: [""]
+			id: "404206ADF8E6B097"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Summoned using a Psychic Star Pixie"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2891EDF90024E31C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:mesprit"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Mesprit"
+			x: -2.0d
+			y: -15.5d
+		}
+		{
+			description: [""]
+			id: "1F0857E5F4C8E85E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Summoned using a Psychic Star Pixie"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "151C9B3110FA7EB9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:azelf"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Azelf"
+			x: 0.0d
+			y: -15.5d
+		}
+		{
+			description: [""]
+			id: "6ADF6AB779D9E96F"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "28B42D50EF39AA39"
+				poke_ball_used: ""
+				pokemon: "cobblemon:dialga"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Dialga"
+			x: 3.0d
+			y: -15.5d
+		}
+		{
+			description: [""]
+			id: "22B6D097B8DF5F34"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "23673411CC87D02E"
+				poke_ball_used: ""
+				pokemon: "cobblemon:palkia"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Palkia"
+			x: 5.0d
+			y: -15.5d
+		}
+		{
+			description: [""]
+			id: "3D0A1299016A0118"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1DB3A6448D47ABAF"
+				poke_ball_used: ""
+				pokemon: "cobblemon:giratina"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Giratina"
+			x: 7.0d
+			y: -15.5d
+		}
+		{
+			description: [""]
+			id: "7CF60082CA31BE92"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Summoned using a Flying Star Pixie"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3C8B70D5B6BBA998"
+				poke_ball_used: ""
+				pokemon: "cobblemon:tornadus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Tornadus"
+			x: -4.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "5B02036AA208B3D7"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Summoned using a Flying Star Pixie"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0D5ACF60A3AFA524"
+				poke_ball_used: ""
+				pokemon: "cobblemon:thundurus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Thundurus"
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "6434E3E25D873D00"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Summoned using a Flying Star Pixie"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3C69B55A42316B8C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:landorus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Landorus"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "5DF36F347032ECD3"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0E9E3581F0E2F1DE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:reshiram"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Reshiram"
+			x: 3.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "5C5A08F990320793"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "177E15B691C861E9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zekrom"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Zekrom"
+			x: 5.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "6E1708DFBF799BF1"
+			shape: "none"
+			size: 2.0d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6BAF0C4C7760EFEC"
+				poke_ball_used: ""
+				pokemon: "cobblemon:kyurem"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "Kyurem"
+			x: 7.0d
+			y: -13.0d
 		}
 	]
 	title: "Rare Pokémon"

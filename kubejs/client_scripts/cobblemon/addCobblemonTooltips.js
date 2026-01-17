@@ -1,4 +1,14 @@
 // priority: -21
+
+const getClientShinyChance = (nbt) => {
+  let value = "0.1";
+  if (nbt && nbt.quality_food && nbt.quality_food.quality) {
+    if (nbt.quality_food.quality == 1.0) value = "0.5";
+    if (nbt.quality_food.quality == 2.0) value = "1";
+    if (nbt.quality_food.quality == 3.0) value = "2";
+  }
+  return value;
+};
 ItemEvents.tooltip((tooltip) => {
   global.cobbleAdventuring.forEach((item) => {
     global.addPriceTooltip(tooltip, item, "meat");
@@ -24,54 +34,51 @@ ItemEvents.tooltip((tooltip) => {
 
   tooltip.add(
     "sunlit_cobblemon:silph_scope",
-    Text.green("Allows you to enter the World of Pokémon!")
+    Text.green("Allows you to enter the World of Pokémon!"),
   );
   tooltip.add(
     "sunlit_cobblemon:silph_scope",
-    Text.gold("Right click to equip!")
+    Text.gold("Right click to equip!"),
   );
   tooltip.add(
     "sunlit_cobblemon:poke_bobber",
-    Text.gold("Fishes up a common Pokémon with every catch")
+    Text.gold("Fishes up a common Pokémon with every catch"),
   );
   tooltip.add(
     "sunlit_cobblemon:great_poke_bobber",
-    Text.gold("Fishes up an uncommon Pokémon with every catch")
+    Text.gold("Fishes up an uncommon Pokémon with every catch"),
   );
   tooltip.add(
     "sunlit_cobblemon:ultra_poke_bobber",
-    Text.gold("Fishes up a rare Pokémon with every catch")
+    Text.gold("Fishes up a rare Pokémon with every catch"),
   );
   tooltip.add(
     "sunlit_cobblemon:master_poke_bobber",
-    Text.gold("Fishes up an epic Pokémon with every catch")
+    Text.gold("Fishes up an epic Pokémon with every catch"),
   );
   // Legendaries
 
   tooltip.addAdvanced("sunlit_cobblemon:star_pixie", (item, advanced, text) => {
     if (item.nbt && item.nbt.getString("type")) {
       let data = global.cobblemonLegendaryMap.get(
-        `${item.nbt.getString("type")}`
+        `${item.nbt.getString("type")}`,
       );
       if (data) {
         if (tooltip.shift) {
           data.legendaries.forEach((legendary, index) => {
-            text.add(
-              index + 1,
-              [
-                Text.gray(
-                  `Summons §${data.color}${legendary.pokemonName} §7from a §${data.color}`
-                ),
-                Text.translate(
-                  `entity.${legendary.entity.namespace}.${legendary.entity.path}`
-                ).gold(),
-              ]
-            );
+            text.add(index + 1, [
+              Text.gray(
+                `Summons §${data.color}${legendary.pokemonName} §7from a §${data.color}`,
+              ),
+              Text.translate(
+                `entity.${legendary.entity.namespace}.${legendary.entity.path}`,
+              ).gold(),
+            ]);
           });
         } else {
           text.add(1, [
             `§7Pixe Type: §${data.color}${global.formatName(
-              `${item.nbt.getString("type")}`
+              `${item.nbt.getString("type")}`,
             )}`,
           ]);
           text.add(2, [
@@ -83,52 +90,86 @@ ItemEvents.tooltip((tooltip) => {
       }
     }
   });
+  // Gachapon
+  tooltip.addAdvanced(
+    "sunlit_cobblemon:gachamon_capsule",
+    (item, advanced, text) => {
+      text.add(
+        1,
+        Text.translatable(
+          "tooltip.sunlit_cobblemon.gachamon_capsule.description",
+        ).gray(),
+      );
+      if (item.nbt) {
+        text.add(
+          2,
+          Text.translatable(
+            `tooltip.sunlit_cobblemon.gachamon_capsule.description.${item.nbt.getString("type")}`,
+          ).aqua(),
+        );
+        text.add(
+          3,
+          Text.translatable(
+            "tooltip.sunlit_cobblemon.gachamon_capsule.shiny_chance",
+            `${getClientShinyChance(item.nbt)}`
+          ).green(),
+        );
+      } else {
+        text.add(
+          2,
+          Text.translatable(
+            `tooltip.sunlit_cobblemon.gachamon_capsule.description.common`,
+          ).aqua(),
+        );
+      }
+    },
+  );
   // TM Packs
   tooltip.add("sunlit_cobblemon:tm_pack", Text.gray("Right click to open"));
   tooltip.add("sunlit_cobblemon:tm_pack", Text.green("12% chance for a TM"));
 
   tooltip.add(
     "sunlit_cobblemon:greater_tm_pack",
-    Text.gray("Right click to open")
+    Text.gray("Right click to open"),
   );
   tooltip.add(
     "sunlit_cobblemon:greater_tm_pack",
-    Text.green("20% chance for a TM")
+    Text.green("20% chance for a TM"),
   );
   tooltip.add(
     "sunlit_cobblemon:greater_tm_pack",
-    Text.green("At least one TM guaranteed!")
+    Text.green("At least one TM guaranteed!"),
   );
 
   tooltip.add(
     "sunlit_cobblemon:prismatic_tm_pack",
-    Text.gray("Right click to open")
+    Text.gray("Right click to open"),
   );
   tooltip.add(
     "sunlit_cobblemon:prismatic_tm_pack",
-    Text.green("Only contains TMs")
+    Text.green("Only contains TMs"),
   );
 
   tooltip.add(
     "sunlit_cobblemon:berry_capsule",
-    Text.gray("Right click to open")
+    Text.gray("Right click to open"),
   );
   tooltip.add(
     "sunlit_cobblemon:berry_capsule",
-    Text.green("Contains common berries")
+    Text.green("Contains common berries"),
   );
 
   tooltip.add(
     "cobblemon:ability_capsule",
     Text.gray(
-      "Changes the ability of the Pokémon it is used on to their alternative standard ability"
-    )
+      "Changes the ability of the Pokémon it is used on to their alternative standard ability",
+    ),
   );
   tooltip.add(
     "cobblemon:ability_patch",
     Text.gray(
-      "Changes the ability of the Pokémon it is used on to their alternative hidden ability"
-    )
+      "Changes the ability of the Pokémon it is used on to their alternative hidden ability",
+    ),
   );
 
   [

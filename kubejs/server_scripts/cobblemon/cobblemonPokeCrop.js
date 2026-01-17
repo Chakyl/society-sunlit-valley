@@ -180,8 +180,8 @@ const uncoverCropPokemon = (level, server, block, initialPos, pos) => {
       if (pokeLevel == 1) {
         console.log(`[WARNING] pokeCrop returned invalid level:`);
         console.log(caughtMon);
+        console.log(pos);
       }
-      console.log(pos);
       server.runCommandSilent(
         `pokespawnat ${pos.x} ${pos.y} ${pos.z} ${
           caughtMon.pokemon

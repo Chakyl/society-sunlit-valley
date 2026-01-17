@@ -19,6 +19,31 @@
     }
   ],
   "lookup_history": [
+    "item:sunlit_cobblemon:unbreakable_cog",
+    "item:society:steamy_gadget",
+    "item:sunlit_cobblemon:prismatic_ice",
+    "item:sunlit_cobblemon:fairy_heart",
+    "item:sunlit_cobblemon:blazing_stone",
+    "item:sunlit_cobblemon:poke_genes",
+    "item:society:production_science_pack",
+    "item:sunlit_cobblemon:star_pixie",
+    "item:sunlit_cobblemon:berry_capsule",
+    "item:sunlit_cobblemon:endless_battery",
+    "item:society:animal_cracker",
+    "item:society:sunlit_crystal",
+    "item:society:dried_mossberry",
+    "item:society:treasure_totem",
+    "item:society:dried_shimmering_mushrooms",
+    "item:society:mana_king",
+    "item:society:ancient_cider",
+    "item:society:sparkling_le_roy",
+    "item:society:violet_moon",
+    "item:cobblemon:dusk_ball",
+    "item:cobblemon:dive_ball",
+    "item:cobblemon:ancient_poke_ball",
+    "item:cobblemon:dragon_gem",
+    "item:farmersdelight:cabbage",
+    "item:farmersdelight:cabbage_leaf",
     "item:cobblemon:citrine_ball",
     "item:cobblemon:ancient_citrine_ball",
     "item:cobblemon:verdant_ball",
@@ -41,8 +66,6 @@
     "item:society:spinel",
     "item:minecraft:loom",
     "item:society:loom",
-    "item:society:production_science_pack",
-    "item:society:steamy_gadget",
     "item:society:perfect_cherry",
     "item:society:amulet_of_light",
     "item:society:beemonican_seal",
@@ -68,27 +91,9 @@
     "item:society:earth_crystal",
     {
       "type": "item",
-      "id": "sunlit_cobblemon:star_pixie",
-      "nbt": "{type:\"ice\"}",
-      "amount": 61
-    },
-    {
-      "type": "item",
-      "id": "sunlit_cobblemon:unbreakable_cog",
-      "amount": 64
-    },
-    {
-      "type": "item",
       "id": "society:source_gem",
       "amount": 64
     },
-    {
-      "type": "item",
-      "id": "sunlit_cobblemon:fairy_heart",
-      "amount": 60
-    },
-    "item:sunlit_cobblemon:endless_battery",
-    "item:sunlit_cobblemon:blazing_stone",
     "item:cobblemon:cell_battery",
     "item:sunlit_cobblemon:tabula_rasa",
     "item:sunlit_cobblemon:max_berry_smoothie",
@@ -119,8 +124,6 @@
     "item:sunlit_cobblemon:dried_common_cobbleberry",
     "item:sunlit_cobblemon:trainer_podium",
     "item:sunlit_cobblemon:silph_scope",
-    "item:sunlit_cobblemon:berry_capsule",
-    "item:sunlit_cobblemon:prismatic_ice",
     "item:cobblemon:ice_gem",
     "item:cobblemon:normal_gem",
     "item:cobblemon:grass_gem",
@@ -148,7 +151,6 @@
       "id": "quark:diamond_heart",
       "amount": 64
     },
-    "item:sunlit_cobblemon:poke_genes",
     "item:cobblemon:full_restore",
     {
       "type": "item",
@@ -174,13 +176,7 @@
     "item:windswept:pinecone_jam_block",
     "item:atmospheric:aloe_gel_bottle",
     "item:cobblemon:antidote",
-    {
-      "type": "item",
-      "id": "cobblemon:dusk_ball",
-      "amount": 63
-    },
     "item:society:moth_pollen",
-    "item:cobblemon:dive_ball",
     "item:cobblemon:net_ball",
     "item:cobblemon:pc",
     "#item:cobblemon:held/is_held_item",
@@ -259,7 +255,6 @@
     },
     "item:minecraft:mutton",
     "item:cobblemon:pasture",
-    "item:cobblemon:ancient_poke_ball",
     "item:minecraft:blackstone",
     "#item:cobble_workers:uncommon_berries",
     "item:cobblemon:red_apricorn_seed",
@@ -854,16 +849,6 @@
     "item:cobblemon:jaboca_berry",
     "item:cobblemon:nomel_berry",
     "item:society:merino_wool",
-    {
-      "type": "item",
-      "id": "farmersdelight:cabbage_leaf",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "farmersdelight:cabbage",
-      "amount": 48
-    },
     {
       "type": "item",
       "id": "cobblemon:haban_berry",
@@ -1723,36 +1708,6 @@
       "type": "item",
       "id": "farmersdelight:tomato_sauce",
       "amount": 23
-    },
-    {
-      "type": "item",
-      "id": "farmersdelight:rice_panicle",
-      "amount": 7
-    },
-    "item:farmersdelight:stove",
-    "item:minecraft:campfire",
-    "item:refurbished_furniture:dark_stove",
-    "item:crabbersdelight:pearl_block",
-    {
-      "type": "item",
-      "id": "farmersdelight:safety_net",
-      "amount": 3
-    },
-    {
-      "type": "item",
-      "id": "meadow:pine_slab",
-      "amount": 2
-    },
-    "item:gag:escape_rope{Damage:0}",
-    {
-      "type": "item",
-      "id": "society:pine_tar",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "minecraft:glowstone_dust",
-      "amount": 17
     }
   ],
   "craft_history": [

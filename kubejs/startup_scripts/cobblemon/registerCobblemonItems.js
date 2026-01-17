@@ -66,23 +66,26 @@ StartupEvents.registry("item", (e) => {
     .useAnimation("drink");
   // Misc
 
-  e.create("sunlit_cobblemon:poke_radar")
-    .texture("society:item/poke_radar")
-    .displayName("Poké Radar");
+  // e.create("sunlit_cobblemon:poke_radar")
+  //   .texture("society:item/poke_radar")
+  //   .displayName("Poké Radar");
   e.create("sunlit_cobblemon:berry_capsule").texture(
-    "sunlit_cobblemon:item/berry_capsule"
+    "sunlit_cobblemon:item/berry_capsule",
+  );
+  e.create("sunlit_cobblemon:gachamon_capsule").texture(
+    "sunlit_cobblemon:item/gachamon_capsule",
   );
   e.create("sunlit_cobblemon:uncharged_battery").texture(
-    "sunlit_cobblemon:item/uncharged_battery"
+    "sunlit_cobblemon:item/uncharged_battery",
   );
   e.create("sunlit_cobblemon:poke_genes")
     .texture("sunlit_cobblemon:item/poke_genes")
     .displayName("Poké Genes");
   e.create("sunlit_cobblemon:fairy_heart").texture(
-    "sunlit_cobblemon:item/fairy_heart"
+    "sunlit_cobblemon:item/fairy_heart",
   );
   e.create("sunlit_cobblemon:star_pixie").texture(
-    "sunlit_cobblemon:item/star_pixie"
+    "sunlit_cobblemon:item/star_pixie",
   );
   e.create("sunlit_cobblemon:blazing_stone");
   e.create("sunlit_cobblemon:endless_battery");
@@ -110,7 +113,7 @@ StartupEvents.registry("item", (e) => {
   ];
   global.cobblemonDehydrated.forEach((item) => {
     const itemHex = cobblemonDehydratorMapping.find(
-      (val) => val.item === item.item
+      (val) => val.item === item.item,
     )?.hex;
     e.create(item.item)
       .texture(`society:item/dried_fruit`)
