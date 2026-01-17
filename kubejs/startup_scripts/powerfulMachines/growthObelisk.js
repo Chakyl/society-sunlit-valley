@@ -9,7 +9,7 @@ global.runGrowthObelisk = (tickEvent) => {
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
   const goldenClockProgTime = 1000;
-  level.spawnParticles("snowyspirit:glow_light", true, x + 0.5, y + 1.3, z + 0.5, 0, 0, 0, 2, 2);
+  level.spawnParticles("snowyspirit:glow_light", true, x + 0.5, y + 2.2, z + 0.5, 0, 0, 0, 2, 2);
   if (
     morningModulo >= goldenClockProgTime &&
     morningModulo < goldenClockProgTime + artMachineTickRate
@@ -62,7 +62,7 @@ StartupEvents.registry("block", (e) => {
       );
     });
   e
-    .create("society:growth_obelisk_upper")
+    .create("society:growth_obelisk_upper", "cardinal")
     .box(4, 0, 4, 12, 9, 12)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")

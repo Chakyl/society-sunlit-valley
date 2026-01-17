@@ -417,12 +417,14 @@ LootJS.modifiers((e) => {
   );
   ["society:sparkstone_ore", "society:deepslate_sparkstone_ore"].forEach(
     (ore) => {
-      e.addBlockLootModifier(ore).pool((p) => {
-        p.not((n) =>
-          n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
-        );
-        p.randomChance(0.001).addLoot("society:the_spark_also_rises");
-      });
+      e.addBlockLootModifier(ore)
+        .hasAnyStage("mining_mastery")
+        .pool((p) => {
+          p.not((n) =>
+            n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+          );
+          p.randomChance(0.001).addLoot("society:the_spark_also_rises");
+        });
     }
   );
 

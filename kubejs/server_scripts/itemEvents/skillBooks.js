@@ -22,6 +22,7 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:universal_methods_of_farming", skillId: "dm3efjm3y57v34ir" },
   { id: "society:wuthering_logs", skillId: "y1xltbgkupmcoe0i" },
   { id: "society:pond_house_five", skillId: "ajxn495vvckv1pow" },
+  { id: "society:the_quality_of_the_earth", skillId: "y99a5jkv7tmu7vmc" },
   { id: "society:the_red_and_the_black", skillId: "ysthrzir822oedus" },
   { id: "society:women_who_run_with_the_plushies", skillId: "2vo8noqvq4aj1egy" },
 ].forEach((book) => {

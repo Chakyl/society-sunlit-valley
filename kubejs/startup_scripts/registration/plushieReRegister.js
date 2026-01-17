@@ -62,6 +62,7 @@ global.plushieRightClick = (click) => {
             },
           });
           if (
+            player.stages.has("husbandry_mastery") &&
             !player.stages.has("women_who_run_with_the_plushies") &&
             affection > 2 &&
             Math.random() <= 0.05

@@ -38,6 +38,11 @@
     }
   ],
   "lookup_history": [
+    "item:society:the_quality_of_the_earth",
+    "item:society:women_who_run_with_the_plushies",
+    "item:society:the_red_and_the_black",
+    "item:society:slime_contain_protect",
+    "item:society:pond_house_five",
     {
       "type": "item",
       "id": "windswept:pinecone",
@@ -264,11 +269,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:brewery:pork_knuckle",
-      "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
       "item:farmersdelight:cooked_bacon",
+      "item:candlelight:pork_ribs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -279,16 +284,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -627,7 +632,6 @@
     "item:society:cordycep",
     "item:cluttered:sycamore_log",
     "item:quark:moss_paste",
-    "item:society:women_who_run_with_the_plushies",
     {
       "type": "item",
       "id": "society:alias_moss",
@@ -1076,7 +1080,6 @@
     "item:society:mana_fruit_crate",
     "item:botania:terrasteel_ingot",
     "item:society:plushie_capsule",
-    "item:society:pond_house_five",
     "item:society:bluegill_meridian",
     "item:society:bullfish_jobs",
     "item:society:slouching_towards_artistry",
@@ -1165,11 +1168,6 @@
     "item:society:first_aid_guide",
     "item:society:no_name_for_the_sheep",
     "item:society:phenomenology_of_treasure",
-    {
-      "type": "item",
-      "id": "society:the_red_and_the_black",
-      "amount": 3
-    },
     "item:atmospheric:yucca_planks",
     "item:quark:vertical_cherry_planks",
     "item:cluttered:filing_box",
@@ -1515,9 +1513,7 @@
       "id": "vintagedelight:salt_brick_slab",
       "amount": 64
     },
-    "item:vintagedelight:salt_lamp_lime",
-    "item:vintagedelight:mixed_salt_brick_wall",
-    "item:vintagedelight:salt_lamp_yellow"
+    "item:vintagedelight:salt_lamp_lime"
   ],
   "craft_history": [
     "minecraft:kjs/society_auto_grabber",

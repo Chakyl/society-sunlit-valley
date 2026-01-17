@@ -330,6 +330,27 @@
       }
     ]
   },
+  "the_quality_of_the_earth": {
+    "title": { "translate": "item.society.the_quality_of_the_earth" },
+    "description": {
+      "translate": "society_skills.books.the_quality_of_the_earth.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_quality_of_the_earth"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s the_quality_of_the_earth",
+          "lock_command": "kubejs stages remove @s the_quality_of_the_earth"
+        }
+      }
+    ]
+  },
   "the_red_and_the_black": {
     "title": { "translate": "item.society.the_red_and_the_black" },
     "description": {

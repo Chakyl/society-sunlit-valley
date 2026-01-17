@@ -8,6 +8,73 @@
   "trades": [
     {
       "offer": {
+        "item": "society:the_quality_of_the_earth",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "numismatics_cost": 32768,
+      "trade_id": "bookseller_the_quality_of_the_earth_for_sun",
+      "stage_required": "farming_mastery",
+      "unlock_description": "jei.society_trading.farming_mastery_unlocked"
+    },
+    {
+      "offer": {
+        "item": "society:women_who_run_with_the_plushies",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 2
+      },
+      "numismatics_cost": 65536,
+      "trade_id": "bookseller_women_who_run_with_the_plushies_for_sun",
+      "stage_required": "husbandry_mastery",
+      "unlock_description": "jei.society_trading.husbandry_mastery_unlocked"
+    },
+    {
+      "offer": {
+        "item": "society:pond_house_five",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 1
+      },
+      "numismatics_cost": 16777216,
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "bookseller_pond_house_five_for_prismatic"
+    },
+    {
+      "offer": { "item": "society:the_spark_also_rises", "count": 1 },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "stage_required": "mining_mastery",
+      "unlock_description": "jei.society_trading.mining_mastery_unlocked",
+      "trade_id": "bookseller_the_spark_also_rises"
+    },
+    {
+      "offer": {
+        "item": "society:the_red_and_the_black",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 12
+      },
+      "numismatics_cost": 49152,
+      "trade_id": "bookseller_the_red_and_the_black_for_sun",
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked"
+    },
+    {
+      "offer": {
         "item": "society:yard_work_yearly",
         "count": 1
       },
@@ -93,34 +160,6 @@
       "trade_id": "bookseller_bullfish_jobs_for_sun",
       "seasons_required": ["late_spring"],
       "unlock_description": "jei.society_trading.only_spring"
-    },
-    {
-      "offer": {
-        "item": "society:women_who_run_with_the_plushies",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:neptunium_coin",
-        "count": 2
-      },
-      "numismatics_cost": 65536,
-      "trade_id": "bookseller_women_who_run_with_the_plushies_for_sun",
-      "seasons_required": ["late_spring"],
-      "unlock_description": "jei.society_trading.only_spring"
-    },
-    {
-      "offer": {
-        "item": "society:the_red_and_the_black",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 12
-      },
-      "numismatics_cost": 49152,
-      "trade_id": "bookseller_the_red_and_the_black_for_sun",
-      "seasons_required": ["late_summer"],
-      "unlock_description": "jei.society_trading.only_summer"
     },
     {
       "offer": {
@@ -222,20 +261,6 @@
     },
     {
       "offer": {
-        "item": "society:pond_house_five",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 1
-      },
-      "numismatics_cost": 16777216,
-      "trade_id": "bookseller_pond_house_five_for_prismatic",
-      "seasons_required": ["late_winter"],
-      "unlock_description": "jei.society_trading.only_winter"
-    },
-    {
-      "offer": {
         "item": "society:animal_fancy",
         "count": 1
       },
@@ -317,15 +342,6 @@
       },
       "numismatics_cost": 65536,
       "trade_id": "bookseller_banana_karenina_for_sun"
-    },
-    {
-      "offer": { "item": "society:the_spark_also_rises", "count": 1 },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 20
-      },
-      "numismatics_cost": 81920,
-      "trade_id": "bookseller_the_spark_also_rises"
     },
     {
       "offer": { "item": "society:universal_methods_of_farming", "count": 1 },
