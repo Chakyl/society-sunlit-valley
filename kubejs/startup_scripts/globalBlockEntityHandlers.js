@@ -765,9 +765,17 @@ global.useInventoryItems = (inventory, id, count) => {
  */
 
 global.getFluid = (blockInfo) => {
+  if (!blockInfo || !blockInfo.persistentData) {
+    return Fluid.of("minecraft:water", 0);
+  }
   const foundFluid = blockInfo.persistentData.getString("FluidType");
   if (!foundFluid) return Fluid.of("minecraft:water", 0);
-  return Fluid.of(foundFluid, blockInfo.persistentData.getInt("Fluid") || 0);
+  if (foundFluid === "minecraft:empty") {
+    return Fluid.of("minecraft:water", 0);
+  }
+  let foundFluidLevel = blockInfo.persistentData.getInt("Fluid");
+  if (!foundFluidLevel) foundFluidLevel = 0;
+  return Fluid.of(foundFluid, foundFluidLevel);
 };
 
 global.onFill = (blockInfo, fluid, sim) => {

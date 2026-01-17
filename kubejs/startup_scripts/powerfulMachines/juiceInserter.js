@@ -52,6 +52,8 @@ global.runJuiceInserter = (blockInfo) => {
   const fermentationBarrel = global.getFermentingBarrel(level, level.getBlock(block.getPos()));
   if (!fermentationBarrel.id.equals("vinery:fermentation_barrel")) return;
   let barrelData = fermentationBarrel.getEntityData();
+  if (!barrelData) return;
+  if (!block.getEntityData()) return;
   const fluidData = block.getEntityData().ForgeData;
   if (!barrelData) return;
   if (Number(barrelData.FluidLevel) + 25 > 100) return;

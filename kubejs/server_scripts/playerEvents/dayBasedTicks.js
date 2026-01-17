@@ -16,8 +16,6 @@ PlayerEvents.tick((e) => {
     // Sleeping cuts the amount of possible days by half
     const yearCount =
       player.stats.playTime / dayTickDuration / ((seasonDays * 4) / 2);
-    player.tell(yearCount);
-    player.tell(player.stages.has("master_cultivator_unlocked"));
     if (
       !player.stages.has("master_cultivator_unlocked") &&
       yearCount > 1 &&
