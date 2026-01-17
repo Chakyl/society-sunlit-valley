@@ -145,3 +145,5 @@ global.cobbleTypeGems.forEach((gem) => {
     time: 5,
   });
 });
+
+global.mushroomLogRecipes.set("cobblemon:apricorn_log", { output: ["1x cobblemon:big_root"]});

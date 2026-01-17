@@ -1,7 +1,7 @@
 // priority: -21
 console.info("[SOCIETY-S-COBBLEMON] cobblemonUtils.js loaded");
 const $CobblemonAPI = Java.loadClass(
-  "com.cobblemon.mod.common.Cobblemon"
+  "com.cobblemon.mod.common.Cobblemon",
 ).INSTANCE;
 
 global.getPlayerParty = (player) => {
@@ -484,7 +484,7 @@ global.getPlayerPodiumLevelTier = (player, partyLevel) =>
     10,
     Math.round(partyLevel / 5) * 5 +
       Math.floor(player.persistentData.winStreak / 10) * 5 -
-      5
+      5,
   );
 
 global.getTrainerLevelTier = (trainerID) => {
@@ -529,7 +529,29 @@ global.getPokemonLevel = (lvlRange) => {
 
 global.cobblemonLegendaryMap = new Map([
   ["fighting", { color: "4", legendaries: [{ entity: "", pokemon: "" }] }],
-  ["psychic", { color: "d", legendaries: [{ entity: "", pokemon: "" }] }],
+  [
+    "psychic",
+    {
+      color: "d",
+      legendaries: [
+        {
+          entity: "minecraft:glow_squid",
+          pokemonId: "uxie",
+          sound: "legendarycreatures:wisp_idle",
+        },
+        {
+          entity: "minecraft:squid",
+          pokemonId: "mesprit",
+          sound: "legendarycreatures:wisp_idle",
+        },
+        {
+          entity: "minecraft:turtle",
+          pokemonId: "azelf",
+          sound: "legendarycreatures:wisp_idle",
+        },
+      ],
+    },
+  ],
   ["poison", { color: "5", legendaries: [{ entity: "", pokemon: "" }] }],
   ["dragon", { color: "1", legendaries: [{ entity: "", pokemon: "" }] }],
   ["ghost", { color: "5", legendaries: [{ entity: "", pokemon: "" }] }],
@@ -542,7 +564,6 @@ global.cobblemonLegendaryMap = new Map([
       legendaries: [
         {
           entity: "wildernature:flamingo",
-          pokemonName: "Moltres",
           pokemonId: "moltres",
           sound: "wildernature:flamingo_death",
         },
@@ -551,7 +572,29 @@ global.cobblemonLegendaryMap = new Map([
   ],
   ["fairy", { color: "d", legendaries: [{ entity: "", pokemon: "" }] }],
   ["water", { color: "9", legendaries: [{ entity: "", pokemon: "" }] }],
-  ["flying", { color: "b", legendaries: [{ entity: "", pokemon: "" }] }],
+  [
+    "flying",
+    {
+      color: "b",
+      legendaries: [
+        {
+          entity: "crittersandcompanions:shima_enaga",
+          pokemonId: "tornadus",
+          sound: "minecraft:item.trident.thunder",
+        },
+        {
+          entity: "species:wraptor",
+          pokemonId: "thundurus",
+          sound: "minecraft:item.trident.thunder",
+        },
+        {
+          entity: "autumnity:turkey",
+          pokemonId: "landorus",
+          sound: "minecraft:item.trident.thunder",
+        },
+      ],
+    },
+  ],
   ["normal", { color: "f", legendaries: [{ entity: "", pokemon: "" }] }],
   [
     "rock",
@@ -560,7 +603,6 @@ global.cobblemonLegendaryMap = new Map([
       legendaries: [
         {
           entity: "golemoverhaul:netherite_golem",
-          pokemonName: "Regirock",
           pokemonId: "regirock",
           sound: "golemoverhaul:netherite_golem_death",
         },
@@ -574,7 +616,6 @@ global.cobblemonLegendaryMap = new Map([
       legendaries: [
         {
           entity: "wildernature:flamingo",
-          pokemonName: "Zapdos",
           pokemonId: "zapdos",
           sound: "wildernature:flamingo_death",
         },
@@ -590,19 +631,16 @@ global.cobblemonLegendaryMap = new Map([
       legendaries: [
         {
           entity: "wildernature:flamingo",
-          pokemonName: "Articuno",
           pokemonId: "articuno",
           sound: "wildernature:flamingo_death",
         },
         {
           entity: "golemoverhaul:netherite_golem",
-          pokemonName: "Regice",
           pokemonId: "regice",
           sound: "golemoverhaul:netherite_golem_death",
         },
         {
           entity: "species:mammutilation",
-          pokemonName: "Chien-Pao",
           pokemonId: "chienpao",
           sound: "species:entity.mammutilation.mammutiful_howl",
         },
@@ -616,7 +654,6 @@ global.cobblemonLegendaryMap = new Map([
       legendaries: [
         {
           entity: "golemoverhaul:netherite_golem",
-          pokemonName: "Registeel",
           pokemonId: "registeel",
           sound: "golemoverhaul:netherite_golem_death",
         },

@@ -91,6 +91,7 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:endless_battery");
   e.create("sunlit_cobblemon:tabula_rasa");
   e.create("sunlit_cobblemon:prismatic_ice");
+  e.create("sunlit_cobblemon:atmospheric_vial");
   e.create("sunlit_cobblemon:unbreakable_cog");
 
   global.cobblemonPreserves.forEach((jar) => {

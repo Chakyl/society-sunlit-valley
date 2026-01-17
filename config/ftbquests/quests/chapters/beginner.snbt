@@ -439,11 +439,18 @@
 			]
 			icon: "candlelight:hearth"
 			id: "5128C6A1AC72BAF9"
-			rewards: [{
-				id: "3D271C313DFE25C9"
-				item: "society:plushie_capsule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3D271C313DFE25C9"
+					item: "society:plushie_capsule"
+					type: "item"
+				}
+				{
+					id: "179E3F9561E13E5B"
+					item: "sunlit_cobblemon:gachamon_capsule"
+					type: "item"
+				}
+			]
 			subtitle: "if you love me... let me goohoohoo..."
 			tasks: [{
 				action: "release"
@@ -1442,9 +1449,17 @@
 			icon: "cobblemon:fighting_gem"
 			id: "5838565EAA6C8520"
 			rewards: [{
-				count: 5
-				id: "184DC45F922D7F8F"
-				item: "cobblemon:repeat_ball"
+				id: "6B04E7A25D237714"
+				item: {
+					Count: 1
+					id: "sunlit_cobblemon:gachamon_capsule"
+					tag: {
+						quality_food: {
+							quality: 2
+						}
+						type: "steel"
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -1653,6 +1668,17 @@
 			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:fairy_gem"
 			id: "6C2BCBA35F638C82"
+			rewards: [{
+				id: "0D5307422D20C24D"
+				item: {
+					Count: 1
+					id: "sunlit_cobblemon:gachamon_capsule"
+					tag: {
+						type: "fairy"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				action: "catch"
 				amount: 10L
@@ -1676,6 +1702,11 @@
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
 			id: "768EF27402366575"
+			rewards: [{
+				id: "10A7E8FB46415FC1"
+				item: "society:treasure_totem"
+				type: "item"
+			}]
 			tasks: [{
 				action: "catch"
 				amount: 75L
@@ -1700,6 +1731,17 @@
 			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:ultra_ball"
 			id: "1F98B9A7FB2C7506"
+			rewards: [{
+				id: "041171CE70688D1A"
+				item: {
+					Count: 1
+					id: "sunlit_cobblemon:gachamon_capsule"
+					tag: {
+						type: "dragon"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				action: "defeat"
 				amount: 75L
@@ -1726,7 +1768,8 @@
 			id: "762B08326046D3EF"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5BA8DC865444B1E8"
+				id: "3A41F152CD56B5FB"
+				table_id: 238600958051370349L
 				type: "choice"
 			}]
 			tasks: [{
@@ -1801,6 +1844,12 @@
 		{
 			dependencies: ["768EF27402366575"]
 			id: "30C955A454C25A97"
+			rewards: [{
+				count: 20
+				id: "08D089466318CCFA"
+				item: "society:ancient_fruit_seed"
+				type: "item"
+			}]
 			tasks: [{
 				action: "catch"
 				amount: 100L
@@ -1825,6 +1874,20 @@
 			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "cobblemon:rare_candy"
 			id: "78D53D4EAFB02D71"
+			rewards: [{
+				id: "3AFCE702B3A1D6AD"
+				item: {
+					Count: 1
+					id: "sunlit_cobblemon:gachamon_capsule"
+					tag: {
+						quality_food: {
+							quality: 2
+						}
+						type: "starter"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				action: "level_up_to"
 				amount: 100L
@@ -1880,8 +1943,9 @@
 			icon: "cobblemon:great_ball"
 			id: "3DCBD4C514E77198"
 			rewards: [{
-				id: "09707EAE26DA26C0"
-				item: "numismatics:ancient_coin"
+				count: 3
+				id: "078E49DFAA0ABB45"
+				item: "society:animal_cracker"
 				type: "item"
 			}]
 			tasks: [{
@@ -2467,7 +2531,8 @@
 				}
 				{
 					exclude_from_claim_all: true
-					id: "128730F2A1F59B76"
+					id: "380475D88FD498B5"
+					table_id: 238600958051370349L
 					type: "choice"
 				}
 			]
@@ -2602,6 +2667,20 @@
 					item: "numismatics:ancient_coin"
 					type: "item"
 				}
+				{
+					id: "62011CD16AC484EA"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:gachamon_capsule"
+						tag: {
+							quality_food: {
+								quality: 3
+							}
+							type: "paradox"
+						}
+					}
+					type: "item"
+				}
 			]
 			size: 2.5d
 			tasks: [{
@@ -2623,8 +2702,9 @@
 			id: "6858A84A546BC064"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "01189F332C323CA0"
-				type: "choice"
+				id: "5A0CCBDD943C36AD"
+				table_id: 238600958051370349L
+				type: "random"
 			}]
 			tasks: [{
 				action: "evolve"
@@ -2687,9 +2767,18 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "2D0BC2F140B0BACB"
-					type: "choice"
+					id: "64DAC843F8F278F3"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:gachamon_capsule"
+						tag: {
+							quality_food: {
+								quality: 2
+							}
+							type: "steel"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -2715,6 +2804,12 @@
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
 			id: "4D85B3E15AF80E87"
+			rewards: [{
+				count: 4
+				id: "4D6FD8E6485E4B30"
+				item: "sunlit_cobblemon:gachamon_capsule"
+				type: "item"
+			}]
 			tasks: [{
 				action: "level_up"
 				amount: 75L

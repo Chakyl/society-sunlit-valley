@@ -3,7 +3,17 @@
 ### vPLAYTEST-6-1.0.0
 ^^^
 --- 
-
+- Most of this playtest version revolves around Sunlit Valley 4.0! Refer to the changelog below before posting issues!
+- Reworked tier system basic repetitive tasks so they carry over in major rankings (Thanks KingKarma!)
+- Added Gachamon Capusle to Ball Boutique
+- Added Lake Guardian and Forces of Nature legendaries
+- Added Energy Root recipe using Botania and Cooking pot
+- Added Big Roots to Mushroom Log using Apricon Logs
+- Fixed being able to bring legendaries to poor innocent gym patrons
+- Fixed duplicated trainer podium trainers happening
+- Fixed Fish Pond legacy conversion (artisan machine conversion next update)
+- Fixed Primitive and future tech cobblemon spawn conditions being wrong 
+- Fixed Preserves Jars saving tag input drops
 ---
 ^^^
 ## Heart of the Community

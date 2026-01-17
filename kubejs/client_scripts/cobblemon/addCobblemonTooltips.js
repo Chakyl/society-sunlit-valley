@@ -67,9 +67,11 @@ ItemEvents.tooltip((tooltip) => {
         if (tooltip.shift) {
           data.legendaries.forEach((legendary, index) => {
             text.add(index + 1, [
-              Text.gray(
-                `Summons §${data.color}${legendary.pokemonName} §7from a §${data.color}`,
-              ),
+              Text.gray(`Summons §${data.color}`),
+              Text.translate(
+                `cobblemon.species.${legendary.pokemonId}.name`
+              ).gold(),
+              Text.gray(` §7from a §${data.color}`),
               Text.translate(
                 `entity.${legendary.entity.namespace}.${legendary.entity.path}`,
               ).gold(),
@@ -111,7 +113,7 @@ ItemEvents.tooltip((tooltip) => {
           3,
           Text.translatable(
             "tooltip.sunlit_cobblemon.gachamon_capsule.shiny_chance",
-            `${getClientShinyChance(item.nbt)}`
+            `${getClientShinyChance(item.nbt)}`,
           ).green(),
         );
       } else {

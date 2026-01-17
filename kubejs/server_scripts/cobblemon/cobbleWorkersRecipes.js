@@ -197,7 +197,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "society:battery", count: 1 },
     "electric",
-    48000,
+    24000,
     "SPECIAL_ATTACK"
   );
   createCobbleWorkerRecipe(
@@ -206,7 +206,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:poke_genes", count: 1 },
     "psychic",
-    48000,
+    24000,
     "HP"
   );
   [
@@ -275,7 +275,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:fairy_heart", count: 1 },
     "fairy",
-    48000,
+    24000,
     "SPECIAL_DEFENCE"
   );
   createCobbleWorkerRecipe(
@@ -284,7 +284,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:prismatic_ice", count: 1 },
     "ice",
-    48000,
+    24000,
     "DEFENCE"
   );
   createCobbleWorkerRecipe(
@@ -293,8 +293,17 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:unbreakable_cog", count: 1 },
     "steel",
-    48000,
+    24000,
     "SPEED"
+  );
+  createCobbleWorkerRecipe(
+    {
+      item: "society:prismatic_shard",
+    },
+    { item: "sunlit_cobblemon:atmospheric_vial", count: 1 },
+    "flying",
+    24000,
+    "HP"
   );
   createCobbleWorkerRecipe(
     {
@@ -302,7 +311,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:tabula_rasa", count: 1 },
     "rock",
-    48000,
+    24000,
     "SPEED"
   );
   createCobbleWorkerRecipe(
@@ -311,7 +320,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:endless_battery", count: 1 },
     "electric",
-    48000,
+    24000,
     "ATTACK"
   );
   createCobbleWorkerRecipe(
@@ -320,7 +329,7 @@ ServerEvents.recipes((e) => {
     },
     { item: "sunlit_cobblemon:blazing_stone", count: 1 },
     "fire",
-    48000,
+    24000,
     "HP"
   );
 });

@@ -19,6 +19,12 @@
     }
   ],
   "lookup_history": [
+    "item:sunlit_cobblemon:star_pixie",
+    "item:sunlit_cobblemon:atmospheric_vial",
+    "item:botania:brew_vial{brewKey:\"botania:allure\"}",
+    "item:cobblemon:energy_root",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:weeping\"}}",
+    "item:cobblemon:big_root",
     "item:sunlit_cobblemon:unbreakable_cog",
     "item:society:steamy_gadget",
     "item:sunlit_cobblemon:prismatic_ice",
@@ -26,7 +32,6 @@
     "item:sunlit_cobblemon:blazing_stone",
     "item:sunlit_cobblemon:poke_genes",
     "item:society:production_science_pack",
-    "item:sunlit_cobblemon:star_pixie",
     "item:sunlit_cobblemon:berry_capsule",
     "item:sunlit_cobblemon:endless_battery",
     "item:society:animal_cracker",
@@ -564,7 +569,6 @@
     "item:cobblemon:monitor",
     "item:society:fish_pond",
     "item:cobblemon:white_herb",
-    "item:cobblemon:energy_root",
     "item:cobblemon:red_apricorn",
     "item:cobblemon:pink_apricorn",
     "item:cobblemon:pink_mint_leaf",
@@ -1692,22 +1696,6 @@
       "type": "item",
       "id": "veggiesdelight:turnip",
       "amount": 3
-    },
-    "item:supplementaries:jar",
-    {
-      "type": "item",
-      "id": "cobblemon:leppa_berry",
-      "amount": 5
-    },
-    {
-      "type": "item",
-      "id": "moreminecarts:glass_spines",
-      "amount": 9
-    },
-    {
-      "type": "item",
-      "id": "farmersdelight:tomato_sauce",
-      "amount": 23
     }
   ],
   "craft_history": [

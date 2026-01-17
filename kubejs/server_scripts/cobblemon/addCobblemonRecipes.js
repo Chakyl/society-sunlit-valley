@@ -58,7 +58,7 @@ ServerEvents.recipes((e) => {
       g: "sunlit_cobblemon:blazing_stone",
       f: "sunlit_cobblemon:fairy_heart",
       s: "society:ember_crystal_cluster",
-    }
+    },
   );
   e.shaped(
     Item.of("sunlit_cobblemon:star_pixie", '{type:"electric"}'),
@@ -67,7 +67,7 @@ ServerEvents.recipes((e) => {
       g: "sunlit_cobblemon:endless_battery",
       f: "sunlit_cobblemon:fairy_heart",
       s: "society:amulet_of_light",
-    }
+    },
   );
   e.shaped(
     Item.of("sunlit_cobblemon:star_pixie", '{type:"rock"}'),
@@ -76,7 +76,7 @@ ServerEvents.recipes((e) => {
       g: "sunlit_cobblemon:tabula_rasa",
       f: "sunlit_cobblemon:fairy_heart",
       s: "society:source_gem",
-    }
+    },
   );
   e.shaped(
     Item.of("sunlit_cobblemon:star_pixie", '{type:"ice"}'),
@@ -85,7 +85,7 @@ ServerEvents.recipes((e) => {
       g: "sunlit_cobblemon:prismatic_ice",
       f: "sunlit_cobblemon:fairy_heart",
       s: "society:wheel_of_adaptation",
-    }
+    },
   );
   e.shaped(
     Item.of("sunlit_cobblemon:star_pixie", '{type:"steel"}'),
@@ -94,6 +94,25 @@ ServerEvents.recipes((e) => {
       g: "sunlit_cobblemon:unbreakable_cog",
       f: "sunlit_cobblemon:fairy_heart",
       s: "society:steamy_gadget",
-    }
+    },
+  );
+
+  e.shaped(
+    Item.of("sunlit_cobblemon:star_pixie", '{type:"psychic"}'),
+    [" g ", "fsf", " g "],
+    {
+      g: "sunlit_cobblemon:poke_genes",
+      f: "sunlit_cobblemon:fairy_heart",
+      s: "society:production_science_pack",
+    },
+  );
+    e.shaped(
+    Item.of("sunlit_cobblemon:star_pixie", '{type:"flying"}'),
+    [" g ", "fsf", " g "],
+    {
+      g: "sunlit_cobblemon:atmospheric_vial",
+      f: "sunlit_cobblemon:fairy_heart",
+      s: "society:production_science_pack",
+    },
   );
 });
