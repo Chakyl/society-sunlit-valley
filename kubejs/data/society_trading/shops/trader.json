@@ -2,7 +2,7 @@
   "shop_id": "trader",
   "name": "shop.society_trading.trader",
   "texture": "minecraft:textures/block/fletching_table_side",
-  "stage_required": "exotic_trader_unlocked",
+  "stage_required": "entered_skull_cavern",
   "jei_catalyst": { "item": "minecraft:fletching_table" },
   "villager_profession": "fletcher",
   "trades": [
@@ -352,6 +352,21 @@
     },
     {
       "offer": {
+        "item": "society:inserter",
+        "count": 1
+      },
+      "request": {
+        "item": "society:truffle_oil",
+        "count": 16
+      },
+      "second_request": {
+        "item": "society:double_aged_ancient_cider",
+        "count": 1
+      },
+      "trade_id": "minecraft:inserter_for_truffle_oil_and_prismatic_shard"
+    },
+    {
+      "offer": {
         "item": "society:recycled_core",
         "count": 1
       },
@@ -366,21 +381,6 @@
       "stage_required": "mining_mastery",
       "unlock_description": "jei.society_trading.mining_mastery_unlocked",
       "trade_id": "minecraft:trader_recycled_core_for_ruby_and_prismatic_shard"
-    },
-    {
-      "offer": {
-        "item": "society:inserter",
-        "count": 1
-      },
-      "request": {
-        "item": "society:truffle_oil",
-        "count": 16
-      },
-      "second_request": {
-        "item": "society:double_aged_ancient_cider",
-        "count": 1
-      },
-      "trade_id": "minecraft:inserter_for_truffle_oil_and_prismatic_shard"
     }
   ]
 }
