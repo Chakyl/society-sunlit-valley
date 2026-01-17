@@ -1,9 +1,9 @@
-const formatNumber = (number, quality) => {
+const formatNumber = (number, quality, doubled) => {
   let value;
   if (quality) {
-    if (quality == 1.0) value = Math.round(number * 1.25);
-    if (quality == 2.0) value = Math.round(number * 1.5);
-    if (quality == 3.0) value = Math.round(number * 2);
+    if (quality == 1.0) value = Math.round(number * (doubled ? 1.5 : 1.25));
+    if (quality == 2.0) value = Math.round(number * (doubled ? 2 : 1.5));
+    if (quality == 3.0) value = Math.round(number * (doubled ? 3 : 2));
   } else {
     value = number;
   }
@@ -14,6 +14,7 @@ const getStackBonusValueTooltips = (text, number, item, attribute, quality) => {
   let value = number;
   let clientStages = Client.player.stages;
   let bonusTooltips = [];
+  let qualityDoubled = false;
   let attributeMult = global.getAttributeMultiplier(
     Client.player.nbt.Attributes,
     `shippingbin:${attribute}_sell_multiplier`
@@ -25,7 +26,9 @@ const getStackBonusValueTooltips = (text, number, item, attribute, quality) => {
   ) {
     hasMultipliers = true;
     value = 666;
-    bonusTooltips.push(Text.translatable("item.society.bluegill_meridian.price_modifier").aqua());
+    bonusTooltips.push(
+      Text.translatable("item.society.bluegill_meridian.price_modifier").aqua()
+    );
   }
   if (
     clientStages.has("phenomenology_of_treasure") &&
@@ -33,7 +36,11 @@ const getStackBonusValueTooltips = (text, number, item, attribute, quality) => {
   ) {
     hasMultipliers = true;
     value *= 3;
-    bonusTooltips.push(Text.translatable("item.society.phenomenology_of_treasure.price_modifier").aqua());
+    bonusTooltips.push(
+      Text.translatable(
+        "item.society.phenomenology_of_treasure.price_modifier"
+      ).aqua()
+    );
   }
   if (
     clientStages.has("brine_and_punishment") &&
@@ -41,20 +48,49 @@ const getStackBonusValueTooltips = (text, number, item, attribute, quality) => {
   ) {
     hasMultipliers = true;
     value *= 2;
-    bonusTooltips.push(Text.translatable("item.society.brine_and_punishment.price_modifier").aqua());
+    bonusTooltips.push(
+      Text.translatable(
+        "item.society.brine_and_punishment.price_modifier"
+      ).aqua()
+    );
   }
-
+  if (
+    quality > 0 &&
+    clientStages.has("the_quality_of_the_earth") &&
+    attribute.equals("crop") &&
+    !item.hasTag("minecraft:fishes")
+  ) {
+    hasMultipliers = true;
+    qualityDoubled = true
+    bonusTooltips.push(
+      Text.translatable(
+        "item.society.the_quality_of_the_earth.price_modifier"
+      ).aqua()
+    );
+  }
   value = Math.round(value * item.count * attributeMult);
   text.add(1, [
-    Text.translatable("tooltip.society.coins", `${formatNumber(value, quality)}`).white(),
+    Text.translatable(
+      "tooltip.society.coins",
+      `${formatNumber(value, quality, qualityDoubled)}`
+    ).white(),
     Text.of(" "),
-    Text.translatable("tooltip.society.stack_value").gray().append(hasMultipliers ? Text.translatable("tooltip.society.multipliers") : Text.empty()),
+    Text.translatable("tooltip.society.stack_value")
+      .gray()
+      .append(
+        hasMultipliers
+          ? Text.translatable("tooltip.society.multipliers")
+          : Text.empty()
+      ),
   ]);
   bonusTooltips.forEach((bonus, index) => {
     text.add(2 + index, [bonus]);
   });
   if (attributeMult > 1) {
-    text.add(bonusTooltips.length + 2, [getAttributeText(attribute), Text.green(` +${Math.round((attributeMult - 1) * 100)}%`)]);
+    text.add(bonusTooltips.length + 2, [
+      getAttributeText(attribute),
+      Text.green(` +${Math.round((attributeMult - 1) * 100)}%`),
+    ]);
   } else {
     text.add(bonusTooltips.length + 2, [getAttributeText(attribute)]);
   }
@@ -85,9 +121,15 @@ global.addPriceTooltip = (tooltip, sellable, attribute) => {
       getStackBonusValueTooltips(text, value, item, attribute, quality);
     } else {
       text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(value, quality)}`).white(),
+        Text.translatable(
+          "tooltip.society.coins",
+          `${formatNumber(value, quality)}`
+        ).white(),
         Text.of(" "),
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+        Text.translatable(
+          "tooltip.society.hold_key",
+          Text.translatable("key.keyboard.shift").gray()
+        ).darkGray(),
       ]);
     }
   });
@@ -147,15 +189,24 @@ ItemEvents.tooltip((tooltip) => {
       }
       if (tooltip.shift) {
         text.add(1, [
-          Text.translatable("tooltip.society.coins", `${calculateCost(coin.path, 1, item.count)}`).white(),
+          Text.translatable(
+            "tooltip.society.coins",
+            `${calculateCost(coin.path, 1, item.count)}`
+          ).white(),
           Text.of(" "),
           Text.translatable("tooltip.society.stack_value").gray(),
         ]);
       } else {
         text.add(1, [
-          Text.translatable("tooltip.society.coins", `${calculateCost(coin.path, 1, 1)}`).white(),
+          Text.translatable(
+            "tooltip.society.coins",
+            `${calculateCost(coin.path, 1, 1)}`
+          ).white(),
           Text.of(" "),
-          Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+          Text.translatable(
+            "tooltip.society.hold_key",
+            Text.translatable("key.keyboard.shift").gray()
+          ).darkGray(),
         ]);
       }
     });
@@ -174,9 +225,15 @@ ItemEvents.tooltip((tooltip) => {
       getStackBonusValueTooltips(text, price, item, "crop", 0);
     } else {
       text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
+        Text.translatable(
+          "tooltip.society.coins",
+          `${formatNumber(price, 0)}`
+        ).white(),
         Text.of(" "),
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+        Text.translatable(
+          "tooltip.society.hold_key",
+          Text.translatable("key.keyboard.shift").gray()
+        ).darkGray(),
       ]);
     }
   });
@@ -194,9 +251,15 @@ ItemEvents.tooltip((tooltip) => {
       getStackBonusValueTooltips(text, price, item, "crop", 0);
     } else {
       text.add(1, [
-        Text.translatable("tooltip.society.coins", `${formatNumber(price, 0)}`).white(),
+        Text.translatable(
+          "tooltip.society.coins",
+          `${formatNumber(price, 0)}`
+        ).white(),
         Text.of(" "),
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+        Text.translatable(
+          "tooltip.society.hold_key",
+          Text.translatable("key.keyboard.shift").gray()
+        ).darkGray(),
       ]);
     }
   });
@@ -213,7 +276,10 @@ ItemEvents.tooltip((tooltip) => {
   global.geodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:froggy_helm") {
       global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
+      tooltip.add(
+        geodeItem.item,
+        Text.translatable("tooltip.society.item_type.mineral").gray()
+      );
     } else {
       global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
@@ -221,7 +287,10 @@ ItemEvents.tooltip((tooltip) => {
   global.frozenGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_drum") {
       global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
+      tooltip.add(
+        geodeItem.item,
+        Text.translatable("tooltip.society.item_type.mineral").gray()
+      );
     } else {
       global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
@@ -229,7 +298,10 @@ ItemEvents.tooltip((tooltip) => {
   global.magmaGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_gadget") {
       global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.translatable("tooltip.society.item_type.mineral").gray());
+      tooltip.add(
+        geodeItem.item,
+        Text.translatable("tooltip.society.item_type.mineral").gray()
+      );
     } else {
       global.addPriceTooltip(tooltip, geodeItem, "meat");
     }
@@ -237,7 +309,10 @@ ItemEvents.tooltip((tooltip) => {
   // Gem
   global.gems.forEach((gem) => {
     global.addPriceTooltip(tooltip, gem, "gem");
-    tooltip.add(gem.item, Text.translatable("tooltip.society.item_type.gem").gray());
+    tooltip.add(
+      gem.item,
+      Text.translatable("tooltip.society.item_type.gem").gray()
+    );
   });
   [
     "society:sparkstone",

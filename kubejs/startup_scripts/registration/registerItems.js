@@ -617,6 +617,7 @@ StartupEvents.registry("item", (e) => {
     "no_name_for_the_sheep",
     "paradise_crop",
     "pond_house_five",
+    "the_quality_of_the_earth",
     "the_red_and_the_black",
     "slime_contain_protect",
     "slouching_towards_artistry",

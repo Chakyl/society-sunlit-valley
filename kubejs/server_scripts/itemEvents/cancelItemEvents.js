@@ -32,5 +32,22 @@ ItemEvents.rightClicked(
   ["refinedstorage:4k_storage_block", "refinedstorage:64k_storage_block"],
   (e) => {
     if (e.player.isCrouching()) e.cancel();
-  }
+  },
+);
+
+ItemEvents.rightClicked(
+  [
+    "buildinggadgets2:gadget_copy_paste",
+    "buildinggadgets2:gadget_exchanging",
+    "buildinggadgets2:gadget_copy_paste",
+    "buildinggadgets2:gadget_cut_paste",
+    "buildinggadgets2:gadget_destruction",
+    "botania:smelt_rod",
+  ],
+  (e) => {
+    if (e.player.level.dimension === "society:skull_cavern") {
+      e.player.tell(Text.red("Don't do that."))
+      e.cancel();
+    }
+  },
 );

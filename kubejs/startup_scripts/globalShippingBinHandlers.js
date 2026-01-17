@@ -1,10 +1,10 @@
 // Priority: 1000
-const calculateQualityValue = (number, quality) => {
+const calculateQualityValue = (number, quality, doubled) => {
   let value;
   if (quality) {
-    if (quality == 1.0) value = Math.round(number * 1.25);
-    if (quality == 2.0) value = Math.round(number * 1.5);
-    if (quality == 3.0) value = Math.round(number * 2);
+    if (quality == 1.0) value = Math.round(number * (doubled ? 1.5 : 1.25));
+    if (quality == 2.0) value = Math.round(number * (doubled ? 2 : 1.5));
+    if (quality == 3.0) value = Math.round(number * (doubled ? 3 : 2));
   } else {
     value = number;
   }
@@ -60,20 +60,36 @@ global.processShippingBinInventory = (
     if (isSellable) {
       let trade = global.trades.get(String(slotItem.id));
       let quality = undefined;
+      let doubleQuality = false;
       let slotNbt = undefined;
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }
-      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
-        if (slotNbt.slime) trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
-        if (slotNbt.plort) trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
+      if (
+        slotNbt &&
+        ((slotNbt.slime && slotNbt.slime.id) ||
+          (slotNbt.plort && slotNbt.plort.id))
+      ) {
+        if (slotNbt.slime)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
+        if (slotNbt.plort)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
 
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
-      itemValue = calculateQualityValue(trade.value, quality);
       // UPDATE CACHING METHOD WHEN ADDING STAGES
+      if (
+        quality &&
+        quality > 0 &&
+        stages.toString().includes("the_quality_of_the_earth") &&
+        trade.multiplier.equals("shippingbin:crop_sell_multiplier") &&
+        Item.of(slotItem).hasTag("minecraft:fishes")
+      ) {
+        doubleQuality = true;
+      }
+      itemValue = calculateQualityValue(trade.value, quality, doubleQuality);
       if (
         stages.toString().includes("bluegill_meridian") &&
         slotItem.id == "aquaculture:bluegill"
@@ -93,6 +109,7 @@ global.processShippingBinInventory = (
       ) {
         itemValue *= 2;
       }
+
       calculatedValue += Math.round(
         itemValue *
           inventory.getStackInSlot(i).count *
@@ -140,7 +157,10 @@ global.handleShippingBinDebt = (
           player.username,
           `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          Text.translatable("society.shipping_bin.debt_paid_all", global.formatPrice(debtPaid.toFixed())).getString()
+          Text.translatable(
+            "society.shipping_bin.debt_paid_all",
+            global.formatPrice(debtPaid.toFixed())
+          ).getString()
         )
       );
       global.setDebt(server, playerUUID, 0);
@@ -152,16 +172,28 @@ global.handleShippingBinDebt = (
           player.username,
           `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          Text.translatable("society.shipping_bin.debt_paid", global.formatPrice(debtPaid.toFixed())).getString()
+          Text.translatable(
+            "society.shipping_bin.debt_paid",
+            global.formatPrice(debtPaid.toFixed())
+          ).getString()
         )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
     }
   }
   if (debtPaid > 0) {
-    let receiptAuthor = Text.translatable("society.hospital_receipt.author").getString();
-    let receiptText = Text.translatable("society.shipping_bin.debt_paid_note", player.username, global.formatPrice(debtPaid.toFixed()), global.formatPrice(totalDebt.toFixed())).getString();
-    let receiptTitle = Text.translatable("society.shipping_bin.debt_paid_note.title").getString();
+    let receiptAuthor = Text.translatable(
+      "society.hospital_receipt.author"
+    ).getString();
+    let receiptText = Text.translatable(
+      "society.shipping_bin.debt_paid_note",
+      player.username,
+      global.formatPrice(debtPaid.toFixed()),
+      global.formatPrice(totalDebt.toFixed())
+    ).getString();
+    let receiptTitle = Text.translatable(
+      "society.shipping_bin.debt_paid_note.title"
+    ).getString();
     receipt = global.getNotePaperItem(receiptAuthor, receiptText, receiptTitle);
     if (extenalOutput) {
       block.popItemFromFace(receipt, block.properties.get("facing"));
@@ -231,7 +263,10 @@ global.processValueOutput = (
             player.username,
             `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
             160,
-            Text.translatable("society.shipping_bin.goods_sold", global.formatPrice(value.toFixed())).getString()
+            Text.translatable(
+              "society.shipping_bin.goods_sold",
+              global.formatPrice(value.toFixed())
+            ).getString()
           )
         );
       }
@@ -289,7 +324,12 @@ global.processValueOutput = (
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`, 160, Text.translatable("society.shipping_bin.full").getString())
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          Text.translatable("society.shipping_bin.full").getString()
+        )
       );
     }
   }
@@ -307,6 +347,7 @@ global.cacheShippingBin = (entity) => {
     "bluegill_meridian",
     "phenomenology_of_treasure",
     "brine_and_punishment",
+    "the_quality_of_the_earth",
   ];
   let binPlayer;
   level.getServer().players.forEach((p) => {

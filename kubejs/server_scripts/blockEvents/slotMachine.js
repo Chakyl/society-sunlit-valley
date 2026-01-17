@@ -52,6 +52,7 @@ BlockEvents.rightClicked("tanukidecor:slot_machine", (e) => {
         );
         if (
           prismaticCoins.includes(heldItem) &&
+          player.stages.has("adventuring_mastery") &&
           !player.stages.has("the_red_and_the_black") &&
           Math.random() < 0.05
         ) {

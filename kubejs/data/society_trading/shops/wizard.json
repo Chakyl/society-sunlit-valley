@@ -2,7 +2,7 @@
   "shop_id": "wizard",
   "name": "shop.society_trading.wizard",
   "texture": "botania:textures/block/mana_void",
-  "villager_profession": "cleric",
+  "stage_required": "entered_nether",
   "jei_catalyst": { "item": "minecraft:brewing_stand" },
   "trades": [
     {

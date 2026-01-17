@@ -253,6 +253,10 @@ ItemEvents.tooltip((tooltip) => {
       description: "The Market sells all basic seeds in every season.",
     },
     {
+      item: "society:the_quality_of_the_earth",
+      description: "Quality impacts of non-fish farmer products are doubled.",
+    },
+    {
       item: "society:the_red_and_the_black",
       description: "Geodes, loot items, and Slot Machines drop one more item.",
     },
@@ -1361,17 +1365,6 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.translatable("tooltip.society.wine_rack_incompatible").red()
   );
-  // Temp: Dramatic Doors
-  tooltip.add(
-    [
-      "dramaticdoors:tall_create_andesite_door",
-      "dramaticdoors:tall_create_brass_door",
-      "dramaticdoors:tall_create_copper_door",
-      "dramaticdoors:tall_create_framed_glass_door",
-      "dramaticdoors:tall_create_train_door",
-    ],
-    Text.translatable("tooltip.society.temporarily_remove_door").darkRed()
-  );
   tooltip.add(
     [
       "fantasyfurniture:nordic/bed_single",
@@ -1390,6 +1383,10 @@ ItemEvents.tooltip((tooltip) => {
       "fantasyfurniture:necrolord/bed_double",
     ],
     Text.translatable("tooltip.society.magic_mirror_incompatible").red()
+  );
+  tooltip.add(
+    "gag:escape_rope",
+    Text.translatable("tooltip.society.escape_rope_hold").red()
   );
   // Refined
   tooltip.add(
@@ -1426,10 +1423,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("item.society.collar_tag.description").gray()
   );
   tooltip.add(
-    "domesticationinnovation:pet_bed_white",
-    Text.translatable("item.society.pet_bed_white.description").gray()
-  );
-  tooltip.add(
     "domesticationinnovation:drum",
     Text.translatable("item.society.drum.description").gray()
   );
@@ -1448,6 +1441,7 @@ ItemEvents.tooltip((tooltip) => {
 
   tooltip.add(
     [
+      "society:the_quality_of_the_earth",
       "society:mystic_syrup",
       "cluttered:willow_log",
       "cluttered:willow_sapling",
@@ -1460,19 +1454,33 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.farming_mastery.required")
   );
   tooltip.add(
-    ["society:recycled_core", "society:moon_statue"],
+    [
+      "society:the_spark_also_rises",
+      "society:recycled_core",
+      "society:moon_statue",
+    ],
     Text.translatable("tooltip.society.mining_mastery.required")
   );
   tooltip.add(
-    ["society:animal_cracker", "society:sunlit_crystal"],
+    [
+      "society:women_who_run_with_the_plushies",
+      "society:animal_cracker",
+      "society:sunlit_crystal",
+    ],
     Text.translatable("tooltip.society.husbandry_mastery.required")
   );
   tooltip.add(
-    ["society:roe_recycler", "society:net_bobber", "society:needle_bobber"],
+    [
+      "society:pond_house_five",
+      "society:roe_recycler",
+      "society:net_bobber",
+      "society:needle_bobber",
+    ],
     Text.translatable("tooltip.society.fishing_mastery.required")
   );
   tooltip.add(
     [
+      "society:the_red_and_the_black",
       "domesticationinnovation:pet_bed_white",
       "domesticationinnovation:drum",
       "domesticationinnovation:wayward_lantern",
@@ -1481,5 +1489,4 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.translatable("tooltip.society.adventuring_mastery.required")
   );
-  [];
 });

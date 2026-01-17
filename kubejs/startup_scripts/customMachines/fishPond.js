@@ -95,7 +95,11 @@ global.handleQuestSubmission = (type, clickEvent) => {
       });
 
       block.setEntityData(nbt);
-      if (!player.stages.has("pond_house_five") && Math.random() <= 0.01) {
+      if (
+        player.stages.has("fishing_mastery") &&
+        !player.stages.has("pond_house_five") &&
+        Math.random() <= 0.01
+      ) {
         block.popItemFromFace("society:pond_house_five", facing);
       }
       clickEvent.server.scheduleInTicks(2, () => {
