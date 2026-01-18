@@ -32,11 +32,46 @@ ItemEvents.modification((e) => {
   e.modify("society:sparkstone", (item) => {
     item.rarity = "epic";
   });
+  e.modify("numismatics:neptunium_coin", (item) => {
+    item.rarity = "rare";
+  });
   e.modify(
-    ["numismatics:neptunium_coin", "numismatics:ancient_coin", "numismatics:prismatic_coin"],
+    [
+      "numismatics:ancient_coin",
+      "numismatics:prismatic_coin",
+      "society:ancient_fruit_seed",
+      "society:ancient_fruit",
+      "society:sunlit_crystal",
+      "society:treasure_totem",
+      "society:recycled_core",
+      "society:bubble_totem",
+      "society:mystic_syrup",
+      "society:net_bobber",
+      "society:needle_bobber",
+      "society:sparkpod",
+      "society:sparkpod_seed",
+      "cluttered:willow_sapling",
+      "cluttered:willow_log",
+      "cluttered:flowering_willow_log",
+      "cluttered:flowering_willow_leaves",
+      "cluttered:willow_leaves",
+      "cluttered:willow_vines",
+      "society:women_who_run_with_the_plushies",
+      "society:the_spark_also_rises",
+      "society:the_red_and_the_black",
+      "society:the_quality_of_the_earth",
+      "society:pond_house_five",
+      "society:animal_cracker",
+      "society:moon_statue",
+      "society:roe_recycler",
+      "minecraft:enchanting_table",
+      "domesticationinnovation:collar_tag",
+      "domesticationinnovation:wayward_lantern",
+      "domesticationinnovation:drum",
+    ],
     (item) => {
       item.rarity = "epic";
-    }
+    },
   );
   e.modify(["society:milk_pail", "society:magic_shears"], (item) => {
     item.maxStackSize = 1;
@@ -150,7 +185,7 @@ ItemEvents.modification((e) => {
       (item.foodProperties = (food) => {
         food.hunger(5);
         food.saturation(0.5);
-      })
+      }),
   );
   const netheriteTools = [
     "minecraft:netherite_axe",

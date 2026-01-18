@@ -334,6 +334,15 @@ LootJS.modifiers((e) => {
 
   // + Fish skills
   e.addLootTableModifier("minecraft:gameplay/fishing")
+    .playerPredicate((p) =>
+      global.hasBobber(p.getHeldItem("main_hand"), "society:needle_bobber")
+    )
+    .modifyLoot(Ingredient.all, (itemStack) => {
+      if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
+      if (itemStack.maxStackSize == 1) return itemStack;
+      itemStack.setCount(itemStack.getCount() + 5);
+      return itemStack;
+    })
     .hasAnyStage("fly_fisher")
     .modifyLoot(Ingredient.all, (itemStack) => {
       if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
@@ -346,15 +355,6 @@ LootJS.modifiers((e) => {
       if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 3);
-      return itemStack;
-    })
-    .playerPredicate((p) =>
-      global.hasBobber(p.getHeldItem("main_hand"), "society:needle_bobber")
-    )
-    .modifyLoot(Ingredient.all, (itemStack) => {
-      if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
-      if (itemStack.maxStackSize == 1) return itemStack;
-      itemStack.setCount(itemStack.getCount() + 5);
       return itemStack;
     })
 });

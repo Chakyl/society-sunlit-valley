@@ -488,17 +488,6 @@ global.husbandryForagingDefinitions = [
     animal: "minecraft:bat",
     forages: [
       {
-        itemPool: [
-          "minecraft:apple",
-          "pamhc2trees:lycheeitem",
-          "pamhc2trees:bananaitem",
-        ],
-        countMult: 3,
-        chance: 1,
-        minHearts: 2,
-        hasQuality: true,
-      },
-      {
         item: "pamhc2trees:plumitem",
         countMult: 2,
         chance: 0.15,
@@ -510,6 +499,17 @@ global.husbandryForagingDefinitions = [
         countMult: 2,
         chance: 0.10,
         minHearts: 8,
+        hasQuality: true,
+      },
+      {
+        itemPool: [
+          "minecraft:apple",
+          "pamhc2trees:lycheeitem",
+          "pamhc2trees:bananaitem",
+        ],
+        countMult: 3,
+        chance: 1,
+        minHearts: 2,
         hasQuality: true,
       },
     ],
@@ -660,9 +660,5 @@ global.petGifts = [
   {
     animal: "crittersandcompanions:ferret",
     gifts: ["crittersandcompanions:jumping_spider_spawn_egg"],
-  },
-  {
-    animal: "crittersandcompanions:shima_enaga",
-    gifts: ["relics:elytra_booster"],
-  },
+  }
 ];
