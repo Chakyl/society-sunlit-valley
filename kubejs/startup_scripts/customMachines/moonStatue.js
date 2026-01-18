@@ -15,6 +15,7 @@ global.handleMoonStatueClick = (click) => {
     if (hand == "OFF_HAND") return;
     if (hand == "MAIN_HAND") {
       let day = global.getDay(level);
+      if (!player.persistentData.days) player.persistentData.days = {}
       let dayData = player.persistentData.days.moonStatueDay;
       if (dayData == undefined || dayData < day) {
         let selectedBuff =

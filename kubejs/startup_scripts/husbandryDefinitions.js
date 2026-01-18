@@ -660,9 +660,5 @@ global.petGifts = [
   {
     animal: "crittersandcompanions:ferret",
     gifts: ["crittersandcompanions:jumping_spider_spawn_egg"],
-  },
-  {
-    animal: "crittersandcompanions:shima_enaga",
-    gifts: ["relics:elytra_booster"],
-  },
+  }
 ];

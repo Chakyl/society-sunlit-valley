@@ -41,13 +41,37 @@
     }
   ],
   "lookup_history": [
-    "item:pamhc2trees:lycheeitem",
+    "item:trials:music_disc_creator_box",
+    "item:minecraft:music_disc_tears",
+    "item:quark:music_disc_wind",
+    "item:quark:music_disc_chatter",
+    "item:minecraft:music_disc_pigstep",
+    "item:windswept:music_disc_snow",
+    "item:minecraft:music_disc_11",
+    "item:minecraft:netherite_ingot",
+    "item:society:net_bobber",
+    "item:society:heart_of_neptunium",
+    "item:society:needle_bobber",
+    "item:society:moon_statue",
+    "item:society:roe_recycler",
+    "item:society:treasure_totem",
+    "item:minecraft:music_disc_5",
+    "item:minecraft:music_disc_mall",
+    "item:society:animal_cracker",
+    "item:society:the_red_and_the_black",
     "item:society:recycled_core",
+    "item:society:mystic_syrup",
+    "item:society:sparkpod",
+    "item:domesticationinnovation:pet_bed_white",
     "item:society:gray_anatomy",
+    "item:society:dried_tubabacco_leaf",
+    "item:tanukidecor:diy_workbench",
+    "item:cluttered:colosseo_wall_lantern",
+    "item:tanukidecor:slot_machine",
+    "item:pamhc2trees:lycheeitem",
     "item:society:tubabacco_leaf_seed",
     "item:society:the_quality_of_the_earth",
     "item:society:women_who_run_with_the_plushies",
-    "item:society:the_red_and_the_black",
     "item:society:slime_contain_protect",
     "item:society:pond_house_five",
     {
@@ -107,11 +131,6 @@
     },
     {
       "type": "item",
-      "id": "society:heart_of_neptunium",
-      "amount": 3
-    },
-    {
-      "type": "item",
       "id": "society:furniture_box",
       "amount": 2
     },
@@ -142,7 +161,6 @@
     "item:cluttered:sweetheart_table",
     "item:society:bubble_totem",
     "item:numismatics:neptunium_coin",
-    "item:minecraft:netherite_ingot",
     "item:vinery:cristel_wine",
     "item:vinery:red_wine",
     "item:vinery:cherry_wine",
@@ -177,7 +195,6 @@
     "item:herbalbrews:oolong_tea",
     "item:minecraft:magma_block",
     "item:society:spindlefish_roe",
-    "item:society:moon_statue",
     "item:create:white_seat",
     "item:wildernature:raccoon_spawn_egg",
     "item:minecraft:rabbit_spawn_egg",
@@ -231,7 +248,6 @@
     "item:society:coin_leaderboard",
     "item:society:bait_maker",
     "item:society:charging_rod",
-    "item:society:roe_recycler",
     "item:society:pickling_can",
     "item:minecraft:bundle",
     "item:minecraft:painting{EntityTag:{variant:\"portfolio:greatsword\"}}",
@@ -253,7 +269,6 @@
     "item:society:sparkpod_juice",
     "item:society:sparkpod_preserves",
     "item:society:dried_sparkpod",
-    "item:society:sparkpod",
     "item:minecraft:loom",
     "item:via_romana:charting_map",
     "item:botania:auto_crafting_halo",
@@ -276,11 +291,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
       "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:farmersdelight:cooked_bacon",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:candlelight:pork_ribs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -291,9 +306,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
+      "#item:forge:crops/zucchini",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -515,11 +530,6 @@
     },
     {
       "type": "item",
-      "id": "society:mystic_syrup",
-      "amount": 2
-    },
-    {
-      "type": "item",
       "id": "society:truffle_oil",
       "amount": 3
     },
@@ -548,11 +558,6 @@
       "type": "item",
       "id": "society:mini_oni_eye",
       "amount": 3
-    },
-    {
-      "type": "item",
-      "id": "society:treasure_totem",
-      "amount": 5
     },
     "item:everycomp:q/atmospheric/grimwood_bookshelf",
     "item:society:aging_cask",
@@ -895,7 +900,6 @@
     "item:meadow:fire_log",
     "item:minecraft:basalt",
     "item:minecraft:grass_block",
-    "item:society:net_bobber",
     "item:society:aged_ghastly_grenache",
     "item:society:dried_chorus_fruit",
     "item:society:lunarite",
@@ -1101,13 +1105,11 @@
     "item:minecraft:stripped_oak_log",
     "item:botania:black_lotus",
     "item:botania:blacker_lotus",
-    "item:society:needle_bobber",
     {
       "type": "item",
       "id": "society:neptuna_roe",
       "amount": 4
     },
-    "item:domesticationinnovation:pet_bed_white",
     "item:domesticationinnovation:collar_tag",
     "item:domesticationinnovation:wayward_lantern",
     "item:botania:manaweave_chestplate{Damage:0}",
@@ -1127,7 +1129,6 @@
     "item:copycats:copycat_stairs",
     "item:rehooked:diamond_hook",
     "item:rehooked:red_hook",
-    "item:society:animal_cracker",
     "item:society:grimwood_supply_crate",
     {
       "type": "item",
@@ -1499,24 +1500,7 @@
     "item:society:frozen_tear",
     "item:society:pristine_frozen_tear",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"windswept:slipping_curse\",lvl:1s}]}",
-    "item:botania:ice_pendant",
-    "item:botania:cocoon",
-    "item:windswept:ice_chain",
-    "item:beachparty:icecream_coconut",
-    "item:species:frozen_meat",
-    "item:numismatics:blaze_banker",
-    "item:quark:vertical_oak_planks",
-    "item:simplehats:cucumbereyemask",
-    "item:vintagedelight:kimchi",
-    "item:vintagedelight:smooth_salt_block",
-    "item:vintagedelight:salt_bricks",
-    "item:vintagedelight:mixed_salt_bricks",
-    "item:vintagedelight:mixed_salt_brick_slab",
-    {
-      "type": "item",
-      "id": "vintagedelight:salt_brick_slab",
-      "amount": 64
-    }
+    "item:botania:ice_pendant"
   ],
   "craft_history": [
     "minecraft:kjs/society_auto_grabber",

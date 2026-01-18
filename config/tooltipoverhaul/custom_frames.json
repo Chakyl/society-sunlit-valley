@@ -2,10 +2,7 @@
   "frames": [
     {
       "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
-      "items": [
-        "minecraft:dragon_egg",
-        "minecraft:enchanted_golden_apple"
-      ],
+      "items": ["minecraft:dragon_egg", "minecraft:enchanted_golden_apple"],
       "gradientType": "custom",
       "borderType": "static",
       "gradientColors": ["#C551C3", "#C551C3", "#C551C3"],
@@ -37,6 +34,67 @@
       ],
       "gradientType": "custom",
       "borderType": "auto_gradient"
+    },
+    {
+      "texture": "tooltipoverhaul:textures/overlay/diamond_frame.png",
+      "items": [
+        "numismatics:ancient_coin",
+        "numismatics:prismatic_coin",
+        "society:ancient_fruit_seed",
+        "society:ancient_fruit",
+        "society:sunlit_crystal",
+        "society:treasure_totem",
+        "society:recycled_core",
+        "society:bubble_totem",
+        "society:mystic_syrup",
+        "society:net_bobber",
+        "society:needle_bobber",
+        "society:sparkpod",
+        "society:sparkpod_seed",
+        "cluttered:willow_sapling",
+        "cluttered:willow_log",
+        "cluttered:flowering_willow_log",
+        "cluttered:flowering_willow_leaves",
+        "cluttered:willow_leaves",
+        "cluttered:willow_vines",
+        "society:women_who_run_with_the_plushies",
+        "society:the_spark_also_rises",
+        "society:the_red_and_the_black",
+        "society:the_quality_of_the_earth",
+        "society:pond_house_five",
+        "society:animal_cracker",
+        "society:moon_statue",
+        "society:roe_recycler",
+        "minecraft:enchanting_table",
+        "domesticationinnovation:collar_tag",
+        "domesticationinnovation:wayward_lantern",
+        "domesticationinnovation:drum"
+      ],
+      "gradientType": "custom",
+      "borderType": "auto_gradient"
+    },
+    {
+      "texture": "tooltipoverhaul:textures/overlay/gear_frame.png",
+      "items": [
+        "society:gray_anatomy",
+        "society:stone_hand",
+        "society:ancient_cog",
+        "society:pink_matter",
+        "society:broken_clock",
+        "society:sea_biscut",
+        "society:black_opal",
+        "society:ancient_roe",
+        "society:tiny_gnome",
+        "society:infinity_worm",
+        "society:frosted_tip",
+        "society:inserter",
+        "society:cordycep",
+        "society:enkephalin",
+        "society:gray_anatomy"
+      ],
+      "gradientType": "custom",
+      "borderType": "static",
+      "gradientColors": ["#3D3A5E", "#3D3A5E", "#3D3A5E"]
     },
     {
       "texture": "tooltipoverhaul:textures/overlay/amber_frame.png",
