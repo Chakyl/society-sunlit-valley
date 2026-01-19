@@ -1362,7 +1362,6 @@ const cookingPotRecipes = [
   { item: "veggiesdelight:rice_and_vegetables", value: 221 },
   { item: "veggiesdelight:sweet_potato_pancakes", value: 336 },
   { item: "society:mossberry_stew", value: 288 },
-  { item: "society:mossberry_stew", value: 288 },
   { item: "windswept:goat_stew", value: 190 },
   { item: "windswept:chestnut_soup", value: 80 },
   { item: "windswept:christmas_pudding", value: 160 },

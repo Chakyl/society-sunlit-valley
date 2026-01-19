@@ -73,9 +73,12 @@ ItemEvents.modification((e) => {
       item.rarity = "epic";
     },
   );
-  e.modify(["society:milk_pail", "society:magic_shears"], (item) => {
-    item.maxStackSize = 1;
-  });
+  e.modify(
+    ["society:milk_pail", "society:magic_shears", "society:mood_scanner"],
+    (item) => {
+      item.maxStackSize = 1;
+    },
+  );
   e.modify("society:aquamarine", (item) => {
     item.rarity = "uncommon";
   });

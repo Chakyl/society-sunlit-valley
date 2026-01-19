@@ -8,13 +8,18 @@ global.isFresh = (day, actionAge) => {
   return day < actionAge;
 };
 
-global.getAnimalIsNotCramped = (target, scale) => {
+global.getAnimalIsNotCramped = (target, scale, applyGlowing) => {
   const level = target.getLevel();
   const entities = level
     .getEntitiesWithin(target.boundingBox.inflate(scale))
     .filter((e) => global.checkEntityTag(e, "society:husbandry_animal"));
-
-  return entities.length < 6;
+  let cramped = entities.length > 5 
+  if (cramped&& applyGlowing) {
+    entities.forEach((entity)=>{
+      entity.potionEffects.add("minecraft:glowing", 200, 0, false, false);
+    })
+  }
+  return !cramped;
 };
 
 global.isWarpedCow = (target) =>
@@ -412,62 +417,68 @@ const getNearbyBlocks = (level, target, radius, tag) => {
   return blockCount;
 };
 
-let debugMood = false;
 
-global.getOrFetchMood = (level, target, day, player) => {
+global.getOrFetchMood = (level, target, day, player, debugMood) => {
   const data = target.persistentData;
   let moodDebuffs = 0;
   let moodImpactModifier = getMoodImpactModifier(target);
+  if (moodImpactModifier > 1 && debugMood) player.tell(Text.translatable("society.husbandry.mood.breed_impact", moodImpactModifier).gold());
   if (day - data.getInt("ageLastPet") > 1) {
     moodDebuffs += 64;
-    if (debugMood) player.tell("Too long since last pet");
+    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_pet").red());
   }
   if (day - data.getInt("ageLastFed") > 1) {
     moodDebuffs += 128;
-    if (debugMood) player.tell("Too long since last fed");
+    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_fed").red());
   }
   let requiredBlocks = 0;
   if (global.coldMobs.includes(target.type)) {
     requiredBlocks = getNearbyBlocks(level, target, 5, "society:cold_blocks");
     if (requiredBlocks < 5) {
-      moodDebuffs += 32 - requiredBlocks / (5 * 32);
-      if (debugMood) player.tell("Not enough cold blocks ");
+      let coldDebuff = 32 - requiredBlocks / (5 * 32)
+      moodDebuffs += coldDebuff;
+      if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_cold", coldDebuff).red());
     }
   } else {
-    if (global.getSeasonFromLevel(level) === "winter" && target.canSeeSky) {
+    // 4.0 TODO: Change to local season
+    if (
+      global.getSeasonFromLevel(level) === "winter" &&
+      level.canSeeSky(target.getPos())
+    ) {
       moodDebuffs += 32;
-      if (debugMood) player.tell("Left outside during winter");
+      if (debugMood) player.tell(Text.translatable("society.husbandry.mood.too_cold").red());
     }
   }
-  if (!global.getAnimalIsNotCramped(target, 3)) {
+  if (!global.getAnimalIsNotCramped(target, 3, debugMood)) {
     moodDebuffs += 96;
-    if (debugMood) player.tell("Cramped conditions");
+    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.cramped").red());
   }
-  if (level.raining && target.canSeeSky) {
+  if (level.raining && level.canSeeSky(target.getPos())) {
     moodDebuffs += 32;
-    if (debugMood) player.tell("Left outside in rain");
+    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.wet").red());
   }
   if (level.getBlock(target.getPos()).hasTag("create:seats")) {
     moodDebuffs += 48;
-    if (debugMood) player.tell("Sitting on seat");
+    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.trapped").red());
   }
-  if (debugMood) player.tell(`Mood debuffs before modifiers: ${moodDebuffs}`);
+  let baseDebuffs = moodDebuffs
   moodDebuffs = moodDebuffs *= moodImpactModifier;
   if (day - data.getInt("ageLastBoosted") == 1) {
-    moodDebuffs += 24;
-    if (debugMood) player.tell("Boosted from food");
+    moodDebuffs -= 24;
+    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.boosted_food").green());
   }
   if (data.clockwork) {
-    moodDebuffs += 64;
-    if (debugMood) player.tell("Boosted from clockwork");
+    moodDebuffs -= 64;
+    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.clockwork").green());
   }
   if (debugMood) {
-    player.tell(`Mood debuffs after modifiers: ${moodDebuffs}`);
-    player.tell(`Final mood: ${256 - moodDebuffs}`);
+    if (baseDebuffs > 0) player.tell(Text.translatable("society.husbandry.mood.total_debuffs", Number(baseDebuffs)).darkRed());
+    player.tell(Text.translatable("society.husbandry.mood.final_mood", Number(256 - moodDebuffs)).gray());
   }
   if (day > data.getInt("ageLastPet")) {
     data.lastMood = Math.max(0, 256 - moodDebuffs);
-    if (256 - moodDebuffs < 8) data.affection = data.affection - 20;
+    // 4.1 TODO: Re-enable
+    // if (256 - moodDebuffs < 8) data.affection = data.affection - 20;
   }
   return data.lastMood;
 };

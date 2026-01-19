@@ -649,6 +649,7 @@ StartupEvents.registry("item", (e) => {
     "truffle_oil",
     "miracle_potion",
     "magic_shears",
+    "mood_scanner",
     "large_egg",
     "large_duck_egg",
     "large_goose_egg",
