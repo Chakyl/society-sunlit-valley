@@ -237,6 +237,9 @@
   "affix.society.partystarter": "파티스타터",
   "affix.society.slime_pinata": "슬라임 피냐타",
 
+  "society.fancymenu.open_wiki":"Sunlit Valley 위키",
+  "society.fancymenu.open_wiki.hover":"작업 중 & 여러분의 기여가 필요합니다!",
+
   "quark.jei.hint.preambl": "",
 
   "key.keyboard.shift": "시프트",
@@ -335,6 +338,19 @@
   "society.husbandry.sunlit_crystal.not_enough_animal_affection": "동물이 인형에 들어가려면 호감도가 10하트가 되어야 합니다!",
   "society.husbandry.sunlit_crystal.has_animal": "이 인형에는 이미 동물이 살고 있습니다!",
   "society.husbandry.sunlit_crystal.not_enough_plushie_affection": "이 동물을 인형에 수용하려면 인형의 호감도가 4하트가 되어야 합니다!",
+  "society.husbandry.mood.meter_header": "%s의 기분",
+  "society.husbandry.mood.breed_impact": "교배로 인해 기분 디버프 %s배",
+  "society.husbandry.mood.not_pet": "-64 - 쓰다듬은지 너무 오래됨",
+  "society.husbandry.mood.not_fed": "-128 - 먹이를 먹지 못한지 너무 오래됨",
+  "society.husbandry.mood.not_cold":"-%s - 한대 기후 동물들은 주변에 차가운 블록이 필요함",
+  "society.husbandry.mood.too_cold": "-32 - 겨울에 밖에 있었음",
+  "society.husbandry.mood.cramped": "-96 - 5마리 이상의 동물이 밀집함",
+  "society.husbandry.mood.wet": "-32 - 밖에서 비를 맞음",
+  "society.husbandry.mood.trapped": "-48 - 좌석에 고정됨",
+  "society.husbandry.mood.boosted_food": "+24 - 특별한 먹이를 먹음",
+  "society.husbandry.mood.clockwork": "+64 - 스킬 '기계 이식'",
+  "society.husbandry.mood.total_debuffs": "기분 디버프 총합: %s",
+  "society.husbandry.mood.final_mood": "최종 기분: %s/256",
   "society.longwings.produce_chance": "%s 확률로 %s 생성",
   "society.longwings.longwing_count": "근처의 나방 및 나비 %s마리",
   "society.longwings.flower_count": "근처에 있는 꽃 종류 %s종",
@@ -818,8 +834,6 @@
   "item.society.animal_cracker.description": "가축에게 먹이면 생산량이 두 배가 됩니다.",
   "item.society.sunlit_crystal.description": "가축을 오른쪽 클릭하여 반대 손에 든 인형에 수용합니다.\n안에 들어간 동물은 호감도가 하락하지 않습니다.\n자동 채집기가 인형 안에 살고 있는 동물을 수확할 수 있습니다.",
   
-  "npc.society.carpenter.name": "Carpenter",
-
   "society.item.plushie.trait.description": "동물 수용 시",
   "society.item.plushie.aquatic": "친수성",
   "society.item.plushie.aquatic.description": "매 수확마다 확률적으로 강/바다 젤리 획득\n§6희귀도마다 5%%",
