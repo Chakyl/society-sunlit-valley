@@ -21,6 +21,25 @@
 					"brightness": 1
 				}
 			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_disliked.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
 		}
 	]
 }

@@ -1,9 +1,17 @@
 console.info("[SOCIETY] villagerMechanics.js loaded");
-const npcMap = new Map([["carpenter", "humanoid/carpenter"]]);
+
+const npcMap = new Map([
+  ["carpenter", "humanoid/carpenter"],
+  ["market", "humanoid/market"],
+  ["blacksmith", "humanoid/blacksmith"],
+  ["shepherd", "humanoid_slim/shepherd"],
+  ["fisher", "humanoid_slim/fisher"],
+  ["banker", "humanoid_slim/banker"]
+]);
 const getBoundNpc = (level, block, boundNpc) => {
   let nearbyNPCs = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(32))
-    .filter((entityType) => entityType.type === "easy_npc:humanoid");
+    .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
   let foundNpc = -1;
   nearbyNPCs.forEach((e) => {
     if (e.getUuid().toString() === boundNpc) {
@@ -12,6 +20,7 @@ const getBoundNpc = (level, block, boundNpc) => {
   });
   return foundNpc;
 };
+
 BlockEvents.placed("society:villager_home", (e) => {
   const { player, block, level, server } = e;
   if (player.isFake()) e.cancel();
@@ -29,7 +38,8 @@ BlockEvents.placed("society:villager_home", (e) => {
 
     let nearbyNPCs = level
       .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
-      .filter((entityType) => entityType.type === "easy_npc:humanoid");
+      .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
+
     if (player && nearbyNPCs.length == 1) {
       level.spawnParticles(
         "ribbits:spell",
@@ -60,6 +70,8 @@ BlockEvents.placed("society:villager_home", (e) => {
           Text.translatable(`dialog.npc.${villagerType}.name`).gold()
         )
       );
+    } else {
+      e.cancel();
     }
   } else {
     e.cancel();

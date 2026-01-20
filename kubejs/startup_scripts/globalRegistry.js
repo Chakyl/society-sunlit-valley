@@ -851,7 +851,6 @@ global.herbalBrews = [
   { item: "society:mocha", value: 512 },
   { item: "society:dirty_chai", value: 5574 },
   { item: "society:bowl_of_soul", value: 240 },
-  { item: "society:truffle_tea", value: 2048 },
 ];
 // Logs
 global.logs = [

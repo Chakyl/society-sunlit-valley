@@ -1,73 +1,121 @@
 // Priority: -100
-runNpcDatagen("market", {
-  name: "Leon",
-  intro: [
-    "I can help you with raising your animals on your farm! If you need any supplies just let me know."
-  ],
-  chatter: {
-    friendship0: [["Friendship level 0 chatter 1 line 1"]],
-    friendship1: [
-      [
-        "Sorry, I don't loan money to farmers.",
-        "One bad season and they come to you crying about their interest rates.",
+if (true) {
+  runNpcDatagen("market", {
+    name: "Leon",
+    intro: [
+      "I can help you with raising your animals on your farm! If you need any supplies just let me know."
+    ],
+    chatter: {
+      friendship0: [["Friendship level 0 chatter 1 line 1"]],
+      friendship1: [
+        [
+          "Sorry, I don't loan money to farmers.",
+          "One bad season and they come to you crying about their interest rates.",
+        ],
+        ["Friendship level 1 chatter 2 line 1"],
+        [
+          "Friendship level 1 chatter 3 line 1",
+          "Friendship level 1 chatter 3 line 2",
+        ],
       ],
-      ["Friendship level 1 chatter 2 line 1"],
-      [
-        "Friendship level 1 chatter 3 line 1",
-        "Friendship level 1 chatter 3 line 2",
+      friendship2: [
+        [
+          "Friendship level 2 chatter 1 line 1",
+          "Friendship level 2 chatter 1 line 2",
+        ],
+        [
+          "I believe in talking behind peoples' backs. That way, they hear it more than once.",
+        ],
       ],
-    ],
-    friendship2: [
-      [
-        "Friendship level 2 chatter 1 line 1",
-        "Friendship level 2 chatter 1 line 2",
+      friendship3: [
+        [
+          "I once knew a person that constantly tried to defraud the Sunlit Valley Hospital...",
+          "Terrible person all around, never lent them a dollar.",
+        ],
       ],
-      [
-        "I believe in talking behind peoples' backs. That way, they hear it more than once.",
+      friendship4: [["Friendship level 4 chatter 2 line 1"]],
+      friendship5: [
+        [
+          "Friendship level 5 chatter 1 line 1",
+          "Friendship level 5 chatter 1 line 2",
+        ],
+        ["Friendship level 5 chatter 2 line 1"],
+        [
+          "Friendship level 5 chatter 3 line 1",
+          "Friendship level 5 chatter 3 line 2",
+        ],
       ],
-    ],
-    friendship3: [
-      [
-        "I once knew a person that constantly tried to defraud the Sunlit Valley Hospital...",
-        "Terrible person all around, never lent them a dollar.",
+    },
+    giftResponse: {
+      loved: [
+        "Beautiful, and touching.",
+        "This is mesmerizing. I'll cherish it forever.",
+        "What a gift. To know me like this is the mark of a true friend.",
+        "Nobody around here would know I like this. Am I really that fascinating to you?",
+        "To love someone means to see them as Selene intended them.",
+        "This is a fine gift from a finer person!",
+        "Aesthetically perfect. A work of art.",
+        ["I can't stop looking at it...", "How on earth did you get your hands on this..."],
+        "It is the ultimate respect to recieve a masterwork from someone at the height of their craft."
       ],
-    ],
-    friendship4: [["Friendship level 4 chatter 2 line 1"]],
-    friendship5: [
-      [
-        "Friendship level 5 chatter 1 line 1",
-        "Friendship level 5 chatter 1 line 2",
+      liked: [
+        "It's always pleasent to recieve a gift like this.",
+        "Nothing is easier than flattery, not that I mind!",
+        ["It's much better to do good in a way that...", "No that's not right. I like this way more."],
+        "You're very appreciated, I hope you know.",
+        "The margins on seeds aren't great, little luxuries like this go a long way!",
+        "Touching, thank you.",
+        "Thank you, I really needed the pick-me-up!",
+        "It's been so slow today, finally something nice happened!"
       ],
-      ["Friendship level 5 chatter 2 line 1"],
-      [
-        "Friendship level 5 chatter 3 line 1",
-        "Friendship level 5 chatter 3 line 2",
+      neutral: [
+        "Alright then!",
+        "Okay!",
+        "A gift! Neat.",
+        "Are you handing these out to everyone?",
+        "It looks high quality but it's not really to my taste.",
+        "In a way, something this ugly has a certain beauty to it! Exciting!",
+        "I do love a gift! Even if its not quite one I want!",
+        "I'm not really sure how to react to this but thank you for the kindness.",
+        "I have plenty random objects for still life at my shop, but thank you!",
+        "Eventually if you keep giving me things you'll find one I actually like!",
+        ["You can do better!", "Life is lived in the details, and you need to pay more attention!"],
+        "Well, it is a gift.",
+        "Rough season at the farm?",
+        "You could have put a little more thought into this.",
+        "I don't hate this for some reasonn.",
+        "Are you even listening to me when I speak to you?",
+        "Someone around here will definitely like this, I'm sure."
       ],
-    ],
-  },
-  giftResponse: {
-    loved: [
-      "I didn't know you were capable of having taste.",
-    ],
-    liked: [
-      "Thank you, I really appreciate it."
-    ],
-    neutral: [
-      "Thank you!"
-    ],
-    disliked: [
-      "Oh! I wasn't expecting something like this.",
-      "You must know animals way better than people..."
-    ],
-    hated: [
-      "This is disgusting.",
-      "I don't know why I expected better from you",
-      "...",
-      "You can just ask me to leave directly.",
-      "Get out of my face with that",
-      "Are you trying to upset me on purpose",
-      "I knew you didn't have taste.",
-      "Ugh I'm gonna hurl."
-    ],
-  },
-});
+      disliked: [
+        ["Ahhh I didn't know you were actually an ascetic!", "I thought that was just your look..."],
+        "I guess someone who spends so much time digging in the dirt doesn't have time to enjoy the finer things.",
+        "Ahhh I really hope you tried your best.",
+        ["Well isn't that nice.", "Oh, it's for me? Alright..."],
+        "I don't really want that. Or need it.",
+        ["You can be sincere and still be...", "Nevermind, you wouldn't get it."],
+        "Let's be real I'm just gonna toss this when you walk away.",
+        ["Oh! I'm actually really busy right now.", "Some seeds ran away, I really need to catch them?"],
+        "Be real with me are you just pulling random stuff from your pocket to give to me?",
+        "Woah! I don't really want this!",
+        ["I don't like things like this.", "Please write that down."],
+        "This is a gift?"
+      ],
+      hated: [
+        "What a slob.",
+        "Get out of my face.",
+        "Hateful.",
+        "A beast can never be as cruel as a human being, so artistically, so picturesquely cruel.",
+        "I hope you aren't this inept at farming.",
+        "When you look in the mirror at night, think of all that is wasted on you.",
+        "You are senseless and I don't enjoy you.",
+        "What kind of person do you take me for?",
+        "It takes something more than intelligence to act intelligently.",
+        "I deserve better than to be treated like this.",
+        "This is disgusting.",
+        "Absolutely tasteless.",
+        "You are a child, get away from me."
+      ],
+    },
+  });
+}

@@ -41,6 +41,8 @@
     }
   ],
   "lookup_history": [
+    "item:quark:hollow_birch_log",
+    "item:botania:tigerseye",
     "item:trials:music_disc_creator_box",
     "item:minecraft:music_disc_tears",
     "item:quark:music_disc_wind",
@@ -291,11 +293,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:minecraft:cooked_porkchop",
-      "item:brewery:pork_knuckle",
-      "item:farmersdelight:cooked_bacon",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:candlelight:pork_ribs",
+      "item:farmersdelight:cooked_bacon",
+      "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:minecraft:cooked_porkchop",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -307,8 +309,8 @@
     "item:veggiesdelight:raw_vegetarian_patty",
     [
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/potato",
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -1498,9 +1500,7 @@
     "item:rottencreatures:frozen_rotten_flesh",
     "item:snowpig:frozen_porkchop",
     "item:society:frozen_tear",
-    "item:society:pristine_frozen_tear",
-    "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"windswept:slipping_curse\",lvl:1s}]}",
-    "item:botania:ice_pendant"
+    "item:society:pristine_frozen_tear"
   ],
   "craft_history": [
     "minecraft:kjs/society_auto_grabber",

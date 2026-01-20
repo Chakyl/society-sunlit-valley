@@ -1,4 +1,5 @@
 // Priority: -100
+if (false) {
 runNpcDatagen("carpenter", {
   name: "Danny",
   intro: [
@@ -34,3 +35,4 @@ runNpcDatagen("carpenter", {
     hated: ["Everyone hates you"],
   },
 });
+}

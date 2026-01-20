@@ -1,6 +1,8 @@
 console.info("[SOCIETY] registerItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
+  e.create("society:villager_invitation")
+    .texture("society:item/tanuki_leaf")
   e.create("oreganized:lead_sheet").texture("society:item/lead_sheet");
   e.create("oreganized:silver_sheet").texture("society:item/silver_sheet");
   e.create("herbalbrews:water_cup")

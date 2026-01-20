@@ -2,12 +2,13 @@ let translationKeys = {};
 
 const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
   let entries = [];
-  dialogLines.forEach((entry, index) => {
+  let resolvedDialogLines = Array.isArray(dialogLines) ? dialogLines : [dialogLines];
+  resolvedDialogLines.forEach((entry, index) => {
     let lineTranslationKey = `dialog.npc.${npcId}.${dialogType}.${dialogIndex}.line_${index}`;
     translationKeys[lineTranslationKey] = entry;
     entries.push({
       id:
-        index == 0 ? "start" : index == dialogLines.length - 1 ? "end" : index,
+        index == 0 ? "start" : index == resolvedDialogLines.length - 1 ? "end" : index,
       speaker: { translate: `dialog.npc.${npcId}.name`, color: "gold" },
       text: [{ translate: lineTranslationKey }],
       portraits: [
@@ -74,7 +75,7 @@ const runNpcDatagen = (npcId, npcDef) => {
             npcId,
             `gift_${responseType}`,
             responseIndex,
-            [response]
+            response
           ),
         }
       );
