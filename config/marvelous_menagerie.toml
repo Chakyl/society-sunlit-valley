@@ -1,0 +1,19 @@
+
+["Configs for Marvelous Menagerie"]
+	#Defines if Prototaxites can be bonemealed, turned on by default, if playing on NeoForge should set it to false as it causes crashes
+	"Can be bonemealed?" = true
+	#Defines if the Hallucinating effect uses a shader that causes flashing lights. If this setting is set to "false" the effect will use a gentler shader instead.
+	"Flashy hallucinations?" = true
+	#Defines if mobs should naturally spawn in the world.
+	"Natural Dinos?" = false
+	#Defines the weight of museums in plains villages. The higher the value the more common they become. Default value is 20 and the number must be 0 or higher.
+	"Plains museum weight:" = 20
+	#Defines the weight of museums in savanna villages. The higher the value the more common they become. Default value is 25 and the number must be 0 or higher.
+	"Savanna museum weight:" = 25
+	#Defines the weight of museums in taiga villages. The higher the value the more common they become. Default value is 20 and the number must be 0 or higher.
+	"Taiga museum weight:" = 20
+	#Defines the weight of museums in snowy villages. The higher the value the more common they become. Default value is 20 and the number must be 0 or higher.
+	"Snowy museum weight:" = 20
+	#Defines the weight of museums in desert villages. The higher the value the more common they become. Default value is 30 and the number must be 0 or higher.
+	"Desert museum weight:" = 30
+

@@ -40,8 +40,7 @@ ItemEvents.tooltip((tooltip) => {
           let affection = item.nbt.getInt("affection");
           text.add(2, [
             Text.translatable("tooltip.society.plushies.affection"),
-            `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${
-              affection < 4 ? `❤`.repeat(4 - affection) : ""
+            `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${affection < 4 ? `❤`.repeat(4 - affection) : ""
             }`,
           ]);
           text.add(3, [
@@ -283,6 +282,46 @@ ItemEvents.tooltip((tooltip) => {
       book.item,
       Text.translatable("tooltip.society.skill_book.use").green()
     );
+  });
+    tooltip.addAdvanced("society:villager_invitation", (item, advanced, text) => {
+    if (item.nbt) {
+      text.add(
+        1,
+        Text.translatable(
+          "block.society.fish_pond.fish.type",
+          `${item.nbt.get("type")}`
+        ).aqua()
+      );
+      text.add(
+        2,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    } else {
+      text.add(
+        1,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    }
+  });
+  tooltip.addAdvanced("society:villager_home", (item, advanced, text) => {
+    if (item.nbt) {
+      text.add(
+        1,
+        Text.translatable(
+          "block.society.fish_pond.fish.type",
+          `${item.nbt.get("type")}`
+        ).aqua()
+      );
+      text.add(
+        2,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    } else {
+      text.add(
+        1,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    }
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {

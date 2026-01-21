@@ -6,7 +6,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
   resolvedDialogLines.forEach((entry, index) => {
     let lineTranslationKey = `dialog.npc.${npcId}.${dialogType}.${dialogIndex}.line_${index}`;
     translationKeys[lineTranslationKey] = entry;
-    entries.push({
+    let queuedEntry = {
       id:
         index == 0 ? "start" : index == resolvedDialogLines.length - 1 ? "end" : index,
       speaker: { translate: `dialog.npc.${npcId}.name`, color: "gold" },
@@ -18,7 +18,11 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
           brightness: 1.0
         },
       ],
-    });
+    }
+    if (resolvedDialogLines.length - 1 == index) {
+      queuedEntry.command = [`openshop @p ${npcId}`]
+    }
+    entries.push(queuedEntry);
   });
   return entries;
 };

@@ -41,6 +41,10 @@
     }
   ],
   "lookup_history": [
+    "item:relics:rage_glove{abilities:{phlebotomy:{points:0,stats:{attack_speed:0.00655d,heal:1.9E-4d,movement_speed:0.01686d}},rage:{points:0,stats:{dealt_damage:0.04233d,duration:2.29576d,incoming_damage:0.03652d}},spurt:{points:0,stats:{cooldown:17.41622d,damage:0.16688d,distance:5.24384d}}}}",
+    "item:minecraft:spruce_trapdoor",
+    "item:minecraft:oak_door",
+    "item:society:roe_recycler",
     "item:quark:hollow_birch_log",
     "item:botania:tigerseye",
     "item:trials:music_disc_creator_box",
@@ -55,7 +59,6 @@
     "item:society:heart_of_neptunium",
     "item:society:needle_bobber",
     "item:society:moon_statue",
-    "item:society:roe_recycler",
     "item:society:treasure_totem",
     "item:minecraft:music_disc_5",
     "item:minecraft:music_disc_mall",
@@ -294,10 +297,10 @@
     "item:veggiesdelight:zucchini_quiche",
     [
       "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -309,15 +312,15 @@
     "item:veggiesdelight:raw_vegetarian_patty",
     [
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/cauliflower",
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1186,7 +1189,6 @@
     "item:cluttered:sand_seal_plush_red",
     "item:cluttered:sand_seal_plush_green",
     "item:twigs:black_packed_silt",
-    "item:minecraft:oak_door",
     "item:quark:oak_post",
     "item:minecraft:oak_stairs",
     "item:minecraft:spruce_planks",
@@ -1494,13 +1496,7 @@
     "item:botania:rune_winter",
     "item:windswept:wild_berries",
     "item:society:frozen_geode",
-    "item:simplehats:frozenhead",
-    "item:species:frozen_hair",
-    "item:snowpig:frozen_ham",
-    "item:rottencreatures:frozen_rotten_flesh",
-    "item:snowpig:frozen_porkchop",
-    "item:society:frozen_tear",
-    "item:society:pristine_frozen_tear"
+    "item:simplehats:frozenhead"
   ],
   "craft_history": [
     "minecraft:kjs/society_auto_grabber",

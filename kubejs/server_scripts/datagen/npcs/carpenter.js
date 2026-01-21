@@ -1,7 +1,7 @@
 // Priority: -100
 if (true) {
   runNpcDatagen("carpenter", {
-    name: "Danny",
+    name: "Ace",
     intro: [
       "Hey stranger, my name is Danny. I'm here to help you build the village you're starting in Sunlit Valley.",
       "If you're looking to invite more villagers, come talk to me and I can help you build homes for them.",

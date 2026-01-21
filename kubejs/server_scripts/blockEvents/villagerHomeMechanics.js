@@ -9,8 +9,9 @@ const npcMap = new Map([
   ["banker", "humanoid_slim/banker"]
 ]);
 const getBoundNpc = (level, block, boundNpc) => {
-  let nearbyNPCs = level
-    .getEntitiesWithin(AABB.ofBlock(block).inflate(32))
+  let nearbyNPCs = level.getLevel()
+    .getServer()
+    .getEntities()
     .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
   let foundNpc = -1;
   nearbyNPCs.forEach((e) => {
@@ -30,17 +31,22 @@ BlockEvents.placed("society:villager_home", (e) => {
   const { x, y, z } = block;
   if (homeNbt) {
     let villagerType = homeNbt.getString("type");
-    server.runCommandSilent(
-      `easy_npc preset import_new custom easy_npc:preset/${npcMap.get(
-        String(villagerType)
-      )}.npc.nbt ${x} ${y + 0.25} ${z}`
-    );
+
 
     let nearbyNPCs = level
       .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
       .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
 
-    if (player && nearbyNPCs.length == 1) {
+    if (player && nearbyNPCs.length == 0) {
+      server.runCommandSilent(
+        `easy_npc preset import_new custom easy_npc:preset/${npcMap.get(
+          String(villagerType)
+        )}.npc.nbt ${x} ${y + 0.25} ${z}`
+      );
+      nearbyNPCs = level
+        .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
+        .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
+
       level.spawnParticles(
         "ribbits:spell",
         true,
@@ -56,6 +62,7 @@ BlockEvents.placed("society:villager_home", (e) => {
       server.runCommandSilent(
         `playsound botania:starcaller block @a ${player.x} ${player.y} ${player.z}`
       );
+      server.runCommandSilent(`easy_npc navigation set home ${nearbyNPCs[0].getUuid()} ${x} ${y + 0.25} ${z}}`)
       nbt.merge({
         data: {
           type: villagerType,
@@ -71,6 +78,7 @@ BlockEvents.placed("society:villager_home", (e) => {
         )
       );
     } else {
+      player.tell("This home is too close to another NPC!")
       e.cancel();
     }
   } else {
