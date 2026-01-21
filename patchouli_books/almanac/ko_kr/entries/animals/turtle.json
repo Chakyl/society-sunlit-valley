@@ -1,0 +1,17 @@
+{
+  "name": "거북",
+  "category": "patchouli:animals",
+  "icon": "minecraft:turtle_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)산란: 거북알"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:turtle",
+      "scale": 0.8,
+      "text": "거북이 클럽의 멤버"
+    }
+  ]
+}
