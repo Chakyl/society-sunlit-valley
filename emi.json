@@ -41,6 +41,8 @@
     }
   ],
   "lookup_history": [
+    "item:portable_blueprints:scanner",
+    "item:portable_blueprints:tablet",
     "item:society:invitation{type:{id:\"society:carpenter\"}}",
     {
       "type": "item",
@@ -324,11 +326,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farmersdelight:cooked_bacon",
-      "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
+      "item:farmersdelight:cooked_bacon",
+      "item:farm_and_charm:bacon_with_eggs",
       "item:candlelight:pork_ribs",
+      "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -347,8 +349,8 @@
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1510,9 +1512,7 @@
     "item:botania:terrasteel_block",
     "item:unusualfishmod:raw_snowflake",
     "item:unusualfishmod:raw_aero_mono",
-    "item:botania:rune_winter",
-    "item:windswept:wild_berries",
-    "item:society:frozen_geode"
+    "item:botania:rune_winter"
   ],
   "craft_history": [
     "meadow:fire_log",
