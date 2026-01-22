@@ -1,8 +1,9 @@
 {
   "shop_id": "shepherd",
   "name": "shop.society_trading.shepherd",
-  "texture": "minecraft:textures/block/loom_front",
+  "texture": "dialog:textures/portraits/shepherd",
   "villager_profession": "shepherd",
+  "stage_required": "invited_shepherd",
   "selector_weight": -97,
   "jei_catalyst": { "item": "minecraft:loom" },
   "trades": [

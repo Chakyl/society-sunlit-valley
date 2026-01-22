@@ -1,4 +1,5 @@
 let translationKeys = {};
+global.datagenDialog = false;
 
 const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
   let entries = [];
@@ -19,11 +20,40 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
         },
       ],
     }
+    // Always open up the shop at the end of the dialog if there 
     if (resolvedDialogLines.length - 1 == index) {
-      queuedEntry.command = [`openshop @p ${npcId}`]
+      if (npcId == "carpenter") {
+        translationKeys["dialog.npc.carpenter.purchase_supplies"] = "Purchase supplies";
+        translationKeys["dialog.npc.carpenter.invite_villagers"] = "Invite Villagers";
+        queuedEntry.options = [{
+          text: {
+            translate: "dialog.npc.carpenter.purchase_supplies"
+          },
+          target: "end",
+          command: [
+            "openshop @p carpenter"
+          ]
+        },
+        {
+          text: {
+            translate: "dialog.npc.carpenter.invite_villagers"
+          },
+          target: "end",
+          command: [
+            "openshop @p invitations"
+          ]
+        }]
+      } else {
+        queuedEntry.command = [`openshop @p ${npcId}`]
+      }
     }
     entries.push(queuedEntry);
   });
+  if (npcId == "carpenter") {
+    entries.push({
+      id: "end",
+    })
+  }
   return entries;
 };
 
@@ -44,6 +74,7 @@ const runNpcDatagen = (npcId, npcDef) => {
             id: `${npcId}_chatter_${friendshipKey}_${chatterIndex}`,
             title: `[${chatterIndex}] ${npcId} chatter at friendship level: ${friendshipKey}`,
             description: `dialog.npc.${npcId}.chatter.description`,
+            allowClose: true,
             entries: generateDialogEntries(
               npcId,
               `chatter_${friendshipKey}`,
@@ -86,4 +117,24 @@ const runNpcDatagen = (npcId, npcDef) => {
     });
   });
   JsonIO.write(`kubejs/assets/dialog/lang/en_us.json`, translationKeys);
+
+  let outputConstruct = {}
+  outputConstruct[npcId] = {
+    chatterLengths: [
+      npcDef.chatter.friendship0.length,
+      npcDef.chatter.friendship1.length,
+      npcDef.chatter.friendship2.length,
+      npcDef.chatter.friendship3.length,
+      npcDef.chatter.friendship4.length,
+      npcDef.chatter.friendship5.length,
+    ],
+    giftResponseLengths: {
+      loved: npcDef.giftResponse.loved.length,
+      liked: npcDef.giftResponse.liked.length,
+      neutral: npcDef.giftResponse.neutral.length,
+      disliked: npcDef.giftResponse.disliked.length,
+      hated: npcDef.giftResponse.hated.length,
+    }
+  }
+  console.log(outputConstruct)
 };

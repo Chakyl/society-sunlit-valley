@@ -1,15 +1,13 @@
 // Priority: -100
-if (false) {
-runNpcDatagen("carpenter", {
+if (global.datagenDialog) {
+runNpcDatagen("blacksmith", {
   name: "Aiden",
   intro: [
-    "Hey stranger, my name is Danny. I'm here to help you build the village you're starting in Sunlit Valley.",
-    "If you're looking to invite more villagers, come talk to me and I can help you build homes for them.",
-    "If you'd prefer to do the building yourself, just let me know and I can give you the invitations and sell any building supplies you'll need.",
-    "That's all I have for now, you really have your work cut out for you here. Come see me if you need anything!",
+    "My name is Aiden! I don't have a soul yet because Uni and co haven't written it!",
+    "This is agony auurugh!"
   ],
   chatter: {
-    friendship0: [["Friendship level 0 chatter 1 line 1"]],
+    friendship0: [["Hello! I can smith for you or whatever ehe"]],
     friendship1: [
       ["Friendship level 1 chatter 1 line 1", "Friendship level 1 chatter 1 line 2"],
       ["Friendship level 1 chatter 2 line 1"],

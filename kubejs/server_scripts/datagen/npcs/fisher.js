@@ -1,12 +1,9 @@
 // Priority: -100
-if (true) {
+if (global.datagenDialog) {
   runNpcDatagen("fisher", {
     name: "Haruna",
     intro: [
-      "Hey stranger, my name is Haruna. I'm here to help you build the village you're starting in Sunlit Valley.",
-      "If you're looking to invite more villagers, come talk to me and I can help you build homes for them.",
-      "If you'd prefer to do the building yourself, just let me know and I can give you the invitations and sell any building supplies you'll need.",
-      "That's all I have for now, you really have your work cut out for you here. Come see me if you need anything!",
+      "Hey stranger, my name is Haruna. I like fish! Tell Frog about it!"
     ],
     chatter: {
       friendship0: [

@@ -61,25 +61,6 @@
 			]
 		},
 		{
-			"id": 3,
-			"speaker": {
-				"translate": "dialog.npc.banker.name",
-				"color": "gold"
-			},
-			"text": [
-				{
-					"translate": "dialog.npc.banker.intro.0.line_3"
-				}
-			],
-			"portraits": [
-				{
-					"path": "banker.png",
-					"position": "INLINE",
-					"brightness": 1
-				}
-			]
-		},
-		{
 			"id": "end",
 			"speaker": {
 				"translate": "dialog.npc.banker.name",
@@ -87,7 +68,7 @@
 			},
 			"text": [
 				{
-					"translate": "dialog.npc.banker.intro.0.line_4"
+					"translate": "dialog.npc.banker.intro.0.line_3"
 				}
 			],
 			"portraits": [

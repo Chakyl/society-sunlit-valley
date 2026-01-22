@@ -2,6 +2,7 @@
 	"id": "market_chatter_friendship5_1",
 	"title": "[1] market chatter at friendship level: friendship5",
 	"description": "dialog.npc.market.chatter.description",
+	"allowClose": true,
 	"entries": [
 		{
 			"id": "start",
@@ -12,6 +13,44 @@
 			"text": [
 				{
 					"translate": "dialog.npc.market.chatter_friendship5.1.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.chatter_friendship5.1.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.chatter_friendship5.1.line_2"
 				}
 			],
 			"portraits": [

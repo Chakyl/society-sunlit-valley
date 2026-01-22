@@ -1,13 +1,11 @@
 // Priority: -100
-if (true) {
-
+if (global.datagenDialog) {
   runNpcDatagen("banker", {
     name: "Caroline",
     intro: [
       "My name is Caroline, and I am the one who's been financing this settlement since before you arrived.",
       "You've been carelessly buying up everyone's stock, and I need to keep a closer watch of things here.",
-      "Why are your finances such a mess? I have some things that will help you plan your money better.",
-      "You should be making a lot more money than you are right now.",
+      "I have some things that will help you plan your money better.",
       "Now, please leave me be while I tidy up this dump. I will contact you if I need anything."
     ],
     chatter: {

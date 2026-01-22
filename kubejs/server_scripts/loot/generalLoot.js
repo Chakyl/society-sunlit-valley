@@ -260,6 +260,9 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier("society:prize_machine").removeLoot(
     "society:prize_machine"
   );
+  e.addBlockLootModifier("society:villager_home").removeLoot(
+    "society:villager_home"
+  );
   e.addBlockLootModifier("whimsy_deco:sunlit_singing_frog").removeLoot(
     "whimsy_deco:sunlit_singing_frog"
   );

@@ -1,17 +1,20 @@
 // Priority: -100
-if (true) {
+if (global.datagenDialog) {
   runNpcDatagen("shepherd", {
     name: "Maria",
     intro: [
-      "I can help you with raising your animals on your farm! If you need any supplies just let me know."
+      "Hello, my name is Maria. I'll be here to get you started ranching on your farm.",
+      "Raising animals take lots of time, energy and care.",
+      "In the end seeing the look on a happy animal's face is well worth it.",
+      "If you need any supplies just let me know."
     ],
     chatter: {
-      friendship0: [["Friendship level 0 chatter 1 line 1"]],
+      friendship0: [
+        ["Hello there, need anything?"],
+        ["How's your farm going?", "Have you gotten started with some animals yet?"],
+        ["I hope you're feeding your animals every day.", "You'd be grumpy to if you had to skip a meal!"]
+      ],
       friendship1: [
-        [
-          "Sorry, I don't loan money to farmers.",
-          "One bad season and they come to you crying about their interest rates.",
-        ],
         ["Friendship level 1 chatter 2 line 1"],
         [
           "Friendship level 1 chatter 3 line 1",
@@ -20,8 +23,9 @@ if (true) {
       ],
       friendship2: [
         [
-          "Friendship level 2 chatter 1 line 1",
-          "Friendship level 2 chatter 1 line 2",
+          "I've seen some nasty farmers out there that treat their animals cruelly.",
+          "Giant holding penns stuffed to the brim... Makes me sick...",
+          "I'm glad you're not like that!"
         ],
         [
           "I believe in talking behind peoples' backs. That way, they hear it more than once.",

@@ -2,6 +2,7 @@
 	"id": "carpenter_chatter_friendship5_0",
 	"title": "[0] carpenter chatter at friendship level: friendship5",
 	"description": "dialog.npc.carpenter.chatter.description",
+	"allowClose": true,
 	"entries": [
 		{
 			"id": "start",
@@ -40,9 +41,29 @@
 					"brightness": 1
 				}
 			],
-			"command": [
-				"openshop @p carpenter"
+			"options": [
+				{
+					"text": {
+						"translate": "dialog.npc.carpenter.purchase_supplies"
+					},
+					"target": "end",
+					"command": [
+						"openshop @p carpenter"
+					]
+				},
+				{
+					"text": {
+						"translate": "dialog.npc.carpenter.invite_villagers"
+					},
+					"target": "end",
+					"command": [
+						"openshop @p invitations"
+					]
+				}
 			]
+		},
+		{
+			"id": "end"
 		}
 	]
 }

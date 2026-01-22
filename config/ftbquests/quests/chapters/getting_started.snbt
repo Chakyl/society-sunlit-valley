@@ -261,23 +261,23 @@
 			]
 			icon: "betterarcheology:villager_fossil"
 			id: "66D159252C70D5F2"
-			rewards: [
-				{
-					count: 2
-					id: "3960776966CF1ACC"
-					item: "minecraft:villager_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "71BC141AEB9C3428"
-					item: "create:clipboard"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "71BC141AEB9C3428"
+				item: "create:clipboard"
+				type: "item"
+			}]
 			tasks: [{
-				id: "0E99D2F7380F51CF"
-				title: "{ftbquests.chapter.getting_started.quest8.task_1052103947207004623.title}"
-				type: "checkmark"
+				id: "44E951A44F1CF7F0"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:carpenter"
+						}
+					}
+				}
+				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest8.title}"
 			x: 7.0d

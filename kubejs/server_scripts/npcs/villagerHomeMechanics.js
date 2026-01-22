@@ -79,9 +79,12 @@ BlockEvents.placed("society:villager_home", (e) => {
       );
     } else {
       player.tell("This home is too close to another NPC!")
+      e.player.inventoryMenu.broadcastFullState();
       e.cancel();
     }
   } else {
+    player.tell("Something went wrong!")
+    e.player.inventoryMenu.broadcastFullState();
     e.cancel();
   }
 });

@@ -2,6 +2,7 @@
 	"id": "shepherd_chatter_friendship1_0",
 	"title": "[0] shepherd chatter at friendship level: friendship1",
 	"description": "dialog.npc.shepherd.chatter.description",
+	"allowClose": true,
 	"entries": [
 		{
 			"id": "start",
@@ -12,25 +13,6 @@
 			"text": [
 				{
 					"translate": "dialog.npc.shepherd.chatter_friendship1.0.line_0"
-				}
-			],
-			"portraits": [
-				{
-					"path": "shepherd.png",
-					"position": "INLINE",
-					"brightness": 1
-				}
-			]
-		},
-		{
-			"id": "end",
-			"speaker": {
-				"translate": "dialog.npc.shepherd.name",
-				"color": "gold"
-			},
-			"text": [
-				{
-					"translate": "dialog.npc.shepherd.chatter_friendship1.0.line_1"
 				}
 			],
 			"portraits": [

@@ -1,30 +1,45 @@
 // Priority: -100
-if (true) {
+if (global.datagenDialog) {
   runNpcDatagen("market", {
     name: "Leon",
     intro: [
-      "I can help you with raising your animals on your farm! If you need any supplies just let me know."
+      "Hey, I'm Leon. I was sent here to manage the local farmer's market.",
+      "I'll be making sure you have seeds and some basic farming supplies.",
+      "In return some of your produce will be sent here for the other villagers.",
+      "Please don't be like all the other farmers that wake up at 6am..."
     ],
     chatter: {
-      friendship0: [["Friendship level 0 chatter 1 line 1"]],
+      friendship0: [
+        "Hmmm? Need something?",
+        "What can I help you with?",
+        "Hey... I've got the seeds.",
+        "Oh? You're telling me you need more seeds?",
+        [
+          "You know, the less planting you do the less you have to come here.",
+          "Just slow down a little, the money can always wait."
+        ],
+        [
+          "Ace is starting to annoy me with all that hammering.", 
+          "All this open area, the sound travels so far."
+        ]
+      ],
       friendship1: [
         [
-          "Sorry, I don't loan money to farmers.",
-          "One bad season and they come to you crying about their interest rates.",
+          "It's so slow today...",
+          "Got any stories from your adventures?",
         ],
-        ["Friendship level 1 chatter 2 line 1"],
         [
-          "Friendship level 1 chatter 3 line 1",
-          "Friendship level 1 chatter 3 line 2",
-        ],
+          "Why are you even doing all this farming?",
+          "It's not like there's anything to buy out here"
+        ]
       ],
       friendship2: [
         [
-          "Friendship level 2 chatter 1 line 1",
-          "Friendship level 2 chatter 1 line 2",
+          "Can yopu tell Caroline I've been very professional with you?",
+          "She doesn't like when I get casual and I really can't be bothered.",
         ],
         [
-          "I believe in talking behind peoples' backs. That way, they hear it more than once.",
+          "Ugh, Caroline's workers are late again today...",
         ],
       ],
       friendship3: [
@@ -33,16 +48,30 @@ if (true) {
           "Terrible person all around, never lent them a dollar.",
         ],
       ],
-      friendship4: [["Friendship level 4 chatter 2 line 1"]],
+      friendship4: [
+        [
+          "Has Caroline said anything about me to you?",
+          "Just curious, I don't think it matters either way."
+        ],
+        "I wonder what Maria's up to today...",
+        [
+          "Has Haruna taken a trip to the Ocean recently?",
+          "I gave her some film for the beach to take photos but I'm guessing she forgot about it."
+        ]
+      ],
       friendship5: [
         [
-          "Friendship level 5 chatter 1 line 1",
-          "Friendship level 5 chatter 1 line 2",
+          "Caroline hasn't been around in a while...",
+          "I hope that means I'm doing alright here.",
         ],
-        ["Friendship level 5 chatter 2 line 1"],
         [
-          "Friendship level 5 chatter 3 line 1",
-          "Friendship level 5 chatter 3 line 2",
+          "Have you started making wine yet?",
+          "I could use some of that about now...",
+          "For the market of course!"
+        ],
+        [
+          "Found any interesting wild crops lately?",
+          "I could use something fun to eat.",
         ],
       ],
     },

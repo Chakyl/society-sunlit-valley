@@ -1,10 +1,11 @@
 {
   "shop_id": "blacksmith",
   "name": "shop.society_trading.blacksmith",
-  "texture": "minecraft:textures/block/smithing_table_side",
+  "texture": "dialog:textures/portraits/blacksmith",
   "jei_catalyst": { "item":"minecraft:smithing_table" },
   "selector_weight": -98,
   "villager_profession": "toolsmith",
+  "stage_required": "invited_blacksmith",
   "trades": [
     {
       "offer": {
