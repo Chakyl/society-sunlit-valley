@@ -261,23 +261,24 @@
 			]
 			icon: "betterarcheology:villager_fossil"
 			id: "66D159252C70D5F2"
-			rewards: [
-				{
-					count: 2
-					id: "3960776966CF1ACC"
-					item: "minecraft:villager_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "71BC141AEB9C3428"
-					item: "create:clipboard"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "71BC141AEB9C3428"
+				item: "create:clipboard"
+				type: "item"
+			}]
 			tasks: [{
-				id: "0E99D2F7380F51CF"
-				title: "{ftbquests.chapter.getting_started.quest8.task_1052103947207004623.title}"
-				type: "checkmark"
+				id: "44E951A44F1CF7F0"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:carpenter"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest8.title}"
 			x: 7.0d
@@ -646,33 +647,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
-			description: [
-				"{ftbquests.chapter.getting_started.quest19.description1}"
-				""
-				"{ftbquests.chapter.getting_started.quest19.description2}"
-			]
-			icon: "minecraft:villager_spawn_egg"
-			id: "443F42C8AFDA0C36"
-			rewards: [{
-				id: "02B2AE534E71FF64"
-				item: "minecraft:villager_spawn_egg"
-				type: "item"
-			}]
-			tasks: [{
-				id: "751D998BA38362A4"
-				item: "minecraft:cartography_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.getting_started.quest19.title}"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"2134CA6B3880D089"
-				"73A85902CE35A43A"
-			]
+			dependencies: ["73A85902CE35A43A"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest20.description1}"
 				""
@@ -780,7 +755,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["443F42C8AFDA0C36"]
+			dependencies: ["4DB169DA4B4CCFBA"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest23.description1}"
 				""
@@ -803,6 +778,26 @@
 			title: "{ftbquests.chapter.getting_started.quest23.title}"
 			x: 8.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["66D159252C70D5F2"]
+			id: "4DB169DA4B4CCFBA"
+			tasks: [{
+				id: "59E084CB052A33AC"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:banker"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.getting_started.title}"

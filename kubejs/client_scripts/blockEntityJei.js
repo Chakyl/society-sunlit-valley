@@ -32,9 +32,9 @@ const registerBECategory = (
         let dayCount = recipe.getRecipeData().time || days;
         guiGraphics.drawWordWrap(
           Client.font,
-          dayCount < 1 
+          dayCount < 1
             ? Text.translatable("jei.society.working_block_entity.short")
-            : dayCount > 1 
+            : dayCount > 1
               ? Text.translatable("jei.society.working_block_entity.days", `${dayCount}`)
               : Text.translatable("jei.society.working_block_entity.day", `${dayCount}`),
           72,
@@ -77,6 +77,89 @@ const registerBECategory = (
   });
 };
 
+const registerMushroomLogCategory = (
+  event,
+  categoryID,
+  title
+) => {
+  event.custom(`society:${categoryID}`, (category) => {
+    const {
+      jeiHelpers: { guiHelper },
+    } = category;
+    category
+      .title(title)
+      .background(
+        guiHelper.createDrawable(
+          "society:textures/gui/block_entity.png",
+          1,
+          1,
+          142,
+          42
+        )
+      )
+      .icon(guiHelper.createDrawableItemStack(Item.of(`society:mushroom_log`)))
+      .isRecipeHandled((recipe) => {
+        return !!(
+          recipe?.data?.input !== undefined &&
+          recipe?.data?.output !== undefined
+        );
+      })
+      .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
+        guiGraphics.drawWordWrap(
+          Client.font,
+          Text.translatable("jei.society.working_block_entity.days", 4),
+          72,
+          29,
+          177,
+          0
+        );
+      })
+      .handleLookup((builder, recipe) => {
+        const { input, output } = recipe.data;
+        const slotSize = 21;
+        const isStrong = global.dominantMushroomLogBlocks.get(input) !== undefined
+        if (isStrong) {
+          builder
+            .addSlot("INPUT", 2, 2)
+            .addItemStack(
+              `1x ${input}`
+            )
+            .addTooltipCallback((slotView, tooltip) => {
+              tooltip.add(1,
+                Text.translatable(`jei.society.mushroom_growing.strong`).darkGreen()
+              );
+            })
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        } else {
+          builder
+            .addSlot("INPUT", 2, 2)
+            .addItemStack(
+              `1x ${input}`
+            )
+            .addTooltipCallback((slotView, tooltip) => {
+              tooltip.add(1,
+                Text.translatable(`jei.society.mushroom_growing.weak`).aqua()
+              );
+            })
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        }
+        builder.addSlot("CATALYST", 52, 2).addItemStack(`society:mushroom_log`);
+        output.forEach((item, index) => {
+          builder
+            .addSlot("OUTPUT", 104 + index * slotSize, 2)
+            .addItemStack(Item.of(`${item}`))
+            .addTooltipCallback((slotView, tooltip) => {
+              tooltip.add(1,
+                Text.translatable("jei.society.mushroom_growing.mult").green()
+              );
+            })
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        });
+
+      });
+  });
+};
+
 const registerFishPondCategory = (event, categoryID, block, title) => {
   event.custom(`society:${categoryID}`, (category) => {
     const {
@@ -109,7 +192,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
           else fishId = fishId.substring(4, fishId.length);
         }
         const outputs = [
-          { 
+          {
             item: `society:${fishId}_roe`,
             count: 1,
           },
@@ -149,12 +232,12 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
             .addItemStack(Item.of(`${reward.count}x ${reward.item}`))
             .addTooltipCallback((slotView, tooltip) => {
               if (reward.minPopulation) {
-                tooltip.add(1, 
+                tooltip.add(1,
                   Text.translatable("jei.society.fish_farming.population", `${reward.minPopulation}`).aqua()
                 );
               }
               if (reward.chance) {
-                tooltip.add(2, 
+                tooltip.add(2,
                   Text.translatable("jei.society.husbandry.chance", `${Math.round(reward.chance * 100)}`).gold()
                 );
               }
@@ -168,11 +251,11 @@ JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "seed_making", "seed_maker", Text.translatable("jei.society.category.seed_making"), 3, 1);
   registerBECategory(e, "preserving", "preserves_jar", Text.translatable("jei.society.category.preserving"), 5, 3);
   registerBECategory(e, "wine_making", "wine_keg", Text.translatable("jei.society.category.wine_making"), 3, 6);
-  registerBECategory(e, 
-    "bait_upgrading", 
-    "deluxe_worm_farm", 
-    Text.translatable("jei.society.category.bait_upgrading"), 
-    4, 
+  registerBECategory(e,
+    "bait_upgrading",
+    "deluxe_worm_farm",
+    Text.translatable("jei.society.category.bait_upgrading"),
+    4,
     0.5
   );
   registerBECategory(e, "cask_aging", "aging_cask", Text.translatable("jei.society.category.cask_aging"), 1, 10);
@@ -184,45 +267,46 @@ JEIAddedEvents.registerCategories((e) => {
     1,
     2
   );
-  registerBECategory(e, 
-    "ancient_aging", 
-    "ancient_cask", 
-    Text.translatable("jei.society.category.ancient_aging"), 
-    1, 
+  registerBECategory(e,
+    "ancient_aging",
+    "ancient_cask",
+    Text.translatable("jei.society.category.ancient_aging"),
+    1,
     20
   );
+  registerMushroomLogCategory(e, "mushroom_growing", Text.translatable("jei.society.category.mushroom_growing"));
   registerBECategory(e, "dehydrating", "dehydrator", Text.translatable("jei.society.category.dehydrating"), 8, 1);
   registerBECategory(e, "fish_smoking", "fish_smoker", Text.translatable("jei.society.category.fish_smoking"), 1, 2);
   registerBECategory(e, "bait_making", "bait_maker", Text.translatable("jei.society.category.bait_making"), 1, 1);
-  registerBECategory(e, 
-    "mayonnaise_making", 
-    "mayonnaise_machine", 
-    Text.translatable("jei.society.category.mayonnaise_making"), 
-    1, 
+  registerBECategory(e,
+    "mayonnaise_making",
+    "mayonnaise_machine",
+    Text.translatable("jei.society.category.mayonnaise_making"),
+    1,
     1
   );
   registerBECategory(e, "loom_weaving", "loom", Text.translatable("jei.society.category.loom_weaving"), 5, 1);
-  registerBECategory(e, 
-    "crystal_growing", 
-    "crystalarium", 
-    Text.translatable("jei.society.category.crystal_growing"), 
-    1, 
+  registerBECategory(e,
+    "crystal_growing",
+    "crystalarium",
+    Text.translatable("jei.society.category.crystal_growing"),
+    1,
     5
   );
   registerFishPondCategory(e, "fish_farming", "fish_pond", Text.translatable("jei.society.category.fish_farming"));
   registerBECategory(e, "charging", "charging_rod", Text.translatable("jei.society.category.charging"), 1, 5);
-  registerBECategory(e, 
-    "espresso_brewing", 
-    "espresso_machine", 
-    Text.translatable("jei.society.category.espresso_brewing"), 
-    4, 
+  registerBECategory(e,
+    "espresso_brewing",
+    "espresso_machine",
+    Text.translatable("jei.society.category.espresso_brewing"),
+    4,
     0.5
   );
-  registerBECategory(e, 
-    "goddess_offering", 
-    "ancient_goddess_statue", 
-    Text.translatable("jei.society.category.goddess_offering"), 
-    64, 
+  registerBECategory(e,
+    "goddess_offering",
+    "ancient_goddess_statue",
+    Text.translatable("jei.society.category.goddess_offering"),
+    64,
     0
   );
   registerBECategory(e, "recycling", "recycling_machine", Text.translatable("jei.society.category.recycling"), 1, 1);
@@ -393,6 +477,13 @@ JEIAddedEvents.registerRecipes((e) => {
       fluidData: recipe.fluidData,
     });
   });
+  Array.from(global.mushroomLogRecipes.keys()).forEach((element) => {
+    recipe = global.mushroomLogRecipes.get(element);
+    e.custom("society:mushroom_growing").add({
+      input: element,
+      output: recipe.output,
+    });
+  });
   Array.from(global.fishPondDefinitions.keys()).forEach((element) => {
     recipe = global.fishPondDefinitions.get(element);
     e.custom("society:fish_farming").add({
@@ -433,7 +524,7 @@ JEIAddedEvents.registerRecipes((e) => {
       fluidData: recipe.fluidData,
     });
   });
-    Array.from(global.oilMakerRecipes.keys()).forEach((element) => {
+  Array.from(global.oilMakerRecipes.keys()).forEach((element) => {
     recipe = global.oilMakerRecipes.get(element);
     e.custom("society:oil_making").add({
       input: element,

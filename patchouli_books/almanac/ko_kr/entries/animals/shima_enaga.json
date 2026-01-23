@@ -1,0 +1,17 @@
+{
+  "name": "흰머리오목눈이",
+  "category": "patchouli:pets",
+  "icon": "relics:elytra_booster",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)정보$()$(li)가격: 구매 불가$(li)채집: 커런트 (100%), 체리 (65%), 이끼베리 (10%)$(li)드롭 아이템: 깃털$(br2)$(l)메모$()$(br)호감도 2하트 이상부터 채집 가능. 눈 덮인 생물군계에 출현하며, 씨앗으로 길들일 수 있음."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:shima_enaga",
+      "scale": 0.7,
+      "text": "난 뱁새가 아니라고!!!"
+    }
+  ]
+}

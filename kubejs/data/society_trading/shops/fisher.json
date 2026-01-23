@@ -1,8 +1,9 @@
 {
   "shop_id": "fisher",
   "name": "shop.society_trading.fisher",
-  "texture": "minecraft:textures/block/barrel_side",
+  "texture": "dialog:textures/portraits/fisher",
   "villager_profession": "fisherman",
+  "stage_required": "invited_fisher",
   "jei_catalyst": { "item": "minecraft:barrel" },
   "selector_weight": -95,
   "trades": [

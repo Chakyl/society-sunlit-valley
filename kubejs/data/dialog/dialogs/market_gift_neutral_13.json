@@ -1,0 +1,29 @@
+{
+	"id": "market_gift_neutral_13",
+	"title": "market introduction",
+	"description": "dialog.npc.market.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_neutral.13.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p market"
+			]
+		}
+	]
+}

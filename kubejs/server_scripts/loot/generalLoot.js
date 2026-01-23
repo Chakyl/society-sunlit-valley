@@ -260,6 +260,9 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier("society:prize_machine").removeLoot(
     "society:prize_machine"
   );
+  e.addBlockLootModifier("society:villager_home").removeLoot(
+    "society:villager_home"
+  );
   e.addBlockLootModifier("whimsy_deco:sunlit_singing_frog").removeLoot(
     "whimsy_deco:sunlit_singing_frog"
   );
@@ -298,7 +301,14 @@ LootJS.modifiers((e) => {
   e.addLootTypeModifier(LootType.CHEST).pool((p) => {
     p.randomChance(0.05).addLoot("society:recall_potion");
   });
-
+  e.addLootTableModifier("minecraft:chests/simple_dungeon").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/spawn_bonus_chest").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/abandoned_mineshaft").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/shipwreck_supply").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_plains_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_taiga_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_desert_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_snowy_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
   // Mastery
   e.addLootTypeModifier(LootType.CHEST)
     .hasAnyStage("husbandry_mastery")

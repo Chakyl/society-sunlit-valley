@@ -79,8 +79,8 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
   const { player, block, item, server } = clickEvent;
   const blockStage = nbt.data.stage;
   const status = maxInput !== -1 
-    ? Text.translatable("society.working_block_entity.more_input").getString() 
-    : Text.translatable("society.working_block_entity.making").getString();
+    ? Text.translatable("society.working_block_entity.more_input")
+    : Text.translatable("society.working_block_entity.making");
   let primaryOutput;
   let recipe = nbt.data.recipe;
   let id;
@@ -123,7 +123,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         type: "text",
         x: 0,
         y: -90,
-        text: `§a${upgrade}§r ${status} §a${upgrade}§r`,
+        text: `${status.toJson()}`,
         color: "#AAAAAA",
         alignX: "center",
         alignY: "bottom",
@@ -133,7 +133,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         x: 1,
         z: -1,
         y: -89,
-        text: `${upgrade} ${status} ${upgrade}`,
+        text: `${status.toJson()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -161,7 +161,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         type: "text",
         x: 1.5,
         y: -66,
-        text: outputString,
+        text: `§a${upgrade}§6 ${outputString} §a${upgrade}§r`,
         color: "#FFAA00",
         alignX: "center",
         alignY: "bottom",
@@ -171,7 +171,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         x: 1.5,
         z: -1,
         y: -66,
-        text: "⬛".repeat(pipCount),
+        text: `§a${upgrade}§0 ${"⬛".repeat(pipCount)} §a${upgrade}§r`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",

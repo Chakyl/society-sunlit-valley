@@ -1,6 +1,7 @@
 console.info("[SOCIETY] addMiscRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
+  e.shapeless(Item.of('society:invitation', '{type:{id:"society:carpenter"}}'), ['minecraft:crafting_table', "minecraft:wooden_axe"])
   e.shaped("atmospheric:blood_orange", ["mmm", "mom", "mmm"], {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",

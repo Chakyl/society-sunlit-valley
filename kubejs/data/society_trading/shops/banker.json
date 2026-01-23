@@ -1,9 +1,10 @@
 {
   "shop_id": "banker",
   "name": "shop.society_trading.banker",
-  "texture": "numismatics:textures/block/bank_terminal/bank_terminal_front",
+  "texture": "dialog:textures/portraits/banker",
   "jei_catalyst": { "item": "minecraft:cartography_table" },
   "villager_profession": "cartographer",
+  "stage_required": "invited_banker",
   "selector_weight": 1,
   "trades": [
     {

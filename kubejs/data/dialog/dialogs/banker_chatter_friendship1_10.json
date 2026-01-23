@@ -2,6 +2,7 @@
 	"id": "banker_chatter_friendship1_10",
 	"title": "[10] banker chatter at friendship level: friendship1",
 	"description": "dialog.npc.banker.chatter.description",
+	"allowClose": true,
 	"entries": [
 		{
 			"id": "start",
@@ -20,6 +21,9 @@
 					"position": "INLINE",
 					"brightness": 1
 				}
+			],
+			"command": [
+				"openshop @p banker"
 			]
 		}
 	]

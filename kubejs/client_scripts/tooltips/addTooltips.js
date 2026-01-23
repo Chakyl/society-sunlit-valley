@@ -40,8 +40,7 @@ ItemEvents.tooltip((tooltip) => {
           let affection = item.nbt.getInt("affection");
           text.add(2, [
             Text.translatable("tooltip.society.plushies.affection"),
-            `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${
-              affection < 4 ? `❤`.repeat(4 - affection) : ""
+            `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${affection < 4 ? `❤`.repeat(4 - affection) : ""
             }`,
           ]);
           text.add(3, [
@@ -108,6 +107,10 @@ ItemEvents.tooltip((tooltip) => {
     {
       item: "society:wheel_of_adaptation",
       tooltip: "Was once used to summon a beast",
+    },
+    {
+      item: "society:token_of_unity",
+      tooltip: "I love making mazes! I'm going to design the biggest maze ever!",
     },
     {
       item: "society:toy_train",
@@ -283,6 +286,46 @@ ItemEvents.tooltip((tooltip) => {
       book.item,
       Text.translatable("tooltip.society.skill_book.use").green()
     );
+  });
+  tooltip.addAdvanced("society:villager_invitation", (item, advanced, text) => {
+    if (item.nbt) {
+      text.add(
+        1,
+        Text.translatable(
+          "block.society.fish_pond.fish.type",
+          `${item.nbt.get("type")}`
+        ).aqua()
+      );
+      text.add(
+        2,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    } else {
+      text.add(
+        1,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    }
+  });
+  tooltip.addAdvanced("society:villager_home", (item, advanced, text) => {
+    if (item.nbt) {
+      text.add(
+        1,
+        Text.translatable(
+          "block.society.fish_pond.fish.type",
+          `${item.nbt.get("type")}`
+        ).aqua()
+      );
+      text.add(
+        2,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    } else {
+      text.add(
+        1,
+        Text.translatable("block.society.fish_pond.description").gray()
+      );
+    }
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
@@ -791,12 +834,20 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("item.society.magic_shears.description").gray()
   );
   tooltip.add(
-    "vintagedelight:deluxe_burger",
-    Text.translatable("tooltip.society.deluxe_burger").gray()
-  );
-  tooltip.add(
     "society:magic_shears",
     Text.translatable("item.society.magic_shears.description.warn").red()
+  );
+  tooltip.add(
+    "society:mood_scanner",
+    Text.translatable("item.society.mood_scanner.description").gray()
+  );
+  tooltip.add(
+    "society:mood_scanner",
+    Text.translatable("item.society.mood_scanner.description.warn").red()
+  );
+  tooltip.add(
+    "vintagedelight:deluxe_burger",
+    Text.translatable("tooltip.society.deluxe_burger").gray()
   );
   tooltip.add(
     "society:miracle_potion",

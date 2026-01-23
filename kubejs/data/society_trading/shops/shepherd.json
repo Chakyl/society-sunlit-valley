@@ -1,8 +1,9 @@
 {
   "shop_id": "shepherd",
   "name": "shop.society_trading.shepherd",
-  "texture": "minecraft:textures/block/loom_front",
+  "texture": "dialog:textures/portraits/shepherd",
   "villager_profession": "shepherd",
+  "stage_required": "invited_shepherd",
   "selector_weight": -97,
   "jei_catalyst": { "item": "minecraft:loom" },
   "trades": [
@@ -126,6 +127,18 @@
       },
       "numismatics_cost": 3072,
       "trade_id": "shepherd_magic_shears_for_crown"
+    },
+    {
+      "offer": {
+        "item": "society:mood_scanner",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 7
+      },
+      "numismatics_cost": 3584,
+      "trade_id": "shepherd_mood_scanner"
     },
     {
       "offer": {

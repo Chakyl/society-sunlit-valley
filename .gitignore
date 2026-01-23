@@ -1,12 +1,14 @@
 node_modules/
 backups/
 blueprints/
+portable_blueprints/
 crash-reports/
 emojiful/cache
 journeymap/
 local/
 logs
-resourcepacks/
+resourcepacks/*
+!/resourcepacks/sunlit_overrides.zip
 mods/
 build/
 saves/

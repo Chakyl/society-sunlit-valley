@@ -10,6 +10,7 @@ const deniedCrops = [
   "minecraft:pumpkin_stem",
   "minecraft:cocoa",
   "supplementaries:flax",
+  "society:mana_fruit_crop"
 ];
 const allowedBonemealCrops = [
   "minecraft:crimson_fungus",
