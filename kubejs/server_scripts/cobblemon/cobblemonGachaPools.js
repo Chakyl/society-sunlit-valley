@@ -277,7 +277,7 @@ ItemEvents.rightClicked("sunlit_cobblemon:gachamon_capsule", (e) => {
   let nearbyMons = level
     .getEntitiesWithin(player.boundingBox.inflate(20))
     .filter((scanEntity) => scanEntity.type === "cobblemon:pokemon");
-  if (nearbyMons.length > 25) {
+  if (nearbyMons.length > 40) {
     player.tell(
       Text.translatable("sunlit_cobblemon.gachamon_capsule.addiction").red(),
     );

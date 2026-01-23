@@ -16,9 +16,31 @@
     },
     {
       "stack": "item:cobblemon:max_potion"
+    },
+    {
+      "stack": "item:cobblemon:poison_barb",
+      "recipe": "cobblemon:poison_barb"
     }
   ],
   "lookup_history": [
+    "item:cobblemon:berry_juice",
+    "item:cobblemon:focus_sash",
+    "item:cobblemon:focus_band",
+    "item:cobblemon:protector",
+    "item:cobblemon:assault_vest",
+    "item:cobblemon:poison_barb",
+    "item:cobblemon:charcoal_stick",
+    "item:cobblemon:metal_coat",
+    "item:cobblemon:dragon_fang",
+    "item:botania:spell_cloth{Damage:0}",
+    {
+      "type": "item",
+      "id": "cobblemon:hard_stone",
+      "amount": 64
+    },
+    "item:cobblemon:power_weight",
+    "item:cobblemon:leftovers",
+    "item:cobblemon:shell_bell",
     "item:sunlit_cobblemon:star_pixie",
     "item:sunlit_cobblemon:atmospheric_vial",
     "item:botania:brew_vial{brewKey:\"botania:allure\"}",
@@ -336,7 +358,6 @@
     "item:simpletms:tr_meteorbeam",
     "item:cobblemon:rocky_helmet",
     "item:cobblemon:fire_stone",
-    "item:cobblemon:hard_stone",
     "item:cobblemon:water_stone",
     "item:cobblemon:ice_stone",
     "item:cobblemon:steel_gem",
@@ -587,13 +608,11 @@
     "item:cobblemon:iron_ball",
     "item:cobblemon:light_ball",
     "item:cobblemon:magnet",
-    "item:cobblemon:shell_bell",
     "item:cobblemon:silk_scarf",
     "item:cobblemon:safety_goggles",
     "item:cobblemon:ring_target",
     "item:cobblemon:razor_claw",
     "item:cobblemon:quick_powder",
-    "item:cobblemon:metal_coat",
     "item:cobblemon:shiny_stone",
     "item:cobblemon:tart_apple",
     "item:cobblemon:prism_scale",
@@ -707,7 +726,6 @@
     "item:beachparty:crocs{Damage:0}",
     "item:cobblemon:healing_machine",
     "item:cobblemon:oval_stone",
-    "item:cobblemon:protector",
     "item:cobblemon:dragon_scale",
     "item:minecraft:bow{Damage:0}",
     "item:cobblemon:red_mint_seeds",
@@ -1158,7 +1176,6 @@
     "item:cobblemon:power_bracer",
     "item:cobblemon:power_lens",
     "item:cobblemon:sharp_beak",
-    "item:cobblemon:power_weight",
     "item:cobblemon:power_belt",
     "item:cobblemon:power_band",
     "item:windswept:wild_berries",
@@ -1224,11 +1241,6 @@
     "item:refinedstorage:security_manager",
     "item:beachparty:sunglasses{Damage:0}",
     "item:society:sunlit_pearl",
-    {
-      "type": "item",
-      "id": "cobblemon:poison_barb",
-      "amount": 64
-    },
     "item:vintagedelight:pickled_beetroot",
     {
       "type": "item",
@@ -1559,11 +1571,6 @@
       "id": "cobblemon:lucky_egg",
       "amount": 64
     },
-    {
-      "type": "item",
-      "id": "cobblemon:leftovers",
-      "amount": 64
-    },
     "item:cobblemon:life_orb",
     "item:cobblemon:clover_sweet",
     "item:etcetera:dice",
@@ -1575,16 +1582,6 @@
     "item:create:netherite_diving_boots{Damage:0}",
     "item:create:copper_diving_boots{Damage:0}",
     "item:windswept:snow_boots{Damage:0}",
-    {
-      "type": "item",
-      "id": "cobblemon:focus_sash",
-      "amount": 63
-    },
-    {
-      "type": "item",
-      "id": "cobblemon:focus_band",
-      "amount": 63
-    },
     {
       "type": "item",
       "id": "cobblemon:flame_orb",
@@ -1615,7 +1612,6 @@
     "item:beachparty:overgrown_disc",
     "item:cobblemon:blue_mint_leaf",
     "item:cobblemon:destiny_knot",
-    "item:cobblemon:dragon_fang",
     "item:society:gray_sheet",
     "item:cobblemon:display_case",
     "item:tanukidecor:display_case",
@@ -1628,11 +1624,6 @@
     "item:society:maple_syrup",
     "item:cobblemon:choice_band",
     "item:cobblemon:choice_scarf",
-    {
-      "type": "item",
-      "id": "cobblemon:charcoal_stick",
-      "amount": 64
-    },
     "item:cobblemon:binding_band",
     "item:cobblemon:black_belt",
     "item:society:architects_digest",
@@ -1640,12 +1631,6 @@
     "item:windswept:holly_chest",
     "item:cobblemon:black_gilded_chest",
     "item:create:belt_connector",
-    "item:cobblemon:berry_juice",
-    {
-      "type": "item",
-      "id": "cobblemon:assault_vest",
-      "amount": 64
-    },
     "item:society:red_sheet",
     "item:botania:cosmetic_lusitanic_shield",
     "item:species:ricoshield{Damage:0}",
@@ -1691,11 +1676,6 @@
       "type": "item",
       "id": "farmersdelight:pumpkin_slice",
       "amount": 20
-    },
-    {
-      "type": "item",
-      "id": "veggiesdelight:turnip",
-      "amount": 3
     }
   ],
   "craft_history": [

@@ -132,7 +132,7 @@
 			icon: "cobblemon:ultra_ball"
 			id: "3445937422AC3866"
 			rewards: [{
-				count: 2
+				count: 4
 				id: "2A580C07E8F4345F"
 				item: "cobblemon:poke_ball"
 				type: "item"
@@ -164,20 +164,11 @@
 			description: ["Don't worry, they'll let you know when its time to evolve!"]
 			icon: "cobblemon:luxury_ball"
 			id: "6F67FB69D101E731"
-			rewards: [
-				{
-					count: 3
-					id: "7AB86C8E28637F0C"
-					item: "cobblemon:exp_candy_s"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "3A7D30E47D0424EC"
-					item: "cobblemon:poke_ball"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2679EE02671E10D9"
+				item: "cobblemon:exp_share"
+				type: "item"
+			}]
 			tasks: [{
 				action: "evolve"
 				amount: 1L
@@ -202,12 +193,19 @@
 		{
 			dependencies: ["4EEFAEB610213563"]
 			id: "516FF5028F8EE1E5"
-			rewards: [{
-				count: 5
-				id: "0A52C1DBF47D918B"
-				item: "cobblemon:great_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "0A52C1DBF47D918B"
+					item: "cobblemon:great_ball"
+					type: "item"
+				}
+				{
+					id: "1D3D4DF3280B5FE3"
+					item: "cobblemon:quick_claw"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 10L
@@ -482,9 +480,8 @@
 					type: "item"
 				}
 				{
-					count: 5
-					id: "493612CC3F852F0B"
-					item: "cobblemon:exp_candy_s"
+					id: "331E72D2F1AAA2D0"
+					item: "cobblemon:silk_scarf"
 					type: "item"
 				}
 			]
@@ -512,12 +509,19 @@
 		{
 			icon: "cobblemon:grass_gem"
 			id: "72D0A8BDEF603EC8"
-			rewards: [{
-				count: 5
-				id: "58F3392953B7AB47"
-				item: "cobblemon:rawst_berry"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "58F3392953B7AB47"
+					item: "cobblemon:rawst_berry"
+					type: "item"
+				}
+				{
+					id: "1B5AC734E4F8AD13"
+					item: "cobblemon:miracle_seed"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -548,9 +552,8 @@
 					type: "item"
 				}
 				{
-					count: 2
-					id: "2679AA3E2BD72602"
-					item: "cobblemon:exp_candy_m"
+					id: "082496220F2B7ADF"
+					item: "cobblemon:mystic_water"
 					type: "item"
 				}
 			]
@@ -714,10 +717,10 @@
 					type: "item"
 				}
 				{
-					count: 5
-					id: "3B7A72573D4C88DB"
-					item: "candlelight:salad"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "0B3EADFB460067B0"
+					table_id: 1360190655616259059L
+					type: "choice"
 				}
 			]
 			size: 2.0d
@@ -738,11 +741,18 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:ground_gem"
 			id: "496F315CCAEFEFF2"
-			rewards: [{
-				id: "3E3A41190A51D092"
-				item: "sunlit_cobblemon:berry_capsule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3E3A41190A51D092"
+					item: "sunlit_cobblemon:berry_capsule"
+					type: "item"
+				}
+				{
+					id: "02BA66A8DF2F239B"
+					item: "cobblemon:soft_sand"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -873,6 +883,11 @@
 					item: "cobblemon:exp_candy_l"
 					type: "item"
 				}
+				{
+					id: "71C172535151DD6A"
+					item: "cobblemon:hard_stone"
+					type: "item"
+				}
 			]
 			tasks: [{
 				action: "catch"
@@ -940,12 +955,19 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:poison_gem"
 			id: "6DF3741C3754EC87"
-			rewards: [{
-				count: 3
-				id: "6EA8DF60C4AFBC96"
-				item: "sunlit_cobblemon:berry_capsule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "6EA8DF60C4AFBC96"
+					item: "sunlit_cobblemon:berry_capsule"
+					type: "item"
+				}
+				{
+					id: "59789DB33F2193A1"
+					item: "cobblemon:poison_barb"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1029,12 +1051,19 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:fire_gem"
 			id: "6DA840083729251E"
-			rewards: [{
-				count: 10
-				id: "0F73236B15BA2108"
-				item: "cobblemon:max_ether"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "0F73236B15BA2108"
+					item: "cobblemon:max_ether"
+					type: "item"
+				}
+				{
+					id: "552D48B247425DF3"
+					item: "cobblemon:charcoal_stick"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1102,6 +1131,20 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:helix_fossil"
 			id: "301935045A947BFE"
+			rewards: [
+				{
+					count: 4
+					id: "640DCD299EF40398"
+					item: "crittersandcompanions:clam"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "325F606366A2CA3C"
+					item: "cobblemon:exp_candy_l"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "revive_fossil"
 				amount: 1L
@@ -1120,19 +1163,26 @@
 				title: "Revive 1 Fossil"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -13.0d
-			y: 17.0d
+			x: -12.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:bug_gem"
 			id: "5553E125FCEB3B9A"
-			rewards: [{
-				count: 10
-				id: "41CA8860CD09C51B"
-				item: "cobblemon:net_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "41CA8860CD09C51B"
+					item: "cobblemon:net_ball"
+					type: "item"
+				}
+				{
+					id: "077CBCEC1AE3499B"
+					item: "cobblemon:silver_powder"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1358,12 +1408,19 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:electric_gem"
 			id: "3DC94224FC36F53F"
-			rewards: [{
-				count: 5
-				id: "23DA186DD915618C"
-				item: "cobblemon:timer_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "23DA186DD915618C"
+					item: "cobblemon:timer_ball"
+					type: "item"
+				}
+				{
+					id: "77FE5DD591EA1398"
+					item: "cobblemon:magnet"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1388,12 +1445,19 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:ice_gem"
 			id: "2D94FDC9C3511DDE"
-			rewards: [{
-				count: 5
-				id: "655C5E597EB94650"
-				item: "cobblemon:moon_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "655C5E597EB94650"
+					item: "cobblemon:moon_ball"
+					type: "item"
+				}
+				{
+					id: "4809C72CC9F5F494"
+					item: "cobblemon:never_melt_ice"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1418,12 +1482,19 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:flying_gem"
 			id: "5A1F3015336F0E33"
-			rewards: [{
-				count: 5
-				id: "4F5DEBCB14D61F41"
-				item: "cobblemon:safari_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "4F5DEBCB14D61F41"
+					item: "cobblemon:safari_ball"
+					type: "item"
+				}
+				{
+					id: "0D2BA452B8FEBA44"
+					item: "cobblemon:sharp_beak"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1448,20 +1519,27 @@
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:fighting_gem"
 			id: "5838565EAA6C8520"
-			rewards: [{
-				id: "6B04E7A25D237714"
-				item: {
-					Count: 1
-					id: "sunlit_cobblemon:gachamon_capsule"
-					tag: {
-						quality_food: {
-							quality: 2
+			rewards: [
+				{
+					id: "6B04E7A25D237714"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:gachamon_capsule"
+						tag: {
+							quality_food: {
+								quality: 2
+							}
+							type: "steel"
 						}
-						type: "steel"
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0C56198D9E2A960B"
+					item: "cobblemon:black_belt"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1479,19 +1557,26 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -12.0d
-			y: 18.0d
+			x: -13.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["666FB123AAD70030"]
 			icon: "cobblemon:steel_gem"
 			id: "07E1572255DB805D"
-			rewards: [{
-				count: 5
-				id: "464C2316BCBD5957"
-				item: "cobblemon:heavy_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "464C2316BCBD5957"
+					item: "cobblemon:heavy_ball"
+					type: "item"
+				}
+				{
+					id: "1A3EFF130B851D94"
+					item: "cobblemon:metal_coat"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
 				amount: 5L
@@ -1509,8 +1594,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -14.0d
-			y: 15.0d
+			x: -13.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -1530,14 +1615,13 @@
 					type: "item"
 				}
 				{
-					id: "1D4FF480DA741CB9"
-					item: {
-						Count: 1
-						id: "nethervinery:netherite_nectar"
-						tag: {
-							EffectAmplifier: 0
-						}
-					}
+					id: "3C066C32D551365E"
+					item: "cobblemon:focus_sash"
+					type: "item"
+				}
+				{
+					id: "3A0D2195EB153599"
+					item: "cobblemon:focus_band"
 					type: "item"
 				}
 			]
@@ -1569,14 +1653,21 @@
 			]
 			icon: "society:ancient_fruit"
 			id: "279B9BE5A850C517"
-			rewards: [{
-				auto: "invisible"
-				command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
-				elevate_perms: true
-				id: "4FF6049DFFC66DF3"
-				silent: true
-				type: "command"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
+					elevate_perms: true
+					id: "4FF6049DFFC66DF3"
+					silent: true
+					type: "command"
+				}
+				{
+					id: "0A2854A33C426555"
+					item: "cobblemon:assault_vest"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
@@ -1595,6 +1686,11 @@
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
 			id: "1CA2FC305179160B"
+			rewards: [{
+				id: "0B48AF03252C28C4"
+				item: "cobblemon:twisted_spoon"
+				type: "item"
+			}]
 			tasks: [{
 				action: "catch"
 				amount: 10L
@@ -1619,6 +1715,11 @@
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
 			id: "0DE8106C1FE7EADD"
+			rewards: [{
+				id: "71F2E6ACB961B9F0"
+				item: "cobblemon:black_glasses"
+				type: "item"
+			}]
 			tasks: [{
 				action: "catch"
 				amount: 10L
@@ -1643,6 +1744,11 @@
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
 			id: "01D1CCF3974F6E32"
+			rewards: [{
+				id: "7E55359704837F19"
+				item: "cobblemon:spell_tag"
+				type: "item"
+			}]
 			tasks: [{
 				action: "catch"
 				amount: 10L
@@ -1669,14 +1775,8 @@
 			icon: "cobblemon:fairy_gem"
 			id: "6C2BCBA35F638C82"
 			rewards: [{
-				id: "0D5307422D20C24D"
-				item: {
-					Count: 1
-					id: "sunlit_cobblemon:gachamon_capsule"
-					tag: {
-						type: "fairy"
-					}
-				}
+				id: "4DC9C46A7AC198B2"
+				item: "cobblemon:fairy_feather"
 				type: "item"
 			}]
 			tasks: [{
@@ -1796,6 +1896,18 @@
 			dependencies: ["1D5ABDB54D158E4D"]
 			icon: "candlelight:hearth"
 			id: "6828E83CB0C77B98"
+			rewards: [
+				{
+					id: "4E634E0A808EFE70"
+					item: "society:animal_cracker"
+					type: "item"
+				}
+				{
+					id: "09153CAD30CE1610"
+					item: "sunlit_cobblemon:greater_tm_pack"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "release"
 				amount: 10L
@@ -1819,6 +1931,18 @@
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
 			id: "06CF329242494B90"
+			rewards: [{
+				count: 4
+				id: "1AAA3B693A3D09A6"
+				item: {
+					Count: 1
+					id: "sunlit_cobblemon:gachamon_capsule"
+					tag: {
+						type: "dragon"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				action: "revive_fossil"
 				amount: 5L
@@ -2087,14 +2211,21 @@
 		{
 			dependencies: ["666FB123AAD70030"]
 			id: "5D7933D069120536"
-			rewards: [{
-				id: "031625652837D0F3"
-				item: "pamhc2trees:dragonfruit_sapling"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "031625652837D0F3"
+					item: "pamhc2trees:dragonfruit_sapling"
+					type: "item"
+				}
+				{
+					id: "26F58CAC680667F9"
+					item: "cobblemon:dragon_fang"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "catch"
-				amount: 5L
+				amount: 3L
 				biome: ""
 				dimension: ""
 				form: ""
@@ -2110,8 +2241,8 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: -13.0d
-			y: 16.0d
+			x: -14.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
@@ -2350,8 +2481,8 @@
 			icon: "cobblemon:ground_gem"
 			id: "44FEB5E8E2C24D89"
 			rewards: [{
-				id: "58EE0E019BB9D12F"
-				item: "sunlit_cobblemon:berry_capsule"
+				id: "3FDCDDF8E93E758A"
+				item: "simpletms:tm_earthquake"
 				type: "item"
 			}]
 			tasks: [{
@@ -2615,14 +2746,22 @@
 			]
 			icon: "society:prismatic_shard"
 			id: "1CB70EFDB8061E2D"
-			rewards: [{
-				auto: "invisible"
-				command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
-				elevate_perms: true
-				id: "12CC41C00865F7A0"
-				silent: true
-				type: "command"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/puffish_skills points add @p sunlit_cobblemon:trainer_level 1"
+					elevate_perms: true
+					id: "12CC41C00865F7A0"
+					silent: true
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0BD6FF50D0F6F293"
+					table_id: 4018115858980661593L
+					type: "choice"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
@@ -2730,9 +2869,9 @@
 			dependencies: ["666FB123AAD70030"]
 			id: "459615A6E11C27A5"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "5716AEBA340774F9"
-				type: "choice"
+				id: "04E79FBFCAA10D14"
+				item: "cobblemon:lucky_egg"
+				type: "item"
 			}]
 			tasks: [{
 				action: "evolve"
