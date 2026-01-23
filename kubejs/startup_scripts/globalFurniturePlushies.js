@@ -761,7 +761,7 @@ global.plushieTraits = [
   { trait: "wrathful", color: "4", tag: "#minecraft:swords" },
   { trait: "sommelier", color: "5", tag: "#candlelight:all_effects" },
   { trait: "sunlit", color: "6", tag: "#society:omni_geode_treasure" },
-  { trait: "hungry", color: "7", tag: "#society:dish" },
+  { trait: "hungry", color: "8", tag: "#society:dish" },
   { trait: "anxious", color: "8", tag: "#forge:crops" },
   { trait: "shy", color: "9", tag: "#society:curtains" },
   { trait: "cheerful", color: "a", tag: "#forge:fruits" },

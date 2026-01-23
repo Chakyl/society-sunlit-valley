@@ -38,9 +38,23 @@
     },
     {
       "stack": "item:minecraft:stripped_spruce_log"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "society:auto_tapper",
+        "amount": 64
+      }
     }
   ],
   "lookup_history": [
+    "item:domesticationinnovation:drum",
+    "item:society:moon_statue",
+    "item:minecraft:rabbit_spawn_egg",
+    "item:society:sunlit_crystal",
+    "item:cluttered:willow_sapling",
+    "item:cluttered:willow_wood",
+    "item:everycomp:fs/cluttered/willow_4",
     "item:portable_blueprints:scanner",
     "item:portable_blueprints:tablet",
     "item:society:invitation{type:{id:\"society:carpenter\"}}",
@@ -89,7 +103,6 @@
     "item:society:net_bobber",
     "item:society:heart_of_neptunium",
     "item:society:needle_bobber",
-    "item:society:moon_statue",
     "item:society:treasure_totem",
     "item:minecraft:music_disc_5",
     "item:minecraft:music_disc_mall",
@@ -233,7 +246,6 @@
     "item:society:spindlefish_roe",
     "item:create:white_seat",
     "item:wildernature:raccoon_spawn_egg",
-    "item:minecraft:rabbit_spawn_egg",
     "item:snowpig:snow_pig_spawn_egg",
     "item:minecraft:pig_spawn_egg",
     "item:atmospheric:cochineal_spawn_egg",
@@ -326,10 +338,10 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:minecraft:cooked_porkchop",
       "item:farmersdelight:cooked_bacon",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:candlelight:pork_ribs",
+      "item:minecraft:cooked_porkchop",
+      "item:farm_and_charm:bacon_with_eggs",
       "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -341,8 +353,8 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini",
+      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
@@ -623,7 +635,6 @@
       "amount": 129
     },
     "item:numismatics:prismatic_coin",
-    "item:society:sunlit_crystal",
     "item:crafting_on_a_stick:crafting_table",
     "item:botania:dragonstone",
     "item:minecraft:quartz",
@@ -899,7 +910,6 @@
     },
     "item:minecraft:diamond_block",
     "item:atmospheric:grimwood_leaves",
-    "item:cluttered:willow_sapling",
     "item:perfectplushies:adv_lion_cub_plushie{affection:3,quality_food:{quality:0},quest_id:1,type:4}",
     "item:minecraft:arrow",
     "item:candlelight:chefs_boots{Damage:0}",
@@ -926,7 +936,6 @@
     "item:society:fire_opal",
     "item:society:pristine_esperite",
     "item:society:esperite",
-    "item:cluttered:willow_wood",
     "item:cluttered:willow_log",
     "item:society:pristine_fluorapatite",
     "item:society:ocean_jelly",
@@ -1218,7 +1227,6 @@
     "item:candlelight:khinkali",
     "item:aquaculture:neptunium_shovel{Damage:0}",
     "item:bakery:chocolate_donut",
-    "item:domesticationinnovation:drum",
     "item:domesticationinnovation:deed_of_ownership",
     "item:society:circus_fish_roe",
     "item:society:clam_roe",
@@ -1511,8 +1519,7 @@
     "item:society:botanical_tribute",
     "item:botania:terrasteel_block",
     "item:unusualfishmod:raw_snowflake",
-    "item:unusualfishmod:raw_aero_mono",
-    "item:botania:rune_winter"
+    "item:unusualfishmod:raw_aero_mono"
   ],
   "craft_history": [
     "meadow:fire_log",

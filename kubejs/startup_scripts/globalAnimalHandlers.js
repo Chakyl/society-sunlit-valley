@@ -87,7 +87,7 @@ global.getMilk = (
   data,
   player,
   day,
-  raiseEffection,
+  raiseAffection,
   plushieModifiers
 ) => {
   const crackerBonus = data.animalCracker ? 2 : 1;
@@ -112,7 +112,7 @@ global.getMilk = (
     const plushieDoubleDrops = plushieModifiers && plushieModifiers.doubleDrops;
     const plushieProcessItems =
       plushieModifiers && plushieModifiers.processItems;
-    if (raiseEffection) data.affection = affection + affectionIncrease;
+    if (raiseAffection) data.affection = affection + affectionIncrease;
     if (!plushieModifiers) data.ageLastMilked = day;
     if (mood >= 160) {
       quality = global.getHusbandryQuality(hearts, mood, true);
@@ -200,8 +200,8 @@ global.handleSpecialHarvest = (
     if (
       player.stages.has("coopmaster") &&
       (plushieModifiers
-        ? global.coopMasterAnimals.includes(animal.type)
-        : global.checkEntityTag(animal, "society:coopmaster_bird"))
+        ? global.coopMasterAnimals.includes(data.type)
+        : global.checkEntityTag(target, "society:coopmaster_bird"))
     ) {
       harvestFunction(
         data,
