@@ -21,6 +21,25 @@
 					"position": "INLINE",
 					"brightness": 1
 				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.chatter_friendship4.1.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
 			],
 			"command": [
 				"openshop @p market"

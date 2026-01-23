@@ -62,7 +62,7 @@ BlockEvents.placed("society:villager_home", (e) => {
       server.runCommandSilent(
         `playsound botania:starcaller block @a ${player.x} ${player.y} ${player.z}`
       );
-      server.runCommandSilent(`easy_npc navigation set home ${nearbyNPCs[0].getUuid()} ${x} ${y + 0.25} ${z}}`)
+      server.runCommandSilent(`easy_npc navigation set home ${nearbyNPCs[0].getUuid()} ${x} ${y + 0.25} ${z}`)
       nbt.merge({
         data: {
           type: villagerType,

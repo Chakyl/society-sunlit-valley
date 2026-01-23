@@ -5,7 +5,7 @@ if (global.datagenDialog) {
     intro: [
       "My name is Caroline, and I am the one who's been financing this settlement since before you arrived.",
       "You've been carelessly buying up everyone's stock, and I need to keep a closer watch of things here.",
-      "I have some things that will help you plan your money better.",
+      "I have some things for sale that will help you manage your money better.",
       "Now, please leave me be while I tidy up this dump. I will contact you if I need anything."
     ],
     chatter: {

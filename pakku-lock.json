@@ -10277,6 +10277,42 @@
             ]
         },
         {
+            "pakku_id": "EJRIyQgKXDUVsuRB",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "svdialog"
+            },
+            "name": {
+                "curseforge": "SVDialog"
+            },
+            "id": {
+                "curseforge": "1441305"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "SVDialog-0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7510/22/SVDialog-0.1.jar",
+                    "id": "7510022",
+                    "parent_id": "1441305",
+                    "hashes": {
+                        "sha1": "5e1ae288a04f90cad0a2716ee2f47b24c1f4cc1b",
+                        "md5": "cfa7fca9515dfa46c241cc118435ee9e"
+                    },
+                    "required_dependencies": [],
+                    "size": 1318903,
+                    "date_published": "2026-01-23T02:22:40.657Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Cub2qq5lbAsk5e9x",
             "pakku_links": [
                 "yEhUyJ3QnNtdhP9E"
@@ -12597,43 +12633,6 @@
                     "required_dependencies": [],
                     "size": 705425,
                     "date_published": "2025-04-06T20:04:14.860Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "E3plrzihRC9VhO9v",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "vndialog"
-            },
-            "name": {
-                "curseforge": "VNDialog"
-            },
-            "id": {
-                "curseforge": "1263982"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "VNDialog-1.1.2-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6890/682/VNDialog-1.1.2-1.20.1.jar",
-                    "id": "6890682",
-                    "parent_id": "1263982",
-                    "hashes": {
-                        "sha1": "d122bdfdf8b87b24163a25ed74c92d173a49f8ef",
-                        "md5": "71ae559f062b85d293b624b759cf2fe4"
-                    },
-                    "required_dependencies": [],
-                    "size": 1232529,
-                    "date_published": "2025-08-15T20:16:39.560Z"
                 }
             ]
         },

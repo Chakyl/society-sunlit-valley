@@ -48,6 +48,38 @@
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "meadow:fire_log",
+      "amount": 3
+    },
+    "item:whimsy_deco:phone",
+    {
+      "type": "item",
+      "id": "society:mushroom_log",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "verdantvibes:bracket_mushroom",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "ribbits:toadstool",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "minecraft:brown_mushroom",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "species:alphacene_mushroom",
+      "amount": 2
+    },
+    "item:minecraft:oak_log",
     "item:domesticationinnovation:drum",
     "item:society:moon_statue",
     "item:minecraft:rabbit_spawn_egg",
@@ -58,11 +90,6 @@
     "item:portable_blueprints:scanner",
     "item:portable_blueprints:tablet",
     "item:society:invitation{type:{id:\"society:carpenter\"}}",
-    {
-      "type": "item",
-      "id": "meadow:fire_log",
-      "amount": 2
-    },
     {
       "type": "item",
       "id": "minecraft:leaf_litter",
@@ -291,7 +318,6 @@
     "item:society:milk_bucket",
     "item:society:villager_home",
     "item:society:artisan_hopper",
-    "item:society:mushroom_log",
     "item:society:sparkstone_ore",
     "item:society:coin_leaderboard",
     "item:society:bait_maker",
@@ -338,10 +364,10 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farmersdelight:cooked_bacon",
       "item:candlelight:pork_ribs",
-      "item:minecraft:cooked_porkchop",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:farmersdelight:cooked_bacon",
+      "item:minecraft:cooked_porkchop",
       "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -353,16 +379,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/cauliflower",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -389,7 +415,6 @@
       "id": "minecraft:ochre_froglight",
       "amount": 8
     },
-    "item:minecraft:oak_log",
     "item:vinery:magnetic_wine",
     "item:society:preserves_jar",
     "item:minecraft:copper_block",
@@ -697,7 +722,6 @@
     },
     "item:minecraft:anvil",
     "item:minecraft:sculk_sensor",
-    "item:ribbits:toadstool",
     "item:botania:light_blue_mushroom",
     "item:botania:yellow_mushroom",
     "item:botania:brown_mushroom",
@@ -744,7 +768,6 @@
     "item:autumnity:foul_berries",
     "item:society:double_aged_violet_moon",
     "item:society:aged_violet_moon",
-    "item:species:alphacene_mushroom",
     "item:society:pink_matter",
     "item:meadow:buffalo_cheese_block",
     "item:society:double_aged_goat_cheese_block",
@@ -1387,7 +1410,6 @@
     "item:candlelight:cooking_pot",
     "item:candlelight:cooking_hat{Damage:0}",
     "item:smallships:bamboo_cog",
-    "item:whimsy_deco:phone",
     "item:minecraft:bamboo_raft",
     "item:smallships:spruce_galley",
     "item:smallships:oak_galley",
@@ -1517,9 +1539,7 @@
     "item:vinery:jungle_lattice",
     "item:society:treated_log",
     "item:society:botanical_tribute",
-    "item:botania:terrasteel_block",
-    "item:unusualfishmod:raw_snowflake",
-    "item:unusualfishmod:raw_aero_mono"
+    "item:botania:terrasteel_block"
   ],
   "craft_history": [
     "meadow:fire_log",
