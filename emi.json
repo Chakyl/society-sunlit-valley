@@ -23,6 +23,16 @@
     }
   ],
   "lookup_history": [
+    "item:megamons:mega_cuff{}",
+    "item:sunlit_cobblemon:pristine_ghost_gem",
+    "item:simpletms:tr_playrough",
+    "item:sunlit_cobblemon:pristine_fighting_gem",
+    "item:sunlit_cobblemon:rare_cobbleberry_preserves",
+    "item:sunlit_cobblemon:pristine_grass_gem",
+    "item:cobblemon:green_gilded_chest",
+    "item:cobblemon:roasted_leek",
+    "item:fightorflight:oran_lucky_egg",
+    "item:fightorflight:pokestaff",
     "item:cobblemon:berry_juice",
     "item:cobblemon:focus_sash",
     "item:cobblemon:focus_band",
@@ -105,7 +115,6 @@
     "item:society:wheel_of_adaptation",
     "item:society:ember_crystal_cluster",
     "item:cobblemon:medicinal_leek",
-    "item:cobblemon:roasted_leek",
     "item:minecraft:oak_slab",
     "item:minecraft:oak_planks",
     "item:quark:stripped_oak_post",
@@ -361,8 +370,6 @@
     "item:cobblemon:water_stone",
     "item:cobblemon:ice_stone",
     "item:cobblemon:steel_gem",
-    "item:fightorflight:pokestaff",
-    "item:fightorflight:oran_lucky_egg",
     "item:society:cornucopia",
     "item:simpletms:tm_blank",
     "item:cobblemon:dusk_stone",
@@ -1660,23 +1667,7 @@
     "item:cobblemon:berry_sweet",
     "item:cobblemon:vivichoke",
     "item:cobblemon:max_ether",
-    "item:cobblemon:mental_herb",
-    "item:cobblemon:mirror_herb",
-    "#item:cobblemon:seeds",
-    "item:society:nether_jelly",
-    {
-      "type": "item",
-      "id": "minecraft:tropical_fish",
-      "nbt": "{quality_food:{effects:[],quality:1}}",
-      "amount": 2
-    },
-    "item:dew_drop_farmland_growth:weak_fertilizer",
-    "item:farmersdelight:tomato{quality_food:{effects:[],quality:2}}",
-    {
-      "type": "item",
-      "id": "farmersdelight:pumpkin_slice",
-      "amount": 20
-    }
+    "item:cobblemon:mental_herb"
   ],
   "craft_history": [
     "minecraft:kjs/sunlit_cobblemon_star_pixie_5",

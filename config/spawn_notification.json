@@ -1,0 +1,23 @@
+{
+  "broadcastShiny": true,
+  "broadcastCoords": true,
+  "broadcastBiome": false,
+  "playShinySound": true,
+  "playShinySoundPlayer": false,
+  "announceCrossDimensions": false,
+  "broadcastDespawns": false,
+  "broadcastVolatileDespawns": false,
+  "broadcastSpeciesName": true,
+  "broadcastPlayerSpawnedOn": false,
+  "broadcastRange": -1,
+  "playerLimit": -1,
+  "labelsForBroadcast": [
+    "legendary"
+  ],
+  "bucketsForBroadcast": [],
+  "formatting": {
+    "label.legendary": "LIGHT_PURPLE",
+    "bucket.ultra-rare": "AQUA",
+    "shiny": "GOLD"
+  }
+}

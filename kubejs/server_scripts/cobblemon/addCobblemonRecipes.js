@@ -106,7 +106,7 @@ ServerEvents.recipes((e) => {
       s: "society:production_science_pack",
     },
   );
-    e.shaped(
+  e.shaped(
     Item.of("sunlit_cobblemon:star_pixie", '{type:"flying"}'),
     [" g ", "fsf", " g "],
     {
@@ -115,4 +115,7 @@ ServerEvents.recipes((e) => {
       s: "society:production_science_pack",
     },
   );
+  global.cobbleTypeGems.forEach((gem) => {
+    e.shapeless(`3x ${gem.item}`, [`society:pristine_${gem.item.path}`]);
+  });
 });
