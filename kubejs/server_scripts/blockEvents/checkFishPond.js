@@ -39,6 +39,15 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
     .append(" ")
     .append(Text.green(upgrade))
     .append(Text.of(` ]==`));
+  const pondHeaderTextShadow = Text.empty()
+    .gray()
+    .append(Text.of(`==[ `))
+    .append(Text.black(upgrade))
+    .append(" ")
+    .append(Text.translatable("block.society.fish_pond").black())
+    .append(" ")
+    .append(Text.black(upgrade))
+    .append(Text.of(` ]==`));
 
   global.renderUiText(
     player,
@@ -58,7 +67,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         x: 1,
         z: -1,
         y: -109,
-        text: `${pondHeaderText.getString()}`,
+        text: `${pondHeaderTextShadow.toJson()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",

@@ -112,8 +112,8 @@ global.processShippingBinInventory = (
 
       calculatedValue += Math.round(
         itemValue *
-          inventory.getStackInSlot(i).count *
-          global.getAttributeMultiplier(attributes, trade.multiplier)
+        inventory.getStackInSlot(i).count *
+        global.getAttributeMultiplier(attributes, trade.multiplier)
       );
     }
     if (isSellable && !simulated) {
@@ -158,8 +158,7 @@ global.handleShippingBinDebt = (
           `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
           Text.translatable(
-            "society.shipping_bin.debt_paid_all",
-            global.formatPrice(debtPaid.toFixed())
+            "society.shipping_bin.debt_paid_all"
           ).getString()
         )
       );
@@ -172,10 +171,9 @@ global.handleShippingBinDebt = (
           player.username,
           `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          Text.translatable(
-            "society.shipping_bin.debt_paid",
-            global.formatPrice(debtPaid.toFixed())
-          ).getString()
+          `§f● §6${global.formatPrice(
+            debtPaid
+          )} §7of your debt paid off...`
         )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
@@ -249,10 +247,10 @@ global.processValueOutput = (
     hasRoom =
       extenalOutput ||
       slots -
-        inventory.countNonEmpty() +
-        removedSlots.length -
-        calculateSlotsNeeded(outputs) >=
-        0;
+      inventory.countNonEmpty() +
+      removedSlots.length -
+      calculateSlotsNeeded(outputs) >=
+      0;
     if (hasRoom) {
       if (!block.level.hasNeighborSignal(block.pos) && player) {
         server.runCommandSilent(
@@ -263,10 +261,9 @@ global.processValueOutput = (
             player.username,
             `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
             160,
-            Text.translatable(
-              "society.shipping_bin.goods_sold",
-              global.formatPrice(value.toFixed())
-            ).getString()
+            `● §6${global.formatPrice(
+              value
+            )} §7worth of goods sold`
           )
         );
       }

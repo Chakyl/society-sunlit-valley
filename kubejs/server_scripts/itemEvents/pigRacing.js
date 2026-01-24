@@ -601,6 +601,7 @@ ItemEvents.firstLeftClicked(
     newNbt.bet = betPig;
     item.nbt = newNbt;
     const pigSelectedText = Text.translatable("society.pig_race.pig_selected", global.getPigColoredName(betPig));
+    const pigSelectedTextShadow = Text.translatable("society.pig_race.pig_selected", betPig).black();
     global.renderUiText(
       player,
       server,
@@ -619,7 +620,7 @@ ItemEvents.firstLeftClicked(
           x: 1,
           z: -1,
           y: -89,
-          text: pigSelectedText.getString(),
+          text: `${pigSelectedTextShadow.toJson()}`,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",

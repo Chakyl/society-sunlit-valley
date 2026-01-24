@@ -20,6 +20,7 @@ ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
   const { player } = e;
   let generatePriceWikiTable = false;
   let generatePondTable = false;
+  let generatePrizeMachineTable = true;
   player.server.persistentData.pigraceInProgress = false;
   global.fishPondDefinitions.forEach((fish) => {
     fish.quests.forEach((quest) => {
@@ -28,35 +29,56 @@ ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
       });
     });
   });
-  if (generatePriceWikiTable) {
-    player.tell("Quests validated.");
+  if (generatePrizeMachineTable) {
     player.tell(`{| class="wikitable sortable"`);
     player.tell("|-");
-    player.tell("! Name !! ID !! Price !! Type");
+    player.tell(
+      `!Prize # !! Hint !! Possible Items`
+    );
     player.tell("|-");
-    Array.from(global.trades.keys()).forEach((element) => {
-      let tradeData = global.trades.get(element);
-      if (!element.includes("splendid_slimes"))
-        player.tell(Item.of(element).displayName);
-      else {
-        let type = element.substring(element.lastIndexOf(":") + 1);
-        if (element.includes("plort")) {
-          player.tell(`Plort: ${type} `);
-        } else {
-          player.tell(`Slime Heart: ${type}`);
-        }
-      }
-      player.tell(
-        ` || ${
-          element.includes("plort")
-            ? "splendid_slimes:plort"
-            : element.includes("slime_heart")
-            ? "splendid_slimes:slime_heart"
-            : element
-        } || ${tradeData.value} || ${multiplierToNatural(tradeData.multiplier)}`
-      );
+    global.prizeMachineRewards.forEach((element, index) => {
+      player.tell(`|`);
+      player.tell(index);
+      player.tell(" || ")
+      player.tell(element.hint);
+      player.tell(" || ")
+      element.possibleOutputs.forEach((output) => {
+        let request = Item.of(output)
+        player.tell("* " + request.count);
+        player.tell(request.displayName);
+      });
       player.tell("|-");
     });
+  }
+  if (generatePriceWikiTable) {
+    // player.tell("Quests validated.");
+    // player.tell(`{| class="wikitable sortable"`);
+    // player.tell("|-");
+    // player.tell("! Name !! ID !! Price !! Type");
+    // player.tell("|-");
+    // Array.from(global.trades.keys()).forEach((element) => {
+    //   let tradeData = global.trades.get(element);
+    //   if (!element.includes("splendid_slimes"))
+    //     player.tell(Item.of(element).displayName);
+    //   else {
+    //     let type = element.substring(element.lastIndexOf(":") + 1);
+    //     if (element.includes("plort")) {
+    //       player.tell(`Plort: ${type} `);
+    //     } else {
+    //       player.tell(`Slime Heart: ${type}`);
+    //     }
+    //   }
+    //   player.tell(
+    //     ` || ${
+    //       element.includes("plort")
+    //         ? "splendid_slimes:plort"
+    //         : element.includes("slime_heart")
+    //         ? "splendid_slimes:slime_heart"
+    //         : element
+    //     } || ${tradeData.value} || ${multiplierToNatural(tradeData.multiplier)}`
+    //   );
+    //   player.tell("|-");
+    // });
   }
   if (generatePondTable) {
     // player.tell("Quests validated.");
@@ -80,29 +102,30 @@ ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
     //   });
     // player.tell("|-");
     // });
-    player.tell("Quests validated.");
-    player.tell(`{| class="wikitable sortable"`);
-    player.tell("|-");
-    player.tell(`!Fish !! Items !! Min Population !! % chance`);
-    player.tell("|-");
-    Array.from(global.fishPondDefinitions.keys()).forEach((element) => {
-      let rewards = global.fishPondDefinitions.get(element).additionalRewards;
-      player.tell(`|rowspan="${rewards ? rewards.length : 1}"|`);
-      player.tell(Item.of(element).displayName);
-      if (rewards) {
-        rewards.forEach((reward, index) => {
-          player.tell("| " + reward.count);
-          player.tell(Item.of(reward.item).displayName);
-          player.tell("| " + reward.minPopulation);
-          player.tell(`| ${Math.round(reward.chance * 100)}%`);
-          player.tell("|- ");
-        });
-      } else {
-        player.tell("|")
-        player.tell("|")
-        player.tell("|")
-        player.tell("|-")
-      }
-    });
+    // IDK WHY I COMMENTED THE ABOVE NOW
+    // player.tell("Quests validated.");
+    // player.tell(`{| class="wikitable sortable"`);
+    // player.tell("|-");
+    // player.tell(`!Fish !! Items !! Min Population !! % chance`);
+    // player.tell("|-");
+    // Array.from(global.fishPondDefinitions.keys()).forEach((element) => {
+    //   let rewards = global.fishPondDefinitions.get(element).additionalRewards;
+    //   player.tell(`|rowspan="${rewards ? rewards.length : 1}"|`);
+    //   player.tell(Item.of(element).displayName);
+    //   if (rewards) {
+    //     rewards.forEach((reward, index) => {
+    //       player.tell("| " + reward.count);
+    //       player.tell(Item.of(reward.item).displayName);
+    //       player.tell("| " + reward.minPopulation);
+    //       player.tell(`| ${Math.round(reward.chance * 100)}%`);
+    //       player.tell("|- ");
+    //     });
+    //   } else {
+    //     player.tell("|")
+    //     player.tell("|")
+    //     player.tell("|")
+    //     player.tell("|-")
+    //   }
+    // });
   }
 });

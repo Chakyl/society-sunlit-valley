@@ -48,6 +48,8 @@
     }
   ],
   "lookup_history": [
+    "item:society:prize_machine",
+    "item:society:prize_ticket",
     {
       "type": "item",
       "id": "meadow:fire_log",
@@ -292,7 +294,6 @@
     },
     "item:shippingbin:smart_shipping_bin",
     "item:society:supreme_mayonnaise",
-    "item:society:prize_machine",
     "item:society:eggplant_crate",
     "item:society:ancient_fruit_crate",
     "item:society:ancient_goddess_statue",
@@ -364,11 +365,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
       "item:farmersdelight:cooked_bacon",
       "item:minecraft:cooked_porkchop",
-      "item:brewery:pork_knuckle",
+      "item:candlelight:pork_ribs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -379,16 +380,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/cauliflower",
+      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -400,7 +401,6 @@
     "#item:forge:cooked_mutton",
     "item:veggiesdelight:lasagna_pan",
     "item:candlelight:lasagne",
-    "item:veggiesdelight:stuffed_bellpeppers_block",
     {
       "type": "item",
       "id": "society:truffle",

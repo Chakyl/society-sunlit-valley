@@ -185,7 +185,7 @@ global.fishPondDefinitions = new Map([
         {
           population: 7,
           requestedItems: [
-            { item: "veggiesdelight:stuffed_bellpeppers", count: 16 },
+            { item: "veggiesdelight:stuffed_bellpeppers_block", count: 16 },
           ],
         },
       ],
