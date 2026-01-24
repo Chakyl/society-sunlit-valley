@@ -12,11 +12,11 @@ global.plushieRightClick = (click) => {
     if (!animal) {
       if (
         player.stages.has("women_who_run_with_the_plushies") &&
-        affection < 3
+        affection < 2
       ) {
         nbt.merge({
           data: {
-            affection: 3,
+            affection: 2,
           },
         });
         block.setEntityData(nbt);

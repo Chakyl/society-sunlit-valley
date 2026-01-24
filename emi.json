@@ -48,6 +48,31 @@
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "quark:dragon_scale",
+      "amount": 64
+    },
+    "item:refurbished_furniture:oak_lattice_fence_gate",
+    "item:society:dragonfruit_preserves",
+    "item:society:dragon_mayonnaise",
+    "item:society:dragontooth_axe{Damage:0}",
+    "item:society:aged_tribull_cheese_wheel",
+    "item:society:aged_goat_cheese_block",
+    "item:farmlife:tribull_cheese_wheel",
+    "item:society:double_aged_tribull_cheese_wheel",
+    "item:meadow:cheese_block",
+    "item:farm_and_charm:oat",
+    {
+      "type": "item",
+      "id": "society:animal_feed",
+      "amount": 3
+    },
+    "item:farm_and_charm:barley",
+    "item:farm_and_charm:wild_barley",
+    "item:farm_and_charm:barley_seeds",
+    "item:bakery:chocolate_donut",
+    "item:society:women_who_run_with_the_plushies",
     "item:society:prize_machine",
     "item:society:prize_ticket",
     {
@@ -149,7 +174,6 @@
     "item:pamhc2trees:lycheeitem",
     "item:society:tubabacco_leaf_seed",
     "item:society:the_quality_of_the_earth",
-    "item:society:women_who_run_with_the_plushies",
     "item:society:slime_contain_protect",
     "item:society:pond_house_five",
     {
@@ -365,11 +389,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farm_and_charm:bacon_with_eggs",
-      "item:brewery:pork_knuckle",
+      "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
       "item:minecraft:cooked_porkchop",
-      "item:candlelight:pork_ribs",
+      "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -380,9 +404,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/cauliflower",
       "#item:forge:crops/potato",
-      "#item:forge:crops/zucchini",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -845,7 +869,6 @@
     "item:beachparty:sandwaves",
     "item:numismatics:crown",
     "item:meadow:warped_cheese_block{quality_food:{quality:3}}",
-    "item:farmlife:tribull_cheese_wheel",
     "item:society:aged_cheese_block",
     "item:beautify:lamp_jar",
     "item:longwings:glass_jar",
@@ -1103,7 +1126,6 @@
       "id": "minecraft:stone",
       "amount": 12
     },
-    "item:society:animal_feed",
     "item:society:ribbit_gadget",
     "item:species:kinetic_core",
     "item:minecraft:oak_slab",
@@ -1158,7 +1180,6 @@
     "item:minecraft:wet_sponge",
     "item:minecraft:sponge",
     "item:vintagedelight:honey_mason_jar",
-    "item:meadow:cheese_block",
     "item:minecraft:stripped_oak_log",
     "item:botania:black_lotus",
     "item:botania:blacker_lotus",
@@ -1249,7 +1270,6 @@
     "item:candlelight:fillet_steak",
     "item:candlelight:khinkali",
     "item:aquaculture:neptunium_shovel{Damage:0}",
-    "item:bakery:chocolate_donut",
     "item:domesticationinnovation:deed_of_ownership",
     "item:society:circus_fish_roe",
     "item:society:clam_roe",
@@ -1357,7 +1377,6 @@
     "item:society:stone_hand",
     "item:society:sea_biscut",
     "item:society:relic_trove",
-    "item:society:dragontooth_axe{Damage:1860,Enchantments:[{id:\"minecraft:sharpness\",lvl:1s}]}",
     "item:gamediscs:game_disc_blocktris",
     "item:gamediscs:game_disc_tnt_sweeper",
     "item:gamediscs:game_disc_slime",
@@ -1480,7 +1499,6 @@
     "item:atmospheric:blood_orange",
     "item:vinery:eiswein",
     "item:society:enkephalin",
-    "item:society:dragon_mayonnaise",
     {
       "type": "item",
       "id": "society:large_goose_egg",
@@ -1529,17 +1547,7 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
-    "item:candlelight:hearth",
-    "item:minecraft:heart_of_the_sea",
-    "item:cluttered:sweetheart_counter_left_door",
-    "item:cluttered:heart_cake",
-    "item:cluttered:sweetheart_counter_drawers",
-    "item:vinery:red_grape_seeds",
-    "item:vinery:jungle_lattice",
-    "item:society:treated_log",
-    "item:society:botanical_tribute",
-    "item:botania:terrasteel_block"
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}"
   ],
   "craft_history": [
     "meadow:fire_log",

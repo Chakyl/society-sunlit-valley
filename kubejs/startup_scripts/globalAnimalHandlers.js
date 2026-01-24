@@ -424,7 +424,7 @@ global.getOrFetchMood = (level, target, day, player, debugMood) => {
   let moodImpactModifier = getMoodImpactModifier(target);
   if (moodImpactModifier > 1 && debugMood) player.tell(Text.translatable("society.husbandry.mood.breed_impact", moodImpactModifier).gold());
   if (day - data.getInt("ageLastPet") > 1) {
-    moodDebuffs += 64;
+    moodDebuffs += 96;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_pet").red());
   }
   if (day - data.getInt("ageLastFed") > 1) {

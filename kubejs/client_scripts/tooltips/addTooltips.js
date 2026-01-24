@@ -270,7 +270,7 @@ ItemEvents.tooltip((tooltip) => {
     {
       item: "society:women_who_run_with_the_plushies",
       description:
-        "Plushies will start at 3 hearts of affection. Increases rates of high quality Plushies.",
+        "Plushies will start at 2 hearts of affection. Increases rates of high quality Plushies.",
     },
   ].forEach((book) => {
     tooltip.add(

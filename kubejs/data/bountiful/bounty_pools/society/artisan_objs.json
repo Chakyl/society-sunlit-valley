@@ -64,7 +64,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 96
+			"unitWorth": 48
 		},
 		"artisan_duck_mayonnaise": {
 			"type": "minecraft:item",
@@ -75,7 +75,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 192
+			"unitWorth": 48
 		},
 		"artisan_goose_mayonnaise": {
 			"type": "minecraft:item",
@@ -86,7 +86,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 384
+			"unitWorth": 96
 		},
 		"artisan_turkey_mayonnaise": {
 			"type": "minecraft:item",
@@ -97,7 +97,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 768
+			"unitWorth": 192
 		},
 		"artisan_galliraptor_mayonnaise": {
 			"type": "minecraft:item",
@@ -108,7 +108,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 4800
+			"unitWorth": 1200
 		},
 		"artisan_parrot_mayonnaise": {
 			"type": "minecraft:item",
@@ -119,7 +119,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 1536
+			"unitWorth": 384
 		},
 		"artisan_turtle_mayonnaise": {
 			"type": "minecraft:item",
@@ -130,7 +130,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 3072
+			"unitWorth": 768
 		},
 		"artisan_sniffer_mayonnaise": {
 			"type": "minecraft:item",
@@ -141,7 +141,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 4608
+			"unitWorth": 1152
 		},
 		"artisan_petrified_mayonnaise": {
 			"type": "minecraft:item",
@@ -152,7 +152,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 6144
+			"unitWorth": 1536
 		},
 		"artisan_supreme_mayonnaise": {
 			"type": "minecraft:item",
@@ -174,7 +174,7 @@
 				"min": 1,
 				"max": 2
 			},
-			"unitWorth": 36864
+			"unitWorth": 18432
 		},
 		"artisan_dragon_mayonnaise": {
 			"type": "minecraft:item",
@@ -185,7 +185,7 @@
 				"min": 1,
 				"max": 2
 			},
-			"unitWorth": 36864
+			"unitWorth": 18432
 		},
 		"artisan_large_mayonnaise": {
 			"type": "minecraft:item",
@@ -196,7 +196,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 384
+			"unitWorth": 192
 		},
 		"artisan_large_duck_mayonnaise": {
 			"type": "minecraft:item",
@@ -207,7 +207,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 768
+			"unitWorth": 288
 		},
 		"artisan_large_goose_mayonnaise": {
 			"type": "minecraft:item",
@@ -218,7 +218,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 1536
+			"unitWorth": 384
 		},
 		"artisan_large_turkey_mayonnaise": {
 			"type": "minecraft:item",
@@ -229,18 +229,18 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 3072
+			"unitWorth": 576
 		},
 		"artisan_large_galliraptor_mayonnaise": {
 			"type": "minecraft:item",
 			"content": "society:large_galliraptor_mayonnaise",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
+			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 1,
-				"max": 2
+				"min": 2,
+				"max": 4
 			},
-			"unitWorth": 12288
+			"unitWorth": 3072
 		},
 		"artisan_birt_mayonnaise": {
 			"type": "minecraft:item",
@@ -251,7 +251,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 288
+			"unitWorth": 72
 		},
 		"artisan_wraptor_mayonnaise": {
 			"type": "minecraft:item",
@@ -262,7 +262,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 960
+			"unitWorth": 240
 		},
 		"artisan_springling_mayonnaise": {
 			"type": "minecraft:item",
@@ -273,7 +273,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 3072
+			"unitWorth": 768
 		},
 		"artisan_penguin_mayonnaise": {
 			"type": "minecraft:item",
@@ -284,29 +284,29 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 4608
+			"unitWorth": 1152
 		},
 		"artisan_flamingo_mayonnaise": {
 			"type": "minecraft:item",
 			"content": "society:flamingo_mayonnaise",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
+			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 1,
-				"max": 2
+				"min": 2,
+				"max": 4
 			},
-			"unitWorth": 7200
+			"unitWorth": 1800
 		},
 		"artisan_cruncher_mayonnaise": {
 			"type": "minecraft:item",
 			"content": "society:cruncher_mayonnaise",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
+			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 1,
-				"max": 2
+				"min": 2,
+				"max": 4
 			},
-			"unitWorth": 12288
+			"unitWorth": 3072
 		},
 		"artisan_oak_resin": {
 			"type": "minecraft:item",
@@ -317,7 +317,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 144
+			"unitWorth": 384
 		},
 		"artisan_maple_syrup": {
 			"type": "minecraft:item",
@@ -330,6 +330,17 @@
 			},
 			"unitWorth": 576
 		},
+		"artisan_mystic_syrup": {
+			"type": "minecraft:item",
+			"content": "society:mystic_syrup",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3000
+		},
 		"artisan_pine_tar": {
 			"type": "minecraft:item",
 			"content": "society:pine_tar",
@@ -339,7 +350,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 144
+			"unitWorth": 384
 		},
 		"artisan_sap": {
 			"type": "minecraft:item",
@@ -350,7 +361,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 60
+			"unitWorth": 12
 		},
 		"artisan_rubber": {
 			"type": "minecraft:item",
@@ -362,6 +373,215 @@
 				"max": 4
 			},
 			"unitWorth": 90
+		},
+		"artisan_truffle_oil": {
+			"type": "minecraft:item",
+			"content": "society:truffle_oil",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4608
+		},
+		"artisan_oil": {
+			"type": "minecraft:item",
+			"content": "society:oil",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 336
+		},
+		"artisan_coconut_oil": {
+			"type": "minecraft:item",
+			"content": "society:coconut_oil",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 192
+		},
+		"artisan_piece_of_sheep_cheese": {
+			"type": "minecraft:item",
+			"content": "meadow:piece_of_sheep_cheese",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 36
+		},
+		"artisan_sheep_cheese_block": {
+			"type": "minecraft:item",
+			"content": "meadow:sheep_cheese_block",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 144
+		},
+		"artisan_piece_of_cheese": {
+			"type": "minecraft:item",
+			"content": "meadow:piece_of_cheese",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 72
+		},
+		"artisan_cheese_block": {
+			"type": "minecraft:item",
+			"content": "meadow:cheese_block",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 288
+		},
+		"artisan_piece_of_grain_cheese": {
+			"type": "minecraft:item",
+			"content": "meadow:piece_of_grain_cheese",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 99
+		},
+		"artisan_grain_cheese_block": {
+			"type": "minecraft:item",
+			"content": "meadow:grain_cheese_block",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 396
+		},
+		"artisan_piece_of_buffalo_cheese": {
+			"type": "minecraft:item",
+			"content": "meadow:piece_of_buffalo_cheese",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 288
+		},
+		"artisan_buffalo_cheese_block": {
+			"type": "minecraft:item",
+			"content": "meadow:buffalo_cheese_block",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1152
+		},
+		"artisan_piece_of_goat_cheese": {
+			"type": "minecraft:item",
+			"content": "meadow:piece_of_goat_cheese",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 432
+		},
+		"artisan_goat_cheese_block": {
+			"type": "minecraft:item",
+			"content": "meadow:goat_cheese_block",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1728
+		},
+		"artisan_piece_of_warped_cheese": {
+			"type": "minecraft:item",
+			"content": "meadow:piece_of_warped_cheese",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 432
+		},
+		"artisan_warped_cheese_block": {
+			"type": "minecraft:item",
+			"content": "meadow:warped_cheese_block",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 1728
+		},
+		"artisan_piece_of_amethyst_cheese": {
+			"type": "minecraft:item",
+			"content": "meadow:piece_of_amethyst_cheese",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 648
+		},
+		"artisan_amethyst_cheese_block": {
+			"type": "minecraft:item",
+			"content": "meadow:amethyst_cheese_block",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 2592
+		},
+		"artisan_tribull_cheese_wedge": {
+			"type": "minecraft:item",
+			"content": "farmlife:tribull_cheese_wedge",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 864
+		},
+		"artisan_tribull_cheese_wheel": {
+			"type": "minecraft:item",
+			"content": "farmlife:tribull_cheese_wheel",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 3456
 		},
 		"artisan_forks_of_blue": {
 			"type": "minecraft:item",
@@ -802,6 +1022,50 @@
 				"max": 4
 			},
 			"unitWorth": 1872
+		},
+		"artisan_violet_moon": {
+			"type": "minecraft:item",
+			"content": "society:violet_moon",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 4464
+		},
+		"artisan_laputa_franc": {
+			"type": "minecraft:item",
+			"content": "society:laputa_franc",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 10944
+		},
+		"artisan_sparkling_le_roy": {
+			"type": "minecraft:item",
+			"content": "society:sparkling_le_roy",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 8616
+		},
+		"artisan_mana_king": {
+			"type": "minecraft:item",
+			"content": "society:mana_king",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 9888
 		},
 		"artisan_beer_nettle": {
 			"type": "minecraft:item",

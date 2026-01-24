@@ -470,8 +470,8 @@ StartupEvents.registry("item", (e) => {
 
           if (Math.random() < 0.4) {
             player.attack(10);
+            player.give("society:perfect_cherry");
           }
-          player.give("society:perfect_cherry");
         }
       });
     });
