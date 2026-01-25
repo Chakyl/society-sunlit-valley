@@ -50,6 +50,13 @@
   "lookup_history": [
     {
       "type": "item",
+      "id": "society:sparkpod",
+      "amount": 47
+    },
+    "item:society:sparkpod_seed",
+    "item:society:earth_crystal",
+    {
+      "type": "item",
       "id": "quark:dragon_scale",
       "amount": 64
     },
@@ -164,7 +171,6 @@
     "item:society:the_red_and_the_black",
     "item:society:recycled_core",
     "item:society:mystic_syrup",
-    "item:society:sparkpod",
     "item:domesticationinnovation:pet_bed_white",
     "item:society:gray_anatomy",
     "item:society:dried_tubabacco_leaf",
@@ -357,7 +363,6 @@
     "item:minecraft:dried_ghast",
     "item:minecraft:wheat_seeds",
     "item:minecraft:firefly_bush",
-    "item:society:sparkpod_seed",
     "item:society:sparkpod_crate",
     {
       "type": "fluid",
@@ -391,9 +396,9 @@
     [
       "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
+      "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
       "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1546,8 +1551,7 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}"
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}"
   ],
   "craft_history": [
     "meadow:fire_log",
