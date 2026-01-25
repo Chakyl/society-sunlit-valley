@@ -32,6 +32,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
     }
   } else {
     errorText = Text.translatable("society.skull_cavern.invalid_dimension").getString();
+    // 4.0 TODO: fix on servers
   }
   if (errorText) {
     global.renderUiText(
