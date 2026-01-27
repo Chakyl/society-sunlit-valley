@@ -79,18 +79,14 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("10% chance to refund sparkstone of attached machine"));
-      item.tooltip(Text.aqua("Requires Botania mana from spreader"));
-      item.tooltip(
-        Text.green(
-          `Compatible Machines: Artisan Hopper, Mini Artisan Hopper, Auto-Grabber, Fish Pond Basket`
-        )
-      );
+      item.tooltip(Text.translatable("block.society.sparkstone_recycler.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.need_mana").aqua());
+      item.tooltip(Text.translatable("block.society.sparkstone_recycler.description.compatible").green());
       item.modelJson({
-        parent: "society:block/sparkstone_recycler",
+        parent: "society:block/kubejs/sparkstone_recycler",
       });
     })
-    .model("society:block/sparkstone_recycler")
+    .model("society:block/kubejs/sparkstone_recycler")
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(200, 0, (entity) => global.sparkstoneRecyclerTick(entity)),
         blockInfo.attachCapability(
@@ -113,54 +109,54 @@ StartupEvents.registry("block", (event) => {
     }).blockstateJson = {
     variants: {
       "facing=down,powered=false": {
-        model: "society:block/sparkstone_recycler",
+        model: "society:block/kubejs/sparkstone_recycler",
         x: 180,
       },
       "facing=down,powered=true": {
-        model: "society:block/sparkstone_recycler_on",
+        model: "society:block/kubejs/sparkstone_recycler_on",
         x: 180,
       },
       "facing=east,powered=false": {
-        model: "society:block/sparkstone_recycler",
+        model: "society:block/kubejs/sparkstone_recycler",
         x: 90,
         y: 90,
       },
       "facing=east,powered=true": {
-        model: "society:block/sparkstone_recycler_on",
+        model: "society:block/kubejs/sparkstone_recycler_on",
         x: 90,
         y: 90,
       },
       "facing=north,powered=false": {
-        model: "society:block/sparkstone_recycler",
+        model: "society:block/kubejs/sparkstone_recycler",
         x: 90,
       },
       "facing=north,powered=true": {
-        model: "society:block/sparkstone_recycler_on",
+        model: "society:block/kubejs/sparkstone_recycler_on",
         x: 90,
       },
       "facing=south,powered=false": {
-        model: "society:block/sparkstone_recycler",
+        model: "society:block/kubejs/sparkstone_recycler",
         x: 90,
         y: 180,
       },
       "facing=south,powered=true": {
-        model: "society:block/sparkstone_recycler_on",
+        model: "society:block/kubejs/sparkstone_recycler_on",
         x: 90,
         y: 180,
       },
       "facing=up,powered=false": {
-        model: "society:block/sparkstone_recycler",
+        model: "society:block/kubejs/sparkstone_recycler",
       },
       "facing=up,powered=true": {
-        model: "society:block/sparkstone_recycler_on",
+        model: "society:block/kubejs/sparkstone_recycler_on",
       },
       "facing=west,powered=false": {
-        model: "society:block/sparkstone_recycler",
+        model: "society:block/kubejs/sparkstone_recycler",
         x: 90,
         y: 270,
       },
       "facing=west,powered=true": {
-        model: "society:block/sparkstone_recycler_on",
+        model: "society:block/kubejs/sparkstone_recycler_on",
         x: 90,
         y: 270,
       },

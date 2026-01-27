@@ -1,0 +1,24 @@
+{
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "item": "botania:rune_winter"
+    },
+    {
+      "item": "botania:rune_fire"
+    },
+    {
+      "item": "botania:rune_mana"
+    }
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_gluttony"
+  }
+}

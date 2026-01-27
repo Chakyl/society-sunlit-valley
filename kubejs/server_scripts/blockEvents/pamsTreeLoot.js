@@ -24,7 +24,7 @@ BlockEvents.rightClicked(
   ],
   (e) => {
     const { block, player, server } = e;
-    const fruitName = `${block.id.toString().split(":")[1]}`;
+    const fruitName = `${block.id.toString().path}`;
     if (
       player.isHoldingInAnyHand("minecraft:bone_meal") ||
       player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||

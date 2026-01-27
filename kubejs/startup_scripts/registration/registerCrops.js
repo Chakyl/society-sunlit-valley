@@ -20,14 +20,6 @@ global.updateBerryBush = (level, block) => {
 };
 
 StartupEvents.registry("block", (e) => {
-  const surviveCheck = (level, pos) => {
-    const FARMLAND = Java.loadClass("net.minecraft.world.level.block.FarmBlock");
-    let blockState = level.getBlockState(pos.below());
-    let mcBlock = blockState.block;
-    if (mcBlock instanceof FARMLAND) {
-      return true;
-    } else return false;
-  };
   // TODO: 4.0
   // e.create("society:berry_bush_crop", "crop")
   //   .age(3, (builder) => {
@@ -37,9 +29,10 @@ StartupEvents.registry("block", (e) => {
   //       .shape(2, 0, 0, 0, 16, 16, 16)
   //       .shape(3, 0, 0, 0, 16, 16, 16);
   //   })
-  //   .survive((state, level, pos) => surviveCheck(level, pos))
+  //   .survive((state, level, pos) => global.surviveCheck(level, pos))
   //   .dropSeed(false)
   //   .tagBlock("minecraft:mineable/hoe")
+  //   .tagBlock("minecraft:crops")
   //   .property(integerProperty.create("type", 0, 4))
   //   .defaultState((state) => {
   //     state.set(integerProperty.create("type", 0, 4), 0);
@@ -53,19 +46,19 @@ StartupEvents.registry("block", (e) => {
   //   multipart: [
   //     {
   //       when: { age: 0 },
-  //       apply: { model: "society:block/berry_bush/start" },
+  //       apply: { model: "society:block/kubejs/berry_bush/start" },
   //     },
   //     {
   //       when: { age: 1 },
-  //       apply: { model: "society:block/berry_bush/middle" },
+  //       apply: { model: "society:block/kubejs/berry_bush/middle" },
   //     },
   //     {
   //       when: { age: 2 },
-  //       apply: { model: "society:block/berry_bush/base" },
+  //       apply: { model: "society:block/kubejs/berry_bush/base" },
   //     },
   //     {
   //       when: { age: 3 },
-  //       apply: { model: "society:block/berry_bush/base" },
+  //       apply: { model: "society:block/kubejs/berry_bush/base" },
   //     },
   //   ],
   // };
@@ -86,10 +79,11 @@ StartupEvents.registry("block", (e) => {
         .shape(9, 0, 0, 0, 16, 16, 16)
         .shape(10, 0, 0, 0, 16, 24, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:ancient_fruit", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/ancient_seed");
@@ -97,47 +91,47 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage2" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage3" },
       },
       {
         when: { age: 7 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage3" },
       },
       {
         when: { age: 8 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage4" },
       },
       {
         when: { age: 9 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage4" },
       },
       {
         when: { age: 10 },
-        apply: { model: "society:block/crops/ancient_fruit_crop_stage5" },
+        apply: { model: "society:block/kubejs/crops/ancient_fruit_crop_stage5" },
       },
     ],
   };
@@ -156,10 +150,11 @@ StartupEvents.registry("block", (e) => {
         .shape(8, 0, 0, 0, 16, 16, 16)
         .shape(9, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:tubabacco_leaf", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/tubabacco_seed");
@@ -167,43 +162,43 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage0" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage0" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage0" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage0" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage0" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage1" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage1" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage1" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage1" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage2" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage2" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage2" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage2" },
       },
       {
         when: { age: 7 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage3" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage3" },
       },
       {
         when: { age: 8 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage3" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage3" },
       },
       {
         when: { age: 9 },
-        apply: { model: "society:block/crops/tubabacco_plant_stage4" },
+        apply: { model: "society:block/kubejs/crops/tubabacco_plant_stage4" },
       },
     ],
   };
@@ -219,10 +214,11 @@ StartupEvents.registry("block", (e) => {
         .shape(4, 0, 0, 0, 16, 10, 16)
         .shape(5, 0, 0, 0, 16, 12, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("farm_and_charm:strawberry", 2)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("farm_and_charm:item/strawberry_seeds");
@@ -267,10 +263,11 @@ StartupEvents.registry("block", (e) => {
         .shape(5, 0, 0, 0, 16, 16, 16)
         .shape(6, 0, 0, 0, 16, 22, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("brewery:hops", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("brewery:item/hops_seeds");
@@ -278,31 +275,31 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/hops_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/hops_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/hops_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/hops_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/hops_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/hops_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage3" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/hops_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/hops_crop_stage4" },
       },
     ],
   };
@@ -320,10 +317,11 @@ StartupEvents.registry("block", (e) => {
         .shape(6, 0, 0, 0, 16, 16, 16)
         .shape(7, 0, 0, 0, 16, 20, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:blueberry", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/blueberry_seeds");
@@ -331,39 +329,85 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/blueberry_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/blueberry_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/blueberry_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/blueberry_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/blueberry_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/blueberry_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage3" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/blueberry_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage4" },
       },
       {
         when: { age: 7 },
-        apply: { model: "society:block/crops/blueberry_crop_stage5" },
+        apply: { model: "society:block/kubejs/crops/blueberry_crop_stage5" },
       },
     ],
   };
-
+  e
+    .create("society:cranberry", "crop")
+    .age(5, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 6, 16)
+        .shape(3, 0, 0, 0, 16, 12, 16)
+        .shape(4, 0, 0, 0, 16, 12, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16)
+    })
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("society:cranberry", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
+    .randomTick((tick) => {})
+    .item((seedItem) => {
+      seedItem.texture("society:item/cranberry_seeds");
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { age: 0 },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage0" },
+      },
+      {
+        when: { age: 1 },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage1" },
+      },
+      {
+        when: { age: 2 },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage2" },
+      },
+      {
+        when: { age: 3 },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage3" },
+      },
+      {
+        when: { age: 4 },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage4" },
+      },
+      {
+        when: { age: 5 },
+        apply: { model: "society:block/kubejs/crops/cranberry_crop_stage5" },
+      },
+    ],
+  };
   e
     .create("society:eggplant", "crop")
     .age(6, (builder) => {
@@ -376,10 +420,11 @@ StartupEvents.registry("block", (e) => {
         .shape(5, 0, 0, 0, 16, 13, 16)
         .shape(6, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:eggplant", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/eggplant_seeds");
@@ -387,31 +432,31 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { age: 0 },
-        apply: { model: "society:block/crops/eggplant_crop_stage0" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage0" },
       },
       {
         when: { age: 1 },
-        apply: { model: "society:block/crops/eggplant_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage1" },
       },
       {
         when: { age: 2 },
-        apply: { model: "society:block/crops/eggplant_crop_stage1" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage1" },
       },
       {
         when: { age: 3 },
-        apply: { model: "society:block/crops/eggplant_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage2" },
       },
       {
         when: { age: 4 },
-        apply: { model: "society:block/crops/eggplant_crop_stage2" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage2" },
       },
       {
         when: { age: 5 },
-        apply: { model: "society:block/crops/eggplant_crop_stage3" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage3" },
       },
       {
         when: { age: 6 },
-        apply: { model: "society:block/crops/eggplant_crop_stage4" },
+        apply: { model: "society:block/kubejs/crops/eggplant_crop_stage4" },
       },
     ],
   };
@@ -429,10 +474,11 @@ StartupEvents.registry("block", (e) => {
         .shape(6, 0, 0, 0, 16, 16, 16)
         .shape(7, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("minecraft:carrot", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/carrot_seed");
@@ -478,10 +524,11 @@ StartupEvents.registry("block", (e) => {
         .shape(6, 0, 0, 0, 16, 16, 16)
         .shape(7, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("minecraft:potato", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/potato_seed");
@@ -524,10 +571,11 @@ StartupEvents.registry("block", (e) => {
         .shape(3, 0, 0, 0, 16, 13, 16)
         .shape(4, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("farm_and_charm:onion", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/onion_seed");
@@ -585,10 +633,11 @@ StartupEvents.registry("block", (e) => {
         .shape(4, 0, 0, 0, 16, 13, 16)
         .shape(5, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("veggiesdelight:sweet_potato", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/sweet_potato_seed");
@@ -628,10 +677,11 @@ StartupEvents.registry("block", (e) => {
         .shape(6, 0, 0, 0, 16, 16, 16)
         .shape(7, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => surviveCheck(level, pos))
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
     .dropSeed(false)
     .crop("vintagedelight:peanut", 1)
     .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
     .item((seedItem) => {
       seedItem.texture("society:item/peanut_seed");
@@ -676,7 +726,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .item((item) => {
       item.modelJson({
-        parent: "society:block/berry_bush/base",
+        parent: "society:block/kubejs/berry_bush/base",
       });
     })
     .defaultState((state) => {
@@ -700,23 +750,86 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { type: "0" },
-        apply: { model: "society:block/berry_bush/base" },
+        apply: { model: "society:block/kubejs/berry_bush/base" },
       },
       {
         when: { type: "1" },
-        apply: { model: "society:block/berry_bush/salmonberry" },
+        apply: { model: "society:block/kubejs/berry_bush/salmonberry" },
       },
       {
         when: { type: "2" },
-        apply: { model: "society:block/berry_bush/boysenberry" },
+        apply: { model: "society:block/kubejs/berry_bush/boysenberry" },
       },
       {
         when: { type: "3" },
-        apply: { model: "society:block/berry_bush/cranberry" },
+        apply: { model: "society:block/kubejs/berry_bush/cranberry" },
       },
       {
         when: { type: "4" },
-        apply: { model: "society:block/berry_bush/crystalberry" },
+        apply: { model: "society:block/kubejs/berry_bush/crystalberry" },
+      },
+    ],
+  };
+
+  e
+    .create("society:sparkpod", "crop")
+    .age(8, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 3, 16)
+        .shape(1, 0, 0, 0, 16, 3, 16)
+        .shape(2, 0, 0, 0, 16, 5, 16)
+        .shape(3, 0, 0, 0, 16, 5, 16)
+        .shape(4, 0, 0, 0, 16, 8, 16)
+        .shape(5, 0, 0, 0, 16, 8, 16)
+        .shape(6, 0, 0, 0, 16, 11, 16)
+        .shape(7, 0, 0, 0, 16, 11, 16)
+        .shape(8, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => global.surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("society:sparkpod", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .tagBlock("minecraft:crops")
+    .randomTick((tick) => {})
+    .item((seedItem) => {
+      seedItem.texture("society:item/sparkpod_spores");
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { age: 0 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage0" },
+      },
+      {
+        when: { age: 1 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage0" },
+      },
+      {
+        when: { age: 2 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage1" },
+      },
+      {
+        when: { age: 3 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage1" },
+      },
+      {
+        when: { age: 4 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage2" },
+      },
+      {
+        when: { age: 5 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage2" },
+      },
+      {
+        when: { age: 6 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage3" },
+      },
+      {
+        when: { age: 7 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage3" },
+      },
+      {
+        when: { age: 8 },
+        apply: { model: "society:block/kubejs/crops/sparkpod_crop_stage4" },
       },
     ],
   };

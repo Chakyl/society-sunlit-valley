@@ -26,13 +26,15 @@ const getDepthCalc = (facing, initialPos, comparePos) => {
 };
 const scanArea = (level, block) => {
   let scannedBlock;
-  for (let pos of BlockPos.betweenClosed(new BlockPos(block.x - 1, block.y, block.z - 1), [
-    block.x + 1,
-    block.y + 2,
-    block.z + 1,
-  ])) {
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(block.x - 1, block.y, block.z - 1),
+    [block.x + 1, block.y + 2, block.z + 1]
+  )) {
     scannedBlock = level.getBlock(pos);
-    if (scannedBlock.id !== "minecraft:air" && scannedBlock.id !== "society:ribbit_hut") {
+    if (
+      scannedBlock.id !== "minecraft:air" &&
+      scannedBlock.id !== "society:ribbit_hut"
+    ) {
       return false;
     }
   }
@@ -40,11 +42,10 @@ const scanArea = (level, block) => {
 };
 const setRibbitHutBlocks = (level, block, player, server) => {
   let facing = block.getProperties().get("facing");
-  for (let pos of BlockPos.betweenClosed(new BlockPos(block.x - 1, block.y, block.z - 1), [
-    block.x + 1,
-    block.y + 2,
-    block.z + 1,
-  ])) {
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(block.x - 1, block.y, block.z - 1),
+    [block.x + 1, block.y + 2, block.z + 1]
+  )) {
     level.getBlock(pos).set("society:ribbit_hut_block", {
       layer: (pos.y - block.y).toString(),
       side: getSideCalc(facing, block, pos).toString(),
@@ -68,7 +69,10 @@ BlockEvents.placed("society:ribbit_hut", (e) => {
   let space = scanArea(level, block);
 
   if (!space) {
-    player.tell(Text.red("Not enough room to place ribbit hut!"));
+    player.tell(
+      Text.translatable("block.society.ribbit_hut.not_enough_room").red()
+    );
+    player.inventoryMenu.broadcastFullState();
     e.cancel();
   } else {
     setRibbitHutBlocks(level, block, player, server);
@@ -76,17 +80,20 @@ BlockEvents.placed("society:ribbit_hut", (e) => {
 });
 
 BlockEvents.leftClicked(["society:ribbit_hut_block"], (e) => {
-  e.player.tell(Text.red("Break the door to demolish the Ribbit Hut"));
+  e.player.tell(Text.translatable("block.society.ribbit_hut.break").red());
 });
 
 BlockEvents.broken(["society:ribbit_hut"], (e) => {
   const { level, player, block } = e;
-  let centerBlock = global.getOpposite(block.getProperties().get("facing"), block.getPos());
+  let centerBlock = global.getOpposite(
+    block.getProperties().get("facing"),
+    block.getPos()
+  );
   for (let pos of BlockPos.betweenClosed(
     new BlockPos(centerBlock.x - 1, centerBlock.y, centerBlock.z - 1),
     [centerBlock.x + 1, centerBlock.y + 2, centerBlock.z + 1]
   )) {
     level.getBlock(pos).set("minecraft:air");
   }
-  player.give("society:ribbit_hut")
+  player.give("society:ribbit_hut");
 });

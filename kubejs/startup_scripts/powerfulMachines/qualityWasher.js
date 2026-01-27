@@ -42,14 +42,14 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Removes Quality from items and inserts them into the block below"));
-      item.tooltip(Text.red("Quality can not be restored!"));
-      item.tooltip(Text.green("Automatable using hoppers"));
+      item.tooltip(Text.translatable("block.society.quality_washer.description").gray());
+      item.tooltip(Text.translatable("block.society.quality_washer.description.warn").red());
+      item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
       item.modelJson({
-        parent: "society:block/quality_washer",
+        parent: "society:block/kubejs/quality_washer",
       });
     })
-    .model("society:block/quality_washer")
+    .model("society:block/kubejs/quality_washer")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(20, 0, (entity) => {

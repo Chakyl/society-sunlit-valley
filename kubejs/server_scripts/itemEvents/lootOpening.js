@@ -10,11 +10,13 @@ ItemEvents.rightClicked("society:furniture_box", (e) => {
 
   if (!player.isCreative()) item.count--;
   let reward = player.level.createEntity("minecraft:item");
+  const rewardCount = player.stages.has("the_red_and_the_black") ? 2 : 1;
   reward.x = player.x;
   reward.y = player.y;
   reward.z = player.z;
-
-  reward.item = furniture[Math.floor(Math.random() * furniture.length)];
+  reward.item = Item.of(
+    `${rewardCount}x ${furniture[Math.floor(Math.random() * furniture.length)]}`
+  );
   reward.spawn();
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
@@ -22,7 +24,14 @@ ItemEvents.rightClicked("society:furniture_box", (e) => {
   global.addItemCooldown(player, "society:furniture_box", 2);
 });
 
-const fantasyBoxes = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
+const fantasyBoxes = [
+  "nordic",
+  "dunmer",
+  "venthyr",
+  "bone",
+  "royal",
+  "necrolord",
+];
 fantasyBoxes.forEach((theme) => {
   ItemEvents.rightClicked(`society:fantasy_box_${theme}`, (e) => {
     const { server, player, item } = e;
@@ -30,14 +39,23 @@ fantasyBoxes.forEach((theme) => {
       `playsound minecraft:ui.stonecutter.take_result block @a ${player.x} ${player.y} ${player.z}`
     );
 
-    let furniture = Ingredient.of(`#society:${theme}_fantasy_furniture`).itemIds;
-    furniture = furniture.concat(Ingredient.of(`#society:decorations_fantasy_furniture`).itemIds);
+    let furniture = Ingredient.of(
+      `#society:${theme}_fantasy_furniture`
+    ).itemIds;
+    furniture = furniture.concat(
+      Ingredient.of(`#society:decorations_fantasy_furniture`).itemIds
+    );
     if (!player.isCreative()) item.count--;
     let reward = player.level.createEntity("minecraft:item");
+    const rewardCount = player.stages.has("the_red_and_the_black") ? 2 : 1;
     reward.x = player.x;
     reward.y = player.y;
     reward.z = player.z;
-    reward.item = furniture[Math.floor(Math.random() * furniture.length)];
+    reward.item = Item.of(
+      `${rewardCount}x ${
+        furniture[Math.floor(Math.random() * furniture.length)]
+      }`
+    );
     const itemId = reward.item.id;
     if (itemId.includes("wool") || itemId.includes("carpet"))
       reward.item = Item.of(`16x ${itemId}`);
@@ -60,12 +78,13 @@ ItemEvents.rightClicked("society:bouquet_bag", (e) => {
 
   if (!player.isCreative()) item.count--;
   let reward = player.level.createEntity("minecraft:item");
+  const rewardCount = player.stages.has("the_red_and_the_black") ? 5 : 4;
   reward.x = player.x;
   reward.y = player.y;
   reward.z = player.z;
-
-  reward.item = Item.of(`4x ${furniture[Math.floor(Math.random() * furniture.length)]}`);
-
+  reward.item = Item.of(
+    `${rewardCount}x ${furniture[Math.floor(Math.random() * furniture.length)]}`
+  );
   reward.spawn();
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
@@ -83,12 +102,14 @@ ItemEvents.rightClicked("society:scavenged_food_bag", (e) => {
 
   if (!player.isCreative()) item.count--;
   let reward = player.level.createEntity("minecraft:item");
+  const rewardCount = player.stages.has("the_red_and_the_black") ? 2 : 1;
   reward.x = player.x;
   reward.y = player.y;
   reward.z = player.z;
 
-  reward.item = Item.of(`1x ${furniture[Math.floor(Math.random() * furniture.length)]}`);
-
+  reward.item = Item.of(
+    `${rewardCount}x ${furniture[Math.floor(Math.random() * furniture.length)]}`
+  );
   reward.spawn();
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`

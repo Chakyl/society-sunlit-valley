@@ -9,9 +9,6 @@ global.husbandryAnimals = [
   "meadow:wooly_cow",
   "meadow:wooly_sheep",
   "meadow:water_buffalo",
-  "minecraft:chicken",
-  "untitledduckmod:duck",
-  "untitledduckmod:goose",
   "autumnity:turkey",
   "autumnity:snail",
   "minecraft:mooshroom",
@@ -43,6 +40,80 @@ global.husbandryAnimals = [
   "minecraft:glow_squid",
   "crittersandcompanions:red_panda",
   "windswept:frostbiter",
+  "minecraft:bat",
+  "crittersandcompanions:shima_enaga",
+  "minecraft:turtle",
+];
+
+global.milkableAnimals = [
+  "minecraft:cow",
+  "minecraft:goat",
+  "minecraft:sheep",
+  "meadow:wooly_sheep",
+  "meadow:wooly_cow",
+  "meadow:water_buffalo",
+  "minecraft:mooshroom",
+  "buzzier_bees:moobloom",
+  "species:mammutilation",
+  "farmlife:domestic_tribull",
+  "wildernature:minisheep",
+  "wildernature:bison",
+  "minecraft:squid",
+  "minecraft:glow_squid",
+  "windswept:frostbiter",
+];
+
+global.coopMasterAnimals = [
+  "minecraft:chicken",
+  "untitledduckmod:duck",
+  "untitledduckmod:goose",
+  "etcetera:chapple",
+  "autumnity:turkey",
+  "species:wraptor",
+  "wildernature:flamingo",
+  "wildernature:penguin",
+  "farmlife:galliraptor",
+  "crittersandcompanions:shima_enaga",
+];
+
+global.tierTwoHusbandryAnimals = [
+  "minecraft:pig",
+  "meadow:wooly_cow",
+  "wildernature:bison",
+  "wildernature:raccoon",
+  "crittersandcompanions:red_panda",
+  "wildernature:minisheep",
+  "minecraft:panda",
+  "minecraft:mooshroom",
+  "meadow:water_buffalo",
+  "untitledduckmod:goose",
+  "minecraft:rabbit",
+  "wildernature:squirrel",
+  "autumnity:turkey",
+  "minecraft:turtle",
+];
+
+global.tierThreeHusbandryAnimals = [
+  "minecraft:goat",
+  "buzzier_bees:moobloom",
+  "species:mammutilation",
+  "species:goober",
+  "farmlife:domestic_tribull",
+  "windswept:frostbiter",
+  "species:wraptor",
+  "etcetera:chapple",
+  "wildernature:flamingo",
+  "wildernature:penguin",
+  "farmlife:galliraptor",
+  "crittersandcompanions:shima_enaga",
+];
+
+global.coldMobs = [
+  "species:mammutilation",
+  "windswept:frostbiter",
+  "wildernature:penguin",
+  "snowpig:snow_pig",
+  "snuffles:snuffle",
 ];
 
 global.animalMessageSettings = `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-80}`;

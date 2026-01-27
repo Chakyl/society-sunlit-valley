@@ -1,0 +1,70 @@
+{
+  "description": "This is an example dialog.",
+  "entries": [
+    {
+      "background_image": {
+        "path": "example_background.png",
+        "renderOption": "FILL"
+      },
+      "display_items": [
+        {
+          "count": 1,
+          "item": "block.minecraft.acacia_fence",
+          "nbt": ""
+        }
+      ],
+      "id": "1",
+      "next": "2",
+      "portraits": [
+        {
+          "animationType": "NONE",
+          "brightness": 1.0,
+          "path": "leaf.png",
+          "position": "LEFT"
+        }
+      ],
+      "speaker": {
+        "text": "NPC"
+      },
+      "text": {
+        "bold": true,
+        "color": "#FFFFC800",
+        "text": "Hello, how are you?"
+      }
+    },
+    {
+      "id": "2",
+      "next": "3",
+      "options": [
+        {
+          "command": ["weather clear"],
+          "target": "end",
+          "text": {
+            "text": "Clear"
+          }
+        },
+        {
+          "target": "end",
+          "text": {
+            "text": "Rain"
+          }
+        }
+      ],
+      "speaker": {
+        "text": "Player"
+      },
+      "text": {
+        "text": "I'm fine, thank you!"
+      }
+    },
+    {
+      "id": "end",
+      "speaker": {
+        "text": "NPC"
+      }
+    }
+  ],
+  "id": "example_dialog",
+  "start": "1",
+  "title": "Example Dialog"
+}

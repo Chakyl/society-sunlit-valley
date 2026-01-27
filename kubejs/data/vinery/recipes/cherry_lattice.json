@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "vinery_lattices",
+    "pattern": [
+        "LLL",
+        " B ",
+        "/ /"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "L": {
+            "item": "society:treated_log"
+        },
+        "B": {
+            "item": "minecraft:cherry_planks"
+        }
+    },
+    "result": {
+        "item": "vinery:cherry_lattice",
+        "count": 4
+    }
+}

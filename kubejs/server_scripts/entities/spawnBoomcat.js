@@ -9,7 +9,7 @@ EntityEvents.death((e) => {
     cat.setPosition(entity.x, entity.y + 2, entity.z);
     cat.spawn();
     server.runCommandSilent(
-      `playsound supplementaries:block.present.open  block @a ${entity.x} ${entity.y} ${entity.z}`
+      `playsound supplementaries:block.present.open block @a ${entity.x} ${entity.y} ${entity.z}`
     );
   }
 });

@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/root",
+  "criteria": {
+    "token_of_unity": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:token_of_unity"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_token_of_unity.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:token_of_unity"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_token_of_unity.title"
+    }
+  },
+  "requirements": [["token_of_unity"]],
+  "sends_telemetry_event": true
+}

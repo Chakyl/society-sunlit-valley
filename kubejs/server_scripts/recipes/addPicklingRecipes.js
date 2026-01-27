@@ -15,7 +15,7 @@ ServerEvents.recipes((e) => {
       ],
       output: {
         count: 5,
-        item: `society:pickled_${pickle.item.split(":")[1]}`,
+        item: `society:pickled_${pickle.item.path}`,
       },
     });
   });

@@ -1,0 +1,48 @@
+{
+	"id": "blacksmith_intro",
+	"title": "blacksmith introduction",
+	"description": "dialog.npc.blacksmith.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.intro.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.intro.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p blacksmith"
+			]
+		}
+	]
+}

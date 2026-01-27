@@ -1,0 +1,17 @@
+{
+  "name": "Turtle",
+  "category": "patchouli:animals",
+  "icon": "minecraft:turtle_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not Sold$(li)Egg: Turtle Egg"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:turtle",
+      "scale": 0.8,
+      "text": "Part of the Turtle club"
+    }
+  ]
+}

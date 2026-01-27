@@ -1,7 +1,7 @@
 console.info("[SOCIETY] gnome.js loaded");
 
 const getGnomeState = (name, type) => {
-  const path = `society:block/gnome/${name}`;
+  const path = `society:block/kubejs/gnome/${name}`;
   let cardianal = [
     {
       when: { type: type, facing: "north" },
@@ -28,10 +28,9 @@ StartupEvents.registry("block", (e) => {
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Right click to toggle poses"));
-      item.tooltip(Text.gray("Right click with lantern to create a light source"));
+      item.tooltip(Text.translatable("block.society.gnome.description").gray());
       item.modelJson({
-        parent: "society:block/gnome/base",
+        parent: "society:block/kubejs/gnome/base",
       });
     })
     .defaultState((state) => {
@@ -70,9 +69,9 @@ StartupEvents.registry("block", (e) => {
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Right click a Gnome with a lantern to create"));
+      item.tooltip(Text.translatable("block.society.lantern_gnome.description").gray());
       item.modelJson({
-        parent: "society:block/gnome/lantern",
+        parent: "society:block/kubejs/gnome/lantern",
       });
     })
     .lightLevel(0.8)
@@ -92,19 +91,19 @@ StartupEvents.registry("block", (e) => {
     multipart: [
       {
         when: { facing: "north" },
-        apply: { model: "society:block/gnome/lantern", y: 0, uvlock: false },
+        apply: { model: "society:block/kubejs/gnome/lantern", y: 0, uvlock: false },
       },
       {
         when: { facing: "east" },
-        apply: { model: "society:block/gnome/lantern", y: 90, uvlock: false },
+        apply: { model: "society:block/kubejs/gnome/lantern", y: 90, uvlock: false },
       },
       {
         when: { facing: "south" },
-        apply: { model: "society:block/gnome/lantern", y: 180, uvlock: false },
+        apply: { model: "society:block/kubejs/gnome/lantern", y: 180, uvlock: false },
       },
       {
         when: { facing: "west" },
-        apply: { model: "society:block/gnome/lantern", y: -90, uvlock: false },
+        apply: { model: "society:block/kubejs/gnome/lantern", y: -90, uvlock: false },
       },
     ],
   };

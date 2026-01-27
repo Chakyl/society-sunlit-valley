@@ -5,15 +5,9 @@
     "amount": 12
   },
   "ingredients": [
-    {
-      "item": "pamhc2trees:plumitem"
-    },
-    {
-      "item": "pamhc2trees:plumitem"
-    },
-    {
-      "item": "pamhc2trees:plumitem"
-    }
+    [{ "item": "pamhc2trees:plumitem" }, { "item": "society:mossberry" }],
+    [{ "item": "pamhc2trees:plumitem" }, { "item": "society:mossberry" }],
+    [{ "item": "pamhc2trees:plumitem" }, { "item": "society:mossberry" }]
   ],
   "wine_bottle": {
     "required": true

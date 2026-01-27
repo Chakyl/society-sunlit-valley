@@ -7,7 +7,12 @@ const resetSkills = (tree, server, player, amount) => {
   server.runCommandSilent(`puffish_skills category erase ${player.username} society:${tree}`);
   server.runCommandSilent(`puffish_skills points set ${player.username} society:${tree} 0`);
   global.giveExperience(server, player, tree, amount);
-  player.tell(Text.gray(`Reset all your ${tree} skills!`));
+  player.tell(
+    Text.translatable(
+      "society.crystal_of_regret.success",
+      global.translatableWithFallback(`society_skills.${tree}.category.title`, `${tree}`)
+    ).gray()
+  );
 };
 
 ItemEvents.rightClicked("society:crystal_of_regret_farming", (e) => {
@@ -16,7 +21,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_farming", (e) => {
     resetSkills("farming", server, player, 15500);
     item.count--;
   } else {
-    player.tell(Text.red(`You aren't high enough level to use this!`));
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -26,7 +31,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_husbandry", (e) => {
     resetSkills("husbandry", server, player, 2500);
     item.count--;
   } else {
-    player.tell(Text.red(`You aren't high enough level to use this!`));
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -36,7 +41,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_mining", (e) => {
     resetSkills("mining", server, player, 8750);
     item.count--;
   } else {
-    player.tell(Text.red(`You aren't high enough level to use this!`));
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -46,7 +51,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_fishing", (e) => {
     resetSkills("fishing", server, player, 14500);
     item.count--;
   } else {
-    player.tell(Text.red(`You aren't high enough level to use this!`));
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });
 
@@ -56,6 +61,6 @@ ItemEvents.rightClicked("society:crystal_of_regret_adventuring", (e) => {
     resetSkills("adventuring", server, player, 8750);
     item.count--;
   } else {
-    player.tell(Text.red(`You aren't high enough level to use this!`));
+    player.tell(Text.translatable("society.crystal_of_regret.fail").red());
   }
 });

@@ -16,4 +16,5 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.randomChance(0.05).addLoot("society:prismatic_shard");
     });
+
 });

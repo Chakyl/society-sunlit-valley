@@ -17,7 +17,7 @@ BlockEvents.rightClicked((e) => {
     item.nbt = null;
   } else if (playerDrunk) {
     player.tell(
-      Text.gray("I've had too much to drink, I should call a cab...")
+      Text.translatable("item.society.car_key.use_on_drunk").gray()
     );
   }
 });

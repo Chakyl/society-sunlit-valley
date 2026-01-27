@@ -2,7 +2,7 @@ JEIAddedEvents.registerCategories((e) => {
   const guiHelper = e.data.jeiHelpers.guiHelper;
   e.custom("vinery:manual_juicing", (category) => {
     category
-      .title("Grapevine Pot Juicing")
+      .title(Text.translatable("jei.society.category.manual_juicing"))
       .background(guiHelper.createBlankDrawable(177, 60))
       .icon(guiHelper.createDrawableItemStack("vinery:grapevine_pot"))
       .isRecipeHandled(() => true)
@@ -25,7 +25,7 @@ JEIAddedEvents.registerCategories((e) => {
   });
   e.custom("society:enriched_bone_mealing", (category) => {
     category
-      .title("Enriched Bone Mealing")
+      .title(Text.translatable("jei.society.category.enriched_bone_mealing"))
       .background(guiHelper.createBlankDrawable(177, 20))
       .icon(guiHelper.createDrawableItemStack("society:enriched_bone_meal"))
       .isRecipeHandled(() => true)
@@ -47,7 +47,7 @@ JEIAddedEvents.registerCategories((e) => {
   });
   e.custom("society:furniture_catalog", (category) => {
     category
-      .title("Furniture Catalog")
+      .title(Text.translatable("jei.society.category.furniture_catalog"))
       .background(guiHelper.createBlankDrawable(177, 20))
       .icon(guiHelper.createDrawableItemStack("society:tanuki_catalog"))
       .isRecipeHandled(() => true)
@@ -69,14 +69,14 @@ JEIAddedEvents.registerCategories((e) => {
   });
   e.custom("herbalbrews:tea_drying", (category) => {
     category
-      .title("Tea Drying")
+      .title(Text.translatable("jei.society.category.tea_drying"))
       .background(guiHelper.createDrawable("society:textures/gui/drying.png", 1, 1, 122, 48))
       .icon(guiHelper.createDrawableItemStack("herbalbrews:green_tea_leaf"))
       .isRecipeHandled(() => true)
       .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
         guiGraphics.drawWordWrap(
           Client.font,
-          Text.of("Place block and wait..."),
+          Text.translatable("jei.society.tea_drying"),
           2,
           36,
           177,

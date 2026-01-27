@@ -60,10 +60,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"4A48308E11476E9B"
-				"66E1AC55824DF1D9"
-			]
+			dependencies: ["66E1AC55824DF1D9"]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest3.description1}"
 				""
@@ -88,8 +85,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
@@ -163,54 +160,6 @@
 			}]
 			x: 6.0d
 			y: -0.5d
-		}
-		{
-			dependencies: ["0F176FBF01ABB774"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description3}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest7.description4}"
-			]
-			icon: "vinery:fermentation_barrel"
-			id: "18EB59F2591BAD51"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3AAB21C07F5C22C3"
-					table_id: 8298743981735202683L
-					type: "choice"
-				}
-				{
-					count: 8
-					id: "46F02B3F8E3245F3"
-					item: "vinery:grapevine_stem"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "7B53B6AFA4BBD05C"
-					item: "vinery:spruce_lattice"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "69DE0365011C79D3"
-					item: "vinery:fermentation_barrel"
-					type: "item"
-				}
-				{
-					id: "730F90C38D9E6061"
-					item: "vinery:grapevine_pot"
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 0.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
@@ -444,8 +393,8 @@
 				item: "society:enriched_bone_meal"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
@@ -480,7 +429,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest19.title}"
-			x: 4.5d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -1160,62 +1109,25 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["18EB59F2591BAD51"]
+			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description1}"
+				"Wines can be made with three fruits and even certain vegetables in a &6Wine Keg&r."
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description3}"
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description4}"
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description5}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest43.description6}"
+				"This process is lengthy, but much more profitable per-fruit than preserving."
 			]
-			icon: "vinery:red_grapejuice"
-			id: "180411EF1F7649DD"
+			id: "3C9A245CFCD5D8E8"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "47F40C9762972779"
-				table_id: 8298743981735202683L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "36017F8FB07D6021"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "vinery:white_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "vinery:red_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "nethervinery:warped_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "nethervinery:crimson_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "vinery:apple_juice"
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.iii__advanced_farming.quest43.task_3891531808142876705.title}"
+				id: "6766C5B6D5AD2DF5"
+				item: "society:wine_keg"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest43.title}"
-			x: 2.5d
-			y: 0.5d
+			tasks: [{
+				id: "42E7CABF0E6A19DC"
+				item: "society:wine_keg"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
@@ -1237,6 +1149,52 @@
 			}]
 			x: 8.0d
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"51772B6C1CD5DD1E"
+				"473D0A5E8D57CD4B"
+			]
+			description: [
+				"Not all mushrooms can be cultivated on &6Mushroom Soil&r. The power of the &6Mossberry&r can be used to make the &6Mushroom Log&r!"
+				""
+				"It draws from nearby trees to form different kinds of mushrooms every 4 days depending on the tree types. "
+				""
+				"The quantity of them is impacted by the amount of nearby trees."
+			]
+			id: "0C5EB5F66FB04A29"
+			rewards: [{
+				id: "59AF65650E1BB645"
+				item: "society:cordycep"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1096A414E32EC541"
+				item: "society:mushroom_log"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"&6Mossberries&r are the jewels of &6Autumn&r!"
+				""
+				"They rarely form in trees and dropped when chopped. Unlike other crops, they cannot be farmed like crops."
+			]
+			id: "51772B6C1CD5DD1E"
+			rewards: [{
+				id: "03E0A5A2565799B6"
+				item: "society:mossberry_stew"
+				type: "item"
+			}]
+			tasks: [{
+				id: "424BBA830B722735"
+				item: "society:mossberry"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.0d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

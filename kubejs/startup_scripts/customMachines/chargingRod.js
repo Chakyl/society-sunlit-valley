@@ -7,31 +7,28 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 5))
     .soundType("copper")
     .box(4, 0, 4, 12, 16, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Makes batteries from lightning storms. Doesn't protect area"));
+      item.tooltip(Text.translatable("block.society.charging_rod.description").gray());
       item.modelJson({
-        parent: "society:block/charging_rod_off",
+        parent: "society:block/kubejs/charging_rod_off",
       });
     })
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level, server } = click;
@@ -58,7 +55,6 @@ StartupEvents.registry("block", (event) => {
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         }
       }
@@ -75,7 +71,6 @@ StartupEvents.registry("block", (event) => {
           working: false,
           mature: false,
           upgraded: upgraded,
-          stage: "0",
         });
       }
     })
@@ -106,49 +101,51 @@ StartupEvents.registry("block", (event) => {
         Utils.server.runCommandSilent(
           `execute in ${level.dimension} run summon lightning_bolt ${block.x} ${block.y} ${block.z}`
         );
+        let nbt = block.getEntityData();
+        nbt.merge({ data: { stage: 0 } });
+        block.setEntityData(nbt);
         block.set(block.id, {
           working: true,
           mature: false,
           upgraded: upgraded,
-          stage: "0",
         });
       }
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, null, 5);
       });
     }).blockstateJson = {
     multipart: [
-      { apply: { model: "society:block/charging_rod_particle" } },
+      { apply: { model: "society:block/kubejs/charging_rod_particle" } },
       {
         when: { working: false, upgraded: false, mature: false },
-        apply: { model: "society:block/charging_rod_off" },
+        apply: { model: "society:block/kubejs/charging_rod_off" },
       },
       {
         when: { working: true, upgraded: false, mature: false },
-        apply: { model: "society:block/charging_rod" },
+        apply: { model: "society:block/kubejs/charging_rod" },
       },
       {
         when: { working: false, upgraded: false, mature: true },
-        apply: { model: "society:block/charging_rod_done" },
+        apply: { model: "society:block/kubejs/charging_rod_done" },
       },
       {
         when: { working: false, upgraded: true, mature: false },
-        apply: { model: "society:block/charging_rod_upgraded_off" },
+        apply: { model: "society:block/kubejs/charging_rod_upgraded_off" },
       },
       {
         when: { working: true, upgraded: true, mature: false },
-        apply: { model: "society:block/charging_rod_upgraded" },
+        apply: { model: "society:block/kubejs/charging_rod_upgraded" },
       },
       {
         when: { working: false, upgraded: true, mature: true },
-        apply: { model: "society:block/charging_rod_upgraded_done" },
+        apply: { model: "society:block/kubejs/charging_rod_upgraded_done" },
       },
       {
         when: { mature: true },
-        apply: { model: "society:block/machine_done" },
+        apply: { model: "society:block/kubejs/machine_done" },
       },
     ],
   };

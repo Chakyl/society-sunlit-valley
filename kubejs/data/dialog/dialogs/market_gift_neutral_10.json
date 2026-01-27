@@ -1,0 +1,48 @@
+{
+	"id": "market_gift_neutral_10",
+	"title": "market introduction",
+	"description": "dialog.npc.market.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_neutral.10.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "gold"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_neutral.10.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p market"
+			]
+		}
+	]
+}

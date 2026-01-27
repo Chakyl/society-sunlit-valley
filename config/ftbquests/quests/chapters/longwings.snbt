@@ -11,11 +11,920 @@
 		}
 	}
 	id: "12867D0F2D4800BE"
+	images: [
+		{
+			height: 19.0d
+			image: "society:textures/gui/lattice.png"
+			order: 2
+			rotation: 0.0d
+			width: 19.75d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 8.833333333333336d
+			y: 1.9345238095238102d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.547619047619044d
+			y: 5.458333333333336d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.547619047619044d
+			y: 3.125d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.3571428571428541d
+			y: 1.8869047619047592d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.7380952380952408d
+			y: 3.125d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.4047619047619051d
+			y: 4.363095238095241d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.9285714285714306d
+			y: 4.363095238095241d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.9285714285714306d
+			y: 6.791666666666664d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.0714285714285765d
+			y: 5.6011904761904745d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.166666666666671d
+			y: 4.410714285714285d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.1190476190476204d
+			y: 3.077380952380956d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.357142857142854d
+			y: 3.125d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.547619047619051d
+			y: 4.410714285714285d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.452380952380949d
+			y: 6.791666666666664d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.642857142857139d
+			y: 6.696428571428569d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.500000000000007d
+			y: 1.9821428571428683d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.738095238095241d
+			y: 1.9345238095238102d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.5d
+			y: 0.6964285714285694d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.3571428571428541d
+			y: -0.4940476190476204d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.7857142857142918d
+			y: 0.6964285714285694d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.7857142857142918d
+			y: -1.732142857142854d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.8809523809523796d
+			y: -0.5416666666666643d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.1190476190476204d
+			y: -1.779761904761905d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.8809523809523796d
+			y: -2.922619047619044d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.3571428571428541d
+			y: -2.875d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.261904761904766d
+			y: -2.970238095238095d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.8333333333333357d
+			y: 0.6964285714285694d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.8333333333333286d
+			y: 3.077380952380956d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.8809523809523796d
+			y: 5.553571428571438d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.214285714285715d
+			y: 6.744047619047635d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.357142857142854d
+			y: 5.601190476190482d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.547619047619051d
+			y: 6.7916666666666785d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.8809523809523796d
+			y: -1.732142857142847d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.547619047619044d
+			y: -4.160714285714274d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.404761904761912d
+			y: -4.2083333333333215d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.69047619047619d
+			y: -4.160714285714274d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 8.833333333333329d
+			y: -2.922619047619037d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.69047619047619d
+			y: -1.732142857142847d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.5d
+			y: -3.0178571428571317d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.309523809523817d
+			y: -1.779761904761891d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.0714285714285694d
+			y: -4.160714285714274d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.7857142857142918d
+			y: -4.2083333333333215d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.69047619047619d
+			y: 0.6488095238095326d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 9.928571428571423d
+			y: 0.6964285714285836d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.547619047619051d
+			y: -0.4940476190476062d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.738095238095248d
+			y: 5.553571428571438d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 9.976190476190482d
+			y: 3.172619047619058d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.1190476190476204d
+			y: 0.7440476190476275d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.261904761904766d
+			y: -0.5892857142857011d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 9.928571428571423d
+			y: -1.732142857142847d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 8.833333333333336d
+			y: -0.4940476190476062d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.261904761904766d
+			y: 2.029761904761912d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 8.88095238095238d
+			y: 4.410714285714299d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.357142857142854d
+			y: 0.6488095238095326d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.69047619047619d
+			y: 3.220238095238109d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.404761904761912d
+			y: 8.02976190476192d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.380952380952365d
+			y: 13.065476190476197d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 9.928571428571438d
+			y: 5.553571428571438d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.7857142857142989d
+			y: 7.982142857142868d
+		}
+		{
+			height: 10.0d
+			image: "society:textures/gui/butterfly_bush.png"
+			order: 4
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.5d
+			y: 14.0d
+		}
+		{
+			height: 10.0d
+			image: "society:textures/gui/butterfly_bush.png"
+			order: 2
+			rotation: 180.0d
+			width: 6.0d
+			x: 12.5d
+			y: 15.5d
+		}
+		{
+			color: 8360893
+			height: 10.0d
+			image: "society:textures/gui/butterfly_bush.png"
+			order: 1
+			rotation: -50.0d
+			width: 6.0d
+			x: -8.5d
+			y: 13.0d
+		}
+		{
+			color: 8360893
+			height: 10.0d
+			image: "society:textures/gui/butterfly_bush.png"
+			order: 1
+			rotation: 150.0d
+			width: 6.0d
+			x: 14.5d
+			y: 13.5d
+		}
+		{
+			height: 4.0d
+			image: "society:textures/gui/sheet.png"
+			order: 39
+			rotation: -8.0d
+			width: 4.0d
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			height: 3.0d
+			image: "society:textures/gui/seal_indigo.png"
+			order: 40
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			height: 2.0d
+			image: "society:textures/gui/circle_white.png"
+			order: 7
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			height: 4.0d
+			image: "society:textures/gui/background_gradient.png"
+			order: 4
+			rotation: 0.0d
+			width: 25.0d
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			height: 10.0d
+			image: "society:textures/gui/lattice_dark.png"
+			order: 4
+			rotation: 0.0d
+			width: 17.5d
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.761904761904745d
+			y: 13.11309523809524d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.0476190476190297d
+			y: 13.017857142857139d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.7142857142857011d
+			y: 13.065476190476197d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.6666666666666785d
+			y: 13.06547619047619d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 8.85714285714284d
+			y: 14.208333333333343d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.6666666666666856d
+			y: 17.636904761904766d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.1904761904761685d
+			y: 16.54166666666668d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.0476190476190297d
+			y: 15.398809523809533d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.1904761904761685d
+			y: 14.255952380952387d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 6.523809523809504d
+			y: 14.208333333333343d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.6666666666666501d
+			y: 15.351190476190489d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.4285714285714519d
+			y: 14.208333333333343d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.8095238095238244d
+			y: 16.51785714285716d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 7.761904761904738d
+			y: 15.351190476190489d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.4285714285714519d
+			y: 16.54166666666667d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.0476190476190297d
+			y: 17.73214285714286d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.428571428571409d
+			y: 17.77976190476192d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.6666666666666856d
+			y: 15.398809523809533d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.7619047619047805d
+			y: 14.208333333333343d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.8571428571428399d
+			y: 16.54166666666668d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.380952380952358d
+			y: 15.351190476190489d
+		}
+		{
+			height: 9.7d
+			image: "society:textures/gui/moth_bush.png"
+			order: 1
+			rotation: 0.0d
+			width: 6.2d
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			height: 9.7d
+			image: "society:textures/gui/moth_bush.png"
+			order: 1
+			rotation: -180.0d
+			width: 6.2d
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			color: 7753845
+			height: 9.7d
+			image: "society:textures/gui/moth_bush.png"
+			rotation: -60.0d
+			width: 6.2d
+			x: 14.599999999999966d
+			y: 8.80357142857143d
+		}
+		{
+			color: 7753845
+			height: 9.7d
+			image: "society:textures/gui/moth_bush.png"
+			rotation: 100.0d
+			width: 6.2d
+			x: -8.685714285714319d
+			y: 8.80357142857143d
+		}
+		{
+			height: 2.0d
+			image: "society:textures/gui/circle_white.png"
+			order: 7
+			rotation: 0.0d
+			width: 2.0d
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			height: 3.0d
+			image: "society:textures/gui/butterfly2.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -11.5d
+			y: 15.5d
+		}
+		{
+			height: 3.0d
+			image: "society:textures/gui/butterfly3.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 17.0d
+			y: 18.0d
+		}
+		{
+			height: 2.0d
+			image: "society:textures/gui/butterfly5.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 18.5d
+			y: 16.5d
+		}
+		{
+			height: 3.0d
+			image: "society:textures/gui/butterfly6.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			height: 3.0d
+			image: "society:textures/gui/butterfly7.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "society:textures/gui/butterfly8.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 17.0d
+			y: 5.0d
+		}
+	]
 	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
+			icon_scale: 2.0d
 			id: "680B19AC3B196DC9"
+			shape: "none"
 			tasks: [{
 				id: "4AF2E7F5FB3A8CA6"
 				item: {
@@ -29,11 +938,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -1.595238095238095d
+			y: -4.2083333333333215d
 		}
 		{
+			icon_scale: 2.0d
 			id: "6A5484BDB96F49CF"
+			shape: "none"
 			tasks: [{
 				id: "5EED9EA52A2E72AD"
 				item: {
@@ -47,11 +958,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: -2.0d
+			x: 0.8095238095237889d
+			y: -4.202380952380956d
 		}
 		{
+			icon_scale: 2.0d
 			id: "30D3564EBBC6C933"
+			shape: "none"
 			tasks: [{
 				id: "1CC4D54ED1834917"
 				item: {
@@ -65,11 +978,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -0.3809523809523796d
+			y: -2.827380952380956d
 		}
 		{
+			icon_scale: 2.0d
 			id: "55C9E7D9529F47A4"
+			shape: "none"
 			tasks: [{
 				id: "63B7C31B0831D197"
 				item: {
@@ -83,11 +998,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: -2.0d
+			x: 5.31632653061223d
+			y: -1.8095238095238244d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2D694EA62C6D66A5"
+			shape: "none"
 			tasks: [{
 				id: "370B4EF832716513"
 				item: {
@@ -101,11 +1018,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: -2.0d
+			x: 4.261904761904773d
+			y: -3.0178571428571317d
 		}
 		{
+			icon_scale: 2.0d
 			id: "478FAC4B9361DAAA"
+			shape: "none"
 			tasks: [{
 				id: "2EF6EA7771A9788E"
 				item: {
@@ -119,11 +1038,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: -2.0d
+			x: 1.8809523809523867d
+			y: -0.5416666666666501d
 		}
 		{
+			icon_scale: 2.0d
 			id: "5C63242CDEA70CB3"
+			shape: "none"
 			tasks: [{
 				id: "3578C7DDB54DD603"
 				item: {
@@ -137,11 +1058,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 5.428571428571416d
+			y: -4.178571428571438d
 		}
 		{
+			icon_scale: 2.0d
 			id: "783D9167DBB1DFA2"
+			shape: "none"
 			tasks: [{
 				id: "34BBFD9C4F1DF4AC"
 				item: {
@@ -155,11 +1078,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: -2.0d
+			x: 6.5d
+			y: 1.9345238095238244d
 		}
 		{
+			icon_scale: 2.0d
 			id: "10A3EC8BAC25CBC2"
+			shape: "none"
 			tasks: [{
 				id: "17060EB4AB11610D"
 				item: {
@@ -173,11 +1098,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: -2.0d
+			x: 7.714285714285687d
+			y: -4.154761904761912d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2344CC1C2BA2F76D"
+			shape: "none"
 			tasks: [{
 				id: "09BCA772800C58A0"
 				item: {
@@ -191,11 +1118,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: -0.5d
+			x: 9.97959183673467d
+			y: 3.1802721088435106d
 		}
 		{
+			icon_scale: 2.0d
 			id: "1F7F94CA7DF7E160"
+			shape: "none"
 			tasks: [{
 				id: "56C161CFB4733E37"
 				item: {
@@ -209,11 +1138,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: -0.5d
+			x: -1.5476190476190368d
+			y: 3.0773809523809703d
 		}
 		{
+			icon_scale: 2.0d
 			id: "0A2F9DE356BEF569"
+			shape: "none"
 			tasks: [{
 				id: "10B8E8DB3A3419A2"
 				item: {
@@ -227,11 +1158,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: -0.5d
+			x: -3.880952380952401d
+			y: 5.559523809523796d
 		}
 		{
+			icon_scale: 2.0d
 			id: "40B366C2C85D5411"
+			shape: "none"
 			tasks: [{
 				id: "3C4C11D484C10D7C"
 				item: {
@@ -245,11 +1178,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: 1.904761904761898d
+			y: -2.892857142857153d
 		}
 		{
+			icon_scale: 2.0d
 			id: "5A4799BDEC7740CC"
+			shape: "none"
 			tasks: [{
 				id: "7BEB2E9FF77A4F55"
 				item: {
@@ -263,11 +1198,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: -0.5d
+			x: 5.357142857142854d
+			y: 3.125000000000007d
 		}
 		{
+			icon_scale: 2.0d
 			id: "7AF894D53AF394FA"
+			shape: "none"
 			tasks: [{
 				id: "0BA5013D897FE795"
 				item: {
@@ -281,11 +1218,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: 8.89795918367345d
+			y: 4.445578231292487d
 		}
 		{
+			icon_scale: 2.0d
 			id: "7F36CF185F9773AC"
+			shape: "none"
 			tasks: [{
 				id: "37201FF7A2F8DFDA"
 				item: {
@@ -299,11 +1238,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 3.128571428571412d
+			y: -1.7523809523809604d
 		}
 		{
+			icon_scale: 2.0d
 			id: "382F993D17916C1B"
+			shape: "none"
 			tasks: [{
 				id: "4406803EE6A944DF"
 				item: {
@@ -317,11 +1258,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: -0.5d
+			x: 8.73809523809524d
+			y: -0.4940476190476062d
 		}
 		{
+			icon_scale: 2.0d
 			id: "00060C8EA37E0DFE"
+			shape: "none"
 			tasks: [{
 				id: "4D33B25721544ECF"
 				item: {
@@ -335,11 +1278,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: -0.5d
+			x: 9.97959183673467d
+			y: -1.7176870748299606d
 		}
 		{
+			icon_scale: 2.0d
 			id: "6AE519D649838CE7"
+			shape: "none"
 			tasks: [{
 				id: "2122C5BDA3904351"
 				item: {
@@ -353,11 +1298,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: 1.0d
+			x: -2.6190476190476417d
+			y: 6.72619047619046d
 		}
 		{
+			icon_scale: 2.0d
 			id: "7A49507AFA4ADA3A"
+			shape: "none"
 			tasks: [{
 				id: "2278EC4BB16FF7D4"
 				item: {
@@ -371,11 +1318,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: 8.857142857142833d
+			y: -2.9166666666666714d
 		}
 		{
+			icon_scale: 2.0d
 			id: "736035069CC7978D"
+			shape: "none"
 			tasks: [{
 				id: "20DFD9884146C667"
 				item: {
@@ -389,11 +1338,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: 3.119047619047599d
+			y: 0.7738095238095184d
 		}
 		{
+			icon_scale: 2.0d
 			id: "54056713B300B907"
+			shape: "none"
 			tasks: [{
 				id: "3531999FD5C97F07"
 				item: {
@@ -407,11 +1358,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: 0.8095238095237889d
+			y: 0.7499999999999929d
 		}
 		{
+			icon_scale: 2.0d
 			id: "001E6413535F6ACB"
+			shape: "none"
 			tasks: [{
 				id: "4386A3D9FF265E58"
 				item: {
@@ -425,11 +1378,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: -3.8095238095238315d
+			y: 3.10714285714284d
 		}
 		{
+			icon_scale: 2.0d
 			id: "0EAC1F761CD59E1E"
+			shape: "none"
 			tasks: [{
 				id: "75735173F46152FB"
 				item: {
@@ -443,11 +1398,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: 1.0d
+			x: 1.9285714285714093d
+			y: 4.41666666666665d
 		}
 		{
+			icon_scale: 2.0d
 			id: "0F7700B731A2E86C"
+			shape: "none"
 			tasks: [{
 				id: "2BC39DA31C7DF1D8"
 				item: {
@@ -461,11 +1418,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: -0.4047619047619264d
+			y: 4.416666666666657d
 		}
 		{
+			icon_scale: 2.0d
 			id: "707C442274525ECC"
+			shape: "none"
 			tasks: [{
 				id: "58541B4094DEFCB8"
 				item: {
@@ -479,11 +1438,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 6.547619047619023d
+			y: 4.440476190476176d
 		}
 		{
+			icon_scale: 2.0d
 			id: "798CDD7C6CF29731"
+			shape: "none"
 			tasks: [{
 				id: "799340AEE4805006"
 				item: {
@@ -497,11 +1458,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: 1.0d
+			x: 5.357142857142833d
+			y: 0.6785714285714235d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2047DC8571D22F8C"
+			shape: "none"
 			tasks: [{
 				id: "4A39CF6F651B18D5"
 				item: {
@@ -515,11 +1478,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: 2.5d
+			x: 1.8809523809523796d
+			y: 6.791666666666664d
 		}
 		{
+			icon_scale: 2.0d
 			id: "6481130C6FDBF9E7"
+			shape: "none"
 			tasks: [{
 				id: "376F46D6A6958BED"
 				item: {
@@ -533,11 +1498,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: 0.7380952380952408d
+			y: -1.732142857142847d
 		}
 		{
+			icon_scale: 2.0d
 			id: "3DF4A849DDFD370B"
+			shape: "none"
 			tasks: [{
 				id: "4771ADC10ED6895E"
 				item: {
@@ -551,11 +1518,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: -1.5000000000000213d
+			y: 0.7499999999999929d
 		}
 		{
+			icon_scale: 2.0d
 			id: "4F5104DD5C2D9699"
+			shape: "none"
 			tasks: [{
 				id: "532194B2282D336C"
 				item: {
@@ -569,11 +1538,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 9.959183673469362d
+			y: 5.547619047619023d
 		}
 		{
+			icon_scale: 2.0d
 			id: "5803023B6014039B"
+			shape: "none"
 			tasks: [{
 				id: "3B466F5DA9519120"
 				item: {
@@ -587,11 +1558,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: 2.5d
+			x: 4.1904761904761685d
+			y: 4.4880952380952195d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2D21200F885A79B3"
+			shape: "none"
 			tasks: [{
 				id: "46A5193610CCC7C0"
 				item: {
@@ -605,11 +1578,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: 2.5d
+			x: 3.095238095238095d
+			y: 3.172619047619044d
 		}
 		{
+			icon_scale: 2.0d
 			id: "4D36DE5DBF2CE2C0"
+			shape: "none"
 			tasks: [{
 				id: "34E88897AC5EC4CC"
 				item: {
@@ -623,11 +1598,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 2.5d
+			x: -3.8333333333333286d
+			y: 0.6964285714285836d
 		}
 		{
+			icon_scale: 2.0d
 			id: "66BB843D75A0605B"
+			shape: "none"
 			tasks: [{
 				id: "61DD40445FC889C0"
 				item: {
@@ -641,11 +1618,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: 2.5d
+			x: 7.642857142857139d
+			y: 0.6488095238095326d
 		}
 		{
+			icon_scale: 2.0d
 			id: "270B2FA5C7B61B2E"
+			shape: "none"
 			tasks: [{
 				id: "7C12698181546781"
 				item: {
@@ -659,11 +1638,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: 3.0952380952380736d
+			y: -4.178571428571438d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2CBEB7AB3EA8089A"
+			shape: "none"
 			tasks: [{
 				id: "53A545D07178446E"
 				item: {
@@ -677,11 +1658,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: 4.0d
+			x: 9.938775510204067d
+			y: 0.6904761904761614d
 		}
 		{
+			icon_scale: 2.0d
 			id: "3867876CDBDB3C29"
+			shape: "none"
 			tasks: [{
 				id: "1E6B41C57BA1D2CC"
 				item: {
@@ -695,11 +1678,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 4.0d
+			x: 6.500000000000007d
+			y: -2.970238095238088d
 		}
 		{
+			icon_scale: 2.0d
 			id: "62929F824655A509"
+			shape: "none"
 			tasks: [{
 				id: "1A2B8291B419C34E"
 				item: {
@@ -713,11 +1698,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 4.0d
+			x: 0.7380952380952408d
+			y: 3.125d
 		}
 		{
+			icon_scale: 2.0d
 			id: "3DF802125B59E3F5"
+			shape: "none"
 			tasks: [{
 				id: "5F175B48B8CB71B1"
 				item: {
@@ -731,11 +1718,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -3.8809523809523796d
+			y: -1.7321428571428399d
 		}
 		{
+			icon_scale: 2.0d
 			id: "7185CFE34BAF3755"
+			shape: "none"
 			tasks: [{
 				id: "0A1784C366D33580"
 				item: {
@@ -749,11 +1738,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: 4.0d
+			x: 4.214285714285722d
+			y: 1.9821428571428683d
 		}
 		{
+			icon_scale: 2.0d
 			id: "38365536522ED93F"
+			shape: "none"
 			tasks: [{
 				id: "16C25802A1E52F19"
 				item: {
@@ -767,11 +1758,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: 4.0d
+			x: 4.261904761904738d
+			y: -0.5595238095238173d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2DBFCB4BF70EE655"
+			shape: "none"
 			tasks: [{
 				id: "7C1D50635F91AFA9"
 				item: {
@@ -785,11 +1778,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 6.571428571428541d
+			y: 6.869047619047599d
 		}
 		{
+			icon_scale: 2.0d
 			id: "0722527C0CDB03B2"
+			shape: "none"
 			tasks: [{
 				id: "3B4B3E50AC35A157"
 				item: {
@@ -803,11 +1798,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: 4.0d
+			x: 6.547619047619023d
+			y: -0.4166666666666714d
 		}
 		{
+			icon_scale: 2.0d
 			id: "7B4A0DEA04E60871"
+			shape: "none"
 			tasks: [{
 				id: "2220DDD5BEB082BE"
 				item: {
@@ -821,11 +1818,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: 4.0d
+			x: 8.833333333333329d
+			y: 1.8869047619047734d
 		}
 		{
+			icon_scale: 2.0d
 			id: "0B24C604A77B5F47"
+			shape: "none"
 			tasks: [{
 				id: "1C861A45D35D755F"
 				item: {
@@ -839,11 +1838,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: 5.5d
+			x: 5.404761904761912d
+			y: 8.02976190476192d
 		}
 		{
+			icon_scale: 2.0d
 			id: "47811E06B6F2874D"
+			shape: "none"
 			tasks: [{
 				id: "07019D3DF607D259"
 				item: {
@@ -857,11 +1858,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: -1.5714285714285907d
+			y: 5.488095238095227d
 		}
 		{
+			icon_scale: 2.0d
 			id: "0FCA82E8593E8CAA"
+			shape: "none"
 			tasks: [{
 				id: "53144CCF04DA326A"
 				item: {
@@ -875,11 +1878,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: -0.333333333333357d
+			y: -0.4642857142857224d
 		}
 		{
+			icon_scale: 2.0d
 			id: "1B6245856B66991D"
+			shape: "none"
 			tasks: [{
 				id: "138CC96E25ED583F"
 				item: {
@@ -893,11 +1898,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: 5.5d
+			x: -0.3571428571428825d
+			y: 1.9166666666666572d
 		}
 		{
+			icon_scale: 2.0d
 			id: "27312310EA6CB448"
+			shape: "none"
 			tasks: [{
 				id: "4B124A4C3FE04941"
 				item: {
@@ -911,11 +1918,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: 5.5d
+			x: -0.4523809523809774d
+			y: 6.797619047619037d
 		}
 		{
+			icon_scale: 2.0d
 			id: "0CC313A934ACB355"
+			shape: "none"
 			tasks: [{
 				id: "248EC6F5B54E7B5D"
 				item: {
@@ -929,11 +1938,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: 5.5d
+			x: 4.2380952380952195d
+			y: 6.749999999999986d
 		}
 		{
+			icon_scale: 2.0d
 			id: "11B9B99BAA4AC9BE"
+			shape: "none"
 			tasks: [{
 				id: "0033B2C3AC56E0D5"
 				item: {
@@ -947,11 +1958,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 5.5d
+			x: -2.738095238095262d
+			y: 1.964285714285701d
 		}
 		{
+			icon_scale: 2.0d
 			id: "41BDC0D25D1CF970"
+			shape: "none"
 			tasks: [{
 				id: "0062639F3B454FC1"
 				item: {
@@ -965,11 +1978,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: 11.547619047619051d
+			x: 1.8619047619047535d
+			y: 16.607142857142854d
 		}
 		{
+			icon_scale: 2.0d
 			id: "635A8998FC9BCB50"
+			shape: "none"
 			tasks: [{
 				id: "6FE10D1A5627B8B9"
 				item: {
@@ -983,11 +1998,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 11.547619047619051d
+			x: -2.795238095238105d
+			y: 16.521428571428558d
 		}
 		{
+			icon_scale: 2.0d
 			id: "05B7D63B22E8202E"
+			shape: "none"
 			tasks: [{
 				id: "67C06E89E7E5861F"
 				item: {
@@ -1001,11 +2018,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: 11.547619047619051d
+			x: -1.680952380952391d
+			y: 15.407142857142851d
 		}
 		{
+			icon_scale: 2.0d
 			id: "3C8A31BEFDE8569B"
+			shape: "none"
 			tasks: [{
 				id: "28621E2200D728B7"
 				item: {
@@ -1019,11 +2038,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 11.547619047619051d
+			x: 8.809523809523796d
+			y: 14.190476190476176d
 		}
 		{
+			icon_scale: 2.0d
 			id: "366091D041C8F53C"
+			shape: "none"
 			tasks: [{
 				id: "27A148EB2AC7FF2B"
 				item: {
@@ -1037,11 +2058,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: 11.5d
+			x: 0.6619047619047507d
+			y: 15.37857142857142d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2916F3AC70CDF974"
+			shape: "none"
 			tasks: [{
 				id: "126BD7791D494683"
 				item: {
@@ -1055,11 +2078,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: 11.5d
+			x: 7.714285714285701d
+			y: 13.09523809523808d
 		}
 		{
+			icon_scale: 2.0d
 			id: "56A22AB2AB32540E"
+			shape: "none"
 			tasks: [{
 				id: "1DF8BF44C8A83A83"
 				item: {
@@ -1073,11 +2098,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 11.5d
+			x: -1.6666666666666785d
+			y: 12.970238095238095d
 		}
 		{
+			icon_scale: 2.0d
 			id: "08A5AB88B25F129A"
+			shape: "none"
 			tasks: [{
 				id: "3A7BB15B575859DE"
 				item: {
@@ -1091,11 +2118,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: 11.5d
+			x: 3.0238095238095113d
+			y: 12.999999999999993d
 		}
 		{
+			icon_scale: 2.0d
 			id: "43661DEAB3C61534"
+			shape: "none"
 			tasks: [{
 				id: "4C2ACDE64A036144"
 				item: {
@@ -1109,11 +2138,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: 11.5d
+			x: -2.766666666666673d
+			y: 14.178571428571423d
 		}
 		{
+			icon_scale: 2.0d
 			id: "2F205BB21A323F29"
+			shape: "none"
 			tasks: [{
 				id: "159EDDEEE97C9A19"
 				item: {
@@ -1127,11 +2158,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: 13.0d
+			x: 4.190476190476183d
+			y: 14.261904761904752d
 		}
 		{
+			icon_scale: 2.0d
 			id: "1CBC1DC1342429ED"
+			shape: "none"
 			tasks: [{
 				id: "3A29DCCDDD662BA2"
 				item: {
@@ -1145,11 +2178,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 13.0d
+			x: 4.190476190476183d
+			y: 16.59523809523808d
 		}
 		{
+			icon_scale: 2.0d
 			id: "1C1ADC0FDA8F8DE1"
+			shape: "none"
 			tasks: [{
 				id: "7204A5E49DCF5D3C"
 				item: {
@@ -1163,11 +2198,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: 13.0d
+			x: 5.38095238095238d
+			y: 13.047619047619037d
 		}
 		{
+			icon_scale: 2.0d
 			id: "3A80E1BB93F0414B"
+			shape: "none"
 			tasks: [{
 				id: "44CD9A1684B59066"
 				item: {
@@ -1181,11 +2218,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 13.0d
+			x: -1.680952380952391d
+			y: 17.635714285714286d
 		}
 		{
+			icon_scale: 2.0d
 			id: "1F5BE42EC64BE0C5"
+			shape: "none"
 			tasks: [{
 				id: "2E79989784882EC5"
 				item: {
@@ -1199,11 +2238,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
-			y: 13.0d
+			x: 6.523809523809504d
+			y: 14.190476190476176d
 		}
 		{
+			icon_scale: 2.0d
 			id: "131916BD49DA50EC"
+			shape: "none"
 			tasks: [{
 				id: "23479F498F971CDE"
 				item: {
@@ -1217,11 +2258,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: 13.0d
+			x: -0.36666666666667425d
+			y: 14.264285714285705d
 		}
 		{
+			icon_scale: 2.0d
 			id: "1E06D6294639F244"
+			shape: "none"
 			tasks: [{
 				id: "233B30030B61F7A8"
 				item: {
@@ -1235,11 +2278,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 13.0d
+			x: 5.357142857142847d
+			y: 15.404761904761891d
 		}
 		{
+			icon_scale: 2.0d
 			id: "03EBC7FDA24800FA"
+			shape: "none"
 			tasks: [{
 				id: "35ABBDFE0E0DEBF4"
 				item: {
@@ -1253,11 +2298,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: 13.0d
+			x: 3.0476190476190297d
+			y: 17.827380952380963d
 		}
 		{
+			icon_scale: 2.0d
 			id: "539394AD1B43956C"
+			shape: "none"
 			tasks: [{
 				id: "164DD83FE1FE794C"
 				item: {
@@ -1271,8 +2318,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: 13.0d
+			x: 5.428571428571416d
+			y: 17.809523809523796d
 		}
 		{
 			dependencies: [
@@ -1356,6 +2403,8 @@
 				"05FDA2C81E31C24C"
 				"4901E59DFC597A3E"
 				"6622B4312D88A164"
+				"34A2EC8B83E8037B"
+				"793A169D708B617C"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -1394,7 +2443,7 @@
 					type: "item"
 				}
 			]
-			shape: "octagon"
+			shape: "none"
 			size: 3.0d
 			tasks: [{
 				icon: {
@@ -1412,10 +2461,12 @@
 			}]
 			title: "{ftbquests.chapter.longwings.quest71.title}"
 			x: 3.0d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
+			icon_scale: 2.0d
 			id: "62D563D41BB5D230"
+			shape: "none"
 			tasks: [{
 				id: "06E19998D1BDBBD0"
 				item: {
@@ -1429,11 +2480,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: 5.5d
+			x: 7.690476190476197d
+			y: -1.732142857142847d
 		}
 		{
+			icon_scale: 2.0d
 			id: "4F68D7E85B9F2064"
+			shape: "none"
 			tasks: [{
 				id: "5D3B542BFBBB902C"
 				item: {
@@ -1447,11 +2500,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
-			y: 14.5d
+			x: 3.0238095238095113d
+			y: 15.404761904761891d
 		}
 		{
+			icon_scale: 2.0d
 			id: "6622B4312D88A164"
+			shape: "none"
 			tasks: [{
 				id: "459500A92B64C383"
 				item: {
@@ -1465,11 +2520,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: 5.5d
+			x: 7.714285714285701d
+			y: 5.547619047619023d
 		}
 		{
+			icon_scale: 2.0d
 			id: "21F0309310B7D726"
+			shape: "none"
 			tasks: [{
 				id: "209B86F7956F84E8"
 				item: {
@@ -1483,11 +2540,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -3.0d
-			y: 7.0d
+			x: 0.7857142857142989d
+			y: 7.982142857142868d
 		}
 		{
+			icon_scale: 2.0d
 			id: "3E3CB6E7C4BAEFE4"
+			shape: "none"
 			tasks: [{
 				id: "39C98C48CC09537D"
 				item: {
@@ -1501,11 +2560,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 7.0d
+			x: 5.357142857142854d
+			y: 5.64880952380954d
 		}
 		{
+			icon_scale: 2.0d
 			id: "05FDA2C81E31C24C"
+			shape: "none"
 			tasks: [{
 				id: "761F430D0C654ED5"
 				item: {
@@ -1519,11 +2580,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
-			y: 7.0d
+			x: 7.69047619047619d
+			y: 3.172619047619058d
 		}
 		{
+			icon_scale: 2.0d
 			id: "4901E59DFC597A3E"
+			shape: "none"
 			tasks: [{
 				id: "36714E58DE2BE38B"
 				item: {
@@ -1537,11 +2600,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 7.0d
+			x: 3.0952380952380736d
+			y: 5.630952380952365d
 		}
 		{
+			icon_scale: 2.0d
 			id: "5B67709B2ECD326D"
+			shape: "none"
 			tasks: [{
 				id: "1313A9769C47450D"
 				item: {
@@ -1555,11 +2620,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 14.5d
+			x: -0.4761904761904958d
+			y: 16.589285714285722d
 		}
 		{
+			icon_scale: 2.0d
 			id: "290AC43A02C623DB"
+			shape: "none"
 			tasks: [{
 				id: "30925BF903EE926E"
 				item: {
@@ -1573,11 +2640,13 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
-			y: 14.5d
+			x: 7.738095238095234d
+			y: 15.357142857142847d
 		}
 		{
+			icon_scale: 2.0d
 			id: "54E4BD244C6CBED4"
+			shape: "none"
 			tasks: [{
 				id: "202EC3E5C0DF5CEE"
 				item: {
@@ -1591,8 +2660,32 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 9.0d
-			y: 14.5d
+			x: 0.7190476190476076d
+			y: 13.035714285714278d
+		}
+		{
+			icon_scale: 1.5d
+			id: "34A2EC8B83E8037B"
+			shape: "none"
+			tasks: [{
+				id: "6F83404E1B63C671"
+				item: "society:moth_pollen"
+				type: "item"
+			}]
+			x: 6.004761904761857d
+			y: 10.505952380952387d
+		}
+		{
+			icon_scale: 1.5d
+			id: "793A169D708B617C"
+			shape: "none"
+			tasks: [{
+				id: "15697F476E6F905E"
+				item: "society:butterfly_amber"
+				type: "item"
+			}]
+			x: -0.04285714285718001d
+			y: 10.535714285714285d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.longwings.subtitle0}"]

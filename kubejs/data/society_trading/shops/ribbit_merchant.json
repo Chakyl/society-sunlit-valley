@@ -9,6 +9,16 @@
   "trades": [
     {
       "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "offer": { "item": "cluttered:fly_agaric", "count": 1 },
+      "trade_id": "ribbit_fly_agaric"
+    },
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "offer": { "item": "cluttered:blue_roundhead", "count": 1 },
+      "trade_id": "ribbit_blue_roundhead"
+    },
+    {
+      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
       "offer": { "item": "ribbits:brown_toadstool", "count": 13 },
       "trade_id": "ribbit_merchant_brown_toadstool"
     },

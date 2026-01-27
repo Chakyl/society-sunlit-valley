@@ -8,6 +8,7 @@
     "item_storage.normal_amount": 9,
     "item_storage": true,
     "harvest_tool": true,
+    "vapourware.fuel": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
     "energy_storage": true,
@@ -59,9 +60,6 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
-  "champions": {
-    "enable_affix_compact": true
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -103,12 +101,6 @@
   },
   "pipez": {
     "pipe": true
-  },
-  "strawgolem": {
-    "strawgolem_barrel": true,
-    "strawgolem_decay": true,
-    "strawgolem_hunger": true,
-    "strawgolem": true
   },
   "untitledduckmod": {
     "lay_egg": true

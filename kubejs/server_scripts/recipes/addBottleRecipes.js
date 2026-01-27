@@ -58,6 +58,18 @@ ServerEvents.recipes((e) => {
       container: "vinery:wine_bottle",
     },
     {
+      item: "society:mana_fruit_juice",
+      fluid: "society:mana_fruit_juice",
+      amount: 250,
+      container: "vinery:wine_bottle",
+    },
+    {
+      item: "society:sparkpod_juice",
+      fluid: "society:sparkpod_juice",
+      amount: 250,
+      container: "vinery:wine_bottle",
+    },
+    {
       item: "relics:relic_experience_bottle",
       fluid: "relics:relic_experience",
       amount: 50,
@@ -105,7 +117,7 @@ ServerEvents.recipes((e) => {
       },
       {
         amount: 50,
-        fluid: "society:oak_resin"
+        fluid: "society:oak_resin",
       },
     ],
     results: [

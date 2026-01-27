@@ -8,12 +8,18 @@ const validExtractinatorItems = [
   "society:magma_geode",
   "society:omni_geode",
 ];
-const processGeodeLootTable = (lootTable, block, server) => {
+const processGeodeLootTable = (lootTable, block, server, doubled) => {
   let drops;
+  let drop;
+  ("");
   lootTable.forEach((entry) => {
     if (Math.random() < entry.drop_chance) {
       drops = Ingredient.of(entry.drop).itemIds;
-      block.popItemFromFace(drops[Math.floor(Math.random() * drops.length)], "up");
+      drop = drops[Math.floor(Math.random() * drops.length)];
+      block.popItemFromFace(Item.of(`1x ${drop}`), "up");
+      if (doubled) {
+        block.popItemFromFace(Item.of(`1x ${drop}`), "up");
+      }
     }
   });
   server.runCommandSilent(
@@ -31,15 +37,25 @@ BlockEvents.rightClicked("extractinator:extractinator", (e) => {
       if (player.isCrouching()) {
         for (let i = 0; i < item.count; i++) {
           server.scheduleInTicks(i * 4, () => {
-            processGeodeLootTable(recipe.output, block, server);
+            processGeodeLootTable(
+              recipe.output,
+              block,
+              server,
+              player.stages.has("the_red_and_the_black")
+            );
           });
         }
-  global.addItemCooldown(player, item.id, item.count);
+        global.addItemCooldown(player, item.id, item.count);
         if (!player.isCreative()) item.count = 0;
       } else {
-        processGeodeLootTable(recipe.output, block, server);
+        processGeodeLootTable(
+          recipe.output,
+          block,
+          server,
+          player.stages.has("the_red_and_the_black")
+        );
         if (!player.isCreative()) item.count--;
-  global.addItemCooldown(player, item.id, 4);
+        global.addItemCooldown(player, item.id, 4);
       }
     }
   });

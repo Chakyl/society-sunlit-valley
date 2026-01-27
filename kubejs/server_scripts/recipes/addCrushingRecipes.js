@@ -41,6 +41,7 @@ ServerEvents.recipes((e) => {
   crushedRecipes("minecraft:beef", "farm_and_charm:minced_beef", 1, true);
   crushedRecipes("minecraft:mutton", "farm_and_charm:lamb_ham", 1, true);
   crushedRecipes("minecraft:baked_potato", "brewery:mashed_potatoes", 2, true);
+  crushedRecipes("society:sparkpod", "society:sparkstone", 3);
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [

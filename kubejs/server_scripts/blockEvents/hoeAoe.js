@@ -28,12 +28,12 @@ const tryTill = (level, player, pos, farmland) => {
     return false;
 
   level.getBlock(pos).set(farmland || "minecraft:farmland");
-  player.swing()
+  player.swing();
   player.server.runCommandSilent(
     `playsound minecraft:item.hoe.till block @a ${player.x} ${player.y} ${player.z}`
   );
   return true;
-}
+};
 
 BlockEvents.rightClicked(
   [
@@ -67,11 +67,11 @@ BlockEvents.rightClicked(
       const { x, y, z } = block;
       for (let pos of BlockPos.betweenClosed(
         new BlockPos(x - hoe, y, z - hoe),
-        [x + hoe, y, z + hoe],
+        [x + hoe, y, z + hoe]
       )) {
         tryTill(level, player, pos, farmland);
       }
     }
     global.addItemCooldown(player, item, 40);
-  },
+  }
 );

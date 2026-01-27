@@ -1,0 +1,24 @@
+{
+  "type": "vinery:wine_fermentation",
+  "juice": {
+    "type": "apple",
+    "amount": 5
+  },
+  "ingredients": [
+    {
+      "item": "society:mana_fruit_juice"
+    },
+    {
+      "item": "minecraft:raw_gold_block"
+    },
+    {
+      "item": "society:dried_shimmering_mushrooms"
+    }
+  ],
+  "wine_bottle": {
+    "required": false
+  },
+  "result": {
+    "item": "society:mana_king"
+  }
+}

@@ -1,0 +1,881 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [40000, 50000, 60000, 70000, 80000]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:kill_entity",
+      "data": {
+        "variables": {
+          "is_armor_stand": {
+            "operations": [
+              {
+                "type": "get_killed_living_entity"
+              },
+              {
+                "type": "get_type"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "entity_type": "minecraft:armor_stand"
+                }
+              }
+            ]
+          },
+          "max_health": {
+            "operations": [
+              {
+                "type": "get_killed_living_entity"
+              },
+              {
+                "type": "get_max_health"
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "!is_armor_stand",
+            "expression": "max_health * 2"
+          }
+        ],
+        "anti_farming": {
+          "limit_per_chunk": 15,
+          "reset_after_seconds": 300
+        }
+      }
+    },
+    {
+      "type": "puffish_skills:increase_stat",
+      "data": {
+        "variables": {
+          "looting_chests": {
+            "operations": [
+              {
+                "type": "get_stat"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "stat": "minecraft.custom:lootr.looted_stat"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "looting_chests",
+            "expression": "85"
+          }
+        ]
+      }
+    },
+    {
+      "type": "puffish_skills:mine_block",
+      "data": {
+        "variables": {
+          "silk_touch": {
+            "operations": [
+              {
+                "type": "get_tool_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "nbt": "{Enchantments:[{id:\"minecraft:silk_touch\"}]}"
+                }
+              }
+            ]
+          },
+          "coal_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "coal_ore"
+                }
+              }
+            ]
+          },
+          "alpine_coal_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_coal_ore"
+                }
+              }
+            ]
+          },
+          "alpine_copper_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_copper_ore"
+                }
+              }
+            ]
+          },
+          "alpine_iron_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_iron_ore"
+                }
+              }
+            ]
+          },
+          "alpine_lapis_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_lapis_ore"
+                }
+              }
+            ]
+          },
+          "alpine_emerald_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_emerald_ore"
+                }
+              }
+            ]
+          },
+          "alpine_gold_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_gold_ore"
+                }
+              }
+            ]
+          },
+          "alpine_diamond_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_diamond_ore"
+                }
+              }
+            ]
+          },
+          "alpine_redstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_redstone_ore"
+                }
+              }
+            ]
+          },
+          "alpine_salt_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "meadow:alpine_salt_ore"
+                }
+              }
+            ]
+          },
+          "copper_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "copper_ore"
+                }
+              }
+            ]
+          },
+          "iron_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "iron_ore"
+                }
+              }
+            ]
+          },
+          "gold_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "gold_ore"
+                }
+              }
+            ]
+          },
+          "redstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "redstone_ore"
+                }
+              }
+            ]
+          },
+          "lapis_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "lapis_ore"
+                }
+              }
+            ]
+          },
+          "diamond_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "diamond_ore"
+                }
+              }
+            ]
+          },
+          "sparkstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:sparkstone_ore"
+                }
+              }
+            ]
+          },
+          "iridium_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:iridium_ore"
+                }
+              }
+            ]
+          },
+          "emerald_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "emerald_ore"
+                }
+              }
+            ]
+          },
+          "zinc_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "create:zinc_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_coal_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_coal_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_copper_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_copper_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_iron_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_iron_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_gold_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_gold_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_redstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_redstone_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_lapis_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_lapis_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_diamond_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_diamond_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_emerald_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "deepslate_emerald_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_zinc_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "create:deepslate_zinc_ore"
+                }
+              }
+            ]
+          },
+          "geode_node": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:geode_node"
+                }
+              }
+            ]
+          },
+          "magma_geode_node": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:magma_geode_node"
+                }
+              }
+            ]
+          },
+          "omni_geode_node": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:omni_geode_node"
+                }
+              }
+            ]
+          },
+          "nether_gold_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "minecraft:nether_gold_ore"
+                }
+              }
+            ]
+          },
+          "nether_bismuth_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "etcetera:nether_bismuth_ore"
+                }
+              }
+            ]
+          },
+          "nether_quartz_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "minecraft:nether_quartz_ore"
+                }
+              }
+            ]
+          },
+          "silver_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:silver_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_silver_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:deepslate_silver_ore"
+                }
+              }
+            ]
+          },
+          "lead_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:lead_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_lead_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:deepslate_lead_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_sparkstone_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:deepslate_sparkstone_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_iridium_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:deepslate_iridium_ore"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "!silk_touch & (coal_ore | copper_ore | alpine_coal_ore)",
+            "expression": "5"
+          },
+          {
+            "condition": "!silk_touch & (iron_ore | lapis_ore | alpine_iron_ore | alpine_lapis_ore | alpine_salt_ore)",
+            "expression": "6"
+          },
+          {
+            "condition": "!silk_touch & (gold_ore | alpine_gold_ore | redstone_ore | alpine_redstone_ore | zinc_ore)",
+            "expression": "7"
+          },
+          {
+            "condition": "!silk_touch & (diamond_ore | emerald_ore | alpine_emerald_ore | alpine_diamond_ore )",
+            "expression": "16"
+          },
+          {
+            "condition": "!silk_touch & (deepslate_coal_ore | deepslate_copper_ore)",
+            "expression": "6"
+          },
+          {
+            "condition": "!silk_touch & (deepslate_iron_ore | deepslate_lapis_ore)",
+            "expression": "8"
+          },
+          {
+            "condition": "!silk_touch & (deepslate_gold_ore | deepslate_redstone_ore | deepslate_zinc_ore)",
+            "expression": "10"
+          },
+          {
+            "condition": "!silk_touch & (deepslate_diamond_ore | deepslate_emerald_ore)",
+            "expression": "20"
+          },
+          {
+            "condition": "!silk_touch & geode_node",
+            "expression": "30"
+          },
+          {
+            "condition": "!silk_touch & magma_geode_node",
+            "expression": "60"
+          },
+          {
+            "condition": "!silk_touch & omni_geode_node",
+            "expression": "90"
+          },
+          {
+            "condition": "!silk_touch & (nether_gold_ore | nether_bismuth_ore | nether_quartz_ore)",
+            "expression": "40"
+          },
+          {
+            "condition": "!silk_touch & lead_ore",
+            "expression": "60"
+          },
+          {
+            "condition": "!silk_touch & silver_ore",
+            "expression": "80"
+          },
+          {
+            "condition": "!silk_touch & sparkstone_ore",
+            "expression": "100"
+          },
+          {
+            "condition": "!silk_touch & deepslate_lead_ore",
+            "expression": "120"
+          },
+          {
+            "condition": "!silk_touch & deepslate_silver_ore",
+            "expression": "160"
+          },
+          {
+            "condition": "!silk_touch & deepslate_sparkstone_ore",
+            "expression": "200"
+          },
+          {
+            "condition": "!silk_touch & iridium_ore",
+            "expression": "200"
+          },
+          {
+            "condition": "!silk_touch & deepslate_iridium_ore",
+            "expression": "400"
+          }
+        ]
+      }
+    },
+    {
+      "type": "puffish_skills:eat_food",
+      "data": {
+        "variables": {
+          "is_dish": {
+            "operations": [
+              {
+                "type": "get_eaten_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "#society:dish"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_dish",
+            "expression": "20"
+          }
+        ]
+      }
+    },
+    {
+      "type": "puffish_skills:craft_item",
+      "data": {
+        "variables": {
+          "crab_trap_bait": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "crabbersdelight:crab_trap_bait"
+                }
+              }
+            ]
+          },
+          "crab_trap": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "crabbersdelight:crab_trap"
+                }
+              }
+            ]
+          },
+          "fish_pond": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:fish_pond"
+                }
+              }
+            ]
+          },
+          "bait_maker": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:bait_maker"
+                }
+              }
+            ]
+          },
+          "fish_smoker": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:fish_smoker"
+                }
+              }
+            ]
+          },
+          "deluxe_worm_farm": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:deluxe_worm_farm"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "crab_trap_bait",
+            "expression": "5"
+          },
+          {
+            "condition": "crab_trap",
+            "expression": "100"
+          },
+          {
+            "condition": "fish_pond",
+            "expression": "300"
+          },
+          {
+            "condition": "fish_smoker",
+            "expression": "400"
+          },
+          {
+            "condition": "bait_maker",
+            "expression": "600"
+          },
+          {
+            "condition": "deluxe_worm_farm",
+            "expression": "500"
+          }
+        ]
+      }
+    },
+    {
+      "type": "puffish_skills:fish_item",
+      "data": {
+        "variables": {
+          "is_fish": {
+            "operations": [
+              {
+                "type": "get_fished_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "#fishes"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_fish",
+            "expression": "100"
+          },
+          {
+            "condition": "!is_fish",
+            "expression": "10"
+          }
+        ]
+      }
+    }
+  ]
+}

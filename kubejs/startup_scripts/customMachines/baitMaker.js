@@ -77,7 +77,7 @@ const baitFish = [
   "unusualfishmod:raw_eyelash",
   "crittersandcompanions:koi_fish",
 ];
-global.baitMakerRecipes = [];
+global.baitMakerRecipes = new Map([]);
 baitFish.forEach((fish) => {
   const splitFish = fish.split(":");
   let fishId = splitFish[1];
@@ -86,8 +86,7 @@ baitFish.forEach((fish) => {
       if (fishId === "raw_snowflake") fishId = "frosty_fin";
       else fishId = fishId.substring(4, fishId.length);
     }
-    global.baitMakerRecipes.push({
-      input: fish,
+    global.baitMakerRecipes.set(fish, {
       output: [`3x society:${fishId}_bait`],
     });
   }
@@ -98,17 +97,15 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 1))
-    .property(integerProperty.create("type", 0, global.baitMakerRecipes.length))
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
     .soundType("copper")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns a fish into 3 bait"));
+      item.tooltip(Text.translatable("block.society.bait_maker.description").gray());
       item.modelJson({
-        parent: "society:block/bait_maker/bait_maker_off",
+        parent: "society:block/kubejs/bait_maker/bait_maker_off",
       });
     })
     .defaultState((state) => {
@@ -116,22 +113,18 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 1), 0)
-        .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 1), 0)
-        .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .rightClick((click) => {
       global.handleBERightClick("aquaculture:fish_death", click, global.baitMakerRecipes, 1);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.baitMakerRecipes, 1);
       });

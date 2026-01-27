@@ -8,7 +8,7 @@ global.handleSkullSleep = (e) => {
   level.getServer().players.forEach((p) => {
     if (p.getLevel().dimension === "society:skull_cavern") {
       entity.tell(
-        Text.red("Sleeping now would abandon your friend " + p.username + " in the Skull Cavern!")
+        Text.translatable("society.skull_cavern.cannot_sleep", p.username).red()
       );
       e.cancel();
     }

@@ -1,0 +1,6 @@
+//Introduction to using Custom Block Property Handle mirror:
+//Here you can modify the final result of any blocks you want during blueprint XYZ mirroring.
+//Warning: once you add any block here, it will no longer be affected by the automatic XYZ mirroring handled by the mod!
+//The mod already includes an internal file like this, but any block you define here will override the internal one and take priority. (Priority order is always: user settings > mod default)
+//For details on how to use this file, please refer to the wiki on the mod’s GitHub: https://github.com/Nimblonia/Mod_Portable_blueprint_Community/discussions/17
+{}

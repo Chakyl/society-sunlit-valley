@@ -4,6 +4,15 @@ overridden_screens {
 }
 
 custom_gui {
+  identifier = credits
+  title = Credits
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+}
+
+custom_gui {
   identifier = title_screen
   title = 
   allow_esc = false

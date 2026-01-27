@@ -1,0 +1,26 @@
+{
+  "name": "Sparkpod 🌼",
+  "category": "patchouli:crops",
+  "icon": "society:sparkpod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 100$(li)🌼 §2Spring§r$(li)Seed Price: :coin: 4,096$(li)Yield: 1$(li)Grow time: 8 days"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Sparkpod Crop",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "society:sparkpod[age=8]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

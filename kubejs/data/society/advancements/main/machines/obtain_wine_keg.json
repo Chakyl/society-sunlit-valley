@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/machines/obtain_tapper",
+  "criteria": {
+    "wine_keg": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:wine_keg"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_wine_keg.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:wine_keg"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_wine_keg.title"
+    }
+  },
+  "requirements": [["wine_keg"]],
+  "sends_telemetry_event": true
+}

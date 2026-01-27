@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/root",
+  "criteria": {
+    "gnome": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:gnome"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_gnome.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:gnome"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_gnome.title"
+    }
+  },
+  "requirements": [["gnome"]],
+  "sends_telemetry_event": true
+}

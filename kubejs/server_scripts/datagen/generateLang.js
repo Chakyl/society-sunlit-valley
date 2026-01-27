@@ -1,4 +1,5 @@
 const runLangDataGen = false;
+
 if (runLangDataGen) {
   let objs = {};
   let societyItems = Ingredient.of("@society").getStacks();

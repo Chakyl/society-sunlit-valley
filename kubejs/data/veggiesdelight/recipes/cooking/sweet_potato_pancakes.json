@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "veggiesdelight:sweet_potato_dough"
+    },
+    {
+      "item": "society:maple_syrup"
+    },
+    {
+      "tag": "society:small_milk"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "veggiesdelight:sweet_potato_pancakes"
+  }
+}

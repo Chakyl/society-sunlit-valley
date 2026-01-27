@@ -5,7 +5,51 @@
 	#Enable Veggies Delight Wandering Trader trades
 	enableWanderingTrades = false
 
-["Village Settings"]
-	#Enable Veggies Delight village structures
-	generateVillageStructures = false
+["Structure Settings"]
+	#Enable Veggies Delight to add new village structures (disables all compat if false)
+	generateVeggiesDelightStructures = false
+
+	["Structure Settings"."Village Settings"]
+		#Enable generation of Veggies Delight structures in Vanilla villages
+		generateVanillaVillageStructures = false
+
+	["Structure Settings"."Compat Settings"]
+		#Enable generation of Veggies Delight structures in Atmospheric villages
+		generateAtmosphericVillageStructures = false
+		#Enable generation of Veggies Delight structures in Nature's Spirit villages
+		generateNatureSpiritVillageStructures = false
+		#Enable generation of Veggies Delight structures in Repurposed Structures villages
+		generateRepurposedStructuresVillageStructures = false
+		#Enable generation of Veggies Delight structures in Windswept villages
+		generateWindsweptVillageStructures = false
+		#Enable generation of Veggies Delight structures in Explorify's Dark Forest Settlement
+		generateExplorifyStructures = false
+
+["Worldgen Settings"]
+
+	["Worldgen Settings"."Worldgen Settings"]
+		#Chance of Bell Peppers generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceBellPeppers = 100
+		#Chance of Broccoli generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceBroccoli = 120
+		#Chance of Cauliflowers generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceCauliflowers = 120
+		#Chance of Garlic generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceGarlic = 0
+		#Chance of Sweet Potatoes generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceSweetPotatoes = 0
+		#Chance of Turnips generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceTurnips = 20
+		#Chance of Zucchinis generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceZucchinis = 0
+		#Chance of Mature Dandelions generating in the world. (0 to disable, higher = rarer)
+		#Range: 0 ~ 512
+		chanceMatureDandelion = 40
 

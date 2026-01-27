@@ -14,10 +14,11 @@ PlayerEvents.loggedIn((e) => {
       player.give("waystones:white_sharestone");
       player.give(
         Item.of(
-          "candlelight:note_paper_written",
-          `{author:"Society",text:["Welcome!
-
-Thanks for taking part in a Sunlit Valley Multiplayer Server! You've been given a White Sharestone to make traveling to other bases easier. Please be sure to claim your base before placing it!"],title:"Server Welcome"}`
+          global.getNotePaperItem(
+            Text.translatable("society.starting_item_sharestone.author").getString(),
+            Text.translatable("society.starting_item_sharestone.text").getString(),
+            Text.translatable("society.starting_item_sharestone.title").getString(),         
+          )
         )
       );
     }

@@ -116,6 +116,18 @@ StartupEvents.registry("fluid", (e) => {
     .displayName("Starfruit Juice")
     .tag("society:starfruit_juice");
 
+  e.create("society:sparkpod_juice")
+    .thinTexture(0xdf31f2)
+    .bucketColor(0xdf31f2)
+    .displayName("Sparkpod Juice")
+    .tag("society:sparkpod_juice");
+
+  e.create("society:mana_fruit_juice")
+    .thinTexture(0x00dedf)
+    .bucketColor(0x00dedf)
+    .displayName("Mana Fruit Juice")
+    .tag("society:mana_fruit_juice");
+
   e.create("relics:relic_experience")
     .thickTexture(0xf7b23f)
     .bucketColor(0xf7b23f)

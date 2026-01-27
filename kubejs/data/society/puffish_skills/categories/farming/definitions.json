@@ -1,6 +1,6 @@
 {
   "axe_efficiency+1": {
-    "title": "+I Axe Efficiency",
+    "title": {"translate": "society_skills.farming.axe_efficiency"},
     "icon": {
       "type": "item",
       "data": {
@@ -19,7 +19,7 @@
     ]
   },
   "shovel_efficiency+1": {
-    "title": "+I Shovel Efficiency",
+    "title": {"translate": "society_skills.farming.shovel_efficiency"},
     "icon": {
       "type": "item",
       "data": {
@@ -38,7 +38,7 @@
     ]
   },
   "speed+5%": {
-    "title": "+5% Movement Speed",
+    "title": {"translate": "society_skills.farming.speed"},
     "icon": {
       "type": "effect",
       "data": {
@@ -57,8 +57,8 @@
     ]
   },
   "tiller": {
-    "title": "Tiller",
-    "description": "🔱 Farmer products worth 15% more.",
+    "title": {"translate": "society_skills.farming.tiller"},
+    "description": {"translate": "society_skills.farming.tiller.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -89,8 +89,8 @@
     ]
   },
   "soil_inspector": {
-    "title": "Soil Inspector",
-    "description": "Chance to dig up §6Plant Nutrients§7 when manually harvesting crops.",
+    "title": {"translate": "society_skills.farming.soil_inspector"},
+    "description": {"translate": "society_skills.farming.soil_inspector.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -108,8 +108,8 @@
     ]
   },
   "sticky_crops": {
-    "title": "Sticky Crops",
-    "description": "Chance to find §6Pine Tar§7 when manually harvesting crops.",
+    "title": {"translate": "society_skills.farming.sticky_crops"},
+    "description": {"translate": "society_skills.farming.sticky_crops.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -127,8 +127,8 @@
     ]
   },
   "artisan": {
-    "title": "Artisan",
-    "description": "§f✎§7 Artisan products worth 20% more.",
+    "title": {"translate": "society_skills.farming.artisan"},
+    "description": {"translate": "society_skills.farming.artisan.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -159,8 +159,8 @@
     ]
   },
   "aged_prize": {
-    "title": "Aged Prize",
-    "description": "§65%§7 chance to find §6Prize Tickets§7 when collecting from §6Aging Cask§7.",
+    "title": {"translate": "society_skills.farming.aged_prize"},
+    "description": {"translate": "society_skills.farming.aged_prize.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -184,8 +184,8 @@
     ]
   },
   "ancient_aging": {
-    "title": "Ancient Aging",
-    "description": "Adds ability to use §6Ancient Casks",
+    "title": {"translate": "society_skills.farming.ancient_aging"},
+    "description": {"translate": "society_skills.farming.ancient_aging.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -209,8 +209,8 @@
     ]
   },
   "artful_tycoon": {
-    "title": "Artful Tycoon",
-    "description": "✎ Artisan products worth 80% more.\n\n§cDoes not stack with previous skills.",
+    "title": {"translate": "society_skills.farming.artful_tycoon"},
+    "description": {"translate": "society_skills.farming.artful_tycoon.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -241,8 +241,8 @@
     ]
   },
   "rancher": {
-    "title": "Rancher",
-    "description": "§6Artisan Cheese Presses§7, §6Mayo Machines§7, and §6Looms§7 output double.",
+    "title": {"translate": "society_skills.farming.rancher"},
+    "description": {"translate": "society_skills.farming.rancher.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -266,8 +266,8 @@
     ]
   },
   "reaping_scythe": {
-    "title": "Reaping Scythe",
-    "description": "Farm animals have a chance to gift a §6Heart of Diamond§7.",
+    "title": {"translate": "society_skills.farming.reaping_scythe"},
+    "description": {"translate": "society_skills.farming.reaping_scythe.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -291,8 +291,8 @@
     ]
   },
   "tree_whisperer": {
-    "title": "Tree Whisperer",
-    "description": "Fruit trees drop +2 fruit when manually harvesting.",
+    "title": {"translate": "society_skills.farming.tree_whisperer"},
+    "description": {"translate": "society_skills.farming.tree_whisperer.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -316,8 +316,8 @@
     ]
   },
   "crop_collector": {
-    "title": "Crop Collector",
-    "description": "Crops drop double outputs when manually harvesting.",
+    "title": {"translate": "society_skills.farming.crop_collector"},
+    "description": {"translate": "society_skills.farming.crop_collector.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -341,8 +341,8 @@
     ]
   },
   "farmers_blessing": {
-    "title": "Farmer's Blessing",
-    "description": "Adds ability to use §6Ancient Goddess Statues.",
+    "title": {"translate": "society_skills.farming.farmers_blessing"},
+    "description": {"translate": "society_skills.farming.farmers_blessing.description"},
     "frame": {
       "type": "advancement",
       "data": {

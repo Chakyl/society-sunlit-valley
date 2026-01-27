@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "society:mossberry"
+    },
+    {
+      "item": "society:mossberry"
+    },
+    {
+      "item": "society:mossberry"
+    }
+  ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "society:mossberry_stew"
+  }
+}

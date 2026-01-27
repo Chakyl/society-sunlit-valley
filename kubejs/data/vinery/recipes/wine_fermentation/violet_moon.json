@@ -1,0 +1,24 @@
+{
+  "type": "vinery:wine_fermentation",
+  "juice": {
+    "type": "red_general",
+    "amount": 25
+  },
+  "ingredients": [
+    {
+      "item": "society:sparkpod"
+    },
+    {
+      "item": "society:sparkpod"
+    },
+    {
+      "item": "society:sparkpod"
+    }
+  ],
+  "wine_bottle": {
+    "required": true
+  },
+  "result": {
+    "item": "society:violet_moon"
+  }
+}

@@ -114,6 +114,20 @@ LootJS.modifiers((e) => {
     });
   e.addBlockLootModifier("aquaculture:neptunes_bounty")
     .hasAnyStage("prismatic_bounty")
-    .not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")))
-    .replaceLoot("aquaculture:neptunes_bounty", "society:prismatic_shard", true);
+    .not((n) =>
+      n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+    )
+    .replaceLoot(
+      "aquaculture:neptunes_bounty",
+      "society:prismatic_shard",
+      true
+    );
+
+  // Mastery
+  e.addLootTypeModifier(LootType.FISHING)
+    .hasAnyStage("husbandry_mastery")
+    .pool((p) => {
+      p.randomChance(0.01).addLoot("society:animal_cracker");
+      p.randomChance(0.05).addLoot("society:plushie_capsule");
+    });
 });
