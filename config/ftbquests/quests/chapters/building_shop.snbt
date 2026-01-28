@@ -1,12 +1,11 @@
 {
-	autofocus_id: "049EB48B999881A3"
+	autofocus_id: "46B41FB9B429E374"
 	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	default_repeatable_quest: true
 	filename: "building_shop"
 	group: ""
-	hide_quest_until_deps_complete: true
 	icon: "liltractor:liltractor"
 	id: "61126DF67FF815EC"
 	order_index: 1
@@ -15,7 +14,7 @@
 	quests: [
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{image:society:textures/gui/buildings/barn.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/barn_basic.png width:200 height:200 align:center}"]
 			icon: "minecraft:chest"
 			id: "159D294DF1634063"
 			min_required_tasks: 3
@@ -28,7 +27,7 @@
 						Damage: 1
 						allow_nbt: 1
 						altezza: 0
-						blueprint_name: "barn"
+						blueprint_name: "barn_basic"
 						buildAnyway: 0b
 						display: {
 							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Barn\"}"
@@ -40,9 +39,9 @@
 						mirrowX: 0b
 						mirrowY: 0b
 						mirrowZ: 0b
-						nome: "barn"
+						nome: "barn_basic"
 						owner: "worn"
-						owner_name: "Chakyl"
+						owner_name: "EeveeBeby & Chakyl"
 						remaining_uses: 1
 						rotateValue: 0s
 						skipObstructionBlock: 0b
@@ -54,7 +53,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest1.subtitle}"
+			subtitle: "Designed by &6EeveeBeby&r \\& &6Chakyl&r - 17 blocks deep, 13 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -79,8 +78,8 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest1.title}"
-			x: -15.0d
+			title: "Basic Barn"
+			x: -15.5d
 			y: -11.0d
 		}
 		{
@@ -124,7 +123,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest2.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 17 blocks deep, 13 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -150,12 +149,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest2.title}"
-			x: -14.0d
+			x: -14.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{image:society:textures/gui/buildings/shed.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/shed_basic.png width:200 height:200 align:center}"]
 			icon: "minecraft:chest"
 			id: "48A453D05E39ECC5"
 			min_required_tasks: 3
@@ -168,7 +167,7 @@
 						Damage: 1
 						allow_nbt: 1
 						altezza: 0
-						blueprint_name: "shed"
+						blueprint_name: "shed_basic"
 						buildAnyway: 0b
 						display: {
 							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Shed\"}"
@@ -180,9 +179,9 @@
 						mirrowX: 0b
 						mirrowY: 0b
 						mirrowZ: 0b
-						nome: "shed"
+						nome: "shed_basic"
 						owner: "worn"
-						owner_name: "Chakyl"
+						owner_name: "EeveeBeby & Chakyl"
 						remaining_uses: 1
 						rotateValue: 0s
 						skipObstructionBlock: 0b
@@ -194,7 +193,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest3.subtitle}"
+			subtitle: "Designed by &6EeveeBeby&r \\& &6Chakyl&r - 15 blocks deep, 13 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -219,15 +218,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest3.title}"
-			x: -7.0d
+			title: "Basic Shed"
+			x: -6.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
 			description: [
 				""
-				"{image:society:textures/gui/buildings/large_shed.png width:256 height:192 align:center}"
+				"{image:society:textures/gui/buildings/large_shed_basic.png width:200 height:200 align:center}"
 			]
 			icon: "minecraft:chest"
 			id: "58E58FA16E362F3F"
@@ -241,10 +240,10 @@
 						Damage: 1
 						allow_nbt: 1
 						altezza: 0
-						blueprint_name: "large_shed"
+						blueprint_name: "large_shed_basic"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Large Shed\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Large Basic Shed\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -253,9 +252,9 @@
 						mirrowX: 0b
 						mirrowY: 0b
 						mirrowZ: 0b
-						nome: "large_shed"
+						nome: "large_shed_basic"
 						owner: "worn"
-						owner_name: "Chakyl"
+						owner_name: "EeveeBeby & Chakyl"
 						remaining_uses: 1
 						rotateValue: 0s
 						skipObstructionBlock: 0b
@@ -267,7 +266,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest4.subtitle}"
+			subtitle: "Designed by &6EeveeBeby&r \\& &6Chakyl&r - 20 blocks deep, 22 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -288,9 +287,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest4.title}"
-			x: -7.0d
-			y: -2.0d
+			title: "Large Basic Shed"
+			x: -6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -333,7 +332,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest5.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 20 blocks deep, 20 blocks wide, and 12 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -355,8 +354,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest5.title}"
-			x: -6.0d
-			y: -2.0d
+			x: -5.5d
+			y: -3.5d
 		}
 		{
 			can_repeat: false
@@ -377,7 +376,7 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest6.title}"
-			x: -6.0d
+			x: -5.5d
 			y: -12.5d
 		}
 		{
@@ -447,7 +446,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest7.title}"
-			x: -6.0d
+			x: -5.5d
 			y: -11.0d
 		}
 		{
@@ -469,8 +468,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest8.title}"
-			x: -6.0d
-			y: -3.5d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			can_repeat: false
@@ -492,7 +491,7 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest9.title}"
-			x: -14.0d
+			x: -14.5d
 			y: -12.5d
 		}
 		{
@@ -559,7 +558,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 31 blocks deep, 25 blocks wide, and 13 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -581,8 +580,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest11.title}"
-			x: -15.0d
-			y: -1.0d
+			x: -15.5d
+			y: -2.5d
 		}
 		{
 			can_repeat: false
@@ -603,8 +602,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest12.title}"
-			x: -14.0d
-			y: -3.5d
+			x: -14.5d
+			y: -5.0d
 		}
 		{
 			can_repeat: false
@@ -626,12 +625,12 @@
 			}]
 			title: "{ftbquests.chapter.building_shop.quest13.title}"
 			x: -10.0d
-			y: -3.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{image:society:textures/gui/buildings/house_tudor.png width:221 height:183 align:center}"]
-			icon: "minecraft:chest"
+			description: ["{image:society:textures/gui/buildings/home_tudor.png width:200 height:200 align:center}"]
+			icon: "supplementaries:daub_brace"
 			id: "0DE08377D5510577"
 			min_required_tasks: 3
 			rewards: [{
@@ -669,7 +668,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest14.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 20 blocks deep, 13 blocks wide, and 16 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -691,12 +690,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest14.title}"
-			x: -11.0d
-			y: -2.0d
+			x: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{image:society:textures/gui/buildings/house_siberian.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/home_siberian.png width:200 height:200 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "6493A6EC5C197458"
 			min_required_tasks: 3
@@ -758,11 +757,11 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest15.title}"
 			x: -9.0d
-			y: -2.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{image:society:textures/gui/buildings/shed_siberian.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/shed_siberian.png width:200 height:200 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "07BB9D445D97EBF5"
 			min_required_tasks: 3
@@ -801,7 +800,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest16.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 15 blocks deep, 11 blocks wide, and 8 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -827,12 +826,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest16.title}"
-			x: -5.0d
+			x: -4.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{image:society:textures/gui/buildings/barn_siberian.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/barn_siberian.png width:200 height:200 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "35740442BFA1EBB5"
 			min_required_tasks: 3
@@ -871,7 +870,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest17.subtitle}"
+			subtitle: "Designed by &6EeveeBeby&r - 20 blocks deep, 13 blocks wide, and 15 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -897,7 +896,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest17.title}"
-			x: -13.0d
+			x: -13.5d
 			y: -11.0d
 		}
 		{
@@ -940,7 +939,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest18.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 19 blocks deep, 13 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -966,7 +965,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest18.title}"
-			x: -7.0d
+			x: -6.5d
 			y: -10.0d
 		}
 		{
@@ -1009,7 +1008,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 18 blocks deep, 24 blocks wide, and 19 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -1032,7 +1031,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest19.title}"
 			x: -10.0d
-			y: -1.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -1074,7 +1073,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 21 blocks deep, 17 blocks wide, and 10 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1100,7 +1099,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest20.title}"
-			x: -15.0d
+			x: -15.5d
 			y: -10.0d
 		}
 		{
@@ -1143,7 +1142,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 22 blocks deep, 24 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1165,13 +1164,13 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest21.title}"
-			x: -7.0d
-			y: -1.0d
+			x: -6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{image:society:textures/gui/buildings/large_shed_siberian.png width:221 height:183 align:center}"]
-			icon: "quark:spruce_chest"
+			description: ["{image:society:textures/gui/buildings/large_shed_tudor.png width:200 height:200 align:center}"]
+			icon: "supplementaries:daub_brace"
 			id: "5197C4847648B6A8"
 			min_required_tasks: 3
 			rewards: [{
@@ -1183,10 +1182,10 @@
 						Damage: 1
 						allow_nbt: 1
 						altezza: 0
-						blueprint_name: "large_shed_siberian"
+						blueprint_name: "large_shed_tudor"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Large Shed\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Large Shed\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -1195,9 +1194,9 @@
 						mirrowX: 0b
 						mirrowY: 0b
 						mirrowZ: 0b
-						nome: "large_shed_siberian"
+						nome: "large_shed_tudor"
 						owner: "worn"
-						owner_name: "Chakyl"
+						owner_name: "Kanlamari"
 						remaining_uses: 1
 						rotateValue: 0s
 						skipObstructionBlock: 0b
@@ -1209,7 +1208,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 27 blocks deep, 24 blocks wide, and 21 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1230,9 +1229,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest22.title}"
-			x: -5.0d
-			y: -2.0d
+			title: "Tudor Large Shed"
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -1298,11 +1297,11 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest23.title}"
 			x: -10.0d
-			y: -2.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{image:society:textures/gui/buildings/deluxe_barn_siberian.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_siberian.png width:200 height:200 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "4B66E59F25F6CF77"
 			min_required_tasks: 3
@@ -1363,8 +1362,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest24.title}"
-			x: -13.0d
-			y: -2.0d
+			x: -13.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1429,12 +1428,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest25.title}"
-			x: -14.0d
-			y: -2.0d
+			x: -14.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{image:society:textures/gui/buildings/deluxe_barn.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_basic.png width:200 height:200 align:center}"]
 			icon: "minecraft:chest"
 			id: "4029ADC0C59A181D"
 			min_required_tasks: 3
@@ -1447,10 +1446,10 @@
 						Damage: 1
 						allow_nbt: 1
 						altezza: 0
-						blueprint_name: "deluxe_barn"
+						blueprint_name: "deluxe_barn_basic"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Deluxe Barn\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Deluxe Basic Barn\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -1459,9 +1458,9 @@
 						mirrowX: 0b
 						mirrowY: 0b
 						mirrowZ: 0b
-						nome: "deluxe_barn"
+						nome: "deluxe_barn_basic"
 						owner: "worn"
-						owner_name: "Chakyl"
+						owner_name: "EeveeBeby & Chakyl"
 						remaining_uses: 1
 						rotateValue: 0s
 						skipObstructionBlock: 0b
@@ -1473,7 +1472,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest26.subtitle}"
+			subtitle: "Designed by &6EeveeBeby&r \\& &6Chakyl&r - 27 blocks deep, 21 blocks wide, 12 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -1494,9 +1493,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest26.title}"
-			x: -15.0d
-			y: -2.0d
+			title: "Deluxe Basic Barn"
+			x: -15.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -1564,12 +1563,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest27.title}"
-			x: -14.0d
+			x: -14.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{image:society:textures/gui/buildings/barn_entrana.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/barn_entrana.png width:200 height:200 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "1EE50E55155925ED"
 			min_required_tasks: 3
@@ -1596,7 +1595,7 @@
 						mirrowZ: 0b
 						nome: "barn_entrana"
 						owner: "worn"
-						owner_name: "JadeClouds"
+						owner_name: "Kanlamari"
 						remaining_uses: 1
 						rotateValue: 0s
 						skipObstructionBlock: 0b
@@ -1608,7 +1607,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest28.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 21 blocks deep, 17 blocks wide, and 14 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1634,7 +1633,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest28.title}"
-			x: -13.0d
+			x: -13.5d
 			y: -10.0d
 		}
 		{
@@ -1699,12 +1698,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest29.title}"
-			x: -14.0d
-			y: -1.0d
+			x: -14.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{image:society:textures/gui/buildings/deluxe_barn_entrana.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_entrana.png width:200 height:200 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "1B18A02B9B3EF71A"
 			min_required_tasks: 3
@@ -1742,7 +1741,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest30.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 23 blocks deep, 19 blocks wide, 19 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -1764,12 +1763,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest30.title}"
-			x: -13.0d
-			y: -1.0d
+			x: -13.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{image:society:textures/gui/buildings/house_entrana.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/home_entrana.png width:200 height:200 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "5281409C93ABC5AB"
 			min_required_tasks: 3
@@ -1808,7 +1807,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest31.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 26 blocks deep, 28 blocks wide, and 22 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -1831,7 +1830,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest31.title}"
 			x: -9.0d
-			y: -1.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -1873,7 +1872,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest32.subtitle}"
+			subtitle: "Designed by &6AndieCherries&r - 20 blocks deep, 22 blocks wide, and 15 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -1896,7 +1895,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest32.title}"
 			x: -11.0d
-			y: -1.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -1964,12 +1963,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest33.title}"
-			x: -6.0d
+			x: -5.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{image:society:textures/gui/buildings/shed_entrana.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/shed_entrana.png width:200 height:200 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "5C1AE4AC1EC670F8"
 			min_required_tasks: 3
@@ -2008,7 +2007,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest34.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 19 blocks deep, 23 blocks wide, 13 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2034,7 +2033,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest34.title}"
-			x: -5.0d
+			x: -4.5d
 			y: -10.0d
 		}
 		{
@@ -2099,12 +2098,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest35.title}"
-			x: -6.0d
-			y: -1.0d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: ["{image:society:textures/gui/buildings/large_shed_entrana.png width:221 height:183 align:center}"]
+			description: ["{image:society:textures/gui/buildings/large_shed_entrana.png width:200 height:200 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "118DEF3CA6FB5713"
 			min_required_tasks: 3
@@ -2143,7 +2142,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest36.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 22 blocks deep, 28 blocks wide, and 19 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2165,8 +2164,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest36.title}"
-			x: -5.0d
-			y: -1.0d
+			x: -4.5d
+			y: -2.5d
 		}
 		{
 			can_repeat: false
@@ -2187,13 +2186,13 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest37.title}"
-			x: -10.0d
-			y: -12.5d
+			x: -1.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{image:society:textures/gui/buildings/coop.png width:198 height:168 align:center}"]
-			icon: "minecraft:chest"
+			description: ["{image:society:textures/gui/buildings/coop.png width:200 height:200 align:center}"]
+			icon: "supplementaries:daub_brace"
 			id: "26786C93CF7A75C3"
 			min_required_tasks: 3
 			rewards: [{
@@ -2205,10 +2204,10 @@
 						Damage: 1
 						allow_nbt: 1
 						altezza: 0
-						blueprint_name: "coop"
+						blueprint_name: "coop_tudor"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Coop\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Coop\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -2217,7 +2216,7 @@
 						mirrowX: 0b
 						mirrowY: 0b
 						mirrowZ: 0b
-						nome: "coop"
+						nome: "coop_tudor"
 						owner: "worn"
 						owner_name: "charlotte.b"
 						remaining_uses: 1
@@ -2231,7 +2230,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest38.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 14 blocks deep, 9 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2256,9 +2255,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest38.title}"
-			x: -11.0d
-			y: -11.0d
+			title: "Tudor Coop"
+			x: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2301,7 +2300,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest39.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 13 blocks deep, 11 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2327,12 +2326,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest39.title}"
-			x: -10.0d
-			y: -11.0d
+			x: -1.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{image:society:textures/gui/buildings/coop_siberian.png width:198 height:178 align:center}"]
+			description: ["{image:society:textures/gui/buildings/coop_siberian.png width:200 height:200 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "2705D27735C4858B"
 			min_required_tasks: 3
@@ -2371,7 +2370,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest40.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 10 blocks deep, 12 blocks wide, and 6 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2397,8 +2396,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest40.title}"
-			x: -9.0d
-			y: -11.0d
+			x: -0.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2440,7 +2439,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest41.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 16 blocks deep, 15 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2466,8 +2465,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest41.title}"
-			x: -11.0d
-			y: -10.0d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2509,7 +2508,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest42.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 17 blocks deep, 16 blocks wide, and 13 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2535,12 +2534,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest42.title}"
-			x: -10.0d
-			y: -10.0d
+			x: -1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{image:society:textures/gui/buildings/coop_entrana.png width:198 height:178 align:center}"]
+			description: ["{image:society:textures/gui/buildings/coop_entrana.png width:200 height:200 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "517BDCBA749E1F0F"
 			min_required_tasks: 3
@@ -2579,7 +2578,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest43.subtitle}"
+			subtitle: "Designed by &6charlotte.b&r - 17 blocks deep, 22 blocks wide, and 13 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2605,8 +2604,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest43.title}"
-			x: -9.0d
-			y: -10.0d
+			x: -0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -2648,7 +2647,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest44.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 16 blocks deep, 17 blocks wide, and 10 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2674,7 +2673,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest44.title}"
-			x: -6.0d
+			x: -5.5d
 			y: -9.0d
 		}
 		{
@@ -2717,7 +2716,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest45.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 19 blocks deep, 25 blocks wide, and 21 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2739,8 +2738,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest45.title}"
-			x: -6.0d
-			y: 0.0d
+			x: -5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2786,7 +2785,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest46.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 17 blocks deep, 11 blocks wide, and 10 blocks tall"
 			tasks: [
 				{
 					count: 2L
@@ -2812,8 +2811,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest46.title}"
-			x: -10.0d
-			y: -9.0d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -2859,7 +2858,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest47.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 16 blocks deep, 22 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2885,7 +2884,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest47.title}"
-			x: -14.0d
+			x: -14.5d
 			y: -9.0d
 		}
 		{
@@ -2954,8 +2953,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest48.title}"
-			x: -14.0d
-			y: 0.0d
+			x: -14.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -3001,7 +3000,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest49.subtitle}"
+			subtitle: "Designed by &6Kanlamari&r - 27 blocks deep, 25 blocks wide, and 15 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -3024,7 +3023,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest49.title}"
 			x: -10.0d
-			y: 0.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -3092,7 +3091,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest50.title}"
-			x: -13.0d
+			x: -13.5d
 			y: -9.0d
 		}
 		{
@@ -3161,8 +3160,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest51.title}"
-			x: -9.0d
-			y: -9.0d
+			x: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -3204,7 +3203,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest52.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 12 blocks deep, 12 blocks wide, and 8 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3230,7 +3229,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest52.title}"
-			x: -5.0d
+			x: -4.5d
 			y: -9.0d
 		}
 		{
@@ -3273,7 +3272,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest53.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 15 blocks deep, 15 blocks wide, and 10 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3295,8 +3294,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest53.title}"
-			x: -5.0d
-			y: 0.0d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -3338,7 +3337,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest54.subtitle}"
+			subtitle: "Designed by &6Duy Luong&r - 15 blocks deep, 15 blocks wide, and 16 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -3361,7 +3360,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest54.title}"
 			x: -9.0d
-			y: 0.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -3425,8 +3424,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest55.title}"
-			x: -13.0d
-			y: 0.0d
+			x: -13.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -3468,7 +3467,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest56.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 17 blocks deep, 15 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3494,7 +3493,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest56.title}"
-			x: -15.0d
+			x: -15.5d
 			y: -9.0d
 		}
 		{
@@ -3537,7 +3536,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest57.subtitle}"
+			subtitle: "Designed by &6aviahime&r - 13 blocks deep, 14 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3563,7 +3562,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest57.title}"
-			x: -14.5d
+			x: -15.5d
 			y: -8.0d
 		}
 		{
@@ -3632,8 +3631,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest58.title}"
-			x: -11.0d
-			y: -9.0d
+			x: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -3701,8 +3700,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest59.title}"
-			x: -10.5d
-			y: -8.0d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -3770,7 +3769,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest60.title}"
-			x: -7.0d
+			x: -6.5d
 			y: -9.0d
 		}
 		{
@@ -3813,7 +3812,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest61.subtitle}"
+			subtitle: "Designed by &6Howeseter84&r - 29 blocks deep, 25 blocks wide, and 17 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -3835,8 +3834,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest61.title}"
-			x: -7.0d
-			y: 0.0d
+			x: -6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -3901,7 +3900,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest62.title}"
 			x: -11.0d
-			y: 0.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -3943,7 +3942,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest63.subtitle}"
+			subtitle: "Designed by &6Howester84&r - 27 blocks deep, 29 blocks wide, and 18 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -3965,8 +3964,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest63.title}"
-			x: -15.0d
-			y: 0.0d
+			x: -15.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -4030,8 +4029,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest64.title}"
-			x: -14.5d
-			y: 1.0d
+			x: -15.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -4095,8 +4094,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest65.title}"
-			x: -10.5d
-			y: 1.0d
+			x: -11.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -4161,7 +4160,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest66.title}"
 			x: -6.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -4272,7 +4271,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest68.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 17 blocks deep, 17 blocks wide, and 6 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -4298,7 +4297,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest68.title}"
-			x: -13.5d
+			x: -14.5d
 			y: -8.0d
 		}
 		{
@@ -4367,8 +4366,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest69.title}"
-			x: -9.5d
-			y: -8.0d
+			x: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -4502,7 +4501,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest71.title}"
 			x: -5.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -4544,7 +4543,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest72.subtitle}"
+			subtitle: "Designed by &6Saphichu&r - 25 blocks deep, 27 blocks wide, and 13 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -4566,8 +4565,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest72.title}"
-			x: -9.5d
-			y: 1.0d
+			x: -10.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -4631,8 +4630,1350 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest73.title}"
+			x: -14.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["049EB48B999881A3"]
+			description: [
+				"Greenhouses are buildings perfect for growing Anything, Anytime, Anywhere!"
+				""
+				"Comes with 48 greenhouse glass, perfect for the burgeoning horticulturist!"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "moreminecarts:chiseled_organic_glass"
+			id: "539C1B8E3358BBE1"
+			size: 1.5d
+			tasks: [{
+				id: "765B3B011523A288"
+				title: "{ftbquests.chapter.building_shop.quest6.task_6639295337464295342.title}"
+				type: "checkmark"
+			}]
+			title: "Greenhouses"
+			x: -9.999999999999993d
+			y: -2.0d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_basic.png width:200 height:200 align:center}"]
+			icon: "minecraft:chest"
+			id: "70767518BC2BB6C7"
+			min_required_tasks: 4
+			rewards: [{
+				id: "4A1EA04DCDE1879F"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_basic"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_basic"
+						owner: "worn"
+						owner_name: "EeveeBeby"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6EeveeBeby&r - 16 blocks deep, 14 blocks wide, and 10 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "15913DE2B5CA3E3A"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "614E51D1F7F47B75"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "5BDF3988CFDA641E"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "5A89C511FE83425A"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Basic Greenhouse"
+			x: -11.0d
+			y: -0.5178571428571459d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{image:society:textures/gui/buildings/home_basic.png width:200 height:200 align:center}"]
+			icon: "minecraft:chest"
+			id: "098EDB6ECF0D329E"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4D467F7A8114494E"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_basic"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_basic"
+						owner: "worn"
+						owner_name: "EeveeBeby"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6EeveeBeby &r - 22 blocks deep, 22 blocks wide, and 15 blocks tall."
+			tasks: [
+				{
+					count: 8L
+					id: "5E2263FF5F9A4AA5"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "33BE0D73AA6A337B"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "7B7F322508E36FE3"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Basic Farmhouse"
+			x: -11.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_cherry.png width:200 height:200 align:center}"]
+			icon: "quark:cherry_chest"
+			id: "5124F33F31BC342D"
+			min_required_tasks: 4
+			rewards: [{
+				id: "6074B4A3902E8E81"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_cherry"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_cherry"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 19 blocks deep, 16 blocks wide, and 12 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "5FD2FA64B2366AF3"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7C93AC40C68BDF02"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1777C50BF696BC24"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "1E2AB5F5AAA55675"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Cherry Greenhouse"
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_siberian.png width:200 height:200 align:center}"]
+			icon: "quark:spruce_chest"
+			id: "07B545A0D2188894"
+			min_required_tasks: 4
+			rewards: [{
+				id: "59E636EE72CE77F5"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_siberian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_siberian"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 25 blocks deep, 19 blocks wide, and 14 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "5393E048C1D541A1"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "10A833A7ECBF53DD"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "0A6080F163731B6C"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "52B773CA8D2C7936"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Siberian Greenhouse"
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_entrana.png width:200 height:200 align:center}"]
+			icon: "quark:ancient_chest"
+			id: "229A9470A200DFCD"
+			min_required_tasks: 4
+			rewards: [{
+				id: "4040044DED9F2416"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_entrana"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 21 blocks deep, 20 blocks wide, and 10 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "093984595BABEF18"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6CF03A0DA1C5F56D"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2C9D8B7BCE3B5D2E"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "5D143026C276BF0F"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Entrana Greenhouse"
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_alpine.png width:200 height:200 align:center}"]
+			icon: "meadow:shelf"
+			id: "13330DAC19328E8D"
+			min_required_tasks: 4
+			rewards: [{
+				id: "38E4EB5FF4DBA0EB"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_alpine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_alpine"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 24 blocks deep, 24 blocks wide, and 11 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "0892EF38BA6DA8D0"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3B6C0FF0FDA7234C"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "0805DE72B413EA52"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "10046D713C2C1F81"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Alpine Greenhouse"
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_prismarine.png width:200 height:200 align:center}"]
+			icon: "quark:prismarine_chest"
+			id: "0A7BFCE41D4C0CCC"
+			min_required_tasks: 4
+			rewards: [{
+				id: "10F49410B4CD52BB"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_prismarine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_prismarine"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 17 blocks deep, 27 blocks wide, and 16 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "0A3D2B5605638558"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0718B85B238C2522"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "0C602D14C6FA5FD9"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "6E841B875F22D134"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Prismarine Greenhouse"
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_bavarian.png width:200 height:200 align:center}"]
+			icon: "minecraft:deepslate_bricks"
+			id: "69B30353D943CE4A"
+			min_required_tasks: 4
+			rewards: [{
+				id: "7011443072A438FB"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_bavarian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bavarian Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_bavarian"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Howester84&r - 16 blocks deep, 13 blocks wide, and 15 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "5A66C06E22F2E983"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4FD7AE6AC943186E"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "35AF0520E96E22D6"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "7E46F121257F64F0"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Bavarian Greenhouse"
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_mason.png width:200 height:200 align:center}"]
+			icon: "minecraft:bricks"
+			id: "0CDDEC48380D0C30"
+			min_required_tasks: 4
+			rewards: [{
+				id: "34DD66F7198EEC8B"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 19 blocks deep, 21 blocks wide, and 9 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "2EA3DCB8D0268922"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "003DDA1D4E038558"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3E432923D3D56B9F"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "3A604982C3E6AFDC"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Mason Greenhouse"
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_vibrantown.png width:200 height:200 align:center}"]
+			icon: "quark:cyan_framed_glass"
+			id: "5426E5D90F887936"
+			min_required_tasks: 4
+			rewards: [{
+				id: "2278769F95BA2FB1"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_vibrantown"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Vibrantown Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_vibrantown"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 19 blocks deep, 21 blocks wide, and 16 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "66E32DD2481E9D9F"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "27F996E30D8C3566"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "40A1529C1BF22835"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "78DFAD98CC839F0A"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Vibrantown Greenhouse"
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_arid.png width:200 height:200 align:center}"]
+			icon: "atmospheric:chiseled_arid_sandstone"
+			id: "46E855E988D84427"
+			min_required_tasks: 4
+			rewards: [{
+				id: "71EC67A9625B7305"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_arid"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Arid Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_arid"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 14 blocks deep, 27 blocks wide, and 7 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "3B36895AE66A0EA7"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "74E0ECD31395CA22"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "475D79197AA11B6A"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "4059962A48325DD2"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Arid Greenhouse"
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_bamboo.png width:200 height:200 align:center}"]
+			icon: "quark:vertical_bamboo_planks"
+			id: "621E1C6A83A3C85A"
+			min_required_tasks: 4
+			rewards: [{
+				id: "2B864A0F31E6FF1C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_bamboo"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Bamboo Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_bamboo"
+						owner: "worn"
+						owner_name: "TBA"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 21 blocks deep, 23 blocks wide, and 12 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "72F8D3732D552A5D"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "09B38BEC52076FFD"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7DAC45CFF66529E9"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "4E942E35DA724297"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Bamboo Greenhouse"
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{image:society:textures/gui/buildings/coop_basic.png width:200 height:200 align:center}"]
+			icon: "minecraft:chest"
+			id: "6D5EA95DAADEB238"
+			min_required_tasks: 3
+			rewards: [{
+				id: "1BACB122BAD02E7D"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_basic"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_basic"
+						owner: "worn"
+						owner_name: "EeveeBeby"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6EeveeBeby&r - 10 blocks deep, 12 blocks wide, and 7 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "46A03F81496372A3"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "689E395C0D651EA9"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "001C3D3C2FAFDE81"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Basic Coop"
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["539C1B8E3358BBE1"]
+			description: ["{image:society:textures/gui/buildings/greenhouse_tudor.png width:200 height:200 align:center}"]
+			icon: "supplementaries:daub_brace"
+			id: "4C0D0B9D89F12412"
+			min_required_tasks: 4
+			rewards: [{
+				id: "4E2EA415B98A48BA"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "greenhouse_tudor"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Greenhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "greenhouse_tudor"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 22 blocks deep, 16 blocks wide, and 12 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "2DCB322243F382C9"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "20153B57B13E5592"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2E0731740E9660DD"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "3ABCAD8F96F250F0"
+					item: { Count: 48, id: "moreminecarts:chiseled_organic_glass" }
+					type: "item"
+				}
+			]
+			title: "Tudor Greenhouse"
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{image:society:textures/gui/buildings/large_shed_siberian.png width:200 height:200 align:center}"]
+			icon: "quark:spruce_chest"
+			id: "1999C9E997F5B6FE"
+			min_required_tasks: 3
+			rewards: [{
+				id: "170CE84129082B90"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_siberian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "56680AF55BF3D57A"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "1E5B13568C3691F8"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "78F9A25BB781B906"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest22.title}"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_tudor.png width:200 height:200 align:center}"]
+			icon: "supplementaries:daub_brace"
+			id: "08BCD91F95A2D5B5"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4404ABF1139ECAB3"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_tudor"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_tudor"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 24 blocks deep, 21 blocks wide, 17 blocks tall"
+			tasks: [
+				{
+					count: 20L
+					id: "6A027EDC35900256"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "48F12D1E427F4298"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "130195076EBD2F26"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Tudor Deluxe Barn"
 			x: -13.5d
-			y: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{image:society:textures/gui/buildings/barn_tudor.png width:200 height:200 align:center}"]
+			icon: "supplementaries:daub_brace"
+			id: "3AAD39F632737883"
+			min_required_tasks: 3
+			rewards: [{
+				id: "07FE753DD619FE3D"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_tudor"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_tudor"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 13 blocks deep, 23 blocks wide, and 11 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "4826912AE1EA4CBB"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "39363BD63B5BD670"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "1F03DFBDE4928479"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Tudor Barn"
+			x: -13.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{image:society:textures/gui/buildings/shed_tudor.png width:200 height:200 align:center}"]
+			icon: "supplementaries:daub_brace"
+			id: "68E45BAAE1D82CC4"
+			min_required_tasks: 3
+			rewards: [{
+				id: "3D68A019D43D1B3D"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_tudor"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_tudor"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 24 blocks deep, 15 blocks wide, and 19 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "04C3975BC7A469CB"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "254D9F32BF820EF6"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "54C839655A615D76"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Tudor Shed"
+			x: -4.5d
+			y: -8.0d
 		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"

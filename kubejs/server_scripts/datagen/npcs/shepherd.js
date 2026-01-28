@@ -5,7 +5,7 @@ if (global.datagenDialog) {
     intro: [
       "Hello, my name is Maria. I'll be here to get you started ranching on your farm.",
       "Raising animals take lots of time, energy and care.",
-      "In the end seeing the look on a happy animal's face is well worth it.",
+      "In the end seeing the look on a happy animal's face is well worth it!",
       "If you need any supplies just let me know."
     ],
     chatter: {
