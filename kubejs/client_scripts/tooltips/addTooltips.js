@@ -62,9 +62,7 @@ ItemEvents.tooltip((tooltip) => {
             let animal = item.nbt.getCompound("animal");
             text.add(4, [
               Text.translatable("tooltip.society.plushies.animal_type"),
-              Text.translate(
-                global.getTranslatedEntityName(String(animal.type)).getString()
-              ).gold(),
+              global.getTranslatedEntityName(String(animal.type)).gold(),
             ]);
             if (animal.name) {
               text.add(5, [
@@ -1540,4 +1538,20 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.translatable("tooltip.society.adventuring_mastery.required")
   );
+  
+  global.ageableProductInputs.forEach((product) => {
+    const splitProduct = product.item.split(":");
+    tooltip.addAdvanced(`society:aged_${splitProduct[1]}`, (item, advance, text) => {
+      if (product.item === "brewery:whiskey_maggoallan" || product.item === "brewery:whiskey_smokey_reverie")
+        text.set(0, text.get(0).copy().gold())
+      else
+        text.set(0, text.get(0).copy().aqua());
+    });
+    tooltip.addAdvanced(`society:double_aged_${splitProduct[1]}`, (item, advance, text) => {
+      if (product.item === "brewery:whiskey_maggoallan" || product.item === "brewery:whiskey_smokey_reverie")
+        text.set(0, text.get(0).copy().gold())
+      else
+        text.set(0, text.get(0).copy().darkAqua());
+    });
+  });
 });

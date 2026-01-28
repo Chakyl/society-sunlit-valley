@@ -27,7 +27,7 @@ ItemEvents.entityInteracted((e) => {
           player.username,
           `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`,
           100,
-          Text.translatable("society.hamster.bite").getString()
+          Text.translatable("society.hamster.bite").toJson()
         )
       );
     }

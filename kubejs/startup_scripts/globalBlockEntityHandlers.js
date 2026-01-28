@@ -838,7 +838,7 @@ global.spawnTextDisplay = (block, y, id, text) => {
   const { x, z } = block;
   entity = block.createEntity("minecraft:text_display");
   let newNbt = entity.getNbt();
-  newNbt.text = `{"text":"${text}"}`;
+  newNbt.text = `${text.toJson()}`;
   newNbt.background = 0;
   newNbt.Rotation = [
     NBT.f(global.rotationFromFacing(block.properties.get("facing"))),

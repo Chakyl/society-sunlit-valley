@@ -5,8 +5,8 @@ CommonAddedEvents.playerRespawn((e) => {
   if (global.enableDeathDebt) {
     if (!player.stages.has("first_death")) {
       player.stages.add("first_death");
-      let noteTitle = Text.translatable("society.hospital_receipt.first_death.title").getString();
-      let noteAuthor = Text.translatable("society.hospital_receipt.author").getString();
+      let noteTitle = global.translatableWithFallback("society.hospital_receipt.first_death.title", "Hospital Note").getString();
+      let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
       let noteText = Text.translatable("society.hospital_receipt.first_death").toJson();
       player.give(
         global.getNotePaperItem(noteAuthor, noteText, noteTitle)
