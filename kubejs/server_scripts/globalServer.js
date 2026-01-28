@@ -292,8 +292,8 @@ global.handleFee = (server, player, reason) => {
     }
     let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
     let formattedCurrentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
-    let noteTitle = Text.translatable("society.hospital_receipt.title").getString();
-    let noteAuthor = Text.translatable("society.hospital_receipt.author").getString();
+    let noteTitle = global.translatableWithFallback("society.hospital_receipt.title", "Hospital Receipt").getString();
+    let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
     let noteText = Text.translatable("society.hospital_receipt.debt", `${formattedAmountToDeduct}`, `${formattedCurrentDebt}`).toJson();
     player.give(
       global.getNotePaperItem(noteAuthor, noteText, noteTitle)
@@ -301,8 +301,8 @@ global.handleFee = (server, player, reason) => {
   } else {
     account.setBalance(balance - amountToDeduct);
     let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
-    let noteTitle = Text.translatable("society.hospital_receipt.title").getString();
-    let noteAuthor = Text.translatable("society.hospital_receipt.author").getString();
+    let noteTitle = global.translatableWithFallback("society.hospital_receipt.title", "Hospital Receipt").getString();
+    let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
     let noteText = Text.translatable("society.hospital_receipt.fee_taked", `${formattedAmountToDeduct}`).toJson();
     player.give(
       global.getNotePaperItem(noteAuthor, noteText, noteTitle)

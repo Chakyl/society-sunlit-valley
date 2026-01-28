@@ -921,8 +921,8 @@ StartupEvents.registry("item", (e) => {
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
-          ? `§6Double-${product.name}`
-          : `§bAged ${product.name}`
+          ? `Double-${product.name}`
+          : `Aged ${product.name}`
       )
       .glow(true)
       .color(0, 0xcae9f4);
@@ -932,8 +932,8 @@ StartupEvents.registry("item", (e) => {
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
-          ? `§6Triple-${product.name}`
-          : `§3Double-Aged ${product.name}`
+          ? `Triple-${product.name}`
+          : `Double-Aged ${product.name}`
       )
       .glow(true)
       .color(0, 0x28adde);

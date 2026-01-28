@@ -31,7 +31,7 @@ ItemEvents.entityInteracted((e) => {
         player.username, 
         global.animalMessageSettings, 
         160, 
-        Text.translatable("society.husbandry.breeding.need_potion").getString()
+        Text.translatable("society.husbandry.breeding.need_potion").toJson()
       )
     );
     e.cancel();
@@ -45,7 +45,7 @@ ItemEvents.entityInteracted((e) => {
           player.username, 
           global.animalMessageSettings, 
           120, 
-          Text.translatable("society.husbandry.breeding.infertile").getString()
+          Text.translatable("society.husbandry.breeding.infertile").toJson()
         )
       );
       e.cancel();
@@ -66,7 +66,7 @@ ItemEvents.entityInteracted((e) => {
             player.username, 
             global.animalMessageSettings, 
             160, 
-            Text.translatable("society.husbandry.breeding.fail").getString()
+            Text.translatable("society.husbandry.breeding.fail").toJson()
           )
         );
       } else {
@@ -96,7 +96,7 @@ ItemEvents.entityInteracted((e) => {
           player.username, 
           global.animalMessageSettings, 
           120, 
-          Text.translatable("society.husbandry.breeding.cooldown").getString()
+          Text.translatable("society.husbandry.breeding.cooldown").toJson()
         )
       );
     }

@@ -13,14 +13,14 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
     global.teleportHome(player, server, level);
   } else if (level.dimension === "minecraft:overworld") {
     if (level.dayTime() % 24000 > 18000) {
-      errorText = Text.translatable("society.skull_cavern.too_late").getString();
+      errorText = Text.translatable("society.skull_cavern.too_late").toJson();
     } else {
       if (!player.stages.has("skull_cavern_intro")) {
         player.stages.add("skull_cavern_intro");
         player.tell(Text.translatable("society.skull_cavern.intro").gold());
         player.give(Item.of("gag:escape_rope"));
-        let noteTitle = Text.translatable("society.skull_cavern.intro.note.title").getString();
-        let noteAuthor = Text.translatable("society.skull_cavern.intro.note.author").getString();
+        let noteTitle = global.translatableWithFallback("society.skull_cavern.intro.note.title", "A Warning").getString();
+        let noteAuthor = global.translatableWithFallback("society.skull_cavern.intro.note.author", "someone...").getString();
         let noteText = Text.translatable("society.skull_cavern.intro.note").toJson();
         player.give(
           global.getNotePaperItem(noteAuthor, noteText, noteTitle)
@@ -31,8 +31,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
       player.getLevel().getBlock(x, 511, z).set("society:skull_cavern_teleporter");
     }
   } else {
-    errorText = Text.translatable("society.skull_cavern.invalid_dimension").getString();
-    // 4.0 TODO: fix on servers
+    errorText = Text.translatable("society.skull_cavern.invalid_dimension").toJson();
   }
   if (errorText) {
     global.renderUiText(
@@ -43,7 +42,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
           type: "text",
           x: 0,
           y: -90,
-          text: errorText,
+          text: `${errorText}`,
           color: "#FF5555",
           alignX: "center",
           alignY: "bottom",
@@ -53,7 +52,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
           x: 1,
           z: -1,
           y: -89,
-          text: errorText,
+          text: `${errorText}`,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",

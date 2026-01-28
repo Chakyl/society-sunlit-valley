@@ -15,9 +15,9 @@ PlayerEvents.loggedIn((e) => {
       player.give(
         Item.of(
           global.getNotePaperItem(
-            Text.translatable("society.starting_item_sharestone.author").getString(),
-            Text.translatable("society.starting_item_sharestone.text").getString(),
-            Text.translatable("society.starting_item_sharestone.title").getString(),         
+            global.translatableWithFallback("society.starting_item_sharestone.author", "Society").getString(),
+            Text.translatable("society.starting_item_sharestone.text").toJson(),
+            global.translatableWithFallback("society.starting_item_sharestone.title", "Server Welcome").getString(),         
           )
         )
       );

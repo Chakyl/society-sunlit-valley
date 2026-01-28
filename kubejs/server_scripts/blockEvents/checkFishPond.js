@@ -20,9 +20,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
     else fishName = fishName.substring(4, fishName.length);
   }
   let fishIcons = "";
-  let translatedFishName = global
-    .getTranslatedItemName(type, fishName)
-    .getString();
+  let translatedFishName = global.getTranslatedItemName(type, fishName);
 
   for (let index = 0; index < maxPopulation; index++) {
     if (index < population) fishIcons += "§3🐟§r";
@@ -40,14 +38,14 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
     .append(Text.green(upgrade))
     .append(Text.of(` ]==`));
   const pondHeaderTextShadow = Text.empty()
-    .gray()
     .append(Text.of(`==[ `))
-    .append(Text.black(upgrade))
+    .append(Text.of(upgrade))
     .append(" ")
-    .append(Text.translatable("block.society.fish_pond").black())
+    .append(Text.translatable("block.society.fish_pond"))
     .append(" ")
-    .append(Text.black(upgrade))
+    .append(Text.of(upgrade))
     .append(Text.of(` ]==`));
+  const fishNameText = Text.of(`${population}/${maxPopulation} `).append(translatedFishName);
 
   global.renderUiText(
     player,
@@ -84,7 +82,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         type: "text",
         x: 0,
         y: -78,
-        text: `${population}/${maxPopulation} ${translatedFishName}`,
+        text: `${fishNameText.toJson()}`,
         color: "#00AAAA",
         alignX: "center",
         alignY: "bottom",
@@ -94,7 +92,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         x: 1,
         z: -1,
         y: -77,
-        text: `${population}/${maxPopulation} ${translatedFishName}`,
+        text: `${fishNameText.toJson()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",

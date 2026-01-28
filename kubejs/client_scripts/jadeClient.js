@@ -22,11 +22,7 @@ global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   tooltip.add(`§6${"★".repeat(quality + 1)}§8${"☆".repeat(3 - quality)}`);
   tooltip.add(`§${typeData.color}${global.formatName(typeData.trait)}`);
   if (nbt.animal) {
-    tooltip.add(
-      Text.translate(
-        global.getTranslatedEntityName(String(nbt.animal)).getString()
-      )
-    );
+    tooltip.add(global.getTranslatedEntityName(String(nbt.animal)));
   } else {
     tooltip.add(
       `§c${affection > 0 ? `❤`.repeat(affection) : ""}§8${

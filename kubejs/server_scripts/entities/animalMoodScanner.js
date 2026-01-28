@@ -7,10 +7,7 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "MAIN_HAND" && item === "society:mood_scanner") {
     if (player.cooldowns.isOnCooldown(item)) return;
     const day = global.getDay(level);
-    let name = target.customName ? target.customName.getString() : undefined;
-    if (!name) {
-      name = global.getTranslatedEntityName(String(target.type)).getString();
-    }
+    let name = target.customName ? target.customName : global.getTranslatedEntityName(String(target.type));
     const moodMeterHeaderText = Text.empty()
       .gray()
       .append(Text.of(`==[ `))

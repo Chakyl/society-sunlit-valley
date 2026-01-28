@@ -8,12 +8,12 @@ BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
   if (global.hasMultipleTappers(level, block)) {
     errorText = Text.translatable(
       "block.society.tapper.too_many_tapper"
-    ).getString();
+    ).toJson();
   }
   if (!attachedBlock.hasTag("society:tappable_blocks")) {
     errorText = Text.translatable(
       "block.society.tapper.invalid_block"
-    ).getString();
+    ).toJson();
   }
   if (errorText) {
     global.renderUiText(
@@ -24,7 +24,7 @@ BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
           type: "text",
           x: 0,
           y: -90,
-          text: errorText,
+          text: `${errorText}`,
           color: "#FF5555",
           alignX: "center",
           alignY: "bottom",
@@ -34,7 +34,7 @@ BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
           x: 1,
           z: -1,
           y: -89,
-          text: errorText,
+          text: `${errorText}`,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",

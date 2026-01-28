@@ -35,7 +35,7 @@ global.updateLeaderboard = (block, server) => {
     block,
     calcY,
     "leaderboard",
-    Text.translatable("block.society.coin_leaderboard.title").getString()
+    Text.translatable("block.society.coin_leaderboard.title")
   );
   // Display leaderboard accounts
   leaderboardMap.forEach((playerName) => {
@@ -46,10 +46,7 @@ global.updateLeaderboard = (block, server) => {
       block,
       calcY,
       "leaderboard",
-      `§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(
-        /\B(?=(\d{3})+(?!\d))/g,
-        ","
-      )}`
+      Text.of(`§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`)
     );
   });
 };
