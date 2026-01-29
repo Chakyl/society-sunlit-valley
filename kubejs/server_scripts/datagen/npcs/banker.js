@@ -22,9 +22,7 @@ if (global.datagenDialog) {
         ["I have things I need to be doing right now."],
         ["I don't have time to chat with you."],
         ["Don't you have some work you should be doing?"],
-        [
-          "I hope you're not slacking off when so many people here are depending on you.",
-        ],
+        ["I hope you're not slacking off when so many people here are depending on you."],
         ["Ugh, do you need something from me?"],
         ["What do you want?"],
         [

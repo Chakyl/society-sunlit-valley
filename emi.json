@@ -48,6 +48,9 @@
     }
   ],
   "lookup_history": [
+    "item:society:mushroom_log",
+    "item:minecraft:loom",
+    "item:society:milk_pail",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:orby\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
     "item:candlelight:floorboard",
@@ -110,11 +113,6 @@
       "amount": 3
     },
     "item:whimsy_deco:phone",
-    {
-      "type": "item",
-      "id": "society:mushroom_log",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "verdantvibes:bracket_mushroom",
@@ -394,7 +392,6 @@
     "item:society:sparkpod_juice",
     "item:society:sparkpod_preserves",
     "item:society:dried_sparkpod",
-    "item:minecraft:loom",
     "item:via_romana:charting_map",
     "item:botania:auto_crafting_halo",
     "item:cluttered:blue_mushroom_sign",
@@ -416,11 +413,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farm_and_charm:bacon_with_eggs",
-      "item:brewery:pork_knuckle",
-      "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
+      "item:candlelight:pork_ribs",
+      "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
+      "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -431,16 +428,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/zucchini",
+      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1550,8 +1547,7 @@
     "item:sophisticatedbackpacks:netherite_backpack",
     "item:society:skull_cavern_teleporter",
     "item:simplehats:rgbdragonskull",
-    "item:society:magic_rope",
-    "item:fantasyfurniture:decorations/bone_wither_skull_blossoms"
+    "item:society:magic_rope"
   ],
   "craft_history": [
     "meadow:fire_log",
