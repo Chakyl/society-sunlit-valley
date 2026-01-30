@@ -3,16 +3,26 @@
 ### v4.0.0
 ^^^
 --- 
+- Added new NPC mechanics to completely replace the previous villager system
+- Added 6 handmade villagers with art by NifastGreentail and Nitbe
+- Added Invitations, sold by the Carpenter villager (craftable invitation)
 - Added Mastery, a final tier of skill once all trees are completed
 - Added Sparkpods, Mystic Willow Saplings (formerly Willow sapling) to Farming Mastery
 - Added Mystic Syrup from Mystic Willow trees 
 - Added Treasure Totem and Bubble Totem from Mystic Syrup
-- Added Recycled Core and Moon Pylon to Mining Mastery
+- Added Recycled Core and Statue of the Moon Gnome to Mining Mastery
 - Added Sunlit Crystal and Animal Cracker to Husbandry Mastery
 - Added Roe Recycler, Needle Bobber, and Net Bobber to Fishing Mastery
 - Added Domestic Innovation and moved enchanting to Adventuring Mastery
-- Added new art for Minerals, Preserves, Artifacts, and so much more by NifastGreentail
+- Added Mastery Skill Books: The Quality of the Earth, Pond House Five, The Red and the Black, and Women Who Run With the Plushies. Moved The Spark Only Rises to Mining Mastery unlock.
+- Added new art for items Minerals, Preserves, Artifacts, and so much more by NifastGreentail
+- Added new art for Growth Obelisk, Supreme Mayo, and Prize Machine by Nitbe
+- Added new quest book art by NifastGreentail
 - Added Mood system for husbandry animals that tracks how well you are taking care of them and impacts their production
+- Added greenhouses for every building set, built largely by Kanlamari, with work by EeveeBeby, Duy Luong, and Howester84
+- Added new Tudor by Kanlamari respectively, each containing some existing pieces of the previous basic set
+- Updated Siberian and Basic sets to EeveeBeby's Revamped look
+- Updated Entrana set to Kanlamari's Revamped look
 - Added Wine Keg - Artisan Machine for making wines without the need for juice
 - Added Mushroom Log - Artisan Machine for growing mushrooms
 - Added Oil Maker and rebalanced Truffle Oil accordingly
@@ -21,7 +31,9 @@
 - Added Mossberry & Mossberry Stew
 - Added Cranberry crop
 - Added Gray Anatomy upgrade
-- Added Skill Books: Alias Moss, Pond House Five, The Red and the Black, and Women Who Run With the Plushies
+- Added Spinel gem
+- Added normal Skill Book Alias Moss
+- Added Ripper Tooth functionality - Threatens the fish in a Fish Pond into changing their active quest
 - Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish.
 - Added traits Recessive to Juicy and Ender Slimes and Dominant to Orby and Rotting Slimes
 - Added full value calculations to items when holding shift
@@ -32,16 +44,23 @@
 - Added value for Honey Blob
 - Added recipe for Tree Fertilizer
 - Added Fish Pond drops to Cod and Salmon
-- Added Wiki link to the pause screen in the place of unusable vanilla buttons
+- Added Turtle, Bat, and Shima Enaga as husbandry animals
+- Added Schematiccannon and associated items back with exploit fixer
+- Added Credits & Wiki link to the pause screen in the place of unusable vanilla buttons
+- Added more advancements
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
+- Ancient Goddess Statue now trades ones a day
 - Changed recipe of Grapevine Stems/Lattices to use treated logs
 - Cheese is now an Artisan Product (from Farmer Product)
 - Farm animals no longer produce twice as much at max affection
+- Reworked unlockable shops. Master Cultivator trades are added to Market after 1 year of playtime. Mystical Botanist (now Wizard) unlocked after visiting the Nether. Exotic Trader (now trader) unlocked after visiting the Skull Cavern
 - Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
 - Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
+- Reworked Pink Matter upgrade to use Dragon Scales and upped Plort Ripping chance
 - Ribbit Hut now works at 7am (from 8am)
 - Magic Shears now output quality based on affection
+- Moved Birch log tapping to Mushroom Log
 - Increased value of Botania mushrooms (12 -> 24)
 - Increased Oak Resin tapping time (3->5)
 - Increased bar size of Lava Fishing Rod by 12
@@ -49,6 +68,8 @@
 - Increased Husbandry skill tree experience scaling
 - Increased valued of Large Eggs (16->32), Duck Eggs (32->48).
 - Increased Sniffer/Frostbiter Artifact shard drops by 1.5x
+- Increased Panda, Red Panda, Squirrel, Deer, Frog, and Cochineal Drops by 2/1/8/3/4/2&4
+- Increased Moobloom milking time by 1
 - Increased value of Pine Tar and Oak Resin (48->128)
 - Rebalanced Plort values
 - Reduced cost of Lava Fishing Rod 98,304 ->73,728
@@ -60,19 +81,24 @@
 - Reduced all Pantry & Blacksmith bundles to one item per task
 - Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle 
 - Reduced cost of Vault 83,968 -> 51,200
+- Reduced chance of rain/thunder/snow in Autumn/winter
+- Reduced grain -> feed conversion rate
 - Reduced difficulty of Fish Tank by selecting more common fish for bundles
 - Reduced Caper Catcher (5 -> 3) and Caviar Catcher (5->2) roe amounts
 - Reduced affection increases and decreases by half (excluding candied animal feed)
 - Reduced value of Large Turkey Egg (128 -> 96), Penguin Egg (192 -> 128), and Flamingo Egg (384 -> 256) 
+- Reduced mult of Mayo and Cheese (4 -> 2)
 - Reduced Ancient Goddess Statue Sparkstone trade (16 sparkstone blocks -> 64 sparkstone)
+  Reduced milk size of lots of Veggiesdelight recipes (lg -> sm)
 - Reduced food values for certain juices
 - Reduced mult of mayonnaise machine (8x -> 4x)
 - Reduced Moth Pollen to Organic Mash recycling recipe (16 -> 4)
-- Reduced Spindlefish Sparkstone population requirement 10 -> 5
+- Reduced Spindlefish Sparkstone population requirement 10 -> 6
 - Reduced value of Sparkstone 64 -> 16
 - Reduced value of Sap (20 -> 4)
+- Reduced Century Egg fermentation time (6->1.5 hours)
+- Reduced fertilizer required for Iridium quality crops (Pristine -> Hyper) 
 - Removed Pickaxe cost from Pickarang
-- Removed Quality Preserving from Cheese Press
 - Removed Tom's Simple Storage
 - Removed Brewer's Bundle from Crafts room (Replaced with Foraging bundle)
 - Removed Gold Ring (functionality still here)
@@ -97,6 +123,7 @@
 - Fixed Artisan Hoppers not handling multiple outputs
 - Fixed fake players working on Statue of Endless Fortune
 - Fixed block placement cancels resulting in ghost items
+- Fixed Fish Ponds losing quest status when broken
 - Fixed Cluttered counter edges being uncraftable
 - Fixed Cluttered plushies not being considered plushies
 - Fixed several issues with crop quality not calculating correctly
@@ -104,4 +131,7 @@
 - Fixed tomatoes only growing up 1 vine
 - Fixed High Quality Fertilized Farmland not working
 - Fixed Strawberry having vegetable tag
+- Fixed Ender Slime having wrong hat
+- Fixed certain farm animal drops not having quality
+- Fixed Garlic Clove being plantable
 - Fixed exploits

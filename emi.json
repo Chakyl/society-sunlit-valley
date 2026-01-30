@@ -48,6 +48,64 @@
     }
   ],
   "lookup_history": [
+    "item:botania:rune_mana",
+    "item:botania:overgrowth_seed",
+    "item:unusualfishmod:ripper_tooth",
+    "item:crabbersdelight:clam",
+    "item:society:aquamagical_dust",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
+    "item:unusualfishmod:raw_triple_twirl_pleco",
+    "item:unusualfishmod:tendril",
+    "item:unusualfishmod:lobster_spike",
+    "item:unusualfishmod:weird_goldfish",
+    "item:society:invitation{type:{id:\"society:carpenter\"}}",
+    "item:minecraft:cartography_table",
+    "item:buzzier_bees:honey_apple",
+    "item:windswept:lavender",
+    "item:windswept:goat_stew",
+    "item:nethervinery:blazewine_pinot",
+    "item:candlelight:salmon_on_white_wine",
+    "item:society:dewy_star",
+    "item:minecraft:bamboo",
+    {
+      "type": "item",
+      "id": "etcetera:bouquet",
+      "amount": 16
+    },
+    "item:society:sunlit_pearl",
+    {
+      "type": "item",
+      "id": "society:truffle_tea",
+      "amount": 64
+    },
+    "item:society:bowl_of_soul",
+    "item:etcetera:iridescent_glass",
+    "item:minecraft:oak_door",
+    "item:society:mushroom_log",
+    "item:minecraft:loom",
+    "item:society:milk_pail",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:orby\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
+    "item:candlelight:floorboard",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:bear\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sweet\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:bony\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:bitwise\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:luminous\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sweet\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:juicy\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:gold\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:ender\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:dusty\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:shulking\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:puddle\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:prisma\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:slimy\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:phantom\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:blazing\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:all_seeing\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:mechanic\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sparkcat\"}}",
     {
       "type": "item",
       "id": "society:sparkpod",
@@ -90,11 +148,6 @@
     "item:whimsy_deco:phone",
     {
       "type": "item",
-      "id": "society:mushroom_log",
-      "amount": 64
-    },
-    {
-      "type": "item",
       "id": "verdantvibes:bracket_mushroom",
       "amount": 2
     },
@@ -123,7 +176,6 @@
     "item:everycomp:fs/cluttered/willow_4",
     "item:portable_blueprints:scanner",
     "item:portable_blueprints:tablet",
-    "item:society:invitation{type:{id:\"society:carpenter\"}}",
     {
       "type": "item",
       "id": "minecraft:leaf_litter",
@@ -146,10 +198,8 @@
     },
     "item:botania:rune_gluttony",
     "item:botania:rune_envy",
-    "item:botania:rune_mana",
     "item:relics:rage_glove{abilities:{phlebotomy:{points:0,stats:{attack_speed:0.00655d,heal:1.9E-4d,movement_speed:0.01686d}},rage:{points:0,stats:{dealt_damage:0.04233d,duration:2.29576d,incoming_damage:0.03652d}},spurt:{points:0,stats:{cooldown:17.41622d,damage:0.16688d,distance:5.24384d}}}}",
     "item:minecraft:spruce_trapdoor",
-    "item:minecraft:oak_door",
     "item:society:roe_recycler",
     "item:quark:hollow_birch_log",
     "item:botania:tigerseye",
@@ -250,7 +300,6 @@
       "nbt": "{quality_food:{effects:[],quality:1}}",
       "amount": 2
     },
-    "item:society:sunlit_pearl",
     {
       "type": "item",
       "id": "society:perfect_cherry",
@@ -278,7 +327,6 @@
     "item:vinery:stal_wine",
     "item:vinery:bolvar_wine",
     "item:society:shipping_bin_monitor",
-    "item:minecraft:cartography_table",
     {
       "type": "item",
       "id": "botania:purple_mushroom",
@@ -372,7 +420,6 @@
     "item:society:sparkpod_juice",
     "item:society:sparkpod_preserves",
     "item:society:dried_sparkpod",
-    "item:minecraft:loom",
     "item:via_romana:charting_map",
     "item:botania:auto_crafting_halo",
     "item:cluttered:blue_mushroom_sign",
@@ -394,11 +441,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
+      "item:brewery:pork_knuckle",
+      "item:minecraft:cooked_porkchop",
       "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
       "item:farm_and_charm:bacon_with_eggs",
-      "item:minecraft:cooked_porkchop",
-      "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -410,15 +457,15 @@
     "item:veggiesdelight:raw_vegetarian_patty",
     [
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/zucchini",
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -626,11 +673,6 @@
     "item:crabbersdelight:pearl_block",
     {
       "type": "item",
-      "id": "society:aquamagical_dust",
-      "amount": 2
-    },
-    {
-      "type": "item",
       "id": "society:truffle_oil",
       "amount": 3
     },
@@ -736,11 +778,6 @@
       "amount": 64
     },
     "item:candlelight:beef_with_mushroom_in_wine_and_potatoes",
-    {
-      "type": "item",
-      "id": "society:truffle_tea",
-      "amount": 8
-    },
     "item:society:cordycep",
     "item:cluttered:sycamore_log",
     "item:quark:moss_paste",
@@ -860,7 +897,6 @@
     "item:society:double_aged_beer_attunecore",
     "item:society:living_flesh",
     "item:society:crystal_of_regret_mining",
-    "item:society:dewy_star",
     "item:society:latte",
     "item:society:forks_of_blue",
     "item:society:good_catawba",
@@ -1179,8 +1215,6 @@
     "item:society:wuthering_logs",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sweet\"}}",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:shulking\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
     "item:minecraft:wet_sponge",
     "item:minecraft:sponge",
@@ -1240,7 +1274,6 @@
     "item:society:bluegill_roe",
     "item:society:atlantic_herring_roe",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:mechanic\"}}",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:dusty\"}}",
     "item:society:crystal_of_regret_adventuring",
     "item:society:crystal_of_regret_farming",
     "item:society:spider_silk",
@@ -1293,11 +1326,6 @@
     "item:society:picklefish_roe",
     "item:society:catfish_roe",
     "item:relics:jellyfish_necklace{abilities:{paralysis:{points:0,stats:{duration:0.7109d}},shock:{points:0,stats:{damage:0.69544d},temp:{ticking:1b}}}}",
-    {
-      "type": "item",
-      "id": "unusualfishmod:tendril",
-      "amount": 60
-    },
     {
       "type": "item",
       "id": "quark:myalite_crystal",
@@ -1368,7 +1396,6 @@
     "item:meadow:piece_of_grain_cheese",
     "item:bakery:braided_bread",
     "item:farm_and_charm:corn_grits",
-    "item:unusualfishmod:weird_goldfish",
     "item:vintagedelight:fruity_granola_bar",
     "item:vintagedelight:chocolate_nut_granola_bar",
     "item:vintagedelight:honey_roasted_peanut",
@@ -1516,42 +1543,7 @@
       "amount": 64
     },
     "item:society:mana_feed",
-    "item:functionalstorage:netherite_upgrade",
-    "item:society:deepslate_iridium_ore",
-    "item:justhammers:netherite_impact_hammer{Damage:0}",
-    "item:minecraft:netherite_upgrade_smithing_template",
-    "item:dew_drop_watering_cans:netherite_watering_can{Damage:0}",
-    "item:minecraft:netherite_leggings{Damage:0}",
-    "item:minecraft:netherite_hoe{Damage:0}",
-    "item:minecraft:netherite_sword{Damage:0}",
-    "item:minecraft:netherite_boots{Damage:0}",
-    "item:oreganized:netherite_nugget",
-    "item:minecraft:netherite_scrap",
-    "item:minecraft:netherite_chestplate{Damage:0}",
-    "item:sophisticatedbackpacks:netherite_backpack",
-    "item:society:skull_cavern_teleporter",
-    "item:simplehats:rgbdragonskull",
-    "item:society:magic_rope",
-    "item:fantasyfurniture:decorations/bone_wither_skull_blossoms",
-    "item:betterarcheology:sheep_fossil_head",
-    "item:betterarcheology:ocelot_fossil_head",
-    "item:minecraft:skeleton_skull",
-    "item:minecraft:wither_skeleton_skull",
-    "item:species:wicked_wax",
-    "item:species:wicked_treat",
-    "item:vinery:vinery_standard",
-    "item:botania:blood_pendant{brewKey:\"botania:regen_weak\"}",
-    "item:farm_and_charm:nettle_tea",
-    "item:farmersdelight:melon_juice",
-    "item:botania:ancient_will_guthan",
-    "item:gag:hearthstone{Damage:0}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sparkcat\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:rotting\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:juicy\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}"
+    "item:functionalstorage:netherite_upgrade"
   ],
   "craft_history": [
     "meadow:fire_log",

@@ -23,8 +23,8 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   let translatedFishName = global.getTranslatedItemName(type, fishName);
 
   for (let index = 0; index < maxPopulation; index++) {
-    if (index < population) fishIcons += "§3🐟§r";
-    else fishIcons += "§7🐟§r";
+    if (index < population) fishIcons += "§3🔔§r";
+    else fishIcons += "§7🔔§r";
   }
   const upgrade =
     block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
@@ -111,7 +111,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         x: 1,
         z: -1,
         y: -65,
-        text: `🐟`.repeat(maxPopulation),
+        text: `🔔`.repeat(maxPopulation),
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -122,7 +122,8 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
 };
 
 BlockEvents.rightClicked("society:fish_pond", (e) => {
-  const { item, block, player } = e;
+  const { item, hand, block, server, player } = e;
+  if (hand == "OFF_HAND") return;
   if (!player.isCrouching()) {
     let { type, population, max_population, quest_id } =
       block.getEntityData().data;
@@ -148,19 +149,60 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
         }
       }
       if (mature === "false" && quest === "true") {
-        const questContent = getRequestedItems(type, max_population)[quest_id];
-        if (questContent && questContent.item !== item.id) {
-          const questItem = Item.of(questContent.item).displayName;
-          let checkedCount = player.stages.has("pond_house_five")
-            ? Math.round(questContent.count / 2)
-            : questContent.count;
-          player.tell(
-            Text.translatable(
-              "block.society.fish_pond.fish_quest",
-              Text.darkAqua(`${checkedCount}`)
-            ).green()
-          );
-          player.tell(questItem);
+        let questContent = getRequestedItems(type, max_population)
+        let questItem
+        let checkedCount;
+        if (item.id.equals('unusualfishmod:ripper_tooth')) {
+          if (questContent) {
+            if (questContent.length == 1) {
+              player.tell(
+                Text.translatable(
+                  "block.society.fish_pond.no_alt",
+                ).red()
+              );
+
+            } else {
+              let newQuest = questContent.length - 1 === quest_id ? 0 : quest_id + 1
+              questContent = questContent[newQuest];
+              questItem = Item.of(questContent.item).displayName;
+              checkedCount = player.stages.has("pond_house_five")
+                ? Math.round(questContent.count / 2)
+                : questContent.count;
+              player.tell(
+                Text.translatable(
+                  "block.society.fish_pond.fish_quest_changed",
+                  Text.darkAqua(`${checkedCount}`)
+                ).green()
+              );
+              player.tell(questItem);
+              let nbt = block.getEntityData();
+              nbt.merge({
+                data: {
+                  quest_id: Number(newQuest),
+                },
+              });
+              block.setEntityData(nbt);
+              server.runCommandSilent(
+                `playsound minecraft:entity.player.splash block @a ${block.x} ${block.y} ${block.z}`
+              );
+              if (!player.isCreative()) item.shrink(1);
+            }
+          }
+        } else {
+          questContent = questContent[quest_id];
+          if (questContent && questContent.item !== item.id) {
+            questItem = Item.of(questContent.item).displayName;
+            checkedCount = player.stages.has("pond_house_five")
+              ? Math.round(questContent.count / 2)
+              : questContent.count;
+            player.tell(
+              Text.translatable(
+                "block.society.fish_pond.fish_quest",
+                Text.darkAqua(`${checkedCount}`)
+              ).green()
+            );
+            player.tell(questItem);
+          }
         }
       }
       if (valid === "false") {

@@ -1098,7 +1098,14 @@ ItemEvents.tooltip((tooltip) => {
     "relics:jellyfish_necklace",
     Text.translatable("tooltip.society.jellyfish_necklace").red()
   );
-
+  tooltip.add(
+    "society:invitation",
+    Text.translatable("tooltip.society.invitation").green()
+  );
+  tooltip.add(
+    "unusualfishmod:ripper_tooth",
+    Text.translatable("tooltip.society.ripper_tooth").green()
+  );
   tooltip.add(
     "society:river_jelly",
     Text.translatable("item.society.river_jelly.description").blue()

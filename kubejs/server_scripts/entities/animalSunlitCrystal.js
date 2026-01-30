@@ -33,7 +33,7 @@ ItemEvents.entityInteracted((e) => {
       );
       return;
     } else {
-      item.shrink(1);
+      if (!player.isCreative()) item.shrink(1);
       player.give(
         Item.of(
           plushie.id,

@@ -9420,7 +9420,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.9.3-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v2.0.7-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9428,16 +9428,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6994/91/portable_blueprints-v1.9.3-mv1.20.1.jar",
-                    "id": "6994091",
+                    "url": "https://edge.forgecdn.net/files/7526/680/portable_blueprints-v2.0.7-mv1.20.1.jar",
+                    "id": "7526680",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "6257aa6a87d0c4b0633283ab0fac733adc7471c6",
-                        "md5": "2a2ad35bf887c83eebad5b035844020e"
+                        "sha1": "6d23c9418b3d535033ec9a8b3c089f90b5ded082",
+                        "md5": "2ce86fd4761d5dff229d1a12fd562928"
                     },
                     "required_dependencies": [],
-                    "size": 440153,
-                    "date_published": "2025-09-13T21:20:42.717Z"
+                    "size": 943511,
+                    "date_published": "2026-01-25T20:35:09.553Z"
                 }
             ]
         },
@@ -11542,8 +11542,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "splendid_slimes-0.17.0.jar",
+                    "type": "modrinth",
+                    "file_name": "splendid_slimes-0.18.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11551,18 +11551,41 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7261/408/splendid_slimes-0.17.0.jar",
-                    "id": "7261408",
+                    "url": "https://cdn.modrinth.com/data/RptnuYO9/versions/exvvYhfZ/splendid_slimes-0.18.0.jar",
+                    "id": "exvvYhfZ",
+                    "parent_id": "RptnuYO9",
+                    "hashes": {
+                        "sha512": "ed16bbd7c61f6d1a6f937860de40e7b031e4a3d81ae3c66bcfe6f86f2763476d1d6fb6e31247e87aba153101c46888975c5df4cc23e0ce95f863769cafa8f2a6",
+                        "sha1": "338564ce08c9ce02a452d96b26e2de9f4598b9c1"
+                    },
+                    "required_dependencies": [
+                        "tCkE8p2N"
+                    ],
+                    "size": 490464,
+                    "date_published": "2026-01-26T01:01:47.709127Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "splendid_slimes-0.18.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7528/21/splendid_slimes-0.18.0.jar",
+                    "id": "7528021",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "c397691389e6972bc9da14a115b2ce7b4f6d92a0",
-                        "md5": "39be9d9281e9caa597cae6490371f3bb"
+                        "sha1": "338564ce08c9ce02a452d96b26e2de9f4598b9c1",
+                        "md5": "f20fb45e9177b94e719518f7956f65e7"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 477504,
-                    "date_published": "2025-11-25T16:02:21.320Z"
+                    "size": 490464,
+                    "date_published": "2026-01-26T01:01:00.260Z"
                 }
             ]
         },
