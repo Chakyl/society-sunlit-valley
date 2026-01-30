@@ -852,6 +852,7 @@ global.herbalBrews = [
   { item: "society:mocha", value: 512 },
   { item: "society:dirty_chai", value: 5574 },
   { item: "society:bowl_of_soul", value: 240 },
+  { item: "society:truffle_tea", value: 2061 },
 ];
 // Logs
 global.logs = [
@@ -1695,6 +1696,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "society:sunlit_pearl", value: 1920 }, 
   { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },
   { item: "windswept:frozen_branch", value: 200 },
@@ -1715,6 +1717,7 @@ global.miscAdventurer = [
   { item: "twigs:roseate_seashell", value: 20 },
   { item: "twigs:bronzed_seashell", value: 32 },
   { item: "twigs:tangerine_seashell", value: 24 },
+  { item: "furniture:trash_bag", value: 1 },
   { item: "aquaculture:tin_can", value: 1 },
   { item: "simplehats:hatbag_common", value: 1 },
   { item: "simplehats:hatbag_uncommon", value: 1 },

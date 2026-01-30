@@ -1,5 +1,5 @@
 let translationKeys = {};
-global.datagenDialog = true;
+global.datagenDialog = false;
 
 const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
   let entries = [];

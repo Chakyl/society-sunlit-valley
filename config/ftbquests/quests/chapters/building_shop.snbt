@@ -5975,6 +5975,454 @@
 			x: -4.5d
 			y: -8.0d
 		}
+		{
+			can_repeat: false
+			dependencies: ["049EB48B999881A3"]
+			description: [
+				"Text describing NPC homes goes here"
+				""
+				"Text describing NPC homes goes here"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "bakery:bread"
+			id: "362B0DE04E15818D"
+			size: 1.5d
+			tasks: [{
+				id: "250A617A3847F942"
+				title: "{ftbquests.chapter.building_shop.quest37.task_7108296515623689190.title}"
+				type: "checkmark"
+			}]
+			title: "Homes"
+			x: -18.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["362B0DE04E15818D"]
+			description: ["{image:society:textures/gui/buildings/npc_market.png width:200 height:200 align:center}"]
+			icon: "furniture:cash_register"
+			id: "48594EA930029D54"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4EC632BC85A674E6"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "npc_market"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Market House\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "npc_market"
+						owner: "worn"
+						owner_name: "EeveeBeby"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6EeveeBeby&r - 16 blocks deep, 16 blocks wide, and 12 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "408E7380542F2C94"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "43E5F6E15E7D40AF"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "01D241037B0C2662"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Market"
+			x: -18.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["362B0DE04E15818D"]
+			description: ["{image:society:textures/gui/buildings/npc_carpenter.png width:200 height:200 align:center}"]
+			icon: "meadow:woodcutter"
+			id: "43A67EE6D3EE3436"
+			min_required_tasks: 3
+			rewards: [{
+				id: "41324C0F6092B181"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "npc_carpenter"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Carpenter House\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "npc_carpenter"
+						owner: "worn"
+						owner_name: "Duy Luong"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Duy Luong&r - 13 blocks deep, 15 blocks wide, and 9 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "247123F3C6AA056F"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "695F74D2FF9998DB"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "34E24813489922AD"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Carpenter"
+			x: -19.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["362B0DE04E15818D"]
+			description: ["{image:society:textures/gui/buildings/npc_fisher.png width:200 height:200 align:center}"]
+			icon: {
+				Count: 1
+				id: "aquaculture:iron_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "005C2BFD9CA51DCD"
+			min_required_tasks: 3
+			rewards: [{
+				id: "5FB35029710C9A64"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "npc_fisher"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Fisher House\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "npc_fisher"
+						owner: "worn"
+						owner_name: "Nyxzerria"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Nyxzerria&r - 13 blocks deep, 14 blocks wide, and 12 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "0A77351FB6AE7FA0"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7404FAE79AF2DD78"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "634077A19E90AD06"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Fisher"
+			x: -19.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["362B0DE04E15818D"]
+			description: ["{image:society:textures/gui/buildings/npc_banker.png width:200 height:200 align:center}"]
+			icon: "numismatics_utils:portable_bank_terminal"
+			id: "13BB759BEF4D66ED"
+			min_required_tasks: 3
+			rewards: [{
+				id: "61269D2660052C15"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "npc_banker"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Banker House\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "npc_banker"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 15 blocks deep, 17 blocks wide, and 11 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "1A4F92EA508E87C6"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0C959E620149616C"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "48055D6B495B9527"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Banker"
+			x: -18.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["362B0DE04E15818D"]
+			description: ["{image:society:textures/gui/buildings/npc_shepherd.png width:200 height:200 align:center}"]
+			icon: "society:merino_wool"
+			id: "5C9B301CB3C8A20E"
+			min_required_tasks: 3
+			rewards: [{
+				id: "627E615B13BD6673"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "npc_shepherd"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Shepherd House\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "npc_shepherd"
+						owner: "worn"
+						owner_name: "EeveeBeby"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6EeveeBeby&r - 16 blocks deep, 16 blocks wide, and 9 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "6656FDAF9B5E93C6"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0985EF4CDC28B9CE"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "58217BC0C5D298C0"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Shepherd"
+			x: -17.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["362B0DE04E15818D"]
+			description: ["{image:society:textures/gui/buildings/npc_blacksmith.png width:200 height:200 align:center}"]
+			icon: "society:gold_upgrade_smithing_template"
+			id: "4A6B6B073258F511"
+			min_required_tasks: 3
+			rewards: [{
+				id: "06CC44814AD6CC48"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "npc_blacksmith"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Blacksmith House\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "npc_blacksmith"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6charlotte.b&r - 15 blocks deep, 16 blocks wide, and 11 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "20E6FC8B965EDA90"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "20147A7124548E16"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1B96556FDBE33D75"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Blacksmith"
+			x: -17.5d
+			y: -6.5d
+		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"
 }

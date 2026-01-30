@@ -17,7 +17,7 @@ BlockEvents.rightClicked(
     if (aboveBlock.id === "minecraft:air") {
       if (item.id === "veggiesdelight:garlic_seed") {
         aboveBlock.set("veggiesdelight:garlic_crop");
-        item.shrink(1);
+        if (!player.isCreative()) item.shrink(1);
         player.swing();
         server.runCommandSilent(
           `playsound minecraft:block.crop.break block @a ${player.x} ${player.y} ${player.z}`
