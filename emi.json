@@ -48,6 +48,7 @@
     }
   ],
   "lookup_history": [
+    "item:create:brass_ingot",
     "item:society:invitation{type:{id:\"society:banker\"}}",
     "item:classicpipes:flint_pipe",
     "item:classicpipes:oak_pipe",
@@ -538,11 +539,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farm_and_charm:bacon_with_eggs",
-      "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
-      "item:brewery:pork_knuckle",
       "item:minecraft:cooked_porkchop",
+      "item:brewery:pork_knuckle",
+      "item:candlelight:pork_ribs",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -553,9 +554,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/cauliflower",
+      "#item:forge:crops/zucchini",
       "#item:forge:crops/potato",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -1518,8 +1519,7 @@
     "item:society:blueberry_crate",
     "item:candlelight:cooking_pot",
     "item:candlelight:cooking_hat{Damage:0}",
-    "item:smallships:bamboo_cog",
-    "item:minecraft:bamboo_raft"
+    "item:smallships:bamboo_cog"
   ],
   "craft_history": [
     "meadow:fire_log",
