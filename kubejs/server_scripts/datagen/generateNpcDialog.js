@@ -1,7 +1,7 @@
 let translationKeys = {};
-global.datagenDialog = false;
+global.datagenDialog = true;
 
-const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
+const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, isChatter) => {
   let entries = [];
   let resolvedDialogLines = Array.isArray(dialogLines) ? dialogLines : [dialogLines];
   resolvedDialogLines.forEach((entry, index) => {
@@ -10,7 +10,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
     let queuedEntry = {
       id:
         index == 0 ? "start" : index == resolvedDialogLines.length - 1 ? "end" : index,
-      speaker: { translate: `dialog.npc.${npcId}.name`, color: "gold" },
+      speaker: { translate: `dialog.npc.${npcId}.name`, color: "white" },
       text: [{ translate: lineTranslationKey }],
       portraits: [
         {
@@ -20,8 +20,8 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines) => {
         },
       ],
     }
-    // Always open up the shop at the end of the dialog if there 
-    if (resolvedDialogLines.length - 1 == index) {
+    // Always open up the shop at the end of the chatter dialog
+    if (isChatter && resolvedDialogLines.length - 1 == index) {
       if (npcId == "carpenter") {
         translationKeys["dialog.npc.carpenter.purchase_supplies"] = "Purchase supplies";
         translationKeys["dialog.npc.carpenter.invite_villagers"] = "Invite Villagers";
@@ -79,7 +79,8 @@ const runNpcDatagen = (npcId, npcDef) => {
               npcId,
               `chatter_${friendshipKey}`,
               chatterIndex,
-              chatter
+              chatter,
+              true
             ),
           }
         );

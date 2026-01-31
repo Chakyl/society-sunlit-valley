@@ -7,7 +7,7 @@
 			"id": "start",
 			"speaker": {
 				"translate": "dialog.npc.witch.name",
-				"color": "gold"
+				"color": "white"
 			},
 			"text": [
 				{
@@ -26,7 +26,7 @@
 			"id": 1,
 			"speaker": {
 				"translate": "dialog.npc.witch.name",
-				"color": "gold"
+				"color": "white"
 			},
 			"text": [
 				{
@@ -45,7 +45,7 @@
 			"id": 2,
 			"speaker": {
 				"translate": "dialog.npc.witch.name",
-				"color": "gold"
+				"color": "white"
 			},
 			"text": [
 				{
@@ -64,7 +64,7 @@
 			"id": "end",
 			"speaker": {
 				"translate": "dialog.npc.witch.name",
-				"color": "gold"
+				"color": "white"
 			},
 			"text": [
 				{
@@ -77,9 +77,6 @@
 					"position": "INLINE",
 					"brightness": 1
 				}
-			],
-			"command": [
-				"openshop @p witch"
 			]
 		}
 	]

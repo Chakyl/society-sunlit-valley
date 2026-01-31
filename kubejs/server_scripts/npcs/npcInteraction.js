@@ -100,8 +100,7 @@ ItemEvents.entityInteracted((e) => {
                 } else {
                     player.tell(Text.translatable("society.npc.gifted_too_soon").gold())
                 }
-            }
-            else {
+            } else {
                 if (npcId === "carpenter" || day > npcData.dayLastChatted || npcData.dayLastChatted - day > 1) {
                     let hearts = Math.floor(npcData.friendship / 100);
                     dialogNumber = Math.floor(Math.random() * dialogLengths[npcId].chatterLengths[hearts]);
