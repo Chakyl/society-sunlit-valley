@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "classicpipes:copper_fluid_pipe"
+    },
+    "W": {
+      "item": "society:jade"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OWO",
+    "OOO"
+  ],
+  "result": {
+    "count": 8,
+    "item": "classicpipes:advanced_copper_fluid_pipe"
+  }
+}

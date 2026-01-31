@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "classicpipes:jungle_pipe"
+    },
+    "W": {
+      "item": "society:oak_resin"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OWO",
+    "OOO"
+  ],
+  "result": {
+    "count": 8,
+    "item": "classicpipes:jungle_fluid_pipe"
+  }
+}

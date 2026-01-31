@@ -15,6 +15,7 @@ const handleAutoGrabSpecialItem = (
   const { player, target, level, server, block, inventory } = e;
   let affection;
   let mood;
+  let recycleSparkstone;
   let resolvedItem = item;
   let resolvedChance = chance;
   let resolvedHasQuality = hasQuality
@@ -55,7 +56,8 @@ const handleAutoGrabSpecialItem = (
     );
     let specialItemResultCode = global.insertBelow(level, block, specialItem);
     if (specialItemResultCode == 1) {
-      if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+      recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
+      if (!recycleSparkstone && global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
         console.error("Sparkstone not consumed when it should have been!");
       server.runCommandSilent(
         `playsound stardew_fishing:dwop block @a ${block.x} ${block.y} ${block.z}`
@@ -80,6 +82,7 @@ const handleAutoGrabSpecialItem = (
 
 global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
   const { inventory, block, level } = entity;
+  let recycleSparkstone;
   let data;
   let nbt;
   if (plushieModifiers) {
@@ -118,7 +121,8 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
       if (milkItem !== -1) {
         let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
         if (insertedMilk) {
-          if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+          recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
+          if (!recycleSparkstone && global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
             console.error("Sparkstone not consumed when it should have been!");
           if (!plushieModifiers && !global.getAnimalIsNotCramped(animal, 1.1))
             data.affection = data.getInt("affection") - 50;
@@ -192,7 +196,8 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
             global.insertBelow(level, block, droppedLoot[i]) == 1;
         }
         if (insertedMagicDrops) {
-          if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+          recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
+          if (!recycleSparkstone && global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
             console.error("Sparkstone not consumed when it should have been!");
           if (!plushieModifiers && !global.getAnimalIsNotCramped(animal, 1.1))
             data.affection = data.getInt("affection") - 50;

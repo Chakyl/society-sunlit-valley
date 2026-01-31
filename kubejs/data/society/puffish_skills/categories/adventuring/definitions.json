@@ -56,6 +56,38 @@
       }
     ]
   },
+  "fence_2": {
+    "title": {"translate": "society_skills.adventuring.fence"},
+    "description": {"translate": "society_skills.adventuring.fence.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "bundle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "attribute @s shippingbin:meat_sell_multiplier base set 1.5",
+          "lock_command": "attribute @s shippingbin:meat_sell_multiplier base set 1"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fence_2",
+          "lock_command": "kubejs stages remove @s fence_2"
+        }
+      }
+    ]
+  },
   "fence": {
     "title": {"translate": "society_skills.adventuring.fence"},
     "description": {"translate": "society_skills.adventuring.fence.description"},

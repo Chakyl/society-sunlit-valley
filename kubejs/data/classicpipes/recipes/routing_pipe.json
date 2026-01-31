@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "oreganized:silver_ingot"
+    },
+    "W": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "pattern": [
+    "OWO"
+  ],
+  "result": {
+    "count": 8,
+    "item": "classicpipes:routing_pipe"
+  }
+}

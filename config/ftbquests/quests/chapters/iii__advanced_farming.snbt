@@ -85,7 +85,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 1.0d
 		}
 		{
@@ -117,6 +117,7 @@
 			dependencies: [
 				"41FD632FA78AFB49"
 				"0F176FBF01ABB774"
+				"6689D68F72E56A40"
 			]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest5.description1}"
@@ -343,8 +344,12 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["79C92AEDE15E7E6D"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest16.description1}"]
+			dependencies: ["0F176FBF01ABB774"]
+			description: [
+				"{ftbquests.chapter.iii__advanced_farming.quest16.description1}"
+				""
+				"{ftbquests.chapter.iii__advanced_farming.quest16.description2}"
+			]
 			id: "572D70993411EA53"
 			rewards: [{
 				id: "212C9E001544957C"
@@ -1126,7 +1131,7 @@
 				item: "society:wine_keg"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
@@ -1160,7 +1165,7 @@
 				""
 				"It draws from nearby trees to form different kinds of mushrooms every 4 days depending on the tree types. "
 				""
-				"The quantity of them is impacted by the amount of nearby trees."
+				"The quantity and quality of them is impacted by the amount of nearby trees."
 			]
 			id: "0C5EB5F66FB04A29"
 			rewards: [{
@@ -1180,7 +1185,9 @@
 			description: [
 				"&6Mossberries&r are the jewels of &6Autumn&r!"
 				""
-				"They rarely form in trees and dropped when chopped. Unlike other crops, they cannot be farmed like crops."
+				"They rarely grow on trees and drop when chopped. "
+				""
+				"Unlike other berries, they cannot be farmed like crops. "
 			]
 			id: "51772B6C1CD5DD1E"
 			rewards: [{
@@ -1193,8 +1200,62 @@
 				item: "society:mossberry"
 				type: "item"
 			}]
-			x: 9.5d
+			title: "Autumn Tree Berry"
+			x: 9.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["66E1AC55824DF1D9"]
+			description: ["Buried in the depths of the &6The Nether&r "]
+			icon: "etcetera:bismuth_ingot"
+			id: "6689D68F72E56A40"
+			rewards: [{
+				count: 4
+				id: "6B18B1CF41610DDF"
+				item: "etcetera:raw_bismuth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A65260FDC53A156"
+				item: "etcetera:raw_bismuth"
+				type: "item"
+			}]
+			title: "Nether Materia"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6689D68F72E56A40"]
+			description: [
+				"&6Bismuth Ingots&r can be made into a special glass that form &6Classic Pipes&r."
+				""
+				"When given a redstone signal, &6Copper Pipes&r can extract items from inventories and insert them into &6Item Pipes&r that route them in different directions."
+				""
+				"Different types pipes can be used to create handy systems for item transport on your farm."
+			]
+			icon: "classicpipes:oak_pipe"
+			id: "6C95E6AEEC55CFA5"
+			rewards: [{
+				count: 4
+				id: "18CC62D39ADF1ED4"
+				item: "classicpipes:advanced_copper_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C184749905BE27F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "classicpipes:pipes/item"
+					}
+				}
+				title: "Any Item Pipe"
+				type: "item"
+			}]
+			title: "Item Transport"
+			x: 3.5d
+			y: 1.5d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

@@ -855,7 +855,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 17.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["0E4EA6B5E8E6361C"]
@@ -944,7 +944,7 @@
 				}
 			]
 			x: -1.5d
-			y: 20.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
@@ -1665,6 +1665,29 @@
 			}]
 			x: -3.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["4A96DC00D7D0CAD6"]
+			description: [
+				"&6Networked Pipes&r are capable of complex logistical operations. They can be used to sort, auto-stock, auto craft, and auto-retrieve items from pipe networks."
+				""
+				"They require a good bit of skill to use, but the &6Classic Pipes wiki&r online has details for those that wish to master them."
+			]
+			id: "3042AA873F9B60C5"
+			rewards: [{
+				count: 32
+				id: "585E6170FCE21E54"
+				item: "classicpipes:routing_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D06C14464DC35FC"
+				item: "classicpipes:routing_pipe"
+				type: "item"
+			}]
+			title: "Complex Logistics"
+			x: -1.0d
+			y: 17.5d
 		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"

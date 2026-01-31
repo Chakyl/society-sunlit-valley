@@ -7,380 +7,340 @@
 	group: "439B0423947443D3"
 	icon: "numismatics:crown"
 	id: "20D348A9B6875391"
+	images: [
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/shepherd.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/carpenter.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/market.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/fisher.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/banker.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/blacksmith.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 9.5d
+			y: -1.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"{ftbquests.chapter.villagers.quest1.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest1.description2}"
-				""
-				"{ftbquests.chapter.villagers.quest1.description3}"
-			]
-			id: "20C76D194ECEDB76"
+			dependencies: ["664E4A3806C40A78"]
+			description: ["The &6Shepherd&r can get you started with animals on your farm, selling &6Animal Feed&r as well as spawn crates of some basic farm animals."]
+			id: "3CF0897E67574877"
 			rewards: [{
 				count: 4
-				id: "2D105668FF36429F"
-				item: "numismatics:spur"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				icon: "minecraft:villager_spawn_egg"
-				id: "75FBBBD9C62288F7"
-				observe_type: 5
-				timer: 0L
-				title: "{ftbquests.chapter.villagers.quest1.task_8501595265598392567.title}"
-				to_observe: "minecraft:villager"
-				type: "observation"
-			}]
-			title: "{ftbquests.chapter.villagers.quest1.title}"
-			x: 0.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: [
-				"{ftbquests.chapter.villagers.quest2.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest2.description2}"
-			]
-			id: "6E798A5692446D56"
-			rewards: [{
-				id: "18058AD22AB55924"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest2.subtitle}"
-			tasks: [{
-				id: "734BF4DD565B786C"
-				item: "minecraft:smithing_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest2.title}"
-			x: 0.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: ["{ftbquests.chapter.villagers.quest3.description1}"]
-			id: "0D63E5BAB6620706"
-			rewards: [{
-				id: "7AB5189776F8A5E5"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest3.subtitle}"
-			tasks: [{
-				id: "0AB4554DAFC8EA32"
-				item: "minecraft:note_block"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest3.title}"
-			x: -1.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: ["{ftbquests.chapter.villagers.quest4.description1}"]
-			id: "3132B8E599090E29"
-			rewards: [{
-				id: "39E8AD303D93AC6A"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest4.subtitle}"
-			tasks: [{
-				id: "40C7E8E6AA4DE844"
-				item: "minecraft:cartography_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest4.title}"
-			x: 2.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: ["{ftbquests.chapter.villagers.quest5.description1}"]
-			id: "3684F1F871DD6C8A"
-			rewards: [{
-				id: "4C5A9ED5FC01B7AD"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest5.subtitle}"
-			tasks: [{
-				id: "6270C3292FB01553"
-				item: "minecraft:composter"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest5.title}"
-			x: -2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: ["{ftbquests.chapter.villagers.quest6.description1}"]
-			id: "41418A5AEE77DEED"
-			rewards: [{
-				id: "225410BA5158358E"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest6.subtitle}"
-			tasks: [{
-				id: "0AAF9D33B6DE9AEB"
-				item: "minecraft:lectern"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest6.title}"
-			x: 3.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: [
-				"{ftbquests.chapter.villagers.quest7.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest7.description2}"
-			]
-			id: "261CCCC35F53BF1E"
-			rewards: [{
-				id: "5FBEA7CB0E3E7B21"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest7.subtitle}"
-			tasks: [{
-				id: "04F63F9436B1A12A"
-				item: "minecraft:barrel"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest7.title}"
-			x: -2.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: ["{ftbquests.chapter.villagers.quest8.description1}"]
-			id: "435D4462F1039E28"
-			rewards: [{
-				id: "1598751B4934C39E"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest8.subtitle}"
-			tasks: [{
-				id: "68E5A8284804352B"
-				item: "minecraft:loom"
-				title: "{ftbquests.chapter.villagers.quest8.task_7558632440571639083.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest8.title}"
-			x: -2.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: [
-				"{ftbquests.chapter.villagers.quest9.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest9.description2}"
-			]
-			id: "3F1DEDF21B61F11F"
-			rewards: [{
-				id: "23966BA017DFA759"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest9.subtitle}"
-			tasks: [{
-				id: "095FCBF8DBCD93AF"
-				item: "minecraft:grindstone"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest9.title}"
-			x: -1.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: ["{ftbquests.chapter.villagers.quest10.description1}"]
-			id: "016654B067477BFD"
-			rewards: [{
-				id: "7BEA48770B50AD77"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest10.subtitle}"
-			tasks: [{
-				id: "1DF866025118592F"
-				item: "minecraft:brewing_stand"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest10.title}"
-			x: 3.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["774B43FCB1FFE9CC"]
-			description: ["{ftbquests.chapter.villagers.quest11.description1}"]
-			hide_until_deps_visible: true
-			id: "019719A32C5E6E62"
-			rewards: [
-				{
-					id: "26DDE63951682EC4"
-					item: "numismatics:cog"
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					command: "/kjs stages add @p master_cultivator_unlocked"
-					elevate_perms: true
-					id: "30FE5EEFA12838A4"
-					silent: true
-					type: "command"
-				}
-			]
-			tasks: [{
-				id: "6B3278D45DAED2F9"
-				item: "candlelight:cooking_pot"
-				title: "{ftbquests.chapter.villagers.quest11.task_7724369164393960185.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest11.title}"
-			x: -1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: [
-				"{ftbquests.chapter.villagers.quest12.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest12.description2}"
-			]
-			id: "4DF11DD3A8FBBEFD"
-			rewards: [{
-				id: "0C2490AA1E8BC651"
-				item: "numismatics:sprocket"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.villagers.quest12.subtitle}"
-			tasks: [{
-				id: "386CF363F2DDC7C7"
-				item: "beachparty:tiki_bar"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest12.title}"
-			x: 3.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: [
-				"{ftbquests.chapter.villagers.quest13.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest13.description2}"
-			]
-			icon: "society:prismatic_shard"
-			id: "774B43FCB1FFE9CC"
-			size: 1.5d
-			tasks: [{
-				disable_toast: true
-				id: "741980CFDEDA2481"
-				item: "society:prismatic_shard"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest13.title}"
-			x: 0.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["774B43FCB1FFE9CC"]
-			description: [
-				"{ftbquests.chapter.villagers.quest14.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest14.description2}"
-			]
-			id: "7384B959FEEC54F1"
-			rewards: [
-				{
-					id: "59348105B542A969"
-					item: "numismatics:sprocket"
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					command: "/kjs stages add @p exotic_trader_unlocked"
-					elevate_perms: true
-					id: "0751C08B7354C12C"
-					silent: true
-					type: "command"
-				}
-			]
-			subtitle: "{ftbquests.chapter.villagers.quest14.subtitle}"
-			tasks: [{
-				id: "4943DC0F7E44BDF4"
-				item: "minecraft:fletching_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest14.title}"
-			x: 2.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["774B43FCB1FFE9CC"]
-			description: [
-				"{ftbquests.chapter.villagers.quest15.description1}"
-				""
-				"{ftbquests.chapter.villagers.quest15.description2}"
-			]
-			id: "4CD86031FF05AC1F"
-			rewards: [
-				{
-					id: "7B384D0123F0CB69"
-					item: "numismatics:cog"
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					command: "/kjs stages add @p mystical_botanist_unlocked"
-					elevate_perms: true
-					id: "0D312ADEEEC17D62"
-					silent: true
-					team_reward: false
-					type: "command"
-				}
-			]
-			subtitle: "{ftbquests.chapter.villagers.quest15.subtitle}"
-			tasks: [{
-				id: "2010D08970F3DA02"
-				item: "beautify:botanist_workbench"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.villagers.quest15.title}"
-			x: 0.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["20C76D194ECEDB76"]
-			description: ["{ftbquests.chapter.villagers.quest16.description1}"]
-			id: "1A59CD9C40CABBF7"
-			rewards: [{
-				id: "08DEEF5FCE990037"
+				id: "26C56AF517918EC1"
 				item: "numismatics:cog"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.villagers.quest16.subtitle}"
 			tasks: [{
-				id: "0E99012F5152AFAA"
-				item: "minecraft:cauldron"
+				id: "587C3337DCD6144D"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:shepherd"
+						}
+					}
+				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.villagers.quest16.title}"
-			x: 2.0d
-			y: 0.5d
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"The &6Carpenter&r has two shops to browse through:"
+				""
+				"- &6Supplies&r, which has convenient building blocks"
+				"- &6Invitations&r, which allow you to invite more villagers"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "664E4A3806C40A78"
+			rewards: [{
+				count: 2
+				id: "6839878BB1EDD498"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0B63F83931AB06AE"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:carpenter"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["664E4A3806C40A78"]
+			description: ["The &6Market&r is the most essential supplier of your farm. It stocks seeds, farming, and cooking supplies."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "048655663A5A82FC"
+			rewards: [{
+				count: 4
+				id: "61D96A98B3584FAA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				id: "233BA4DFB56C7C30"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:market"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["048655663A5A82FC"]
+			description: ["The &6Fisher&r sells fishing rods and addons to upgrade them."]
+			id: "2A64214504AAD5E5"
+			rewards: [{
+				count: 4
+				id: "4C40384A6DE0625A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				id: "550ADDBC7FEA01A9"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:fisher"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["664E4A3806C40A78"]
+			description: ["The &6Blacksmith&r sells metals, smithing templates, and &6Geode Busters&r for cracking open geodes."]
+			id: "499871FDD2A65F2C"
+			rewards: [{
+				count: 4
+				id: "211263500283A787"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				id: "432B8C3C9C058DD3"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:blacksmith"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["048655663A5A82FC"]
+			description: ["The &6Banker&r sells management tools to make handling your finances easier."]
+			id: "4633C0427ACA18D3"
+			rewards: [{
+				id: "39A6E5251F5A738D"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A559CD37BBF1E5B"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:banker"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4633C0427ACA18D3"]
+			description: ["Some villagers can only be called over the phone! The &6Banker&r can connect you to these as well as any ones you've unlocked."]
+			id: "33338792EF0994BD"
+			size: 2.0d
+			tasks: [{
+				id: "1A13B35BF5920741"
+				item: "whimsy_deco:phone"
+				type: "item"
+			}]
+			title: "Calling Villagers"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["33338792EF0994BD"]
+			description: ["The &6Storagesmith&r sells equipment for managing your storage, including the &6Refined Storage system&r to digitally store your items."]
+			icon: "minecraft:chest"
+			id: "49477F09DF6EBA50"
+			tasks: [{
+				id: "078F96904FB1E9F6"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Storagesmith"
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["33338792EF0994BD"]
+			description: ["The &6Guild&r will help you on your adventures, selling tools to navigate around the world better."]
+			icon: {
+				Count: 1
+				id: "quark:pickarang"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "55F17BB945CA5BB2"
+			tasks: [{
+				id: "243D36F88B4D14A6"
+				title: "Guild"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["33338792EF0994BD"]
+			description: ["The &6Barkeeper&r sells food and various multiplayer-oriented items, such as &6Cameras&r and &6Easels&r."]
+			id: "7B2AB58CA9C1C19B"
+			tasks: [{
+				id: "330D077923A3C555"
+				item: "brewery:beer_wheat"
+				type: "item"
+			}]
+			title: "Barkeeper"
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"33338792EF0994BD"
+				"66E1AC55824DF1D9"
+			]
+			description: [
+				"The &6Witch&r has a deep connection with the nature of the valley and sells various expensive and magical goods."
+				""
+				"She can be called after visiting the &6Nether&r for the first time."
+			]
+			icon: "minecraft:brewing_stand"
+			id: "52F1DCA9462F825F"
+			tasks: [{
+				id: "3C94F73EFA3C7BCD"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Witch"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"33338792EF0994BD"
+				"5A369FC904BCF5EE"
+			]
+			description: [
+				"The &6Trader&r offers wares that can only be purchased with items and not money."
+				""
+				"They can be called on the phone after visiting the &6Skull Cavern&r for the first time."
+			]
+			icon: "society:ancient_cog"
+			id: "1348507AE17E187E"
+			tasks: [{
+				id: "691F920167A31AB3"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Trader"
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["33338792EF0994BD"]
+			description: [
+				"The &6Bookseller&r appears at the end of every season (for example, Late Spring)."
+				""
+				"Skill books that are normally found in the world can be bought for high prices, with some rotating stock every season."
+			]
+			icon: "society:animal_fancy"
+			id: "0E7AAB1F6C287535"
+			tasks: [{
+				id: "6C5F6D72CE1B21A3"
+				title: "Bookseller"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 9.0d
 		}
 	]
 	title: "{ftbquests.chapter.villagers.title}"

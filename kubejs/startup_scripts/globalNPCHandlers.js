@@ -130,7 +130,7 @@ const villagerSpecificGifts = new Map([
         hated: [],
     }],
     ["carpenter", {
-        loved: ["#gamediscs:game_discs", "society:toy_train", "society:mossberry_stew", "trials:heavy_core", "vintagedelight:deluxe_granola_bar"],
+        loved: ["#gamediscs:game_discs", "society:steamy_gadget", "society:mossberry_stew", "trials:heavy_core", "vintagedelight:deluxe_granola_bar"],
         liked: ["vintagedelight:chocolate_nut_granola_bar", "vintagedelight:fruity_granola_bar", "vinery:straw_hat", "society:mossberry", "create:honeyed_apple"],
         neutral: ["#society:raw_logs"],
         disliked: [],
@@ -144,7 +144,7 @@ const villagerSpecificGifts = new Map([
         hated: [],
     }],
     ["market", {
-        loved: ["society:steamy_gadget", "windswept:elder_feather", "society:latte", "society:tubasmoke_carton", "society:ancient_vespertine"],
+        loved: ["society:glitched_vhs", "windswept:elder_feather", "society:latte", "society:tubasmoke_carton", "society:ancient_vespertine"],
         liked: ["society:tubasmoke_stick", "society:energy_drink", "supplementaries:antique_ink", "herbalbrews:coffee", "untitledduckmod:duck_feather"],
         neutral: [],
         disliked: [],

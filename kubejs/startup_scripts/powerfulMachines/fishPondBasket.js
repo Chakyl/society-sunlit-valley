@@ -8,13 +8,15 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   let machineOutputs;
   let newProperties = fishPond.getProperties();
   let nbt = fishPond.getEntityData();
+  let recycleSparkstone;
   const { type, max_population, population } = nbt.data;
   if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
+  recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
   if (
     newProperties.get("mature").toLowerCase() === "true" &&
     max_population === population &&
     global.inventoryBelowHasRoom(level, block, global.getRoe(type)) &&
-    global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
+    (recycleSparkstone || global.useInventoryItems(inventory, "society:sparkstone", 1) == 1)
   ) {
     machineOutputs = global.handleFishHarvest(fishPond, player, server, true);
 
@@ -42,9 +44,10 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
     population > 0
   ) {
     let fishie = global.handleFishExtraction(fishPond, player, server);
+    recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
     if (
       global.inventoryBelowHasRoom(level, block, fishie) &&
-      global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
+      (recycleSparkstone || global.useInventoryItems(inventory, "society:sparkstone", 1) == 1)
     ) {
       global.insertBelow(level, block, fishie);
       level.spawnParticles(

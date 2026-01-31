@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:iron_nugget"
+    },
+    "W": {
+      "tag": "classicpipes:pipes/networked"
+    }
+  },
+  "pattern": [
+    "OWO"
+  ],
+  "result": {
+    "count": 1,
+    "item": "classicpipes:matching_pipe"
+  }
+}
