@@ -33,8 +33,8 @@ global.runShippingBinMonitor = (entity) => {
         block.y + 0.25,
         "shipping_bin_monitor",
         calculationResults === -1
-          ? "Offline"
-          : `●${calculationResults < 100000000 ? " " : ""}${global.formatPrice(calculationResults)}`
+          ? Text.translatable("block.society.shipping_bin_monitor.offline")
+          : Text.of(`●${calculationResults < 100000000 ? " " : ""}${global.formatPrice(calculationResults)}`)
       );
     }
   }

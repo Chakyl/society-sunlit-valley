@@ -158,8 +158,9 @@ global.handleShippingBinDebt = (
           `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
           Text.translatable(
-            "society.shipping_bin.debt_paid_all"
-          ).getString()
+            "society.shipping_bin.debt_paid_all",
+            global.formatPrice(debtPaid.toFixed())
+          ).toJson()
         )
       );
       global.setDebt(server, playerUUID, 0);
@@ -171,27 +172,24 @@ global.handleShippingBinDebt = (
           player.username,
           `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          `§f● §6${global.formatPrice(
-            debtPaid
-          )} §7of your debt paid off...`
+          Text.translatable(
+            "society.shipping_bin.debt_paid",
+            global.formatPrice(debtPaid.toFixed())
+          ).toJson()
         )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
     }
   }
   if (debtPaid > 0) {
-    let receiptAuthor = Text.translatable(
-      "society.hospital_receipt.author"
-    ).getString();
+    let receiptAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
     let receiptText = Text.translatable(
       "society.shipping_bin.debt_paid_note",
       player.username,
       global.formatPrice(debtPaid.toFixed()),
       global.formatPrice(totalDebt.toFixed())
-    ).getString();
-    let receiptTitle = Text.translatable(
-      "society.shipping_bin.debt_paid_note.title"
-    ).getString();
+    ).toJson();
+    let receiptTitle = global.translatableWithFallback("society.shipping_bin.debt_paid_note.title", "Debt Payment Receipt").getString();
     receipt = global.getNotePaperItem(receiptAuthor, receiptText, receiptTitle);
     if (extenalOutput) {
       block.popItemFromFace(receipt, block.properties.get("facing"));
@@ -261,9 +259,10 @@ global.processValueOutput = (
             player.username,
             `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
             160,
-            `● §6${global.formatPrice(
-              value
-            )} §7worth of goods sold`
+            Text.translatable(
+              "society.shipping_bin.goods_sold",
+              global.formatPrice(value.toFixed())
+            ).toJson()
           )
         );
       }
@@ -325,7 +324,7 @@ global.processValueOutput = (
           player.username,
           `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          Text.translatable("society.shipping_bin.full").getString()
+          Text.translatable("society.shipping_bin.full").toJson()
         )
       );
     }
