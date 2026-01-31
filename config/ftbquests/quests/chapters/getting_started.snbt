@@ -896,6 +896,31 @@
 			x: 10.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["24C86673E1F57A3E"]
+			description: [
+				"Strengthening your bond with the villagers will make them feel more at home in your town!"
+				""
+				"&6Shift + Right Click&r on a villager to give them a gift once every 4 days."
+				""
+				"Things that have a sell value are always giftable, but you can find the full list by searching &6#villager_gift&r in JEI/EMI."
+			]
+			icon: "simplehats:presentsstack"
+			id: "3E08F21BA8F69499"
+			rewards: [{
+				id: "29EB69F5E70B1F10"
+				item: "atmospheric:candied_orange_slices"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F77BA107A199EE0"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Giving Gifts"
+			x: 11.0d
+			y: -3.0d
+		}
 	]
 	title: "{ftbquests.chapter.getting_started.title}"
 }

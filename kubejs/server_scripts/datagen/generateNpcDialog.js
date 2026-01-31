@@ -1,5 +1,5 @@
 let translationKeys = {};
-global.datagenDialog = true;
+global.datagenDialog = false;
 
 const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, isChatter) => {
   let entries = [];
@@ -49,7 +49,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, isCh
     }
     entries.push(queuedEntry);
   });
-  if (npcId == "carpenter") {
+  if (isChatter && npcId == "carpenter") {
     entries.push({
       id: "end",
     })
