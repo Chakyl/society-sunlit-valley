@@ -335,6 +335,8 @@ StartupEvents.registry("item", (e) => {
     .maxStackSize(1);
   e.create("society:animal_cracker").texture("society:item/animal_cracker");
   e.create("society:sunlit_crystal").texture("society:item/sunlit_crystal");
+  e.create("society:plushie_wand").texture("society:item/plushie_wand")
+    .maxStackSize(1)
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
   e.create("society:pig_race_ticket").texture("society:item/pig_race_ticket");
   e.create("society:multiplayer_pig_race_ticket").texture(

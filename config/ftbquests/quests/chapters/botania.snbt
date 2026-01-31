@@ -963,6 +963,36 @@
 			x: 13.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["6DAC81A05E481E58"]
+			description: [
+				"Pointing a mana spreader at each of your &6Mana Fruit&r crops can be a tad annoying."
+				""
+				"The &6Mana Sprinkler&r can send mana to nearby &6Mana Fruit&r, with the same area as a &6Gold Sprinkler&r!"
+				""
+				"&oIt also keeps farmland watered like a mundane sprinkler.&r"
+			]
+			id: "796B163FC5C54124"
+			rewards: [
+				{
+					id: "2D2A7A29D356E8AD"
+					item: "botania:lens_power"
+					type: "item"
+				}
+				{
+					id: "59580769B783A3B4"
+					item: "botania:lens_speed"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2AC6D58A1D827006"
+				item: "society:mana_sprinkler"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
 	]
 	title: "{ftbquests.chapter.botania.title}"
 }

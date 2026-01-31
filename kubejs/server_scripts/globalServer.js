@@ -104,20 +104,20 @@ global.calculateCoinValue = (coin) => {
 };
 
 global.getPigColoredName = (pig) => {
-    switch (pig) {
-      case "Red":
-        return Text.translatable("society.pig_race.red_pig").red();
-      case "Blue":
-        return Text.translatable("society.pig_race.blue_pig").blue();
-      case "Yellow":
-        return Text.translatable("society.pig_race.yellow_pig").yellow();
-      case "Green":
-        return Text.translatable("society.pig_race.green_pig").green();
-      default:
-        console.log(`Invalid pig color`);
-    }
-    return Text.of(`${pig}`);
-  };
+  switch (pig) {
+    case "Red":
+      return Text.translatable("society.pig_race.red_pig").red();
+    case "Blue":
+      return Text.translatable("society.pig_race.blue_pig").blue();
+    case "Yellow":
+      return Text.translatable("society.pig_race.yellow_pig").yellow();
+    case "Green":
+      return Text.translatable("society.pig_race.green_pig").green();
+    default:
+      console.log(`Invalid pig color`);
+  }
+  return Text.of(`${pig}`);
+};
 
 global.calculateCoinsFromValue = (price, output) => {
   for (let i = 0; i < global.coinMap.length; i++) {
@@ -152,11 +152,11 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   let weather = level.raining
     ? Text.of("🌧 ").append(extraOutput ? Text.translatable("society.fish_radar.rain").blue() : Text.empty())
     : Text.of("☂ ").append(extraOutput ? Text.translatable("society.fish_radar.clear").yellow() : Text.empty());
-  let time = isDay 
-    ? Text.of("☀ ").append(extraOutput ? Text.translatable("society.fish_radar.day").gold() : Text.empty()) 
+  let time = isDay
+    ? Text.of("☀ ").append(extraOutput ? Text.translatable("society.fish_radar.day").gold() : Text.empty())
     : Text.of("⛈ ").append(extraOutput ? Text.translatable("society.fish_radar.night").darkGray() : Text.empty());
   if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
-    let biome = 
+    let biome =
       Text.of("   🌊 ").append(extraOutput ? Text.translatable("society.fish_radar.ocean").darkAqua() : Text.empty());
     printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
@@ -174,7 +174,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else if (biomeTags.includes("minecraft:is_river")) {
-    let biome = 
+    let biome =
       Text.of("   ☔ ").append(extraOutput ? Text.translatable("society.fish_radar.river").blue() : Text.empty());
     printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
@@ -192,7 +192,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else {
-    let biome = 
+    let biome =
       Text.of("   ☄ ").append(extraOutput ? Text.translatable("society.fish_radar.fresh").aqua() : Text.empty());
     printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
@@ -380,4 +380,29 @@ global.getPlushieItemNbt = (currentNbt, type, customName, animalData, animalNbt)
     newNbt.animal.Variant = animalNbt.Variant;
   }
   return newNbt;
+};
+global.setPlushieExtractedPD = (animal, data) => {
+  const { ageLastDroppedSpecial, ageLastMilked, ageLastMagicHarvested, clockwork, bribed, bff, animalCracker, } = data;
+  animal.persistentData.affection = 1000;
+  if (ageLastDroppedSpecial) {
+    animal.persistentData.ageLastDroppedSpecial = ageLastDroppedSpecial;
+  }
+  if (ageLastMilked) {
+    animal.persistentData.ageLastMilked = ageLastMilked;
+  }
+  if (ageLastMagicHarvested) {
+    animal.persistentData.ageLastMagicHarvested = ageLastMagicHarvested;
+  }
+  if (clockwork) {
+    animal.persistentData.clockwork = true;
+  }
+  if (bribed) {
+    animal.persistentData.bribed = true;
+  }
+  if (bff) {
+    animal.persistentData.bff = true;
+  }
+  if (animalCracker) {
+    animal.persistentData.animalCracker = true;
+  }
 };

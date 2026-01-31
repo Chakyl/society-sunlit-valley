@@ -34,8 +34,8 @@
 - Added Spinel gem
 - Added normal Skill Book Alias Moss
 - Added Ripper Tooth functionality - Threatens the fish in a Fish Pond into changing their active quest
-- Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish.
-- Added traits Recessive to Juicy and Ender Slimes and Dominant to Orby and Rotting Slimes
+- Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish
+- Added Fredbear plushies
 - Added full value calculations to items when holding shift
 - Added Mana Fruit crop and reworked parts of Botania Progression around it
 - Added Wines: Violet Moon, Sparkling Le Roy, Laputa Franc, and Mana King
@@ -53,6 +53,7 @@
 - Changed recipe of Grapevine Stems/Lattices to use treated logs
 - Cheese is now an Artisan Product (from Farmer Product)
 - Farm animals no longer produce twice as much at max affection
+- Minty Slimes now eat Tubabacco, Orby Slimes now eat Dehydrated Products
 - Reworked unlockable shops. Master Cultivator trades are added to Market after 1 year of playtime. Mystical Botanist (now Wizard) unlocked after visiting the Nether. Exotic Trader (now trader) unlocked after visiting the Skull Cavern
 - Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
@@ -69,24 +70,30 @@
 - Increased valued of Large Eggs (16->32), Duck Eggs (32->48).
 - Increased Sniffer/Frostbiter Artifact shard drops by 1.5x
 - Increased Panda, Red Panda, Squirrel, Deer, Frog, and Cochineal Drops by 2/1/8/3/4/2&4
-- Increased Moobloom milking time by 1
+- Increased longwing flower eating chance 4% -> 8%
 - Increased value of Pine Tar and Oak Resin (48->128)
 - Rebalanced Plort values
+- Rebalanced husbandry as a whole to not be insanely better than other money makers (see below)
 - Reduced cost of Lava Fishing Rod 98,304 ->73,728
 - Reduced cost of Seed Maker (3 gold blocks -> 1)
 - Reduced cost of Crystalarium (5 lead blocks -> 2)
 - Reduced cost of Mechanical Extruder (4 lead blocks -> 2)
 - Reduced cost of all Smithing Templates past gold by half
+- Reduced cost of Deluxe Barns (20->10 iridium coins)
 - Reduced Gem Seller and Gem Tycoon mult (1.5x -> 1.25x, 2x -> 1.5x)
 - Reduced all Pantry & Blacksmith bundles to one item per task
 - Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle 
 - Reduced cost of Vault 83,968 -> 51,200
+- Reduced cost of Dehydrator 73,728 -> 36864
+- Reduced cost of Gadget Core and hammer cores by half
+- Reduced cost of Workbench by half
 - Reduced chance of rain/thunder/snow in Autumn/winter
 - Reduced grain -> feed conversion rate
 - Reduced difficulty of Fish Tank by selecting more common fish for bundles
 - Reduced Caper Catcher (5 -> 3) and Caviar Catcher (5->2) roe amounts
 - Reduced affection increases and decreases by half (excluding candied animal feed)
 - Reduced value of Large Turkey Egg (128 -> 96), Penguin Egg (192 -> 128), and Flamingo Egg (384 -> 256) 
+- Reduced value of Amethyst Milk 144 -> 80
 - Reduced mult of Mayo and Cheese (4 -> 2)
 - Reduced Ancient Goddess Statue Sparkstone trade (16 sparkstone blocks -> 64 sparkstone)
   Reduced milk size of lots of Veggiesdelight recipes (lg -> sm)
@@ -101,7 +108,7 @@
 - Removed Pickaxe cost from Pickarang
 - Removed Tom's Simple Storage
 - Removed Brewer's Bundle from Crafts room (Replaced with Foraging bundle)
-- Removed Gold Ring (functionality still here)
+- Removed Gold Ring
 - Removed max affection doubling forage drops
 - Removed quality preserving from Artisan Cheese Press
 - Removed Holy Locket, Midnight Robe, and Infinity Ham
@@ -129,6 +136,7 @@
 - Fixed several issues with crop quality not calculating correctly
 - Fixed Brown Shrooma having incorrect time of day in Fish Finder 
 - Fixed tomatoes only growing up 1 vine
+- Fixed Sparkstone Recycler not working on Auto-Grabber and Fish Pond Pasket
 - Fixed High Quality Fertilized Farmland not working
 - Fixed Strawberry having vegetable tag
 - Fixed Ender Slime having wrong hat

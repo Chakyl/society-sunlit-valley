@@ -38,7 +38,7 @@ const mastery = new Map([
 ]);
 
 PlayerEvents.tick((e) => {
-  const { player, level } = e;
+  const { player, level, server } = e;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % dayTickDuration;
   if (
@@ -57,13 +57,12 @@ PlayerEvents.tick((e) => {
       player.stages.add("master_cultivator_unlocked");
     }
     if (!player.stages.has("mastery_unlocked")) {
-      player.tell("yeyeyeyey start")
       let addMastery = true;
       let skillTree;
       let hasSkill;
-      Array.from(mastery.keys()).forEach((mastery) => {
+      Array.from(mastery.keys()).forEach((masteryID) => {
         if (addMastery) {
-          skillTree = mastery.get(mastery);
+          skillTree = mastery.get(masteryID);
           hasSkill = false;
           skillTree.forEach((skill) => {
             if (player.stages.has(skill)) hasSkill = true;
@@ -75,7 +74,6 @@ PlayerEvents.tick((e) => {
         player.stages.add("mastery_unlocked")
         server.runCommandSilent(`puffish_skills category unlock ${player.username} society:mastery`);
         // TODO: dialog
-        player.tell("yeyeyeyey")
       }
     }
   }

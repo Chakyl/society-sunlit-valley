@@ -6,28 +6,11 @@
   "hat_y_offset": -0.5,
   "diet": "diet.splendid_slimes.orby",
   "foods": [
-    { "tag": "splendid_slimes:animal_spawn_eggs" },
-    { "tag": "splendid_slimes:monster_spawn_eggs" }
+    { "tag": "society:dehydrated" }
   ],
-  "entities": [
-    "minecraft:chicken",
-    "minecraft:cow",
-    "minecraft:pig",
-    "snowpig:snow_pig",
-    "minecraft:rabbit",
-    "minecraft:sheep",
-    "untitledduckmod:duck",
-    "untitledduckmod:goose",
-    "minecraft:zombie",
-    "minecraft:zombie_villager",
-    "minecraft:skeleton",
-    "minecraft:enderman",
-    "minecraft:husk",
-    "minecraft:stray",
-    "minecraft:drowned",
-    "minecraft:creeper"
-  ],
-  "favorite_entity": "minecraft:drowned",
+  "favorite_food": {
+    "item": "society:dried_shimmering_mushrooms"
+  },
   "traits": ["defiant", "handy", "inverse"],
   "emit_effect_particle": "minecraft:sculk_charge_pop",
   "innate_effects": [

@@ -103,7 +103,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.golden_clock.description").gray());
-      item.tooltip(Text.translatable("tooltip.society.area", `5x5`).green());
+      item.tooltip(Text.translatable("tooltip.society.area", `5x5x5`).green());
       item.modelJson({
         parent: "society:block/kubejs/golden_clock",
       });

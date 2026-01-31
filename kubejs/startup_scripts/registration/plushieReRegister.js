@@ -119,6 +119,7 @@ StartupEvents.registry("block", (event) => {
       .create(`${splitStr[0]}:adv_${splitStr[1]}`, "cardinal")
       .defaultCutout()
       .box(2, 0, 2, 14, 14, 14)
+      .tagBlock("minecraft:mineable/axe")
       .soundType("wool")
       .hardness(1.0)
       .requiresTool(false)

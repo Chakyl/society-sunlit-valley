@@ -575,7 +575,7 @@ global.husbandryMilkingDefinitions = [
   { animal: "minecraft:mooshroom", cooldown: 1, milk: cowMilk },
   {
     animal: "buzzier_bees:moobloom",
-    cooldown: 2,
+    cooldown: 1,
     milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" },
   },
   { animal: "meadow:wooly_cow", warped: false, cooldown: 1, milk: cowMilk },

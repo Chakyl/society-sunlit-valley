@@ -872,6 +872,12 @@ ServerEvents.recipes((e) => {
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });
+    e.shaped("society:mana_sprinkler", ["lil", "iSi", "lpl"], {
+    i: "botania:manasteel_ingot",
+    S: "society:gold_sprinkler",
+    l: "botania:livingwood_log",
+    P: "botania:mana_pump",
+  });
   e.shaped("society:mana_clock", ["mrm", "ncn", "mTm"], {
     r: "botania:rune_sloth",
     T: "botania:terrasteel_ingot",

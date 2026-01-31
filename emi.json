@@ -1,18 +1,6 @@
 {
   "favorites": [
     {
-      "stack": "item:atmospheric:currant"
-    },
-    {
-      "stack": "item:society:sturdy_bamboo_block"
-    },
-    {
-      "stack": "item:windswept:frostbiter_spawn_egg"
-    },
-    {
-      "stack": "item:minecraft:mooshroom_spawn_egg"
-    },
-    {
       "stack": "item:snowpig:snow_pig_spawn_egg"
     },
     {
@@ -48,6 +36,59 @@
     }
   ],
   "lookup_history": [
+    "item:society:plushie_wand",
+    "item:society:sunlit_crystal",
+    "item:botania:twig_wand{color1:1,color2:1}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:orby\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
+    "item:society:tubabacco_leaf",
+    "item:society:tubasmoke_stick",
+    "item:society:dried_brown_mushroom",
+    "item:society:dried_sparkpod",
+    "item:society:dried_chorus_fruit",
+    "item:society:aged_cheese_block",
+    "item:meadow:cheese_block",
+    "item:meadow:warped_cheese_block",
+    "item:society:large_warped_milk",
+    "item:society:large_amethyst_milk",
+    "item:society:large_turkey_mayonnaise",
+    "item:society:large_galliraptor_mayonnaise",
+    {
+      "type": "item",
+      "id": "society:auto_tapper",
+      "amount": 64
+    },
+    "item:minecraft:pig_spawn_egg",
+    "item:snowpig:snow_pig_spawn_egg",
+    "item:atmospheric:currant",
+    "item:society:mana_fruit",
+    "item:botania:terrasteel_ingot",
+    "item:botania:gaia_ingot",
+    "item:minecraft:amethyst_shard",
+    "item:minecraft:amethyst_cluster",
+    "item:society:amethyst_chunk",
+    {
+      "type": "fluid",
+      "id": "create_central_kitchen:dragon_breath",
+      "amount": 250
+    },
+    "item:minecraft:dragon_breath",
+    "item:amendments:dragon_charge",
+    "item:pamhc2trees:dragonfruit_sapling",
+    "item:farmersdelight:nether_salad",
+    "item:simplehats:rgbdragonskull",
+    "item:simplehats:dragonskull",
+    "item:society:dragon_mayonnaise",
+    "item:botania:dragonstone",
+    {
+      "type": "item",
+      "id": "botania:rune_mana",
+      "remainder": "item:botania:rune_mana"
+    },
+    "item:botania:rune_gluttony",
+    "item:farmlife:domestic_tribull_spawn_egg",
+    "item:botania:pump",
+    "item:society:mana_sprinkler",
     "item:create:brass_ingot",
     "item:society:invitation{type:{id:\"society:banker\"}}",
     "item:classicpipes:flint_pipe",
@@ -160,10 +201,7 @@
     "item:society:dehydrator",
     "item:society:wine_keg",
     "item:society:truffle_oil",
-    "item:society:large_galliraptor_mayonnaise",
-    "item:society:dragon_mayonnaise",
     "item:society:flamingo_mayonnaise",
-    "item:botania:rune_mana",
     "item:botania:overgrowth_seed",
     "item:unusualfishmod:ripper_tooth",
     "item:crabbersdelight:clam",
@@ -196,7 +234,6 @@
     "item:society:mushroom_log",
     "item:minecraft:loom",
     "item:society:milk_pail",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:orby\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
     "item:candlelight:floorboard",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:bear\"}}",
@@ -237,7 +274,6 @@
     "item:society:aged_goat_cheese_block",
     "item:farmlife:tribull_cheese_wheel",
     "item:society:double_aged_tribull_cheese_wheel",
-    "item:meadow:cheese_block",
     "item:farm_and_charm:oat",
     {
       "type": "item",
@@ -280,7 +316,6 @@
     "item:domesticationinnovation:drum",
     "item:society:moon_statue",
     "item:minecraft:rabbit_spawn_egg",
-    "item:society:sunlit_crystal",
     "item:cluttered:willow_sapling",
     "item:cluttered:willow_wood",
     "item:everycomp:fs/cluttered/willow_4",
@@ -295,18 +330,12 @@
     "item:minecraft:wooden_axe{Damage:0}",
     "item:minecraft:crafting_table",
     "item:society:mana_fruit_juice",
-    {
-      "type": "item",
-      "id": "society:mana_fruit",
-      "amount": 8
-    },
     "item:minecraft:spruce_planks",
     {
       "type": "item",
       "id": "botania:rune_fire",
       "remainder": "item:botania:rune_fire"
     },
-    "item:botania:rune_gluttony",
     "item:botania:rune_envy",
     "item:relics:rage_glove{abilities:{phlebotomy:{points:0,stats:{attack_speed:0.00655d,heal:1.9E-4d,movement_speed:0.01686d}},rage:{points:0,stats:{dealt_damage:0.04233d,duration:2.29576d,incoming_damage:0.03652d}},spurt:{points:0,stats:{cooldown:17.41622d,damage:0.16688d,distance:5.24384d}}}}",
     "item:minecraft:spruce_trapdoor",
@@ -452,8 +481,6 @@
     "item:society:spindlefish_roe",
     "item:create:white_seat",
     "item:wildernature:raccoon_spawn_egg",
-    "item:snowpig:snow_pig_spawn_egg",
-    "item:minecraft:pig_spawn_egg",
     "item:atmospheric:cochineal_spawn_egg",
     "item:minecraft:bone_block",
     "item:autumnity:snail_spawn_egg",
@@ -485,7 +512,6 @@
     "item:society:growth_obelisk",
     "item:society:fish_pond_basket",
     "item:society:feeding_trough",
-    "item:society:auto_tapper",
     "item:society:fish_smoker",
     "item:society:mana_milker",
     "item:society:fire_quartz",
@@ -517,7 +543,6 @@
     },
     "item:society:sparkpod_juice",
     "item:society:sparkpod_preserves",
-    "item:society:dried_sparkpod",
     "item:via_romana:charting_map",
     "item:botania:auto_crafting_halo",
     "item:cluttered:blue_mushroom_sign",
@@ -539,10 +564,10 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:minecraft:cooked_porkchop",
-      "item:brewery:pork_knuckle",
       "item:candlelight:pork_ribs",
+      "item:minecraft:cooked_porkchop",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
       "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -554,16 +579,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/cauliflower",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -676,7 +701,6 @@
     "item:society:loom",
     "item:farmersdelight:basket",
     "item:society:double_aged_beer_wheat",
-    "item:society:large_amethyst_milk",
     "item:society:oil",
     "item:society:moth_pollen",
     "item:society:ground_cinnamon",
@@ -706,11 +730,6 @@
     "item:whimsy_deco:gatcha_machine",
     "item:brewery:beer_elemental_spawn_egg",
     "item:vinery:fermentation_barrel",
-    {
-      "type": "item",
-      "id": "atmospheric:currant",
-      "amount": 17
-    },
     {
       "type": "item",
       "id": "atmospheric:currant_muffin",
@@ -811,7 +830,6 @@
     },
     "item:numismatics:prismatic_coin",
     "item:crafting_on_a_stick:crafting_table",
-    "item:botania:dragonstone",
     "item:minecraft:quartz",
     "item:botania:mana_diamond",
     "item:society:ruby",
@@ -979,8 +997,6 @@
     "item:minecraft:spruce_log",
     "item:beachparty:sandwaves",
     "item:numismatics:crown",
-    "item:meadow:warped_cheese_block{quality_food:{quality:3}}",
-    "item:society:aged_cheese_block",
     "item:beautify:lamp_jar",
     "item:longwings:glass_jar",
     "item:minecraft:torchflower",
@@ -1099,7 +1115,6 @@
     "item:minecraft:basalt",
     "item:minecraft:grass_block",
     "item:society:aged_ghastly_grenache",
-    "item:society:dried_chorus_fruit",
     "item:society:lunarite",
     "item:society:slate",
     {
@@ -1256,17 +1271,14 @@
     "item:botania:elementium_ingot",
     "item:botania:flight_tiara{variant:1}",
     "item:farmlife:galliraptor_spawn_egg",
-    "item:farmlife:domestic_tribull_spawn_egg",
     "item:botania:terra_plate",
     "item:society:mana_clock{}",
     "item:botania:floating_manastar",
     "item:botania:manaweave_helmet{Damage:0}",
     "item:botania:manasteel_shears{Damage:0}",
     "item:botania:endoflame",
-    "item:botania:gaia_ingot",
     "item:botania:life_essence",
     "item:society:mana_fruit_crate",
-    "item:botania:terrasteel_ingot",
     "item:society:plushie_capsule",
     "item:society:bluegill_meridian",
     "item:society:bullfish_jobs",
@@ -1499,27 +1511,7 @@
     "item:minecraft:lingering_potion{Potion:\"rottencreatures:corrupted\"}",
     "item:simplerecall:recall_potion",
     "item:refinedstorage:cover{Item:{Count:1b,id:\"autumnity:maple_log\"}}",
-    "item:refinedstorage:cover{Item:{Count:1b,id:\"vintagedelight:vine_net\"}}",
-    "item:minecraft:oak_wood",
-    "item:meadow:cheese_stick",
-    "item:meadow:cooked_buffalo_meat",
-    "item:meadow:cheese_tart",
-    "item:meadow:roasted_ham",
-    "item:crabbersdelight:shrimp_skewer",
-    "item:crabbersdelight:cooked_clam_meat",
-    "item:crabbersdelight:surf_and_turf",
-    "item:society:pickled_eggplant",
-    "item:netherdepthsupgrade:baked_lava_pufferfish_stew",
-    "item:netherdepthsupgrade:warped_kelp_roll_slice",
-    "item:windswept:cooked_goat",
-    "item:windswept:christmas_pudding",
-    "item:atmospheric:passion_fruit_tart",
-    "item:oreganized:deepslate_silver_ore",
-    "item:society:blueberry_seed",
-    "item:society:blueberry_crate",
-    "item:candlelight:cooking_pot",
-    "item:candlelight:cooking_hat{Damage:0}",
-    "item:smallships:bamboo_cog"
+    "item:refinedstorage:cover{Item:{Count:1b,id:\"vintagedelight:vine_net\"}}"
   ],
   "craft_history": [
     "meadow:fire_log",

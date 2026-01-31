@@ -126,11 +126,9 @@ const checkAnimal = (
         type: "text",
         x: 0,
         y: -66,
-        text: `§c${
-          hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""
-        }§0${
-          hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
-        }`,
+        text: `§c${hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""
+          }§0${hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
+          }`,
         color: "#FFAA00",
         alignX: "center",
         alignY: "bottom",
@@ -784,10 +782,9 @@ ItemEvents.entityInteracted((e) => {
   global.handleHusbandryBase(hand, player, item, target, level, server);
 });
 
-BlockEvents.rightClicked((e) => {
+BlockEvents.rightClicked(global.plushies, (e) => {
   const { level, hand, player, item, server, block } = e;
   if (hand == "OFF_HAND") return;
-  if (!block.hasTag("society:plushies")) return;
   let nbt = block.getEntityData();
   const { animal } = nbt.data;
   if (!animal) return;

@@ -1353,7 +1353,6 @@ ItemEvents.tooltip((tooltip) => {
   generateSprinklerTooltip(tooltip, "gold", 2);
   generateSprinklerTooltip(tooltip, "diamond", 3);
   generateSprinklerTooltip(tooltip, "netherite", 4);
-  // Books
   tooltip.add(
     "society:yard_work_yearly",
     Text.translatable(
@@ -1494,6 +1493,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:sunlit_crystal",
     Text.translatable("item.society.sunlit_crystal.description").gray()
   );
+  tooltip.add(
+    "society:plushie_wand",
+    Text.translatable("item.society.plushie_wand.description").gray()
+  );
 
   tooltip.add(
     [
@@ -1545,7 +1548,7 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.translatable("tooltip.society.adventuring_mastery.required")
   );
-  
+
   global.ageableProductInputs.forEach((product) => {
     const splitProduct = product.item.split(":");
     tooltip.addAdvanced(`society:aged_${splitProduct[1]}`, (item, advance, text) => {

@@ -1433,12 +1433,19 @@
 				"&oBoth the plushie and the animal must be at max affection.&r"
 			]
 			id: "06308BDE5F4EC0D2"
-			rewards: [{
-				count: 3
-				id: "1E0CA77911A70BF6"
-				item: "society:plushie_capsule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "1E0CA77911A70BF6"
+					item: "society:plushie_capsule"
+					type: "item"
+				}
+				{
+					id: "0A577532190022FE"
+					item: "society:plushie_wand"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "41FDA43ADEA36D5B"
 				item: "society:sunlit_crystal"
@@ -1688,6 +1695,39 @@
 			title: "Complex Logistics"
 			x: -1.0d
 			y: 17.5d
+		}
+		{
+			dependencies: ["06308BDE5F4EC0D2"]
+			description: [
+				"&6Refined Storage systems&r aren't great at handling many different types of non-stacking items!"
+				""
+				"Avoid dumping all your plushies in your system, and store them in large chests instead."
+				""
+				"This is especially important in multiplayer servers!"
+			]
+			hide_details_until_startable: true
+			icon: "refinedstorage:controller"
+			id: "15061E71D3F55AE8"
+			rewards: [
+				{
+					id: "75582E74B3FBFF18"
+					item: "society:plushie_capsule"
+					type: "item"
+				}
+				{
+					id: "699959A276629DBD"
+					item: "society:sunlit_crystal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6D8A02F5851A7D5A"
+				title: "I won't do that!"
+				type: "checkmark"
+			}]
+			title: "Avoiding Refined Lag"
+			x: -10.0d
+			y: 0.5d
 		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"
