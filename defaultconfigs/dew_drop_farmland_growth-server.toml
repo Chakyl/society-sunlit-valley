@@ -25,7 +25,7 @@ dailyTimeMin = 5
 dailyDryChance = 100
 #The chance that dry farmland will decay into dirt
 #Range: 0 ~ 100
-dailyDecayChance = 50
+dailyDecayChance = 0
 #If shovels can turn farmland to dirt when right clicking
 shovelReverting = true
 #If crops should check for blocks with sprinkler tags to prevent drying

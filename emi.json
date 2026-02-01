@@ -36,6 +36,16 @@
     }
   ],
   "lookup_history": [
+    "item:etcetera:iridescent_glass",
+    "item:classicpipes:mangrove_pipe",
+    "item:minecraft:oak_stairs",
+    "item:mysticaloaktree:wise_oak",
+    {
+      "type": "fluid",
+      "id": "society:oak_resin",
+      "amount": 0
+    },
+    "item:society:oak_resin",
     "item:society:plushie_wand",
     "item:society:sunlit_crystal",
     "item:botania:twig_wand{color1:1,color2:1}",
@@ -142,7 +152,6 @@
     },
     "item:classicpipes:tag_label{}",
     "item:classicpipes:bamboo_fluid_pipe",
-    "item:etcetera:iridescent_glass",
     "item:oreganized:magenta_crystal_glass",
     "item:oreganized:orange_crystal_glass",
     "item:oreganized:light_blue_crystal_glass",
@@ -564,10 +573,10 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
-      "item:minecraft:cooked_porkchop",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:minecraft:cooked_porkchop",
+      "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -579,9 +588,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -660,11 +669,6 @@
     },
     "item:farm_and_charm:dough",
     "#item:forge:dough",
-    {
-      "type": "item",
-      "id": "society:oak_resin",
-      "amount": 82
-    },
     {
       "type": "item",
       "id": "society:nether_jelly",
@@ -1372,7 +1376,6 @@
     "item:cluttered:sand_seal_plush_green",
     "item:twigs:black_packed_silt",
     "item:quark:oak_post",
-    "item:minecraft:oak_stairs",
     "item:society:dried_banana",
     "item:society:banana_karenina",
     "item:vintagedelight:cucumber_seeds",
@@ -1493,7 +1496,6 @@
     "item:species:ghoul_tongue",
     "item:herbalbrews:flask",
     "item:cluttered:chiseled_gold_block",
-    "item:mysticaloaktree:wise_oak",
     "item:quark:hollow_spruce_log",
     "item:minecraft:stripped_oak_wood",
     "item:minecraft:oak_pressure_plate",
@@ -1509,9 +1511,7 @@
     "item:minecraft:lingering_potion{Potion:\"rottencreatures:long_freeze\"}",
     "item:minecraft:lingering_potion{Potion:\"rottencreatures:freeze\"}",
     "item:minecraft:lingering_potion{Potion:\"rottencreatures:corrupted\"}",
-    "item:simplerecall:recall_potion",
-    "item:refinedstorage:cover{Item:{Count:1b,id:\"autumnity:maple_log\"}}",
-    "item:refinedstorage:cover{Item:{Count:1b,id:\"vintagedelight:vine_net\"}}"
+    "item:simplerecall:recall_potion"
   ],
   "craft_history": [
     "meadow:fire_log",
