@@ -253,19 +253,20 @@
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest8.description1}"
+				"Building a successful farm is not something you can do alone!"
 				""
-				"{ftbquests.chapter.getting_started.quest8.description2}"
+				"The &6Carpenter&r can get you started, helping you build homes for new villagers and offering building supplies if you want to make them yourself."
 				""
-				"{ftbquests.chapter.getting_started.quest8.description3}"
+				"You can also invite more villagers with some simple to obtain materials."
 			]
-			icon: "betterarcheology:villager_fossil"
+			icon: "minecraft:bell"
 			id: "66D159252C70D5F2"
 			rewards: [{
 				id: "71BC141AEB9C3428"
 				item: "create:clipboard"
 				type: "item"
 			}]
+			subtitle: "Welcoming Ace"
 			tasks: [{
 				id: "44E951A44F1CF7F0"
 				item: {
@@ -285,7 +286,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
+			dependencies: ["24C86673E1F57A3E"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest9.description1}"
 				""
@@ -323,8 +324,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest9.title}"
-			x: 8.0d
-			y: -3.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
@@ -460,17 +461,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
+			dependencies: ["24C86673E1F57A3E"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest14.description1}"
 				""
 				"{ftbquests.chapter.getting_started.quest14.description2}"
-				""
-				"{ftbquests.chapter.getting_started.quest14.description3}"
-				""
-				"{ftbquests.chapter.getting_started.quest14.description4}"
-				""
-				"{ftbquests.chapter.getting_started.quest14.description5}"
 			]
 			icon: "tanukidecor:antique_bed"
 			id: "1A4FD076999BF29F"
@@ -503,7 +498,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.getting_started.quest14.title}"
-			x: 9.5d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -776,12 +771,27 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest23.title}"
-			x: 8.0d
+			x: 8.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
+			dependencies: [
+				"66D159252C70D5F2"
+				"6ADD884F3FFE5D42"
+			]
+			description: [
+				"The &6Banker&r can provide you with tools that make managing your money significantly easier."
+				""
+				"You'll need to invite a &6Market&r villager to purchase this invitation."
+			]
+			icon: "society:pig_race_ticket"
 			id: "4DB169DA4B4CCFBA"
+			rewards: [{
+				id: "49E5FB8738AB8D25"
+				item: "whimsy_deco:gold_curio_cash_register"
+				type: "item"
+			}]
+			subtitle: "Welcoming Caroline"
 			tasks: [{
 				id: "59E084CB052A33AC"
 				item: {
@@ -796,8 +806,120 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["66D159252C70D5F2"]
+			description: [
+				"&6Blueprints&r can be used to instantly build pre-made buildings, without the need to collect every block!"
+				""
+				"&6Right Click&r a block with a blueprint to place a preview. Right click again to open the menu."
+				""
+				"&6Ctrl + Scroll Wheel&r can be used to nudge the blueprint in the direction you scroll."
+				""
+				"The menu can be used to rotate, mirror, and &6build&r!"
+			]
+			id: "382DC5EBB8C7C19E"
+			rewards: [{
+				id: "7C925E5AB553DBDB"
+				item: "meadow:wooden_water_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "281897C014D14C4C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_siberian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 0b
+						worn_set: 1b
+					}
+				}
+				title: "Any Blueprint"
+				type: "item"
+			}]
+			title: "Placing Blueprints"
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66D159252C70D5F2"]
+			description: [
+				"Your farm isn't going to be very successful if you stick to those &6Stone Tools&r..."
+				""
+				"The &6Carpenter&r can help you build a home for a &6Blacksmith&r. They'll sell you smithing templates to upgrade your tools to iron."
+			]
+			icon: "society:iron_upgrade_smithing_template"
+			id: "24C86673E1F57A3E"
+			rewards: [{
+				id: "0D734609104AE9A0"
+				item: "society:iron_upgrade_smithing_template"
+				type: "item"
+			}]
+			subtitle: "Welcoming Aiden"
+			tasks: [{
+				id: "425CE445701BE19E"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:blacksmith"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["24C86673E1F57A3E"]
+			description: [
+				"Strengthening your bond with the villagers will make them feel more at home in your town!"
+				""
+				"&6Shift + Right Click&r on a villager to give them a gift once every 4 days."
+				""
+				"Things that have a sell value are always giftable, but you can find the full list by searching &6#villager_gift&r in JEI/EMI."
+			]
+			icon: "simplehats:presentsstack"
+			id: "3E08F21BA8F69499"
+			rewards: [{
+				id: "29EB69F5E70B1F10"
+				item: "atmospheric:candied_orange_slices"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F77BA107A199EE0"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Giving Gifts"
+			x: 10.5d
+			y: -3.0d
 		}
 	]
 	title: "{ftbquests.chapter.getting_started.title}"

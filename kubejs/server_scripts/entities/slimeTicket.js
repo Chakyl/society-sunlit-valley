@@ -47,15 +47,14 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       5,
       0.01
     );
-    const translatedSlimeName = Text.translatable(`slime.splendid_slimes.${slimeType}`).getString()
-    const presentSender = Text.translatable("society.slime_ticket.sender").getString();
+    const translatedSlimeName = global.translatableWithFallback(`slime.splendid_slimes.${slimeType}`, `${global.formatName(slimeType)}`);
+    const presentSender = global.translatableWithFallback("society.slime_ticket.sender", "Slime Ticket").getString();
     if (favorites.item) {
-      const translatedItemName = global.getTranslatedItemName(favorites.item).getString();
       player.give(
         Item.of(
           "supplementaries:present_pink",
           `{BlockEntityTag:{Description:"${
-            Text.translatable("society.slime_ticket.favorite.item", translatedSlimeName).getString()
+            Text.of(NBT.stringTag(`{"translate":"society.slime_ticket.favorite.item", "fallback":"%s Slime's favorite food :pink_heart:", "with":[${translatedSlimeName.toJson()}]}`)).getString()
           }",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"${
             favorites.item
           }"}],Recipient:"${player.username}",Sender:"${presentSender}",id:"supplementaries:present"}}`
@@ -63,15 +62,15 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       );
     }
     if (favorites.entity) {
-      const translatedEntityName = global.getTranslatedEntityName(favorites.entity).getString();
+      const translatedEntityName = global.getTranslatedEntityName(favorites.entity).toJson();
       player.give(
         Item.of(
           "supplementaries:present_pink",
           `{BlockEntityTag:{Description:"${
-            Text.translatable("society.slime_ticket.favorite.entity", translatedSlimeName).getString()
-          }",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"minecraft:paper",tag:{display:{Name:\'{"text":"${
+            Text.of(NBT.stringTag(`{"translate":"society.slime_ticket.favorite.entity", "fallback":"%s Slime's favorite mob to eat :pink_heart:", "with":[${translatedSlimeName.toJson()}]}`)).getString()
+          }",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"minecraft:paper",tag:{display:{Name:\'${
             translatedEntityName
-          }"}\'}}}],Recipient:"${
+          }\'}}}],Recipient:"${
             player.username
           }",Sender:"${presentSender}",id:"supplementaries:present"}}`
         )

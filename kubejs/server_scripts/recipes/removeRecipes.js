@@ -44,10 +44,6 @@ ServerEvents.recipes((e) => {
     "wildernature:deer_trophy",
     "constructionwand:core_angel",
     "constructionwand:core_destruction",
-    "create:schematicannon",
-    "create:empty_schematic",
-    "create:schematic_and_quill",
-    "create:schematic_table",
     // Pipez
     "pipez:energy_pipe",
     "pipez:fluid_pipe",

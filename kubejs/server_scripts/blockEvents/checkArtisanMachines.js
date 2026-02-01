@@ -112,7 +112,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
     if (index < blockStage) outputString += "⬛";
     else outputString += "⬜";
   }
-  let translatedPrimaryOutput = String(global.getTranslatedItemName(id, primaryOutput).getString()).replace(/§./g, "");
+  let translatedPrimaryOutput = global.getTranslatedItemName(id, primaryOutput).noColor();
 
   const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
   global.renderUiText(
@@ -142,7 +142,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         type: "text",
         x: 0,
         y: -78,
-        text: translatedPrimaryOutput,
+        text: `${translatedPrimaryOutput.toJson()}`,
         color: "#FFAA00",
         alignX: "center",
         alignY: "bottom",
@@ -152,7 +152,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
         x: 1,
         z: -1,
         y: -77,
-        text: translatedPrimaryOutput,
+        text: `${translatedPrimaryOutput.toJson()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",

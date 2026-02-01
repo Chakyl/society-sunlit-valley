@@ -27,7 +27,7 @@ ItemEvents.rightClicked("society:plushie_capsule", (e) => {
   reward.item = Item.of(
     `${red ? 2 : 1}x ${drop}`,
     `{quality_food:{quality:${quality}},type:${type},quest_id:${quest},affection:${
-      women ? 3 : 0
+      women ? 2 : 0
     }}`
   );
   reward.spawn();

@@ -12,11 +12,11 @@ global.plushieRightClick = (click) => {
     if (!animal) {
       if (
         player.stages.has("women_who_run_with_the_plushies") &&
-        affection < 3
+        affection < 2
       ) {
         nbt.merge({
           data: {
-            affection: 3,
+            affection: 2,
           },
         });
         block.setEntityData(nbt);
@@ -119,6 +119,7 @@ StartupEvents.registry("block", (event) => {
       .create(`${splitStr[0]}:adv_${splitStr[1]}`, "cardinal")
       .defaultCutout()
       .box(2, 0, 2, 14, 14, 14)
+      .tagBlock("minecraft:mineable/axe")
       .soundType("wool")
       .hardness(1.0)
       .requiresTool(false)

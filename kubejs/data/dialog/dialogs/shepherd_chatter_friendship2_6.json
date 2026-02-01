@@ -1,0 +1,49 @@
+{
+	"id": "shepherd_chatter_friendship2_6",
+	"title": "[6] shepherd chatter at friendship level: friendship2",
+	"description": "dialog.npc.shepherd.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.chatter_friendship2.6.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.chatter_friendship2.6.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p shepherd"
+			]
+		}
+	]
+}

@@ -9,7 +9,7 @@ BlockEvents.placed((e) => {
     ) {
       let message = Text.translatable(
         "society.skull_cavern.prevent_block_place"
-      ).getString();
+      ).toJson();
       global.renderUiText(
         player,
         server,
@@ -18,7 +18,7 @@ BlockEvents.placed((e) => {
             type: "text",
             x: 0,
             y: -90,
-            text: message,
+            text: `${message}`,
             color: "#FF5555",
             alignX: "center",
             alignY: "bottom",
@@ -28,7 +28,7 @@ BlockEvents.placed((e) => {
             x: 1,
             z: -1,
             y: -89,
-            text: message,
+            text: `${message}`,
             color: "#000000",
             alignX: "center",
             alignY: "bottom",

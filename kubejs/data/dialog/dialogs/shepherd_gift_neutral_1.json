@@ -7,7 +7,7 @@
 			"id": "start",
 			"speaker": {
 				"translate": "dialog.npc.shepherd.name",
-				"color": "gold"
+				"color": "white"
 			},
 			"text": [
 				{
@@ -20,9 +20,6 @@
 					"position": "INLINE",
 					"brightness": 1
 				}
-			],
-			"command": [
-				"openshop @p shepherd"
 			]
 		}
 	]

@@ -1,4 +1,4 @@
-const runLangDataGen = true;
+const runLangDataGen = false;
 
 if (runLangDataGen) {
   let objs = {};

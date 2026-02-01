@@ -7,10 +7,15 @@
   "stage_required": "invited_market",
   "block_tag": "society:opens_market",
   "selector_weight": -99,
-  "jei_catalyst": { "item": "farmingforblockheads:market" },
+  "jei_catalyst": {
+    "item": "farmingforblockheads:market"
+  },
   "trades": [
     {
-      "offer": { "item": "farmersdelight:tomato_seeds", "count": 1 },
+      "offer": {
+        "item": "farmersdelight:tomato_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 4
@@ -31,62 +36,100 @@
       "trade_id": "market_tomato_seeds"
     },
     {
-      "offer": { "item": "veggiesdelight:turnip_seeds", "count": 1 },
+      "offer": {
+        "item": "veggiesdelight:turnip_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 6
       },
       "numismatics_cost": 6,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_turnip_seeds"
     },
     {
-      "offer": { "item": "farm_and_charm:strawberry_seed", "count": 1 },
+      "offer": {
+        "item": "farm_and_charm:strawberry_seed",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 3
       },
       "numismatics_cost": 3,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_strawberry_seed"
     },
     {
-      "offer": { "item": "society:onion_seed", "count": 1 },
+      "offer": {
+        "item": "society:onion_seed",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 4
       },
       "numismatics_cost": 4,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_onion_seed"
     },
     {
-      "offer": { "item": "veggiesdelight:cauliflower_seeds", "count": 1 },
+      "offer": {
+        "item": "veggiesdelight:cauliflower_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 6
       },
       "numismatics_cost": 6,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_cauliflower_seeds"
     },
     {
-      "offer": { "item": "farm_and_charm:lettuce_seeds", "count": 1 },
+      "offer": {
+        "item": "farm_and_charm:lettuce_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 4
       },
       "numismatics_cost": 4,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_lettuce_seeds"
     },
     {
-      "offer": { "item": "society:carrot_seed", "count": 1 },
+      "offer": {
+        "item": "society:carrot_seed",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 2
@@ -104,24 +147,38 @@
       "trade_id": "market_carrot_seed"
     },
     {
-      "offer": { "item": "society:potato_seed", "count": 1 },
+      "offer": {
+        "item": "society:potato_seed",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 2
       },
       "numismatics_cost": 2,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_potato_seeds"
     },
     {
-      "offer": { "item": "supplementaries:flax_seeds", "count": 1 },
+      "offer": {
+        "item": "supplementaries:flax_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:sprocket",
         "count": 3
       },
       "numismatics_cost": 48,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_flax_seeds"
     },
@@ -137,7 +194,11 @@
       "numismatics_cost": 64,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_cucumber_seeds_for_cog"
     },
@@ -153,23 +214,37 @@
       "numismatics_cost": 32,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_garlic_seeds_for_cog"
     },
     {
-      "offer": { "item": "society:blueberry_seed", "count": 1 },
+      "offer": {
+        "item": "society:blueberry_seed",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:bevel",
         "count": 1
       },
       "numismatics_cost": 8,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_blueberry_seed"
     },
     {
-      "offer": { "item": "minecraft:wheat_seeds", "count": 1 },
+      "offer": {
+        "item": "minecraft:wheat_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:bevel",
         "count": 1
@@ -187,40 +262,64 @@
       "trade_id": "market_wheat_seeds"
     },
     {
-      "offer": { "item": "veggiesdelight:bellpepper_seeds", "count": 1 },
+      "offer": {
+        "item": "veggiesdelight:bellpepper_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 64,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_bellpepper_seeds"
     },
     {
-      "offer": { "item": "minecraft:melon_seeds", "count": 1 },
+      "offer": {
+        "item": "minecraft:melon_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 4
       },
       "numismatics_cost": 4,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_melon_seeds"
     },
     {
-      "offer": { "item": "farm_and_charm:oat_seeds", "count": 1 },
+      "offer": {
+        "item": "farm_and_charm:oat_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 4
       },
       "numismatics_cost": 4,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_oat_seeds"
     },
     {
-      "offer": { "item": "farm_and_charm:kernels", "count": 1 },
+      "offer": {
+        "item": "farm_and_charm:kernels",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 4
@@ -249,23 +348,37 @@
       "numismatics_cost": 64,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_ghost_pepper_seeds_for_cog"
     },
     {
-      "offer": { "item": "society:eggplant_seed", "count": 1 },
+      "offer": {
+        "item": "society:eggplant_seed",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:bevel",
         "count": 1
       },
       "numismatics_cost": 8,
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_eggplant_seed"
     },
     {
-      "offer": { "item": "society:cranberry_seed", "count": 1 },
+      "offer": {
+        "item": "society:cranberry_seed",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:bevel",
         "count": 1
@@ -275,12 +388,19 @@
         "count": 4
       },
       "numismatics_cost": 12,
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_cranberry_seed"
     },
     {
-      "offer": { "item": "farm_and_charm:barley_seeds", "count": 1 },
+      "offer": {
+        "item": "farm_and_charm:barley_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 2
@@ -298,24 +418,38 @@
       "trade_id": "market_barley_seeds"
     },
     {
-      "offer": { "item": "minecraft:beetroot_seeds", "count": 1 },
+      "offer": {
+        "item": "minecraft:beetroot_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 4,
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_pumpkin_seeds"
     },
     {
-      "offer": { "item": "minecraft:pumpkin_seeds", "count": 1 },
+      "offer": {
+        "item": "minecraft:pumpkin_seeds",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:bevel",
         "count": 1
       },
       "numismatics_cost": 8,
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_pumpkin_seeds"
     },
@@ -354,7 +488,11 @@
       "numismatics_cost": 64,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_sweet_potato_seed_for_cog"
     },
@@ -370,18 +508,29 @@
       "numismatics_cost": 512,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_peanut_for_crown"
     },
     {
-      "offer": { "item": "snowyspirit:ginger_flower", "count": 1 },
+      "offer": {
+        "item": "snowyspirit:ginger_flower",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:spur",
         "count": 4
       },
       "numismatics_cost": 4,
-      "seasons_required": ["early_winter", "mid_winter", "late_winter"],
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_ginger_flower"
     },
@@ -444,35 +593,56 @@
       "trade_id": "market_tubabacco_leaf_seed_for_crown"
     },
     {
-      "offer": { "item": "pamhc2trees:lychee_sapling", "count": 1 },
+      "offer": {
+        "item": "pamhc2trees:lychee_sapling",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_lychee_sapling"
     },
     {
-      "offer": { "item": "pamhc2trees:banana_sapling", "count": 1 },
+      "offer": {
+        "item": "pamhc2trees:banana_sapling",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 4096,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_banana_sapling"
     },
     {
-      "offer": { "item": "pamhc2trees:peach_sapling", "count": 1 },
+      "offer": {
+        "item": "pamhc2trees:peach_sapling",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 16384,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_peach_sapling"
     },
@@ -486,7 +656,11 @@
         "count": 1
       },
       "numismatics_cost": 512,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
       "trade_id": "market_cherry_sapling_for_crown"
@@ -503,7 +677,11 @@
       "numismatics_cost": 512,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_apple_sapling_for_crown"
     },
@@ -519,7 +697,11 @@
       "numismatics_cost": 16384,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_mango_sapling_for_sun"
     },
@@ -539,7 +721,11 @@
       "numismatics_cost": 18432,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_orange_sapling_for_sun_and_crown"
     },
@@ -559,7 +745,11 @@
       "numismatics_cost": 27648,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_plum_sapling_for_sun_and_crown"
     },
@@ -579,7 +769,11 @@
       "numismatics_cost": 43008,
       "stage_required": "master_cultivator_unlocked",
       "unlock_description": "jei.society_trading.advanced_crops_unlocked",
-      "seasons_required": ["early_winter", "mid_winter", "late_winter"],
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_dragonfruit_sapling_for_sun_and_crown"
     },
@@ -602,40 +796,64 @@
       "trade_id": "market_starfruit_sapling_for_sun_and_prismatic_shard"
     },
     {
-      "offer": { "item": "vinery:dark_cherry_sapling", "count": 1 },
+      "offer": {
+        "item": "vinery:dark_cherry_sapling",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_spring", "mid_spring", "late_spring"],
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_dark_cherry_sapling"
     },
     {
-      "offer": { "item": "beachparty:palm_sapling", "count": 1 },
+      "offer": {
+        "item": "beachparty:palm_sapling",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_palm_sapling"
     },
     {
-      "offer": { "item": "vinery:apple_tree_sapling", "count": 1 },
+      "offer": {
+        "item": "vinery:apple_tree_sapling",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
-      "seasons_required": ["early_autumn", "mid_autumn", "late_autumn"],
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_apple_tree_sapling"
     },
     {
-      "offer": { "item": "farmersdelight:rice", "count": 1 },
+      "offer": {
+        "item": "farmersdelight:rice",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 4
@@ -653,40 +871,64 @@
       "trade_id": "market_rice"
     },
     {
-      "offer": { "item": "minecraft:cactus", "count": 1 },
+      "offer": {
+        "item": "minecraft:cactus",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 6
       },
       "numismatics_cost": 384,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_cactus"
     },
     {
-      "offer": { "item": "minecraft:sugar_cane", "count": 1 },
+      "offer": {
+        "item": "minecraft:sugar_cane",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 192,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_sugar_cane"
     },
     {
-      "offer": { "item": "moreminecarts:glass_cactus", "count": 1 },
+      "offer": {
+        "item": "moreminecarts:glass_cactus",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 2048,
-      "seasons_required": ["early_summer", "mid_summer", "late_summer"],
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_glass_cactus"
     },
     {
-      "offer": { "item": "minecraft:bamboo", "count": 1 },
+      "offer": {
+        "item": "minecraft:bamboo",
+        "count": 1
+      },
       "request": {
         "item": "numismatics:bevel",
         "count": 1
@@ -702,6 +944,18 @@
       ],
       "stage_override": "universal_methods_of_farming",
       "trade_id": "market_bamboo"
+    },
+    {
+      "offer": {
+        "item": "sophisticatedbackpacks:backpack",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "market_backpack_for_crown"
     },
     {
       "offer": {
@@ -855,9 +1109,9 @@
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 18
+        "count": 9
       },
-      "numismatics_cost": 73728,
+      "numismatics_cost": 36864,
       "trade_id": "minecraft:farmer_pitchfork_for_sun"
     },
     {
@@ -900,7 +1154,6 @@
       "numismatics_cost": 32768,
       "trade_id": "farmer_cooking_guide_for_sun"
     },
-
     {
       "offer": {
         "item": "sewingkit:sewing_station",

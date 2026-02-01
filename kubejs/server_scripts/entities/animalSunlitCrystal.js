@@ -26,14 +26,14 @@ ItemEvents.entityInteracted((e) => {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-90}`,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:90}`,
           80,
-          Text.translatable(errorString).getString()
+          Text.translatable(errorString).toJson()
         )
       );
       return;
     } else {
-      item.shrink(1);
+      if (!player.isCreative()) item.shrink(1);
       player.give(
         Item.of(
           plushie.id,

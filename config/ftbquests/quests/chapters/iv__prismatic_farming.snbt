@@ -855,7 +855,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 17.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["0E4EA6B5E8E6361C"]
@@ -944,7 +944,7 @@
 				}
 			]
 			x: -1.5d
-			y: 20.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
@@ -1426,20 +1426,26 @@
 		{
 			dependencies: ["3979B0AD660A33D2"]
 			description: [
-				"Normally farm animals are picky about their living conditions and food! The &6Wizard&r sells ancient magic that can shrink them into a plushie, making it a luxurious home."
+				"Normally farm animals are picky about their living conditions and food! The &6Witch&r sells ancient magic that can shrink them into a plushie, making it a luxurious home."
 				""
 				"Plushies that have been imbued using a &6Sunlit Crystal&r will have special effects "
-				""
 				""
 				"&oBoth the plushie and the animal must be at max affection.&r"
 			]
 			id: "06308BDE5F4EC0D2"
-			rewards: [{
-				count: 3
-				id: "1E0CA77911A70BF6"
-				item: "society:plushie_capsule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "1E0CA77911A70BF6"
+					item: "society:plushie_capsule"
+					type: "item"
+				}
+				{
+					id: "0A577532190022FE"
+					item: "society:plushie_wand"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "41FDA43ADEA36D5B"
 				item: "society:sunlit_crystal"
@@ -1528,7 +1534,7 @@
 		{
 			dependencies: ["76A60EE6F3E0FF72"]
 			description: [
-				"The &6Wizard&r now sells the &6Enchanting Table&r. This will allow you to unlock the final level for enchantments such as Fortune or Looting, alongside enchantments that aren't included in the skill tree."
+				"The &6Witch&r now sells the &6Enchanting Table&r. This will allow you to unlock the final level for enchantments such as Fortune or Looting, alongside enchantments that aren't included in the skill tree."
 				""
 				"The maximums of enchantments that are in the skill tree has been lowered!"
 			]
@@ -1640,7 +1646,7 @@
 		{
 			dependencies: ["3C12A8CA17EACA0B"]
 			description: [
-				"The &6Statue of The Moon Gnome&r channels the ancient power of Selene. "
+				"The &6Statue of The Moon Gnome&r channels the ancient power of Selene. It can be crafted by a &6Blacksmith&r using Iridium Ingots."
 				""
 				"Right clicking on it will give you a random mining related Moon Blessing that lasts the entire day."
 			]
@@ -1666,6 +1672,62 @@
 			}]
 			x: -3.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["4A96DC00D7D0CAD6"]
+			description: [
+				"&6Networked Pipes&r are capable of complex logistical operations. They can be used to sort, auto-stock, auto craft, and auto-retrieve items from pipe networks."
+				""
+				"They require a good bit of skill to use, but the &6Classic Pipes wiki&r online has details for those that wish to master them."
+			]
+			id: "3042AA873F9B60C5"
+			rewards: [{
+				count: 32
+				id: "585E6170FCE21E54"
+				item: "classicpipes:routing_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D06C14464DC35FC"
+				item: "classicpipes:routing_pipe"
+				type: "item"
+			}]
+			title: "Complex Logistics"
+			x: -1.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["06308BDE5F4EC0D2"]
+			description: [
+				"&6Refined Storage systems&r aren't great at handling many different types of non-stacking items!"
+				""
+				"Avoid dumping all your plushies in your system, and store them in large chests instead."
+				""
+				"This is especially important in multiplayer servers!"
+			]
+			hide_details_until_startable: true
+			icon: "refinedstorage:controller"
+			id: "15061E71D3F55AE8"
+			rewards: [
+				{
+					id: "75582E74B3FBFF18"
+					item: "society:plushie_capsule"
+					type: "item"
+				}
+				{
+					id: "699959A276629DBD"
+					item: "society:sunlit_crystal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6D8A02F5851A7D5A"
+				title: "I won't do that!"
+				type: "checkmark"
+			}]
+			title: "Avoiding Refined Lag"
+			x: -10.0d
+			y: 0.5d
 		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"

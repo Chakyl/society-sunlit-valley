@@ -3,14 +3,17 @@ if (global.datagenDialog) {
   runNpcDatagen("fisher", {
     name: "Haruna",
     intro: [
-      "Hey stranger, my name is Haruna. I like fish! Tell Frog about it!"
+      "Hey stranger, my name is Haruna. I like fish! Tell Frog about it!",
+      "This villager is currently being written.",
+      "I couldn't get all the writing done in time for the playtest!",
+      "Thank you for testing!"
     ],
     chatter: {
       friendship0: [
         ["I miss home."],
         ["The waters are turbulent today."],
         ["How I wish there were a shell I could be listening to right now."],
-        ["...","Yes?"]
+        ["...", "Yes?"]
       ],
       friendship1: [
         [

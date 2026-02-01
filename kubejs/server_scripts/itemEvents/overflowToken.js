@@ -16,7 +16,7 @@ ItemEvents.rightClicked("society:overflow_token", (e) => {
       overflowList[playerUUID] += 1;
     }
     server.persistentData.overflowList = overflowList;
-    item.shrink(1);
+    if (!player.isCreative()) item.shrink(1);
     server.runCommandSilent(
       `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
     );

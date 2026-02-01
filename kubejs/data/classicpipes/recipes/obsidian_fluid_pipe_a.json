@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "W": {
+      "item": "etcetera:iridescent_glass"
+    },
+    "X": {
+      "item": "society:oak_resin"
+    }
+  },
+  "pattern": [
+    "OWO",
+    " X "
+  ],
+  "result": {
+    "count": 8,
+    "item": "classicpipes:obsidian_fluid_pipe"
+  }
+}

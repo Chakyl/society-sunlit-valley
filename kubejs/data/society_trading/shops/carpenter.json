@@ -245,6 +245,8 @@
         "item": "numismatics:spur",
         "count": 7
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 7,
       "trade_id": "carpenter_lunalite"
     },
@@ -282,6 +284,8 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "trade_id": "carpenter_polished_basalt"
     },
     {
@@ -291,6 +295,8 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "trade_id": "carpenter_blackstone"
     },
     {
@@ -299,6 +305,8 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "numismatics_cost": 128,
       "trade_id": "carpenter_scorchia"
     },
@@ -308,6 +316,8 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "numismatics_cost": 128,
       "trade_id": "carpenter_bloodstone"
     },
@@ -317,6 +327,8 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "numismatics_cost": 128,
       "trade_id": "carpenter_scoria"
     },
@@ -335,6 +347,8 @@
         "item": "numismatics:crown",
         "count": 2
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 1024,
       "trade_id": "carpenter_end_stone"
     },
@@ -344,8 +358,10 @@
         "item": "numismatics:crown",
         "count": 2
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 1024,
-      "trade_id": "carpenterdusky_myalite_"
+      "trade_id": "carpenter_dusky_myalite"
     },
     {
       "offer": { "item": "quark:myalite_crystal", "count": 8 },
@@ -353,6 +369,8 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 2048,
       "trade_id": "carpenter_myalite_crystal"
     },

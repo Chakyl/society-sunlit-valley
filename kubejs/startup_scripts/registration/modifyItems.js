@@ -42,6 +42,7 @@ ItemEvents.modification((e) => {
       "society:ancient_fruit_seed",
       "society:ancient_fruit",
       "society:sunlit_crystal",
+      "society:plushie_wand",
       "society:treasure_totem",
       "society:recycled_core",
       "society:bubble_totem",

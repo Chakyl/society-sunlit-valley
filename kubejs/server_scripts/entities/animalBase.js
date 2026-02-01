@@ -107,7 +107,7 @@ const checkAnimal = (
         type: "text",
         x: 0,
         y: -78,
-        text: `${name}`,
+        text: `${name.noColor().toJson()}`,
         color: nameColor,
         alignX: "center",
         alignY: "bottom",
@@ -117,7 +117,7 @@ const checkAnimal = (
         x: 1,
         z: -1,
         y: -77,
-        text: name,
+        text: `${name.noColor().toJson()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -126,11 +126,9 @@ const checkAnimal = (
         type: "text",
         x: 0,
         y: -66,
-        text: `§c${
-          hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""
-        }§0${
-          hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
-        }`,
+        text: `§c${hearts > 0 ? `❤`.repeat(Math.min(hearts, heartsToDisplay)) : ""
+          }§0${hearts < heartsToDisplay ? `❤`.repeat(heartsToDisplay - hearts) : ""
+          }`,
         color: "#FFAA00",
         alignX: "center",
         alignY: "bottom",
@@ -199,8 +197,8 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     if (!livableArea && !data.clockwork) {
       errorText = Text.translatable(
         "society.husbandry.crowded",
-        `${name}`
-      ).getString();
+        name
+      ).toJson();
     }
     if (
       !hungry &&
@@ -211,17 +209,17 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100}`,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:20}`,
           40,
-          Text.translatable("society.husbandry.peckish", `${name}`).getString()
+          Text.translatable("society.husbandry.peckish", name).toJson()
         )
       );
     }
     if (hungry) {
       errorText = Text.translatable(
         "society.husbandry.starved",
-        `${name}`
-      ).getString();
+        name
+      ).toJson();
     }
     if (errorText && !player.isFake()) {
       server.runCommandSilent(
@@ -284,18 +282,18 @@ const handleMilk = (name, data, day, hungry, e) => {
   } else if (target.isBaby()) {
     errorText = Text.translatable(
       "society.husbandry.action.young",
-      `${name}`
-    ).getString();
+      name
+    ).toJson();
   } else if (hungry) {
     errorText = Text.translatable(
       "society.husbandry.action.hungry",
-      `${name}`
-    ).getString();
+      name
+    ).toJson();
   } else {
     errorText = Text.translatable(
       "society.husbandry.action.cooldown_1",
-      `${name}`
-    ).getString();
+      name
+    ).toJson();
   }
   if (errorText && !player.isFake()) {
     server.runCommandSilent(
@@ -410,13 +408,13 @@ const handleMagicHarvest = (name, data, e) => {
   } else {
     errorText = Text.translatable(
       "society.husbandry.action.cooldown_2",
-      `${name}`
-    ).getString();
+      name
+    ).toJson();
     if (hearts < 5) {
       errorText = Text.translatable(
         "society.husbandry.action.need_hearts",
-        `${name}`
-      ).getString();
+        name
+      ).toJson();
     }
     if (!player.isFake())
       server.runCommandSilent(
@@ -554,10 +552,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
-      let name = target.customName ? target.customName.getString() : undefined;
-      if (!name) {
-        name = global.getTranslatedEntityName(String(target.type)).getString();
-      }
+      let name = target.customName ? target.customName : global.getTranslatedEntityName(String(target.type));
       const ageLastFed = data.getInt("ageLastFed");
       const peckish = !pet && day - ageLastFed == 1;
       const hungry = !pet && day - ageLastFed > 1;
@@ -615,8 +610,8 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
               40,
               Text.translatable(
                 "society.husbandry.action.need_hearts",
-                `${name}`
-              ).getString()
+                name
+              ).toJson()
             )
           );
         } else {
@@ -695,7 +690,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
               player.username,
               global.animalMessageSettings,
               80,
-              Text.translatable("society.husbandry.mechanization").getString()
+              Text.translatable("society.husbandry.mechanization").toJson()
             )
           );
         }
@@ -738,9 +733,9 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           server.runCommandSilent(
             global.getEmbersTextAPICommand(
               player.username,
-              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
               80,
-              Text.translatable("society.husbandry.emancipation").getString()
+              Text.translatable("society.husbandry.emancipation").toJson()
             )
           );
         }
@@ -787,21 +782,20 @@ ItemEvents.entityInteracted((e) => {
   global.handleHusbandryBase(hand, player, item, target, level, server);
 });
 
-BlockEvents.rightClicked((e) => {
+BlockEvents.rightClicked(global.plushies, (e) => {
   const { level, hand, player, item, server, block } = e;
   if (hand == "OFF_HAND") return;
-  if (!block.hasTag("society:plushies")) return;
   let nbt = block.getEntityData();
   const { animal } = nbt.data;
   if (!animal) return;
+  let animalName = animal.name ? Text.of(animal.name) : global.getTranslatedEntityName(String(animal.type));
   if (item === "minecraft:air") {
     checkAnimal(
       player,
       level,
       server,
       animal,
-      animal.name ||
-        global.getTranslatedEntityName(String(animal.type)).getString(),
+      animalName,
       256,
       10
     );
@@ -847,7 +841,7 @@ BlockEvents.rightClicked((e) => {
           player.username,
           global.animalMessageSettings,
           80,
-          Text.translatable("society.husbandry.mechanization").getString()
+          Text.translatable("society.husbandry.mechanization").toJson()
         )
       );
     }
@@ -907,9 +901,9 @@ BlockEvents.rightClicked((e) => {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
           80,
-          Text.translatable("society.husbandry.emancipation").getString()
+          Text.translatable("society.husbandry.emancipation").toJson()
         )
       );
     }

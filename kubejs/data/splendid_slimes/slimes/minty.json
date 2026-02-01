@@ -5,18 +5,15 @@
   "particle": { "item": "minecraft:dragon_egg" },
   "hat_y_offset": -0.7,
   "diet": "diet.splendid_slimes.minty",
-  "foods": [{ "tag": "splendid_slimes:monster_spawn_eggs" }],
-  "entities": [
-    "minecraft:zombie",
-    "minecraft:zombie_villager",
-    "minecraft:skeleton",
-    "minecraft:enderman",
-    "minecraft:husk",
-    "minecraft:stray",
-    "minecraft:drowned",
-    "minecraft:creeper"
+  "foods": [
+    { "item": "society:tubabacco_leaf" },
+    { "item": "society:dried_tubabacco_leaf" },
+    { "item": "society:tubasmoke_stick" },
+    { "item": "society:tubasmoke_carton" }
   ],
-  "favorite_entity": "minecraft:enderman",
+  "favorite_food": { 
+     "item": "society:tubasmoke_stick" 
+  },
   "traits": ["feral", "defiant", "floating", "putrid"],
   "innate_effects": [
     {

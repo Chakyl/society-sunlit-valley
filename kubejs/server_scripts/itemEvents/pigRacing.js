@@ -434,7 +434,7 @@ const validTicket = (e, bet) => {
         player.username,
         `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`,
         80, 
-        Text.translatable("society.pig_race.need_coin").getString()
+        Text.translatable("society.pig_race.need_coin").toJson()
       )
     );
     return false;
@@ -445,7 +445,7 @@ const validTicket = (e, bet) => {
         player.username, 
         `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
         80, 
-        Text.translatable("society.pig_race.need_to_select_pig").getString()
+        Text.translatable("society.pig_race.need_to_select_pig").toJson()
       )
     );
     return false;
@@ -490,7 +490,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
         player.username, 
         `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
         80, 
-        Text.translatable("society.pig_race.multiplay.in_progress").getString()
+        Text.translatable("society.pig_race.multiplay.in_progress").toJson()
       )
     );
     return;
@@ -601,6 +601,7 @@ ItemEvents.firstLeftClicked(
     newNbt.bet = betPig;
     item.nbt = newNbt;
     const pigSelectedText = Text.translatable("society.pig_race.pig_selected", global.getPigColoredName(betPig));
+    const pigSelectedTextShadow = Text.translatable("society.pig_race.pig_selected", betPig).noColor();
     global.renderUiText(
       player,
       server,
@@ -619,7 +620,7 @@ ItemEvents.firstLeftClicked(
           x: 1,
           z: -1,
           y: -89,
-          text: pigSelectedText.getString(),
+          text: `${pigSelectedTextShadow.toJson()}`,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",

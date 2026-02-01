@@ -8,7 +8,7 @@
 			"id": "start",
 			"speaker": {
 				"translate": "dialog.npc.shepherd.name",
-				"color": "gold"
+				"color": "white"
 			},
 			"text": [
 				{
@@ -24,33 +24,14 @@
 			]
 		},
 		{
-			"id": 1,
+			"id": "end",
 			"speaker": {
 				"translate": "dialog.npc.shepherd.name",
-				"color": "gold"
+				"color": "white"
 			},
 			"text": [
 				{
 					"translate": "dialog.npc.shepherd.chatter_friendship2.0.line_1"
-				}
-			],
-			"portraits": [
-				{
-					"path": "shepherd.png",
-					"position": "INLINE",
-					"brightness": 1
-				}
-			]
-		},
-		{
-			"id": "end",
-			"speaker": {
-				"translate": "dialog.npc.shepherd.name",
-				"color": "gold"
-			},
-			"text": [
-				{
-					"translate": "dialog.npc.shepherd.chatter_friendship2.0.line_2"
 				}
 			],
 			"portraits": [

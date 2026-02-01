@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "oreganized:silver_ingot"
+    },
+    "W": {
+      "item": "minecraft:tinted_glass"
+    },
+    "X": {
+      "tag": "c:chests/wooden"
+    }
+  },
+  "pattern": [
+    "OWO",
+    " X "
+  ],
+  "result": {
+    "count": 8,
+    "item": "classicpipes:storage_pipe"
+  }
+}

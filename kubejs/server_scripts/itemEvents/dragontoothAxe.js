@@ -9,7 +9,7 @@ const breakAxe = (item, server, player) => {
       `playsound minecraft:entity.warden.sonic_boom block @a ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 240, Text.translatable("item.society.dragontooth_axe.no_skill_broken").getString())
+      global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 240, Text.translatable("item.society.dragontooth_axe.no_skill_broken").toJson())
     );
   }
 };

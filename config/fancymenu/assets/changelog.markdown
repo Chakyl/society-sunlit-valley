@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### vPLAYTEST-6-1.0.0
+### vPLAYTEST-7-1.0.0
 ^^^
 --- 
 - Most of this playtest version revolves around Sunlit Valley 4.0! Refer to the changelog below before posting issues!
@@ -20,6 +20,9 @@
 ### SSV v4.0.0
 ^^^
 --- 
+- Added new NPC mechanics to completely replace the previous villager system
+- Added 6 handmade villagers with art by NifastGreentail and Nitbe
+- Added Invitations, sold by the Carpenter villager (craftable invitation)
 - Added Mastery, a final tier of skill once all trees are completed
 - Added Sparkpods, Mystic Willow Saplings (formerly Willow sapling) to Farming Mastery
 - Added Mystic Syrup from Mystic Willow trees 
@@ -33,8 +36,13 @@
 - Added new art for Growth Obelisk, Supreme Mayo, and Prize Machine by Nitbe
 - Added new quest book art by NifastGreentail
 - Added Mood system for husbandry animals that tracks how well you are taking care of them and impacts their production
+- Added greenhouses for every building set, built largely by Kanlamari, with work by EeveeBeby, Duy Luong, and Howester84
+- Added new Tudor by Kanlamari respectively, each containing some existing pieces of the previous basic set
+- Updated Siberian and Basic sets to EeveeBeby's Revamped look
+- Updated Entrana set to Kanlamari's Revamped look
 - Added Wine Keg - Artisan Machine for making wines without the need for juice
 - Added Mushroom Log - Artisan Machine for growing mushrooms
+- Added new texture for Dragontooth Axe by Artty
 - Added Oil Maker and rebalanced Truffle Oil accordingly
 - Added Oil and Coconut Oil
 - Added Pickling Can
@@ -58,6 +66,8 @@
 - Added Wiki link to the pause screen in the place of unusable vanilla buttons
 - Added more advancements
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
+- Ancient Goddess Statue now trades ones a day
+- Farmland no longer turns into dirt when not watered at 6am
 - Changed recipe of Grapevine Stems/Lattices to use treated logs
 - Cheese is now an Artisan Product (from Farmer Product)
 - Farm animals no longer produce twice as much at max affection
@@ -65,6 +75,8 @@
 - Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
 - Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
+- Reworked Pink Matter upgrade to use Dragon Scales and upped Plort Ripping chance
+- Reworked Crafts room bundles
 - Ribbit Hut now works at 7am (from 8am)
 - Magic Shears now output quality based on affection
 - Moved Birch log tapping to Mushroom Log
@@ -79,11 +91,13 @@
 - Increased Moobloom milking time by 1
 - Increased value of Pine Tar and Oak Resin (48->128)
 - Rebalanced Plort values
+- Rebalanced husbandry as a whole to not be insanely better than other money makers (see below)
 - Reduced cost of Lava Fishing Rod 98,304 ->73,728
 - Reduced cost of Seed Maker (3 gold blocks -> 1)
 - Reduced cost of Crystalarium (5 lead blocks -> 2)
 - Reduced cost of Mechanical Extruder (4 lead blocks -> 2)
 - Reduced cost of all Smithing Templates past gold by half
+- Reduced cost of Deluxe Barns (20->10 iridium coins)
 - Reduced Gem Seller and Gem Tycoon mult (1.5x -> 1.25x, 2x -> 1.5x)
 - Reduced all Pantry & Blacksmith bundles to one item per task
 - Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle 
@@ -93,6 +107,8 @@
 - Reduced Caper Catcher (5 -> 3) and Caviar Catcher (5->2) roe amounts
 - Reduced affection increases and decreases by half (excluding candied animal feed)
 - Reduced value of Large Turkey Egg (128 -> 96), Penguin Egg (192 -> 128), and Flamingo Egg (384 -> 256) 
+- Reduced value of Amethyst Milk 144 -> 80
+- Reduced mult of Mayo and Cheese (4 -> 2)
 - Reduced Ancient Goddess Statue Sparkstone trade (16 sparkstone blocks -> 64 sparkstone)
   Reduced milk size of lots of Veggiesdelight recipes (lg -> sm)
 - Reduced food values for certain juices
@@ -105,8 +121,7 @@
 - Reduced fertilizer required for Iridium quality crops (Pristine -> Hyper) 
 - Removed Pickaxe cost from Pickarang
 - Removed Tom's Simple Storage
-- Removed Brewer's Bundle from Crafts room (Replaced with Foraging bundle)
-- Removed Gold Ring (functionality still here)
+- Removed Gold Ring
 - Removed max affection doubling forage drops
 - Removed quality preserving from Artisan Cheese Press
 - Removed Holy Locket, Midnight Robe, and Infinity Ham
@@ -128,11 +143,13 @@
 - Fixed Artisan Hoppers not handling multiple outputs
 - Fixed fake players working on Statue of Endless Fortune
 - Fixed block placement cancels resulting in ghost items
+- Fixed Fish Ponds losing quest status when broken
 - Fixed Cluttered counter edges being uncraftable
 - Fixed Cluttered plushies not being considered plushies
 - Fixed several issues with crop quality not calculating correctly
 - Fixed Brown Shrooma having incorrect time of day in Fish Finder 
 - Fixed tomatoes only growing up 1 vine
+- Fixed Sparkstone Recycler not working on Auto-Grabber and Fish Pond Pasket
 - Fixed High Quality Fertilized Farmland not working
 - Fixed Strawberry having vegetable tag
 - Fixed Ender Slime having wrong hat

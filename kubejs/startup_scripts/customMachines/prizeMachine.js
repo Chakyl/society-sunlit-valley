@@ -381,7 +381,7 @@ StartupEvents.registry("block", (event) => {
     .property(
       integerProperty.create("prize", 0, global.prizeMachineRewards.length)
     )
-    .box(1, 0, 4, 15, 28, 12)
+    .box(0, 0, 6, 16, 28, 16)
     .defaultCutout()
     .soundType("copper")
     .tagBlock("minecraft:mineable/pickaxe")

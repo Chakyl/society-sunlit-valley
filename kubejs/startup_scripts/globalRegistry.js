@@ -107,7 +107,6 @@ global.geodeList = [
   { item: "society:allanite", value: 128 },
   { item: "society:calcite_gem", value: 64 },
   { item: "society:celestine", value: 112 },
-  { item: "society:froggy_helm", value: 256 },
   { item: "society:earth_crystal", value: 48 },
   { item: "society:granite_slate", value: 256 },
   { item: "society:jagoite", value: 272 },
@@ -123,17 +122,15 @@ global.geodeList = [
   { item: "society:thunder_egg", value: 256 },
 ];
 global.geodeList.forEach((mineral) => {
-  if (mineral.item !== "society:froggy_helm")
-    global.pristine.push({
-      item: `society:pristine_${mineral.item.path}`,
-      value: mineral.value * 6,
-    });
+  global.pristine.push({
+    item: `society:pristine_${mineral.item.path}`,
+    value: mineral.value * 6,
+  });
 });
 
 // Frozen Geode
 global.frozenGeodeList = [
   { item: "society:aerinite", value: 128 },
-  { item: "society:ribbit_drum", value: 96 },
   { item: "society:esperite", value: 96 },
   { item: "society:fairy_stone", value: 256 },
   { item: "society:fluorapatite", value: 200 },
@@ -150,11 +147,10 @@ global.frozenGeodeList = [
   { item: "society:frozen_tear", value: 64 },
 ];
 global.frozenGeodeList.forEach((mineral) => {
-  if (mineral.item !== "society:ribbit_drum")
-    global.pristine.push({
-      item: `society:pristine_${mineral.item.path}`,
-      value: mineral.value * 6,
-    });
+  global.pristine.push({
+    item: `society:pristine_${mineral.item.path}`,
+    value: mineral.value * 6,
+  });
 });
 
 // Magma Geode
@@ -163,7 +159,6 @@ global.magmaGeodeList = [
   { item: "society:basalt_shard", value: 176 },
   { item: "society:bixbyite", value: 304 },
   { item: "society:dolomite", value: 304 },
-  { item: "society:ribbit_gadget", value: 192 },
   { item: "society:fire_opal", value: 352 },
   { item: "society:fire_quartz", value: 96 },
   { item: "society:helvite", value: 512 },
@@ -175,11 +170,10 @@ global.magmaGeodeList = [
   { item: "society:tigerseye", value: 272 },
 ];
 global.magmaGeodeList.forEach((mineral) => {
-  if (mineral.item !== "society:ribbit_gadget")
-    global.pristine.push({
-      item: `society:pristine_${mineral.item.path}`,
-      value: mineral.value * 6,
-    });
+  global.pristine.push({
+    item: `society:pristine_${mineral.item.path}`,
+    value: mineral.value * 6,
+  });
 });
 
 global.gems = [
@@ -228,6 +222,9 @@ global.miscGeologist = [
 
 // Artifacts
 global.artifacts = [
+  { item: "society:froggy_helm", value: 256 },
+  { item: "society:ribbit_drum", value: 96 },
+  { item: "society:ribbit_gadget", value: 192 },
   { item: "society:legendary_ink", value: 144 },
   { item: "society:holy_symbol", value: 160 },
   { item: "society:ember_crystal_cluster", value: 176 },
@@ -516,7 +513,7 @@ global.animalProducts = [
   { item: "society:buffalo_milk", value: 64 },
   { item: "society:goat_milk", value: 96 },
   { item: "society:warped_milk", value: 96 },
-  { item: "society:amethyst_milk", value: 144 },
+  { item: "society:amethyst_milk", value: 80 },
   { item: "society:tri_bull_milk", value: 192 },
   { item: "society:large_sheep_milk", value: 32 },
   { item: "society:large_milk", value: 64 },
@@ -524,7 +521,7 @@ global.animalProducts = [
   { item: "society:large_buffalo_milk", value: 256 },
   { item: "society:large_goat_milk", value: 384 },
   { item: "society:large_warped_milk", value: 384 },
-  { item: "society:large_amethyst_milk", value: 576 },
+  { item: "society:large_amethyst_milk", value: 320 },
   { item: "society:large_tri_bull_milk", value: 768 },
   // Basic Raw
   { item: "minecraft:beef", value: 16 },
@@ -719,7 +716,7 @@ global.mushrooms.forEach((shroom) => {
  * Ancient Cask
  * Formula: aging cask input * 16
  *
- * Mayo: (egg with floor of 8)  * 4
+ * Mayo: (egg with floor of 8)  * 2
  */
 global.artisanGoods = [
   { item: "society:battery", value: 400 },
@@ -728,73 +725,74 @@ global.artisanGoods = [
   { item: "botania:mana_string", value: 384 },
   { item: "botania:manaweave_cloth", value: 6144 },
   { item: "society:mayonnaise", value: 16 },
-  { item: "society:duck_mayonnaise", value: 32 },
-  { item: "society:goose_mayonnaise", value: 64 },
-  { item: "society:turkey_mayonnaise", value: 128 },
-  { item: "society:galliraptor_mayonnaise", value: 800 },
-  { item: "society:parrot_mayonnaise", value: 256 },
-  { item: "society:turtle_mayonnaise", value: 512 },
-  { item: "society:sniffer_mayonnaise", value: 768 },
-  { item: "society:petrified_mayonnaise", value: 1024 },
+  { item: "society:duck_mayonnaise", value: 16 },
+  { item: "society:goose_mayonnaise", value: 32 },
+  { item: "society:turkey_mayonnaise", value: 64 },
+  { item: "society:galliraptor_mayonnaise", value: 400 },
+  { item: "society:parrot_mayonnaise", value: 128 },
+  { item: "society:turtle_mayonnaise", value: 256 },
+  { item: "society:sniffer_mayonnaise", value: 384 },
+  { item: "society:petrified_mayonnaise", value: 512 },
   { item: "society:supreme_mayonnaise", value: 9999 },
   { item: "society:golden_mayonnaise", value: 6144 },
   { item: "society:dragon_mayonnaise", value: 6144 },
-  { item: "society:large_mayonnaise", value: 128 },
-  { item: "society:large_duck_mayonnaise", value: 192 },
-  { item: "society:large_goose_mayonnaise", value: 256 },
-  { item: "society:large_turkey_mayonnaise", value: 384 },
-  { item: "society:large_galliraptor_mayonnaise", value: 2048 },
-  { item: "society:birt_mayonnaise", value: 48 },
-  { item: "society:wraptor_mayonnaise", value: 160 },
-  { item: "society:springling_mayonnaise", value: 512 },
-  { item: "society:penguin_mayonnaise", value: 768 },
-  { item: "society:flamingo_mayonnaise", value: 1200 },
-  { item: "society:cruncher_mayonnaise", value: 2048 },
+  { item: "society:large_mayonnaise", value: 64 },
+  { item: "society:large_duck_mayonnaise", value: 96 },
+  { item: "society:large_goose_mayonnaise", value: 128 },
+  { item: "society:large_turkey_mayonnaise", value: 192 },
+  { item: "society:large_galliraptor_mayonnaise", value: 1024 },
+  { item: "society:birt_mayonnaise", value: 24 },
+  { item: "society:wraptor_mayonnaise", value: 80 },
+  { item: "society:springling_mayonnaise", value: 256 },
+  { item: "society:penguin_mayonnaise", value: 384 },
+  { item: "society:flamingo_mayonnaise", value: 600 },
+  { item: "society:cruncher_mayonnaise", value: 1024 },
   { item: "society:oak_resin", value: 128 },
   { item: "society:maple_syrup", value: 192 },
   { item: "society:mystic_syrup", value: 1000 },
   { item: "society:pine_tar", value: 128 },
   { item: "society:sap", value: 4 },
   { item: "society:rubber", value: 30 },
-  { item: "society:aged_cheese_block", value: 576 },
-  { item: "society:aged_goat_cheese_block", value: 3456 },
-  { item: "society:aged_warped_cheese_block", value: 3456 },
-  { item: "society:aged_buffalo_cheese_block", value: 2304 },
-  { item: "society:aged_sheep_cheese_block", value: 288 },
-  { item: "society:aged_grain_cheese_block", value: 792 },
-  { item: "society:aged_amethyst_cheese_block", value: 5184 },
-  { item: "society:aged_tribull_cheese_wheel", value: 6912 },
-  { item: "society:double_aged_cheese_block", value: 1728 },
-  { item: "society:double_aged_goat_cheese_block", value: 10368 },
-  { item: "society:double_aged_warped_cheese_block", value: 10368 },
-  { item: "society:double_aged_buffalo_cheese_block", value: 6912 },
-  { item: "society:double_aged_sheep_cheese_block", value: 864 },
-  { item: "society:double_aged_grain_cheese_block", value: 2376 },
-  { item: "society:double_aged_amethyst_cheese_block", value: 15552 },
-  { item: "society:double_aged_tribull_cheese_wheel", value: 20736 },
+  { item: "society:aged_cheese_block", value: 288 },
+  { item: "society:aged_goat_cheese_block", value: 1728 },
+  { item: "society:aged_warped_cheese_block", value: 1728 },
+  { item: "society:aged_buffalo_cheese_block", value: 1152 },
+  { item: "society:aged_sheep_cheese_block", value: 144 },
+  { item: "society:aged_grain_cheese_block", value: 396 },
+  { item: "society:aged_amethyst_cheese_block", value: 1920 },
+  { item: "society:aged_tribull_cheese_wheel", value: 3456 },
+  { item: "society:double_aged_cheese_block", value: 864 },
+  { item: "society:double_aged_goat_cheese_block", value: 5184 },
+  { item: "society:double_aged_warped_cheese_block", value: 5184 },
+  { item: "society:double_aged_buffalo_cheese_block", value: 3456 },
+  { item: "society:double_aged_sheep_cheese_block", value: 432 },
+  { item: "society:double_aged_grain_cheese_block", value: 1188 },
+  { item: "society:double_aged_amethyst_cheese_block", value: 5760 },
+  { item: "society:double_aged_tribull_cheese_wheel", value: 10368 },
   { item: "society:truffle_oil", value: 1536 },
   { item: "society:oil", value: 112 },
   { item: "society:coconut_oil", value: 64 },
 ];
 
+// Formula: milk x 2
 const cheeses = [
   // Values shouldn't be multiplied for balance
-  { item: "meadow:piece_of_sheep_cheese", value: 24 },
-  { item: "meadow:sheep_cheese_block", value: 96 },
-  { item: "meadow:piece_of_cheese", value: 48 },
-  { item: "meadow:cheese_block", value: 192 },
-  { item: "meadow:piece_of_grain_cheese", value: 66 },
-  { item: "meadow:grain_cheese_block", value: 264 },
-  { item: "meadow:piece_of_buffalo_cheese", value: 192 },
-  { item: "meadow:buffalo_cheese_block", value: 768 },
-  { item: "meadow:piece_of_goat_cheese", value: 288 },
-  { item: "meadow:goat_cheese_block", value: 1152 },
-  { item: "meadow:piece_of_warped_cheese", value: 288 },
-  { item: "meadow:warped_cheese_block", value: 1152 },
-  { item: "meadow:piece_of_amethyst_cheese", value: 432 },
-  { item: "meadow:amethyst_cheese_block", value: 1728 },
-  { item: "farmlife:tribull_cheese_wedge", value: 576 },
-  { item: "farmlife:tribull_cheese_wheel", value: 2304 },
+  { item: "meadow:piece_of_sheep_cheese", value: 12 },
+  { item: "meadow:sheep_cheese_block", value: 48 },
+  { item: "meadow:piece_of_cheese", value: 24 },
+  { item: "meadow:cheese_block", value: 96 },
+  { item: "meadow:piece_of_grain_cheese", value: 33 },
+  { item: "meadow:grain_cheese_block", value: 132 },
+  { item: "meadow:piece_of_buffalo_cheese", value: 96 },
+  { item: "meadow:buffalo_cheese_block", value: 384 },
+  { item: "meadow:piece_of_goat_cheese", value: 144 },
+  { item: "meadow:goat_cheese_block", value: 576 },
+  { item: "meadow:piece_of_warped_cheese", value: 144 },
+  { item: "meadow:warped_cheese_block", value: 576 },
+  { item: "meadow:piece_of_amethyst_cheese", value: 160 },
+  { item: "meadow:amethyst_cheese_block", value: 640 },
+  { item: "farmlife:tribull_cheese_wedge", value: 288 },
+  { item: "farmlife:tribull_cheese_wheel", value: 1152 },
 ];
 cheeses.forEach((recipe) => {
   global.artisanGoods.push({
@@ -849,6 +847,7 @@ global.herbalBrews = [
   { item: "society:mocha", value: 512 },
   { item: "society:dirty_chai", value: 5574 },
   { item: "society:bowl_of_soul", value: 240 },
+  { item: "society:truffle_tea", value: 2061 },
 ];
 // Logs
 global.logs = [
@@ -972,7 +971,7 @@ global.wines = [
   { item: "society:nutty_basil", value: 624 },
   { item: 'society:violet_moon', value: 1488 },
   { item: 'society:laputa_franc', value: 3648 },
-  { item: 'society:sparkling_le_roy',  value: 2872 },
+  { item: 'society:sparkling_le_roy', value: 2872 },
   { item: 'society:mana_king', value: 3296 },
 ];
 
@@ -1070,12 +1069,12 @@ miscAged.forEach((brew) => {
 global.cooking = [];
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 const craftingTableRecipes = [
-  { item: "veggiesdelight:turnip_mutton_skewer", value: 60 }, 
-  { item: "veggiesdelight:vegetables_wrap", value: 195 }, 
-  { item: "veggiesdelight:vegetarian_burger", value: 188 }, 
-  { item: "veggiesdelight:zucchini_quiche", value: 939 }, 
-  { item: "veggiesdelight:stuffed_zucchini_boat", value: 270 }, 
-  { item: "veggiesdelight:steak_and_broccoli", value: 165 }, 
+  { item: "veggiesdelight:turnip_mutton_skewer", value: 60 },
+  { item: "veggiesdelight:vegetables_wrap", value: 195 },
+  { item: "veggiesdelight:vegetarian_burger", value: 188 },
+  { item: "veggiesdelight:zucchini_quiche", value: 939 },
+  { item: "veggiesdelight:stuffed_zucchini_boat", value: 270 },
+  { item: "veggiesdelight:steak_and_broccoli", value: 165 },
   { item: "vintagedelight:honey_mason_jar", value: 24 },
   { item: "veggiesdelight:zucchini_sandwich", value: 134 },
   { item: "veggiesdelight:turnip_salad", value: 60 },
@@ -1692,11 +1691,13 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "society:sunlit_pearl", value: 1920 },
   { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },
   { item: "windswept:frozen_branch", value: 200 },
   { item: "crittersandcompanions:silk", value: 128 },
   { item: "crittersandcompanions:dragonfly_wing", value: 3300 },
+  { item: "quark:dragon_scale", value: 330 },
   { item: "society:river_jelly", value: 128 },
   { item: "society:ocean_jelly", value: 256 },
   { item: "society:nether_jelly", value: 512 },
@@ -1711,6 +1712,7 @@ global.miscAdventurer = [
   { item: "twigs:roseate_seashell", value: 20 },
   { item: "twigs:bronzed_seashell", value: 32 },
   { item: "twigs:tangerine_seashell", value: 24 },
+  { item: "furniture:trash_bag", value: 1 },
   { item: "aquaculture:tin_can", value: 1 },
   { item: "simplehats:hatbag_common", value: 1 },
   { item: "simplehats:hatbag_uncommon", value: 1 },
@@ -1850,7 +1852,7 @@ global.plorts = [
   { type: "splendid_slimes:shulking", value: 512 },
   { type: "splendid_slimes:ender", value: 148 },
   { type: "splendid_slimes:orby", value: 480 },
-  { type: "splendid_slimes:minty", value: 1024 },
+  { type: "splendid_slimes:minty", value: 332 },
   { type: "splendid_slimes:sparkcat", value: 1400 },
   { type: "splendid_slimes:gold", value: 2048 },
 ];
@@ -1864,194 +1866,59 @@ global.plorts.forEach((plort) => {
 });
 
 global.trades = new Map();
-global.ore.forEach((oreItem) => {
-  const { item, value } = oreItem;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:gem_sell_multiplier",
+
+global.getConfiguredValue = (value, mult) => {
+  let multedValue = value;
+  switch (mult) {
+    case "gem":
+      multedValue = value * global.miningProductMult;
+      break;
+    case "wood":
+      multedValue = value * global.artisanProductMult;
+      break;
+    case "meat":
+      multedValue = value * global.adventurerProductMult;
+      break;
+    default:
+    case "crop":
+      multedValue = value * global.farmerProductMult;
+      break;
+  }
+  return Math.round(multedValue)
+}
+const registerTrades = (tradeArray, mult, keyPrefix) => {
+  let resolvedValue;
+  tradeArray.forEach((trade) => {
+    resolvedValue = global.getConfiguredValue(trade.value, mult)
+    global.trades.set(`${keyPrefix ? keyPrefix : ""}${trade.item}`, {
+      value: resolvedValue,
+      multiplier: `shippingbin:${mult}_sell_multiplier`,
+    });
   });
-});
-global.pristine.forEach((pristineItem) => {
-  const { item, value } = pristineItem;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:gem_sell_multiplier",
-  });
-});
-global.crops.forEach((crop) => {
-  const { item, value } = crop;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.animalProducts.forEach((meat) => {
-  const { item, value } = meat;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.cooking.forEach((dish) => {
-  const { item, value } = dish;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.wines.forEach((wine) => {
-  const { item, value } = wine;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:wood_sell_multiplier",
-  });
-});
-global.brews.forEach((brew) => {
-  const { item, value } = brew;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:wood_sell_multiplier",
-  });
-});
-global.geodeList.forEach((treasure) => {
-  const { item, value } = treasure;
-  global.trades.set(item, {
-    value: value,
-    multiplier:
-      item === "society:froggy_helm"
-        ? "shippingbin:meat_sell_multiplier"
-        : "shippingbin:gem_sell_multiplier",
-  });
-});
-global.frozenGeodeList.forEach((treasure) => {
-  const { item, value } = treasure;
-  global.trades.set(item, {
-    value: value,
-    multiplier:
-      item === "society:ribbit_drum"
-        ? "shippingbin:meat_sell_multiplier"
-        : "shippingbin:gem_sell_multiplier",
-  });
-});
-global.magmaGeodeList.forEach((treasure) => {
-  const { item, value } = treasure;
-  global.trades.set(item, {
-    value: value,
-    multiplier:
-      item === "society:ribbit_gadget"
-        ? "shippingbin:meat_sell_multiplier"
-        : "shippingbin:gem_sell_multiplier",
-  });
-});
-global.gems.forEach((treasure) => {
-  const { item, value } = treasure;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:gem_sell_multiplier",
-  });
-});
-global.miscGeologist.forEach((treasure) => {
-  const { item, value } = treasure;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:gem_sell_multiplier",
-  });
-});
-global.artifacts.forEach((treasure) => {
-  const { item, value } = treasure;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:meat_sell_multiplier",
-  });
-});
-global.relics.forEach((treasure) => {
-  const { item, value } = treasure;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:meat_sell_multiplier",
-  });
-});
-global.preserves.forEach((jar) => {
-  const { item, value } = jar;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:wood_sell_multiplier",
-  });
-});
-global.dehydrated.forEach((dehydratee) => {
-  const { item, value } = dehydratee;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:wood_sell_multiplier",
-  });
-});
-global.artisanGoods.forEach((good) => {
-  const { item, value } = good;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:wood_sell_multiplier",
-  });
-});
-global.fish.forEach((fish) => {
-  const { item, value } = fish;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.smokedFish.forEach((fish) => {
-  const { item, value } = fish;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:wood_sell_multiplier",
-  });
-});
-global.agedRoe.forEach((fish) => {
-  const { item, value } = fish;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:wood_sell_multiplier",
-  });
-});
-global.cocktails.forEach((cocktail) => {
-  const { item, value } = cocktail;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.herbalBrews.forEach((brew) => {
-  const { item, value } = brew;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.logs.forEach((log) => {
-  const { item, value } = log;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.miscAdventurer.forEach((miscItem) => {
-  const { item, value } = miscItem;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:meat_sell_multiplier",
-  });
-});
-global.plorts.forEach((plort) => {
-  const { type, value } = plort;
-  global.trades.set(`splendid_slimes:plort/${type}`, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.slimeHearts.forEach((heart) => {
-  const { type, value } = heart;
-  global.trades.set(`splendid_slimes:slime_heart/${type}`, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
+}
+registerTrades(global.ore, "gem");
+registerTrades(global.pristine, "gem");
+registerTrades(global.crops, "crop");
+registerTrades(global.animalProducts, "crop");
+registerTrades(global.cooking, "crop");
+registerTrades(global.wines, "wood");
+registerTrades(global.brews, "wood");
+registerTrades(global.geodeList, "gem");
+registerTrades(global.frozenGeodeList, "gem");
+registerTrades(global.magmaGeodeList, "gem");
+registerTrades(global.gems, "gem");
+registerTrades(global.miscGeologist, "gem");
+registerTrades(global.artifacts, "meat");
+registerTrades(global.relics, "meat");
+registerTrades(global.preserves, "wood");
+registerTrades(global.dehydrated, "wood");
+registerTrades(global.artisanGoods, "wood");
+registerTrades(global.fish, "crop");
+registerTrades(global.smokedFish, "wood");
+registerTrades(global.agedRoe, "wood");
+registerTrades(global.cocktails, "crop");
+registerTrades(global.herbalBrews, "crop");
+registerTrades(global.logs, "crop");
+registerTrades(global.miscAdventurer, "meat");
+registerTrades(global.plorts, "crop", "splendid_slimes:plort/");
+registerTrades(global.slimeHearts, "crop", "splendid_slimes:slime_heart/");

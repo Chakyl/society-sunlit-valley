@@ -36,62 +36,75 @@ StartupEvents.registry("block", (event) => {
       if (player.stages.has("farmers_blessing")) {
         if (hand == "OFF_HAND") return;
         if (hand == "MAIN_HAND") {
-          switch (season) {
-            case "spring":
-              if (item === "society:ancient_fruit" && item.count === 64) {
-                block.popItemFromFace("society:prismatic_shard", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(
-                  Text.translatable(
-                    "block.society.ancient_goddess_statue.spring"
-                  ).aqua()
-                );
-              }
-              break;
-            case "summer":
-              if (item === "vintagedelight:ghost_pepper" && item.count === 64) {
-                block.popItemFromFace("64x society:sparkstone", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(
-                  Text.translatable(
-                    "block.society.ancient_goddess_statue.summer"
-                  ).aqua()
-                );
-              }
-              break;
-            case "autumn":
-              if (item === "farm_and_charm:corn" && item.count === 64) {
-                block.popItemFromFace(
-                  "4x society:pristine_star_shards",
-                  facing
-                );
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(
-                  Text.translatable(
-                    "block.society.ancient_goddess_statue.autumn"
-                  ).aqua()
-                );
-              }
-              break;
-            case "winter":
-              if (item === "snowyspirit:ginger" && item.count === 64) {
-                block.popItemFromFace("4x minecraft:netherite_scrap", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(
-                  Text.translatable(
-                    "block.society.ancient_goddess_statue.winter"
-                  ).aqua()
-                );
-              }
-              break;
+          let day = global.getDay(level);
+          if (!player.persistentData.days) player.persistentData.days = {}
+          let dayData = player.persistentData.days.ancientGoddessStatueDay;
+          if (dayData == undefined || dayData < day) {
+            switch (season) {
+              case "spring":
+                if (item === "society:ancient_fruit" && item.count === 64) {
+                  block.popItemFromFace("society:prismatic_shard", facing);
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.spring"
+                    ).aqua()
+                  );
+                }
+                break;
+              case "summer":
+                if (item === "vintagedelight:ghost_pepper" && item.count === 64) {
+                  block.popItemFromFace("64x society:sparkstone", facing);
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.summer"
+                    ).aqua()
+                  );
+                }
+                break;
+              case "autumn":
+                if (item === "farm_and_charm:corn" && item.count === 64) {
+                  block.popItemFromFace(
+                    "4x society:pristine_star_shards",
+                    facing
+                  );
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.autumn"
+                    ).aqua()
+                  );
+                }
+                break;
+              case "winter":
+                if (item === "snowyspirit:ginger" && item.count === 64) {
+                  block.popItemFromFace("4x minecraft:netherite_scrap", facing);
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.winter"
+                    ).aqua()
+                  );
+                }
+                break;
+            }
+          } else {
+            player.tell(
+              Text.translatable("block.society.ancient_goddess_statue.already_taken").red()
+            );
           }
         }
       } else

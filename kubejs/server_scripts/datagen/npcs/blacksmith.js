@@ -3,8 +3,9 @@ if (global.datagenDialog) {
 runNpcDatagen("blacksmith", {
   name: "Aiden",
   intro: [
-    "My name is Aiden! I don't have a soul yet because Uni and co haven't written it!",
-    "This is agony auurugh!"
+    "My name is Aiden! This villager is currently being written.",
+    "I couldn't get all the writing done in time for the playtest!",
+    "Thank you for testing!"
   ],
   chatter: {
     friendship0: [["Hello! I can smith for you or whatever ehe"]],

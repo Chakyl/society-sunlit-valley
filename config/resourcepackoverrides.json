@@ -2,6 +2,7 @@
   "schema_version": 2,
   "failed_reloads_per_session": 5,
   "default_packs": [
+    "file/sunlit_overrides.zip",
     "file/Lopy-Create-Pipez.zip",
     "file/glow_up-1.4-1.20.1.zip",
     "file/Icon Journey 1.1.zip",
@@ -27,6 +28,7 @@
   },
   "pack_overrides": {
     "1": [
+      "file/sunlit_overrides.zip",
       "file/Lopy-Create-Pipez.zip",
       "file/glow_up-1.4-1.20.1.zip",
       "file/Icon Journey 1.1.zip",

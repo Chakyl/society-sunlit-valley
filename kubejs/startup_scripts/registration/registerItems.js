@@ -335,6 +335,8 @@ StartupEvents.registry("item", (e) => {
     .maxStackSize(1);
   e.create("society:animal_cracker").texture("society:item/animal_cracker");
   e.create("society:sunlit_crystal").texture("society:item/sunlit_crystal");
+  e.create("society:plushie_wand").texture("society:item/plushie_wand")
+    .maxStackSize(1)
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
   e.create("society:pig_race_ticket").texture("society:item/pig_race_ticket");
   e.create("society:multiplayer_pig_race_ticket").texture(
@@ -470,8 +472,8 @@ StartupEvents.registry("item", (e) => {
 
           if (Math.random() < 0.4) {
             player.attack(10);
+            player.give("society:perfect_cherry");
           }
-          player.give("society:perfect_cherry");
         }
       });
     });
@@ -921,8 +923,8 @@ StartupEvents.registry("item", (e) => {
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
-          ? `§6Double-${product.name}`
-          : `§bAged ${product.name}`
+          ? `Double-${product.name}`
+          : `Aged ${product.name}`
       )
       .glow(true)
       .color(0, 0xcae9f4);
@@ -932,8 +934,8 @@ StartupEvents.registry("item", (e) => {
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
-          ? `§6Triple-${product.name}`
-          : `§3Double-Aged ${product.name}`
+          ? `Triple-${product.name}`
+          : `Double-Aged ${product.name}`
       )
       .glow(true)
       .color(0, 0x28adde);

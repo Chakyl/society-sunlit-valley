@@ -62,9 +62,7 @@ ItemEvents.tooltip((tooltip) => {
             let animal = item.nbt.getCompound("animal");
             text.add(4, [
               Text.translatable("tooltip.society.plushies.animal_type"),
-              Text.translate(
-                global.getTranslatedEntityName(String(animal.type)).getString()
-              ).gold(),
+              global.getTranslatedEntityName(String(animal.type)).gold(),
             ]);
             if (animal.name) {
               text.add(5, [
@@ -270,7 +268,7 @@ ItemEvents.tooltip((tooltip) => {
     {
       item: "society:women_who_run_with_the_plushies",
       description:
-        "Plushies will start at 3 hearts of affection. Increases rates of high quality Plushies.",
+        "Plushies will start at 2 hearts of affection. Increases rates of high quality Plushies.",
     },
   ].forEach((book) => {
     tooltip.add(
@@ -1100,7 +1098,14 @@ ItemEvents.tooltip((tooltip) => {
     "relics:jellyfish_necklace",
     Text.translatable("tooltip.society.jellyfish_necklace").red()
   );
-
+  tooltip.add(
+    "society:invitation",
+    Text.translatable("tooltip.society.invitation").green()
+  );
+  tooltip.add(
+    "unusualfishmod:ripper_tooth",
+    Text.translatable("tooltip.society.ripper_tooth").green()
+  );
   tooltip.add(
     "society:river_jelly",
     Text.translatable("item.society.river_jelly.description").blue()
@@ -1348,7 +1353,6 @@ ItemEvents.tooltip((tooltip) => {
   generateSprinklerTooltip(tooltip, "gold", 2);
   generateSprinklerTooltip(tooltip, "diamond", 3);
   generateSprinklerTooltip(tooltip, "netherite", 4);
-  // Books
   tooltip.add(
     "society:yard_work_yearly",
     Text.translatable(
@@ -1489,6 +1493,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:sunlit_crystal",
     Text.translatable("item.society.sunlit_crystal.description").gray()
   );
+  tooltip.add(
+    "society:plushie_wand",
+    Text.translatable("item.society.plushie_wand.description").gray()
+  );
 
   tooltip.add(
     [
@@ -1540,4 +1548,20 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.translatable("tooltip.society.adventuring_mastery.required")
   );
+
+  global.ageableProductInputs.forEach((product) => {
+    const splitProduct = product.item.split(":");
+    tooltip.addAdvanced(`society:aged_${splitProduct[1]}`, (item, advance, text) => {
+      if (product.item === "brewery:whiskey_maggoallan" || product.item === "brewery:whiskey_smokey_reverie")
+        text.set(0, text.get(0).copy().gold())
+      else
+        text.set(0, text.get(0).copy().aqua());
+    });
+    tooltip.addAdvanced(`society:double_aged_${splitProduct[1]}`, (item, advance, text) => {
+      if (product.item === "brewery:whiskey_maggoallan" || product.item === "brewery:whiskey_smokey_reverie")
+        text.set(0, text.get(0).copy().gold())
+      else
+        text.set(0, text.get(0).copy().darkAqua());
+    });
+  });
 });

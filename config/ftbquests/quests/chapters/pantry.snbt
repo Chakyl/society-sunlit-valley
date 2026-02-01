@@ -298,12 +298,6 @@
 			id: "7CBAF0748446A0C2"
 			rewards: [
 				{
-					count: 48
-					id: "5B9395E91C243572"
-					item: "moreminecarts:chiseled_organic_glass"
-					type: "item"
-				}
-				{
 					id: "4FC255BFC2126E9F"
 					item: {
 						Count: 1
@@ -315,6 +309,12 @@
 						}
 					}
 					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46FDA42C9D22205F"
+					table_id: 5635253696830077546L
+					type: "choice"
 				}
 			]
 			shape: "none"
