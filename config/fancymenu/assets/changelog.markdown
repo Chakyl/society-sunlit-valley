@@ -25,6 +25,7 @@
 - Updated Entrana set to Kanlamari's Revamped look
 - Added Wine Keg - Artisan Machine for making wines without the need for juice
 - Added Mushroom Log - Artisan Machine for growing mushrooms
+- Added new texture for Dragontooth Axe by Artty
 - Added Oil Maker and rebalanced Truffle Oil accordingly
 - Added Oil and Coconut Oil
 - Added Pickling Can
@@ -48,8 +49,10 @@
 - Added Schematiccannon and associated items back with exploit fixer
 - Added Credits & Wiki link to the pause screen in the place of unusable vanilla buttons
 - Added more advancements
+- Added configuration for different product types to make the game harder or easier 
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
 - Ancient Goddess Statue now trades ones a day
+- Farmland no longer turns into dirt when not watered at 6am
 - Changed recipe of Grapevine Stems/Lattices to use treated logs
 - Cheese is now an Artisan Product (from Farmer Product)
 - Farm animals no longer produce twice as much at max affection
@@ -59,6 +62,7 @@
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
 - Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
 - Reworked Pink Matter upgrade to use Dragon Scales and upped Plort Ripping chance
+- Reworked Crafts room bundles
 - Ribbit Hut now works at 7am (from 8am)
 - Magic Shears now output quality based on affection
 - Moved Birch log tapping to Mushroom Log
@@ -107,7 +111,6 @@
 - Reduced fertilizer required for Iridium quality crops (Pristine -> Hyper) 
 - Removed Pickaxe cost from Pickarang
 - Removed Tom's Simple Storage
-- Removed Brewer's Bundle from Crafts room (Replaced with Foraging bundle)
 - Removed Gold Ring
 - Removed max affection doubling forage drops
 - Removed quality preserving from Artisan Cheese Press
