@@ -23,7 +23,11 @@
     }
   ],
   "lookup_history": [
-    "item:megamons:mega_cuff{}",
+    {
+      "type": "fluid",
+      "id": "society:starfruit_juice",
+      "amount": 0
+    },
     "item:sunlit_cobblemon:pristine_ghost_gem",
     "item:simpletms:tr_playrough",
     "item:sunlit_cobblemon:pristine_fighting_gem",

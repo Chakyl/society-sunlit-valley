@@ -4,8 +4,14 @@
 ^^^
 --- 
 - Updated to match Sunlit Valley 4.0 playtest
+- Added tooltips to most Cobblemon items
+- Improved trainer tier rewards
 - Fixed multiplyer messages, please report any ones missed!
 - Fixed streak message being wrong
+- Fixed Cornucopia
+- Fixed pristine type gems not converting into normal
+- Bunch of 4.0 specific fixes
+
 ---
 ^^^
 ## Heart of the Community
@@ -155,6 +161,20 @@
 - Fixed certain farm animal drops not having quality
 - Fixed Garlic Clove being plantable
 - Fixed exploits
+
+### Playtest 6
+- Most of this playtest version revolves around Sunlit Valley 4.0! Refer to the changelog below before posting issues!
+- Reworked tier system basic repetitive tasks so they carry over in major rankings (Thanks KingKarma!)
+- Added Gachamon Capusle to Ball Boutique
+- Added Lake Guardian and Forces of Nature legendaries
+- Added Energy Root recipe using Botania and Cooking pot
+- Added Big Roots to Mushroom Log using Apricon Logs
+- Fixed being able to bring legendaries to poor innocent gym patrons
+- Fixed duplicated trainer podium trainers happening
+- Fixed Fish Pond legacy conversion (artisan machine conversion next update)
+- Fixed Primitive and future tech cobblemon spawn conditions being wrong 
+- Fixed Preserves Jars saving tag input drops
+
 ## Playtest 5
 - Improved performance of workstations buy a significant amount. You may have to reassign your workers!
 - Added Star Pixie (removed Pixie of Ice) for summoning certain Sub-Legendry Pokemon

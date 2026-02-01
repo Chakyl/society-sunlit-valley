@@ -61,7 +61,7 @@
 			]
 		},
 		{
-			"id": "end",
+			"id": 3,
 			"speaker": {
 				"translate": "dialog.npc.carpenter.name",
 				"color": "white"
@@ -69,6 +69,25 @@
 			"text": [
 				{
 					"translate": "dialog.npc.carpenter.intro.0.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.0.line_4"
 				}
 			],
 			"portraits": [

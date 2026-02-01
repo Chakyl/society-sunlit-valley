@@ -6,7 +6,7 @@
 	group: ""
 	icon: "cobblemon:master_ball"
 	id: "210AA16BCC8B86BF"
-	order_index: 3
+	order_index: 2
 	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
@@ -1869,7 +1869,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3A41F152CD56B5FB"
-				table_id: 238600958051370349L
 				type: "choice"
 			}]
 			tasks: [{
@@ -2663,7 +2662,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "380475D88FD498B5"
-					table_id: 238600958051370349L
 					type: "choice"
 				}
 			]
@@ -2842,7 +2840,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A0CCBDD943C36AD"
-				table_id: 238600958051370349L
 				type: "random"
 			}]
 			tasks: [{
