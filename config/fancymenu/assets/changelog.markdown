@@ -3,17 +3,9 @@
 ### vPLAYTEST-7-1.0.0
 ^^^
 --- 
-- Most of this playtest version revolves around Sunlit Valley 4.0! Refer to the changelog below before posting issues!
-- Reworked tier system basic repetitive tasks so they carry over in major rankings (Thanks KingKarma!)
-- Added Gachamon Capusle to Ball Boutique
-- Added Lake Guardian and Forces of Nature legendaries
-- Added Energy Root recipe using Botania and Cooking pot
-- Added Big Roots to Mushroom Log using Apricon Logs
-- Fixed being able to bring legendaries to poor innocent gym patrons
-- Fixed duplicated trainer podium trainers happening
-- Fixed Fish Pond legacy conversion (artisan machine conversion next update)
-- Fixed Primitive and future tech cobblemon spawn conditions being wrong 
-- Fixed Preserves Jars saving tag input drops
+- Updated to match Sunlit Valley 4.0 playtest
+- Fixed multiplyer messages, please report any ones missed!
+- Fixed streak message being wrong
 ---
 ^^^
 ## Heart of the Community
@@ -51,8 +43,9 @@
 - Added Gray Anatomy upgrade
 - Added Spinel gem
 - Added normal Skill Book Alias Moss
-- Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish.
-- Added traits Recessive to Juicy and Ender Slimes and Dominant to Orby and Rotting Slimes
+- Added Ripper Tooth functionality - Threatens the fish in a Fish Pond into changing their active quest
+- Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish
+- Added Fredbear plushies
 - Added full value calculations to items when holding shift
 - Added Mana Fruit crop and reworked parts of Botania Progression around it
 - Added Wines: Violet Moon, Sparkling Le Roy, Laputa Franc, and Mana King
@@ -63,14 +56,16 @@
 - Added Fish Pond drops to Cod and Salmon
 - Added Turtle, Bat, and Shima Enaga as husbandry animals
 - Added Schematiccannon and associated items back with exploit fixer
-- Added Wiki link to the pause screen in the place of unusable vanilla buttons
+- Added Credits & Wiki link to the pause screen in the place of unusable vanilla buttons
 - Added more advancements
+- Added configuration for different product types to make the game harder or easier 
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
 - Ancient Goddess Statue now trades ones a day
 - Farmland no longer turns into dirt when not watered at 6am
 - Changed recipe of Grapevine Stems/Lattices to use treated logs
 - Cheese is now an Artisan Product (from Farmer Product)
 - Farm animals no longer produce twice as much at max affection
+- Minty Slimes now eat Tubabacco, Orby Slimes now eat Dehydrated Products
 - Reworked unlockable shops. Master Cultivator trades are added to Market after 1 year of playtime. Mystical Botanist (now Wizard) unlocked after visiting the Nether. Exotic Trader (now trader) unlocked after visiting the Skull Cavern
 - Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
@@ -88,7 +83,7 @@
 - Increased valued of Large Eggs (16->32), Duck Eggs (32->48).
 - Increased Sniffer/Frostbiter Artifact shard drops by 1.5x
 - Increased Panda, Red Panda, Squirrel, Deer, Frog, and Cochineal Drops by 2/1/8/3/4/2&4
-- Increased Moobloom milking time by 1
+- Increased longwing flower eating chance 4% -> 8%
 - Increased value of Pine Tar and Oak Resin (48->128)
 - Rebalanced Plort values
 - Rebalanced husbandry as a whole to not be insanely better than other money makers (see below)
@@ -102,7 +97,11 @@
 - Reduced all Pantry & Blacksmith bundles to one item per task
 - Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle 
 - Reduced cost of Vault 83,968 -> 51,200
+- Reduced cost of Dehydrator 73,728 -> 36864
+- Reduced cost of Gadget Core and hammer cores by half
+- Reduced cost of Workbench by half
 - Reduced chance of rain/thunder/snow in Autumn/winter
+- Reduced grain -> feed conversion rate
 - Reduced difficulty of Fish Tank by selecting more common fish for bundles
 - Reduced Caper Catcher (5 -> 3) and Caviar Catcher (5->2) roe amounts
 - Reduced affection increases and decreases by half (excluding candied animal feed)
@@ -154,8 +153,8 @@
 - Fixed Strawberry having vegetable tag
 - Fixed Ender Slime having wrong hat
 - Fixed certain farm animal drops not having quality
+- Fixed Garlic Clove being plantable
 - Fixed exploits
-
 ## Playtest 5
 - Improved performance of workstations buy a significant amount. You may have to reassign your workers!
 - Added Star Pixie (removed Pixie of Ice) for summoning certain Sub-Legendry Pokemon
