@@ -209,7 +209,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100}`,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:20}`,
           40,
           Text.translatable("society.husbandry.peckish", name).toJson()
         )
@@ -733,7 +733,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           server.runCommandSilent(
             global.getEmbersTextAPICommand(
               player.username,
-              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
               80,
               Text.translatable("society.husbandry.emancipation").toJson()
             )
@@ -901,7 +901,7 @@ BlockEvents.rightClicked(global.plushies, (e) => {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:-100}`,
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
           80,
           Text.translatable("society.husbandry.emancipation").toJson()
         )

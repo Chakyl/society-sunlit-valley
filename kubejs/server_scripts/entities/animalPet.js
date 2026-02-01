@@ -19,7 +19,7 @@ ItemEvents.entityInteracted((e) => {
           // `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#55FF55",y:-90}`, 
           // 80, 
           // Text.translatable("society.husbandry.pet.max_affection", name).toJson(),
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:-100}`, 
+          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:20}`, 
           40, 
           Text.translatable("society.husbandry.peckish").toJson()
         )

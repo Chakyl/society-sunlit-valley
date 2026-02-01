@@ -13,7 +13,7 @@ PlayerEvents.tick((e) => {
         );
         server.runCommandSilent(
           global.getEmbersTextAPICommand(player.username,
-            `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60}`,
+            `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
             200,
             Text.translatable("society.skull_cavern.late").toJson()
           )
@@ -26,7 +26,7 @@ PlayerEvents.tick((e) => {
       if (timeModulo <= 20200) {
         server.runCommandSilent(
           global.getEmbersTextAPICommand(player.username,
-            `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60}`,
+            `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
             200,
             Text.translatable("society.skull_cavern.concern").toJson()
           )
@@ -43,7 +43,7 @@ PlayerEvents.tick((e) => {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60}`,
+          `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
           200,
           Text.translatable("society.skull_cavern.fainted").toJson()
         )
