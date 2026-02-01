@@ -9181,29 +9181,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Platform-forge-1.20.1-1.2.11.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7227/584/Platform-forge-1.20.1-1.2.11.3.jar",
-                    "id": "7227584",
-                    "parent_id": "997634",
-                    "hashes": {
-                        "sha1": "cea96c84a359f202f89622626a7625c41572804a",
-                        "md5": "59135c5d24bcb664824f0c846b239246"
-                    },
-                    "required_dependencies": [],
-                    "size": 512498,
-                    "date_published": "2025-11-16T06:31:51.623Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Platform-forge-1.20.1-1.2.11.3.jar",
+                    "file_name": "Platform-forge-1.20.1-1.2.11.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9211,16 +9190,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/i6fiqm5y/versions/WB3OJw4I/Platform-forge-1.20.1-1.2.11.3.jar",
-                    "id": "WB3OJw4I",
+                    "url": "https://cdn.modrinth.com/data/i6fiqm5y/versions/f4iH9oDL/Platform-forge-1.20.1-1.2.11.4.jar",
+                    "id": "f4iH9oDL",
                     "parent_id": "i6fiqm5y",
                     "hashes": {
-                        "sha512": "098ba2c6f510f0010be8de881b94185f3b77bc7666cdeb9d9ea0bce963b585902310f9cd12741cc5b7a39b366562915f982c9fa734e749fde3acdb7d55d52437",
-                        "sha1": "cea96c84a359f202f89622626a7625c41572804a"
+                        "sha512": "59085e70456a087f258d6e6f55fa231394d15def5f428ac3199c65ebea5cbcd9d86f4e9ff610042a610bc6176d20d1e6c6e4b1e0d213bfd192ffef420383b18e",
+                        "sha1": "24622aa272a0dbe6a02dad9345b4987b01c2aa6a"
                     },
                     "required_dependencies": [],
-                    "size": 512498,
-                    "date_published": "2025-11-16T06:30:33.410567Z"
+                    "size": 497162,
+                    "date_published": "2026-02-01T02:33:24.734225Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Platform-forge-1.20.1-1.2.11.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7558/550/Platform-forge-1.20.1-1.2.11.4.jar",
+                    "id": "7558550",
+                    "parent_id": "997634",
+                    "hashes": {
+                        "sha1": "24622aa272a0dbe6a02dad9345b4987b01c2aa6a",
+                        "md5": "674bf01f2f62b8d3ae3ce876051d8308"
+                    },
+                    "required_dependencies": [],
+                    "size": 497162,
+                    "date_published": "2026-02-01T02:29:41.670Z"
                 }
             ]
         },
@@ -10289,24 +10289,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "SVDialog-0.1.jar",
+                    "file_name": "SVDialog-0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7510/22/SVDialog-0.1.jar",
-                    "id": "7510022",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7562/504/SVDialog-0.2.jar",
+                    "id": "7562504",
                     "parent_id": "1441305",
                     "hashes": {
-                        "sha1": "5e1ae288a04f90cad0a2716ee2f47b24c1f4cc1b",
-                        "md5": "cfa7fca9515dfa46c241cc118435ee9e"
+                        "sha1": "f3c6b41ffe5a24f2e7355eba8ad79ef192e6128c",
+                        "md5": "8dcea7a4f45e01dea4818cd98546f7ae"
                     },
                     "required_dependencies": [],
-                    "size": 1318903,
-                    "date_published": "2026-01-23T02:22:40.657Z"
+                    "size": 1318674,
+                    "date_published": "2026-02-01T19:23:32.947Z"
                 }
             ]
         },
@@ -11173,7 +11173,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society-1.10.jar",
+                    "file_name": "society-1.11.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11181,16 +11181,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7553/529/society-1.10.jar",
-                    "id": "7553529",
+                    "url": "https://edge.forgecdn.net/files/7562/352/society-1.11.jar",
+                    "id": "7562352",
                     "parent_id": "1424785",
                     "hashes": {
-                        "sha1": "d5c21a8ad4c856aaa5d041a75e63c64a51bd6ece",
-                        "md5": "a048a24f8a034a36216ea530851beb81"
+                        "sha1": "ddfcf3d9bb8a762bf2dfaadbcff6e7ed19eec953",
+                        "md5": "c4eb2238ed01504c14a669ab8f6eabf7"
                     },
                     "required_dependencies": [],
-                    "size": 22425393,
-                    "date_published": "2026-01-31T03:13:25.940Z"
+                    "size": 22423255,
+                    "date_published": "2026-02-01T18:56:10.740Z"
                 }
             ]
         },
@@ -12675,7 +12675,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "vanillabackport-forge-1.20.1-1.1.5.1.jar",
+                    "file_name": "VanillaBackport-forge-1.20.1-1.1.5.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12683,18 +12683,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7227/619/vanillabackport-forge-1.20.1-1.1.5.1.jar",
-                    "id": "7227619",
+                    "url": "https://edge.forgecdn.net/files/7558/710/VanillaBackport-forge-1.20.1-1.1.5.2.jar",
+                    "id": "7558710",
                     "parent_id": "417430",
                     "hashes": {
-                        "sha1": "77551f2c12f9ad1db0bcc4c2819e0914b0111326",
-                        "md5": "747eebae16a8c255aa4d88c90389134c"
+                        "sha1": "76ca0be5c10d671827fcf7170cc40ef07921a505",
+                        "md5": "e3197c2103d46eb2cf9b6e2bb4569207"
                     },
                     "required_dependencies": [
                         "997634"
                     ],
-                    "size": 28004226,
-                    "date_published": "2025-11-16T06:53:38.667Z"
+                    "size": 28279611,
+                    "date_published": "2026-02-01T03:14:27.253Z"
                 }
             ]
         },

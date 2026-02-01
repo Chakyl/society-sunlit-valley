@@ -1,0 +1,34 @@
+#Whether vanity items should have attribute modifiers.
+modifiersEnabled = true
+
+[Head]
+	cakemanPlushie = ["minecraft:generic.luck addition:1"]
+	captainHat = ["minecraft:generic.knockback_resistance multiply:0.05"]
+	christmasHat = ["minecraft:generic.armor_toughness addition:0.5"]
+	cowboyHat = ["minecraft:generic.movement_speed multiply:0.05"]
+	crown = ["minecraft:generic.max_health multiply:0.05"]
+	dragonSkull = ["minecraft:generic.attack_damage multiply:0.05"]
+	horns = ["minecraft:generic.attack_knockback multiply:0.05"]
+	kasaHat = ["minecraft:generic.knockback_resistance multiply:0.05"]
+	overtopHat = ["minecraft:generic.luck addition:2"]
+	pickelhaube = ["minecraft:generic.armor addition:1"]
+	pirateHat = ["minecraft:generic.attack_damage multiply:0.05"]
+	pumpkinHat = ["minecraft:generic.follow_range multiply:0.05"]
+	skull = ["minecraft:generic.armor addition:1"]
+	sombrero = ["minecraft:generic.movement_speed multiply:0.05"]
+	strawHat = ["minecraft:generic.attack_speed multiply:0.05"]
+	topHat = ["minecraft:generic.luck addition:1"]
+	wizardHat = ["minecraft:generic.movement_speed multiply:0.025", "minecraft:generic.attack_damage multiply:0.025"]
+
+[Chest]
+	bandolier = ["minecraft:generic.attack_speed multiply:0.05"]
+	quiver = ["minecraft:generic.attack_speed multiply:0.025", "minecraft:generic.attack_damage multiply:0.025"]
+	sheathedKatana = ["minecraft:generic.attack_damage multiply:0.05"]
+	wings = ["minecraft:generic.movement_speed multiply:0.025", "minecraft:generic.knockback_resistance multiply:0.025"]
+
+[Legs]
+	holsteredBelt = ["minecraft:generic.attack_speed multiply:0.05"]
+
+[Feet]
+	hermesBoots = ["minecraft:generic.movement_speed multiply:0.05"]
+

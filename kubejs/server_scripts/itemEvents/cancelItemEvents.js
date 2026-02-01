@@ -43,9 +43,11 @@ ItemEvents.rightClicked(
     "buildinggadgets2:gadget_cut_paste",
     "buildinggadgets2:gadget_destruction",
     "botania:smelt_rod",
+    "supplementaries:wrench"
   ],
   (e) => {
     if (e.player.level.dimension === "society:skull_cavern") {
+      // TODO: Dialog
       e.player.tell(Text.red("Don't do that."))
       e.cancel();
     }

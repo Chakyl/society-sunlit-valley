@@ -111,7 +111,7 @@ const getAttributeText = (attribute) => {
   }
 };
 global.addPriceTooltip = (tooltip, sellable, attribute) => {
-  let value = sellable.value;
+  let value = global.getConfiguredValue(sellable.value, attribute);
   tooltip.addAdvanced(sellable.item, (item, advanced, text) => {
     let quality;
     if (item.nbt && item.nbt.quality_food) {
@@ -274,37 +274,25 @@ ItemEvents.tooltip((tooltip) => {
   });
   // Geodes
   global.geodeList.forEach((geodeItem) => {
-    if (geodeItem.item !== "society:froggy_helm") {
-      global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(
-        geodeItem.item,
-        Text.translatable("tooltip.society.item_type.mineral").gray()
-      );
-    } else {
-      global.addPriceTooltip(tooltip, geodeItem, "meat");
-    }
+    global.addPriceTooltip(tooltip, geodeItem, "gem");
+    tooltip.add(
+      geodeItem.item,
+      Text.translatable("tooltip.society.item_type.mineral").gray()
+    );
   });
   global.frozenGeodeList.forEach((geodeItem) => {
-    if (geodeItem.item !== "society:ribbit_drum") {
-      global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(
-        geodeItem.item,
-        Text.translatable("tooltip.society.item_type.mineral").gray()
-      );
-    } else {
-      global.addPriceTooltip(tooltip, geodeItem, "meat");
-    }
+    global.addPriceTooltip(tooltip, geodeItem, "gem");
+    tooltip.add(
+      geodeItem.item,
+      Text.translatable("tooltip.society.item_type.mineral").gray()
+    );
   });
   global.magmaGeodeList.forEach((geodeItem) => {
-    if (geodeItem.item !== "society:ribbit_gadget") {
-      global.addPriceTooltip(tooltip, geodeItem, "gem");
-      tooltip.add(
-        geodeItem.item,
-        Text.translatable("tooltip.society.item_type.mineral").gray()
-      );
-    } else {
-      global.addPriceTooltip(tooltip, geodeItem, "meat");
-    }
+    global.addPriceTooltip(tooltip, geodeItem, "gem");
+    tooltip.add(
+      geodeItem.item,
+      Text.translatable("tooltip.society.item_type.mineral").gray()
+    );
   });
   // Gem
   global.gems.forEach((gem) => {

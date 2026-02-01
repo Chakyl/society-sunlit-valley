@@ -286,7 +286,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
+			dependencies: ["24C86673E1F57A3E"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest9.description1}"
 				""
@@ -324,8 +324,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest9.title}"
-			x: 8.0d
-			y: -3.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
@@ -771,7 +771,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest23.title}"
-			x: 8.0d
+			x: 8.5d
 			y: 1.5d
 		}
 		{
@@ -784,7 +784,7 @@
 				""
 				"You'll need to invite a &6Market&r villager to purchase this invitation."
 			]
-			icon: "numismatics_utils:bank_meter"
+			icon: "society:pig_race_ticket"
 			id: "4DB169DA4B4CCFBA"
 			rewards: [{
 				id: "49E5FB8738AB8D25"
@@ -806,7 +806,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -863,10 +863,10 @@
 			}]
 			title: "Placing Blueprints"
 			x: 8.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["382DC5EBB8C7C19E"]
+			dependencies: ["66D159252C70D5F2"]
 			description: [
 				"Your farm isn't going to be very successful if you stick to those &6Stone Tools&r..."
 				""
@@ -893,7 +893,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.5d
 			y: -1.5d
 		}
 		{
@@ -918,7 +918,7 @@
 				type: "checkmark"
 			}]
 			title: "Giving Gifts"
-			x: 11.0d
+			x: 10.5d
 			y: -3.0d
 		}
 	]

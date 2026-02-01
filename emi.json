@@ -36,6 +36,10 @@
     }
   ],
   "lookup_history": [
+    "item:minecraft:end_stone",
+    "item:quark:hollow_oak_log",
+    "item:ribbits:ribbit_fisherman_spawn_egg",
+    "item:society:ribbit_gadget",
     "item:etcetera:iridescent_glass",
     "item:classicpipes:mangrove_pipe",
     "item:minecraft:oak_stairs",
@@ -574,10 +578,10 @@
     "item:veggiesdelight:zucchini_quiche",
     [
       "item:brewery:pork_knuckle",
+      "item:farmersdelight:cooked_bacon",
       "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
       "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -588,8 +592,8 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
+      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
@@ -1246,7 +1250,6 @@
       "id": "minecraft:stone",
       "amount": 12
     },
-    "item:society:ribbit_gadget",
     "item:species:kinetic_core",
     "item:minecraft:oak_slab",
     "#item:minecraft:wooden_slabs",
@@ -1508,10 +1511,7 @@
     "item:minecraft:potion{Potion:\"minecraft:strong_healing\"}",
     "item:minecraft:potion{Potion:\"minecraft:weakness\"}",
     "item:minecraft:splash_potion{Potion:\"netherdepthsupgrade:obsidianfish_strong_resistance\"}",
-    "item:minecraft:lingering_potion{Potion:\"rottencreatures:long_freeze\"}",
-    "item:minecraft:lingering_potion{Potion:\"rottencreatures:freeze\"}",
-    "item:minecraft:lingering_potion{Potion:\"rottencreatures:corrupted\"}",
-    "item:simplerecall:recall_potion"
+    "item:minecraft:lingering_potion{Potion:\"rottencreatures:long_freeze\"}"
   ],
   "craft_history": [
     "meadow:fire_log",
