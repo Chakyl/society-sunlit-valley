@@ -39,7 +39,7 @@ global.handleCobblemonDefeat = (e) => {
             `Your Gym win streak is now ${
               winningPlayer.persistentData.winStreak
             }! Trainer reward money increased by x${
-              winningPlayer.persistentData.winStreak * 1.25
+              (winningPlayer.persistentData.winStreak / 10) * 1.25
             } and difficulty increased!`
           )
         );
