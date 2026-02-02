@@ -437,7 +437,7 @@ LootJS.modifiers((e) => {
     weightedRemains.push(Item.of(remain).withChance(1))
   );
 
-  addWeightedMiningLootToAllOres(e, "moon_remains", 0.05, remains);
+  addWeightedMiningLootToAllOres(e, "moon_remains", 0.5, weightedRemains);
   addAdditionalGeodeRoll(e, "moon_geode_roll");
 
   e.addBlockLootModifier(overworldOres)

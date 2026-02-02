@@ -36,6 +36,61 @@
     }
   ],
   "lookup_history": [
+    "item:abyssaldecor:book_block",
+    {
+      "type": "item",
+      "id": "abyssaldecor:moldy_book_block",
+      "amount": 64
+    },
+    "item:abyssaldecor:bottomless_bag_of_cobblestone",
+    "item:abyssaldecor:raw_seabrass",
+    "item:abyssaldecor:seabrass_ingot",
+    {
+      "type": "item",
+      "id": "abyssaldecor:deepbronze_ingot",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "abyssaldecor:fever_blossom",
+      "amount": 64
+    },
+    "item:abyssaldecor:frosted_lamp",
+    "item:abyssaldecor:iron_barrier",
+    "item:abyssaldecor:gold_sconce",
+    "item:abyssaldecor:framed_crystallized_glowstone_pane",
+    "item:abyssaldecor:telescope",
+    "item:abyssaldecor:whitewood_pearly_glass",
+    "item:abyssaldecor:purple_wallpaper",
+    "item:abyssaldecor:orange_wallpaper",
+    "item:abyssaldecor:black_pearl",
+    {
+      "id": "abyssaldecor:spore_protection"
+    },
+    {
+      "type": "item",
+      "id": "abyssaldecor:cinnamon_stick",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "abyssaldecor:rough_jade",
+      "amount": 64
+    },
+    "item:abyssaldecor:nithing_pole",
+    "item:abyssaldecor:white_pearl",
+    {
+      "type": "item",
+      "id": "abyssaldecor:starlight",
+      "amount": 64
+    },
+    "item:society:invitation{type:{id:\"society:fisher\"}}",
+    {
+      "type": "item",
+      "id": "cluttered:art_nouveau_door",
+      "amount": 2
+    },
+    "item:minecraft:stripped_spruce_log",
     "item:minecraft:end_stone",
     "item:quark:hollow_oak_log",
     "item:ribbits:ribbit_fisherman_spawn_egg",
@@ -104,7 +159,6 @@
     "item:botania:pump",
     "item:society:mana_sprinkler",
     "item:create:brass_ingot",
-    "item:society:invitation{type:{id:\"society:banker\"}}",
     "item:classicpipes:flint_pipe",
     "item:classicpipes:oak_pipe",
     "item:etcetera:bismuth_ingot",
@@ -577,11 +631,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:brewery:pork_knuckle",
-      "item:farmersdelight:cooked_bacon",
-      "item:farm_and_charm:bacon_with_eggs",
-      "item:minecraft:cooked_porkchop",
       "item:candlelight:pork_ribs",
+      "item:brewery:pork_knuckle",
+      "item:minecraft:cooked_porkchop",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -592,9 +646,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/cauliflower",
+      "#item:forge:crops/zucchini",
       "#item:forge:crops/potato",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -1487,31 +1541,7 @@
     "item:society:sea_biscut",
     "item:society:relic_trove",
     "item:gamediscs:game_disc_blocktris",
-    "item:gamediscs:game_disc_tnt_sweeper",
-    "item:gamediscs:game_disc_slime",
-    "item:numismatics:sun",
-    "item:minecraft:enchanted_golden_apple",
-    "item:trials:trial_key",
-    "item:betterarcheology:guardian_fossil_body",
-    "item:moblassos:hostile_lasso",
-    "item:cluttered:floral_berry_wallpaper",
-    "item:dew_drop_farmland_growth:low_quality_fertilizer",
-    "item:species:ghoul_tongue",
-    "item:herbalbrews:flask",
-    "item:cluttered:chiseled_gold_block",
-    "item:quark:hollow_spruce_log",
-    "item:minecraft:stripped_oak_wood",
-    "item:minecraft:oak_pressure_plate",
-    "item:windswept:music_disc_bumblebee",
-    "item:dramaticdoors:tall_quark_ancient_door",
-    "item:minecraft:fermented_spider_eye",
-    "item:minecraft:potion{Potion:\"minecraft:harming\"}",
-    "item:minecraft:potion{Potion:\"minecraft:luck\"}",
-    "item:minecraft:potion{Potion:\"minecraft:long_weakness\"}",
-    "item:minecraft:potion{Potion:\"minecraft:strong_healing\"}",
-    "item:minecraft:potion{Potion:\"minecraft:weakness\"}",
-    "item:minecraft:splash_potion{Potion:\"netherdepthsupgrade:obsidianfish_strong_resistance\"}",
-    "item:minecraft:lingering_potion{Potion:\"rottencreatures:long_freeze\"}"
+    "item:gamediscs:game_disc_tnt_sweeper"
   ],
   "craft_history": [
     "meadow:fire_log",

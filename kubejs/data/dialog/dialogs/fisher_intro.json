@@ -21,6 +21,63 @@
 					"brightness": 1
 				}
 			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.fisher.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.fisher.intro.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "fisher.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.fisher.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.fisher.intro.0.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "fisher.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.fisher.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.fisher.intro.0.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "fisher.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
 		}
 	]
 }

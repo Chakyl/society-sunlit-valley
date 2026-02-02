@@ -310,18 +310,18 @@ ItemEvents.tooltip((tooltip) => {
       text.add(
         1,
         Text.translatable(
-          "block.society.fish_pond.fish.type",
-          `${item.nbt.get("type")}`
-        ).aqua()
+          "block.society.villager_home.type",
+          `${item.nbt.getString("type")}`
+        ).green()
       );
       text.add(
         2,
-        Text.translatable("block.society.fish_pond.description").gray()
+        Text.translatable("block.society.villager_home.description").gray()
       );
     } else {
       text.add(
         1,
-        Text.translatable("block.society.fish_pond.description").gray()
+        Text.translatable("block.society.villager_home.description").gray()
       );
     }
   });
