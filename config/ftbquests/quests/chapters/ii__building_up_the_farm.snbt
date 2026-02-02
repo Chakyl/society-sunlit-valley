@@ -33,6 +33,40 @@
 					item: "quark:seed_pouch"
 					type: "item"
 				}
+				{
+					id: "1990DE13813B0895"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_market"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Market House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_market"
+							owner: "worn"
+							owner_name: "EeveeBeby"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 1b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
 			]
 			subtitle: "Welcoming Leon"
 			tasks: [{
@@ -516,12 +550,48 @@
 			]
 			icon: "minecraft:cow_spawn_egg"
 			id: "6EEBD017839FF628"
-			rewards: [{
-				count: 4
-				id: "0BB5EA86664B3439"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "0BB5EA86664B3439"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "74D518051CBD8479"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_shepherd"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Shepherd House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_shepherd"
+							owner: "worn"
+							owner_name: "EeveeBeby"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 0b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "Welcoming Maria"
 			tasks: [{
@@ -805,12 +875,48 @@
 			]
 			icon: "unusualfishmod:raw_sneep_snorp"
 			id: "429FEBEC239B975F"
-			rewards: [{
-				count: 4
-				id: "2D10D4BE4AA7AEC5"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "2D10D4BE4AA7AEC5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "3D837298E5ABEE7F"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_fisher"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Fisher House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_fisher"
+							owner: "worn"
+							owner_name: "Nyxzerria"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 1b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "Welcoming Haruna"
 			tasks: [{

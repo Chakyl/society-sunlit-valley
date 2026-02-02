@@ -261,11 +261,47 @@
 			]
 			icon: "minecraft:bell"
 			id: "66D159252C70D5F2"
-			rewards: [{
-				id: "71BC141AEB9C3428"
-				item: "create:clipboard"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "71BC141AEB9C3428"
+					item: "create:clipboard"
+					type: "item"
+				}
+				{
+					id: "16213FA11FBA47CF"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_carpenter"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Carpenter House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_carpenter"
+							owner: "worn"
+							owner_name: "EeveeBeby"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 1b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Welcoming Ace"
 			tasks: [{
 				id: "44E951A44F1CF7F0"
@@ -786,11 +822,48 @@
 			]
 			icon: "society:pig_race_ticket"
 			id: "4DB169DA4B4CCFBA"
-			rewards: [{
-				id: "49E5FB8738AB8D25"
-				item: "whimsy_deco:gold_curio_cash_register"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "49E5FB8738AB8D25"
+					item: "whimsy_deco:gold_curio_cash_register"
+					type: "item"
+				}
+				{
+					id: "669F3B06BA7E112C"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_banker"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Banker House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_banker"
+							originPos: "x=103,y=-60,z=44"
+							owner: "worn"
+							owner_name: "Kanlamari"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 0b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Welcoming Caroline"
 			tasks: [{
 				id: "59E084CB052A33AC"
@@ -874,11 +947,48 @@
 			]
 			icon: "society:iron_upgrade_smithing_template"
 			id: "24C86673E1F57A3E"
-			rewards: [{
-				id: "0D734609104AE9A0"
-				item: "society:iron_upgrade_smithing_template"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0D734609104AE9A0"
+					item: "society:iron_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "7694A381C94D651D"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_blacksmith"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Blacksmith House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_blacksmith"
+							originPos: "x=102,y=-60,z=41"
+							owner: "worn"
+							owner_name: "Kanlamari"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 0b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Welcoming Aiden"
 			tasks: [{
 				id: "425CE445701BE19E"

@@ -36,54 +36,7 @@
     }
   ],
   "lookup_history": [
-    "item:abyssaldecor:book_block",
-    {
-      "type": "item",
-      "id": "abyssaldecor:moldy_book_block",
-      "amount": 64
-    },
-    "item:abyssaldecor:bottomless_bag_of_cobblestone",
-    "item:abyssaldecor:raw_seabrass",
-    "item:abyssaldecor:seabrass_ingot",
-    {
-      "type": "item",
-      "id": "abyssaldecor:deepbronze_ingot",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "abyssaldecor:fever_blossom",
-      "amount": 64
-    },
-    "item:abyssaldecor:frosted_lamp",
-    "item:abyssaldecor:iron_barrier",
-    "item:abyssaldecor:gold_sconce",
-    "item:abyssaldecor:framed_crystallized_glowstone_pane",
-    "item:abyssaldecor:telescope",
-    "item:abyssaldecor:whitewood_pearly_glass",
-    "item:abyssaldecor:purple_wallpaper",
-    "item:abyssaldecor:orange_wallpaper",
-    "item:abyssaldecor:black_pearl",
-    {
-      "id": "abyssaldecor:spore_protection"
-    },
-    {
-      "type": "item",
-      "id": "abyssaldecor:cinnamon_stick",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "abyssaldecor:rough_jade",
-      "amount": 64
-    },
-    "item:abyssaldecor:nithing_pole",
-    "item:abyssaldecor:white_pearl",
-    {
-      "type": "item",
-      "id": "abyssaldecor:starlight",
-      "amount": 64
-    },
+    "item:society:invitation{type:{id:\"society:banker\"}}",
     "item:society:invitation{type:{id:\"society:fisher\"}}",
     {
       "type": "item",
@@ -631,10 +584,10 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:minecraft:cooked_porkchop",
       "item:candlelight:pork_ribs",
       "item:brewery:pork_knuckle",
-      "item:minecraft:cooked_porkchop",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -654,8 +607,8 @@
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
