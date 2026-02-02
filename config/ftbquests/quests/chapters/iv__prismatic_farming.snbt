@@ -39,11 +39,11 @@
 		{
 			dependencies: ["0DC68C5CF6D82372"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description1}"
+				"Occasionally in the Skull Cavern you may come across a &6Trial Chamber&r."
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description2}"
+				"These dungeons are full of &6artifacts&r and &6relics&r, and can be found by using a key on a Trial Vault."
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description3}"
+				"Drinking an &6Ominous Bottle&r will give you better drops for fighting stronger mobs from the Trial Spawners."
 			]
 			id: "68915F617033BDF9"
 			rewards: [
@@ -62,9 +62,10 @@
 				icon: "trials:trial_key_ominous"
 				id: "238260076624C9BF"
 				structure: "trials:trials_chambers"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest20.task_5229593360924708958.title}"
+				title: "Find a Trial Chamber"
 				type: "structure"
 			}]
+			title: "Trial Chambers"
 			x: -3.0d
 			y: 12.0d
 		}
@@ -1067,9 +1068,9 @@
 			description: [
 				"The &6Advanced Wine Keg&r offers more complex but faster winemaking."
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description3}"
+				"It can produce wines far faster than its based version, but requires juice from grapes to speed up the fermentation process."
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description4}"
+				"&oIt can also be automated without the need for Sparkstone.&r"
 			]
 			icon: "vinery:fermentation_barrel"
 			id: "506B32619EB8477F"

@@ -21,7 +21,7 @@ if (global.datagenDialog) {
         ["What can I do for you today?"],
         ["Hello @i."],
         ["I could use a warm cup of coffee right now..."],
-        ["I'm often skeptical of new farmers are see try to take on ranching.", "Some of them have a rotten soul unfit to care for them."],
+        ["I'm often skeptical of new farmers I see try to take on ranching.", "Some of them have a rotten soul unfit to care for them."],
         ["I'm not sure about Leon... ", "I've never met someone so distant."],
         ["Always curious about where these new farmers will end up.", "Not everyone's cut out for the hard life of labor."],
         ["Everyone here is so friendly, it kinda weirds me out.", "No not like that! I'm just not used to it!"],

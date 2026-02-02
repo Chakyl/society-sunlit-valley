@@ -1890,7 +1890,7 @@ const registerTrades = (tradeArray, mult, keyPrefix) => {
   let resolvedValue;
   tradeArray.forEach((trade) => {
     resolvedValue = global.getConfiguredValue(trade.value, mult)
-    global.trades.set(`${keyPrefix ? keyPrefix : ""}${trade.item}`, {
+    global.trades.set(`${keyPrefix ? keyPrefix : ""}${keyPrefix ? trade.type : trade.item}`, {
       value: resolvedValue,
       multiplier: `shippingbin:${mult}_sell_multiplier`,
     });

@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### vPLAYTEST-7-1.0.0
+### vPLAYTEST-7-1.0.0-HOTFIX-1
 ^^^
 --- 
 - Updated to match Sunlit Valley 4.0 playtest
