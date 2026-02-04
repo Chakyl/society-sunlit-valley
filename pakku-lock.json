@@ -7618,6 +7618,9 @@
         },
         {
             "pakku_id": "j5fhLJpms8zTnyMd",
+            "pakku_links": [
+                "0xSUavwDIGUiuDdI"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "moogs-voyager-structures"
@@ -7631,29 +7634,34 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "mvs-4.1.4-1.20-forge.jar",
+                    "file_name": "MoogsVoyagerStructures-1.20-5.0.4.jar",
                     "mc_versions": [
                         "1.20.2",
-                        "1.20.3",
+                        "1.20.5",
                         "1.20.1",
                         "1.20",
-                        "1.20.4"
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "fabric",
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5671/867/mvs-4.1.4-1.20-forge.jar",
-                    "id": "5671867",
+                    "url": "https://edge.forgecdn.net/files/7517/593/MoogsVoyagerStructures-1.20-5.0.4.jar",
+                    "id": "7517593",
                     "parent_id": "656977",
                     "hashes": {
-                        "sha1": "e148cb091339042eee0a498b73b1dcc166f8ad78",
-                        "md5": "567ad9f30c85afbae363a0ea317f2970"
+                        "sha1": "c7c384d91180b7a37064504a9839fa6f14801224",
+                        "md5": "ed096d67348eea99fea71a983e97dd05"
                     },
-                    "required_dependencies": [],
-                    "size": 1325988,
-                    "date_published": "2024-08-28T17:25:06.950Z"
+                    "required_dependencies": [
+                        "1337167"
+                    ],
+                    "size": 2661209,
+                    "date_published": "2026-01-24T12:14:33.553Z"
                 }
             ]
         },
@@ -7904,6 +7912,75 @@
                     "required_dependencies": [],
                     "size": 826829,
                     "date_published": "2026-01-24T01:51:57.657Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "0xSUavwDIGUiuDdI",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "moogs-structure-lib",
+                "modrinth": "moogs-structure-lib"
+            },
+            "name": {
+                "curseforge": "Moog's Structure Lib (moogs_structures)",
+                "modrinth": "Moog's Structure Lib (moogs_structures)"
+            },
+            "id": {
+                "curseforge": "1337167",
+                "modrinth": "1oUDhxuy"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7238/548/moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar",
+                    "id": "7238548",
+                    "parent_id": "1337167",
+                    "hashes": {
+                        "sha1": "b7751ee5cc55e6a56bc4b7c1b79bb6e63727e8aa",
+                        "md5": "5a11ae3b12f4a85f3a7676fc89fe8030"
+                    },
+                    "required_dependencies": [],
+                    "size": 259848,
+                    "date_published": "2025-11-19T11:59:51.577Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/1oUDhxuy/versions/xtqWb6du/moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar",
+                    "id": "xtqWb6du",
+                    "parent_id": "1oUDhxuy",
+                    "hashes": {
+                        "sha512": "02723c0c03240c9a660c45168e89519daa8d251fcb5bcaff416a4cc2dd70da0525165edcc92a9ef0ffcfce198dcfe4dc4a523b9fc87f6655e8ff5d5cc07e7e05",
+                        "sha1": "b7751ee5cc55e6a56bc4b7c1b79bb6e63727e8aa"
+                    },
+                    "required_dependencies": [],
+                    "size": 259848,
+                    "date_published": "2025-11-19T11:59:50.767415Z"
                 }
             ]
         },
@@ -11503,7 +11580,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "splendid_slimes-0.18.0.jar",
+                    "file_name": "splendid_slimes-0.19.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11511,22 +11588,20 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/RptnuYO9/versions/exvvYhfZ/splendid_slimes-0.18.0.jar",
-                    "id": "exvvYhfZ",
+                    "url": "https://cdn.modrinth.com/data/RptnuYO9/versions/CRv0i3Y0/splendid_slimes-0.19.0.jar",
+                    "id": "CRv0i3Y0",
                     "parent_id": "RptnuYO9",
                     "hashes": {
-                        "sha512": "ed16bbd7c61f6d1a6f937860de40e7b031e4a3d81ae3c66bcfe6f86f2763476d1d6fb6e31247e87aba153101c46888975c5df4cc23e0ce95f863769cafa8f2a6",
-                        "sha1": "338564ce08c9ce02a452d96b26e2de9f4598b9c1"
+                        "sha512": "3cf6c5b1aaa94018066934005a0cc626e769addeb9ebe2281cafdc324b8ffa3f4760eb5fff9aa8a45fb169b1e38d40dd8fb882852bee48dffd6a7d4ce417e486",
+                        "sha1": "d93236ed68e74eb8f9a7e0e83f0ca1e00793b0e7"
                     },
-                    "required_dependencies": [
-                        "tCkE8p2N"
-                    ],
-                    "size": 490464,
-                    "date_published": "2026-01-26T01:01:47.709127Z"
+                    "required_dependencies": [],
+                    "size": 490310,
+                    "date_published": "2026-02-04T19:55:02.549961Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.18.0.jar",
+                    "file_name": "splendid_slimes-0.19.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11534,18 +11609,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7528/21/splendid_slimes-0.18.0.jar",
-                    "id": "7528021",
+                    "url": "https://edge.forgecdn.net/files/7576/624/splendid_slimes-0.19.0.jar",
+                    "id": "7576624",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "338564ce08c9ce02a452d96b26e2de9f4598b9c1",
-                        "md5": "f20fb45e9177b94e719518f7956f65e7"
+                        "sha1": "d93236ed68e74eb8f9a7e0e83f0ca1e00793b0e7",
+                        "md5": "ff43fd1514b24f16502aa9460b276f16"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 490464,
-                    "date_published": "2026-01-26T01:01:00.260Z"
+                    "size": 490310,
+                    "date_published": "2026-02-04T19:54:15.513Z"
                 }
             ]
         },

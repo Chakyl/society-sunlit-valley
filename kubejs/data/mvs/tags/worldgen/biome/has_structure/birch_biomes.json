@@ -1,0 +1,33 @@
+{
+  "replace": false,
+
+  "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+  "values": [
+    "minecraft:birch_forest",
+    "minecraft:forest",
+    {
+      "id": "byg:seasonal_birch_forest",
+      "required": false
+    },
+    {
+      "id": "byg:seasonal_birch_forest_hill",
+      "required": false
+    },
+    {
+      "id": "byg:temperate_grove",
+      "required": false
+    },
+    {
+      "id": "byg:howling_peaks",
+      "required": false
+    },
+    {
+      "id": "byg:aspen_forest",
+      "required": false
+    },
+    {
+      "id": "byg:zelkova_forest",
+      "required": false
+    }
+  ]
+}

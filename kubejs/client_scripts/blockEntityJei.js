@@ -366,7 +366,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.preservesJarRecipes.keys()).forEach((element) => {
@@ -375,7 +375,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.wineKegRecipes.keys()).forEach((element) => {
@@ -384,7 +384,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.deluxeWormFarmRecipes.keys()).forEach((element) => {
@@ -393,7 +393,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.cheesePressRecipes.keys()).forEach((element) => {
@@ -402,7 +402,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.agingCaskRecipes.keys()).forEach((element) => {
@@ -411,7 +411,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.ancientCaskRecipes.keys()).forEach((element) => {
@@ -420,7 +420,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.dehydratorRecipes.keys()).forEach((element) => {
@@ -429,7 +429,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.fishSmokerRecipes.keys()).forEach((element) => {
@@ -438,7 +438,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.baitMakerRecipes.keys()).forEach((element) => {
@@ -447,7 +447,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.mayonnaiseMachineRecipes.keys()).forEach((element) => {
@@ -456,7 +456,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.loomRecipes.keys()).forEach((element) => {
@@ -465,7 +465,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.crystalariumCrystals.keys()).forEach((element) => {
@@ -474,7 +474,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.mushroomLogRecipes.keys()).forEach((element) => {
@@ -498,7 +498,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   [
@@ -521,7 +521,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.oilMakerRecipes.keys()).forEach((element) => {
@@ -530,7 +530,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.tapperRecipes.keys()).forEach((element) => {
@@ -539,7 +539,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.tapperRecipes.keys()).forEach((element) => {
@@ -548,7 +548,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: recipe.output,
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
   Array.from(global.picklingRecipes.keys()).forEach((element) => {
@@ -557,7 +557,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: element,
       output: [recipe.pickle],
       time: recipe.time,
-      fluidData: recipe.fluidData,
+      fluidOutput: recipe.fluidOutput,
     });
   });
 });

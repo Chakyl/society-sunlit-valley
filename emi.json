@@ -33,9 +33,23 @@
         "id": "society:auto_tapper",
         "amount": 64
       }
+    },
+    {
+      "stack": "item:tanukidecor:antique_table"
     }
   ],
   "lookup_history": [
+    "item:minecraft:spruce_log",
+    "item:society:auto_tapper",
+    "item:whimsy_deco:phone",
+    "item:society:prismatic_shard",
+    "item:candlelight:cooking_pot",
+    "item:unusualfishmod:ripper_tooth",
+    "item:society:large_amethyst_milk",
+    "item:buzzier_bees:moobloom_spawn_egg",
+    "item:minecraft:oak_door",
+    "item:minecraft:spruce_wood",
+    "item:society:holy_symbol",
     "item:society:invitation{type:{id:\"society:banker\"}}",
     "item:society:invitation{type:{id:\"society:fisher\"}}",
     {
@@ -72,14 +86,8 @@
     "item:meadow:cheese_block",
     "item:meadow:warped_cheese_block",
     "item:society:large_warped_milk",
-    "item:society:large_amethyst_milk",
     "item:society:large_turkey_mayonnaise",
     "item:society:large_galliraptor_mayonnaise",
-    {
-      "type": "item",
-      "id": "society:auto_tapper",
-      "amount": 64
-    },
     "item:minecraft:pig_spawn_egg",
     "item:snowpig:snow_pig_spawn_egg",
     "item:atmospheric:currant",
@@ -192,7 +200,6 @@
     "item:minecraft:brewing_stand",
     "item:minecraft:enchanting_table",
     "item:vintagedelight:ghost_pepper_seeds",
-    "item:whimsy_deco:phone",
     "item:vintagedelight:organic_mash",
     "item:vintagedelight:apple_sauce_mason_jar",
     "item:vintagedelight:glow_berry_mason_jar",
@@ -223,7 +230,6 @@
     "item:society:truffle_oil",
     "item:society:flamingo_mayonnaise",
     "item:botania:overgrowth_seed",
-    "item:unusualfishmod:ripper_tooth",
     "item:crabbersdelight:clam",
     "item:society:aquamagical_dust",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
@@ -250,7 +256,6 @@
       "amount": 64
     },
     "item:society:bowl_of_soul",
-    "item:minecraft:oak_door",
     "item:society:mushroom_log",
     "item:minecraft:loom",
     "item:society:milk_pail",
@@ -504,7 +509,6 @@
     "item:atmospheric:cochineal_spawn_egg",
     "item:minecraft:bone_block",
     "item:autumnity:snail_spawn_egg",
-    "item:buzzier_bees:moobloom_spawn_egg",
     "item:minecraft:drowned_spawn_egg",
     "item:minecraft:donkey_spawn_egg",
     "item:minecraft:frog_spawn_egg",
@@ -584,11 +588,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
+      "item:farm_and_charm:bacon_with_eggs",
       "item:candlelight:pork_ribs",
-      "item:brewery:pork_knuckle",
       "item:farmersdelight:cooked_bacon",
+      "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -600,8 +604,8 @@
     "item:veggiesdelight:raw_vegetarian_patty",
     [
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/cauliflower",
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -628,7 +632,6 @@
     },
     "item:society:crystalarium",
     "item:oreganized:lead_block",
-    "item:society:prismatic_shard",
     {
       "type": "item",
       "id": "minecraft:ochre_froglight",
@@ -1009,7 +1012,6 @@
     "item:vintagedelight:pepper_jam_mason_jar",
     "item:vintagedelight:relish_mason_jar",
     "item:windswept:mutton_pie",
-    "item:minecraft:spruce_log",
     "item:beachparty:sandwaves",
     "item:numismatics:crown",
     "item:beautify:lamp_jar",

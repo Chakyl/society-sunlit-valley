@@ -57,7 +57,7 @@
 - Cheese is now an Artisan Product (from Farmer Product)
 - Farm animals no longer produce twice as much at max affection
 - Minty Slimes now eat Tubabacco, Orby Slimes now eat Dehydrated Products
-- Reworked unlockable shops. Master Cultivator trades are added to Market after 1 year of playtime. Mystical Botanist (now Wizard) unlocked after visiting the Nether. Exotic Trader (now trader) unlocked after visiting the Skull Cavern
+- Reworked unlockable shops. Master Cultivator trades are added to Market after 1 year of playtime. Witch (now Wizard) unlocked after visiting the Nether. Exotic Trader (now trader) unlocked after visiting the Skull Cavern
 - Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
 - Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
