@@ -608,7 +608,7 @@
   "tooltip.society.smart_shipping_bin.warn": "계좌가 없거나 잔고 상한에 도달하면 내용물을 판매할 때마다 코인을 뱉어냅니다.",
   "tooltip.society.removed_items": "삭제됨! 이 아이템을 가지고 있어서는 안됩니다...",
   "tooltip.society.cleavers": "몬스터에게서 요리 재료를 수확합니다",
-  "tooltip.society.invitation": "마을에 주민을 초대하고 전화기에서 해당 주민의 상점을 개방합니다.\n집 청사진을 처음 사용했을 때 받을 수 있습니다.",
+  "tooltip.society.invitation": "마을에 주민을 초대하고 전화기에서 해당 주민의 상점을 개방합니다.",
   "tooltip.society.ripper_tooth": "물고기 연못의 물고기들을 위협하여 현재 활성화된 퀘스트를 변경합니다.",
 
   "block.society.aging_cask.description": "긴 시간을 들여 가공품을 숙성합니다",
@@ -677,6 +677,8 @@
   "block.society.growth_obelisk.description": "매일 아침 7시에 주변 작물을 한 단계 성장시킵니다",
   "block.society.growth_obelisk.description.fuel": "매일 한 개의 스파크-그로우를 소모합니다",
   "block.society.juice_inserter.description": "와인통에 주스를 주입해 줍니다\n주입기의 탱크에 액체 상태의 주스를 넣어야합니다",
+  "block.society.mana_sprinkler.description": "주변의 마나 열매에 마나를 전송하고 물을 줍니다",
+  "block.society.mana_sprinkler.need_mana": "마나 공급기로 보타니아의 마나를 공급받아야 하지만, 마나 없이도 물은 줄 수 있습니다",
   "block.society.mana_milker.description": "주변의 가축에게서 젖을 짜냅니다",
   "block.society.prickly_can.description": "채소로 피클을 자동으로 만들고 아래에 있는 블록으로 내보냅니다",
   "block.society.prickly_can.description.warn": "증발기가 생성하는 소금과 인접해야 합니다",
@@ -703,6 +705,8 @@
   "block.society.moon_statue.moon_damage": "해골 광산에서 적을 공격하면 100의 피해를 가할 확률이 생깁니다.",
   "block.society.moon_statue.no_mastery": "축복을 받으려면 채광 마스터리가 필요합니다...",
   "block.society.moon_statue.already_taken": "이미 오늘의 축복을 받았습니다.",
+  "block.society.villager_home.type": "%s",
+  "block.society.villager_home.description": "주민을 마을로 이동시키고 주변을 집으로 지정합니다.\n다른 주민과 너무 가까이 설치할 수 없습니다.",
 
   "item.society.froggy_helm.description": "속에 커다란 혀가 들었습니다",
   "item.society.ribbit_drum.description": "멍청이 리빗이 두드리기 좋아하는 북",
