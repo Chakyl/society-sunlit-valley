@@ -39,6 +39,73 @@
     }
   ],
   "lookup_history": [
+    "item:minecraft:stripped_oak_log",
+    "item:create:industrial_iron_block",
+    "item:society:invitation{type:{id:\"society:carpenter\"}}",
+    "item:society:invitation{type:{id:\"society:fisher\"}}",
+    "item:society:invitation{type:{id:\"society:shepherd\"}}",
+    "item:society:invitation{type:{id:\"society:blacksmith\"}}",
+    "item:society:invitation{type:{id:\"society:banker\"}}",
+    "item:society:invitation{type:{id:\"society:market\"}}",
+    "item:numismatics:ancient_coin",
+    {
+      "type": "item",
+      "id": "dew_drop_farmland_growth:iron_sprinkler",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "society:pine_tar",
+      "amount": 2
+    },
+    "item:society:preserves_jar",
+    "item:meadow:fire_log",
+    {
+      "type": "item",
+      "id": "twigs:pebble",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "minecraft:raw_copper_block",
+      "amount": 25
+    },
+    {
+      "type": "item",
+      "id": "numismatics:cog",
+      "amount": 5
+    },
+    {
+      "type": "item",
+      "id": "minecraft:birch_slab",
+      "amount": 16
+    },
+    "item:society:tapper",
+    {
+      "type": "item",
+      "id": "society:earth_crystal",
+      "amount": 3
+    },
+    "item:meadow:wooden_bucket",
+    {
+      "type": "item",
+      "id": "minecraft:leaf_litter",
+      "amount": 13
+    },
+    "item:society:jagoite",
+    {
+      "type": "item",
+      "id": "minecraft:copper_block",
+      "amount": 7
+    },
+    "item:minecraft:wooden_axe{Damage:0}",
+    "item:wildernature:pelican_meat",
+    "item:create_central_kitchen:creative_tab_icon",
+    "item:minecraft:shears{CustomModelData:66614,Damage:0,display:{Lore:[\u0027[\"\",{\"text\":\"This is a retextured shears used to display Dew Drops icon on the creative tab in a Vanilla Friendly way. \",\"italic\":false,\"color\":\"gray\"}]\u0027,\u0027[\"\",{\"text\":\"If this looks wrong to you, install Bot\\\u0027s Lib on the client!\",\"italic\":false,\"color\":\"gray\"}]\u0027],Name:\u0027[\"\",{\"text\":\"Dew Drop Icon Item\",\"italic\":false}]\u0027}}",
+    "item:rehooked:red_hook",
+    "item:botania:mana_tablet{creative:1b,mana:500000}",
+    "item:domesticationinnovation:pet_bed_white",
+    "item:society:mana_sprinkler",
     "item:minecraft:spruce_log",
     "item:society:auto_tapper",
     "item:whimsy_deco:phone",
@@ -50,8 +117,6 @@
     "item:minecraft:oak_door",
     "item:minecraft:spruce_wood",
     "item:society:holy_symbol",
-    "item:society:invitation{type:{id:\"society:banker\"}}",
-    "item:society:invitation{type:{id:\"society:fisher\"}}",
     {
       "type": "item",
       "id": "cluttered:art_nouveau_door",
@@ -118,7 +183,6 @@
     "item:botania:rune_gluttony",
     "item:farmlife:domestic_tribull_spawn_egg",
     "item:botania:pump",
-    "item:society:mana_sprinkler",
     "item:create:brass_ingot",
     "item:classicpipes:flint_pipe",
     "item:classicpipes:oak_pipe",
@@ -208,7 +272,6 @@
     "item:nethervinery:lava_fizz",
     "item:nethervinery:ghastly_grenache",
     "item:nethervinery:blazewine_pinot",
-    "item:society:tapper",
     "item:society:raisins",
     "item:society:mossberry_preserves",
     "item:society:wild_berries_preserves",
@@ -286,7 +349,6 @@
       "amount": 47
     },
     "item:society:sparkpod_seed",
-    "item:society:earth_crystal",
     {
       "type": "item",
       "id": "quark:dragon_scale",
@@ -312,11 +374,6 @@
     "item:society:women_who_run_with_the_plushies",
     "item:society:prize_machine",
     "item:society:prize_ticket",
-    {
-      "type": "item",
-      "id": "meadow:fire_log",
-      "amount": 3
-    },
     {
       "type": "item",
       "id": "verdantvibes:bracket_mushroom",
@@ -346,13 +403,7 @@
     "item:everycomp:fs/cluttered/willow_4",
     "item:portable_blueprints:scanner",
     "item:portable_blueprints:tablet",
-    {
-      "type": "item",
-      "id": "minecraft:leaf_litter",
-      "amount": 34
-    },
     "item:etcetera:waxed_crumbling_stone",
-    "item:minecraft:wooden_axe{Damage:0}",
     "item:minecraft:crafting_table",
     "item:society:mana_fruit_juice",
     "item:minecraft:spruce_planks",
@@ -385,7 +436,6 @@
     "item:society:the_red_and_the_black",
     "item:society:recycled_core",
     "item:society:mystic_syrup",
-    "item:domesticationinnovation:pet_bed_white",
     "item:society:gray_anatomy",
     "item:society:dried_tubabacco_leaf",
     "item:tanukidecor:diy_workbench",
@@ -440,7 +490,6 @@
     "item:netherdepthsupgrade:obsidianfish{quality_food:{effects:[],quality:3}}",
     "item:society:sparkstone_recycler",
     "item:society:auto_grabber",
-    "item:numismatics:ancient_coin",
     {
       "type": "item",
       "id": "society:furniture_box",
@@ -465,7 +514,6 @@
       "id": "aquaculture:neptunium_nugget",
       "amount": 6
     },
-    "item:meadow:wooden_bucket",
     "item:society:fish_pond",
     "item:society:sparkstone_block",
     "item:society:artifact_trove",
@@ -589,9 +637,9 @@
     "item:veggiesdelight:zucchini_quiche",
     [
       "item:minecraft:cooked_porkchop",
+      "item:farmersdelight:cooked_bacon",
       "item:farm_and_charm:bacon_with_eggs",
       "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -603,16 +651,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -638,8 +686,6 @@
       "amount": 8
     },
     "item:vinery:magnetic_wine",
-    "item:society:preserves_jar",
-    "item:minecraft:copper_block",
     "item:minecraft:coal_block",
     "item:farmersdelight:rich_soil",
     {
@@ -769,7 +815,6 @@
     "item:veggiesdelight:sweet_potato_cupcake",
     "item:dew_drop_farmland_growth:diamond_sprinkler",
     "item:dew_drop_farmland_growth:gold_sprinkler",
-    "item:dew_drop_farmland_growth:iron_sprinkler",
     "item:minecraft:birch_planks",
     "item:quark:vertical_birch_planks",
     {
@@ -802,11 +847,6 @@
     "item:society:cheese_press",
     "item:meadow:cheese_rack",
     "item:meadow:cheese_form",
-    {
-      "type": "item",
-      "id": "society:pine_tar",
-      "amount": 45
-    },
     "item:minecraft:hopper",
     {
       "type": "item",
@@ -1060,7 +1100,6 @@
     "item:society:petrified_slime",
     "item:everycomp:q/autumnity/stripped_maple_post",
     "item:everycomp:q/autumnity/maple_ladder",
-    "item:society:jagoite",
     "item:society:limestone_pebble",
     "item:society:geode",
     "item:betterarcheology:bomb",
@@ -1214,7 +1253,6 @@
       "amount": 3
     },
     "item:create:tree_fertilizer",
-    "item:twigs:pebble",
     "item:numismatics:sprocket",
     "item:splendid_slimes:plort_rippit",
     "item:society:large_buffalo_milk",
@@ -1306,7 +1344,6 @@
     "item:minecraft:wet_sponge",
     "item:minecraft:sponge",
     "item:vintagedelight:honey_mason_jar",
-    "item:minecraft:stripped_oak_log",
     "item:botania:black_lotus",
     "item:botania:blacker_lotus",
     {
@@ -1332,7 +1369,6 @@
     "item:copycats:copycat_vertical_stairs",
     "item:copycats:copycat_stairs",
     "item:rehooked:diamond_hook",
-    "item:rehooked:red_hook",
     "item:society:grimwood_supply_crate",
     {
       "type": "item",
@@ -1499,13 +1535,17 @@
     "item:gamediscs:game_disc_tnt_sweeper"
   ],
   "craft_history": [
+    "minecraft:kjs/dew_drop_farmland_growth_iron_sprinkler",
+    "minecraft:kjs/society_preserves_jar",
     "meadow:fire_log",
+    "minecraft:raw_copper_block",
+    "minecraft:kjs/society_tapper",
+    "meadow:wooden_bucket",
     "minecraft:kjs/society_auto_grabber",
     "minecraft:kjs/numismatics_ancient_coin",
     "minecraft:kjs/society_mushroom_log",
     "minecraft:kjs/society_sunlit_pearl",
     "aquaculture:neptunium_ingot_from_nuggets",
-    "meadow:wooden_bucket",
     "minecraft:kjs/society_bubble_totem",
     "minecraft:netherite_ingot",
     "create:crafting/kinetics/white_seat",
@@ -1515,7 +1555,6 @@
     "minecraft:kjs/society_crystalarium",
     "oreganized:lead_block",
     "minecraft:fletching_table",
-    "minecraft:kjs/society_preserves_jar",
     "minecraft:copper_block",
     "minecraft:coal_block",
     "minecraft:kjs/farmersdelight_rich_soil",
@@ -1559,7 +1598,6 @@
     "sewingkit:storing_sewing_station",
     "quark:tweaks/crafting/utility/chests/oak_chest_wood",
     "quark:tweaks/crafting/utility/chests/mixed_chest_wood",
-    "minecraft:kjs/society_tapper",
     "minecraft:kjs/society_earth_crystal",
     "splendid_slimes:slime_inspector",
     "minecraft:diamond_block",
@@ -1597,7 +1635,6 @@
     "minecraft:stone_bricks",
     "minecraft:oak_slab",
     "minecraft:kjs/society_magic_bulb",
-    "minecraft:kjs/dew_drop_farmland_growth_iron_sprinkler",
     "minecraft:cartography_table"
   ],
   "recipe_defaults": {

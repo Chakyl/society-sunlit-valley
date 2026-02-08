@@ -30,7 +30,6 @@ ServerEvents.tags("entity_type", (e) => {
     "minecraft:axolotl",
     "wildernature:hedgehog",
     "crittersandcompanions:ferret",
-    "crittersandcompanions:shima_enaga",
   ];
   petAnimals.forEach((animal) => {
     e.add("society:pet_animal", animal);

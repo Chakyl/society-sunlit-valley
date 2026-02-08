@@ -1471,7 +1471,6 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     [
       "society:the_red_and_the_black",
-      "domesticationinnovation:pet_bed_white",
       "domesticationinnovation:drum",
       "domesticationinnovation:wayward_lantern",
       "domesticationinnovation:collar_tag",

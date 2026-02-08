@@ -10,6 +10,7 @@
       "request": { "count": 2, "item": "numismatics:crown" },
       "offer": { "count": 1, "item": "bakery:strawberry_cake" },      
       "numismatics_cost": 1024,
+      "limit": 4,
       "trade_id": "wandering_baker_strawberry_cake"
     },
     {
@@ -17,24 +18,28 @@
       
       "offer": { "count": 1, "item": "bakery:chocolate_cake" },      
       "numismatics_cost": 2048,
+      "limit": 4,
       "trade_id": "wandering_baker_chocolate_cake"
     },
     {
       "request": { "count": 1, "item": "numismatics:cog" },
       "offer": { "count": 1, "item": "bakery:sweetberry_cake" },      
       "numismatics_cost": 512,
+      "limit": 4,
       "trade_id": "wandering_baker_sweetberry_cake"
     },
     {
       "request": { "count": 4, "item": "numismatics:crown" },
       "offer": { "count": 1, "item": "atmospheric:yucca_gateau" },      
       "numismatics_cost": 2048,
+      "limit": 4,
       "trade_id": "wandering_baker_yucca_gateau"
     },
     {
       "request": { "count": 4, "item": "numismatics:cog" },
       "offer": { "count": 1, "item": "bakery:chocolate_gateau" },      
       "numismatics_cost": 256,
+      "limit": 4,
       "trade_id": "wandering_baker_chocolate_gateau"
     },
     {
@@ -54,22 +59,26 @@
     },
     {
       "request": { "count": 2, "item": "society:prismatic_shard" },
-      "offer": { "count": 1, "item": "pamhc2trees:cinnamon_sapling" },      
+      "offer": { "count": 1, "item": "pamhc2trees:cinnamon_sapling" },   
+      "limit": 1,   
       "trade_id": "wandering_baker_cinnamon_sapling"
     },
     {
       "request": { "count": 3, "item": "society:prismatic_shard" },
       "offer": { "count": 1, "item": "pamhc2trees:pawpaw_sapling" },      
+      "limit": 1,
       "trade_id": "wandering_baker_pawpaw_sapling"
     },
     {
       "request": { "count": 3, "item": "society:prismatic_shard" },
       "offer": { "count": 1, "item": "pamhc2trees:hazelnut_sapling" },      
+      "limit": 1,
       "trade_id": "wandering_baker_prismatic_shard"
     },
     {
       "request": { "count": 8, "item": "society:prismatic_shard" },
       "offer": { "count": 1, "item": "pamhc2trees:lemon_sapling" },
+      "limit": 1,
       "trade_id": "wandering_lemon_sapling"
 
     }

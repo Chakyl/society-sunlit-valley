@@ -44,7 +44,7 @@ StartupEvents.registry("block", (e) => {
       const mature = String(block.properties.get("mature")) === "true";
       const facing = block.properties.get("facing");
 
-      if (click.player.isFake()) click.cancel();
+      if (click.player.isFake()) return;
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
         if (mature) {

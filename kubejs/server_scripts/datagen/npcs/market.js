@@ -168,7 +168,7 @@ if (global.datagenDialog) {
         "I do love a gift! Even if its not quite one I want!",
         "I'm not really sure how to react to this but thank you for the kindness.",
         "I have plenty random objects for still life at my shop, but thank you!",
-        "Eventually if you keep giving me things you'll find one I actually like!",
+        "If you keep giving me things you'll eventually find one I actually like!",
         ["You can do better!", "Life is lived in the details, and you need to pay more attention!"],
         "Well, it is a gift.",
         "Rough season at the farm?",

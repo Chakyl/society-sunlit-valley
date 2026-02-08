@@ -65,7 +65,7 @@ StartupEvents.registry("block", (event) => {
         `5x5`
       ).green())
       item.tooltip(
-        Text.translatable("society.mana_sprinkler.need_mana").aqua()
+        Text.translatable("block.society.mana_sprinkler.need_mana").aqua()
       );
       item.modelJson({
         parent: "society:block/kubejs/mana_sprinkler",
@@ -73,27 +73,9 @@ StartupEvents.registry("block", (event) => {
     })
     .model("society:block/kubejs/mana_sprinkler")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 1);
       blockInfo.serverTick(20, 0, (entity) => {
         global.manaSprinklerScan(entity, 3);
       }),
-        blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
-      );
       blockInfo.attachCapability(
         BotaniaCapabilityBuilder.MANA.blockEntity()
           .canReceiveManaFromBurst((be) => {
