@@ -39,6 +39,7 @@
     }
   ],
   "lookup_history": [
+    "item:society:feeding_trough",
     "item:minecraft:stripped_oak_log",
     "item:create:industrial_iron_block",
     "item:society:invitation{type:{id:\"society:carpenter\"}}",
@@ -583,7 +584,6 @@
     "item:society:juice_inserter",
     "item:society:growth_obelisk",
     "item:society:fish_pond_basket",
-    "item:society:feeding_trough",
     "item:society:fish_smoker",
     "item:society:mana_milker",
     "item:society:fire_quartz",
@@ -636,11 +636,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:minecraft:cooked_porkchop",
       "item:farmersdelight:cooked_bacon",
-      "item:farm_and_charm:bacon_with_eggs",
-      "item:candlelight:pork_ribs",
       "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:minecraft:cooked_porkchop",
+      "item:candlelight:pork_ribs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -651,9 +651,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
+      "#item:forge:crops/cauliflower",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
