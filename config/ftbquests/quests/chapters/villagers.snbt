@@ -347,6 +347,37 @@
 			x: 7.0d
 			y: 9.0d
 		}
+		{
+			dependencies: ["52F1DCA9462F825F"]
+			description: [
+				"{ftbquests.chapter.iv__prismatic_farming.quest39.description1}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.quest39.description2}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.quest39.description3}"
+			]
+			id: "0327B9F8868AE76E"
+			rewards: [
+				{
+					id: "01C01B02F5862F14"
+					item: "ribbits:ribbit_sorcerer_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "71F63FEF329DD094"
+					item: "ribbits:ribbit_nitwit_spawn_egg"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3AB6CFFBFABEA7A0"
+				item: "society:ribbit_hut"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest39.title}"
+			x: 6.0d
+			y: 10.0d
+		}
 	]
 	title: "{ftbquests.chapter.villagers.title}"
 }

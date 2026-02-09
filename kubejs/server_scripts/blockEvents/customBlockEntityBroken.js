@@ -15,6 +15,10 @@ const handleBrokenMachine = (block) => {
     currentRecipe.output.forEach((element) => {
       block.popItem(element);
     });
+    if (
+      block.id == "society:ancient_cask" &&
+      block.properties.get("upgraded").toLowerCase() == "true"
+    ) block.popItem(Item.of(`3x ${Item.of(`${currentRecipe.output[0]}`).id}`));
   } else if (!["society:charging_rod", "society:tapper", "society:mushroom_log"].includes(block.id)) {
     let stage = Number(nbt.data.stage);
     if (

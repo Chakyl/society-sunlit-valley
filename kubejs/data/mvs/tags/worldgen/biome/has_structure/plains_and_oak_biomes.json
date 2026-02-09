@@ -1,0 +1,37 @@
+{
+  "replace": false,
+
+  "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+  "values": [
+    "minecraft:forest",
+    "minecraft:forest",
+    {
+      "id": "biomesoplenty:bamboo_grove",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:boreal_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:cherry_blossom_grove",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:lavender_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_woods",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:seasonal_forest",
+      "required": false
+    },    
+	{
+      "id": "biomesoplenty:orchard",
+      "required": false
+    }
+  ]
+}

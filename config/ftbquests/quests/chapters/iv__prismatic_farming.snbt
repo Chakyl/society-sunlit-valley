@@ -173,29 +173,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["6412C4FB8294A6E2"]
-			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest7.description1}"
-				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest7.description2}"
-			]
-			id: "283AF4C18CF3880D"
-			rewards: [{
-				id: "6696DACF68498C87"
-				item: "numismatics:crown"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1436D5607671A4CA"
-				item: "candlelight:cooking_pot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest7.title}"
-			x: -11.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["6412C4FB8294A6E2"]
 			description: [
 				"{ftbquests.chapter.iv__prismatic_farming.quest8.description1}"
 				""
@@ -211,70 +188,63 @@
 				table_id: 6097669691163803424L
 				type: "choice"
 			}]
-			tasks: [
-				{
-					id: "2E54E4D447F32B2E"
-					item: "minecraft:fletching_table"
-					type: "item"
-				}
-				{
-					id: "67FE1BE1B3199D1B"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "society:sea_biscut"
-								}
-								{
-									Count: 1b
-									id: "society:broken_clock"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_cog"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_roe"
-								}
-								{
-									Count: 1b
-									id: "society:infinity_worm"
-								}
-								{
-									Count: 1b
-									id: "society:frosted_tip"
-								}
-								{
-									Count: 1b
-									id: "society:inserter"
-								}
-								{
-									Count: 1b
-									id: "society:cordycep"
-								}
-								{
-									Count: 1b
-									id: "society:black_opal"
-								}
-								{
-									Count: 1b
-									id: "society:stone_hand"
-								}
-								{
-									Count: 1b
-									id: "society:tiny_gnome"
-								}
-							]
-						}
+			tasks: [{
+				id: "67FE1BE1B3199D1B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "society:sea_biscut"
+							}
+							{
+								Count: 1b
+								id: "society:broken_clock"
+							}
+							{
+								Count: 1b
+								id: "society:ancient_cog"
+							}
+							{
+								Count: 1b
+								id: "society:ancient_roe"
+							}
+							{
+								Count: 1b
+								id: "society:infinity_worm"
+							}
+							{
+								Count: 1b
+								id: "society:frosted_tip"
+							}
+							{
+								Count: 1b
+								id: "society:inserter"
+							}
+							{
+								Count: 1b
+								id: "society:cordycep"
+							}
+							{
+								Count: 1b
+								id: "society:black_opal"
+							}
+							{
+								Count: 1b
+								id: "society:stone_hand"
+							}
+							{
+								Count: 1b
+								id: "society:tiny_gnome"
+							}
+						]
 					}
-					title: "{ftbquests.chapter.iv__prismatic_farming.quest8.task_7493457486177475867.title}"
-					type: "item"
 				}
-			]
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest8.task_7493457486177475867.title}"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.iv__prismatic_farming.quest8.title}"
 			x: -12.0d
 			y: 14.5d
@@ -1014,54 +984,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["6412C4FB8294A6E2"]
-			description: ["{ftbquests.chapter.iv__prismatic_farming.quest38.description1}"]
-			id: "0C32D3E205443F0F"
-			rewards: [{
-				id: "3E9C4B4AB7D540B2"
-				item: "society:tanuki_leaf"
-				type: "item"
-			}]
-			tasks: [{
-				id: "401197E781DCCDC8"
-				item: "beautify:botanist_workbench"
-				type: "item"
-			}]
-			x: -13.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["0C32D3E205443F0F"]
-			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest39.description1}"
-				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest39.description2}"
-				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest39.description3}"
-			]
-			id: "4AAC2F98960E49A7"
-			rewards: [
-				{
-					id: "0055FC250B11E0A0"
-					item: "ribbits:ribbit_sorcerer_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "7848173096FA0405"
-					item: "ribbits:ribbit_nitwit_spawn_egg"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "63EB3001225261A5"
-				item: "society:ribbit_hut"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest39.title}"
-			x: -14.0d
-			y: 15.0d
-		}
-		{
 			dependencies: ["38AC25E172172654"]
 			description: [
 				"The &6Advanced Wine Keg&r offers more complex but faster winemaking."
@@ -1704,7 +1626,7 @@
 				""
 				"This is especially important in multiplayer servers!"
 			]
-			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			icon: "refinedstorage:controller"
 			id: "15061E71D3F55AE8"
 			rewards: [

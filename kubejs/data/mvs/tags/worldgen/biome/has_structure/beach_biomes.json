@@ -1,0 +1,16 @@
+{
+  "replace": false,
+
+  "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+  "values": [
+    "#minecraft:is_beach",
+    {
+      "id": "byg:rainbow_beach",
+      "required": false
+    },
+    {
+      "id": "byg:dacite_shore",
+      "required": false
+    }
+  ]
+}

@@ -512,14 +512,18 @@ global.handleFishPondTick = (tickEvent) => {
           },
         });
         block.setEntityData(nbt);
-      } else if (population !== max_population) {
+      } else if (population < max_population) {
         successParticles(level, block);
         level.server.runCommandSilent(
           `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`,
         );
         nbt.merge({ data: { population: increaseStage(population) } });
         block.setEntityData(nbt);
+      } else if (population > max_population) {
+        nbt.merge({ data: { population: max_population } });
+        block.setEntityData(nbt);
       }
+      
       if (population === max_population && non_native_fish > 0) {
         nbt.merge({
           data: { non_native_fish: decreaseStage(non_native_fish) },

@@ -4,7 +4,9 @@
   "texture": "minecraft:textures/block/light_blue_glazed_terracotta",
   "entity": "minecraft:wandering_trader",
   "hidden_from_selector": true,
-  "jei_catalyst": { "item": "minecraft:wandering_trader_spawn_egg" },
+  "jei_catalyst": {
+    "item": "minecraft:wandering_trader_spawn_egg"
+  },
   "trades": [
     {
       "offer": {
@@ -15,6 +17,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "limit": 4,
       "numismatics_cost": 2048,
       "trade_id": "wanderer_yard_work_yearly"
     },
@@ -27,6 +30,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "limit": 4,
       "numismatics_cost": 2048,
       "trade_id": "wanderer_husbandry_hourly"
     },
@@ -39,6 +43,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "limit": 4,
       "numismatics_cost": 2048,
       "trade_id": "wanderer_mining_monthly"
     },
@@ -51,6 +56,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "limit": 4,
       "numismatics_cost": 2048,
       "trade_id": "wanderer_wet_weekly"
     },
@@ -63,6 +69,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "limit": 4,
       "numismatics_cost": 2048,
       "trade_id": "wanderer_combat_quarterly"
     }
@@ -81,6 +88,7 @@
             "item": "numismatics:crown",
             "count": 6
           },
+          "limit": 4,
           "numismatics_cost": 3072,
           "trade_id": "wanderer_book_of_stars"
         },
@@ -304,6 +312,7 @@
             "item": "numismatics:cog",
             "count": 1
           },
+          "limit": 4,
           "numismatics_cost": 64,
           "trade_id": "wanderer_globe"
         },
@@ -317,6 +326,7 @@
             "item": "numismatics:crown",
             "count": 1
           },
+          "limit": 4,
           "numismatics_cost": 512,
           "trade_id": "wanderer_antique_ink"
         },
@@ -330,6 +340,7 @@
             "item": "numismatics:cog",
             "count": 4
           },
+          "limit": 4,
           "numismatics_cost": 256,
           "trade_id": "wanderer_furniture_box"
         },
@@ -343,6 +354,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 4,
           "numismatics_cost": 128,
           "trade_id": "wanderer_hatbag_uncommon"
         },
@@ -355,6 +367,7 @@
             "item": "numismatics:crown",
             "count": 4
           },
+          "limit": 4,
           "numismatics_cost": 2048,
           "trade_id": "wanderer_hatbag_rare"
         },
@@ -367,6 +380,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_cash_register"
         },
@@ -379,6 +393,7 @@
             "item": "numismatics:sun",
             "count": 4
           },
+          "limit": 1,
           "numismatics_cost": 16384,
           "trade_id": "wanderer_gatcha_machine"
         },
@@ -396,6 +411,7 @@
             "count": 1,
             "priceModifier": 0
           },
+          "limit": 1,
           "numismatics_cost": 16384,
           "trade_id": "wanderer_slot_machine"
         },
@@ -408,6 +424,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_terrarium"
         },
@@ -420,6 +437,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_copper_fish_tank"
         },
@@ -432,6 +450,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_iron_fish_tank"
         },
@@ -444,6 +463,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_telescope"
         },
@@ -456,6 +476,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_gramophone"
         },
@@ -468,6 +489,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_tool_box"
         },
@@ -480,6 +502,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_sewing_kit"
         },
@@ -492,6 +515,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_explorers_box"
         },
@@ -504,6 +528,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_pells"
         },
@@ -516,6 +541,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_blueprints"
         },
@@ -528,6 +554,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_boat_in_a_jar"
         },
@@ -540,6 +567,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_display"
         },
@@ -552,6 +580,7 @@
             "item": "numismatics:crown",
             "count": 4
           },
+          "limit": 1,
           "numismatics_cost": 2048,
           "trade_id": "wanderer_canvas"
         },
@@ -564,6 +593,7 @@
             "item": "numismatics:cog",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 128,
           "trade_id": "wanderer_clock_block"
         },
@@ -576,6 +606,7 @@
             "item": "numismatics:crown",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 1024,
           "trade_id": "wanderer_iron_chimes"
         },
@@ -600,6 +631,7 @@
             "item": "numismatics:crown",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 1024,
           "trade_id": "wanderer_copper_chimes"
         },
@@ -612,6 +644,7 @@
             "item": "numismatics:crown",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 1024,
           "trade_id": "wanderer_carved_bamboo_chimes"
         },
@@ -624,6 +657,7 @@
             "item": "numismatics:crown",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 1024,
           "trade_id": "wanderer_amethyst_chimes"
         },
@@ -636,6 +670,7 @@
             "item": "numismatics:crown",
             "count": 2
           },
+          "limit": 1,
           "numismatics_cost": 1024,
           "trade_id": "wanderer_glass_bells"
         }

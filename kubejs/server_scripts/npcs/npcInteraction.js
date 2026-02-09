@@ -38,7 +38,7 @@ ItemEvents.entityInteracted((e) => {
             player.persistentData.npcData[npcId] = {
                 friendship: 0,
                 dayLastChatted: -1,
-                dayLastGifted: -1
+                dayLastGifted: -4
             }
             server.runCommandSilent(
                 `dialog ${target.getUuid()} show ${player.username} ${npcId}_intro`

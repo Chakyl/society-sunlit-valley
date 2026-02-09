@@ -1,0 +1,18 @@
+{
+  "replace": false,
+
+  "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+  "values": [
+    "#minecraft:is_jungle",
+    "atmospheric:rainforest",
+    "atmospheric:rainforest_basin",
+    {
+      "id": "byg:guiana_shield",
+      "required": false
+    },
+    {
+      "id": "byg:jacaranda_forest",
+      "required": false
+    }
+  ]
+}

@@ -167,7 +167,7 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"Wine can be made using a &6Fermentation Barrel&r. This is a lengthy process, but quite profitable."
+				"Wine can be made using a &6Advanced Wine Keg&r. This is a lengthy process, but quite profitable."
 				""
 				"Wines also have special effects that improve overtime as the wine exists in the world."
 				""
@@ -1162,7 +1162,7 @@
 		{
 			dependencies: ["18EB59F2591BAD51"]
 			description: [
-				"&6Fermentation Barrels&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				"&6Advanced Wine Kegs&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
 				""
 				"Recipes can use the following juices:"
 				""
@@ -1170,7 +1170,7 @@
 				"- &cCrimson&r/&aWarped&r grape juice"
 				"- &eApple Juice&r (made using an Apple Press)"
 				""
-				"Juices are inserted in the top left slot of the Fermentation Barrel."
+				"Juices are inserted in the top left slot of the Advanced Wine Keg."
 			]
 			icon: "vinery:red_grapejuice"
 			id: "180411EF1F7649DD"
@@ -1210,7 +1210,7 @@
 						]
 					}
 				}
-				title: "Any Fermentation Barrel juice"
+				title: "Any Advanced Wine Keg juice"
 				type: "item"
 			}]
 			title: "Juicing up the Wine"

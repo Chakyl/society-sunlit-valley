@@ -21,7 +21,7 @@ ItemEvents.entityInteracted((e) => {
           // Text.translatable("society.husbandry.pet.max_affection", name).toJson(),
           `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:20}`, 
           40, 
-          Text.translatable("society.husbandry.peckish").toJson()
+          Text.translatable("society.husbandry.pet.max_affection").toJson()
         )
       );
 

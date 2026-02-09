@@ -164,7 +164,7 @@
 		{
 			dependencies: ["6412C4FB8294A6E2"]
 			description: [
-				"The &6Exotic Trader&r villager's workstation can be crafted with a &dPrismatic Shard&r."
+				"The &6Trader&r villager can be called over the phone after visting the Skull Cavern."
 				""
 				"It will trade various farm items for Machine upgrades. These upgrades add special effects when applied to the machine."
 				""
@@ -249,7 +249,7 @@
 		{
 			dependencies: ["41C453E806763C4F"]
 			description: [
-				"Getting to the bottom of the &6Skull Cavern&r can be a challenge. &6Magic Rope&r can be obtained from the Exotic Trader to instantly teleport you to the next layer down. "
+				"Getting to the bottom of the &6Skull Cavern&r can be a challenge. &6Magic Rope&r can be obtained from the Trader to instantly teleport you to the next layer down. "
 				""
 				"It can also be crafted into a &6Magic Tunnel&r, which teleports you to adjacent caves."
 			]
@@ -984,7 +984,7 @@
 		}
 		{
 			dependencies: ["6412C4FB8294A6E2"]
-			description: ["The &6Mystical Botanist&r villager sells expensive but incredibly useful magic items for your farm."]
+			description: ["The &6Witch&r villager sells expensive but incredibly useful magic items for your farm."]
 			id: "0C32D3E205443F0F"
 			rewards: [{
 				id: "3E9C4B4AB7D540B2"
@@ -1002,7 +1002,7 @@
 		{
 			dependencies: ["0C32D3E205443F0F"]
 			description: [
-				"Once the Community Center is complete, excluding the Abandoned Farm, the &6Mystical Botanist&r villager will sell you a &6Ribbit Hut&r!"
+				"Once the Community Center is complete, excluding the Abandoned Farm, the &6Witch&r villager will sell you a &6Ribbit Hut&r!"
 				""
 				"This building houses Ribbits that can use their powerful magic to harvest crops in a large area around it without any upkeep!"
 				""
@@ -1087,7 +1087,7 @@
 				"- &cCrimson&r/&aWarped&r grape juice"
 				"- &eApple Juice&r (made using an Apple Press)"
 				""
-				"Juices are inserted in the top left slot of the Fermentation Barrel."
+				"Juices are inserted in the top left slot of the Advanced Wine Keg."
 			]
 			icon: "vinery:red_grapejuice"
 			id: "094497558E9DB19C"
@@ -1127,7 +1127,7 @@
 						]
 					}
 				}
-				title: "Any Fermentation Barrel juice"
+				title: "Any Advanced Wine Keg juice"
 				type: "item"
 			}]
 			title: "Juicing up the Wine"

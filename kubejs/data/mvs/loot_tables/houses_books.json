@@ -122,6 +122,20 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 3,
+          "name": "simplerecall:recall_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 4,
           "functions": [
             {

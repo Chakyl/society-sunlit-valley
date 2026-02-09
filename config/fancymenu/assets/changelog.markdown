@@ -134,7 +134,6 @@
 - Renamed Vinery Lattices to Grapevine Lattice
 - Renamed Grape Bushes to wild grapes and disabled their growth
 - Fixed Minisheep not counting for Sacrificial Lamb skill
-- Fixed Strawberries having vegetable tag
 - Fixed Phone having normal recipe
 - Fixed Bamboo Galley not being craftable
 - Fixed Garlic Clove having seasons
@@ -154,9 +153,10 @@
 - Fixed several issues with crop quality not calculating correctly
 - Fixed Brown Shrooma having incorrect time of day in Fish Finder 
 - Fixed tomatoes only growing up 1 vine
-- Fixed Sparkstone Recycler not working on Auto-Grabber and Fish Pond Pasket
+- Fixed Sparkstone Recycler not working on Auto-Grabber and Fish Pond Basket
 - Fixed High Quality Fertilized Farmland not working
 - Fixed Strawberry having vegetable tag
+- Fixed trade limits not working on shops meant to have them
 - Fixed Ender Slime having wrong hat
 - Fixed certain farm animal drops not having quality
 - Fixed Garlic Clove being plantable
