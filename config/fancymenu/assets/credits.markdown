@@ -10,8 +10,8 @@
 - witchd - Chimera Doll
 - Charlotte.b - Society Wallpapers
 - NerdySpider - Roughly 50 item textures in earlier versions
-- malcolmriley - Various random textures from the unused-textures library in earlier version
-- Tilles - Iridium retexturess
+- malcolmriley - Various random textures from the unused-textures library in earlier versions
+- Tilles - Iridium retextures
 
 ### Building Shop Contributors
 - Andiecherries - Prismarine set
@@ -28,7 +28,7 @@
 
 ### Dev Contributors
 - Ascens - Various tweaks and fixes
-- Emma, Providencedaemon & frog the jam UNCHAINED - Advice, feedback and misc work
+- Emma, Providencedaemon & frog the jam UNCHAINED - Advice, feedback, and misc work
 - Hexagreen - Translation support
 - Space_mex - Skillexpnotifier mod
 - Devon - Farmer's Almanac trees, various fixes

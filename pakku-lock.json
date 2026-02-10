@@ -4882,25 +4882,29 @@
             ]
         },
         {
-            "pakku_id": "fGYQBs0y2TR37al8",
+            "pakku_id": "6F0LJVyEFGm5ha61",
             "pakku_links": [
                 "D3WNDlpUyoHOZWmi"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
-                "curseforge": "ftb-quest-localizer"
+                "curseforge": "ftb-quest-localizer",
+                "modrinth": "ftb-quest-localizer"
             },
             "name": {
-                "curseforge": "FTB Quest Localizer"
+                "curseforge": "FTB Quest Localizer",
+                "modrinth": "FTB Quest Localizer"
             },
             "id": {
-                "curseforge": "1071737"
+                "curseforge": "1071737",
+                "modrinth": "t9CTC5n9"
             },
             "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftbquestlocalizer-1.20.1-forge-3.2.2.jar",
+                    "file_name": "ftbquestlocalizer-1.20.1-forge-3.2.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4908,18 +4912,39 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6933/560/ftbquestlocalizer-1.20.1-forge-3.2.2.jar",
-                    "id": "6933560",
+                    "url": "https://edge.forgecdn.net/files/7529/230/ftbquestlocalizer-1.20.1-forge-3.2.3.jar",
+                    "id": "7529230",
                     "parent_id": "1071737",
                     "hashes": {
-                        "sha1": "533a708ae1f979c59f4715d9d929d738d26f5405",
-                        "md5": "d21575b58a0bd60f25f361479809d760"
+                        "sha1": "e1063dfa696ef42410e5b52b1340745a7dd141d5",
+                        "md5": "b48c43ffe1dadc6d807baec7bfe636f3"
                     },
                     "required_dependencies": [
                         "289412"
                     ],
-                    "size": 36816,
-                    "date_published": "2025-08-27T09:42:04.150Z"
+                    "size": 36983,
+                    "date_published": "2026-01-26T08:14:22.493Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "ftbquestlocalizer-1.20.1-forge-3.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/t9CTC5n9/versions/azwdYL54/ftbquestlocalizer-1.20.1-forge-3.2.0.jar",
+                    "id": "azwdYL54",
+                    "parent_id": "t9CTC5n9",
+                    "hashes": {
+                        "sha512": "b61e22a1d741088d1f0a76cfd170610ad621581c41e8baa1cce1f7129233ff62afee64bdd988479ee966c54a5ce30c194dc6c41c06f04ba32e9b8770eb0cd037",
+                        "sha1": "df04326376a7abdf3df5e8234979cb3e2b7f426d"
+                    },
+                    "required_dependencies": [],
+                    "size": 36820,
+                    "date_published": "2025-02-11T03:58:38.444239Z"
                 }
             ]
         },
@@ -12129,42 +12154,6 @@
                     "required_dependencies": [],
                     "size": 3012590,
                     "date_published": "2024-02-26T21:52:44.983Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "pt8GCGN6Wiu0fxAU",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "terrablender"
-            },
-            "name": {
-                "curseforge": "TerraBlender (Forge)"
-            },
-            "id": {
-                "curseforge": "563928"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6290/448/TerraBlender-forge-1.20.1-3.0.1.10.jar",
-                    "id": "6290448",
-                    "parent_id": "563928",
-                    "hashes": {
-                        "sha1": "3bd99fb59e8b06b04e78b5153790c1e08b2be5dc",
-                        "md5": "9d8e305b95ae5a8f7b446d6346324267"
-                    },
-                    "required_dependencies": [],
-                    "size": 107532,
-                    "date_published": "2025-03-10T23:40:16.850Z"
                 }
             ]
         },
