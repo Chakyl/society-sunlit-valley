@@ -2,10 +2,12 @@
 - Chakyl - Lead developer & gameplay designer
 - Nitbe - Artist for blocks, portraits, and items  
 - Uni - Worldgen programmer & Skull Cavern mastermind
-- Nifast - Artist for quest book and items. Character and portrait designer
-- Mattthemeow - Building shop manager
+- Nifast - Artist for quest book & items. Character & portrait designer
+- MattTheMeow - Building shop manager & curator
 
 ### Art Contributors
+- Altessa - Kata dolls and Fredbear Plushies
+- witchd - Chimera Doll
 - Charlotte.b - Society Wallpapers
 - NerdySpider - Roughly 50 item textures in earlier versions
 - malcolmriley - Various random textures from the unused-textures library in earlier version
@@ -20,12 +22,17 @@
 - JadeClouds - Entrana set
 - Krewella081 - Alpine set
 - Kanlamari - Mason, Tudor, Entrana Revamp sets. Greenhouse building type
+- Patchy - Woodcutter, Blacksmith, and Horse Stables
+- witchd - Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse
+- MattTheMeow - Skull Cavern honey beeode and goober den
 
 ### Dev Contributors
 - Ascens - Various tweaks and fixes
 - Emma, Providencedaemon & frog the jam UNCHAINED - Advice, feedback and misc work
 - Hexagreen - Translation support
 - Space_mex - Skillexpnotifier mod
+- Devon - Farmer's Almanac trees, various fixes
+- copixel - Fish Finder
 
 ### Translation Contributors
 - AonGreyfox - th_th translation
@@ -34,7 +41,6 @@
 - yizhouuu - zh_cn translation
 
 ### Additional Credits
-- Shaders provided by Complementary Reimagined - Any issues that arrive should reported to the pack and not the shader devs!
-- Eidolon : Repraised By Alexth99 (Artifact asset)
-- Blazing Drift Fever EX - Eurobeat by CattonArthur (Pigracing music)
-Matt - Skull Cavern structures
+- Shaders provided by Complementary Reimagined 
+- Alexth99 - Eidolon: Repraised (Artifact asset)
+- CattonArthur - Blazing Drift Fever EX - Eurobeat (Pigracing music)

@@ -584,7 +584,15 @@ StartupEvents.registry("item", (e) => {
     });
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
   e.create("society:chai_blend").texture("society:item/chai_blend");
-
+  e.create("society:sun_candy")
+    .texture("society:item/sun_candy")
+    .rarity("epic")
+    .food((food) => {
+      food.hunger(2);
+      food.saturation(14);
+      food.effect("minecraft:strength", 3000, 0, 1.0);
+      food.effect("farm_and_charm:sweets", 3000, 2, 1.0);
+    });
   e.create("society:magic_rock_candy")
     .texture("society:item/magic_rock_candy")
     .rarity("epic")

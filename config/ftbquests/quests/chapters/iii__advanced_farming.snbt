@@ -346,9 +346,9 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description1}"
+				"&6Organic Mash&r is difficult to come by, but grows any type of crop instantly. It is a byproduct of producing &6Vinegar&r."
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description2}"
+				"It can be used to instantly grow crops, as well as growing small mushrooms into larger ones. "
 			]
 			id: "572D70993411EA53"
 			rewards: [{
@@ -457,31 +457,6 @@
 			}]
 			x: 8.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["44A512703C4A9990"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description3}"
-			]
-			id: "6DF608316146EDC9"
-			rewards: [{
-				count: 16
-				id: "7A28CAAEE5FDA0F2"
-				item: "minecraft:book"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00B95ACB5C6F40E1"
-				item: "minecraft:enchanting_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest21.title}"
-			x: 10.5d
-			y: -0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]

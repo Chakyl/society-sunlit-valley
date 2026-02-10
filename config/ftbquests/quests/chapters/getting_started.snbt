@@ -895,8 +895,9 @@
 			]
 			id: "382DC5EBB8C7C19E"
 			rewards: [{
-				id: "7C925E5AB553DBDB"
-				item: "meadow:wooden_water_bucket"
+				count: 64
+				id: "662A4881C4FC6D72"
+				item: "minecraft:dirt"
 				type: "item"
 			}]
 			tasks: [{
@@ -1031,6 +1032,33 @@
 			title: "Giving Gifts"
 			x: 10.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["382DC5EBB8C7C19E"]
+			description: [
+				"&6There's no rush in placing villager building blueprints!&r "
+				""
+				"It can be a ton of work to terraform while trying to build your farm. These blueprints are optional and can always be placed later when you're more established."
+				""
+				"You can always move the &6Villager Home&r block after placing it."
+			]
+			icon: "minecraft:grass_block"
+			id: "318022FDED8803BD"
+			rewards: [{
+				count: 2
+				id: "7C66719B9549862E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "Not enough space..."
+			tasks: [{
+				id: "71C9DCC83451DA09"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "So many Blueprints!"
+			x: 8.5d
+			y: -4.5d
 		}
 	]
 	title: "{ftbquests.chapter.getting_started.title}"

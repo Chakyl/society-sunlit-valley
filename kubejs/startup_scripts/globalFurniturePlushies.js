@@ -749,7 +749,8 @@ global.originalPlushies = [
   "cluttered:teddy_bear",
   "kata:fredbear_plushie",
   "kata:shiny_fredbear_plushie",
-  "kata:princess_fredbear_plushie"
+  "kata:princess_fredbear_plushie",
+  "kata:chimera",
 ];
 
 global.plushies = [];

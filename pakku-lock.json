@@ -12737,24 +12737,28 @@
             ]
         },
         {
-            "pakku_id": "U4HYjZU4gAby64gC",
+            "pakku_id": "Jk1lCSBaROLLzjvh",
             "pakku_links": [
                 "3c39HbP7FyIalhiX"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "vanillabackport"
+                "curseforge": "vanillabackport",
+                "modrinth": "vanillabackport"
             },
             "name": {
-                "curseforge": "Vanilla Backport"
+                "curseforge": "Vanilla Backport",
+                "modrinth": "Vanilla Backport"
             },
             "id": {
-                "curseforge": "417430"
+                "curseforge": "417430",
+                "modrinth": "6xwxDTgf"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "VanillaBackport-forge-1.20.1-1.1.5.4.jar",
+                    "file_name": "VanillaBackport-forge-1.20.1-1.1.5.4.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12762,18 +12766,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7585/764/VanillaBackport-forge-1.20.1-1.1.5.4.jar",
-                    "id": "7585764",
+                    "url": "https://edge.forgecdn.net/files/7597/658/VanillaBackport-forge-1.20.1-1.1.5.4.2.jar",
+                    "id": "7597658",
                     "parent_id": "417430",
                     "hashes": {
-                        "sha1": "968ed43bd16c81e72560e33b77dc82d284ffd7ff",
-                        "md5": "b41dc9a3d6bd5bd1798fc4abcd7a2c85"
+                        "sha1": "4d4d63fd5ec405d01493a32da3ef691241376caa",
+                        "md5": "e3d2a11fd3768beb4b1e13e158b2d8b8"
                     },
                     "required_dependencies": [
                         "997634"
                     ],
-                    "size": 28382504,
-                    "date_published": "2026-02-06T19:32:03.183Z"
+                    "size": 28385661,
+                    "date_published": "2026-02-09T03:17:26.567Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "VanillaBackport-forge-1.20.1-1.1.5.4.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/6xwxDTgf/versions/lXAo1yJs/VanillaBackport-forge-1.20.1-1.1.5.4.2.jar",
+                    "id": "lXAo1yJs",
+                    "parent_id": "6xwxDTgf",
+                    "hashes": {
+                        "sha512": "cd55249f669defa09f02cd41679119b303db3abdd629646d5aa76b052492edbb2837437eb2b45ee9b60fe3c749ece2a51bc9fa34fd49b5413cd3874a6ddd611e",
+                        "sha1": "4d4d63fd5ec405d01493a32da3ef691241376caa"
+                    },
+                    "required_dependencies": [
+                        "i6fiqm5y"
+                    ],
+                    "size": 28385661,
+                    "date_published": "2026-02-09T03:19:44.594528Z"
                 }
             ]
         },
