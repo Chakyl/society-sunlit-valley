@@ -1,6 +1,6 @@
 ^^^
 ## The Heart of the Community
-### v4.0.0 - PLAYTEST 1 - HOTFIX
+### v4.0.0
 ^^^
 --- 
 - Added new NPC mechanics to completely replace the previous villager system
