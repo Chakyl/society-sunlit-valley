@@ -23,6 +23,11 @@
     }
   ],
   "lookup_history": [
+    "item:quark:hollow_spruce_log",
+    "item:society:iridium_clock",
+    "item:farmersdelight:netherite_knife{Damage:0}",
+    "item:wildernature:stylin_purple_hat{Damage:0}",
+    "item:society:golden_clock",
     "item:minecraft:stripped_spruce_wood",
     "item:minecraft:oak_pressure_plate",
     "item:minecraft:oak_fence_gate",
@@ -707,10 +712,10 @@
     "item:veggiesdelight:zucchini_quiche",
     [
       "item:candlelight:pork_ribs",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
       "item:minecraft:cooked_porkchop",
       "item:farmersdelight:cooked_bacon",
-      "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -721,16 +726,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/cauliflower",
       "#item:forge:crops/potato",
+      "#item:forge:crops/cauliflower",
       "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1502,24 +1507,7 @@
     },
     "item:society:demon_herring_roe",
     "item:society:tambaqui_roe",
-    "item:society:red_grouper_roe",
-    "item:society:picklefish_roe",
-    "item:society:catfish_roe",
-    {
-      "type": "item",
-      "id": "quark:myalite_crystal",
-      "amount": 59
-    },
-    {
-      "type": "item",
-      "id": "minecraft:raw_gold",
-      "amount": 63
-    },
-    {
-      "type": "item",
-      "id": "society:hatchetfish_roe",
-      "amount": 64
-    }
+    "item:society:red_grouper_roe"
   ],
   "craft_history": [
     "minecraft:kjs/dew_drop_farmland_growth_iron_sprinkler",
@@ -1631,13 +1619,6 @@
     ],
     "tags": {},
     "resolutions": {
-      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
-        {
-          "type": "fluid",
-          "id": "create_central_kitchen:aloe_gel",
-          "amount": 250
-        }
-      ],
       "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
         {
           "type": "fluid",
@@ -1649,6 +1630,13 @@
         {
           "type": "fluid",
           "id": "society:mystic_syrup",
+          "amount": 250
+        }
+      ],
+      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
+        {
+          "type": "fluid",
+          "id": "create_central_kitchen:aloe_gel",
           "amount": 250
         }
       ]
