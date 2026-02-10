@@ -15,7 +15,7 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -60,6 +60,7 @@
 					type: "command"
 				}
 			]
+			shape: "none"
 			subtitle: "Reward: Create Power Sources"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -70,8 +71,8 @@
 				value: 1
 			}]
 			title: "Boiler Room Completed!"
-			x: 0.0d
-			y: 1.0d
+			x: -0.028571428571424917d
+			y: 1.057142857142857d
 		}
 		{
 			icon: "supplementaries:present_purple"
@@ -81,35 +82,32 @@
 				item: "extractinator:extractinator"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					count: 8L
-					id: "4BE368B7B6654D26"
-					item: { Count: 8, id: "minecraft:raw_copper_block" }
+					id: "78A93D2099B01AF1"
+					item: "minecraft:raw_copper_block"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "21500032C20E9D58"
-					item: { Count: 8, id: "create:raw_zinc_block" }
+					id: "2A4B97ECE2448775"
+					item: "create:raw_zinc_block"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "639A2E35138EA3FF"
-					item: { Count: 8, id: "minecraft:raw_iron_block" }
+					id: "57EE2523B568F3E2"
+					item: "minecraft:raw_iron_block"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "385CAF48C9478816"
-					item: { Count: 8, id: "minecraft:raw_gold_block" }
+					id: "650BD5813DE11E95"
+					item: "minecraft:raw_gold_block"
 					type: "item"
 				}
 			]
 			title: "Blacksmith's Bundle"
-			x: -3.0d
-			y: 0.2d
+			x: -3.1142857142857068d
+			y: 0.2857142857142705d
 		}
 		{
 			icon: "supplementaries:present_light_blue"
@@ -120,38 +118,39 @@
 				item: "society:omni_geode"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					count: 4L
-					id: "2E7D7F4CA1303942"
-					item: { Count: 4, id: "society:earth_crystal" }
+					id: "0B110BED5FE81EBB"
+					item: "society:earth_crystal"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "643A6EC6C52F70BB"
-					item: { Count: 4, id: "society:frozen_tear" }
+					id: "01150DDAB2522C8D"
+					item: "society:frozen_tear"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "40FE32058432BFFD"
-					item: { Count: 4, id: "society:fire_quartz" }
+					id: "1D6BC732729FB802"
+					item: "society:fire_quartz"
 					type: "item"
 				}
 			]
 			title: "Geologist's Bundle"
-			x: -1.5d
-			y: -0.5d
+			x: -1.5714285714285623d
+			y: -0.48571428571430175d
 		}
 		{
+			description: ["Only &63&r required for bundle completion."]
 			icon: "supplementaries:present_blue"
 			id: "0B45A918213371FA"
+			min_required_tasks: 3
 			rewards: [{
 				id: "6E3C4F2F04BA9298"
 				item: "society:relic_trove"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "6359E72D652B83E1"
@@ -309,8 +308,10 @@
 			y: -0.5d
 		}
 		{
+			description: ["Only &63&r required for bundle completion."]
 			icon: "supplementaries:present_red"
 			id: "0F606FEB98D44C0F"
+			min_required_tasks: 3
 			rewards: [{
 				id: "496273F8A86D642D"
 				item: {
@@ -347,6 +348,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					count: 8L
@@ -374,8 +376,8 @@
 				}
 			]
 			title: "Adventurer's Bundle"
-			x: 3.0d
-			y: 0.2d
+			x: 3.000000000000007d
+			y: 0.2857142857142705d
 		}
 	]
 	subtitle: ["Reward: Create Power Generators"]

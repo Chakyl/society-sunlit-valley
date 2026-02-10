@@ -15,7 +15,7 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -26,6 +26,7 @@
 				item: "simplehats:hatbag_epic"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
 				count: 4L
 				id: "22FC2E88EA6ABB6A"
@@ -33,8 +34,8 @@
 				type: "item"
 			}]
 			title: "2,048 Bundle"
-			x: -3.0d
-			y: 0.2d
+			x: -3.085714285714289d
+			y: 0.3285714285714221d
 		}
 		{
 			icon: "supplementaries:present_orange"
@@ -45,15 +46,16 @@
 				item: "dew_drop_farmland_growth:high_quality_fertilizer"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
-				count: 4L
-				id: "62E6795BCC18B6E9"
+				count: 2L
+				id: "393D8C55AE6556DC"
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "16,384 Bundle"
-			x: -1.5d
-			y: -0.5d
+			title: "8,192 Bundle"
+			x: -1.5428571428571445d
+			y: -0.5000000000000071d
 		}
 		{
 			icon: "supplementaries:present_yellow"
@@ -63,13 +65,14 @@
 				item: "society:charging_rod"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
-				count: 6L
-				id: "543FB7DCD9D9EBC0"
+				count: 4L
+				id: "3E532DD7361F4599"
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "24,576 Bundle"
+			title: "16,384 Bundle"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -81,15 +84,16 @@
 				item: "society:crystalarium"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
-				count: 10L
-				id: "754FDA40D4E2BBF3"
+				count: 6L
+				id: "4FE5D5E3C4364207"
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "40,960 Bundle"
-			x: 3.0d
-			y: 0.2d
+			title: "24,576 Bundle"
+			x: 3.028571428571432d
+			y: 0.29999999999999716d
 		}
 		{
 			dependencies: [
@@ -135,6 +139,7 @@
 					type: "command"
 				}
 			]
+			shape: "none"
 			subtitle: "Reward: Skull Cavern Teleporter"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -145,8 +150,8 @@
 				value: 1
 			}]
 			title: "Vault Completed!"
-			x: 0.0d
-			y: 1.0d
+			x: -0.05714285714285694d
+			y: 1.0142857142857125d
 		}
 	]
 	subtitle: ["Reward: Skull Cavern Teleporter"]

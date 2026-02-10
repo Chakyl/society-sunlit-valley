@@ -13,7 +13,7 @@
 		}
 	}
 	id: "38639EECD8CDEFB3"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -521,7 +521,7 @@
 			]
 			title: "Furniture Crafting"
 			x: 0.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["12ED0E637AD47FD4"]
@@ -567,7 +567,7 @@
 			}]
 			title: "Furniture Catalogs"
 			x: 0.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
@@ -620,7 +620,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]

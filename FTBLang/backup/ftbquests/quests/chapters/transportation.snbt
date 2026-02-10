@@ -6,7 +6,7 @@
 	group: "439B0423947443D3"
 	icon: "minecraft:minecart"
 	id: "7F2FF813A6AF57FE"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -113,32 +113,24 @@
 		{
 			dependencies: ["71C32483EE2418CA"]
 			description: [
-				"Two signs can be linked as teleporters if there is a high quality path between them."
+				"Signs can be used to fast travel provided a well made path is between them."
 				""
-				"&6Shift + Left Click&r&r to start/end linking. You'll need to travel on the path to the sign you want to link to."
+				"Use a &6Charting Map&r to start and finish charting, adding signs to the path by right clicking them."
 				""
-				"&6Left Click&r to travel once linked"
-				""
-				"You can search \"&6#path_block&r\" in JEI to see all the valid path blocks."
+				"You can search &6#path_block&r in JEI to see all the valid path blocks."
 			]
 			icon: "supplementaries:sign_post_oak"
 			id: "42A10CEE57513522"
 			rewards: [{
-				id: "06010F56CFA1113B"
-				item: "numismatics:bevel"
+				count: 3
+				id: "205B1BBC5500A1EF"
+				item: "via_romana:charting_map"
 				type: "item"
 			}]
 			subtitle: "Accessibile Instant Teleportation"
 			tasks: [{
-				id: "2357521C6ACA2F39"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:sign"
-					}
-				}
-				title: "Any Sign"
+				id: "3580A14EBCD0BA25"
+				item: "via_romana:charting_map"
 				type: "item"
 			}]
 			title: "Paving the Road"
@@ -438,9 +430,8 @@
 			]
 			id: "2D553026BFCB2CF0"
 			rewards: [{
-				count: 4
-				id: "4A8E6A8F87F85968"
-				item: "numismatics:cog"
+				id: "3440ADDF64A5D8AB"
+				item: "numismatics:crown"
 				type: "item"
 			}]
 			tasks: [{
@@ -467,8 +458,8 @@
 			]
 			id: "5A3012C1FA5184A2"
 			rewards: [{
-				id: "44AB748F8681C6CA"
-				item: "numismatics:crown"
+				id: "4C05B5511873BBB8"
+				item: "minecraft:lightning_rod"
 				type: "item"
 			}]
 			tasks: [{
@@ -497,8 +488,8 @@
 			]
 			id: "562817C23134A26D"
 			rewards: [{
-				id: "3DD1A32BF5ABF966"
-				item: "numismatics:cog"
+				id: "03C15EF769AAA96F"
+				item: "whimsy_deco:oak_desk_mirror"
 				type: "item"
 			}]
 			tasks: [{
@@ -554,8 +545,8 @@
 			]
 			id: "693FFA0C3FD1A078"
 			rewards: [{
-				id: "768212BDB7FC74FB"
-				item: "numismatics:cog"
+				id: "479E0222D6A2709B"
+				item: "simplerecall:recall_potion"
 				type: "item"
 			}]
 			tasks: [{

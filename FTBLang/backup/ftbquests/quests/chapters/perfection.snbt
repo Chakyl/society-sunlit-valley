@@ -5,6 +5,14 @@
 	group: "15230846E14B6926"
 	icon: "society:golden_clock"
 	id: "4AA29866E19A65A8"
+	images: [{
+		height: 3.0d
+		image: "society:textures/gui/seal_iridescent.png"
+		rotation: 0.0d
+		width: 3.0d
+		x: 13.5d
+		y: -6.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -620,7 +628,7 @@
 				}
 				type: "item"
 			}]
-			shape: "octagon"
+			shape: "none"
 			size: 3.0d
 			subtitle: "Realist Capitalist"
 			tasks: [{

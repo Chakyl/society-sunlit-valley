@@ -38,7 +38,40 @@
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
-			description: ["&6Jade&r can be found from &6Omni Geode Nodes&r. It's an expensive mineral used for a handful of useful crafts."]
+			description: [
+				"Occasionally in the Skull Cavern you may come across a &6Trial Chamber&r."
+				""
+				"These dungeons are full of &6artifacts&r and &6relics&r, and can be found by using a key on a Trial Vault."
+				""
+				"Drinking an &6Ominous Bottle&r will give you better drops for fighting stronger mobs from the Trial Spawners."
+			]
+			id: "68915F617033BDF9"
+			rewards: [
+				{
+					id: "1B15F9B82259AC47"
+					item: "society:relic_trove"
+					type: "item"
+				}
+				{
+					id: "1BF1079BA4BB41FA"
+					item: "trials:ominous_bottle"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "trials:trial_key_ominous"
+				id: "238260076624C9BF"
+				structure: "trials:trials_chambers"
+				title: "Find a Trial Chamber"
+				type: "structure"
+			}]
+			title: "Trial Chambers"
+			x: -3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0DC68C5CF6D82372"]
+			description: ["Crops can be processed in a &6Fermenting Jar&r to increase their value and nutrition."]
 			id: "0E4EA6B5E8E6361C"
 			rewards: [{
 				id: "589BBF90DAD504D7"
@@ -140,29 +173,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["6412C4FB8294A6E2"]
-			description: [
-				"The &6Master Cultivator&r villager can be made using a special cooking pot crafted from a &dPrismatic Shard&r."
-				""
-				"Higher value crops are sold by this villager, as well as expensive fruit trees."
-			]
-			id: "283AF4C18CF3880D"
-			rewards: [{
-				id: "6696DACF68498C87"
-				item: "numismatics:crown"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1436D5607671A4CA"
-				item: "candlelight:cooking_pot"
-				type: "item"
-			}]
-			title: "Advanced Crops"
-			x: -11.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["6412C4FB8294A6E2"]
 			description: [
 				"The &6Trader&r villager can be called over the phone after visting the Skull Cavern."
 				""
@@ -178,70 +188,63 @@
 				table_id: 6097669691163803424L
 				type: "choice"
 			}]
-			tasks: [
-				{
-					id: "2E54E4D447F32B2E"
-					item: "minecraft:fletching_table"
-					type: "item"
-				}
-				{
-					id: "67FE1BE1B3199D1B"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "society:sea_biscut"
-								}
-								{
-									Count: 1b
-									id: "society:broken_clock"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_cog"
-								}
-								{
-									Count: 1b
-									id: "society:ancient_roe"
-								}
-								{
-									Count: 1b
-									id: "society:infinity_worm"
-								}
-								{
-									Count: 1b
-									id: "society:frosted_tip"
-								}
-								{
-									Count: 1b
-									id: "society:inserter"
-								}
-								{
-									Count: 1b
-									id: "society:cordycep"
-								}
-								{
-									Count: 1b
-									id: "society:black_opal"
-								}
-								{
-									Count: 1b
-									id: "society:stone_hand"
-								}
-								{
-									Count: 1b
-									id: "society:tiny_gnome"
-								}
-							]
-						}
+			tasks: [{
+				id: "67FE1BE1B3199D1B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "society:sea_biscut"
+							}
+							{
+								Count: 1b
+								id: "society:broken_clock"
+							}
+							{
+								Count: 1b
+								id: "society:ancient_cog"
+							}
+							{
+								Count: 1b
+								id: "society:ancient_roe"
+							}
+							{
+								Count: 1b
+								id: "society:infinity_worm"
+							}
+							{
+								Count: 1b
+								id: "society:frosted_tip"
+							}
+							{
+								Count: 1b
+								id: "society:inserter"
+							}
+							{
+								Count: 1b
+								id: "society:cordycep"
+							}
+							{
+								Count: 1b
+								id: "society:black_opal"
+							}
+							{
+								Count: 1b
+								id: "society:stone_hand"
+							}
+							{
+								Count: 1b
+								id: "society:tiny_gnome"
+							}
+						]
 					}
-					title: "Any Upgrade"
-					type: "item"
 				}
-			]
+				title: "Any Upgrade"
+				type: "item"
+			}]
 			title: "Machine Upgrades"
 			x: -12.0d
 			y: 14.5d
@@ -679,8 +682,6 @@
 				"Slimes cannot reproduce by breeding. Instead, their &6Plorts&r must be pressed into another &6Slime Heart&r using a &6Plort Press&r."
 				""
 				"Hearts can also be combined to make new ones using the top and bottom slots."
-				""
-				"&oHearts are worth twice as much as their Plort!&r"
 			]
 			hide_dependency_lines: false
 			id: "4ABFC024D15BFC10"
@@ -822,8 +823,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 19.0d
+			x: -1.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["0E4EA6B5E8E6361C"]
@@ -912,7 +913,7 @@
 				}
 			]
 			x: -1.5d
-			y: 20.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
@@ -944,7 +945,7 @@
 				"Unlike what you may be used to, trains from Create do not require create progress or power."
 				""
 				""
-				"{ \"text\": \"More information can be found here.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"53836B96EE81A695\" } }"
+				"[\"\",{\"underlined\":1,\"text\":\"More information can be found here.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"53836B96EE81A695\"}}]"
 			]
 			id: "53C771625381F8F8"
 			rewards: [{
@@ -983,61 +984,13 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["6412C4FB8294A6E2"]
-			description: ["The &6Witch&r villager sells expensive but incredibly useful magic items for your farm."]
-			id: "0C32D3E205443F0F"
-			rewards: [{
-				id: "3E9C4B4AB7D540B2"
-				item: "society:tanuki_leaf"
-				type: "item"
-			}]
-			tasks: [{
-				id: "401197E781DCCDC8"
-				item: "beautify:botanist_workbench"
-				type: "item"
-			}]
-			x: -13.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["0C32D3E205443F0F"]
-			description: [
-				"Once the Community Center is complete, excluding the Abandoned Farm, the &6Witch&r villager will sell you a &6Ribbit Hut&r!"
-				""
-				"This building houses Ribbits that can use their powerful magic to harvest crops in a large area around it without any upkeep!"
-				""
-				"This is a large building, requiring a 3x3x3 area of space to place. You can access its inventory from the door block."
-			]
-			id: "4AAC2F98960E49A7"
-			rewards: [
-				{
-					id: "0055FC250B11E0A0"
-					item: "ribbits:ribbit_sorcerer_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "7848173096FA0405"
-					item: "ribbits:ribbit_nitwit_spawn_egg"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "63EB3001225261A5"
-				item: "society:ribbit_hut"
-				type: "item"
-			}]
-			title: "Ribbit Harvesting"
-			x: -14.0d
-			y: 15.0d
-		}
-		{
 			dependencies: ["38AC25E172172654"]
 			description: [
 				"The &6Advanced Wine Keg&r offers more complex but faster winemaking."
 				""
-				"To start, use the &6Grapevine Pot&r to make juice. You can hold &6W&r while hovering to see how."
+				"It can produce wines far faster than its based version, but requires juice from grapes to speed up the fermentation process."
 				""
-				"&oSeeds can be planted on Grass or Grapevine Stems. Jungle Seeds need Lattices.&r"
+				"&oIt can also be automated without the need for Sparkstone.&r"
 			]
 			icon: "vinery:fermentation_barrel"
 			id: "506B32619EB8477F"
@@ -1087,7 +1040,7 @@
 				"- &cCrimson&r/&aWarped&r grape juice"
 				"- &eApple Juice&r (made using an Apple Press)"
 				""
-				"Juices are inserted in the top left slot of the Advanced Wine Keg."
+				"Juices are inserted in the top left slot of the Fermentation Barrel."
 			]
 			icon: "vinery:red_grapejuice"
 			id: "094497558E9DB19C"
@@ -1127,12 +1080,575 @@
 						]
 					}
 				}
-				title: "Any Advanced Wine Keg juice"
+				title: "Any Fermentation Barrel juice"
 				type: "item"
 			}]
 			title: "Juicing up the Wine"
 			x: -7.5d
 			y: 22.5d
+		}
+		{
+			dependencies: ["4A96DC00D7D0CAD6"]
+			description: [
+				"The &6Pickling Can&r is an efficient way to pickle certain vegetables."
+				""
+				"It requires adjacent Salt Layers produced by an &6Evaporator&r, but does its job faster than other methods. "
+				""
+				"High quality vegetables will produce high quality pickles!"
+			]
+			id: "038D4A6A3CA1C015"
+			rewards: [{
+				count: 8
+				id: "61BD13A2B1C52924"
+				item: "vintagedelight:cucumber_seeds"
+				type: "item"
+			}]
+			tasks: [{
+				id: "43B657F11F0AAEA9"
+				item: "society:pickling_can"
+				type: "item"
+			}]
+			title: "Quality Pickling"
+			x: -3.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: [
+				"Unlocking &6Fishing Mastery&r provides special tools for both manual fishing and ponds when unlocked."
+				""
+				"Once unlocked, the associated items can be bought from the &6Fisher&r."
+			]
+			id: "21671DA370EA7A37"
+			rewards: [{
+				count: 3
+				id: "39F51536A4154B47"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "aquaculture:neptunium_fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "7162E14466460F42"
+				stage: "fishing_mastery"
+				title: "Unlock Fishing Mastery"
+				type: "gamestage"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21671DA370EA7A37"]
+			description: [
+				"The &6Needle Bobber&r and &6Net Bobbers&r are two sides of the same coin, making the fishing minigame much more difficult for a huge boost in rewards."
+				""
+				"They'll only be useful to rod champion (or a person that's just upgraded their rod a ton)."
+			]
+			icon: "society:needle_bobber"
+			id: "785F3754068D5C2D"
+			rewards: [{
+				id: "3CF7E830E51BAB65"
+				item: "society:river_jelly"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5102E21B6D44F962"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "society:needle_bobber"
+							}
+							{
+								Count: 1b
+								id: "society:net_bobber"
+							}
+						]
+					}
+				}
+				title: "Needle or Net Bobber"
+				type: "item"
+			}]
+			title: "Masterful Bobbers"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: ["Unlocking &6Husbandry Mastery&r allows you to upgrade the production of your animals significantly."]
+			id: "3979B0AD660A33D2"
+			rewards: [{
+				count: 3
+				id: "7007FA81A1833E20"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: "society:milk_pail"
+				id: "5492353782FA1337"
+				stage: "husbandry_mastery"
+				title: "Unlock Husbandry Mastery"
+				type: "gamestage"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21671DA370EA7A37"]
+			description: [
+				"If you've more than a handful of &6Fish Ponds&r, you may be overflowing with &6Roe&r from fish whos produce items are more valuable than the money its worth."
+				""
+				"The &6Roe Recycler&r addresses this, allowing you to get a few more chances at items with every peice of roe. "
+				""
+				"It rolls the entire Fish Pond loot table at a random population for each Roe processed. If it doesn't drop anything, it'll have a 10% chance to produce &6Algae&r."
+			]
+			id: "1DCBAC91CE9AAD60"
+			rewards: [{
+				count: 4
+				id: "6968D75B40D5CA6C"
+				item: "society:neptuna_roe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "441B5FDB7DFE9725"
+				item: "society:roe_recycler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: [
+				"Unlocking &6Adventuring Mastery&r allows you to take your beloved pets on grand adventures without the fear of losing them! It also allows more options with enchanting past the skill tree enchantments."
+				""
+				"Once unlocked, certain associated items can be bought from the &6Guild&r and &6Wizard&r."
+			]
+			id: "76A60EE6F3E0FF72"
+			rewards: [{
+				count: 3
+				id: "6BD0845771266214"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "60760AF29A6A1954"
+				secret: true
+				stage: "adventuring_mastery"
+				title: "Unlock Adventuring Mastery"
+				type: "gamestage"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["76A60EE6F3E0FF72"]
+			description: ["The &6Guild&r will now sell you &6Collar Tags&r, a conduit for enchanting your pets to make them battle-ready."]
+			id: "181794D54A635F81"
+			rewards: [{
+				id: "284F02BE3A8C125C"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "domesticationinnovation:total_recall"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "22F5A370A1A215F2"
+				item: "domesticationinnovation:collar_tag"
+				type: "item"
+			}]
+			title: "Powerful Beasts"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["76A60EE6F3E0FF72"]
+			description: [
+				"Now that your pets are ready to adventure with you, the &6Guild&r will now sells supplies to keep them safe."
+				""
+				"Most notable is the &6Pet Bed&r, which allows your pets to respawn if they somehow lose the battle. "
+				""
+				"Make sure you see the ZZZs above the pet's bed after placing them there!"
+			]
+			icon: "domesticationinnovation:pet_bed_white"
+			id: "40C8DC3C2A22F632"
+			rewards: [{
+				id: "25201E8D8F8BD51B"
+				item: "domesticationinnovation:collar_tag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "571CF103F79F06DE"
+					item: "domesticationinnovation:pet_bed_white"
+					type: "item"
+				}
+				{
+					id: "134FB6AEE27347DC"
+					item: "domesticationinnovation:wayward_lantern"
+					type: "item"
+				}
+				{
+					id: "44F41EF1A2B25FE1"
+					item: "domesticationinnovation:drum"
+					type: "item"
+				}
+			]
+			title: "Pet Utilities"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3979B0AD660A33D2"]
+			description: [
+				"&6Animal Crackers&r are mystical foods that allow farm animals to produce double when eaten by one. "
+				""
+				"They can be found randomly throughout the world from your daily farming activities."
+			]
+			id: "505C0E636F881791"
+			rewards: [{
+				id: "437F5ED7B6B9B6B5"
+				item: "society:animal_cracker"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BFF4068FEBDDC13"
+				item: "society:animal_cracker"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3979B0AD660A33D2"]
+			description: [
+				"Normally farm animals are picky about their living conditions and food! The &6Witch&r sells ancient magic that can shrink them into a plushie, making it a luxurious home."
+				""
+				"Plushies that have been imbued using a &6Sunlit Crystal&r will have special effects "
+				""
+				"&oBoth the plushie and the animal must be at max affection.&r"
+			]
+			id: "06308BDE5F4EC0D2"
+			rewards: [
+				{
+					count: 3
+					id: "1E0CA77911A70BF6"
+					item: "society:plushie_capsule"
+					type: "item"
+				}
+				{
+					id: "0A577532190022FE"
+					item: "society:plushie_wand"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "41FDA43ADEA36D5B"
+				item: "society:sunlit_crystal"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: ["Unlocking &6Farming Mastery&r will give you powerful new plants to grow on your farm that can be obtained from the &6Market&r using &6Prismatic Shards&r."]
+			id: "40845F4C88AD03CB"
+			rewards: [{
+				count: 3
+				id: "1074DD0BB4922E18"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "224A29585E36B057"
+				stage: "farming_mastery"
+				title: "Unlock Farming Mastery"
+				type: "gamestage"
+			}]
+			x: -6.0d
+			y: 3.25d
+		}
+		{
+			dependencies: ["25677844C218103A"]
+			description: ["Unlocking &6Mining Mastery&r "]
+			id: "3C12A8CA17EACA0B"
+			rewards: [{
+				count: 3
+				id: "0CF6E309829FC8C6"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:netherite_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0AD01E5BA4169E25"
+				stage: "mining_mastery"
+				title: "Unlock Mining Mastery"
+				type: "gamestage"
+			}]
+			x: -3.0d
+			y: 3.25d
+		}
+		{
+			description: [""]
+			icon: "society:book_of_stars"
+			id: "25677844C218103A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B3ADE6005BB80E9"
+				table_id: 148309168996942632L
+				type: "random"
+			}]
+			size: 1.5d
+			subtitle: "Reach level 12 in every skill"
+			tasks: [{
+				icon: "society:book_of_stars"
+				id: "3FE67ED6D7C3F44B"
+				stage: "mastery_unlocked"
+				title: "Unlock Skill Mastery"
+				type: "gamestage"
+			}]
+			title: "Skill Mastery"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["76A60EE6F3E0FF72"]
+			description: [
+				"The &6Witch&r now sells the &6Enchanting Table&r. This will allow you to unlock the final level for enchantments such as Fortune or Looting, alongside enchantments that aren't included in the skill tree."
+				""
+				"The maximums of enchantments that are in the skill tree has been lowered!"
+			]
+			id: "410784379F435E05"
+			rewards: [{
+				id: "05B38EF7A3C4EC93"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "domesticationinnovation:chain_lightning"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "596D4FBD82E84D10"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["40845F4C88AD03CB"]
+			description: [
+				"&6Sparkpods&r are rough otherworldly fruits that can be sourced from the &6Market&r. "
+				""
+				"They are filled with energy and can be mashed into &6Sparkstone&r using a variety of methods."
+				""
+				"Unlike most crops, they have no seeds, making them unable to be cultivated using a &6Seed Maker&r..."
+			]
+			id: "76672EF7299492DF"
+			rewards: [{
+				id: "039F60D5EE60F51E"
+				item: "society:sparkpod_seed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3211101688780CC5"
+				item: "society:sparkpod_seed"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C12A8CA17EACA0B"]
+			description: [
+				"The &6Recycled Core&r is a smith's best friend, doubling the output of all &6Recycling Machine&r recipes. "
+				""
+				"It can be purchased from the &6Trader&r."
+				""
+				"&oRecipes similar to hook recycling do not double.&r"
+			]
+			id: "642F0375D7805A1B"
+			rewards: [{
+				count: 4
+				id: "79143B01F669F7C5"
+				item: "oreganized:raw_silver"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21411FD800D50B90"
+				item: "society:recycled_core"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40845F4C88AD03CB"]
+			description: [
+				"The &6Market&r will trade a &6Mystic Willow Sapling&r, which can be tapped for its valuable syrup."
+				""
+				"You'll first need the rare &6Grimwood sapling&r, found in the world or rarely dug up from harvesting crops. "
+			]
+			icon: "cluttered:willow_sapling"
+			id: "458EC4BFA0C47FCB"
+			rewards: [{
+				id: "5FB77FCF4E2CC6AF"
+				item: "society:treasure_totem"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5E5F0F37070C1C9A"
+					item: "atmospheric:grimwood_sapling"
+					type: "item"
+				}
+				{
+					id: "3E554AEF9F6856CD"
+					item: "cluttered:willow_sapling"
+					type: "item"
+				}
+				{
+					id: "5E6A674C5A2310A8"
+					item: "society:mystic_syrup"
+					type: "item"
+				}
+			]
+			title: "Purple Syrup"
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C12A8CA17EACA0B"]
+			description: [
+				"The &6Statue of The Moon Gnome&r channels the ancient power of Selene. It can be crafted by a &6Blacksmith&r using Iridium Ingots."
+				""
+				"Right clicking on it will give you a random mining related Moon Blessing that lasts the entire day."
+			]
+			id: "224AC273D2E3D1D7"
+			rewards: [
+				{
+					count: 4
+					id: "41E81F8ACC763C1E"
+					item: "cluttered:moon_pendant"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7FB8AB3B2A9907AA"
+					item: "cluttered:moon_decoration"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4A45494A3132F91A"
+				item: "society:moon_statue"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A96DC00D7D0CAD6"]
+			description: [
+				"&6Networked Pipes&r are capable of complex logistical operations. They can be used to sort, auto-stock, auto craft, and auto-retrieve items from pipe networks."
+				""
+				"They require a good bit of skill to use, but the &6Classic Pipes wiki&r online has details for those that wish to master them."
+			]
+			id: "3042AA873F9B60C5"
+			rewards: [{
+				count: 32
+				id: "585E6170FCE21E54"
+				item: "classicpipes:routing_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D06C14464DC35FC"
+				item: "classicpipes:routing_pipe"
+				type: "item"
+			}]
+			title: "Complex Logistics"
+			x: -1.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["06308BDE5F4EC0D2"]
+			description: [
+				"&6Refined Storage systems&r aren't great at handling many different types of non-stacking items!"
+				""
+				"Avoid dumping all your plushies in your system, and store them in large chests instead."
+				""
+				"This is especially important in multiplayer servers!"
+			]
+			hide_until_deps_complete: true
+			icon: "refinedstorage:controller"
+			id: "15061E71D3F55AE8"
+			rewards: [
+				{
+					id: "75582E74B3FBFF18"
+					item: "society:plushie_capsule"
+					type: "item"
+				}
+				{
+					id: "699959A276629DBD"
+					item: "society:sunlit_crystal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6D8A02F5851A7D5A"
+				title: "I won't do that!"
+				type: "checkmark"
+			}]
+			title: "Avoiding Refined Lag"
+			x: -10.0d
+			y: 0.5d
 		}
 	]
 	title: "IV - Prismatic Farming"

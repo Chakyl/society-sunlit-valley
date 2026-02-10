@@ -50,7 +50,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.pantry.quest1.title}"
+			title: "{ftbquests.chapter.pantry.quest7D155FD0EFEEB5AC.title}"
 			x: -3.057142857142857d
 			y: 0.3285714285714221d
 		}
@@ -86,7 +86,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.pantry.quest2.title}"
+			title: "{ftbquests.chapter.pantry.quest3EF57F71C1C786FE.title}"
 			x: -1.5428571428571445d
 			y: -0.44285714285715017d
 		}
@@ -122,7 +122,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.pantry.quest3.title}"
+			title: "{ftbquests.chapter.pantry.quest2074A4FFF17266DB.title}"
 			x: 0.0d
 			y: -1.2142857142857224d
 		}
@@ -155,7 +155,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.pantry.quest4.task_7138755142813578589.title}"
+					title: "{ftbquests.chapter.pantry.quest314D5DDD65659FDE.task.7138755142813578589.title}"
 					type: "item"
 				}
 				{
@@ -180,7 +180,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.pantry.quest4.task_1375460068905014618.title}"
+					title: "{ftbquests.chapter.pantry.quest314D5DDD65659FDE.task.1375460068905014618.title}"
 					type: "item"
 				}
 				{
@@ -199,12 +199,12 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.pantry.quest4.title}"
+			title: "{ftbquests.chapter.pantry.quest314D5DDD65659FDE.title}"
 			x: 1.4857142857142875d
 			y: -0.4714285714285751d
 		}
 		{
-			description: ["{ftbquests.chapter.pantry.quest5.description1}"]
+			description: ["{ftbquests.chapter.pantry.quest43591809C1D493F5.description1}"]
 			icon: "supplementaries:present_yellow"
 			id: "43591809C1D493F5"
 			min_required_tasks: 3
@@ -281,7 +281,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.pantry.quest5.title}"
+			title: "{ftbquests.chapter.pantry.quest43591809C1D493F5.title}"
 			x: 2.999999999999993d
 			y: 0.3285714285714221d
 		}
@@ -294,9 +294,9 @@
 				"3EF57F71C1C786FE"
 			]
 			description: [
-				"Collecting crops of every season and animal products completes the Pantry. This rewards you with a building containing &648 Greenhouse Glass&r. This valuable material allows crops of any season to grow when the glass is at most 16 blocks above the crop."
+				"{ftbquests.chapter.pantry.quest7CBAF0748446A0C2.description1}"
 				""
-				"You can also choose to just receive the glass itself, if you'd like to build your own greenhouse."
+				"{ftbquests.chapter.pantry.quest7CBAF0748446A0C2.description2}"
 			]
 			icon: "furniture:explorers_box"
 			id: "7CBAF0748446A0C2"
@@ -322,16 +322,16 @@
 				}
 			]
 			shape: "none"
-			subtitle: "{ftbquests.chapter.pantry.quest6.subtitle}"
+			subtitle: "{ftbquests.chapter.pantry.quest7CBAF0748446A0C2.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "713FD6544CCC4F5C"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.pantry.quest6.task_8160476707372683100.title}"
+				title: "{ftbquests.chapter.pantry.quest7CBAF0748446A0C2.task.8160476707372683100.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.pantry.quest6.title}"
+			title: "{ftbquests.chapter.pantry.quest7CBAF0748446A0C2.title}"
 			x: -0.05714285714285694d
 			y: 1.0714285714285694d
 		}

@@ -154,7 +154,6 @@
 				"6E6588DBC047B041"
 				"5E94562368270D69"
 				"560CDD4660AA1159"
-				"791EFE3588B3D3A6"
 			]
 			description: ["Cook all dishes from &6Let's Do: Bakery&r."]
 			hide_dependency_lines: true
@@ -1026,8 +1025,6 @@
 				"41EB85DB7B7DC75A"
 				"30BF1FB39C2E05BC"
 				"776A318885DAA6A6"
-				"0CA7CEED7DD5B11F"
-				"6703BC8EAABB52B1"
 				"764FBC5CFBBC2FE7"
 				"0EF5C98143E6755B"
 				"6C8991E2085E1678"
@@ -1060,6 +1057,16 @@
 				"150AC5D9FABDEC26"
 				"083E30851FA52517"
 				"13BB9EFD3B941D98"
+				"334DAB97A86F2574"
+				"5919563A830D3AAA"
+				"1AFAEA748AB9E1B3"
+				"426E241A2BE5ED15"
+				"3DD9CFE690ED298A"
+				"5B37B31BA3C5CCD3"
+				"58A0B7418235B06F"
+				"2FDC611338D67682"
+				"01B0EFE30AC97294"
+				"6E0DE2216041B2B3"
 			]
 			description: ["Cook all dishes from &6Farmer's Delight&r, &6Crabber's Delight&r, &6Veggies's Delight&r and &6Vintage Delight&r."]
 			hide_dependency_lines: true
@@ -1487,16 +1494,6 @@
 			y: 6.0d
 		}
 		{
-			id: "0CA7CEED7DD5B11F"
-			tasks: [{
-				id: "4943AA15442857CD"
-				item: "veggiesdelight:stuffed_bellpeppers_block"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 7.0d
-		}
-		{
 			id: "3D58FD07A68909E5"
 			tasks: [{
 				id: "280A7A01370AD699"
@@ -1525,16 +1522,6 @@
 			}]
 			x: 10.0d
 			y: 7.0d
-		}
-		{
-			id: "6703BC8EAABB52B1"
-			tasks: [{
-				id: "79F20088981CE3AB"
-				item: "veggiesdelight:cauliflower_burger"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 6.0d
 		}
 		{
 			id: "0AA0A62C8DABD741"
@@ -2103,16 +2090,6 @@
 			y: -1.0d
 		}
 		{
-			id: "791EFE3588B3D3A6"
-			tasks: [{
-				id: "189D906B1E089C71"
-				item: "bakery:grilled_salmon_sandwich"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -3.0d
-		}
-		{
 			id: "6E6588DBC047B041"
 			tasks: [{
 				id: "0E88A8780C5E5DBE"
@@ -2120,7 +2097,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			id: "09E68F4E9AE935D8"
@@ -2130,7 +2107,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			id: "31831BD5BC45E37E"
@@ -2507,6 +2484,106 @@
 			}]
 			x: -13.0d
 			y: -2.0d
+		}
+		{
+			id: "334DAB97A86F2574"
+			tasks: [{
+				id: "6638166BFA190A6C"
+				item: "veggiesdelight:vegetarian_burger"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			id: "6E0DE2216041B2B3"
+			tasks: [{
+				id: "47218587348F949B"
+				item: "veggiesdelight:stuffed_bellpeppers_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			id: "2FDC611338D67682"
+			tasks: [{
+				id: "5478744F07CE4386"
+				item: "veggiesdelight:sweet_potato_pancakes"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 12.0d
+		}
+		{
+			id: "3DD9CFE690ED298A"
+			tasks: [{
+				id: "542D69B5C2BDC46E"
+				item: "veggiesdelight:turnip_mutton_skewer"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			id: "5B37B31BA3C5CCD3"
+			tasks: [{
+				id: "17E07F26FC39146E"
+				item: "veggiesdelight:zucchini_quiche"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			id: "426E241A2BE5ED15"
+			tasks: [{
+				id: "772D199DC6356DB9"
+				item: "veggiesdelight:stuffed_zucchini_boat"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			id: "01B0EFE30AC97294"
+			tasks: [{
+				id: "5AF4924EA0BB6E82"
+				item: "veggiesdelight:steak_and_broccoli"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 9.0d
+		}
+		{
+			id: "1AFAEA748AB9E1B3"
+			tasks: [{
+				id: "3684EC060C0B0398"
+				item: "veggiesdelight:rice_and_vegetables"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 10.0d
+		}
+		{
+			id: "5919563A830D3AAA"
+			tasks: [{
+				id: "6E161B3FBFDD1372"
+				item: "veggiesdelight:lasagna_pan"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			id: "58A0B7418235B06F"
+			tasks: [{
+				id: "307441AA7D425B06"
+				item: "veggiesdelight:vegetables_wrap"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 12.0d
 		}
 	]
 	title: "Cooking"

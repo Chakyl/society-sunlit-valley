@@ -26,9 +26,9 @@
 				"52A3D52D6251EDB6"
 			]
 			description: [
-				"{ftbquests.chapter.boiler_room.quest1.description1}"
+				"{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.description1}"
 				""
-				"{ftbquests.chapter.boiler_room.quest1.description2}"
+				"{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.description2}"
 			]
 			icon: "furniture:tool_box"
 			id: "3428ADDC87A77916"
@@ -61,16 +61,16 @@
 				}
 			]
 			shape: "none"
-			subtitle: "{ftbquests.chapter.boiler_room.quest1.subtitle}"
+			subtitle: "{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "4F5C6E42993777F4"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.boiler_room.quest1.task_5718566859171133428.title}"
+				title: "{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.task.5718566859171133428.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.boiler_room.quest1.title}"
+			title: "{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.title}"
 			x: -0.028571428571424917d
 			y: 1.057142857142857d
 		}
@@ -105,7 +105,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest2.title}"
+			title: "{ftbquests.chapter.boiler_room.quest3889A9F0A1CF45FF.title}"
 			x: -3.1142857142857068d
 			y: 0.2857142857142705d
 		}
@@ -136,12 +136,12 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest3.title}"
+			title: "{ftbquests.chapter.boiler_room.quest52A3D52D6251EDB6.title}"
 			x: -1.5714285714285623d
 			y: -0.48571428571430175d
 		}
 		{
-			description: ["Only &63&r required for bundle completion."]
+			description: ["{ftbquests.chapter.boiler_room.questB45A918213371FA.description1}"]
 			icon: "supplementaries:present_blue"
 			id: "0B45A918213371FA"
 			min_required_tasks: 3
@@ -174,7 +174,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_7159007264839009249.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.7159007264839009249.title}"
 					type: "item"
 				}
 				{
@@ -199,7 +199,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_8448155510129440612.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.8448155510129440612.title}"
 					type: "item"
 				}
 				{
@@ -224,7 +224,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_2504617133200510924.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.2504617133200510924.title}"
 					type: "item"
 				}
 				{
@@ -249,7 +249,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_2456484554402737852.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.2456484554402737852.title}"
 					type: "item"
 				}
 				{
@@ -274,7 +274,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_4196301195831567143.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.4196301195831567143.title}"
 					type: "item"
 				}
 				{
@@ -299,16 +299,16 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_7605778742143769321.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.7605778742143769321.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest4.title}"
+			title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.title}"
 			x: 1.5d
 			y: -0.5d
 		}
 		{
-			description: ["Only &63&r required for bundle completion."]
+			description: ["{ftbquests.chapter.boiler_room.questF606FEB98D44C0F.description1}"]
 			icon: "supplementaries:present_red"
 			id: "0F606FEB98D44C0F"
 			min_required_tasks: 3
@@ -375,7 +375,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest5.title}"
+			title: "{ftbquests.chapter.boiler_room.questF606FEB98D44C0F.title}"
 			x: 3.000000000000007d
 			y: 0.2857142857142705d
 		}

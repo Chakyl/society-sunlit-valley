@@ -20,6 +20,7 @@
 				""
 				"Equipping the Calendar will show the current sub-season in the top left of your screen."
 			]
+			icon: "farmersdelight:tomato_seeds"
 			id: "6ADD884F3FFE5D42"
 			rewards: [
 				{
@@ -32,45 +33,59 @@
 					item: "quark:seed_pouch"
 					type: "item"
 				}
+				{
+					id: "1990DE13813B0895"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_market"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Market House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_market"
+							owner: "worn"
+							owner_name: "EeveeBeby"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 1b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
 			]
+			subtitle: "Welcoming Leon"
 			tasks: [{
-				id: "6F097F151D433739"
-				item: "farmingforblockheads:market"
-				title: "Craft a market to buy seeds"
+				id: "6898A763A52A07CB"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:market"
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "Starting Farming"
 			x: 1.0d
 			y: -1.5d
-		}
-		{
-			dependencies: ["6ADD884F3FFE5D42"]
-			description: [
-				"The &6Farmer&r sells supplies that'll help increase the efficiency of your farming, such as fertilizers."
-				""
-				"You can place the villager on the &6Seat&r to keep them from wandering off. "
-			]
-			id: "2134CA6B3880D089"
-			rewards: [
-				{
-					id: "0599BE1A3AF47278"
-					item: "minecraft:villager_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "7A58D2BF60BEDF59"
-					item: "create:white_seat"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "42282BE7E1549956"
-				item: "minecraft:composter"
-				type: "item"
-			}]
-			title: "Farmer Villager"
-			x: 3.0d
-			y: -0.5d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
@@ -130,13 +145,13 @@
 		}
 		{
 			dependencies: [
-				"2134CA6B3880D089"
-				"3D324E99DF28D224"
+				"6EEBD017839FF628"
+				"6ADD884F3FFE5D42"
 			]
 			description: [
 				"The &6Farmer's Almanac&r has detailed information of crops and farm animals, which is essential when deciding what to focus on every season."
 				""
-				"It is sold by the &6Farmer&r and &6Shepherd&r"
+				"It is sold by the &6Market&r and &6Shepherd&r"
 			]
 			id: "596D2298299CCEED"
 			min_required_dependencies: 1
@@ -155,11 +170,12 @@
 						"patchouli:book": "patchouli:almanac"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "All on Farming"
-			x: 3.0d
-			y: 2.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
@@ -186,7 +202,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["2134CA6B3880D089"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
 				"&6Fertilizer&r is a huge step in upgrading how much your farm produces."
 				""
@@ -246,8 +262,8 @@
 				type: "item"
 			}]
 			title: "All on Fertilizers"
-			x: 4.5d
-			y: 0.5d
+			x: 3.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -304,8 +320,8 @@
 			]
 			id: "2B3BEC36F6C0F6BE"
 			rewards: [{
-				id: "31BE8C469A71C6EC"
-				item: "meadow:wooden_bucket"
+				id: "5D0CB0AFFFFB6FCE"
+				item: "society:pristine_earth_crystal"
 				type: "item"
 			}]
 			tasks: [{
@@ -338,7 +354,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -426,7 +442,7 @@
 			]
 			title: "Brewing Beer"
 			x: 11.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -477,7 +493,7 @@
 				""
 				"The most important right now is:"
 				""
-				"[\"\",{\"underlined\":1,\"text\":\"The Spring Crops Bundle (Click Me)\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D155FD0EFEEB5AC\"}}]"
+				"[\"\",{\"text\":\"The Spring Crops Bundle (Click Me)\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D155FD0EFEEB5AC\"}}]"
 				""
 				"Consisting of products that can grow on your farm."
 			]
@@ -534,15 +550,62 @@
 			]
 			icon: "minecraft:cow_spawn_egg"
 			id: "6EEBD017839FF628"
-			rewards: [{
-				id: "0A86B63A64A78F83"
-				item: "minecraft:villager_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "0BB5EA86664B3439"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "74D518051CBD8479"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_shepherd"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Shepherd House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_shepherd"
+							owner: "worn"
+							owner_name: "EeveeBeby"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 0b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.5d
+			subtitle: "Welcoming Maria"
 			tasks: [{
-				id: "5A46E6FD7F7E12F3"
-				item: "minecraft:loom"
+				id: "03517B186B1545D2"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:shepherd"
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "Raising Farm Animals"
@@ -642,29 +705,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "0FF144C9BACD9442"
+				id: "2535B0A23A9A9D48"
 				item: {
 					Count: 1
-					id: "itemfilters:or"
+					id: "itemfilters:tag"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:egg"
-							}
-							{
-								Count: 1b
-								id: "untitledduckmod:goose_egg"
-							}
-							{
-								Count: 1b
-								id: "untitledduckmod:duck_egg"
-							}
-							{
-								Count: 1b
-								id: "autumnity:turkey_egg"
-							}
-						]
+						value: "forge:eggs"
 					}
 				}
 				title: "Any egg"
@@ -733,15 +779,15 @@
 			]
 			title: "Milk"
 			x: 5.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
 			description: ["&6Truffles&r are valuable goods, found by Pigs when they have at least 5 hearts of affection."]
 			id: "3719F024051F60DA"
 			rewards: [{
-				id: "66CC0638F629C86F"
-				item: "society:truffle_tea"
+				id: "5E94113982847280"
+				item: "bakery:chocolate_donut"
 				type: "item"
 			}]
 			tasks: [{
@@ -773,8 +819,8 @@
 				type: "item"
 			}]
 			title: "Cruelty Free Meat"
-			x: 3.0d
-			y: 6.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["45739CCE73037CBB"]
@@ -797,7 +843,7 @@
 				item: "society:mayonnaise_machine"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 3.0d
 		}
 		{
@@ -818,27 +864,73 @@
 				item: "society:cheese_press"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.5d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["20C76D194ECEDB76"]
 			description: [
 				"Fish are a fast and valuable way to make money early game."
 				""
 				"Your first rod will come from the &6Fisher&r villager, and they otherwise sell aquatic and fishing related supplies."
 			]
+			icon: "unusualfishmod:raw_sneep_snorp"
 			id: "429FEBEC239B975F"
-			rewards: [{
-				id: "24BDCA4AAF6D0045"
-				item: "minecraft:villager_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "2D10D4BE4AA7AEC5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "3D837298E5ABEE7F"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_fisher"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Fisher House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_fisher"
+							owner: "worn"
+							owner_name: "Nyxzerria"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 1b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.5d
-			subtitle: "Barrel"
+			subtitle: "Welcoming Haruna"
 			tasks: [{
-				id: "64812EE7AA8EA20D"
-				item: "minecraft:barrel"
+				id: "31C5F2C4CB8E33F1"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:fisher"
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "Fishing"
@@ -1856,8 +1948,59 @@
 				type: "item"
 			}]
 			title: "Upgraded Hoes"
-			x: 0.0d
-			y: 0.0d
+			x: -0.4464285714285765d
+			y: 0.2500000000000071d
+		}
+		{
+			dependencies: [
+				"0E4EA6B5E8E6361C"
+				"3719F024051F60DA"
+			]
+			description: [
+				"The &6Oil Maker&r is an Artisan Machine for turning rough products into valuable artisanal oil."
+				""
+				"Its best use is for making &6Truffle Oil&r"
+			]
+			id: "6971F0B3FC26D411"
+			rewards: [{
+				id: "6515152543861EE5"
+				item: "society:oil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B83A80BBA2CE38D"
+				item: "society:oil_maker"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3D324E99DF28D224"]
+			description: [
+				"Animals are sensitive to changes in their care or environment. They may really like you, but if you mistreat them it'll effect their produce!"
+				""
+				"You can check how an animal is feeling by right clicking them with an empty hand. "
+				""
+				"- Smiles (☺) indicate the animal is happy! They'll produce quality items."
+				"- Frowns (☹) indicate the animal is sad, giving them a chance to not produce that day."
+				""
+				"You can get detailed information on an animal's mood by right clicking them with the &6Mood Scanner&r purchased from the Shepherd."
+			]
+			id: "3E4F57BA2601FD6F"
+			rewards: [{
+				id: "0039C84CEA76F6E1"
+				item: "society:candied_animal_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E203D1F5F96B78D"
+				item: "society:mood_scanner"
+				type: "item"
+			}]
+			title: "Animal Mood"
+			x: 3.0d
+			y: 6.5d
 		}
 	]
 	title: "II - Farm Building"

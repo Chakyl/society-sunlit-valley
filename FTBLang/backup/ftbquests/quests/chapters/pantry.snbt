@@ -27,35 +27,32 @@
 				item: "dew_drop_farmland_growth:weak_fertilizer"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					count: 32L
-					id: "541D9F35016F7E24"
-					item: "veggiesdelight:cauliflower"
+					id: "0B35C5DE8BB5F9F6"
+					item: "veggiesdelight:turnip"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "1E18344D245791C0"
+					id: "668E84D9EE57A1A8"
 					item: "farm_and_charm:lettuce"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "367F96A16FB9F550"
-					item: "farm_and_charm:strawberry"
+					id: "7CDE2B20B7CC5880"
+					item: "veggiesdelight:cauliflower"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "784D6E488DCDEBE0"
-					item: { Count: 32, id: "veggiesdelight:turnip" }
+					id: "3F5BC351515794BE"
+					item: "farm_and_charm:strawberry"
 					type: "item"
 				}
 			]
 			title: "Spring Crops Bundle"
-			x: -3.0d
-			y: 0.2d
+			x: -3.057142857142857d
+			y: 0.3285714285714221d
 		}
 		{
 			icon: "supplementaries:present_red"
@@ -66,77 +63,68 @@
 				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					count: 32L
-					id: "739D0A34606397D0"
+					id: "2DCE90F8655627E2"
+					item: "farm_and_charm:oat"
+					type: "item"
+				}
+				{
+					id: "1B1C690E927AA97F"
 					item: "veggiesdelight:bellpepper"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "00B8FD8C3A592142"
-					item: "minecraft:melon_slice"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 32L
-					id: "719F4811D89D19A8"
+					id: "6DCE2F477E7CA601"
 					item: "society:blueberry"
 					type: "item"
 				}
 				{
-					consume_items: true
-					count: 32L
-					id: "1E0BCCAB8CFEAD6B"
-					item: "farm_and_charm:oat"
+					id: "3033562FFE412612"
+					item: "minecraft:melon"
 					type: "item"
 				}
 			]
 			title: "Summer Crops Bundle"
-			x: -1.5d
-			y: -0.5d
+			x: -1.5428571428571445d
+			y: -0.44285714285715017d
 		}
 		{
 			icon: "supplementaries:present_orange"
 			id: "2074A4FFF17266DB"
 			rewards: [{
 				count: 3
-				id: "3AF5A0C4AE27B4CB"
+				id: "761491DBA60727EF"
 				item: "society:preserves_jar"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					count: 32L
-					id: "525A25679B6E936D"
-					item: "minecraft:beetroot"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "404255E4E397C094"
-					item: "minecraft:pumpkin"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "4DFD6480E8FF485B"
+					id: "10528A18EFA1224B"
 					item: "farm_and_charm:corn"
 					type: "item"
 				}
 				{
-					consume_items: true
-					count: 32L
-					id: "720B181BB226B422"
+					id: "2A66DE4B86C12568"
 					item: "society:eggplant"
+					type: "item"
+				}
+				{
+					id: "1765579326FB757D"
+					item: "minecraft:pumpkin"
+					type: "item"
+				}
+				{
+					id: "350C1AD567DB67EC"
+					item: "minecraft:beetroot"
 					type: "item"
 				}
 			]
 			title: "Autumn Crops Bundle"
 			x: 0.0d
-			y: -1.3d
+			y: -1.2142857142857224d
 		}
 		{
 			icon: "supplementaries:present_purple"
@@ -147,35 +135,8 @@
 				table_id: 9002246533416223198L
 				type: "random"
 			}]
+			shape: "none"
 			tasks: [
-				{
-					count: 8L
-					id: "179F23D91B7F215D"
-					item: "minecraft:egg"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "268538858E35B911"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "untitledduckmod:goose_egg"
-								}
-								{
-									Count: 1b
-									id: "untitledduckmod:duck_egg"
-								}
-							]
-						}
-					}
-					title: "Choice Item"
-					type: "item"
-				}
 				{
 					id: "6311F3FAC9E5755D"
 					item: {
@@ -223,35 +184,24 @@
 					type: "item"
 				}
 				{
-					id: "750B5529B27F849B"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "society:truffle"
-								}
-								{
-									Count: 1b
-									id: "minecraft:rabbit_foot"
-								}
-							]
-						}
-					}
-					title: "Choice Item"
-					type: "item"
-				}
-				{
 					id: "1E3334D99216AE48"
 					item: "society:fine_wool"
 					type: "item"
 				}
+				{
+					id: "4C6092038147B063"
+					item: "society:large_egg"
+					type: "item"
+				}
+				{
+					id: "38CA49D3F5035787"
+					item: "society:large_duck_egg"
+					type: "item"
+				}
 			]
 			title: "Husbandry Bundle"
-			x: 1.5d
-			y: -0.5d
+			x: 1.4857142857142875d
+			y: -0.4714285714285751d
 		}
 		{
 			description: ["Gold quality crops only. Only &63&r tasks required for bundle completion."]
@@ -264,6 +214,7 @@
 				item: "minecraft:sniffer_egg"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					count: 5L
@@ -331,8 +282,8 @@
 				}
 			]
 			title: "Quality Bundle"
-			x: 3.0d
-			y: 0.2d
+			x: 2.999999999999993d
+			y: 0.3285714285714221d
 		}
 		{
 			dependencies: [
@@ -342,16 +293,14 @@
 				"314D5DDD65659FDE"
 				"3EF57F71C1C786FE"
 			]
-			description: ["Collecting crops of every season and animal products completes the Pantry. This gives you &648 Greenhouse Glass&r, an expensive material that allows crops of any season to grow when the glass is at most 16 blocks above the crop."]
+			description: [
+				"Collecting crops of every season and animal products completes the Pantry. This rewards you with a building containing &648 Greenhouse Glass&r. This valuable material allows crops of any season to grow when the glass is at most 16 blocks above the crop."
+				""
+				"You can also choose to just receive the glass itself, if you'd like to build your own greenhouse."
+			]
 			icon: "furniture:explorers_box"
 			id: "7CBAF0748446A0C2"
 			rewards: [
-				{
-					count: 48
-					id: "5B9395E91C243572"
-					item: "moreminecarts:chiseled_organic_glass"
-					type: "item"
-				}
 				{
 					id: "4FC255BFC2126E9F"
 					item: {
@@ -365,7 +314,14 @@
 					}
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "46FDA42C9D22205F"
+					table_id: 5635253696830077546L
+					type: "choice"
+				}
 			]
+			shape: "none"
 			subtitle: "Reward: Greenhouse Starter"
 			tasks: [{
 				icon: "society:furniture_box"
@@ -376,8 +332,8 @@
 				value: 1
 			}]
 			title: "Pantry Completed!"
-			x: 0.0d
-			y: 1.0d
+			x: -0.05714285714285694d
+			y: 1.0714285714285694d
 		}
 	]
 	subtitle: ["Reward: Greenhouse Starter"]

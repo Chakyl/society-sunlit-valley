@@ -60,10 +60,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"4A48308E11476E9B"
-				"66E1AC55824DF1D9"
-			]
+			dependencies: ["66E1AC55824DF1D9"]
 			description: [
 				"In the Nether, native fish can be caught using the &6Lava Fishing Rod&r. "
 				""
@@ -88,8 +85,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
@@ -120,6 +117,7 @@
 			dependencies: [
 				"41FD632FA78AFB49"
 				"0F176FBF01ABB774"
+				"6689D68F72E56A40"
 			]
 			description: [
 				"&6Charging Rods&r take lightning from storms and create Batteries, used in crafting items that use electricity."
@@ -165,59 +163,11 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["0F176FBF01ABB774"]
-			description: [
-				"Wine can be made using a &6Advanced Wine Keg&r. This is a lengthy process, but quite profitable."
-				""
-				"Wines also have special effects that improve overtime as the wine exists in the world."
-				""
-				"To start, use the &6Grapevine Pot&r to make juice. You can hold &6W&r while hovering to see how."
-				""
-				"&oSeeds can be planted on Grass or Grapevine Stems. Jungle Seeds need Lattices.&r"
-			]
-			icon: "vinery:fermentation_barrel"
-			id: "18EB59F2591BAD51"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3AAB21C07F5C22C3"
-					table_id: 8298743981735202683L
-					type: "choice"
-				}
-				{
-					count: 8
-					id: "46F02B3F8E3245F3"
-					item: "vinery:grapevine_stem"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "7B53B6AFA4BBD05C"
-					item: "vinery:spruce_lattice"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "69DE0365011C79D3"
-					item: "vinery:fermentation_barrel"
-					type: "item"
-				}
-				{
-					id: "730F90C38D9E6061"
-					item: "vinery:grapevine_pot"
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 0.5d
-		}
-		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
 				"By now, your farm should have enough tools in order to make a steady income. Your next step should be unlocking the Skull Cavern."
 				""
-				"[\"\",{\"underlined\":1,\"text\":\"Complete the Vault (Click Me)\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4B9634D942E590AB\"}}]"
+				"[\"\",{\"text\":\"Complete the Vault (Click Me)\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4B9634D942E590AB\"}}]"
 				""
 				"The rewards on their own will make up for the cost."
 			]
@@ -394,8 +344,12 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["79C92AEDE15E7E6D"]
-			description: ["&6Organic Mash&r is difficult to come by, but grows any type of crop instantly. It is a byproduct of producing &6Vinegar&r."]
+			dependencies: ["0F176FBF01ABB774"]
+			description: [
+				"&6Organic Mash&r is difficult to come by, but grows any type of crop instantly. It is a byproduct of producing &6Vinegar&r."
+				""
+				"It can be used to instantly grow crops, as well as growing small mushrooms into larger ones. "
+			]
 			id: "572D70993411EA53"
 			rewards: [{
 				id: "212C9E001544957C"
@@ -444,8 +398,8 @@
 				item: "society:enriched_bone_meal"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
@@ -480,7 +434,7 @@
 				type: "item"
 			}]
 			title: "Advanced Ferilizers"
-			x: 4.5d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -488,7 +442,7 @@
 			description: [
 				"The &6Dehydrator&r can be used to dry fruits or vegetables in &61&r day. Fast, but not as profitable as other means."
 				""
-				"The first one will need to be bought from a &6Farmer&r, but more can be crafted using &6Raisins&r."
+				"The first one will need to be bought from a &6Market&r, but more can be crafted using &6Raisins&r."
 			]
 			id: "25569C0D687E6FA5"
 			rewards: [{
@@ -503,31 +457,6 @@
 			}]
 			x: 8.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["44A512703C4A9990"]
-			description: [
-				"If you haven't been paying attention to your skills, you'll find that some of them directly map to certain enchantments!"
-				""
-				"The &6Enchanting Table&r will allow you to unlock the final level of enchantment for things like Fortune or Looting, alongside enchantments that aren't included in the skill tree."
-				""
-				"The maximums of enchantments that are in the skill tree has been lowered!"
-			]
-			id: "6DF608316146EDC9"
-			rewards: [{
-				count: 16
-				id: "7A28CAAEE5FDA0F2"
-				item: "minecraft:book"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00B95ACB5C6F40E1"
-				item: "minecraft:enchanting_table"
-				type: "item"
-			}]
-			title: "Enchanter"
-			x: 10.5d
-			y: -0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -676,7 +605,7 @@
 			tasks: [{
 				icon: {
 					Count: 1
-					id: "splendid_slimes:slime_heart"
+					id: "splendid_slimes:slime_item"
 					tag: {
 						slime: {
 							id: "splendid_slimes:slimy"
@@ -1160,62 +1089,25 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["18EB59F2591BAD51"]
+			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"&6Advanced Wine Kegs&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				"Wines can be made with three fruits and even certain vegetables in a &6Wine Keg&r."
 				""
-				"Recipes can use the following juices:"
-				""
-				"- &cRed&r/&aWhite&r grape juice"
-				"- &cCrimson&r/&aWarped&r grape juice"
-				"- &eApple Juice&r (made using an Apple Press)"
-				""
-				"Juices are inserted in the top left slot of the Advanced Wine Keg."
+				"This process is lengthy, but much more profitable per-fruit than preserving."
 			]
-			icon: "vinery:red_grapejuice"
-			id: "180411EF1F7649DD"
+			id: "3C9A245CFCD5D8E8"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "47F40C9762972779"
-				table_id: 8298743981735202683L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "36017F8FB07D6021"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "vinery:white_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "vinery:red_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "nethervinery:warped_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "nethervinery:crimson_grapejuice"
-							}
-							{
-								Count: 1b
-								id: "vinery:apple_juice"
-							}
-						]
-					}
-				}
-				title: "Any Advanced Wine Keg juice"
+				id: "6766C5B6D5AD2DF5"
+				item: "society:wine_keg"
 				type: "item"
 			}]
-			title: "Juicing up the Wine"
-			x: 2.5d
-			y: 0.5d
+			tasks: [{
+				id: "42E7CABF0E6A19DC"
+				item: "society:wine_keg"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
@@ -1237,6 +1129,108 @@
 			}]
 			x: 8.0d
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"51772B6C1CD5DD1E"
+				"473D0A5E8D57CD4B"
+			]
+			description: [
+				"Not all mushrooms can be cultivated on &6Mushroom Soil&r. The power of the &6Mossberry&r can be used to make the &6Mushroom Log&r!"
+				""
+				"It draws from nearby trees to form different kinds of mushrooms every 4 days depending on the tree types. "
+				""
+				"The quantity and quality of them is impacted by the amount of nearby trees."
+			]
+			id: "0C5EB5F66FB04A29"
+			rewards: [{
+				id: "59AF65650E1BB645"
+				item: "society:cordycep"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1096A414E32EC541"
+				item: "society:mushroom_log"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"&6Mossberries&r are the jewels of &6Autumn&r!"
+				""
+				"They rarely grow on trees and drop when chopped. "
+				""
+				"Unlike other berries, they cannot be farmed like crops. "
+			]
+			id: "51772B6C1CD5DD1E"
+			rewards: [{
+				id: "03E0A5A2565799B6"
+				item: "society:mossberry_stew"
+				type: "item"
+			}]
+			tasks: [{
+				id: "424BBA830B722735"
+				item: "society:mossberry"
+				type: "item"
+			}]
+			title: "Autumn Tree Berry"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66E1AC55824DF1D9"]
+			description: ["Buried in the depths of the &6The Nether&r "]
+			icon: "etcetera:bismuth_ingot"
+			id: "6689D68F72E56A40"
+			rewards: [{
+				count: 4
+				id: "6B18B1CF41610DDF"
+				item: "etcetera:raw_bismuth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A65260FDC53A156"
+				item: "etcetera:raw_bismuth"
+				type: "item"
+			}]
+			title: "Nether Materia"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6689D68F72E56A40"]
+			description: [
+				"&6Bismuth Ingots&r can be made into a special glass that form &6Classic Pipes&r."
+				""
+				"When given a redstone signal, &6Copper Pipes&r can extract items from inventories and insert them into &6Item Pipes&r that route them in different directions."
+				""
+				"Different types pipes can be used to create handy systems for item transport on your farm."
+			]
+			icon: "classicpipes:oak_pipe"
+			id: "6C95E6AEEC55CFA5"
+			rewards: [{
+				count: 4
+				id: "18CC62D39ADF1ED4"
+				item: "classicpipes:advanced_copper_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C184749905BE27F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "classicpipes:pipes/item"
+					}
+				}
+				title: "Any Item Pipe"
+				type: "item"
+			}]
+			title: "Item Transport"
+			x: 3.5d
+			y: 1.5d
 		}
 	]
 	title: "III - Advanced Farming"

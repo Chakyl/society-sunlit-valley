@@ -15,7 +15,7 @@
 			description: [
 				"All armor must start off with a leather or wool base."
 				""
-				"Wool clothing can also be sewn if you can aquire a &6Sewing Table&r from a &6Leatherworker&r villager"
+				"Wool clothing can also be sewn if you can aquire a &6Sewing Table&r from a &6Market&r villager"
 			]
 			icon: {
 				Count: 1
@@ -1355,13 +1355,6 @@
 							{
 								Count: 1b
 								id: "justhammers:impact_core"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "justhammers:reinforced_core"
 								tag: {
 									Damage: 0
 								}

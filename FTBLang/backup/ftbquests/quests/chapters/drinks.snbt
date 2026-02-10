@@ -189,7 +189,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "45BF61F4FC6DE4FC"
@@ -205,7 +205,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "073591B2DEE7BCF4"
@@ -221,7 +221,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "7E88CB60317AF577"
@@ -237,7 +237,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "1A02D522BD4600F6"
@@ -253,7 +253,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "40C1911E470C61D5"
@@ -318,7 +318,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "28A1326708436D22"
@@ -334,7 +334,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "51B9DA9C11B5FBAF"
@@ -706,14 +706,14 @@
 		}
 		{
 			id: "4041362E384D0744"
-			subtitle: "&6Copper or Reinforced Brewingstation"
+			subtitle: "&6Reinforced Brewingstation"
 			tasks: [{
 				id: "588F67E2C1D9C39F"
 				item: "brewery:whiskey_jamesons_malt"
 				type: "item"
 			}]
 			x: 10.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			id: "381A3B258ACE31FD"
@@ -756,8 +756,8 @@
 				item: "brewery:whiskey_carrasconlabel"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.5d
+			x: 10.5d
+			y: 1.0d
 		}
 		{
 			id: "6A5A513E8C0455AF"
@@ -767,7 +767,7 @@
 				item: "brewery:whiskey_maggoallan"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 2.5d
 		}
 		{
@@ -778,7 +778,7 @@
 				item: "brewery:dark_brew"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 7.5d
 			y: 2.5d
 		}
 		{
@@ -983,6 +983,10 @@
 				"47DE6A5A64755084"
 				"5D6623B36EC39685"
 				"5D95CBE19118EAD4"
+				"1F23B0E775AD060D"
+				"5447B467AA6BA5F2"
+				"67622FAC6D509907"
+				"51CCE1E8F9C7560A"
 			]
 			hide_dependency_lines: true
 			id: "25EFF541E1F2C205"
@@ -1178,7 +1182,7 @@
 				item: "society:starcardi"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 2.5d
 		}
 		{
@@ -1210,6 +1214,7 @@
 		}
 		{
 			id: "3820DA7C3314E0AD"
+			subtitle: "&6Reinforced Brewingstation"
 			tasks: [{
 				id: "221FC963177CC334"
 				item: "society:beer_attunecore"
@@ -1227,6 +1232,52 @@
 			}]
 			x: -14.5d
 			y: 3.0d
+		}
+		{
+			id: "5447B467AA6BA5F2"
+			subtitle: "Not counted in Completionist Banner"
+			tasks: [{
+				id: "5DC170DD168FEF42"
+				item: "society:violet_moon"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			id: "67622FAC6D509907"
+			subtitle: "Not counted in Completionist Banner"
+			tasks: [{
+				id: "2156EC1DBE4BECB0"
+				item: "society:sparkling_le_roy"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			id: "1F23B0E775AD060D"
+			optional: true
+			subtitle: "Not counted in Completionist Banner"
+			tasks: [{
+				id: "3E70B5B8F6D3BFB6"
+				item: "society:laputa_franc"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			id: "51CCE1E8F9C7560A"
+			optional: true
+			subtitle: "Not counted in Completionist Banner"
+			tasks: [{
+				id: "5D30D0A1AF9AD89B"
+				item: "society:mana_king"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
 		}
 	]
 	title: "Brews"
