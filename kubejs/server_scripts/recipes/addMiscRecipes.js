@@ -1,6 +1,7 @@
 console.info("[SOCIETY] addMiscRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
+  e.shapeless("society:sun_candy", ['pamhc2trees:lemonitem', 'atmospheric:blood_orange', 'pamhc2trees:mangoitem', 'atmospheric:passion_fruit', Item.of('splendid_slimes:plort', '{plort:{id:"splendid_slimes:sweet"}}').strongNBT(), 'pamhc2trees:dragonfruititem', 'pamhc2trees:starfruititem', 'pamhc2trees:plumitem', 'pamhc2trees:peachitem'])
   e.shapeless(Item.of('society:invitation', '{type:{id:"society:carpenter"}}'), ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
   e.shaped("atmospheric:blood_orange", ["mmm", "mom", "mmm"], {
     o: "atmospheric:orange",
@@ -872,11 +873,11 @@ ServerEvents.recipes((e) => {
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });
-    e.shaped("society:mana_sprinkler", ["lil", "iSi", "lpl"], {
+  e.shaped("society:mana_sprinkler", ["lil", "iSi", "lPl"], {
     i: "botania:manasteel_ingot",
-    S: "society:gold_sprinkler",
+    S: "dew_drop_farmland_growth:gold_sprinkler",
     l: "botania:livingwood_log",
-    P: "botania:mana_pump",
+    P: "botania:pump",
   });
   e.shaped("society:mana_clock", ["mrm", "ncn", "mTm"], {
     r: "botania:rune_sloth",

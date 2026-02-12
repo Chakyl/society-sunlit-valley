@@ -1,0 +1,45 @@
+{
+	"id": "blacksmith_gift_disliked_6",
+	"title": "blacksmith introduction",
+	"description": "dialog.npc.blacksmith.gift.disliked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.gift_disliked.6.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.gift_disliked.6.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

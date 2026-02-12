@@ -32,36 +32,38 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
-				{
-					id: "05A8FA5B3C039A5E"
-					item: "aquaculture:carp"
-					type: "item"
-				}
 				{
 					id: "39BC4C648654AE4F"
 					item: "unusualfishmod:raw_beaked_herring"
 					type: "item"
 				}
 				{
-					id: "24CC40B6DAD53547"
-					item: "aquaculture:piranha"
+					id: "5D36A5EF7FA6EF6C"
+					item: {
+						Count: 1
+						id: "aquaculture:leech"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "0F41A4A343A85CE3"
-					item: "aquaculture:gar"
+					id: "4066FD502914ABAF"
+					item: "unusualfishmod:raw_bark_angelfish"
 					type: "item"
 				}
 				{
-					id: "3BE57E82E0862576"
+					id: "74203B5CCDDB8157"
 					item: "unusualfishmod:raw_snowflake"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest1.title}"
-			x: -3.0d
-			y: 0.2d
+			title: "{ftbquests.chapter.fish_tank.quest3F3D0F74A5BC0C4.title}"
+			x: -3.085714285714289d
+			y: 0.27142857142856514d
 		}
 		{
 			icon: "supplementaries:present_blue"
@@ -71,36 +73,32 @@
 				item: "society:fish_smoker"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					id: "45DF23803212A05F"
-					item: "aquaculture:smallmouth_bass"
+					id: "1BFE309FC8ED472C"
+					item: "unusualfishmod:raw_blind_sailfin"
 					type: "item"
 				}
 				{
-					id: "2298A0A1E94F9F66"
-					item: "aquaculture:catfish"
-					type: "item"
-				}
-				{
-					id: "29A90E0468CFE07F"
+					id: "05CDEA2CB60A8D93"
 					item: "aquaculture:synodontis"
 					type: "item"
 				}
 				{
-					id: "46C5CEB8A6BC2094"
+					id: "1A6378D19C79592D"
 					item: "aquaculture:brown_trout"
 					type: "item"
 				}
 				{
-					id: "0F34A2FC06E5BD27"
-					item: "unusualfishmod:raw_duality_damselfish"
+					id: "2FD5993F438E8E6B"
+					item: "aquaculture:rainbow_trout"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest2.title}"
-			x: 0.0d
-			y: -1.3d
+			title: "{ftbquests.chapter.fish_tank.quest76A35BBCA4E0CDD9.title}"
+			x: -0.028571428571424917d
+			y: -1.2714285714285793d
 		}
 		{
 			icon: "supplementaries:present_light_blue"
@@ -110,6 +108,7 @@
 				item: "vintagedelight:evaporator"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "5FF4C0CAA1EE6B48"
@@ -122,24 +121,19 @@
 					type: "item"
 				}
 				{
-					id: "4D450B7C7491445B"
-					item: "unusualfishmod:raw_picklefish"
+					id: "4EB716093337FDBD"
+					item: "unusualfishmod:raw_forkfish"
 					type: "item"
 				}
 				{
-					id: "6A619C6CD563BA6C"
-					item: "aquaculture:pollock"
-					type: "item"
-				}
-				{
-					id: "41071DEECA49AC79"
-					item: "aquaculture:jellyfish"
+					id: "4B6B4EB39C6C530C"
+					item: "aquaculture:atlantic_cod"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest3.title}"
-			x: 1.5d
-			y: -0.5d
+			title: "{ftbquests.chapter.fish_tank.quest4D00DF575B8FC1B2.title}"
+			x: 1.4571428571428555d
+			y: -0.5000000000000071d
 		}
 		{
 			icon: "supplementaries:present_green"
@@ -169,6 +163,7 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			tasks: [
 				{
 					id: "7A8F2C3A72DFA35B"
@@ -183,11 +178,6 @@
 				{
 					id: "3930026EAC5B7117"
 					item: "netherdepthsupgrade:searing_cod"
-					type: "item"
-				}
-				{
-					id: "4EA1C7474E55F69D"
-					item: "netherdepthsupgrade:bonefish"
 					type: "item"
 				}
 				{
@@ -228,13 +218,13 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.fish_tank.quest4.task_6068468386258017025.title}"
+					title: "{ftbquests.chapter.fish_tank.quest610AB8B499859791.task.6068468386258017025.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest4.title}"
-			x: 3.0d
-			y: 0.2d
+			title: "{ftbquests.chapter.fish_tank.quest610AB8B499859791.title}"
+			x: 2.999999999999993d
+			y: 0.27142857142856514d
 		}
 		{
 			icon: "supplementaries:present_red"
@@ -245,6 +235,7 @@
 				item: "crabbersdelight:crab_trap"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "7065B41BA0E27103"
@@ -267,9 +258,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest5.title}"
-			x: -1.5d
-			y: -0.5d
+			title: "{ftbquests.chapter.fish_tank.quest3129F3C2D43EE6EE.title}"
+			x: -1.5428571428571445d
+			y: -0.4714285714285751d
 		}
 		{
 			dependencies: [
@@ -279,7 +270,7 @@
 				"03F3D0F74A5BC0C4"
 				"3129F3C2D43EE6EE"
 			]
-			description: ["{ftbquests.chapter.fish_tank.quest6.description1}"]
+			description: ["{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.description1}"]
 			icon: "furniture:iron_fish_tank"
 			id: "469CEB4C8B3C0EA9"
 			rewards: [
@@ -302,18 +293,19 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.fish_tank.quest6.subtitle}"
+			shape: "none"
+			subtitle: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "46B1148F60C66C53"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.fish_tank.quest6.task_5093875259569237075.title}"
+				title: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.task.5093875259569237075.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.fish_tank.quest6.title}"
-			x: 0.0d
-			y: 1.0d
+			title: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.title}"
+			x: -0.028571428571424917d
+			y: 1.0714285714285694d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.fish_tank.subtitle0}"]

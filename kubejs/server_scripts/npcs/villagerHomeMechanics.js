@@ -92,7 +92,6 @@ BlockEvents.broken("society:villager_home", (e) => {
   const { block, player, level, server } = e;
   let nbt = block.getEntityData();
   const { type, placer, boundNpc } = nbt.data;
-  console.log(placer);
   if (player.getUuid().toString() !== placer && placer != -1) {
     player.tell(
       Text.translatable(
@@ -104,7 +103,6 @@ BlockEvents.broken("society:villager_home", (e) => {
   }
 
   let foundNpc = getBoundNpc(level, block, boundNpc);
-  console.log(foundNpc);
   if (foundNpc != -1) {
     foundNpc.setRemoved("unloaded_to_chunk");
     level.spawnParticles(
@@ -130,6 +128,7 @@ BlockEvents.broken("society:villager_home", (e) => {
     );
     block.popItem(Item.of(block.id, `{type:${type}}`));
   } else {
+    if (!(type == undefined || placer == undefined || boundNpc == undefined))
     e.cancel();
   }
 });

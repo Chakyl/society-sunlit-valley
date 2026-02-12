@@ -11,28 +11,28 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.transportation.quest1.description1}"
+				"{ftbquests.chapter.transportation.quest4622E3EC44CED1B6.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest1.description2}"
+				"{ftbquests.chapter.transportation.quest4622E3EC44CED1B6.description2}"
 			]
 			icon: "minecraft:minecart"
 			id: "4622E3EC44CED1B6"
 			size: 2.0d
 			tasks: [{
 				id: "5172EF5DBC41D8A8"
-				title: "{ftbquests.chapter.transportation.quest1.task_5869016450286606504.title}"
+				title: "{ftbquests.chapter.transportation.quest4622E3EC44CED1B6.task.5869016450286606504.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.transportation.quest1.title}"
+			title: "{ftbquests.chapter.transportation.quest4622E3EC44CED1B6.title}"
 			x: -4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
 			description: [
-				"{ftbquests.chapter.transportation.quest2.description1}"
+				"{ftbquests.chapter.transportation.questC5B1C74E340882B.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest2.description2}"
+				"{ftbquests.chapter.transportation.questC5B1C74E340882B.description2}"
 			]
 			id: "0C5B1C74E340882B"
 			rewards: [{
@@ -50,7 +50,7 @@
 		}
 		{
 			dependencies: ["0C5B1C74E340882B"]
-			description: ["{ftbquests.chapter.transportation.quest3.description1}"]
+			description: ["{ftbquests.chapter.transportation.questF77A3F0506C76B2.description1}"]
 			id: "0F77A3F0506C76B2"
 			rewards: [
 				{
@@ -76,7 +76,7 @@
 		}
 		{
 			dependencies: ["0C5B1C74E340882B"]
-			description: ["{ftbquests.chapter.transportation.quest4.description1}"]
+			description: ["{ftbquests.chapter.transportation.quest1FE9F1AD269303B3.description1}"]
 			id: "1FE9F1AD269303B3"
 			rewards: [{
 				count: 4
@@ -94,7 +94,7 @@
 		}
 		{
 			dependencies: ["0C5B1C74E340882B"]
-			description: ["{ftbquests.chapter.transportation.quest5.description1}"]
+			description: ["{ftbquests.chapter.transportation.quest6E7B80C8D3FD952D.description1}"]
 			id: "6E7B80C8D3FD952D"
 			rewards: [{
 				count: 2
@@ -113,11 +113,11 @@
 		{
 			dependencies: ["71C32483EE2418CA"]
 			description: [
-				"Signs can be used to fast travel provided a well made path is between them."
+				"{ftbquests.chapter.transportation.quest42A10CEE57513522.description1}"
 				""
-				"Use a &6Charting Map&r to start and finish charting, adding signs to the path by right clicking them."
+				"{ftbquests.chapter.transportation.quest42A10CEE57513522.description2}"
 				""
-				"You can search &6#path_block&r in JEI to see all the valid path blocks."
+				"{ftbquests.chapter.transportation.quest42A10CEE57513522.description3}"
 			]
 			icon: "supplementaries:sign_post_oak"
 			id: "42A10CEE57513522"
@@ -127,24 +127,24 @@
 				item: "via_romana:charting_map"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.transportation.quest6.subtitle}"
+			subtitle: "{ftbquests.chapter.transportation.quest42A10CEE57513522.subtitle}"
 			tasks: [{
 				id: "3580A14EBCD0BA25"
 				item: "via_romana:charting_map"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest6.title}"
+			title: "{ftbquests.chapter.transportation.quest42A10CEE57513522.title}"
 			x: -1.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
 			description: [
-				"{ftbquests.chapter.transportation.quest7.description1}"
+				"{ftbquests.chapter.transportation.quest53836B96EE81A695.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest7.description2}"
+				"{ftbquests.chapter.transportation.quest53836B96EE81A695.description2}"
 				""
-				"{ftbquests.chapter.transportation.quest7.description3}"
+				"{ftbquests.chapter.transportation.quest53836B96EE81A695.description3}"
 			]
 			icon: "create:track"
 			id: "53836B96EE81A695"
@@ -173,16 +173,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.transportation.quest7.title}"
+			title: "{ftbquests.chapter.transportation.quest53836B96EE81A695.title}"
 			x: -1.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
 			description: [
-				"{ftbquests.chapter.transportation.quest8.description1}"
+				"{ftbquests.chapter.transportation.quest3BC6467B02D74FAC.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest8.description2}"
+				"{ftbquests.chapter.transportation.quest3BC6467B02D74FAC.description2}"
 			]
 			icon: "smallships:oak_brigg"
 			id: "3BC6467B02D74FAC"
@@ -200,21 +200,21 @@
 						value: "smallships:ships"
 					}
 				}
-				title: "{ftbquests.chapter.transportation.quest8.task_3584176801100971657.title}"
+				title: "{ftbquests.chapter.transportation.quest3BC6467B02D74FAC.task.3584176801100971657.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest8.title}"
+			title: "{ftbquests.chapter.transportation.quest3BC6467B02D74FAC.title}"
 			x: -4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0C5B1C74E340882B"]
 			description: [
-				"{ftbquests.chapter.transportation.quest9.description1}"
+				"{ftbquests.chapter.transportation.quest7BFB656868B2395C.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest9.description2}"
+				"{ftbquests.chapter.transportation.quest7BFB656868B2395C.description2}"
 				""
-				"{ftbquests.chapter.transportation.quest9.description3}"
+				"{ftbquests.chapter.transportation.quest7BFB656868B2395C.description3}"
 			]
 			icon: "moreminecarts:wooden_projector_rail"
 			id: "7BFB656868B2395C"
@@ -245,16 +245,16 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.transportation.quest9.task_3837034238568957260.title}"
+				title: "{ftbquests.chapter.transportation.quest7BFB656868B2395C.task.3837034238568957260.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest9.title}"
+			title: "{ftbquests.chapter.transportation.quest7BFB656868B2395C.title}"
 			x: -9.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["0C5B1C74E340882B"]
-			description: ["{ftbquests.chapter.transportation.quest10.description1}"]
+			description: ["{ftbquests.chapter.transportation.questE93089181D8EE7B.description1}"]
 			icon: {
 				Count: 1
 				id: "moreminecarts:coupler"
@@ -285,19 +285,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.transportation.quest10.task_4800438316975324135.title}"
+				title: "{ftbquests.chapter.transportation.questE93089181D8EE7B.task.4800438316975324135.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest10.title}"
+			title: "{ftbquests.chapter.transportation.questE93089181D8EE7B.title}"
 			x: -8.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["53836B96EE81A695"]
 			description: [
-				"{ftbquests.chapter.transportation.quest11.description1}"
+				"{ftbquests.chapter.transportation.quest32A9D7283F680AE3.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest11.description2}"
+				"{ftbquests.chapter.transportation.quest32A9D7283F680AE3.description2}"
 			]
 			icon: "createrailwaysnavigator:advanced_display_block"
 			id: "32A9D7283F680AE3"
@@ -318,18 +318,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.transportation.quest11.title}"
+			title: "{ftbquests.chapter.transportation.quest32A9D7283F680AE3.title}"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
 			description: [
-				"{ftbquests.chapter.transportation.quest12.description1}"
+				"{ftbquests.chapter.transportation.quest164AAAAD6433695A.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest12.description2}"
+				"{ftbquests.chapter.transportation.quest164AAAAD6433695A.description2}"
 				""
-				"{ftbquests.chapter.transportation.quest12.description3}"
+				"{ftbquests.chapter.transportation.quest164AAAAD6433695A.description3}"
 			]
 			id: "164AAAAD6433695A"
 			rewards: [{
@@ -348,18 +348,18 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest12.title}"
+			title: "{ftbquests.chapter.transportation.quest164AAAAD6433695A.title}"
 			x: -6.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
 			description: [
-				"{ftbquests.chapter.transportation.quest13.description1}"
+				"{ftbquests.chapter.transportation.quest5A0AA87EA971F13F.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest13.description2}"
+				"{ftbquests.chapter.transportation.quest5A0AA87EA971F13F.description2}"
 				""
-				"{ftbquests.chapter.transportation.quest13.description3}"
+				"{ftbquests.chapter.transportation.quest5A0AA87EA971F13F.description3}"
 			]
 			icon: {
 				Count: 1
@@ -394,16 +394,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.transportation.quest13.title}"
+			title: "{ftbquests.chapter.transportation.quest5A0AA87EA971F13F.title}"
 			x: -2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["5A0AA87EA971F13F"]
 			description: [
-				"{ftbquests.chapter.transportation.quest14.description1}"
+				"{ftbquests.chapter.transportation.quest7EE92D71D7478FA4.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest14.description2}"
+				"{ftbquests.chapter.transportation.quest7EE92D71D7478FA4.description2}"
 			]
 			id: "7EE92D71D7478FA4"
 			rewards: [{
@@ -417,16 +417,16 @@
 				item: "society:car_key"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest14.title}"
+			title: "{ftbquests.chapter.transportation.quest7EE92D71D7478FA4.title}"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["71C32483EE2418CA"]
 			description: [
-				"{ftbquests.chapter.transportation.quest15.description1}"
+				"{ftbquests.chapter.transportation.quest2D553026BFCB2CF0.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest15.description2}"
+				"{ftbquests.chapter.transportation.quest2D553026BFCB2CF0.description2}"
 			]
 			id: "2D553026BFCB2CF0"
 			rewards: [{
@@ -445,16 +445,16 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest15.title}"
+			title: "{ftbquests.chapter.transportation.quest2D553026BFCB2CF0.title}"
 			x: -2.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["2D553026BFCB2CF0"]
 			description: [
-				"{ftbquests.chapter.transportation.quest16.description1}"
+				"{ftbquests.chapter.transportation.quest5A3012C1FA5184A2.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest16.description2}"
+				"{ftbquests.chapter.transportation.quest5A3012C1FA5184A2.description2}"
 			]
 			id: "5A3012C1FA5184A2"
 			rewards: [{
@@ -473,18 +473,18 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest16.title}"
+			title: "{ftbquests.chapter.transportation.quest5A3012C1FA5184A2.title}"
 			x: -2.5d
 			y: -8.5d
 		}
 		{
 			dependencies: ["71C32483EE2418CA"]
 			description: [
-				"{ftbquests.chapter.transportation.quest17.description1}"
+				"{ftbquests.chapter.transportation.quest562817C23134A26D.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest17.description2}"
+				"{ftbquests.chapter.transportation.quest562817C23134A26D.description2}"
 				""
-				"{ftbquests.chapter.transportation.quest17.description3}"
+				"{ftbquests.chapter.transportation.quest562817C23134A26D.description3}"
 			]
 			id: "562817C23134A26D"
 			rewards: [{
@@ -517,19 +517,19 @@
 		{
 			dependencies: ["4622E3EC44CED1B6"]
 			description: [
-				"{ftbquests.chapter.transportation.quest18.description1}"
+				"{ftbquests.chapter.transportation.quest71C32483EE2418CA.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest18.description2}"
+				"{ftbquests.chapter.transportation.quest71C32483EE2418CA.description2}"
 			]
 			icon: "minecraft:ender_eye"
 			id: "71C32483EE2418CA"
 			size: 1.0d
 			tasks: [{
 				id: "6E03C1C00F4D8506"
-				title: "{ftbquests.chapter.transportation.quest18.task_7927392799736825094.title}"
+				title: "{ftbquests.chapter.transportation.quest71C32483EE2418CA.task.7927392799736825094.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.transportation.quest18.title}"
+			title: "{ftbquests.chapter.transportation.quest71C32483EE2418CA.title}"
 			x: -2.5d
 			y: -5.0d
 		}
@@ -539,9 +539,9 @@
 				"71C32483EE2418CA"
 			]
 			description: [
-				"{ftbquests.chapter.transportation.quest19.description1}"
+				"{ftbquests.chapter.transportation.quest693FFA0C3FD1A078.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest19.description2}"
+				"{ftbquests.chapter.transportation.quest693FFA0C3FD1A078.description2}"
 			]
 			id: "693FFA0C3FD1A078"
 			rewards: [{
@@ -575,19 +575,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.transportation.quest19.task_273325910094846983.title}"
+				title: "{ftbquests.chapter.transportation.quest693FFA0C3FD1A078.task.273325910094846983.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.transportation.quest19.title}"
+			title: "{ftbquests.chapter.transportation.quest693FFA0C3FD1A078.title}"
 			x: -4.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["71C32483EE2418CA"]
 			description: [
-				"{ftbquests.chapter.transportation.quest20.description1}"
+				"{ftbquests.chapter.transportation.quest12FC0701CC742176.description1}"
 				""
-				"{ftbquests.chapter.transportation.quest20.description2}"
+				"{ftbquests.chapter.transportation.quest12FC0701CC742176.description2}"
 			]
 			id: "12FC0701CC742176"
 			rewards: [{

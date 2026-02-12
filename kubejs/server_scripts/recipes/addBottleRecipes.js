@@ -88,8 +88,20 @@ ServerEvents.recipes((e) => {
       container: "minecraft:glass_bottle",
     },
     {
+      item: "society:mystic_syrup",
+      fluid: "society:mystic_syrup",
+      amount: 250,
+      container: "minecraft:glass_bottle",
+    },
+    {
       item: "society:maple_syrup",
       fluid: "society:maple_syrup",
+      amount: 250,
+      container: "minecraft:glass_bottle",
+    },
+    {
+      item: "society:aloe_preserves",
+      fluid: "create_central_kitchen:aloe_gel",
       amount: 250,
       container: "minecraft:glass_bottle",
     },

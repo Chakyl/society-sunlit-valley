@@ -12,11 +12,11 @@
 		{
 			dependencies: ["2F83B8F22344FAD7"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest1.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest146475549DD7BF4A.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest1.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest146475549DD7BF4A.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest1.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest146475549DD7BF4A.description3}"
 			]
 			id: "146475549DD7BF4A"
 			rewards: [{
@@ -29,21 +29,21 @@
 				biome: "society:umbra_barrens"
 				icon: "minecraft:end_stone"
 				id: "52727B8A0D17120B"
-				title: "{ftbquests.chapter.iv__prismatic_farming.quest1.task_5940946691310424587.title}"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest146475549DD7BF4A.task.5940946691310424587.title}"
 				type: "biome"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest1.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest146475549DD7BF4A.title}"
 			x: -4.5d
 			y: 21.0d
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
 			description: [
-				"Occasionally in the Skull Cavern you may come across a &6Trial Chamber&r."
+				"{ftbquests.chapter.iv__prismatic_farming.quest68915F617033BDF9.description1}"
 				""
-				"These dungeons are full of &6artifacts&r and &6relics&r, and can be found by using a key on a Trial Vault."
+				"{ftbquests.chapter.iv__prismatic_farming.quest68915F617033BDF9.description2}"
 				""
-				"Drinking an &6Ominous Bottle&r will give you better drops for fighting stronger mobs from the Trial Spawners."
+				"{ftbquests.chapter.iv__prismatic_farming.quest68915F617033BDF9.description3}"
 			]
 			id: "68915F617033BDF9"
 			rewards: [
@@ -62,16 +62,16 @@
 				icon: "trials:trial_key_ominous"
 				id: "238260076624C9BF"
 				structure: "trials:trials_chambers"
-				title: "Find a Trial Chamber"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest68915F617033BDF9.task.2558713123194587583.title}"
 				type: "structure"
 			}]
-			title: "Trial Chambers"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest68915F617033BDF9.title}"
 			x: -3.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest15.description1}"]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.questE4EA6B5E8E6361C.description1}"]
 			id: "0E4EA6B5E8E6361C"
 			rewards: [{
 				id: "589BBF90DAD504D7"
@@ -88,7 +88,7 @@
 		}
 		{
 			dependencies: ["38AC25E172172654"]
-			description: ["{ftbquests.chapter.iv__prismatic_farming.quest3.description1}"]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest6635A53C7AF81CB3.description1}"]
 			id: "6635A53C7AF81CB3"
 			rewards: [{
 				id: "494951B9286CC669"
@@ -106,9 +106,9 @@
 		{
 			dependencies: ["3FA607115DB107D9"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest4.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4564673A6912E917.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest4.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4564673A6912E917.description2}"
 			]
 			id: "4564673A6912E917"
 			rewards: [{
@@ -130,9 +130,9 @@
 				"3C61AB99F40B709F"
 			]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest5.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest40AD1233DF08EBCC.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest5.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest40AD1233DF08EBCC.description2}"
 			]
 			id: "40AD1233DF08EBCC"
 			rewards: [{
@@ -150,11 +150,11 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest6.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6412C4FB8294A6E2.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest6.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6412C4FB8294A6E2.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest6.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6412C4FB8294A6E2.description3}"
 			]
 			id: "6412C4FB8294A6E2"
 			rewards: [{
@@ -174,11 +174,11 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest8.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest8.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest8.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description3}"
 			]
 			icon: "minecraft:fletching_table"
 			id: "41C453E806763C4F"
@@ -242,19 +242,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.iv__prismatic_farming.quest8.task_7493457486177475867.title}"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.task.7493457486177475867.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest8.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.title}"
 			x: -12.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest9.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest1A81A877A381DB97.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest9.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest1A81A877A381DB97.description2}"
 			]
 			icon: "society:magic_rope"
 			id: "1A81A877A381DB97"
@@ -276,16 +276,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest9.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest1A81A877A381DB97.title}"
 			x: -12.0d
 			y: 16.5d
 		}
 		{
 			dependencies: ["6A94BB4CB99D814E"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest10.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest115795B60C6CA0ED.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest10.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest115795B60C6CA0ED.description2}"
 			]
 			id: "115795B60C6CA0ED"
 			rewards: [{
@@ -304,7 +304,7 @@
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
-			description: ["{ftbquests.chapter.iv__prismatic_farming.quest11.description1}"]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest4E5BF157FDA7490A.description1}"]
 			id: "4E5BF157FDA7490A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -317,15 +317,15 @@
 				item: "society:cornucopia"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest11.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest4E5BF157FDA7490A.title}"
 			x: 1.0d
 			y: 12.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest12.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest7B26713E5E4E25CB.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest12.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest7B26713E5E4E25CB.description2}"
 			]
 			id: "7B26713E5E4E25CB"
 			rewards: [{
@@ -339,16 +339,16 @@
 				item: "society:sparkstone"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest12.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest7B26713E5E4E25CB.title}"
 			x: 2.5d
 			y: 12.5d
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest13.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest42B424793E1E91D3.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest13.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest42B424793E1E91D3.description2}"
 			]
 			id: "42B424793E1E91D3"
 			rewards: [{
@@ -367,11 +367,11 @@
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest14.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4759B2BFFF26E78F.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest14.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4759B2BFFF26E78F.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest14.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4759B2BFFF26E78F.description3}"
 			]
 			icon: "society:artisan_hopper"
 			id: "4759B2BFFF26E78F"
@@ -383,7 +383,7 @@
 				item: "society:sparkstone"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest14.subtitle}"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest4759B2BFFF26E78F.subtitle}"
 			tasks: [
 				{
 					id: "5B988B04E253D0CA"
@@ -402,13 +402,13 @@
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest15.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4D1F2652FD9DEF69.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest15.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4D1F2652FD9DEF69.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest15.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4D1F2652FD9DEF69.description3}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest15.description4}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4D1F2652FD9DEF69.description4}"
 			]
 			id: "4D1F2652FD9DEF69"
 			rewards: [{
@@ -427,37 +427,37 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest16.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5A369FC904BCF5EE.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest16.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5A369FC904BCF5EE.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest16.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5A369FC904BCF5EE.description3}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest16.description4}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5A369FC904BCF5EE.description4}"
 			]
 			icon: "society:skull_cavern_teleporter"
 			id: "5A369FC904BCF5EE"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest16.subtitle}"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest5A369FC904BCF5EE.subtitle}"
 			tasks: [{
 				dimension: "society:skull_cavern"
 				icon: "minecraft:skeleton_skull"
 				id: "53F45DEC3FD0866C"
-				title: "{ftbquests.chapter.iv__prismatic_farming.quest16.task_6049563468729714284.title}"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest5A369FC904BCF5EE.task.6049563468729714284.title}"
 				type: "dimension"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest16.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest5A369FC904BCF5EE.title}"
 			x: -4.5d
 			y: 6.75d
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest17.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3C61AB99F40B709F.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest17.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3C61AB99F40B709F.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest17.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3C61AB99F40B709F.description3}"
 			]
 			id: "3C61AB99F40B709F"
 			rewards: [{
@@ -471,16 +471,16 @@
 				item: "oreganized:raw_lead"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest17.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest3C61AB99F40B709F.title}"
 			x: -3.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["5A369FC904BCF5EE"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest18.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6A94BB4CB99D814E.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest18.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6A94BB4CB99D814E.description2}"
 			]
 			id: "6A94BB4CB99D814E"
 			rewards: [{
@@ -496,19 +496,19 @@
 				type: "questsadditions:break"
 				value: 1L
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest18.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest6A94BB4CB99D814E.title}"
 			x: -4.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["6A94BB4CB99D814E"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest19.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.questDC68C5CF6D82372.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest19.description2}"
-				"{ftbquests.chapter.iv__prismatic_farming.quest19.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.questDC68C5CF6D82372.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.questDC68C5CF6D82372.description3}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest19.description4}"
+				"{ftbquests.chapter.iv__prismatic_farming.questDC68C5CF6D82372.description4}"
 			]
 			id: "0DC68C5CF6D82372"
 			rewards: [{
@@ -525,18 +525,18 @@
 				type: "questsadditions:break"
 				value: 1L
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest19.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.questDC68C5CF6D82372.title}"
 			x: -4.5d
 			y: 12.5d
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest20.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3FA607115DB107D9.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest20.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3FA607115DB107D9.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest20.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3FA607115DB107D9.description3}"
 			]
 			id: "3FA607115DB107D9"
 			rewards: [{
@@ -552,18 +552,18 @@
 				type: "questsadditions:break"
 				value: 1L
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest20.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest3FA607115DB107D9.title}"
 			x: -4.5d
 			y: 16.5d
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest21.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest2F83B8F22344FAD7.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest21.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest2F83B8F22344FAD7.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest21.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest2F83B8F22344FAD7.description3}"
 			]
 			icon: "society:end_stone_boulder"
 			id: "2F83B8F22344FAD7"
@@ -592,7 +592,7 @@
 					value: 1L
 				}
 			]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest21.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest2F83B8F22344FAD7.title}"
 			x: -4.5d
 			y: 19.0d
 		}
@@ -602,9 +602,9 @@
 				"38AC25E172172654"
 			]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest22.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest7D25F7C2281DBCD0.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest22.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest7D25F7C2281DBCD0.description2}"
 			]
 			id: "7D25F7C2281DBCD0"
 			rewards: [{
@@ -617,16 +617,16 @@
 				item: "society:crystalarium"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest22.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest7D25F7C2281DBCD0.title}"
 			x: -8.5d
 			y: 19.0d
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest23.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4A96DC00D7D0CAD6.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest23.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4A96DC00D7D0CAD6.description2}"
 			]
 			id: "4A96DC00D7D0CAD6"
 			rewards: [{
@@ -648,9 +648,9 @@
 				"38AC25E172172654"
 			]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest24.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest62CB7BAB9BBB4030.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest24.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest62CB7BAB9BBB4030.description2}"
 			]
 			icon: "splendid_slimes:slime_incubator"
 			id: "62CB7BAB9BBB4030"
@@ -671,7 +671,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest24.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest62CB7BAB9BBB4030.title}"
 			x: -6.5d
 			y: 19.0d
 		}
@@ -679,9 +679,9 @@
 			dependencies: ["38AC25E172172654"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest25.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4ABFC024D15BFC10.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest25.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4ABFC024D15BFC10.description2}"
 			]
 			hide_dependency_lines: false
 			id: "4ABFC024D15BFC10"
@@ -696,16 +696,16 @@
 				item: "splendid_slimes:plort_press"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest25.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest4ABFC024D15BFC10.title}"
 			x: -6.5d
 			y: 20.0d
 		}
 		{
 			dependencies: ["4564673A6912E917"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest26.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest38AC25E172172654.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest26.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest38AC25E172172654.description2}"
 			]
 			id: "38AC25E172172654"
 			rewards: [{
@@ -731,9 +731,9 @@
 				"38AC25E172172654"
 			]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest27.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4092A4464F986217.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest27.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest4092A4464F986217.description2}"
 			]
 			id: "4092A4464F986217"
 			rewards: [{
@@ -747,16 +747,16 @@
 				item: "meadow:cheese_form"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest27.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest4092A4464F986217.title}"
 			x: -8.5d
 			y: 20.0d
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest28.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5558DB4DE54C890D.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest28.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest5558DB4DE54C890D.description2}"
 			]
 			icon: "society:ancient_cog"
 			id: "5558DB4DE54C890D"
@@ -778,13 +778,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest28.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest5558DB4DE54C890D.title}"
 			x: -11.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["5558DB4DE54C890D"]
-			description: ["{ftbquests.chapter.iv__prismatic_farming.quest29.description1}"]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest72CCDB6B078E8908.description1}"]
 			id: "72CCDB6B078E8908"
 			rewards: [{
 				id: "724608884B0BFC47"
@@ -802,9 +802,9 @@
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest30.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6C729A76F44E32D0.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest30.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6C729A76F44E32D0.description2}"
 			]
 			id: "6C729A76F44E32D0"
 			rewards: [{
@@ -829,9 +829,9 @@
 		{
 			dependencies: ["0E4EA6B5E8E6361C"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest31.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest52A790F80019F520.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest31.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest52A790F80019F520.description2}"
 			]
 			id: "52A790F80019F520"
 			rewards: [{
@@ -850,9 +850,9 @@
 		{
 			dependencies: ["41C453E806763C4F"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest32.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.questE13E56F342F243F.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest32.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.questE13E56F342F243F.description2}"
 			]
 			id: "0E13E56F342F243F"
 			rewards: [{
@@ -871,9 +871,9 @@
 		{
 			dependencies: ["0E13E56F342F243F"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest33.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest35A8A8F8898AE3E5.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest33.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest35A8A8F8898AE3E5.description2}"
 			]
 			id: "35A8A8F8898AE3E5"
 			tasks: [{
@@ -887,9 +887,9 @@
 		{
 			dependencies: ["63F8C52D082BBCB3"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest34.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3782D1F1A74349.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest34.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest3782D1F1A74349.description2}"
 			]
 			icon: "society:growth_obelisk"
 			id: "003782D1F1A74349"
@@ -899,7 +899,7 @@
 				item: "society:spark_gro"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest34.subtitle}"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest3782D1F1A74349.subtitle}"
 			tasks: [
 				{
 					id: "3359F8B677711ADC"
@@ -918,9 +918,9 @@
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest35.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest63F8C52D082BBCB3.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest35.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest63F8C52D082BBCB3.description2}"
 			]
 			id: "63F8C52D082BBCB3"
 			rewards: [{
@@ -933,19 +933,19 @@
 				item: "society:magic_bulb"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest35.title}"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest63F8C52D082BBCB3.title}"
 			x: -1.5d
 			y: 18.5d
 		}
 		{
 			dependencies: ["3C61AB99F40B709F"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest36.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest53C771625381F8F8.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest36.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest53C771625381F8F8.description2}"
 				""
 				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.iv__prismatic_farming.quest36.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"53836B96EE81A695\"}}]"
+				"[\"\",{\"translate\":\"ftbquests.chapter.iv__prismatic_farming.quest53C771625381F8F8.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"53836B96EE81A695\"}}]"
 			]
 			id: "53C771625381F8F8"
 			rewards: [{
@@ -964,9 +964,9 @@
 		{
 			dependencies: ["7B26713E5E4E25CB"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest37.description1}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest33BD4404990D4D89.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest37.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest33BD4404990D4D89.description2}"
 			]
 			id: "33BD4404990D4D89"
 			rewards: [{
@@ -986,11 +986,11 @@
 		{
 			dependencies: ["38AC25E172172654"]
 			description: [
-				"The &6Advanced Wine Keg&r offers more complex but faster winemaking."
+				"{ftbquests.chapter.iv__prismatic_farming.quest506B32619EB8477F.description1}"
 				""
-				"It can produce wines far faster than its based version, but requires juice from grapes to speed up the fermentation process."
+				"{ftbquests.chapter.iv__prismatic_farming.quest506B32619EB8477F.description2}"
 				""
-				"&oIt can also be automated without the need for Sparkstone.&r"
+				"{ftbquests.chapter.iv__prismatic_farming.quest506B32619EB8477F.description3}"
 			]
 			icon: "vinery:fermentation_barrel"
 			id: "506B32619EB8477F"
@@ -1032,15 +1032,15 @@
 		{
 			dependencies: ["506B32619EB8477F"]
 			description: [
-				"&6Advanced Wine Kegs&r need juice, empty wine bottles, and their ingredients to work. The juice a given wine needs can be found in the recipe using JEI by hovering over the bar in the middle."
+				"{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.description1}"
 				""
-				"Recipes can use the following juices:"
+				"{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.description2}"
 				""
-				"- &cRed&r/&aWhite&r grape juice"
-				"- &cCrimson&r/&aWarped&r grape juice"
-				"- &eApple Juice&r (made using an Apple Press)"
+				"{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.description4}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.description5}"
 				""
-				"Juices are inserted in the top left slot of the Fermentation Barrel."
+				"{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.description6}"
 			]
 			icon: "vinery:red_grapejuice"
 			id: "094497558E9DB19C"
@@ -1080,21 +1080,21 @@
 						]
 					}
 				}
-				title: "Any Fermentation Barrel juice"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.task.8039588347925596082.title}"
 				type: "item"
 			}]
-			title: "Juicing up the Wine"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest94497558E9DB19C.title}"
 			x: -7.5d
 			y: 22.5d
 		}
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
 			description: [
-				"The &6Pickling Can&r is an efficient way to pickle certain vegetables."
+				"{ftbquests.chapter.iv__prismatic_farming.quest38D4A6A3CA1C015.description1}"
 				""
-				"It requires adjacent Salt Layers produced by an &6Evaporator&r, but does its job faster than other methods. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest38D4A6A3CA1C015.description2}"
 				""
-				"High quality vegetables will produce high quality pickles!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest38D4A6A3CA1C015.description3}"
 			]
 			id: "038D4A6A3CA1C015"
 			rewards: [{
@@ -1108,16 +1108,16 @@
 				item: "society:pickling_can"
 				type: "item"
 			}]
-			title: "Quality Pickling"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest38D4A6A3CA1C015.title}"
 			x: -3.0d
 			y: 19.0d
 		}
 		{
 			dependencies: ["25677844C218103A"]
 			description: [
-				"Unlocking &6Fishing Mastery&r provides special tools for both manual fishing and ponds when unlocked."
+				"{ftbquests.chapter.iv__prismatic_farming.quest21671DA370EA7A37.description1}"
 				""
-				"Once unlocked, the associated items can be bought from the &6Fisher&r."
+				"{ftbquests.chapter.iv__prismatic_farming.quest21671DA370EA7A37.description2}"
 			]
 			id: "21671DA370EA7A37"
 			rewards: [{
@@ -1137,7 +1137,7 @@
 				}
 				id: "7162E14466460F42"
 				stage: "fishing_mastery"
-				title: "Unlock Fishing Mastery"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest21671DA370EA7A37.task.8170340357893394242.title}"
 				type: "gamestage"
 			}]
 			x: -4.5d
@@ -1146,9 +1146,9 @@
 		{
 			dependencies: ["21671DA370EA7A37"]
 			description: [
-				"The &6Needle Bobber&r and &6Net Bobbers&r are two sides of the same coin, making the fishing minigame much more difficult for a huge boost in rewards."
+				"{ftbquests.chapter.iv__prismatic_farming.quest785F3754068D5C2D.description1}"
 				""
-				"They'll only be useful to rod champion (or a person that's just upgraded their rod a ton)."
+				"{ftbquests.chapter.iv__prismatic_farming.quest785F3754068D5C2D.description2}"
 			]
 			icon: "society:needle_bobber"
 			id: "785F3754068D5C2D"
@@ -1175,16 +1175,16 @@
 						]
 					}
 				}
-				title: "Needle or Net Bobber"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest785F3754068D5C2D.task.5837476674450815330.title}"
 				type: "item"
 			}]
-			title: "Masterful Bobbers"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest785F3754068D5C2D.title}"
 			x: -5.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["25677844C218103A"]
-			description: ["Unlocking &6Husbandry Mastery&r allows you to upgrade the production of your animals significantly."]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest3979B0AD660A33D2.description1}"]
 			id: "3979B0AD660A33D2"
 			rewards: [{
 				count: 3
@@ -1197,7 +1197,7 @@
 				icon: "society:milk_pail"
 				id: "5492353782FA1337"
 				stage: "husbandry_mastery"
-				title: "Unlock Husbandry Mastery"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest3979B0AD660A33D2.task.6093991758322602807.title}"
 				type: "gamestage"
 			}]
 			x: -7.0d
@@ -1206,11 +1206,11 @@
 		{
 			dependencies: ["21671DA370EA7A37"]
 			description: [
-				"If you've more than a handful of &6Fish Ponds&r, you may be overflowing with &6Roe&r from fish whos produce items are more valuable than the money its worth."
+				"{ftbquests.chapter.iv__prismatic_farming.quest1DCBAC91CE9AAD60.description1}"
 				""
-				"The &6Roe Recycler&r addresses this, allowing you to get a few more chances at items with every peice of roe. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest1DCBAC91CE9AAD60.description2}"
 				""
-				"It rolls the entire Fish Pond loot table at a random population for each Roe processed. If it doesn't drop anything, it'll have a 10% chance to produce &6Algae&r."
+				"{ftbquests.chapter.iv__prismatic_farming.quest1DCBAC91CE9AAD60.description3}"
 			]
 			id: "1DCBAC91CE9AAD60"
 			rewards: [{
@@ -1230,9 +1230,9 @@
 		{
 			dependencies: ["25677844C218103A"]
 			description: [
-				"Unlocking &6Adventuring Mastery&r allows you to take your beloved pets on grand adventures without the fear of losing them! It also allows more options with enchanting past the skill tree enchantments."
+				"{ftbquests.chapter.iv__prismatic_farming.quest76A60EE6F3E0FF72.description1}"
 				""
-				"Once unlocked, certain associated items can be bought from the &6Guild&r and &6Wizard&r."
+				"{ftbquests.chapter.iv__prismatic_farming.quest76A60EE6F3E0FF72.description2}"
 			]
 			id: "76A60EE6F3E0FF72"
 			rewards: [{
@@ -1253,7 +1253,7 @@
 				id: "60760AF29A6A1954"
 				secret: true
 				stage: "adventuring_mastery"
-				title: "Unlock Adventuring Mastery"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest76A60EE6F3E0FF72.task.6950755111981947220.title}"
 				type: "gamestage"
 			}]
 			x: -2.0d
@@ -1261,7 +1261,7 @@
 		}
 		{
 			dependencies: ["76A60EE6F3E0FF72"]
-			description: ["The &6Guild&r will now sell you &6Collar Tags&r, a conduit for enchanting your pets to make them battle-ready."]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest181794D54A635F81.description1}"]
 			id: "181794D54A635F81"
 			rewards: [{
 				id: "284F02BE3A8C125C"
@@ -1282,18 +1282,18 @@
 				item: "domesticationinnovation:collar_tag"
 				type: "item"
 			}]
-			title: "Powerful Beasts"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest181794D54A635F81.title}"
 			x: -1.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["76A60EE6F3E0FF72"]
 			description: [
-				"Now that your pets are ready to adventure with you, the &6Guild&r will now sells supplies to keep them safe."
+				"{ftbquests.chapter.iv__prismatic_farming.quest40C8DC3C2A22F632.description1}"
 				""
-				"Most notable is the &6Pet Bed&r, which allows your pets to respawn if they somehow lose the battle. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest40C8DC3C2A22F632.description2}"
 				""
-				"Make sure you see the ZZZs above the pet's bed after placing them there!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest40C8DC3C2A22F632.description3}"
 			]
 			icon: "domesticationinnovation:pet_bed_white"
 			id: "40C8DC3C2A22F632"
@@ -1319,16 +1319,16 @@
 					type: "item"
 				}
 			]
-			title: "Pet Utilities"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest40C8DC3C2A22F632.title}"
 			x: -2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3979B0AD660A33D2"]
 			description: [
-				"&6Animal Crackers&r are mystical foods that allow farm animals to produce double when eaten by one. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest505C0E636F881791.description1}"
 				""
-				"They can be found randomly throughout the world from your daily farming activities."
+				"{ftbquests.chapter.iv__prismatic_farming.quest505C0E636F881791.description2}"
 			]
 			id: "505C0E636F881791"
 			rewards: [{
@@ -1347,11 +1347,11 @@
 		{
 			dependencies: ["3979B0AD660A33D2"]
 			description: [
-				"Normally farm animals are picky about their living conditions and food! The &6Witch&r sells ancient magic that can shrink them into a plushie, making it a luxurious home."
+				"{ftbquests.chapter.iv__prismatic_farming.quest6308BDE5F4EC0D2.description1}"
 				""
-				"Plushies that have been imbued using a &6Sunlit Crystal&r will have special effects "
+				"{ftbquests.chapter.iv__prismatic_farming.quest6308BDE5F4EC0D2.description2}"
 				""
-				"&oBoth the plushie and the animal must be at max affection.&r"
+				"{ftbquests.chapter.iv__prismatic_farming.quest6308BDE5F4EC0D2.description3}"
 			]
 			id: "06308BDE5F4EC0D2"
 			rewards: [
@@ -1377,7 +1377,7 @@
 		}
 		{
 			dependencies: ["25677844C218103A"]
-			description: ["Unlocking &6Farming Mastery&r will give you powerful new plants to grow on your farm that can be obtained from the &6Market&r using &6Prismatic Shards&r."]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest40845F4C88AD03CB.description1}"]
 			id: "40845F4C88AD03CB"
 			rewards: [{
 				count: 3
@@ -1396,7 +1396,7 @@
 				}
 				id: "224A29585E36B057"
 				stage: "farming_mastery"
-				title: "Unlock Farming Mastery"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest40845F4C88AD03CB.task.2470832805080641623.title}"
 				type: "gamestage"
 			}]
 			x: -6.0d
@@ -1404,7 +1404,7 @@
 		}
 		{
 			dependencies: ["25677844C218103A"]
-			description: ["Unlocking &6Mining Mastery&r "]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest3C12A8CA17EACA0B.description1}"]
 			id: "3C12A8CA17EACA0B"
 			rewards: [{
 				count: 3
@@ -1423,7 +1423,7 @@
 				}
 				id: "0AD01E5BA4169E25"
 				stage: "mining_mastery"
-				title: "Unlock Mining Mastery"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest3C12A8CA17EACA0B.task.779156114478898725.title}"
 				type: "gamestage"
 			}]
 			x: -3.0d
@@ -1440,24 +1440,24 @@
 				type: "random"
 			}]
 			size: 1.5d
-			subtitle: "Reach level 12 in every skill"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest25677844C218103A.subtitle}"
 			tasks: [{
 				icon: "society:book_of_stars"
 				id: "3FE67ED6D7C3F44B"
 				stage: "mastery_unlocked"
-				title: "Unlock Skill Mastery"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest25677844C218103A.task.4604507130240955467.title}"
 				type: "gamestage"
 			}]
-			title: "Skill Mastery"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest25677844C218103A.title}"
 			x: -4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["76A60EE6F3E0FF72"]
 			description: [
-				"The &6Witch&r now sells the &6Enchanting Table&r. This will allow you to unlock the final level for enchantments such as Fortune or Looting, alongside enchantments that aren't included in the skill tree."
+				"{ftbquests.chapter.iv__prismatic_farming.quest410784379F435E05.description1}"
 				""
-				"The maximums of enchantments that are in the skill tree has been lowered!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest410784379F435E05.description2}"
 			]
 			id: "410784379F435E05"
 			rewards: [{
@@ -1485,11 +1485,11 @@
 		{
 			dependencies: ["40845F4C88AD03CB"]
 			description: [
-				"&6Sparkpods&r are rough otherworldly fruits that can be sourced from the &6Market&r. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest76672EF7299492DF.description1}"
 				""
-				"They are filled with energy and can be mashed into &6Sparkstone&r using a variety of methods."
+				"{ftbquests.chapter.iv__prismatic_farming.quest76672EF7299492DF.description2}"
 				""
-				"Unlike most crops, they have no seeds, making them unable to be cultivated using a &6Seed Maker&r..."
+				"{ftbquests.chapter.iv__prismatic_farming.quest76672EF7299492DF.description3}"
 			]
 			id: "76672EF7299492DF"
 			rewards: [{
@@ -1508,11 +1508,11 @@
 		{
 			dependencies: ["3C12A8CA17EACA0B"]
 			description: [
-				"The &6Recycled Core&r is a smith's best friend, doubling the output of all &6Recycling Machine&r recipes. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest642F0375D7805A1B.description1}"
 				""
-				"It can be purchased from the &6Trader&r."
+				"{ftbquests.chapter.iv__prismatic_farming.quest642F0375D7805A1B.description2}"
 				""
-				"&oRecipes similar to hook recycling do not double.&r"
+				"{ftbquests.chapter.iv__prismatic_farming.quest642F0375D7805A1B.description3}"
 			]
 			id: "642F0375D7805A1B"
 			rewards: [{
@@ -1532,9 +1532,9 @@
 		{
 			dependencies: ["40845F4C88AD03CB"]
 			description: [
-				"The &6Market&r will trade a &6Mystic Willow Sapling&r, which can be tapped for its valuable syrup."
+				"{ftbquests.chapter.iv__prismatic_farming.quest458EC4BFA0C47FCB.description1}"
 				""
-				"You'll first need the rare &6Grimwood sapling&r, found in the world or rarely dug up from harvesting crops. "
+				"{ftbquests.chapter.iv__prismatic_farming.quest458EC4BFA0C47FCB.description2}"
 			]
 			icon: "cluttered:willow_sapling"
 			id: "458EC4BFA0C47FCB"
@@ -1560,16 +1560,16 @@
 					type: "item"
 				}
 			]
-			title: "Purple Syrup"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest458EC4BFA0C47FCB.title}"
 			x: -5.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3C12A8CA17EACA0B"]
 			description: [
-				"The &6Statue of The Moon Gnome&r channels the ancient power of Selene. It can be crafted by a &6Blacksmith&r using Iridium Ingots."
+				"{ftbquests.chapter.iv__prismatic_farming.quest224AC273D2E3D1D7.description1}"
 				""
-				"Right clicking on it will give you a random mining related Moon Blessing that lasts the entire day."
+				"{ftbquests.chapter.iv__prismatic_farming.quest224AC273D2E3D1D7.description2}"
 			]
 			id: "224AC273D2E3D1D7"
 			rewards: [
@@ -1597,9 +1597,9 @@
 		{
 			dependencies: ["4A96DC00D7D0CAD6"]
 			description: [
-				"&6Networked Pipes&r are capable of complex logistical operations. They can be used to sort, auto-stock, auto craft, and auto-retrieve items from pipe networks."
+				"{ftbquests.chapter.iv__prismatic_farming.quest3042AA873F9B60C5.description1}"
 				""
-				"They require a good bit of skill to use, but the &6Classic Pipes wiki&r online has details for those that wish to master them."
+				"{ftbquests.chapter.iv__prismatic_farming.quest3042AA873F9B60C5.description2}"
 			]
 			id: "3042AA873F9B60C5"
 			rewards: [{
@@ -1613,20 +1613,20 @@
 				item: "classicpipes:routing_pipe"
 				type: "item"
 			}]
-			title: "Complex Logistics"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest3042AA873F9B60C5.title}"
 			x: -1.0d
 			y: 17.5d
 		}
 		{
 			dependencies: ["06308BDE5F4EC0D2"]
 			description: [
-				"&6Refined Storage systems&r aren't great at handling many different types of non-stacking items!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest15061E71D3F55AE8.description1}"
 				""
-				"Avoid dumping all your plushies in your system, and store them in large chests instead."
+				"{ftbquests.chapter.iv__prismatic_farming.quest15061E71D3F55AE8.description2}"
 				""
-				"This is especially important in multiplayer servers!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest15061E71D3F55AE8.description3}"
 			]
-			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			icon: "refinedstorage:controller"
 			id: "15061E71D3F55AE8"
 			rewards: [
@@ -1643,10 +1643,10 @@
 			]
 			tasks: [{
 				id: "6D8A02F5851A7D5A"
-				title: "I won't do that!"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest15061E71D3F55AE8.task.7893124550443564378.title}"
 				type: "checkmark"
 			}]
-			title: "Avoiding Refined Lag"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest15061E71D3F55AE8.title}"
 			x: -10.0d
 			y: 0.5d
 		}

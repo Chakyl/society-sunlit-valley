@@ -48,7 +48,7 @@
 				"42D3B4C3895D8335"
 				"495F8C63FB25EB62"
 			]
-			description: ["{ftbquests.chapter.banners.quest1.description1}"]
+			description: ["{ftbquests.chapter.banners.quest1FFF66E7B3DE1E6D.description1}"]
 			hide_dependency_lines: true
 			id: "1FFF66E7B3DE1E6D"
 			rewards: [{
@@ -61,11 +61,11 @@
 				icon: "farm_and_charm:scarecrow"
 				id: "60BC53B1056204F0"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest1.task_6970538343027311856.title}"
+				title: "{ftbquests.chapter.banners.quest1FFF66E7B3DE1E6D.task.6970538343027311856.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest1.title}"
+			title: "{ftbquests.chapter.banners.quest1FFF66E7B3DE1E6D.title}"
 			x: 1.5d
 			y: -6.0d
 		}
@@ -100,7 +100,7 @@
 				"3B5CF272356259B2"
 				"79ECFD2110BB5689"
 			]
-			description: ["{ftbquests.chapter.banners.quest2.description1}"]
+			description: ["{ftbquests.chapter.banners.quest1280C34AE9A4EE7B.description1}"]
 			hide_dependency_lines: true
 			id: "1280C34AE9A4EE7B"
 			rewards: [{
@@ -113,11 +113,11 @@
 				icon: "candlelight:candlelight_standard"
 				id: "765B171872302421"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest2.task_8528435713118577697.title}"
+				title: "{ftbquests.chapter.banners.quest1280C34AE9A4EE7B.task.8528435713118577697.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest2.title}"
+			title: "{ftbquests.chapter.banners.quest1280C34AE9A4EE7B.title}"
 			x: -3.0d
 			y: -2.0d
 		}
@@ -154,9 +154,8 @@
 				"6E6588DBC047B041"
 				"5E94562368270D69"
 				"560CDD4660AA1159"
-				"791EFE3588B3D3A6"
 			]
-			description: ["{ftbquests.chapter.banners.quest3.description1}"]
+			description: ["{ftbquests.chapter.banners.quest7A159242A6B053C8.description1}"]
 			hide_dependency_lines: true
 			id: "7A159242A6B053C8"
 			rewards: [{
@@ -169,11 +168,11 @@
 				icon: "bakery:bakery_standard"
 				id: "3AD3A245C817EDF9"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest3.task_4238910094879223289.title}"
+				title: "{ftbquests.chapter.banners.quest7A159242A6B053C8.task.4238910094879223289.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest3.title}"
+			title: "{ftbquests.chapter.banners.quest7A159242A6B053C8.title}"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -1026,8 +1025,6 @@
 				"41EB85DB7B7DC75A"
 				"30BF1FB39C2E05BC"
 				"776A318885DAA6A6"
-				"0CA7CEED7DD5B11F"
-				"6703BC8EAABB52B1"
 				"764FBC5CFBBC2FE7"
 				"0EF5C98143E6755B"
 				"6C8991E2085E1678"
@@ -1060,8 +1057,18 @@
 				"150AC5D9FABDEC26"
 				"083E30851FA52517"
 				"13BB9EFD3B941D98"
+				"334DAB97A86F2574"
+				"5919563A830D3AAA"
+				"1AFAEA748AB9E1B3"
+				"426E241A2BE5ED15"
+				"3DD9CFE690ED298A"
+				"5B37B31BA3C5CCD3"
+				"58A0B7418235B06F"
+				"2FDC611338D67682"
+				"01B0EFE30AC97294"
+				"6E0DE2216041B2B3"
 			]
-			description: ["{ftbquests.chapter.banners.quest81.description1}"]
+			description: ["{ftbquests.chapter.banners.quest44256671D7500BEA.description1}"]
 			hide_dependency_lines: true
 			id: "44256671D7500BEA"
 			rewards: [{
@@ -1080,11 +1087,11 @@
 				}
 				id: "4DF65AF04FBBC65C"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest81.task_5617777573367629404.title}"
+				title: "{ftbquests.chapter.banners.quest44256671D7500BEA.task.5617777573367629404.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest81.title}"
+			title: "{ftbquests.chapter.banners.quest44256671D7500BEA.title}"
 			x: 1.5d
 			y: 2.5d
 		}
@@ -1138,11 +1145,11 @@
 				}
 				id: "38C343FDC4F440C9"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest82.task_4090187643792670921.title}"
+				title: "{ftbquests.chapter.banners.quest22E44CB981A4299B.task.4090187643792670921.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest82.title}"
+			title: "{ftbquests.chapter.banners.quest22E44CB981A4299B.title}"
 			x: 1.5d
 			y: -2.0d
 		}
@@ -1487,16 +1494,6 @@
 			y: 6.0d
 		}
 		{
-			id: "0CA7CEED7DD5B11F"
-			tasks: [{
-				id: "4943AA15442857CD"
-				item: "veggiesdelight:stuffed_bellpeppers_block"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 7.0d
-		}
-		{
 			id: "3D58FD07A68909E5"
 			tasks: [{
 				id: "280A7A01370AD699"
@@ -1525,16 +1522,6 @@
 			}]
 			x: 10.0d
 			y: 7.0d
-		}
-		{
-			id: "6703BC8EAABB52B1"
-			tasks: [{
-				id: "79F20088981CE3AB"
-				item: "veggiesdelight:cauliflower_burger"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 6.0d
 		}
 		{
 			id: "0AA0A62C8DABD741"
@@ -2103,16 +2090,6 @@
 			y: -1.0d
 		}
 		{
-			id: "791EFE3588B3D3A6"
-			tasks: [{
-				id: "189D906B1E089C71"
-				item: "bakery:grilled_salmon_sandwich"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -3.0d
-		}
-		{
 			id: "6E6588DBC047B041"
 			tasks: [{
 				id: "0E88A8780C5E5DBE"
@@ -2120,7 +2097,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			id: "09E68F4E9AE935D8"
@@ -2130,7 +2107,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			id: "31831BD5BC45E37E"
@@ -2507,6 +2484,106 @@
 			}]
 			x: -13.0d
 			y: -2.0d
+		}
+		{
+			id: "334DAB97A86F2574"
+			tasks: [{
+				id: "6638166BFA190A6C"
+				item: "veggiesdelight:vegetarian_burger"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			id: "6E0DE2216041B2B3"
+			tasks: [{
+				id: "47218587348F949B"
+				item: "veggiesdelight:stuffed_bellpeppers_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			id: "2FDC611338D67682"
+			tasks: [{
+				id: "5478744F07CE4386"
+				item: "veggiesdelight:sweet_potato_pancakes"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 12.0d
+		}
+		{
+			id: "3DD9CFE690ED298A"
+			tasks: [{
+				id: "542D69B5C2BDC46E"
+				item: "veggiesdelight:turnip_mutton_skewer"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			id: "5B37B31BA3C5CCD3"
+			tasks: [{
+				id: "17E07F26FC39146E"
+				item: "veggiesdelight:zucchini_quiche"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			id: "426E241A2BE5ED15"
+			tasks: [{
+				id: "772D199DC6356DB9"
+				item: "veggiesdelight:stuffed_zucchini_boat"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			id: "01B0EFE30AC97294"
+			tasks: [{
+				id: "5AF4924EA0BB6E82"
+				item: "veggiesdelight:steak_and_broccoli"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 9.0d
+		}
+		{
+			id: "1AFAEA748AB9E1B3"
+			tasks: [{
+				id: "3684EC060C0B0398"
+				item: "veggiesdelight:rice_and_vegetables"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 10.0d
+		}
+		{
+			id: "5919563A830D3AAA"
+			tasks: [{
+				id: "6E161B3FBFDD1372"
+				item: "veggiesdelight:lasagna_pan"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			id: "58A0B7418235B06F"
+			tasks: [{
+				id: "307441AA7D425B06"
+				item: "veggiesdelight:vegetables_wrap"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 12.0d
 		}
 	]
 	title: "{ftbquests.chapter.banners.title}"

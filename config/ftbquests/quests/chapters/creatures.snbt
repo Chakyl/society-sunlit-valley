@@ -11,9 +11,9 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest1.description1}"
+				"{ftbquests.chapter.creatures.quest5045DE566B4AC009.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest1.description2}"
+				"{ftbquests.chapter.creatures.quest5045DE566B4AC009.description2}"
 			]
 			icon: "minecraft:carved_pumpkin"
 			id: "5045DE566B4AC009"
@@ -25,18 +25,18 @@
 			size: 1.5d
 			tasks: [{
 				id: "2CC012367F3008BF"
-				title: "{ftbquests.chapter.creatures.quest1.task_3224597358468663487.title}"
+				title: "{ftbquests.chapter.creatures.quest5045DE566B4AC009.task.3224597358468663487.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.creatures.quest1.title}"
+			title: "{ftbquests.chapter.creatures.quest5045DE566B4AC009.title}"
 			x: 5.25d
 			y: 2.25d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest2.description1}"
+				"{ftbquests.chapter.creatures.quest33E3889DD46DF291.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest2.description2}"
+				"{ftbquests.chapter.creatures.quest33E3889DD46DF291.description2}"
 			]
 			id: "33E3889DD46DF291"
 			rewards: [{
@@ -44,25 +44,25 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest2.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest33E3889DD46DF291.subtitle}"
 			tasks: [{
 				icon: "minecraft:barrel"
 				id: "7371A850C556BDEC"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest2.task_8318615051591663084.title}"
+				title: "{ftbquests.chapter.creatures.quest33E3889DD46DF291.task.8318615051591663084.title}"
 				to_observe: "golemoverhaul:barrel_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest2.title}"
+			title: "{ftbquests.chapter.creatures.quest33E3889DD46DF291.title}"
 			x: 2.0d
 			y: -1.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest3.description1}"
+				"{ftbquests.chapter.creatures.quest28EE10222BF1A1E6.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest3.description2}"
+				"{ftbquests.chapter.creatures.quest28EE10222BF1A1E6.description2}"
 			]
 			id: "28EE10222BF1A1E6"
 			rewards: [{
@@ -71,14 +71,14 @@
 				item: "whimsy_deco:bamboo_candle"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest3.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest28EE10222BF1A1E6.subtitle}"
 			tasks: [
 				{
 					icon: "golemoverhaul:candle_golem_block"
 					id: "48ACC80FE89FEF9D"
 					observe_type: 5
 					timer: 0L
-					title: "{ftbquests.chapter.creatures.quest3.task_5236780437377904541.title}"
+					title: "{ftbquests.chapter.creatures.quest28EE10222BF1A1E6.task.5236780437377904541.title}"
 					to_observe: "golemoverhaul:candle_golem"
 					type: "observation"
 				}
@@ -88,15 +88,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.creatures.quest3.title}"
+			title: "{ftbquests.chapter.creatures.quest28EE10222BF1A1E6.title}"
 			x: 3.5d
 			y: -1.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest4.description1}"
+				"{ftbquests.chapter.creatures.quest3225DF52212FAF3E.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest4.description2}"
+				"{ftbquests.chapter.creatures.quest3225DF52212FAF3E.description2}"
 			]
 			id: "3225DF52212FAF3E"
 			rewards: [{
@@ -104,27 +104,27 @@
 				item: "buzzier_bees:bee_bottle"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest4.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest3225DF52212FAF3E.subtitle}"
 			tasks: [{
 				icon: "golemoverhaul:honey_blob"
 				id: "5040984A6FB06C1E"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest4.task_5782789367012551710.title}"
+				title: "{ftbquests.chapter.creatures.quest3225DF52212FAF3E.task.5782789367012551710.title}"
 				to_observe: "golemoverhaul:honey_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest4.title}"
+			title: "{ftbquests.chapter.creatures.quest3225DF52212FAF3E.title}"
 			x: 6.5d
 			y: -1.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest5.description1}"
+				"{ftbquests.chapter.creatures.quest6021F749EAFF7359.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest5.description2}"
+				"{ftbquests.chapter.creatures.quest6021F749EAFF7359.description2}"
 				""
-				"{ftbquests.chapter.creatures.quest5.description3}"
+				"{ftbquests.chapter.creatures.quest6021F749EAFF7359.description3}"
 			]
 			id: "6021F749EAFF7359"
 			rewards: [{
@@ -132,27 +132,27 @@
 				item: "minecraft:hay_block"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest5.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest6021F749EAFF7359.subtitle}"
 			tasks: [{
 				icon: "farm_and_charm:scarecrow"
 				id: "0F83D9F009EFB8AB"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest5.task_1117976757500098731.title}"
+				title: "{ftbquests.chapter.creatures.quest6021F749EAFF7359.task.1117976757500098731.title}"
 				to_observe: "golemoverhaul:hay_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest5.title}"
+			title: "{ftbquests.chapter.creatures.quest6021F749EAFF7359.title}"
 			x: 5.0d
 			y: -1.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest6.description1}"
+				"{ftbquests.chapter.creatures.quest7BEAE861B07734BE.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest6.description2}"
+				"{ftbquests.chapter.creatures.quest7BEAE861B07734BE.description2}"
 				""
-				"{ftbquests.chapter.creatures.quest6.description3}"
+				"{ftbquests.chapter.creatures.quest7BEAE861B07734BE.description3}"
 			]
 			id: "7BEAE861B07734BE"
 			rewards: [{
@@ -160,25 +160,25 @@
 				item: "clayworks:kiln"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest6.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest7BEAE861B07734BE.subtitle}"
 			tasks: [{
 				icon: "golemoverhaul:clay_golem_statue"
 				id: "41A7F16CE512A270"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest6.task_4731015383577961072.title}"
+				title: "{ftbquests.chapter.creatures.quest7BEAE861B07734BE.task.4731015383577961072.title}"
 				to_observe: "golemoverhaul:terracotta_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest6.title}"
+			title: "{ftbquests.chapter.creatures.quest7BEAE861B07734BE.title}"
 			x: 8.0d
 			y: -1.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest7.description1}"
+				"{ftbquests.chapter.creatures.quest5FEA1AC9BA13CC63.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest7.description2}"
+				"{ftbquests.chapter.creatures.quest5FEA1AC9BA13CC63.description2}"
 			]
 			id: "5FEA1AC9BA13CC63"
 			rewards: [{
@@ -186,27 +186,27 @@
 				item: "minecraft:heart_of_the_sea"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest7.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest5FEA1AC9BA13CC63.subtitle}"
 			tasks: [{
 				icon: "minecraft:dried_kelp_block"
 				id: "71E5D254AB607AB2"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest7.task_8207197157046909618.title}"
+				title: "{ftbquests.chapter.creatures.quest5FEA1AC9BA13CC63.task.8207197157046909618.title}"
 				to_observe: "golemoverhaul:kelp_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest7.title}"
+			title: "{ftbquests.chapter.creatures.quest5FEA1AC9BA13CC63.title}"
 			x: 3.0d
 			y: 0.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest8.description1}"
+				"{ftbquests.chapter.creatures.quest66C03C4DA3F21900.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest8.description2}"
+				"{ftbquests.chapter.creatures.quest66C03C4DA3F21900.description2}"
 				""
-				"{ftbquests.chapter.creatures.quest8.description3}"
+				"{ftbquests.chapter.creatures.quest66C03C4DA3F21900.description3}"
 			]
 			id: "66C03C4DA3F21900"
 			rewards: [{
@@ -214,25 +214,25 @@
 				item: "splendid_slimes:slime_ticket"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest8.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest66C03C4DA3F21900.subtitle}"
 			tasks: [{
 				icon: "minecraft:slime_spawn_egg"
 				id: "3106C0E203B13B16"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest8.task_3532723034675821334.title}"
+				title: "{ftbquests.chapter.creatures.quest66C03C4DA3F21900.task.3532723034675821334.title}"
 				to_observe: "golemoverhaul:slime_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest8.title}"
+			title: "{ftbquests.chapter.creatures.quest66C03C4DA3F21900.title}"
 			x: 4.5d
 			y: 0.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest9.description1}"
+				"{ftbquests.chapter.creatures.quest148CCCD216B274F0.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest9.description2}"
+				"{ftbquests.chapter.creatures.quest148CCCD216B274F0.description2}"
 			]
 			id: "148CCCD216B274F0"
 			rewards: [{
@@ -241,27 +241,27 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest9.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest148CCCD216B274F0.subtitle}"
 			tasks: [{
 				icon: "minecraft:coal"
 				id: "697BA82CD29CF667"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest9.task_7600853706583373415.title}"
+				title: "{ftbquests.chapter.creatures.quest148CCCD216B274F0.task.7600853706583373415.title}"
 				to_observe: "golemoverhaul:coal_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest9.title}"
+			title: "{ftbquests.chapter.creatures.quest148CCCD216B274F0.title}"
 			x: 6.0d
 			y: 0.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.creatures.quest10.description1}"
+				"{ftbquests.chapter.creatures.quest1050F9A99E0D71CE.description1}"
 				""
-				"{ftbquests.chapter.creatures.quest10.description2}"
+				"{ftbquests.chapter.creatures.quest1050F9A99E0D71CE.description2}"
 				""
-				"{ftbquests.chapter.creatures.quest10.description3}"
+				"{ftbquests.chapter.creatures.quest1050F9A99E0D71CE.description3}"
 			]
 			id: "1050F9A99E0D71CE"
 			rewards: [{
@@ -269,17 +269,17 @@
 				item: "functionalstorage:netherite_upgrade"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.creatures.quest10.subtitle}"
+			subtitle: "{ftbquests.chapter.creatures.quest1050F9A99E0D71CE.subtitle}"
 			tasks: [{
 				icon: "minecraft:netherite_ingot"
 				id: "50E5413F069A19C0"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.creatures.quest10.task_5829137031650482624.title}"
+				title: "{ftbquests.chapter.creatures.quest1050F9A99E0D71CE.task.5829137031650482624.title}"
 				to_observe: "golemoverhaul:netherite_golem"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.creatures.quest10.title}"
+			title: "{ftbquests.chapter.creatures.quest1050F9A99E0D71CE.title}"
 			x: 7.5d
 			y: 0.5d
 		}

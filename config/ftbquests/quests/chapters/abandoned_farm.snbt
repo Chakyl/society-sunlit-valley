@@ -21,7 +21,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.chapter.abandoned_farm.quest1.description1}"]
+			description: ["{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.description1}"]
 			icon: "supplementaries:present_green"
 			id: "661A3A466ABF29BA"
 			min_required_tasks: 6
@@ -67,7 +67,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.abandoned_farm.quest1.task_8986768465609860891.title}"
+					title: "{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.task.8986768465609860891.title}"
 					type: "item"
 				}
 				{
@@ -84,7 +84,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.abandoned_farm.quest1.task_1620459014322428928.title}"
+					title: "{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.task.1620459014322428928.title}"
 					type: "item"
 				}
 				{
@@ -116,13 +116,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.abandoned_farm.quest1.title}"
+			title: "{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.title}"
 			x: -0.028571428571424917d
 			y: -1.2714285714285793d
 		}
 		{
 			dependencies: ["661A3A466ABF29BA"]
-			description: ["{ftbquests.chapter.abandoned_farm.quest2.description1}"]
+			description: ["{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.description1}"]
 			hide_details_until_startable: false
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
@@ -157,16 +157,16 @@
 				}
 			]
 			shape: "none"
-			subtitle: "{ftbquests.chapter.abandoned_farm.quest2.subtitle}"
+			subtitle: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "3D497F4CF396A37A"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.abandoned_farm.quest2.task_4416200878094459770.title}"
+				title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.task.4416200878094459770.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.abandoned_farm.quest2.title}"
+			title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.title}"
 			x: -0.028571428571424917d
 			y: 1.0999999999999872d
 		}

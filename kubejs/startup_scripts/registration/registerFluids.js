@@ -19,6 +19,12 @@ StartupEvents.registry("fluid", (e) => {
     .displayName("Maple Syrup")
     .tag("society:maple_syrup");
 
+  e.create("society:mystic_syrup")
+    .thickTexture(0xcf8cf6)
+    .bucketColor(0xcf8cf6)
+    .displayName("Mystic Syrup")
+    .tag("society:mystic_syrup");
+
   e.create("society:vinegar")
     .thickTexture(0x680000)
     .bucketColor(0x680000)
@@ -30,6 +36,12 @@ StartupEvents.registry("fluid", (e) => {
     .bucketColor(0xa2b7bd)
     .displayName("Alchemical Varnish")
     .tag("society:alchemical_varnish");
+
+  e.create("society:mystic_jelly")
+    .thickTexture(0x9cd8e0)
+    .bucketColor(0x9cd8e0)
+    .displayName("Mystic Jelly")
+    .tag("society:mystic_jelly");
 
   e.create("society:milk")
     .thinTexture(0xffffff)

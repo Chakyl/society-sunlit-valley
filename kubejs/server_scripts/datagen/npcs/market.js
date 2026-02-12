@@ -13,11 +13,14 @@ if (global.datagenDialog) {
         "Hmmm? Need something?",
         "What can I help you with?",
         "Hey... I've got the seeds.",
+        ["Wow you look absolutely exhausted!", "Wait I'm not supposed to say stuff like that...", "Welcome to the market, what can I do for you!"]
+        ["I was told to make sure you know about fertilizers.", "I feel like someone in your position would know about them already though."],
         "Oh? You're telling me you need more seeds?",
         "I can't imagine wanting to be out in the fields all day.",
         ["I'm going to miss going to the cinema every week.", "I can't imagine Ace has the plans drawn up for one at the moment."],
         "You look exhuasted, starting a farm must be taking it out of you.",
         ["I'm not used to this much solitude.", "It'd be nice if it wasn't so boring..."],
+        ["Takes me a solid month to get used to sleeping in a new bed.", "It's not going so well..."],
         "Another quiet day in the valley.",
         ["It's deathly quiet out here in the wilderness.", "Going to take me some time to get used to."],
         [
@@ -60,6 +63,7 @@ if (global.datagenDialog) {
         "Can you hurry up and buy something, I'm really tired right now.",
         "I'm running low on stock this week so go easy on me.",
         "Why does a town this small even need a market. If you ask me, everyone should just barter for food.",
+        ["Caroline's weekly report is overdue, I hope she's not too mad about it.","I don't think I'm gonna be able to convince you to do it for me... Unless?"],
         "Read any classics lately? Or are you still running around from dusk till dawn every day.",
         [
           "Ugh, Caroline's workers are late again today...",
@@ -138,6 +142,7 @@ if (global.datagenDialog) {
     },
     giftResponse: {
       loved: [
+        ["Small kindnesses like these really break up the drudgery of daily life.", "I'm very thankful you're part of the melange."],
         "Beautiful, and touching.",
         "This is mesmerizing. I'll cherish it forever.",
         "What a gift. To know me like this is the mark of a true friend.",
@@ -168,7 +173,7 @@ if (global.datagenDialog) {
         "I do love a gift! Even if its not quite one I want!",
         "I'm not really sure how to react to this but thank you for the kindness.",
         "I have plenty random objects for still life at my shop, but thank you!",
-        "Eventually if you keep giving me things you'll find one I actually like!",
+        "If you keep giving me things you'll eventually find one I actually like!",
         ["You can do better!", "Life is lived in the details, and you need to pay more attention!"],
         "Well, it is a gift.",
         "Rough season at the farm?",

@@ -61,7 +61,7 @@
 	quests: [
 		{
 			dependencies: ["664E4A3806C40A78"]
-			description: ["The &6Shepherd&r can get you started with animals on your farm, selling &6Animal Feed&r as well as spawn crates of some basic farm animals."]
+			description: ["{ftbquests.chapter.villagers.quest3CF0897E67574877.description1}"]
 			id: "3CF0897E67574877"
 			rewards: [{
 				count: 4
@@ -88,10 +88,10 @@
 		}
 		{
 			description: [
-				"The &6Carpenter&r has two shops to browse through:"
+				"{ftbquests.chapter.villagers.quest664E4A3806C40A78.description1}"
 				""
-				"- &6Supplies&r, which has convenient building blocks"
-				"- &6Invitations&r, which allow you to invite more villagers"
+				"{ftbquests.chapter.villagers.quest664E4A3806C40A78.description2}"
+				"{ftbquests.chapter.villagers.quest664E4A3806C40A78.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -121,7 +121,7 @@
 		}
 		{
 			dependencies: ["664E4A3806C40A78"]
-			description: ["The &6Market&r is the most essential supplier of your farm. It stocks seeds, farming, and cooking supplies."]
+			description: ["{ftbquests.chapter.villagers.quest48655663A5A82FC.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "048655663A5A82FC"
@@ -150,7 +150,7 @@
 		}
 		{
 			dependencies: ["048655663A5A82FC"]
-			description: ["The &6Fisher&r sells fishing rods and addons to upgrade them."]
+			description: ["{ftbquests.chapter.villagers.quest2A64214504AAD5E5.description1}"]
 			id: "2A64214504AAD5E5"
 			rewards: [{
 				count: 4
@@ -177,7 +177,7 @@
 		}
 		{
 			dependencies: ["664E4A3806C40A78"]
-			description: ["The &6Blacksmith&r sells metals, smithing templates, and &6Geode Busters&r for cracking open geodes."]
+			description: ["{ftbquests.chapter.villagers.quest499871FDD2A65F2C.description1}"]
 			id: "499871FDD2A65F2C"
 			rewards: [{
 				count: 4
@@ -204,7 +204,7 @@
 		}
 		{
 			dependencies: ["048655663A5A82FC"]
-			description: ["The &6Banker&r sells management tools to make handling your finances easier."]
+			description: ["{ftbquests.chapter.villagers.quest4633C0427ACA18D3.description1}"]
 			id: "4633C0427ACA18D3"
 			rewards: [{
 				id: "39A6E5251F5A738D"
@@ -230,7 +230,7 @@
 		}
 		{
 			dependencies: ["4633C0427ACA18D3"]
-			description: ["Some villagers can only be called over the phone! The &6Banker&r can connect you to these as well as any ones you've unlocked."]
+			description: ["{ftbquests.chapter.villagers.quest33338792EF0994BD.description1}"]
 			id: "33338792EF0994BD"
 			size: 2.0d
 			tasks: [{
@@ -238,27 +238,27 @@
 				item: "whimsy_deco:phone"
 				type: "item"
 			}]
-			title: "Calling Villagers"
+			title: "{ftbquests.chapter.villagers.quest33338792EF0994BD.title}"
 			x: 7.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
-			description: ["The &6Storagesmith&r sells equipment for managing your storage, including the &6Refined Storage system&r to digitally store your items."]
+			description: ["{ftbquests.chapter.villagers.quest49477F09DF6EBA50.description1}"]
 			icon: "minecraft:chest"
 			id: "49477F09DF6EBA50"
 			tasks: [{
 				id: "078F96904FB1E9F6"
-				title: "Understood!"
+				title: "{ftbquests.chapter.villagers.quest49477F09DF6EBA50.task.544819626491636214.title}"
 				type: "checkmark"
 			}]
-			title: "Storagesmith"
+			title: "{ftbquests.chapter.villagers.quest49477F09DF6EBA50.title}"
 			x: 7.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
-			description: ["The &6Guild&r will help you on your adventures, selling tools to navigate around the world better."]
+			description: ["{ftbquests.chapter.villagers.quest55F17BB945CA5BB2.description1}"]
 			icon: {
 				Count: 1
 				id: "quark:pickarang"
@@ -269,7 +269,7 @@
 			id: "55F17BB945CA5BB2"
 			tasks: [{
 				id: "243D36F88B4D14A6"
-				title: "Guild"
+				title: "{ftbquests.chapter.villagers.quest55F17BB945CA5BB2.task.2611303800061629606.title}"
 				type: "checkmark"
 			}]
 			x: 5.5d
@@ -277,14 +277,14 @@
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
-			description: ["The &6Barkeeper&r sells food and various multiplayer-oriented items, such as &6Cameras&r and &6Easels&r."]
+			description: ["{ftbquests.chapter.villagers.quest7B2AB58CA9C1C19B.description1}"]
 			id: "7B2AB58CA9C1C19B"
 			tasks: [{
 				id: "330D077923A3C555"
 				item: "brewery:beer_wheat"
 				type: "item"
 			}]
-			title: "Barkeeper"
+			title: "{ftbquests.chapter.villagers.quest7B2AB58CA9C1C19B.title}"
 			x: 8.5d
 			y: 7.5d
 		}
@@ -294,18 +294,18 @@
 				"66E1AC55824DF1D9"
 			]
 			description: [
-				"The &6Witch&r has a deep connection with the nature of the valley and sells various expensive and magical goods."
+				"{ftbquests.chapter.villagers.quest52F1DCA9462F825F.description1}"
 				""
-				"She can be called after visiting the &6Nether&r for the first time."
+				"{ftbquests.chapter.villagers.quest52F1DCA9462F825F.description2}"
 			]
 			icon: "minecraft:brewing_stand"
 			id: "52F1DCA9462F825F"
 			tasks: [{
 				id: "3C94F73EFA3C7BCD"
-				title: "Understood!"
+				title: "{ftbquests.chapter.villagers.quest52F1DCA9462F825F.task.4365385788687154125.title}"
 				type: "checkmark"
 			}]
-			title: "Witch"
+			title: "{ftbquests.chapter.villagers.quest52F1DCA9462F825F.title}"
 			x: 6.0d
 			y: 8.5d
 		}
@@ -315,33 +315,33 @@
 				"5A369FC904BCF5EE"
 			]
 			description: [
-				"The &6Trader&r offers wares that can only be purchased with items and not money."
+				"{ftbquests.chapter.villagers.quest1348507AE17E187E.description1}"
 				""
-				"They can be called on the phone after visiting the &6Skull Cavern&r for the first time."
+				"{ftbquests.chapter.villagers.quest1348507AE17E187E.description2}"
 			]
 			icon: "society:ancient_cog"
 			id: "1348507AE17E187E"
 			tasks: [{
 				id: "691F920167A31AB3"
-				title: "Understood!"
+				title: "{ftbquests.chapter.villagers.quest1348507AE17E187E.task.7574933632991828659.title}"
 				type: "checkmark"
 			}]
-			title: "Trader"
+			title: "{ftbquests.chapter.villagers.quest1348507AE17E187E.title}"
 			x: 8.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
 			description: [
-				"The &6Bookseller&r appears at the end of every season (for example, Late Spring)."
+				"{ftbquests.chapter.villagers.questE7AAB1F6C287535.description1}"
 				""
-				"Skill books that are normally found in the world can be bought for high prices, with some rotating stock every season."
+				"{ftbquests.chapter.villagers.questE7AAB1F6C287535.description2}"
 			]
 			icon: "society:animal_fancy"
 			id: "0E7AAB1F6C287535"
 			tasks: [{
 				id: "6C5F6D72CE1B21A3"
-				title: "Bookseller"
+				title: "{ftbquests.chapter.villagers.questE7AAB1F6C287535.task.7809080618735313315.title}"
 				type: "checkmark"
 			}]
 			x: 7.0d
@@ -350,11 +350,11 @@
 		{
 			dependencies: ["52F1DCA9462F825F"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest39.description1}"
+				"{ftbquests.chapter.villagers.quest327B9F8868AE76E.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest39.description2}"
+				"{ftbquests.chapter.villagers.quest327B9F8868AE76E.description2}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest39.description3}"
+				"{ftbquests.chapter.villagers.quest327B9F8868AE76E.description3}"
 			]
 			id: "0327B9F8868AE76E"
 			rewards: [
@@ -374,7 +374,7 @@
 				item: "society:ribbit_hut"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iv__prismatic_farming.quest39.title}"
+			title: "{ftbquests.chapter.villagers.quest327B9F8868AE76E.title}"
 			x: 6.0d
 			y: 10.0d
 		}
