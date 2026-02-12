@@ -576,11 +576,11 @@ ItemEvents.tooltip((tooltip) => {
       "nethervinery:crimson_grape_seeds",
       "nethervinery:warped_grape_seeds",
     ],
-    Text.gray("Will only grow when planted on Grapevine Stem")
+    Text.translatable("tooltip.society.plant_on_stem").gray()
   );
   tooltip.add(
     ["vinery:jungle_grape_seeds_red", "vinery:jungle_grape_seeds_white"],
-    Text.gray("Will only grow when planted on Grapevine Lattice")
+    Text.translatable("tooltip.society.plant_on_lattice").gray()
   );
   // Misc
   tooltip.add(
