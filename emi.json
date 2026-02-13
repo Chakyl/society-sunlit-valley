@@ -23,6 +23,7 @@
     }
   ],
   "lookup_history": [
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
     "item:society:topaz",
     "item:society:ruby",
     "item:numismatics:crown",
@@ -131,7 +132,6 @@
     },
     "item:farmersdelight:hot_cocoa",
     "item:society:mystic_syrup",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
     "item:atmospheric:passion_fruit",
     "item:splendid_slimes:slime_candy",
     "item:atmospheric:blood_orange",
@@ -730,10 +730,10 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
-      "item:brewery:pork_knuckle",
-      "item:farmersdelight:cooked_bacon",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
+      "item:candlelight:pork_ribs",
+      "item:farmersdelight:cooked_bacon",
       "item:minecraft:cooked_porkchop",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -745,16 +745,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/zucchini",
       "#item:forge:crops/potato",
-      "#item:forge:crops/cauliflower",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1615,13 +1615,6 @@
     ],
     "tags": {},
     "resolutions": {
-      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
-        {
-          "type": "fluid",
-          "id": "minecraft:lava",
-          "amount": 10
-        }
-      ],
       "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
         {
           "type": "fluid",
@@ -1634,6 +1627,13 @@
           "type": "fluid",
           "id": "create_central_kitchen:aloe_gel",
           "amount": 250
+        }
+      ],
+      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
+        {
+          "type": "fluid",
+          "id": "minecraft:lava",
+          "amount": 10
         }
       ]
     },
