@@ -13,9 +13,9 @@ global.getAnimalIsNotCramped = (target, scale, applyGlowing) => {
   const entities = level
     .getEntitiesWithin(target.boundingBox.inflate(scale))
     .filter((e) => global.checkEntityTag(e, "society:husbandry_animal"));
-  let cramped = entities.length > 5 
-  if (cramped&& applyGlowing) {
-    entities.forEach((entity)=>{
+  let cramped = entities.length > 5
+  if (cramped && applyGlowing) {
+    entities.forEach((entity) => {
       entity.potionEffects.add("minecraft:glowing", 200, 0, false, false);
     })
   }
@@ -126,10 +126,9 @@ global.getMilk = (
       }
     }
     return Item.of(
-      `${
-        (player && player.stages.has("shepherd") ? 2 : 1) *
-        crackerBonus *
-        (plushieDoubleDrops ? 2 : 1)
+      `${(player && player.stages.has("shepherd") ? 2 : 1) *
+      crackerBonus *
+      (plushieDoubleDrops ? 2 : 1)
       }x ${milkId}`,
       quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
     );
@@ -170,7 +169,7 @@ global.handleSpecialHarvest = (
           if (forage.itemPool) {
             resolvedItem =
               forage.itemPool[
-                Math.floor(Math.random() * forage.itemPool.length)
+              Math.floor(Math.random() * forage.itemPool.length)
               ];
           } else {
             resolvedItem = forage.item;
@@ -344,7 +343,9 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers) => {
   ).toArray();
   let newLoot = [];
   if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
-    data.ageLastMagicHarvested = day;
+    if (!plushieModifiers || !plushieModifiers.resetDay) {
+      data.ageLastMagicHarvested = day;
+    } 
     data.affection = affection - 7;
     if (!plushieModifiers) {
       level.spawnParticles(
@@ -419,7 +420,7 @@ const getNearbyBlocks = (level, target, radius, tag) => {
 
 
 global.getOrFetchMood = (level, target, day, player, debugMood) => {
-   if (!global.checkEntityTag(target, "society:pet_animal")) return 256; 
+  if (!global.checkEntityTag(target, "society:pet_animal")) return 256;
   const data = target.persistentData;
   let moodDebuffs = 0;
   let moodImpactModifier = getMoodImpactModifier(target);
@@ -512,13 +513,14 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
         7,
         true
       );
-      newDrops.push(
-        Item.of(
-          `${qualityMult * 8}x ${
-            nearbyLogs[Math.floor(Math.random() * nearbyLogs.length)]
-          }`
-        )
-      );
+      if (nearbyLogs.length > 0) {
+        newDrops.push(
+          Item.of(
+            `${qualityMult * 8}x ${nearbyLogs[Math.floor(Math.random() * nearbyLogs.length)]
+            }`
+          )
+        );
+      }
       break;
     case 2:
       // Eldritch
@@ -540,7 +542,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
       break;
     case 6:
       // Hungry
-      if (roll < 0.7 * qualityMult) resetDay = true;
+      if (roll < 0.1 * qualityMult) resetDay = true;
       break;
     case 7:
       // Anxious
@@ -553,7 +555,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
           level,
           "society:plushies",
           plushieBlock,
-          5 - qualityMult
+          3 - qualityMult
         ) == 1
       ) {
         doubleDrops = true;
@@ -566,7 +568,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
           level,
           "society:plushies",
           plushieBlock,
-          5
+          2
         ) >
         28 - 4 * qualityMult
       ) {
@@ -592,7 +594,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
           level,
           "society:loot_furniture",
           plushieBlock,
-          5
+          2
         ) >=
         28 - 4 * qualityMult
       ) {
@@ -627,6 +629,7 @@ global.executePlushieHusbandry = (
   let nbt = block.getEntityData();
   const { animal } = nbt.data;
   if (!animal) return;
+  let reset = false;
   const day = global.getDay(level);
   const plushieMods = global.getPlushieModifiers(level, nbt.data, block);
   if (
@@ -653,13 +656,17 @@ global.executePlushieHusbandry = (
         `playsound minecraft:entity.cow.milk block @a ${player.x} ${player.y} ${player.z}`
       );
       global.giveExperience(server, player, "husbandry", 30);
-      nbt.merge({
-        data: {
-          animal: {
-            ageLastMilked: day,
+      if (!plushieMods.resetDay) {
+        nbt.merge({
+          data: {
+            animal: {
+              ageLastMilked: day,
+            },
           },
-        },
-      });
+        });
+      } else {
+        reset = true;
+      }
       level.spawnParticles(
         "minecraft:note",
         true,
@@ -684,13 +691,17 @@ global.executePlushieHusbandry = (
     plushieMods,
     specialHarvestFunction
   );
-  nbt.merge({
-    data: {
-      animal: {
-        ageLastDroppedSpecial: day,
+  if (!plushieMods.resetDay) {
+    nbt.merge({
+      data: {
+        animal: {
+          ageLastDroppedSpecial: day,
+        },
       },
-    },
-  });
+    });
+  } else if (Number(animal.ageLastDroppedSpecial) < day) {
+    reset = true;
+  }
   if (item === "society:magic_shears") {
     const droppedLoot = global.getMagicShearsOutput(
       level,
@@ -727,58 +738,21 @@ global.executePlushieHusbandry = (
     }
   }
   block.setEntityData(nbt);
-  if (plushieMods.resetDay) {
-    let changed = false;
-    if (item === "society:milk_pail" && Number(animal.ageLastMilked) < day) {
-      changed = true;
-      nbt.merge({
-        data: {
-          animal: {
-            ageLastMilked: day - 1,
-          },
-        },
-      });
-    }
-    if (
-      item === "society:magic_shears" &&
-      Number(animal.ageLastMagicHarvested) < day
-    ) {
-      changed = true;
-      nbt.merge({
-        data: {
-          animal: {
-            ageLastMagicHarvested: day - 1,
-          },
-        },
-      });
-    }
-    if (Number(animal.ageLastDroppedSpecial) < day) {
-      changed = true;
-      nbt.merge({
-        data: {
-          animal: {
-            ageLastDroppedSpecial: day - 1,
-          },
-        },
-      });
-    }
-    if (changed) {
-      block.setEntityData(nbt);
-      server.runCommandSilent(
-        `playsound legendarycreatures:corpse_eater_death block @a ${block.x} ${block.y} ${block.z}`
-      );
-      level.spawnParticles(
-        "species:spectre_smoke",
-        true,
-        block.x,
-        block.y,
-        block.z,
-        0.2 * rnd(1, 4),
-        0.2 * rnd(1, 4),
-        0.2 * rnd(1, 4),
-        3,
-        0.01
-      );
-    }
+  if (reset) {
+    server.runCommandSilent(
+      `playsound legendarycreatures:corpse_eater_death block @a ${block.x} ${block.y} ${block.z}`
+    );
+    level.spawnParticles(
+      "species:spectre_smoke",
+      true,
+      block.x,
+      block.y,
+      block.z,
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      3,
+      0.01
+    );
   }
 };

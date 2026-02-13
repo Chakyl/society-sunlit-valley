@@ -13,7 +13,7 @@ if (global.datagenDialog) {
         "Hmmm? Need something?",
         "What can I help you with?",
         "Hey... I've got the seeds.",
-        ["Wow you look absolutely exhausted!", "Wait I'm not supposed to say stuff like that...", "Welcome to the market, what can I do for you!"]
+        ["Wow you look absolutely exhausted!", "Wait I'm not supposed to say stuff like that...", "Welcome to the market, what can I do for you!"],
         ["I was told to make sure you know about fertilizers.", "I feel like someone in your position would know about them already though."],
         "Oh? You're telling me you need more seeds?",
         "I can't imagine wanting to be out in the fields all day.",

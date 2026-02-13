@@ -571,8 +571,8 @@ ServerEvents.recipes((e) => {
     f: "society:fire_quartz",
     b: "quark:blaze_lantern",
   });
-  e.shaped("society:auto_tapper", ["fFf", "bTb", "fPf"], {
-    f: "meadow:fire_log",
+  e.shaped("society:auto_tapper", [" F ", "bTb", "fPf"], {
+    f: "create_factory_logistics:fluid_mechanism",
     F: "create:fluid_tank",
     T: "society:tapper",
     b: "society:battery",
