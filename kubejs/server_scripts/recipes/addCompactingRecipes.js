@@ -23,6 +23,7 @@ ServerEvents.recipes((e) => {
   compact("society:tubasmoke_carton", "society:tubasmoke_stick", 9);
   compact("society:mana_fruit_crate", "society:mana_fruit", 9);
   compact("society:sparkpod_crate", "society:sparkpod", 9);
+  compact("society:prismatic_shard_block", "society:prismatic_shard", 9);
   compact("society:sturdy_bamboo_block", "minecraft:bamboo_block", 9);
 
   compact("numismatics:neptunium_coin", "numismatics:sun", 8);

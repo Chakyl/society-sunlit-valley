@@ -1131,7 +1131,7 @@ const qualityToInt = (quality) => {
 const getFertilizer = (crop) => {
   const block = crop
     .getLevel()
-    .getBlock(crop.getPos().below().offset(-1, 0, 0));
+    .getBlock(crop.getPos().below());
   if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
     return -1;
   if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
@@ -1156,7 +1156,7 @@ global.getCropQuality = (crop) => {
   if (fertilizer == -1) return 0;
   const qualityName = LevelData.get(
     crop.getLevel(),
-    crop.getPos().offset(0, -1, 0),
+    crop.getPos(),
     false
   );
   let seedQuality = qualityToInt(qualityName);
@@ -1165,7 +1165,7 @@ global.getCropQuality = (crop) => {
     0.2 * ((seedQuality * 4.6) / 10) +
     0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
     0.01;
-  // Debug Quality
+  // // Debug Quality
   // console.log(crop)
   // console.log("Seed quality " + seedQuality);
   // console.log("Fertilizer quality " + fertilizer);
