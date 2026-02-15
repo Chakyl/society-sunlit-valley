@@ -9695,26 +9695,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "quality_food-1.20.1-2.2.9-all.jar",
+                    "file_name": "quality_food-1.20.1-2.3.0-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7205/93/quality_food-1.20.1-2.2.9-all.jar",
-                    "id": "7205093",
+                    "url": "https://edge.forgecdn.net/files/7618/171/quality_food-1.20.1-2.3.0-all.jar",
+                    "id": "7618171",
                     "parent_id": "973932",
                     "hashes": {
-                        "sha1": "ba21315ee52b022017cfd3ffc93d0de8289b3b02",
-                        "md5": "4db98761b3a9ffa21d2074aed3dd3fcb"
+                        "sha1": "41c93726384dc66c6ecc32706b907486dba21676",
+                        "md5": "d09621f5457f068b686bf324c46b041e"
                     },
                     "required_dependencies": [],
-                    "size": 397681,
-                    "date_published": "2025-11-09T23:55:19.203Z"
+                    "size": 411358,
+                    "date_published": "2026-02-13T10:35:14.580Z"
                 }
             ]
         },
@@ -9918,6 +9918,72 @@
                     "required_dependencies": [],
                     "size": 713454,
                     "date_published": "2024-09-09T08:07:43.540Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "0sN9Hb1d2etb0PIL",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "rainbow-oaks-3",
+                "modrinth": "rainbow-oaks-3"
+            },
+            "name": {
+                "curseforge": "Rainbow Oaks Renewed",
+                "modrinth": "Rainbow Oaks Renewed"
+            },
+            "id": {
+                "curseforge": "984099",
+                "modrinth": "scEt2mrY"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rainbowoaks-forge-1.20-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5167/239/rainbowoaks-forge-1.20-1.0.0.jar",
+                    "id": "5167239",
+                    "parent_id": "984099",
+                    "hashes": {
+                        "sha1": "9ef26f3479f4da16f052437f91e36205cbd71162",
+                        "md5": "a9d45fe38ca9b17596bda22e94828033"
+                    },
+                    "required_dependencies": [],
+                    "size": 2119903,
+                    "date_published": "2024-03-08T17:48:16.763Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "rainbowoaks-forge-1.20-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/scEt2mrY/versions/Hq8YlJZR/rainbowoaks-forge-1.20-1.0.0.jar",
+                    "id": "Hq8YlJZR",
+                    "parent_id": "scEt2mrY",
+                    "hashes": {
+                        "sha512": "fd34bc4ae583cf324ff944f304c7ac483492ad0966ce9e08efc615d1f7e6f1b334119dbc26f6b97a49565f9bac77a3387678a04364107eb9b2d24df1a6922dfa",
+                        "sha1": "9ef26f3479f4da16f052437f91e36205cbd71162"
+                    },
+                    "required_dependencies": [],
+                    "size": 2119903,
+                    "date_published": "2024-03-08T17:44:40.531076Z"
                 }
             ]
         },

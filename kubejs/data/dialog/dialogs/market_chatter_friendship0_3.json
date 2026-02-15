@@ -24,25 +24,6 @@
 			]
 		},
 		{
-			"id": 1,
-			"speaker": {
-				"translate": "dialog.npc.market.name",
-				"color": "white"
-			},
-			"text": [
-				{
-					"translate": "dialog.npc.market.chatter_friendship0.3.line_1"
-				}
-			],
-			"portraits": [
-				{
-					"path": "market.png",
-					"position": "INLINE",
-					"brightness": 1
-				}
-			]
-		},
-		{
 			"id": "end",
 			"speaker": {
 				"translate": "dialog.npc.market.name",
@@ -50,7 +31,7 @@
 			},
 			"text": [
 				{
-					"translate": "dialog.npc.market.chatter_friendship0.3.line_2"
+					"translate": "dialog.npc.market.chatter_friendship0.3.line_1"
 				}
 			],
 			"portraits": [

@@ -261,6 +261,7 @@ const rawLogs = [
   "cluttered:fluorescent_maple_log",
   "cluttered:blue_mushroom_log",
   "cluttered:red_mushroom_log",
+  "rainbowoaks:rainbow_log"
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
@@ -595,6 +596,7 @@ ServerEvents.tags("item", (e) => {
     "society:jade",
     "society:sparkstone",
     "society:prismatic_shard",
+    "society:spinel"
   ].forEach((item) => {
     e.add("forge:gems", item);
   });
@@ -687,6 +689,14 @@ ServerEvents.tags("block", (e) => {
   });
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
+  });
+
+  [
+    "society:prismatic_shard_block",
+    "society:sparkstone_block",
+    "aquaculture:neptunium_block"
+  ].forEach((item) => {
+    e.add("minecraft:beacon_base_blocks", item);
   });
   e.remove("minecraft:dirt", "farmersdelight:rich_soil");
   rawLogs.forEach((log) => {

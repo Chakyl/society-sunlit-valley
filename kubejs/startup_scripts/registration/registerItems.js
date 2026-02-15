@@ -636,7 +636,9 @@ StartupEvents.registry("item", (e) => {
     "wuthering_logs",
     "women_who_run_with_the_plushies",
   ].forEach((item) => {
-    e.create(`society:${item}`).texture(`society:item/books/${item}`);
+    e.create(`society:${item}`)
+      .texture(`society:item/books/${item}`)
+      .rarity("rare");
   });
   e.create("society:debt_caverns")
     .displayName("Debt: The First 5000 Caverns")

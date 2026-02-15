@@ -1,4 +1,5 @@
-console.info("[SOCIETY] neptuniumHoe.js loaded");
+console.info("[SOCIETY] magnifyingGlass.js loaded");
+
 const DELAY = 10;
 const REPETITIONS = 10;
 
@@ -6,6 +7,7 @@ const magnifyingGlassBlocks = [
   { id: "society:auto_grabber", radius: 5, includeY: true },
   { id: "society:artisan_hopper", radius: 3, includeY: true },
   { id: "society:mini_artisan_hopper", radius: 1, includeY: true },
+  { id: "society:auto_petter", radius: 1, includeY: true },
   { id: "society:fish_pond_basket", radius: 1, includeY: true },
   { id: "society:feeding_trough", radius: 6, includeY: true },
   { id: "splendid_slimes:slime_feeder", radius: 6, includeY: true },

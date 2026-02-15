@@ -92,7 +92,7 @@ ItemEvents.entityInteracted((e) => {
                         0.001
                     );
                     if (!player.isCreative()) item.shrink(1);
-                    server.scheduleInTicks(4, () => {
+                    server.scheduleInTicks(8, () => {
                         server.runCommandSilent(
                             `dialog ${target.getUuid()} show ${player.username} ${npcId}_gift_${giftValue}_${dialogNumber}`
                         );

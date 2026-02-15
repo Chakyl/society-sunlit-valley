@@ -3,15 +3,6 @@
 
 /**
  * Only server needs to change this
- * Replace true with false below if you want to remove the fishing minigame!
- * Fish will no longer have quality and you won't get the extra loot chests
- * 
- * This can now be done on a per-player basis using the /stardew_fishing command
- */
-global.enableFishingMinigame = true;
-
-/**
- * Only server needs to change this
  * Enables a fee when a player dies to discourage players from dying on purpose.
  * Also disables fee from fainting in Skull Caverns
  * Setting this to false is not recommended.
@@ -30,6 +21,13 @@ global.clockIcon = true;
  * This won't do anything in Single Player as they aren't otherwise obtainable
  */
 global.multiplayerSharestones = false;
+
+/**
+ * Only server needs to change this
+ * Prevents blocks that break multiple blocks from being used in the Skull Cavern.
+ * This is due to performance to prevent crashes from overloading the caverns.
+ */
+global.disableHammersSkullCavern = true;
 
 /**
  * Only server needs to change this
@@ -53,3 +51,9 @@ global.farmerProductMult = 1.0
 global.artisanProductMult = 1.0
 global.miningProductMult = 1.0
 global.adventurerProductMult = 1.0
+
+/**
+ * REMOVED CONFIG OPTION! THIS DOES NOTHING!
+ * This can now be done on a per-player basis using the /stardew_fishing command
+ */
+global.enableFishingMinigame = true;

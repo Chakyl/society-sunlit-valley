@@ -7,8 +7,7 @@ const getDrops = (block, blockState, level, pos, player) => {
     if (grape.length == 1) {
       return [
         Item.of(
-          `4x ${
-            ["crimson", "warped"].includes(grape[0]) ? "nethervinery" : "vinery"
+          `4x ${["crimson", "warped"].includes(grape[0]) ? "nethervinery" : "vinery"
           }:${grape[0]}_grape`
         ),
       ];
@@ -52,7 +51,7 @@ const getPlantData = (block, mcBlock, blockState) => {
       maxAge: properties.get("age").equals("3"),
       newAge:
         "minecraft:sweet_berry_bush".equals(block.id) ||
-        "autumnity:tall_foul_berry_bush".equals(block.id)
+          "autumnity:tall_foul_berry_bush".equals(block.id)
           ? "1"
           : "2",
     };
@@ -110,13 +109,14 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
   let blockState;
   let drops;
   let quality;
-  let scannedBlock = level.getBlock(pos);
+  let scannedBlock;
   let inserted = false;
   let valid = true;
   let plantData;
   if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] ribbitHut.js");
   server.scheduleInTicks(delay, () => {
-    if (scannedBlock.hasTag("society:ribbit_hut_harvests")) {
+    scannedBlock = level.getBlock(pos);
+    if (scannedBlock && scannedBlock.hasTag("society:ribbit_hut_harvests")) {
       blockState = level.getBlockState(pos);
       plantData = getPlantData(scannedBlock, blockState.block, blockState);
       if (

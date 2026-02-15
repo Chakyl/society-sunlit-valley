@@ -21,25 +21,6 @@
 					"position": "INLINE",
 					"brightness": 1
 				}
-			]
-		},
-		{
-			"id": "end",
-			"speaker": {
-				"translate": "dialog.npc.blacksmith.name",
-				"color": "white"
-			},
-			"text": [
-				{
-					"translate": "dialog.npc.blacksmith.chatter_friendship5.1.line_1"
-				}
-			],
-			"portraits": [
-				{
-					"path": "blacksmith.png",
-					"position": "INLINE",
-					"brightness": 1
-				}
 			],
 			"command": [
 				"openshop @p blacksmith"

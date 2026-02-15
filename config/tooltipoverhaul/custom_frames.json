@@ -136,7 +136,6 @@
         "minecraft:netherite_boots",
 
         "minecraft:emerald",
-
         "minecraft:diamond",
         "minecraft:diamond_sword",
         "minecraft:diamond_shovel",
@@ -178,11 +177,13 @@
       "disableScrolling": true
     },
     {
-      "texture": "tooltipoverhaul:textures/overlay/cataclysm_frame.png",
+      "texture": "tooltipoverhaul:textures/overlay/king_frame.png",
       "items": [
         "cataclysm:the_incinerator",
         "cataclysm:ceraunus",
-        "cataclysm:soul_render"
+        "cataclysm:soul_render",
+        "society:prismatic_shard",
+        "society:prismatic_shard_block"
       ],
       "gradientType": "custom",
       "borderType": "static",

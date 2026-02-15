@@ -10,12 +10,15 @@
     },
     "T": {
       "item": "society:botanical_tribute"
+    },
+    "B": {
+      "item": "society:prismatic_shard_block"
     }
   },
   "pattern": [
-    "TST",
-    "SIS",
-    "TST"
+    "TSI",
+    "SBS",
+    "IST"
   ],
   "result": {
     "item": "botania:gaia_ingot"

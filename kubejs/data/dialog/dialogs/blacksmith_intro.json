@@ -42,7 +42,7 @@
 			]
 		},
 		{
-			"id": "end",
+			"id": 2,
 			"speaker": {
 				"translate": "dialog.npc.blacksmith.name",
 				"color": "white"
@@ -50,6 +50,25 @@
 			"text": [
 				{
 					"translate": "dialog.npc.blacksmith.intro.0.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.intro.0.line_3"
 				}
 			],
 			"portraits": [

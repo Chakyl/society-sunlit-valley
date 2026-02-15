@@ -12,7 +12,10 @@ if (global.datagenDialog) {
       friendship0: [
         "Hmmm? Need something?",
         "What can I help you with?",
+        ["Welcome to the Sunlit Market! How can I help you~", "I really hope I can get away with not saying that ever again."],
+        ["If you're looking for saplings, ask Ace.", "Those things leave so much dirt around and I can't be bothered to sweep it."],
         "Hey... I've got the seeds.",
+        ["I hope Ace gives me back that copy of Wuthering Logs...", "I want to read it before watching the new film adaptation."],
         ["Wow you look absolutely exhausted!", "Wait I'm not supposed to say stuff like that...", "Welcome to the market, what can I do for you!"],
         ["I was told to make sure you know about fertilizers.", "I feel like someone in your position would know about them already though."],
         "Oh? You're telling me you need more seeds?",
@@ -28,15 +31,17 @@ if (global.datagenDialog) {
           "Just slow down a little, the money can always wait."
         ],
         [
-          "Ace is starting to annoy me with all that hammering.", 
+          "Ace is starting to annoy me with all that hammering.",
           "All this open area, the sound travels so far."
         ]
       ],
       friendship1: [
+        "Happy cashiers are all alike, but every unhappy cashier is unhappy in their own way...",
         "What's up @i?",
         "What would you like today?",
         "No need to look around for anything, I've learned where everything is now.",
         "Is it apple season yet?",
+        ["...", "......", "........", "...I was hoping you would walk away by now..."],
         ["Remind me, where does your name come from?", "Every name has a story, even if you're not aware of it."],
         "When do you get done with working? Do you ever really finish a work day?",
         "It's so boring around here...",
@@ -63,7 +68,7 @@ if (global.datagenDialog) {
         "Can you hurry up and buy something, I'm really tired right now.",
         "I'm running low on stock this week so go easy on me.",
         "Why does a town this small even need a market. If you ask me, everyone should just barter for food.",
-        ["Caroline's weekly report is overdue, I hope she's not too mad about it.","I don't think I'm gonna be able to convince you to do it for me... Unless?"],
+        ["Caroline's weekly report is overdue, I hope she's not too mad about it.", "I don't think I'm gonna be able to convince you to do it for me... Unless?"],
         "Read any classics lately? Or are you still running around from dusk till dawn every day.",
         [
           "Ugh, Caroline's workers are late again today...",
@@ -118,6 +123,7 @@ if (global.datagenDialog) {
         ]
       ],
       friendship5: [
+        ["Happy cashiers are all alike, but every unhappy cashier is unhappy in their own way...", "...But I'm always happy to see you @p!"],
         ["I've been reading about the arcane magic of the Skull Cavern.", "Have you had a visit yet?"],
         ["Do you think Caroline ever gets along with anyone?", "I wonder if she has a soft side..."],
         ["I'm kinda over this whole groceries thing.", "Is my only task in this short life to sort products?"],

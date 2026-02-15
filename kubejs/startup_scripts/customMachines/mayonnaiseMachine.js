@@ -51,7 +51,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("quality", 0, 3))
     .soundType("copper")
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
@@ -70,14 +69,12 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -103,7 +100,6 @@ StartupEvents.registry("block", (event) => {
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            quality: block.properties.get("quality"),
           });
         }
       }
@@ -128,7 +124,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, recipe: "" });
+      blockInfo.initialData({ stage: 0, recipe: "", quality: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.mayonnaiseMachineRecipes, 1);
       });
