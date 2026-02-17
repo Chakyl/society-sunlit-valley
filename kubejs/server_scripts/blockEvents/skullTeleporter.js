@@ -28,7 +28,14 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
       }
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);
       player.persistentData.skullCavernEnterDay = global.getDay(level);
-      player.getLevel().getBlock(x, 511, z).set("society:skull_cavern_teleporter");
+      let playerLevel = player.getLevel()
+      if (playerLevel.dimension === "society:skull_cavern") {
+        playerLevel.getBlock(x, 511, z).set("society:skull_cavern_teleporter");
+      } else {
+        server.scheduleInTicks(10, () => {
+          player.getLevel().getBlock(x, 511, z).set("society:skull_cavern_teleporter");
+        });
+      }
     }
   } else {
     errorText = Text.translatable("society.skull_cavern.invalid_dimension").toJson();

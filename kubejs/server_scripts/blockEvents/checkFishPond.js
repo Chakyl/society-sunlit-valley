@@ -23,8 +23,8 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
   let translatedFishName = global.getTranslatedItemName(type, fishName);
 
   for (let index = 0; index < maxPopulation; index++) {
-    if (index < population) fishIcons += "§3🔔§r";
-    else fishIcons += "§7🔔§r";
+    if (index < population) fishIcons += "§3⏳§r";
+    else fishIcons += "§7⏳§r";
   }
   const upgrade =
     block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
@@ -111,7 +111,7 @@ const sendFishPondMessage = (clickEvent, type, population, maxPopulation) => {
         x: 1,
         z: -1,
         y: -65,
-        text: `🔔`.repeat(maxPopulation),
+        text: `⏳`.repeat(maxPopulation),
         color: "#000000",
         alignX: "center",
         alignY: "bottom",

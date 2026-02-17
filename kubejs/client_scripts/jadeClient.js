@@ -43,8 +43,8 @@ global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   let fishIcons = "";
 
   for (let index = 0; index < nbt.max_population; index++) {
-    if (index < nbt.population) fishIcons += "§3🔔§r";
-    else fishIcons += "§7🔔§r";
+    if (index < nbt.population) fishIcons += "§3⏳§r";
+    else fishIcons += "§7⏳§r";
   }
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();

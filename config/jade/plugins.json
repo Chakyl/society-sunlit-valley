@@ -8,7 +8,6 @@
     "item_storage.normal_amount": 9,
     "item_storage": true,
     "harvest_tool": true,
-    "vapourware.fuel": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
     "energy_storage": true,
@@ -102,11 +101,12 @@
   "pipez": {
     "pipe": true
   },
-  "untitledduckmod": {
-    "lay_egg": true
-  },
   "supplementaries": {
     "hat_stand": true
+  },
+  "untitledduckmod": {
+    "lay_egg": true,
+    "next_eat": true
   },
   "waystones": {
     "waystone": true

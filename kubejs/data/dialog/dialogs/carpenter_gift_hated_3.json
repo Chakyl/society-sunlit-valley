@@ -1,0 +1,26 @@
+{
+	"id": "carpenter_gift_hated_3",
+	"title": "carpenter introduction",
+	"description": "dialog.npc.carpenter.gift.hated",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.gift_hated.3.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

@@ -242,7 +242,7 @@ global.artisanInsert = (
   let stage = nbt.data.stage;
   const itemNbt = item.nbt;
   let itemQuality;
-  let hasQuality = nbt.data.quality !== undefined;
+  let hasQuality = nbt.data.quality !== undefined || ['society:cheese_press', 'society:mayonnaise_machine', 'society:fish_smoker', 'society:seed_maker'].includes("block.id");
   let useCount =
     multipleInputs && item.count >= stageCount - Number(stage)
       ? stageCount - Number(stage)

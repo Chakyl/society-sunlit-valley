@@ -2,14 +2,21 @@ console.info("[SOCIETY] npcInteraction.js loaded");
 // These lengths are formed from generateNpcDialog.js
 const dialogLengths = {
     banker: { chatterLengths: [15.0, 20.0, 13.0, 9.0, 11.0, 18.0], giftResponseLengths: { loved: 9.0, liked: 8.0, neutral: 8.0, disliked: 12.0, hated: 16.0 } },
-    blacksmith: { chatterLengths: [1.0, 3.0, 2.0, 1.0, 1.0, 3.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 2.0, hated: 1.0 } },
+    blacksmith: { chatterLengths: [16.0, 10.0, 11.0, 5.0, 3.0, 4.0], giftResponseLengths: { loved: 8.0, liked: 9.0, neutral: 8.0, disliked: 8.0, hated: 10.0 } },
     carpenter: { chatterLengths: [3.0, 3.0, 2.0, 1.0, 1.0, 3.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 2.0, hated: 1.0 } },
-    fisher: { chatterLengths: [4.0, 3.0, 1.0, 1.0, 1.0, 3.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 2.0, hated: 1.0 } },
-    market: { chatterLengths: [12.0, 12.0, 7.0, 16.0, 14.0, 13.0], giftResponseLengths: { loved: 9.0, liked: 8.0, neutral: 17.0, disliked: 12.0, hated: 13.0 } },
+    fisher: { chatterLengths: [5.0, 6.0, 2.0, 2.0, 1.0, 3.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 2.0, disliked: 4.0, hated: 7.0 } },
+    market: { chatterLengths: [18.0, 14.0, 8.0, 16.0, 14.0, 14.0], giftResponseLengths: { loved: 10.0, liked: 8.0, neutral: 17.0, disliked: 12.0, hated: 13.0 } },
     shepherd: { chatterLengths: [15.0, 14.0, 13.0, 13.0, 14.0, 17.0], giftResponseLengths: { loved: 9.0, liked: 10.0, neutral: 8.0, disliked: 8.0, hated: 11.0 } },
-    witch: { chatterLengths: [1.0, 3.0, 2.0, 1.0, 1.0, 3.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 2.0, hated: 1.0 } },
 }
 
+const maxGifts = {
+    banker: "society:slouching_towards_artistry",
+    blacksmith: Item.of('justhammers:iron_hammer', "{Damage:0,RepairCost:0,display:{Name:'{\"text\":\"§6Aiden\\'s Hammer\"}'}}").enchant('minecraft:efficiency', 5).enchant('minecraft:fortune', 3),
+    carpenter: Item.of('portable_blueprints:worn_blueprint', '{Damage:1,allow_nbt:1,altezza:0,blueprint_name:"blockapedia",buildAnyway:0b,display:{Name:\'{"italic":false,"color":"#FFFF00","text":"Blueprint: Blockapedia"}\'},free_build:1,inventari_blocco_selezionati:"",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:"blockapedia",owner:"worn",owner_name:"Ace (Built by Mimsy)",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}'),
+    fisher: "society:heart_of_neptunium",
+    market: "society:universal_methods_of_farming",
+    shepherd: Item.of('2x wildernature:penguin_spawn_egg')
+}
 
 const getNpcKey = (customName) => {
     const startIndex = customName.indexOf("dialog.npc.");
@@ -23,6 +30,7 @@ const getNpcKey = (customName) => {
     return customName.substring(startIndex + "dialog.npc.".length, endIndex);
 }
 const npcIds = ["easy_npc:humanoid", "easy_npc:humanoid_slim"];
+
 ItemEvents.entityInteracted((e) => {
     const { hand, player, item, level, target, server } = e;
     if (hand == "OFF_HAND") return;
@@ -33,18 +41,35 @@ ItemEvents.entityInteracted((e) => {
         let day = global.getDay(level);
         if (!player.persistentData.npcData) player.persistentData.npcData = {}
         let npcData = player.persistentData.npcData[npcId];
-        // player.persistentData.npcData.banker = undefined
         if (!npcData) {
             player.persistentData.npcData[npcId] = {
                 friendship: 0,
                 dayLastChatted: -1,
-                dayLastGifted: -4
+                dayLastGifted: -4,
+                maxGifted: false
             }
             server.runCommandSilent(
                 `dialog ${target.getUuid()} show ${player.username} ${npcId}_intro`
             );
+        } else if (true || !npcData.maxGifted && Number(npcData.friendship) > 10) {
+            if (npcId.equals("banker") && player.stages.has("slouching_towards_artistry")) {
+                player.give(Item.of("2x waystones:waystone"))
+                server.runCommandSilent(
+                    `dialog ${player.username} show ${player.username} banker_unique__gift_read`
+                );
+            } else if (npcId.equals("market") && player.stages.has("universal_methods_of_farming")) {
+                player.give(Item.of("16x society:sparkpod_seed"))
+                server.runCommandSilent(
+                    `dialog ${player.username} show ${player.username} market_unique_five_gift_read`
+                );
+            } else {
+                player.give(maxGifts[npcId])
+                server.runCommandSilent(
+                    `dialog ${target.getUuid()} show ${player.username} ${npcId}_unique_five_gift`
+                );
+            }
+            npcData.maxGifted = true
         } else {
-            // player.tell(player.persistentData.npcData[npcId])
             // Carpenter has two shops so it always needs dialog to choose between the two.
             let dialogNumber;
             if (player.isCrouching() && item.hasTag("society:villager_gift")) {
@@ -91,8 +116,10 @@ ItemEvents.entityInteracted((e) => {
                         25,
                         0.001
                     );
+                    let delay = 0;
+                    if (item.isEdible()) delay = 20
                     if (!player.isCreative()) item.shrink(1);
-                    server.scheduleInTicks(8, () => {
+                    server.scheduleInTicks(delay, () => {
                         server.runCommandSilent(
                             `dialog ${target.getUuid()} show ${player.username} ${npcId}_gift_${giftValue}_${dialogNumber}`
                         );

@@ -123,7 +123,7 @@ if (global.datagenDialog) {
         ]
       ],
       friendship5: [
-        ["Happy cashiers are all alike, but every unhappy cashier is unhappy in their own way...", "...But I'm always happy to see you @p!"],
+        ["Happy cashiers are all alike, but every unhappy cashier is unhappy in their own way...", "...But I'm always happy to see you @i!"],
         ["I've been reading about the arcane magic of the Skull Cavern.", "Have you had a visit yet?"],
         ["Do you think Caroline ever gets along with anyone?", "I wonder if she has a soft side..."],
         ["I'm kinda over this whole groceries thing.", "Is my only task in this short life to sort products?"],
@@ -218,5 +218,31 @@ if (global.datagenDialog) {
         "You are a child, get away from me."
       ],
     },
+    unique: [
+      {
+        name: "five_gift",
+        text: [
+          "Ahhh just the person I wanted to see today! I have a bit of a request for you.",
+          "Caroline's making me read this really dry book on farming, and I really can't be bothered...",
+          "But you're a farmer! A really good one at that, and I'd know more than anyone else here.",
+          "Sooooo.... Can you please read this book for me and give me a quick summary on it?",
+          "In return I'll convince Caroline to let me carry seeds of every season all the time!",
+          "It's a win win but I know you'd do it either way since you seem absolutely infatuated with me.",
+          "...You aren't exactly subtle..."
+        ]
+      },
+      {
+        name: "five_gift_read",
+        text: [
+          "Hey @i, you look like the type of person who's read Universal Methods of Farming, am I right?",
+          "Sorry I don't mean to call you a nerd. I mean you definitely are a farming nerd there's no doubt about that.",
+          "But I digress and I'll cut to the chase. Can you give me a quick summary on it?",
+          "Caroline's making me read this really dry book on farming, and I really can't be bothered...",
+          "I'll give you some of these rare sparkpod seeds in advance, it really is a win win!",
+          "Although... I know you'd do it either way since you seem absolutely infatuated with me.",
+          "...You aren't exactly subtle..."
+        ]
+      },
+    ]
   });
 }

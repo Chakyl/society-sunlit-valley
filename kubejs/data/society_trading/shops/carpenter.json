@@ -2,7 +2,10 @@
   "shop_id": "carpenter",
   "name": "shop.society_trading.carpenter",
   "texture": "dialog:textures/portraits/carpenter",
-  "jei_catalyst": { "item": "meadow:woodcutter" },
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:carpenter\"}}"
+  },
   "selector_weight": -96,
   "trades": [
     {
@@ -500,15 +503,6 @@
       },
       "numismatics_cost": 64,
       "trade_id": "market_orange_blossom_sapling"
-    },
-    {
-      "offer": { "item": "society:universal_methods_of_farming", "count": 1 },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 20
-      },
-      "numismatics_cost": 81920,
-      "trade_id": "market_universal_methods_of_farming"
     }
   ],
   "random_sets": [
