@@ -43,7 +43,7 @@ ItemEvents.entityInteracted((e) => {
         let npcData = player.persistentData.npcData[npcId];
         if (!npcData) {
             player.persistentData.npcData[npcId] = {
-                friendship: 0,
+                friendship: 5,
                 dayLastChatted: -1,
                 dayLastGifted: -4,
                 maxGifted: false
@@ -51,7 +51,7 @@ ItemEvents.entityInteracted((e) => {
             server.runCommandSilent(
                 `dialog ${target.getUuid()} show ${player.username} ${npcId}_intro`
             );
-        } else if (true || !npcData.maxGifted && Number(npcData.friendship) > 10) {
+        } else if (!npcData.maxGifted && Number(npcData.friendship) >= 500) {
             if (npcId.equals("banker") && player.stages.has("slouching_towards_artistry")) {
                 player.give(Item.of("2x waystones:waystone"))
                 server.runCommandSilent(
@@ -124,11 +124,18 @@ ItemEvents.entityInteracted((e) => {
                             `dialog ${target.getUuid()} show ${player.username} ${npcId}_gift_${giftValue}_${dialogNumber}`
                         );
                     });
+                    if (Math.random() < 0.01) {
+                        let newGolem = level.createEntity(Math.random() < 0.5 ? "golemoverhaul:barrel_golem" : "golemoverhaul:hay_golem");
+                        newGolem.setX(target.getX() + 8);
+                        newGolem.setY(target.getY() + 2);
+                        newGolem.setZ(target.getZ() + -8);
+                        newGolem.spawn();
+                    }
                 } else {
                     player.tell(Text.translatable("society.npc.gifted_too_soon").gold())
                 }
             } else {
-                if (npcId === "carpenter" || day > npcData.dayLastChatted || npcData.dayLastChatted - day > 1) {
+                if (day > npcData.dayLastChatted || npcData.dayLastChatted - day > 1) {
                     let hearts = Math.floor(npcData.friendship / 100);
                     dialogNumber = Math.floor(Math.random() * dialogLengths[npcId].chatterLengths[hearts]);
 
@@ -142,7 +149,14 @@ ItemEvents.entityInteracted((e) => {
                         npcData.friendship = npcData.friendship + 5
                     }
                 } else {
-                    server.runCommandSilent(`openshop ${player.username} ${npcId}`)
+                    if (npcId === "carpenter") {
+                        server.runCommandSilent(
+                            `dialog ${target.getUuid()} show ${player.username} carpenter_unique_need_to_buy`
+                        );
+                    } else {
+                        server.runCommandSilent(`openshop ${player.username} ${npcId}`)
+
+                    }
                 }
             }
         }

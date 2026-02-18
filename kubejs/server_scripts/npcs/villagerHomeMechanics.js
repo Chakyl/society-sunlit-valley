@@ -27,64 +27,80 @@ BlockEvents.placed("society:villager_home", (e) => {
   if (player.isFake()) e.cancel();
   const homeNbt = player.getHeldItem("main_hand").getNbt();
   let nbt = block.getEntityData();
-  const { placer, type, spawned } = nbt.data;
   const { x, y, z } = block;
   if (homeNbt) {
     let villagerType = homeNbt.getString("type");
-
-
-    let nearbyNPCs = level
-      .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
-      .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
-
-    if (player && nearbyNPCs.length == 0) {
-      server.runCommandSilent(
-        `easy_npc preset import_new custom easy_npc:preset/${npcMap.get(
-          String(villagerType)
-        )}.npc.nbt ${x} ${y + 0.25} ${z}`
-      );
-      nearbyNPCs = level
-        .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
+    let day = global.getDay(level);
+    let npcData = player.persistentData.npcData[villagerType];
+    if (!npcData) {
+      player.persistentData.npcData[villagerType] = {
+        friendship: 5,
+        dayLastChatted: -1,
+        dayLastGifted: -4,
+        dayLastPlaced: day,
+        maxGifted: false
+      }
+    }
+    if (!npcData.dayLastPlaced) npcData.dayLastPlaced = -1
+    if (Number(npcData.dayLastPlaced) + 10 < day) {
+      let nearbyNPCs = level
+        .getEntitiesWithin(AABB.ofBlock(block).inflate(3))
         .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
 
-      level.spawnParticles(
-        "ribbits:spell",
-        true,
-        nearbyNPCs[0].x,
-        nearbyNPCs[0].y + 1.5,
-        nearbyNPCs[0].z,
-        0.2 * rnd(1, 2),
-        0.2 * rnd(1, 2),
-        0.2 * rnd(1, 2),
-        20,
-        0.05
-      );
-      server.runCommandSilent(
-        `playsound botania:starcaller block @a ${player.x} ${player.y} ${player.z}`
-      );
-      server.runCommandSilent(`easy_npc navigation set home ${nearbyNPCs[0].getUuid()} ${x} ${y + 0.25} ${z}`)
-      nbt.merge({
-        data: {
-          type: villagerType,
-          boundNpc: nearbyNPCs[0].getUuid().toString(),
-          placer: player.getUuid().toString(),
-        },
-      });
-      block.setEntityData(nbt);
-      player.tell(
-        Text.translatable(
-          "society.villager_home.moved_in",
-          Text.translatable(`dialog.npc.${villagerType}.name`).gold()
-        )
-      );
+      if (player && nearbyNPCs.length == 0) {
+        server.runCommandSilent(
+          `easy_npc preset import_new custom easy_npc:preset/${npcMap.get(
+            String(villagerType)
+          )}.npc.nbt ${x} ${y + 0.25} ${z}`
+        );
+        nearbyNPCs = level
+          .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
+          .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
+
+        level.spawnParticles(
+          "ribbits:spell",
+          true,
+          nearbyNPCs[0].x,
+          nearbyNPCs[0].y + 1.5,
+          nearbyNPCs[0].z,
+          0.2 * rnd(1, 2),
+          0.2 * rnd(1, 2),
+          0.2 * rnd(1, 2),
+          20,
+          0.05
+        );
+        server.runCommandSilent(
+          `playsound botania:starcaller block @a ${player.x} ${player.y} ${player.z}`
+        );
+        server.runCommandSilent(`easy_npc navigation set home ${nearbyNPCs[0].getUuid()} ${x} ${y + 0.25} ${z}`)
+        nbt.merge({
+          data: {
+            type: villagerType,
+            boundNpc: nearbyNPCs[0].getUuid().toString(),
+            placer: player.getUuid().toString(),
+          },
+        });
+        block.setEntityData(nbt);
+        player.tell(
+          Text.translatable(
+            "society.villager_home.moved_in",
+            Text.translatable(`dialog.npc.${villagerType}.name`).gold()
+          )
+        );
+        npcData.dayLastPlaced = day
+      } else {
+        player.tell(Text.translatable("society.villager_home.too_close").red());
+        player.inventoryMenu.broadcastFullState();
+        e.cancel();
+      }
     } else {
-      player.tell("This home is too close to another NPC!")
-      e.player.inventoryMenu.broadcastFullState();
+      player.tell(Text.translatable("society.villager_home.recently_moved_in").red());
+      player.inventoryMenu.broadcastFullState();
       e.cancel();
     }
   } else {
-    player.tell("Something went wrong!")
-    e.player.inventoryMenu.broadcastFullState();
+    player.tell(Text.translatable("society.villager_home.error").red());
+    player.inventoryMenu.broadcastFullState();
     e.cancel();
   }
 });
@@ -127,9 +143,10 @@ BlockEvents.broken("society:villager_home", (e) => {
       )
     );
     block.popItem(Item.of(block.id, `{type:${type}}`));
+    player.persistentData.npcData[type].dayLastPlaced = -1
   } else {
     if (!(type == undefined || placer == undefined || boundNpc == undefined))
-    e.cancel();
+      e.cancel();
   }
 });
 

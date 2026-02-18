@@ -108,6 +108,22 @@
     },
     {
       "offer": {
+        "item": "society_trading:auto_trader",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "second_request": {
+        "item": "society_battery",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "auto_trader_for_sun"
+    },
+    {
+      "offer": {
         "item": "numismatics:vendor",
         "count": 1
       },

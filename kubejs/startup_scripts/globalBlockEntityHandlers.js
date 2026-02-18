@@ -1143,7 +1143,7 @@ const qualityToInt = (quality) => {
   }
 };
 const getFertilizer = (crop) => {
-  const block = crop
+  let block = crop
     .getLevel()
     .getBlock(crop.getPos().below());
   if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
@@ -1166,11 +1166,13 @@ const LevelData = Java.loadClass(
 );
 
 global.getCropQuality = (crop) => {
-  const fertilizer = getFertilizer(crop);
+  let resolvedCrop = crop
+  if (crop.id === "farmersdelight:rice_panicles") resolvedCrop = crop.getLevel().getBlock(crop.getPos().below());
+  const fertilizer = getFertilizer(resolvedCrop);
   if (fertilizer == -1) return 0;
   const qualityName = LevelData.get(
-    crop.getLevel(),
-    crop.getPos(),
+    resolvedCrop.getLevel(),
+    resolvedCrop.getPos(),
     false
   );
   let seedQuality = qualityToInt(qualityName);

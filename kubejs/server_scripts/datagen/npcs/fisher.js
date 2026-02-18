@@ -37,19 +37,50 @@ if (global.datagenDialog) {
           "♫ Letting the days go by, let the water hold me down... ♫",
           "Oh. Hello."
         ],
-        "Always refreshing to hear from you."
+        [
+          "The sunrise is quite beautiful.",
+          "...",
+          "You can't let it distract you from your catch, though."
+        ],
+        [
+          "It's curious. Fresh fish can come from salt water or fresh water...",
+          "And to keep fish fresh, you can salt them."
+        ],
+        "Caught anything new lately?",
+        "Have you checked your fish ponds today?",
+        "Do you think Ace can do anything with all of this driftwood I've found?",
+        "The fish here can be... unusual.",
+        "Bait Makers are convenient, but steady hands catch the best fish.", // voice
       ],
       friendship4: [
         [
           "I kneel with my rod",
           "The waves crash against the shore",
           "Mystical Ocean"
-        ]
+        ],
+        ["The clearest of skies", "Folks work and play and harvest", "The Sunlit Valley"],
+        [
+          "Fishing really takes you to all sorts of places.", "Beaches, rivers, glaciers, islands... even volcanoes."
+        ],
+        [
+          "The markets at sea are quite volatile, you know.",
+          "I used to make most of my money from bounties."
+        ],
+        [
+          "These waters vex me.",
+          "Where does all this jelly come from?"
+        ],
+        "Yes, @i?",
+        "Always refreshing to hear from you.",
+        "It's a lovely day for fishing.",
       ],
       friendship5: [
-        [
-          ""
-        ]
+        ["Do you hear it? Listen!", "...", "Water makes such interesting noises."],
+        ["It's been a while since I've been out at sea.", "This place is quite magnetic, I suppose."],
+        ["Such a big valley, and so many fish to catch...", "Oh! Good syllables."],
+        "I love days like these.",
+        "♫ Hmm hmm hmm... ♫",
+        ""
       ]
     },
     giftResponse: {

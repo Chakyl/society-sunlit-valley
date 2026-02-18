@@ -14,7 +14,7 @@
 	monthAbbreviations = []
 	#Year suffix string, e.g. "A.N." for "After Notch".
 	#Used when displaying dates like: Day 17 of Dawnroot, 112 A.N.
-	yearSuffix = "AH"
+	yearSuffix = "Y"
 	#How many in-game days each month lasts before progressing to the next month.
 	#This is server-authoritative and synced to clients.
 	#
@@ -32,7 +32,7 @@
 	#  2) Set daysPerMonth below to 30
 	#  3) Ensure you have 12 monthNames above
 	#
-	#Velid range: 1..365
+	#Valid range: 1..365
 	#Range: 1 ~ 365
 	daysPerMonth = 30
 	#If true, use the RPG Timeline custom font for the day popup.
@@ -93,4 +93,32 @@
 	#priority=100;days=4;layer=entity;render=entity;type=advancement;id=minecraft:end/kill_dragon;entity=minecraft:ender_dragon
 	#priority=30;days=3;layer=entity;render=entity;useTarget=true;type=custom;goalType=kill_mob;target=minecraft:zombie
 	eventTimeframes = "# Entity overrides (render 3D models instead of category background)\npriority=100;days=4;alpha=0.45;layer=entity;render=entity;type=advancement;id=minecraft:end/kill_dragon;entity=minecraft:ender_dragon\npriority=95;days=4;alpha=0.45;layer=entity;render=entity;type=advancement;id=minecraft:nether/summon_wither;entity=minecraft:wither\npriority=90;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;id=minecraft:nether/get_wither_skull;entity=minecraft:wither_skeleton\npriority=85;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;keywords=elder guardian;entity=minecraft:elder_guardian\npriority=80;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;keywords=raid;entity=minecraft:ravager\npriority=75;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;keywords=warden;entity=minecraft:warden"
+	#If true, allows running retroactive advancement import via command:
+	#/rpgtimeline retroimport advancements
+	#Import is idempotent: already-present actor+advancement pairs are skipped.
+	retroactiveAdvancementImportEnabled = true
+	#If true, includes recipe advancement ids (namespace:recipes/*) in retroactive import.
+	#Recommended: keep false to avoid recipe-book noise.
+	retroactiveAdvancementImportIncludeRecipes = false
+	#If true, imported entries map wall-clock completion times to timeline dayIndex
+	#using world real-time age: worldStart..serverNow is scaled to 0..currentDayIndex,
+	#then each advancement timestamp is projected into that day range.
+	#If false, imported entries use the current timeline day.
+	retroactiveAdvancementImportMapByRealDays = true
+	#Maximum world-first advancement chat announcements allowed per player within the player window.
+	#Set to 0 to disable per-player rate limiting.
+	#Range: 0 ~ 1000
+	advancementAnnouncementPlayerMaxCount = 1
+	#Tick window for per-player world-first advancement announcement rate limiting.
+	#Example: 200 ticks = 10 seconds.
+	#Range: 1 ~ 72000
+	advancementAnnouncementPlayerWindowTicks = 24000
+	#Maximum world-first advancement chat announcements allowed globally within the global window.
+	#Set to 0 to disable global rate limiting.
+	#Range: 0 ~ 10000
+	advancementAnnouncementGlobalMaxCount = 1
+	#Tick window for global world-first advancement announcement rate limiting.
+	#Example: 200 ticks = 10 seconds.
+	#Range: 1 ~ 72000
+	advancementAnnouncementGlobalWindowTicks = 24000
 

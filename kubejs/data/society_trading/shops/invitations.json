@@ -11,6 +11,18 @@
   "trades": [
     {
       "offer": {
+        "item": "society:face_note"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 4
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_face_note"
+    },
+    {
+      "offer": {
         "item": "society:invitation",
         "count": 1,
         "nbt": "{\"type\":{\"id\":\"society:market\"}}"

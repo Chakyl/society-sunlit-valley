@@ -24,6 +24,9 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("minecraft:entities/spider")
     .randomChance(0.05)
     .addLoot("society:spider_silk");
+  e.addLootTableModifier("minecraft:entities/creeper")
+    .randomChance(0.05)
+    .addLoot("society:green_tea_honeycomb");
   e.addLootTableModifier("legendarycreatures:entities/corpse_eater")
     .randomChance(0.05)
     .addLoot("society:wheel_of_adaptation");

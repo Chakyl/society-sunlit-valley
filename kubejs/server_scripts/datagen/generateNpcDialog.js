@@ -136,7 +136,8 @@ const runNpcDatagen = (npcId, npcDef) => {
             npcId,
             `unique_${dialog.name}`,
             -1,
-            dialog.text
+            dialog.text,
+            true
           ),
         }
       );

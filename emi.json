@@ -2,24 +2,83 @@
   "favorites": [
     {
       "stack": "item:species:birtday_cake"
+    },
+    {
+      "stack": "item:minecraft:oak_door"
     }
   ],
   "lookup_history": [
-    "item:society:ribbit_hut_block",
+    "item:quark:oak_vertical_slab",
+    "item:society:cranberry",
+    "item:refinedstorage:exporter",
+    "item:golemoverhaul:terracotta_golem_spawn_egg",
+    "item:crabbersdelight:crab_spawn_egg",
+    "item:wildernature:cassowary_spawn_egg",
+    "item:wildernature:deer_spawn_egg",
+    "item:wildernature:squirrel_spawn_egg",
+    "item:wildernature:dog_spawn_egg",
+    "item:wildernature:flamingo_spawn_egg",
+    "item:wildernature:pelican_spawn_egg",
+    "item:wildernature:minisheep_spawn_egg",
+    "item:wildernature:bison_spawn_egg",
+    "item:wildernature:raccoon_spawn_egg",
+    "item:wildernature:penguin_spawn_egg",
+    "item:wildernature:hedgehog_spawn_egg",
+    "item:minecraft:cow_spawn_egg",
+    "item:minecraft:camel_spawn_egg",
+    "item:minecraft:cat_spawn_egg",
+    "item:minecraft:fox_spawn_egg",
+    "item:minecraft:goat_spawn_egg",
+    "item:minecraft:horse_spawn_egg",
+    "item:minecraft:llama_spawn_egg",
+    "item:minecraft:ocelot_spawn_egg",
+    "item:minecraft:panda_spawn_egg",
+    "item:minecraft:parrot_spawn_egg",
+    "item:minecraft:piglin_spawn_egg",
+    "item:snowpig:snow_pig_spawn_egg",
+    "item:minecraft:polar_bear_spawn_egg",
+    "item:minecraft:rabbit_spawn_egg",
+    "item:untitledduckmod:goose_spawn_egg",
+    "item:crittersandcompanions:jumping_spider_spawn_egg",
+    "item:farmlife:domestic_tribull_spawn_egg",
+    "item:crittersandcompanions:red_panda_spawn_egg",
+    "item:untitledduckmod:duck_spawn_egg",
+    "item:minecraft:bee_spawn_egg",
+    "item:society:green_tea_honeycomb",
+    "item:society:token_of_unity",
+    "item:society:giant_bandolier_belt",
+    "item:society:invitation{type:{id:\"society:market\"}}",
+    "item:society:invitation{type:{id:\"society:carpenter\"}}",
+    "item:minecraft:wooden_axe{Damage:0}",
+    "item:society:villager{type:{id:\"society:carpenter\"}}",
+    "item:society:skull_cavern_teleporter",
+    "item:society:face_note",
+    "item:society:plushie_capsule",
+    "item:species:cracked_wraptor_egg",
+    "item:species:wraptor_egg",
+    "item:society:dried_crimson_fungus",
+    "item:minecraft:warped_fungus",
+    "item:society:dried_warped_fungus",
+    "item:netherdepthsupgrade:eyeball",
+    "item:society:nether_jelly",
     {
       "type": "fluid",
       "id": "society:mystic_jelly",
-      "amount": 250
+      "amount": 0
     },
+    "item:society:artifact_trove",
+    "item:society:geode",
+    "item:society:magma_geode",
+    "item:society:frozen_geode",
+    "item:society:ribbit_drum",
+    "item:society:froggy_helm",
+    "item:society:ribbit_gadget",
+    "item:society:heart_of_neptunium",
+    "item:society:ribbit_hut_block",
     "item:society:sun_candy",
     "item:justhammers:small_core",
     "item:justhammers:stone_hammer{Damage:0}",
     "item:justhammers:iron_hammer{Damage:0,Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:fortune\",lvl:3s}],RepairCost:0,display:{Name:\u0027{\"text\":\"§6Aiden\\\u0027s Hammer\"}\u0027}}",
-    {
-      "type": "item",
-      "id": "society:heart_of_neptunium",
-      "amount": 2
-    },
     "item:society:sparkpod_seed",
     "item:society:universal_methods_of_farming",
     "item:waystones:waystone",
@@ -105,8 +164,6 @@
       "amount": 2
     },
     "item:farmingforblockheads:market",
-    "item:society:invitation{type:{id:\"society:carpenter\"}}",
-    "item:minecraft:wooden_axe{Damage:0}",
     "item:society:invitation{type:{id:\"society:banker\"}}",
     {
       "type": "item",
@@ -232,7 +289,6 @@
     "item:minecraft:oak_wood",
     "item:society:ocean_jelly",
     "item:society:river_jelly",
-    "item:society:nether_jelly",
     "item:relics:jellyfish_necklace{abilities:{paralysis:{points:0,stats:{duration:0.75187d}},shock:{points:0,stats:{damage:1.78922d},temp:{ticking:1b}}}}",
     "item:society:smoked_jellyfish",
     "item:society:double_aged_jellie_wine",
@@ -250,12 +306,8 @@
     "item:gag:sacred_salve",
     "item:society:ocean_stone",
     "item:society:aquamagical_dust",
-    "item:society:dried_crimson_fungus",
-    "item:society:dried_warped_fungus",
-    "item:netherdepthsupgrade:eyeball",
     "item:netherdepthsupgrade:fortress_grouper_plate",
     "fluid:create_central_kitchen:aloe_gel",
-    "item:species:cracked_wraptor_egg",
     "fluid:minecraft:lava",
     "item:society:nether_raisins",
     "item:farmersdelight:nether_salad",
@@ -347,7 +399,6 @@
     "item:vinery:cristel_wine",
     "item:minecraft:stripped_oak_log",
     "item:create:industrial_iron_block",
-    "item:society:invitation{type:{id:\"society:market\"}}",
     "item:numismatics:ancient_coin",
     {
       "type": "item",
@@ -422,7 +473,6 @@
     "item:minecraft:end_stone",
     "item:quark:hollow_oak_log",
     "item:ribbits:ribbit_fisherman_spawn_egg",
-    "item:society:ribbit_gadget",
     "item:classicpipes:mangrove_pipe",
     "item:minecraft:oak_stairs",
     "item:mysticaloaktree:wise_oak",
@@ -448,7 +498,6 @@
     "item:society:large_turkey_mayonnaise",
     "item:society:large_galliraptor_mayonnaise",
     "item:minecraft:pig_spawn_egg",
-    "item:snowpig:snow_pig_spawn_egg",
     "item:atmospheric:currant",
     "item:society:mana_fruit",
     "item:minecraft:amethyst_shard",
@@ -466,7 +515,6 @@
       "remainder": "item:botania:rune_mana"
     },
     "item:botania:rune_gluttony",
-    "item:farmlife:domestic_tribull_spawn_egg",
     "item:botania:pump",
     "item:classicpipes:flint_pipe",
     "item:classicpipes:oak_pipe",
@@ -654,7 +702,6 @@
     },
     "item:minecraft:oak_log",
     "item:domesticationinnovation:drum",
-    "item:minecraft:rabbit_spawn_egg",
     "item:cluttered:willow_wood",
     "item:everycomp:fs/cluttered/willow_4",
     "item:portable_blueprints:scanner",
@@ -697,15 +744,11 @@
     "item:society:the_quality_of_the_earth",
     "item:society:slime_contain_protect",
     "item:society:pond_house_five",
-    "item:crittersandcompanions:jumping_spider_spawn_egg",
     "item:aquaculture:turtle_soup",
     "item:society:aged_starshell_turtle_roe",
     "item:crittersandcompanions:shima_enaga_spawn_egg",
     "item:crittersandcompanions:koi_fish_spawn_egg",
-    "item:crittersandcompanions:red_panda_spawn_egg",
     "item:crittersandcompanions:ferret_spawn_egg",
-    "item:wildernature:squirrel_spawn_egg",
-    "item:minecraft:panda_spawn_egg",
     "item:whimsy_deco:adv_big_panda_plushie",
     "item:perfectplushies:adv_red_panda_plushie",
     "item:perfectplushies:adv_panda_plushie",
@@ -748,7 +791,6 @@
     },
     "item:society:fish_pond",
     "item:society:sparkstone_block",
-    "item:society:artifact_trove",
     "item:cluttered:sweetheart_table",
     "item:society:bubble_totem",
     "item:numismatics:neptunium_coin",
@@ -780,7 +822,6 @@
     "item:minecraft:magma_block",
     "item:society:spindlefish_roe",
     "item:create:white_seat",
-    "item:wildernature:raccoon_spawn_egg",
     "item:atmospheric:cochineal_spawn_egg",
     "item:minecraft:bone_block",
     "item:autumnity:snail_spawn_egg",
@@ -789,7 +830,6 @@
     "item:minecraft:frog_spawn_egg",
     "item:minecraft:dolphin_spawn_egg",
     "item:minecraft:blaze_spawn_egg",
-    "item:minecraft:camel_spawn_egg",
     {
       "type": "item",
       "id": "untitledduckmod:duck_egg",
@@ -853,11 +893,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -868,16 +908,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini",
+      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1108,14 +1148,8 @@
     },
     "item:windswept:lupine",
     "item:minecraft:salmon",
-    {
-      "type": "item",
-      "id": "society:cranberry",
-      "amount": 3
-    },
     "item:society:cranberry_seed",
     "item:cluttered:blue_roundhead",
-    "item:minecraft:warped_fungus",
     {
       "type": "item",
       "id": "quark:glow_shroom",
@@ -1278,7 +1312,6 @@
     "item:everycomp:q/autumnity/stripped_maple_post",
     "item:everycomp:q/autumnity/maple_ladder",
     "item:society:limestone_pebble",
-    "item:society:geode",
     "item:betterarcheology:bomb",
     "item:betterarcheology:fossiliferous_dirt",
     "item:cluttered:moon_decoration",
@@ -1323,8 +1356,6 @@
     "item:autumnity:turkey_spawn_egg",
     "item:minecraft:turtle_spawn_egg",
     "item:minecraft:villager_spawn_egg",
-    "item:minecraft:piglin_spawn_egg",
-    "item:minecraft:goat_spawn_egg",
     "item:snuffles:snuffle_spawn_egg",
     "item:veggiesdelight:turnip_salad",
     {
@@ -1482,39 +1513,7 @@
     "item:nethervinery:warped_grapejuice",
     "item:refurbished_furniture:vegetable_pizza_slice",
     "item:veggiesdelight:carrot_juice",
-    "item:copycats:copycat_vertical_slice",
-    "item:windswept:chiseled_packed_ice_bricks",
-    "item:minecraft:packed_ice",
-    "item:windswept:packed_ice_stairs",
-    "item:minecraft:ice",
-    "item:minecraft:blue_ice",
-    "item:windswept:ice_sheet",
-    "item:society:mana_fruit_crop",
-    "item:refinedstorage:regulator_upgrade",
-    "item:refinedstorage:upgrade",
-    "item:society:cornucopia",
-    "item:botania:mana_quartz_slab",
-    "item:botania:rune_greed",
-    "item:botania:elementium_ingot",
-    "item:botania:flight_tiara{variant:1}",
-    "item:farmlife:galliraptor_spawn_egg",
-    "item:botania:terra_plate",
-    "item:society:mana_clock{}",
-    "item:botania:floating_manastar",
-    "item:botania:manaweave_helmet{Damage:0}",
-    "item:botania:manasteel_shears{Damage:0}",
-    "item:botania:endoflame",
-    "item:society:mana_fruit_crate",
-    "item:society:plushie_capsule",
-    "item:society:bluegill_meridian",
-    "item:society:bullfish_jobs",
-    "item:society:wuthering_logs",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
-    "item:minecraft:wet_sponge",
-    "item:minecraft:sponge",
-    "item:vintagedelight:honey_mason_jar"
+    "item:copycats:copycat_vertical_slice"
   ],
   "craft_history": [
     "minecraft:kjs/society_dehydrator",
@@ -1624,8 +1623,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
-      "minecraft:kjs/society_sun_candy"
+      "minecraft:kjs/society_sun_candy",
+      "netherdepthsupgrade:eyeball",
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
     ],
     "tags": {},
     "resolutions": {
@@ -1636,18 +1636,18 @@
           "amount": 250
         }
       ],
-      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
-        {
-          "type": "fluid",
-          "id": "minecraft:lava",
-          "amount": 10
-        }
-      ],
       "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
         {
           "type": "fluid",
           "id": "society:mystic_syrup",
           "amount": 250
+        }
+      ],
+      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
+        {
+          "type": "fluid",
+          "id": "minecraft:lava",
+          "amount": 10
         }
       ]
     },

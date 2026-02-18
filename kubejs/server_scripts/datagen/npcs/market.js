@@ -62,11 +62,12 @@ if (global.datagenDialog) {
       ],
       friendship2: [
         [
-          "Can yopu tell Caroline I've been very professional with you?",
+          "Can you tell Caroline I've been very professional with you?",
           "She doesn't like when I get casual and I really can't be bothered.",
         ],
         "Can you hurry up and buy something, I'm really tired right now.",
         "I'm running low on stock this week so go easy on me.",
+        "I don't know why everyone around here is so suspicious of me, I just like my peace and quiet...",
         "Why does a town this small even need a market. If you ask me, everyone should just barter for food.",
         ["Caroline's weekly report is overdue, I hope she's not too mad about it.", "I don't think I'm gonna be able to convince you to do it for me... Unless?"],
         "Read any classics lately? Or are you still running around from dusk till dawn every day.",
