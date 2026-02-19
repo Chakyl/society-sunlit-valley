@@ -62,6 +62,15 @@
 		{
 			dependencies: ["664E4A3806C40A78"]
 			description: ["{ftbquests.chapter.villagers.quest3CF0897E67574877.description1}"]
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:shepherd"
+					}
+				}
+			}
 			id: "3CF0897E67574877"
 			rewards: [{
 				count: 4
@@ -95,6 +104,15 @@
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:carpenter"
+					}
+				}
+			}
 			id: "664E4A3806C40A78"
 			rewards: [{
 				count: 2
@@ -124,6 +142,15 @@
 			description: ["{ftbquests.chapter.villagers.quest48655663A5A82FC.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:market"
+					}
+				}
+			}
 			id: "048655663A5A82FC"
 			rewards: [{
 				count: 4
@@ -151,6 +178,15 @@
 		{
 			dependencies: ["048655663A5A82FC"]
 			description: ["{ftbquests.chapter.villagers.quest2A64214504AAD5E5.description1}"]
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:fisher"
+					}
+				}
+			}
 			id: "2A64214504AAD5E5"
 			rewards: [{
 				count: 4
@@ -178,6 +214,15 @@
 		{
 			dependencies: ["664E4A3806C40A78"]
 			description: ["{ftbquests.chapter.villagers.quest499871FDD2A65F2C.description1}"]
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:blacksmith"
+					}
+				}
+			}
 			id: "499871FDD2A65F2C"
 			rewards: [{
 				count: 4
@@ -205,6 +250,15 @@
 		{
 			dependencies: ["048655663A5A82FC"]
 			description: ["{ftbquests.chapter.villagers.quest4633C0427ACA18D3.description1}"]
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:banker"
+					}
+				}
+			}
 			id: "4633C0427ACA18D3"
 			rewards: [{
 				id: "39A6E5251F5A738D"

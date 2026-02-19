@@ -2,13 +2,12 @@ console.info("[SOCIETY] npcInteraction.js loaded");
 // These lengths are formed from generateNpcDialog.js
 const dialogLengths = {
     banker: { chatterLengths: [15.0, 20.0, 13.0, 9.0, 11.0, 18.0], giftResponseLengths: { loved: 9.0, liked: 8.0, neutral: 8.0, disliked: 12.0, hated: 16.0 } },
-    blacksmith: { chatterLengths: [16.0, 10.0, 11.0, 5.0, 3.0, 4.0], giftResponseLengths: { loved: 8.0, liked: 9.0, neutral: 8.0, disliked: 8.0, hated: 10.0 } },
-    carpenter: { chatterLengths: [3.0, 3.0, 2.0, 1.0, 1.0, 3.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 2.0, hated: 1.0 } },
-    fisher: { chatterLengths: [5.0, 6.0, 2.0, 2.0, 1.0, 3.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 2.0, disliked: 4.0, hated: 7.0 } },
-    market: { chatterLengths: [18.0, 14.0, 8.0, 16.0, 14.0, 14.0], giftResponseLengths: { loved: 10.0, liked: 8.0, neutral: 17.0, disliked: 12.0, hated: 13.0 } },
-    shepherd: { chatterLengths: [15.0, 14.0, 13.0, 13.0, 14.0, 17.0], giftResponseLengths: { loved: 9.0, liked: 10.0, neutral: 8.0, disliked: 8.0, hated: 11.0 } },
+    blacksmith: { chatterLengths: [16.0, 10.0, 13.0, 12.0, 11.0, 14.0], giftResponseLengths: { loved: 8.0, liked: 9.0, neutral: 8.0, disliked: 8.0, hated: 10.0 } },
+    carpenter: { chatterLengths: [11.0, 10.0, 13.0, 9.0, 9.0, 15.0], giftResponseLengths: { loved: 6.0, liked: 7.0, neutral: 8.0, disliked: 10.0, hated: 10.0 } },
+    fisher: { chatterLengths: [11.0, 9.0, 10.0, 10.0, 10.0, 11.0], giftResponseLengths: { loved: 7.0, liked: 6.0, neutral: 9.0, disliked: 7.0, hated: 7.0 } },
+    market: { chatterLengths: [18.0, 14.0, 9.0, 16.0, 14.0, 14.0], giftResponseLengths: { loved: 10.0, liked: 8.0, neutral: 17.0, disliked: 12.0, hated: 13.0 } },
+    shepherd: { chatterLengths: [15.0, 14.0, 13.0, 12.0, 14.0, 17.0], giftResponseLengths: { loved: 9.0, liked: 10.0, neutral: 8.0, disliked: 8.0, hated: 11.0 } }
 }
-
 const maxGifts = {
     banker: "society:slouching_towards_artistry",
     blacksmith: Item.of('justhammers:iron_hammer', "{Damage:0,RepairCost:0,display:{Name:'{\"text\":\"§6Aiden\\'s Hammer\"}'}}").enchant('minecraft:efficiency', 5).enchant('minecraft:fortune', 3),
@@ -48,6 +47,8 @@ ItemEvents.entityInteracted((e) => {
                 dayLastGifted: -4,
                 maxGifted: false
             }
+        } else if (Number(npcData.friendship) == -1) {
+            npcData.friendship = 5
             server.runCommandSilent(
                 `dialog ${target.getUuid()} show ${player.username} ${npcId}_intro`
             );

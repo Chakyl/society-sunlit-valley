@@ -8,6 +8,9 @@
     }
   ],
   "lookup_history": [
+    "item:society_trading:auto_trader",
+    "item:society:villager{type:{id:\"society:banker\"}}",
+    "item:sophisticatedbackpacks:tool_swapper_upgrade",
     "item:quark:oak_vertical_slab",
     "item:society:cranberry",
     "item:refinedstorage:exporter",
@@ -893,11 +896,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
+      "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
+      "item:minecraft:cooked_porkchop",
       "item:farm_and_charm:bacon_with_eggs",
       "item:candlelight:pork_ribs",
-      "item:minecraft:cooked_porkchop",
-      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -916,8 +919,8 @@
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1510,10 +1513,7 @@
     "item:simplehats:icedragonskull",
     "item:vinery:jungle_grape_seeds_red",
     "item:farmersdelight:cooked_rice",
-    "item:nethervinery:warped_grapejuice",
-    "item:refurbished_furniture:vegetable_pizza_slice",
-    "item:veggiesdelight:carrot_juice",
-    "item:copycats:copycat_vertical_slice"
+    "item:nethervinery:warped_grapejuice"
   ],
   "craft_history": [
     "minecraft:kjs/society_dehydrator",
@@ -1623,9 +1623,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_sun_candy",
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "netherdepthsupgrade:eyeball",
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
+      "minecraft:kjs/society_sun_candy"
     ],
     "tags": {},
     "resolutions": {

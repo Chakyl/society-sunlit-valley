@@ -2005,20 +2005,20 @@
 		{
 			dependencies: ["26315E4AC203348C"]
 			description: [
-				"The fishing minigame can be turned on and off at any time using the command:"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest58FB1A6006C36FD8.description1}"
 				""
-				"&6/stardew_fishing toggle_minigame&r"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest58FB1A6006C36FD8.description2}"
 				""
-				"You won't be able to catch quality fish or get extra treasure, but those can both be obtained using other methods!"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest58FB1A6006C36FD8.description3}"
 			]
 			icon: "aquaculture:fish_bones"
 			id: "58FB1A6006C36FD8"
 			tasks: [{
 				id: "3FE319CA1C65EE1E"
-				title: "Understood!"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest58FB1A6006C36FD8.task.4603551599953309214.title}"
 				type: "checkmark"
 			}]
-			title: "Don't like the minigame?"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest58FB1A6006C36FD8.title}"
 			x: 1.0d
 			y: -9.0d
 		}

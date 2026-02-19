@@ -31,17 +31,19 @@ BlockEvents.placed("society:villager_home", (e) => {
   if (homeNbt) {
     let villagerType = homeNbt.getString("type");
     let day = global.getDay(level);
+    if (!player.persistentData.npcData) player.persistentData.npcData = {}
     let npcData = player.persistentData.npcData[villagerType];
     if (!npcData) {
       player.persistentData.npcData[villagerType] = {
-        friendship: 5,
+        friendship: -1,
         dayLastChatted: -1,
         dayLastGifted: -4,
-        dayLastPlaced: day,
-        maxGifted: false
+        dayLastPlaced: -10,
+        maxGifted: false,
       }
+      npcData = player.persistentData.npcData[villagerType];
     }
-    if (!npcData.dayLastPlaced) npcData.dayLastPlaced = -1
+    if (!npcData.dayLastPlaced) npcData.dayLastPlaced = -10
     if (Number(npcData.dayLastPlaced) + 10 < day) {
       let nearbyNPCs = level
         .getEntitiesWithin(AABB.ofBlock(block).inflate(3))
@@ -143,58 +145,9 @@ BlockEvents.broken("society:villager_home", (e) => {
       )
     );
     block.popItem(Item.of(block.id, `{type:${type}}`));
-    player.persistentData.npcData[type].dayLastPlaced = -1
+    player.persistentData.npcData[type].dayLastPlaced = -10
   } else {
     if (!(type == undefined || placer == undefined || boundNpc == undefined))
       e.cancel();
   }
 });
-
-// BlockEvents.broken("whimsy_deco:sunlit_singing_frog", (e) => {
-//   const { block } = e;
-//   let nbt = e.block.getEntityData();
-//   const { type, quest_id, affection, quality, animal } = nbt.data;
-//   let baseItem = Item.of(
-//     block.id,
-//     `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
-//   );
-//   block.popItem(
-//     animal
-//       ? Item.of(
-//           block.id,
-//           global.getPlushieItemNbt(
-//             baseItem.getNbt(),
-//             animal.type,
-//             animal.customName,
-//             animal,
-//             animal
-//           )
-//         )
-//       : baseItem
-//   );
-// });
-
-// BlockEvents.rightClicked("whimsy_deco:gatcha_machine", (e) => {
-//   const { item, player, block, hand, server } = e;
-//   if (hand == "OFF_HAND") return;
-//   if (hand == "MAIN_HAND") {
-//     if (item.id.equals("numismatics:sun")) {
-//       item.count -= 1;
-//       block.popItemFromFace(
-//         "society:plushie_capsule",
-//         block.properties.get("facing")
-//       );
-//       server.runCommandSilent(
-//         `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
-//       );
-//       global.addItemCooldown(player, item.id, 1);
-//     } else {
-//       player.tell(
-//         Text.translatable(
-//           "tooltip.society.gatcha_machine",
-//           Text.translatable("item.numismatics.sun").gold()
-//         )
-//       );
-//     }
-//   }
-// });

@@ -28,7 +28,8 @@
 
 ### Dev Contributors
 - Ascens - Various tweaks and fixes
-- Emma, Providencedaemon & frog the jam UNCHAINED - Advice, feedback, and misc work
+- Emma & Providencedaemon - Advice, feedback, and misc work
+- frog the jam UNCHAINED - The above + Haruna dialogs
 - Hexagreen - Translation support
 - Space_mex - Skillexpnotifier mod
 - Devon - Farmer's Almanac trees, various fixes

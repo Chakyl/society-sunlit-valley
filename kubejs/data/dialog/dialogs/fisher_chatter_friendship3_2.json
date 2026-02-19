@@ -24,7 +24,7 @@
 			]
 		},
 		{
-			"id": "end",
+			"id": 1,
 			"speaker": {
 				"translate": "dialog.npc.fisher.name",
 				"color": "white"
@@ -32,6 +32,25 @@
 			"text": [
 				{
 					"translate": "dialog.npc.fisher.chatter_friendship3.2.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "fisher.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.fisher.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.fisher.chatter_friendship3.2.line_2"
 				}
 			],
 			"portraits": [

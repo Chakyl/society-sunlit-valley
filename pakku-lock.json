@@ -10493,29 +10493,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "SVDialog-0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7562/504/SVDialog-0.2.jar",
-                    "id": "7562504",
-                    "parent_id": "1441305",
-                    "hashes": {
-                        "sha1": "f3c6b41ffe5a24f2e7355eba8ad79ef192e6128c",
-                        "md5": "8dcea7a4f45e01dea4818cd98546f7ae"
-                    },
-                    "required_dependencies": [],
-                    "size": 1318674,
-                    "date_published": "2026-02-01T19:23:32.947Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "SVDialog-0.2.jar",
+                    "file_name": "SVDialog-0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10523,16 +10502,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5obrmvru/versions/sP6uw8KE/SVDialog-0.2.jar",
-                    "id": "sP6uw8KE",
+                    "url": "https://cdn.modrinth.com/data/5obrmvru/versions/wxP9ZA0o/SVDialog-0.3.jar",
+                    "id": "wxP9ZA0o",
                     "parent_id": "5obrmvru",
                     "hashes": {
-                        "sha512": "193d744d666db4697d9bf1e9ae052e2b864b5c75a72511cfa17129f27eea0f3d85d32131196e495dced4bc500724ad8283df5c6b359f24b0592a47ee3554c1b6",
-                        "sha1": "f3c6b41ffe5a24f2e7355eba8ad79ef192e6128c"
+                        "sha512": "f2e20135b1a9f967230a12497906514bfee269021d84d310ac34da8e47ad4844a49fd25ec3cee34cc725ec87863bc780c47c1fa6a44aced835294d7ad31622df",
+                        "sha1": "6e0446a20dedf8f23a96781cf3e1f0d262d3ad94"
                     },
                     "required_dependencies": [],
-                    "size": 1318674,
-                    "date_published": "2026-02-04T20:00:50.813751Z"
+                    "size": 1240017,
+                    "date_published": "2026-02-18T23:48:54.335504Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "SVDialog-0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7646/574/SVDialog-0.3.jar",
+                    "id": "7646574",
+                    "parent_id": "1441305",
+                    "hashes": {
+                        "sha1": "6e0446a20dedf8f23a96781cf3e1f0d262d3ad94",
+                        "md5": "2198bb003c2bcf2b2506b3271c45cc5f"
+                    },
+                    "required_dependencies": [],
+                    "size": 1240017,
+                    "date_published": "2026-02-18T23:48:26.197Z"
                 }
             ]
         },
@@ -11443,29 +11443,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "society-1.12.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7567/890/society-1.12.jar",
-                    "id": "7567890",
-                    "parent_id": "1424785",
-                    "hashes": {
-                        "sha1": "d4cbf72ad6b079ac152e6fdc357a8c052d0c5ec5",
-                        "md5": "d70465f13286e97f3b4e37a35078e321"
-                    },
-                    "required_dependencies": [],
-                    "size": 22453839,
-                    "date_published": "2026-02-02T21:10:43.560Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "society-1.12.jar",
+                    "file_name": "society-1.13.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11473,16 +11452,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/gfmrlRGu/versions/E18qPV8r/society-1.12.jar",
-                    "id": "E18qPV8r",
+                    "url": "https://cdn.modrinth.com/data/gfmrlRGu/versions/oBQjw8PM/society-1.13.jar",
+                    "id": "oBQjw8PM",
                     "parent_id": "gfmrlRGu",
                     "hashes": {
-                        "sha512": "2e969fff7074899ba48bf60be9da9ce1e2e42ba2113787e3b668e3dc158633374540b5e5ea6972c528be07c337166bc693090e9cb7faa1a9308e19f261342cd1",
-                        "sha1": "d4cbf72ad6b079ac152e6fdc357a8c052d0c5ec5"
+                        "sha512": "44215b59f0778a4c5c2355c71a0ea1992d1ef95845bfa2c102e8644a7a9ef21fa8707e059305ecd1a72f8de648eea732d50c9de715f79ecd76e48f35451d5da4",
+                        "sha1": "8916d12f188cea74ba04392205f68d360b073c20"
                     },
                     "required_dependencies": [],
-                    "size": 22453839,
-                    "date_published": "2026-02-04T20:10:06.920324Z"
+                    "size": 22497231,
+                    "date_published": "2026-02-19T00:05:41.795007Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "society-1.13.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7646/633/society-1.13.jar",
+                    "id": "7646633",
+                    "parent_id": "1424785",
+                    "hashes": {
+                        "sha1": "8916d12f188cea74ba04392205f68d360b073c20",
+                        "md5": "42adada374c77a9e1186ea47457d35c1"
+                    },
+                    "required_dependencies": [],
+                    "size": 22497231,
+                    "date_published": "2026-02-19T00:06:19.367Z"
                 }
             ]
         },

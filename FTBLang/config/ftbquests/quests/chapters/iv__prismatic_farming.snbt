@@ -1733,6 +1733,28 @@
 			x: -11.0d
 			y: 11.0d
 		}
+		{
+			dependencies: ["2F83B8F22344FAD7"]
+			description: [
+				"{ftbquests.chapter.iv__prismatic_farming.quest2C4862DD33189878.description1}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.quest2C4862DD33189878.description2}"
+			]
+			id: "2C4862DD33189878"
+			rewards: [{
+				count: 3
+				id: "5644B1652E87A67C"
+				item: "society:candied_animal_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BE642114ED51C84"
+				item: "society:auto_petter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 20.0d
+		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"
 }

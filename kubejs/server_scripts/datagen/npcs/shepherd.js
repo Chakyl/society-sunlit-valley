@@ -80,10 +80,6 @@ if (global.datagenDialog) {
         ["Your hands are so calloused!", "Let me take a look later, I have a serum made from sheeps milk that will help."],
         ["Do you ever think about what our animals dream about?"],
         ["Someone like you could really use some pets.", "I bet it gets lonely over where you are."],
-        [
-          "I once knew a person that constantly tried to defraud the Sunlit Valley Hospital...",
-          "Terrible person all around, never lent them a dollar.",
-        ],
       ],
       friendship4: [
         ["Originally I thought Leon disliked me in particular.", "Turns out they're just like that."],
