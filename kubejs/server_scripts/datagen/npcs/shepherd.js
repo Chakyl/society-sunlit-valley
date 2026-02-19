@@ -185,5 +185,17 @@ if (global.datagenDialog) {
         "This might be the worst thing I've ever been given..."
       ],
     },
+    unique: [
+      {
+        name: "five_gift",
+        text: [
+          "Oh hello @i, I actually have a small favor for you!",
+          "Ace found these penguins out on an expedition to a frozen wasteland and told me to take care of them.",
+          "I don't mean to just shift the responsibility to you, but I really trust you to treat them with the care they deserve.",
+          "Unfortunately I don't have the means to build up a proper ice habitat, they wouldn't be happy with me.",
+          "If you're struggling with their mood, just pick up a mood scanner at my shop! It should be pretty cheap for you."
+        ]
+      },
+    ]
   });
 }

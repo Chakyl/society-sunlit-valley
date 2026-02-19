@@ -278,5 +278,27 @@ if (global.datagenDialog) {
         "Leave me out of your pathetic jokes.",
       ],
     },
+    unique: [
+      {
+        name: "five_gift",
+        text: [
+          "Hello @i, I wanted to talk to you for a bit. I'm pleased to see the progress you're making on your farm.",
+          "Unfortunately it's not where I want it to be by this time. You should know me by know, I'm not going to bail you out.",
+          "Maybe this book will help you improve the efficency of your machines.",
+          "I had to call in a lot of favors to get my hands on this thing so you better soak in every page.",
+          "I'll be able to tell if you skim it, I've known you long enough at this point to make it apparent."
+        ]
+      },
+      {
+        name: "five_gift_read",
+        text: [
+          "Hello @i, I wanted to talk to you for a bit. I'm not pleased with the progress you're making on your farm.",
+          "I know you've read Slouching Towards Artistry, why aren't you using it?",
+          "You should know me by know, I'm not going to bail you out. It doesn't matter how much you butter me up.",
+          "Please make use of these ancient stones to improve your time management. I can't have you wasting time walking everywhere.",
+          "Now leave, and don't dissapoint me again."
+        ]
+      },
+    ]
   });
 }

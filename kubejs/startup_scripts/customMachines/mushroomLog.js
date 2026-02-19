@@ -124,7 +124,7 @@ StartupEvents.registry("block", (event) => {
       global.handleMushroomLogRandomTick(tick);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, recipe: "" });
+      blockInfo.initialData({ stage: 0, recipe: "", quality: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
           global.handleBETick(entity, global.mushroomLogRecipes, 4);
       });

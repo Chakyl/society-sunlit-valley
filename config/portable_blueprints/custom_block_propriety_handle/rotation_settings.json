@@ -155,6 +155,35 @@
       ]
     }
   ],
+  "quark:mossy_cobblestone_vertical_slab": [
+    {
+      "rotation": 1,
+      "properties": [
+        { "condition": "type=east", "result": [ { "name": "type","value": "south" } ] },
+        { "condition": "type=south", "result": [ { "name": "type","value": "west" } ] },
+        { "condition": "type=west", "result": [ { "name": "type","value": "north" } ] },
+        { "condition": "type=north", "result": [ { "name": "type","value": "east" } ] }
+      ]
+    },
+    {
+      "rotation": 2,
+      "properties": [
+        { "condition": "type=east", "result": [ { "name": "type","value": "west" } ] },
+        { "condition": "type=south", "result": [ { "name": "type","value": "north" } ] },
+        { "condition": "type=west", "result": [ { "name": "type","value": "east" } ] },
+        { "condition": "type=north", "result": [ { "name": "type","value": "south" } ] }
+      ]
+    },
+    {
+      "rotation": 3,
+      "properties": [
+        { "condition": "type=east", "result": [ { "name": "type","value": "north" } ] },
+        { "condition": "type=south", "result": [ { "name": "type","value": "east" } ] },
+        { "condition": "type=west", "result": [ { "name": "type","value": "south" } ] },
+        { "condition": "type=north", "result": [ { "name": "type","value": "west" } ] }
+      ]
+    }
+  ],
   "quark:oak_vertical_slab": [
     {
       "rotation": 1,

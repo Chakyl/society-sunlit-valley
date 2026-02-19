@@ -692,6 +692,8 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    "minecraft:sugar_from_sugar_cane",
+    "minecraft:sugar_from_honey_bottle",
     "veggiesdelight:stuffed_zucchini_boat",
     "veggiesdelight:zucchini_quiche",
     "jei:/sawmill/vanillabackport_pale_oak_boat_0",

@@ -345,7 +345,7 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers) => {
   if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
     if (!plushieModifiers || !plushieModifiers.resetDay) {
       data.ageLastMagicHarvested = day;
-    } 
+    }
     data.affection = affection - 7;
     if (!plushieModifiers) {
       level.spawnParticles(
@@ -442,9 +442,8 @@ global.getOrFetchMood = (level, target, day, player, debugMood) => {
       if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_cold", coldDebuff).red());
     }
   } else {
-    // 4.0 TODO: Change to local season
     if (
-      global.getSeasonFromLevel(level) === "winter" &&
+      global.getSeasonFromBiome(level, target.getPos()) === "winter" &&
       level.canSeeSky(target.getPos())
     ) {
       moodDebuffs += 32;
@@ -555,7 +554,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
           level,
           "society:plushies",
           plushieBlock,
-          3 - qualityMult
+          3 - (qualityMult - 1)
         ) == 1
       ) {
         doubleDrops = true;

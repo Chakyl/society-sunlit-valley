@@ -269,7 +269,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const chargingRodOutput = Item.of(
       `${upgraded && season === "winter" ? 3 : 1}x society:battery`
     );
-    if (loadedData) {
+    if (loadedData && artisanMachine) {
       let {
         recipes,
         stageCount,

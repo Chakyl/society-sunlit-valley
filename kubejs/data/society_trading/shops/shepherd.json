@@ -5,7 +5,10 @@
   "villager_profession": "shepherd",
   "stage_required": "invited_shepherd",
   "selector_weight": -97,
-  "jei_catalyst": { "item": "minecraft:loom" },
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:shepherd\"}}"
+  },
   "trades": [
     {
       "offer": {

@@ -2,6 +2,7 @@
   "shop_id": "invitations",
   "name": "shop.society_trading.invitations",
   "texture": "dialog:textures/portraits/carpenter",
+  "hidden_from_auto_trader": true,
   "jei_catalyst": {
     "item": "society:invitation",
     "nbt": "{\"type\":{\"id\":\"society:carpenter\"}}"
