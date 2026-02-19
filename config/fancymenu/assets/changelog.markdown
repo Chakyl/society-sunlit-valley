@@ -1,6 +1,6 @@
 ^^^
 ## The Heart of the Community
-### v4.0.0
+### v4.0.1
 ^^^
 --- 
 - Added new NPC mechanics to completely replace the previous villager system
