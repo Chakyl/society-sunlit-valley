@@ -9,6 +9,18 @@ global.plushieRightClick = (click) => {
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
+    if (!Number(type)) {
+      global.plushieTraits.forEach((trait, index) => {
+        if (trait.trait.equals(type)) {
+          nbt.merge({
+            data: {
+              type: index,
+            },
+          });
+          block.setEntityData(nbt);
+        }
+      })
+    }
     if (!animal) {
       if (
         player.stages.has("women_who_run_with_the_plushies") &&

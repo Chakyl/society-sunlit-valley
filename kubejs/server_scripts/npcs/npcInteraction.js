@@ -42,7 +42,7 @@ ItemEvents.entityInteracted((e) => {
         let npcData = player.persistentData.npcData[npcId];
         if (!npcData) {
             player.persistentData.npcData[npcId] = {
-                friendship: 5,
+                friendship: -1,
                 dayLastChatted: -1,
                 dayLastGifted: -4,
                 maxGifted: false

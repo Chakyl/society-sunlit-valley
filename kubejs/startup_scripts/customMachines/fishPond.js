@@ -71,7 +71,7 @@ global.handleQuestSubmission = (type, clickEvent) => {
   const questContent = getRequestedItems(type, Number(max_population))[
     quest_id
   ];
-  if (item && item == questContent.item) {
+  if (item && questContent && item == questContent.item) {
     let checkedCount = player.stages.has("pond_house_five")
       ? Math.round(questContent.count / 2)
       : questContent.count;

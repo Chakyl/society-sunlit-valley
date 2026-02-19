@@ -149,9 +149,18 @@ const getCanTakeItems = (
 global.convertFromLegacy = (recipes, level, block) => {
   let nbt = block.getEntityData();
   let newRecipe;
+  if (block.id.equals("society:tapper") && !nbt.data.contains("recipe")) {
+    let newProperties = level.getBlock(block.pos).getProperties();
+    newProperties.working = false;
+    newProperties.mature = false;
+    nbt.merge({ data: { stage: 0, recipe: "" } });
+    block.setEntityData(nbt);
+    block.set(block.id, newProperties);
+    return;
+  }
   if (nbt.data.contains("recipe") || !nbt.data.contains("type")) return;
   if (nbt.data.type > 0) {
-    newRecipe = Array.from(recipes.keys())[Number(nbt.data.type) + 1];
+    newRecipe = Array.from(recipes.keys())[Number(nbt.data.type) - 1];
   }
   if (['society:cheese_press', 'society:mayonnaise_machine', 'society:fish_smoker', 'society:seed_maker'].includes(block.id)) {
     nbt.merge({ data: { quality: 0 } });
