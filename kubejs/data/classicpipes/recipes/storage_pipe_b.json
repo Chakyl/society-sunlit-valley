@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "tag": "classicpipes:pipes/networked"
+    },
+    "W": {
+      "tag": "c:chests/wooden"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OWO",
+    "OOO"
+  ],
+  "result": {
+    "count": 8,
+    "item": "classicpipes:storage_pipe"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "shop_id": "invitations",
+  "name": "shop.society_trading.invitations",
+  "texture": "dialog:textures/portraits/carpenter",
+  "hidden_from_auto_trader": true,
+  "jei_catalyst": {
+    "item": "society:invitation",
+    "nbt": "{\"type\":{\"id\":\"society:carpenter\"}}"
+  },
+  "selector_weight": -96,
+  "trades": [
+    {
+      "offer": {
+        "item": "society:face_note"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 4
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_face_note"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:market\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 4
+      },
+      "trade_id": "village_management_market"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:blacksmith\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 4
+      },
+      "trade_id": "village_management_blacksmith"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:shepherd\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 4
+      },
+      "trade_id": "village_management_shepherd"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:fisher\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 8
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_fisher"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:banker\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 16
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_banker"
+    }
+  ]
+}

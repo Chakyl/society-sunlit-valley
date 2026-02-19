@@ -26,9 +26,21 @@ BlockEvents.rightClicked(
     const { block, player, hand, item, server } = e;
     if (hand == "OFF_HAND") return;
     if (block.properties.get("type").toString() === "single") return;
-    if ("sophisticatedstorage:basic_tier_upgrade" === item.id && block.getEntityData().Items.length > 0) {
-      player.tell(Text.red("This chest cannot be upgraded while full."));
+    if (
+      "sophisticatedstorage:basic_tier_upgrade" === item.id &&
+      block.getEntityData().Items.length > 0
+    ) {
+      player.tell(Text.translatable("society.chest_upgrade.void_warn").red());
       e.cancel();
     }
   }
 );
+BlockEvents.rightClicked("farm_and_charm:mincer", (e) => {
+  const { block, player, hand, item, server } = e;
+  if (player.isCrouching()) return;
+  if (block.inventory.getStackInSlot(0) == item.id) {
+    player.tell(Text.translatable("society.mincer.warn").red());
+    player.inventoryMenu.broadcastFullState();
+    e.cancel();
+  }
+});

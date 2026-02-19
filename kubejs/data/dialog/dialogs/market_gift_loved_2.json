@@ -1,0 +1,26 @@
+{
+	"id": "market_gift_loved_2",
+	"title": "market introduction",
+	"description": "dialog.npc.market.gift.loved",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_loved.2.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

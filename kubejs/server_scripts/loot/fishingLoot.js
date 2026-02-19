@@ -3,7 +3,7 @@ console.info("[SOCIETY] fishingLoot.js loaded");
 LootJS.modifiers((e) => {
   // Has any stage check is to prevent jellies from being fished up from Crab Traps. Yeah it's weird.
   e.addLootTypeModifier(LootType.FISHING)
-    .hasAnyStage("starting_items_up")
+    .hasAnyStage("starting_items_4_0")
     .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:ocean_jelly");
@@ -16,7 +16,7 @@ LootJS.modifiers((e) => {
     });
 
   e.addLootTypeModifier(LootType.FISHING)
-    .hasAnyStage("starting_items_up")
+    .hasAnyStage("starting_items_4_0")
     .anyBiome("#minecraft:is_river")
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:river_jelly");
@@ -114,6 +114,20 @@ LootJS.modifiers((e) => {
     });
   e.addBlockLootModifier("aquaculture:neptunes_bounty")
     .hasAnyStage("prismatic_bounty")
-    .not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")))
-    .replaceLoot("aquaculture:neptunes_bounty", "society:prismatic_shard", true);
+    .not((n) =>
+      n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
+    )
+    .replaceLoot(
+      "aquaculture:neptunes_bounty",
+      "society:prismatic_shard",
+      true
+    );
+
+  // Mastery
+  e.addLootTypeModifier(LootType.FISHING)
+    .hasAnyStage("husbandry_mastery")
+    .pool((p) => {
+      p.randomChance(0.01).addLoot("society:animal_cracker");
+      p.randomChance(0.05).addLoot("society:plushie_capsule");
+    });
 });

@@ -223,13 +223,13 @@
 		"geologist_sparkstone": {
 			"type": "minecraft:item",
 			"content": "society:sparkstone",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
+			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 1,
-				"max": 4
+				"min": 8,
+				"max": 32
 			},
-			"unitWorth": 192
+			"unitWorth": 48
 		},
 		"geologist_sparkstone_block": {
 			"type": "minecraft:item",
@@ -240,7 +240,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1728
+			"unitWorth": 432
 		},
 		"geologist_netherite_scrap": {
 			"type": "minecraft:item",

@@ -15,7 +15,7 @@
 				item: "society:froggy_helm"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
@@ -25,7 +25,7 @@
 				item: "society:ribbit_drum"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: -0.5d
 		}
 		{
@@ -35,8 +35,8 @@
 				item: "society:ribbit_gadget"
 				type: "item"
 			}]
-			x: 0.8095238095238102d
-			y: 1.4285714285714306d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "760AC29EF0FA61A2"
@@ -45,8 +45,8 @@
 				item: "society:heart_of_neptunium"
 				type: "item"
 			}]
-			x: 3.80952380952381d
-			y: 1.4285714285714306d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			id: "6766406ACDE6EA92"
@@ -55,7 +55,7 @@
 				item: "society:aquamagical_dust"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: -0.5d
 		}
 		{
@@ -71,8 +71,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.30952380952381d
-			y: 1.4285714285714306d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			id: "422A8EB5DAC5F4AE"
@@ -81,7 +81,7 @@
 				item: "society:legendary_ink"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: -2.5d
 		}
 		{
@@ -91,7 +91,7 @@
 				item: "society:holy_symbol"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: -2.5d
 		}
 		{
@@ -101,7 +101,7 @@
 				item: "society:ember_crystal_cluster"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: -2.5d
 		}
 		{
@@ -111,7 +111,7 @@
 				item: "society:living_flesh"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -2.5d
 		}
 		{
@@ -121,7 +121,7 @@
 				item: "society:source_gem"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: -2.5d
 		}
 		{
@@ -131,7 +131,7 @@
 				item: "society:mini_oni_eye"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: -0.5d
 		}
 		{
@@ -141,7 +141,7 @@
 				item: "society:wheel_of_adaptation"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -0.5d
 		}
 		{
@@ -157,7 +157,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: -2.5d
 		}
 		{
@@ -167,8 +167,8 @@
 				item: "society:beemonican_seal"
 				type: "item"
 			}]
-			x: -0.6904761904761898d
-			y: 1.4285714285714306d
+			x: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -195,6 +195,8 @@
 				"56F6E9B440580334"
 				"118335BC396DE305"
 				"566000800816BC75"
+				"1209EE6E7121636E"
+				"6CCF2A8697360014"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -234,11 +236,11 @@
 				icon: "society:heart_of_neptunium"
 				id: "30CB90A24037FCC0"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.artifacts.quest16.task_3516062960629316800.title}"
+				title: "{ftbquests.chapter.artifacts.quest2255D3F05F8B895A.task.3516062960629316800.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.artifacts.quest16.title}"
+			title: "{ftbquests.chapter.artifacts.quest2255D3F05F8B895A.title}"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -249,7 +251,7 @@
 				item: "society:production_science_pack"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.5d
 			y: -0.5d
 		}
 		{
@@ -259,7 +261,7 @@
 				item: "society:spider_silk"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
@@ -269,8 +271,8 @@
 				item: "society:steamy_gadget"
 				type: "item"
 			}]
-			x: -3.69047619047619d
-			y: 1.4285714285714306d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
 			id: "4AA3E179161C2AFE"
@@ -279,8 +281,8 @@
 				item: "society:token_of_unity"
 				type: "item"
 			}]
-			x: -5.19047619047619d
-			y: 1.4285714285714306d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			id: "68DB8018FDF785EE"
@@ -289,7 +291,7 @@
 				item: "society:glitched_vhs"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -299,7 +301,7 @@
 				item: "society:perfect_cherry"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -0.5d
 		}
 		{
@@ -309,7 +311,7 @@
 				item: "society:toy_train"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: -0.5d
 		}
 		{
@@ -319,8 +321,28 @@
 				item: "society:amulet_of_light"
 				type: "item"
 			}]
-			x: -2.19047619047619d
-			y: 1.4285714285714306d
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			id: "1209EE6E7121636E"
+			tasks: [{
+				id: "576638C7F200E52E"
+				item: "society:green_tea_honeycomb"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			id: "6CCF2A8697360014"
+			tasks: [{
+				id: "71F287DEA7CFFCF2"
+				item: "society:giant_bandolier_belt"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
 		}
 	]
 	title: "{ftbquests.chapter.artifacts.title}"

@@ -1,6 +1,6 @@
 {
     "name": "Society Sunlit Valley",
-    "version": "3.4.3",
+    "version": "4.0.0",
     "overrides": [
         "config",
         "defaultconfigs",
@@ -127,6 +127,18 @@
             "side": "CLIENT"
         },
         "watermedia": {
+            "side": "CLIENT"
+        },
+        "tooltip-overhaul": {
+            "side": "CLIENT"
+        },
+        "ftb-quest-localizer": {
+            "side": "CLIENT"
+        },
+        "flerovium": {
+            "side": "CLIENT"
+        },
+        "certain-questing-additions": {
             "side": "CLIENT"
         },
         "toast-control": {

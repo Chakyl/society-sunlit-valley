@@ -16,6 +16,9 @@ global.handleProgress = (level, block) => {
     case "society:preserves_jar":
       global.handleBETick(eventObj, global.preservesJarRecipes, 3, false, true);
       break;
+    case "society:wine_keg":
+      global.handleBETick(eventObj, global.wineKegRecipes, 6, false, true);
+      break;
     case "society:crystalarium":
       global.handleBETick(eventObj, global.crystalariumCrystals, 5, false, true);
       break;
@@ -43,9 +46,15 @@ global.handleProgress = (level, block) => {
     case "society:recycling_machine":
       global.handleBETick(eventObj, global.recyclingMachineRecipes, 1, false, true);
       break;
+    case "society:oil_maker":
+      global.handleBETick(eventObj, global.oilMakerRecipes, 1, false, true);
+      break;
     case "society:tapper":
       if (block.properties.get("error") !== "true")
         global.handleBETick(eventObj, global.tapperRecipes, 7, false, true);
+      break;
+    case "society:mushroom_log":
+        global.handleBETick(eventObj, global.mushroomLogRecipes, 4, false, true);
       break;
     case "society:bait_maker":
       global.handleBETick(eventObj, null, 7, false, false, false, true);
@@ -93,13 +102,13 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Progresses nearby Artisan Machines once a day at 7am"));
-      item.tooltip(Text.green(`Area: 5x5`));
+      item.tooltip(Text.translatable("block.society.golden_clock.description").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `5x5x5`).green());
       item.modelJson({
-        parent: "society:block/golden_clock",
+        parent: "society:block/kubejs/golden_clock",
       });
     })
-    .model("society:block/golden_clock")
+    .model("society:block/kubejs/golden_clock")
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => global.runGoldenClock(entity));
     });

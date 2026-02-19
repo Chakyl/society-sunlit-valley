@@ -1,0 +1,17 @@
+{
+  "name": "Bat",
+  "category": "patchouli:animals",
+  "icon": "pamhc2trees:plumitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Forage: Random basic fruits (100% chance), Plums (25%), Passion Fruit (15%)$(br2)$(l)Notes$()$(br)Foraging requires 3+ hearts. Must be nametagged or will despawn."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:bat",
+      "scale": 1.0,
+      "text": "Long teeth for juicy fruits"
+    }
+  ]
+}

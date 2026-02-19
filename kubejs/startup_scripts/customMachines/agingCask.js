@@ -1,7 +1,7 @@
 //priority: 100
 console.info("[SOCIETY] agingCask.js loaded");
 
-global.agingCaskRecipes = [];
+global.agingCaskRecipes = new Map([]);
 // Both global variables as items are registered based on these
 global.ageableProductInputs = [
   { item: "vinery:cristel_wine", name: "Cristel Wine", time: 10 },
@@ -130,11 +130,14 @@ global.ageableProductInputs = [
     name: "Tri-Bull Cheese Wheel",
     time: 3,
   },
+  { item: "society:violet_moon", name: "Violet Moon", time: 5 },
+  { item: "society:laputa_franc", name: "Laputa Franc", time: 10 },
+  { item: "society:sparkling_le_roy", name: "Sparkling Le Roy", time: 5 },
+  { item: "society:mana_king", name: "Mana King", time: 10 },
 ];
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");
-  global.agingCaskRecipes.push({
-    input: product.item,
+  global.agingCaskRecipes.set(product.item, {
     output: [`1x society:aged_${splitProduct[1]}`],
     time: product.time,
   });
@@ -145,38 +148,35 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 10))
-    .property(integerProperty.create("type", 0, global.agingCaskRecipes.length))
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Ages a product over a long period of time"));
+      item.tooltip(
+        Text.translatable("block.society.aging_cask.description").gray()
+      );
       item.modelJson({
-        parent: "society:block/aging_cask/aging_cask",
+        parent: "society:block/kubejs/aging_cask/aging_cask",
       });
     })
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 10), 0)
-        .set(integerProperty.create("type", 0, global.agingCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 10), 0)
-        .set(integerProperty.create("type", 0, global.agingCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing").toLowerCase();
+      const nbt = block.getEntityData();
 
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
@@ -200,32 +200,46 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: facing,
-            type: block.properties.get("type"),
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         } else if (!upgraded && item == "society:broken_clock") {
-          player.tell(Text.red(`This can only be upgraded when not in use`));
+          player.tell(
+            Text.translatable(
+              "society.working_block_entity.cannot_upgrade"
+            ).red()
+          );
         }
       }
 
-      if (player.stages.has("aged_prize") && block.properties.get("mature") === "true" && rnd5()) {
+      if (
+        player.stages.has("aged_prize") &&
+        block.properties.get("mature") === "true" &&
+        rnd5()
+      ) {
         block.popItemFromFace("society:prize_ticket", facing);
       }
       if (
         !player.stages.has("slouching_towards_artistry") &&
         block.properties.get("mature") === "true" &&
-        Number(block.properties.get("stage")) > 5 &&
+        Number(nbt.data.stage) > 5 &&
         Math.random() <= 0.01
       ) {
-        block.popItemFromFace("society:slouching_towards_artistry", block.properties.get("facing"));
+        block.popItemFromFace(
+          "society:slouching_towards_artistry",
+          block.properties.get("facing")
+        );
       }
-      global.handleBERightClick("minecraft:block.wood.place", click, global.agingCaskRecipes, 10);
+      global.handleBERightClick(
+        "minecraft:block.wood.place",
+        click,
+        global.agingCaskRecipes,
+        10
+      );
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.agingCaskRecipes, 10, true);
       });

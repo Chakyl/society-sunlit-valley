@@ -1,9 +1,14 @@
 {
   "shop_id": "shepherd",
   "name": "shop.society_trading.shepherd",
-  "texture": "minecraft:textures/block/loom_front",
+  "texture": "dialog:textures/portraits/shepherd",
   "villager_profession": "shepherd",
-  "jei_catalyst": { "item":"minecraft:loom" },
+  "stage_required": "invited_shepherd",
+  "selector_weight": -97,
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:shepherd\"}}"
+  },
   "trades": [
     {
       "offer": {
@@ -48,11 +53,11 @@
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
-        "count": 4
+        "item": "numismatics:crown",
+        "count": 1
       },
-      "numismatics_cost": 256,
-      "trade_id": "librarian_name_tag_for_cog"
+      "numismatics_cost": 512,
+      "trade_id": "shepherd_name_tag"
     },
     {
       "offer": {
@@ -92,6 +97,18 @@
     },
     {
       "offer": {
+        "item": "minecraft:saddle",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "leatherworker_saddle_for_cog"
+    },
+    {
+      "offer": {
         "item": "splendid_slimes:slime_vac",
         "count": 1
       },
@@ -116,6 +133,18 @@
     },
     {
       "offer": {
+        "item": "society:mood_scanner",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 7
+      },
+      "numismatics_cost": 3584,
+      "trade_id": "shepherd_mood_scanner"
+    },
+    {
+      "offer": {
         "item": "etcetera:handbell",
         "count": 1
       },
@@ -128,27 +157,15 @@
     },
     {
       "offer": {
-        "item": "society:friendship_necklace",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 48
-      },
-      "numismatics_cost": 196608,
-      "trade_id": "shepherd_friendship_necklace_for_sun"
-    },
-    {
-      "offer": {
         "item": "minecraft:chicken_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
-        "count": 2
+        "item": "numismatics:crown",
+        "count": 1
       },
-      "numismatics_cost": 128,
-      "trade_id": "shepherd_chicken_spawn_egg_for_cog"
+      "numismatics_cost": 512,
+      "trade_id": "shepherd_chicken_spawn_egg_for_crown"
     },
     {
       "offer": {
@@ -221,6 +238,18 @@
       },
       "numismatics_cost": 16484,
       "trade_id": "shepherd_goat_spawn_egg_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:friendship_necklace",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 48
+      },
+      "numismatics_cost": 196608,
+      "trade_id": "shepherd_friendship_necklace_for_sun"
     }
   ]
 }

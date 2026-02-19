@@ -69,7 +69,7 @@ global.renderUiItemText = (player, items, ids) => {
 };
 global.calculateCoinValue = (coin) => {
   let value = 0;
-  switch (coin.id.split(":")[1]) {
+  switch (String(coin.id).path) {
     case "spur":
       value = 1;
       break;
@@ -103,20 +103,20 @@ global.calculateCoinValue = (coin) => {
   return value * coin.count;
 };
 
-global.getPigColor = (pig) => {
+global.getPigColoredName = (pig) => {
   switch (pig) {
     case "Red":
-      return "c";
+      return Text.translatable("society.pig_race.red_pig").red();
     case "Blue":
-      return "b";
+      return Text.translatable("society.pig_race.blue_pig").blue();
     case "Yellow":
-      return "e";
+      return Text.translatable("society.pig_race.yellow_pig").yellow();
     case "Green":
-      return "a";
+      return Text.translatable("society.pig_race.green_pig").green();
     default:
       console.log(`Invalid pig color`);
   }
-  return;
+  return Text.of(`${pig}`);
 };
 
 global.calculateCoinsFromValue = (price, output) => {
@@ -150,11 +150,15 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   const biomeTags = level.getBiome(player.pos).tags().toList().toString();
   const isDay = level.getDayTime() % 24000 < 12999;
   let weather = level.raining
-    ? `🌧 ${extraOutput ? "§9Rain§r" : ""}`
-    : `☂ ${extraOutput ? "§eClear§r" : ""}`;
-  let time = isDay ? `☀ ${extraOutput ? "§6Day§r" : ""}` : `⛈ ${extraOutput ? "§8Night§r" : ""}`;
+    ? Text.of("🌧 ").append(extraOutput ? Text.translatable("society.fish_radar.rain").blue() : Text.empty())
+    : Text.of("☂ ").append(extraOutput ? Text.translatable("society.fish_radar.clear").yellow() : Text.empty());
+  let time = isDay
+    ? Text.of("☀ ").append(extraOutput ? Text.translatable("society.fish_radar.day").gold() : Text.empty())
+    : Text.of("⛈ ").append(extraOutput ? Text.translatable("society.fish_radar.night").darkGray() : Text.empty());
   if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
-    printFunction(`   🌊 ${extraOutput ? "§3Ocean§r" : ""} ${weather} ${time}`);
+    let biome =
+      Text.of("   🌊 ").append(extraOutput ? Text.translatable("society.fish_radar.ocean").darkAqua() : Text.empty());
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -170,7 +174,9 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else if (biomeTags.includes("minecraft:is_river")) {
-    printFunction(`   ☔ ${extraOutput ? "§9River§r" : ""} ${weather} ${time}`);
+    let biome =
+      Text.of("   ☔ ").append(extraOutput ? Text.translatable("society.fish_radar.river").blue() : Text.empty());
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -186,7 +192,9 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else {
-    printFunction(`   ☄ ${extraOutput ? "§bFresh§r" : ""} ${weather} ${time}`);
+    let biome =
+      Text.of("   ☄ ").append(extraOutput ? Text.translatable("society.fish_radar.fresh").aqua() : Text.empty());
+    printFunction(biome.append(" ").append(weather).append(" ").append(time));
     switch (season) {
       case "spring":
         global.springFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -215,26 +223,27 @@ global.netherRadar = (e, local, printFunction) => {
   let netherFish = local.concat(defaultFish);
   const { level, player } = e;
   let biome = level.getBiome(player.pos).toString();
+  let space = Text.of("            ").darkRed();
 
   if (biome.includes("minecraft:nether_wastes")) {
-    printFunction(`            §4Nether Wastes`);
+    printFunction(space.append(Text.translatable("biome.minecraft.nether_wastes")));
     netherFish.push("netherdepthsupgrade:bonefish");
   } else if (biome.includes("minecraft:soul_sand_valley")) {
-    printFunction(`          §4Soul Sand Valley`);
+    printFunction(space.append(Text.translatable("biome.minecraft.soul_sand_valley")));
     netherFish.push("netherdepthsupgrade:wither_bonefish");
     netherFish.push("netherdepthsupgrade:soulsucker");
   } else if (biome.includes("minecraft:basalt_deltas")) {
-    printFunction(`            §4Basalt Deltas`);
+    printFunction(space.append(Text.translatable("biome.minecraft.basalt_deltas")));
     netherFish.push("netherdepthsupgrade:magmacubefish");
     netherFish.push("netherdepthsupgrade:obsidianfish");
   } else if (biome.includes("minecraft:crimson_forest")) {
-    printFunction(`            §4Crimson Forest`);
+    printFunction(space.append(Text.translatable("biome.minecraft.crimson_forest")));
     netherFish.push("netherdepthsupgrade:eyeball_fish");
   } else if (biome.includes("minecraft:warped_forest")) {
-    printFunction(`            §4Warped Forest`);
+    printFunction(space.append(Text.translatable("biome.minecraft.warped_forest")));
     netherFish.push("netherdepthsupgrade:glowdine");
   } else {
-    printFunction(`            §4The Nether`);
+    printFunction(space.append(Text.translatable("society.fish_radar.nether")));
   }
   return netherFish;
 };
@@ -281,34 +290,22 @@ global.handleFee = (server, player, reason) => {
     if (!currentDebt) {
       server.persistentData.debts.push({ uuid: UUID.toString(), amount: amountToDeduct });
     }
+    let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
+    let formattedCurrentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
+    let noteTitle = global.translatableWithFallback("society.hospital_receipt.title", "Hospital Receipt").getString();
+    let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
+    let noteText = Text.translatable("society.hospital_receipt.debt", `${formattedAmountToDeduct}`, `${formattedCurrentDebt}`).toJson();
     player.give(
-      Item.of(
-        "candlelight:note_paper_written",
-        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
-
-Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take ${global.formatPrice(
-          amountToDeduct
-        )} :coin: out of your profits until the fee is paid off. Be careful next time!
-
-Debt: ${global.formatPrice(
-          !currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount
-        )} :coin:
-"],title:"Hospital Receipt"}`
-      )
+      global.getNotePaperItem(noteAuthor, noteText, noteTitle)
     );
   } else {
     account.setBalance(balance - amountToDeduct);
+    let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
+    let noteTitle = global.translatableWithFallback("society.hospital_receipt.title", "Hospital Receipt").getString();
+    let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
+    let noteText = Text.translatable("society.hospital_receipt.fee_taked", `${formattedAmountToDeduct}`).toJson();
     player.give(
-      Item.of(
-        "candlelight:note_paper_written",
-        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
-
-Looks like you passed out again! We\'ve treated you for a small fee.
-
-We\'ve taken it out of your bank account for convenience. Be careful next time!
-
-:coin: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
-      )
+      global.getNotePaperItem(noteAuthor, noteText, noteTitle)
     );
   }
 };
@@ -340,12 +337,72 @@ global.addAttributesFromStages = (player, server) => {
   if (stages.has("tiller")) server.runCommandSilent(attributeCommand("crop", 1.15));
   if (stages.has("artisan")) server.runCommandSilent(attributeCommand("wood", 1.2));
   if (stages.has("artful_tycoon")) server.runCommandSilent(attributeCommand("wood", 1.8));
-  if (stages.has("gem_seller")) server.runCommandSilent(attributeCommand("gem", 1.5));
-  if (stages.has("gem_tycoon")) server.runCommandSilent(attributeCommand("gem", 2));
+  if (stages.has("gem_seller")) server.runCommandSilent(attributeCommand("gem", 1.25));
+  if (stages.has("gem_tycoon")) server.runCommandSilent(attributeCommand("gem", 1.5));
   if (stages.has("fence")) server.runCommandSilent(attributeCommand("meat", 1.5));
   if (stages.has("looting_tycoon")) server.runCommandSilent(attributeCommand("meat", 2));
 };
 
 global.addItemCooldown = (player, item, time) => {
   if (!player.isFake()) player.addItemCooldown(item, time);
+};
+
+global.getPlushieItemNbt = (currentNbt, type, customName, animalData, animalNbt) => {
+  let newNbt = currentNbt.copy();
+  newNbt.animal = {};
+  newNbt.animal.type = type;
+  // Aggressive with the conditionals here since invalid nbt will definitely crash the game
+  if (customName) {
+    newNbt.animal.name = String(Component.of(customName).getString());
+  }
+  if (animalData.ageLastDroppedSpecial) {
+    newNbt.animal.ageLastDroppedSpecial = animalData.ageLastDroppedSpecial;
+  }
+  if (animalData.ageLastMilked) {
+    newNbt.animal.ageLastMilked = animalData.ageLastMilked;
+  }
+  if (animalData.ageLastMagicHarvested) {
+    newNbt.animal.ageLastMagicHarvested = animalData.ageLastMagicHarvested;
+  }
+  if (animalData.clockwork) {
+    newNbt.animal.clockwork = true;
+  }
+  if (animalData.bribed) {
+    newNbt.animal.bribed = true;
+  }
+  if (animalData.bff) {
+    newNbt.animal.bff = true;
+  }
+  if (animalData.animalCracker) {
+    newNbt.animal.animalCracker = true;
+  }
+  if (animalNbt.Variant) {
+    newNbt.animal.Variant = animalNbt.Variant;
+  }
+  return newNbt;
+};
+global.setPlushieExtractedPD = (animal, data) => {
+  const { ageLastDroppedSpecial, ageLastMilked, ageLastMagicHarvested, clockwork, bribed, bff, animalCracker, } = data;
+  animal.persistentData.affection = 1000;
+  if (ageLastDroppedSpecial) {
+    animal.persistentData.ageLastDroppedSpecial = ageLastDroppedSpecial;
+  }
+  if (ageLastMilked) {
+    animal.persistentData.ageLastMilked = ageLastMilked;
+  }
+  if (ageLastMagicHarvested) {
+    animal.persistentData.ageLastMagicHarvested = ageLastMagicHarvested;
+  }
+  if (clockwork) {
+    animal.persistentData.clockwork = true;
+  }
+  if (bribed) {
+    animal.persistentData.bribed = true;
+  }
+  if (bff) {
+    animal.persistentData.bff = true;
+  }
+  if (animalCracker) {
+    animal.persistentData.animalCracker = true;
+  }
 };

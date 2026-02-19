@@ -1,19 +1,71 @@
 
 ["The Garden Awakens"]
-	#Determine if resin should generate after hitting a creaking
-	generateResin = true
-	#Determine if creakings should spawn from creaking hearts
-	spawnCreakingFromHearts = true
-	#Determine if creaking hearts should spawn from pale oak saplings
-	spawnCreakingHeartsFromSaplings = false
-	#Determine if Pale Gardens should generate in the overworld
-	generatePaleGarden = true
-	#Determine if the wandering trader should have trades from the pale garden
-	paleTradesFromWanderer = false
+	#allow resin to be obtainable from creaking hearts
+	resin = true
+	#allow creakings to spawn from creaking hearts
+	creaking = true
+	#allow the pale garden to generate in the overworld
+	pale_garden = true
+	#allow features from 'The Garden Awakens' to be obtainable through wandering traders
+	pale_trades = true
+	#creaking heart trail particle color (gray by default)
+	creaking_particle_color = 6250335
+	#creaking heart trail particle reverse color (orange by default)
+	creaking_particle_reverse_color = 16545810
+	#allow resin to appear on chests at woodland mansions
+	resin_loot = true
 
 ["Chase the Skies"]
-	#Determine if dried ghasts should generate in Nether Fossils
-	generateDriedGhasts = true
-	#Determine if all leash connections should be dropped when using a firework rocket while elytra flying
-	dropLeashConnectionsOnFireworkBoost = true
+	#allow dried ghasts to be obtainable through nether fossils and piglin bartering
+	dried_ghasts = true
+	#toggle whether leashes drop their connections when boosting with a firework rocket
+	leash_drop_connections = true
+	#allows ghasts drop the tears music disc
+	tears_music_disc = true
+	#apply a modifier to the speed of happy ghasts when ridden, 1.0 is default speed
+	happy_ghast_speed_modifier = 1.0
+
+["Armored Paws"]
+	#allow armadillos to generate in the overworld
+	armadillo = true
+	#allow variants for wolves to generate
+	wolf_variants = true
+	#adds wolves to more biomes for natural spawning
+	updated_wolf_spawns = true
+
+["Bundles of Bravery"]
+	#toggle the updated controls and UI for bundles
+	has_updated_bundles = true
+	#allow bundles to appear on chests at villages
+	bundle_loot = true
+
+["Spring to Life"]
+	#allow bushes to generate in the overworld
+	bushes = true
+	#allow firefly bushes to generate in the overworld
+	firefly_bushes = true
+	#allow wildflowers to generate in the overworld
+	wildflowers = true
+	#allow dry grass to generate in the overworld
+	dry_grass = true
+	#allow fallen trees to generate in the overworld
+	fallen_trees = true
+	#allow leaf litter to generate in the overworld
+	leaf_litter = true
+	#allow variants for pigs, cows and chickens to generate
+	farm_animal_variants = true
+	#allow wolfs to have variants for their sounds
+	wolf_sound_variants = true
+	#allow features from 'Spring to Life' to be obtainable through wandering traders
+	spring_trades = true
+	#allow camels to spawn outside of villages
+	camel_spawns = true
+	#allow cactus flowers to generate
+	cactus_flowers = true
+	#allow lodestones to appear on chests at ruined portals
+	lodestone_loot = true
+
+["Hot as Lava"]
+	#allows chicken jockeys to drop the lava chicken music disc
+	lava_chicken_music_disc = true
 

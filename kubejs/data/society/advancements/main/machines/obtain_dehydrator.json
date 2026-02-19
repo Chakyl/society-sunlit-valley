@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/root",
+  "criteria": {
+    "dehydrator": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["society:dehydrator"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_dehydrator.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "society:dehydrator"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_dehydrator.title"
+    }
+  },
+  "requirements": [["dehydrator"]],
+  "sends_telemetry_event": true
+}

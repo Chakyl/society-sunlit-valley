@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "P": {
+      "item": "classicpipes:request_pipe"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "Q Q",
+    " P ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "item": "classicpipes:pipe_slicer"
+  }
+}

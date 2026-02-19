@@ -1,0 +1,68 @@
+{
+	"id": "blacksmith_chatter_friendship5_13",
+	"title": "[13] blacksmith chatter at friendship level: friendship5",
+	"description": "dialog.npc.blacksmith.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.chatter_friendship5.13.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.chatter_friendship5.13.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.chatter_friendship5.13.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p blacksmith"
+			]
+		}
+	]
+}

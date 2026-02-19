@@ -1,6 +1,5 @@
 console.info("[SOCIETY] growthObelisk.js loaded");
 
-const CropGrowthUtils = Java.loadClass("cool.bot.dewdropfarmland.utils.CropHandlerUtils");
 const RandomSource = Java.loadClass("net.minecraft.util.RandomSource");
 
 global.runGrowthObelisk = (tickEvent) => {
@@ -10,7 +9,7 @@ global.runGrowthObelisk = (tickEvent) => {
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
   const goldenClockProgTime = 1000;
-  level.spawnParticles("snowyspirit:glow_light", true, x + 0.5, y + 1.3, z + 0.5, 0, 0, 0, 2, 2);
+  level.spawnParticles("snowyspirit:glow_light", true, x + 0.5, y + 2.2, z + 0.5, 0, 0, 0, 2, 2);
   if (
     morningModulo >= goldenClockProgTime &&
     morningModulo < goldenClockProgTime + artMachineTickRate
@@ -33,15 +32,15 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Grows crops by one stage once a day at 7am"));
-      item.tooltip(Text.green(`Area: 7x1x7`));
-      item.tooltip(Text.lightPurple("Requires Spark-Gro each day"));
+      item.tooltip(Text.translatable("block.society.growth_obelisk.description").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `7x1x7`).green());
+      item.tooltip(Text.translatable("block.society.growth_obelisk.description.fuel").lightPurple());
       item.modelJson({
-        parent: "society:block/growth_obelisk/display",
+        parent: "society:block/kubejs/growth_obelisk/display",
       });
     })
     .soundType("stone")
-    .model("society:block/growth_obelisk/lower")
+    .model("society:block/kubejs/growth_obelisk/lower")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -63,11 +62,11 @@ StartupEvents.registry("block", (e) => {
       );
     });
   e
-    .create("society:growth_obelisk_upper")
+    .create("society:growth_obelisk_upper", "cardinal")
     .box(4, 0, 4, 12, 9, 12)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .soundType("stone")
-    .model("society:block/growth_obelisk/upper");
+    .model("society:block/kubejs/growth_obelisk/upper");
 });

@@ -305,7 +305,6 @@ const handleSPResults = (player, server, betPig, betItem, ranking) => {
 
 const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) => {
   const wonRace = ranking[0] === betPig;
-  const betPigString = `betting §${global.getPigColor(betPig)}${betPig}§r!`;
   let prizePoolCoins = 0;
   ranking.forEach((rank, index) => {
     if (rank === betPig) {
@@ -315,11 +314,13 @@ const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) =
           player.give(Item.of(`${coin.count}x ${coin.id}`));
         });
         server.tell(
-          Text.gray(
-            `:first_place_medal:§6${player.username}§r won §6${global.formatPrice(
-              Math.min(poolValue, betValue * 2)
-            )}§r ● ${betPigString}`
-          )
+          Text.translatable(
+            "society.pig_race.multiplay.result", 
+            ":first_place_medal:", 
+            Text.gold(player.username),
+            Text.gold(global.formatPrice(Math.min(poolValue, betValue * 2))),
+            global.getPigColoredName(betPig)
+          ).gray()
         );
       }
       if (index === 1) {
@@ -328,11 +329,13 @@ const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) =
           player.give(Item.of(`${Math.floor(coin.count)}x ${coin.id}`));
         });
         server.tell(
-          Text.gray(
-            `:second_place_medal:§6${player.username}§r won §6${global.formatPrice(
-              betValue
-            )}§r ● ${betPigString}`
-          )
+          Text.translatable(
+            "society.pig_race.multiplay.result", 
+            ":second_place_medal:", 
+            Text.gold(player.username),
+            Text.gold(global.formatPrice(Math.min(poolValue, betValue))),
+            global.getPigColoredName(betPig)
+          ).gray()
         );
       }
       if (index === 2) {
@@ -341,11 +344,13 @@ const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) =
           player.give(Item.of(`${Math.floor(coin.count)}x ${coin.id}`));
         });
         server.tell(
-          Text.gray(
-            `:third_place_medal:§6${player.username}§r won §6${global.formatPrice(
-              betValue / 2
-            )}§r ● ${betPigString}`
-          )
+          Text.translatable(
+            "society.pig_race.multiplay.result", 
+            ":third_place_medal:", 
+            Text.gold(player.username),
+            Text.gold(global.formatPrice(Math.min(poolValue, betValue / 2))),
+            global.getPigColoredName(betPig)
+          ).gray()
         );
       }
     }
@@ -425,13 +430,23 @@ const validTicket = (e, bet) => {
 
   if (!coins.includes(bet.id)) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 80 Place gold coins or higher in your offhand to bet money on your pig!`
+      global.getEmbersTextAPICommand(
+        player.username,
+        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`,
+        80, 
+        Text.translatable("society.pig_race.need_coin").toJson()
+      )
     );
     return false;
   }
   if (!item.nbt) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 80 Left click to select pig to bet on`
+      global.getEmbersTextAPICommand(
+        player.username, 
+        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
+        80, 
+        Text.translatable("society.pig_race.need_to_select_pig").toJson()
+      )
     );
     return false;
   }
@@ -471,7 +486,12 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
 
   if (raceData.pigraceInProgress) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60} 80 There's already a pig race happening! Type /pigrace <pig> to join!`
+      global.getEmbersTextAPICommand(
+        player.username, 
+        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
+        80, 
+        Text.translatable("society.pig_race.multiplay.in_progress").toJson()
+      )
     );
     return;
   }
@@ -482,16 +502,13 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
   betValue = betValue = global.calculateCoinValue(bet);
   betPig = item.nbt.bet;
   server.tell(
-    Text.gray(
-      `§6${player.username}§r started a pig race with §6${global.formatPrice(
-        betValue
-      )}§r ● on §${global.getPigColor(betPig)}${betPig}§r!`
+    Text.translatable(
+      "society.pig_race.multiplay.start",
+      Text.gold(player.username),
+      Text.gold(global.formatPrice(betValue)),
+      global.getPigColoredName(betPig)
     )
   );
-  server.tell(
-    Text.gray(`Type §6/pigrace <pig>§r with §6${global.formatPrice(betValue)}§r ● worth of coins`)
-  );
-  server.tell(Text.gray(`or more in your offhand to join!`));
   raceData.pigraceInProgress = true;
   raceData.ageRaceStarted = server.getTickCount();
   raceData.bets = [];
@@ -503,10 +520,15 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
 
   server.scheduleInTicks(0, () => {
     server.scheduleInTicks(bettingPeriod / 2, () => {
-      server.tell(Text.gray(`Pig race starting in ${bettingPeriod / (2 * 20 * 60)} minute!`));
+      server.tell(
+        Text.translatable(
+          "society.pig_race.multiplay.start_in_minute", 
+          `${bettingPeriod / (2 * 20 * 60)}`
+        ).gray()
+      );
     });
     server.scheduleInTicks(bettingPeriod - 10 * 20, () => {
-      server.tell(Text.gray(`Pig race starting in 10 seconds!`));
+      server.tell(Text.translatable("society.pig_race.multiplay.start_in_10").gray());
     });
     server.scheduleInTicks(bettingPeriod, () => {
       raceData = server.persistentData;
@@ -531,12 +553,15 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
           }
         });
         server.tell(
-          Text.gray(`Pig race starting! Bets total to ${global.formatPrice(prizePool)}!`)
+          Text.translatable(
+            "society.pig_race.multiplay.started", 
+            `${global.formatPrice(prizePool)}`
+          ).gray()
         );
       } else {
         player.give(bet);
         player.give(Item.of("society:multiplayer_pig_race_ticket"));
-        server.tell(Text.gray("Pig race cancelled! Multiple bets are required to start..."));
+        server.tell(Text.translatable("society.pig_race.multiplay.cancelled").gray());
         clearPigPaint(player);
         resetMP(server);
       }
@@ -575,6 +600,8 @@ ItemEvents.firstLeftClicked(
     const betPig = pigColors[betIndex === 3 ? 0 : betIndex + 1];
     newNbt.bet = betPig;
     item.nbt = newNbt;
+    const pigSelectedText = Text.translatable("society.pig_race.pig_selected", global.getPigColoredName(betPig));
+    const pigSelectedTextShadow = Text.translatable("society.pig_race.pig_selected", betPig).noColor();
     global.renderUiText(
       player,
       server,
@@ -583,7 +610,7 @@ ItemEvents.firstLeftClicked(
           type: "text",
           x: 0,
           y: -90,
-          text: `Betting on §${global.getPigColor(betPig)}${betPig}§r pig!`,
+          text: `${pigSelectedText.toJson()}`,
           color: "#AAAAAA",
           alignX: "center",
           alignY: "bottom",
@@ -593,7 +620,7 @@ ItemEvents.firstLeftClicked(
           x: 1,
           z: -1,
           y: -89,
-          text: `Betting on ${betPig} pig!`,
+          text: `${pigSelectedTextShadow.toJson()}`,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",

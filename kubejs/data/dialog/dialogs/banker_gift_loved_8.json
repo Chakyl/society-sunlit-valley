@@ -1,0 +1,26 @@
+{
+	"id": "banker_gift_loved_8",
+	"title": "banker introduction",
+	"description": "dialog.npc.banker.gift.loved",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.gift_loved.8.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

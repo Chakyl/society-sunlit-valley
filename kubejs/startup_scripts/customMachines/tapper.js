@@ -1,83 +1,103 @@
 //priority: 100
 console.info("[SOCIETY] tapper.js loaded");
 
-global.tapperRecipes = [
-  {
-    input: "minecraft:spruce_log",
-    leaves: ["minecraft:spruce_leaves"],
-    output: ["1x society:pine_tar"],
-    fluidOutput: "society:pine_tar",
-    time: 5,
-  },
-  {
-    input: "meadow:pine_log",
-    leaves: ["meadow:pine_leaves", "meadow:pine_leaves_2"],
-    output: ["1x society:pine_tar"],
-    fluidOutput: "society:pine_tar",
-    time: 5,
-  },
-  {
-    input: "minecraft:oak_log",
-    output: ["1x society:oak_resin"],
-    leaves: ["minecraft:oak_leaves"],
-    fluidOutput: "society:oak_resin",
-    time: 3,
-  },
-  {
-    input: "minecraft:dark_oak_log",
-    leaves: ["minecraft:dark_oak_leaves"],
-    output: ["1x society:oak_resin"],
-    fluidOutput: "society:oak_resin",
-    time: 3,
-  },
-  {
-    input: "autumnity:maple_log",
-    leaves: [
-      "autumnity:maple_leaves",
-      "autumnity:orange_maple_leaves",
-      "autumnity:yellow_maple_leaves",
-      "autumnity:red_maple_leaves",
-    ],
-    output: ["1x society:maple_syrup"],
-    fluidOutput: "society:maple_syrup",
-    time: 4,
-  },
-  {
-    input: "minecraft:acacia_log",
-    leaves: ["minecraft:acacia_leaves"],
-    output: ["4x society:sap"],
-    fluidOutput: "create_central_kitchen:sap",
-    time: 1,
-  },
-  {
-    input: "minecraft:birch_log",
-    leaves: ["minecraft:birch_log_leaves"],
-    output: ["4x verdantvibes:bracket_mushroom"],
-    fluidOutput: "create_central_kitchen:sap",
-    time: 2,
-  },
-  {
-    input: "mysticaloaktree:wise_oak",
-    output: ["4x botania:black_lotus"],
-    leaves: ["minecraft:oak_leaves"],
-    fluidOutput: "society:oak_resin",
-    time: 2,
-  },
-  {
-    input: "vanillabackport:pale_oak_log",
-    output: ["32x vanillabackport:resin_clump"],
-    leaves: ["vanillabackport:pale_oak_leaves"],
-    fluidOutput: "society:oak_resin",
-    time: 2,
-  },
+global.tapperRecipes = new Map([
+  [
+    "minecraft:spruce_log",
     {
-    input: "windswept:pine_log",
-    leaves: ["meadow:pine_leaves", "meadow:pine_leaves_2"],
-    output: ["1x society:pine_tar"],
-    fluidOutput: "society:pine_tar",
-    time: 5,
-  },
-];
+      leaves: ["minecraft:spruce_leaves"],
+      output: ["1x society:pine_tar"],
+      fluidOutput: "society:pine_tar",
+      time: 5,
+    },
+  ],
+  [
+    "meadow:pine_log",
+    {
+      leaves: ["meadow:pine_leaves", "meadow:pine_leaves_2"],
+      output: ["1x society:pine_tar"],
+      fluidOutput: "society:pine_tar",
+      time: 5,
+    },
+  ],
+  [
+    "minecraft:oak_log",
+    {
+      leaves: ["minecraft:oak_leaves"],
+      output: ["1x society:oak_resin"],
+      fluidOutput: "society:oak_resin",
+      time: 5,
+    },
+  ],
+  [
+    "minecraft:dark_oak_log",
+    {
+      leaves: ["minecraft:dark_oak_leaves"],
+      output: ["1x society:oak_resin"],
+      fluidOutput: "society:oak_resin",
+      time: 5,
+    },
+  ],
+  [
+    "autumnity:maple_log",
+    {
+      leaves: [
+        "autumnity:maple_leaves",
+        "autumnity:orange_maple_leaves",
+        "autumnity:yellow_maple_leaves",
+        "autumnity:red_maple_leaves",
+      ],
+      output: ["1x society:maple_syrup"],
+      fluidOutput: "society:maple_syrup",
+      time: 4,
+    },
+  ],
+  [
+    "minecraft:acacia_log",
+    {
+      leaves: ["minecraft:acacia_leaves"],
+      output: ["4x society:sap"],
+      fluidOutput: "create_central_kitchen:sap",
+      time: 1,
+    },
+  ],
+  [
+    "mysticaloaktree:wise_oak",
+    {
+      leaves: ["minecraft:oak_leaves"],
+      output: ["4x botania:black_lotus"],
+      fluidOutput: "society:oak_resin",
+      time: 2,
+    },
+  ],
+  [
+    "vanillabackport:pale_oak_log",
+    {
+      leaves: ["vanillabackport:pale_oak_leaves"],
+      output: ["32x vanillabackport:resin_clump"],
+      fluidOutput: "society:oak_resin",
+      time: 2,
+    },
+  ],
+  [
+    "windswept:pine_log",
+    {
+      leaves: ["meadow:pine_leaves", "meadow:pine_leaves_2"],
+      output: ["1x society:pine_tar"],
+      fluidOutput: "society:pine_tar",
+      time: 5,
+    },
+  ],
+  [
+    "cluttered:willow_log",
+    {
+      leaves: ["cluttered:flowering_willow_leaves", "cluttered:willow_leaves"],
+      output: ["1x society:mystic_syrup"],
+      fluidOutput: "society:mystic_syrup",
+      time:7,
+    },
+  ],
+]);
 
 StartupEvents.registry("block", (event) => {
   event
@@ -86,8 +106,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(booleanProperty.create("error"))
-    .property(integerProperty.create("stage", 0, 7))
-    .property(integerProperty.create("type", 0, global.tapperRecipes.length))
     .soundType("copper")
     .defaultCutout()
     .box(3, 0, 6, 13, 16, 16)
@@ -95,9 +113,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Place on tree to tap for resources"));
+      item.tooltip(Text.translatable("block.society.tapper.description").gray());
       item.modelJson({
-        parent: "society:block/tapper",
+        parent: "society:block/kubejs/tapper",
       });
     })
     .defaultState((state) => {
@@ -105,18 +123,14 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(booleanProperty.create("error"), false)
-        .set(integerProperty.create("stage", 0, 7), 0)
-        .set(integerProperty.create("type", 0, global.tapperRecipes.length), 0);
+        .set(booleanProperty.create("error"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(booleanProperty.create("error"), false)
-        .set(integerProperty.create("stage", 0, 7), 0)
-        .set(integerProperty.create("type", 0, global.tapperRecipes.length), 0);
+        .set(booleanProperty.create("error"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -143,7 +157,6 @@ StartupEvents.registry("block", (event) => {
             mature: block.properties.get("mature"),
             upgraded: true,
             error: block.properties.get("error"),
-            stage: block.properties.get("stage"),
           });
         }
       }
@@ -171,6 +184,7 @@ StartupEvents.registry("block", (event) => {
       global.handleTapperRandomTick(tick);
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         if (entity.block.properties.get("error") !== "true")
           global.handleBETick(entity, global.tapperRecipes, 7);
@@ -178,15 +192,15 @@ StartupEvents.registry("block", (event) => {
     }).blockstateJson = {
     multipart: [
       {
-        apply: { model: "society:block/tapper_particle" },
+        apply: { model: "society:block/kubejs/tapper_particle" },
       },
       {
         when: { mature: true },
-        apply: { model: "society:block/machine_done" },
+        apply: { model: "society:block/kubejs/machine_done" },
       },
       {
         when: { error: true },
-        apply: { model: "society:block/error" },
+        apply: { model: "society:block/kubejs/error" },
       },
     ].concat(getCardinalMultipartJsonBasic("tapper")),
   };

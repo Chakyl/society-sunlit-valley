@@ -1,0 +1,197 @@
+{
+  "id": "test_dialog",
+  "title": "Test Dialog",
+  "description": "A test dialog sequence to showcase the features of the dialog system.",
+  "start": "start",
+  "entries": [
+    {
+      "id": "start",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": [
+        {
+          "translate": "dialog.test_dialog.entry.start.text"
+        }
+      ],
+      "portraits": [
+        {
+          "path": "tlipoca.png",
+          "position": "RIGHT",
+          "brightness": 1.0,
+          "animationType": "FADE_IN"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "speaker": { "translate": "dialog.test_dialog.speaker.leaf", "color": "aqua" },
+      "text": { "translate": "dialog.test_dialog.entry.1.text" },
+      "portraits": [
+        { "path": "leaf.png", "position": "LEFT", "brightness": 1.0 },
+        { "path": "tlipoca.png", "position": "RIGHT", "brightness": 0.5 }
+      ],
+      "next": "2"
+    },
+    {
+      "id": "2",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.2.text" },
+      "portraits": [
+        { "path": "leaf.png", "position": "LEFT", "brightness": 0.5 },
+        { "path": "tlipoca.png", "position": "RIGHT", "brightness": 1.0 }
+      ]
+    },
+    {
+      "id": "3",
+      "speaker": {
+        "translate": "dialog.test_dialog.speaker.leaf",
+        "color": "aqua"
+      },
+      "text": [
+        { "translate": "dialog.test_dialog.entry.3.text.0" },
+        { "translate": "dialog.test_dialog.entry.3.text.1", "color": "red" },
+        { "translate": "dialog.test_dialog.entry.3.text.2", "color": "gold" },
+        { "translate": "dialog.test_dialog.entry.3.text.3", "color": "yellow" },
+        { "translate": "dialog.test_dialog.entry.3.text.4", "color": "blue" },
+        { "translate": "dialog.test_dialog.entry.3.text.5" },
+        { "translate": "dialog.test_dialog.entry.3.text.6", "bold": true },
+        { "translate": "dialog.test_dialog.entry.3.text.7" },
+        { "translate": "dialog.test_dialog.entry.3.text.8", "italic": true },
+        { "translate": "dialog.test_dialog.entry.3.text.9" }
+      ],
+      "portraits": [
+        { "path": "leaf.png", "position": "LEFT", "brightness": 1.0 },
+        { "path": "tlipoca.png", "position": "RIGHT", "brightness": 0.5 }
+      ]
+    },
+    {
+      "id": "4",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.4.text" },
+      "portraits": [
+        { "path": "leaf.png", "position": "LEFT", "brightness": 0.5 },
+        { "path": "tlipoca.png", "position": "RIGHT", "brightness": 1.0 }
+      ]
+    },
+    {
+      "id": "5",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.5.text" },
+      "portraits": [
+        {
+          "path": "tlipoca_1.png",
+          "position": "CENTER",
+          "brightness": 1.0,
+          "animationType": "FADE_IN"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.6.text" },
+      "portraits": [
+        {
+          "path": "tlipoca.png",
+          "position": "CENTER",
+          "brightness": 1.0,
+          "animationType": "SLIDE_IN_FROM_BOTTOM"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.7.text" },
+      "portraits": [{ "path": "tlipoca_2.png", "position": "CENTER", "animationType": "BOUNCE" }]
+    },
+    {
+      "id": "8",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.8.text" },
+      "portraits": [{ "path": "tlipoca.png", "animationType": "FADE_IN" }],
+      "options": [
+        {
+          "text": { "translate": "dialog.test_dialog.option.more_info" },
+          "target": "more_info"
+        },
+        {
+          "text": { "translate": "dialog.test_dialog.option.end_dialog" },
+          "target": "end"
+        },
+        {
+          "visibility_command": "execute if entity @s[gamemode=survival]",
+          "text": { "translate": "dialog.test_dialog.option.hidden_option" },
+          "target": "more_info"
+        }
+      ]
+    },
+    {
+      "id": "more_info",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.more_info.text" },
+      "portraits": [{ "path": "tlipoca_1.png" }]
+    },
+    {
+      "id": "command",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.command.text" },
+      "portraits": [{ "path": "tlipoca_1.png" }],
+      "options": [
+        {
+          "text": { "translate": "dialog.test_dialog.option.weather_rain" },
+          "target": "item",
+          "command": ["weather rain"]
+        },
+        {
+          "text": { "translate": "dialog.test_dialog.option.weather_clear" },
+          "target": "item",
+          "command": ["weather clear"]
+        },
+        {
+          "text": { "translate": "dialog.test_dialog.option.weather_thunder" },
+          "target": "item",
+          "command": ["weather thunder"]
+        }
+      ]
+    },
+    {
+      "id": "item",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.item.text" },
+      "portraits": [{ "path": "tlipoca.png" }],
+      "display_items": [
+        {
+          "item": "minecraft:apple",
+          "count": 16
+        },
+        {
+          "item": "minecraft:diamond_sword",
+          "count": 1,
+          "nbt": "{Damage: 50, Enchantments:[{lvl: 255s, id: \"minecraft:sharpness\"}]}"
+        }
+      ]
+    },
+    {
+      "id": "background_cg",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.background_cg.text" },
+      "portraits": [{ "path": "tlipoca.png" }],
+      "background_image": {
+        "path": "background.png"
+      }
+    },
+    {
+      "id": "hidden_entry",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "visibility_command": "execute if entity @s[gamemode=survival]",
+      "text": { "translate": "dialog.test_dialog.entry.hidden_entry.text" },
+      "portraits": [{ "path": "tlipoca_1.png" }]
+    },
+    {
+      "id": "end",
+      "speaker": { "translate": "dialog.test_dialog.speaker.tlipoca", "color": "red" },
+      "text": { "translate": "dialog.test_dialog.entry.end.text" },
+      "portraits": [{ "path": "tlipoca.png" }]
+    }
+  ]
+}

@@ -30,7 +30,7 @@ global.handleLongwings = (entity, item) => {
     drop.y = y;
     drop.z = z;
     drop.spawn();
-    if (Math.random <= 0.04) {
+    if (Math.random <= 0.08) {
       stolenBlock.set("minecraft:air");
     }
   }

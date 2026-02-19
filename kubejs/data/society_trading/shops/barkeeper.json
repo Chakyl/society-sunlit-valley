@@ -2,21 +2,22 @@
   "shop_id": "barkeeper",
   "name": "shop.society_trading.barkeeper",
   "texture": "beachparty:textures/item/honey_cocktail",
-  "jei_catalyst": { "item":"beachparty:tiki_bar" },
+  "jei_catalyst": { "item": "brewery:beer_hops" },
   "villager_profession": "beach_guy",
   "selector_weight": 1,
   "trades": [
     {
       "offer": {
-        "item": "bakery:crusty_bread",
+        "item": "farm_and_charm:pasta_with_onion_sauce",
         "count": 1
       },
       "request": {
         "item": "numismatics:cog",
-        "count": 1
+        "count": 2
       },
-      "numismatics_cost": 64,
-      "trade_id": "barkeeper_crusty_bread_for_cog"
+      "numismatics_cost": 128,
+      "limit": 4,
+      "trade_id": "barkeeper_pasta_with_onion_sauce_for_cog"
     },
     {
       "offer": {
@@ -28,19 +29,21 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "limit": 4,
       "trade_id": "barkeeper_farmer_salad_for_cog"
     },
     {
       "offer": {
-        "item": "brewery:mashed_potatoes",
+        "item": "farm_and_charm:barley_soup",
         "count": 1
       },
       "request": {
         "item": "numismatics:cog",
-        "count": 1
+        "count": 3
       },
-      "numismatics_cost": 64,
-      "trade_id": "barkeeper_potato_salad_for_cog"
+      "numismatics_cost": 196,
+      "limit": 4,
+      "trade_id": "barkeeper_barley_soup_for_cog"
     },
     {
       "offer": {
@@ -52,6 +55,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "limit": 4,
       "trade_id": "barkeeper_sandwich_for_cog"
     },
     {
@@ -64,19 +68,8 @@
         "count": 2
       },
       "numismatics_cost": 128,
+      "limit": 4,
       "trade_id": "barkeeper_coffee_for_sprocket"
-    },
-    {
-      "offer": {
-        "item": "brewery:beer_hops",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 4
-      },
-      "numismatics_cost": 256,
-      "trade_id": "barkeeper_beer_hops_for_cog"
     },
     {
       "offer": {
@@ -88,6 +81,7 @@
         "count": 1
       },
       "numismatics_cost": 512,
+      "limit": 4,
       "trade_id": "barkeeper_cheese_pizza_slice_for_crown"
     },
     {
@@ -99,6 +93,7 @@
         "item": "society:prismatic_shard",
         "count": 3
       },
+      "limit": 4,
       "trade_id": "barkeeper_magic_rock_candy_for_prismatic_shard"
     },
     {
@@ -160,6 +155,246 @@
       },
       "numismatics_cost": 134217728,
       "trade_id": "barkeeper_feeding_upgrade_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "item": "etched:blank_music_disc",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "bard_blank_music_disc_for_cog"
+    },
+    {
+      "offer": {
+        "item": "etched:etching_table",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "bard_etching_table_for_crown"
+    },
+    {
+      "offer": {
+        "item": "etched:album_jukebox",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "bard_album_jukebox_for_sun"
+    },
+    {
+      "offer": {
+        "item": "etched:radio",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "bard_radio_for_cog"
+    },
+    {
+      "offer": {
+        "item": "etched:boombox",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "bard_boombox_for_sun"
+    },
+    {
+      "offer": {
+        "item": "exposure:camera",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "bard_camera_for_crown"
+    },
+    {
+      "offer": {
+        "item": "exposure:black_and_white_film",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "bard_black_and_white_film_for_cog"
+    },
+    {
+      "offer": {
+        "item": "exposure:color_film",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "bard_color_film_for_cog"
+    },
+    {
+      "offer": {
+        "item": "exposure:lightroom",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "bard_lightroom_for_crown"
+    },
+    {
+      "offer": {
+        "item": "immersive_paintings:painting",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "bard_painting_for_cog"
+    },
+    {
+      "offer": {
+        "item": "immersive_paintings:graffiti",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "bard_graffiti_for_cog"
+    },
+    {
+      "offer": {
+        "item": "zetter:easel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "bard_graffiti_for_crown"
+    },
+    {
+      "offer": {
+        "item": "zetter:paints",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "bard_paints_for_cog"
+    },
+    {
+      "offer": {
+        "item": "strawstatues:straw_statue",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "bard_straw_statue_for_crown"
+    },
+    {
+      "offer": {
+        "item": "waterframes:tv",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 7
+      },
+      "numismatics_cost": 28672,
+      "trade_id": "bard_tv_for_crown"
+    },
+    {
+      "offer": {
+        "item": "waterframes:frame",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 16
+      },
+      "numismatics_cost": 65536,
+      "trade_id": "bard_frame_for_sun"
+    },
+    {
+      "offer": {
+        "item": "waterframes:remote",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 3
+      },
+      "numismatics_cost": 1536,
+      "trade_id": "bard_remote_for_cog"
+    },
+    {
+      "offer": {
+        "item": "gamediscs:game_disc_blocktris",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 1
+      },
+      "numismatics_cost": 262144,
+      "trade_id": "bard_game_disc_blocktris_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "item": "beachparty:crocs",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 16
+      },
+      "numismatics_cost": 268435456,
+      "trade_id": "leatherworker_crocs_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "item": "wildernature:stylin_purple_hat",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "trade_id": "leatherworker_stylin_purple_hat_for_prismatic_coin"
     }
   ]
 }

@@ -10,7 +10,6 @@
       "treasure_chance_bonus": "+0.05"
     },
     "stardew_fishing:quality_bobber": {
-      "exp_multiplier": "x1.4",
       "quality_boost": "+1"
     },
     "tide:apple_fishing_bobber": {
@@ -29,6 +28,17 @@
     },
     "aquaculture:neptunium_fishing_rod": {
       "bar_size": "+17"
+    },
+    "netherdepthsupgrade:lava_fishing_rod": {
+      "bar_size": "+12"
+    },
+    "society:needle_bobber": {
+      "bar_size": "-24",
+      "quality_boost": "+3"
+    },
+    "society:net_bobber": {
+      "bar_size": "-24",
+      "treasure_chance_bonus": "+0.2"
     }
   }
 }

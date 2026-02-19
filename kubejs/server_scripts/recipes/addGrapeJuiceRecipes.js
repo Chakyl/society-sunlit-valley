@@ -10,13 +10,17 @@ ServerEvents.recipes((e) => {
       type: "create:compacting",
       ingredients: [
         {
-          item: `${nether.includes(juice) ? "nethervinery" : "vinery"}:${grape}`,
+          item: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${grape}`,
         },
       ],
       results: [
         {
           amount: 50,
-          fluid: `${nether.includes(juice) ? "nethervinery" : "vinery"}:${juice}_grape_juice`,
+          fluid: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${juice}_grape_juice`,
         },
       ],
     });
@@ -30,12 +34,16 @@ ServerEvents.recipes((e) => {
         },
         {
           amount: 250,
-          fluidTag: `${nether.includes(juice) ? "nethervinery" : "vinery"}:${juice}_grape_juice`,
+          fluidTag: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${juice}_grape_juice`,
         },
       ],
       results: [
         {
-          item: `${nether.includes(juice) ? "nethervinery" : "vinery"}:${juice}_grapejuice`,
+          item: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${juice}_grapejuice`,
         },
       ],
     });
@@ -43,7 +51,9 @@ ServerEvents.recipes((e) => {
       type: "create:emptying",
       ingredients: [
         {
-          item: `${nether.includes(juice) ? "nethervinery" : "vinery"}:${juice}_grapejuice`,
+          item: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${juice}_grapejuice`,
         },
       ],
       results: [
@@ -52,7 +62,9 @@ ServerEvents.recipes((e) => {
         },
         {
           amount: 250,
-          fluid: `${nether.includes(juice) ? "nethervinery" : "vinery"}:${juice}_grape_juice`,
+          fluid: `${
+            nether.includes(juice) ? "nethervinery" : "vinery"
+          }:${juice}_grape_juice`,
         },
       ],
     });
@@ -119,9 +131,11 @@ ServerEvents.recipes((e) => {
   ["red", "red_savanna", "red_jungle", "red_taiga"].forEach((juice, index) => {
     spoutBasicBottling(juice, "red");
   });
-  ["white", "white_savanna", "white_jungle", "white_taiga"].forEach((juice, index) => {
-    spoutBasicBottling(juice, "white");
-  });
+  ["white", "white_savanna", "white_jungle", "white_taiga"].forEach(
+    (juice, index) => {
+      spoutBasicBottling(juice, "white");
+    }
+  );
   e.custom({
     type: "create:compacting",
     ingredients: [
@@ -208,6 +222,34 @@ ServerEvents.recipes((e) => {
       {
         amount: 250,
         fluid: "society:starfruit_juice",
+      },
+    ],
+  });
+  e.custom({
+    type: "create:compacting",
+    ingredients: [
+      {
+        item: "society:sparkpod",
+      },
+    ],
+    results: [
+      {
+        amount: 250,
+        fluid: "society:sparkpod_juice",
+      },
+    ],
+  });
+  e.custom({
+    type: "create:compacting",
+    ingredients: [
+      {
+        item: "society:mana_fruit",
+      },
+    ],
+    results: [
+      {
+        amount: 250,
+        fluid: "society:mana_fruit_juice",
       },
     ],
   });

@@ -1,5 +1,5 @@
 //priority: 100
-console.info("[SOCIETY] seedMaker.js loaded");
+console.info("[SOCIETY] ancientGoddessStatue.js loaded");
 
 StartupEvents.registry("block", (event) => {
   event
@@ -10,14 +10,22 @@ StartupEvents.registry("block", (event) => {
     .hardness(4.5)
     .resistance(9.0)
     .requiresTool(false)
+    .model("society:block/kubejs/ancient_goddess_statue")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Offer a stack of crops to recieve the Goddess' blessing"));
-      item.tooltip(Text.gray("Crops and rewards change every season"));
-      item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
+      item.tooltip(
+        Text.translatable(
+          "block.society.ancient_goddess_statue.description"
+        ).gray()
+      );
+      item.tooltip(
+        Text.translatable(
+          "block.society.ancient_goddess_statue.description.warn"
+        ).red()
+      );
       item.modelJson({
-        parent: "society:block/ancient_goddess_statue",
+        parent: "society:block/kubejs/ancient_goddess_statue",
       });
     })
     .rightClick((click) => {
@@ -28,89 +36,82 @@ StartupEvents.registry("block", (event) => {
       if (player.stages.has("farmers_blessing")) {
         if (hand == "OFF_HAND") return;
         if (hand == "MAIN_HAND") {
-          switch (season) {
-            case "spring":
-              if (item === "society:ancient_fruit" && item.count === 64) {
-                block.popItemFromFace("society:prismatic_shard", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(
-                  Text.aqua(`Give me 64 of something ancient for something prismatic...`)
-                );
-              }
-              break;
-            case "summer":
-              if (item === "vintagedelight:ghost_pepper" && item.count === 64) {
-                block.popItemFromFace("16x society:sparkstone_block", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(Text.aqua(`Give me 64 of something spicy for something sparky..`));
-              }
-              break;
-            case "autumn":
-              if (item === "farm_and_charm:corn" && item.count === 64) {
-                block.popItemFromFace("4x society:pristine_star_shards", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(
-                  Text.aqua(`Give me 64 of something cobbed for a something pristine...`)
-                );
-              }
-              break;
-            case "winter":
-              if (item === "snowyspirit:ginger" && item.count === 64) {
-                block.popItemFromFace("4x minecraft:netherite_scrap", facing);
-                if (!player.isCreative()) item.count = item.count - 64;
-                successParticles(level, block);
-              } else {
-                player.tell(
-                  Text.aqua(
-                    `Give me 64 of something that only grows in the cold for something from the depths...`
-                  )
-                );
-              }
-              break;
+          let day = global.getDay(level);
+          if (!player.persistentData.days) player.persistentData.days = {}
+          let dayData = player.persistentData.days.ancientGoddessStatueDay;
+          if (dayData == undefined || dayData < day) {
+            switch (season) {
+              case "spring":
+                if (item === "society:ancient_fruit" && item.count === 64) {
+                  block.popItemFromFace("society:prismatic_shard", facing);
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.spring"
+                    ).aqua()
+                  );
+                }
+                break;
+              case "summer":
+                if (item === "vintagedelight:ghost_pepper" && item.count === 64) {
+                  block.popItemFromFace("64x society:sparkstone", facing);
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.summer"
+                    ).aqua()
+                  );
+                }
+                break;
+              case "autumn":
+                if (item === "farm_and_charm:corn" && item.count === 64) {
+                  block.popItemFromFace(
+                    "4x society:pristine_star_shards",
+                    facing
+                  );
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.autumn"
+                    ).aqua()
+                  );
+                }
+                break;
+              case "winter":
+                if (item === "snowyspirit:ginger" && item.count === 64) {
+                  block.popItemFromFace("4x minecraft:netherite_scrap", facing);
+                  if (!player.isCreative()) item.count = item.count - 64;
+                  successParticles(level, block);
+                  player.persistentData.days.ancientGoddessStatueDay = day;
+                } else {
+                  player.tell(
+                    Text.translatable(
+                      "block.society.ancient_goddess_statue.winter"
+                    ).aqua()
+                  );
+                }
+                break;
+            }
+          } else {
+            player.tell(
+              Text.translatable("block.society.ancient_goddess_statue.already_taken").red()
+            );
           }
         }
       } else
-        player.tell(Text.red(`You need the skill "Farmer's Blessing" to recieve my blessing...`));
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/ancient_goddess_statue",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+        player.tell(
+          Text.translatable(
+            "block.society.ancient_goddess_statue.no_skill"
+          ).red()
+        );
+    })
 });

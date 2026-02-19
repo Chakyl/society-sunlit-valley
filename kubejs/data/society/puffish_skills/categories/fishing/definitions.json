@@ -1,6 +1,6 @@
 {
   "luck+0.25": {
-    "title": "+0.25 Luck",
+    "title": {"translate": "society.skills.fishing.luck"},
     "icon": {
       "type": "effect",
       "data": {
@@ -19,7 +19,7 @@
     ]
   },
   "respiration+1": {
-    "title": "+I Respiration",
+    "title": {"translate": "society.skills.fishing.respiration"},
     "icon": {
       "type": "effect",
       "data": {
@@ -38,8 +38,8 @@
     ]
   },
   "fly_fisher": {
-    "title": "Fly Fisher",
-    "description": "+1 fish when caught using any rod.",
+    "title": {"translate": "society.skills.fishing.fly_fisher"},
+    "description": {"translate": "society.skills.fishing.fly_fisher.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -63,8 +63,8 @@
     ]
   },
   "mystical_ocean": {
-    "title": "Mystical Ocean",
-    "description": "§6Neptuna§7 can be caught anywhere.",
+    "title": {"translate": "society.skills.fishing.mystical_ocean"},
+    "description": {"translate": "society.skills.fishing.mystical_ocean.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -82,8 +82,8 @@
     ]
   },
   "caper_catcher": {
-    "title": "Caper Catcher",
-    "description": "+5 maximum roe from Fish Ponds.",
+    "title": {"translate": "society.skills.fishing.caper_catcher"},
+    "description": {"translate": "society.skills.fishing.caper_catcher.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -107,8 +107,8 @@
     ]
   },
   "caviar_catcher": {
-    "title": "Caviar Catcher",
-    "description": "+5 maximum roe from Fish Pond.",
+    "title": {"translate": "society.skills.fishing.caviar_catcher"},
+    "description": {"translate": "society.skills.fishing.caviar_catcher.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -132,8 +132,8 @@
     ]
   },
   "hot_hands": {
-    "title": "Hot Hands",
-    "description": "Taking out fish from Fish Ponds smokes them.\n\n§c25% chance they get charred into coal.",
+    "title": {"translate": "society.skills.fishing.hot_hands"},
+    "description": {"translate": "society.skills.fishing.hot_hands.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -157,8 +157,8 @@
     ]
   },
   "wooden_pollution": {
-    "title": "Wooden Pollution",
-    "description": "Double rolls for §6Jelly§7 from fishing. Chance to find §6Furniture Boxes§7 from fishing.",
+    "title": {"translate": "society.skills.fishing.wooden_pollution"},
+    "description": {"translate": "society.skills.fishing.wooden_pollution.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -182,8 +182,8 @@
     ]
   },
   "frozen_treasure": {
-    "title": "Frozen Treasure",
-    "description": "High Chance to find §6Treasure Chests§7 when catching fish in Winter.",
+    "title": {"translate": "society.skills.fishing.frozen_treasure"},
+    "description": {"translate": "society.skills.fishing.frozen_treasure.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -207,8 +207,8 @@
     ]
   },
   "school_fisher": {
-    "title": "School Fisher",
-    "description": "+3 fish when caught using any rod.",
+    "title": {"translate": "society.skills.fishing.school_fisher"},
+    "description": {"translate": "society.skills.fishing.school_fisher.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -232,8 +232,8 @@
     ]
   },
   "prismatic_bounty": {
-    "title": "Prismatic Bounty",
-    "description": "Neptune's Bounties drops a §dPrismatic Shard§7 when mined without Silk Touch.",
+    "title": {"translate": "society.skills.fishing.prismatic_bounty"},
+    "description": {"translate": "society.skills.fishing.prismatic_bounty.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -257,8 +257,8 @@
     ]
   },
   "scum_collector": {
-    "title": "Scum Collector",
-    "description": "Doubles chance of receiving non-roe items from ponds.\n§aStacks with Sea Biscuits.",
+    "title": {"translate": "society.skills.fishing.scum_collector"},
+    "description": {"translate": "society.skills.fishing.scum_collector.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -282,8 +282,8 @@
     ]
   },
   "mitosis": {
-    "title": "Mitosis",
-    "description": "Doubles a fish being retrieved from Fish Ponds.",
+    "title": {"translate": "society.skills.fishing.mitosis"},
+    "description": {"translate": "society.skills.fishing.mitosis.description"},
     "frame": {
       "type": "advancement",
       "data": {

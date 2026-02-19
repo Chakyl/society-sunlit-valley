@@ -1,0 +1,27 @@
+{
+  "colors": {
+    "accent": "#D70040",
+    "base": "#9ea7b5"
+  },
+  "display": {
+    "offset": { "x": 0, "y": 1, "z": 0 },
+    "scale": 3.0
+  },
+  "item": {
+    "item": "paraglider:heart_container",
+    "count": 1
+  },
+  "animation": {
+    "type": "spinning",
+    "speed": 0.1
+  },
+  "effects": {
+    "sound": {
+      "soundEvent": "windswept:music_disc.bumblebee"
+    }
+  },
+  "name": {
+    "color": "#D70040",
+    "translate": "society.trofers.community_center"
+  }
+}

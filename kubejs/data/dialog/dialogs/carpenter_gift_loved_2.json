@@ -1,0 +1,26 @@
+{
+	"id": "carpenter_gift_loved_2",
+	"title": "carpenter introduction",
+	"description": "dialog.npc.carpenter.gift.loved",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.gift_loved.2.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

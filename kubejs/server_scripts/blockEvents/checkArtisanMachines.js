@@ -75,23 +75,27 @@ const idMap = new Map([
   ["society:double_aged_beer_wheat", "Double-Aged Wheat Beer"],
 ]);
 
-const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machineId, maxInput) => {
+const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, maxInput) => {
   const { player, block, item, server } = clickEvent;
-  const status = maxInput !== -1 ? "Requires more input for" : "Currently making";
+  const blockStage = nbt.data.stage;
+  const status = maxInput !== -1 
+    ? Text.translatable("society.working_block_entity.more_input")
+    : Text.translatable("society.working_block_entity.making");
   let primaryOutput;
-  let recipe;
+  let recipe = nbt.data.recipe;
   let id;
-
-  if (recipes === "society:battery") id = "society:battery";
-  else {
-    recipe = global.getArtisanRecipe(recipes, block);
-    if (!recipe) return;
-    id = String(Item.of(recipe.output[0]).id);
+  let duration;
+  const isChargingRod = machineId.equals("society:charging_rod");
+  if (!recipe && !isChargingRod) return;
+  if (isChargingRod) {
+    id = "society:battery";
+    duration = stageCount;
+  } else {
+    id = String(Item.of(recipes.get(recipe).output[0]).id);
     primaryOutput = idMap.get(id);
+    duration = recipes.get(recipe).time || stageCount;
+    if (recipe === item) return;
   }
-  if (recipe?.input === item) return;
-  let duration =
-    (block.properties.get("type") && global.getArtisanRecipe(recipes, block).time) || stageCount;
   if (
     machineId == "society:aging_cask" &&
     block.properties.get("upgraded").toLowerCase() === "true"
@@ -100,14 +104,15 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
   }
   const pipCount = maxInput !== -1 ? maxInput : duration;
   if (!primaryOutput)
-    primaryOutput = id
-      .split(":")[1]
-      .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
+    primaryOutput = id.path.replace(/^_*(.)|_+(.)/g, (s, c, d) =>
+      c ? c.toUpperCase() : " " + d.toUpperCase()
+    );
   let outputString = "";
   for (let index = 0; index < pipCount; index++) {
     if (index < blockStage) outputString += "⬛";
     else outputString += "⬜";
   }
+  let translatedPrimaryOutput = global.getTranslatedItemName(id, primaryOutput).noColor();
 
   const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
   global.renderUiText(
@@ -118,7 +123,7 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
         type: "text",
         x: 0,
         y: -90,
-        text: `§a${upgrade}§r ${status} §a${upgrade}§r`,
+        text: `${status.toJson()}`,
         color: "#AAAAAA",
         alignX: "center",
         alignY: "bottom",
@@ -128,7 +133,7 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
         x: 1,
         z: -1,
         y: -89,
-        text: `${upgrade} ${status} ${upgrade}`,
+        text: `${status.toJson()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -137,7 +142,7 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
         type: "text",
         x: 0,
         y: -78,
-        text: primaryOutput,
+        text: `${translatedPrimaryOutput.toJson()}`,
         color: "#FFAA00",
         alignX: "center",
         alignY: "bottom",
@@ -147,7 +152,7 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
         x: 1,
         z: -1,
         y: -77,
-        text: primaryOutput,
+        text: `${translatedPrimaryOutput.toJson()}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -156,7 +161,7 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
         type: "text",
         x: 1.5,
         y: -66,
-        text: outputString,
+        text: `§a${upgrade}§6 ${outputString} §a${upgrade}§r`,
         color: "#FFAA00",
         alignX: "center",
         alignY: "bottom",
@@ -166,7 +171,7 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
         x: 1.5,
         z: -1,
         y: -66,
-        text: "⬛".repeat(pipCount),
+        text: `§a${upgrade}§0 ${"⬛".repeat(pipCount)} §a${upgrade}§r`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -183,6 +188,7 @@ BlockEvents.rightClicked(
     "society:ancient_cask",
     "society:charging_rod",
     "society:crystalarium",
+    "society:wine_keg",
     "society:deluxe_worm_farm",
     "society:dehydrator",
     "society:espresso_machine",
@@ -194,18 +200,22 @@ BlockEvents.rightClicked(
     "society:tapper",
     "society:recycling_machine",
     "society:cheese_press",
+    "society:oil_maker",
+    "society:mushroom_log",
   ],
   (e) => {
-    const { block, hand } = e;
-    if (hand == "OFF_HAND") return;
+    const { block, hand, item } = e;
+    if (hand == "OFF_HAND" || item !== "minecraft:air") return;
     const machine = global.artisanMachineDefinitions.filter((obj) => {
       return obj.id === block.id;
     })[0];
     if (block.properties.get("mature").toLowerCase() === "false") {
+      let nbt = block.getEntityData();
+      if (nbt.data.type == 0) return;
       sendProgressMessage(
         e,
         machine.recipes,
-        block.properties.get("stage").toLowerCase(),
+        nbt,
         machine.stageCount,
         machine.id,
         block.properties.get("working").toLowerCase() === "false" ? machine.maxInput : -1

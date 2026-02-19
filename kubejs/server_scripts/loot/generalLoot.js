@@ -14,7 +14,7 @@ LootJS.modifiers((e) => {
     .addLoot("society:glitched_vhs");
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
-  .addLoot("society:holy_symbol");
+    .addLoot("society:holy_symbol");
   e.addLootTableModifier("minecraft:entities/shulker")
     .randomChance(0.1)
     .addLoot("society:production_science_pack");
@@ -24,6 +24,9 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("minecraft:entities/spider")
     .randomChance(0.05)
     .addLoot("society:spider_silk");
+  e.addLootTableModifier("minecraft:entities/creeper")
+    .randomChance(0.05)
+    .addLoot("society:green_tea_honeycomb");
   e.addLootTableModifier("legendarycreatures:entities/corpse_eater")
     .randomChance(0.05)
     .addLoot("society:wheel_of_adaptation");
@@ -260,7 +263,17 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier("society:prize_machine").removeLoot(
     "society:prize_machine"
   );
+  e.addBlockLootModifier("society:villager_home").removeLoot(
+    "society:villager_home"
+  );
+  e.addBlockLootModifier("whimsy_deco:sunlit_singing_frog").removeLoot(
+    "whimsy_deco:sunlit_singing_frog"
+  );
   e.addBlockLootModifier("society:fish_pond").removeLoot("society:fish_pond");
+  e.addBlockLootModifier("society:mana_fruit_crop").removeLoot(
+    "society:mana_fruit_crop"
+  );
+
   e.addBlockLootModifier(global.plushies).removeLoot("*");
 
   // Replace Loot
@@ -280,7 +293,7 @@ LootJS.modifiers((e) => {
     .randomChance(1)
     .replaceLoot("minecraft:flint_and_steel", "numismatics:cog", true);
 
-  // Fix
+  // Fix unstackable item voiding bug
   e.addLootTypeModifier(LootType.CHEST).modifyLoot(
     Ingredient.all,
     (itemStack) => {
@@ -288,7 +301,22 @@ LootJS.modifiers((e) => {
     }
   );
 
+  e.addLootTypeModifier(LootType.CHEST).pool((p) => {
+    p.randomChance(0.05).addLoot("society:recall_potion");
+  });
+  e.addLootTableModifier("minecraft:chests/simple_dungeon").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/spawn_bonus_chest").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/abandoned_mineshaft").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/shipwreck_supply").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_plains_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_taiga_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_desert_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  e.addLootTableModifier("minecraft:chests/village/village_snowy_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
+  // Mastery
   e.addLootTypeModifier(LootType.CHEST)
-    .randomChance(0.15)
-    .replaceLoot("numismatics:cog", "simplerecall:recall_potion", true);
+    .hasAnyStage("husbandry_mastery")
+    .pool((p) => {
+      p.randomChance(0.1).addLoot("society:plushie_capsule");
+      p.randomChance(0.05).addLoot("society:animal_cracker");
+    });
 });

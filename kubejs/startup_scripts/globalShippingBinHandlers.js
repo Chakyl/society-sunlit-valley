@@ -1,10 +1,10 @@
 // Priority: 1000
-const calculateQualityValue = (number, quality) => {
+const calculateQualityValue = (number, quality, doubled) => {
   let value;
   if (quality) {
-    if (quality == 1.0) value = Math.round(number * 1.25);
-    if (quality == 2.0) value = Math.round(number * 1.5);
-    if (quality == 3.0) value = Math.round(number * 2);
+    if (quality == 1.0) value = Math.round(number * (doubled ? 1.5 : 1.25));
+    if (quality == 2.0) value = Math.round(number * (doubled ? 2 : 1.5));
+    if (quality == 3.0) value = Math.round(number * (doubled ? 3 : 2));
   } else {
     value = number;
   }
@@ -27,6 +27,16 @@ const calculateCoinsFromValue = (price, output, coinMap) => {
   }
 };
 
+global.getAttributeMultiplier = (attributes, multiplier) => {
+  return (
+    Number(
+      attributes.filter((obj) => {
+        return obj.Name === multiplier;
+      })[0]?.Base
+    ) || 1
+  );
+};
+
 global.processShippingBinInventory = (
   inventory,
   inventorySlots,
@@ -44,24 +54,42 @@ global.processShippingBinInventory = (
     slotItem = inventory.getStackInSlot(i).item;
     isSellable =
       global.trades.has(String(slotItem.id)) ||
-      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id);
+      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(
+        slotItem.id
+      );
     if (isSellable) {
       let trade = global.trades.get(String(slotItem.id));
-      let quality;
-      let slotNbt;
+      let quality = undefined;
+      let doubleQuality = false;
+      let slotNbt = undefined;
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }
-      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
-        if (slotNbt.slime) trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
-        if (slotNbt.plort) trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
+      if (
+        slotNbt &&
+        ((slotNbt.slime && slotNbt.slime.id) ||
+          (slotNbt.plort && slotNbt.plort.id))
+      ) {
+        if (slotNbt.slime)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
+        if (slotNbt.plort)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
 
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
-      itemValue = calculateQualityValue(trade.value, quality);
       // UPDATE CACHING METHOD WHEN ADDING STAGES
+      if (
+        quality &&
+        quality > 0 &&
+        stages.toString().includes("the_quality_of_the_earth") &&
+        trade.multiplier.equals("shippingbin:crop_sell_multiplier") &&
+        Item.of(slotItem).hasTag("minecraft:fishes")
+      ) {
+        doubleQuality = true;
+      }
+      itemValue = calculateQualityValue(trade.value, quality, doubleQuality);
       if (
         stages.toString().includes("bluegill_meridian") &&
         slotItem.id == "aquaculture:bluegill"
@@ -81,14 +109,12 @@ global.processShippingBinInventory = (
       ) {
         itemValue *= 2;
       }
-      calculatedValue +=
+
+      calculatedValue += Math.round(
         itemValue *
         inventory.getStackInSlot(i).count *
-        (Number(
-          attributes.filter((obj) => {
-            return obj.Name === trade.multiplier;
-          })[0]?.Base
-        ) || 1);
+        global.getAttributeMultiplier(attributes, trade.multiplier)
+      );
     }
     if (isSellable && !simulated) {
       if (returnRemoved) removedItems.push(i);
@@ -100,7 +126,14 @@ global.processShippingBinInventory = (
 
 const debugValueProcess = false;
 
-global.handleShippingBinDebt = (value, player, server, block, inventory, extenalOutput) => {
+global.handleShippingBinDebt = (
+  value,
+  player,
+  server,
+  block,
+  inventory,
+  extenalOutput
+) => {
   if (!player) return value;
   let playerUUID = player.getUuid().toString();
   let binDebt = 0;
@@ -120,37 +153,44 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       newValue = value - totalDebt;
       debtPaid = totalDebt;
       server.runCommandSilent(
-        `emberstextapi sendcustom ${
-          player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §aYou paid off your §f● §a${global.formatPrice(
-          debtPaid
-        )} debt!`
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          Text.translatable(
+            "society.shipping_bin.debt_paid_all",
+            global.formatPrice(debtPaid.toFixed())
+          ).toJson()
+        )
       );
       global.setDebt(server, playerUUID, 0);
     } else {
       debtPaid = value;
       newValue = 0;
       server.runCommandSilent(
-        `emberstextapi sendcustom ${
-          player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §f● §6${global.formatPrice(
-          debtPaid
-        )} §7of your debt paid off...`
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          Text.translatable(
+            "society.shipping_bin.debt_paid",
+            global.formatPrice(debtPaid.toFixed())
+          ).toJson()
+        )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
     }
   }
   if (debtPaid > 0) {
-    receipt = Item.of(
-      "candlelight:note_paper_written",
-      `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
-
-${player.username}, your profits were used to pay off your debt!
-
-:coin: ${global.formatPrice(debtPaid)} paid out of your :coin: ${global.formatPrice(
-        totalDebt
-      )} debt."],title:"Debt Payment Receipt"}`
-    );
+    let receiptAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Sunlit Valley Hospital").getString();
+    let receiptText = Text.translatable(
+      "society.shipping_bin.debt_paid_note",
+      player.username,
+      global.formatPrice(debtPaid.toFixed()),
+      global.formatPrice(totalDebt.toFixed())
+    ).toJson();
+    let receiptTitle = global.translatableWithFallback("society.shipping_bin.debt_paid_note.title", "Debt Payment Receipt").getString();
+    receipt = global.getNotePaperItem(receiptAuthor, receiptText, receiptTitle);
     if (extenalOutput) {
       block.popItemFromFace(receipt, block.properties.get("facing"));
     } else {
@@ -179,9 +219,20 @@ global.processValueOutput = (
   if (value > 0) {
     let hasRoom = false;
     value = Math.round(
-      global.handleShippingBinDebt(value, player, server, block, inventory, extenalOutput)
+      global.handleShippingBinDebt(
+        value,
+        player,
+        server,
+        block,
+        inventory,
+        extenalOutput
+      )
     );
-    let outputs = calculateCoinsFromValue(value, [], extenalOutput ? global.coinMap : basicCoinMap);
+    let outputs = calculateCoinsFromValue(
+      value,
+      [],
+      extenalOutput ? global.coinMap : basicCoinMap
+    );
 
     if (!outputs) outputs = [];
 
@@ -193,18 +244,26 @@ global.processValueOutput = (
     }
     hasRoom =
       extenalOutput ||
-      slots - inventory.countNonEmpty() + removedSlots.length - calculateSlotsNeeded(outputs) >= 0;
+      slots -
+      inventory.countNonEmpty() +
+      removedSlots.length -
+      calculateSlotsNeeded(outputs) >=
+      0;
     if (hasRoom) {
       if (!block.level.hasNeighborSignal(block.pos) && player) {
         server.runCommandSilent(
           `playsound etcetera:item.handbell.ring block @a ${player.x} ${player.y} ${player.z} 0.3`
         );
         server.runCommandSilent(
-          `emberstextapi sendcustom ${
-            player.username
-          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ● §6${global.formatPrice(
-            value
-          )} §7worth of goods sold`
+          global.getEmbersTextAPICommand(
+            player.username,
+            `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+            160,
+            Text.translatable(
+              "society.shipping_bin.goods_sold",
+              global.formatPrice(value.toFixed())
+            ).toJson()
+          )
         );
       }
       if (extenalOutput) {
@@ -212,7 +271,9 @@ global.processValueOutput = (
         let account = global.GLOBAL_BANK.getAccount(ownerUUID);
         let card = inventory.getStackInSlot(0);
         if (card && card.hasTag("numismatics:cards")) {
-          account = global.GLOBAL_BANK.getAccount(card.nbt.getUUID("AccountID"));
+          account = global.GLOBAL_BANK.getAccount(
+            card.nbt.getUUID("AccountID")
+          );
         }
         if (account && account.getBalance() + value < 2147483000) {
           account.deposit(value);
@@ -221,7 +282,10 @@ global.processValueOutput = (
             let { coin, count } = output;
             for (let index = 0; index <= count; index += 64) {
               let difference = count - index;
-              block.popItemFromFace(`${difference > 64 ? 64 : difference}x ${coin}`, facing);
+              block.popItemFromFace(
+                `${difference > 64 ? 64 : difference}x ${coin}`,
+                facing
+              );
             }
           });
         }
@@ -256,7 +320,12 @@ global.processValueOutput = (
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 Your Basic Shipping Bin was too full to sell...`
+        global.getEmbersTextAPICommand(
+          player.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          Text.translatable("society.shipping_bin.full").toJson()
+        )
       );
     }
   }
@@ -270,7 +339,12 @@ global.cacheShippingBin = (entity) => {
     "shippingbin:gem_sell_multiplier",
     "shippingbin:meat_sell_multiplier",
   ];
-  const stagesToFind = ["bluegill_meridian", "phenomenology_of_treasure", "brine_and_punishment"];
+  const stagesToFind = [
+    "bluegill_meridian",
+    "phenomenology_of_treasure",
+    "brine_and_punishment",
+    "the_quality_of_the_earth",
+  ];
   let binPlayer;
   level.getServer().players.forEach((p) => {
     if (p.getUuid().toString() === block.getEntityData().data.owner) {

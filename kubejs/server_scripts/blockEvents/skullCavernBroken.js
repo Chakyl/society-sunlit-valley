@@ -1,5 +1,19 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
 
+const crashableHammers = [
+  "botania:terra_pick",
+  "justhammers:diamond_impact_hammer",
+  "justhammers:gold_impact_hammer",
+  "justhammers:iron_impact_hammer",
+  "justhammers:stone_impact_hammer",
+  "justhammers:netherite_hammer",
+  "justhammers:diamond_hammer",
+  "justhammers:gold_hammer",
+  "justhammers:iron_hammer",
+  "justhammers:stone_hammer",
+  "justhammers:netherite_impact_hammer",
+];
+
 const biomeAirTypeMap = new Map([
   ["society:cavern_top", 0],
   ["society:skull_caves", 0],
@@ -20,6 +34,7 @@ const scheduleFunction = (level, pos, server, rockType) => {
       level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()]
         .toggleBit;
     if (
+      level.getBlock(pos) &&
       ["minecraft:air", "minecraft:void_air", "minecraft:cave_air"].includes(
         level.getBlock(pos).id
       )
@@ -75,9 +90,15 @@ BlockEvents.broken(
     "society:palm_supply_crate",
   ],
   (e) => {
-    const { level, block, server } = e;
+    const { level, block, player, server } = e;
     const pos = block.getPos();
     if (level.dimension === "society:skull_cavern") {
+      if (global.disableHammersSkullCavern && crashableHammers.includes(player.getHeldItem("main_hand").id)) {
+        server.runCommandSilent(
+          `dialog ${player.username} show ${player.username} ${player.getHeldItem("main_hand").id.equals("botania:terra_pick") ? "goddess_unique_skull_cavern_shatterer" : "goddess_unique_skull_cavern_hammer"}`
+        );
+        e.cancel();
+      }
       let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
       scheduleFunction(level, pos.immutable(), server, rockType);
     }
@@ -176,3 +197,49 @@ BlockEvents.broken("society:skull_cavern_teleporter", (e) => {
   const { level } = e;
   if (level.dimension === "society:skull_cavern") e.cancel();
 });
+
+BlockEvents.broken(
+  [
+    "society:stone_boulder",
+    "society:ice_boulder",
+    "society:sandstone_boulder",
+    "society:blackstone_boulder",
+    "society:end_stone_boulder",
+  ],
+  (e) => {
+    const { level, player, server, block } = e;
+    if (player.stages.has("moon_rope_reveal") && Math.random() < 0.15) {
+      const { x, y, z } = block;
+      let scanBlock;
+      let abovePos;
+      let radius = 8;
+      for (let pos of BlockPos.betweenClosed(
+        new BlockPos(x - radius, y - radius, z - radius),
+        [x + radius, y + radius, z + radius]
+      )) {
+        scanBlock = level.getBlock(pos);
+        abovePos = scanBlock.getPos().above();
+        if (
+          scanBlock.id == "farmersdelight:rope" &&
+          level.getBlock(abovePos).id != "farmersdelight:rope"
+        ) {
+          level.spawnParticles(
+            "species:spectre_pop",
+            true,
+            abovePos.x,
+            abovePos.y + 0.5,
+            abovePos.z,
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            0.1 * rnd(1, 4),
+            5,
+            0.01
+          );
+          server.runCommandSilent(
+            `playsound create:peculiar_bell_use block @a ${abovePos.x} ${abovePos.y} ${abovePos.z}`
+          );
+        }
+      }
+    }
+  }
+);

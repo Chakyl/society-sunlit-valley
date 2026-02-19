@@ -1,5 +1,16 @@
 
-["The Garden Awakens"]
-	#Determine if the music should fade out when entering a pale garden
-	fadeMusicOnPaleGarden = false
+["Bats and Pots"]
+	#Use the updated bat model for bats
+	updated_bat_model = true
+
+["Spring to Life"]
+	#allow falling leaves particles to generate
+	falling_leaves = false
+	#how often should falling leaves particles generate
+	#Range: 0.0 ~ 1.0
+	falling_leaves_frequency = 0.01
+	#use the legacy spawn egg textures
+	use_legacy_spawn_eggs = false
+	#toggle the colored sheep wool undercoat
+	use_sheep_wool_undercoat = true
 

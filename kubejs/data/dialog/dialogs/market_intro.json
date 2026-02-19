@@ -1,0 +1,83 @@
+{
+	"id": "market_intro",
+	"title": "market introduction",
+	"description": "dialog.npc.market.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.intro.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.intro.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.intro.0.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.intro.0.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

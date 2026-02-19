@@ -1,12 +1,15 @@
 node_modules/
 backups/
 blueprints/
+portable_blueprints/tablet_data
 crash-reports/
 emojiful/cache
 journeymap/
 local/
 logs
-resourcepacks/
+resourcepacks/*
+!/resourcepacks/sunlit_overrides.zip
+!config/defaultoptions/options.txt
 mods/
 build/
 saves/
@@ -20,7 +23,7 @@ modernfix/
 schematics/
 .vscode
 .mixin.out/
-easy_npc/
+easy_npc/backup
 fancymenu_data/
 etched-sounds/
 TrashSlotSaveState.json

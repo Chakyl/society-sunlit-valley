@@ -45,16 +45,39 @@ BlockEvents.rightClicked("tanukidecor:slot_machine", (e) => {
     server.scheduleInTicks(115, () => {
       const { x, y, z } = entityHalf.getEntityData().SlotRotations;
       if (x === y && y === z) {
-        block.popItemFromFace(`4x ${heldItem}`, facing);
+        const itemAddition = player.stages.has("the_red_and_the_black") ? 1 : 0;
+        block.popItemFromFace(`${1 + itemAddition}x ${heldItem}`, facing);
         server.runCommandSilent(
           `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
         );
         if (
           prismaticCoins.includes(heldItem) &&
+          player.stages.has("adventuring_mastery") &&
+          !player.stages.has("the_red_and_the_black") &&
+          Math.random() < 0.05
+        ) {
+          block.popItemFromFace(`1x society:the_red_and_the_black`, facing);
+          server.tell(
+            Text.translatable(
+              "society.slot_machine.win_big",
+              Text.red(`${player.username}`)
+            ).black()
+          );
+        }
+        if (
+          prismaticCoins.includes(heldItem) &&
           Math.random() < (heldItem === "numismatics:sun" ? 0.005 : 0.1)
         ) {
-          block.popItemFromFace(`1x society:prismatic_shard`, facing);
-          server.tell(Text.gray(`§6${player.username}§r won big at the slots!`));
+          block.popItemFromFace(
+            `${1 + itemAddition}x society:prismatic_shard`,
+            facing
+          );
+          server.tell(
+            Text.translatable(
+              "society.slot_machine.win_big",
+              Text.gold(`${player.username}`)
+            ).gray()
+          );
         }
       } else {
         server.runCommandSilent(

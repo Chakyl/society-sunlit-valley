@@ -1,0 +1,26 @@
+{
+	"id": "shepherd_gift_liked_9",
+	"title": "shepherd introduction",
+	"description": "dialog.npc.shepherd.gift.liked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.gift_liked.9.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

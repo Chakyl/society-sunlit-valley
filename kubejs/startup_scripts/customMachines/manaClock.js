@@ -4,17 +4,16 @@ const MANA_PER_AGE = 10000;
 const CLOCK_MAX_MANA = MANA_PER_AGE * 26;
 
 global.manaClockTick = (entity) => {
-  const {  block, level } = entity;
+  const { block, level } = entity;
   const { x, y, z } = block;
   const radius = 1;
   let mana = entity.persistentData.getInt("mana");
   if (mana >= MANA_PER_AGE) {
     let scanBlock;
-    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-      x + radius,
-      y + radius,
-      z + radius,
-    ])) {
+    for (let pos of BlockPos.betweenClosed(
+      new BlockPos(x - radius, y - radius, z - radius),
+      [x + radius, y + radius, z + radius]
+    )) {
       scanBlock = level.getBlock(pos);
       if (
         scanBlock.hasTag("society:aging_cask") &&
@@ -52,14 +51,18 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Advances Aging Casks and Ancient Casks that have no progress by 1 day"));
-      item.tooltip(Text.aqua("Requires Botania mana from spreader"));
-      item.tooltip(Text.green(`Area: 3x3`));
+      item.tooltip(
+        Text.translatable("block.society.mana_clock.description").gray()
+      );
+      item.tooltip(
+        Text.translatable("society.working_block_entity.need_mana").aqua()
+      );
+      item.tooltip(Text.translatable("tooltip.society.area", `3x3`).green());
       item.modelJson({
-        parent: "society:block/mana_clock",
+        parent: "society:block/kubejs/mana_clock",
       });
     })
-    .model("society:block/mana_clock")
+    .model("society:block/kubejs/mana_clock")
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(200, 0, (entity) => global.manaClockTick(entity)),
         blockInfo.attachCapability(

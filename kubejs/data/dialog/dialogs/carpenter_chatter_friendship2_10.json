@@ -1,0 +1,69 @@
+{
+	"id": "carpenter_chatter_friendship2_10",
+	"title": "[10] carpenter chatter at friendship level: friendship2",
+	"description": "dialog.npc.carpenter.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.chatter_friendship2.10.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.chatter_friendship2.10.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"options": [
+				{
+					"text": {
+						"translate": "dialog.npc.carpenter.purchase_supplies"
+					},
+					"target": "end",
+					"command": [
+						"openshop @p carpenter"
+					]
+				},
+				{
+					"text": {
+						"translate": "dialog.npc.carpenter.invite_villagers"
+					},
+					"target": "end",
+					"command": [
+						"openshop @p invitations"
+					]
+				}
+			]
+		},
+		{
+			"id": "end"
+		}
+	]
+}

@@ -16,6 +16,13 @@ global.artisanMachineDefinitions = [
     upgrade: "society:pink_matter",
   },
   {
+    id: "society:wine_keg",
+    recipes: global.wineKegRecipes,
+    stageCount: 6,
+    maxInput: 3,
+    upgrade: "society:gray_anatomy",
+  },
+  {
     id: "society:aging_cask",
     recipes: global.agingCaskRecipes,
     stageCount: 10,
@@ -108,7 +115,75 @@ global.artisanMachineDefinitions = [
     recipes: global.recyclingMachineRecipes,
     stageCount: 1,
     maxInput: 1,
+    upgrade: "society:recycled_core",
+  },
+  {
+    id: "society:oil_maker",
+    recipes: global.oilMakerRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+  {
+    id: "society:mushroom_log",
+    recipes: global.mushroomLogRecipes,
+    stageCount: 4,
+    maxInput: 1,
   },
 ];
 
 global.artisanMachineIds = global.artisanMachineDefinitions.map((x) => x.id);
+
+global.typeConversionMap = [
+  {
+    id: "society:loom",
+    output: ["society:merino_wool"],
+  },
+  {
+    id: "society:cheese_press",
+    output: ["society:aged_warped_cheese_block"],
+  },
+  {
+    id: "society:aging_cask",
+    output: ["society:aged_star_coquito"],
+  },
+  {
+    id: "society:ancient_cask",
+    output: ["society:double_aged_star_coquito"],
+  },
+  {
+    id: "society:deluxe_worm_farm",
+    output: ["4x crabbersdelight:deluxe_crab_trap_bait"],
+  },
+  {
+    id: "society:fish_smoker",
+    output: ["society:smoked_spindlefish"],
+  },
+  {
+    id: "society:dehydrator",
+    output: ["society:dried_starfruit"],
+  },
+  {
+    id: "society:mayonnaise_machine",
+    output: ["society:supreme_mayonnaise"],
+  },
+  {
+    id: "society:preserves_jar",
+    output: ["society:starfruit_preserves"],
+  },
+  {
+    id: "society:charging_rod",
+    output: ["society:battery"],
+  },
+  {
+    id: "society:tapper",
+    output: ["society:pine_tar"],
+  },
+  {
+    id: "society:espresso_machine",
+    output: ["society:espresso"],
+  },
+  {
+    id: "society:recycling_machine",
+    output: ["4x society:sparkstone"],
+  },
+];

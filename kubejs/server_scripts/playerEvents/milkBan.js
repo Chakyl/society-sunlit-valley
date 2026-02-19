@@ -10,7 +10,7 @@ let bannedItems = [
 
 PlayerEvents.inventoryChanged((e) => {
   if (!bannedItems.includes(e.item.id)) return;
-  e.player.tell(Text.gray("You need a Milk Pail to milk this animal..."));
+  e.player.tell(Text.translatable("society.husbandry.action.need_milk_pail").gray());
   e.player.inventory.items.forEach((item) => {
     if (item.id === e.item.id) {
       item.count = 0;

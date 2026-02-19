@@ -1,0 +1,385 @@
+{
+  "shop_id": "trader",
+  "name": "shop.society_trading.trader",
+  "texture": "minecraft:textures/block/fletching_table_side",
+  "stage_required": "entered_skull_cavern",
+  "jei_catalyst": { "item": "society:ancient_cog" },
+  "villager_profession": "fletcher",
+  "trades": [
+    {
+      "offer": {
+        "item": "society:furniture_box",
+        "count": 1
+      },
+      "request": {
+        "item": "vintagedelight:gearo_berry_mason_jar",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_furniture_box_for_gearo_berry_mason_jar"
+    },
+    {
+      "offer": {
+        "item": "create:blaze_cake",
+        "count": 1
+      },
+      "request": {
+        "item": "bakery:sweetberry_cake",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_blaze_cake_for_sweetberry_cake"
+    },
+    {
+      "offer": {
+        "item": "pamhc2trees:cinnamon_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "snowyspirit:ginger_crate",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_cinnamon_sapling_for_ginger_crate"
+    },
+    {
+      "offer": {
+        "item": "society:earth_crystal",
+        "count": 1
+      },
+      "request": {
+        "item": "farmersdelight:rice_bag",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_earth_crystal_for_rice_bag"
+    },
+    {
+      "offer": {
+        "item": "society:fire_quartz",
+        "count": 1
+      },
+      "request": {
+        "item": "crabbersdelight:pearl_block",
+        "count": 1
+      },
+      "trade_id": "minecraft:trader_fire_quartz_for_pearl_block"
+    },
+    {
+      "offer": {
+        "item": "society:battery",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_warped_cheese_block",
+        "count": 1
+      },
+      "trade_id": "minecraft:trader_battery_for_aged_warped_cheese_block"
+    },
+    {
+      "offer": {
+        "item": "minecraft:budding_amethyst",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_amethyst_cheese_block",
+        "count": 1
+      },
+      "trade_id": "minecraft:trader_budding_amethyst_for_aged_amethyst_cheese_block"
+    },
+    {
+      "offer": {
+        "item": "society:magic_rope",
+        "count": 1
+      },
+      "request": {
+        "item": "society:basalt_shard",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_magic_rope_for_basalt_shard"
+    },
+    {
+      "offer": {
+        "item": "society:jade",
+        "count": 1
+      },
+      "request": {
+        "item": "vinery:aegis_wine",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_jade_for_aegis_wine"
+    },
+    {
+      "offer": {
+        "item": "minecraft:netherite_scrap",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_dark_brew",
+        "count": 2
+      },
+      "trade_id": "minecraft:trader_netherite_scrap_for_aged_dark_brew"
+    },
+    {
+      "offer": {
+        "item": "gag:mining_dynamite",
+        "count": 1
+      },
+      "request": {
+        "item": "create:raw_zinc_block",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_mining_dynamite_for_raw_zinc_block"
+    },
+    {
+      "offer": {
+        "item": "minecraft:wither_skeleton_skull",
+        "count": 1
+      },
+      "request": {
+        "item": "society:jade",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_wither_skeleton_skull_for_jade"
+    },
+    {
+      "offer": {
+        "item": "vintagedelight:pad_thai",
+        "count": 2
+      },
+      "request": {
+        "item": "society:ruby",
+        "count": 1
+      },
+      "trade_id": "minecraft:trader_pad_thai_for_spinel"
+    },
+    {
+      "offer": {
+        "item": "society:prize_ticket",
+        "count": 1
+      },
+      "request": {
+        "item": "society:omni_geode",
+        "count": 10
+      },
+      "trade_id": "minecraft:trader_prize_ticket_for_omni_geode"
+    },
+    {
+      "offer": {
+        "item": "supplementaries:cartographers_quill",
+        "count": 1,
+        "nbt": "{decoration:\"minecraft:red_x\",display:{Name:'{\"translate\":\"filled_map.trial_chamber\"}'},maxSearchRadius:50000,skinKnown:0b,targetStructure:\"trials:trials_chambers\",zoomLevel:1}"
+      },
+      "request": {
+        "item": "society:geode",
+        "count": 32
+      },
+      "second_request": {
+        "item": "society:magma_geode",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_cartographers_quill_for_geodes"
+    },
+    {
+      "offer": {
+        "item": "society:relic_trove",
+        "count": 1
+      },
+      "request": {
+        "item": "trials:trial_key_ominous",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_relic_trove_for_trial_key_ominous"
+    },
+    {
+      "offer": {
+        "item": "society:artifact_trove",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_starcardi",
+        "count": 8
+      },
+      "trade_id": "minecraft:trader_artifact_trove_for_aged_starcardi"
+    },
+    {
+      "offer": {
+        "item": "society:ancient_cog",
+        "count": 1
+      },
+      "request": {
+        "item": "pamhc2trees:plumitem",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_ancient_cog_for_plumitem"
+    },
+    {
+      "offer": {
+        "item": "society:stone_hand",
+        "count": 1
+      },
+      "request": {
+        "item": "society:mango_preserves",
+        "count": 8
+      },
+      "trade_id": "minecraft:trader_stone_hand_for_mango_preserves"
+    },
+    {
+      "offer": {
+        "item": "society:enkephalin",
+        "count": 1
+      },
+      "request": {
+        "item": "society:nether_jelly",
+        "count": 8
+      },
+      "trade_id": "minecraft:trader_enkephalin_for_nether_jelly"
+    },
+    {
+      "offer": {
+        "item": "society:cordycep",
+        "count": 1
+      },
+      "request": {
+        "item": "society:truffle_tea",
+        "count": 8
+      },
+      "trade_id": "minecraft:cordycep_for_truffle_tea"
+    },
+    {
+      "offer": {
+        "item": "society:tiny_gnome",
+        "count": 1
+      },
+      "request": {
+        "item": "society:beer_london",
+        "count": 8
+      },
+      "trade_id": "minecraft:trader_tiny_gnome_for_beer_london"
+    },
+    {
+      "offer": {
+        "item": "society:black_opal",
+        "count": 1
+      },
+      "request": {
+        "item": "netherdepthsupgrade:baked_obsidianfish_stew",
+        "count": 32
+      },
+      "trade_id": "minecraft:trader_black_opal_for_baked_obsidianfish_stew"
+    },
+    {
+      "offer": {
+        "item": "society:frosted_tip",
+        "count": 1
+      },
+      "request": {
+        "item": "society:frozen_tear",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_frosted_tip_for_frozen_tear"
+    },
+    {
+      "offer": {
+        "item": "society:infinity_worm",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aquamagical_dust",
+        "count": 4
+      },
+      "trade_id": "minecraft:trader_infinity_worm_for_aquamagical_dust"
+    },
+    {
+      "offer": {
+        "item": "society:pink_matter",
+        "count": 1
+      },
+      "request": {
+        "item": "quark:dragon_scale",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_pink_matter_for_dragon_scale"
+    },
+    {
+      "offer": {
+        "item": "society:ancient_roe",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_minnow_roe",
+        "count": 32
+      },
+      "trade_id": "minecraft:trader_ancient_roe_for_aged_minnow_roe"
+    },
+    {
+      "offer": {
+        "item": "society:gray_anatomy",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_whiskey_highland_hearth",
+        "count": 8
+      },
+      "trade_id": "minecraft:trader_gray_anatomy_for_aged_whiskey_highland_hearth"
+    },
+    {
+      "offer": {
+        "item": "society:sea_biscut",
+        "count": 1
+      },
+      "request": {
+        "item": "society:smoked_shrimp",
+        "count": 64
+      },
+      "second_request": {
+        "item": "society:sunlit_pearl",
+        "count": 1
+      },
+      "trade_id": "minecraft:trader_sea_biscut_for_smoked_shrimp"
+    },
+    {
+      "offer": {
+        "item": "society:broken_clock",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_netherite_nectar",
+        "count": 2
+      },
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "trade_id": "minecraft:trader_broken_clock_for_aged_netherite_nectar_and_prismatic_shard"
+    },
+    {
+      "offer": {
+        "item": "society:inserter",
+        "count": 1
+      },
+      "request": {
+        "item": "society:truffle_oil",
+        "count": 16
+      },
+      "second_request": {
+        "item": "society:double_aged_ancient_cider",
+        "count": 1
+      },
+      "trade_id": "minecraft:inserter_for_truffle_oil_and_prismatic_shard"
+    },
+    {
+      "offer": {
+        "item": "society:recycled_core",
+        "count": 1
+      },
+      "request": {
+        "item": "society:spinel",
+        "count": 8
+      },
+      "second_request": {
+        "item": "society:prismatic_shard",
+        "count": 1
+      },
+      "stage_required": "mining_mastery",
+      "unlock_description": "jei.society_trading.mining_mastery_unlocked",
+      "trade_id": "minecraft:trader_recycled_core_for_ruby_and_prismatic_shard"
+    }
+  ]
+}

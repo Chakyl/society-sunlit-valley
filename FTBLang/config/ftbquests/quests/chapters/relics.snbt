@@ -592,40 +592,6 @@
 			y: 0.0d
 		}
 		{
-			id: "77CD933D6316E6AA"
-			tasks: [{
-				id: "3CA9C2E774CDE459"
-				item: {
-					Count: 1
-					id: "relics:midnight_robe"
-					tag: {
-						abilities: {
-							backstab: {
-								points: 0
-								stats: {
-									damage: 1.4106d
-									distance: 15.56351d
-								}
-							}
-							vanish: {
-								points: 0
-								stats: {
-									light: 1.08378d
-									speed: 0.29434d
-								}
-								temp: {
-									ticking: 1b
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
 			id: "3A243F8D8DA80F76"
 			tasks: [{
 				id: "6CC9192B537E198F"
@@ -647,48 +613,6 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 0.0d
-		}
-		{
-			id: "1E444BE7C291B777"
-			tasks: [{
-				id: "5588C906B6645C0E"
-				item: {
-					Count: 1
-					id: "relics:holy_locket"
-					tag: {
-						abilities: {
-							belief: {
-								points: 0
-								stats: {
-									amount: 0.12199d
-									capacity: 10.53543d
-									count: 1.85878d
-									radius: 3.55636d
-								}
-							}
-							blessing: {
-								points: 0
-								stats: {
-									consumption: 6.69482d
-								}
-								temp: {
-									ticking: 1b
-								}
-							}
-							repentance: {
-								points: 0
-								stats: {
-									damage: 0.1729d
-									radius: 4.09646d
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -733,37 +657,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			id: "724A8A39244F4BE7"
-			tasks: [{
-				id: "60E2E3299DA947BA"
-				item: {
-					Count: 1
-					id: "relics:infinity_ham"
-					tag: {
-						abilities: {
-							autophagy: {
-								points: 0
-								stats: {
-									feed: 1.26202d
-								}
-							}
-							infusion: {
-								points: 0
-								stats: {
-									duration: 1.0383d
-								}
-							}
-						}
-						pieces: 10
-					}
-				}
-				type: "item"
-			}]
-			x: 3.5d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -788,8 +682,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			id: "112CDD1578C3E293"
@@ -812,12 +706,12 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			id: "19B466150B9315AE"
-			subtitle: "{ftbquests.chapter.relics.quest27.subtitle}"
+			subtitle: "{ftbquests.chapter.relics.quest19B466150B9315AE.subtitle}"
 			tasks: [{
 				id: "7322736239F1AAB7"
 				item: {
@@ -837,7 +731,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: 1.5d
 		}
 		{
@@ -862,16 +756,14 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 1.5d
 		}
 		{
 			dependencies: [
 				"280921A71837871A"
-				"1E444BE7C291B777"
 				"5071B813994955AD"
 				"0EFE2499355F7A3F"
-				"77CD933D6316E6AA"
 				"02D8FB295EFF06C3"
 				"54CB08353EFCB5CD"
 				"3DA56D0FAFDAF2FF"
@@ -879,7 +771,6 @@
 				"74DAEBEF604D17EA"
 				"0C3DE2F95AD3DA0D"
 				"0BA55825757FB024"
-				"724A8A39244F4BE7"
 				"601AF949E5E96321"
 				"363C3FA4BEC4D2C0"
 				"19B466150B9315AE"
@@ -963,11 +854,11 @@
 				}
 				id: "4A70A735A003E168"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.relics.quest29.task_5363971004957974888.title}"
+				title: "{ftbquests.chapter.relics.quest1B4C5FEECCEE1392.task.5363971004957974888.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.relics.quest29.title}"
+			title: "{ftbquests.chapter.relics.quest1B4C5FEECCEE1392.title}"
 			x: -0.25d
 			y: 4.0d
 		}

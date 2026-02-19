@@ -1,0 +1,16 @@
+
+[calendar]
+	#Font used for the day-change toast.
+	#VANILLA uses Minecraft's default font.
+	#GOTHIC12 and GOTHIC24 use RPG Calendar's Gothic fonts.
+	#Allowed Values: VANILLA, GOTHIC12, GOTHIC24
+	dayToastFont = "VANILLA"
+	#Horizontal offset in pixels for the day-change toast.
+	#Positive moves right, negative moves left.
+	#Range: -4096 ~ 4096
+	dayToastOffsetX = 0
+	#Vertical offset in pixels for the day-change toast.
+	#Positive moves down, negative moves up.
+	#Range: -4096 ~ 4096
+	dayToastOffsetY = 16
+

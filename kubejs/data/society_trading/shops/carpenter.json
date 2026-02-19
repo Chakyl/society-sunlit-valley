@@ -1,8 +1,11 @@
 {
   "shop_id": "carpenter",
   "name": "shop.society_trading.carpenter",
-  "texture": "supplementaries:textures/block/cabin_siding_side",
-  "jei_catalyst": { "item": "meadow:woodcutter" },
+  "texture": "dialog:textures/portraits/carpenter",
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:carpenter\"}}"
+  },
   "selector_weight": -96,
   "trades": [
     {
@@ -245,6 +248,8 @@
         "item": "numismatics:spur",
         "count": 7
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 7,
       "trade_id": "carpenter_lunalite"
     },
@@ -282,6 +287,8 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "trade_id": "carpenter_polished_basalt"
     },
     {
@@ -291,6 +298,8 @@
         "count": 4
       },
       "numismatics_cost": 256,
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "trade_id": "carpenter_blackstone"
     },
     {
@@ -299,6 +308,8 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "numismatics_cost": 128,
       "trade_id": "carpenter_scorchia"
     },
@@ -308,6 +319,8 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "numismatics_cost": 128,
       "trade_id": "carpenter_bloodstone"
     },
@@ -317,6 +330,8 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
       "numismatics_cost": 128,
       "trade_id": "carpenter_scoria"
     },
@@ -335,6 +350,8 @@
         "item": "numismatics:crown",
         "count": 2
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 1024,
       "trade_id": "carpenter_end_stone"
     },
@@ -344,8 +361,10 @@
         "item": "numismatics:crown",
         "count": 2
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 1024,
-      "trade_id": "carpenterdusky_myalite_"
+      "trade_id": "carpenter_dusky_myalite"
     },
     {
       "offer": { "item": "quark:myalite_crystal", "count": 8 },
@@ -353,6 +372,8 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
       "numismatics_cost": 2048,
       "trade_id": "carpenter_myalite_crystal"
     },
@@ -472,7 +493,7 @@
         "count": 1
       },
       "numismatics_cost": 16,
-      "trade_id": "market_pine_sapling"
+      "trade_id": "market_alpine_sapling"
     },
     {
       "offer": { "item": "quark:orange_blossom_sapling", "count": 1 },
@@ -482,15 +503,6 @@
       },
       "numismatics_cost": 64,
       "trade_id": "market_orange_blossom_sapling"
-    },
-    {
-      "offer": { "item": "society:universal_methods_of_farming", "count": 1 },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 20
-      },
-      "numismatics_cost": 81920,
-      "trade_id": "market_universal_methods_of_farming"
     }
   ],
   "random_sets": [

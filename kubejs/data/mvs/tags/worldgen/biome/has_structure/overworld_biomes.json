@@ -1,0 +1,78 @@
+{
+  "replace": false,
+
+  "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+  "values": [
+    "#minecraft:is_jungle",
+    "#minecraft:is_taiga",
+    "autumnity:maple_forest",
+    "windswept:chestnut_forest",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_forest",
+    "minecraft:windswept_savanna",
+    "windswept:flowering_savanna",
+    "windswept:lavender_fields",
+    "windswept:lavender_hills",
+    "windswept:snowy_chestnut_forest",
+    "windswept:tundra",
+    "windswept:snowy_pine_barrens",
+    "atmospheric:laurel_forest",
+    "minecraft:plains",
+    "minecraft:savanna",
+    "minecraft:forest",
+    "minecraft:birch_forest",
+    "minecraft:flower_forest",
+    {
+      "id": "byg:firecracker_shrubland",
+      "required": false
+    },
+    {
+      "id": "byg:autumnal_valley",
+      "required": false
+    },
+    {
+      "id": "byg:rose_fields",
+      "required": false
+    },
+    {
+      "id": "#biomesoplenty:is_savanna",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:lavender_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_woods",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:seasonal_forest",
+      "required": false
+    },    
+	  {
+      "id": "biomesoplenty:orchard",
+      "required": false
+    },
+	  {
+      "id": "biomesoplenty:seasonal_pumpkin_patch",
+      "required": false
+    },
+	  {
+      "id": "biomesoplenty:dead_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_clearing",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:cherry_blossom_grove",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:field",
+      "required": false
+    }
+  ]
+}

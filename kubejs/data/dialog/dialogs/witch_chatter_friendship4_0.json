@@ -1,0 +1,30 @@
+{
+	"id": "witch_chatter_friendship4_0",
+	"title": "[0] witch chatter at friendship level: friendship4",
+	"description": "dialog.npc.witch.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.chatter_friendship4.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p witch"
+			]
+		}
+	]
+}

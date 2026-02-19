@@ -5,7 +5,9 @@ StartupEvents.registry("block", (e) => {
     .box(1, 0, 1, 15, 18, 15, true)
     .displayName("Statue of Endless Fortune")
     .animatableBlockEntity((info) => {
-      info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("rotating")));
+      info.addAnimation((state) =>
+        state.setAndContinue(RawAnimation.begin().thenLoop("rotating"))
+      );
       info.serverTick(artMachineTickRate, 0, (entity) => {
         const { level, block } = entity;
         const { x, y, z } = block;
@@ -42,6 +44,7 @@ StartupEvents.registry("block", (e) => {
       const mature = String(block.properties.get("mature")) === "true";
       const facing = block.properties.get("facing");
 
+      if (click.player.isFake()) return;
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
         if (mature) {
@@ -68,37 +71,34 @@ StartupEvents.registry("block", (e) => {
 
   e.create("whimsy_deco:sunlit_singing_frog", "animatable")
     .animatableBlockEntity((info) => {
-      info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("sing")));
+      info.addAnimation((state) =>
+        state.setAndContinue(RawAnimation.begin().thenLoop("sing"))
+      );
     })
     .box(1, 0, 1, 15, 18, 15, true)
     .defaultGeoModel()
     .property(BlockProperties.HORIZONTAL_FACING)
     .property(integerProperty.create("type", 0, global.plushieTraits.length))
-    .property(integerProperty.create("quest_id", 0, 3))
-    .property(integerProperty.create("quality", 0, 4))
-    .property(integerProperty.create("affection", 0, 4))
     .placementState((state) => {
       state
         .set(
           BlockProperties.HORIZONTAL_FACING,
           String(state.getHorizontalDirection().getOpposite())
         )
-        .set(integerProperty.create("type", 0, global.plushieTraits.length), 0)
-        .set(integerProperty.create("quest_id", 0, 3), 0)
-        .set(integerProperty.create("quality", 0, 4), 0)
-        .set(integerProperty.create("affection", 0, 4), 0);
+        .set(integerProperty.create("type", 0, global.plushieTraits.length), 0);
     })
     .defaultState((state) => {
-      state
-        .set(integerProperty.create("type", 0, global.plushieTraits.length), 0)
-        .set(integerProperty.create("quest_id", 0, 3), 0)
-        .set(integerProperty.create("quality", 0, 4), 0)
-        .set(integerProperty.create("affection", 0, 4), 0);
+      state.set(
+        integerProperty.create("type", 0, global.plushieTraits.length),
+        0
+      );
     })
     .rightClick((click) => {
       const { block, server } = click;
       const { x, y, z } = block;
+      let nbt = block.getEntityData();
       block.set("whimsy_deco:adv_singing_frog_plushie", block.properties);
+      block.setEntityData(nbt);
       server.runCommandSilent(
         `execute positioned ${x} ${y} ${z} run stopsound @e[type=player,distance=..4] block`
       );

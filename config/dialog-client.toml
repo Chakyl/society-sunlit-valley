@@ -1,0 +1,38 @@
+
+#==== [ Sunlit Dialog Config ] ====
+[dialog_client]
+
+	#Dialog Box UI Configuration
+	[dialog_client.ui]
+		#Dialog box width
+		dialogBoxWidth = 240
+		#Dialog box height
+		dialogBoxHeight = 72
+		#Dialog box Padding
+		dialogBoxPadding = 10
+		#Dialog box text color (ARGB format)
+		dialogTextColor = -1
+		#Default background color of the dialog box (RGB format)
+		dialogBackgroundColor = 0
+		#Dialog box background opacity (0-255)
+		dialogBackgroundOpacity = 200
+		#Dialog box x-offset
+		dialogBoxXOffset = 30
+
+	#Character illustration settings
+	[dialog_client.portrait]
+		#Enable character portrait animations.
+		enablePortraitAnimations = true
+
+	#Dialogue system configuration
+	[dialog_client.system]
+		#Pause the game during dialogue (single-player mode only)
+		isPauseScreen = false
+		#Automatic dialogue progression delay time (milliseconds)
+		autoAdvanceDelay = 700
+		#Should the speaker's name be displayed?
+		showSpeakerName = true
+		#The speed at which text is displayed character by character (characters per second; setting it to 0 will display all text instantly).
+		#Range: 0 ~ 1000
+		textAnimationSpeed = 20
+

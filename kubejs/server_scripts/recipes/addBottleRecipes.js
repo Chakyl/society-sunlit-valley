@@ -58,6 +58,18 @@ ServerEvents.recipes((e) => {
       container: "vinery:wine_bottle",
     },
     {
+      item: "society:mana_fruit_juice",
+      fluid: "society:mana_fruit_juice",
+      amount: 250,
+      container: "vinery:wine_bottle",
+    },
+    {
+      item: "society:sparkpod_juice",
+      fluid: "society:sparkpod_juice",
+      amount: 250,
+      container: "vinery:wine_bottle",
+    },
+    {
       item: "relics:relic_experience_bottle",
       fluid: "relics:relic_experience",
       amount: 50,
@@ -76,8 +88,20 @@ ServerEvents.recipes((e) => {
       container: "minecraft:glass_bottle",
     },
     {
+      item: "society:mystic_syrup",
+      fluid: "society:mystic_syrup",
+      amount: 250,
+      container: "minecraft:glass_bottle",
+    },
+    {
       item: "society:maple_syrup",
       fluid: "society:maple_syrup",
+      amount: 250,
+      container: "minecraft:glass_bottle",
+    },
+    {
+      item: "society:aloe_preserves",
+      fluid: "create_central_kitchen:aloe_gel",
       amount: 250,
       container: "minecraft:glass_bottle",
     },
@@ -105,7 +129,7 @@ ServerEvents.recipes((e) => {
       },
       {
         amount: 50,
-        fluid: "society:oak_resin"
+        fluid: "society:oak_resin",
       },
     ],
     results: [

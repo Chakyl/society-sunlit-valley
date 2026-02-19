@@ -36,16 +36,16 @@ BlockEvents.rightClicked(
       biomeTags.toString().includes("sereneseasons:tropical_biomes") &&
       !player.getHeldItem("main_hand").hasTag("sereneseasons:summer_crops")
     ) {
-      errorText = "This Biome is always treated as Summer for planted crops.";
+      errorText = Text.translatable("society.planting_crop.eternal_summer").toJson();
     }
     if (
       Number(level.getBiome(block.pos).get().getTemperature(block.pos)) < 0.15 &&
       !player.getHeldItem("main_hand").hasTag("sereneseasons:winter_crops")
     ) {
-      errorText = "This Biome is always treated as Winter for planted crops.";
+      errorText = Text.translatable("society.planting_crop.eternal_winter").toJson();
     }
     if (biomeTags.toString().includes("sereneseasons:infertile_biomes")) {
-      errorText = "This Biome cannot grow crops...";
+      errorText = Text.translatable("society.planting_crop.infertile_biome").toJson();
     }
     if (!seedMessageThrottle(player, 1200, "seed_message_throttle") && errorText) {
       global.renderUiText(
@@ -56,7 +56,7 @@ BlockEvents.rightClicked(
             type: "text",
             x: 0,
             y: -90,
-            text: errorText,
+            text: `${errorText}`,
             color: "#FF5555",
             alignX: "center",
             alignY: "bottom",
@@ -66,7 +66,7 @@ BlockEvents.rightClicked(
             x: 1,
             z: -1,
             y: -89,
-            text: errorText,
+            text: `${errorText}`,
             color: "#000000",
             alignX: "center",
             alignY: "bottom",

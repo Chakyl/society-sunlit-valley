@@ -8,17 +8,18 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Cultivates worms without any inputs every 60 seconds"));
-      item.tooltip(Text.green("Automatable using hoppers"));
+      item.tooltip(Text.translatable("block.society.auto_worm_farm.description").gray());
+      item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
       item.modelJson({
-        parent: "society:block/auto_worm_farm",
+        parent: "society:block/kubejs/auto_worm_farm",
       });
     })
-    .model("society:block/auto_worm_farm")
+    .model("society:block/kubejs/auto_worm_farm")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(1200, 0, (entity) => {
         const { x, y, z } = entity.block;
+        if (entity.tick < 20) return;
         entity.inventory.insertItem("aquaculture:worm", false);
         entity.level.server.runCommandSilent(
           `playsound minecraft:block.composter.fill block @a ${x} ${y} ${z}`

@@ -7,31 +7,41 @@ BlockEvents.placed("society:prize_machine", (e) => {
   if (item.id !== "society:prize_machine") return;
   prizeNbt = item.getNbt();
   if (!prizeNbt.isEmpty()) {
-    e.block.set(e.block.id, {
-      facing: e.block.properties.get("facing"),
-      prize: prizeNbt.get("prize"),
+    let nbt = e.block.getEntityData();
+    nbt.merge({
+      data: {
+        prize: Number(prizeNbt.get("prize")),
+      },
     });
+    e.block.setEntityData(nbt);
   }
 });
 
 BlockEvents.placed("society:fish_pond", (e) => {
-  let item = e.player.getHeldItem("main_hand");
+  const { block, player } = e;
+  let item = player.getHeldItem("main_hand");
   let pondNbt;
-  if (item.id !== "society:fish_pond") item = e.player.getHeldItem("off_hand");
+  if (item.id !== "society:fish_pond") item = player.getHeldItem("off_hand");
   if (item.id !== "society:fish_pond") return;
   pondNbt = item.getNbt();
   if (pondNbt && !pondNbt.isEmpty()) {
-    e.block.set(e.block.id, {
-      facing: e.block.getProperties().get("facing"),
+    block.set(block.id, {
+      facing: block.getProperties().get("facing"),
       valid: true,
       mature: false,
       upgraded: false,
-      quest: pondNbt.get("quest").toString() == "1",
-      quest_id: pondNbt.get("quest_id").toString(),
-      population: pondNbt.get("population").toString(),
-      max_population: pondNbt.get("max_population").toString(),
-      type: pondNbt.get("type").toString(),
+      quest: Boolean(pondNbt.get("quest")),
     });
+    let nbt = block.getEntityData();
+    nbt.merge({
+      data: {
+        type: pondNbt.get("type"),
+        quest_id: Number(pondNbt.get("quest_id")),
+        population: Number(pondNbt.get("population")),
+        max_population: Number(pondNbt.get("max_population")),
+      },
+    });
+    block.setEntityData(nbt);
   }
 });
 

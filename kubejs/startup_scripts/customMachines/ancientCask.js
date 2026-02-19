@@ -1,7 +1,7 @@
 //priority: 100
 console.info("[SOCIETY] ancientCask.js loaded");
 
-global.ancientCaskRecipes = [];
+global.ancientCaskRecipes = new Map([]);
 [
   { item: "vinery:cristel_wine", name: "Cristel Wine", time: 20 },
   {
@@ -129,10 +129,13 @@ global.ancientCaskRecipes = [];
     name: "Tri-Bull Cheese Wheel",
     time: 13,
   },
+  { item: "society:violet_moon", name: "Violet Moon", time: 10 },
+  { item: "society:laputa_franc", name: "Laputa Franc", time: 20 },
+  { item: "society:sparkling_le_roy", name: "Sparkling Le Roy", time: 10 },
+  { item: "society:mana_king", name: "Mana King", time: 20 },
 ].forEach((product) => {
   const splitProduct = product.item.split(":");
-  global.ancientCaskRecipes.push({
-    input: `society:aged_${splitProduct[1]}`,
+  global.ancientCaskRecipes.set(`society:aged_${splitProduct[1]}`, {
     output: [`1x society:double_aged_${splitProduct[1]}`],
     time: product.time,
   });
@@ -144,17 +147,15 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 20))
-    .property(integerProperty.create("type", 0, global.ancientCaskRecipes.length))
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Ages already aged goods at an extremely slow rate"));
-      item.tooltip(Text.red("Only usable if Ancient Aging skill unlocked"));
+      item.tooltip(Text.translatable("block.society.ancient_cask.description").gray());
+      item.tooltip(Text.translatable("block.society.ancient_cask.description.warn").red());
       item.modelJson({
-        parent: "society:block/ancient_cask/ancient_cask",
+        parent: "society:block/kubejs/ancient_cask/ancient_cask",
       });
     })
 
@@ -162,17 +163,13 @@ StartupEvents.registry("block", (event) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 20), 0)
-        .set(integerProperty.create("type", 0, global.ancientCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 20), 0)
-        .set(integerProperty.create("type", 0, global.ancientCaskRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -203,14 +200,12 @@ StartupEvents.registry("block", (event) => {
             );
             block.set(block.id, {
               facing: facing,
-              type: block.properties.get("type"),
               working: block.properties.get("working"),
               mature: block.properties.get("mature"),
               upgraded: true,
-              stage: block.properties.get("stage"),
             });
           } else if (!upgraded && item == "society:inserter") {
-            player.tell(Text.red(`This can only be upgraded when not in use`));
+            player.tell(Text.translatable("society.working_block_entity.cannot_upgrade").red());
           }
         }
 
@@ -231,10 +226,10 @@ StartupEvents.registry("block", (event) => {
             global.ancientCaskRecipes,
             20
           );
-      } else player.tell(Text.red(`You need the Farming skill "Ancient Aging" to use this...`));
+      } else player.tell(Text.translatable("block.society.ancient_cask.no_skill").red());
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.ancientCaskRecipes, 20);
       });

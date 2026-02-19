@@ -1,0 +1,26 @@
+{
+	"id": "witch_gift_disliked_0",
+	"title": "witch introduction",
+	"description": "dialog.npc.witch.gift.disliked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_disliked.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

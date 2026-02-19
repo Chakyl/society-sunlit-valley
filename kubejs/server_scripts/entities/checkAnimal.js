@@ -28,9 +28,10 @@ ItemEvents.entityInteracted((e) => {
     }
     let chance = scannedBlocks * 0.15 - nearbyLongwings.length * 0.1;
     chance = chance <= 0 ? "0%" : `${Math.min(100, Math.floor(chance * 100))}%`;
-    let chanceMessage = `${chance} Chance to produce ${target.type.toString().equals("longwings:butterfly") ? "Butterfly Amber" : "Moth Pollen"}`;
-    let longwingCountMessage = `${nearbyLongwings.length} nearby Moths & Butterflies`;
-    let flowerCountMessage = `${scannedBlocks} unique flowers nearby`;
+    let product = target.type.toString().equals("longwings:butterfly") ? Text.translatable("item.society.butterfly_amber") : Text.translatable("item.society.moth_pollen");
+    let chanceMessage = `${Text.translatable("society.longwings.produce_chance", chance, product).toJson()}`;
+    let longwingCountMessage = `${Text.translatable("society.longwings.longwing_count", `${nearbyLongwings.length}`).toJson()}`;
+    let flowerCountMessage = `${Text.translatable("society.longwings.flower_count", `${scannedBlocks}`).toJson()}`;
     global.renderUiText(
       player,
       server,

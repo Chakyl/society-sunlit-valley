@@ -37,13 +37,14 @@ ServerEvents.recipes((e) => {
       },
     });
   };
-  addKnifeRecipe("farm_and_charm:barley", "society:animal_feed", 3);
-  addKnifeRecipe("farm_and_charm:corn", "society:animal_feed", 7);
-  addKnifeRecipe("minecraft:wheat", "society:animal_feed", 12);
-  addMillRecipe("farm_and_charm:barley_ball", "society:animal_feed_sack", 3);
-  addMillRecipe("farm_and_charm:corn_bag", "society:animal_feed_sack", 7);
-  addMillRecipe("farm_and_charm:oat_ball", "society:animal_feed_sack", 10);
-  addMillRecipe("minecraft:hay_block", "society:animal_feed_sack", 12);
+  addKnifeRecipe("farm_and_charm:barley", "society:animal_feed", 2);
+  addKnifeRecipe("farm_and_charm:corn", "society:animal_feed", 4);
+  addKnifeRecipe("farm_and_charm:oat", "society:animal_feed", 6);
+  addKnifeRecipe("minecraft:wheat", "society:animal_feed", 8);
+  addMillRecipe("farm_and_charm:barley_ball", "society:animal_feed_sack", 2);
+  addMillRecipe("farm_and_charm:corn_bag", "society:animal_feed_sack", 4);
+  addMillRecipe("farm_and_charm:oat_ball", "society:animal_feed_sack", 6);
+  addMillRecipe("minecraft:hay_block", "society:animal_feed_sack", 8);
   addMillRecipe("society:animal_feed_sack", "society:animal_feed", 9);
 
   addMillRecipe('farm_and_charm:barley', 'farm_and_charm:flour', 1);

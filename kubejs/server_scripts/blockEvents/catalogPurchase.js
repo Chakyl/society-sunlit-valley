@@ -4,19 +4,19 @@ const catalogMap = {
   tanuki_catalog: {
     price: 2,
     outputItem: "society:tanuki_leaf",
-    outputDisplayName: "Tanuki Leaf",
+    outputDisplayName: Text.translatable("item.society.tanuki_leaf"),
     outputCount: 1,
   },
   modern_catalog: {
     price: 6,
     outputItem: "society:architects_digest",
-    outputDisplayName: "Architect's Digest",
+    outputDisplayName: Text.translatable("item.society.architects_digest"),
     outputCount: 1,
   },
   fantasy_catalog: {
     price: 4,
     outputItem: "society:fantasy_dust",
-    outputDisplayName: "Fantasy Dust",
+    outputDisplayName: Text.translatable("item.society.fantasy_dust"),
     outputCount: 1,
   },
 };
@@ -26,7 +26,7 @@ BlockEvents.rightClicked(
   (e) => {
     const { item, player, hand, block, server } = e;
     const { price, outputItem, outputDisplayName, outputCount } =
-      catalogMap[block.id.toString().split(":")[1]];
+      catalogMap[String(block.id).path];
 
     if (hand == "OFF_HAND") return;
     if (hand == "MAIN_HAND") {
@@ -48,9 +48,13 @@ BlockEvents.rightClicked(
         global.addItemCooldown(player, item.id, 1);
       } else {
         player.tell(
-          `§7Right click with ${price} §6Gold Coin${
-            price > 1 ? "s" : ""
-          }§7 to purchase ${outputCount} §a${outputDisplayName}`
+          Text.translatable(
+            "society.furniture_catalog.give_me_coin", 
+            `${price}`, 
+            Text.translatable("item.numismatics.crown").gold(),
+            `${outputCount}`,
+            outputDisplayName.green()
+          ).gray()
         );
       }
     }

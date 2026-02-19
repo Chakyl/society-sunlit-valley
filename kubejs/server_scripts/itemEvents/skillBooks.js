@@ -1,6 +1,7 @@
 console.info("[SOCIETY] skillBooks.js loaded");
 
 [
+  { id: "society:alias_moss", skillId: "b2zbjhxyrcwlwb9e" },
   { id: "society:animal_fancy", skillId: "dk83vl5zi9fw3ovi" },
   { id: "society:banana_karenina", skillId: "76yv8nz8x47d80oe" },
   { id: "society:brine_and_punishment", skillId: "p5dklukq9ggwgfa4" },
@@ -20,22 +21,26 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:the_spark_also_rises", skillId: "n3wgu1edjjl2t511" },
   { id: "society:universal_methods_of_farming", skillId: "dm3efjm3y57v34ir" },
   { id: "society:wuthering_logs", skillId: "y1xltbgkupmcoe0i" },
+  { id: "society:pond_house_five", skillId: "ajxn495vvckv1pow" },
+  { id: "society:the_quality_of_the_earth", skillId: "y99a5jkv7tmu7vmc" },
+  { id: "society:the_red_and_the_black", skillId: "ysthrzir822oedus" },
+  { id: "society:women_who_run_with_the_plushies", skillId: "2vo8noqvq4aj1egy" },
 ].forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;
-    const stageName = item.id.split(":")[1];
+    const stageName = String(item.id).path;
     if (!player.stages.has(stageName)) {
       server.runCommandSilent(
         `puffish_skills skills unlock ${player.username} society:books ${book.skillId}`
       );
-      player.tell(Text.green("You learned the skill!"));
+      player.tell(Text.translatable("society.skill_book.learn").green());
       server.runCommandSilent(
         `playsound minecraft:block.enchantment_table.use block @a ${player.x} ${player.y} ${player.z}`
       );
       item.count--;
       global.addItemCooldown(player, item, 20);
     } else {
-      player.tell(Text.red("You've already learned this skill!"));
+      player.tell(Text.translatable("society.skill_book.already_learn").red());
       global.addItemCooldown(player, item, 20);
     }
   });

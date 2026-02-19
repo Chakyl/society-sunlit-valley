@@ -1,0 +1,45 @@
+{
+	"id": "market_gift_loved_8",
+	"title": "market introduction",
+	"description": "dialog.npc.market.gift.loved",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_loved.8.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_loved.8.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

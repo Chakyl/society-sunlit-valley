@@ -1,0 +1,127 @@
+{
+  "farming_mastery": {
+    "title": {"translate": "society_skills.mastery.farming_mastery"},
+    "description": {"translate": "society_skills.mastery.farming_mastery.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:netherite_hoe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s farming_mastery",
+          "lock_command": "kubejs stages remove @s farming_mastery"
+        }
+      }
+    ]
+  },
+  "husbandry_mastery": {
+    "title": {"translate": "society_skills.mastery.husbandry_mastery"},
+    "description": {"translate": "society_skills.mastery.husbandry_mastery.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:milk_pail"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s husbandry_mastery",
+          "lock_command": "kubejs stages remove @s husbandry_mastery"
+        }
+      }
+    ]
+  },
+  "mining_mastery": {
+    "title": {"translate": "society_skills.mastery.mining_mastery"},
+    "description": {"translate": "society_skills.mastery.mining_mastery.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_mastery",
+          "lock_command": "kubejs stages remove @s mining_mastery"
+        }
+      }
+    ]
+  },
+  "fishing_mastery": {
+    "title": {"translate": "society_skills.mastery.fishing_mastery"},
+    "description": {"translate": "society_skills.mastery.fishing_mastery.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "fishing_rod"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_mastery",
+          "lock_command": "kubejs stages remove @s fishing_mastery"
+        }
+      }
+    ]
+  },
+  "adventuring_mastery": {
+    "title": {"translate": "society_skills.mastery.adventuring_mastery"},
+    "description": {"translate": "society_skills.mastery.adventuring_mastery.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s adventuring_mastery",
+          "lock_command": "kubejs stages remove @s adventuring_mastery"
+        }
+      }
+    ]
+  }
+}

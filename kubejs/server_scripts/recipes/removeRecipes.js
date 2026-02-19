@@ -4,6 +4,11 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "domesticationinnovation:drum",
+    "domesticationinnovation:pet_bed_white",
+    "domesticationinnovation:collar_tag",
+    "domesticationinnovation:wayward_lantern",
+    "whimsy_deco:phone",
     "dew_drop_farmland_growth:iron_sprinkler",
     "dew_drop_farmland_growth:gold_sprinkler",
     "dew_drop_farmland_growth:diamond_sprinkler",
@@ -39,10 +44,6 @@ ServerEvents.recipes((e) => {
     "wildernature:deer_trophy",
     "constructionwand:core_angel",
     "constructionwand:core_destruction",
-    "create:schematicannon",
-    "create:empty_schematic",
-    "create:schematic_and_quill",
-    "create:schematic_table",
     // Pipez
     "pipez:energy_pipe",
     "pipez:fluid_pipe",
@@ -563,14 +564,6 @@ ServerEvents.recipes((e) => {
     "rehooked:wood_hook",
     "rehooked:wood_chain",
     "rehooked:red_hook",
-    "toms_storage:ts.inventory_connector",
-    "toms_storage:ts.inventory_cable",
-    "toms_storage:ts.inventory_cable_connector",
-    "toms_storage:ts.storage_terminal",
-    "toms_storage:ts.crafting_terminal",
-    "toms_storage:ts.wireless_terminal",
-    "toms_storage:ts.adv_wireless_terminal",
-    "toms_storage:ts.paint_kit",
     "moreminecarts:chunk_loader",
     "moreminecarts:chiseled_organic_glass",
     "moreminecarts:chiseled_organic_glass",
@@ -699,6 +692,11 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    "minecraft:sugar_from_sugar_cane",
+    "minecraft:sugar_from_honey_bottle",
+    "veggiesdelight:stuffed_zucchini_boat",
+    "veggiesdelight:zucchini_quiche",
+    "jei:/sawmill/vanillabackport_pale_oak_boat_0",
     "crittersandcompanions:ender_pearl_from_pearl",
     "quark:building/crafting/furnaces/blackstone_furnace",
     "oreganized:electrum_upgrade_smithing_template",
@@ -1087,7 +1085,7 @@ ServerEvents.recipes((e) => {
   global.removedItems.forEach((item) => {
     e.remove({ output: item });
   });
-   global.lootFurniture.forEach((item) => {
+  global.lootFurniture.forEach((item) => {
     e.remove({ output: item });
   });
   removeByInput.forEach((item) => {

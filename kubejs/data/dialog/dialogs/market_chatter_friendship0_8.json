@@ -1,0 +1,30 @@
+{
+	"id": "market_chatter_friendship0_8",
+	"title": "[8] market chatter at friendship level: friendship0",
+	"description": "dialog.npc.market.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.chatter_friendship0.8.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p market"
+			]
+		}
+	]
+}

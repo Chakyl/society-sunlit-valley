@@ -1,5 +1,82 @@
 {
 	"content": {
+		"cooking_turnip_mutton_skewer": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:turnip_mutton_skewer",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 252
+		},
+		"cooking_vegetables_wrap": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:vegetables_wrap",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 819
+		},
+		"cooking_vegetarian_burger": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:vegetarian_burger",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 789
+		},
+		"cooking_zucchini_quiche": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:zucchini_quiche",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 3942
+		},
+		"cooking_stuffed_zucchini_boat": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:stuffed_zucchini_boat",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1134
+		},
+		"cooking_steak_and_broccoli": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:steak_and_broccoli",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 690
+		},
+		"cooking_honey_mason_jar": {
+			"type": "minecraft:item",
+			"content": "vintagedelight:honey_mason_jar",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 99
+		},
 		"cooking_zucchini_sandwich": {
 			"type": "minecraft:item",
 			"content": "veggiesdelight:zucchini_sandwich",
@@ -737,6 +814,17 @@
 			},
 			"unitWorth": 1335
 		},
+		"cooking_birtday_cake": {
+			"type": "minecraft:item",
+			"content": "species:birtday_cake",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 6600
+		},
 		"cooking_rabbit_stew": {
 			"type": "minecraft:item",
 			"content": "minecraft:rabbit_stew",
@@ -1375,17 +1463,6 @@
 			},
 			"unitWorth": 375
 		},
-		"cooking_cauliflower_burger": {
-			"type": "minecraft:item",
-			"content": "veggiesdelight:cauliflower_burger",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 678
-		},
 		"cooking_spicy_snow_cone": {
 			"type": "minecraft:item",
 			"content": "windswept:spicy_snow_cone",
@@ -1429,193 +1506,6 @@
 				"max": 8
 			},
 			"unitWorth": 111
-		},
-		"cooking_honey_mason_jar": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:honey_mason_jar",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 144
-		},
-		"cooking_piece_of_sheep_cheese": {
-			"type": "minecraft:item",
-			"content": "meadow:piece_of_sheep_cheese",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 72
-		},
-		"cooking_sheep_cheese_block": {
-			"type": "minecraft:item",
-			"content": "meadow:sheep_cheese_block",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 288
-		},
-		"cooking_piece_of_cheese": {
-			"type": "minecraft:item",
-			"content": "meadow:piece_of_cheese",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 144
-		},
-		"cooking_cheese_block": {
-			"type": "minecraft:item",
-			"content": "meadow:cheese_block",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 576
-		},
-		"cooking_piece_of_grain_cheese": {
-			"type": "minecraft:item",
-			"content": "meadow:piece_of_grain_cheese",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 198
-		},
-		"cooking_grain_cheese_block": {
-			"type": "minecraft:item",
-			"content": "meadow:grain_cheese_block",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 792
-		},
-		"cooking_piece_of_buffalo_cheese": {
-			"type": "minecraft:item",
-			"content": "meadow:piece_of_buffalo_cheese",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 576
-		},
-		"cooking_buffalo_cheese_block": {
-			"type": "minecraft:item",
-			"content": "meadow:buffalo_cheese_block",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 2304
-		},
-		"cooking_piece_of_goat_cheese": {
-			"type": "minecraft:item",
-			"content": "meadow:piece_of_goat_cheese",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 864
-		},
-		"cooking_goat_cheese_block": {
-			"type": "minecraft:item",
-			"content": "meadow:goat_cheese_block",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 3456
-		},
-		"cooking_piece_of_warped_cheese": {
-			"type": "minecraft:item",
-			"content": "meadow:piece_of_warped_cheese",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 864
-		},
-		"cooking_warped_cheese_block": {
-			"type": "minecraft:item",
-			"content": "meadow:warped_cheese_block",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 3456
-		},
-		"cooking_piece_of_amethyst_cheese": {
-			"type": "minecraft:item",
-			"content": "meadow:piece_of_amethyst_cheese",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1296
-		},
-		"cooking_amethyst_cheese_block": {
-			"type": "minecraft:item",
-			"content": "meadow:amethyst_cheese_block",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 5184
-		},
-		"cooking_tribull_cheese_wedge": {
-			"type": "minecraft:item",
-			"content": "farmlife:tribull_cheese_wedge",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 1728
-		},
-		"cooking_tribull_cheese_wheel": {
-			"type": "minecraft:item",
-			"content": "farmlife:tribull_cheese_wheel",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 6912
 		},
 		"cooking_pinecone_jam_bottle": {
 			"type": "minecraft:item",
@@ -1682,17 +1572,6 @@
 				"max": 8
 			},
 			"unitWorth": 342
-		},
-		"cooking_truffle_oil": {
-			"type": "minecraft:item",
-			"content": "society:truffle_oil",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 24768
 		},
 		"cooking_overnight_oats": {
 			"type": "minecraft:item",
@@ -1924,6 +1803,17 @@
 				"max": 8
 			},
 			"unitWorth": 432
+		},
+		"cooking_roasted_zucchini": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:roasted_zucchini",
+			"rarity": "COMMON",
+			"weightMult": 1,
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 324
 		},
 		"cooking_crystallized_honey_block": {
 			"type": "minecraft:item",
@@ -2618,6 +2508,39 @@
 			},
 			"unitWorth": 300
 		},
+		"cooking_rice_and_vegetables": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:rice_and_vegetables",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1326
+		},
+		"cooking_sweet_potato_pancakes": {
+			"type": "minecraft:item",
+			"content": "veggiesdelight:sweet_potato_pancakes",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 2016
+		},
+		"cooking_mossberry_stew": {
+			"type": "minecraft:item",
+			"content": "society:mossberry_stew",
+			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1728
+		},
 		"cooking_goat_stew": {
 			"type": "minecraft:item",
 			"content": "windswept:goat_stew",
@@ -2660,7 +2583,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1110
+			"unitWorth": 822
 		},
 		"cooking_chicken_tortilla_soup": {
 			"type": "minecraft:item",
@@ -3320,7 +3243,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 18864
+			"unitWorth": 2562
 		},
 		"cooking_vegetable_noodles": {
 			"type": "minecraft:item",
@@ -3501,13 +3424,13 @@
 		"cooking_cauliflower_soup": {
 			"type": "minecraft:item",
 			"content": "veggiesdelight:cauliflower_soup",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
+			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 1,
-				"max": 4
+				"min": 2,
+				"max": 8
 			},
-			"unitWorth": 792
+			"unitWorth": 504
 		},
 		"cooking_potato_noodles": {
 			"type": "minecraft:item",
@@ -3542,9 +3465,9 @@
 			},
 			"unitWorth": 1440
 		},
-		"cooking_stuffed_bellpeppers": {
+		"cooking_stuffed_bellpeppers_block": {
 			"type": "minecraft:item",
-			"content": "veggiesdelight:stuffed_bellpeppers",
+			"content": "veggiesdelight:stuffed_bellpeppers_block",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
@@ -3628,7 +3551,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1332
+			"unitWorth": 1044
 		},
 		"cooking_broccoli_soup": {
 			"type": "minecraft:item",
@@ -3639,7 +3562,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1176
+			"unitWorth": 888
 		},
 		"cooking_stuffed_zucchinis": {
 			"type": "minecraft:item",

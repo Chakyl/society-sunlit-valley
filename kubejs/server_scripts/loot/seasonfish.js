@@ -1,7 +1,8 @@
 console.info("[SOCIETY] seasonFish.js loaded");
 
 const checkSeasonNeptuna = (p, season, needsSkil) =>
-  global.getSeasonFromLevel(p.level) === season && p.stages.has("mystical_ocean") === needsSkil;
+  global.getSeasonFromLevel(p.level) === season &&
+  p.stages.has("mystical_ocean") === needsSkil;
 const convertToLootEntry = (entries, insertNeptuna) => {
   let pool = [];
   let weights = 0;
@@ -11,7 +12,9 @@ const convertToLootEntry = (entries, insertNeptuna) => {
     pool.push(LootEntry.of(fish).withWeight(weight));
   });
   if (insertNeptuna)
-    pool.push(LootEntry.of("society:neptuna").withWeight(Math.floor(weights * 0.09)));
+    pool.push(
+      LootEntry.of("society:neptuna").withWeight(Math.floor(weights * 0.09))
+    );
   return pool;
 };
 
@@ -22,9 +25,13 @@ const createPool = (entries, clear, rain, night) => {
   } else {
     timeOfDayEntries = entries.filter((fish) => fish.night === undefined);
   }
-  let newPool = timeOfDayEntries.filter((fish) => !fish.requiresRain && !fish.requiresClear);
+  let newPool = timeOfDayEntries.filter(
+    (fish) => !fish.requiresRain && !fish.requiresClear
+  );
   if (clear) {
-    return newPool.concat(timeOfDayEntries.filter((fish) => fish.requiresClear));
+    return newPool.concat(
+      timeOfDayEntries.filter((fish) => fish.requiresClear)
+    );
   }
   if (rain) {
     return newPool.concat(timeOfDayEntries.filter((fish) => fish.requiresRain));
@@ -60,7 +67,11 @@ const createWeatherLootTable = (
     e.addLootTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .not((n) => {
-        n.anyBiome("#minecraft:is_ocean", "#minecraft:is_beach", "#minecraft:is_river");
+        n.anyBiome(
+          "#minecraft:is_ocean",
+          "#minecraft:is_beach",
+          "#minecraft:is_river"
+        );
       })
       .weatherCheck(weather)
       .timeCheck(24000, 0, 12999)
@@ -83,7 +94,11 @@ const createWeatherLootTable = (
     e.addLootTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .not((n) => {
-        n.anyBiome("#minecraft:is_ocean", "#minecraft:is_beach", "#minecraft:is_river");
+        n.anyBiome(
+          "#minecraft:is_ocean",
+          "#minecraft:is_beach",
+          "#minecraft:is_river"
+        );
       })
       .weatherCheck(weather)
       .timeCheck(24000, 13000, 23999)
@@ -146,11 +161,14 @@ const createSeasonLootTable = (
 };
 
 LootJS.modifiers((e) => {
-  ["minecraft:cod", "minecraft:salmon", "minecraft:tropical_fish", "minecraft:pufferfish"].forEach(
-    (fish) => {
-      e.addLootTableModifier("minecraft:gameplay/fishing").removeLoot(fish);
-    }
-  );
+  [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish",
+  ].forEach((fish) => {
+    e.addLootTableModifier("minecraft:gameplay/fishing").removeLoot(fish);
+  });
 
   createSeasonLootTable(
     e,
@@ -162,7 +180,13 @@ LootJS.modifiers((e) => {
     false
   );
 
-  createSeasonLootTable(e, "spring", global.springOcean, global.springRiver, global.springFresh);
+  createSeasonLootTable(
+    e,
+    "spring",
+    global.springOcean,
+    global.springRiver,
+    global.springFresh
+  );
   createSeasonLootTable(
     e,
     "spring",
@@ -323,5 +347,16 @@ LootJS.modifiers((e) => {
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 3);
       return itemStack;
-    });
+    })
+
+  e.addLootTableModifier("minecraft:gameplay/fishing")
+    .playerPredicate((p) =>
+      global.hasBobber(p.getHeldItem("main_hand"), "society:needle_bobber")
+    )
+    .modifyLoot(Ingredient.all, (itemStack) => {
+      if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
+      if (itemStack.maxStackSize == 1) return itemStack;
+      itemStack.setCount(itemStack.getCount() + 5);
+      return itemStack;
+    })
 });

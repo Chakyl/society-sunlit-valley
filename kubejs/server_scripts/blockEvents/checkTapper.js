@@ -6,10 +6,14 @@ BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
   let errorText;
   const attachedBlock = global.getTapperLog(level, block);
   if (global.hasMultipleTappers(level, block)) {
-    errorText = "Too many Tappers attached to this log!";
+    errorText = Text.translatable(
+      "block.society.tapper.too_many_tapper"
+    ).toJson();
   }
   if (!attachedBlock.hasTag("society:tappable_blocks")) {
-    errorText = "This block cannot be tapped for resources!";
+    errorText = Text.translatable(
+      "block.society.tapper.invalid_block"
+    ).toJson();
   }
   if (errorText) {
     global.renderUiText(
@@ -20,7 +24,7 @@ BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
           type: "text",
           x: 0,
           y: -90,
-          text: errorText,
+          text: `${errorText}`,
           color: "#FF5555",
           alignX: "center",
           alignY: "bottom",
@@ -30,7 +34,7 @@ BlockEvents.rightClicked(["society:tapper", "society:auto_tapper"], (e) => {
           x: 1,
           z: -1,
           y: -89,
-          text: errorText,
+          text: `${errorText}`,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",

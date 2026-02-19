@@ -1,0 +1,26 @@
+{
+	"id": "blacksmith_gift_disliked_3",
+	"title": "blacksmith introduction",
+	"description": "dialog.npc.blacksmith.gift.disliked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.gift_disliked.3.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

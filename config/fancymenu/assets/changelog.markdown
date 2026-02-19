@@ -1,89 +1,173 @@
 ^^^
-## The Sun Golems
-### v3.4.3
+## The Heart of the Community
+### v4.0.0
 ^^^
 --- 
-- Added Sun Golems with a work in progress Creature chapter of the questbook
-- Added Arid, Bamboo, Bavarian, Vibrantown building sets to the Building Shop
-- Added Cluttered, with most furniture items falling under Modern set
-- Added rotating seasonal wallpapers to Carpenter. Rotates through trades every day and every sub-season
-- Added Bear Slime
-- Added Fire Log -> Charcoal Block smelting recipe
-- Added Petrified Slime -> Bucket of Slime crafting recipe
-- Added alternative Blaze Cake recipe
-- Added proper quests for Candlelight/Bakery in the Cooking Collection
-- Added Cutting Board recipes to Raw Pasta and Half Chicken 
-- Added Wandering/Ribbit traders to advanced trading screen
-- Added Amulet of Light artifact
-- Added Slime Inspector - tool for diagnosing why a Slime is unhappy
-- Added ability to hoe farmland in water
-- Add wip `zh_cn` translation (Thanks Thirace!)
-- Improved performance of gui elements with Gnetum
-- Increased weights of Blind Sailfin and Bark Angelfish
-- Increased Sniffer/Frostbiter Artifact shard drops by 2x
-- Increased Spindlefish Pond drops
-- Plorts and Slime Hearts are now Farmer products (from Adventurer)
-- Reduced cost of Preserves Jar (Iron Block -> Copper Block)
-- Reduced cost of Flint and Steel 20,480 ->12,288
-- Reduced cost of Refined Storage Controller/Grids 16,384 -> 8,192
-- Reduced Cost of Iron Hook by 1 Neptunium Coin
-- Reduced crowding check range (3 air blocks between corrals)
-- Removed Flamingos from Jungle
-- Removed Champions from Skull Cavern
-- Removed Obsidian Stems
-- Removed bonus value from Slime Hearts
-- Removed Wisps due to crashes
-- Fixed certain sherds not having values
-- Fixed Windswept Mailboxes not having simplified crafting recipes
-- Fixed Bismuth not having Crushing recipes
-- Fixed Light Blue Pinecone Shingles not being craftable
-- Fixed certain vegetables not being considered pickles
-- Fixed Mechanic Slime not having a Farmer's Almanac entry
-- Fixed some bugs relating to quality
-- Fixed various quest related issues   
-- Fixed Slime Vac picking up Slimes in item mode
-- Fixed crowding check not working correctly for pure Splendid Slimes
-- Fixed Splendid Slimes phasing through blocks when increasing in size
-- Fixed Splendid Slime disappearing bug maaaaybe?
-- Fixed Splendid Slime/Tarr hitboxes being tiny
-- Fixed hoe/hoe aoe related bugs like not being able to hoe in water (Thanks hypercross)
-- Fixed crash with Skull Cavern and aoe miners like Hammers
-- Fixed plushie related console spam
-- Fixed Cinnamon Coffee recipe
-- Fixed exploits 
-
-## 3.4.1
-- Fixed crash with building shop
-- Fixed farmhouse quest not having all the new farmhouses
-- Fixed Fermentation Barrel recipe
-
-## 3.4.2 
-- Rework skull cavern regeneration (again) to prevent crashes but also work slower
-- Fixed new crash with building shop! No more crashes on this page I promise
-- Fixed Bogged spawning above ground
-- Fixed Hay golem not constructing without shift+clicking fences
-- Fixed exploit
-
-## 3.4.3
-- Rework skull cavern regeneration (again) to prevent crashes but also work slower
-- Fixed new crash with building shop! No more crashes on this page I promise
-- Fixed Bogged spawning above ground
-- Fixed Hay golem not constructing without shift+clicking fences
-- Fixed exploit
-
-3.4.3
-- Added `ko_kr` translation (Thanks HexaKurumi!)
-- Added Bobby (configured at a lower render distance by default)
-- Increased Hay Golem activation time
-- Reduced rain particles and removed rain haze for lower end pcs
-- Marked Translocators for removal in 4.0
-- Temporarily removed Dramatic Doors Create compat due to world-bricking crash
-- Fixed Shakshouka and Pad Thai having incorrect recipes
-- Fixed bombs destroying Skull Cavern air
-- Fixed bombs destroying Skull Cavern Teleporter
-- Fix Hay Golem destroying High Quality Fertilizer
-- Fixed Enriched Bonemeal not being able to create Glowberries on vines for aesthetic purposes 
-- Fixed Obsidianfish requesting Obsidian Stems
-- Fixed a bunch of random typos
-- Fixed regeneration happening outside of the Skull Cavern
-- Fixed Gold Rushes being nuked in the Skull CAVERN
+- Added new NPC mechanics to completely replace the previous villager system
+- Added 6 handmade villagers with art by NifastGreentail and Nitbe
+- Added Invitations, sold by the Carpenter villager (craftable invitation)
+- Added Mastery, a final tier of skill once all trees are completed
+- Added Sparkpods, Mystic Willow Saplings (formerly Willow sapling) to Farming Mastery
+- Added Mystic Syrup from Mystic Willow trees 
+- Added Treasure Totem and Bubble Totem from Mystic Syrup
+- Added Recycled Core and Statue of the Moon Gnome to Mining Mastery
+- Added Sunlit Crystal and Animal Cracker to Husbandry Mastery
+- Added Roe Recycler, Needle Bobber, and Net Bobber to Fishing Mastery
+- Added Domestic Innovation and moved enchanting to Adventuring Mastery
+- Added Mastery Skill Books: The Quality of the Earth, Pond House Five, The Red and the Black, and Women Who Run With the Plushies. Moved The Spark Only Rises to Mining Mastery unlock.
+- Added new art for items Minerals, Preserves, Artifacts, and so much more by NifastGreentail
+- Added new art for Growth Obelisk, Supreme Mayo, and Prize Machine by Nitbe
+- Added new quest book art by NifastGreentail
+- Added Mood system for husbandry animals that tracks how well you are taking care of them and impacts their production
+- Added greenhouses for every building set, built largely by Kanlamari, with work by EeveeBeby, Duy Luong, and Howester84
+- Added new Tudor by Kanlamari respectively, each containing some existing pieces of the previous basic set
+- Updated Siberian and Basic sets to EeveeBeby's Revamped look
+- Updated Entrana set to Kanlamari's Revamped look
+- Added Wine Keg - Artisan Machine for making wines without the need for juice
+- Added Mushroom Log - Artisan Machine for growing mushrooms
+- Added new texture for Dragontooth Axe by Artty
+- Added Oil Maker and rebalanced Truffle Oil accordingly
+- Added Oil and Coconut Oil
+- Added Pickling Can
+- Added Mossberry & Mossberry Stew
+- Added Cranberry crop
+- Added Gray Anatomy upgrade
+- Added Spinel gem
+- Added normal Skill Book Alias Moss
+- Added artifacts Green Tea Honeycomb and Giant Bandolier belt
+- Added Ripper Tooth functionality - Threatens the fish in a Fish Pond into changing their active quest
+- Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish
+- Added Auto-Trader
+- Added Fredbear plushies by Altessa
+- Added Chimera plushie by witchd
+- Added full value calculations to items when holding shift
+- Added Mana Fruit crop and reworked parts of Botania Progression around it
+- Added Wines: Violet Moon, Sparkling Le Roy, Laputa Franc, and Mana King
+- Added society:sellable tag for easy JEI/EMI searching
+- Added tags for each of the product types for easy JEI/EMI searching
+- Added value for Honey Blob
+- Added recipe for Tree Fertilizer
+- Added Fish Pond drops to Cod and Salmon
+- Added Turtle, Bat, and Shima Enaga as husbandry animals
+- Added Schematiccannon and associated items back with exploit fixer
+- Added Credits & Wiki link to the pause screen in the place of unusable vanilla buttons
+- Added Iridium Clock
+- Added Prismatic Shard Block
+- Added back Fluid Grid
+- Added Sun Candy
+- Added Rainbow Oak
+- Added Auto-Petter
+- Added timeline
+- Added Mystic Jelly for automating Nether and Ocean Jelly
+- Added 3 worldgen structures by Patchy: Woodcutter, Blacksmith, and Horse Stables
+- Added 5 worldgen structures by witchd: Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse
+- Added more advancements
+- Added configuration for different product types to make the game harder or easier 
+- Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
+- Ancient Goddess Statue now trades ones a day
+- Farmland no longer turns into dirt when not watered at 6am
+- Changed recipe of Grapevine Stems/Lattices to use treated logs
+- Changed recipe for Auto Tapper, Brass, and Fluid Mechanisms to be more fitting/less frustrating
+- Cheese is now an Artisan Product (from Farmer Product)
+- Farm animals no longer produce twice as much at max affection
+- Minty Slimes now eat Tubabacco, Orby Slimes now eat Dehydrated Products
+- Reworked unlockable shops. Master Cultivator trades are added to Market after 1 year of playtime. Mystical Botanist (now Wizard) unlocked after visiting the Nether. Exotic Trader (now trader) unlocked after visiting the Skull Cavern
+- Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates
+- Reworked Fermentation to be Advanced Wine Keg (and increased cost)
+- Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
+- Reworked Pink Matter upgrade to use Dragon Scales and upped Plort Ripping chance
+- Bookseller now no longer sells books you've already read
+- Reworked Crafts room bundles
+- Ribbit Hut now works at 7am (from 8am)
+- Magic Shears now output quality based on affection
+- Moved Birch log tapping to Mushroom Log
+- Increased value of Botania mushrooms (12 -> 24)
+- Increased cost of Gaia ingot
+- Increased Oak Resin tapping time (3->5)
+- Increased bar size of Lava Fishing Rod by 12
+- Increased weight of Fortress Grouper (1 -> 3)
+- Increased Husbandry skill tree experience scaling
+- Increased valued of Large Eggs (16->32), Duck Eggs (32->48).
+- Increased Sniffer/Frostbiter Artifact shard drops by 1.5x
+- Increased Panda, Red Panda, Squirrel, Deer, Frog, and Cochineal Drops by 2/1/8/3/4/2&4
+- Increased longwing flower eating chance 4% -> 8%
+- Increased value of Pine Tar and Oak Resin (48->128)
+- Rebalanced Plort values
+- Rebalanced husbandry as a whole to not be insanely better than other money makers (see below)
+- Rebalanced the way sugar quality scales
+- Reduced cost of Lava Fishing Rod 98,304 ->73,728
+- Reduced cost of Seed Maker (3 gold blocks -> 1)
+- Reduced cost of Crystalarium (5 lead blocks -> 2)
+- Reduced cost of Mechanical Extruder (4 lead blocks -> 2)
+- Reduced cost of all Smithing Templates past gold by half
+- Reduced cost of Deluxe Barns (20->10 iridium coins)
+- Reduced Gem Seller and Gem Tycoon mult (1.5x -> 1.25x, 2x -> 1.5x)
+- Reduced all Pantry & Blacksmith bundles to one item per task
+- Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle 
+- Reduced cost of Vault 83,968 -> 51,200
+- Reduced cost of Dehydrator 73,728 -> 36864
+- Reduced cost of Gadget Core and hammer cores by half
+- Reduced cost of Workbench by half
+- Reduced chance of rain/thunder/snow in Autumn/winter
+- Reduced grain -> feed conversion rate
+- Reduced difficulty of Fish Tank by selecting more common fish for bundles
+- Reduced Caper Catcher (5 -> 3) and Caviar Catcher (5->2) roe amounts
+- Reduced affection increases and decreases by half (excluding candied animal feed)
+- Reduced value of Large Turkey Egg (128 -> 96), Penguin Egg (192 -> 128), and Flamingo Egg (384 -> 256) 
+- Reduced value of Amethyst Milk 144 -> 80
+- Reduced mult of Mayo and Cheese (4 -> 2)
+- Reduced Ancient Goddess Statue Sparkstone trade (16 sparkstone blocks -> 64 sparkstone)
+  Reduced milk size of lots of Veggiesdelight recipes (lg -> sm)
+- Reduced food values for certain juices
+- Reduced mult of mayonnaise machine (8x -> 4x)
+- Reduced Moth Pollen to Organic Mash recycling recipe (16 -> 4)
+- Reduced Spindlefish Sparkstone population requirement 10 -> 6
+- Reduced value of Sparkstone 64 -> 16
+- Reduced value of Sap (20 -> 4)
+- Reduced Century Egg fermentation time (6->1.5 hours)
+- Reduced fertilizer required for Iridium quality crops (Pristine -> Hyper) 
+- Removed Pickaxe cost from Pickarang
+- Removed Tom's Simple Storage
+- Removed Gold Ring
+- Removed max affection doubling forage drops
+- Removed quality preserving from Artisan Cheese Press
+- Removed Holy Locket, Midnight Robe, and Infinity Ham
+- Removed Demon Herring's Galaxy Sword quest due to unfortunate incidents
+- Renamed Vinery Lattices to Grapevine Lattice
+- Renamed Grape Bushes to wild grapes and disabled their growth
+- Fixed Minisheep not counting for Sacrificial Lamb skill
+- Fixed Phone having normal recipe
+- Fixed Bamboo Galley not being craftable
+- Fixed Garlic Clove having seasons
+- Fixed Palm Torch not dropping when broken
+- Fixed Cluttered Logs not having log tag
+- Fixed Black Packed Silt recipe being missing
+- Fixed dried tea blocks not retaining quality
+- Fixed weird quest dependencies 
+- Fixed Paradise Crop not working on certain crops
+- Fixed Copycat Stair conversion recipe
+- Fixed Artisan Hoppers not handling multiple outputs
+- Fixed fake players working on Statue of Endless Fortune
+- Fixed block placement cancels resulting in ghost items
+- Fixed Fish Ponds losing quest status when broken
+- Fixed Cluttered counter edges being uncraftable
+- Fixed Cluttered plushies not being considered plushies
+- Fixed several issues with crop quality not calculating correctly
+- Fixed ribbit artifacts not being counted as artifacts
+- Fixed Cod & Brown Shrooma having incorrect time of day in Fish Finder 
+- Fixed tomatoes only growing up 1 vine
+- Fixed Sparkstone Recycler not working on Auto-Grabber and Fish Pond Basket
+- Fixed High Quality Fertilized Farmland not working
+- Fixed Strawberry having vegetable tag
+- Fixed trade limits not working on shops meant to have them
+- Fixed Ender Slime having wrong hat
+- Fixed slimes not losing huger if their owner is in a different dimension
+- Fixed certain farm animal drops not having quality
+- Fixed Garlic Clove being plantable
+- Fixed Ancient Cask not dropping all completed products when upgraded
+- Fixed not being able to change spawner types in creative
+- Fixed Ribbit Gardeners existing
+- Fixed Greenhouse Glass Stairs getting snow'd on and removing functionality
+- Fixed Sparkstone and Neptunium Blocks not being a valid beacon block
+- Fixed Birtday Cake not having a recipe
+- Fixed exploits

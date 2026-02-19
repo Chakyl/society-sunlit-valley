@@ -1,6 +1,6 @@
 {
   "fortune+1": {
-    "title": "+I Fortune",
+    "title": {"translate": "society_skills.mining.fortune"},
     "icon": {
       "type": "item",
       "data": {
@@ -19,7 +19,7 @@
     ]
   },
   "pickaxe_efficiency+1": {
-    "title": "+I Pickaxe Efficiency",
+    "title": {"translate": "society_skills.mining.pickaxe_efficiency"},
     "icon": {
       "type": "item",
       "data": {
@@ -38,7 +38,7 @@
     ]
   },
   "melee_damage+2": {
-    "title": "+2 Melee Damage",
+    "title": {"translate": "society_skills.mining.melee_damage"},
     "icon": {
       "type": "item",
       "data": {
@@ -57,8 +57,8 @@
     ]
   },
   "gem_seller": {
-    "title": "Gem Seller",
-    "description": "🎣 Geologist products worth 50% more.",
+    "title": {"translate": "society_skills.mining.gem_seller"},
+    "description": {"translate": "society_skills.mining.gem_seller.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -75,7 +75,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1.5",
+          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1.25",
           "lock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1"
         }
       },
@@ -89,8 +89,8 @@
     ]
   },
   "furniture_archaeologist": {
-    "title": "Furniture Archaeologist",
-    "description": "Chance to find §6Furniture Boxes§7 when mining ore.",
+    "title": {"translate": "society_skills.mining.furniture_archaeologist"},
+    "description": {"translate": "society_skills.mining.furniture_archaeologist.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -108,8 +108,8 @@
     ]
   },
   "excavator": {
-    "title": "Excavator",
-    "description": "Adds additional roll for geodes when mining ore.",
+    "title": {"translate": "society_skills.mining.excavator"},
+    "description": {"translate": "society_skills.mining.excavator.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -133,8 +133,8 @@
     ]
   },
   "mineralogist": {
-    "title": "Mineralogist",
-    "description": "Chance to find crafting minerals when mining ore.",
+    "title": {"translate": "society_skills.mining.mineralogist"},
+    "description": {"translate": "society_skills.mining.mineralogist.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -158,8 +158,8 @@
     ]
   },
   "prismatic_prospector": {
-    "title": "Prismatic Prospector",
-    "description": "Chance to find §dPrismatic Shard§7 from Geode Nodes.",
+    "title": {"translate": "society_skills.mining.prismatic_prospector"},
+    "description": {"translate": "society_skills.mining.prismatic_prospector.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -183,8 +183,8 @@
     ]
   },
   "high_roller": {
-    "title": "High Roller",
-    "description": "+IV Fortune",
+    "title": {"translate": "society_skills.mining.high_roller"},
+    "description": {"translate": "society_skills.mining.high_roller.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -205,12 +205,19 @@
           "value": 4,
           "operation": "addition"
         }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s high_roller",
+          "lock_command": "kubejs stages remove @s high_roller"
+        }
       }
     ]
   },
   "blockchain": {
-    "title": "Blockchain",
-    "description": "Chance to find §6Gold Coins§7 when mining ore.",
+    "title": {"translate": "society_skills.mining.blockchain"},
+    "description": {"translate": "society_skills.mining.blockchain.description"},
     "icon": {
       "type": "item",
       "data": {
@@ -228,8 +235,8 @@
     ]
   },
   "gold_rush": {
-    "title": "Gold Rush",
-    "description": "Mining non-nether §6Gold Ore§7 drops 4 §6Blocks of Raw Gold.",
+    "title": {"translate": "society_skills.mining.gold_rush"},
+    "description": {"translate": "society_skills.mining.gold_rush.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -253,8 +260,8 @@
     ]
   },
   "filthy_excavator": {
-    "title": "Filthy Excavator",
-    "description": "Chance to find §6Geodes§7 when mining Deepslate and §6Magma Geodes§7 in Netherrack.",
+    "title": {"translate": "society_skills.mining.filthy_excavator"},
+    "description": {"translate": "society_skills.mining.filthy_excavator.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -278,8 +285,8 @@
     ]
   },
   "gem_tycoon": {
-    "title": "Gem Tycoon",
-    "description": "🎣 Geologist products worth 100% more.\n\n§cDoes not stack with previous skills.",
+    "title": {"translate": "society_skills.mining.gem_tycoon"},
+    "description": {"translate": "society_skills.mining.gem_tycoon.description"},
     "frame": {
       "type": "advancement",
       "data": {
@@ -296,7 +303,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 2",
+          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1.5",
           "lock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1"
         }
       },
@@ -310,8 +317,8 @@
     ]
   },
   "star_blessing": {
-    "title": "Star Blessing",
-    "description": "Chance to find §6Pristine Star Shards§7 when mining ore\n\n§aChance increases in the Nether and Skull Cavern.",
+    "title": {"translate": "society_skills.mining.star_blessing"},
+    "description": {"translate": "society_skills.mining.star_blessing.description"},
     "frame": {
       "type": "advancement",
       "data": {

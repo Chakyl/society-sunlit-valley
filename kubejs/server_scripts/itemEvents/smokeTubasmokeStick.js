@@ -32,7 +32,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
       `execute in ${level.dimension} run summon lightning_bolt ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 60 Smoking kills...`
+      global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 60, Text.translatable("society.endless_entrana.text.0").toJson())
     );
   }
   if (Math.random() < 0.01 && !item.nbt) {
@@ -40,13 +40,13 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
       `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 What's this...?`
+      global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.1").toJson())
     );
     server.scheduleInTicks(1, () => {
       player.give(
         Item.of(
           "society:tubasmoke_stick",
-          '{edition:1,display:{Name:\'{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFFFF","extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"® "},{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Green"}],"text":"[1] Entrana"}\'}}'
+          `{edition:1,display:{Name:'${Text.translatable("society.endless_entrana", Text.of("1").bold()).bold().italic(false).toJson()}'}}`
         )
       );
     });
@@ -55,16 +55,16 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
     let giveNew = true;
     if (item.nbt.edition === 500)
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 This is only the beginning...`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.2").toJson())
       );
     if (item.nbt.edition === 650) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 It would be dangerous to go any further...`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.3").toJson())
       );
     }
     if (item.nbt.edition === 666) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 You were warned...`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.4").toJson())
       );
       server.scheduleInTicks(100, () => {
         server.runCommandSilent(`kill ${player.username}`);
@@ -73,7 +73,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
 
     if (item.nbt.edition === 999) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 1200 On April 14th, 1912, the famous ocean liner known as the Titanic crashed into an iceberg. After remaining afloat for two hours and forty minutes, it sank beneath the waters of the North Atlantic. I will give you more time. Nine Hours. That is the time you will be given to make your escape.`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 1200, Text.translatable("society.endless_entrana.text.5").toJson())
       );
       server.scheduleInTicks(648000, () => {
         server.runCommandSilent(`kill ${player.username}`);
@@ -82,31 +82,31 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
 
     if (item.nbt.edition === 2000) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 You have a long road ahead...`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.6").toJson())
       );
     }
 
     if (item.nbt.edition === 2100) {
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 But there's a prize at the end`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.7").toJson())
       );
     }
     if (item.nbt.edition === 5000) {
       player.give("numismatics:spur");
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 There's more where that came from!`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.8").toJson())
       );
     }
     if (item.nbt.edition > 10000 && Math.random() < 0.001) {
       player.give("numismatics:bevel");
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 Unlimited money comes to those that smoke Entrana Greens...`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.9").toJson())
       );
     }
     if (item.nbt.edition > 10000 && Math.random() < 0.001) {
       player.give("numismatics:sprocket");
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 Unlimited money comes to those that smoke Entrana Greens...`
+        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.9").toJson())
       );
     }
     if (item.nbt.edition > 1000000000 && Math.random() < 0.0001) {
@@ -114,12 +114,12 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
         player.give("create:creative_blaze_cake");
         player.offHandItem.count--;
         server.runCommandSilent(
-          `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 Thank you for your patronage...`
+          global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.11").toJson())
         );
         giveNew = false;
       } else {
         server.runCommandSilent(
-          `emberstextapi sendcustom ${player.username} ${endlessEntranaTemplate} 120 Place a Prismatic Coin in your offhand as an offering while smoking... Maybe it will be recognized...`
+          global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.10").toJson())
         );
       }
     }
@@ -128,11 +128,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
         player.give(
           Item.of(
             "society:tubasmoke_stick",
-            `{edition:${String(
-              item.nbt.edition + 1
-            )},display:{Name:'{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFFFF","extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"® "},{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Green"}],"text":"[${String(
-              item.nbt.edition + 1
-            )}] Entrana"}'}}`
+            `{edition:${item.nbt.edition + 1},display:{Name:'${Text.translatable("society.endless_entrana", Text.of((item.nbt.edition + 1).toFixed()).bold()).bold().italic(false).toJson()}'}}`
           )
         );
       });
@@ -142,7 +138,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
     server.scheduleInTicks(800, () => {
       server.runCommandSilent(`effect give ${player.username} minecraft:wither 40 3`);
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 60 Smoking kills...`
+        global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 60, Text.translatable("society.endless_entrana.text.0").toJson())
       );
     });
   }

@@ -13,31 +13,32 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
     global.teleportHome(player, server, level);
   } else if (level.dimension === "minecraft:overworld") {
     if (level.dayTime() % 24000 > 18000) {
-      errorText = "It's too late at night to enter the Skull Cavern...";
+      errorText = Text.translatable("society.skull_cavern.too_late").toJson();
     } else {
       if (!player.stages.has("skull_cavern_intro")) {
         player.stages.add("skull_cavern_intro");
-        player.tell(Text.gold("A strange person hands you a note and vanishes..."));
+        player.tell(Text.translatable("society.skull_cavern.intro").gold());
         player.give(Item.of("gag:escape_rope"));
+        let noteTitle = global.translatableWithFallback("society.skull_cavern.intro.note.title", "A Warning").getString();
+        let noteAuthor = global.translatableWithFallback("society.skull_cavern.intro.note.author", "someone...").getString();
+        let noteText = Text.translatable("society.skull_cavern.intro.note").toJson();
         player.give(
-          Item.of(
-            "candlelight:note_paper_written",
-            `{author:"someone...",text:["The Skull Cavern is a dangerous pit you can descend by finding ropes under ores and boulders.  
-
-It'll drain the life out of you if you stay in it too late.
-
-Use that Escape Rope I gave you to get out before 5AM..."],title:"A Warning"}`
-          )
+          global.getNotePaperItem(noteAuthor, noteText, noteTitle)
         );
       }
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);
-      player.persistentData.skullCavernEnterDay = Number(
-        (Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed()
-      );
-      player.getLevel().getBlock(x, 511, z).set("society:skull_cavern_teleporter");
+      player.persistentData.skullCavernEnterDay = global.getDay(level);
+      let playerLevel = player.getLevel()
+      if (playerLevel.dimension === "society:skull_cavern") {
+        playerLevel.getBlock(x, 511, z).set("society:skull_cavern_teleporter");
+      } else {
+        server.scheduleInTicks(10, () => {
+          player.getLevel().getBlock(x, 511, z).set("society:skull_cavern_teleporter");
+        });
+      }
     }
   } else {
-    errorText = "This block doesn't work in this dimension";
+    errorText = Text.translatable("society.skull_cavern.invalid_dimension").toJson();
   }
   if (errorText) {
     global.renderUiText(
@@ -48,7 +49,7 @@ Use that Escape Rope I gave you to get out before 5AM..."],title:"A Warning"}`
           type: "text",
           x: 0,
           y: -90,
-          text: errorText,
+          text: `${errorText}`,
           color: "#FF5555",
           alignX: "center",
           alignY: "bottom",
@@ -58,7 +59,7 @@ Use that Escape Rope I gave you to get out before 5AM..."],title:"A Warning"}`
           x: 1,
           z: -1,
           y: -89,
-          text: errorText,
+          text: `${errorText}`,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",

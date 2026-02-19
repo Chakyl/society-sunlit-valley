@@ -1,7 +1,30 @@
 {
+  "alias_moss": {
+    "title": { "translate": "item.society.alias_moss" },
+    "description": {
+      "translate": "society_skills.books.alias_moss.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:alias_moss"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s alias_moss",
+          "lock_command": "kubejs stages remove @s alias_moss"
+        }
+      }
+    ]
+  },
   "animal_fancy": {
-    "title": "Animal Fancy",
-    "description": "Increases affection gained from petting farm animals.",
+    "title": { "translate": "item.society.animal_fancy" },
+    "description": {
+      "translate": "society_skills.books.animal_fancy.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -19,8 +42,10 @@
     ]
   },
   "banana_karenina": {
-    "title": "Banana Karenina",
-    "description": "Doubles Banana Tree output.",
+    "title": { "translate": "item.society.banana_karenina" },
+    "description": {
+      "translate": "society_skills.books.banana_karenina.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -38,8 +63,10 @@
     ]
   },
   "brine_and_punishment": {
-    "title": "Brine And Punishment",
-    "description": "Pickled items are worth 100% more.",
+    "title": { "translate": "item.society.brine_and_punishment" },
+    "description": {
+      "translate": "society_skills.books.brine_and_punishment.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -57,8 +84,10 @@
     ]
   },
   "bluegill_meridian": {
-    "title": "Bluegill Meridian",
-    "description": "Bluegill are now worth 666 §f●.",
+    "title": { "translate": "item.society.bluegill_meridian" },
+    "description": {
+      "translate": "society_skills.books.bluegill_meridian.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -76,8 +105,10 @@
     ]
   },
   "bullfish_jobs": {
-    "title": "Bullfish Jobs",
-    "description": "The quality of fish taken out of Fish Ponds scales with population.",
+    "title": { "translate": "item.society.bullfish_jobs" },
+    "description": {
+      "translate": "society_skills.books.bullfish_jobs.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -95,8 +126,10 @@
     ]
   },
   "canadian_and_famous": {
-    "title": "Canadian And Famous",
-    "description": "Tappers output double. Doesn't affect Auto-Tappers.",
+    "title": { "translate": "item.society.canadian_and_famous" },
+    "description": {
+      "translate": "society_skills.books.canadian_and_famous.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -114,8 +147,10 @@
     ]
   },
   "debt_caverns": {
-    "title": "Debt: The First 5000 Caverns",
-    "description": "Fainting in the Skull Cavern no longer costs a fee or adds to debt.",
+    "title": { "translate": "item.society.debt_caverns" },
+    "description": {
+      "translate": "society_skills.books.debt_caverns.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -133,8 +168,10 @@
     ]
   },
   "first_aid_guide": {
-    "title": "First Aid Guide",
-    "description": "Halves the maximum fee and debt from death.",
+    "title": { "translate": "item.society.first_aid_guide" },
+    "description": {
+      "translate": "society_skills.books.first_aid_guide.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -152,8 +189,10 @@
     ]
   },
   "frogs_bounty_bazaar": {
-    "title": "Frog's Bounty Bazaar",
-    "description": "Prize Tickets give double the prizes.",
+    "title": { "translate": "item.society.frogs_bounty_bazaar" },
+    "description": {
+      "translate": "society_skills.books.frogs_bounty_bazaar.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -171,8 +210,10 @@
     ]
   },
   "hitting_hard_and_soft": {
-    "title": "Hitting Hard and Soft",
-    "description": "Melee attacks do an extra 4 damage.",
+    "title": { "translate": "item.society.hitting_hard_and_soft" },
+    "description": {
+      "translate": "society_skills.books.hitting_hard_and_soft.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -198,8 +239,10 @@
     ]
   },
   "intro_to_algorithms": {
-    "title": "Introduction to Algorithms",
-    "description": "Mining Lead ore no longer causes Brain Damage clouds.",
+    "title": { "translate": "item.society.intro_to_algorithms" },
+    "description": {
+      "translate": "society_skills.books.intro_to_algorithms.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -217,8 +260,10 @@
     ]
   },
   "no_name_for_the_sheep": {
-    "title": "No Name For the Sheep",
-    "description": "Naming animals grants an additional heart of affection.",
+    "title": { "translate": "item.society.no_name_for_the_sheep" },
+    "description": {
+      "translate": "society_skills.books.no_name_for_the_sheep.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -236,8 +281,10 @@
     ]
   },
   "paradise_crop": {
-    "title": "Paradise Crop",
-    "description": "1 additional crop drop per harvest.",
+    "title": { "translate": "item.society.paradise_crop" },
+    "description": {
+      "translate": "society_skills.books.paradise_crop.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -251,20 +298,77 @@
           "unlock_command": "kubejs stages add @s paradise_crop",
           "lock_command": "kubejs stages remove @s paradise_crop"
         }
-      },
+      }
+    ]
+  },
+  "pond_house_five": {
+    "title": { "translate": "item.society.pond_house_five" },
+    "description": {
+      "translate": "society_skills.books.pond_house_five.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:pond_house_five"
+      }
+    },
+    "rewards": [
       {
-        "type": "puffish_skills:attribute",
+        "type": "puffish_skills:command",
         "data": {
-          "attribute": "additional_attributes:harvest",
-          "value": 1,
-          "operation": "addition"
+          "unlock_command": "kubejs stages add @s pond_house_five",
+          "lock_command": "kubejs stages remove @s pond_house_five"
+        }
+      }
+    ]
+  },
+  "the_quality_of_the_earth": {
+    "title": { "translate": "item.society.the_quality_of_the_earth" },
+    "description": {
+      "translate": "society_skills.books.the_quality_of_the_earth.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_quality_of_the_earth"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s the_quality_of_the_earth",
+          "lock_command": "kubejs stages remove @s the_quality_of_the_earth"
+        }
+      }
+    ]
+  },
+  "the_red_and_the_black": {
+    "title": { "translate": "item.society.the_red_and_the_black" },
+    "description": {
+      "translate": "society_skills.books.the_red_and_the_black.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_red_and_the_black"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s the_red_and_the_black",
+          "lock_command": "kubejs stages remove @s the_red_and_the_black"
         }
       }
     ]
   },
   "phenomenology_of_treasure": {
-    "title": "The Phenomenology of Treasure",
-    "description": "Artifacts and Relics are worth 200% more.",
+    "title": { "translate": "item.society.phenomenology_of_treasure" },
+    "description": {
+      "translate": "society_skills.books.phenomenology_of_treasure.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -282,8 +386,10 @@
     ]
   },
   "slime_contain_protect": {
-    "title": "Slime Contain Protect",
-    "description": "Incubating a Slime Heart has a chance to give you a Slime Ticket.",
+    "title": { "translate": "item.society.slime_contain_protect" },
+    "description": {
+      "translate": "society_skills.books.slime_contain_protect.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -301,8 +407,10 @@
     ]
   },
   "slouching_towards_artistry": {
-    "title": "Slouching Towards Artistry",
-    "description": "Artisan Hoppers have a +5% chance to not consume Sparkstone for each day an output took to make. This only applies when harvesting from the machine.",
+    "title": { "translate": "item.society.slouching_towards_artistry" },
+    "description": {
+      "translate": "society_skills.books.slouching_towards_artistry.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -320,8 +428,10 @@
     ]
   },
   "the_spark_also_rises": {
-    "title": "The Spark Also Rises",
-    "description": "Minining any ore drops Sparkstone.",
+    "title": { "translate": "item.society.the_spark_also_rises" },
+    "description": {
+      "translate": "society_skills.books.the_spark_also_rises.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -339,8 +449,10 @@
     ]
   },
   "universal_methods_of_farming": {
-    "title": "Universal Methods of Farming",
-    "description": "The Market sells all basic seeds in every season.",
+    "title": { "translate": "item.society.universal_methods_of_farming" },
+    "description": {
+      "translate": "society_skills.books.universal_methods_of_farming.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -358,8 +470,10 @@
     ]
   },
   "wuthering_logs": {
-    "title": "Wuthering Logs",
-    "description": "Trees have a 15% chance to drop Fire Logs when chopped.",
+    "title": { "translate": "item.society.wuthering_logs" },
+    "description": {
+      "translate": "society_skills.books.wuthering_logs.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -372,6 +486,27 @@
         "data": {
           "unlock_command": "kubejs stages add @s wuthering_logs",
           "lock_command": "kubejs stages remove @s wuthering_logs"
+        }
+      }
+    ]
+  },
+  "women_who_run_with_the_plushies": {
+    "title": { "translate": "item.society.women_who_run_with_the_plushies" },
+    "description": {
+      "translate": "society_skills.books.women_who_run_with_the_plushies.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:women_who_run_with_the_plushies"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s women_who_run_with_the_plushies",
+          "lock_command": "kubejs stages remove @s women_who_run_with_the_plushies"
         }
       }
     ]

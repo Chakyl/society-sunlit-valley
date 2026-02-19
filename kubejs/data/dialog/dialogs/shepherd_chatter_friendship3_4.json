@@ -1,0 +1,30 @@
+{
+	"id": "shepherd_chatter_friendship3_4",
+	"title": "[4] shepherd chatter at friendship level: friendship3",
+	"description": "dialog.npc.shepherd.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.chatter_friendship3.4.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p shepherd"
+			]
+		}
+	]
+}

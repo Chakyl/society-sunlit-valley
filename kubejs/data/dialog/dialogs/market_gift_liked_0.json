@@ -1,0 +1,26 @@
+{
+	"id": "market_gift_liked_0",
+	"title": "market introduction",
+	"description": "dialog.npc.market.gift.liked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.market.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.market.gift_liked.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "market.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

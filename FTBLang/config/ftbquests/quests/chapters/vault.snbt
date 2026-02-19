@@ -15,7 +15,7 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -26,15 +26,16 @@
 				item: "simplehats:hatbag_epic"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
 				count: 4L
 				id: "22FC2E88EA6ABB6A"
 				item: { Count: 4, id: "numismatics:crown" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.vault.quest1.title}"
-			x: -3.0d
-			y: 0.2d
+			title: "{ftbquests.chapter.vault.quest7CE6C320CC9F9B87.title}"
+			x: -3.085714285714289d
+			y: 0.3285714285714221d
 		}
 		{
 			icon: "supplementaries:present_orange"
@@ -45,15 +46,16 @@
 				item: "dew_drop_farmland_growth:high_quality_fertilizer"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
-				count: 4L
-				id: "62E6795BCC18B6E9"
+				count: 2L
+				id: "393D8C55AE6556DC"
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.vault.quest2.title}"
-			x: -1.5d
-			y: -0.5d
+			title: "{ftbquests.chapter.vault.quest6541E0430F050B7D.title}"
+			x: -1.5428571428571445d
+			y: -0.5000000000000071d
 		}
 		{
 			icon: "supplementaries:present_yellow"
@@ -63,13 +65,14 @@
 				item: "society:charging_rod"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
-				count: 6L
-				id: "543FB7DCD9D9EBC0"
+				count: 4L
+				id: "3E532DD7361F4599"
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.vault.quest3.title}"
+			title: "{ftbquests.chapter.vault.quest5629152AF2F5D6EE.title}"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -81,15 +84,16 @@
 				item: "society:crystalarium"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
-				count: 10L
-				id: "754FDA40D4E2BBF3"
+				count: 6L
+				id: "4FE5D5E3C4364207"
 				item: "numismatics:sun"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.vault.quest4.title}"
-			x: 3.0d
-			y: 0.2d
+			title: "{ftbquests.chapter.vault.quest10EC025C45540E52.title}"
+			x: 3.028571428571432d
+			y: 0.29999999999999716d
 		}
 		{
 			dependencies: [
@@ -99,11 +103,11 @@
 				"7CE6C320CC9F9B87"
 			]
 			description: [
-				"{ftbquests.chapter.vault.quest5.description1}"
+				"{ftbquests.chapter.vault.quest4B9634D942E590AB.description1}"
 				""
-				"{ftbquests.chapter.vault.quest5.description2}"
+				"{ftbquests.chapter.vault.quest4B9634D942E590AB.description2}"
 				""
-				"{ftbquests.chapter.vault.quest5.description3}"
+				"{ftbquests.chapter.vault.quest4B9634D942E590AB.description3}"
 			]
 			icon: "furniture:cash_register"
 			id: "4B9634D942E590AB"
@@ -135,18 +139,19 @@
 					type: "command"
 				}
 			]
-			subtitle: "{ftbquests.chapter.vault.quest5.subtitle}"
+			shape: "none"
+			subtitle: "{ftbquests.chapter.vault.quest4B9634D942E590AB.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "12AF72DCF6F3A875"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.vault.quest5.task_1346421106968602741.title}"
+				title: "{ftbquests.chapter.vault.quest4B9634D942E590AB.task.1346421106968602741.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.vault.quest5.title}"
-			x: 0.0d
-			y: 1.0d
+			title: "{ftbquests.chapter.vault.quest4B9634D942E590AB.title}"
+			x: -0.05714285714285694d
+			y: 1.0142857142857125d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.vault.subtitle0}"]

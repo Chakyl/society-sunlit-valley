@@ -1,0 +1,36 @@
+{
+  "replace": false,
+
+  "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+  "values": [
+    "minecraft:swamp",
+    {
+      "id": "#forge:is_swamp",
+      "required": false
+    },
+    {
+      "id": "byg:bayou",
+      "required": false
+    },
+    {
+      "id": "byg:cypress_swamplands",
+      "required": false
+    },
+    {
+      "id": "byg:white_mangrove_marshes",
+      "required": false
+    },
+    {
+      "id": "byg:glowshroom_bayou",
+      "required": false
+    },
+    {
+      "id": "byg:vibrant_swamplands",
+      "required": false
+    },
+    {
+      "id": "byg:cold_swamplands",
+      "required": false
+    }
+  ]
+}

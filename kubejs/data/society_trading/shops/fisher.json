@@ -1,9 +1,13 @@
 {
   "shop_id": "fisher",
   "name": "shop.society_trading.fisher",
-  "texture": "minecraft:textures/block/barrel_side",
+  "texture": "dialog:textures/portraits/fisher",
   "villager_profession": "fisherman",
-  "jei_catalyst": { "item":"minecraft:barrel" },
+  "stage_required": "invited_fisher",
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:fisher\"}}"
+  },
   "selector_weight": -95,
   "trades": [
     {
@@ -39,7 +43,7 @@
         "item": "numismatics:sun",
         "count": 24
       },
-      "numismatics_cost": 98304,
+      "numismatics_cost": 73728,
       "trade_id": "fisherman_lava_fishing_rod_rod_for_sun"
     },
     {
@@ -73,6 +77,24 @@
       },
       "numismatics_cost": 32768,
       "trade_id": "fisherman_fish_pond_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:roe_recycler",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 2
+      },
+      "second_request": {
+        "item": "society:sunlit_pearl",
+        "count": 3
+      },
+      "numismatics_cost": 65536,
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_roe_recyclern"
     },
     {
       "offer": {
@@ -188,6 +210,32 @@
     },
     {
       "offer": {
+        "item": "society:needle_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "society:heart_of_neptunium",
+        "count": 1
+      },
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_needle_bobber_for_heart_of_neptunium"
+    },
+    {
+      "offer": {
+        "item": "society:net_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "society:heart_of_neptunium",
+        "count": 1
+      },
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_net_bobber_for_heart_of_neptunium"
+    },
+    {
+      "offer": {
         "item": "stardew_fishing:trap_bobber",
         "count": 1
       },
@@ -293,9 +341,9 @@
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 32
+        "count": 16
       },
-      "numismatics_cost": 131072,
+      "numismatics_cost": 65536,
       "trade_id": "minecraft:toolsmith_neptunium_upgrade_smithing_template_for_crown"
     },
     {
@@ -333,18 +381,6 @@
       },
       "numismatics_cost": 1536,
       "trade_id": "fisherman_copper_diving_boots_for_crown"
-    },
-    {
-      "offer": {
-        "item": "candlelight:gold_ring",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 32
-      },
-      "numismatics_cost": 131072,
-      "trade_id": "fisherman_gold_ring_for_sun"
     },
     {
       "offer": {

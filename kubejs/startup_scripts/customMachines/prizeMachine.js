@@ -18,11 +18,17 @@ global.prizeMachineRewards = [
   },
   {
     hint: "upgradable",
-    possibleOutputs: ["sophisticatedbackpacks:upgrade_base", "sophisticatedstorage:upgrade_base"],
+    possibleOutputs: [
+      "sophisticatedbackpacks:upgrade_base",
+      "sophisticatedstorage:upgrade_base",
+    ],
   },
   {
     hint: "bearing red fruits",
-    possibleOutputs: ["pamhc2trees:cherry_sapling", "pamhc2trees:apple_sapling"],
+    possibleOutputs: [
+      "pamhc2trees:cherry_sapling",
+      "pamhc2trees:apple_sapling",
+    ],
   },
   {
     hint: "crabs love to chow on",
@@ -251,7 +257,11 @@ global.prizeMachineRewards = [
   },
   {
     hint: "sticky, from a tree",
-    possibleOutputs: ["4x society:maple_syrup", "4x society:pine_tar", "4x society:oak_resin"],
+    possibleOutputs: [
+      "4x society:maple_syrup",
+      "4x society:pine_tar",
+      "4x society:oak_resin",
+    ],
   },
   {
     hint: "wintery",
@@ -264,7 +274,10 @@ global.prizeMachineRewards = [
   },
   {
     hint: "relating to relics",
-    possibleOutputs: ["society:relic_trove", "64x relics:relic_experience_bottle"],
+    possibleOutputs: [
+      "society:relic_trove",
+      "64x relics:relic_experience_bottle",
+    ],
   },
   {
     hint: "fossilized",
@@ -295,7 +308,10 @@ global.prizeMachineRewards = [
   },
   {
     hint: "artly and factual",
-    possibleOutputs: ["society:artifact_trove", "betterarcheology:unidentified_artifact"],
+    possibleOutputs: [
+      "society:artifact_trove",
+      "betterarcheology:unidentified_artifact",
+    ],
   },
   {
     hint: "seedy that's hard to find",
@@ -318,6 +334,7 @@ global.prizeMachineRewards = [
       "society:stone_hand",
       "society:frosted_tip",
       "society:tiny_gnome",
+      "society:gray_anatomy",
       "society:broken_clock",
       "society:black_opal",
       "society:sea_biscut",
@@ -361,29 +378,39 @@ global.prizeMachineRewards = [
 StartupEvents.registry("block", (event) => {
   event
     .create("society:prize_machine", "cardinal")
-    .property(integerProperty.create("prize", 0, global.prizeMachineRewards.length))
-    .box(1, 0, 4, 15, 28, 12)
+    .property(
+      integerProperty.create("prize", 0, global.prizeMachineRewards.length)
+    )
+    .box(0, 0, 6, 16, 28, 16)
     .defaultCutout()
     .soundType("copper")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Redeem Prize Tickets for a reward!"));
+      item.tooltip(Text.translatable("block.society.prize_machine.description").gray());
       item.modelJson({
-        parent: "society:block/prize_machine",
+        parent: "society:block/kubejs/prize_machine",
       });
     })
     .defaultState((state) => {
-      state.set(integerProperty.create("prize", 0, global.prizeMachineRewards.length), 0);
+      state.set(
+        integerProperty.create("prize", 0, global.prizeMachineRewards.length),
+        0
+      );
     })
     .placementState((state) => {
-      state.set(integerProperty.create("prize", 0, global.prizeMachineRewards.length), 0);
+      state.set(
+        integerProperty.create("prize", 0, global.prizeMachineRewards.length),
+        0
+      );
     })
     .rightClick((click) => {
       const { item, block, hand, player, level, server } = click;
       const { x, y, z } = block;
-      const prizeNumber = block.properties.get("prize").toLowerCase();
-      const prizeOutput = global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
+      let nbt = block.getEntityData();
+      const prizeNumber = nbt.data.prize;
+      const prizeOutput =
+        global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
       const prizeHint = global.prizeMachineRewards[Number(prizeNumber)].hint;
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND" && item === "society:prize_ticket") {
@@ -405,13 +432,15 @@ StartupEvents.registry("block", (event) => {
         if (player.stages.has("frogs_bounty_bazaar")) {
           block.popItemFromFace(prize, block.properties.get("facing"));
         }
-        block.set(block.id, {
-          facing: block.properties.get("facing"),
-          prize:
-            Number(prizeNumber) === global.prizeMachineRewards.length - 1
-              ? "8"
-              : increaseStage(block.properties.get("prize").toLowerCase()),
+        nbt.merge({
+          data: {
+            prize:
+              Number(prizeNumber) === global.prizeMachineRewards.length - 1
+                ? 8
+                : (nbt.data.prize += 1),
+          },
         });
+        block.setEntityData(nbt);
         click.server.runCommandSilent(
           `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
         );
@@ -421,23 +450,28 @@ StartupEvents.registry("block", (event) => {
         global.giveExperience(server, player, "adventuring", 100);
         global.giveExperience(server, player, "fishing", 100);
       } else {
-        player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
+        player.tell(
+          Text.translatable(
+            "block.society.prize_machine.next",
+            global.translatableWithFallback(
+              `society.prize_machine.hint.${prizeNumber}`,
+              `Something §6${prizeHint}§r...`
+            )
+          ).gray()
+        );
       }
-      let nbt = block.getEntityData();
-      nbt.merge({ data: { prize: Number(prizeNumber) } });
-      block.setEntityData(nbt);
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ prize: 0 });
     }).blockstateJson = {
     multipart: [
       {
-        apply: { model: "society:block/prize_machine_particle" },
+        apply: { model: "society:block/kubejs/prize_machine_particle" },
       },
       {
         when: { facing: "north" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: 0,
           uvlock: false,
         },
@@ -445,7 +479,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "east" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: 90,
           uvlock: false,
         },
@@ -453,7 +487,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "south" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: 180,
           uvlock: false,
         },
@@ -461,7 +495,7 @@ StartupEvents.registry("block", (event) => {
       {
         when: { facing: "west" },
         apply: {
-          model: "society:block/prize_machine",
+          model: "society:block/kubejs/prize_machine",
           y: -90,
           uvlock: false,
         },

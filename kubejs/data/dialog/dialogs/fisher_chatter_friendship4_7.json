@@ -1,0 +1,30 @@
+{
+	"id": "fisher_chatter_friendship4_7",
+	"title": "[7] fisher chatter at friendship level: friendship4",
+	"description": "dialog.npc.fisher.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.fisher.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.fisher.chatter_friendship4.7.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "fisher.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p fisher"
+			]
+		}
+	]
+}

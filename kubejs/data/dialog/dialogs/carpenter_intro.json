@@ -1,0 +1,83 @@
+{
+	"id": "carpenter_intro",
+	"title": "carpenter introduction",
+	"description": "dialog.npc.carpenter.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.0.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.intro.0.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

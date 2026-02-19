@@ -15,7 +15,7 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -26,9 +26,9 @@
 				"52A3D52D6251EDB6"
 			]
 			description: [
-				"{ftbquests.chapter.boiler_room.quest1.description1}"
+				"{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.description1}"
 				""
-				"{ftbquests.chapter.boiler_room.quest1.description2}"
+				"{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.description2}"
 			]
 			icon: "furniture:tool_box"
 			id: "3428ADDC87A77916"
@@ -60,18 +60,19 @@
 					type: "command"
 				}
 			]
-			subtitle: "{ftbquests.chapter.boiler_room.quest1.subtitle}"
+			shape: "none"
+			subtitle: "{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "4F5C6E42993777F4"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.boiler_room.quest1.task_5718566859171133428.title}"
+				title: "{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.task.5718566859171133428.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.boiler_room.quest1.title}"
-			x: 0.0d
-			y: 1.0d
+			title: "{ftbquests.chapter.boiler_room.quest3428ADDC87A77916.title}"
+			x: -0.028571428571424917d
+			y: 1.057142857142857d
 		}
 		{
 			icon: "supplementaries:present_purple"
@@ -81,35 +82,32 @@
 				item: "extractinator:extractinator"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					count: 8L
-					id: "4BE368B7B6654D26"
-					item: { Count: 8, id: "minecraft:raw_copper_block" }
+					id: "78A93D2099B01AF1"
+					item: "minecraft:raw_copper_block"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "21500032C20E9D58"
-					item: { Count: 8, id: "create:raw_zinc_block" }
+					id: "2A4B97ECE2448775"
+					item: "create:raw_zinc_block"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "639A2E35138EA3FF"
-					item: { Count: 8, id: "minecraft:raw_iron_block" }
+					id: "57EE2523B568F3E2"
+					item: "minecraft:raw_iron_block"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "385CAF48C9478816"
-					item: { Count: 8, id: "minecraft:raw_gold_block" }
+					id: "650BD5813DE11E95"
+					item: "minecraft:raw_gold_block"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest2.title}"
-			x: -3.0d
-			y: 0.2d
+			title: "{ftbquests.chapter.boiler_room.quest3889A9F0A1CF45FF.title}"
+			x: -3.1142857142857068d
+			y: 0.2857142857142705d
 		}
 		{
 			icon: "supplementaries:present_light_blue"
@@ -120,38 +118,39 @@
 				item: "society:omni_geode"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
-					count: 4L
-					id: "2E7D7F4CA1303942"
-					item: { Count: 4, id: "society:earth_crystal" }
+					id: "0B110BED5FE81EBB"
+					item: "society:earth_crystal"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "643A6EC6C52F70BB"
-					item: { Count: 4, id: "society:frozen_tear" }
+					id: "01150DDAB2522C8D"
+					item: "society:frozen_tear"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "40FE32058432BFFD"
-					item: { Count: 4, id: "society:fire_quartz" }
+					id: "1D6BC732729FB802"
+					item: "society:fire_quartz"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest3.title}"
-			x: -1.5d
-			y: -0.5d
+			title: "{ftbquests.chapter.boiler_room.quest52A3D52D6251EDB6.title}"
+			x: -1.5714285714285623d
+			y: -0.48571428571430175d
 		}
 		{
+			description: ["{ftbquests.chapter.boiler_room.questB45A918213371FA.description1}"]
 			icon: "supplementaries:present_blue"
 			id: "0B45A918213371FA"
+			min_required_tasks: 3
 			rewards: [{
 				id: "6E3C4F2F04BA9298"
 				item: "society:relic_trove"
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "6359E72D652B83E1"
@@ -175,7 +174,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_7159007264839009249.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.7159007264839009249.title}"
 					type: "item"
 				}
 				{
@@ -200,7 +199,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_8448155510129440612.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.8448155510129440612.title}"
 					type: "item"
 				}
 				{
@@ -225,7 +224,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_2504617133200510924.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.2504617133200510924.title}"
 					type: "item"
 				}
 				{
@@ -250,7 +249,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_2456484554402737852.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.2456484554402737852.title}"
 					type: "item"
 				}
 				{
@@ -275,7 +274,7 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_4196301195831567143.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.4196301195831567143.title}"
 					type: "item"
 				}
 				{
@@ -300,17 +299,19 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.boiler_room.quest4.task_7605778742143769321.title}"
+					title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.7605778742143769321.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest4.title}"
+			title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.title}"
 			x: 1.5d
 			y: -0.5d
 		}
 		{
+			description: ["{ftbquests.chapter.boiler_room.questF606FEB98D44C0F.description1}"]
 			icon: "supplementaries:present_red"
 			id: "0F606FEB98D44C0F"
+			min_required_tasks: 3
 			rewards: [{
 				id: "496273F8A86D642D"
 				item: {
@@ -347,6 +348,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					count: 8L
@@ -373,9 +375,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.boiler_room.quest5.title}"
-			x: 3.0d
-			y: 0.2d
+			title: "{ftbquests.chapter.boiler_room.questF606FEB98D44C0F.title}"
+			x: 3.000000000000007d
+			y: 0.2857142857142705d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.boiler_room.subtitle0}"]

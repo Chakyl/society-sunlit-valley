@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.chapter.getting_started.quest1.description1}"]
+			description: ["{ftbquests.chapter.getting_started.quest3862A7D1A471A215.description1}"]
 			id: "3862A7D1A471A215"
 			rewards: [{
 				count: 4
@@ -24,18 +24,18 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest1.title}"
-			x: -4.5d
+			title: "{ftbquests.chapter.getting_started.quest3862A7D1A471A215.title}"
+			x: -3.75d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3862A7D1A471A215"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest2.description1}"
+				"{ftbquests.chapter.getting_started.quest1E5531421815CDB3.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest2.description2}"
+				"{ftbquests.chapter.getting_started.quest1E5531421815CDB3.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest2.description3}"
+				"{ftbquests.chapter.getting_started.quest1E5531421815CDB3.description3}"
 			]
 			id: "1E5531421815CDB3"
 			rewards: [
@@ -109,19 +109,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.getting_started.quest2.task_1730207917068985163.title}"
+				title: "{ftbquests.chapter.getting_started.quest1E5531421815CDB3.task.1730207917068985163.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest2.title}"
-			x: -2.0d
+			title: "{ftbquests.chapter.getting_started.quest1E5531421815CDB3.title}"
+			x: -1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1E5531421815CDB3"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest3.description1}"
+				"{ftbquests.chapter.getting_started.quest3F759C6DEEBC61FD.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest3.description2}"
+				"{ftbquests.chapter.getting_started.quest3F759C6DEEBC61FD.description2}"
 			]
 			id: "3F759C6DEEBC61FD"
 			rewards: [{
@@ -136,18 +136,18 @@
 				item: "shippingbin:basic_shipping_bin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest3.title}"
+			title: "{ftbquests.chapter.getting_started.quest3F759C6DEEBC61FD.title}"
 			x: 0.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3F759C6DEEBC61FD"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest4.description1}"
+				"{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest4.description2}"
+				"{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest4.description3}"
+				"{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.description3}"
 			]
 			icon: "lootr:trophy"
 			id: "6BCAB845986C9D3A"
@@ -164,21 +164,21 @@
 			}]
 			tasks: [{
 				id: "3315F950E66CDDD5"
-				title: "{ftbquests.chapter.getting_started.quest4.task_3681122396303842773.title}"
+				title: "{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.task.3681122396303842773.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest4.title}"
+			title: "{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.title}"
 			x: 0.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["1E5531421815CDB3"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest5.description1}"
+				"{ftbquests.chapter.getting_started.quest3C54AC272D438F76.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest5.description2}"
+				"{ftbquests.chapter.getting_started.quest3C54AC272D438F76.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest5.description3}"
+				"{ftbquests.chapter.getting_started.quest3C54AC272D438F76.description3}"
 			]
 			id: "3C54AC272D438F76"
 			invisible: true
@@ -193,16 +193,16 @@
 				item: "society:geode"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest5.title}"
-			x: -2.0d
+			title: "{ftbquests.chapter.getting_started.quest3C54AC272D438F76.title}"
+			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3C54AC272D438F76"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest6.description1}"
+				"{ftbquests.chapter.getting_started.quest5B7E846EEFCA5603.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest6.description2}"
+				"{ftbquests.chapter.getting_started.quest5B7E846EEFCA5603.description2}"
 			]
 			hide_until_deps_visible: true
 			id: "5B7E846EEFCA5603"
@@ -216,23 +216,23 @@
 				item: "extractinator:extractinator"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest6.title}"
-			x: -2.0d
+			title: "{ftbquests.chapter.getting_started.quest5B7E846EEFCA5603.title}"
+			x: -1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["472F40ECF199DD42"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest7.description1}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest7.description2}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest7.description3}"
-				"{ftbquests.chapter.getting_started.quest7.description4}"
-				"{ftbquests.chapter.getting_started.quest7.description5}"
-				"{ftbquests.chapter.getting_started.quest7.description6}"
-				"{ftbquests.chapter.getting_started.quest7.description7}"
-				"{ftbquests.chapter.getting_started.quest7.description8}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description3}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description4}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description5}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description6}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description7}"
+				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description8}"
 			]
 			id: "73A85902CE35A43A"
 			rewards: [{
@@ -246,49 +246,87 @@
 				item: "numismatics:cog"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest7.title}"
+			title: "{ftbquests.chapter.getting_started.quest73A85902CE35A43A.title}"
 			x: 4.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest8.description1}"
+				"{ftbquests.chapter.getting_started.quest66D159252C70D5F2.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest8.description2}"
+				"{ftbquests.chapter.getting_started.quest66D159252C70D5F2.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest8.description3}"
+				"{ftbquests.chapter.getting_started.quest66D159252C70D5F2.description3}"
 			]
-			icon: "betterarcheology:villager_fossil"
+			icon: "minecraft:bell"
 			id: "66D159252C70D5F2"
 			rewards: [
-				{
-					count: 2
-					id: "3960776966CF1ACC"
-					item: "minecraft:villager_spawn_egg"
-					type: "item"
-				}
 				{
 					id: "71BC141AEB9C3428"
 					item: "create:clipboard"
 					type: "item"
 				}
+				{
+					id: "16213FA11FBA47CF"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_carpenter"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Carpenter House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_carpenter"
+							owner: "worn"
+							owner_name: "EeveeBeby"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 1b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
 			]
+			subtitle: "{ftbquests.chapter.getting_started.quest66D159252C70D5F2.subtitle}"
 			tasks: [{
-				id: "0E99D2F7380F51CF"
-				title: "{ftbquests.chapter.getting_started.quest8.task_1052103947207004623.title}"
-				type: "checkmark"
+				id: "44E951A44F1CF7F0"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:carpenter"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest8.title}"
-			x: 7.0d
+			title: "{ftbquests.chapter.getting_started.quest66D159252C70D5F2.title}"
+			x: 6.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
+			dependencies: ["24C86673E1F57A3E"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest9.description1}"
+				"{ftbquests.chapter.getting_started.quest679F77E46148B5D1.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest9.description2}"
+				"{ftbquests.chapter.getting_started.quest679F77E46148B5D1.description2}"
 			]
 			id: "679F77E46148B5D1"
 			rewards: [{
@@ -321,16 +359,16 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest9.title}"
-			x: 8.0d
-			y: -3.0d
+			title: "{ftbquests.chapter.getting_started.quest679F77E46148B5D1.title}"
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest10.description1}"
+				"{ftbquests.chapter.getting_started.quest77E2AE3656E32182.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest10.description2}"
+				"{ftbquests.chapter.getting_started.quest77E2AE3656E32182.description2}"
 			]
 			icon: "numismatics:bank_terminal"
 			id: "77E2AE3656E32182"
@@ -345,18 +383,18 @@
 				item: { Count: 4, id: "numismatics:cog" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest10.title}"
+			title: "{ftbquests.chapter.getting_started.quest77E2AE3656E32182.title}"
 			x: 4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest11.description1}"
+				"{ftbquests.chapter.getting_started.quest34FCF481CDFD3380.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest11.description2}"
+				"{ftbquests.chapter.getting_started.quest34FCF481CDFD3380.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest11.description3}"
+				"{ftbquests.chapter.getting_started.quest34FCF481CDFD3380.description3}"
 			]
 			icon: "bountiful:bountyboard"
 			id: "34FCF481CDFD3380"
@@ -389,18 +427,18 @@
 				item: "bountiful:bountyboard"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest11.title}"
+			title: "{ftbquests.chapter.getting_started.quest34FCF481CDFD3380.title}"
 			x: 6.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["34FCF481CDFD3380"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest12.description1}"
+				"{ftbquests.chapter.getting_started.quest3385C414574E7FE2.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest12.description2}"
+				"{ftbquests.chapter.getting_started.quest3385C414574E7FE2.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest12.description3}"
+				"{ftbquests.chapter.getting_started.quest3385C414574E7FE2.description3}"
 			]
 			id: "3385C414574E7FE2"
 			rewards: [{
@@ -413,24 +451,24 @@
 				item: "society:prize_ticket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest12.title}"
+			title: "{ftbquests.chapter.getting_started.quest3385C414574E7FE2.title}"
 			x: 6.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest13.description1}"
+				"{ftbquests.chapter.getting_started.quest459BA5CC983CFAB9.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest13.description2}"
+				"{ftbquests.chapter.getting_started.quest459BA5CC983CFAB9.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest13.description3}"
+				"{ftbquests.chapter.getting_started.quest459BA5CC983CFAB9.description3}"
 				""
-				"{ftbquests.chapter.getting_started.quest13.description4}"
+				"{ftbquests.chapter.getting_started.quest459BA5CC983CFAB9.description4}"
 				""
-				"{ftbquests.chapter.getting_started.quest13.description5}"
+				"{ftbquests.chapter.getting_started.quest459BA5CC983CFAB9.description5}"
 				""
-				"{ftbquests.chapter.getting_started.quest13.description6}"
+				"{ftbquests.chapter.getting_started.quest459BA5CC983CFAB9.description6}"
 			]
 			icon: "society:book_of_stars"
 			id: "459BA5CC983CFAB9"
@@ -454,22 +492,16 @@
 				type: "stat"
 				value: 10
 			}]
-			title: "{ftbquests.chapter.getting_started.quest13.title}"
+			title: "{ftbquests.chapter.getting_started.quest459BA5CC983CFAB9.title}"
 			x: 4.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
+			dependencies: ["24C86673E1F57A3E"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest14.description1}"
+				"{ftbquests.chapter.getting_started.quest1A4FD076999BF29F.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest14.description2}"
-				""
-				"{ftbquests.chapter.getting_started.quest14.description3}"
-				""
-				"{ftbquests.chapter.getting_started.quest14.description4}"
-				""
-				"{ftbquests.chapter.getting_started.quest14.description5}"
+				"{ftbquests.chapter.getting_started.quest1A4FD076999BF29F.description2}"
 			]
 			icon: "tanukidecor:antique_bed"
 			id: "1A4FD076999BF29F"
@@ -501,18 +533,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.getting_started.quest14.title}"
-			x: 9.5d
+			title: "{ftbquests.chapter.getting_started.quest1A4FD076999BF29F.title}"
+			x: 11.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["472F40ECF199DD42"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest15.description1}"
+				"{ftbquests.chapter.getting_started.quest287FFC7E15278504.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest15.description2}"
+				"{ftbquests.chapter.getting_started.quest287FFC7E15278504.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest15.description3}"
+				"{ftbquests.chapter.getting_started.quest287FFC7E15278504.description3}"
 			]
 			id: "287FFC7E15278504"
 			rewards: [{
@@ -532,18 +564,18 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest15.title}"
+			title: "{ftbquests.chapter.getting_started.quest287FFC7E15278504.title}"
 			x: 2.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1E5531421815CDB3"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest16.description1}"
+				"{ftbquests.chapter.getting_started.quest28029230D7FD63D6.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest16.description2}"
+				"{ftbquests.chapter.getting_started.quest28029230D7FD63D6.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest16.description3}"
+				"{ftbquests.chapter.getting_started.quest28029230D7FD63D6.description3}"
 			]
 			icon: "minecraft:anvil"
 			id: "28029230D7FD63D6"
@@ -558,24 +590,24 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.getting_started.quest16.subtitle}"
+			subtitle: "{ftbquests.chapter.getting_started.quest28029230D7FD63D6.subtitle}"
 			tasks: [{
 				id: "787836F003705C9D"
-				title: "{ftbquests.chapter.getting_started.quest16.task_8680748686234377373.title}"
+				title: "{ftbquests.chapter.getting_started.quest28029230D7FD63D6.task.8680748686234377373.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest16.title}"
-			x: -2.0d
+			title: "{ftbquests.chapter.getting_started.quest28029230D7FD63D6.title}"
+			x: -1.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["3F759C6DEEBC61FD"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest17.description1}"
+				"{ftbquests.chapter.getting_started.quest472F40ECF199DD42.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest17.description2}"
+				"{ftbquests.chapter.getting_started.quest472F40ECF199DD42.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest17.description3}"
+				"{ftbquests.chapter.getting_started.quest472F40ECF199DD42.description3}"
 			]
 			id: "472F40ECF199DD42"
 			rewards: [{
@@ -600,16 +632,16 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest17.title}"
+			title: "{ftbquests.chapter.getting_started.quest472F40ECF199DD42.title}"
 			x: 2.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["472F40ECF199DD42"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest18.description1}"
+				"{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest18.description2}"
+				"{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.description2}"
 			]
 			icon: {
 				Count: 1
@@ -638,47 +670,21 @@
 			}]
 			tasks: [{
 				id: "62ECA90727ED1D30"
-				title: "{ftbquests.chapter.getting_started.quest18.task_7128258158420368688.title}"
+				title: "{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.task.7128258158420368688.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest18.title}"
+			title: "{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.title}"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["66D159252C70D5F2"]
+			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest19.description1}"
+				"{ftbquests.chapter.getting_started.quest7D1394F6356086D0.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest19.description2}"
-			]
-			icon: "minecraft:villager_spawn_egg"
-			id: "443F42C8AFDA0C36"
-			rewards: [{
-				id: "02B2AE534E71FF64"
-				item: "minecraft:villager_spawn_egg"
-				type: "item"
-			}]
-			tasks: [{
-				id: "751D998BA38362A4"
-				item: "minecraft:cartography_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.getting_started.quest19.title}"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"2134CA6B3880D089"
-				"73A85902CE35A43A"
-			]
-			description: [
-				"{ftbquests.chapter.getting_started.quest20.description1}"
+				"{ftbquests.chapter.getting_started.quest7D1394F6356086D0.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest20.description2}"
-				""
-				"{ftbquests.chapter.getting_started.quest20.description3}"
+				"{ftbquests.chapter.getting_started.quest7D1394F6356086D0.description3}"
 			]
 			icon: "atmospheric:sun_pottery_sherd"
 			id: "7D1394F6356086D0"
@@ -690,21 +696,21 @@
 			tasks: [{
 				biome: "#sereneseasons:tropical_biomes"
 				id: "62FF92E353562969"
-				title: "{ftbquests.chapter.getting_started.quest20.task_7133581839831542121.title}"
+				title: "{ftbquests.chapter.getting_started.quest7D1394F6356086D0.task.7133581839831542121.title}"
 				type: "biome"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest20.title}"
+			title: "{ftbquests.chapter.getting_started.quest7D1394F6356086D0.title}"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["459BA5CC983CFAB9"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest21.description1}"
+				"{ftbquests.chapter.getting_started.quest681EECD8B1D07F34.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest21.description2}"
+				"{ftbquests.chapter.getting_started.quest681EECD8B1D07F34.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest21.description3}"
+				"{ftbquests.chapter.getting_started.quest681EECD8B1D07F34.description3}"
 			]
 			icon: "society:crystal_of_regret_fishing"
 			id: "681EECD8B1D07F34"
@@ -744,23 +750,23 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.getting_started.quest21.task_4340198043728263341.title}"
+				title: "{ftbquests.chapter.getting_started.quest681EECD8B1D07F34.task.4340198043728263341.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest21.title}"
+			title: "{ftbquests.chapter.getting_started.quest681EECD8B1D07F34.title}"
 			x: 4.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["77E2AE3656E32182"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest22.description1}"
+				"{ftbquests.chapter.getting_started.quest1F0231C09608265D.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest22.description2}"
+				"{ftbquests.chapter.getting_started.quest1F0231C09608265D.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest22.description3}"
+				"{ftbquests.chapter.getting_started.quest1F0231C09608265D.description3}"
 				""
-				"{ftbquests.chapter.getting_started.quest22.description4}"
+				"{ftbquests.chapter.getting_started.quest1F0231C09608265D.description4}"
 			]
 			icon: "numismatics:white_card"
 			id: "1F0231C09608265D"
@@ -775,18 +781,18 @@
 				item: "numismatics:blaze_banker"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest22.title}"
+			title: "{ftbquests.chapter.getting_started.quest1F0231C09608265D.title}"
 			x: 4.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["443F42C8AFDA0C36"]
+			dependencies: ["4DB169DA4B4CCFBA"]
 			description: [
-				"{ftbquests.chapter.getting_started.quest23.description1}"
+				"{ftbquests.chapter.getting_started.quest23C02B36014CC450.description1}"
 				""
-				"{ftbquests.chapter.getting_started.quest23.description2}"
+				"{ftbquests.chapter.getting_started.quest23C02B36014CC450.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest23.description3}"
+				"{ftbquests.chapter.getting_started.quest23C02B36014CC450.description3}"
 			]
 			id: "23C02B36014CC450"
 			rewards: [{
@@ -800,9 +806,259 @@
 				item: "whimsy_deco:phone"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.getting_started.quest23.title}"
+			title: "{ftbquests.chapter.getting_started.quest23C02B36014CC450.title}"
 			x: 8.0d
 			y: 1.5d
+		}
+		{
+			dependencies: [
+				"66D159252C70D5F2"
+				"6ADD884F3FFE5D42"
+			]
+			description: [
+				"{ftbquests.chapter.getting_started.quest4DB169DA4B4CCFBA.description1}"
+				""
+				"{ftbquests.chapter.getting_started.quest4DB169DA4B4CCFBA.description2}"
+			]
+			icon: "society:pig_race_ticket"
+			id: "4DB169DA4B4CCFBA"
+			rewards: [
+				{
+					id: "49E5FB8738AB8D25"
+					item: "whimsy_deco:gold_curio_cash_register"
+					type: "item"
+				}
+				{
+					id: "669F3B06BA7E112C"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_banker"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Banker House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_banker"
+							originPos: "x=103,y=-60,z=44"
+							owner: "worn"
+							owner_name: "Kanlamari"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 0b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.getting_started.quest4DB169DA4B4CCFBA.subtitle}"
+			tasks: [{
+				id: "59E084CB052A33AC"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:banker"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66D159252C70D5F2"]
+			description: [
+				"{ftbquests.chapter.getting_started.quest382DC5EBB8C7C19E.description1}"
+				""
+				"{ftbquests.chapter.getting_started.quest382DC5EBB8C7C19E.description2}"
+				""
+				"{ftbquests.chapter.getting_started.quest382DC5EBB8C7C19E.description3}"
+				""
+				"{ftbquests.chapter.getting_started.quest382DC5EBB8C7C19E.description4}"
+			]
+			id: "382DC5EBB8C7C19E"
+			rewards: [{
+				count: 64
+				id: "662A4881C4FC6D72"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			tasks: [{
+				id: "281897C014D14C4C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_siberian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 0b
+						worn_set: 1b
+					}
+				}
+				title: "{ftbquests.chapter.getting_started.quest382DC5EBB8C7C19E.task.2889226012196949068.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.getting_started.quest382DC5EBB8C7C19E.title}"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66D159252C70D5F2"]
+			description: [
+				"{ftbquests.chapter.getting_started.quest24C86673E1F57A3E.description1}"
+				""
+				"{ftbquests.chapter.getting_started.quest24C86673E1F57A3E.description2}"
+			]
+			icon: "society:iron_upgrade_smithing_template"
+			id: "24C86673E1F57A3E"
+			rewards: [
+				{
+					id: "0D734609104AE9A0"
+					item: "society:iron_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "7694A381C94D651D"
+					item: {
+						Count: 1
+						id: "portable_blueprints:worn_blueprint"
+						tag: {
+							Damage: 1
+							allow_nbt: 1
+							altezza: 0
+							blueprint_name: "npc_blacksmith"
+							buildAnyway: 0b
+							display: {
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Blacksmith House\"}"
+							}
+							free_build: 1
+							inventari_blocco_selezionati: ""
+							lunghezzaX: 0
+							lunghezzaZ: 0
+							mirrowX: 0b
+							mirrowY: 0b
+							mirrowZ: 0b
+							nome: "npc_blacksmith"
+							originPos: "x=102,y=-60,z=41"
+							owner: "worn"
+							owner_name: "Kanlamari"
+							remaining_uses: 1
+							rotateValue: 0s
+							skipObstructionBlock: 0b
+							visualizeBuild: 0b
+							wasHolding: 1b
+							worn_set: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.getting_started.quest24C86673E1F57A3E.subtitle}"
+			tasks: [{
+				id: "425CE445701BE19E"
+				item: {
+					Count: 1
+					id: "society:invitation"
+					tag: {
+						type: {
+							id: "society:blacksmith"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["24C86673E1F57A3E"]
+			description: [
+				"{ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description1}"
+				""
+				"{ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description2}"
+				""
+				"{ftbquests.chapter.getting_started.quest3E08F21BA8F69499.description3}"
+			]
+			icon: "simplehats:presentsstack"
+			id: "3E08F21BA8F69499"
+			rewards: [{
+				id: "29EB69F5E70B1F10"
+				item: "atmospheric:candied_orange_slices"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F77BA107A199EE0"
+				title: "{ftbquests.chapter.getting_started.quest3E08F21BA8F69499.task.5726250031155617504.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.getting_started.quest3E08F21BA8F69499.title}"
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["382DC5EBB8C7C19E"]
+			description: [
+				"{ftbquests.chapter.getting_started.quest318022FDED8803BD.description1}"
+				""
+				"{ftbquests.chapter.getting_started.quest318022FDED8803BD.description2}"
+				""
+				"{ftbquests.chapter.getting_started.quest318022FDED8803BD.description3}"
+			]
+			icon: "minecraft:grass_block"
+			id: "318022FDED8803BD"
+			rewards: [{
+				count: 2
+				id: "7C66719B9549862E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.getting_started.quest318022FDED8803BD.subtitle}"
+			tasks: [{
+				id: "71C9DCC83451DA09"
+				title: "{ftbquests.chapter.getting_started.quest318022FDED8803BD.task.8199327349034048009.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.getting_started.quest318022FDED8803BD.title}"
+			x: 8.0d
+			y: -4.5d
 		}
 	]
 	title: "{ftbquests.chapter.getting_started.title}"

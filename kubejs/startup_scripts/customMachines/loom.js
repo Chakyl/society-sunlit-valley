@@ -1,13 +1,13 @@
 //priority: 100
 console.info("[SOCIETY] loom.js loaded");
 
-global.loomRecipes = [
-  { input: "#minecraft:wool", output: ["society:canvas"] },
-  { input: "etcetera:cotton_flower", output: ["society:canvas"] },
-  { input: "society:fine_wool", output: ["society:merino_wool"] },
-  { input: "botania:mana_string", output: ["botania:manaweave_cloth"] },
-  { input: "crittersandcompanions:silk", output: ["society:merino_wool"] },
-];
+global.loomRecipes = new Map([
+  ["#minecraft:wool", { output: ["society:canvas"] }],
+  ["etcetera:cotton_flower", { output: ["society:canvas"] }],
+  ["society:fine_wool", { output: ["society:merino_wool"] }],
+  ["botania:mana_string", { output: ["botania:manaweave_cloth"] }],
+  ["crittersandcompanions:silk", { output: ["society:merino_wool"] }],
+]);
 
 StartupEvents.registry("block", (event) => {
   event
@@ -15,8 +15,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 5))
-    .property(integerProperty.create("type", 0, global.loomRecipes.length))
     .box(0, 0, 1, 16, 26, 16)
     .defaultCutout()
     .displayName("Canvas Loom")
@@ -24,26 +22,22 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Processes 5 fibers into artisan items"));
+      item.tooltip(Text.translatable("block.society.loom.description").gray());
       item.modelJson({
-        parent: "society:block/loom/loom_off",
+        parent: "society:block/kubejs/loom/loom_off",
       });
     })
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0)
-        .set(integerProperty.create("type", 0, global.loomRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
-        .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0)
-        .set(integerProperty.create("type", 0, global.loomRecipes.length), 0);
+        .set(booleanProperty.create("upgraded"), false);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -68,20 +62,21 @@ StartupEvents.registry("block", (event) => {
           );
           block.set(block.id, {
             facing: facing,
-            type: block.properties.get("type"),
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
-            stage: block.properties.get("stage"),
           });
         }
       }
-      
+
       if (upgraded && block.properties.get("mature") === "true" && rnd25()) {
         const furniture = Ingredient.of("#society:loot_furniture").itemIds;
         block.popItemFromFace(furniture[Math.floor(Math.random() * furniture.length)], facing);
       }
-
+      let outputCount = 1;
+      if (player.stages.has("rancher") && Math.random() <= 0.2) {
+        outputCount = 2;
+      }
       global.handleBERightClick(
         "minecraft:block.wool.fall",
         click,
@@ -89,11 +84,11 @@ StartupEvents.registry("block", (event) => {
         5,
         true,
         true,
-        player.stages.has("rancher") ? 2 : 1
+        outputCount
       );
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ stage: 0, recipe: "" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.loomRecipes, 1);
       });

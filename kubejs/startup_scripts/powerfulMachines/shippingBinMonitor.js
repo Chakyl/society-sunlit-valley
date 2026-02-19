@@ -33,8 +33,8 @@ global.runShippingBinMonitor = (entity) => {
         block.y + 0.25,
         "shipping_bin_monitor",
         calculationResults === -1
-          ? "Offline"
-          : `●${calculationResults < 100000000 ? " " : ""}${global.formatPrice(calculationResults)}`
+          ? Text.translatable("block.society.shipping_bin_monitor.offline")
+          : Text.of(`●${calculationResults < 100000000 ? " " : ""}${global.formatPrice(calculationResults)}`)
       );
     }
   }
@@ -47,17 +47,12 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .box(0, 0, 0, 16, 3, 16)
     .item((item) => {
-      item.tooltip(
-        Text.gray(
-          "Displays sell value of Shipping Bin below it with all bonuses applied. Updates every 10 seconds."
-        )
-      );
-      item.tooltip(Text.gray("Right click to manually update"));
+      item.tooltip(Text.translatable("block.society.shipping_bin_monitor.description").gray());
       item.modelJson({
-        parent: "society:block/shipping_bin_monitor",
+        parent: "society:block/kubejs/shipping_bin_monitor",
       });
     })
-    .model("society:block/shipping_bin_monitor")
+    .model("society:block/kubejs/shipping_bin_monitor")
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ value: 0 });
       blockInfo.serverTick(200, 0, (entity) => global.runShippingBinMonitor(entity));

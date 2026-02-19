@@ -5,6 +5,14 @@
 	group: "15230846E14B6926"
 	icon: "society:golden_clock"
 	id: "4AA29866E19A65A8"
+	images: [{
+		height: 3.0d
+		image: "society:textures/gui/seal_iridescent.png"
+		rotation: 0.0d
+		width: 3.0d
+		x: 13.5d
+		y: -6.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -33,11 +41,11 @@
 				}
 				id: "2C02508B4ADC5EF3"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest1.task_3171185646808882931.title}"
+				title: "{ftbquests.chapter.perfection.quest531CCAEFB0498F98.task.3171185646808882931.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest1.title}"
+			title: "{ftbquests.chapter.perfection.quest531CCAEFB0498F98.title}"
 			x: 6.5d
 			y: -3.5d
 		}
@@ -66,11 +74,11 @@
 				}
 				id: "2F6745B71CE2EE40"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest2.task_3415775495149776448.title}"
+				title: "{ftbquests.chapter.perfection.quest2D9AD3D0C59E682B.task.3415775495149776448.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest2.title}"
+			title: "{ftbquests.chapter.perfection.quest2D9AD3D0C59E682B.title}"
 			x: 4.5d
 			y: -4.0d
 		}
@@ -99,11 +107,11 @@
 				}
 				id: "0F890C6BB5B2D327"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest3.task_1119439639127708455.title}"
+				title: "{ftbquests.chapter.perfection.quest17D1D7EDA66A95F4.task.1119439639127708455.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest3.title}"
+			title: "{ftbquests.chapter.perfection.quest17D1D7EDA66A95F4.title}"
 			x: 4.0d
 			y: -6.0d
 		}
@@ -132,11 +140,11 @@
 				}
 				id: "3A37B10C5BC6FC29"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest4.task_4195016244556397609.title}"
+				title: "{ftbquests.chapter.perfection.quest3B928722AC96C4B0.task.4195016244556397609.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest4.title}"
+			title: "{ftbquests.chapter.perfection.quest3B928722AC96C4B0.title}"
 			x: 4.5d
 			y: -8.0d
 		}
@@ -165,11 +173,11 @@
 				}
 				id: "22040C7E30885D07"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest5.task_2451097833316048135.title}"
+				title: "{ftbquests.chapter.perfection.quest47CF88FE788DD872.task.2451097833316048135.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest5.title}"
+			title: "{ftbquests.chapter.perfection.quest47CF88FE788DD872.title}"
 			x: 6.5d
 			y: -8.5d
 		}
@@ -198,11 +206,11 @@
 				}
 				id: "501BDACA22C4758C"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest6.task_5772447909106972044.title}"
+				title: "{ftbquests.chapter.perfection.quest771697176D1B54CD.task.5772447909106972044.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest6.title}"
+			title: "{ftbquests.chapter.perfection.quest771697176D1B54CD.title}"
 			x: 8.5d
 			y: -8.0d
 		}
@@ -231,11 +239,11 @@
 				}
 				id: "2B09ED928759E57E"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest7.task_3101271032013120894.title}"
+				title: "{ftbquests.chapter.perfection.quest1F88FD241787720B.task.3101271032013120894.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest7.title}"
+			title: "{ftbquests.chapter.perfection.quest1F88FD241787720B.title}"
 			x: 9.0d
 			y: -6.0d
 		}
@@ -264,11 +272,11 @@
 				}
 				id: "261A61CC96B6691E"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest8.task_2745614454165498142.title}"
+				title: "{ftbquests.chapter.perfection.quest67F85F959DBBE0BD.task.2745614454165498142.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest8.title}"
+			title: "{ftbquests.chapter.perfection.quest67F85F959DBBE0BD.title}"
 			x: 8.5d
 			y: -4.0d
 		}
@@ -284,9 +292,9 @@
 				"2D9AD3D0C59E682B"
 			]
 			description: [
-				"{ftbquests.chapter.perfection.quest9.description1}"
+				"{ftbquests.chapter.perfection.quest272D9228BC46AEE0.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest9.description2}"
+				"{ftbquests.chapter.perfection.quest272D9228BC46AEE0.description2}"
 			]
 			icon: "supplementaries:present_blue"
 			id: "272D9228BC46AEE0"
@@ -296,16 +304,16 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.perfection.quest9.subtitle}"
+			subtitle: "{ftbquests.chapter.perfection.quest272D9228BC46AEE0.subtitle}"
 			tasks: [{
 				icon: "supplementaries:present_blue"
 				id: "0229473CF1E31A5E"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest9.task_155733989202795102.title}"
+				title: "{ftbquests.chapter.perfection.quest272D9228BC46AEE0.task.155733989202795102.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest9.title}"
+			title: "{ftbquests.chapter.perfection.quest272D9228BC46AEE0.title}"
 			x: 6.5d
 			y: -6.0d
 		}
@@ -318,9 +326,9 @@
 				"06EDF98282351F85"
 			]
 			description: [
-				"{ftbquests.chapter.perfection.quest10.description1}"
+				"{ftbquests.chapter.perfection.quest45120BEE01BB36B4.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest10.description2}"
+				"{ftbquests.chapter.perfection.quest45120BEE01BB36B4.description2}"
 			]
 			icon: "society:furniture_box"
 			id: "45120BEE01BB36B4"
@@ -340,16 +348,16 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.perfection.quest10.subtitle}"
+			subtitle: "{ftbquests.chapter.perfection.quest45120BEE01BB36B4.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "7D559D380A8E31EE"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest10.task_9031297491782218222.title}"
+				title: "{ftbquests.chapter.perfection.quest45120BEE01BB36B4.task.9031297491782218222.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest10.title}"
+			title: "{ftbquests.chapter.perfection.quest45120BEE01BB36B4.title}"
 			x: 20.0d
 			y: -6.0d
 		}
@@ -369,11 +377,11 @@
 				}
 				id: "0A12C2A9D0646C09"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest11.task_725856524561574921.title}"
+				title: "{ftbquests.chapter.perfection.quest6D5F31A96631A62D.task.725856524561574921.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest11.title}"
+			title: "{ftbquests.chapter.perfection.quest6D5F31A96631A62D.title}"
 			x: 20.0d
 			y: -8.5d
 		}
@@ -393,11 +401,11 @@
 				}
 				id: "1D4B6399A99F53CB"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest12.task_2110890361980146635.title}"
+				title: "{ftbquests.chapter.perfection.quest6EDF98282351F85.task.2110890361980146635.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest12.title}"
+			title: "{ftbquests.chapter.perfection.quest6EDF98282351F85.title}"
 			x: 21.5d
 			y: -8.0d
 		}
@@ -417,11 +425,11 @@
 				}
 				id: "55DE40F8D224D72D"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest13.task_6187454375475337005.title}"
+				title: "{ftbquests.chapter.perfection.quest77780C73C016EE60.task.6187454375475337005.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest13.title}"
+			title: "{ftbquests.chapter.perfection.quest77780C73C016EE60.title}"
 			x: 20.0d
 			y: -3.5d
 		}
@@ -441,11 +449,11 @@
 				}
 				id: "7059824FCE38CB5A"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest14.task_8095645084449033050.title}"
+				title: "{ftbquests.chapter.perfection.quest6C7C42BC9E072DE1.task.8095645084449033050.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest14.title}"
+			title: "{ftbquests.chapter.perfection.quest6C7C42BC9E072DE1.title}"
 			x: 22.5d
 			y: -6.0d
 		}
@@ -465,19 +473,19 @@
 				}
 				id: "4CCED45B2E1CCFBA"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest15.task_5534594480165670842.title}"
+				title: "{ftbquests.chapter.perfection.quest54E8CF90BE620790.task.5534594480165670842.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest15.title}"
+			title: "{ftbquests.chapter.perfection.quest54E8CF90BE620790.title}"
 			x: 21.5d
 			y: -4.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.perfection.quest16.description1}"
+				"{ftbquests.chapter.perfection.quest5875FF0D35A7E422.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest16.description2}"
+				"{ftbquests.chapter.perfection.quest5875FF0D35A7E422.description2}"
 			]
 			id: "5875FF0D35A7E422"
 			rewards: [{
@@ -495,9 +503,9 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.perfection.quest17.description1}"
+				"{ftbquests.chapter.perfection.quest769AC695FD3F8DC9.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest17.description2}"
+				"{ftbquests.chapter.perfection.quest769AC695FD3F8DC9.description2}"
 			]
 			id: "769AC695FD3F8DC9"
 			rewards: [{
@@ -515,9 +523,9 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.perfection.quest18.description1}"
+				"{ftbquests.chapter.perfection.quest3E074A7E5B773419.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest18.description2}"
+				"{ftbquests.chapter.perfection.quest3E074A7E5B773419.description2}"
 			]
 			id: "3E074A7E5B773419"
 			rewards: [{
@@ -535,9 +543,9 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.perfection.quest19.description1}"
+				"{ftbquests.chapter.perfection.quest6C342B7B66C29823.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest19.description2}"
+				"{ftbquests.chapter.perfection.quest6C342B7B66C29823.description2}"
 			]
 			id: "6C342B7B66C29823"
 			rewards: [{
@@ -555,11 +563,11 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.perfection.quest20.description1}"
+				"{ftbquests.chapter.perfection.questA1FA99B227284C7.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest20.description2}"
+				"{ftbquests.chapter.perfection.questA1FA99B227284C7.description2}"
 				""
-				"{ftbquests.chapter.perfection.quest20.description3}"
+				"{ftbquests.chapter.perfection.questA1FA99B227284C7.description3}"
 			]
 			id: "0A1FA99B227284C7"
 			rewards: [{
@@ -569,13 +577,13 @@
 			}]
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.perfection.quest20.subtitle}"
+			subtitle: "{ftbquests.chapter.perfection.questA1FA99B227284C7.subtitle}"
 			tasks: [{
 				id: "7959848F2CA6F6F6"
 				item: "society:golden_clock"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.perfection.quest20.title}"
+			title: "{ftbquests.chapter.perfection.questA1FA99B227284C7.title}"
 			x: 13.5d
 			y: -10.0d
 		}
@@ -591,11 +599,11 @@
 				"4A708E01E3A3B8D3"
 			]
 			description: [
-				"{ftbquests.chapter.perfection.quest21.description1}"
+				"{ftbquests.chapter.perfection.quest17064AEF4212B5FF.description1}"
 				""
-				"{ftbquests.chapter.perfection.quest21.description2}"
+				"{ftbquests.chapter.perfection.quest17064AEF4212B5FF.description2}"
 				""
-				"{ftbquests.chapter.perfection.quest21.description3}"
+				"{ftbquests.chapter.perfection.quest17064AEF4212B5FF.description3}"
 			]
 			icon: {
 				Count: 1
@@ -620,18 +628,18 @@
 				}
 				type: "item"
 			}]
-			shape: "octagon"
+			shape: "none"
 			size: 3.0d
-			subtitle: "{ftbquests.chapter.perfection.quest21.subtitle}"
+			subtitle: "{ftbquests.chapter.perfection.quest17064AEF4212B5FF.subtitle}"
 			tasks: [{
 				icon: "fantasyfurniture:decorations/bone_skeleton_skull_blossoms"
 				id: "09B79BA0E1E2F6AA"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest21.task_700199382366221994.title}"
+				title: "{ftbquests.chapter.perfection.quest17064AEF4212B5FF.task.700199382366221994.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest21.title}"
+			title: "{ftbquests.chapter.perfection.quest17064AEF4212B5FF.title}"
 			x: 13.5d
 			y: -6.0d
 		}
@@ -651,11 +659,11 @@
 				}
 				id: "31D755B4F7304289"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.perfection.quest22.task_3591433463580869257.title}"
+				title: "{ftbquests.chapter.perfection.quest4A708E01E3A3B8D3.task.3591433463580869257.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.perfection.quest22.title}"
+			title: "{ftbquests.chapter.perfection.quest4A708E01E3A3B8D3.title}"
 			x: 13.625000000000007d
 			y: -1.3214285714285765d
 		}

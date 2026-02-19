@@ -1,4 +1,5 @@
-console.info("[SOCIETY] neptuniumHoe.js loaded");
+console.info("[SOCIETY] magnifyingGlass.js loaded");
+
 const DELAY = 10;
 const REPETITIONS = 10;
 
@@ -6,11 +7,13 @@ const magnifyingGlassBlocks = [
   { id: "society:auto_grabber", radius: 5, includeY: true },
   { id: "society:artisan_hopper", radius: 3, includeY: true },
   { id: "society:mini_artisan_hopper", radius: 1, includeY: true },
+  { id: "society:auto_petter", radius: 1, includeY: true },
   { id: "society:fish_pond_basket", radius: 1, includeY: true },
   { id: "society:feeding_trough", radius: 6, includeY: true },
   { id: "splendid_slimes:slime_feeder", radius: 6, includeY: true },
   { id: "dew_drop_farmland_growth:iron_sprinkler", radius: 1 },
   { id: "dew_drop_farmland_growth:gold_sprinkler", radius: 2 },
+  { id: "society:mana_sprinkler", radius: 2 },
   { id: "dew_drop_farmland_growth:diamond_sprinkler", radius: 3 },
   { id: "dew_drop_farmland_growth:netherite_sprinkler", radius: 4 },
   { id: "society:mana_milker", radius: 10, includeY: true },
@@ -20,6 +23,7 @@ const magnifyingGlassBlocks = [
   { id: "farmingforblockheads:chicken_nest", radius: 8, includeY: true },
   { id: "society:growth_obelisk", radius: 3, includeY: false },
   { id: "society:ribbit_hut", radius: 7, includeY: false },
+  { id: "society:mushroom_log", radius: 8, includeY: true },
 ];
 const magnifyingGlassBlockIds = magnifyingGlassBlocks.map((x) => x.id);
 
