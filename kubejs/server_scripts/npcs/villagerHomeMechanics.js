@@ -147,7 +147,12 @@ BlockEvents.broken("society:villager_home", (e) => {
     block.popItem(Item.of(block.id, `{type:${type}}`));
     player.persistentData.npcData[type].dayLastPlaced = -10
   } else {
-    if (!(type == undefined || placer == undefined || boundNpc == undefined))
-      e.cancel();
+    if (!(type == undefined || placer == undefined || boundNpc == undefined)) {
+      if (!player.isCreative()) {
+        e.cancel();
+      } else {
+        player.tell("Unbound villager to home! If the villager still exists, run /easy_npc delete @e")
+      }
+    }
   }
 });

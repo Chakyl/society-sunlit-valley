@@ -69,7 +69,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:broken_clock").texture("society:item/broken_clock");
   e.create("society:sea_biscut")
     .texture("society:item/sea_biscut")
-    .displayName("Sea Biscuit");
+    .displayName("Sea Biscuit").fireResistant(true);
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
   e.create("society:ancient_roe").texture("society:item/ancient_roe");

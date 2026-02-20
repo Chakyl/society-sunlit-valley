@@ -1,8 +1,25 @@
 ^^^
 ## The Heart of the Community
-### v4.0.0
+### v4.0.1
 ^^^
 --- 
+## 4.0.1
+- Villager home blocks can now be removed in creative if broken
+- Fixed Trades not matching on auto-trader
+- Fixed Auto-Trader not dropping when broken
+- Fixed old plushies not converting to the new system
+- Fixed building shop quest text
+- Fixed Pale Oak Logs always erroring
+- Fixed several blueprints not having the correct trades
+- Fixed artisan machines that should preserve quality not doing so when placed before 4.0
+- Fixed various network issues on certain servers (probably)
+- Fixed npc intros not playing if you didn't place down the block
+- Fixed Haruna's intro being wip
+- Fixed foraged items like eggs not properly using quality
+- Fixed cooking collection having removed item
+- Fixed Fish Ponds showing they have a quest at 10 max population
+- Fixed Fish Pond baskets draining fish ponds
+## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
 - Added 6 handmade villagers with art by NifastGreentail and Nitbe
 - Added Invitations, sold by the Carpenter villager (craftable invitation)

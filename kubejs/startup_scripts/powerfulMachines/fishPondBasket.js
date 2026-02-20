@@ -14,7 +14,6 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
   if (
     newProperties.get("mature").toLowerCase() === "true" &&
-    max_population === population &&
     global.inventoryBelowHasRoom(level, block, global.getRoe(type)) &&
     (recycleSparkstone || global.useInventoryItems(inventory, "society:sparkstone", 1) == 1)
   ) {
@@ -41,7 +40,7 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   if (
     newProperties.get("mature").toLowerCase() === "true" &&
     level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
-    population > 0
+    population > 0 &&  max_population === population
   ) {
     let fishie = global.handleFishExtraction(fishPond, player, server);
     recycleSparkstone = global.checkSparkstoneRecyclers(level, block);

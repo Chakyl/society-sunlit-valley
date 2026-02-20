@@ -48,7 +48,11 @@ global.getHusbandryQuality = (hearts, mood, milk) => {
         heartQuality = Math.floor((hearts % 11) / 2 - 2);
       }
     } else {
-      heartQuality = Math.floor((hearts % 11) / 2 - 2);
+      if (hearts >= 10) {
+        heartQuality = 3;
+      } else {
+        heartQuality = Math.floor((hearts % 11) / 2 - 2);
+      }
     }
   }
   if (mood > 224) moodQuality = 3;
@@ -420,7 +424,7 @@ const getNearbyBlocks = (level, target, radius, tag) => {
 
 
 global.getOrFetchMood = (level, target, day, player, debugMood) => {
-  if (!global.checkEntityTag(target, "society:pet_animal")) return 256;
+  if (global.checkEntityTag(target, "society:pet_animal")) return 256;
   const data = target.persistentData;
   let moodDebuffs = 0;
   let moodImpactModifier = getMoodImpactModifier(target);
@@ -457,10 +461,6 @@ global.getOrFetchMood = (level, target, day, player, debugMood) => {
   if (level.raining && level.canSeeSky(target.getPos())) {
     moodDebuffs += 32;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.wet").red());
-  }
-  if (level.getBlock(target.getPos()).hasTag("create:seats")) {
-    moodDebuffs += 48;
-    if (debugMood) player.tell(Text.translatable("society.husbandry.mood.trapped").red());
   }
   let baseDebuffs = moodDebuffs
   moodDebuffs = moodDebuffs *= moodImpactModifier;
