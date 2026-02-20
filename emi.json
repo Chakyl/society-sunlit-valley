@@ -5,9 +5,39 @@
     },
     {
       "stack": "item:minecraft:oak_door"
+    },
+    {
+      "stack": "item:farm_and_charm:pasta_with_onion_sauce"
+    },
+    {
+      "stack": "item:farm_and_charm:farmer_salad"
+    },
+    {
+      "stack": "item:farm_and_charm:barley_soup"
+    },
+    {
+      "stack": "item:bakery:sandwich"
+    },
+    {
+      "stack": "item:refurbished_furniture:vegetable_pizza_slice"
+    },
+    {
+      "stack": "item:herbalbrews:coffee"
     }
   ],
   "lookup_history": [
+    "item:herbalbrews:witch_hat{Damage:0}",
+    "item:society:sunlit_crystal",
+    "item:society:treasure_totem",
+    "item:society:mystic_syrup",
+    "item:cluttered:willow_sapling",
+    "item:society:sparkpod_seed",
+    "item:minecraft:wolf_armor{Damage:0}",
+    "item:brewery:beer_hops",
+    "#item:brewery:beer",
+    "item:brewery:pork_knuckle",
+    "item:minecraft:pale_oak_log",
+    "item:whimsy_deco:phone",
     "item:society_trading:auto_trader",
     "item:society:villager{type:{id:\"society:banker\"}}",
     "item:sophisticatedbackpacks:tool_swapper_upgrade",
@@ -82,7 +112,6 @@
     "item:justhammers:small_core",
     "item:justhammers:stone_hammer{Damage:0}",
     "item:justhammers:iron_hammer{Damage:0,Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:fortune\",lvl:3s}],RepairCost:0,display:{Name:\u0027{\"text\":\"§6Aiden\\\u0027s Hammer\"}\u0027}}",
-    "item:society:sparkpod_seed",
     "item:society:universal_methods_of_farming",
     "item:waystones:waystone",
     "item:society:slouching_towards_artistry",
@@ -126,11 +155,6 @@
       "type": "fluid",
       "id": "society:mystic_syrup",
       "amount": 250
-    },
-    {
-      "type": "item",
-      "id": "society:mystic_syrup",
-      "amount": 2
     },
     {
       "type": "item",
@@ -195,7 +219,6 @@
       "id": "society:tanuki_leaf",
       "amount": 48
     },
-    "item:cluttered:willow_sapling",
     {
       "type": "item",
       "id": "minecraft:magenta_dye",
@@ -459,7 +482,6 @@
     "item:botania:mana_tablet{creative:1b,mana:500000}",
     "item:domesticationinnovation:pet_bed_white",
     "item:minecraft:spruce_log",
-    "item:whimsy_deco:phone",
     "item:candlelight:cooking_pot",
     "item:unusualfishmod:ripper_tooth",
     "item:society:large_amethyst_milk",
@@ -486,7 +508,6 @@
     },
     "item:society:oak_resin",
     "item:society:plushie_wand",
-    "item:society:sunlit_crystal",
     "item:botania:twig_wand{color1:1,color2:1}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:orby\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
@@ -732,7 +753,6 @@
     "item:minecraft:music_disc_11",
     "item:minecraft:netherite_ingot",
     "item:society:needle_bobber",
-    "item:society:treasure_totem",
     "item:minecraft:music_disc_5",
     "item:minecraft:music_disc_mall",
     "item:society:animal_cracker",
@@ -897,10 +917,10 @@
     "item:veggiesdelight:zucchini_quiche",
     [
       "item:farmersdelight:cooked_bacon",
-      "item:brewery:pork_knuckle",
+      "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
       "item:farm_and_charm:bacon_with_eggs",
-      "item:candlelight:pork_ribs",
+      "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -911,16 +931,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/zucchini",
+      "#item:forge:crops/cauliflower",
       "#item:forge:crops/potato",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1504,16 +1524,7 @@
       "type": "item",
       "id": "minecraft:stone",
       "amount": 12
-    },
-    "item:species:kinetic_core",
-    "item:minecraft:oak_slab",
-    "#item:minecraft:wooden_slabs",
-    "item:create:mechanical_saw",
-    "item:minecraft:fletching_table",
-    "item:simplehats:icedragonskull",
-    "item:vinery:jungle_grape_seeds_red",
-    "item:farmersdelight:cooked_rice",
-    "item:nethervinery:warped_grapejuice"
+    }
   ],
   "craft_history": [
     "minecraft:kjs/society_dehydrator",
@@ -1623,9 +1634,9 @@
   ],
   "recipe_defaults": {
     "added": [
+      "minecraft:kjs/society_sun_candy",
       "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
-      "netherdepthsupgrade:eyeball",
-      "minecraft:kjs/society_sun_candy"
+      "netherdepthsupgrade:eyeball"
     ],
     "tags": {},
     "resolutions": {

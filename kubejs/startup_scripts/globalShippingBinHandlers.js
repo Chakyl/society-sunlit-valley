@@ -109,12 +109,21 @@ global.processShippingBinInventory = (
       ) {
         itemValue *= 2;
       }
-
-      calculatedValue += Math.round(
+      let additionalValue = Math.round(
         itemValue *
         inventory.getStackInSlot(i).count *
         global.getAttributeMultiplier(attributes, trade.multiplier)
       );
+      if (isNaN(additionalValue)) {
+        console.log("SHIPPING BIN VALUE IS NAN! DEBUG LOG:")
+        console.log("itemValue: " + itemValue)
+        console.log("attrbMult: " + global.getAttributeMultiplier(attributes, trade.multiplier))
+        console.log("Trade Value: " + trade.value)
+        calculatedValue += itemValue * inventory.getStackInSlot(i).count
+      } else {
+        calculatedValue += additionalValue
+      }
+
     }
     if (isSellable && !simulated) {
       if (returnRemoved) removedItems.push(i);

@@ -71,10 +71,10 @@ global.tapperRecipes = new Map([
     },
   ],
   [
-    "vanillabackport:pale_oak_log",
+    "minecraft:pale_oak_log",
     {
-      leaves: ["vanillabackport:pale_oak_leaves"],
-      output: ["32x vanillabackport:resin_clump"],
+      leaves: ["minecraft:pale_oak_leaves"],
+      output: ["32x minecraft:resin_clump"],
       fluidOutput: "society:oak_resin",
       time: 2,
     },
