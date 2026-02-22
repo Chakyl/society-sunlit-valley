@@ -85,7 +85,7 @@ global.processShippingBinInventory = (
         quality > 0 &&
         stages.toString().includes("the_quality_of_the_earth") &&
         trade.multiplier.equals("shippingbin:crop_sell_multiplier") &&
-        Item.of(slotItem).hasTag("minecraft:fishes")
+        !Item.of(slotItem).hasTag("minecraft:fishes")
       ) {
         doubleQuality = true;
       }

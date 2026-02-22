@@ -44,7 +44,7 @@ BlockEvents.placed("society:villager_home", (e) => {
       npcData = player.persistentData.npcData[villagerType];
     }
     if (!npcData.dayLastPlaced) npcData.dayLastPlaced = -10
-    if (Number(npcData.dayLastPlaced) + 10 < day) {
+    if (day > Number(npcData.dayLastPlaced) + 10 || Number(npcData.dayLastPlaced) - day > 1) {
       let nearbyNPCs = level
         .getEntitiesWithin(AABB.ofBlock(block).inflate(3))
         .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
@@ -56,7 +56,7 @@ BlockEvents.placed("society:villager_home", (e) => {
           )}.npc.nbt ${x} ${y + 0.25} ${z}`
         );
         nearbyNPCs = level
-          .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
+          .getEntitiesWithin(AABB.ofBlock(block).inflate(2))
           .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
 
         level.spawnParticles(

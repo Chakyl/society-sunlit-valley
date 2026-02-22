@@ -45,12 +45,9 @@ global.susFunctionLogging = false;
  * Client and server need to change this for accurate tooltips. 
  * Global modifiers for the different categories of products. 
  * Can be used to make the game easier or harder depending on your preferences.
+ * 
+ * THIS WAS MOVED TO THE BUTTOM OF globalRegistry.js
  */
-
-global.farmerProductMult = 1.0
-global.artisanProductMult = 1.0
-global.miningProductMult = 1.0
-global.adventurerProductMult = 1.0
 
 /**
  * REMOVED CONFIG OPTION! THIS DOES NOTHING!

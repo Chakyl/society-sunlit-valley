@@ -1,24 +1,21 @@
 ^^^
 ## The Heart of the Community
-### v4.0.1
+### v4.0.2
 ^^^
 --- 
-## 4.0.1
-- Villager home blocks can now be removed in creative if broken
-- Fixed Trades not matching on auto-trader
-- Fixed Auto-Trader not dropping when broken
-- Fixed old plushies not converting to the new system
-- Fixed building shop quest text
-- Fixed Pale Oak Logs always erroring
-- Fixed several blueprints not having the correct trades
-- Fixed artisan machines that should preserve quality not doing so when placed before 4.0
-- Fixed various network issues on certain servers (probably)
-- Fixed npc intros not playing if you didn't place down the block
-- Fixed Haruna's intro being wip
-- Fixed foraged items like eggs not properly using quality
-- Fixed cooking collection having removed item
-- Fixed Fish Ponds showing they have a quest at 10 max population
-- Fixed Fish Pond baskets draining fish ponds
+## 4.0.2
+- Updated Korean translation
+- Reduced mood cramping check to match existing affection cramping check
+- Reduced mult of mood impact modifiers (1.5 -> 1.25, 2 -> 1.5)
+- Fixed villager homes binding to the incorrect NPC
+- Fixed /time set making it impossible to place villager homes
+- Fixed Shepherd house having infested chiseled stone bricks
+- Fixed Iridium clock being off by 64 after reaching 64 triggers
+- Fixed Slime Tickets having incorrect foods for Orby and Minty slimes
+- Fixed Pale Oak Logs not selling and other similar bugs
+- Fixed the veggies delight mashed potato recipe being broken
+- Fixed Quality of the Earth not working correctly
+- Fixed Auto-Grabber ignoring plushie modifiers
 ## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
 - Added 6 handmade villagers with art by NifastGreentail and Nitbe
@@ -188,3 +185,20 @@
 - Fixed Sparkstone and Neptunium Blocks not being a valid beacon block
 - Fixed Birtday Cake not having a recipe
 - Fixed exploits
+
+## 4.0.1
+- Villager home blocks can now be removed in creative if broken
+- Fixed Trades not matching on auto-trader
+- Fixed Auto-Trader not dropping when broken
+- Fixed old plushies not converting to the new system
+- Fixed building shop quest text
+- Fixed Pale Oak Logs always erroring
+- Fixed several blueprints not having the correct trades
+- Fixed artisan machines that should preserve quality not doing so when placed before 4.0
+- Fixed various network issues on certain servers (probably)
+- Fixed npc intros not playing if you didn't place down the block
+- Fixed Haruna's intro being wip
+- Fixed foraged items like eggs not properly using quality
+- Fixed cooking collection having removed item
+- Fixed Fish Ponds showing they have a quest at 10 max population
+- Fixed Fish Pond baskets draining fish ponds

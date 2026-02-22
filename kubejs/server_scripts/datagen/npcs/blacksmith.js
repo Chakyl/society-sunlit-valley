@@ -91,7 +91,7 @@ if (global.datagenDialog) {
         "Ace gave me some mossberries from yesterday's chopping run! They're so pleasantly tangy!",
         "I love the fresh smell of the valley, they remind me of spring magnolias from my home town.",
         "Leon has started waving to me regularly! Does this mean what I think it does?",
-        ["Have you upgraded your tools to iridium yet?","Ace was telling me it's more plentiful on the lower depths of the Skull Cavern!"],
+        ["Have you upgraded your tools to iridium yet?", "Ace was telling me it's more plentiful on the lower depths of the Skull Cavern!"],
         ["I would love to get my hands on a prismatic shard...", "The Skull Cavern is far too dangerous for a person like me to traverse!"],
         ["Maria made me this perfect sweater for these harsh winters!", "Too bad it's a little small for me, but at least it's nice to look at!"],
         ["Leon said something nice to me!", "Well maybe it was nice, I'm not quite sure.", "But it at least felt good to hear!"],

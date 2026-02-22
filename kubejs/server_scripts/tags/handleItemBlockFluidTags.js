@@ -250,7 +250,7 @@ const rawLogs = [
   "atmospheric:crustose_log",
   "atmospheric:grimwood_log",
   "vintagedelight:magic_vine",
-  "vanillabackport:pale_oak_log",
+  "minecraft:pale_oak_log",
   "cluttered:willow_log",
   "cluttered:flowering_willow_log",
   "cluttered:poplar_log",
@@ -459,7 +459,7 @@ ServerEvents.tags("item", (e) => {
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
-  e.add("forge:stripped_logs", "vanillabackport:stripped_pale_oak_log");
+  e.add("forge:stripped_logs", "minecraft:stripped_pale_oak_log");
   [
     "twigs:tangerine_seashell",
     "twigs:roseate_seashell",

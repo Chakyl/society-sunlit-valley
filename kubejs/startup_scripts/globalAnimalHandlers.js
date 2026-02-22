@@ -401,8 +401,8 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers) => {
 };
 
 const getMoodImpactModifier = (target) => {
-  if (global.tierTwoHusbandryAnimals.includes(target.type)) return 1.5;
-  if (global.tierThreeHusbandryAnimals.includes(target.type)) return 2;
+  if (global.tierTwoHusbandryAnimals.includes(target.type)) return 1.25;
+  if (global.tierThreeHusbandryAnimals.includes(target.type)) return 1.5;
   return 1;
 };
 
@@ -441,7 +441,7 @@ global.getOrFetchMood = (level, target, day, player, debugMood) => {
   if (global.coldMobs.includes(target.type)) {
     requiredBlocks = getNearbyBlocks(level, target, 5, "society:cold_blocks");
     if (requiredBlocks < 5) {
-      let coldDebuff = 32 - requiredBlocks / (5 * 32)
+      let coldDebuff = 32 - (32 * requiredBlocks) / 5
       moodDebuffs += coldDebuff;
       if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_cold", coldDebuff).red());
     }
@@ -454,7 +454,7 @@ global.getOrFetchMood = (level, target, day, player, debugMood) => {
       if (debugMood) player.tell(Text.translatable("society.husbandry.mood.too_cold").red());
     }
   }
-  if (!global.getAnimalIsNotCramped(target, 3, debugMood)) {
+  if (!global.getAnimalIsNotCramped(target, 1.1, debugMood)) {
     moodDebuffs += 96;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.cramped").red());
   }
@@ -463,7 +463,7 @@ global.getOrFetchMood = (level, target, day, player, debugMood) => {
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.wet").red());
   }
   let baseDebuffs = moodDebuffs
-  moodDebuffs = moodDebuffs *= moodImpactModifier;
+  moodDebuffs *= moodImpactModifier;
   if (day - data.getInt("ageLastBoosted") == 1) {
     moodDebuffs -= 24;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.boosted_food").green());
@@ -478,8 +478,6 @@ global.getOrFetchMood = (level, target, day, player, debugMood) => {
   }
   if (day > data.getInt("ageLastPet")) {
     data.lastMood = Math.max(0, 256 - moodDebuffs);
-    // 4.1 TODO: Re-enable
-    // if (256 - moodDebuffs < 8) data.affection = data.affection - 20;
   }
   return data.lastMood;
 };
