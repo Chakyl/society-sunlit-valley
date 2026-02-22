@@ -915,8 +915,8 @@ global.logs = [
   { item: "minecraft:stripped_crimson_stem", value: 16 },
   { item: "vintagedelight:magic_vine", value: 32 },
   { item: "vintagedelight:stripped_magic_vine", value: 32 },
-  { item: "vanillabackport:pale_oak_log", value: 8 },
-  { item: "vanillabackport:stripped_pale_oak_log", value: 8 },
+  { item: "minecraft:pale_oak_log", value: 8 },
+  { item: "minecraft:stripped_pale_oak_log", value: 8 },
   { item: "farmersdelight:straw", value: 3 },
   { item: "farmersdelight:straw_bale", value: 27 },
   { item: "farmersdelight:canvas", value: 12 },
@@ -1871,6 +1871,11 @@ global.plorts.forEach((plort) => {
   });
 });
 
+global.farmerProductMult = 1.0
+global.artisanProductMult = 1.0
+global.miningProductMult = 1.0
+global.adventurerProductMult = 1.0
+
 global.trades = new Map();
 
 global.getConfiguredValue = (value, mult) => {
@@ -1892,39 +1897,194 @@ global.getConfiguredValue = (value, mult) => {
   }
   return Math.round(multedValue)
 }
-const registerTrades = (tradeArray, mult, keyPrefix) => {
-  let resolvedValue;
-  tradeArray.forEach((trade) => {
-    resolvedValue = global.getConfiguredValue(trade.value, mult)
-    global.trades.set(`${keyPrefix ? keyPrefix : ""}${keyPrefix ? trade.type : trade.item}`, {
-      value: resolvedValue,
-      multiplier: `shippingbin:${mult}_sell_multiplier`,
-    });
+global.ore.forEach((oreItem) => {
+  const { item, value } = oreItem;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "gem"),
+    multiplier: "shippingbin:gem_sell_multiplier",
   });
-}
-registerTrades(global.ore, "gem");
-registerTrades(global.pristine, "gem");
-registerTrades(global.crops, "crop");
-registerTrades(global.animalProducts, "crop");
-registerTrades(global.cooking, "crop");
-registerTrades(global.wines, "wood");
-registerTrades(global.brews, "wood");
-registerTrades(global.geodeList, "gem");
-registerTrades(global.frozenGeodeList, "gem");
-registerTrades(global.magmaGeodeList, "gem");
-registerTrades(global.gems, "gem");
-registerTrades(global.miscGeologist, "gem");
-registerTrades(global.artifacts, "meat");
-registerTrades(global.relics, "meat");
-registerTrades(global.preserves, "wood");
-registerTrades(global.dehydrated, "wood");
-registerTrades(global.artisanGoods, "wood");
-registerTrades(global.fish, "crop");
-registerTrades(global.smokedFish, "wood");
-registerTrades(global.agedRoe, "wood");
-registerTrades(global.cocktails, "crop");
-registerTrades(global.herbalBrews, "crop");
-registerTrades(global.logs, "crop");
-registerTrades(global.miscAdventurer, "meat");
-registerTrades(global.plorts, "crop", "splendid_slimes:plort/");
-registerTrades(global.slimeHearts, "crop", "splendid_slimes:slime_heart/");
+});
+global.pristine.forEach((pristineItem) => {
+  const { item, value } = pristineItem;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "gem"),
+    multiplier: "shippingbin:gem_sell_multiplier",
+  });
+});
+global.crops.forEach((crop) => {
+  const { item, value } = crop;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.animalProducts.forEach((meat) => {
+  const { item, value } = meat;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.cooking.forEach((dish) => {
+  const { item, value } = dish;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.wines.forEach((wine) => {
+  const { item, value } = wine;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "wood"),
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.brews.forEach((brew) => {
+  const { item, value } = brew;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "wood"),
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.geodeList.forEach((treasure) => {
+  const { item, value } = treasure;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, item === "society:froggy_helm" ? "meat" :"gem"),
+    multiplier:
+      item === "society:froggy_helm"
+        ? "shippingbin:meat_sell_multiplier"
+        : "shippingbin:gem_sell_multiplier",
+  });
+});
+global.frozenGeodeList.forEach((treasure) => {
+  const { item, value } = treasure;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, item === "society:ribbit_drum" ? "meat" :"gem"),
+    multiplier:
+      item === "society:ribbit_drum"
+        ? "shippingbin:meat_sell_multiplier"
+        : "shippingbin:gem_sell_multiplier",
+  });
+});
+global.magmaGeodeList.forEach((treasure) => {
+  const { item, value } = treasure;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, item === "society:ribbit_gadget" ? "meat" :"gem"),
+    multiplier:
+      item === "society:ribbit_gadget"
+        ? "shippingbin:meat_sell_multiplier"
+        : "shippingbin:gem_sell_multiplier",
+  });
+});
+global.gems.forEach((treasure) => {
+  const { item, value } = treasure;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "gem"),
+    multiplier: "shippingbin:gem_sell_multiplier",
+  });
+});
+global.miscGeologist.forEach((treasure) => {
+  const { item, value } = treasure;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "gem"),
+    multiplier: "shippingbin:gem_sell_multiplier",
+  });
+});
+global.artifacts.forEach((treasure) => {
+  const { item, value } = treasure;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "meat"),
+    multiplier: "shippingbin:meat_sell_multiplier",
+  });
+});
+global.relics.forEach((treasure) => {
+  const { item, value } = treasure;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "meat"),
+    multiplier: "shippingbin:meat_sell_multiplier",
+  });
+});
+global.preserves.forEach((jar) => {
+  const { item, value } = jar;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "wood"),
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.dehydrated.forEach((dehydratee) => {
+  const { item, value } = dehydratee;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "wood"),
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.artisanGoods.forEach((good) => {
+  const { item, value } = good;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "wood"),
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.fish.forEach((fish) => {
+  const { item, value } = fish;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.smokedFish.forEach((fish) => {
+  const { item, value } = fish;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "wood"),
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.agedRoe.forEach((fish) => {
+  const { item, value } = fish;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "wood"),
+    multiplier: "shippingbin:wood_sell_multiplier",
+  });
+});
+global.cocktails.forEach((cocktail) => {
+  const { item, value } = cocktail;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.herbalBrews.forEach((brew) => {
+  const { item, value } = brew;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.logs.forEach((log) => {
+  const { item, value } = log;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.miscAdventurer.forEach((miscItem) => {
+  const { item, value } = miscItem;
+  global.trades.set(item, {
+    value: global.getConfiguredValue(value, "meat"),
+    multiplier: "shippingbin:meat_sell_multiplier",
+  });
+});
+global.plorts.forEach((plort) => {
+  const { type, value } = plort;
+  global.trades.set(`splendid_slimes:plort/${type}`, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+global.slimeHearts.forEach((heart) => {
+  const { type, value } = heart;
+  global.trades.set(`splendid_slimes:slime_heart/${type}`, {
+    value: global.getConfiguredValue(value, "crop"),
+    multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});

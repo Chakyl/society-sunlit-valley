@@ -39,7 +39,7 @@ global.runIridiumClock = (entity) => {
     if (spinelToInsert < 64) {
       global.insertInto(block, Item.of(`${spinelToInsert}x ${spinelType}`));
     } else {
-      for (let i = 0; i < roundedStacks; i++) {
+      for (let i = 0; i <= roundedStacks; i++) {
         if (roundedStacks - 1 == i && spinelToInsert % 64 !== 0) {
           global.insertInto(block, Item.of(`${spinelToInsert - (roundedStacks * 64)}x ${spinelType}`));
         } else {

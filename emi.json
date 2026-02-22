@@ -26,12 +26,16 @@
     }
   ],
   "lookup_history": [
+    "item:veggiesdelight:mashed_potatoes",
+    "item:brewery:mashed_potatoes",
+    "item:minecraft:spider_eye",
+    "item:society:sparkpod_seed",
+    "item:create:tree_fertilizer",
     "item:herbalbrews:witch_hat{Damage:0}",
     "item:society:sunlit_crystal",
     "item:society:treasure_totem",
     "item:society:mystic_syrup",
     "item:cluttered:willow_sapling",
-    "item:society:sparkpod_seed",
     "item:minecraft:wolf_armor{Damage:0}",
     "item:brewery:beer_hops",
     "#item:brewery:beer",
@@ -918,9 +922,9 @@
     [
       "item:farmersdelight:cooked_bacon",
       "item:candlelight:pork_ribs",
-      "item:minecraft:cooked_porkchop",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:minecraft:cooked_porkchop",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -932,8 +936,8 @@
     "item:veggiesdelight:raw_vegetarian_patty",
     [
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/zucchini",
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -1096,11 +1100,6 @@
     "item:farm_and_charm:stove",
     "item:minecraft:campfire",
     "item:minecraft:bricks",
-    {
-      "type": "item",
-      "id": "veggiesdelight:mashed_potatoes",
-      "amount": 2
-    },
     "item:crabbersdelight:pearl_block",
     "item:rehooked:wood_hook",
     {
@@ -1481,7 +1480,6 @@
       "id": "minecraft:flint",
       "amount": 3
     },
-    "item:create:tree_fertilizer",
     "item:numismatics:sprocket",
     "item:splendid_slimes:plort_rippit",
     "item:society:large_buffalo_milk",
@@ -1634,8 +1632,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_sun_candy",
       "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
+      "minecraft:kjs/society_sun_candy",
       "netherdepthsupgrade:eyeball"
     ],
     "tags": {},

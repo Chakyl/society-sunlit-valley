@@ -4,7 +4,18 @@
 ^^^
 --- 
 ## 4.0.2
-- TODO
+- Updated Korean translation
+- Reduced mood cramping check to match existing affection cramping check
+- Reduced mult of mood impact modifiers (1.5 -> 1.25, 2 -> 1.5)
+- Fixed villager homes binding to the incorrect NPC
+- Fixed /time set making it impossible to place villager homes
+- Fixed Shepherd house having infested chiseled stone bricks
+- Fixed Iridium clock being off by 64 after reaching 64 triggers
+- Fixed Slime Tickets having incorrect foods for Orby and Minty slimes
+- Fixed Pale Oak Logs not selling and other similar bugs
+- Fixed the veggies delight mashed potato recipe being broken
+- Fixed Quality of the Earth not working correctly
+- Fixed Auto-Grabber ignoring plushie modifiers
 ## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
 - Added 6 handmade villagers with art by NifastGreentail and Nitbe

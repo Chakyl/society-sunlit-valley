@@ -268,13 +268,13 @@ global.handleFishHarvest = (block, player, server, basket) => {
   if (!basket) {
     global.giveExperience(server, player, "fishing", roeCount * 4);
   }
-  if (Number(max_population) === 10 && quest === "true") {
+  if (Number(max_population) === 10 && quest === true) {
     block.set(block.id, {
       facing: facing,
       valid: valid,
       mature: false,
       upgraded: upgraded,
-      quest: "false",
+      quest: false,
     });
   } else {
     block.set(block.id, {

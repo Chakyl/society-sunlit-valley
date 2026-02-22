@@ -281,7 +281,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       } = loadedData;
       let hasInfinityWorm =
         artisanMachine.id === "society:deluxe_worm_farm" && upgraded;
-      let machineOutputs;
+      let machineOutputs = [];
       let type;
       let newProperties = artisanMachine.getProperties();
       let recycleSparkstone;
@@ -310,6 +310,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else if (hasInfinityWorm) {
+          console.log(machineOutputs)
           machineOutputs.push(
             Item.of("4x crabbersdelight:deluxe_crab_trap_bait")
           );

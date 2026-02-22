@@ -156,7 +156,7 @@ global.handleFishPondRightClick = (clickEvent) => {
       });
     }
     if (!player.isCrouching()) {
-      if (item && quest === "true") {
+      if (item && quest === "true" && global.fishPondDefinitions.get(`${type}`)) {
         global.handleQuestSubmission(type, clickEvent);
       }
       global.handleFishInsertion(clickEvent);
