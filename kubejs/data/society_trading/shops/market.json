@@ -8,7 +8,8 @@
   "block_tag": "society:opens_market",
   "selector_weight": -99,
   "jei_catalyst": {
-    "item": "farmingforblockheads:market"
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:market\"}}"
   },
   "trades": [
     {
@@ -558,11 +559,11 @@
         "count": 1
       },
       "request": {
-        "item": "atmospheric:grimwood_sapling",
+        "item": "society:prismatic_shard",
         "count": 1
       },
       "second_request": {
-        "item": "society:prismatic_shard",
+        "item": "atmospheric:grimwood_sapling",
         "count": 1
       },
       "stage_required": "farming_mastery",

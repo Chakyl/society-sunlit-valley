@@ -4,7 +4,10 @@
   "texture": "dialog:textures/portraits/fisher",
   "villager_profession": "fisherman",
   "stage_required": "invited_fisher",
-  "jei_catalyst": { "item": "minecraft:barrel" },
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:fisher\"}}"
+  },
   "selector_weight": -95,
   "trades": [
     {

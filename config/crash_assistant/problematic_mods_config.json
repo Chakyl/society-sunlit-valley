@@ -1,7 +1,7 @@
 {
-	"worldedit": {
-		"msg": "WorldEdit has been known to increase the RAM usage of this modpack by a very large factor, especially on servers. However, <a href=\"https://www.curseforge.com/minecraft/mc-mods/axiomtool\">Axiom</a> paired with <a href=\"https://www.curseforge.com/minecraft/mc-mods/sinytra-connector\">Connector</a> have been reported to work well as alternatives.",
-		"should_crash_on_startup": false
+	"autofish": {
+		"msg": "This mod is a client side cheat incompatible with the modpack. The Stardew fishing miningame can be disabled using the /stardew_fishing command in-game.",
+		"should_crash_on_startup": true
 	},
 	"essential": {
 		"msg": "Essential has been known to cause many issues that're difficult for developers to solve, as well as irreversible world corruption. We recommend the following as alternatives for free multiplayer:<ul><li><a href=\"https://www.curseforge.com/minecraft/mc-mods/cloudflared\">Cloudflared</a></li><li><a href=\"https://modrinth.com/mod/tunnely\">Tunnely</a></li><li><a href=\"https://modrinth.com/mod/e4mc\">e4mc</a></li></ul>",

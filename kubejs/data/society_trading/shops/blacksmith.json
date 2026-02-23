@@ -2,7 +2,10 @@
   "shop_id": "blacksmith",
   "name": "shop.society_trading.blacksmith",
   "texture": "dialog:textures/portraits/blacksmith",
-  "jei_catalyst": { "item":"minecraft:smithing_table" },
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:blacksmith\"}}"
+  },
   "selector_weight": -98,
   "villager_profession": "toolsmith",
   "stage_required": "invited_blacksmith",

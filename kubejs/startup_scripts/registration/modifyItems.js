@@ -107,6 +107,9 @@ ItemEvents.modification((e) => {
   e.modify("society:prismatic_shard", (item) => {
     item.rarity = "epic";
   });
+  e.modify("society:prismatic_shard_block", (item) => {
+    item.rarity = "epic";
+  });
   e.modify("society:golden_clock", (item) => {
     item.rarity = "epic";
   });

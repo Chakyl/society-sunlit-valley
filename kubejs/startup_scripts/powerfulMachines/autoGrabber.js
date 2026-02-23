@@ -240,7 +240,7 @@ global.runAutoGrabber = (entity) => {
             entity,
             attachedPlayer,
             scanBlock,
-            global.getPlushieModifiers(level, nbt.data, block)
+            global.getPlushieModifiers(level, nbt.data, scanBlock)
           );
         }
       }

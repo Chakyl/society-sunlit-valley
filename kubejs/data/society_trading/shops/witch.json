@@ -3,7 +3,9 @@
   "name": "shop.society_trading.witch",
   "texture": "botania:textures/block/mana_void",
   "stage_required": "entered_nether",
-  "jei_catalyst": { "item": "minecraft:brewing_stand" },
+  "jei_catalyst": {
+    "item": "herbalbrews:witch_hat"
+  },
   "trades": [
     {
       "offer": {
@@ -283,7 +285,7 @@
       "stage_required": "community_center_complete",
       "numismatics_cost": 32768,
       "unlock_description": "jei.society_trading.community_center_complete",
-      "trade_id": "wizard_ribbit_hut"
+      "trade_id": "witch_ribbit_hut"
     },
     {
       "offer": {
@@ -297,7 +299,7 @@
       "stage_required": "abandoned_farm_complete",
       "numismatics_cost": 4096,
       "unlock_description": "jei.society_trading.abandoned_farm_complete",
-      "trade_id": "wizard_apothecary_default_for_sun"
+      "trade_id": "witch_apothecary_default_for_sun"
     },
     {
       "offer": {
@@ -311,7 +313,7 @@
       "numismatics_cost": 4096,
       "stage_required": "boiler_room_complete",
       "unlock_description": "jei.society_trading.boiler_room_complete",
-      "trade_id": "wizard_kinetic_blueprint_for_sun"
+      "trade_id": "witch_kinetic_blueprint_for_sun"
     },
     {
       "offer": {
@@ -323,7 +325,7 @@
         "count": 1
       },
       "numismatics_cost": 262144,
-      "trade_id": "wizard_overgrowth_seed_for_ancient_coin"
+      "trade_id": "witch_overgrowth_seed_for_ancient_coin"
     },
     {
       "offer": {
@@ -335,7 +337,7 @@
         "count": 24
       },
       "numismatics_cost": 98304,
-      "trade_id": "wizard_tanuki_catalog_for_sun"
+      "trade_id": "witch_tanuki_catalog_for_sun"
     },
     {
       "offer": {
@@ -347,7 +349,7 @@
         "count": 3
       },
       "numismatics_cost": 262144,
-      "trade_id": "wizard_modern_catalog_for_ancient_coin"
+      "trade_id": "witch_modern_catalog_for_ancient_coin"
     },
     {
       "offer": {
@@ -359,7 +361,7 @@
         "count": 4
       },
       "numismatics_cost": 1048576,
-      "trade_id": "wizard_fantasy_catalog_for_ancient_coin"
+      "trade_id": "witch_fantasy_catalog_for_ancient_coin"
     },
     {
       "offer": {
@@ -371,7 +373,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "wizard_red_sharestone_for_ancient_coin"
+      "trade_id": "witch_red_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -383,7 +385,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "wizard_blue_sharestone_for_ancient_coin"
+      "trade_id": "witch_blue_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -395,7 +397,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "wizard_green_sharestone_for_ancient_coin"
+      "trade_id": "witch_green_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -407,7 +409,7 @@
         "count": 8
       },
       "numismatics_cost": 2097152,
-      "trade_id": "wizard_purple_sharestone_for_ancient_coin"
+      "trade_id": "witch_purple_sharestone_for_ancient_coin"
     },
     {
       "offer": {
@@ -419,7 +421,7 @@
         "count": 20
       },
       "numismatics_cost": 5242880,
-      "trade_id": "wizard_warp_stone_for_ancient_coin"
+      "trade_id": "witch_warp_stone_for_ancient_coin"
     },
     {
       "offer": {
@@ -431,7 +433,7 @@
         "count": 8
       },
       "numismatics_cost": 32768,
-      "trade_id": "wizard_bound_scroll_for_sun"
+      "trade_id": "witch_bound_scroll_for_sun"
     },
     {
       "offer": {
@@ -443,7 +445,7 @@
         "count": 32
       },
       "numismatics_cost": 8388608,
-      "trade_id": "wizard_statue_endless_fortune_for_ancient_coin"
+      "trade_id": "witch_statue_endless_fortune_for_ancient_coin"
     },
     {
       "offer": {
@@ -455,7 +457,25 @@
         "count": 1
       },
       "numismatics_cost": 16777216,
-      "trade_id": "wizard_golden_clock_for_prismatic_coin"
+      "trade_id": "witch_golden_clock_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "item": "society:iridium_clock",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "second_request": {
+        "item": "minecraft:netherite_block",
+        "count": 64
+      },
+      "stage_required": "community_center_complete",
+      "numismatics_cost": 1073741824,
+      "unlock_description": "jei.society_trading.community_center_complete",
+      "trade_id": "witch_ribbit_hut"
     },
     {
       "offer": {
@@ -467,7 +487,7 @@
         "count": 4
       },
       "numismatics_cost": 67108864,
-      "trade_id": "wizard_diy_workbench_for_prismatic_coin"
+      "trade_id": "witch_diy_workbench_for_prismatic_coin"
     },
     {
       "offer": {
@@ -479,7 +499,7 @@
         "count": 16
       },
       "numismatics_cost": 268435456,
-      "trade_id": "wizard_scarecrow_for_prismatic_coin"
+      "trade_id": "witch_scarecrow_for_prismatic_coin"
     },
     {
       "offer": {

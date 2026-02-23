@@ -53,7 +53,7 @@
 							value: "society:preserves"
 						}
 					}
-					title: "Any Preserve"
+					title: "{ftbquests.chapter.crafts_room.quest403045A4DA7A770.task.8796865779311042502.title}"
 					type: "item"
 				}
 				{
@@ -65,16 +65,16 @@
 							value: "society:large_mayonnaise"
 						}
 					}
-					title: "Any Large Mayonnaise"
+					title: "{ftbquests.chapter.crafts_room.quest403045A4DA7A770.task.1593810938523569981.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.crafts_room.quest3.title}"
+			title: "{ftbquests.chapter.crafts_room.quest403045A4DA7A770.title}"
 			x: -0.028571428571424917d
 			y: -1.2142857142857224d
 		}
 		{
-			description: ["{ftbquests.chapter.crafts_room.quest4.description1}"]
+			description: ["{ftbquests.chapter.crafts_room.quest1E6139BDE9202B6A.description1}"]
 			icon: "supplementaries:present_green"
 			id: "1E6139BDE9202B6A"
 			min_required_tasks: 6
@@ -174,7 +174,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.crafts_room.quest4.title}"
+			title: "{ftbquests.chapter.crafts_room.quest1E6139BDE9202B6A.title}"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -216,8 +216,13 @@
 					item: { Count: 16, id: "meadow:fire_log" }
 					type: "item"
 				}
+				{
+					id: "1EEE1FF4918F0162"
+					item: "windswept:pinecone_jam_bottle"
+					type: "item"
+				}
 			]
-			title: "Winter Bundle"
+			title: "{ftbquests.chapter.crafts_room.quest6F3F87DBBBE86A28.title}"
 			x: 3.028571428571432d
 			y: 0.3285714285714221d
 		}
@@ -228,11 +233,11 @@
 				"0403045A4DA7A770"
 			]
 			description: [
-				"{ftbquests.chapter.crafts_room.quest6.description1}"
+				"{ftbquests.chapter.crafts_room.quest7591439B35772AB2.description1}"
 				""
-				"{ftbquests.chapter.crafts_room.quest6.description2}"
+				"{ftbquests.chapter.crafts_room.quest7591439B35772AB2.description2}"
 				""
-				"{ftbquests.chapter.crafts_room.quest6.description3}"
+				"{ftbquests.chapter.crafts_room.quest7591439B35772AB2.description3}"
 			]
 			icon: "furniture:sewing_kit"
 			id: "7591439B35772AB2"
@@ -271,21 +276,21 @@
 				}
 			]
 			shape: "none"
-			subtitle: "{ftbquests.chapter.crafts_room.quest6.subtitle}"
+			subtitle: "{ftbquests.chapter.crafts_room.quest7591439B35772AB2.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "38C738638838D769"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.crafts_room.quest6.task_4091300786627729257.title}"
+				title: "{ftbquests.chapter.crafts_room.quest7591439B35772AB2.task.4091300786627729257.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.crafts_room.quest6.title}"
+			title: "{ftbquests.chapter.crafts_room.quest7591439B35772AB2.title}"
 			x: -0.028571428571424917d
 			y: 1.0714285714285694d
 		}
 		{
-			description: ["Only &65&r required for bundle completion."]
+			description: ["{ftbquests.chapter.crafts_room.quest174FBAB7BF83C049.description1}"]
 			icon: "supplementaries:present_lime"
 			id: "174FBAB7BF83C049"
 			min_required_tasks: 5
@@ -331,13 +336,18 @@
 					item: "verdantvibes:bracket_mushroom"
 					type: "item"
 				}
+				{
+					id: "36E3D64770E13C74"
+					item: "species:alphacene_mushroom"
+					type: "item"
+				}
 			]
-			title: "Foraging Bundle"
+			title: "{ftbquests.chapter.crafts_room.quest174FBAB7BF83C049.title}"
 			x: -1.5428571428571445d
 			y: -0.44285714285715017d
 		}
 		{
-			description: ["Only &65&r required for bundle completion."]
+			description: ["{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.description1}"]
 			icon: "supplementaries:present_blue"
 			id: "7466DCDD6C3CDDE8"
 			min_required_tasks: 5
@@ -382,7 +392,7 @@
 							value: "vinery:red_grape"
 						}
 					}
-					title: "Any Red Grape"
+					title: "{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.task.9099768918795655753.title}"
 					type: "item"
 				}
 				{
@@ -394,11 +404,11 @@
 							value: "vinery:white_grape"
 						}
 					}
-					title: "Any White Grape"
+					title: "{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.task.6320955282412153139.title}"
 					type: "item"
 				}
 			]
-			title: "Brewing Bundle"
+			title: "{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.title}"
 			x: -3.057142857142857d
 			y: 0.29999999999999716d
 		}

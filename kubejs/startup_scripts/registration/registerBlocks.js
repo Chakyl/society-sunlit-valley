@@ -229,6 +229,12 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .textureAll("society:block/sparkstone_block");
 
+  e.create(`society:prismatic_shard_block`)
+    .soundType("amethyst")
+    .hardness(2)
+    .resistance(1.0)
+    .textureAll("society:block/prismatic_shard_block");
+    
   // Compressed Crops block
   e.create("society:animal_feed_sack", "cardinal")
     .model("society:block/kubejs/animal_feed_sack")

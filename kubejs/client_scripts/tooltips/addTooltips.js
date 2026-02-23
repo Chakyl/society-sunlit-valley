@@ -152,6 +152,14 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:heart_of_neptunium",
       tooltip: "It hums aquamagically",
     },
+    {
+      item: "society:green_tea_honeycomb",
+      tooltip: "Filled with sticky bittersweet",
+    },
+    {
+      item: "society:giant_bandolier_belt",
+      tooltip: "Impossibly large, as if a giant wooly creature wore it over its shoulder",
+    },
   ];
   artifactTooltips.forEach((artifact) => {
     tooltip.add(
@@ -576,11 +584,11 @@ ItemEvents.tooltip((tooltip) => {
       "nethervinery:crimson_grape_seeds",
       "nethervinery:warped_grape_seeds",
     ],
-    Text.gray("Will only grow when planted on Grapevine Stem")
+    Text.translatable("tooltip.society.plant_on_stem").gray()
   );
   tooltip.add(
     ["vinery:jungle_grape_seeds_red", "vinery:jungle_grape_seeds_white"],
-    Text.gray("Will only grow when planted on Grapevine Lattice")
+    Text.translatable("tooltip.society.plant_on_lattice").gray()
   );
   // Misc
   tooltip.add(
@@ -1373,6 +1381,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "gag:escape_rope",
     Text.translatable("tooltip.society.escape_rope_hold").red()
+  );
+    tooltip.add(
+    "society:face_note",
+    Text.translatable("tooltip.society.face_note").green()
   );
   // Refined
   tooltip.add(

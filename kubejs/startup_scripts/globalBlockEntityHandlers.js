@@ -102,12 +102,12 @@ const itemHasTag = (item, tag) => {
   return found;
 };
 
-const setQuality = (newProperties, stage, itemQuality) => {
+const setQuality = (nbt, stage, itemQuality) => {
   if (
-    (Number(newProperties.quality) === 0 && Number(stage) === 0) ||
-    Number(itemQuality) < Number(newProperties.quality)
+    (Number(nbt.data.quality) === 0 && Number(stage) === 0) ||
+    Number(itemQuality) < Number(nbt.data.quality)
   )
-    newProperties.quality = itemQuality;
+    nbt.merge({ data: { quality: Number(itemQuality) } });
 };
 
 const getCanTakeItems = (
@@ -149,9 +149,22 @@ const getCanTakeItems = (
 global.convertFromLegacy = (recipes, level, block) => {
   let nbt = block.getEntityData();
   let newRecipe;
+  if (block.id.equals("society:tapper") && !nbt.data.contains("recipe")) {
+    let newProperties = level.getBlock(block.pos).getProperties();
+    newProperties.working = false;
+    newProperties.mature = false;
+    nbt.merge({ data: { stage: 0, recipe: "" } });
+    block.setEntityData(nbt);
+    block.set(block.id, newProperties);
+    return;
+  }
   if (nbt.data.contains("recipe") || !nbt.data.contains("type")) return;
   if (nbt.data.type > 0) {
-    newRecipe = Array.from(recipes.keys())[Number(nbt.data.type) + 1];
+    newRecipe = Array.from(recipes.keys())[Number(nbt.data.type) - 1];
+  }
+  if (['society:cheese_press', 'society:mayonnaise_machine', 'society:fish_smoker', 'society:seed_maker'].includes(block.id)) {
+    nbt.merge({ data: { quality: 0 } });
+    block.setEntityData(nbt);
   }
   if (newRecipe) {
     let newProperties = level.getBlock(block.pos).getProperties();
@@ -174,7 +187,6 @@ global.artisanHarvest = (
   player
 ) => {
   let newProperties = block.getProperties();
-  let hasQuality = newProperties.quality && newProperties.quality !== "0";
   if (block.properties.get("mature").toLowerCase() === "true") {
     let harvestOutput;
     let hopperOutputs = [];
@@ -185,11 +197,11 @@ global.artisanHarvest = (
       );
     }
     let nbt = block.getEntityData();
-
+    let hasQuality = nbt.data.quality !== undefined;
     recipes.get(nbt.data.recipe).output.forEach((id) => {
       harvestOutput = Item.of(
         id,
-        hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
+        hasQuality ? `{quality_food:{quality:${Number(nbt.data.quality)}}}` : null
       );
       // Artisan Cheese Press upgrade: auto age cheese wheels only
       if (
@@ -208,11 +220,13 @@ global.artisanHarvest = (
         hopperOutputs.push(harvestOutput);
       }
       nbt.merge({ data: { stage: 0, recipe: "", originalInputs: [] } });
+      if (nbt.data.quality) {
+        nbt.merge({ data: { stage: 0, recipe: "", quality: 0 } });
+      }
       block.setEntityData(nbt);
       newProperties.working = false;
       newProperties.mature = false;
       if (newProperties.duration) newProperties.duration = "0";
-      if (newProperties.quality) newProperties.quality = "0";
       block.set(block.id, newProperties);
     });
     if (artisanHopper) return hopperOutputs;
@@ -237,7 +251,7 @@ global.artisanInsert = (
   let stage = nbt.data.stage;
   const itemNbt = item.nbt;
   let itemQuality;
-  let hasQuality = newProperties.quality;
+  let hasQuality = nbt.data.quality !== undefined || ['society:cheese_press', 'society:mayonnaise_machine', 'society:fish_smoker', 'society:seed_maker'].includes(block.id);
   let useCount =
     multipleInputs && item.count >= stageCount - Number(stage)
       ? stageCount - Number(stage)
@@ -281,9 +295,9 @@ global.artisanInsert = (
       } else {
         increaseDataStage(block);
       }
-      if (itemQuality) setQuality(newProperties, stage, itemQuality);
+      if (itemQuality) setQuality(nbt, stage, itemQuality);
     } else if (itemQuality) {
-      newProperties.quality = itemQuality;
+      nbt.merge({ data: { quality: Number(itemQuality) } });
     }
     if (!multipleInputs || nbt.data.stage === stageCount) {
       newProperties.working = true;
@@ -452,6 +466,7 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
     if (returnFluidData) return undefined;
   }
 };
+
 const getMushroomLogData = (level, centerPos, radius) => {
   const { x, y, z } = centerPos;
   let scanBlock;
@@ -481,6 +496,7 @@ const getMushroomLogData = (level, centerPos, radius) => {
       dominantOutputs.length > 0 ? dominantOutputs : regularOutputs,
   };
 };
+
 global.handleMushroomLogRandomTick = (tickEvent) => {
   const { block, level, server } = tickEvent;
   let newProperties = block.getProperties();
@@ -504,7 +520,7 @@ global.handleMushroomLogRandomTick = (tickEvent) => {
     if (global.mushroomLogRecipes) {
       let rolledRecipe =
         logData.possibleOutputs[
-          Math.floor(Math.random() * logData.possibleOutputs.length)
+        Math.floor(Math.random() * logData.possibleOutputs.length)
         ];
 
       const recipe = global.mushroomLogRecipes.get(`${rolledRecipe}`);
@@ -517,8 +533,12 @@ global.handleMushroomLogRandomTick = (tickEvent) => {
         );
         newProperties.mature = false;
         newProperties.working = true;
+        let quality = 0;
+        if (logData.count > 20 && logData.count / 40 > Math.random()) quality = 1;
+        if (logData.count > 40 && logData.count / 60 > Math.random()) quality = 2;
+        if (logData.count > 60 && logData.count / 80 > Math.random()) quality = 3;
         nbt.merge({
-          data: { recipe: `${rolledRecipe}`, stage: 0, baseCount: baseCount },
+          data: { recipe: `${rolledRecipe}`, stage: 0, baseCount: baseCount, quality: quality },
         });
       }
       block.setEntityData(nbt);
@@ -629,8 +649,8 @@ global.inventoryHasRoom = (block, item) => {
         belowItem.id === Item.of(item).id &&
         global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          block.inventory.getSlotLimit(j) /
-            (64 / block.inventory.getStackInSlot(j).maxStackSize)
+        block.inventory.getSlotLimit(j) /
+        (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
         return true;
       }
@@ -675,8 +695,8 @@ global.insertInto = (block, item) => {
         belowItem.id === Item.of(item).id &&
         global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
-          block.inventory.getSlotLimit(j) /
-            (64 / block.inventory.getStackInSlot(j).maxStackSize)
+        block.inventory.getSlotLimit(j) /
+        (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
         block.inventory.insertItem(j, item, false);
         return 1;
@@ -872,7 +892,7 @@ global.giveExperience = (server, player, category, xp) => {
 global.getProcessedItem = (item, dropAmount) => {
   let processOutput = global.mayonnaiseMachineRecipes.get(item);
   if (processOutput && dropAmount >= 3)
-    return { divisor:  3, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
+    return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
   processOutput = global.wineKegRecipes.get(item);
   if (processOutput)
     return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
@@ -984,35 +1004,38 @@ global.handleSkullCavernRegen = (level, block) => {
     level.persistentData.chunkParityMap[
       level.getChunkAt(block.getPos()).pos.toString()
     ].toggleBit;
-  if (String(toggleBit) != block.getProperties().get("chunkbit")) {
-    belowPos = block.getPos().below();
-    belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
-    belowBelowPos = belowBlock.getPos().below();
-    hasRope =
-      level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
-      "farmersdelight:rope";
-    let newBlock;
-    switch (Number(block.properties.get("type"))) {
-      case 4:
-        newBlock = rollReplaceTable(endstoneRockTable, hasRope);
-        break;
-      case 3:
-        newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
-        break;
-      case 2:
-        newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
-        break;
-      case 1:
-        newBlock = rollReplaceTable(iceRockTable, hasRope);
-        break;
-      default:
-      case 0:
-        newBlock = rollReplaceTable(stoneRockTable, hasRope);
-        break;
+  if (block && block.getProperties() && block.getProperties().get("chunkbit")) {
+    if (String(toggleBit) != block.getProperties().get("chunkbit")) {
+      belowPos = block.getPos().below();
+      belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+      belowBelowPos = belowBlock.getPos().below();
+      hasRope =
+        level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
+        "farmersdelight:rope";
+      let newBlock;
+      switch (Number(block.properties.get("type"))) {
+        case 4:
+          newBlock = rollReplaceTable(endstoneRockTable, hasRope);
+          break;
+        case 3:
+          newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
+          break;
+        case 2:
+          newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
+          break;
+        case 1:
+          newBlock = rollReplaceTable(iceRockTable, hasRope);
+          break;
+        default:
+        case 0:
+          newBlock = rollReplaceTable(stoneRockTable, hasRope);
+          break;
+      }
+      block.set(newBlock);
     }
-    block.set(newBlock);
   }
 };
+
 const getCardinalMultipartJsonBasic = (name) => {
   const path = `society:block/kubejs/${name}`;
   return [
@@ -1129,9 +1152,9 @@ const qualityToInt = (quality) => {
   }
 };
 const getFertilizer = (crop) => {
-  const block = crop
+  let block = crop
     .getLevel()
-    .getBlock(crop.getPos().below().offset(-1, 0, 0));
+    .getBlock(crop.getPos().below());
   if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
     return -1;
   if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
@@ -1152,11 +1175,13 @@ const LevelData = Java.loadClass(
 );
 
 global.getCropQuality = (crop) => {
-  const fertilizer = getFertilizer(crop);
+  let resolvedCrop = crop
+  if (crop.id === "farmersdelight:rice_panicles") resolvedCrop = crop.getLevel().getBlock(crop.getPos().below());
+  const fertilizer = getFertilizer(resolvedCrop);
   if (fertilizer == -1) return 0;
   const qualityName = LevelData.get(
-    crop.getLevel(),
-    crop.getPos().offset(0, -1, 0),
+    resolvedCrop.getLevel(),
+    resolvedCrop.getPos(),
     false
   );
   let seedQuality = qualityToInt(qualityName);
@@ -1165,7 +1190,7 @@ global.getCropQuality = (crop) => {
     0.2 * ((seedQuality * 4.6) / 10) +
     0.2 * fertilizer * ((seedQuality * 4.6 + 2) / 12) +
     0.01;
-  // Debug Quality
+  // // Debug Quality
   // console.log(crop)
   // console.log("Seed quality " + seedQuality);
   // console.log("Fertilizer quality " + fertilizer);

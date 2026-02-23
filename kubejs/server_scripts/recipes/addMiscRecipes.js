@@ -2,6 +2,9 @@ console.info("[SOCIETY] addMiscRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
   e.shapeless(Item.of('society:invitation', '{type:{id:"society:carpenter"}}'), ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
+  e.shapeless(Item.of('minecraft:sugar', 8, '{quality_food:{quality:3}}'), ["society:maple_syrup"])
+  e.shapeless(Item.of('minecraft:sugar', 3, '{quality_food:{quality:2}}'), ["minecraft:honey_bottle"])
+  e.shapeless(Item.of('minecraft:sugar', 1, '{quality_food:{quality:1}}'), ["minecraft:sugar_cane"])
   e.shaped("atmospheric:blood_orange", ["mmm", "mom", "mmm"], {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",
@@ -376,13 +379,6 @@ ServerEvents.recipes((e) => {
     s: "numismatics:sun",
     p: "society:prismatic_shard",
   });
-  e.shaped("candlelight:cooking_pot", ["SpS", "scs", "sCs"], {
-    c: "farmersdelight:cooking_pot",
-    s: "numismatics:sun",
-    p: "society:prismatic_shard",
-    S: "society:seed_maker",
-    C: "minecraft:copper_block",
-  });
   e.shaped("minecraft:elytra", ["p p", "wew", "p p"], {
     w: "society:elytra_wing",
     e: "minecraft:dragon_egg",
@@ -570,8 +566,8 @@ ServerEvents.recipes((e) => {
     f: "society:fire_quartz",
     b: "quark:blaze_lantern",
   });
-  e.shaped("society:auto_tapper", ["fFf", "bTb", "fPf"], {
-    f: "meadow:fire_log",
+  e.shaped("society:auto_tapper", [" F ", "bTb", "fPf"], {
+    f: "create_factory_logistics:fluid_mechanism",
     F: "create:fluid_tank",
     T: "society:tapper",
     b: "society:battery",
@@ -872,7 +868,7 @@ ServerEvents.recipes((e) => {
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });
-    e.shaped("society:mana_sprinkler", ["lil", "iSi", "lPl"], {
+  e.shaped("society:mana_sprinkler", ["lil", "iSi", "lPl"], {
     i: "botania:manasteel_ingot",
     S: "dew_drop_farmland_growth:gold_sprinkler",
     l: "botania:livingwood_log",
@@ -977,4 +973,6 @@ ServerEvents.recipes((e) => {
     p: "minecraft:paper",
     b: "#minecraft:planks",
   });
+  
+  e.shapeless("society:sun_candy", ['pamhc2trees:lemonitem', 'atmospheric:blood_orange', 'pamhc2trees:mangoitem', 'atmospheric:passion_fruit', Item.of('splendid_slimes:plort', '{plort:{id:"splendid_slimes:sweet"}}').strongNBT(), 'pamhc2trees:dragonfruititem', 'pamhc2trees:starfruititem', 'pamhc2trees:plumitem', 'pamhc2trees:peachitem'])
 });

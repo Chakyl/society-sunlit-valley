@@ -256,6 +256,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
     const nbt = artisanMachine.getEntityData();
+    if (!nbt.data) return;
     const { stage, recipe } = nbt.data;
     const currentStage = stage || 0;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
@@ -269,7 +270,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const chargingRodOutput = Item.of(
       `${upgraded && season === "winter" ? 3 : 1}x society:battery`
     );
-    if (loadedData) {
+    if (loadedData && artisanMachine) {
       let {
         recipes,
         stageCount,
@@ -280,7 +281,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       } = loadedData;
       let hasInfinityWorm =
         artisanMachine.id === "society:deluxe_worm_farm" && upgraded;
-      let machineOutputs;
+      let machineOutputs = [];
       let type;
       let newProperties = artisanMachine.getProperties();
       let recycleSparkstone;
@@ -309,6 +310,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else if (hasInfinityWorm) {
+          console.log(machineOutputs)
           machineOutputs.push(
             Item.of("4x crabbersdelight:deluxe_crab_trap_bait")
           );

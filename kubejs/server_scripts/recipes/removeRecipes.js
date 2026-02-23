@@ -703,6 +703,8 @@ ServerEvents.recipes((e) => {
     "create_klinks_n_klangs:roseate_ball_stencil_compact",
     "create_klinks_n_klangs:slate_ball_stencil_compact",
     "create_klinks_n_klangs:premier_ball_stencil_compact",
+    "minecraft:sugar_from_sugar_cane",
+    "minecraft:sugar_from_honey_bottle",
     "veggiesdelight:stuffed_zucchini_boat",
     "veggiesdelight:zucchini_quiche",
     "jei:/sawmill/vanillabackport_pale_oak_boat_0",

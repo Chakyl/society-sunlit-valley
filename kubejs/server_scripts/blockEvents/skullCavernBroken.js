@@ -1,5 +1,19 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
 
+const crashableHammers = [
+  "botania:terra_pick",
+  "justhammers:diamond_impact_hammer",
+  "justhammers:gold_impact_hammer",
+  "justhammers:iron_impact_hammer",
+  "justhammers:stone_impact_hammer",
+  "justhammers:netherite_hammer",
+  "justhammers:diamond_hammer",
+  "justhammers:gold_hammer",
+  "justhammers:iron_hammer",
+  "justhammers:stone_hammer",
+  "justhammers:netherite_impact_hammer",
+];
+
 const biomeAirTypeMap = new Map([
   ["society:cavern_top", 0],
   ["society:skull_caves", 0],
@@ -20,6 +34,7 @@ const scheduleFunction = (level, pos, server, rockType) => {
       level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()]
         .toggleBit;
     if (
+      level.getBlock(pos) &&
       ["minecraft:air", "minecraft:void_air", "minecraft:cave_air"].includes(
         level.getBlock(pos).id
       )
@@ -75,9 +90,15 @@ BlockEvents.broken(
     "society:palm_supply_crate",
   ],
   (e) => {
-    const { level, block, server } = e;
+    const { level, block, player, server } = e;
     const pos = block.getPos();
     if (level.dimension === "society:skull_cavern") {
+      if (global.disableHammersSkullCavern && crashableHammers.includes(player.getHeldItem("main_hand").id)) {
+        server.runCommandSilent(
+          `dialog ${player.username} show ${player.username} ${player.getHeldItem("main_hand").id.equals("botania:terra_pick") ? "goddess_unique_skull_cavern_shatterer" : "goddess_unique_skull_cavern_hammer"}`
+        );
+        e.cancel();
+      }
       let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
       scheduleFunction(level, pos.immutable(), server, rockType);
     }
@@ -187,7 +208,7 @@ BlockEvents.broken(
   ],
   (e) => {
     const { level, player, server, block } = e;
-    if (player.stages.has("moon_rope_reveal") &&  Math.random() < 0.15) {
+    if (player.stages.has("moon_rope_reveal") && Math.random() < 0.15) {
       const { x, y, z } = block;
       let scanBlock;
       let abovePos;

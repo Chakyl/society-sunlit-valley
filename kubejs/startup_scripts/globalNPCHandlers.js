@@ -137,14 +137,14 @@ const villagerSpecificGifts = new Map([
         hated: [],
     }],
     ["fisher", {
-        loved: ["society:princess_hairbrush", "vintagedelight:century_egg", "society:aquamagical_dust", "society:heart_of_neptunium", "minecraft:heart_of_the_sea"],
+        loved: ["unusualfishmod:cooked_aero_mono_stick", "society:princess_hairbrush", "vintagedelight:century_egg", "society:aquamagical_dust", "society:heart_of_neptunium", "minecraft:heart_of_the_sea"],
         liked: ["#minecraft:fishes", "minecraft:nautilus_shell", "minecraft:echo_shard", "crittersandcompanions:clam", "botania:black_lotus", "minecraft:friend_pottery_sherd"],
         neutral: [],
         disliked: [],
         hated: [],
     }],
     ["market", {
-        loved: ["society:glitched_vhs", "windswept:elder_feather", "society:latte", "society:tubasmoke_carton", "society:ancient_vespertine"],
+        loved: ["#vinery:red_wine","society:glitched_vhs", "windswept:elder_feather", "society:latte", "society:tubasmoke_carton", "society:ancient_vespertine"],
         liked: ["society:tubasmoke_stick", "society:energy_drink", "supplementaries:antique_ink", "herbalbrews:coffee", "untitledduckmod:duck_feather"],
         neutral: [],
         disliked: [],

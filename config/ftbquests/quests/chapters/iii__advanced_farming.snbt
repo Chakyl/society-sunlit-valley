@@ -10,9 +10,9 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest1.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest66E1AC55824DF1D9.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest1.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest66E1AC55824DF1D9.description2}"
 			]
 			id: "66E1AC55824DF1D9"
 			rewards: [{
@@ -27,11 +27,11 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest1.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest66E1AC55824DF1D9.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "4B6B7716B651FA14"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest1.task_5434568314784446996.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest66E1AC55824DF1D9.task.5434568314784446996.title}"
 				type: "dimension"
 			}]
 			x: -1.5d
@@ -40,9 +40,9 @@
 		{
 			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest2.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.questF176FBF01ABB774.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest2.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.questF176FBF01ABB774.description2}"
 			]
 			id: "0F176FBF01ABB774"
 			rewards: [{
@@ -62,11 +62,11 @@
 		{
 			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest3.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest11A36B05684D70A9.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest3.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest11A36B05684D70A9.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest3.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest11A36B05684D70A9.description3}"
 			]
 			id: "11A36B05684D70A9"
 			rewards: [{
@@ -91,11 +91,11 @@
 		{
 			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest4.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest41FD632FA78AFB49.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest4.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest41FD632FA78AFB49.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest4.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest41FD632FA78AFB49.description3}"
 			]
 			id: "41FD632FA78AFB49"
 			rewards: [{
@@ -109,7 +109,7 @@
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest4.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest41FD632FA78AFB49.title}"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -120,9 +120,9 @@
 				"6689D68F72E56A40"
 			]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest5.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.questC7D8F89BCF645AA.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest5.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.questC7D8F89BCF645AA.description2}"
 			]
 			icon: "society:charging_rod"
 			id: "0C7D8F89BCF645AA"
@@ -137,16 +137,16 @@
 				item: "society:charging_rod"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest5.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.questC7D8F89BCF645AA.title}"
 			x: 4.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest6.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest4F698E7353FD76F1.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest6.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest4F698E7353FD76F1.description2}"
 			]
 			id: "4F698E7353FD76F1"
 			rewards: [{
@@ -165,11 +165,11 @@
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest44A512703C4A9990.description1}"
 				""
-				"[\"\",{\"translate\":\"ftbquests.chapter.iii__advanced_farming.quest8.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4B9634D942E590AB\"}}]"
+				"[\"\",{\"translate\":\"ftbquests.chapter.iii__advanced_farming.quest44A512703C4A9990.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4B9634D942E590AB\"}}]"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest8.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest44A512703C4A9990.description3}"
 			]
 			id: "44A512703C4A9990"
 			min_required_dependencies: 1
@@ -184,13 +184,13 @@
 				item: { Count: 10, id: "numismatics:sun" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest8.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest44A512703C4A9990.title}"
 			x: 9.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest9.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest3492FA6A5DFCC390.description1}"]
 			id: "3492FA6A5DFCC390"
 			rewards: [{
 				id: "51B4932933C92BF1"
@@ -202,13 +202,13 @@
 				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest9.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest3492FA6A5DFCC390.title}"
 			x: 2.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest10.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest2746CBE8BDA47E40.description1}"]
 			id: "2746CBE8BDA47E40"
 			rewards: [{
 				id: "674EAF8B280ADA6F"
@@ -226,9 +226,9 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest11.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest711AC0F5208316D5.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest11.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest711AC0F5208316D5.description2}"
 			]
 			id: "711AC0F5208316D5"
 			tasks: [{
@@ -242,15 +242,15 @@
 		{
 			dependencies: ["44A512703C4A9990"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3291A30C1D1B009D.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3291A30C1D1B009D.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3291A30C1D1B009D.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3291A30C1D1B009D.description4}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description5}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3291A30C1D1B009D.description5}"
 			]
 			id: "3291A30C1D1B009D"
 			rewards: [{
@@ -265,26 +265,26 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest12.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest3291A30C1D1B009D.subtitle}"
 			tasks: [{
 				id: "142ACE7B003D9236"
 				item: "society:skull_cavern_teleporter"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest12.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest3291A30C1D1B009D.title}"
 			x: 12.25d
 			y: 0.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest13.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1AA78CF8A14DEE76.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest13.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1AA78CF8A14DEE76.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest13.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1AA78CF8A14DEE76.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest13.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1AA78CF8A14DEE76.description4}"
 			]
 			id: "1AA78CF8A14DEE76"
 			rewards: [{
@@ -297,16 +297,16 @@
 				item: "shippingbin:smart_shipping_bin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest13.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest1AA78CF8A14DEE76.title}"
 			x: 6.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["572D70993411EA53"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest473D0A5E8D57CD4B.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest14.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest473D0A5E8D57CD4B.description2}"
 			]
 			id: "473D0A5E8D57CD4B"
 			rewards: [{
@@ -325,9 +325,9 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest15.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest79C92AEDE15E7E6D.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest15.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest79C92AEDE15E7E6D.description2}"
 			]
 			id: "79C92AEDE15E7E6D"
 			rewards: [{
@@ -346,9 +346,9 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest572D70993411EA53.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest16.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest572D70993411EA53.description2}"
 			]
 			id: "572D70993411EA53"
 			rewards: [{
@@ -366,7 +366,7 @@
 		}
 		{
 			dependencies: ["711AC0F5208316D5"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest17.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest7938A28F31B7473.description1}"]
 			id: "07938A28F31B7473"
 			rewards: [{
 				count: 4
@@ -374,7 +374,7 @@
 				item: "farm_and_charm:fertilizer"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest17.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest7938A28F31B7473.subtitle}"
 			tasks: [{
 				id: "0862068B0CEA00ED"
 				item: "farm_and_charm:fertilizer"
@@ -385,7 +385,7 @@
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest18.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest291360E395E2BA29.description1}"]
 			id: "291360E395E2BA29"
 			rewards: [{
 				count: 16
@@ -403,7 +403,7 @@
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest19.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.description1}"]
 			icon: "dew_drop_farmland_growth:strong_fertilizer"
 			id: "1D21615AEE411491"
 			rewards: [{
@@ -430,19 +430,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.iii__advanced_farming.quest19.task_4081101955221834706.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.task.4081101955221834706.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest19.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.title}"
 			x: 4.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest25569C0D687E6FA5.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest20.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest25569C0D687E6FA5.description2}"
 			]
 			id: "25569C0D687E6FA5"
 			rewards: [{
@@ -459,36 +459,11 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["44A512703C4A9990"]
-			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description1}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description2}"
-				""
-				"{ftbquests.chapter.iii__advanced_farming.quest21.description3}"
-			]
-			id: "6DF608316146EDC9"
-			rewards: [{
-				count: 16
-				id: "7A28CAAEE5FDA0F2"
-				item: "minecraft:book"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00B95ACB5C6F40E1"
-				item: "minecraft:enchanting_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest21.title}"
-			x: 10.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest22.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest8CFE766C9645FC8.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest22.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest8CFE766C9645FC8.description2}"
 			]
 			id: "08CFE766C9645FC8"
 			rewards: [{
@@ -502,16 +477,16 @@
 				item: "society:quality_washer"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest22.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest8CFE766C9645FC8.title}"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest23.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest139B02AFBCBBF350.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest23.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest139B02AFBCBBF350.description2}"
 			]
 			icon: "splendid_slimes:slime_incubator"
 			id: "139B02AFBCBBF350"
@@ -532,18 +507,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest23.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest139B02AFBCBBF350.title}"
 			x: 0.75d
 			y: 4.5d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest24.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest41029F073ADDDC2F.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest24.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest41029F073ADDDC2F.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest24.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest41029F073ADDDC2F.description3}"
 			]
 			icon: "splendid_slimes:plort_rippit"
 			id: "41029F073ADDDC2F"
@@ -564,16 +539,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest24.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest41029F073ADDDC2F.title}"
 			x: 8.75d
 			y: 5.5d
 		}
 		{
 			dependencies: ["2C9C87690BD8E23B"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest25.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest648FD0A599A54A0F.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest25.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest648FD0A599A54A0F.description2}"
 			]
 			id: "648FD0A599A54A0F"
 			rewards: [{
@@ -594,30 +569,30 @@
 			dependencies: ["2C9C87690BD8E23B"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest26.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest747B28CA5F55AFA7.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest26.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest747B28CA5F55AFA7.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest26.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest747B28CA5F55AFA7.description3}"
 			]
 			icon: "minecraft:slime_spawn_egg"
 			id: "747B28CA5F55AFA7"
 			tasks: [{
 				id: "21F03480B5D4F77D"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest26.task_2445512325073270653.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest747B28CA5F55AFA7.task.2445512325073270653.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest26.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest747B28CA5F55AFA7.title}"
 			x: 4.5d
 			y: 5.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest27.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest632578AFE8A0D12D.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest27.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest632578AFE8A0D12D.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest27.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest632578AFE8A0D12D.description3}"
 			]
 			id: "632578AFE8A0D12D"
 			rewards: [{
@@ -626,7 +601,7 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest27.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest632578AFE8A0D12D.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -640,22 +615,22 @@
 				id: "65C4C6928BF2A227"
 				observe_type: 5
 				timer: 0L
-				title: "{ftbquests.chapter.iii__advanced_farming.quest27.task_7333204425981469223.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest632578AFE8A0D12D.task.7333204425981469223.title}"
 				to_observe: "splendid_slimes:splendid_slime"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest27.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest632578AFE8A0D12D.title}"
 			x: -1.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["632578AFE8A0D12D"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest28.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest5C9C7A5A88613109.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest28.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest5C9C7A5A88613109.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest28.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest5C9C7A5A88613109.description3}"
 			]
 			id: "5C9C7A5A88613109"
 			rewards: [{
@@ -669,18 +644,18 @@
 				item: "splendid_slimes:slime_vac"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest28.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest5C9C7A5A88613109.title}"
 			x: 0.75d
 			y: 6.5d
 		}
 		{
 			dependencies: ["747B28CA5F55AFA7"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest29.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7A551F04BB9A117.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest29.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7A551F04BB9A117.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest29.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7A551F04BB9A117.description3}"
 			]
 			icon: {
 				Count: 1
@@ -701,25 +676,25 @@
 			}]
 			tasks: [{
 				id: "380838F0BF3B7E91"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest29.task_4037539672589303441.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest7A551F04BB9A117.task.4037539672589303441.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest29.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest7A551F04BB9A117.title}"
 			x: 6.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description3}"
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description4}"
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description5}"
+				"{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.description5}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest30.description6}"
+				"{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.description6}"
 			]
 			id: "527F7721ED60868C"
 			tasks: [{
@@ -727,20 +702,20 @@
 				item: "numismatics:neptunium_coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest30.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.title}"
 			x: 10.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest31.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1030BCF34FEAE03C.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest31.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1030BCF34FEAE03C.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest31.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1030BCF34FEAE03C.description3}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest31.description4}"
+				"{ftbquests.chapter.iii__advanced_farming.quest1030BCF34FEAE03C.description4}"
 			]
 			icon: "simplehats:slime_head"
 			id: "1030BCF34FEAE03C"
@@ -752,19 +727,19 @@
 			}]
 			tasks: [{
 				id: "705E3A8298D7461D"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest31.task_8096973512643135005.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest1030BCF34FEAE03C.task.8096973512643135005.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest31.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest1030BCF34FEAE03C.title}"
 			x: 6.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest32.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest668AEE0B5CD49EE4.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest32.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest668AEE0B5CD49EE4.description2}"
 			]
 			icon: "splendid_slimes:slime_ticket"
 			id: "668AEE0B5CD49EE4"
@@ -775,20 +750,20 @@
 			}]
 			tasks: [{
 				id: "7D9ADA6687719BF7"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest32.task_9050786535048322039.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest668AEE0B5CD49EE4.task.9050786535048322039.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest32.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest668AEE0B5CD49EE4.title}"
 			x: 8.0d
 			y: 6.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest33.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest6F8709C925DE7237.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest33.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest6F8709C925DE7237.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest33.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest6F8709C925DE7237.description3}"
 			]
 			id: "6F8709C925DE7237"
 			rewards: [{
@@ -801,7 +776,7 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest33.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest6F8709C925DE7237.subtitle}"
 			tasks: [{
 				id: "48EAD831424A0BC8"
 				item: {
@@ -813,16 +788,16 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest33.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest6F8709C925DE7237.title}"
 			x: -1.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7ADD57C8AF4092B2.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest34.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest7ADD57C8AF4092B2.description2}"
 			]
 			icon: "longwings:butterfly_driplure"
 			id: "7ADD57C8AF4092B2"
@@ -872,17 +847,17 @@
 							]
 						}
 					}
-					title: "{ftbquests.chapter.iii__advanced_farming.quest34.task_1508105008365289908.title}"
+					title: "{ftbquests.chapter.iii__advanced_farming.quest7ADD57C8AF4092B2.task.1508105008365289908.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest34.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest7ADD57C8AF4092B2.title}"
 			x: 0.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest35.description1}"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest1571D0424A7A34D1.description1}"]
 			id: "1571D0424A7A34D1"
 			rewards: [{
 				id: "7BC53903BE8140F0"
@@ -904,11 +879,11 @@
 		{
 			dependencies: ["6F8709C925DE7237"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest36.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest4DC073ABF3D72467.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest36.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest4DC073ABF3D72467.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest36.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest4DC073ABF3D72467.description3}"
 			]
 			icon: {
 				Count: 1
@@ -923,21 +898,21 @@
 			}]
 			tasks: [{
 				id: "662E408F671C6556"
-				title: "{ftbquests.chapter.iii__advanced_farming.quest36.task_7362893425451754838.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest4DC073ABF3D72467.task.7362893425451754838.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest36.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest4DC073ABF3D72467.title}"
 			x: 1.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest37.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3B6640956F047EC8.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest37.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3B6640956F047EC8.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest37.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest3B6640956F047EC8.description3}"
 			]
 			icon: "society:butterfly_amber"
 			id: "3B6640956F047EC8"
@@ -972,21 +947,21 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.iii__advanced_farming.quest37.task_5939367094000659640.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest3B6640956F047EC8.task.5939367094000659640.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest37.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest3B6640956F047EC8.title}"
 			x: 3.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2C9C87690BD8E23B"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest38.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest54E81642A0E67042.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest38.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest54E81642A0E67042.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest38.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest54E81642A0E67042.description3}"
 			]
 			id: "54E81642A0E67042"
 			min_required_dependencies: 1
@@ -1000,7 +975,7 @@
 				item: "splendid_slimes:slime_feeder"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest38.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest54E81642A0E67042.title}"
 			x: 3.25d
 			y: 6.5d
 		}
@@ -1010,9 +985,9 @@
 				"139B02AFBCBBF350"
 			]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest39.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest2C9C87690BD8E23B.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest39.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest2C9C87690BD8E23B.description2}"
 			]
 			id: "2C9C87690BD8E23B"
 			min_required_dependencies: 1
@@ -1031,7 +1006,7 @@
 				match_nbt: false
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest39.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest2C9C87690BD8E23B.title}"
 			x: 2.25d
 			y: 5.5d
 		}
@@ -1049,11 +1024,11 @@
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest462313FFAEC4054.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest462313FFAEC4054.description2}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest41.description3}"
+				"{ftbquests.chapter.iii__advanced_farming.quest462313FFAEC4054.description3}"
 			]
 			hide_dependency_lines: false
 			icon: "refurbished_furniture:light_electricity_generator"
@@ -1063,7 +1038,7 @@
 				item: "refurbished_furniture:wrench"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest41.subtitle}"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest462313FFAEC4054.subtitle}"
 			tasks: [{
 				icon: "refurbished_furniture:light_electricity_generator"
 				id: "1554E7905CF741CC"
@@ -1083,19 +1058,19 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.iii__advanced_farming.quest41.task_1537107980061196748.title}"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest462313FFAEC4054.task.1537107980061196748.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest41.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest462313FFAEC4054.title}"
 			x: 7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest44ACDBB4DE598EA6.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest42.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest44ACDBB4DE598EA6.description2}"
 			]
 			id: "44ACDBB4DE598EA6"
 			rewards: [{
@@ -1109,16 +1084,16 @@
 				item: "society:recycling_machine"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest42.title}"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest44ACDBB4DE598EA6.title}"
 			x: 1.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"Wines can be made with three fruits and even certain vegetables in a &6Wine Keg&r."
+				"{ftbquests.chapter.iii__advanced_farming.quest3C9A245CFCD5D8E8.description1}"
 				""
-				"This process is lengthy, but much more profitable per-fruit than preserving."
+				"{ftbquests.chapter.iii__advanced_farming.quest3C9A245CFCD5D8E8.description2}"
 			]
 			id: "3C9A245CFCD5D8E8"
 			rewards: [{
@@ -1137,9 +1112,9 @@
 		{
 			dependencies: ["07A551F04BB9A117"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest44.description1}"
+				"{ftbquests.chapter.iii__advanced_farming.quest66C1440EFF12DC66.description1}"
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest44.description2}"
+				"{ftbquests.chapter.iii__advanced_farming.quest66C1440EFF12DC66.description2}"
 			]
 			id: "66C1440EFF12DC66"
 			rewards: [{
@@ -1161,11 +1136,11 @@
 				"473D0A5E8D57CD4B"
 			]
 			description: [
-				"Not all mushrooms can be cultivated on &6Mushroom Soil&r. The power of the &6Mossberry&r can be used to make the &6Mushroom Log&r!"
+				"{ftbquests.chapter.iii__advanced_farming.questC5EB5F66FB04A29.description1}"
 				""
-				"It draws from nearby trees to form different kinds of mushrooms every 4 days depending on the tree types. "
+				"{ftbquests.chapter.iii__advanced_farming.questC5EB5F66FB04A29.description2}"
 				""
-				"The quantity and quality of them is impacted by the amount of nearby trees."
+				"{ftbquests.chapter.iii__advanced_farming.questC5EB5F66FB04A29.description3}"
 			]
 			id: "0C5EB5F66FB04A29"
 			rewards: [{
@@ -1183,11 +1158,11 @@
 		}
 		{
 			description: [
-				"&6Mossberries&r are the jewels of &6Autumn&r!"
+				"{ftbquests.chapter.iii__advanced_farming.quest51772B6C1CD5DD1E.description1}"
 				""
-				"They rarely grow on trees and drop when chopped. "
+				"{ftbquests.chapter.iii__advanced_farming.quest51772B6C1CD5DD1E.description2}"
 				""
-				"Unlike other berries, they cannot be farmed like crops. "
+				"{ftbquests.chapter.iii__advanced_farming.quest51772B6C1CD5DD1E.description3}"
 			]
 			id: "51772B6C1CD5DD1E"
 			rewards: [{
@@ -1200,13 +1175,13 @@
 				item: "society:mossberry"
 				type: "item"
 			}]
-			title: "Autumn Tree Berry"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest51772B6C1CD5DD1E.title}"
 			x: 9.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
-			description: ["Buried in the depths of the &6The Nether&r "]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest6689D68F72E56A40.description1}"]
 			icon: "etcetera:bismuth_ingot"
 			id: "6689D68F72E56A40"
 			rewards: [{
@@ -1220,18 +1195,18 @@
 				item: "etcetera:raw_bismuth"
 				type: "item"
 			}]
-			title: "Nether Materia"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest6689D68F72E56A40.title}"
 			x: 2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6689D68F72E56A40"]
 			description: [
-				"&6Bismuth Ingots&r can be made into a special glass that form &6Classic Pipes&r."
+				"{ftbquests.chapter.iii__advanced_farming.quest6C95E6AEEC55CFA5.description1}"
 				""
-				"When given a redstone signal, &6Copper Pipes&r can extract items from inventories and insert them into &6Item Pipes&r that route them in different directions."
+				"{ftbquests.chapter.iii__advanced_farming.quest6C95E6AEEC55CFA5.description2}"
 				""
-				"Different types pipes can be used to create handy systems for item transport on your farm."
+				"{ftbquests.chapter.iii__advanced_farming.quest6C95E6AEEC55CFA5.description3}"
 			]
 			icon: "classicpipes:oak_pipe"
 			id: "6C95E6AEEC55CFA5"
@@ -1250,10 +1225,10 @@
 						value: "classicpipes:pipes/item"
 					}
 				}
-				title: "Any Item Pipe"
+				title: "{ftbquests.chapter.iii__advanced_farming.quest6C95E6AEEC55CFA5.task.7789053936817398399.title}"
 				type: "item"
 			}]
-			title: "Item Transport"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest6C95E6AEEC55CFA5.title}"
 			x: 3.5d
 			y: 1.5d
 		}

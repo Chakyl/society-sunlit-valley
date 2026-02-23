@@ -2,7 +2,10 @@
   "shop_id": "banker",
   "name": "shop.society_trading.banker",
   "texture": "dialog:textures/portraits/banker",
-  "jei_catalyst": { "item": "minecraft:cartography_table" },
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:banker\"}}"
+  },
   "villager_profession": "cartographer",
   "stage_required": "invited_banker",
   "selector_weight": 1,
@@ -102,6 +105,22 @@
       },
       "numismatics_cost": 2048,
       "trade_id": "phone_for_crown"
+    },
+    {
+      "offer": {
+        "item": "society_trading:auto_trader",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "second_request": {
+        "item": "society:battery",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "auto_trader_for_sun"
     },
     {
       "offer": {

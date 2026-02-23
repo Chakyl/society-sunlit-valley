@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "refinedstorage:grid"
+    },
+    {
+      "item": "create_factory_logistics:fluid_mechanism"
+    },
+    {
+      "item": "aquaculture:neptunium_ingot"
+    }
+  ],
+  "result": {
+    "item": "refinedstorage:fluid_grid"
+  }
+}

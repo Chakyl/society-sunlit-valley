@@ -19,451 +19,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: "supplementaries:present_purple"
-			id: "53323B6055B6ED02"
-			rewards: [{
-				count: 3
-				id: "12E0B4FBCF136554"
-				item: "vinery:fermentation_barrel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7A2E24C47972B207"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "vinery:mead"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:apple_cider"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:apple_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:solaris_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:red_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:strad_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:cristel_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:creepers_crush"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:kelp_cider"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:villagers_fright"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:magnetic_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:stal_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:chenet_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "society:forks_of_blue"
-								}
-								{
-									Count: 1b
-									id: "society:good_catawba"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.crafts_room.quest1.task_8804014747825648135.title}"
-					type: "item"
-				}
-				{
-					id: "70F231E4A28E0376"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "vinery:mellohi_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:glowing_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:noir_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:cherry_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:jo_special_mixture"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:lilitu_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:eiswein"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:bolvar_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:chorus_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:clark_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:bottle_mojang_noir"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "society:nutty_basil"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.crafts_room.quest1.task_8138622334661428086.title}"
-					type: "item"
-				}
-				{
-					id: "765BF2867CC0D845"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "nethervinery:nether_fizz"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "nethervinery:lava_fizz"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "nethervinery:ghastly_grenache"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "nethervinery:netherite_nectar"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "nethervinery:blazewine_pinot"
-									tag: {
-										Year: 0
-									}
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.crafts_room.quest1.task_8528676978788718661.title}"
-					type: "item"
-				}
-				{
-					id: "1A43B78B74F6D5C6"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "vinery:mellohi_wine"
-									tag: {
-										Year: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "vinery:jellie_wine"
-									tag: {
-										Year: 0
-									}
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.crafts_room.quest1.task_1892558078016411078.title}"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.crafts_room.quest1.title}"
-			x: -3.0d
-			y: 0.2d
-		}
-		{
-			icon: "supplementaries:present_yellow"
-			id: "0AB4DA36A847F1F0"
-			rewards: [{
-				id: "0DA91DA5411FEB71"
-				item: "brewery:netherite_brewingstation"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 4L
-					id: "5C8B3C0E940DF3DA"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "brewery:beer_wheat"
-								}
-								{
-									Count: 1b
-									id: "brewery:beer_barley"
-								}
-								{
-									Count: 1b
-									id: "brewery:beer_hops"
-								}
-								{
-									Count: 1b
-									id: "brewery:beer_nettle"
-								}
-								{
-									Count: 1b
-									id: "brewery:beer_oat"
-								}
-								{
-									Count: 1b
-									id: "brewery:beer_haley"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.crafts_room.quest2.task_6668489706563302362.title}"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "263FE31ECC3A6000"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "brewery:whiskey_highland_hearth"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_smokey_reverie"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_cristelwalker"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_jamesons_malt"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_maggoallan"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_ak"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_carrasconlabel"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_lilitusinglemalt"
-								}
-								{
-									Count: 1b
-									id: "brewery:whiskey_jojannik"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.crafts_room.quest2.task_2756171218388934656.title}"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "3627C14BB3504E47"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "herbalbrews:green_tea"
-								}
-								{
-									Count: 1b
-									id: "herbalbrews:black_tea"
-								}
-								{
-									Count: 1b
-									id: "herbalbrews:oolong_tea"
-								}
-								{
-									Count: 1b
-									id: "herbalbrews:yerba_mate_tea"
-								}
-								{
-									Count: 1b
-									id: "herbalbrews:hibiscus_tea"
-								}
-								{
-									Count: 1b
-									id: "herbalbrews:lavender_tea"
-								}
-								{
-									Count: 1b
-									id: "herbalbrews:coffee"
-								}
-								{
-									Count: 1b
-									id: "herbalbrews:milk_coffee"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.crafts_room.quest2.task_3902300133014916679.title}"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.crafts_room.quest2.title}"
-			x: -1.5d
-			y: -0.5d
-		}
-		{
-			icon: "supplementaries:present_orange"
+			icon: "supplementaries:present_red"
 			id: "0403045A4DA7A770"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -471,6 +27,7 @@
 				table_id: 2467450565259284777L
 				type: "random"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "198E9AF012E7021F"
@@ -483,124 +40,41 @@
 					type: "item"
 				}
 				{
-					id: "5BAEED6216110BCB"
+					id: "0D8F36EFE3D375C1"
+					item: "society:maple_syrup"
+					type: "item"
+				}
+				{
+					id: "7A14BED1889FDFC6"
 					item: {
 						Count: 1
-						id: "itemfilters:or"
+						id: "itemfilters:tag"
 						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "vintagedelight:gearo_berry_mason_jar"
-								}
-								{
-									Count: 1b
-									id: "society:dragonfruit_preserves"
-								}
-								{
-									Count: 1b
-									id: "society:orange_preserves"
-								}
-								{
-									Count: 1b
-									id: "society:lychee_preserves"
-								}
-								{
-									Count: 1b
-									id: "vintagedelight:sweet_berry_mason_jar"
-								}
-								{
-									Count: 1b
-									id: "society:banana_preserves"
-								}
-								{
-									Count: 1b
-									id: "society:mango_preserves"
-								}
-								{
-									Count: 1b
-									id: "society:strawberry_preserves"
-								}
-								{
-									Count: 1b
-									id: "society:cherry_preserves"
-								}
-								{
-									Count: 1b
-									id: "society:peach_preserves"
-								}
-								{
-									Count: 1b
-									id: "vintagedelight:glow_berry_mason_jar"
-								}
-								{
-									Count: 1b
-									id: "society:plum_preserves"
-								}
-								{
-									Count: 1b
-									id: "vintagedelight:pepper_jam_mason_jar"
-								}
-								{
-									Count: 1b
-									id: "society:starfruit_preserves"
-								}
-							]
+							value: "society:preserves"
 						}
 					}
-					title: "{ftbquests.chapter.crafts_room.quest3.task_6606478708931890123.title}"
+					title: "{ftbquests.chapter.crafts_room.quest403045A4DA7A770.task.8796865779311042502.title}"
 					type: "item"
 				}
 				{
-					id: "3661F2F5556825E0"
-					item: "herbalbrews:oolong_tea"
-					type: "item"
-				}
-				{
-					id: "45FDA18626BD3659"
+					id: "161E5A9AADD44F3D"
 					item: {
 						Count: 1
-						id: "itemfilters:or"
+						id: "itemfilters:tag"
 						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "society:goose_mayonnaise"
-								}
-								{
-									Count: 1b
-									id: "society:duck_mayonnaise"
-								}
-								{
-									Count: 1b
-									id: "society:turtle_mayonnaise"
-								}
-								{
-									Count: 1b
-									id: "society:sniffer_mayonnaise"
-								}
-								{
-									Count: 1b
-									id: "society:parrot_mayonnaise"
-								}
-							]
+							value: "society:large_mayonnaise"
 						}
 					}
-					title: "{ftbquests.chapter.crafts_room.quest3.task_5043364755272447577.title}"
-					type: "item"
-				}
-				{
-					id: "3CAF8962E549D618"
-					item: "society:canvas"
+					title: "{ftbquests.chapter.crafts_room.quest403045A4DA7A770.task.1593810938523569981.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.crafts_room.quest3.title}"
-			x: 0.0d
-			y: -1.3d
+			title: "{ftbquests.chapter.crafts_room.quest403045A4DA7A770.title}"
+			x: -0.028571428571424917d
+			y: -1.2142857142857224d
 		}
 		{
-			description: ["{ftbquests.chapter.crafts_room.quest4.description1}"]
+			description: ["{ftbquests.chapter.crafts_room.quest1E6139BDE9202B6A.description1}"]
 			icon: "supplementaries:present_green"
 			id: "1E6139BDE9202B6A"
 			min_required_tasks: 6
@@ -646,6 +120,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [
 				{
 					id: "02A73FD2EF76B0FA"
@@ -699,68 +174,70 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.crafts_room.quest4.title}"
+			title: "{ftbquests.chapter.crafts_room.quest1E6139BDE9202B6A.title}"
 			x: 1.5d
 			y: -0.5d
 		}
 		{
 			icon: "supplementaries:present_red"
 			id: "6F3F87DBBBE86A28"
-			rewards: [{
-				id: "36034597C89384A4"
-				item: "vintagedelight:magic_peanut"
-				type: "item"
-			}]
-			tasks: [
+			rewards: [
 				{
-					id: "489408F1F4A6A067"
-					item: "vintagedelight:pickled_beetroot"
+					id: "7A6C3B42E9B0B69B"
+					item: "botania:horn_snow"
 					type: "item"
 				}
 				{
-					id: "18E145D74D1934B0"
-					item: "vintagedelight:pickled_onion"
-					type: "item"
-				}
-				{
-					id: "0D0983C02E4C7AC4"
-					item: "vintagedelight:pickled_egg"
-					type: "item"
-				}
-				{
-					id: "6AD358C10FB34635"
-					item: "vintagedelight:surstromming"
-					type: "item"
-				}
-				{
-					id: "2B5C98C33A52D6DE"
-					item: "vintagedelight:overnight_oats"
-					type: "item"
-				}
-				{
-					id: "0B0F8B5940F797BD"
-					item: "vintagedelight:vinegar_mason_jar"
+					id: "124F7E6A6400E6C2"
+					item: "society:snow_melter"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.crafts_room.quest5.title}"
-			x: 3.0d
-			y: 0.2d
+			shape: "none"
+			tasks: [
+				{
+					id: "6EE8BE6F502E597C"
+					item: "society:frozen_tear"
+					type: "item"
+				}
+				{
+					id: "4822242F76E20E58"
+					item: "society:frozen_geode"
+					type: "item"
+				}
+				{
+					id: "427EF9CF19E98CBB"
+					item: "society:pickled_ginger"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "116A9CF43B613B8F"
+					item: { Count: 16, id: "meadow:fire_log" }
+					type: "item"
+				}
+				{
+					id: "1EEE1FF4918F0162"
+					item: "windswept:pinecone_jam_bottle"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.crafts_room.quest6F3F87DBBBE86A28.title}"
+			x: 3.028571428571432d
+			y: 0.3285714285714221d
 		}
 		{
 			dependencies: [
 				"6F3F87DBBBE86A28"
-				"0AB4DA36A847F1F0"
 				"1E6139BDE9202B6A"
-				"53323B6055B6ED02"
 				"0403045A4DA7A770"
 			]
 			description: [
-				"{ftbquests.chapter.crafts_room.quest6.description1}"
+				"{ftbquests.chapter.crafts_room.quest7591439B35772AB2.description1}"
 				""
-				"{ftbquests.chapter.crafts_room.quest6.description2}"
+				"{ftbquests.chapter.crafts_room.quest7591439B35772AB2.description2}"
 				""
-				"{ftbquests.chapter.crafts_room.quest6.description3}"
+				"{ftbquests.chapter.crafts_room.quest7591439B35772AB2.description3}"
 			]
 			icon: "furniture:sewing_kit"
 			id: "7591439B35772AB2"
@@ -798,18 +275,142 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.crafts_room.quest6.subtitle}"
+			shape: "none"
+			subtitle: "{ftbquests.chapter.crafts_room.quest7591439B35772AB2.subtitle}"
 			tasks: [{
 				icon: "society:furniture_box"
 				id: "38C738638838D769"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.crafts_room.quest6.task_4091300786627729257.title}"
+				title: "{ftbquests.chapter.crafts_room.quest7591439B35772AB2.task.4091300786627729257.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.crafts_room.quest6.title}"
-			x: 0.0d
-			y: 1.0d
+			title: "{ftbquests.chapter.crafts_room.quest7591439B35772AB2.title}"
+			x: -0.028571428571424917d
+			y: 1.0714285714285694d
+		}
+		{
+			description: ["{ftbquests.chapter.crafts_room.quest174FBAB7BF83C049.description1}"]
+			icon: "supplementaries:present_lime"
+			id: "174FBAB7BF83C049"
+			min_required_tasks: 5
+			rewards: [{
+				id: "3F8B2A9CF4518F08"
+				item: "vintagedelight:magic_peanut"
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "4DDAC0F27F56E261"
+					item: "society:salmonberry"
+					type: "item"
+				}
+				{
+					id: "47B9AD4D20179AB2"
+					item: "society:boysenberry"
+					type: "item"
+				}
+				{
+					id: "7452DA5440481765"
+					item: "society:cranberry"
+					type: "item"
+				}
+				{
+					id: "30814D7224710AD9"
+					item: "society:crystalberry"
+					type: "item"
+				}
+				{
+					id: "034FD7153211F7A0"
+					item: "farm_and_charm:wild_nettle"
+					type: "item"
+				}
+				{
+					id: "6869B124739E7D6D"
+					item: "farm_and_charm:wild_ribwort"
+					type: "item"
+				}
+				{
+					id: "4200D0173C703D78"
+					item: "verdantvibes:bracket_mushroom"
+					type: "item"
+				}
+				{
+					id: "36E3D64770E13C74"
+					item: "species:alphacene_mushroom"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.crafts_room.quest174FBAB7BF83C049.title}"
+			x: -1.5428571428571445d
+			y: -0.44285714285715017d
+		}
+		{
+			description: ["{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.description1}"]
+			icon: "supplementaries:present_blue"
+			id: "7466DCDD6C3CDDE8"
+			min_required_tasks: 5
+			rewards: [{
+				id: "54A04C9C43D4139E"
+				item: "society:artifact_trove"
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "61374B75325BA963"
+					item: "herbalbrews:coffee_beans"
+					type: "item"
+				}
+				{
+					id: "66FC3F4A21FCD62D"
+					item: "herbalbrews:yerba_mate_leaf"
+					type: "item"
+				}
+				{
+					id: "5D671577B4C36B3B"
+					item: "herbalbrews:rooibos_leaf"
+					type: "item"
+				}
+				{
+					id: "2A0F2F7452A50122"
+					item: "herbalbrews:green_tea_leaf"
+					type: "item"
+				}
+				{
+					id: "472EA018F9D0C0E8"
+					item: "brewery:hops"
+					type: "item"
+				}
+				{
+					id: "7E48DF9E76F49A49"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "vinery:red_grape"
+						}
+					}
+					title: "{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.task.9099768918795655753.title}"
+					type: "item"
+				}
+				{
+					id: "57B88B56E94E2933"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "vinery:white_grape"
+						}
+					}
+					title: "{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.task.6320955282412153139.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.title}"
+			x: -3.057142857142857d
+			y: 0.29999999999999716d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.crafts_room.subtitle0}"]

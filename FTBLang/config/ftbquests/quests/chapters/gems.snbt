@@ -5,118 +5,337 @@
 	group: "15230846E14B6926"
 	icon: "society:prismatic_shard"
 	id: "52FC1CA43F502926"
+	images: [
+		{
+			height: 13.0d
+			image: "society:textures/gui/gem.png"
+			order: 1
+			rotation: 0.0d
+			width: 15.0d
+			x: -0.6428571428571033d
+			y: -2.327380952380935d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.3809523809523867d
+			y: -5.044642857142854d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.8690476190476204d
+			y: -3.830357142857139d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.25d
+			x: 1.8690476190476204d
+			y: -1.4017857142857153d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.25d
+			x: -0.452380952380949d
+			y: -0.008928571428555188d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.7738095238095326d
+			y: -1.3303571428571317d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.25d
+			x: -2.7738095238095255d
+			y: -3.794642857142847d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.5238095238095113d
+			y: -4.473214285714285d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 3.52380952380949d
+			y: -0.4732142857142776d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -4.476190476190503d
+			y: -4.437499999999993d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -4.440476190476218d
+			y: -0.5089285714285694d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.488095238095198d
+			y: -2.580357142857139d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -5.583333333333364d
+			y: -2.580357142857139d
+		}
+		{
+			height: 2.0d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 2.0d
+			x: -0.4166666666666998d
+			y: -2.580357142857139d
+		}
+		{
+			height: 4.0d
+			image: "society:textures/gui/sheet.png"
+			order: 1
+			rotation: 12.0d
+			width: 4.0d
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			height: 3.0d
+			image: "society:textures/gui/seal_red.png"
+			order: 2
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.00595238095238d
+			y: 1.1369047619047663d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -6.8690476190476275d
+			y: 0.4940476190476275d
+		}
+		{
+			dependency: "632FF55CE6BAB39A"
+			height: 6.3d
+			image: "society:textures/gui/prismatic_flower.png"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: -7.440476190476197d
+			y: 0.7083333333333428d
+		}
+		{
+			height: 17.0d
+			image: "society:textures/gui/boards1.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 0.523809523809561d
+			y: -2.0292517006802484d
+		}
+		{
+			height: 6.0d
+			image: "society:textures/gui/magnifying_glass.png"
+			order: 3
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.357142857142875d
+			y: -3.9047619047619193d
+		}
+		{
+			height: 9.5d
+			image: "society:textures/gui/main_gem.png"
+			order: 1
+			rotation: 0.0d
+			width: 11.0d
+			x: -0.46428571428567267d
+			y: -2.4702380952380736d
+		}
+		{
+			height: 3.8d
+			image: "society:textures/gui/shard_ruby.png"
+			rotation: 0.0d
+			width: 4.3d
+			x: -2.7499999999999574d
+			y: -3.9416666666666345d
+		}
+		{
+			height: 4.0d
+			image: "society:textures/gui/shard_amethyst.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -0.5d
+			y: 0.0d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
+			icon_scale: 1.5d
 			id: "496C17D8555E1A49"
+			shape: "none"
 			tasks: [{
 				id: "594E42B407852E44"
 				item: "society:prismatic_shard"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -0.5d
+			x: -0.44727891156466626d
+			y: -2.5931122448979522d
 		}
 		{
 			id: "1329C926D42C3761"
+			shape: "none"
 			tasks: [{
 				id: "3185FD812CD28B0D"
 				item: "society:jade"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -0.5d
+			x: 1.845238095238095d
+			y: -3.8482142857142847d
 		}
 		{
 			id: "07F6FE2E6C8CB6F6"
+			shape: "none"
 			tasks: [{
 				id: "5372527AA54D9C04"
 				item: "society:topaz"
 				type: "item"
 			}]
-			x: -1.8214285714285694d
-			y: -2.4642857142857153d
+			x: -0.3928571428571459d
+			y: -5.0625d
 		}
 		{
 			id: "2C8583024AD65A84"
+			shape: "none"
 			tasks: [{
 				id: "3296B76C8B26BA3B"
 				item: "society:ruby"
 				type: "item"
 			}]
-			x: -0.3214285714285694d
-			y: -2.4642857142857153d
+			x: -2.7738095238095326d
+			y: -3.7767857142857153d
 		}
 		{
 			id: "13FA6EDE805D6664"
+			shape: "none"
 			tasks: [{
 				id: "4C45E25B95597685"
 				item: "society:aquamarine"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.5d
+			x: 1.845238095238095d
+			y: -1.372023809523796d
 		}
 		{
 			id: "0C338D902AA1D748"
+			shape: "none"
 			tasks: [{
 				id: "2F2445814FF70A72"
 				item: "society:amethyst_chunk"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.5d
+			x: -0.4880952380952408d
+			y: 0.008928571428569398d
 		}
 		{
 			id: "640E07DEC7DAFA30"
+			shape: "none"
 			tasks: [{
 				id: "08F3D21BB6AAD5F9"
 				item: "minecraft:prismarine_crystals"
 				type: "item"
 			}]
-			x: 1.1785714285714306d
-			y: -2.4642857142857153d
+			x: 4.488095238095205d
+			y: -2.580357142857139d
 		}
 		{
 			id: "740A85F55CE211D0"
+			shape: "none"
 			tasks: [{
 				id: "782CEF0A618DB9A0"
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: -3.3214285714285694d
-			y: -2.4642857142857153d
+			x: -4.47619047619051d
+			y: -4.401785714285708d
 		}
 		{
 			id: "1C34438B1B4384F7"
+			shape: "none"
 			tasks: [{
 				id: "1C8DA7B53ACCAE50"
 				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.5d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			id: "7CBD9C2DB8105753"
+			shape: "none"
 			tasks: [{
 				id: "2EE5742E1174A40E"
 				item: "minecraft:emerald"
 				type: "item"
 			}]
-			x: -4.0d
+			x: 3.5d
 			y: -4.5d
 		}
 		{
 			id: "21E6EE8AB6A5094E"
+			shape: "none"
 			tasks: [{
 				id: "61226894CFEA107E"
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.5d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -132,6 +351,7 @@
 				"13FA6EDE805D6664"
 				"740A85F55CE211D0"
 				"4A09A0A9EA9A83B5"
+				"3BB6026DE3D9EA82"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -164,29 +384,61 @@
 					type: "item"
 				}
 			]
-			shape: "octagon"
+			shape: "none"
 			size: 3.0d
 			tasks: [{
 				icon: "society:omni_geode_node"
 				id: "5D3AF2A372B781AC"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.gems.quest12.task_6717948577994736044.title}"
+				title: "{ftbquests.chapter.gems.quest21B62899C63D3C4B.task.6717948577994736044.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.gems.quest12.title}"
-			x: -1.0d
-			y: 3.0d
+			title: "{ftbquests.chapter.gems.quest21B62899C63D3C4B.title}"
+			x: 5.970238095238088d
+			y: 1.1369047619047663d
 		}
 		{
 			id: "4A09A0A9EA9A83B5"
+			shape: "none"
 			tasks: [{
 				id: "153567B7D56E9B77"
 				item: "society:sparkstone"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -0.5d
+			x: -5.5833333333333d
+			y: -2.5292517006802484d
+		}
+		{
+			icon: "society:spinel"
+			id: "3BB6026DE3D9EA82"
+			shape: "none"
+			tasks: [{
+				icon: "society:spinel"
+				id: "66793859E6E45068"
+				item: "society:spinel"
+				type: "item"
+			}]
+			x: -2.777210884353657d
+			y: -1.3545127495034706d
+		}
+		{
+			icon_scale: 2.0d
+			id: "632FF55CE6BAB39A"
+			optional: true
+			rewards: [{
+				id: "139075A858F39DA4"
+				item: "society:prismatic_shard"
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "47F4BB68F006F98D"
+				item: "numismatics:prismatic_coin"
+				type: "item"
+			}]
+			x: -6.90476190476187d
+			y: 0.4528911564626128d
 		}
 	]
 	title: "{ftbquests.chapter.gems.title}"

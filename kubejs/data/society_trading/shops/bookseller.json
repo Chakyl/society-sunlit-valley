@@ -18,7 +18,8 @@
       "numismatics_cost": 32768,
       "trade_id": "bookseller_the_quality_of_the_earth_for_sun",
       "stage_required": "farming_mastery",
-      "unlock_description": "jei.society_trading.farming_mastery_unlocked"
+      "stage_removed": "the_quality_of_the_earth",
+      "unlock_description":"jei.society_trading.farming_mastery_unlocked"
     },
     {
       "offer": {
@@ -32,7 +33,8 @@
       "numismatics_cost": 65536,
       "trade_id": "bookseller_women_who_run_with_the_plushies_for_sun",
       "stage_required": "husbandry_mastery",
-      "unlock_description": "jei.society_trading.husbandry_mastery_unlocked"
+      "stage_removed": "women_who_run_with_the_plushies",
+      "unlock_description":"jei.society_trading.husbandry_mastery_unlocked"
     },
     {
       "offer": {
@@ -45,7 +47,8 @@
       },
       "numismatics_cost": 16777216,
       "stage_required": "fishing_mastery",
-      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "stage_removed": "pond_house_five",
+      "unlock_description":"jei.society_trading.fishing_mastery_unlocked",
       "trade_id": "bookseller_pond_house_five_for_prismatic"
     },
     {
@@ -56,7 +59,8 @@
       },
       "numismatics_cost": 81920,
       "stage_required": "mining_mastery",
-      "unlock_description": "jei.society_trading.mining_mastery_unlocked",
+      "stage_removed": "the_spark_also_rises",
+      "unlock_description":"jei.society_trading.mining_mastery_unlocked",
       "trade_id": "bookseller_the_spark_also_rises"
     },
     {
@@ -71,7 +75,8 @@
       "numismatics_cost": 49152,
       "trade_id": "bookseller_the_red_and_the_black_for_sun",
       "stage_required": "adventuring_mastery",
-      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked"
+      "stage_removed": "the_red_and_the_black",
+      "unlock_description":"jei.society_trading.adventuring_mastery_unlocked"
     },
     {
       "offer": {
@@ -150,7 +155,8 @@
       "numismatics_cost": 32768,
       "trade_id": "bookseller_phenomenology_of_treasure_for_sun",
       "seasons_required": ["late_spring"],
-      "unlock_description": "jei.society_trading.only_spring"
+      "stage_removed": "phenomenology_of_treasure",
+      "unlock_description":"jei.society_trading.only_spring"
     },
     {
       "offer": {
@@ -164,7 +170,8 @@
       "numismatics_cost": 65536,
       "trade_id": "bookseller_bullfish_jobs_for_sun",
       "seasons_required": ["late_spring"],
-      "unlock_description": "jei.society_trading.only_spring"
+      "stage_removed": "bullfish_jobs",
+      "unlock_description":"jei.society_trading.only_spring"
     },
     {
       "offer": {
@@ -178,7 +185,8 @@
       "numismatics_cost": 81920,
       "trade_id": "bookseller_paradise_crop_for_sun",
       "seasons_required": ["late_summer"],
-      "unlock_description": "jei.society_trading.only_summer"
+      "stage_removed": "paradise_crop",
+      "unlock_description":"jei.society_trading.only_summer"
     },
     {
       "offer": {
@@ -192,7 +200,8 @@
     "numismatics_cost": 131072,
       "trade_id": "bookseller_frogs_bounty_bazaar_for_sun",
       "seasons_required": ["late_summer"],
-      "unlock_description": "jei.society_trading.only_summer"
+      "stage_removed": "frogs_bounty_bazaar",
+      "unlock_description":"jei.society_trading.only_summer"
     },
     {
       "offer": {
@@ -206,7 +215,8 @@
       "numismatics_cost": 4096,
       "trade_id": "bookseller_hitting_hard_and_soft_for_sun",
       "seasons_required": ["late_autumn"],
-      "unlock_description": "jei.society_trading.only_autumn"
+      "stage_removed": "hitting_hard_and_soft",
+      "unlock_description":"jei.society_trading.only_autumn"
     },
     {
       "offer": {
@@ -220,7 +230,8 @@
       "numismatics_cost": 4096,
       "trade_id": "bookseller_canadian_and_famous_for_sun",
       "seasons_required": ["late_autumn"],
-      "unlock_description": "jei.society_trading.only_autumn"
+      "stage_removed": "canadian_and_famous",
+      "unlock_description":"jei.society_trading.only_autumn"
     },
     {
       "offer": {
@@ -233,8 +244,9 @@
       },
       "numismatics_cost": 20480,
       "trade_id": "bookseller_alias_moss",
-      "seasons_required": ["alias_moss"],
-      "unlock_description": "jei.society_trading.only_autumn"
+      "seasons_required": ["late_autumn"],
+      "stage_removed": "alias_moss",
+      "unlock_description":"jei.society_trading.only_autumn"
     },
     {
       "offer": {
@@ -248,7 +260,8 @@
       "numismatics_cost": 81920,
       "trade_id": "bookseller_bluegill_meridian_for_sun",
       "seasons_required": ["late_winter"],
-      "unlock_description": "jei.society_trading.only_winter"
+      "stage_removed": "bluegill_meridian",
+      "unlock_description":"jei.society_trading.only_winter"
     },
     {
       "offer": {
@@ -262,7 +275,8 @@
       "numismatics_cost": 69632,
       "trade_id": "bookseller_intro_to_algorithms_for_sun",
       "seasons_required": ["late_winter"],
-      "unlock_description": "jei.society_trading.only_winter"
+      "stage_removed": "intro_to_algorithms",
+      "unlock_description":"jei.society_trading.only_winter"
     },
     {
       "offer": {
@@ -274,6 +288,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
+      "stage_removed": "animal_fancy",
       "trade_id": "bookseller_animal_fancy_for_sun"
     },
     {
@@ -286,6 +301,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
+      "stage_removed": "wuthering_logs",
       "trade_id": "bookseller_wuthering_logs_for_sun"
     },
     {
@@ -298,6 +314,7 @@
         "count": 8
       },
       "numismatics_cost": 32768,
+      "stage_removed": "first_aid_guide",
       "trade_id": "bookseller_first_aid_guide_for_sun"
     },
     {
@@ -310,6 +327,7 @@
         "count": 6
       },
       "numismatics_cost": 24576,
+      "stage_removed": "slime_contain_protect",
       "trade_id": "bookseller_slime_contain_protect_for_sun"
     },
     {
@@ -322,6 +340,7 @@
         "count": 10
       },
       "numismatics_cost": 40960,
+      "stage_removed": "brine_and_punishment",
       "trade_id": "bookseller_brine_and_punishment_for_sun"
     },
     {
@@ -334,6 +353,7 @@
         "count": 13
       },
       "numismatics_cost": 53248,
+      "stage_removed": "no_name_for_the_sheep",
       "trade_id": "bookseller_no_name_for_the_sheep_for_sun"
     },
     {
@@ -346,6 +366,7 @@
         "count": 16
       },
       "numismatics_cost": 65536,
+      "stage_removed": "banana_karenina",
       "trade_id": "bookseller_banana_karenina_for_sun"
     },
     {
@@ -355,6 +376,7 @@
         "count": 10
       },
       "numismatics_cost": 40960,
+      "stage_removed": "universal_methods_of_farming",
       "trade_id": "bookseller_universal_methods_of_farming"
     },
     {
@@ -367,6 +389,7 @@
         "count": 4
       },
       "numismatics_cost": 67108864,
+      "stage_removed": "slouching_towards_artistry",
       "trade_id": "bookseller_slouching_towards_artistry_for_sun"
     }
   ]

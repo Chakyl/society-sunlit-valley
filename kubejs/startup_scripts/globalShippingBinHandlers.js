@@ -85,7 +85,7 @@ global.processShippingBinInventory = (
         quality > 0 &&
         stages.toString().includes("the_quality_of_the_earth") &&
         trade.multiplier.equals("shippingbin:crop_sell_multiplier") &&
-        Item.of(slotItem).hasTag("minecraft:fishes")
+        !Item.of(slotItem).hasTag("minecraft:fishes")
       ) {
         doubleQuality = true;
       }
@@ -109,12 +109,21 @@ global.processShippingBinInventory = (
       ) {
         itemValue *= 2;
       }
-
-      calculatedValue += Math.round(
+      let additionalValue = Math.round(
         itemValue *
         inventory.getStackInSlot(i).count *
         global.getAttributeMultiplier(attributes, trade.multiplier)
       );
+      if (isNaN(additionalValue)) {
+        console.log("SHIPPING BIN VALUE IS NAN! DEBUG LOG:")
+        console.log("itemValue: " + itemValue)
+        console.log("attrbMult: " + global.getAttributeMultiplier(attributes, trade.multiplier))
+        console.log("Trade Value: " + trade.value)
+        calculatedValue += itemValue * inventory.getStackInSlot(i).count
+      } else {
+        calculatedValue += additionalValue
+      }
+
     }
     if (isSellable && !simulated) {
       if (returnRemoved) removedItems.push(i);
@@ -155,7 +164,7 @@ global.handleShippingBinDebt = (
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"TOP_CENTER",background:1,color:"#55FF55",size:1,offsetY:6,typewriter:1,align:"TOP_CENTER"}`,
+          `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
           Text.translatable(
             "society.shipping_bin.debt_paid_all",
@@ -170,7 +179,7 @@ global.handleShippingBinDebt = (
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"TOP_CENTER",background:1,color:"#FFFFFF",size:1,offsetY:6,typewriter:1,align:"TOP_CENTER"}`,
+          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
           Text.translatable(
             "society.shipping_bin.debt_paid",
@@ -257,7 +266,7 @@ global.processValueOutput = (
         server.runCommandSilent(
           global.getEmbersTextAPICommand(
             player.username,
-            `{anchor:"TOP_CENTER",background:1,color:"#FFFFFF",size:1,offsetY:6,typewriter:1,align:"TOP_CENTER"}`,
+            `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
             160,
             Text.translatable(
               "society.shipping_bin.goods_sold",
@@ -322,7 +331,7 @@ global.processValueOutput = (
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"TOP_CENTER",background:1,color:"#FF5555",size:1,offsetY:6,typewriter:1,align:"TOP_CENTER"}`,
+          `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
           Text.translatable("society.shipping_bin.full").toJson()
         )

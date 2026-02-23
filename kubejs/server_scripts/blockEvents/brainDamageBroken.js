@@ -6,7 +6,6 @@ BlockEvents.broken(
     const { level, server, block, player } = e;
     if (player.stages.has("intro_to_algorithms"))
       server.scheduleInTicks(2, () => {
-        console.log("lead broken scheduler");
         const entities = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(2))
           .filter((f) => f.type == "minecraft:area_effect_cloud");

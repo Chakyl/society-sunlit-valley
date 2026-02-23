@@ -8,7 +8,7 @@ ItemEvents.rightClicked("society:fish_radar", (e) => {
   function playerTell(x) {
     player.tell(x);
   }
-
+  player.tell(global.getSeasonFromBiome(level, player.pos))
   let fish = [];
   player.tell(
     Text.of("=====[ ").gray()

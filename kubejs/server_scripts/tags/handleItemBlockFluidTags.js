@@ -250,7 +250,7 @@ const rawLogs = [
   "atmospheric:crustose_log",
   "atmospheric:grimwood_log",
   "vintagedelight:magic_vine",
-  "vanillabackport:pale_oak_log",
+  "minecraft:pale_oak_log",
   "cluttered:willow_log",
   "cluttered:flowering_willow_log",
   "cluttered:poplar_log",
@@ -261,6 +261,7 @@ const rawLogs = [
   "cluttered:fluorescent_maple_log",
   "cluttered:blue_mushroom_log",
   "cluttered:red_mushroom_log",
+  "rainbowoaks:rainbow_log"
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
@@ -458,7 +459,7 @@ ServerEvents.tags("item", (e) => {
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
-  e.add("forge:stripped_logs", "vanillabackport:stripped_pale_oak_log");
+  e.add("forge:stripped_logs", "minecraft:stripped_pale_oak_log");
   [
     "twigs:tangerine_seashell",
     "twigs:roseate_seashell",
@@ -595,6 +596,7 @@ ServerEvents.tags("item", (e) => {
     "society:jade",
     "society:sparkstone",
     "society:prismatic_shard",
+    "society:spinel"
   ].forEach((item) => {
     e.add("forge:gems", item);
   });
@@ -687,6 +689,14 @@ ServerEvents.tags("block", (e) => {
   });
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
+  });
+
+  [
+    "society:prismatic_shard_block",
+    "society:sparkstone_block",
+    "aquaculture:neptunium_block"
+  ].forEach((item) => {
+    e.add("minecraft:beacon_base_blocks", item);
   });
   e.remove("minecraft:dirt", "farmersdelight:rich_soil");
   rawLogs.forEach((log) => {

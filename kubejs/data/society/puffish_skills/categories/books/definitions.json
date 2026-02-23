@@ -298,14 +298,6 @@
           "unlock_command": "kubejs stages add @s paradise_crop",
           "lock_command": "kubejs stages remove @s paradise_crop"
         }
-      },
-      {
-        "type": "puffish_skills:attribute",
-        "data": {
-          "attribute": "additional_attributes:harvest",
-          "value": 1,
-          "operation": "addition"
-        }
       }
     ]
   },

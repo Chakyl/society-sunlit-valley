@@ -18,6 +18,20 @@
 ### SSV v4.0.0
 ^^^
 --- 
+## 4.0.2
+- Updated Korean translation
+- Reduced mood cramping check to match existing affection cramping check
+- Reduced mult of mood impact modifiers (1.5 -> 1.25, 2 -> 1.5)
+- Fixed villager homes binding to the incorrect NPC
+- Fixed /time set making it impossible to place villager homes
+- Fixed Shepherd house having infested chiseled stone bricks
+- Fixed Iridium clock being off by 64 after reaching 64 triggers
+- Fixed Slime Tickets having incorrect foods for Orby and Minty slimes
+- Fixed Pale Oak Logs not selling and other similar bugs
+- Fixed the veggies delight mashed potato recipe being broken
+- Fixed Quality of the Earth not working correctly
+- Fixed Auto-Grabber ignoring plushie modifiers
+## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
 - Added 6 handmade villagers with art by NifastGreentail and Nitbe
 - Added Invitations, sold by the Carpenter villager (craftable invitation)
@@ -49,9 +63,12 @@
 - Added Gray Anatomy upgrade
 - Added Spinel gem
 - Added normal Skill Book Alias Moss
+- Added artifacts Green Tea Honeycomb and Giant Bandolier belt
 - Added Ripper Tooth functionality - Threatens the fish in a Fish Pond into changing their active quest
 - Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish
-- Added Fredbear plushies
+- Added Auto-Trader
+- Added Fredbear plushies by Altessa
+- Added Chimera plushie by witchd
 - Added full value calculations to items when holding shift
 - Added Mana Fruit crop and reworked parts of Botania Progression around it
 - Added Wines: Violet Moon, Sparkling Le Roy, Laputa Franc, and Mana King
@@ -63,12 +80,23 @@
 - Added Turtle, Bat, and Shima Enaga as husbandry animals
 - Added Schematiccannon and associated items back with exploit fixer
 - Added Credits & Wiki link to the pause screen in the place of unusable vanilla buttons
+- Added Iridium Clock
+- Added Prismatic Shard Block
+- Added back Fluid Grid
+- Added Sun Candy
+- Added Rainbow Oak
+- Added Auto-Petter
+- Added timeline
+- Added Mystic Jelly for automating Nether and Ocean Jelly
+- Added 3 worldgen structures by Patchy: Woodcutter, Blacksmith, and Horse Stables
+- Added 5 worldgen structures by witchd: Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse
 - Added more advancements
 - Added configuration for different product types to make the game harder or easier 
 - Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
 - Ancient Goddess Statue now trades ones a day
 - Farmland no longer turns into dirt when not watered at 6am
 - Changed recipe of Grapevine Stems/Lattices to use treated logs
+- Changed recipe for Auto Tapper, Brass, and Fluid Mechanisms to be more fitting/less frustrating
 - Cheese is now an Artisan Product (from Farmer Product)
 - Farm animals no longer produce twice as much at max affection
 - Minty Slimes now eat Tubabacco, Orby Slimes now eat Dehydrated Products
@@ -77,11 +105,13 @@
 - Reworked Fermentation to be Advanced Wine Keg (and increased cost)
 - Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
 - Reworked Pink Matter upgrade to use Dragon Scales and upped Plort Ripping chance
+- Bookseller now no longer sells books you've already read
 - Reworked Crafts room bundles
 - Ribbit Hut now works at 7am (from 8am)
 - Magic Shears now output quality based on affection
 - Moved Birch log tapping to Mushroom Log
 - Increased value of Botania mushrooms (12 -> 24)
+- Increased cost of Gaia ingot
 - Increased Oak Resin tapping time (3->5)
 - Increased bar size of Lava Fishing Rod by 12
 - Increased weight of Fortress Grouper (1 -> 3)
@@ -93,6 +123,7 @@
 - Increased value of Pine Tar and Oak Resin (48->128)
 - Rebalanced Plort values
 - Rebalanced husbandry as a whole to not be insanely better than other money makers (see below)
+- Rebalanced the way sugar quality scales
 - Reduced cost of Lava Fishing Rod 98,304 ->73,728
 - Reduced cost of Seed Maker (3 gold blocks -> 1)
 - Reduced cost of Crystalarium (5 lead blocks -> 2)
@@ -151,13 +182,15 @@
 - Fixed Cluttered counter edges being uncraftable
 - Fixed Cluttered plushies not being considered plushies
 - Fixed several issues with crop quality not calculating correctly
-- Fixed Brown Shrooma having incorrect time of day in Fish Finder 
+- Fixed ribbit artifacts not being counted as artifacts
+- Fixed Cod & Brown Shrooma having incorrect time of day in Fish Finder 
 - Fixed tomatoes only growing up 1 vine
 - Fixed Sparkstone Recycler not working on Auto-Grabber and Fish Pond Basket
 - Fixed High Quality Fertilized Farmland not working
 - Fixed Strawberry having vegetable tag
 - Fixed trade limits not working on shops meant to have them
 - Fixed Ender Slime having wrong hat
+- Fixed slimes not losing huger if their owner is in a different dimension
 - Fixed certain farm animal drops not having quality
 - Fixed Garlic Clove being plantable
 - Fixed exploits

@@ -64,6 +64,14 @@ LootJS.modifiers((e) => {
       itemStack.setCount(itemStack.getCount() + 1);
       return itemStack;
     });
+    
+  e.addBlockLootModifier(global.cropList)
+    .hasAnyStage("paradise_crop")
+    .modifyLoot(Ingredient.all, (itemStack) => {
+      if (!cropCollectorDenied.includes(itemStack.id))
+        itemStack.setCount(itemStack.getCount() + 1);
+      return itemStack;
+    });
   e.addBlockLootModifier(global.cropList)
     .hasAnyStage("crop_collector")
     .modifyLoot(Ingredient.all, (itemStack) => {

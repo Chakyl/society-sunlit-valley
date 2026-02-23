@@ -69,7 +69,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:broken_clock").texture("society:item/broken_clock");
   e.create("society:sea_biscut")
     .texture("society:item/sea_biscut")
-    .displayName("Sea Biscuit");
+    .displayName("Sea Biscuit").fireResistant(true);
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
   e.create("society:ancient_roe").texture("society:item/ancient_roe");
@@ -584,7 +584,15 @@ StartupEvents.registry("item", (e) => {
     });
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
   e.create("society:chai_blend").texture("society:item/chai_blend");
-
+  e.create("society:sun_candy")
+    .texture("society:item/sun_candy")
+    .rarity("epic")
+    .food((food) => {
+      food.hunger(2);
+      food.saturation(14);
+      food.effect("minecraft:strength", 3000, 0, 1.0);
+      food.effect("farm_and_charm:sweets", 3000, 2, 1.0);
+    });
   e.create("society:magic_rock_candy")
     .texture("society:item/magic_rock_candy")
     .rarity("epic")
@@ -628,7 +636,9 @@ StartupEvents.registry("item", (e) => {
     "wuthering_logs",
     "women_who_run_with_the_plushies",
   ].forEach((item) => {
-    e.create(`society:${item}`).texture(`society:item/books/${item}`);
+    e.create(`society:${item}`)
+      .texture(`society:item/books/${item}`)
+      .rarity("rare");
   });
   e.create("society:debt_caverns")
     .displayName("Debt: The First 5000 Caverns")

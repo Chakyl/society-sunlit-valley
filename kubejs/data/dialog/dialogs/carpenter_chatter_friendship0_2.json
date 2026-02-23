@@ -21,6 +21,25 @@
 					"position": "INLINE",
 					"brightness": 1
 				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.chatter_friendship0.2.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
 			],
 			"options": [
 				{

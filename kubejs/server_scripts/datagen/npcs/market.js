@@ -12,12 +12,18 @@ if (global.datagenDialog) {
       friendship0: [
         "Hmmm? Need something?",
         "What can I help you with?",
+        ["Welcome to the Sunlit Market! How can I help you~", "I really hope I can get away with not saying that ever again."],
+        ["If you're looking for saplings, ask Ace.", "Those things leave so much dirt around and I can't be bothered to sweep it."],
         "Hey... I've got the seeds.",
+        ["I hope Ace gives me back that copy of Wuthering Logs...", "I want to read it before watching the new film adaptation."],
+        ["Wow you look absolutely exhausted!", "Wait I'm not supposed to say stuff like that...", "Welcome to the market, what can I do for you!"],
+        ["I was told to make sure you know about fertilizers.", "I feel like someone in your position would know about them already though."],
         "Oh? You're telling me you need more seeds?",
         "I can't imagine wanting to be out in the fields all day.",
         ["I'm going to miss going to the cinema every week.", "I can't imagine Ace has the plans drawn up for one at the moment."],
         "You look exhuasted, starting a farm must be taking it out of you.",
         ["I'm not used to this much solitude.", "It'd be nice if it wasn't so boring..."],
+        ["Takes me a solid month to get used to sleeping in a new bed.", "It's not going so well..."],
         "Another quiet day in the valley.",
         ["It's deathly quiet out here in the wilderness.", "Going to take me some time to get used to."],
         [
@@ -25,15 +31,17 @@ if (global.datagenDialog) {
           "Just slow down a little, the money can always wait."
         ],
         [
-          "Ace is starting to annoy me with all that hammering.", 
+          "Ace is starting to annoy me with all that hammering.",
           "All this open area, the sound travels so far."
         ]
       ],
       friendship1: [
+        "Happy cashiers are all alike, but every unhappy cashier is unhappy in their own way...",
         "What's up @i?",
         "What would you like today?",
         "No need to look around for anything, I've learned where everything is now.",
         "Is it apple season yet?",
+        ["...", "......", "........", "...I was hoping you would walk away by now..."],
         ["Remind me, where does your name come from?", "Every name has a story, even if you're not aware of it."],
         "When do you get done with working? Do you ever really finish a work day?",
         "It's so boring around here...",
@@ -54,12 +62,14 @@ if (global.datagenDialog) {
       ],
       friendship2: [
         [
-          "Can yopu tell Caroline I've been very professional with you?",
+          "Can you tell Caroline I've been very professional with you?",
           "She doesn't like when I get casual and I really can't be bothered.",
         ],
         "Can you hurry up and buy something, I'm really tired right now.",
         "I'm running low on stock this week so go easy on me.",
+        "I don't know why everyone around here is so suspicious of me, I just like my peace and quiet...",
         "Why does a town this small even need a market. If you ask me, everyone should just barter for food.",
+        ["Caroline's weekly report is overdue, I hope she's not too mad about it.", "I don't think I'm gonna be able to convince you to do it for me... Unless?"],
         "Read any classics lately? Or are you still running around from dusk till dawn every day.",
         [
           "Ugh, Caroline's workers are late again today...",
@@ -114,6 +124,7 @@ if (global.datagenDialog) {
         ]
       ],
       friendship5: [
+        ["Happy cashiers are all alike, but every unhappy cashier is unhappy in their own way...", "...But I'm always happy to see you @i!"],
         ["I've been reading about the arcane magic of the Skull Cavern.", "Have you had a visit yet?"],
         ["Do you think Caroline ever gets along with anyone?", "I wonder if she has a soft side..."],
         ["I'm kinda over this whole groceries thing.", "Is my only task in this short life to sort products?"],
@@ -138,6 +149,7 @@ if (global.datagenDialog) {
     },
     giftResponse: {
       loved: [
+        ["Small kindnesses like these really break up the drudgery of daily life.", "I'm very thankful you're part of the melange."],
         "Beautiful, and touching.",
         "This is mesmerizing. I'll cherish it forever.",
         "What a gift. To know me like this is the mark of a true friend.",
@@ -207,5 +219,31 @@ if (global.datagenDialog) {
         "You are a child, get away from me."
       ],
     },
+    unique: [
+      {
+        name: "five_gift",
+        text: [
+          "Ahhh just the person I wanted to see today! I have a bit of a request for you.",
+          "Caroline's making me read this really dry book on farming, and I really can't be bothered...",
+          "But you're a farmer! A really good one at that, and I'd know more than anyone else here.",
+          "Sooooo.... Can you please read this book for me and give me a quick summary on it?",
+          "In return I'll convince Caroline to let me carry seeds of every season all the time!",
+          "It's a win win but I know you'd do it either way since you seem absolutely infatuated with me.",
+          "...You aren't exactly subtle..."
+        ]
+      },
+      {
+        name: "five_gift_read",
+        text: [
+          "Hey @i, you look like the type of person who's read Universal Methods of Farming, am I right?",
+          "Sorry I don't mean to call you a nerd. I mean you definitely are a farming nerd there's no doubt about that.",
+          "But I digress and I'll cut to the chase. Can you give me a quick summary on it?",
+          "Caroline's making me read this really dry book on farming, and I really can't be bothered...",
+          "I'll give you some of these rare sparkpod seeds in advance, it really is a win win!",
+          "Although... I know you'd do it either way since you seem absolutely infatuated with me.",
+          "...You aren't exactly subtle..."
+        ]
+      },
+    ]
   });
 }

@@ -1,0 +1,239 @@
+{   
+    "item.portable_blueprints.scanner": "스캐너",
+    "item.portable_blueprints.tablet": "태블릿",
+    "item.portable_blueprints.blueprint": "청사진",
+    "item.portable_blueprints.server_blueprint": "서버 청사진",
+    "item.portable_blueprints.global_blueprint": "글로벌 청사진",
+    "item.portable_blueprints.worn_blueprint": "낡은 청사진",
+
+
+
+    "item.portable_blueprints.description.blueprint_1": "작성자: %v%",
+    "item.portable_blueprints.description.blueprint_2": "이름: %v%",
+    "item.portable_blueprints.description.blueprint_3": "[Shift] 사용법",
+    "item.portable_blueprints.description.blueprint_swm": "[나에게 공유됨]",
+    "item.portable_blueprints.description.worn_blueprint.free_build": "[재료 불필요]",
+
+
+
+    "item.portable_blueprints.description.scanner_1": "[Shift] 사용법",
+    "item.portable_blueprints.description.scanner_2": "블록을 우클릭하여 첫 번째 모서리 선택\n첫 번째 모서리 선택 후 다른 블록을 우클릭하여 두 번째 모서리 선택\n영역 설정 후 공중에서 우클릭하여 메뉴 열기\n공중을 Shift + 우클릭하여 선택 영역 제거\nCTRL 키를 누른 상태에서 6면 중 하나를 보면서 마우스 휠을 사용하여 영역 조정",
+    
+
+    "gui.portable_blueprints.scanner.label1": "청사진 이름 입력",
+    "gui.portable_blueprints.scanner.label2": "이미 있는 이름입니다.\n덮어씌울까요?",
+    "gui.portable_blueprints.scanner.label_max_structure_reached": "저장 제한 초과! [최대: %v%]\n\n태블릿에서 공간을 확보하십시오",
+    "gui.portable_blueprints.scanner.label_max_structure_count": "블록 상한 초과!\n\n[선택된 블록: %v1%]\n[최대 블록: %v2%]",
+    "gui.portable_blueprints.scanner.checkbox.creative_blocks": "크리에이티브 모드에서만\n획득 가능한 블록 포함",
+    "gui.portable_blueprints.scanner.tooltip.scan_button_confirm": "확인",
+    "gui.portable_blueprints.scanner.tooltip.scan_button_replace": "대체",
+    "gui.portable_blueprints.scanner.tooltip.back_button": "돌아가기",
+    "gui.portable_blueprints.scanner.tooltip.settings_button": "설정",
+
+
+    "gui.portable_blueprints.blueprint.button_reload": "다시 로드",
+    "gui.portable_blueprints.blueprint.button_rotate_left": "시계 방향 회전",
+    "gui.portable_blueprints.blueprint.button_rotate_reset": "회전 초기화",
+    "gui.portable_blueprints.blueprint.button_rotate_right": "반시계 방향 회전",
+    "gui.portable_blueprints.blueprint.rotation_step": "회전각:",
+    "gui.portable_blueprints.blueprint.current_rotation":"현재 회전 상태:",
+    "gui.portable_blueprints.blueprint.button_mirror_x": "X축 반전",
+    "gui.portable_blueprints.blueprint.button_mirror_y": "Y축 반전",
+    "gui.portable_blueprints.blueprint.button_mirror_z": "Z축 반전",
+    "gui.portable_blueprints.blueprint.button_skip_obstruction_block": "다른 블록에 의해 설치할 수 없는 블록을 건너뛰기",
+    "gui.portable_blueprints.blueprint.button_build_anyway": "필요한 블록이 모두 있을 때 건물 설치",
+
+
+    "gui.portable_blueprints.tablet.shared_by_server": "서버에서 공유됨",
+
+
+    "hotbar_message.portable_blueprints.item_missing": "아이템 부족: \"%v%\"",
+
+    "hotbar_message.portable_blueprints.blueprint_missing": "유효하지 않은 청사진입니다!",
+
+    "chat_message.portable_blueprints.global_bp_blocks_limit": "<청사진> 이 청사진은 월드 높이 상한을 초과했습니다!",
+    "chat_message.portable_blueprints.global_bp_quantity_limit": "<청사진> 저장 가능한 청사진 상한을 초과했습니다! 태블릿에서 공간을 확보하십시오.",
+
+    "tab.portable_blueprints.title": "Portable blueprints",
+
+
+    "command.portable_blueprints.serverblueprint.not_found": "<서버 청사진> 청사진을 찾을 수 없습니다!",
+    "command.portable_blueprints.serverblueprint.set_success": "<서버 청사진> 서버 저장소에 청사진이 성공적으로 추가되었습니다.",
+    "command.portable_blueprints.serverblueprint.set_global_error": "<서버 청사진> 전역 청사진은 서버 저장소에 추가할 수 없습니다.",
+    "command.portable_blueprints.serverblueprint.not_valid_item": "<서버 청사진> 올바르지 않은 청사진입니다!",
+    "command.portable_blueprints.serverblueprint.no_item": "<서버 청사진> 손에 청사진을 들고 있어야 합니다.",
+    "command.portable_blueprints.serverblueprint.delete_success": "<서버 청사진> 서버 청사진을 성공적으로 삭제했습니다.",
+    "command.portable_blueprints.serverblueprint.delete_error": "<서버 청사진> 서버 청사진을 삭제하는 중에 오류가 발생했습니다!",
+    "command.portable_blueprints.serverblueprint.set_player_permission_success": "<서버 청사진> 플레이어 권한을 성공적으로 갱신했습니다.",
+    "command.portable_blueprints.serverblueprint.set_player_permission_error": "<서버 청사진> 플레이어 권한 갱신중에 오류가 발생했습니다!",
+
+
+    "system.portable_blueprints.inv_full": "인벤토리 가득 참!",
+
+
+    "item.portable_blueprints.worn_blueprint.owner_name": "알 수 없음",
+    "command.portable_blueprints.wornblueprint.set_global_error": "<낡은 청사진> 전역 청사진은 낡은 청사진 저장소에 추가할 수 없습니다.",
+    "command.portable_blueprints.wornblueprint.not_found": "<낡은 청사진> 청사진을 찾을 수 없습니다!",
+    "command.portable_blueprints.wornblueprint.set_success": "<낡은 청사진> 낡은 청사진 저장소에 청사진이 성공적으로 추가되었습니다.",
+    "command.portable_blueprints.wornblueprint.not_valid_item": "<낡은 청사진> 올바르지 않은 청사진입니다!",
+    "command.portable_blueprints.wornblueprint.no_item": "<낡은 청사진> 손에 청사진을 들고 있어야 합니다.",
+    "command.portable_blueprints.wornblueprint.delete_success": "<낡은 청사진> 낡은 청사진을 성공적으로 삭제했습니다.",
+    "command.portable_blueprints.wornblueprint.delete_error": "<낡은 청사진> 낡은 청사진을 삭제하는 중에 오류가 발생했습니다!",
+    "item.portable_blueprints.description.worn_blueprint_use": "남은 사용 횟수: %v%",
+
+
+    "chat_message.portable_blueprints.container.linked": "<청사진 보관함 연결> %v% 의 보관함을 연결했습니다!",
+    "chat_message.portable_blueprints.container.unlinked": "<청사진 보관함 연결> %v% 의 보관함과 연결을 해제했습니다!",
+
+
+
+
+    "gui.portable_blueprints.compatibility.projecte.gui.tooltip.active_emc": "EMC 활성화",
+    "gui.portable_blueprints.compatibility.projecte.gui.tooltip.deactive_emc": "EMC 비활성화",
+    "gui.portable_blueprints.compatibility.projecte.gui.label1": "구조물\nEMC 필요",
+    "gui.portable_blueprints.compatibility.projecte.gui.label2": "플레이어 EMC",
+    "gui.portable_blueprints.compatibility.projecte.gui.label3": "모든 아이템에 EMC가 없습니다!\n해당 아이템은\n보관함에서 꺼내 사용합니다!",
+    "gui.portable_blueprints.compatibility.projecte.emc_missing": "\"%v%\"를 생성하기 위한 EMC가 부족합니다",
+
+
+    "gui.portable_blueprints.blueprint.blacklist_block": "[이 블록은 서버에서 사용 금지되었습니다]",
+
+
+
+    "gui.portable_blueprints.blueprint.button_build": "건설",
+    "gui.portable_blueprints.blueprint.tooltip.button_build": "건설 시작",
+    "gui.portable_blueprints.blueprint.tooltip.button_set_origin_first": "건물을 설치하기 전에 위치를 지정해야 합니다",
+    "item.portable_blueprints.description.blueprint_4": "블록을 우클릭하여 설치 위치 지정\n공중을 우클릭하여 청사진 메뉴 열기\n보관함을 Shift + 우클릭하여 블록 저장소 연결\nCTRL 키를 누른 상태에서 6면 중 하나를 보면서 마우스 휠을 사용하여 위치 조정\nShift + 마우스 휠로 미리보기 불투명도 조정",
+    "chat_message.portable_blueprints.block_obstruction": "건설 영역에 겹치는 블록이 있습니다. 표시된 %v%개의 블록을 제거하십시오. 영역 정리 후에 다시 위치를 지정하고 건설을 재시도하십시오.",
+
+
+    "command.portable_blueprints.block.list": "<청사진> 차단된 플레이어 목록: %v%",
+    "command.portable_blueprints.block.unblock_error": "<청사진> 플레이어 %v% 은(는) 차단된 적이 없습니다!",
+    "command.portable_blueprints.block.unblock": "<청사진> 플레이어 %v% 의 차단이 해제되었습니다!",
+    "command.portable_blueprints.block.block_ok": "<청사진> 플레이어 %v% 이(가) 차단되었습니다.",
+    "command.portable_blueprints.block.block_error": "<청사진> 플레이어 %v% 은(는) 이미 차단되었습니다!",
+
+    "chat_message.portable_blueprints.block": "<청사진> 당신은 청사진 사용이 금지되어 있습니다!",
+    "chat_message.portable_blueprints.block_scanner": "<청사진> 당신은 스캐너 사용이 금지되어 있습니다!",
+
+    "chat_message.portable_blueprints.blueprint_cooldown": "<청사진> 다음 청사진을 배치하려면 %v%초 이상 대기해야 합니다!",
+
+
+
+
+
+    "portable_blueprints.gui.tablet.mineprint.area.server_title": "서버 저장소",
+    "portable_blueprints.gui.tablet.mineprint.area.players_title": "커뮤니티 허브",
+    "portable_blueprints.gui.tablet.mineprint.area.follow_title": "팔로우 중",
+
+
+    "portable_blueprints.gui.tablet.mineprint.general.hover_follow.on": "팔로우",
+    "portable_blueprints.gui.tablet.mineprint.general.hover_follow.off": "팔로우 해제",
+
+
+    "portable_blueprints.gui.tablet.blueprint_info.button.reset_preview": "미리보기 초기화",
+    "portable_blueprints.gui.tablet.blueprint_info.button.back": "뒤로가기",
+
+    "portable_blueprints.gui.tablet.blueprint_info.button.get_blueprint": "청사진 받기",
+    "portable_blueprints.gui.tablet.blueprint_info.button.import_blueprint": "청사진 불러오기",
+    "portable_blueprints.gui.tablet.blueprint_info.button.share_blueprint": "청사진 공유",
+    "portable_blueprints.gui.tablet.blueprint_info.button.export_blueprint": "디스크로 청사진 내보내기",
+    "portable_blueprints.gui.tablet.blueprint_info.button.delete_blueprint": "청사진 삭제",
+
+    "portable_blueprints.gui.tablet.blueprint_info.loading_data": "청사진 데이터\n로드 중...",
+
+    "portable_blueprints.gui.tablet.blueprint_info.info.nblocks": "블록 수: %v%",
+    "portable_blueprints.gui.tablet.blueprint_info.info.lenght.x": "X축 길이: %v%",
+    "portable_blueprints.gui.tablet.blueprint_info.info.lenght.y": "Y축 길이: %v%",
+    "portable_blueprints.gui.tablet.blueprint_info.info.lenght.z": "Z축 길이: %v%",
+    "portable_blueprints.gui.tablet.blueprint_info.info.by_server": "서버에서 공유됨",
+
+    "portable_blueprints.gui.tablet.blueprint_share.button.private": "개인용",
+    "portable_blueprints.gui.tablet.blueprint_share.button.whitelist": "허가 리스트",
+    "portable_blueprints.gui.tablet.blueprint_share.button.public": "공용",
+    "portable_blueprints.gui.tablet.blueprint_share.label1": "이 청사진은 공유되지 않아\n혼자서만 사용할 수 있습니다",
+    "portable_blueprints.gui.tablet.blueprint_share.label3": "이 청사진은 모든 플레이어에게\n공유되어 있습니다",
+
+
+    "portable_blueprints.key_mapping.category": "Portable Blueprints",
+    "portable_blueprints.key_mapping.move_origin.up": "청사진 원점 위로 이동",
+    "portable_blueprints.key_mapping.move_origin.down": "청사진 원점 아래로 이동",
+    "portable_blueprints.key_mapping.move_origin.px": "청사진 원점 +X로 이동",
+    "portable_blueprints.key_mapping.move_origin.nx": "청사진 원점 -X로 이동",
+    "portable_blueprints.key_mapping.move_origin.pz": "청사진 원점 +Z로 이동",
+    "portable_blueprints.key_mapping.move_origin.nz": "청사진 원점 -Z로 이동",
+
+
+    "portable_blueprints.progress_bar.loading_hologram": "건축물 로드 중",
+    "portable_blueprints.progress_bar.building_structure": "건축물 건설 중",
+    "portable_blueprints.progress_bar.exporting_blueprint": "<remove_size>0.025</remove_size>청사진 내보내는 중",
+    "portable_blueprints.progress_bar.importing_blueprint": "<remove_size>0.025</remove_size>청사진 불러오는 중",
+    "portable_blueprints.progress_bar.scanning": "스캔 중",
+
+    "portable_blueprints.toast.global_blueprints.export.title": "청사진 내보내기",
+    "portable_blueprints.toast.global_blueprints.export.subtitle": "내보내기 개시!",
+    "portable_blueprints.toast.global_blueprints.export.subtitle2": "내보내기 완료!",
+
+    "portable_blueprints.toast.global_blueprints.import.title": "청사진 불러오기",
+    "portable_blueprints.toast.global_blueprints.import.subtitle": "불러오기 개시!",
+    "portable_blueprints.toast.global_blueprints.import.subtitle2": "불러오기 완료!",
+
+
+    "portable_blueprints.gui.tablet.app.blueprint": "청사진",
+    "portable_blueprints.gui.tablet.app.mineprint": "MinePrint",
+    "portable_blueprints.gui.tablet.app.info": "정보",
+    "portable_blueprints.gui.tablet.app.configuration": "설정",
+    "portable_blueprints.gui.tablet.blueprint_info.button.ban": "커뮤니티 허브에서 제거됨",
+
+    "portable_blueprints.gui.entity.businessvillager.text": "<비즈니스 주민> 블록 삭제를 도와드릴까요? 무료로 해드리겠지만, 삭제한 블록은 제가 가져갈 겁니다.",
+
+    "portable_blueprints.gui.tablet.app.info.general.recipe": "제작법",
+    "portable_blueprints.gui.tablet.app.info.general.title": "정보",
+    "portable_blueprints.gui.tablet.app.info.tablet.description1": "%v%의 앱으로 모드가 제공하는 기능에 접근할 수 있습니다. 각 앱으로 모드의 특정 기능을 조작할 수 있습니다.\n\n우하단의 톱니바퀴에서 %v%의 배경화면을 선택하거나 외부 링크를 배치할 수 있습니다. (서버 설정 필요)",
+    "portable_blueprints.gui.tablet.app.info.scanner.description1": "%v%는 선택 영역의 건축물을 디지털화하여 %v2%을 구성하여 세계 어디에든 쉽게 배치할 수 있도록 하는 도구입니다.\n\n건축물을 디지털화하려면 먼저 영역을 선택해야 합니다. %v%를 들고 블록 또는 공중에 오른쪽 클릭하여 첫 번째 모서리를 지정하세요. 그리고 건축물의 반대쪽으로 이동하여 다시 오른쪽 클릭하세요.\n\n첫 번째 영역을 선택했을 때부터 선택한 영역을 시각화해 줄 것입니다.\n영역 선택을 취소하려면 공중을 Shift + 오른쪽 클릭하세요.\n\n선택 면을 보고 Ctrl + 마우스 휠 조작으로 영역을 미세 조정할 수 있습니다.\n\n영역을 선택한 후에 공중에 오른쪽 클릭하면 이름을 지정할 수 있는 %v% GUI가 열립니다.\n\n주의사항: 만약 이미 같은 이름의 %v2%이 있다면, 덮어씌우게 됩니다.\n\n스캔 크기에는 서버에서 지정한 최대 크기 제한이 있습니다. 해당 제한을 초과하면 디지털화할 수 없습니다.\n\n또한, 플레이어마다 저장 가능한 %v2% 갯수도 서버에서 제한될 수 있습니다.",
+    "portable_blueprints.gui.tablet.app.info.blueprint.description1": "%v%으로 이전에 %v2%에서 디지털화한 건축물을 배치할 수 있습니다. 청사진은 일반적으로 %v3%을 통해 얻습니다.\n\n%v%을 사용하려면 먼저 손에 들어서 건축물을 로드해야 합니다. 로드가 완료되면 미리보기를 배치할 수 있습니다. 로드 후에 블록에 오른쪽 클릭하면 해당 위치에 건물이 어떻게 설치되는지 확인할 수 있는 미리보기가 표시됩니다.\n\n%v%은 건물을 설치할 때 미세 조정이 가능한 옵션을 제공합니다. Shift + 마우스 휠 조작으로 미리보기 불투명도를 조절할 수 있습니다. 미리보기 면을 보고 CTRL + 마우스 휠 조작으로 배치 위치를 조정할 수 있습니다.\n\n만약, 청사진에 너무 많은 블록이 필요하여 보관함에 다 넣을 수 없는 경우, 외부 보관함 블록을 %v%에 연결할 수 있습니다. 상자, 통, 셜커 상자와 같은 보관함 블록에 Shift + 오른쪽 클릭하여 연결할 수 있습니다. 연결되면, 청사진이 건물을 배치할 때 해당 블록에 보관된 아이템을 직접 사용할 수 있습니다. 연결을 해제하려면 연결한 블록에 다시 Shift + 오른쪽 클릭하세요.\n\n%v%을 공중에 오른쪽 클릭하면 회전, 반전과 같은 추가적인 조작이 가능한 인터페이스에 접근할 수 있습니다.",
+
+    "portable_blueprints.gui.tablet.app.info.searchbar.title": "검색창",
+    "portable_blueprints.gui.tablet.app.info.searchbar.description1": "각 앱의 검색창에서 이름을 검색하여 디지털화한 건축물을 찾을 수 있습니다. 돋보기 아이콘을 클릭하여 태그 검색 모드로 변경할 수도 있습니다.",
+    "portable_blueprints.gui.tablet.app.info.searchbar.description2": "태그 검색 모드에서는 세계 또는 서버에 저장된 모든 태그가 표시되어 선택할 수 있습니다. 검색창에서 마우스 휠을 조작하여 태그 목록을 이동할 수 있습니다. 다시 이름 검색 모드로 돌아가려면 %v% 아이콘을 클릭하십시오.",
+
+    "portable_blueprints.gui.tablet.app.info.blueprint_app.title": "청사진 앱",
+    "portable_blueprints.gui.tablet.app.info.blueprint_app.description1": "청사진 앱에서 플레이어가 디지털화한 건축물을 열람할 수 있습니다.\n\n앱을 열면 이 세계에서 디지털화한 건축물 목록을 볼 수 있습니다. 그 중 하나를 클릭하면 해당 건축물의 상세 정보를 볼 수 있습니다.\n\n이 화면에서 해당 건축물의 %v%을 받거나, 삭제할 수 있습니다.",
+
+    "portable_blueprints.gui.tablet.app.info.mineprint_app.title": "MinePrint 앱",
+    "portable_blueprints.gui.tablet.app.info.mineprint_app.description1": "MinePrint 앱에서 세계에서 공유되는 건축물을 열람할 수 있습니다.\n\n“%v%”에서는 당신이 팔로우한 건축물들을 볼 수 있습니다. 좋아하거나 자주 사용하는 건축물에 빠르게 접근할 수 있습니다.\n\n“%v2%”에서는 세계의 다른 플레이어가 공유한 건축물들을 열람할 수 있습니다.\n\n“%v3%”에서는 서버에서 직접적으로 공유하는 건축물을 열람할 수 있습니다. 서버 관리자가 건축물을 등록하여 서버 설정에 따라 플레이어가 사용할 수 있습니다.\n\n각 건축물 위의 배너에서 해당 건축물을 팔로우/팔로우 해제 할 수 있습니다. 건축물을 클릭하면 해당 건축물의 상세 정보가 표시되며, 해당 화면에서 %v4%을 받을 수 있습니다.",
+
+    "portable_blueprints.gui.tablet.app.info.github.title": "GitHub 위키",
+    "portable_blueprints.gui.tablet.app.info.github.description1": "모드의 추가적인 정보가 필요하면 공식 GitHub에 방문해보세요. \n\n더욱 상세한 정보와 기술적 문서를 확인할 수 있습니다.",
+    "portable_blueprints.gui.tablet.app.info.github.button": "GitHub 위키",
+
+
+
+    "portable_blueprints.gui.tablet.app.configuration.client.scanningAreaTextureEnabled": "스캐너 선택 영역면 색상 활성화. 비활성화 시 외곽선만 표시됩니다",
+    "portable_blueprints.gui.tablet.app.configuration.client.selectedContainerAreaTextureEnabled": "청사진 저장소 영역면 색상 활성화. 비활성화 시 외곽선만 표시됩니다",
+    "portable_blueprints.gui.tablet.app.configuration.client.scanningAnimationEnabled": "건축물 스캔 중 스캔 애니메이션 표시",
+    "portable_blueprints.gui.tablet.app.configuration.client.containerMessagesEnabled": "청사진과 연결된 저장소와 관련된 메시지 표시",
+    "portable_blueprints.gui.tablet.app.configuration.client.buildAnimationEnabled": "건축물 건설 중 건설 애니메이션 표시",
+    "portable_blueprints.gui.tablet.app.configuration.client.defaultHologramTransparency": "미리보기 기본 불투명도 설정\n(기본: 0 | 최소: 0 | 최대: 100)",
+    "portable_blueprints.gui.tablet.app.configuration.client.scannerAreaColor": "스캐너 선택 영역 색상",
+    "portable_blueprints.gui.tablet.app.configuration.client.containerAreaColor": "저장소 선택 영역 색상",
+    "portable_blueprints.gui.tablet.app.configuration.client.blueprintAreaColor": "청사진 미리보기 영역 색상",
+
+    "portable_blueprints.gui.tablet.app.configuration.server.tablet_social": "태블릿 홈에 추가할 웹 링크",
+    "portable_blueprints.gui.tablet.app.configuration.server.max_digitized_structures_for_player": "플레이어 청사진 보유 상한",
+    "portable_blueprints.gui.tablet.app.configuration.server.maxScannerBlockCount": "스캔 영역 크기 상한",
+    "portable_blueprints.gui.tablet.app.configuration.server.maxBlueprintContainers": "저장소 지정 갯수 상한",
+    "portable_blueprints.gui.tablet.app.configuration.server.blueprintsCooldown": "청사진 배치 대기시간\n초 단위",
+    "portable_blueprints.gui.tablet.app.configuration.server.allowGlobalBlueprints": "다른 세계와 공유되는 전역 청사진 사용 가능 여부",
+    "portable_blueprints.gui.tablet.app.configuration.server.allowNBTDataCopy": "청사진이 NBT를 복사하도록 허용\n기본적으로 아이템 복제를 방지하기 위해 비활성화",
+    "portable_blueprints.gui.tablet.app.configuration.server.businessVillagerEnabled": "이 기능을 활성화하면 많은 블록이 겹치는 공간에 배치를 시도할 경우, 비즈니스 주민을 소환하여 겹치는 블록의 삭제를 도울 수 있게 합니다. 해당 동작을 수락하려면 주민이 들고있는 가방의 곡괭이를 오른쪽 클릭하십시오.",
+
+    "portable_blueprints.gui.tablet.app.configuration.server.title": "세계",
+    "portable_blueprints.gui.tablet.app.configuration.client.title": "클라이언트",
+
+
+
+
+    "gui.portable_blueprints.blueprint.button_autofillmode": "회전으로 인해 공백이 발생할 경우 해당 영역을 자동으로 채워줍니다. 선택한 모드에 따라 동작이 다릅니다.",
+    "gui.portable_blueprints.blueprint.button_autofillmode_2": "모드: "
+}

@@ -75,15 +75,11 @@ if (global.datagenDialog) {
         ["You can tell a lot about a person by the way they approach a scared animal."],
         ["I was reading about Minisheep today in the farmer's almanac.", "...So fluffy..."],
         ["Caroline is a sucker for goat cheese.", "Don't mention I said that! I want to know more secrets..."],
-        ["Leon has sewing supplies stocked at the market", "Let me know if you need lessons!"],
-        ["Caroline has some expensive taste", "Most people don't have an eye for proper merino wool."],
+        ["Leon has sewing supplies stocked at the market.", "Let me know if you need lessons!"],
+        ["Caroline has some expensive taste.", "Most people don't have an eye for proper merino wool."],
         ["Your hands are so calloused!", "Let me take a look later, I have a serum made from sheeps milk that will help."],
         ["Do you ever think about what our animals dream about?"],
         ["Someone like you could really use some pets.", "I bet it gets lonely over where you are."],
-        [
-          "I once knew a person that constantly tried to defraud the Sunlit Valley Hospital...",
-          "Terrible person all around, never lent them a dollar.",
-        ],
       ],
       friendship4: [
         ["Originally I thought Leon disliked me in particular.", "Turns out they're just like that."],
@@ -185,5 +181,17 @@ if (global.datagenDialog) {
         "This might be the worst thing I've ever been given..."
       ],
     },
+    unique: [
+      {
+        name: "five_gift",
+        text: [
+          "Oh hello @i, I actually have a small favor for you!",
+          "Ace found these penguins out on an expedition to a frozen wasteland and told me to take care of them.",
+          "I don't mean to just shift the responsibility to you, but I really trust you to treat them with the care they deserve.",
+          "Unfortunately I don't have the means to build up a proper ice habitat, they wouldn't be happy with me.",
+          "If you're struggling with their mood, just pick up a mood scanner at my shop! It should be pretty cheap for you."
+        ]
+      },
+    ]
   });
 }

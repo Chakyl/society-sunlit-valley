@@ -253,7 +253,7 @@ global.handleFishHarvest = (block, player, server, basket) => {
         // Rewards scale to amount of fish population relative to when reward starts spawning
         let calculateCount = Math.floor(
           reward.count *
-            ((population - reward.minPopulation) / (10 - reward.minPopulation)),
+          ((population - reward.minPopulation) / (10 - reward.minPopulation)),
         );
         if (population == 10) calculateCount = reward.count;
         harvestOutputs.push(
@@ -268,13 +268,23 @@ global.handleFishHarvest = (block, player, server, basket) => {
   if (!basket) {
     global.giveExperience(server, player, "fishing", roeCount * 4);
   }
-  block.set(block.id, {
-    facing: facing,
-    valid: valid,
-    mature: false,
-    upgraded: upgraded,
-    quest: quest,
-  });
+  if (Number(max_population) === 10 && quest === true) {
+    block.set(block.id, {
+      facing: facing,
+      valid: valid,
+      mature: false,
+      upgraded: upgraded,
+      quest: false,
+    });
+  } else {
+    block.set(block.id, {
+      facing: facing,
+      valid: valid,
+      mature: false,
+      upgraded: upgraded,
+      quest: quest,
+    });
+  }
   if (basket) return harvestOutputs;
   harvestOutputs.forEach((item) => {
     block.popItemFromFace(item, facing);
@@ -302,8 +312,7 @@ global.handleFishExtraction = (block, player, server) => {
       else smokedFishId = smokedFishId.substring(4, smokedFishId.length);
     }
     result = Item.of(
-      `${resultCount}x ${
-        rnd25() ? "minecraft:coal" : `society:smoked_${smokedFishId}`
+      `${resultCount}x ${rnd25() ? "minecraft:coal" : `society:smoked_${smokedFishId}`
       }`,
       quality > 0 ? `{quality_food:{quality:${quality}}}` : null,
     );
@@ -523,7 +532,7 @@ global.handleFishPondTick = (tickEvent) => {
         nbt.merge({ data: { population: max_population } });
         block.setEntityData(nbt);
       }
-      
+
       if (population === max_population && non_native_fish > 0) {
         nbt.merge({
           data: { non_native_fish: decreaseStage(non_native_fish) },

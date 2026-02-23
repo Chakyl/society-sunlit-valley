@@ -336,4 +336,89 @@ ServerEvents.recipes((e) => {
     ],
     heatRequirement: "superheated",
   });
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "society:sun_candy",
+      },
+      {
+        fluid: "create_central_kitchen:aloe_gel",
+        amount: 50,
+      },
+      {
+        fluid: "society:mystic_syrup",
+        amount: 250,
+      }
+    ],
+    results: [
+      {
+        fluid: "society:mystic_jelly",
+        amount: 250,
+      },
+    ],
+    heatRequirement: "superheated",
+  });
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "minecraft:turtle_egg"
+      },
+      {
+        item: "society:ocean_stone",
+      },
+      {
+        item: "gag:sacred_salt",
+      },
+      {
+        item: "minecraft:tube_coral_block",
+      },
+      {
+        fluid: "minecraft:water",
+        amount: 500,
+      },
+      {
+        fluid: "society:mystic_jelly",
+        amount: 500,
+      }
+    ],
+    results: [
+      {
+        item: "society:ocean_jelly",
+      },
+    ],
+    heatRequirement: "superheated",
+  });
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "species:cracked_wraptor_egg",
+      },
+      {
+        item: "society:dried_crimson_fungus",
+      },
+      {
+        item: "society:dried_warped_fungus",
+      },
+      {
+        item: "netherdepthsupgrade:eyeball"
+      },
+      {
+        fluid: "minecraft:lava",
+        amount: 500,
+      },
+      {
+        fluid: "society:mystic_jelly",
+        amount: 500,
+      }
+    ],
+    results: [
+      {
+        item: "society:nether_jelly",
+      },
+    ],
+    heatRequirement: "superheated",
+  });
 });
