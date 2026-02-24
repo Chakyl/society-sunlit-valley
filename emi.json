@@ -24,6 +24,11 @@
   ],
   "lookup_history": [
     {
+      "type": "item",
+      "id": "cobblemon:master_ball",
+      "amount": 64
+    },
+    {
       "type": "fluid",
       "id": "society:starfruit_juice",
       "amount": 0
@@ -482,7 +487,6 @@
     "item:cobblemon:air_balloon",
     "item:cobblemon:ancient_roseate_ball",
     "item:cobblemon:ancient_verdant_ball",
-    "item:cobblemon:master_ball",
     "item:cobblemon:beast_ball",
     "item:cobblemon:park_ball",
     "item:cobblemon:sport_ball",
@@ -1737,11 +1741,11 @@
     ],
     "tags": {},
     "resolutions": {
-      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
+      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
         {
           "type": "fluid",
-          "id": "create_central_kitchen:aloe_gel",
-          "amount": 250
+          "id": "minecraft:lava",
+          "amount": 10
         }
       ],
       "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
@@ -1751,11 +1755,11 @@
           "amount": 250
         }
       ],
-      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
+      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
         {
           "type": "fluid",
-          "id": "minecraft:lava",
-          "amount": 10
+          "id": "create_central_kitchen:aloe_gel",
+          "amount": 250
         }
       ]
     },

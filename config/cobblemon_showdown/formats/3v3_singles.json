@@ -1,0 +1,18 @@
+{
+  "name": "3v3 Singles",
+  "party_size": 3,
+  "description": "Casual 3v3 singles format with no bans. Great for quick matches!",
+  "best_of": 1,
+  "set_level": 50,
+  "battle_timer": false,
+  "team_preview": false,
+  "species_clause": false,
+  "bans": {
+    "pokemon": [],
+    "moves": [],
+    "abilities": [],
+    "items": []
+  },
+  "ban_all_pokemon_except_whitelist": false,
+  "whitelist_species": []
+}
