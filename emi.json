@@ -26,6 +26,36 @@
     }
   ],
   "lookup_history": [
+    "item:society:jade",
+    {
+      "type": "item",
+      "id": "society:penguin_egg",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "society:large_goat_milk",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 2
+    },
+    "item:veggiesdelight:roasted_vegetables",
+    "item:species:cruncher_egg",
+    "item:species:cruncher_pellet",
+    "item:society:cruncher_mayonnaise",
+    {
+      "type": "item",
+      "id": "botania:overgrowth_seed",
+      "amount": 296
+    },
+    {
+      "type": "item",
+      "id": "society:baryte",
+      "amount": 64
+    },
+    "item:minecraft:sculk_shrieker",
+    "item:species:ghoul_tongue",
+    "item:species:ghoul_head",
     "item:minecraft:howl_pottery_sherd",
     "item:nethervinery:lava_fizz",
     "item:nethervinery:improved_lava_fizz",
@@ -559,7 +589,6 @@
       "id": "classicpipes:provider_pipe",
       "amount": 64
     },
-    "item:society:jade",
     "item:classicpipes:routing_pipe",
     "item:society:aquamarine",
     "item:classicpipes:stocking_pipe",
@@ -640,7 +669,6 @@
     "item:society:good_catawba",
     "item:society:wine_keg",
     "item:society:flamingo_mayonnaise",
-    "item:botania:overgrowth_seed",
     "item:crabbersdelight:clam",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
     "item:unusualfishmod:raw_triple_twirl_pleco",
@@ -930,8 +958,8 @@
       "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
       "item:farm_and_charm:bacon_with_eggs",
-      "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -942,8 +970,8 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
+      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
@@ -1493,29 +1521,7 @@
       "type": "item",
       "id": "create:crushed_raw_silver",
       "amount": 8
-    },
-    "item:sophisticatedbackpacks:backpack{contentsUuid:[I;-352882823,-421246366,-1611313665,-1855628244],inventorySlots:27,renderInfo:{upgradeItems:[{Count:1b,id:\"minecraft:air\",tag:{}}]},upgradeSlots:1}",
-    "item:cluttered:adv_sand_seal_plush_blue",
-    "item:whimsy_deco:adv_red_vocal_doll",
-    "item:perfectplushies:adv_fennec_fox_plushie",
-    "item:golemoverhaul:honey_blob",
-    "item:cluttered:adv_sand_seal_plush_red{affection:0,quality_food:{quality:0},quest_id:1,type:1}",
-    {
-      "type": "item",
-      "id": "meadow:sausage_with_cheese",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "farm_and_charm:lettuce",
-      "amount": 16
-    },
-    {
-      "type": "item",
-      "id": "minecraft:name_tag",
-      "amount": 2
-    },
-    "item:farmersdelight:cutting_board"
+    }
   ],
   "craft_history": [
     "minecraft:kjs/society_dehydrator",
@@ -1625,17 +1631,17 @@
   ],
   "recipe_defaults": {
     "added": [
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "minecraft:kjs/society_sun_candy",
-      "netherdepthsupgrade:eyeball",
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
+      "netherdepthsupgrade:eyeball"
     ],
     "tags": {},
     "resolutions": {
-      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
+      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
         {
           "type": "fluid",
-          "id": "minecraft:lava",
-          "amount": 10
+          "id": "society:mystic_syrup",
+          "amount": 250
         }
       ],
       "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
@@ -1645,11 +1651,11 @@
           "amount": 250
         }
       ],
-      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
+      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
         {
           "type": "fluid",
-          "id": "society:mystic_syrup",
-          "amount": 250
+          "id": "minecraft:lava",
+          "amount": 10
         }
       ]
     },

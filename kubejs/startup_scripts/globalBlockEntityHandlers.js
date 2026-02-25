@@ -891,8 +891,8 @@ global.giveExperience = (server, player, category, xp) => {
  */
 global.getProcessedItem = (item, dropAmount) => {
   let processOutput = global.mayonnaiseMachineRecipes.get(item);
-  if (processOutput && dropAmount >= 3)
-    return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
+  if (processOutput)
+    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
   processOutput = global.wineKegRecipes.get(item);
   if (processOutput)
     return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: false };

@@ -19,14 +19,14 @@ ItemEvents.entityInteracted((e) => {
     } else if (Number(plushieNbt.get("affection")) < 4) {
       errorString =
         "society.husbandry.sunlit_crystal.not_enough_plushie_affection";
-    } else if (plushieNbt.get("animal_type")) {
+    } else if (plushieNbt.get("animal")) {
       errorString = "society.husbandry.sunlit_crystal.has_animal";
     }
     if (errorString) {
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:90}`,
+          global.animalMessageSettings,
           80,
           Text.translatable(errorString).toJson()
         )
@@ -79,7 +79,7 @@ ItemEvents.entityInteracted((e) => {
         0.01
       );
 
-      target.setRemoved("unloaded_to_chunk");
+      // target.setRemoved("unloaded_to_chunk");
     }
   }
 });

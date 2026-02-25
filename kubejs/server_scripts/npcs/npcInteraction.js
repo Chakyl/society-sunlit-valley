@@ -41,6 +41,9 @@ ItemEvents.entityInteracted((e) => {
         if (!player.persistentData.npcData) player.persistentData.npcData = {}
         let npcData = player.persistentData.npcData[npcId];
         if (!npcData) {
+            if (!player.stages.has(`invited_${npcId}`)) {
+                player.stages.add(`invited_${npcId}`)
+            }
             player.persistentData.npcData[npcId] = {
                 friendship: -1,
                 dayLastChatted: -1,

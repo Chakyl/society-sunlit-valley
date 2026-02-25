@@ -1,0 +1,94 @@
+# Interval in Minecraft ticks for checking player inventories. Possible values: any integer. Default: 3600 (2 minutes and 30 seconds).
+inventory_check_interval = 3600
+
+# Determines if items are consumed on successful spawns. Possible values: true, false. Default: false.
+consume_items_on_successful_spawn = true
+
+# If true, and both a key item and item condition are set, only items are consumed. Possible values: true, false. Default: true.
+ignore_key_items = true
+
+# List of items to be checked in the inventory at each interval.
+inventory_check_item_list = [
+  "minecraft:diamond",
+  "minecraft:emerald",
+  "minecraft:nether_star",
+  "cobblemon:dragon_scale",
+  "cobblemon:electirizer",
+  "cobblemon:magmarizer",
+  "cobblemon:metal_coat",
+  "cobblemon:protector",
+  "cobblemon:leaf_stone",
+  "cobblemon:moon_stone",
+  "cobblemon:sun_stone",
+  "cobblemon:shiny_stone",
+  "cobblemon:dusk_stone",
+  "cobblemon:dawn_stone",
+  "cobblemon:ice_stone",
+  "cobblemon:thunder_stone",
+  "cobblemon:fire_stone",
+  "cobblemon:water_stone",
+  "cobblemon:never_melt_ice"
+]
+# Determines if broadcasting features are enabled. This includes all types of notifications specified in 'broadcast_settings'. Enables or disables the entire broadcasting system. Possible values: true, false. Default: false
+isBroadcastEnabled = false
+
+# Configures specific broadcast messages for Pokemon spawns. Each option enables or disables broadcasts for different categories of Pokemon (Legendary, Mythical, Ultra Beast), or provides additional information (Shiny status, level). Adjust these settings to customize what details are broadcasted when Pokemon spawn.
+broadcast_settings = [
+  { settingName = "BroadcastToAll", settingValue = true }, # When true, messages are broadcasted to all players. Possible values: true, false. Default: true.
+  { settingName = "DisplayName", settingValue = true },  # If enabled, displays the name of the Pokemon in the broadcast message. Possible values: true, false. Default: true.
+  { settingName = "Legendarys", settingValue = true }, # If enabled, broadcasts a message when a legendary Pokemon spawns.  Possible values: true, false. Default: true.
+  { settingName = "Mythicals", settingValue = true} , # If enabled, broadcasts a message when a mythical Pokemon spawns.  Possible values: true, false. Default: true.
+  { settingName = "UltraBeasts", settingValue = false }, # If enabled, broadcasts a message when an Ultra Beast spawns.  Possible values: true, false. Default: false.
+  { settingName = "Location", settingValue = true }, # If true, includes the location in broadcast messages. Possible values: true, false. Default: true.
+  { settingName = "Shiny", settingValue = false }, # Enables broadcasts about Shiny Status of the Pokemon. Possible values: true, false. Default: false.
+  { settingName = "Level", settingValue = true } # When enabled, the level of Pokemon is included in the broadcast. Possible values: true, false. Default: true.
+]
+
+# Determines if the contents of shulker boxes should be scanned for items by the inventory_check.
+# Possible values: true, false. Default: true.
+inventory_check_shulker_boxes = true
+
+# Determines if the contents of bundles should be scanned for items by the inventory_check.
+# Possible values: true, false. Default: true.
+inventory_check_bundles = true
+
+# Determines if right-clicking key items forcefully spawns Pokemon that require the clicked key item as a spawning condition.
+# Possible values: true, false. Default: false
+enable_force_spawning = true
+
+# Determines in which Spawn Pool the force spawning module should check.
+# Note: Changing this setting does not affect the actual spawns, only the force spawning behavior.
+# To change spawn rarity, modify the entire datapack.
+# Possible values: common, uncommon, rare, ultra-rare. Default: ultra-rare
+force_spawning_spawn_pool = "ultra-rare"
+
+# Sets the cooldown period (in seconds) after a key item is used for force spawning before it can be used again.
+# Possible values: any integer >= 1. Default: 20
+force_spawn_item_cooldown = 20
+
+# Defines the width around the player within which the game checks for possible Pokemon spawns
+# when force spawning. Increasing this value may cause lag but is more likely to find a spawn.
+# Please adjust carefully.
+# Possible values: any integer >= 1
+# Default: 100
+force_spawn_check_width = 100
+
+# Defines the height around the player within which the game checks for possible Pokemon spawns
+# when force spawning. Increasing this value may cause lag but is more likely to find a spawn.
+# Please adjust carefully.
+# Possible values: any integer >= 1
+# Default: 50
+force_spawn_check_height = 50
+
+# Should the mod run in Server only mode [So clients dont require the mod to be installed(THIS DOESNT WORK CURRENTLY)]. Possible values: true, false. Default: false
+server_only_mode = false
+
+# Enable/Disable Form Changes (DNA Splicer, Held Item Form Changes and so on). Possible values: true, false. Default: true
+form_changes = true
+
+# Enable/Disable DEBUG Mode | This should always be false only for devs :) LEAVE IT ALONE. Default: false
+debug_mode = false
+
+# Set the delay (in ticks(20 ticks = 1 second) after a player joins before applying forms and aspects to Pokémon. This ensures forms and aspects are properly initialized. Possible values: Any positive integer. Default: 100 ticks
+join_form_aspect_delay = 100
+

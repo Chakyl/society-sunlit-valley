@@ -71,7 +71,11 @@
 		}
 		{
 			dependencies: ["0DC68C5CF6D82372"]
-			description: ["{ftbquests.chapter.iv__prismatic_farming.questE4EA6B5E8E6361C.description1}"]
+			description: [
+				"{ftbquests.chapter.iv__prismatic_farming.questE4EA6B5E8E6361C.description1}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.questE4EA6B5E8E6361C.description2}"
+			]
 			id: "0E4EA6B5E8E6361C"
 			rewards: [{
 				id: "589BBF90DAD504D7"

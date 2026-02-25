@@ -22,9 +22,14 @@ global.getAnimalIsNotCramped = (target, scale, applyGlowing) => {
   return !cramped;
 };
 
-global.isWarpedCow = (target) =>
-  target.type === "meadow:wooly_cow" && Number(target.getNbt().Variant) === 2;
-
+global.isWarpedCow = (target) => {
+  if (target.type === "meadow:wooly_cow") {
+    let variant = target.Variant
+    if (variant && Number(variant) === 2) return true;
+    else return Number(target.getNbt().Variant) === 2
+  }
+  return false;
+}
 global.getMilkingTimeMult = (target, type) => {
   const warped = global.isWarpedCow(target);
   let mult;
@@ -393,8 +398,10 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers) => {
     }
     if (player.stages.has("heretic")) {
       newLoot.push(Item.of("3x society:sparkstone"));
-      target.attack(2);
-      data.affection = affection - 20;
+      if (!plushieModifiers) {
+        target.attack(2);
+        data.affection = affection - 20;
+      }
     }
     return newLoot;
   } else return -1;
@@ -539,7 +546,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
       break;
     case 6:
       // Hungry
-      if (roll < 0.1 * qualityMult) resetDay = true;
+      resetDay = true;
       break;
     case 7:
       // Anxious
