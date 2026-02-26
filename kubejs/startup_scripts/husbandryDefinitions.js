@@ -181,6 +181,37 @@ global.husbandryForagingDefinitions = [
     ],
   },
   {
+    animal: "species:cruncher",
+    forages: [
+      {
+        item: "society:scavenged_food_bag",
+        countMult: 1,
+        chance: 0.4,
+        minHearts: 1
+      },
+      {
+        item: "etcetera:raw_bismuth",
+        countMult: 4,
+        chance: 0.25,
+        minHearts: 5
+      },
+      {
+        item: "quark:dragon_scale",
+        countMult: 1,
+        chance: 0.04,
+        minHearts: 7,
+        hasQuality: true,
+      },
+      {
+        item: "species:cruncher_egg",
+        countMult: 1,
+        chance: 0.15,
+        minHearts: 8,
+        hasQuality: true,
+      },
+    ],
+  },
+  {
     animal: "minecraft:panda",
     forages: [
       {

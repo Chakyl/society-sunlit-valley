@@ -256,7 +256,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
     const nbt = artisanMachine.getEntityData();
-    if (!nbt.data) return;
+    if (!nbt || !nbt.data) return;
     const { stage, recipe } = nbt.data;
     const currentStage = stage || 0;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";

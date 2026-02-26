@@ -296,7 +296,7 @@ if (global.datagenDialog) {
           "I know you've read Slouching Towards Artistry, why aren't you using it?",
           "You should know me by know, I'm not going to bail you out. It doesn't matter how much you butter me up.",
           "Please make use of these ancient stones to improve your time management. I can't have you wasting time walking everywhere.",
-          "Now leave, and don't dissapoint me again."
+          "Now leave, and don't disappoint me again."
         ]
       },
     ]

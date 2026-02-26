@@ -255,7 +255,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:the_spark_also_rises",
-      description: "Minining any ore drops Sparkstone.",
+      description: "mining any ore drops Sparkstone.",
     },
     {
       item: "society:universal_methods_of_farming",
@@ -267,7 +267,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:the_red_and_the_black",
-      description: "Geodes, loot items, and Slot Machines drop one more item.",
+      description: "Geodes, loot crates, and Slot Machines drop one more item.",
     },
     {
       item: "society:pond_house_five",

@@ -53,3 +53,10 @@ ItemEvents.rightClicked(
     }
   },
 );
+
+BlockEvents.rightClicked((e) => {
+  if (e.player.getHeldItem("MAIN_HAND").hasTag("forge:tools/fishing_rods") || e.player.getHeldItem("OFF_HAND").hasTag("forge:tools/fishing_rods")
+  ) {
+    e.cancel();
+  }
+});

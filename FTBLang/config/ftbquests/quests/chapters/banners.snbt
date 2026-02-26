@@ -1058,7 +1058,6 @@
 				"083E30851FA52517"
 				"13BB9EFD3B941D98"
 				"334DAB97A86F2574"
-				"5919563A830D3AAA"
 				"1AFAEA748AB9E1B3"
 				"426E241A2BE5ED15"
 				"3DD9CFE690ED298A"
@@ -2566,24 +2565,14 @@
 			y: 10.0d
 		}
 		{
-			id: "5919563A830D3AAA"
-			tasks: [{
-				id: "6E161B3FBFDD1372"
-				item: "veggiesdelight:lasagna_pan"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 11.0d
-		}
-		{
 			id: "58A0B7418235B06F"
 			tasks: [{
 				id: "307441AA7D425B06"
 				item: "veggiesdelight:vegetables_wrap"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 12.0d
+			x: 15.0d
+			y: 11.0d
 		}
 	]
 	title: "{ftbquests.chapter.banners.title}"

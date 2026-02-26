@@ -261,8 +261,10 @@ const rawLogs = [
   "cluttered:fluorescent_maple_log",
   "cluttered:blue_mushroom_log",
   "cluttered:red_mushroom_log",
-  "rainbowoaks:rainbow_log"
-];
+  "rainbowoaks:rainbow_log", 
+  "minecraft:warped_stem", 
+  "minecraft:crimson_stem"
+]
 ServerEvents.tags("item", (e) => {
   // Misc tags
   e.add("stardew_fishing:bobbers", "society:needle_bobber");
