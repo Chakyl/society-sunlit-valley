@@ -26,15 +26,26 @@
     }
   ],
   "lookup_history": [
-    "item:society:charging_rod",
+    "item:cluttered:fluorescent_maple_fence_gate",
+    "item:cluttered:flowering_crabapple_pressure_plate",
+    "item:cluttered:fly_agaric",
+    "item:cluttered:red_mushroom_log",
+    "item:tanukidecor:brown_mushroom_log_stool",
+    "item:minecraft:oak_door",
+    {
+      "type": "item",
+      "id": "etcetera:raw_bismuth",
+      "amount": 4
+    },
     "item:species:cruncher_egg",
+    "item:species:cruncher_pellet",
+    "item:society:charging_rod",
     "item:society:scavenged_food_bag",
     "item:quark:dragon_scale",
     "item:betterarcheology:chicken_fossil",
     "item:minecraft:spider_eye",
     "item:species:wicked_treat",
     "item:species:ghoul_tongue",
-    "item:etcetera:raw_bismuth",
     "item:oreganized:raw_silver",
     "item:unusualfishmod:raw_circus_fish",
     "item:minecraft:raw_copper",
@@ -82,7 +93,6 @@
       "amount": 2
     },
     "item:veggiesdelight:roasted_vegetables",
-    "item:species:cruncher_pellet",
     "item:society:cruncher_mayonnaise",
     {
       "type": "item",
@@ -563,7 +573,6 @@
     "item:unusualfishmod:ripper_tooth",
     "item:society:large_amethyst_milk",
     "item:buzzier_bees:moobloom_spawn_egg",
-    "item:minecraft:oak_door",
     "item:minecraft:spruce_wood",
     "item:society:holy_symbol",
     {
@@ -984,11 +993,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
-      "item:farmersdelight:cooked_bacon",
-      "item:brewery:pork_knuckle",
       "item:minecraft:cooked_porkchop",
+      "item:candlelight:pork_ribs",
+      "item:brewery:pork_knuckle",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:farmersdelight:cooked_bacon",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1475,25 +1484,7 @@
     },
     "item:bakery:chocolate_truffle",
     "item:society:recycling_machine",
-    "item:society:merino_wool",
-    {
-      "type": "item",
-      "id": "farm_and_charm:onion",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "farmersdelight:safety_net",
-      "amount": 2
-    },
-    "item:farmersdelight:rope",
-    "item:refurbished_furniture:recycle_bin",
-    {
-      "type": "item",
-      "id": "society:fine_wool",
-      "nbt": "{quality_food:{effects:[],quality:1.5d}}",
-      "amount": 2
-    }
+    "item:society:merino_wool"
   ],
   "craft_history": [
     "minecraft:kjs/society_dehydrator",
@@ -1603,9 +1594,9 @@
   ],
   "recipe_defaults": {
     "added": [
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "netherdepthsupgrade:eyeball",
-      "minecraft:kjs/society_sun_candy",
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
+      "minecraft:kjs/society_sun_candy"
     ],
     "tags": {},
     "resolutions": {
