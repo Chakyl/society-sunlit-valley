@@ -546,7 +546,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
       break;
     case 6:
       // Hungry
-      resetDay = true;
+      if (roll < 0.1 * qualityMult) resetDay = true;
       break;
     case 7:
       // Anxious

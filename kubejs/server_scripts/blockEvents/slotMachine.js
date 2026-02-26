@@ -46,7 +46,7 @@ BlockEvents.rightClicked("tanukidecor:slot_machine", (e) => {
       const { x, y, z } = entityHalf.getEntityData().SlotRotations;
       if (x === y && y === z) {
         const itemAddition = player.stages.has("the_red_and_the_black") ? 1 : 0;
-        block.popItemFromFace(`${1 + itemAddition}x ${heldItem}`, facing);
+        block.popItemFromFace(`${3 + itemAddition}x ${heldItem}`, facing);
         server.runCommandSilent(
           `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
         );

@@ -30,7 +30,6 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier(global.cropList).apply((c) => {
     c.forEachLoot((item) => {
       const quality = global.getCropQuality(c.destroyedBlock);
-      // 4.0 TODO: remove effects:[] from this data
       if (quality > 0)
         item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
     });

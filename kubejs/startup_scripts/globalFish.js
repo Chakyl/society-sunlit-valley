@@ -268,7 +268,7 @@ global.handleFishHarvest = (block, player, server, basket) => {
   if (!basket) {
     global.giveExperience(server, player, "fishing", roeCount * 4);
   }
-  if (Number(max_population) === 10 && quest === true) {
+  if (Number(max_population) === 10 && quest === "true") {
     block.set(block.id, {
       facing: facing,
       valid: valid,
@@ -496,8 +496,17 @@ global.handleFishPondTick = (tickEvent) => {
           quest: quest,
         });
       }
+      if (Number(max_population) === 10 && quest === "true") {
+        block.set(block.id, {
+          facing: facing,
+          valid: valid,
+          mature: false,
+          upgraded: upgraded,
+          quest: false,
+        });
+      }
       if (
-        max_population !== 10 &&
+        Number(max_population) !== 10 &&
         quest !== "true" &&
         rnd75() &&
         population == max_population

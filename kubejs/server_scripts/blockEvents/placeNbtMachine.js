@@ -30,7 +30,7 @@ BlockEvents.placed("society:fish_pond", (e) => {
       valid: true,
       mature: false,
       upgraded: false,
-      quest: Boolean(pondNbt.get("quest")),
+      quest: Boolean(pondNbt.getBoolean("quest")),
     });
     let nbt = block.getEntityData();
     nbt.merge({

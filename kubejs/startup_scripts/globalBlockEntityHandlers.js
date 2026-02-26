@@ -61,6 +61,7 @@ let increaseDataStage = (block, count) => {
   currentStage += count || 1;
   nbt.merge({ data: { stage: currentStage } });
   block.setEntityData(nbt);
+  block.getEntity().setChanged();
 };
 
 let increaseStage = (input, count) => {
@@ -1120,6 +1121,9 @@ global.cropList = [
   "farmersdelight:rice",
   "farmersdelight:rice_panicles",
   "society:ancient_fruit",
+  "society:cranberry",
+  "windswept:wild_berry_bush",
+  "society:mana_fruit",
   "etcetera:cotton",
   "society:tubabacco_leaf",
   "brewery:hop_trellis",

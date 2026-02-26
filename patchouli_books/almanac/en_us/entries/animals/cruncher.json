@@ -1,0 +1,17 @@
+{
+  "name": "Red Panda",
+  "category": "patchouli:animals",
+  "icon": "species:cruncher_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not sold$(li)Forage: Scavenged Food Bag (40% chance), Raw Bismuth Ore (25% chance), Dragon Scale (4% chance), Cruncher Egg (15% chance)$(br2)$(l)Notes$()$(br)Foraging requires 1+ hearts. Can be found in dig sites and tamed with meat."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:cruncher",
+      "scale": 0.8,
+      "text": "Be wary of its \"pellets\""
+    }
+  ]
+}
