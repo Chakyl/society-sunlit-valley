@@ -1,50 +1,11 @@
 ^^^
 ## The Heart of the Community
-### v4.0.3
+### v4.0.4
 ^^^
 --- 
-## 4.0.3
-- Added custom portraits for every type of gift response
-- Added Cruncher as husbandry animal
-- Added villager emojis
-- Added some es_es translations
-- Interacting with a villager the first time will add it to the phone, even if the person didn't invite them
-- Fixed not being able to trade coins as items
-- Fixed Yellow balloon boxes being empty
-- Fixed crop dropping seeds
-- Fixed Banana Karenina and tree whisperer not working when harvesting by hand
-- Fixed minining
-- Fixed being able to overwrite plushiefied animals with other animals
-- Fixed Warped wooly cows not saving type in plushies
-- Fixed Sommelier plushie trait not working with eggs
-- Fixed Hungry plushie trait not working with auto-grabber
-- Fixed Woodsy plushie trait not working with warped/crimson stems
-- Fixed Heretic not working with plushies
-- Fixed Jade quest book description
-- Fixed Fish Ponds still having quests at max population
-- Fixed Fish Ponds always showing as they have a quest when broken
-- Fixed Mason set not placing windows correctly
-- Fixed certain crops not having quality
-- Fixed internal name of iridium quality being diamond (when possible)
-- Fixed console errors with legacy artisan machines
-- Fixed slot machines only dropping 1
-- Fixed crash with worldnames that have a semicolon
-- Fixed Moon Dwarf statue fossil drops
-- Fixed Raw Lead Ore block causing brain damage when broken despite having Intro to Algorithms
-- Fixed artisan machines not saving progress when entering different dimensions
-## 4.0.2
-- Updated Korean translation
-- Reduced mood cramping check to match existing affection cramping check
-- Reduced mult of mood impact modifiers (1.5 -> 1.25, 2 -> 1.5)
-- Fixed villager homes binding to the incorrect NPC
-- Fixed /time set making it impossible to place villager homes
-- Fixed Shepherd house having infested chiseled stone bricks
-- Fixed Iridium clock being off by 64 after reaching 64 triggers
-- Fixed Slime Tickets having incorrect foods for Orby and Minty slimes
-- Fixed Pale Oak Logs not selling and other similar bugs
-- Fixed the veggies delight mashed potato recipe being broken
-- Fixed Quality of the Earth not working correctly
-- Fixed Auto-Grabber ignoring plushie modifiers
+## 4.0.4
+- Added some es_es translations (for real this time)
+
 ## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
 - Added 6 handmade villagers with art by NifastGreentail and Nitbe
@@ -231,3 +192,47 @@
 - Fixed cooking collection having removed item
 - Fixed Fish Ponds showing they have a quest at 10 max population
 - Fixed Fish Pond baskets draining fish ponds
+
+## 4.0.2
+- Updated Korean translation
+- Reduced mood cramping check to match existing affection cramping check
+- Reduced mult of mood impact modifiers (1.5 -> 1.25, 2 -> 1.5)
+- Fixed villager homes binding to the incorrect NPC
+- Fixed /time set making it impossible to place villager homes
+- Fixed Shepherd house having infested chiseled stone bricks
+- Fixed Iridium clock being off by 64 after reaching 64 triggers
+- Fixed Slime Tickets having incorrect foods for Orby and Minty slimes
+- Fixed Pale Oak Logs not selling and other similar bugs
+- Fixed the veggies delight mashed potato recipe being broken
+- Fixed Quality of the Earth not working correctly
+- Fixed Auto-Grabber ignoring plushie modifiers
+
+## 4.0.3
+- Added custom portraits for every type of gift response
+- Added Cruncher as husbandry animal
+- Added villager emojis
+- Added some es_es translations
+- Interacting with a villager the first time will add it to the phone, even if the person didn't invite them
+- Fixed not being able to trade coins as items
+- Fixed Yellow balloon boxes being empty
+- Fixed crop dropping seeds
+- Fixed Banana Karenina and tree whisperer not working when harvesting by hand
+- Fixed minining
+- Fixed being able to overwrite plushiefied animals with other animals
+- Fixed Warped wooly cows not saving type in plushies
+- Fixed Sommelier plushie trait not working with eggs
+- Fixed Hungry plushie trait not working with auto-grabber
+- Fixed Woodsy plushie trait not working with warped/crimson stems
+- Fixed Heretic not working with plushies
+- Fixed Jade quest book description
+- Fixed Fish Ponds still having quests at max population
+- Fixed Fish Ponds always showing as they have a quest when broken
+- Fixed Mason set not placing windows correctly
+- Fixed certain crops not having quality
+- Fixed internal name of iridium quality being diamond (when possible)
+- Fixed console errors with legacy artisan machines
+- Fixed slot machines only dropping 1
+- Fixed crash with worldnames that have a semicolon
+- Fixed Moon Dwarf statue fossil drops
+- Fixed Raw Lead Ore block causing brain damage when broken despite having Intro to Algorithms
+- Fixed artisan machines not saving progress when entering different dimensions
