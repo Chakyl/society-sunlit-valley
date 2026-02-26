@@ -26,6 +26,7 @@
     }
   ],
   "lookup_history": [
+    "item:society:charging_rod",
     "item:species:cruncher_egg",
     "item:society:scavenged_food_bag",
     "item:quark:dragon_scale",
@@ -945,7 +946,6 @@
     "item:society:villager_home",
     "item:society:sparkstone_ore",
     "item:society:coin_leaderboard",
-    "item:society:charging_rod",
     "item:society:pickling_can",
     "item:minecraft:bundle",
     "item:minecraft:wildflowers",
@@ -984,11 +984,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
+      "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
       "item:brewery:pork_knuckle",
-      "item:candlelight:pork_ribs",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
+      "item:farm_and_charm:bacon_with_eggs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -999,16 +999,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/zucchini",
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1603,8 +1603,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_sun_candy",
       "netherdepthsupgrade:eyeball",
+      "minecraft:kjs/society_sun_candy",
       "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
     ],
     "tags": {},

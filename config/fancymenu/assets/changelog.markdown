@@ -4,8 +4,10 @@
 ^^^
 --- 
 ## 4.0.3
+- Added custom portraits for every type of gift response
 - Added Cruncher as husbandry animal
 - Added villager emojis
+- Added some es_es translations
 - Interacting with a villager the first time will add it to the phone, even if the person didn't invite them
 - Fixed not being able to trade coins as items
 - Fixed Yellow balloon boxes being empty

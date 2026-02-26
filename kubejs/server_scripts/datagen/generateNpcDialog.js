@@ -1,7 +1,7 @@
 let translationKeys = {};
 global.datagenDialog = false;
 
-const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, isChatter) => {
+const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, portraitPath, isChatter) => {
   let entries = [];
   let resolvedDialogLines = Array.isArray(dialogLines) ? dialogLines : [dialogLines];
   resolvedDialogLines.forEach((entry, index) => {
@@ -14,7 +14,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, isCh
       text: [{ translate: lineTranslationKey }],
       portraits: [
         {
-          path: `${npcId}.png`,
+          path: `${portraitPath}${npcId}.png`,
           position: "INLINE",
           brightness: 1.0
         },
@@ -82,6 +82,7 @@ const runNpcDatagen = (npcId, npcDef) => {
                 `chatter_${friendshipKey}`,
                 chatterIndex,
                 chatter,
+                "",
                 true
               ),
             }
@@ -99,7 +100,7 @@ const runNpcDatagen = (npcId, npcDef) => {
       id: `${npcId}_intro`,
       title: `${npcId} introduction`,
       description: `dialog.npc.${npcId}.intro.description`,
-      entries: generateDialogEntries(npcId, `intro`, 0, npcDef.intro),
+      entries: generateDialogEntries(npcId, `intro`, 0, npcDef.intro, ""),
     });
   }
   // Gifts
@@ -117,7 +118,8 @@ const runNpcDatagen = (npcId, npcDef) => {
               npcId,
               `gift_${responseType}`,
               responseIndex,
-              response
+              response,
+              responseType.equals("neutral") ? "" : `${responseType}/`
             ),
           }
         );
@@ -137,6 +139,7 @@ const runNpcDatagen = (npcId, npcDef) => {
             `unique_${dialog.name}`,
             -1,
             dialog.text,
+            "",
             true
           ),
         }
