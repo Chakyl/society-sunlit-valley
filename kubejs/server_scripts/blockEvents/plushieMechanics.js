@@ -119,6 +119,7 @@ BlockEvents.rightClicked(global.plushies, (e) => {
       newAnimal.setZ(block.getZ());
       if (animal.name) newAnimal.customName = animal.name
       if (animal.Variant) newAnimal.nbt.Variant = animal.Variant
+      if (animal.Type) newAnimal.nbt.Type = animal.Type
       newAnimal.spawn();
       global.setPlushieExtractedPD(newAnimal, animal)
       nbt.data.animal = undefined;
