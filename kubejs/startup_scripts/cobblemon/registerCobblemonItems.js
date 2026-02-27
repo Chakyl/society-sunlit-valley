@@ -66,9 +66,9 @@ StartupEvents.registry("item", (e) => {
     .useAnimation("drink");
   // Misc
 
-  // e.create("sunlit_cobblemon:poke_radar")
-  //   .texture("society:item/poke_radar")
-  //   .displayName("Poké Radar");
+  e.create("sunlit_cobblemon:poke_radar")
+    .texture("society:item/poke_radar")
+    .displayName("Poké Radar");
   e.create("sunlit_cobblemon:berry_capsule").texture(
     "sunlit_cobblemon:item/berry_capsule",
   );

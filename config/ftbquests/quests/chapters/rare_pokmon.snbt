@@ -639,13 +639,11 @@
 			dependencies: [
 				"33312768E1E4BA1D"
 				"7783E2BC686C0B13"
-				"4F9FF6CF73A046F1"
 				"3FB31EE76423D1B4"
 				"444BE411AB96960F"
 				"322ACE3883EF0B1B"
 				"1E0508A8E8FE6814"
 				"1C6F513A824DAE33"
-				"13509631E719D409"
 				"26AD3C36EA9987B0"
 				"582C75B20BE4A328"
 				"3B337B0AEB93D2B8"
@@ -778,60 +776,6 @@
 			}]
 			title: "Chi-Yu"
 			x: 11.0d
-			y: -5.0d
-		}
-		{
-			description: [""]
-			id: "4F9FF6CF73A046F1"
-			shape: "none"
-			size: 2.0d
-			subtitle: "Not Yet Implemented"
-			tasks: [{
-				action: "catch"
-				amount: 1L
-				biome: ""
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "76C50E7A71CBAFAD"
-				poke_ball_used: ""
-				pokemon: "cobblemon:fezandipiti"
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
-			title: "Fezandipiti"
-			x: 15.0d
-			y: -5.0d
-		}
-		{
-			description: [""]
-			id: "13509631E719D409"
-			shape: "none"
-			size: 2.0d
-			subtitle: "Not Yet Implemented"
-			tasks: [{
-				action: "catch"
-				amount: 1L
-				biome: ""
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "797DFB6E2EF63B7C"
-				poke_ball_used: ""
-				pokemon: "cobblemon:okidogi"
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
-			title: "Okidogi"
-			x: 13.0d
 			y: -5.0d
 		}
 		{
@@ -2041,10 +1985,9 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Melmetal"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Meltan"
+			title: "Melmetal"
 			x: 31.0d
 			y: -2.0d
 		}
@@ -2068,10 +2011,9 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Zarude"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Meltan"
+			title: "Zarude"
 			x: 33.0d
 			y: -2.0d
 		}
@@ -2095,10 +2037,9 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Pecharunt"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Meltan"
+			title: "Pecharunt"
 			x: 35.0d
 			y: -2.0d
 		}

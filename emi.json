@@ -23,6 +23,44 @@
     }
   ],
   "lookup_history": [
+    "item:botania:cosmetic_lusitanic_shield",
+    "item:botania:cosmetic_anaglyph_glasses",
+    "item:botania:cosmetic_botanist_emblem",
+    "item:botania:cosmetic_devil_tail",
+    "item:botania:cosmetic_black_tie",
+    "item:myths_and_legends:griseous_orb",
+    "item:myths_and_legends:eon_ticket",
+    "item:myths_and_legends:lustrous_orb",
+    "item:myths_and_legends:adamant_orb",
+    "item:myths_and_legends:oaks_letter",
+    "item:myths_and_legends:old_sea_map",
+    "item:myths_and_legends:blue_orb",
+    "item:myths_and_legends:sapling_of_life",
+    "item:myths_and_legends:zygarde_core",
+    "item:myths_and_legends:steam_valve",
+    "item:myths_and_legends:zeraoras_thunderclaw",
+    "item:myths_and_legends:scarlet_book",
+    "item:myths_and_legends:cocoon_of_destruction",
+    "item:myths_and_legends:lunar_feather",
+    "item:myths_and_legends:magma_stone",
+    "item:myths_and_legends:mesprit_plume",
+    "item:myths_and_legends:lele_totem",
+    "item:myths_and_legends:teal_mask",
+    "item:myths_and_legends:sun_flute",
+    "item:myths_and_legends:koko_totem",
+    "item:myths_and_legends:rainbow_wing",
+    "item:myths_and_legends:gs_ball",
+    "item:myths_and_legends:rusted_shield",
+    "item:myths_and_legends:type_null_mask",
+    "item:myths_and_legends:ancient_tablet",
+    "item:myths_and_legends:shaderoot_carrot",
+    "item:myths_and_legends:bulu_totem",
+    "item:myths_and_legends:soul_heart",
+    "item:myths_and_legends:cavern_shield",
+    "item:myths_and_legends:steel_tablet",
+    "item:myths_and_legends:scaly_tablet",
+    "item:myths_and_legends:ice_tablet",
+    "item:myths_and_legends:zygarde_cube",
     {
       "type": "item",
       "id": "cobblemon:master_ball",
@@ -1629,53 +1667,7 @@
     "item:cobblemon:destiny_knot",
     "item:society:gray_sheet",
     "item:cobblemon:display_case",
-    "item:tanukidecor:display_case",
-    "item:tanukidecor:long_display_case",
-    "item:cobblemon:dire_hit",
-    "item:wildernature:fur_cloak{Damage:0}",
-    "item:windswept:feather_cloak{Damage:0}",
-    "item:cobblemon:bright_powder",
-    "item:cobblemon:choice_specs",
-    "item:society:maple_syrup",
-    "item:cobblemon:choice_band",
-    "item:cobblemon:choice_scarf",
-    "item:cobblemon:binding_band",
-    "item:cobblemon:black_belt",
-    "item:society:architects_digest",
-    "item:society:pink_matter",
-    "item:windswept:holly_chest",
-    "item:cobblemon:black_gilded_chest",
-    "item:create:belt_connector",
-    "item:society:red_sheet",
-    "item:botania:cosmetic_lusitanic_shield",
-    "item:species:ricoshield{Damage:0}",
-    "item:cobblemon:galarica_wreath",
-    "item:cobblemon:galarica_cuff",
-    "item:cobblemon:sassy_mint",
-    "item:cobblemon:black_sludge",
-    "item:cobblemon:ether",
-    "item:minecraft:dried_ghast",
-    "item:sunlit_cobblemon:common_cobbleberry_preserves",
-    {
-      "type": "item",
-      "id": "minecraft:blue_wool",
-      "amount": 64
-    },
-    "item:cobblemon:chesto_berry",
-    "item:sunlit_cobblemon:uncommon_cobbleberry_preserves",
-    "item:sunlit_cobblemon:leek_preserves",
-    {
-      "type": "item",
-      "id": "cobblemon:tumblestone_block",
-      "amount": 64
-    },
-    "item:cobblemon:black_tumblestone_block",
-    "item:cobblemon:flower_sweet",
-    "item:simpletms:tm_curse",
-    "item:cobblemon:berry_sweet",
-    "item:cobblemon:vivichoke",
-    "item:cobblemon:max_ether",
-    "item:cobblemon:mental_herb"
+    "item:tanukidecor:display_case"
   ],
   "craft_history": [
     "minecraft:kjs/sunlit_cobblemon_star_pixie_5",
@@ -1748,17 +1740,17 @@
           "amount": 10
         }
       ],
-      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
-        {
-          "type": "fluid",
-          "id": "society:mystic_syrup",
-          "amount": 250
-        }
-      ],
       "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
         {
           "type": "fluid",
           "id": "create_central_kitchen:aloe_gel",
+          "amount": 250
+        }
+      ],
+      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
+        {
+          "type": "fluid",
+          "id": "society:mystic_syrup",
           "amount": 250
         }
       ]
