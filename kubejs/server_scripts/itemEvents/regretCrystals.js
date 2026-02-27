@@ -28,7 +28,7 @@ ItemEvents.rightClicked("society:crystal_of_regret_farming", (e) => {
 ItemEvents.rightClicked("society:crystal_of_regret_husbandry", (e) => {
   const { player, item, server } = e;
   if (player.stages.has("animal_whisperer") || player.stages.has("bribery")) {
-    resetSkills("husbandry", server, player, 2500);
+    resetSkills("husbandry", server, player, 14500);
     item.count--;
   } else {
     player.tell(Text.translatable("society.crystal_of_regret.fail").red());

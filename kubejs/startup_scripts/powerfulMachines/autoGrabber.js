@@ -141,7 +141,7 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
             5,
             0.01
           );
-          if (plushieModifiers) {
+          if (plushieModifiers && !plushieModifiers.resetDay) {
             nbt.merge({
               data: {
                 animal: {
@@ -165,7 +165,7 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
         plushieModifiers,
         handleAutoGrabSpecialItem
       );
-      if (plushieModifiers) {
+      if (plushieModifiers && !plushieModifiers.resetDay) {
         nbt.merge({
           data: {
             animal: {

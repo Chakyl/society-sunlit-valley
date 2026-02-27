@@ -431,13 +431,39 @@ LootJS.modifiers((e) => {
   addAdditionalGeodeRoll(e, "excavator");
 
   // Mastery Moon Statue
-  const remains = Ingredient.of("#society:fossilish").itemIds;
   const weightedRemains = [];
-  remains.forEach((remain) =>
+  [
+    "betterarcheology:creeper_fossil_body",
+    "betterarcheology:creeper_fossil_head",
+    "betterarcheology:villager_fossil_body",
+    "betterarcheology:villager_fossil_head",
+    "betterarcheology:chicken_fossil_body",
+    "betterarcheology:chicken_fossil_head",
+    "betterarcheology:ocelot_fossil_body",
+    "betterarcheology:ocelot_fossil_head",
+    "betterarcheology:wolf_fossil_body",
+    "betterarcheology:wolf_fossil_head",
+    "betterarcheology:sheep_fossil_body",
+    "betterarcheology:sheep_fossil_head",
+    "betterarcheology:guardian_fossil_head",
+    "betterarcheology:guardian_fossil_body",
+    "crittersandcompanions:clam",
+    "species:petrified_egg",
+    "society:petrified_slime",
+    "twigs:petrified_lichen",
+    "atmospheric:petrified_armor_trim_smithing_template",
+    "betterarcheology:fossiliferous_dirt",
+    "minecraft:bone",
+    "aquaculture:fish_bones",
+    "netherdepthsupgrade:bonefish",
+    "society:fantasy_box_bone",
+    "betterarcheology:artifact_shards",
+    "society:artifact_trove"
+  ].forEach((remain) =>
     weightedRemains.push(Item.of(remain).withChance(1))
   );
 
-  addWeightedMiningLootToAllOres(e, "moon_remains", 0.5, weightedRemains);
+  addWeightedMiningLootToAllOres(e, "moon_remains", 0.05, weightedRemains);
   addAdditionalGeodeRoll(e, "moon_geode_roll");
 
   e.addBlockLootModifier(overworldOres)

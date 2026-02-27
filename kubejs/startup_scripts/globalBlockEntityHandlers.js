@@ -61,6 +61,7 @@ let increaseDataStage = (block, count) => {
   currentStage += count || 1;
   nbt.merge({ data: { stage: currentStage } });
   block.setEntityData(nbt);
+  block.getEntity().setChanged();
 };
 
 let increaseStage = (input, count) => {
@@ -891,8 +892,8 @@ global.giveExperience = (server, player, category, xp) => {
  */
 global.getProcessedItem = (item, dropAmount) => {
   let processOutput = global.mayonnaiseMachineRecipes.get(item);
-  if (processOutput && dropAmount >= 3)
-    return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
+  if (processOutput)
+    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
   processOutput = global.wineKegRecipes.get(item);
   if (processOutput)
     return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
@@ -1120,6 +1121,9 @@ global.cropList = [
   "farmersdelight:rice",
   "farmersdelight:rice_panicles",
   "society:ancient_fruit",
+  "society:cranberry",
+  "windswept:wild_berry_bush",
+  "society:mana_fruit",
   "etcetera:cotton",
   "society:tubabacco_leaf",
   "brewery:hop_trellis",

@@ -3,7 +3,7 @@ if (global.datagenDialog) {
   runNpcDatagen("fisher", {
     name: "Haruna",
     intro: [
-      "Hello, my name is Haruna, I'm looking to carve a home for myself in your town.",
+      "Hello, my name is Haruna, I'm looking to carve out a home for myself in your town.",
       "I can get you started with learning how to fish. It's slow work that requires lots of patience.",
       "These waters aren't as fresh as the ones in my homeland, but I can make do with them for now..."
     ],
