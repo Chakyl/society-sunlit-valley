@@ -379,6 +379,9 @@ global.getPlushieItemNbt = (currentNbt, type, customName, animalData, animalNbt)
   if (animalNbt.Variant) {
     newNbt.animal.Variant = animalNbt.Variant;
   }
+  if (animalNbt.Type) {
+    newNbt.animal.Type = animalNbt.Type;
+  }
   return newNbt;
 };
 global.setPlushieExtractedPD = (animal, data) => {

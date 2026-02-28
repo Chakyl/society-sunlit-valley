@@ -25,6 +25,229 @@ const fineWoolForage = [
   },
 ];
 
+global.husbandryKnifeDefinitions = [
+  {
+    animal: "minecraft:cow",
+    drops: [
+      { item: "minecraft:beef",               countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "minecraft:leather",             countMult: 2,   chance: 0.8,  minHearts: 5 },
+      { item: "farm_and_charm:minced_beef",    countMult: 2,   chance: 0.75, minHearts: 6 },
+    ]
+  },
+  {
+    animal: "minecraft:goat",
+    drops: [
+      { item: "windswept:goat",        countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "minecraft:goat_horn",   countMult: 1,   chance: 0.5,  minHearts: 7 },
+    ]
+  },
+  {
+    animal: "minecraft:sheep",
+    drops: [
+      { item: "minecraft:mutton",              countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farmersdelight:mutton_chops",   countMult: 2,   chance: 0.8,  minHearts: 5 },
+    ]
+  },
+  {
+    animal: "minecraft:pig",
+    drops: [
+      { item: "minecraft:porkchop",    countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farmersdelight:ham",    countMult: 1,   chance: 0.7,  minHearts: 6 },
+      { item: "farmersdelight:bacon",  countMult: 2,   chance: 0.75, minHearts: 5 },
+    ]
+  },
+  {
+    animal: "snowpig:snow_pig",
+    drops: [
+      { item: "snowpig:frozen_porkchop",       countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farmersdelight:frozen_ham",     countMult: 1,   chance: 0.65, minHearts: 6 },
+    ]
+  },
+  {
+    animal: "minecraft:rabbit",
+    drops: [
+      { item: "minecraft:rabbit",       countMult: 3,   chance: 1,    minHearts: 5 },
+      { item: "minecraft:rabbit_hide",  countMult: 2,   chance: 0.85, minHearts: 5 },
+      { item: "minecraft:rabbit_foot",  countMult: 2,   chance: 0.35, minHearts: 6 },
+    ]
+  },
+  {
+    animal: "meadow:wooly_cow",
+    variant: 0,
+    drops: [
+      { item: "minecraft:orange_wool",         countMult: 2,   chance: 1,    minHearts: 0 },
+      { item: "minecraft:beef",                countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farm_and_charm:minced_beef",    countMult: 2,   chance: 0.75, minHearts: 6 },
+    ]
+  },
+  {
+    animal: "meadow:wooly_cow",
+    variant: 1,
+    drops: [
+      { item: "meadow:umbra_wool",             countMult: 2,   chance: 1,    minHearts: 0 },
+      { item: "minecraft:beef",                countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farm_and_charm:minced_beef",    countMult: 2,   chance: 0.75, minHearts: 6 },
+    ]
+  },
+  {
+    animal: "meadow:wooly_cow",
+    variant: 2,
+    drops: [
+      { item: "meadow:warped_wool",            countMult: 2,   chance: 1,    minHearts: 0 },
+      { item: "minecraft:beef",                countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farm_and_charm:minced_beef",    countMult: 2,   chance: 0.75, minHearts: 6 },
+    ]
+  },
+  {
+    animal: "meadow:wooly_sheep",
+    drops: [
+      { item: "minecraft:mutton",              countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farmersdelight:mutton_chops",   countMult: 2,   chance: 0.8,  minHearts: 5 },
+    ]
+  },
+  {
+    animal: "meadow:water_buffalo",
+    drops: [
+      { item: "meadow:raw_buffalo_meat",   countMult: 3,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "minecraft:chicken",
+    drops: [
+      { item: "minecraft:chicken",               countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farmersdelight:chicken_cuts",     countMult: 3,   chance: 0.8,  minHearts: 5 },
+      { item: "minecraft:feather",               countMult: 2,   chance: 1,    minHearts: 5},
+    ]
+  },
+  {
+    animal: "untitledduckmod:duck",
+    drops: [
+      { item: "untitledduckmod:raw_duck",       countMult: 3,   chance: 1,    minHearts: 5 },
+      { item: "untitledduckmod:duck_feather",   countMult: 2,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "untitledduckmod:goose",
+    drops: [
+      { item: "untitledduckmod:raw_goose",  countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "untitledduckmod:goose_foot", countMult: 1,   chance: 0.45, minHearts: 7 },
+    ]
+  },
+  {
+    animal: "autumnity:turkey",
+    drops: [
+      { item: "autumnity:turkey",         countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "autumnity:turkey_piece",   countMult: 3,   chance: 0.8,  minHearts: 5 },
+    ]
+  },
+  {
+    animal: "minecraft:frog",
+    drops: [
+      { item: "crabbersdelight:raw_frog_leg",   countMult: 3,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "atmospheric:cochineal",
+    drops: [
+      { item: "atmospheric:cochineal_husk",   countMult: 3,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "minecraft:squid",
+    drops: [
+      { item: "crabbersdelight:raw_squid_tentacles",   countMult: 3,   chance: 1,    minHearts: 5 },
+      { item: "minecraft:ink_sac",                     countMult: 3,   chance: 0.6,  minHearts: 8 },
+    ]
+  },
+  {
+    animal: "minecraft:glow_squid",
+    drops: [
+      { item: "crabbersdelight:raw_glow_squid_tentacles",   countMult: 3,   chance: 1,    minHearts: 5 },
+      { item: "minecraft:glow_ink_sac",                     countMult: 3,   chance: 0.6,  minHearts: 8 },
+    ]
+  },
+  {
+    animal: "minecraft:mooshroom",
+    type: "red",
+    drops: [
+      { item: "minecraft:beef",                countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farm_and_charm:minced_beef",    countMult: 2,   chance: 0.75, minHearts: 6 },
+      { item: "minecraft:red_mushroom",        countMult: 4,   chance: 0.85, minHearts: 5 },
+    ]
+  },
+  {
+    animal: "minecraft:mooshroom",
+    type: "brown",
+    drops: [
+      { item: "minecraft:beef",                countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farm_and_charm:minced_beef",    countMult: 2,   chance: 0.75, minHearts: 6 },
+      { item: "minecraft:brown_mushroom",      countMult: 4,   chance: 0.85, minHearts: 5 },
+    ]
+  },
+  {
+    animal: "buzzier_bees:moobloom",
+    drops: [
+      { item: "minecraft:beef",                countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farm_and_charm:minced_beef",    countMult: 2,   chance: 0.75, minHearts: 6 },
+      { item: "buzzier_bees:buttercup",        countMult: 4,   chance: 0.8,  minHearts: 5 },
+    ]
+  },
+  {
+    animal: "etcetera:chapple",
+    drops: [
+      { item: "minecraft:chicken",               countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farmersdelight:chicken_cuts",     countMult: 3,   chance: 0.8,  minHearts: 5 },
+      { item: "minecraft:feather",               countMult: 2,   chance: 1,  minHearts: 5 },
+    ]
+  },
+  {
+    animal: "farmlife:domestic_tribull",
+    drops: [
+      { item: "farmlife:tribull_shank",   countMult: 3,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "wildernature:minisheep",
+    drops: [
+      { item: "minecraft:mutton",              countMult: 2,   chance: 1,    minHearts: 5 },
+      { item: "farmersdelight:mutton_chops",   countMult: 2,   chance: 0.75, minHearts: 5 },
+    ]
+  },
+  {
+    animal: "wildernature:deer",
+    drops: [
+      { item: "wildernature:venison",   countMult: 3,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "wildernature:bison",
+    drops: [
+      { item: "wildernature:bison_meat",   countMult: 3,   chance: 1,    minHearts: 5 },
+      { item: "wildernature:bison_horn",   countMult: 1,   chance: 0.5,  minHearts: 7 },
+    ]
+  },
+  {
+    animal: "farmlife:galliraptor",
+    drops: [
+      { item: "farmlife:galliraptor",   countMult: 2,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "minecraft:panda",
+    drops: [
+      { item: "twigs:bamboo_leaves",  countMult: 2,   chance: 0.85, minHearts: 5 },
+      { item: "minecraft:bamboo",     countMult: 2,   chance: 1,    minHearts: 5 },
+    ]
+  },
+  {
+    animal: "species:mammutilation",
+    drops: [
+      { item: "species:frozen_hair",   countMult: 3,   chance: 1,    minHearts: 5 },
+      { item: "species:frozen_meat",   countMult: 3,   chance: 1,    minHearts: 5 },
+    ]
+  },
+]
+
 global.husbandryForagingDefinitions = [
   { animal: "minecraft:pig", forages: truffleForage },
   { animal: "snowpig:snow_pig", forages: truffleForage },

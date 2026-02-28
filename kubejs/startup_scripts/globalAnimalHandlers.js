@@ -325,6 +325,84 @@ global.handleSpecialHarvest = (
   }
 };
 
+global.getMagicKnifeOutput = (
+  level,
+  target,
+  player,
+  server,
+  plushieModifiers
+) => {
+  const day = global.getDay(level);
+  const data = plushieModifiers ? target : target.persistentData;
+  const ageLastMagicHarvested = data.getInt("ageLastMagicHarvested");
+  const freshAnimal = plushieModifiers
+    ? false
+    : global.isFresh(day, ageLastMagicHarvested);
+  let affection;
+  let mood;
+  if (plushieModifiers) {
+    affection = 1000;
+    mood = 256;
+  } else {
+    affection = data.getInt("affection") || 0;
+    mood = global.getOrFetchMood(level, target, day, player);
+  }
+  const type = target.type;
+  let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  let newLoot = [];
+
+  if (freshAnimal || day > ageLastMagicHarvested) {
+    if (!plushieModifiers || !plushieModifiers.resetDay) {
+      data.ageLastMagicHarvested = day;
+    }
+    data.affection = affection - 15;
+
+    let quality = 0;
+    if (mood >= 160) {
+      quality = global.getHusbandryQuality(hearts, mood);
+    }
+
+    global.husbandryKnifeDefinitions.forEach((definition) => {
+      let isType = definition.animal.equals(type);
+      if (isType && (definition.type != null || definition.variant != null)) {
+        if (type == "minecraft:mooshroom") {
+          let mooshroomType = plushieModifiers
+            ? (target.getString ? target.getString("Type") : target.Type)
+            : target.getNbt().Type;
+          if (!mooshroomType) mooshroomType = "red";
+          isType = mooshroomType == definition.type;
+        }
+        if (type == "meadow:wooly_cow") {
+          let variant = plushieModifiers
+            ? (target.getInt ? target.getInt("Variant") : target.Variant)
+            : target.getNbt().Variant;
+          isType = (Number(variant) % 3) == definition.variant;
+        }
+      }
+      if (isType) {
+        definition.drops.forEach((drop) => {
+          if (hearts >= drop.minHearts && Math.random() < drop.chance) {
+            let item;
+            if (drop.itemPool) {
+              item = Item.of(
+                drop.itemPool[Math.floor(Math.random() * drop.itemPool.length)]
+              );
+            } else {
+              item = Item.of(drop.item);
+            }
+            item = item.withCount(drop.countMult || 1);
+            if (drop.hasQuality && quality > 0) {
+              item = item.withNBT({ quality_food: { effects: [], quality: quality } });
+            }
+            newLoot.push(item);
+          }
+        });
+      }
+    });
+    return newLoot;
+  } else return -1;
+};
+
 global.getMagicShearsOutput = (level, target, player, plushieModifiers) => {
   const day = global.getDay(level);
   const data = plushieModifiers ? target : target.persistentData;
@@ -711,6 +789,42 @@ global.executePlushieHusbandry = (
       level,
       animal,
       player,
+      plushieMods
+    );
+    if (droppedLoot !== -1) {
+      server.runCommandSilent(
+        `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
+      );
+      for (let i = 0; i < droppedLoot.length; i++) {
+        let specialItem = level.createEntity("minecraft:item");
+        let dropItem = droppedLoot[i];
+        specialItem.x = player.x;
+        specialItem.y = player.y;
+        specialItem.z = player.z;
+        specialItem.item = dropItem;
+        specialItem.spawn();
+      }
+      level.spawnParticles(
+        "snowyspirit:glow_light",
+        true,
+        block.x,
+        block.y + 0.5,
+        block.z,
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        20,
+        2
+      );
+      global.addItemCooldown(player, item, 1);
+    }
+  }
+  if (item === "society:magic_knife") {
+    const droppedLoot = global.getMagicKnifeOutput(
+      level,
+      animal,
+      player,
+      server,
       plushieMods
     );
     if (droppedLoot !== -1) {

@@ -99,6 +99,11 @@ BlockEvents.broken("society:fish_pond_basket", (e) => {
 BlockEvents.broken("society:auto_grabber", (e) => {
   const { block } = e;
   if (block.properties.get("upgraded").toLowerCase() == "true") {
-    block.popItem(Item.of("society:magic_shears"));
+    const nbt = block.getEntityData();
+    let upgradeItem = "society:magic_shears";
+    if (nbt && nbt.data && nbt.data.upgrade_item) {
+      upgradeItem = String(nbt.data.upgrade_item);
+    }
+    block.popItem(Item.of(upgradeItem));
   }
 });

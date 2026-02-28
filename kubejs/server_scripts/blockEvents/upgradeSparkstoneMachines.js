@@ -31,7 +31,12 @@ BlockEvents.rightClicked("society:auto_grabber", (e) => {
   const { player, item, block, hand, level } = e;
   const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
   if (hand == "OFF_HAND") return;
-  if (hand == "MAIN_HAND" && !upgraded && item == "society:magic_shears") {
+  if (
+    hand == "MAIN_HAND" &&
+    !upgraded &&
+    ["society:magic_shears", "society:magic_knife"].includes(item.id)
+  ) {
+    const upgradeItem = item.id;
     if (!player.isCreative()) item.count--;
     level.spawnParticles(
       "farmersdelight:star",
@@ -49,6 +54,13 @@ BlockEvents.rightClicked("society:auto_grabber", (e) => {
       upgraded: true,
       facing: block.properties.get("facing"),
     });
+    let nbt = block.getEntityData();
+    nbt.merge({
+      data: {
+        upgrade_item: upgradeItem,
+      },
+    });
+    block.setEntityData(nbt);
     e.cancel();
   }
 });
