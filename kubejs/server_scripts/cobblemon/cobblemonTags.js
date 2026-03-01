@@ -22,6 +22,8 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("cobblemon:nether/is_wasteland", "society:blackstone_caves");
 
   e.add("cobblemon:is_magical", "society:umbra_barrens");
+  e.add("cobblemon:is_floral", "windswept:lavender_fields")
+  e.add("cobblemon:is_floral", "windswept:lavender_hills")
 });
 
 const cobblemonAllSeasonCrops = [

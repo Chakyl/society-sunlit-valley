@@ -1,0 +1,168 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "cobblemon:poke_ball",
+					"weight": 16,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:sport_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:luxury_ball",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:remedy",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:superb_remedy",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:silver_powder",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:exp_candy_s",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:lure_ball",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "sunlit_cobblemon:berry_capsule",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:sharp_beak",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:exp_candy_xs",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:energy_root",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:potion",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "society:plushie_capsule",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:friend_ball",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:heal_powder",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "society:iron_upgrade_smithing_template",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:fine_remedy",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:silk_scarf",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:hard_stone",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:big_root",
+					"weight": 6
+				}
+			]
+		}
+	]
+}

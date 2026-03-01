@@ -1,0 +1,134 @@
+{
+    "parent": "sunlit_cobblemon:block/loot_ball_model",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"layer0": "cobblemon:item/poke_balls/models/beast_ball",
+		"particle": "cobblemon:item/poke_balls/models/beast_ball"
+	},
+	"elements": [
+		{
+			"name": "top_inner",
+			"from": [3.975, 4.275, 3.95],
+			"to": [11.975, 8.275, 11.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.975, 4.275, 11.95]},
+			"faces": {
+				"north": {"uv": [2, 4, 4, 6], "texture": "#layer0"},
+				"east": {"uv": [0, 4, 2, 6], "texture": "#layer0"},
+				"south": {"uv": [6, 4, 8, 6], "texture": "#layer0"},
+				"west": {"uv": [4, 4, 6, 6], "texture": "#layer0"},
+				"up": {"uv": [4, 4, 2, 0], "texture": "#layer0"},
+				"down": {"uv": [6, 0, 4, 4], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "button",
+			"from": [6.975, 3.275, 3.7],
+			"to": [8.975, 5.275, 3.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.975, 4.275, 11.95]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.5, 1], "texture": "#layer0"},
+				"east": {"uv": [0, 0, 0, 1], "texture": "#layer0"},
+				"south": {"uv": [0.5, 0, 1, 1], "texture": "#layer0"},
+				"west": {"uv": [0.5, 0, 0.5, 1], "texture": "#layer0"},
+				"up": {"uv": [0.5, 0, 0, 0], "texture": "#layer0"},
+				"down": {"uv": [1, 0, 0.5, 0], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "top_outer",
+			"from": [3.725, 4.025, 3.7],
+			"to": [12.225, 8.525, 12.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.975, 4.275, 7.95]},
+			"faces": {
+				"north": {"uv": [2, 14, 4, 16], "texture": "#layer0"},
+				"east": {"uv": [0, 14, 2, 16], "texture": "#layer0"},
+				"south": {"uv": [6, 14, 8, 16], "texture": "#layer0"},
+				"west": {"uv": [4, 14, 6, 16], "texture": "#layer0"},
+				"up": {"uv": [4, 14, 2, 10], "texture": "#layer0"},
+				"down": {"uv": [6, 10, 4, 14], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "bottom_outer",
+			"from": [3.725, 0.025, 3.7],
+			"to": [12.225, 4.525, 12.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.975, 4.275, 7.95]},
+			"faces": {
+				"north": {"uv": [10, 14, 12, 16], "texture": "#layer0"},
+				"east": {"uv": [8, 14, 10, 16], "texture": "#layer0"},
+				"south": {"uv": [14, 14, 16, 16], "texture": "#layer0"},
+				"west": {"uv": [12, 14, 14, 16], "texture": "#layer0"},
+				"up": {"uv": [12, 14, 10, 10], "texture": "#layer0"},
+				"down": {"uv": [14, 10, 12, 14], "texture": "#layer0"}
+			}
+		},
+		{
+			"name": "bottom_inner",
+			"from": [3.975, 0.275, 3.95],
+			"to": [11.975, 4.275, 11.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.975, 4.275, 7.95]},
+			"faces": {
+				"north": {"uv": [10, 4, 12, 6], "texture": "#layer0"},
+				"east": {"uv": [8, 4, 10, 6], "texture": "#layer0"},
+				"south": {"uv": [14, 4, 16, 6], "texture": "#layer0"},
+				"west": {"uv": [12, 4, 14, 6], "texture": "#layer0"},
+				"up": {"uv": [12, 4, 10, 0], "texture": "#layer0"},
+				"down": {"uv": [14, 0, 12, 4], "texture": "#layer0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"translation": [14.5, 7.5, 14.5],
+			"scale": [1.8, 1.8, 1.8]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "pokeball",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [
+				{
+					"name": "pokeball_lid",
+					"origin": [0, 4, 4],
+					"color": 0,
+					"children": [0, 1, 2]
+				},
+				3,
+				4
+			]
+		}
+	]
+}

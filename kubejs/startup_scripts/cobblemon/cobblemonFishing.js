@@ -32,6 +32,7 @@ const getWaterType = (biome) => {
   }
   return "fresh";
 };
+
 const getBobberTier = (item) => {
   let stringNbt = item.nbt.toString();
   if (stringNbt.includes("sunlit_cobblemon:poke_bobber")) return "common";

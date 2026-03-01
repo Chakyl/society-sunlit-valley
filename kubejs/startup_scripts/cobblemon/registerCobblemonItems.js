@@ -1,6 +1,9 @@
 console.info("[SOCIETY-S-COBBLEMON] registerCobblemonItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
+  e.create("sunlit_cobblemon:unlooted_ball").modelJson({
+    "parent": "society:block/kubejs/pond_quest"
+  });
   e.create("sunlit_cobblemon:silph_scope")
     .texture("sunlit_cobblemon:item/silph_scope")
     .maxStackSize(1);
@@ -67,7 +70,6 @@ StartupEvents.registry("item", (e) => {
   // Misc
 
   e.create("sunlit_cobblemon:poke_radar")
-    .texture("society:item/poke_radar")
     .displayName("Poké Radar");
   e.create("sunlit_cobblemon:berry_capsule").texture(
     "sunlit_cobblemon:item/berry_capsule",

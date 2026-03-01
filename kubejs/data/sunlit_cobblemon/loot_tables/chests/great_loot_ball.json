@@ -1,0 +1,410 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "cobblemon:great_ball",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:heavy_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:love_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:moon_ball",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:park_ball",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:net_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:nest_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:hp_up",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:calcium",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:carbos",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:pp_up",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:zinc",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:iron",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:protein",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "sunlit_cobblemon:tm_pack",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:tag",
+					"name": "cobblemon:type_gems",
+					"expand": true,
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:exp_candy_l",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:exp_candy_m",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:max_ether",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:genius_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:swift_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:clever_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:resist_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:muscle_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:health_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:ether",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:full_heal",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:revive",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:hyper_potion",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:super_potion",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:blue_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:red_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:white_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:green_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:pink_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:cyan_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:life_orb",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:charcoal_stick",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:black_glasses",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:black_belt",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:power_belt",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:power_bracer",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:power_lens",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:power_weight",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:soft_sand",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:power_band",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:power_anklet",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:poison_barb",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:never_melt_ice",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:mystic_water",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:muscle_band",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:miracle_seed",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:metal_coat",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,272 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "cobblemon:ultra_ball",
+					"weight": 23,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:mental_herb",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:vivichoke_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:revival_herb",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:timer_ball",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:level_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:quick_ball",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:dive_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:dusk_ball",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:choice_specs",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:focus_sash",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:focus_band",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:twisted_spoon",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:wise_glasses",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:dragon_fang",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:eviolite",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:magnet",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:fairy_feather",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:spell_tag",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:link_cable",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:relic_coin_pouch",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "sunlit_cobblemon:greater_tm_pack",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:medicinal_brew",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:pp_max",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:max_elixir",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:elixir",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:rare_candy",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:max_revive",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:full_restore",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:max_potion",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:sky_tumblestone",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:black_tumblestone",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:tumblestone",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:mirror_herb",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:white_herb",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:power_herb",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:exp_candy_xl",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:leftovers",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:choice_scarf",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:choice_band",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

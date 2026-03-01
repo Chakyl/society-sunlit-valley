@@ -270,7 +270,7 @@ ItemEvents.rightClicked("sunlit_cobblemon:gachamon_capsule", (e) => {
   const { server, player, level, item } = e;
   if (!global.hasScope(player)) {
     player.tell(
-      Text.translatable("sunlit_cobblemon.gachamon_capsule.scope").red(),
+      Text.translatable("sunlit_cobblemon.need_scope").red(),
     );
     return;
   }

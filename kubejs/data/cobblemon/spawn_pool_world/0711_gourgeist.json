@@ -1,0 +1,90 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "gourgeist-1",
+            "pokemon": "gourgeist",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "29-49",
+            "weight": 0.6,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "timeRange": "night",
+                "neededNearbyBlocks": [
+                    "minecraft:pumpkin",
+                    "minecraft:carved_pumpkin"
+                ]
+            }
+        },
+        {
+            "id": "gourgeist-2",
+            "pokemon": "gourgeist",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "29-49",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_overgrowth"
+                ]
+            }
+        },
+        {
+            "id": "gourgeist-3",
+            "pokemon": "gourgeist",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "29-49",
+            "weight": 15.4,
+            "condition": {
+                "biomes": [
+                    "autumnity:pumpkin_fields"
+                ],
+                "timeRange": "night",
+                "neededNearbyBlocks": [
+                    "minecraft:pumpkin",
+                    "minecraft:carved_pumpkin"
+                ]
+            }
+        },
+        {
+            "id": "gourgeist-4",
+            "pokemon": "gourgeist",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "29-49",
+            "weight": 5.4,
+            "condition": {
+                "biomes": [
+                    "autumnity:maple_forest"
+                ],
+                "timeRange": "night",
+                "neededNearbyBlocks": [
+                    "minecraft:pumpkin",
+                    "minecraft:carved_pumpkin"
+                ]
+            }
+        }
+    ]
+}

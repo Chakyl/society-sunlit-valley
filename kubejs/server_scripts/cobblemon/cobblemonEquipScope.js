@@ -1,6 +1,7 @@
 console.info("[SOCIETY-S-COBBLEMON] cobblemonEquipScope.js loaded");
 
 const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
+
 ItemEvents.rightClicked("sunlit_cobblemon:silph_scope", (e) => {
   const { server, player, item } = e;
   $CuriosApi.getCuriosInventory(player).ifPresent((curiosInventory) => {
