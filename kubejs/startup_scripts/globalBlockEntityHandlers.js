@@ -780,6 +780,32 @@ global.useInventoryItems = (inventory, id, count) => {
   return 0;
 };
 
+global.inventoryUseItems = (inventory, id, count) => {
+  if (!inventory) return 0;
+
+  const slots = inventory.getSlots();
+  let remaining = count;
+
+  let total = 0;
+  for (let i = 0; i < slots; i++) {
+    let stack = inventory.getStackInSlot(i);
+    if (stack.item.id === id) total += stack.count;
+  }
+  if (total < count) return -1;
+
+  for (let i = 0; i < slots; i++) {
+    if (remaining <= 0) break;
+    let stack = inventory.getStackInSlot(i);
+    if (stack.item.id === id) {
+      let toExtract = Math.min(stack.count, remaining);
+      inventory.extractItem(i, toExtract, false);
+      remaining -= toExtract;
+    }
+  }
+
+  return 1;
+};
+
 /** All fluid handlers expect the following initialData with a capacity of 10000
  *
  *  blockInfo.initialData({ Fluid: 0, FluidType: "" });
