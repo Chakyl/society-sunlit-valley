@@ -8,7 +8,7 @@ global.handleManagerQuestSubmission = (entity, fishPondPos, attachedPlayer, dela
 
   server.scheduleInTicks(delay, () => {
     const fishPond = level.getBlock(fishPondPos);
-    const {x, y, z} = fishPond;
+    const { x, y, z } = fishPond;
     const nbt = fishPond.getEntityData();
 
     if (!nbt || !nbt.data) {
@@ -20,7 +20,7 @@ global.handleManagerQuestSubmission = (entity, fishPondPos, attachedPlayer, dela
       global.getPondProperties(fishPond);
 
 
-    if (quest === "true" && global.fishPondDefinitions.get(`${fishType}`)){
+    if (quest === "true" && global.fishPondDefinitions.get(`${fishType}`)) {
       const questContent = getRequestedItems(fishType, Number(max_population))[quest_id];
 
       if (!questContent) {
@@ -74,59 +74,60 @@ global.getQuestItems = (block, level) => {
   let requestedItems = [];
   const { x, y, z } = block;
   let attachedPlayer;
-  level.getServer().players.forEach((p) => {
-    if (p.getUuid().toString() === block.getEntityData().data.owner){
-      attachedPlayer = p;
-    }
-  });
+  const ownerUuid = block.getEntityData().data.owner;
 
-  if (attachedPlayer){
+  if (ownerUuid === "-1") return;
+
+  for (const p of level.getServer().players) {
+    if (p.getUuid().toString() === ownerUuid) {
+      attachedPlayer = p;
+      break;
+    }
+  }
+
+  if (attachedPlayer) {
     let radius = 10;
     let scanBlock;
+    let halfCost = attachedPlayer.stages.has("pond_house_five");
     for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius),
       [x + radius, y + radius, z + radius])) {
       scanBlock = level.getBlock(pos);
-      if (scanBlock.id === "society:fish_pond"){
-        let fishPond = level.getBlock(pos);
-        let nbt = fishPond.getEntityData();
+      if (scanBlock.id === "society:fish_pond") {
+        let nbt = scanBlock.getEntityData();
 
-        if(!nbt || !nbt.data) continue;
+        if (!nbt || !nbt.data) continue;
 
         let { type: fishType, max_population, quest_id } = nbt.data;
-        let { quest } = global.getPondProperties(fishPond);
+        let { quest } = global.getPondProperties(scanBlock);
 
-        if (quest === "true" && global.fishPondDefinitions.get(`${fishType}`)){
+        if (quest === "true" && global.fishPondDefinitions.get(`${fishType}`)) {
           let questContent = getRequestedItems(fishType, Number(max_population))[quest_id];
           if (!questContent) {
             continue;
           }
-          let checkedCount = attachedPlayer.stages.has("pond_house_five") ?
+          let checkedCount = halfCost ?
             Math.round(questContent.count / 2) :
             questContent.count;
           let requestedItem = questContent.item;
-          requestedItems.push({ item : requestedItem, count : checkedCount});
+          requestedItems.push({ item: requestedItem, count: checkedCount });
         }
       }
     }
   }
 
-  const grouped = Object.values(
-    requestedItems.reduce((acc, entry) => {
-      const item = entry.item;
-      const count = entry.count;
-      if (acc[item]) {
-        acc[item].count += count;
-      } else {
-        acc[item] = { item: item, count: count };
-      }
-      return acc;
-    }, {})
-  );
+  const groupedMap = new Map();
+  for (let i = 0; i < requestedItems.length; i++) {
+    let entry = requestedItems[i];
+    groupedMap.set(entry.item, (groupedMap.get(entry.item) || 0) + entry.count);
+  }
 
-  const entries = grouped.map((entry) => {
-    const displayName = Item.of(entry.item).displayName.string;
-    return {Checked: "0b",
-    Text: `{"text":"${entry.count} x ${displayName}"}`,}
+  const entries = [];
+  groupedMap.forEach(function (count, item) {
+    const displayName = Item.of(item).displayName.string;
+    entries.push({
+      Checked: "0b",
+      Text: `{"text":"${count} x ${displayName}"}`,
+    });
   });
 
   const pageSize = 6;
@@ -143,41 +144,44 @@ global.runFishPondQuestManager = (entity) => {
   const { x, y, z } = block;
   let attachedPlayer;
 
-  level.getServer().players.forEach((p) => {
-    if (p.getUuid().toString() === block.getEntityData().data.owner){
+  const cDayTime = level.dayTime();
+  const currentMorningModulo = cDayTime % 24000;
+  const questManagerProgTime = 1000;
+  if (currentMorningModulo < questManagerProgTime ||
+    currentMorningModulo >= questManagerProgTime + artMachineTickRate) return;
+
+  const ownerUuid = block.getEntityData().data.owner;
+
+  if (ownerUuid === "-1") return;
+
+  for (const p of level.getServer().players) {
+    if (p.getUuid().toString() === ownerUuid) {
       attachedPlayer = p;
+      break;
     }
-  });
+  }
 
   if (attachedPlayer) {
-    let radius = 10;
+    const radius = 10;
     let scanBlock;
-    let cDayTime = level.dayTime();
-    let currentMorningModulo = cDayTime % 24000;
-    let questManagerProgTime = 1000;
     let scannedBlocks = 0;
 
-    if (currentMorningModulo >= questManagerProgTime &&
-      currentMorningModulo < questManagerProgTime + artMachineTickRate) {
-
-
-      for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius),
-        [x + radius, y + radius, z + radius])) {
-        scanBlock = level.getBlock(pos);
-        if (scanBlock.id === "society:fish_pond") {
-          global.handleManagerQuestSubmission(
-            entity,
-            pos.immutable(),
-            attachedPlayer,
-            scannedBlocks * 5);
-          scannedBlocks++;
-        }
+    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius),
+      [x + radius, y + radius, z + radius])) {
+      scanBlock = level.getBlock(pos);
+      if (scanBlock.id === "society:fish_pond") {
+        global.handleManagerQuestSubmission(
+          entity,
+          pos.immutable(),
+          attachedPlayer,
+          scannedBlocks * 5);
+        scannedBlocks++;
       }
-
-      level.server.runCommandSilent(
-        `playsound botania:spreader_fire block @a ${x} ${y} ${z}`
-      )
     }
+
+    level.server.runCommandSilent(
+      `playsound botania:spreader_fire block @a ${x} ${y} ${z}`
+    )
   }
 }
 

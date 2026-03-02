@@ -5,7 +5,6 @@ BlockEvents.rightClicked("society:fish_pond_quest_manager", (e) => {
   player.swing();
   const held = player.mainHandItem;
   if (!held || held.id !== "create:clipboard") return;
-  console.info("is clipboard");
   const pages = global.getQuestItems(block, level);
   held.nbt = {
     Type: 1,
