@@ -75,5 +75,6 @@ BlockEvents.rightClicked(magnifyingGlassBlockIds, (e) => {
         }
       }
     });
+    e.cancel();
   }
 });

@@ -6,42 +6,32 @@ global.handleManagerQuestSubmission = (entity, fishPondPos, attachedPlayer, dela
   const { level, block, inventory } = entity;
   const server = level.server;
 
-  //console.info(`[QUEST_MANAGER] handleManagerQuestSubmission called | delay: ${delay} | player: ${attachedPlayer?.getUuid()}`);
-
   server.scheduleInTicks(delay, () => {
     const fishPond = level.getBlock(fishPondPos);
     const {x, y, z} = fishPond;
     const nbt = fishPond.getEntityData();
 
     if (!nbt || !nbt.data) {
-      console.warn(`[QUEST_MANAGER] No NBT data found for fish pond at (${x}, ${y}, ${z})`);
       return;
     }
 
-    const {type, max_population, quest_id } = nbt.data;
+    const { type: fishType, max_population, quest_id } = nbt.data;
     const { facing, valid, mature, upgraded, quest } =
       global.getPondProperties(fishPond);
 
-    console.info(`[QUEST_MANAGER] Pond at (${x}, ${y}, ${z}) | type: ${type} | max_pop: ${max_population} | quest_id: ${quest_id} | quest: ${quest}`);
 
-    if (quest === "true" && global.fishPondDefinitions.get(`${type}`)){
-      const questContent = getRequestedItems(type, Number(max_population))[quest_id];
+    if (quest === "true" && global.fishPondDefinitions.get(`${fishType}`)){
+      const questContent = getRequestedItems(fishType, Number(max_population))[quest_id];
 
       if (!questContent) {
-        console.warn(`[QUEST_MANAGER] No quest content found for type: ${type}, max_population: ${max_population}, quest_id: ${quest_id}`);
         return;
       }
-
-      console.info(`[QUEST_MANAGER] Quest content | item: ${questContent.item} | base count: ${questContent.count}`);
 
       let checkedCount = attachedPlayer.stages.has("pond_house_five") ?
         Math.round(questContent.count / 2) :
         questContent.count;
 
-      console.info(`[QUEST_MANAGER] Required count: ${checkedCount} | pond_house_five stage: ${attachedPlayer.stages.has("pond_house_five")}`);
-
       if (global.hasInventoryItems(inventory, questContent.item, checkedCount)) {
-        console.info(`[QUEST_MANAGER] Quest fulfilled! Consuming ${checkedCount}x ${questContent.item} and upgrading pond at (${x}, ${y}, ${z})`);
 
         successParticles(level, fishPond);
         fishPond.set(fishPond.id, {
@@ -53,7 +43,6 @@ global.handleManagerQuestSubmission = (entity, fishPondPos, attachedPlayer, dela
         });
 
         const newMaxPop = increaseStage(max_population, Number(max_population) === 7 ? 3 : 2);
-        console.info(`[QUEST_MANAGER] Increasing max_population from ${max_population} to ${newMaxPop}`);
 
         nbt.merge({
           data: {
@@ -76,13 +65,77 @@ global.handleManagerQuestSubmission = (entity, fishPondPos, attachedPlayer, dela
           3,
           0.01
         );
-      } else {
-        console.info(`[QUEST_MANAGER] Insufficient items | need ${checkedCount}x ${questContent.item}`);
       }
-    } else {
-      console.info(`[QUEST_MANAGER] Pond at (${x}, ${y}, ${z}) skipped | quest: ${quest} | definition exists: ${!!global.fishPondDefinitions.get(`${type}`)}`);
     }
   });
+}
+
+global.getQuestItems = (block, level) => {
+  let requestedItems = [];
+  const { x, y, z } = block;
+  let attachedPlayer;
+  level.getServer().players.forEach((p) => {
+    if (p.getUuid().toString() === block.getEntityData().data.owner){
+      attachedPlayer = p;
+    }
+  });
+
+  if (attachedPlayer){
+    let radius = 10;
+    let scanBlock;
+    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius),
+      [x + radius, y + radius, z + radius])) {
+      scanBlock = level.getBlock(pos);
+      if (scanBlock.id === "society:fish_pond"){
+        let fishPond = level.getBlock(pos);
+        let nbt = fishPond.getEntityData();
+
+        if(!nbt || !nbt.data) continue;
+
+        let { type: fishType, max_population, quest_id } = nbt.data;
+        let { quest } = global.getPondProperties(fishPond);
+
+        if (quest === "true" && global.fishPondDefinitions.get(`${fishType}`)){
+          let questContent = getRequestedItems(fishType, Number(max_population))[quest_id];
+          if (!questContent) {
+            continue;
+          }
+          let checkedCount = attachedPlayer.stages.has("pond_house_five") ?
+            Math.round(questContent.count / 2) :
+            questContent.count;
+          let requestedItem = questContent.item;
+          requestedItems.push({ item : requestedItem, count : checkedCount});
+        }
+      }
+    }
+  }
+
+  const grouped = Object.values(
+    requestedItems.reduce((acc, entry) => {
+      const item = entry.item;
+      const count = entry.count;
+      if (acc[item]) {
+        acc[item].count += count;
+      } else {
+        acc[item] = { item: item, count: count };
+      }
+      return acc;
+    }, {})
+  );
+
+  const entries = grouped.map((entry) => {
+    const displayName = Item.of(entry.item).displayName.string;
+    return {Checked: "0b",
+    Text: `{"text":"${entry.count} x ${displayName}"}`,}
+  });
+
+  const pageSize = 6;
+  let pages = [];
+  for (let i = 0; i < entries.length; i += pageSize) {
+    pages.push({ Entries: entries.slice(i, i + pageSize) });
+  }
+
+  return pages;
 }
 
 global.runFishPondQuestManager = (entity) => {
@@ -99,23 +152,19 @@ global.runFishPondQuestManager = (entity) => {
   if (attachedPlayer) {
     let radius = 10;
     let scanBlock;
-    let dayTime = level.dayTime();
-    let morningModulo = dayTime % 24000;
+    let cDayTime = level.dayTime();
+    let currentMorningModulo = cDayTime % 24000;
     let questManagerProgTime = 1000;
     let scannedBlocks = 0;
 
-    console.info(`[QUEST_MANAGER] runFishPondQuestManager | manager pos: (${x}, ${y}, ${z}) | owner: ${attachedPlayer.getUuid()} | dayTime: ${dayTime} | modulo: ${morningModulo}`);
+    if (currentMorningModulo >= questManagerProgTime &&
+      currentMorningModulo < questManagerProgTime + artMachineTickRate) {
 
-    if (morningModulo >= questManagerProgTime &&
-      morningModulo < questManagerProgTime + artMachineTickRate) {
-
-      console.info(`[QUEST_MANAGER] Scanning for fish ponds in ${radius * 2 + 1}x${radius * 2 + 1}x${radius * 2 + 1} area around (${x}, ${y}, ${z})`);
 
       for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius),
         [x + radius, y + radius, z + radius])) {
         scanBlock = level.getBlock(pos);
         if (scanBlock.id === "society:fish_pond") {
-          console.info(`[QUEST_MANAGER] Fish pond found at (${pos.x}, ${pos.y}, ${pos.z}) | scheduling submission with delay: ${scannedBlocks * 5}`);
           global.handleManagerQuestSubmission(
             entity,
             pos.immutable(),
@@ -125,14 +174,10 @@ global.runFishPondQuestManager = (entity) => {
         }
       }
 
-      console.info(`[QUEST_MANAGER] Scan complete | total fish ponds found: ${scannedBlocks}`);
-
       level.server.runCommandSilent(
         `playsound botania:spreader_fire block @a ${x} ${y} ${z}`
       )
     }
-  } else {
-    console.warn(`[QUEST_MANAGER] No attached player found for manager at (${x}, ${y}, ${z}) | owner UUID: ${block.getEntityData()?.data?.owner}`);
   }
 }
 
