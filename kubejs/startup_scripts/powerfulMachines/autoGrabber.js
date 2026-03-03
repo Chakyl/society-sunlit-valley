@@ -180,12 +180,26 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
       level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
       global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
     ) {
-      let droppedLoot = global.getMagicShearsOutput(
-        level,
-        plushieModifiers ? data : animal,
-        player,
-        plushieModifiers
-      );
+      const blockNbt = block.getEntityData();
+      let upgradeItem = "society:magic_shears";
+      if (blockNbt && blockNbt.data && blockNbt.data.upgrade_item) {
+        upgradeItem = String(blockNbt.data.upgrade_item);
+      }
+      let droppedLoot =
+        upgradeItem === "society:magic_knife"
+          ? global.getMagicKnifeOutput(
+              level,
+              plushieModifiers ? data : animal,
+              player,
+              player.server,
+              plushieModifiers
+            )
+          : global.getMagicShearsOutput(
+              level,
+              plushieModifiers ? data : animal,
+              player,
+              plushieModifiers
+            );
       if (droppedLoot !== -1) {
         level.server.runCommandSilent(
           `playsound minecraft:entity.sheep.shear block @a ${block.x} ${block.y} ${block.z}`

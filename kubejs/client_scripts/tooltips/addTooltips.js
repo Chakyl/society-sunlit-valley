@@ -255,7 +255,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:the_spark_also_rises",
-      description: "mining any ore drops Sparkstone.",
+      description: "Mining any ore drops Sparkstone.",
     },
     {
       item: "society:universal_methods_of_farming",
@@ -842,6 +842,14 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "society:magic_shears",
     Text.translatable("item.society.magic_shears.description.warn").red()
+  );
+  tooltip.add(
+    "society:magic_knife",
+    Text.translatable("item.society.magic_knife.description").gray()
+  );
+  tooltip.add(
+    "society:magic_knife",
+    Text.translatable("item.society.magic_knife.description.warn").red()
   );
   tooltip.add(
     "society:mood_scanner",
