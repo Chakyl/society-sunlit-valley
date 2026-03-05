@@ -149,6 +149,7 @@ const checkAnimal = (
   );
   debug && debugData(player, level, data, hearts);
 };
+
 const handlePet = (name, data, mood, day, peckish, hungry, e) => {
   const { player, item, target, level, server } = e;
   const ageLastPet = data.getInt("ageLastPet");
@@ -194,7 +195,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       1,
       0.01
     );
-    global.giveExperience(server, player, "husbandry", 10);
+    global.giveExperience(server, player, "husbandry", 10 * hearts);
     if (!livableArea && !data.clockwork) {
       errorText = Text.translatable(
         "society.husbandry.crowded",

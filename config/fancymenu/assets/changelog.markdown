@@ -17,6 +17,7 @@
 - Season name in top left will give information on winter/infertile biomes
 - Increased auto-petter area 3x3x3 -> 5x5x5
 - Increased affection gain mult from animal fancy 1.5x -> 2x
+- Increased husbandry experience gain when petting 10 -> 10 * affection hearts
 - Increased mushroom trade prices to match new values
 - Increased Artisan Hopper & Fish Pond Basket runtime from 10s -> 30s for performance
 - Caroline now appreciates cooked dishes slightly more

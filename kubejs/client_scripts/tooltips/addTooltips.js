@@ -263,7 +263,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:the_quality_of_the_earth",
-      description: "Quality impacts of non-fish farmer products are doubled.",
+      description: "Quality impacts of non-fish farmer products on prices are doubled.",
     },
     {
       item: "society:the_red_and_the_black",

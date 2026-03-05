@@ -26,6 +26,7 @@
     }
   ],
   "lookup_history": [
+    "item:twigs:pebble",
     "item:quark:hollow_spruce_log",
     "item:society:large_goose_egg{quality_food:{effects:[],quality:3}}",
     "item:society:large_turkey_egg",
@@ -34,7 +35,6 @@
     "item:minecraft:blue_egg",
     "item:legendarycreatures:peacock_spider_spawn_egg",
     "item:minecraft:flint",
-    "item:twigs:pebble",
     "item:minecraft:golden_pickaxe{Damage:0}",
     "item:species:treeper_spawn_egg",
     "item:society:green_tea_honeycomb",
@@ -996,10 +996,10 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
-      "item:brewery:pork_knuckle",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
+      "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -1012,8 +1012,8 @@
     "item:veggiesdelight:raw_vegetarian_patty",
     [
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato",
-      "#item:forge:crops/zucchini"
+      "#item:forge:crops/zucchini",
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -1579,9 +1579,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "netherdepthsupgrade:eyeball",
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "minecraft:kjs/society_sun_candy",
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
+      "netherdepthsupgrade:eyeball"
     ],
     "tags": {},
     "resolutions": {
@@ -1592,18 +1592,18 @@
           "amount": 250
         }
       ],
-      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
-        {
-          "type": "fluid",
-          "id": "society:mystic_syrup",
-          "amount": 250
-        }
-      ],
       "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
         {
           "type": "fluid",
           "id": "minecraft:lava",
           "amount": 10
+        }
+      ],
+      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
+        {
+          "type": "fluid",
+          "id": "society:mystic_syrup",
+          "amount": 250
         }
       ]
     },
