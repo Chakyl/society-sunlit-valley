@@ -6,6 +6,7 @@ const artisanMachineCanHaveAdditionalOutput = [
   "society:seed_maker",
   "society:aging_cask",
   "society:mayonnaise_machine",
+  "society:wine_keg"
 ];
 
 global.handleAdditionalArtisanMachineOutputs = (
@@ -24,10 +25,10 @@ global.handleAdditionalArtisanMachineOutputs = (
           level,
           block,
           Ingredient.of("#society:loot_furniture").itemIds[
-            Math.floor(
-              Math.random() *
-                Ingredient.of("#society:loot_furniture").itemIds.length
-            )
+          Math.floor(
+            Math.random() *
+            Ingredient.of("#society:loot_furniture").itemIds.length
+          )
           ]
         );
       }
@@ -291,11 +292,11 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         (artisanMachine.id === "society:charging_rod"
           ? global.inventoryBelowHasRoom(level, block, chargingRodOutput)
           : recipes.has(recipe) &&
-            global.inventoryBelowHasRoomForAll(
-              level,
-              block,
-              recipes.get(recipe).output
-            )) &&
+          global.inventoryBelowHasRoomForAll(
+            level,
+            block,
+            recipes.get(recipe).output
+          )) &&
         global.hasInventoryItems(inventory, "society:sparkstone", 1)
       ) {
         server.runCommandSilent(
@@ -310,7 +311,6 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else if (hasInfinityWorm) {
-          console.log(machineOutputs)
           machineOutputs.push(
             Item.of("4x crabbersdelight:deluxe_crab_trap_bait")
           );
