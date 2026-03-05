@@ -26,6 +26,10 @@
     }
   ],
   "lookup_history": [
+    "item:minecraft:flint",
+    "item:twigs:pebble",
+    "item:minecraft:golden_pickaxe{Damage:0}",
+    "item:species:treeper_spawn_egg",
     "item:society:green_tea_honeycomb",
     "item:society:amulet_of_light",
     "item:society:giant_bandolier_belt",
@@ -530,11 +534,6 @@
     "item:meadow:fire_log",
     {
       "type": "item",
-      "id": "twigs:pebble",
-      "amount": 3
-    },
-    {
-      "type": "item",
       "id": "minecraft:raw_copper_block",
       "amount": 25
     },
@@ -991,11 +990,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:minecraft:cooked_porkchop",
-      "item:farmersdelight:cooked_bacon",
       "item:candlelight:pork_ribs",
       "item:farm_and_charm:bacon_with_eggs",
       "item:brewery:pork_knuckle",
+      "item:farmersdelight:cooked_bacon",
+      "item:minecraft:cooked_porkchop",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1006,16 +1005,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
+      "#item:forge:crops/cauliflower",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/cauliflower"
+      "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1469,18 +1468,7 @@
     "item:minecraft:grass_block",
     "item:society:aged_ghastly_grenache",
     "item:society:lunarite",
-    "item:society:slate",
-    {
-      "type": "item",
-      "id": "society:large_milk",
-      "amount": 10
-    },
-    {
-      "type": "item",
-      "id": "quark:diamond_heart",
-      "amount": 5
-    },
-    "item:bakery:chocolate_truffle"
+    "item:society:slate"
   ],
   "craft_history": [
     "minecraft:yellow_outer_counter_left_recipe_1",
@@ -1591,9 +1579,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "netherdepthsupgrade:eyeball",
       "minecraft:kjs/society_sun_candy",
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
+      "netherdepthsupgrade:eyeball"
     ],
     "tags": {},
     "resolutions": {
