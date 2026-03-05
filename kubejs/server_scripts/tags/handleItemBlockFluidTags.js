@@ -818,9 +818,6 @@ ServerEvents.tags("block", (e) => {
     e.add("oreganized:mineable/scribe", item);
   });
 
-  global.breakableFruits.forEach((item) => {
-    e.add("minecraft:sword_efficient", item);
-  });
   e.add("minecraft:mineable/axe", "beachparty:cabinet");
   e.add("minecraft:mineable/pickaxe", "bakery:iron_bench");
   e.add("minecraft:mineable/shovel", "vinery:dirt_path_slab");
