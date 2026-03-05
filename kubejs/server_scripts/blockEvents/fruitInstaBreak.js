@@ -1,6 +1,6 @@
 console.info("[SOCIETY] fruitInstaBreak.js loaded");
 
-global.breakableFruits = [
+BlockEvents.leftClicked([
   "pamhc2trees:pamcinnamon",
   "pamhc2trees:pamdragonfruit",
   "pamhc2trees:pamstarfruit",
@@ -16,14 +16,13 @@ global.breakableFruits = [
   "pamhc2trees:pamlemon",
   "pamhc2trees:pamcherry",
   "pamhc2trees:pamapple",
-]
-
-BlockEvents.leftClicked(global.breakableFruits, (e) => {
-  const { player, block } = e;
-  if (player.isFake()) return;
-  if (player.getHeldItem("main_hand").hasTag("forge:shears")) {
-    let fruitItem = Item.of(block.id);
-    block.popItem(fruitItem);
-    block.set("minecraft:air");
-  }
+], (e) => {
+    const { player, block, level, server } = e;
+    if (player.isFake()) return;
+    if (player.getHeldItem("main_hand").hasTag("forge:shears")) {
+        let fruitItem = Item.of(block.id);
+        server.runCommandSilent(`playsound minecraft:entity.sheep.shear block @a ${block.x} ${block.y} ${block.z}`);
+        block.popItem(fruitItem);
+        level.destroyBlock(block.pos, true, player);
+    }
 })
