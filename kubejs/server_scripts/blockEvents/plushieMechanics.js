@@ -24,7 +24,7 @@ BlockEvents.placed(global.plushies, (e) => {
         },
       });
     }
-    e.global.setBlockEntityData(block, nbt)
+    global.setBlockEntityData(e.block, nbt)
   }
 });
 

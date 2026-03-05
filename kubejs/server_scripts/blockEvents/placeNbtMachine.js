@@ -13,7 +13,7 @@ BlockEvents.placed("society:prize_machine", (e) => {
         prize: Number(prizeNbt.get("prize")),
       },
     });
-    e.global.setBlockEntityData(block, nbt)
+    global.setBlockEntityData(e.block, nbt)
   }
 });
 
@@ -58,6 +58,6 @@ BlockEvents.placed(
     const playerUUID = e.player.getUuid().toString();
     let nbt = e.block.entityData;
     nbt.merge({ data: { owner: playerUUID } });
-    e.global.setBlockEntityData(block, nbt)
+    global.setBlockEntityData(e.block, nbt)
   }
 );

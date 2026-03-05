@@ -26,6 +26,9 @@
     }
   ],
   "lookup_history": [
+    "item:society:green_tea_honeycomb",
+    "item:society:amulet_of_light",
+    "item:society:giant_bandolier_belt",
     "item:ribbits:toadstool",
     "item:rainbowoaks:rainbow_log",
     "item:cluttered:kitchen_set_yellow_counter_outer_corner_left",
@@ -63,7 +66,6 @@
     "item:society:chai_blend",
     "item:society:sun_candy",
     "item:society:ancient_cookie",
-    "item:society:giant_bandolier_belt",
     "item:society:pyrite",
     "item:society:omni_geode",
     "item:society:candied_animal_feed",
@@ -177,7 +179,6 @@
     "item:crittersandcompanions:red_panda_spawn_egg",
     "item:untitledduckmod:duck_spawn_egg",
     "item:minecraft:bee_spawn_egg",
-    "item:society:green_tea_honeycomb",
     "item:society:token_of_unity",
     "item:society:invitation{type:{id:\"society:market\"}}",
     "item:society:invitation{type:{id:\"society:carpenter\"}}",
@@ -990,11 +991,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:brewery:pork_knuckle",
       "item:minecraft:cooked_porkchop",
-      "item:candlelight:pork_ribs",
       "item:farmersdelight:cooked_bacon",
+      "item:candlelight:pork_ribs",
       "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1005,16 +1006,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
+      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/cauliflower",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1479,8 +1480,7 @@
       "id": "quark:diamond_heart",
       "amount": 5
     },
-    "item:bakery:chocolate_truffle",
-    "item:society:recycling_machine"
+    "item:bakery:chocolate_truffle"
   ],
   "craft_history": [
     "minecraft:yellow_outer_counter_left_recipe_1",

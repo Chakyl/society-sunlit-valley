@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
 // Priority: 1000
-global.getDay = (level) =>
-  Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 const artMachineTickRate = 20;
 
 const artMachineProgTime = 20;
@@ -1355,6 +1353,6 @@ global.getTaggedBlocksInRadius = (
 };
 
 global.setBlockEntityData = (block, nbt) => {
-  global.setBlockEntityData(block, nbt)
+  block.setEntityData(nbt);
   block.getEntity().setChanged();
 };

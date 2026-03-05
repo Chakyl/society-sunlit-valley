@@ -1039,6 +1039,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:scavenged_food_bag",
     Text.translatable("tooltip.society.right_click_open").gray()
   );
+    tooltip.add(
+    "species:treeper_spawn_egg",
+    Text.translatable("tooltip.society.treeper_spawn_egg").red()
+  );
   tooltip.add(
     "gag:time_sand_pouch",
     Text.translatable("tooltip.society.time_sand_pouch").red()

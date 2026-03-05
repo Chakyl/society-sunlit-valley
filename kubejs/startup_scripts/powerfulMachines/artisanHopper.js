@@ -554,7 +554,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(200, 0, (entity) => {
+      blockInfo.serverTick(600, 0, (entity) => {
         global.artisanHopperScan(entity, 3);
       }),
         blockInfo.rightClickOpensInventory();
@@ -607,7 +607,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(200, 0, (entity) => {
+      blockInfo.serverTick(600, 0, (entity) => {
         global.artisanHopperScan(entity, 1);
       }),
         blockInfo.rightClickOpensInventory();

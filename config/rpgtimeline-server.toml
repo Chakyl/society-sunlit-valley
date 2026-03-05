@@ -1,0 +1,124 @@
+
+[calendar]
+	#Names of the calendar months, in order.
+	#Any number of months is allowed (>= 1).
+	#If the list is missing or empty, the mod will fall back to its built-in defaults.
+	monthNames = ["Spring", "Summer", "Autumn", "Winter"]
+	#Optional month abbreviations to use in compact timeline labels.
+	#Each entry must match an existing month name and provide its abbreviation.
+	#Format: MonthName=Abbrev
+	#Examples:
+	#Dawnroot=Daw
+	#Shadowmere=Shd
+	#If empty or invalid, the mod falls back to the first 3 letters.
+	monthAbbreviations = []
+	#Year suffix string, e.g. "A.N." for "After Notch".
+	#Used when displaying dates like: Day 17 of Dawnroot, 112 A.N.
+	yearSuffix = "Y"
+	#How many in-game days each month lasts before progressing to the next month.
+	#This is server-authoritative and synced to clients.
+	#
+	#Examples:
+	#- Vanilla-ish fantasy default: 28
+	#- Perfect sync with Serene Seasons:
+	#  1) Set Serene Seasons config sub_season_duration = 16
+	#  2) Set daysPerMonth below to 24
+	#- Keep Serene Seasons defaults (sub_season_duration = 8):
+	#  * 8 months -> set daysPerMonth to 12 (96 days/year total)
+	#  * 12 months -> set daysPerMonth to 8
+	#  * 4 months -> set daysPerMonth to 24
+	#- More realistic RPG year (12 months at ~30 days):
+	#  1) Set Serene Seasons config sub_season_duration = 30
+	#  2) Set daysPerMonth below to 30
+	#  3) Ensure you have 12 monthNames above
+	#
+	#Valid range: 1..365
+	#Range: 1 ~ 365
+	daysPerMonth = 30
+	#If true, use the RPG Timeline custom font for the day popup.
+	#If false, use Minecraft's default font.
+	#
+	#This is server-authoritative and hot-reloadable.
+	useCustomFont = true
+	#If true and Serene Seasons is installed, use its season calendar for timeline particles.
+	#If false (or Serene Seasons is missing), the season-month mapping below is used instead.
+	useSereneSeasons = true
+	#Maps calendar months to seasons for timeline particles when Serene Seasons isn't used.
+	#Use 1-based month indices based on the current monthNames order.
+	#Format: season=monthIndex,monthIndex,...
+	#Seasons: spring, summer, autumn (or fall), winter
+	#Example (8 months):
+	#spring=1,2
+	#summer=3,4
+	#autumn=5,6
+	#winter=7,8
+	#If invalid or incomplete, defaults are used.
+	seasonMonths = ["spring=1,1", "summer=2,2", "autumn=3,3", "winter=4,4"]
+
+[chronicle]
+	#Custom chronicle goals (server-authoritative, hot-reloadable).
+	#Format: type|target|count|title|description|icon
+	#type: break_block, kill_mob, get_item
+	#target: registry id (block/item/mob), e.g. minecraft:stone
+	#count: number required (optional, defaults to 1). Multiple values can be separated with '&'.
+	#title/description/icon: optional overrides (icon is an item id)
+	#Each line is one entry.
+	#Examples:
+	#break_block|minecraft:stone|100|Stone Miner|Broke 100 stone blocks.|minecraft:stone
+	#kill_mob|minecraft:zombie|20|Zombie Exterminator|Killed 20 zombies.|minecraft:iron_sword
+	#get_item|minecraft:diamond|5|Diamond Cache|Obtained 5 diamonds.|minecraft:diamond
+	customGoals = "break_block|minecraft:stone|1&100&1000&10000\nbreak_block|minecraft:oak_log|1&100&1000&10000\nbreak_block|minecraft:coal_ore|1&100&1000&10000\nbreak_block|minecraft:iron_ore|1&100&1000&10000\nbreak_block|minecraft:diamond_ore|1&100&1000&10000\nkill_mob|minecraft:zombie|1&100&1000&10000\nkill_mob|minecraft:skeleton|1&100&1000&10000\nkill_mob|minecraft:creeper|1&100&1000&10000\nkill_mob|minecraft:enderman|1&100&1000&10000\nget_item|minecraft:iron_ingot|1&100&1000&10000\nget_item|minecraft:diamond|1&100&1000&10000\nget_item|minecraft:ender_pearl|1&100&1000&10000"
+	#Chronicle timeline entity overrides (server-authoritative, hot-reloadable).
+	#Each line is a semicolon-separated list of key=value pairs.
+	#Required keys: days and render=entity.
+	#Keys:
+	# - priority: higher wins when multiple rules match
+	# - days: total span width in days
+	# - alpha: 0..1 opacity
+	# - layer: entity
+	# - render: entity
+	# - entity: entity id for entity render
+	# - useTarget: true/false (use goal target as render id)
+	# - type: advancement, custom, any
+	# - worldFirst: true/false (advancement only)
+	# - id: exact advancement id match
+	# - idPattern: glob pattern for advancement ids, e.g. minecraft:nether/*
+	# - namespace: glob pattern for namespace, e.g. minecraft or *
+	# - keywords: comma-separated list of keywords to match title/details/id
+	# - goalType: break_block, kill_mob, get_item (custom goals)
+	# - target: registry id (custom goals)
+	# - minCount/maxCount: numeric thresholds (custom goals)
+	#
+	#Examples:
+	#priority=100;days=4;layer=entity;render=entity;type=advancement;id=minecraft:end/kill_dragon;entity=minecraft:ender_dragon
+	#priority=30;days=3;layer=entity;render=entity;useTarget=true;type=custom;goalType=kill_mob;target=minecraft:zombie
+	eventTimeframes = "# Entity overrides (render 3D models instead of category background)\npriority=100;days=4;alpha=0.45;layer=entity;render=entity;type=advancement;id=minecraft:end/kill_dragon;entity=minecraft:ender_dragon\npriority=95;days=4;alpha=0.45;layer=entity;render=entity;type=advancement;id=minecraft:nether/summon_wither;entity=minecraft:wither\npriority=90;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;id=minecraft:nether/get_wither_skull;entity=minecraft:wither_skeleton\npriority=85;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;keywords=elder guardian;entity=minecraft:elder_guardian\npriority=80;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;keywords=raid;entity=minecraft:ravager\npriority=75;days=3;alpha=0.45;layer=entity;render=entity;type=advancement;keywords=warden;entity=minecraft:warden"
+	#If true, allows running retroactive advancement import via command:
+	#/rpgtimeline retroimport advancements
+	#Import is idempotent: already-present actor+advancement pairs are skipped.
+	retroactiveAdvancementImportEnabled = true
+	#If true, includes recipe advancement ids (namespace:recipes/*) in retroactive import.
+	#Recommended: keep false to avoid recipe-book noise.
+	retroactiveAdvancementImportIncludeRecipes = false
+	#If true, imported entries map wall-clock completion times to timeline dayIndex
+	#using world real-time age: worldStart..serverNow is scaled to 0..currentDayIndex,
+	#then each advancement timestamp is projected into that day range.
+	#If false, imported entries use the current timeline day.
+	retroactiveAdvancementImportMapByRealDays = true
+	#Maximum world-first advancement chat announcements allowed per player within the player window.
+	#Set to 0 to disable per-player rate limiting.
+	#Range: 0 ~ 1000
+	advancementAnnouncementPlayerMaxCount = 1
+	#Tick window for per-player world-first advancement announcement rate limiting.
+	#Example: 200 ticks = 10 seconds.
+	#Range: 1 ~ 72000
+	advancementAnnouncementPlayerWindowTicks = 24000
+	#Maximum world-first advancement chat announcements allowed globally within the global window.
+	#Set to 0 to disable global rate limiting.
+	#Range: 0 ~ 10000
+	advancementAnnouncementGlobalMaxCount = 1
+	#Tick window for global world-first advancement announcement rate limiting.
+	#Example: 200 ticks = 10 seconds.
+	#Range: 1 ~ 72000
+	advancementAnnouncementGlobalWindowTicks = 24000
+
