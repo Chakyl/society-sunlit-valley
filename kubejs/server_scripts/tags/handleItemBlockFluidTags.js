@@ -261,8 +261,8 @@ const rawLogs = [
   "cluttered:fluorescent_maple_log",
   "cluttered:blue_mushroom_log",
   "cluttered:red_mushroom_log",
-  "rainbowoaks:rainbow_log", 
-  "minecraft:warped_stem", 
+  "rainbowoaks:rainbow_log",
+  "minecraft:warped_stem",
   "minecraft:crimson_stem"
 ]
 ServerEvents.tags("item", (e) => {
@@ -455,9 +455,11 @@ ServerEvents.tags("item", (e) => {
     "society:large_duck_egg",
     "society:large_goose_egg",
     "society:large_turkey_egg",
-  ].forEach((egg) => {
-    e.add("society:large_eggs", egg);
-  });
+    "society:large_galliraptor_egg", 
+    "society:penguin_egg", 
+    "society:flamingo_egg"].forEach((egg) => {
+      e.add("society:large_eggs", egg);
+    });
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });

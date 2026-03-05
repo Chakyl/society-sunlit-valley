@@ -6,7 +6,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
-    .box(0, 0, 0, 18, 2, 18)
+    .box(1, 0, 1, 15, 2, 15)
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.gray("Brings the invited villager to its housing and sets its home point."));

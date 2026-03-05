@@ -494,6 +494,8 @@ global.crops = [
 global.animalProducts = [
   // Eggs
   { item: "minecraft:egg", value: 4 },
+  { item: "minecraft:brown_egg", value: 4 },
+  { item: "minecraft:blue_egg", value: 4 },
   { item: "untitledduckmod:duck_egg", value: 8 },
   { item: "untitledduckmod:goose_egg", value: 16 },
   { item: "autumnity:turkey_egg", value: 32 },

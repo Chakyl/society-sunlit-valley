@@ -195,7 +195,7 @@ global.artisanHarvest = (
       );
     }
     let nbt = block.getEntityData();
-    let hasQuality = nbt.data.quality !== undefined;
+    let hasQuality = nbt.data.quality !== undefined && Number(nbt.data.quality) > 0;
     recipes.get(nbt.data.recipe).output.forEach((id) => {
       harvestOutput = Item.of(
         id,

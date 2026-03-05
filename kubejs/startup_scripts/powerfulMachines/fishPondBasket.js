@@ -95,6 +95,7 @@ StartupEvents.registry("block", (event) => {
       item.modelJson({
         parent: "society:block/kubejs/fish_pond_basket",
       });
+      item.fireResistant(true);
     })
     .soundType("copper")
     .model("society:block/kubejs/fish_pond_basket")
@@ -112,7 +113,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(200, 0, (entity) => {
+      blockInfo.serverTick(600, 0, (entity) => {
         const { block, level } = entity;
         const { x, y, z } = block;
         const radius = 1;

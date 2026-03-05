@@ -26,6 +26,13 @@
     }
   ],
   "lookup_history": [
+    "item:quark:hollow_spruce_log",
+    "item:society:large_goose_egg{quality_food:{effects:[],quality:3}}",
+    "item:society:large_turkey_egg",
+    "item:society:large_egg",
+    "item:society:large_galliraptor_egg",
+    "item:minecraft:blue_egg",
+    "item:legendarycreatures:peacock_spider_spawn_egg",
     "item:minecraft:flint",
     "item:twigs:pebble",
     "item:minecraft:golden_pickaxe{Damage:0}",
@@ -403,7 +410,6 @@
     "item:minecraft:glass",
     "item:minecraft:glass_pane",
     "item:oreganized:magenta_crystal_glass",
-    "item:quark:hollow_spruce_log",
     "item:farmersdelight:netherite_knife{Damage:0}",
     "item:wildernature:stylin_purple_hat{Damage:0}",
     "item:minecraft:stripped_spruce_wood",
@@ -991,9 +997,9 @@
     "item:veggiesdelight:zucchini_quiche",
     [
       "item:candlelight:pork_ribs",
-      "item:farm_and_charm:bacon_with_eggs",
-      "item:brewery:pork_knuckle",
       "item:farmersdelight:cooked_bacon",
+      "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
       "item:minecraft:cooked_porkchop",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
@@ -1006,15 +1012,15 @@
     "item:veggiesdelight:raw_vegetarian_patty",
     [
       "#item:forge:crops/cauliflower",
-      "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/potato",
+      "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:roasted_zucchini",
       "item:veggiesdelight:smoked_bellpepper",
+      "item:veggiesdelight:roasted_zucchini",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1462,13 +1468,7 @@
     "item:society:fire_opal",
     "item:society:pristine_esperite",
     "item:society:esperite",
-    "item:cluttered:willow_log",
-    "item:society:pristine_fluorapatite",
-    "item:minecraft:basalt",
-    "item:minecraft:grass_block",
-    "item:society:aged_ghastly_grenache",
-    "item:society:lunarite",
-    "item:society:slate"
+    "item:cluttered:willow_log"
   ],
   "craft_history": [
     "minecraft:yellow_outer_counter_left_recipe_1",
@@ -1579,12 +1579,19 @@
   ],
   "recipe_defaults": {
     "added": [
+      "netherdepthsupgrade:eyeball",
       "minecraft:kjs/society_sun_candy",
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
-      "netherdepthsupgrade:eyeball"
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
     ],
     "tags": {},
     "resolutions": {
+      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
+        {
+          "type": "fluid",
+          "id": "create_central_kitchen:aloe_gel",
+          "amount": 250
+        }
+      ],
       "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
         {
           "type": "fluid",
@@ -1597,13 +1604,6 @@
           "type": "fluid",
           "id": "minecraft:lava",
           "amount": 10
-        }
-      ],
-      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
-        {
-          "type": "fluid",
-          "id": "create_central_kitchen:aloe_gel",
-          "amount": 250
         }
       ]
     },

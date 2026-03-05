@@ -118,7 +118,7 @@ const villagerSpecificGifts = new Map([
     ["banker", {
         loved: ["society:legendary_ink", "wildernature:bison_horn", "candlelight:beef_wellington", "society:aged_goat_cheese_block", "meadow:goat_cheese_block"],
         liked: ["society:truffle_oil", "meadow:piece_of_goat_cheese", "society:mystic_syrup", "windswept:goat_stew", "society:ancient_vespertine"],
-        neutral: [],
+        neutral: ["#society:dish"],
         disliked: ["#society:farmer_product"],
         hated: ["society:energy_drink", "supplementaries:candy"],
     }],
@@ -170,11 +170,11 @@ const includesItemOrHasTag = (array, item) => {
 global.getVillagerGiftResult = (npcId, gift) => {
     const giftDefs = villagerSpecificGifts.get(npcId)
     if (giftDefs) {
-        if (includesItemOrHasTag(giftDefs.hated, gift)) return "hated";
-        if (includesItemOrHasTag(giftDefs.disliked, gift)) return "disliked";
-        if (includesItemOrHasTag(giftDefs.neutral, gift)) return "neutral";
-        if (includesItemOrHasTag(giftDefs.liked, gift)) return "liked";
         if (includesItemOrHasTag(giftDefs.loved, gift)) return "loved";
+        if (includesItemOrHasTag(giftDefs.liked, gift)) return "liked";
+        if (includesItemOrHasTag(giftDefs.neutral, gift)) return "neutral";
+        if (includesItemOrHasTag(giftDefs.disliked, gift)) return "disliked";
+        if (includesItemOrHasTag(giftDefs.hated, gift)) return "hated";
     }
     if (includesItemOrHasTag(UNIVERSAL_HATED, gift)) return "hated";
     if (includesItemOrHasTag(UNIVERSAL_DISLIKED, gift)) return "disliked";
