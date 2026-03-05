@@ -820,25 +820,6 @@ ServerEvents.tags("block", (e) => {
     e.add("oreganized:mineable/scribe", item);
   });
 
-  [
-    "pamhc2trees:pamcinnamon",
-    "pamhc2trees:pamdragonfruit",
-    "pamhc2trees:pamstarfruit",
-    "pamhc2trees:pamlychee",
-    "pamhc2trees:pampassionfruit",
-    "pamhc2trees:pammango",
-    "pamhc2trees:pambanana",
-    "pamhc2trees:pampawpaw",
-    "pamhc2trees:pamhazelnut",
-    "pamhc2trees:pamorange",
-    "pamhc2trees:pamplum",
-    "pamhc2trees:pampeach",
-    "pamhc2trees:pamlemon",
-    "pamhc2trees:pamcherry",
-    "pamhc2trees:pamapple",
-  ].forEach((item) => {
-    e.add("minecraft:sword_efficient", item);
-  });
   e.add("minecraft:mineable/axe", "beachparty:cabinet");
   e.add("minecraft:mineable/pickaxe", "bakery:iron_bench");
   e.add("minecraft:mineable/shovel", "vinery:dirt_path_slab");
