@@ -4,7 +4,23 @@
 ^^^
 --- 
 ## 4.0.4
-- Added some es_es translations (for real this time)
+- Added plushie wand functionality: Left clicking to instantly break plushies
+- Added syncing for time, season, and day popups on login every 30 days
+- Added some es_es translations (for real this time (Thanks Tukita & Markis_nub))
+- Added ability to make blueprints translatable (Thanks Thirace446)
+- Updated ko_kr translation (Thanks Hexagreen)
+- Increased auto-petter area 3x3x3 -> 5x5x5
+- Increased affection gain mult from animal fancy 1.5x -> 2x
+- Increased mushroom trade prices to match new values
+- Fixed Splendid Slimes being carryonable
+- Fixed Plushie Wand potentially causing chunk corruption
+- Fixed Plushie Wand extracting the wrong type of Wooly Cow
+- Fixed Cruncher being listed as Red Panda
+- Fixed Snails and Turtles not dropping quality
+- Fixed deployers being able to right click npcs
+- Fixed Gray Anatomy upgrade not working with Artisan Hoppers
+- Fixed Mushroom Log not being harvested by Artisan Hoppers (Thanks Mayhan zvabnyk's BF)
+- Fixed Black Opal not working properly + general legacy artisan machine cleanup (Thanks Mayhan zvabnyk's BF)
 
 ## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
