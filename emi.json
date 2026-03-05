@@ -26,6 +26,9 @@
     }
   ],
   "lookup_history": [
+    "item:ribbits:toadstool",
+    "item:rainbowoaks:rainbow_log",
+    "item:cluttered:kitchen_set_yellow_counter_outer_corner_left",
     "item:cluttered:fluorescent_maple_fence_gate",
     "item:cluttered:flowering_crabapple_pressure_plate",
     "item:cluttered:fly_agaric",
@@ -206,7 +209,7 @@
     "item:society:ribbit_hut_block",
     "item:justhammers:small_core",
     "item:justhammers:stone_hammer{Damage:0}",
-    "item:justhammers:iron_hammer{Damage:0,Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:fortune\",lvl:3s}],RepairCost:0,display:{Name:\u0027{\"text\":\"§6Aiden\\\u0027s Hammer\"}\u0027}}",
+    "item:justhammers:iron_hammer{Damage:0,Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:fortune\",lvl:3s}],RepairCost:0,display:{Name:\u0027{\"text\":\"ï¿½6Aiden\\\u0027s Hammer\"}\u0027}}",
     "item:society:universal_methods_of_farming",
     "item:waystones:waystone",
     "item:society:slouching_towards_artistry",
@@ -324,7 +327,6 @@
     "item:botania:rainbow_rod",
     "item:everycomp:rfm/rainbowoaks/rainbow_hedge",
     "item:everycomp:q/rainbowoaks/rainbow_leaf_carpet",
-    "item:rainbowoaks:rainbow_log",
     "item:minecraft:painting{EntityTag:{variant:\"portfolio:rainbows_alt\"}}",
     "item:create:brass_ingot",
     "item:society:prismatic_shard_block",
@@ -789,11 +791,6 @@
     },
     {
       "type": "item",
-      "id": "ribbits:toadstool",
-      "amount": 4
-    },
-    {
-      "type": "item",
       "id": "minecraft:brown_mushroom",
       "amount": 2
     },
@@ -993,11 +990,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
+      "item:brewery:pork_knuckle",
       "item:minecraft:cooked_porkchop",
       "item:candlelight:pork_ribs",
-      "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:farmersdelight:cooked_bacon",
+      "item:farm_and_charm:bacon_with_eggs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1016,8 +1013,8 @@
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1483,10 +1480,10 @@
       "amount": 5
     },
     "item:bakery:chocolate_truffle",
-    "item:society:recycling_machine",
-    "item:society:merino_wool"
+    "item:society:recycling_machine"
   ],
   "craft_history": [
+    "minecraft:yellow_outer_counter_left_recipe_1",
     "minecraft:kjs/society_dehydrator",
     "minecraft:kjs/society_mushroom_log",
     "minecraft:kjs/society_sunlit_pearl",
@@ -1594,9 +1591,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "netherdepthsupgrade:eyeball",
-      "minecraft:kjs/society_sun_candy"
+      "minecraft:kjs/society_sun_candy",
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
     ],
     "tags": {},
     "resolutions": {

@@ -82,7 +82,7 @@ BlockEvents.placed("society:villager_home", (e) => {
             placer: player.getUuid().toString(),
           },
         });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
         player.tell(
           Text.translatable(
             "society.villager_home.moved_in",

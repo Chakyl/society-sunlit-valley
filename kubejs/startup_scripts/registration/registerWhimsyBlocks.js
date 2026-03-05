@@ -98,7 +98,7 @@ StartupEvents.registry("block", (e) => {
       const { x, y, z } = block;
       let nbt = block.getEntityData();
       block.set("whimsy_deco:adv_singing_frog_plushie", block.properties);
-      block.setEntityData(nbt);
+      global.setBlockEntityData(block, nbt)
       server.runCommandSilent(
         `execute positioned ${x} ${y} ${z} run stopsound @e[type=player,distance=..4] block`
       );

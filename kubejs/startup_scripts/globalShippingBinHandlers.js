@@ -374,7 +374,7 @@ global.cacheShippingBin = (entity) => {
       });
       let nbt = block.getEntityData();
       nbt.merge({ data: { attributes: newAttributes, stages: stages } });
-      block.setEntityData(nbt);
+      global.setBlockEntityData(block, nbt)
       binPlayer = p;
     }
   });

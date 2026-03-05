@@ -24,32 +24,41 @@ BlockEvents.placed(global.plushies, (e) => {
         },
       });
     }
-    e.block.setEntityData(nbt);
+    e.global.setBlockEntityData(block, nbt)
   }
 });
 
-BlockEvents.broken(global.plushies, (e) => {
-  const { block } = e;
+const breakPlushie = (block, wandReset) => {
   let nbt = block.getEntityData();
   const { type, quest_id, affection, quality, animal } = nbt.data;
   let baseItem = Item.of(
     block.id,
     `{quality_food:{quality:${quality}},type:${type},quest_id:${quest_id},affection:${affection}}`
   );
-  block.popItem(
-    animal
-      ? Item.of(
-        block.id,
-        global.getPlushieItemNbt(
-          baseItem.getNbt(),
-          animal.type,
-          animal.name,
-          animal,
-          animal
+  if (wandReset) {
+    block.popItem(baseItem);
+  } else {
+    block.popItem(
+      animal && !animal.isEmpty()
+        ? Item.of(
+          block.id,
+          global.getPlushieItemNbt(
+            baseItem.getNbt(),
+            animal.type,
+            animal.name,
+            animal,
+            animal
+          )
         )
-      )
-      : baseItem
-  );
+        : baseItem
+
+    );
+
+  }
+}
+
+BlockEvents.broken(global.plushies, (e) => {
+  breakPlushie(e.block)
 });
 
 BlockEvents.broken("whimsy_deco:sunlit_singing_frog", (e) => {
@@ -112,19 +121,22 @@ BlockEvents.rightClicked(global.plushies, (e) => {
     let nbt = block.getEntityData();
     const { animal } = nbt.data;
     if (animal && animal.type) {
-
       let newAnimal = player.level.createEntity(`${animal.type}`);
       newAnimal.setX(block.getX());
       newAnimal.setY(block.getY() + 1);
       newAnimal.setZ(block.getZ());
       if (animal.name) newAnimal.customName = animal.name
-      if (animal.Variant) newAnimal.nbt.Variant = animal.Variant
+      if (animal.Variant) {
+        let variantNBT = newAnimal.getNbt();
+        variantNBT.Variant = animal.Variant;
+        newAnimal.setNbt(variantNBT);
+      }
       newAnimal.spawn();
       global.setPlushieExtractedPD(newAnimal, animal)
-      nbt.data.animal = undefined;
-      block.setEntityData(nbt);
+      breakPlushie(block, true)
+      block.set("minecraft:air")
       server.runCommandSilent(
-        `playsound botania:babylon_spawn block @a ${player.x} ${player.y} ${player.z}`
+        `playsound botania:babylon_spawn block @a ${block.x} ${block.y} ${block.z}`
       );
       level.spawnParticles(
         "snowyspirit:glow_light",
@@ -143,6 +155,30 @@ BlockEvents.rightClicked(global.plushies, (e) => {
         Text.translatable("item.society.plushie_wand.no_animal").red()
       );
     }
-    global.addItemCooldown(player, item.id, 1);
+    global.addItemCooldown(player, item.id, 5);
+  }
+});
+
+BlockEvents.leftClicked(global.plushies, (e) => {
+  const { player, block, level, server } = e;
+  if (player.getHeldItem("main_hand").id.equals("society:plushie_wand") && !player.cooldowns.isOnCooldown("society:plushie_wand")) {
+    breakPlushie(block)
+    block.set("minecraft:air")
+    server.runCommandSilent(
+      `playsound botania:babylon_attack block @a ${block.x} ${block.y} ${block.z}`
+    );
+    level.spawnParticles(
+      "snowyspirit:glow_light",
+      true,
+      block.x,
+      block.y + 0.5,
+      block.z,
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      20,
+      2
+    );
+    global.addItemCooldown(player, "society:plushie_wand", 5);
   }
 });

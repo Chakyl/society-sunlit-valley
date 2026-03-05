@@ -17,7 +17,7 @@ global.plushieRightClick = (click) => {
               type: index,
             },
           });
-          block.setEntityData(nbt);
+          global.setBlockEntityData(block, nbt)
         }
       })
     }
@@ -31,7 +31,7 @@ global.plushieRightClick = (click) => {
             affection: 2,
           },
         });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
         level.spawnParticles(
           "minecraft:heart",
           true,
@@ -84,7 +84,7 @@ global.plushieRightClick = (click) => {
               block.properties.get("facing")
             );
           }
-          block.setEntityData(nbt);
+          global.setBlockEntityData(block, nbt)
           player.tell(Text.translatable("society.plushie.thank").gray());
         } else {
           player.tell(Text.translatable("society.plushie.want_gift").gray());
@@ -99,7 +99,7 @@ global.plushieRightClick = (click) => {
           `playsound species:music.disk.spawner block @a ${x} ${y} ${z}`
         );
         block.set("whimsy_deco:sunlit_singing_frog", block.properties);
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
         server.scheduleInTicks(0, () => {
           server.scheduleInTicks(2740, () => {
             if (
@@ -109,7 +109,7 @@ global.plushieRightClick = (click) => {
                 "whimsy_deco:adv_singing_frog_plushie",
                 block.properties
               );
-              block.setEntityData(nbt);
+              global.setBlockEntityData(block, nbt)
             }
           });
         });

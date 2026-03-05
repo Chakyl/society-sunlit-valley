@@ -628,6 +628,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:magic_tunnel",
     Text.translatable("item.society.magic_rope.description.warn").red()
   );
+  tooltip.add(
+    "society_trading:auto_trader",
+    Text.translatable("item.society_trading.auto_trader.description").gray()
+  );
   // Fertilizers
   tooltip.add(
     "dew_drop_farmland_growth:weak_fertilizer",
@@ -1382,7 +1386,7 @@ ItemEvents.tooltip((tooltip) => {
     "gag:escape_rope",
     Text.translatable("tooltip.society.escape_rope_hold").red()
   );
-    tooltip.add(
+  tooltip.add(
     "society:face_note",
     Text.translatable("tooltip.society.face_note").green()
   );

@@ -340,7 +340,7 @@ global.handleFishExtraction = (block, player, server) => {
       },
     });
 
-    block.setEntityData(nbt);
+    global.setBlockEntityData(block, nbt)
   }
   return result;
 };
@@ -428,7 +428,7 @@ global.convertPondFromLegacy = (block) => {
     ];
     if (newRecipe) {
       nbt.merge({ data: { type: newRecipe } });
-      block.setEntityData(nbt);
+      global.setBlockEntityData(block, nbt)
     }
   }
 };
@@ -529,24 +529,24 @@ global.handleFishPondTick = (tickEvent) => {
             )}`,
           },
         });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
       } else if (population < max_population) {
         successParticles(level, block);
         level.server.runCommandSilent(
           `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`,
         );
         nbt.merge({ data: { population: increaseStage(population) } });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
       } else if (population > max_population) {
         nbt.merge({ data: { population: max_population } });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
       }
 
       if (population === max_population && non_native_fish > 0) {
         nbt.merge({
           data: { non_native_fish: decreaseStage(non_native_fish) },
         });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
       }
     }
   }
