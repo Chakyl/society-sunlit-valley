@@ -1,0 +1,185 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:charizard",
+      "gender": "MALE",
+      "level": 51,
+      "nature": "cobblemon:relaxed",
+      "ability": "blaze",
+      "moveset": [
+        "firespin",
+        "scaryface",
+        "flameburst",
+        "flamethrower"
+      ],
+      "ivs": {
+        "hp": 26,
+        "attack": 13,
+        "special_attack": 24,
+        "special_defence": 14,
+        "speed": 14
+      },
+      "evs": {
+        "hp": 28,
+        "attack": 20,
+        "special_attack": 7,
+        "special_defence": 10,
+        "speed": 6
+      },
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:roserade",
+      "gender": "MALE",
+      "level": 40,
+      "nature": "cobblemon:hasty",
+      "ability": "poisonpoint",
+      "moveset": [
+        "worryseed",
+        "weatherball",
+        "venomdrench",
+        "toxicspikes"
+      ],
+      "ivs": {
+        "hp": 16,
+        "defence": 11,
+        "special_attack": 2,
+        "special_defence": 31,
+        "speed": 5
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:torterra",
+      "gender": "MALE",
+      "level": 40,
+      "nature": "cobblemon:rash",
+      "ability": "overgrow",
+      "moveset": [
+        "synthesis",
+        "leechseed",
+        "megadrain",
+        "bite"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 5,
+        "special_attack": 13,
+        "special_defence": 25,
+        "speed": 30
+      },
+      "evs": {
+        "attack": 1
+      },
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:chesnaught",
+      "gender": "MALE",
+      "level": 40,
+      "nature": "cobblemon:quiet",
+      "ability": "overgrow",
+      "moveset": [
+        "seedbomb",
+        "takedown",
+        "pinmissile",
+        "leechseed"
+      ],
+      "ivs": {
+        "hp": 6,
+        "attack": 14,
+        "defence": 13,
+        "special_attack": 16,
+        "special_defence": 30,
+        "speed": 9
+      },
+      "evs": {
+        "special_attack": 2
+      },
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:rillaboom",
+      "gender": "MALE",
+      "level": 42,
+      "nature": "cobblemon:rash",
+      "ability": "overgrow",
+      "moveset": [
+        "branchpoke",
+        "drumbeating",
+        "knockoff",
+        "razorleaf"
+      ],
+      "ivs": {
+        "hp": 28,
+        "attack": 11,
+        "defence": 4,
+        "special_attack": 14,
+        "special_defence": 17,
+        "speed": 14
+      },
+      "evs": {
+        "attack": 2,
+        "speed": 7
+      },
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:blastoise",
+      "gender": "MALE",
+      "level": 23,
+      "nature": "cobblemon:adamant",
+      "ability": "torrent",
+      "moveset": [
+        "withdraw",
+        "watergun",
+        "tailwhip",
+        "tackle"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 28,
+        "defence": 7,
+        "special_attack": 3,
+        "special_defence": 31,
+        "speed": 16
+      },
+      "evs": {
+        "attack": 1,
+        "speed": 2
+      },
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

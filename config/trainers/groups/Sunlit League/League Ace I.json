@@ -1,0 +1,158 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:foongus",
+      "gender": "FEMALE",
+      "level": 1,
+      "nature": "cobblemon:lax",
+      "ability": "effectspore",
+      "moveset": [
+        "astonish",
+        "absorb"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 29,
+        "defence": 17,
+        "special_attack": 9,
+        "special_defence": 6,
+        "speed": 17
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": []
+    },
+    {
+      "species": "cobblemon:trevenant",
+      "gender": "FEMALE",
+      "level": 27,
+      "nature": "cobblemon:impish",
+      "ability": "harvest",
+      "moveset": [
+        "earthquake",
+        "shadowclaw",
+        "leechseed",
+        "willowisp"
+      ],
+      "ivs": {
+        "hp": 27,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 28,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": []
+    },
+    {
+      "species": "cobblemon:sudowoodo",
+      "gender": "MALE",
+      "level": 1,
+      "nature": "cobblemon:bold",
+      "ability": "sturdy",
+      "moveset": [
+        "woodhammer",
+        "stoneedge",
+        "slam",
+        "rockthrow"
+      ],
+      "ivs": {
+        "hp": 17,
+        "attack": 26,
+        "defence": 25,
+        "special_attack": 3,
+        "special_defence": 17,
+        "speed": 24
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": []
+    },
+    {
+      "species": "cobblemon:pumpkaboo",
+      "gender": "MALE",
+      "level": 1,
+      "nature": "cobblemon:sassy",
+      "ability": "frisk",
+      "moveset": [
+        "trickortreat",
+        "astonish"
+      ],
+      "ivs": {
+        "hp": 24,
+        "attack": 16,
+        "defence": 5,
+        "special_attack": 30,
+        "special_defence": 2,
+        "speed": 15
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "pumpkin-size-super"
+      ]
+    },
+    {
+      "species": "cobblemon:ferroseed",
+      "gender": "MALE",
+      "level": 1,
+      "nature": "cobblemon:relaxed",
+      "ability": "ironbarbs",
+      "moveset": [
+        "tackle",
+        "harden"
+      ],
+      "ivs": {
+        "hp": 2,
+        "defence": 7,
+        "special_attack": 17,
+        "special_defence": 31,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": []
+    },
+    {
+      "species": "cobblemon:thwackey",
+      "gender": "MALE",
+      "level": 1,
+      "nature": "cobblemon:lonely",
+      "ability": "overgrow",
+      "moveset": [
+        "taunt",
+        "scratch",
+        "growl",
+        "branchpoke"
+      ],
+      "ivs": {
+        "hp": 17,
+        "attack": 14,
+        "defence": 3,
+        "special_attack": 15,
+        "special_defence": 28,
+        "speed": 26
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": []
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

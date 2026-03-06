@@ -4479,6 +4479,40 @@
             ]
         },
         {
+            "pakku_id": "hBqaIZSVSx7qnh1r",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "e19-cobblemon-minimap-icons"
+            },
+            "name": {
+                "curseforge": "E19 - Cobblemon Minimap Icons"
+            },
+            "id": {
+                "curseforge": "958737"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "E19 Cobblemon Minimap Icons.zip",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6425/309/E19 Cobblemon Minimap Icons.zip",
+                    "id": "6425309",
+                    "parent_id": "958737",
+                    "hashes": {
+                        "sha1": "eda87468b681d4254fdf7f1b953c76c7c9b0e6c9",
+                        "md5": "92111e787e7a744c4fe7ae53348ecd83"
+                    },
+                    "required_dependencies": [],
+                    "size": 9082423,
+                    "date_published": "2025-04-15T10:56:10.073Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "G8PY4TgHrc0mTsSS",
             "type": "MOD",
             "slug": {
@@ -5253,6 +5287,49 @@
                     ],
                     "size": 1158842,
                     "date_published": "2025-04-17T08:07:07.033Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "lL2aEJ0AU7VsM3gP",
+            "pakku_links": [
+                "C08Uky0tNFxJ90MG",
+                "GFhUhyMlIM6meeOb"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftbxaerocompat"
+            },
+            "name": {
+                "curseforge": "FTB Chunks x Xaero's Compat"
+            },
+            "id": {
+                "curseforge": "1357724"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftbxaerocompat-forge-1.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7655/63/ftbxaerocompat-forge-1.1.3.jar",
+                    "id": "7655063",
+                    "parent_id": "1357724",
+                    "hashes": {
+                        "sha1": "8a3c74b6a5e285ec755097a76a97a469f2490726",
+                        "md5": "84d22e4c5ea26ee46af69b4caff9ad8c"
+                    },
+                    "required_dependencies": [
+                        "314906",
+                        "317780"
+                    ],
+                    "size": 737596,
+                    "date_published": "2026-02-20T20:20:39.643Z"
                 }
             ]
         },
@@ -6779,45 +6856,6 @@
             ]
         },
         {
-            "pakku_id": "rjhHlqhCm4YBuwyT",
-            "type": "RESOURCE_PACK",
-            "slug": {
-                "curseforge": "icon-journey"
-            },
-            "name": {
-                "curseforge": "Icon Journey"
-            },
-            "id": {
-                "curseforge": "978219"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Icon Journey 1.1.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5656/300/Icon Journey 1.1.zip",
-                    "id": "5656300",
-                    "parent_id": "978219",
-                    "hashes": {
-                        "sha1": "0808ae731fec2c634720e82d0eb1b174202df19f",
-                        "md5": "710e4009d3f5245cccec4dd25da1016b"
-                    },
-                    "required_dependencies": [],
-                    "size": 17646309,
-                    "date_published": "2024-08-23T16:13:33.850Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Zaj0uJ3sNKLJE0jx",
             "type": "MOD",
             "side": "CLIENT",
@@ -7084,118 +7122,6 @@
                     "required_dependencies": [],
                     "size": 552486,
                     "date_published": "2025-08-06T14:19:52.700Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "gW9CW0bs5FmiagOp",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "journeymap"
-            },
-            "name": {
-                "curseforge": "JourneyMap"
-            },
-            "id": {
-                "curseforge": "32274"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "journeymap-1.20.1-5.10.3-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5789/363/journeymap-1.20.1-5.10.3-forge.jar",
-                    "id": "5789363",
-                    "parent_id": "32274",
-                    "hashes": {
-                        "sha1": "d0bbe7c23049892b154b6417904dd027fb53a37a",
-                        "md5": "2181bd6b7161f06726560b9382235611"
-                    },
-                    "required_dependencies": [],
-                    "size": 7160405,
-                    "date_published": "2024-10-06T18:58:45.910Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "DDD6TNymgZakEc09",
-            "type": "RESOURCE_PACK",
-            "slug": {
-                "curseforge": "journeymap-extended-mob-icons"
-            },
-            "name": {
-                "curseforge": "JourneyMap Extended Mob Icons"
-            },
-            "id": {
-                "curseforge": "985057"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "JourneyMap Extended Mob Icons v2.0.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5170/422/JourneyMap Extended Mob Icons v2.0.zip",
-                    "id": "5170422",
-                    "parent_id": "985057",
-                    "hashes": {
-                        "sha1": "3728f18a6f53d6b4e8c023a77d3342b4e373a5ab",
-                        "md5": "12e961e0a647958bbcf93dabcc5043bb"
-                    },
-                    "required_dependencies": [],
-                    "size": 65610,
-                    "date_published": "2024-03-09T23:28:06.960Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "cxefxoPf2ySXTbwV",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "journeymap-integration"
-            },
-            "name": {
-                "curseforge": "JourneyMap Integration"
-            },
-            "id": {
-                "curseforge": "525447"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "jmi-forge-1.20.1-0.14-48.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5510/356/jmi-forge-1.20.1-0.14-48.jar",
-                    "id": "5510356",
-                    "parent_id": "525447",
-                    "hashes": {
-                        "sha1": "f2be323d589b953eaa303f8b74913831a5a9b77b",
-                        "md5": "9ca3febdf066b2dd900ab6c0c59852e1"
-                    },
-                    "required_dependencies": [
-                        "32274"
-                    ],
-                    "size": 69022,
-                    "date_published": "2024-07-07T11:46:16.467Z"
                 }
             ]
         },
@@ -9462,6 +9388,43 @@
                     "required_dependencies": [],
                     "size": 642711,
                     "date_published": "2025-02-06T16:09:52.160Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "rpCnB9l1nm6N059L",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pehkui"
+            },
+            "name": {
+                "curseforge": "Pehkui"
+            },
+            "id": {
+                "curseforge": "319596"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Pehkui-3.8.2+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5393/101/Pehkui-3.8.2+1.20.1-forge.jar",
+                    "id": "5393101",
+                    "parent_id": "319596",
+                    "hashes": {
+                        "sha1": "4bc816efdd8e5e2a97423313674401351710e403",
+                        "md5": "95bdd5558d34044f54aab0ce292e679b"
+                    },
+                    "required_dependencies": [],
+                    "size": 671605,
+                    "date_published": "2024-06-02T17:02:54.600Z"
                 }
             ]
         },
@@ -13695,6 +13658,80 @@
                     "required_dependencies": [],
                     "size": 17337,
                     "date_published": "2024-12-03T14:59:19.547Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Iwzgw2smZhWXXvOJ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "xaeros-minimap"
+            },
+            "name": {
+                "curseforge": "Xaero's Minimap"
+            },
+            "id": {
+                "curseforge": "263420"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "xaerominimap-forge-1.20.1-25.3.10.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7598/586/xaerominimap-forge-1.20.1-25.3.10.jar",
+                    "id": "7598586",
+                    "parent_id": "263420",
+                    "hashes": {
+                        "sha1": "fef773ef4cbfa240a55236f3e8d6add20eb2add1",
+                        "md5": "2847dc482588772ec551a5b5112dc686"
+                    },
+                    "required_dependencies": [],
+                    "size": 2146522,
+                    "date_published": "2026-02-09T09:27:39.350Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "GFhUhyMlIM6meeOb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "xaeros-world-map"
+            },
+            "name": {
+                "curseforge": "Xaero's World Map"
+            },
+            "id": {
+                "curseforge": "317780"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "xaeroworldmap-forge-1.20.1-1.40.11.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7598/469/xaeroworldmap-forge-1.20.1-1.40.11.jar",
+                    "id": "7598469",
+                    "parent_id": "317780",
+                    "hashes": {
+                        "sha1": "0a5d068b6aa72c69b79e7ab7da47ef64f96e5b7c",
+                        "md5": "d8624a1b587fbcd28d8f5dc5b13399d4"
+                    },
+                    "required_dependencies": [],
+                    "size": 1388342,
+                    "date_published": "2026-02-09T08:43:18.330Z"
                 }
             ]
         },

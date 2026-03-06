@@ -1,6 +1,14 @@
 
-#EmbersTextAPI Configuration
+#EmbersTextAPI Server Configuration
 [general]
 	#Enable the welcome message shown to players on first join
 	welcomeMessageEnabled = false
+
+#Player Markup Access
+#Controls which players can use markup tags like <rainbow> in chat
+[markup]
+	#Permission mode: NONE (no restrictions), WHITELIST (only listed players), BLACKLIST (listed players blocked)
+	markupPermissionMode = "NONE"
+	#Player UUIDs for the whitelist/blacklist
+	markupPlayerList = []
 

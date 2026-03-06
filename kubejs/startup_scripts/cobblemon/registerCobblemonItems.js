@@ -68,7 +68,9 @@ StartupEvents.registry("item", (e) => {
     })
     .useAnimation("drink");
   // Misc
-
+  e.create("sunlit_cobblemon:mystica_branch");
+  e.create("sunlit_cobblemon:sun_drops");
+  
   e.create("sunlit_cobblemon:poke_radar")
     .displayName("Poké Radar");
   e.create("sunlit_cobblemon:berry_capsule").texture(

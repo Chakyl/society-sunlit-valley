@@ -1,0 +1,84 @@
+
+update
+|t:|1772421481
+|gametype|singles
+
+
+update
+|player|p1|8d3c8e31-8b73-4336-9adb-df8508f79251||
+
+
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Fire Spin","id":"firespin","pp":11,"maxpp":15,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":10,"maxpp":10,"target":"normal","disabled":false},{"move":"Flame Burst","id":"flameburst","pp":13,"maxpp":15,"target":"normal","disabled":false},{"move":"Flamethrower","id":"flamethrower","pp":10,"maxpp":15,"target":"normal","disabled":false}],"canTerastallize":"flying"}],"side":{"name":"8d3c8e31-8b73-4336-9adb-df8508f79251","id":"p1","pokemon":[{"ident":"p1: Charizard","details":"Charizard, a9dbfaf2-8132-4730-be5c-b75c35c92436, L51, M","condition":"134/155","active":true,"stats":{"atk":99,"def":92,"spa":128,"spd":99,"spe":102},"moves":["firespin","scaryface","flameburst","flamethrower"],"baseAbility":"blaze","item":"","pokeball":"Master Ball","baseTypes":["Fire","Flying"],"types":["Fire","Flying"],"ability":"blaze","commanding":false,"reviving":false,"teraType":"flying","terastallized":""},{"ident":"p1: Roserade","details":"Roserade, 727a045d-e80a-44d7-9609-bc21fda9d460, L40, M","condition":"104/104","active":false,"stats":{"atk":61,"def":54,"spa":105,"spd":101,"spe":86},"moves":["worryseed","weatherball","venomdrench","toxicspikes"],"baseAbility":"poisonpoint","item":"","pokeball":"Poke Ball","baseTypes":["Grass","Poison"],"types":["Grass","Poison"],"ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"poison","terastallized":""},{"ident":"p1: Torterra","details":"Torterra, f0f07fee-d4ae-4711-9cb3-49db8850469e, L40, M","condition":"90/131","active":false,"stats":{"atk":94,"def":89,"spa":77,"spd":74,"spe":61},"moves":["synthesis","leechseed","megadrain","bite"],"baseAbility":"overgrow","item":"","pokeball":"Poke Ball","baseTypes":["Grass","Ground"],"types":["Grass","Ground"],"ability":"overgrow","commanding":false,"reviving":false,"teraType":"grass","terastallized":""},{"ident":"p1: Chesnaught","details":"Chesnaught, 24bfca22-af0a-4469-ad7e-e419cad8e010, L40, M","condition":"122/122","active":false,"stats":{"atk":96,"def":107,"spa":77,"spd":77,"spe":53},"moves":["seedbomb","takedown","pinmissile","leechseed"],"baseAbility":"overgrow","item":"","pokeball":"Poke Ball","baseTypes":["Grass","Fighting"],"types":["Grass","Fighting"],"ability":"overgrow","commanding":false,"reviving":false,"teraType":"grass","terastallized":""},{"ident":"p1: Rillaboom","details":"Rillaboom, 39c4bb5a-f586-413a-9f2e-3d06cfe73395, L41, M","condition":"144/144","active":false,"stats":{"atk":112,"def":80,"spa":64,"spd":62,"spe":80},"moves":["uproar","slam","knockoff","screech"],"baseAbility":"overgrow","item":"","pokeball":"Poke Ball","baseTypes":["Grass"],"types":["Grass"],"ability":"overgrow","commanding":false,"reviving":false,"teraType":"grass","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, 34823d84-307a-4fc9-a3e4-f65fa0eba567, L21, M","condition":"67/67","active":false,"stats":{"atk":49,"def":48,"spa":36,"spd":55,"spe":41},"moves":["withdraw","watergun","tailwhip","tackle"],"baseAbility":"torrent","item":"","pokeball":"Poke Ball","baseTypes":["Water"],"types":["Water"],"ability":"torrent","commanding":false,"reviving":false,"teraType":"water","terastallized":""}]},"noCancel":true}
+
+Request Instruction
+
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Sheer Cold","id":"sheercold","pp":5,"maxpp":5,"target":"normal","disabled":false},{"move":"Powder Snow","id":"powdersnow","pp":25,"maxpp":25,"target":"allAdjacentFoes","disabled":false},{"move":"Leer","id":"leer","pp":30,"maxpp":30,"target":"allAdjacentFoes","disabled":false},{"move":"Headbutt","id":"headbutt","pp":15,"maxpp":15,"target":"normal","disabled":false}],"canTerastallize":"ice"}],"side":{"name":"327cd16b-e5b0-4035-902d-ad9df378535e","id":"p2","pokemon":[{"ident":"p2: Glalie","details":"Glalie, 327cd16b-e5b0-4035-902d-ad9df378535e, L1, F","condition":"13/13","active":true,"stats":{"atk":6,"def":7,"spa":6,"spd":7,"spe":7},"moves":["sheercold","powdersnow","leer","headbutt"],"baseAbility":"innerfocus","item":"","pokeball":"Poke Ball","baseTypes":["Ice"],"types":["Ice"],"ability":"innerfocus","commanding":false,"reviving":false,"teraType":"ice","terastallized":""}]},"noCancel":true}
+
+Request Instruction
+
+update
+|player|p2|327cd16b-e5b0-4035-902d-ad9df378535e||
+|teamsize|p1|6
+|teamsize|p2|1
+|gen|9
+|tier|
+|
+|t:|1772421481
+|start
+|split|p1
+|switch|p1a: a9dbfaf2-8132-4730-be5c-b75c35c92436|Charizard, a9dbfaf2-8132-4730-be5c-b75c35c92436, L51, M|134/155
+|switch|p1a: a9dbfaf2-8132-4730-be5c-b75c35c92436|Charizard, a9dbfaf2-8132-4730-be5c-b75c35c92436, L51, M|87/100
+|split|p2
+|switch|p2a: 327cd16b-e5b0-4035-902d-ad9df378535e|Glalie, 327cd16b-e5b0-4035-902d-ad9df378535e, L1, F|13/13
+|switch|p2a: 327cd16b-e5b0-4035-902d-ad9df378535e|Glalie, 327cd16b-e5b0-4035-902d-ad9df378535e, L1, F|100/100
+|turn|1
+|pp_update|p1: a9dbfaf2-8132-4730-be5c-b75c35c92436|firespin: 11, scaryface: 10, flameburst: 13, flamethrower: 10
+|pp_update|p1: 727a045d-e80a-44d7-9609-bc21fda9d460|worryseed: 10, weatherball: 10, venomdrench: 20, toxicspikes: 20
+|pp_update|p1: f0f07fee-d4ae-4711-9cb3-49db8850469e|synthesis: 5, leechseed: 10, megadrain: 15, bite: 22
+|pp_update|p1: 24bfca22-af0a-4469-ad7e-e419cad8e010|seedbomb: 15, takedown: 20, pinmissile: 20, leechseed: 10
+|pp_update|p1: 39c4bb5a-f586-413a-9f2e-3d06cfe73395|uproar: 10, slam: 20, knockoff: 20, screech: 40
+|pp_update|p1: 34823d84-307a-4fc9-a3e4-f65fa0eba567|withdraw: 40, watergun: 25, tailwhip: 30, tackle: 35
+|pp_update|p2: 327cd16b-e5b0-4035-902d-ad9df378535e|sheercold: 5, powdersnow: 25, leer: 30, headbutt: 15
+
+
+sideupdate
+p1
+|error|[Invalid choice] Can't choose for Team Preview: You're not in a Team Preview phase
+
+Error Instruction
+
+sideupdate
+p2
+|error|[Invalid choice] Can't choose for Team Preview: You're not in a Team Preview phase
+
+Error Instruction
+>p1 move 1 +1
+>p2 move 3
+
+update
+|
+|t:|1772421483
+|move|p1a: a9dbfaf2-8132-4730-be5c-b75c35c92436|Fire Spin|p2a: 327cd16b-e5b0-4035-902d-ad9df378535e
+|-supereffective|p2a: 327cd16b-e5b0-4035-902d-ad9df378535e
+|split|p2
+|-damage|p2a: 327cd16b-e5b0-4035-902d-ad9df378535e|0 fnt
+|-damage|p2a: 327cd16b-e5b0-4035-902d-ad9df378535e|0 fnt
+|faint|p2a: 327cd16b-e5b0-4035-902d-ad9df378535e
+|
+|win|8d3c8e31-8b73-4336-9adb-df8508f79251
+|pp_update|p1: a9dbfaf2-8132-4730-be5c-b75c35c92436|firespin: 10, scaryface: 10, flameburst: 13, flamethrower: 10
+|pp_update|p1: 727a045d-e80a-44d7-9609-bc21fda9d460|worryseed: 10, weatherball: 10, venomdrench: 20, toxicspikes: 20
+|pp_update|p1: f0f07fee-d4ae-4711-9cb3-49db8850469e|synthesis: 5, leechseed: 10, megadrain: 15, bite: 22
+|pp_update|p1: 24bfca22-af0a-4469-ad7e-e419cad8e010|seedbomb: 15, takedown: 20, pinmissile: 20, leechseed: 10
+|pp_update|p1: 39c4bb5a-f586-413a-9f2e-3d06cfe73395|uproar: 10, slam: 20, knockoff: 20, screech: 40
+|pp_update|p1: 34823d84-307a-4fc9-a3e4-f65fa0eba567|withdraw: 40, watergun: 25, tailwhip: 30, tackle: 35
+|pp_update|p2: 327cd16b-e5b0-4035-902d-ad9df378535e|sheercold: 5, powdersnow: 25, leer: 30, headbutt: 15
+
+
+end
+{"winner":"8d3c8e31-8b73-4336-9adb-df8508f79251","seed":[52322,54721,35591,10847],"turns":1,"p1":"8d3c8e31-8b73-4336-9adb-df8508f79251","p2":"327cd16b-e5b0-4035-902d-ad9df378535e","p1team":[{"name":"Charizard","species":"charizard","uuid":"a9dbfaf2-8132-4730-be5c-b75c35c92436","currentHealth":134,"status":"","statusDuration":-1,"item":"","ability":"Blaze","moves":["Fire Spin","Scary Face","Flame Burst","Flamethrower"],"movesInfo":[{"pp":11,"maxPp":15},{"pp":10,"maxPp":10},{"pp":13,"maxPp":15},{"pp":10,"maxPp":15}],"nature":"Relaxed","evs":{"hp":15,"atk":18,"def":0,"spa":5,"spd":6,"spe":3},"gender":"M","ivs":{"hp":26,"atk":13,"def":0,"spa":24,"spd":14,"spe":14},"level":51,"happiness":61,"pokeball":"Master Ball","hpType":"","gigantamax":false,"dynamaxLevel":10,"teraType":"flying"},{"name":"Roserade","species":"roserade","uuid":"727a045d-e80a-44d7-9609-bc21fda9d460","currentHealth":104,"status":"","statusDuration":-1,"item":"","ability":"Poison Point","moves":["Worry Seed","Weather Ball","Venom Drench","Toxic Spikes"],"movesInfo":[{"pp":10,"maxPp":10},{"pp":10,"maxPp":10},{"pp":20,"maxPp":20},{"pp":20,"maxPp":20}],"nature":"Hasty","evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":0},"gender":"M","ivs":{"hp":16,"atk":0,"def":11,"spa":2,"spd":31,"spe":5},"level":40,"happiness":69,"pokeball":"Poke Ball","hpType":"","gigantamax":false,"dynamaxLevel":0,"teraType":"poison"},{"name":"Torterra","species":"torterra","uuid":"f0f07fee-d4ae-4711-9cb3-49db8850469e","currentHealth":90,"status":"","statusDuration":-1,"item":"","ability":"Overgrow","moves":["Synthesis","Leech Seed","Mega Drain","Bite"],"movesInfo":[{"pp":5,"maxPp":5},{"pp":10,"maxPp":10},{"pp":15,"maxPp":15},{"pp":22,"maxPp":25}],"nature":"Rash","evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":0},"gender":"M","ivs":{"hp":14,"atk":5,"def":0,"spa":13,"spd":25,"spe":30},"level":40,"happiness":48,"pokeball":"Poke Ball","hpType":"","gigantamax":false,"dynamaxLevel":0,"teraType":"grass"},{"name":"Chesnaught","species":"chesnaught","uuid":"24bfca22-af0a-4469-ad7e-e419cad8e010","currentHealth":122,"status":"","statusDuration":-1,"item":"","ability":"Overgrow","moves":["Seed Bomb","Take Down","Pin Missile","Leech Seed"],"movesInfo":[{"pp":15,"maxPp":15},{"pp":20,"maxPp":20},{"pp":20,"maxPp":20},{"pp":10,"maxPp":10}],"nature":"Quiet","evs":{"hp":0,"atk":0,"def":0,"spa":2,"spd":0,"spe":0},"gender":"M","ivs":{"hp":6,"atk":14,"def":13,"spa":16,"spd":30,"spe":9},"level":40,"happiness":50,"pokeball":"Poke Ball","hpType":"","gigantamax":false,"dynamaxLevel":0,"teraType":"grass"},{"name":"Rillaboom","species":"rillaboom","uuid":"39c4bb5a-f586-413a-9f2e-3d06cfe73395","currentHealth":144,"status":"","statusDuration":-1,"item":"","ability":"Overgrow","moves":["Uproar","Slam","Knock Off","Screech"],"movesInfo":[{"pp":10,"maxPp":10},{"pp":20,"maxPp":20},{"pp":20,"maxPp":20},{"pp":40,"maxPp":40}],"nature":"Rash","evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":5},"gender":"M","ivs":{"hp":28,"atk":11,"def":4,"spa":14,"spd":17,"spe":14},"level":41,"happiness":78,"pokeball":"Poke Ball","hpType":"","gigantamax":false,"dynamaxLevel":0,"teraType":"grass"},{"name":"Blastoise","species":"blastoise","uuid":"34823d84-307a-4fc9-a3e4-f65fa0eba567","currentHealth":67,"status":"","statusDuration":-1,"item":"","ability":"Torrent","moves":["Withdraw","Water Gun","Tail Whip","Tackle"],"movesInfo":[{"pp":40,"maxPp":40},{"pp":25,"maxPp":25},{"pp":30,"maxPp":30},{"pp":35,"maxPp":35}],"nature":"Adamant","evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":2},"gender":"M","ivs":{"hp":14,"atk":28,"def":7,"spa":3,"spd":31,"spe":16},"level":21,"happiness":199,"pokeball":"Poke Ball","hpType":"","gigantamax":false,"dynamaxLevel":0,"teraType":"water"}],"p2team":[{"name":"Glalie","species":"glalie","uuid":"327cd16b-e5b0-4035-902d-ad9df378535e","currentHealth":13,"status":"","statusDuration":-1,"item":"","ability":"Inner Focus","moves":["Sheer Cold","Powder Snow","Leer","Headbutt"],"movesInfo":[{"pp":5,"maxPp":5},{"pp":25,"maxPp":25},{"pp":30,"maxPp":30},{"pp":15,"maxPp":15}],"nature":"Bashful","evs":{"hp":84,"atk":0,"def":84,"spa":0,"spd":84,"spe":252},"gender":"F","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"level":1,"happiness":50,"pokeball":"Poke Ball","hpType":"","gigantamax":false,"dynamaxLevel":0,"teraType":"ice"}],"score":[6,0],"inputLog":[">start {\"seed\":[52322,54721,35591,10847]}",">player p1 {\"name\":\"8d3c8e31-8b73-4336-9adb-df8508f79251\",\"team\":\"charizard||a9dbfaf2-8132-4730-be5c-b75c35c92436|134||-1||blaze|firespin,scaryface,flameburst,flamethrower|11/15,10/10,13/15,10/15|relaxed|15,18,0,5,6,3|M|26,13,0,24,14,14||51|61,masterball,,,,flying,]roserade||727a045d-e80a-44d7-9609-bc21fda9d460|104||-1||poisonpoint|worryseed,weatherball,venomdrench,toxicspikes|10/10,10/10,20/20,20/20|hasty|0,0,0,0,0,0|M|16,0,11,2,31,5||40|69,pokeball,,,0,poison,]torterra||f0f07fee-d4ae-4711-9cb3-49db8850469e|90||-1||overgrow|synthesis,leechseed,megadrain,bite|5/5,10/10,15/15,22/25|rash|0,0,0,0,0,0|M|14,5,0,13,25,30||40|48,pokeball,,,0,grass,]chesnaught||24bfca22-af0a-4469-ad7e-e419cad8e010|122||-1||overgrow|seedbomb,takedown,pinmissile,leechseed|15/15,20/20,20/20,10/10|quiet|0,0,0,2,0,0|M|6,14,13,16,30,9||40|50,pokeball,,,0,grass,]rillaboom||39c4bb5a-f586-413a-9f2e-3d06cfe73395|144||-1||overgrow|uproar,slam,knockoff,screech|10/10,20/20,20/20,40/40|rash|0,0,0,0,0,5|M|28,11,4,14,17,14||41|78,pokeball,,,0,grass,]blastoise||34823d84-307a-4fc9-a3e4-f65fa0eba567|67||-1||torrent|withdraw,watergun,tailwhip,tackle|40/40,25/25,30/30,35/35|adamant|0,0,0,0,0,2|M|14,28,7,3,31,16||21|199,pokeball,,,0,water,\"}",">player p2 {\"name\":\"327cd16b-e5b0-4035-902d-ad9df378535e\",\"team\":\"glalie||327cd16b-e5b0-4035-902d-ad9df378535e|13||-1||innerfocus|sheercold,powdersnow,leer,headbutt|5/5,25/25,30/30,15/15|bashful|84,0,84,0,84,252|F|31,31,31,31,31,31||1|50,pokeball,,,0,ice,\"}",">p1 move firespin",">p2 move leer"]}
+

@@ -1,0 +1,375 @@
+{
+  "shop_id": "sun_offering",
+  "name": "shop.society_trading.sun_offering",
+  "texture": "cluttered:textures/block/marble_star",
+  "hidden_from_selector": true,
+  "jei_catalyst": {
+    "item": "sunlit_cobblemon:sun_drops"
+  },
+  "trades": [
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:berry_capsule",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "sun_offering_berry_capsule"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:hp_up",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_2",
+      "unlock_description": "jei.society_trading.trainer_lvl_2",
+      "trade_id": "sun_offering_hp_up"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:protein",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_2",
+      "unlock_description": "jei.society_trading.trainer_lvl_2",
+      "trade_id": "sun_offering_protein"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:calcium",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_2",
+      "unlock_description": "jei.society_trading.trainer_lvl_2",
+      "trade_id": "sun_offering_calcium"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:zinc",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_2",
+      "unlock_description": "jei.society_trading.trainer_lvl_2",
+      "trade_id": "sun_offering_zinc"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:carbos",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_2",
+      "unlock_description": "jei.society_trading.trainer_lvl_2",
+      "trade_id": "sun_offering_cobblemon:carbos"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:pp_up",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_2",
+      "unlock_description": "jei.society_trading.trainer_lvl_2",
+      "trade_id": "sun_offering_pp_up"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:pp_max",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_4",
+      "unlock_description": "jei.society_trading.trainer_lvl_4",
+      "trade_id": "sun_offering_pp_max"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:rare_candy",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_rare_candy"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:relic_coin_pouch",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_relic_coin_pouch"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:tm_pack",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "sun_offering_tm_pack"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:greater_tm_pack",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "sun_offering_greater_tm_pack"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:prismatic_tm_pack",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "sun_offering_prismatic_tm_pack"
+    },
+    {
+      "offer": {
+        "item": "unimplemented_items:bottle_cap",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "sun_offering_bottle_cap"
+    },
+    {
+      "offer": {
+        "item": "unimplemented_items:bottle_cap_gold",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "sun_offering_bottle_cap_gold"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:ability_patch",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "sun_offering_ability_patch"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:ability_capsule",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "sun_offering_ability_capsule"
+    },
+    {
+      "offer": {
+        "item": "unimplemented_items:dry_root",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_dry_root"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:muscle_feather",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_muscle_feather"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:resist_feather",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_resist_feather"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:genius_feather",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_genius_feather"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:clever_feather",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_clever_feather"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:health_feather",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_health_feather"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:swift_feather",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_swift_feather"
+    },
+    {
+      "offer": {
+        "item": "society:artifact_trove",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_6",
+      "unlock_description": "jei.society_trading.trainer_lvl_6",
+      "trade_id": "sun_offering_artifact_trove"
+    },
+    {
+      "offer": {
+        "item": "society:relic_trove",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_7",
+      "unlock_description": "jei.society_trading.trainer_lvl_7",
+      "trade_id": "sun_offering_relic_trove"
+    },
+    {
+      "offer": {
+        "item": "society:magic_rope",
+        "count": 4
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_4",
+      "unlock_description": "jei.society_trading.trainer_lvl_4",
+      "trade_id": "sun_offering_magic_rope"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:sun_raid_statue",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 32
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "sun_offering_x"
+    }
+  ]
+}
