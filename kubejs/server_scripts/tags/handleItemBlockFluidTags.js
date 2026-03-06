@@ -261,8 +261,8 @@ const rawLogs = [
   "cluttered:fluorescent_maple_log",
   "cluttered:blue_mushroom_log",
   "cluttered:red_mushroom_log",
-  "rainbowoaks:rainbow_log", 
-  "minecraft:warped_stem", 
+  "rainbowoaks:rainbow_log",
+  "minecraft:warped_stem",
   "minecraft:crimson_stem"
 ]
 ServerEvents.tags("item", (e) => {
@@ -455,9 +455,11 @@ ServerEvents.tags("item", (e) => {
     "society:large_duck_egg",
     "society:large_goose_egg",
     "society:large_turkey_egg",
-  ].forEach((egg) => {
-    e.add("society:large_eggs", egg);
-  });
+    "society:large_galliraptor_egg", 
+    "society:penguin_egg", 
+    "society:flamingo_egg"].forEach((egg) => {
+      e.add("society:large_eggs", egg);
+    });
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
@@ -818,25 +820,6 @@ ServerEvents.tags("block", (e) => {
     e.add("oreganized:mineable/scribe", item);
   });
 
-  [
-    "pamhc2trees:pamcinnamon",
-    "pamhc2trees:pamdragonfruit",
-    "pamhc2trees:pamstarfruit",
-    "pamhc2trees:pamlychee",
-    "pamhc2trees:pampassionfruit",
-    "pamhc2trees:pammango",
-    "pamhc2trees:pambanana",
-    "pamhc2trees:pampawpaw",
-    "pamhc2trees:pamhazelnut",
-    "pamhc2trees:pamorange",
-    "pamhc2trees:pamplum",
-    "pamhc2trees:pampeach",
-    "pamhc2trees:pamlemon",
-    "pamhc2trees:pamcherry",
-    "pamhc2trees:pamapple",
-  ].forEach((item) => {
-    e.add("minecraft:sword_efficient", item);
-  });
   e.add("minecraft:mineable/axe", "beachparty:cabinet");
   e.add("minecraft:mineable/pickaxe", "bakery:iron_bench");
   e.add("minecraft:mineable/shovel", "vinery:dirt_path_slab");

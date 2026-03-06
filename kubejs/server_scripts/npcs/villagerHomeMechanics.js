@@ -46,7 +46,7 @@ BlockEvents.placed("society:villager_home", (e) => {
     if (!npcData.dayLastPlaced) npcData.dayLastPlaced = -10
     if (day > Number(npcData.dayLastPlaced) + 10 || Number(npcData.dayLastPlaced) - day > 1) {
       let nearbyNPCs = level
-        .getEntitiesWithin(AABB.ofBlock(block).inflate(3))
+        .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
         .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
 
       if (player && nearbyNPCs.length == 0) {
@@ -82,7 +82,7 @@ BlockEvents.placed("society:villager_home", (e) => {
             placer: player.getUuid().toString(),
           },
         });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
         player.tell(
           Text.translatable(
             "society.villager_home.moved_in",

@@ -26,6 +26,23 @@
     }
   ],
   "lookup_history": [
+    "item:twigs:pebble",
+    "item:quark:hollow_spruce_log",
+    "item:society:large_goose_egg{quality_food:{effects:[],quality:3}}",
+    "item:society:large_turkey_egg",
+    "item:society:large_egg",
+    "item:society:large_galliraptor_egg",
+    "item:minecraft:blue_egg",
+    "item:legendarycreatures:peacock_spider_spawn_egg",
+    "item:minecraft:flint",
+    "item:minecraft:golden_pickaxe{Damage:0}",
+    "item:species:treeper_spawn_egg",
+    "item:society:green_tea_honeycomb",
+    "item:society:amulet_of_light",
+    "item:society:giant_bandolier_belt",
+    "item:ribbits:toadstool",
+    "item:rainbowoaks:rainbow_log",
+    "item:cluttered:kitchen_set_yellow_counter_outer_corner_left",
     "item:cluttered:fluorescent_maple_fence_gate",
     "item:cluttered:flowering_crabapple_pressure_plate",
     "item:cluttered:fly_agaric",
@@ -60,7 +77,6 @@
     "item:society:chai_blend",
     "item:society:sun_candy",
     "item:society:ancient_cookie",
-    "item:society:giant_bandolier_belt",
     "item:society:pyrite",
     "item:society:omni_geode",
     "item:society:candied_animal_feed",
@@ -174,7 +190,6 @@
     "item:crittersandcompanions:red_panda_spawn_egg",
     "item:untitledduckmod:duck_spawn_egg",
     "item:minecraft:bee_spawn_egg",
-    "item:society:green_tea_honeycomb",
     "item:society:token_of_unity",
     "item:society:invitation{type:{id:\"society:market\"}}",
     "item:society:invitation{type:{id:\"society:carpenter\"}}",
@@ -206,7 +221,7 @@
     "item:society:ribbit_hut_block",
     "item:justhammers:small_core",
     "item:justhammers:stone_hammer{Damage:0}",
-    "item:justhammers:iron_hammer{Damage:0,Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:fortune\",lvl:3s}],RepairCost:0,display:{Name:\u0027{\"text\":\"§6Aiden\\\u0027s Hammer\"}\u0027}}",
+    "item:justhammers:iron_hammer{Damage:0,Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:fortune\",lvl:3s}],RepairCost:0,display:{Name:\u0027{\"text\":\"ï¿½6Aiden\\\u0027s Hammer\"}\u0027}}",
     "item:society:universal_methods_of_farming",
     "item:waystones:waystone",
     "item:society:slouching_towards_artistry",
@@ -324,7 +339,6 @@
     "item:botania:rainbow_rod",
     "item:everycomp:rfm/rainbowoaks/rainbow_hedge",
     "item:everycomp:q/rainbowoaks/rainbow_leaf_carpet",
-    "item:rainbowoaks:rainbow_log",
     "item:minecraft:painting{EntityTag:{variant:\"portfolio:rainbows_alt\"}}",
     "item:create:brass_ingot",
     "item:society:prismatic_shard_block",
@@ -396,7 +410,6 @@
     "item:minecraft:glass",
     "item:minecraft:glass_pane",
     "item:oreganized:magenta_crystal_glass",
-    "item:quark:hollow_spruce_log",
     "item:farmersdelight:netherite_knife{Damage:0}",
     "item:wildernature:stylin_purple_hat{Damage:0}",
     "item:minecraft:stripped_spruce_wood",
@@ -525,11 +538,6 @@
     },
     "item:society:preserves_jar",
     "item:meadow:fire_log",
-    {
-      "type": "item",
-      "id": "twigs:pebble",
-      "amount": 3
-    },
     {
       "type": "item",
       "id": "minecraft:raw_copper_block",
@@ -789,11 +797,6 @@
     },
     {
       "type": "item",
-      "id": "ribbits:toadstool",
-      "amount": 4
-    },
-    {
-      "type": "item",
       "id": "minecraft:brown_mushroom",
       "amount": 2
     },
@@ -993,11 +996,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:minecraft:cooked_porkchop",
-      "item:candlelight:pork_ribs",
-      "item:brewery:pork_knuckle",
-      "item:farm_and_charm:bacon_with_eggs",
       "item:farmersdelight:cooked_bacon",
+      "item:farm_and_charm:bacon_with_eggs",
+      "item:brewery:pork_knuckle",
+      "item:candlelight:pork_ribs",
+      "item:minecraft:cooked_porkchop",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1008,8 +1011,8 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/zucchini",
       "#item:forge:crops/cauliflower",
+      "#item:forge:crops/zucchini",
       "#item:forge:crops/potato"
     ],
     "#item:forge:grain",
@@ -1465,28 +1468,10 @@
     "item:society:fire_opal",
     "item:society:pristine_esperite",
     "item:society:esperite",
-    "item:cluttered:willow_log",
-    "item:society:pristine_fluorapatite",
-    "item:minecraft:basalt",
-    "item:minecraft:grass_block",
-    "item:society:aged_ghastly_grenache",
-    "item:society:lunarite",
-    "item:society:slate",
-    {
-      "type": "item",
-      "id": "society:large_milk",
-      "amount": 10
-    },
-    {
-      "type": "item",
-      "id": "quark:diamond_heart",
-      "amount": 5
-    },
-    "item:bakery:chocolate_truffle",
-    "item:society:recycling_machine",
-    "item:society:merino_wool"
+    "item:cluttered:willow_log"
   ],
   "craft_history": [
+    "minecraft:yellow_outer_counter_left_recipe_1",
     "minecraft:kjs/society_dehydrator",
     "minecraft:kjs/society_mushroom_log",
     "minecraft:kjs/society_sunlit_pearl",
@@ -1595,15 +1580,15 @@
   "recipe_defaults": {
     "added": [
       "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
-      "netherdepthsupgrade:eyeball",
-      "minecraft:kjs/society_sun_candy"
+      "minecraft:kjs/society_sun_candy",
+      "netherdepthsupgrade:eyeball"
     ],
     "tags": {},
     "resolutions": {
-      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
+      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
         {
           "type": "fluid",
-          "id": "society:mystic_syrup",
+          "id": "create_central_kitchen:aloe_gel",
           "amount": 250
         }
       ],
@@ -1614,10 +1599,10 @@
           "amount": 10
         }
       ],
-      "jei:/create/kjs/9injiv9x2tx0adzrxp5ibkm0n": [
+      "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
         {
           "type": "fluid",
-          "id": "create_central_kitchen:aloe_gel",
+          "id": "society:mystic_syrup",
           "amount": 250
         }
       ]

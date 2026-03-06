@@ -75,7 +75,7 @@ StartupEvents.registry("block", (event) => {
       if (upgraded && block.properties.get("working") === "false") {
         let nbt = block.getEntityData();
         nbt.merge({ data: { recipe: "crabbersdelight:crab_trap_bait", stage: 0 } });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
         block.set(block.id, {
           facing: block.properties.get("facing"),
           working: true,

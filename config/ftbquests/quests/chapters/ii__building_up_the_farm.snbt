@@ -45,7 +45,7 @@
 							blueprint_name: "npc_market"
 							buildAnyway: 0b
 							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Market House\"}"
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.market_house\"}"
 							}
 							free_build: 1
 							inventari_blocco_selezionati: ""
@@ -569,7 +569,7 @@
 							blueprint_name: "npc_shepherd"
 							buildAnyway: 0b
 							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Shepherd House\"}"
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.shepherd_house\"}"
 							}
 							free_build: 1
 							inventari_blocco_selezionati: ""
@@ -894,7 +894,7 @@
 							blueprint_name: "npc_fisher"
 							buildAnyway: 0b
 							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Fisher House\"}"
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.fisher_house\"}"
 							}
 							free_build: 1
 							inventari_blocco_selezionati: ""

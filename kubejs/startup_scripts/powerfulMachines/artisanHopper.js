@@ -6,6 +6,7 @@ const artisanMachineCanHaveAdditionalOutput = [
   "society:seed_maker",
   "society:aging_cask",
   "society:mayonnaise_machine",
+  "society:wine_keg"
 ];
 
 global.handleAdditionalArtisanMachineOutputs = (
@@ -13,7 +14,7 @@ global.handleAdditionalArtisanMachineOutputs = (
   block,
   artisanMachine,
   recipes,
-  type,
+  recipeId,
   upgraded,
   stages
 ) => {
@@ -24,10 +25,10 @@ global.handleAdditionalArtisanMachineOutputs = (
           level,
           block,
           Ingredient.of("#society:loot_furniture").itemIds[
-            Math.floor(
-              Math.random() *
-                Ingredient.of("#society:loot_furniture").itemIds.length
-            )
+          Math.floor(
+            Math.random() *
+            Ingredient.of("#society:loot_furniture").itemIds.length
+          )
           ]
         );
       }
@@ -35,13 +36,22 @@ global.handleAdditionalArtisanMachineOutputs = (
     }
     case "society:crystalarium": {
       if (upgraded && rnd10()) {
-        recipes[type - 1].output.forEach((item) => {
-          global.insertBelow(
-            level,
-            block,
-            `society:pristine_${String(Item.of(item).id).path}`
-          );
-        });
+        let recipe = recipes.get(recipeId);
+        if (!recipe) {
+          let legacyType = artisanMachine.getEntityData().data.type;
+          if (legacyType > 0) {
+            let legacyKey = Array.from(recipes.keys())[Number(legacyType) - 1];
+            recipe = recipes.get(legacyKey);
+          }
+        }
+        if (recipe && recipe.output) {
+          recipe.output.forEach((item) => {
+            const pristinePath = String(Item.of(item).id).split(":")[1];
+            if (pristinePath) {
+              global.insertBelow(level, block, `society:pristine_${pristinePath}`);
+            }
+          });
+        }
       }
       break;
     }
@@ -236,7 +246,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
         recipes: global.mushroomLogRecipes,
         stageCount: 1,
         soundType: "species:block.alphacene_moss.place",
-        outputMult: nbt && nbt.data && nbt.data.baseCount ? nbt.data.baseCount : 1,
+        outputMult: machineNbt && machineNbt.data && machineNbt.data.baseCount ? machineNbt.data.baseCount : 1,
       };
       break;
     case "society:charging_rod":
@@ -257,8 +267,6 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const { x, y, z } = artisanMachine;
     const nbt = artisanMachine.getEntityData();
     if (!nbt || !nbt.data) return;
-    const { stage, recipe } = nbt.data;
-    const currentStage = stage || 0;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
     const loadedData = global.getArtisanMachineData(
       player,
@@ -279,10 +287,24 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         outputMult,
         soundType,
       } = loadedData;
+
+      if (recipes) {
+        global.convertFromLegacy(recipes, level, artisanMachine);
+      }
+      let refreshedNbt = artisanMachine.getEntityData();
+      let { stage, recipe } = refreshedNbt.data;
+      let currentStage = stage || 0;
+      let resolvedRecipeId = recipe;
+      if (recipes && !recipes.has(resolvedRecipeId)) {
+        let legacyType = refreshedNbt.data.type;
+        if (legacyType > 0) {
+          let legacyKey = Array.from(recipes.keys())[Number(legacyType) - 1];
+          if (legacyKey) resolvedRecipeId = legacyKey;
+        }
+      }
       let hasInfinityWorm =
         artisanMachine.id === "society:deluxe_worm_farm" && upgraded;
       let machineOutputs = [];
-      let type;
       let newProperties = artisanMachine.getProperties();
       let recycleSparkstone;
 
@@ -290,12 +312,12 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         newProperties.get("mature").toLowerCase() === "true" &&
         (artisanMachine.id === "society:charging_rod"
           ? global.inventoryBelowHasRoom(level, block, chargingRodOutput)
-          : recipes.has(recipe) &&
-            global.inventoryBelowHasRoomForAll(
-              level,
-              block,
-              recipes.get(recipe).output
-            )) &&
+          : recipes.has(resolvedRecipeId) &&
+          global.inventoryBelowHasRoomForAll(
+            level,
+            block,
+            recipes.get(resolvedRecipeId).output
+          )) &&
         global.hasInventoryItems(inventory, "society:sparkstone", 1)
       ) {
         server.runCommandSilent(
@@ -310,7 +332,6 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else if (hasInfinityWorm) {
-          console.log(machineOutputs)
           machineOutputs.push(
             Item.of("4x crabbersdelight:deluxe_crab_trap_bait")
           );
@@ -323,7 +344,6 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else {
-          if (nbt.data.type != 0) type = Number(nbt.data.type);
           machineOutputs = global.artisanHarvest(
             artisanMachine,
             recipes,
@@ -353,7 +373,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               block,
               artisanMachine,
               recipes,
-              type,
+              resolvedRecipeId,
               upgraded,
               player.stages
             );
@@ -534,7 +554,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(200, 0, (entity) => {
+      blockInfo.serverTick(600, 0, (entity) => {
         global.artisanHopperScan(entity, 3);
       }),
         blockInfo.rightClickOpensInventory();
@@ -587,7 +607,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(200, 0, (entity) => {
+      blockInfo.serverTick(600, 0, (entity) => {
         global.artisanHopperScan(entity, 1);
       }),
         blockInfo.rightClickOpensInventory();

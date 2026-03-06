@@ -1,0 +1,17 @@
+{
+  "name": "크런처",
+  "category": "patchouli:animals",
+  "icon": "species:cruncher_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)가격: 구매 불가$(li)채집: 주워온 음식 가방 (40%), 비스무트 원석 (25%), 드래곤 비늘 (4%), 크런처 알 (15%)$(br2)$(l)메모$()$(br)호감도 1하트 이상부터 채집 가능. 채굴 지점에서 발견 가능. 고기로 길들일 수 있음."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:cruncher",
+      "scale": 0.8,
+      "text": "\"펠릿\"을 조심하세요"
+    }
+  ]
+}

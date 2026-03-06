@@ -107,7 +107,7 @@ mob-spawning:
   categories:
     - category: 'MONSTER'
       mobcap: 70
-      spawn-interval: 1
+      spawn-interval: 5
 
     - category: 'CREATURE'
       mobcap: 10
@@ -115,23 +115,23 @@ mob-spawning:
 
     - category: 'AMBIENT'
       mobcap: 15
-      spawn-interval: 1
+      spawn-interval: 20
 
     - category: 'AXOLOTLS'
       mobcap: 5
-      spawn-interval: 1
+      spawn-interval: 20
 
     - category: 'UNDERGROUND_WATER_CREATURE'
       mobcap: 5
-      spawn-interval: 1
+      spawn-interval: 20
 
     - category: 'WATER_CREATURE'
       mobcap: 5
-      spawn-interval: 1
+      spawn-interval: 20
 
     - category: 'WATER_AMBIENT'
-      mobcap: 20
-      spawn-interval: 1
+      mobcap: 10
+      spawn-interval: 20
 
 
 # Settings for commands and their formatting.
