@@ -116,6 +116,6 @@ ServerEvents.recipes((e) => {
     },
   );
   global.cobbleTypeGems.forEach((gem) => {
-    e.shapeless(`3x ${gem.item}`, [`society:pristine_${gem.item.path}`]);
+    e.shapeless(`3x ${gem.item}`, [`society:pristine_${gem.item.split(":")[1]}`]);
   });
 });

@@ -13,6 +13,7 @@ global.removedItems = [
   "unimplemented_items:power_weight",
   "unimplemented_items:ability_capsule",
   "unimplemented_items:ability_patch",
+  "unimplemented_items:shiny_charm",
   "create_klinks_n_klangs:repeat_ball_stencil",
   "cobblemon:medicinal_leek",
   "simpletms:tm_gmaxdrumsolo",

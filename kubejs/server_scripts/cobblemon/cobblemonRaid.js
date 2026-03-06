@@ -1,4 +1,4 @@
-console.info("[SOCIETY-S-COBBLEMON] cobblemonDen.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobblemonRaid.js loaded");
 
 const getPoolWeightTotal = (spawnDetails) => {
     let totalWeight = 0;
@@ -72,11 +72,13 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
     }
     let day = global.getDay(level);
     let raidLevel = Math.min(100, global.getPartyLevel(player) + (5 * (Number(nbt.data.tier) + 1)))
+    // let raidLevel = 1;
     if (player.isCrouching() && level.getEntitiesWithin(AABB.ofBlock(level.getBlock(block.getPos())).inflate(2)).filter((e) => e.type.equals("cobblemon:pokemon")).length !== 0) {
         player.tell(Text.translatable("sunlit_cobblemon.sun_raid.clear_area").red());
         return;
     }
-    if (player.isCrouching() && (!nbt.data || !nbt.data.dayLastRaided || day > nbt.data.dayLastRaided || nbt.data.dayLastRaided - day > 1)) {
+    const canSpawnToday = !nbt.data || !nbt.data.dayLastRaided || global.compareDay(day, nbt.data.dayLastRaided, 1)
+    if (player.isCrouching() && canSpawnToday) {
         let tierStats = getTierStats(nbt.data.tier)
         let hiddenAbility = Math.random() < tierStats.hiddenAbilityChance;
         let shiny = Math.random() < tierStats.shinyChance;
@@ -89,6 +91,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
             spawnedPokemon.setDeltaMovement(new Vec3d(0, 1.1, 0));
             spawnedPokemon.persistentData.raidMon = true;
             spawnedPokemon.persistentData.raidMonStats = {
+                tier: nbt.data.tier,
                 hasHiddenAbility: hiddenAbility,
                 spawnedLevel: nbt.data.level,
                 shinyChance: tierStats.shinyChance,
@@ -111,6 +114,8 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
             server.runCommandSilent( `playsound species:effect.gut_feeling.applied block @a ${block.x} ${block.y} ${block.z}`);
             server.runCommandSilent( `playsound species:effect.gut_feeling.roar block @a ${block.x} ${block.y} ${block.z}`);
         }
+    } else if (player.isCrouching() && !canSpawnToday) {
+        server.runCommandSilent(`openshop ${player.username} sun_offering`)
     } else {
         let tierStats = getTierStats(nbt.data.tier)
         player.tell(`Tier: ${nbt.data.tier} | Pokemon: ${nbt.data.type.equals("") ? "Unknown" : Text.translate(`cobblemon.species.${nbt.data.type}.name`).getString()} | Raid Level ${raidLevel} | Level: ${nbt.data.level} | Shiny Chance: ${Number(tierStats.shinyChance * 100).toFixed(2)}% | Hidden Ability Chance: ${Number(tierStats.hiddenAbilityChance * 100).toFixed(2)}%`)

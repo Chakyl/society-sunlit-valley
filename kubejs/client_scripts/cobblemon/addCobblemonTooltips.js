@@ -166,7 +166,7 @@ ItemEvents.tooltip((tooltip) => {
     "ability_capsule", "ability_patch",
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.special.${item}`).gray());
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).gray());
+    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   });
 
 
@@ -273,7 +273,7 @@ ItemEvents.tooltip((tooltip) => {
     "health_feather", "muscle_feather", "resist_feather", "genius_feather", "clever_feather", "swift_feather"
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumables.${item}`).gray());
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).gray());
+    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   });
 
   [
@@ -284,7 +284,7 @@ ItemEvents.tooltip((tooltip) => {
     "potion", "super_potion", "hyper_potion", "max_potion", "full_restore"
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.medicine.${item}`).gray());
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.medicine`).red());
+    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.medicine`).green());
   });
 
   [
@@ -293,4 +293,10 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.medicine.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.vitamin`).aqua());
   });
+
+  ['unimplemented_items:bottle_cap_gold', 'unimplemented_items:bottle_cap', 'unimplemented_items:bottle_cap_atk', 'unimplemented_items:bottle_cap_sd', 'unimplemented_items:bottle_cap_def', 'unimplemented_items:bottle_cap_sa', 'unimplemented_items:bottle_cap_spd', 'unimplemented_items:bottle_cap_hp', 'unimplemented_items:dry_root'].forEach((item) => {
+    tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.unimplemented_items.${item.split(":")[1]}`).gray());
+    tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  });
+
 });

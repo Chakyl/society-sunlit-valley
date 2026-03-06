@@ -5,7 +5,7 @@ global.runRaidStatue = (tickEvent) => {
     level.spawnParticles(
         "atmospheric:aloe_blossom",
         true,
-        block.x + 0.5, 
+        block.x + 0.5,
         block.y + 0.5,
         block.z + 0.5,
         0.1 * rnd(1, 3),
@@ -17,7 +17,7 @@ global.runRaidStatue = (tickEvent) => {
     level.spawnParticles(
         "legendarycreatures:wisp_particle",
         true,
-        block.x + 0.5, 
+        block.x + 0.5,
         block.y + 0.5,
         block.z + 0.5,
         0.1 * rnd(1, 3),
@@ -29,6 +29,7 @@ global.runRaidStatue = (tickEvent) => {
 };
 StartupEvents.registry("block", (e) => {
     e.create("sunlit_cobblemon:sun_raid_statue", "cardinal")
+        .defaultCutout()
         .blockEntity((blockInfo) => {
             blockInfo.enableSync();
             blockInfo.initialData({ tier: "-1", type: "", variant: "", level: -1, dayLastRaided: -1 });

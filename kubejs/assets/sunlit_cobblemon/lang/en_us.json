@@ -9,7 +9,7 @@
   "sunlit_cobblemon.need_scope": "You need a Silph Scope to use this...",
   "sunlit_cobblemon.gachamon_capsule.addiction": "Woah there you Gachamon addict! Defeat some nearby Pokémon before opening more!",
 
-  "sunlit_cobblemon.sun_raid.clear_area": "The raid Pokémon won't come down with this many nearby Pokémon.",
+  "sunlit_cobblemon.sun_raid.clear_area": "The raid Pokémon won't come out with this many nearby Pokémon.",
   "sunlit_cobblemon.sun_raid.checkspawns.nothing": "Nothing can spawn here right now. Try clearing the area of Pokémon before trying again.",
   "sunlit_cobblemon.sun_raid.battle_start": "%s is filled with the power of the sun!",
 
@@ -76,6 +76,16 @@
   "tooltip.sunlit_cobblemon.cobblemon.consumables.genius_feather": "Raises the Pokémon's Special Attack EVs by 1",
   "tooltip.sunlit_cobblemon.cobblemon.consumables.clever_feather": "Raises the Pokémon's Special Defense EVs by 1",
   "tooltip.sunlit_cobblemon.cobblemon.consumables.swift_feather":  "Raises the Pokémon's Speed EVs by 1",
+  
+  "tooltip.sunlit_cobblemon.unimplemented_items.dry_root": "Resets the EVs for all of that Pokémon's stats if possible",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap": "Can be crafted into stat Bottle Caps, which set a Pokémon's IVs of that stat to the max",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap_gold": "Sets all of the Pokémon's IVs to the max if possible",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap_atk": "Sets the Pokémon's Attack IVs to the max if possible",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap_hp": "Sets the Pokémon's HP IVs to the max if possible",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap_def": "Sets the Pokémon's Defense IVs to the max if possible",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap_sa": "Sets the Pokémon's Special Attack IVs to the max if possible",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap_sd": "Sets the Pokémon's Special Defense IVs to the max if possible",
+  "tooltip.sunlit_cobblemon.unimplemented_items.bottle_cap_spd":  "Sets the Pokémon's Speed IVs to the max if possible",
   
   "tooltip.sunlit_cobblemon.cobblemon.medicine.revival_herb": "Revives a fainted Pokémon to 25% of their max HP whilst reducing Friendship",
   "tooltip.sunlit_cobblemon.cobblemon.medicine.big_root": "Boosts the amount of HP the holder recovers from HP-stealing moves",
