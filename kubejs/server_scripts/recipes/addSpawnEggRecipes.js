@@ -98,6 +98,11 @@ ServerEvents.recipes((e) => {
       mineral: "minecraft:emerald",
       coin: "crown",
     },
+    {
+      egg: "species:treeper_spawn_egg",
+      mineral: "society:giant_bandolier_belt",
+      coin: "crown",
+    }
   ];
 
   recipes.forEach((recipe) => {

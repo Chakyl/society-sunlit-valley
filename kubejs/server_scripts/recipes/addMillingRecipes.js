@@ -37,6 +37,12 @@ ServerEvents.recipes((e) => {
       },
     });
   };
+  e.custom({
+    type: "farmersdelight:cutting",
+    ingredients: [{ item: "minecraft:flint" }],
+    tool: { tag: "forge:tools/pickaxes" },
+    result: [{ item: "twigs:pebble", count: 2 }],
+  });
   addKnifeRecipe("farm_and_charm:barley", "society:animal_feed", 2);
   addKnifeRecipe("farm_and_charm:corn", "society:animal_feed", 4);
   addKnifeRecipe("farm_and_charm:oat", "society:animal_feed", 6);
@@ -49,7 +55,8 @@ ServerEvents.recipes((e) => {
 
   addMillRecipe('farm_and_charm:barley', 'farm_and_charm:flour', 1);
   addMillRecipe('farm_and_charm:corn', 'farm_and_charm:flour', 3);
-  addMillRecipe('farm_and_charm:oat','farm_and_charm:flour', 6);
+  addMillRecipe('farm_and_charm:oat', 'farm_and_charm:flour', 6);
   addMillRecipe('minecraft:wheat', 'farm_and_charm:flour', 9);
   addMillRecipe('society:sparkstone', 'society:sparkstone_dust', 1);
+  addMillRecipe('minecraft:flint', 'twigs:pebble', 2);
 });

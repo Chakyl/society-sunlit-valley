@@ -741,7 +741,7 @@ global.executePlushieHusbandry = (
       global.addItemCooldown(player, item, 1);
     }
   }
-  block.setEntityData(nbt);
+  global.setBlockEntityData(block, nbt)
   if (reset) {
     server.runCommandSilent(
       `playsound legendarycreatures:corpse_eater_death block @a ${block.x} ${block.y} ${block.z}`

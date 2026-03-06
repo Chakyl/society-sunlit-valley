@@ -66,6 +66,7 @@ const handleFarmAnimalBackwardsCompat = (target, day) => {
     data.ageLastFed = newDay;
   }
 };
+
 const checkAnimal = (
   player,
   level,
@@ -148,6 +149,7 @@ const checkAnimal = (
   );
   debug && debugData(player, level, data, hearts);
 };
+
 const handlePet = (name, data, mood, day, peckish, hungry, e) => {
   const { player, item, target, level, server } = e;
   const ageLastPet = data.getInt("ageLastPet");
@@ -157,7 +159,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
   else if (hearts < 0) hearts = 0;
   let affectionIncreaseMult =
     player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
-  if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
+  if (player.stages.has("animal_fancy")) affectionIncreaseMult += 1;
   let affectionIncrease = 10 * affectionIncreaseMult;
 
   if (target.isBaby()) {
@@ -193,7 +195,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       1,
       0.01
     );
-    global.giveExperience(server, player, "husbandry", 10);
+    global.giveExperience(server, player, "husbandry", 10 * hearts);
     if (!livableArea && !data.clockwork) {
       errorText = Text.translatable(
         "society.husbandry.crowded",
@@ -351,6 +353,7 @@ const handleFeed = (data, day, e) => {
     global.addItemCooldown(player, item, 10);
   }
 };
+
 const handleSheepMagicShears = (e) => {
   const { target, level, server } = e;
   if (target.readyForShearing()) {
@@ -381,6 +384,7 @@ const handleSheepMagicShears = (e) => {
     );
   }
 };
+
 const handleMagicHarvest = (name, data, e) => {
   const { player, level, target, item, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
@@ -786,6 +790,7 @@ BlockEvents.rightClicked(global.plushies, (e) => {
   const { level, hand, player, item, server, block } = e;
   if (hand == "OFF_HAND") return;
   let nbt = block.getEntityData();
+  if (!nbt) return;
   const { animal } = nbt.data;
   if (!animal) return;
   let animalName = animal.name ? Text.of(animal.name) : global.getTranslatedEntityName(String(animal.type));
@@ -908,5 +913,5 @@ BlockEvents.rightClicked(global.plushies, (e) => {
       );
     }
   }
-  block.setEntityData(nbt);
+  global.setBlockEntityData(block, nbt)
 });

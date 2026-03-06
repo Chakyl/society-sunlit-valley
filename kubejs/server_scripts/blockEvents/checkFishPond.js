@@ -181,7 +181,7 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
                   quest_id: Number(newQuest),
                 },
               });
-              block.setEntityData(nbt);
+              global.setBlockEntityData(block, nbt)
               server.runCommandSilent(
                 `playsound minecraft:entity.player.splash block @a ${block.x} ${block.y} ${block.z}`
               );

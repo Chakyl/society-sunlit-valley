@@ -34,7 +34,7 @@ global.handleFishInsertion = (clickEvent) => {
         non_native_fish: 1,
       },
     });
-    block.setEntityData(nbt);
+    global.setBlockEntityData(block, nbt)
     if (!player.isCreative()) item.count--;
   } else if (type == item && population < max_population) {
     server.runCommandSilent(
@@ -58,7 +58,7 @@ global.handleFishInsertion = (clickEvent) => {
         non_native_fish: increaseStage(non_native_fish),
       },
     });
-    block.setEntityData(nbt);
+    global.setBlockEntityData(block, nbt)
     if (!player.isCreative()) item.count--;
   }
 };
@@ -94,7 +94,7 @@ global.handleQuestSubmission = (type, clickEvent) => {
         },
       });
 
-      block.setEntityData(nbt);
+      global.setBlockEntityData(block, nbt)
       if (
         player.stages.has("fishing_mastery") &&
         !player.stages.has("pond_house_five") &&

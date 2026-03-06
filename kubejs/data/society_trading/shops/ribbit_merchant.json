@@ -8,13 +8,15 @@
   "jei_catalyst": { "item": "ribbits:ribbit_merchant_spawn_egg" },
   "trades": [
     {
-      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "request": { "item": "minecraft:amethyst_shard", "count": 32 },
       "offer": { "item": "cluttered:fly_agaric", "count": 1 },
+      "limit": 4,
       "trade_id": "ribbit_fly_agaric"
     },
     {
-      "request": { "item": "minecraft:amethyst_shard", "count": 1 },
+      "request": { "item": "minecraft:amethyst_shard", "count": 32 },
       "offer": { "item": "cluttered:blue_roundhead", "count": 1 },
+      "limit": 4,
       "trade_id": "ribbit_blue_roundhead"
     },
     {

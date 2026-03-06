@@ -263,7 +263,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:the_quality_of_the_earth",
-      description: "Quality impacts of non-fish farmer products are doubled.",
+      description: "Quality impacts of non-fish farmer products on prices are doubled.",
     },
     {
       item: "society:the_red_and_the_black",
@@ -627,6 +627,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "society:magic_tunnel",
     Text.translatable("item.society.magic_rope.description.warn").red()
+  );
+  tooltip.add(
+    "society_trading:auto_trader",
+    Text.translatable("item.society_trading.auto_trader.description").gray()
   );
   // Fertilizers
   tooltip.add(
@@ -1035,6 +1039,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:scavenged_food_bag",
     Text.translatable("tooltip.society.right_click_open").gray()
   );
+    tooltip.add(
+    "species:treeper_spawn_egg",
+    Text.translatable("tooltip.society.treeper_spawn_egg").red()
+  );
   tooltip.add(
     "gag:time_sand_pouch",
     Text.translatable("tooltip.society.time_sand_pouch").red()
@@ -1382,7 +1390,7 @@ ItemEvents.tooltip((tooltip) => {
     "gag:escape_rope",
     Text.translatable("tooltip.society.escape_rope_hold").red()
   );
-    tooltip.add(
+  tooltip.add(
     "society:face_note",
     Text.translatable("tooltip.society.face_note").green()
   );

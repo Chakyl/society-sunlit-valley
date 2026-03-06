@@ -124,14 +124,23 @@ StartupEvents.registry("block", (event) => {
         }
       }
 
+      global.convertFromLegacy(global.crystalariumCrystals, level, block);
+
       if (upgraded && block.properties.get("mature") === "true" && rnd10()) {
-        let nbt = block.getEntityData();
-        global.crystalariumCrystals.get(nbt.data.type).output.forEach((item) => {
-          block.popItemFromFace(
-            `society:pristine_${String(Item.of(item).id).path}`,
-            block.properties.get("facing").toLowerCase()
-          );
-        });
+        const nbt = block.getEntityData();
+        const recipeId = nbt.data.recipe;
+        const recipe = recipeId ? global.crystalariumCrystals.get(recipeId) : null;
+        if (recipe && recipe.output){
+          recipe.output.forEach((item) => {
+            const crystalariumManualPath = String(Item.of(item).id).split(":")[1];
+            if (crystalariumManualPath){
+              block.popItemFromFace(
+                `society:pristine_${crystalariumManualPath}`,
+                block.properties.get("facing").toLowerCase()
+              );
+            }
+          })
+        }
       }
 
       global.handleBERightClick(

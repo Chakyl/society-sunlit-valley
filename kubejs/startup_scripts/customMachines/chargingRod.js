@@ -103,7 +103,7 @@ StartupEvents.registry("block", (event) => {
         );
         let nbt = block.getEntityData();
         nbt.merge({ data: { stage: 0 } });
-        block.setEntityData(nbt);
+        global.setBlockEntityData(block, nbt)
         block.set(block.id, {
           working: true,
           mature: false,

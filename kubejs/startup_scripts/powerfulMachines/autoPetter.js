@@ -5,7 +5,7 @@ const autoPetterProgTime = 20;
 
 global.runAutoPetter = (entity) => {
   const { block, level } = entity;
-  let radius = 1;
+  let radius = 2;
 
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
@@ -54,7 +54,7 @@ StartupEvents.registry("block", (e) => {
         Text.translatable("block.society.auto_petter.description").gray()
       );
       item.tooltip(
-        Text.translatable("tooltip.society.area", `3x3x3`).green()
+        Text.translatable("tooltip.society.area", `5x5x5`).green()
       );
       item.modelJson({
         parent: "society:block/kubejs/auto_petter",

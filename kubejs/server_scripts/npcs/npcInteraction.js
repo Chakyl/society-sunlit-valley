@@ -32,6 +32,7 @@ const npcIds = ["easy_npc:humanoid", "easy_npc:humanoid_slim"];
 
 ItemEvents.entityInteracted((e) => {
     const { hand, player, item, level, target, server } = e;
+    if (player.isFake()) return;
     if (hand == "OFF_HAND") return;
     if (item.id == 'easy_npc_config_ui:easy_npc_wand') return;
     if (!npcIds.includes(target.type)) return;
@@ -139,7 +140,7 @@ ItemEvents.entityInteracted((e) => {
                     player.tell(Text.translatable("society.npc.gifted_too_soon").gold())
                 }
             } else {
-                if (day > npcData.dayLastChatted || npcData.dayLastChatted - day > 1) {
+                if (global.compareDay(day, npcData.dayLastChatted, 1)) {
                     let hearts = Math.floor(npcData.friendship / 100);
                     dialogNumber = Math.floor(Math.random() * dialogLengths[npcId].chatterLengths[hearts]);
 

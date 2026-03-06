@@ -279,7 +279,7 @@
 							blueprint_name: "npc_carpenter"
 							buildAnyway: 0b
 							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Carpenter House\"}"
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.carpenter_house\"}"
 							}
 							free_build: 1
 							inventari_blocco_selezionati: ""
@@ -840,7 +840,7 @@
 							blueprint_name: "npc_banker"
 							buildAnyway: 0b
 							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Banker House\"}"
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.banker_house\"}"
 							}
 							free_build: 1
 							inventari_blocco_selezionati: ""
@@ -912,7 +912,7 @@
 						blueprint_name: "home_siberian"
 						buildAnyway: 0b
 						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Farmhouse\"}"
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_farmhouse\"}"
 						}
 						free_build: 1
 						inventari_blocco_selezionati: ""
@@ -966,7 +966,7 @@
 							blueprint_name: "npc_blacksmith"
 							buildAnyway: 0b
 							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Blacksmith House\"}"
+								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.blacksmith_house\"}"
 							}
 							free_build: 1
 							inventari_blocco_selezionati: ""
