@@ -43,6 +43,7 @@
 - yizhouuu - zh_cn translation
 - Tukita - es_es translation
 - Markis_nub - es_es translation
+- Nur_sg  - es_es translation
 
 ### Additional Credits
 - Shaders provided by Complementary Reimagined 

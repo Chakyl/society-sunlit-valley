@@ -1,8 +1,10 @@
 ^^^
 ## The Heart of the Community
-### v4.0.4
+### v4.0.5
 ^^^
 --- 
+## 4.0.5
+- TBD
 ## 4.0.4
 - Added plushie wand functionality: Left clicking to instantly break plushies
 - Added conversion for flint to pebbles
