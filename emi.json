@@ -26,6 +26,10 @@
     }
   ],
   "lookup_history": [
+    "item:windswept:will_o_the_wisp",
+    "item:botania:spark_upgrade_dominant",
+    "item:botania:rune_fire",
+    "item:botania:manasteel_ingot",
     "item:twigs:pebble",
     "item:quark:hollow_spruce_log",
     "item:society:large_goose_egg{quality_food:{effects:[],quality:3}}",
@@ -815,11 +819,6 @@
     "item:minecraft:crafting_table",
     "item:society:mana_fruit_juice",
     "item:minecraft:spruce_planks",
-    {
-      "type": "item",
-      "id": "botania:rune_fire",
-      "remainder": "item:botania:rune_fire"
-    },
     "item:botania:rune_envy",
     "item:relics:rage_glove{abilities:{phlebotomy:{points:0,stats:{attack_speed:0.00655d,heal:1.9E-4d,movement_speed:0.01686d}},rage:{points:0,stats:{dealt_damage:0.04233d,duration:2.29576d,incoming_damage:0.03652d}},spurt:{points:0,stats:{cooldown:17.41622d,damage:0.16688d,distance:5.24384d}}}}",
     "item:minecraft:spruce_trapdoor",
@@ -996,11 +995,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farmersdelight:cooked_bacon",
       "item:farm_and_charm:bacon_with_eggs",
-      "item:brewery:pork_knuckle",
+      "item:farmersdelight:cooked_bacon",
       "item:candlelight:pork_ribs",
       "item:minecraft:cooked_porkchop",
+      "item:brewery:pork_knuckle",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1011,9 +1010,9 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/cauliflower",
       "#item:forge:crops/zucchini",
-      "#item:forge:crops/potato"
+      "#item:forge:crops/potato",
+      "#item:forge:crops/cauliflower"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
@@ -1465,10 +1464,7 @@
     "item:society:celestine",
     "item:society:pristine_aquamarine",
     "item:society:dolomite",
-    "item:society:fire_opal",
-    "item:society:pristine_esperite",
-    "item:society:esperite",
-    "item:cluttered:willow_log"
+    "item:society:fire_opal"
   ],
   "craft_history": [
     "minecraft:yellow_outer_counter_left_recipe_1",
@@ -1579,9 +1575,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "minecraft:kjs/society_sun_candy",
-      "netherdepthsupgrade:eyeball"
+      "netherdepthsupgrade:eyeball",
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji"
     ],
     "tags": {},
     "resolutions": {
@@ -1592,18 +1588,18 @@
           "amount": 250
         }
       ],
-      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
-        {
-          "type": "fluid",
-          "id": "minecraft:lava",
-          "amount": 10
-        }
-      ],
       "jei:/create/kjs/f2zwwjjex5xv71h7f1pfchh4v": [
         {
           "type": "fluid",
           "id": "society:mystic_syrup",
           "amount": 250
+        }
+      ],
+      "jei:/create/kjs/dy5kjwtg61kvsor4v0ab0ppa3": [
+        {
+          "type": "fluid",
+          "id": "minecraft:lava",
+          "amount": 10
         }
       ]
     },
