@@ -1,0 +1,8 @@
+var mods = ModListUtils.getCurrentModListMappedToModId();
+
+var m_essential = mods.get("essential");
+if (m_essential != null) {
+    var warn = Startup.addBootWarning("Essential has been known to cause many issues that're difficult for developers to solve, as well as irreversible world corruption. We recommend the following as alternatives for free multiplayer:<ul><li><a href=\"https://www.curseforge.com/minecraft/mc-mods/cloudflared\">Cloudflared</a></li><li><a href=\"https://modrinth.com/mod/tunnely\">Tunnely</a></li><li><a href=\"https://modrinth.com/mod/e4mc\">e4mc</a></li></ul>");
+    warn.withModActions(m_essential);
+}
+

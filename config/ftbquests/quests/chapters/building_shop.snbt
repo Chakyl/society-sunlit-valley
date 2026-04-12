@@ -6,7 +6,13 @@
 	default_repeatable_quest: true
 	filename: "building_shop"
 	group: ""
-	icon: "liltractor:liltractor"
+	icon: {
+		Count: 1
+		id: "etcetera:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "61126DF67FF815EC"
 	order_index: 1
 	progression_mode: "flexible"

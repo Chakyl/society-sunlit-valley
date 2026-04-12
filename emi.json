@@ -26,6 +26,27 @@
     }
   ],
   "lookup_history": [
+    "item:beachparty:beach_parasol",
+    "item:beachparty:palm_torch_item",
+    "item:beachparty:cooked_mussel_meat",
+    "item:beachparty:message_in_a_bottle",
+    "item:farm_and_charm:wild_potatoes",
+    "item:farm_and_charm:wild_carrots",
+    "item:farm_and_charm:beetroot_bag",
+    "item:farm_and_charm:onion",
+    "item:farm_and_charm:lettuce",
+    "item:farm_and_charm:lettuce_seeds",
+    "item:farm_and_charm:oat",
+    "item:farm_and_charm:corn",
+    "item:farm_and_charm:oat_seeds",
+    "item:farm_and_charm:wild_lettuce",
+    "item:farm_and_charm:wild_oat",
+    "item:farm_and_charm:wild_corn",
+    "item:farm_and_charm:chicken_coop",
+    "item:farm_and_charm:cat_food_bag",
+    "item:farm_and_charm:dog_food_bag",
+    "item:farm_and_charm:compost{Damage:0}",
+    "item:beachparty:palm_bar",
     "item:rehooked:blaze_hook",
     "item:crittersandcompanions:silk_lead",
     "item:relics:blazing_flask{abilities:{bonfire:{points:0,stats:{height:4.31924d,speed:0.03042d,step:1.16796d}}}}",
@@ -884,7 +905,6 @@
     "item:society:aged_tribull_cheese_wheel",
     "item:society:aged_goat_cheese_block",
     "item:society:double_aged_tribull_cheese_wheel",
-    "item:farm_and_charm:oat",
     {
       "type": "item",
       "id": "society:animal_feed",
@@ -1097,11 +1117,11 @@
     "item:veggiesdelight:stuffed_zucchini_boat",
     "item:veggiesdelight:zucchini_quiche",
     [
-      "item:farm_and_charm:bacon_with_eggs",
       "item:candlelight:pork_ribs",
-      "item:brewery:pork_knuckle",
       "item:farmersdelight:cooked_bacon",
       "item:minecraft:cooked_porkchop",
+      "item:brewery:pork_knuckle",
+      "item:farm_and_charm:bacon_with_eggs",
       "#item:forge:cooked_chicken",
       "#item:forge:cooked_beef",
       "#item:forge:cooked_mutton"
@@ -1112,16 +1132,16 @@
     "item:veggiesdelight:cooked_vegetarian_patty",
     "item:veggiesdelight:raw_vegetarian_patty",
     [
-      "#item:forge:crops/potato",
       "#item:forge:crops/cauliflower",
+      "#item:forge:crops/potato",
       "#item:forge:crops/zucchini"
     ],
     "#item:forge:grain",
     "#item:forge:cabbage",
     "item:veggiesdelight:vegetables_wrap",
     [
-      "item:veggiesdelight:smoked_bellpepper",
       "item:veggiesdelight:roasted_zucchini",
+      "item:veggiesdelight:smoked_bellpepper",
       "#item:forge:mushrooms"
     ],
     "item:veggiesdelight:smoked_bellpepper",
@@ -1268,11 +1288,6 @@
       "amount": 40
     },
     "item:veggiesdelight:cauliflower_bread",
-    {
-      "type": "item",
-      "id": "farm_and_charm:corn",
-      "amount": 64
-    },
     "item:farm_and_charm:stove",
     "item:minecraft:campfire",
     "item:minecraft:bricks",
@@ -1458,26 +1473,7 @@
     "item:society:living_flesh",
     "item:society:crystal_of_regret_mining",
     "item:society:latte",
-    "item:society:forks_of_blue",
-    "item:create:copper_ladder",
-    "item:minecraft:resin_clump",
-    "item:vintagedelight:pepper_jam_mason_jar",
-    "item:vintagedelight:relish_mason_jar",
-    "item:windswept:mutton_pie",
-    "item:beachparty:sandwaves",
-    "item:beautify:lamp_jar",
-    "item:longwings:glass_jar",
-    "item:minecraft:torchflower",
-    "item:beachparty:coconut_open",
-    "item:minecraft:torchflower_seeds",
-    "item:meadow:oil_lantern",
-    "item:pamhc2trees:pammango",
-    "item:pamhc2trees:pamdragonfruit",
-    "item:pamhc2trees:pampassionfruit",
-    "item:pamhc2trees:pamlychee",
-    "item:pamhc2trees:pamapple",
-    "item:pamhc2trees:pamlemon",
-    "item:pamhc2trees:pamplum"
+    "item:society:forks_of_blue"
   ],
   "craft_history": [
     "minecraft:yellow_outer_counter_left_recipe_1",
@@ -1588,8 +1584,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "minecraft:kjs/society_sun_candy",
+      "jei:/create/kjs/8wkfd56owqz38eeg0aimv5kji",
       "netherdepthsupgrade:eyeball"
     ],
     "tags": {},
