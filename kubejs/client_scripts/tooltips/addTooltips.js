@@ -884,10 +884,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("item.society.frozen_tear.description").gray()
   );
   tooltip.add(
-    "liltractor:liltractor",
-    Text.translatable("tooltip.society.liltractor").gray()
-  );
-  tooltip.add(
     ["displaydelight:food_plate", "displaydelight:small_food_plate"],
     Text.translatable("tooltip.society.food_plate").gray()
   );
