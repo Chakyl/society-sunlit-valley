@@ -45,7 +45,7 @@
     "info.cobblemon_farmers.gardening_station.type.fire": "没有可用工作",
     "info.cobblemon_farmers.gardening_station.type.water": "浇灌耕地",
     "info.cobblemon_farmers.gardening_station.type.grass": "催生作物",
-    "info.cobblemon_farmers.gardening_station.type.flying": "没有可用工作",
+    "info.cobblemon_farmers.gardening_station.type.flying": "收获树果",
     "info.cobblemon_farmers.gardening_station.type.fighting": "没有可用工作",
     "info.cobblemon_farmers.gardening_station.type.poison": "没有可用工作",
     "info.cobblemon_farmers.gardening_station.type.electric": "没有可用工作",
@@ -78,6 +78,16 @@
     "item.cobblemon_farmers.dragon_type_worker": "龙属性职能",
     "item.cobblemon_farmers.dark_type_worker": "恶属性职能",
     "item.cobblemon_farmers.fairy_type_worker": "妖精属性职能",
+    "item.cobblemon_farmers.public_contract": "公共契约",
+    "item.cobblemon_farmers.public_contract.description": "通过占用一个可分配的工作槽位来为工作站方块添加临时槽位，这将使任何人都可以管理其中的宝可梦。",
+    "item.cobblemon_farmers.public_contract.warn": "允许任何人取走其中的宝可梦！",
+    "item.cobblemon_farmers.public_contract.used": "此工作站现已设为共享状态！",
+    "item.cobblemon_farmers.public_contract.already_used": "此工作站已处于共享状态！",
+    "item.cobblemon_farmers.public_contract.not_enough": "没有空闲的工作槽位！",
+    "item.cobblemon_farmers.worker_permit": "工作许可",
+    "item.cobblemon_farmers.worker_permit.description": "使用后使可分配的工作槽位上限 +1",
+    "item.cobblemon_farmers.worker_permit.used": "可分配的工作槽位上限已提升至 %s！",
+
     "block.cobblemon_farmers.craft_station": "加工台",
     "block.cobblemon_farmers.gardening_station": "园艺站",
     "block.cobblemon_farmers.mystery_mine": "神秘矿井",
@@ -92,7 +102,7 @@
     "gui.cobblemon_farmers.speed": "速度: x%s",
     "gui.cobblemon_farmers.mult_chance": "额外产出率: %s",
     "gui.cobblemon_farmers.working_radius": "工作半径: %s",
-    "gui.cobblemon_farmers.swap_priority": "切换属性优先级",
+    "gui.cobblemon_farmers.swap_priority": "属性优先级",
     "gui.cobblemon_farmers.prioritize_primary": "优先主属性",
     "gui.cobblemon_farmers.prioritize_secondary": "优先副属性",
     
@@ -101,6 +111,8 @@
     "tooltip.cobblemon_farmers.craft_station.processing_time": "本次行动还需: %s",
     "tooltip.cobblemon_farmers.ranching_station.ranching_power": "友好度: %s/10",
     "tooltip.cobblemon_farmers.ranching_station.ranching_power_desc": "取决于亲密度与生命值",
+    "tooltip.cobblemon_farmers.public_contract.desc": "?",
+    "tooltip.cobblemon_farmers.worker_permit.desc": "?",
     
     "message.cobblemon_farmers.ranching_station.no_drops": "这次你什么也没得到...",
     "message.cobblemon_farmers.ranching_station.cannot_be_magic_sheared": "这只宝可梦无法提供产物！",
@@ -146,10 +158,17 @@
     "jei.cobblemon_farmers.gardening_station.level_scaling.normal": "每提升10级，工作半径增加1",
     "jei.cobblemon_farmers.gardening_station.level_scaling.fairy": "每提升10级，工作半径增加1",
     "jei.cobblemon_farmers.gardening_station.level_scaling.dark": "每提升10级，经验掉落与工作半径增加1",
+    "jei.cobblemon_farmers.gardening_station.level_scaling.flying": "每提升10级，偷吃树果的概率都会减少，同时工作半径增加1",
     "jei.cobblemon_farmers.gardening_station.elemental_type": "%s",
     "gui.cobblemon_farmers.actions": "职能",
     "gui.cobblemon_farmers.friendship_hearts": "亲密度: %s/5",
     "gui.cobblemon_farmers.hp_hearts": "生命值: %s/5",
     "gui.cobblemon_farmers.eats_berries": "每日需要消耗树果",
-    "gui.cobblemon_farmers.view_recipes": "查看产出"
+    "gui.cobblemon_farmers.view_recipes": "查看产出",
+
+    "config.jade.plugin_cobblemon_farmers.cobblemon_farmers": "方块宝可梦农场",
+    "jade.cobblemon_farmers.workstation.pokemon.name": "%s Lv.%s",
+    "jade.cobblemon_farmers.workstation.no_worker": "未分配",
+    "jade.cobblemon_farmers.workstation.public": "共享状态",
+    "jade.cobblemon_farmers.owner": "所有者: %s"
 }
