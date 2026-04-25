@@ -1,0 +1,198 @@
+{
+  "displayName": "Punk Girl Providence",
+  "team": [
+    {
+      "species": "cobblemon:meowscarada",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "protean",
+      "moveset": [
+        "flowertrick",
+        "knockoff",
+        "playrough",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 4,
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:gholdengo",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "goodasgold",
+      "moveset": [
+        "shadowball",
+        "powergem",
+        "makeitrain",
+        "thunderbolt"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "special_defense": 4,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:choice_specs",
+      "aspects": [
+        "genderless",
+        "netherite-coating-none"
+      ]
+    },
+    {
+      "species": "cobblemon:cinderace",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "libero",
+      "moveset": [
+        "pyroball",
+        "gunkshot",
+        "ironhead",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 4,
+        "attack": 252,
+        "speed": 252  
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:choice_scarf",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:dragonite",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "multiscale",
+      "moveset": [
+        "extremespeed",
+        "dragonclaw",
+        "scaleshot",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 108,
+        "speed": 148 
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:loaded_dice",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ironvaliant",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:lonely",
+      "ability": "quarkdrive",
+      "moveset": [
+        "closecombat",
+        "spiritbreak",
+        "energyball",
+        "liquidation"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defense": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 184,
+        "special_attack": 72,
+        "speed": 252     
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:kingambit",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "defiant",
+      "moveset": [
+        "kowtowcleave",
+        "ironhead",
+        "protect",
+        "suckerpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252,
+        "special_defense": 4  
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:black_glasses",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

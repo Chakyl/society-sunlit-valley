@@ -58,7 +58,7 @@ global.runTrainerPodium = (entity) => {
 
   let spawnTrainer = global.removeNearbyTrainers(level, block);
   if (ownerPlayer) {
-    if (spawnTrainer) {
+    if (spawnTrainer && !block.level.hasNeighborSignal(block.pos)) {
       let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
       let levelTier = global.getPlayerPodiumLevelTier(ownerPlayer, levelAverage);
       let newTrainer

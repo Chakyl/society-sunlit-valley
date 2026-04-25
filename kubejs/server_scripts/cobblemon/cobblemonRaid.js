@@ -116,6 +116,20 @@ const summonRaidLegendary = (level, server, player, item, block, legendaryToSumm
     })
 }
 
+const playRaidSounds = (server, block) => {
+    server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${block.x} ${block.y} ${block.z}`);
+    server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${block.x} ${block.y} ${block.z}`);
+    server.runCommandSilent(`playsound species:effect.gut_feeling.roar block @a ${block.x} ${block.y} ${block.z}`);
+}
+
+const sumMPRaidLevel = (nearbyPlayers, raidTier) => {
+    let levelSum = 0;
+    for (let playerI = 0; playerI < nearbyPlayers.length; playerI++) {
+        levelSum += Math.min(100, global.getPartyLevel(nearbyPlayers[playerI]) + (5 * (Number(raidTier) + 1)));
+    }
+    return levelSum / Math.min(4, nearbyPlayers.length);
+}
+
 const sunLegendaries = new Map([
     ["sunlit_cobblemon:blooming_ring", "xerneas"],
     ["sunlit_cobblemon:cornucopia_of_greed", "yveltal"],
@@ -149,7 +163,6 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
         displayStats(player, Math.min(100, global.getPartyLevel(player) + (5 * (Number(nbt.data.tier) + 1))), nbt);
         server.runCommandSilent(`playsound botania:babylon_spawn block @a ${block.x} ${block.y} ${block.z}`);
         if (!player.isCreative()) item.shrink(1);
-        
         global.addItemCooldown(player, item, 4);
         return;
     } else if (item.id.equals("sunlit_cobblemon:sun_essence")) {
@@ -164,7 +177,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
             displayStats(player, Math.min(100, global.getPartyLevel(player) + (5 * (Number(nbt.data.tier) + 1))), nbt);
             server.runCommandSilent(`playsound botania:babylon_spawn block @a ${block.x} ${block.y} ${block.z}`);
             if (!player.isCreative()) item.shrink(1);
-        global.addItemCooldown(player, item, 4);
+            global.addItemCooldown(player, item, 4);
         } else {
             player.tell(Text.translatable("sunlit_cobblemon.sun_raid.highest_tier").red())
         }
@@ -263,7 +276,19 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
         let tierStats = getTierStats(nbt.data.tier)
         let hiddenAbility = Math.random() < tierStats.hiddenAbilityChance;
         let shiny = Math.random() < tierStats.shinyChance;
-        let spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, raidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
+        let nearbyPlayers = level.getEntitiesWithin(AABB.ofBlock(block).inflate(10)).filter((scanEntity) => scanEntity.isPlayer());
+        let spawnedAny
+        if (nearbyPlayers.length > 1) {
+            let groupRaidLevel = sumMPRaidLevel(nearbyPlayers, nbt.data.tier);
+            spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, groupRaidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
+            for (let playerI = 1; playerI < nearbyPlayers.length; playerI++) {
+                server.scheduleInTicks(20 * playerI, () => {
+                    spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, groupRaidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
+                });
+            }
+        } else {
+            spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, raidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
+        }
         if (spawnedAny) {
             if (player.stages.has("savage_sun") && Math.random() < 0.15) {
                 server.runCommandSilent(`playsound stardew_fishing:complete block @a ${block.x} ${block.y} ${block.z}`);
@@ -299,9 +324,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
                 });
             }
             global.setBlockEntityData(block, nbt);
-            server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${block.x} ${block.y} ${block.z}`);
-            server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${block.x} ${block.y} ${block.z}`);
-            server.runCommandSilent(`playsound species:effect.gut_feeling.roar block @a ${block.x} ${block.y} ${block.z}`);
+            playRaidSounds(server, block);
         }
     } else if (player.isCrouching() && !canSpawnToday) {
         server.runCommandSilent(`openshop ${player.username} sun_offering`)

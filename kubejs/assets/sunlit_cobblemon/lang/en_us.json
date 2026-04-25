@@ -60,7 +60,7 @@
   "sunlit_cobblemon.trainer_podium.win_streak_upgraded": "Your Gym win streak is now %s! Trainer reward money increased by x%s and difficulty increased!",
   "sunlit_cobblemon.trainer_podium.win_streak_lost": "You lost your §6%s §cwinning streak...",
 
-  "block.sunlit_cobblemon.trainer_podium.description": "Invites Trainers to your Gym. Their levels will match the average of your party",
+  "block.sunlit_cobblemon.trainer_podium.description": "Invites Trainers to your Gym. Their levels will match the average of your party. \nInvitations are paused when given a redstone signal",
   "block.sunlit_cobblemon.sun_raid_statue.description": "Summons a sun raid Pokémon once a day. Shift + Right click to activate the altar",
   "block.sunlit_cobblemon.sun_raid_statue.breaks_forever": "Breaking the Sun Raid Statue will desecrate it forever and it will not drop! In order to break, you must sneak while doing so.",
 
@@ -91,7 +91,7 @@
   "tooltip.sunlit_cobblemon.mystica_branch.description": "Rarely dropped from high tier Pokémon infused with the power of the sun",
   "tooltip.sunlit_cobblemon.mystica_cookie.description": "Offer to a Sun Raid Statue to lure in a different Pokémon from the current spawn pool and tier",
   "tooltip.sunlit_cobblemon.sun_essence.description": "Offer to a Sun Raid Statue to upgrade its tier by 1 without changing the current Pokémon",
-  "tooltip.sunlit_cobblemon.sunlit_league_medallion.description": "Won from Sunlit League trainers that appear every 10 wins in a row from the trainer podium",
+  "tooltip.sunlit_cobblemon.sunlit_league_medallion.description": "Won from Sunlit League trainers that appear every 15 wins in a row from the trainer podium",
   "tooltip.sunlit_cobblemon.poke_radar.description": "Scans for possible Pokémon spawns. Can be equipped to show them on screen, updated every 10 seconds",
   "tooltip.sunlit_cobblemon.poke_radar.left_click": "§6Left Click§7 to select spawn bucket",
   "tooltip.sunlit_cobblemon.poke_radar.right_click": "§6Right Click§7 to scan from selected bucket",

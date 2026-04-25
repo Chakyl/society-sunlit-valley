@@ -171,6 +171,7 @@ const trainerBuckets = new Map([
       "fisherman_wade_02ae",
       "fisherman_elliot_00e4",
       "fisherman_chip_00e2",
+      "punk_girl_providence1",
       "ace_trainer_yuji_0190",
       "ace_trainer_mary_0192",
       "ace_trainer_samuel_0188",
@@ -353,6 +354,7 @@ const trainerBuckets = new Map([
   [
     70,
     [
+      "punk_girl_providence2",
       "swimmerm_dean_00f3",
       "swimmerm_douglas_00ee",
       "fisherman_wade_00e7",
@@ -361,6 +363,7 @@ const trainerBuckets = new Map([
       "burglar_lewis_00db",
       "burglar_simon_00da",
       "super_nerd_zac_00b4",
+      "bird_keeper_porto",
       "scientist_ted_014f",
       "swimmerf_nora_010f",
       "swimmerm_darrin_00f4",
@@ -370,6 +373,10 @@ const trainerBuckets = new Map([
   [
     75,
     [
+      "ace_trainer_arven",
+      "ace_trainer_jexy",
+      "ace_trainer_stalwart",
+      "black_belt_blanche",
       "trainer_may_003d",
       "super_nerd_erik_00b1",
       "super_nerd_derek_00b3",
@@ -386,6 +393,11 @@ const trainerBuckets = new Map([
   [
     80,
     [
+      "super_nerd_tolstoy",
+      "ace_trainer_stream",
+      "fisher_big_bite",
+      "youngster_adam_nant",
+      "beauty_darling",
       "team_rocket_grunt_0046",
       "team_rocket_grunt_0047",
       "team_rocket_grunt_0048",
@@ -398,6 +410,7 @@ const trainerBuckets = new Map([
   [
     85,
     [
+      "ranger_grimes",
       "black_belt_daisuke_0145",
       "friendly_thug_0015",
       "friendly_thug_0016",
@@ -407,6 +420,8 @@ const trainerBuckets = new Map([
       "ace_trainer_alexa_0194",
       "pokemaniac_dawson_00a7",
       "juggler_gregory_0122",
+      "fisherman_drizzy",
+      "bug_catcher_beabadoobee"
     ],
   ],
   [
@@ -482,6 +497,7 @@ const trainerBuckets = new Map([
   [
     105,
     [
+      "punk_girl_providence3",
       "gym_crusher_alexander",
       "gym_crusher_howitzer",
       "ace_swimmer_torrent",
@@ -493,17 +509,20 @@ const trainerBuckets = new Map([
   [
     110,
     [
+      "punk_girl_providence4",
       "ace_trainer_runan_007c",
       "ace_trainer_nick_0055",
       "professor_oak_00d2",
       "gym_crusher_salad",
       "gym_rat_king",
+      "bird_keeper_glizzy",
       "gym_crusher_cruelty"
     ],
   ],
   [
     115,
     [
+      "reggie",
       "professor_oak_00c8",
       "gym_crusher_dennis",
       "raging_red",
@@ -516,7 +535,8 @@ const trainerBuckets = new Map([
       "bird_legend_arctic",
       "bird_legend_zap",
       "bird_legend_melt",
-      "gym_crusher_twine"
+      "gym_crusher_twine",
+      "gym_obliterator_blaze"
     ],
   ],
   [
@@ -524,12 +544,13 @@ const trainerBuckets = new Map([
     [
       "gym_obliterator_warp",
       "gym_obliterator_cofh",
-      "gym_obliterator_artemis"
+      "gym_obliterator_artemis",
     ],
   ],
   [
     130,
     [
+      "gym_obliterator_warlord",
       "gym_obliterator_origin",
       "gym_obliterator_tao",
       "gym_obliterator_primal"

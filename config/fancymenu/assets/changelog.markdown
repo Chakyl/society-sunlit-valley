@@ -3,4 +3,67 @@
 ### v1.0.0-SSV4.0.6
 ^^^
 --- 
-Initial release!
+- Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
+- Added Craft station, a block that allows Pokemon to craft specific items depending on their type
+  - Fire - Smelts items and smokes fish like a Fish Smoker 
+  - Fighting: Chops saplings into logs
+  - Poison - Pickles vegetables
+  - Electric: Charges batteries
+  - Psychic: Crafts Poké Genes
+  - Ice - Grows Crystals like a Crystalarium
+  - Bug - Craft potions from smoothies
+  - Steel - Crushes ores into raw form
+- Added Gardening station, a block that allows Pokemon to interact with the world
+  - Grass - Grow crops
+  - Water - Waters soil
+  - Flying - Harvests berries
+  - Dark - Defeats wild pokemon
+  - Normal - Ranches pokemon in Ranching Stations
+  - Fairy - Magic shears pokemon in Ranching Stations
+- Added Mystery Mine, a block that Pokemon can enter when provided with berries to retrieve certain items
+  - Ground - Sifts for archaeology drops
+  - Rock - Mines ores
+  - Dragon - Finds gems and valuables
+  - Ghost - Ritualistically summons mob drops
+- Added Ranching Station a block that any Pokemon can work at and be ranched with mechanics similar to Sunlit Valley's husbandry mechanics
+- Added 481 unique ranches for different Pokemon species'
+- Added Poke Mart and Ball Botique shops
+- Added Sun Raid statues to worldgen for spawning Sun Raid Pokemon
+- Added Sun Offering shop to trade Sun Raid drops for powerful/useful items 
+- Added Trainer tiers progression system
+- Added Trainer Podium - a block that lets you create your own gym and battle trainers at Diamond tier 
+- Added League Bosses every 15 wins to the Trainer Podium
+- Added Sunlit League Medallions given from League Bosses that can be exchanged for rare items
+- Added Poke Bobbers for fishing up Pokemon with Sunlit mechanics
+- Added Pofflets, a cooked item for increasing Pokemon happiness (alongside Pofflet Boxes)
+- Added loot poke balls to many structures and the Skull Cavern
+- Added Mon Boxes to Skull Cavern. They are Boxes of Mons
+- Added 7 Cobblemon specific skill books
+- Added cobblemon specific worldgen structures
+- Added Poke Radar, an item with similar properties to the Fish Radar for viewing nearby Pokemon
+- Added Pocket PC for accessing PC remotely
+- Added Wormhole Generator and Cosmic Dust for summoning Ultra-Beasts
+- Added Moon ritual for Cosmog/Cosmem/Lunala/Solego
+- Added Gem box for summoning regis and added regigigas
+- Added Cornucopia of Greed for summoning Yveltal and Blooming Ring for summoning Xerneas sun battles
+- Added Ominous Black Stake for summoning treasures of ruin and added Chi-Yu
+- Added Rainbow Steam for attracting legendary genies
+- Added Mystica Nectar for attracting legendary birds and added galarian variants
+- Added Swampy Mystica Branch for attracting lake spirits and added cresselia
+- Added Mystica Cookie, Sun Essence, and Sun Mirror for modifying Sun raid statues
+- Added Mystery Gifts
+- Added Gachamon Capusle 
+- Added Berry Capsule
+- Added TM packs
+- Added Cobblemon specific recipes to a bunch of aritsan machines
+- Added Cobblemon specific artisan products
+- Added Silph Scope, a required item for spawning Pokemon nearby
+- Added Smoothies that can be crafted by Bug type Pokmeon into potions
+- Added Ranching drops for specific Pokemon
+- Added tooltips to Pokemon eggs
+- Added unique spawns to Skull Cavern and touched up many spawn pools
+- Backported 1.21.1 Cobblemon Pokemon, bringing the release total for 1.0 to 982
+- Backported Candy and Mochi items for the latest versions of Cobblemon
+- Backported Evo stone blocks
+- Backported evo items (Metal Alloy, Syrupy Apple, Shell Helmet, etc)
+- Backported move animations (Thanks MrFreezy™!)

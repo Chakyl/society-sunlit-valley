@@ -31,6 +31,8 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("cobblemon:is_sandy", "atmospheric:scrubland");
   e.add("cobblemon:is_sandy", "atmospheric:dunes");
   e.add("cobblemon:is_desert", "atmospheric:dunes");
+  e.add("cobblemon:is_sandy", "atmospheric:petrified_dunes");
+  e.add("cobblemon:is_desert", "atmospheric:petrified_dunes");
   e.add("cobblemon:is_sandy", "atmospheric:flourishing_dunes");
   e.add("cobblemon:is_desert", "atmospheric:flourishing_dunes");
 });

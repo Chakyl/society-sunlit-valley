@@ -1,0 +1,91 @@
+{
+  "displayName": "Ace Trainer Stream",
+  "team": [
+    {
+      "species": "cobblemon:tyranitar",
+      "gender": "MALE",
+      "level": 83,
+      "nature": "cobblemon:adamant",
+      "ability": "sandstream",
+      "moveset": [
+        "rockslide",
+        "thunderfang",
+        "earthquake",
+        "firefang"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 3,
+        "defence": 26,
+        "special_attack": 31,
+        "special_defence": 4,
+        "speed": 18
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:garchomp",
+      "gender": "FEMALE",
+      "level": 83,
+      "nature": "cobblemon:quirky",
+      "ability": "sandveil",
+      "moveset": [
+        "dragonrush",
+        "dragonclaw",
+        "crunch",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 17,
+        "attack": 18,
+        "defence": 8,
+        "special_attack": 7,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:krookodile",
+      "gender": "FEMALE",
+      "level": 81,
+      "nature": "cobblemon:bashful",
+      "ability": "intimidate",
+      "moveset": [
+        "crunch",
+        "thrash",
+        "earthquake",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 4,
+        "defence": 26,
+        "special_attack": 18,
+        "special_defence": 29,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

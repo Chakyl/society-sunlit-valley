@@ -1,0 +1,92 @@
+{
+  "displayName": "Ace Trainer Jexy",
+  "team": [
+    {
+      "species": "cobblemon:kleavor",
+      "gender": "MALE",
+      "level": 74,
+      "nature": "cobblemon:mild",
+      "ability": "swarm",
+      "moveset": [
+        "swordsdance",
+        "xscissor",
+        "rockslide",
+        "stoneaxe"
+      ],
+      "ivs": {
+        "hp": 21,
+        "attack": 23,
+        "defence": 8,
+        "special_attack": 28,
+        "special_defence": 26,
+        "speed": 12
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:malamar",
+      "gender": "MALE",
+      "level": 74,
+      "nature": "cobblemon:modest",
+      "ability": "suctioncups",
+      "moveset": [
+        "superpower",
+        "knockoff",
+        "hypnosis",
+        "psychocut"
+      ],
+      "ivs": {
+        "hp": 19,
+        "attack": 11,
+        "defence": 1,
+        "special_attack": 22,
+        "special_defence": 12,
+        "speed": 13
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:talonflame",
+      "gender": "MALE",
+      "level": 77,
+      "nature": "cobblemon:relaxed",
+      "ability": "flamebody",
+      "moveset": [
+        "flamecharge",
+        "roost",
+        "bravebird",
+        "tailwind"
+      ],
+      "ivs": {
+        "hp": 28,
+        "attack": 6,
+        "defence": 13,
+        "special_attack": 24,
+        "special_defence": 18,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

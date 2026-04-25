@@ -73,7 +73,7 @@ global.cobbleAdventuring = [
   { item: "cobblemon:lucky_egg", value: 777 },
   { item: "cobblemon:loaded_dice", value: 777 },
   { item: "cobblemon:light_clay", value: 48 },
-  { item: "cobblemon:light_ball", value:  200 },
+  { item: "cobblemon:light_ball", value: 200 },
   { item: "cobblemon:life_orb", value: 400 },
   { item: "cobblemon:leftovers", value: 1 },
   { item: "cobblemon:kings_rock", value: 220 },
@@ -236,6 +236,13 @@ global.cobblemonCooking = [
   { item: "cobblemon:zinc", value: 984 },
   { item: "cobblemon:pp_up", value: 1386 },
   { item: "cobblemon:pp_max", value: 3038 },
+  { item: "cobblemon:x_attack", value: 64 },
+  { item: "cobblemon:x_defence", value: 64 },
+  { item: "cobblemon:x_special_attack", value: 64 },
+  { item: "cobblemon:x_special_defence", value: 64 },
+  { item: "cobblemon:x_accuracy", value: 64 },
+  { item: "cobblemon:dire_hit", value: 64 },
+  { item: "cobblemon:guard_spec", value: 64 },
 ].forEach((recipe) => {
   global.cobblemonCooking.push({
     item: recipe.item,
@@ -247,7 +254,7 @@ global.cobblemonCooking = [
 [
   { item: "cobblemon:muscle_mochi", value: 348 },
   { item: "cobblemon:health_mochi", value: 460 },
-  { item: "cobblemon:resist_mochi", value: 380},
+  { item: "cobblemon:resist_mochi", value: 380 },
   { item: "cobblemon:genius_mochi", value: 348 },
   { item: "cobblemon:swift_mochi", value: 359 },
   { item: "cobblemon:clever_mochi", value: 370 },
