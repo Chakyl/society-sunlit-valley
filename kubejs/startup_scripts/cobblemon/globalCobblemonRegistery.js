@@ -96,6 +96,7 @@ global.cobbleAdventuring = [
   { item: "cobblemon:damp_rock", value: 740 },
   { item: "cobblemon:covert_cloak", value: 499 },
   { item: "cobblemon:cleanse_tag", value: 1 },
+  { item: "cobblemon:peat_block", value: 1 },
   { item: "cobblemon:choice_specs", value: 800 },
   { item: "cobblemon:choice_scarf", value: 800 },
   { item: "cobblemon:choice_band", value: 800 },
