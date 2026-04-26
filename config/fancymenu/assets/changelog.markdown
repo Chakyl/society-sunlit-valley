@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.0-SSV4.0.6
+### v1.0.1-SSV4.0.6
 ^^^
 --- 
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
