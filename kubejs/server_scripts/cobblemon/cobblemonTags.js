@@ -248,4 +248,15 @@ ServerEvents.tags("block", (e) => {
       e.add(tag, block);
     });
   });
+
+  [
+    "waystones:white_sharestone",
+    "sunlit_cobblemon:sun_raid_statue",
+    "sunlit_cobblemon:poke_loot_ball",
+    "sunlit_cobblemon:great_loot_ball",
+    "sunlit_cobblemon:ultra_loot_ball",
+    "sunlit_cobblemon:beast_loot_ball"
+  ].forEach((item) => {
+    e.add("ftbchunks:interact_whitelist", item);
+  });
 });

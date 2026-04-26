@@ -1,12 +1,15 @@
 ## Sunlit Cobblemon Credits
 - Chakyl - Lead developer & gameplay designer
+
 ### Dev Contributors
 - KingKarma - Fishing, Poke-Crop pools. Trainer & League bosses
 - Hexagreen - Translation support
+
 ### Translation Contributors
 - Hexagreen - ko_kr translation 
 - Thirace - zh_cn translation
-## Building Contributors
+
+### Building Contributors
 - witchd - Poke Stops
 
 ## Sunlit Valley Credits
