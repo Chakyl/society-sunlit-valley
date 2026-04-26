@@ -1,0 +1,28 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "deerling",
+	"form": "summer",
+	"forages": [
+		{
+			"item": "society:boysenberry",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3,
+			"has_quality": true
+		},
+		{
+			"item": "society:boysenberry",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 6,
+			"has_quality": true
+		},
+		{
+			"item": "society:boysenberry",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 9,
+			"has_quality": true
+		}
+	]
+}

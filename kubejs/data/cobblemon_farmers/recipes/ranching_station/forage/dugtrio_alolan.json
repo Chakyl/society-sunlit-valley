@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "dugtrio",
+	"form": "alolan",
+	"forages": [
+		{
+			"item": "society:magma_geode",
+			"count": 3,
+			"chance": 0.35,
+			"min_hearts": 4
+		},
+		{
+			"item": "minecraft:quartz",
+			"count": 12,
+			"chance": 0.75,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:earth_crystal",
+			"count": 3,
+			"chance": 0.25,
+			"min_hearts": 8
+		}
+	]
+}

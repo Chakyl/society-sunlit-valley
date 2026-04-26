@@ -51,7 +51,7 @@ BlockEvents.placed("society:villager_home", (e) => {
 
       if (player && nearbyNPCs.length == 0) {
         server.runCommandSilent(
-          `easy_npc preset import_new custom easy_npc:preset/${npcMap.get(
+          `execute in ${level.dimension} run easy_npc preset import_new custom easy_npc:preset/${npcMap.get(
             String(villagerType)
           )}.npc.nbt ${x} ${y + 0.25} ${z}`
         );
@@ -110,7 +110,7 @@ BlockEvents.broken("society:villager_home", (e) => {
   const { block, player, level, server } = e;
   let nbt = block.getEntityData();
   const { type, placer, boundNpc } = nbt.data;
-  if (player.getUuid().toString() !== placer && placer != -1) {
+  if (player.getUuid().toString() !== placer && placer != -1 && !player.isCreative()) {
     player.tell(
       Text.translatable(
         "society.villager_home.not_invited_by_you",

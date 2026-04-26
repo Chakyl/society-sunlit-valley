@@ -1,0 +1,250 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 234,
+    "name": "Stantler",
+    "primaryType": "normal",
+    "maleRatio": 0.5,
+    "height": 14,
+    "weight": 712,
+    "pokedex": [
+        "cobblemon.species.stantler.desc"
+    ],
+    "labels": [
+        "gen2"
+    ],
+    "aspects": [],
+    "abilities": [
+        "intimidate",
+        "frisk",
+        "h:sapsipper"
+    ],
+    "eggGroups": [
+        "field"
+    ],
+    "baseStats": {
+        "hp": 73,
+        "attack": 95,
+        "defence": 62,
+        "special_attack": 85,
+        "special_defence": 65,
+        "speed": 85
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 1,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 163,
+    "experienceGroup": "slow",
+    "catchRate": 45,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 1.2,
+    "hitbox": {
+        "width": 0.8,
+        "height": 1.65,
+        "fixed": false
+    },
+    "behaviour": {
+        "resting": {
+            "canSleep": true,
+            "light": "0-4",
+            "drowsyChance": 0.0333,
+            "rouseChance": 0.0042
+        },
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "stantler",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "sawsbuck",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "wyrdeer",
+                    "tier": 2
+                }
+            ]
+        },
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            }
+        },
+        "combat": {
+            "willDefendOwner": true
+        }
+    },
+    "drops": {
+        "amount": 2,
+        "entries": [
+            {
+                "item": "minecraft:leather",
+                "quantityRange": "0-1"
+            },
+            {
+                "item": "wildernature:venison",
+                "quantityRange": "1-2"
+            },
+            {
+                "item": "cobblemon:persim_berry",
+                "percentage": 2.5
+            }
+        ]
+    },
+    "moves": [
+        "1:tackle",
+        "1:mefirst",
+        "1:jumpkick",
+        "1:captivate",
+        "3:leer",
+        "7:astonish",
+        "10:hypnosis",
+        "13:stomp",
+        "16:sandattack",
+        "21:psyshieldbash",
+        "23:confuseray",
+        "27:calmmind",
+        "32:roleplay",
+        "37:zenheadbutt",
+        "49:imprison",
+        "55:doubleedge",
+        "egg:bite",
+        "egg:disable",
+        "egg:doublekick",
+        "egg:extrasensory",
+        "egg:mefirst",
+        "egg:megahorn",
+        "egg:mudsport",
+        "egg:psyshieldbash",
+        "egg:rage",
+        "egg:spite",
+        "egg:swagger",
+        "egg:thrash",
+        "tm:agility",
+        "tm:bodyslam",
+        "tm:bounce",
+        "tm:bulldoze",
+        "tm:calmmind",
+        "tm:captivate",
+        "tm:chargebeam",
+        "tm:confuseray",
+        "tm:curse",
+        "tm:dig",
+        "tm:doubleedge",
+        "tm:dreameater",
+        "tm:earthpower",
+        "tm:earthquake",
+        "tm:endure",
+        "tm:energyball",
+        "tm:entrainment",
+        "tm:facade",
+        "tm:flash",
+        "tm:futuresight",
+        "tm:gigaimpact",
+        "tm:gravity",
+        "tm:headbutt",
+        "tm:helpinghand",
+        "tm:hyperbeam",
+        "tm:imprison",
+        "tm:irontail",
+        "tm:lastresort",
+        "tm:lightscreen",
+        "tm:lunge",
+        "tm:magicroom",
+        "tm:megahorn",
+        "tm:protect",
+        "tm:psybeam",
+        "tm:psychic",
+        "tm:psychup",
+        "tm:psyshock",
+        "tm:raindance",
+        "tm:reflect",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:roar",
+        "tm:roleplay",
+        "tm:scaryface",
+        "tm:shadowball",
+        "tm:shockwave",
+        "tm:signalbeam",
+        "tm:skillswap",
+        "tm:sleeptalk",
+        "tm:solarbeam",
+        "tm:spite",
+        "tm:storedpower",
+        "tm:substitute",
+        "tm:suckerpunch",
+        "tm:sunnyday",
+        "tm:swagger",
+        "tm:swift",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:thief",
+        "tm:throatchop",
+        "tm:thunder",
+        "tm:thunderbolt",
+        "tm:thunderwave",
+        "tm:trailblaze",
+        "tm:trick",
+        "tm:trickroom",
+        "tm:uproar",
+        "tm:wildcharge",
+        "tm:workup",
+        "tm:zenheadbutt",
+        "tutor:bounce",
+        "tutor:bulldoze",
+        "tutor:calmmind",
+        "tutor:chargebeam",
+        "tutor:earthpower",
+        "tutor:energyball",
+        "tutor:gigaimpact",
+        "tutor:gravity",
+        "tutor:helpinghand",
+        "tutor:hyperbeam",
+        "tutor:irontail",
+        "tutor:lastresort",
+        "tutor:magicroom",
+        "tutor:megahorn",
+        "tutor:psychic",
+        "tutor:rest",
+        "tutor:roleplay",
+        "tutor:shadowball",
+        "tutor:shockwave",
+        "tutor:signalbeam",
+        "tutor:skillswap",
+        "tutor:sleeptalk",
+        "tutor:spite",
+        "tutor:suckerpunch",
+        "tutor:swift",
+        "tutor:throatchop",
+        "tutor:thunderbolt",
+        "tutor:trick",
+        "tutor:uproar",
+        "tutor:wildcharge",
+        "tutor:zenheadbutt"
+    ],
+    "evolutions": [
+        {
+            "id": "stantler_wyrdeer",
+            "variant": "level_up",
+            "result": "wyrdeer",
+            "consumeHeldItem": false,
+            "learnableMoves": [
+                "psyshieldbash"
+            ],
+            "requirements": [
+                {
+                    "variant": "has_move",
+                    "move": "psyshieldbash"
+                }
+            ]
+        }
+    ]
+}

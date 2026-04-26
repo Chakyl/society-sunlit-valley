@@ -1,3 +1,19 @@
+## Sunlit Cobblemon Credits
+- Chakyl - Lead developer & gameplay designer
+
+### Dev Contributors
+- KingKarma - Fishing, Poke-Crop pools. Trainer & League bosses
+- Hexagreen - Translation support
+
+### Translation Contributors
+- Hexagreen - ko_kr translation 
+- Thirace - zh_cn translation
+
+### Building Contributors
+- witchd - Poke Stops
+
+## Sunlit Valley Credits
+
 ### Sunlit Valley Dev Team
 - Chakyl - Lead developer & gameplay designer
 - Nitbe - Artist for blocks, portraits, and items  
@@ -34,7 +50,7 @@
 - Space_mex - Skillexpnotifier mod
 - Devon - Farmer's Almanac trees, various fixes
 - copixel - Fish Finder
-- Mayhan - Various fix contributions
+- Mayhan - Shipping Bin renaming, Various fix contributions
 - Tomsauy - /debt commands
 
 ### Translation Contributors
@@ -45,6 +61,7 @@
 - Tukita - es_es translation
 - Markis_nub - es_es translation
 - Nur_sg  - es_es translation
+- Tomsauy - fr_fr translation
 
 ### Additional Credits
 - Shaders provided by Complementary Reimagined 

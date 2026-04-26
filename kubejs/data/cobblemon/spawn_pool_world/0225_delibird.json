@@ -1,0 +1,59 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "delibird-1",
+      "pokemon": "delibird",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "10-45",
+      "weight": 5.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_snowy_forest"
+        ]
+      }
+    },
+    {
+      "id": "delibird-2",
+      "pokemon": "delibird",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "43-80",
+      "weight": 5.0,
+      "condition": {
+        "biomes": [
+          "society:frozen_caves"
+        ]
+      }
+    },
+    {
+      "id": "delibird-3",
+      "pokemon": "delibird",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "43-80",
+      "weight": 1.0,
+      "condition": {
+        "biomes": [
+          "society:frozen_maelstrom"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "palossand-1",
+      "pokemon": "palossand",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "38-44",
+      "weight": 5.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_beach"
+        ]
+      }
+    },
+    {
+      "id": "palossand-2",
+      "pokemon": "palossand",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "51-86",
+      "weight": 4.0,
+      "condition": {
+        "biomes": [
+          "society:desert_caves",
+          "society:desert_fault"
+        ]
+      }
+    }
+  ]
+}

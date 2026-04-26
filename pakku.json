@@ -1,17 +1,17 @@
 {
     "name": "Society Sunlit Cobblemon",
-    "version": "PLAYTEST-9-1.0.0-SSV4.0.5",
+    "version": "1.0.0-SSV4.0.6",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
         "patchouli_books",
-        "resourcepacks/AlphabetSoup-v2.1.zip",
-        "resourcepacks/BCG x AllTheMons 1.2.0.zip"
+        "mods/Cobbreeding-forge-1.7.4.jar"
     ],
     "client_overrides": [
-        "resourcepacks",
-        "shaderpacks"
+        "resourcepacks/sunlit_overrides.zip",
+        "shaderpacks",
+        "journeymap/config"
     ],
     "projects": {
         "ambientsounds": {

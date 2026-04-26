@@ -1,3 +1,4 @@
+console.info("[SOCIETY] cobblemonRaidPokemon.js loaded");
 
 global.handleRaidPokemonBattle = (e) => {
     const battle = e.battle;
@@ -79,7 +80,7 @@ global.handleRaidDefeat = (e) => {
         let server = entityMon.getServer()
         let level = player.getLevel()
         let raidLevel = pokemon.getLevel()
-        let commandStr = `execute in ${level.dimension} run pokespawnat ${entityMon.x} ${entityMon.y} ${entityMon.z} ${pokemon.getSpecies()} ${raidMonStats.isShiny ? "shiny " : ""} ${raidMonStats.hasHiddenAbility ? "hiddenability " : ""}${raidMonStats.variant && raidMonStats.variant.equals("") ? "" : raidMonStats.variant} level=${Number(raidMonStats.spawnedLevel)}`;
+        let commandStr = `execute in ${level.dimension} run pokespawnat ${entityMon.x} ${entityMon.y} ${entityMon.z} ${pokemon.getSpecies()} ability=${pokemon.getAbility().name} ${raidMonStats.variant && raidMonStats.variant.equals("") ? "" : raidMonStats.variant} level=${Number(raidMonStats.spawnedLevel)}`;
         let tier = Math.max(0, Number(raidMonStats.tier))
         if (pokemon.getSpecies() === "lunala") { 
             commandStr = `execute in ${level.dimension} run pokespawnat ${entityMon.x} ${entityMon.y} ${entityMon.z} cosmog ${raidMonStats.isShiny ? "shiny " : ""} ${raidMonStats.hasHiddenAbility ? "hiddenability " : ""} level=1`;

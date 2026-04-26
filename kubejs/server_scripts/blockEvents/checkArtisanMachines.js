@@ -102,7 +102,7 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
   ) {
     duration = duration / 2;
   }
-  const pipCount = maxInput !== -1 ? maxInput : duration;
+  const pipCount = maxInput !== -1 ? maxInput : Math.round(duration);
   if (!primaryOutput)
     primaryOutput = id.path.replace(/^_*(.)|_+(.)/g, (s, c, d) =>
       c ? c.toUpperCase() : " " + d.toUpperCase()

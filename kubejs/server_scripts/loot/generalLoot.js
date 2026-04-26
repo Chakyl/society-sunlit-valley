@@ -270,6 +270,12 @@ LootJS.modifiers((e) => {
     "whimsy_deco:sunlit_singing_frog"
   );
   e.addBlockLootModifier("society:fish_pond").removeLoot("society:fish_pond");
+  e.addBlockLootModifier("shippingbin:basic_shipping_bin").removeLoot(
+    "shippingbin:basic_shipping_bin"
+  );
+  e.addBlockLootModifier("shippingbin:smart_shipping_bin").removeLoot(
+    "shippingbin:smart_shipping_bin"
+  );
   e.addBlockLootModifier("society:mana_fruit_crop").removeLoot(
     "society:mana_fruit_crop"
   );

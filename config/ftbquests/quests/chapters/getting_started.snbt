@@ -1,5 +1,5 @@
 {
-	autofocus_id: "1E5531421815CDB3"
+	autofocus_id: "73A85902CE35A43A"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "getting_started"
@@ -141,86 +141,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["3F759C6DEEBC61FD"]
-			description: [
-				"{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.description1}"
-				""
-				"{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.description2}"
-				""
-				"{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.description3}"
-			]
-			icon: "lootr:trophy"
-			id: "6BCAB845986C9D3A"
-			rewards: [{
-				id: "16BD4D5B954A5EF6"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:night_vision"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3315F950E66CDDD5"
-				title: "{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.task.3681122396303842773.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.getting_started.quest6BCAB845986C9D3A.title}"
-			x: 0.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1E5531421815CDB3"]
-			description: [
-				"{ftbquests.chapter.getting_started.quest3C54AC272D438F76.description1}"
-				""
-				"{ftbquests.chapter.getting_started.quest3C54AC272D438F76.description2}"
-				""
-				"{ftbquests.chapter.getting_started.quest3C54AC272D438F76.description3}"
-			]
-			id: "3C54AC272D438F76"
-			invisible: true
-			rewards: [{
-				count: 4
-				id: "76CAE59890997155"
-				item: "society:geode_buster"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7E2971598707CD6A"
-				item: "society:geode"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.getting_started.quest3C54AC272D438F76.title}"
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C54AC272D438F76"]
-			description: [
-				"{ftbquests.chapter.getting_started.quest5B7E846EEFCA5603.description1}"
-				""
-				"{ftbquests.chapter.getting_started.quest5B7E846EEFCA5603.description2}"
-			]
-			hide_until_deps_visible: true
-			id: "5B7E846EEFCA5603"
-			rewards: [{
-				id: "1D93482AF2ACEB51"
-				item: "society:omni_geode"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7848D2732F3AF28A"
-				item: "extractinator:extractinator"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.getting_started.quest5B7E846EEFCA5603.title}"
-			x: -1.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["472F40ECF199DD42"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest73A85902CE35A43A.description1}"
@@ -341,7 +261,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["24C86673E1F57A3E"]
+			dependencies: ["1A4FD076999BF29F"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest679F77E46148B5D1.description1}"
 				""
@@ -379,8 +299,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest679F77E46148B5D1.title}"
-			x: 9.5d
-			y: 0.0d
+			x: 13.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
@@ -407,7 +327,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["73A85902CE35A43A"]
+			dependencies: ["1A4FD076999BF29F"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest34FCF481CDFD3380.description1}"
 				""
@@ -447,8 +367,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest34FCF481CDFD3380.title}"
-			x: 6.0d
-			y: -3.0d
+			x: 12.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["34FCF481CDFD3380"]
@@ -471,8 +391,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest3385C414574E7FE2.title}"
-			x: 6.0d
-			y: -4.5d
+			x: 14.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
@@ -557,7 +477,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["472F40ECF199DD42"]
+			dependencies: ["24C86673E1F57A3E"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest287FFC7E15278504.description1}"
 				""
@@ -584,11 +504,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest287FFC7E15278504.title}"
-			x: 2.5d
-			y: -3.0d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["1E5531421815CDB3"]
+			dependencies: ["3F759C6DEEBC61FD"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest28029230D7FD63D6.description1}"
 				""
@@ -616,7 +536,7 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest28029230D7FD63D6.title}"
-			x: -1.5d
+			x: 0.5d
 			y: -3.0d
 		}
 		{
@@ -656,48 +576,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["472F40ECF199DD42"]
-			description: [
-				"{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.description1}"
-				""
-				"{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.description2}"
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:apple"
-				tag: {
-					quality_food: {
-						effects: [ ]
-						quality: 3
-					}
-				}
-			}
-			id: "3C02C152B8677DF1"
-			rewards: [{
-				id: "00E9E709E7AAD09D"
-				item: {
-					Count: 1
-					id: "minecraft:apple"
-					tag: {
-						quality_food: {
-							effects: [ ]
-							quality: 3
-						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "62ECA90727ED1D30"
-				title: "{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.task.7128258158420368688.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.getting_started.quest3C02C152B8677DF1.title}"
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["73A85902CE35A43A"]
+			dependencies: ["1A4FD076999BF29F"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest7D1394F6356086D0.description1}"
 				""
@@ -719,8 +598,8 @@
 				type: "biome"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest7D1394F6356086D0.title}"
-			x: 6.0d
-			y: 0.0d
+			x: 14.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["459BA5CC983CFAB9"]
@@ -731,6 +610,7 @@
 				""
 				"{ftbquests.chapter.getting_started.quest681EECD8B1D07F34.description3}"
 			]
+			hide_until_deps_complete: true
 			icon: "society:crystal_of_regret_fishing"
 			id: "681EECD8B1D07F34"
 			rewards: [{
@@ -826,13 +706,13 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest23C02B36014CC450.title}"
-			x: 8.0d
-			y: 1.5d
+			x: 14.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
-				"66D159252C70D5F2"
 				"6ADD884F3FFE5D42"
+				"1A4FD076999BF29F"
 			]
 			description: [
 				"{ftbquests.chapter.getting_started.quest4DB169DA4B4CCFBA.description1}"
@@ -910,8 +790,8 @@
 					type: "gamestage"
 				}
 			]
-			x: 8.0d
-			y: 0.0d
+			x: 12.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["66D159252C70D5F2"]
@@ -967,7 +847,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest382DC5EBB8C7C19E.title}"
-			x: 8.0d
+			x: 7.5d
 			y: -3.0d
 		}
 		{
@@ -1084,7 +964,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["382DC5EBB8C7C19E"]
+			dependencies: ["66D159252C70D5F2"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest318022FDED8803BD.description1}"
 				""
@@ -1107,8 +987,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.getting_started.quest318022FDED8803BD.title}"
-			x: 8.0d
-			y: -4.5d
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.getting_started.title}"

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "wooper",
+	"form": "paldean",
+	"forages": [
+		{
+			"item": "minecraft:mud",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "society:mudstone",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 6
+		}
+	]
+}

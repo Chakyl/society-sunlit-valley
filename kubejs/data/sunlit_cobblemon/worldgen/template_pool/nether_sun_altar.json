@@ -1,0 +1,15 @@
+{
+  "name": "sunlit_cobblemon:nether_sun_altar",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "sunlit_cobblemon:sun_altar",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

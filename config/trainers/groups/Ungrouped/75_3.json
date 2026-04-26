@@ -1,0 +1,37 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:mabosstiff",
+      "gender": "FEMALE",
+      "level": 79,
+      "nature": "cobblemon:impish",
+      "ability": "guarddog",
+      "moveset": [
+        "outrage",
+        "doubleedge",
+        "jawlock",
+        "comeuppance"
+      ],
+      "ivs": {
+        "hp": 30,
+        "attack": 27,
+        "defence": 10,
+        "special_attack": 13,
+        "special_defence": 10,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

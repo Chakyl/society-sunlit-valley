@@ -5,7 +5,7 @@
 	group: "457DCF55318282CA"
 	icon: "society:ancient_fruit"
 	id: "06219592000B9C9F"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -1231,6 +1231,27 @@
 			title: "{ftbquests.chapter.iii__advanced_farming.quest6C95E6AEEC55CFA5.title}"
 			x: 3.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["44A512703C4A9990"]
+			description: [
+				"{ftbquests.chapter.iii__advanced_farming.questA455A4E0D7D074E.description1}"
+				""
+				"{ftbquests.chapter.iii__advanced_farming.questA455A4E0D7D074E.description2}"
+			]
+			id: "0A455A4E0D7D074E"
+			rewards: [{
+				id: "7E326A0759D9BB95"
+				item: "society:yard_work_yearly"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61C5BAFB3E290916"
+				item: "moreminecarts:chiseled_organic_glass"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

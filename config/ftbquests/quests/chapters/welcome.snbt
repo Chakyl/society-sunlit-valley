@@ -11,7 +11,7 @@
 	quests: [
 		{
 			description: [
-				"Welcome to: &#FF5555S&#FF5555o&#FF5555c&#FF5D5Di&#FF6464e&#FF6C6Ct&#FF7474y&#FF7C7C: &#FF8B8BS&#FF9393u&#FF9B9Bn&#FFA2A2l&#FFAAAAi&#FFB2B2t &#FFC1C1C&#FFC9C9o&#FFD1D1b&#FFD8D8b&#FFE0E0l&#FFE8E8e&#FFF0F0m&#FFF7F7o&#FFFFFFn"
+				"{ftbquests.chapter.welcome.quest2B6877708A709B5C.description1}"
 				""
 				"{ftbquests.chapter.welcome.quest2B6877708A709B5C.description2}"
 				""
@@ -353,20 +353,20 @@
 		{
 			dependencies: ["2B6877708A709B5C"]
 			description: [
-				"&6Society: Sunlit Valley&r is a modpack made on Minecraft 1.20.1, and it's what this modpack is built on!"
+				"{ftbquests.chapter.welcome.quest4CD7DF94AD736993.description1}"
 				""
-				"The Cobblemon team no longer maintains the 1.20.1 version of the mod, so features you may be expecting from newer versions might not be present here!"
+				"{ftbquests.chapter.welcome.quest4CD7DF94AD736993.description2}"
 				""
-				"&6The Sunlit Cobblemon team has opted to backport features from the newer versions of Cobblemon instead or bringing the pack forward!&r  "
+				"{ftbquests.chapter.welcome.quest4CD7DF94AD736993.description3}"
 			]
 			icon: "cobblemon:poke_ball"
 			id: "4CD7DF94AD736993"
 			tasks: [{
 				id: "18F589F1324790A9"
-				title: "Understood!"
+				title: "{ftbquests.chapter.welcome.quest4CD7DF94AD736993.task.1798495295228055721.title}"
 				type: "checkmark"
 			}]
-			title: "Not on the latest version of Cobblemon?"
+			title: "{ftbquests.chapter.welcome.quest4CD7DF94AD736993.title}"
 			x: 0.0d
 			y: -2.0d
 		}

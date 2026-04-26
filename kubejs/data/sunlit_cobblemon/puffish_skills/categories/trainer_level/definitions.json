@@ -1,7 +1,7 @@
 {
   "twig": {
-    "title": "Twig",
-    "description": "New Poké Mart consumables\n§d+2 Worker slots",
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.twig"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.twig.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -13,7 +13,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 3,
           "operation": "addition"
         }
       },
@@ -27,8 +27,8 @@
     ]
   },
   "rock": {
-    "title": "Rock",
-    "description": "Poké-Radar sold in the Poké Mart§d+2 Worker slots",
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.rock"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.rock.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -40,7 +40,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 3,
           "operation": "addition"
         }
       },
@@ -54,8 +54,8 @@
     ]
   },
   "iron": {
-    "title": "Iron",
-    "description": "New Poké Mart consumables\nGreat Poké Bobber sold in the Poké Mart\nBall Botique\n§d+2 Worker slots",
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.iron"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.iron.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -67,7 +67,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 3,
           "operation": "addition"
         }
       },
@@ -81,8 +81,8 @@
     ]
   },
   "gold": {
-    "title": "Gold",
-    "description": "New Poké Mart consumables\n§d+2 Worker slots",
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.gold"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.gold.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -94,7 +94,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 3,
           "operation": "addition"
         }
       },
@@ -108,8 +108,8 @@
     ]
   },
   "diamond": {
-    "title": "Diamond",
-    "description": "New Poké Mart consumables\nTrainer Podium\n§d+2 Worker slots",
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.diamond"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.diamond.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -121,7 +121,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 3,
           "operation": "addition"
         }
       },
@@ -135,8 +135,8 @@
     ]
   },
   "iridium": {
-    "title": "Iridium",
-    "description": "New Poké Mart consumables\nUltra Poké Bobber sold in the Poké Mart\n§d+2 Worker slots",
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.iridium"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.iridium.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -148,7 +148,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 3,
           "operation": "addition"
         }
       },
@@ -162,8 +162,8 @@
     ]
   },
   "ancient": {
-    "title": "Ancient",
-    "description": "New Poké Mart consumables\nUltra Poké Bobber sold in the Poké Mart\n§d+2 Worker slots",
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.ancient"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.ancient.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -175,7 +175,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 3,
           "operation": "addition"
         }
       },
@@ -189,8 +189,9 @@
     ]
   },
   "prismatic": {
-    "title": "Prismatic",
-    "description": "Master Poké Bobber sold in the Poké Mart\n+4 Worker slots",
+
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.prismatic"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.prismatic.description" },
     "icon": {
       "type": "item",
       "data": {
@@ -202,7 +203,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "cobblemon_farmers:worker_cap",
-          "value": 2,
+          "value": 6,
           "operation": "addition"
         }
       },

@@ -79,13 +79,22 @@
         {
           "weight": 2,
           "data": {
-            "Name": "sunlit_cobblemon:poke_loot_ball"
+            "Name": "sunlit_cobblemon:great_loot_ball"
           }
         },
         {
           "weight": 1,
           "data": {
-            "Name": "sunlit_cobblemon:great_loot_ball"
+            "Name": "sunlit_cobblemon:ultra_loot_ball"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "sunlit_cobblemon:mon_box",
+            "Properties": {
+              "facing": "up"
+            }
           }
         }
       ]

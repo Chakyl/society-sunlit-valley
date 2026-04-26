@@ -1,0 +1,331 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "cobblemon:great_ball",
+					"weight": 16,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:safari_ball",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:timer_ball",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:silver_powder",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:exp_candy_m",
+					"weight": 4,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:net_ball",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "sunlit_cobblemon:berry_capsule",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:exp_candy_l",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "sunlit_cobblemon:pofflet_box",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:hyper_potion",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "society:plushie_capsule",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:love_ball",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:vivichoke_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:revive",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:genius_mochi",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:swift_mochi",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:clever_mochi",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:resist_mochi",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:muscle_mochi",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:health_mochi",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:genius_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:swift_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:clever_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:resist_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:muscle_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:health_feather",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:blue_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:red_mint_seeds",
+				"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:white_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:green_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:pink_mint_seeds",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cobblemon:cyan_mint_seeds",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

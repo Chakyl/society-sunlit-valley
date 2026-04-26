@@ -244,6 +244,15 @@ if (global.datagenDialog) {
           "...You aren't exactly subtle..."
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "@i @i @i! This is important!",
+          "I'm really not good with cats, and I found this ratty one behind the market the other day.",
+          "It looks kinda scary though so I ended up catching it so it wouldn't go on a little hunting spree.",
+          "I think it's called Zeraora? Please just take it off my hands!"
+        ]
+      }
     ]
   });
 }

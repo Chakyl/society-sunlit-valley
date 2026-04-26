@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "diglett",
+	"form": "alolan",
+	"forages": [
+		{
+			"item": "society:magma_geode",
+			"count": 1,
+			"chance": 0.35,
+			"min_hearts": 2
+		},
+		{
+			"item": "minecraft:quartz",
+			"count": 4,
+			"chance": 0.75,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:earth_crystal",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 6
+		}
+	]
+}

@@ -615,19 +615,33 @@
 				}
 			}
 			id: "17064AEF4212B5FF"
-			rewards: [{
-				id: "7F09D6B4763C154A"
-				item: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:perfection"
+			rewards: [
+				{
+					id: "7F09D6B4763C154A"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:perfection"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "5458874CD7977464"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:mystery_gift"
+						tag: {
+							ot: "Chakyl"
+							pokemon: "victini"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "none"
 			size: 3.0d
 			subtitle: "{ftbquests.chapter.perfection.quest17064AEF4212B5FF.subtitle}"

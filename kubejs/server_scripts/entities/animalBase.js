@@ -10,6 +10,7 @@ const debugData = (player, level, data, hearts) => {
     )}`
   );
   player.tell(`Mood: ${data.getInt("lastMood")}`);
+  player.tell(`Day Mood last set: ${data.getInt("ageLastSetMood")}`);
   player.tell(`Pet: ${data.getInt("ageLastPet")}`);
   player.tell(`Fed: ${data.getInt("ageLastFed")}`);
   player.tell(`Boosted feed: ${data.getInt("ageLastBoosted")}`);
@@ -38,15 +39,11 @@ const initializeFarmAnimal = (day, target, level) => {
   const newBaseDay = day - 1;
   if (!data.getInt("ageLastPet")) data.ageLastPet = newBaseDay;
   if (!data.getInt("ageLastFed")) data.ageLastFed = newBaseDay;
-  if (!data.getInt("ageLastDroppedSpecial"))
-    data.ageLastDroppedSpecial = newBaseDay;
-  if (!data.getInt("ageLastMagicHarvested"))
-    data.ageLastMagicHarvested = newBaseDay;
+  if (!data.getInt("ageLastDroppedSpecial")) data.ageLastDroppedSpecial = newBaseDay;
+  if (!data.getInt("ageLastMagicHarvested")) data.ageLastMagicHarvested = newBaseDay;
+  if (!data.getInt("ageLastMoodSet")) data.ageLastMoodSet = newBaseDay;
   if (!data.getInt("ageLastBred")) data.ageLastBred = newBaseDay;
-  if (
-    !data.getInt("ageLastMilked") &&
-    global.checkEntityTag(target, "society:milkable_animal")
-  )
+  if (!data.getInt("ageLastMilked") && global.checkEntityTag(target, "society:milkable_animal"))
     data.ageLastMilked = newBaseDay;
 };
 
@@ -64,6 +61,7 @@ const handleFarmAnimalBackwardsCompat = (target, day) => {
     data.ageLastDroppedSpecial = newDay;
     data.ageLastBred = newDay;
     data.ageLastFed = newDay;
+    data.ageLastMoodSet = newDay;
   }
 };
 
@@ -564,7 +562,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       const lostProduce = mood < 64 && Math.random() < mood / 64;
       let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
       player.swing();
-      const mood = global.getOrFetchMood(level, target, day, player);
+      const mood = global.getOrFetchMood(level, target, day, player, false, true);
       handlePet(name, data, mood, day, peckish, hungry, eventData);
       if (pet) return;
       if (item.hasTag("society:animal_feed") && !pet)

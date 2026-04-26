@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "comfey",
+	"forages": [
+		{
+			"item": "society:bouquet_bag",
+			"count": 1,
+			"chance": 0.92,
+			"min_hearts": 4
+		},
+		{
+			"item": "windswept:holly_wreath",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 8
+		}
+	]
+}

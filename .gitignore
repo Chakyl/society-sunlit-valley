@@ -4,7 +4,6 @@ blueprints/
 portable_blueprints/tablet_data
 crash-reports/
 emojiful/cache
-journeymap/
 xaero/
 local/
 logs
@@ -36,6 +35,7 @@ usercache.json
 usernamecache.json
 .curseclient
 .qmenu_opened.marker
+emi.json
 rhino.local.properties
 minecraftinstance.json
 user-prefs.json
@@ -52,3 +52,6 @@ lwjgl_opengl.dll
 lwjgl_stb.dll
 lwjgl.dll
 OpenAL.dll
+/journeymap/*
+!/journeymap/config
+!/journeymap/config/5.10

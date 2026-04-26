@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "electrode",
+	"form": "hisuian",
+	"forages": [
+		{
+			"item": "minecraft:tnt",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "cobblemon:ancient_poke_ball",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

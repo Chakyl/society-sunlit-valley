@@ -1,0 +1,48 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "crustle",
+	"forages": [
+		{
+			"item": "atmospheric:crustose",
+			"count": 2,
+			"chance": 1,
+			"min_hearts": 0
+		},
+		{
+			"item": "society:crab_roe",
+			"count": 2,
+			"chance": 1,
+			"min_hearts": 0
+		},
+		{
+			"item": "society:earth_crystal",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:crab_roe",
+			"count": 2,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:crab_roe",
+			"count": 2,
+			"chance": 1,
+			"min_hearts": 6
+		},
+		{
+			"item": "cobblemon:bug_gem",
+			"count": 1,
+			"chance": 0.4,
+			"min_hearts": 8
+		},
+		{
+			"item": "crabbersdelight:crab_claw",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 9
+		}
+	]
+}

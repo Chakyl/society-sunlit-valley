@@ -6,7 +6,10 @@
     {
       "id": "sigilyph-2",
       "pokemon": "sigilyph",
-      "presets": ["natural", "desert_pyramid"],
+      "presets": [
+        "natural",
+        "desert_pyramid"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "common",
@@ -15,14 +18,21 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "biomes": ["#cobblemon:is_overworld"],
-        "structures": ["minecraft:desert_well"]
+        "biomes": [
+          "#cobblemon:is_overworld"
+        ],
+        "structures": [
+          "minecraft:desert_well"
+        ]
       }
     },
     {
       "id": "sigilyph-3",
       "pokemon": "sigilyph",
-      "presets": ["natural", "jungle_pyramid"],
+      "presets": [
+        "natural",
+        "jungle_pyramid"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "common",
@@ -31,13 +41,18 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "biomes": ["#cobblemon:is_overworld"]
+        "biomes": [
+          "#cobblemon:is_overworld"
+        ]
       }
     },
     {
       "id": "sigilyph-1",
       "pokemon": "sigilyph",
-      "presets": ["natural", "ruins"],
+      "presets": [
+        "natural",
+        "ruins"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "rare",
@@ -46,13 +61,17 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "biomes": ["#cobblemon:is_sandy"]
+        "biomes": [
+          "#cobblemon:is_sandy"
+        ]
       }
     },
     {
       "id": "sigilyph-4",
       "pokemon": "sigilyph",
-      "presets": ["trail_ruins"],
+      "presets": [
+        "trail_ruins"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "common",
@@ -61,35 +80,26 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "biomes": ["#cobblemon:is_overworld"]
+        "biomes": [
+          "#cobblemon:is_overworld"
+        ]
       }
     },
     {
       "id": "sigilyph-5",
       "pokemon": "sigilyph",
-      "presets": ["natural"],
+      "presets": [
+        "natural"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "uncommon",
       "level": "49-60",
       "weight": 6.0,
       "condition": {
-        "biomes": ["society:desert_fault"]
-      }
-    },
-    {
-      "id": "sigilyph-6",
-      "pokemon": "sigilyph",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "common",
-      "level": "24-49",
-      "weight": 6.0,
-      "condition": {
-        "biomes": ["the_bumblezone:howling_constructs"]
-      },
-      "anticondition": {
-        "structures": ["#the_bumblezone:sempiternal_sanctums"]
+        "biomes": [
+          "society:desert_fault"
+        ]
       }
     }
   ]

@@ -163,6 +163,15 @@ if (global.datagenDialog) {
           "...It's our secret!"
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "Hey @i, I've got something special for you!",
+          "I learned how to make Magearna during my smithing apprenticeship, and it's very close to my heart.",
+          "I have no idea how Haruna manages to find the Soul Hearts required to make a Pokémon like this.",
+          "You won't find anything like this elsewhere, so I figured a trainer like you would appreciate it!"
+        ]
+      },
     ]
   });
 }

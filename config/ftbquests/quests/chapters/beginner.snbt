@@ -1,29 +1,29 @@
 {
-	autofocus_id: "666FB123AAD70030"
+	autofocus_id: "50C5F52359BCCD70"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "beginner"
-	group: ""
+	group: "13003519EF914BA5"
 	icon: "cobblemon:master_ball"
 	id: "210AA16BCC8B86BF"
-	order_index: 2
+	order_index: 0
 	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["7D2F9E3B2518309C"]
 			description: [
-				"There are 8 trainer tiers:"
-				"&c-Twig&r"
-				"&c-Rock&r "
-				"&c-Iron&r"
-				"&b-Gold&r"
-				"&b-Diamond&r"
-				"&b-Iridium&r"
-				"&d-Ancient&r "
-				"&d-Prismatic&r"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description1}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description2}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description3}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description4}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description5}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description6}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description7}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description8}"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description9}"
 				""
-				"Each tier will get progressively more difficult to achieve... Good luck trainer!"
+				"{ftbquests.chapter.beginner.quest201D4A576453FB99.description10}"
 			]
 			icon: "cobblemon:poke_ball"
 			id: "201D4A576453FB99"
@@ -43,15 +43,15 @@
 			size: 2.0d
 			tasks: [{
 				id: "5177AF695ADF4B3C"
-				title: "Aye Aye Captain"
+				title: "{ftbquests.chapter.beginner.quest201D4A576453FB99.task.5870353506331740988.title}"
 				type: "checkmark"
 			}]
-			title: "Trainer Tiers"
+			title: "{ftbquests.chapter.beginner.quest201D4A576453FB99.title}"
 			x: -16.0d
 			y: -3.0d
 		}
 		{
-			description: ["To &eCatch&r a Pokémon you just chuck a Pokè Ball at its head.."]
+			description: ["{ftbquests.chapter.beginner.quest4EEFAEB610213563.description1}"]
 			id: "4EEFAEB610213563"
 			rewards: [
 				{
@@ -81,15 +81,15 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Catch 5 pokemon"
+				title: "{ftbquests.chapter.beginner.quest4EEFAEB610213563.task.454822239700131283.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Catch 5x Pokémon"
+			title: "{ftbquests.chapter.beginner.quest4EEFAEB610213563.title}"
 			x: -24.0d
 			y: 0.0d
 		}
 		{
-			description: ["To &eLevel Up&r Pokémon you can either fight wild Pokémon, catch wild Pokémon, or use candies!"]
+			description: ["{ftbquests.chapter.beginner.questF9034B6551CB99E.description1}"]
 			icon: "cobblemon:great_ball"
 			id: "0F9034B6551CB99E"
 			rewards: [
@@ -121,10 +121,10 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Level Up x10"
+				title: "{ftbquests.chapter.beginner.questF9034B6551CB99E.task.945656568559401934.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Level Up 10x Pokemon"
+			title: "{ftbquests.chapter.beginner.questF9034B6551CB99E.title}"
 			x: -22.0d
 			y: 0.0d
 		}
@@ -153,15 +153,15 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Defeat x5 "
+				title: "{ftbquests.chapter.beginner.quest3445937422AC3866.task.8841474230544175639.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Defeat 5x Pokémon"
+			title: "{ftbquests.chapter.beginner.quest3445937422AC3866.title}"
 			x: -20.0d
 			y: 0.0d
 		}
 		{
-			description: ["Don't worry, they'll let you know when its time to evolve!"]
+			description: ["{ftbquests.chapter.beginner.quest6F67FB69D101E731.description1}"]
 			icon: "cobblemon:luxury_ball"
 			id: "6F67FB69D101E731"
 			rewards: [{
@@ -221,7 +221,7 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Catch 10x Pokémon"
+				title: "{ftbquests.chapter.beginner.quest516FF5028F8EE1E5.task.2535653549906981669.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -24.0d
@@ -290,7 +290,7 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Evolve 3x Pokémon"
+				title: "{ftbquests.chapter.beginner.quest2FDF83431B2845C4.task.2155780537931482059.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -18.0d
@@ -367,11 +367,19 @@
 			dependencies: ["0F3E297B983F40DC"]
 			icon: "cobblemon:great_ball"
 			id: "45BBB1C3DD5D7554"
-			rewards: [{
-				id: "7F99DCEA7ACC0DB0"
-				item: "cobblemon:exp_candy_l"
-				type: "item"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "31741F09D321347B"
+					table_id: 6979018325962330524L
+					type: "choice"
+				}
+				{
+					id: "2457D2CDDFB47CFA"
+					item: "cobblemon:exp_candy_l"
+					type: "item"
+				}
+			]
 			tasks: [{
 				action: "level_up"
 				amount: 25L
@@ -431,9 +439,9 @@
 		}
 		{
 			description: [
-				"Keeping your PC tidy is essential to being a good trainer!"
+				"{ftbquests.chapter.beginner.quest5128C6A1AC72BAF9.description1}"
 				""
-				"Releasing Pokémon is a better alternative to letting them collect dust..."
+				"{ftbquests.chapter.beginner.quest5128C6A1AC72BAF9.description2}"
 			]
 			icon: "candlelight:hearth"
 			id: "5128C6A1AC72BAF9"
@@ -449,7 +457,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "if you love me... let me goohoohoo..."
+			subtitle: "{ftbquests.chapter.beginner.quest5128C6A1AC72BAF9.subtitle}"
 			tasks: [{
 				action: "release"
 				amount: 1L
@@ -608,11 +616,11 @@
 				icon: "twigs:twig"
 				id: "6F6C8D949639DAEA"
 				stat: "minecraft:play_time"
-				title: "Twig Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest30F339B9F7D920A6.task.8028947905009801962.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Twig Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest30F339B9F7D920A6.title}"
 			x: -16.0d
 			y: 0.0d
 		}
@@ -648,11 +656,11 @@
 				icon: "cobblemon:smooth_rock"
 				id: "627D9F22F3E857FB"
 				stat: "minecraft:play_time"
-				title: "Rock Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest50C5F52359BCCD70.task.7097003560275564539.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Rock Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest50C5F52359BCCD70.title}"
 			x: -16.0d
 			y: 3.0d
 		}
@@ -691,11 +699,11 @@
 				icon: "minecraft:iron_ingot"
 				id: "3163DB74C0C9743D"
 				stat: "minecraft:play_time"
-				title: "Iron Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest5DA6D446CABC0364.task.3558929425049941053.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Iron Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest5DA6D446CABC0364.title}"
 			x: -16.0d
 			y: 6.0d
 		}
@@ -705,7 +713,7 @@
 				"5DA6D446CABC0364"
 				"50C5F52359BCCD70"
 			]
-			description: ["Go get yourself something nice!"]
+			description: ["{ftbquests.chapter.beginner.quest666FB123AAD70030.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "666FB123AAD70030"
@@ -729,11 +737,11 @@
 				icon: "cobblemon:great_ball"
 				id: "5A8F266719E7C536"
 				stat: "minecraft:play_time"
-				title: "Beginner Rank Complete!"
+				title: "{ftbquests.chapter.beginner.quest666FB123AAD70030.task.6525476609341244726.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Beginner Graduation"
+			title: "{ftbquests.chapter.beginner.quest666FB123AAD70030.title}"
 			x: -16.0d
 			y: 9.0d
 		}
@@ -931,8 +939,8 @@
 					type: "command"
 				}
 				{
-					id: "2D60D73CA617DBDA"
-					item: "cobblemon:pasture"
+					id: "62DCEB6449E0C47C"
+					item: "sunlit_cobblemon:pocket_pc"
 					type: "item"
 				}
 			]
@@ -943,11 +951,11 @@
 				icon: "minecraft:gold_ingot"
 				id: "126D9BC160E08050"
 				stat: "minecraft:play_time"
-				title: "Gold Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest68F841C646C9F9E1.task.1327888720000483408.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Gold Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest68F841C646C9F9E1.title}"
 			x: -16.0d
 			y: 12.0d
 		}
@@ -1092,8 +1100,8 @@
 				"409E50E24D3A21EB"
 				"081919C8B667A323"
 				"7B927AB7B13FFFFB"
-				"5D7933D069120536"
 				"07E1572255DB805D"
+				"5A1F3015336F0E33"
 			]
 			icon: "minecraft:diamond"
 			id: "565B2D10A6CA81A4"
@@ -1119,11 +1127,11 @@
 				icon: "minecraft:diamond"
 				id: "0B6A5139C7A2F5F5"
 				stat: "minecraft:play_time"
-				title: "Diamond Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest565B2D10A6CA81A4.task.822559190552868341.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Diamond Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest565B2D10A6CA81A4.title}"
 			x: -16.0d
 			y: 15.0d
 		}
@@ -1160,7 +1168,7 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Revive 1 Fossil"
+				title: "{ftbquests.chapter.beginner.quest301935045A947BFE.task.9100680211640272579.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -12.0d
@@ -1227,7 +1235,7 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Level up a Pokémon to Level 50"
+				title: "{ftbquests.chapter.beginner.quest81919C8B667A323.task.496719626182903981.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -22.0d
@@ -1237,13 +1245,13 @@
 			dependencies: [
 				"2D94FDC9C3511DDE"
 				"3DC94224FC36F53F"
-				"5A1F3015336F0E33"
 				"59C598EBB9AFAC09"
 				"5838565EAA6C8520"
 				"2376172C07043895"
 				"7EDC20FE5F42795D"
 				"301935045A947BFE"
 				"79652361E24ABCD5"
+				"5D7933D069120536"
 			]
 			icon: "minecraft:netherite_ingot"
 			id: "779E4A54071E24F4"
@@ -1257,8 +1265,8 @@
 					type: "command"
 				}
 				{
-					id: "6C66B8E5EA185FF3"
-					item: "sunlit_cobblemon:poke_genes"
+					id: "3D648A729EE46B92"
+					item: "cobblemon:pasture"
 					type: "item"
 				}
 			]
@@ -1269,11 +1277,11 @@
 				icon: "minecraft:netherite_ingot"
 				id: "4CEE2817D99477DD"
 				stat: "minecraft:play_time"
-				title: "Iridium Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest779E4A54071E24F4.task.5543412274239403997.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Iridium Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest779E4A54071E24F4.title}"
 			x: -16.0d
 			y: 18.0d
 		}
@@ -1513,7 +1521,7 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -14.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["666FB123AAD70030"]
@@ -1603,7 +1611,7 @@
 				"565B2D10A6CA81A4"
 				"68F841C646C9F9E1"
 			]
-			description: ["Go get yourself something nice!"]
+			description: ["{ftbquests.chapter.beginner.quest1D5ABDB54D158E4D.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1D5ABDB54D158E4D"
@@ -1631,11 +1639,11 @@
 				icon: "cobblemon:ultra_ball"
 				id: "728C6B40C6C15405"
 				stat: "minecraft:play_time"
-				title: "Intermediate Rank Complete!"
+				title: "{ftbquests.chapter.beginner.quest1D5ABDB54D158E4D.task.8254090143019914245.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Intermediate Graduation"
+			title: "{ftbquests.chapter.beginner.quest1D5ABDB54D158E4D.title}"
 			x: -16.0d
 			y: 21.5d
 		}
@@ -1675,11 +1683,11 @@
 				icon: "society:ancient_fruit"
 				id: "157EBBF6308E5D35"
 				stat: "minecraft:play_time"
-				title: "Ancient Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest279B9BE5A850C517.task.1548881987913014581.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Ancient Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest279B9BE5A850C517.title}"
 			x: -16.0d
 			y: 25.0d
 		}
@@ -1868,7 +1876,8 @@
 			id: "762B08326046D3EF"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "3A41F152CD56B5FB"
+				id: "4F5985FC6B22A57B"
+				table_id: 2454335040232007403L
 				type: "choice"
 			}]
 			tasks: [{
@@ -1960,7 +1969,7 @@
 				time_min: 0L
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			title: "Revive 5 Fossils"
+			title: "{ftbquests.chapter.beginner.quest6CF329242494B90.title}"
 			x: -12.0d
 			y: 25.0d
 		}
@@ -2026,7 +2035,7 @@
 				shiny: false
 				time_max: 24000L
 				time_min: 0L
-				title: "Level up a Pokémon to Level 100"
+				title: "{ftbquests.chapter.beginner.quest78D53D4EAFB02D71.task.75601552986857807.title}"
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -14.0d
@@ -2241,7 +2250,7 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -14.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["1D5ABDB54D158E4D"]
@@ -2660,9 +2669,18 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "380475D88FD498B5"
-					type: "choice"
+					id: "5FBF9EC22FBD405B"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:gachamon_capsule"
+						tag: {
+							quality_food: {
+								quality: 3
+							}
+							type: "paradox"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -2731,7 +2749,7 @@
 					type: "cobblemon_tasks:cobblemon_task"
 				}
 			]
-			title: "Catch Xerneas or Yveltel"
+			title: "{ftbquests.chapter.beginner.quest4350C5EFABB9B8A1.title}"
 			x: -14.0d
 			y: 31.5d
 		}
@@ -2787,11 +2805,11 @@
 				icon: "society:prismatic_shard"
 				id: "5FA7680CF8BA0085"
 				stat: "minecraft:play_time"
-				title: "Prismatic Tier Achieved"
+				title: "{ftbquests.chapter.beginner.quest1CB70EFDB8061E2D.task.6892592159635669125.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Prismatic Tier Complete!"
+			title: "{ftbquests.chapter.beginner.quest1CB70EFDB8061E2D.title}"
 			x: -16.0d
 			y: 29.5d
 		}
@@ -2808,48 +2826,26 @@
 				"30F339B9F7D920A6"
 				"1CB70EFDB8061E2D"
 			]
-			description: ["Go get yourself something nice!"]
+			description: ["{ftbquests.chapter.beginner.quest4B92B2695C922E12.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "4B92B2695C922E12"
-			rewards: [
-				{
-					id: "7F9128D0DAA3C8A1"
-					item: "cobblemon:master_ball"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "70E6BD1A13CD047E"
-					item: "numismatics:ancient_coin"
-					type: "item"
-				}
-				{
-					id: "62011CD16AC484EA"
-					item: {
-						Count: 1
-						id: "sunlit_cobblemon:gachamon_capsule"
-						tag: {
-							quality_food: {
-								quality: 3
-							}
-							type: "paradox"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "7F9128D0DAA3C8A1"
+				item: "cobblemon:master_ball"
+				type: "item"
+			}]
 			size: 2.5d
 			tasks: [{
 				disable_toast: true
 				icon: "cobblemon:master_ball"
 				id: "65AD8539AB84C1DE"
 				stat: "minecraft:play_time"
-				title: "Master Rank Complete!"
+				title: "{ftbquests.chapter.beginner.quest4B92B2695C922E12.task.7326658651538899422.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Master Graduation"
+			title: "{ftbquests.chapter.beginner.quest4B92B2695C922E12.title}"
 			x: -16.0d
 			y: 33.20238095238099d
 		}
@@ -2989,5 +2985,5 @@
 			y: 25.0d
 		}
 	]
-	title: "Trainer Level"
+	title: "{ftbquests.chapter.beginner.title}"
 }

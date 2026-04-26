@@ -484,12 +484,25 @@ if (runRanchingDataGen) {
             forages: [
                 {
                     item: "sunlit_cobblemon:strange_spore",
-                    count: 3,
+                    count: 1,
+                    chance: 0.3,
+                    has_quality: true,
+                    min_hearts: 2
+                },
+                {
+                    item: "sunlit_cobblemon:strange_spore",
+                    count: 1,
                     chance: 0.4,
                     has_quality: true,
-                    min_hearts: 0
+                    min_hearts: 4
+                },
+                {
+                    item: "sunlit_cobblemon:strange_spore",
+                    count: 1,
+                    chance: 0.5,
+                    has_quality: true,
+                    min_hearts: 6
                 }
-
             ]
         },
         {
@@ -497,9 +510,9 @@ if (runRanchingDataGen) {
             forages: [
                 {
                     item: "sunlit_cobblemon:strange_spore",
-                    count: 2,
-                    chance: 0.1,
-                    min_hearts: 8
+                    count: 1,
+                    chance: 0.6,
+                    min_hearts: 4
                 },
                 {
                     item: "society:cordycep",
@@ -945,6 +958,172 @@ if (runRanchingDataGen) {
             ],
         },
         {
+            pokemon: "diglett",
+            forages: [
+                {
+                    item: "society:geode",
+                    count: 1,
+                    chance: 0.35,
+                    min_hearts: 2
+                },
+                {
+                    item: "minecraft:raw_copper",
+                    count: 1,
+                    chance: 0.75,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:earth_crystal",
+                    count: 1,
+                    chance: 0.25,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "dugtrio",
+            forages: [
+                {
+                    item: "society:geode",
+                    count: 3,
+                    chance: 0.35,
+                    min_hearts: 4
+                },
+                {
+                    item: "minecraft:raw_copper",
+                    count: 3,
+                    chance: 0.75,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:earth_crystal",
+                    count: 3,
+                    chance: 0.25,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "diglett",
+            form: "alolan",
+            forages: [
+                {
+                    item: "society:magma_geode",
+                    count: 1,
+                    chance: 0.35,
+                    min_hearts: 2
+                },
+                {
+                    item: "minecraft:quartz",
+                    count: 4,
+                    chance: 0.75,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:earth_crystal",
+                    count: 1,
+                    chance: 0.25,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "dugtrio",
+            form: "alolan",
+            forages: [
+                {
+                    item: "society:magma_geode",
+                    count: 3,
+                    chance: 0.35,
+                    min_hearts: 4
+                },
+                {
+                    item: "minecraft:quartz",
+                    count: 12,
+                    chance: 0.75,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:earth_crystal",
+                    count: 3,
+                    chance: 0.25,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "ferroseed",
+            forages: [
+                {
+                    item: "minecraft:moss_block",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "minecraft:moss_block",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "minecraft:moss_block",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "create:crushed_raw_iron",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:mossberry',
+                    count: 1,
+                    chance: 0.8,
+                    has_quality: true,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "ferrothorn",
+            forages: [
+                {
+                    item: "minecraft:moss_block",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "minecraft:moss_block",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "minecraft:moss_block",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "create:crushed_raw_iron",
+                    count: 4,
+                    chance: 0.8,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:mossberry',
+                    count: 3,
+                    chance: 0.5,
+                    has_quality: true,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
             pokemon: "geodude",
             forages: [
                 {
@@ -1003,6 +1182,374 @@ if (runRanchingDataGen) {
                     count: 1,
                     chance: 0.1,
                     min_hearts: 9
+                }
+            ],
+        },
+        {
+            pokemon: "torkoal",
+            forages: [
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'minecraft:turtle_egg',
+                    count: 2,
+                    chance: 0.3,
+                    min_hearts: 5
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: "society:nether_jelly",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "turtonator",
+            forages: [
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'minecraft:turtle_egg',
+                    count: 2,
+                    chance: 0.3,
+                    min_hearts: 5
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'society:starshell_turtle_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'society:smoked_magmacubefish',
+                    count: 1,
+                    chance: 0.2,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "tirtouga",
+            forages: [
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'minecraft:scute',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "carracosta",
+            forages: [
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'minecraft:turtle_egg',
+                    count: 2,
+                    chance: 0.3,
+                    min_hearts: 5
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'crittersandcompanions:clam',
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "chewtle",
+            forages: [
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'minecraft:scute',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "drednaw",
+            forages: [
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'minecraft:turtle_egg',
+                    count: 2,
+                    chance: 0.3,
+                    min_hearts: 5
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:arrau_turtle_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: "unusualfishmod:ripper_tooth",
+                    count: 1,
+                    chance: 0.03,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "goldeen",
+            forages: [
+                {
+                    item: 'society:goldfish_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:goldfish_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'society:goldfish_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:goldfish_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "seaking",
+            forages: [
+                {
+                    item: 'society:goldfish_roe',
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:goldfish_roe',
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'society:goldfish_roe',
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:goldfish_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'cobblemon:water_gem',
+                    count: 4,
+                    chance: 0.67,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "corphish",
+            forages: [
+                {
+                    item: 'society:clawster_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:clawster_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'society:clawster_roe',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:clawster_roe',
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "crawdaunt",
+            forages: [
+                {
+                    item: 'society:clawster_roe',
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: 'society:clawster_roe',
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'society:clawster_roe',
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:clawster_roe',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
                 }
             ],
         },
@@ -1383,16 +1930,69 @@ if (runRanchingDataGen) {
             pokemon: "cubone",
             forages: [
                 {
+                    item: "minecraft:bone",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 10
+                },
+                {
                     item: "betterarcheology:artifact_shards",
                     count: 3,
                     chance: 0.25,
                     min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "cubone",
+            form: "alolabias",
+            forages: [
+                {
+                    item: "minecraft:bone",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 10
                 },
                 {
-                    item: "mysticaloaktree:wise_oak",
+                    item: "betterarcheology:artifact_shards",
+                    count: 3,
+                    chance: 0.25,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "marowak",
+            forages: [
+                {
+                    item: "betterarcheology:artifact_shards",
+                    count: 3,
+                    chance: 0.45,
+                    min_hearts: 5
+                },
+                {
+                    item: "minecraft:skeleton_skull",
                     count: 1,
-                    chance: 0.01,
-                    min_hearts: 10
+                    chance: 0.08,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "marowak",
+            form: "alolan",
+            forages: [
+                {
+                    item: "betterarcheology:artifact_shards",
+                    count: 3,
+                    chance: 0.45,
+                    min_hearts: 5
+                },
+                {
+                    item: "minecraft:wither_skeleton_skull",
+                    count: 1,
+                    chance: 0.08,
+                    min_hearts: 7
                 }
             ],
         },
@@ -1501,7 +2101,7 @@ if (runRanchingDataGen) {
                     min_hearts: 4
                 },
                 {
-                    item: "sunlit_cobblemon:permafrost",
+                    item: "sunlit_cobblemon:permafrost_drop",
                     count: 1,
                     chance: 0.05,
                     has_quality: true,
@@ -1513,7 +2113,7 @@ if (runRanchingDataGen) {
             pokemon: "cryogonal",
             forages: [
                 {
-                    item: "sunlit_cobblemon:permafrost",
+                    item: "sunlit_cobblemon:permafrost_drop",
                     count: 1,
                     chance: 1,
                     has_quality: true,
@@ -1621,7 +2221,7 @@ if (runRanchingDataGen) {
                     min_hearts: 2
                 },
                 {
-                    item: "sunlit_cobblemon:permafrost",
+                    item: "sunlit_cobblemon:permafrost_drop",
                     count: 1,
                     chance: 0.8,
                     min_hearts: 8
@@ -1638,10 +2238,34 @@ if (runRanchingDataGen) {
                     min_hearts: 2
                 },
                 {
-                    item: "sunlit_cobblemon:permafrost",
+                    item: "sunlit_cobblemon:permafrost_drop",
                     count: 1,
                     chance: 0.2,
                     min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "avalugg",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "minecraft:ice",
+                    count: 16,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "minecraft:gravel",
+                    count: 16,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "sunlit_cobblemon:permafrost_drop",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 4
                 }
             ],
         },
@@ -1705,6 +2329,18 @@ if (runRanchingDataGen) {
                     min_hearts: 3
                 }
             ],
+        },
+        {
+            pokemon: "aron",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
+            pokemon: "lairon",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
+            pokemon: "aggron",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
         },
         {
             pokemon: "kabuto",
@@ -2094,6 +2730,76 @@ if (runRanchingDataGen) {
             milk: { sm: "minecraft:magma_cream", lg: "society:nether_jelly" },
         },
         {
+            pokemon: "vulpix",
+            forages: [
+                {
+                    item: "minecraft:sweet_berries",
+                    count: 6,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "society:fire_quartz",
+                    count: 1,
+                    chance: 0.2,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "ninetales",
+            forages: [
+                {
+                    item: "minecraft:sweet_berries",
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:fire_gem",
+                    count: 1,
+                    chance: 0.2,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "vulpix",
+            form: "alolan",
+            forages: [
+                {
+                    item: 'windswept:wild_berries',
+                    count: 6,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "society:frozen_tear",
+                    count: 1,
+                    chance: 0.45,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "ninetales",
+            form: "alolan",
+            forages: [
+                {
+                    item: 'windswept:wild_berries',
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:ice_gem",
+                    count: 1,
+                    chance: 0.2,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
             pokemon: "bounsweet",
             forages: [
                 {
@@ -2125,6 +2831,385 @@ if (runRanchingDataGen) {
                     chance: 0.15,
                     min_hearts: 10
                 }
+            ],
+        },
+        {
+            pokemon: "exeggutor",
+            form: "alolan",
+            forages: [
+                {
+                    item: "beachparty:coconut",
+                    count: 3,
+                    chance: 0.9,
+                    min_hearts: 3
+                },
+                {
+                    item: "beachparty:coconut",
+                    count: 3,
+                    chance: 0.9,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:star_coquito",
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "stantler",
+            forages: [
+                {
+                    item: 'society:dried_foul_berries',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: 'society:black_opal',
+                    count: 1,
+                    chance: 0.01,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "wyrdeer",
+            forages: [
+                {
+                    item: 'society:dried_glow_berries',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: 'sunlit_cobblemon:resonance_gem',
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 8
+                },
+                {
+                    item: 'society:black_opal',
+                    count: 1,
+                    chance: 0.03,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "deerling",
+            forages: [
+                {
+                    item: 'society:salmonberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:salmonberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:salmonberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+            ],
+        },
+        {
+            pokemon: "sawsbuck",
+            forages: [
+                {
+                    item: 'society:salmonberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:salmonberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:salmonberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+                {
+                    item: 'sunlit_cobblemon:mystica_branch',
+                    count: 1,
+                    chance: 0.01,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "deerling",
+            form: "summer",
+            forages: [
+                {
+                    item: 'society:boysenberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:boysenberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:boysenberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+            ],
+        },
+        {
+            pokemon: "sawsbuck",
+            form: "summer",
+            forages: [
+                {
+                    item: 'society:boysenberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:boysenberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:boysenberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+                {
+                    item: 'atmospheric:yucca_branch',
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "deerling",
+            form: "autumn",
+            forages: [
+                {
+                    item: 'society:cranberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:cranberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:cranberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+            ],
+        },
+        {
+            pokemon: "sawsbuck",
+            form: "autumn",
+            forages: [
+                {
+                    item: 'society:cranberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:cranberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:cranberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+                {
+                    item: 'society:mossberry',
+                    count: 4,
+                    chance: 0.35,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "deerling",
+            form: "winter",
+            forages: [
+                {
+                    item: 'society:crystalberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:crystalberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:crystalberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+            ],
+        },
+        {
+            pokemon: "sawsbuck",
+            form: "winter",
+            forages: [
+                {
+                    item: 'society:crystalberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'society:crystalberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6,
+                    has_quality: true
+                },
+                {
+                    item: 'society:crystalberry',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 9,
+                    has_quality: true
+                },
+                {
+                    item: 'windswept:frozen_branch',
+                    count: 1,
+                    chance: 0.17,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "wiglett",
+            forages: [
+                {
+                    item: 'beachparty:seashell',
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'aquaculture:box',
+                    count: 1,
+                    chance: 0.83,
+                    min_hearts: 6
+                },
+                {
+                    item: 'aquaculture:lockbox',
+                    count: 1,
+                    chance: 0.23,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "wugtrio",
+            forages: [
+                {
+                    item: 'beachparty:seashell',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 3,
+                    has_quality: true
+                },
+                {
+                    item: 'aquaculture:lockbox',
+                    count: 1,
+                    chance: 0.83,
+                    min_hearts: 6
+                },
+                {
+                    item: 'aquaculture:treasure_chest',
+                    count: 1,
+                    chance: 0.13,
+                    min_hearts: 10
+                },
+            ],
+        },
+        {
+            pokemon: "dhelmise",
+            forages: [
+                {
+                    item: 'betterarcheology:rotten_log',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: 'whimsy_deco:ship_helm',
+                    count: 1,
+                    chance: 0.03,
+                    min_hearts: 6,
+                },
+                {
+                    item: 'aquaculture:treasure_chest',
+                    count: 1,
+                    chance: 0.23,
+                    min_hearts: 6,
+                },
+                {
+                    item: 'society:treasure_totem',
+                    count: 1,
+                    chance: 0.13,
+                    min_hearts: 10,
+                },
             ],
         },
         {
@@ -2231,21 +3316,57 @@ if (runRanchingDataGen) {
             ],
         },
         {
+            pokemon: "bramblin",
+            forages: [
+                {
+                    item: 'atmospheric:yucca_fruit',
+                    count: 3,
+                    chance: 1,
+                    has_quality: true,
+                    min_hearts: 4
+                },
+                {
+                    item: 'botania:livingwood_twig',
+                    count: 1,
+                    chance: 0.35,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "brambleghast",
+            forages: [
+                {
+                    item: 'atmospheric:yucca_fruit',
+                    count: 8,
+                    chance: 1,
+                    has_quality: true,
+                    min_hearts: 7
+                },
+                {
+                    item: 'botania:livingwood_log',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
             pokemon: "ducklett",
             forages: [
+                {
+                    item: "untitledduckmod:duck_egg",
+                    count: 1,
+                    chance: 1,
+                    has_quality: true,
+                    min_hearts: 1
+                },
                 {
                     item: "untitledduckmod:duck_feather",
                     count: 1,
                     chance: 0.35,
                     has_quality: true,
                     min_hearts: 3
-                },
-                {
-                    item: "untitledduckmod:duck_egg",
-                    count: 1,
-                    chance: 1,
-                    has_quality: true,
-                    min_hearts: 0
                 },
                 {
                     item: "society:large_duck_egg",
@@ -2371,20 +3492,242 @@ if (runRanchingDataGen) {
             ],
         },
         {
-            pokemon: "krabby",
+            pokemon: "dwebble",
             forages: [
                 {
-                    item: "quark:crab_leg",
+                    item: "society:crab_roe",
                     count: 1,
-                    chance: 0.45,
-                    has_quality: true,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "society:earth_crystal",
+                    count: 1,
+                    chance: 1,
                     min_hearts: 3
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "cobblemon:bug_gem",
+                    count: 1,
+                    chance: 0.7,
+                    min_hearts: 8
+                },
+                {
+                    item: 'crabbersdelight:crab_claw',
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 9
                 }
             ],
         },
         {
-            pokemon: "kingler",
+            pokemon: "crustle",
             forages: [
+                {
+                    item: "atmospheric:crustose",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "society:earth_crystal",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "cobblemon:bug_gem",
+                    count: 1,
+                    chance: 0.4,
+                    min_hearts: 8
+                },
+                {
+                    item: 'crabbersdelight:crab_claw',
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 9
+                }
+            ],
+        },
+        {
+            pokemon: "crabrawler",
+            forages: [
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'crabbersdelight:crab_trap_bait',
+                    count: 4,
+                    chance: 0.93,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "crabominable",
+            forages: [
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'crabbersdelight:deluxe_crab_trap_bait',
+                    count: 4,
+                    chance: 0.5,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "klawf",
+            forages: [
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'crabbersdelight:crab_claw',
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 9
+                }
+            ],
+        },
+        {
+            pokemon: "klawf",
+            forages: [
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: 'crabbersdelight:crab_claw',
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 9
+                }
+            ],
+        },
+        {
+            pokemon: "krabby",
+            forages: [
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
                 {
                     item: "quark:crab_leg",
                     count: 1,
@@ -2393,12 +3736,280 @@ if (runRanchingDataGen) {
                     min_hearts: 3
                 },
                 {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "kingler",
+            forages: [
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "quark:crab_leg",
+                    count: 1,
+                    chance: 0.45,
+                    has_quality: true,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
                     item: "quark:crab_shell",
                     count: 1,
                     chance: 0.25,
                     has_quality: true,
                     min_hearts: 8
+                },
+                {
+                    item: "society:crab_roe",
+                    count: 3,
+                    chance: 1,
+                    min_hearts: 10
                 }
+            ],
+        },
+        {
+            pokemon: "voltorb",
+            forages: [
+                {
+                    item: "minecraft:gunpowder",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'cobblemon:poke_ball',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "electrode",
+            forages: [
+                {
+                    item: "minecraft:tnt",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'cobblemon:poke_ball',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "voltorb",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "minecraft:gunpowder",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'cobblemon:ancient_poke_ball',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "electrode",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "minecraft:tnt",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: 'cobblemon:ancient_poke_ball',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "sewaddle",
+            forages: [
+                {
+                    item: "crittersandcompanions:silk",
+                    count: 1,
+                    chance: 0.90,
+                    min_hearts: 4
+                },
+                {
+                    item: "farmersdelight:cabbage_leaf",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "farmersdelight:cabbage_leaf",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "swadloon",
+            forages: [
+                {
+                    item: "crittersandcompanions:silk",
+                    count: 1,
+                    chance: 0.50,
+                    min_hearts: 4
+                },
+                {
+                    item: "farmersdelight:cabbage_leaf",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "farmersdelight:cabbage_leaf",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "leavanny",
+            forages: [
+                {
+                    item: "society:canvas",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:canvas",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:canvas",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 5
+                },
+                {
+                    item: "farmersdelight:cabbage_leaf",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "farmersdelight:cabbage_leaf",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: "farmersdelight:cabbage_leaf",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "hoppip",
+            forages: [
+                {
+                    item: "herbalbrews:rooibos_leaf",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:tanuki_leaf",
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 8
+                },
+            ],
+        },
+        {
+            pokemon: "skiploom",
+            forages: [
+                {
+                    item: 'atmospheric:yellow_blossoms',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: 'buzzier_bees:four_leaf_clover',
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 8
+                },
+            ],
+        },
+        {
+            pokemon: "jumpluff",
+            forages: [
+                {
+                    item: "etcetera:cotton_flower",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: 'sunlit_cobblemon:strange_spore',
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 8
+                },
             ],
         },
         {
@@ -2528,6 +4139,156 @@ if (runRanchingDataGen) {
                     chance: 0.25,
                     has_quality: true,
                     min_hearts: 0
+                }
+            ],
+        },
+        {
+            pokemon: "spiritomb",
+            forages: [
+                {
+                    item: "paraglider:spirit_orb",
+                    count: 3,
+                    chance: 0.85,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:glitched_vhs",
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "duskull",
+            forages: [
+                {
+                    item: "minecraft:bone",
+                    count: 3,
+                    chance: 0.85,
+                    min_hearts: 3
+                },
+                {
+                    item: "quark:soul_bead",
+                    count: 3,
+                    chance: 0.85,
+                    min_hearts: 3
+                },
+                {
+                    item: "minecraft:skeleton_skull",
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "dusclops",
+            forages: [
+                {
+                    item: "minecraft:bone",
+                    count: 6,
+                    chance: 0.85,
+                    min_hearts: 3
+                },
+                {
+                    item: "quark:soul_bead",
+                    count: 3,
+                    chance: 0.85,
+                    min_hearts: 3
+                },
+                {
+                    item: 'society:ghost_crystal',
+                    count: 1,
+                    chance: 0.45,
+                    min_hearts: 7
+                },
+                {
+                    item: "society:mini_oni_eye",
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "dusknoir",
+            forages: [
+                {
+                    item: "minecraft:bone",
+                    count: 9,
+                    chance: 0.85,
+                    min_hearts: 3
+                },
+                {
+                    item: "quark:soul_bead",
+                    count: 3,
+                    chance: 0.85,
+                    min_hearts: 3
+                },
+                {
+                    item: 'cobblemon:ghost_gem',
+                    count: 1,
+                    chance: 0.15,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "mimejr",
+            forages: [
+                {
+                    item: "splendid_slimes:corral_block",
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: 'society:tiny_gnome',
+                    count: 1,
+                    chance: 0.07,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "mimejr",
+            form: "galarbias",
+            forages: [
+                {
+                    item: "splendid_slimes:corral_block",
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: 'society:tiny_gnome',
+                    count: 1,
+                    chance: 0.07,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "mrmime",
+            forages: [
+                {
+                    item: "splendid_slimes:corral_block",
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "society:gnome",
+                    count: 1,
+                    chance: 0.14,
+                    min_hearts: 6
+                },
+                {
+                    item: 'society:tiny_gnome',
+                    count: 1,
+                    chance: 0.03,
+                    min_hearts: 7
                 }
             ],
         },
@@ -2891,6 +4652,55 @@ if (runRanchingDataGen) {
                     chance: 0.75,
                     has_quality: true,
                     min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "skarmory",
+            forages: [
+                {
+                    item: "society:large_egg",
+                    count: 1,
+                    chance: 1,
+                    has_quality: true,
+                    min_hearts: 3
+                },
+                {
+                    item: "etcetera:bismuth_ingot",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 7
+                },
+                {
+                    item: "cobblemon:steel_gem",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "exeggcute",
+            forages: [
+                {
+                    item: "society:cracked_egg",
+                    count: 1,
+                    chance: 1,
+                    has_quality: true,
+                    min_hearts: 0
+                }
+            ],
+        },
+        {
+            pokemon: "exeggcute",
+            fomr: "hisuibias",
+            forages: [
+                {
+                    item: "society:cracked_egg",
+                    count: 1,
+                    chance: 1,
+                    has_quality: true,
+                    min_hearts: 0
                 }
             ],
         },
@@ -3309,6 +5119,72 @@ if (runRanchingDataGen) {
             ],
         },
         {
+            pokemon: "budew",
+            forages: [
+                {
+                    item: "sunlit_cobblemon:poison_drop",
+                    count: 1,
+                    chance: 0.35,
+                    has_quality: true,
+                    min_hearts: 3
+                }
+            ],
+        },
+        {
+            pokemon: "roselia",
+            forages: [
+                {
+                    item: "sunlit_cobblemon:poison_drop",
+                    count: 2,
+                    chance: 0.35,
+                    has_quality: true,
+                    min_hearts: 5
+                },
+                {
+                    item: "windswept:red_rose",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "windswept:blue_rose",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "roserade",
+            forages: [
+                {
+                    item: "sunlit_cobblemon:poison_drop",
+                    count: 3,
+                    chance: 0.35,
+                    has_quality: true,
+                    min_hearts: 7
+                },
+                {
+                    item: "windswept:red_rose",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: "windswept:blue_rose",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 8
+                },
+                {
+                    item: "windswept:white_rose",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
             pokemon: "toxapex",
             forages: [
                 {
@@ -3317,6 +5193,125 @@ if (runRanchingDataGen) {
                     chance: 0.35,
                     has_quality: true,
                     min_hearts: 3
+                }
+            ],
+        },
+        {
+            pokemon: "comfey",
+            forages: [
+                {
+                    item: 'society:bouquet_bag',
+                    count: 1,
+                    chance: 0.92,
+                    min_hearts: 4
+                },
+                {
+                    item: 'windswept:holly_wreath',
+                    count: 1,
+                    chance: 0.5,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "flabebe",
+            forages: [
+                {
+                    item: 'society:bouquet_bag',
+                    count: 4,
+                    chance: 0.92,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "floette",
+            forages: [
+                {
+                    item: 'society:bouquet_bag',
+                    count: 2,
+                    chance: 0.52,
+                    min_hearts: 6
+                },
+                {
+                    item: 'sunlit_cobblemon:captivating_pofflet',
+                    count: 1,
+                    chance: 0.92,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "florges",
+            forages: [
+                {
+                    item: 'society:bouquet_bag',
+                    count: 1,
+                    chance: 0.32,
+                    min_hearts: 6
+                },
+                {
+                    item: 'sunlit_cobblemon:fairy_heart',
+                    count: 1,
+                    chance: 0.04,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "bellsprout",
+            forages: [
+                {
+                    item: "sunlit_cobblemon:poison_drop",
+                    count: 2,
+                    chance: 0.12,
+                    has_quality: true,
+                    min_hearts: 6
+                },
+                {
+                    item: "minecraft:pitcher_pod",
+                    count: 1,
+                    chance: 0.15,
+                    has_quality: true,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "weepinbell",
+            forages: [
+                {
+                    item: "sunlit_cobblemon:poison_drop",
+                    count: 2,
+                    chance: 0.25,
+                    has_quality: true,
+                    min_hearts: 6
+                },
+                {
+                    item: "minecraft:pitcher_pod",
+                    count: 4,
+                    chance: 0.55,
+                    has_quality: true,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "victreebel",
+            forages: [
+                {
+                    item: "sunlit_cobblemon:poison_drop",
+                    count: 2,
+                    chance: 0.65,
+                    has_quality: true,
+                    min_hearts: 7
+                },
+                {
+                    item: 'vintagedelight:pickled_pitcher_pod',
+                    count: 4,
+                    chance: 0.65,
+                    has_quality: true,
+                    min_hearts: 8
                 }
             ],
         },
@@ -3451,6 +5446,42 @@ if (runRanchingDataGen) {
             ],
         },
         {
+            pokemon: "sliggoo",
+            milk: { sm: "minecraft:slime_ball" },
+        },
+        {
+            pokemon: "goodra",
+            milk: { sm: "minecraft:slime_block" },
+        },
+        {
+            pokemon: "sliggoo",
+            form: "hisuian",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
+            pokemon: "goodra",
+            form: "hisuian",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
+            pokemon: "goodra",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "botania:dragonstone",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 5
+                },
+                {
+                    item: 'sunlit_cobblemon:draco_meteorite',
+                    count: 1,
+                    chance: 0.9,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
             pokemon: "tropius",
             forages: [
                 {
@@ -3549,6 +5580,433 @@ if (runRanchingDataGen) {
                     chance: 0.5,
                     has_quality: true,
                     min_hearts: 3
+                }
+            ],
+        },
+        {
+            pokemon: "stonjourner",
+            forages: [
+                {
+                    item: 'cobblemon:everstone',
+                    count: 1,
+                    chance: 0.09,
+                    min_hearts: 1
+                },
+                {
+                    item: 'society:limestone_pebble',
+                    count: 1,
+                    chance: 0.09,
+                    min_hearts: 2
+                },
+                {
+                    item: 'society:soapstone',
+                    count: 1,
+                    chance: 0.09,
+                    min_hearts: 3
+                },
+                {
+                    item: 'cobblemon:fossilized_bird',
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                },
+                {
+                    item: 'cobblemon:fossilized_fish',
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 8
+                },
+                {
+                    item: 'cobblemon:fossilized_drake',
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 9
+                },
+                {
+                    item: 'cobblemon:fossilized_dino',
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "sandshrew",
+            forages: [
+                {
+                    item: "minecraft:sandstone",
+                    count: 8,
+                    chance: 0.5,
+                    min_hearts: 1
+                },
+                {
+                    item: "cobblemon:old_amber_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                },
+                {
+                    item: "cobblemon:helix_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "bronzor",
+            forages: [
+                {
+                    item: "minecraft:oxidized_copper",
+                    count: 8,
+                    chance: 0.5,
+                    min_hearts: 3
+                },
+                {
+                    item: "cobblemon:skull_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                },
+            ],
+        },
+        {
+            pokemon: "drilbur",
+            forages: [
+                {
+                    item: "twigs:pebble",
+                    count: 4,
+                    chance: 0.5,
+                    min_hearts: 3
+                },
+                {
+                    item: "betterarcheology:fossiliferous_dirt",
+                    count: 4,
+                    chance: 0.5,
+                    min_hearts: 6
+                },
+                {
+                    item: "cobblemon:cover_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "excadrill",
+            forages: [
+                {
+                    item: "twigs:pebble",
+                    count: 8,
+                    chance: 0.5,
+                    min_hearts: 3
+                },
+                {
+                    item: "atmospheric:arid_sand",
+                    count: 16,
+                    chance: 0.25,
+                    min_hearts: 6
+                },
+                {
+                    item: "atmospheric:red_arid_sand",
+                    count: 16,
+                    chance: 0.25,
+                    min_hearts: 6
+                },
+                {
+                    item: "cobblemon:plume_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                },
+            ],
+        },
+        {
+            pokemon: "bronzong",
+            forages: [
+                {
+                    item: "minecraft:oxidized_copper",
+                    count: 8,
+                    chance: 0.5,
+                    min_hearts: 3
+                },
+                {
+                    item: "cobblemon:armor_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "sandslash",
+            forages: [
+                {
+                    item: "minecraft:sandstone",
+                    count: 8,
+                    chance: 0.5,
+                    min_hearts: 1
+                },
+                {
+                    item: "cobblemon:dome_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                },
+            ],
+        },
+        {
+            pokemon: "wooper",
+            forages: [
+                {
+                    item: "minecraft:clay_ball",
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "minecraft:mud",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "society:mudstone",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "quagsire",
+            forages: [
+                {
+                    item: "minecraft:clay_ball",
+                    count: 16,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "minecraft:mud",
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:mudstone",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "wooper",
+            form: "paldean",
+            forages: [
+                {
+                    item: "minecraft:mud",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "society:mudstone",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "clodsire",
+            forages: [
+                {
+                    item: "minecraft:mud",
+                    count: 8,
+                    chance: 1,
+                    min_hearts: 4
+                },
+                {
+                    item: "society:mudstone",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
+            pokemon: "wooper",
+            form: "paldean",
+            milk: { sm: "sunlit_cobblemon:poison_drop" },
+        },
+        {
+            pokemon: "clodsire",
+            milk: { sm: "sunlit_cobblemon:poison_drop" },
+        },
+        {
+            pokemon: "sigilyph",
+            forages: [
+                {
+                    item: 'windswept:elder_feather',
+                    count: 1,
+                    chance: 0.3,
+                    min_hearts: 2
+                },
+                {
+                    item: "windswept:hoot_pottery_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 3
+                },
+                {
+                    item: "windswept:offshoot_pottery_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 4
+                },
+                {
+                    item: "windswept:plumage_pottery_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 5
+                },
+                {
+                    item: "windswept:flake_pottery_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 6
+                },
+                {
+                    item: "windswept:drupes_pottery_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 7
+                },
+                {
+                    item: "cobblemon:psychic_gem",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "baltoy",
+            forages: [
+                {
+                    item: "minecraft:clay_ball",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:dome_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:helix_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 3
+                },
+                {
+                    item: "cobblemon:nostalgic_sherd",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 4
+                },
+                {
+                    item: "cobblemon:root_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "claydol",
+            forages: [
+
+                {
+                    item: "minecraft:clay",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:suspicious_sherd",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:capture_sherd",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 4
+                },
+                {
+                    item: "cobblemon:claw_fossil",
+                    count: 1,
+                    chance: 0.06,
+                    min_hearts: 7
+                }
+            ],
+        },
+        {
+            pokemon: "durant",
+            forages: [
+                {
+                    item: "create:raw_zinc",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:dried_shimmering_mushrooms",
+                    count: 1,
+                    chance: 0.25,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:dried_shimmering_mushrooms",
+                    count: 1,
+                    chance: 0.25,
+                    min_hearts: 6
+                },
+                {
+                    item: "society:dried_shimmering_mushrooms",
+                    count: 1,
+                    chance: 0.25,
+                    min_hearts: 9
+                }
+            ],
+        },
+        {
+            pokemon: "heatmor",
+            forages: [
+                {
+                    item: "create:zinc_ingot",
+                    count: 4,
+                    chance: 0.5,
+                    min_hearts: 3
+                },
+                {
+                    item: "society:ember_crystal_cluster",
+                    count: 1,
+                    chance: 0.5,
+                    min_hearts: 3
+                },
+                {
+                    item: "minecraft:blaze_powder",
+                    count: 1,
+                    chance: 0.8,
+                    min_hearts: 6
                 }
             ],
         },
@@ -3789,6 +6247,23 @@ if (runRanchingDataGen) {
             ],
         },
         {
+            pokemon: "surskit",
+            forages: [
+                {
+                    item: "minecraft:honey_bottle",
+                    count: 1,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "society:oil",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 6
+                }
+            ],
+        },
+        {
             pokemon: "masquerain",
             forages: [
                 {
@@ -3895,10 +6370,22 @@ if (runRanchingDataGen) {
             ],
         },
         {
+            pokemon: "steelix",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
+            pokemon: "orthworm",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
+            pokemon: "copperajah",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
             pokemon: "lapras",
             forages: [
                 {
-                    item: "sunlit_cobblemon:permafrost",
+                    item: "sunlit_cobblemon:permafrost_drop",
                     count: 1,
                     chance: 0.5,
                     use_quality: true,
@@ -3914,6 +6401,44 @@ if (runRanchingDataGen) {
         },
         {
             pokemon: "tatsugiri",
+            forages: [
+                {
+                    item: "cobblemon:dragon_scale",
+                    count: 1,
+                    chance: 0.05,
+                    use_quality: true,
+                    min_hearts: 5
+                },
+                {
+                    item: "aquaculture:neptunium_nugget",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                }
+            ],
+        },
+        {
+            pokemon: "tatsugiri",
+            form: "stretchy",
+            forages: [
+                {
+                    item: "cobblemon:dragon_scale",
+                    count: 1,
+                    chance: 0.05,
+                    use_quality: true,
+                    min_hearts: 5
+                },
+                {
+                    item: "aquaculture:neptunium_nugget",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                }
+            ],
+        },
+        {
+            pokemon: "tatsugiri",
+            form: "droopy",
             forages: [
                 {
                     item: "cobblemon:dragon_scale",
@@ -3998,6 +6523,76 @@ if (runRanchingDataGen) {
                     count: 1,
                     chance: 0.5,
                     min_hearts: 5
+                }
+            ],
+        },
+        {
+            pokemon: "zorua",
+            forages: [
+                {
+                    item: "species:werefang",
+                    count: 1,
+                    chance: 0.25,
+                    min_hearts: 4
+                },
+                {
+                    item: "species:wicked_mask",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "zoroark",
+            forages: [
+                {
+                    item: "species:werefang",
+                    count: 2,
+                    chance: 0.25,
+                    min_hearts: 4
+                },
+                {
+                    item: "species:wicked_mask",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "zorua",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "quark:soul_bead",
+                    count: 4,
+                    chance: 0.3,
+                    min_hearts: 4
+                },
+                {
+                    item: "species:wicked_mask",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 8
+                }
+            ],
+        },
+        {
+            pokemon: "zoroark",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "quark:soul_bead",
+                    count: 4,
+                    chance: 0.3,
+                    min_hearts: 4
+                },
+                {
+                    item: "species:wicked_mask",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 8
                 }
             ],
         },
@@ -4491,6 +7086,12 @@ if (runRanchingDataGen) {
                     chance: 0.24,
                     has_quality: true,
                     min_hearts: 5
+                },
+                {
+                    item: "cobblemon:sail_fossil",
+                    count: 1,
+                    chance: 0.04,
+                    min_hearts: 10
                 }
             ],
         },
@@ -4521,16 +7122,22 @@ if (runRanchingDataGen) {
                     item: "society:froggy_helm",
                     count: 1,
                     chance: 0.12,
-                    min_hearts: 8
+                    min_hearts: 7
                 },
                 {
                     item: "society:ribbit_drum",
                     count: 1,
                     chance: 0.08,
-                    min_hearts: 9
+                    min_hearts: 8
                 },
                 {
                     item: "society:ribbit_gadget",
+                    count: 1,
+                    chance: 0.04,
+                    min_hearts: 9
+                },
+                {
+                    item: "cobblemon:jaw_fossil",
                     count: 1,
                     chance: 0.04,
                     min_hearts: 10
@@ -4914,6 +7521,33 @@ if (runRanchingDataGen) {
             ],
         },
         {
+            pokemon: "forretress",
+            forages: [
+                {
+                    item: "railways:riveted_locometal",
+                    count: 16,
+                    chance: 1,
+                    min_hearts: 3
+                },
+                {
+                    item: "railways:riveted_locometal",
+                    count: 32,
+                    chance: 1,
+                    min_hearts: 6
+                },
+                {
+                    item: "cobblemon:metal_coat",
+                    count: 1,
+                    chance: 0.02,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "forretress",
+            milk: { sm: "sunlit_cobblemon:quicksilver" },
+        },
+        {
             pokemon: "pineco",
             forages: [
                 {
@@ -5076,6 +7710,76 @@ if (runRanchingDataGen) {
                     count: 1,
                     chance: 0.2,
                     min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "petilil",
+            forages: [
+                {
+                    item: "farm_and_charm:onion",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "cobblemon:remedy",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 1
+                }
+            ],
+        },
+        {
+            pokemon: "petilil",
+            form: "hisuibias",
+            forages: [
+                {
+                    item: "farm_and_charm:onion",
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 0
+                },
+                {
+                    item: "cobblemon:remedy",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 1
+                }
+            ],
+        },
+        {
+            pokemon: "lilligant",
+            forages: [
+                {
+                    item: 'veggiesdelight:cauliflower',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:fine_remedy",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 3
+                }
+            ],
+        },
+        {
+            pokemon: "lilligant",
+            form: "hisuian",
+            forages: [
+                {
+                    item: 'veggiesdelight:turnip',
+                    count: 4,
+                    chance: 1,
+                    min_hearts: 2
+                },
+                {
+                    item: "cobblemon:fine_remedy",
+                    count: 2,
+                    chance: 1,
+                    min_hearts: 3
                 }
             ],
         },
@@ -5307,12 +8011,174 @@ if (runRanchingDataGen) {
                     min_hearts: 8
                 }
             ],
+        },
+        {
+            pokemon: "cyndaquil",
+            form: "hisuibias",
+            forages: [
+                {
+                    item: "cobblemon:fire_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:fire_pledge",
+                    count: 1,
+                    chance: 0.01,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "quilava",
+            form: "hisuibias",
+            forages: [
+                {
+                    item: "cobblemon:fire_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:fire_pledge",
+                    count: 1,
+                    chance: 0.5,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "typhlosion",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "cobblemon:fire_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:fire_pledge",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "rowlet",
+            form: "hisuibias",
+            forages: [
+                {
+                    item: "cobblemon:leaf_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:grass_pledge",
+                    count: 1,
+                    chance: 0.01,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "dartrix",
+            form: "hisuibias",
+            forages: [
+                {
+                    item: "cobblemon:leaf_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:grass_pledge",
+                    count: 1,
+                    chance: 0.5,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "decidueye",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "cobblemon:leaf_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:grass_pledge",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "oshawott",
+            form: "hisuibias",
+            forages: [
+                {
+                    item: "cobblemon:water_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:water_pledge",
+                    count: 1,
+                    chance: 0.01,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "dewott",
+            form: "hisuibias",
+            forages: [
+                {
+                    item: "cobblemon:water_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:water_pledge",
+                    count: 1,
+                    chance: 0.5,
+                    min_hearts: 10
+                }
+            ],
+        },
+        {
+            pokemon: "samurott",
+            form: "hisuian",
+            forages: [
+                {
+                    item: "cobblemon:water_stone",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 5
+                },
+                {
+                    item: "sunlit_cobblemon:water_pledge",
+                    count: 1,
+                    chance: 0.1,
+                    min_hearts: 10
+                }
+            ],
         }
     ]
     let getPledgeChance = (index) => {
         let indexPercent = index / 9;
-        if (indexPercent > 1) return 0.05;
-        if (indexPercent > 2) return 0.1;
+        if (indexPercent >= 2) return 0.1;
+        if (indexPercent >= 1) return 0.05;
         return 0.01;
     }
     ["charmander", "cyndaquil", "torchic", "chimchar", "tepig", "fennekin", "litten", "scorbunny", "fuecoco", "charmeleon", "quilava", "combusken", "monferno", "pignite", "braixen", "torracat", "raboot", "crocalor", "charizard", "typhlosion", "blaziken", "infernape", "emboar", "delphox", "incineroar", "cinderace", "skeledirge"].forEach((poke, index) => {
@@ -5373,11 +8239,37 @@ if (runRanchingDataGen) {
         })
     });
 
+    ["dragonite", "salamence", "garchomp", "hydreigon", "goodra", "kommoo", "dragapult", "baxcalibur"].forEach((poke, index) => {
+        ranchingDef.push({
+            pokemon: poke,
+            forages: [
+                {
+                    item: "botania:dragonstone",
+                    count: 1,
+                    chance: 0.05,
+                    min_hearts: 5
+                },
+                {
+                    item: 'sunlit_cobblemon:draco_meteorite',
+                    count: 1,
+                    chance: 0.9,
+                    min_hearts: 10
+                }
+            ],
+        })
+        ranchingDef.push({
+            pokemon: poke,
+            milk: { sm: "minecraft:dragon_breath" },
+        })
+    });
     let recipe
     ranchingDef.forEach((def) => {
         recipe = {
             type: `cobblemon_farmers:ranching_station/${def.milk ? "milk" : "forage"}`,
             pokemon: def.pokemon,
+        }
+        if (def.form) {
+            recipe.form = def.form
         }
         if (def.milk) {
             recipe.consume_bucket = false;
@@ -5391,7 +8283,7 @@ if (runRanchingDataGen) {
         } else {
             recipe.forages = def.forages
         }
-        JsonIO.write(`kubejs/data/cobblemon_farmers/recipes/ranching_station/${def.milk ? "milk" : "forage"}/${def.pokemon}.json`, recipe);
+        JsonIO.write(`kubejs/data/cobblemon_farmers/recipes/ranching_station/${def.milk ? "milk" : "forage"}/${def.pokemon}${def.form ? `_${def.form}` : ""}.json`, recipe);
     });
 
     ItemEvents.rightClicked('fightorflight:oran_lucky_egg', (e) => {
@@ -5403,6 +8295,6 @@ if (runRanchingDataGen) {
                 });
             }
         });
-        player.tell("ranching defs validated!")
+        player.tell(ranchingDef.length + " ranching defs validated!")
     });
 }

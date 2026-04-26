@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "durant",
+	"forages": [
+		{
+			"item": "create:raw_zinc",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:dried_shimmering_mushrooms",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:dried_shimmering_mushrooms",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 6
+		},
+		{
+			"item": "society:dried_shimmering_mushrooms",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 9
+		}
+	]
+}

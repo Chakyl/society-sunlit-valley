@@ -62,6 +62,14 @@ ItemEvents.tooltip((tooltip) => {
     "sunlit_cobblemon:master_poke_bobber",
     Text.translatable(`tooltip.sunlit_cobblemon.master_poke_bobber.description`).gold()
   );
+  tooltip.add(
+    "unimplemented_items:repel",
+    Text.translatable(`tooltip.unimplemented_items.repel.description`).gray()
+  );
+  tooltip.add(
+    "unimplemented_items:repel",
+    Text.translatable("tooltip.society.area", `21x21x21`).green()
+  );
   tooltip.addAdvanced("sunlit_cobblemon:sun_mirror", (item, advanced, text) => {
     if (item.nbt && item.nbt.monData && item.nbt.monData.getString("type")) {
       let data = item.nbt.monData
@@ -100,6 +108,29 @@ ItemEvents.tooltip((tooltip) => {
       ]);
     }
   });
+  tooltip.addAdvanced("sunlit_cobblemon:mystery_gift", (item, advanced, text) => {
+    if (item.nbt) {
+
+      let { ot, pokemon } = item.nbt;
+      if (item.nbt.pokemon !== null) {
+        text.add(1, [
+          Component.translatable(`cobblemon.species.${pokemon}.name`).green(),
+        ]);
+        let resolvedOT = ot == null || ot === "Chakyl" ? "Chakyl" : Component.translatable(`dialog.npc.${ot}.name`).getString()
+        text.add(2, [
+          Component.translatable("tooltip.sunlit_cobblemon.mystery_gift.from", resolvedOT).gray(),
+        ]);
+      }
+    }
+    if (item.nbt == null || item.nbt.pokemon == null) {
+      text.add(1, [
+        Text.translatable("tooltip.sunlit_cobblemon.mystery_gift.random").green()
+      ]);
+      text.add(2, [
+        Component.translatable("tooltip.sunlit_cobblemon.mystery_gift.from", "Chakyl").gray(),
+      ]);
+    }
+  });
   // Gach
   // Gachapon
   tooltip.addAdvanced(
@@ -135,6 +166,64 @@ ItemEvents.tooltip((tooltip) => {
       }
     },
   );
+
+  const formatIVS = (ivs) => {
+    let ivArray = [];
+    for (let index = 0; index < 6; index++) {
+      ivArray.push(ivs.get(index))
+
+    }
+    return ivArray;
+  }
+  tooltip.addAdvanced('cobbreeding:pokemon_egg', (item, advanced, text) => {
+    if (item.nbt) {
+      let data = item.nbt
+      if (data) {
+        let startIndex = 2;
+        if (!data.getString("form").equals("normal")) {
+          text.add(startIndex, [
+            Text.translatable(
+              "tooltip.cobbreeding.cobblemon.pokemon_egg.form"
+            ).gray(),
+            Text.translate(data.getString("form")).red(),
+          ]);
+          startIndex = 3
+
+        }
+        text.add(startIndex + 1, [
+          Text.translatable(
+            "tooltip.cobbreeding.cobblemon.pokemon_egg.ability"
+          ).gray(),
+          Text.translate(`cobblemon.ability.${data.getString("ability")}`).green(),
+        ]);
+        text.add(startIndex + 2, [
+          Text.translatable(
+            "tooltip.cobbreeding.cobblemon.pokemon_egg.nature"
+          ).gray(),
+          Text.translate(`cobblemon.nature.${data.getString("nature").split(":")[1]}`).gold(),
+        ]);
+        text.add(startIndex + 3, [
+          Text.translatable(
+            "tooltip.cobbreeding.cobblemon.pokemon_egg.ivs",
+            formatIVS(data.get("ivs")).toString().replace(/,/g, '/')
+          ).lightPurple()
+        ]);
+        if (data.getInt("shiny") !== 0) {
+          text.add(startIndex + 4, [
+            Text.translatable(
+              "tooltip.cobbreeding.cobblemon.pokemon_egg.shiny"
+            ).aqua()
+          ]);
+        } else {
+          text.add(startIndex + 4, [
+            Text.translatable(
+              "tooltip.cobbreeding.cobblemon.pokemon_egg.not_shiny"
+            ).darkGray()
+          ]);
+        }
+      }
+    }
+  });
   // TM Packs
   tooltip.add("sunlit_cobblemon:tm_pack",
     Text.translatable("tooltip.society.right_click_open").gray()
@@ -213,7 +302,6 @@ ItemEvents.tooltip((tooltip) => {
   [
     "ability_capsule", "ability_patch",
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.special.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   });
 
@@ -243,13 +331,13 @@ ItemEvents.tooltip((tooltip) => {
     "spell_tag", "fairy_feather", "twisted_spoon", "power_anklet", "power_band", "power_belt", "power_bracer",
     "power_lens", "power_weight",
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held.${item}`).gray());
+    // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held_item`).gold());
   });
   [
     "dawn_stone", "dusk_stone", "fire_stone", "ice_stone", "leaf_stone", "moon_stone", "shiny_stone", "sun_stone", "thunder_stone", "water_stone"
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.stone`).gray());
+    // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.stone`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
   });
 
@@ -302,7 +390,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "upgrade", crit: "trade" },
     { item: "whipped_dream", crit: "trade" },
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item.item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.${item.item}`).gray());
+    // tooltip.add(`cobblemon:${item.item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.${item.item}`).gray());
     if (item.crit)
       tooltip.add(`cobblemon:${item.item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.crit.${item.crit}`).darkPurple());
     tooltip.add(`cobblemon:${item.item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
@@ -313,7 +401,6 @@ ItemEvents.tooltip((tooltip) => {
     "mild_mint", "rash_mint", "quiet_mint", "calm_mint", "gentle_mint", "careful_mint", "sassy_mint", "timid_mint", "hasty_mint", "jolly_mint",
     "naive_mint", "serious_mint"
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.mint.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.mint`).darkGreen());
   });
 
@@ -326,7 +413,6 @@ ItemEvents.tooltip((tooltip) => {
     "exp_candy_xs", "exp_candy_s", "exp_candy_m", "exp_candy_l", "exp_candy_xl", "rare_candy",
     "health_feather", "muscle_feather", "resist_feather", "genius_feather", "clever_feather", "swift_feather"
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumables.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   });
 
@@ -354,6 +440,7 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(`sunlit_cobblemon:${pofflet}_pofflet`, Text.translatable(`tooltip.sunlit_cobblemon.pofflet`, String(effect.baseIncrease)).gray());
     if (effect.positiveTypes.length > 0) tooltip.add(`sunlit_cobblemon:${pofflet}_pofflet`, Text.translatable(`tooltip.sunlit_cobblemon.pofflet.loved_by_${effect.positiveTypes.length == 2 ? "two" : "three"}`, effect.positiveTypes.map((type) => Text.translatable(`cobblemon.type.${type}`))).green())
     if (effect.decreaseOthers) tooltip.add(`sunlit_cobblemon:${pofflet}_pofflet`, Text.translatable(`tooltip.sunlit_cobblemon.pofflet.hated`).red())
+    if (pofflet.equals("plain")) tooltip.add(`sunlit_cobblemon:${pofflet}_pofflet`, Text.translatable(`tooltip.sunlit_cobblemon.pofflet.triple_bonus`).green())
   });
 
   [
@@ -363,17 +450,23 @@ ItemEvents.tooltip((tooltip) => {
     "berry_juice", "remedy", "fine_remedy", "superb_remedy", "heal_powder",
     "potion", "super_potion", "hyper_potion", "max_potion", "full_restore"
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.medicine.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.medicine`).green());
   });
 
   [
     "calcium", "carbos", "hp_up", "iron", "protein", "zinc", "pp_up", "pp_max",
   ].forEach((item) => {
-    tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.medicine.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.vitamin`).aqua());
   });
-
+  ['cobblemon:helix_fossil', 'cobblemon:dome_fossil', 'cobblemon:old_amber_fossil', 'cobblemon:root_fossil', 'cobblemon:claw_fossil', 'cobblemon:skull_fossil', 'cobblemon:armor_fossil', 'cobblemon:cover_fossil', 'cobblemon:plume_fossil', 'cobblemon:jaw_fossil', 'cobblemon:sail_fossil', 'cobblemon:fossilized_bird', 'cobblemon:fossilized_fish', 'cobblemon:fossilized_drake', 'cobblemon:fossilized_dino'].forEach((item) => {
+    if (item.includes("fossilized")) {
+      tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.combination_fossil_info`).gray());
+      tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.combination_fossil`).gold());
+    }
+    else {
+      tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fossil`).gold());
+    }
+  });
   ['unimplemented_items:bottle_cap_gold', 'unimplemented_items:bottle_cap', 'unimplemented_items:bottle_cap_atk', 'unimplemented_items:bottle_cap_sd', 'unimplemented_items:bottle_cap_def', 'unimplemented_items:bottle_cap_sa', 'unimplemented_items:bottle_cap_spd', 'unimplemented_items:bottle_cap_hp', 'unimplemented_items:dry_root'].forEach((item) => {
     tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.unimplemented_items.${item.split(":")[1]}`).gray());
     tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
@@ -409,7 +502,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "sunlit_cobblemon:berry_labor_and_capital",
-      description: "+3 Pokémon worker slots.",
+      description: "+5 Pokémon worker slots.",
     },
     {
       item: "sunlit_cobblemon:bottlecaps_and_nothingness",
@@ -417,11 +510,11 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "sunlit_cobblemon:braiding_surprisegrass",
-      description: "Twice as likely to find Pokémon when harvesting crops and fruit trees.",
+      description: "2x as likely to find Pokémon when mining ores and harvesting crops/fruit trees.",
     },
     {
       item: "sunlit_cobblemon:the_gachamonbler",
-      description: "Gachamon Capsule Pokémon are 3x as likely to be shiny. Gold Quality and higher capsules will exclusively spawn from the bonus pool.",
+      description: "Gachamon Capsule Pokémon are 2x as likely to be shiny. Gold Quality and higher capsules will exclusively spawn from the bonus pool.",
     },
     {
       item: "sunlit_cobblemon:mukbeth",

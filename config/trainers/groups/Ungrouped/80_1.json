@@ -1,0 +1,89 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:drapion",
+      "gender": "MALE",
+      "level": 77,
+      "nature": "cobblemon:careful",
+      "ability": "battlearmor",
+      "moveset": [
+        "toxicspikes",
+        "firefang",
+        "thunderfang",
+        "crosspoison"
+      ],
+      "ivs": {
+        "hp": 18,
+        "attack": 4,
+        "special_defence": 30,
+        "speed": 14
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:garganacl",
+      "gender": "MALE",
+      "level": 77,
+      "nature": "cobblemon:impish",
+      "ability": "sturdy",
+      "moveset": [
+        "hammerarm",
+        "stoneedge",
+        "earthquake",
+        "saltcure"
+      ],
+      "ivs": {
+        "hp": 18,
+        "attack": 20,
+        "defence": 21,
+        "special_attack": 10,
+        "special_defence": 12,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ursaluna",
+      "gender": "FEMALE",
+      "level": 77,
+      "nature": "cobblemon:mild",
+      "ability": "guts",
+      "moveset": [
+        "hammerarm",
+        "headlongrush",
+        "playrough",
+        "snore"
+      ],
+      "ivs": {
+        "hp": 3,
+        "attack": 24,
+        "defence": 5,
+        "special_attack": 7,
+        "special_defence": 4,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:flame_orb",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

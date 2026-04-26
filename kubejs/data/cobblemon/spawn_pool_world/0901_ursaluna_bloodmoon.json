@@ -6,15 +6,56 @@
     {
       "id": "ursaluna-3",
       "pokemon": "ursaluna bloodmoon",
-      "presets": ["natural", "wild"],
+      "presets": [
+        "natural",
+        "wild"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "rare",
       "level": "70",
       "weight": 1,
       "condition": {
-        "biomes": ["#cobblemon:is_magical"],
+        "biomes": [
+          "#cobblemon:is_magical"
+        ],
         "moonPhase": 1
+      }
+    },
+    {
+      "id": "ursaluna-bloodmoon-1",
+      "pokemon": "ursaluna bloodmoon",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "63-80",
+      "weight": 0.1,
+      "condition": {
+        "biomes": [
+          "society:frozen_caves",
+          "society:frozen_maelstrom"
+        ]
+      }
+    },
+    {
+      "id": "ursaluna-bloodmoon-1",
+      "pokemon": "ursaluna bloodmoon",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "63-80",
+      "weight": 0.01,
+      "condition": {
+        "biomes": [
+          "society:frozen_caves",
+          "society:frozen_maelstrom"
+        ]
       }
     }
   ]

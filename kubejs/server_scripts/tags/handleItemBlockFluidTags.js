@@ -406,6 +406,10 @@ ServerEvents.tags("item", (e) => {
   e.add("c:tools/shears", "society:magic_shears");
   e.add("forge:shears", "society:magic_shears");
   // Bulk
+  const vegetableTags = ["c:vegetables", 'diet:vegetables', 'forge:vegetables', 'farm_and_charm:vegetables']
+  vegetableTags.forEach((tag) => {
+    e.remove(tag, 'farm_and_charm:strawberry');
+  });
   global.preserves.forEach((preserve) => {
     e.add("society:preserves", preserve.item);
   });
@@ -464,7 +468,9 @@ ServerEvents.tags("item", (e) => {
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
-  e.add("forge:stripped_logs", "minecraft:stripped_pale_oak_log");
+  ['cluttered:stripped_poplar_log', 'cluttered:stripped_willow_log', 'cluttered:stripped_fluorescent_maple_log', 'cluttered:stripped_sycamore_log', 'cluttered:stripped_flowering_crabapple_log', 'cluttered:stripped_crabapple_log', 'cluttered:stripped_flowering_willow_log', 'minecraft:stripped_pale_oak_log', "minecraft:stripped_pale_oak_log"].forEach((log) => {
+    e.add("forge:stripped_logs", log);
+  });
   [
     "twigs:tangerine_seashell",
     "twigs:roseate_seashell",
@@ -696,7 +702,9 @@ ServerEvents.tags("block", (e) => {
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
   });
-
+  ['cluttered:stripped_poplar_log', 'cluttered:stripped_willow_log', 'cluttered:stripped_fluorescent_maple_log', 'cluttered:stripped_sycamore_log', 'cluttered:stripped_flowering_crabapple_log', 'cluttered:stripped_crabapple_log', 'cluttered:stripped_flowering_willow_log', 'minecraft:stripped_pale_oak_log', "minecraft:stripped_pale_oak_log"].forEach((log) => {
+    e.add("forge:stripped_logs", log);
+  });
   [
     "society:prismatic_shard_block",
     "society:sparkstone_block",
@@ -744,6 +752,7 @@ ServerEvents.tags("block", (e) => {
     "c:relocation_not_supported",
     "create:non_movable",
     "create:non_breakable",
+    "quark:iron_rod_immune"
   ];
   [
     "society:cavern_air",

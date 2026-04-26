@@ -53,8 +53,13 @@ ItemEvents.rightClicked("sunlit_cobblemon:poke_radar", (e) => {
     let spawnNames = {}
     let namedProbabilities = {}
     spawnDetails.forEach((entry) => {
-      let nameText = entry.getName()
+      let nameText = entry.getName();
+      let aspect = global.getImportantAspect(entry.pokemon.aspects)
       let nameString = nameText.getString()
+
+    if (aspect !== null) {
+        nameString += ` (${global.formatName(`${aspect.toString()}`)})`;
+      }
       if (!spawnNames[nameString]) {
         spawnNames[nameString] = nameText
       }

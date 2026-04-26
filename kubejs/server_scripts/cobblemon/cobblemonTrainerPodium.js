@@ -10,8 +10,7 @@ BlockEvents.placed("sunlit_cobblemon:trainer_podium", (e) => {
   if (podiumNbt && !podiumNbt.isEmpty()) {
     nbt.merge({
       data: {
-        trainer: podiumNbt.get("trainer"),
-        lastStreak: Number(podiumNbt.get("lastStreak"))
+        trainers: podiumNbt.get("trainers")
       },
     });
   }
@@ -21,9 +20,23 @@ BlockEvents.placed("sunlit_cobblemon:trainer_podium", (e) => {
 });
 
 BlockEvents.broken("sunlit_cobblemon:trainer_podium", (e) => {
-  global.removeNearbyTrainers(e.level, e.block, true);
-  const nbt = e.block.getEntityData();
-  e.block.popItem(Item.of("sunlit_cobblemon:trainer_podium", `{trainer:${nbt.data.trainer},lastStreak:${nbt.data.lastStreak}}`));
+  const { block, level, player, server } = e;
+  let nearbyTrainers = level
+    .getEntitiesWithin(AABB.ofBlock(block).inflate(2))
+    .filter((entityType) => entityType.type === "rctmod:trainer");
+  if (nearbyTrainers.length >= 1) {
+    server.runCommandSilent(
+      global.getEmbersTextAPICommand(
+        player.username,
+        global.animalMessageSettings,
+        80,
+        Text.translatable("sunlit_cobblemon.trainer_podium.need_to_defeat_before_moving").toJson()
+      )
+    );
+    e.cancel();
+  }
+  const nbt = block.getEntityData();
+  block.popItem(Item.of("sunlit_cobblemon:trainer_podium", `{trainers:${nbt.data.trainers}}`));
 });
 
 BlockEvents.rightClicked("sunlit_cobblemon:trainer_podium", (e) => {
@@ -39,22 +52,14 @@ BlockEvents.rightClicked("sunlit_cobblemon:trainer_podium", (e) => {
     let levelAverage = global.getPartyLevel(podiumPlayer);
     if (!podiumPlayer.persistentData.winStreak)
       podiumPlayer.persistentData.winStreak = 0;
-    player.tell(`§6${podiumPlayer.username}'s§7 Trainer Podium`);
-    player.tell(
-      `§7Current Win Streak: §6${podiumPlayer.persistentData.winStreak}`
-    );
-    player.tell(
-      `§7Trainer Level Tier: §6${levelAverage > 100
-        ? "Not League legal!"
-        : global.getPlayerPodiumLevelTier(podiumPlayer, levelAverage)
-      }`
-    );
+
+    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.label", podiumPlayer.username).gold());
+    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.streak", `${Number(podiumPlayer.persistentData.winStreak)}`).gold());
+    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.tier", levelAverage > 100
+      ? Text.translatable("Not League legal!")
+      : `${Number(global.getPlayerPodiumLevelTier(podiumPlayer, levelAverage))}`).gold());
   } else {
-    player.tell(
-      Text.gray(
-        "This is a stranger's Trainer Podium. They aren't online to draw stats from..."
-      )
-    );
+    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.stranger").gray());
   }
 });
 
@@ -85,7 +90,12 @@ ItemEvents.entityInteracted((e) => {
   let levelAverage = global.getPartyLevel(player);
   if (levelAverage > 100) {
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 Using a legendary or mythical Pokémon isn't allowed by the League...`
+      global.getEmbersTextAPICommand(
+        player.username,
+        global.animalMessageSettings,
+        80,
+        Text.translatable("sunlit_cobblemon.trainer_podium.banned_mon").toJson()
+      )
     );
     e.cancel();
     return;
@@ -95,10 +105,14 @@ ItemEvents.entityInteracted((e) => {
   if (trainerLevel !== currentLevel) {
     let tooHigh = currentLevel < trainerLevel;
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings
-      } 120 This trainer's level is too ${tooHigh ? "high" : "low"
-      } for your team! You need an average level of ${trainerLevel + 5}.`
+      global.getEmbersTextAPICommand(
+        player.username,
+        global.animalMessageSettings,
+        80,
+        Text.translatable(`sunlit_cobblemon.trainer_podium.too_${tooHigh ? "high" : "low"}`, `${trainerLevel + 5}`).toJson()
+      )
     );
+    global.removeNearbyTrainers(level, level.getBlock(target.onPos.above()), true);
     e.cancel();
   }
 });

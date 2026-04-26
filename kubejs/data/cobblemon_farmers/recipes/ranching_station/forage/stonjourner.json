@@ -1,0 +1,48 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "stonjourner",
+	"forages": [
+		{
+			"item": "cobblemon:everstone",
+			"count": 1,
+			"chance": 0.09,
+			"min_hearts": 1
+		},
+		{
+			"item": "society:limestone_pebble",
+			"count": 1,
+			"chance": 0.09,
+			"min_hearts": 2
+		},
+		{
+			"item": "society:soapstone",
+			"count": 1,
+			"chance": 0.09,
+			"min_hearts": 3
+		},
+		{
+			"item": "cobblemon:fossilized_bird",
+			"count": 1,
+			"chance": 0.06,
+			"min_hearts": 7
+		},
+		{
+			"item": "cobblemon:fossilized_fish",
+			"count": 1,
+			"chance": 0.06,
+			"min_hearts": 8
+		},
+		{
+			"item": "cobblemon:fossilized_drake",
+			"count": 1,
+			"chance": 0.06,
+			"min_hearts": 9
+		},
+		{
+			"item": "cobblemon:fossilized_dino",
+			"count": 1,
+			"chance": 0.06,
+			"min_hearts": 10
+		}
+	]
+}

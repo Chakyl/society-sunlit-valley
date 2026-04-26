@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "mimejr",
+	"form": "galarbias",
+	"forages": [
+		{
+			"item": "splendid_slimes:corral_block",
+			"count": 8,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "society:tiny_gnome",
+			"count": 1,
+			"chance": 0.07,
+			"min_hearts": 7
+		}
+	]
+}

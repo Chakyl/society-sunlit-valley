@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:is_nether",
+  "step": "underground_decoration",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "sunlit_cobblemon:nether_sun_altar",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "below_top": 16
+    },
+    "min_inclusive": {
+      "absolute": 32
+    }
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

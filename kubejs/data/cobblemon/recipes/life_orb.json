@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GTA",
+        "TET",
+		"ATG"
+    ],
+    "key": {
+        "A": {
+            "item": "species:ichor_bottle"
+        },
+        "T": {
+            "item": "quark:soul_bead"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "G": {
+            "item": "minecraft:ghast_tear"
+        }
+    },
+    "result": {
+        "item": "cobblemon:life_orb"
+    }
+}

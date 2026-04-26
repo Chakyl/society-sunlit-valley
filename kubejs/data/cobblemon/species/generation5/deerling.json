@@ -1,0 +1,326 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 585,
+    "name": "Deerling",
+    "primaryType": "normal",
+    "secondaryType": "grass",
+    "maleRatio": 0.5,
+    "height": 6,
+    "weight": 195,
+    "pokedex": [
+        "cobblemon.species.deerling.desc"
+    ],
+    "labels": [
+        "gen5"
+    ],
+    "aspects": [
+        "spring"
+    ],
+    "abilities": [
+        "chlorophyll",
+        "sapsipper",
+        "h:serenegrace"
+    ],
+    "eggGroups": [
+        "field"
+    ],
+    "baseStats": {
+        "hp": 60,
+        "attack": 60,
+        "defence": 50,
+        "special_attack": 40,
+        "special_defence": 50,
+        "speed": 75
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 1
+    },
+    "baseExperienceYield": 67,
+    "experienceGroup": "medium_fast",
+    "catchRate": 190,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "features": [
+        "season"
+    ],
+    "baseScale": 0.8,
+    "hitbox": {
+        "width": 0.6,
+        "height": 1.1,
+        "fixed": false
+    },
+    "drops": {
+        "amount": 2,
+        "entries": [
+            {
+                "item": "minecraft:leather",
+                "quantityRange": "0-1"
+            },
+            {
+                "item": "wildernature:venison",
+                "quantityRange": "0-1"
+            },
+            {
+                "item": "cobblemon:yache_berry",
+                "percentage": 2.5
+            }
+        ]
+    },
+    "moves": [
+        "1:tackle",
+        "1:camouflage",
+        "4:growl",
+        "7:sandattack",
+        "10:doublekick",
+        "13:leechseed",
+        "16:feintattack",
+        "20:takedown",
+        "24:jumpkick",
+        "28:aromatherapy",
+        "32:charm",
+        "37:doubleedge",
+        "42:solarbeam",
+        "egg:agility",
+        "egg:batonpass",
+        "egg:faketears",
+        "egg:grasswhistle",
+        "egg:headbutt",
+        "egg:naturalgift",
+        "egg:odorsleuth",
+        "egg:sleeptalk",
+        "egg:synthesis",
+        "egg:worryseed",
+        "tm:agility",
+        "tm:batonpass",
+        "tm:bodyslam",
+        "tm:bounce",
+        "tm:bulldoze",
+        "tm:bulletseed",
+        "tm:charm",
+        "tm:dig",
+        "tm:doubleedge",
+        "tm:echoedvoice",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:energyball",
+        "tm:facade",
+        "tm:faketears",
+        "tm:flash",
+        "tm:gigadrain",
+        "tm:grassknot",
+        "tm:grassyglide",
+        "tm:grassyterrain",
+        "tm:headbutt",
+        "tm:helpinghand",
+        "tm:lastresort",
+        "tm:leafstorm",
+        "tm:lightscreen",
+        "tm:magicalleaf",
+        "tm:naturalgift",
+        "tm:naturepower",
+        "tm:playrough",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:safeguard",
+        "tm:seedbomb",
+        "tm:shadowball",
+        "tm:sleeptalk",
+        "tm:solarbeam",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:synthesis",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:thunderwave",
+        "tm:trailblaze",
+        "tm:wildcharge",
+        "tm:workup",
+        "tm:worryseed",
+        "tm:zenheadbutt",
+        "tutor:bounce",
+        "tutor:bulldoze",
+        "tutor:endeavor",
+        "tutor:energyball",
+        "tutor:gigadrain",
+        "tutor:grassyglide",
+        "tutor:helpinghand",
+        "tutor:lastresort",
+        "tutor:magicalleaf",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:seedbomb",
+        "tutor:shadowball",
+        "tutor:sleeptalk",
+        "tutor:synthesis",
+        "tutor:wildcharge",
+        "tutor:worryseed",
+        "tutor:zenheadbutt"
+    ],
+    "evolutions": [
+        {
+            "id": "deerling_sawsbuck",
+            "variant": "level_up",
+            "result": "sawsbuck",
+            "consumeHeldItem": false,
+            "learnableMoves": [
+                "hornleech"
+            ],
+            "requirements": [
+                {
+                    "variant": "level",
+                    "minLevel": 34
+                }
+            ]
+        }
+    ],
+    "forms": [
+        {
+            "name": "Summer",
+            "primaryType": "normal",
+            "secondaryType": "grass",
+            "maleRatio": 0.5,
+            "height": 6,
+            "weight": 195,
+            "pokedex": [
+                "cobblemon.species.deerling-summer.desc"
+            ],
+            "labels": [
+                "gen5"
+            ],
+            "aspects": [
+                "summer"
+            ],
+            "evolutions": [
+                {
+                    "id": "deerling_sawsbuck",
+                    "variant": "level_up",
+                    "result": "sawsbuck",
+                    "consumeHeldItem": false,
+                    "learnableMoves": [
+                        "hornleech"
+                    ],
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 34
+                        }
+                    ]
+                }
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Autumn",
+            "primaryType": "normal",
+            "secondaryType": "grass",
+            "maleRatio": 0.5,
+            "height": 6,
+            "weight": 195,
+            "pokedex": [
+                "cobblemon.species.deerling-autumn.desc"
+            ],
+            "labels": [
+                "gen5"
+            ],
+            "aspects": [
+                "autumn"
+            ],
+            "evolutions": [
+                {
+                    "id": "deerling_sawsbuck",
+                    "variant": "level_up",
+                    "result": "sawsbuck",
+                    "consumeHeldItem": false,
+                    "learnableMoves": [
+                        "hornleech"
+                    ],
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 34
+                        }
+                    ]
+                }
+            ],
+            "battleOnly": false
+        },
+        {
+            "name": "Winter",
+            "primaryType": "normal",
+            "secondaryType": "grass",
+            "maleRatio": 0.5,
+            "height": 6,
+            "weight": 195,
+            "pokedex": [
+                "cobblemon.species.deerling-winter.desc"
+            ],
+            "labels": [
+                "gen5"
+            ],
+            "aspects": [
+                "winter"
+            ],
+            "evolutions": [
+                {
+                    "id": "deerling_sawsbuck",
+                    "variant": "level_up",
+                    "result": "sawsbuck",
+                    "consumeHeldItem": false,
+                    "learnableMoves": [
+                        "hornleech"
+                    ],
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 34
+                        }
+                    ]
+                }
+            ],
+            "battleOnly": false
+        }
+    ],
+    "behaviour": {
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "deerling",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "stantler",
+                    "tier": 2
+                },
+                {
+                    "pokemon": "wyrdeer",
+                    "tier": 3
+                },
+                {
+                    "pokemon": "sawsbuck",
+                    "tier": 4
+                }
+            ]
+        },
+        "resting": {
+            "willSleepOnBed": true,
+            "drowsyChance": 0.0333,
+            "rouseChance": 0.0042
+        },
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            }
+        },
+        "combat": {
+            "willDefendOwner": true
+        }
+    }
+}

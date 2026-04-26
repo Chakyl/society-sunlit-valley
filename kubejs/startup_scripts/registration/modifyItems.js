@@ -69,6 +69,7 @@ ItemEvents.modification((e) => {
       "domesticationinnovation:collar_tag",
       "domesticationinnovation:wayward_lantern",
       "domesticationinnovation:drum",
+      "society:spinel"
     ],
     (item) => {
       item.rarity = "epic";
@@ -189,10 +190,10 @@ ItemEvents.modification((e) => {
   e.modify(
     "beachparty:cooked_mussel_meat",
     (item) =>
-      (item.foodProperties = (food) => {
-        food.hunger(5);
-        food.saturation(0.5);
-      }),
+    (item.foodProperties = (food) => {
+      food.hunger(5);
+      food.saturation(0.5);
+    }),
   );
   const netheriteTools = [
     "minecraft:netherite_axe",

@@ -1,0 +1,100 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "tauros-1",
+      "pokemon": "tauros",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "24-49",
+      "weight": 20.0,
+      "weightMultiplier": {
+        "multiplier": 0.25,
+        "condition": {
+          "timeRange": "night"
+        }
+      },
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_grassland"
+        ]
+      }
+    },
+    {
+      "id": "tauros-combat-2",
+      "pokemon": "tauros paldean_breed=combat",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "48-61",
+      "weight": 1.0,
+      "weightMultiplier": {
+        "multiplier": 0.25,
+        "condition": {
+          "timeRange": "day"
+        }
+      },
+      "condition": {
+        "biomes": [
+          "society:skull_caves"
+        ]
+      }
+    },
+    {
+      "id": "tauros-blaze-3",
+      "pokemon": "tauros paldean_breed=blaze",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "68-100",
+      "weight": 1.0,
+      "weightMultiplier": {
+        "multiplier": 0.25,
+        "condition": {
+          "timeRange": "day"
+        }
+      },
+      "condition": {
+        "biomes": [
+          "society:blackstone_caves"
+        ]
+      }
+    },
+    {
+      "id": "tauros-aqua-4",
+      "pokemon": "tauros paldean_breed=aqua",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "58-71",
+      "weight": 1.0,
+      "weightMultiplier": {
+        "multiplier": 0.25,
+        "condition": {
+          "timeRange": "day"
+        }
+      },
+      "condition": {
+        "biomes": [
+          "society:frozen_maelstrom"
+        ]
+      }
+    }
+  ]
+}

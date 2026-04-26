@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "bellsprout",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 2,
+			"chance": 0.12,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "minecraft:pitcher_pod",
+			"count": 1,
+			"chance": 0.15,
+			"has_quality": true,
+			"min_hearts": 8
+		}
+	]
+}

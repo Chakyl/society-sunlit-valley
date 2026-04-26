@@ -63,10 +63,10 @@ const catchPokemon = (caughtMon, level, hook, server, player, nether) => {
       }`
     );
   } else {
-    if (caughtMon.variant && caughtMon.variant.includes("magikarp")) player.tell(Text.translatable("sunlit_cobblemon.special_magikarp").gold());
-    if (global.getHasCurio(player, 'sunlit_cobblemon:swampy_mystica_branch')) {
+    if (caughtMon.variant && String(caughtMon.variant).includes("magikarp_jump")) player.tell(Text.translatable("sunlit_cobblemon.special_magikarp").gold());
+    if (Math.random() < 0.04 && global.getHasCurio(player, 'sunlit_cobblemon:swampy_mystica_branch')) {
       let lakeLegendaries = ["mesprit", "azelf", "uxie"]
-      if (Math.random() < 0.04 && global.hasPartyPokemon(player, lakeLegendaries, 3)) {
+      if (global.hasPartyPokemon(player, lakeLegendaries, 3)) {
         let blockToSet = level.getBlock(level.getBlock(hook.getPos()).getPos().above());
         blockToSet.set("cobblemon:moon_stone_block")
         let spawnedAny = global.summonRaidPokemon(server, level, blockToSet, "cresselia", "", 100, 75, false, false, 0, true);
@@ -82,13 +82,13 @@ const catchPokemon = (caughtMon, level, hook, server, player, nether) => {
         }
       } else {
         server.runCommandSilent(
-          `pokespawnat ${hook.x} ${hook.y + 2} ${hook.z} ${lakeLegendaries[Math.floor(Math.random() * lakeLegendaries.length)]} level=80`
+          `execute in ${level.dimension} run pokespawnat ${hook.x} ${hook.y + 2} ${hook.z} ${lakeLegendaries[Math.floor(Math.random() * lakeLegendaries.length)]} level=80`
         );
 
       }
     } else {
       server.runCommandSilent(
-        `pokespawnat ${hook.x} ${hook.y + 2} ${hook.z} ${caughtMon.pokemon
+        `execute in ${level.dimension} run pokespawnat ${hook.x} ${hook.y + 2} ${hook.z} ${caughtMon.pokemon
         } level=${pokeLevel} ${caughtMon.variant ? caughtMon.variant : ""}`
       );
     }

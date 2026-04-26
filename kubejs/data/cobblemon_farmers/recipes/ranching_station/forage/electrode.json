@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "electrode",
+	"forages": [
+		{
+			"item": "minecraft:tnt",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "cobblemon:poke_ball",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

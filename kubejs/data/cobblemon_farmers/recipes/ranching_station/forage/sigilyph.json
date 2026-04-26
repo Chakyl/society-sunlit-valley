@@ -1,0 +1,48 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "sigilyph",
+	"forages": [
+		{
+			"item": "windswept:elder_feather",
+			"count": 1,
+			"chance": 0.3,
+			"min_hearts": 2
+		},
+		{
+			"item": "windswept:hoot_pottery_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 3
+		},
+		{
+			"item": "windswept:offshoot_pottery_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 4
+		},
+		{
+			"item": "windswept:plumage_pottery_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 5
+		},
+		{
+			"item": "windswept:flake_pottery_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 6
+		},
+		{
+			"item": "windswept:drupes_pottery_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 7
+		},
+		{
+			"item": "cobblemon:psychic_gem",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		}
+	]
+}

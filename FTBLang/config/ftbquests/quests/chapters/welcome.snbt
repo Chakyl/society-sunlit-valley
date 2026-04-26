@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2B6877708A709B5C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "welcome"
@@ -111,8 +112,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.welcome.quest7A7B131D229E5279.title}"
-			x: 0.0d
-			y: -2.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
@@ -348,6 +349,26 @@
 			title: "{ftbquests.chapter.welcome.quest5FDA526D348C8A0F.title}"
 			x: 2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			description: [
+				"{ftbquests.chapter.welcome.quest4CD7DF94AD736993.description1}"
+				""
+				"{ftbquests.chapter.welcome.quest4CD7DF94AD736993.description2}"
+				""
+				"{ftbquests.chapter.welcome.quest4CD7DF94AD736993.description3}"
+			]
+			icon: "cobblemon:poke_ball"
+			id: "4CD7DF94AD736993"
+			tasks: [{
+				id: "18F589F1324790A9"
+				title: "{ftbquests.chapter.welcome.quest4CD7DF94AD736993.task.1798495295228055721.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.welcome.quest4CD7DF94AD736993.title}"
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	title: "{ftbquests.chapter.welcome.title}"

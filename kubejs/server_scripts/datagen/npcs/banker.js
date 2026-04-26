@@ -299,6 +299,15 @@ if (global.datagenDialog) {
           "Now leave, and don't disappoint me again."
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "Hello @i. Being a Sunlit League recognized Master trainer, there are certain expectations.",
+          "I don't want you to look bad to our sister towns, so I'm giving you a little piece of my heart.",
+          "Marshadow often commune with me to spy on our competitors, but very rarely do they take to trainers.",
+          "I expect someone of your caliber to make the most of having one. Please don't disappoint me."
+        ]
+      },
     ]
   });
 }

@@ -35,15 +35,11 @@ global.handleCobblemonDefeat = (e) => {
       winStreak++;
       if (winStreak % 10 == 0) {
         winningPlayer.tell(
-          Text.green(
-            `Your Gym win streak is now ${winningPlayer.persistentData.winStreak
-            }! Trainer reward money increased by x${(winningPlayer.persistentData.winStreak / 10) * 1.25
-            } and difficulty increased!`
-          )
+          Text.translatable("sunlit_cobblemon.trainer_podium.win_streak_upgraded", `${Number(winningPlayer.persistentData.winStreak)}`, `${Number((winningPlayer.persistentData.winStreak / 10) * 1.25)}`).green()
         );
       } else {
         winningPlayer.tell(
-          Text.gold(`Your Gym win streak is now ${winningPlayer.persistentData.winStreak}`)
+          Text.translatable("sunlit_cobblemon.trainer_podium.win_streak", `${Number(winningPlayer.persistentData.winStreak)}`).gold()
         );
       }
       if (winStreak > 10) {
@@ -57,15 +53,19 @@ global.handleCobblemonDefeat = (e) => {
     }
     let account = global.GLOBAL_BANK.getAccount(winningPlayer.getUuid());
     if (account && account.getBalance() + reward < 2147483000) {
+      reward = Math.round(reward);
       account.deposit(reward);
-      winningPlayer
-        .getServer()
-        .runCommandSilent(
-          `emberstextapi sendcustom ${winningPlayer.username
-          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:68,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 ● §6${global.formatPrice(
-            reward
-          )} §7rewarded by the League`
-        );
+      winningPlayer.getServer().runCommandSilent(
+        global.getEmbersTextAPICommand(
+          winningPlayer.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:68,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          Text.translatable(
+            "sunlit_cobblemon.win_reward",
+            global.formatPrice(reward),
+          ).toJson()
+        )
+      );
     }
   } else if (
     !winningPlayer.isPlayer() &&
@@ -74,7 +74,9 @@ global.handleCobblemonDefeat = (e) => {
     global.handleLeagueFee(losingPlayer.getServer(), losingPlayer, "loss")
 
     if (losingPlayer.persistentData.winStreak > 1) {
-      losingPlayer.tell(Text.red(`You lost your §6${losingPlayer.persistentData.winStreak} §cwinning streak...`));
+      losingPlayer.tell(
+        Text.translatable("sunlit_cobblemon.trainer_podium.win_streak_lost", `${Number(losingPlayer.persistentData.winStreak)}`).red()
+      );
       losingPlayer.persistentData.winStreak = 0;
     }
   }

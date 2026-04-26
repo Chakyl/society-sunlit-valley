@@ -105,8 +105,8 @@ ServerEvents.recipes((e) => {
     },
     { sapling: "minecraft:dark_oak_sapling", log: "minecraft:dark_oak_log" },
     {
-      sapling: "vanillabackport:pale_oak_sapling",
-      log: "vanillabackport:pale_oak_log",
+      sapling: "minecraft:pale_oak_sapling",
+      log: "minecraft:pale_oak_log",
     },
     { sapling: "minecraft:cherry_sapling", log: "minecraft:cherry_log" },
     { sapling: "minecraft:mangrove_propagule", log: "minecraft:mangrove_log" },

@@ -59,6 +59,9 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
+  "kubejs": {
+    "shipping_bin_jade": true
+  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -68,6 +71,9 @@
     "exact_block": true,
     "goggles.detailed": false,
     "placard": true
+  },
+  "cobblemon_farmers": {
+    "cobblemon_farmers": true
   },
   "cobblemonintegrations": {
     "healer": true,
@@ -90,6 +96,18 @@
   "balm": {
     "jade": true
   },
+  "ae2": {
+    "part_icon": true,
+    "charger": true,
+    "debug": true,
+    "part_tooltip": true,
+    "grid_node_state": true,
+    "pattern_provider": true,
+    "part_mod_name": true,
+    "power_storage": true,
+    "crafting_monitor": true,
+    "part_name": true
+  },
   "society": {
     "plushie_jade": true,
     "crop_growth_jade": true,
@@ -105,10 +123,6 @@
   },
   "jadeaddons.lootr": {
     "info": true
-  },
-  "item-descriptions": {
-    "block_descriptions": true,
-    "entity_descriptions": true
   },
   "pipez": {
     "pipe": true

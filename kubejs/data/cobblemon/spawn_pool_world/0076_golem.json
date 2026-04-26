@@ -6,7 +6,10 @@
     {
       "id": "golem-1",
       "pokemon": "golem",
-      "presets": ["natural", "wild"],
+      "presets": [
+        "natural",
+        "wild"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "common",
@@ -14,13 +17,17 @@
       "weight": 0.1,
       "condition": {
         "canSeeSky": true,
-        "biomes": ["#cobblemon:is_mountain"]
+        "biomes": [
+          "#cobblemon:is_mountain"
+        ]
       }
     },
     {
       "id": "golem-2",
       "pokemon": "golem",
-      "presets": ["natural"],
+      "presets": [
+        "natural"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "common",
@@ -28,16 +35,23 @@
       "weight": 0.1,
       "condition": {
         "canSeeSky": false,
-        "biomes": ["#cobblemon:is_overworld"]
+        "biomes": [
+          "#cobblemon:is_overworld"
+        ]
       },
       "anticondition": {
-        "biomes": ["#cobblemon:is_deep_dark"]
+        "biomes": [
+          "#cobblemon:is_deep_dark"
+        ]
       }
     },
     {
       "id": "golem-alolan-3",
       "pokemon": "golem alolan",
-      "presets": ["natural", "wild"],
+      "presets": [
+        "natural",
+        "wild"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "common",
@@ -45,13 +59,17 @@
       "weight": 0.1,
       "condition": {
         "canSeeSky": true,
-        "biomes": ["#cobblemon:is_mountain"]
+        "biomes": [
+          "#cobblemon:is_mountain"
+        ]
       }
     },
     {
       "id": "golem-alolan-4",
       "pokemon": "golem alolan",
-      "presets": ["natural"],
+      "presets": [
+        "natural"
+      ],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "uncommon",
@@ -65,7 +83,27 @@
       },
       "condition": {
         "canSeeSky": true,
-        "biomes": ["#cobblemon:is_tropical_island", "#c:stony_shores"]
+        "biomes": [
+          "#cobblemon:is_tropical_island",
+          "#c:stony_shores"
+        ]
+      }
+    },
+    {
+      "id": "golem-5",
+      "pokemon": "golem",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "75-89",
+      "weight": 0.1,
+      "condition": {
+        "biomes": [
+          "society:skull_caves"
+        ]
       }
     }
   ]

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "brambleghast",
+	"forages": [
+		{
+			"item": "atmospheric:yucca_fruit",
+			"count": 8,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 7
+		},
+		{
+			"item": "botania:livingwood_log",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 10
+		}
+	]
+}

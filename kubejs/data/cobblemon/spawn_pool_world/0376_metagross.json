@@ -34,26 +34,7 @@
             "weight": 0.1,
             "condition": {
                 "biomes": [
-                    "#minecraft:is_end"
-                ]
-            }
-        },
-        {
-            "id": "metagross-3",
-            "pokemon": "metagross",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "rare",
-            "level": "45-60",
-            "weight": 0.1,
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:howling_constructs"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
+                    "society:umbra_barrens"
                 ]
             }
         }

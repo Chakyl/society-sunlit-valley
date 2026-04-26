@@ -1,0 +1,37 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "ferrothorn",
+	"forages": [
+		{
+			"item": "minecraft:moss_block",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "minecraft:moss_block",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "minecraft:moss_block",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "create:crushed_raw_iron",
+			"count": 4,
+			"chance": 0.8,
+			"min_hearts": 6
+		},
+		{
+			"item": "society:mossberry",
+			"count": 3,
+			"chance": 0.5,
+			"has_quality": true,
+			"min_hearts": 8
+		}
+	]
+}

@@ -4,16 +4,18 @@ BlockEvents.leftClicked("society:skull_cavern_teleporter", (e) => {
   if (e.level.dimension === "society:skull_cavern") e.cancel();
 });
 BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
-  const { block, player, level, server } = e;
+  const { block, player, level, item, hand, server } = e;
   const { x, z } = block;
   let errorText;
+  if (hand == "OFF_HAND") return;
+  if (item === 'society:magic_rope') e.cancel();
   if (!player.stages.has("entered_skull_cavern")) player.stages.add("entered_skull_cavern");
   if (!player.stages.has("master_cultivator_unlocked")) player.stages.add("master_cultivator_unlocked");
   if (!player.stages.has("exotic_trader_unlocked")) player.stages.add("exotic_trader_unlocked");
   if (level.dimension === "society:skull_cavern") {
     player.persistentData.skullCavernEnterDay = -1;
     global.teleportHome(player, server, level);
-  } else if (level.dimension === "minecraft:overworld") {
+  } else if (level.dimension !== "society:skull_cavern") {
     if (level.dayTime() % 24000 > 18000) {
       errorText = Text.translatable("society.skull_cavern.too_late").toJson();
     } else {

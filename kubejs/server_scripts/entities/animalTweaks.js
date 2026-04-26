@@ -21,3 +21,9 @@ EntityEvents.spawned((e) => {
     e.cancel();
   }
 });
+
+EntityEvents.spawned((e) => {
+  if (e.entity.type == "rottencreatures:immortal" && e.level.dimension !== "society:skull_cavern") {
+    e.cancel();
+  }
+});

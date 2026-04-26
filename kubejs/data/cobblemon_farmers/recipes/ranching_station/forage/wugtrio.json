@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "wugtrio",
+	"forages": [
+		{
+			"item": "beachparty:seashell",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 3,
+			"has_quality": true
+		},
+		{
+			"item": "aquaculture:lockbox",
+			"count": 1,
+			"chance": 0.83,
+			"min_hearts": 6
+		},
+		{
+			"item": "aquaculture:treasure_chest",
+			"count": 1,
+			"chance": 0.13,
+			"min_hearts": 10
+		}
+	]
+}

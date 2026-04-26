@@ -1,14 +1,14 @@
 {
   "colors": {
-    "accent": "#805c49",
-    "base": "#9ea7b5"
+    "accent": "#F3CC4F",
+    "base": "#ECA063"
   },
   "display": {
     "offset": { "x": 0, "y": 1, "z": 0 },
     "scale": 2.0
   },
   "item": {
-    "item": "railways:track_oak",
+    "item": "minecraft:ochre_froglight",
     "count": 1
   },
   "animation": {
@@ -17,11 +17,11 @@
   },
   "effects": {
     "sound": {
-      "soundEvent": "create:whistle_train_low"
+      "soundEvent": "botania:light_relay"
     }
   },
   "name": {
-    "color": "#805c49",
-    "translate": "society.trofers.blooming_sun"
+    "color": "#F3CC4F",
+    "translate": "Building Contest Trophy - Blooming Sun"
   }
 }

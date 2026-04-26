@@ -1,5 +1,4 @@
 global.removedItems = [
-  "unimplemented_items:repel",
   "unimplemented_items:potion",
   "unimplemented_items:potion_hyper",
   "unimplemented_items:potion_max",
@@ -643,6 +642,8 @@ global.removedItems = [
   "rctmod:trainer_card",
   "cobblemon:repeat_ball",
   "create_klinks_n_klangs:wrapper",
+  // TEMP 
+  'sophisticatedbackpacks:advanced_pump_upgrade',
   // 4.1 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
   "cluttered:pastel_bunny_plushie",

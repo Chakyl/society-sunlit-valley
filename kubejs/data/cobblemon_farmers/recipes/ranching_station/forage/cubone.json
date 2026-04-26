@@ -3,16 +3,16 @@
 	"pokemon": "cubone",
 	"forages": [
 		{
+			"item": "minecraft:bone",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 10
+		},
+		{
 			"item": "betterarcheology:artifact_shards",
 			"count": 3,
 			"chance": 0.25,
 			"min_hearts": 6
-		},
-		{
-			"item": "mysticaloaktree:wise_oak",
-			"count": 1,
-			"chance": 0.01,
-			"min_hearts": 10
 		}
 	]
 }

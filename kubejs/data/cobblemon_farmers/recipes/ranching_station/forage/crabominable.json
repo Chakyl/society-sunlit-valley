@@ -1,0 +1,36 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "crabominable",
+	"forages": [
+		{
+			"item": "society:crab_roe",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 0
+		},
+		{
+			"item": "society:crab_roe",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:crab_roe",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 6
+		},
+		{
+			"item": "society:crab_roe",
+			"count": 2,
+			"chance": 1,
+			"min_hearts": 8
+		},
+		{
+			"item": "crabbersdelight:deluxe_crab_trap_bait",
+			"count": 4,
+			"chance": 0.5,
+			"min_hearts": 10
+		}
+	]
+}

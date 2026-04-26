@@ -1,0 +1,39 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "froslass-1",
+      "pokemon": "froslass",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "32-50",
+      "weight": 5.0,
+      "condition": {
+        "timeRange": "twilight",
+        "biomes": ["#cobblemon:is_freezing"]
+      }
+    },
+    {
+      "id": "froslass-2",
+      "pokemon": "froslass",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "53-80",
+      "weight": 4.0,
+      "condition": {
+        "biomes": [
+          "society:frozen_maelstrom",
+          "society:frozen_caves"
+        ]
+      }
+    }
+  ]
+}

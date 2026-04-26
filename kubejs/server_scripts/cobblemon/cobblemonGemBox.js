@@ -1,9 +1,17 @@
 console.info("[SOCIETY-S-COBBLEMON] cobblemonGemBoxjs loaded");
 
 const regimap = new Map([
+    // Price
     ["aqtrjs", "regirock"],
+    // Rainbow
     ["rtjqas", "regice"],
+    // Size
     ["asjrtq", "registeel"],
+    // Letter Count 
+    ["rjtsqa", "regieleki"],
+    ["jrtsqa", "regieleki"],
+    // Alphabetical
+    ["aqjrst", "regidrago"],
 ]);
 const gemCodeMap = new Map([
     ["society:amethyst_chunk", "a"],
@@ -63,6 +71,7 @@ const summonRaidRegi = (level, server, player, item, block, legendaryToSummon, r
             level.spawnParticles("species:ghoul_searching2", true, x + 0.5, y + 2, z + 0.5, 0, 0, 0, 1, 2);
             global.addItemCooldown(player, item, 1200);
         } else {
+            player.tell(Text.translatable("sunlit_cobblemon.regi.no_space").red());
             player.give(idUsed);
         }
     })
@@ -89,6 +98,8 @@ BlockEvents.rightClicked("sunlit_cobblemon:gem_box", (e) => {
                     passcode: `${wipCode}${newEntry}`
                 }
             });
+            level.spawnParticles("supplementaries:air_burst", true, x + 0.5, y + 0.5, z + 0.5, 0, 0, 0, 0.01, 1);
+            level.spawnParticles("minecraft:glow_squid_ink", true, x + 0.5, y + 0.5, z + 0.5, 0, 0, 0, 0.01, 2);
             server.runCommandSilent(`playsound minecraft:block.amethyst_block.place block @a ${x} ${y} ${z} 2`);
             global.setBlockEntityData(block, nbt);
             global.addItemCooldown(player, item, 40);
@@ -106,9 +117,10 @@ BlockEvents.rightClicked("sunlit_cobblemon:gem_box", (e) => {
         });
         global.setBlockEntityData(block, nbt);
         if (regiFound) {
-            summonRaidRegi(level, server, player, item, block, global.hasPartyPokemon(player, ["registeel", "regirock", "regice"], 3) ? "regigigast" : regiFound, 100)
+            summonRaidRegi(level, server, player, item, block, global.hasPartyPokemon(player, ["registeel", "regirock", "regice", "regidrago", "regieleki"], 5) ? "regigigas" : regiFound, 100)
         } else {
             server.runCommandSilent(`playsound stardew_fishing:fish_escape block @a ${x} ${y} ${z} 2`);
+            player.tell(Text.translatable("sunlit_cobblemon.regi.fail").red());
             global.addItemCooldown(player, item, 100);
         }
     }

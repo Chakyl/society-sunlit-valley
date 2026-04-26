@@ -1,0 +1,46 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "duraludon-1",
+      "pokemon": "duraludon",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "38-48",
+      "weight": 1.06,
+      "condition": {
+        "neededNearbyBlocks": ["society:mana_clock"]
+      }
+    },
+    {
+      "id": "duraludon-2",
+      "pokemon": "duraludon",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "38-48",
+      "weight": 1.06,
+      "condition": {
+        "neededNearbyBlocks": ["society:sparkstone_recycler"]
+      }
+    },
+    {
+      "id": "duraludon-3",
+      "pokemon": "duraludon",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "60-100",
+      "weight": 1,
+      "condition": {
+        "biomes": [
+          "society:frozen_maelstrom"
+        ]
+      }
+    }
+  ]
+}

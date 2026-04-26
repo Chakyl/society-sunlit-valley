@@ -1,0 +1,159 @@
+{
+  "displayName": "Bug Catcher Beabadoobee",
+  "team": [
+    {
+      "species": "cobblemon:orbeetle",
+      "gender": "FEMALE",
+      "level": 85,
+      "nature": "cobblemon:bold",
+      "ability": "swarm",
+      "moveset": [
+        "reflect",
+        "lightscreen",
+        "magiccoat",
+        "psychic"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 28,
+        "defence": 230,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:light_clay",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:vikavolt",
+      "gender": "FEMALE",
+      "level": 85,
+      "nature": "cobblemon:timid",
+      "ability": "levitate",
+      "moveset": [
+        "bugbuzz",
+        "thunderbolt",
+        "charge",
+        "agility"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:quick_claw",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:centiskorch",
+      "gender": "FEMALE",
+      "level": 85,
+      "nature": "cobblemon:careful",
+      "ability": "flamebody",
+      "moveset": [
+        "leechlife",
+        "lunge",
+        "firelash",
+        "crunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:heracross",
+      "gender": "MALE",
+      "level": 85,
+      "nature": "cobblemon:adamant",
+      "ability": "moxie",
+      "moveset": [
+        "closecombat",
+        "megahorn",
+        "aerialace",
+        "throatchop"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:leavanny",
+      "gender": "MALE",
+      "level": 85,
+      "nature": "cobblemon:docile",
+      "ability": "chlorophyll",
+      "moveset": [
+        "bugbite",
+        "swordsdance",
+        "fellstinger",
+        "leafblade"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

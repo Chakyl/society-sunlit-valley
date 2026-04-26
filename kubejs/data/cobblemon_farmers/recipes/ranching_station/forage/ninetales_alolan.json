@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "ninetales",
+	"form": "alolan",
+	"forages": [
+		{
+			"item": "windswept:wild_berries",
+			"count": 8,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "cobblemon:ice_gem",
+			"count": 1,
+			"chance": 0.2,
+			"min_hearts": 8
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "marowak",
+	"form": "alolan",
+	"forages": [
+		{
+			"item": "betterarcheology:artifact_shards",
+			"count": 3,
+			"chance": 0.45,
+			"min_hearts": 5
+		},
+		{
+			"item": "minecraft:wither_skeleton_skull",
+			"count": 1,
+			"chance": 0.08,
+			"min_hearts": 7
+		}
+	]
+}

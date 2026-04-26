@@ -1,0 +1,60 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "arcanine-2",
+      "pokemon": "arcanine hisuian",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "38-57",
+      "weight": 5.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_peak"
+        ]
+      }
+    },
+    {
+      "id": "arcanine-3",
+      "pokemon": "arcanine hisuian",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "38-57",
+      "weight": 5.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_peak"
+        ]
+      }
+    },
+    {
+      "id": "arcanine-4",
+      "pokemon": "arcanine hisuian",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "55-91",
+      "weight": 5.0,
+      "condition": {
+        "biomes": [
+          "society:skull_caves"
+        ]
+      }
+    }
+  ]
+}

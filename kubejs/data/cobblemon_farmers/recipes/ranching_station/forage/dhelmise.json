@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "dhelmise",
+	"forages": [
+		{
+			"item": "betterarcheology:rotten_log",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "whimsy_deco:ship_helm",
+			"count": 1,
+			"chance": 0.03,
+			"min_hearts": 6
+		},
+		{
+			"item": "aquaculture:treasure_chest",
+			"count": 1,
+			"chance": 0.23,
+			"min_hearts": 6
+		},
+		{
+			"item": "society:treasure_totem",
+			"count": 1,
+			"chance": 0.13,
+			"min_hearts": 10
+		}
+	]
+}

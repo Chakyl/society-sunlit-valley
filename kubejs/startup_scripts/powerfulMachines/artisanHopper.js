@@ -120,6 +120,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
         recipes: global.preservesJarRecipes,
         stageCount: upgraded ? 3 : 5,
         multipleInputs: true,
+        hasTag: true,
         soundType: "minecraft:block.wood.place",
       };
       break;
@@ -177,6 +178,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
         recipes: global.dehydratorRecipes,
         stageCount: 8,
         multipleInputs: true,
+        hasTag: true,
         soundType: "species:block.alphacene_foliage.place",
       };
       break;

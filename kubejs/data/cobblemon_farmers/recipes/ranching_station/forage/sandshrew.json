@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "sandshrew",
+	"forages": [
+		{
+			"item": "minecraft:sandstone",
+			"count": 8,
+			"chance": 0.5,
+			"min_hearts": 1
+		},
+		{
+			"item": "cobblemon:old_amber_fossil",
+			"count": 1,
+			"chance": 0.06,
+			"min_hearts": 7
+		},
+		{
+			"item": "cobblemon:helix_fossil",
+			"count": 1,
+			"chance": 0.06,
+			"min_hearts": 10
+		}
+	]
+}

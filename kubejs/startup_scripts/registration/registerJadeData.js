@@ -48,4 +48,13 @@ JadeEvents.onCommonRegistration((e) => {
       });
     }
   );
+
+  e.blockDataProvider("kubejs:shipping_bin_jade", $BlockEntity).setCallback(
+    (tag, accessor) => {
+      const { blockEntity } = accessor;
+      if (blockEntity.data != null && blockEntity.data.customName != null) {
+        tag.putString("customName", blockEntity.data.customName.toString());
+      }
+    }
+  );
 });

@@ -37,6 +37,16 @@ global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   }
 };
 
+global["JadeShippingBinClientCallback"] = (tooltip, accessor, pluginConfig) => {
+  const blockId = accessor.getBlock().id;
+  if (blockId !== "shippingbin:basic_shipping_bin" && blockId !== "shippingbin:smart_shipping_bin") return;
+
+  const nbt = accessor.getServerData();
+
+  let customName = global.getShippingBinName(nbt, false);
+  if (customName) tooltip.add(customName);
+};
+
 global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (accessor.getBlock().id !== "society:fish_pond") return;
   const properties = accessor.getBlockState();
@@ -100,7 +110,7 @@ global["JadeArtisanMachineClientCallback"] = (
   const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
   let duration = recipe.time || machine.stageCount;
   if (accessor.getBlock().id == "society:aging_cask" && upgraded) {
-    duration = duration / 2;
+    duration = Math.round(duration / 2);
   }
   let progressIcons = "";
   for (let index = 0; index < duration; index++) {
@@ -293,6 +303,11 @@ JadeEvents.onClientRegistration((e) => {
   e.block("society:crop_growth_jade", $Block).tooltip(
     (tooltip, accessor, pluginConfig) => {
       global["JadeSocietyCropClientCallback"](tooltip, accessor, pluginConfig);
+    }
+  );
+  e.block("kubejs:shipping_bin_jade", $Block).tooltip(
+    (tooltip, accessor, pluginConfig) => {
+      global["JadeShippingBinClientCallback"](tooltip, accessor, pluginConfig);
     }
   );
 });

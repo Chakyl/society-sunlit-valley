@@ -31,6 +31,8 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("cobblemon:is_sandy", "atmospheric:scrubland");
   e.add("cobblemon:is_sandy", "atmospheric:dunes");
   e.add("cobblemon:is_desert", "atmospheric:dunes");
+  e.add("cobblemon:is_sandy", "atmospheric:petrified_dunes");
+  e.add("cobblemon:is_desert", "atmospheric:petrified_dunes");
   e.add("cobblemon:is_sandy", "atmospheric:flourishing_dunes");
   e.add("cobblemon:is_desert", "atmospheric:flourishing_dunes");
 });
@@ -151,6 +153,7 @@ const cobblemonSummerCrops = [
   "cobblemon:white_mint",
 ];
 const cobblemonAutumnCrops = ["cobblemon:vivichoke", "cobblemon:vivichoke_seeds"];
+
 ServerEvents.tags("item", (e) => {
   e.add("stardew_fishing:bobbers", "sunlit_cobblemon:poke_bobber");
   e.add("stardew_fishing:bobbers", "sunlit_cobblemon:great_poke_bobber");
@@ -183,6 +186,13 @@ ServerEvents.tags("item", (e) => {
     "cobblemon_farmers"
   ].forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);
+  });
+
+  [
+    "society:earth_crystal",
+    "society:fire_quartz",
+  ].forEach((blockItem) => {
+    e.add('cobblemon_farmers:craft_station_renders_flat', blockItem);
   });
 });
 
@@ -237,5 +247,16 @@ ServerEvents.tags("block", (e) => {
     lootBlockTags.forEach((tag) => {
       e.add(tag, block);
     });
+  });
+
+  [
+    "waystones:white_sharestone",
+    "sunlit_cobblemon:sun_raid_statue",
+    "sunlit_cobblemon:poke_loot_ball",
+    "sunlit_cobblemon:great_loot_ball",
+    "sunlit_cobblemon:ultra_loot_ball",
+    "sunlit_cobblemon:beast_loot_ball"
+  ].forEach((item) => {
+    e.add("ftbchunks:interact_whitelist", item);
   });
 });

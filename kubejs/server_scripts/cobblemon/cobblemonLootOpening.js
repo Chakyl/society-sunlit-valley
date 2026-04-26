@@ -11,7 +11,8 @@ ItemEvents.rightClicked("sunlit_cobblemon:tm_pack", (e) => {
 
   if (!player.isCreative()) item.count--;
   let reward;
-  for (let index = 0; index < player.stages.has("the_red_and_the_black") ? 6 : 3; index++) {
+  let rewardCount = player.stages.has("the_red_and_the_black") ? 6 : 3;
+  for (let index = 0; index < rewardCount; index++) {
     reward = player.level.createEntity("minecraft:item");
     reward.x = player.x;
     reward.y = player.y;
@@ -41,7 +42,8 @@ ItemEvents.rightClicked("sunlit_cobblemon:greater_tm_pack", (e) => {
 
   if (!player.isCreative()) item.count--;
   let reward;
-  for (let index = 0; index < player.stages.has("the_red_and_the_black") ? 6 : 3; index++) {
+  let rewardCount = player.stages.has("the_red_and_the_black") ? 6 : 3;
+  for (let index = 0; index < rewardCount; index++) {
     reward = player.level.createEntity("minecraft:item");
     reward.x = player.x;
     reward.y = player.y;
@@ -70,7 +72,8 @@ ItemEvents.rightClicked("sunlit_cobblemon:prismatic_tm_pack", (e) => {
 
   if (!player.isCreative()) item.count--;
   let reward;
-  for (let index = 0; index < player.stages.has("the_red_and_the_black") ? 6 : 3; index++) {
+  let rewardCount = player.stages.has("the_red_and_the_black") ? 6 : 3;
+  for (let index = 0; index < rewardCount; index++) {
     reward = player.level.createEntity("minecraft:item");
     reward.x = player.x;
     reward.y = player.y;

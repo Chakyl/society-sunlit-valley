@@ -1,0 +1,36 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "baltoy",
+	"forages": [
+		{
+			"item": "minecraft:clay_ball",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "cobblemon:dome_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 2
+		},
+		{
+			"item": "cobblemon:helix_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 3
+		},
+		{
+			"item": "cobblemon:nostalgic_sherd",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 4
+		},
+		{
+			"item": "cobblemon:root_fossil",
+			"count": 1,
+			"chance": 0.06,
+			"min_hearts": 7
+		}
+	]
+}

@@ -128,12 +128,20 @@ console.info("[SOCIETY-S-COBBLEMON] cobblemonArtisanRecipes.js loaded");
   },
   {
     input: "cobblemon:metal_coat",
-    output: ["4x oreganized:silver_ingot"],
+    output: ["1x oreganized:silver_ingot"],
   },
   {
-    input: "sunlit_cobblemon:permafrost",
+    input: "sunlit_cobblemon:permafrost_drop",
     output: ["4x society:frozen_tear"],
   },
+  {
+    input: "sunlit_cobblemon:quicksilver",
+    output: ["3x cobblemon:silver_powder"],
+  },
+  { 
+    input: "sunlit_cobblemon:draco_meteorite", 
+    output: ["12x society:sparkstone"] 
+  }
 ].forEach((recipe) => {
   global.recyclingMachineRecipes.set(recipe.input, { output: recipe.output });
 });
@@ -170,14 +178,14 @@ global.cobbleTypeGems.forEach((gem) => {
   });
 });
 
-global.mushroomLogRecipes.set("cobblemon:apricorn_log", { output: ["1x cobblemon:big_root"]});
+global.mushroomLogRecipes.set("cobblemon:apricorn_log", { output: ["1x cobblemon:big_root"] });
 
-global.loomRecipes.set("sunlit_cobblemon:electro_wool", { output: ["sunlit_cobblemon:electric_canvas"]});
+global.loomRecipes.set("sunlit_cobblemon:electro_wool", { output: ["sunlit_cobblemon:electric_canvas"] });
 
-global.oilMakerRecipes.set("sunlit_cobblemon:poison_drop", { output: ["sunlit_cobblemon:venomshine"]});
+global.oilMakerRecipes.set("sunlit_cobblemon:poison_drop", { output: ["sunlit_cobblemon:venomshine"] });
 
-global.cheesePressRecipes.set("sunlit_cobblemon:moomoo_milk", { output: ["sunlit_cobblemon:moomoo_cheese"]});
-global.cheesePressRecipes.set("sunlit_cobblemon:large_moomoo_milk", { output: ["4x sunlit_cobblemon:moomoo_cheese"]});
-global.cheesePressRecipes.set("sunlit_cobblemon:spider_milk", { output: ["sunlit_cobblemon:spider_milk"]})
-global.agingCaskRecipes.set("sunlit_cobblemon:moomoo_cheese", { output: ["1x sunlit_cobblemon:aged_moomoo_cheese"], time: 3});
-global.ancientCaskRecipes.set("sunlit_cobblemon:aged_moomoo_cheese", { output: ["1x sunlit_cobblemon:double_aged_moomoo_cheese"], time: 13});
+global.cheesePressRecipes.set("sunlit_cobblemon:moomoo_milk", { output: ["sunlit_cobblemon:moomoo_cheese"] });
+global.cheesePressRecipes.set("sunlit_cobblemon:large_moomoo_milk", { output: ["4x sunlit_cobblemon:moomoo_cheese"] });
+global.cheesePressRecipes.set("sunlit_cobblemon:spider_milk", { output: ["sunlit_cobblemon:spider_milk"] })
+global.agingCaskRecipes.set("sunlit_cobblemon:moomoo_cheese", { output: ["1x sunlit_cobblemon:aged_moomoo_cheese"], time: 3 });
+global.ancientCaskRecipes.set("sunlit_cobblemon:aged_moomoo_cheese", { output: ["1x sunlit_cobblemon:double_aged_moomoo_cheese"], time: 13 });

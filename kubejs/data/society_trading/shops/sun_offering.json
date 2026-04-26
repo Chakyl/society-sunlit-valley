@@ -319,6 +319,19 @@
     },
     {
       "offer": {
+        "item": "cobblemon:iron",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sun_drops",
+        "count": 2
+      },
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "sun_offering_cobblemon:iron"
+    },
+    {
+      "offer": {
         "item": "cobblemon:pp_up",
         "count": 1
       },
@@ -403,8 +416,8 @@
         "item": "sunlit_cobblemon:mystica_branch",
         "count": 20
       },
-      "stage_required": "trainer_lvl_9",
-      "unlock_description": "jei.society_trading.trainer_lvl_9",
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "sun_offering_savage_sun"
     },
     {

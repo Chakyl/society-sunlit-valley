@@ -335,8 +335,7 @@ global.handleFishExtraction = (block, player, server) => {
     nbt.merge({
       data: {
         population: decreaseStage(population),
-        non_native_fish:
-          non_native_fish > 0 ? decreaseStage(non_native_fish) : 0,
+        non_native_fish: naturalPopulation > 0 ? non_native_fish : non_native_fish > 0 ? decreaseStage(non_native_fish) : 0,
       },
     });
 

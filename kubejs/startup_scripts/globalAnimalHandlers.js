@@ -430,17 +430,17 @@ const getNearbyBlocks = (level, target, radius, tag) => {
 };
 
 
-global.getOrFetchMood = (level, target, day, player, debugMood) => {
+global.getOrFetchMood = (level, target, day, player, debugMood, disregardPet) => {
   if (global.checkEntityTag(target, "society:pet_animal")) return 256;
   const data = target.persistentData;
   let moodDebuffs = 0;
   let moodImpactModifier = getMoodImpactModifier(target);
   if (moodImpactModifier > 1 && debugMood) player.tell(Text.translatable("society.husbandry.mood.breed_impact", moodImpactModifier).gold());
-  if (global.compareDay(day, data.getInt("ageLastPet"), 1)) {
+  if (!disregardPet && global.compareDay(day, data.getInt("ageLastPet"), 1)) {
     moodDebuffs += 96;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_pet").red());
   }
-  if (global.compareDay(day, data.getInt("ageLastPet"), 1)) {
+  if (global.compareDay(day, data.getInt("ageLastFed"), 2)) {
     moodDebuffs += 128;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_fed").red());
   }

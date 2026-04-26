@@ -1,4 +1,7 @@
 //priority: -1
+
+console.info("[SOCIETY-S-COBBLEMON] cobblemonRenderLootBalljs loaded");
+
 if (Platform.isClientEnvironment()) {
     let $Minecraft = Java.loadClass("net.minecraft.client.Minecraft");
     let $Axis = Java.loadClass("com.mojang.math.Axis")

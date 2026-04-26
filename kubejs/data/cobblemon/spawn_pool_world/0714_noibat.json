@@ -1,0 +1,143 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "noibat-1",
+      "pokemon": "noibat",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "10-25",
+      "weight": 5,
+      "weightMultiplier": {
+        "multiplier": 1.5
+      },
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "biomes": [
+          "#cobblemon:is_spooky"
+        ],
+        "timeRange": "night"
+      },
+      "anticondition": {
+        "moonPhase": "1"
+      }
+    },
+    {
+      "id": "noibat-2",
+      "pokemon": "noibat",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "10-25",
+      "weight": 11,
+      "weightMultiplier": {
+        "multiplier": 1.5
+      },
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "biomes": [
+          "#cobblemon:is_spooky"
+        ],
+        "timeRange": "night",
+        "moonPhase": "1"
+      }
+    },
+    {
+      "id": "noibat-3",
+      "pokemon": "noibat",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "10-25",
+      "weight": 5,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 5,
+        "biomes": [
+          "#cobblemon:is_overworld"
+        ],
+        "maxY": 32
+      },
+      "anticondition": {
+        "biomes": [
+          "#cobblemon:is_deep_dark",
+          "#cobblemon:is_dripstone"
+        ]
+      }
+    },
+    {
+      "id": "noibat-4",
+      "pokemon": "noibat",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "15-30",
+      "weight": 9.0,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": [
+          "#cobblemon:is_dripstone"
+        ]
+      },
+      "anticondition": {
+        "biomes": [
+          "#cobblemon:is_deep_dark"
+        ]
+      }
+    },
+    {
+      "id": "noibat-5",
+      "pokemon": "noibat",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-35",
+      "weight": 9.0,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": [
+          "#cobblemon:is_deep_dark"
+        ]
+      }
+    },
+    {
+      "id": "noibat-6",
+      "pokemon": "noibat",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "53-80",
+      "weight": 0.8,
+      "condition": {
+        "biomes": [
+          "#society:is_skull_cavern"
+        ]
+      }
+    }
+  ]
+}

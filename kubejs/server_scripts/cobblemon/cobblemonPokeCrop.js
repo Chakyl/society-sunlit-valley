@@ -183,7 +183,7 @@ const uncoverCropPokemon = (level, server, block, initialPos, pos) => {
         console.log(pos);
       }
       server.runCommandSilent(
-        `pokespawnat ${pos.x} ${pos.y} ${pos.z} ${caughtMon.pokemon
+        `execute in ${level.dimension} run pokespawnat ${pos.x} ${pos.y} ${pos.z} ${caughtMon.pokemon
         } level=${pokeLevel} ${caughtMon.variant ? caughtMon.variant : ""}`
       );
       server.runCommandSilent(
@@ -230,7 +230,7 @@ BlockEvents.rightClicked((e) => {
         radius = 2;
       }
       if (player.stages.has("braiding_surprisegrass")) {
-        spawnChance *= 2
+        spawnChance *= 1.5
       } else if (Math.random() < spawnChance) {
         block.popItemFromFace(Item.of("sunlit_cobblemon:braiding_surprisegrass"));
       }

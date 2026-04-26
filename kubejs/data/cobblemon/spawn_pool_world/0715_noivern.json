@@ -1,0 +1,138 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "noivern-1",
+      "pokemon": "noivern",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "50-60",
+      "weight": 5,
+      "weightMultiplier": {
+        "multiplier": 1.5
+      },
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "biomes": [
+          "#cobblemon:is_spooky"
+        ],
+        "timeRange": "night"
+      },
+      "anticondition": {
+        "moonPhase": "1"
+      }
+    },
+    {
+      "id": "noivern-2",
+      "pokemon": "noivern",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "50-60",
+      "weight": 2,
+      "weightMultiplier": {
+        "multiplier": 1.5
+      },
+      "condition": {
+        "minSkyLight": 6,
+        "maxSkyLight": 15,
+        "biomes": [
+          "#cobblemon:is_spooky"
+        ],
+        "timeRange": "night",
+        "moonPhase": "1"
+      }
+    },
+    {
+      "id": "noivern-3",
+      "pokemon": "noivern",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "50-70",
+      "weight": 5.0,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": [
+          "#cobblemon:is_overworld"
+        ],
+        "maxY": -32
+      },
+      "anticondition": {
+        "biomes": [
+          "#cobblemon:is_deep_dark",
+          "#cobblemon:is_dripstone"
+        ]
+      }
+    },
+    {
+      "id": "noivern-4",
+      "pokemon": "noivern",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-80",
+      "weight": 1,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": [
+          "#cobblemon:is_deep_dark"
+        ]
+      }
+    },
+    {
+      "id": "noivern-5",
+      "pokemon": "noivern",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "50-80",
+      "weight": 1,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": [
+          "#cobblemon:is_deep_dark"
+        ]
+      }
+    },
+    {
+      "id": "noivern-6",
+      "pokemon": "noivern",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "63-90",
+      "weight": 0.1,
+      "condition": {
+        "biomes": [
+          "#society:is_skull_cavern"
+        ]
+      }
+    }
+  ]
+}

@@ -122,16 +122,17 @@ const getCanTakeItems = (
     Array.from(recipes.keys()).forEach((key) => {
       if (key.includes("#")) {
         if (itemHasTag(item, key)) {
-          itemCheck = true;
           if (nbt.data.recipe.equals("") || nbt.data.recipe == undefined) {
             nbt.merge({ data: { recipe: key, originalInputs: [] } });
+            itemCheck = true;
           }
-          if (inputCount != -1) {
+          if (inputCount != -1 && nbt.data.recipe.equals(key)) {
             let inputArray = nbt.data.originalInputs.copy();
             let usedItem = item.copy();
             usedItem.count = inputCount;
             inputArray.push(usedItem);
             nbt.merge({ data: { originalInputs: inputArray } });
+            itemCheck = true;
           }
         }
       }

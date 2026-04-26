@@ -17,6 +17,6 @@ ItemEvents.rightClicked("sunlit_cobblemon:silph_scope", (e) => {
         `playsound cobblemon:fossil_machine.retrieve_pokemon block @a ${player.x} ${player.y} ${player.z}`
       );
       item.shrink(1)
-    } else player.tell(Text.red("You already have something on your face..."));
+    } else player.tell(Text.translatable("You already have something on your face...").red());
   });
 });

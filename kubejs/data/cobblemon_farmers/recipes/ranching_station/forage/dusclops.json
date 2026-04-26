@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "dusclops",
+	"forages": [
+		{
+			"item": "minecraft:bone",
+			"count": 6,
+			"chance": 0.85,
+			"min_hearts": 3
+		},
+		{
+			"item": "quark:soul_bead",
+			"count": 3,
+			"chance": 0.85,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:ghost_crystal",
+			"count": 1,
+			"chance": 0.45,
+			"min_hearts": 7
+		},
+		{
+			"item": "society:mini_oni_eye",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 8
+		}
+	]
+}

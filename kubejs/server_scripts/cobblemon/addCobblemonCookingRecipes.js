@@ -99,7 +99,7 @@ ServerEvents.recipes((e) => {
     hyperCandyBase("numb", "genius");
     hyperCandyBase("coward", "clever");
 
-    const poffletBase = (pofflet, catalyst) => {
+    const poffletBase = (pofflet, catalyst, count) => {
         e.custom({
             type: "farm_and_charm:stove",
             experience: 1.2,
@@ -115,17 +115,17 @@ ServerEvents.recipes((e) => {
                 }
             ],
             item: `sunlit_cobblemon:${pofflet}_pofflet`,
-            count: 1
+            count: count
         });
     }
 
-    poffletBase("plain", "sunlit_cobblemon:moomoo_cheese");
-    poffletBase("mossy", "sunlit_cobblemon:strange_spore");
-    poffletBase("frosty", "society:frozen_tear");
-    poffletBase("deadly", "sunlit_cobblemon:venomshine");
-    poffletBase("deadly", "sunlit_cobblemon:spider_milk");
-    poffletBase("spicy", "vintagedelight:pepper_jam_mason_jar");
-    poffletBase("captivating", "sunlit_cobblemon:mystica_branch");
-    poffletBase("crystalline", "society:spinel");
-    poffletBase("mana", "society:mana_fruit");
+    poffletBase("plain", "sunlit_cobblemon:moomoo_cheese", 1);
+    poffletBase("mossy", "sunlit_cobblemon:strange_spore", 1);
+    poffletBase("frosty", "society:frozen_tear", 1);
+    poffletBase("deadly", "sunlit_cobblemon:venomshine", 2);
+    poffletBase("deadly", "sunlit_cobblemon:spider_milk", 1);
+    poffletBase("spicy", "vintagedelight:pepper_jam_mason_jar", 2);
+    poffletBase("captivating", "sunlit_cobblemon:mystica_branch", 2);
+    poffletBase("crystalline", "society:amethyst_chunk", 2);
+    poffletBase("mana", "society:mana_fruit", 1);
 })

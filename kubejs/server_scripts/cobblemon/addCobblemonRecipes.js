@@ -22,6 +22,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("simpletms:tm_firepledge", ["society:prismatic_shard", "sunlit_cobblemon:fire_pledge"]);
   e.shapeless("simpletms:tm_waterpledge", ["society:prismatic_shard", "sunlit_cobblemon:water_pledge"]);
   e.shapeless("simpletms:tm_grasspledge", ["society:prismatic_shard", "sunlit_cobblemon:grass_pledge"]);
+  e.shapeless("simpletms:tr_dracometeor", ["society:prismatic_shard", "4x sunlit_cobblemon:draco_meteorite"]);
   e.shaped("sunlit_cobblemon:uncharged_battery", [" zr", "zrz", "rz "], {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",
@@ -204,7 +205,7 @@ ServerEvents.recipes((e) => {
         "item": "botania:rune_earth"
       },
       {
-        "item": "sunlit_cobblemon:permafrost"
+        "item": "sunlit_cobblemon:permafrost_drop"
       }
     ],
     "mana": 8000,

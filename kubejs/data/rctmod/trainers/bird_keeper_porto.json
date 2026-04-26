@@ -1,0 +1,162 @@
+{
+  "displayName": "Bird Keeper Porto",
+  "team": [
+    {
+      "species": "cobblemon:gothitelle",
+      "gender": "FEMALE",
+      "level": 71,
+      "nature": "cobblemon:bold",
+      "ability": "competitive",
+      "moveset": [
+        "psyshock",
+        "futuresight",
+        "hypnosis",
+        "psychic"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:twisted_spoon",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:whiscash",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:adamant",
+      "ability": "hydration",
+      "moveset": [
+        "zenheadbutt",
+        "magnitude",
+        "rest",
+        "aquaring"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:floatzel",
+      "gender": "MALE",
+      "level": 67,
+      "nature": "cobblemon:adamant",
+      "ability": "swiftswim",
+      "moveset": [
+        "wavecrash",
+        "icefang",
+        "aquajet",
+        "raindance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:mystic_water",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:samurott",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:adamant",
+      "ability": "sharpness",
+      "moveset": [
+        "ceaselessedge",
+        "razorshell",
+        "furycutter",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male",
+        "hisuian"
+      ]
+    },
+    {
+      "species": "cobblemon:pidgeot",
+      "gender": "FEMALE",
+      "level": 70,
+      "nature": "cobblemon:adamant",
+      "ability": "keeneye",
+      "moveset": [
+        "featherdance",
+        "agility",
+        "mirrormove",
+        "wingattack"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:quick_claw",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

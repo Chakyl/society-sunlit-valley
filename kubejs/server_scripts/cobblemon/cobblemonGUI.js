@@ -34,7 +34,11 @@ const formMap = new Map([
     ["meowstic", "male"],
     ["pumpkaboo", "average"],
     ["gourgeist", "average"],
+    ["toxtricity", "low"],
+    ["lycanroc", "dusk"]
 ]);
+
+const handleVariant = (form) => form.equals("galarian") ? "galar" : form;
 
 const handleIdentifier = (id) => {
     switch (id) {
@@ -48,6 +52,7 @@ const handleIdentifier = (id) => {
     if (!["mrrime", "mrmime"].includes(id)) return `${id}/${id}`;
     return `mr/${id.slice(0, 2) + "_" + id.slice(2)}`;
 }
+
 PlayerEvents.tick((e) => {
     const { player, level } = e;
     const curios = player.nbt.ForgeCaps["curios:inventory"];
@@ -61,8 +66,13 @@ PlayerEvents.tick((e) => {
         spawnDetails.forEach((entry) => {
             let identifier = entry.getPokemon().species;
             let species = $PokemonSpecies.getByName(identifier);
-            let variant = formMap.get(`${identifier}`)
-
+            let aspect = global.getImportantAspect(entry.pokemon.aspects)
+            let variant;
+            if (aspect == null) {
+                variant = formMap.get(`${identifier}`)  
+            } else {
+                variant = handleVariant(aspect);
+            }
             // Why is Mr Rime like that
             let foundMon = `${String(species.nationalPokedexNumber).padStart(4, '0')}_${handleIdentifier(identifier)}${variant ? `_${variant}` : ""}`
             if (!mons.includes(foundMon)) mons.push(foundMon);
