@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "drilbur-1",
+      "pokemon": "drilbur",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "5-31",
+      "weight": 2.5,
+      "condition": {
+        "canSeeSky": false,
+        "minY": 0,
+        "biomes": ["#cobblemon:is_overworld"]
+      }
+    },
+    {
+      "id": "drilbur-2",
+      "pokemon": "drilbur",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-31",
+      "weight": 4.5,
+      "condition": {
+        "canSeeSky": false,
+        "biomes": ["#society:is_skull_cavern"]
+      }
+    }
+  ]
+}

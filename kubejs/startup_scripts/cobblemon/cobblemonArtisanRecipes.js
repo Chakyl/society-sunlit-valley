@@ -186,6 +186,6 @@ global.oilMakerRecipes.set("sunlit_cobblemon:poison_drop", { output: ["sunlit_co
 
 global.cheesePressRecipes.set("sunlit_cobblemon:moomoo_milk", { output: ["sunlit_cobblemon:moomoo_cheese"] });
 global.cheesePressRecipes.set("sunlit_cobblemon:large_moomoo_milk", { output: ["4x sunlit_cobblemon:moomoo_cheese"] });
-global.cheesePressRecipes.set("sunlit_cobblemon:spider_milk", { output: ["sunlit_cobblemon:spider_milk"] })
+global.cheesePressRecipes.set("sunlit_cobblemon:spider_milk", { output: ["meadow:piece_of_warped_cheese"] })
 global.agingCaskRecipes.set("sunlit_cobblemon:moomoo_cheese", { output: ["1x sunlit_cobblemon:aged_moomoo_cheese"], time: 3 });
 global.ancientCaskRecipes.set("sunlit_cobblemon:aged_moomoo_cheese", { output: ["1x sunlit_cobblemon:double_aged_moomoo_cheese"], time: 13 });

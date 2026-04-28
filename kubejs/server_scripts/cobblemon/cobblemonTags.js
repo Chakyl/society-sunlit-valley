@@ -9,6 +9,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("cobblemon:is_lush", "society:lush_caverns");
 
   e.add("cobblemon:is_cold", "society:frozen_caves");
+  e.add("cobblemon:is_snowy", "society:frozen_caves");
   e.add("cobblemon:is_glacial", "society:frozen_caves");
   e.add("cobblemon:is_freezing", "society:frozen_maelstrom");
   e.add("cobblemon:is_thermal", "society:frozen_maelstrom");
@@ -21,6 +22,10 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("cobblemon:is_volcanic", "society:blackstone_caves");
   e.add("cobblemon:nether/is_wasteland", "society:blackstone_caves");
 
+  e.add("cobblemon:is_snowy", "atmospheric:snowy_scrubland");
+  e.add("cobblemon:is_sandy", "atmospheric:snowy_scrubland");
+  e.add("cobblemon:is_spooky", "autumnity:pumpkin_fields");
+  e.add("cobblemon:is_forest", "autumnity:pumpkin_fields");
   e.add("cobblemon:is_magical", "society:umbra_barrens");
   e.add("cobblemon:is_floral", "windswept:lavender_fields")
   e.add("cobblemon:is_floral", "windswept:lavender_hills")
@@ -193,6 +198,17 @@ ServerEvents.tags("item", (e) => {
     "society:fire_quartz",
   ].forEach((blockItem) => {
     e.add('cobblemon_farmers:craft_station_renders_flat', blockItem);
+  });
+
+  [
+    "sunlit_cobblemon:moomoo_milk",
+  ].forEach((item) => {
+    e.add("society:small_milk", item);
+  });
+  [
+    'sunlit_cobblemon:large_moomoo_milk'
+  ].forEach((item) => {
+    e.add("society:large_milk", item);
   });
 });
 

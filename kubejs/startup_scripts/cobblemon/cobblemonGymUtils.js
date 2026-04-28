@@ -334,8 +334,6 @@ const trainerBuckets = new Map([
       "juggler_shawn_0121",
       "fisherman_nolan_00e8",
       "fisherman_ronald_00e5",
-      "trainer_ketchup_0014",
-      "trainer_ketchup_0013",
       "beauty_grace_029a",
       "beauty_olivia_0112",
       "bird_keeper_roger_0136",
@@ -372,7 +370,9 @@ const trainerBuckets = new Map([
   ],
   [
     75,
-    [
+    [ 
+      "trainer_ketchup_0014",
+      "trainer_ketchup_0013",
       "ace_trainer_arven",
       "ace_trainer_jexy",
       "ace_trainer_stalwart",
@@ -440,7 +440,7 @@ const trainerBuckets = new Map([
       "sailor_trevor_0087",
       "cue_ball_koji_00f9",
       "cue_ball_luke_00fa",
-      "lass_anne_00041",
+      "lass_anne_0004",
     ],
   ],
   [

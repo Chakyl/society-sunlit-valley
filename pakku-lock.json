@@ -6035,48 +6035,6 @@
             ]
         },
         {
-            "pakku_id": "prmoXHZaw19i7Ua9",
-            "pakku_links": [
-                "nubF4pshkcyyOIX9"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "fastworkbench"
-            },
-            "name": {
-                "curseforge": "FastWorkbench"
-            },
-            "id": {
-                "curseforge": "288885"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "FastWorkbench-1.20.1-8.0.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5101/229/FastWorkbench-1.20.1-8.0.4.jar",
-                    "id": "5101229",
-                    "parent_id": "288885",
-                    "hashes": {
-                        "sha1": "1a322a85e7c7024b8a0715c12d27b5ed0930d729",
-                        "md5": "2b55c4786cc726b0757689af28b97e7e"
-                    },
-                    "required_dependencies": [
-                        "283644"
-                    ],
-                    "size": 28188,
-                    "date_published": "2024-02-12T05:39:41.417Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "kI7X3q7g51q0cpFX",
             "type": "MOD",
             "slug": {
@@ -8470,7 +8428,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.27.12+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.27.8+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8478,16 +8436,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7969/688/modernfix-forge-5.27.12+mc1.20.1.jar",
-                    "id": "7969688",
+                    "url": "https://edge.forgecdn.net/files/7928/686/modernfix-forge-5.27.8+mc1.20.1.jar",
+                    "id": "7928686",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "1560e26f12fa082bdf30ce49fe9f6d4d8b108f82",
-                        "md5": "03d05bd478fa3afa8bbce099d83228d6"
+                        "sha1": "603c785a90fed9eb63609c9e045b2e202241edd4",
+                        "md5": "92ded3cc2f93280c56306ca669bf6946"
                     },
                     "required_dependencies": [],
-                    "size": 945136,
-                    "date_published": "2026-04-22T23:38:57.157Z"
+                    "size": 945123,
+                    "date_published": "2026-04-15T02:23:56.177Z"
                 }
             ]
         },
@@ -9064,49 +9022,6 @@
                     "required_dependencies": [],
                     "size": 272740,
                     "date_published": "2023-06-26T14:50:49.010Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "DCJwKUkn63es8J43",
-            "pakku_links": [
-                "sP0r5kz3HrhYT9PX"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "notenoughrecipebook"
-            },
-            "name": {
-                "curseforge": "Not Enough Recipe Book [NERB]"
-            },
-            "id": {
-                "curseforge": "738663"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5760/231/Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
-                    "id": "5760231",
-                    "parent_id": "738663",
-                    "hashes": {
-                        "sha1": "c0806369f4257149664904db44efc60bd1785c17",
-                        "md5": "fa8240906f36683f66de537b34587643"
-                    },
-                    "required_dependencies": [
-                        "916747",
-                        "419699"
-                    ],
-                    "size": 21667,
-                    "date_published": "2024-09-26T23:45:18.913Z"
                 }
             ]
         },
@@ -10637,6 +10552,43 @@
                     "required_dependencies": [],
                     "size": 241055,
                     "date_published": "2025-03-24T19:25:16.337Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "2EPPdzb6d05jZQ8A",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "recipe-essentials-forge-fabric"
+            },
+            "name": {
+                "curseforge": "Recipe Essentials[Forge/Fabric]"
+            },
+            "id": {
+                "curseforge": "907856"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "recipeessentials-1.20.1-4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6165/709/recipeessentials-1.20.1-4.0.jar",
+                    "id": "6165709",
+                    "parent_id": "907856",
+                    "hashes": {
+                        "sha1": "6e50995efefdef6f77f0289200a17ae4c18cde75",
+                        "md5": "570607c1e36e86f2180fdfb960b50dff"
+                    },
+                    "required_dependencies": [],
+                    "size": 50739,
+                    "date_published": "2025-02-06T22:39:36.930Z"
                 }
             ]
         },
