@@ -1,10 +1,10 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.1-SSV4.0.6
+### v1.0.2-SSV4.0.6
 ^^^
 --- 
 
-## 1.0.1-SSV4.0.6
+## 1.0.2-SSV4.0.6
 - Added Flamigo as a ranchable pokemon
 - Tweaked a bunch of cobblemon spawns
 - Fixed lass_anne_00041 trainer being invalid
