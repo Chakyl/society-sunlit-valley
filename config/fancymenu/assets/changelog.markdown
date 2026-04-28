@@ -1,8 +1,13 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.1-SSV4.0.6
+### v1.0.2-SSV4.0.6
 ^^^
 --- 
+
+## 1.0.2-SSV4.0.6
+- Added Flamigo as a ranchable pokemon for real this time
+- Fixed season quest not having the super important client config line
+- Fixed recipe related performance issues on large servers
 
 ## 1.0.1-SSV4.0.6
 - Added Flamigo as a ranchable pokemon

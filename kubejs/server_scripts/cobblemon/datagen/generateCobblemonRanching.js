@@ -56,7 +56,7 @@
 //             pokemon: "flamigo",
 //             forages: [
 //                 {
-//                     item: "society:large_flamingo_egg",
+//                     item: "society:flamingo_egg",
 //                     count: 1,
 //                     chance: 1,
 //                     has_quality: true,
