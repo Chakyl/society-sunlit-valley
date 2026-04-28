@@ -82,6 +82,7 @@ global.runTrainerPodium = (entity) => {
         nbt.merge({ data: { trainers: newTrainersArray } });
         global.setBlockEntityData(block, nbt);
       }
+      if (newTrainer === "lass_anne_00041") newTrainer = "lass_anne_0004"
       let freshTrainer = level.createEntity("rctmod:trainer");
       let trainerNBT = freshTrainer.getNbt();
       trainerNBT.TrainerId = newTrainer;

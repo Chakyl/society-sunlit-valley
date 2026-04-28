@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "grimer-2",
+      "pokemon": "grimer alolan",
+      "presets": [
+        "trash"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "14-37",
+      "weight": 10.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_beach"]
+      }
+    }
+  ]
+}

@@ -154,6 +154,11 @@ ServerEvents.recipes((e) => {
     { sapling: "cobblemon:black_apricorn_seed", log: "cobblemon:apricorn_log" },
     { sapling: "cobblemon:blue_apricorn_seed", log: "cobblemon:apricorn_log" },
     { sapling: "cobblemon:pink_apricorn_seed", log: "cobblemon:apricorn_log" },
+    { sapling: 'cluttered:crabapple_sapling', log: "cobblemon:apricorn_log" },
+    { sapling: 'cluttered:sycamore_sapling', log: "cluttered:sycamore_log" },
+    { sapling: 'cluttered:willow_sapling', log: "cluttered:willow_log" },
+    { sapling: 'cluttered:fluorescent_maple_sapling', log: "cluttered:fluorescent_maple_log" },
+    { sapling: 'cluttered:poplar_sapling', log: "cluttered:poplar_log" },
   ].forEach((recipe) => {
     createCobbleWorkerRecipe(
       {
