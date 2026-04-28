@@ -168,6 +168,7 @@ ItemEvents.tooltip((tooltip) => {
   );
 
   const formatIVS = (ivs) => {
+    if (ivs == null) return [0,0,0,0,0]
     let ivArray = [];
     for (let index = 0; index < 6; index++) {
       ivArray.push(ivs.get(index))
