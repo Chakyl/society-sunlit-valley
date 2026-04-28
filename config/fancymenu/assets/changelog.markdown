@@ -1,8 +1,22 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.0-SSV4.0.6
+### v1.0.1-SSV4.0.6
 ^^^
 --- 
+
+## 1.0.1-SSV4.0.6
+- Added Flamigo as a ranchable pokemon
+- Tweaked a bunch of cobblemon spawns
+- Fixed lass_anne_00041 trainer being invalid
+- Fixed Ketchup being served too early
+- Fixed Pumpkin fields and Snowy Scrubland having no tags and being Koffing infested
+- Fixed Silicobra, Sandaconda, Bramblin, and Brambleghast not having any spawn locations
+- Fixed Cobblemon EMI missing evo/drops on servers
+- Fixed Public Contract not working on anything except craft station
+- Fixed Gardening Station ranchers not putting milk into facing inventories. This includes milk from a Spidops.
+- Fixed workstation tooltips showing null owners, probably
+
+## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
 - Added Craft station, a block that allows Pokemon to craft specific items depending on their type
   - Fire - Smelts items and smokes fish like a Fish Smoker 
