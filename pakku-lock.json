@@ -980,6 +980,7 @@
         {
             "pakku_id": "uo1aVtImdiFpZIKx",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "bobby-reforged"
             },
@@ -2161,6 +2162,44 @@
                     "required_dependencies": [],
                     "size": 210312,
                     "date_published": "2023-08-05T20:02:14.447Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "SlMVzrYHMYr7SkFF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "controllable"
+            },
+            "name": {
+                "curseforge": "Controllable"
+            },
+            "id": {
+                "curseforge": "317269"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "controllable-forge-1.20.1-0.21.9.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7943/200/controllable-forge-1.20.1-0.21.9.jar",
+                    "id": "7943200",
+                    "parent_id": "317269",
+                    "hashes": {
+                        "sha1": "f7f78f4f4e6da46080eb1b69f27c4f525876244b",
+                        "md5": "f25fbb8687d786c153a84029e35bfd93"
+                    },
+                    "required_dependencies": [
+                        "549225"
+                    ],
+                    "size": 7569416,
+                    "date_published": "2026-04-18T03:55:38.093Z"
                 }
             ]
         },
@@ -3890,6 +3929,42 @@
                     "required_dependencies": [],
                     "size": 1048567,
                     "date_published": "2025-04-14T03:37:30.690Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "OWbrSW2fN8jZOUTN",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ez-actions"
+            },
+            "name": {
+                "curseforge": "EZ Actions"
+            },
+            "id": {
+                "curseforge": "1340029"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "EZActions-forge-1.20.1-2.0.1.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7713/916/EZActions-forge-1.20.1-2.0.1.6.jar",
+                    "id": "7713916",
+                    "parent_id": "1340029",
+                    "hashes": {
+                        "sha1": "a24dc3e2670d8b1b28bd31cd0424c59299f1036c",
+                        "md5": "a66cddb2ae420eb6ca1c5c261385775f"
+                    },
+                    "required_dependencies": [],
+                    "size": 508874,
+                    "date_published": "2026-03-05T09:01:27.613Z"
                 }
             ]
         },
