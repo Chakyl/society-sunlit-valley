@@ -2087,6 +2087,42 @@
             ]
         },
         {
+            "pakku_id": "rUzvWdf7dfipgxkL",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "configured-defaults"
+            },
+            "name": {
+                "curseforge": "Configured Defaults"
+            },
+            "id": {
+                "curseforge": "930131"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ConfiguredDefaults-v8.0.4-1.20.1-Forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6060/24/ConfiguredDefaults-v8.0.4-1.20.1-Forge.jar",
+                    "id": "6060024",
+                    "parent_id": "930131",
+                    "hashes": {
+                        "sha1": "4ce4e836cc837a9b99dd1a9119260c640a4b5240",
+                        "md5": "344e3a4599ad289fb1d0554f963f3031"
+                    },
+                    "required_dependencies": [],
+                    "size": 42866,
+                    "date_published": "2025-01-06T17:30:50.613Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "x44YBJaDb5EJvYmd",
             "pakku_links": [
                 "TIK8n7YpVuXaTcte"
@@ -3929,42 +3965,6 @@
                     "required_dependencies": [],
                     "size": 1048567,
                     "date_published": "2025-04-14T03:37:30.690Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "OWbrSW2fN8jZOUTN",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ez-actions"
-            },
-            "name": {
-                "curseforge": "EZ Actions"
-            },
-            "id": {
-                "curseforge": "1340029"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "EZActions-forge-1.20.1-2.0.1.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7713/916/EZActions-forge-1.20.1-2.0.1.6.jar",
-                    "id": "7713916",
-                    "parent_id": "1340029",
-                    "hashes": {
-                        "sha1": "a24dc3e2670d8b1b28bd31cd0424c59299f1036c",
-                        "md5": "a66cddb2ae420eb6ca1c5c261385775f"
-                    },
-                    "required_dependencies": [],
-                    "size": 508874,
-                    "date_published": "2026-03-05T09:01:27.613Z"
                 }
             ]
         },
