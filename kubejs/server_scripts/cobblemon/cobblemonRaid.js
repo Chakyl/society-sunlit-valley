@@ -127,7 +127,7 @@ const sumMPRaidLevel = (nearbyPlayers, raidTier) => {
     for (let playerI = 0; playerI < nearbyPlayers.length; playerI++) {
         levelSum += Math.min(100, global.getPartyLevel(nearbyPlayers[playerI]) + (5 * (Number(raidTier) + 1)));
     }
-    return levelSum / Math.min(4, nearbyPlayers.length);
+    return Math.round(levelSum / Math.min(4, nearbyPlayers.length));
 }
 
 const sunLegendaries = new Map([
@@ -259,7 +259,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
         if (player.isCrouching() && level.getEntitiesWithin(AABB.ofBlock(level.getBlock(block.getPos())).inflate(2)).filter((e) => e.type.equals("cobblemon:pokemon")).length !== 0) {
             player.tell(Text.translatable("sunlit_cobblemon.sun_raid.clear_area").red());
             return;
-        } else if (!spawnBlock.id.equals("minecraft:air")) {
+        } else if (!["society:cavern_air", "minecraft:air"].includes(spawnBlock.id)) {
             player.tell(Text.translatable("sunlit_cobblemon.spawning.no_room").red());
             return;
         }
@@ -279,7 +279,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
         let nearbyPlayers = level.getEntitiesWithin(AABB.ofBlock(block).inflate(10)).filter((scanEntity) => scanEntity.isPlayer());
         let spawnedAny
         if (nearbyPlayers.length > 1) {
-            let groupRaidLevel = sumMPRaidLevel(nearbyPlayers, nbt.data.tier);
+            let groupRaidLevel = Math.min(100, sumMPRaidLevel(nearbyPlayers, nbt.data.tier));
             spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, groupRaidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
             for (let playerI = 1; playerI < nearbyPlayers.length; playerI++) {
                 server.scheduleInTicks(20 * playerI, () => {

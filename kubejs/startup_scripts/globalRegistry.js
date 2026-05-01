@@ -270,6 +270,7 @@ global.relics = [
   { item: "relics:shadow_glaive", value: 1024 },
   { item: "relics:elytra_booster", value: 1536 },
   { item: "relics:enders_hand", value: 1536 },
+  { item: "relics:holy_locket", value: 4096 },
   { item: "relics:arrow_quiver", value: 4096 },
   { item: "relics:chorus_inhibitor", value: 3072 },
   { item: "relics:midnight_robe", value: 3072 },

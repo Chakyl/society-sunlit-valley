@@ -97,7 +97,7 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier(global.cropList)
     .hasAnyStage("farming_mastery")
     .apply((c) => {
-      if (checkMaxGrownWithChance(c.destroyedBlock, 0.9)) {
+      if (checkMaxGrownWithChance(c.destroyedBlock, 0.005)) {
         c.addLoot("atmospheric:grimwood_sapling");
       }
     });

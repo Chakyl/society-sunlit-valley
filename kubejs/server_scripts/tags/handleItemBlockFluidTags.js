@@ -813,6 +813,7 @@ ServerEvents.tags("block", (e) => {
     "numismatics:andesite_depositor",
     "numismatics:brass_depositor",
     "numismatics:vendor",
+    "numismatics:creative_vendor",
     "numismatics:bank_terminal",
     "refurbished_furniture:post_box",
     "bountiful:bountyboard",

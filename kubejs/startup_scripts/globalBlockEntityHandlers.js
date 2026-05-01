@@ -205,10 +205,11 @@ global.artisanHarvest = (
       // Artisan Cheese Press upgrade: auto age cheese wheels only
       if (
         isCheesePress &&
-        (id.includes("wheel") || id.includes("block")) &&
+        (id.includes("wheel") || id.includes("block") || id.includes("moomoo")) &&
         block.properties.get("upgraded").toLowerCase() === "true"
       ) {
-        harvestOutput = Item.of(`society:aged_${id.path}`);
+        // This is really hacky but I am tired
+        harvestOutput = Item.of(`${id.includes("4x") ? "4x " : ""}${id.includes("sunlit_cobblemon") ? "sunlit_cobblemon": "society"}:aged_${id.path}`);
       }
       if (outputMult > 1 && !recipes.get(nbt.data.recipe).multExempt) {
         harvestOutput.count = harvestOutput.count * outputMult;
