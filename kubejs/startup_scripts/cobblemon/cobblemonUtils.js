@@ -73,7 +73,7 @@ global.getCurrentSpawnDetails = (level, player, rarity) => {
   return spawner.getSpawningSelector().getProbabilities(spawner, contexts)
 }
 
-global.getImportantAspect = (aspects) => { 
+global.getImportantAspect = (aspects) => {
   for (let i = 0; i < aspects.length; i++) {
     if (["galarian", "hisuian", "alolan", "paldean"].includes(aspects[i])) return aspects[i];
   }
@@ -119,17 +119,11 @@ global.hasPartyPokemon = (player, pokemonNames, count) => {
 global.handleLeagueFee = (server, player, reason) => {
   const UUID = player.getUuid();
   let amountToDeduct = 0;
-  let balance = 0;
-  let account = null;
+  let account = global.getPersonalOrCurioAccount(player.level, player);
+  let balance = account.getBalance() || 0;
   let maxFee = 0;
   let minimumFee = 512;
 
-  global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
-    if (UUID.toString() == playerUUID.toString()) {
-      balance = bankAccount.getBalance();
-      account = bankAccount;
-    }
-  });
   if (reason === "murder") {
     minimumFee = 10000;
     maxFee = 50000;
@@ -174,17 +168,17 @@ global.handleLeagueFee = (server, player, reason) => {
 };
 
 const NPCMysteryGifts = {
-    banker: "marshadow",
-    blacksmith: "magearna",
-    carpenter: "celebi",
-    fisher: "volcanion",
-    market: "zeraora",
-    shepherd: "meloetta"
+  banker: "marshadow",
+  blacksmith: "magearna",
+  carpenter: "celebi",
+  fisher: "volcanion",
+  market: "zeraora",
+  shepherd: "meloetta"
 }
 
 
 global.giveNPCMysteryGift = (player, target, server, npcId) => {
-  player.give(Item.of("sunlit_cobblemon:mystery_gift", { pokemon: NPCMysteryGifts[npcId], ot: npcId}) )
+  player.give(Item.of("sunlit_cobblemon:mystery_gift", { pokemon: NPCMysteryGifts[npcId], ot: npcId }))
   server.runCommandSilent(
     `dialog ${target.getUuid()} show ${player.username} ${npcId}_unique_cobblemon_mystery_gift`
   );

@@ -182,7 +182,14 @@ global["JadeSocietyCropClientCallback"] = (
     "pamhc2trees:pampeach",
     "pamhc2trees:pamlemon",
     "pamhc2trees:pamcherry",
-    "pamhc2trees:pamapple"
+    "pamhc2trees:pamapple",
+    "cobblemon:red_apricorn",
+    "cobblemon:yellow_apricorn",
+    "cobblemon:green_apricorn",
+    "cobblemon:blue_apricorn",
+    "cobblemon:pink_apricorn",
+    "cobblemon:black_apricorn",
+    "cobblemon:white_apricorn"
   ];
   const needsFarmland = [
     "minecraft:sweet_berry_bush",

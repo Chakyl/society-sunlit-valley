@@ -3,7 +3,7 @@ console.info("[SOCIETY] iridiumClock.js loaded");
 global.runIridiumClock = (entity) => {
   const { level, block } = entity;
   const { x, y, z } = block;
-  const radius = 1;
+  const radius = 2;
   let scanBlock;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;

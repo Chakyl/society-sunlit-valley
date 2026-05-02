@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "noivern",
+	"forages": [
+		{
+			"item": "vinery:glowing_wine",
+			"count": 1,
+			"chance": 0.25,
+			"minHearts": 2
+		},
+		{
+			"item": "vinery:noir_wine",
+			"count": 1,
+			"chance": 0.3,
+			"minHearts": 4
+		},
+		{
+			"item": "vinery:lilitu_wine",
+			"count": 1,
+			"chance": 0.35,
+			"min_hearts": 8
+		},
+		{
+			"item": "vinery:eiswein",
+			"count": 1,
+			"chance": 0.55,
+			"min_hearts": 10
+		}
+	]
+}

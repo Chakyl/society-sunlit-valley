@@ -8,8 +8,8 @@
 //     output += `! Pokémon\n! Variant\n! Weight\n! Level Range\n`;
 
 //     spawns.forEach(entry => {
-//       const variant = entry.variant ? entry.variant.join(", ") : "—";
-//       const levels = entry.lvlRange ? `${entry.lvlRange[0]}-${entry.lvlRange[1]}` : "—";
+//       const variant = entry.variant ? entry.variant.join(", ") : "-";
+//       const levels = entry.lvlRange ? `${entry.lvlRange[0]}-${entry.lvlRange[1]}` : "-";
 
 //       output += `|-\n`;
 //       output += `| ${global.formatName(entry.pokemon)}\n`;
@@ -40,7 +40,7 @@
 //   wiki += `! Pokémon !! Variant !! Weight !! Levels !! Bobbers\n`;
 
 //   pool.forEach(p => {
-//     const variant = p.variant ? p.variant.join(", ") : "—";
+//     const variant = p.variant ? p.variant.join(", ") : "-";
 //     const levels = `${p.lvlRange[0]}-${p.lvlRange[1]}`;
 
 //     const bobberList = p.tiers
@@ -96,7 +96,7 @@
 //       }
 
 //       if (inSeason) {
-//         let variant = p.variant ? p.variant.join(", ") : "—";
+//         let variant = p.variant ? p.variant.join(", ") : "-";
 //         let levels = p.lvlRange[0] + "-" + p.lvlRange[1];
 
 //         let bobberList = [];
@@ -124,3 +124,48 @@
 //   console.log(generateNetherFishingWikiTable(global.cobblemonNetherFishPool))
 // });
 
+
+// const generateSurpriseBaseWikiTable = (pool) => {
+//     let wiki = `{| class="wikitable sortable"\n`;
+//     wiki += `! Pokémon !! Variant !! Weight !! Levels\n`;
+
+//     pool.forEach(p => {
+//         const variant = p.variant ? p.variant.join(", ") : "-";
+//         const levels = `${p.lvlRange[0]}-${p.lvlRange[1]}`;
+
+//         wiki += `|-\n`;
+//         wiki += `| ${global.formatName(p.pokemon)} || ${variant} || ${p.weight} || ${levels}\n`;
+//     });
+
+//     wiki += `|}`;
+//     return wiki;
+// }
+
+// const generateSurpriseSpecialWikiTable = (spawnMap) => {
+//     let output = "";
+//     output += `{| class="wikitable sortable"\n`;
+//     output += `! Pokémon !! Variant !! Weight !! Level Range !! Crop\n`;
+//     for (const [crop, spawns] of spawnMap) {
+
+//         spawns.forEach(entry => {
+//             const variant = entry.variant ? entry.variant.join(", ") : "-";
+//             const levels = entry.lvlRange ? `${entry.lvlRange[0]}-${entry.lvlRange[1]}` : "-";
+
+//             output += `|-\n`;
+//             output += `| ${global.formatName(entry.pokemon)}\n`;
+//             output += `| ${variant || "-"}\n`;
+//             output += `| ${entry.weight}\n`;
+//             output += `| ${levels}\n`;
+//             output += `| ${crop}\n`;
+//         });
+//     }
+//     output += `|}\n\n`;
+//     return output;
+// }
+// ItemEvents.rightClicked("unimplemented_items:potion_max", (e) => {
+//     //   console.log(generateSurpriseBaseWikiTable(genericSpawns))
+//     //   console.log(generateSurpriseBaseWikiTable(genericTreeSpawns))
+//     // console.log(generateSurpriseSpecialWikiTable(specialSpawns))
+//     console.log(generateSurpriseBaseWikiTable(genericOreSpawns))
+//     console.log(generateSurpriseSpecialWikiTable(specialOreSpawns))
+// });

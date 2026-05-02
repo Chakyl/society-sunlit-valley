@@ -51,22 +51,19 @@ global.handleCobblemonDefeat = (e) => {
         winningPlayer.give(Item.of("sunlit_cobblemon:the_art_of_battle"))
       }
     }
-    let account = global.GLOBAL_BANK.getAccount(winningPlayer.getUuid());
-    if (account && account.getBalance() + reward < 2147483000) {
-      reward = Math.round(reward);
-      account.deposit(reward);
-      winningPlayer.getServer().runCommandSilent(
-        global.getEmbersTextAPICommand(
-          winningPlayer.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:68,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-          160,
-          Text.translatable(
-            "sunlit_cobblemon.win_reward",
-            global.formatPrice(reward),
-          ).toJson()
-        )
-      );
-    }
+    reward = Math.round(reward);
+    global.depositIntoPersonalOrCurio(winningPlayer.level, winningPlayer, reward);
+    winningPlayer.getServer().runCommandSilent(
+      global.getEmbersTextAPICommand(
+        winningPlayer.username,
+        `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:68,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+        160,
+        Text.translatable(
+          "sunlit_cobblemon.win_reward",
+          global.formatPrice(reward),
+        ).toJson()
+      )
+    );
   } else if (
     !winningPlayer.isPlayer() &&
     winningPlayer.type == "rctmod:trainer"

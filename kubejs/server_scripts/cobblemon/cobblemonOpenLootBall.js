@@ -10,7 +10,7 @@ BlockEvents.rightClicked(lootBallTypes, (e) => {
     let playerTag = NBT.stringTag(player.getUuid().toString())
     if (!nbt.data || nbt.data.playersLooted) {
         // Prevent lootball nbt bombs on large servers
-        if (nbt.data.playersLooted.length > 20) {
+        if (nbt.data.playersLooted.length > 32) {
             nbt.merge({
                 data: {
                     playersLooted: [],

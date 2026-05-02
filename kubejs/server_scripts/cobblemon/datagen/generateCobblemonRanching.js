@@ -1,5 +1,5 @@
 
-// const runRanchingDataGen = false;
+// const runRanchingDataGen = true;
 
 // if (runRanchingDataGen) {
 //     let cobbleSheepMilk = { sm: "society:sheep_milk", lg: "society:large_sheep_milk" };
@@ -3328,6 +3328,68 @@
 //             ],
 //         },
 //         {
+//             pokemon: "noibat",
+//             forages: [
+//                 {
+//                     item: "atmospheric:orange",
+//                     count: 1,
+//                     chance: 0.25,
+//                     minHearts: 2,
+//                     hasQuality: true,
+//                 },
+//                 {
+//                     item: "pamhc2trees:plumitem",
+//                     count: 2,
+//                     chance: 0.3,
+//                     minHearts: 4,
+//                     hasQuality: true,
+//                 },
+//                 {
+//                     item: "atmospheric:passion_fruit",
+//                     count: 2,
+//                     chance: 0.35,
+//                     min_hearts: 8,
+//                     has_quality: true,
+//                 },
+//                 {
+//                     item: 'pamhc2trees:dragonfruititem',
+//                     count: 3,
+//                     chance: 0.55,
+//                     min_hearts: 10,
+//                     has_quality: true,
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "noivern",
+//             forages: [
+//                 {
+//                     item: "vinery:glowing_wine",
+//                     count: 1,
+//                     chance: 0.25,
+//                     minHearts: 2
+//                 },
+//                 {
+//                     item: "vinery:noir_wine",
+//                     count: 1,
+//                     chance: 0.3,
+//                     minHearts: 4
+//                 },
+//                 {
+//                     item: "vinery:lilitu_wine",
+//                     count: 1,
+//                     chance: 0.35,
+//                     min_hearts: 8
+//                 },
+//                 {
+//                     item: 'vinery:eiswein',
+//                     count: 1,
+//                     chance: 0.55,
+//                     min_hearts: 10
+//                 }
+//             ],
+//         },
+//         {
 //             pokemon: "bramblin",
 //             forages: [
 //                 {
@@ -4139,6 +4201,29 @@
 //                     count: 1,
 //                     chance: 0.15,
 //                     min_hearts: 8
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "amoonguss",
+//             forages: [
+//                 {
+//                     item: "cluttered:red_mushroom_cap",
+//                     count: 4,
+//                     chance: 0.35,
+//                     min_hearts: 4
+//                 },
+//                 {
+//                     item: "sunlit_cobblemon:strange_spore",
+//                     count: 1,
+//                     chance: 1,
+//                     min_hearts: 5
+//                 },
+//                 {
+//                     item: "sunlit_cobblemon:strange_spore",
+//                     count: 1,
+//                     chance: 1,
+//                     min_hearts: 10
 //                 }
 //             ],
 //         },

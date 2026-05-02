@@ -1,6 +1,11 @@
 // priority: -20
 const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
+const NUMISMATICS_CURIO_UTILS = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
+
 global.GLOBAL_BANK = NUMISMATICS.BANK;
+global.getPersonalOrCurioAccount = NUMISMATICS_CURIO_UTILS.getPersonalOrCurioAccount;
+global.depositIntoPersonalOrCurio = NUMISMATICS_CURIO_UTILS.depositIntoPersonalOrCurio;
+global.deductFromPersonalOrCurio = NUMISMATICS_CURIO_UTILS.deductFromPersonalOrCurio;
 
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {
@@ -270,6 +275,7 @@ global.relics = [
   { item: "relics:shadow_glaive", value: 1024 },
   { item: "relics:elytra_booster", value: 1536 },
   { item: "relics:enders_hand", value: 1536 },
+  { item: "relics:holy_locket", value: 4096 },
   { item: "relics:arrow_quiver", value: 4096 },
   { item: "relics:chorus_inhibitor", value: 3072 },
   { item: "relics:midnight_robe", value: 3072 },
