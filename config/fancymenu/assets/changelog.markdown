@@ -5,9 +5,33 @@
 --- 
 
 ## 1.0.3-SSV4.0.6
-- Added Flamigo as a ranchable pokemon for real this time
-- Fixed season quest not having the super important client config line
-- Fixed recipe related performance issues on large servers
+- Added ~95 ridable pokemon, check wiki for updated list (Thanks KingKarma)
+- Added sell value for Sunlit Essence
+- Added Noibat, Noivern, and Amoongos ranches
+- League rewards will now go into curio bank account card if it exists
+- Improved performance of Mon Boxes (lower mon count and activation range)
+- Updated ko_kr translation (Thanks Hexagreen)
+- Tweaked some sell values (mainly loot items)
+- Fixed shiny rate being halved
+- Fixed several small differences with base SSV
+- Fixed oceans being polluted with loot balls and raid statues
+- Fixed Mints and Revival Herbs only growing on base farmland
+- Fixed Moomoo Cheese not being craftable in Auto-Cheese Press
+- Fixed Moomoo Cheese not aging with Pink Matter upgrade
+- Fixed Ancient Poke Balls using zinc blocks instead of copper
+- Fixed Pokemon with 1 heart of affection not getting milked by normal type worker
+- Fixed a few berries not being required for the collection
+- Fixed tuber_amira_02bd being in the wrong tier
+- Fixed Apricorns showing as day based in Jade
+- Fixed group sun raids sometimes being level 1
+- Fixed Sun Raid Statues not considering cavern air air
+- Fixed Sandy Mulch being uncraftable
+- Fixed Galarian Corsola on Poke Radar
+- Fixed Rocky dunes not having any spawns
+- Fixed Public workstations showing owner message 
+- Fixed ranching regional variants matching just form instead of form + species
+- Fixed workstations with long progress times showing 0:00 seconds in Multiplayer- Fixed side conditions (Reflect, Light Screen, etc.) lingering in the battle HUD after wild and NPC battles (Thanks Newbula)
+- Fixed stat boosts persisting in the battle HUD between battles (Thanks Newbula)
 
 ## 1.0.1-SSV4.0.6
 - Added Flamigo as a ranchable pokemon

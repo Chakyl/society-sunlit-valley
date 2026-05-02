@@ -2105,7 +2105,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cobblemon_farmers-1.4.jar",
+                    "file_name": "cobblemon_farmers-1.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2113,18 +2113,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8003/92/cobblemon_farmers-1.4.jar",
-                    "id": "8003092",
+                    "url": "https://edge.forgecdn.net/files/8023/630/cobblemon_farmers-1.5.jar",
+                    "id": "8023630",
                     "parent_id": "1375081",
                     "hashes": {
-                        "sha1": "4c9b4370331b946eb0ba236bec926b03669bd067",
-                        "md5": "4eb9ec6a71435c09037175fba6984898"
+                        "sha1": "00252f3c7c0a63a9837cc02ab5d9c98043d399b7",
+                        "md5": "ac0ff79c965c733ba5e2e538a747f0ba"
                     },
                     "required_dependencies": [
                         "687131"
                     ],
-                    "size": 428612,
-                    "date_published": "2026-04-28T00:49:57.610Z"
+                    "size": 431658,
+                    "date_published": "2026-05-01T23:00:27.717Z"
                 }
             ]
         },
@@ -2378,7 +2378,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cobblemon_showdown-1.1.0.jar",
+                    "file_name": "cobblemon_showdown-1.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2386,18 +2386,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7970/820/cobblemon_showdown-1.1.0.jar",
-                    "id": "7970820",
+                    "url": "https://edge.forgecdn.net/files/8024/957/cobblemon_showdown-1.1.1.jar",
+                    "id": "8024957",
                     "parent_id": "1469729",
                     "hashes": {
-                        "sha1": "6378fa3e92e2ecd9a255abf405d91d365ab7c8e7",
-                        "md5": "be4512443cbf45b99804d3c27b7315ac"
+                        "sha1": "785e82a9bfb5269f302e27b3a924a116b844174b",
+                        "md5": "69c790379941d3cc6192b5896650cd10"
                     },
                     "required_dependencies": [
                         "687131"
                     ],
-                    "size": 392466,
-                    "date_published": "2026-04-23T06:11:19.973Z"
+                    "size": 392746,
+                    "date_published": "2026-05-02T06:28:59.320Z"
                 }
             ]
         },
@@ -3781,7 +3781,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "numismatics_utils-2.0.jar",
+                    "file_name": "numismatics_utils-2.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3789,20 +3789,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7175/842/numismatics_utils-2.0.jar",
-                    "id": "7175842",
+                    "url": "https://edge.forgecdn.net/files/8026/503/numismatics_utils-2.1.jar",
+                    "id": "8026503",
                     "parent_id": "1339392",
                     "hashes": {
-                        "sha1": "8ebbad11ab62ee94989c53bd555b1ac4d350df56",
-                        "md5": "77436465bd7ca903c82d985a3467d610"
+                        "sha1": "7b730f7c9717e261445866e4889849133a970e13",
+                        "md5": "f481fedba8889fba647fee2cc57e9e3e"
                     },
                     "required_dependencies": [
                         "889722",
                         "328085",
                         "309927"
                     ],
-                    "size": 40849,
-                    "date_published": "2025-11-01T22:47:16.623Z"
+                    "size": 41436,
+                    "date_published": "2026-05-02T13:04:12.323Z"
                 }
             ]
         },
@@ -10711,6 +10711,47 @@
             ]
         },
         {
+            "pakku_id": "h8d32jboKqvdmR6U",
+            "pakku_links": [
+                "iWvCryH4gcmPkw7g"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "refined-storage-mixin"
+            },
+            "name": {
+                "curseforge": "Refined Storage Mixin"
+            },
+            "id": {
+                "curseforge": "1431536"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MCT-RS-Mixin-1.20.1-1.0.0-b400-release.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7544/101/MCT-RS-Mixin-1.20.1-1.0.0-b400-release.jar",
+                    "id": "7544101",
+                    "parent_id": "1431536",
+                    "hashes": {
+                        "sha1": "e5fcaa67c9e00c78293fc718716f630e8d561ad7",
+                        "md5": "721c3795b875aade26dcfa553ca9b9fe"
+                    },
+                    "required_dependencies": [
+                        "243076"
+                    ],
+                    "size": 122438,
+                    "date_published": "2026-01-29T03:22:48.987Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "48dzgX4fAl6mbtXx",
             "type": "MOD",
             "slug": {
@@ -12761,7 +12802,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sunlit_cobblemon-1.4.jar",
+                    "file_name": "sunlit_cobblemon-1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12769,19 +12810,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7979/998/sunlit_cobblemon-1.4.jar",
-                    "id": "7979998",
+                    "url": "https://edge.forgecdn.net/files/8027/614/sunlit_cobblemon-1.6.jar",
+                    "id": "8027614",
                     "parent_id": "1516290",
                     "hashes": {
-                        "sha1": "ac33f684249cac8db9ad0066046b211d5da339ec",
-                        "md5": "ab82c45a48e0e412fa7e9d588d0bb265"
+                        "sha1": "5f1d9cfee637507f570b0e64c258266ac8bd5d48",
+                        "md5": "5d5f4718d140acaa1597ac980438ed71"
                     },
                     "required_dependencies": [
                         "1037354",
                         "990998"
                     ],
-                    "size": 153025,
-                    "date_published": "2026-04-24T23:51:35.747Z"
+                    "size": 159574,
+                    "date_published": "2026-05-02T16:40:40.203Z"
                 }
             ]
         },
