@@ -1,6 +1,11 @@
 // priority: -20
 const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
+const NUMISMATICS_CURIO_UTILS = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
+
 global.GLOBAL_BANK = NUMISMATICS.BANK;
+global.getPersonalOrCurioAccount = NUMISMATICS_CURIO_UTILS.getPersonalOrCurioAccount;
+global.depositIntoPersonalOrCurio = NUMISMATICS_CURIO_UTILS.depositIntoPersonalOrCurio;
+global.deductFromPersonalOrCurio = NUMISMATICS_CURIO_UTILS.deductFromPersonalOrCurio;
 
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {

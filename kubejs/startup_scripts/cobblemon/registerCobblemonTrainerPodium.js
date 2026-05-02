@@ -99,6 +99,7 @@ global.runTrainerPodium = (entity) => {
       ];
       freshTrainer.setNbt(trainerNBT);
       freshTrainer.persistentData.levelTier = levelTier
+      freshTrainer.persistentData.gymLeader = owner
       freshTrainer.spawn();
       level.spawnParticles(
         "species:ascending_dust",

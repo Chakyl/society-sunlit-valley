@@ -71,7 +71,7 @@ ItemEvents.entityInteracted((e) => {
   const { hand, player, target, level, server } = e;
   if (hand == "OFF_HAND") return;
   if (target.type !== "rctmod:trainer") return;
-  if (level.getBlock(target.onPos.above()).id != "sunlit_cobblemon:trainer_podium") {
+  if (level.getBlock(target.onPos.above()).id !== "sunlit_cobblemon:trainer_podium") {
     target.setRemoved("unloaded_to_chunk");
     level.spawnParticles(
       "species:ascending_dust",
@@ -86,6 +86,18 @@ ItemEvents.entityInteracted((e) => {
       0.1
     );
     e.cancel();
+  }
+  if (target.persistentData.gymLeader !== player.getUuid().toString()) {
+    server.runCommandSilent(
+      global.getEmbersTextAPICommand(
+        player.username,
+        global.animalMessageSettings,
+        80,
+        Text.translatable("sunlit_cobblemon.trainer_podium.not_your_gym").toJson()
+      )
+    );
+    e.cancel();
+    return;
   }
   let levelAverage = global.getPartyLevel(player);
   if (levelAverage > 100) {

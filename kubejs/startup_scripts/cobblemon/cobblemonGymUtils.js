@@ -1,7 +1,6 @@
 // priority: -21
 console.info("[SOCIETY-S-COBBLEMON] cobblemonGymUtils.js loaded");
 
-
 const trainerBuckets = new Map([
   [
     10,
