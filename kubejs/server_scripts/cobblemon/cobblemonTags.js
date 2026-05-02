@@ -40,6 +40,9 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("cobblemon:is_desert", "atmospheric:petrified_dunes");
   e.add("cobblemon:is_sandy", "atmospheric:flourishing_dunes");
   e.add("cobblemon:is_desert", "atmospheric:flourishing_dunes");
+  e.add("cobblemon:is_sandy", "atmospheric:rocky_dunes");
+  e.add("cobblemon:is_desert", "atmospheric:rocky_dunes");
+  e.add("cobblemon:is_peak", "atmospheric:rocky_dunes");
 });
 
 const cobblemonAllSeasonCrops = [
@@ -246,6 +249,7 @@ ServerEvents.tags("block", (e) => {
     e.add("society:ribbit_hut_harvests", crop);
   });
   const lootBlockTags = [
+    "minecraft:immovable",
     "minecraft:wither_immune",
     "buildinggadgets2:deny",
     "forge:relocation_not_supported",

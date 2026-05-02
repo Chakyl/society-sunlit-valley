@@ -61,6 +61,7 @@ global.runTrainerPodium = (entity) => {
     if (spawnTrainer && !block.level.hasNeighborSignal(block.pos)) {
       let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
       let levelTier = global.getPlayerPodiumLevelTier(ownerPlayer, levelAverage);
+      if (levelTier == undefined) return;
       let newTrainer
       if (trainers == null) {
         nbt.merge({ data: { trainers: {} } });
