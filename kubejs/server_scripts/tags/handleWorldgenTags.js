@@ -7,6 +7,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("society:spawns_magma_geodes", "#minecraft:is_nether");
   e.add("forge:is_snowy", "society:frozen_caves");
   e.add("forge:is_snowy", "society:frozen_maelstrom");
+  e.add("minecraft:is_end", "society:umbra_barrens");
 
   const magmaGeodeBiomes = [
     "society:blackstone_caves",
