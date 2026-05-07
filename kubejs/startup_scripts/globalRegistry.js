@@ -765,7 +765,7 @@ global.artisanGoods = [
   { item: "society:mystic_syrup", value: 1000 },
   { item: "society:pine_tar", value: 128 },
   { item: "society:sap", value: 4 },
-  { item: "society:rubber", value: 30 },
+  { item: "society:rubber", value: 6 },
   { item: "society:aged_cheese_block", value: 288 },
   { item: "society:aged_goat_cheese_block", value: 1728 },
   { item: "society:aged_warped_cheese_block", value: 1728 },
