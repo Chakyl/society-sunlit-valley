@@ -76,7 +76,7 @@ global.runTrainerPodium = (entity) => {
         if (ownerPlayer.persistentData.winStreak > 14 && ownerPlayer.persistentData.winStreak % 15 === 0) {
           newTrainer = global.getLeagueBoss(Math.min(100, levelTier))
         } else {
-          newTrainer = global.getRandomTrainer(Math.min(130, levelTier));
+          newTrainer = global.getRandomTrainer(Math.min(135, levelTier));
         }
         let newTrainersArray = trainers;
         newTrainersArray.putString(`${levelTier}`, newTrainer)
@@ -84,6 +84,7 @@ global.runTrainerPodium = (entity) => {
         global.setBlockEntityData(block, nbt);
       }
       if (newTrainer === "lass_anne_00041") newTrainer = "lass_anne_0004"
+      // console.log("Spawning trainer " + newTrainer + " at tier " + levelTier + " for " + ownerPlayer.username);
       let freshTrainer = level.createEntity("rctmod:trainer");
       let trainerNBT = freshTrainer.getNbt();
       trainerNBT.TrainerId = newTrainer;

@@ -32,6 +32,7 @@ global.handleCobblemonDefeat = (e) => {
       let winStreak = winningPlayer.persistentData.winStreak;
       winningPlayer.persistentData.winStreak = winStreak || 0;
       winningPlayer.persistentData.winStreak++;
+      winningPlayer.persistentData.bagItemsUsed = 0;
       winStreak++;
       if (winStreak % 10 == 0) {
         winningPlayer.tell(
@@ -68,6 +69,8 @@ global.handleCobblemonDefeat = (e) => {
     !winningPlayer.isPlayer() &&
     winningPlayer.type == "rctmod:trainer"
   ) {
+    losingPlayer.persistentData.bagItemsUsed = 0;
+    losingPlayer.tell(losingPlayer.persistentData.bagItemsUsed)
     global.handleLeagueFee(losingPlayer.getServer(), losingPlayer, "loss")
 
     if (losingPlayer.persistentData.winStreak > 1) {

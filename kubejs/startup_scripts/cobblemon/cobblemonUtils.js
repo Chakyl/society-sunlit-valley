@@ -18,8 +18,13 @@ global.getPartyLevel = (player) => {
     if (levelHighest < pokemon.level) levelHighest = pokemon.level;
     partyCount++;
   });
+  let levelHighestCount = 0;
+  party.forEach((pokemon) => {
+    if (levelHighest == pokemon.level) levelHighestCount++;
+  });
   let levelAverage = Math.round(levelSum / partyCount);
-  if (Math.round(levelAverage * 1.5) < levelHighest) return levelHighest;
+  if (Math.round(levelAverage * 1.25) < levelHighest) return levelHighest;
+  if (levelHighestCount >= 3) return levelHighest; 
   return levelAverage;
 };
 
