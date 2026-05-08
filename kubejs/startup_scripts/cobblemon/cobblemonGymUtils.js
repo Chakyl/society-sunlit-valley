@@ -432,7 +432,6 @@ const trainerBuckets = new Map([
     [
       "super_nerd_miguel_00aa",
       "camper_justin_01dd",
-      "channeler_rachel_0093",
       "rocker_luca_011d",
       "swimmerf_maria_0223",
       "bird_keeper_jacob_0135",
@@ -458,6 +457,7 @@ const trainerBuckets = new Map([
     [
       "cue_ball_camron_00fb",
       "picnicker_alma_01d2",
+      "channeler_rachel_0093",
       "picnicker_caitlin_009b",
       "picnicker_claire_022c",
       "swimmerf_abigail_0224",

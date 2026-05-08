@@ -199,6 +199,7 @@ ServerEvents.tags("item", (e) => {
   [
     "society:earth_crystal",
     "society:fire_quartz",
+    "vintagedelight:ghost_pepper"
   ].forEach((blockItem) => {
     e.add('cobblemon_farmers:craft_station_renders_flat', blockItem);
   });

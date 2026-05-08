@@ -6145,7 +6145,7 @@
 //                     min_hearts: 1
 //                 },
 //                 {
-//                     item: "minecraft:ancient_debris",
+//                     item: "minecraft:netherite_scrap",
 //                     count: 1,
 //                     chance: 0.04,
 //                     min_hearts: 10

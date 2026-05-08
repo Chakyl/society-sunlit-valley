@@ -14,6 +14,8 @@ global.removedItems = [
   "unimplemented_items:ability_patch",
   "unimplemented_items:shiny_charm",
   "create_klinks_n_klangs:repeat_ball_stencil",
+  "simpletms:tr_shellsidearm",
+  "simpletms:tr_shellsidearm",
   "cobblemon:medicinal_leek",
   "simpletms:tm_bloomdoom",
   "simpletms:tr_bloomdoom",
