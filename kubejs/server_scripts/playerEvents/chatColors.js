@@ -17,22 +17,24 @@ const colorMap = [
   { dye: "minecraft:blue_dye", code: "9" },
   { dye: "minecraft:pink_dye", code: "d" },
 ];
-PlayerEvents.chat((event) => {
-  let { player, message, server } = event;
-  const curios = player.nbt.ForgeCaps["curios:inventory"];
-  const arrow = "&7»&r";
-  let color = "&f";
-  colorMap.forEach((mappedColor) => {
-    const { dye, code } = mappedColor;
-    if (curios.toString().includes(dye)) color = `&${code}`;
-  });
+PlayerEvents.chat((e) => {
+  let { player, message, server } = e;
+  if (global.enableChatColors) {
+    const curios = player.nbt.ForgeCaps["curios:inventory"];
+    const arrow = "&7»&r";
+    let color = "&f";
+    colorMap.forEach((mappedColor) => {
+      const { dye, code } = mappedColor;
+      if (curios.toString().includes(dye)) color = `&${code}`;
+    });
 
-  let userName = player.name.toString().match(/\{(.+)\}/)[1];
+    let userName = player.name.toString().match(/\{(.+)\}/)[1];
 
-  let fullMessage = ` ${color}${userName} ${arrow} ${message}`;
-  fullMessage = addColor(fullMessage);
-  server.tell(fullMessage);
-  event.cancel();
+    let fullMessage = ` ${color}${userName} ${arrow} ${message}`;
+    fullMessage = addColor(fullMessage);
+    server.tell(fullMessage);
+    e.cancel();
+  }
 });
 
 const addColor = (text) => {

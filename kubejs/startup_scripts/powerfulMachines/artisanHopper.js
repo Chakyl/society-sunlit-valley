@@ -133,7 +133,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
     case "society:wine_keg":
       machineData = {
         recipes: global.wineKegRecipes,
-        stageCount: 6,
+        stageCount: 3,
         multipleInputs: true,
         soundType: "minecraft:block.wood.place",
       };

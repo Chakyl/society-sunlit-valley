@@ -5274,48 +5274,6 @@
             ]
         },
         {
-            "pakku_id": "prmoXHZaw19i7Ua9",
-            "pakku_links": [
-                "nubF4pshkcyyOIX9"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "fastworkbench"
-            },
-            "name": {
-                "curseforge": "FastWorkbench"
-            },
-            "id": {
-                "curseforge": "288885"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "FastWorkbench-1.20.1-8.0.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5101/229/FastWorkbench-1.20.1-8.0.4.jar",
-                    "id": "5101229",
-                    "parent_id": "288885",
-                    "hashes": {
-                        "sha1": "1a322a85e7c7024b8a0715c12d27b5ed0930d729",
-                        "md5": "2b55c4786cc726b0757689af28b97e7e"
-                    },
-                    "required_dependencies": [
-                        "283644"
-                    ],
-                    "size": 28188,
-                    "date_published": "2024-02-12T05:39:41.417Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "kI7X3q7g51q0cpFX",
             "type": "MOD",
             "slug": {
@@ -9713,6 +9671,43 @@
             ]
         },
         {
+            "pakku_id": "nT9sohinLNlaMNoR",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "recipe-essentials-forge-fabric"
+            },
+            "name": {
+                "curseforge": "Recipe Essentials[Forge/Fabric]"
+            },
+            "id": {
+                "curseforge": "907856"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "recipeessentials-1.20.1-4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6165/709/recipeessentials-1.20.1-4.0.jar",
+                    "id": "6165709",
+                    "parent_id": "907856",
+                    "hashes": {
+                        "sha1": "6e50995efefdef6f77f0289200a17ae4c18cde75",
+                        "md5": "570607c1e36e86f2180fdfb960b50dff"
+                    },
+                    "required_dependencies": [],
+                    "size": 50739,
+                    "date_published": "2025-02-06T22:39:36.930Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "iWvCryH4gcmPkw7g",
             "type": "MOD",
             "slug": {
@@ -9783,6 +9778,47 @@
                     "required_dependencies": [],
                     "size": 33771,
                     "date_published": "2023-07-05T11:08:13.323Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "DRxW3InVYzkJruba",
+            "pakku_links": [
+                "iWvCryH4gcmPkw7g"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "refined-storage-mixin"
+            },
+            "name": {
+                "curseforge": "Refined Storage Mixin"
+            },
+            "id": {
+                "curseforge": "1431536"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MCT-RS-Mixin-1.20.1-1.0.0-b400-release.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7544/101/MCT-RS-Mixin-1.20.1-1.0.0-b400-release.jar",
+                    "id": "7544101",
+                    "parent_id": "1431536",
+                    "hashes": {
+                        "sha1": "e5fcaa67c9e00c78293fc718716f630e8d561ad7",
+                        "md5": "721c3795b875aade26dcfa553ca9b9fe"
+                    },
+                    "required_dependencies": [
+                        "243076"
+                    ],
+                    "size": 122438,
+                    "date_published": "2026-01-29T03:22:48.987Z"
                 }
             ]
         },
@@ -11358,7 +11394,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.20.1.jar",
+                    "file_name": "splendid_slimes-0.20.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11366,18 +11402,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8038/673/splendid_slimes-0.20.1.jar",
-                    "id": "8038673",
+                    "url": "https://edge.forgecdn.net/files/8057/560/splendid_slimes-0.20.3.jar",
+                    "id": "8057560",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "cce880f073353ea6917bded99dc7ea5c7d44077a",
-                        "md5": "343c885e387fb72da0d584904ab74769"
+                        "sha1": "85d43864434b8cd34a7dc4dc0e257cf7b9f24a44",
+                        "md5": "eebc7c257e73d482ef3c5752932b7933"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 511690,
-                    "date_published": "2026-05-04T16:00:24.337Z"
+                    "size": 511712,
+                    "date_published": "2026-05-08T12:19:25.837Z"
                 }
             ]
         },

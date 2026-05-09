@@ -98,7 +98,8 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
     hungry = false;
     mood = 256;
   } else {
-    hungry = day - data.getInt("ageLastFed") > 1;
+    hungry = global.compareDay(day, data.getInt("ageLastFed"), 1);
+    if (!(global.compareDay(day, data.getInt("ageLastPet"), 1) || level.dayTime() % 24000 > 12000)) return;
     mood = global.getOrFetchMood(level, animal, day, player);
   }
   if (mood < 64 && Math.random() < mood / 64) return;
