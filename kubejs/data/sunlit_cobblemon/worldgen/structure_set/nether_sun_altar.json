@@ -9,6 +9,15 @@
     "type": "moogs_structures:advanced_random_spread",
     "salt": 148640517,
     "spacing": 9,
-    "separation": 7
+    "separation": 7,
+    "start_height": {
+      "type": "minecraft:uniform",
+      "min_inclusive": {
+        "absolute": 1
+      },
+      "max_inclusive": {
+        "absolute": 127
+      }
+    }
   }
 }

@@ -2,19 +2,19 @@ console.info("[SOCIETY-S-COBBLEMON] cobblemonPokeOre.js loaded");
 
 
 let genericOreSpawns = [
-  { pokemon: "diglett", weight: 10, lvlRange: [2, 24] },
-  { pokemon: "diglett", weight: 5, lvlRange: [2, 24], variant: ["alolan"] },
-  { pokemon: "dugtrio", weight: 8, lvlRange: [2, 24] },
-  { pokemon: "dugtrio", weight: 3, lvlRange: [2, 24], variant: ["alolan"] },
-  { pokemon: "geodude", weight: 10, lvlRange: [2, 24] },
-  { pokemon: "geodude", weight: 5, lvlRange: [2, 24], variant: ["alolan"] },
-  { pokemon: "graveler", weight: 8, lvlRange: [25, 40] },
-  { pokemon: "graveler", weight: 3, lvlRange: [25, 40], variant: ["alolan"] },
+  { pokemon: "diglett", weight: 6, lvlRange: [2, 24] },
+  { pokemon: "diglett", weight: 3, lvlRange: [2, 24], variant: ["alolan"] },
+  { pokemon: "dugtrio", weight: 4, lvlRange: [2, 24] },
+  { pokemon: "dugtrio", weight: 2, lvlRange: [2, 24], variant: ["alolan"] },
+  { pokemon: "geodude", weight: 7, lvlRange: [2, 24] },
+  { pokemon: "geodude", weight: 2, lvlRange: [2, 24], variant: ["alolan"] },
+  { pokemon: "graveler", weight: 4, lvlRange: [25, 40] },
+  { pokemon: "graveler", weight: 2, lvlRange: [25, 40], variant: ["alolan"] },
   { pokemon: "golem", weight: 2, lvlRange: [25, 60] },
   { pokemon: "golem", weight: 1, lvlRange: [25, 60], variant: ["alolan"] },
   { pokemon: "golem", weight: 2, lvlRange: [25, 60] },
-  { pokemon: "onix", weight: 4, lvlRange: [2, 40] },
-  { pokemon: "rhyhorn", weight: 4, lvlRange: [2, 40] },
+  { pokemon: "onix", weight: 1, lvlRange: [2, 40] },
+  { pokemon: "rhyhorn", weight: 3, lvlRange: [2, 40] },
   { pokemon: "shuckle", weight: 1, lvlRange: [2, 40] },
   { pokemon: "gibble", weight: 0.001, lvlRange: [2, 20] },
 ];
@@ -114,7 +114,7 @@ const specialOreSpawns = new Map([
     [
       { pokemon: "geodude", weight: 10, lvlRange: [2, 24], variant: ["alolan"] },
       { pokemon: "magneton", weight: 6, lvlRange: [30, 50] },
-      { pokemon: "rotom", weight: 0.01, lvlRange: [2, 24] },
+      { pokemon: "rotom", weight: 0.05, lvlRange: [2, 24] },
     ],
   ],
   [
@@ -208,7 +208,7 @@ const specialOreSpawns = new Map([
     "society:sparkstone_ore",
     [
       { pokemon: "magneton", weight: 6, lvlRange: [30, 50] },
-      { pokemon: "rotom", weight: 0.1, lvlRange: [30, 55] },
+      { pokemon: "rotom", weight: 0.5, lvlRange: [30, 55] },
       { pokemon: "golem", weight: 10, lvlRange: [45, 84], variant: ["alolan"] },
       { pokemon: "eelektross", weight: 10, lvlRange: [45, 84] },
       { pokemon: "glimmet", weight: 2, lvlRange: [25, 34] },
@@ -219,7 +219,7 @@ const specialOreSpawns = new Map([
     "society:deepslate_sparkstone_ore",
     [
       { pokemon: "magneton", weight: 6, lvlRange: [30, 50] },
-      { pokemon: "rotom", weight: 0.3, lvlRange: [30, 55] },
+      { pokemon: "rotom", weight: 0.7, lvlRange: [30, 55] },
       { pokemon: "golem", weight: 10, lvlRange: [45, 84], variant: ["alolan"] },
       { pokemon: "eelektross", weight: 10, lvlRange: [45, 84] },
       { pokemon: "glimmet", weight: 2, lvlRange: [25, 34] },
@@ -281,9 +281,10 @@ const uncoverOrePokemon = (level, server, block, pos) => {
 };
 
 BlockEvents.broken((e) => {
-  const { block, player, server, level } = e;
-  let spawnChance = 1 / 80;
-  // TODO: Silk Touch
+  const { block, hand, player, server, level } = e;
+  if (hand == "OFF_HAND") return;
+  let spawnChance = 1 / 1;
+  if (player.getHeldItem("MAIN_HAND").enchantments.containsKey("minecraft:silk_touch")) return;
   if (block.hasTag("forge:ores")) {
     if (player.stages.has("braiding_surprisegrass")) {
       spawnChance *= 1.5

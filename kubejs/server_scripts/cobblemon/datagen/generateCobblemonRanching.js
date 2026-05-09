@@ -6147,7 +6147,7 @@
 //                 {
 //                     item: "minecraft:netherite_scrap",
 //                     count: 1,
-//                     chance: 0.04,
+//                     chance: 0.07,
 //                     min_hearts: 10
 //                 }
 //             ],

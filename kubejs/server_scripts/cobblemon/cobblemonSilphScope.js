@@ -35,7 +35,7 @@ EntityEvents.spawned((e) => {
     players.forEach((p) => {
       if (global.hasScope(p)) {
         spawnPokemon = true;
-        if (global.announceShinies && shiny) p.tell(Text.translatable("tooltip.sunlit_cobblemon.nearby_shiny").green(), pokemon.getSpecies().getName())
+        if (global.announceShinies && shiny) p.tell(Text.translatable("tooltip.sunlit_cobblemon.nearby_shiny", pokemon.getSpecies().getName()).green())
       }
     });
 

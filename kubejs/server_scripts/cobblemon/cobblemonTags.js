@@ -214,6 +214,12 @@ ServerEvents.tags("item", (e) => {
   ].forEach((item) => {
     e.add("society:large_milk", item);
   });
+  global.cobblemonPreserves.forEach((preserve) => {
+    e.add("society:preserves", preserve.item);
+  });
+  global.cobblemonDehydrated.forEach((dehydratee) => {
+    e.add("society:dehydrated", dehydratee.item);
+  });
 });
 
 ServerEvents.tags("block", (e) => {
@@ -271,6 +277,8 @@ ServerEvents.tags("block", (e) => {
   });
 
   [
+    "cobblemon:pc",
+    "cobblemon:healing_machine",
     "waystones:white_sharestone",
     "sunlit_cobblemon:sun_raid_statue",
     "sunlit_cobblemon:poke_loot_ball",

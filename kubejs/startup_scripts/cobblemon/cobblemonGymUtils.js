@@ -471,15 +471,20 @@ const trainerBuckets = new Map([
       "tuber_alexis_022f",
       "tuber_amira_0207",
       "aroma_lady_nikki_020b",
-      "ace_trainer_symes_0071",
-      "ace_trainer_andrew_0002",
-      "ace_trainer_wilton_0133",
       "dragon_tamer_ramiro_0134",
     ],
   ],
   [
     105,
     [
+      "ace_trainer_symes_0071",
+    ],
+  ],
+  [
+    110,
+    [
+      "ace_trainer_andrew_0002",
+      "ace_trainer_wilton_0133",
       "punk_girl_providence3",
       "gym_crusher_alexander",
       "gym_crusher_howitzer",
@@ -490,9 +495,8 @@ const trainerBuckets = new Map([
     ],
   ],
   [
-    110,
+    115,
     [
-      "punk_girl_providence4",
       "ace_trainer_runan_007c",
       "ace_trainer_nick_0055",
       "professor_oak_00d2",
@@ -503,28 +507,24 @@ const trainerBuckets = new Map([
     ],
   ],
   [
-    115,
+    120,
     [
       "reggie",
       "professor_oak_00c8",
       "gym_crusher_dennis",
       "raging_red",
       "raging_blue",
-    ],
-  ],
-  [
-    120,
-    [
-      "bird_legend_arctic",
-      "bird_legend_zap",
-      "bird_legend_melt",
+      "punk_girl_providence4",
       "gym_crusher_twine",
-      "gym_obliterator_blaze"
     ],
   ],
   [
     125,
     [
+      "gym_obliterator_blaze",
+      "bird_legend_arctic",
+      "bird_legend_zap",
+      "bird_legend_melt",
       "gym_obliterator_warp",
       "gym_obliterator_cofh",
       "gym_obliterator_artemis",
@@ -558,7 +558,8 @@ const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "ka
 const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
 
 global.getLeagueBoss = (levelBucket) => {
-  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 1);
+  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 2);
+  if (levelBucket == 105) bossNumber = 8;
   if (bossNumber >= 9) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}${bossNumber}`;
   return `league_${leagueBosses[rnd(0, leagueBosses.length - 1)]}${bossNumber}`;
 };
