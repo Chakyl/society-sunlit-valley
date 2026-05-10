@@ -553,6 +553,7 @@ global.animalProducts = [
   { item: "beachparty:raw_mussel_meat", value: 16 },
   { item: "untitledduckmod:raw_goose", value: 16 },
   { item: "autumnity:turkey", value: 32 },
+  { item: "autumnity:turkey_piece", value: 6 },
   { item: "atmospheric:carmine_husk", value: 10 },
   { item: "crabbersdelight:raw_squid_tentacles", value: 16 },
   { item: "crabbersdelight:squid_barrel", value: 144 },
@@ -1310,6 +1311,7 @@ const furnaceRecipes = [
   { item: "untitledduckmod:cooked_duck", value: 16 },
   { item: "untitledduckmod:cooked_goose", value: 16 },
   { item: "autumnity:cooked_turkey", value: 32 },
+  { item: "autumnity:cooked_turkey_piece", value: 6 },
   { item: "minecraft:cooked_cod", value: 16 },
   { item: "unusualfishmod:cooked_aero_mono_stick", value: 192 },
   { item: "aquaculture:fish_fillet_cooked", value: 8 },
@@ -1705,6 +1707,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "minecraft:dragon_breath", value: 4},
   { item: "society:sunlit_pearl", value: 1920 },
   { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },
