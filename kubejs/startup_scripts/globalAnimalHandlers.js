@@ -86,7 +86,7 @@ const canMilk = (data, target, day, plushieModifiers) => {
     day > ageLastMilked + global.getMilkingTimeMult(target, target.type) - 1;
   const freshAnimal = global.isFresh(day, ageLastMilked);
   if (plushieModifiers) return freshAnimal || dayHasPassed;
-  const hungry = day - data.getInt("ageLastFed") > 1;
+  const hungry = global.compareDay(day, data.getInt("ageLastFed"), 1)
   return !target.isBaby() && !hungry && (freshAnimal || dayHasPassed);
 };
 
@@ -161,7 +161,7 @@ global.handleSpecialHarvest = (
   const ageLastDroppedSpecial = data.getInt("ageLastDroppedSpecial") || 0;
   const type = target.type;
   const freshAnimal = global.isFresh(day, ageLastDroppedSpecial);
-  const hungry = day - ageLastFed > 1;
+  const hungry = global.compareDay(day, ageLastFed, 1)
   const crackerBonus = data.animalCracker ? 2 : 1;
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
