@@ -20,8 +20,8 @@ const colorMap = [
 PlayerEvents.chat((e) => {
   let { player, message, server } = e;
   if (global.enableChatColors) {
-    const curios = player.nbt.ForgeCaps["curios:inventory"];
-    const arrow = "&7»&r";
+    let curios = player.nbt.ForgeCaps["curios:inventory"];
+    let arrow = "&7»&r";
     let color = "&f";
     colorMap.forEach((mappedColor) => {
       const { dye, code } = mappedColor;
@@ -38,7 +38,7 @@ PlayerEvents.chat((e) => {
 });
 
 const addColor = (text) => {
-  const hexPattern = /&#[a-fA-F0-9]{6}/g;
+  let hexPattern = /&#[a-fA-F0-9]{6}/g;
   let result = text.replace(hexPattern, (hexCode) => {
     let rgb = parseInt(hexCode.substring(2), 16);
     return TextColor.fromRgb(rgb).toString();
