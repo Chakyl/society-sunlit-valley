@@ -4,7 +4,48 @@
 ^^^
 --- 
 ## 1.0.3-SSV4.0.6
-TODO
+- Added sounds and particles to shiny Pokemon
+- Added notification when nearby shiny Pokemon spawns (configurable)
+- Added TM/TRs to some loot tables
+- Added tooltips to the left hand side of ranching station screen for clarity
+- Added Pack Icon
+- Added bag item limits to trainer podiums (configurable)
+- Added more trainer podium trainers
+- Rebalanced trainer podium's 100-135 tiers to be less of an unfair difficulty spike
+- Reduced rate of common ore pokemon
+- Removed Bloom Doom and Shattered Psyche z-move TR/TMs
+- Reworked Gardening Station radius/area so every type has consistent area and text is clearer
+- Reworked level averaging algorithm
+- Reduced Mystery Gift medallion cost 32 -> 16
+- Garchomp learned how to use its jets
+- Lake Spirits now have a will to live
+- Fixed ridding offsets for a bunch of popular pokemon 
+- Fixed certain BEs being piston-movable bricking worlds
+- Fixed Dimensional Entity 0 not appearing
+- Fixed Wormhole generator tooltip
+- Fixed Cobblemon shops not having descriptions
+- Fixed Ghost pepper craft station render
+- Fixed tier 0 Sun Raid Statues only being uncommon
+- Fixed Hydrapple being unobtainable
+- Fixed Sandy Shocks ranching definition and buffed rate
+- Fixed Sandy Shocks spawn
+- Fixed Roaring Moon and Raging Bolt having incorrect spawn location
+- Fixed certain Cobblemon artisan goods not having correct tags
+- Fixed TMs/TRs not having tags
+- Fixed some duplicated craft station recipe
+- Fixed instance of shiny raid pokemon not being shiny on death
+- Fixed Gardening Station not rendering swap priority button state
+- Fixed Gardening Station voiding instead of popping out items if the facing block is a blockentity
+- Fixed Worker cap not taking into account Worker Permits when actually inserting into stations
+- Fixed instances of normal/fairy types stopping work in Gardening Stations
+- Fixed Espathra and Articuno not being ridable
+- Fixed cases where roaming legendaries spawn on top of eachother, breaking their sun status
+- Fixed structures generating on Nether ceiling
+- Fixed PC and Healing Machine not being interactable in claims
+- Fixed bricking crash with Cobbreeding
+- Fixed Sparkstone and a few other ores not summoning pokemon
+- Fixed window title
+- Fixed Water and Normal type gems not being obtainable from Mystery Mine
 
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
