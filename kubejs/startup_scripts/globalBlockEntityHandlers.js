@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 // Priority: 1000
-const artMachineTickRate = 20;
+const artMachineTickRate = 200;
 
 const artMachineProgTime = 20;
 
@@ -603,20 +603,20 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   const { level, block } = entity;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
-  let blockProperties = level.getBlock(block.pos).getProperties();
-
-  if (blockProperties.get("working").toLowerCase() === "false") return;
 
   if (
     forced ||
     (morningModulo >= artMachineProgTime &&
       morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
+    let blockProperties = level.getBlock(block.pos).getProperties();
+
+    if (blockProperties.get("working").toLowerCase() === "false") return;
     global.convertFromLegacy(recipes, level, block);
     let nbt = block.getEntityData();
     let mature;
     let recipe = recipes && recipes.get(nbt.data.recipe);
-    let resolvedStage = (recipes && recipe.time) || stageCount;
+    let resolvedStage = (recipe && recipe.time) || stageCount;
 
     const nbtStage = nbt.data.stage;
     if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {
