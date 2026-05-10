@@ -30,9 +30,12 @@ EntityEvents.spawned((e) => {
     let area = entity.getBoundingBox().inflate(64);
     let spawnPokemon = false;
     let players = level.getNearbyPlayers(PLAYER_CONDITION, null, area);
+    let pokemon = entity.getPokemon();
+    let shiny = pokemon.getShiny();
     players.forEach((p) => {
       if (global.hasScope(p)) {
         spawnPokemon = true;
+        if (global.announceShinies && shiny) p.tell(Text.translatable("tooltip.sunlit_cobblemon.nearby_shiny", pokemon.getSpecies().getName()).green())
       }
     });
 

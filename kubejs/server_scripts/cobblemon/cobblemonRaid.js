@@ -13,12 +13,12 @@ const getTierStats = (tier) => {
         case 3:
             return { bucket: Math.random() < 0.25 ? "ultra-rare" : "rare", shinyChance: 1 / 2048, hiddenAbilityChance: 1 / 4 }
         case 2:
-            return { bucket: Math.random() < 0.75 ? "rare" : "uncommon", shinyChance: 1 / 3072, hiddenAbilityChance: 1 / 8 }
+            return { bucket: Math.random() < 0.75 ? "rare" : "uncommon", shinyChance: 1 / 2560, hiddenAbilityChance: 1 / 8 }
         case 1:
-            return { bucket: Math.random() < 0.25 ? "rare" : "uncommon", shinyChance: 1 / 3584, hiddenAbilityChance: 1 / 16 }
+            return { bucket: Math.random() < 0.25 ? "rare" : "uncommon", shinyChance: 1 / 3072, hiddenAbilityChance: 1 / 16 }
         case 0:
         default:
-            return { bucket: Math.random() < 0.5 ? "uncommon" : "uncommon", shinyChance: 1 / 4000, hiddenAbilityChance: 1 / 16 }
+            return { bucket: Math.random() < 0.5 ? "common" : "uncommon", shinyChance: 1 / 3584, hiddenAbilityChance: 1 / 16 }
     }
 }
 

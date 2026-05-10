@@ -1,6 +1,6 @@
 {
     "name": "Society Sunlit Cobblemon",
-    "version": "1.0.3-SSV4.0.6",
+    "version": "1.0.4-SSV4.0.7",
     "overrides": [
         "config",
         "defaultconfigs",
@@ -11,7 +11,7 @@
     "client_overrides": [
         "resourcepacks/sunlit_overrides.zip",
         "shaderpacks",
-        "journeymap/config"
+        "configureddefaults"
     ],
     "projects": {
         "ambientsounds": {
@@ -127,7 +127,7 @@
         },
         "tmrv": {
             "side": "CLIENT"
-         },
+        },
         "raws-visual-keybinder": {
             "side": "CLIENT"
         },
@@ -155,5 +155,6 @@
         "skillexpnotifier": {
             "side": "BOTH"
         }
-    }
+    },
+    "export_server_side_projects_to_client": true
 }

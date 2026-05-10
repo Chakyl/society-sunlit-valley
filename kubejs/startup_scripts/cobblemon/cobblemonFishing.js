@@ -82,7 +82,7 @@ const catchPokemon = (caughtMon, level, hook, server, player, nether) => {
         }
       } else {
         server.runCommandSilent(
-          `execute in ${level.dimension} run pokespawnat ${hook.x} ${hook.y + 2} ${hook.z} ${lakeLegendaries[Math.floor(Math.random() * lakeLegendaries.length)]} level=80`
+          `execute in ${level.dimension} run pokespawnat ${hook.x} ${hook.y + 2} ${hook.z} ${lakeLegendaries[Math.floor(Math.random() * lakeLegendaries.length)]} level=75`
         );
 
       }

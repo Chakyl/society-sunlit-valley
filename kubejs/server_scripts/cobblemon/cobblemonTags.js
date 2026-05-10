@@ -199,6 +199,7 @@ ServerEvents.tags("item", (e) => {
   [
     "society:earth_crystal",
     "society:fire_quartz",
+    "vintagedelight:ghost_pepper"
   ].forEach((blockItem) => {
     e.add('cobblemon_farmers:craft_station_renders_flat', blockItem);
   });
@@ -212,6 +213,12 @@ ServerEvents.tags("item", (e) => {
     'sunlit_cobblemon:large_moomoo_milk'
   ].forEach((item) => {
     e.add("society:large_milk", item);
+  });
+  global.cobblemonPreserves.forEach((preserve) => {
+    e.add("society:preserves", preserve.item);
+  });
+  global.cobblemonDehydrated.forEach((dehydratee) => {
+    e.add("society:dehydrated", dehydratee.item);
   });
 });
 
@@ -270,6 +277,8 @@ ServerEvents.tags("block", (e) => {
   });
 
   [
+    "cobblemon:pc",
+    "cobblemon:healing_machine",
     "waystones:white_sharestone",
     "sunlit_cobblemon:sun_raid_statue",
     "sunlit_cobblemon:poke_loot_ball",

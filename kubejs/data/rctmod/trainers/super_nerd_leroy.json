@@ -1,0 +1,119 @@
+{
+  "displayName": "Super Nerd Leroy",
+  "team": [
+    {
+      "species": "cobblemon:arctozolt",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "static",
+      "moveset": [
+        "pluck",
+        "iciclecrash",
+        "boltbeak",
+        "slam"
+      ],
+      "ivs": {
+        "hp": 11,
+        "attack": 17,
+        "defence": 5,
+        "special_attack": 5,
+        "special_defence": 19,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:choice_scarf",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:azumarill",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:naughty",
+      "ability": "hugepower",
+      "moveset": [
+        "superpower",
+        "doubleedge",
+        "aquaring",
+        "aquatail"
+      ],
+      "ivs": {
+        "hp": 15,
+        "attack": 4,
+        "defence": 25,
+        "special_attack": 24,
+        "special_defence": 11,
+        "speed": 22
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:gumshoos",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:lax",
+      "ability": "strongjaw",
+      "moveset": [
+        "hyperfang",
+        "scaryface",
+        "yawn",
+        "crunch"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 12,
+        "defence": 10,
+        "special_attack": 3,
+        "special_defence": 29,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:dugtrio",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "arenatrap",
+      "moveset": [
+        "fissure",
+        "earthquake",
+        "nightslash",
+        "slash"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 19,
+        "defence": 18,
+        "special_attack": 23,
+        "special_defence": 27,
+        "speed": 22
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

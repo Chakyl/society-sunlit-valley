@@ -251,17 +251,11 @@ global.netherRadar = (e, local, printFunction) => {
 global.handleFee = (server, player, reason) => {
   const UUID = player.getUuid();
   let amountToDeduct = 0;
-  let balance = 0;
-  let account = null;
+  let account = global.getPersonalOrCurioAccount(player.level, player);
+  let balance = account.getBalance() || 0;
   let maxFee = 0;
   let minimumFee = 512;
-
-  global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
-    if (UUID.toString() == playerUUID.toString()) {
-      balance = bankAccount.getBalance();
-      account = bankAccount;
-    }
-  });
+  
   if (reason === "death") {
     maxFee = 4096;
     if (player.stages.has("first_aid_guide")) maxFee = 2048;

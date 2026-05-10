@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "simpletms:type_ice_tr",
+          "expand": true,
+          "weight": 10
+        },
+        {
+          "type": "minecraft:tag",
+          "name": "simpletms:type_water_tr",
+          "expand": true,
+          "weight": 10
+        },
+        {
+          "type": "minecraft:tag",
+          "name": "simpletms:type_ground_tr",
+          "expand": true,
+          "weight": 10
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "simpletms:type_ice_tm",
+          "expand": true,
+          "weight": 10
+        },
+        {
+          "type": "minecraft:tag",
+          "name": "simpletms:type_water_tm",
+          "expand": true,
+          "weight": 10
+        },
+        {
+          "type": "minecraft:tag",
+          "name": "simpletms:type_ground_tm",
+          "expand": true,
+          "weight": 10
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.08
+        }
+      ]
+    }
+  ]
+}

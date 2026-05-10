@@ -7,10 +7,11 @@ emojiful/cache
 xaero/
 local/
 logs
+options.txt
 resourcepacks/*
 datapacks/*
 !/resourcepacks/sunlit_overrides.zip
-!config/defaultoptions/options.txt
+!configureddefaults/options.txt
 mods/
 build/
 saves/
@@ -31,6 +32,7 @@ fancymenu_data/
 etched-sounds/
 TrashSlotSaveState.json
 options.txt
+!config/fancymenu/options.txt
 usercache.json
 usernamecache.json
 .curseclient
@@ -55,3 +57,15 @@ OpenAL.dll
 /journeymap/*
 !/journeymap/config
 !/journeymap/config/5.10
+icon.png
+/controllable_natives
+config/CSC/Log/CSC_Record.log
+config/CSC/Log/CSC_Record.log
+config/controllable/gamecontrollerdb.txt
+/journeymap
+configureddefaults/journeymap/journeymap.log
+config/controlify.json
+config/controllable-client.toml
+config/controllable/bindings.properties
+config/controllable/key_adapters.properties
+config/controllable/radial_menu_items.json

@@ -11,11 +11,12 @@
       "context": "grounded",
       "bucket": "ultra-rare",
       "level": "50-70",
-      "weight": 3.0,
+      "weight": 1.0,
       "condition": {
-        "dimensions": ["minecraft:the_end"],
-        "biomes": ["#cobblemon:is_plains"]
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:frozen_maelstrom"]
       }
     }
+
   ]
 }

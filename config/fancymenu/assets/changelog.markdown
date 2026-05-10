@@ -1,49 +1,51 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.3-SSV4.0.6
+### v1.0.4-SSV4.0.7
 ^^^
 --- 
-
 ## 1.0.3-SSV4.0.6
-- Added ~95 ridable pokemon, check wiki for updated list (Thanks KingKarma)
-- Added sell value for Sunlit Essence
-- Added Noibat, Noivern, and Amoongos ranches
-- League rewards will now go into curio bank account card if it exists
-- Improved performance of Mon Boxes (lower mon count and activation range)
-- Updated ko_kr translation (Thanks Hexagreen)
-- Tweaked some sell values (mainly loot items)
-- Fixed shiny rate being halved
-- Fixed several small differences with base SSV
-- Fixed oceans being polluted with loot balls and raid statues
-- Fixed Mints and Revival Herbs only growing on base farmland
-- Fixed Moomoo Cheese not being craftable in Auto-Cheese Press
-- Fixed Moomoo Cheese not aging with Pink Matter upgrade
-- Fixed Ancient Poke Balls using zinc blocks instead of copper
-- Fixed Pokemon with 1 heart of affection not getting milked by normal type worker
-- Fixed a few berries not being required for the collection
-- Fixed tuber_amira_02bd being in the wrong tier
-- Fixed Apricorns showing as day based in Jade
-- Fixed group sun raids sometimes being level 1
-- Fixed Sun Raid Statues not considering cavern air air
-- Fixed Sandy Mulch being uncraftable
-- Fixed Galarian Corsola on Poke Radar
-- Fixed Rocky dunes not having any spawns
-- Fixed Public workstations showing owner message 
-- Fixed ranching regional variants matching just form instead of form + species
-- Fixed workstations with long progress times showing 0:00 seconds in Multiplayer- Fixed side conditions (Reflect, Light Screen, etc.) lingering in the battle HUD after wild and NPC battles (Thanks Newbula)
-- Fixed stat boosts persisting in the battle HUD between battles (Thanks Newbula)
-
-## 1.0.1-SSV4.0.6
-- Added Flamigo as a ranchable pokemon
-- Tweaked a bunch of cobblemon spawns
-- Fixed lass_anne_00041 trainer being invalid
-- Fixed Ketchup being served too early
-- Fixed Pumpkin fields and Snowy Scrubland having no tags and being Koffing infested
-- Fixed Silicobra, Sandaconda, Bramblin, and Brambleghast not having any spawn locations
-- Fixed Cobblemon EMI missing evo/drops on servers
-- Fixed Public Contract not working on anything except craft station
-- Fixed Gardening Station ranchers not putting milk into facing inventories. This includes milk from a Spidops.
-- Fixed workstation tooltips showing null owners, probably
+- Added sounds and particles to shiny Pokemon
+- Added notification when nearby shiny Pokemon spawns (configurable)
+- Added TM/TRs to some loot tables
+- Added tooltips to the left hand side of ranching station screen for clarity
+- Added Pack Icon
+- Added bag item limits to trainer podiums (configurable)
+- Added more trainer podium trainers
+- Rebalanced trainer podium's 100-135 tiers to be less of an unfair difficulty spike
+- Reduced rate of common ore pokemon
+- Removed Bloom Doom and Shattered Psyche z-move TR/TMs
+- Reworked Gardening Station radius/area so every type has consistent area and text is clearer
+- Reworked level averaging algorithm
+- Reduced Mystery Gift medallion cost 32 -> 16
+- Garchomp learned how to use its jets
+- Lake Spirits now have a will to live
+- Fixed ridding offsets for a bunch of popular pokemon 
+- Fixed certain BEs being piston-movable bricking worlds
+- Fixed Dimensional Entity 0 not appearing
+- Fixed Wormhole generator tooltip
+- Fixed Cobblemon shops not having descriptions
+- Fixed Ghost pepper craft station render
+- Fixed tier 0 Sun Raid Statues only being uncommon
+- Fixed Hydrapple being unobtainable
+- Fixed Sandy Shocks ranching definition and buffed rate
+- Fixed Sandy Shocks spawn
+- Fixed Roaring Moon and Raging Bolt having incorrect spawn location
+- Fixed certain Cobblemon artisan goods not having correct tags
+- Fixed TMs/TRs not having tags
+- Fixed some duplicated craft station recipe
+- Fixed instance of shiny raid pokemon not being shiny on death
+- Fixed Gardening Station not rendering swap priority button state
+- Fixed Gardening Station voiding instead of popping out items if the facing block is a blockentity
+- Fixed Worker cap not taking into account Worker Permits when actually inserting into stations
+- Fixed instances of normal/fairy types stopping work in Gardening Stations
+- Fixed Espathra and Articuno not being ridable
+- Fixed cases where roaming legendaries spawn on top of eachother, breaking their sun status
+- Fixed structures generating on Nether ceiling
+- Fixed PC and Healing Machine not being interactable in claims
+- Fixed bricking crash with Cobbreeding
+- Fixed Sparkstone and a few other ores not summoning pokemon
+- Fixed window title
+- Fixed Water and Normal type gems not being obtainable from Mystery Mine
 
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
@@ -110,3 +112,80 @@
 - Backported Evo stone blocks
 - Backported evo items (Metal Alloy, Syrupy Apple, Shell Helmet, etc)
 - Backported move animations (Thanks MrFreezy™!)
+
+## 1.0.2-SSV4.0.6
+- Added ~95 ridable pokemon, check wiki for updated list (Thanks KingKarma)
+- Added sell value for Sunlit Essence
+- Added Noibat, Noivern, and Amoongos ranches
+- League rewards will now go into curio bank account card if it exists
+- Improved performance of Mon Boxes (lower mon count and activation range)
+- Updated ko_kr translation (Thanks Hexagreen)
+- Tweaked some sell values (mainly loot items)
+- Fixed shiny rate being halved
+- Fixed several small differences with base SSV
+- Fixed oceans being polluted with loot balls and raid statues
+- Fixed Mints and Revival Herbs only growing on base farmland
+- Fixed Moomoo Cheese not being craftable in Auto-Cheese Press
+- Fixed Moomoo Cheese not aging with Pink Matter upgrade
+- Fixed Ancient Poke Balls using zinc blocks instead of copper
+- Fixed Pokemon with 1 heart of affection not getting milked by normal type worker
+- Fixed a few berries not being required for the collection
+- Fixed tuber_amira_02bd being in the wrong tier
+- Fixed Apricorns showing as day based in Jade
+- Fixed group sun raids sometimes being level 1
+- Fixed Sun Raid Statues not considering cavern air air
+- Fixed Sandy Mulch being uncraftable
+- Fixed Galarian Corsola on Poke Radar
+- Fixed Rocky dunes not having any spawns
+- Fixed Public workstations showing owner message 
+- Fixed ranching regional variants matching just form instead of form + species
+- Fixed workstations with long progress times showing 0:00 seconds in Multiplayer- Fixed side conditions (Reflect, Light Screen, etc.) lingering in the battle HUD after wild and NPC battles (Thanks Newbula)
+- Fixed stat boosts persisting in the battle HUD between battles (Thanks Newbula)
+
+## 1.0.1-SSV4.0.6
+- Added Flamigo as a ranchable pokemon
+- Tweaked a bunch of cobblemon spawns
+- Fixed lass_anne_00041 trainer being invalid
+- Fixed Ketchup being served too early
+- Fixed Pumpkin fields and Snowy Scrubland having no tags and being Koffing infested
+- Fixed Silicobra, Sandaconda, Bramblin, and Brambleghast not having any spawn locations
+- Fixed Cobblemon EMI missing evo/drops on servers
+- Fixed Public Contract not working on anything except craft station
+- Fixed Gardening Station ranchers not putting milk into facing inventories. This includes milk from a Spidops.
+- Fixed workstation tooltips showing null owners, probably
+
+## Society: Sunlit Valley 4.0.7
+- Reworked hunger mechanics: Slimes will lose half their hunger at 6am every morning so they can be fed once a day 
+- Added proper largo sucking and shooting with the Slime Vac
+- Added ability for Slime Vac to shoot items from inventory without having to put in offhand
+- Added rendering of incubating slime to Slime Incubator
+- Added Slime Incubator incubation time to Jade
+- Added item capability to Slime Incubators (can insert slime hearts in via hopper)
+- Added ability for redstone signal to pause all Splendid Slimes machines
+- Added sell values to some random items
+- Added _config.js option for chat color functionality
+- Added Controller support
+- Added Smooth Salt Block it as a carpenter trade
+- Added default settings for JourneyMap and Controllable. These will only take effect on new instances unless the following files are manually deleted by the user.
+- Added RS Grid from Crafting Grid
+- Added creative mode plushie debugging functionality to Etcetera Wrench (right click mob)
+- Added Pack Icon
+- Auto-Grabbers will now wait half a day for the farmer to pet animals before harvesting low-quality products
+- Updated es_es translation (Thanks tukita83)
+- Increased tick rate of Slime Feeder to 80
+- Hid Auto-Petter from JEI/Quests to make it clear its a special bonus item
+- Improved performance of artisan machines 
+- Jade will now display Splendid Slime wild status next to happiness instead of replacing it
+- Fixed Raw Lead and Silver blocks not having smelting recipe
+- Fixed Artisan Hoppers inserting double into Wine Kegs 
+- Fixed Splendid Slime's Owner being null on servers
+- Fixed Slime feeders taking double items
+- Fixed config synching of slime owner offline check and enable tarrs being switched
+- Fixed slimes suffocating when shot out of vac in corner blocks
+- Fixed Crafts room quest having broken dependency
+- Fixed fees not taking into account shared accounts
+- Fixed some twigs blocks not having recipes
+- Fixed Smooth Salt Block loot table
+- Fixed Fluid Grid being unobtainable
+- Fixed Mashed Potatoes and Pasta with Broccoli recipes having wrong milk tag
+- Fixed /time set causing plushies to not get harvested

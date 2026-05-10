@@ -1,0 +1,118 @@
+{
+  "displayName": "Ruin Mamoac Halotosis",
+  "team": [
+    {
+      "species": "cobblemon:glimmora",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:gentle",
+      "ability": "toxicdebris",
+      "moveset": [
+        "mortalspin",
+        "toxicspikes",
+        "spikyshield",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 6,
+        "defence": 3,
+        "special_attack": 9,
+        "special_defence": 4,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:tyrantrum",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "strongjaw",
+      "moveset": [
+        "crunch",
+        "dragonclaw",
+        "headsmash",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 4,
+        "defence": 18,
+        "special_attack": 26,
+        "special_defence": 25,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:camerupt",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:naive",
+      "ability": "solidrock",
+      "moveset": [
+        "earthquake",
+        "eruption",
+        "takedown",
+        "fissure"
+      ],
+      "ivs": {
+        "hp": 12,
+        "attack": 18,
+        "defence": 3,
+        "special_attack": 26,
+        "speed": 15
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:toucannon",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:lonely",
+      "ability": "skilllink",
+      "moveset": [
+        "rockblast",
+        "beakblast",
+        "bulletseed",
+        "furyattack"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 11,
+        "defence": 19,
+        "special_attack": 24,
+        "special_defence": 28,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

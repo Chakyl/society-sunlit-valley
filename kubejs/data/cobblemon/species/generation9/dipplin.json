@@ -1,0 +1,144 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 1011,
+    "name": "Dipplin",
+    "primaryType": "grass",
+    "secondaryType": "dragon",
+    "maleRatio": 0.5,
+    "height": 4,
+    "weight": 44,
+    "pokedex": [
+        "cobblemon.species.dipplin.desc"
+    ],
+    "labels": [
+        "gen9"
+    ],
+    "aspects": [],
+    "abilities": [
+        "supersweetsyrup",
+        "gluttony",
+        "h:stickyhold"
+    ],
+    "eggGroups": [
+        "grass",
+        "dragon"
+    ],
+    "baseStats": {
+        "hp": 80,
+        "attack": 80,
+        "defence": 110,
+        "special_attack": 95,
+        "special_defence": 80,
+        "speed": 40
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 2,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 170,
+    "experienceGroup": "erratic",
+    "catchRate": 45,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "moves": [
+        "1:doublehit",
+        "1:withdraw",
+        "1:sweetscent",
+        "1:recycle",
+        "1:astonish",
+        "1:infestation",
+        "4:dragontail",
+        "8:growth",
+        "12:dragonbreath",
+        "16:protect",
+        "20:bulletseed",
+        "28:syrupbomb",
+        "32:dragonpulse",
+        "36:recover",
+        "40:energyball",
+        "44:substitute",
+        "egg:defensecurl",
+        "egg:recycle",
+        "egg:rollout",
+        "egg:suckerpunch",
+        "tm:bodyslam",
+        "tm:bugbite",
+        "tm:bulletseed",
+        "tm:dracometeor",
+        "tm:dragoncheer",
+        "tm:dragonpulse",
+        "tm:dragontail",
+        "tm:endure",
+        "tm:energyball",
+        "tm:facade",
+        "tm:gigadrain",
+        "tm:gigaimpact",
+        "tm:grassknot",
+        "tm:grassyglide",
+        "tm:grassyterrain",
+        "tm:gyroball",
+        "tm:hyperbeam",
+        "tm:infestation",
+        "tm:leafstorm",
+        "tm:outrage",
+        "tm:pollenpuff",
+        "tm:pounce",
+        "tm:protect",
+        "tm:recycle",
+        "tm:reflect",
+        "tm:rest",
+        "tm:rollout",
+        "tm:seedbomb",
+        "tm:sleeptalk",
+        "tm:solarbeam",
+        "tm:substitute",
+        "tm:suckerpunch",
+        "tm:sunnyday",
+        "tm:takedown",
+        "tm:terablast",
+        "tutor:bugbite",
+        "tutor:dragonpulse",
+        "tutor:energyball",
+        "tutor:gigadrain",
+        "tutor:gigaimpact",
+        "tutor:hyperbeam",
+        "tutor:outrage",
+        "tutor:recycle",
+        "tutor:rest",
+        "tutor:rollout",
+        "tutor:seedbomb",
+        "tutor:sleeptalk",
+        "tutor:suckerpunch"
+    ],
+    "preEvolution": "applin",
+    "evolutions": [
+        {
+            "id": "dipplin_hydrapple",
+            "variant": "item_interact",
+            "result": "hydrapple",
+            "consumeHeldItem": false,
+            "learnableMoves": [],
+            "requirements": [],
+            "requiredContext": "minecraft:dragon_egg"
+        }
+    ],
+    "behaviour": {
+        "resting": {
+            "willSleepOnBed": true,
+            "drowsyChance": 0.0333,
+            "rouseChance": 0.0042
+        },
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            }
+        },
+        "combat": {
+            "willDefendOwner": true
+        }
+    }
+}

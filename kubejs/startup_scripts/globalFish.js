@@ -415,7 +415,7 @@ global.validatePond = (block, level, lavaFish) => {
   return true;
 };
 
-const fishPondTickRate = 100;
+const fishPondTickRate = 200;
 
 const fishPondProgTime = 40;
 

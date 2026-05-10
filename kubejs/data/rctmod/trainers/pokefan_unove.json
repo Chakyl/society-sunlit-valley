@@ -1,0 +1,119 @@
+{
+  "displayName": "Pokéfan Unove",
+  "team": [
+    {
+      "species": "cobblemon:simisear",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hardy",
+      "ability": "gluttony",
+      "moveset": [
+        "flameburst",
+        "furyswipes",
+        "bite",
+        "yawn"
+      ],
+      "ivs": {
+        "hp": 26,
+        "attack": 11,
+        "defence": 14,
+        "special_attack": 15,
+        "special_defence": 30,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:charcoal_stick",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:simipour",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "gluttony",
+      "moveset": [
+        "furyswipes",
+        "playnice",
+        "bite",
+        "scald"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 7,
+        "defence": 29,
+        "special_attack": 28,
+        "special_defence": 24,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:mystic_water",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:simisage",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:sassy",
+      "ability": "gluttony",
+      "moveset": [
+        "naturalgift",
+        "seedbomb",
+        "bite",
+        "leechseed"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 5,
+        "defence": 30,
+        "special_attack": 22,
+        "special_defence": 24,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:miracle_seed",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ambipom",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "technician",
+      "moveset": [
+        "dualchop",
+        "screech",
+        "agility",
+        "doublehit"
+      ],
+      "ivs": {
+        "hp": 30,
+        "attack": 13,
+        "defence": 24,
+        "special_attack": 6,
+        "special_defence": 1,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}
