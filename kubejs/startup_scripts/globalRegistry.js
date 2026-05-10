@@ -1,6 +1,11 @@
 // priority: -20
 const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
+const NUMISMATICS_CURIO_UTILS = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
+
 global.GLOBAL_BANK = NUMISMATICS.BANK;
+global.getPersonalOrCurioAccount = NUMISMATICS_CURIO_UTILS.getPersonalOrCurioAccount;
+global.depositIntoPersonalOrCurio = NUMISMATICS_CURIO_UTILS.depositIntoPersonalOrCurio;
+global.deductFromPersonalOrCurio = NUMISMATICS_CURIO_UTILS.deductFromPersonalOrCurio;
 
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {
@@ -548,6 +553,7 @@ global.animalProducts = [
   { item: "beachparty:raw_mussel_meat", value: 16 },
   { item: "untitledduckmod:raw_goose", value: 16 },
   { item: "autumnity:turkey", value: 32 },
+  { item: "autumnity:turkey_piece", value: 6 },
   { item: "atmospheric:carmine_husk", value: 10 },
   { item: "crabbersdelight:raw_squid_tentacles", value: 16 },
   { item: "crabbersdelight:squid_barrel", value: 144 },
@@ -760,7 +766,7 @@ global.artisanGoods = [
   { item: "society:mystic_syrup", value: 1000 },
   { item: "society:pine_tar", value: 128 },
   { item: "society:sap", value: 4 },
-  { item: "society:rubber", value: 30 },
+  { item: "society:rubber", value: 6 },
   { item: "society:aged_cheese_block", value: 288 },
   { item: "society:aged_goat_cheese_block", value: 1728 },
   { item: "society:aged_warped_cheese_block", value: 1728 },
@@ -1305,6 +1311,7 @@ const furnaceRecipes = [
   { item: "untitledduckmod:cooked_duck", value: 16 },
   { item: "untitledduckmod:cooked_goose", value: 16 },
   { item: "autumnity:cooked_turkey", value: 32 },
+  { item: "autumnity:cooked_turkey_piece", value: 6 },
   { item: "minecraft:cooked_cod", value: 16 },
   { item: "unusualfishmod:cooked_aero_mono_stick", value: 192 },
   { item: "aquaculture:fish_fillet_cooked", value: 8 },
@@ -1700,6 +1707,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "minecraft:dragon_breath", value: 4},
   { item: "society:sunlit_pearl", value: 1920 },
   { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },

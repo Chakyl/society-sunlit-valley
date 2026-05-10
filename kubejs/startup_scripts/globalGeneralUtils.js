@@ -13,3 +13,22 @@ global.getDay = (level) =>  Number((Math.floor(Number(level.dayTime() / 24000)) 
  * @returns If the amount is greater than or equal to the amount of days have passed
  */
 global.compareDay = (day, checkedDay, amount) => Number(day) < Number(checkedDay) || Number(day) - Number(checkedDay) >= amount;
+
+global.getFacingPlusOffset = (facing, pos, offset) => {
+  switch (facing) {
+    case "north":
+      return pos.offset(0, 0, -offset);
+    case "south":
+      return pos.offset(0, 0, offset);
+    case "west":
+      return pos.offset(-offset, 0, 0);
+    case "east":
+      return pos.offset(offset, 0, 0);
+  }
+};
+
+global.getHasCurio = (player, item) => {
+  const curios = player.nbt.ForgeCaps["curios:inventory"]
+  if (!curios) return false;
+  return curios.toString().includes(item)
+} 
