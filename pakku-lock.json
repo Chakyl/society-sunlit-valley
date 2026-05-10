@@ -3662,7 +3662,7 @@
             ]
         },
         {
-            "pakku_id": "zuFCE6CjWHXRWKzT",
+            "pakku_id": "0aTgi6HhPxpghJl6",
             "pakku_links": [
                 "Vagzc4CpbBP7fGdz",
                 "lsCIBiPpcZaZBAVn"
@@ -3684,7 +3684,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CrabbersDelight-1.20.1-1.1.7d.jar",
+                    "file_name": "CrabbersDelight-1.20.1-1.1.7e.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3693,40 +3693,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5961/411/CrabbersDelight-1.20.1-1.1.7d.jar",
-                    "id": "5961411",
+                    "url": "https://edge.forgecdn.net/files/6351/568/CrabbersDelight-1.20.1-1.1.7e.jar",
+                    "id": "6351568",
                     "parent_id": "892827",
                     "hashes": {
-                        "sha1": "d8a40f10bd326ff6ef721cb24d2ee8235f186c99",
-                        "md5": "6cb37eae01fc6a6958c58135cc5bdfaa"
+                        "sha1": "d18a808069476137e78f5a406cc8b02f969ed899",
+                        "md5": "1493ffa7ab0799a31c3cfb02e0d3c6ba"
                     },
-                    "required_dependencies": [
-                        "388172",
-                        "398521"
-                    ],
-                    "size": 376502,
-                    "date_published": "2024-12-04T05:38:15.863Z"
+                    "required_dependencies": [],
+                    "size": 375651,
+                    "date_published": "2025-03-26T14:33:48.310Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "crabbersdelight-1.20.1-1.2.3.jar",
+                    "file_name": "CrabbersDelight-1.20.1-1.1.7e.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/gBGdVBJy/versions/9NT9IkSs/crabbersdelight-1.20.1-1.2.3.jar",
-                    "id": "9NT9IkSs",
+                    "url": "https://cdn.modrinth.com/data/gBGdVBJy/versions/OJEzJil1/CrabbersDelight-1.20.1-1.1.7e.jar",
+                    "id": "OJEzJil1",
                     "parent_id": "gBGdVBJy",
                     "hashes": {
-                        "sha512": "8a17311cea966ac40020efa32b682aa9e15a98acd4082b2d9243f09c39dec4d892c019f9810ee2382efba5bae42106d3aaf821471804ec102db52ee78aecbdcd",
-                        "sha1": "30c4aeed44a5302ebea5c3ce98fdd73dfbded868"
+                        "sha512": "ccd810b6d26105d979e533174a23a024f719b67ce48da8737df7c401a6b062deb1294d372823bdd0e785c6ad80bca479d741fd2cba5aa94e6cc1db95be7c0337",
+                        "sha1": "d18a808069476137e78f5a406cc8b02f969ed899"
                     },
-                    "required_dependencies": [],
-                    "size": 619166,
-                    "date_published": "2026-04-28T17:13:15.123168Z"
+                    "required_dependencies": [
+                        "R2OftAxM",
+                        "8BmcQJ2H"
+                    ],
+                    "size": 375651,
+                    "date_published": "2025-03-26T14:35:58.273352Z"
                 }
             ]
         },
@@ -5185,25 +5186,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cupboard-1.20.1-2.7.jar",
+                    "file_name": "cupboard-1.20.1-3.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5470/32/cupboard-1.20.1-2.7.jar",
-                    "id": "5470032",
+                    "url": "https://edge.forgecdn.net/files/7905/744/cupboard-1.20.1-3.7.jar",
+                    "id": "7905744",
                     "parent_id": "326652",
                     "hashes": {
-                        "sha1": "204bc8aa83e8a685f64311b72d55505ab2eca867",
-                        "md5": "3620912474f47bf58d1fe5bfe133763a"
+                        "sha1": "18be26e340ca77a05ee925fdb51400138b8c6539",
+                        "md5": "75617a524d200ff9049bc51c725f136b"
                     },
                     "required_dependencies": [],
-                    "size": 25983,
-                    "date_published": "2024-06-24T20:50:03.140Z"
+                    "size": 31643,
+                    "date_published": "2026-04-10T16:49:55.103Z"
                 }
             ]
         },
@@ -6323,20 +6324,16 @@
             ]
         },
         {
-            "pakku_id": "KKEMdhwpABcZC9RA",
+            "pakku_id": "5nLA0MLRmF0gzMJQ",
             "type": "MOD",
-            "side": "BOTH",
             "slug": {
-                "curseforge": "embers-text-api",
-                "modrinth": "embers-text-api"
+                "curseforge": "embers-text-api"
             },
             "name": {
-                "curseforge": "Ember's Text API",
-                "modrinth": "Embers Text API"
+                "curseforge": "Ember's Text API"
             },
             "id": {
-                "curseforge": "1345948",
-                "modrinth": "OVSg4uGN"
+                "curseforge": "1345948"
             },
             "files": [
                 {
@@ -6361,27 +6358,6 @@
                     ],
                     "size": 124384,
                     "date_published": "2026-01-22T00:41:08.790Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "emberstextapi-forge-1.20.1-2.9.4-all.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/OVSg4uGN/versions/NXTLenAo/emberstextapi-forge-1.20.1-2.9.4-all.jar",
-                    "id": "NXTLenAo",
-                    "parent_id": "OVSg4uGN",
-                    "hashes": {
-                        "sha512": "d83e2ff61b3912319ad6f326b0370b57670121fc6a2047e0bcb1e47308154d24eca8249db9bb78b0d40e86c5a12ec55621d216bcf3cd0f1ccf06f79449f7de76",
-                        "sha1": "40335a2ddc42425b7cc2e430586a05b15c0ac676"
-                    },
-                    "required_dependencies": [],
-                    "size": 1490152,
-                    "date_published": "2026-03-29T05:00:51.062271Z"
                 }
             ]
         },
@@ -12044,7 +12020,7 @@
             ]
         },
         {
-            "pakku_id": "sIGbSwVw24lOtwsX",
+            "pakku_id": "xRSTvVLCZVFb6Vsp",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12080,32 +12056,6 @@
                     "required_dependencies": [],
                     "size": 732356,
                     "date_published": "2024-02-24T23:54:05.223Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "moreminecarts-1.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Q8RqO4OC/versions/YE5n2ll8/moreminecarts-1.1.jar",
-                    "id": "YE5n2ll8",
-                    "parent_id": "Q8RqO4OC",
-                    "hashes": {
-                        "sha512": "ade6d978b7ef177359cf85516a750720cb75a31442303c8e74902b173d029cef93ec70113a79d9d13898978dc2603104444a25a7b016da7687caa6728d10bcba",
-                        "sha1": "c893c8ef41510f1555309bde13a3ac15e67582e9"
-                    },
-                    "required_dependencies": [],
-                    "size": 156290,
-                    "date_published": "2025-06-27T13:51:18.530058Z"
                 }
             ]
         },
@@ -14423,7 +14373,7 @@
             ]
         },
         {
-            "pakku_id": "JyAZGRVeRbBMLV5M",
+            "pakku_id": "ynFNrP1Pu6lmrJer",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -14464,7 +14414,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "quality_food-1.20.1-2.3.1-all.jar",
+                    "file_name": "quality_food-1.20.1-2.3.0-all.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -14474,16 +14424,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ahdn1OE0/versions/b3oBQv5l/quality_food-1.20.1-2.3.1-all.jar",
-                    "id": "b3oBQv5l",
+                    "url": "https://cdn.modrinth.com/data/Ahdn1OE0/versions/VPju1Kx6/quality_food-1.20.1-2.3.0-all.jar",
+                    "id": "VPju1Kx6",
                     "parent_id": "Ahdn1OE0",
                     "hashes": {
-                        "sha512": "40fe41e03a0711a0dfd6f521b16939e826b7f7fb557d87acc59ee7fbdd398b70d2991039d43633b127b3d813eb0268c0600cbfa74255fb5d2e1dad66883e055f",
-                        "sha1": "9f9d65e61a0b2b8c8cffc6767adef50e8c546fa8"
+                        "sha512": "4e7c30fb1117d6846a8d70379d5c3a3e14b0c473a2c20703fb897f27ac452bcdf745cc5008bf0f944fde62c0035f97b11434b022413a967061e47a54f0f6f66b",
+                        "sha1": "41c93726384dc66c6ecc32706b907486dba21676"
                     },
                     "required_dependencies": [],
-                    "size": 412391,
-                    "date_published": "2026-04-28T08:41:57.593326Z"
+                    "size": 411358,
+                    "date_published": "2026-02-13T10:36:23.443567Z"
                 }
             ]
         },
@@ -17948,6 +17898,48 @@
             ]
         },
         {
+            "pakku_id": "XYgDZXFNGx1ft9MK",
+            "pakku_links": [
+                "TIK8n7YpVuXaTcte"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "structure-essentials-forge-fabric"
+            },
+            "name": {
+                "curseforge": "Structure Essentials"
+            },
+            "id": {
+                "curseforge": "832882"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "structureessentials-1.20.1-5.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7962/587/structureessentials-1.20.1-5.0.jar",
+                    "id": "7962587",
+                    "parent_id": "832882",
+                    "hashes": {
+                        "sha1": "7eec1e4d46a731c6da0b0135915529e21621a81d",
+                        "md5": "fb5aa74d86c0a642ef71f5456de966ea"
+                    },
+                    "required_dependencies": [
+                        "326652"
+                    ],
+                    "size": 62974,
+                    "date_published": "2026-04-21T19:50:17.277Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NFzdUrPQj9YotCBq",
             "pakku_links": [
                 "6TcSHAVRfVfEjVZO"
@@ -20230,24 +20222,25 @@
             ]
         },
         {
-            "pakku_id": "xcuQyr44g5bTnJyA",
+            "pakku_id": "agnerYPrPMK0FRpR",
             "pakku_links": [
-                "3fKD8EyPNyG0T6ZP",
-                "PiFNYALee5jOQq8M",
                 "tgI22N27kEh97G23",
-                "NSapqsKXJIsoaV8H",
-                "sngLFrf0BZvRPCVT",
-                "G7B3RUqM6RR6zaLO"
+                "G7B3RUqM6RR6zaLO",
+                "PiFNYALee5jOQq8M"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "lets-do-bakery-farm-charm-compat"
+                "curseforge": "lets-do-bakery-farm-charm-compat",
+                "modrinth": "lets-do-bakery-farmcharm-compat"
             },
             "name": {
-                "curseforge": "[Let's Do] Bakery - Farm&Charm Compat"
+                "curseforge": "[Let's Do] Bakery - Farm&Charm Compat",
+                "modrinth": "[Let's Do] Bakery - Farm&Charm Compat"
             },
             "id": {
-                "curseforge": "1038130"
+                "curseforge": "1038130",
+                "modrinth": "oNB5jhlA"
             },
             "files": [
                 {
@@ -20275,6 +20268,32 @@
                     ],
                     "size": 1084974,
                     "date_published": "2024-10-19T12:28:09.967Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "letsdo-bakery-forge-2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/oNB5jhlA/versions/JWFLdaGc/letsdo-bakery-forge-2.0.3.jar",
+                    "id": "JWFLdaGc",
+                    "parent_id": "oNB5jhlA",
+                    "hashes": {
+                        "sha512": "161755954aebfef7318a6f5315b2ddeab0967a3c05e2bf8be35993b0d9692a78e19a0c4a1d40f5ace67dbb03cae8edbf4a258a03e5cf99fa11133f4eb8cb9721",
+                        "sha1": "3328df3a266d10c3c8d4fb14751f9f450c9fd77c"
+                    },
+                    "required_dependencies": [
+                        "HJetCzWo",
+                        "4XJZeZbM",
+                        "lhGA9TYQ"
+                    ],
+                    "size": 1084974,
+                    "date_published": "2024-10-19T12:31:43.585835Z"
                 }
             ]
         },
@@ -20352,54 +20371,30 @@
             ]
         },
         {
-            "pakku_id": "Zi9aqbPdBVmrPQuR",
+            "pakku_id": "YVuYx4outP3h95bS",
             "pakku_links": [
+                "PiFNYALee5jOQq8M",
                 "G7B3RUqM6RR6zaLO",
-                "PiFNYALee5jOQq8M"
+                "tgI22N27kEh97G23"
             ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
-                "modrinth": "lets-do-brewery-farmcharm-compat",
-                "curseforge": "lets-do-brewery-farm-charm-compat"
+                "curseforge": "lets-do-brewery-farm-charm-compat",
+                "modrinth": "lets-do-brewery-farmcharm-compat"
             },
             "name": {
-                "modrinth": "[Let's Do] Brewery - Farm&Charm Compat",
-                "curseforge": "[Let's Do] Brewery - Farm&Charm Compat"
+                "curseforge": "[Let's Do] Brewery - Farm&Charm Compat",
+                "modrinth": "[Let's Do] Brewery - Farm&Charm Compat"
             },
             "id": {
-                "modrinth": "b7NV2plI",
-                "curseforge": "1038106"
+                "curseforge": "1038106",
+                "modrinth": "b7NV2plI"
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "letsdo-brewery-forge-2.0.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/b7NV2plI/versions/CC0M409e/letsdo-brewery-forge-2.0.6.jar",
-                    "id": "CC0M409e",
-                    "parent_id": "b7NV2plI",
-                    "hashes": {
-                        "sha512": "d949dc9c8a1b777e1f2acc4306468b1ff430746841368909aadb8211f65742ce3b4c01edf2a3d68fb2787a2459fdc1417390e095a55cfceddffc219288b04a1d",
-                        "sha1": "ce364781ec9accfdd5bb04f8280ffb542243b1ae"
-                    },
-                    "required_dependencies": [
-                        "HJetCzWo",
-                        "lhGA9TYQ"
-                    ],
-                    "size": 2048413,
-                    "date_published": "2025-08-04T18:12:18.211179Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "letsdo-brewery-forge-2.0.6.jar",
+                    "file_name": "letsdo-brewery-forge-2.0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -20408,71 +20403,72 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6847/826/letsdo-brewery-forge-2.0.6.jar",
-                    "id": "6847826",
+                    "url": "https://edge.forgecdn.net/files/5652/315/letsdo-brewery-forge-2.0.3.jar",
+                    "id": "5652315",
                     "parent_id": "1038106",
                     "hashes": {
-                        "sha1": "ce364781ec9accfdd5bb04f8280ffb542243b1ae",
-                        "md5": "4acf34c0821b41d5a640b94e69672798"
+                        "sha1": "83e0dfdd18d3abd7f8bccebbcc1effd567acb2a8",
+                        "md5": "00d05e12929f3190d7f164023ff4833b"
                     },
                     "required_dependencies": [
-                        "1038103",
-                        "419699"
+                        "419699",
+                        "1038103"
                     ],
-                    "size": 2048413,
-                    "date_published": "2025-08-04T18:10:44.190Z"
+                    "size": 1409972,
+                    "date_published": "2024-08-22T09:16:53.913Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "letsdo-brewery-forge-2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/b7NV2plI/versions/dOwctx44/letsdo-brewery-forge-2.0.3.jar",
+                    "id": "dOwctx44",
+                    "parent_id": "b7NV2plI",
+                    "hashes": {
+                        "sha512": "048ed45d1b96c34561455d2152ad572ae3c6ec6b6a8611a5d2e260f6d575752a5aa677c0dd44335f375124c4e310da7f5ef7976f72b9b7d3c489482b6b1f1f24",
+                        "sha1": "83e0dfdd18d3abd7f8bccebbcc1effd567acb2a8"
+                    },
+                    "required_dependencies": [
+                        "HJetCzWo",
+                        "lhGA9TYQ",
+                        "4XJZeZbM"
+                    ],
+                    "size": 1409972,
+                    "date_published": "2024-09-03T08:54:01.504355Z"
                 }
             ]
         },
         {
-            "pakku_id": "aqNFgJWoERMVlERZ",
+            "pakku_id": "YQxsLi9N5fYrtwP9",
             "pakku_links": [
+                "tgI22N27kEh97G23",
                 "G7B3RUqM6RR6zaLO",
                 "PiFNYALee5jOQq8M"
             ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
-                "modrinth": "lets-do-candlelight-farmcharm-compat",
-                "curseforge": "lets-do-candlelight-farm-charm-compat"
+                "curseforge": "lets-do-candlelight-farm-charm-compat",
+                "modrinth": "lets-do-candlelight-farmcharm-compat"
             },
             "name": {
-                "modrinth": "[Let's Do] Candlelight - Farm&Charm compat",
-                "curseforge": "[Let's Do] Candlelight - Farm&Charm Compat"
+                "curseforge": "[Let's Do] Candlelight - Farm&Charm Compat",
+                "modrinth": "[Let's Do] Candlelight - Farm&Charm compat"
             },
             "id": {
-                "modrinth": "qwbArkQk",
-                "curseforge": "1038117"
+                "curseforge": "1038117",
+                "modrinth": "qwbArkQk"
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "letsdo-candlelight-forge-2.0.5.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/qwbArkQk/versions/MAbMsxdU/letsdo-candlelight-forge-2.0.5.jar",
-                    "id": "MAbMsxdU",
-                    "parent_id": "qwbArkQk",
-                    "hashes": {
-                        "sha512": "c695cf17abf05362e7703b36a6579363abe00027be38f0ed310b65d17fef031a17edd9197fb999f1ddf918633bd05531b890c40ccd728317ea78a3604e32b967",
-                        "sha1": "67b5560125db588cb1d87c042cc9dce9833861d7"
-                    },
-                    "required_dependencies": [
-                        "HJetCzWo",
-                        "lhGA9TYQ"
-                    ],
-                    "size": 2507744,
-                    "date_published": "2025-08-05T10:54:29.594923Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "letsdo-candlelight-forge-2.0.5.jar",
+                    "file_name": "letsdo-candlelight-forge-2.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -20481,16 +20477,45 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6850/362/letsdo-candlelight-forge-2.0.5.jar",
-                    "id": "6850362",
+                    "url": "https://edge.forgecdn.net/files/5652/318/letsdo-candlelight-forge-2.0.2.jar",
+                    "id": "5652318",
                     "parent_id": "1038117",
                     "hashes": {
-                        "sha1": "67b5560125db588cb1d87c042cc9dce9833861d7",
-                        "md5": "7f929519324317860239d5550044e23d"
+                        "sha1": "664790682a40b29ee5f3ab8ae4913aaa12028291",
+                        "md5": "e84d46d1705e8b50e73318fa257b5860"
                     },
-                    "required_dependencies": [],
-                    "size": 2507744,
-                    "date_published": "2025-08-05T10:44:16.937Z"
+                    "required_dependencies": [
+                        "864599",
+                        "1038103",
+                        "419699"
+                    ],
+                    "size": 2359843,
+                    "date_published": "2024-08-22T09:18:34.687Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "letsdo-candlelight-forge-2.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/qwbArkQk/versions/yqPDKhMA/letsdo-candlelight-forge-2.0.2.jar",
+                    "id": "yqPDKhMA",
+                    "parent_id": "qwbArkQk",
+                    "hashes": {
+                        "sha512": "e3f96286bc20e647838d68034f3e934e5286fdc07be92eb14765a3f6f573db3ad6c33ea4fbcf4bc3337a9056506b1979792a66536ec02d3e6ec49c8cea862bea",
+                        "sha1": "664790682a40b29ee5f3ab8ae4913aaa12028291"
+                    },
+                    "required_dependencies": [
+                        "4XJZeZbM",
+                        "lhGA9TYQ",
+                        "HJetCzWo"
+                    ],
+                    "size": 2359843,
+                    "date_published": "2024-09-03T08:55:24.309370Z"
                 }
             ]
         },
