@@ -4,7 +4,7 @@ console.info("[SOCIETY-S-COBBLEMON] cobblemonTradierPodiumItemLimit.js loaded");
 ItemEvents.entityInteracted((e) => {
     const { item, player } = e;
     if (item.hasTag("sunlit_cobblemon:bag_item") && player.persistentData.bagItemsUsed >= global.trainerPodiumBagLimit) {
-        player.tell(Text.translatable("tooltip.sunlit_cobblemon.bag_item_limit").red())
+        player.tell(Text.translatable("tooltip.sunlit_cobblemon.bag_item_limit", Number(global.trainerPodiumBagLimit)).red())
         e.cancel();
     }
 });
@@ -13,7 +13,7 @@ ItemEvents.entityInteracted((e) => {
 ItemEvents.rightClicked((e) => {
     const { item, player } = e;
     if (item.hasTag("sunlit_cobblemon:bag_item") && player.persistentData.bagItemsUsed >= global.trainerPodiumBagLimit) {
-        player.tell(Text.translatable("tooltip.sunlit_cobblemon.bag_item_limit").red(), global.trainerPodiumBagLimit)
+        player.tell(Text.translatable("tooltip.sunlit_cobblemon.bag_item_limit", Number(global.trainerPodiumBagLimit)).red())
         e.cancel();
     }
 });

@@ -1,0 +1,120 @@
+{
+  "displayName": "Ace Trainer Zephira",
+  "team": [
+    {
+      "species": "cobblemon:raticate",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:hardy",
+      "ability": "runaway",
+      "moveset": [
+        "crunch",
+        "hyperfang",
+        "swordsdance",
+        "suckerpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 12,
+        "defence": 12,
+        "special_attack": 7,
+        "special_defence": 17,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:maushold",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "friendguard",
+      "moveset": [
+        "populationbomb",
+        "encore",
+        "playrough",
+        "hypervoice"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 5,
+        "defence": 20,
+        "special_attack": 25,
+        "special_defence": 18,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "genderless",
+        "maushold-family-four"
+      ]
+    },
+    {
+      "species": "cobblemon:ribombee",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "honeygather",
+      "moveset": [
+        "quiverdance",
+        "bugbuzz",
+        "stunspore",
+        "drainingkiss"
+      ],
+      "ivs": {
+        "hp": 18,
+        "attack": 7,
+        "defence": 21,
+        "special_attack": 18,
+        "special_defence": 24,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:gengar",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:lonely",
+      "ability": "cursedbody",
+      "moveset": [
+        "dreameater",
+        "hypnosis",
+        "shadowball",
+        "darkpulse"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 17,
+        "defence": 8,
+        "special_attack": 17,
+        "special_defence": 24,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

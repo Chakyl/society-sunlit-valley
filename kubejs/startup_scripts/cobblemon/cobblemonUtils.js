@@ -85,11 +85,21 @@ global.getImportantAspect = (aspects) => {
   return null;
 }
 
+const getCorrectRaidPokemon = (spawns) => {
+  let chosen;
+  spawns.forEach((spawn) => {
+    if (chosen == undefined && !spawn.persistentData.raidMon) {
+      chosen = spawn;
+    }
+  })
+  return chosen;
+}
+
 global.summonRaidPokemon = (server, level, block, type, variant, raidLevel, spawnedLevel, shiny, hiddenAbility, raidTier, moveUp) => {
   server.runCommandSilent(`execute in ${level.dimension} run pokespawnat ${block.x} ${block.y + 1} ${block.z} ${type} ${shiny ? "shiny " : ""} ${hiddenAbility ? "hiddenability " : ""} ${variant && variant.equals("") ? "" : variant} level=${raidLevel} hp_ev=84 defence_ev=84 special_defence_ev=84 speed_ev=252 uncatchable=yes hp_iv=32 defence_iv=31 special_defence_iv=31 attack_iv=31 special_attack_iv=31 speed_iv=31`);
   let spawnedPokemon = level.getEntitiesWithin(AABB.ofBlock(level.getBlock(block.getPos())).inflate(0.2)).filter((e) => e.type.equals("cobblemon:pokemon"));
   if (spawnedPokemon && spawnedPokemon.length > 0) {
-    spawnedPokemon = spawnedPokemon[0];
+    spawnedPokemon = getCorrectRaidPokemon(spawnedPokemon);
     if (moveUp) spawnedPokemon.setDeltaMovement(new Vec3d(0, 1.1, 0));
     spawnedPokemon.persistentData.raidMon = true;
     if (type === "lunala") spawnedPokemon.persistentData.moonMon = true;

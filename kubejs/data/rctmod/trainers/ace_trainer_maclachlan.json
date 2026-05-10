@@ -1,0 +1,119 @@
+{
+  "displayName": "Ace Trainer MacLachlan",
+  "team": [
+    {
+      "species": "cobblemon:flygon",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "levitate",
+      "moveset": [
+        "fissure",
+        "dragonrush",
+        "superpower",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 7,
+        "defence": 15,
+        "special_attack": 14,
+        "special_defence": 3,
+        "speed": 5
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:comfey",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "flowerveil",
+      "moveset": [
+        "grassyterrain",
+        "petaldance",
+        "floralhealing",
+        "playrough"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 15,
+        "defence": 11,
+        "special_attack": 25,
+        "special_defence": 2,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:heatmor",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:quirky",
+      "ability": "flashfire",
+      "moveset": [
+        "firelash",
+        "bugbite",
+        "firespin",
+        "honeclaws"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 30,
+        "defence": 14,
+        "special_attack": 6,
+        "special_defence": 1,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:grimmsnarl",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "frisk",
+      "moveset": [
+        "falsesurrender",
+        "poweruppunch",
+        "playrough",
+        "suckerpunch"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 11,
+        "defence": 25,
+        "special_attack": 6,
+        "special_defence": 11,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

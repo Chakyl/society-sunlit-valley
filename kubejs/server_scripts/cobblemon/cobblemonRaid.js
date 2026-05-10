@@ -276,7 +276,6 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
         let tierStats = getTierStats(nbt.data.tier)
         let hiddenAbility = Math.random() < tierStats.hiddenAbilityChance;
         let shiny = Math.random() < tierStats.shinyChance;
-        shiny = true;
         let nearbyPlayers = level.getEntitiesWithin(AABB.ofBlock(block).inflate(10)).filter((scanEntity) => scanEntity.isPlayer());
         let spawnedAny
         if (nearbyPlayers.length > 1) {

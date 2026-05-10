@@ -1,0 +1,119 @@
+{
+  "displayName": "Ace Trainer Bowie",
+  "team": [
+    {
+      "species": "cobblemon:dubwool",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:relaxed",
+      "ability": "fluffy",
+      "moveset": [
+        "headbutt",
+        "copycat",
+        "cottonguard",
+        "doublekick"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 28,
+        "defence": 19,
+        "special_attack": 29,
+        "special_defence": 28,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:salamence",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:docile",
+      "ability": "intimidate",
+      "moveset": [
+        "flamethrower",
+        "dragonclaw",
+        "crunch",
+        "zenheadbutt"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 5,
+        "defence": 20,
+        "special_attack": 7,
+        "special_defence": 12,
+        "speed": 12
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:lanturn",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:calm",
+      "ability": "voltabsorb",
+      "moveset": [
+        "hydropump",
+        "thunderwave",
+        "electroball",
+        "aquaring"
+      ],
+      "ivs": {
+        "hp": 9,
+        "attack": 17,
+        "defence": 6,
+        "special_attack": 23,
+        "special_defence": 15,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:red_card",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:staraptor",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:calm",
+      "ability": "intimidate",
+      "moveset": [
+        "closecombat",
+        "aerialace",
+        "doubleteam",
+        "whirlwind"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 1,
+        "defence": 24,
+        "special_attack": 7,
+        "special_defence": 24,
+        "speed": 6
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

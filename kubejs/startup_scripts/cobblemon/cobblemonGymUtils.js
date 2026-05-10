@@ -457,14 +457,13 @@ const trainerBuckets = new Map([
     [
       "cue_ball_camron_00fb",
       "picnicker_alma_01d2",
+      "ace_trainer_bowie",
       "channeler_rachel_0093",
       "picnicker_caitlin_009b",
-      "picnicker_claire_022c",
       "swimmerf_abigail_0224",
       "swimmerf_maria_0223",
       "swimmerm_garrett_0226",
-      "swimmerf_tisha_0231",
-      "swimmerm_finn_0225",
+      "ruin_mamoac_halotosis",
       "bird_keeper_sebastian_012c",
       "fisherman_tommy_0227",
       "picnicker_alma_01d2",
@@ -477,7 +476,21 @@ const trainerBuckets = new Map([
   [
     105,
     [
+      "ace_trainer_maclachlan",
+      "ace_trainer_zephira",
+      "beauty_nadine",
+      "picnicker_donna",
+      "ace_trainer_zephira",
+      "fisher_packard",
+      "picnicker_claire_022c",
+      "swimmerf_tisha_0231",
+      "swimmerm_finn_0225",
       "ace_trainer_symes_0071",
+      "ruin_mamoac_reslo",
+      "bug_catcher_tainy",
+      "psychic_margaret",
+      "pokefan_unove",
+      "super_nerd_leroy"
     ],
   ],
   [

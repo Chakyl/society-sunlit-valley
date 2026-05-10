@@ -1,0 +1,119 @@
+{
+  "displayName": "Picknicker Donna",
+  "team": [
+    {
+      "species": "cobblemon:arboliva",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:bashful",
+      "ability": "seedsower",
+      "moveset": [
+        "petaldance",
+        "growth",
+        "terrainpulse",
+        "gigadrain"
+      ],
+      "ivs": {
+        "hp": 13,
+        "attack": 16,
+        "defence": 29,
+        "special_attack": 10,
+        "special_defence": 4,
+        "speed": 27
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:big_root",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:cursola",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "weakarmor",
+      "moveset": [
+        "mirrorcoat",
+        "strengthsap",
+        "hex",
+        "ancientpower"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 14,
+        "defence": 29,
+        "special_attack": 16,
+        "special_defence": 2,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:rocky_helmet",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:indeedee",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "synchronize",
+      "moveset": [
+        "psychic",
+        "psychicterrain",
+        "healingwish",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 9,
+        "attack": 22,
+        "defence": 3,
+        "special_attack": 2,
+        "special_defence": 23,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:heracross",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:lonely",
+      "ability": "moxie",
+      "moveset": [
+        "closecombat",
+        "megahorn",
+        "swordsdance",
+        "throatchop"
+      ],
+      "ivs": {
+        "hp": 19,
+        "attack": 8,
+        "defence": 17,
+        "special_attack": 2,
+        "special_defence": 19,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

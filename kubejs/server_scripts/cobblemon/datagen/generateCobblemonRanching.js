@@ -6,6 +6,43 @@
 
 //     let ranchingDef = [
 //         {
+//             pokemon: "tyrantrum",
+//             forages: [
+//                 {
+//                     item: "cobblemon:rock_gem",
+//                     count: 1,
+//                     chance: 0.67,
+//                     min_hearts: 1
+//                 },
+//                 {
+//                     item: "etcetera:raw_bismuth",
+//                     count: 4,
+//                     chance: 0.25,
+//                     min_hearts: 6
+//                 },
+//                 {
+//                     item: "quark:dragon_scale",
+//                     count: 1,
+//                     chance: 0.04,
+//                     min_hearts: 8,
+//                     hasQuality: true,
+//                 },
+//                 {
+//                     item: "species:cruncher_egg",
+//                     count: 1,
+//                     chance: 0.15,
+//                     min_hearts: 10,
+//                     hasQuality: true,
+//                 },
+//                 {
+//                     item: 'cobblemon:kings_rock',
+//                     count: 1,
+//                     chance: 0.03,
+//                     min_hearts: 10
+//                 },
+//             ],
+//         },
+//         {
 //             pokemon: "pidgey",
 //             forages: [
 //                 {
@@ -3334,14 +3371,14 @@
 //                     item: "atmospheric:orange",
 //                     count: 1,
 //                     chance: 0.25,
-//                     minHearts: 2,
+//                     min_hearts: 2,
 //                     hasQuality: true,
 //                 },
 //                 {
 //                     item: "pamhc2trees:plumitem",
 //                     count: 2,
 //                     chance: 0.3,
-//                     minHearts: 4,
+//                     min_hearts: 4,
 //                     hasQuality: true,
 //                 },
 //                 {
@@ -3367,13 +3404,13 @@
 //                     item: "vinery:glowing_wine",
 //                     count: 1,
 //                     chance: 0.25,
-//                     minHearts: 2
+//                     min_hearts: 2
 //                 },
 //                 {
 //                     item: "vinery:noir_wine",
 //                     count: 1,
 //                     chance: 0.3,
-//                     minHearts: 4
+//                     min_hearts: 4
 //                 },
 //                 {
 //                     item: "vinery:lilitu_wine",
