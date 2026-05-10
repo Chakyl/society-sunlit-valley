@@ -283,7 +283,7 @@ const uncoverOrePokemon = (level, server, block, pos) => {
 BlockEvents.broken((e) => {
   const { block, hand, player, server, level } = e;
   if (hand == "OFF_HAND") return;
-  let spawnChance = 1 / 1;
+  let spawnChance = 1 / 80;
   if (player.getHeldItem("MAIN_HAND").enchantments.containsKey("minecraft:silk_touch")) return;
   if (block.hasTag("forge:ores")) {
     if (player.stages.has("braiding_surprisegrass")) {
