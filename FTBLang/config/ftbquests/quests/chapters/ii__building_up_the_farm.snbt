@@ -128,8 +128,8 @@
 				item: "dew_drop_farmland_growth:iron_sprinkler"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.5d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
 			description: [
@@ -172,6 +172,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest596D2298299CCEED.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "596D2298299CCEED"
 			min_required_dependencies: 1
 			rewards: [{
@@ -217,7 +218,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest7858B887B222BC2.title}"
-			x: 6.0d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
@@ -227,6 +228,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.description2}"
 			]
+			hide_until_deps_complete: true
 			icon: "dew_drop_farmland_growth:weak_fertilizer"
 			id: "1D5820FBDD8EB900"
 			rewards: [
@@ -327,7 +329,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest122BB9885C33C85F.title}"
-			x: 7.0d
+			x: 6.0d
 			y: -3.0d
 		}
 		{
@@ -349,8 +351,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest2B3BEC36F6C0F6BE.title}"
-			x: 8.0d
-			y: -1.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["230E02067CBC21CF"]
@@ -361,6 +363,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest57A1891E5864EBF.description3}"
 			]
+			hide_until_deps_complete: true
 			id: "057A1891E5864EBF"
 			rewards: [{
 				id: "0E153FE7C3B55BC9"
@@ -372,29 +375,8 @@
 				item: "society:seed_maker"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["07858B887B222BC2"]
-			description: [
-				"{ftbquests.chapter.ii__building_up_the_farm.quest477FFAD808985736.description1}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest477FFAD808985736.description2}"
-			]
-			id: "477FFAD808985736"
-			rewards: [{
-				id: "7677A4DDA5A1BCD1"
-				item: "society:yard_work_yearly"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1CFEE317A6C142B9"
-				item: "moreminecarts:chiseled_organic_glass"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 0.0d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
@@ -410,8 +392,8 @@
 				item: "society:pine_tar"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.5d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
@@ -427,8 +409,8 @@
 				item: "society:oak_resin"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -0.5d
+			x: 7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7B2EB2B56F155E49"]
@@ -439,6 +421,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest1AADE5D96B701A97.description3}"
 			]
+			hide_until_deps_complete: true
 			icon: "brewery:beer_wheat"
 			id: "1AADE5D96B701A97"
 			rewards: [{
@@ -460,15 +443,11 @@
 				}
 			]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest1AADE5D96B701A97.title}"
-			x: 11.5d
-			y: 0.0d
+			x: 8.5d
+			y: 2.5d
 		}
 		{
-			dependencies: [
-				"7B2EB2B56F155E49"
-				"230E02067CBC21CF"
-				"2B3BEC36F6C0F6BE"
-			]
+			dependencies: ["2B3BEC36F6C0F6BE"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest2DD84A5F127B1463.description1}"
 				""
@@ -479,6 +458,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest2DD84A5F127B1463.description6}"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:painting"
@@ -489,7 +469,7 @@
 				}
 			}
 			id: "2DD84A5F127B1463"
-			min_required_dependencies: 2
+			min_required_dependencies: 1
 			min_required_tasks: 1
 			rewards: [{
 				id: "0EE0C090E1074FF2"
@@ -502,11 +482,11 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest2DD84A5F127B1463.title}"
-			x: 12.0d
-			y: -1.5d
+			x: 7.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["2DD84A5F127B1463"]
+			dependencies: ["07858B887B222BC2"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest5B6FD08D6063D6AA.description1}"
 				""
@@ -524,12 +504,13 @@
 				item: "numismatics:cog"
 				type: "item"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "46F8239D1B4C5FC4"
 				title: "{ftbquests.chapter.ii__building_up_the_farm.quest5B6FD08D6063D6AA.task.5113876534554025924.title}"
 				type: "checkmark"
 			}]
-			x: 14.0d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
@@ -558,7 +539,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest1DC8E69A916864DC.title}"
-			x: 17.0d
+			x: 15.0d
 			y: -1.5d
 		}
 		{
@@ -714,6 +695,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest6D534E699BF820CE.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "6D534E699BF820CE"
 			rewards: [{
 				id: "5C95012391ACED7C"
@@ -870,6 +852,7 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest1A300B5030B2A1C1.description3}"
 			]
 			hide_dependency_lines: false
+			hide_until_deps_complete: true
 			id: "1A300B5030B2A1C1"
 			rewards: [{
 				id: "0E3433983C9A0316"
@@ -891,6 +874,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest75181B22DAF5E9A6.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "75181B22DAF5E9A6"
 			rewards: [{
 				id: "5BC6F281781D8AF3"
@@ -1085,6 +1069,7 @@
 		{
 			dependencies: ["63FDC7BA6801CF64"]
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest3E48E03F3F044FF2.description1}"]
+			hide_until_deps_complete: true
 			icon: "aquaculture:iron_hook"
 			id: "3E48E03F3F044FF2"
 			rewards: [{
@@ -1149,6 +1134,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest28203635739BC73E.description2}"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aquaculture:worm"
@@ -1213,6 +1199,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest187FBE0E4FB5B7AD.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "187FBE0E4FB5B7AD"
 			rewards: [{
 				count: 16
@@ -1270,6 +1257,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest238D909D360FC27C.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "238D909D360FC27C"
 			rewards: [{
 				count: 8
@@ -1288,6 +1276,7 @@
 		{
 			dependencies: ["4A48308E11476E9B"]
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest6132A6DBE97F16BD.description1}"]
+			hide_until_deps_complete: true
 			id: "6132A6DBE97F16BD"
 			rewards: [{
 				count: 4
@@ -1322,6 +1311,7 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest6FE9F992ACD90629.image0}"
 				""
 			]
+			hide_until_deps_complete: true
 			id: "6FE9F992ACD90629"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1341,6 +1331,7 @@
 		{
 			dependencies: ["7B2EB2B56F155E49"]
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest55FAFBCDEDDA41A5.description1}"]
+			hide_until_deps_complete: true
 			id: "55FAFBCDEDDA41A5"
 			rewards: [{
 				count: 4
@@ -1353,7 +1344,7 @@
 				item: "society:treated_log"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.5d
 			y: 1.0d
 		}
 		{
@@ -1363,6 +1354,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest4A48308E11476E9B.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "4A48308E11476E9B"
 			rewards: [{
 				id: "4EF3F60F568B3C4C"
@@ -1378,7 +1370,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["6ADD884F3FFE5D42"]
+			dependencies: ["5B6FD08D6063D6AA"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.questE68DD5DFB2DFD97.description1}"
 				""
@@ -1386,6 +1378,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.questE68DD5DFB2DFD97.description3}"
 			]
+			hide_until_deps_complete: true
 			icon: "pamhc2trees:starfruit_sapling"
 			id: "0E68DD5DFB2DFD97"
 			rewards: [{
@@ -1447,12 +1440,13 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.questE68DD5DFB2DFD97.title}"
-			x: 1.5d
-			y: -3.0d
+			x: 9.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest66DEF5ED5F277804.description1}"]
+			hide_until_deps_complete: true
 			id: "66DEF5ED5F277804"
 			rewards: [{
 				count: 8
@@ -1476,6 +1470,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest5AD7C2BCDA001A53.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "5AD7C2BCDA001A53"
 			rewards: [{
 				id: "3A8D462EA4613AF7"
@@ -1488,25 +1483,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["55FAFBCDEDDA41A5"]
-			description: ["{ftbquests.chapter.ii__building_up_the_farm.questF643DD3F3B61A7D.description1}"]
-			id: "0F643DD3F3B61A7D"
-			rewards: [{
-				id: "0837A666AB8B54FB"
-				item: "vinery:apple_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "366D0619D46E6A79"
-				item: "vinery:apple_press"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ii__building_up_the_farm.questF643DD3F3B61A7D.title}"
-			x: 12.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
@@ -1515,6 +1492,8 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest4513A91DA55E8069.description2}"
 			]
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
 			icon: "smallships:acacia_brigg"
 			id: "4513A91DA55E8069"
 			rewards: [{
@@ -1538,6 +1517,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest546AA268840CA5B3.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "546AA268840CA5B3"
 			rewards: [{
 				id: "0FFE7A31597BAD19"
@@ -1550,7 +1530,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest546AA268840CA5B3.title}"
-			x: 8.5d
+			x: 11.5d
 			y: 2.5d
 		}
 		{
@@ -1597,8 +1577,8 @@
 				item: "society:frozen_geode"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -3.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
@@ -1609,6 +1589,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest1E2D2FF9428F96DA.description3}"
 			]
+			hide_until_deps_complete: true
 			icon: "sewingkit:sewing_station"
 			id: "1E2D2FF9428F96DA"
 			rewards: [{
@@ -1648,6 +1629,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest64A93713A3B85B9A.description2}"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "toolbelt:belt"
@@ -1685,6 +1667,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest166D3A381C5C9A8F.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "166D3A381C5C9A8F"
 			rewards: [{
 				id: "5D55DA5A6302279E"
@@ -1696,8 +1679,8 @@
 				item: "society:preserves_jar"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.5d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]
@@ -1708,6 +1691,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest73E15D00539BF7CD.description3}"
 			]
+			hide_until_deps_complete: true
 			id: "73E15D00539BF7CD"
 			rewards: [{
 				id: "175F4915C9565C3B"
@@ -1725,6 +1709,7 @@
 		{
 			dependencies: ["2C3FD9E2DA520620"]
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest649860C19CAE0F17.description1}"]
+			hide_until_deps_complete: true
 			id: "649860C19CAE0F17"
 			rewards: [{
 				count: 4
@@ -1767,7 +1752,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.questEE5A175B0417403.title}"
-			x: 0.0d
+			x: 0.5d
 			y: -3.0d
 		}
 		{
@@ -1777,6 +1762,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest2A02C6E45ED944F4.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "2A02C6E45ED944F4"
 			rewards: [{
 				id: "656C37C798D162C5"
@@ -1806,6 +1792,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest77690255DF58F118.description2}"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "stardew_fishing:trap_bobber"
@@ -1903,7 +1890,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest61501449BF31B773.title}"
-			x: 15.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -1930,7 +1917,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest69C3121C90AABBF4.title}"
-			x: 15.0d
+			x: 13.5d
 			y: 1.5d
 		}
 		{
@@ -1970,8 +1957,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest55D658B5939D9DEB.title}"
-			x: 16.0d
-			y: 1.0d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
@@ -1986,6 +1973,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest5FBE3685CF008A5A.description5}"
 			]
+			hide_until_deps_complete: true
 			id: "5FBE3685CF008A5A"
 			rewards: [{
 				count: 4
@@ -2005,8 +1993,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest5FBE3685CF008A5A.title}"
-			x: -0.4464285714285765d
-			y: 0.2500000000000071d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2018,6 +2006,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest6971F0B3FC26D411.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "6971F0B3FC26D411"
 			rewards: [{
 				id: "6515152543861EE5"
@@ -2044,6 +2033,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest3E4F57BA2601FD6F.description5}"
 			]
+			hide_until_deps_complete: true
 			id: "3E4F57BA2601FD6F"
 			rewards: [{
 				id: "0039C84CEA76F6E1"
@@ -2078,6 +2068,98 @@
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest58FB1A6006C36FD8.title}"
 			x: 1.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["5B6FD08D6063D6AA"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest6F3FC6227213B886.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest6F3FC6227213B886.description2}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:apple"
+				tag: {
+					quality_food: {
+						effects: [ ]
+						quality: 3
+					}
+				}
+			}
+			id: "6F3FC6227213B886"
+			rewards: [{
+				id: "718F890F60221DC4"
+				item: {
+					Count: 1
+					id: "minecraft:apple"
+					tag: {
+						quality_food: {
+							effects: [ ]
+							quality: 3
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C4037AEDF0532A8"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest6F3FC6227213B886.task.7800295778811196072.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest6F3FC6227213B886.title}"
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["07858B887B222BC2"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7FFED918C5367350.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7FFED918C5367350.description2}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7FFED918C5367350.description3}"
+			]
+			id: "7FFED918C5367350"
+			invisible: true
+			rewards: [{
+				count: 4
+				id: "5450DB07AC379B0E"
+				item: "society:geode_buster"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03AA3BAAF6AB910C"
+				item: "society:geode"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest7FFED918C5367350.title}"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5B6FD08D6063D6AA"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1F12BF72B966E0CC.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1F12BF72B966E0CC.description2}"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "1F12BF72B966E0CC"
+			rewards: [{
+				id: "1721DBCAD5D49190"
+				item: "society:omni_geode"
+				type: "item"
+			}]
+			tasks: [{
+				id: "028B7E5B8F2E9D1C"
+				item: "extractinator:extractinator"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest1F12BF72B966E0CC.title}"
+			x: 10.5d
+			y: -3.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

@@ -454,7 +454,7 @@
 			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
 			Timeout = 20
 			#Pickarang harvest level. 2 is Iron, 3 is Diamond, 4 is Netherite.
-			"Harvest Level" = 3
+			"Harvest Level" = 4
 			#Pickarang durability. Set to -1 to have the Pickarang be unbreakable.
 			Durability = 800
 			#Pickarang max hardness breakable. 22.5 is ender chests, 25.0 is monster boxes, 50 is obsidian. Most things are below 5.
@@ -495,7 +495,7 @@
 		"Show All Variants In Creative" = true
 		"Shift Range" = 3
 		#Allow putting bone meal into the Seed Pouch (or anything else in the tag 'quark:seed_pouch_fertilizers')
-		"Allow Fertilizer" = true
+		"Allow Fertilizer" = false
 		"Fertilizer Shift Range" = 3
 
 	[tools.skull_pikes]

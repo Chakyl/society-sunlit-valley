@@ -110,7 +110,7 @@ global["JadeArtisanMachineClientCallback"] = (
   const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
   let duration = recipe.time || machine.stageCount;
   if (accessor.getBlock().id == "society:aging_cask" && upgraded) {
-    duration = duration / 2;
+    duration = Math.round(duration / 2);
   }
   let progressIcons = "";
   for (let index = 0; index < duration; index++) {

@@ -27,6 +27,40 @@ const calculateCoinsFromValue = (price, output, coinMap) => {
   }
 };
 
+const textComponentToLegacy = (data) => {
+  const colorMap = {
+    black: "§0", dark_blue: "§1", dark_green: "§2", dark_aqua: "§3",
+    dark_red: "§4", dark_purple: "§5", gold: "§6", gray: "§7",
+    dark_gray: "§8", blue: "§9", green: "§a", aqua: "§b",
+    red: "§c", light_purple: "§d", yellow: "§e", white: "§f"
+  };
+  let prefix = "";
+  if (data.color) prefix += colorMap[data.color.toLowerCase()] ?? "§f";
+  if (data.bold) prefix += "§l";
+  if (data.italic) prefix += "§o";
+  if (data.underlined) prefix += "§n";
+  if (data.strikethrough) prefix += "§m";
+  if (data.obfuscated) prefix += "§k";
+  const text = data.text ?? "";
+  return prefix + text;
+};
+
+
+global.getShippingBinName = (nbt, legacy) => {
+  if (nbt && nbt.contains('customName')) {
+    let json = nbt.getString('customName');
+    let data = JSON.parse(json);
+    if (legacy) {
+      return textComponentToLegacy(data);
+    }
+    else {
+      return Text.of(data);
+    }
+  }
+  return null;
+};
+
+
 global.getAttributeMultiplier = (attributes, multiplier) => {
   return (
     Number(

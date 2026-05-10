@@ -4,9 +4,11 @@ BlockEvents.leftClicked("society:skull_cavern_teleporter", (e) => {
   if (e.level.dimension === "society:skull_cavern") e.cancel();
 });
 BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
-  const { block, player, level, server } = e;
+  const { block, player, level, item, hand, server } = e;
   const { x, z } = block;
   let errorText;
+  if (hand == "OFF_HAND") return;
+  if (item === 'society:magic_rope') e.cancel();
   if (!player.stages.has("entered_skull_cavern")) player.stages.add("entered_skull_cavern");
   if (level.dimension === "society:skull_cavern") {
     player.persistentData.skullCavernEnterDay = -1;

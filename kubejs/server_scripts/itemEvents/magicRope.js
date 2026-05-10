@@ -97,7 +97,6 @@ ItemEvents.rightClicked("society:magic_rope", (e) => {
 BlockEvents.rightClicked((e) => {
   const { level, server, item, player, block } = e;
   let errorText;
-  player.facing;
   if (item.id == "society:magic_tunnel")
     if (level.dimension !== "society:skull_cavern") {
       errorText = Text.translatable("item.society.magic_rope.invalid_dimension");

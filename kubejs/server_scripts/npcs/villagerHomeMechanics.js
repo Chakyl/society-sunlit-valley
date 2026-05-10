@@ -110,7 +110,7 @@ BlockEvents.broken("society:villager_home", (e) => {
   const { block, player, level, server } = e;
   let nbt = block.getEntityData();
   const { type, placer, boundNpc } = nbt.data;
-  if (player.getUuid().toString() !== placer && placer != -1) {
+  if (player.getUuid().toString() !== placer && placer != -1 && !player.isCreative()) {
     player.tell(
       Text.translatable(
         "society.villager_home.not_invited_by_you",

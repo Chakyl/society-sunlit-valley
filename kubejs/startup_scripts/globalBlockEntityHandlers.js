@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 // Priority: 1000
-const artMachineTickRate = 20;
+const artMachineTickRate = 200;
 
 const artMachineProgTime = 20;
 
@@ -122,16 +122,17 @@ const getCanTakeItems = (
     Array.from(recipes.keys()).forEach((key) => {
       if (key.includes("#")) {
         if (itemHasTag(item, key)) {
-          itemCheck = true;
           if (nbt.data.recipe.equals("") || nbt.data.recipe == undefined) {
             nbt.merge({ data: { recipe: key, originalInputs: [] } });
+            itemCheck = true;
           }
-          if (inputCount != -1) {
+          if (inputCount != -1 && nbt.data.recipe.equals(key)) {
             let inputArray = nbt.data.originalInputs.copy();
             let usedItem = item.copy();
             usedItem.count = inputCount;
             inputArray.push(usedItem);
             nbt.merge({ data: { originalInputs: inputArray } });
+            itemCheck = true;
           }
         }
       }
@@ -601,20 +602,20 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   const { level, block } = entity;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
-  let blockProperties = level.getBlock(block.pos).getProperties();
-
-  if (blockProperties.get("working").toLowerCase() === "false") return;
 
   if (
     forced ||
     (morningModulo >= artMachineProgTime &&
       morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
+    let blockProperties = level.getBlock(block.pos).getProperties();
+
+    if (blockProperties.get("working").toLowerCase() === "false") return;
     global.convertFromLegacy(recipes, level, block);
     let nbt = block.getEntityData();
     let mature;
     let recipe = recipes && recipes.get(nbt.data.recipe);
-    let resolvedStage = (recipes && recipe.time) || stageCount;
+    let resolvedStage = (recipe && recipe.time) || stageCount;
 
     const nbtStage = nbt.data.stage;
     if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {

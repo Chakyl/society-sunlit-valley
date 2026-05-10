@@ -1,0 +1,54 @@
+#Chunk count below which leaks are considered baseline retention (default: 48)
+#Range: > 0
+baseline_chunk_threshold = 48
+#Time in seconds after server start during which leak warnings are suppressed (default: 600 = 10 minutes)
+#Range: > 0
+startup_grace_period_seconds = 600
+#Time window in minutes for tracking chunk count trends (default: 15)
+#Range: 1 ~ 60
+trend_window_minutes = 15
+#Chunk count above which leaks are escalated as confirmed (default: 96)
+#Range: > 0
+escalation_chunk_threshold = 96
+#Whether to log detailed debug information (default: false)
+log_debug_details = false
+#Whether to automatically trigger Spark profiling when leaks are detected (default: true). Set to false to disable automatic Spark profiling and avoid chat messages.
+auto_spark_profiling = true
+#When true, parsed AllTheLeaks leak lines are not printed to log/chat; use /ctl panel instead (default: true).
+suppress_atl_leak_lines = true
+#When true, /ctl status|leaks|explain opens the diagnostics GUI for players instead of chat (default: true).
+prefer_diagnostics_gui = true
+#When opening the CTL panel from a command, send a short chat acknowledgement (default: false).
+ctl_chat_ack = false
+#Minimum ATL refresh observations before CTL may emit a prescription block (default: 3).
+#Range: 1 ~ 50
+prescription_min_observations = 3
+#Minimum analysis confidence (0-1) required for a prescription (default: 0.62).
+#Range: 0.2 ~ 0.99
+prescription_min_confidence = 0.62
+#Observations needed to prescribe on mod-conflict pattern alone (default: 3).
+#Range: 1 ~ 50
+prescription_conflict_min_observations = 3
+#Observations for persistent-leak prescription branch (default: 6).
+#Range: 2 ~ 100
+prescription_persistent_min_observations = 6
+#Observations before CONSISTENTLY_* pattern labels tighten (default: 5).
+#Range: 2 ~ 100
+pattern_mature_observations = 5
+#Extra confidence when heap >80% and trend is GROWING (default: 0.12).
+#Range: 0.0 ~ 0.5
+heap_pressure_confidence_boost = 0.12
+#When true, high heap + GROWING reduces prescription observation requirement by 1 (default: true).
+heap_pressure_eases_prescription = true
+#Heap %% threshold for prescription fast-track with GROWING (default: 85).
+#Range: 50.0 ~ 100.0
+heap_pressure_prescription_percent = 85.0
+#Spark TPS (5s) below this with a GROWING leak bumps severity (default: 17.5).
+#Range: 1.0 ~ 20.0
+low_tps_threshold = 17.5
+#How many (count, heap %%) samples to keep per leak for sparklines / acceleration (default: 48).
+#Range: 8 ~ 256
+time_series_max_samples = 48
+#Lets ops (permission 2+) use the CTL panel to turn world leak memory on or off. Nothing is written under the world until someone presses "Save leak history in this world" in the panel. Set false only if you want to hide that option and forbid persistence entirely on this server.
+allow_world_leak_memory = true
+

@@ -47,16 +47,10 @@ global.skullCavernHardmode = false;
  */
 global.susFunctionLogging = false;
 
-/**
- * Client and server need to change this for accurate tooltips. 
- * Global modifiers for the different categories of products. 
- * Can be used to make the game easier or harder depending on your preferences.
- * 
- * THIS WAS MOVED TO THE BUTTOM OF globalRegistry.js
- */
 
 /**
- * REMOVED CONFIG OPTION! THIS DOES NOTHING!
- * This can now be done on a per-player basis using the /stardew_fishing command
+ * Only server needs to change this
+ * Enables chat color functionality with dyes in curio slots.
+ * Disable if you are using other chat mods that do this
  */
-global.enableFishingMinigame = true;
+global.enableChatColors = true;
