@@ -905,9 +905,12 @@ global.removedItems = [
   "farm_and_charm:water_sprinkler",
   "atmospheric:dragon_fruit_crate",
   "atmospheric:dragon_fruit",
+  "irons_lib:transmog_table",
+  "irons_lib:player_statue"
 ];
 
 global.hiddenItems = [
+  "@displaydelight",
   "society:auto_petter",
   "minecraft:ancient_debris",
   "society:growth_obelisk_upper",

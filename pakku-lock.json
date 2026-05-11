@@ -6199,7 +6199,7 @@
             ]
         },
         {
-            "pakku_id": "8F2ynsUPKEqvWglx",
+            "pakku_id": "h7lPbxUtDo9a3QAJ",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -6217,28 +6217,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "easy_npc-forge-1.20.1-6.1.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7287/117/easy_npc-forge-1.20.1-6.1.0.jar",
-                    "id": "7287117",
-                    "parent_id": "1308987",
-                    "hashes": {
-                        "sha1": "122083fd49e9a6eb273a549bfd226431f11f83ee",
-                        "md5": "255de5e2a8f0aef706586b538344f3ae"
-                    },
-                    "required_dependencies": [],
-                    "size": 1519447,
-                    "date_published": "2025-12-02T20:32:01.007Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "easy_npc-forge-1.20.1-6.12.0.jar",
+                    "file_name": "easy_npc-forge-1.20.1-6.13.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6247,16 +6226,38 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Epm6R3P2/versions/NzAWXK9l/easy_npc-forge-1.20.1-6.12.0.jar",
-                    "id": "NzAWXK9l",
-                    "parent_id": "Epm6R3P2",
+                    "url": "https://edge.forgecdn.net/files/8058/576/easy_npc-forge-1.20.1-6.13.0.jar",
+                    "id": "8058576",
+                    "parent_id": "1308987",
                     "hashes": {
-                        "sha512": "e4ca8828896061b6c7d0243ac301a28b6dd689a4fb8f011ca563e0f33c76fd10dc4ad033014b91393b560ed7ad4c7cde43538b81ad729f4f0e8a44cce43fd8a8",
-                        "sha1": "87954a84aba627ea41117672917e317071e786d5"
+                        "sha1": "8f2d2b77aca666543193ab1b003d5184f04865ad",
+                        "md5": "1638dc018d368b1f8a77f4be5a0526f9"
                     },
                     "required_dependencies": [],
-                    "size": 1948852,
-                    "date_published": "2026-04-14T23:11:28.773682Z"
+                    "size": 1996127,
+                    "date_published": "2026-05-08T16:19:29.967Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "easy_npc-forge-1.20.1-6.13.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Epm6R3P2/versions/hHe9Lp0A/easy_npc-forge-1.20.1-6.13.0.jar",
+                    "id": "hHe9Lp0A",
+                    "parent_id": "Epm6R3P2",
+                    "hashes": {
+                        "sha512": "9e681bab91d63f939584dae0f5b9f35138862643122133382771e2ad33dc9e45bd92bad7a78885b07904c84ba14dcdfbfcacd946a0e20803329ac3c87be03937",
+                        "sha1": "a6b2d2f4fbdb4de630d7f5f6b766f702bc94a24c"
+                    },
+                    "required_dependencies": [],
+                    "size": 1996129,
+                    "date_published": "2026-05-08T16:19:11.786745Z"
                 }
             ]
         },
@@ -10819,70 +10820,6 @@
                     ],
                     "size": 50042,
                     "date_published": "2023-06-28T05:09:37.584543Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "MP39WcumC2IKPOjJ",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "legendary-creatures",
-                "modrinth": "legendary-creatures"
-            },
-            "name": {
-                "curseforge": "Legendary Creatures",
-                "modrinth": "Legendary Creatures"
-            },
-            "id": {
-                "curseforge": "837157",
-                "modrinth": "KLqe3Gaa"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "legendarycreatures-1.20.1-1.1.1.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6826/898/legendarycreatures-1.20.1-1.1.1.3.jar",
-                    "id": "6826898",
-                    "parent_id": "837157",
-                    "hashes": {
-                        "sha1": "bdcc349136a46c1af21df385b619a982a6190eb8",
-                        "md5": "f9acadb272ead235e4d7a5c7fc23ed21"
-                    },
-                    "required_dependencies": [
-                        "388172"
-                    ],
-                    "size": 3704675,
-                    "date_published": "2025-07-29T22:09:57.760Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "legendarycreatures-1.20.1-1.1.2.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/KLqe3Gaa/versions/yGGSL6Lb/legendarycreatures-1.20.1-1.1.2.1.jar",
-                    "id": "yGGSL6Lb",
-                    "parent_id": "KLqe3Gaa",
-                    "hashes": {
-                        "sha512": "64c764e21b5792dce1aae07417c85637c4b9d175121c8239aac4d97e139231a2209cc82b234e060b8639d51f86e690149a621f253a24099e459ed519013b26d8",
-                        "sha1": "8bc66a40a4d9f0346be43d054594c8a807602650"
-                    },
-                    "required_dependencies": [],
-                    "size": 3582465,
-                    "date_published": "2026-05-03T22:48:01.625403Z"
                 }
             ]
         },

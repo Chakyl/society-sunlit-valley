@@ -1,0 +1,92 @@
+# Client-side configuration for SkillExpNotifier
+# Base configuration provided by Chakyl.
+# Useful Link: https://convertingcolors.com/decimal-color-16755200.html?search=Decimal(16755200)
+
+Client-Settings:
+  # Disables all rendering of toasts (client-side only)
+  Disable: false
+  # Enables the file watcher to detect config changes automatically
+  File-Watcher: true
+  # When iconMappings.json is missing, automatically generates mappings from detected skill categories
+  Auto-Register-Data: true
+Settings:
+  # Maximum number of toasts to display simultaneously
+  Max-Toasts: 1
+  # Direction for toast animation and stacking (top, down, left, right)
+  Animation-Direction: "top"
+Toast-Rendering:
+  # Screen anchor point for toast positioning. Options: top-left, top-center, top-right, middle-left, middle-center, middle-right, bottom-left, bottom-center, bottom-right
+  Anchor-Point: "bottom-left"
+  # Horizontal offset from the anchor point in pixels
+  Base-X: 0
+  # Vertical offset from the anchor point in pixels
+  Base-Y: 0
+  # Height of the toast background in pixels
+  Height: 16
+  # Width of the toast background in pixels
+  Width: 160
+  # Makes the toast background partially transparent
+  Background-Translucent: false
+  # Completely removes the toast background
+  Disable-Background: true
+  # Transparency level of the background (0-255, lower is more transparent)
+  Background-alpha: 127
+Toast-Animation:
+  # Duration in milliseconds that a toast remains visible after the last XP update
+  Stack-XP-Timer: 5000
+  # Duration in milliseconds of the slide in/out animation
+  Animation-Time: 1000
+  # Disables the sliding animation for toasts
+  No-Slide: false
+  # Shows title and XP text on a single line instead of stacked
+  Inline: true
+Title-Settings:
+  # Text format for the toast title (%title% is replaced with the skill name)
+  Title: "%title%"
+  # Font size of the title text in points
+  Size: 6
+  # Color of the title text in ARGB format
+  Color: 16755200
+  # Adds a shadow effect to the title text
+  Shadow: false
+  # Color of the title text shadow in ARGB format
+  Shadow-Color: 0
+  # Makes the title text partially transparent
+  Translucent: false
+  # Transparency level of the title text (0-255, lower is more transparent)
+  Alpha: 127
+  # Makes the title text bold
+  Bold: false
+Experience-Settings:
+  # Text format for the XP display (%exp% is replaced with the amount)
+  Exp: " +%exp% xp"
+  # Font size of the XP text in points
+  Size: 6
+  # Color of the XP text in ARGB format
+  Color: 16755200
+  # Adds a shadow effect to the XP text
+  Shadow: false
+  # Color of the XP text shadow in ARGB format
+  Shadow-Color: 0
+  # Makes the XP text partially transparent
+  Translucent: false
+  # Transparency level of the XP text (0-255, lower is more transparent)
+  Alpha: 127
+  # Makes the XP text bold
+  Bold: false
+Icon-Settings:
+  # Enables display of skill icons in toasts
+  Enabled: true
+  # Horizontal position of the icon within the toast in pixels
+  X-Offset: 14
+  # Vertical position of the icon within the toast in pixels
+  Y-Offset: 2
+  # Size of the icon in pixels
+  Size: 12
+Sound-Settings:
+  # Enables sound effects when toasts appear and disappear
+  Enabled: true
+  # Sound mappings for toast appearance by dimension (Format: <dimension>=<sound>)
+  In-Sound: [minecraft:overworld=minecraft:ui.toast.in, minecraft:the_nether=minecraft:ui.toast.in, minecraft:the_end=minecraft:ui.toast.in]
+  # Sound mappings for toast disappearance by dimension (Format: <dimension>=<sound>)
+  Out-Sound: [minecraft:overworld=minecraft:ui.toast.out, minecraft:the_nether=minecraft:ui.toast.out, minecraft:the_end=minecraft:ui.toast.out]

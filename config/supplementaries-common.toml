@@ -181,6 +181,8 @@
 		enabled = true
 		#Dyed Bock types that cannot be cleaned with soap
 		clean_blacklist = ["minecraft:glazed_terracotta", "botania:mystical_flower", "mna:chimerite_crystal", "botania:floating_flower", ",minecraft:mushroom", "botania:mushroom", "botania:tall_mystical_flower", "botania:petal_block", "morered:network_cable", "xycraft_world:glowing_shiny_aurey_block", "xycraft_world:shiny_aurey_block", "xycraft_world:rgb_lamp", "xycraft_world:glowing_rgb_viewer", "xycraft_world:glowing_matte_rgb_block", "xycraft_world:rgb_lamp_pole", "waystones:sharestone"]
+		#Allows soap to clean blocks in-world. Disable to prevent in-world block cleaning while keeping soap item and recipes functional
+		block_cleaning_enabled = true
 
 		#This is a map of special blocks that can be cleaned with soap
 		[functional.soap.special_blocks]

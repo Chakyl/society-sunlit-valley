@@ -31,12 +31,16 @@ report_unresolved_tables = false
 modid_dimension_blacklist = []
 #list of loot tables which shouldn't be converted (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
 loot_table_blacklist = []
+#if true, all block entities will be checked before being added to the ticker for an eligible loot table. enable this if a huge quantity of containers are clogging the conversion system; note that aggressive mode may prevent certain chests from properly converted even though eligible
+aggressive_mode = false
 #list of dimensions where loot chests should automatically refresh (default: blank, e.g., ["minecraft:overworld", "othermod:otherdimension"])
 refresh_dimensions = []
 #list of mod IDs whose loot tables will refresh (default blank, meaning no chests refresh, in the format of ["modid", "othermodid"])
 refresh_modids = []
 #determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
 randomise_seed = true
+#allows players to open Lootr containers within spawn protection areas
+bypass_spawn_protection = true
 #when true, custom inventories will act like trapped chests when opened
 trapped_custom = false
 #how long (in ticks) a decaying loot containers should take to decay (default 5 minutes = 5 * 60 * 20)
