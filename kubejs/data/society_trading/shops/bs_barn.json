@@ -2,6 +2,7 @@
 	"shop_id": "bs_barn",
 	"name": "shop.society_trading.building_shop.barn",
 	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
 	"display_type": "image",
 	"jei_catalyst": {
 		"item": "society:milk"

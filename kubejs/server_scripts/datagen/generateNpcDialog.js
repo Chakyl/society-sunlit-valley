@@ -25,6 +25,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, port
       if (npcId == "carpenter") {
         translationKeys["dialog.npc.carpenter.purchase_supplies"] = "Purchase supplies";
         translationKeys["dialog.npc.carpenter.invite_villagers"] = "Invite Villagers";
+        translationKeys["dialog.npc.carpenter.build_farm"] = "Build Farm Buildings";
         queuedEntry.options = [{
           text: {
             translate: "dialog.npc.carpenter.purchase_supplies"
@@ -42,7 +43,17 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, port
           command: [
             "openshop @p invitations"
           ]
-        }]
+        },
+        {
+          text: {
+            translate: "dialog.npc.carpenter.build_farm"
+          },
+          target: "end",
+          command: [
+            "openselector @p building_shop"
+          ]
+        }
+      ]
       } else {
         queuedEntry.command = [`openshop @p ${npcId}`]
       }

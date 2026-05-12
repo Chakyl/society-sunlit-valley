@@ -2,6 +2,7 @@
 	"shop_id": "bs_shed",
 	"name": "shop.society_trading.building_shop.shed",
 	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
 	"display_type": "image",
 	"jei_catalyst": {
 		"item": "society:preserves_jar"

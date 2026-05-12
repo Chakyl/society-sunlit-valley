@@ -1,7 +1,7 @@
 const runBuildingShopDatagen = false;
 const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "mason", "prismarine", "siberian", "tudor", "vibrantown"]
 const buildingTypes = ["home", "shed", "large_shed", "coop", "barn", "deluxe_barn", "greenhouse"]
-const catalysts = ["tanukidecor:antique_bed", 'society:preserves_jar', "society:aging_cask", 'minecraft:egg', 'society:large_egg', 'society:milk', 'society:large_milk', 'moreminecarts:chiseled_organic_glass']
+const catalysts = ["tanukidecor:antique_bed", 'society:preserves_jar', "society:aging_cask", 'minecraft:egg', 'society:milk', 'society:large_milk', 'moreminecarts:chiseled_organic_glass']
 
 if (runBuildingShopDatagen) {
   let shopJson = {}
@@ -31,6 +31,7 @@ if (runBuildingShopDatagen) {
       shop_id: `bs_${type}`,
       name: `shop.society_trading.building_shop.${type}`,
       texture: "dialog:textures/portraits/carpenter",
+      hidden_from_selector: true,
       display_type: "image",
       jei_catalyst: {
         item: catalysts[index]

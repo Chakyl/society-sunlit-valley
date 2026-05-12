@@ -2,6 +2,7 @@
 	"shop_id": "bs_large_shed",
 	"name": "shop.society_trading.building_shop.large_shed",
 	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
 	"display_type": "image",
 	"jei_catalyst": {
 		"item": "society:aging_cask"
@@ -17,8 +18,8 @@
 				"item": "meadow:fire_log",
 				"count": 32
 			},
-			"image": "society:textures/gui/buildings/basic_large_shed",
-			"trade_id": "bs_basic_large_shed"
+			"image": "society:textures/gui/buildings/large_shed_basic",
+			"trade_id": "bs_large_shed_basic"
 		},
 		{
 			"offer": {
