@@ -1,0 +1,118 @@
+
+# Options related to mob spawning
+[MobSpawning]
+
+	[MobSpawning.desert_mojo]
+		#When true, allows the Desert Mojo to spawn when a player breaks a block listed in config/legendarycreatures/json/desert_mojo-spawn.json
+		"Desert Mojo Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/desert_mojo-spawn.json has a chance to spawn a Desert Mojo at that location
+		"Desert Mojo Killing Entity Spawn " = true
+		#Enables Desert Mojo natural spawning in the world
+		"Desert Mojo Natural Spawn" = true
+
+	[MobSpawning.forest_mojo]
+		#When true, allows the Forest Mojo to spawn when a player breaks a block listed in config/legendarycreatures/json/forest_mojo-spawn.json
+		"Forest Mojo Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/forest_mojo-spawn.json has a chance to spawn a Forest Mojo at that location
+		"Forest Mojo Killing Entity Spawn " = true
+		#Enables Forest Mojo natural spawning in the world
+		"Forest Mojo Natural Spawn" = true
+
+	[MobSpawning.hound]
+		#When true, allows the Hound to spawn when a player breaks a block listed in config/legendarycreatures/json/hound-spawn.json
+		"Hound Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/hound-spawn.json has a chance to spawn a Hound at that location
+		"Hound Killing Entity Spawn " = true
+		#Enables Hound natural spawning in the world
+		"Hound Natural Spawn" = true
+
+	[MobSpawning.scarecrow]
+		#When true, allows the Scarecrow to spawn when a player breaks a block listed in config/legendarycreatures/json/scarecrow-spawn.json
+		"Scarecrow Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/scarecrow-spawn.json has a chance to spawn a Scarecrow at that location
+		"Scarecrow Killing Entity Spawn " = true
+		#Enables Scarecrow natural spawning in the world
+		"Scarecrow Natural Spawn" = true
+
+	[MobSpawning.scorpion]
+		#When true, allows the Scorpion to spawn when a player breaks a block listed in config/legendarycreatures/json/scorpion-spawn.json
+		"Scorpion Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/scorpion-spawn.json has a chance to spawn a Scorpion at that location
+		"Scorpion Killing Entity Spawn " = true
+		#Enables Scorpion natural spawning in the world
+		"Scorpion Natural Spawn" = true
+
+	[MobSpawning.scorpion_baby]
+		#When true, allows the Baby Scorpion to spawn when a player breaks a block listed in config/legendarycreatures/json/scorpion_baby-spawn.json
+		"Baby Scorpion Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/scorpion_baby-spawn.json has a chance to spawn a Baby Scorpion at that location
+		"Baby Scorpion Killing Entity Spawn " = true
+		#Enables Baby Scorpion natural spawning in the world
+		"Baby Scorpion Natural Spawn" = true
+
+	[MobSpawning.wisp]
+		#When true, allows the Wisp to spawn when a player breaks a block listed in config/legendarycreatures/json/wisp-spawn.json
+		"Wisp Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/wisp-spawn.json has a chance to spawn a Wisp at that location
+		"Wisp Killing Entity Spawn " = true
+		#Enables Wisp natural spawning in the world
+		"Wisp Natural Spawn" = true
+		"Wisp Purse Xp Reward Range " = [30, 30]
+
+	[MobSpawning.nether_wisp]
+		#When true, allows the Nether Wisp to spawn when a player breaks a block listed in config/legendarycreatures/json/nether_wisp-spawn.json
+		"Nether Wisp Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/nether_wisp-spawn.json has a chance to spawn a Nether Wisp at that location
+		"Nether Wisp Killing Entity Spawn " = true
+		#Enables Nether Wisp natural spawning in the world
+		"Nether Wisp Natural Spawn" = true
+		"Nether Wisp Purse Xp Reward Range " = [80, 80]
+
+	[MobSpawning.ender_wisp]
+		#When true, allows the Ender Wisp to spawn when a player breaks a block listed in config/legendarycreatures/json/ender_wisp-spawn.json
+		"Ender Wisp Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/ender_wisp-spawn.json has a chance to spawn an Ender Wisp at that location
+		"Ender Wisp Killing Entity Spawn " = true
+		#Enables Ender Wisp natural spawning in the world
+		"Ender Wisp Natural Spawn" = true
+		"Ender Wisp Purse Xp Reward Range " = [240, 240]
+
+	[MobSpawning.corpse_eater]
+		#When true, allows the Corpse Eater to spawn when a player breaks a block listed in config/legendarycreatures/json/corpse_eater-spawn.json
+		"Corpse Eater Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/corpse_eater-spawn.json has a chance to spawn a Corpse Eater at that location
+		"Corpse Eater Killing Entity Spawn " = true
+		#Enables Corpse Eater natural spawning in the world
+		"Corpse Eater Natural Spawn" = true
+
+	[MobSpawning.peacock_spider]
+		#When true, allows the Peacock Spider to spawn when a player breaks a block listed in config/legendarycreatures/json/peacock_spider-spawn.json
+		"Peacock Spider Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/peacock_spider-spawn.json has a chance to spawn a Peacock Spider at that location
+		"Peacock Spider Killing Entity Spawn " = true
+		#Enables Peacock Spider natural spawning in the world
+		"Peacock Spider Natural Spawn" = true
+
+	[MobSpawning.bullfrog]
+		#When true, allows the Bullfrog to spawn when a player breaks a block listed in config/legendarycreatures/json/bullfrog-spawn.json
+		"Bullfrog Breaking Block Spawn " = true
+		#When true, killing a mob listed in config/legendarycreatures/json/bullfrog-spawn.json has a chance to spawn a Bullfrog at that location
+		"Bullfrog Killing Entity Spawn " = true
+		#Enables Bullfrog natural spawning in the world
+		"Bullfrog Natural Spawn" = true
+
+	# WARNING: Disabling an insect that is paired with a hostile mob will give that hostile mob a 100% chance of filling spawn slots
+	[MobSpawning.insects]
+		#Enables Butterfly natural spawning. Paired with: Forest Mojo, Hound
+		"Butterfly Natural Spawn" = true
+		#Enables Dragonfly natural spawning. Paired with: Bullfrog
+		"Dragonfly Natural Spawn" = true
+		#Enables Ladybug natural spawning. Paired with: Scarecrow, Wisp
+		"Ladybug Natural Spawn" = true
+		#Enables Scarab natural spawning. Paired with: Desert Mojo, Scorpion, Baby Scorpion, Corpse Eater
+		"Scarab Natural Spawn" = true
+		#Enables Mantis natural spawning. Paired with: Peacock Spider
+		"Mantis Natural Spawn" = true
+		#Enables Hermit Crab natural spawning. Paired with: Peacock Spider
+		"Hermit Crab Natural Spawn" = true
+

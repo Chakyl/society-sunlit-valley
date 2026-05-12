@@ -417,12 +417,6 @@ ServerEvents.tags("item", (e) => {
   global.plushies.forEach((item) => {
     e.add("society:plushies", item);
   });
-  global.dehydratorRecipes.forEach((dehydratee) => {
-    e.add(
-      "society:dehydrated",
-      dehydratee.output[0].substring(2, dehydratee.output[0].length)
-    );
-  });
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
@@ -434,14 +428,11 @@ ServerEvents.tags("item", (e) => {
       if (fishId === "raw_snowflake") fishId = "frosty_fin";
       else fishId = fishId.substring(4, fishId.length);
     }
-
+    e.add("society:rod_fish", fish.item);
     e.add(
       `crabbersdelight:jei_display_results/society/${fishId}_bait`,
       fish.item
     );
-  });
-  global.agedRoe.forEach((preserve) => {
-    e.add("society:aged_roe", preserve.item);
   });
   global.geodeList.forEach((mineral) => {
     e.add("society:mineral", mineral.item);
@@ -451,9 +442,6 @@ ServerEvents.tags("item", (e) => {
   });
   global.magmaGeodeList.forEach((mineral) => {
     e.add("society:mineral", mineral.item);
-  });
-  global.pristine.forEach((mineral) => {
-    e.add("society:pristine_mineral", mineral.item);
   });
   e.add("forge:eggs", "society:cracked_egg");
   [

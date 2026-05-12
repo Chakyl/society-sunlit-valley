@@ -187,6 +187,8 @@ StartupEvents.registry("item", (e) => {
   e.create("splendid_slimes:slime_ticket").texture(
     "splendid_slimes:item/slime_ticket"
   );
+  e.create("society:rain_totem").texture("society:item/rain_totem");
+  e.create("society:thunder_totem").texture("society:item/thunder_totem");
   e.create("society:furniture_box").texture("society:item/furniture_box");
   const fantasyBoxes = [
     "nordic",
@@ -638,6 +640,7 @@ StartupEvents.registry("item", (e) => {
   ].forEach((item) => {
     e.create(`society:${item}`)
       .texture(`society:item/books/${item}`)
+      .tag("society:skill_book")
       .rarity("rare");
   });
   e.create("society:debt_caverns")
@@ -853,6 +856,7 @@ StartupEvents.registry("item", (e) => {
   global.dehydrated.forEach((dried) => {
     e.create(dried.item)
       .texture(`society:item/dried/${dried.item.path}`)
+      .tag("society:dehydrated")
       .food((food) => {
         food.hunger(9);
         food.saturation(0.5);
@@ -930,6 +934,7 @@ StartupEvents.registry("item", (e) => {
       texturePath = `${splitProduct[0]}:item/drinks/${splitProduct[1]}`;
     e.create(`society:aged_${splitProduct[1]}`)
       .texture(texturePath)
+      .tag("society:aged_product")
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
@@ -941,6 +946,7 @@ StartupEvents.registry("item", (e) => {
 
     e.create(`society:double_aged_${splitProduct[1]}`)
       .texture(texturePath)
+      .tag("society:double_aged_product")
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
@@ -1074,9 +1080,11 @@ StartupEvents.registry("item", (e) => {
     const roeHex = fishRoeMapping.find((val) => val.item === fish.item)?.hex;
     e.create(`society:${fishId}_roe`)
       .texture("society:item/roe")
+      .tag("society:roe")
       .color(0, roeHex);
     e.create(`society:aged_${fishId}_roe`)
       .texture("society:item/aged_roe")
+      .tag("society:aged_roe")
       .color(0, roeHex)
       .food((food) => {
         food.hunger(5);
@@ -1086,6 +1094,7 @@ StartupEvents.registry("item", (e) => {
       .texture("society:item/fish_bait")
       .color(0, roeHex)
       .tag("crabbersdelight:crab_trap_bait")
+      .tag("society:targeted_bait")
       .tooltip(Text.translatable("society.fish_bait.description").gray());
   });
 
@@ -1095,6 +1104,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/geode/${geode.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1103,6 +1113,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/frozen_geode/${geode.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1111,6 +1122,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/magma_geode/${geode.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1118,6 +1130,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${gem.item.path}`)
       .texture(`society:item/gems/${gem.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1132,6 +1145,7 @@ StartupEvents.registry("item", (e) => {
   vanillaPristine.forEach((gem) => {
     e.create(`society:pristine_${gem.path}`)
       .texture(`minecraft:item/${gem.path}`)
+      .tag("society:pristine_mineral")
       .glow(true)
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });

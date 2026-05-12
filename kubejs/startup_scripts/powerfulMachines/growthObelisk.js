@@ -2,17 +2,18 @@ console.info("[SOCIETY] growthObelisk.js loaded");
 
 const RandomSource = Java.loadClass("net.minecraft.util.RandomSource");
 
+const growthObeliskProgTime = 1000;
+
 global.runGrowthObelisk = (tickEvent) => {
   const { level, block, inventory } = tickEvent;
   const { x, y, z } = block;
   const server = level.server;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
-  const goldenClockProgTime = 1000;
   level.spawnParticles("snowyspirit:glow_light", true, x + 0.5, y + 2.2, z + 0.5, 0, 0, 0, 2, 2);
   if (
-    morningModulo >= goldenClockProgTime &&
-    morningModulo < goldenClockProgTime + artMachineTickRate
+    morningModulo >= growthObeliskProgTime &&
+    morningModulo < growthObeliskProgTime + artMachineTickRate
   ) {
     if (global.hasInventoryItems(inventory, "society:spark_gro", 1)) {
       global.useInventoryItems(inventory, "society:spark_gro", 1);
