@@ -1,43 +1,12 @@
 ^^^
 ## The Heart of the Community
-### v4.0.7
+### v4.0.8
 ^^^
 --- 
-## 4.0.7
-- Reworked hunger mechanics: Slimes will lose half their hunger at 6am every morning so they can be fed once a day 
-- Added proper largo sucking and shooting with the Slime Vac
-- Added ability for Slime Vac to shoot items from inventory without having to put in offhand
-- Added rendering of incubating slime to Slime Incubator
-- Added Slime Incubator incubation time to Jade
-- Added item capability to Slime Incubators (can insert slime hearts in via hopper)
-- Added ability for redstone signal to pause all Splendid Slimes machines
-- Added sell values to some random items
-- Added _config.js option for chat color functionality
-- Added Controller support
-- Added Smooth Salt Block it as a carpenter trade
-- Added default settings for JourneyMap and Controllable. These will only take effect on new instances unless the following files are manually deleted by the user.
-- Added RS Grid from Crafting Grid
-- Added creative mode plushie debugging functionality to Etcetera Wrench (right click mob)
-- Added Pack Icon
-- Auto-Grabbers will now wait half a day for the farmer to pet animals before harvesting low-quality products
-- Updated es_es translation (Thanks tukita83)
-- Increased tick rate of Slime Feeder to 80
-- Hid Auto-Petter from JEI/Quests to make it clear its a special bonus item
-- Improved performance of artisan machines 
-- Jade will now display Splendid Slime wild status next to happiness instead of replacing it
-- Fixed Raw Lead and Silver blocks not having smelting recipe
-- Fixed Artisan Hoppers inserting double into Wine Kegs 
-- Fixed Splendid Slime's Owner being null on servers
-- Fixed Slime feeders taking double items
-- Fixed config synching of slime owner offline check and enable tarrs being switched
-- Fixed slimes suffocating when shot out of vac in corner blocks
-- Fixed Crafts room quest having broken dependency
-- Fixed fees not taking into account shared accounts
-- Fixed some twigs blocks not having recipes
-- Fixed Smooth Salt Block loot table
-- Fixed Fluid Grid being unobtainable
-- Fixed Mashed Potatoes and Pasta with Broccoli recipes having wrong milk tag
-- Fixed /time set causing plushies to not get harvested
+# 4.0.8
+- Auto-Petter now triggers at 7am to avoid hunger debuff
+- Fixed default journeymap configs
+- Fixed season quest not having important info
 
 ## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
@@ -284,3 +253,39 @@
 - Fixed Aging Cask Broken clock not having rounded up display in jade/right click
 - Fixed strawberries having vegetable tag for real this time
 - Fixed exploits
+
+## 4.0.7
+- Reworked hunger mechanics: Slimes will lose half their hunger at 6am every morning so they can be fed once a day 
+- Added proper largo sucking and shooting with the Slime Vac
+- Added ability for Slime Vac to shoot items from inventory without having to put in offhand
+- Added rendering of incubating slime to Slime Incubator
+- Added Slime Incubator incubation time to Jade
+- Added item capability to Slime Incubators (can insert slime hearts in via hopper)
+- Added ability for redstone signal to pause all Splendid Slimes machines
+- Added sell values to some random items
+- Added _config.js option for chat color functionality
+- Added Controller support
+- Added Smooth Salt Block it as a carpenter trade
+- Added default settings for JourneyMap and Controllable. These will only take effect on new instances unless the following files are manually deleted by the user.
+- Added RS Grid from Crafting Grid
+- Added creative mode plushie debugging functionality to Etcetera Wrench (right click mob)
+- Added Pack Icon
+- Auto-Grabbers will now wait half a day for the farmer to pet animals before harvesting low-quality products
+- Updated es_es translation (Thanks tukita83)
+- Increased tick rate of Slime Feeder to 80
+- Hid Auto-Petter from JEI/Quests to make it clear its a special bonus item
+- Improved performance of artisan machines 
+- Jade will now display Splendid Slime wild status next to happiness instead of replacing it
+- Fixed Raw Lead and Silver blocks not having smelting recipe
+- Fixed Artisan Hoppers inserting double into Wine Kegs 
+- Fixed Splendid Slime's Owner being null on servers
+- Fixed Slime feeders taking double items
+- Fixed config synching of slime owner offline check and enable tarrs being switched
+- Fixed slimes suffocating when shot out of vac in corner blocks
+- Fixed Crafts room quest having broken dependency
+- Fixed fees not taking into account shared accounts
+- Fixed some twigs blocks not having recipes
+- Fixed Smooth Salt Block loot table
+- Fixed Fluid Grid being unobtainable
+- Fixed Mashed Potatoes and Pasta with Broccoli recipes having wrong milk tag
+- Fixed /time set causing plushies to not get harvested
