@@ -370,7 +370,7 @@ const trainerBuckets = new Map([
   ],
   [
     75,
-    [ 
+    [
       "trainer_may_003d",
     ],
   ],
@@ -460,7 +460,6 @@ const trainerBuckets = new Map([
       "ace_trainer_bowie",
       "channeler_rachel_0093",
       "picnicker_caitlin_009b",
-      "swimmerf_abigail_0224",
       "swimmerf_maria_0223",
       "swimmerm_garrett_0226",
       "ruin_mamoac_halotosis",
@@ -554,7 +553,7 @@ const trainerBuckets = new Map([
   ],
   [
     135,
-    ["dimensional_entity_0"],
+    ["dimensional_entity_0", "dimensional_entity_1", "dimensional_entity_2", "dimensional_entity_3"],
   ],
 ]);
 
