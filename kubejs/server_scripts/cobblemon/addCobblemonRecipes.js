@@ -23,6 +23,8 @@ ServerEvents.recipes((e) => {
   e.shapeless("simpletms:tm_waterpledge", ["society:prismatic_shard", "sunlit_cobblemon:water_pledge"]);
   e.shapeless("simpletms:tm_grasspledge", ["society:prismatic_shard", "sunlit_cobblemon:grass_pledge"]);
   e.shapeless("simpletms:tr_dracometeor", ["society:prismatic_shard", "4x sunlit_cobblemon:draco_meteorite"]);
+  e.shapeless("cobblemon:quick_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
+  e.shapeless("cobblemon:razor_claw", ["society:aquamagical_dust", "cobblemon:quick_claw"]);
   e.shaped("sunlit_cobblemon:uncharged_battery", [" zr", "zrz", "rz "], {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",
@@ -90,7 +92,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("sunlit_cobblemon:blazing_calamity", ["sunlit_cobblemon:fire_pledge", "sunlit_cobblemon:grass_pledge", 'society:recycled_core']);
   e.shapeless("sunlit_cobblemon:swampy_mystica_branch", ["sunlit_cobblemon:grass_pledge", "sunlit_cobblemon:water_pledge", "sunlit_cobblemon:mystica_branch", "society:sunlit_crystal"]);
   e.shapeless("sunlit_cobblemon:mystica_nectar", ["society:mossberry_stew", "sunlit_cobblemon:mystica_branch", "sunlit_cobblemon:swampy_mystica_branch"]);
-    e.shaped(
+  e.shaped(
     "sunlit_cobblemon:moongeist_crystal",
     ["dmb", "mfm", "rmd"],
     {

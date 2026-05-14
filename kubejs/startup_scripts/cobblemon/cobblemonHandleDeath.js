@@ -26,7 +26,7 @@ global.handleCobblemonDefeat = (e) => {
     let reward = 0;
     loserLevels.forEach((loserLevel) => {
       let variance = Math.random() * (1.5 - 0.5) + 0.5;
-      reward += Math.max(Math.round(loserLevel * 4 * getTrainerLevel(winningPlayer) * variance), 16);
+      reward += Math.min(2000, Math.max(Math.round(loserLevel * 4 * getTrainerLevel(winningPlayer) * variance), 16));
     });
     if (losingPlayer && losingPlayer.type == "rctmod:trainer") {
       let winStreak = winningPlayer.persistentData.winStreak;
@@ -34,7 +34,7 @@ global.handleCobblemonDefeat = (e) => {
       winningPlayer.persistentData.winStreak++;
       winningPlayer.persistentData.bagItemsUsed = 0;
       winStreak++;
-      if (winStreak % 10 == 0) {
+      if (winStreak <= 100 && winStreak % 10 == 0) {
         winningPlayer.tell(
           Text.translatable("sunlit_cobblemon.trainer_podium.win_streak_upgraded", `${Number(winningPlayer.persistentData.winStreak)}`, `${Number((winningPlayer.persistentData.winStreak / 10) * 1.25)}`).green()
         );
@@ -43,8 +43,9 @@ global.handleCobblemonDefeat = (e) => {
           Text.translatable("sunlit_cobblemon.trainer_podium.win_streak", `${Number(winningPlayer.persistentData.winStreak)}`).gold()
         );
       }
+      reward = Math.min(5000, reward)
       if (winStreak > 10) {
-        reward *= Math.floor(winStreak / 10) * 1.25;
+        reward *= Math.floor(Math.min(winStreak, 100) / 10) * 1.25;
       }
       if (winningPlayer && winningPlayer.stages.has("the_art_of_battle")) {
         reward *= 1.25
