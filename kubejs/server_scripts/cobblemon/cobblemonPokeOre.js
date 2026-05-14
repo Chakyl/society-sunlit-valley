@@ -263,7 +263,7 @@ const uncoverOrePokemon = (level, server, block, pos) => {
       } level=${pokeLevel} ${caughtMon.variant ? caughtMon.variant : ""}`
     );
     server.runCommandSilent(
-      `playsound cobblemon:impact.rock block @a ${pos.x} ${pos.y} ${pos.z}`
+      `playsound cobblemon:impact.rock block @a ${pos.x} ${pos.y} ${pos.z} 0.3 1`
     );
     level.spawnParticles(
       "species:poof",

@@ -187,7 +187,7 @@ const uncoverCropPokemon = (level, server, block, initialPos, pos) => {
         } level=${pokeLevel} ${caughtMon.variant ? caughtMon.variant : ""}`
       );
       server.runCommandSilent(
-        `playsound cobblemon:impact.grass block @a ${pos.x} ${pos.y} ${pos.z}`
+        `playsound cobblemon:impact.grass block @a ${pos.x} ${pos.y} ${pos.z} 0.3 1`
       );
       level.spawnParticles(
         "species:poof",
