@@ -20,6 +20,10 @@ const colorMap = [
 PlayerEvents.chat((e) => {
   let { player, message, server } = e;
   if (global.enableChatColors) {
+    if (message.includes("</")) {
+      server.tell(` ${player.username} » ${message}`);
+      e.cancel();
+    }
     let curios = player.nbt.ForgeCaps["curios:inventory"];
     let arrow = "&7»&r";
     let color = "&f";
@@ -27,10 +31,7 @@ PlayerEvents.chat((e) => {
       const { dye, code } = mappedColor;
       if (curios.toString().includes(dye)) color = `&${code}`;
     });
-
-    let userName = player.name.toString().match(/\{(.+)\}/)[1];
-
-    let fullMessage = ` ${color}${userName} ${arrow} ${message}`;
+    let fullMessage = ` ${color}${player.username} ${arrow} ${message}`;
     fullMessage = addColor(fullMessage);
     server.tell(fullMessage);
     e.cancel();
