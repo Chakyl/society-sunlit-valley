@@ -14,6 +14,8 @@
 	creaking_particle_reverse_color = 16545810
 	#allow resin to appear on chests at woodland mansions
 	resin_loot = true
+	#allow Creaking Hearts to generate Creakings even during the day
+	do_creaking_hearts_work_on_day = false
 
 ["Chase the Skies"]
 	#allow dried ghasts to be obtainable through nether fossils and piglin bartering
@@ -84,4 +86,6 @@
 	do_sulfur_cubes_damage = true
 	#allow Wanderer traders to sell contents from Chaos Cubed
 	do_merchant_trade_chaos_cubed_contents = true
+	#allows the bounce music disc to generate on abandoned mineshafts
+	has_bounce_music_disc = true
 

@@ -6,42 +6,18 @@
 		#Allowed Values: NORMAL, REDUCED, MINIMAL, OFF
 		mode = "NORMAL"
 
-	[dragonlib_common_config.debug]
-		#Prints addidional information about the networking system in the console. For debugging purposes. (Default: OFF)
-		networking_logging = false
-
-	[dragonlib_common_config.time_system]
-		#When enabled, DragonLib automatically adjusts the time system, depending on which time modification mod is installed and whether a compat is available for it. (Default: ON)
-		auto_adjustment = false
-		#in Ticks
-		#The number of ticks per Minecraft day. This value is overridden if [Auto Adjustment] is enabled. (Default: 24000)
-		#Range: 1 ~ 9223372036854775807
+	[dragonlib_common_config.time]
+		#The number of ticks for one Minecraft day. If in doubt, leave it unchanged! (Default: 24000)
+		#Range: > 0
 		ticks_per_day = 24000
-		#in Ticks Per Second
-		#The ticks per second at which time of day advances. This value is overridden when [Auto Adjustment] is enabled or when time zones are defined. (Default: 20)
-		#Range: 0.0 ~ 2.147483647E9
-		ticks_per_second = 20.0
-		#The proportion of the total day duration by which the clock time is shifted. By default, 0 ticks = 06:00, for which the time must be shifted by 25% of the day length. (Default: 0.25)
-		#Range: 0.0 ~ 1.0
-		daytime_shift = 0.25
-		#in Milliseconds
-		#To improve performance during frequent queries of the default time system, the found time system can be cached for a certain period. Higher values may produce less accurate results because the time system is not updated immediately, for example, when a datapack is loaded. A value of 0 disables the cache. (Default: 100)
-		#A GAME RESTART IS REQUIRED FOR CHANGES TO TAKE EFFECT!
-		#Range: 0 ~ 10000
-		time_system_cache_ttl = 100
+		#The scale of the tick length. 1 means that a tick has normal duration (0.05 seconds). 20 would therefore result in a length of 1 second per tick. If in doubt, leave it unchanged! (Default: 1)
+		#Range: 0.0 ~ 1.7976931348623157E308
+		time_multiplier = 1.0
+		#The number of ticks by which the time of day is shifted to match the real daytime. By default, 0 ticks is 6 AM, but 0 ticks should represent 12 AM (midnight). If in doubt, leave it unchanged! (Default: 6000)
+		#Range: > 0
+		daytime_shift = 6000
 
-	[dragonlib_common_config.networking]
-		#in Seconds
-		#The time to wait for a response before an error is thrown. (Default: 60)
-		#Range: 10 ~ 300
-		response_timeout = 60
-		#in Seconds
-		#The maximum amount of time a networking thread can be busy before the task is terminated. (Default: 30)
-		#A WORLD RESTART IS REQUIRED FOR CHANGES TO TAKE EFFECT!
-		#Range: 10 ~ 60
-		thread_timeout = 30
-		#The number of threads to be used for networking. This should not exceed the number of available CPU cores, as more threads will cause performance issues. By default (auto = 0), the amount of available CPU cores are used, but at least two. (Default: 0)
-		#A WORLD RESTART IS REQUIRED FOR CHANGES TO TAKE EFFECT!
-		#Range: 0 ~ 32
-		thread_count = 0
+	[dragonlib_common_config.compat]
+		#Hides the warning when Sodium is installed, but no mod that fixes the visual glitches.
+		hide_sodium_warning = false
 
