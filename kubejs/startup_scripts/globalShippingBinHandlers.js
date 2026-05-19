@@ -196,14 +196,11 @@ global.handleShippingBinDebt = (
       newValue = value - totalDebt;
       debtPaid = totalDebt;
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getTopLeftETAQueueCommand(
           player.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          "debt_paid",
           160,
-          Text.translatable(
-            "society.shipping_bin.debt_paid_all",
-            global.formatPrice(debtPaid.toFixed())
-          ).toJson()
+          `<lang key='society.shipping_bin.debt_paid_all' args='${finalName},${global.formatPrice(debtPaid.toFixed())}'>`
         )
       );
       global.setDebt(server, playerUUID, 0);
@@ -211,14 +208,11 @@ global.handleShippingBinDebt = (
       debtPaid = value;
       newValue = 0;
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getTopLeftETAQueueCommand(
           player.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          "debt_paid",
           160,
-          Text.translatable(
-            "society.shipping_bin.debt_paid",
-            global.formatPrice(debtPaid.toFixed())
-          ).toJson()
+          `<lang key='society.shipping_bin.debt_paid' args='${finalName},${global.formatPrice(debtPaid.toFixed())}'>`
         )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
@@ -300,15 +294,11 @@ global.processValueOutput = (
         let customName = global.getShippingBinName(block.getEntityData().data, true);
         let finalName = customName ? ` ${customName} ` : "";
         server.runCommandSilent(
-          global.getEmbersTextAPICommand(
+          global.getTopLeftETAQueueCommand(
             player.username,
-            `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+            "income",
             160,
-            Text.translatable(
-              "society.shipping_bin.goods_sold",
-              finalName,
-              global.formatPrice(value.toFixed()),
-            ).toJson()
+            `<lang key='society.shipping_bin.goods_sold' args='${finalName},${global.formatPrice(value.toFixed())}'>`
           )
         );
       }
@@ -366,11 +356,11 @@ global.processValueOutput = (
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getTopLeftETAQueueCommand(
           player.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          "fee",
           160,
-          Text.translatable("society.shipping_bin.full").toJson()
+          `<lang key='society.shipping_bin.full'>`
         )
       );
     }

@@ -62,48 +62,12 @@ StartupEvents.registry("fluid", (e) => {
     .displayName("White Grape Juice")
     .tag("vinery:white_grape_juice");
 
-  e.create("vinery:white_jungle_grape_juice")
-    .thinTexture(0x1c744c)
-    .bucketColor(0x1c744c)
-    .displayName("White Jungle Grape Juice")
-    .tag("vinery:white_jungle_grape_juice");
-
-  e.create("vinery:white_savanna_grape_juice")
-    .thinTexture(0x648454)
-    .bucketColor(0x648454)
-    .displayName("White Savanna Grape Juice")
-    .tag("vinery:white_savanna_grape_juice");
-
-  e.create("vinery:white_taiga_grape_juice")
-    .thinTexture(0x549c6c)
-    .bucketColor(0x549c6c)
-    .displayName("White Taiga Grape Juice")
-    .tag("vinery:white_taiga_grape_juice");
-
   e.create("vinery:red_grape_juice")
     .thinTexture(0x6c3c74)
     .bucketColor(0x6c3c74)
     .displayName("Red Grape Juice")
     .tag("vinery:red_grape_juice");
-
-  e.create("vinery:red_jungle_grape_juice")
-    .thinTexture(0x44144c)
-    .bucketColor(0x44144c)
-    .displayName("Red Jungle Grape Juice")
-    .tag("vinery:red_jungle_grape_juice");
-
-  e.create("vinery:red_savanna_grape_juice")
-    .thinTexture(0x3c2474)
-    .bucketColor(0x3c2474)
-    .displayName("Red Savanna Grape Juice")
-    .tag("vinery:red_savanna_grape_juice");
-
-  e.create("vinery:red_taiga_grape_juice")
-    .thinTexture(0x693468)
-    .bucketColor(0x693468)
-    .displayName("Red Taiga Grape Juice")
-    .tag("vinery:red_taiga_grape_juice");
-
+    
   e.create("nethervinery:crimson_grape_juice")
     .thinTexture(0xf10959)
     .bucketColor(0xf10959)

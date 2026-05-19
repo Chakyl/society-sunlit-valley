@@ -531,6 +531,7 @@ global.removedItems = [
   "sophisticatedstorage:advanced_pump_upgrade",
   "sophisticatedstorage:pump_upgrade",
   "quark:blackstone_furnace",
+  "quark:pathfinders_quill",
   "quark:dirty_glass",
   "quark:dirty_glass_pane",
   "candlelight:cooking_pan",
