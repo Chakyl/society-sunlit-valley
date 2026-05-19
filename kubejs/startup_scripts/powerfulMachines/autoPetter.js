@@ -1,7 +1,7 @@
 console.info("[SOCIETY] autoPetter.js loaded");
 
 const autoPetterTickRate = 20;
-const autoPetterProgTime = 20;
+const autoPetterProgTime = 1000;
 
 global.runAutoPetter = (entity) => {
   const { block, level } = entity;
