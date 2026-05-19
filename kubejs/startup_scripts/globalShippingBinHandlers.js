@@ -200,7 +200,7 @@ global.handleShippingBinDebt = (
           player.username,
           "debt_paid",
           160,
-          `<lang key='society.shipping_bin.debt_paid_all' args='${finalName},${global.formatPrice(debtPaid.toFixed())}'>`
+          `<lang key='society.shipping_bin.debt_paid_all' args='${global.getSanitizedETALangArgs([finalName, global.formatPrice(debtPaid.toFixed())])}'>`
         )
       );
       global.setDebt(server, playerUUID, 0);
@@ -212,7 +212,7 @@ global.handleShippingBinDebt = (
           player.username,
           "debt_paid",
           160,
-          `<lang key='society.shipping_bin.debt_paid' args='${finalName},${global.formatPrice(debtPaid.toFixed())}'>`
+          `<lang key='society.shipping_bin.debt_paid' args='${global.getSanitizedETALangArgs([finalName, global.formatPrice(debtPaid.toFixed())])}'>`
         )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
@@ -298,7 +298,7 @@ global.processValueOutput = (
             player.username,
             "income",
             160,
-            `<lang key='society.shipping_bin.goods_sold' args='${finalName},${global.formatPrice(value.toFixed())}'>`
+            `<lang key='society.shipping_bin.goods_sold' args='${global.getSanitizedETALangArgs([finalName, global.formatPrice(value.toFixed())])}'>`
           )
         );
       }

@@ -10,21 +10,14 @@ ItemEvents.entityInteracted((e) => {
     let gift = level.createEntity("minecraft:item");
 
     if (!data.gifted && data.affection >= 1000) {
-      let nonIdType = String(target.type).path.replace(/_/g, " ");
-      let name = target.customName ? target.customName : global.getTranslatedEntityName(String(target.type), global.formatName(nonIdType));
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username, 
-          // Commented code is original one before 2025.12.22 (84067a9), and I think this is right code. so I attached.
-          // `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#55FF55",y:-90}`, 
-          // 80, 
-          // Text.translatable("society.husbandry.pet.max_affection", name).toJson(),
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:20}`, 
-          40, 
-          Text.translatable("society.husbandry.pet.max_affection").toJson()
+        global.getCenterETAQueueCommand(
+          player.username,
+          "warning",
+          160,
+          `<lang key='society.husbandry.pet.max_affection>`
         )
       );
-
       global.petGifts.forEach((gift) => {
         if (gift.animal === target.type) possibleGifts = gift.gifts;
       });

@@ -26,12 +26,13 @@ ItemEvents.entityInteracted((e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") || target.isBaby()) return;
   if (breedingItems.includes(item.id)) {
+    server.runCommandSilent(`eta clearqueue ${player.username} center`);
     server.runCommandSilent(
-      global.getEmbersTextAPICommand(
+      global.getCenterETAQueueCommand(
         player.username,
-        global.animalMessageSettings,
+        "error",
         160,
-        Text.translatable("society.husbandry.breeding.need_potion").toJson()
+        `<lang key='society.husbandry.breeding.need_potion'>`
       )
     );
     e.cancel();
@@ -40,12 +41,13 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
     if (global.checkEntityTag(target, "society:infertile")) {
+      server.runCommandSilent(`eta clearqueue ${player.username} center`);
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          global.animalMessageSettings,
-          120,
-          Text.translatable("society.husbandry.breeding.infertile").toJson()
+          "error",
+          160,
+          `<lang key='society.husbandry.breeding.infertile'>`
         )
       );
       e.cancel();
@@ -61,12 +63,13 @@ ItemEvents.entityInteracted((e) => {
       ) {
         item.count--;
         target.persistentData.ageLastBred = day;
+        server.runCommandSilent(`eta clearqueue ${player.username} center`);
         server.runCommandSilent(
-          global.getEmbersTextAPICommand(
+          global.getCenterETAQueueCommand(
             player.username,
-            global.animalMessageSettings,
+            "error",
             160,
-            Text.translatable("society.husbandry.breeding.fail").toJson()
+            `<lang key='society.husbandry.breeding.fail'>`
           )
         );
       } else {
@@ -92,12 +95,13 @@ ItemEvents.entityInteracted((e) => {
       }
     } else if (day > ageLastBred) {
       global.addItemCooldown(player, "society:miracle_potion", 40);
+      server.runCommandSilent(`eta clearqueue ${player.username} center`);
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          global.animalMessageSettings,
+          "error",
           120,
-          Text.translatable("society.husbandry.breeding.cooldown").toJson()
+          `<lang key='society.husbandry.breeding.cooldown'>`
         )
       );
     }

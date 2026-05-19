@@ -33,10 +33,10 @@ const getSpeeds = (seed, level) => {
     }
     speeds.push([
       Math.random() * (1.2 + adjustment(boostFirstSprint) - (0.7 - adjustment(sleepyFirstSprint))) +
-        1,
+      1,
       Math.random() *
-        (1.2 + adjustment(boostSecondSprint) - (0.7 - adjustment(sleepySecondSprint))) +
-        1,
+      (1.2 + adjustment(boostSecondSprint) - (0.7 - adjustment(sleepySecondSprint))) +
+      1,
     ]);
   });
   return speeds;
@@ -229,8 +229,7 @@ const paintPig = (player, server, xOffset, speeds, halfwayPoint, ranking) => {
     ) {
       secondWindChange = speeds[index][1] > speeds[index][0];
       server.runCommandSilent(
-        `playsound ${secondWindChange ? "trials:breeze_idle" : "trials:spawner_summon"} player @a ${
-          player.x
+        `playsound ${secondWindChange ? "trials:breeze_idle" : "trials:spawner_summon"} player @a ${player.x
         } ${player.y} ${player.z}`
       );
       pigElement[`${id}Change`] = {
@@ -315,8 +314,8 @@ const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) =
         });
         server.tell(
           Text.translatable(
-            "society.pig_race.multiplay.result", 
-            ":first_place_medal:", 
+            "society.pig_race.multiplay.result",
+            ":first_place_medal:",
             Text.gold(player.username),
             Text.gold(global.formatPrice(Math.min(poolValue, betValue * 2))),
             global.getPigColoredName(betPig)
@@ -330,8 +329,8 @@ const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) =
         });
         server.tell(
           Text.translatable(
-            "society.pig_race.multiplay.result", 
-            ":second_place_medal:", 
+            "society.pig_race.multiplay.result",
+            ":second_place_medal:",
             Text.gold(player.username),
             Text.gold(global.formatPrice(Math.min(poolValue, betValue))),
             global.getPigColoredName(betPig)
@@ -345,8 +344,8 @@ const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) =
         });
         server.tell(
           Text.translatable(
-            "society.pig_race.multiplay.result", 
-            ":third_place_medal:", 
+            "society.pig_race.multiplay.result",
+            ":third_place_medal:",
             Text.gold(player.username),
             Text.gold(global.formatPrice(Math.min(poolValue, betValue / 2))),
             global.getPigColoredName(betPig)
@@ -430,22 +429,22 @@ const validTicket = (e, bet) => {
 
   if (!coins.includes(bet.id)) {
     server.runCommandSilent(
-      global.getEmbersTextAPICommand(
+      global.getCenterETAQueueCommand(
         player.username,
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`,
-        80, 
-        Text.translatable("society.pig_race.need_coin").toJson()
+        "error",
+        80,
+        `<lang key='society.pig_race.need_coin'>`
       )
     );
     return false;
   }
   if (!item.nbt) {
     server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username, 
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
-        80, 
-        Text.translatable("society.pig_race.need_to_select_pig").toJson()
+      global.getCenterETAQueueCommand(
+        player.username,
+        "error",
+        80,
+        `<lang key='society.pig_race.need_to_select_pig'>`
       )
     );
     return false;
@@ -486,11 +485,11 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
 
   if (raceData.pigraceInProgress) {
     server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username, 
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
-        80, 
-        Text.translatable("society.pig_race.multiplay.in_progress").toJson()
+      global.getCenterETAQueueCommand(
+        player.username,
+        "error",
+        80,
+        `<lang key='society.pig_race.multiplay.in_progress'>`
       )
     );
     return;
@@ -522,7 +521,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
     server.scheduleInTicks(bettingPeriod / 2, () => {
       server.tell(
         Text.translatable(
-          "society.pig_race.multiplay.start_in_minute", 
+          "society.pig_race.multiplay.start_in_minute",
           `${bettingPeriod / (2 * 20 * 60)}`
         ).gray()
       );
@@ -554,7 +553,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
         });
         server.tell(
           Text.translatable(
-            "society.pig_race.multiplay.started", 
+            "society.pig_race.multiplay.started",
             `${global.formatPrice(prizePool)}`
           ).gray()
         );

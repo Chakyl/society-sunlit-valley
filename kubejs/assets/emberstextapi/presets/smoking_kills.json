@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "effects": [
+    {
+      "type": "shake",
+      "params": {
+        "a": 0.5,
+        "f": 3.0
+      }
+    },
+    {
+      "type": "fade",
+      "params": {
+        "a": 0.4,
+        "f": 1.5
+      }
+    }
+  ],
+  "styles": {
+    "color": "FF5555"
+  }
+}

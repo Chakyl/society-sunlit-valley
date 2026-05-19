@@ -11,24 +11,22 @@ ItemEvents.entityInteracted((e) => {
     let plushieNbt = plushie.getNbt();
     let errorString = "";
     if (Number(animalData.getInt("affection") || 0) < 1000) {
-      errorString =
-        "society.husbandry.sunlit_crystal.not_enough_animal_affection";
+      errorString = "society.husbandry.sunlit_crystal.not_enough_animal_affection";
     }
     if (!plushie.hasTag("society:plushies")) {
       errorString = "society.husbandry.sunlit_crystal.not_plushie";
     } else if (Number(plushieNbt.get("affection")) < 4) {
-      errorString =
-        "society.husbandry.sunlit_crystal.not_enough_plushie_affection";
+      errorString = "society.husbandry.sunlit_crystal.not_enough_plushie_affection";
     } else if (plushieNbt.get("animal")) {
       errorString = "society.husbandry.sunlit_crystal.has_animal";
     }
     if (errorString) {
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          global.animalMessageSettings,
-          80,
-          Text.translatable(errorString).toJson()
+          "error",
+          120,
+          `<lang key='${errorString}'>`
         )
       );
       return;

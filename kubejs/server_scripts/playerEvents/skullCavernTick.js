@@ -12,10 +12,11 @@ PlayerEvents.tick((e) => {
           `playsound minecraft:ambient.cave block @a ${e.player.x} ${e.player.y} ${e.player.z}`
         );
         server.runCommandSilent(
-          global.getEmbersTextAPICommand(player.username,
-            `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
+          global.getCenterETAQueueCommand(
+            player.username,
+            "spooky",
             200,
-            Text.translatable("society.skull_cavern.late").toJson()
+            `<lang key='society.skull_cavern.late'>`
           )
         );
       }
@@ -25,10 +26,11 @@ PlayerEvents.tick((e) => {
     if (timeModulo >= 20000) {
       if (timeModulo <= 20200) {
         server.runCommandSilent(
-          global.getEmbersTextAPICommand(player.username,
-            `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
+          global.getCenterETAQueueCommand(
+            player.username,
+            "spooky",
             200,
-            Text.translatable("society.skull_cavern.concern").toJson()
+            `<lang key='society.skull_cavern.concern'>`
           )
         );
       }
@@ -41,11 +43,11 @@ PlayerEvents.tick((e) => {
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
+          "spooky",
           200,
-          Text.translatable("society.skull_cavern.fainted").toJson()
+          `<lang key='society.skull_cavern.fainted'>`
         )
       );
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);

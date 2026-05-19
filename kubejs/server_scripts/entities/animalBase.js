@@ -195,10 +195,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     );
     global.giveExperience(server, player, "husbandry", Math.max(10, 20 * hearts));
     if (!livableArea && !data.clockwork) {
-      errorText = Text.translatable(
-        "society.husbandry.crowded",
-        name
-      ).toJson();
+      errorText = `<lang key='society.husbandry.crowded' args='${global.getSanitizedETALangArg(name)}'>`
     }
     if (
       !hungry &&
@@ -206,27 +203,26 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       !player.isFake() &&
       !item.hasTag("society:animal_feed")
     ) {
+      server.runCommandSilent(`eta clearqueue ${player.username} center`);
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:20}`,
-          40,
-          Text.translatable("society.husbandry.peckish", name).toJson()
+          "warning",
+          120,
+          `<lang key='society.husbandry.peckish'>`
         )
       );
     }
     if (hungry) {
-      errorText = Text.translatable(
-        "society.husbandry.starved",
-        name
-      ).toJson();
+      errorText = `<lang key='society.husbandry.starved' args='${global.getSanitizedETALangArg(name)}'>`
     }
     if (errorText && !player.isFake()) {
+      server.runCommandSilent(`eta clearqueue ${player.username} center`);
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          global.animalMessageSettings,
-          40,
+          "error",
+          120,
           errorText
         )
       );
@@ -280,27 +276,19 @@ const handleMilk = (name, data, day, hungry, e) => {
       0.01
     );
   } else if (target.isBaby()) {
-    errorText = Text.translatable(
-      "society.husbandry.action.young",
-      name
-    ).toJson();
+    errorText = `<lang key='society.husbandry.peckish' args='${global.getSanitizedETALangArg(name)}'>`
   } else if (hungry) {
-    errorText = Text.translatable(
-      "society.husbandry.action.hungry",
-      name
-    ).toJson();
+    errorText = `<lang key='society.husbandry.hungry' args='${global.getSanitizedETALangArg(name)}'>`
   } else {
-    errorText = Text.translatable(
-      "society.husbandry.action.cooldown_1",
-      name
-    ).toJson();
+    errorText = `<lang key='society.husbandry.action.cooldown_1' args='${global.getSanitizedETALangArg(name)}'>`
   }
   if (errorText && !player.isFake()) {
+    server.runCommandSilent(`eta clearqueue ${player.username} center`);
     server.runCommandSilent(
-      global.getEmbersTextAPICommand(
+      global.getCenterETAQueueCommand(
         player.username,
-        global.animalMessageSettings,
-        20,
+        "error",
+        120,
         errorText
       )
     );
@@ -408,25 +396,21 @@ const handleMagicHarvest = (name, data, e) => {
     }
     global.addItemCooldown(player, item, 1);
   } else {
-    errorText = Text.translatable(
-      "society.husbandry.action.cooldown_2",
-      name
-    ).toJson();
+    errorText = `<lang key='society.husbandry.action.cooldown_2' args='${global.getSanitizedETALangArg(name)}'>`
     if (hearts < 5) {
-      errorText = Text.translatable(
-        "society.husbandry.action.need_hearts",
-        name
-      ).toJson();
+      errorText = `<lang key='society.husbandry.action.need_hearts' args='${global.getSanitizedETALangArg(name)}'>`
     }
-    if (!player.isFake())
+    if (!player.isFake()) {
+      server.runCommandSilent(`eta clearqueue ${player.username} center`);
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          global.animalMessageSettings,
-          40,
+          "error",
+          120,
           errorText
         )
       );
+    }
     global.addItemCooldown(player, item, 10);
   }
 };
@@ -606,14 +590,11 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (player.cooldowns.isOnCooldown(item)) return;
         if (hearts < 5) {
           server.runCommandSilent(
-            global.getEmbersTextAPICommand(
+            global.getCenterETAQueueCommand(
               player.username,
-              global.animalMessageSettings,
-              40,
-              Text.translatable(
-                "society.husbandry.action.need_hearts",
-                name
-              ).toJson()
+              "error",
+              120,
+              `<lang key='society.husbandry.action.need_hearts' args='${global.getSanitizedETALangArg(name)}'>`
             )
           );
         } else {
@@ -688,11 +669,11 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (data.bff) {
           data.bff = false;
           server.runCommandSilent(
-            global.getEmbersTextAPICommand(
+            global.getCenterETAQueueCommand(
               player.username,
-              global.animalMessageSettings,
-              80,
-              Text.translatable("society.husbandry.mechanization").toJson()
+              "error",
+              120,
+              `<lang key='society.husbandry.mechanization'>`
             )
           );
         }
@@ -732,11 +713,11 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         if (data.clockwork) {
           data.clockwork = false;
           server.runCommandSilent(
-            global.getEmbersTextAPICommand(
+            global.getCenterETAQueueCommand(
               player.username,
-              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
-              80,
-              Text.translatable("society.husbandry.emancipation").toJson()
+              "success",
+              120,
+              `<lang key='society.husbandry.emancipation'>`
             )
           );
         }
@@ -839,11 +820,11 @@ BlockEvents.rightClicked(global.plushies, (e) => {
         },
       });
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          global.animalMessageSettings,
-          80,
-          Text.translatable("society.husbandry.mechanization").toJson()
+          "error",
+          120,
+          `<lang key='society.husbandry.mechanization'>`
         )
       );
     }
@@ -901,11 +882,11 @@ BlockEvents.rightClicked(global.plushies, (e) => {
         },
       });
       server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+        global.getCenterETAQueueCommand(
           player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
-          80,
-          Text.translatable("society.husbandry.emancipation").toJson()
+          "success",
+          120,
+          `<lang key='society.husbandry.emancipation'>`
         )
       );
     }
