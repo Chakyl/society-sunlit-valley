@@ -4,4 +4,6 @@
 ^^^
 --- 
 
+- Artisan Hoppers can now work while the owner is offline
+
 TODO
