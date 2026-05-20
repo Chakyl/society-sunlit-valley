@@ -562,8 +562,8 @@ StartupEvents.registry("block", (event) => {
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(600, 0, (entity) => {
         global.artisanHopperScan(entity, 3);
-      }),
-        blockInfo.rightClickOpensInventory();
+      });
+      blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
           .insertItem((blockEntity, slot, stack, simulate) =>
