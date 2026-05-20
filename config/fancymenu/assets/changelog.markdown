@@ -1,9 +1,9 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.5-SSV4.0.8
+### v1.0.6-SSV4.0.8
 ^^^
 --- 
-## 1.0.5-SSV4.0.8 
+## 1.0.6-SSV4.0.8 
 - Added 2 random TRs per day sold at the ball botique
 - Added Quick Claw -> Razor Claw transmutation and vice versa
 - Added Trader trades for Chipped Pot and Masterpiece Teacups

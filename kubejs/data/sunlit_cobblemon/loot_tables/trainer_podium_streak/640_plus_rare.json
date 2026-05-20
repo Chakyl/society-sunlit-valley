@@ -1,0 +1,105 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "sunlit_cobblemon:sun_raid_statue"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "cobblemon:beast_ball"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:relic_trove"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "unimplemented_items:bottle_cap_sa"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "unimplemented_items:bottle_cap_atk"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "unimplemented_items:bottle_cap_def"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "unimplemented_items:bottle_cap_sd"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "unimplemented_items:bottle_cap_spd"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "unimplemented_items:bottle_cap_hp"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "cobblemon:ability_capsule"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:broken_clock"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:pink_matter"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:black_opal"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:ancient_roe"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:enkephalin"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "society:inserter"
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 1
+			},
+			"weight": 10,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "sunlit_cobblemon:trainer_podium_streak/320_plus_rare"
+				}
+			]
+		}
+	]
+}

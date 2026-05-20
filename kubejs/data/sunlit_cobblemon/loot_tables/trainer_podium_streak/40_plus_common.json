@@ -1,0 +1,130 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:exp_candy_m",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:genius_mochi",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:clever_mochi",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:health_mochi",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:swift_mochi",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:resist_mochi",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:muscle_mochi",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 1
+			},
+			"weight": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "sunlit_cobblemon:trainer_podium_streak/20_plus_common"
+				}
+			]
+		}
+	]
+}

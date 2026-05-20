@@ -47,6 +47,20 @@ global.handleCobblemonDefeat = (e) => {
       if (winStreak > 10) {
         reward *= Math.floor(Math.min(winStreak, 100) / 10) * 1.25;
       }
+      if (winStreak >= 20) {
+        global.getStreakRewards(winningPlayer, losingPlayer.getOnPos(), winStreak);
+        if (winStreak % 15 == 0) {
+          let reward;
+          for (let i = 0; i < Math.max(1, (Math.floor(winStreak / 15) - 1) / 2); i++) {
+            reward = player.level.createEntity("minecraft:item");
+            reward.x = pos.x + 0.5;
+            reward.y = pos.y + 0.4;
+            reward.z = pos.z + 0.5;
+            reward.item = "sunlit_cobblemon:sunlit_league_medallion";
+            reward.spawn();
+          }
+        }
+      }
       if (winningPlayer && winningPlayer.stages.has("the_art_of_battle")) {
         reward *= 1.25
       } else if (winningPlayer && Math.random() < 0.01) {

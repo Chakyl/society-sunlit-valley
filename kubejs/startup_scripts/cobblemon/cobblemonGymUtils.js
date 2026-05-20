@@ -356,27 +356,32 @@ const trainerBuckets = new Map([
       "swimmerm_dean_00f3",
       "swimmerm_douglas_00ee",
       "fisherman_wade_00e7",
-      "fisherman_claude_00e6",
       "burglar_arnie_00d8",
       "burglar_lewis_00db",
       "burglar_simon_00da",
       "super_nerd_zac_00b4",
       "bird_keeper_porto",
-      "scientist_ted_014f",
-      "swimmerf_nora_010f",
-      "swimmerm_darrin_00f4",
       "picnicker_missy_01d8",
     ],
   ],
   [
     75,
     [
-      "trainer_may_003d",
+      "scientist_ted_014f",
+      "swimmerf_nora_010f",
+      "swimmerm_darrin_00f4",
+      "black_belt_blanche",
+      "fisherman_claude_00e6",
+      "ace_trainer_jexy",
+      "fisher_big_bite",
+      "ace_trainer_stalwart",
+      "black_belt_blanche"
     ],
   ],
   [
     80,
     [
+      "trainer_may_003d",
       "super_nerd_tolstoy",
       "ace_trainer_stream",
       "fisher_big_bite",
@@ -564,14 +569,58 @@ global.getRandomTrainer = (levelBucket) => {
   return trainerBucket[rnd(0, trainerBucket.length - 1)];
 };
 
-global.getPlayerPodiumLevelTier = (player, partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5 + (Math.floor(player.persistentData.winStreak / 10) * 5)));
+global.getPlayerPodiumLevelTier = (player, partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5 + (Math.floor(player.persistentData.winStreak / 10) * 5)) - 5);
 
 const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma"];
 const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
 
 global.getLeagueBoss = (levelBucket) => {
-  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 2);
+  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 3);
   if (levelBucket == 105) bossNumber = 8;
   if (bossNumber >= 9) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}${bossNumber}`;
   return `league_${leagueBosses[rnd(0, leagueBosses.length - 1)]}${bossNumber}`;
+};
+
+const getWinStreakBucket = (winStreak) => {
+  let buckets = [1000, 640, 320, 160, 80, 40, 20];
+  for (let i = 0; i < buckets.length; i++) {
+    if (winStreak >= buckets[i]) {
+      return buckets[i];
+    }
+  }
+  return -1;
+}
+global.getStreakRewards = (player, pos, winStreak) => {
+  let rewardTier = getWinStreakBucket(winStreak)
+  if (rewardTier == -1) return;
+  let reward;
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_streak/${rewardTier}_plus_common`).toArray();
+  rolledLoot.forEach((item) => {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = item;
+    reward.spawn();
+  });
+  if (Math.random() <= 0.15) {
+    player.tell("rolled_rare")
+    rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_streak/${rewardTier}_plus_rare`).toArray();
+    rolledLoot.forEach((item) => {
+      reward = player.level.createEntity("minecraft:item");
+      reward.x = pos.x + 0.5;
+      reward.y = pos.y + 0.4;
+      reward.z = pos.z + 0.5;
+      reward.item = item;
+      reward.spawn();
+    });
+    if (winStreak >= 640 && player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
+      reward = player.level.createEntity("minecraft:item");
+      reward.x = pos.x + 0.5;
+      reward.y = pos.y + 0.4;
+      reward.z = pos.z + 0.5;
+      reward.item = "society:animal_cracker";
+      reward.spawn();
+    }
+  }
 };

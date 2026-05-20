@@ -1,0 +1,60 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "sunlit_cobblemon:prismatic_tm_pack"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "cobblemon:ability_patch"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "sunlit_cobblemon:mystery_gift"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "cobblemon:cherish_ball"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:master_ball"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "sunlit_cobblemon:sun_mirror"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "cobblemon_farmers:worker_permit"
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 1
+			},
+			"weight": 10,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "sunlit_cobblemon:trainer_podium_streak/640_plus_rare"
+				}
+			]
+		}
+	]
+}
