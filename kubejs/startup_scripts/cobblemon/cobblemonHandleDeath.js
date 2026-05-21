@@ -49,13 +49,13 @@ global.handleCobblemonDefeat = (e) => {
       }
       if (winStreak >= 20) {
         global.getStreakRewards(winningPlayer, losingPlayer.getOnPos(), winStreak);
-        if (winStreak % 15 == 0) {
+        if (winStreak % 15 == 1) {
           let reward;
-          for (let i = 0; i < Math.max(1, (Math.floor(winStreak / 15) - 1) / 2); i++) {
-            reward = player.level.createEntity("minecraft:item");
-            reward.x = pos.x + 0.5;
-            reward.y = pos.y + 0.4;
-            reward.z = pos.z + 0.5;
+          for (let i = 0; i < Math.min(9, Math.max(1, (Math.floor(winStreak / 15) - 1) / 2)); i++) {
+            reward = winningPlayer.level.createEntity("minecraft:item");
+            reward.x = winningPlayer.getOnPos().x + 0.5;
+            reward.y = winningPlayer.getOnPos().y + 0.4;
+            reward.z = winningPlayer.getOnPos().z + 0.5;
             reward.item = "sunlit_cobblemon:sunlit_league_medallion";
             reward.spawn();
           }
