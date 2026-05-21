@@ -216,7 +216,7 @@ BlockEvents.rightClicked((e) => {
       (block.hasTag("minecraft:crops") || block.id.includes("pamhc2trees")) &&
       !block.hasTag("cobblemon:berries") &&
       initialBlock.block.isMaxAge(initialBlock) &&
-      global.hasScope(player)
+      global.hasScopeSurprises(player)
     ) {
       let radius = 0;
       if (item.hasTag("minecraft:hoes")) radius = 1;

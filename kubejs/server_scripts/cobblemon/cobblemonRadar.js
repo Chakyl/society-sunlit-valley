@@ -57,7 +57,7 @@ ItemEvents.rightClicked("sunlit_cobblemon:poke_radar", (e) => {
       let aspect = global.getImportantAspect(entry.pokemon.aspects)
       let nameString = nameText.getString()
 
-    if (aspect !== null) {
+      if (aspect !== null) {
         nameString += ` (${global.formatName(`${aspect.toString()}`)})`;
       }
       if (!spawnNames[nameString]) {
@@ -102,8 +102,7 @@ ItemEvents.firstLeftClicked("sunlit_cobblemon:poke_radar", (e) => {
   let newNbt = item.getNbt() || { rarity: "common" };
   const rarityIndex = rarities.indexOf(newNbt.rarity);
   const selectedRarity = rarities[rarityIndex === 3 ? 0 : rarityIndex + 1];
-  newNbt.rarity = selectedRarity;
-  item.nbt = newNbt;
+  global.setItemNbt(item, "rarity", selectedRarity)
   const raritySelectedText = Text.translatable(
     "sunlit_cobblemon.poke_radar.rarity_selected",
     Text.translatable(

@@ -47,6 +47,10 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable(`tooltip.sunlit_cobblemon.silph_scope.equip`).gold()
   );
   tooltip.add(
+    "sunlit_cobblemon:silph_scope",
+    Text.translatable(`tooltip.sunlit_cobblemon.silph_scope.toggle_surprises`).gold()
+  );
+  tooltip.add(
     "sunlit_cobblemon:poke_bobber",
     Text.translatable(`tooltip.sunlit_cobblemon.poke_bobber.description`).gold()
   );
@@ -168,7 +172,7 @@ ItemEvents.tooltip((tooltip) => {
   );
 
   const formatIVS = (ivs) => {
-    if (ivs == null) return [0,0,0,0,0]
+    if (ivs == null) return [0, 0, 0, 0, 0]
     let ivArray = [];
     for (let index = 0; index < 6; index++) {
       ivArray.push(ivs.get(index))
@@ -305,8 +309,8 @@ ItemEvents.tooltip((tooltip) => {
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   });
-
-
+  tooltip.add(`unimplemented_items:ability_patch`, Text.translatable("item.cobblemon.ability_patch.tooltip").gray());
+  tooltip.add(`unimplemented_items:ability_patch`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   [
     "growth_mulch", "rich_mulch", "surprise_mulch", "loamy_mulch",
     "coarse_mulch", "peat_mulch", "humid_mulch", "sandy_mulch",

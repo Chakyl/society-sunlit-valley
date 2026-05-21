@@ -78,7 +78,7 @@
 //     { tier: 160, items: [ 'cobblemon:masterpiece_teacup'], scale: 1 },
 //     { tier: 320, items: ['society:artifact_trove', 'cobblemon:mighty_candy', 'cobblemon:quick_candy', 'cobblemon:smart_candy', 'cobblemon:tough_candy', 'cobblemon:health_candy', 'cobblemon:courage_candy', 'cobblemon:prism_scale'], scale: 2 },
 //     { tier: 640, items: ['sunlit_cobblemon:sun_raid_statue', 'cobblemon:beast_ball', 'society:relic_trove', 'unimplemented_items:bottle_cap_sa', 'unimplemented_items:bottle_cap_atk', 'unimplemented_items:bottle_cap_def', 'unimplemented_items:bottle_cap_sd', 'unimplemented_items:bottle_cap_spd', 'unimplemented_items:bottle_cap_hp', 'cobblemon:ability_capsule'], scale: 1 },
-//     { tier: 1000, items: ['sunlit_cobblemon:prismatic_tm_pack', 'cobblemon:ability_patch', 'sunlit_cobblemon:mystery_gift', 'society:broken_clock', 'society:pink_matter', 'society:black_opal', 'society:ancient_roe', 'society:enkephalin', 'society:inserter', 'cobblemon:cherish_ball', 'cobblemon:master_ball', 'sunlit_cobblemon:sun_mirror', 'cobblemon_farmers:worker_permit'], scale: 1 }
+//     { tier: 1000, items: ['sunlit_cobblemon:prismatic_tm_pack', 'unimplemented_items:ability_patch', 'sunlit_cobblemon:mystery_gift', 'society:broken_clock', 'society:pink_matter', 'society:black_opal', 'society:ancient_roe', 'society:enkephalin', 'society:inserter', 'cobblemon:cherish_ball', 'cobblemon:master_ball', 'sunlit_cobblemon:sun_mirror', 'cobblemon_farmers:worker_permit'], scale: 1 }
 // ].forEach((tierConfig, index) => {
 //     let pools = [];
 

@@ -3880,11 +3880,25 @@
 		}
 		{
 			id: "6356A478D02B423D"
-			rewards: [{
-				id: "15BD63EC6433F12E"
-				item: "sunlit_cobblemon:sunlit_league_medallion"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "15BD63EC6433F12E"
+					item: "sunlit_cobblemon:sunlit_league_medallion"
+					type: "item"
+				}
+				{
+					id: "458E4C83F1A155F8"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:mystery_gift"
+						tag: {
+							ot: "Chakyl"
+							pokemon: "jirachi"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				icon: "cobbledex:cobbledex_item"
 				id: "7BD891AD1A379236"

@@ -433,20 +433,6 @@
     },
     {
       "offer": {
-        "item": "sunlit_cobblemon:mystery_gift",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 64
-      },
-      "numismatics_cost": 1073741824,
-      "stage_required": "trainer_lvl_8",
-      "unlock_description": "jei.society_trading.trainer_lvl_8",
-      "trade_id": "pmart_mystery_gift"
-    },
-    {
-      "offer": {
         "item": "cobblemon_farmers:worker_permit",
         "count": 1
       },
@@ -473,6 +459,96 @@
       },
       "numismatics_cost": 32,
       "trade_id": "pmart_silph_scope"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"genesect\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_genesect"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"diancie\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_diancie"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"hoopa\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_hoopa"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"meltan\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_meltan"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"zarude\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_zarude"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"manaphy\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_manaphy"
     }
   ]
 }
