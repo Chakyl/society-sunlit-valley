@@ -582,7 +582,7 @@ global.getLeagueBoss = (levelBucket) => {
 };
 
 const getWinStreakBucket = (winStreak) => {
-  let buckets = [1000, 640, 320, 160, 80, 40, 20];
+  let buckets = [500, 400, 300, 160, 80, 40, 20];
   for (let i = 0; i < buckets.length; i++) {
     if (winStreak >= buckets[i]) {
       return buckets[i];
