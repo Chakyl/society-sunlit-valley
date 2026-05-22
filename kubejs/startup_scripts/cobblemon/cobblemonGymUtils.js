@@ -356,27 +356,32 @@ const trainerBuckets = new Map([
       "swimmerm_dean_00f3",
       "swimmerm_douglas_00ee",
       "fisherman_wade_00e7",
-      "fisherman_claude_00e6",
       "burglar_arnie_00d8",
       "burglar_lewis_00db",
       "burglar_simon_00da",
       "super_nerd_zac_00b4",
       "bird_keeper_porto",
-      "scientist_ted_014f",
-      "swimmerf_nora_010f",
-      "swimmerm_darrin_00f4",
       "picnicker_missy_01d8",
     ],
   ],
   [
     75,
     [
-      "trainer_may_003d",
+      "scientist_ted_014f",
+      "swimmerf_nora_010f",
+      "swimmerm_darrin_00f4",
+      "black_belt_blanche",
+      "fisherman_claude_00e6",
+      "ace_trainer_jexy",
+      "fisher_big_bite",
+      "ace_trainer_stalwart",
+      "black_belt_blanche"
     ],
   ],
   [
     80,
     [
+      "trainer_may_003d",
       "super_nerd_tolstoy",
       "ace_trainer_stream",
       "fisher_big_bite",
@@ -430,8 +435,6 @@ const trainerBuckets = new Map([
   [
     95,
     [
-      "super_nerd_miguel_00aa",
-      "camper_justin_01dd",
       "rocker_luca_011d",
       "swimmerf_maria_0223",
       "bird_keeper_jacob_0135",
@@ -455,17 +458,12 @@ const trainerBuckets = new Map([
   [
     100,
     [
-      "cue_ball_camron_00fb",
-      "picnicker_alma_01d2",
       "ace_trainer_bowie",
-      "channeler_rachel_0093",
-      "picnicker_caitlin_009b",
       "swimmerf_maria_0223",
       "swimmerm_garrett_0226",
       "ruin_mamoac_halotosis",
       "bird_keeper_sebastian_012c",
       "fisherman_tommy_0227",
-      "picnicker_alma_01d2",
       "tuber_alexis_022f",
       "tuber_amira_0207",
       "aroma_lady_nikki_020b",
@@ -495,12 +493,15 @@ const trainerBuckets = new Map([
   [
     110,
     [
+      "camper_justin_01dd",
+      "super_nerd_miguel_00aa",
+      "picnicker_caitlin_009b",
       "ace_trainer_andrew_0002",
       "ace_trainer_wilton_0133",
       "punk_girl_providence3",
       "gym_crusher_alexander",
       "gym_crusher_howitzer",
-      "ace_swimmer_torrent",
+      "channeler_rachel_0093",
       "gym_crusher_foxxy",
       "ace_trainer_janny_00af",
       "ace_trainer_barry_0058"
@@ -509,18 +510,21 @@ const trainerBuckets = new Map([
   [
     115,
     [
+      "ace_swimmer_torrent",
+      "cue_ball_camron_00fb",
+      "picnicker_alma_01d2",
       "ace_trainer_runan_007c",
       "ace_trainer_nick_0055",
       "professor_oak_00d2",
       "gym_crusher_salad",
       "gym_rat_king",
-      "bird_keeper_glizzy",
-      "gym_crusher_cruelty"
+      "bird_keeper_glizzy"
     ],
   ],
   [
     120,
-    [
+    [,
+      "gym_crusher_cruelty",
       "reggie",
       "professor_oak_00c8",
       "gym_crusher_dennis",
@@ -564,7 +568,7 @@ global.getRandomTrainer = (levelBucket) => {
   return trainerBucket[rnd(0, trainerBucket.length - 1)];
 };
 
-global.getPlayerPodiumLevelTier = (player, partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5 + (Math.floor(player.persistentData.winStreak / 10) * 5)));
+global.getPlayerPodiumLevelTier = (player, partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5 + (Math.floor(player.persistentData.winStreak / 10) * 5)) - 5);
 
 const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma"];
 const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
@@ -574,4 +578,48 @@ global.getLeagueBoss = (levelBucket) => {
   if (levelBucket == 105) bossNumber = 8;
   if (bossNumber >= 9) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}${bossNumber}`;
   return `league_${leagueBosses[rnd(0, leagueBosses.length - 1)]}${bossNumber}`;
+};
+
+const getWinStreakBucket = (winStreak) => {
+  let buckets = [500, 400, 300, 160, 80, 40, 20];
+  for (let i = 0; i < buckets.length; i++) {
+    if (winStreak >= buckets[i]) {
+      return buckets[i];
+    }
+  }
+  return -1;
+}
+global.getStreakRewards = (player, pos, winStreak) => {
+  let rewardTier = getWinStreakBucket(winStreak)
+  if (rewardTier == -1) return;
+  let reward;
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_streak/${rewardTier}_plus_common`).toArray();
+  rolledLoot.forEach((item) => {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = item;
+    reward.spawn();
+  });
+  if (Math.random() <= 0.15) {
+    player.tell("rolled_rare")
+    rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_streak/${rewardTier}_plus_rare`).toArray();
+    rolledLoot.forEach((item) => {
+      reward = player.level.createEntity("minecraft:item");
+      reward.x = pos.x + 0.5;
+      reward.y = pos.y + 0.4;
+      reward.z = pos.z + 0.5;
+      reward.item = item;
+      reward.spawn();
+    });
+    if (winStreak >= 640 && player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
+      reward = player.level.createEntity("minecraft:item");
+      reward.x = pos.x + 0.5;
+      reward.y = pos.y + 0.4;
+      reward.z = pos.z + 0.5;
+      reward.item = "society:animal_cracker";
+      reward.spawn();
+    }
+  }
 };

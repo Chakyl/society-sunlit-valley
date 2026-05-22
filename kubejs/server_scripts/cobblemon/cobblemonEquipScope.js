@@ -7,8 +7,9 @@ ItemEvents.rightClicked("sunlit_cobblemon:silph_scope", (e) => {
   $CuriosApi.getCuriosInventory(player).ifPresent((curiosInventory) => {
     let slots = curiosInventory["findCurios(java.lang.String[])"]("face");
     if (slots && slots[0] == undefined) {
+      let nbt = item.getNbt() || { surprise: true };
       server.runCommandSilent(
-        `curios replace face 0 ${player.username} with sunlit_cobblemon:silph_scope`
+        `curios replace face 0 ${player.username} with sunlit_cobblemon:silph_scope{surprise:${nbt.surprise}b}`
       );
       server.runCommandSilent(
         `playsound cobblemon:pc.on block @a ${player.x} ${player.y} ${player.z}`

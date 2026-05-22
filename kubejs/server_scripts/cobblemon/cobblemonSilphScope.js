@@ -44,3 +44,42 @@ EntityEvents.spawned((e) => {
     }
   }
 });
+
+ItemEvents.firstLeftClicked("sunlit_cobblemon:silph_scope", (e) => {
+  const { item, server, player } = e;
+  server.runCommandSilent(
+    `playsound refurbished_furniture:ui.paddle_ball.retro_click block @a ${player.x} ${player.y} ${player.z}`,
+  );
+  let newNbt = item.getNbt() || { surprise: true };
+  const selectedState = !newNbt.surprise
+  global.setItemNbt(item, "surprise", selectedState)
+  const surpriseToggledText = Text.translatable("sunlit_cobblemon.silph_scope.surprise_toggled", selectedState);
+  const surpriseToggledTextBG = Text.translatable("sunlit_cobblemon.silph_scope.surprise_toggled", selectedState).black();
+  global.renderUiText(
+    player,
+    server,
+    {
+      pokeRadar: {
+        type: "text",
+        x: 0,
+        y: -90,
+        text: `${surpriseToggledText.toJson()}`,
+        color: "#AAAAAA",
+        alignX: "center",
+        alignY: "bottom",
+      },
+      pokeRadarShadow: {
+        type: "text",
+        x: 1,
+        z: -1,
+        y: -89,
+        text: `${surpriseToggledTextBG.toJson()}`,
+        color: "#000000",
+        alignX: "center",
+        alignY: "bottom",
+      },
+    },
+    ["silph_scope"],
+  );
+  global.addItemCooldown(player, item, 10);
+});

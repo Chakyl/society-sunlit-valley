@@ -892,12 +892,6 @@
 //             pokemon: "smeargle",
 //             forages: [
 //                 {
-//                     item: "minecraft:painting",
-//                     count: 1,
-//                     chance: 1,
-//                     min_hearts: 0
-//                 },
-//                 {
 //                     item: "society:red_sheet",
 //                     count: 1,
 //                     chance: 0.5,
@@ -5359,6 +5353,17 @@
 //             ],
 //         },
 //         {
+//             pokemon: "flabebe",
+//             forages: [
+//                 {
+//                     item: 'society:bouquet_bag',
+//                     count: 4,
+//                     chance: 0.92,
+//                     min_hearts: 8
+//                 }
+//             ],
+//         },
+//         {
 //             pokemon: "floette",
 //             forages: [
 //                 {
@@ -8049,6 +8054,21 @@
 //             milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },
 //         },
 //         {
+//             pokemon: "tauros",
+//             form: "aqua",
+//             milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },
+//         },
+//         {
+//             pokemon: "tauros",
+//             form: "combat",
+//             milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },
+//         },
+//         {
+//             pokemon: "blaze",
+//             form: "aqua",
+//             milk: { sm: "society:steamed_milk", lg: "society:steamed_milk" },
+//         },
+//         {
 //             pokemon: "wooloo",
 //             milk: cobbleSheepMilk,
 //         },
@@ -8177,7 +8197,7 @@
 //                 {
 //                     item: "sunlit_cobblemon:fire_pledge",
 //                     count: 1,
-//                     chance: 0.5,
+//                     chance: 0.05,
 //                     min_hearts: 10
 //                 }
 //             ],
@@ -8231,7 +8251,7 @@
 //                 {
 //                     item: "sunlit_cobblemon:grass_pledge",
 //                     count: 1,
-//                     chance: 0.5,
+//                     chance: 0.05,
 //                     min_hearts: 10
 //                 }
 //             ],
@@ -8285,7 +8305,7 @@
 //                 {
 //                     item: "sunlit_cobblemon:water_pledge",
 //                     count: 1,
-//                     chance: 0.5,
+//                     chance: 0.05,
 //                     min_hearts: 10
 //                 }
 //             ],
@@ -8395,6 +8415,72 @@
 //             pokemon: poke,
 //             milk: { sm: "minecraft:dragon_breath" },
 //         })
+//     });
+//     ranchingDef.push(
+//         {
+//             pokemon: "floette",
+//             form: "eternal",
+//             forages: [
+//                 {
+//                     item: 'society:bouquet_bag',
+//                     count: 4,
+//                     chance: 0.92,
+//                     min_hearts: 8
+//                 }
+//             ],
+//         });
+//     ["yellow", "orange", "blue", "white"].forEach((color) => {
+//         ranchingDef.push(
+//             {
+//                 pokemon: "flabebe",
+//                 form: color,
+//                 forages: [
+//                     {
+//                         item: 'society:bouquet_bag',
+//                         count: 4,
+//                         chance: 0.92,
+//                         min_hearts: 8
+//                     }
+//                 ],
+//             });
+//         ranchingDef.push(
+//             {
+//                 pokemon: "floette",
+//                 form: color,
+//                 forages: [
+//                     {
+//                         item: 'society:bouquet_bag',
+//                         count: 2,
+//                         chance: 0.52,
+//                         min_hearts: 6
+//                     },
+//                     {
+//                         item: 'sunlit_cobblemon:captivating_pofflet',
+//                         count: 1,
+//                         chance: 0.92,
+//                         min_hearts: 8
+//                     }
+//                 ],
+//             });
+//         ranchingDef.push(
+//             {
+//                 pokemon: "florges",
+//                 form: color,
+//                 forages: [
+//                     {
+//                         item: 'society:bouquet_bag',
+//                         count: 1,
+//                         chance: 0.32,
+//                         min_hearts: 6
+//                     },
+//                     {
+//                         item: 'sunlit_cobblemon:fairy_heart',
+//                         count: 1,
+//                         chance: 0.04,
+//                         min_hearts: 10
+//                     }
+//                 ],
+//             })
 //     });
 //     let recipe
 //     ranchingDef.forEach((def) => {

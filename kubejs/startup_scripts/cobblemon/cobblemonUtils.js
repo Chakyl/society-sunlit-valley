@@ -12,23 +12,27 @@ global.getPartyLevel = (player) => {
   let partyCount = 0;
   let levelSum = 0;
   let levelHighest = 0;
+  let hasBanned = false;
   party.forEach((pokemon) => {
-    if (pokemon.isLegendary() || pokemon.isMythical()) levelSum += 99999;
+    if (pokemon.isLegendary() || pokemon.isMythical()) hasBanned = true;
     levelSum += pokemon.level;
     if (levelHighest < pokemon.level) levelHighest = pokemon.level;
     partyCount++;
   });
+  if (hasBanned) return 105;
   let levelHighestCount = 0;
   party.forEach((pokemon) => {
     if (levelHighest == pokemon.level) levelHighestCount++;
   });
   let levelAverage = Math.round(levelSum / partyCount);
   if (Math.round(levelAverage * 1.25) < levelHighest) return levelHighest;
-  if (levelHighestCount >= 3) return levelHighest; 
+  if (levelHighestCount >= 3) return levelHighest;
   return levelAverage;
 };
 
 global.hasScope = (entity) => entity.nbt.ForgeCaps["curios:inventory"].toString().includes("sunlit_cobblemon:silph_scope");
+
+global.hasScopeSurprises = (entity) => entity.nbt.ForgeCaps["curios:inventory"].toString().includes("\"sunlit_cobblemon:silph_scope\",tag:{surprise:1b}");
 
 global.rollPokeWeightedTable = (table) => {
   let roll = 0;
@@ -198,3 +202,9 @@ global.giveNPCMysteryGift = (player, target, server, npcId) => {
   );
 };
 
+// 4.1 TODO: General utility to make component migration easier
+global.setItemNbt = (item, key, value) => {
+  let newNbt = item.getNbt() || {};
+  newNbt[key] = value;
+  item.nbt = newNbt;
+};

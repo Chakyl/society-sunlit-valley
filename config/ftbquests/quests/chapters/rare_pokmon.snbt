@@ -1,5 +1,5 @@
 {
-	autofocus_id: "5C5A08F990320793"
+	autofocus_id: "302AA9BB1D2219A8"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "rare_pokmon"
@@ -3710,6 +3710,221 @@
 			}]
 			x: 5.0d
 			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3826487E2543A33B"
+				"7EC15D896B795460"
+				"5D2FB5338784FD0B"
+				"1920C4E333D8453E"
+				"37D5C48E1F91D032"
+				"5955FF0072B773DA"
+				"6356A478D02B423D"
+				"5A947F33B5B3E07F"
+				"44178BB1F85EFAD4"
+				"3004C2F56F50709E"
+			]
+			description: ["{ftbquests.chapter.rare_pokmon.quest70EFA2B98DB2B40E.description1}"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: false
+			icon: "cobbledex:cobbledex_item"
+			id: "70EFA2B98DB2B40E"
+			size: 2.0d
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "1892676745D815CC"
+				title: "{ftbquests.chapter.rare_pokmon.quest70EFA2B98DB2B40E.task.1770591296761107916.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest70EFA2B98DB2B40E.title}"
+			x: 5.0d
+			y: -30.0d
+		}
+		{
+			id: "5D2FB5338784FD0B"
+			rewards: [{
+				id: "4055DBA208EFECE7"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "1BD62CDB01B278C1"
+				title: "{ftbquests.chapter.rare_pokmon.quest5D2FB5338784FD0B.task.2005840003178068161.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5D2FB5338784FD0B.title}"
+			x: 2.0d
+			y: -33.5d
+		}
+		{
+			id: "37D5C48E1F91D032"
+			rewards: [{
+				id: "5C78D9796AF833A0"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "2CB226B492705C9E"
+				title: "{ftbquests.chapter.rare_pokmon.quest37D5C48E1F91D032.task.3220679240516131998.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest37D5C48E1F91D032.title}"
+			x: 3.5d
+			y: -33.5d
+		}
+		{
+			id: "5955FF0072B773DA"
+			rewards: [{
+				id: "2258A553CD616B08"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "2EEEB2A0F540E4FE"
+				title: "{ftbquests.chapter.rare_pokmon.quest5955FF0072B773DA.task.3381836774581003518.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5955FF0072B773DA.title}"
+			x: 5.0d
+			y: -33.5d
+		}
+		{
+			id: "44178BB1F85EFAD4"
+			rewards: [{
+				id: "5F557CA9C1A0D01B"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "7603D18357819813"
+				title: "{ftbquests.chapter.rare_pokmon.quest44178BB1F85EFAD4.task.8503870883444660243.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest44178BB1F85EFAD4.title}"
+			x: 6.5d
+			y: -33.5d
+		}
+		{
+			id: "5A947F33B5B3E07F"
+			rewards: [{
+				count: 2
+				id: "2A738368B06EAC43"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "7EB0A6694F3D16F4"
+				title: "{ftbquests.chapter.rare_pokmon.quest5A947F33B5B3E07F.task.9128979415911175924.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5A947F33B5B3E07F.title}"
+			x: 8.0d
+			y: -33.5d
+		}
+		{
+			id: "3826487E2543A33B"
+			rewards: [{
+				id: "0C0BB5BEE59241B6"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "074F044F7BE24903"
+				title: "{ftbquests.chapter.rare_pokmon.quest3826487E2543A33B.task.526644420852992259.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3826487E2543A33B.title}"
+			x: 2.0d
+			y: -32.0d
+		}
+		{
+			id: "3004C2F56F50709E"
+			rewards: [{
+				id: "7FEE8CB0DAAEB9A3"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "22372AE22C9D62A1"
+				title: "{ftbquests.chapter.rare_pokmon.quest3004C2F56F50709E.task.2465486471908123297.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3004C2F56F50709E.title}"
+			x: 3.5d
+			y: -32.0d
+		}
+		{
+			id: "1920C4E333D8453E"
+			rewards: [{
+				id: "711FCDC955142085"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "6785E3DBC9808F04"
+				title: "{ftbquests.chapter.rare_pokmon.quest1920C4E333D8453E.task.7459618890927083268.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1920C4E333D8453E.title}"
+			x: 5.0d
+			y: -32.0d
+		}
+		{
+			id: "6356A478D02B423D"
+			rewards: [
+				{
+					id: "15BD63EC6433F12E"
+					item: "sunlit_cobblemon:sunlit_league_medallion"
+					type: "item"
+				}
+				{
+					id: "458E4C83F1A155F8"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:mystery_gift"
+						tag: {
+							ot: "Chakyl"
+							pokemon: "jirachi"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "7BD891AD1A379236"
+				title: "{ftbquests.chapter.rare_pokmon.quest6356A478D02B423D.task.8924042834289857078.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6356A478D02B423D.title}"
+			x: 6.5d
+			y: -32.0d
+		}
+		{
+			id: "7EC15D896B795460"
+			rewards: [{
+				id: "6F0BE2DEF9C2C320"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "4BC25FA411DA4D9A"
+				title: "{ftbquests.chapter.rare_pokmon.quest7EC15D896B795460.task.5459030856605257114.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest7EC15D896B795460.title}"
+			x: 8.0d
+			y: -32.0d
 		}
 	]
 	title: "{ftbquests.chapter.rare_pokmon.title}"

@@ -1,0 +1,164 @@
+{
+  "displayName": "Picnicker Alma",
+  "team": [
+    {
+      "species": "cobblemon:krookodile",
+      "gender": "FEMALE",
+      "level": 93,
+      "nature": "cobblemon:jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "stealthrock",
+        "wickedblow",
+        "earthquake",
+        "rockslide"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash"
+    },
+    {
+      "species": "cobblemon:tangrowth",
+      "gender": "MALE",
+      "level": 91,
+      "nature": "cobblemon:timid",
+      "ability": "chlorophyll",
+      "moveset": [
+        "solarbeam",
+        "hiddenpower",
+        "sludgebomb",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 30,
+        "defence": 31,
+        "special_attack": 30,
+        "special_defence": 31,
+        "speed": 30
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest"
+    },
+    {
+      "species": "cobblemon:chansey",
+      "gender": "FEMALE",
+      "level": 90,
+      "nature": "cobblemon:bold",
+      "ability": "naturalcure",
+      "moveset": [
+        "thunderwave",
+        "seismictoss",
+        "teleport",
+        "softboiled"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 0,
+        "defence": 252,
+        "special_attack": 0,
+        "special_defence": 4,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:eviolite"
+    },
+    {
+      "species": "cobblemon:chandelure",
+      "gender": "FEMALE",
+      "level": 91,
+      "nature": "cobblemon:timid",
+      "ability": "shadowtag",
+      "moveset": [
+        "fireblast",
+        "solarbeam",
+        "shadowball",
+        "trick"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:choice_scarf"
+    },
+    {
+      "species": "cobblemon:altaria",
+      "gender": "MALE",
+      "level": 89,
+      "nature": "cobblemon:bold",
+      "ability": "naturalcure",
+      "moveset": [
+        "fireblast",
+        "hypervoice",
+        "roost",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 0,
+        "defence": 252,
+        "special_attack": 4,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:altarianite"
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}

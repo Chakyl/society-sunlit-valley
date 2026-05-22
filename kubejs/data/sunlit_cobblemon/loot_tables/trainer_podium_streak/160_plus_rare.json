@@ -1,0 +1,155 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "cobblemon:masterpiece_teacup"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:prism_scale",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+								{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:iron",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:calcium",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:protein",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:hp_up",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:carbos",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:pp_up",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "cobblemon:zinc",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 6
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 1
+			},
+			"weight": 10,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "sunlit_cobblemon:trainer_podium_streak/80_plus_rare"
+				}
+			]
+		}
+	]
+}

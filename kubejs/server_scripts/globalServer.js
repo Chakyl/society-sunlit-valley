@@ -18,7 +18,9 @@ global.mainUiElementIds = [
   "magicRopeMessage",
   "chanceMessage",
   "longwingCountMessage",
-  "flowerCountMessage"
+  "flowerCountMessage",
+  "pokeRadar",
+  "silph_scope"
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};

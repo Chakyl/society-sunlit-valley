@@ -1,6 +1,6 @@
 {
     "name": "Society Sunlit Cobblemon",
-    "version": "1.0.5-SSV4.0.8",
+    "version": "1.0.6-SSV4.0.8A",
     "overrides": [
         "config",
         "defaultconfigs",
@@ -45,6 +45,9 @@
             "side": "CLIENT"
         },
         "controlling": {
+            "side": "CLIENT"
+        },
+        "controllable": {
             "side": "CLIENT"
         },
         "crash-assistant": {

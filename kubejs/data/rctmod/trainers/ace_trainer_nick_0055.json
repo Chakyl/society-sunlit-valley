@@ -1,0 +1,201 @@
+{
+  "displayName": "Ace Trainer Nick",
+  "team": [
+    {
+      "species": "cobblemon:ninetales",
+      "gender": "FEMALE",
+      "level": 93,
+      "nature": "cobblemon:timid",
+      "ability": "snowwarning",
+      "moveset": [
+        "freezedry",
+        "moonblast",
+        "auroraveil",
+        "frostbreath"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:light_clay",
+      "aspects": [
+        "alolan"
+      ]
+    },
+    {
+      "species": "cobblemon:garchomp",
+      "gender": "FEMALE",
+      "level": 93,
+      "nature": "cobblemon:jolly",
+      "ability": "sandveil",
+      "moveset": [
+        "swordsdance",
+        "earthquake",
+        "scaleshot",
+        "stoneedge"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 4,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:garchompite"
+    },
+    {
+      "species": "cobblemon:dragapult",
+      "gender": "MALE",
+      "level": 94,
+      "nature": "cobblemon:jolly",
+      "ability": "clearbody",
+      "moveset": [
+        "dragondance",
+        "phantomforce",
+        "dragondarts",
+        "fireblast"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 120,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 4,
+        "special_defence": 0,
+        "speed": 132
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:weaknesspol"
+    },
+    {
+      "species": "cobblemon:heatran",
+      "gender": "FEMALE",
+      "level": 93,
+      "nature": "cobblemon:timid",
+      "ability": "flashfire",
+      "moveset": [
+        "magmastorm",
+        "earthpower",
+        "flashcannon",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 184,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 96,
+        "special_defence": 0,
+        "speed": 224
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:air_balloon"
+    },
+    {
+      "species": "cobblemon:arctozolt",
+      "gender": "GENDERLESS",
+      "level": 95,
+      "nature": "cobblemon:naive",
+      "ability": "slushrush",
+      "moveset": [
+        "boltbeak",
+        "blizzard",
+        "freezedry",
+        "lowkick"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 200,
+        "defence": 4,
+        "special_attack": 76,
+        "special_defence": 0,
+        "speed": 232
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:ice_gem"
+    },
+    {
+      "species": "cobblemon:zapdos",
+      "gender": "GENDERLESS",
+      "level": 94,
+      "nature": "cobblemon:jolly",
+      "ability": "defiant",
+      "moveset": [
+        "closecombat",
+        "bravebird",
+        "uturn",
+        "stompingtantrum"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:flyinium_z",
+      "aspects": [
+        "galar"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}

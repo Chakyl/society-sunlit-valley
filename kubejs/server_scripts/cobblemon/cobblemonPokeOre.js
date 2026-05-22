@@ -282,6 +282,7 @@ const uncoverOrePokemon = (level, server, block, pos) => {
 
 BlockEvents.broken((e) => {
   const { block, hand, player, server, level } = e;
+  
   if (hand == "OFF_HAND") return;
   let spawnChance = 1 / 80;
   if (player.getHeldItem("MAIN_HAND").enchantments.containsKey("minecraft:silk_touch")) return;
@@ -291,7 +292,7 @@ BlockEvents.broken((e) => {
     } else if (Math.random() < spawnChance) {
       block.popItemFromFace(Item.of("sunlit_cobblemon:braiding_surprisegrass"), "up");
     }
-    if (Math.random() < spawnChance && global.hasScope(player)) {
+    if (Math.random() < spawnChance && global.hasScopeSurprises(player)) {
       uncoverOrePokemon(
         level,
         server,

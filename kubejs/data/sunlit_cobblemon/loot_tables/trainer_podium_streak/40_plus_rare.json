@@ -1,0 +1,55 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "sunlit_cobblemon:sun_essence"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:candied_animal_feed"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "cobblemon:pp_max"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "sunlit_cobblemon:cosmic_dust"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "unimplemented_items:dry_root"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"name": "society:prize_ticket"
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 1
+			},
+			"weight": 10,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "sunlit_cobblemon:trainer_podium_streak/20_plus_rare"
+				}
+			]
+		}
+	]
+}

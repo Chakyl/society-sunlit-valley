@@ -13,6 +13,7 @@ ServerEvents.recipes((e) => {
 
   e.shapeless("cobblemon:exp_candy_xl", ["3x cobblemon:exp_candy_l"]);
   e.shapeless("3x cobblemon:exp_candy_l", ["cobblemon:exp_candy_xl"]);
+  e.shapeless("unimplemented_items:ability_patch", ["cobblemon:ability_patch"]);
   // TMS
   e.shapeless("sunlit_cobblemon:tm_pack", ["9x #sunlit_cobblemon:tr"]);
   e.shapeless("sunlit_cobblemon:greater_tm_pack", ["9x #sunlit_cobblemon:tm"]);
@@ -34,7 +35,7 @@ ServerEvents.recipes((e) => {
     f: "sunlit_cobblemon:fairy_heart",
     s: "society:production_science_pack",
   });
-  e.shaped("cobblemon:ability_patch", [" g ", "fsf", " g "], {
+  e.shaped("unimplemented_items:ability_patch", [" g ", "fsf", " g "], {
     g: "sunlit_cobblemon:poke_genes",
     f: "sunlit_cobblemon:fairy_heart",
     s: "numismatics:prismatic_coin",
