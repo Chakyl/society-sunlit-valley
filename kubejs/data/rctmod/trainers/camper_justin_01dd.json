@@ -1,0 +1,139 @@
+{
+  "displayName": "Camper Justin",
+  "team": [
+    {
+      "species": "cobblemon:darmanitan",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "zenmode",
+      "moveset": [
+        "uturn",
+        "flareblitz",
+        "iciclecrash",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 4,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:charti_berry",
+      "aspects": [
+        "galar"
+      ]
+    },
+    {
+      "species": "cobblemon:sandslash",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "slushrush",
+      "moveset": [
+        "swordsdance",
+        "earthquake",
+        "ironhead",
+        "iciclecrash"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 4,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "alola"
+      ]
+    },
+    {
+      "species": "cobblemon:conkeldurr",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "ironfist",
+      "moveset": [
+        "drainpunch",
+        "machpunch",
+        "knockoff",
+        "thunderpunch"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 4,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 252,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest"
+    },
+    {
+      "species": "cobblemon:gengar",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "levitate",
+      "moveset": [
+        "nastyplot",
+        "shadowball",
+        "focusblast",
+        "sludgewave"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 252,
+        "special_defence": 4,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:spell_tag"
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}

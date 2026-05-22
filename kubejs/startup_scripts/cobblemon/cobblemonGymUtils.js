@@ -435,8 +435,6 @@ const trainerBuckets = new Map([
   [
     95,
     [
-      "super_nerd_miguel_00aa",
-      "camper_justin_01dd",
       "rocker_luca_011d",
       "swimmerf_maria_0223",
       "bird_keeper_jacob_0135",
@@ -460,17 +458,12 @@ const trainerBuckets = new Map([
   [
     100,
     [
-      "cue_ball_camron_00fb",
-      "picnicker_alma_01d2",
       "ace_trainer_bowie",
-      "channeler_rachel_0093",
-      "picnicker_caitlin_009b",
       "swimmerf_maria_0223",
       "swimmerm_garrett_0226",
       "ruin_mamoac_halotosis",
       "bird_keeper_sebastian_012c",
       "fisherman_tommy_0227",
-      "picnicker_alma_01d2",
       "tuber_alexis_022f",
       "tuber_amira_0207",
       "aroma_lady_nikki_020b",
@@ -500,12 +493,15 @@ const trainerBuckets = new Map([
   [
     110,
     [
+      "camper_justin_01dd",
+      "super_nerd_miguel_00aa",
+      "picnicker_caitlin_009b",
       "ace_trainer_andrew_0002",
       "ace_trainer_wilton_0133",
       "punk_girl_providence3",
       "gym_crusher_alexander",
       "gym_crusher_howitzer",
-      "ace_swimmer_torrent",
+      "channeler_rachel_0093",
       "gym_crusher_foxxy",
       "ace_trainer_janny_00af",
       "ace_trainer_barry_0058"
@@ -514,18 +510,21 @@ const trainerBuckets = new Map([
   [
     115,
     [
+      "ace_swimmer_torrent",
+      "cue_ball_camron_00fb",
+      "picnicker_alma_01d2",
       "ace_trainer_runan_007c",
       "ace_trainer_nick_0055",
       "professor_oak_00d2",
       "gym_crusher_salad",
       "gym_rat_king",
-      "bird_keeper_glizzy",
-      "gym_crusher_cruelty"
+      "bird_keeper_glizzy"
     ],
   ],
   [
     120,
-    [
+    [,
+      "gym_crusher_cruelty",
       "reggie",
       "professor_oak_00c8",
       "gym_crusher_dennis",
