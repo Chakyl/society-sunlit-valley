@@ -1,15 +1,16 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.6-SSV4.0.8
+### v1.0.6-SSV4.0.8A
 ^^^
 --- 
 - Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)
-- Added Sunlit League Medallions as rewards every 10% of the dex caught
 - Added ability for CobbleDex to register Pokemon as caught when right clicking your own Pokemon (for cases where it doesn't happen automatically, like Mystery Gifts
 - Added ability to toggle Surprise Pokemon (ore/crop pokemon) by left clicking Silph Scope
+- Added Sunlit League Medallions as rewards every 10% of the dex caught
 - Added ssc_general format to /showdown challenge
 - Added additional item drop streak rewards to trainer podium that start at 20 wins in a row
 - Increased box count to cover complete dex (1000 total)
+- Increased Sunlit League Medallion drop counts on subsequent streak wins (max 5 total)
 - Ended Trainer May's rein of terror over tier 75
 - Pokemart now sells 5 different labeled Mystery Gifts rather than one random gift
 - Swapped Cobblemon's Ability Patch for Unimplemented Items' so Hidden Abilities can be removed (with conversion recipe)
