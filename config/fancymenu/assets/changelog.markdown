@@ -5,18 +5,21 @@
 --- 
 - Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)
 - Added Sunlit League Medallions as rewards every 10% of the dex caught
-- Added ability for CobbleDex to register Pokemon as caught when right clicking your own Pokemon (for cases where it doesn't happen automatically, like Mystery Gifts)
+- Added ability for CobbleDex to register Pokemon as caught when right clicking your own Pokemon (for cases where it doesn't happen automatically, like Mystery Gifts
 - Added ability to toggle Surprise Pokemon (ore/crop pokemon) by left clicking Silph Scope
-- Added SSC General format to /showdown challenge
+- Added ssc_general format to /showdown challenge
 - Added additional item drop streak rewards to trainer podium that start at 20 wins in a row
+- Increased box count to cover complete dex (1000 total)
 - Ended Trainer May's rein of terror over tier 75
-- Poke mart now sells 5 different labeled Mystery Gifts rather than one random gift
+- Pokemart now sells 5 different labeled Mystery Gifts rather than one random gift
 - Swapped Cobblemon's Ability Patch for Unimplemented Items' so Hidden Abilities can be removed (with conversion recipe)
 - Reduced trainer podium and Sunlit League boss difficulty by 1 tier
 - Removed Sunlit League Medallion cost from Mystery Gifts
 - Removed Onix and Steelix from surprise ore pool due to their lack of will to live
 - Removed Tera blast and Hidden Power from tm/tr pool due to being non-functional
+- Reworked tier 100 to not be full of minmaxed default RCT mod monsters
 - Tweaked type gems mined by Mystery Mine to be spread out and fixed certain ones being missing
+- Testing Artisan Hopper behavior change to prevent levelchunk crashes
 - Fixed certain biome tags not existing (especially for regional evos like galar bias koffing)
 - Fixed podium Tier 75 only having Trainer May
 - Fixed Sunlit League rules not applying

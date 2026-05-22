@@ -416,7 +416,6 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
           3,
           0.01
         );
-      return true;
       }
     }
 
