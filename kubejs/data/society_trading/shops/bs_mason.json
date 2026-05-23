@@ -1,0 +1,103 @@
+{
+	"shop_id": "bs_mason",
+	"name": "shop.society_trading.building_shop.mason",
+	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
+	"display_type": "image",
+	"jei_catalyst": {
+		"item": null
+	},
+	"trades": [
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"mason_home\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.home_mason\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"mason_home\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/home/mason_home",
+			"trade_id": "bs_mason_home"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"mason_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.shed_mason\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"mason_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/shed/mason_shed",
+			"trade_id": "bs_mason_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"mason_large_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.large_shed_mason\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"mason_large_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/large_shed/mason_large_shed",
+			"trade_id": "bs_mason_large_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"mason_coop\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.coop_mason\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"mason_coop\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/coop/mason_coop",
+			"trade_id": "bs_mason_coop"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"mason_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.barn_mason\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"mason_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/barn/mason_barn",
+			"trade_id": "bs_mason_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"mason_deluxe_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.deluxe_barn_mason\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"mason_deluxe_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/deluxe_barn/mason_deluxe_barn",
+			"trade_id": "bs_mason_deluxe_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"mason_greenhouse\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.greenhouse_mason\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"mason_greenhouse\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/greenhouse/mason_greenhouse",
+			"trade_id": "bs_mason_greenhouse"
+		}
+	]
+}

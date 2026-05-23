@@ -1,0 +1,103 @@
+{
+	"shop_id": "bs_entrana",
+	"name": "shop.society_trading.building_shop.entrana",
+	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
+	"display_type": "image",
+	"jei_catalyst": {
+		"item": "moreminecarts:chiseled_organic_glass"
+	},
+	"trades": [
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"entrana_home\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.home_entrana\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"entrana_home\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/home/entrana_home",
+			"trade_id": "bs_entrana_home"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"entrana_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.shed_entrana\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"entrana_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/shed/entrana_shed",
+			"trade_id": "bs_entrana_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"entrana_large_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.large_shed_entrana\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"entrana_large_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/large_shed/entrana_large_shed",
+			"trade_id": "bs_entrana_large_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"entrana_coop\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.coop_entrana\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"entrana_coop\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/coop/entrana_coop",
+			"trade_id": "bs_entrana_coop"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"entrana_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.barn_entrana\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"entrana_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/barn/entrana_barn",
+			"trade_id": "bs_entrana_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"entrana_deluxe_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.deluxe_barn_entrana\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"entrana_deluxe_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/deluxe_barn/entrana_deluxe_barn",
+			"trade_id": "bs_entrana_deluxe_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"entrana_greenhouse\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.greenhouse_entrana\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"entrana_greenhouse\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/greenhouse/entrana_greenhouse",
+			"trade_id": "bs_entrana_greenhouse"
+		}
+	]
+}

@@ -1,0 +1,103 @@
+{
+	"shop_id": "bs_bamboo",
+	"name": "shop.society_trading.building_shop.bamboo",
+	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
+	"display_type": "image",
+	"jei_catalyst": {
+		"item": "minecraft:egg"
+	},
+	"trades": [
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"bamboo_home\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.home_bamboo\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"bamboo_home\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/home/bamboo_home",
+			"trade_id": "bs_bamboo_home"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"bamboo_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.shed_bamboo\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"bamboo_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/shed/bamboo_shed",
+			"trade_id": "bs_bamboo_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"bamboo_large_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.large_shed_bamboo\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"bamboo_large_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/large_shed/bamboo_large_shed",
+			"trade_id": "bs_bamboo_large_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"bamboo_coop\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.coop_bamboo\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"bamboo_coop\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/coop/bamboo_coop",
+			"trade_id": "bs_bamboo_coop"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"bamboo_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.barn_bamboo\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"bamboo_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/barn/bamboo_barn",
+			"trade_id": "bs_bamboo_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"bamboo_deluxe_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.deluxe_barn_bamboo\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"bamboo_deluxe_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/deluxe_barn/bamboo_deluxe_barn",
+			"trade_id": "bs_bamboo_deluxe_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"bamboo_greenhouse\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.greenhouse_bamboo\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"bamboo_greenhouse\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/greenhouse/bamboo_greenhouse",
+			"trade_id": "bs_bamboo_greenhouse"
+		}
+	]
+}

@@ -1,0 +1,103 @@
+{
+	"shop_id": "bs_siberian",
+	"name": "shop.society_trading.building_shop.siberian",
+	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
+	"display_type": "image",
+	"jei_catalyst": {
+		"item": null
+	},
+	"trades": [
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"siberian_home\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.home_siberian\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"siberian_home\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/home/siberian_home",
+			"trade_id": "bs_siberian_home"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"siberian_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.shed_siberian\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"siberian_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/shed/siberian_shed",
+			"trade_id": "bs_siberian_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"siberian_large_shed\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.large_shed_siberian\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"siberian_large_shed\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/large_shed/siberian_large_shed",
+			"trade_id": "bs_siberian_large_shed"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"siberian_coop\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.coop_siberian\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"siberian_coop\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/coop/siberian_coop",
+			"trade_id": "bs_siberian_coop"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"siberian_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.barn_siberian\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"siberian_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/barn/siberian_barn",
+			"trade_id": "bs_siberian_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"siberian_deluxe_barn\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.deluxe_barn_siberian\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"siberian_deluxe_barn\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/deluxe_barn/siberian_deluxe_barn",
+			"trade_id": "bs_siberian_deluxe_barn"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"siberian_greenhouse\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.greenhouse_siberian\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"siberian_greenhouse\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/greenhouse/siberian_greenhouse",
+			"trade_id": "bs_siberian_greenhouse"
+		}
+	]
+}
