@@ -60,6 +60,7 @@ global.runTrainerPodium = (entity) => {
   if (ownerPlayer) {
     if (spawnTrainer && !block.level.hasNeighborSignal(block.pos)) {
       let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
+      if (levelAverage == undefined) return;
       let levelTier = global.getPlayerPodiumLevelTier(ownerPlayer, levelAverage);
       if (levelTier == undefined) return;
       let newTrainer
@@ -71,7 +72,7 @@ global.runTrainerPodium = (entity) => {
       } else {
         newTrainer = trainers.get(`${levelTier}`);
       }
-      // ownerPlayer.persistentData.winStreak = 14
+      ownerPlayer.persistentData.winStreak = 24
       if (ownerPlayer.persistentData.winStreak == 0 || !newTrainer || newTrainer === "") {
         if (ownerPlayer.persistentData.winStreak > 14 && ownerPlayer.persistentData.winStreak % 15 === 0) {
           newTrainer = global.getLeagueBoss(Math.min(100, levelTier))
@@ -83,7 +84,11 @@ global.runTrainerPodium = (entity) => {
         nbt.merge({ data: { trainers: newTrainersArray } });
         global.setBlockEntityData(block, nbt);
       }
-      if (newTrainer === "lass_anne_00041") newTrainer = "lass_anne_0004"
+      if (newTrainer == undefined) {
+
+      console.log("[ERROR] Failed to spawn trainer at tier " + levelTier + " for " + ownerPlayer.username + ". Tell Chakyl!");
+        return;
+      }
       // console.log("Spawning trainer " + newTrainer + " at tier " + levelTier + " for " + ownerPlayer.username);
       let freshTrainer = level.createEntity("rctmod:trainer");
       let trainerNBT = freshTrainer.getNbt();

@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.6-SSV4.0.8A
+### v1.0.7-SSV4.0.8
 ^^^
 --- 
 - Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)

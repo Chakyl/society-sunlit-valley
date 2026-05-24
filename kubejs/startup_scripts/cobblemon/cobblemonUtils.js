@@ -19,6 +19,7 @@ global.getPartyLevel = (player) => {
     if (levelHighest < pokemon.level) levelHighest = pokemon.level;
     partyCount++;
   });
+  if (partyCount == 0) return 0;
   if (hasBanned) return 105;
   let levelHighestCount = 0;
   party.forEach((pokemon) => {
