@@ -1,9 +1,9 @@
 ^^^
 ## The Heart of the Community
-### v4.0.8
+### v4.0.9
 ^^^
 --- 
-# 4.0.8
+# 4.0.9
 - Auto-Petter now triggers at 7am to avoid hunger debuff
 - Fixed default journeymap configs
 - Fixed season quest not having important info
