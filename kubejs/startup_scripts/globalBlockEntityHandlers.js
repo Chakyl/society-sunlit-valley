@@ -825,7 +825,7 @@ global.onDrain = (blockInfo, fluid, sim) => {
 // Text display utils
 global.clearOldTextDisplay = (block, level, id) => {
   const { x, y, z } = block;
-  level.getEntitiesWithin(AABB.ofBlock(block).inflate(2))
+  level.getEntitiesWithin(AABB.ofBlock(block).inflate(3))
     .filter((entityType) => entityType.type === "minecraft:text_display")
     .forEach((entity) => {
       entity.getTags().forEach((tag) => {
