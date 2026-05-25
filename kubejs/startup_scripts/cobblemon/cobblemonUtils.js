@@ -85,7 +85,7 @@ global.getCurrentSpawnDetails = (level, player, rarity) => {
 
 global.getImportantAspect = (aspects) => {
   for (let i = 0; i < aspects.length; i++) {
-    if (["galarian", "hisuian", "alolan", "paldean"].includes(aspects[i])) return aspects[i];
+    if (["galarian", "hisuian", "alolan", "paldean", "bloodmoon"].includes(aspects[i])) return aspects[i];
   }
   return null;
 }
