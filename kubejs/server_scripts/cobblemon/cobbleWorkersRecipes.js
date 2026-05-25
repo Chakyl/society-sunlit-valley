@@ -214,36 +214,12 @@ ServerEvents.recipes((e) => {
     24000,
     "HP"
   );
-  [
-    {
-      item: "vintagedelight:ghost_pepper",
-      pickle: "vintagedelight:pickled_pepper",
-    },
-    { item: "vintagedelight:cucumber", pickle: "vintagedelight:pickle" },
-    {
-      item: "minecraft:pitcher_pod",
-      pickle: "vintagedelight:pickled_pitcher_pod",
-    },
-    { item: "minecraft:beetroot", pickle: "vintagedelight:pickled_beetroot" },
-    { item: "farm_and_charm:onion", pickle: "vintagedelight:pickled_onion" },
-    { item: "farmersdelight:cabbage_leaf", pickle: "vintagedelight:kimchi" },
-  ].forEach((pickle) => {
+  Array.from(global.picklingRecipes.keys()).forEach((element) => {
     createCobbleWorkerRecipe(
       {
-        item: pickle.item,
+        item: element,
       },
-      { item: pickle.pickle, count: 1 },
-      "poison",
-      1000,
-      "HP"
-    );
-  });
-  global.picklableVegetables.forEach((pickle) => {
-    createCobbleWorkerRecipe(
-      {
-        item: pickle.item,
-      },
-      { item: `society:pickled_${pickle.item.split(":")[1]}`, count: 1 },
+      { item: global.picklingRecipes.get(element).pickle, count: 1 },
       "poison",
       1000,
       "HP"

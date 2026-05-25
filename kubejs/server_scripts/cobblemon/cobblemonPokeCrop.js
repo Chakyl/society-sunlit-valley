@@ -213,9 +213,7 @@ BlockEvents.rightClicked((e) => {
     let checkBlocked;
     let blockState;
     if (
-      (block.hasTag("minecraft:crops") || block.id.includes("pamhc2trees")) &&
-      !block.hasTag("cobblemon:berries") &&
-      initialBlock.block.isMaxAge(initialBlock) &&
+      !block.hasTag("cobblemon:berries") && ((block.hasTag("minecraft:crops") && initialBlock.block.isMaxAge(initialBlock)) || (block.id.includes("pamhc2trees") && block.properties.get("age") == 7)) &&
       global.hasScopeSurprises(player)
     ) {
       let radius = 0;

@@ -83,11 +83,11 @@ BlockEvents.broken("society:prize_machine", (e) => {
 });
 
 BlockEvents.broken("society:coin_leaderboard", (e) => {
-  global.clearOldTextDisplay(e.block, "leaderboard");
+  global.clearOldTextDisplay(e.block, e.level, "leaderboard");
 });
 
 BlockEvents.broken("society:shipping_bin_monitor", (e) => {
-  global.clearOldTextDisplay(e.block, "shipping_bin_monitor");
+  global.clearOldTextDisplay(e.block, e.level, "shipping_bin_monitor");
 });
 
 BlockEvents.broken("society:fish_pond_basket", (e) => {

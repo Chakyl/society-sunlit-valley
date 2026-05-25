@@ -1,33 +1,14 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.6-SSV4.0.8A
+### v1.0.7-SSV4.0.8
 ^^^
 --- 
-- Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)
-- Added ability for CobbleDex to register Pokemon as caught when right clicking your own Pokemon (for cases where it doesn't happen automatically, like Mystery Gifts
-- Added ability to toggle Surprise Pokemon (ore/crop pokemon) by left clicking Silph Scope
-- Added Sunlit League Medallions as rewards every 10% of the dex caught
-- Added ssc_general format to /showdown challenge
-- Added additional item drop streak rewards to trainer podium that start at 20 wins in a row
-- Increased box count to cover complete dex (1000 total)
-- Increased Sunlit League Medallion drop counts on subsequent streak wins (max 5 total)
-- Ended Trainer May's rein of terror over tier 75
-- Pokemart now sells 5 different labeled Mystery Gifts rather than one random gift
-- Swapped Cobblemon's Ability Patch for Unimplemented Items' so Hidden Abilities can be removed (with conversion recipe)
-- Reduced trainer podium and Sunlit League boss difficulty by 1 tier
-- Removed Sunlit League Medallion cost from Mystery Gifts
-- Removed Onix and Steelix from surprise ore pool due to their lack of will to live
-- Removed Tera blast and Hidden Power from tm/tr pool due to being non-functional
-- Reworked tier 100 to not be full of minmaxed default RCT mod monsters
-- Tweaked type gems mined by Mystery Mine to be spread out and fixed certain ones being missing
-- Testing Artisan Hopper behavior change to prevent levelchunk crashes
-- Fixed certain biome tags not existing (especially for regional evos like galar bias koffing)
-- Fixed podium Tier 75 only having Trainer May
-- Fixed Sunlit League rules not applying
-- Fixed Fighting types fighting Crabapple trees dropping Apricon Logs
-- Fixed Smeargle not being ranchable
-- Fixed Flabebe line not producing ranching drops
-- Fixed Hisuian starter pledge chances
+- Fixed trainer podium related crash
+- Fixed serene seasons config syncing (experimental)
+- Fixed potential crash involving coin leaderboards (experimental)
+- Fixed poison type pickling recipes not matching pickling can
+- Fixed errors with tree harvesting
+- Fixed Ursaluna Blood Moon not spawning from sun raid statues
 
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
@@ -94,6 +75,33 @@
 - Backported Evo stone blocks
 - Backported evo items (Metal Alloy, Syrupy Apple, Shell Helmet, etc)
 - Backported move animations (Thanks MrFreezy™!)
+
+## 1.0.6-SSV4.0.8
+- Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)
+- Added ability for CobbleDex to register Pokemon as caught when right clicking your own Pokemon (for cases where it doesn't happen automatically, like Mystery Gifts
+- Added ability to toggle Surprise Pokemon (ore/crop pokemon) by left clicking Silph Scope
+- Added Sunlit League Medallions as rewards every 10% of the dex caught
+- Added ssc_general format to /showdown challenge
+- Added additional item drop streak rewards to trainer podium that start at 20 wins in a row
+- Increased box count to cover complete dex (1000 total)
+- Increased Sunlit League Medallion drop counts on subsequent streak wins (max 5 total)
+- Ended Trainer May's rein of terror over tier 75
+- Pokemart now sells 5 different labeled Mystery Gifts rather than one random gift
+- Swapped Cobblemon's Ability Patch for Unimplemented Items' so Hidden Abilities can be removed (with conversion recipe)
+- Reduced trainer podium and Sunlit League boss difficulty by 1 tier
+- Removed Sunlit League Medallion cost from Mystery Gifts
+- Removed Onix and Steelix from surprise ore pool due to their lack of will to live
+- Removed Tera blast and Hidden Power from tm/tr pool due to being non-functional
+- Reworked tier 100 to not be full of minmaxed default RCT mod monsters
+- Tweaked type gems mined by Mystery Mine to be spread out and fixed certain ones being missing
+- Testing Artisan Hopper behavior change to prevent levelchunk crashes
+- Fixed certain biome tags not existing (especially for regional evos like galar bias koffing)
+- Fixed podium Tier 75 only having Trainer May
+- Fixed Sunlit League rules not applying
+- Fixed Fighting types fighting Crabapple trees dropping Apricon Logs
+- Fixed Smeargle not being ranchable
+- Fixed Flabebe line not producing ranching drops
+- Fixed Hisuian starter pledge chances
 
 ## 1.0.5-SSV4.0.8 
 - Added 2 random TRs per day sold at the ball botique
