@@ -1,0 +1,102 @@
+{
+	"id": "mystical_oak_intro",
+	"title": "mystical_oak introduction",
+	"description": "dialog.npc.mystical_oak.intro.description",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.intro.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.intro.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.intro.0.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 3,
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.intro.0.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.intro.0.line_4"
+				}
+			],
+			"portraits": [
+				{
+					"path": "mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "mystical_oak_gift_hated_0",
+	"title": "mystical_oak introduction",
+	"description": "dialog.npc.mystical_oak.gift.hated",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.gift_hated.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "hated/mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

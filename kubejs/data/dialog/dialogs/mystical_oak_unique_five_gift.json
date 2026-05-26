@@ -1,0 +1,29 @@
+{
+	"id": "mystical_oak_unique_five_gift",
+	"title": "mystical_oak introduction",
+	"description": "dialog.npc.mystical_oak.unique.five_gift",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.unique_five_gift.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p mystical_oak"
+			]
+		}
+	]
+}

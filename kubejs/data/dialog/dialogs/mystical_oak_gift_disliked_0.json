@@ -1,0 +1,26 @@
+{
+	"id": "mystical_oak_gift_disliked_0",
+	"title": "mystical_oak introduction",
+	"description": "dialog.npc.mystical_oak.gift.disliked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.gift_disliked.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "disliked/mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}
