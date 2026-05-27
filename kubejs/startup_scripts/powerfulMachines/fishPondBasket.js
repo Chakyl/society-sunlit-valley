@@ -1,7 +1,12 @@
 console.info("[SOCIETY] artisanHopper.js loaded");
 
-global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
-  const { level, block, inventory } = tickEvent;
+/**
+ * @param {Internal.BlockEntityJS} fishPondBasket
+ * @param {Internal.Player|null} player
+ */
+global.runFishPondBasket = (fishPondBasket, fishPondPos, player) => {
+  const { level, block, inventory } = fishPondBasket;
+  const stages = fishPondBasket.data.stages;
   const server = level.server;
   const fishPond = level.getBlock(fishPondPos);
   const { x, y, z } = fishPond;
@@ -17,7 +22,7 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
     global.inventoryBelowHasRoom(level, block, global.getRoe(type)) &&
     (recycleSparkstone || global.useInventoryItems(inventory, "society:sparkstone", 1) == 1)
   ) {
-    machineOutputs = global.handleFishHarvest(fishPond, player, server, true);
+    machineOutputs = global.handleFishHarvest(fishPond, player, server, true, stages);
 
     if (machineOutputs.length > 0) {
       machineOutputs.forEach((item) => {
@@ -42,7 +47,7 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
     level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
     population > 0 && max_population === population
   ) {
-    let fishie = global.handleFishExtraction(fishPond, player, server);
+    let fishie = global.handleFishExtraction(fishPond, player, server, stages);
     recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
     if (
       global.inventoryBelowHasRoom(level, block, fishie) &&
@@ -117,23 +122,23 @@ StartupEvents.registry("block", (event) => {
         const { block, level } = entity;
         const { x, y, z } = block;
         const radius = 1;
-        let attachedPlayer;
-        level.getServer().players.forEach((p) => {
-          if (p.getUuid().toString() === block.getEntityData().data.owner) {
-            attachedPlayer = p;
-          }
-        });
-        if (attachedPlayer) {
-          let scanBlock;
-          for (let pos of BlockPos.betweenClosed(
-            new BlockPos(x - radius, y - radius, z - radius),
-            [x + radius, y + radius, z + radius]
-          )) {
-            if (!level.isLoaded(pos)) continue;
-            scanBlock = level.getBlock(pos);
-            if (scanBlock.id === "society:fish_pond") {
-              global.runFishPondBasket(entity, pos.immutable(), attachedPlayer);
-            }
+        let attachedPlayer = global.cacheOwner(entity, [
+          "bullfish_jobs",
+          "caper_catcher",
+          "caviar_catcher",
+          "hot_hands",
+          "mitosis",
+          "scum_collector",
+        ]);
+        let scanBlock;
+        for (let pos of BlockPos.betweenClosed(
+          new BlockPos(x - radius, y - radius, z - radius),
+          [x + radius, y + radius, z + radius]
+        )) {
+          if (!level.isLoaded(pos)) continue;
+          scanBlock = level.getBlock(pos);
+          if (scanBlock.id === "society:fish_pond") {
+            global.runFishPondBasket(entity, pos.immutable(), attachedPlayer);
           }
         }
       }),

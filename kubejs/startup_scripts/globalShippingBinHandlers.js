@@ -368,7 +368,6 @@ global.processValueOutput = (
 };
 
 global.cacheShippingBin = (entity) => {
-  const { level, block } = entity;
   const attributeMapping = [
     "shippingbin:crop_sell_multiplier",
     "shippingbin:wood_sell_multiplier",
@@ -381,29 +380,5 @@ global.cacheShippingBin = (entity) => {
     "brine_and_punishment",
     "the_quality_of_the_earth",
   ];
-  let binPlayer;
-  level.getServer().players.forEach((p) => {
-    if (p.getUuid().toString() === block.getEntityData().data.owner) {
-      let newAttributes = [];
-      let stages = [];
-      attributeMapping.forEach((attr) => {
-        newAttributes.push({
-          Base: Number(
-            p.nbt.Attributes.filter((obj) => {
-              return obj.Name === attr;
-            })[0]?.Base
-          ),
-          Name: attr,
-        });
-      });
-      stagesToFind.forEach((stage) => {
-        if (p.stages.has(stage)) stages.push(stage);
-      });
-      let nbt = block.getEntityData();
-      nbt.merge({ data: { attributes: newAttributes, stages: stages } });
-      global.setBlockEntityData(block, nbt)
-      binPlayer = p;
-    }
-  });
-  return binPlayer;
+return global.cacheOwner(entity, stagesToFind, attributeMapping);
 };

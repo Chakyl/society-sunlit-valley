@@ -10,9 +10,7 @@ const artisanMachineCanHaveAdditionalOutput = [
 ];
 
 /** 
- * @param {Internal.Level} level
- * @param {Internal.BlockContainerJS} block
- * @param {Internal.BlockContainerJS} artisanMachine
+ * @param {Internal.CompoundTag} stages
  */
 global.handleAdditionalArtisanMachineOutputs = (
   level,
@@ -21,7 +19,7 @@ global.handleAdditionalArtisanMachineOutputs = (
   recipes,
   recipeId,
   upgraded,
-  agedPrize
+  stages
 ) => {
   switch (artisanMachine.id) {
     case "society:loom": {
@@ -67,7 +65,7 @@ global.handleAdditionalArtisanMachineOutputs = (
       break;
     }
     case "society:aging_cask": {
-      if (agedPrize && rnd5()) {
+      if (stages.contains("aged_prize") && rnd5()) {
         global.insertBelow(level, block, "society:prize_ticket");
       }
       break;
@@ -86,12 +84,11 @@ global.handleAdditionalArtisanMachineOutputs = (
     }
   }
 };
-
 // TODO: make artisan hopper set tappers
 /**
- * @param {Internal.BlockContainerJS} block
+ * @param {Internal.CompoundTag} stages
  */
-global.getArtisanMachineData = (block, upgraded, rancher, ancientAging, canadianAndFamous) => {
+global.getArtisanMachineData = (player, block, upgraded, stages) => {
   let machineData = {
     recipes: [],
     stageCount: 0,
@@ -101,7 +98,7 @@ global.getArtisanMachineData = (block, upgraded, rancher, ancientAging, canadian
     soundType: "minecraft:ui.toast.in",
   };
   let rancherOutputCount;
-  if (rancher && Math.random() <= 0.2) {
+  if (stages.contains("rancher") && Math.random() <= 0.2) {
     rancherOutputCount = 2;
   }
   let machineNbt = block.getEntityData();
@@ -163,7 +160,7 @@ global.getArtisanMachineData = (block, upgraded, rancher, ancientAging, canadian
       };
       break;
     case "society:ancient_cask":
-      if (ancientAging) {
+      if (stages.contains("ancient_aging")) {
         if (upgraded) {
           machineData = {
             recipes: global.ancientCaskRecipes,
@@ -248,7 +245,7 @@ global.getArtisanMachineData = (block, upgraded, rancher, ancientAging, canadian
         recipes: global.tapperRecipes,
         stageCount: 1,
         soundType: "vinery:cabinet_close",
-        outputMult: canadianAndFamous ? 2 : 1,
+        outputMult: stages.contains("canadian_and_famous") ? 2 : 1,
       };
       break;
     case "society:mushroom_log":
@@ -269,27 +266,25 @@ global.getArtisanMachineData = (block, upgraded, rancher, ancientAging, canadian
 };
 
 /** 
- * @param {Internal.BlockEntityJS} artisanHopperBlockEntity
- * @param {BlockPos} artisanMachinePos
+ * @param {Internal.BlockEntityJS} artisanHopper
  * @param {Internal.Player|null} player
  */
-global.runArtisanHopper = (artisanHopperBlockEntity, artisanMachinePos, player, delay) => {
-  const { level, block, inventory } = artisanHopperBlockEntity;
+global.runArtisanHopper = (artisanHopper, artisanMachinePos, player, delay) => {
+  const { level, block, inventory } = artisanHopper;
   const server = level.server;
 
   server.scheduleInTicks(delay, () => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
     const nbt = artisanMachine.getEntityData();
-    const artisanHopperNbt = artisanHopperBlockEntity.getEntityData();
     if (!nbt || !nbt.data) return;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
+    const stages = artisanHopper.data.stages;
     const loadedData = global.getArtisanMachineData(
+      player,
       artisanMachine,
       upgraded,
-      artisanHopperNbt.getBoolean("rancher"),
-      artisanHopperNbt.getBoolean("ancient_aging"),
-      artisanHopperNbt.getBoolean("canadian_and_famous")
+      stages,
     );
     const season = global.getSeasonFromLevel(level);
     const chargingRodOutput = Item.of(
@@ -392,11 +387,11 @@ global.runArtisanHopper = (artisanHopperBlockEntity, artisanMachinePos, player, 
               recipes,
               resolvedRecipeId,
               upgraded,
-              artisanHopperNbt.getBoolean("aged_prize"),
+              stages
             );
           }
           let sparkstoneSaveChance = 0;
-          if (artisanHopperNbt.getBoolean("slouching_towards_artistry")) {
+          if (stages.contains("slouching_towards_artistry")) {
             sparkstoneSaveChance = Number(currentStage) * 0.05;
           }
           if (!recycleSparkstone && Math.random() > sparkstoneSaveChance) {
@@ -524,26 +519,9 @@ global.runArtisanHopper = (artisanHopperBlockEntity, artisanMachinePos, player, 
 global.artisanHopperScan = (entity, radius) => {
   const { block, level } = entity;
   const { x, y, z } = block;
-  let attachedPlayer = null;
-  level.getServer().players.forEach((p) => {
-    if (p.getUuid().toString() === block.getEntityData().data.owner) {
-      attachedPlayer = p;
-    }
-  });
-  const stagesToStore = [
+  const attachedPlayer = global.cacheOwner(entity, [
     "slouching_towards_artistry", "ancient_aging", "rancher", "aged_prize", "canadian_and_famous"
-  ];
-  let newData = {};
-  for (const stage of stagesToStore) {
-    if (attachedPlayer) {
-      newData[stage] = attachedPlayer.stages.has(stage);
-    } else if (!nbt.contains(stage)) {
-      newData[stage] = false;
-    }
-  }
-  if (Object.keys(newData).length > 0) {
-    global.setBlockEntityData(block, block.getEntityData().merge({ data: newData }));
-  }
+  ]);
   let scanBlock;
   let scannedBlocks = 0;
   for (let pos of BlockPos.betweenClosed(
@@ -596,8 +574,8 @@ StartupEvents.registry("block", (event) => {
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(600, 0, (entity) => {
         global.artisanHopperScan(entity, 3);
-      }),
-        blockInfo.rightClickOpensInventory();
+      });
+      blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
           .insertItem((blockEntity, slot, stack, simulate) =>
@@ -649,8 +627,8 @@ StartupEvents.registry("block", (event) => {
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(600, 0, (entity) => {
         global.artisanHopperScan(entity, 1);
-      }),
-        blockInfo.rightClickOpensInventory();
+      });
+      blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
           .insertItem((blockEntity, slot, stack, simulate) =>

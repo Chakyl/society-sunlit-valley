@@ -223,18 +223,22 @@ global.getPondProperties = (block) => {
   };
 };
 
-global.handleFishHarvest = (block, player, server, basket) => {
+/**
+ * @param {Internal.Player|null} player
+ * @param {Internal.Stages|Internal.CompoundTag} stages player.stages or fish pond basket NBT stages
+ */
+global.handleFishHarvest = (block, player, server, basket, stages) => {
   const { facing, valid, upgraded, quest } = global.getPondProperties(block);
   let nbt = block.getEntityData();
   const { quest_id, type, population, max_population } = nbt.data;
   const fish = global.fishPondDefinitions.get(type);
   let additionalMaxRoe = 0;
   let harvestOutputs = [];
-  if (Math.random() < 0.01 && !player.stages.has("bullfish_jobs")) {
+  if (Math.random() < 0.01 && !global.isStagePresent(stages, "bullfish_jobs")) {
     harvestOutputs.push("society:bullfish_jobs");
   }
-  if (player.stages.has("caper_catcher")) additionalMaxRoe += 3;
-  if (player.stages.has("caviar_catcher")) additionalMaxRoe += 2;
+  if (global.isStagePresent(stages, "caper_catcher")) additionalMaxRoe += 3;
+  if (global.isStagePresent(stages, "caviar_catcher")) additionalMaxRoe += 2;
   const fishRoe = global.getRoe(type);
   const calculateRoe = rnd(
     Math.floor(population / 4),
@@ -248,7 +252,7 @@ global.handleFishHarvest = (block, player, server, basket) => {
       fishPondRoll = Math.random();
       let rewardChance = reward.chance;
       if (upgraded == "true") rewardChance *= 2;
-      if (player.stages.has("scum_collector")) rewardChance *= 2;
+      if (global.isStagePresent(stages, "scum_collector")) rewardChance *= 2;
       if (population >= reward.minPopulation && fishPondRoll <= rewardChance) {
         // Rewards scale to amount of fish population relative to when reward starts spawning
         let calculateCount = Math.floor(
@@ -291,18 +295,21 @@ global.handleFishHarvest = (block, player, server, basket) => {
   });
 };
 
-global.handleFishExtraction = (block, player, server) => {
+/**
+ * @param {Internal.Stages|Internal.CompoundTag} stages player.stages or fish pond basket NBT stages
+ */
+global.handleFishExtraction = (block, player, server, stages) => {
   let nbt = block.getEntityData();
   const { type, population, non_native_fish } = nbt.data;
   let naturalPopulation = population - non_native_fish;
   let result;
   let resultCount =
-    player.stages.has("mitosis") && naturalPopulation > 0 ? 2 : 1;
+    global.isStagePresent(stages, "mitosis") && naturalPopulation > 0 ? 2 : 1;
   let quality = 0;
-  if (player.stages.has("bullfish_jobs") && Number(naturalPopulation) > 3) {
+  if (global.isStagePresent(stages, "bullfish_jobs") && Number(naturalPopulation) > 3) {
     quality = Math.floor((Number(population) - 3) / 2);
   }
-  if (player.stages.has("hot_hands") && naturalPopulation > 0) {
+  if (global.isStagePresent(stages, "hot_hands") && naturalPopulation > 0) {
     server.runCommandSilent(
       `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`,
     );

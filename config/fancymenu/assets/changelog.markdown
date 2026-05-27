@@ -4,6 +4,6 @@
 ^^^
 --- 
 
-- Artisan Hoppers can now work while the owner is offline
+- Artisan Hoppers, Auto Grabbers, Fish Pond Baskets can now work while the owner is offline
 
 TODO
