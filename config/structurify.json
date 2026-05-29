@@ -1,264 +1,205 @@
 {
-  "config_version": "1.0.17",
-  "config_datetime": "2025-07-07_23-50-01",
+  "config_version": "2.0.25",
+  "config_datetime": "2026-05-28_22-00-30",
   "general": {
-    "min_structure_distance_from_world_center": 0,
     "disable_all_structures": false,
+    "prevent_structure_overlap": false,
     "enable_global_spacing_and_separation_modifier": false,
     "global_spacing_and_separation_modifier": 1.0
   },
+  "structure_namespaces": [],
   "structures": [
     {
       "name": "minecraft:stronghold",
       "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 0,
-      "flatness_check_threshold": 10,
+      "override_global_biome_check": false,
       "enable_biome_check": false,
-      "biome_check_distance": 0,
       "biome_check_mode": "BLACKLIST",
       "biome_check_blacklisted_biomes": [
         "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      ]
     },
     {
       "name": "beautify:botanist_house_desert",
       "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
+      "override_global_biome_check": false,
       "enable_biome_check": false,
-      "biome_check_distance": 80,
       "biome_check_mode": "BLACKLIST",
       "biome_check_blacklisted_biomes": [
         "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      ]
     },
     {
       "name": "beautify:botanist_house_plains",
       "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
+      "override_global_biome_check": false,
       "enable_biome_check": false,
-      "biome_check_distance": 80,
       "biome_check_mode": "BLACKLIST",
       "biome_check_blacklisted_biomes": [
         "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      ]
     },
     {
       "name": "beautify:botanist_house_savanna",
       "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
+      "override_global_biome_check": false,
       "enable_biome_check": false,
-      "biome_check_distance": 80,
       "biome_check_mode": "BLACKLIST",
       "biome_check_blacklisted_biomes": [
         "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      ]
     },
     {
       "name": "beautify:botanist_house_snowy",
       "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
+      "override_global_biome_check": false,
       "enable_biome_check": false,
-      "biome_check_distance": 80,
       "biome_check_mode": "BLACKLIST",
       "biome_check_blacklisted_biomes": [
         "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      ]
     },
     {
       "name": "beautify:botanist_house_taiga",
       "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
+      "override_global_biome_check": false,
       "enable_biome_check": false,
-      "biome_check_distance": 80,
       "biome_check_mode": "BLACKLIST",
       "biome_check_blacklisted_biomes": [
         "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      ]
     },
     {
-      "name": "betterarcheology:archeologist_camp_grassy",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 80,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:acacia_tree",
+      "is_disabled": true
     },
     {
-      "name": "betterarcheology:archeologist_camp_redsand",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 80,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:big_oak_tree",
+      "is_disabled": true
     },
     {
-      "name": "betterarcheology:archeologist_camp_sand",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 80,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:birch_tree",
+      "is_disabled": true
     },
     {
-      "name": "farmlife:greenhouse",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 1,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 1,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:cherry_tree",
+      "is_disabled": true
     },
     {
-      "name": "farmlife:tribull_ranch",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 1,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 1,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:dark_oak_tree",
+      "is_disabled": true
     },
     {
-      "name": "species:spectralibur_chamber",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 0,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 0,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:dead_tree_acacia",
+      "is_disabled": true
     },
     {
-      "name": "verdantvibes:oak_overgrown_hut",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 80,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:dead_tree_birch",
+      "is_disabled": true
     },
     {
-      "name": "verdantvibes:spruce_overgrown_hut",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 80,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river"
-      ],
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
+      "name": "mvs:dead_tree_cherry",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:dead_tree_dark_oak",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:dead_tree_jungle",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:dead_tree_mangrove",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:dead_tree_oak",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:dead_tree_spruce",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:jungle_palm_tree",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:jungle_tree",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:oak_tree",
+      "is_disabled": true
+    },
+    {
+      "name": "mvs:spruce_tree",
+      "is_disabled": true
     }
   ],
   "structure_sets": [
     {
+      "spacing": 20,
+      "separation": 6,
       "name": "beautify:botanist_house_snowy",
+      "is_disabled": false,
       "salt": 1994267089,
       "frequency": 0.13,
       "override_global_spacing_and_separation_modifier": false,
-      "spacing": 20,
-      "separation": 6
+      "structure_weights": {
+        "beautify:botanist_house_snowy": 1
+      }
     },
     {
       "name": "minecraft:buried_treasures",
+      "is_disabled": false,
       "salt": 1,
       "frequency": 0.01,
       "override_global_spacing_and_separation_modifier": false,
-      "spacing": 1,
-      "separation": 0
+      "structure_weights": {
+        "minecraft:buried_treasure": 1
+      }
     },
     {
       "name": "minecraft:mineshafts",
+      "is_disabled": false,
       "salt": 1,
       "frequency": 0.004,
       "override_global_spacing_and_separation_modifier": false,
-      "spacing": 1,
-      "separation": 0
+      "structure_weights": {
+        "minecraft:mineshaft": 1,
+        "minecraft:mineshaft_mesa": 1
+      }
     },
     {
+      "spacing": 40,
+      "separation": 10,
       "name": "minecraft:ruined_portals",
+      "is_disabled": false,
       "salt": 1,
       "frequency": 1.0,
       "override_global_spacing_and_separation_modifier": false,
-      "spacing": 40,
-      "separation": 10
+      "structure_weights": {
+        "minecraft:ruined_portal": 1,
+        "minecraft:ruined_portal_nether": 1,
+        "minecraft:ruined_portal_swamp": 1,
+        "minecraft:ruined_portal_mountain": 1,
+        "minecraft:ruined_portal_jungle": 1,
+        "minecraft:ruined_portal_ocean": 1,
+        "minecraft:ruined_portal_desert": 1
+      }
     },
     {
       "name": "minecraft:strongholds",
+      "is_disabled": false,
       "salt": 1,
       "frequency": 1.0,
       "override_global_spacing_and_separation_modifier": false,
-      "spacing": 0,
-      "separation": 0
+      "structure_weights": {
+        "minecraft:stronghold": 1
+      }
     }
-  ]
+  ],
+  "structure_template_pools": []
 }
