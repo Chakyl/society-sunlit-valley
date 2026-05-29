@@ -28,7 +28,7 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     DelayTime = 10
     # #----------------------------------------------------------------------
     # Whether to show the startup security notice for mod id whitelist mode
-    ShowWhitelistModeNotice = true
+    ShowWhitelistModeNotice = false
     # #----------------------------------------------------------------------
     # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
     # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
