@@ -1,6 +1,6 @@
 #Early window height
 earlyWindowHeight = 768
-#Enable forge global version checking
+#Enable NeoForge global version checking
 versionCheck = true
 #Should we control the window. Disabling this disables new GL features and can be bad for mods that rely on them.
 earlyWindowControl = true
@@ -18,12 +18,9 @@ defaultConfigPath = "defaultconfigs"
 disableOptimizedDFU = true
 #Skip specific GL versions, may help with buggy graphics card drivers
 earlyWindowSkipGLVersions = []
-#Whether to log a help message on first attempt, to aid troubleshooting. This setting should automatically disable itself after a successful launch
-earlyWindowLogHelpMessage = false
 #Max threads for early initialization parallelism,  -1 is based on processor count
 maxThreads = -1
 #Squir?
 earlyWindowSquir = false
-#Whether to show CPU usage stats in early window
-earlyWindowShowCPU = false
-
+#Disables File Watcher. Used to automatically update config if its file has been modified.
+disableConfigWatcher = false

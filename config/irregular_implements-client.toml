@@ -1,0 +1,26 @@
+#Should the Collapse Imbue invert the player's mouse sensitivity?
+collapseInvertsMouse = true
+#Should the recipe book button be hidden in the Custom Crafting Table screen?
+hideCustomCraftingTableRecipeBookButton = false
+
+[biome_painter]
+	#The size of the cube shown on correct biome positions.
+	# Default: 0.05
+	# Range: 0.01 ~ 1.0
+	biomePainterCorrectBiomeCubeSize = 0.05
+	#The size of the cube shown on incorrect biome positions.
+	# Default: 0.35
+	# Range: 0.01 ~ 1.0
+	biomePainterIncorrectBiomeCubeSize = 0.35
+	#The color of the cube shown on correct biome positions.
+	# Default: 1713547776
+	# Range: > 0
+	biomePainterCorrectBiomeCubeColor = 1713547776
+	#The color of the cube shown on incorrect biome positions.
+	# Default: 1722425856
+	# Range: > 0
+	biomePainterIncorrectBiomeCubeColor = 1722425856
+	#The color of the cube shown on the selected incorrect biome position.
+	# Default: 1713513130
+	# Range: > 0
+	biomePainterSelectedIncorrectBiomeCubeColor = 1713513130

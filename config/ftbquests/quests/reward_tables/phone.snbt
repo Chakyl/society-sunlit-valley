@@ -3,9 +3,8 @@
 	loot_size: 1
 	order_index: 9
 	rewards: [
-		{ item: "whimsy_deco:blue_phone" }
-		{ item: "whimsy_deco:black_phone" }
-		{ item: "whimsy_deco:red_phone" }
+		{ id: "7AFF91F24C64E960", item: { components: { "ftbquests:missing_item": "whimsy_deco:blue_phone" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "2E11D25ABD2CB54F", item: { components: { "ftbquests:missing_item": "whimsy_deco:black_phone" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "590985EF41B81AF6", item: { components: { "ftbquests:missing_item": "whimsy_deco:red_phone" }, count: 1, id: "ftbquests:missing_item" } }
 	]
-	title: "{ftbquests.loot_table.3483058636960571374.title}"
 }

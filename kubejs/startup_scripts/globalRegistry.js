@@ -1,11 +1,6 @@
 // priority: -20
 const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
-const NUMISMATICS_CURIO_UTILS = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
-
 global.GLOBAL_BANK = NUMISMATICS.BANK;
-global.getPersonalOrCurioAccount = NUMISMATICS_CURIO_UTILS.getPersonalOrCurioAccount;
-global.depositIntoPersonalOrCurio = NUMISMATICS_CURIO_UTILS.depositIntoPersonalOrCurio;
-global.deductFromPersonalOrCurio = NUMISMATICS_CURIO_UTILS.deductFromPersonalOrCurio;
 
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {
@@ -78,8 +73,6 @@ global.ore = [
   { item: "minecraft:amethyst_block", value: 32 },
   { item: "minecraft:quartz", value: 8 },
   { item: "minecraft:quartz_block", value: 32 },
-  { item: "etcetera:raw_bismuth", value: 32 },
-  { item: "etcetera:raw_bismuth_block", value: 288 },
   { item: "oreganized:raw_lead", value: 48 },
   { item: "oreganized:raw_lead_block", value: 432 },
   { item: "society:sparkstone", value: 16 },
@@ -553,7 +546,6 @@ global.animalProducts = [
   { item: "beachparty:raw_mussel_meat", value: 16 },
   { item: "untitledduckmod:raw_goose", value: 16 },
   { item: "autumnity:turkey", value: 32 },
-  { item: "autumnity:turkey_piece", value: 6 },
   { item: "atmospheric:carmine_husk", value: 10 },
   { item: "crabbersdelight:raw_squid_tentacles", value: 16 },
   { item: "crabbersdelight:squid_barrel", value: 144 },
@@ -766,7 +758,7 @@ global.artisanGoods = [
   { item: "society:mystic_syrup", value: 1000 },
   { item: "society:pine_tar", value: 128 },
   { item: "society:sap", value: 4 },
-  { item: "society:rubber", value: 6 },
+  { item: "society:rubber", value: 30 },
   { item: "society:aged_cheese_block", value: 288 },
   { item: "society:aged_goat_cheese_block", value: 1728 },
   { item: "society:aged_warped_cheese_block", value: 1728 },
@@ -917,7 +909,6 @@ global.logs = [
   { item: "quark:stripped_azalea_log", value: 4 },
   { item: "quark:ancient_log", value: 8 },
   { item: "quark:stripped_ancient_log", value: 8 },
-  { item: "betterarcheology:rotten_log", value: 12 },
   { item: "minecraft:warped_stem", value: 16 },
   { item: "minecraft:stripped_warped_stem", value: 16 },
   { item: "minecraft:crimson_stem", value: 16 },
@@ -1311,7 +1302,6 @@ const furnaceRecipes = [
   { item: "untitledduckmod:cooked_duck", value: 16 },
   { item: "untitledduckmod:cooked_goose", value: 16 },
   { item: "autumnity:cooked_turkey", value: 32 },
-  { item: "autumnity:cooked_turkey_piece", value: 6 },
   { item: "minecraft:cooked_cod", value: 16 },
   { item: "unusualfishmod:cooked_aero_mono_stick", value: 192 },
   { item: "aquaculture:fish_fillet_cooked", value: 8 },
@@ -1707,7 +1697,6 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
-  { item: "minecraft:dragon_breath", value: 4},
   { item: "society:sunlit_pearl", value: 1920 },
   { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },
@@ -1744,29 +1733,6 @@ global.miscAdventurer = [
   { item: "minecraft:echo_shard", value: 192 },
   { item: "minecraft:heart_of_the_sea", value: 256 },
   { item: "minecraft:nether_star", value: 2048 },
-  { item: "betterarcheology:artifact_shards", value: 64 },
-  { item: "betterarcheology:unidentified_artifact", value: 576 },
-  { item: "betterarcheology:sheep_fossil_head", value: 192 },
-  { item: "betterarcheology:villager_fossil_head", value: 192 },
-  { item: "betterarcheology:creeper_fossil_head", value: 192 },
-  { item: "betterarcheology:ocelot_fossil_head", value: 192 },
-  { item: "betterarcheology:wolf_fossil_head", value: 192 },
-  { item: "betterarcheology:chicken_fossil_head", value: 192 },
-  { item: "betterarcheology:guardian_fossil_head", value: 192 },
-  { item: "betterarcheology:villager_fossil_body", value: 256 },
-  { item: "betterarcheology:creeper_fossil_body", value: 256 },
-  { item: "betterarcheology:ocelot_fossil_body", value: 256 },
-  { item: "betterarcheology:wolf_fossil_body", value: 256 },
-  { item: "betterarcheology:chicken_fossil_body", value: 256 },
-  { item: "betterarcheology:guardian_fossil_body", value: 256 },
-  { item: "betterarcheology:sheep_fossil_body", value: 256 },
-  { item: "betterarcheology:creeper_fossil", value: 896 },
-  { item: "betterarcheology:villager_fossil", value: 896 },
-  { item: "betterarcheology:chicken_fossil", value: 896 },
-  { item: "betterarcheology:ocelot_fossil", value: 896 },
-  { item: "betterarcheology:wolf_fossil", value: 896 },
-  { item: "betterarcheology:sheep_fossil", value: 896 },
-  { item: "betterarcheology:guardian_fossil", value: 896 },
   { item: "supplementaries:antique_ink", value: 32 },
   { item: "paraglider:spirit_orb", value: 64 },
   { item: "minecraft:dragon_egg", value: 3072 },
@@ -1775,9 +1741,6 @@ global.miscAdventurer = [
   { item: "crabbersdelight:pearl_block", value: 512 },
   { item: "trials:ominous_bottle", value: 64 },
   { item: "trials:trial_key", value: 112 },
-  { item: "betterarcheology:vase_green", value: 112 },
-  { item: "betterarcheology:vase", value: 128 },
-  { item: "betterarcheology:vase_creeper", value: 144 },
   { item: "trials:trial_key_ominous", value: 224 },
   { item: "trials:heavy_core", value: 6144 },
   { item: "windswept:hoot_pottery_sherd", value: 182 },
@@ -1786,9 +1749,12 @@ global.miscAdventurer = [
   { item: "windswept:flake_pottery_sherd", value: 256 },
   { item: "windswept:drupes_pottery_sherd", value: 256 },
   { item: "atmospheric:scythe_pottery_sherd", value: 512 },
+  { item: "atmospheric:succulent_pottery_sherd", value: 512 },
+  { item: "atmospheric:sun_pottery_sherd", value: 512 },
   { item: "trials:guster_pottery_sherd", value: 160 },
   { item: "trials:flow_pottery_sherd", value: 160 },
   { item: "trials:scrape_pottery_sherd", value: 160 },
+  { item: "atmospheric:scythe_pottery_sherd", value: 512 },
   { item: "atmospheric:succulent_pottery_sherd", value: 512 },
   { item: "atmospheric:sun_pottery_sherd", value: 512 },
   { item: "minecraft:angler_pottery_sherd", value: 192 },

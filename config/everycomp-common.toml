@@ -1,17 +1,26 @@
-
 [general]
-	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs
+	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs. Game Restart is required for this to take effect.
 	creative_tab = true
-	#Creates a debug folder inside your instance directory where all the dynamically generated resources will be saved
-	save_debug_resources = false
 	#Sends a packet to verify all dependencies mod versions are the same on connect. DIsable if it causes issues
 	mod_version_check_packet = true
 	#Don't touch unless you are told to
 	debug_packet = false
-	#Enables the generation of dynamic assets. This is required for the mod to work properly. Turn off if you chose to add all the generated assets via datapack manually. This can speedup boot times for modpacks. Note that the generated assets will depend on loaded datapacks
-	generate_dynamic_assets = true
-	#Allow the item_search or searchBar to be visible.
+	#Allow the item_search or searchBar to be visible. Game Restart is required for this to take effect.
 	tab_item_search = true
+	#
+	#How dynamic assets are generated.
+	#- NEVER: No asset will be generated. Use this if you have an external pack that adds assets for the block, otherwise you'll get missing assets everywhere
+	#- RUN_ONCE: Assets will be generated once every session. Subsequent reloads of resource/data pack will not regenerate them even if assets might have changed as a consequence
+	#- CACHED: Generate the assets on first boot and saves them to a cache folder in .minecraft/dynamic-data-pack-cache. If mods or packs change it will regenerate the cache. If not, subsequent reload won't generate anything and just read the cached ones as a normal pack.
+	#- CACHED_ZIPPED: Generate the assets on first boot and saves them to a cache zip file in .minecraft/dynamic-data-pack-cache. If mods or packs change it will regenerate the cache. If not, subsequent reload won't generate anything and just read the cached ones as a normal pack.
+	#- ALWAYS: Will always generate the assets & will be stored in memory. No cache is used. Unintuitively, this is often the fastest method as any disk access will be slow. 
+	#Try and see what works best for you.
+	#Allowed Values: NEVER, RUN_ONCE, CACHED, CACHED_ZIPPED, ALWAYS
+	server_assets_generation_mode = "ALWAYS"
+	#If set to true, then all of the generated items will not be put into the mod's tab. Game Restart is required for this to take effect.
+	no_mod_creative_tab = false
+	#Generate blocktype tags for every block type. This will be applied to all the mods that use the system, not just Every Compat. Can make pack a bit faster if its off. Turn off if you dont need it. Game Restart is required for this to take effect.
+	generate_blocktype_tags = true
 
 	[general.tooltips]
 		#Enabled tooltips showing which mod an EC item is from
@@ -20,4 +29,8 @@
 		block_type_enabled = false
 		#Only show on advanced settings
 		show_on_advanced_tooltips = false
-
+		#Enable Every-Compat to base textures off external Resource Packs rather than mod's default textures.
+		#ATTENTION: There are some Resource Packs that won't work well with Every-Compat, which is why this
+		#option is off by default. Disable if there are missing textures for blocks.
+		#
+		use_external_resource_pack = false

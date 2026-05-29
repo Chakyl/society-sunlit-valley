@@ -1,0 +1,223 @@
+[Banner]
+	giveEffect = true
+	showTooltip = true
+
+[Vitality]
+	# Default: 10
+	# Range: 1 ~ 200
+	interval = 10
+	# Default: 0.08
+	# Range: 0.0 ~ 10.0
+	exhaustionReduction = 0.08
+
+[Nutrition]
+	# Default: 5
+	# Range: 0 ~ 20
+	cakeDoughNutrition = 5
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	cakeDoughSaturation = 0.6
+	# Default: 5
+	# Range: 0 ~ 20
+	sweetDoughNutrition = 5
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	sweetDoughSaturation = 0.6
+	# Default: 5
+	# Range: 0 ~ 20
+	croissantNutrition = 5
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	croissantSaturation = 0.6
+	# Default: 5
+	# Range: 0 ~ 20
+	crustyBreadNutrition = 5
+	# Default: 1.2
+	# Range: 0.0 ~ 10.0
+	crustyBreadSaturation = 1.2
+	# Default: 5
+	# Range: 0 ~ 20
+	breadNutrition = 5
+	# Default: 1.2
+	# Range: 0.0 ~ 10.0
+	breadSaturation = 1.2
+	# Default: 5
+	# Range: 0 ~ 20
+	baguetteNutrition = 5
+	# Default: 1.2
+	# Range: 0.0 ~ 10.0
+	baguetteSaturation = 1.2
+	# Default: 3
+	# Range: 0 ~ 20
+	toastNutrition = 3
+	# Default: 0.8
+	# Range: 0.0 ~ 10.0
+	toastSaturation = 0.8
+	# Default: 5
+	# Range: 0 ~ 20
+	braidedBreadNutrition = 5
+	# Default: 1.2
+	# Range: 0.0 ~ 10.0
+	braidedBreadSaturation = 1.2
+	# Default: 7
+	# Range: 0 ~ 20
+	sandwichNutrition = 7
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	sandwichSaturation = 0.7
+	# Default: 8
+	# Range: 0 ~ 20
+	vegetableSandwichNutrition = 8
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	vegetableSandwichSaturation = 0.6
+	# Default: 6
+	# Range: 0 ~ 20
+	grilledSalmonSandwichNutrition = 6
+	# Default: 0.8
+	# Range: 0.0 ~ 10.0
+	grilledSalmonSandwichSaturation = 0.8
+	# Default: 7
+	# Range: 0 ~ 20
+	grilledBaconSandwichNutrition = 7
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	grilledBaconSandwichSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	breadWithJamNutrition = 5
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	breadWithJamSaturation = 0.5
+	# Default: 5
+	# Range: 0 ~ 20
+	strawberryCakeSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	strawberryCakeSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	sweetberryCakeSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	sweetberryCakeSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	chocolateCakeSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	chocolateCakeSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	chocolateGateauSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	chocolateGateauSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	bundtCakeSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	bundtCakeSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	linzerTartSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	linzerTartSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	applePieSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	applePieSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	glowberryPieSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	glowberryPieSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	chocolateTartSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	chocolateTartSliceSaturation = 0.7
+	# Default: 5
+	# Range: 0 ~ 20
+	puddingSliceNutrition = 5
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	puddingSliceSaturation = 0.7
+	# Default: 3
+	# Range: 0 ~ 20
+	strawberryGlazedCookieNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	strawberryGlazedCookieSaturation = 0.5
+	# Default: 3
+	# Range: 0 ~ 20
+	sweetberryGlazedCookieNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	sweetberryGlazedCookieSaturation = 0.5
+	# Default: 3
+	# Range: 0 ~ 20
+	chocolateGlazedCookieNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	chocolateGlazedCookieSaturation = 0.5
+	# Default: 3
+	# Range: 0 ~ 20
+	strawberryCupcakeNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	strawberryCupcakeSaturation = 0.5
+	# Default: 3
+	# Range: 0 ~ 20
+	sweetberryCupcakeNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	sweetberryCupcakeSaturation = 0.5
+	# Default: 3
+	# Range: 0 ~ 20
+	appleCupcakeNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	appleCupcakeSaturation = 0.5
+	# Default: 3
+	# Range: 0 ~ 20
+	cornetNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	cornetSaturation = 0.5
+	# Default: 3
+	# Range: 0 ~ 20
+	jamRollNutrition = 3
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	jamRollSaturation = 0.5
+	# Default: 5
+	# Range: 0 ~ 20
+	bunNutrition = 5
+	# Default: 1.2
+	# Range: 0.0 ~ 10.0
+	bunSaturation = 1.2
+	# Default: 5
+	# Range: 0 ~ 20
+	waffleNutrition = 5
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	waffleSaturation = 0.5
+	# Default: 2
+	# Range: 0 ~ 20
+	chocolateTruffleNutrition = 2
+	# Default: 0.4
+	# Range: 0.0 ~ 10.0
+	chocolateTruffleSaturation = 0.4
+	# Default: 6
+	# Range: 0 ~ 20
+	misslilituBiscuitNutrition = 6
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	misslilituBiscuitSaturation = 0.6

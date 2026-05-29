@@ -1,0 +1,18 @@
+#For configuring the mob remodels, go to the mixed litter startup config!
+[tortoise_shell_attributes]
+	#The attributes of the tortoise shell armor item
+	# Default: 670
+	# Range: > -2147483648
+	durability = 670
+	# Default: 4
+	# Range: > -2147483648
+	armor = 4
+	# Default: 3.0
+	# Range: -999.0 ~ 999.0
+	toughness = 3.0
+	# Default: -0.30000001192092896
+	# Range: -999.0 ~ 999.0
+	speedReduction = -0.30000001192092896
+	# Default: 0.20000000298023224
+	# Range: -999.0 ~ 999.0
+	knockbackResistance = 0.20000000298023224

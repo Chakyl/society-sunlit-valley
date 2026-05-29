@@ -1,0 +1,99 @@
+[Damage-Module]
+	#The purpose of the damage module is to remove the invulnerability ticks after an entity is damaged to better suit gameplay where entities are going to be ignoring too much damage if left unchecked. Disabling will nullify every feature listed under this module.
+	damageModuleEnabled = false
+	#Invulnerability Tick (I-Frame) count. Default: 0
+	invulnerabilityTickCount = 0
+	#If specified, these damage types will be able to deal damage on the same tick as a mechanism to bypass auto tick detection
+	damageTypeSameTickWhitelist = []
+	#If specified, these entity types or type tags will be blacklisted from skipping i-frames upon dealing damage
+	entityIframeBlacklist = []
+	#Additional handling for player's interactions with reduced i-frames. "ALL" means there is no additional handling, "ONLY_LIVING" means only living attacks ignore player i-frames (may help with unforeseen damage like potions), and "NONE" means player's damage ticks are unaffected by the damage module.
+	#Allowed Values: ALL, ONLY_LIVING, NONE
+	playerDamageMode = "ALL"
+	#In order to prevent spam attacks, a minimum threshold of attack strength can be set before an attack can deal damage. Default: 0.75
+	minimumAttackStrength = 0.75
+	#Whether a player is allowed to swing if the minimumAttackStrength threshold is not met. Default: true
+	allowNonMinStrengthAttacks = true
+	#Global multiplier to all knockback. Default: 1.0
+	globalKnockbackMultiplier = 1.0
+	#Enable Combat Snapshot Inspired Changes (experimental): Attack cooldown no longer affects damage, but instead affects weapon reach
+	#!THIS SETTING IS AFFECTED BY "minimumAttackStrength" AND "allowNonMinStrengthAttacks" WHICH SHOULD BE CONFIGURED ACCORDINGLY!
+	enableCombatSnapshot = false
+
+[Durability-Module]
+	#The purpose of the durability module is to rework how durability damage is applied to better emulate an rpg setting.  Disabling will nullify every feature listed under this module.
+	durabilityModuleEnabled = true
+	#What type of gear should take vanilla durability damage. Default: NONE
+	#Allowed Values: ALL, TOOLS, ARMOR, NONE
+	vanillaDurabilityGearType = "NONE"
+	#What type of gear is damaged upon death. Default: ALL
+	#Allowed Values: ALL, TOOLS, ARMOR, NONE
+	deathGearType = "ALL"
+	#The percent of durability damage equipment should take on player dying. Set to 0 to disable. Default: 0.15 (15%)
+	durabilityLostOnDeath = 0.15
+	#An additional constant amount of damage taken on death. This makes items with a high max durability degrade relatively slower. Set to 0 to disable. Default: 25
+	additionalDurabilityLostOnDeath = 25
+
+	[Durability-Module.Vanilla-Mode-Item-Configs]
+		#If specified, the only items or item tags to take vanilla durability damage (Ignores durability mode)
+		vanillaDurabilityWhitelist = ["supplementaries:bubble_blower", "dew_drop_watering_cans:iron_watering_can", "dew_drop_watering_cans:copper_watering_can", "dew_drop_watering_cans:gold_watering_can", "dew_drop_watering_cans:netherite_watering_can", "dew_drop_watering_cans:diamond_watering_can", "quark:seed_pouch", "supplementaries:flute", "create:sand_paper", "create:red_sand_paper", "supplementaries:rope_arrow", "create:copper_backtank", "create:netherite_backtank", "create:potato_cannon", "create:extendo_grip"]
+		#If specified, these items or item tags never take vanilla durability damage
+		vanillaDurabilityBlacklist = []
+
+	[Durability-Module.Death-Mode-Item-Configs]
+		#If specified, the only items or item tags to take durability damage on death (Ignores durability mode)
+		deathDurabilityWhitelist = []
+		#If specified, these items or item tags never take durability damage on death
+		deathDurabilityBlacklist = ["supplementaries:bubble_blower", "dew_drop_watering_cans:iron_watering_can", "dew_drop_watering_cans:copper_watering_can", "dew_drop_watering_cans:gold_watering_can", "dew_drop_watering_cans:netherite_watering_can", "dew_drop_watering_cans:diamond_watering_can", "quark:seed_pouch", "supplementaries:flute", "create:sand_paper", "create:red_sand_paper", "supplementaries:rope_arrow", "create:copper_backtank", "create:netherite_backtank", "create:potato_cannon", "create:extendo_grip"]
+
+[XP-Module]
+	#The purpose of the xp module is to rework how experience is dropped on a player's death by creating a souls-like xp catalyst instead. Disabling will nullify every feature listed under this module.
+	xpModuleEnabled = true
+	#Whether players will drop xp despite keepInventory gamerule. Default: true
+	ignoreKeepInventory = true
+	#Whether the player who dropped the xp is the only player allow to collect the xp. Default: true
+	onlyAllowOwnerPickup = true
+	#Multiplier to experience dropped by slain entities. Default: 1.0
+	mobDropXpMultiplier = 1.0
+	#Multiplier to experience dropped by blocks broken. Default: 1.0
+	blockDropXpMultiplier = 1.0
+
+[Hunger-Module]
+	#The hunger module removes hunger and makes food to directly heal in order to to remove the tedious task of maintaining hunger, as well as rebalance health management during combat and exploration. Disabling will nullify every feature listed under this module.
+	hungerModuleEnable = false
+	#Disable Hunger. Without this, most of the hunger module features and config are nullified, but if you want to adjust stack sizes or potion mechanics without disabling hunger, you can do so here.
+	disableHunger = true
+	#Whether the Hunger status effect prevents the player from sprinting. Default: true
+	hungerEffectPreventsSprinting = true
+	#Whether sprinting is allowed. Default: true
+	allowSprinting = true
+	#The multiplier of a food's hunger value to health regained by eating it. Default: 0.5 (50%)
+	foodToHealthModifier = 0.5
+	#An additional multiplier to the health regained by eating while under the Hunger status effect. Default: 0.5 (50%)
+	hungerEffectHealMultiplier = 0.5
+	#The amount of time, in ticks, between players naturally regenerating 1 hp. 1 second is 20 ticks. Turn off the naturalRegeneration gamerule to disable. Default: 250.
+	naturalRegenerationTickRate = 250
+	#Whether players should naturally regenerate hp during combat. (Turn off the naturalRegeneration gamerule to disable all natural regen). Default: false.
+	naturalRegenerationDuringCombat = false
+	#Item Cooldown in seconds when throwing a splash potion. Default: 0.5
+	splashPotionCooldown = 0.5
+	#Item Cooldown in seconds when throwing a lingering potion. Default: 1.5
+	lingeringPotionCooldown = 1.5
+	#Item Cooldown in seconds for drinking a potion. Default: 0.0
+	drinkPotionCooldown = 0.0
+	#Item Cooldown in seconds for eating a food item. Default: 0.0
+	eatFoodCooldown = 0.0
+	#Multiplier to the time taken to eat food. Default: 1.2
+	eatTimeMultiplier = 1.2
+	#Multiplier to the time taken to drink potions. Default: 0.8
+	potionDrinkTimeMultiplier = 0.8
+	#Limit on stack size of foods with 5 hunger or more. Set to -1 to leave unchanged. Default: -1
+	foodStackSize = -1
+	#Limit on stack size of all potion types. Set to -1 to leave unchanged. Default: 4
+	potionStackSize = 4
+
+[Sleep-Module]
+	#The sleep module addresses imbalance caused by the ease of skipping nights via sleeping. Disabling will nullify every feature listed under this module.
+	sleepModuleEnabled = false
+	#After a set tick delay of not sleeping, players will automatically become drowsy. Set to -1 to disable feature. Default: 72000 (delay before phantoms start spawning)
+	naturalDrowsinessDelay = 72000

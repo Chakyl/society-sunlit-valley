@@ -1,6 +1,6 @@
 #True to allow the DIY Workbench to craft items, false to disable
 enable_diy_workbench = true
 #The percent chance of an instant jackpot, in addition to the natural 6.25% chance
-#Range: 0.0 ~ 100.0
+# Default: 15.0
+# Range: 0.0 ~ 100.0
 slot_machine_jackbox_chance = 13.0
-

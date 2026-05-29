@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "gems"
 	group: "15230846E14B6926"
-	icon: "society:prismatic_shard"
 	id: "52FC1CA43F502926"
 	images: [
 		{
@@ -221,7 +220,7 @@
 			shape: "none"
 			tasks: [{
 				id: "594E42B407852E44"
-				item: "society:prismatic_shard"
+				item: { count: 1, id: "society:prismatic_shard" }
 				type: "item"
 			}]
 			x: -0.44727891156466626d
@@ -232,7 +231,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3185FD812CD28B0D"
-				item: "society:jade"
+				item: { count: 1, id: "society:jade" }
 				type: "item"
 			}]
 			x: 1.845238095238095d
@@ -243,7 +242,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5372527AA54D9C04"
-				item: "society:topaz"
+				item: { count: 1, id: "society:topaz" }
 				type: "item"
 			}]
 			x: -0.3928571428571459d
@@ -254,7 +253,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3296B76C8B26BA3B"
-				item: "society:ruby"
+				item: { count: 1, id: "society:ruby" }
 				type: "item"
 			}]
 			x: -2.7738095238095326d
@@ -265,7 +264,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4C45E25B95597685"
-				item: "society:aquamarine"
+				item: { count: 1, id: "society:aquamarine" }
 				type: "item"
 			}]
 			x: 1.845238095238095d
@@ -276,7 +275,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2F2445814FF70A72"
-				item: "society:amethyst_chunk"
+				item: { count: 1, id: "society:amethyst_chunk" }
 				type: "item"
 			}]
 			x: -0.4880952380952408d
@@ -287,7 +286,7 @@
 			shape: "none"
 			tasks: [{
 				id: "08F3D21BB6AAD5F9"
-				item: "minecraft:prismarine_crystals"
+				item: { count: 1, id: "minecraft:prismarine_crystals" }
 				type: "item"
 			}]
 			x: 4.488095238095205d
@@ -298,7 +297,7 @@
 			shape: "none"
 			tasks: [{
 				id: "782CEF0A618DB9A0"
-				item: "minecraft:quartz"
+				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
 			x: -4.47619047619051d
@@ -309,7 +308,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1C8DA7B53ACCAE50"
-				item: "minecraft:amethyst_shard"
+				item: { count: 1, id: "minecraft:amethyst_shard" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -320,7 +319,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2EE5742E1174A40E"
-				item: "minecraft:emerald"
+				item: { count: 1, id: "minecraft:emerald" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -331,7 +330,7 @@
 			shape: "none"
 			tasks: [{
 				id: "61226894CFEA107E"
-				item: "minecraft:diamond"
+				item: { count: 1, id: "minecraft:diamond" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -355,31 +354,29 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1
-				id: "trofers:large_pillar"
-				tag: {
-					BlockEntityTag: {
-						Trophy: "trofers:gems"
-					}
+				components: {
+					"ftbquests:missing_item": "trofers:large_pillar"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "21B62899C63D3C4B"
 			rewards: [
 				{
 					id: "4A11518C310F753F"
-					item: "society:black_opal"
+					item: {
+						count: 1
+						id: "society:black_opal"
+					}
 					type: "item"
 				}
 				{
 					id: "0ECE63821053FD3B"
 					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:gems"
-							}
+						components: {
+							"ftbquests:missing_item": "trofers:large_pillar"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
@@ -387,14 +384,11 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
-				icon: "society:omni_geode_node"
 				id: "5D3AF2A372B781AC"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.gems.quest21B62899C63D3C4B.task.6717948577994736044.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.gems.quest21B62899C63D3C4B.title}"
 			x: 5.970238095238088d
 			y: 1.1369047619047663d
 		}
@@ -403,20 +397,18 @@
 			shape: "none"
 			tasks: [{
 				id: "153567B7D56E9B77"
-				item: "society:sparkstone"
+				item: { count: 1, id: "society:sparkstone" }
 				type: "item"
 			}]
 			x: -5.5833333333333d
 			y: -2.5292517006802484d
 		}
 		{
-			icon: "society:spinel"
 			id: "3BB6026DE3D9EA82"
 			shape: "none"
 			tasks: [{
-				icon: "society:spinel"
 				id: "66793859E6E45068"
-				item: "society:spinel"
+				item: { count: 1, id: "society:spinel" }
 				type: "item"
 			}]
 			x: -2.777210884353657d
@@ -428,18 +420,20 @@
 			optional: true
 			rewards: [{
 				id: "139075A858F39DA4"
-				item: "society:prismatic_shard"
+				item: {
+					count: 1
+					id: "society:prismatic_shard"
+				}
 				type: "item"
 			}]
 			shape: "none"
 			tasks: [{
 				id: "47F4BB68F006F98D"
-				item: "numismatics:prismatic_coin"
+				item: { count: 1, id: "numismatics:prismatic_coin" }
 				type: "item"
 			}]
 			x: -6.90476190476187d
 			y: 0.4528911564626128d
 		}
 	]
-	title: "{ftbquests.chapter.gems.title}"
 }

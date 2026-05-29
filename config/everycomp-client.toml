@@ -1,5 +1,10 @@
-
 [general]
-	#Enables the generation of dynamic assets. This is required for the mod to work properly. Turn off if you chose to add all the generated assets via datapack manually. This can speedup boot times for modpacks. Note that the generated assets will depend on loaded datapacks
-	generate_dynamic_assets = true
-
+	#
+	#How dynamic assets are generated. If cached the cache will regenerate once any mod or pack changes
+	#- NEVER: This mod will never attempt to generate the cache folder. The assets will be put in memory
+	#- RUN_ONCE: Will generate once & the assets will be stored in memory every time you launched.
+	#- CACHED: create a CACHE folder via .minecraft/dynamic-resource-pack-cache
+	#- CACHED_ZIPPED: create a ZIP folder via .minecraft/dynamic-resource-pack-cache
+	#- ALWAYS: Will always generate the assets & will be stored in memory. There will be no cache folder
+	#Allowed Values: NEVER, RUN_ONCE, CACHED, CACHED_ZIPPED, ALWAYS
+	dynamic_assets_generation_mode = "ALWAYS"

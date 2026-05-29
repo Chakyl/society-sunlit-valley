@@ -1,9 +1,9 @@
-
 [general]
 	#If text is enabled, allows it to accept the label dye color
 	colored_text = true
 	#Item texture resolution. You might want to keep this multiples of 16
-	#Range: 8 ~ 512
+	# Default: 16
+	# Range: 8 ~ 512
 	texture_resolution = 16
 
 [color_settings]
@@ -16,4 +16,3 @@
 	limit_palette = true
 	#Adds an outline to label images
 	outline = true
-

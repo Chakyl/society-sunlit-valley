@@ -5,11 +5,7 @@
 	filename: "banners"
 	group: "15230846E14B6926"
 	icon: {
-		Count: 1
 		id: "refurbished_furniture:spatula"
-		tag: {
-			Damage: 0
-		}
 	}
 	id: "5C67DA068D003A2D"
 	order_index: 8
@@ -48,24 +44,23 @@
 				"42D3B4C3895D8335"
 				"495F8C63FB25EB62"
 			]
-			description: ["{ftbquests.chapter.banners.quest1FFF66E7B3DE1E6D.description1}"]
 			hide_dependency_lines: true
 			id: "1FFF66E7B3DE1E6D"
 			rewards: [{
 				id: "6790E08A8E4D06E3"
-				item: "society:magic_rock_candy"
+				item: {
+					count: 1
+					id: "society:magic_rock_candy"
+				}
 				type: "item"
 			}]
 			size: 2.0d
 			tasks: [{
-				icon: "farm_and_charm:scarecrow"
 				id: "60BC53B1056204F0"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest1FFF66E7B3DE1E6D.task.6970538343027311856.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest1FFF66E7B3DE1E6D.title}"
 			x: 1.5d
 			y: -6.0d
 		}
@@ -100,24 +95,23 @@
 				"3B5CF272356259B2"
 				"79ECFD2110BB5689"
 			]
-			description: ["{ftbquests.chapter.banners.quest1280C34AE9A4EE7B.description1}"]
 			hide_dependency_lines: true
 			id: "1280C34AE9A4EE7B"
 			rewards: [{
 				id: "5095A3D6613D239D"
-				item: "society:magic_rock_candy"
+				item: {
+					count: 1
+					id: "society:magic_rock_candy"
+				}
 				type: "item"
 			}]
 			size: 2.0d
 			tasks: [{
-				icon: "candlelight:candlelight_standard"
 				id: "765B171872302421"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest1280C34AE9A4EE7B.task.8528435713118577697.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest1280C34AE9A4EE7B.title}"
 			x: -3.0d
 			y: -2.0d
 		}
@@ -156,24 +150,23 @@
 				"560CDD4660AA1159"
 				"3315CF66A6C33A02"
 			]
-			description: ["{ftbquests.chapter.banners.quest7A159242A6B053C8.description1}"]
 			hide_dependency_lines: true
 			id: "7A159242A6B053C8"
 			rewards: [{
 				id: "4D838DB7489854D9"
-				item: "society:magic_rock_candy"
+				item: {
+					count: 1
+					id: "society:magic_rock_candy"
+				}
 				type: "item"
 			}]
 			size: 2.0d
 			tasks: [{
-				icon: "bakery:bakery_standard"
 				id: "3AD3A245C817EDF9"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest7A159242A6B053C8.task.4238910094879223289.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest7A159242A6B053C8.title}"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -181,7 +174,7 @@
 			id: "3225299E8746CC8E"
 			tasks: [{
 				id: "5EB8395DEB10BD75"
-				item: "vintagedelight:cheese_burger"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:cheese_burger" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -191,7 +184,7 @@
 			id: "2E2BA03F054B08BA"
 			tasks: [{
 				id: "198838BEACFC450D"
-				item: "vintagedelight:deluxe_burger"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:deluxe_burger" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -201,7 +194,7 @@
 			id: "011A1EDD02F5BC3E"
 			tasks: [{
 				id: "31ACF1A6070C84E3"
-				item: "vintagedelight:chocolate_nut_granola_bar"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:chocolate_nut_granola_bar" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -211,7 +204,7 @@
 			id: "009EC0AF7065697A"
 			tasks: [{
 				id: "2670C9F7E53340D0"
-				item: "vintagedelight:fruity_granola_bar"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:fruity_granola_bar" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -221,7 +214,7 @@
 			id: "6E56B91C12DE2E6C"
 			tasks: [{
 				id: "2CD02F5F1C8AFE46"
-				item: "vintagedelight:deluxe_granola_bar"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:deluxe_granola_bar" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -231,7 +224,7 @@
 			id: "73D649D2F0E6EBEB"
 			tasks: [{
 				id: "77B2A42C2F88ABC1"
-				item: "vintagedelight:century_egg"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:century_egg" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -241,7 +234,7 @@
 			id: "11E5B34B3BFA42DE"
 			tasks: [{
 				id: "146AB398FD4FE4DE"
-				item: "vintagedelight:overnight_oats"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:overnight_oats" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -251,7 +244,7 @@
 			id: "303E7F3C27173B6B"
 			tasks: [{
 				id: "36433A2CB00CCD37"
-				item: "vintagedelight:pickle_soup"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:pickle_soup" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -261,7 +254,7 @@
 			id: "6E24F9E03D102BE1"
 			tasks: [{
 				id: "7DB0B247E88EAB9D"
-				item: "vintagedelight:ghostly_chili"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:ghostly_chili" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.0d
@@ -271,7 +264,7 @@
 			id: "07ECC644BB4C0DCD"
 			tasks: [{
 				id: "22024193C3CD3EA8"
-				item: "vintagedelight:pad_thai"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:pad_thai" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -281,7 +274,7 @@
 			id: "5AE3A06F64BEDCBB"
 			tasks: [{
 				id: "66CFEBD37FFA96F8"
-				item: "vintagedelight:cheese_pasta"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:cheese_pasta" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -291,7 +284,7 @@
 			id: "270B71B8B39F6232"
 			tasks: [{
 				id: "76BBC428ADBFD9F4"
-				item: "vintagedelight:pb_j"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:pb_j" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -301,7 +294,7 @@
 			id: "66EC7A9C34D48655"
 			tasks: [{
 				id: "028738FE3AE7450F"
-				item: "vintagedelight:cucumber_salad"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:cucumber_salad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -311,7 +304,7 @@
 			id: "19035186A855AA64"
 			tasks: [{
 				id: "2F0ECB7E5D4130EC"
-				item: "vintagedelight:stuffed_burrito"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:stuffed_burrito" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -321,7 +314,7 @@
 			id: "2BC28581132BB26A"
 			tasks: [{
 				id: "1B1E1F01C2571C0A"
-				item: "vintagedelight:oatmeal_cookie"
+				item: { components: { "ftbquests:missing_item": "vintagedelight:oatmeal_cookie" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -331,7 +324,7 @@
 			id: "1C7EA6EEE7885EB0"
 			tasks: [{
 				id: "37F7474DBC19B25A"
-				item: "crabbersdelight:frog_leg_kebob"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:frog_leg_kebob" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -341,7 +334,7 @@
 			id: "2492865EF15173BA"
 			tasks: [{
 				id: "367FB453D45D1900"
-				item: "crabbersdelight:squid_kebob"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:squid_kebob" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -351,7 +344,7 @@
 			id: "5C9D259126E1508D"
 			tasks: [{
 				id: "12497A383BBCB789"
-				item: "crabbersdelight:fish_stick"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:fish_stick" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -361,7 +354,7 @@
 			id: "0D17ACA202F600B5"
 			tasks: [{
 				id: "2A872D4DC505013C"
-				item: "crabbersdelight:shrimp_skewer"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:shrimp_skewer" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -371,7 +364,7 @@
 			id: "1CF562E654642421"
 			tasks: [{
 				id: "55E56757A5364E14"
-				item: "crabbersdelight:crab_legs"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:crab_legs" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.0d
@@ -381,7 +374,7 @@
 			id: "1BA86B807736256F"
 			tasks: [{
 				id: "5657FF3B6DDFA8BD"
-				item: "crabbersdelight:coral_crunch"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:coral_crunch" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -391,7 +384,7 @@
 			id: "187B4A3D4DA28644"
 			tasks: [{
 				id: "22DB8797AEFE2C8E"
-				item: "crabbersdelight:shrimp_fried_rice"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:shrimp_fried_rice" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -401,7 +394,7 @@
 			id: "30BF1FB39C2E05BC"
 			tasks: [{
 				id: "043919B1EE74DF4B"
-				item: "crabbersdelight:clam_chowder"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:clam_chowder" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -411,7 +404,7 @@
 			id: "41EB85DB7B7DC75A"
 			tasks: [{
 				id: "72206042AFF412B3"
-				item: "crabbersdelight:seafood_gumbo"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:seafood_gumbo" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -421,7 +414,7 @@
 			id: "55A7F4F5AD8F5D31"
 			tasks: [{
 				id: "6AAEE29C002A5BF5"
-				item: "crabbersdelight:bisque"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:bisque" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -431,7 +424,7 @@
 			id: "7D140B3BA6E5E223"
 			tasks: [{
 				id: "26BE68E8B0A8FF35"
-				item: "crabbersdelight:clam_bake"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:clam_bake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -441,7 +434,7 @@
 			id: "776A318885DAA6A6"
 			tasks: [{
 				id: "727FCE22A660D827"
-				item: "crabbersdelight:surf_and_turf"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:surf_and_turf" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -451,7 +444,7 @@
 			id: "38217DCF56AB37ED"
 			tasks: [{
 				id: "31E08FDD5CE49A39"
-				item: "crabbersdelight:crab_cakes"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:crab_cakes" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -461,7 +454,7 @@
 			id: "350F695122FD8EA3"
 			tasks: [{
 				id: "2F37AFE094C51212"
-				item: "crabbersdelight:stuffed_nautilus_shell"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:stuffed_nautilus_shell" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -471,7 +464,7 @@
 			id: "2D45B4DA0619B8B6"
 			tasks: [{
 				id: "66F8CEB5E77D6FD6"
-				item: "crabbersdelight:jar_of_pickles"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:jar_of_pickles" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -481,7 +474,7 @@
 			id: "478FDE299DD250FE"
 			tasks: [{
 				id: "3B33A0129980E74C"
-				item: "farmersdelight:roast_chicken_block"
+				item: { count: 1, id: "farmersdelight:roast_chicken_block" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -491,7 +484,7 @@
 			id: "2B24C98150468FD4"
 			tasks: [{
 				id: "3E8B313255F20566"
-				item: "farmersdelight:stuffed_pumpkin_block"
+				item: { count: 1, id: "farmersdelight:stuffed_pumpkin_block" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -501,7 +494,7 @@
 			id: "0FFBFDA4D6177C67"
 			tasks: [{
 				id: "086CB1A679B8E6AB"
-				item: "farmersdelight:honey_glazed_ham_block"
+				item: { count: 1, id: "farmersdelight:honey_glazed_ham_block" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -511,7 +504,7 @@
 			id: "58E1B73CDDDDCF27"
 			tasks: [{
 				id: "264D6239CEAF81FC"
-				item: "farmersdelight:shepherds_pie_block"
+				item: { count: 1, id: "farmersdelight:shepherds_pie_block" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -521,7 +514,7 @@
 			id: "64FACA423E7FACD1"
 			tasks: [{
 				id: "130606B638365D0B"
-				item: "farmersdelight:rice_roll_medley_block"
+				item: { count: 1, id: "farmersdelight:rice_roll_medley_block" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -531,7 +524,7 @@
 			id: "38BB096BEB44A52C"
 			tasks: [{
 				id: "74D88E0009D44EF5"
-				item: "farmersdelight:cooked_rice"
+				item: { count: 1, id: "farmersdelight:cooked_rice" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -541,7 +534,7 @@
 			id: "664BB596D168D8D8"
 			tasks: [{
 				id: "3843A38DCEAA7638"
-				item: "farmersdelight:bone_broth"
+				item: { count: 1, id: "farmersdelight:bone_broth" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -551,7 +544,7 @@
 			id: "2539833D5BF53616"
 			tasks: [{
 				id: "59EA7F243ABA3895"
-				item: "farmersdelight:beef_stew"
+				item: { count: 1, id: "farmersdelight:beef_stew" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -561,7 +554,7 @@
 			id: "0AA3766E1DEDBA24"
 			tasks: [{
 				id: "14FD31E6A8509E09"
-				item: "farmersdelight:chicken_soup"
+				item: { count: 1, id: "farmersdelight:chicken_soup" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -571,7 +564,7 @@
 			id: "1F38ADD3F9FC76BE"
 			tasks: [{
 				id: "05EA25639E290DFF"
-				item: "farmersdelight:vegetable_soup"
+				item: { count: 1, id: "farmersdelight:vegetable_soup" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -581,7 +574,7 @@
 			id: "6FC8FB07A04B460D"
 			tasks: [{
 				id: "2B3B04C4022F41F7"
-				item: "farmersdelight:fish_stew"
+				item: { count: 1, id: "farmersdelight:fish_stew" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -591,7 +584,7 @@
 			id: "2AB23A7465F8AFCF"
 			tasks: [{
 				id: "77AF70169EF80D9E"
-				item: "farmersdelight:fried_rice"
+				item: { count: 1, id: "farmersdelight:fried_rice" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -601,7 +594,7 @@
 			id: "5B2B1CB6E1293069"
 			tasks: [{
 				id: "3228F8A4ED43C148"
-				item: "farmersdelight:baked_cod_stew"
+				item: { count: 1, id: "farmersdelight:baked_cod_stew" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -611,7 +604,7 @@
 			id: "464BD74A1CABE08A"
 			tasks: [{
 				id: "1DF3F9F6F49D06CF"
-				item: "farmersdelight:pumpkin_soup"
+				item: { count: 1, id: "farmersdelight:pumpkin_soup" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -621,7 +614,7 @@
 			id: "3FAEF5D8D953AEF6"
 			tasks: [{
 				id: "502858FC2BF5A574"
-				item: "farmersdelight:noodle_soup"
+				item: { count: 1, id: "farmersdelight:noodle_soup" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -631,7 +624,7 @@
 			id: "62CD97770B4E3BEF"
 			tasks: [{
 				id: "09DE522A05031A73"
-				item: "farmersdelight:grilled_salmon"
+				item: { count: 1, id: "farmersdelight:grilled_salmon" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -641,7 +634,7 @@
 			id: "23A913FBC392B8F7"
 			tasks: [{
 				id: "445F76280EF9B6DE"
-				item: "farmersdelight:squid_ink_pasta"
+				item: { count: 1, id: "farmersdelight:squid_ink_pasta" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -651,7 +644,7 @@
 			id: "3524BCD11C9EA4A8"
 			tasks: [{
 				id: "2A9BE20CC592A66F"
-				item: "farmersdelight:ratatouille"
+				item: { count: 1, id: "farmersdelight:ratatouille" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -661,7 +654,7 @@
 			id: "74AF388B2584905D"
 			tasks: [{
 				id: "1F64F0EC1BDFED4D"
-				item: "farmersdelight:steak_and_potatoes"
+				item: { count: 1, id: "farmersdelight:steak_and_potatoes" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -671,7 +664,7 @@
 			id: "28352E21F9E0C9D8"
 			tasks: [{
 				id: "159C84DC11258456"
-				item: "farmersdelight:vegetable_noodles"
+				item: { count: 1, id: "farmersdelight:vegetable_noodles" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -681,7 +674,7 @@
 			id: "322D65EEC4AE546B"
 			tasks: [{
 				id: "57509C26397004B4"
-				item: "farmersdelight:roasted_mutton_chops"
+				item: { count: 1, id: "farmersdelight:roasted_mutton_chops" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -691,7 +684,7 @@
 			id: "369C255C6068F99B"
 			tasks: [{
 				id: "0E15F7BF2FDDB2AB"
-				item: "farmersdelight:pasta_with_meatballs"
+				item: { count: 1, id: "farmersdelight:pasta_with_meatballs" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -701,7 +694,7 @@
 			id: "6A34339F71914FE5"
 			tasks: [{
 				id: "459D817B30CAE1E6"
-				item: "farmersdelight:pasta_with_mutton_chop"
+				item: { count: 1, id: "farmersdelight:pasta_with_mutton_chop" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -711,7 +704,7 @@
 			id: "773A1513745B36A2"
 			tasks: [{
 				id: "79FFBAEFCFFE62E8"
-				item: "farmersdelight:mushroom_rice"
+				item: { count: 1, id: "farmersdelight:mushroom_rice" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -721,7 +714,7 @@
 			id: "4685CADECD7E7667"
 			tasks: [{
 				id: "636CDDF86A26BFD8"
-				item: "farmersdelight:mutton_wrap"
+				item: { count: 1, id: "farmersdelight:mutton_wrap" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -731,7 +724,7 @@
 			id: "0EEBEF908CAB907F"
 			tasks: [{
 				id: "123D08E46ECAFA0E"
-				item: "farmersdelight:dumplings"
+				item: { count: 1, id: "farmersdelight:dumplings" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -741,7 +734,7 @@
 			id: "132AEC18C5383774"
 			tasks: [{
 				id: "4ABD728047AE1461"
-				item: "farmersdelight:stuffed_potato"
+				item: { count: 1, id: "farmersdelight:stuffed_potato" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -751,7 +744,7 @@
 			id: "0617BB08B451334B"
 			tasks: [{
 				id: "28949E35403289D2"
-				item: "farmersdelight:cabbage_rolls"
+				item: { count: 1, id: "farmersdelight:cabbage_rolls" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -761,7 +754,7 @@
 			id: "2CD553256D9A3EB1"
 			tasks: [{
 				id: "26E29A8D24E90CD8"
-				item: "farmersdelight:salmon_roll"
+				item: { count: 1, id: "farmersdelight:salmon_roll" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -771,7 +764,7 @@
 			id: "2923FA2F1AAA658F"
 			tasks: [{
 				id: "6D58F8EE1E8BFC1D"
-				item: "farmersdelight:cod_roll"
+				item: { count: 1, id: "farmersdelight:cod_roll" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -781,7 +774,7 @@
 			id: "33FE238CF7B97172"
 			tasks: [{
 				id: "608AF62A10947B1F"
-				item: "farmersdelight:kelp_roll"
+				item: { count: 1, id: "farmersdelight:kelp_roll" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -791,7 +784,7 @@
 			id: "49E346E1ED87A731"
 			tasks: [{
 				id: "2EEC991DDF443C2C"
-				item: "farmersdelight:mixed_salad"
+				item: { count: 1, id: "farmersdelight:mixed_salad" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -801,7 +794,7 @@
 			id: "77B0E84CA56FC9BC"
 			tasks: [{
 				id: "0A97DF8181878BFF"
-				item: "farmersdelight:fruit_salad"
+				item: { count: 1, id: "farmersdelight:fruit_salad" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -811,7 +804,7 @@
 			id: "56ED31A51AF4F8E2"
 			tasks: [{
 				id: "14B577A04E5EC035"
-				item: "farmersdelight:nether_salad"
+				item: { count: 1, id: "farmersdelight:nether_salad" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -821,7 +814,7 @@
 			id: "56E57694719DBF68"
 			tasks: [{
 				id: "1110CFBF32A4E426"
-				item: "farmersdelight:barbecue_stick"
+				item: { count: 1, id: "farmersdelight:barbecue_stick" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -831,7 +824,7 @@
 			id: "31F745FDD7FDEAA0"
 			tasks: [{
 				id: "78EE036E40BB1244"
-				item: "farmersdelight:egg_sandwich"
+				item: { count: 1, id: "farmersdelight:egg_sandwich" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -841,7 +834,7 @@
 			id: "7D33570ACBF79AD5"
 			tasks: [{
 				id: "50A9BB3DEEA0DB83"
-				item: "farmersdelight:chicken_sandwich"
+				item: { count: 1, id: "farmersdelight:chicken_sandwich" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -851,7 +844,7 @@
 			id: "4C10C1B271AF0B73"
 			tasks: [{
 				id: "44A1E3A60E6937CE"
-				item: "farmersdelight:hamburger"
+				item: { count: 1, id: "farmersdelight:hamburger" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -861,7 +854,7 @@
 			id: "15EBC1DB4F43D1D8"
 			tasks: [{
 				id: "008FC44AA9E7E10D"
-				item: "farmersdelight:bacon_sandwich"
+				item: { count: 1, id: "farmersdelight:bacon_sandwich" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -871,7 +864,7 @@
 			id: "569FA000F2E1FCDA"
 			tasks: [{
 				id: "2821D39C29C86756"
-				item: "farmersdelight:apple_pie"
+				item: { count: 1, id: "farmersdelight:apple_pie" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -881,7 +874,7 @@
 			id: "3214800EE887635B"
 			tasks: [{
 				id: "3DAA405BAE285C89"
-				item: "farmersdelight:sweet_berry_cheesecake"
+				item: { count: 1, id: "farmersdelight:sweet_berry_cheesecake" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -891,7 +884,7 @@
 			id: "21D97A948BBFF19E"
 			tasks: [{
 				id: "0E8647FA8A013C3A"
-				item: "farmersdelight:chocolate_pie"
+				item: { count: 1, id: "farmersdelight:chocolate_pie" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -901,7 +894,7 @@
 			id: "31EBA41931DE65DA"
 			tasks: [{
 				id: "4DEE458EF72C49F4"
-				item: "farmersdelight:honey_cookie"
+				item: { count: 1, id: "farmersdelight:honey_cookie" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -911,7 +904,7 @@
 			id: "3367993B473D8C70"
 			tasks: [{
 				id: "6AA5FD83D56A5111"
-				item: "farmersdelight:sweet_berry_cookie"
+				item: { count: 1, id: "farmersdelight:sweet_berry_cookie" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -921,7 +914,7 @@
 			id: "58F9D24AC167E5E9"
 			tasks: [{
 				id: "2C2959B44A700376"
-				item: "farmersdelight:glow_berry_custard"
+				item: { count: 1, id: "farmersdelight:glow_berry_custard" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -931,7 +924,7 @@
 			id: "6BFF39FA33B916F6"
 			tasks: [{
 				id: "359E7ACACC57E83C"
-				item: "farmersdelight:melon_popsicle"
+				item: { count: 1, id: "farmersdelight:melon_popsicle" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -941,7 +934,7 @@
 			id: "39F5195F7D5F14AB"
 			tasks: [{
 				id: "0F43A714EC341A8A"
-				item: "farmersdelight:tomato_sauce"
+				item: { count: 1, id: "farmersdelight:tomato_sauce" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -1068,30 +1061,26 @@
 				"01B0EFE30AC97294"
 				"6E0DE2216041B2B3"
 			]
-			description: ["{ftbquests.chapter.banners.quest44256671D7500BEA.description1}"]
 			hide_dependency_lines: true
 			id: "44256671D7500BEA"
 			rewards: [{
 				id: "41B656E2B16D51AD"
-				item: "society:magic_rock_candy"
+				item: {
+					count: 1
+					id: "society:magic_rock_candy"
+				}
 				type: "item"
 			}]
 			size: 2.0d
 			tasks: [{
 				icon: {
-					Count: 1
 					id: "farmersdelight:netherite_knife"
-					tag: {
-						Damage: 0
-					}
 				}
 				id: "4DF65AF04FBBC65C"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest44256671D7500BEA.task.5617777573367629404.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest44256671D7500BEA.title}"
 			x: 1.5d
 			y: 2.5d
 		}
@@ -1104,32 +1093,30 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1
-				id: "trofers:large_pillar"
-				tag: {
-					BlockEntityTag: {
-						Trophy: "trofers:cooking"
-					}
+				components: {
+					"ftbquests:missing_item": "trofers:large_pillar"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "22E44CB981A4299B"
 			rewards: [
 				{
 					count: 16
 					id: "3AE34A99921C467E"
-					item: "society:yard_work_yearly"
+					item: {
+						count: 1
+						id: "society:yard_work_yearly"
+					}
 					type: "item"
 				}
 				{
 					id: "176AA84C989BE690"
 					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:cooking"
-							}
+						components: {
+							"ftbquests:missing_item": "trofers:large_pillar"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
@@ -1137,19 +1124,13 @@
 			size: 3.0d
 			tasks: [{
 				icon: {
-					Count: 1
 					id: "refurbished_furniture:spatula"
-					tag: {
-						Damage: 0
-					}
 				}
 				id: "38C343FDC4F440C9"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.banners.quest22E44CB981A4299B.task.4090187643792670921.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.banners.quest22E44CB981A4299B.title}"
 			x: 1.5d
 			y: -2.0d
 		}
@@ -1157,7 +1138,7 @@
 			id: "057FB398C2D7637C"
 			tasks: [{
 				id: "14BDA1B87B21B8E2"
-				item: "farm_and_charm:farmer_salad"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:farmer_salad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1167,7 +1148,7 @@
 			id: "1DC0621D2AE7FC99"
 			tasks: [{
 				id: "02A5B100FD31A8CA"
-				item: "farm_and_charm:oatmeal_with_strawberries"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:oatmeal_with_strawberries" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1177,7 +1158,7 @@
 			id: "1C48556A33C94604"
 			tasks: [{
 				id: "2B6E585887B1D214"
-				item: "farm_and_charm:simple_tomato_soup"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:simple_tomato_soup" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1187,7 +1168,7 @@
 			id: "744B5C4A46EE57FD"
 			tasks: [{
 				id: "79C0A78C8D85E636"
-				item: "farm_and_charm:barley_soup"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:barley_soup" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1197,7 +1178,7 @@
 			id: "3112A4365E41B4FC"
 			tasks: [{
 				id: "51FEDE353157763F"
-				item: "farm_and_charm:onion_soup"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:onion_soup" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1207,7 +1188,7 @@
 			id: "4CCE67D9865B6C57"
 			tasks: [{
 				id: "311AC602FDA4106B"
-				item: "farm_and_charm:potato_soup"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:potato_soup" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1217,7 +1198,7 @@
 			id: "197BF3C5DC850124"
 			tasks: [{
 				id: "4056B8E94D897AC6"
-				item: "farm_and_charm:goulash"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:goulash" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -1227,7 +1208,7 @@
 			id: "495F8C63FB25EB62"
 			tasks: [{
 				id: "3C41E90924C2134C"
-				item: "farm_and_charm:pasta_with_onion_sauce"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:pasta_with_onion_sauce" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -1237,7 +1218,7 @@
 			id: "56A60E60E50B5578"
 			tasks: [{
 				id: "285D242AEF3F996E"
-				item: "farm_and_charm:corn_grits"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:corn_grits" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -1247,7 +1228,7 @@
 			id: "17D57110C5408697"
 			tasks: [{
 				id: "30C61EC96E62A3ED"
-				item: "farm_and_charm:barley_patties_with_potatoes"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:barley_patties_with_potatoes" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -1257,7 +1238,7 @@
 			id: "7D9FB21D4C6838F6"
 			tasks: [{
 				id: "5CC4F2D995D18B10"
-				item: "farm_and_charm:sausage_with_oat_patty"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:sausage_with_oat_patty" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -1267,7 +1248,7 @@
 			id: "47FE0BD0253CE536"
 			tasks: [{
 				id: "688481D30E082E4E"
-				item: "farm_and_charm:beef_patty_with_vegetables"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:beef_patty_with_vegetables" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -1277,7 +1258,7 @@
 			id: "56DA95AA3639CEAB"
 			tasks: [{
 				id: "0F4177F87065D713"
-				item: "farm_and_charm:roasted_chicken"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:roasted_chicken" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -1287,7 +1268,7 @@
 			id: "2CA9E286E1987CDF"
 			tasks: [{
 				id: "7FE9A28335D13405"
-				item: "farm_and_charm:roasted_corn"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:roasted_corn" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -1297,7 +1278,7 @@
 			id: "2191A609CA6366CB"
 			tasks: [{
 				id: "0FF2B4E08174010B"
-				item: "farm_and_charm:cooked_salmon"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:cooked_salmon" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -1307,7 +1288,7 @@
 			id: "0452EA2AE82DA532"
 			tasks: [{
 				id: "0B9DB10A510EFD06"
-				item: "farm_and_charm:cooked_cod"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:cooked_cod" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -1317,7 +1298,7 @@
 			id: "22B7ADEEB9CE64AF"
 			tasks: [{
 				id: "4A5456510B19C001"
-				item: "farm_and_charm:chicken_wrapped_in_bacon"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:chicken_wrapped_in_bacon" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -1327,7 +1308,7 @@
 			id: "4AF392F4BD9DEB08"
 			tasks: [{
 				id: "48D40E0A960700D1"
-				item: "farm_and_charm:lamb_with_corn"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:lamb_with_corn" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -1337,7 +1318,7 @@
 			id: "0A5562C303DF9EBE"
 			tasks: [{
 				id: "3E0AF55C5E4A4A08"
-				item: "farm_and_charm:bacon_with_eggs"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:bacon_with_eggs" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -1347,7 +1328,7 @@
 			id: "42D3B4C3895D8335"
 			tasks: [{
 				id: "5D7EBEDB8DB0EC89"
-				item: "farm_and_charm:oat_pancake"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:oat_pancake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -1357,7 +1338,7 @@
 			id: "727D143BC8BCE75F"
 			tasks: [{
 				id: "4E6DB1B4FCED5D2C"
-				item: "farm_and_charm:farmers_breakfast"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:farmers_breakfast" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -1367,7 +1348,7 @@
 			id: "3688500227D8BA61"
 			tasks: [{
 				id: "194660010EE671FD"
-				item: "farm_and_charm:baked_lamb_ham"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:baked_lamb_ham" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -1377,7 +1358,7 @@
 			id: "7DD46126F10B938A"
 			tasks: [{
 				id: "36FB75432ABCC5DC"
-				item: "farm_and_charm:potato_with_roast_meat"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:potato_with_roast_meat" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -1387,7 +1368,7 @@
 			id: "5B090440DAA7AF4A"
 			tasks: [{
 				id: "5FB3C6A29D5CA5B3"
-				item: "farm_and_charm:stuffed_chicken"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:stuffed_chicken" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -1397,7 +1378,7 @@
 			id: "70F5C92B282BF31E"
 			tasks: [{
 				id: "15988340D95D4DF1"
-				item: "farm_and_charm:stuffed_rabbit"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:stuffed_rabbit" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -1407,7 +1388,7 @@
 			id: "4E1B46AC13F7A337"
 			tasks: [{
 				id: "7693364B5A311945"
-				item: "farm_and_charm:farmers_bread"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:farmers_bread" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -1417,7 +1398,7 @@
 			id: "66FAD0595A836428"
 			tasks: [{
 				id: "50FEB56C7D32591B"
-				item: "farm_and_charm:grandmothers_strawberry_cake"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:grandmothers_strawberry_cake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1427,7 +1408,7 @@
 			id: "75E5DFC3C07D49CA"
 			tasks: [{
 				id: "604044B637C0EA6A"
-				item: "farm_and_charm:strawberry_tea"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:strawberry_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -1437,7 +1418,7 @@
 			id: "625C5DC1E105EEC1"
 			tasks: [{
 				id: "32B76195838539D9"
-				item: "farm_and_charm:nettle_tea"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:nettle_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -1447,7 +1428,7 @@
 			id: "073AE57D32C2DBCB"
 			tasks: [{
 				id: "56039533D9B1766B"
-				item: "farm_and_charm:ribwort_tea"
+				item: { components: { "ftbquests:missing_item": "farm_and_charm:ribwort_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1457,7 +1438,7 @@
 			id: "4C841A9AE0E5E928"
 			tasks: [{
 				id: "08D391030EDFBDC2"
-				item: "veggiesdelight:garlic_rice_with_cauliflower"
+				item: { count: 1, id: "veggiesdelight:garlic_rice_with_cauliflower" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -1467,7 +1448,7 @@
 			id: "438F91A0DCA3DDB0"
 			tasks: [{
 				id: "1246690B71BE3FD4"
-				item: "veggiesdelight:potato_noodles"
+				item: { count: 1, id: "veggiesdelight:potato_noodles" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -1477,7 +1458,7 @@
 			id: "3AF919E950F2D35B"
 			tasks: [{
 				id: "6CCF7E110AF5BC39"
-				item: "veggiesdelight:shakshouka"
+				item: { count: 1, id: "veggiesdelight:shakshouka" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1487,7 +1468,7 @@
 			id: "304690207BD68F1F"
 			tasks: [{
 				id: "22D2B9C0623885B2"
-				item: "veggiesdelight:roasted_vegetables"
+				item: { count: 1, id: "veggiesdelight:roasted_vegetables" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -1497,7 +1478,7 @@
 			id: "3D58FD07A68909E5"
 			tasks: [{
 				id: "280A7A01370AD699"
-				item: "veggiesdelight:mashed_potatoes"
+				item: { count: 1, id: "veggiesdelight:mashed_potatoes" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -1507,7 +1488,7 @@
 			id: "6C8991E2085E1678"
 			tasks: [{
 				id: "62F064F9B9D79787"
-				item: "veggiesdelight:cauliflower_soup"
+				item: { count: 1, id: "veggiesdelight:cauliflower_soup" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1517,7 +1498,7 @@
 			id: "15C9B5E9F455688F"
 			tasks: [{
 				id: "3F5B760CF0459127"
-				item: "veggiesdelight:cacciatore"
+				item: { count: 1, id: "veggiesdelight:cacciatore" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -1527,7 +1508,7 @@
 			id: "0AA0A62C8DABD741"
 			tasks: [{
 				id: "4F08864E84D7D97F"
-				item: "veggiesdelight:chicken_fajitas_wrap"
+				item: { count: 1, id: "veggiesdelight:chicken_fajitas_wrap" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -1537,7 +1518,7 @@
 			id: "2A52328BAF4FAED9"
 			tasks: [{
 				id: "1A8E835BC6EF9732"
-				item: "veggiesdelight:garlic_baked_cod"
+				item: { count: 1, id: "veggiesdelight:garlic_baked_cod" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -1547,7 +1528,7 @@
 			id: "14489A69C742E752"
 			tasks: [{
 				id: "3327CA9BA7322290"
-				item: "veggiesdelight:mhadjeb"
+				item: { count: 1, id: "veggiesdelight:mhadjeb" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -1557,7 +1538,7 @@
 			id: "0008F2109468C9FD"
 			tasks: [{
 				id: "1B20D84554492674"
-				item: "veggiesdelight:fermented_garlic_honey"
+				item: { count: 1, id: "veggiesdelight:fermented_garlic_honey" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -1567,7 +1548,7 @@
 			id: "4CDE1A1C5EBAD4E0"
 			tasks: [{
 				id: "4247647BD7290C3E"
-				item: "veggiesdelight:cauliflower_bread"
+				item: { count: 1, id: "veggiesdelight:cauliflower_bread" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -1577,7 +1558,7 @@
 			id: "1B386D9CF0CA8BD9"
 			tasks: [{
 				id: "1E4ED19D47FF73E5"
-				item: "veggiesdelight:garlic_bread"
+				item: { count: 1, id: "veggiesdelight:garlic_bread" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -1587,7 +1568,7 @@
 			id: "0EF5C98143E6755B"
 			tasks: [{
 				id: "03980EA0A3DF83B1"
-				item: "veggiesdelight:garlic_stuffed_mushrooms"
+				item: { count: 1, id: "veggiesdelight:garlic_stuffed_mushrooms" }
 				type: "item"
 			}]
 			x: 11.5d
@@ -1597,7 +1578,7 @@
 			id: "6DC29F70056D062D"
 			tasks: [{
 				id: "235287C9A4F0431E"
-				item: "veggiesdelight:fish_and_chips"
+				item: { count: 1, id: "veggiesdelight:fish_and_chips" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -1607,7 +1588,7 @@
 			id: "796B98C9ED5A6396"
 			tasks: [{
 				id: "6BA63D0795D93BA6"
-				item: "veggiesdelight:dandelion_and_eggs"
+				item: { count: 1, id: "veggiesdelight:dandelion_and_eggs" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -1617,7 +1598,7 @@
 			id: "1BA72C1A8B13418F"
 			tasks: [{
 				id: "3BE0D2C2B42430DC"
-				item: "veggiesdelight:cesar_salad"
+				item: { count: 1, id: "veggiesdelight:cesar_salad" }
 				type: "item"
 			}]
 			x: 12.5d
@@ -1627,7 +1608,7 @@
 			id: "764FBC5CFBBC2FE7"
 			tasks: [{
 				id: "6A53A31C930BB54B"
-				item: "veggiesdelight:carrot_juice"
+				item: { count: 1, id: "veggiesdelight:carrot_juice" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -1637,7 +1618,7 @@
 			id: "4BBEED8A907B5919"
 			tasks: [{
 				id: "71DFC1A48F8F6025"
-				item: "veggiesdelight:beetroot_brownie_tray"
+				item: { count: 1, id: "veggiesdelight:beetroot_brownie_tray" }
 				type: "item"
 			}]
 			x: 12.5d
@@ -1647,7 +1628,7 @@
 			id: "5FF416E509D9459F"
 			tasks: [{
 				id: "169434473FC9B5E3"
-				item: "veggiesdelight:sweet_potato_pie"
+				item: { count: 1, id: "veggiesdelight:sweet_potato_pie" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -1657,7 +1638,7 @@
 			id: "4DB47A66FA91ABF4"
 			tasks: [{
 				id: "3FBD56FD110678F6"
-				item: "veggiesdelight:carrot_cake"
+				item: { count: 1, id: "veggiesdelight:carrot_cake" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -1667,7 +1648,7 @@
 			id: "6665C1194E7ECD9B"
 			tasks: [{
 				id: "759EE2155C8B2933"
-				item: "veggiesdelight:sweet_potato_cupcake"
+				item: { count: 1, id: "veggiesdelight:sweet_potato_cupcake" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -1677,11 +1658,7 @@
 			id: "150AC5D9FABDEC26"
 			tasks: [{
 				id: "4ACDF83042410619"
-				item: {
-					Count: 1
-					id: "veggiesdelight:cauliflower_kuku"
-					tag: { }
-				}
+				item: { count: 1, id: "veggiesdelight:cauliflower_kuku" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -1691,7 +1668,7 @@
 			id: "7C26F52DDAE17DA8"
 			tasks: [{
 				id: "165123733BB5A860"
-				item: "veggiesdelight:stuffed_zucchinis"
+				item: { count: 1, id: "veggiesdelight:stuffed_zucchinis" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -1701,7 +1678,7 @@
 			id: "44E8B05A2E37DF17"
 			tasks: [{
 				id: "4D3C27792E82F6BC"
-				item: "veggiesdelight:turnip_beef_stew"
+				item: { count: 1, id: "veggiesdelight:turnip_beef_stew" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -1711,11 +1688,7 @@
 			id: "11A2F44D6368B1E3"
 			tasks: [{
 				id: "45548B66E7C582C9"
-				item: {
-					Count: 1
-					id: "veggiesdelight:turnip_cake"
-					tag: { }
-				}
+				item: { count: 1, id: "veggiesdelight:turnip_cake" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -1725,7 +1698,7 @@
 			id: "6710747DA9E05E6E"
 			tasks: [{
 				id: "0D40180981C5B2EF"
-				item: "veggiesdelight:broccoli_soup"
+				item: { count: 1, id: "veggiesdelight:broccoli_soup" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -1735,11 +1708,7 @@
 			id: "3C49EFEC3F2A03F7"
 			tasks: [{
 				id: "08713DDC0FCF58A5"
-				item: {
-					Count: 1
-					id: "veggiesdelight:pasta_with_broccoli"
-					tag: { }
-				}
+				item: { count: 1, id: "veggiesdelight:pasta_with_broccoli" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -1749,11 +1718,7 @@
 			id: "2F4164B3A2F143B6"
 			tasks: [{
 				id: "0219F98847EDB6A5"
-				item: {
-					Count: 1
-					id: "veggiesdelight:zucchini_sandwich"
-					tag: { }
-				}
+				item: { count: 1, id: "veggiesdelight:zucchini_sandwich" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -1763,7 +1728,7 @@
 			id: "178FE5D04C197282"
 			tasks: [{
 				id: "04610EE7181E3899"
-				item: "veggiesdelight:broccoli_salad"
+				item: { count: 1, id: "veggiesdelight:broccoli_salad" }
 				type: "item"
 			}]
 			x: 11.5d
@@ -1773,7 +1738,7 @@
 			id: "13BB9EFD3B941D98"
 			tasks: [{
 				id: "1BC9F2C06F7E24B8"
-				item: "veggiesdelight:turnip_water"
+				item: { count: 1, id: "veggiesdelight:turnip_water" }
 				type: "item"
 			}]
 			x: 12.5d
@@ -1783,7 +1748,7 @@
 			id: "083E30851FA52517"
 			tasks: [{
 				id: "480F859178EA7263"
-				item: "veggiesdelight:turnip_salad"
+				item: { count: 1, id: "veggiesdelight:turnip_salad" }
 				type: "item"
 			}]
 			x: 11.5d
@@ -1793,7 +1758,7 @@
 			id: "75B03A095825BE76"
 			tasks: [{
 				id: "147101C1C2141D40"
-				item: "bakery:bread"
+				item: { components: { "ftbquests:missing_item": "bakery:bread" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1803,7 +1768,7 @@
 			id: "15B1A136B778849F"
 			tasks: [{
 				id: "59E177136CB4430D"
-				item: "bakery:crusty_bread"
+				item: { components: { "ftbquests:missing_item": "bakery:crusty_bread" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1813,7 +1778,7 @@
 			id: "7A2890CF01DD497D"
 			tasks: [{
 				id: "7484D45B68FADCE6"
-				item: "bakery:baguette"
+				item: { components: { "ftbquests:missing_item": "bakery:baguette" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1823,7 +1788,7 @@
 			id: "53E03722DE660105"
 			tasks: [{
 				id: "78D50279966385BE"
-				item: "bakery:toast"
+				item: { components: { "ftbquests:missing_item": "bakery:toast" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -1833,7 +1798,7 @@
 			id: "66716EF44F12D51D"
 			tasks: [{
 				id: "63441CA5C0D65F07"
-				item: "bakery:braided_bread"
+				item: { components: { "ftbquests:missing_item": "bakery:braided_bread" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -1843,7 +1808,7 @@
 			id: "3826AA888C598E2B"
 			tasks: [{
 				id: "3C3103B69DD1FDF8"
-				item: "bakery:bun"
+				item: { components: { "ftbquests:missing_item": "bakery:bun" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -1853,7 +1818,7 @@
 			id: "6279D30F7DAE997C"
 			tasks: [{
 				id: "68FF9E1FB0385BB5"
-				item: "bakery:sweetberry_cake"
+				item: { components: { "ftbquests:missing_item": "bakery:sweetberry_cake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -1863,7 +1828,7 @@
 			id: "405819D801A78442"
 			tasks: [{
 				id: "2462EBA7D40FD0BF"
-				item: "bakery:sweetberry_cupcake"
+				item: { components: { "ftbquests:missing_item": "bakery:sweetberry_cupcake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -1873,7 +1838,7 @@
 			id: "5E94562368270D69"
 			tasks: [{
 				id: "5D096239FF3379A9"
-				item: "bakery:sweetberry_glazed_cookie"
+				item: { components: { "ftbquests:missing_item": "bakery:sweetberry_glazed_cookie" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -1883,7 +1848,7 @@
 			id: "3457472C371B5B75"
 			tasks: [{
 				id: "33CC375AB7CB0C32"
-				item: "bakery:chocolate_glazed_cookie"
+				item: { components: { "ftbquests:missing_item": "bakery:chocolate_glazed_cookie" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -1893,7 +1858,7 @@
 			id: "4949E40DEE1A9D98"
 			tasks: [{
 				id: "1C5257AC92BBB247"
-				item: "bakery:chocolate_cake"
+				item: { components: { "ftbquests:missing_item": "bakery:chocolate_cake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -1903,7 +1868,7 @@
 			id: "717F2A1E8D0DDB0B"
 			tasks: [{
 				id: "450C4B51A9621B4D"
-				item: "bakery:apple_cupcake"
+				item: { components: { "ftbquests:missing_item": "bakery:apple_cupcake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -1913,7 +1878,7 @@
 			id: "134F9B6C310372BD"
 			tasks: [{
 				id: "504EC4BF6680079C"
-				item: "bakery:strawberry_cake"
+				item: { components: { "ftbquests:missing_item": "bakery:strawberry_cake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -1923,7 +1888,7 @@
 			id: "5FBB8D9F2D68C195"
 			tasks: [{
 				id: "02724318785772FE"
-				item: "bakery:strawberry_glazed_cookie"
+				item: { components: { "ftbquests:missing_item": "bakery:strawberry_glazed_cookie" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -1933,7 +1898,7 @@
 			id: "78D720F1A954096E"
 			tasks: [{
 				id: "5948C80C0BD105A1"
-				item: "bakery:strawberry_cupcake"
+				item: { components: { "ftbquests:missing_item": "bakery:strawberry_cupcake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -1943,7 +1908,7 @@
 			id: "4F14409EF50F6CE9"
 			tasks: [{
 				id: "65FB519BAF5FF2D6"
-				item: "bakery:croissant"
+				item: { components: { "ftbquests:missing_item": "bakery:croissant" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1953,7 +1918,7 @@
 			id: "416AF765B9EB166B"
 			tasks: [{
 				id: "18BD8F0B6D4632E0"
-				item: "bakery:misslilitu_biscuit"
+				item: { components: { "ftbquests:missing_item": "bakery:misslilitu_biscuit" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1963,7 +1928,7 @@
 			id: "7FDEA45A73045389"
 			tasks: [{
 				id: "67778F2C446C448D"
-				item: "bakery:bread_with_jam"
+				item: { components: { "ftbquests:missing_item": "bakery:bread_with_jam" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1973,7 +1938,7 @@
 			id: "1D5D7EA479DDAD57"
 			tasks: [{
 				id: "0CAC2BBD04F2A1AD"
-				item: "bakery:chocolate_gateau"
+				item: { components: { "ftbquests:missing_item": "bakery:chocolate_gateau" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -1983,7 +1948,7 @@
 			id: "560CDD4660AA1159"
 			tasks: [{
 				id: "7479233D67C50A5B"
-				item: "bakery:bundt_cake"
+				item: { components: { "ftbquests:missing_item": "bakery:bundt_cake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -1993,7 +1958,7 @@
 			id: "2BFD1960255F099D"
 			tasks: [{
 				id: "791B708172D4FF3F"
-				item: "bakery:linzer_tart"
+				item: { components: { "ftbquests:missing_item": "bakery:linzer_tart" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -2003,7 +1968,7 @@
 			id: "4BC2FB247FB23FE7"
 			tasks: [{
 				id: "09CBFAB5E8ED45B4"
-				item: "bakery:chocolate_tart"
+				item: { components: { "ftbquests:missing_item": "bakery:chocolate_tart" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -2013,7 +1978,7 @@
 			id: "7D540636A634D990"
 			tasks: [{
 				id: "711F56C34590FB84"
-				item: "bakery:pudding"
+				item: { components: { "ftbquests:missing_item": "bakery:pudding" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -2023,7 +1988,7 @@
 			id: "7AADC3B71DFBE208"
 			tasks: [{
 				id: "7BD2A6B46EEB80DD"
-				item: "bakery:glowberry_tart"
+				item: { components: { "ftbquests:missing_item": "bakery:glowberry_tart" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -2033,7 +1998,7 @@
 			id: "3E241508F65A6C53"
 			tasks: [{
 				id: "6F691145C5FC9C33"
-				item: "bakery:apple_pie"
+				item: { components: { "ftbquests:missing_item": "bakery:apple_pie" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -2043,7 +2008,7 @@
 			id: "46FA860740238484"
 			tasks: [{
 				id: "62C58DD482C9221C"
-				item: "bakery:cornet"
+				item: { components: { "ftbquests:missing_item": "bakery:cornet" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -2053,7 +2018,7 @@
 			id: "5E09F937C072716E"
 			tasks: [{
 				id: "2B2D04CD59CC56E2"
-				item: "bakery:jam_roll"
+				item: { components: { "ftbquests:missing_item": "bakery:jam_roll" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -2063,7 +2028,7 @@
 			id: "6882812251D8F768"
 			tasks: [{
 				id: "0F7BB9BFB4E16E84"
-				item: "bakery:grilled_salmon_sandwich"
+				item: { components: { "ftbquests:missing_item": "bakery:grilled_salmon_sandwich" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.0d
@@ -2073,7 +2038,7 @@
 			id: "58B0E4A8F22798C8"
 			tasks: [{
 				id: "0FB73F9F4EAA0BD0"
-				item: "bakery:sandwich"
+				item: { components: { "ftbquests:missing_item": "bakery:sandwich" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.0d
@@ -2083,7 +2048,7 @@
 			id: "0E6FB2B3EC37C18B"
 			tasks: [{
 				id: "102B0898E0011A28"
-				item: "bakery:grilled_bacon_sandwich"
+				item: { components: { "ftbquests:missing_item": "bakery:grilled_bacon_sandwich" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.0d
@@ -2093,7 +2058,7 @@
 			id: "6E6588DBC047B041"
 			tasks: [{
 				id: "0E88A8780C5E5DBE"
-				item: "bakery:chocolate_donut"
+				item: { count: 1, id: "bakery:chocolate_donut" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -2103,7 +2068,7 @@
 			id: "09E68F4E9AE935D8"
 			tasks: [{
 				id: "0575FD7C23D5FA0E"
-				item: "minecraft:cake"
+				item: { count: 1, id: "minecraft:cake" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -2113,7 +2078,7 @@
 			id: "31831BD5BC45E37E"
 			tasks: [{
 				id: "7DDDFECE87F76690"
-				item: "candlelight:salad"
+				item: { components: { "ftbquests:missing_item": "candlelight:salad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.0d
@@ -2123,7 +2088,7 @@
 			id: "2469DF52032CDADF"
 			tasks: [{
 				id: "3B22F7A6C84E7F9F"
-				item: "candlelight:fresh_garden_salad"
+				item: { components: { "ftbquests:missing_item": "candlelight:fresh_garden_salad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -2133,7 +2098,7 @@
 			id: "7DE88AD6008783CE"
 			tasks: [{
 				id: "2A75775FC88202E5"
-				item: "candlelight:harvest_plate"
+				item: { components: { "ftbquests:missing_item": "candlelight:harvest_plate" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.0d
@@ -2143,7 +2108,7 @@
 			id: "2072B1F5A120178D"
 			tasks: [{
 				id: "655D592E41D22305"
-				item: "candlelight:tomato_mozzarella_salad"
+				item: { components: { "ftbquests:missing_item": "candlelight:tomato_mozzarella_salad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -8.0d
@@ -2153,13 +2118,7 @@
 			id: "488DE48D13E2751B"
 			tasks: [{
 				id: "3F3C1211B88ED11E"
-				item: {
-					Count: 1
-					id: "candlelight:salmon_on_white_wine"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:salmon_on_white_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -9.0d
@@ -2169,13 +2128,7 @@
 			id: "58527870E5D80061"
 			tasks: [{
 				id: "115F8E52A296C635"
-				item: {
-					Count: 1
-					id: "candlelight:tropical_fish_supreme"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:tropical_fish_supreme" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -10.0d
@@ -2185,7 +2138,7 @@
 			id: "150522D0C50EA66A"
 			tasks: [{
 				id: "36599FFE0E904C31"
-				item: "candlelight:omelet"
+				item: { components: { "ftbquests:missing_item": "candlelight:omelet" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -11.0d
@@ -2195,7 +2148,7 @@
 			id: "6F100194A26A593A"
 			tasks: [{
 				id: "0ECC1B6236C2E723"
-				item: "candlelight:pasta_with_lettuce"
+				item: { components: { "ftbquests:missing_item": "candlelight:pasta_with_lettuce" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.0d
@@ -2205,13 +2158,7 @@
 			id: "457B7A312B02FAE5"
 			tasks: [{
 				id: "05A5E5798CCBEF77"
-				item: {
-					Count: 1
-					id: "candlelight:lasagne"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:lasagne" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -2221,13 +2168,7 @@
 			id: "4FE3006C4C9C4E85"
 			tasks: [{
 				id: "57F37F9248474EF7"
-				item: {
-					Count: 1
-					id: "candlelight:tomato_soup"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:tomato_soup" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.0d
@@ -2237,13 +2178,7 @@
 			id: "1E718BD9E47886B2"
 			tasks: [{
 				id: "16984F5739AD3920"
-				item: {
-					Count: 1
-					id: "candlelight:mushroom_soup"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:mushroom_soup" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -2253,7 +2188,7 @@
 			id: "1DC9B18070F98550"
 			tasks: [{
 				id: "03F49C2D4670DE47"
-				item: "candlelight:beetroot_salad"
+				item: { components: { "ftbquests:missing_item": "candlelight:beetroot_salad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.0d
@@ -2263,13 +2198,7 @@
 			id: "646917656F9B1DF0"
 			tasks: [{
 				id: "5C84005EAA18461A"
-				item: {
-					Count: 1
-					id: "candlelight:pasta_with_mozzarella"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:pasta_with_mozzarella" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -8.0d
@@ -2279,13 +2208,7 @@
 			id: "7DF4FF48EE1D86EA"
 			tasks: [{
 				id: "3ADD46DEF4C5A56F"
-				item: {
-					Count: 1
-					id: "candlelight:bolognese"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:bolognese" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -9.0d
@@ -2295,7 +2218,7 @@
 			id: "3CBD02655B9E3908"
 			tasks: [{
 				id: "37840D3FB8861663"
-				item: "candlelight:chicken_teriyaki"
+				item: { components: { "ftbquests:missing_item": "candlelight:chicken_teriyaki" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -10.0d
@@ -2305,7 +2228,7 @@
 			id: "60B2CC4F9C09DAB1"
 			tasks: [{
 				id: "1F46452438BA2E8B"
-				item: "candlelight:chocolate_mousse"
+				item: { components: { "ftbquests:missing_item": "candlelight:chocolate_mousse" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -11.0d
@@ -2315,7 +2238,7 @@
 			id: "0DCE2584C2CA348E"
 			tasks: [{
 				id: "1439A5A1DB96E3AA"
-				item: "candlelight:beef_tartare"
+				item: { components: { "ftbquests:missing_item": "candlelight:beef_tartare" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.0d
@@ -2325,13 +2248,7 @@
 			id: "04FFDB6486480174"
 			tasks: [{
 				id: "3E0E8B919FAC47F2"
-				item: {
-					Count: 1
-					id: "candlelight:beef_wellington"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:beef_wellington" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -8.0d
@@ -2341,7 +2258,7 @@
 			id: "5088A974205886F5"
 			tasks: [{
 				id: "75AB1D0148550206"
-				item: "candlelight:khinkali"
+				item: { components: { "ftbquests:missing_item": "candlelight:khinkali" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -9.0d
@@ -2351,13 +2268,7 @@
 			id: "65ED4471C99E1D17"
 			tasks: [{
 				id: "0A51B5424D702FF1"
-				item: {
-					Count: 1
-					id: "candlelight:chicken_alfredo"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:chicken_alfredo" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -12.0d
@@ -2367,13 +2278,7 @@
 			id: "79ECFD2110BB5689"
 			tasks: [{
 				id: "11D22BC12B3AA1D0"
-				item: {
-					Count: 1
-					id: "candlelight:chicken_with_vegetables"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:chicken_with_vegetables" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -2383,13 +2288,7 @@
 			id: "36041EBE524C7CC1"
 			tasks: [{
 				id: "3F2570A2D648496B"
-				item: {
-					Count: 1
-					id: "candlelight:pasta_with_bolognese"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:pasta_with_bolognese" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -10.0d
@@ -2399,13 +2298,7 @@
 			id: "54FE51A668B8FDB6"
 			tasks: [{
 				id: "3E95A0B07B3624C7"
-				item: {
-					Count: 1
-					id: "candlelight:fillet_steak"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:fillet_steak" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -12.0d
@@ -2415,13 +2308,7 @@
 			id: "3B5CF272356259B2"
 			tasks: [{
 				id: "2E79BF5524A1281D"
-				item: {
-					Count: 1
-					id: "candlelight:roasted_lamb_with_lettuce"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:roasted_lamb_with_lettuce" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -2431,13 +2318,7 @@
 			id: "6157F3158A1C6411"
 			tasks: [{
 				id: "774E70F10C969972"
-				item: {
-					Count: 1
-					id: "candlelight:roastbeef_with_glazed_carrots"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:roastbeef_with_glazed_carrots" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -12.0d
@@ -2447,7 +2328,7 @@
 			id: "0532ED6D3BAB24AB"
 			tasks: [{
 				id: "2FDB7E09BDB207E9"
-				item: "candlelight:mozzarella"
+				item: { components: { "ftbquests:missing_item": "candlelight:mozzarella" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.0d
@@ -2457,13 +2338,7 @@
 			id: "653BE5A2FCF950A5"
 			tasks: [{
 				id: "2CF4C1DAA8C7EDF5"
-				item: {
-					Count: 1
-					id: "candlelight:beef_with_mushroom_in_wine_and_potatoes"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:beef_with_mushroom_in_wine_and_potatoes" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -11.0d
@@ -2473,13 +2348,7 @@
 			id: "5F6E585D095B233E"
 			tasks: [{
 				id: "723DD2AD590B8497"
-				item: {
-					Count: 1
-					id: "candlelight:pork_ribs"
-					tag: {
-						StoredEffects: [ ]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "candlelight:pork_ribs" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -2489,7 +2358,7 @@
 			id: "334DAB97A86F2574"
 			tasks: [{
 				id: "6638166BFA190A6C"
-				item: "veggiesdelight:vegetarian_burger"
+				item: { count: 1, id: "veggiesdelight:vegetarian_burger" }
 				type: "item"
 			}]
 			x: 11.5d
@@ -2499,7 +2368,7 @@
 			id: "6E0DE2216041B2B3"
 			tasks: [{
 				id: "47218587348F949B"
-				item: "veggiesdelight:stuffed_bellpeppers_block"
+				item: { count: 1, id: "veggiesdelight:stuffed_bellpeppers_block" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -2509,7 +2378,7 @@
 			id: "2FDC611338D67682"
 			tasks: [{
 				id: "5478744F07CE4386"
-				item: "veggiesdelight:sweet_potato_pancakes"
+				item: { count: 1, id: "veggiesdelight:sweet_potato_pancakes" }
 				type: "item"
 			}]
 			x: 14.5d
@@ -2519,7 +2388,7 @@
 			id: "3DD9CFE690ED298A"
 			tasks: [{
 				id: "542D69B5C2BDC46E"
-				item: "veggiesdelight:turnip_mutton_skewer"
+				item: { count: 1, id: "veggiesdelight:turnip_mutton_skewer" }
 				type: "item"
 			}]
 			x: 12.5d
@@ -2529,7 +2398,7 @@
 			id: "5B37B31BA3C5CCD3"
 			tasks: [{
 				id: "17E07F26FC39146E"
-				item: "veggiesdelight:zucchini_quiche"
+				item: { count: 1, id: "veggiesdelight:zucchini_quiche" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -2539,7 +2408,7 @@
 			id: "426E241A2BE5ED15"
 			tasks: [{
 				id: "772D199DC6356DB9"
-				item: "veggiesdelight:stuffed_zucchini_boat"
+				item: { count: 1, id: "veggiesdelight:stuffed_zucchini_boat" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -2549,7 +2418,7 @@
 			id: "01B0EFE30AC97294"
 			tasks: [{
 				id: "5AF4924EA0BB6E82"
-				item: "veggiesdelight:steak_and_broccoli"
+				item: { count: 1, id: "veggiesdelight:steak_and_broccoli" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -2559,7 +2428,7 @@
 			id: "1AFAEA748AB9E1B3"
 			tasks: [{
 				id: "3684EC060C0B0398"
-				item: "veggiesdelight:rice_and_vegetables"
+				item: { count: 1, id: "veggiesdelight:rice_and_vegetables" }
 				type: "item"
 			}]
 			x: 14.5d
@@ -2569,7 +2438,7 @@
 			id: "58A0B7418235B06F"
 			tasks: [{
 				id: "307441AA7D425B06"
-				item: "veggiesdelight:vegetables_wrap"
+				item: { count: 1, id: "veggiesdelight:vegetables_wrap" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -2579,12 +2448,11 @@
 			id: "3315CF66A6C33A02"
 			tasks: [{
 				id: "3FCF3DD087AC730B"
-				item: "bakery:waffle"
+				item: { components: { "ftbquests:missing_item": "bakery:waffle" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 18.0d
 			y: -1.0d
 		}
 	]
-	title: "{ftbquests.chapter.banners.title}"
 }

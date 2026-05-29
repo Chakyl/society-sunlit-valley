@@ -1,23 +1,24 @@
 {
   "general": {
-    "debug": false,
     "itemModNameTooltip": false,
     "bossBarOverlapMode": "PUSH_DOWN",
     "builtinCamouflage": true,
-    "ttsMode": "PRESS",
+    "hideFromTabList": true,
+    "hideFromGUIs": true,
+    "accessibilityModMemory": false,
+    "enableAccessibilityPlugin": false,
     "fluidMode": "ANY",
-    "reachDistance": 0.0,
-    "displayEntities": true,
+    "perspectiveMode": "CAMERA",
+    "extendedReach": 0.0,
+    "debug": false,
     "displayBosses": true,
     "displayMode": "TOGGLE",
+    "enableTextToSpeech": false,
+    "ttsMode": "PRESS",
+    "previewOverlay": true,
     "displayTooltip": true,
     "displayBlocks": true,
-    "hideFromDebug": true,
-    "hideFromTabList": true,
-    "enableTextToSpeech": false,
-    "hintOverlayToggle": false,
-    "hintNarratorToggle": true,
-    "previewOverlay": true
+    "displayEntities": true
   },
   "overlay": {
     "alpha": 1.0,
@@ -27,15 +28,20 @@
     "overlaySquare": false,
     "flipMainHand": false,
     "autoScaleThreshold": 0.4,
-    "overlayPosY": 1.0,
     "overlayScale": 1.0,
     "overlayAnchorX": 0.5,
     "overlayAnchorY": 0.0,
     "activeTheme": "jade_stardew:stardew_valley",
-    "themesHash": -1816973404,
-    "overlayPosX": 0.5
+    "overlayPosX": 0.5,
+    "overlayPosY": 1.0
   },
   "formatting": {
-    "modName": "§9§o%s"
+    "itemModNameStyle": {
+      "italic": true,
+      "color": "blue"
+    }
+  },
+  "history": {
+    "themesHash": -328442023
   }
 }

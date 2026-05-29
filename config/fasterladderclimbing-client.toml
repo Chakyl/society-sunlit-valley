@@ -1,10 +1,8 @@
-
-[General]
-	#Allow going UP faster. If [false], then player can only climb up the ladder at normal speed.
-	allowQuickAscension = true
-	#Allow going DOWN faster. If [false], then player can only climb down the ladder at normal speed.
-	allowQuickDescension = true
-	#Speed modifier. 0 is Vanilla speed, 10 is lightning speed.
-	#Range: 0 ~ 10
-	speedModifier = 2
-
+#Allow going UP faster. If [false], then player can only climb up the ladder at normal speed.
+allowQuickAscension = true
+#Allow going DOWN faster. If [false], then player can only climb down the ladder at normal speed.
+allowQuickDescension = true
+#Speed modifier. 0 is Vanilla speed, 10 is lightning speed.
+# Default: 4
+# Range: 0 ~ 10
+speedModifier = 2

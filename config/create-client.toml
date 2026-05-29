@@ -1,4 +1,3 @@
-
 #.
 #Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
 [client]
@@ -13,32 +12,38 @@
 	explainRenderErrors = false
 	#.
 	#Higher density means more spawned particles.
-	#Range: 0.0 ~ 1.0
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
 	fanParticleDensity = 0.5
 	#.
 	#[in Blocks]
 	#Maximum Distance to the player at which items in Blocks' filter slots will be displayed
-	#Range: 1.0 ~ 3.4028234663852886E38
+	# Default: 10.0
+	# Range: 1.0 ~ 3.4028234663852886E38
 	filterItemRenderDistance = 10.0
 	#.
 	#Choose the menu row that the Create config button appears on in the main menu
 	#Set to 0 to disable the button altogether
-	#Range: 0 ~ 4
+	# Default: 2
+	# Range: 0 ~ 4
 	mainMenuConfigButtonRow = 2
 	#.
 	#Offset the Create config button in the main menu by this many pixels on the X axis
 	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
-	#Range: > -2147483648
+	# Default: -4
+	# Range: > -2147483648
 	mainMenuConfigButtonOffsetX = -4
 	#.
 	#Choose the menu row that the Create config button appears on in the in-game menu
 	#Set to 0 to disable the button altogether
-	#Range: 0 ~ 5
+	# Default: 3
+	# Range: 0 ~ 5
 	ingameMenuConfigButtonRow = 3
 	#.
 	#Offset the Create config button in the in-game menu by this many pixels on the X axis
 	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
-	#Range: > -2147483648
+	# Default: -4
+	# Range: > -2147483648
 	ingameMenuConfigButtonOffsetX = -4
 	#.
 	#Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled
@@ -52,11 +57,13 @@
 	[client.fluidFogSettings]
 		#.
 		#The vision range through honey will be multiplied by this factor
-		#Range: 0.125 ~ 256.0
+		# Default: 1.0
+		# Range: 0.125 ~ 256.0
 		honey = 1.0
 		#.
 		#The vision range though chocolate will be multiplied by this factor
-		#Range: 0.125 ~ 256.0
+		# Default: 1.0
+		# Range: 0.125 ~ 256.0
 		chocolate = 1.0
 
 	#.
@@ -64,11 +71,13 @@
 	[client.goggleOverlay]
 		#.
 		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
-		#Range: > -2147483648
+		# Default: 20
+		# Range: > -2147483648
 		overlayOffsetX = 20
 		#.
 		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
-		#Range: > -2147483648
+		# Default: 0
+		# Range: > -2147483648
 		overlayOffsetY = 0
 		#.
 		#Enable this to use your custom colors for the Goggle- and Hover- Overlay
@@ -77,19 +86,22 @@
 		#The custom background color to use for the Goggle- and Hover- Overlays, if enabled
 		#[in Hex: #AaRrGgBb]
 		#[@cui:IntDisplay:#]
-		#Range: > -2147483648
+		# Default: -267386864
+		# Range: > -2147483648
 		customBackgroundOverlay = -267386864
 		#.
 		#The custom top color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
 		#[in Hex: #AaRrGgBb]
 		#[@cui:IntDisplay:#]
-		#Range: > -2147483648
+		# Default: 1347420415
+		# Range: > -2147483648
 		customBorderTopOverlay = 1347420415
 		#.
 		#The custom bot color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
 		#[in Hex: #AaRrGgBb]
 		#[@cui:IntDisplay:#]
-		#Range: > -2147483648
+		# Default: 1344798847
+		# Range: > -2147483648
 		customBorderBotOverlay = 1344798847
 
 	#.
@@ -100,7 +112,8 @@
 		enableAmbientSounds = true
 		#.
 		#Maximum volume modifier of Ambient noise
-		#Range: 0.0 ~ 1.0
+		# Default: 0.10000000149011612
+		# Range: 0.0 ~ 1.0
 		ambientVolumeCap = 0.10000000149011612
 
 	#.
@@ -108,7 +121,8 @@
 	[client.trains]
 		#.
 		#How far away the Camera should zoom when seated on a train
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 3.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		mountedZoomMultiplier = 3.0
 		#.
 		#Display nodes and edges of a Railway Network while f3 debug mode is active
@@ -125,9 +139,9 @@
 		trainMapColorTheme = "RED"
 
 	#.
-	#Mod Integration and JEI
-	[client.jeiIntegration]
+	#Mod Integration and Recipe Viewer
+	[client.recipeViewerIntegration]
 		#.
-		#Whether to auto-update the JEI search when searching in the stock keeper UI
-		syncJeiSearch = true
-
+		#How Recipe Viewer search should interact with Stock Keepers
+		#Allowed Values: SYNC_BOTH, SYNC_FROM_JEI, SYNC_FROM_STOCK_KEEPER, NONE
+		syncRecipeViewerSearch = "SYNC_BOTH"

@@ -1,0 +1,36 @@
+#Auth settings
+[microsoft]
+	#Indicates the type of user interaction that is required
+	#Allowed Values: DEFAULT, SELECT_ACCOUNT, LOGIN, NONE, CONSENT
+	prompt = "DEFAULT"
+	#The port from which to listen for OAuth2 callbacks
+	# Default: 25585
+	# Range: 0 ~ 65535
+	port = 25585
+	#OAuth2 client id
+	clientId = "e16699bb-2aa8-46da-b5e3-45cbcce29091"
+	#OAuth2 authorization url
+	authorizeUrl = "https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize"
+	#OAuth2 access token url
+	tokenUrl = "https://login.microsoftonline.com/consumers/oauth2/v2.0/token"
+	#Xbox authentication url
+	xboxAuthUrl = "https://user.auth.xboxlive.com/user/authenticate"
+	#Xbox XSTS authorization url
+	xboxXstsUrl = "https://xsts.auth.xboxlive.com/xsts/authorize"
+	#Minecraft authentication url
+	mcAuthUrl = "https://api.minecraftservices.com/authentication/login_with_xbox"
+	#Minecraft profile url
+	mcProfileUrl = "https://api.minecraftservices.com/minecraft/profile"
+
+#Button settings
+[buttons]
+	#X Position of the button on the multiplayer screen
+	# Default: 6
+	# Range: > 0
+	xPos = 6
+	#Y Position of the button on the multiplayer screen
+	# Default: 6
+	# Range: > 0
+	yPos = 6
+	#True if the button can be dragged to a new position
+	draggable = true

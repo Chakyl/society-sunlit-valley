@@ -1,4 +1,3 @@
-
 #Common
 [common]
 	#Should lead poisoning events give just Poison instead of Brain Damage?
@@ -10,8 +9,8 @@
 	#The scribe is able to silk-touch pickaxe-related blocks
 	scribeSilkTouchStone = true
 	#Time in ticks molten lead waits until flowing downwards
-	#Range: 0 ~ 2000
+	# Default: 200
+	# Range: 0 ~ 2000
 	moltenLeadDelay = 200
 	#Can lead blocks be placed into a cauldron to melt?
 	cauldronLeadMelting = true
-

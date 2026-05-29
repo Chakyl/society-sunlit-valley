@@ -3,13 +3,12 @@
 	loot_size: 1
 	order_index: 7
 	rewards: [
-		{ item: "society:stone_hand" }
-		{ item: "society:frosted_tip" }
-		{ item: "society:infinity_worm" }
-		{ item: "society:ancient_cog" }
-		{ item: "society:tiny_gnome" }
-		{ item: "society:sea_biscut" }
-		{ item: "society:cordycep" }
+		{ id: "06D475580A711135", item: { count: 1, id: "society:stone_hand" } }
+		{ id: "761409F7BB98C63C", item: { count: 1, id: "society:frosted_tip" } }
+		{ id: "24C3810719D254A4", item: { count: 1, id: "society:infinity_worm" } }
+		{ id: "5F61D92ECD908B79", item: { count: 1, id: "society:ancient_cog" } }
+		{ id: "0B079D5D72336E3D", item: { count: 1, id: "society:tiny_gnome" } }
+		{ id: "5BE7E800D9E9C0E6", item: { count: 1, id: "society:sea_biscut" } }
+		{ id: "34976875A83721DD", item: { count: 1, id: "society:cordycep" } }
 	]
-	title: "{ftbquests.loot_table.6097669691163803424.title}"
 }

@@ -4,11 +4,7 @@
 	filename: "longwings"
 	group: "15230846E14B6926"
 	icon: {
-		Count: 1
 		id: "longwings:butterfly"
-		tag: {
-			variant: "blue_morpho"
-		}
 	}
 	id: "12867D0F2D4800BE"
 	images: [
@@ -927,16 +923,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4AF2E7F5FB3A8CA6"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "purple_king_shoemaker"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -1.595238095238095d
 			y: -4.2083333333333215d
@@ -947,16 +935,8 @@
 			shape: "none"
 			tasks: [{
 				id: "5EED9EA52A2E72AD"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "queen"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 0.8095238095237889d
 			y: -4.202380952380956d
@@ -967,16 +947,8 @@
 			shape: "none"
 			tasks: [{
 				id: "1CC4D54ED1834917"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "painted_lady"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -0.3809523809523796d
 			y: -2.827380952380956d
@@ -987,16 +959,8 @@
 			shape: "none"
 			tasks: [{
 				id: "63B7C31B0831D197"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "malabar_banded_peacock"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.31632653061223d
 			y: -1.8095238095238244d
@@ -1007,16 +971,8 @@
 			shape: "none"
 			tasks: [{
 				id: "370B4EF832716513"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "king_crow"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 4.261904761904773d
 			y: -3.0178571428571317d
@@ -1027,16 +983,8 @@
 			shape: "none"
 			tasks: [{
 				id: "2EF6EA7771A9788E"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "gold_banded_forester"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 1.8809523809523867d
 			y: -0.5416666666666501d
@@ -1047,16 +995,8 @@
 			shape: "none"
 			tasks: [{
 				id: "3578C7DDB54DD603"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "blue_morpho"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.428571428571416d
 			y: -4.178571428571438d
@@ -1067,16 +1007,8 @@
 			shape: "none"
 			tasks: [{
 				id: "34BBFD9C4F1DF4AC"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "malachite"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 6.5d
 			y: 1.9345238095238244d
@@ -1087,16 +1019,8 @@
 			shape: "none"
 			tasks: [{
 				id: "17060EB4AB11610D"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "giant_swallowtail"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 7.714285714285687d
 			y: -4.154761904761912d
@@ -1107,16 +1031,8 @@
 			shape: "none"
 			tasks: [{
 				id: "09BCA772800C58A0"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "zebra_swallowtail"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 9.97959183673467d
 			y: 3.1802721088435106d
@@ -1127,16 +1043,8 @@
 			shape: "none"
 			tasks: [{
 				id: "56C161CFB4733E37"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "long_tailed_skipper"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -1.5476190476190368d
 			y: 3.0773809523809703d
@@ -1147,16 +1055,8 @@
 			shape: "none"
 			tasks: [{
 				id: "10B8E8DB3A3419A2"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "common_blue"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -3.880952380952401d
 			y: 5.559523809523796d
@@ -1167,16 +1067,8 @@
 			shape: "none"
 			tasks: [{
 				id: "3C4C11D484C10D7C"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "common_leopard"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 1.904761904761898d
 			y: -2.892857142857153d
@@ -1187,16 +1079,8 @@
 			shape: "none"
 			tasks: [{
 				id: "7BEB2E9FF77A4F55"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "tailed_jay"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.357142857142854d
 			y: 3.125000000000007d
@@ -1207,16 +1091,8 @@
 			shape: "none"
 			tasks: [{
 				id: "0BA5013D897FE795"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "malay_lacewing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 8.89795918367345d
 			y: 4.445578231292487d
@@ -1227,16 +1103,8 @@
 			shape: "none"
 			tasks: [{
 				id: "37201FF7A2F8DFDA"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "ruddy_daggerwing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.128571428571412d
 			y: -1.7523809523809604d
@@ -1247,16 +1115,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4406803EE6A944DF"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "common_birdwing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 8.73809523809524d
 			y: -0.4940476190476062d
@@ -1267,16 +1127,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4D33B25721544ECF"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "olivewing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 9.97959183673467d
 			y: -1.7176870748299606d
@@ -1287,16 +1139,8 @@
 			shape: "none"
 			tasks: [{
 				id: "2122C5BDA3904351"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "dark_blue_tiger"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -2.6190476190476417d
 			y: 6.72619047619046d
@@ -1307,16 +1151,8 @@
 			shape: "none"
 			tasks: [{
 				id: "2278EC4BB16FF7D4"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "statira"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 8.857142857142833d
 			y: -2.9166666666666714d
@@ -1327,16 +1163,8 @@
 			shape: "none"
 			tasks: [{
 				id: "20DFD9884146C667"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "sleepy_orange"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.119047619047599d
 			y: 0.7738095238095184d
@@ -1347,16 +1175,8 @@
 			shape: "none"
 			tasks: [{
 				id: "3531999FD5C97F07"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "sulphur"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 0.8095238095237889d
 			y: 0.7499999999999929d
@@ -1367,16 +1187,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4386A3D9FF265E58"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "cabbage_white"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -3.8095238095238315d
 			y: 3.10714285714284d
@@ -1387,16 +1199,8 @@
 			shape: "none"
 			tasks: [{
 				id: "75735173F46152FB"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "glasswing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 1.9285714285714093d
 			y: 4.41666666666665d
@@ -1407,16 +1211,8 @@
 			shape: "none"
 			tasks: [{
 				id: "2BC39DA31C7DF1D8"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "archduke"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -0.4047619047619264d
 			y: 4.416666666666657d
@@ -1427,16 +1223,8 @@
 			shape: "none"
 			tasks: [{
 				id: "58541B4094DEFCB8"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "plum_judy"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 6.547619047619023d
 			y: 4.440476190476176d
@@ -1447,16 +1235,8 @@
 			shape: "none"
 			tasks: [{
 				id: "799340AEE4805006"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "pearl_bordered_fritillary"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.357142857142833d
 			y: 0.6785714285714235d
@@ -1467,16 +1247,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4A39CF6F651B18D5"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "pink_spotted_cattleheart"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 1.8809523809523796d
 			y: 6.791666666666664d
@@ -1487,16 +1259,8 @@
 			shape: "none"
 			tasks: [{
 				id: "376F46D6A6958BED"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "small_copper"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 0.7380952380952408d
 			y: -1.732142857142847d
@@ -1507,16 +1271,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4771ADC10ED6895E"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "sara_longwing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -1.5000000000000213d
 			y: 0.7499999999999929d
@@ -1527,16 +1283,8 @@
 			shape: "none"
 			tasks: [{
 				id: "532194B2282D336C"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "comma"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 9.959183673469362d
 			y: 5.547619047619023d
@@ -1547,16 +1295,8 @@
 			shape: "none"
 			tasks: [{
 				id: "3B466F5DA9519120"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "giant_glasswing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 4.1904761904761685d
 			y: 4.4880952380952195d
@@ -1567,16 +1307,8 @@
 			shape: "none"
 			tasks: [{
 				id: "46A5193610CCC7C0"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "shoemaker"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.095238095238095d
 			y: 3.172619047619044d
@@ -1587,16 +1319,8 @@
 			shape: "none"
 			tasks: [{
 				id: "34E88897AC5EC4CC"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "novice"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -3.8333333333333286d
 			y: 0.6964285714285836d
@@ -1607,16 +1331,8 @@
 			shape: "none"
 			tasks: [{
 				id: "61DD40445FC889C0"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "rajah_brookes_birdwing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 7.642857142857139d
 			y: 0.6488095238095326d
@@ -1627,16 +1343,8 @@
 			shape: "none"
 			tasks: [{
 				id: "7C12698181546781"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "monarch"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.0952380952380736d
 			y: -4.178571428571438d
@@ -1647,16 +1355,8 @@
 			shape: "none"
 			tasks: [{
 				id: "53A545D07178446E"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "monk_skipper"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 9.938775510204067d
 			y: 0.6904761904761614d
@@ -1667,16 +1367,8 @@
 			shape: "none"
 			tasks: [{
 				id: "1E6B41C57BA1D2CC"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "plain_blue_crow"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 6.500000000000007d
 			y: -2.970238095238088d
@@ -1687,16 +1379,8 @@
 			shape: "none"
 			tasks: [{
 				id: "1A2B8291B419C34E"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "white_peacock"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 0.7380952380952408d
 			y: 3.125d
@@ -1707,16 +1391,8 @@
 			shape: "none"
 			tasks: [{
 				id: "5F175B48B8CB71B1"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "marble"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -3.8809523809523796d
 			y: -1.7321428571428399d
@@ -1727,16 +1403,8 @@
 			shape: "none"
 			tasks: [{
 				id: "0A1784C366D33580"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "queen_alexandra_birdwing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 4.214285714285722d
 			y: 1.9821428571428683d
@@ -1747,16 +1415,8 @@
 			shape: "none"
 			tasks: [{
 				id: "16C25802A1E52F19"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "julia"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 4.261904761904738d
 			y: -0.5595238095238173d
@@ -1767,16 +1427,8 @@
 			shape: "none"
 			tasks: [{
 				id: "7C1D50635F91AFA9"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "postman"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 6.571428571428541d
 			y: 6.869047619047599d
@@ -1787,16 +1439,8 @@
 			shape: "none"
 			tasks: [{
 				id: "3B4B3E50AC35A157"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "zebra"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 6.547619047619023d
 			y: -0.4166666666666714d
@@ -1807,16 +1451,8 @@
 			shape: "none"
 			tasks: [{
 				id: "2220DDD5BEB082BE"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "swallowtail"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 8.833333333333329d
 			y: 1.8869047619047734d
@@ -1827,16 +1463,8 @@
 			shape: "none"
 			tasks: [{
 				id: "1C861A45D35D755F"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "peacock"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.404761904761912d
 			y: 8.02976190476192d
@@ -1847,16 +1475,8 @@
 			shape: "none"
 			tasks: [{
 				id: "07019D3DF607D259"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "atala"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -1.5714285714285907d
 			y: 5.488095238095227d
@@ -1867,16 +1487,8 @@
 			shape: "none"
 			tasks: [{
 				id: "53144CCF04DA326A"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "dart_skipper"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -0.333333333333357d
 			y: -0.4642857142857224d
@@ -1887,16 +1499,8 @@
 			shape: "none"
 			tasks: [{
 				id: "138CC96E25ED583F"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "orange_tip"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -0.3571428571428825d
 			y: 1.9166666666666572d
@@ -1907,16 +1511,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4B124A4C3FE04941"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "red_spotted_purple"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -0.4523809523809774d
 			y: 6.797619047619037d
@@ -1927,16 +1523,8 @@
 			shape: "none"
 			tasks: [{
 				id: "248EC6F5B54E7B5D"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "hebes_pink_forester"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 4.2380952380952195d
 			y: 6.749999999999986d
@@ -1947,16 +1535,8 @@
 			shape: "none"
 			tasks: [{
 				id: "0033B2C3AC56E0D5"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "large_tree_nymph"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -2.738095238095262d
 			y: 1.964285714285701d
@@ -1967,16 +1547,8 @@
 			shape: "none"
 			tasks: [{
 				id: "0062639F3B454FC1"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "small_white_wave"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 1.8619047619047535d
 			y: 16.607142857142854d
@@ -1987,16 +1559,8 @@
 			shape: "none"
 			tasks: [{
 				id: "6FE10D1A5627B8B9"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "salt_marsh"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -2.795238095238105d
 			y: 16.521428571428558d
@@ -2007,16 +1571,8 @@
 			shape: "none"
 			tasks: [{
 				id: "67C06E89E7E5861F"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "tiger"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -1.680952380952391d
 			y: 15.407142857142851d
@@ -2027,16 +1583,8 @@
 			shape: "none"
 			tasks: [{
 				id: "28621E2200D728B7"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "rosy_maple"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 8.809523809523796d
 			y: 14.190476190476176d
@@ -2047,16 +1595,8 @@
 			shape: "none"
 			tasks: [{
 				id: "27A148EB2AC7FF2B"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "scarlet_bodied_wasp"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 0.6619047619047507d
 			y: 15.37857142857142d
@@ -2067,16 +1607,8 @@
 			shape: "none"
 			tasks: [{
 				id: "126BD7791D494683"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "luna"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 7.714285714285701d
 			y: 13.09523809523808d
@@ -2087,16 +1619,8 @@
 			shape: "none"
 			tasks: [{
 				id: "1DF8BF44C8A83A83"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "atlas"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -1.6666666666666785d
 			y: 12.970238095238095d
@@ -2107,16 +1631,8 @@
 			shape: "none"
 			tasks: [{
 				id: "3A7BB15B575859DE"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "madagascan_sunset"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.0238095238095113d
 			y: 12.999999999999993d
@@ -2127,16 +1643,8 @@
 			shape: "none"
 			tasks: [{
 				id: "4C2ACDE64A036144"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "cecropia"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -2.766666666666673d
 			y: 14.178571428571423d
@@ -2147,16 +1655,8 @@
 			shape: "none"
 			tasks: [{
 				id: "159EDDEEE97C9A19"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "false_tiger"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 4.190476190476183d
 			y: 14.261904761904752d
@@ -2167,16 +1667,8 @@
 			shape: "none"
 			tasks: [{
 				id: "3A29DCCDDD662BA2"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "hummingbird_clearwing"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 4.190476190476183d
 			y: 16.59523809523808d
@@ -2187,16 +1679,8 @@
 			shape: "none"
 			tasks: [{
 				id: "7204A5E49DCF5D3C"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "japanese_silk"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.38095238095238d
 			y: 13.047619047619037d
@@ -2207,16 +1691,8 @@
 			shape: "none"
 			tasks: [{
 				id: "44CD9A1684B59066"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "marbled_emperor"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -1.680952380952391d
 			y: 17.635714285714286d
@@ -2227,16 +1703,8 @@
 			shape: "none"
 			tasks: [{
 				id: "2E79989784882EC5"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "imperial"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 6.523809523809504d
 			y: 14.190476190476176d
@@ -2247,16 +1715,8 @@
 			shape: "none"
 			tasks: [{
 				id: "23479F498F971CDE"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "oak_beauty"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -0.36666666666667425d
 			y: 14.264285714285705d
@@ -2267,16 +1727,8 @@
 			shape: "none"
 			tasks: [{
 				id: "233B30030B61F7A8"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "dark_bordered_beauty"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.357142857142847d
 			y: 15.404761904761891d
@@ -2287,16 +1739,8 @@
 			shape: "none"
 			tasks: [{
 				id: "35ABBDFE0E0DEBF4"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "silk"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.0476190476190297d
 			y: 17.827380952380963d
@@ -2307,16 +1751,8 @@
 			shape: "none"
 			tasks: [{
 				id: "164DD83FE1FE794C"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "july_belle"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.428571428571416d
 			y: 17.809523809523796d
@@ -2408,37 +1844,32 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1
-				id: "trofers:large_pillar"
-				tag: {
-					BlockEntityTag: {
-						Trophy: "trofers:butterfly_moth"
-					}
+				components: {
+					"ftbquests:missing_item": "trofers:large_pillar"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "0B0AC1BFF726E11E"
 			rewards: [
 				{
 					id: "741CB500AE30F56B"
 					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:butterfly_moth"
-							}
+						components: {
+							"ftbquests:missing_item": "trofers:large_pillar"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
 				{
 					id: "499A7047BB0D8E66"
 					item: {
-						Count: 1
-						id: "botania:flight_tiara"
-						tag: {
-							variant: 1
+						components: {
+							"ftbquests:missing_item": "botania:flight_tiara"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
@@ -2447,19 +1878,13 @@
 			size: 3.0d
 			tasks: [{
 				icon: {
-					Count: 1
 					id: "longwings:butterfly"
-					tag: {
-						variant: "monarch"
-					}
 				}
 				id: "6918CC5C12ED241A"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.longwings.questB0AC1BFF726E11E.task.7573027469250077722.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.longwings.questB0AC1BFF726E11E.title}"
 			x: 3.0d
 			y: 10.5d
 		}
@@ -2469,16 +1894,8 @@
 			shape: "none"
 			tasks: [{
 				id: "06E19998D1BDBBD0"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "brimstone"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 7.690476190476197d
 			y: -1.732142857142847d
@@ -2489,16 +1906,8 @@
 			shape: "none"
 			tasks: [{
 				id: "5D3B542BFBBB902C"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "omiza"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.0238095238095113d
 			y: 15.404761904761891d
@@ -2509,16 +1918,8 @@
 			shape: "none"
 			tasks: [{
 				id: "459500A92B64C383"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "great_purple_emperor"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 7.714285714285701d
 			y: 5.547619047619023d
@@ -2529,16 +1930,8 @@
 			shape: "none"
 			tasks: [{
 				id: "209B86F7956F84E8"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "blue_pansy"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 0.7857142857142989d
 			y: 7.982142857142868d
@@ -2549,16 +1942,8 @@
 			shape: "none"
 			tasks: [{
 				id: "39C98C48CC09537D"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "mourning_cloak"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 5.357142857142854d
 			y: 5.64880952380954d
@@ -2569,16 +1954,8 @@
 			shape: "none"
 			tasks: [{
 				id: "761F430D0C654ED5"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "black_swallowtail"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 7.69047619047619d
 			y: 3.172619047619058d
@@ -2589,16 +1966,8 @@
 			shape: "none"
 			tasks: [{
 				id: "36714E58DE2BE38B"
-				item: {
-					Count: 1
-					id: "longwings:butterfly"
-					tag: {
-						variant: "ludlows_bhutan_swallowtail"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:butterfly" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 3.0952380952380736d
 			y: 5.630952380952365d
@@ -2609,16 +1978,8 @@
 			shape: "none"
 			tasks: [{
 				id: "1313A9769C47450D"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "small_emerald"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: -0.4761904761904958d
 			y: 16.589285714285722d
@@ -2629,16 +1990,8 @@
 			shape: "none"
 			tasks: [{
 				id: "30925BF903EE926E"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "chickweed"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 7.738095238095234d
 			y: 15.357142857142847d
@@ -2649,16 +2002,8 @@
 			shape: "none"
 			tasks: [{
 				id: "202EC3E5C0DF5CEE"
-				item: {
-					Count: 1
-					id: "longwings:moth"
-					tag: {
-						variant: "owl"
-					}
-				}
-				match_nbt: true
+				item: { count: 1, id: "longwings:moth" }
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 0.7190476190476076d
 			y: 13.035714285714278d
@@ -2669,7 +2014,7 @@
 			shape: "none"
 			tasks: [{
 				id: "6F83404E1B63C671"
-				item: "society:moth_pollen"
+				item: { count: 1, id: "society:moth_pollen" }
 				type: "item"
 			}]
 			x: 6.004761904761857d
@@ -2681,13 +2026,11 @@
 			shape: "none"
 			tasks: [{
 				id: "15697F476E6F905E"
-				item: "society:butterfly_amber"
+				item: { count: 1, id: "society:butterfly_amber" }
 				type: "item"
 			}]
 			x: -0.04285714285718001d
 			y: 10.535714285714285d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.longwings.subtitle0}"]
-	title: "{ftbquests.chapter.longwings.title}"
 }

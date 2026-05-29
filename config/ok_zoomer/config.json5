@@ -1,0 +1,156 @@
+{
+	// Options affecting the transitions between zooming in and zooming out.
+	zoom_transition: {
+		// "INSTANT": The zoom will abruptly transition between its off and on states.
+		// "LINEAR": The zoom will linearly transition between its off and on states.
+		// "SMOOTH": The zoom will smoothly transition between its off and on states using the game's smooth curve.
+		// "SINE": The zoom will smoothly transition between its off and on states using a sine curve.
+		// "BALANCED": The zoom will smoothly transition between its off and on states using cubic interpolation, balancing between linearity and smoothness.
+		// "SPRING": The zoom will bouncily transition between its off and on states. Avoid using it too often!
+		// options: INSTANT, LINEAR, SMOOTH, SINE, BALANCED, SPRING
+		// default: SMOOTH
+		start_transition: "SMOOTH",
+		// "INSTANT": The zoom will abruptly transition between its on and off states.
+		// "LINEAR": The zoom will linearly transition between its on and off states.
+		// "SMOOTH": The zoom will smoothly transition between its on and off states using the game's smooth curve.
+		// "SINE": The zoom will smoothly transition between its on and off states using a sine curve.
+		// "BALANCED": The zoom will smoothly transition between its on and off states using cubic interpolation, balancing between linearity and smoothness.
+		// "SPRING": The zoom will bouncily transition between its on and off states. Avoid using it too often!
+		// options: INSTANT, LINEAR, SMOOTH, SINE, BALANCED, SPRING
+		// default: SMOOTH
+		end_transition: "SMOOTH",
+		// Controls how long the end transition should last for. 20 ticks is equal to 1 second.
+		// range: 0 - 2147483647
+		// default: 8
+		start_transition_ticks: 8,
+		// Controls how long the start transition should last for. 20 ticks is equal to 1 second.
+		// range: 0 - 2147483647
+		// default: 8
+		end_transition_ticks: 8,
+		// Inverts the start transition's curve.
+		// default: false
+		invert_start_transition: false,
+		// Inverts the end transition's curve.
+		// default: false
+		invert_end_transition: false
+	},
+	// Options affecting the visual aspects of zooming.
+	appearance: {
+		// Retains the interface when zooming.
+		// default: false
+		persistent_interface: false,
+		// Hides the crosshair while zooming.
+		// default: true
+		hide_crosshair: true,
+		// Divides the amount of view bobbing with the zoom divisor while zooming.
+		// default: true
+		reduce_view_bobbing: true,
+		// Zooms the hand when zooming.
+		// default: true
+		zoom_hands: true,
+		// "OFF": Disables the zoom overlay.
+		// "VIGNETTE": Uses a vignette as the zoom overlay. The vignette texture can be found at assets/ok_zoomer/textures/misc/zoom_overlay.png
+		// "SPYGLASS": Uses the spyglass overlay as the zoom overlay.
+		// options: OFF, VIGNETTE, SPYGLASS
+		// default: OFF
+		zoom_overlay: "OFF",
+		// Improves performance by making the game render less of the world while zoomed in. This feature depends on the Sodium mod in order to work.
+		// default: true
+		smart_occlusion: true,
+		// Expands the entity distance while zooming in, allowing creatures and certain blocks to be seen from afar. This may have a performance impact during zoom.
+		// options: OFF, SAFE, ON
+		// default: SAFE
+		see_distant_entities: "SAFE"
+	},
+	// Options affecting the way zooming is controlled.
+	controls: {
+		// Uses the game's cinematic camera while zooming.
+		// default: false
+		cinematic_camera: false,
+		// Changes the speed of the cinematic camera.
+		// range: 1.1754944E-38 - 32.0
+		// default: 1.0
+		cinematic_camera_speed: 1.0,
+		// Reduces the mouse sensitivity proportionally to how far the zoom is.
+		// default: true
+		reduce_sensitivity: true,
+		// "HOLD": The zoom will require the zoom key to be held.
+		// "TOGGLE": The zoom will be toggled by the zoom key.
+		// "PERSISTENT": The zoom will always be enabled, with the zoom key being used for zoom scrolling.
+		// options: HOLD, TOGGLE, PERSISTENT
+		// default: HOLD
+		zoom_mode: "HOLD",
+		// Adds the spyglass's sounds effects on alternating zoom.
+		// default: false
+		spyglass_sounds: false,
+		// Adds zoom manipulation keys along with the zoom key. A game restart will be required in order to apply the changes.
+		// default: true
+		extra_key_binds: true,
+		// "OFF": Zooming won't require a spyglass and won't replace its zoom.
+		// "REQUIRE_ITEM": Zooming will require a spyglass in order to work. This option is configurable through the ok_zoomer:zoom_dependencies item tag.
+		// "REPLACE_ZOOM": Zooming will replace the spyglass zoom but it won't require one in order to work.
+		// "BOTH": Zooming will act as a complete replacement of the spyglass zoom, requiring one to work and replacing its zoom as well.
+		// options: OFF, REQUIRE_ITEM, REPLACE_ZOOM, BOTH
+		// default: OFF
+		spyglass_mode: "OFF"
+	},
+	// Options affecting the Zoom Scrolling feature.
+	zoom_scrolling: {
+		// Allows to increase or decrease the zoom by scrolling with the mouse wheel.
+		// default: true
+		zoom_scrolling: true,
+		// Allows for resetting the zoom with the middle mouse button.
+		// default: true
+		reset_zoom_with_mouse: true,
+		// Adds sound effects on zoom scrolling.
+		// default: false
+		scroll_sounds: false,
+		// If enabled, the current scroll step is forgotten once zooming is finished.
+		// default: true
+		forget_scroll_step: true,
+		// "INSTANT": The zoom will abruptly transition between each increment.
+		// "LINEAR": The zoom will linearly transition between each increment.
+		// "SMOOTH": The zoom will smoothly transition between each increment using the game's smooth curve.
+		// "SINE": The zoom will smoothly transition between each increment using a sine curve.
+		// "BALANCED": The zoom will smoothly transition between each increment using cubic interpolation, balancing between linearity and smoothness.
+		// "SPRING": The zoom will bouncily transition between each increment. Avoid using it too often!
+		// options: INSTANT, LINEAR, SMOOTH, SINE, BALANCED, SPRING
+		// default: SMOOTH
+		transition: "SMOOTH",
+		// Controls how long should the transition last for. 20 ticks is equal to 1 second.
+		// range: 0 - 2147483647
+		// default: 8
+		transition_ticks: 8,
+		// Determines the number to be used on the exponential curve. If unsure, keep this value at 2.
+		// range: 2 - 2147483647
+		// default: 2
+		scroll_base: 2,
+		// Determines the resolution of zoom scrolling. This will effectively multiply the amount of scroll steps.
+		// range: 1 - 2147483647
+		// default: 5
+		scroll_resolution: 5,
+		// The default scroll step to use on zooming in.
+		// range: 0 - 2147483647
+		// default: 10
+		default_scroll_step: 10,
+		// The maximum amount of scroll steps that the zoom may reach.
+		// range: 0 - 2147483647
+		// default: 30
+		scroll_step_limit: 30
+	},
+	// Technical options that don't fit elsewhere.
+	tweaks: {
+		// a
+		// default: true
+		numeric_sliders: true,
+		// Displays debug information for exponential zoom scrolling. Currently it may help with configuring the zoom scrolling.
+		// default: false
+		debug_scrolling: false,
+		// Prints a random owo in the console when the game starts.
+		// default: true
+		print_owo_on_start: true,
+		// If enabled, the "Save Toolbar Activator" keybind will be unbound if there's a conflict with the zoom key.
+		// default: true
+		unbind_conflicting_key: true
+	}
+}

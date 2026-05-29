@@ -1,0 +1,121 @@
+#For configuring the mob remodels, go to the mixed litter startup config!
+[overrides]
+	#If grass or mycelium spread to nearby dirt.
+	grassSpreads = true
+	myceliumSpreads = true
+	#If monster spawners should produce malevolent (red) flames instead of regular flames.
+	malevolentSpawner = true
+	#If players and mobs can trample farmland
+	allowTrampling = false
+	#If torches can be extinguished through interactions like campfires.
+	torchExtinguishing = true
+	#If snow and grass can combine to form snowlogged frosted grass.
+	allowGrassFrosting = true
+
+[biomes]
+	#If any custom biomes are enabled
+	biomes = true
+	#If the generic caves biomes are enabled
+	genericCavesBiomes = true
+	#If the maple biomes are enabled
+	mapleBiomes = true
+	#If the old growth forest is enabled
+	oldGrowthForest = true
+	#If the autumnal forest is enabled
+	autumnal = true
+	#If the boreal forest is enabled
+	borealForest = true
+	#If the dark taiga is enabled
+	darkTaiga = true
+	#If the dark swamp is enabled
+	darkSwamp = true
+	#If the frozen woods is enabled
+	frozenWoods = true
+	#If the bayou is enabled
+	bayou = true
+	#If the bog is enabled
+	bog = true
+	#If the prairie is enabled
+	prairie = true
+	#If the lavender field is enabled
+	lavenderField = true
+	#If the blackwater river sub-biome is enabled
+	blackwaterRiver = true
+	#If the lush river sub-biome is enabled
+	lushRiver = true
+	#If the desert river sub-biome is enabled
+	desertRiver = true
+	#If the frozen shore sub-biome is enabled
+	frozenShore = true
+	#If the mud beach sub-biome is enabled
+	mudBeach = true
+	#If the tropical beach sub-biome is enabled
+	tropicalBeach = true
+
+[tap]
+	#Time is calculated in ticks. 20 ticks make 1 second.
+	#Multiplier on how fast taps should fill up cauldrons with resin. Set to 0.0 to disable.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	fillingSpeedMultiplier = 1.0
+	#The time it takes to fill a cauldron with honey using a tap.
+	# Default: 80
+	# Range: 1 ~ 400
+	ticksToFillCauldron = 80
+
+[monster_anchor]
+	#The time between each resurrection from a monster anchor.
+	# Default: 80
+	# Range: 78 ~ 400
+	ticksBetweenResurrections = 80
+
+[spike]
+	#Damage is dealt in hit points. 2 hit points make 1 heart.
+	#The continuous damage dealt to an entity as it stands on an active spike.
+	# Default: 1.5
+	# Range: 0.0 ~ 2.147483647E9
+	pokingDamage = 1.5
+	#The added damage dealt to an entity when it falls on a spike from any height.
+	# Default: 2.0
+	# Range: 0.0 ~ 2.147483647E9
+	fallingDamage = 2.0
+	#The damage dealt to an entity when an adjacent spike is activated.
+	# Default: 12.0
+	# Range: 0.0 ~ 2.147483647E9
+	impalingDamage = 12.0
+	#The damage dealt to an entity when an active spike is pushed into it.
+	# Default: 12.0
+	# Range: 0.0 ~ 2.147483647E9
+	skeweringDamage = 12.0
+
+[bombs]
+	#The radius of explosives' explosion.
+	# Default: 3.0
+	# Range: 0.0 ~ 2.147483647E9
+	explosiveExplosionRadius = 3.0
+	#The radius of firebombs' explosion.
+	# Default: 2.0
+	# Range: 0.0 ~ 2.147483647E9
+	firebombExplosionRadius = 2.0
+
+[bulk_placement]
+	#Set to 0 to disable any key.
+	#The maximum distance ladders can be placed like scaffolding.
+	# Default: 8
+	# Range: > 0
+	maxLadderPlacementLength = 8
+	#The maximum distance rails can be placed like scaffolding.
+	# Default: 24
+	# Range: > 0
+	maxRailPlacementLength = 24
+	#The maximum distance rails can be from a supported block before breaking.
+	# Default: 5
+	# Range: > 0
+	maxFloatingRails = 5
+
+[miscellaneous]
+	#The chance a buried is spawned upon brushing a remains block.
+	#This chance is multiplied by 4 when the block is broken and by 10 when the block falls.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	buriedSpawningChance = 0.05

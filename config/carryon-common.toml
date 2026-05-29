@@ -1,23 +1,28 @@
-
 [settings]
 	#General Settings
 	#Maximum distance from where Blocks and Entities can be picked up
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 2.5
+	# Range: 0.0 ~ 1.7976931348623157E308
 	maxDistance = 2.5
 	#Max width of entities that can be picked up in survival mode
-	#Range: 0.0 ~ 10.0
+	# Default: 1.5
+	# Range: 0.0 ~ 10.0
 	maxEntityWidth = 1.5
 	#Max height of entities that can be picked up in survival mode
-	#Range: 0.0 ~ 10.0
+	# Default: 2.5
+	# Range: 0.0 ~ 10.0
 	maxEntityHeight = 2.5
 	#Slowness multiplier for blocks
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
 	blockSlownessMultiplier = 1.0
 	#Slowness multiplier for entities
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
 	entitySlownessMultiplier = 1.0
 	#Maximum stack limit for entities
-	#Range: > 1
+	# Default: 10
+	# Range: > 1
 	maxEntityStackLimit = 10
 	#More complex Tile Entities slow down the player more
 	heavyTiles = true
@@ -78,4 +83,3 @@
 	customPickupConditionsBlocks = []
 	#Custom Pickup Conditions for Entities
 	customPickupConditionsEntities = []
-

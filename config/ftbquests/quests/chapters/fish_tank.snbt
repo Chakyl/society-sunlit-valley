@@ -5,7 +5,6 @@
 	default_quest_shape: ""
 	filename: "fish_tank"
 	group: "106AD9AA3ADDE3AE"
-	icon: "furniture:iron_fish_tank"
 	id: "4ACD2216D1602749"
 	images: [{
 		height: 10.0d
@@ -19,16 +18,12 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: "supplementaries:present_yellow"
 			id: "03F3D0F74A5BC0C4"
 			rewards: [{
 				id: "765B2BAE7BB2EFCC"
 				item: {
-					Count: 1
+					count: 1
 					id: "minecraft:trident"
-					tag: {
-						Damage: 0
-					}
 				}
 				type: "item"
 			}]
@@ -36,129 +31,126 @@
 			tasks: [
 				{
 					id: "39BC4C648654AE4F"
-					item: "unusualfishmod:raw_beaked_herring"
+					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_beaked_herring" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "5D36A5EF7FA6EF6C"
-					item: {
-						Count: 1
-						id: "aquaculture:leech"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: { components: { "ftbquests:missing_item": "aquaculture:leech" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "4066FD502914ABAF"
-					item: "unusualfishmod:raw_bark_angelfish"
+					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_bark_angelfish" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "74203B5CCDDB8157"
-					item: "unusualfishmod:raw_snowflake"
+					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_snowflake" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest3F3D0F74A5BC0C4.title}"
 			x: -3.085714285714289d
 			y: 0.27142857142856514d
 		}
 		{
-			icon: "supplementaries:present_blue"
 			id: "76A35BBCA4E0CDD9"
 			rewards: [{
 				id: "7B52E86D7D2077D0"
-				item: "society:fish_smoker"
+				item: {
+					components: {
+						"ftbquests:missing_item": "society:fish_smoker"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
 				type: "item"
 			}]
 			shape: "none"
 			tasks: [
 				{
 					id: "1BFE309FC8ED472C"
-					item: "unusualfishmod:raw_blind_sailfin"
+					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_blind_sailfin" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "05CDEA2CB60A8D93"
-					item: "aquaculture:synodontis"
+					item: { components: { "ftbquests:missing_item": "aquaculture:synodontis" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "1A6378D19C79592D"
-					item: "aquaculture:brown_trout"
+					item: { components: { "ftbquests:missing_item": "aquaculture:brown_trout" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "2FD5993F438E8E6B"
-					item: "aquaculture:rainbow_trout"
+					item: { components: { "ftbquests:missing_item": "aquaculture:rainbow_trout" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest76A35BBCA4E0CDD9.title}"
 			x: -0.028571428571424917d
 			y: -1.2714285714285793d
 		}
 		{
-			icon: "supplementaries:present_light_blue"
 			id: "4D00DF575B8FC1B2"
 			rewards: [{
 				id: "16343D44A8CFEED6"
-				item: "vintagedelight:evaporator"
+				item: {
+					components: {
+						"ftbquests:missing_item": "vintagedelight:evaporator"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
 				type: "item"
 			}]
 			shape: "none"
 			tasks: [
 				{
 					id: "5FF4C0CAA1EE6B48"
-					item: "unusualfishmod:raw_drooping_gourami"
+					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_drooping_gourami" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "0C937E96AC7D3693"
-					item: "unusualfishmod:raw_sneep_snorp"
+					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_sneep_snorp" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "4EB716093337FDBD"
-					item: "unusualfishmod:raw_forkfish"
+					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_forkfish" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "4B6B4EB39C6C530C"
-					item: "aquaculture:atlantic_cod"
+					item: { components: { "ftbquests:missing_item": "aquaculture:atlantic_cod" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest4D00DF575B8FC1B2.title}"
 			x: 1.4571428571428555d
 			y: -0.5000000000000071d
 		}
 		{
-			icon: "supplementaries:present_green"
 			id: "610AB8B499859791"
 			rewards: [
 				{
 					id: "7E35B87E8C728142"
-					item: "society:fish_pond"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:fish_pond"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					count: 4
 					id: "03EFDD129AC331F7"
 					item: {
-						Count: 1
+						count: 1
 						id: "supplementaries:jar"
-						tag: {
-							BlockEntityTag: {
-								FluidHolder: {
-									count: 12b
-									id: "moonlight:lava"
-								}
-								Items: [ ]
-							}
-						}
 					}
 					type: "item"
 				}
@@ -167,98 +159,65 @@
 			tasks: [
 				{
 					id: "7A8F2C3A72DFA35B"
-					item: "netherdepthsupgrade:lava_pufferfish"
+					item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:lava_pufferfish" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "75AB6B457288DDE3"
-					item: "netherdepthsupgrade:glowdine"
+					item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:glowdine" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "3930026EAC5B7117"
-					item: "netherdepthsupgrade:searing_cod"
+					item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:searing_cod" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "543787D85D98DB01"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "netherdepthsupgrade:fortress_grouper"
-								}
-								{
-									Count: 1b
-									id: "netherdepthsupgrade:obsidianfish"
-								}
-								{
-									Count: 1b
-									id: "netherdepthsupgrade:wither_bonefish"
-								}
-								{
-									Count: 1b
-									id: "netherdepthsupgrade:eyeball_fish"
-								}
-								{
-									Count: 1b
-									id: "netherdepthsupgrade:magmacubefish"
-								}
-								{
-									Count: 1b
-									id: "netherdepthsupgrade:blazefish"
-								}
-								{
-									Count: 1b
-									id: "netherdepthsupgrade:soulsucker"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.fish_tank.quest610AB8B499859791.task.6068468386258017025.title}"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest610AB8B499859791.title}"
 			x: 2.999999999999993d
 			y: 0.27142857142856514d
 		}
 		{
-			icon: "supplementaries:present_red"
 			id: "3129F3C2D43EE6EE"
 			rewards: [{
 				count: 2
 				id: "258CBA10BD8B2772"
-				item: "crabbersdelight:crab_trap"
+				item: {
+					components: {
+						"ftbquests:missing_item": "crabbersdelight:crab_trap"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
 				type: "item"
 			}]
 			shape: "none"
 			tasks: [
 				{
 					id: "7065B41BA0E27103"
-					item: "crabbersdelight:crab"
+					item: { components: { "ftbquests:missing_item": "crabbersdelight:crab" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "3EA58A0C94A08EB2"
-					item: "crabbersdelight:clawster"
+					item: { components: { "ftbquests:missing_item": "crabbersdelight:clawster" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "66D6CE6B033F361C"
-					item: "crabbersdelight:shrimp"
+					item: { components: { "ftbquests:missing_item": "crabbersdelight:shrimp" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "7C2DC8F3ABAEC892"
-					item: "crabbersdelight:coral_fragments"
+					item: { components: { "ftbquests:missing_item": "crabbersdelight:coral_fragments" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.fish_tank.quest3129F3C2D43EE6EE.title}"
 			x: -1.5428571428571445d
 			y: -0.4714285714285751d
 		}
@@ -270,44 +229,40 @@
 				"03F3D0F74A5BC0C4"
 				"3129F3C2D43EE6EE"
 			]
-			description: ["{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.description1}"]
-			icon: "furniture:iron_fish_tank"
 			id: "469CEB4C8B3C0EA9"
 			rewards: [
 				{
 					id: "5762AA805B709BAB"
-					item: "aquaculture:nether_star_hook"
+					item: {
+						components: {
+							"ftbquests:missing_item": "aquaculture:nether_star_hook"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					id: "15F6440B8123801C"
 					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:fish_tank"
-							}
+						components: {
+							"ftbquests:missing_item": "trofers:large_pillar"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
 			]
 			shape: "none"
-			subtitle: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.subtitle}"
 			tasks: [{
-				icon: "society:furniture_box"
 				id: "46B1148F60C66C53"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.task.5093875259569237075.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.title}"
 			x: -0.028571428571424917d
 			y: 1.0714285714285694d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.fish_tank.subtitle0}"]
-	title: "{ftbquests.chapter.fish_tank.title}"
 }

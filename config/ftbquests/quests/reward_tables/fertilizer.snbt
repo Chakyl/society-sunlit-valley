@@ -3,8 +3,27 @@
 	loot_size: 1
 	order_index: 5
 	rewards: [
-		{ count: 4, item: "dew_drop_farmland_growth:weak_fertilizer" }
-		{ count: 4, item: "dew_drop_farmland_growth:bountiful_fertilizer" }
+		{
+			count: 4
+			id: "776DF911ED78A654"
+			item: {
+				components: {
+					"ftbquests:missing_item": "dew_drop_farmland_growth:weak_fertilizer"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 4
+			id: "39CC1A79ED4927C8"
+			item: {
+				components: {
+					"ftbquests:missing_item": "dew_drop_farmland_growth:bountiful_fertilizer"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
 	]
-	title: "{ftbquests.loot_table.4698371000991631378.title}"
 }

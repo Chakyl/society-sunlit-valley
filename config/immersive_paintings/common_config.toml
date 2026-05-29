@@ -1,0 +1,15 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+testIfSpaceEmpty = false
+paintingsHaveCollision = false
+showOtherPlayersPaintings = true
+automaticImageResizing = false
+uploadPermissionLevel = 0
+maxUserImageWidth = 4096
+maxUserImageHeight = 4096
+maxUserImages = 1000
+minPaintingResolution = 8
+maxPaintingResolution = 256
+maxPacketsPerSecond = 20
+packetSize = 65536
+packetSplitInterval = 250

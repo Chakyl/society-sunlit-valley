@@ -6,5 +6,11 @@
   "logIntervalInMinutes": 600,
   "showSummaryOnDebugScreen": false,
   "memoryUsageWarningPercentage": 90,
-  "debugThreadsStuck": false
+  "debugThreadsStuck": false,
+  "version": 1,
+  "debugNativeImage": false,
+  "disableSearchTree": false,
+  "debugChunkLoading": false,
+  "disableEternalStarlightProgress": false,
+  "skipTickingUnloadedFluxNetworks": false
 }

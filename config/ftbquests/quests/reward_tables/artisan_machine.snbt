@@ -3,9 +3,8 @@
 	loot_size: 1
 	order_index: 1
 	rewards: [
-		{ item: "society:mayonnaise_machine" }
-		{ item: "society:loom" }
-		{ item: "society:cheese_press" }
+		{ id: "089DA9229FD1053C", item: { components: { "ftbquests:missing_item": "society:mayonnaise_machine" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "56D03048BB65BA99", item: { components: { "ftbquests:missing_item": "society:loom" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "41D8EFADB0758027", item: { components: { "ftbquests:missing_item": "society:cheese_press" }, count: 1, id: "ftbquests:missing_item" } }
 	]
-	title: "{ftbquests.loot_table.9002246533416223198.title}"
 }

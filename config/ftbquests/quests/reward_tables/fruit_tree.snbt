@@ -3,12 +3,51 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ count: 2, item: "pamhc2trees:lychee_sapling" }
-		{ count: 2, item: "pamhc2trees:banana_sapling" }
-		{ count: 3, item: "pamhc2trees:apple_sapling" }
-		{ count: 3, item: "pamhc2trees:cherry_sapling" }
-		{ item: "pamhc2trees:mango_sapling" }
-		{ item: "pamhc2trees:peach_sapling" }
+		{
+			count: 2
+			id: "6952CF061FA38A98"
+			item: {
+				components: {
+					"ftbquests:missing_item": "pamhc2trees:lychee_sapling"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 2
+			id: "721294D912E268BF"
+			item: {
+				components: {
+					"ftbquests:missing_item": "pamhc2trees:banana_sapling"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "7A42DFFC07FC7F63"
+			item: {
+				components: {
+					"ftbquests:missing_item": "pamhc2trees:apple_sapling"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 3
+			id: "042485D01FC5E775"
+			item: {
+				components: {
+					"ftbquests:missing_item": "pamhc2trees:cherry_sapling"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{ id: "251FFEFFC8362EF8", item: { components: { "ftbquests:missing_item": "pamhc2trees:mango_sapling" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "1864BF0D16098816", item: { components: { "ftbquests:missing_item": "pamhc2trees:peach_sapling" }, count: 1, id: "ftbquests:missing_item" } }
 	]
-	title: "{ftbquests.loot_table.2467450565259284777.title}"
 }

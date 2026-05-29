@@ -4,11 +4,16 @@ contributorCosmetic: ''
 cosmeticScreenKeybind: true
 globalTooltip: false
 noMicrosoftTelemetry: true
+qol:
+  suppressExperimentalSettingsWarning: false
+  titleScreenNoFade: false
+  hideDataComponentsTooltip: false
+  loadingOverlayNoFade: false
 debug:
+  showTranslatedTagsByDefault: false
+  printDataComponentsWhenCopy: true
   tagsTooltip: false
   debugTooltipMsg: false
   tagsTooltipAppendKeybindHint: true
-  tagsPerPage: 6
-  NBTTooltip: false
   F3CopyInInventory: true
-suppressExperimentalSettingsWarning: true
+  tagsPerPage: 6

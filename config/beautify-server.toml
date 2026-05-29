@@ -1,0 +1,15 @@
+#Settings for the Blinds
+[CATEGORY_BLINDS]
+	#Searches X-Blocks below and X/2 to the sides of the clicked blind for others and opens/closes them too
+	# Default: 6
+	# Range: 0 ~ 100
+	searchRadius = 6
+	#Opens blinds from the topmost blind on if true
+	opensFromRoot = true
+
+#Settings for the Botanist Villager
+[CATEGORY_GENERATION]
+	#Defines the chance of a Botanist Villager House inside a village
+	# Default: 2
+	# Range: > 0
+	botanistSpawnWeight = 2

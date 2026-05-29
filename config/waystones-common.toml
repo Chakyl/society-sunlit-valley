@@ -1,102 +1,35 @@
-
-[xpCost]
-	#Set to true if experience cost should be inverted, meaning the shorter the distance, the more expensive. Can be used to encourage other methods for short-distance travel.
-	inverseXpCost = false
-	#The amount of blocks per xp level requirement. If set to 500, the base xp cost for travelling 1000 blocks will be 2 levels.
-	blocksPerXpLevel = 1000
-	#The minimum base xp cost (may be subceeded by multipliers defined below)
-	minimumBaseXpCost = 0.0
-	#The maximum base xp cost (may be exceeded by multipliers defined below), set to 0 to disable all distance-based XP costs
-	maximumBaseXpCost = 3.0
-	#How much xp is needed per leashed animal to travel with you
-	xpCostPerLeashed = 0
-	#The base xp level cost when travelling between dimensions. Ignores block distance.
-	dimensionalWarpXpCost = 3
-	#The multiplier applied to the base xp cost when teleporting to a global waystone through any method.
-	globalWaystoneXpCostMultiplier = 0.0
-	#The multiplier applied to the base xp cost when teleporting using a Warp Stone item (not the Waystone block, Konstantin)
-	warpStoneXpCostMultiplier = 0.0
-	#The multiplier applied to the base xp cost when teleporting from one waystone to another.
-	waystoneXpCostMultiplier = 0.0
-	#The multiplier applied to the base xp cost when teleporting from one sharestone to another.
-	sharestoneXpCostMultiplier = 0.0
-	#The multiplier applied to the base xp cost when teleporting from a portstone.
-	portstoneXpCostMultiplier = 0.0
-	#The multiplier applied to the base xp cost when teleporting from one warp plate to another.
-	warpPlateXpCostMultiplier = 0.0
-	#The multiplier applied to the base xp cost when teleporting via the inventory button.
-	inventoryButtonXpCostMultiplier = 0.0
-
-[restrictions]
-	#If enabled, only creative players can place, edit or break waystones. This does NOT disable the crafting recipe.
-	restrictToCreative = false
-	#If enabled, only the owner of a waystone (the one who placed it) can rename it.
-	restrictRenameToOwner = false
-	#If enabled, waystones generated in worldgen are unbreakable.
-	generatedWaystonesUnbreakable = true
-	#If enabled, leashed mobs will be teleported with you
-	transportLeashed = true
-	#Whether to take leashed mobs with you when teleporting between dimensions
-	transportLeashedDimensional = true
-	#List of leashed mobs that cannot be taken with you when teleporting
-	leashedDenyList = ["minecraft:wither"]
-	#Set to 'ALLOW' to allow dimensional warp in general. Set to 'GLOBAL_ONLY' to restrict dimensional warp to global waystones. Set to 'DENY' to disallow all dimensional warps.
-	#Allowed Values: ALLOW, GLOBAL_ONLY, DENY
-	dimensionalWarp = "ALLOW"
-	#List of dimensions that players are allowed to warp cross-dimension from and to. If left empty, all dimensions except those in dimensionalWarpDenyList are allowed.
-	dimensionalWarpAllowList = []
-	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.
-	dimensionalWarpDenyList = ["society:skull_cavern"]
-	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
-	allowWaystoneToWaystoneTeleport = true
-	#Set to false to allow non-creative players to make waystones globally activated for all players.
-	globalWaystoneSetupRequiresCreativeMode = true
-
-[cooldowns]
-	#The multiplier applied to the cooldown when teleporting to a global waystone via inventory button or warp stone.
-	globalWaystoneCooldownMultiplier = 1.0
-	#The cooldown between usages of the warp stone in seconds. This is bound to the player, not the item, so multiple warp stones share the same cooldown.
-	warpStoneCooldown = 30
-	#The time in ticks that it takes to use a warp stone. This is the charge-up time when holding right-click.
-	warpStoneUseTime = 32
-	#The time in ticks that it takes to use a warp plate. This is the time the player has to stand on top for.
-	warpPlateUseTime = 20
-	#The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
-	scrollUseTime = 32
-	#The cooldown between usages of the inventory button in seconds.
-	inventoryButtonCooldown = 300
-
 [inventoryButton]
 	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
 	inventoryButton = ""
-	#The x position of the warp button in the inventory.
-	warpButtonX = 58
-	#The y position of the warp button in the inventory.
-	warpButtonY = 60
-	#The y position of the warp button in the creative menu.
-	creativeWarpButtonX = 88
-	#The y position of the warp button in the creative menu.
-	creativeWarpButtonY = 33
+	#The x position of the inventory button in the inventory.
+	inventoryButtonX = 58
+	#The y position of the inventory button in the inventory.
+	inventoryButtonY = 60
+	#The y position of the inventory button in the creative menu.
+	creativeInventoryButtonX = 88
+	#The y position of the inventory button in the creative menu.
+	creativeInventoryButtonY = 33
 
 [worldGen]
-	#Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
-	#Allowed Values: DEFAULT, MOSSY, SANDY, BLACKSTONE, DEEPSLATE, END_STONE, BIOME
-	worldGenStyle = "BIOME"
-	#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
-	frequency = 0
-	#List of dimensions that waystones are allowed to spawn in through world gen. If left empty, all dimensions except those in worldGenDimensionDenyList are used.
-	dimensionAllowList = []
-	#List of dimensions that waystones are not allowed to spawn in through world gen. Only used if worldGenDimensionAllowList is empty.
-	dimensionDenyList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
-	#Set to 'PRESET_FIRST' to first use names from the custom names list. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
+	#Set to 'PRESET_FIRST' to first use names from the nameGenerationPresets. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
 	#Allowed Values: PRESET_FIRST, RANDOM_ONLY, PRESET_ONLY, MIXED
 	nameGenerationMode = "PRESET_FIRST"
+	#Set to REGULAR to have waystones spawn in some villages. Set to FREQUENT to have waystones spawn in most villages. Set to DISABLED to disable waystone generation in villages. Waystones will only spawn in vanilla or supported villages.
+	#Allowed Values: DISABLED, REGULAR, FREQUENT
+	spawnInVillages = "DISABLED"
+	#Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
+	#Allowed Values: DEFAULT, MOSSY, SANDY, BLACKSTONE, DEEPSLATE, END_STONE, BIOME
+	wildWaystoneStyle = "BIOME"
+	#Approximate chunk distance between wild waystones being generated. Set to 0 to disable generation.
+	chunksBetweenWildWaystones = 25
+	#List of dimensions that wild waystones are allowed to spawn in. If left empty, all dimensions except those in wildWaystonesDimensionDenyList will be able to spawn waystones, provided the biomes are in the `has_structure/waystone` tag.
+	wildWaystonesDimensionAllowList = ["minecraft:overworld", "minecraft:the_end", "minecraft:the_nether"]
+	#List of dimensions that wild waystones are not allowed to spawn in, even if the biome is in the `has_structure/waystone` tag. Only used if wildWaystonesDimensionAllowList is empty.
+	wildWaystonesDimensionDenyList = ["minecraft:overworld", "minecraft:the_end", "minecraft:the_nether"]
+	#The template to use when generating new names. Supported placeholders are {Biome} (english biome name) and {MrPork} (the default name generator).
+	nameGenerationTemplate = "{MrPork}"
 	#These names will be used for the PRESET name generation mode. See the nameGenerationMode option for more info.
-	customWaystoneNames = []
-	#Set to true if waystones should be added to the generation of villages. Some villages may still spawn without a waystone.
-	spawnInVillages = false
-	#Ensures that pretty much every village will have a waystone, by spawning it as early as possible. In addition, this means waystones will generally be located in the center of the village.
-	forceSpawnInVillages = false
+	nameGenerationPresets = []
 
 [client]
 	#If enabled, the text overlay on waystones will no longer always render at full brightness.
@@ -104,7 +37,51 @@
 
 [compatibility]
 	#If enabled, JourneyMap waypoints will be created for each activated waystone.
-	displayWaystonesOnJourneyMap = true
+	journeyMap = true
 	#If enabled, JourneyMap waypoints will only be created if the mod 'JourneyMap Integration' is not installed
-	preferJourneyMapIntegration = true
+	preferJourneyMapIntegrationMod = true
+	#If enabled, Waystones will add markers for waystones and sharestones to Dynmap.
+	dynmap = true
 
+[general]
+	#List of waystone origins that should prevent others from editing. PLAYER is special in that it allows only edits by the owner of the waystone.
+	restrictedWaystones = ["PLAYER"]
+	#Set to "GLOBAL" to have newly placed or found waystones be global by default.
+	#Allowed Values: ACTIVATION, GLOBAL, SHARD_ONLY, ORANGE_SHARESTONE, MAGENTA_SHARESTONE, LIGHT_BLUE_SHARESTONE, YELLOW_SHARESTONE, LIME_SHARESTONE, PINK_SHARESTONE, GRAY_SHARESTONE, LIGHT_GRAY_SHARESTONE, CYAN_SHARESTONE, PURPLE_SHARESTONE, BLUE_SHARESTONE, BROWN_SHARESTONE, GREEN_SHARESTONE, RED_SHARESTONE, BLACK_SHARESTONE
+	defaultVisibility = "ACTIVATION"
+	#Add "GLOBAL" to allow every player to create global waystones.
+	allowedVisibilities = []
+	#The time in ticks that it takes to use a warp stone. This is the charge-up time when holding right-click.
+	warpStoneUseTime = 32
+	#The time in ticks that it takes to use a warp plate. This is the time the player has to stand on top for.
+	warpPlateUseTime = 15
+	#The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
+	scrollUseTime = 32
+
+[teleports]
+	#Set to false to simply disable all xp costs. See warpRequirements for more fine-grained control.
+	enableCosts = true
+	#Set to false to simply disable all cooldowns. See warpRequirements for more fine-grained control.
+	enableCooldowns = true
+	#List of warp requirements with comma-separated parameters in parentheses. Conditions can be defined as comma-separated list in square brackets. Will be applied in order.
+	warpRequirements = ["[is_not_interdimensional] scaled_add_xp_cost(distance, 0.01)", "[is_interdimensional] add_xp_cost(27)", "[source_is_warp_plate] multiply_xp_cost(0)", "[target_is_global] multiply_xp_cost(0)", "min_xp_cost(0)", "max_xp_cost(27)", "[source_is_inventory_button] add_cooldown(inventory_button, 300)"]
+	#Set to ENABLED to have nearby pets teleport with you. Set to SAME_DIMENSION to have nearby pets teleport with you only if you're not changing dimensions. Set to DISABLED to disable.
+	#Allowed Values: ENABLED, SAME_DIMENSION, DISABLED
+	transportPets = "DISABLED"
+	#Set to ENABLED to have leashed mobs teleport with you. Set to SAME_DIMENSION to have leashed mobs teleport with you only if you're not changing dimensions. Set to DISABLED to disable.
+	#Allowed Values: ENABLED, SAME_DIMENSION, DISABLED
+	transportLeashed = "ENABLED"
+	#List of entities that cannot be teleported, either as pet, leashed, or on warp plates.
+	entityDenyList = ["minecraft:wither"]
+	#Set to true to enable warp modifier items for applying status effects on teleports.
+	enableModifiers = true
+
+[blueMap]
+	#Controls whether Waystones' BlueMap integration should be loaded
+	enabled = true
+	#If enabled, waystones will be tracked as markers on BlueMap
+	includeWaystones = true
+	#If enabled, sharestones will be tracked as markers on BlueMap.
+	includeSharestones = true
+	#If enabled, undiscovered waystones will be tracked as markers on BlueMap.
+	includeUndiscoveredWaystones = false

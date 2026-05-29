@@ -1,0 +1,67 @@
+{
+    // The version of the config file. Do not change this unless you know what you are doing.
+    "rconfig:version": 0,
+    "rustyBombTerrainDamage": true,
+    /*
+     * Time between brush uses in ticks. Lower values are faster. The vanilla brush has a speed of 10.
+     * Range: 1 - 10
+     */
+    "ironBrushTickRate": 7,
+    // Range: 1 - 10
+    "diamondBrushTickRate": 5,
+    // Range: 1 - 10
+    "netheriteBrushTickRate": 3,
+    "artifactsEnabled": true,
+    "penetratingStrikeEnabled": true,
+    /*
+     * Set to % of damage-reduction from Protection Enchantments that should be ignored.
+     * Range: 0 - 1
+     */
+    "penetratingStrikeIgnorance": 0.33,
+    "soaringWindsEnabled": true,
+    // Range: 0.1 - 3
+    "soaringWindsBoost": 0.75,
+    "tunnelingEnabled": true,
+    // Only mines the Block below if the Tool used is effective for the Block mined (e.g. Shovel on Stone).
+    "tunnelingEffectiveTool": true,
+    /*
+     * The difference of hardness between the two blocks to break that is allowed. Per default, this prevents e.g. mining Obsidian below when mining stone, but allows for ores below to be mined. For reference: Stone has 1.5.
+     * Range: 0 - 10
+     */
+    "tunnelingTolerance": 3.75,
+    "totemsEnabled": true,
+    "radianceTotemEnabled": true,
+    "radianceTotemDamageEnabled": true,
+    /*
+     * Sets the damage in 1/2 hearts that will be dealt to hostile mobs when a damage tick occurs.
+     * Range: 1 - 40
+     */
+    "radianceTotemDamage": 4,
+    /*
+     * Sets the average time between damage ticks of the Radiance Totem in seconds. The totem will still damage mobs randomly, but the average time between damage ticks will be this value.
+     * Range: 1 - 60
+     */
+    "radianceTotemDamageTickAverage": 3,
+    // Range: 1 - 90
+    "radianceTotemRadius": 10,
+    "torrentTotemEnabled": true,
+    // Range: 0.1 - 3
+    "torrentTotemBoost": 1.0,
+    "torrentTotemUpwardsBoost": false,
+    "soulTotemEnabled": true,
+    "growthTotemEnabled": true,
+    // Range: 1 - 50
+    "growthTotemGrowRadius": 5,
+    /*
+     * The growth totem uses the randomTick to determine when it should grow crops. This value determines the chance in % that a random tick actually grows crops to potentially decrease its yield. For example, a 20% chance bonemeals a crop ~10.5 times an hour
+     * Range: 1 - 100
+     */
+    "growthTotemGrowChance": 20,
+    "fossilEffectsEnabled": false,
+    // Range: 10 - 50
+    "fossilFleeRange": 20,
+    "chickenFossilEffectsEnabled": true,
+    "ocelotFossilEffectsEnabled": true,
+    "wolfFossilEffectsEnabled": true,
+    "guardianFossilEffectsEnabled": true
+}

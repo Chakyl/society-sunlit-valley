@@ -1,25 +1,11 @@
-
 #Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
-
-	[types.leaves_type]
 
 		[types.leaves_type.autumnity]
 			maple = true
 			yellow_maple = true
 			orange_maple = true
 			red_maple = true
-
-		[types.leaves_type.vinery]
-			grapevine = true
-			dark_cherry = true
-			apple = true
-
-		[types.leaves_type.beachparty]
-			palm = true
-
-		[types.leaves_type.meadow]
-			pine = true
 
 		[types.leaves_type.atmospheric]
 			rosewood = true
@@ -42,12 +28,6 @@
 			yellow_blossom = true
 			red_blossom = true
 
-		[types.leaves_type.windswept]
-			holly = true
-			chestnut = true
-			pine = true
-			flowering_acacia = true
-
 		[types.leaves_type.cluttered]
 			willow = true
 			flowering_willow = false
@@ -59,13 +39,32 @@
 			fluorescent_maple = false
 			flowering_fluorescent_maple = true
 
-		[types.leaves_type.minecraft]
-			pale_oak = true
+		[types.leaves_type.meadow]
+			pine = true
+			yellow_pine = true
+			alpine_birch = true
 
-		[types.leaves_type.rainbowoaks]
-			rainbow = true
+		[types.leaves_type.culturaldelights]
+			avocado = true
+			fruiting_avocado = true
 
-	[types.wood_type]
+		[types.leaves_type.nomansland]
+			yellow_birch = true
+			autumnal_oak = true
+			pale_cherry = true
+			frosted = true
+			pine = true
+			maple = true
+			red_maple = true
+			walnut = true
+			willow = true
+			apple_fruit = true
+			pear_fruit = true
+
+		[types.leaves_type.vinery]
+			grapevine = true
+			dark_cherry = true
+			apple = true
 
 		[types.wood_type.autumnity]
 			maple = true
@@ -75,15 +74,6 @@
 			ancient = true
 			blossom = true
 
-		[types.wood_type.vinery]
-			dark_cherry = true
-
-		[types.wood_type.beachparty]
-			palm = true
-
-		[types.wood_type.meadow]
-			pine = true
-
 		[types.wood_type.atmospheric]
 			rosewood = true
 			morado = true
@@ -92,18 +82,6 @@
 			laurel = true
 			kousa = true
 			grimwood = true
-
-		[types.wood_type.betterarcheology]
-			rotten = true
-
-		[types.wood_type.botania]
-			livingwood = true
-			dreamwood = true
-
-		[types.wood_type.windswept]
-			holly = true
-			chestnut = true
-			pine = true
 
 		[types.wood_type.cluttered]
 			willow = true
@@ -117,27 +95,30 @@
 			blue_mushroom = false
 			red_mushroom = false
 
-		[types.wood_type.minecraft]
-			pale_oak = true
+		[types.wood_type.meadow]
+			pine = true
 
-	[types.cake]
+		[types.wood_type.nomansland]
+			pine = true
+			maple = true
+			walnut = true
+			willow = true
+
+		[types.wood_type.vinery]
+			dark_cherry = true
 
 		[types.cake.veggiesdelight]
 			carrot_cake = true
 
+		[types.cake.nomansland]
+			fruit_cake = true
+
 #Disables specific entries
 [entries]
-
-	[entries.leaves_type]
 
 		[entries.leaves_type.quark]
 			hedge = false
 			leaf_carpet = true
-
-		[entries.leaves_type.refurbished_furniture]
-			hedge = true
-
-	[entries.wood_type]
 
 		[entries.wood_type.quark]
 			vertical_planks = true
@@ -163,35 +144,10 @@
 		[entries.wood_type.farmersdelight]
 			cabinet = true
 
-		[entries.wood_type.refurbished_furniture]
-			cutting_board = false
-			drawer = true
-			storage_cabinet = true
-			table = true
-			mail_box = true
-			dark_ceiling_fan = false
-			kitchen_sink = true
-			toilet = false
-			storage_jar = false
-			lattice_fence = true
-			basin = false
-			kitchen_drawer = true
-			lattice_fence_gate = true
-			kitchen_cabinetry = true
-			bath = false
-			crate = true
-			desk = true
-			chair = true
-			light_ceiling_fan = false
-			kitchen_storage_cabinet = true
-
 		[entries.wood_type.functionalstorage]
-			1 = true
-			4 = true
-			2 = true
-
-		[entries.wood_type.twigs]
-			table = false
+			1 = false
+			4 = false
+			2 = false
 
 		[entries.wood_type.beautify]
 			trellis = true
@@ -202,3 +158,9 @@
 			short_door = true
 			tall_door = true
 
+		[entries.wood_type.nomansland]
+			bookshelf = true
+			trimmed_planks = true
+
+		[entries.wood_type.mighty_mail]
+			mail_box = true

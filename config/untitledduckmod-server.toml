@@ -1,0 +1,60 @@
+#Untitled Duck Mod
+[duck]
+	#The spawn weight of the duck mob.The higher it is, the higher are the spawn rates. See https://minecraft.fandom.com/wiki/Spawn#Animals for an explanation.
+	# Default: 6
+	# Range: > 0
+	duck_spawn_weight = 6
+	#The minimum number of ducks that should be spawned at once in a group.
+	# Default: 2
+	# Range: > 0
+	duck_min_group_size = 2
+	#The maximum number of ducks that should be spawned at once in a group.
+	# Default: 4
+	# Range: > 0
+	duck_max_group_size = 4
+	#Chance of ducks successfully fishing.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	duck_fishing_change = 0.5
+	#No more following behavior when tamed.
+	duck_tamed_no_follow = false
+	#Baby model random size (0.25-0.7).
+	duck_baby_random_size = true
+
+[goose]
+	#The spawn weight of the goose mob.The higher it is, the higher are the spawn rates. See https://minecraft.fandom.com/wiki/Spawn#Animals for an explanation.
+	# Default: 4
+	# Range: > 0
+	goose_spawn_weight = 4
+	#The minimum number of geese that should be spawned at once in a group.
+	# Default: 2
+	# Range: > 0
+	goose_min_group_size = 2
+	#The maximum number of geese that should be spawned at once in a group.
+	# Default: 4
+	# Range: > 0
+	goose_max_group_size = 4
+	#No more following behavior when tamed.
+	goose_tamed_no_follow = false
+	#Baby model random size (0.25-0.7).
+	goose_baby_random_size = true
+
+[common]
+	#Enable/disable automatic force-eating for duck/goose
+	enable_force_eat = false
+	#Min tick before duck/goose auto-eat held food
+	# Default: 500
+	# Range: > 0
+	force_eat_random_min_tick = 500
+	#Max tick before duck/goose auto-eat held food
+	# Default: 1000
+	# Range: > 0
+	force_eat_random_max_tick = 1000
+	#Food can heal the health value of duck & goose
+	# Default: 0.5
+	# Range: 0.0 ~ 100.0
+	food_healing_value = 0.5
+
+[intimidation]
+	#Intimidate effects don't work on mobs in the list
+	intimidation_blacklist = ["modid:test"]

@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "minerals"
 	group: "15230846E14B6926"
-	icon: "society:fire_opal"
 	id: "67332F7DBC6DB88B"
 	images: [
 		{
@@ -546,7 +545,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5D6A01B3BDF39FDD"
-				item: "society:limestone_pebble"
+				item: { count: 1, id: "society:limestone_pebble" }
 				type: "item"
 			}]
 			x: -0.2648809523809348d
@@ -557,7 +556,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5A9BE53357061652"
-				item: "society:mudstone"
+				item: { count: 1, id: "society:mudstone" }
 				type: "item"
 			}]
 			x: 1.2351190476190652d
@@ -568,7 +567,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4E2A6EE3D48E264C"
-				item: "society:earth_crystal"
+				item: { components: { "ftbquests:missing_item": "society:earth_crystal" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.735119047619065d
@@ -579,7 +578,7 @@
 			shape: "none"
 			tasks: [{
 				id: "280B73ACFD18F073"
-				item: "society:sandstone_slate"
+				item: { count: 1, id: "society:sandstone_slate" }
 				type: "item"
 			}]
 			x: 4.235119047619065d
@@ -590,7 +589,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1E748C561D2C1D31"
-				item: "society:calcite_gem"
+				item: { count: 1, id: "society:calcite_gem" }
 				type: "item"
 			}]
 			x: 5.735119047619065d
@@ -601,7 +600,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1F45BFFFFCF7091E"
-				item: "society:orpiment"
+				item: { count: 1, id: "society:orpiment" }
 				type: "item"
 			}]
 			x: 7.235119047619065d
@@ -612,7 +611,7 @@
 			shape: "none"
 			tasks: [{
 				id: "481977408882DA0F"
-				item: "society:petrified_slime"
+				item: { count: 1, id: "society:petrified_slime" }
 				type: "item"
 			}]
 			x: -0.2648809523809348d
@@ -623,7 +622,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3780762A3135FCEA"
-				item: "society:nekoite"
+				item: { count: 1, id: "society:nekoite" }
 				type: "item"
 			}]
 			x: 1.2351190476190652d
@@ -634,7 +633,7 @@
 			shape: "none"
 			tasks: [{
 				id: "57C58E466549EBFF"
-				item: "society:slate"
+				item: { count: 1, id: "society:slate" }
 				type: "item"
 			}]
 			x: 2.735119047619065d
@@ -645,7 +644,7 @@
 			shape: "none"
 			tasks: [{
 				id: "21BBFF91481865EA"
-				item: "society:celestine"
+				item: { count: 1, id: "society:celestine" }
 				type: "item"
 			}]
 			x: 4.235119047619065d
@@ -656,7 +655,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4FABFB9B2FC1BB64"
-				item: "society:allanite"
+				item: { count: 1, id: "society:allanite" }
 				type: "item"
 			}]
 			x: 5.735119047619065d
@@ -667,7 +666,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0F669004B3781B2C"
-				item: "society:jamborite"
+				item: { count: 1, id: "society:jamborite" }
 				type: "item"
 			}]
 			x: 7.235119047619065d
@@ -678,7 +677,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0A31CD20968FDF29"
-				item: "society:granite_slate"
+				item: { count: 1, id: "society:granite_slate" }
 				type: "item"
 			}]
 			x: -0.2648809523809348d
@@ -689,7 +688,7 @@
 			shape: "none"
 			tasks: [{
 				id: "6B83A6041E27931E"
-				item: "society:thunder_egg"
+				item: { count: 1, id: "society:thunder_egg" }
 				type: "item"
 			}]
 			x: 1.2351190476190652d
@@ -700,7 +699,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0BEF091C13238207"
-				item: "society:malachite"
+				item: { count: 1, id: "society:malachite" }
 				type: "item"
 			}]
 			x: 2.735119047619065d
@@ -711,7 +710,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2D8161B3F57E5C2F"
-				item: "society:jagoite"
+				item: { count: 1, id: "society:jagoite" }
 				type: "item"
 			}]
 			x: 4.235119047619065d
@@ -722,7 +721,7 @@
 			shape: "none"
 			tasks: [{
 				id: "41467F7314FE758E"
-				item: "society:esperite"
+				item: { count: 1, id: "society:esperite" }
 				type: "item"
 			}]
 			x: 6.187500000000021d
@@ -733,7 +732,7 @@
 			shape: "none"
 			tasks: [{
 				id: "02866B4B8A18002C"
-				item: "society:marble"
+				item: { count: 1, id: "society:marble" }
 				type: "item"
 			}]
 			x: 7.687500000000021d
@@ -744,7 +743,7 @@
 			shape: "none"
 			tasks: [{
 				id: "72E19C8FE73BB9ED"
-				item: "society:opal"
+				item: { count: 1, id: "society:opal" }
 				type: "item"
 			}]
 			x: 9.187500000000021d
@@ -755,7 +754,7 @@
 			shape: "none"
 			tasks: [{
 				id: "47AEE45113840657"
-				item: "society:hematite"
+				item: { count: 1, id: "society:hematite" }
 				type: "item"
 			}]
 			x: 10.687500000000021d
@@ -766,7 +765,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1BD21DD89371E4E1"
-				item: "society:geminite"
+				item: { count: 1, id: "society:geminite" }
 				type: "item"
 			}]
 			x: 12.187500000000021d
@@ -777,7 +776,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0DE6AC28FBF620DC"
-				item: "society:soapstone"
+				item: { count: 1, id: "society:soapstone" }
 				type: "item"
 			}]
 			x: 4.687500000000021d
@@ -788,7 +787,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1F006877E86E4A03"
-				item: "society:pyrite"
+				item: { count: 1, id: "society:pyrite" }
 				type: "item"
 			}]
 			x: 6.187500000000021d
@@ -799,7 +798,7 @@
 			shape: "none"
 			tasks: [{
 				id: "6356E45C40707486"
-				item: "society:lunarite"
+				item: { count: 1, id: "society:lunarite" }
 				type: "item"
 			}]
 			x: 7.687500000000021d
@@ -810,7 +809,7 @@
 			shape: "none"
 			tasks: [{
 				id: "513E86B2A95B3596"
-				item: "society:ghost_crystal"
+				item: { count: 1, id: "society:ghost_crystal" }
 				type: "item"
 			}]
 			x: 9.187500000000021d
@@ -821,7 +820,7 @@
 			shape: "none"
 			tasks: [{
 				id: "131D64F375656CA7"
-				item: "society:fluorapatite"
+				item: { count: 1, id: "society:fluorapatite" }
 				type: "item"
 			}]
 			x: 10.687500000000021d
@@ -832,7 +831,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7A323E6B48B55189"
-				item: "society:ocean_stone"
+				item: { count: 1, id: "society:ocean_stone" }
 				type: "item"
 			}]
 			x: 12.187500000000021d
@@ -843,7 +842,7 @@
 			shape: "none"
 			tasks: [{
 				id: "44B4841539FC2537"
-				item: "society:aerinite"
+				item: { count: 1, id: "society:aerinite" }
 				type: "item"
 			}]
 			x: 4.687500000000021d
@@ -854,7 +853,7 @@
 			shape: "none"
 			tasks: [{
 				id: "55CA11E15F658D21"
-				item: "society:fairy_stone"
+				item: { count: 1, id: "society:fairy_stone" }
 				type: "item"
 			}]
 			x: 6.187500000000021d
@@ -865,7 +864,7 @@
 			shape: "none"
 			tasks: [{
 				id: "408B95AE8BF7541A"
-				item: "society:kyanite"
+				item: { count: 1, id: "society:kyanite" }
 				type: "item"
 			}]
 			x: 7.687500000000021d
@@ -876,7 +875,7 @@
 			shape: "none"
 			tasks: [{
 				id: "497EAEE85B9BC8B4"
-				item: "society:baryte"
+				item: { count: 1, id: "society:baryte" }
 				type: "item"
 			}]
 			x: -0.3601190476190297d
@@ -887,7 +886,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5E1BF3B6BAA63ECB"
-				item: "society:fire_quartz"
+				item: { components: { "ftbquests:missing_item": "society:fire_quartz" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.1398809523809703d
@@ -898,7 +897,7 @@
 			shape: "none"
 			tasks: [{
 				id: "539C3202D1BB2550"
-				item: "society:jasper"
+				item: { count: 1, id: "society:jasper" }
 				type: "item"
 			}]
 			x: 2.6398809523809703d
@@ -909,7 +908,7 @@
 			shape: "none"
 			tasks: [{
 				id: "67AB412535162061"
-				item: "society:basalt_shard"
+				item: { count: 1, id: "society:basalt_shard" }
 				type: "item"
 			}]
 			x: 4.13988095238097d
@@ -920,7 +919,7 @@
 			shape: "none"
 			tasks: [{
 				id: "6FF4064E94F45097"
-				item: "society:lemon_stone"
+				item: { count: 1, id: "society:lemon_stone" }
 				type: "item"
 			}]
 			x: 5.63988095238097d
@@ -931,7 +930,7 @@
 			shape: "none"
 			tasks: [{
 				id: "70C019265F00734C"
-				item: "society:pure_obsidian"
+				item: { count: 1, id: "society:pure_obsidian" }
 				type: "item"
 			}]
 			x: 7.13988095238097d
@@ -942,7 +941,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7851D5EAA9570DBB"
-				item: "society:dolomite"
+				item: { count: 1, id: "society:dolomite" }
 				type: "item"
 			}]
 			x: 1.1398809523809703d
@@ -953,7 +952,7 @@
 			shape: "none"
 			tasks: [{
 				id: "741D8B048C6A2819"
-				item: "society:tigerseye"
+				item: { count: 1, id: "society:tigerseye" }
 				type: "item"
 			}]
 			x: -0.3601190476190297d
@@ -964,7 +963,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7F58C28C9FA4817F"
-				item: "society:bixbyite"
+				item: { count: 1, id: "society:bixbyite" }
 				type: "item"
 			}]
 			x: 2.6398809523809703d
@@ -975,7 +974,7 @@
 			shape: "none"
 			tasks: [{
 				id: "73B36FF14B0C2352"
-				item: "society:fire_opal"
+				item: { count: 1, id: "society:fire_opal" }
 				type: "item"
 			}]
 			x: 4.13988095238097d
@@ -986,7 +985,7 @@
 			shape: "none"
 			tasks: [{
 				id: "679F24B5EDACC08D"
-				item: "society:neptunite"
+				item: { count: 1, id: "society:neptunite" }
 				type: "item"
 			}]
 			x: 5.63988095238097d
@@ -997,7 +996,7 @@
 			shape: "none"
 			tasks: [{
 				id: "372999838906BAD4"
-				item: "society:star_shards"
+				item: { count: 1, id: "society:star_shards" }
 				type: "item"
 			}]
 			x: 7.13988095238097d
@@ -1008,7 +1007,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4893F7ED702F272B"
-				item: "society:helvite"
+				item: { count: 1, id: "society:helvite" }
 				type: "item"
 			}]
 			x: -0.3601190476190297d
@@ -1019,7 +1018,7 @@
 			shape: "none"
 			tasks: [{
 				id: "55CA10B7AAF3630C"
-				item: "society:frozen_tear"
+				item: { count: 1, id: "society:frozen_tear" }
 				type: "item"
 			}]
 			x: 4.687500000000021d
@@ -1045,24 +1044,23 @@
 				"3A90CE8E42E5FCA5"
 			]
 			hide_dependency_lines: true
-			icon: "society:geode"
 			id: "1B75D6174593D5E5"
 			rewards: [{
 				id: "2EBFB7C4335F509E"
-				item: "society:furniture_box"
+				item: {
+					count: 1
+					id: "society:furniture_box"
+				}
 				type: "item"
 			}]
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				icon: "society:geode"
 				id: "1FD6880BC6E90A7E"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.minerals.quest1B75D6174593D5E5.task.2294170644355025534.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.minerals.quest1B75D6174593D5E5.title}"
 			x: 8.57015306122451d
 			y: -1.4449404761905171d
 		}
@@ -1083,25 +1081,24 @@
 				"25074546C0EC6913"
 			]
 			hide_dependency_lines: true
-			icon: "society:magma_geode"
 			id: "378EF12075D01F1C"
 			rewards: [{
 				count: 5
 				id: "7E16A488A0047023"
-				item: "society:furniture_box"
+				item: {
+					count: 1
+					id: "society:furniture_box"
+				}
 				type: "item"
 			}]
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				icon: "society:magma_geode"
 				id: "7BA4C34E2910EBC5"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.minerals.quest378EF12075D01F1C.task.8909460703309523909.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.minerals.quest378EF12075D01F1C.title}"
 			x: 8.577721088435354d
 			y: 8.591964285714255d
 		}
@@ -1124,25 +1121,24 @@
 				"63433DB8A0DAB49F"
 			]
 			hide_dependency_lines: true
-			icon: "society:frozen_geode"
 			id: "329C4304D2EDEE72"
 			rewards: [{
 				count: 2
 				id: "6C54749D381B4273"
-				item: "society:furniture_box"
+				item: {
+					count: 1
+					id: "society:furniture_box"
+				}
 				type: "item"
 			}]
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				icon: "society:frozen_geode"
 				id: "2313FD2F31AC09D4"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.minerals.quest329C4304D2EDEE72.task.2527642195023628756.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.minerals.quest329C4304D2EDEE72.title}"
 			x: 13.767431972789133d
 			y: 3.779549319727849d
 		}
@@ -1154,43 +1150,56 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1
-				id: "trofers:large_pillar"
-				tag: {
-					BlockEntityTag: {
-						Trophy: "trofers:minerals"
-					}
+				components: {
+					"ftbquests:missing_item": "trofers:large_pillar"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "7BA3A7D6D37CFA69"
 			rewards: [
 				{
 					count: 4
 					id: "165F920C2B6F9F23"
-					item: "society:geode_node"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:geode_node"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					count: 2
 					id: "726D0E68F0F40E80"
-					item: "society:magma_geode_node"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:magma_geode_node"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					id: "3A4F4D94D02D9375"
-					item: "society:omni_geode_node"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:omni_geode_node"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					id: "6184D21F24D7A1D1"
 					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:minerals"
-							}
+						components: {
+							"ftbquests:missing_item": "trofers:large_pillar"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
@@ -1198,17 +1207,13 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
-				icon: "society:omni_geode"
 				id: "445CBBEAFC66083B"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.minerals.quest7BA3A7D6D37CFA69.task.4926018710367766587.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.minerals.quest7BA3A7D6D37CFA69.title}"
 			x: 0.644047619047619d
 			y: 1.85510204081627d
 		}
 	]
-	title: "{ftbquests.chapter.minerals.title}"
 }

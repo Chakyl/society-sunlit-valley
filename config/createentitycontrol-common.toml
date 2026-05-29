@@ -1,4 +1,3 @@
-
 [blocks_limit]
 	#--------------------------------------------------------------------------
 	#The count limit of blocks that are used in block entities. The first para is count limit and the second para is stabilize para.
@@ -11,7 +10,8 @@
 	#The time record list refresh default 3600s
 	#If a structure is ignored at first time and if the second time less than 3600s
 	#The structure will controlled by this mod while more than 3600s will controlled by Create.
-	#Range: 0 ~ 36000
+	# Default: 3600
+	# Range: 0 ~ 36000
 	"keep structure refresh time(s)" = 3600
 	#--------------------------------------------------------------------------
 	#Whether to log the block entity problem if it can't turned into block entities.
@@ -23,40 +23,48 @@
 	#10x of destroy speed | If you set 14 and will calculate 1.4 as destroy speed 
 	#Exp: obsidian is 40 and 400 in this case, dirt is 0.5 and 5 set in this case. 
 	#default value is suggested because dirt and sand will drop but stone will stay
-	#Range: > 0
+	# Default: 14
+	# Range: > 0
 	"10% of destroy speed" = 14
 	#--------------------------------------------------------------------------
 	#Dedicated max speed for Mechanical Bearing rotation.
 	#0 disables this cap. If Create provides 256 and you set 128, the bearing rotates at 128.
 	#If you set a value higher than the original Create speed, the original speed is kept.
-	#Range: > 0
+	# Default: 128
+	# Range: > 0
 	"mechanical bearing gear max speed" = 128
 	#--------------------------------------------------------------------------
 	#The longest XZ distance of block entity | If set 20: 17*42*20 is allowed but 20*42*21 is forbidden.
-	#Range: 3 ~ 500
+	# Default: 40
+	# Range: 3 ~ 500
 	"block entity max length XZ" = 40
 	#--------------------------------------------------------------------------
 	#The longest Y  distance of block entity | If set 20: 42*14*42 is allowed but 42*24*42 is forbidden.
-	#Range: 3 ~ 500
+	# Default: 60
+	# Range: 3 ~ 500
 	"block entity max length Y" = 60
 	#--------------------------------------------------------------------------
 	#The scan radius used by contraption cluster detection.
 	#Only contraptions within this radius will be merged into one cluster for cluster-level limit checks.
-	#Range: 1.0 ~ 512.0
+	# Default: 96.0
+	# Range: 1.0 ~ 512.0
 	"contraption cluster scan radius" = 96.0
 	#--------------------------------------------------------------------------
 	#The local notify radius for nearby actionbar hints and overlay sync.
-	#Range: 1.0 ~ 512.0
+	# Default: 96.0
+	# Range: 1.0 ~ 512.0
 	"contraption cluster local notify radius" = 96.0
 	#--------------------------------------------------------------------------
 	#The search radius used to list nearby players inside the global cluster-blocked message.
 	#This does not change who receives the global message.
-	#Range: 1.0 ~ 512.0
+	# Default: 96.0
+	# Range: 1.0 ~ 512.0
 	"contraption cluster global nearby players radius" = 96.0
 	#--------------------------------------------------------------------------
 	#Multiplier applied to cluster-level aggregated block limits from blocks_limit.
 	#Single-contraption limits stay unchanged; only the cluster total uses this multiplier.
-	#Range: 0.0 ~ 64.0
+	# Default: 1.5
+	# Range: 0.0 ~ 64.0
 	"contraption cluster block limit multiplier" = 1.5
 	#--------------------------------------------------------------------------
 	#Enable chained cluster detection for nearby multiple contraptions.
@@ -65,15 +73,17 @@
 	#--------------------------------------------------------------------------
 	#How often contraption cluster validation runs, in seconds.
 	#This controls the periodic cluster scan cooldown added for performance control.
-	#Range: 1 ~ 10
+	# Default: 1
+	# Range: 1 ~ 10
 	"contraption cluster scan interval seconds" = 1
 	#--------------------------------------------------------------------------
 	#Cooldown for global cluster-blocked chat notifications, in minutes.
-	#Range: 1 ~ 60
+	# Default: 5
+	# Range: 1 ~ 60
 	"contraption cluster global notify cooldown minutes" = 5
 	#--------------------------------------------------------------------------
 	#A list of blocks can't be moved and change into block entities.
-	blocks_unmoved = ["botania:mana_spreader", "botania:redstone_spreader", "botania:elven_spreader", "botania:gaia_spreader", "create:mechanical_crafter", "supplementaries:notice_board", "minecraft:cobblestone", "minecraft:stone", "minecraft:deepslate", "create:belt", "create:white_toolbox", "create:orange_toolbox", "create:magenta_toolbox", "create:yellow_toolbox", "create:lime_toolbox", "create:brown_toolbox", "create:pink_toolbox", "create:gray_toolbox", "create:light_gray_toolbox", "create:light_blue_toolbox", "create:blue_toolbox", "create:purple_toolbox", "create:cyan_toolbox", "create:green_toolbox", "create:red_toolbox", "create:black_toolbox", "minecraft:deepslate", "minecraft:stone", "minecraft:cobblestone", "create:belt", "create:mechanical_crafter", "waterframes:tv_box", "waterframes:big_tv", "waterframes:tv", "waterframes:frame", "waterframes:projector"]
+	blocks_unmoved = ["create:mechanical_crafter", "supplementaries:notice_board", "minecraft:cobblestone", "minecraft:stone", "minecraft:deepslate", "create:belt", "create:white_toolbox", "create:orange_toolbox", "create:magenta_toolbox", "create:yellow_toolbox", "create:lime_toolbox", "create:brown_toolbox", "create:pink_toolbox", "create:gray_toolbox", "create:light_gray_toolbox", "create:light_blue_toolbox", "create:blue_toolbox", "create:purple_toolbox", "create:cyan_toolbox", "create:green_toolbox", "create:red_toolbox", "create:black_toolbox", "minecraft:deepslate", "minecraft:stone", "minecraft:cobblestone", "create:belt", "create:mechanical_crafter"]
 	#--------------------------------------------------------------------------
 	#A list of blocks can't be crushed by block entities. 
 	#If you squeeze a stone with dirt and stone in this list the dirt will drop while stone leave!
@@ -98,6 +108,6 @@
 	#--------------------------------------------------------------------------
 	#The max limit of stabilize para. One normal block have 100 default stabilize count.
 	#Set depend on storage box can avoid block entities NBT overflow.
-	#Range: > 0
+	# Default: 204800
+	# Range: > 0
 	"block entity max stabilize para" = 204800
-

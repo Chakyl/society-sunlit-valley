@@ -15,6 +15,6 @@ editingMode = false
 	indicatorType = "TEXTURE"
 	#.
 	#Change the size of the Indicator by this multiplier
-	#Range: 0.0 ~ 3.4028234663852886E38
+	# Default: 1.0
+	# Range: 0.0 ~ 3.4028234663852886E38
 	indicatorScale = 1.0
-

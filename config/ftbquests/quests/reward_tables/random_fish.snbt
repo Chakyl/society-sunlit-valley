@@ -3,13 +3,12 @@
 	loot_size: 1
 	order_index: 2
 	rewards: [
-		{ item: "aquaculture:pollock" }
-		{ item: "aquaculture:brown_trout" }
-		{ item: "aquaculture:synodontis" }
-		{ item: "aquaculture:carp" }
-		{ item: "aquaculture:tuna" }
-		{ item: "aquaculture:perch" }
-		{ item: "aquaculture:atlantic_cod" }
+		{ id: "31B5FD6C51A42AE1", item: { components: { "ftbquests:missing_item": "aquaculture:pollock" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "29BD1172007CEE99", item: { components: { "ftbquests:missing_item": "aquaculture:brown_trout" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "6F317E3572E4EFF7", item: { components: { "ftbquests:missing_item": "aquaculture:synodontis" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "1DE75117D5A99927", item: { components: { "ftbquests:missing_item": "aquaculture:carp" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "57F6C6D8BAEF4D4D", item: { components: { "ftbquests:missing_item": "aquaculture:tuna" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "353559B1219C16F5", item: { components: { "ftbquests:missing_item": "aquaculture:perch" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "2D2AE072C066590C", item: { components: { "ftbquests:missing_item": "aquaculture:atlantic_cod" }, count: 1, id: "ftbquests:missing_item" } }
 	]
-	title: "{ftbquests.loot_table.1049909560465349558.title}"
 }

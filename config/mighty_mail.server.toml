@@ -1,0 +1,34 @@
+# The maximum amount of mailboxes a player is allowed to register/own.
+# Valid range: 1 to 2147483647 (inclusive)
+maxMailboxesPerPlayer = 16
+# The maximum amount of items that can be queued for delivery for a mail box
+# Valid range: 1 to 6 (inclusive)
+mailboxInventoryRows = 1
+# The maximum amount of items that can be queued for delivery for a mail box
+# Valid range: 0 to 256 (inclusive)
+mailQueueSize = 18
+# If enabled, this will ban items with an inventory (like a Shulker Box) being sent through
+# a Post Box. This prevents players from creating massive NBT on a single item, which can
+# cause issues for your server/world save.
+# Valid values: true, false
+banSendingItemsWithInventories = true
+# Prevents items contained in this list from being sent through a Post Box.
+# An example of how the list is defined:
+# bannedItems = [
+#     "minecraft:water_bucket",
+#     "minecraft:diamond",
+#     "mighty_mail:mailbox"
+#     ...
+# ]
+# ^ Note: This is just an example. Write your list below.
+bannedItems = []
+# A list of dimensions you are allowed to place mailboxes. An empty list means that
+# mailboxes can be placed in any dimension.
+# An example of how the list is defined:
+# allowedDimensions = [
+#     "minecraft:overworld",
+#     "minecraft:the_nether",
+#     ...
+# ]
+# ^ Note: This is just an example. Write your list below.
+allowedDimensions = []

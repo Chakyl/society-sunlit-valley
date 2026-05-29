@@ -1,0 +1,182 @@
+#How many blocks should the Block Destabilizer be able to drop?
+# Default: 50
+# Range: > 1
+blockDestabilizerLimit = 50
+#What is the maximum Levenshtein distance allowed when searching for a Floo Fireplace by name?
+# Default: 2
+# Range: > 0
+flooNameMaxDistance = 2
+#Should the Block Mover try to vaporize fluids (un-water-logging a slab when moved to the Nether, etc), or should it just refuse to move the block?
+blockMoverTryVaporizeFluid = true
+#How far should the Portable Ender Bridge be able to look for an Ender Anchor?
+# Default: 300
+# Range: > 1
+portableEnderBridgeRange = 300
+#How many entities should the Summoning Pendulum be able to store?
+# Default: 5
+# Range: > 1
+summoningPendulumCapacity = 5
+#How many unique blocks should the Block Replacer be able to store?
+# Default: 9
+# Range: > 1
+blockReplacerUniqueBlocks = 9
+#The radius around the player to check for blocks with the Divining Rod
+# Default: 20
+# Range: 1 ~ 100
+diviningRodCheckRadius = 20
+#What chunk radius should the Rain Shield have? (0 means only the chunk the Rain Shield is in)
+# Default: 5
+# Range: > 0
+rainShieldChunkRadius = 5
+#What chunk radius should the Slime Cube have? (0 means only the chunk the Slime Cube is in)
+# Default: 0
+# Range: > 0
+slimeCubeChunkRadius = 0
+#What chunk radius should the Peace Candle have? (0 means only the chunk the Peace Candle is in)
+# Default: 1
+# Range: > 0
+peaceCandleChunkRadius = 1
+#What radius should the Nature Core replace blocks in?
+# Default: 10
+# Range: > 1
+natureCoreReplaceRadius = 10
+#What is the maximum radius that the Nature Core can plant saplings in?
+# Default: 16
+# Range: > 1
+natureCorePlantSaplingRadius = 16
+#What radius should the Nature Core apply bone meal to crops in?
+# Default: 25
+# Range: > 1
+natureCoreBoneMealCropRadius = 25
+#What radius should the Nature Core spawn animals in?
+# Default: 8.0
+# Range: 1.0 ~ 128.0
+natureCoreSpawnAnimalRadius = 8.0
+#How many blocks should the Escape Rope check before giving up?
+#
+#0 means no limit
+# Default: 0
+# Range: > 0
+escapeRopeMaxBlocks = 0
+#How many blocks should the Escape Rope check each tick?
+# Default: 250
+# Range: > 1
+escapeRopeBlocksPerTick = 250
+#Should the Block Teleporter be able to teleport blocks across dimensions?
+blockTeleporterCrossDimension = false
+#How much fluid should the Pitcher Plant fill adjacent tanks on a random tick?
+# Default: 100000
+# Range: > 0
+pitcherPlantTickFillAmount = 100000
+#How much fluid should the Pitcher Plant fill adjacent tanks when bone mealed?
+# Default: 100000
+# Range: > 0
+pitcherPlantBoneMealFillAmount = 100000
+#How much fluid should the Pitcher Plant fill a container clicked onto it?
+# Default: 100000
+# Range: > 1
+pitcherPlantUseFillAmount = 100000
+#How much fluid should the Pitcher Plant allow to be drained by pipes per tick?
+# Default: 100000
+# Range: > 1
+pitcherPlantPipeDrainRate = 100000
+
+[biome_painter]
+	#The radius that the Biome Painter will affect. 0 is just the targeted block, 1 is a 3x3x3 area, etc.
+	# Default: 2
+	# Range: 0 ~ 100
+	biomePainterRadius = 2
+	#The horizontal that you can see and paint biomes from.
+	# Default: 10
+	# Range: 1 ~ 100
+	biomePainterViewHorizontalRadius = 10
+	#The vertical that you can see and paint biomes from.
+	# Default: 5
+	# Range: 1 ~ 100
+	biomePainterViewVerticalRadius = 5
+
+[spectre]
+	#What is the maximum energy that a Spectre Energy network can store?
+	# Default: 1000000
+	# Range: > 1
+	capacity = 1000000
+	#How much energy should a Basic Spectre Coil transfer per tick?
+	# Default: 1024
+	# Range: > 1
+	basicRate = 1024
+	#How much energy should a Redstone Spectre Coil transfer per tick?
+	# Default: 4096
+	# Range: > 1
+	redstoneRate = 4096
+	#How much energy should an Ender Spectre Coil transfer per tick?
+	# Default: 20480
+	# Range: > 1
+	enderRate = 20480
+	#How much energy should a Number Spectre Coil generate per tick?
+	# Default: 128
+	# Range: > 1
+	numberRate = 128
+	#How much energy should a Genesis Spectre Coil generate per tick?
+	# Default: 10000000
+	# Range: > 1
+	genesisRate = 10000000
+	#How fast should the Basic Spectre Charger charge items?
+	# Default: 1024
+	# Range: > 1
+	chargerBasic = 1024
+	#How fast should the Redstone Spectre Charger charge items?
+	# Default: 4096
+	# Range: > 1
+	chargerRedstone = 4096
+	#How fast should the Ender Spectre Charger charge items?
+	# Default: 20480
+	# Range: > 1
+	chargerEnder = 20480
+	#How fast should the Genesis Spectre Charger charge items?
+	# Default: 2147483647
+	# Range: > 1
+	chargerGenesis = 2147483647
+	#What is the chance that the Spectre Imbue will cancel incoming damage?
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	imbueProcChance = 0.1
+	#How long should a Spirit last before it despawns? (in ticks)
+	# Default: 400
+	# Range: > 1
+	spiritMaxAge = 400
+	#What is the base chance of a Spirit spawning when an entity dies?
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	spiritBaseSpawnChance = 0.01
+	#How much is the Spirit spawn chance increased if the Ender Dragon has been killed?
+	# Default: 0.07
+	# Range: 0.0 ~ 1.0
+	spiritSpawnDragonKilledBonus = 0.07
+	#How much is the Spirit spawn chance increased if it's a full moon?
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	spiritSpawnFullMoonBonus = 0.02
+
+[biome_radar]
+	#The radius that the Biome Radar will search for the selected biome.
+	# Default: 6400
+	# Range: 1 ~ 10000
+	biomeRadarSearchRadius = 6400
+	#The horizontal step size that the Biome Radar will use when searching.
+	# Default: 32
+	# Range: 1 ~ 100
+	biomeRadarHorizontalStep = 32
+	#The vertical step size that the Biome Radar will use when searching.
+	# Default: 64
+	# Range: 1 ~ 100
+	biomeRadarVerticalStep = 64
+
+[trigger_glass]
+	#How far should the Trigger Glass effect propagate? (in blocks)
+	# Default: 20
+	# Range: > 1
+	triggerGlassRange = 20
+	#How long should the Trigger Glass remain non-solid? (in ticks)
+	# Default: 60
+	# Range: > 1
+	triggerGlassDuration = 60

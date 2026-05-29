@@ -1,0 +1,6 @@
+#Allow level increases for spells with a max. level of 1
+allow_max_level_one_increase = false
+#Innate eldritch spells will be unlocked by default if enabled
+innate_unlocks_eldritch = false
+#If enabled innate spells won't be added to the selection if an equally or more powerful spell of the same type is already present
+skip_innate = false

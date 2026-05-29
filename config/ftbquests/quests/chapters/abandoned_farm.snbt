@@ -7,7 +7,6 @@
 	group: "106AD9AA3ADDE3AE"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
-	icon: "farm_and_charm:supply_cart"
 	id: "7C65158A3343D7FA"
 	images: [{
 		height: 10.0d
@@ -21,18 +20,12 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.description1}"]
-			icon: "supplementaries:present_green"
 			id: "661A3A466ABF29BA"
-			min_required_tasks: 6
 			rewards: [{
 				id: "23C19AD4A368AA0F"
 				item: {
-					Count: 1
+					count: 1
 					id: "minecraft:elytra"
-					tag: {
-						Damage: 0
-					}
 				}
 				type: "item"
 			}]
@@ -40,137 +33,102 @@
 			tasks: [
 				{
 					id: "476FF1529844DA7D"
-					item: "society:aged_jellie_wine"
+					item: { components: { "ftbquests:missing_item": "society:aged_jellie_wine" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "58F3D840E6CBF1E1"
-					item: "society:petrified_mayonnaise"
+					item: { count: 1, id: "society:petrified_mayonnaise" }
 					type: "item"
 				}
 				{
 					id: "28AC2D19FB4BB833"
-					item: "society:prismatic_shard"
+					item: { count: 1, id: "society:prismatic_shard" }
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "7CB76A4E375BA71B"
-					item: {
-						Count: 1
-						id: "society:ancient_fruit"
-						tag: {
-							quality_food: {
-								effects: [ ]
-								quality: 2
-							}
-						}
-					}
-					match_nbt: true
-					title: "{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.task.8986768465609860891.title}"
+					item: { count: 1, id: "society:ancient_fruit" }
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "167D06E351C49C00"
-					item: {
-						Count: 5
-						id: "society:neptuna"
-						tag: {
-							quality_food: {
-								effects: [ ]
-								quality: 2
-							}
-						}
-					}
-					match_nbt: true
-					title: "{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.task.1620459014322428928.title}"
+					item: { count: 1, id: "society:neptuna" }
 					type: "item"
 				}
 				{
 					id: "10C2C380DEB89028"
-					item: "society:aged_starshell_turtle_roe"
+					item: { count: 1, id: "society:aged_starshell_turtle_roe" }
 					type: "item"
 				}
 				{
 					id: "4DEA5D8B51349A5D"
-					item: "species:youth_potion"
+					item: { components: { "ftbquests:missing_item": "species:youth_potion" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "502219E3812CFF6C"
-					item: {
-						Count: 1
-						id: "splendid_slimes:plort"
-						tag: {
-							plort: {
-								id: "splendid_slimes:all_seeing"
-							}
-						}
-					}
+					item: { components: { "ftbquests:missing_item": "splendid_slimes:plort" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "269E488B9A57FCC7"
-					item: "society:truffle_tea"
+					item: { components: { "ftbquests:missing_item": "society:truffle_tea" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.abandoned_farm.quest661A3A466ABF29BA.title}"
 			x: -0.028571428571424917d
 			y: -1.2714285714285793d
 		}
 		{
 			dependencies: ["661A3A466ABF29BA"]
-			description: ["{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.description1}"]
 			hide_details_until_startable: false
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			icon: "farm_and_charm:supply_cart"
 			id: "6EBAA004C1A50E98"
 			rewards: [
 				{
 					id: "0102B9ADBB397CC1"
 					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:abandoned_farm"
-							}
+						components: {
+							"ftbquests:missing_item": "trofers:large_pillar"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
 				{
 					id: "39C73D8690F31BE1"
-					item: "botania:apothecary_default"
+					item: {
+						components: {
+							"ftbquests:missing_item": "botania:apothecary_default"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					auto: "invisible"
 					command: "/kjs stages add @p abandoned_farm_complete"
-					elevate_perms: true
 					id: "699EAE14FFE8E2AB"
+					permission_level: 2
 					silent: true
 					type: "command"
 				}
 			]
 			shape: "none"
-			subtitle: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.subtitle}"
 			tasks: [{
-				icon: "society:furniture_box"
 				id: "3D497F4CF396A37A"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.task.4416200878094459770.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.title}"
 			x: -0.028571428571424917d
 			y: 1.0999999999999872d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.abandoned_farm.subtitle0}"]
-	title: "{ftbquests.chapter.abandoned_farm.title}"
 }

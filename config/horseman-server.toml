@@ -1,0 +1,119 @@
+[movement]
+	#Fix horse jitter and reset back when riding up blocks (especially stairs) Mojang bug: MC-100830. Default: true
+	fix_horse_moved_wrongly = true
+	#Additional step height added to horses. If set to 1 - horse will be able to step up two blocks. Set to 0 for vanilla behavior. Default 0.1.
+	# Default: 0.1
+	# Range: -1.0 ~ 10.0
+	horse_step_height_modifier = 0.1
+	#Make horse step down one block faster by adding downwards velocity.
+	#Reduces slowdown when riding off a block, making riding much smoother. Default: true
+	horse_fast_step_down = true
+	#Makes 'horse_fast_step_down' work when stepping down two blocks.
+	#Makes fast step down work better for steep staircases, but may introduce some unwanted behavior elsewhere. Default: false
+	horse_fast_step_down_two_blocks = false
+	#Make horse airborne speed faster. Improves jumping distance (horizontal) and speed walking off heights. Default: true
+	increase_horse_airborne_speed = true
+	#Controls how much 'increase_horse_airborne_speed' increases over vanilla.
+	#0 - vanilla speed
+	#1 - full speed (same as running on the ground)
+	#Note: there is still small initial slowdown when running off a block (start falling), after which speed increases to proper value.
+	#Default: 0.5
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	increase_horse_airborne_speed_amount = 0.5
+	#Horse-type mobs are able to swim when ridden by holding a jump key. Exact types that cannot swim can be controlled by '#horseman:cannot_swim' entity tag. Default: true.
+	horse_swim_when_ridden = true
+	#When mounting a horse, rotate it to match player looking direction, instead of rotating the player. Default: true
+	rotate_horse_instead_of_player = true
+	#Max distance (in blocks) from last dismount position that saddled horse can wander to. Set to -1 for vanilla behavior. Default: 16
+	# Default: 16
+	# Range: -1 ~ 64
+	saddled_horse_wander_radius = 16
+	#Prevents rearing (horse stopping and standing up) when it's being ridden. Default: true.
+	ridden_horse_prevent_rearing = true
+
+[hitching]
+	#Right-clicking a fence while riding will leash the horse to it. Default: true
+	enabled = true
+	#Hitching requires Lead item to be present on a horse. If disabled, 'horse_hitch_lead_slot' will be disabled as well. Default: true
+	requires_lead = true
+	#Slot for a lead will be added to horse inventory menu. Default: true
+	#If disabled, Lead should be added by Sneak+Right-Clicking a Horse with an item. Default: true
+	lead_slot = true
+
+[summoning]
+	#Range in blocks where Copper Horn tooting sound can be heard by other players. Goat Horn has range of 256.
+	# Default: 256
+	# Range: 16 ~ 256
+	copper_horn_sound_range = 256
+	#Cooldown in ticks for Copper Horn. 
+	#If set to '-1' - will use same cooldown as Goat Horn.
+	# Default: -1
+	# Range: > -1
+	copper_horn_cooldown = -1
+	#When summoning/binding a horse with Copper Horn fails, error message will show above the hotbar.
+	copper_horn_error_messages = true
+	#Furthest distance in blocks from a player where a horse can still be summoned.
+	#Set to -1 to allow any distance.
+	# Default: -1
+	# Range: > -1
+	max_summoning_distance = -1
+	#Furthest distance in blocks from a player from where a horse will walk instead of teleporting.
+	#Set to '0' to always teleport.
+	#Default: 32
+	# Default: 32.0
+	# Range: 0.0 ~ 1024.0
+	max_walking_distance = 32.0
+	#Horse movement speed when it walks to the player when summoned.
+	# Default: 2.0
+	# Range: 0.1 ~ 2.5
+	walk_movement_speed = 2.0
+	#Summoning behavior depending on dimension.
+	#ANY: can summon in any dimension.
+	#SAME: can only summon when horse is in the same dimension as the player.
+	#WHITELIST: can only summon when the player is in one of the dimensions defined in 'dimensions' list.
+	#BLACKLIST: can only summon when the player is NOT in one of the dimensions defined in 'dimensions' list.
+	#Default: ANY
+	#Allowed Values: ANY, SAME, WHITELIST, BLACKLIST
+	dimension_handling = "ANY"
+	#Dimensions whitelist or blacklist, depending on the 'dimension_handling' setting.
+	#Format: ["minecraft:overworld", "minecraft:the_end"]
+	#Default: [] (empty)
+	dimensions = []
+
+[free_camera]
+	#While horse is stationary - allow moving camera freely, without rotating the horse. Default: true
+	enabled = true
+	#Threshold in degrees after which horse will follow player rotation. Default: 100
+	# Default: 100.0
+	# Range: 0.0 ~ 180.0
+	angle_threshold = 100.0
+
+[misc]
+	#Taming a horse does not require an empty hand. Default: false
+	allow_taming_horse_with_item_in_hand = false
+	#Additional block breaking speed added when mounted. Set to 0 for vanilla behavior. Default 5 (regular breaking speed).
+	# Default: 5.0
+	# Range: 0.0 ~ 5.0
+	mounted_block_break_speed_modifier = 5.0
+	#Horse-type mobs are able to fit in boats. Default: true.
+	horse_fits_in_boat = true
+	#Right-clicking a Mule, Donkey or Llama that has chest with shears will remove the chest and drop its items. Default: true
+	shears_remove_chest = true
+	#Using Saddle on untamed horse-type mob while in creative mode tames it instantly. Default: true.
+	horse_creative_taming = true
+	#Controls collision of leaves block when riding a horse.
+	#FULL: full collision, same as in vanilla.
+	#IGNORE_LOWEST_BLOCK: lowest block of leaves will have no collision.
+	#IGNORE_ALL: no collision in all leaves blocks.
+	#Default: IGNORE_LOWEST_BLOCK (enough to make riding through forests viable).
+	#Allowed Values: FULL, IGNORE_LOWEST_BLOCK, IGNORE_ALL
+	leaves_collision_mode_when_mounted = "IGNORE_LOWEST_BLOCK"
+	#Untying or breaking a leash knot now has a sound (backported from 1.21.6). Default: true
+	leash_knot_sounds = true
+	#Dismounting from a horse will place a player towards their view direction. Default: true
+	dismount_towards_view_direction = true
+	#Fixes horse running back after player dismounts it (occurs when horse was leashed before mounting). Default: true
+	fix_running_back_after_dismount = true
+	#Horse with Leather Horse Armor equipped can walk on a Powder Snow like a player with Leather Boots. Default: true
+	leather_horse_armor_powder_snow = true

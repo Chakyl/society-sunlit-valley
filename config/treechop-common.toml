@@ -1,23 +1,15 @@
-
 [mod]
 	#Set to false to disable TreeChop without having to uninstall the mod
 	enabled = true
 	#Let TreeChop print to the log
 	printDebugInfo = true
 
-[permissions]
-
 	[permissions.choppingEnabled]
-		canBeFalse = true
-		canBeTrue = true
-
-	[permissions.fellingEnabled]
 		canBeFalse = true
 		canBeTrue = true
 
 	[permissions.sneakBehavior]
 		canBeInvertChopping = true
-		canBeInvertFelling = true
 		canBeNone = true
 
 	[permissions.treeMustHaveLeaves]
@@ -36,18 +28,26 @@
 
 [treeDetection]
 	#Maximum number of log blocks that can be detected to belong to one tree
-	#Range: 1 ~ 8096
+	# Default: 1024
+	# Range: 1 ~ 8096
 	maxTreeBlocks = 1024
 	#Maximum number of leaves blocks that can destroyed when a tree is felled
-	#Range: 1 ~ 8096
+	# Default: 1024
+	# Range: 1 ~ 8096
 	maxLeavesBlocks = 1024
-	#Destroy leaves when a tree is felled
-	breakLeaves = true
 	#Non-decayable leaves are ignored when detecting leaves
 	ignorePersistentLeaves = true
 	#Maximum distance from log blocks to destroy leaves blocks when felling
-	#Range: 0 ~ 16
+	# Default: 7
+	# Range: 0 ~ 16
 	maxBreakLeavesDistance = 7
+	#What to do with leaves blocks when a tree is felled
+	#Allowed Values: IGNORE, BREAK, DECAY
+	breakOrDecayLeaves = "DECAY"
+	#Who to credit for breaking tree blocks (logs and leaves), which can change item drops, trigger enchantment effects, etc.
+	#Use with caution: may cause unexpected interactions with other mods
+	#Allowed Values: NONE, PLAYER_NOT_TOOL, PLAYER_AND_TOOL
+	fellCredit = "NONE"
 
 	[treeDetection.logs]
 		#Blocks that should be considered choppable
@@ -83,16 +83,19 @@
 	#See https://github.com/hammertater/treechop/#logarithmic
 	[chopCounting.logarithmic]
 		#Determines the number of chops required to fell a tree; higher values require more chops for bigger trees
-		#Range: 0.0 ~ 10000.0
+		# Default: 10.0
+		# Range: 0.0 ~ 10000.0
 		a = 10.0
 
 	#See https://github.com/hammertater/treechop/#linear
 	[chopCounting.linear]
 		#The number of chops per block required to fell a tree; if chopsPerBlock = 0.5, it will take 50 chops to fell a 100 block tree
-		#Range: 0.0 ~ 7.0
+		# Default: 1.0
+		# Range: 0.0 ~ 7.0
 		chopsPerBlock = 1.0
 		#The base number of chops required to fell a tree regardless of its size
-		#Range: -10000.0 ~ 10000.0
+		# Default: 0.0
+		# Range: -10000.0 ~ 10000.0
 		baseNumChops = 0.0
 
 [compatibility]
@@ -140,8 +143,6 @@
 		[compatibility.general.fakePlayerChopSettings]
 			#Use with caution! May cause conflicts with some mods, e.g. https://github.com/hammertater/treechop/issues/71
 			choppingEnabled = false
-			#Felling only matters if chopping is enabled; probably best to leave this on
-			fellingEnabled = true
 			treesMustHaveLeaves = true
 
 	#A set of alternate tree detection strategies for oddly shaped trees
@@ -152,6 +153,9 @@
 	# - To also match stripped versions: ".*_log(_stripped)?", where ? means that the text in the parenthesis is optional
 	#For more help, see https://github.com/hammertater/treechop/wiki/Configuration
 	[compatibility.trees]
+		#Leaves in this list will break instead of decaying. This gives players credit for breaking leaves, which is potentially useful for advanced loot tables and functionalities added by other mods.
+		#Specify using registry names (mod:block), tags (#mod:tag), and namespaces (@mod)
+		leafDecayExceptions = ["#spectrum:colored_leaves"]
 
 		[compatibility.trees.hugeMushrooms]
 			logs = ["#forge:mushroom_stems"]
@@ -171,7 +175,8 @@
 		#Makes saws do more chops.
 		enabled = true
 		#Number of chops a saw should perform on a single block break
-		#Range: 1 ~ 10000
+		# Default: 5
+		# Range: 1 ~ 10000
 		sawChops = 5
 
 	[compatibility.tinkersConstruct]
@@ -180,16 +185,18 @@
 		#Makes AOE tools do more chops.
 		enabled = true
 		#Number of chops that tree breaking tools (like broad axes) should perform on a single block break
-		#Range: 1 ~ 10000
+		# Default: 5
+		# Range: 1 ~ 10000
 		treeBreakingTools = 5
 		#Number of chops that wood breaking tools (like hand axes) should perform on a single block break
-		#Range: 1 ~ 10000
+		# Default: 1
+		# Range: 1 ~ 10000
 		woodBreakingTools = 1
 		#The chop count multiplier for each level of the expanded upgrade
-		#Range: 1.0 ~ 10000.0
+		# Default: 2.0
+		# Range: 1.0 ~ 10000.0
 		expandedMultiplier = 2.0
 
 	[compatibility.API]
 		#Log information about TreeChop API usage. May be useful for debugging mod compatibility issues.
 		verbose = false
-

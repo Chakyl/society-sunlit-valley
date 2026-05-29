@@ -3,14 +3,13 @@
 	loot_size: 1
 	order_index: 8
 	rewards: [
-		{ item: "vinery:red_grape_seeds" }
-		{ item: "vinery:white_grape_seeds" }
-		{ item: "vinery:savanna_grape_seeds_red" }
-		{ item: "vinery:savanna_grape_seeds_white" }
-		{ item: "vinery:taiga_grape_seeds_red" }
-		{ item: "vinery:taiga_grape_seeds_white" }
-		{ item: "vinery:jungle_grape_seeds_red" }
-		{ item: "vinery:jungle_grape_seeds_white" }
+		{ id: "1E78765662BB208D", item: { components: { "ftbquests:missing_item": "vinery:red_grape_seeds" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "699F56043DB4C33C", item: { components: { "ftbquests:missing_item": "vinery:white_grape_seeds" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "024102716921EA06", item: { components: { "ftbquests:missing_item": "vinery:savanna_grape_seeds_red" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "54068287EE293E10", item: { components: { "ftbquests:missing_item": "vinery:savanna_grape_seeds_white" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "68E4B0D821D1A132", item: { components: { "ftbquests:missing_item": "vinery:taiga_grape_seeds_red" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "1CB638CCC897ABEA", item: { components: { "ftbquests:missing_item": "vinery:taiga_grape_seeds_white" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "0A9804EF359C79A3", item: { components: { "ftbquests:missing_item": "vinery:jungle_grape_seeds_red" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "5B2F2699ADD20080", item: { components: { "ftbquests:missing_item": "vinery:jungle_grape_seeds_white" }, count: 1, id: "ftbquests:missing_item" } }
 	]
-	title: "{ftbquests.loot_table.8298743981735202683.title}"
 }

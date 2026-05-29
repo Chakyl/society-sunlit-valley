@@ -6,99 +6,48 @@
 	filename: "tools"
 	group: "439B0423947443D3"
 	icon: {
-		Count: 1
-		id: "etcetera:hammer"
-		tag: {
-			Damage: 0
+		components: {
+			"ftbquests:missing_item": "etcetera:hammer"
 		}
+		id: "ftbquests:missing_item"
 	}
 	id: "38639EECD8CDEFB3"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"{ftbquests.chapter.tools.quest31F6C5811A72396C.description1}"
-				""
-				"{ftbquests.chapter.tools.quest31F6C5811A72396C.description2}"
-			]
-			icon: "meadow:fire_log"
 			id: "31F6C5811A72396C"
 			size: 2.0d
 			tasks: [{
 				id: "4FBF100AF8AE2641"
-				title: "{ftbquests.chapter.tools.quest31F6C5811A72396C.task.5746329288855922241.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.tools.quest31F6C5811A72396C.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: [
-				"{ftbquests.chapter.tools.quest5837B77D1243D30F.description1}"
-				""
-				"{ftbquests.chapter.tools.quest5837B77D1243D30F.description2}"
-			]
 			icon: {
-				Count: 1
 				id: "buildinggadgets2:gadget_building"
-				tag: { }
 			}
 			id: "5837B77D1243D30F"
 			rewards: [{
 				id: "73714A09282D81A3"
 				item: {
-					Count: 1
+					count: 1
 					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "buildinggadgets2:buildinggadgets2book"
-					}
 				}
 				type: "item"
 			}]
 			tasks: [
 				{
 					id: "2C20F65D8FFCF118"
-					item: "buildinggadgets2:gadget_core"
+					item: { count: 1, id: "buildinggadgets2:gadget_core" }
 					type: "item"
 				}
 				{
 					id: "57C1B03844582DB5"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "buildinggadgets2:gadget_exchanging"
-								}
-								{
-									Count: 1b
-									id: "buildinggadgets2:gadget_building"
-								}
-								{
-									Count: 1b
-									id: "buildinggadgets2:gadget_cut_paste"
-									tag: {
-										pastereplace: 1b
-									}
-								}
-								{
-									Count: 1b
-									id: "buildinggadgets2:gadget_copy_paste"
-									tag: { }
-								}
-								{
-									Count: 1b
-									id: "buildinggadgets2:gadget_destruction"
-								}
-							]
-						}
-					}
-					title: "{ftbquests.chapter.tools.quest5837B77D1243D30F.task.6323529107516173749.title}"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
@@ -107,481 +56,236 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: [
-				"{ftbquests.chapter.tools.quest23EFDF37F9BCD63B.description1}"
-				""
-				"{ftbquests.chapter.tools.quest23EFDF37F9BCD63B.description2}"
-				""
-				"{ftbquests.chapter.tools.quest23EFDF37F9BCD63B.description3}"
-			]
-			icon: "copycats:copycat_stairs"
 			id: "23EFDF37F9BCD63B"
 			rewards: [{
 				id: "2A8ECF9567036899"
-				item: "numismatics:bevel"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "37BEA915F4C1B7B2"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "copycats:copycat_byte"
-							}
-							{
-								Count: 1b
-								id: "create:copycat_panel"
-							}
-							{
-								Count: 1b
-								id: "create:copycat_step"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_vertical_slice"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_ghost_block"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_half_panel"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_block"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_slab"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_board"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_catwalk"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_layer"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_vertical_step"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_beam"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_wall"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_fence"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_vertical_stairs"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_slice"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_iron_trapdoor"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_trapdoor"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_iron_door"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_door"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_slope_layer"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_vertical_slope"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_slope"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_half_layer"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_box"
-							}
-							{
-								Count: 1b
-								id: "copycats:copycat_fence_gate"
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.tools.quest23EFDF37F9BCD63B.task.4016833829426804658.title}"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest23EFDF37F9BCD63B.title}"
 			x: 2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: ["{ftbquests.chapter.tools.quest2193ACEC05CC5B07.description1}"]
 			icon: {
-				Count: 1
-				id: "constructionwand:infinity_wand"
-				tag: {
-					wand_options: { }
+				components: {
+					"ftbquests:missing_item": "constructionwand:infinity_wand"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "2193ACEC05CC5B07"
 			rewards: [{
 				id: "4FE46E0F741A0364"
-				item: "numismatics:bevel"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.tools.quest2193ACEC05CC5B07.subtitle}"
 			tasks: [{
 				id: "7093310473EC2AE3"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "constructionwand:stone_wand"
-								tag: {
-									Damage: 0
-									wand_options: { }
-								}
-							}
-							{
-								Count: 1b
-								id: "constructionwand:iron_wand"
-								tag: {
-									Damage: 0
-									wand_options: { }
-								}
-							}
-							{
-								Count: 1b
-								id: "constructionwand:infinity_wand"
-								tag: {
-									wand_options: { }
-								}
-							}
-							{
-								Count: 1b
-								id: "constructionwand:diamond_wand"
-								tag: {
-									Damage: 0
-									wand_options: { }
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.tools.quest2193ACEC05CC5B07.task.8111881249018882787.title}"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest2193ACEC05CC5B07.title}"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2193ACEC05CC5B07"]
-			description: [
-				"{ftbquests.chapter.tools.quest86A3F527E1A973E.description1}"
-				""
-				"{ftbquests.chapter.tools.quest86A3F527E1A973E.description2}"
-			]
-			icon: "constructionwand:core_angel"
 			id: "086A3F527E1A973E"
 			rewards: [{
 				id: "3651413BAA3324A2"
-				item: "numismatics:crown"
+				item: {
+					count: 1
+					id: "numismatics:crown"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "7F0933DA244DC98F"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "constructionwand:core_destruction"
-							}
-							{
-								Count: 1b
-								id: "constructionwand:core_angel"
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.tools.quest86A3F527E1A973E.task.9153904729612208527.title}"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest86A3F527E1A973E.title}"
 			x: 2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: [
-				"{ftbquests.chapter.tools.quest6DAD35E264D3E056.description1}"
-				""
-				"{ftbquests.chapter.tools.quest6DAD35E264D3E056.description2}"
-			]
 			id: "6DAD35E264D3E056"
 			rewards: [{
 				id: "67AA34004DF431AC"
-				item: "numismatics:bevel"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "613AAD6A70EAEB13"
-				item: {
-					Count: 1
-					id: "create:wand_of_symmetry"
-					tag: {
-						enable: 0b
-						symmetry: {
-							direction: 0
-							enable: 1b
-							pos: [
-								0.0f
-								0.0f
-								0.0f
-							]
-							type: "empty"
-						}
-					}
-				}
+				item: { count: 1, id: "create:wand_of_symmetry" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest6DAD35E264D3E056.title}"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: ["{ftbquests.chapter.tools.quest4EAA3F652AE923B4.description1}"]
 			id: "4EAA3F652AE923B4"
 			rewards: [{
 				id: "61764C3CB845951F"
-				item: "numismatics:bevel"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "540DB45F559C9AAA"
-				item: "quark:trowel"
+				item: { count: 1, id: "quark:trowel" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest4EAA3F652AE923B4.title}"
 			x: 2.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: [
-				"{ftbquests.chapter.tools.quest6C1236C00210E5A7.description1}"
-				""
-				""
-				"{ftbquests.chapter.tools.quest6C1236C00210E5A7.description2}"
-			]
 			icon: {
-				Count: 1
-				id: "etcetera:hammer"
-				tag: {
-					Damage: 0
+				components: {
+					"ftbquests:missing_item": "etcetera:hammer"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "6C1236C00210E5A7"
 			rewards: [{
 				id: "1817392BB56F25D9"
-				item: "numismatics:bevel"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [
 				{
 					id: "7FCF62F6E555A842"
-					item: {
-						Count: 1
-						id: "etcetera:hammer"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: { components: { "ftbquests:missing_item": "etcetera:hammer" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "36AE8ECCAE05BE9E"
-					item: {
-						Count: 1
-						id: "etcetera:chisel"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: { components: { "ftbquests:missing_item": "etcetera:chisel" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.tools.quest6C1236C00210E5A7.title}"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: ["{ftbquests.chapter.tools.quest574978CE534E254B.description1}"]
 			id: "574978CE534E254B"
 			rewards: [{
 				id: "62B37F698B356D6C"
-				item: "numismatics:bevel"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "5451CF002DC3D1C1"
-				item: "quark:abacus"
+				item: { count: 1, id: "quark:abacus" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest574978CE534E254B.title}"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: ["{ftbquests.chapter.tools.quest7BCC4E221CF97D0B.description1}"]
 			id: "7BCC4E221CF97D0B"
 			rewards: [{
 				id: "40EE8779B79BE00E"
-				item: "numismatics:bevel"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "46BF5E7112C1E0AF"
-				item: "etcetera:frame"
+				item: { components: { "ftbquests:missing_item": "etcetera:frame" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest7BCC4E221CF97D0B.title}"
 			x: -2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: [
-				"{ftbquests.chapter.tools.quest12ED0E637AD47FD4.description1}"
-				""
-				"{ftbquests.chapter.tools.quest12ED0E637AD47FD4.description2}"
-				""
-				"{ftbquests.chapter.tools.quest12ED0E637AD47FD4.description3}"
-			]
-			icon: "refurbished_furniture:workbench"
 			id: "12ED0E637AD47FD4"
 			rewards: [{
 				id: "4A144CE04D511BEE"
-				item: "refurbished_furniture:wrench"
+				item: {
+					count: 1
+					id: "refurbished_furniture:wrench"
+				}
 				type: "item"
 			}]
 			tasks: [
 				{
 					id: "0F771A1CBBDC9FD5"
-					item: "refurbished_furniture:workbench"
+					item: { count: 1, id: "refurbished_furniture:workbench" }
 					type: "item"
 				}
 				{
 					id: "1975B4057900DED6"
-					item: "refurbished_furniture:light_electricity_generator"
+					item: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.tools.quest12ED0E637AD47FD4.title}"
 			x: 0.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["12ED0E637AD47FD4"]
-			description: [
-				"{ftbquests.chapter.tools.quest100B4D3BEEE9C433.description1}"
-				""
-				"{ftbquests.chapter.tools.quest100B4D3BEEE9C433.description2}"
-				""
-				"{ftbquests.chapter.tools.quest100B4D3BEEE9C433.description3}"
-			]
-			icon: "society:tanuki_catalog"
 			id: "100B4D3BEEE9C433"
 			rewards: [{
 				count: 8
 				id: "7761B099DC642B53"
-				item: "society:tanuki_leaf"
+				item: {
+					count: 1
+					id: "society:tanuki_leaf"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "3EF5A9EA750FC64D"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "society:tanuki_catalog"
-							}
-							{
-								Count: 1b
-								id: "society:modern_catalog"
-							}
-							{
-								Count: 1b
-								id: "society:fantasy_catalog"
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.tools.quest100B4D3BEEE9C433.task.4536719024097052237.title}"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest100B4D3BEEE9C433.title}"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: ["{ftbquests.chapter.tools.quest6933B95631B3A039.description1}"]
 			id: "6933B95631B3A039"
 			rewards: [{
 				count: 16
 				id: "11D3B9BC1D76E071"
-				item: "minecraft:oak_log"
+				item: {
+					count: 1
+					id: "minecraft:oak_log"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "08E4841A34A42A78"
-				item: "sawmill:sawmill"
+				item: { count: 1, id: "sawmill:sawmill" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -589,34 +293,46 @@
 		}
 		{
 			dependencies: ["100B4D3BEEE9C433"]
-			description: [
-				"{ftbquests.chapter.tools.quest4A4474120CD64CBD.description1}"
-				""
-				"{ftbquests.chapter.tools.quest4A4474120CD64CBD.description2}"
-			]
 			id: "4A4474120CD64CBD"
 			rewards: [
 				{
 					id: "3ABCAA3CB62FE70F"
-					item: "society:tanuki_catalog"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:tanuki_catalog"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					id: "596526D5A33D01E0"
-					item: "society:modern_catalog"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:modern_catalog"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					id: "03ED2ACF1F0B5B4D"
-					item: "society:fantasy_catalog"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:fantasy_catalog"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 			]
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.tools.quest4A4474120CD64CBD.subtitle}"
 			tasks: [{
 				id: "3FCFDD9F4F2A7544"
-				item: "tanukidecor:diy_workbench"
+				item: { count: 1, id: "tanukidecor:diy_workbench" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -624,15 +340,10 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: [
-				"{ftbquests.chapter.tools.quest3A5DF5AD3C5299DE.description1}"
-				""
-				"{ftbquests.chapter.tools.quest3A5DF5AD3C5299DE.description2}"
-			]
 			id: "3A5DF5AD3C5299DE"
 			tasks: [{
 				id: "4FB6C9BF2CA1409A"
-				item: "society:magnifying_glass"
+				item: { count: 1, id: "society:magnifying_glass" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -640,83 +351,66 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: ["{ftbquests.chapter.tools.quest7E94B1934D0257E8.description1}"]
-			icon: "simplehats:headphonesblue"
 			id: "7E94B1934D0257E8"
 			rewards: [{
 				id: "4EC96CD71AFA7A8A"
-				item: "numismatics:cog"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "5F9BEDE31C44BA36"
-				title: "{ftbquests.chapter.tools.quest7E94B1934D0257E8.task.6889361614680930870.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.tools.quest7E94B1934D0257E8.title}"
 			x: -1.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["5837B77D1243D30F"]
-			description: [
-				"{ftbquests.chapter.tools.quest7D5EB5853F9A357.description1}"
-				""
-				"{ftbquests.chapter.tools.quest7D5EB5853F9A357.description2}"
-			]
 			id: "07D5EB5853F9A357"
 			rewards: [{
 				id: "70DD9DC359B7F1E6"
-				item: "buildinggadgets2:gadget_core"
+				item: {
+					count: 1
+					id: "buildinggadgets2:gadget_core"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "10D95304948010B2"
-				item: "buildinggadgets2:template_manager"
+				item: { count: 1, id: "buildinggadgets2:template_manager" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tools.quest7D5EB5853F9A357.title}"
 			x: 1.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			description: [
-				"{ftbquests.chapter.tools.quest54B6F31A66A23AD4.description1}"
-				""
-				"{ftbquests.chapter.tools.quest54B6F31A66A23AD4.description2}"
-				""
-				"{ftbquests.chapter.tools.quest54B6F31A66A23AD4.description3}"
-				""
-				"{ftbquests.chapter.tools.quest54B6F31A66A23AD4.description4}"
-			]
-			icon: "portable_blueprints:tablet"
 			id: "54B6F31A66A23AD4"
 			rewards: [{
 				id: "21EC0DE21DADD12C"
-				item: "numismatics:cog"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [
 				{
 					id: "058F9B403F01B939"
-					item: {
-						Count: 1
-						id: "portable_blueprints:scanner"
-						tag: { }
-					}
+					item: { count: 1, id: "portable_blueprints:scanner" }
 					type: "item"
 				}
 				{
 					id: "20E2F8E9F43039FE"
-					item: "portable_blueprints:tablet"
+					item: { count: 1, id: "portable_blueprints:tablet" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.tools.quest54B6F31A66A23AD4.title}"
 			x: 1.0d
 			y: 2.5d
 		}
 	]
-	title: "{ftbquests.chapter.tools.title}"
 }

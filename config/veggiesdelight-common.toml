@@ -1,4 +1,3 @@
-
 ["Villager Settings"]
 	#Enable Veggies Delight villager trades
 	enableVillagerTrades = false
@@ -25,31 +24,36 @@
 		#Enable generation of Veggies Delight structures in Explorify's Dark Forest Settlement
 		generateExplorifyStructures = false
 
-["Worldgen Settings"]
-
-	["Worldgen Settings"."Worldgen Settings"]
+	["Structure Settings"."Worldgen Settings"]
 		#Chance of Bell Peppers generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
+		# Default: 100
+		# Range: 0 ~ 512
 		chanceBellPeppers = 100
 		#Chance of Broccoli generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
-		chanceBroccoli = 120
+		# Default: 120
+		# Range: 0 ~ 512
+		chanceBroccoli = 0
 		#Chance of Cauliflowers generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
+		# Default: 120
+		# Range: 0 ~ 512
 		chanceCauliflowers = 120
 		#Chance of Garlic generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
+		# Default: 120
+		# Range: 0 ~ 512
 		chanceGarlic = 0
 		#Chance of Sweet Potatoes generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
+		# Default: 120
+		# Range: 0 ~ 512
 		chanceSweetPotatoes = 0
 		#Chance of Turnips generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
+		# Default: 20
+		# Range: 0 ~ 512
 		chanceTurnips = 20
 		#Chance of Zucchinis generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
+		# Default: 100
+		# Range: 0 ~ 512
 		chanceZucchinis = 0
 		#Chance of Mature Dandelions generating in the world. (0 to disable, higher = rarer)
-		#Range: 0 ~ 512
+		# Default: 130
+		# Range: 0 ~ 512
 		chanceMatureDandelion = 40
-

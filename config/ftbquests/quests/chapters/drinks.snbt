@@ -5,11 +5,10 @@
 	filename: "drinks"
 	group: "15230846E14B6926"
 	icon: {
-		Count: 1
-		id: "vinery:eiswein"
-		tag: {
-			Year: 0
+		components: {
+			"ftbquests:missing_item": "vinery:eiswein"
 		}
+		id: "ftbquests:missing_item"
 	}
 	id: "3DE5C3A5E424080B"
 	order_index: 7
@@ -19,13 +18,7 @@
 			id: "2256A02C7FF6F620"
 			tasks: [{
 				id: "096309B81126834C"
-				item: {
-					Count: 1
-					id: "vinery:red_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:red_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -35,13 +28,7 @@
 			id: "3438F13EB6D6FD3A"
 			tasks: [{
 				id: "4FEEAF99332683D9"
-				item: {
-					Count: 1
-					id: "vinery:villagers_fright"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:villagers_fright" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -51,13 +38,7 @@
 			id: "73EFBDF628315753"
 			tasks: [{
 				id: "50607FB4C505083F"
-				item: {
-					Count: 1
-					id: "vinery:creepers_crush"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:creepers_crush" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -67,13 +48,7 @@
 			id: "0BB56F0444E7EDF3"
 			tasks: [{
 				id: "6DC9C72B6F395462"
-				item: {
-					Count: 1
-					id: "vinery:kelp_cider"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:kelp_cider" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -83,13 +58,7 @@
 			id: "4949D7040F1E46C7"
 			tasks: [{
 				id: "27BDB1F4818B9156"
-				item: {
-					Count: 1
-					id: "vinery:chorus_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:chorus_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -99,13 +68,7 @@
 			id: "4A30CAAB557B2B37"
 			tasks: [{
 				id: "5C201A00E15ED0FA"
-				item: {
-					Count: 1
-					id: "vinery:strad_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:strad_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -115,13 +78,7 @@
 			id: "7FC1972F74B32F80"
 			tasks: [{
 				id: "6FC78DEC1D72076D"
-				item: {
-					Count: 1
-					id: "vinery:stal_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:stal_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -131,13 +88,7 @@
 			id: "682B409D092D7A1A"
 			tasks: [{
 				id: "677280102632A7BF"
-				item: {
-					Count: 1
-					id: "vinery:chenet_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:chenet_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -147,13 +98,7 @@
 			id: "57A2D7AF344C74AF"
 			tasks: [{
 				id: "7D31E1BFCE4FD7EB"
-				item: {
-					Count: 1
-					id: "vinery:lilitu_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:lilitu_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -163,13 +108,7 @@
 			id: "056219DA22E32F39"
 			tasks: [{
 				id: "1834512DB1478FFB"
-				item: {
-					Count: 1
-					id: "vinery:apple_cider"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:apple_cider" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -179,13 +118,7 @@
 			id: "11866E94580BCB30"
 			tasks: [{
 				id: "00BC2D5D551D38AF"
-				item: {
-					Count: 1
-					id: "nethervinery:blazewine_pinot"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "nethervinery:blazewine_pinot" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -195,13 +128,7 @@
 			id: "45BF61F4FC6DE4FC"
 			tasks: [{
 				id: "52A4E5C2F7B41CD1"
-				item: {
-					Count: 1
-					id: "nethervinery:nether_fizz"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "nethervinery:nether_fizz" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -211,13 +138,7 @@
 			id: "073591B2DEE7BCF4"
 			tasks: [{
 				id: "396496F08B904288"
-				item: {
-					Count: 1
-					id: "nethervinery:lava_fizz"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "nethervinery:lava_fizz" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -227,13 +148,7 @@
 			id: "7E88CB60317AF577"
 			tasks: [{
 				id: "00FC551AB851C0A2"
-				item: {
-					Count: 1
-					id: "nethervinery:improved_lava_fizz"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "nethervinery:improved_lava_fizz" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -243,13 +158,7 @@
 			id: "1A02D522BD4600F6"
 			tasks: [{
 				id: "16AB10903AED2444"
-				item: {
-					Count: 1
-					id: "nethervinery:improved_nether_fizz"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "nethervinery:improved_nether_fizz" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -259,13 +168,7 @@
 			id: "40C1911E470C61D5"
 			tasks: [{
 				id: "5C1D68C390B1E664"
-				item: {
-					Count: 1
-					id: "vinery:magnetic_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:magnetic_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -275,13 +178,7 @@
 			id: "5DFF5343D2945830"
 			tasks: [{
 				id: "44BBC7116F9B7282"
-				item: {
-					Count: 1
-					id: "vinery:apple_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:apple_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -289,16 +186,9 @@
 		}
 		{
 			id: "6C7A3AB4B9DEA9A7"
-			subtitle: "{ftbquests.chapter.drinks.quest6C7A3AB4B9DEA9A7.subtitle}"
 			tasks: [{
 				id: "36C8CCACAD0C7F54"
-				item: {
-					Count: 1
-					id: "society:forks_of_blue"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "society:forks_of_blue" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -308,13 +198,7 @@
 			id: "683266653D948DDB"
 			tasks: [{
 				id: "060391CEDFF28788"
-				item: {
-					Count: 1
-					id: "nethervinery:ghastly_grenache"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "nethervinery:ghastly_grenache" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -324,13 +208,7 @@
 			id: "28A1326708436D22"
 			tasks: [{
 				id: "5C26E3B637BA8F65"
-				item: {
-					Count: 1
-					id: "nethervinery:netherite_nectar"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "nethervinery:netherite_nectar" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -340,13 +218,7 @@
 			id: "51B9DA9C11B5FBAF"
 			tasks: [{
 				id: "0F19DBE85C2F086D"
-				item: {
-					Count: 1
-					id: "vinery:mead"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:mead" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -356,13 +228,7 @@
 			id: "20C3041DDF3590B2"
 			tasks: [{
 				id: "16DFA433E671BCB8"
-				item: {
-					Count: 1
-					id: "vinery:bolvar_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:bolvar_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -372,13 +238,7 @@
 			id: "6083301592D71EB9"
 			tasks: [{
 				id: "0F77FFDB94453B53"
-				item: {
-					Count: 1
-					id: "vinery:cristel_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:cristel_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -388,13 +248,7 @@
 			id: "0CD34DE703A9AC84"
 			tasks: [{
 				id: "3B460A8459941E82"
-				item: {
-					Count: 1
-					id: "vinery:clark_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:clark_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -404,13 +258,7 @@
 			id: "7D9C83D14F72B75A"
 			tasks: [{
 				id: "7E628B0993B251B8"
-				item: {
-					Count: 1
-					id: "vinery:solaris_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:solaris_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -420,13 +268,7 @@
 			id: "246F440BEB8CE29A"
 			tasks: [{
 				id: "39B1A71B4840EC2A"
-				item: {
-					Count: 1
-					id: "vinery:bottle_mojang_noir"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:bottle_mojang_noir" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -436,13 +278,7 @@
 			id: "33BF5CA9DD893DD9"
 			tasks: [{
 				id: "2191385A360DF86B"
-				item: {
-					Count: 1
-					id: "vinery:noir_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:noir_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -452,13 +288,7 @@
 			id: "04E88F907C5024DB"
 			tasks: [{
 				id: "75FAF750C8632C0E"
-				item: {
-					Count: 1
-					id: "vinery:cherry_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:cherry_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -468,13 +298,7 @@
 			id: "48FC913F4C9DA449"
 			tasks: [{
 				id: "692A3C3060D3C713"
-				item: {
-					Count: 1
-					id: "vinery:jo_special_mixture"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:jo_special_mixture" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -484,13 +308,7 @@
 			id: "7C913DEC84536867"
 			tasks: [{
 				id: "27EEECCD481383A0"
-				item: {
-					Count: 1
-					id: "vinery:mellohi_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:mellohi_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -500,13 +318,7 @@
 			id: "0A795E2DE1DE906D"
 			tasks: [{
 				id: "0DCD3913B1DFB310"
-				item: {
-					Count: 1
-					id: "vinery:glowing_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:glowing_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -516,13 +328,7 @@
 			id: "012EB2AD32690CED"
 			tasks: [{
 				id: "6DED75413A240E76"
-				item: {
-					Count: 1
-					id: "vinery:aegis_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:aegis_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -532,13 +338,7 @@
 			id: "70F7C8C8951CBDF1"
 			tasks: [{
 				id: "4600C9AF105244B6"
-				item: {
-					Count: 1
-					id: "vinery:eiswein"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:eiswein" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -548,13 +348,7 @@
 			id: "5847155ACE526B0D"
 			tasks: [{
 				id: "227FA2A371449CD4"
-				item: {
-					Count: 1
-					id: "vinery:jellie_wine"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "vinery:jellie_wine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -562,16 +356,9 @@
 		}
 		{
 			id: "70E664D2389F628D"
-			subtitle: "{ftbquests.chapter.drinks.quest70E664D2389F628D.subtitle}"
 			tasks: [{
 				id: "2460CAE307110F0E"
-				item: {
-					Count: 1
-					id: "society:good_catawba"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "society:good_catawba" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -579,22 +366,19 @@
 		}
 		{
 			id: "13298D80ED38BE30"
-			subtitle: "{ftbquests.chapter.drinks.quest13298D80ED38BE30.subtitle}"
 			tasks: [{
 				id: "1647165DF9095719"
-				item: "society:ancient_vespertine"
+				item: { components: { "ftbquests:missing_item": "society:ancient_vespertine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
 			y: 4.5d
 		}
 		{
-			description: [""]
 			id: "5B2FC6D0E6C24D83"
-			subtitle: "{ftbquests.chapter.drinks.quest5B2FC6D0E6C24D83.subtitle}"
 			tasks: [{
 				id: "380E354FD04802EA"
-				item: "society:dewy_star"
+				item: { components: { "ftbquests:missing_item": "society:dewy_star" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -604,7 +388,7 @@
 			id: "2A4523F06A0896AB"
 			tasks: [{
 				id: "6AB0C67E25C4B06B"
-				item: "brewery:beer_hops"
+				item: { components: { "ftbquests:missing_item": "brewery:beer_hops" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -614,7 +398,7 @@
 			id: "5FF4F160CE06D1B9"
 			tasks: [{
 				id: "4F6937876AF06ADD"
-				item: "brewery:beer_oat"
+				item: { components: { "ftbquests:missing_item": "brewery:beer_oat" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -624,7 +408,7 @@
 			id: "251E5C243DA62A73"
 			tasks: [{
 				id: "446626F79C09EAE2"
-				item: "brewery:beer_barley"
+				item: { components: { "ftbquests:missing_item": "brewery:beer_barley" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -634,7 +418,7 @@
 			id: "0822DC8CBB85EAA4"
 			tasks: [{
 				id: "5AB0F29A8084A9E8"
-				item: "brewery:beer_wheat"
+				item: { components: { "ftbquests:missing_item": "brewery:beer_wheat" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -644,7 +428,7 @@
 			id: "4203421E1DC6A07D"
 			tasks: [{
 				id: "35159DCA87EB3720"
-				item: "brewery:beer_nettle"
+				item: { components: { "ftbquests:missing_item": "brewery:beer_nettle" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -654,7 +438,7 @@
 			id: "23E103B9431729E5"
 			tasks: [{
 				id: "1711646301B5BBB0"
-				item: "brewery:beer_haley"
+				item: { components: { "ftbquests:missing_item": "brewery:beer_haley" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -662,10 +446,9 @@
 		}
 		{
 			id: "611336F023B21ADF"
-			subtitle: "{ftbquests.chapter.drinks.quest611336F023B21ADF.subtitle}"
 			tasks: [{
 				id: "582D79D40E8FC73F"
-				item: "society:beer_london"
+				item: { components: { "ftbquests:missing_item": "society:beer_london" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -673,10 +456,9 @@
 		}
 		{
 			id: "29C3F528FEC4D0C7"
-			subtitle: "{ftbquests.chapter.drinks.quest29C3F528FEC4D0C7.subtitle}"
 			tasks: [{
 				id: "69D9A11A299DDC22"
-				item: "brewery:whiskey_jojannik"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_jojannik" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -684,10 +466,9 @@
 		}
 		{
 			id: "7B08E22C0E8DE900"
-			subtitle: "{ftbquests.chapter.drinks.quest7B08E22C0E8DE900.subtitle}"
 			tasks: [{
 				id: "4C2EE8B0FB6D5A51"
-				item: "brewery:whiskey_cristelwalker"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_cristelwalker" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -695,10 +476,9 @@
 		}
 		{
 			id: "20F2517A081999C2"
-			subtitle: "{ftbquests.chapter.drinks.quest20F2517A081999C2.subtitle}"
 			tasks: [{
 				id: "5AC862C17D9623E3"
-				item: "brewery:whiskey_ak"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_ak" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -706,10 +486,9 @@
 		}
 		{
 			id: "4041362E384D0744"
-			subtitle: "{ftbquests.chapter.drinks.quest4041362E384D0744.subtitle}"
 			tasks: [{
 				id: "588F67E2C1D9C39F"
-				item: "brewery:whiskey_jamesons_malt"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_jamesons_malt" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -717,10 +496,9 @@
 		}
 		{
 			id: "381A3B258ACE31FD"
-			subtitle: "{ftbquests.chapter.drinks.quest381A3B258ACE31FD.subtitle}"
 			tasks: [{
 				id: "3732721665734BF7"
-				item: "brewery:whiskey_smokey_reverie"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_smokey_reverie" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -728,10 +506,9 @@
 		}
 		{
 			id: "597C843B42219362"
-			subtitle: "{ftbquests.chapter.drinks.quest597C843B42219362.subtitle}"
 			tasks: [{
 				id: "46349E6D0727EA6E"
-				item: "brewery:whiskey_lilitusinglemalt"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_lilitusinglemalt" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -739,10 +516,9 @@
 		}
 		{
 			id: "6742B0BA3DD56AE8"
-			subtitle: "{ftbquests.chapter.drinks.quest6742B0BA3DD56AE8.subtitle}"
 			tasks: [{
 				id: "4DF3A48534A13957"
-				item: "brewery:whiskey_highland_hearth"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_highland_hearth" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -750,10 +526,9 @@
 		}
 		{
 			id: "6327893DC34214E6"
-			subtitle: "{ftbquests.chapter.drinks.quest6327893DC34214E6.subtitle}"
 			tasks: [{
 				id: "08F4CDB641D728DE"
-				item: "brewery:whiskey_carrasconlabel"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_carrasconlabel" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -761,10 +536,9 @@
 		}
 		{
 			id: "6A5A513E8C0455AF"
-			subtitle: "{ftbquests.chapter.drinks.quest6A5A513E8C0455AF.subtitle}"
 			tasks: [{
 				id: "59815ADCEF0DF505"
-				item: "brewery:whiskey_maggoallan"
+				item: { components: { "ftbquests:missing_item": "brewery:whiskey_maggoallan" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -772,10 +546,9 @@
 		}
 		{
 			id: "580FA272625D0922"
-			subtitle: "{ftbquests.chapter.drinks.quest580FA272625D0922.subtitle}"
 			tasks: [{
 				id: "71A678A4807CADA8"
-				item: "brewery:dark_brew"
+				item: { components: { "ftbquests:missing_item": "brewery:dark_brew" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -785,7 +558,7 @@
 			id: "56D3FE2A55620FFA"
 			tasks: [{
 				id: "4E9703C71B9B8B7C"
-				item: "herbalbrews:green_tea"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:green_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
@@ -795,7 +568,7 @@
 			id: "0F80020460034C4F"
 			tasks: [{
 				id: "46E78799B9759675"
-				item: "herbalbrews:black_tea"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:black_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -805,7 +578,7 @@
 			id: "1DF6A026EC8DEDA8"
 			tasks: [{
 				id: "696FFECC424548FD"
-				item: "herbalbrews:oolong_tea"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:oolong_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -11.5d
@@ -815,7 +588,7 @@
 			id: "1A920DA6959E83C9"
 			tasks: [{
 				id: "468B5A92BD595670"
-				item: "herbalbrews:hibiscus_tea"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:hibiscus_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -17.5d
@@ -825,7 +598,7 @@
 			id: "63E362F522671B3A"
 			tasks: [{
 				id: "740A791A82D6D37F"
-				item: "herbalbrews:yerba_mate_tea"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:yerba_mate_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -19.0d
@@ -835,7 +608,7 @@
 			id: "79E05B6CC5D3B1EB"
 			tasks: [{
 				id: "115CDD32E882E40C"
-				item: "herbalbrews:rooibos_tea"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:rooibos_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -20.5d
@@ -845,7 +618,7 @@
 			id: "594A9E5DBA22F02F"
 			tasks: [{
 				id: "50FBE25F23A38346"
-				item: "herbalbrews:lavender_tea"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:lavender_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -16.0d
@@ -855,7 +628,7 @@
 			id: "499B9BBF96949391"
 			tasks: [{
 				id: "202BC92316F57336"
-				item: "herbalbrews:coffee"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:coffee" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -20.5d
@@ -865,7 +638,7 @@
 			id: "5CED7458AECD7198"
 			tasks: [{
 				id: "56FEDBCF12F25A97"
-				item: "herbalbrews:milk_coffee"
+				item: { components: { "ftbquests:missing_item": "herbalbrews:milk_coffee" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -19.0d
@@ -875,7 +648,7 @@
 			id: "24AEAC076A7FB759"
 			tasks: [{
 				id: "7604062B983D4AB4"
-				item: "herbalbrews:hazelnut_coffee"
+				item: { count: 1, id: "herbalbrews:hazelnut_coffee" }
 				type: "item"
 			}]
 			x: -17.5d
@@ -885,7 +658,7 @@
 			id: "4724101E2A82976C"
 			tasks: [{
 				id: "51348BE63BE2E64A"
-				item: "herbalbrews:cinnamon_coffee"
+				item: { count: 1, id: "herbalbrews:cinnamon_coffee" }
 				type: "item"
 			}]
 			x: -16.0d
@@ -895,7 +668,7 @@
 			id: "44910762D0BBD07A"
 			tasks: [{
 				id: "06A28C79FC9949E1"
-				item: "society:espresso"
+				item: { components: { "ftbquests:missing_item": "society:espresso" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
@@ -905,7 +678,7 @@
 			id: "7D0C353A618A2A32"
 			tasks: [{
 				id: "7556EB83E2856017"
-				item: "herbalbrews:chai_tea"
+				item: { count: 1, id: "herbalbrews:chai_tea" }
 				type: "item"
 			}]
 			x: -11.5d
@@ -915,7 +688,7 @@
 			id: "72FC4C6B7080A8B0"
 			tasks: [{
 				id: "0D4336A4D23A620A"
-				item: "society:mocha"
+				item: { components: { "ftbquests:missing_item": "society:mocha" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -925,7 +698,7 @@
 			id: "1A6F9FCC6D58B67D"
 			tasks: [{
 				id: "1BD3FB0EE50B8149"
-				item: "society:latte"
+				item: { components: { "ftbquests:missing_item": "society:latte" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -11.5d
@@ -935,7 +708,7 @@
 			id: "775F72DBDDB93C41"
 			tasks: [{
 				id: "376186214CBB27A1"
-				item: "society:dirty_chai"
+				item: { components: { "ftbquests:missing_item": "society:dirty_chai" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -11.5d
@@ -992,19 +765,19 @@
 			id: "25EFF541E1F2C205"
 			rewards: [{
 				id: "0775FBBD966BA91B"
-				item: "society:broken_clock"
+				item: {
+					count: 1
+					id: "society:broken_clock"
+				}
 				type: "item"
 			}]
 			size: 2.0d
 			tasks: [{
-				icon: "vinery:fermentation_barrel"
 				id: "2B67A83CE639308D"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.drinks.quest25EFF541E1F2C205.task.3127653445746110605.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.drinks.quest25EFF541E1F2C205.title}"
 			x: -3.0d
 			y: -5.5d
 		}
@@ -1032,23 +805,22 @@
 				"3820DA7C3314E0AD"
 			]
 			hide_dependency_lines: true
-			icon: "brewery:netherite_brewingstation"
 			id: "09ADAEA86CEB55E2"
 			rewards: [{
 				id: "08A1BB76D73E76AA"
-				item: "society:broken_clock"
+				item: {
+					count: 1
+					id: "society:broken_clock"
+				}
 				type: "item"
 			}]
 			size: 2.0d
 			tasks: [{
-				icon: "brewery:wooden_brewingstation"
 				id: "59C99166EA79DA39"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.drinks.quest9ADAEA86CEB55E2.task.6469862210900974137.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.drinks.quest9ADAEA86CEB55E2.title}"
 			x: 10.5d
 			y: -5.0d
 		}
@@ -1074,23 +846,22 @@
 				"1D2808AF740F8C6A"
 			]
 			hide_dependency_lines: true
-			icon: "herbalbrews:tea_kettle"
 			id: "0BE5F31F09A945C1"
 			rewards: [{
 				id: "08879AF69E0E1B70"
-				item: "society:frosted_tip"
+				item: {
+					count: 1
+					id: "society:frosted_tip"
+				}
 				type: "item"
 			}]
 			size: 2.0d
 			tasks: [{
-				icon: "society:espresso_machine"
 				id: "33563F224C8ECB6C"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.drinks.questBE5F31F09A945C1.task.3699213560477305708.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.drinks.questBE5F31F09A945C1.title}"
 			x: -16.0d
 			y: -5.5d
 		}
@@ -1102,32 +873,33 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1
-				id: "trofers:large_pillar"
-				tag: {
-					BlockEntityTag: {
-						Trophy: "trofers:brews"
-					}
+				components: {
+					"ftbquests:missing_item": "trofers:large_pillar"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "19D2D00AC36C9049"
 			rewards: [
 				{
 					count: 4
 					id: "6D692EE24A05C4B2"
-					item: "society:aging_cask"
+					item: {
+						components: {
+							"ftbquests:missing_item": "society:aging_cask"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
 					type: "item"
 				}
 				{
 					id: "6D01410786FF120F"
 					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "trofers:brews"
-							}
+						components: {
+							"ftbquests:missing_item": "trofers:large_pillar"
 						}
+						count: 1
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
@@ -1136,28 +908,24 @@
 			size: 3.0d
 			tasks: [{
 				icon: {
-					Count: 1
-					id: "vinery:jellie_wine"
-					tag: {
-						Year: 0
+					components: {
+						"ftbquests:missing_item": "vinery:jellie_wine"
 					}
+					id: "ftbquests:missing_item"
 				}
 				id: "66521C3EA4D8D1C9"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.drinks.quest19D2D00AC36C9049.task.7372986595338146249.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.drinks.quest19D2D00AC36C9049.title}"
 			x: -3.0d
 			y: -9.0d
 		}
 		{
 			id: "47DE6A5A64755084"
-			subtitle: "{ftbquests.chapter.drinks.quest47DE6A5A64755084.subtitle}"
 			tasks: [{
 				id: "24D75B3E19F7C182"
-				item: "society:ancient_cider"
+				item: { components: { "ftbquests:missing_item": "society:ancient_cider" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -1165,10 +933,9 @@
 		}
 		{
 			id: "5D6623B36EC39685"
-			subtitle: "{ftbquests.chapter.drinks.quest5D6623B36EC39685.subtitle}"
 			tasks: [{
 				id: "2808E4462151788B"
-				item: "society:star_coquito"
+				item: { components: { "ftbquests:missing_item": "society:star_coquito" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1176,10 +943,9 @@
 		}
 		{
 			id: "3FF6591FC54809B1"
-			subtitle: "{ftbquests.chapter.drinks.quest3FF6591FC54809B1.subtitle}"
 			tasks: [{
 				id: "3A9415935DFC0CBD"
-				item: "society:starcardi"
+				item: { components: { "ftbquests:missing_item": "society:starcardi" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1187,16 +953,9 @@
 		}
 		{
 			id: "5D95CBE19118EAD4"
-			subtitle: "{ftbquests.chapter.drinks.quest5D95CBE19118EAD4.subtitle}"
 			tasks: [{
 				id: "1A39CD674981C1E7"
-				item: {
-					Count: 1
-					id: "society:nutty_basil"
-					tag: {
-						Year: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "society:nutty_basil" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -1206,7 +965,7 @@
 			id: "0C6E04C2255AD8F8"
 			tasks: [{
 				id: "0349F588D5B3740B"
-				item: "society:truffle_tea"
+				item: { components: { "ftbquests:missing_item": "society:truffle_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -1214,10 +973,9 @@
 		}
 		{
 			id: "3820DA7C3314E0AD"
-			subtitle: "{ftbquests.chapter.drinks.quest3820DA7C3314E0AD.subtitle}"
 			tasks: [{
 				id: "221FC963177CC334"
-				item: "society:beer_attunecore"
+				item: { components: { "ftbquests:missing_item": "society:beer_attunecore" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -1227,7 +985,7 @@
 			id: "1D2808AF740F8C6A"
 			tasks: [{
 				id: "787FDBE7E2343906"
-				item: "society:bowl_of_soul"
+				item: { components: { "ftbquests:missing_item": "society:bowl_of_soul" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
@@ -1235,10 +993,9 @@
 		}
 		{
 			id: "5447B467AA6BA5F2"
-			subtitle: "{ftbquests.chapter.drinks.quest5447B467AA6BA5F2.subtitle}"
 			tasks: [{
 				id: "5DC170DD168FEF42"
-				item: "society:violet_moon"
+				item: { components: { "ftbquests:missing_item": "society:violet_moon" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -1246,10 +1003,9 @@
 		}
 		{
 			id: "67622FAC6D509907"
-			subtitle: "{ftbquests.chapter.drinks.quest67622FAC6D509907.subtitle}"
 			tasks: [{
 				id: "2156EC1DBE4BECB0"
-				item: "society:sparkling_le_roy"
+				item: { components: { "ftbquests:missing_item": "society:sparkling_le_roy" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -1258,10 +1014,9 @@
 		{
 			id: "1F23B0E775AD060D"
 			optional: true
-			subtitle: "{ftbquests.chapter.drinks.quest1F23B0E775AD060D.subtitle}"
 			tasks: [{
 				id: "3E70B5B8F6D3BFB6"
-				item: "society:laputa_franc"
+				item: { components: { "ftbquests:missing_item": "society:laputa_franc" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -1270,15 +1025,13 @@
 		{
 			id: "51CCE1E8F9C7560A"
 			optional: true
-			subtitle: "{ftbquests.chapter.drinks.quest51CCE1E8F9C7560A.subtitle}"
 			tasks: [{
 				id: "5D30D0A1AF9AD89B"
-				item: "society:mana_king"
+				item: { components: { "ftbquests:missing_item": "society:mana_king" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0d
 			y: 6.0d
 		}
 	]
-	title: "{ftbquests.chapter.drinks.title}"
 }

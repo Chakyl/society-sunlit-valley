@@ -1,0 +1,78 @@
+{
+	"disableCrouchMining": false,
+	"disableExtraFoodExhaustion": false,
+	"disableExtraToolDamage": false,
+	"dynamicMiningSpeed": {
+		"disable": false,
+		"maxSpeedMultiplication": 16.0,
+		"speedMultiplication": 0.5
+	},
+	"treeLifetimeLength": 4.0,
+	"trees": {
+		"chorusTree": {
+			"allowedToolFilter": {
+				"blacklist": [],
+				"whitelist": [],
+				"whitelistedTags": []
+			},
+			"enabled": true,
+			"requireTool": false
+		},
+		"genericTree": {
+			"algorithm": {
+				"maxLeavesRadius": 7,
+				"maxLogAmount": 256,
+				"shouldIgnorePersistentLeaves": true
+			},
+			"allowedToolFilter": {
+				"blacklist": [],
+				"whitelist": [],
+				"whitelistedTags": [
+					"minecraft:axes"
+				]
+			},
+			"leavesFilter": {
+				"blacklist": [],
+				"whitelist": [],
+				"whitelistedTags": [
+					"minecraft:leaves"
+				]
+			},
+			"logFilter": {
+				"blacklist": [],
+				"whitelist": [],
+				"whitelistedTags": [
+					"minecraft:logs"
+				]
+			},
+			"enabled": true,
+			"requireTool": false
+		},
+		"mushroomTree": {
+			"allowedToolFilter": {
+				"blacklist": [],
+				"whitelist": [],
+				"whitelistedTags": []
+			},
+			"enabled": true,
+			"requireTool": false
+		},
+		"verticalTree": {
+			"filter": {
+				"blacklist": [],
+				"whitelist": [
+					"minecraft:cactus",
+					"minecraft:bamboo"
+				],
+				"whitelistedTags": []
+			},
+			"allowedToolFilter": {
+				"blacklist": [],
+				"whitelist": [],
+				"whitelistedTags": []
+			},
+			"enabled": true,
+			"requireTool": false
+		}
+	}
+}

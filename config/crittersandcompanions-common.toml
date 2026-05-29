@@ -1,17 +1,21 @@
-
 [necklace]
-	#Range: 0.0 ~ 1.0
+	# Default: 0.20000000298023224
+	# Range: 0.0 ~ 1.0
 	swim_sped = 0.20000000298023224
-	#Range: 0.0 ~ 1.0
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 1.0
 	drowned_range_debuff = 0.10000000149011612
-	#Range: 0.0 ~ 1.0
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 1.0
 	guardian_range_debuff = 0.10000000149011612
 
 [grappling_hook]
-	#Range: 0.0 ~ 10.0
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
 	launch_speed = 1.0
-	#Range: 1.0 ~ 1000.0
+	# Default: 4.0
+	# Range: 1.0 ~ 1000.0
 	max_speed = 4.0
-	#Range: 4.0 ~ 128.0
+	# Default: 32.0
+	# Range: 4.0 ~ 128.0
 	max_distance = 32.0
-

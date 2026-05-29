@@ -5,11 +5,7 @@
 	filename: "fishing"
 	group: "15230846E14B6926"
 	icon: {
-		Count: 1
 		id: "minecraft:fishing_rod"
-		tag: {
-			Damage: 0
-		}
 	}
 	id: "377D458757642E97"
 	images: [
@@ -796,13 +792,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3A999AE548F93448"
-				item: {
-					Count: 1
-					id: "aquaculture:minnow"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "aquaculture:minnow" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.5d
@@ -814,7 +804,7 @@
 			shape: "none"
 			tasks: [{
 				id: "11EB7B14BFAC2764"
-				item: "aquaculture:perch"
+				item: { components: { "ftbquests:missing_item": "aquaculture:perch" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.976190476190489d
@@ -826,7 +816,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7068D0794B1CA163"
-				item: "aquaculture:bluegill"
+				item: { components: { "ftbquests:missing_item": "aquaculture:bluegill" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 19.0d
@@ -839,7 +829,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "3DA6D478CB6F216E"
-				item: "minecraft:pufferfish"
+				item: { count: 1, id: "minecraft:pufferfish" }
 				type: "item"
 			}]
 			x: -0.09523809523808069d
@@ -851,7 +841,7 @@
 			shape: "none"
 			tasks: [{
 				id: "24C2869DB5D39C8D"
-				item: "aquaculture:atlantic_herring"
+				item: { components: { "ftbquests:missing_item": "aquaculture:atlantic_herring" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.595238095238081d
@@ -863,7 +853,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5A59269E1EF2E4B4"
-				item: "minecraft:salmon"
+				item: { count: 1, id: "minecraft:salmon" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -876,7 +866,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "329769432399914E"
-				item: "aquaculture:blackfish"
+				item: { components: { "ftbquests:missing_item": "aquaculture:blackfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.4047619047619193d
@@ -888,7 +878,7 @@
 			shape: "none"
 			tasks: [{
 				id: "73B69D458DFC797A"
-				item: "aquaculture:brown_trout"
+				item: { components: { "ftbquests:missing_item": "aquaculture:brown_trout" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.5d
@@ -900,7 +890,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1AC83FCD9B891027"
-				item: "aquaculture:carp"
+				item: { components: { "ftbquests:missing_item": "aquaculture:carp" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.976190476190489d
@@ -912,7 +902,7 @@
 			shape: "none"
 			tasks: [{
 				id: "58C341F9CA7F0003"
-				item: "aquaculture:piranha"
+				item: { components: { "ftbquests:missing_item": "aquaculture:piranha" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.476190476190489d
@@ -924,7 +914,7 @@
 			shape: "none"
 			tasks: [{
 				id: "6F1F7170B99B6970"
-				item: "aquaculture:smallmouth_bass"
+				item: { components: { "ftbquests:missing_item": "aquaculture:smallmouth_bass" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.5d
@@ -936,7 +926,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0939B37CBD427FBC"
-				item: "minecraft:cod"
+				item: { count: 1, id: "minecraft:cod" }
 				type: "item"
 			}]
 			x: 19.0d
@@ -948,7 +938,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0F02DDA217DD1482"
-				item: "aquaculture:pollock"
+				item: { components: { "ftbquests:missing_item": "aquaculture:pollock" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0952380952380807d
@@ -960,7 +950,7 @@
 			shape: "none"
 			tasks: [{
 				id: "722757036EE8273F"
-				item: "aquaculture:rainbow_trout"
+				item: { components: { "ftbquests:missing_item": "aquaculture:rainbow_trout" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 20.5d
@@ -972,7 +962,7 @@
 			shape: "none"
 			tasks: [{
 				id: "443B13FC2F4AA5DC"
-				item: "aquaculture:jellyfish"
+				item: { components: { "ftbquests:missing_item": "aquaculture:jellyfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0952380952380807d
@@ -984,7 +974,7 @@
 			shape: "none"
 			tasks: [{
 				id: "74C847CFDE029FD3"
-				item: "aquaculture:pink_salmon"
+				item: { components: { "ftbquests:missing_item": "aquaculture:pink_salmon" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.5d
@@ -996,7 +986,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3BB14A5CF2E2B871"
-				item: "minecraft:tropical_fish"
+				item: { count: 1, id: "minecraft:tropical_fish" }
 				type: "item"
 			}]
 			x: -1.5952380952380807d
@@ -1009,7 +999,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "142498F219EBB544"
-				item: "aquaculture:red_grouper"
+				item: { components: { "ftbquests:missing_item": "aquaculture:red_grouper" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.09523809523808069d
@@ -1021,7 +1011,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4AFA0D1717A4B95A"
-				item: "aquaculture:gar"
+				item: { components: { "ftbquests:missing_item": "aquaculture:gar" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.976190476190489d
@@ -1033,7 +1023,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1FE95F788ADB83CB"
-				item: "aquaculture:muskellunge"
+				item: { components: { "ftbquests:missing_item": "aquaculture:muskellunge" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -1045,7 +1035,7 @@
 			shape: "none"
 			tasks: [{
 				id: "23F85FC13ADA1922"
-				item: "aquaculture:synodontis"
+				item: { components: { "ftbquests:missing_item": "aquaculture:synodontis" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 20.5d
@@ -1057,7 +1047,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4C4C86EBDBD50D77"
-				item: "aquaculture:tambaqui"
+				item: { components: { "ftbquests:missing_item": "aquaculture:tambaqui" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 19.0d
@@ -1069,7 +1059,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3FA2C58C614D3CE0"
-				item: "aquaculture:atlantic_cod"
+				item: { components: { "ftbquests:missing_item": "aquaculture:atlantic_cod" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0952380952380807d
@@ -1081,7 +1071,7 @@
 			shape: "none"
 			tasks: [{
 				id: "12F7158F3D76068E"
-				item: "aquaculture:boulti"
+				item: { components: { "ftbquests:missing_item": "aquaculture:boulti" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.476190476190489d
@@ -1093,13 +1083,7 @@
 			shape: "none"
 			tasks: [{
 				id: "695AE9CF26A8F900"
-				item: {
-					Count: 1
-					id: "aquaculture:leech"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "aquaculture:leech" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.976190476190489d
@@ -1111,7 +1095,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5E0AA1AE4E4ECBAD"
-				item: "aquaculture:catfish"
+				item: { components: { "ftbquests:missing_item": "aquaculture:catfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -1123,7 +1107,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3C8AFF7BBE30583E"
-				item: "aquaculture:tuna"
+				item: { components: { "ftbquests:missing_item": "aquaculture:tuna" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.595238095238081d
@@ -1135,7 +1119,7 @@
 			shape: "none"
 			tasks: [{
 				id: "45EF8DE16607613F"
-				item: "aquaculture:bayad"
+				item: { components: { "ftbquests:missing_item": "aquaculture:bayad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.5d
@@ -1147,7 +1131,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1BE5493794717046"
-				item: "aquaculture:arapaima"
+				item: { components: { "ftbquests:missing_item": "aquaculture:arapaima" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.476190476190489d
@@ -1159,7 +1143,7 @@
 			shape: "none"
 			tasks: [{
 				id: "6CD5775B46E69524"
-				item: "aquaculture:atlantic_halibut"
+				item: { components: { "ftbquests:missing_item": "aquaculture:atlantic_halibut" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5952380952380807d
@@ -1171,7 +1155,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3B944CA1271865B2"
-				item: "aquaculture:starshell_turtle"
+				item: { components: { "ftbquests:missing_item": "aquaculture:starshell_turtle" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 20.5d
@@ -1183,7 +1167,7 @@
 			shape: "none"
 			tasks: [{
 				id: "799282040F9EA43F"
-				item: "aquaculture:brown_shrooma"
+				item: { components: { "ftbquests:missing_item": "aquaculture:brown_shrooma" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.09523809523808069d
@@ -1195,7 +1179,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2A0258D35894A5C5"
-				item: "aquaculture:red_shrooma"
+				item: { components: { "ftbquests:missing_item": "aquaculture:red_shrooma" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.4047619047619193d
@@ -1207,7 +1191,7 @@
 			shape: "none"
 			tasks: [{
 				id: "454C03628A3529C0"
-				item: "aquaculture:arrau_turtle"
+				item: { components: { "ftbquests:missing_item": "aquaculture:arrau_turtle" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 19.0d
@@ -1219,7 +1203,7 @@
 			shape: "none"
 			tasks: [{
 				id: "351DEDBE2F5D6211"
-				item: "aquaculture:capitaine"
+				item: { components: { "ftbquests:missing_item": "aquaculture:capitaine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.095238095238081d
@@ -1231,7 +1215,7 @@
 			shape: "none"
 			tasks: [{
 				id: "22F01D3213337CB7"
-				item: "aquaculture:box_turtle"
+				item: { components: { "ftbquests:missing_item": "aquaculture:box_turtle" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.5d
@@ -1243,7 +1227,7 @@
 			shape: "none"
 			tasks: [{
 				id: "67894240D363154E"
-				item: "aquaculture:pacific_halibut"
+				item: { components: { "ftbquests:missing_item": "aquaculture:pacific_halibut" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.595238095238081d
@@ -1255,7 +1239,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3445F0E56FDD27F5"
-				item: "crabbersdelight:clam"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:clam" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 21.0d
@@ -1267,7 +1251,7 @@
 			shape: "none"
 			tasks: [{
 				id: "10C18F73E4AA1093"
-				item: "crabbersdelight:shrimp"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:shrimp" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 22.5d
@@ -1279,7 +1263,7 @@
 			shape: "none"
 			tasks: [{
 				id: "696DDC1CDC530743"
-				item: "crabbersdelight:clawster"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:clawster" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 22.0d
@@ -1291,7 +1275,7 @@
 			shape: "none"
 			tasks: [{
 				id: "76BB3830833FCED1"
-				item: "crabbersdelight:crab"
+				item: { components: { "ftbquests:missing_item": "crabbersdelight:crab" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 23.5d
@@ -1303,7 +1287,7 @@
 			shape: "none"
 			tasks: [{
 				id: "77DACE0BD28E5D82"
-				item: "netherdepthsupgrade:lava_pufferfish"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:lava_pufferfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.190476190476204d
@@ -1315,7 +1299,7 @@
 			shape: "none"
 			tasks: [{
 				id: "594FEDF1B4B77B9C"
-				item: "netherdepthsupgrade:obsidianfish"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:obsidianfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 5.690476190476204d
@@ -1327,7 +1311,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3DE086B98D83ED36"
-				item: "netherdepthsupgrade:searing_cod"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:searing_cod" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.190476190476204d
@@ -1339,7 +1323,7 @@
 			shape: "none"
 			tasks: [{
 				id: "43AC9CCC66EFB60D"
-				item: "netherdepthsupgrade:bonefish"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:bonefish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.690476190476204d
@@ -1351,7 +1335,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0A455E3C22DA1869"
-				item: "netherdepthsupgrade:wither_bonefish"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:wither_bonefish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.190476190476204d
@@ -1363,7 +1347,7 @@
 			shape: "none"
 			tasks: [{
 				id: "295CFA091A8721B1"
-				item: "netherdepthsupgrade:blazefish"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:blazefish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.690476190476204d
@@ -1375,7 +1359,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5FABC2FBC1AA02AD"
-				item: "netherdepthsupgrade:magmacubefish"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:magmacubefish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -1387,7 +1371,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3B6378AB87081CDF"
-				item: "netherdepthsupgrade:glowdine"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:glowdine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -1399,7 +1383,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4EA561B2C007684F"
-				item: "netherdepthsupgrade:soulsucker"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:soulsucker" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1489,25 +1473,20 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1
-				id: "trofers:large_pillar"
-				tag: {
-					BlockEntityTag: {
-						Trophy: "trofers:fish"
-					}
+				components: {
+					"ftbquests:missing_item": "trofers:large_pillar"
 				}
+				id: "ftbquests:missing_item"
 			}
 			id: "0C17CF9D782787BE"
 			rewards: [{
 				id: "436CC95C4472006E"
 				item: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:fish"
-						}
+					components: {
+						"ftbquests:missing_item": "trofers:large_pillar"
 					}
+					count: 1
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]
@@ -1515,19 +1494,16 @@
 			size: 3.0d
 			tasks: [{
 				icon: {
-					Count: 1
-					id: "aquaculture:neptunium_fishing_rod"
-					tag: {
-						Damage: 0
+					components: {
+						"ftbquests:missing_item": "aquaculture:neptunium_fishing_rod"
 					}
+					id: "ftbquests:missing_item"
 				}
 				id: "13FE62BC8E043289"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.fishing.questC17CF9D782787BE.task.1440697492781150857.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.fishing.questC17CF9D782787BE.title}"
 			x: 8.0d
 			y: 0.5833333333333215d
 		}
@@ -1538,7 +1514,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "42C1F28AB977925A"
-				item: "unusualfishmod:raw_sneep_snorp"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_sneep_snorp" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5952380952380807d
@@ -1550,7 +1526,7 @@
 			shape: "none"
 			tasks: [{
 				id: "08AB845146F7C772"
-				item: "unusualfishmod:raw_picklefish"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_picklefish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.595238095238081d
@@ -1562,7 +1538,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0DA9242210B3FFCF"
-				item: "unusualfishmod:raw_beaked_herring"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_beaked_herring" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.476190476190489d
@@ -1574,7 +1550,7 @@
 			shape: "none"
 			tasks: [{
 				id: "139BCCF4C5C46E11"
-				item: "unusualfishmod:raw_sailor_barb"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_sailor_barb" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0952380952380807d
@@ -1586,7 +1562,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2ED729EF394F9E86"
-				item: "unusualfishmod:raw_demon_herring"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_demon_herring" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.09523809523808069d
@@ -1598,7 +1574,7 @@
 			shape: "none"
 			tasks: [{
 				id: "131A1A97184CFAD4"
-				item: "unusualfishmod:raw_triple_twirl_pleco"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_triple_twirl_pleco" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.4047619047619193d
@@ -1610,7 +1586,7 @@
 			shape: "none"
 			tasks: [{
 				id: "26715366DF5577C7"
-				item: "unusualfishmod:raw_copperflame_anthias"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_copperflame_anthias" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.5952380952380807d
@@ -1623,7 +1599,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "66E2DE831FF4D8B9"
-				item: "unusualfishmod:raw_drooping_gourami"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_drooping_gourami" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.4047619047619193d
@@ -1635,7 +1611,7 @@
 			shape: "none"
 			tasks: [{
 				id: "69EA4CE06BA93036"
-				item: "unusualfishmod:raw_duality_damselfish"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_duality_damselfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -1647,7 +1623,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4D49BA4895EF41D4"
-				item: "unusualfishmod:raw_blind_sailfin"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_blind_sailfin" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.5d
@@ -1659,7 +1635,7 @@
 			shape: "none"
 			tasks: [{
 				id: "082DE648F6E71731"
-				item: "unusualfishmod:raw_circus_fish"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_circus_fish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.976190476190489d
@@ -1671,7 +1647,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1832D2F5813E831C"
-				item: "unusualfishmod:raw_hatchetfish"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_hatchetfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.476190476190489d
@@ -1683,7 +1659,7 @@
 			shape: "none"
 			tasks: [{
 				id: "61034C2E2C148C8A"
-				item: "unusualfishmod:raw_spindlefish"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_spindlefish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.0952380952380807d
@@ -1695,7 +1671,7 @@
 			shape: "none"
 			tasks: [{
 				id: "202BCD115752F902"
-				item: "unusualfishmod:raw_bark_angelfish"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_bark_angelfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.976190476190489d
@@ -1707,7 +1683,7 @@
 			shape: "none"
 			tasks: [{
 				id: "79AD5249B43C7231"
-				item: "unusualfishmod:raw_amber_goby"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_amber_goby" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.976190476190489d
@@ -1719,7 +1695,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7670AF7E12648763"
-				item: "unusualfishmod:raw_eyelash"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_eyelash" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.976190476190489d
@@ -1731,7 +1707,7 @@
 			shape: "none"
 			tasks: [{
 				id: "63DD54E7579299E7"
-				item: "unusualfishmod:raw_aero_mono"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_aero_mono" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.476190476190489d
@@ -1743,7 +1719,7 @@
 			shape: "none"
 			tasks: [{
 				id: "33BA7D18AEBE68FD"
-				item: "unusualfishmod:raw_snowflake"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_snowflake" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.976190476190489d
@@ -1755,7 +1731,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "7ACA6BA09D52FDDB"
-				item: "society:neptuna"
+				item: { count: 1, id: "society:neptuna" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1767,7 +1743,7 @@
 			shape: "none"
 			tasks: [{
 				id: "64C9485723623185"
-				item: "netherdepthsupgrade:fortress_grouper"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:fortress_grouper" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -1779,7 +1755,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7A013265CAC9EC3A"
-				item: "aquaculture:goldfish"
+				item: { components: { "ftbquests:missing_item": "aquaculture:goldfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.4047619047619193d
@@ -1791,7 +1767,7 @@
 			shape: "none"
 			tasks: [{
 				id: "4EB6E2EB36456B86"
-				item: "netherdepthsupgrade:eyeball_fish"
+				item: { components: { "ftbquests:missing_item": "netherdepthsupgrade:eyeball_fish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -1803,7 +1779,7 @@
 			shape: "none"
 			tasks: [{
 				id: "01E1F6DE52138FB1"
-				item: "crittersandcompanions:koi_fish"
+				item: { count: 1, id: "crittersandcompanions:koi_fish" }
 				type: "item"
 			}]
 			x: 7.976190476190489d
@@ -1815,7 +1791,7 @@
 			shape: "none"
 			tasks: [{
 				id: "028110E3DCC15C73"
-				item: "unusualfishmod:raw_forkfish"
+				item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_forkfish" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5952380952380807d
@@ -1827,7 +1803,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2C1953C5140A6C7A"
-				item: "aquaculture:bluegill"
+				item: { components: { "ftbquests:missing_item": "aquaculture:bluegill" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.476190476190489d
@@ -1839,13 +1815,7 @@
 			shape: "none"
 			tasks: [{
 				id: "19F152A183EE713A"
-				item: {
-					Count: 1
-					id: "aquaculture:minnow"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "aquaculture:minnow" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.476190476190489d
@@ -1857,7 +1827,7 @@
 			shape: "none"
 			tasks: [{
 				id: "446E4BE0FB65EBB4"
-				item: "society:river_jelly"
+				item: { count: 1, id: "society:river_jelly" }
 				type: "item"
 			}]
 			x: 12.5d
@@ -1869,7 +1839,7 @@
 			shape: "none"
 			tasks: [{
 				id: "60C7010E890D0D2E"
-				item: "society:ocean_jelly"
+				item: { count: 1, id: "society:ocean_jelly" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -1881,12 +1851,11 @@
 			shape: "none"
 			tasks: [{
 				id: "0380803223256599"
-				item: "society:nether_jelly"
+				item: { count: 1, id: "society:nether_jelly" }
 				type: "item"
 			}]
 			x: 8.0d
 			y: 5.0d
 		}
 	]
-	title: "{ftbquests.chapter.fishing.title}"
 }
