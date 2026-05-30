@@ -4,10 +4,11 @@
 ^^^
 --- 
 # 4.0.9
-- Auto-Petter now triggers at 7am to avoid hunger debuff
-- Fixed default journeymap configs
-- Fixed season quest not having important info
-
+- Fixed serene seasons config syncing (Thanks Hexagreen)
+- Fixed potential crash involving coin leaderboards 
+- Fixed potential crashes involving blocks that scan for other blocks 
+- Fixed potential crash with Skull Cavern regeneration
+- Fixed fish pond quest selection (Thanks Redd)
 ## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
 - Added 6 handmade villagers with art by NifastGreentail and Nitbe
@@ -289,3 +290,9 @@
 - Fixed Fluid Grid being unobtainable
 - Fixed Mashed Potatoes and Pasta with Broccoli recipes having wrong milk tag
 - Fixed /time set causing plushies to not get harvested
+
+
+# 4.0.8
+- Auto-Petter now triggers at 7am to avoid hunger debuff
+- Fixed default journeymap configs
+- Fixed season quest not having important info
