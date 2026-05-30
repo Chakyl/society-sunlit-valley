@@ -45,7 +45,7 @@ const handleNpc = (e, npcId, level, server, target, player) => {
             dayLastGifted: -4,
             maxGifted: false
         }
-    } else if (true || Number(npcData.friendship) == -1) {
+    } else if (Number(npcData.friendship) == -1) {
         npcData.friendship = 5
         server.runCommandSilent(
             `dialog ${player.getUuid()} show ${player.username} ${npcId}_intro`
@@ -152,6 +152,8 @@ const handleNpc = (e, npcId, level, server, target, player) => {
                     server.runCommandSilent(
                         `dialog ${player.getUuid()} show ${player.username} carpenter_unique_need_to_buy`
                     );
+                } else if (npcId === "mystical_oak") {
+                    return;
                 } else {
                     server.runCommandSilent(`openshop ${player.username} ${npcId}`)
 
