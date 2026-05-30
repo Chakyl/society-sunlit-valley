@@ -8,8 +8,6 @@ ServerEvents.tags('item', event => {
     event.add('society:storage_upgrade_prismatic', ['sophisticatedstorage:prismatic_storage_upgrade', 'sophisticatedstorage:stack_upgrade_omega_tier'])
 })
 
-
-
 ServerEvents.recipes((event) => {
 
 function stonecuttingSwitching(switchingTag) {
