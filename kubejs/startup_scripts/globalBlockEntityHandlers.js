@@ -477,6 +477,7 @@ const getMushroomLogData = (level, centerPos, radius) => {
     new BlockPos(x - radius, y - radius, z - radius),
     [x + radius, y + radius, z + radius]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
     if (scanBlock.hasTag("society:mushroom_log_detects")) {
       scannedBlocks++;
@@ -823,12 +824,10 @@ global.onDrain = (blockInfo, fluid, sim) => {
 };
 
 // Text display utils
-global.clearOldTextDisplay = (block, id) => {
+global.clearOldTextDisplay = (block, level, id) => {
   const { x, y, z } = block;
-  block
-    .getLevel()
-    .getServer()
-    .getEntities()
+  level.getEntitiesWithin(AABB.ofBlock(block).inflate(3))
+    .filter((entityType) => entityType.type === "minecraft:text_display")
     .forEach((entity) => {
       entity.getTags().forEach((tag) => {
         if (tag === `${id}-${x}-${y}-${z}`) {
@@ -1348,6 +1347,7 @@ global.getTaggedBlocksInRadius = (
     new BlockPos(x - radius, y - radius, z - radius),
     [x + radius, y + radius, z + radius]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
     if (scanBlock.hasTag(scanTag)) {
       scannedBlocks++;

@@ -19,6 +19,7 @@ const runTotem = (e, type) => {
     [x + radius, y + 1, z + radius]
   )) {
     if (isEdging(pos, x, z, radius)) {
+      if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       aboveBlock = level.getBlock(pos.above());
       if (

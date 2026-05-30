@@ -1,13 +1,14 @@
 ^^^
 ## The Heart of the Community
-### v4.0.8
+### v4.0.9
 ^^^
 --- 
-# 4.0.8
-- Auto-Petter now triggers at 7am to avoid hunger debuff
-- Fixed default journeymap configs
-- Fixed season quest not having important info
-
+# 4.0.9
+- Fixed serene seasons config syncing (Thanks Hexagreen)
+- Fixed potential crash involving coin leaderboards 
+- Fixed potential crashes involving blocks that scan for other blocks 
+- Fixed potential crash with Skull Cavern regeneration
+- Fixed fish pond quest selection (Thanks Redd)
 ## 4.0.0
 - Added new NPC mechanics to completely replace the previous villager system
 - Added 6 handmade villagers with art by NifastGreentail and Nitbe
@@ -143,44 +144,8 @@
 - Renamed Grape Bushes to wild grapes and disabled their growth
 - Various fixes that make the changelog too long to render
 
-## 4.0.1-4.0.3
+## 4.0.1-4.0.4
 -  Changelog got too long so removed
-
-## 4.0.4
-- Added plushie wand functionality: Left clicking to instantly break plushies
-- Added conversion for flint to pebbles
-- Added fire resistance to Fish Pond Baskets
-- Added some es_es translations (for real this time (Thanks Tukita & Markis_nub))
-- Added back Brown and Blue eggs and added recipes for them
-- Added large egg tag to Galliraptor, Penguin, Flamingo eggs
-- Added ability to make blueprints translatable (Thanks Thirace446)
-- Added instamining fruit tree fruits with shears (Thanks Mayhan zvabnyk's BF)
-- Added safe instabreaking for fruit tree fruits using shears 
-- Updated ko_kr translation (Thanks Hexagreen)
-- Season name in top left will give information on winter/infertile biomes
-- Increased auto-petter area 3x3x3 -> 5x5x5
-- Increased affection gain mult from animal fancy 1.5x -> 2x
-- Increased husbandry experience gain when petting 10 -> 10 * affection hearts
-- Increased mushroom trade prices to match new values
-- Increased Artisan Hopper & Fish Pond Basket runtime from 10s -> 30s for performance
-- Caroline now appreciates cooked dishes slightly more
-- Removed Scorpion spawn from the Desert Fault and replaced it with Evoker
-- Removed ability for Treepers to naturally spawn due to them being fps killers and added a recipe for the spawn egg
-- Fixed Splendid Slimes being carryonable
-- Fixed Plushie Wand potentially causing chunk corruption
-- Fixed Plushie Wand extracting the wrong type of Wooly Cow
-- Fixed Cruncher being listed as Red Panda
-- Fixed Snails and Turtles not dropping quality
-- Fixed deployers being able to right click npcs
-- Fixed Gray Anatomy upgrade not working with Artisan Hoppers
-- Fixed Mushroom Log not being harvested by Artisan Hoppers (Thanks Mayhan zvabnyk's BF)
-- Fixed Black Opal not working properly + general legacy artisan machine cleanup (Thanks Mayhan zvabnyk's BF)
-- Fixed issue where carrying mobs while a blueprint places causes incomplete builds
-- Fixed Seed Maker and other quality-preserving machines applying quality nbt to drops at 0 quality
-- Fixed extremely weird hitbox of villager home block
-- Fixed leaves instantly decaying when placing blockapedia
-- Fixed edge cases where villager home blocks were still binding to the incorrect villager
-- Fixed villagers not liking things they should have in specific cases
 
 ## 4.0.5
 - Added day count to crop Jade and other important info (Thanks Hexagreen)
@@ -289,3 +254,8 @@
 - Fixed Fluid Grid being unobtainable
 - Fixed Mashed Potatoes and Pasta with Broccoli recipes having wrong milk tag
 - Fixed /time set causing plushies to not get harvested
+
+# 4.0.8
+- Auto-Petter now triggers at 7am to avoid hunger debuff
+- Fixed default journeymap configs
+- Fixed season quest not having important info

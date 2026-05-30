@@ -45,6 +45,7 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
     player.z + 12,
   ])) {
     success = false;
+    if (!level.isLoaded(pos)) continue;
     scannedBlock = level.getBlock(pos);
     fruitDrop = player.level.createEntity("minecraft:item");
     if (["vinery:dark_cherry_leaves", "vinery:apple_leaves"].includes(scannedBlock.id)) {

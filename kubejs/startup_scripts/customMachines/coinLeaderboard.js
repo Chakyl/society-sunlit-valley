@@ -22,13 +22,13 @@ const updateLeaderboardMap = (server) => {
     .slice(0, 10);
 };
 
-global.updateLeaderboard = (block, server) => {
+global.updateLeaderboard = (block, level, server) => {
   let calcY = block.y + 3;
   let leaderboardMap = updateLeaderboardMap(server);
   if (!leaderboardMap) return;
   if (global.susFunctionLogging)
     console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
-  global.clearOldTextDisplay(block, "leaderboard");
+  global.clearOldTextDisplay(block, level, "leaderboard");
 
   // Display leaderboard name
   global.spawnTextDisplay(
@@ -68,7 +68,7 @@ StartupEvents.registry("block", (e) => {
     })
     .blockEntity((be) => {
       be.serverTick(200, 0, (tick) => {
-        global.updateLeaderboard(tick.block, tick.level.server);
+        global.updateLeaderboard(tick.block, tick.level, tick.level.server);
       });
     });
 });
