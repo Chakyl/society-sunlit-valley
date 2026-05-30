@@ -1133,4 +1133,10 @@ StartupEvents.registry("item", (e) => {
   e.create("veggiesdelight:garlic_seed").texture(
     "veggiesdelight:item/garlic_seed"
   );
+
+  e.create("sophisticatedbackpacks:diamond_backpack_upgrade")
+  e.create("sophisticatedbackpacks:prismatic_backpack_upgrade")
+  e.create("sophisticatedstorage:diamond_storage_upgrade")
+  e.create("sophisticatedstorage:prismatic_storage_upgrade")
+
 });
