@@ -366,24 +366,21 @@ global.validatePond = (block, level, lavaFish) => {
     west: { xOffset: 0, zOffset: 1 },
   };
   const { startX, startZ, endX, endZ } = pondWaterCheckMap[facing];
-  const { xOffset, zOffset } = pondCheckMap[facing];
-  const blockAcross = new BlockPos(x + xOffset, y, z + zOffset);
-  const conflictingPonds =
-    level.getBlock(blockAcross).id === "society:fish_pond" ||
-    level.getBlock(
-      new BlockPos(
-        x + adjacentPondMap[facing].xOffset,
-        y,
-        z + adjacentPondMap[facing].zOffset,
-      ),
-    ).id === "society:fish_pond" ||
-    level.getBlock(
-      new BlockPos(
-        x - adjacentPondMap[facing].xOffset,
-        y,
-        z - adjacentPondMap[facing].zOffset,
-      ),
-    ).id === "society:fish_pond";
+  let adjacentPos1 =
+    new BlockPos(
+      x + adjacentPondMap[facing].xOffset,
+      y,
+      z + adjacentPondMap[facing].zOffset,
+    );
+  let adjacentPos2 =
+    new BlockPos(
+      x - adjacentPondMap[facing].xOffset,
+      y,
+      z - adjacentPondMap[facing].zOffset,
+    );
+
+  if (!level.isLoaded(adjacentPos1) || !level.isLoaded(adjacentPos2)) return false;
+  const conflictingPonds = level.getBlock(adjacentPos1).id === "society:fish_pond" || level.getBlock(adjacentPos2).id === "society:fish_pond";
   let waterAmount = 0;
   let scannedId = "";
   let scannedBlockProperties;
@@ -392,6 +389,8 @@ global.validatePond = (block, level, lavaFish) => {
     new BlockPos(x + startX, y, z + startZ),
     [x + endX, y, z + endZ],
   )) {
+    if (!level.isLoaded(pos)) return false;
+
     scannedBlockProperties = level.getBlock(pos).properties;
     scannedId = level.getBlock(pos).id;
     if (lavaFish && scannedId === "minecraft:lava") {

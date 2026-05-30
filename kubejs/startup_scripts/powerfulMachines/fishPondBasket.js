@@ -40,7 +40,7 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   if (
     newProperties.get("mature").toLowerCase() === "true" &&
     level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
-    population > 0 &&  max_population === population
+    population > 0 && max_population === population
   ) {
     let fishie = global.handleFishExtraction(fishPond, player, server);
     recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
@@ -129,6 +129,7 @@ StartupEvents.registry("block", (event) => {
             new BlockPos(x - radius, y - radius, z - radius),
             [x + radius, y + radius, z + radius]
           )) {
+            if (!level.isLoaded(pos)) continue;
             scanBlock = level.getBlock(pos);
             if (scanBlock.id === "society:fish_pond") {
               global.runFishPondBasket(entity, pos.immutable(), attachedPlayer);

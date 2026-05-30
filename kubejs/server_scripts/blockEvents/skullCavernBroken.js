@@ -30,9 +30,8 @@ const scheduleFunction = (level, pos, server, rockType) => {
   if (global.susFunctionLogging)
     console.log("[SOCIETY-SUSFN] skullCavernBroken.js - Regen Air");
   server.schedule(5, () => {
-    let toggleBit =
-      level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()]
-        .toggleBit;
+    let toggleBit = level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
+    if (!level.isLoaded(pos)) return;
     if (
       level.getBlock(pos) &&
       ["minecraft:air", "minecraft:void_air", "minecraft:cave_air"].includes(
@@ -107,6 +106,7 @@ BlockEvents.broken(
 
 const scheduleUnplaceableRegenFunction = (level, pos, server, id) => {
   server.scheduleInTicks(100, () => {
+    if (!level.isLoaded(pos)) return;
     if (level.getBlock(pos) == "minecraft:air") {
       level.getBlock(pos).set(id);
       level.spawnParticles(
@@ -217,6 +217,7 @@ BlockEvents.broken(
         new BlockPos(x - radius, y - radius, z - radius),
         [x + radius, y + radius, z + radius]
       )) {
+        if (!level.isLoaded(pos)) continue;
         scanBlock = level.getBlock(pos);
         abovePos = scanBlock.getPos().above();
         if (

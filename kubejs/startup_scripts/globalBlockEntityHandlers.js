@@ -477,6 +477,7 @@ const getMushroomLogData = (level, centerPos, radius) => {
     new BlockPos(x - radius, y - radius, z - radius),
     [x + radius, y + radius, z + radius]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
     if (scanBlock.hasTag("society:mushroom_log_detects")) {
       scannedBlocks++;
@@ -1346,6 +1347,7 @@ global.getTaggedBlocksInRadius = (
     new BlockPos(x - radius, y - radius, z - radius),
     [x + radius, y + radius, z + radius]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
     if (scanBlock.hasTag(scanTag)) {
       scannedBlocks++;
