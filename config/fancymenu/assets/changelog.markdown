@@ -291,7 +291,6 @@
 - Fixed Mashed Potatoes and Pasta with Broccoli recipes having wrong milk tag
 - Fixed /time set causing plushies to not get harvested
 
-
 # 4.0.8
 - Auto-Petter now triggers at 7am to avoid hunger debuff
 - Fixed default journeymap configs
