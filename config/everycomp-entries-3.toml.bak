@@ -61,8 +61,10 @@
 			apple_fruit = true
 			pear_fruit = true
 
-		[types.leaves_type.irregular_implements]
-			spectre = true
+		[types.leaves_type.vinery]
+			grapevine = true
+			dark_cherry = true
+			apple = true
 
 		[types.wood_type.autumnity]
 			maple = true
@@ -102,8 +104,8 @@
 			walnut = true
 			willow = true
 
-		[types.wood_type.irregular_implements]
-			spectre = true
+		[types.wood_type.vinery]
+			dark_cherry = true
 
 		[types.cake.veggiesdelight]
 			carrot_cake = true

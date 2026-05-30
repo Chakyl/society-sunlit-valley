@@ -6,7 +6,9 @@ ServerEvents.recipes((event) => {
 
   const removedInputs = [];
   
-  const removedOutputs = ['@sophisticatedbackpacks'];
+  const removedOutputs = [
+    '@sophisticatedbackpacks'
+];
 
   const removedMods = []
 
