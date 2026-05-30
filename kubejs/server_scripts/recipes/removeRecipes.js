@@ -7,7 +7,9 @@ ServerEvents.recipes((event) => {
   const removedInputs = [];
   
   const removedOutputs = [
-    '@sophisticatedbackpacks'
+    '@sophisticatedbackpacks',
+    '/^sophisticatedstorage:.*upgrade.*/',
+    '/^sophisticatedstorage:.*downgrade.*/'
 ];
 
   const removedMods = []
