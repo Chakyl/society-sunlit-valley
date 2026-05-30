@@ -353,12 +353,6 @@ global.validatePond = (block, level, lavaFish) => {
     east: { startX: -1, startZ: 1, endX: -4, endZ: -1 },
     west: { startX: 1, startZ: -1, endX: 4, endZ: 1 },
   };
-  const pondCheckMap = {
-    north: { xOffset: 0, zOffset: 5 },
-    south: { xOffset: 0, zOffset: -5 },
-    east: { xOffset: -5, zOffset: 0 },
-    west: { xOffset: 5, zOffset: 0 },
-  };
   const adjacentPondMap = {
     north: { xOffset: 1, zOffset: 0 },
     south: { xOffset: 1, zOffset: 0 },
@@ -518,15 +512,10 @@ global.handleFishPondTick = (tickEvent) => {
           upgraded: upgraded,
           quest: true,
         });
+        let questCount = getRequestedItems(type, max_population).length;
         nbt.merge({
           data: {
-            quest_id: `${rnd(
-              0,
-              getRequestedItems(
-                global.fishPondDefinitions[type - 1],
-                max_population,
-              ).length - 1,
-            )}`,
+            quest_id: `${Math.min(Math.floor(rnd(0, questCount)), questCount - 1)}`,
           },
         });
         global.setBlockEntityData(block, nbt)
