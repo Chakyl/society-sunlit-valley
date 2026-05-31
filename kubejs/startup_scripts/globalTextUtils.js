@@ -82,9 +82,16 @@ global.getCenterETAQueueCommand = (target, preset, duration, text) => `eta queue
 
 /**
  * Returns formatted args with commas escaped for ETA
+ * @param {*} str string for lang arg in ETA
+ * @returns string escaped
+ */
+global.getSanitizedETALangArg = (str) => {
+    return String(str).replace(/,/g, '\\,');
+}
+
+/**
+ * Returns formatted args with commas escaped for ETA
  * @param {*} args Array of strings for lang args in ETA
  * @returns String of words seperated by commas and escaped
  */
-global.getSanitizedETALangArgs = (args) => args.map((str) => {
-    return String(str).replace(/,/g, '\\,');
-}).join(',');
+global.getSanitizedETALangArgs = (args) => args.map(global.getSanitizedETALangArg).join(',');
