@@ -14,6 +14,8 @@
 	creaking_particle_reverse_color = 16545810
 	#allow resin to appear on chests at woodland mansions
 	resin_loot = true
+	#allow Creaking Hearts to generate Creakings even during the day
+	do_creaking_hearts_work_on_day = false
 
 ["Chase the Skies"]
 	#allow dried ghasts to be obtainable through nether fossils and piglin bartering
@@ -68,4 +70,22 @@
 ["Hot as Lava"]
 	#allows chicken jockeys to drop the lava chicken music disc
 	lava_chicken_music_disc = true
+
+["Chaos Cubed"]
+	#allow the generation of Sulfur Cave biomes
+	has_sulfur_caves = true
+	#allow the generation of Sulfur Springs on top of Sulfur Caves
+	has_sulfur_springs = true
+	#allow Potent Sulfur Blocks to generate Geysers
+	do_geysers_erupt = true
+	#allow Sulfur Cubes to spawn on Sulfur Caves
+	has_sulfur_cubes = true
+	#allow Sulfur Cubes with exploding archetypes to explode
+	do_sulfur_cubes_explode = true
+	#allow Sulfur Cubes with damaging archetypes to deal damage
+	do_sulfur_cubes_damage = true
+	#allow Wanderer traders to sell contents from Chaos Cubed
+	do_merchant_trade_chaos_cubed_contents = true
+	#allows the bounce music disc to generate on abandoned mineshafts
+	has_bounce_music_disc = true
 
