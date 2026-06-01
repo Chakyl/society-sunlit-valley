@@ -70,27 +70,6 @@ global.runFeedingTrough = (be, inventory, block, level) => {
   nearbyFarmAnimals.forEach((animal) => {
     feedFunction(level, animal, day, inventory, hasAnimalFeed, hasCandiedFeed, hasManaFeed);
   });
-  // Handle Beds
-  const { x, y, z } = block;
-
-  let scanBlock;
-  for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-    x + radius,
-    y + radius,
-    z + radius,
-  ])) {
-    scanBlock = level.getBlock(pos);
-    if (scanBlock.hasTag("society:animal_bed")) {
-      let nbt = scanBlock.getEntityData();
-      let animal = undefined;
-      let { boundToAnimal, animalInside, entity, entityID } = nbt.data;
-      if (boundToAnimal && animalInside) {
-        animal = level.createEntity(entityID.toString());
-        animal.nbt = entity;
-        feedFunction(level, animal, day, inventory, hasAnimalFeed, hasCandiedFeed, hasManaFeed);
-      }
-    }
-  }
   // Handle visual
   for (let i = 0; i < slots; i++) {
     if (inventory.getStackInSlot(i).hasTag("society:animal_feed"))

@@ -233,6 +233,7 @@ global.runAutoGrabber = (entity) => {
       new BlockPos(x - radius, y - radius, z - radius),
       [x + radius, y + radius, z + radius]
     )) {
+      if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       if (scanBlock.hasTag("society:plushies")) {
         let nbt = scanBlock.getEntityData();

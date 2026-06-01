@@ -18,6 +18,7 @@ global.runIridiumClock = (entity) => {
       y + radius,
       z + radius,
     ])) {
+      if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       if (scanBlock.id.equals("society:golden_clock")) {
         surroundingClocks++;
