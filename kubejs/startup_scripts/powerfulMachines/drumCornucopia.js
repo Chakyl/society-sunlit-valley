@@ -56,6 +56,7 @@ global.handleCornucopia = (server, level, centerPos, player, returnExperience) =
     y + 10,
     z + 10,
   ])) {
+    if (!level.isLoaded(pos)) continue;
     scannedBlock = level.getBlock(pos);
     if (scannedBlock.id == "minecraft:air") continue;
     success = false;
