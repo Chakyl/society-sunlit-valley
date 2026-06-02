@@ -1,0 +1,57 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "arboliva-1",
+            "pokemon": "arboliva",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "35-50",
+            "weight": 0.15,
+            "weightMultiplier": {
+                "multiplier": 0.1,
+                "condition": {
+                    "timeRange": "day"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:plains",
+                    "minecraft:is_forest"
+                ]
+            }
+        },
+        {
+            "id": "arboliva-2",
+            "pokemon": "arboliva",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "35-50",
+            "weight": 0.1,
+            "weightMultiplier": {
+                "multiplier": 0.05,
+                "condition": {
+                    "timeRange": "day"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#minecraft:is_jungle"
+                ]
+            }
+        }]
+}
