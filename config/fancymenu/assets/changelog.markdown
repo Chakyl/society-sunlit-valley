@@ -1,14 +1,8 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.7-SSV4.0.8
+### v1.0.8-SSV4.0.9
 ^^^
 --- 
-- Fixed trainer podium related crash
-- Fixed serene seasons config syncing (experimental)
-- Fixed potential crash involving coin leaderboards (experimental)
-- Fixed poison type pickling recipes not matching pickling can
-- Fixed errors with tree harvesting
-- Fixed Ursaluna Blood Moon not spawning from sun raid statues
 
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
@@ -75,6 +69,14 @@
 - Backported Evo stone blocks
 - Backported evo items (Metal Alloy, Syrupy Apple, Shell Helmet, etc)
 - Backported move animations (Thanks MrFreezy™!)
+
+## 1.0.7-SSV4.0.8
+- Fixed trainer podium related crash
+- Fixed serene seasons config syncing (experimental)
+- Fixed potential crash involving coin leaderboards (experimental)
+- Fixed poison type pickling recipes not matching pickling can
+- Fixed errors with tree harvesting
+- Fixed Ursaluna Blood Moon not spawning from sun raid statues
 
 ## 1.0.6-SSV4.0.8
 - Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)
