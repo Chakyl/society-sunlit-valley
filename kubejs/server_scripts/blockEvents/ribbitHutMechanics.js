@@ -30,6 +30,7 @@ const scanArea = (level, block) => {
     new BlockPos(block.x - 1, block.y, block.z - 1),
     [block.x + 1, block.y + 2, block.z + 1]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scannedBlock = level.getBlock(pos);
     if (
       scannedBlock.id !== "minecraft:air" &&

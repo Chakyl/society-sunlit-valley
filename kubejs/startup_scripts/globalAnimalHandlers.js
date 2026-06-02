@@ -417,6 +417,7 @@ const getNearbyBlocks = (level, target, radius, tag) => {
     new BlockPos(x - radius, y - radius, z - radius),
     [x + radius, y + radius, z + radius]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
     if (scanBlock.hasTag(tag)) {
       blockCount++;

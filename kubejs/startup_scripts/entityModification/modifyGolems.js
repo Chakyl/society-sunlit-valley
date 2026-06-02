@@ -11,6 +11,7 @@ global.handleHayGolem = (entity) => {
       new BlockPos(x - radius, y - radius, z - radius),
       [x + radius, y + radius, z + radius]
     )) {
+      if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       if (rnd10() && scanBlock.hasTag("society:hay_golem_improvable")) {
         if (scanBlock.id.equals("minecraft:farmland")) {
@@ -57,6 +58,7 @@ global.handleKelpGolem = (entity) => {
     new BlockPos(x - radius, y - radius, z - radius),
     [x + radius, y + radius, z + radius]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
     if (scanBlock.id === "dew_drop_farmland_growth:garden_pot") {
       blockProperties = scanBlock.getProperties();
@@ -80,6 +82,7 @@ global.handleTerracottaGolem = (entity) => {
     new BlockPos(x - radius, y - radius, z - radius),
     [x + radius, y + radius, z + radius]
   )) {
+    if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
     if (scanBlock.id.equals("minecraft:coarse_dirt")) {
       scanBlock.set("minecraft:clay");

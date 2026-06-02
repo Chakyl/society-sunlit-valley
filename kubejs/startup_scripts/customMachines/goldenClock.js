@@ -83,6 +83,7 @@ global.runGoldenClock = (entity) => {
       y + radius,
       z + radius,
     ])) {
+      if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       if (scanBlock.hasTag("society:golden_clock_advanced")) {
         global.handleProgress(level, scanBlock);

@@ -19,6 +19,7 @@ ItemEvents.entityInteracted((e) => {
       y + radius,
       z + radius,
     ])) {
+      if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       if (scanBlock.hasTag("minecraft:flowers") && !scannedFlowers.includes(scanBlock.id)) {
         scannedFlowers.push(scanBlock.id);

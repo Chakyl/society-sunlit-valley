@@ -514,6 +514,7 @@ global.artisanHopperScan = (entity, radius) => {
       new BlockPos(x - radius, y - radius, z - radius),
       [x + radius, y + radius, z + radius]
     )) {
+      if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       if (scanBlock.hasTag("society:artisan_machine")) {
         global.runArtisanHopper(
