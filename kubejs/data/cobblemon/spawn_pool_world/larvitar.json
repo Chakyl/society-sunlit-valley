@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+       { "id": "larvitar-1",
+      "pokemon": "larvitar",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "10-25",
+      "weight": 1,
+      "condition": {
+        "neededNearbyBlocks": [
+            "society:moon_gnome_statue"
+        ]
+      }
+    }
+  ]
+}
