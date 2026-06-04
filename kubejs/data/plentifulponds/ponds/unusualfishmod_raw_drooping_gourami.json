@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_drooping_gourami",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "vinery:white_grape_bag",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "pamhc2trees:pawpawitem",
+					"count": 32
+				},
+				{
+					"item": "vintagedelight:gearo_berry_bag",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "pamhc2trees:plumitem",
+					"count": 64
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "society:white_grape_preserves",
+				"count": 8
+			},
+			"chance": 0.24
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "vintagedelight:gearo_berry_mason_jar",
+				"count": 4
+			},
+			"chance": 0.18
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:pawpaw_preserves",
+				"count": 4
+			},
+			"chance": 0.16
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:plum_preserves",
+				"count": 2
+			},
+			"chance": 0.16
+		}
+	]
+}

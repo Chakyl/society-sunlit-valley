@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:boulti",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "create:raw_zinc",
+					"count": 16
+				},
+				{
+					"item": "create:zinc_ingot",
+					"count": 48
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "create_mechanical_extruder:mechanical_extruder",
+					"count": 1
+				},
+				{
+					"item": "create:brass_ingot",
+					"count": 16
+				},
+				{
+					"item": "snowyspirit:ginger",
+					"count": 30
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:furniture_box",
+					"count": 1
+				},
+				{
+					"item": "society:battery",
+					"count": 4
+				},
+				{
+					"item": "society:canvas",
+					"count": 16
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:granite",
+				"count": 64
+			},
+			"chance": 0.69
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "create:brass_ingot",
+				"count": 2
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:display",
+				"count": 1
+			},
+			"chance": 0.16
+		}
+	]
+}

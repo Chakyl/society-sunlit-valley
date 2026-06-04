@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_forkfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "farmersdelight:iron_knife",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:raw_iron",
+					"count": 48
+				},
+				{
+					"item": "farm_and_charm:pitchfork",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "minecraft:sponge",
+					"count": 4
+				},
+				{
+					"item": "minecraft:heart_of_the_sea",
+					"count": 1
+				},
+				{
+					"item": "minecraft:sea_lantern",
+					"count": 32
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "quark:iron_rod",
+				"count": 8
+			},
+			"chance": 0.23
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "minecraft:trident",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "unusualfishmod:prismarine_spear",
+				"count": 1
+			},
+			"chance": 0.01
+		}
+	]
+}

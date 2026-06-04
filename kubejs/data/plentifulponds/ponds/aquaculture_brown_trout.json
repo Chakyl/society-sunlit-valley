@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:brown_trout",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:raw_iron",
+					"count": 16
+				},
+				{
+					"item": "minecraft:iron_block",
+					"count": 8
+				},
+				{
+					"item": "society:earth_crystal",
+					"count": 2
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "pamhc2trees:peachitem",
+					"count": 3
+				},
+				{
+					"item": "bakery:linzer_tart",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "brewery:beer_barley",
+					"count": 16
+				},
+				{
+					"item": "vintagedelight:glow_berry_mason_jar",
+					"count": 3
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:raw_iron",
+				"count": 32
+			},
+			"chance": 0.54
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:earth_crystal",
+				"count": 4
+			},
+			"chance": 0.42
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "meadow:alpine_salt",
+				"count": 32
+			},
+			"chance": 0.32
+		}
+	]
+}

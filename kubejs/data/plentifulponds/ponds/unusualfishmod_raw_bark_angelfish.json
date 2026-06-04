@@ -1,0 +1,94 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_bark_angelfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "farmersdelight:tree_bark",
+					"count": 64
+				},
+				{
+					"item": "minecraft:stripped_oak_log",
+					"count": 32
+				},
+				{
+					"item": "minecraft:stripped_dark_oak_log",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:oak_log",
+					"count": 64
+				},
+				{
+					"item": "society:tapper",
+					"count": 8
+				},
+				{
+					"item": "minecraft:dark_oak_log",
+					"count": 64
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:oak_resin",
+					"count": 16
+				},
+				{
+					"item": "society:pine_tar",
+					"count": 16
+				},
+				{
+					"item": "society:sap",
+					"count": 64
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "farmersdelight:tree_bark",
+				"count": 32
+			},
+			"chance": 0.24
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "minecraft:oak_log",
+				"count": 48
+			},
+			"chance": 0.31
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "minecraft:dark_oak_log",
+				"count": 48
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:oak_resin",
+				"count": 8
+			},
+			"chance": 0.22
+		}
+	]
+}

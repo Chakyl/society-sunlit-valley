@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:capitaine",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "crabbersdelight:crab_trap_bait",
+					"count": 16
+				},
+				{
+					"item": "twigs:rhyolite",
+					"count": 16
+				},
+				{
+					"item": "minecraft:torchflower",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "twigs:tangerine_seashell",
+					"count": 2
+				},
+				{
+					"item": "minecraft:cactus",
+					"count": 16
+				},
+				{
+					"item": "twigs:pebble",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:prize_ticket",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "society:earth_crystal",
+				"count": 2
+			},
+			"chance": 0.78
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:geode",
+				"count": 4
+			},
+			"chance": 0.33
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:prize_ticket",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_circus_fish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:aged_whiskey_lilitusinglemalt",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:large_goose_mayonnaise",
+					"count": 4
+				},
+				{
+					"item": "society:large_turkey_mayonnaise",
+					"count": 4
+				},
+				{
+					"item": "society:large_duck_mayonnaise",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:beemonican_seal",
+					"count": 1
+				},
+				{
+					"item": "society:wheel_of_adaptation",
+					"count": 1
+				},
+				{
+					"item": "society:artifact_trove",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "brewery:whiskey_lilitusinglemalt",
+				"count": 4
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:yard_work_yearly",
+				"count": 1
+			},
+			"chance": 0.15
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:artifact_trove",
+				"count": 1
+			},
+			"chance": 0.08
+		}
+	]
+}

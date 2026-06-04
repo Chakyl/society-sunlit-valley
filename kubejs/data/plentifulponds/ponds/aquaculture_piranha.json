@@ -1,0 +1,66 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:piranha",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:ginger_preserves",
+					"count": 2
+				},
+				{
+					"item": "snowyspirit:gingerbread_cookie",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "pamhc2trees:peachitem",
+					"count": 3
+				},
+				{
+					"item": "bakery:linzer_tart",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "minecraft:rotten_flesh",
+					"count": 64
+				},
+				{
+					"item": "crabbersdelight:raw_frog_leg",
+					"count": 3
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:frozen_tear",
+				"count": 6
+			},
+			"chance": 0.4
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:geminite",
+				"count": 1
+			},
+			"chance": 0.22
+		}
+	]
+}

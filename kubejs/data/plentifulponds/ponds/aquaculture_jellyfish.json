@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:jellyfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:slime_ball",
+					"count": 16
+				},
+				{
+					"item": "quark:slime_in_a_bucket",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "bakery:strawberry_jam",
+					"count": 8
+				},
+				{
+					"item": "bakery:strawberry_cake",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "betterarcheology:unidentified_artifact",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:slime_ball",
+				"count": 24
+			},
+			"chance": 0.33
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:petrified_slime",
+				"count": 3
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:ocean_jelly",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "relics:jellyfish_necklace",
+				"count": 1
+			},
+			"chance": 0.08
+		}
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_eyelash",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "twigs:silt",
+					"count": 1
+				},
+				{
+					"item": "netherdepthsupgrade:eyeball",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:black_opal",
+					"count": 1
+				},
+				{
+					"item": "society:tubasmoke_carton",
+					"count": 4
+				},
+				{
+					"item": "society:starfruit_preserves",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:pristine_star_shards",
+					"count": 32
+				},
+				{
+					"item": "society:aged_dewy_star",
+					"count": 8
+				},
+				{
+					"item": "society:aged_star_coquito",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "society:opal",
+				"count": 1
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "relics:shadow_glaive",
+				"count": 1
+			},
+			"chance": 0.03
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:book_of_stars",
+				"count": 1
+			},
+			"chance": 0.06
+		}
+	]
+}

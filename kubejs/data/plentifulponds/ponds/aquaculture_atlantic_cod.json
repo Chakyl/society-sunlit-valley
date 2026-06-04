@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:atlantic_cod",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "create:andesite_alloy",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:paper",
+					"count": 36
+				},
+				{
+					"item": "minecraft:ink_sac",
+					"count": 16
+				},
+				{
+					"item": "quark:paper_lantern_sakura",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_jo_special_mixture",
+					"count": 1
+				},
+				{
+					"item": "society:aged_beer_barley",
+					"count": 1
+				},
+				{
+					"item": "society:aged_sheep_cheese_block",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:andesite",
+				"count": 64
+			},
+			"chance": 0.69
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "create:andesite_alloy",
+				"count": 16
+			},
+			"chance": 0.28
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "candlelight:typewriter_iron",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "candlelight:typewriter_copper",
+				"count": 1
+			},
+			"chance": 0.08
+		}
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:tuna",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "create:raw_zinc",
+					"count": 48
+				},
+				{
+					"item": "society:truffle_oil",
+					"count": 1
+				},
+				{
+					"item": "minecraft:diamond",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:diamond",
+					"count": 32
+				},
+				{
+					"item": "create:zinc_block",
+					"count": 48
+				},
+				{
+					"item": "society:truffle_tea",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "quark:diamond_heart",
+					"count": 1
+				},
+				{
+					"item": "aquaculture:neptunium_ingot",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "create:raw_zinc",
+				"count": 48
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "minecraft:diamond",
+				"count": 8
+			},
+			"chance": 0.23
+		}
+	]
+}

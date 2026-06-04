@@ -1,0 +1,106 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:brown_shrooma",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:mycelium",
+					"count": 16
+				},
+				{
+					"item": "minecraft:mushroom_stem",
+					"count": 32
+				},
+				{
+					"item": "minecraft:brown_mushroom_block",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:brown_mushroom",
+					"count": 32
+				},
+				{
+					"item": "farmersdelight:rich_soil",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:cordycep",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:brown_mushroom",
+				"count": 16
+			},
+			"chance": 0.35
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "farmersdelight:mushroom_rice",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:brown_mushroom_stool",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:brown_mushroom_lamp",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:brown_mushroom_bed",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:brown_mushroom_table",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:brown_mushroom_log_stool",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

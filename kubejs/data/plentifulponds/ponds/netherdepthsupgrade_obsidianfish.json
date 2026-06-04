@@ -1,0 +1,66 @@
+{
+	"color": "#ffffff",
+	"fish": "netherdepthsupgrade:obsidianfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:obsidian",
+					"count": 16
+				},
+				{
+					"item": "minecraft:crying_obsidian",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:nether_raisins",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_lava_fizz",
+					"count": 2
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:obsidian",
+				"count": 16
+			},
+			"chance": 0.48
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "minecraft:crying_obsidian",
+				"count": 4
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:pure_obsidian",
+				"count": 1
+			},
+			"chance": 0.22
+		}
+	]
+}

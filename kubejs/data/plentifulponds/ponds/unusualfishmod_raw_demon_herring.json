@@ -1,0 +1,98 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_demon_herring",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "trials:trial_key",
+					"count": 8
+				},
+				{
+					"item": "trials:ominous_bottle",
+					"count": 4
+				},
+				{
+					"item": "trials:breeze_rod",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "trials:trial_key_ominous",
+					"count": 4
+				},
+				{
+					"item": "minecraft:blaze_rod",
+					"count": 32
+				},
+				{
+					"item": "society:holy_symbol",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:relic_trove",
+					"count": 1
+				},
+				{
+					"item": "society:artifact_trove",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:magic_rope",
+				"count": 1
+			},
+			"chance": 0.24
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:combat_quarterly",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:fantasy_dust",
+				"count": 1
+			},
+			"chance": 0.17
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "species:werefang",
+				"count": 4
+			},
+			"chance": 0.17
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "minecraft:totem_of_undying",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

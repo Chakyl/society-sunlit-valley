@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_aero_mono",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:tuff",
+					"count": 64
+				},
+				{
+					"item": "quark:bottled_cloud",
+					"count": 1
+				},
+				{
+					"item": "moreminecarts:levitation_powder",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "trials:breeze_rod",
+					"count": 4
+				},
+				{
+					"item": "create:asurine",
+					"count": 64
+				},
+				{
+					"item": "trials:trial_key_ominous",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "windswept:dream_catcher",
+					"count": 16
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:tuff",
+				"count": 64
+			},
+			"chance": 0.59
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "trials:breeze_rod",
+				"count": 8
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "create:asurine",
+				"count": 48
+			},
+			"chance": 0.49
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "chimes:glass_bells",
+				"count": 1
+			},
+			"chance": 0.1
+		}
+	]
+}

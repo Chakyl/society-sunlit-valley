@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "minecraft:salmon",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "meadow:pine_log",
+					"count": 64
+				},
+				{
+					"item": "society:salmonberry",
+					"count": 16
+				},
+				{
+					"item": "meadow:alpine_poppy",
+					"count": 3
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:oak_log",
+					"count": 64
+				},
+				{
+					"item": "society:tapper",
+					"count": 8
+				},
+				{
+					"item": "minecraft:dark_oak_log",
+					"count": 64
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:mossberry",
+					"count": 16
+				},
+				{
+					"item": "society:mossberry_preserves",
+					"count": 4
+				},
+				{
+					"item": "society:dried_mossberry",
+					"count": 2
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "meadow:pine_log",
+				"count": 16
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "windswept:pinecone",
+				"count": 32
+			},
+			"chance": 0.31
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:mossberry",
+				"count": 3
+			},
+			"chance": 0.82
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_snowflake",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "snowpig:frozen_porkchop",
+					"count": 8
+				},
+				{
+					"item": "society:brown_sheet",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "snuffles:snuffle_fluff",
+					"count": 4
+				},
+				{
+					"item": "species:frozen_meat",
+					"count": 4
+				},
+				{
+					"item": "herbalbrews:cinnamon_coffee",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:frozen_geode",
+					"count": 16
+				},
+				{
+					"item": "extractinator:slush",
+					"count": 64
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:ice",
+				"count": 16
+			},
+			"chance": 0.64
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:frozen_tear",
+				"count": 4
+			},
+			"chance": 0.29
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:frozen_geode",
+				"count": 8
+			},
+			"chance": 0.22
+		}
+	]
+}

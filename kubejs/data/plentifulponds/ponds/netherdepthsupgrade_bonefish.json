@@ -1,0 +1,106 @@
+{
+	"color": "#ffffff",
+	"fish": "netherdepthsupgrade:bonefish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:large_milk",
+					"count": 4
+				},
+				{
+					"item": "meadow:cheese_block",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:skeleton_skull",
+					"count": 1
+				},
+				{
+					"item": "minecraft:bone_block",
+					"count": 32
+				},
+				{
+					"item": "vintagedelight:organic_mash",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:nether_jelly",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:bone_meal",
+				"count": 32
+			},
+			"chance": 0.53
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:bone",
+				"count": 32
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:limestone_pebble",
+				"count": 1
+			},
+			"chance": 0.24
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:enriched_bone_meal",
+				"count": 8
+			},
+			"chance": 0.32
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "dew_drop_farmland_growth:hydrating_fertilizer",
+				"count": 12
+			},
+			"chance": 0.4
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "dew_drop_farmland_growth:bountiful_fertilizer",
+				"count": 8
+			},
+			"chance": 0.35
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "dew_drop_farmland_growth:weak_fertilizer",
+				"count": 4
+			},
+			"chance": 0.2
+		}
+	]
+}

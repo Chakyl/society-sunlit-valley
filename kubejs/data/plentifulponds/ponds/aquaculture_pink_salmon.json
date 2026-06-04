@@ -1,0 +1,102 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:pink_salmon",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "supplementaries:candle_holder_pink",
+					"count": 4
+				},
+				{
+					"item": "minecraft:pink_dye",
+					"count": 16
+				},
+				{
+					"item": "buzzier_bees:pink_clover",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:pink_petals",
+					"count": 4
+				},
+				{
+					"item": "minecraft:pink_tulip",
+					"count": 1
+				},
+				{
+					"item": "society:fluorapatite",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "refurbished_furniture:pink_grill",
+					"count": 1
+				},
+				{
+					"item": "etcetera:pink_sweater",
+					"count": 1
+				},
+				{
+					"item": "vintagedelight:salt_lamp_pink",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 2,
+			"drop": {
+				"id": "minecraft:pink_dye",
+				"count": 64
+			},
+			"chance": 0.64
+		},
+		{
+			"min_population": 3,
+			"drop": {
+				"id": "minecraft:cherry_log",
+				"count": 64
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "society:fluorapatite",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "atmospheric:passion_fruit",
+				"count": 5
+			},
+			"chance": 0.32
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:star_shards",
+				"count": 1
+			},
+			"chance": 0.12
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"color": "#ffffff",
+	"fish": "netherdepthsupgrade:eyeball_fish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:spider_eye",
+					"count": 8
+				},
+				{
+					"item": "beachparty:sunglasses",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:ender_eye",
+					"count": 8
+				},
+				{
+					"item": "simplehats:cyclopseye",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "botania:ender_eye_block",
+					"count": 8
+				},
+				{
+					"item": "minecraft:eye_armor_trim_smithing_template",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "netherdepthsupgrade:eyeball",
+				"count": 4
+			},
+			"chance": 0.27
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "etcetera:raw_bismuth",
+				"count": 16
+			},
+			"chance": 0.27
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:tigerseye",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "minecraft:ender_eye",
+				"count": 3
+			},
+			"chance": 0.26
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:mini_oni_eye",
+				"count": 1
+			},
+			"chance": 0.18
+		}
+	]
+}

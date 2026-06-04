@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_picklefish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:sea_pickle",
+					"count": 32
+				},
+				{
+					"item": "crabbersdelight:sea_pickle_juice",
+					"count": 8
+				},
+				{
+					"item": "vintagedelight:pickled_egg",
+					"count": 10
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "vintagedelight:pickled_pitcher_pod",
+					"count": 4
+				},
+				{
+					"item": "vintagedelight:pickle_soup",
+					"count": 4
+				},
+				{
+					"item": "vintagedelight:pickled_beetroot",
+					"count": 64
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_century_egg",
+					"count": 8
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "vintagedelight:pickle",
+				"count": 8
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "vintagedelight:cucumber",
+				"count": 8
+			},
+			"chance": 0.09
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:tanuki_leaf",
+				"count": 1
+			},
+			"chance": 0.28
+		}
+	]
+}

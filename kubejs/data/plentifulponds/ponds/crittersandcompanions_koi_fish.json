@@ -1,0 +1,98 @@
+{
+	"color": "#ffffff",
+	"fish": "crittersandcompanions:koi_fish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:amethyst_shard",
+					"count": 48
+				},
+				{
+					"item": "minecraft:amethyst_block",
+					"count": 16
+				},
+				{
+					"item": "meadow:amethyst_cheese_block",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:purple_sheet",
+					"count": 4
+				},
+				{
+					"item": "minecraft:budding_amethyst",
+					"count": 4
+				},
+				{
+					"item": "nightlights:octopus_purple",
+					"count": 2
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "pamhc2trees:plumitem",
+					"count": 16
+				},
+				{
+					"item": "vinery:jo_special_mixture",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:amethyst_shard",
+				"count": 8
+			},
+			"chance": 0.54
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:amethyst_cluster",
+				"count": 4
+			},
+			"chance": 0.2
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:amethyst_chunk",
+				"count": 1
+			},
+			"chance": 0.28
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:production_science_pack",
+				"count": 1
+			},
+			"chance": 0.1
+		},
+		{
+			"min_population": 10,
+			"drop": {
+				"id": "chimes:amethyst_chimes",
+				"count": 1
+			},
+			"chance": 0.01
+		}
+	]
+}

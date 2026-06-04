@@ -1,0 +1,126 @@
+{
+	"color": "#ffffff",
+	"fish": "netherdepthsupgrade:wither_bonefish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "species:wraptor_egg",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "pamhc2trees:pawpawitem",
+					"count": 4
+				},
+				{
+					"item": "society:energy_drink",
+					"count": 1
+				},
+				{
+					"item": "nethervinery:nether_fizz",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_dark_brew",
+					"count": 8
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:wither_rose",
+				"count": 6
+			},
+			"chance": 0.2
+		},
+		{
+			"min_population": 5,
+			"drop": {
+				"id": "minecraft:wither_skeleton_skull",
+				"count": 1
+			},
+			"chance": 0.36
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:neptunite",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_clock",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_chest",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_table",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_mini_drawer",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_closet",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_desk",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "minecraft:nether_star",
+				"count": 1
+			},
+			"chance": 0.01
+		}
+	]
+}

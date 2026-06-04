@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:muskellunge",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:chorus_flower",
+					"count": 1
+				},
+				{
+					"item": "minecraft:chorus_fruit",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:forks_of_blue",
+					"count": 1
+				},
+				{
+					"item": "society:oak_resin",
+					"count": 3
+				},
+				{
+					"item": "crabbersdelight:coral_crunch",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:nutty_basil",
+					"count": 1
+				},
+				{
+					"item": "minecraft:emerald",
+					"count": 16
+				},
+				{
+					"item": "minecraft:carrot",
+					"count": 64
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "moreminecarts:levitation_powder",
+				"count": 4
+			},
+			"chance": 0.64
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:treated_log",
+				"count": 4
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "moreminecarts:hard_light_lens",
+				"count": 4
+			},
+			"chance": 0.32
+		}
+	]
+}

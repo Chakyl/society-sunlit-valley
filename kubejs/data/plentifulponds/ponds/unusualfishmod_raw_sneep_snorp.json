@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_sneep_snorp",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:lapis_lazuli",
+					"count": 48
+				},
+				{
+					"item": "herbalbrews:hibiscus_tea",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "vinery:bottle_mojang_noir",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "crabbersdelight:pearl",
+					"count": 16
+				},
+				{
+					"item": "crabbersdelight:coral_fragments",
+					"count": 64
+				},
+				{
+					"item": "aquaculture:neptunium_ingot",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:lapis_lazuli",
+				"count": 16
+			},
+			"chance": 0.33
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:aerinite",
+				"count": 3
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 10,
+			"drop": {
+				"id": "society:wet_weekly",
+				"count": 1
+			},
+			"chance": 0.08
+		}
+	]
+}

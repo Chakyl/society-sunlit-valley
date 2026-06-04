@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_copperflame_anthias",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:oxidized_copper",
+					"count": 8
+				},
+				{
+					"item": "minecraft:copper_block",
+					"count": 64
+				},
+				{
+					"item": "farm_and_charm:silo_copper",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:verdant_froglight",
+					"count": 8
+				},
+				{
+					"item": "trials:copper_bulb",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "vinery:magnetic_wine",
+					"count": 1
+				},
+				{
+					"item": "aquaculture:neptunium_ingot",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:oxidized_copper",
+				"count": 16
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "create:veridium",
+				"count": 48
+			},
+			"chance": 0.28
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "create:copper_casing",
+				"count": 4
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 10,
+			"drop": {
+				"id": "chimes:copper_chimes",
+				"count": 1
+			},
+			"chance": 0.1
+		}
+	]
+}

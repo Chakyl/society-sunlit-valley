@@ -1,0 +1,138 @@
+{
+	"color": "#ffffff",
+	"fish": "crabbersdelight:clawster",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "crabbersdelight:crab_trap_bait",
+					"count": 16
+				},
+				{
+					"item": "farmersdelight:safety_net",
+					"count": 4
+				},
+				{
+					"item": "crabbersdelight:pearl",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:aquamarine",
+					"count": 4
+				},
+				{
+					"item": "crabbersdelight:deluxe_crab_trap_bait",
+					"count": 16
+				},
+				{
+					"item": "crabbersdelight:coral_crunch",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "crabbersdelight:pearl_block",
+					"count": 4
+				},
+				{
+					"item": "minecraft:pearlescent_froglight",
+					"count": 8
+				},
+				{
+					"item": "minecraft:heart_of_the_sea",
+					"count": 1
+				},
+				{
+					"item": "aquaculture:neptunium_ingot",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 2,
+			"drop": {
+				"id": "aquaculture:tin_can",
+				"count": 7
+			},
+			"chance": 0.65
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "aquaculture:driftwood",
+				"count": 7
+			},
+			"chance": 0.35
+		},
+		{
+			"min_population": 5,
+			"drop": {
+				"id": "aquaculture:message_in_a_bottle",
+				"count": 1
+			},
+			"chance": 0.05
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:canvas",
+				"count": 2
+			},
+			"chance": 0.12
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "crabbersdelight:coral_fragments",
+				"count": 16
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "aquaculture:treasure_chest",
+				"count": 1
+			},
+			"chance": 0.12
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "minecraft:nautilus_shell",
+				"count": 1
+			},
+			"chance": 0.16
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "minecraft:heart_of_the_sea",
+				"count": 1
+			},
+			"chance": 0.05
+		},
+		{
+			"min_population": 10,
+			"drop": {
+				"id": "crabbersdelight:pearl_block",
+				"count": 1
+			},
+			"chance": 0.06
+		}
+	]
+}

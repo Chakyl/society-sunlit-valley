@@ -1,0 +1,150 @@
+{
+	"color": "#ffffff",
+	"fish": "netherdepthsupgrade:searing_cod",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:quartz",
+					"count": 32
+				},
+				{
+					"item": "etcetera:raw_bismuth",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "farm_and_charm:roaster",
+					"count": 4
+				},
+				{
+					"item": "minecraft:furnace",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "minecraft:cod",
+					"count": 32
+				},
+				{
+					"item": "society:furniture_box",
+					"count": 4
+				},
+				{
+					"item": "minecraft:fire_coral",
+					"count": 16
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:coal",
+				"count": 32
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:baryte",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_wardrobe",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_table",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_bookcase",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_dresser",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_vanity",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_armchair",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_screen",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_lamp",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_bed",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:cabana_chair",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

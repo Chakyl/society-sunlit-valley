@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "netherdepthsupgrade:soulsucker",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "autumnity:soul_jack_o_lantern",
+					"count": 8
+				},
+				{
+					"item": "farm_and_charm:corn_grits",
+					"count": 16
+				},
+				{
+					"item": "minecraft:wither_skeleton_skull",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "buzzier_bees:soul_candle",
+					"count": 16
+				},
+				{
+					"item": "autumnity:soul_jack_o_lantern",
+					"count": 8
+				},
+				{
+					"item": "society:fire_quartz",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_lava_fizz",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:soul_sand",
+				"count": 32
+			},
+			"chance": 0.45
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:fire_quartz",
+				"count": 4
+			},
+			"chance": 0.24
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "netherdepthsupgrade:soul_sucker_leather",
+				"count": 1
+			},
+			"chance": 0.18
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "species:broken_links",
+				"count": 12
+			},
+			"chance": 0.32
+		}
+	]
+}

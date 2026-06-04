@@ -1,0 +1,90 @@
+{
+	"color": "#ffffff",
+	"fish": "minecraft:tropical_fish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:tube_coral_block",
+					"count": 16
+				},
+				{
+					"item": "minecraft:brain_coral_block",
+					"count": 16
+				},
+				{
+					"item": "minecraft:bubble_coral_block",
+					"count": 16
+				},
+				{
+					"item": "minecraft:fire_coral_block",
+					"count": 16
+				},
+				{
+					"item": "minecraft:horn_coral_block",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "beachparty:palm_log",
+					"count": 64
+				},
+				{
+					"item": "beachparty:seashell",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "beachparty:icecream_coconut",
+					"count": 8
+				},
+				{
+					"item": "beachparty:coconut_cocktail",
+					"count": 8
+				},
+				{
+					"item": "beachparty:coconut_milkshake",
+					"count": 8
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "crabbersdelight:coral_fragments",
+				"count": 32
+			},
+			"chance": 0.48
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "beachparty:palm_log",
+				"count": 32
+			},
+			"chance": 0.42
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "beachparty:coconut",
+				"count": 6
+			},
+			"chance": 0.82
+		}
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:starshell_turtle",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "pamhc2trees:starfruititem",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:star_shards",
+					"count": 4
+				},
+				{
+					"item": "minecraft:nether_star",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_dewy_star",
+					"count": 2
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:turtle_egg",
+				"count": 4
+			},
+			"chance": 0.33
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:scute",
+				"count": 1
+			},
+			"chance": 0.14
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:star_shards",
+				"count": 2
+			},
+			"chance": 0.24
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "pamhc2trees:starfruititem",
+				"count": 4
+			},
+			"chance": 0.39
+		}
+	]
+}

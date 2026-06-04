@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "netherdepthsupgrade:magmacubefish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:magma_geode",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:ochre_froglight",
+					"count": 8
+				},
+				{
+					"item": "minecraft:verdant_froglight",
+					"count": 8
+				},
+				{
+					"item": "minecraft:pearlescent_froglight",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:nether_jelly",
+					"count": 2
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 3,
+			"drop": {
+				"id": "minecraft:magma_cream",
+				"count": 48
+			},
+			"chance": 0.43
+		},
+		{
+			"min_population": 5,
+			"drop": {
+				"id": "minecraft:magma_block",
+				"count": 16
+			},
+			"chance": 0.23
+		},
+		{
+			"min_population": 5,
+			"drop": {
+				"id": "society:magma_geode",
+				"count": 8
+			},
+			"chance": 0.32
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:basalt_shard",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:nether_jelly",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

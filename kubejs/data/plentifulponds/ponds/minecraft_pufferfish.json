@@ -1,0 +1,94 @@
+{
+	"color": "#ffffff",
+	"fish": "minecraft:pufferfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:rotten_flesh",
+					"count": 16
+				},
+				{
+					"item": "minecraft:poisonous_potato",
+					"count": 4
+				},
+				{
+					"item": "farmersdelight:rotten_tomato",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "vinery:rotten_cherry",
+					"count": 4
+				},
+				{
+					"item": "herbalbrews:yerba_mate_tea",
+					"count": 1
+				},
+				{
+					"item": "autumnity:foul_berries",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "veggiesdelight:stuffed_bellpeppers_block",
+					"count": 16
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:spider_eye",
+				"count": 8
+			},
+			"chance": 0.6
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "minecraft:slime_ball",
+				"count": 16
+			},
+			"chance": 0.43
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "society:jamborite",
+				"count": 2
+			},
+			"chance": 0.24
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "moreminecarts:glass_spines",
+				"count": 8
+			},
+			"chance": 0.43
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "relics:spore_sack",
+				"count": 1
+			},
+			"chance": 0.06
+		}
+	]
+}

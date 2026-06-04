@@ -1,0 +1,118 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:leech",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:beef",
+					"count": 8
+				},
+				{
+					"item": "minecraft:porkchop",
+					"count": 8
+				},
+				{
+					"item": "minecraft:mutton",
+					"count": 8
+				},
+				{
+					"item": "minecraft:chicken",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "minecraft:rabbit",
+					"count": 4
+				},
+				{
+					"item": "untitledduckmod:raw_duck",
+					"count": 4
+				},
+				{
+					"item": "untitledduckmod:raw_goose",
+					"count": 2
+				},
+				{
+					"item": "autumnity:turkey",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:truffle",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "farm_and_charm:minced_beef",
+				"count": 16
+			},
+			"chance": 0.45
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:living_flesh",
+				"count": 1
+			},
+			"chance": 0.16
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:helvite",
+				"count": 2
+			},
+			"chance": 0.12
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:neon_diamond_sign",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:neon_heart_sign",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:neon_club_sign",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:neon_spade_sign",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

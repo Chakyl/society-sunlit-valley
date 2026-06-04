@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_blind_sailfin",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:glass",
+					"count": 64
+				},
+				{
+					"item": "minecraft:sand",
+					"count": 64
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:rubber",
+					"count": 16
+				},
+				{
+					"item": "beautify:crimson_blinds",
+					"count": 32
+				},
+				{
+					"item": "society:bowl_of_soul",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_forks_of_blue",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:sand",
+				"count": 64
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "minecraft:sandstone",
+				"count": 32
+			},
+			"chance": 0.31
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:architects_digest",
+				"count": 1
+			},
+			"chance": 0.15
+		}
+	]
+}

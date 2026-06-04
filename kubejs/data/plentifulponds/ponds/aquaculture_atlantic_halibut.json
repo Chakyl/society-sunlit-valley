@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:atlantic_halibut",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:raw_copper",
+					"count": 16
+				},
+				{
+					"item": "minecraft:copper_block",
+					"count": 16
+				},
+				{
+					"item": "minecraft:melon_slice",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:earth_crystal",
+					"count": 4
+				},
+				{
+					"item": "meadow:piece_of_grain_cheese",
+					"count": 16
+				},
+				{
+					"item": "vinery:cherry",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_cherry_wine",
+					"count": 1
+				},
+				{
+					"item": "smallships:cherry_brigg",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:raw_copper",
+				"count": 64
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:geode",
+				"count": 8
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "minecraft:redstone",
+				"count": 32
+			},
+			"chance": 0.32
+		}
+	]
+}

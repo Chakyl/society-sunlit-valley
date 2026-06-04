@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:atlantic_herring",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "crabbersdelight:jar_of_pickles",
+					"count": 1
+				},
+				{
+					"item": "minecraft:sea_pickle",
+					"count": 16
+				},
+				{
+					"item": "minecraft:seagrass",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "vintagedelight:pickle",
+					"count": 4
+				},
+				{
+					"item": "minecraft:sea_lantern",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "aquaculture:neptunium_nugget",
+					"count": 3
+				},
+				{
+					"item": "minecraft:heart_of_the_sea",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:prismarine_shard",
+				"count": 64
+			},
+			"chance": 0.69
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "minecraft:prismarine_crystals",
+				"count": 32
+			},
+			"chance": 0.41
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:aquamagical_dust",
+				"count": 1
+			},
+			"chance": 0.18
+		}
+	]
+}

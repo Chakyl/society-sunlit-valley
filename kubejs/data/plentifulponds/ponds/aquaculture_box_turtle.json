@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:box_turtle",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "candlelight:jewelry_box",
+					"count": 1
+				},
+				{
+					"item": "bakery:chocolate_box",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "aquaculture:tackle_box",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:furniture_box",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:turtle_egg",
+				"count": 4
+			},
+			"chance": 0.33
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:scute",
+				"count": 1
+			},
+			"chance": 0.16
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:slate",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:furniture_box",
+				"count": 1
+			},
+			"chance": 0.08
+		}
+	]
+}

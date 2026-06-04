@@ -1,0 +1,74 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:carp",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:packed_mud",
+					"count": 32
+				},
+				{
+					"item": "minecraft:mud",
+					"count": 48
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "veggiesdelight:cauliflower",
+					"count": 16
+				},
+				{
+					"item": "society:earth_crystal",
+					"count": 2
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "vintagedelight:pad_thai",
+					"count": 16
+				},
+				{
+					"item": "vintagedelight:nut_mash_mason_jar",
+					"count": 5
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "society:mudstone",
+				"count": 4
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:earth_crystal",
+				"count": 2
+			},
+			"chance": 0.42
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:stone_hand",
+				"count": 1
+			},
+			"chance": 0.08
+		}
+	]
+}

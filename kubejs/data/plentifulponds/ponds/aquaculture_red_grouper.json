@@ -1,0 +1,134 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:red_grouper",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "supplementaries:candle_holder_red",
+					"count": 4
+				},
+				{
+					"item": "minecraft:red_dye",
+					"count": 16
+				},
+				{
+					"item": "minecraft:rose_bush",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "create:rose_quartz",
+					"count": 4
+				},
+				{
+					"item": "minecraft:red_tulip",
+					"count": 1
+				},
+				{
+					"item": "vinery:red_wine",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "refurbished_furniture:red_grill",
+					"count": 1
+				},
+				{
+					"item": "numismatics:red_card",
+					"count": 1
+				},
+				{
+					"item": "tanukidecor:red_rocket_lamp",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:redstone",
+				"count": 64
+			},
+			"chance": 0.64
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "vinery:red_wine",
+				"count": 4
+			},
+			"chance": 0.21
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_wall_tarp",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_stall_tarp",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:wide_red_streamer",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:narrow_red_streamer",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_science_pod",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.04
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_clock",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

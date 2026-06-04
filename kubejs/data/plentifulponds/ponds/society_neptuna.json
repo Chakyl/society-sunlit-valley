@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "society:neptuna",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:aquamagical_dust",
+					"count": 1
+				},
+				{
+					"item": "aquaculture:neptunium_ingot",
+					"count": 2
+				},
+				{
+					"item": "aquaculture:neptunes_bounty",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "aquaculture:neptunium_sword",
+					"count": 1
+				},
+				{
+					"item": "aquaculture:neptunium_chestplate",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:heart_of_neptunium",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "aquaculture:neptunium_nugget",
+				"count": 3
+			},
+			"chance": 0.15
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "aquaculture:neptunium_ingot",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:aquamagical_dust",
+				"count": 1
+			},
+			"chance": 0.13
+		},
+		{
+			"min_population": 10,
+			"drop": {
+				"id": "society:pristine_neptunite",
+				"count": 4
+			},
+			"chance": 0.12
+		}
+	]
+}

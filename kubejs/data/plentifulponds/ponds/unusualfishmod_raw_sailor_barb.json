@@ -1,0 +1,94 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_sailor_barb",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:canvas",
+					"count": 2
+				},
+				{
+					"item": "smallships:sail",
+					"count": 1
+				},
+				{
+					"item": "smallships:cannon",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:canvas",
+					"count": 8
+				},
+				{
+					"item": "smallships:jungle_cog",
+					"count": 1
+				},
+				{
+					"item": "smallships:cannon_ball",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:oak_resin",
+					"count": 32
+				},
+				{
+					"item": "smallships:mangrove_brigg",
+					"count": 1
+				},
+				{
+					"item": "railways:riveted_locometal",
+					"count": 64
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "smallships:sail",
+				"count": 1
+			},
+			"chance": 0.21
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:canvas",
+				"count": 4
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "species:coil",
+				"count": 4
+			},
+			"chance": 0.14
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "railways:riveted_locometal",
+				"count": 64
+			},
+			"chance": 0.24
+		}
+	]
+}

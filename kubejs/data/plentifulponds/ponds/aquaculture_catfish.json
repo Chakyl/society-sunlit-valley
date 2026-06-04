@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:catfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:aquamarine",
+					"count": 1
+				},
+				{
+					"item": "minecraft:cornflower",
+					"count": 16
+				},
+				{
+					"item": "vintagedelight:salt_lamp_light_blue",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "farm_and_charm:cat_food",
+					"count": 24
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "minecraft:lapis_lazuli",
+					"count": 48
+				},
+				{
+					"item": "minecraft:heart_of_the_sea",
+					"count": 1
+				},
+				{
+					"item": "minecraft:enchanting_table",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "society:aquamarine",
+				"count": 4
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:kyanite",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "minecraft:lapis_lazuli",
+				"count": 32
+			},
+			"chance": 0.32
+		}
+	]
+}

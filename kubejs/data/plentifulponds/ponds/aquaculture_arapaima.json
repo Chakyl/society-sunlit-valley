@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:arapaima",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:emerald",
+					"count": 4
+				},
+				{
+					"item": "brewery:hop_trellis_seed",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "vintagedelight:peanut",
+					"count": 32
+				},
+				{
+					"item": "pamhc2trees:hazelnutitem",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "bakery:hazelnut_ella",
+					"count": 1
+				},
+				{
+					"item": "society:jade",
+					"count": 1
+				},
+				{
+					"item": "vintagedelight:magic_peanut",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:emerald",
+				"count": 32
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:malachite",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:jade",
+				"count": 1
+			},
+			"chance": 0.22
+		}
+	]
+}

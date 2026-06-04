@@ -1,0 +1,142 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:pollock",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:calcite",
+					"count": 16
+				},
+				{
+					"item": "farm_and_charm:onion",
+					"count": 16
+				},
+				{
+					"item": "beachparty:coconut_milkshake",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:calcite_gem",
+					"count": 1
+				},
+				{
+					"item": "farm_and_charm:onion",
+					"count": 64
+				},
+				{
+					"item": "beachparty:coconut_milkshake",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_amethyst_cheese_block",
+					"count": 1
+				},
+				{
+					"item": "society:large_amethyst_milk",
+					"count": 4
+				},
+				{
+					"item": "meadow:piece_of_amethyst_cheese",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:calcite",
+				"count": 64
+			},
+			"chance": 0.59
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:calcite_gem",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:oak_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:spruce_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:birch_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:jungle_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:acacia_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:dark_oak_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:mangrove_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:cherry_mirror",
+				"count": 1
+			},
+			"chance": 0.08
+		}
+	]
+}

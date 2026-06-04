@@ -1,0 +1,66 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_spindlefish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "society:sunlit_pearl",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:aged_improved_nether_fizz",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:aged_energy_drink",
+					"count": 8
+				},
+				{
+					"item": "society:pristine_amethyst_chunk",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "quark:myalite_crystal",
+				"count": 32
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:dragon_breath",
+				"count": 4
+			},
+			"chance": 0.17
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:sparkstone",
+				"count": 16
+			},
+			"chance": 0.25
+		}
+	]
+}

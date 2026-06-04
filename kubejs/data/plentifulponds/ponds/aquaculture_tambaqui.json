@@ -1,0 +1,70 @@
+{
+	"color": "#ffffff",
+	"fish": "aquaculture:tambaqui",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:wither_skeleton_skull",
+					"count": 1
+				},
+				{
+					"item": "minecraft:skeleton_skull",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "society:prismatic_shard",
+					"count": 1
+				},
+				{
+					"item": "minecraft:netherite_scrap",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "society:omni_geode",
+					"count": 32
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:dripstone_block",
+				"count": 64
+			},
+			"chance": 0.69
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "minecraft:pointed_dripstone",
+				"count": 16
+			},
+			"chance": 0.31
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:omni_geode",
+				"count": 4
+			},
+			"chance": 0.22
+		}
+	]
+}

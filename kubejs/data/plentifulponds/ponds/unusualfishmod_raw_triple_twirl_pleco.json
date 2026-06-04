@@ -1,0 +1,98 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_triple_twirl_pleco",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"required_items": [
+				{
+					"item": "minecraft:ender_eye",
+					"count": 8
+				},
+				{
+					"item": "minecraft:ender_pearl",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"required_items": [
+				{
+					"item": "netherdepthsupgrade:warped_kelp_roll",
+					"count": 4
+				},
+				{
+					"item": "society:purple_sheet",
+					"count": 4
+				},
+				{
+					"item": "society:eggplant",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"required_items": [
+				{
+					"item": "minecraft:netherite_ingot",
+					"count": 4
+				},
+				{
+					"item": "society:aged_chorus_wine",
+					"count": 4
+				},
+				{
+					"item": "minecraft:end_rod",
+					"count": 16
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:ender_pearl",
+				"count": 8
+			},
+			"chance": 0.27
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "createutilities:void_steel_bars",
+				"count": 16
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "createutilities:void_steel_scaffolding",
+				"count": 8
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "createutilities:void_steel_ladder",
+				"count": 8
+			},
+			"chance": 0.12
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "createutilities:void_steel_ingot",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}
