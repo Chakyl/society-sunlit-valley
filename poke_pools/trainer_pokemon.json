@@ -1,0 +1,216 @@
+{
+  "pokemon": [
+    {
+      "species": "cobblemon:ironbundle",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "quarkdrive",
+      "moveset": [
+        "flipturn",
+        "icebeam",
+        "hydropump",
+        "freezedry"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:heavy_duty_boots",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:alomomola",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:relaxed",
+      "ability": "regenerator",
+      "moveset": [
+        "chillingwater",
+        "whirlpool",
+        "wish",
+        "playrough"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ursaluna",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "guts",
+      "moveset": [
+        "hammerarm",
+        "facade",
+        "headlongrush",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+     "evs": {
+        "hp": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:flame_orb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:deoxysspeed",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:naive",
+      "ability": "pressure",
+      "moveset": [
+        "knockoff",
+        "psychoboost",
+        "nightshade",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+     "evs": {
+        "hp": 200,
+        "special_attack": 252,
+        "speed": 56
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:heavy_duty_boots",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:toxapex",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "regenerator",
+      "moveset": [
+        "toxic",
+        "toxicspikes",
+        "poisonjab",
+        "icebeam"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 248,
+        "defence": 152,
+        "speed": 108
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:rocky_helmet",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:glimmora",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "toxicdebris",
+      "moveset": [
+        "mortalspin",
+        "mudshot",
+        "powergem",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:palkia",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:bashful",
+      "ability": "pressure",
+      "moveset": [
+        "spacialrend",
+        "substitute",
+        "earthpower",
+        "dragontail"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ]
+}
