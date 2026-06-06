@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  I", "CCC", "I  "],
+  "key": {
+    "I": {
+      "item": "quark:diamond_heart"
+    },
+    "C": {
+      "item": "refinedstorage:cable"
+    }
+  },
+  "result": {
+    "item": "cobblemon:link_cable"
+  }
+}

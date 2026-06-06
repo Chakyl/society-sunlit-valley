@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ata",
+        "lcr",
+        "aba"
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "c": {
+            "tag": "cobblemon:tier_2_poke_ball_materials"
+        },
+        "r": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "a": {
+            "item": "society:canvas"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:sport_ball",
+        "count": 4
+    }
+}

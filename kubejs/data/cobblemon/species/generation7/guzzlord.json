@@ -1,0 +1,193 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 799,
+    "name": "Guzzlord",
+    "primaryType": "dark",
+    "secondaryType": "dragon",
+    "maleRatio": -1,
+    "height": 55,
+    "weight": 8880,
+    "pokedex": [
+        "cobblemon.species.guzzlord.desc"
+    ],
+    "labels": [
+        "gen7",
+        "ultra_beast"
+    ],
+    "aspects": [],
+    "abilities": [
+        "beastboost",
+        "h:beastboost"
+    ],
+    "eggGroups": [
+        "undiscovered"
+    ],
+    "baseStats": {
+        "hp": 223,
+        "attack": 101,
+        "defence": 53,
+        "special_attack": 97,
+        "special_defence": 53,
+        "speed": 43
+    },
+    "evYield": {
+        "hp": 3,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 285,
+    "experienceGroup": "slow",
+    "catchRate": 45,
+    "eggCycles": 120,
+    "baseFriendship": 0,
+    "baseScale": 1,
+    "hitbox": {
+        "width": 14,
+        "height": 14,
+        "fixed": false
+    },
+    "drops": {
+        "amount": 3,
+        "entries": [
+            {
+                "item": "minecraft:echo_shard",
+                "quantityRange": "1-3"
+            }
+        ]
+    },
+    "moves": [
+        "1:dragonrage",
+        "1:bite",
+        "1:steamroller",
+        "1:dragontail",
+        "1:wringout",
+        "5:swallow",
+        "5:stockpile",
+        "10:knockoff",
+        "15:stomp",
+        "20:stompingtantrum",
+        "25:wideguard",
+        "30:crunch",
+        "35:bodyslam",
+        "40:gastroacid",
+        "45:hammerarm",
+        "50:heavyslam",
+        "55:dragonrush",
+        "60:belch",
+        "65:thrash",
+        "70:gigaimpact",
+        "tm:amnesia",
+        "tm:bodypress",
+        "tm:bodyslam",
+        "tm:brickbreak",
+        "tm:brutalswing",
+        "tm:bulldoze",
+        "tm:corrosivegas",
+        "tm:crunch",
+        "tm:darkpulse",
+        "tm:dracometeor",
+        "tm:dragonclaw",
+        "tm:dragonpulse",
+        "tm:dragontail",
+        "tm:drainpunch",
+        "tm:dualchop",
+        "tm:earthquake",
+        "tm:endure",
+        "tm:facade",
+        "tm:fireblast",
+        "tm:flamethrower",
+        "tm:fling",
+        "tm:gastroacid",
+        "tm:gigaimpact",
+        "tm:gyroball",
+        "tm:heatcrash",
+        "tm:heatwave",
+        "tm:heavyslam",
+        "tm:highhorsepower",
+        "tm:hyperbeam",
+        "tm:irondefense",
+        "tm:ironhead",
+        "tm:irontail",
+        "tm:knockoff",
+        "tm:lashout",
+        "tm:lastresort",
+        "tm:magnetrise",
+        "tm:megakick",
+        "tm:megapunch",
+        "tm:outrage",
+        "tm:payback",
+        "tm:poisonjab",
+        "tm:protect",
+        "tm:rest",
+        "tm:rockslide",
+        "tm:rocktomb",
+        "tm:shadowclaw",
+        "tm:shockwave",
+        "tm:sleeptalk",
+        "tm:sludgebomb",
+        "tm:sludgewave",
+        "tm:smackdown",
+        "tm:snarl",
+        "tm:steelroller",
+        "tm:stompingtantrum",
+        "tm:stoneedge",
+        "tm:substitute",
+        "tm:terablast",
+        "tm:thief",
+        "tutor:bulldoze",
+        "tutor:corrosivegas",
+        "tutor:darkpulse",
+        "tutor:dracometeor",
+        "tutor:dragonpulse",
+        "tutor:drainpunch",
+        "tutor:dualchop",
+        "tutor:flamethrower",
+        "tutor:gastroacid",
+        "tutor:gigaimpact",
+        "tutor:heatwave",
+        "tutor:highhorsepower",
+        "tutor:hyperbeam",
+        "tutor:irondefense",
+        "tutor:ironhead",
+        "tutor:irontail",
+        "tutor:knockoff",
+        "tutor:lashout",
+        "tutor:lastresort",
+        "tutor:magnetrise",
+        "tutor:outrage",
+        "tutor:poisonjab",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:shadowclaw",
+        "tutor:shockwave",
+        "tutor:sleeptalk",
+        "tutor:sludgebomb",
+        "tutor:snarl",
+        "tutor:steelroller",
+        "tutor:stompingtantrum",
+        "tutor:stoneedge"
+    ],
+    "evolutions": [],
+    "behaviour": {
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            }
+        },
+        "combat": {
+            "willDefendSelf": true,
+            "willDefendOwner": true,
+            "willFlee": false
+        },
+        "resting": {
+            "times": [
+                "any"
+            ],
+            "drowsyChance": 0.0014,
+            "rouseChance": 0.0042
+        }
+    }
+}

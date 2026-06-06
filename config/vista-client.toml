@@ -1,0 +1,43 @@
+
+[television]
+
+	[television.visuals]
+		#Render distance that television will use when rendering the live feed. Decreasing this will improve the performance of TVs, possibly by a lot
+		#Range: 1 ~ 256
+		render_distance = 64
+		#Turns off all the tv screen effects and draws it as a simple texture. Disabling can make the render slightly faster. All below options will be ignored if this is disabled
+		screen_effects = true
+		#Pixel density of televisions, in pixels per block side
+		#Range: 0.1 ~ 10.0
+		pixel_density = 1.37
+		#Make connected tvs have higher pixel density, such that the per block pixel density is constant
+		constant_pixel_density = true
+		#Amount of vignette effect applied to television live feed (0 = none, 1 = full)
+		#Range: 0.0 ~ 1.0
+		vignette = 1.0
+		#Plays an animation when the television is turned off or on
+		turn_off_animation = true
+
+	[television.live_feed]
+		#Draws the date and time on the live feed texture
+		draw_date = false
+		#How many times per second the television updates its live feed texture. Lowering this will improve performance but make the video less smooth, fractions work too
+		#Range: 0.0 ~ 60.0
+		update_fps = 10.0
+		#The minimum update fps for live feed. The mod will throttle update rate when fps are low so this serves at a lower limit
+		#Range: 0.0 ~ 60.0
+		min_update_fps = 4.0
+		#The maximum number of milliseconds all the logic for updating live feeds can take before fps throttling begins. Lowering this will improve performance but make the video less smooth. 16.66ms equals to 5fps
+		#Range: 0.0 ~ 1000000.0
+		throttling_update_ms = 16.66
+		#Distance from a TV after which the feed will update in real time
+		#Range: 1.0 ~ 512.0
+		update_distance = 20.0
+		#Scale factor for live feed resolution
+		#Range: 1 ~ 32
+		resolution_scale = 8
+		#Enables rendering of debug information for televisions
+		render_debug = false
+		#Attempts to disable iris shaders in the live feed view
+		iris_off_hack = true
+

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OOO",
+        "OBO",
+		"OOO"
+    ],
+    "key": {
+        "O": {
+            "item": "oreganized:lead_ingot"
+        },
+		"B": {
+			"item": "create:copper_diving_boots"
+		}
+    },
+    "result": {
+        "item": "cobblemon:heavy_duty_boots"
+    }
+}

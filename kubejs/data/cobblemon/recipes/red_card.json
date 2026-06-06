@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" P ", "PRP", " P "],
+  "key": {
+    "R": {
+      "item": "numismatics:red_card"
+    },
+    "P": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "cobblemon:red_card"
+  }
+}

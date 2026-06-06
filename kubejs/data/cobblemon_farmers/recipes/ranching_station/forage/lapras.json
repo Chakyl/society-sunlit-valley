@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "lapras",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:permafrost_drop",
+			"count": 1,
+			"chance": 0.5,
+			"use_quality": true,
+			"min_hearts": 5
+		},
+		{
+			"item": "aquaculture:neptunium_nugget",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		}
+	]
+}

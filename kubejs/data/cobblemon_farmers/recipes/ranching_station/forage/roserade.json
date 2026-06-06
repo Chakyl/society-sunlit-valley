@@ -1,0 +1,31 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "roserade",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 3,
+			"chance": 0.35,
+			"has_quality": true,
+			"min_hearts": 7
+		},
+		{
+			"item": "windswept:red_rose",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 8
+		},
+		{
+			"item": "windswept:blue_rose",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 8
+		},
+		{
+			"item": "windswept:white_rose",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

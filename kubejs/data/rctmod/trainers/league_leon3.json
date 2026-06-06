@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League Leon",
+  "team": [
+    {
+      "species": "cobblemon:pawmot",
+      "gender": "FEMALE",
+      "level": 48,
+      "nature": "cobblemon:bashful",
+      "ability": "naturalcure",
+      "moveset": [
+        "wildcharge",
+        "closecombat",
+        "dig",
+        "bite"
+      ],
+      "ivs": {
+        "hp": 12,
+        "attack": 6,
+        "defence": 4,
+        "special_attack": 18,
+        "special_defence": 25,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:vikavolt",
+      "gender": "FEMALE",
+      "level": 50,
+      "nature": "cobblemon:rash",
+      "ability": "levitate",
+      "moveset": [
+        "airslash",
+        "thunderbolt",
+        "irondefense",
+        "bugbuzz"
+      ],
+      "ivs": {
+        "hp": 20,
+        "attack": 4,
+        "defence": 21,
+        "special_attack": 13,
+        "special_defence": 29,
+        "speed": 20
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:luxray",
+      "gender": "MALE",
+      "level": 48,
+      "nature": "cobblemon:rash",
+      "ability": "intimidate",
+      "moveset": [
+        "electricterrain",
+        "crunch",
+        "thunderfang",
+        "charge"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 29,
+        "defence": 10,
+        "special_attack": 12,
+        "special_defence": 9,
+        "speed": 11
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:toxtricity",
+      "gender": "FEMALE",
+      "level": 48,
+      "nature": "cobblemon:sassy",
+      "ability": "punkrock",
+      "moveset": [
+        "thundershock",
+        "acidspray",
+        "toxic",
+        "venoshock"
+      ],
+      "ivs": {
+        "hp": 27,
+        "defence": 11,
+        "special_attack": 5,
+        "special_defence": 1,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:lanturn",
+      "gender": "FEMALE",
+      "level": 48,
+      "nature": "cobblemon:gentle",
+      "ability": "illuminate",
+      "moveset": [
+        "bubblebeam",
+        "signalbeam",
+        "aquaring",
+        "electroball"
+      ],
+      "ivs": {
+        "hp": 19,
+        "defence": 20,
+        "special_attack": 11,
+        "special_defence": 31,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:golem",
+      "gender": "MALE",
+      "level": 50,
+      "nature": "cobblemon:serious",
+      "ability": "sturdy",
+      "moveset": [
+        "heavyslam",
+        "steamroller",
+        "thunderpunch",
+        "smackdown"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 23,
+        "defence": 23,
+        "special_attack": 27,
+        "special_defence": 3,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male",
+        "alolan"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

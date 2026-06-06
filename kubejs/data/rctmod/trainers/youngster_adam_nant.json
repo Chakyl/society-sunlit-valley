@@ -1,0 +1,131 @@
+{
+  "displayName": "Youngster Adam Nant",
+  "team": [
+    {
+      "species": "cobblemon:mudsdale",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:impish",
+      "ability": "stamina",
+      "moveset": [
+        "irondefense",
+        "earthquake",
+        "bodypress",
+        "megakick"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "defence": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:dragonite",
+      "gender": "MALE",
+      "level": 81,
+      "nature": "cobblemon:mild",
+      "ability": "multiscale",
+      "moveset": [
+        "dragondance",
+        "firepunch",
+        "thunderpunch",
+        "aquatail"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:boltund",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:jolly",
+      "ability": "strongjaw",
+      "moveset": [
+        "firefang",
+        "crunch",
+        "thunderfang",
+        "psychicfangs"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:gallade",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:adamant",
+      "ability": "sharpness",
+      "moveset": [
+        "leafblade",
+        "nightslash",
+        "furycutter",
+        "slash"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

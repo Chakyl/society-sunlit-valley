@@ -1,0 +1,300 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 672,
+    "name": "Skiddo",
+    "primaryType": "grass",
+    "maleRatio": 0.5,
+    "height": 9,
+    "weight": 310,
+    "pokedex": [
+        "cobblemon.species.skiddo.desc"
+    ],
+    "labels": [
+        "gen6"
+    ],
+    "aspects": [],
+    "abilities": [
+        "sapsipper",
+        "h:grasspelt"
+    ],
+    "eggGroups": [
+        "field"
+    ],
+    "baseStats": {
+        "hp": 66,
+        "attack": 65,
+        "defence": 48,
+        "special_attack": 62,
+        "special_defence": 57,
+        "speed": 52
+    },
+    "evYield": {
+        "hp": 1,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 70,
+    "experienceGroup": "medium_fast",
+    "catchRate": 200,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 1,
+    "hitbox": {
+        "height": 1.25,
+        "fixed": false,
+        "width": 0.9
+    },
+    "riding": {
+        "behaviours": {
+            "LAND": {
+                "key": "cobblemon:land/horse",
+                "rideSounds": [],
+                "stats": {
+                    "ACCELERATION": "40-65",
+                    "JUMP": "30-40",
+                    "SKILL": "20-40",
+                    "SPEED": "30-45",
+                    "STAMINA": "30-45"
+                }
+            }
+        },
+        "seats": [
+            {
+                "offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "poseOffsets": [
+                    {
+                        "offset": {
+                            "x": -1.3886805999999998e-19,
+                            "y": -0.85467255,
+                            "z": 0.19203149
+                        },
+                        "poseTypes": [
+                            "STAND"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -0.018005978,
+                            "y": -0.92781013,
+                            "z": 0.17846698
+                        },
+                        "poseTypes": [
+                            "WALK"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -1.3886805999999998e-19,
+                            "y": -0.85467255,
+                            "z": 0.19203149
+                        },
+                        "poseTypes": [
+                            "HOVER"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -1.3886805999999998e-19,
+                            "y": -0.85467255,
+                            "z": 0.19203149
+                        },
+                        "poseTypes": [
+                            "FLY"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -1.3886805999999998e-19,
+                            "y": -0.85467255,
+                            "z": 0.19203149
+                        },
+                        "poseTypes": [
+                            "FLOAT"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -1.3886805999999998e-19,
+                            "y": -0.85467255,
+                            "z": 0.19203149
+                        },
+                        "poseTypes": [
+                            "SWIM"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -1.3886805999999998e-19,
+                            "y": -0.85467255,
+                            "z": 0.19203149
+                        },
+                        "poseTypes": [
+                            "GLIDE"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "behaviour": {
+        "combat": {
+            "willDefendOwner": true
+        },
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "skiddo",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "gogoat",
+                    "tier": 2
+                }
+            ]
+        },
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            },
+            "walk": {
+                "walkSpeed": 0.35
+            }
+        },
+        "resting": {
+            "canSleep": true,
+            "drowsyChance": 0.0333,
+            "light": "0-4",
+            "rouseChance": 0.0042
+        }
+    },
+    "drops": {
+        "amount": 3,
+        "entries": [
+            {
+                "item": "windswept:goat",
+                "quantityRange": "1-2"
+            },
+            {
+                "item": "minecraft:goat_horn",
+                "percentage": 2.5
+            }
+        ]
+    },
+    "moves": [
+        "1:tackle",
+        "1:growth",
+        "7:vinewhip",
+        "9:tailwhip",
+        "12:leechseed",
+        "13:razorleaf",
+        "16:worryseed",
+        "20:synthesis",
+        "22:takedown",
+        "26:bulldoze",
+        "30:seedbomb",
+        "34:bulkup",
+        "38:doubleedge",
+        "42:hornleech",
+        "45:leafblade",
+        "egg:defensecurl",
+        "egg:grassyterrain",
+        "egg:milkdrink",
+        "egg:rollout",
+        "tm:bodyslam",
+        "tm:brickbreak",
+        "tm:bulkup",
+        "tm:bulldoze",
+        "tm:bulletseed",
+        "tm:dig",
+        "tm:doubleedge",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:energyball",
+        "tm:facade",
+        "tm:gigadrain",
+        "tm:grassknot",
+        "tm:grassyglide",
+        "tm:grassyterrain",
+        "tm:helpinghand",
+        "tm:irontail",
+        "tm:leafblade",
+        "tm:leafstorm",
+        "tm:magicalleaf",
+        "tm:mudshot",
+        "tm:mudslap",
+        "tm:naturepower",
+        "tm:payback",
+        "tm:playrough",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:roar",
+        "tm:rockslide",
+        "tm:rocksmash",
+        "tm:rollout",
+        "tm:seedbomb",
+        "tm:sleeptalk",
+        "tm:solarbeam",
+        "tm:stompingtantrum",
+        "tm:strength",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:surf",
+        "tm:synthesis",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:trailblaze",
+        "tm:wildcharge",
+        "tm:workup",
+        "tm:worryseed",
+        "tm:zenheadbutt",
+        "tutor:bulkup",
+        "tutor:bulldoze",
+        "tutor:endeavor",
+        "tutor:energyball",
+        "tutor:gigadrain",
+        "tutor:grassyglide",
+        "tutor:helpinghand",
+        "tutor:irontail",
+        "tutor:magicalleaf",
+        "tutor:mudslap",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:rocksmash",
+        "tutor:rollout",
+        "tutor:seedbomb",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:synthesis",
+        "tutor:wildcharge",
+        "tutor:worryseed",
+        "tutor:zenheadbutt"
+    ],
+    "evolutions": [
+        {
+            "consumeHeldItem": false,
+            "id": "skiddo_gogoat",
+            "learnableMoves": [
+                "aerialace"
+            ],
+            "requirements": [
+                {
+                    "minLevel": 32,
+                    "variant": "level"
+                }
+            ],
+            "result": "gogoat",
+            "variant": "level_up"
+        }
+    ]
+}

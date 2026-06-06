@@ -5,75 +5,96 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 148,
+          "weight": 296,
           "data": {
             "Name": "society:blackstone_boulder"
           }
         },
         {
-          "weight": 20,
+          "weight": 40,
           "data": {
             "Name": "minecraft:deepslate_gold_ore"
           }
         },
         {
-          "weight": 15,
+          "weight": 30,
           "data": {
             "Name": "minecraft:deepslate_redstone_ore"
           }
         },
         {
-          "weight": 10,
+          "weight": 20,
           "data": {
             "Name": "oreganized:deepslate_lead_ore"
           }
         },
         {
-          "weight": 10,
+          "weight": 20,
           "data": {
             "Name": "society:deepslate_sparkstone_ore"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:magma_geode_node"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:fire_quartz"
           }
         },
         {
-          "weight": 4,
+          "weight": 8,
           "data": {
             "Name": "society:omni_geode_node"
           }
         },
         {
-          "weight": 3,
+          "weight": 6,
           "data": {
             "Name": "oreganized:deepslate_silver_ore"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:deepslate_iridium_ore"
           }
         },
         {
-          "weight": 1,
+          "weight": 2,
           "data": {
             "Name": "society:skull_cavern_teleporter"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:grimwood_supply_crate"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "sunlit_cobblemon:mon_box",
+            "Properties": {
+              "facing": "up"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "sunlit_cobblemon:ultra_loot_ball"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "sunlit_cobblemon:ominous_black_stake"
           }
         }
       ]

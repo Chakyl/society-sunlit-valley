@@ -1,0 +1,251 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wayfinder_armor_trim_smithing_template"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:host_armor_trim_smithing_template"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:raiser_armor_trim_smithing_template"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shaper_armor_trim_smithing_template"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.2
+				}
+			]
+		},
+		{
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:suspicious_stew",
+					"functions": [
+						{
+							"function": "minecraft:set_stew_effect",
+							"effects": [
+								{
+									"type": "minecraft:absorption",
+									"duration": 3
+								},
+								{
+									"type": "minecraft:blindness",
+									"duration": 5
+								},
+								{
+									"type": "minecraft:haste",
+									"duration": 12
+								},
+								{
+									"type": "minecraft:health_boost",
+									"duration": 5
+								},
+								{
+									"type": "minecraft:jump_boost",
+									"duration": 10
+								},
+								{
+									"type": "minecraft:speed",
+									"duration": 5
+								},
+								{
+									"type": "minecraft:strength",
+									"duration": 5
+								},
+								{
+									"type": "minecraft:poison",
+									"duration": 3
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:mutton",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 3,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:rotten_flesh",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 4,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 3,
+								"max": 5
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 3,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:flint",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 2,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 4,
+								"max": 7
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone_sword",
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": {
+								"type": "minecraft:uniform",
+								"min": 5,
+								"max": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone_pickaxe",
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": {
+								"type": "minecraft:uniform",
+								"min": 5,
+								"max": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bow",
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": {
+								"type": "minecraft:uniform",
+								"min": 5,
+								"max": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone_axe",
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": {
+								"type": "minecraft:uniform",
+								"min": 5,
+								"max": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shield"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 8,
+								"max": 15
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": []
+		}
+	]
+}

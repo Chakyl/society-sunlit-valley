@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "amoonguss",
+	"forages": [
+		{
+			"item": "cluttered:red_mushroom_cap",
+			"count": 4,
+			"chance": 0.35,
+			"min_hearts": 4
+		},
+		{
+			"item": "sunlit_cobblemon:strange_spore",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 5
+		},
+		{
+			"item": "sunlit_cobblemon:strange_spore",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 10
+		}
+	]
+}

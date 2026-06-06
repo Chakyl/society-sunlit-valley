@@ -1,0 +1,219 @@
+{
+  "twig": {
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.twig"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.twig.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "twigs:twig"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_1",
+          "lock_command": "kubejs stages remove @s trainer_lvl_1"
+        }
+      }
+    ]
+  },
+  "rock": {
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.rock"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.rock.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "cobblemon:smooth_rock"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_2",
+          "lock_command": "kubejs stages remove @s trainer_lvl_2"
+        }
+      }
+    ]
+  },
+  "iron": {
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.iron"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.iron.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_3",
+          "lock_command": "kubejs stages remove @s trainer_lvl_3"
+        }
+      }
+    ]
+  },
+  "gold": {
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.gold"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.gold.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_4",
+          "lock_command": "kubejs stages remove @s trainer_lvl_4"
+        }
+      }
+    ]
+  },
+  "diamond": {
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.diamond"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.diamond.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_5",
+          "lock_command": "kubejs stages remove @s trainer_lvl_5"
+        }
+      }
+    ]
+  },
+  "iridium": {
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.iridium"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.iridium.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_6",
+          "lock_command": "kubejs stages remove @s trainer_lvl_6"
+        }
+      }
+    ]
+  },
+  "ancient": {
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.ancient"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.ancient.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:ancient_fruit"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_7",
+          "lock_command": "kubejs stages remove @s trainer_lvl_7"
+        }
+      }
+    ]
+  },
+  "prismatic": {
+
+    "title": {"translate": "sunlit_cobblemon.skills.trainer_level.prismatic"},
+    "description": {"translate": "sunlit_cobblemon.skills.trainer_level.prismatic.description" },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:prismatic_shard"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 6,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s trainer_lvl_8",
+          "lock_command": "kubejs stages remove @s trainer_lvl_8"
+        }
+      }
+    ]
+  }
+}

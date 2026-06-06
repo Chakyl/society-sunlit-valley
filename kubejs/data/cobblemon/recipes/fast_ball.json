@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "c": {
+            "item": "oreganized:silver_ingot"
+        },
+        "r": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:white_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:fast_ball",
+        "count": 4
+    }
+}

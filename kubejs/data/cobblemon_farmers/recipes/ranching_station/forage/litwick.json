@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "litwick",
+	"forages": [
+		{
+			"item": "species:wicked_wax",
+			"count": 1,
+			"chance": 0.66,
+			"min_hearts": 5
+		},
+		{
+			"item": "quark:soul_bead",
+			"count": 1,
+			"chance": 0.3,
+			"min_hearts": 5
+		},
+		{
+			"item": "species:wicked_candle",
+			"count": 1,
+			"chance": 0.01,
+			"min_hearts": 10
+		}
+	]
+}

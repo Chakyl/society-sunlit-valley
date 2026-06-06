@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "ursaluna",
+	"forages": [
+		{
+			"item": "golemoverhaul:honey_blob",
+			"count": 18,
+			"chance": 0.2,
+			"min_hearts": 6
+		},
+		{
+			"item": "minecraft:bee_nest",
+			"count": 1,
+			"chance": 0.2,
+			"min_hearts": 6
+		},
+		{
+			"item": "sunlit_cobblemon:moondust",
+			"count": 1,
+			"chance": 0.01,
+			"min_hearts": 5
+		},
+		{
+			"item": "unusualfishmod:ripper_tooth",
+			"count": 1,
+			"chance": 0.03,
+			"min_hearts": 7
+		}
+	]
+}

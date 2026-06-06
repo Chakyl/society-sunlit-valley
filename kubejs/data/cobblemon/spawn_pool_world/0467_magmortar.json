@@ -1,0 +1,120 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "magmortar-1",
+            "pokemon": "magmortar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "45-54",
+            "weight": 0.1,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_hills"
+                ],
+                "isRaining": false,
+                "neededNearbyBlocks": [
+                    "#minecraft:lava",
+                    "minecraft:magma_block"
+                ]
+            }
+        },
+        {
+            "id": "magmortar-2",
+            "pokemon": "magmortar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "45-54",
+            "weight": 0.1,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ],
+                "isRaining": false
+            }
+        },
+        {
+            "id": "magmortar-3",
+            "pokemon": "magmortar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "45-54",
+            "weight": 0.1,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_basalt",
+                    "#cobblemon:nether/is_wasteland"
+                ]
+            },
+            "drops": {
+                "amount": 3,
+                "entries": [
+                    {
+                        "item": "minecraft:blaze_powder",
+                        "percentage": 25.0
+                    },
+                    {
+                        "item": "cobblemon:magmarizer",
+                        "percentage": 10.0
+                    },
+                    {
+                        "item": "cobblemon:rawst_berry",
+                        "percentage": 10.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "magmortar-4",
+            "pokemon": "magmortar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "60-80",
+            "weight": 0.2,
+            "condition": {
+                "biomes": [
+                    "society:blackstone_caves"
+                ]
+            },
+            "drops": {
+                "amount": 3,
+                "entries": [
+                    {
+                        "item": "minecraft:blaze_powder",
+                        "percentage": 25.0
+                    },
+                    {
+                        "item": "cobblemon:magmarizer",
+                        "percentage": 10.0
+                    },
+                    {
+                        "item": "cobblemon:rawst_berry",
+                        "percentage": 10.0
+                    }
+                ]
+            }
+        }
+    ]
+}

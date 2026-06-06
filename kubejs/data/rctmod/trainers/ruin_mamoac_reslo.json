@@ -1,0 +1,119 @@
+{
+  "displayName": "Ruin Mamoac Reslo",
+  "team": [
+    {
+      "species": "cobblemon:cacturne",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:modest",
+      "ability": "sandveil",
+      "moveset": [
+        "sandstorm",
+        "cottonspore",
+        "energyball",
+        "spikyshield"
+      ],
+      "ivs": {
+        "hp": 28,
+        "attack": 12,
+        "defence": 5,
+        "special_attack": 27,
+        "special_defence": 30,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:smooth_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:rotom",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:quirky",
+      "ability": "levitate",
+      "moveset": [
+        "electroball",
+        "thunderwave",
+        "hex",
+        "substitute"
+      ],
+      "ivs": {
+        "hp": 12,
+        "attack": 20,
+        "defence": 13,
+        "special_attack": 1,
+        "special_defence": 5,
+        "speed": 7
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:houndoom",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "earlybird",
+      "moveset": [
+        "inferno",
+        "nastyplot",
+        "flamethrower",
+        "foulplay"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 17,
+        "defence": 26,
+        "special_attack": 14,
+        "special_defence": 7,
+        "speed": 14
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:pyroar",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "rivalry",
+      "moveset": [
+        "overheat",
+        "incinerate",
+        "hypervoice",
+        "crunch"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 21,
+        "defence": 8,
+        "special_attack": 27,
+        "special_defence": 28,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

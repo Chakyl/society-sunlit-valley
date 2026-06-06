@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " G ",
+        "TCT",
+		"G G"
+    ],
+    "key": {
+        "G": {
+            "item": "minecraft:polished_granite"
+        },
+        "T": {
+            "tag": "minecraft:terracotta"
+        },
+        "C": {
+            "item": "species:kinetic_core"
+        }
+    },
+    "result": {
+        "item": "cobblemon:protector"
+    }
+}

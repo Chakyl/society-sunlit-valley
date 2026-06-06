@@ -1,0 +1,27 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "poipole",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 1,
+			"chance": 0.76,
+			"has_quality": true,
+			"min_hearts": 4
+		},
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 1,
+			"chance": 0.76,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 1,
+			"chance": 0.76,
+			"has_quality": true,
+			"min_hearts": 8
+		}
+	]
+}

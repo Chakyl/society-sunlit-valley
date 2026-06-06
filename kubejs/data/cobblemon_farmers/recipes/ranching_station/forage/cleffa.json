@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "cleffa",
+	"forages": [
+		{
+			"item": "botania:pixie_dust",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 4
+		},
+		{
+			"item": "sunlit_cobblemon:moondust",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 10
+		}
+	]
+}

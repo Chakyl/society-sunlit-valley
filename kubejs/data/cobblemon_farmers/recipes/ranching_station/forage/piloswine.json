@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "piloswine",
+	"forages": [
+		{
+			"item": "society:truffle",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 4,
+			"has_quality": true
+		},
+		{
+			"item": "species:frozen_hair",
+			"count": 4,
+			"chance": 0.35,
+			"min_hearts": 7
+		}
+	]
+}

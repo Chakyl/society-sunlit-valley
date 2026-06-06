@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "nidoranf",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 1,
+			"chance": 0.46,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "sunlit_cobblemon:berry_capsule",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 7
+		}
+	]
+}

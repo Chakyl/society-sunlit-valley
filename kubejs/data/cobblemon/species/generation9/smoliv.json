@@ -1,0 +1,129 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 928,
+  "name": "Smoliv",
+  "primaryType": "grass",
+  "secondaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 65,
+  "pokedex": [
+    "cobblemon.species.smoliv.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "earlybird",
+    "h:harvest"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 41,
+    "attack": 35,
+    "defence": 45,
+    "special_attack": 58,
+    "special_defence": 51,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 52,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:big_root",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:kebia_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:sweetscent",
+    "5:absorb",
+    "7:growth",
+    "10:razorleaf",
+    "13:helpinghand",
+    "16:flail",
+    "20:megadrain",
+    "23:grassyterrain",
+    "27:seedbomb",
+    "30:energyball",
+    "34:leechseed",
+    "38:terrainpulse",
+    "egg:memento",
+    "egg:strengthsap",
+    "egg:synthesis",
+    "egg:weatherball",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:earthpower",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:protect",
+    "tm:rest",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:solarblade",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:terrainpulse",
+    "tm:trailblaze",
+    "tm:weatherball",
+    "tutor:earthpower",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:synthesis",
+    "tutor:terrainpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "smoliv_dolliv",
+      "variant": "level_up",
+      "result": "dolliv",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 25
+        }
+      ]
+    }
+  ]
+}

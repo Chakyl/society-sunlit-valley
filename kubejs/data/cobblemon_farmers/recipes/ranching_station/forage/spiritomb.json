@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "spiritomb",
+	"forages": [
+		{
+			"item": "paraglider:spirit_orb",
+			"count": 3,
+			"chance": 0.85,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:glitched_vhs",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 8
+		}
+	]
+}

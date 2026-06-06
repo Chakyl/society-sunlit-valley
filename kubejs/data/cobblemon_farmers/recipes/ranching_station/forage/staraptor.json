@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "staraptor",
+	"forages": [
+		{
+			"item": "society:large_egg",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 1
+		},
+		{
+			"item": "windswept:elder_feather",
+			"count": 4,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 6
+		}
+	]
+}

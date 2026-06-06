@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "pidove",
+	"forages": [
+		{
+			"item": "minecraft:wheat",
+			"count": 1,
+			"chance": 0.5,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:mossberry",
+			"count": 1,
+			"chance": 0.3,
+			"has_quality": true,
+			"min_hearts": 8
+		}
+	]
+}

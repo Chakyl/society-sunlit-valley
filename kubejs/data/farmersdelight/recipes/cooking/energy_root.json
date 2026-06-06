@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredients": [
+    { "item": "cobblemon:big_root" },
+    { "item": "society:sparkpod" },
+    {
+      "tag": "society:mineral"
+    },
+    {
+      "tag": "society:tree_fruits"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": { "item": "cobblemon:energy_root" }
+}

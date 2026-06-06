@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "ursaring",
+	"forages": [
+		{
+			"item": "golemoverhaul:honey_blob",
+			"count": 4,
+			"chance": 0.4,
+			"min_hearts": 6
+		},
+		{
+			"item": "minecraft:bee_nest",
+			"count": 1,
+			"chance": 0.2,
+			"min_hearts": 6
+		}
+	]
+}

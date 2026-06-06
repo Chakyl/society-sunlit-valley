@@ -1,0 +1,41 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "hippowdon-1",
+      "pokemon": "hippowdon",
+      "presets": ["natural", "wild"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "34-53",
+      "weight": 0.2,
+      "weightMultiplier": {
+        "multiplier": 1.5,
+        "condition": {
+          "isRaining": true
+        }
+      },
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "biomes": ["#cobblemon:is_desert"]
+      }
+    },
+    {
+      "id": "hippowdon-2",
+      "pokemon": "hippowdon",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "34-53",
+      "weight": 1.2,
+      "condition": {
+        "biomes": ["society:desert_caves"]
+      }
+    }
+  ]
+}

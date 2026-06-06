@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "krookodile",
+	"forages": [
+		{
+			"item": "numismatics:crown",
+			"count": 3,
+			"chance": 0.4,
+			"min_hearts": 3
+		},
+		{
+			"item": "numismatics:sun",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 6
+		},
+		{
+			"item": "numismatics:neptunium_coin",
+			"count": 1,
+			"chance": 0.02,
+			"min_hearts": 9
+		},
+		{
+			"item": "numismatics:ancient_coin",
+			"count": 1,
+			"chance": 1.0E-4,
+			"min_hearts": 10
+		}
+	]
+}

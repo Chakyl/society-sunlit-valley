@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "ragingbolt-1",
+      "pokemon": "ragingbolt",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:frozen_maelstrom"]
+      }
+    }
+
+  ]
+}

@@ -1,0 +1,77 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "parasect-1",
+            "pokemon": "parasect",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "24-41",
+            "weight": 1.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_lush"
+                ]
+            }
+        },
+        {
+            "id": "parasect-2",
+            "pokemon": "parasect",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "24-41",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_mushroom"
+                ]
+            }
+        },
+        {
+            "id": "parasect-3",
+            "pokemon": "parasect",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "24-41",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_fungus"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:nether/is_warped"
+                ]
+            }
+        },
+        {
+            "id": "paras-4",
+            "pokemon": "paras",
+            "presets": [
+                "shrooms"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "24-41",
+            "weight": 1.0
+        }
+    ]
+}

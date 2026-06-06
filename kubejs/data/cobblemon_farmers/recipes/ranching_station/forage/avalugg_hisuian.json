@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "avalugg",
+	"form": "hisuian",
+	"forages": [
+		{
+			"item": "minecraft:ice",
+			"count": 16,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "minecraft:gravel",
+			"count": 16,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "sunlit_cobblemon:permafrost_drop",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 4
+		}
+	]
+}

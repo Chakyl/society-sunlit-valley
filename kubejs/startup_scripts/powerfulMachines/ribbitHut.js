@@ -1,6 +1,23 @@
 console.info("[SOCIETY] ribbitHut.js loaded");
 
 const Block = Java.loadClass("net.minecraft.world.level.block.Block");
+
+const harvestCobblemonBerryBush = (block, level, pos, player) => {
+  let nbt = block.getEntityData();
+  const { GrowthPoints, Berry } = nbt;
+  let returnData = [];
+  let newGrowthPoints = [];
+  for (let i = 0; i < GrowthPoints.length; i++) {
+    returnData.push(GrowthPoints[i])
+    returnData.push(Berry)
+  }
+  nbt.merge({
+    GrowthPoints: newGrowthPoints,
+  });
+  global.setBlockEntityData(block, nbt);
+  return returnData;
+}
+
 const getDrops = (block, blockState, level, pos, player) => {
   if (block.id.includes("vinery")) {
     let grape = block.getProperties().get("grape").split("_");
@@ -20,6 +37,7 @@ const getDrops = (block, blockState, level, pos, player) => {
   if (block.id.equals("autumnity:tall_foul_berry_bush")) {
     return [Item.of(`2x autumnity:foul_berries`)];
   }
+  if (block.hasTag("cobblemon:berries")) return harvestCobblemonBerryBush(block, level, pos, player)
   return Block.getDrops(
     blockState,
     level,
@@ -76,6 +94,7 @@ const getPlantData = (block, mcBlock, blockState) => {
       newAge: "0",
     };
   }
+  if (block.hasTag("cobblemon:berries")) return { maxAge: properties.get("age").equals("5"), newAge: "3" };
   return { maxAge: mcBlock.isMaxAge(blockState), newAge: "0" };
 };
 const setHarvested = (level, pos, server, block, age) => {

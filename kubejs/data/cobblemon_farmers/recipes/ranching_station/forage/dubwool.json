@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "dubwool",
+	"forages": [
+		{
+			"item": "society:fine_wool",
+			"count": 1,
+			"chance": 0.8,
+			"has_quality": true,
+			"min_hearts": 1
+		},
+		{
+			"item": "minecraft:goat_horn",
+			"count": 1,
+			"chance": 0.1,
+			"has_quality": true,
+			"min_hearts": 5
+		}
+	]
+}

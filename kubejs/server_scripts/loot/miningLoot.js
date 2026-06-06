@@ -536,7 +536,22 @@ LootJS.modifiers((e) => {
     "netherdepthsupgrade:bonefish",
     "society:fantasy_box_bone",
     "betterarcheology:artifact_shards",
-    "society:artifact_trove"
+    "society:artifact_trove",
+    "cobblemon:helix_fossil",
+    "cobblemon:dome_fossil",
+    "cobblemon:root_fossil",
+    "cobblemon:old_amber_fossil",
+    "cobblemon:claw_fossil",
+    "cobblemon:fossilized_bird",
+    "cobblemon:sail_fossil",
+    "cobblemon:plume_fossil",
+    "cobblemon:jaw_fossil",
+    "cobblemon:cover_fossil",
+    "cobblemon:armor_fossil",
+    "cobblemon:skull_fossil",
+    "cobblemon:fossilized_fish",
+    "cobblemon:fossilized_drake",
+    "cobblemon:fossilized_dino"
   ].forEach((remain) =>
     weightedRemains.push(Item.of(remain).withChance(1))
   );

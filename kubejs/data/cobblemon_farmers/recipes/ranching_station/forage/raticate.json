@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "raticate",
+	"forages": [
+		{
+			"item": "vintagedelight:peanut",
+			"count": 3,
+			"chance": 0.3,
+			"min_hearts": 6,
+			"has_quality": true
+		},
+		{
+			"item": "vintagedelight:magic_peanut",
+			"count": 1,
+			"chance": 0.01,
+			"min_hearts": 10,
+			"has_quality": true
+		}
+	]
+}

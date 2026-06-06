@@ -1,0 +1,173 @@
+{
+  "displayName": "Sunlit League Aiden",
+  "team": [
+    {
+      "species": "cobblemon:steelix",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:brave",
+      "ability": "sturdy",
+      "moveset": [
+        "firefang",
+        "stealthrock",
+        "earthquake",
+        "gyroball"
+      ],
+      "ivs": {
+        "hp": 24,
+        "attack": 21,
+        "defence": 5,
+        "special_attack": 15,
+        "special_defence": 3,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:tinkaton",
+      "gender": "FEMALE",
+      "level": 80,
+      "nature": "cobblemon:gentle",
+      "ability": "owntempo",
+      "moveset": [
+        "gigatonhammer",
+        "brutalswing",
+        "playrough",
+        "bulldoze"
+      ],
+      "ivs": {
+        "hp": 3,
+        "attack": 2,
+        "defence": 9,
+        "special_attack": 15,
+        "special_defence": 26,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:razor_claw",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:florges",
+      "gender": "FEMALE",
+      "level": 80,
+      "nature": "cobblemon:quiet",
+      "ability": "flowerveil",
+      "moveset": [
+        "moonblast",
+        "grassyterrain",
+        "psychic",
+        "solarbeam"
+      ],
+      "ivs": {
+        "hp": 30,
+        "attack": 28,
+        "defence": 20,
+        "special_attack": 12,
+        "special_defence": 22,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "female",
+        "flower-red"
+      ]
+    },
+    {
+      "species": "cobblemon:empoleon",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:lax",
+      "ability": "torrent",
+      "moveset": [
+        "metalclaw",
+        "raindance",
+        "icebeam",
+        "hydrocannon"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 27,
+        "defence": 31,
+        "special_attack": 19,
+        "special_defence": 25,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:damp_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:archaludon",
+      "gender": "FEMALE",
+      "level": 80,
+      "nature": "cobblemon:quirky",
+      "ability": "sturdy",
+      "moveset": [
+        "electroshot",
+        "bodypress",
+        "dracometeor",
+        "metalclaw"
+      ],
+      "ivs": {
+        "hp": 7,
+        "attack": 11,
+        "defence": 17,
+        "special_attack": 2,
+        "special_defence": 30,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:power_herb",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:sylveon",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:jolly",
+      "ability": "pixilate",
+      "moveset": [
+        "lightscreen",
+        "moonblast",
+        "doubleedge",
+        "bite"
+      ],
+      "ivs": {
+        "attack": 17,
+        "defence": 11,
+        "special_attack": 4,
+        "special_defence": 12,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "cacturne",
+	"forages": [
+		{
+			"item": "atmospheric:barrel_cactus",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "moreminecarts:glass_spines",
+			"count": 8,
+			"chance": 0.25,
+			"min_hearts": 7
+		}
+	]
+}

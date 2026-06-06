@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "CHC",
+		"III"
+    ],
+    "key": {
+        "I": {
+            "item": "oreganized:silver_ingot"
+        },
+        "C": {
+            "item": "society:sap"
+        },
+        "H": {
+            "item": "society:pine_tar"
+        }
+    },
+    "result": {
+        "item": "cobblemon:metal_coat"
+    }
+}

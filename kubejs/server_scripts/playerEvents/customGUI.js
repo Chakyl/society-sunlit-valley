@@ -2,7 +2,6 @@ console.info("[SOCIETY] coinUi.js loaded");
 
 const xOffset = 64;
 
-
 PlayerEvents.tick((e) => {
   const player = e.player;
   const curios = player.nbt.ForgeCaps["curios:inventory"];
@@ -18,7 +17,7 @@ PlayerEvents.tick((e) => {
         clockIcon: {
           type: "item",
           x: 8,
-          y: 22,
+          y: 8,
           item: "minecraft:clock",
           alignX: "left",
           alignY: "top",
@@ -28,7 +27,6 @@ PlayerEvents.tick((e) => {
   }
   fishRadarPainter(curios, e);
 });
-
 const fishRadarPadding = 2;
 const fishRadarPainter = (curios, e) => {
   const { player, level } = e;
@@ -46,7 +44,7 @@ const fishRadarPainter = (curios, e) => {
       fish = global.netherRadar(e, fish, setLocalConditions);
     }
     if (player.stages.has("mystical_ocean")) fish.push("society:neptuna");
-    let fishRadarStart = 48;
+    let fishRadarStart = 2;
     player.paint({
       fishRadarDisplay: {
         type: "text",
@@ -59,7 +57,7 @@ const fishRadarPainter = (curios, e) => {
               .append(" ]=").toJson()
           }`,
         color: "#AAAAAA",
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       },
       fishConditions: {
@@ -68,7 +66,7 @@ const fishRadarPainter = (curios, e) => {
         y: fishRadarStart + 8 + fishRadarPadding,
         text: `${localConditions.toJson()}`,
         color: "#FFFFFFF",
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       },
       fishRadarBottom: {
@@ -77,7 +75,7 @@ const fishRadarPainter = (curios, e) => {
         y: fishRadarStart + 16 + fishRadarPadding * 2,
         text: "==============",
         color: "#AAAAAA",
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       },
     });
@@ -92,7 +90,7 @@ const fishRadarPainter = (curios, e) => {
         x: 10 + (index >= 5 ? (index - 5) * 18 : index * 18),
         y: fishRadarStart + 32 + fishRadarPadding * 4 + (index >= 5 ? 18 : 0),
         item: fishItem,
-        alignX: "left",
+        alignX: "center",
         alignY: "top",
       };
     });

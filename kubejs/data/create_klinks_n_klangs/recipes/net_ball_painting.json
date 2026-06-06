@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_net_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_net_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:blue_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:black_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:blue_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        },
+        {
+          "item": "crabbersdelight:pearl"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_net_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:net_ball"
+    }
+  ],
+  "loops": 1
+}

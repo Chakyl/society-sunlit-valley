@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" P ", "PIP", " S "],
+  "key": {
+    "P": {
+      "item": "minecraft:packed_ice"
+    },
+    "S": {
+      "item": "society:production_science_pack"
+    },
+    "I": {
+      "item": "cobblemon:ice_stone"
+    }
+  },
+  "result": {
+    "item": "cobblemon:never_melt_ice"
+  }
+}

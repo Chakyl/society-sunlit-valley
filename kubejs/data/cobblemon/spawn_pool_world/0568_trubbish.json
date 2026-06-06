@@ -1,0 +1,25 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "trubbish-1",
+            "pokemon": "trubbish",
+            "presets": [
+                "trash"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "8-33",
+            "weight": 3.8,
+            "weightMultiplier": {
+                "multiplier": 3.0,
+                "condition": {
+                    "timeRange": "night"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "mightyena",
+	"forages": [
+		{
+			"item": "society:scavenged_food_bag",
+			"count": 1,
+			"chance": 0.45,
+			"min_hearts": 6,
+			"has_quality": true
+		},
+		{
+			"item": "species:werefang",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 9
+		}
+	]
+}

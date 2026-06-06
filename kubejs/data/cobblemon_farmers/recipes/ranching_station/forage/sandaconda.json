@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "sandaconda",
+	"forages": [
+		{
+			"item": "minecraft:sand",
+			"count": 8,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "society:sandstone_slate",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 2
+		}
+	]
+}

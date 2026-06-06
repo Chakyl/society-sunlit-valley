@@ -159,6 +159,14 @@ if (global.datagenDialog) {
           "Need to pick up something from the shop?",
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "I finally found a Celebi for you @i!",
+          "They don't often take to trainers like me, but it seemed to appreciate our care for the nearby forests.",
+          "Your green thumb has finally been recognized by the big leagues!"
+        ]
+      },
     ]
   });
 }

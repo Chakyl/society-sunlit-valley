@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "clefable",
+	"forages": [
+		{
+			"item": "botania:black_lotus",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "botania:dragonstone",
+			"count": 1,
+			"chance": 0.45,
+			"min_hearts": 8
+		},
+		{
+			"item": "sunlit_cobblemon:moondust",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 10
+		}
+	]
+}

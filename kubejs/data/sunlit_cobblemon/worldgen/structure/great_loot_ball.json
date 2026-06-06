@@ -1,0 +1,13 @@
+{
+  "type": "moogs_structures:moogs_structures_generic_jigsaw_structure",
+  "start_pool": "sunlit_cobblemon:great_loot_ball",
+  "size": 1,
+  "biomes": "#sunlit_cobblemon:has_structure/great_loot_thing",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "start_height": {
+    "absolute": 0
+  },
+  "spawn_overrides": {}
+}

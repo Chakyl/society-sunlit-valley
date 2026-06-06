@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League Haruna",
+  "team": [
+    {
+      "species": "cobblemon:reuniclus",
+      "gender": "FEMALE",
+      "level": 70,
+      "nature": "cobblemon:hardy",
+      "ability": "magicguard",
+      "moveset": [
+        "psychic",
+        "recover",
+        "lightscreen",
+        "reflect"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 16,
+        "defence": 19,
+        "special_attack": 26,
+        "special_defence": 19,
+        "speed": 26
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:light_clay",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:slowbro",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:bashful",
+      "ability": "regenerator",
+      "moveset": [
+        "psychic",
+        "yawn",
+        "amnesia",
+        "surf"
+      ],
+      "ivs": {
+        "hp": 13,
+        "attack": 19,
+        "defence": 1,
+        "special_attack": 17,
+        "special_defence": 19,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:veluza",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:hasty",
+      "ability": "moldbreaker",
+      "moveset": [
+        "slash",
+        "aquajet",
+        "psychocut",
+        "filletaway"
+      ],
+      "ivs": {
+        "hp": 19,
+        "attack": 30,
+        "defence": 27,
+        "special_defence": 21,
+        "speed": 22
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:milotic",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:naive",
+      "ability": "marvelscale",
+      "moveset": [
+        "aquaring",
+        "recover",
+        "surf",
+        "raindance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "attack": 11,
+        "defence": 28,
+        "special_attack": 21,
+        "special_defence": 9,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:mystic_water",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:inteleon",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:hardy",
+      "ability": "sniper",
+      "moveset": [
+        "snipeshot",
+        "suckerpunch",
+        "uturn",
+        "acrobatics"
+      ],
+      "ivs": {
+        "hp": 17,
+        "attack": 11,
+        "defence": 19,
+        "special_attack": 20,
+        "special_defence": 28,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:razor_claw",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:claydol",
+      "gender": "GENDERLESS",
+      "level": 70,
+      "nature": "cobblemon:gentle",
+      "ability": "levitate",
+      "moveset": [
+        "earthpower",
+        "ancientpower",
+        "extrasensory",
+        "cosmicpower"
+      ],
+      "ivs": {
+        "hp": 13,
+        "attack": 11,
+        "defence": 1,
+        "special_attack": 7,
+        "special_defence": 24,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

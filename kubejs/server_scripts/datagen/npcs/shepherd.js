@@ -192,6 +192,14 @@ if (global.datagenDialog) {
           "If you're struggling with their mood, just pick up a mood scanner at my shop! It should be pretty cheap for you."
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "Hello @i, I have a small token if my appreciation.",
+          "Meloetta is very tune with the feelings of others, a trait I think you two share.",
+          "Please take care of this Pokémon, it's not every day you can find one in the world."
+        ]
+      }
     ]
   });
 }

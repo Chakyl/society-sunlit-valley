@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "piplup",
+	"forages": [
+		{
+			"item": "cobblemon:water_stone",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 5
+		},
+		{
+			"item": "sunlit_cobblemon:water_pledge",
+			"count": 1,
+			"chance": 0.01,
+			"min_hearts": 10
+		}
+	]
+}

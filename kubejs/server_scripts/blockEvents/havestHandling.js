@@ -107,6 +107,7 @@ BlockEvents.rightClicked((e) => {
     let blockState;
     if (
       block.hasTag("minecraft:crops") &&
+      !block.hasTag("cobblemon:berries") &&
       !deniedCrops.includes(block.id) &&
       initialBlock.block.isMaxAge(initialBlock)
     ) {

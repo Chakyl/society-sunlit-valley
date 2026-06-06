@@ -1,0 +1,189 @@
+{
+  "displayName": "Bird Legend Arctic",
+  "team": [
+    {
+      "species": "cobblemon:weavile",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "pressure",
+      "moveset": [
+        "slash",
+        "nightslash",
+        "screech",
+        "metalclaw"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:razor_claw",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:glalie",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hasty",
+      "ability": "moody",
+      "moveset": [
+        "freezedry",
+        "icefang",
+        "crunch",
+        "snowscape"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:white_herb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:avalugg",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "sturdy",
+      "moveset": [
+        "skullbash",
+        "icefang",
+        "crunch",
+        "iciclecrash"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:baxcalibur",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:docile",
+      "ability": "thermalexchange",
+      "moveset": [
+        "glaiverush",
+        "crunch",
+        "icefang",
+        "takedown"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:articuno",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "pressure",
+      "moveset": [
+        "ancientpower",
+        "roost",
+        "icebeam",
+        "hurricane"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:never_melt_ice",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:crabominable",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "ironfist",
+      "moveset": [
+        "icepunch",
+        "drainpunch",
+        "thunderpunch",
+        "dizzypunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252,
+        "speed": 6
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

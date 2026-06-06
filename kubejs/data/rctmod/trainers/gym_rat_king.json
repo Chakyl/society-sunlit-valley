@@ -1,0 +1,161 @@
+{
+  "displayName": "Gym Rat King",
+  "team": [
+    {
+      "species": "cobblemon:pikachu",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "static",
+      "moveset": [
+        "irontail",
+        "playrough",
+        "volttackle",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:light_ball",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:pawmot",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "ironfist",
+      "moveset": [
+        "thunderpunch",
+        "firepunch",
+        "icepunch",
+        "dig"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:emolga",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:sassy",
+      "ability": "static",
+      "moveset": [
+        "electroweb",
+        "agility",
+        "electroball",
+        "substitute"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:togedemaru",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "ironbarbs",
+      "moveset": [
+        "spikyshield",
+        "fellstinger",
+        "zingzap",
+        "discharge"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:rocky_helmet",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:pachirisu",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "voltabsorb",
+      "moveset": [
+        "nuzzle",
+        "electroball",
+        "thunder",
+        "substitute"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:magnet",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

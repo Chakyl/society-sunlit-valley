@@ -1,0 +1,191 @@
+{
+  "displayName": "Fils-Aimé",
+  "team": [
+    {
+      "species": "cobblemon:regice",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:quirky",
+      "ability": "clearbody",
+      "moveset": [
+        "ancientpower",
+        "icebeam",
+        "zapcannon",
+        "hyperbeam"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "defence": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:regidrago",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "dragonsmaw",
+      "moveset": [
+        "ancientpower",
+        "dragonbreath",
+        "dragonenergy",
+        "dragondance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:regieleki",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:naive",
+      "ability": "transistor",
+      "moveset": [
+        "agility",
+        "ancientpower",
+        "thundercage",
+        "electroball"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:regirock",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:lax",
+      "ability": "clearbody",
+      "moveset": [
+        "bulldoze",
+        "irondefense",
+        "superpower",
+        "stoneedge"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:registeel",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:mild",
+      "ability": "clearbody",
+      "moveset": [
+        "bodypress",
+        "irondefense",
+        "heavyslam",
+        "bulldoze"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "defence": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:regigigas",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:sassy",
+      "ability": "slowstart",
+      "moveset": [
+        "megapunch",
+        "zenheadbutt",
+        "protect",
+        "heavyslam"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

@@ -1,0 +1,554 @@
+{
+  "shop_id": "poke_mart",
+  "name": "shop.society_trading.poke_mart",
+  "texture": "cobblemon:textures/item/poke_balls/poke_ball",
+  "selector_weight": -101,
+  "jei_catalyst": { "item": "cobblemon:poke_ball" },
+  "trades": [
+    {
+      "offer": {
+        "item": "cobblemon:poke_ball",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 192,
+      "trade_id": "pmart_poke_ball"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:great_ball",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "pmart_great_ball"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:ultra_ball",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "stage_required": "trainer_lvl_4",
+      "unlock_description": "jei.society_trading.trainer_lvl_4",
+      "trade_id": "pmart_ultra_ball"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:potion",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "pmart_potion"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:super_potion",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "pmart_super_potion"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:hyper_potion",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "pmart_hyper_potion"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:max_potion",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_max_potion"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:full_restore",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+
+      "second_request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 6144,
+      "stage_required": "trainer_lvl_6",
+      "unlock_description": "jei.society_trading.trainer_lvl_6",
+      "trade_id": "pmart_full_restore"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:medicinal_brew",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 6
+      },
+      "numismatics_cost": 3072,
+      "stage_required": "trainer_lvl_7",
+      "unlock_description": "jei.society_trading.trainer_lvl_7",
+      "trade_id": "pmart_medicinal_brew"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:revive",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 6
+      },
+      "numismatics_cost": 3072,
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "pmart_revive"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:antidote",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "pmart_antidote"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:paralyze_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "pmart_paralyze_heal"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:awakening",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "pmart_awakening"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:burn_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "pmart_burn_heal"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:ice_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "stage_required": "trainer_lvl_1",
+      "unlock_description": "jei.society_trading.trainer_lvl_1",
+      "trade_id": "pmart_ice_heal"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:full_heal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_full_heal"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:poke_radar",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 3
+      },
+      "numismatics_cost": 12288,
+      "stage_required": "trainer_lvl_2",
+      "unlock_description": "jei.society_trading.trainer_lvl_2",
+      "trade_id": "pmart_great_poke_radar"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:pocket_pc",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 16
+      },
+      "numismatics_cost": 65536,
+      "stage_required": "trainer_lvl_4",
+      "unlock_description": "jei.society_trading.trainer_lvl_4",
+      "trade_id": "pmart_pocket_pc"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 2
+      },
+      "second_request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 10240,
+      "trade_id": "pmart_poke_bobber"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:great_poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 5
+      },
+      "numismatics_cost": 20480,
+      "stage_required": "trainer_lvl_3",
+      "unlock_description": "jei.society_trading.trainer_lvl_3",
+      "trade_id": "pmart_great_poke_bobber"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:ultra_poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 10
+      },
+      "numismatics_cost": 40960,
+      "stage_required": "trainer_lvl_6",
+      "unlock_description": "jei.society_trading.trainer_lvl_6",
+      "trade_id": "pmart_ultra_poke_bobber"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:master_poke_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 4
+      },
+      "numismatics_cost": 1048576,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_master_poke_bobber"
+    },
+    {
+      "offer": {
+        "item": "unimplemented_items:repel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 8192,
+      "trade_id": "pmart_repel"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:pc",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 8192,
+      "trade_id": "pmart_pc"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:healing_machine",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "pmart_healing_machine"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:trainer_podium",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 40
+      },
+      "numismatics_cost": 163840,
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_trainer_podium"
+    },
+    {
+      "offer": {
+        "item": "unimplemented_items:bottle_cap",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_bottle_caps"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:greater_tm_pack",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_greater_tm_pack"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:metal_alloy",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 10
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_metal_alloy"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:berry_labor_and_capital",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 5
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "stage_removed": "berry_labor_and_capital",
+      "trade_id": "pmart_metal_alloy"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:bottlecaps_and_nothingness",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 20
+      },
+      "stage_required": "trainer_lvl_5",
+      "stage_removed": "bottlecaps_and_nothingness",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_bottlecaps_and_nothingness"
+    },
+    {
+      "offer": {
+        "item": "cobblemon_farmers:worker_permit",
+        "count": 1
+      },
+      "request": {
+        "item": "cobblemon:ability_capsule",
+        "count": 1
+      },
+      "second_request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_worker_permit"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:silph_scope",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 32,
+      "trade_id": "pmart_silph_scope"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"genesect\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_genesect"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"diancie\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_diancie"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"hoopa\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_hoopa"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"meltan\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_meltan"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"zarude\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_zarude"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"manaphy\", ot: \"Chakyl\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "numismatics_cost": 1073741824,
+      "stage_required": "trainer_lvl_8",
+      "unlock_description": "jei.society_trading.trainer_lvl_8",
+      "trade_id": "pmart_mystery_gift_manaphy"
+    }
+  ]
+}

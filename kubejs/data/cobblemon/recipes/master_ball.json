@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["dtd", "lcr", "dbd"],
+  "key": {
+    "d": {
+      "item": "sunlit_cobblemon:cosmic_dust"
+    },
+    "t": {
+      "item": "sunlit_cobblemon:sun_essence"
+    },
+    "l": {
+      "item": "minecraft:netherite_block"
+    },
+    "c": {
+      "item": "numismatics:prismatic_coin"
+    },
+    "r": {
+      "item": "minecraft:netherite_block"
+    },
+    "b": {
+      "item": "sunlit_cobblemon:sun_essence"
+    }
+  },
+  "result": {
+    "item": "cobblemon:master_ball"
+  }
+}

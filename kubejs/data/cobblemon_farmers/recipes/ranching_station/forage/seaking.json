@@ -1,0 +1,36 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "seaking",
+	"forages": [
+		{
+			"item": "society:goldfish_roe",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 0
+		},
+		{
+			"item": "society:goldfish_roe",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:goldfish_roe",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 6
+		},
+		{
+			"item": "society:goldfish_roe",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 8
+		},
+		{
+			"item": "cobblemon:water_gem",
+			"count": 4,
+			"chance": 0.67,
+			"min_hearts": 10
+		}
+	]
+}

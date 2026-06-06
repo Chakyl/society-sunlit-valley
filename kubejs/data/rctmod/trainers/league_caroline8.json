@@ -1,0 +1,190 @@
+{
+  "displayName": "Sunlit League Caroline",
+  "team": [
+    {
+      "species": "cobblemon:banette",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hardy",
+      "ability": "frisk",
+      "moveset": [
+        "willowisp",
+        "feintattack",
+        "screech",
+        "shadowsneak"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:kingdra",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "swiftswim",
+      "moveset": [
+        "dragonpulse",
+        "waterpulse",
+        "agility",
+        "smokescreen"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:gengar",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:modest",
+      "ability": "cursedbody",
+      "moveset": [
+        "dreameater",
+        "sludgewave",
+        "hypnosis",
+        "nightmare"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:black_sludge",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:altaria",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:hasty",
+      "ability": "naturalcure",
+      "moveset": [
+        "pluck",
+        "dragondance",
+        "furyattack",
+        "disarmingvoice"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:dragonite",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:hardy",
+      "ability": "innerfocus",
+      "moveset": [
+        "firepunch",
+        "extremespeed",
+        "thunderpunch",
+        "dragondance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252,
+        "speed": 6
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:dragapult",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:calm",
+      "ability": "clearbody",
+      "moveset": [
+        "dragondarts",
+        "phantomforce",
+        "suckerpunch",
+        "dragondance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

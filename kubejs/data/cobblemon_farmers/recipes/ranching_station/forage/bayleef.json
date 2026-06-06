@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "bayleef",
+	"forages": [
+		{
+			"item": "cobblemon:leaf_stone",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 5
+		},
+		{
+			"item": "sunlit_cobblemon:grass_pledge",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 10
+		}
+	]
+}

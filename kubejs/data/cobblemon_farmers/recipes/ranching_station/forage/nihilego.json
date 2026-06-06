@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "nihilego",
+	"forages": [
+		{
+			"item": "society:spinel",
+			"count": 1,
+			"chance": 0.46,
+			"min_hearts": 6
+		},
+		{
+			"item": "minecraft:echo_shard",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 7
+		}
+	]
+}

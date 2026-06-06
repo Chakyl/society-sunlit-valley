@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "spearow",
+	"forages": [
+		{
+			"item": "society:large_egg",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 1
+		},
+		{
+			"item": "unimplemented_items:dry_root",
+			"count": 1,
+			"chance": 0.01,
+			"min_hearts": 10
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "shiinotic",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:strange_spore",
+			"count": 1,
+			"chance": 0.6,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:cordycep",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 8
+		}
+	]
+}

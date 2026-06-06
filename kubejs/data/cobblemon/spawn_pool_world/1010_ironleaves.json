@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "ironleaves-1",
+      "pokemon": "ironleaves",
+      "type": "pokemon",
+      "context": "grounded",
+      "presets": ["future_tech"],
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "biomes": ["#cobblemon:is_floral"],
+        "neededNearbyBlocks": ["society:charging_rod"]
+      }
+    }
+  ]
+}

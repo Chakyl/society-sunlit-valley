@@ -1,0 +1,173 @@
+{
+  "displayName": "Sunlit League Karma",
+  "team": [
+    {
+      "species": "cobblemon:clodsire",
+      "gender": "FEMALE",
+      "level": 50,
+      "nature": "cobblemon:jolly",
+      "ability": "waterabsorb",
+      "moveset": [
+        "toxicspikes",
+        "yawn",
+        "megahorn",
+        "poisonjab"
+      ],
+      "ivs": {
+        "hp": 7,
+        "attack": 5,
+        "defence": 22,
+        "special_attack": 5,
+        "special_defence": 13,
+        "speed": 17
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:hitmonchan",
+      "gender": "MALE",
+      "level": 50,
+      "nature": "cobblemon:sassy",
+      "ability": "ironfist",
+      "moveset": [
+        "poweruppunch",
+        "firepunch",
+        "icepunch",
+        "thunderpunch"
+      ],
+      "ivs": {
+        "hp": 18,
+        "attack": 21,
+        "defence": 4,
+        "special_attack": 21,
+        "special_defence": 13,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:pupitar",
+      "gender": "FEMALE",
+      "level": 50,
+      "nature": "cobblemon:brave",
+      "ability": "shedskin",
+      "moveset": [
+        "crunch",
+        "stoneedge",
+        "earthquake",
+        "screech"
+      ],
+      "ivs": {
+        "hp": 28,
+        "attack": 28,
+        "defence": 2,
+        "special_attack": 2,
+        "special_defence": 5,
+        "speed": 3
+      },
+      "evs": {},
+      "shiny": true,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "shiny",
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:gardevoir",
+      "gender": "FEMALE",
+      "level": 50,
+      "nature": "cobblemon:bashful",
+      "ability": "synchronize",
+      "moveset": [
+        "mysticalfire",
+        "drainingkiss",
+        "magicalleaf",
+        "lifedew"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 24,
+        "defence": 26,
+        "special_attack": 28,
+        "special_defence": 20,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:venusaur",
+      "gender": "MALE",
+      "level": 50,
+      "nature": "cobblemon:modest",
+      "ability": "overgrow",
+      "moveset": [
+        "leechseed",
+        "poisonpowder",
+        "synthesis",
+        "petaldance"
+      ],
+      "ivs": {
+        "attack": 25,
+        "defence": 8,
+        "special_attack": 5,
+        "special_defence": 3,
+        "speed": 13
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:eelektross",
+      "gender": "MALE",
+      "level": 50,
+      "nature": "cobblemon:impish",
+      "ability": "levitate",
+      "moveset": [
+        "crunch",
+        "coil",
+        "crushclaw",
+        "wildcharge"
+      ],
+      "ivs": {
+        "hp": 24,
+        "attack": 30,
+        "defence": 3,
+        "special_attack": 25,
+        "special_defence": 9,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

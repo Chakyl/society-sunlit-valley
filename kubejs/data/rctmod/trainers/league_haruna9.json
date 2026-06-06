@@ -1,0 +1,191 @@
+{
+  "displayName": "Sunlit League Haruna",
+  "team": [
+    {
+      "species": "cobblemon:reuniclus",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:hardy",
+      "ability": "magicguard",
+      "moveset": [
+        "psychic",
+        "recover",
+        "lightscreen",
+        "reflect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:light_clay",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:mewtwo",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:naive",
+      "ability": "pressure",
+      "moveset": [
+        "aurasphere",
+        "psychic",
+        "recover",
+        "laserfocus"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:veluza",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hasty",
+      "ability": "moldbreaker",
+      "moveset": [
+        "slash",
+        "aquajet",
+        "psychocut",
+        "filletaway"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:milotic",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:naive",
+      "ability": "marvelscale",
+      "moveset": [
+        "aquaring",
+        "recover",
+        "surf",
+        "raindance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:mystic_water",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:inteleon",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:modest",
+      "ability": "sniper",
+      "moveset": [
+        "snipeshot",
+        "mudshot",
+        "icywind",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:razor_claw",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:kyogre",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:naive",
+      "ability": "drizzle",
+      "moveset": [
+        "ancientpower",
+        "icebeam",
+        "originpulse",
+        "aquaring"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:quick_claw",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

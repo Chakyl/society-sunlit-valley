@@ -1,0 +1,10 @@
+
+[general]
+	#Maximum size of connected TVs (in blocks). Set to 1 to disable multi-block TVs.
+	#Range: 1 ~ 32
+	max_connected_tv_size = 8
+	#Whether creepers should drop tapes when killed by the pillagers.
+	creeper_drop = true
+	#Whether loot chests could contain cassette tapes.
+	chest_drop = true
+

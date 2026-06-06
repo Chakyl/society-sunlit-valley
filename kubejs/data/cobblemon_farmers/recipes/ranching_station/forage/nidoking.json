@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "nidoking",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 2,
+			"chance": 0.6,
+			"has_quality": true,
+			"min_hearts": 4
+		},
+		{
+			"item": "cobblemon:poison_gem",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 6
+		}
+	]
+}

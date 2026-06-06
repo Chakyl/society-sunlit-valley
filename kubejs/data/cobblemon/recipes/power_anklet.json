@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MCD",
+    "C C",
+    "DCM"
+  ],
+  "key": {
+    "M": {
+      "item": "cobblemon:green_mint_leaf"
+    },
+    "C": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "cobblemon:power_anklet"
+  }
+}

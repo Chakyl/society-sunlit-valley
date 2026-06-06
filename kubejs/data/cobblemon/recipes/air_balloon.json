@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" WW", " PW", "S  "],
+  "key": {
+    "W": {
+      "item": "society:red_sheet"
+    },
+    "P": {
+      "item": "society:aerinite"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "cobblemon:air_balloon"
+  }
+}

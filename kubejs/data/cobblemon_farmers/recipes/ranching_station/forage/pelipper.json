@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "pelipper",
+	"forages": [
+		{
+			"item": "minecraft:cod",
+			"count": 8,
+			"has_quality": true,
+			"chance": 1,
+			"min_hearts": 6
+		},
+		{
+			"item": "cobblemon:resist_feather",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		}
+	]
+}

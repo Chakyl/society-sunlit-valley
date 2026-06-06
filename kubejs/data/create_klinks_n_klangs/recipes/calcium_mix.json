@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "cobblemon:cyan_mint_leaf"
+    },
+    {
+      "item": "cobblemon:cyan_mint_leaf"
+    },
+    {
+      "item": "cobblemon:hondew_berry"
+    },
+    {
+      "item": "cobblemon:hondew_berry"
+    },
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:liquid_medicinal_brew"
+    },
+    {
+      "amount": 1000,
+      "fluid": "society:milk"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "create_klinks_n_klangs:calcium"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "voltorb",
+	"form": "hisuian",
+	"forages": [
+		{
+			"item": "minecraft:gunpowder",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "cobblemon:ancient_poke_ball",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

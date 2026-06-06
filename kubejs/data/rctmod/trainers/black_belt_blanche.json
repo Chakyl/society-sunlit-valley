@@ -1,0 +1,67 @@
+{
+  "displayName": "Black Belt Blanche",
+  "team": [
+    {
+      "species": "cobblemon:sawk",
+      "gender": "MALE",
+      "level": 77,
+      "nature": "cobblemon:docile",
+      "ability": "sturdy",
+      "moveset": [
+        "closecombat",
+        "quickguard",
+        "endure",
+        "counter"
+      ],
+      "ivs": {
+        "hp": 3,
+        "attack": 18,
+        "defence": 1,
+        "special_attack": 6,
+        "special_defence": 21,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:throh",
+      "gender": "MALE",
+      "level": 78,
+      "nature": "cobblemon:serious",
+      "ability": "guts",
+      "moveset": [
+        "superpower",
+        "reversal",
+        "endure",
+        "seismictoss"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 10,
+        "defence": 25,
+        "special_attack": 12,
+        "special_defence": 5,
+        "speed": 6
+      },
+      "evs": {
+        "speed": 1
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:flame_orb",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

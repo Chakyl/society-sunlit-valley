@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_quick_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_quick_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:yellow_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:blue_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:yellow_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        },
+        {
+          "item": "oreganized:electrum_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_quick_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:quick_ball"
+    }
+  ],
+  "loops": 1
+}

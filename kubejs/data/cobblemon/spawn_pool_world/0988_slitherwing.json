@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "slitherwing-1",
+      "pokemon": "slitherwing",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 3.0,
+      "condition": {
+        "dimensions": ["society:skull_cavern"],
+        "biomes": ["society:skull_caves"]
+      }
+    }
+  ]
+}

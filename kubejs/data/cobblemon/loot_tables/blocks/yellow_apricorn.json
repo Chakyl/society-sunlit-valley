@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:yellow_apricorn",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "cobblemon:yellow_apricorn",
+              "properties": {
+                "age": "3"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

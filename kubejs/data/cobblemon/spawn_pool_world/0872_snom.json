@@ -1,0 +1,40 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "snom-1",
+      "pokemon": "snom",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "15-36",
+      "weight": 10.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": ["#cobblemon:is_freezing"]
+      }
+    },
+    {
+      "id": "snom-2",
+      "pokemon": "snom",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "53-80",
+      "weight": 10.0,
+      "condition": {
+        "timeRange": "night",
+        "biomes": [
+          "society:frozen_maelstrom",
+          "society:frozen_caves"
+        ]
+      }
+    }
+  ]
+}

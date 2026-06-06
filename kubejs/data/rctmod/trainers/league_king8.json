@@ -1,0 +1,191 @@
+{
+  "displayName": "Sunlit League King",
+  "team": [
+    {
+      "species": "cobblemon:skeledirge",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:impish",
+      "ability": "unaware",
+      "moveset": [
+        "torchsong",
+        "snarl",
+        "yawn",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:charcoal_stick",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:meowscarada",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "protean",
+      "moveset": [
+        "honeclaws",
+        "flowertrick",
+        "nightslash",
+        "quickattack"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:miracle_seed",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:corviknight",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:naughty",
+      "ability": "mirrorarmor",
+      "moveset": [
+        "irondefense",
+        "drillpeck",
+        "steelwing",
+        "honeclaws"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:rocky_helmet",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:blissey",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "serenegrace",
+      "moveset": [
+        "softboiled",
+        "lightscreen",
+        "sing",
+        "disarmingvoice"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:sticky_barb",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:crabominable",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "ironfist",
+      "moveset": [
+        "icepunch",
+        "poweruppunch",
+        "dizzypunch",
+        "dynamicpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:metagross",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "clearbody",
+      "moveset": [
+        "honeclaws",
+        "hammerarm",
+        "zenheadbutt",
+        "meteormash"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

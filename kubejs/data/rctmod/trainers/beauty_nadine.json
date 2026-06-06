@@ -1,0 +1,120 @@
+{
+  "displayName": "Beauty Nadine",
+  "team": [
+    {
+      "species": "cobblemon:furfrou",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:impish",
+      "ability": "furcoat",
+      "moveset": [
+        "cottonguard",
+        "suckerpunch",
+        "charm",
+        "takedown"
+      ],
+      "ivs": {
+        "hp": 8,
+        "attack": 4,
+        "defence": 24,
+        "special_attack": 22,
+        "special_defence": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female",
+        "natural-trim"
+      ]
+    },
+    {
+      "species": "cobblemon:clefable",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:docile",
+      "ability": "magicguard",
+      "moveset": [
+        "minimize",
+        "metronome",
+        "encore",
+        "moonlight"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 1,
+        "defence": 31,
+        "special_attack": 3,
+        "special_defence": 4,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:barraskewda",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:naughty",
+      "ability": "swiftswim",
+      "moveset": [
+        "throatchop",
+        "liquidation",
+        "crunch",
+        "agility"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 6,
+        "defence": 27,
+        "special_attack": 30,
+        "special_defence": 17,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:florges",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:quiet",
+      "ability": "flowerveil",
+      "moveset": [
+        "moonblast",
+        "petaldance",
+        "solarbeam",
+        "synthesis"
+      ],
+      "ivs": {
+        "hp": 9,
+        "attack": 15,
+        "defence": 7,
+        "special_attack": 13,
+        "special_defence": 27,
+        "speed": 11
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female",
+        "flower-red"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

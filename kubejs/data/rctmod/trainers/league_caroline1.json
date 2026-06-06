@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League Caroline",
+  "team": [
+    {
+      "species": "cobblemon:shuppet",
+      "gender": "MALE",
+      "level": 27,
+      "nature": "cobblemon:hardy",
+      "ability": "frisk",
+      "moveset": [
+        "astonish",
+        "feintattack",
+        "screech",
+        "shadowsneak"
+      ],
+      "ivs": {
+        "hp": 20,
+        "attack": 19,
+        "defence": 12,
+        "special_attack": 7,
+        "special_defence": 6,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:horsea",
+      "gender": "MALE",
+      "level": 27,
+      "nature": "cobblemon:bold",
+      "ability": "swiftswim",
+      "moveset": [
+        "bubblebeam",
+        "dragonbreath",
+        "leer",
+        "smokescreen"
+      ],
+      "ivs": {
+        "hp": 21,
+        "attack": 19,
+        "defence": 15,
+        "special_attack": 4,
+        "special_defence": 17,
+        "speed": 14
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:haunter",
+      "gender": "FEMALE",
+      "level": 30,
+      "nature": "cobblemon:modest",
+      "ability": "levitate",
+      "moveset": [
+        "hex",
+        "confuseray",
+        "hypnosis",
+        "meanlook"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 16,
+        "defence": 9,
+        "special_attack": 23,
+        "special_defence": 12,
+        "speed": 27
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:swablu",
+      "gender": "FEMALE",
+      "level": 27,
+      "nature": "cobblemon:hasty",
+      "ability": "naturalcure",
+      "moveset": [
+        "peck",
+        "safeguard",
+        "furyattack",
+        "disarmingvoice"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 10,
+        "defence": 9,
+        "special_attack": 19,
+        "special_defence": 31,
+        "speed": 20
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:dragonair",
+      "gender": "FEMALE",
+      "level": 30,
+      "nature": "cobblemon:hardy",
+      "ability": "shedskin",
+      "moveset": [
+        "wrap",
+        "dragontail",
+        "slam",
+        "thunderwave"
+      ],
+      "ivs": {
+        "hp": 23,
+        "defence": 10,
+        "special_attack": 7,
+        "special_defence": 25,
+        "speed": 6
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:dreepy",
+      "gender": "FEMALE",
+      "level": 27,
+      "nature": "cobblemon:calm",
+      "ability": "clearbody",
+      "moveset": [
+        "quickattack",
+        "infestation",
+        "bite",
+        "astonish"
+      ],
+      "ivs": {
+        "hp": 20,
+        "attack": 5,
+        "defence": 1,
+        "special_attack": 11,
+        "special_defence": 1,
+        "speed": 5
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

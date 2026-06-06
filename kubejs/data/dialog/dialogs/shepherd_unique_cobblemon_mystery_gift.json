@@ -1,0 +1,67 @@
+{
+	"id": "shepherd_unique_cobblemon_mystery_gift",
+	"title": "shepherd introduction",
+	"description": "dialog.npc.shepherd.unique.cobblemon_mystery_gift",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.unique_cobblemon_mystery_gift.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.unique_cobblemon_mystery_gift.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.shepherd.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.shepherd.unique_cobblemon_mystery_gift.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "shepherd.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p shepherd"
+			]
+		}
+	]
+}

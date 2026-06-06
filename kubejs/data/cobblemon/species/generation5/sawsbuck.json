@@ -1,0 +1,287 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 586,
+    "name": "Sawsbuck",
+    "primaryType": "normal",
+    "secondaryType": "grass",
+    "maleRatio": 0.5,
+    "height": 19,
+    "weight": 925,
+    "pokedex": [
+        "cobblemon.species.sawsbuck.desc"
+    ],
+    "labels": [
+        "gen5"
+    ],
+    "aspects": [
+        "spring"
+    ],
+    "abilities": [
+        "chlorophyll",
+        "sapsipper",
+        "h:serenegrace"
+    ],
+    "eggGroups": [
+        "field"
+    ],
+    "baseStats": {
+        "hp": 80,
+        "attack": 100,
+        "defence": 70,
+        "special_attack": 60,
+        "special_defence": 70,
+        "speed": 95
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 2,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 166,
+    "experienceGroup": "medium_fast",
+    "catchRate": 75,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "features": [
+        "season"
+    ],
+    "baseScale": 1.05,
+    "hitbox": {
+        "width": 1,
+        "height": 1.9,
+        "fixed": false
+    },
+    "drops": {
+        "amount": 3,
+        "entries": [
+            {
+                "item": "minecraft:leather",
+                "quantityRange": "0-2"
+            },
+            {
+                "item": "wildernature:venison",
+                "quantityRange": "1-2"
+            },
+            {
+                "item": "cobblemon:yache_berry",
+                "percentage": 5.0
+            }
+        ]
+    },
+    "moves": [
+        "1:megahorn",
+        "1:tackle",
+        "1:camouflage",
+        "1:growl",
+        "1:sandattack",
+        "1:feintattack",
+        "1:jumpkick",
+        "1:aromatherapy",
+        "1:hornleech",
+        "10:doublekick",
+        "13:leechseed",
+        "16:bulletseed",
+        "20:takedown",
+        "24:zenheadbutt",
+        "28:energyball",
+        "36:charm",
+        "44:doubleedge",
+        "52:solarbeam",
+        "egg:agility",
+        "egg:batonpass",
+        "egg:faketears",
+        "egg:grasswhistle",
+        "egg:headbutt",
+        "egg:naturalgift",
+        "egg:odorsleuth",
+        "egg:sleeptalk",
+        "egg:synthesis",
+        "egg:worryseed",
+        "tm:agility",
+        "tm:batonpass",
+        "tm:bodyslam",
+        "tm:bounce",
+        "tm:bulldoze",
+        "tm:bulletseed",
+        "tm:charm",
+        "tm:curse",
+        "tm:cut",
+        "tm:dig",
+        "tm:doubleedge",
+        "tm:echoedvoice",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:energyball",
+        "tm:facade",
+        "tm:faketears",
+        "tm:flash",
+        "tm:gigadrain",
+        "tm:gigaimpact",
+        "tm:grassknot",
+        "tm:grassyglide",
+        "tm:grassyterrain",
+        "tm:headbutt",
+        "tm:helpinghand",
+        "tm:highhorsepower",
+        "tm:hyperbeam",
+        "tm:lastresort",
+        "tm:leafstorm",
+        "tm:lightscreen",
+        "tm:magicalleaf",
+        "tm:megahorn",
+        "tm:naturalgift",
+        "tm:naturepower",
+        "tm:petalblizzard",
+        "tm:playrough",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:rocksmash",
+        "tm:safeguard",
+        "tm:seedbomb",
+        "tm:shadowball",
+        "tm:sleeptalk",
+        "tm:smartstrike",
+        "tm:solarbeam",
+        "tm:stompingtantrum",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swordsdance",
+        "tm:synthesis",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:throatchop",
+        "tm:thunderwave",
+        "tm:trailblaze",
+        "tm:wildcharge",
+        "tm:workup",
+        "tm:worryseed",
+        "tm:zenheadbutt",
+        "tutor:bounce",
+        "tutor:bulldoze",
+        "tutor:endeavor",
+        "tutor:energyball",
+        "tutor:gigadrain",
+        "tutor:gigaimpact",
+        "tutor:grassyglide",
+        "tutor:helpinghand",
+        "tutor:highhorsepower",
+        "tutor:hyperbeam",
+        "tutor:lastresort",
+        "tutor:magicalleaf",
+        "tutor:megahorn",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:rocksmash",
+        "tutor:seedbomb",
+        "tutor:shadowball",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:synthesis",
+        "tutor:throatchop",
+        "tutor:wildcharge",
+        "tutor:worryseed",
+        "tutor:zenheadbutt"
+    ],
+    "preEvolution": "deerling",
+    "evolutions": [],
+    "forms": [
+        {
+            "name": "Summer",
+            "primaryType": "normal",
+            "secondaryType": "grass",
+            "maleRatio": 0.5,
+            "height": 19,
+            "weight": 925,
+            "pokedex": [
+                "cobblemon.species.sawsbuck-summer.desc"
+            ],
+            "labels": [
+                "gen5"
+            ],
+            "aspects": [
+                "summer"
+            ],
+            "preEvolution": "deerling",
+            "evolutions": [],
+            "battleOnly": false
+        },
+        {
+            "name": "Autumn",
+            "primaryType": "normal",
+            "secondaryType": "grass",
+            "maleRatio": 0.5,
+            "height": 19,
+            "weight": 925,
+            "pokedex": [
+                "cobblemon.species.sawsbuck-autumn.desc"
+            ],
+            "labels": [
+                "gen5"
+            ],
+            "aspects": [
+                "autumn"
+            ],
+            "preEvolution": "deerling",
+            "evolutions": [],
+            "battleOnly": false
+        },
+        {
+            "name": "Winter",
+            "primaryType": "normal",
+            "secondaryType": "grass",
+            "maleRatio": 0.5,
+            "height": 19,
+            "weight": 925,
+            "pokedex": [
+                "cobblemon.species.sawsbuck-winter.desc"
+            ],
+            "labels": [
+                "gen5"
+            ],
+            "aspects": [
+                "winter"
+            ],
+            "preEvolution": "deerling",
+            "evolutions": [],
+            "battleOnly": false
+        }
+    ],
+    "behaviour": {
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "stantler",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "wyrdeer",
+                    "tier": 2
+                },
+                {
+                    "pokemon": "sawsbuck",
+                    "tier": 3
+                }
+            ]
+        },
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            }
+        },
+        "combat": {
+            "willDefendSelf": true,
+            "willDefendOwner": true,
+            "willFlee": false
+        },
+        "resting": {
+            "drowsyChance": 0.0333,
+            "rouseChance": 0.0042
+        }
+    }
+}

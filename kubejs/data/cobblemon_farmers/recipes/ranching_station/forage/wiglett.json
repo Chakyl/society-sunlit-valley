@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "wiglett",
+	"forages": [
+		{
+			"item": "beachparty:seashell",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 3,
+			"has_quality": true
+		},
+		{
+			"item": "aquaculture:box",
+			"count": 1,
+			"chance": 0.83,
+			"min_hearts": 6
+		},
+		{
+			"item": "aquaculture:lockbox",
+			"count": 1,
+			"chance": 0.23,
+			"min_hearts": 10
+		}
+	]
+}

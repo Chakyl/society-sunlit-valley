@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " S ",
+        "SLS",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "item": "society:ancient_fruit_seed"
+        },
+        "L": {
+            "item": "cobblemon:leaf_stone"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:miracle_seed"
+    }
+}

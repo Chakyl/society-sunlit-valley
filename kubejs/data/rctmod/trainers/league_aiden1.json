@@ -1,0 +1,171 @@
+{
+  "displayName": "Sunlit League Aiden",
+  "team": [
+    {
+      "species": "cobblemon:carbink",
+      "gender": "GENDERLESS",
+      "level": 25,
+      "nature": "cobblemon:gentle",
+      "ability": "sturdy",
+      "moveset": [
+        "sharpen",
+        "ancientpower",
+        "reflect",
+        "flail"
+      ],
+      "ivs": {
+        "hp": 15,
+        "attack": 14,
+        "defence": 10,
+        "special_attack": 3,
+        "speed": 17
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:tinkatuff",
+      "gender": "FEMALE",
+      "level": 30,
+      "nature": "cobblemon:gentle",
+      "ability": "owntempo",
+      "moveset": [
+        "rocksmash",
+        "brutalswing",
+        "fairywind",
+        "drainingkiss"
+      ],
+      "ivs": {
+        "hp": 3,
+        "attack": 2,
+        "defence": 9,
+        "special_attack": 15,
+        "special_defence": 26,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:floette",
+      "gender": "FEMALE",
+      "level": 25,
+      "nature": "cobblemon:quiet",
+      "ability": "flowerveil",
+      "moveset": [
+        "fairywind",
+        "wish",
+        "razorleaf",
+        "safeguard"
+      ],
+      "ivs": {
+        "hp": 30,
+        "attack": 28,
+        "defence": 20,
+        "special_attack": 12,
+        "special_defence": 22,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female",
+        "flower-red"
+      ]
+    },
+    {
+      "species": "cobblemon:togedemaru",
+      "gender": "FEMALE",
+      "level": 25,
+      "nature": "cobblemon:impish",
+      "ability": "ironbarbs",
+      "moveset": [
+        "nuzzle",
+        "spark",
+        "rollout",
+        "charge"
+      ],
+      "ivs": {
+        "attack": 25,
+        "defence": 19,
+        "special_attack": 22,
+        "special_defence": 14,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:duraludon",
+      "gender": "FEMALE",
+      "level": 25,
+      "nature": "cobblemon:quirky",
+      "ability": "heavymetal",
+      "moveset": [
+        "breakingswipe",
+        "rocksmash",
+        "honeclaws",
+        "metalclaw"
+      ],
+      "ivs": {
+        "hp": 7,
+        "attack": 11,
+        "defence": 17,
+        "special_attack": 2,
+        "special_defence": 30,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:sylveon",
+      "gender": "MALE",
+      "level": 25,
+      "nature": "cobblemon:jolly",
+      "ability": "pixilate",
+      "moveset": [
+        "lightscreen",
+        "takedown",
+        "doubleedge",
+        "bite"
+      ],
+      "ivs": {
+        "attack": 17,
+        "defence": 11,
+        "special_attack": 4,
+        "special_defence": 12,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

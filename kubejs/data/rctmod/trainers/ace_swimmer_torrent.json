@@ -1,0 +1,131 @@
+{
+  "displayName": "Ace Swimmer Torrent",
+  "team": [
+    {
+      "species": "cobblemon:swampert",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "torrent",
+      "moveset": [
+        "earthquake",
+        "icepunch",
+        "rockslide",
+        "liquidation"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:rindo_berry",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:kingdra",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hasty",
+      "ability": "swiftswim",
+      "moveset": [
+        "dragonpulse",
+        "wavecrash",
+        "dragondance",
+        "hydropump"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:mystic_water",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:dracovish",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "strongjaw",
+      "moveset": [
+        "psychicfangs",
+        "crunch",
+        "icefang",
+        "fishiousrend"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:tentacruel",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "raindish",
+      "moveset": [
+        "hydropump",
+        "sludgewave",
+        "barrier",
+        "raindance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

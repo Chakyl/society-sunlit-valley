@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "nymble",
+      "pokemon": "nymble",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "7-22",
+      "weight": 10.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_forest"]
+      },
+      "anticondition": {
+        "biomes": [
+          "#cobblemon:is_cold_ocean",
+          "#cobblemon:is_freezing",
+          "#cobblemon:is_peak",
+          "#cobblemon:is_taiga",
+          "#cobblemon:is_tundra"
+        ]
+      }
+    }
+  ]
+}

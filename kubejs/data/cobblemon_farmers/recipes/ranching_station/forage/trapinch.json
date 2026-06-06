@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "trapinch",
+	"forages": [
+		{
+			"item": "society:sandstone_slate",
+			"count": 1,
+			"chance": 0.15,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "unusualfishmod:ripper_tooth",
+			"count": 1,
+			"chance": 0.03,
+			"min_hearts": 7
+		}
+	]
+}

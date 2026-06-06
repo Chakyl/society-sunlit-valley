@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "slurpuff",
+	"forages": [
+		{
+			"item": "minecraft:sugar",
+			"count": 8,
+			"chance": 0.75,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "cobblemon:whipped_dream",
+			"count": 1,
+			"chance": 0.13,
+			"has_quality": true,
+			"min_hearts": 8
+		}
+	]
+}

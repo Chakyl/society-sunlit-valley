@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DS",
+        "HD"
+    ],
+    "key": {
+        "D": {
+            "item": "society:frozen_tear"
+        },
+        "S": {
+            "item": "cobblemon:water_stone"
+        },
+        "H": {
+            "item": "cobblemon:hard_stone"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:damp_rock"
+    }
+}

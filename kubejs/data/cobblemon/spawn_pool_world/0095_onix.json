@@ -1,0 +1,53 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "onix-1",
+      "pokemon": "onix",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "14-39",
+      "weight": 5.4,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_overworld"]
+      },
+      "anticondition": {
+        "biomes": ["#cobblemon:is_deep_dark"]
+      }
+    },
+    {
+      "id": "onix-2",
+      "pokemon": "onix",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "14-39",
+      "weight": 1.8,
+      "condition": {
+        "biomes": ["#cobblemon:nether/is_basalt"]
+      }
+    },
+    {
+      "id": "onix-3",
+      "pokemon": "onix",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "24-49",
+      "weight": 5.4,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["society:skull_caves"]
+      }
+    }
+  ]
+}

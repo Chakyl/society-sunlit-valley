@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "exeggutor",
+	"form": "alolan",
+	"forages": [
+		{
+			"item": "beachparty:coconut",
+			"count": 3,
+			"chance": 0.9,
+			"min_hearts": 3
+		},
+		{
+			"item": "beachparty:coconut",
+			"count": 3,
+			"chance": 0.9,
+			"min_hearts": 6
+		},
+		{
+			"item": "society:star_coquito",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 10
+		}
+	]
+}

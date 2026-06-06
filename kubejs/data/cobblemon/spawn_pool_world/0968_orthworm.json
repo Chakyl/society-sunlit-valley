@@ -1,0 +1,42 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "orthworm-1",
+      "pokemon": "orthworm",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "24-45",
+      "weight": 2.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_desert"
+        ]
+      }
+    },
+    {
+      "id": "orthworm-2",
+      "pokemon": "orthworm",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "43-80",
+      "weight": 0.8,
+      "condition": {
+        "biomes": [
+          "#society:is_skull_cavern"
+        ]
+      }
+    }
+  ]
+}

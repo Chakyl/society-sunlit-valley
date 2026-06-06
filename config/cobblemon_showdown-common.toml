@@ -1,0 +1,9 @@
+
+#Challenge Settings
+[challenge]
+	#Whether to require players to be within a certain distance to challenge each other
+	radiusEnabled = true
+	#Maximum distance (in blocks) between players for a challenge to be valid
+	#Range: 1.0 ~ 1000.0
+	radius = 15.0
+

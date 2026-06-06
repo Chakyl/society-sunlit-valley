@@ -1,0 +1,15 @@
+{
+	"type": "cobblemon_farmers:ranching_station/milk",
+	"pokemon": "tauros",
+	"consume_bucket": false,
+	"milk": {
+		"sm": {
+			"item": "society:buffalo_milk",
+			"count": 1
+		},
+		"lg": {
+			"item": "society:large_buffalo_milk",
+			"count": 1
+		}
+	}
+}

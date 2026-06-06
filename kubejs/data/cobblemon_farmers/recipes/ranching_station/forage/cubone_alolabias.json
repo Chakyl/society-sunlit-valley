@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "cubone",
+	"form": "alolabias",
+	"forages": [
+		{
+			"item": "minecraft:bone",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 10
+		},
+		{
+			"item": "betterarcheology:artifact_shards",
+			"count": 3,
+			"chance": 0.25,
+			"min_hearts": 6
+		}
+	]
+}

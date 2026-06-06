@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "mimikyu",
+	"forages": [
+		{
+			"item": "society:plushie_capsule",
+			"count": 1,
+			"chance": 0.7,
+			"min_hearts": 1
+		},
+		{
+			"item": "botania:manaweave_cloth",
+			"count": 1,
+			"chance": 0.27,
+			"min_hearts": 8
+		},
+		{
+			"item": "society:sunlit_crystal",
+			"count": 1,
+			"chance": 0.02,
+			"min_hearts": 10
+		}
+	]
+}

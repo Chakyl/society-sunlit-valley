@@ -1,0 +1,229 @@
+{
+	// The multiplier of the move power in calculating damage(The final damage can't be higher than the value in the config)
+	"move_power_multiplier": 1.0,
+	// The multiplier for the moves that don't make contacts or shoot projectiles when calculating damage(The final damage can't be higher than the value in the config.These moves are hard to avoid in an open area so the damage should be slightly lower than the others)
+	"indirect_attack_move_power_multiplier": 0.800000011920929,
+	// If a pokemon doesn't have the correct moves to use,the base power will be used to calculate the damage.
+	"base_power": 60,
+	// The minimum radius of the AoE moves
+	"min_AoE_radius": 1.0,
+	// The maximum radius of the AoE moves
+	"max_AoE_radius": 2.0,
+	// The AoE damage will be lower to the target away from the center,this value sets the lowest damage multiplier of the AOE damage
+	"min_AoE_damage_multiplier": 0.6000000238418579,
+	// The radius of the status moves(unused)
+	"status_move_radius": 8.0,
+	// Taunting moves are needed to taunt the aggressive wild pokemon
+	"taunt_moves_needed": true,
+	// Wild pokemon can taunt your pokemon
+	"wild_pokemon_taunt": false,
+	// Special moves that makes contact,these moves will let the Pokemon melee while using the Special Attack stat to calculate the damage.
+	"special_contact_moves": [
+		"electrodrift",
+		"infestation",
+		"drainingkiss",
+		"grassknot",
+		"wringout",
+		"trumpcard",
+		"petaldance"
+	],
+	// Physical moves that uses arrow,these moves will let the Pokemon shoot arrow while using the Attack stat to calculate the damage.
+	"physical_single_arrow_moves": [
+		"dragondarts",
+		"iceshard",
+		"iciclecrash",
+		"iciclespear",
+		"gunkshot",
+		"spikecannon",
+		"pinmissile",
+		"thousandarrows"
+	],
+	// Moves that shoots multiple bullet
+	"multiple_bullet_moves": [
+		"bulletseed"
+	],
+	// Moves that shoots single bullet.Physical moves still shoots the bullet and uses the Attack stat to calculate the damage.
+	"single_bullet_moves": [
+		"electroball",
+		"focusblast",
+		"weatherball",
+		"pyroball",
+		"acidspray",
+		"sludgebomb",
+		"mudbomb",
+		"pollenpuff",
+		"shadowball",
+		"searingshot",
+		"octazooka",
+		"energyball",
+		"zapcannon",
+		"mistball",
+		"syrupbomb",
+		"armorcannon",
+		"seedbomb",
+		"magnetbomb",
+		"powergem",
+		"rockwrecker",
+		"sludge",
+		"technoblast",
+		"fusionflare"
+	],
+	// Moves that shoots multiple tracing bullet
+	"multiple_tracing_bullet_moves": [
+		"dracometeor",
+		"ancientpower",
+		"infernalparade"
+	],
+	// Moves that shoots single tracing bullet
+	"single_tracing_bullet_moves": [
+		"aurasphere"
+	],
+	// Moves that shoots single beam or pulse
+	"single_beam_moves": [
+		"signalbeam",
+		"chargebeam",
+		"icebeam",
+		"eternabeam",
+		"solarbeam",
+		"moongeistbeam",
+		"aurorabeam",
+		"waterpulse",
+		"darkpulse",
+		"dragonpulse",
+		"terrainpulse",
+		"healpulse",
+		"freezingglare",
+		"watergun",
+		"hydropump",
+		"prismaticlaser",
+		"lusterpurge",
+		"electroshot",
+		"photongeyser",
+		"flashcannon",
+		"flamethrower",
+		"mysticalfire",
+		"oblivionwing",
+		"snipeshot"
+	],
+	// Moves that hurt a target without any projectiles or blast.(The AOE moves will be implemented in another way)
+	"magic_attack_moves": [
+		"absorb",
+		"gigadrain",
+		"megadrain",
+		"confusion",
+		"psychic",
+		"freezedry",
+		"earthpower",
+		"nightdaze",
+		"iceburn",
+		"luminacrash",
+		"extrasensory",
+		"hex",
+		"seedflare",
+		"psyshock",
+		"psystrike",
+		"psychoboost",
+		"earthpower"
+	],
+	// Moves that hurts the entity(including the allies) around the pokemon
+	"self_centered_aoe_moves": [
+		"earthquake",
+		"surf",
+		"lavaplume",
+		"discharge",
+		"sludgewave",
+		"magnitude",
+		"bulldoze",
+		"petalblizzard",
+		"corrosivegas"
+	],
+	// Moves that drains HP(50% of the damage dealt)
+	"hp_draining_moves_50": [
+		"absorb",
+		"bitterblade",
+		"bouncybubble",
+		"drainpunch",
+		"gigadrain",
+		"hornleech",
+		"leechlife",
+		"megadrain",
+		"matchagotcha",
+		"paraboliccharge"
+	],
+	// Moves that drains HP(75% of the damage dealt)
+	"hp_draining_moves_75": [
+		"drainingkiss",
+		"oblivionwing"
+	],
+	// Moves that ignores abilities(unused)
+	"mold_breaker_like_moves": [
+		"sunsteelstrike",
+		"moongeistbeam",
+		"photongeyser"
+	],
+	// Moves that start an explode
+	"explosive_moves": [
+		"self-destruct",
+		"explosion",
+		"mindblown",
+		"mistyexplosion"
+	],
+	// Moves that use sound to attack
+	"sound_based_moves": [
+		"snore",
+		"uproar",
+		"hypervoice",
+		"bugbuzz",
+		"chatter",
+		"round",
+		"echoedvoice",
+		"relicsong",
+		"snarl",
+		"disarmingvoice",
+		"boomburst",
+		"sparklingaria",
+		"clangingscales",
+		"clangoroussoulblaze",
+		"overdrive",
+		"eeriespell",
+		"torchsong",
+		"alluringvoice",
+		"psychicnoise",
+		"roaroftime"
+	],
+	// Moves that can switch your pokemon
+	"switch_moves": [
+		"teleport",
+		"batonpass",
+		"uturn",
+		"partingshot",
+		"voltswitch",
+		"flipturn"
+	],
+	// Abilities that forces your Pokemon to switch when it is below 50% HP
+	"emergency_exit_like_abilities": [
+		"emergencyexit",
+		"wimpout"
+	],
+	"recoil_moves_allHP": [
+		"self-destruct",
+		"explosion",
+		"mindblown",
+		"mistyexplosion"
+	],
+	// Moves that taunt other pokemon
+	"taunting_moves": [
+		"taunt",
+		"followme",
+		"ragepowder",
+		"torment"
+	],
+	// Moves that burns the pokemon(unused)
+	"burn_status_move": [
+		"willowisp"
+	],
+	// Do Pokemon grief(only explosions currently)?
+	"pokemon_griefing": false,
+	// Fire type attack(only explosions currently) should burn the ground
+	"should_create_fire": false
+}

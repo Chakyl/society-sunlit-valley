@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "spinarak",
+	"forages": [
+		{
+			"item": "crittersandcompanions:silk",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:spider_silk",
+			"count": 1,
+			"chance": 0.01,
+			"min_hearts": 5
+		}
+	]
+}

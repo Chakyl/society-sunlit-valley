@@ -1,0 +1,103 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "salandit-1",
+            "pokemon": "salandit",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-32",
+            "weight": 9.9,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ]
+            }
+        },
+        {
+            "id": "salandit-2",
+            "pokemon": "salandit",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-32",
+            "weight": 9.9,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_mountain"
+                ],
+                "neededNearbyBlocks": [
+                    "#minecraft:lava"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ]
+            }
+        },
+        {
+            "id": "salandit-3",
+            "pokemon": "salandit",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-32",
+            "weight": 9.9,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_basalt"
+                ]
+            }
+        },
+        {
+            "id": "salandit-4",
+            "pokemon": "salandit",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-32",
+            "weight": 5.94,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_desert"
+                ]
+            }
+        },
+        {
+            "id": "salandit-5",
+            "pokemon": "salandit",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "43-60",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#society:is_skull_cavern"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "durant-1",
+            "pokemon": "durant",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "23-48",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_hills"
+                ]
+            }
+        },
+        {
+            "id": "durant-2",
+            "pokemon": "durant",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "23-48",
+            "weight": 10.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_hills"
+                ]
+            }
+        },
+        {
+            "id": "durant-3",
+            "pokemon": "durant",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "23-48",
+            "weight": 10.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_mountain"
+                ]
+            }
+        },
+        {
+            "id": "durant-4",
+            "pokemon": "durant",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "40-60",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "society:blackstone_caves"
+                ]
+            }
+        }
+    ]
+}

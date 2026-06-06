@@ -1,0 +1,119 @@
+{
+  "displayName": "Punk Girl Providence",
+  "team": [
+    {
+      "species": "cobblemon:floragato",
+      "gender": "FEMALE",
+      "level": 32,
+      "nature": "cobblemon:brave",
+      "ability": "protean",
+      "moveset": [
+        "seedbomb",
+        "shadowclaw",
+        "playrough",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 21,
+        "attack": 30,
+        "defence": 17,
+        "special_attack": 12,
+        "special_defence": 5,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:gholdengo",
+      "gender": "GENDERLESS",
+      "level": 30,
+      "nature": "cobblemon:hardy",
+      "ability": "goodasgold",
+      "moveset": [
+        "shadowball",
+        "powergem",
+        "flashcannon",
+        "thunderbolt"
+      ],
+      "ivs": {
+        "hp": 15,
+        "attack": 5,
+        "defence": 16,
+        "special_attack": 6,
+        "special_defence": 1,
+        "speed": 3
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:choice_specs",
+      "aspects": [
+        "genderless",
+        "netherite-coating-none"
+      ]
+    },
+    {
+      "species": "cobblemon:raboot",
+      "gender": "MALE",
+      "level": 31,
+      "nature": "cobblemon:impish",
+      "ability": "libero",
+      "moveset": [
+        "flamecharge",
+        "gunkshot",
+        "doublekick",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 24,
+        "attack": 20,
+        "defence": 15,
+        "special_attack": 1,
+        "special_defence": 18,
+        "speed": 21
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ironvaliant",
+      "gender": "GENDERLESS",
+      "level": 35,
+      "nature": "cobblemon:naive",
+      "ability": "quarkdrive",
+      "moveset": [
+        "closecombat",
+        "moonblast",
+        "energyball",
+        "liquidation"
+      ],
+      "ivs": {
+        "hp": 27,
+        "attack": 14,
+        "special_attack": 31,
+        "special_defence": 21,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

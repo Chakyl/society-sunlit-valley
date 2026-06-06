@@ -1,0 +1,121 @@
+{
+  "displayName": "Bug Catcher Tainy",
+  "team": [
+    {
+      "species": "cobblemon:falinks",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:quirky",
+      "ability": "battlearmor",
+      "moveset": [
+        "counter",
+        "megahorn",
+        "closecombat",
+        "irondefense"
+      ],
+      "ivs": {
+        "hp": 30,
+        "attack": 27,
+        "defence": 8,
+        "special_attack": 16,
+        "special_defence": 31,
+        "speed": 15
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:eldegoss",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:bashful",
+      "ability": "regenerator",
+      "moveset": [
+        "cottonguard",
+        "hypervoice",
+        "cottonspore",
+        "leaftornado"
+      ],
+      "ivs": {
+        "hp": 6,
+        "attack": 30,
+        "defence": 13,
+        "special_attack": 4,
+        "special_defence": 31,
+        "speed": 24
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:probopass",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:gentle",
+      "ability": "magnetpull",
+      "moveset": [
+        "powergem",
+        "irondefense",
+        "discharge",
+        "triattack"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 29,
+        "defence": 9,
+        "special_attack": 13,
+        "special_defence": 21,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:ariados",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "swarm",
+      "moveset": [
+        "toxicthread",
+        "stickyweb",
+        "fellstinger",
+        "suckerpunch"
+      ],
+      "ivs": {
+        "hp": 7,
+        "attack": 12,
+        "defence": 21,
+        "special_attack": 12,
+        "special_defence": 25,
+        "speed": 20
+      },
+      "evs": {
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

@@ -1,0 +1,83 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "hatterene-1",
+            "pokemon": "hatterene",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "42-51",
+            "weight": 0.16,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_magical",
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland"
+                ]
+            }
+        },
+        {
+            "id": "hatterene-2",
+            "pokemon": "hatterene",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "42-51",
+            "weight": 0.02,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "minecraft:swamp_hut"
+                ]
+            }
+        },
+        {
+            "id": "hatterene-3",
+            "pokemon": "hatterene",
+            "presets": [
+                "mansion"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "42-51",
+            "weight": 0.02,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            }
+        },
+        {
+            "id": "hatterene-4",
+            "pokemon": "hatterene",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "62-81",
+            "weight": 0.02,
+            "condition": {
+                "biomes": [
+                    "society:umbra_barrens"
+                ]
+            }
+        }
+    ]
+}

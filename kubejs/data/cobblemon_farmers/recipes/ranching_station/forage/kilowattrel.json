@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "kilowattrel",
+	"forages": [
+		{
+			"item": "unusualfishmod:cooked_unusual_fillet",
+			"count": 3,
+			"has_quality": true,
+			"chance": 1,
+			"min_hearts": 6
+		},
+		{
+			"item": "cobblemon:genius_feather",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		}
+	]
+}

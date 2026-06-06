@@ -1,0 +1,44 @@
+
+[Spawning]
+	#A global factor that determines if a spawn attempt for a trainer is made.
+	#Range: 0.0 ~ 1.0
+	globalSpawnChance = 0.0
+	#The interval in ticks at which a spawn attempt is made per player.
+	#Range: 1 ~ 2147483646
+	spawnIntervalTicks = 2147483646
+	#The max horizontal distance a trainer can spawn from players.
+	#Range: 1 ~ 2147483646
+	maxHorizontalDistanceToPlayers = 70
+	#The min horizontal distance a trainer can spawn from players.
+	#Range: 1 ~ 2147483646
+	minHorizontalDistanceToPlayers = 25
+	#The max vertical distance a trainer can spawn from players.
+	#Range: 1 ~ 2147483646
+	maxVerticalDistanceToPlayers = 30
+	#Spawn cap of trainers per player.
+	#Range: 0 ~ 2147483646
+	maxTrainersPerPlayer = 0
+	#Total trainer spawn cap.
+	#Range: 0 ~ 2147483646
+	maxTrainersTotal = 0
+	#The maximum level difference between the strongest pokemon in the team of a player and the strongest pokemon in the team of a trainer to spawn for that player. The spawn weight decreases with a higher level difference. Trainers with pokemon above the level cap of a player are excluded.
+	#Range: 0 ~ 100
+	maxLevelDiff = 0
+	#A comma separated list of biome tags (e.g. ["is_overworld", "is_forest"]). A biome may not have any of the given tags attached to it, for a trainer to spawn in that biome. Trainers may also have additional tags defined by a data pack.
+	biomeTagBlacklist = []
+	#A comma separated list of biome tags (e.g. ["is_overworld", "is_forest"]). A biome must have atleast one of the given tags attached to it, for a trainer to spawn in that biome (unless the list is empty). Trainers may also have additional tags defined by a data pack.
+	biomeTagWhitelist = []
+
+[Players]
+	#Initial level cap of players. Pokemon will not gain any experience if at or above the level cap.
+	#Range: 1 ~ 100
+	initialLevelCap = 100
+	#Trainers will refuse to battle players that have pokemon in their party with a level greater than the set value + the level cap of the player. This value can also be negative.
+	maxOverLevelCap = 0
+	#This is your one stop difficulty setting. The 'bonusLevelCap' is added to the 'initialLevelCap' aswell as any increased level cap rewarded by trainers (except of trainers that reward a level cap of 100). In short, a positive value will make this mod easier a negative value harder. On a side note, trainers will also take this value into account when determining the required level cap to fight them. For example if we assume bonusLevelCap=-3: A trainer with a strongest pokemon at level 15 would usually require a level cap of 15, now a level cap of 15-3=12 is required.
+	bonusLevelCap = 0
+
+[Debug]
+	#If enabled additional information are printed to the log whenever a trainer spawns or despawns.
+	logSpawning = false
+

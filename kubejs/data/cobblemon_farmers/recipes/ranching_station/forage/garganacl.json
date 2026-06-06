@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "garganacl",
+	"forages": [
+		{
+			"item": "meadow:alpine_salt",
+			"count": 16,
+			"chance": 1,
+			"min_hearts": 0
+		},
+		{
+			"item": "vintagedelight:salt_block",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "vintagedelight:salt_block",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

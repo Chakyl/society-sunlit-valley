@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" WS", "SMW", "WS "],
+  "key": {
+    "W": {
+      "item": "society:white_sheet"
+    },
+    "M": {
+      "item": "society:merino_wool"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "cobblemon:silk_scarf"
+  }
+}

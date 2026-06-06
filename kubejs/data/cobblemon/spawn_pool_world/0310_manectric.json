@@ -1,0 +1,50 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "manectric-1",
+            "pokemon": "manectric",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "26-48",
+            "weight": 0.2,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "isThundering": true
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_grassland",
+                    "#cobblemon:is_hills"
+                ]
+            }
+        },
+        {
+            "id": "manectric-2",
+            "pokemon": "manectric",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "26-48",
+            "weight": 0.2,
+            "condition": {
+                "biomes": [
+                    "society:frozen_maelstrom"
+                ]
+            }
+        }
+    ]
+}

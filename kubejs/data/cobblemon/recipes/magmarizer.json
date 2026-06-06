@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PIP",
+        "IBI",
+		"MIM"
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:magma_block"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "society:ember_crystal_cluster"
+        },
+        "P": {
+            "item": "minecraft:blaze_powder"
+        }
+    },
+    "result": {
+        "item": "cobblemon:magmarizer"
+    }
+}

@@ -1,0 +1,140 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 947,
+  "name": "Brambleghast",
+  "primaryType": "grass",
+  "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 60,
+  "pokedex": [
+    "cobblemon.species.brambleghast.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "windrider",
+    "h:infiltrator"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 115,
+    "defence": 70,
+    "special_attack": 80,
+    "special_defence": 70,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 168,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:dead_bush",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:stick",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:kasib_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:defensecurl",
+    "1:rollout",
+    "1:astonish",
+    "5:absorb",
+    "9:rapidspin",
+    "13:bulletseed",
+    "17:infestation",
+    "21:hex",
+    "25:megadrain",
+    "29:disable",
+    "35:phantomforce",
+    "40:gigadrain",
+    "45:curse",
+    "50:painsplit",
+    "55:powerwhip",
+    "egg:beatup",
+    "egg:block",
+    "egg:leechseed",
+    "egg:shadowsneak",
+    "egg:strengthsap",
+    "tm:beatup",
+    "tm:block",
+    "tm:bulletseed",
+    "tm:confuseray",
+    "tm:curse",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:hex",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:leafstorm",
+    "tm:nightshade",
+    "tm:painsplit",
+    "tm:phantomforce",
+    "tm:poltergeist",
+    "tm:pounce",
+    "tm:powerwhip",
+    "tm:protect",
+    "tm:rest",
+    "tm:rollout",
+    "tm:scaryface",
+    "tm:seedbomb",
+    "tm:shadowball",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:spikes",
+    "tm:spite",
+    "tm:substitute",
+    "tm:terablast",
+    "tm:thief",
+    "tm:trailblaze",
+    "tutor:block",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:grassyglide",
+    "tutor:hyperbeam",
+    "tutor:painsplit",
+    "tutor:poltergeist",
+    "tutor:rest",
+    "tutor:rollout",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:spite"
+  ],
+  "preEvolution": "bramblin",
+  "evolutions": []
+}

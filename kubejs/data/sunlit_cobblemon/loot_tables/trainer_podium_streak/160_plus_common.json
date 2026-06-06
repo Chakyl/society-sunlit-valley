@@ -1,0 +1,70 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "cobblemon:exp_candy_l",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "cobblemon:exp_candy_xl",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "sunlit_cobblemon:mystica_branch",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 1
+			},
+			"weight": 2,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "sunlit_cobblemon:trainer_podium_streak/80_plus_common"
+				}
+			]
+		}
+	]
+}

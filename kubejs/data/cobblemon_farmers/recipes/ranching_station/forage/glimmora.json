@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "glimmora",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 1,
+			"chance": 0.1,
+			"has_quality": true,
+			"min_hearts": 1
+		},
+		{
+			"item": "minecraft:amethyst_shard",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:amethyst_chunk",
+			"count": 2,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_park_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_park_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:green_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        }
+      ]
+    },
+   {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:red_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:green_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        },
+        {
+          "tag": "forge:cabbage"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_park_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:park_ball"
+    }
+  ],
+  "loops": 1
+}

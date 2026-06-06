@@ -200,6 +200,28 @@
     },
     {
       "offer": {
+        "item": "cobblemon:chipped_pot",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:dried_paras_mushroom",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_dried_paras_mushroom_for_chipped_pot"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:masterpiece_teacup",
+        "count": 1
+      },
+      "request": {
+        "item": "cobblemon:tasty_tail",
+        "count": 64
+      },
+      "trade_id": "minecraft:trader_tasty_tail_for_masterpiece_teacup"
+    },
+    {
+      "offer": {
         "item": "society:ancient_cog",
         "count": 1
       },

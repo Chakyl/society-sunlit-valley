@@ -1,0 +1,133 @@
+{
+  "displayName": "Gym Crusher Howitzer",
+  "team": [
+    {
+      "species": "cobblemon:glimmora",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:lax",
+      "ability": "toxicdebris",
+      "moveset": [
+        "spikyshield",
+        "toxicspikes",
+        "mortalspin",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 128,
+        "special_defence": 130
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:blissey",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "serenegrace",
+      "moveset": [
+        "flamethrower",
+        "psychic",
+        "softboiled",
+        "substitute"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:togekiss",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "serenegrace",
+      "moveset": [
+        "airslash",
+        "batonpass",
+        "ancientpower",
+        "aurasphere"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:mirror_herb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:rhyperior",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "solidrock",
+      "moveset": [
+        "stoneedge",
+        "hammerarm",
+        "poisonjab",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 6,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

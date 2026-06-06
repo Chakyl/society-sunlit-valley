@@ -25,6 +25,14 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:the_quality_of_the_earth", skillId: "y99a5jkv7tmu7vmc" },
   { id: "society:the_red_and_the_black", skillId: "ysthrzir822oedus" },
   { id: "society:women_who_run_with_the_plushies", skillId: "2vo8noqvq4aj1egy" },
+  // Sunlit Cobblemon
+  { id: "sunlit_cobblemon:the_art_of_battle", skillId: "5bh79ul0je3425c5" },
+  { id: "sunlit_cobblemon:berry_labor_and_capital", skillId: "l9v5igsptrxg1o7w" },
+  { id: "sunlit_cobblemon:bottlecaps_and_nothingness", skillId: "yi3sssvxzz4h5ufn" },
+  { id: "sunlit_cobblemon:braiding_surprisegrass", skillId: "7qievsed72hmchf4" },
+  { id: "sunlit_cobblemon:the_gachamonbler", skillId: "fqdq5o5mfwl2uaeg" },
+  { id: "sunlit_cobblemon:mukbeth", skillId: "imv02rfzfi83dndp" },
+  { id: "sunlit_cobblemon:savage_sun", skillId: "ecwqhex344gxang8" },
 ].forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;

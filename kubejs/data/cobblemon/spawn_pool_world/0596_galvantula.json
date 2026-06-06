@@ -1,0 +1,69 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "galvantula-1",
+            "pokemon": "galvantula",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "36-47",
+            "weight": 0.6,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "isThundering": true
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_jungle"
+                ],
+                "timeRange": "night"
+            }
+        },
+        {
+            "id": "galvantula-2",
+            "pokemon": "galvantula",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "46-57",
+            "weight": 0.9,
+            "condition": {
+                "biomes": [
+                    "society:desert_caves",
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "galvantula-3",
+            "pokemon": "galvantula",
+            "presets": [
+                "webs",
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "36-47",
+            "weight": 1.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7
+            }
+        }
+    ]
+}

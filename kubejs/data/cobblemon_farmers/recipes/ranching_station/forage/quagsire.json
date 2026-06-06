@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "quagsire",
+	"forages": [
+		{
+			"item": "minecraft:clay_ball",
+			"count": 16,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "minecraft:mud",
+			"count": 8,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:mudstone",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 6
+		}
+	]
+}

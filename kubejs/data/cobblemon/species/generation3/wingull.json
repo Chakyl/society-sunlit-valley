@@ -1,0 +1,220 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 278,
+    "name": "Wingull",
+    "primaryType": "water",
+    "secondaryType": "flying",
+    "maleRatio": 0.5,
+    "height": 6,
+    "weight": 95,
+    "pokedex": [
+        "cobblemon.species.wingull.desc"
+    ],
+    "labels": [
+        "gen3"
+    ],
+    "aspects": [],
+    "abilities": [
+        "keeneye",
+        "hydration",
+        "h:raindish"
+    ],
+    "eggGroups": [
+        "water_1",
+        "flying"
+    ],
+    "baseStats": {
+        "hp": 40,
+        "attack": 30,
+        "defence": 30,
+        "special_attack": 55,
+        "special_defence": 30,
+        "speed": 85
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 1
+    },
+    "baseExperienceYield": 54,
+    "experienceGroup": "medium_fast",
+    "catchRate": 190,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 0.6,
+    "hitbox": {
+        "width": 0.7,
+        "height": 0.9,
+        "fixed": false
+    },
+    "behaviour": {
+        "moving": {
+            "fly": {
+                "canFly": true
+            },
+            "swim": {
+                "swimSpeed": "0.2",
+                "canWalkOnWater": true
+            },
+            "walk": {
+                "walkSpeed": 0.3
+            }
+        },
+        "resting": {
+            "canSleep": true,
+            "willSleepOnBed": true,
+            "light": "0-4",
+            "drowsyChance": 0.0333,
+            "rouseChance": 0.0042
+        },
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "wattrel",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "kilowattrel",
+                    "tier": 2
+                },
+                {
+                    "pokemon": "wingull",
+                    "tier": 3
+                },
+                {
+                    "pokemon": "pelipper",
+                    "tier": 4
+                }
+            ]
+        },
+        "combat": {
+            "willDefendOwner": true
+        }
+    },
+    "drops": {
+        "amount": 3,
+        "entries": [
+            {
+                "item": "minecraft:feather",
+                "quantityRange": "0-1"
+            },
+            {
+                "item": "wildernature:pelican_meat"
+            },
+            {
+                "item": "cobblemon:wacan_berry",
+                "percentage": 2.5
+            }
+        ]
+    },
+    "moves": [
+        "1:growl",
+        "1:watergun",
+        "5:quickattack",
+        "10:supersonic",
+        "15:wingattack",
+        "20:waterpulse",
+        "26:pursuit",
+        "30:airslash",
+        "35:mist",
+        "40:roost",
+        "45:hurricane",
+        "egg:aerialace",
+        "egg:aircutter",
+        "egg:aquaring",
+        "egg:gust",
+        "egg:knockoff",
+        "egg:soak",
+        "egg:twister",
+        "egg:watersport",
+        "egg:wideguard",
+        "tm:acrobatics",
+        "tm:aerialace",
+        "tm:agility",
+        "tm:aircutter",
+        "tm:airslash",
+        "tm:blizzard",
+        "tm:bravebird",
+        "tm:brine",
+        "tm:chillingwater",
+        "tm:defog",
+        "tm:dualwingbeat",
+        "tm:echoedvoice",
+        "tm:endure",
+        "tm:facade",
+        "tm:featherdance",
+        "tm:fly",
+        "tm:hail",
+        "tm:helpinghand",
+        "tm:hurricane",
+        "tm:hydropump",
+        "tm:icebeam",
+        "tm:icywind",
+        "tm:knockoff",
+        "tm:liquidation",
+        "tm:muddywater",
+        "tm:ominouswind",
+        "tm:pluck",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:roost",
+        "tm:shockwave",
+        "tm:skyattack",
+        "tm:sleeptalk",
+        "tm:snowscape",
+        "tm:steelwing",
+        "tm:substitute",
+        "tm:surf",
+        "tm:swift",
+        "tm:tailwind",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:thief",
+        "tm:twister",
+        "tm:uturn",
+        "tm:waterfall",
+        "tm:waterpulse",
+        "tm:whirlpool",
+        "tutor:aerialace",
+        "tutor:aircutter",
+        "tutor:defog",
+        "tutor:dualwingbeat",
+        "tutor:helpinghand",
+        "tutor:icebeam",
+        "tutor:icywind",
+        "tutor:knockoff",
+        "tutor:liquidation",
+        "tutor:ominouswind",
+        "tutor:rest",
+        "tutor:roost",
+        "tutor:shockwave",
+        "tutor:skyattack",
+        "tutor:sleeptalk",
+        "tutor:swift",
+        "tutor:tailwind",
+        "tutor:twister",
+        "tutor:waterpulse"
+    ],
+    "evolutions": [
+        {
+            "id": "wingull_pelipper",
+            "variant": "level_up",
+            "result": "pelipper",
+            "consumeHeldItem": false,
+            "learnableMoves": [
+                "protect"
+            ],
+            "requirements": [
+                {
+                    "variant": "level",
+                    "minLevel": 25
+                }
+            ]
+        }
+    ]
+}

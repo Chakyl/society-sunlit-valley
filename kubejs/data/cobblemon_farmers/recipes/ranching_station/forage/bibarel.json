@@ -1,0 +1,26 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "bibarel",
+	"forages": [
+		{
+			"item": "meadow:fire_log",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 1
+		},
+		{
+			"item": "pamhc2trees:cinnamonitem",
+			"count": 1,
+			"chance": 0.65,
+			"has_quality": true,
+			"min_hearts": 4
+		},
+		{
+			"item": "unusualfishmod:raw_bark_angelfish",
+			"count": 1,
+			"chance": 0.35,
+			"has_quality": true,
+			"min_hearts": 9
+		}
+	]
+}

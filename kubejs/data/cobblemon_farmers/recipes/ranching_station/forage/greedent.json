@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "greedent",
+	"forages": [
+		{
+			"item": "pamhc2trees:hazelnutitem",
+			"count": 4,
+			"chance": 0.5,
+			"min_hearts": 3,
+			"has_quality": true
+		},
+		{
+			"item": "society:scavenged_food_bag",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 7
+		}
+	]
+}

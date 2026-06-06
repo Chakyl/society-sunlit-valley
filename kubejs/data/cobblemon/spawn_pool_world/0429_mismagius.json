@@ -1,0 +1,120 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "mismagius-1",
+            "pokemon": "mismagius",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "39-50",
+            "weight": 0.6,
+            "condition": {
+                "minSkyLight": 1,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_spooky"
+                ],
+                "maxLight": 7
+            }
+        },
+        {
+            "id": "mismagius-2",
+            "pokemon": "mismagius",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "39-50",
+            "weight": 0.2,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_spooky",
+                    "#cobblemon:is_swamp"
+                ]
+            }
+        },
+        {
+            "id": "mismagius-3",
+            "pokemon": "mismagius",
+            "presets": [
+                "derelict"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "39-50",
+            "weight": 0.6,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_spooky",
+                    "#cobblemon:is_swamp"
+                ]
+            }
+        },
+        {
+            "id": "mismagius-4",
+            "pokemon": "mismagius",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "39-50",
+            "weight": 0.6,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_swamp"
+                ],
+                "timeRange": "night"
+            }
+        },
+        {
+            "id": "mismagius-5",
+            "pokemon": "mismagius",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "39-50",
+            "weight": 0.6,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_warped"
+                ]
+            }
+        },
+        {
+            "id": "mismagius-6",
+            "pokemon": "mismagius",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "60-80",
+            "weight": 0.5,
+            "condition": {
+                "biomes": [
+                    "society:frozen_maelstrom"
+                ]
+            }
+        }
+    ]
+}

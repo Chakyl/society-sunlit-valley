@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "vibrava",
+	"forages": [
+		{
+			"item": "society:pristine_sandstone_slate",
+			"count": 1,
+			"chance": 0.15,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "crittersandcompanions:dragonfly_wing",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 6
+		}
+	]
+}

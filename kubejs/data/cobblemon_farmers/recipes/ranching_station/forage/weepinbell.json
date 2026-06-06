@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "weepinbell",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 2,
+			"chance": 0.25,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "minecraft:pitcher_pod",
+			"count": 4,
+			"chance": 0.55,
+			"has_quality": true,
+			"min_hearts": 8
+		}
+	]
+}

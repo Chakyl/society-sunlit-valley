@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_moon_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_moon_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:blue_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:yellow_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:black_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        },
+        {
+          "item": "minecraft:lantern"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_moon_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:moon_ball"
+    }
+  ],
+  "loops": 1
+}

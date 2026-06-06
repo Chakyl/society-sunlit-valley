@@ -1,0 +1,11 @@
+{
+  "condition": {
+    "neededNearbyBlocks": [
+      "society:villager_home",
+      "sunlit_cobblemon:trainer_podium"
+    ]
+  },
+  "anticondition": {
+    "neededNearbyBlocks": ["minecraft:farmland"]
+  }
+}

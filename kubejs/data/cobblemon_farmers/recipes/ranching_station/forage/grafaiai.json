@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "grafaiai",
+	"forages": [
+		{
+			"item": "pamhc2trees:bananaitem",
+			"count": 4,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 2
+		},
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 5
+		}
+	]
+}

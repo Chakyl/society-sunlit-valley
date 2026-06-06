@@ -1,0 +1,164 @@
+{
+  "displayName": "Gym Crusher Glimmora",
+  "team": [
+    {
+      "species": "cobblemon:glimmora",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:calm",
+      "ability": "toxicdebris",
+      "moveset": [
+        "mortalspin",
+        "toxicspikes",
+        "spikyshield",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "defence": 252,
+        "special_defence": 252,
+        "speed": 6
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:garganacl",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hasty",
+      "ability": "purifyingsalt",
+      "moveset": [
+        "saltcure",
+        "recover",
+        "heavyslam",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:rocky_helmet",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:gengar",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hardy",
+      "ability": "cursedbody",
+      "moveset": [
+        "hypnosis",
+        "confuseray",
+        "dreameater",
+        "hex"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 10,
+        "special_attack": 252,
+        "speed": 200
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:togekiss",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:relaxed",
+      "ability": "serenegrace",
+      "moveset": [
+        "airslash",
+        "thunderwave",
+        "sweetkiss",
+        "safeguard"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:samurott",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:gentle",
+      "ability": "sharpness",
+      "moveset": [
+        "ceaselessedge",
+        "razorshell",
+        "slash",
+        "furycutter"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:razor_claw",
+      "aspects": [
+        "hisuian",
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

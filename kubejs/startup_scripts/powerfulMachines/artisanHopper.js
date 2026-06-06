@@ -263,7 +263,6 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
   const { level, block, inventory } = tickEvent;
   const server = level.server;
 
-  server.scheduleInTicks(delay, () => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
     const nbt = artisanMachine.getEntityData();
@@ -497,7 +496,6 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         });
       }
     }
-  });
 };
 
 global.artisanHopperScan = (entity, radius) => {

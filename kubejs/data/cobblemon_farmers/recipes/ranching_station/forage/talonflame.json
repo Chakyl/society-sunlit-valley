@@ -1,0 +1,26 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "talonflame",
+	"forages": [
+		{
+			"item": "minecraft:chicken",
+			"count": 6,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "species:wraptor_egg",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "cobblemon:swift_feather",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "sableye",
+	"forages": [
+		{
+			"item": "minecraft:diamond",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:aquamarine",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:ruby",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 8
+		},
+		{
+			"item": "society:jade",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 10
+		}
+	]
+}

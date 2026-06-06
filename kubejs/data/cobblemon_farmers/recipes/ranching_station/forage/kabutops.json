@@ -1,0 +1,26 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "kabutops",
+	"forages": [
+		{
+			"item": "minecraft:armadillo_scute",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 1
+		},
+		{
+			"item": "herbalbrews:ground_coffee",
+			"count": 4,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 5
+		},
+		{
+			"item": "society:ground_cinnamon",
+			"count": 4,
+			"chance": 0.73,
+			"has_quality": true,
+			"min_hearts": 8
+		}
+	]
+}

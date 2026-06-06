@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "klang",
+	"forages": [
+		{
+			"item": "create:andesite_alloy",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "create:andesite_alloy",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

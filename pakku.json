@@ -1,11 +1,12 @@
 {
-    "name": "Society Sunlit Valley",
-    "version": "4.0.9",
+    "name": "Society Sunlit Cobblemon",
+    "version": "1.0.8-SSV4.0.9",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
-        "patchouli_books"
+        "patchouli_books",
+        "mods/Cobbreeding-forge-1.7.4.jar"
     ],
     "client_overrides": [
         "resourcepacks/sunlit_overrides.zip",
@@ -89,6 +90,9 @@
             "side": "CLIENT"
         },
         "more-overlays-updated": {
+            "side": "CLIENT"
+        },
+        "seasonhud": {
             "side": "CLIENT"
         },
         "mouse-tweaks": {

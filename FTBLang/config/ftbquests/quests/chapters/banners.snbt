@@ -154,6 +154,7 @@
 				"6E6588DBC047B041"
 				"5E94562368270D69"
 				"560CDD4660AA1159"
+				"3315CF66A6C33A02"
 			]
 			description: ["{ftbquests.chapter.banners.quest7A159242A6B053C8.description1}"]
 			hide_dependency_lines: true
@@ -2096,7 +2097,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			id: "09E68F4E9AE935D8"
@@ -2106,7 +2107,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			id: "31831BD5BC45E37E"
@@ -2573,6 +2574,16 @@
 			}]
 			x: 15.0d
 			y: 11.0d
+		}
+		{
+			id: "3315CF66A6C33A02"
+			tasks: [{
+				id: "3FCF3DD087AC730B"
+				item: "bakery:waffle"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.0d
 		}
 	]
 	title: "{ftbquests.chapter.banners.title}"

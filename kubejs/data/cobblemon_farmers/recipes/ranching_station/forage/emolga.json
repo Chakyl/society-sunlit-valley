@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "emolga",
+	"forages": [
+		{
+			"item": "pamhc2trees:hazelnutitem",
+			"count": 4,
+			"chance": 0.5,
+			"min_hearts": 6,
+			"has_quality": true
+		},
+		{
+			"item": "society:sparkpod",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 10,
+			"has_quality": true
+		}
+	]
+}

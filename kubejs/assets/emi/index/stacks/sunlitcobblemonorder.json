@@ -1,0 +1,81 @@
+{
+  "added": [
+    {
+      "stack": "item:cobblemon:syrupy_apple",
+      "after": "item:cobblemon:sweet_apple"
+    },
+    {
+      "stack": "item:cobblemon:metal_alloy",
+      "after": "item:cobblemon:malicious_armor"
+    },
+    {
+      "stack": "item:cobblemon:shell_helmet",
+      "after": "item:cobblemon:metal_alloy"
+    },
+    {
+      "stack": "item:cobblemon:scroll_of_darkness",
+      "after": "item:cobblemon:shell_helmet"
+    },
+    {
+      "stack": "item:cobblemon:scroll_of_waters",
+      "after": "item:cobblemon:scroll_of_darkness"
+    },
+    {
+      "stack": "item:cobblemon:dawn_stone_block",
+      "after": "item:cobblemon:deepslate_water_stone_ore"
+    },
+    {
+      "stack": "item:cobblemon:dusk_stone_block",
+      "after": "item:cobblemon:dawn_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:fire_stone_block",
+      "after": "item:cobblemon:dusk_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:ice_stone_block",
+      "after": "item:cobblemon:fire_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:leaf_stone_block",
+      "after": "item:cobblemon:ice_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:moon_stone_block",
+      "after": "item:cobblemon:leaf_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:shiny_stone_block",
+      "after": "item:cobblemon:moon_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:sun_stone_block",
+      "after": "item:cobblemon:shiny_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:thunder_stone_block",
+      "after": "item:cobblemon:sun_stone_block"
+    },
+    {
+      "stack": "item:cobblemon:water_stone_block",
+      "after": "item:cobblemon:thunder_stone_block"
+    }
+  ],
+  "removed": [
+    "item:cobblemon:dawn_stone_block",
+    "item:cobblemon:dusk_stone_block",
+    "item:cobblemon:fire_stone_block",
+    "item:cobblemon:ice_stone_block",
+    "item:cobblemon:leaf_stone_block",
+    "item:cobblemon:moon_stone_block",
+    "item:cobblemon:shiny_stone_block",
+    "item:cobblemon:sun_stone_block",
+    "item:cobblemon:thunder_stone_block",
+    "item:cobblemon:water_stone_block",
+    "item:cobblemon:metal_alloy",
+    "item:cobblemon:shell_helmet",
+    "item:cobblemon:syrupy_apple",
+    "item:cobblemon:scroll_of_darkness",
+    "item:cobblemon:scroll_of_waters"
+  ]
+}

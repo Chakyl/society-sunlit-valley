@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "milotic",
+	"forages": [
+		{
+			"item": "cobblemon:prism_scale",
+			"count": 1,
+			"chance": 0.52,
+			"min_hearts": 1
+		},
+		{
+			"item": "society:sunlit_crystal",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 10
+		}
+	]
+}

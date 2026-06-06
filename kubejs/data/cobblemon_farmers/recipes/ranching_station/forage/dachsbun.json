@@ -1,0 +1,27 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "dachsbun",
+	"forages": [
+		{
+			"item": "bakery:bun",
+			"count": 8,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 2
+		},
+		{
+			"item": "bakery:bundt_cake",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "bakery:jam_roll",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 10
+		}
+	]
+}

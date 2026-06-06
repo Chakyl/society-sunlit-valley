@@ -6,6 +6,27 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "item",
+          "name": "cobblemon:ancient_great_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 4.0
+              },
+              "add": false
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:iron",
+          "weight": 10
+        },
+        {
           "type": "minecraft:item",
           "weight": 10,
           "functions": [

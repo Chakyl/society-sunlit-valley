@@ -1,0 +1,141 @@
+# Enable Item Descriptions
+# default: true
+item_descriptions = true
+# Always show Item Descriptions while hovering over an item in your inventory.
+# default: false
+display_always = false
+# Prioritize the Entity Description of the spawn egg over the generic spawn egg description.
+# default: true
+spawn_eggs_show_entity = true
+# When Item Descriptions are being displayed, also display the mod name.
+# default: false
+show_mod_name = false
+
+[hint]
+	# When descriptions on an item are not visible, show a tooltip with the default text 'Show more' and the keybind.
+	# default: false
+	enabled = false
+	# Show keybinds in hint text.
+	# default: true
+	show_keybinds = true
+	# This setting changes what Minecraft colour is used for hint tooltips, either by colour code or name.
+	# default: Gray
+	color = "Gray"
+	# Italicize Hints
+	# default: false
+	italics = false
+	# Force-uppercase hint keybinds.
+	# default: true
+	uppercase = true
+
+[style]
+	# This setting changes what Minecraft colour is used for block, item, and entity tooltips, either by colour code or name.
+	# default: Gray
+	color = "Gray"
+	# This setting changes whether block, item, and entity tooltips are italicized.
+	# default: false
+	italics = false
+	# This setting changes whether block, item, and entity tooltips are bolded.
+	# default: false
+	bold = false
+	# Changes the minimum width of multi-line tooltip. Expands for longer item names. Ignored when ToolTipFix is present.
+	# default: 160
+	length = 160
+	# Color of the mod name tooltip
+	# default: Blue
+	mod_name_color = "Blue"
+	# Whether to italicize the mod name tooltip
+	# default: true
+	mod_name_italics = true
+
+[keybinds]
+	# Show descriptions when the Ctrl key is held.
+	# default: true
+	display_when_ctrl_is_held = true
+	# Show descriptions when the Shift key is held.
+	# default: false
+	display_when_shift_is_held = false
+	# Show descriptions when the Alt key is held.
+	# default: false
+	display_when_alt_is_held = false
+	# Invert all Item Descriptions keybinds.
+	# default: false
+	invert = false
+
+[block_descriptions]
+	# This will show Block Descriptions in compatible mods. This can also be disabled in Jade/WTHIT's settings.
+	# default: true
+	enable = true
+	# Always show Block Descriptions, not just when a key is held.
+	# default: false
+	show_always = false
+
+[entity_descriptions]
+	# This will show Entity Descriptions in compatible mods. This can also be disabled in Jade/WTHIT's settings.
+	# default: true
+	enable = true
+	# Always show Entity Descriptions, not just when a key is held.
+	# default: false
+	show_always = false
+
+[enchantment_descriptions]
+	# Enable enchantment descriptions.
+	# default: true
+	enable = true
+	# Always show Enchantment Descriptions, not just when a key is held.
+	# default: false
+	display_always = false
+	# By default, descriptions are shown on all enchanted items. Disable if this should only apply to books.
+	# default: false
+	only_show_on_books = false
+	# Hide Item Descriptions on Enchanted Books, since they'll always have an Enchantment Description.
+	# default: true
+	only_enchantment_descriptions_on_books = true
+	# Show Enchantment Descriptions in the Enchanting Table
+	# default: true
+	show_in_table = true
+	# This setting changes what Minecraft colour is used for enchantment tooltips, either by colour code or name.
+	# default: Dark Gray
+	color = "Dark Gray"
+	# Italicize Enchantment Descriptions
+	# default: false
+	italics = false
+
+[effect_descriptions]
+	# Enable descriptions for Status Effects.
+	# default: true
+	enable = true
+	# Always show Effect Descriptions, not just when a key is held.
+	# default: false
+	display_always = false
+	# This setting changes what Minecraft colour is used for effect tooltips, either by colour code or name.
+	# default: Dark Gray
+	color = "Dark Gray"
+	# Replace Item Descriptions with Effect Descriptions when present.
+	# default: false
+	only_show_effect_descriptions = false
+
+[developer_options]
+	# Replaces the description with a list of translation keys that can be used to match that item. Hold Alt to view their translations.
+	# default: false
+	show_all_potential_keys = false
+	# List of items that have their built-in tooltips disabled.
+	items_with_tooltips_to_hide = []
+	# Show lore tags on untranslated items. This includes items meant to have generic descriptions! Disable after testing.
+	# default: false
+	show_untranslated = false
+	# This will disable descriptions for items based off the block or item tags when a more specific description is not present (e.g. planks, slabs, stairs, tools, etc.).
+	# default: false
+	disable_tag_descriptions = false
+	# Force enable Effect Descriptions, even when other mods are installed.
+	# default: false
+	force_enable_enchantment_descriptions = false
+	# Creates placeholder en_us language files per-namespace in the minecraft/data/missing folder.
+	# default: false
+	generate_missing = false
+	# Hide tooltips from other mods.
+	# default: false
+	hide_other_tooltips = false
+	# Override the backend config library. Available options are 'cloth-config' and 'yacl'
+	# default: 
+	config_screen = ""

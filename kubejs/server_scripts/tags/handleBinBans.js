@@ -7,7 +7,6 @@ ServerEvents.tags("item", (e) => {
     "sophisticatedbackpacks",
     "sophisticatedstorage",
     "automobility",
-    "toms_storage",
     "relics",
     "betterarcheology",
     "pamhc2trees",
@@ -32,6 +31,8 @@ ServerEvents.tags("item", (e) => {
     "numismatics",
     "whimsydeco",
     "cluttered",
+    "cobblemon",
+    "create_klinks_n_klangs",
   ];
   modBans.forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);

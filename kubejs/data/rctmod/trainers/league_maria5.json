@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League Maria",
+  "team": [
+    {
+      "species": "cobblemon:hitmonchan",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:adamant",
+      "ability": "ironfist",
+      "moveset": [
+        "poweruppunch",
+        "firepunch",
+        "icepunch",
+        "thunderpunch"
+      ],
+      "ivs": {
+        "hp": 6,
+        "attack": 24,
+        "defence": 19,
+        "special_attack": 6,
+        "special_defence": 24
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:miltank",
+      "gender": "FEMALE",
+      "level": 70,
+      "nature": "cobblemon:careful",
+      "ability": "scrappy",
+      "moveset": [
+        "playrough",
+        "zenheadbutt",
+        "rollout",
+        "gyroball"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 2,
+        "defence": 16,
+        "special_attack": 1,
+        "special_defence": 20,
+        "speed": 6
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female",
+        "milkable"
+      ]
+    },
+    {
+      "species": "cobblemon:hariyama",
+      "gender": "FEMALE",
+      "level": 70,
+      "nature": "cobblemon:adamant",
+      "ability": "thickfat",
+      "moveset": [
+        "closecombat",
+        "heavyslam",
+        "bellydrum",
+        "headlongrush"
+      ],
+      "ivs": {
+        "hp": 2,
+        "attack": 5,
+        "defence": 10,
+        "special_attack": 3,
+        "special_defence": 22,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:lucario",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "cobblemon:lonely",
+      "ability": "steadfast",
+      "moveset": [
+        "nastyplot",
+        "aurasphere",
+        "darkpulse",
+        "dragonpulse"
+      ],
+      "ivs": {
+        "hp": 12,
+        "attack": 7,
+        "defence": 14,
+        "special_attack": 25,
+        "special_defence": 27,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:hawlucha",
+      "gender": "FEMALE",
+      "level": 70,
+      "nature": "cobblemon:adamant",
+      "ability": "limber",
+      "moveset": [
+        "acrobatics",
+        "swordsdance",
+        "flyingpress",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 28,
+        "attack": 31,
+        "defence": 27,
+        "special_attack": 22,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:fighting_gem",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:ambipom",
+      "gender": "FEMALE",
+      "level": 70,
+      "nature": "cobblemon:adamant",
+      "ability": "technician",
+      "moveset": [
+        "screech",
+        "dualchop",
+        "tripleaxel",
+        "doublehit"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 4,
+        "defence": 16,
+        "special_attack": 21,
+        "special_defence": 19,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

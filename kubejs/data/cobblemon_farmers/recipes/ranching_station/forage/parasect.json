@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "parasect",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:paras_mushroom",
+			"count": 8,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 0
+		},
+		{
+			"item": "sunlit_cobblemon:strange_spore",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		}
+	]
+}

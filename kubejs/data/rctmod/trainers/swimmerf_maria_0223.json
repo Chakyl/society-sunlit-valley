@@ -1,0 +1,136 @@
+{
+  "displayName": "Swimmer♀ Maria",
+  "team": [
+    {
+      "species": "cobblemon:inteleon",
+      "gender": "FEMALE",
+      "level": 92,
+      "nature": "cobblemon:timid",
+      "ability": "sniper",
+      "moveset": [
+        "snipeshot",
+        "icebeam",
+        "uturn",
+        "hiddenpower"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:scope_lens"
+    },
+    {
+      "species": "cobblemon:dragalge",
+      "gender": "MALE",
+      "level": 90,
+      "nature": "cobblemon:modest",
+      "ability": "adaptability",
+      "moveset": [
+        "dracometeor",
+        "sludgewave",
+        "flipturn",
+        "scald"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:choice_specs"
+    },
+    {
+      "species": "cobblemon:starmie",
+      "gender": "GENDERLESS",
+      "level": 93,
+      "nature": "cobblemon:timid",
+      "ability": "illuminate",
+      "moveset": [
+        "hydropump",
+        "thunder",
+        "blizzard",
+        "psyshock"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb"
+    },
+    {
+      "species": "cobblemon:basculegion",
+      "gender": "FEMALE",
+      "level": 91,
+      "nature": "cobblemon:timid",
+      "ability": "adaptability",
+      "moveset": [
+        "hydropump",
+        "shadowball",
+        "icebeam",
+        "flipturn"
+      ],
+      "ivs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "f"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}

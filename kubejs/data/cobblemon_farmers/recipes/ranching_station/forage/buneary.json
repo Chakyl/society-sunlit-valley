@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "buneary",
+	"forages": [
+		{
+			"item": "society:fine_wool",
+			"count": 4,
+			"chance": 0.1,
+			"has_quality": true,
+			"min_hearts": 5
+		},
+		{
+			"item": "minecraft:rabbit_foot",
+			"count": 1,
+			"chance": 0.15,
+			"has_quality": true,
+			"min_hearts": 10
+		}
+	]
+}

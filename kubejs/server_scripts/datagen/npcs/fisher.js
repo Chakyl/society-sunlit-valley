@@ -166,6 +166,14 @@ if (global.datagenDialog) {
           "Hopefully this brings you a tiny bit closer to understanding my soul."
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "Oh, @i. I've been wanting to talk to you.",
+          "This Volcanion comes from my homeland, and it's particularly feisty around these waters.",
+          "I'm honestly not sure how to really take care of a force of nature like this, but you're capable about these things."
+        ]
+      },
     ]
   });
 }

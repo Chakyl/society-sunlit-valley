@@ -1,0 +1,73 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "elgyem-1",
+      "pokemon": "elgyem",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-44",
+      "weight": 9.0,
+      "condition": {
+        "biomes": ["society:umbra_barrens"]
+      },
+      "drops": {
+        "amount": 4,
+        "entries": [
+          {
+            "item": "minecraft:ender_pearl",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "minecraft:chorus_fruit",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "cobblemon:light_clay",
+            "percentage": 2.5
+          },
+          {
+            "item": "cobblemon:colbur_berry",
+            "percentage": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "elgyem-2",
+      "pokemon": "elgyem",
+      "presets": ["natural"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "9-34",
+      "weight": 9.0,
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "biomes": ["#cobblemon:is_overworld"],
+        "timeRange": "night",
+        "neededNearbyBlocks": ["minecraft:wheat"]
+      }
+    },
+    {
+      "id": "elgyem-3",
+      "pokemon": "elgyem",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "9-34",
+      "weight": 5.4,
+      "condition": {
+        "biomes": ["the_bumblezone:howling_constructs"]
+      },
+      "anticondition": {
+        "structures": ["#the_bumblezone:sempiternal_sanctums"]
+      }
+    }
+  ]
+}

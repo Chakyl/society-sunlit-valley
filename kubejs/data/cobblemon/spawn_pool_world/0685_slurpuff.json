@@ -1,0 +1,76 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "slurpuff-4",
+            "pokemon": "slurpuff",
+            "presets": [
+                "mansion_dining"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "29-48",
+            "weight": 0.3,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            }
+        },
+        {
+            "id": "slurpuff-1",
+            "pokemon": "slurpuff",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "29-48",
+            "weight": 0.5,
+            "condition": {
+                "biomes": [
+                    "#aether:is_aether",
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:cake"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:sugar_cane"
+                ]
+            }
+        },
+        {
+            "id": "slurpuff-2",
+            "pokemon": "slurpuff",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "29-48",
+            "weight": 0.48,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether",
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:sugar_cane"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:cake"
+                ]
+            }
+        }
+    ]
+}

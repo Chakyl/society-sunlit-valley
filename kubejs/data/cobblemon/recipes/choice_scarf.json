@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" WD", "DSW", "gD "],
+  "key": {
+    "W": {
+      "item": "society:light_blue_sheet"
+    },
+    "D": {
+      "item": "oreganized:silver_ingot"
+    },
+    "g": {
+      "item": "society:source_gem"
+    },
+    "S": {
+      "item": "cobblemon:silk_scarf"
+    }
+  },
+  "result": {
+    "item": "cobblemon:choice_scarf"
+  }
+}

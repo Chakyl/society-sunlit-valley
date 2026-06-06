@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League King Karma",
+  "team": [
+    {
+      "species": "cobblemon:piloswine",
+      "gender": "FEMALE",
+      "level": 38,
+      "nature": "cobblemon:mild",
+      "ability": "oblivious",
+      "moveset": [
+        "ancientpower",
+        "icefang",
+        "mudbomb",
+        "amnesia"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 24,
+        "defence": 7,
+        "special_attack": 15,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:azumarill",
+      "gender": "FEMALE",
+      "level": 38,
+      "nature": "cobblemon:adamant",
+      "ability": "hugepower",
+      "moveset": [
+        "slam",
+        "aquaring",
+        "aquatail",
+        "rollout"
+      ],
+      "ivs": {
+        "hp": 13,
+        "attack": 6,
+        "defence": 13,
+        "special_attack": 31,
+        "special_defence": 24,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:gabite",
+      "gender": "FEMALE",
+      "level": 40,
+      "nature": "cobblemon:lonely",
+      "ability": "roughskin",
+      "moveset": [
+        "tackle",
+        "sandtomb",
+        "sandattack",
+        "dragonrage"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 4,
+        "defence": 18,
+        "special_attack": 19,
+        "special_defence": 17,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:magneton",
+      "gender": "GENDERLESS",
+      "level": 38,
+      "nature": "cobblemon:quiet",
+      "ability": "sturdy",
+      "moveset": [
+        "electroball",
+        "triattack",
+        "flashcannon",
+        "thunderwave"
+      ],
+      "ivs": {
+        "hp": 17,
+        "attack": 29,
+        "defence": 12,
+        "special_attack": 26,
+        "special_defence": 6,
+        "speed": 12
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:swampert",
+      "gender": "MALE",
+      "level": 40,
+      "nature": "cobblemon:adamant",
+      "ability": "torrent",
+      "moveset": [
+        "earthquake",
+        "hammerarm",
+        "rockthrow",
+        "liquidation"
+      ],
+      "ivs": {
+        "hp": 26,
+        "attack": 31,
+        "defence": 3,
+        "special_attack": 11,
+        "special_defence": 30,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:blaziken",
+      "gender": "MALE",
+      "level": 40,
+      "nature": "cobblemon:hasty",
+      "ability": "speedboost",
+      "moveset": [
+        "firepunch",
+        "slash",
+        "aerialace",
+        "doublekick"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 3,
+        "defence": 14,
+        "special_attack": 20,
+        "special_defence": 20,
+        "speed": 11
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

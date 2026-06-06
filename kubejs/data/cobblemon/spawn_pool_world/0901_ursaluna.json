@@ -1,0 +1,45 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "ursaluna-1",
+            "pokemon": "ursaluna",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "45-55",
+            "weight": 0.02,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_mountain",
+                    "#cobblemon:is_taiga"
+                ],
+                "minY": 48
+            }
+        },
+        {
+            "id": "ursaluna-2",
+            "pokemon": "ursaluna",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "43-60",
+            "weight": 0.3,
+            "condition": {
+                "biomes": [
+                    "#society:is_skull_cavern"
+                ]
+            }
+        }
+    ]
+}

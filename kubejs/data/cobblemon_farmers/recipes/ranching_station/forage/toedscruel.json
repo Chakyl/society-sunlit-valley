@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "toedscruel",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:strange_spore",
+			"count": 1,
+			"chance": 0.4,
+			"min_hearts": 3
+		},
+		{
+			"item": "species:alphacene_mushroom_block",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 6
+		},
+		{
+			"item": "species:alphacene_mushroom_growth",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 6
+		}
+	]
+}

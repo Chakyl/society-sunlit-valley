@@ -1,0 +1,35 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "simipour-1",
+            "pokemon": "simipour",
+            "presets": [
+                "natural",
+                "treetop",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "27-50",
+            "weight": 1.6,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#atmospheric:is_rainforest",
+                    "#cobblemon:is_tropical_island"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_timer_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_timer_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:white_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:red_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:white_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        },
+        {
+          "item": "vinery:chorus_wine"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_timer_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:timer_ball"
+    }
+  ],
+  "loops": 1
+}

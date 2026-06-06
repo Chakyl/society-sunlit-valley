@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "oinkologne",
+	"forages": [
+		{
+			"item": "society:truffle",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 6,
+			"has_quality": true
+		},
+		{
+			"item": "society:truffle",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 10,
+			"has_quality": true
+		}
+	]
+}

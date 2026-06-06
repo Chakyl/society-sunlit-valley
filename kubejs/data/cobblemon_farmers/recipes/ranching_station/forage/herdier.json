@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "herdier",
+	"forages": [
+		{
+			"item": "minecraft:bone",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:fine_wool",
+			"count": 1,
+			"chance": 0.4,
+			"has_quality": true,
+			"min_hearts": 5
+		}
+	]
+}

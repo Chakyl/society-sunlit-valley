@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WDW", "D D", "IDW"],
+  "key": {
+    "W": {
+      "item": "society:red_sheet"
+    },
+    "D": {
+      "item": "minecraft:blaze_powder"
+    },
+    "I": {
+      "item": "society:glitched_vhs"
+    }
+  },
+  "result": {
+    "item": "cobblemon:focus_band"
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "alakazam",
+	"forages": [
+		{
+			"item": "simplerecall:recall_potion",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 6
+		},
+		{
+			"item": "cobblemon:twisted_spoon",
+			"count": 1,
+			"chance": 0.03,
+			"min_hearts": 7
+		},
+		{
+			"item": "sunlit_cobblemon:resonance_gem",
+			"count": 1,
+			"chance": 0.3,
+			"min_hearts": 8
+		}
+	]
+}

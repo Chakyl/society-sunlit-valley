@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "magnezone",
+	"forages": [
+		{
+			"item": "oreganized:lead_ingot",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 1
+		},
+		{
+			"item": "oreganized:silver_ingot",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 5
+		},
+		{
+			"item": "oreganized:electrum_nugget",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 8
+		}
+	]
+}

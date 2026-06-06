@@ -1,0 +1,3931 @@
+{
+	autofocus_id: "302AA9BB1D2219A8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rare_pokmon"
+	group: "13003519EF914BA5"
+	hide_quest_until_deps_complete: true
+	icon: "cobblemon:beast_ball"
+	id: "6B6EF767526A7A1C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [""]
+			id: "5258D723273DF790"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest5258D723273DF790.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "697E23AEF7B006DE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:screamtail"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5258D723273DF790.title}"
+			x: 19.0d
+			y: -15.0d
+		}
+		{
+			description: [""]
+			id: "1ACEB759746487FE"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1ACEB759746487FE.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "76CCE9B5609D3D37"
+				poke_ball_used: ""
+				pokemon: "cobblemon:fluttermane"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1ACEB759746487FE.title}"
+			x: 21.0d
+			y: -15.0d
+		}
+		{
+			id: "7B7B77F0C9ED1DE3"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest7B7B77F0C9ED1DE3.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1176CF273C343CE7"
+				poke_ball_used: ""
+				pokemon: "cobblemon:slitherwing"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest7B7B77F0C9ED1DE3.title}"
+			x: 23.0d
+			y: -15.0d
+		}
+		{
+			id: "3ED55D8417213673"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3ED55D8417213673.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2D9C5114670A8C0E"
+				poke_ball_used: ""
+				pokemon: "cobblemon:roaringmoon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3ED55D8417213673.title}"
+			x: 25.0d
+			y: -15.0d
+		}
+		{
+			id: "497269BD63D3CAB5"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest497269BD63D3CAB5.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3281ADB2B78A791D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:walkingwake"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest497269BD63D3CAB5.title}"
+			x: 27.0d
+			y: -15.0d
+		}
+		{
+			id: "4AC2C482DBE3C0B2"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4AC2C482DBE3C0B2.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "61F690193F2D87AB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ragingbolt"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4AC2C482DBE3C0B2.title}"
+			x: 29.0d
+			y: -15.0d
+		}
+		{
+			description: [""]
+			id: "780266EEBC9BBDA1"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest780266EEBC9BBDA1.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "51ADB8A8466A7699"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironbundle"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest780266EEBC9BBDA1.title}"
+			x: 20.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "16080D969B4C44E9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest16080D969B4C44E9.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "22FEDC60FD421EBB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironmoth"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest16080D969B4C44E9.title}"
+			x: 24.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "713853BE7205B351"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest713853BE7205B351.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "62AE049CF8915159"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironthorns"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest713853BE7205B351.title}"
+			x: 22.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "53335158164831B9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest53335158164831B9.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "34E7B445883EA04D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironvaliant"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest53335158164831B9.title}"
+			x: 26.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			id: "71091CADB01BBBD9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest71091CADB01BBBD9.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "71C417C809587020"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironleaves"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest71091CADB01BBBD9.title}"
+			x: 28.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"4AC2C482DBE3C0B2"
+				"713853BE7205B351"
+				"3ED55D8417213673"
+				"7B7B77F0C9ED1DE3"
+				"5258D723273DF790"
+				"780266EEBC9BBDA1"
+				"71091CADB01BBBD9"
+				"497269BD63D3CAB5"
+				"53335158164831B9"
+				"16080D969B4C44E9"
+				"1ACEB759746487FE"
+				"3E1B759B00428FB6"
+				"2118ADCB33C9C583"
+			]
+			description: [
+				"{ftbquests.chapter.rare_pokmon.quest5DE5D055D7BC2BFE.description1}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest5DE5D055D7BC2BFE.description2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			icon: "cobblemon:timer_ball"
+			id: "5DE5D055D7BC2BFE"
+			size: 2.0d
+			tasks: [{
+				icon: "tanukidecor:crystal_clock"
+				id: "042AA31A7E1092C0"
+				stat: "minecraft:play_time"
+				title: "{ftbquests.chapter.rare_pokmon.quest5DE5D055D7BC2BFE.task.300231659353051840.title}"
+				type: "stat"
+				value: 1
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5DE5D055D7BC2BFE.title}"
+			x: 24.0d
+			y: -17.0d
+		}
+		{
+			description: [""]
+			id: "46AC1742C4A72259"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest46AC1742C4A72259.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "455F03A6C678FECF"
+				poke_ball_used: ""
+				pokemon: "cobblemon:nihilego"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest46AC1742C4A72259.title}"
+			x: 20.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "7169193680597E82"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest7169193680597E82.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6990275CBACAA27F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:buzzwole"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest7169193680597E82.title}"
+			x: 22.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "1B20E6F6F396A6B0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1B20E6F6F396A6B0.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "45C90627D902DE58"
+				poke_ball_used: ""
+				pokemon: "cobblemon:xurkitree"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1B20E6F6F396A6B0.title}"
+			x: 24.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "0AFC79E0751923A6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.questAFC79E0751923A6.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "74C789F556D5657C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:kartana"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.questAFC79E0751923A6.title}"
+			x: 26.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "40782D6A62B4B8D0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest40782D6A62B4B8D0.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "61F1CCFD39F66E62"
+				poke_ball_used: ""
+				pokemon: "cobblemon:guzzlord"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest40782D6A62B4B8D0.title}"
+			x: 28.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "0FD10C2F7AE4677E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.questFD10C2F7AE4677E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2BABA96B57FA3BFE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:blacephalon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.questFD10C2F7AE4677E.title}"
+			x: 25.0d
+			y: -21.0d
+		}
+		{
+			dependencies: [
+				"46AC1742C4A72259"
+				"1B20E6F6F396A6B0"
+				"0AFC79E0751923A6"
+				"7169193680597E82"
+				"0FD10C2F7AE4677E"
+				"40782D6A62B4B8D0"
+				"0EBCCA3706A180E0"
+				"27095A5816F58B81"
+				"1862834CE4AA333D"
+			]
+			description: [
+				"{ftbquests.chapter.rare_pokmon.quest6C472A1603AF02C5.description1}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest6C472A1603AF02C5.description2}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest6C472A1603AF02C5.description3}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			icon: "cobblemon:beast_ball"
+			id: "6C472A1603AF02C5"
+			size: 2.0d
+			tasks: [{
+				icon: "sunlit_cobblemon:poke_genes"
+				id: "55426B8228B339F1"
+				stat: "minecraft:play_time"
+				title: "{ftbquests.chapter.rare_pokmon.quest6C472A1603AF02C5.task.6143591048459532785.title}"
+				type: "stat"
+				value: 1
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6C472A1603AF02C5.title}"
+			x: 24.0d
+			y: -25.0d
+		}
+		{
+			id: "2118ADCB33C9C583"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest2118ADCB33C9C583.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "28897306AB4A7D7F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:gougingfire"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest2118ADCB33C9C583.title}"
+			x: 31.0d
+			y: -15.0d
+		}
+		{
+			description: [""]
+			id: "3E1B759B00428FB6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3E1B759B00428FB6.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "494A8021733D582F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:sandyshocks"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3E1B759B00428FB6.title}"
+			x: 17.0d
+			y: -15.0d
+		}
+		{
+			dependencies: [
+				"33312768E1E4BA1D"
+				"7783E2BC686C0B13"
+				"3FB31EE76423D1B4"
+				"444BE411AB96960F"
+				"322ACE3883EF0B1B"
+				"1E0508A8E8FE6814"
+				"1C6F513A824DAE33"
+				"26AD3C36EA9987B0"
+				"582C75B20BE4A328"
+				"3B337B0AEB93D2B8"
+				"237C9725D6792C55"
+				"72A7C88BB579C98D"
+				"65F2AB32EFCF4051"
+				"7CD7B2B58503E5E1"
+				"5C5A08F990320793"
+				"39E05E31E342B400"
+				"16A265D611E1A200"
+				"08800F1153A12FA5"
+				"5F5FBD6D85C98EE0"
+				"12130DEA8E725997"
+				"2EC9CFEC5B6BE653"
+				"404206ADF8E6B097"
+				"59CE1B4B97CD55E8"
+				"237DDF00F56D5D30"
+				"520A32661462602C"
+				"5DF36F347032ECD3"
+				"1A7AF9AF189DF96F"
+				"0DE67C52EB82CF9E"
+				"606DAB6837BB5F96"
+				"4716D1AEB1AF123E"
+				"70053D76E4DA6905"
+				"3A174D139C314784"
+				"242F129C3C3DAD3D"
+				"6C211E4CDA3A4362"
+				"5B02036AA208B3D7"
+				"690C4EE7C6DBED87"
+				"08FF418D50AA50E0"
+				"069B5BCA35F1FB9A"
+				"3A0CC3BC3ACCD847"
+				"300A62FAE9A5C16B"
+				"5466D94C92226436"
+				"74F234EF490006A2"
+				"6E1708DFBF799BF1"
+				"47A1B7188C6C0E16"
+				"13F18C6036700BA7"
+				"5AC7A1589AB6E7E0"
+				"22B6D097B8DF5F34"
+				"4F67833D18A57835"
+				"1100E84A0DEB866E"
+				"3FD53A03E6D9D65F"
+				"6434E3E25D873D00"
+				"511218F87BDB47E3"
+				"019B0829BC7B711D"
+				"7CF60082CA31BE92"
+				"21DC364143467701"
+				"6ADF6AB779D9E96F"
+				"2999021D2E50828A"
+				"3D0A1299016A0118"
+				"5FEDE5F7908CA571"
+				"017B8D1E26A3992E"
+				"63757B60253677CF"
+				"3D4A56309EE1E175"
+				"65A0B894A64A878E"
+				"293D16E291C2E3E9"
+				"465458C42F58883E"
+				"10080BAD20ECA930"
+				"1F0857E5F4C8E85E"
+				"72CE11D7503543A9"
+				"3FDA64883A8F9681"
+			]
+			description: [
+				"{ftbquests.chapter.rare_pokmon.quest302AA9BB1D2219A8.description1}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest302AA9BB1D2219A8.description2}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest302AA9BB1D2219A8.description3}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest302AA9BB1D2219A8.description4}"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: false
+			icon: "cobblemon:master_ball"
+			id: "302AA9BB1D2219A8"
+			size: 2.0d
+			tasks: [{
+				icon: "society:legendary_ink"
+				id: "2A07A81D198CD7AF"
+				stat: "minecraft:play_time"
+				title: "{ftbquests.chapter.rare_pokmon.quest302AA9BB1D2219A8.task.3028574117366126511.title}"
+				type: "stat"
+				value: 1
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest302AA9BB1D2219A8.title}"
+			x: 5.0d
+			y: -25.0d
+		}
+		{
+			description: [""]
+			id: "1C6F513A824DAE33"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1C6F513A824DAE33.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "443C1F1B7EAAA769"
+				poke_ball_used: ""
+				pokemon: "cobblemon:chienpao"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1C6F513A824DAE33.title}"
+			x: -3.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "3FB31EE76423D1B4"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3FB31EE76423D1B4.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "13FB719A9444CF0C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:wochien"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3FB31EE76423D1B4.title}"
+			x: 9.0d
+			y: 14.0d
+		}
+		{
+			description: [""]
+			id: "72A7C88BB579C98D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest72A7C88BB579C98D.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6E663692DCD76699"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ogerpon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest72A7C88BB579C98D.title}"
+			x: 11.0d
+			y: -8.0d
+		}
+		{
+			description: ["{ftbquests.chapter.rare_pokmon.quest33312768E1E4BA1D.description1}"]
+			id: "33312768E1E4BA1D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest33312768E1E4BA1D.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "10EF21C643A8F6EE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:articuno"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest33312768E1E4BA1D.title}"
+			x: -4.0d
+			y: -22.0d
+		}
+		{
+			description: ["{ftbquests.chapter.rare_pokmon.quest322ACE3883EF0B1B.description1}"]
+			id: "322ACE3883EF0B1B"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest322ACE3883EF0B1B.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6E997BE85F937877"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zapdos"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest322ACE3883EF0B1B.title}"
+			x: -2.0d
+			y: -22.0d
+		}
+		{
+			description: ["{ftbquests.chapter.rare_pokmon.quest444BE411AB96960F.description1}"]
+			id: "444BE411AB96960F"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest444BE411AB96960F.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "33C9A60CA25A74F9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:moltres"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest444BE411AB96960F.title}"
+			x: 0.0d
+			y: -22.0d
+		}
+		{
+			description: [""]
+			id: "26AD3C36EA9987B0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest26AD3C36EA9987B0.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2CB1305F46ADF46B"
+				poke_ball_used: ""
+				pokemon: "cobblemon:mewtwo"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest26AD3C36EA9987B0.title}"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			description: [""]
+			id: "237C9725D6792C55"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest237C9725D6792C55.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7C7AEA0E1CE876AA"
+				poke_ball_used: ""
+				pokemon: "cobblemon:regirock"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest237C9725D6792C55.title}"
+			x: 9.0d
+			y: -22.0d
+		}
+		{
+			description: [""]
+			id: "1E0508A8E8FE6814"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1E0508A8E8FE6814.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "093A6A24993DE50E"
+				poke_ball_used: ""
+				pokemon: "cobblemon:regice"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1E0508A8E8FE6814.title}"
+			x: 11.0d
+			y: -22.0d
+		}
+		{
+			description: [""]
+			id: "65F2AB32EFCF4051"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest65F2AB32EFCF4051.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6B6D9D92D763D719"
+				poke_ball_used: ""
+				pokemon: "cobblemon:registeel"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest65F2AB32EFCF4051.title}"
+			x: 13.0d
+			y: -22.0d
+		}
+		{
+			description: [""]
+			id: "582C75B20BE4A328"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest582C75B20BE4A328.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6C314B8C804CE8B9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:kyogre"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest582C75B20BE4A328.title}"
+			x: 3.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "7783E2BC686C0B13"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest7783E2BC686C0B13.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0E5CCEB93C62C5BE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:groudon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest7783E2BC686C0B13.title}"
+			x: 5.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "3B337B0AEB93D2B8"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3B337B0AEB93D2B8.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6B8FB5D0868AE608"
+				poke_ball_used: ""
+				pokemon: "cobblemon:rayquaza"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3B337B0AEB93D2B8.title}"
+			x: 7.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "3A174D139C314784"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3A174D139C314784.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "25B95035B6D7A378"
+				poke_ball_used: ""
+				pokemon: "cobblemon:uxie"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3A174D139C314784.title}"
+			x: -4.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "404206ADF8E6B097"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest404206ADF8E6B097.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2891EDF90024E31C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:mesprit"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest404206ADF8E6B097.title}"
+			x: -2.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "1F0857E5F4C8E85E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1F0857E5F4C8E85E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "151C9B3110FA7EB9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:azelf"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1F0857E5F4C8E85E.title}"
+			x: 0.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "6ADF6AB779D9E96F"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest6ADF6AB779D9E96F.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "28B42D50EF39AA39"
+				poke_ball_used: ""
+				pokemon: "cobblemon:dialga"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6ADF6AB779D9E96F.title}"
+			x: 3.0d
+			y: -18.0d
+		}
+		{
+			description: [""]
+			id: "22B6D097B8DF5F34"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest22B6D097B8DF5F34.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "23673411CC87D02E"
+				poke_ball_used: ""
+				pokemon: "cobblemon:palkia"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest22B6D097B8DF5F34.title}"
+			x: 5.0d
+			y: -18.0d
+		}
+		{
+			description: [""]
+			id: "3D0A1299016A0118"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3D0A1299016A0118.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1DB3A6448D47ABAF"
+				poke_ball_used: ""
+				pokemon: "cobblemon:giratina"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3D0A1299016A0118.title}"
+			x: 7.0d
+			y: -18.0d
+		}
+		{
+			description: [""]
+			id: "7CF60082CA31BE92"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest7CF60082CA31BE92.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3C8B70D5B6BBA998"
+				poke_ball_used: ""
+				pokemon: "cobblemon:tornadus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest7CF60082CA31BE92.title}"
+			x: -4.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "5B02036AA208B3D7"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest5B02036AA208B3D7.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0D5ACF60A3AFA524"
+				poke_ball_used: ""
+				pokemon: "cobblemon:thundurus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5B02036AA208B3D7.title}"
+			x: -2.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "6434E3E25D873D00"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest6434E3E25D873D00.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3C69B55A42316B8C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:landorus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6434E3E25D873D00.title}"
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "5DF36F347032ECD3"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest5DF36F347032ECD3.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0E9E3581F0E2F1DE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:reshiram"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5DF36F347032ECD3.title}"
+			x: 3.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "5C5A08F990320793"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest5C5A08F990320793.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "177E15B691C861E9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zekrom"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5C5A08F990320793.title}"
+			x: 5.0d
+			y: -16.0d
+		}
+		{
+			description: [""]
+			id: "6E1708DFBF799BF1"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest6E1708DFBF799BF1.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6BAF0C4C7760EFEC"
+				poke_ball_used: ""
+				pokemon: "cobblemon:kyurem"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6E1708DFBF799BF1.title}"
+			x: 7.0d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"46D1DABC476BF3E6"
+				"75471B623063A9A6"
+				"3313E6055A9D68C9"
+				"79DD774312E9E054"
+				"4E59F51C1DF1A637"
+				"187BBD71E34984E6"
+				"455BB3288399204D"
+				"09AB8391C585D057"
+				"30B2D021B62C6735"
+				"2152F97C1F6B73AE"
+				"140A63847910E0D5"
+				"59A626ACC353DB15"
+				"0A6B1B2AFBC744C8"
+				"4261E8A7D5174E81"
+				"4DAB5AB60AB3DF1C"
+				"09BA4CE3E0F17C5A"
+				"77EB2CA4A3E02D3D"
+				"399A40142ADC8F40"
+				"13A9F909305BF8CF"
+				"0764E574F4DABF93"
+				"6BA7A0FA9D1106F6"
+				"57BBE9BF4B0DDBD4"
+				"35BDF76CA7B88956"
+			]
+			description: [
+				"{ftbquests.chapter.rare_pokmon.quest2321988BC85088DD.description1}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest2321988BC85088DD.description2}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest2321988BC85088DD.description3}"
+				""
+				"{ftbquests.chapter.rare_pokmon.quest2321988BC85088DD.description4}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			icon: "cobblemon:premier_ball"
+			id: "2321988BC85088DD"
+			size: 2.0d
+			tasks: [{
+				icon: "society:mystic_syrup"
+				id: "70C4CC51855C6E95"
+				stat: "minecraft:play_time"
+				title: "{ftbquests.chapter.rare_pokmon.quest2321988BC85088DD.task.8125844278185062037.title}"
+				type: "stat"
+				value: 1
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest2321988BC85088DD.title}"
+			x: -15.0d
+			y: -25.0d
+		}
+		{
+			description: [""]
+			id: "0A6B1B2AFBC744C8"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.questA6B1B2AFBC744C8.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "72D32CD696834392"
+				poke_ball_used: ""
+				pokemon: "cobblemon:mew"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.questA6B1B2AFBC744C8.title}"
+			x: -19.0d
+			y: -12.0d
+		}
+		{
+			description: [""]
+			id: "13A9F909305BF8CF"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest13A9F909305BF8CF.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "5B1CAFFC0B21CD49"
+				poke_ball_used: ""
+				pokemon: "cobblemon:celebi"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest13A9F909305BF8CF.title}"
+			x: -20.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "4DAB5AB60AB3DF1C"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4DAB5AB60AB3DF1C.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "450E9C352E46D7A1"
+				poke_ball_used: ""
+				pokemon: "cobblemon:jirachi"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4DAB5AB60AB3DF1C.title}"
+			x: -15.0d
+			y: -21.0d
+		}
+		{
+			description: [""]
+			id: "09BA4CE3E0F17C5A"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest9BA4CE3E0F17C5A.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3C3F8CD07EE817BD"
+				poke_ball_used: ""
+				pokemon: "cobblemon:deoxys"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest9BA4CE3E0F17C5A.title}"
+			x: -15.0d
+			y: -12.0d
+		}
+		{
+			description: [""]
+			hide_until_deps_complete: false
+			id: "2152F97C1F6B73AE"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest2152F97C1F6B73AE.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "432154EE1D8E957A"
+				poke_ball_used: ""
+				pokemon: "cobblemon:manaphy"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest2152F97C1F6B73AE.title}"
+			x: -15.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["2152F97C1F6B73AE"]
+			description: [""]
+			id: "46D1DABC476BF3E6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest46D1DABC476BF3E6.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "596A0E3746A7F5E4"
+				poke_ball_used: ""
+				pokemon: "cobblemon:phione"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest46D1DABC476BF3E6.title}"
+			x: -12.0d
+			y: -17.0d
+		}
+		{
+			description: [""]
+			id: "3313E6055A9D68C9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3313E6055A9D68C9.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "41C884921FBD6ABB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:darkrai"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3313E6055A9D68C9.title}"
+			x: -17.0d
+			y: -12.0d
+		}
+		{
+			description: [""]
+			id: "75471B623063A9A6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest75471B623063A9A6.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "68E696F33D9BC9A3"
+				poke_ball_used: ""
+				pokemon: "cobblemon:shaymin"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest75471B623063A9A6.title}"
+			x: -13.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "35BDF76CA7B88956"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2693293867553ECB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:arceus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest35BDF76CA7B88956.title}"
+			x: -9.0d
+			y: -12.0d
+		}
+		{
+			description: [""]
+			id: "79DD774312E9E054"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest79DD774312E9E054.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0EF4C8F2A3AD42BB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:victini"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest79DD774312E9E054.title}"
+			x: -15.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "57BBE9BF4B0DDBD4"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6D1BB3DFB74B2E6F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:keldeo"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest57BBE9BF4B0DDBD4.title}"
+			x: -8.0d
+			y: -19.0d
+		}
+		{
+			description: [""]
+			id: "4261E8A7D5174E81"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4261E8A7D5174E81.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "33128F0C1A5E6C21"
+				poke_ball_used: ""
+				pokemon: "cobblemon:meloetta"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4261E8A7D5174E81.title}"
+			x: -14.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "09AB8391C585D057"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest9AB8391C585D057.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "56C3C9450BCBDC0C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:genesect"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest9AB8391C585D057.title}"
+			x: -19.0d
+			y: -19.0d
+		}
+		{
+			description: [""]
+			id: "187BBD71E34984E6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest187BBD71E34984E6.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "18C350E0255D2A44"
+				poke_ball_used: ""
+				pokemon: "cobblemon:diancie"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest187BBD71E34984E6.title}"
+			x: -17.0d
+			y: -19.0d
+		}
+		{
+			description: [""]
+			id: "0764E574F4DABF93"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest764E574F4DABF93.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "376E777E6F966E31"
+				poke_ball_used: ""
+				pokemon: "cobblemon:hoopa"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest764E574F4DABF93.title}"
+			x: -15.0d
+			y: -19.0d
+		}
+		{
+			description: [""]
+			id: "59A626ACC353DB15"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest59A626ACC353DB15.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "4B297F22BEC82613"
+				poke_ball_used: ""
+				pokemon: "cobblemon:volcanion"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest59A626ACC353DB15.title}"
+			x: -10.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "140A63847910E0D5"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest140A63847910E0D5.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7B967A84C33F96E4"
+				poke_ball_used: ""
+				pokemon: "cobblemon:magearna"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest140A63847910E0D5.title}"
+			x: -18.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "6BA7A0FA9D1106F6"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest6BA7A0FA9D1106F6.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1F9BA6D08B6DCB7B"
+				poke_ball_used: ""
+				pokemon: "cobblemon:marshadow"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6BA7A0FA9D1106F6.title}"
+			x: -12.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "77EB2CA4A3E02D3D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest77EB2CA4A3E02D3D.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "599ECD75F674C7CC"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zeraora"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest77EB2CA4A3E02D3D.title}"
+			x: -16.0d
+			y: -23.0d
+		}
+		{
+			description: [""]
+			id: "455BB3288399204D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest455BB3288399204D.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3A5DD78F57C55EA2"
+				poke_ball_used: ""
+				pokemon: "cobblemon:meltan"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				title: "{ftbquests.chapter.rare_pokmon.quest455BB3288399204D.task.4205754637686759074.title}"
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest455BB3288399204D.title}"
+			x: -13.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["455BB3288399204D"]
+			description: [""]
+			hide_until_deps_complete: false
+			id: "4E59F51C1DF1A637"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4E59F51C1DF1A637.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "64C39A29D02E9873"
+				poke_ball_used: ""
+				pokemon: "cobblemon:melmetal"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4E59F51C1DF1A637.title}"
+			x: -11.0d
+			y: -19.0d
+		}
+		{
+			description: [""]
+			id: "30B2D021B62C6735"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest30B2D021B62C6735.subtitle}"
+			tasks: [{
+				action: "obtain"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "4879A1D5D9FEFE9D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zarude"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest30B2D021B62C6735.title}"
+			x: -17.0d
+			y: -17.0d
+		}
+		{
+			description: [""]
+			id: "399A40142ADC8F40"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest399A40142ADC8F40.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0D80B21C17AE7296"
+				poke_ball_used: ""
+				pokemon: "cobblemon:pecharunt"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest399A40142ADC8F40.title}"
+			x: -11.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "08FF418D50AA50E0"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2492701595DCE3B4"
+				poke_ball_used: ""
+				pokemon: "cobblemon:raikou"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest8FF418D50AA50E0.title}"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "5AC7A1589AB6E7E0"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3D4F00BFC784DAD8"
+				poke_ball_used: ""
+				pokemon: "cobblemon:entei"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5AC7A1589AB6E7E0.title}"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "63757B60253677CF"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "4CF3D7D5E8D06E7A"
+				poke_ball_used: ""
+				pokemon: "cobblemon:suicune"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest63757B60253677CF.title}"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			description: [""]
+			id: "293D16E291C2E3E9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest293D16E291C2E3E9.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "291BD8158E42461D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:lugia"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest293D16E291C2E3E9.title}"
+			x: 4.0d
+			y: -22.0d
+		}
+		{
+			description: [""]
+			id: "2999021D2E50828A"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest2999021D2E50828A.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1A25684637075B5D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:hooh"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest2999021D2E50828A.title}"
+			x: 6.0d
+			y: -22.0d
+		}
+		{
+			description: [""]
+			id: "3D4A56309EE1E175"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3D4A56309EE1E175.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "56EC05BC4C57BAFB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:latias"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3D4A56309EE1E175.title}"
+			x: 10.0d
+			y: -15.0d
+		}
+		{
+			description: [""]
+			id: "465458C42F58883E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest465458C42F58883E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "5C6B950FEE804B90"
+				poke_ball_used: ""
+				pokemon: "cobblemon:latios"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest465458C42F58883E.title}"
+			x: 12.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "3FD53A03E6D9D65F"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3FD53A03E6D9D65F.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2C4C51FDD729A3D4"
+				poke_ball_used: ""
+				pokemon: "cobblemon:heatran"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3FD53A03E6D9D65F.title}"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"237DDF00F56D5D30"
+				"237C9725D6792C55"
+				"1E0508A8E8FE6814"
+				"65F2AB32EFCF4051"
+				"74F234EF490006A2"
+			]
+			description: [""]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "12130DEA8E725997"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest12130DEA8E725997.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "45854A38219C9F56"
+				poke_ball_used: ""
+				pokemon: "cobblemon:regigigas"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest12130DEA8E725997.title}"
+			x: 11.0d
+			y: -18.0d
+		}
+		{
+			dependencies: [
+				"3A174D139C314784"
+				"1F0857E5F4C8E85E"
+				"404206ADF8E6B097"
+			]
+			description: [""]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "690C4EE7C6DBED87"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest690C4EE7C6DBED87.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "69A900B8FBA302FE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:cresselia"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest690C4EE7C6DBED87.title}"
+			x: -2.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "4F67833D18A57835"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4F67833D18A57835.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "34D459FCE23FFB96"
+				poke_ball_used: ""
+				pokemon: "cobblemon:cobalion"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4F67833D18A57835.title}"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "4716D1AEB1AF123E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4716D1AEB1AF123E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "4760AE13E76C291C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:virizion"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4716D1AEB1AF123E.title}"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "511218F87BDB47E3"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest511218F87BDB47E3.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "609698C7129836DB"
+				poke_ball_used: ""
+				pokemon: "cobblemon:terrakion"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest511218F87BDB47E3.title}"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [""]
+			id: "47A1B7188C6C0E16"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest47A1B7188C6C0E16.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "56DF11F047D722E9"
+				poke_ball_used: ""
+				pokemon: "cobblemon:xerneas"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest47A1B7188C6C0E16.title}"
+			x: 4.0d
+			y: -14.0d
+		}
+		{
+			description: [""]
+			id: "59CE1B4B97CD55E8"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest59CE1B4B97CD55E8.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7BFE7BD27BE77ECD"
+				poke_ball_used: ""
+				pokemon: "cobblemon:yveltal"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest59CE1B4B97CD55E8.title}"
+			x: 6.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "21DC364143467701"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest21DC364143467701.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "01376F31BE7AC062"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zygarde"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest21DC364143467701.title}"
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["70053D76E4DA6905"]
+			description: [""]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "069B5BCA35F1FB9A"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest69B5BCA35F1FB9A.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3E35B22CFBD89B6F"
+				poke_ball_used: ""
+				pokemon: "cobblemon:solgaleo"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest69B5BCA35F1FB9A.title}"
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["70053D76E4DA6905"]
+			description: [""]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "7CD7B2B58503E5E1"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest7CD7B2B58503E5E1.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0B5D225AC3571874"
+				poke_ball_used: ""
+				pokemon: "cobblemon:lunala"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest7CD7B2B58503E5E1.title}"
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			description: [""]
+			id: "300A62FAE9A5C16B"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest300A62FAE9A5C16B.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1CC1727D17C5F180"
+				poke_ball_used: ""
+				pokemon: "cobblemon:necrozma"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest300A62FAE9A5C16B.title}"
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "72CE11D7503543A9"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest72CE11D7503543A9.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "10E983AABF6E591C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:typenull"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest72CE11D7503543A9.title}"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"72CE11D7503543A9"
+				"155A8CA7F7CBE10F"
+			]
+			description: [""]
+			id: "1DB8687963B4FA47"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1DB8687963B4FA47.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6166BF411F83A4CE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:silvally"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				title: "{ftbquests.chapter.rare_pokmon.quest1DB8687963B4FA47.task.7018507355725997262.title}"
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1DB8687963B4FA47.title}"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [""]
+			id: "017B8D1E26A3992E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest17B8D1E26A3992E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "5BDCFC12EEA2762C"
+				poke_ball_used: ""
+				pokemon: "cobblemon:cosmog"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest17B8D1E26A3992E.title}"
+			x: 5.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["017B8D1E26A3992E"]
+			description: [""]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "70053D76E4DA6905"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest70053D76E4DA6905.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "4E8188ED2EA27AB7"
+				poke_ball_used: ""
+				pokemon: "cobblemon:cosmoem"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest70053D76E4DA6905.title}"
+			x: 5.0d
+			y: -10.0d
+		}
+		{
+			description: [""]
+			id: "1100E84A0DEB866E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1100E84A0DEB866E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7CF92F4AD886C5DF"
+				poke_ball_used: ""
+				pokemon: "cobblemon:tapukoko"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1100E84A0DEB866E.title}"
+			x: 12.0d
+			y: -12.0d
+		}
+		{
+			description: [""]
+			id: "0DE67C52EB82CF9E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.questDE67C52EB82CF9E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "73113A5AB8685845"
+				poke_ball_used: ""
+				pokemon: "cobblemon:tapufini"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.questDE67C52EB82CF9E.title}"
+			x: 10.0d
+			y: -10.0d
+		}
+		{
+			description: [""]
+			id: "5F5FBD6D85C98EE0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest5F5FBD6D85C98EE0.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "45BE86251D5C5B41"
+				poke_ball_used: ""
+				pokemon: "cobblemon:tapubulu"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5F5FBD6D85C98EE0.title}"
+			x: 12.0d
+			y: -10.0d
+		}
+		{
+			description: [""]
+			id: "6C211E4CDA3A4362"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest6C211E4CDA3A4362.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "10E90EA878EA6B3D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:tapulele"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6C211E4CDA3A4362.title}"
+			x: 10.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "10080BAD20ECA930"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest10080BAD20ECA930.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "323ECD41ADECB340"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zacian"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest10080BAD20ECA930.title}"
+			x: 11.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "3A0CC3BC3ACCD847"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3A0CC3BC3ACCD847.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "057377ABFEE25237"
+				poke_ball_used: ""
+				pokemon: "cobblemon:zamazenta"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3A0CC3BC3ACCD847.title}"
+			x: 13.0d
+			y: 11.0d
+		}
+		{
+			description: [""]
+			id: "16A265D611E1A200"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest16A265D611E1A200.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "55E179255D809EDE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:eternatus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest16A265D611E1A200.title}"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			description: [""]
+			id: "237DDF00F56D5D30"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest237DDF00F56D5D30.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "26561EF69824F8A4"
+				poke_ball_used: ""
+				pokemon: "cobblemon:regieleki"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest237DDF00F56D5D30.title}"
+			x: 10.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "74F234EF490006A2"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest74F234EF490006A2.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6F5FC43C1503FFA2"
+				poke_ball_used: ""
+				pokemon: "cobblemon:regidrago"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest74F234EF490006A2.title}"
+			x: 12.0d
+			y: -20.0d
+		}
+		{
+			description: [""]
+			id: "39E05E31E342B400"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest39E05E31E342B400.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "11AA5E3583373CAA"
+				poke_ball_used: ""
+				pokemon: "cobblemon:calyrex"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest39E05E31E342B400.title}"
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			description: [""]
+			id: "08800F1153A12FA5"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest8800F1153A12FA5.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6E3AAF7B8C46AF28"
+				poke_ball_used: ""
+				pokemon: "cobblemon:glastrier"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest8800F1153A12FA5.title}"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			description: [""]
+			id: "606DAB6837BB5F96"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest606DAB6837BB5F96.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "782143A40B3B6A36"
+				poke_ball_used: ""
+				pokemon: "cobblemon:spectrier"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest606DAB6837BB5F96.title}"
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "019B0829BC7B711D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest19B0829BC7B711D.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "520FBD0C93722FA1"
+				poke_ball_used: ""
+				pokemon: "cobblemon:enamorus"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest19B0829BC7B711D.title}"
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			description: [""]
+			id: "5466D94C92226436"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest5466D94C92226436.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3B0162F412B20083"
+				poke_ball_used: ""
+				pokemon: "cobblemon:kubfu"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5466D94C92226436.title}"
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5466D94C92226436"]
+			description: [""]
+			hide_until_deps_complete: false
+			id: "2EC9CFEC5B6BE653"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest2EC9CFEC5B6BE653.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "310FE1A0407712E8"
+				poke_ball_used: ""
+				pokemon: "cobblemon:urshifu"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest2EC9CFEC5B6BE653.title}"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5466D94C92226436"]
+			description: [""]
+			hide_until_deps_complete: false
+			id: "5FEDE5F7908CA571"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest5FEDE5F7908CA571.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "091DB39401AFA8DF"
+				poke_ball_used: ""
+				pokemon: "cobblemon:urshifurs"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5FEDE5F7908CA571.title}"
+			x: -4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "242F129C3C3DAD3D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest242F129C3C3DAD3D.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "54BDDE1DE1713F42"
+				poke_ball_used: ""
+				pokemon: "cobblemon:terapagos"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest242F129C3C3DAD3D.title}"
+			x: 5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "13F18C6036700BA7"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest13F18C6036700BA7.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "443524C3E6ABA598"
+				poke_ball_used: ""
+				pokemon: "cobblemon:koraidon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest13F18C6036700BA7.title}"
+			x: 1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "65A0B894A64A878E"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest65A0B894A64A878E.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1229C28A33AF7293"
+				poke_ball_used: ""
+				pokemon: "cobblemon:miraidon"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest65A0B894A64A878E.title}"
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "3FDA64883A8F9681"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest3FDA64883A8F9681.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0B908D9D6253E6AE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:okidogi"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3FDA64883A8F9681.title}"
+			x: 9.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "520A32661462602C"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest520A32661462602C.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "2A7A65FD82F44B69"
+				poke_ball_used: ""
+				pokemon: "cobblemon:munkidori"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest520A32661462602C.title}"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "1A7AF9AF189DF96F"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1A7AF9AF189DF96F.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "1AEE51447E2B7580"
+				poke_ball_used: ""
+				pokemon: "cobblemon:fezandipiti"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1A7AF9AF189DF96F.title}"
+			x: 13.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			id: "4072967234D0EEEE"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "4D37B2B9152DD6F7"
+				poke_ball_used: ""
+				pokemon: "cobblemon:brutebonnet"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4072967234D0EEEE.title}"
+			x: 33.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			id: "23CD26D984004126"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "785C97E10D2A3024"
+				poke_ball_used: ""
+				pokemon: "cobblemon:greattusk"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest23CD26D984004126.title}"
+			x: 35.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			id: "218747DA6825532A"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "40CF5D22F1E0F691"
+				poke_ball_used: ""
+				pokemon: "cobblemon:irontreads"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest218747DA6825532A.title}"
+			x: 38.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			id: "5381445CCB6A2430"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "674DB468C9406DC1"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironjugulis"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5381445CCB6A2430.title}"
+			x: 36.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "074AC296F1CC06DE"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "774093F819113ACA"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironboulder"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest74AC296F1CC06DE.title}"
+			x: 30.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "3C04065F64DEC2A2"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6EEB7D740271C258"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironcrown"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3C04065F64DEC2A2.title}"
+			x: 32.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			id: "3493E9B6B38F2182"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "59EFD24813228919"
+				poke_ball_used: ""
+				pokemon: "cobblemon:ironhands"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3493E9B6B38F2182.title}"
+			x: 34.0d
+			y: -13.0d
+		}
+		{
+			description: [""]
+			hide_dependency_lines: false
+			id: "0EBCCA3706A180E0"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.questEBCCA3706A180E0.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "394F6A5E9BC58634"
+				poke_ball_used: ""
+				pokemon: "cobblemon:celesteela"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.questEBCCA3706A180E0.title}"
+			x: 27.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "04F219DF9F2B8A72"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4F219DF9F2B8A72.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "5ACE5132CABF5752"
+				poke_ball_used: ""
+				pokemon: "cobblemon:pheromosa"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4F219DF9F2B8A72.title}"
+			x: 29.0d
+			y: -21.0d
+		}
+		{
+			description: [""]
+			id: "27095A5816F58B81"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest27095A5816F58B81.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "6EA75BEA936854BD"
+				poke_ball_used: ""
+				pokemon: "cobblemon:poipole"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest27095A5816F58B81.title}"
+			x: 21.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["27095A5816F58B81"]
+			description: [""]
+			hide_until_deps_complete: false
+			id: "1862834CE4AA333D"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest1862834CE4AA333D.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0A2A99F610165F32"
+				poke_ball_used: ""
+				pokemon: "cobblemon:naganadel"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1862834CE4AA333D.title}"
+			x: 23.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "4C9CE98D2374BC52"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest4C9CE98D2374BC52.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "49647D0033F9B2AE"
+				poke_ball_used: ""
+				pokemon: "cobblemon:stakataka"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest4C9CE98D2374BC52.title}"
+			x: 31.0d
+			y: -21.0d
+		}
+		{
+			description: [""]
+			icon: {
+				Count: 1
+				id: "cobblemon:pokemon_model"
+				tag: {
+					species: "cobblemon:chiyu"
+				}
+			}
+			id: "57323D1D7796E99F"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest57323D1D7796E99F.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "7940361AAAAD785D"
+				poke_ball_used: ""
+				pokemon: "cobblemon:chiyu"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				title: "{ftbquests.chapter.rare_pokmon.quest57323D1D7796E99F.task.8737042765259307101.title}"
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest57323D1D7796E99F.title}"
+			x: -1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["155A8CA7F7CBE10F"]
+			description: [""]
+			id: "31C7D687A7AF3DEB"
+			shape: "none"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.rare_pokmon.quest31C7D687A7AF3DEB.subtitle}"
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "157C032C5A22CF72"
+				poke_ball_used: ""
+				pokemon: "cobblemon:tinglu"
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 13.0d
+			y: 14.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "155A8CA7F7CBE10F"
+			invisible_until_tasks: 10
+			secret: true
+			tasks: [{
+				id: "1CB7F8333950CAA3"
+				title: "{ftbquests.chapter.rare_pokmon.quest155A8CA7F7CBE10F.task.2069395452688648867.title}"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3826487E2543A33B"
+				"7EC15D896B795460"
+				"5D2FB5338784FD0B"
+				"1920C4E333D8453E"
+				"37D5C48E1F91D032"
+				"5955FF0072B773DA"
+				"6356A478D02B423D"
+				"5A947F33B5B3E07F"
+				"44178BB1F85EFAD4"
+				"3004C2F56F50709E"
+			]
+			description: ["{ftbquests.chapter.rare_pokmon.quest70EFA2B98DB2B40E.description1}"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: false
+			icon: "cobbledex:cobbledex_item"
+			id: "70EFA2B98DB2B40E"
+			size: 2.0d
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "1892676745D815CC"
+				title: "{ftbquests.chapter.rare_pokmon.quest70EFA2B98DB2B40E.task.1770591296761107916.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest70EFA2B98DB2B40E.title}"
+			x: 5.0d
+			y: -30.0d
+		}
+		{
+			id: "5D2FB5338784FD0B"
+			rewards: [{
+				id: "4055DBA208EFECE7"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "1BD62CDB01B278C1"
+				title: "{ftbquests.chapter.rare_pokmon.quest5D2FB5338784FD0B.task.2005840003178068161.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5D2FB5338784FD0B.title}"
+			x: 2.0d
+			y: -33.5d
+		}
+		{
+			id: "37D5C48E1F91D032"
+			rewards: [{
+				id: "5C78D9796AF833A0"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "2CB226B492705C9E"
+				title: "{ftbquests.chapter.rare_pokmon.quest37D5C48E1F91D032.task.3220679240516131998.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest37D5C48E1F91D032.title}"
+			x: 3.5d
+			y: -33.5d
+		}
+		{
+			id: "5955FF0072B773DA"
+			rewards: [{
+				id: "2258A553CD616B08"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "2EEEB2A0F540E4FE"
+				title: "{ftbquests.chapter.rare_pokmon.quest5955FF0072B773DA.task.3381836774581003518.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5955FF0072B773DA.title}"
+			x: 5.0d
+			y: -33.5d
+		}
+		{
+			id: "44178BB1F85EFAD4"
+			rewards: [{
+				id: "5F557CA9C1A0D01B"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "7603D18357819813"
+				title: "{ftbquests.chapter.rare_pokmon.quest44178BB1F85EFAD4.task.8503870883444660243.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest44178BB1F85EFAD4.title}"
+			x: 6.5d
+			y: -33.5d
+		}
+		{
+			id: "5A947F33B5B3E07F"
+			rewards: [{
+				count: 2
+				id: "2A738368B06EAC43"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "7EB0A6694F3D16F4"
+				title: "{ftbquests.chapter.rare_pokmon.quest5A947F33B5B3E07F.task.9128979415911175924.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest5A947F33B5B3E07F.title}"
+			x: 8.0d
+			y: -33.5d
+		}
+		{
+			id: "3826487E2543A33B"
+			rewards: [{
+				id: "0C0BB5BEE59241B6"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "074F044F7BE24903"
+				title: "{ftbquests.chapter.rare_pokmon.quest3826487E2543A33B.task.526644420852992259.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3826487E2543A33B.title}"
+			x: 2.0d
+			y: -32.0d
+		}
+		{
+			id: "3004C2F56F50709E"
+			rewards: [{
+				id: "7FEE8CB0DAAEB9A3"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "22372AE22C9D62A1"
+				title: "{ftbquests.chapter.rare_pokmon.quest3004C2F56F50709E.task.2465486471908123297.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest3004C2F56F50709E.title}"
+			x: 3.5d
+			y: -32.0d
+		}
+		{
+			id: "1920C4E333D8453E"
+			rewards: [{
+				id: "711FCDC955142085"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "6785E3DBC9808F04"
+				title: "{ftbquests.chapter.rare_pokmon.quest1920C4E333D8453E.task.7459618890927083268.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest1920C4E333D8453E.title}"
+			x: 5.0d
+			y: -32.0d
+		}
+		{
+			id: "6356A478D02B423D"
+			rewards: [
+				{
+					id: "15BD63EC6433F12E"
+					item: "sunlit_cobblemon:sunlit_league_medallion"
+					type: "item"
+				}
+				{
+					id: "458E4C83F1A155F8"
+					item: {
+						Count: 1
+						id: "sunlit_cobblemon:mystery_gift"
+						tag: {
+							ot: "Chakyl"
+							pokemon: "jirachi"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "7BD891AD1A379236"
+				title: "{ftbquests.chapter.rare_pokmon.quest6356A478D02B423D.task.8924042834289857078.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest6356A478D02B423D.title}"
+			x: 6.5d
+			y: -32.0d
+		}
+		{
+			id: "7EC15D896B795460"
+			rewards: [{
+				id: "6F0BE2DEF9C2C320"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "cobbledex:cobbledex_item"
+				id: "4BC25FA411DA4D9A"
+				title: "{ftbquests.chapter.rare_pokmon.quest7EC15D896B795460.task.5459030856605257114.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.rare_pokmon.quest7EC15D896B795460.title}"
+			x: 8.0d
+			y: -32.0d
+		}
+	]
+	title: "{ftbquests.chapter.rare_pokmon.title}"
+}

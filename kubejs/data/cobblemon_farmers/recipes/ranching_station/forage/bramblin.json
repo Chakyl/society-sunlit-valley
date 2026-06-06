@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "bramblin",
+	"forages": [
+		{
+			"item": "atmospheric:yucca_fruit",
+			"count": 3,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 4
+		},
+		{
+			"item": "botania:livingwood_twig",
+			"count": 1,
+			"chance": 0.35,
+			"min_hearts": 8
+		}
+	]
+}

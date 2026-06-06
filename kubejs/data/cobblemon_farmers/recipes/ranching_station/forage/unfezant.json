@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "unfezant",
+	"forages": [
+		{
+			"item": "minecraft:wheat",
+			"count": 4,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "cobblemon:genius_feather",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		}
+	]
+}

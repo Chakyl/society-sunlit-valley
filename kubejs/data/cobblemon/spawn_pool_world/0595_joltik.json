@@ -1,0 +1,69 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "joltik-1",
+            "pokemon": "joltik",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "7-32",
+            "weight": 5.4,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "isThundering": true
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_jungle"
+                ],
+                "timeRange": "night"
+            }
+        },
+        {
+            "id": "joltik-2",
+            "pokemon": "joltik",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "34-57",
+            "weight": 0.9,
+            "condition": {
+                "biomes": [
+                    "society:desert_caves",
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "joltik-3",
+            "pokemon": "joltik",
+            "presets": [
+                "webs",
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-32",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7
+            }
+        }
+    ]
+}

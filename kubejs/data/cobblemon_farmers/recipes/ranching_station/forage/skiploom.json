@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "skiploom",
+	"forages": [
+		{
+			"item": "atmospheric:yellow_blossoms",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "buzzier_bees:four_leaf_clover",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 8
+		}
+	]
+}

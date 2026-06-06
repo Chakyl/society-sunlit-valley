@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "ariados",
+	"forages": [
+		{
+			"item": "crittersandcompanions:silk",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:spider_silk",
+			"count": 1,
+			"chance": 0.8,
+			"min_hearts": 5
+		},
+		{
+			"item": "crittersandcompanions:silk_cocoon",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 10
+		}
+	]
+}

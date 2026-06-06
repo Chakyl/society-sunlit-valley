@@ -1,0 +1,95 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:max_ether",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:rare_candy"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:max_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "rctmod:level_range",
+              "range": {
+                "min": 70,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:pp_max"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:exp_candy_m",
+          "conditions": [
+            {
+              "condition": "rctmod:level_range",
+              "range": {
+                "min": 36,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:exp_candy_l",
+          "conditions": [
+            {
+              "condition": "rctmod:level_range",
+              "range": {
+                "min": 50,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:full_restore",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/epic/medicine"
+}

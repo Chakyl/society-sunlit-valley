@@ -77,6 +77,17 @@
         "value": 100
       }
     },
+    "cobblemon_farmers:worker_cap": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:armor_pierce": {
       "enabled": false,
       "min": {
@@ -1221,11 +1232,11 @@
         "value": 100
       }
     },
-    "elixirum:generic.anima_resistance": {
+    "cobblemon_farmers:workers_assigned": {
       "enabled": false,
       "min": {
-        "default": -1024,
-        "value": -1024
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 1024,
@@ -2165,6 +2176,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "cobble_workers:worker_cap": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell_type_chain_lightning": {
@@ -3201,6 +3223,17 @@
         "value": 100
       }
     },
+    "cobble_workers:workers_assigned": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/healing_circle": {
       "enabled": false,
       "min": {
@@ -3575,6 +3608,17 @@
         "value": 100
       }
     },
+    "cobblemon_farmers:worker_permits": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1019,
+        "value": 1019
+      }
+    },
     "elixirum:generic.fortuna_mastery": {
       "enabled": false,
       "min": {
@@ -3727,6 +3771,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "cobblemon_farmers:public_contracts": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:spell_type_counterspell": {

@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "clamperl",
+	"forages": [
+		{
+			"item": "crabbersdelight:pearl",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:sunlit_pearl",
+			"count": 1,
+			"chance": 0.03,
+			"min_hearts": 10
+		}
+	]
+}

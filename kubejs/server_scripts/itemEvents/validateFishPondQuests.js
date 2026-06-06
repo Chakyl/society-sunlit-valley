@@ -20,7 +20,7 @@ ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
   const { player } = e;
   let generatePriceWikiTable = false;
   let generatePondTable = false;
-  let generatePrizeMachineTable = true;
+  let generatePrizeMachineTable = false;
   player.server.persistentData.pigraceInProgress = false;
   global.fishPondDefinitions.forEach((fish) => {
     fish.quests.forEach((quest) => {
@@ -51,34 +51,34 @@ ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
     });
   }
   if (generatePriceWikiTable) {
-    // player.tell("Quests validated.");
-    // player.tell(`{| class="wikitable sortable"`);
-    // player.tell("|-");
-    // player.tell("! Name !! ID !! Price !! Type");
-    // player.tell("|-");
-    // Array.from(global.trades.keys()).forEach((element) => {
-    //   let tradeData = global.trades.get(element);
-    //   if (!element.includes("splendid_slimes"))
-    //     player.tell(Item.of(element).displayName);
-    //   else {
-    //     let type = element.substring(element.lastIndexOf(":") + 1);
-    //     if (element.includes("plort")) {
-    //       player.tell(`Plort: ${type} `);
-    //     } else {
-    //       player.tell(`Slime Heart: ${type}`);
-    //     }
-    //   }
-    //   player.tell(
-    //     ` || ${
-    //       element.includes("plort")
-    //         ? "splendid_slimes:plort"
-    //         : element.includes("slime_heart")
-    //         ? "splendid_slimes:slime_heart"
-    //         : element
-    //     } || ${tradeData.value} || ${multiplierToNatural(tradeData.multiplier)}`
-    //   );
-    //   player.tell("|-");
-    // });
+    player.tell("Quests validated.");
+    player.tell(`{| class="wikitable sortable"`);
+    player.tell("|-");
+    player.tell("! Name !! ID !! Price !! Type");
+    player.tell("|-");
+    Array.from(global.trades.keys()).forEach((element) => {
+      let tradeData = global.trades.get(element);
+      if (!element.includes("splendid_slimes"))
+        player.tell(Item.of(element).displayName);
+      else {
+        let type = element.substring(element.lastIndexOf(":") + 1);
+        if (element.includes("plort")) {
+          player.tell(`Plort: ${type} `);
+        } else {
+          player.tell(`Slime Heart: ${type}`);
+        }
+      }
+      player.tell(
+        ` || ${
+          element.includes("plort")
+            ? "splendid_slimes:plort"
+            : element.includes("slime_heart")
+            ? "splendid_slimes:slime_heart"
+            : element
+        } || ${tradeData.value} || ${multiplierToNatural(tradeData.multiplier)}`
+      );
+      player.tell("|-");
+    });
   }
   if (generatePondTable) {
     // player.tell("Quests validated.");

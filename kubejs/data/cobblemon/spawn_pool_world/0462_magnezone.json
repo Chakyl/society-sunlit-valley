@@ -1,0 +1,71 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "magnezone-1",
+            "pokemon": "magnezone",
+            "presets": [
+                "redstone"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "42-54",
+            "weight": 0.1,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
+            }
+        },
+        {
+            "id": "magnezone-2",
+            "pokemon": "magnezone",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "42-54",
+            "weight": 1.0,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "isThundering": true
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:lightning_rod"
+                ]
+            }
+        },
+        {
+            "id": "magnezone-3",
+            "pokemon": "magnezone",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "52-84",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#society:is_skull_cavern"
+                ]
+            }
+        }
+    ]
+}

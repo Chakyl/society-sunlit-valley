@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:elixir"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:revive"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:full_heal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:heal_powder"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:pp_up"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:superb_remedy",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "rctmod:level_range",
+              "range": {
+                "min": 38,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:revival_herb"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/rare/medicine"
+}

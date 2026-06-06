@@ -1,0 +1,35 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "panpour-1",
+            "pokemon": "panpour",
+            "presets": [
+                "natural",
+                "treetop",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "7-32",
+            "weight": 8.4,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#atmospheric:is_rainforest",
+                    "#cobblemon:is_tropical_island"
+                ]
+            }
+        }
+    ]
+}

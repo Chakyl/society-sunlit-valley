@@ -1,0 +1,58 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "glimmet-1",
+      "pokemon": "glimmet",
+      "presets": ["natural", "gemstones"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "10-35",
+      "weight": 9.0,
+      "condition": {
+        "minSkyLight": 0,
+        "maxSkyLight": 7,
+        "biomes": ["#cobblemon:is_overworld"]
+      }
+    },
+    {
+      "id": "glimmet-2",
+      "pokemon": "glimmet",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "10-35",
+      "weight": 1.8,
+      "condition": {
+        "biomes": ["#cobblemon:nether/is_quartz"]
+      }
+    },
+    {
+      "id": "glimmet-2",
+      "pokemon": "glimmet",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "20-35",
+      "weight": 1.8,
+      "condition": {
+        "biomes": ["society:umbra_barrens"]
+      }
+    },
+    {
+      "id": "glimmet-3",
+      "pokemon": "glimmet",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "10-35",
+      "weight": 9.0,
+      "condition": {
+        "biomes": ["the_bumblezone:crystal_canyon", "biomesoplenty:crystalline_chasm"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "ironmoth-1",
+      "pokemon": "ironmoth",
+      "presets": ["future_tech"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "50-70",
+      "weight": 0.2,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_hills"],
+        "timeRange": "day"
+      }
+    },
+    {
+      "id": "ironmoth-2",
+      "pokemon": "ironmoth",
+      "presets": ["future_tech"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 4.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": ["#cobblemon:is_desert"],
+        "timeRange": "day"
+      }
+    }
+  ]
+}

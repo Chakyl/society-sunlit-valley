@@ -1,0 +1,1338 @@
+{
+	autofocus_id: "063B238596D407D9"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ic__cobblemon"
+	group: "13003519EF914BA5"
+	icon: "cobblemon:poke_ball"
+	id: "0831A4AABC2726FF"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest68588C07B2EFCA55.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest68588C07B2EFCA55.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest68588C07B2EFCA55.description3}"
+			]
+			icon: "cobblemon:poke_ball"
+			id: "68588C07B2EFCA55"
+			min_required_tasks: 1
+			rewards: [{
+				id: "529A8930886FFBCC"
+				item: "cobblemon:premier_ball"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					action: "select_starter"
+					amount: 1L
+					biome: ""
+					dimension: ""
+					form: ""
+					gender: ""
+					id: "63D21B7129414E77"
+					poke_ball_used: ""
+					pokemon: ""
+					pokemon_type: ""
+					region: ""
+					shiny: false
+					time_max: 24000L
+					time_min: 0L
+					title: "{ftbquests.chapter.ic__cobblemon.quest68588C07B2EFCA55.task.7192841727701503607.title}"
+					type: "cobblemon_tasks:cobblemon_task"
+				}
+				{
+					id: "7594E9C9693EBE05"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "cobblemon:berries"
+						}
+					}
+					title: "{ftbquests.chapter.ic__cobblemon.quest68588C07B2EFCA55.task.8472653850254163461.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.ic__cobblemon.quest68588C07B2EFCA55.title}"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["68588C07B2EFCA55"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest32CD8E2368E6B4BD.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest32CD8E2368E6B4BD.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest32CD8E2368E6B4BD.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest32CD8E2368E6B4BD.description4}"
+			]
+			icon: "refurbished_furniture:red_grill"
+			id: "32CD8E2368E6B4BD"
+			rewards: [{
+				id: "1810A5C4ECC43B73"
+				item: {
+					Count: 1
+					id: "vinery:winemaker_apron"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B65EEA537FDC7B8"
+				title: "{ftbquests.chapter.ic__cobblemon.quest32CD8E2368E6B4BD.task.4280089414261917624.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest32CD8E2368E6B4BD.title}"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7D2F9E3B2518309C"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest63B238596D407D9.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest63B238596D407D9.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest63B238596D407D9.description3}"
+				""
+				""
+				"[\"\",{\"underlined\":true,\"translate\":\"ftbquests.chapter.ic__cobblemon.quest63B238596D407D9.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"201D4A576453FB99\"}}]"
+			]
+			icon: "wildernature:leveling_contract"
+			id: "063B238596D407D9"
+			rewards: [{
+				count: 5
+				id: "274C0E4CEE4D2B04"
+				item: "cobblemon:poke_ball"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				action: "defeat"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3305EE1606BE69A8"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest63B238596D407D9.title}"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["68588C07B2EFCA55"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest7D2F9E3B2518309C.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest7D2F9E3B2518309C.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest7D2F9E3B2518309C.description3}"
+			]
+			id: "7D2F9E3B2518309C"
+			rewards: [{
+				count: 5
+				id: "37660875E00EE680"
+				item: "cobblemon:poke_ball"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "meadow:camera"
+				id: "765084CC9EDC4516"
+				observe_type: 5
+				timer: 0L
+				title: "{ftbquests.chapter.ic__cobblemon.quest7D2F9E3B2518309C.task.8525460108985779478.title}"
+				to_observe: "cobblemon:pokemon"
+				type: "observation"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest7D2F9E3B2518309C.title}"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["60A705547AE0B95E"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description2}"
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description3}"
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description4}"
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description5}"
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description6}"
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description7}"
+				"{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.description8}"
+			]
+			id: "75DDF6E50DAD20F0"
+			rewards: [{
+				id: "514023641B7EAEB3"
+				item: "cobblemon:exp_candy_l"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FC310EB8E266FB0"
+				item: "cobblemon_farmers:craft_station"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest75DDF6E50DAD20F0.title}"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.questCA84740D7922353.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.questCA84740D7922353.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.questCA84740D7922353.description3}"
+			]
+			icon: "numismatics:crown"
+			id: "0CA84740D7922353"
+			rewards: [{
+				id: "16A4A43E0FA2454A"
+				item: "whimsy_deco:red_phone"
+				type: "item"
+			}]
+			tasks: [{
+				action: "level_up"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "41A8E292506B697D"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.questCA84740D7922353.title}"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["68588C07B2EFCA55"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest75C2C4761B35739F.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest75C2C4761B35739F.description2}"
+			]
+			icon: "cobblemon:rawst_berry"
+			id: "75C2C4761B35739F"
+			rewards: [{
+				id: "725660CCAFF70F09"
+				item: "sunlit_cobblemon:berry_capsule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F4095EFE6223194"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cobblemon:berries"
+					}
+				}
+				title: "{ftbquests.chapter.ic__cobblemon.quest75C2C4761B35739F.task.3404886175882817940.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest75C2C4761B35739F.title}"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["60A705547AE0B95E"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest3A51DD86507A83F7.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3A51DD86507A83F7.description2}"
+				"{ftbquests.chapter.ic__cobblemon.quest3A51DD86507A83F7.description3}"
+				"{ftbquests.chapter.ic__cobblemon.quest3A51DD86507A83F7.description4}"
+				"{ftbquests.chapter.ic__cobblemon.quest3A51DD86507A83F7.description5}"
+			]
+			id: "3A51DD86507A83F7"
+			rewards: [
+				{
+					count: 8
+					id: "471D648534419938"
+					item: "cobblemon:surprise_mulch"
+					type: "item"
+				}
+				{
+					id: "7B32600259915356"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:iron_barrel"
+						tag: {
+							woodType: "spruce"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62BCE68786BC236E"
+					item: "sophisticatedstorage:magnet_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "142977AD5F543BF8"
+				item: "cobblemon_farmers:mystery_mine"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest49B1EE5FD231CF30.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest49B1EE5FD231CF30.description2}"
+				"[\"\",{\"underlined\":true,\"translate\":\"ftbquests.chapter.ic__cobblemon.quest49B1EE5FD231CF30.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30F339B9F7D920A6\"}}]"
+			]
+			id: "49B1EE5FD231CF30"
+			rewards: [{
+				id: "7F268B709AFFF569"
+				item: "cobblemon:exp_candy_m"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CBA18A33C63555D"
+				item: "cobblemon:healing_machine"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest49B1EE5FD231CF30.title}"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest43B535325E3201AE.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest43B535325E3201AE.description2}"
+				"[\"\",{\"underlined\":true,\"translate\":\"ftbquests.chapter.ic__cobblemon.quest43B535325E3201AE.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"50C5F52359BCCD70\"}}]"
+			]
+			id: "43B535325E3201AE"
+			rewards: [{
+				count: 4
+				id: "37056D0D6FE912DA"
+				item: "cobblemon:exp_candy_xs"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2ADD36A58B2BE67E"
+				item: "cobblemon:pc"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0CA84740D7922353"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest375BD349F42BAC72.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest375BD349F42BAC72.description2}"
+			]
+			icon: "cobblemon:helix_fossil"
+			id: "375BD349F42BAC72"
+			rewards: [{
+				id: "2D725D12EA66F0EE"
+				item: "cobblemon:relic_coin_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DDC3374B53CB3CC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cobblemon:fossils"
+					}
+				}
+				title: "{ftbquests.chapter.ic__cobblemon.quest375BD349F42BAC72.task.5610415812146672588.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest375BD349F42BAC72.title}"
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["375BD349F42BAC72"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest2C65A2C19293943D.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest2C65A2C19293943D.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest2C65A2C19293943D.description3}"
+			]
+			icon: "cobblemon:restoration_tank"
+			id: "2C65A2C19293943D"
+			rewards: [
+				{
+					count: 8
+					id: "7B52A2D5FF761DCE"
+					item: "cobblemon:ancient_ultra_ball"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C12FAD457B85BC1"
+					table_id: 3615002042349613622L
+					type: "choice"
+				}
+			]
+			tasks: [
+				{
+					id: "28D2D4B0B4B283B8"
+					item: "cobblemon:fossil_analyzer"
+					type: "item"
+				}
+				{
+					id: "72D07F585D503001"
+					item: "cobblemon:monitor"
+					type: "item"
+				}
+				{
+					id: "5D1583D097B69DB9"
+					item: "cobblemon:restoration_tank"
+					type: "item"
+				}
+				{
+					action: "revive_fossil"
+					amount: 1L
+					biome: ""
+					dimension: ""
+					form: ""
+					gender: ""
+					id: "0A5DE473E11F80AD"
+					poke_ball_used: ""
+					pokemon: ""
+					pokemon_type: ""
+					region: ""
+					shiny: false
+					time_max: 24000L
+					time_min: 0L
+					type: "cobblemon_tasks:cobblemon_task"
+				}
+			]
+			title: "{ftbquests.chapter.ic__cobblemon.quest2C65A2C19293943D.title}"
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest621A320263EE43C2.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest621A320263EE43C2.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest621A320263EE43C2.description3}"
+			]
+			icon: "cobblemon:potion"
+			id: "621A320263EE43C2"
+			rewards: [{
+				count: 4
+				id: "7692647C10E52287"
+				item: "cobblemon:super_potion"
+				type: "item"
+			}]
+			tasks: [{
+				id: "585B05F710FB7CAE"
+				title: "{ftbquests.chapter.ic__cobblemon.quest621A320263EE43C2.task.6366689056918305966.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest621A320263EE43C2.title}"
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0CA84740D7922353"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest60A705547AE0B95E.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest60A705547AE0B95E.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest60A705547AE0B95E.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "etcetera:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "60A705547AE0B95E"
+			rewards: [{
+				id: "4BE89F7DFBDC4B55"
+				item: "cobblemon:exp_candy_s"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				action: "catch"
+				amount: 4L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "79A8F9DFBA8764B7"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest60A705547AE0B95E.title}"
+			x: 10.660714285714285d
+			y: -0.4999999999999929d
+		}
+		{
+			dependencies: ["60A705547AE0B95E"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description3}"
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description4}"
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description5}"
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description6}"
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description7}"
+				"{ftbquests.chapter.ic__cobblemon.quest3BD199B4A938437F.description8}"
+			]
+			id: "3BD199B4A938437F"
+			rewards: [{
+				id: "0AC8CC3C76630721"
+				item: "cobblemon:exp_candy_l"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59B1B96B2056F1D8"
+				item: "cobblemon_farmers:gardening_station"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["60A705547AE0B95E"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest12A48976D7B8F138.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest12A48976D7B8F138.description2}"
+			]
+			icon: "cobblemon:rare_candy"
+			id: "12A48976D7B8F138"
+			rewards: [{
+				count: 3
+				id: "5AD4A31F4C051F6B"
+				item: "cobblemon:exp_candy_m"
+				type: "item"
+			}]
+			tasks: [{
+				action: "level_up"
+				amount: 5L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "0A02B5F9FE5B0454"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest12A48976D7B8F138.title}"
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["75C2C4761B35739F"]
+			description: ["{ftbquests.chapter.ic__cobblemon.quest3A5238FBDCD86BD6.description1}"]
+			icon: "cobblemon:figy_berry"
+			id: "3A5238FBDCD86BD6"
+			rewards: [{
+				id: "70F4B6912E53365A"
+				item: "sunlit_cobblemon:berry_capsule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36BE15127E7362E9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cobblemon_farmers:uncommon_berries"
+					}
+				}
+				title: "{ftbquests.chapter.ic__cobblemon.quest3A5238FBDCD86BD6.task.3944613492798218985.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest3A5238FBDCD86BD6.title}"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["063B238596D407D9"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.questCA36182D78C1214.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.questCA36182D78C1214.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.questCA36182D78C1214.description3}"
+			]
+			id: "0CA36182D78C1214"
+			rewards: [{
+				id: "2BD97E9EC30CD822"
+				item: "cobblemon:relic_coin_pouch"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "twigs:twig"
+				id: "1ACAD6973ECFAD65"
+				stage: "trainer_lvl_1"
+				title: "{ftbquests.chapter.ic__cobblemon.questCA36182D78C1214.task.1930591335363882341.title}"
+				type: "gamestage"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.questCA36182D78C1214.title}"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["12A48976D7B8F138"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description4}"
+			]
+			icon: "cobblemon:power_bracer"
+			id: "43DCB8601B40FB9A"
+			rewards: [{
+				id: "2D912A7DB11FBA62"
+				item: "sunlit_cobblemon:pofflet_box"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "576B5C9F27004180"
+				item: "sunlit_cobblemon:trainer_podium"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.title}"
+			x: 19.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12A48976D7B8F138"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest62276614C16063B7.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest62276614C16063B7.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest62276614C16063B7.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest62276614C16063B7.description4}"
+			]
+			icon: "cobblemon:power_herb"
+			id: "62276614C16063B7"
+			rewards: [{
+				id: "5C3AC1D8AEF1F193"
+				item: "cobblemon:exp_candy_m"
+				type: "item"
+			}]
+			tasks: [{
+				id: "733F7407DEED58D2"
+				title: "{ftbquests.chapter.ic__cobblemon.quest62276614C16063B7.task.8304483815048173778.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest62276614C16063B7.title}"
+			x: 17.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["62276614C16063B7"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest127DAB9080BE7D68.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest127DAB9080BE7D68.description2}"
+			]
+			icon: "cobblemon:calcium"
+			id: "127DAB9080BE7D68"
+			rewards: [{
+				id: "55A6CA33AD3E514F"
+				item: "cobblemon:calcium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "047E11663200DE0C"
+				title: "{ftbquests.chapter.ic__cobblemon.quest127DAB9080BE7D68.task.323715353840508428.title}"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["127DAB9080BE7D68"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest7B0A1FE4BD8D89B8.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest7B0A1FE4BD8D89B8.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest7B0A1FE4BD8D89B8.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest7B0A1FE4BD8D89B8.description4}"
+			]
+			icon: "cobblemon:power_anklet"
+			id: "7B0A1FE4BD8D89B8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4AB4A9D7CFD7D9A5"
+					table_id: 6275220200599318285L
+					type: "choice"
+				}
+				{
+					id: "72AFF5830BFC1078"
+					item: "cobblemon:fresh_start_mochi"
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest7B0A1FE4BD8D89B8.subtitle}"
+			tasks: [{
+				id: "7E017CAC2944CB2F"
+				title: "{ftbquests.chapter.ic__cobblemon.quest7B0A1FE4BD8D89B8.task.9079675402624224047.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest7B0A1FE4BD8D89B8.title}"
+			x: 18.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["127DAB9080BE7D68"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest4AA0BB45D0A6782F.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4AA0BB45D0A6782F.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4AA0BB45D0A6782F.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4AA0BB45D0A6782F.description4}"
+			]
+			icon: "minecraft:turtle_egg"
+			id: "4AA0BB45D0A6782F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "274749690F52EC14"
+					table_id: 6979018325962330524L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D8C154402E037D2"
+					table_id: 6979018325962330524L
+					type: "choice"
+				}
+			]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest4AA0BB45D0A6782F.subtitle}"
+			tasks: [{
+				id: "7B00E8F0BB4D5E9B"
+				title: "{ftbquests.chapter.ic__cobblemon.quest4AA0BB45D0A6782F.task.8863340187297341083.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest4AA0BB45D0A6782F.title}"
+			x: 19.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75DDF6E50DAD20F0"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest63B9101CAACBF5AE.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest63B9101CAACBF5AE.description2}"
+			]
+			id: "63B9101CAACBF5AE"
+			rewards: [{
+				count: 4
+				id: "660291E1B1F2FD06"
+				item: "sunlit_cobblemon:hyper_berry_smoothie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6389FCC8EF2461C7"
+				item: "sunlit_cobblemon:berry_smoothie"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest63B9101CAACBF5AE.title}"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["539CA5F135AA627D"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest2A029AD9B654F48.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest2A029AD9B654F48.description2}"
+			]
+			id: "02A029AD9B654F48"
+			rewards: [{
+				id: "7EE27A68EFEF1D55"
+				item: "sunlit_cobblemon:cosmic_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "614293D1324352C7"
+				item: "sunlit_cobblemon:cosmic_dust"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["02A029AD9B654F48"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest5E5313D628E28251.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5E5313D628E28251.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5E5313D628E28251.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "5E5313D628E28251"
+			rewards: [{
+				id: "5B0834853099F142"
+				item: "cobblemon:beast_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "207FCC23945F9F21"
+				item: "sunlit_cobblemon:wormhole_generator"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest5E5313D628E28251.title}"
+			x: 23.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0CA84740D7922353"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest4F8153DD174CECBF.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4F8153DD174CECBF.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4F8153DD174CECBF.description3}"
+			]
+			id: "4F8153DD174CECBF"
+			rewards: [{
+				id: "5A266E0E40E68980"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "sunlit_cobblemon:sun_raid_statue"
+				id: "072766131781F876"
+				observe_type: 0
+				timer: 0L
+				title: "{ftbquests.chapter.ic__cobblemon.quest4F8153DD174CECBF.task.515492914542016630.title}"
+				to_observe: "sunlit_cobblemon:sun_raid_statue"
+				type: "observation"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F8153DD174CECBF"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest612E6552C11E7D9B.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest612E6552C11E7D9B.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest612E6552C11E7D9B.description3}"
+			]
+			id: "612E6552C11E7D9B"
+			rewards: [{
+				count: 8
+				id: "78CF154181D02631"
+				item: "sunlit_cobblemon:sun_drops"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54F1C621AA11E45D"
+				item: "sunlit_cobblemon:sun_drops"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest612E6552C11E7D9B.title}"
+			x: 11.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["612E6552C11E7D9B"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest6366052B4FD5F516.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest6366052B4FD5F516.description2}"
+			]
+			id: "6366052B4FD5F516"
+			rewards: [{
+				id: "04B11C5FA9636495"
+				item: "sunlit_cobblemon:sun_raid_statue"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73AEA813FED217B5"
+				item: "sunlit_cobblemon:mystica_branch"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6366052B4FD5F516"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest227824A991F8325C.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest227824A991F8325C.description2}"
+			]
+			id: "227824A991F8325C"
+			rewards: [{
+				count: 3
+				id: "453E506DF0CDAF0B"
+				item: "sunlit_cobblemon:mystica_cookie"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest227824A991F8325C.subtitle}"
+			tasks: [{
+				id: "414E14ACC6191063"
+				item: "sunlit_cobblemon:mystica_cookie"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6366052B4FD5F516"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest179E6CCD0172DEE3.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest179E6CCD0172DEE3.description2}"
+			]
+			id: "179E6CCD0172DEE3"
+			rewards: [{
+				id: "68CF641BED88C6BA"
+				item: "sunlit_cobblemon:mystica_branch"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest179E6CCD0172DEE3.subtitle}"
+			tasks: [{
+				id: "33DF37C893C81988"
+				item: "sunlit_cobblemon:sun_essence"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["43DCB8601B40FB9A"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.description3}"
+			]
+			id: "539CA5F135AA627D"
+			rewards: [{
+				id: "1D74F3A546FEA876"
+				item: "unimplemented_items:bottle_cap"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.subtitle}"
+			tasks: [{
+				id: "74A5B42D4BC73403"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.title}"
+			x: 21.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["539CA5F135AA627D"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest7B184B7096AC9BD8.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest7B184B7096AC9BD8.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest7B184B7096AC9BD8.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "cobblemon:pokemon_model"
+				tag: {
+					aspects: [ ]
+					species: "cobblemon:xerneas"
+				}
+			}
+			id: "7B184B7096AC9BD8"
+			min_required_tasks: 1
+			rewards: [{
+				id: "56E1F9BB08669E08"
+				item: "cobblemon:master_ball"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest7B184B7096AC9BD8.subtitle}"
+			tasks: [
+				{
+					id: "4BE66C3803EE3FBC"
+					item: "sunlit_cobblemon:blooming_ring"
+					type: "item"
+				}
+				{
+					id: "2A6FED6856128264"
+					item: "sunlit_cobblemon:cornucopia_of_greed"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.ic__cobblemon.quest7B184B7096AC9BD8.title}"
+			x: 24.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"12A48976D7B8F138"
+				"2B6877708A709B5C"
+			]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest5DCA4E4E712454CA.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5DCA4E4E712454CA.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5DCA4E4E712454CA.description3}"
+			]
+			id: "5DCA4E4E712454CA"
+			rewards: [{
+				id: "77DE9610CF2EC259"
+				item: {
+					Count: 1
+					id: "sunlit_cobblemon:poke_radar"
+					tag: {
+						rarity: "ultra-rare"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A3A4E657A05B41D"
+				item: {
+					Count: 1
+					id: "sunlit_cobblemon:poke_radar"
+					tag: {
+						rarity: "ultra-rare"
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest5DCA4E4E712454CA.title}"
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3BD199B4A938437F"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest42C6D7A0CA188636.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest42C6D7A0CA188636.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest42C6D7A0CA188636.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest42C6D7A0CA188636.description4}"
+			]
+			id: "42C6D7A0CA188636"
+			rewards: [
+				{
+					count: 4
+					id: "6BA0179C116F5BC9"
+					item: "cobblemon:great_ball"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "705366EC134FA56D"
+					item: "sunlit_cobblemon:plain_pofflet"
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest42C6D7A0CA188636.subtitle}"
+			tasks: [{
+				id: "348E1BE98BD19ABD"
+				item: "cobblemon_farmers:ranching_station"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["42C6D7A0CA188636"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest771360679927C8E7.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest771360679927C8E7.description2}"
+				"{ftbquests.chapter.ic__cobblemon.quest771360679927C8E7.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest771360679927C8E7.description4}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest771360679927C8E7.description5}"
+			]
+			icon: "society:face_note"
+			id: "771360679927C8E7"
+			rewards: [
+				{
+					id: "54BB486C831D52E0"
+					item: "cobblemon:hp_up"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BFF4D92CF675DC8"
+					table_id: 9162295297604142301L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "0F5467557E3C38C4"
+				title: "{ftbquests.chapter.ic__cobblemon.quest771360679927C8E7.task.1104621425500371140.title}"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"43B535325E3201AE"
+				"68F841C646C9F9E1"
+			]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest2A7540BBB7D13AFD.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest2A7540BBB7D13AFD.description2}"
+			]
+			id: "2A7540BBB7D13AFD"
+			rewards: [{
+				id: "2E1907004D4AA560"
+				item: "cobblemon:exp_candy_l"
+				type: "item"
+			}]
+			tasks: [{
+				id: "17B2FDE3D8AE7F4A"
+				item: "sunlit_cobblemon:pocket_pc"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"68F841C646C9F9E1"
+				"539CA5F135AA627D"
+			]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest41E167BF05E599AA.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest41E167BF05E599AA.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest41E167BF05E599AA.description3}"
+			]
+			id: "41E167BF05E599AA"
+			rewards: [{
+				id: "2331EF9E21267C4C"
+				item: "cobblemon:destiny_knot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47B926E027A7AB4E"
+				item: "cobblemon:pasture"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest41E167BF05E599AA.title}"
+			x: 22.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7B184B7096AC9BD8"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description4}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description5}"
+			]
+			icon: "sunlit_cobblemon:fire_pledge"
+			id: "5172D7410B79BC65"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72B6BBC625586265"
+				table_id: 2454335040232007403L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "1B2564EA6B87ABD0"
+				title: "{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.task.1956080571151526864.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.title}"
+			x: 26.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3BD199B4A938437F"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.questB74FF8930C18079.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.questB74FF8930C18079.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.questB74FF8930C18079.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.questB74FF8930C18079.description4}"
+			]
+			id: "0B74FF8930C18079"
+			rewards: [{
+				id: "74F3DDDD67D778BE"
+				item: "cobblemon_farmers:public_contract"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.questB74FF8930C18079.subtitle}"
+			tasks: [{
+				id: "4334296B52791FB7"
+				item: "cobblemon_farmers:public_contract"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.questB74FF8930C18079.title}"
+			x: 14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7B184B7096AC9BD8"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest68FCFC96B97D66A3.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest68FCFC96B97D66A3.description2}"
+			]
+			id: "68FCFC96B97D66A3"
+			rewards: [{
+				id: "45032ADA380CCFAF"
+				item: "cobblemon_farmers:worker_permit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C9F7C7118196DEB"
+				item: "cobblemon_farmers:worker_permit"
+				type: "item"
+			}]
+			x: 25.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B184B7096AC9BD8"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest2F3C5A12C91B07A9.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest2F3C5A12C91B07A9.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest2F3C5A12C91B07A9.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest2F3C5A12C91B07A9.description4}"
+			]
+			id: "2F3C5A12C91B07A9"
+			rewards: [{
+				id: "3799F8CBCC3D077C"
+				item: "sunlit_cobblemon:mystery_gift"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21BDE9602553E6C8"
+				item: "sunlit_cobblemon:mystery_gift"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0CA36182D78C1214"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest16BE1E8CB0C1AC35.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest16BE1E8CB0C1AC35.description2}"
+			]
+			icon: "snowyspirit:glow_lights_prismatic"
+			id: "16BE1E8CB0C1AC35"
+			invisible: true
+			rewards: [{
+				count: 4
+				id: "7ADEFE931FC6F165"
+				item: "cobblemon:cherish_ball"
+				type: "item"
+			}]
+			tasks: [{
+				action: "catch"
+				amount: 1L
+				biome: ""
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "358619736AFA04C6"
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: true
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest16BE1E8CB0C1AC35.title}"
+			x: 8.5d
+			y: 2.5d
+		}
+	]
+	title: "{ftbquests.chapter.ic__cobblemon.title}"
+}

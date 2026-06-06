@@ -1,261 +1,216 @@
 ^^^
-## The Heart of the Community
-### v4.0.9
+## Sunlit Cobblemon
+### v1.0.8-SSV4.0.9
 ^^^
 --- 
-# 4.0.9
-- Fixed serene seasons config syncing (Thanks Hexagreen)
-- Fixed potential crash involving coin leaderboards 
-- Fixed potential crashes involving blocks that scan for other blocks 
-- Fixed potential crash with Skull Cavern regeneration
-- Fixed fish pond quest selection (Thanks Redd)
-## 4.0.0
-- Added new NPC mechanics to completely replace the previous villager system
-- Added 6 handmade villagers with art by NifastGreentail and Nitbe
-- Added Invitations, sold by the Carpenter villager (craftable invitation)
-- Added Mastery, a final tier of skill once all trees are completed
-- Added Sparkpods, Mystic Willow Saplings (formerly Willow sapling) to Farming Mastery
-- Added Mystic Syrup from Mystic Willow trees 
-- Added Treasure Totem and Bubble Totem from Mystic Syrup
-- Added Recycled Core and Statue of the Moon Gnome to Mining Mastery
-- Added Sunlit Crystal and Animal Cracker to Husbandry Mastery
-- Added Roe Recycler, Needle Bobber, and Net Bobber to Fishing Mastery
-- Added Domestic Innovation and moved enchanting to Adventuring Mastery
-- Added Mastery Skill Books: The Quality of the Earth, Pond House Five, The Red and the Black, and Women Who Run With the Plushies. Moved The Spark Only Rises to Mining Mastery unlock.
-- Added new art for items Minerals, Preserves, Artifacts, and so much more by NifastGreentail
-- Added new art for Growth Obelisk, Supreme Mayo, and Prize Machine by Nitbe
-- Added new quest book art by NifastGreentail
-- Added Mood system for husbandry animals that tracks how well you are taking care of them and impacts their production
-- Added greenhouses for every building set, built largely by Kanlamari, with work by EeveeBeby, Duy Luong, and Howester84
-- Added new Tudor by Kanlamari respectively, each containing some existing pieces of the previous basic set
-- Updated Siberian and Basic sets to EeveeBeby's Revamped look
-- Updated Entrana set to Kanlamari's Revamped look
-- Added Wine Keg - Artisan Machine for making wines without the need for juice
-- Added Mushroom Log - Artisan Machine for growing mushrooms
-- Added new texture for Dragontooth Axe by Artty
-- Added Oil Maker and rebalanced Truffle Oil accordingly
-- Added Oil and Coconut Oil
-- Added Pickling Can
-- Added Mossberry & Mossberry Stew
-- Added Cranberry crop
-- Added Gray Anatomy upgrade
-- Added Spinel gem
-- Added normal Skill Book Alias Moss
-- Added artifacts Green Tea Honeycomb and Giant Bandolier belt
-- Added Ripper Tooth functionality - Threatens the fish in a Fish Pond into changing their active quest
-- Added back the ability to insert into Fish Ponds. Hot Hands and Mitosis now only work on pond-born fish
-- Added Auto-Trader
-- Added Fredbear plushies by Altessa
-- Added Chimera plushie by witchd
-- Added full value calculations to items when holding shift
-- Added Mana Fruit crop and reworked parts of Botania Progression around it
-- Added Wines: Violet Moon, Sparkling Le Roy, Laputa Franc, and Mana King
-- Added society:sellable tag for easy JEI/EMI searching
-- Added tags for each of the product types for easy JEI/EMI searching
-- Added value for Honey Blob
-- Added recipe for Tree Fertilizer
-- Added Fish Pond drops to Cod and Salmon
-- Added Turtle, Bat, and Shima Enaga as husbandry animals
-- Added Schematiccannon and associated items back with exploit fixer
-- Added Credits & Wiki link to the pause screen in the place of unusable vanilla buttons
-- Added Iridium Clock
-- Added Prismatic Shard Block
-- Added back Fluid Grid
-- Added Sun Candy
-- Added Rainbow Oak
-- Added Auto-Petter
-- Added timeline
-- Added Mystic Jelly for automating Nether and Ocean Jelly
-- Added 3 worldgen structures by Patchy: Woodcutter, Blacksmith, and Horse Stables
-- Added 5 worldgen structures by witchd: Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse
-- Added more advancements
-- Added configuration for different product types to make the game harder or easier 
-- Artisan Hoppers will now only insert into multi-input machine if it has all inputs (e.g Seed Makers will always be given 3 crops)
-- Ancient Goddess Statue now trades ones a day
-- Farmland no longer turns into dirt when not watered at 6am
-- Changed recipe of Grapevine Stems/Lattices to use treated logs
-- Changed recipe for Auto Tapper, Brass, and Fluid Mechanisms to be more fitting/less frustrating
-- Cheese is now an Artisan Product (from Farmer Product)
-- Farm animals no longer produce twice as much at max affection
-- Minty Slimes now eat Tubabacco, Orby Slimes now eat Dehydrated Products
-- Reworked unlockable shops. Master Cultivator trades are added to Market after 1 year of playtime. Mystical Botanist (now Wizard) unlocked after visiting the Nether. Exotic Trader (now trader) unlocked after visiting the Skull Cavern
-- Reworked Artisan Machine, Fish Pond, and Plushie code to be more performant with blockstates
-- Reworked Fermentation to be Advanced Wine Keg (and increased cost)
-- Reworked Frosted Tip Exotic Trader trade (Dirty Chai -> Frozen Tear)
-- Reworked Pink Matter upgrade to use Dragon Scales and upped Plort Ripping chance
-- Bookseller now no longer sells books you've already read
-- Reworked Crafts room bundles
-- Ribbit Hut now works at 7am (from 8am)
-- Magic Shears now output quality based on affection
-- Moved Birch log tapping to Mushroom Log
-- Increased value of Botania mushrooms (12 -> 24)
-- Increased cost of Gaia ingot
-- Increased Oak Resin tapping time (3->5)
-- Increased bar size of Lava Fishing Rod by 12
-- Increased weight of Fortress Grouper (1 -> 3)
-- Increased Husbandry skill tree experience scaling
-- Increased valued of Large Eggs (16->32), Duck Eggs (32->48).
-- Increased Sniffer/Frostbiter Artifact shard drops by 1.5x
-- Increased Panda, Red Panda, Squirrel, Deer, Frog, and Cochineal Drops by 2/1/8/3/4/2&4
-- Increased longwing flower eating chance 4% -> 8%
-- Increased value of Pine Tar and Oak Resin (48->128)
-- Rebalanced Plort values
-- Rebalanced husbandry as a whole to not be insanely better than other money makers (see below)
-- Rebalanced the way sugar quality scales
-- Reduced cost of Lava Fishing Rod 98,304 ->73,728
-- Reduced cost of Seed Maker (3 gold blocks -> 1)
-- Reduced cost of Crystalarium (5 lead blocks -> 2)
-- Reduced cost of Mechanical Extruder (4 lead blocks -> 2)
-- Reduced cost of all Smithing Templates past gold by half
-- Reduced cost of Deluxe Barns (20->10 iridium coins)
-- Reduced Gem Seller and Gem Tycoon mult (1.5x -> 1.25x, 2x -> 1.5x)
-- Reduced all Pantry & Blacksmith bundles to one item per task
-- Reduced amount of required tasks for Adventurer's and Mineralogist's Bundle 
-- Reduced cost of Vault 83,968 -> 51,200
-- Reduced cost of Dehydrator 73,728 -> 36864
-- Reduced cost of Gadget Core and hammer cores by half
-- Reduced cost of Workbench by half
-- Reduced chance of rain/thunder/snow in Autumn/winter
-- Reduced grain -> feed conversion rate
-- Reduced difficulty of Fish Tank by selecting more common fish for bundles
-- Reduced Caper Catcher (5 -> 3) and Caviar Catcher (5->2) roe amounts
-- Reduced affection increases and decreases by half (excluding candied animal feed)
-- Reduced value of Large Turkey Egg (128 -> 96), Penguin Egg (192 -> 128), and Flamingo Egg (384 -> 256) 
-- Reduced value of Amethyst Milk 144 -> 80
-- Reduced mult of Mayo and Cheese (4 -> 2)
-- Reduced Ancient Goddess Statue Sparkstone trade (16 sparkstone blocks -> 64 sparkstone)
-  Reduced milk size of lots of Veggiesdelight recipes (lg -> sm)
-- Reduced food values for certain juices
-- Reduced mult of mayonnaise machine (8x -> 4x)
-- Reduced Moth Pollen to Organic Mash recycling recipe (16 -> 4)
-- Reduced Spindlefish Sparkstone population requirement 10 -> 6
-- Reduced value of Sparkstone 64 -> 16
-- Reduced value of Sap (20 -> 4)
-- Reduced Century Egg fermentation time (6->1.5 hours)
-- Reduced fertilizer required for Iridium quality crops (Pristine -> Hyper) 
-- Removed Pickaxe cost from Pickarang
-- Removed Tom's Simple Storage
-- Removed Gold Ring
-- Removed max affection doubling forage drops
-- Removed quality preserving from Artisan Cheese Press
-- Removed Holy Locket, Midnight Robe, and Infinity Ham
-- Removed Demon Herring's Galaxy Sword quest due to unfortunate incidents
-- Renamed Vinery Lattices to Grapevine Lattice
-- Renamed Grape Bushes to wild grapes and disabled their growth
-- Various fixes that make the changelog too long to render
 
-## 4.0.1-4.0.4
--  Changelog got too long so removed
+## 1.0.0-SSV4.0.6
+- Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
+- Added Craft station, a block that allows Pokemon to craft specific items depending on their type
+  - Fire - Smelts items and smokes fish like a Fish Smoker 
+  - Fighting: Chops saplings into logs
+  - Poison - Pickles vegetables
+  - Electric: Charges batteries
+  - Psychic: Crafts Poké Genes
+  - Ice - Grows Crystals like a Crystalarium
+  - Bug - Craft potions from smoothies
+  - Steel - Crushes ores into raw form
+- Added Gardening station, a block that allows Pokemon to interact with the world
+  - Grass - Grow crops
+  - Water - Waters soil
+  - Flying - Harvests berries
+  - Dark - Defeats wild pokemon
+  - Normal - Ranches pokemon in Ranching Stations
+  - Fairy - Magic shears pokemon in Ranching Stations
+- Added Mystery Mine, a block that Pokemon can enter when provided with berries to retrieve certain items
+  - Ground - Sifts for archaeology drops
+  - Rock - Mines ores
+  - Dragon - Finds gems and valuables
+  - Ghost - Ritualistically summons mob drops
+- Added Ranching Station a block that any Pokemon can work at and be ranched with mechanics similar to Sunlit Valley's husbandry mechanics
+- Added 481 unique ranches for different Pokemon species'
+- Added Poke Mart and Ball Botique shops
+- Added Sun Raid statues to worldgen for spawning Sun Raid Pokemon
+- Added Sun Offering shop to trade Sun Raid drops for powerful/useful items 
+- Added Trainer tiers progression system
+- Added Trainer Podium - a block that lets you create your own gym and battle trainers at Diamond tier 
+- Added League Bosses every 15 wins to the Trainer Podium
+- Added Sunlit League Medallions given from League Bosses that can be exchanged for rare items
+- Added Poke Bobbers for fishing up Pokemon with Sunlit mechanics
+- Added Pofflets, a cooked item for increasing Pokemon happiness (alongside Pofflet Boxes)
+- Added loot poke balls to many structures and the Skull Cavern
+- Added Mon Boxes to Skull Cavern. They are Boxes of Mons
+- Added 7 Cobblemon specific skill books
+- Added cobblemon specific worldgen structures
+- Added Poke Radar, an item with similar properties to the Fish Radar for viewing nearby Pokemon
+- Added Pocket PC for accessing PC remotely
+- Added Wormhole Generator and Cosmic Dust for summoning Ultra-Beasts
+- Added Moon ritual for Cosmog/Cosmem/Lunala/Solego
+- Added Gem box for summoning regis and added regigigas
+- Added Cornucopia of Greed for summoning Yveltal and Blooming Ring for summoning Xerneas sun battles
+- Added Ominous Black Stake for summoning treasures of ruin and added Chi-Yu
+- Added Rainbow Steam for attracting legendary genies
+- Added Mystica Nectar for attracting legendary birds and added galarian variants
+- Added Swampy Mystica Branch for attracting lake spirits and added cresselia
+- Added Mystica Cookie, Sun Essence, and Sun Mirror for modifying Sun raid statues
+- Added Mystery Gifts
+- Added Gachamon Capusle 
+- Added Berry Capsule
+- Added TM packs
+- Added Cobblemon specific recipes to a bunch of aritsan machines
+- Added Cobblemon specific artisan products
+- Added Silph Scope, a required item for spawning Pokemon nearby
+- Added Smoothies that can be crafted by Bug type Pokmeon into potions
+- Added Ranching drops for specific Pokemon
+- Added tooltips to Pokemon eggs
+- Added unique spawns to Skull Cavern and touched up many spawn pools
+- Backported 1.21.1 Cobblemon Pokemon, bringing the release total for 1.0 to 982
+- Backported Candy and Mochi items for the latest versions of Cobblemon
+- Backported Evo stone blocks
+- Backported evo items (Metal Alloy, Syrupy Apple, Shell Helmet, etc)
+- Backported move animations (Thanks MrFreezy™!)
 
-## 4.0.5
-- Added day count to crop Jade and other important info (Thanks Hexagreen)
-- Added recipes to pre-fertilize dirt
-- Added recipes to convert up Sophisticated Stack/tier upgrades
-- Added society:fish_pond_water tag for kelp counting as water
-- Added obsidian as a path block
-- Added ability to silk touch Herbalbrews dried tea leaves
-- Added ability to rename Shipping Bins (Thanks Mayhan)
-- Added bulk Mana Feed conversion recipe
-- Added ability for ATMs, Phones, and Lootr chests to be interacted with in claims
-- Added subSeasonDuration to kubejs/startup_scripts/config.js. This allows year 2 to be synced if it's changed in serene season's config.
-- Updated es_es translation (Thanks tukita83)
-- Updated ko_kr translation (Thanks Hexagreen)
-- Updated zh_cn translation (Thanks Thirace446)
-- Updated Steam and Rails, adding more decorative blocks and paint system
-- Beef Wellington now accepts beef, shockingly
-- Magic Shears now shear Minisheep
-- Aero Mono population 7 quest changed Heavy Core -> 16 Dream Catcher
-- Increased experience gained from petting 10 * affection -> 20 * affection with a floor of 10
-- Dried tea can now be silk touched to harvest
-- Removed Timeline (morning popup) due to general issues keeping it in sync (may return at some point)
-- Removed mood check for BFF skill
-- Re-Added Pale Oak boats due to crash fix
-- Mood Scanner now shows animal mood/affection UI
-- Villager quests will also check if you invited the villager, in case you use the invitation faster than the quest is counted
-- Sheep now lose affection from witnessing a ritual sacrifice
-- Prevented waterframes blocks from being used in contraption due to crash
-- Fixed several inaccuracies in quest book, farmer's almanac, and tooltips
-- Fixed Magnifying Glass not showing updated range of Auto-Petter
-- Fixed bundle causing non-stackable items
-- Fixed Iridium Clock having incorrect range 
-- Fixed Cherry Saplings not being unlocked with universal methods of farming
-- Fixed Brine and Punishment not working with Pickled Eggs
-- Fixed Artisan Hoppers consuming less items with Wine Kegs
-- Fixed Blacksmith's home having bubble spot
-- Fixed Amethyst Milk and Grain Milk not draining with Create
-- Fixed bonemeal working on certain things
-- Fixed Sommelier trait not working properly with Oil Maker and Loom recipes
-- Fixed Car Keys not working when renamed
-- Fixed Orange Pine leaves not having the leaf tag
-- Fixed Sparkpods not benefiting from extra drops
-- Fixed regular cows not working when plushiefied
-- Fixed Blazing Flask not having sell value
-- Fixed villager home/skull cavern teleporter not working outside of overworld
-- Fixed several barns not having correct/any Feeding Troughs
-- Fixed breeding not giving husbandry experience
-- Fixed Auto-Petter making it so mood never updates
-- Fixed day checker not working correctly, causing a variety of weird bugs
-- Fixed so many typos
-- Fixed exploits
+## 1.0.7-SSV4.0.8
+- Fixed trainer podium related crash
+- Fixed serene seasons config syncing (experimental)
+- Fixed potential crash involving coin leaderboards (experimental)
+- Fixed poison type pickling recipes not matching pickling can
+- Fixed errors with tree harvesting
+- Fixed Ursaluna Blood Moon not spawning from sun raid statues
 
-## 4.0.6
-- Updated zh_cn translation (Thanks Thirace446 & yizhouuu!)
-- Added ability to pause Auto-Trader with a redstone signal
-- Added bulk silver -> electrum mana conversion recipe
-- Leaf Litter now needs shears to collect because I hate it and the way it fills up your inventory
-- Temporarily removed Advanced Pump Upgrade due to bugs
-- Cleaned up getting started quests and made some quests have unlocked visibility to reduce info overload
-- Changed ink liquid recipe to use ink sacs 
-- Player home blocks can be removed in creative no matter who placed it
-- Fixed shipping bin renaming bugging out on servers
-- Fixed Immortal spawning in the overworld forever and ever sorry for the jumpscares
-- Fixed edge case where Juice inserter was spamming logs
-- Fixed recipes of new Classic Pipes items
-- Fixed some inaccuracies in Fish Finder/Farmer's Almanac/Quests
-- Fixed errors with Juice Inserter
-- Fixed some Sherds having duplicate tooltips
-- Fixed cluttered logs not having the stripped log tag
-- Fixed Aging Cask Broken clock not having rounded up display in jade/right click
-- Fixed strawberries having vegetable tag for real this time
-- Fixed exploits
+## 1.0.6-SSV4.0.8
+- Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)
+- Added ability for CobbleDex to register Pokemon as caught when right clicking your own Pokemon (for cases where it doesn't happen automatically, like Mystery Gifts
+- Added ability to toggle Surprise Pokemon (ore/crop pokemon) by left clicking Silph Scope
+- Added Sunlit League Medallions as rewards every 10% of the dex caught
+- Added ssc_general format to /showdown challenge
+- Added additional item drop streak rewards to trainer podium that start at 20 wins in a row
+- Increased box count to cover complete dex (1000 total)
+- Increased Sunlit League Medallion drop counts on subsequent streak wins (max 5 total)
+- Ended Trainer May's rein of terror over tier 75
+- Pokemart now sells 5 different labeled Mystery Gifts rather than one random gift
+- Swapped Cobblemon's Ability Patch for Unimplemented Items' so Hidden Abilities can be removed (with conversion recipe)
+- Reduced trainer podium and Sunlit League boss difficulty by 1 tier
+- Removed Sunlit League Medallion cost from Mystery Gifts
+- Removed Onix and Steelix from surprise ore pool due to their lack of will to live
+- Removed Tera blast and Hidden Power from tm/tr pool due to being non-functional
+- Reworked tier 100 to not be full of minmaxed default RCT mod monsters
+- Tweaked type gems mined by Mystery Mine to be spread out and fixed certain ones being missing
+- Testing Artisan Hopper behavior change to prevent levelchunk crashes
+- Fixed certain biome tags not existing (especially for regional evos like galar bias koffing)
+- Fixed podium Tier 75 only having Trainer May
+- Fixed Sunlit League rules not applying
+- Fixed Fighting types fighting Crabapple trees dropping Apricon Logs
+- Fixed Smeargle not being ranchable
+- Fixed Flabebe line not producing ranching drops
+- Fixed Hisuian starter pledge chances
 
-## 4.0.7
-- Reworked hunger mechanics: Slimes will lose half their hunger at 6am every morning so they can be fed once a day 
-- Added proper largo sucking and shooting with the Slime Vac
-- Added ability for Slime Vac to shoot items from inventory without having to put in offhand
-- Added rendering of incubating slime to Slime Incubator
-- Added Slime Incubator incubation time to Jade
-- Added item capability to Slime Incubators (can insert slime hearts in via hopper)
-- Added ability for redstone signal to pause all Splendid Slimes machines
-- Added sell values to some random items
-- Added _config.js option for chat color functionality
-- Added Controller support
-- Added Smooth Salt Block it as a carpenter trade
-- Added default settings for JourneyMap and Controllable. These will only take effect on new instances unless the following files are manually deleted by the user.
-- Added RS Grid from Crafting Grid
-- Added creative mode plushie debugging functionality to Etcetera Wrench (right click mob)
+## 1.0.5-SSV4.0.8 
+- Added 2 random TRs per day sold at the ball botique
+- Added Quick Claw -> Razor Claw transmutation and vice versa
+- Added Trader trades for Chipped Pot and Masterpiece Teacups
+- Added daily limits to Gachamon capsules
+- Added more dimensional entity trainers
+- Added trainer podium streak upgrade cap to 100
+- Tweaked surprise pokemon sound to not be a jumpscare
+- Tweaked battle reward algorithm to not be insane at 50+ wins
+- Fixed severe Tyrogue crash
+- Fixed Gardening station having wrong aoe radius in GUI
+- Fixed Dark type pokemon in Gardening station having double the radius
+- Fixed AoE radius not being set to 0 when worker removed
+- Fixed Ranching Station gui berry text (how did I miss that)
+
+## 1.0.4-SSV4.0.7
+- Added sounds and particles to shiny Pokemon
+- Added notification when nearby shiny Pokemon spawns (configurable)
+- Added TM/TRs to some loot tables
+- Added tooltips to the left hand side of ranching station screen for clarity
 - Added Pack Icon
-- Auto-Grabbers will now wait half a day for the farmer to pet animals before harvesting low-quality products
-- Updated es_es translation (Thanks tukita83)
-- Increased tick rate of Slime Feeder to 80
-- Hid Auto-Petter from JEI/Quests to make it clear its a special bonus item
-- Improved performance of artisan machines 
-- Jade will now display Splendid Slime wild status next to happiness instead of replacing it
-- Fixed Raw Lead and Silver blocks not having smelting recipe
-- Fixed Artisan Hoppers inserting double into Wine Kegs 
-- Fixed Splendid Slime's Owner being null on servers
-- Fixed Slime feeders taking double items
-- Fixed config synching of slime owner offline check and enable tarrs being switched
-- Fixed slimes suffocating when shot out of vac in corner blocks
-- Fixed Crafts room quest having broken dependency
-- Fixed fees not taking into account shared accounts
-- Fixed some twigs blocks not having recipes
-- Fixed Smooth Salt Block loot table
-- Fixed Fluid Grid being unobtainable
-- Fixed Mashed Potatoes and Pasta with Broccoli recipes having wrong milk tag
-- Fixed /time set causing plushies to not get harvested
+- Added bag item limits to trainer podiums (configurable)
+- Added more trainer podium trainers
+- Rebalanced trainer podium's 100-135 tiers to be less of an unfair difficulty spike
+- Reduced rate of common ore pokemon
+- Removed Bloom Doom and Shattered Psyche z-move TR/TMs
+- Reworked Gardening Station radius/area so every type has consistent area and text is clearer
+- Reworked level averaging algorithm
+- Reduced Mystery Gift medallion cost 32 -> 16
+- Garchomp learned how to use its jets
+- Lake Spirits now have a will to live
+- Fixed ridding offsets for a bunch of popular pokemon 
+- Fixed certain BEs being piston-movable bricking worlds
+- Fixed Dimensional Entity 0 not appearing
+- Fixed Wormhole generator tooltip
+- Fixed Cobblemon shops not having descriptions
+- Fixed Ghost pepper craft station render
+- Fixed tier 0 Sun Raid Statues only being uncommon
+- Fixed Hydrapple being unobtainable
+- Fixed Sandy Shocks ranching definition and buffed rate
+- Fixed Sandy Shocks spawn
+- Fixed Roaring Moon and Raging Bolt having incorrect spawn location
+- Fixed certain Cobblemon artisan goods not having correct tags
+- Fixed TMs/TRs not having tags
+- Fixed some duplicated craft station recipe
+- Fixed instance of shiny raid pokemon not being shiny on death
+- Fixed Gardening Station not rendering swap priority button state
+- Fixed Gardening Station voiding instead of popping out items if the facing block is a blockentity
+- Fixed Worker cap not taking into account Worker Permits when actually inserting into stations
+- Fixed instances of normal/fairy types stopping work in Gardening Stations
+- Fixed Espathra and Articuno not being ridable
+- Fixed cases where roaming legendaries spawn on top of eachother, breaking their sun status
+- Fixed structures generating on Nether ceiling
+- Fixed PC and Healing Machine not being interactable in claims
+- Fixed bricking crash with Cobbreeding
+- Fixed Sparkstone and a few other ores not summoning pokemon
+- Fixed window title
+- Fixed Water and Normal type gems not being obtainable from Mystery Mine
 
-# 4.0.8
+## 1.0.3-SSV4.0.6
+- Added ~95 ridable pokemon, check wiki for updated list (Thanks KingKarma)
+- Added sell value for Sunlit Essence
+- Added Noibat, Noivern, and Amoongos ranches
+- League rewards will now go into curio bank account card if it exists
+- Improved performance of Mon Boxes (lower mon count and activation range)
+- Updated ko_kr translation (Thanks Hexagreen)
+- Tweaked some sell values (mainly loot items)
+- Fixed shiny rate being halved
+- Fixed several small differences with base SSV
+- Fixed oceans being polluted with loot balls and raid statues
+- Fixed Mints and Revival Herbs only growing on base farmland
+- Fixed Moomoo Cheese not being craftable in Auto-Cheese Press
+- Fixed Moomoo Cheese not aging with Pink Matter upgrade
+- Fixed Ancient Poke Balls using zinc blocks instead of copper
+- Fixed Pokemon with 1 heart of affection not getting milked by normal type worker
+- Fixed a few berries not being required for the collection
+- Fixed tuber_amira_02bd being in the wrong tier
+- Fixed Apricorns showing as day based in Jade
+- Fixed group sun raids sometimes being level 1
+- Fixed Sun Raid Statues not considering cavern air air
+- Fixed Sandy Mulch being uncraftable
+- Fixed Galarian Corsola on Poke Radar
+- Fixed Rocky dunes not having any spawns
+- Fixed Public workstations showing owner message 
+- Fixed ranching regional variants matching just form instead of form + species
+- Fixed workstations with long progress times showing 0:00 seconds in Multiplayer- Fixed side conditions (Reflect, Light Screen, etc.) lingering in the battle HUD after wild and NPC battles (Thanks Newbula)
+- Fixed stat boosts persisting in the battle HUD between battles (Thanks Newbula)
+
+## 1.0.2-SSV4.0.6
+- Added Flamigo as a ranchable pokemon for real this time
+- Fixed season quest not having the super important client config line
+- Fixed recipe related performance issues on large servers
+
+## 1.0.1-SSV4.0.6
+- Added Flamigo as a ranchable pokemon
+- Tweaked a bunch of cobblemon spawns
+- Fixed lass_anne_00041 trainer being invalid
+- Fixed Ketchup being served too early
+- Fixed Pumpkin fields and Snowy Scrubland having no tags and being Koffing infested
+- Fixed Silicobra, Sandaconda, Bramblin, and Brambleghast not having any spawn locations
+- Fixed Cobblemon EMI missing evo/drops on servers
+- Fixed Public Contract not working on anything except craft station
+- Fixed Gardening Station ranchers not putting milk into facing inventories. This includes milk from a Spidops.
+- Fixed workstation tooltips showing null owners, probably
+
+## Society: Sunlit Valley 4.0.8
 - Auto-Petter now triggers at 7am to avoid hunger debuff
 - Fixed default journeymap configs
 - Fixed season quest not having important info

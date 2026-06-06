@@ -1,0 +1,80 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "sableye-1",
+            "pokemon": "sableye",
+            "presets": [
+                "natural",
+                "gemstones"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "13-38",
+            "weight": 10.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            }
+        },
+        {
+            "id": "sableye-2",
+            "pokemon": "sableye",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "13-38",
+            "weight": 10.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
+            }
+        },
+        {
+            "id": "sableye-3",
+            "pokemon": "sableye",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "43-60",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "society:blackstone_caves"
+                ]
+            }
+        },
+        {
+            "id": "sableye-4",
+            "pokemon": "sableye",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "43-60",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        }
+    ]
+}

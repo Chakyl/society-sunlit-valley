@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["B B", "GWG", "RGR"],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "oreganized:silver_ingot"
+    },
+    "W": {
+      "item": "society:froggy_helm"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "cobblemon:choice_specs"
+  }
+}

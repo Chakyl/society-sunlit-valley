@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League Ace",
+  "team": [
+    {
+      "species": "cobblemon:trevenant",
+      "gender": "FEMALE",
+      "level": 80,
+      "nature": "cobblemon:jolly",
+      "ability": "harvest",
+      "moveset": [
+        "leechseed",
+        "rockslide",
+        "confuseray",
+        "woodhammer"
+      ],
+      "ivs": {
+        "hp": 18,
+        "attack": 9,
+        "defence": 6,
+        "special_attack": 15,
+        "special_defence": 5,
+        "speed": 12
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:corviknight",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:timid",
+      "ability": "mirrorarmor",
+      "moveset": [
+        "steelwing",
+        "bodypress",
+        "bravebird",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 12,
+        "attack": 20,
+        "defence": 27,
+        "special_attack": 6,
+        "speed": 22
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:talonflame",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:impish",
+      "ability": "galewings",
+      "moveset": [
+        "flamecharge",
+        "bravebird",
+        "roost",
+        "flareblitz"
+      ],
+      "ivs": {
+        "hp": 15,
+        "attack": 20,
+        "defence": 30,
+        "special_attack": 22,
+        "special_defence": 23,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:torterra",
+      "gender": "FEMALE",
+      "level": 80,
+      "nature": "cobblemon:quirky",
+      "ability": "overgrow",
+      "moveset": [
+        "megadrain",
+        "earthquake",
+        "stealthrock",
+        "woodhammer"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 29,
+        "defence": 9,
+        "special_attack": 18,
+        "special_defence": 6,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:hydrapple",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:bold",
+      "ability": "supersweetsyrup",
+      "moveset": [
+        "dracometeor",
+        "earthpower",
+        "nastyplot",
+        "gigadrain"
+      ],
+      "ivs": {
+        "hp": 19,
+        "attack": 27,
+        "defence": 2,
+        "special_attack": 7,
+        "special_defence": 8,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:dragon_fang",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:hawlucha",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:sassy",
+      "ability": "unburden",
+      "moveset": [
+        "highjumpkick",
+        "encore",
+        "acrobatics",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 7,
+        "defence": 3,
+        "special_attack": 9,
+        "special_defence": 15,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:fighting_gem",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

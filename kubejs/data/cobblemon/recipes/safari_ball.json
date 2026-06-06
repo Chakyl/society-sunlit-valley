@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "c": {
+            "item": "windswept:holly_wreath"
+        },
+        "r": {
+            "item": "cobblemon:green_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:white_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:safari_ball",
+        "count": 4
+    }
+}

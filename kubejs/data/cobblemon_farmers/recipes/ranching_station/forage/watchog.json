@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "watchog",
+	"forages": [
+		{
+			"item": "minecraft:glow_berries",
+			"count": 6,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "vintagedelight:glow_berry_mason_jar",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 3
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "noibat",
+	"forages": [
+		{
+			"item": "atmospheric:orange",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 2,
+			"hasQuality": true
+		},
+		{
+			"item": "pamhc2trees:plumitem",
+			"count": 2,
+			"chance": 0.3,
+			"min_hearts": 4,
+			"hasQuality": true
+		},
+		{
+			"item": "atmospheric:passion_fruit",
+			"count": 2,
+			"chance": 0.35,
+			"min_hearts": 8,
+			"has_quality": true
+		},
+		{
+			"item": "pamhc2trees:dragonfruititem",
+			"count": 3,
+			"chance": 0.55,
+			"min_hearts": 10,
+			"has_quality": true
+		}
+	]
+}

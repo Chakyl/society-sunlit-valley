@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["I", "R", "C"],
+  "key": {
+    "C": {
+      "item": "society:thunder_egg"
+    },
+    "R": {
+      "item": "society:battery"
+    },
+    "I": {
+      "item": "etcetera:bismuth_ingot"
+    }
+  },
+  "result": {
+    "item": "cobblemon:cell_battery"
+  }
+}

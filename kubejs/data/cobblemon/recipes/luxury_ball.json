@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:white_apricorn"
+        },
+        "c": {
+            "item": "numismatics:sun"
+        },
+        "r": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:black_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:luxury_ball",
+        "count": 4
+    }
+}

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "stoutland",
+	"forages": [
+		{
+			"item": "minecraft:bone",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:fine_wool",
+			"count": 1,
+			"chance": 0.8,
+			"has_quality": true,
+			"min_hearts": 5
+		}
+	]
+}

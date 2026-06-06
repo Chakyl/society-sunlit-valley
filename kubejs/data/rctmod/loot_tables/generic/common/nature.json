@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:remedy",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "rctmod:level_range",
+              "range": {
+                "min": 0,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:growth_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:growth_mulch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:mulch_base"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:pep_up_flower"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sunlit_cobblemon:berry_capsule"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bakery:crusty_bread"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bakery:toast"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2trees:plumitem"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "rctmod:generic/common/nature"
+}

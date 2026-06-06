@@ -1,0 +1,192 @@
+{
+  "displayName": "Sunlit League Maria",
+  "team": [
+    {
+      "species": "cobblemon:hitmonchan",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "ironfist",
+      "moveset": [
+        "poweruppunch",
+        "firepunch",
+        "icepunch",
+        "thunderpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:cobalion",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "justified",
+      "moveset": [
+        "metalclaw",
+        "sacredsword",
+        "swordsdance",
+        "stoneedge"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:hariyama",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "thickfat",
+      "moveset": [
+        "closecombat",
+        "heavyslam",
+        "bellydrum",
+        "headlongrush"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "defence": 252,
+        "special_defence": 6
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:lucario",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:lonely",
+      "ability": "steadfast",
+      "moveset": [
+        "nastyplot",
+        "aurasphere",
+        "darkpulse",
+        "dragonpulse"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:hawlucha",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "limber",
+      "moveset": [
+        "acrobatics",
+        "swordsdance",
+        "flyingpress",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:fighting_gem",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:ambipom",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "technician",
+      "moveset": [
+        "screech",
+        "dualchop",
+        "tripleaxel",
+        "doublehit"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

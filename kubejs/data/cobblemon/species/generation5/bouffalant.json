@@ -1,0 +1,299 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 626,
+    "name": "Bouffalant",
+    "primaryType": "normal",
+    "maleRatio": 0.5,
+    "height": 16,
+    "weight": 946,
+    "pokedex": [
+        "cobblemon.species.bouffalant.desc"
+    ],
+    "labels": [
+        "gen5"
+    ],
+    "aspects": [],
+    "abilities": [
+        "reckless",
+        "sapsipper",
+        "h:soundproof"
+    ],
+    "eggGroups": [
+        "field"
+    ],
+    "baseStats": {
+        "hp": 95,
+        "attack": 110,
+        "defence": 95,
+        "special_attack": 40,
+        "special_defence": 95,
+        "speed": 55
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 2,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 172,
+    "experienceGroup": "medium_fast",
+    "catchRate": 45,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 1.6,
+    "hitbox": {
+        "width": 1.3,
+        "height": 1.5,
+        "fixed": false
+    },
+    "riding": {
+        "behaviours": {
+            "LAND": {
+                "key": "cobblemon:land/horse",
+                "rideSounds": [],
+                "stats": {
+                    "ACCELERATION": "50-75",
+                    "JUMP": "20-30",
+                    "SKILL": "15-30",
+                    "SPEED": "45-65",
+                    "STAMINA": "55-70"
+                }
+            }
+        },
+        "seats": [
+            {
+                "offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "poseOffsets": [
+                    {
+                        "offset": {
+                            "x": -0.009967118,
+                            "y": -2.338432,
+                            "z": -0.07881425
+                        },
+                        "poseTypes": [
+                            "STAND"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -0.041514486,
+                            "y": -2.3466194,
+                            "z": -0.05977893
+                        },
+                        "poseTypes": [
+                            "WALK"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.029709913,
+                            "y": -2.0745296,
+                            "z": -0.13198271
+                        },
+                        "poseTypes": [
+                            "HOVER"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.029709913,
+                            "y": -2.0745296,
+                            "z": -0.13198271
+                        },
+                        "poseTypes": [
+                            "FLY"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -0.009967118,
+                            "y": -2.338432,
+                            "z": -0.07881425
+                        },
+                        "poseTypes": [
+                            "FLOAT"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -0.041514486,
+                            "y": -2.3466194,
+                            "z": -0.05977893
+                        },
+                        "poseTypes": [
+                            "SWIM"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.029709913,
+                            "y": -2.0745296,
+                            "z": -0.13198271
+                        },
+                        "poseTypes": [
+                            "GLIDE"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "behaviour": {
+        "combat": {
+            "willDefendOwner": true,
+            "willDefendSelf": true,
+            "willFlee": false
+        },
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "tauros",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "bouffalant",
+                    "tier": 2
+                }
+            ]
+        },
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            }
+        },
+        "resting": {
+            "canSleep": true,
+            "drowsyChance": 0.0333,
+            "light": "0-4",
+            "rouseChance": 0.0042
+        }
+    },
+    "drops": {
+        "amount": 8,
+        "entries": [
+            {
+                "item": "minecraft:leather",
+                "quantityRange": "0-2"
+            },
+            {
+                "item": "meadow:raw_buffalo_meat",
+                "quantityRange": "1-3"
+            },
+            {
+                "item": "minecraft:brown_wool",
+                "quantityRange": "1-2"
+            },
+            {
+                "item": "cobblemon:wepear_berry",
+                "percentage": 5.0
+            }
+        ]
+    },
+    "moves": [
+        "1:pursuit",
+        "1:leer",
+        "1:rage",
+        "1:tackle",
+        "5:focusenergy",
+        "10:furyattack",
+        "15:revenge",
+        "20:scaryface",
+        "25:hornattack",
+        "30:reversal",
+        "35:throatchop",
+        "40:headcharge",
+        "45:swordsdance",
+        "50:thrash",
+        "55:gigaimpact",
+        "egg:belch",
+        "egg:cottonguard",
+        "egg:endeavor",
+        "egg:headbutt",
+        "egg:mudslap",
+        "egg:skullbash",
+        "egg:stomp",
+        "tm:aerialace",
+        "tm:amnesia",
+        "tm:assurance",
+        "tm:bodyslam",
+        "tm:bulldoze",
+        "tm:closecombat",
+        "tm:cut",
+        "tm:earthquake",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:facade",
+        "tm:focusenergy",
+        "tm:gigaimpact",
+        "tm:headbutt",
+        "tm:highhorsepower",
+        "tm:ironhead",
+        "tm:lashout",
+        "tm:megahorn",
+        "tm:mudshot",
+        "tm:mudslap",
+        "tm:outrage",
+        "tm:payback",
+        "tm:poisonjab",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:revenge",
+        "tm:reversal",
+        "tm:rockclimb",
+        "tm:rockslide",
+        "tm:rocksmash",
+        "tm:rocktomb",
+        "tm:scaryface",
+        "tm:sleeptalk",
+        "tm:smartstrike",
+        "tm:stompingtantrum",
+        "tm:stoneedge",
+        "tm:strength",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:superpower",
+        "tm:surf",
+        "tm:swordsdance",
+        "tm:taunt",
+        "tm:terablast",
+        "tm:throatchop",
+        "tm:uproar",
+        "tm:wildcharge",
+        "tm:workup",
+        "tm:zenheadbutt",
+        "tutor:aerialace",
+        "tutor:bulldoze",
+        "tutor:endeavor",
+        "tutor:focusenergy",
+        "tutor:gigaimpact",
+        "tutor:highhorsepower",
+        "tutor:ironhead",
+        "tutor:lashout",
+        "tutor:megahorn",
+        "tutor:mudslap",
+        "tutor:outrage",
+        "tutor:poisonjab",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:rocksmash",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:stoneedge",
+        "tutor:superpower",
+        "tutor:throatchop",
+        "tutor:uproar",
+        "tutor:wildcharge",
+        "tutor:zenheadbutt"
+    ],
+    "evolutions": [],
+    "standingEyeHeight": 0.45
+}

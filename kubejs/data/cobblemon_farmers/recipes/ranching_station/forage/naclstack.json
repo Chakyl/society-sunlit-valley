@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "naclstack",
+	"forages": [
+		{
+			"item": "meadow:alpine_salt",
+			"count": 8,
+			"chance": 1,
+			"min_hearts": 0
+		},
+		{
+			"item": "vintagedelight:salt_block",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 8
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["DS", "HD"],
+  "key": {
+    "D": {
+      "item": "minecraft:dripstone_block"
+    },
+    "S": {
+      "item": "cobblemon:ice_stone"
+    },
+    "H": {
+      "item": "society:kyanite"
+    }
+  },
+  "result": {
+    "item": "cobblemon:icy_rock"
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "kecleon",
+	"forages": [
+		{
+			"item": "society:legendary_ink",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "cobblemon:prism_scale",
+			"count": 1,
+			"chance": 0.04,
+			"min_hearts": 6
+		},
+		{
+			"item": "species:wicked_mask",
+			"count": 1,
+			"chance": 0.05,
+			"min_hearts": 8
+		}
+	]
+}

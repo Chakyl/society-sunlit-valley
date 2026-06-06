@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "yanma",
+	"forages": [
+		{
+			"item": "verdantvibes:cattails",
+			"count": 3,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "crittersandcompanions:dragonfly_wing",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 8
+		}
+	]
+}

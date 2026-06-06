@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "lilligant",
+	"forages": [
+		{
+			"item": "veggiesdelight:cauliflower",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "cobblemon:fine_remedy",
+			"count": 2,
+			"chance": 1,
+			"min_hearts": 3
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "murkrow",
+	"forages": [
+		{
+			"item": "society:tubasmoke_stick",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 8
+		},
+		{
+			"item": "cobblemon:dark_gem",
+			"count": 1,
+			"chance": 0.7,
+			"min_hearts": 10
+		}
+	]
+}

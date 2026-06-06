@@ -5,33 +5,48 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 174,
+          "weight": 348,
           "data": {
             "Name": "society:end_stone_boulder"
           }
         },
         {
-          "weight": 14,
+          "weight": 28,
           "data": {
             "Name": "society:deepslate_sparkstone_ore"
           }
         },
         {
-          "weight": 4,
+          "weight": 8,
           "data": {
             "Name": "society:omni_geode_node"
           }
         },
         {
-          "weight": 3,
+          "weight": 6,
           "data": {
             "Name": "society:deepslate_iridium_ore"
           }
         },
         {
-          "weight": 1,
+          "weight": 2,
           "data": {
             "Name": "society:skull_cavern_teleporter"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "sunlit_cobblemon:beast_loot_ball"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "sunlit_cobblemon:mon_box",
+            "Properties": {
+              "facing": "up"
+            }
           }
         }
       ]

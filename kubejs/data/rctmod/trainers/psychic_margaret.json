@@ -1,0 +1,117 @@
+{
+  "displayName": "Psychic Margaret",
+  "team": [
+    {
+      "species": "cobblemon:gothitelle",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "competitive",
+      "moveset": [
+        "psychup",
+        "futuresight",
+        "playnice",
+        "psychic"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 24,
+        "defence": 27,
+        "special_defence": 8,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:torkoal",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:serious",
+      "ability": "drought",
+      "moveset": [
+        "eruption",
+        "shellsmash",
+        "inferno",
+        "amnesia"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 4,
+        "defence": 22,
+        "special_attack": 8,
+        "special_defence": 14,
+        "speed": 26
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:hitmonchan",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:hardy",
+      "ability": "ironfist",
+      "moveset": [
+        "thunderpunch",
+        "icepunch",
+        "firepunch",
+        "drainpunch"
+      ],
+      "ivs": {
+        "hp": 12,
+        "attack": 17,
+        "defence": 12,
+        "special_attack": 1,
+        "special_defence": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:expert_belt",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:trevenant",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:calm",
+      "ability": "harvest",
+      "moveset": [
+        "leechseed",
+        "hornleech",
+        "willowisp",
+        "ingrain"
+      ],
+      "ivs": {
+        "hp": 14,
+        "attack": 1,
+        "defence": 18,
+        "special_attack": 12,
+        "special_defence": 8,
+        "speed": 26
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

@@ -1,0 +1,103 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "heatmor-1",
+            "pokemon": "heatmor",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "23-48",
+            "weight": 6.0,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_hills"
+                ]
+            }
+        },
+        {
+            "id": "heatmor-2",
+            "pokemon": "heatmor",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "23-48",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_mountain"
+                ]
+            },
+            "drops": {
+                "amount": 3,
+                "entries": [
+                    {
+                        "item": "cobblemon:flame_orb",
+                        "percentage": 5.0
+                    },
+                    {
+                        "item": "minecraft:blaze_powder",
+                        "percentage": 10.0
+                    },
+                    {
+                        "item": "cobblemon:rawst_berry",
+                        "percentage": 5.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": "durant-4",
+            "pokemon": "durant",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "40-60",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "society:blackstone_caves"
+                ]
+            },
+            "drops": {
+                "amount": 3,
+                "entries": [
+                    {
+                        "item": "cobblemon:flame_orb",
+                        "percentage": 5.0
+                    },
+                    {
+                        "item": "minecraft:blaze_powder",
+                        "percentage": 10.0
+                    },
+                    {
+                        "item": "cobblemon:rawst_berry",
+                        "percentage": 5.0
+                    }
+                ]
+            }
+        }
+    ]
+}

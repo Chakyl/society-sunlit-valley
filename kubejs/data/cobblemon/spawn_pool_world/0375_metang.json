@@ -1,0 +1,42 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "metang-1",
+            "pokemon": "metang",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "20-44",
+            "weight": 0.9,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_dripstone",
+                    "#cobblemon:is_peak"
+                ]
+            }
+        },
+        {
+            "id": "metang-2",
+            "pokemon": "metang",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "45-60",
+            "weight": 0.9,
+            "condition": {
+                "biomes": [
+                    "society:umbra_barrens"
+                ]
+            }
+        }
+    ]
+}

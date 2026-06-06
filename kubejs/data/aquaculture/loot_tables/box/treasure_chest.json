@@ -6,6 +6,39 @@
       "entries": [
         {
           "type": "item",
+          "name": "cobblemon:net_ball",
+          "entryName": "net_ball",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:water_stone",
+          "entryName": "water_stone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:ice_stone",
+          "entryName": "ice_stone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "sunlit_cobblemon:tm_pack",
+          "entryName": "tm_pack",
+          "weight": 4
+        },
+        {
+          "type": "item",
           "name": "minecraft:diamond",
           "entryName": "diamond",
           "weight": 15

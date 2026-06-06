@@ -1,0 +1,42 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "leavanny",
+	"forages": [
+		{
+			"item": "society:canvas",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 3
+		},
+		{
+			"item": "society:canvas",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:canvas",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 5
+		},
+		{
+			"item": "farmersdelight:cabbage_leaf",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 6
+		},
+		{
+			"item": "farmersdelight:cabbage_leaf",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 8
+		},
+		{
+			"item": "farmersdelight:cabbage_leaf",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 10
+		}
+	]
+}

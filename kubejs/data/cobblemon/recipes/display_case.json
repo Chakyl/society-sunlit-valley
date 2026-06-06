@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " s ",
+        " w "
+    ],
+    "key": {
+        "s": {
+            "item": "furniture:display"
+        },
+        "w": {
+            "tag": "minecraft:wool"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:display_case"
+    }
+}

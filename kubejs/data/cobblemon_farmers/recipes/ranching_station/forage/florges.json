@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "florges",
+	"forages": [
+		{
+			"item": "society:bouquet_bag",
+			"count": 1,
+			"chance": 0.32,
+			"min_hearts": 6
+		},
+		{
+			"item": "sunlit_cobblemon:fairy_heart",
+			"count": 1,
+			"chance": 0.04,
+			"min_hearts": 10
+		}
+	]
+}

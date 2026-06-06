@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League King",
+  "team": [
+    {
+      "species": "cobblemon:skeledirge",
+      "gender": "MALE",
+      "level": 40,
+      "nature": "cobblemon:impish",
+      "ability": "unaware",
+      "moveset": [
+        "torchsong",
+        "snarl",
+        "yawn",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 27,
+        "defence": 24,
+        "special_attack": 18,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:meowscarada",
+      "gender": "FEMALE",
+      "level": 40,
+      "nature": "cobblemon:adamant",
+      "ability": "protean",
+      "moveset": [
+        "honeclaws",
+        "flowertrick",
+        "nightslash",
+        "quickattack"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 8,
+        "defence": 31,
+        "special_attack": 7,
+        "special_defence": 21,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:corviknight",
+      "gender": "MALE",
+      "level": 38,
+      "nature": "cobblemon:naughty",
+      "ability": "mirrorarmor",
+      "moveset": [
+        "powertrip",
+        "pluck",
+        "scaryface",
+        "honeclaws"
+      ],
+      "ivs": {
+        "hp": 27,
+        "attack": 8,
+        "defence": 7,
+        "special_attack": 12,
+        "special_defence": 10,
+        "speed": 27
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:pawmot",
+      "gender": "MALE",
+      "level": 38,
+      "nature": "cobblemon:docile",
+      "ability": "ironfist",
+      "moveset": [
+        "armthrust",
+        "charge",
+        "wildcharge",
+        "dig"
+      ],
+      "ivs": {
+        "hp": 21,
+        "attack": 1,
+        "defence": 16,
+        "special_attack": 8,
+        "special_defence": 11,
+        "speed": 6
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:crabominable",
+      "gender": "FEMALE",
+      "level": 38,
+      "nature": "cobblemon:jolly",
+      "ability": "ironfist",
+      "moveset": [
+        "icepunch",
+        "poweruppunch",
+        "dizzypunch",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 9,
+        "attack": 6,
+        "defence": 8,
+        "special_attack": 7,
+        "special_defence": 29,
+        "speed": 7
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:metang",
+      "gender": "GENDERLESS",
+      "level": 40,
+      "nature": "cobblemon:brave",
+      "ability": "clearbody",
+      "moveset": [
+        "honeclaws",
+        "takedown",
+        "zenheadbutt",
+        "metalclaw"
+      ],
+      "ivs": {
+        "hp": 3,
+        "attack": 8,
+        "defence": 13,
+        "special_attack": 24,
+        "special_defence": 27,
+        "speed": 7
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

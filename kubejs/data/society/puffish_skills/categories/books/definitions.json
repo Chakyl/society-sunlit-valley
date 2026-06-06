@@ -510,5 +510,160 @@
         }
       }
     ]
+  },
+  "the_art_of_battle": {
+    "title": { "translate": "item.sunlit_cobblemon.the_art_of_battle" },
+    "description": {
+      "translate": "sunlit_cobblemon.books.the_art_of_battle.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "sunlit_cobblemon:the_art_of_battle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s the_art_of_battle",
+          "lock_command": "kubejs stages remove @s the_art_of_battle"
+        }
+      }
+    ]
+  },
+  "berry_labor_and_capital": {
+    "title": { "translate": "item.sunlit_cobblemon.berry_labor_and_capital" },
+    "description": {
+      "translate": "sunlit_cobblemon.books.berry_labor_and_capital.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "sunlit_cobblemon:berry_labor_and_capital"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "cobblemon_farmers:worker_cap",
+          "value": 5,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s berry_labor_and_capital",
+          "lock_command": "kubejs stages remove @s berry_labor_and_capital"
+        }
+      }
+    ]
+  },
+  "bottlecaps_and_nothingness": {
+    "title": { "translate": "item.sunlit_cobblemon.bottlecaps_and_nothingness" },
+    "description": {
+      "translate": "sunlit_cobblemon.books.bottlecaps_and_nothingness.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "sunlit_cobblemon:bottlecaps_and_nothingness"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s bottlecaps_and_nothingness",
+          "lock_command": "kubejs stages remove @s bottlecaps_and_nothingness"
+        }
+      }
+    ]
+  },
+  "braiding_surprisegrass": {
+    "title": { "translate": "item.sunlit_cobblemon.braiding_surprisegrass" },
+    "description": {
+      "translate": "sunlit_cobblemon.books.braiding_surprisegrass.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "sunlit_cobblemon:braiding_surprisegrass"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s braiding_surprisegrass",
+          "lock_command": "kubejs stages remove @s braiding_surprisegrass"
+        }
+      }
+    ]
+  },
+  "the_gachamonbler": {
+    "title": { "translate": "item.sunlit_cobblemon.the_gachamonbler" },
+    "description": {
+      "translate": "sunlit_cobblemon.books.the_gachamonbler.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "sunlit_cobblemon:the_gachamonbler"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s the_gachamonbler",
+          "lock_command": "kubejs stages remove @s the_gachamonbler"
+        }
+      }
+    ]
+  },
+  "mukbeth": {
+    "title": { "translate": "item.sunlit_cobblemon.mukbeth" },
+    "description": {
+      "translate": "sunlit_cobblemon.books.mukbeth.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "sunlit_cobblemon:mukbeth"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mukbeth",
+          "lock_command": "kubejs stages remove @s mukbeth"
+        }
+      }
+    ]
+  },
+  "savage_sun": {
+    "title": { "translate": "item.sunlit_cobblemon.savage_sun" },
+    "description": {
+      "translate": "sunlit_cobblemon.books.savage_sun.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "sunlit_cobblemon:savage_sun"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s savage_sun",
+          "lock_command": "kubejs stages remove @s savage_sun"
+        }
+      }
+    ]
   }
 }

@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "vulpix",
+	"form": "alolan",
+	"forages": [
+		{
+			"item": "windswept:wild_berries",
+			"count": 6,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "society:frozen_tear",
+			"count": 1,
+			"chance": 0.45,
+			"min_hearts": 7
+		}
+	]
+}

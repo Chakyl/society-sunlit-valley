@@ -26,6 +26,7 @@ ServerEvents.recipes((e) => {
     { type: "cluttered:poplar", mailbox:  "everycomp:rfm/cluttered/poplar_mail_box", },
     { type: "cluttered:willow", mailbox: "everycomp:rfm/cluttered/willow_mail_box", },
     { type: "cluttered:sycamore", mailbox:  "everycomp:rfm/cluttered/sycamore_mail_box", },
+    { type: "cobblemon:apricorn", mailbox:  "everycomp:rfm/cobblemon/apricorn_mail_box", },
   ];
 
   recipes.forEach((recipe) => {

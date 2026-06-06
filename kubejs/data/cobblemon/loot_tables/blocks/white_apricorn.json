@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon:white_apricorn",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "cobblemon:white_apricorn",
+              "properties": {
+                "age": "3"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 54,
+    "name": "Psyduck",
+    "primaryType": "water",
+    "maleRatio": 0.5,
+    "height": 8,
+    "weight": 196,
+    "pokedex": [
+        "cobblemon.species.psyduck.desc"
+    ],
+    "labels": [
+        "gen1"
+    ],
+    "aspects": [],
+    "abilities": [
+        "damp",
+        "cloudnine",
+        "h:swiftswim"
+    ],
+    "eggGroups": [
+        "water_1",
+        "field"
+    ],
+    "baseStats": {
+        "hp": 50,
+        "attack": 52,
+        "defence": 48,
+        "special_attack": 65,
+        "special_defence": 50,
+        "speed": 55
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 1,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 64,
+    "experienceGroup": "medium_fast",
+    "catchRate": 190,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 0.8,
+    "hitbox": {
+        "width": 0.8,
+        "height": 1,
+        "fixed": false
+    },
+    "behaviour": {
+        "moving": {
+            "swim": {
+                "canBreatheUnderwater": true,
+                "swimSpeed": "0.2"
+            }
+        },
+        "resting": {
+            "canSleep": true,
+            "light": "0-4",
+            "willSleepOnBed": true,
+            "drowsyChance": 0.0333,
+            "rouseChance": 0.0042
+        },
+        "combat": {
+            "willDefendOwner": true,
+            "willFlee": false
+        }
+    },
+    "drops": {
+        "amount": 3,
+        "entries": [
+            {
+                "item": "untitledduckmod:duck_feather",
+                "quantityRange": "0-1"
+            },
+            {
+                "item": "untitledduckmod:raw_duck"
+            },
+            {
+                "item": "cobblemon:mystic_water",
+                "percentage": 2.5
+            }
+        ]
+    },
+    "moves": [
+        "1:watersport",
+        "1:scratch",
+        "1:tailwhip",
+        "1:bubble",
+        "3:watergun",
+        "6:confusion",
+        "9:furyswipes",
+        "12:waterpulse",
+        "15:disable",
+        "18:zenheadbutt",
+        "21:screech",
+        "24:aquatail",
+        "27:soak",
+        "30:psychup",
+        "34:amnesia",
+        "39:wonderroom",
+        "egg:clearsmog",
+        "egg:confuseray",
+        "egg:crosschop",
+        "egg:foresight",
+        "egg:hypnosis",
+        "egg:mudbomb",
+        "egg:psybeam",
+        "egg:refresh",
+        "egg:secretpower",
+        "egg:simplebeam",
+        "egg:synchronoise",
+        "egg:yawn",
+        "tm:amnesia",
+        "tm:aquatail",
+        "tm:blizzard",
+        "tm:bodyslam",
+        "tm:brickbreak",
+        "tm:brine",
+        "tm:calmmind",
+        "tm:chillingwater",
+        "tm:confuseray",
+        "tm:dig",
+        "tm:dive",
+        "tm:doubleedge",
+        "tm:encore",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:facade",
+        "tm:flash",
+        "tm:fling",
+        "tm:flipturn",
+        "tm:focuspunch",
+        "tm:hail",
+        "tm:haze",
+        "tm:headbutt",
+        "tm:helpinghand",
+        "tm:honeclaws",
+        "tm:hydropump",
+        "tm:icebeam",
+        "tm:icepunch",
+        "tm:icywind",
+        "tm:irontail",
+        "tm:knockoff",
+        "tm:lightscreen",
+        "tm:liquidation",
+        "tm:lowkick",
+        "tm:lowsweep",
+        "tm:megakick",
+        "tm:megapunch",
+        "tm:metronome",
+        "tm:muddywater",
+        "tm:mudshot",
+        "tm:nastyplot",
+        "tm:payday",
+        "tm:poweruppunch",
+        "tm:protect",
+        "tm:psybeam",
+        "tm:psychic",
+        "tm:psychicnoise",
+        "tm:psychup",
+        "tm:psyshock",
+        "tm:raindance",
+        "tm:rest",
+        "tm:rocksmash",
+        "tm:roleplay",
+        "tm:screech",
+        "tm:secretpower",
+        "tm:shadowclaw",
+        "tm:signalbeam",
+        "tm:skillswap",
+        "tm:sleeptalk",
+        "tm:strength",
+        "tm:substitute",
+        "tm:surf",
+        "tm:swift",
+        "tm:takedown",
+        "tm:taunt",
+        "tm:telekinesis",
+        "tm:terablast",
+        "tm:thief",
+        "tm:trailblaze",
+        "tm:vacuumwave",
+        "tm:waterfall",
+        "tm:waterpulse",
+        "tm:whirlpool",
+        "tm:wonderroom",
+        "tm:worryseed",
+        "tm:zenheadbutt",
+        "tutor:aquatail",
+        "tutor:calmmind",
+        "tutor:dive",
+        "tutor:endeavor",
+        "tutor:flipturn",
+        "tutor:focuspunch",
+        "tutor:helpinghand",
+        "tutor:icebeam",
+        "tutor:icepunch",
+        "tutor:icywind",
+        "tutor:irontail",
+        "tutor:knockoff",
+        "tutor:liquidation",
+        "tutor:lowkick",
+        "tutor:psychic",
+        "tutor:rest",
+        "tutor:rocksmash",
+        "tutor:roleplay",
+        "tutor:shadowclaw",
+        "tutor:signalbeam",
+        "tutor:skillswap",
+        "tutor:sleeptalk",
+        "tutor:swift",
+        "tutor:telekinesis",
+        "tutor:vacuumwave",
+        "tutor:waterpulse",
+        "tutor:wonderroom",
+        "tutor:worryseed",
+        "tutor:zenheadbutt"
+    ],
+    "evolutions": [
+        {
+            "id": "psyduck_golduck",
+            "variant": "level_up",
+            "result": "golduck",
+            "consumeHeldItem": false,
+            "learnableMoves": [],
+            "requirements": [
+                {
+                    "variant": "level",
+                    "minLevel": 33
+                }
+            ]
+        }
+    ]
+}

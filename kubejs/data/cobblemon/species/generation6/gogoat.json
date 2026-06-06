@@ -1,0 +1,297 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 673,
+    "name": "Gogoat",
+    "primaryType": "grass",
+    "maleRatio": 0.5,
+    "height": 17,
+    "weight": 910,
+    "pokedex": [
+        "cobblemon.species.gogoat.desc"
+    ],
+    "labels": [
+        "gen6"
+    ],
+    "aspects": [],
+    "abilities": [
+        "sapsipper",
+        "h:grasspelt"
+    ],
+    "eggGroups": [
+        "field"
+    ],
+    "baseStats": {
+        "hp": 123,
+        "attack": 100,
+        "defence": 62,
+        "special_attack": 97,
+        "special_defence": 81,
+        "speed": 68
+    },
+    "evYield": {
+        "hp": 2,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 186,
+    "experienceGroup": "medium_fast",
+    "catchRate": 45,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 1,
+    "hitbox": {
+        "height": 2.35,
+        "fixed": false,
+        "width": 1.65
+    },
+    "riding": {
+        "behaviours": {
+            "LAND": {
+                "key": "cobblemon:land/horse",
+                "rideSounds": [],
+                "stats": {
+                    "ACCELERATION": "65-75",
+                    "JUMP": "40-60",
+                    "SKILL": "40-60",
+                    "SPEED": "45-65",
+                    "STAMINA": "45-65"
+                }
+            }
+        },
+        "seats": [
+            {
+                "offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "poseOffsets": [
+                    {
+                        "offset": {
+                            "x": 0.007633015,
+                            "y": -1.4571182,
+                            "z": 0.4200257
+                        },
+                        "poseTypes": [
+                            "STAND"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": -0.019899037,
+                            "y": -1.4814445,
+                            "z": 0.41130581
+                        },
+                        "poseTypes": [
+                            "WALK"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.007633015,
+                            "y": -1.4571182,
+                            "z": 0.4200257
+                        },
+                        "poseTypes": [
+                            "HOVER"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.007633015,
+                            "y": -1.4571182,
+                            "z": 0.4200257
+                        },
+                        "poseTypes": [
+                            "FLY"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.007633015,
+                            "y": -1.4571182,
+                            "z": 0.4200257
+                        },
+                        "poseTypes": [
+                            "FLOAT"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.007633015,
+                            "y": -1.4571182,
+                            "z": 0.4200257
+                        },
+                        "poseTypes": [
+                            "SWIM"
+                        ]
+                    },
+                    {
+                        "offset": {
+                            "x": 0.007633015,
+                            "y": -1.4571182,
+                            "z": 0.4200257
+                        },
+                        "poseTypes": [
+                            "GLIDE"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "behaviour": {
+        "combat": {
+            "willDefendOwner": true
+        },
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "gogoat",
+                    "tier": 1
+                }
+            ]
+        },
+        "moving": {
+            "swim": {
+                "avoidsWater": true
+            },
+            "walk": {
+                "walkSpeed": 0.4
+            }
+        },
+        "resting": {
+            "canSleep": true,
+            "drowsyChance": 0.0333,
+            "light": "0-4",
+            "rouseChance": 0.0042
+        }
+    },
+    "drops": {
+        "amount": 4,
+        "entries": [
+            {
+                "item": "windswept:goat",
+                "quantityRange": "1-3"
+            },
+            {
+                "item": "cobblemon:oran_berry",
+                "percentage": 5.0
+            }
+        ]
+    },
+    "moves": [
+        "1:aerialace",
+        "1:tackle",
+        "1:growth",
+        "1:vinewhip",
+        "1:tailwhip",
+        "1:earthquake",
+        "12:leechseed",
+        "13:razorleaf",
+        "16:worryseed",
+        "20:synthesis",
+        "22:takedown",
+        "26:bulldoze",
+        "30:seedbomb",
+        "34:bulkup",
+        "40:doubleedge",
+        "47:hornleech",
+        "55:leafblade",
+        "58:milkdrink",
+        "egg:defensecurl",
+        "egg:grassyterrain",
+        "egg:milkdrink",
+        "egg:rollout",
+        "tm:aerialace",
+        "tm:bodyslam",
+        "tm:brickbreak",
+        "tm:bulkup",
+        "tm:bulldoze",
+        "tm:bulletseed",
+        "tm:dig",
+        "tm:doubleedge",
+        "tm:earthquake",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:energyball",
+        "tm:facade",
+        "tm:gigadrain",
+        "tm:gigaimpact",
+        "tm:grassknot",
+        "tm:grassyglide",
+        "tm:grassyterrain",
+        "tm:helpinghand",
+        "tm:highhorsepower",
+        "tm:hyperbeam",
+        "tm:irontail",
+        "tm:leafblade",
+        "tm:leafstorm",
+        "tm:magicalleaf",
+        "tm:mudshot",
+        "tm:mudslap",
+        "tm:naturepower",
+        "tm:payback",
+        "tm:playrough",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:roar",
+        "tm:rockslide",
+        "tm:rocksmash",
+        "tm:rollout",
+        "tm:seedbomb",
+        "tm:sleeptalk",
+        "tm:solarbeam",
+        "tm:stompingtantrum",
+        "tm:strength",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:superpower",
+        "tm:surf",
+        "tm:synthesis",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:throatchop",
+        "tm:trailblaze",
+        "tm:wildcharge",
+        "tm:workup",
+        "tm:worryseed",
+        "tm:zenheadbutt",
+        "tutor:aerialace",
+        "tutor:bulkup",
+        "tutor:bulldoze",
+        "tutor:endeavor",
+        "tutor:energyball",
+        "tutor:gigadrain",
+        "tutor:gigaimpact",
+        "tutor:grassyglide",
+        "tutor:helpinghand",
+        "tutor:highhorsepower",
+        "tutor:hyperbeam",
+        "tutor:irontail",
+        "tutor:magicalleaf",
+        "tutor:mudslap",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:rocksmash",
+        "tutor:rollout",
+        "tutor:seedbomb",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:superpower",
+        "tutor:synthesis",
+        "tutor:throatchop",
+        "tutor:wildcharge",
+        "tutor:worryseed",
+        "tutor:zenheadbutt"
+    ],
+    "preEvolution": "skiddo",
+    "evolutions": []
+}

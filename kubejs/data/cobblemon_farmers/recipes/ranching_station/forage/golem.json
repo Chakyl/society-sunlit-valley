@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "golem",
+	"forages": [
+		{
+			"item": "society:geode",
+			"count": 8,
+			"chance": 1,
+			"min_hearts": 2
+		},
+		{
+			"item": "society:omni_geode",
+			"count": 1,
+			"chance": 0.45,
+			"min_hearts": 10
+		}
+	]
+}

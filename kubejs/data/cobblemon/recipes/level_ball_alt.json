@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" t ", "lcr", " b "],
+  "key": {
+    "t": {
+      "item": "cobblemon:black_apricorn"
+    },
+    "l": {
+      "item": "cobblemon:yellow_apricorn"
+    },
+    "c": {
+      "item": "species:wicked_treat"
+    },
+    "r": {
+      "item": "cobblemon:pink_apricorn"
+    },
+    "b": {
+      "item": "cobblemon:red_apricorn"
+    }
+  },
+  "result": {
+    "item": "cobblemon:level_ball",
+    "count": 4
+  }
+}

@@ -5,75 +5,96 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 163,
+          "weight": 326,
           "data": {
             "Name": "society:sandstone_boulder"
           }
         },
         {
-          "weight": 20,
+          "weight": 40,
           "data": {
             "Name": "minecraft:gold_ore"
           }
         },
         {
-          "weight": 10,
+          "weight": 20,
           "data": {
             "Name": "oreganized:lead_ore"
           }
         },
         {
-          "weight": 6,
+          "weight": 12,
           "data": {
             "Name": "minecraft:redstone_ore"
           }
         },
         {
-          "weight": 4,
+          "weight": 8,
           "data": {
             "Name": "minecraft:diamond_ore"
           }
         },
         {
-          "weight": 4,
+          "weight": 8,
           "data": {
             "Name": "society:sparkstone_ore"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:omni_geode_node"
           }
         },
         {
-          "weight": 1,
+          "weight": 2,
           "data": {
             "Name": "oreganized:silver_ore"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:magma_geode_node"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:fire_quartz"
           }
         },
         {
-          "weight": 1,
+          "weight": 2,
           "data": {
             "Name": "society:iridium_ore"
           }
         },
         {
-          "weight": 2,
+          "weight": 4,
           "data": {
             "Name": "society:palm_supply_crate"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "sunlit_cobblemon:great_loot_ball"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "sunlit_cobblemon:ultra_loot_ball"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "sunlit_cobblemon:mon_box",
+            "Properties": {
+              "facing": "up"
+            }
           }
         }
       ]

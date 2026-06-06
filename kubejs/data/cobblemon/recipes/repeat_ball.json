@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "c": {
+            "item": "society:battery"
+        },
+        "r": {
+            "item": "cobblemon:red_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:yellow_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:repeat_ball",
+        "count": 4
+    }
+}

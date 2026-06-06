@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_love_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_love_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:pink_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        }
+      ]
+    },
+   {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:white_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:pink_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        },
+        {
+          "item": "society:sparkstone"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_love_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:love_ball"
+    }
+  ],
+  "loops": 1
+}

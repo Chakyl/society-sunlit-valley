@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RIR", "IBI", "GIG"],
+  "key": {
+    "G": {
+      "item": "minecraft:glowstone"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "refurbished_furniture:light_electricity_generator"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "cobblemon:electirizer"
+  }
+}

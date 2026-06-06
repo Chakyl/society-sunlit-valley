@@ -1,0 +1,87 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_klinks_n_klangs:unpainted_level_ball"
+  },
+  "transitionalItem": {
+    "item": "create_klinks_n_klangs:unfinished_level_ball"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:yellow_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        }
+      ]
+    },
+   {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:black_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        },
+        {
+          "amount": 250,
+          "fluid": "create_klinks_n_klangs:pink_paint",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        },
+        {
+          "item": "botania:elementium_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_klinks_n_klangs:unfinished_level_ball"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cobblemon:level_ball"
+    }
+  ],
+  "loops": 1
+}

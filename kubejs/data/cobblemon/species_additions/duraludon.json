@@ -1,0 +1,40 @@
+{
+  "implemented": true,
+  "target": "cobblemon:duraludon",
+  "baseScale": 1.5,
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.3,
+    "fixed": false
+  },
+  "drops": {
+    "amount": "1",
+    "entries": [
+      {
+        "item": "minecraft:iron_ingot",
+        "quantityRange": "1-32",
+        "percentage": 50
+      }
+    ]
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "depth": "normal",
+      "light": "0-4"
+    },
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.18,
+        "avoidsLand": false
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": false,
+        "canBreatheUnderwater": false
+      }
+    }
+  }
+}

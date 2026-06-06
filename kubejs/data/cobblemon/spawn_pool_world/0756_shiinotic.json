@@ -1,0 +1,73 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "shiinotic-1",
+            "pokemon": "shiinotic",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "24-41",
+            "weight": 0.2,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_magical",
+                    "#cobblemon:is_mushroom"
+                ],
+                "maxLight": 7
+            }
+        },
+        {
+            "id": "shiinotic-2",
+            "pokemon": "shiinotic",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "24-41",
+            "weight": 0.2,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_lush"
+                ]
+            }
+        },
+        {
+            "id": "shiinotic-3",
+            "pokemon": "shiinotic",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "24-41",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_fungus"
+                ]
+            }
+        },
+        {
+            "id": "shiinotic-4",
+            "pokemon": "shiinotic",
+            "presets": ["shrooms"],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "24-41",
+            "weight": 0.2
+        }
+    ]
+}

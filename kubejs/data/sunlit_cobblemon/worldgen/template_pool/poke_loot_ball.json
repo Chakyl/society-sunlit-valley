@@ -1,0 +1,15 @@
+{
+  "name": "sunlit_cobblemon:poke_loot_ball",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "sunlit_cobblemon:poke_loot_ball",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

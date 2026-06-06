@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "ampharos",
+	"forages": [
+		{
+			"item": "society:sparkstone_dust",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 5
+		},
+		{
+			"item": "society:sparkstone",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 8
+		}
+	]
+}

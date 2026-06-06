@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "pineco",
+	"forages": [
+		{
+			"item": "windswept:pinecone",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 1
+		},
+		{
+			"item": "windswept:pinecone_block",
+			"count": 1,
+			"chance": 0.5,
+			"min_hearts": 6
+		}
+	]
+}

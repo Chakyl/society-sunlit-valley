@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "flaaffy",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:electro_wool",
+			"count": 1,
+			"chance": 0.8,
+			"has_quality": true,
+			"min_hearts": 5
+		},
+		{
+			"item": "society:sparkstone_dust",
+			"count": 4,
+			"chance": 0.5,
+			"min_hearts": 8
+		}
+	]
+}

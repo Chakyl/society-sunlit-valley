@@ -1,0 +1,28 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "vigoroth-1",
+            "pokemon": "vigoroth",
+            "presets": [
+                "natural",
+                "treetop",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "18-44",
+            "weight": 0.18,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#atmospheric:is_rainforest"
+                ]
+            }
+        }
+    ]
+}

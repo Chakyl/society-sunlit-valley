@@ -1,0 +1,164 @@
+{
+  "displayName": "Cue Ball Camron",
+  "team": [
+    {
+      "species": "cobblemon:swampert",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:sassy",
+      "ability": "damp",
+      "moveset": [
+        "stealthrock",
+        "flipturn",
+        "earthquake",
+        "yawn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 4,
+        "defence": 252,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers"
+    },
+    {
+      "species": "cobblemon:aerodactyl",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "rockhead",
+      "moveset": [
+        "dualwingbeat",
+        "stoneedge",
+        "earthquake",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb"
+    },
+    {
+      "species": "cobblemon:scizor",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "swarm",
+      "moveset": [
+        "uturn",
+        "bulletpunch",
+        "rocksmash",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:scizorite"
+    },
+    {
+      "species": "cobblemon:garchomp",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "sandveil",
+      "moveset": [
+        "swordsdance",
+        "earthquake",
+        "stoneedge",
+        "scaleshot"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash"
+    },
+    {
+      "species": "cobblemon:cacturne",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "sandrush",
+      "moveset": [
+        "needlearm",
+        "suckerpunch",
+        "knockoff",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb"
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}

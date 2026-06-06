@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "dipplin",
+	"forages": [
+		{
+			"item": "buzzier_bees:honey_apple",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 1
+		},
+		{
+			"item": "society:maple_syrup",
+			"count": 1,
+			"chance": 0.25,
+			"min_hearts": 6
+		}
+	]
+}

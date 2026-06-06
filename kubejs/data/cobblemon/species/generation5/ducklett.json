@@ -1,0 +1,213 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 580,
+    "name": "Ducklett",
+    "primaryType": "water",
+    "secondaryType": "flying",
+    "maleRatio": 0.5,
+    "height": 5,
+    "weight": 55,
+    "pokedex": [
+        "cobblemon.species.ducklett.desc"
+    ],
+    "labels": [
+        "gen5"
+    ],
+    "aspects": [],
+    "abilities": [
+        "keeneye",
+        "bigpecks",
+        "h:hydration"
+    ],
+    "eggGroups": [
+        "water_1",
+        "flying"
+    ],
+    "baseStats": {
+        "hp": 62,
+        "attack": 44,
+        "defence": 50,
+        "special_attack": 44,
+        "special_defence": 50,
+        "speed": 55
+    },
+    "evYield": {
+        "hp": 1,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+    },
+    "baseExperienceYield": 61,
+    "experienceGroup": "medium_fast",
+    "catchRate": 190,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 0.6,
+    "hitbox": {
+        "width": 0.6,
+        "height": 1.1,
+        "fixed": false
+    },
+    "behaviour": {
+        "moving": {
+            "walk": {
+                "walkSpeed": 0.28
+            },
+            "swim": {
+                "swimSpeed": 0.17,
+                "canWalkOnWater": true
+            },
+            "fly": {
+                "canFly": true
+            }
+        },
+        "herd": {
+            "maxSize": "9",
+            "toleratedLeaders": [
+                {
+                    "pokemon": "ducklett",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "quaxly",
+                    "tier": 1
+                },
+                {
+                    "pokemon": "farfetchd galarian=false",
+                    "tier": 2
+                },
+                {
+                    "pokemon": "quaxwell",
+                    "tier": 3
+                },
+                {
+                    "pokemon": "quaquaval",
+                    "tier": 4
+                },
+                {
+                    "pokemon": "swanna",
+                    "tier": 5
+                }
+            ]
+        },
+        "resting": {
+            "willSleepOnBed": true,
+            "drowsyChance": 0.0333,
+            "rouseChance": 0.0042
+        },
+        "combat": {
+            "willDefendOwner": true
+        }
+    },
+    "drops": {
+        "amount": 3,
+        "entries": [
+            {
+                "item": "untitledduckmod:duck_feather",
+                "quantityRange": "0-1"
+            },
+            {
+                "item": "untitledduckmod:raw_duck"
+            },
+            {
+                "item": "cobblemon:wacan_berry",
+                "percentage": 2.5
+            }
+        ]
+    },
+    "moves": [
+        "1:watergun",
+        "1:watersport",
+        "6:defog",
+        "9:wingattack",
+        "13:waterpulse",
+        "15:aerialace",
+        "19:bubblebeam",
+        "21:featherdance",
+        "24:aquaring",
+        "27:airslash",
+        "30:roost",
+        "34:raindance",
+        "37:tailwind",
+        "41:bravebird",
+        "46:hurricane",
+        "egg:aquajet",
+        "egg:brine",
+        "egg:dive",
+        "egg:endeavor",
+        "egg:gust",
+        "egg:luckychant",
+        "egg:mefirst",
+        "egg:mirrormove",
+        "egg:mudsport",
+        "egg:steelwing",
+        "tm:aerialace",
+        "tm:aircutter",
+        "tm:airslash",
+        "tm:bravebird",
+        "tm:brine",
+        "tm:chillingwater",
+        "tm:defog",
+        "tm:disarmingvoice",
+        "tm:dive",
+        "tm:doubleedge",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:facade",
+        "tm:featherdance",
+        "tm:fly",
+        "tm:hail",
+        "tm:helpinghand",
+        "tm:hurricane",
+        "tm:icebeam",
+        "tm:icywind",
+        "tm:liquidation",
+        "tm:pluck",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:roost",
+        "tm:sleeptalk",
+        "tm:steelwing",
+        "tm:substitute",
+        "tm:surf",
+        "tm:swift",
+        "tm:tailwind",
+        "tm:terablast",
+        "tm:trailblaze",
+        "tm:waterpulse",
+        "tm:whirlpool",
+        "tutor:aerialace",
+        "tutor:aircutter",
+        "tutor:defog",
+        "tutor:dive",
+        "tutor:endeavor",
+        "tutor:helpinghand",
+        "tutor:icebeam",
+        "tutor:icywind",
+        "tutor:liquidation",
+        "tutor:rest",
+        "tutor:roost",
+        "tutor:sleeptalk",
+        "tutor:swift",
+        "tutor:tailwind",
+        "tutor:waterpulse"
+    ],
+    "evolutions": [
+        {
+            "id": "ducklett_swanna",
+            "variant": "level_up",
+            "result": "swanna",
+            "consumeHeldItem": false,
+            "learnableMoves": [],
+            "requirements": [
+                {
+                    "variant": "level",
+                    "minLevel": 35
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        "IBI",
+		" I "
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "simplemagnets:basicmagnet"
+        }
+    },
+    "result": {
+        "item": "cobblemon:magnet"
+    }
+}

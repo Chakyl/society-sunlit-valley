@@ -1,0 +1,39 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "scovillain-1",
+      "pokemon": "scovillain",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "26-60",
+      "weight": 0.6,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_arid"
+        ]
+      }
+    },
+    {
+      "id": "scovillain-2",
+      "pokemon": "scovillain",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "51-86",
+      "weight": 1.0,
+      "condition": {
+        "biomes": [
+          "society:desert_fault"
+        ]
+      }
+    }
+  ]
+}

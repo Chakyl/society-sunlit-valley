@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "ironvaliant-1",
+      "pokemon": "ironvaliant",
+      "presets": ["future_tech"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "50-70",
+      "weight": 1.0,
+      "condition": {
+        "canSeeSky": false,
+        "neededNearbyBlocks": ["society:charging_rod"]
+      }
+    }
+  ]
+}

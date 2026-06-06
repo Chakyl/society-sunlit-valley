@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "malamar",
+	"forages": [
+		{
+			"item": "crabbersdelight:raw_glow_squid_tentacles",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "supplementaries:antique_ink",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 6
+		}
+	]
+}

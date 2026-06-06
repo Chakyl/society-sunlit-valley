@@ -1,0 +1,76 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "swirlix-4",
+            "pokemon": "swirlix",
+            "presets": [
+                "mansion_dining"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "9-34",
+            "weight": 5.7,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            }
+        },
+        {
+            "id": "swirlix-1",
+            "pokemon": "swirlix",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "9-34",
+            "weight": 9.5,
+            "condition": {
+                "biomes": [
+                    "#aether:is_aether",
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:cake"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:sugar_cane"
+                ]
+            }
+        },
+        {
+            "id": "swirlix-2",
+            "pokemon": "swirlix",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "9-34",
+            "weight": 5.52,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether",
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:sugar_cane"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:cake"
+                ]
+            }
+        }
+    ]
+}

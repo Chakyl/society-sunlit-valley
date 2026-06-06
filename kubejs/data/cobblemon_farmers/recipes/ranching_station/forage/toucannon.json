@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "toucannon",
+	"forages": [
+		{
+			"item": "society:large_egg",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "cobblemon:muscle_feather",
+			"count": 1,
+			"chance": 0.1,
+			"min_hearts": 8
+		},
+		{
+			"item": "supplementaries:cannonball",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 10
+		}
+	]
+}

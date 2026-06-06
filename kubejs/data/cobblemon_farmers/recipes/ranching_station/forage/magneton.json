@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "magneton",
+	"forages": [
+		{
+			"item": "oreganized:lead_nugget",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 1
+		},
+		{
+			"item": "oreganized:silver_nugget",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 5
+		}
+	]
+}

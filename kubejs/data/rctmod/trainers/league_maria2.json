@@ -1,0 +1,172 @@
+{
+  "displayName": "Sunlit League Maria",
+  "team": [
+    {
+      "species": "cobblemon:hitmonchan",
+      "gender": "MALE",
+      "level": 40,
+      "nature": "cobblemon:adamant",
+      "ability": "ironfist",
+      "moveset": [
+        "poweruppunch",
+        "firepunch",
+        "icepunch",
+        "thunderpunch"
+      ],
+      "ivs": {
+        "hp": 6,
+        "attack": 24,
+        "defence": 19,
+        "special_attack": 6,
+        "special_defence": 24
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:miltank",
+      "gender": "FEMALE",
+      "level": 38,
+      "nature": "cobblemon:careful",
+      "ability": "thickfat",
+      "moveset": [
+        "headbutt",
+        "zenheadbutt",
+        "rollout",
+        "defensecurl"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 2,
+        "defence": 16,
+        "special_attack": 1,
+        "special_defence": 20,
+        "speed": 6
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female",
+        "milkable"
+      ]
+    },
+    {
+      "species": "cobblemon:hariyama",
+      "gender": "FEMALE",
+      "level": 38,
+      "nature": "cobblemon:adamant",
+      "ability": "thickfat",
+      "moveset": [
+        "forcepalm",
+        "fakeout",
+        "bellydrum",
+        "smellingsalts"
+      ],
+      "ivs": {
+        "hp": 2,
+        "attack": 5,
+        "defence": 10,
+        "special_attack": 3,
+        "special_defence": 22,
+        "speed": 30
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:riolu",
+      "gender": "MALE",
+      "level": 38,
+      "nature": "cobblemon:lonely",
+      "ability": "steadfast",
+      "moveset": [
+        "counter",
+        "metalclaw",
+        "forcepalm",
+        "screech"
+      ],
+      "ivs": {
+        "hp": 12,
+        "attack": 7,
+        "defence": 14,
+        "special_attack": 25,
+        "special_defence": 27,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:hawlucha",
+      "gender": "FEMALE",
+      "level": 38,
+      "nature": "cobblemon:adamant",
+      "ability": "limber",
+      "moveset": [
+        "aerialace",
+        "honeclaws",
+        "karatechop",
+        "detect"
+      ],
+      "ivs": {
+        "hp": 28,
+        "attack": 31,
+        "defence": 27,
+        "special_attack": 22,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:ambipom",
+      "gender": "FEMALE",
+      "level": 38,
+      "nature": "cobblemon:adamant",
+      "ability": "pickup",
+      "moveset": [
+        "screech",
+        "dualchop",
+        "furyswipes",
+        "sandattack"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 4,
+        "defence": 16,
+        "special_attack": 21,
+        "special_defence": 19,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

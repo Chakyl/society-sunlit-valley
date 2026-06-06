@@ -1,0 +1,193 @@
+{
+  "displayName": "Bird Legend Melt",
+  "team": [
+    {
+      "species": "cobblemon:skeledirge",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "unaware",
+      "moveset": [
+        "torchsong",
+        "shadowball",
+        "scorchingsands",
+        "snarl"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:arcanine",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "intimidate",
+      "moveset": [
+        "ragingfury",
+        "rockslide",
+        "extremespeed",
+        "crunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:lum_berry",
+      "aspects": [
+        "hisuian",
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:moltres",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:quirky",
+      "ability": "flamebody",
+      "moveset": [
+        "ancientpower",
+        "heatwave",
+        "airslash",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:charcoal_stick",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:turtonator",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:calm",
+      "ability": "shellarmor",
+      "moveset": [
+        "irondefense",
+        "flamethrower",
+        "dragonpulse",
+        "shelltrap"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_defence": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:marowak",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "lightningrod",
+      "moveset": [
+        "flareblitz",
+        "shadowbone",
+        "bonemerang",
+        "headbutt"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "alolan",
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ceruledge",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "flashfire",
+      "moveset": [
+        "nightslash",
+        "psychocut",
+        "bitterblade",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:razor_claw",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

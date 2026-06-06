@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "magcargo",
+	"forages": [
+		{
+			"item": "autumnity:snail_goo",
+			"count": 4,
+			"chance": 0.4,
+			"min_hearts": 4
+		},
+		{
+			"item": "autumnity:snail_shell_block",
+			"count": 1,
+			"chance": 0.2,
+			"min_hearts": 8
+		}
+	]
+}

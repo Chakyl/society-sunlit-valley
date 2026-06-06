@@ -1,0 +1,25 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "muk",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 4,
+			"chance": 0.45,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "brewery:whiskey_jojannik",
+			"count": 1,
+			"chance": 0.45,
+			"min_hearts": 6
+		},
+		{
+			"item": "sunlit_cobblemon:mukbeth",
+			"count": 1,
+			"chance": 0.01,
+			"min_hearts": 6
+		}
+	]
+}

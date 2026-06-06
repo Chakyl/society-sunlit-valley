@@ -1,0 +1,20 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "sinistcha",
+	"forages": [
+		{
+			"item": "herbalbrews:green_tea",
+			"count": 1,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 3
+		},
+		{
+			"item": "herbalbrews:oolong_tea",
+			"count": 1,
+			"chance": 0.2,
+			"has_quality": true,
+			"min_hearts": 10
+		}
+	]
+}

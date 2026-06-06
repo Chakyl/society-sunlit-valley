@@ -1,0 +1,89 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "dudunsparce-two-segment-1",
+            "pokemon": "dudunsparce landsnake_form=two-segment",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "32-52",
+            "weight": 0.3168,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
+            }
+        },
+        {
+            "id": "dudunsparce-three-segment-2",
+            "pokemon": "dudunsparce landsnake_form=three-segment",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "32-52",
+            "weight": 0.0032,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
+            }
+        },
+        {
+            "id": "dudunsparce-two-segment-2",
+            "pokemon": "dudunsparce landsnake_form=two-segment",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "60-80",
+            "weight": 0.3,
+            "condition": {
+                "biomes": [
+                    "#society:is_skull_cavern"
+                ]
+            }
+        },
+        {
+            "id": "dudunsparce-three-segment-3",
+            "pokemon": "dudunsparce landsnake_form=three-segment",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "60-80",
+            "weight": 0.0032,
+            "condition": {
+                "biomes": [
+                    "#society:is_skull_cavern"
+                ]
+            }
+        }
+    ]
+}

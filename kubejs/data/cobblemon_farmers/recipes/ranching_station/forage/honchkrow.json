@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "honchkrow",
+	"forages": [
+		{
+			"item": "society:tubasmoke_carton",
+			"count": 1,
+			"chance": 0.83,
+			"has_quality": true,
+			"min_hearts": 8
+		},
+		{
+			"item": "brewery:dark_brew",
+			"count": 1,
+			"chance": 0.3,
+			"min_hearts": 10
+		}
+	]
+}

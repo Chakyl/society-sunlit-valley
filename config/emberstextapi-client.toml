@@ -1,0 +1,20 @@
+
+#EmbersTextAPI Client Configuration
+[general]
+	#Master toggle for immersive messages (sent via commands/API)
+	immersiveMessagesEnabled = true
+
+#Effect Settings
+[effects]
+	#List of effect names to disable globally (e.g. ["glitch", "shake"]). Disabled effects render as plain text.
+	disabledEffects = []
+
+#Limits
+[limits]
+	#Maximum immersive message duration in ticks. 0 = unlimited.
+	#Range: > 0
+	maxMessageDuration = 0
+	#Maximum simultaneous active messages per player. 0 = unlimited.
+	#Range: > 0
+	maxActiveMessages = 0
+

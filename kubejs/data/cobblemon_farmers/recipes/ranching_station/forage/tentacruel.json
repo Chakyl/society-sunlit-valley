@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "tentacruel",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:poison_drop",
+			"count": 2,
+			"chance": 0.15,
+			"has_quality": true,
+			"min_hearts": 6
+		},
+		{
+			"item": "society:ocean_jelly",
+			"count": 1,
+			"chance": 0.09,
+			"min_hearts": 8
+		}
+	]
+}

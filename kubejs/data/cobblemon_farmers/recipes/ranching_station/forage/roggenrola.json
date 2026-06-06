@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "roggenrola",
+	"forages": [
+		{
+			"item": "society:geode",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 1
+		},
+		{
+			"item": "society:earth_crystal",
+			"count": 1,
+			"chance": 0.15,
+			"min_hearts": 5
+		},
+		{
+			"item": "botania:livingrock",
+			"count": 1,
+			"chance": 1,
+			"min_hearts": 7
+		}
+	]
+}

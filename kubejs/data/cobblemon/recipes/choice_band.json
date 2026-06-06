@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "WQW",
+        "LMQ",
+		"RLW"
+    ],
+    "key": {
+        "W": {
+            "item": "society:white_sheet"
+        },
+        "L": {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "R": {
+            "item": "society:fire_opal"
+        },
+        "M": {
+            "item": "cobblemon:muscle_band"
+        },
+        "Q": {
+            "item": "oreganized:silver_ingot"
+        }
+    },
+    "result": {
+        "item": "cobblemon:choice_band"
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "foongus-1",
+      "pokemon": "foongus",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "15-20",
+      "weight": 4.8,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "foongus-2",
+      "pokemon": "foongus",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "15-20",
+      "weight": 4.8,
+      "condition": {
+        "biomes": [
+          "incendium:toxic_heap"
+        ]
+      }
+    },
+    {
+      "id": "foongus-3",
+      "pokemon": "foongus",
+      "presets": [
+        "shrooms"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "14-20",
+      "weight": 5
+    }
+  ]
+}

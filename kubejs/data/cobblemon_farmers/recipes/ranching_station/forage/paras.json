@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "paras",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:paras_mushroom",
+			"count": 2,
+			"chance": 1,
+			"has_quality": true,
+			"min_hearts": 0
+		},
+		{
+			"item": "cobblemon:big_root",
+			"count": 1,
+			"chance": 0.65,
+			"min_hearts": 8
+		}
+	]
+}

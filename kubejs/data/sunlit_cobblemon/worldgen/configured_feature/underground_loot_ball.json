@@ -1,0 +1,72 @@
+{
+  "config": {
+    "tries": 5,
+    "xz_spread": 14,
+    "y_spread": 4,
+    "feature": {
+      "feature": {
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "sunlit_cobblemon:sun_raid_statue"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "sunlit_cobblemon:poke_loot_ball"
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "sunlit_cobblemon:great_loot_ball"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "sunlit_cobblemon:ultra_loot_ball"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "sunlit_cobblemon:mon_box"
+                }
+              }
+            ]
+          }
+        },
+        "type": "minecraft:simple_block"
+      },
+      "placement": [
+        {
+          "predicate": {
+            "predicates": [
+              {
+                "blocks": "minecraft:air",
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "type": "minecraft:solid"
+              }
+            ],
+            "type": "minecraft:all_of"
+          },
+          "type": "minecraft:block_predicate_filter"
+        }
+      ]
+    }
+  },
+  "type": "minecraft:random_patch"
+}

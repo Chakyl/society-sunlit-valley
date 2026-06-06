@@ -10,6 +10,38 @@
       "bonus_rolls": 0,
       "entries": [
         {
+          "type": "minecraft:tag",
+          "name": "sunlit_cobblemon:tr",
+          "expand": true,
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:tag",
+          "name": "sunlit_cobblemon:tm",
+          "expand": true,
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
           "type": "minecraft:item",
           "weight": 14,
           "functions": [
