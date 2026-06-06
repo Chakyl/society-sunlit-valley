@@ -666,7 +666,7 @@ global.executePlushieHusbandry = (
       day,
       false,
       plushieMods,
-      global.NO_STAGES,
+      player.stages,
     );
     if (milkItem !== -1) {
       let milk = level.createEntity("minecraft:item");
