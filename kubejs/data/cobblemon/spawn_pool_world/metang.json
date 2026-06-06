@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+       { "id": "metang-1",
+      "pokemon": "metang",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "30-54",
+      "weight": 0.25,
+      "condition": {
+        "neededNearbyBlocks": [
+            "minecraft:enchanting_table"
+        ]
+      }
+    }
+  ]
+}
