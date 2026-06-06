@@ -1,15 +1,30 @@
 /**
- * @param {Internal.Stages|Internal.CompoundTag|null} stages
- * @param {string} stage
+ * wrapper so that arbitrary stage data can be read using the has() method same as player.stages
+ * @param {string[]} stages
+ * @return {object}
  */
-global.isStagePresent = (stages, stage) => {
-  if (stages === null) {
-    return false;
-  }
-  try {
-    return stages.has(stage);
-  } catch (e) {}
-  return stages.contains(stage);
+function SocietyStages(stages) {
+  return {
+    value: stages,
+    has: function (x) {
+      return this.value.includes(x);
+    },
+  };
+}
+
+global.NO_STAGES = SocietyStages([]);
+
+const TAG_STRING = Java.loadClass("net.minecraft.nbt.Tag").TAG_STRING;
+
+/**
+ * reads stages set in block entity NBT data by global.cacheOwner()
+ * @param {Internal.BlockEntityJS} blockEntity
+ * @return {SocietyStages}
+ */
+global.getBlockEntityStages = (blockEntity) => {
+  return SocietyStages(
+    blockEntity.data.getList("stages", TAG_STRING).toArray().map((x) => x.toString())
+  );
 }
 
 /**

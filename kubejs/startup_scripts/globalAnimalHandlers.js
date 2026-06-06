@@ -92,8 +92,8 @@ const canMilk = (data, target, day, plushieModifiers) => {
 
 /**
  * @param {Internal.Player|null} player
- * player.stages, or auto-grabber NBT stages, or null for mana milker
- * @param {Internal.Stages|Internal.CompoundTag|null} stages 
+ * player.stages, or auto-grabber NBT stages, or empty stages for mana milker
+ * @param {Internal.Stages|SocietyStages} stages 
  */
 global.getMilk = (
   level,
@@ -115,7 +115,7 @@ global.getMilk = (
   } else {
     affection = data.getInt("affection") || 0;
     mood = global.getOrFetchMood(level, target, day, player);
-    affectionIncrease = global.isStagePresent(stages, "animal_whisperer") || data.bribed ? 10 : 5;
+    affectionIncrease = stages.has("animal_whisperer") || data.bribed ? 10 : 5;
   }
   let hearts = Math.floor(affection / 100);
 
@@ -138,7 +138,7 @@ global.getMilk = (
       }
     }
     return Item.of(
-      `${(global.isStagePresent(stages, "shepherd") ? 2 : 1) *
+      `${(stages.has("shepherd") ? 2 : 1) *
       crackerBonus *
       (plushieDoubleDrops ? 2 : 1)
       }x ${milkId}`,
@@ -150,7 +150,7 @@ global.getMilk = (
 
 /**
  * @param {Internal.Player|null} player
- * @param {Internal.Stages|Internal.CompoundTag} stages player.stages or auto-grabber NBT stages
+ * @param {Internal.Stages|SocietyStages} stages player.stages or auto-grabber NBT stages
  */
 global.handleSpecialHarvest = (
   level,
@@ -178,7 +178,7 @@ global.handleSpecialHarvest = (
       if (definition.animal.equals(type)) {
         definition.forages.forEach((forage) => {
           resolvedCount = forage.countMult;
-          if (forage.stage && global.isStagePresent(stages, forage.stage.name)) {
+          if (forage.stage && stages.has(forage.stage.name)) {
             resolvedCount = forage.stage.newCountMult;
           }
           if (forage.itemPool) {
@@ -212,7 +212,7 @@ global.handleSpecialHarvest = (
       }
     });
     if (
-      global.isStagePresent(stages, "coopmaster") &&
+      stages.has("coopmaster") &&
       (plushieModifiers
         ? global.coopMasterAnimals.includes(data.type)
         : global.checkEntityTag(target, "society:coopmaster_bird"))
@@ -237,7 +237,7 @@ global.handleSpecialHarvest = (
         }
       );
     }
-    if (data.bff && global.isStagePresent(stages, "bff")) {
+    if (data.bff && stages.has("bff")) {
       harvestFunction(
         data,
         day,
@@ -258,7 +258,7 @@ global.handleSpecialHarvest = (
         }
       );
     }
-    if (player && !player.isFake() && !global.isStagePresent(stages, "animal_fancy")) {
+    if (player && !player.isFake() && !stages.has("animal_fancy")) {
       harvestFunction(
         data,
         day,
@@ -279,7 +279,7 @@ global.handleSpecialHarvest = (
         }
       );
     }
-    if (global.isStagePresent(stages, "reaping_scythe")) {
+    if (stages.has("reaping_scythe")) {
       harvestFunction(
         data,
         day,
@@ -333,8 +333,8 @@ global.handleSpecialHarvest = (
 
 /**
  * @param {Internal.Player|null} player
- * player.stages, or auto grabber NBT stages, or null for mana milker
- * @param {Internal.Stages|Internal.CompoundTag|null} stages
+ * player.stages, or auto grabber NBT stages, or empty stages for mana milker
+ * @param {Internal.Stages|SocietyStages} stages
  */
 global.getMagicShearsOutput = (level, target, player, plushieModifiers, stages) => {
   const day = global.getDay(level);
@@ -388,7 +388,7 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers, stages) 
         );
       }
     }
-    if (global.isStagePresent(stages, "mana_hand")) {
+    if (stages.has("mana_hand")) {
       let dropItem;
       for (let i = 0; i < droppedLoot.length; i++) {
         dropItem = droppedLoot[i];
@@ -405,7 +405,7 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers, stages) 
     for (let i = 0; i < droppedLoot.length; i++) {
       newLoot.push(droppedLoot[i]);
     }
-    if (global.isStagePresent(stages, "heretic")) {
+    if (stages.has("heretic")) {
       newLoot.push(Item.of("3x society:sparkstone"));
       if (!plushieModifiers) {
         target.attack(2);
@@ -666,7 +666,7 @@ global.executePlushieHusbandry = (
       day,
       false,
       plushieMods,
-      null,
+      global.NO_STAGES,
     );
     if (milkItem !== -1) {
       let milk = level.createEntity("minecraft:item");

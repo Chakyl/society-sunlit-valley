@@ -10,7 +10,7 @@ const artisanMachineCanHaveAdditionalOutput = [
 ];
 
 /** 
- * @param {Internal.CompoundTag} stages
+ * @param {Internal.Stages|SocietyStages} stages
  */
 global.handleAdditionalArtisanMachineOutputs = (
   level,
@@ -65,7 +65,7 @@ global.handleAdditionalArtisanMachineOutputs = (
       break;
     }
     case "society:aging_cask": {
-      if (stages.contains("aged_prize") && rnd5()) {
+      if (stages.has("aged_prize") && rnd5()) {
         global.insertBelow(level, block, "society:prize_ticket");
       }
       break;
@@ -86,7 +86,7 @@ global.handleAdditionalArtisanMachineOutputs = (
 };
 // TODO: make artisan hopper set tappers
 /**
- * @param {Internal.CompoundTag} stages
+ * @param {Internal.Stages|SocietyStages} stages
  */
 global.getArtisanMachineData = (player, block, upgraded, stages) => {
   let machineData = {
@@ -98,7 +98,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
     soundType: "minecraft:ui.toast.in",
   };
   let rancherOutputCount;
-  if (stages.contains("rancher") && Math.random() <= 0.2) {
+  if (stages.has("rancher") && Math.random() <= 0.2) {
     rancherOutputCount = 2;
   }
   let machineNbt = block.getEntityData();
@@ -160,7 +160,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
       };
       break;
     case "society:ancient_cask":
-      if (stages.contains("ancient_aging")) {
+      if (stages.has("ancient_aging")) {
         if (upgraded) {
           machineData = {
             recipes: global.ancientCaskRecipes,
@@ -245,7 +245,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
         recipes: global.tapperRecipes,
         stageCount: 1,
         soundType: "vinery:cabinet_close",
-        outputMult: stages.contains("canadian_and_famous") ? 2 : 1,
+        outputMult: stages.has("canadian_and_famous") ? 2 : 1,
       };
       break;
     case "society:mushroom_log":
@@ -279,7 +279,7 @@ global.runArtisanHopper = (artisanHopper, artisanMachinePos, player, delay) => {
     const nbt = artisanMachine.getEntityData();
     if (!nbt || !nbt.data) return;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
-    const stages = artisanHopper.data.stages;
+    const stages = global.getBlockEntityStages(artisanHopper);
     const loadedData = global.getArtisanMachineData(
       player,
       artisanMachine,
@@ -391,7 +391,7 @@ global.runArtisanHopper = (artisanHopper, artisanMachinePos, player, delay) => {
             );
           }
           let sparkstoneSaveChance = 0;
-          if (stages.contains("slouching_towards_artistry")) {
+          if (stages.has("slouching_towards_artistry")) {
             sparkstoneSaveChance = Number(currentStage) * 0.05;
           }
           if (!recycleSparkstone && Math.random() > sparkstoneSaveChance) {

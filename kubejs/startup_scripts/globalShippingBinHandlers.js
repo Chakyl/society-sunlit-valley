@@ -71,6 +71,10 @@ global.getAttributeMultiplier = (attributes, multiplier) => {
   );
 };
 
+/**
+ * TODO replace ListTag with SocietyStages, replace toString().includes() with has()
+ * @param {Internal.Stages|Internal.ListTag} stages 
+ */
 global.processShippingBinInventory = (
   inventory,
   inventorySlots,

@@ -6,7 +6,7 @@ console.info("[SOCIETY] artisanHopper.js loaded");
  */
 global.runFishPondBasket = (fishPondBasket, fishPondPos, player) => {
   const { level, block, inventory } = fishPondBasket;
-  const stages = fishPondBasket.data.stages;
+  const stages = global.getBlockEntityStages(fishPondBasket);
   const server = level.server;
   const fishPond = level.getBlock(fishPondPos);
   const { x, y, z } = fishPond;

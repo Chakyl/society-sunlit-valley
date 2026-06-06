@@ -95,7 +95,7 @@ global.autoGrabAnimal = (autoGrabber, player, animal, plushieModifiers) => {
   } else {
     data = animal.persistentData;
   }
-  const stages = autoGrabber.data.stages;
+  const stages = global.getBlockEntityStages(autoGrabber);
   const day = global.getDay(level);
   let mood;
   let hungry;
