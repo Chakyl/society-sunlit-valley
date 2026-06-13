@@ -75,7 +75,7 @@ StartupEvents.registry("block", (event) => {
     .model("society:block/kubejs/mana_sprinkler")
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(20, 0, (entity) => {
-        global.manaSprinklerScan(entity, 3);
+        global.manaSprinklerScan(entity, 2);
       }),
         blockInfo.attachCapability(
           BotaniaCapabilityBuilder.MANA.blockEntity()
