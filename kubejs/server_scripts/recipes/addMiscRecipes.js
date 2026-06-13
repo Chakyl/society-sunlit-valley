@@ -1005,4 +1005,13 @@ ServerEvents.recipes((e) => {
   e.shapeless("dew_drop_farmland_growth:low_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:low_quality_fertilizer"])
   e.shapeless("dew_drop_farmland_growth:high_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:high_quality_fertilizer"])
   e.shapeless("dew_drop_farmland_growth:pristine_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:pristine_quality_fertilizer"])
+
+  e.custom({
+  type: "create:filling",
+  ingredients: [
+    {"item": "vintagedelight:roasted_peanut"},
+    {"amount": 125, "fluid": "create:honey"}
+  ],
+  "results": [{ "item": "vintagedelight:honey_roasted_peanut" }]
+});
 });
