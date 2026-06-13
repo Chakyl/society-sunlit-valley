@@ -1,6 +1,6 @@
 // const runBuildingShopDatagen = true;
 
-// const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "mason", "prismarine", "siberian", "tudor", "vibrantown"]
+// const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "mason", "prismarine", "siberian", "tudor", "vibrantown", "floral", "sakura"]
 // const buildingTypes = ["home", "shed", "large_shed", "coop", "barn", "deluxe_barn", "greenhouse"]
 // const buildingTypeNames = ["Farmhouse", "Shed", "Large Shed", "Coop", "Barn", "Deluxe Barn", "Greenhouse"]
 // const catalysts = ["tanukidecor:antique_bed", 'society:preserves_jar', "society:aging_cask", 'minecraft:egg', 'society:milk', 'society:large_milk', 'moreminecarts:chiseled_organic_glass']
