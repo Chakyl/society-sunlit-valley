@@ -159,21 +159,6 @@ JEIAddedEvents.registerRecipes((e) => {
 
   [
     {
-      catalog: "society:tanuki_catalog",
-      cost: "2x numismatics:crown",
-      output: "society:tanuki_leaf",
-    },
-    {
-      catalog: "society:modern_catalog",
-      cost: "6x numismatics:crown",
-      output: "society:architects_digest",
-    },
-    {
-      catalog: "society:fantasy_catalog",
-      cost: "4x numismatics:crown",
-      output: "society:fantasy_dust",
-    },
-    {
       catalog: "whimsy_deco:gatcha_machine",
       cost: "1x numismatics:sun",
       output: "society:plushie_capsule",

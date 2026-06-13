@@ -23,6 +23,7 @@ if (global.datagenDialog) {
         ["See you later Soft One. You never stop, so I'm just assuming you'll be back.", "Please leave."],
         ["Your leaves look shiny and sticky and dewy", "But on second touch, they are fabric", "Oh, eternal polyester."],
         ["That one with the red hair...", "You know the one.", "Do not let that one be corrupted by the influence of Caroline."],
+        ["My dog barks some...", "Mentally, you picture my dog but I have not told you the type of dog which I have..."],
         ["Let us speak frankly, o' Soft One.", "Cottagecore is an infantilization of the act your people call 'colonization'.", "Burying it in sweet words will not save your soul from the darkness of the forest."],
       
       ],

@@ -35,8 +35,8 @@
 //           item: "meadow:fire_log",
 //           count: 32
 //         },
-//         image_description: `${langPrefix}.dimensions`,
 //         image: `society:textures/gui/buildings/${set}/${type}_${set}`,
+//         image_description: `portable_blueprints.worn_blueprint.${set}_${type}.dimensions`,
 //         trade_id: `bs_${type}_${set}`
 //       });
 //     })

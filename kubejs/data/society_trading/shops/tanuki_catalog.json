@@ -1,0 +1,3373 @@
+{
+	"shop_id": "tanuki_catalog",
+	"name": "shop.society_trading.catalog.tanuki",
+	"hidden_from_selector": true,
+	"display_type": "thin",
+	"texture": "",
+	"jei_catalyst": {
+		"item": "society:tanuki_catalog"
+	},
+	"block_tag": "society:opens_tanuki_catalog",
+	"trades": [
+		{
+			"offer": {
+				"item": "tanukidecor:antique_bookcase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_bookcase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:ship_in_a_bottle",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_ship_in_a_bottle"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_mushroom_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_mushroom_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_bureau",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_bureau"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:rococo_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_rococo_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_science_pod",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_science_pod"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:egyptian_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_egyptian_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:recognizable_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_recognizable_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:purple_rocket_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_purple_rocket_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:metronome",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_metronome"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:slate_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_slate_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:phonograph",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_phonograph"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:station_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_station_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:egyptian_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_egyptian_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_sofa",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_sofa"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_couch",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_couch"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:narrow_string_lights",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_narrow_string_lights"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wide_blue_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wide_blue_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:egyptian_crest",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_egyptian_crest"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:small_striped_vase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_small_striped_vase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_mirror"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_wall_oil_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_wall_oil_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_wardrobe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_wardrobe"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:snowglobe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_snowglobe"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:yellow_rocket_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_yellow_rocket_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:newtons_cradle",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_newtons_cradle"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_mini_drawer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_mini_drawer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_vanity",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_vanity"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:small_clock_tower_dial",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_small_clock_tower_dial"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:large_fireplace",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_large_fireplace"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_wall_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_wall_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:log_bench",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_log_bench"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_chest",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_chest"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:neon_diamond_sign",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_neon_diamond_sign"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:foliot_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_foliot_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_wardrobe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_wardrobe"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:narrow_red_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_narrow_red_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_armoire",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_armoire"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:long_display_case",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_long_display_case"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_wall_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_wall_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_small_table_with_doily",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_small_table_with_doily"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gingerbread_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gingerbread_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:display_watch",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_display_watch"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_mini_drawer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_mini_drawer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:pink_rocket_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_pink_rocket_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_sofa",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_sofa"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:birdcage",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_birdcage"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:neon_spade_sign",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_neon_spade_sign"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:emblem_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_emblem_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_science_pod",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_science_pod"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:small_fireplace",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_small_fireplace"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_bookshelf",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_bookshelf"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_counter",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_counter"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:piano",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_piano"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:narrow_green_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_narrow_green_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:neon_club_sign",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_neon_club_sign"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:library_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_library_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_wall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_wall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:slot_machine",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_slot_machine"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_drawers",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_drawers"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_stall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_stall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_pantry",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_pantry"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:brown_mushroom_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_brown_mushroom_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_small_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_small_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:train_set",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_train_set"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:narrow_yellow_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_narrow_yellow_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_closet",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_closet"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gumball_machine",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gumball_machine"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:firewood",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_firewood"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wide_green_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wide_green_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cuckoo_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cuckoo_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_bookshelf",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_bookshelf"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:alarm_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_alarm_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_bench",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_bench"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:mantle_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_mantle_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_dresser",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_dresser"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:brown_mushroom_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_brown_mushroom_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_radio",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_radio"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_bookcase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_bookcase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:lantern_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_lantern_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:crystal_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_crystal_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_mirror"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_wall_shelf",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_wall_shelf"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_mini_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_mini_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:yellow_wall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_yellow_wall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_cabinet",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_cabinet"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_toys",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_toys"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:large_fancy_vase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_large_fancy_vase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wide_red_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wide_red_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_mushroom_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_mushroom_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_small_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_small_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:owl_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_owl_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cash_register"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:classic_vase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_classic_vase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:reed_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_reed_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wide_yellow_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wide_yellow_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_sofa",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_sofa"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_bench",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_bench"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:yellow_stall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_yellow_stall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_rocket_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_rocket_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_mushroom_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_mushroom_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:log_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_log_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:carriage_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_carriage_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_bench",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_bench"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_screen",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_screen"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_wall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_wall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:hourglass",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_hourglass"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:globe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_globe"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_mushroom_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_mushroom_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_seat",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_seat"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_wall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_wall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:elegant_birdcage",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_elegant_birdcage"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_wardrobe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_wardrobe"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:banjo_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_banjo_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_phone",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_phone"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_rocket_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_rocket_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:narrow_blue_streamer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_narrow_blue_streamer"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_small_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_small_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:large_clock_tower_dial",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_large_clock_tower_dial"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:orange_science_pod",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_orange_science_pod"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_dresser",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_dresser"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_stall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_stall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:egyptian_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_egyptian_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_desk",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_desk"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:holiday_tree",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_holiday_tree"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:turquoise_rocket_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_turquoise_rocket_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_armchair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_armchair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_closet",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_closet"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_rocket_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_rocket_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:fancy_vase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_fancy_vase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:anniversary_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_anniversary_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_vanity",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_vanity"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_dresser",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_dresser"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_cabinet",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_cabinet"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:egyptian_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_egyptian_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_science_pod",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_science_pod"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:minimalist_dresser",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_minimalist_dresser"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wide_string_lights",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wide_string_lights"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:glowing_moss_jar",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_glowing_moss_jar"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_sofa",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_sofa"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:display_case",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_display_case"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:blue_bureau",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_bureau"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:grandfather_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_grandfather_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_bookcase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_bookcase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_chair"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_bookshelf",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_bookshelf"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:rough_log_bench",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_rough_log_bench"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_stall_tarp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_stall_tarp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:regal_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_regal_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_desk",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_desk"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:neon_heart_sign",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_neon_heart_sign"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_desk",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_desk"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_bed"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_dresser",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_dresser"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:brown_mushroom_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_brown_mushroom_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_mini_lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_mini_lamp"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:large_striped_vase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_large_striped_vase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:antique_wardrobe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_antique_wardrobe"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:sweets_dresser",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_sweets_dresser"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:green_table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_green_table"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:plasma_ball",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_plasma_ball"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:brown_mushroom_log_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_brown_mushroom_log_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:small_fancy_vase",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_small_fancy_vase"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:wooden_block_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_wooden_block_clock"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:handcart",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_handcart"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:gorgeous_counter",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_gorgeous_counter"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:dessert_case",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_dessert_case"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:cabana_wardrobe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_cabana_wardrobe"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_mushroom_log_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_mushroom_log_stool"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:brown_mushroom_bed",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_brown_mushroom_bed"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:lucky_cat",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_lucky_cat"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:froggy_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_froggy_chair"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:yellow_froggy_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_yellow_froggy_chair"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:pink_froggy_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_pink_froggy_chair"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:orange_froggy_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_orange_froggy_chair"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_froggy_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_froggy_chair"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:black_atm",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_black_atm"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_atm",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_atm"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:red_atm",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_red_atm"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:yellow_atm",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_yellow_atm"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:green_atm",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_green_atm"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:yellow_toy_plane",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_yellow_toy_plane"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:red_toy_plane",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_red_toy_plane"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_toy_plane",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_toy_plane"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_phone",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_phone"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:black_phone",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_black_phone"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:red_phone",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_red_phone"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:gatcha_machine",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_gatcha_machine"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:orange_stocking",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_orange_stocking"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:flamingo_swimming_ring",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_flamingo_swimming_ring"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:swan_swimming_ring",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_swan_swimming_ring"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:black_swan_swimming_ring",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_black_swan_swimming_ring"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:traffic_cone",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_traffic_cone"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:washing_machine",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_washing_machine"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:bathroom_rack",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_bathroom_rack"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:bamboo_candle",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_bamboo_candle"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_cash_register"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:black_cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_black_cash_register"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:cowbell",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_cowbell"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:black_curio_cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_black_curio_cash_register"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:gold_curio_cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_gold_curio_cash_register"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:copper_curio_cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_copper_curio_cash_register"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:iron_curio_cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_iron_curio_cash_register"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:caution_floor_sign",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_caution_floor_sign"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:dartboard",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_dartboard"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:spruce_desk_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_spruce_desk_mirror"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:oak_desk_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_oak_desk_mirror"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:dark_oak_desk_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_dark_oak_desk_mirror"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:horseshoe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_horseshoe"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:red_lawn_mower",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_red_lawn_mower"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:golden_horseshoe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_golden_horseshoe"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:orange_lawn_mower",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_orange_lawn_mower"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:bamboo_framed_paper_lantern",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_bamboo_framed_paper_lantern"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:yellow_lawn_mower",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_yellow_lawn_mower"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_lawn_mower",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_lawn_mower"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:matryoshka_doll",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_matryoshka_doll"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:paper_lantern",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_paper_lantern"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:red_paper_lantern",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_red_paper_lantern"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_paper_lantern",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_paper_lantern"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:wood_framed_paper_lantern",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_wood_framed_paper_lantern"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:tree_paper_lantern",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_tree_paper_lantern"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:vine_rattan_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_vine_rattan_chair"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:warped_rattan_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_warped_rattan_chair"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:rattan_stool",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_rattan_stool"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:rubber_duck",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_rubber_duck"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:shower",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_shower"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:red_stocking",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_red_stocking"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:green_stocking",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_green_stocking"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_stocking",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_stocking"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:moroccan_sofa",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_moroccan_sofa"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:orange_life_preserver_ring",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_orange_life_preserver_ring"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:yellow_life_preserver_ring",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_yellow_life_preserver_ring"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:blue_life_preserver_ring",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_blue_life_preserver_ring"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:red_life_preserver_ring",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_red_life_preserver_ring"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:recorder",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_recorder"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:ship_helm",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_ship_helm"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:vintage_globe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_vintage_globe"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:antique_vintage_globe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_antique_vintage_globe"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:broom",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_broom"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:push_broom",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_push_broom"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:fan",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_fan"
+		},
+		{
+			"offer": {
+				"item": "whimsy_deco:bronze_cowbell",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_whimsy_deco_bronze_cowbell"
+		}
+	]
+}
