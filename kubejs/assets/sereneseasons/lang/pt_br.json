@@ -1,0 +1,43 @@
+{
+  "commands.sereneseasons.usage": "/season <get/set> [args]",
+  "commands.sereneseasons.getseason.success": "Estação atual: %s, %s/%s dias, %s/%s ticks",
+  "commands.sereneseasons.setseason.success": "Estação alterada para: %s",
+  "commands.sereneseasons.setseason.fail": "Estação inválida: %s",
+  "commands.sereneseasons.setseason.disabled": "O sistema de estações está desativado!",
+
+  "gamerule.doSeasonCycle": "Define se as estações devem avançar.",
+  "itemGroup.tabSereneSeasons": "Serene Seasons",
+
+  "block.sereneseasons.season_sensor": "Sensor de Estação",
+
+  "item.sereneseasons.ss_icon": "Ícone SS",
+  "item.sereneseasons.calendar": "Calendário",
+
+  "desc.sereneseasons.fertile_seasons": "Estações Férteis",
+  "desc.sereneseasons.year_round": "O Ano Todo",
+  "desc.sereneseasons.day_counter": "%s/%s Dias",
+  "desc.sereneseasons.tropical_day_counter": " (%s/%s) Dias",
+  "desc.sereneseasons.spring": "Primavera",
+  "desc.sereneseasons.early_spring": "Início da Primavera",
+  "desc.sereneseasons.mid_spring": "Meio da Primavera",
+  "desc.sereneseasons.late_spring": "Fim da Primavera",
+  "desc.sereneseasons.summer": "Verão",
+  "desc.sereneseasons.early_summer": "Início do Verão",
+  "desc.sereneseasons.mid_summer": "Meio do Verão",
+  "desc.sereneseasons.late_summer": "Fim do Verão",
+  "desc.sereneseasons.autumn": "Outono",
+  "desc.sereneseasons.early_autumn": "Início do Outono",
+  "desc.sereneseasons.mid_autumn": "Meio do Outono",
+  "desc.sereneseasons.late_autumn": "Fim do Outono",
+  "desc.sereneseasons.winter": "Inverno",
+  "desc.sereneseasons.early_winter": "Início do Inverno",
+  "desc.sereneseasons.mid_winter": "Meio do Inverno",
+  "desc.sereneseasons.late_winter": "Fim do Inverno",
+
+  "desc.sereneseasons.early_wet": "Início da Estação Chuvosa",
+  "desc.sereneseasons.mid_wet": "Meio da Estação Chuvosa",
+  "desc.sereneseasons.late_wet": "Fim da Estação Chuvosa",
+  "desc.sereneseasons.early_dry": "Início da Estação Seca",
+  "desc.sereneseasons.mid_dry": "Meio da Estação Seca",
+  "desc.sereneseasons.late_dry": "Fim da Estação Seca"
+}
