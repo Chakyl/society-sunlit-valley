@@ -8,14 +8,14 @@ const diamondTools = ['minecraft:diamond_sword', 'minecraft:diamond_shovel', 'mi
 
 const ironArmor = ['minecraft:iron_helmet', 'minecraft:iron_chestplate', 'minecraft:iron_leggings', 'minecraft:iron_boots']
 const goldArmor = ['minecraft:golden_helmet', 'minecraft:golden_chestplate', 'minecraft:golden_leggings', 'minecraft:golden_boots']
-const diamondArmor = ['minecraft:diamond_helmet', 'minecraft:diamond_chestplate', 'minecraft:diamond_leggings', 'minecraft:diamond_boots']
+const diamondArmor = ['minecraft:diamond_helmet', 'minecraft:diamond_chestplate', 'minecraft:diamond_leggings', 'minecraft:diamond_boots', 'nomansland:ancient_bronze_mask', 'nomansland:tortoise_shell']
 
 // Sidegrades
 
 const iridiumTools = ['minecraft:netherite_shovel', 'minecraft:netherite_pickaxe', 'minecraft:netherite_axe', 'minecraft:netherite_hoe', 'minecraft:netherite_sword']
 const electrumTools = ['oreganized:electrum_shovel', 'oreganized:electrum_pickaxe', 'oreganized:electrum_axe', 'oreganized:electrum_hoe', 'oreganized:electrum_sword']
 
-const iridiumArmor = ['minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots']
+const iridiumArmor = ['minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots', 'create:netherite_diving_boots']
 const electrumArmor = ['oreganized:electrum_helmet', 'oreganized:electrum_chestplate', 'oreganized:electrum_leggings', 'oreganized:electrum_boots']
 
 // Combine for enchanting
