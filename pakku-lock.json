@@ -2718,22 +2718,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreateSophisticatedBackpacks.zip",
+                    "file_name": "CreateSophBackpacks.zip",
                     "mc_versions": [
-                        "1.20.1",
-                        "1.20.4"
+                        "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6157/360/CreateSophisticatedBackpacks.zip",
-                    "id": "6157360",
+                    "url": "https://edge.forgecdn.net/files/7707/479/CreateSophBackpacks.zip",
+                    "id": "7707479",
                     "parent_id": "899330",
                     "hashes": {
-                        "sha1": "0a119ab68a6b2cb824d545c0dc2dc44b1339cc94",
-                        "md5": "263463c3d22451b42cd446cfe289a1ab"
+                        "sha1": "0c834a3a13d3d597b6d1273375d2bd049fc3d728",
+                        "md5": "d9f2564fab19bb0ae5230ad9dc70adb3"
                     },
-                    "required_dependencies": [],
-                    "size": 556651,
-                    "date_published": "2025-02-04T14:18:30.310Z"
+                    "required_dependencies": [
+                        "422301"
+                    ],
+                    "size": 557473,
+                    "date_published": "2026-03-03T21:29:22.703Z"
                 }
             ]
         },
@@ -4140,7 +4141,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "emberstextapi-forge-1.20.1-3.0.0-beta.1-all.jar",
+                    "file_name": "emberstextapi-forge-1.20.1-3.0.0-beta.2-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4148,16 +4149,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8131/645/emberstextapi-forge-1.20.1-3.0.0-beta.1-all.jar",
-                    "id": "8131645",
+                    "url": "https://edge.forgecdn.net/files/8235/147/emberstextapi-forge-1.20.1-3.0.0-beta.2-all.jar",
+                    "id": "8235147",
                     "parent_id": "1345948",
                     "hashes": {
-                        "sha1": "8718f54170447de82a13e89950604a866bd68a9b",
-                        "md5": "ca9755e6b818c557cd46b2bdba47b110"
+                        "sha1": "3b2920082361630b664f88e18f072f82eb5d4fbf",
+                        "md5": "a39c1987a01ed6955a19071e0b77f5d3"
                     },
                     "required_dependencies": [],
-                    "size": 1624121,
-                    "date_published": "2026-05-23T07:14:29.557Z"
+                    "size": 4984359,
+                    "date_published": "2026-06-12T04:30:30.947Z"
                 }
             ]
         },
@@ -11010,7 +11011,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-1.1.0.jar",
+                    "file_name": "society_trading-1.2.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11018,18 +11019,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8114/837/society_trading-1.1.0.jar",
-                    "id": "8114837",
+                    "url": "https://edge.forgecdn.net/files/8244/875/society_trading-1.2.1.jar",
+                    "id": "8244875",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "443060f5effe23bb5409c9b7e9663282904040bd",
-                        "md5": "4386dd7e1aadba9e6accbe60a14ce211"
+                        "sha1": "4d42e68f0e259adc5016227b72484868400eb7a2",
+                        "md5": "254ecc0cc53975515dff45b81a57e013"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 203188,
-                    "date_published": "2026-05-19T17:26:26.237Z"
+                    "size": 217980,
+                    "date_published": "2026-06-14T00:24:07.327Z"
                 }
             ]
         },

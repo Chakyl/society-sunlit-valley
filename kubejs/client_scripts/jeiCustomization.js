@@ -47,9 +47,9 @@ JEIAddedEvents.registerCategories((e) => {
   });
   e.custom("society:furniture_catalog", (category) => {
     category
-      .title(Text.translatable("jei.society.category.furniture_catalog"))
+      .title(Text.translatable("jei.society.category.block_purchasing"))
       .background(guiHelper.createBlankDrawable(177, 20))
-      .icon(guiHelper.createDrawableItemStack("society:tanuki_catalog"))
+      .icon(guiHelper.createDrawableItemStack("whimsy_deco:gatcha_machine"))
       .isRecipeHandled(() => true)
       .handleLookup((builder, recipe) => {
         const { catalog, cost, output } = recipe.data;

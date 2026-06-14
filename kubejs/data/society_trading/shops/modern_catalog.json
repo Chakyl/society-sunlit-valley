@@ -1,6 +1,6 @@
 {
 	"shop_id": "modern_catalog",
-	"name": "shop.society_trading.catalog.modern",
+	"name": "shop.society_trading.modern_catalog",
 	"hidden_from_selector": true,
 	"display_type": "thin",
 	"texture": "",
@@ -9,6 +9,1002 @@
 	},
 	"block_tag": "society:opens_modern_catalog",
 	"trades": [
+		{
+			"offer": {
+				"item": "furniture:spruce_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_spruce_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:oak_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_oak_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:mangrove_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_mangrove_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:cherry_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_cherry_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:dark_oak_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_dark_oak_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:acacia_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_acacia_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:jungle_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_jungle_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:birch_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_birch_clock"
+		},
+		{
+			"offer": {
+				"item": "furniture:birch_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_birch_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:jungle_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_jungle_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:spruce_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_spruce_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:cherry_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_cherry_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:dark_oak_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_dark_oak_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:acacia_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_acacia_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:oak_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_oak_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:mangrove_mirror",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_mangrove_mirror"
+		},
+		{
+			"offer": {
+				"item": "furniture:cash_register",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_cash_register"
+		},
+		{
+			"offer": {
+				"item": "furniture:iron_fish_tank",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_iron_fish_tank"
+		},
+		{
+			"offer": {
+				"item": "furniture:tool_box",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_tool_box"
+		},
+		{
+			"offer": {
+				"item": "furniture:sewing_kit",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_sewing_kit"
+		},
+		{
+			"offer": {
+				"item": "furniture:explorers_box",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_explorers_box"
+		},
+		{
+			"offer": {
+				"item": "furniture:pells",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_pells"
+		},
+		{
+			"offer": {
+				"item": "furniture:display",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_display"
+		},
+		{
+			"offer": {
+				"item": "furniture:blueprints",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_blueprints"
+		},
+		{
+			"offer": {
+				"item": "furniture:canvas",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_canvas"
+		},
+		{
+			"offer": {
+				"item": "furniture:gramophone",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_gramophone"
+		},
+		{
+			"offer": {
+				"item": "furniture:telescope",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_telescope"
+		},
+		{
+			"offer": {
+				"item": "furniture:boat_in_a_jar",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_boat_in_a_jar"
+		},
+		{
+			"offer": {
+				"item": "furniture:copper_fish_tank",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_copper_fish_tank"
+		},
+		{
+			"offer": {
+				"item": "furniture:terrarium",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_terrarium"
+		},
+		{
+			"offer": {
+				"item": "supplementaries:clock_block",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_supplementaries_clock_block"
+		},
+		{
+			"offer": {
+				"item": "minecraft:painting",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_minecraft_painting"
+		},
+		{
+			"offer": {
+				"item": "candlelight:typewriter_copper",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_typewriter_copper"
+		},
+		{
+			"offer": {
+				"item": "create:cuckoo_clock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_create_cuckoo_clock"
+		},
+		{
+			"offer": {
+				"item": "beachparty:chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_chair"
+		},
+		{
+			"offer": {
+				"item": "beachparty:beach_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_beach_chair"
+		},
+		{
+			"offer": {
+				"item": "meadow:camera",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_meadow_camera"
+		},
+		{
+			"offer": {
+				"item": "beachparty:table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_table"
+		},
+		{
+			"offer": {
+				"item": "meadow:wheelbarrow",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_meadow_wheelbarrow"
+		},
+		{
+			"offer": {
+				"item": "beachparty:deck_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_deck_chair"
+		},
+		{
+			"offer": {
+				"item": "beachparty:hammock",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_hammock"
+		},
+		{
+			"offer": {
+				"item": "candlelight:typewriter_iron",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_typewriter_iron"
+		},
+		{
+			"offer": {
+				"item": "beachparty:radio",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_radio"
+		},
+		{
+			"offer": {
+				"item": "brewery:barrel_main",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_brewery_barrel_main"
+		},
+		{
+			"offer": {
+				"item": "beachparty:lounge_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_lounge_chair"
+		},
+		{
+			"offer": {
+				"item": "beachparty:tiki_chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beachparty_tiki_chair"
+		},
+		{
+			"offer": {
+				"item": "waterframes:projector",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_waterframes_projector"
+		},
+		{
+			"offer": {
+				"item": "waterframes:big_tv",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_waterframes_big_tv"
+		},
+		{
+			"offer": {
+				"item": "waterframes:tv_box",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_waterframes_tv_box"
+		},
+		{
+			"offer": {
+				"item": "beautify:warped_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_warped_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:birch_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_birch_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:jungle_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_jungle_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:quartz_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_quartz_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:acacia_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_acacia_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:spruce_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_spruce_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:dark_oak_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_dark_oak_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:oak_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_oak_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:bookstack",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_bookstack"
+		},
+		{
+			"offer": {
+				"item": "beautify:crimson_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_crimson_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "beautify:lamp_bamboo",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_lamp_bamboo"
+		},
+		{
+			"offer": {
+				"item": "beautify:lamp_jar",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_lamp_jar"
+		},
+		{
+			"offer": {
+				"item": "beautify:lamp_light_bulb",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_lamp_light_bulb"
+		},
+		{
+			"offer": {
+				"item": "beautify:mangrove_picture_frame",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_beautify_mangrove_picture_frame"
+		},
+		{
+			"offer": {
+				"item": "chimes:bamboo_chimes",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_chimes_bamboo_chimes"
+		},
+		{
+			"offer": {
+				"item": "chimes:carved_bamboo_chimes",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_chimes_carved_bamboo_chimes"
+		},
+		{
+			"offer": {
+				"item": "chimes:iron_chimes",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_chimes_iron_chimes"
+		},
+		{
+			"offer": {
+				"item": "chimes:copper_chimes",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_chimes_copper_chimes"
+		},
+		{
+			"offer": {
+				"item": "chimes:amethyst_chimes",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_chimes_amethyst_chimes"
+		},
+		{
+			"offer": {
+				"item": "chimes:glass_bells",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_chimes_glass_bells"
+		},
+		{
+			"offer": {
+				"item": "snowyspirit:snow_globe",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_snowyspirit_snow_globe"
+		},
+		{
+			"offer": {
+				"item": "supplementaries:cannon",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_supplementaries_cannon"
+		},
+		{
+			"offer": {
+				"item": "supplementaries:lunch_basket",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_supplementaries_lunch_basket"
+		},
+		{
+			"offer": {
+				"item": "candlelight:sofa",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_sofa"
+		},
+		{
+			"offer": {
+				"item": "candlelight:table",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_table"
+		},
+		{
+			"offer": {
+				"item": "candlelight:dinner_bell",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_dinner_bell"
+		},
+		{
+			"offer": {
+				"item": "candlelight:hearth",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_hearth"
+		},
+		{
+			"offer": {
+				"item": "candlelight:painting",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_painting"
+		},
+		{
+			"offer": {
+				"item": "candlelight:jewelry_box",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_jewelry_box"
+		},
+		{
+			"offer": {
+				"item": "candlelight:chair",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_chair"
+		},
+		{
+			"offer": {
+				"item": "candlelight:lamp",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_candlelight_lamp"
+		},
+		{
+			"offer": {
+				"item": "minecraft:bell",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_minecraft_bell"
+		},
+		{
+			"offer": {
+				"item": "furniture:coffer",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_furniture_coffer"
+		},
+		{
+			"offer": {
+				"item": "society:gnome",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 8
+			},
+			"numismatics_cost": 4096,
+			"trade_id": "modern_purchasing_society_gnome"
+		},
 		{
 			"offer": {
 				"item": "cluttered:ham_sandwich",
@@ -3908,1002 +4904,6 @@
 			},
 			"numismatics_cost": 4096,
 			"trade_id": "modern_purchasing_cluttered_endtable_sunshine"
-		},
-		{
-			"offer": {
-				"item": "furniture:spruce_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_spruce_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:oak_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_oak_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:mangrove_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_mangrove_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:cherry_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_cherry_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:dark_oak_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_dark_oak_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:acacia_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_acacia_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:jungle_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_jungle_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:birch_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_birch_clock"
-		},
-		{
-			"offer": {
-				"item": "furniture:birch_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_birch_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:jungle_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_jungle_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:spruce_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_spruce_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:cherry_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_cherry_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:dark_oak_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_dark_oak_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:acacia_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_acacia_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:oak_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_oak_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:mangrove_mirror",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_mangrove_mirror"
-		},
-		{
-			"offer": {
-				"item": "furniture:cash_register",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_cash_register"
-		},
-		{
-			"offer": {
-				"item": "furniture:iron_fish_tank",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_iron_fish_tank"
-		},
-		{
-			"offer": {
-				"item": "furniture:tool_box",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_tool_box"
-		},
-		{
-			"offer": {
-				"item": "furniture:sewing_kit",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_sewing_kit"
-		},
-		{
-			"offer": {
-				"item": "furniture:explorers_box",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_explorers_box"
-		},
-		{
-			"offer": {
-				"item": "furniture:pells",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_pells"
-		},
-		{
-			"offer": {
-				"item": "furniture:display",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_display"
-		},
-		{
-			"offer": {
-				"item": "furniture:blueprints",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_blueprints"
-		},
-		{
-			"offer": {
-				"item": "furniture:canvas",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_canvas"
-		},
-		{
-			"offer": {
-				"item": "furniture:gramophone",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_gramophone"
-		},
-		{
-			"offer": {
-				"item": "furniture:telescope",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_telescope"
-		},
-		{
-			"offer": {
-				"item": "furniture:boat_in_a_jar",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_boat_in_a_jar"
-		},
-		{
-			"offer": {
-				"item": "furniture:copper_fish_tank",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_copper_fish_tank"
-		},
-		{
-			"offer": {
-				"item": "furniture:terrarium",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_terrarium"
-		},
-		{
-			"offer": {
-				"item": "supplementaries:clock_block",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_supplementaries_clock_block"
-		},
-		{
-			"offer": {
-				"item": "minecraft:painting",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_minecraft_painting"
-		},
-		{
-			"offer": {
-				"item": "candlelight:typewriter_copper",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_typewriter_copper"
-		},
-		{
-			"offer": {
-				"item": "create:cuckoo_clock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_create_cuckoo_clock"
-		},
-		{
-			"offer": {
-				"item": "beachparty:chair",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_chair"
-		},
-		{
-			"offer": {
-				"item": "beachparty:beach_chair",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_beach_chair"
-		},
-		{
-			"offer": {
-				"item": "meadow:camera",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_meadow_camera"
-		},
-		{
-			"offer": {
-				"item": "beachparty:table",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_table"
-		},
-		{
-			"offer": {
-				"item": "meadow:wheelbarrow",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_meadow_wheelbarrow"
-		},
-		{
-			"offer": {
-				"item": "beachparty:deck_chair",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_deck_chair"
-		},
-		{
-			"offer": {
-				"item": "beachparty:hammock",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_hammock"
-		},
-		{
-			"offer": {
-				"item": "candlelight:typewriter_iron",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_typewriter_iron"
-		},
-		{
-			"offer": {
-				"item": "beachparty:radio",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_radio"
-		},
-		{
-			"offer": {
-				"item": "brewery:barrel_main",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_brewery_barrel_main"
-		},
-		{
-			"offer": {
-				"item": "beachparty:lounge_chair",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_lounge_chair"
-		},
-		{
-			"offer": {
-				"item": "beachparty:tiki_chair",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beachparty_tiki_chair"
-		},
-		{
-			"offer": {
-				"item": "waterframes:projector",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_waterframes_projector"
-		},
-		{
-			"offer": {
-				"item": "waterframes:big_tv",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_waterframes_big_tv"
-		},
-		{
-			"offer": {
-				"item": "waterframes:tv_box",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_waterframes_tv_box"
-		},
-		{
-			"offer": {
-				"item": "beautify:warped_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_warped_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:birch_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_birch_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:jungle_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_jungle_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:quartz_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_quartz_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:acacia_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_acacia_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:spruce_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_spruce_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:dark_oak_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_dark_oak_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:oak_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_oak_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:bookstack",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_bookstack"
-		},
-		{
-			"offer": {
-				"item": "beautify:crimson_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_crimson_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "beautify:lamp_bamboo",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_lamp_bamboo"
-		},
-		{
-			"offer": {
-				"item": "beautify:lamp_jar",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_lamp_jar"
-		},
-		{
-			"offer": {
-				"item": "beautify:lamp_light_bulb",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_lamp_light_bulb"
-		},
-		{
-			"offer": {
-				"item": "beautify:mangrove_picture_frame",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_beautify_mangrove_picture_frame"
-		},
-		{
-			"offer": {
-				"item": "chimes:bamboo_chimes",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_chimes_bamboo_chimes"
-		},
-		{
-			"offer": {
-				"item": "chimes:carved_bamboo_chimes",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_chimes_carved_bamboo_chimes"
-		},
-		{
-			"offer": {
-				"item": "chimes:iron_chimes",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_chimes_iron_chimes"
-		},
-		{
-			"offer": {
-				"item": "chimes:copper_chimes",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_chimes_copper_chimes"
-		},
-		{
-			"offer": {
-				"item": "chimes:amethyst_chimes",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_chimes_amethyst_chimes"
-		},
-		{
-			"offer": {
-				"item": "chimes:glass_bells",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_chimes_glass_bells"
-		},
-		{
-			"offer": {
-				"item": "snowyspirit:snow_globe",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_snowyspirit_snow_globe"
-		},
-		{
-			"offer": {
-				"item": "supplementaries:cannon",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_supplementaries_cannon"
-		},
-		{
-			"offer": {
-				"item": "supplementaries:lunch_basket",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_supplementaries_lunch_basket"
-		},
-		{
-			"offer": {
-				"item": "candlelight:sofa",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_sofa"
-		},
-		{
-			"offer": {
-				"item": "candlelight:table",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_table"
-		},
-		{
-			"offer": {
-				"item": "candlelight:dinner_bell",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_dinner_bell"
-		},
-		{
-			"offer": {
-				"item": "candlelight:hearth",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_hearth"
-		},
-		{
-			"offer": {
-				"item": "candlelight:painting",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_painting"
-		},
-		{
-			"offer": {
-				"item": "candlelight:jewelry_box",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_jewelry_box"
-		},
-		{
-			"offer": {
-				"item": "candlelight:chair",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_chair"
-		},
-		{
-			"offer": {
-				"item": "candlelight:lamp",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_candlelight_lamp"
-		},
-		{
-			"offer": {
-				"item": "minecraft:bell",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_minecraft_bell"
-		},
-		{
-			"offer": {
-				"item": "furniture:coffer",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_furniture_coffer"
-		},
-		{
-			"offer": {
-				"item": "society:gnome",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 8
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "modern_purchasing_society_gnome"
 		}
 	]
 }

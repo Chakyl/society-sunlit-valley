@@ -387,34 +387,10 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.phone.tip").green()
   );
   // Furniture
-  tooltip.add(
-    "tanukidecor:diy_workbench",
-    Text.translatable("tooltip.society.diy_workbench").gray()
-  );
-  tooltip.add("society:tanuki_catalog", [
-    Text.translatable(
-      "tooltip.society.furniture_catalog",
-      "2",
-      Text.translatable("item.numismatics.crown").gold(),
-      Text.translatable("item.society.tanuki_leaf").green()
-    ).gray(),
-  ]);
-  tooltip.add("society:modern_catalog", [
-    Text.translatable(
-      "tooltip.society.furniture_catalog",
-      "6",
-      Text.translatable("item.numismatics.crown").gold(),
-      Text.translatable("item.society.architects_digest").white()
-    ).gray(),
-  ]);
-  tooltip.add("society:fantasy_catalog", [
-    Text.translatable(
-      "tooltip.society.furniture_catalog",
-      "4",
-      Text.translatable("item.numismatics.crown").gold(),
-      Text.translatable("item.society.fantasy_dust").yellow()
-    ).gray(),
-  ]);
+  tooltip.add("tanukidecor:diy_workbench", Text.translatable("tooltip.society.diy_workbench").gray());
+  tooltip.add("society:tanuki_catalog", Text.translatable("tooltip.society.tanuki_catalog").gray());
+  tooltip.add("society:modern_catalog", Text.translatable("tooltip.society.modern_catalog").gray());
+  tooltip.add("society:fantasy_catalog", Text.translatable("tooltip.society.fantasy_catalog").gray());
   global.lootFurniture.forEach((item) => {
     tooltip.add(
       item,
@@ -1035,7 +1011,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:scavenged_food_bag",
     Text.translatable("tooltip.society.right_click_open").gray()
   );
-    tooltip.add(
+  tooltip.add(
     "species:treeper_spawn_egg",
     Text.translatable("tooltip.society.treeper_spawn_egg").red()
   );

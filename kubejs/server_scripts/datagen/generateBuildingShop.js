@@ -23,12 +23,12 @@
 //     sets.forEach((set) => {
 //       langPrefix = `portable_blueprints.worn_blueprint.${villager ? "npc_" : ""}${set}_${type}`
 //       blueprintLangStrings[langPrefix] = `${global.formatName(set)} ${names[index]}${villager ? " Home" : ""}`;
-//       blueprintLangStrings[`${langPrefix}.author`] = "";
+//       blueprintLangStrings[`${langPrefix}.author`] = "Designed by: ";
 //       blueprintLangStrings[`${langPrefix}.dimensions`] = "";
 //       shopTrades.push({
 //         offer: {
 //           item: "portable_blueprints:worn_blueprint",
-//           nbt: `{Damage:1,allow_nbt:1,altezza:0,blueprint_name:"${type}_${set}",buildAnyway:0b,display:{Name:\'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"${langPrefix}\"}\'},free_build:1,inventari_blocco_selezionati:"",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:"${type}_${set}",owner:"worn",owner_name:"Chakyl!",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}`,
+//           nbt: `{Damage:1,allow_nbt:1,altezza:0,blueprint_name:"${type}_${set}",buildAnyway:0b,display:{Name:\'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"${langPrefix}\"}\',Lore:[\'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"${langPrefix}.author\"}\']},free_build:1,inventari_blocco_selezionati:"",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:"${type}_${set}",owner:"worn",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}`,
 //           count: 1
 //         },
 //         request: {
@@ -36,7 +36,7 @@
 //           count: 32
 //         },
 //         image: `society:textures/gui/buildings/${set}/${type}_${set}`,
-//         image_description: `portable_blueprints.worn_blueprint.${set}_${type}.dimensions`,
+//         image_description: `${langPrefix}.dimensions`,
 //         trade_id: `bs_${type}_${set}`
 //       });
 //     })

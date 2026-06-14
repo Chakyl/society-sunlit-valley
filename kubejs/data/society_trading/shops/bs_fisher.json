@@ -11,7 +11,7 @@
 		{
 			"offer": {
 				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"fisher_basic\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.npc_basic_fisher\"}'},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"fisher_basic\",owner:\"worn\",owner_name:\"Chakyl!\",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"fisher_basic\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.npc_basic_fisher\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.npc_basic_fisher.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"fisher_basic\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
 				"count": 1
 			},
 			"request": {
@@ -19,7 +19,7 @@
 				"count": 32
 			},
 			"image": "society:textures/gui/buildings/basic/fisher_basic",
-			"image_description": "portable_blueprints.worn_blueprint.basic_fisher.dimensions",
+			"image_description": "portable_blueprints.worn_blueprint.npc_basic_fisher.dimensions",
 			"trade_id": "bs_fisher_basic"
 		}
 	]

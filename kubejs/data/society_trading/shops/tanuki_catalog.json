@@ -1,6 +1,6 @@
 {
 	"shop_id": "tanuki_catalog",
-	"name": "shop.society_trading.catalog.tanuki",
+	"name": "shop.society_trading.tanuki_catalog",
 	"hidden_from_selector": true,
 	"display_type": "thin",
 	"texture": "",
@@ -107,6 +107,38 @@
 		},
 		{
 			"offer": {
+				"item": "tanukidecor:blue_science_pod",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_blue_science_pod"
+		},
+		{
+		"offer": {
+				"item": "tanukidecor:orange_science_pod",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_orange_science_pod"
+		},
+		{
+			"offer": {
 				"item": "tanukidecor:green_science_pod",
 				"count": 1
 			},
@@ -114,8 +146,28 @@
 				"item": "numismatics:crown",
 				"count": 4
 			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
+			},
 			"numismatics_cost": 2048,
 			"trade_id": "tanuki_purchasing_tanukidecor_green_science_pod"
+		},
+		{
+			"offer": {
+				"item": "tanukidecor:red_science_pod",
+				"count": 1
+			},
+			"request": {
+				"item": "numismatics:crown",
+				"count": 4
+			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
+			},
+			"numismatics_cost": 2048,
+			"trade_id": "tanuki_purchasing_tanukidecor_red_science_pod"
 		},
 		{
 			"offer": {
@@ -779,18 +831,6 @@
 		},
 		{
 			"offer": {
-				"item": "tanukidecor:blue_science_pod",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 4
-			},
-			"numismatics_cost": 2048,
-			"trade_id": "tanuki_purchasing_tanukidecor_blue_science_pod"
-		},
-		{
-			"offer": {
 				"item": "tanukidecor:small_fireplace",
 				"count": 1
 			},
@@ -857,6 +897,10 @@
 			"request": {
 				"item": "numismatics:crown",
 				"count": 4
+			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
 			},
 			"numismatics_cost": 2048,
 			"trade_id": "tanuki_purchasing_tanukidecor_piano"
@@ -929,6 +973,10 @@
 			"request": {
 				"item": "numismatics:crown",
 				"count": 4
+			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
 			},
 			"numismatics_cost": 2048,
 			"trade_id": "tanuki_purchasing_tanukidecor_slot_machine"
@@ -1835,18 +1883,6 @@
 		},
 		{
 			"offer": {
-				"item": "tanukidecor:orange_science_pod",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 4
-			},
-			"numismatics_cost": 2048,
-			"trade_id": "tanuki_purchasing_tanukidecor_orange_science_pod"
-		},
-		{
-			"offer": {
 				"item": "tanukidecor:minimalist_stool",
 				"count": 1
 			},
@@ -2060,18 +2096,6 @@
 			},
 			"numismatics_cost": 2048,
 			"trade_id": "tanuki_purchasing_tanukidecor_egyptian_bed"
-		},
-		{
-			"offer": {
-				"item": "tanukidecor:red_science_pod",
-				"count": 1
-			},
-			"request": {
-				"item": "numismatics:crown",
-				"count": 4
-			},
-			"numismatics_cost": 2048,
-			"trade_id": "tanuki_purchasing_tanukidecor_red_science_pod"
 		},
 		{
 			"offer": {
@@ -2394,6 +2418,10 @@
 				"item": "numismatics:crown",
 				"count": 4
 			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
+			},
 			"numismatics_cost": 2048,
 			"trade_id": "tanuki_purchasing_tanukidecor_plasma_ball"
 		},
@@ -2513,6 +2541,10 @@
 			"request": {
 				"item": "numismatics:crown",
 				"count": 4
+			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 1
 			},
 			"numismatics_cost": 2048,
 			"trade_id": "tanuki_purchasing_whimsy_deco_lucky_cat"
@@ -2717,6 +2749,10 @@
 			"request": {
 				"item": "numismatics:crown",
 				"count": 4
+			},
+			"second_request": {
+				"item": "society:prismatic_shard",
+				"count": 9
 			},
 			"numismatics_cost": 2048,
 			"trade_id": "tanuki_purchasing_whimsy_deco_gatcha_machine"
