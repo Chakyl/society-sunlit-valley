@@ -37,10 +37,9 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
           0.2 * rnd(1, 4),
           0.2 * rnd(1, 4),
           25,
-          0.01); {
-            block.set("minecraft:glass")
+          0.01); 
+          block.set("minecraft:glass")
           if (Math.random() < 0.1) item.count--;
-        };
         (server.runCommandSilent(
           `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`))
       }
