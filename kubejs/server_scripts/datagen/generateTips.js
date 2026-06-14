@@ -95,7 +95,7 @@
 //         { title: "quest_book", content: "If you ever feel lost in progression, check out the quest book!" },
 //         { title: "neptunium", content: "Crab Traps have a low chance of fishing up Neptunium Nuggets." },
 //         { title: "ribbit_hut", content: "Ribbit Huts can harvest crops and Grapevine stems." },
-//         { title: "bookseller", content: "The Bookseller can be called using the phone at the end of every season." },
+//         { title: "book_fair", content: "The Book Fair can be called using the phone at the end of every season." },
 //         { title: "skull_cavern_blocks", content: "Blocks you place in the Skull Cavern won't disappear overnight." },
 //         { title: "fish_pond_stack", content: "Fish Ponds can stack vertically." },
 //         { title: "sprinkler_inset", content: "Sprinklers can be placed at the same level as Farmland and still hydrate." },

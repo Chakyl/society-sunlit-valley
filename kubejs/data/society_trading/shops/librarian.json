@@ -1,10 +1,62 @@
 {
-  "shop_id": "storagesmith",
-  "name": "shop.society_trading.storagesmith",
-  "texture": "farmersdelight:textures/block/spruce_cabinet_front",
+  "shop_id": "librarian",
+  "name": "shop.society_trading.librarian",
+  "texture": "dialog:textures/portraits/librarian",
   "villager_profession": "weaponsmith",
-  "jei_catalyst": { "item": "minecraft:bundle" },
+  "stage_required": "invited_librarian",
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:librarian\"}}"
+  },
   "trades": [
+    {
+      "offer": {
+        "item": "labels:label",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 3
+      },
+      "numismatics_cost": 3,
+      "trade_id": "librarian_label_for_spur"
+    },
+    {
+      "offer": {
+        "item": "minecraft:name_tag",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_name_tag_for_cog"
+    },
+    {
+      "offer": {
+        "item": "gag:labeling_tool",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "labeling_tool_tag_for_sun"
+    },
+    {
+      "offer": {
+        "item": "minecraft:book",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_book_for_bevel"
+    },
     {
       "offer": {
         "item": "supplementaries:safe",
@@ -27,7 +79,7 @@
         "count": 1
       },
       "numismatics_cost": 4096,
-      "trade_id": "minecraft:storagesmith_storage_controller_for_sun"
+      "trade_id": "minecraft:librarian_storage_controller_for_sun"
     },
     {
       "offer": {
@@ -39,7 +91,7 @@
         "count": 4
       },
       "numismatics_cost": 2048,
-      "trade_id": "storagesmith_controller_extension_for_crown"
+      "trade_id": "librarian_controller_extension_for_crown"
     },
     {
       "offer": {
@@ -51,7 +103,7 @@
         "count": 2
       },
       "numismatics_cost": 128,
-      "trade_id": "minecraft:storagesmith_simple_compacting_drawer_for_cog"
+      "trade_id": "minecraft:librarian_simple_compacting_drawer_for_cog"
     },
     {
       "offer": {
@@ -63,7 +115,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "trade_id": "minecraft:storagesmith_compacting_drawer_for_cog"
+      "trade_id": "minecraft:librarian_compacting_drawer_for_cog"
     },
     {
       "offer": {
@@ -75,7 +127,7 @@
         "count": 1
       },
       "numismatics_cost": 16,
-      "trade_id": "minecraft:storagesmith_configuration_tool_for_sprocket"
+      "trade_id": "minecraft:librarian_configuration_tool_for_sprocket"
     },
     {
       "offer": {
@@ -87,7 +139,7 @@
         "count": 1
       },
       "numismatics_cost": 16,
-      "trade_id": "minecraft:storagesmith_linking_tool_for_sprocket"
+      "trade_id": "minecraft:librarian_linking_tool_for_sprocket"
     },
     {
       "offer": {
@@ -99,7 +151,7 @@
         "count": 2
       },
       "numismatics_cost": 8192,
-      "trade_id": "storagesmith_copper_upgrade_for_sun"
+      "trade_id": "librarian_copper_upgrade_for_sun"
     },
     {
       "offer": {
@@ -111,7 +163,7 @@
         "count": 6
       },
       "numismatics_cost": 24576,
-      "trade_id": "storagesmith_gold_upgrade_for_sun"
+      "trade_id": "librarian_gold_upgrade_for_sun"
     },
     {
       "offer": {
@@ -123,7 +175,7 @@
         "count": 10
       },
       "numismatics_cost": 40960,
-      "trade_id": "storagesmith_diamond_upgrade_for_sun"
+      "trade_id": "librarian_diamond_upgrade_for_sun"
     },
     {
       "offer": {
@@ -135,7 +187,7 @@
         "count": 14
       },
       "numismatics_cost": 57344,
-      "trade_id": "storagesmith_netherite_upgrade_for_sun"
+      "trade_id": "librarian_netherite_upgrade_for_sun"
     },
     {
       "offer": {
@@ -147,7 +199,7 @@
         "count": 3
       },
       "numismatics_cost": 192,
-      "trade_id": "storagesmith_void_upgrade_for_cog"
+      "trade_id": "librarian_void_upgrade_for_cog"
     },
     {
       "offer": {
@@ -159,7 +211,7 @@
         "count": 4
       },
       "numismatics_cost": 2048,
-      "trade_id": "storagesmith_wrench"
+      "trade_id": "librarian_wrench"
     },
     {
       "offer": {
@@ -171,7 +223,7 @@
         "count": 2
       },
       "numismatics_cost": 8192,
-      "trade_id": "storagesmith_controller_for_sun"
+      "trade_id": "librarian_controller_for_sun"
     },
     {
       "offer": {
@@ -183,7 +235,7 @@
         "count": 1
       },
       "numismatics_cost": 4096,
-      "trade_id": "storagesmith_4k_storage_block_for_sun"
+      "trade_id": "librarian_4k_storage_block_for_sun"
     },
     {
       "offer": {
@@ -195,7 +247,7 @@
         "count": 16
       },
       "numismatics_cost": 65536,
-      "trade_id": "storagesmith_64k_storage_block_for_sun"
+      "trade_id": "librarian_64k_storage_block_for_sun"
     },
     {
       "offer": {
@@ -207,7 +259,7 @@
         "count": 1
       },
       "numismatics_cost": 64,
-      "trade_id": "storagesmith_cable_for_cog"
+      "trade_id": "librarian_cable_for_cog"
     },
     {
       "offer": {
@@ -219,7 +271,7 @@
         "count": 4
       },
       "numismatics_cost": 2048,
-      "trade_id": "storagesmith_external_storage_for_sun"
+      "trade_id": "librarian_external_storage_for_sun"
     },
     {
       "offer": {
@@ -231,7 +283,7 @@
         "count": 2
       },
       "numismatics_cost": 8192,
-      "trade_id": "storagesmith_crafting_grid_for_sun"
+      "trade_id": "librarian_crafting_grid_for_sun"
     },
     {
       "offer": {
@@ -243,7 +295,7 @@
         "count": 12
       },
       "numismatics_cost": 49152,
-      "trade_id": "storagesmith_wireless_crafting_grid_for_sun"
+      "trade_id": "librarian_wireless_crafting_grid_for_sun"
     },
     {
       "offer": {
@@ -255,7 +307,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
-      "trade_id": "storagesmith_wireless_transmitter_for_sun"
+      "trade_id": "librarian_wireless_transmitter_for_sun"
     },
     {
       "offer": {
@@ -267,7 +319,7 @@
         "count": 4
       },
       "numismatics_cost": 4,
-      "trade_id": "storagesmith_basic_tier_upgrade_for_cog"
+      "trade_id": "librarian_basic_tier_upgrade_for_cog"
     },
     {
       "offer": {
@@ -279,7 +331,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "trade_id": "storagesmith_basic_to_copper_tier_upgrade_for_cog"
+      "trade_id": "librarian_basic_to_copper_tier_upgrade_for_cog"
     },
     {
       "offer": {
@@ -291,7 +343,7 @@
         "count": 2
       },
       "numismatics_cost": 1024,
-      "trade_id": "storagesmith_copper_to_iron_tier_upgrade_for_crown"
+      "trade_id": "librarian_copper_to_iron_tier_upgrade_for_crown"
     },
     {
       "offer": {
@@ -303,7 +355,7 @@
         "count": 4
       },
       "numismatics_cost": 2048,
-      "trade_id": "storagesmith_iron_to_gold_tier_upgrade_for_crown"
+      "trade_id": "librarian_iron_to_gold_tier_upgrade_for_crown"
     },
     {
       "offer": {
@@ -315,7 +367,7 @@
         "count": 2
       },
       "numismatics_cost": 8192,
-      "trade_id": "storagesmith_gold_to_diamond_tier_upgrade_for_sun"
+      "trade_id": "librarian_gold_to_diamond_tier_upgrade_for_sun"
     },
     {
       "offer": {
@@ -327,7 +379,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
-      "trade_id": "storagesmith_diamond_to_netherite_tier_upgrade_for_sun"
+      "trade_id": "librarian_diamond_to_netherite_tier_upgrade_for_sun"
     },
     {
       "offer": {
@@ -339,7 +391,7 @@
         "count": 1
       },
       "numismatics_cost": 512,
-      "trade_id": "storagesmith_upgrade_base_for_crown"
+      "trade_id": "librarian_upgrade_base_for_crown"
     },
     {
       "offer": {
@@ -351,7 +403,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
-      "trade_id": "storagesmith_stack_upgrade_tier_1_for_sun"
+      "trade_id": "librarian_stack_upgrade_tier_1_for_sun"
     },
     {
       "offer": {
@@ -363,7 +415,7 @@
         "count": 6
       },
       "numismatics_cost": 24576,
-      "trade_id": "storagesmith_stack_upgrade_tier_1_plus_for_sun"
+      "trade_id": "librarian_stack_upgrade_tier_1_plus_for_sun"
     },
     {
       "offer": {
@@ -375,7 +427,7 @@
         "count": 8
       },
       "numismatics_cost": 32768,
-      "trade_id": "storagesmith_stack_upgrade_tier_2_for_sun"
+      "trade_id": "librarian_stack_upgrade_tier_2_for_sun"
     },
     {
       "offer": {
@@ -387,7 +439,7 @@
         "count": 16
       },
       "numismatics_cost": 65536,
-      "trade_id": "storagesmith_stack_upgrade_tier_3_for_sun"
+      "trade_id": "librarian_stack_upgrade_tier_3_for_sun"
     },
     {
       "offer": {
@@ -399,7 +451,7 @@
         "count": 32
       },
       "numismatics_cost": 131072,
-      "trade_id": "storagesmith_stack_upgrade_tier_4_for_sun"
+      "trade_id": "librarian_stack_upgrade_tier_4_for_sun"
     },
     {
       "offer": {
@@ -411,7 +463,7 @@
         "count": 64
       },
       "numismatics_cost": 262144,
-      "trade_id": "storagesmith_stack_upgrade_tier_5_for_sun"
+      "trade_id": "librarian_stack_upgrade_tier_5_for_sun"
     },
     {
       "offer": {
@@ -423,7 +475,7 @@
         "count": 4
       },
       "numismatics_cost": 1048576,
-      "trade_id": "storagesmith_stack_upgrade_omega_tier_for_ancient_coin"
+      "trade_id": "librarian_stack_upgrade_omega_tier_for_ancient_coin"
     },
     {
       "offer": {
@@ -435,7 +487,7 @@
         "count": 3
       },
       "numismatics_cost": 1536,
-      "trade_id": "storagesmith_packing_tape_for_crown"
+      "trade_id": "librarian_packing_tape_for_crown"
     },
     {
       "offer": {
@@ -447,7 +499,7 @@
         "count": 1
       },
       "numismatics_cost": 4096,
-      "trade_id": "storagesmith_decoration_table_for_sun"
+      "trade_id": "librarian_decoration_table_for_sun"
     },
     {
       "offer": {
@@ -459,7 +511,7 @@
         "count": 3
       },
       "numismatics_cost": 1536,
-      "trade_id": "storagesmith_paintbrush_for_crown"
+      "trade_id": "librarian_paintbrush_for_crown"
     },
     {
       "offer": {

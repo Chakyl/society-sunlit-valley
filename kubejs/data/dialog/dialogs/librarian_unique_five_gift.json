@@ -1,0 +1,29 @@
+{
+	"id": "librarian_unique_five_gift",
+	"title": "librarian introduction",
+	"description": "dialog.npc.librarian.unique.five_gift",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.unique_five_gift.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p librarian"
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"id": "trader_gift_loved_0",
+	"title": "trader introduction",
+	"description": "dialog.npc.trader.gift.loved",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.gift_loved.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "loved/trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.gift_loved.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "loved/trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

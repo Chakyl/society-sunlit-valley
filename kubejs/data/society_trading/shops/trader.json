@@ -1,9 +1,12 @@
 {
   "shop_id": "trader",
   "name": "shop.society_trading.trader",
-  "texture": "minecraft:textures/block/fletching_table_side",
-  "stage_required": "entered_skull_cavern",
-  "jei_catalyst": { "item": "society:ancient_cog" },
+  "texture": "dialog:textures/portraits/trader",
+  "stage_required": "invited_trader",
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:trader\"}}"
+  },
   "villager_profession": "fletcher",
   "trades": [
     {

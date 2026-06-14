@@ -6,7 +6,10 @@ const npcMap = new Map([
   ["blacksmith", "humanoid/blacksmith"],
   ["shepherd", "humanoid_slim/shepherd"],
   ["fisher", "humanoid_slim/fisher"],
-  ["banker", "humanoid_slim/banker"]
+  ["banker", "humanoid_slim/banker"],
+  ["librarian", "humanoid_slim/librarian"],
+  ["witch", "humanoid_slim/witch"],
+  ["trader", "humanoid/trader"]
 ]);
 const getBoundNpc = (level, block, boundNpc) => {
   let nearbyNPCs = level.getLevel()

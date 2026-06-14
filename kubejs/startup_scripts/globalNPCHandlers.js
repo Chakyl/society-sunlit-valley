@@ -149,6 +149,27 @@ const villagerSpecificGifts = new Map([
         neutral: [],
         disliked: [],
         hated: ["herbalbrews:milk_coffee", "society:death_liquid"],
+    }],
+    ["librarian", {
+        loved: [],
+        liked: [],
+        neutral: [],
+        disliked: [],
+        hated: [],
+    }],
+    ["witch", {
+        loved: [],
+        liked: [],
+        neutral: [],
+        disliked: [],
+        hated: [],
+    }],
+    ["trader", {
+        loved: [],
+        liked: [],
+        neutral: [],
+        disliked: [],
+        hated: [],
     }]
 ]);
 

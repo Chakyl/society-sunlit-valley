@@ -8,6 +8,9 @@ const dialogLengths = {
     market: { chatterLengths: [18.0, 14.0, 9.0, 16.0, 14.0, 14.0], giftResponseLengths: { loved: 10.0, liked: 8.0, neutral: 17.0, disliked: 12.0, hated: 13.0 } },
     mystical_oak: { chatterLengths: [3.0, 1.0, 1.0, 1.0, 1.0, 1.0], giftResponseLengths: { loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 2.0, hated: 1.0 } },
     shepherd: { chatterLengths: [15.0, 14.0, 13.0, 12.0, 14.0, 17.0], giftResponseLengths: { loved: 9.0, liked: 10.0, neutral: 8.0, disliked: 8.0, hated: 11.0 } },
+    witch: {chatterLengths: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], giftResponseLengths: {loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 1.0, hated: 1.0}},
+    librarian: {chatterLengths: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], giftResponseLengths: {loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 1.0, hated: 1.0}},
+    trader: {chatterLengths: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], giftResponseLengths: {loved: 1.0, liked: 1.0, neutral: 1.0, disliked: 1.0, hated: 1.0}}
 }
 const maxGifts = {
     banker: "society:slouching_towards_artistry",
@@ -15,7 +18,10 @@ const maxGifts = {
     carpenter: Item.of('portable_blueprints:worn_blueprint', '{Damage:1,allow_nbt:1,altezza:0,blueprint_name:"blockapedia",buildAnyway:0b,display:{Name:\'{"italic":false,"color":"#FFFF00","text":"Blueprint: Blockapedia"}\'},free_build:1,inventari_blocco_selezionati:"",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:"blockapedia",owner:"worn",owner_name:"Ace (Built by Mimsy)",remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}'),
     fisher: "society:heart_of_neptunium",
     market: "society:universal_methods_of_farming",
-    shepherd: Item.of('2x wildernature:penguin_spawn_egg')
+    shepherd: Item.of('2x wildernature:penguin_spawn_egg'),
+    librarian: "society:universal_methods_of_farming",
+    trader: "society:universal_methods_of_farming",
+    witch: "society:universal_methods_of_farming",
 }
 
 const getNpcKey = (customName) => {
@@ -163,6 +169,7 @@ const handleNpc = (e, npcId, level, server, target, player) => {
     }
     e.cancel()
 }
+
 ItemEvents.entityInteracted((e) => {
     const { hand, player, item, level, target, server } = e;
     if (player.isFake()) return;

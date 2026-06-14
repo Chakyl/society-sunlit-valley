@@ -249,7 +249,6 @@ global.lootFurniture = [
   "beachparty:deck_chair",
   "beachparty:hammock",
   "candlelight:typewriter_iron",
-  "beachparty:radio",
   "brewery:barrel_main",
   "beachparty:lounge_chair",
   "beachparty:tiki_chair",

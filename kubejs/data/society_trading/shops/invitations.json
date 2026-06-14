@@ -84,6 +84,48 @@
       "stage_required": "invited_market",
       "unlock_description": "jei.society_trading.invited_market",
       "trade_id": "village_management_banker"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:librarian\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 16
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_librarian"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:witch\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 24
+      },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
+      "trade_id": "village_management_witch"
+    },
+    {
+      "offer": {
+        "item": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:trader\"}}"
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 24
+      },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
+      "trade_id": "village_management_trader"
     }
   ]
 }

@@ -16,7 +16,7 @@
   "entity.minecraft.villager.mason": "Mechanic",
   "entity.minecraft.villager.shepherd": "Shepherd",
   "entity.minecraft.villager.toolsmith": "Blacksmith",
-  "entity.minecraft.villager.weaponsmith": "Storagesmith",
+  "entity.minecraft.villager.weaponsmith": "Librarian",
   "advancements.husbandry.ride_sled_fast.description": "Ride a sled down a slope",
   "advancements.husbandry.ride_sled_fast.title": "It's All Downhill From Here",
   "bountiful.decree.geologist.name": "§f🎣 §6Geologist",
@@ -944,5 +944,14 @@
   "society.trofers.wheels": "Wheels Collection Trophy",
   "society.trofers.autumn_mayhem": "Building Contest Trophy - Autumn Mayhem",
   "society.trofers.community_center": "Building Contest Trophy - The Heart of the Community",
-  "society.trofers.train_station": "Building Contest Trophy - Medieval Train Station"
+  "society.trofers.train_station": "Building Contest Trophy - Medieval Train Station",
+
+  "info.society.villager_unlock_condition.carpenter": "Craft the capenter invitation using simple resources",
+  "info.society.villager_unlock_condition.shepherd": "Invite the carpenter villager to unlock invitation",
+  "info.society.villager_unlock_condition.market": "Invite the carpenter villager to unlock invitation",
+  "info.society.villager_unlock_condition.blacksmith": "Invite the carpenter villager to unlock invitation",
+  "info.society.villager_unlock_condition.fisher": "Invite the market villager to unlock invitation",
+  "info.society.villager_unlock_condition.banker": "Invite the market villager to unlock invitation",
+  "info.society.villager_unlock_condition.librarian": "Invite the market villager to unlock invitation",
+  "info.society.villager_unlock_condition.trader": "Enter the Skull Cavern to unlock invitation"
 }

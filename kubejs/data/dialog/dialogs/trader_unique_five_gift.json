@@ -1,0 +1,29 @@
+{
+	"id": "trader_unique_five_gift",
+	"title": "trader introduction",
+	"description": "dialog.npc.trader.unique.five_gift",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.unique_five_gift.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p trader"
+			]
+		}
+	]
+}

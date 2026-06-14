@@ -24,25 +24,6 @@
 			]
 		},
 		{
-			"id": 1,
-			"speaker": {
-				"translate": "dialog.npc.mystical_oak.name",
-				"color": "white"
-			},
-			"text": [
-				{
-					"translate": "dialog.npc.mystical_oak.chatter_friendship1.3.line_1"
-				}
-			],
-			"portraits": [
-				{
-					"path": "mystical_oak.png",
-					"position": "INLINE",
-					"brightness": 1
-				}
-			]
-		},
-		{
 			"id": "end",
 			"speaker": {
 				"translate": "dialog.npc.mystical_oak.name",
@@ -50,7 +31,7 @@
 			},
 			"text": [
 				{
-					"translate": "dialog.npc.mystical_oak.chatter_friendship1.3.line_2"
+					"translate": "dialog.npc.mystical_oak.chatter_friendship1.3.line_1"
 				}
 			],
 			"portraits": [
