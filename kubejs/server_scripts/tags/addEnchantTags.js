@@ -28,6 +28,11 @@ const ironArmorEnchant = [ironArmor, goldArmor, diamondArmor, iridiumArmor, elec
 const goldArmorEnchant = [goldArmor, diamondArmor, iridiumArmor, electrumArmor]
 const diamondArmorEnchant = [diamondArmor, iridiumArmor, electrumArmor]
 
+
+
+const tiers = ["iron", "golden", "diamond"]
+const gearPieces = ["shovel", "pickaxe", "axe", "hoe", "sword", "helmet", "chestplate", "leggings", "boots"]
+
 ServerEvents.tags('item', event => {
     event.add('society:iron_tool_or_above', ironToolEnchant)
     event.add('society:gold_tool_or_above', goldToolEnchant)
@@ -42,4 +47,14 @@ ServerEvents.tags('item', event => {
 
     event.add('society:iridium_armor', iridiumArmor)
     event.add('society:electrum_armor', electrumArmor)
+
+    gearPieces.forEach((type) => {
+        event.add(`society:iron_${type}_or_above`, `#society:golden_${type}_or_above`)
+        event.add(`society:golden_${type}_or_above`, `#society:diamond_${type}_or_above`)
+        event.add(`society:diamond_${type}_or_above`, `oreganized:electrum_${type}`)
+        event.add(`society:diamond_${type}_or_above`, `minecraft:netherite_${type}`)
+        tiers.forEach((tier) => {
+            event.add(`society:${tier}_${type}_or_above`, `minecraft:${tier}_${type}`)
+        });
+    });
 })
