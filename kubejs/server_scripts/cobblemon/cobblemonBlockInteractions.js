@@ -15,13 +15,14 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
         25,
         0.01); {
           block.set("minecraft:stone")
-        if (Math.random() < 0.1) item.count--;
+         if (!player.isCreative() && Math.random() < 0.1) item.count--;
       };
-      (server.runCommandSilent(
-        `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`))
+      server.runCommandSilent(
+        `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`)
     }
   }
-}),
+});
+
   BlockEvents.rightClicked("minecraft:sand", (e) => {
     const { item, player, hand, block, level, server } = e;
     if (hand == "OFF_HAND") return;
@@ -39,13 +40,14 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
           25,
           0.01); {
             block.set("minecraft:glass")
-          if (Math.random() < 0.1) item.count--;
+           if (!player.isCreative() && Math.random() < 0.1) item.count--;
         };
-        (server.runCommandSilent(
-          `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`))
+        server.runCommandSilent(
+          `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`)
       }
     }
-  }),
+  });
+
   BlockEvents.rightClicked("minecraft:clay", (e) => {
     const { item, player, hand, block, level, server } = e;
     if (hand == "OFF_HAND") return;
@@ -63,13 +65,14 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
           25,
           0.01); {
             block.set("minecraft:terracotta")
-          if (Math.random() < 0.1) item.count--;
+           if (!player.isCreative() && Math.random() < 0.1) item.count--;
         };
-        (server.runCommandSilent(
-          `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`))
+        server.runCommandSilent(
+          `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`)
       }
     }
-  }),
+  });
+
   BlockEvents.rightClicked("minecraft:dirt", (e) => {
     const { item, player, hand, block, level, server } = e;
     if (hand == "OFF_HAND") return;
@@ -87,13 +90,14 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
           25,
           0.01); {
             block.set("minecraft:grass_block")
-          if (Math.random() < 0.1) item.count--;
+           if (!player.isCreative() && Math.random() < 0.1) item.count--;
         };
-        (server.runCommandSilent(
-          `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`))
+        server.runCommandSilent(
+          `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`)
       }
     }
-  }),
+  });
+
   BlockEvents.rightClicked("vinery:dirt_slab", (e) => {
     const { item, player, hand, block, level, server } = e;
     if (hand == "OFF_HAND") return;
@@ -111,13 +115,14 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
           25,
           0.01); {
             block.set("vinery:grass_slab")
-          if (Math.random() < 0.1) item.count--;
+           if (!player.isCreative() && Math.random() < 0.1) item.count--;
         };
-        (server.runCommandSilent(
-          `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`))
+        server.runCommandSilent(
+          `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`)
       }
     }
-  }),
+  });
+
   BlockEvents.rightClicked("meadow:fire_log", (e) => {
     const { item, player, hand, block, level, server } = e;
     if (hand == "OFF_HAND") return;
@@ -135,13 +140,14 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
           25,
           0.01); {
             block.set("quark:charcoal_block")
-          if (Math.random() < 0.1) item.count--;
+          if (!player.isCreative() && Math.random() < 0.1) item.count--;
         };
-        (server.runCommandSilent(
-          `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`))
+        server.runCommandSilent(
+          `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`)
       }
     }
-  }),
+  });
+
   BlockEvents.rightClicked("minecraft:farmland", (e) => {
     const { item, player, hand, block, level, server } = e;
     if (hand == "OFF_HAND") return;
@@ -161,11 +167,12 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
             block.set("dew_drop_farmland_growth:deluxe_hydrating_farmland")
           item.count--;
         };
-        (server.runCommandSilent(
-          `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`))
+        server.runCommandSilent(
+          `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`)
       }
     }
-  }),
+  });
+
   BlockEvents.rightClicked("minecraft:amethyst_block", (e) => {
     const { item, player, hand, block, level, server } = e;
     if (hand == "OFF_HAND") return;
@@ -185,8 +192,8 @@ BlockEvents.rightClicked("minecraft:cobblestone", (e) => {
             block.set("minecraft:budding_amethyst")
           item.count--;
         };
-        (server.runCommandSilent(
-          `playsound minecraft:block.large_amethyst_bud.place block @a ${player.x} ${player.y} ${player.z}`))
+        server.runCommandSilent(
+          `playsound minecraft:block.large_amethyst_bud.place block @a ${player.x} ${player.y} ${player.z}`)
       }
     }
   })
