@@ -1,0 +1,34 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.emmanchantment.tempered"
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": "#society:golden_helmet_or_above",
+  "weight": 1,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "id": "minecraft:generic.armor_toughness",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 0.5
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

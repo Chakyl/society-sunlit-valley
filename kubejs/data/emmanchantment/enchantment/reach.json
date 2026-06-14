@@ -1,0 +1,34 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.emmanchantment.reach"
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#society:golden_tool_or_above",
+  "weight": 1,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:player.block_interaction_range",
+        "id": "minecraft:player.block_interaction_range",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 0.5
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

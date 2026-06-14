@@ -1,0 +1,30 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.emmanchantment.step"
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#society:diamond_boots_or_above",
+  "weight": 1,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.step_height",
+        "id": "minecraft:generic.step_height",
+        "amount": 0.9999999,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

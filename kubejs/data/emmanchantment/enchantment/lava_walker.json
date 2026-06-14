@@ -1,0 +1,117 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.emmanchantment.lava_walker"
+  },
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "effect": {},
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:burn_from_stepping"
+              },
+              {
+                "expected": false,
+                "id": "minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:replace_disk",
+          "block_state": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 75,
+                "data": {
+                  "Name": "minecraft:obsidian"
+                }
+              },
+              {
+                "weight": 25,
+                "data": {
+                  "Name": "minecraft:magma_block"
+                }
+              }
+            ]
+          },
+          "height": 1,
+          "offset": [
+            0,
+            -1,
+            0
+          ],
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_block_tag",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "tag": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:lava"
+              },
+              {
+                "type": "minecraft:matching_fluids",
+                "fluids": "minecraft:lava"
+              },
+              {
+                "type": "minecraft:unobstructed"
+              }
+            ]
+          },
+          "radius": {
+            "type": "minecraft:clamped",
+            "max": 16,
+            "min": 0,
+            "value": {
+              "type": "minecraft:linear",
+              "base": 3,
+              "per_level_above_first": 1
+            }
+          },
+          "trigger_game_event": "minecraft:block_place"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 10
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "minecraft:netherite_boots",
+  "weight": 2
+}

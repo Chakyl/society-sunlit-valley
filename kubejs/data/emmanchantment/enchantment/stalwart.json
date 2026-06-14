@@ -1,0 +1,34 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.emmanchantment.stalwart"
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "#society:golden_chestplate_or_above",
+  "weight": 1,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:player.block_interaction_range",
+        "id": "minecraft:player.block_interaction_range",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.05,
+          "per_level_above_first": 0.05
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

@@ -35,11 +35,11 @@ const gearPieces = ["shovel", "pickaxe", "axe", "hoe", "sword", "helmet", "chest
 
 ServerEvents.tags('item', event => {
     event.add('society:iron_tool_or_above', ironToolEnchant)
-    event.add('society:gold_tool_or_above', goldToolEnchant)
+    event.add('society:golden_tool_or_above', goldToolEnchant)
     event.add('society:diamond_tool_or_above', diamondToolEnchant)
 
     event.add('society:iron_armor_or_above', ironArmorEnchant)
-    event.add('society:gold_armor_or_above', goldArmorEnchant)
+    event.add('society:golden_armor_or_above', goldArmorEnchant)
     event.add('society:diamond_armor_or_above', diamondArmorEnchant)
 
     event.add('society:iridium_tool', iridiumTools)
