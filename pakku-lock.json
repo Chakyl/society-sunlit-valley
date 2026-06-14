@@ -551,44 +551,6 @@
             ]
         },
         {
-            "pakku_id": "3hTotZMN5rBH1XR6",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "autumnity"
-            },
-            "name": {
-                "curseforge": "Autumnity"
-            },
-            "id": {
-                "curseforge": "365045"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "autumnity-1.21.1-6.0.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7118/591/autumnity-1.21.1-6.0.1.jar",
-                    "id": "7118591",
-                    "parent_id": "365045",
-                    "hashes": {
-                        "sha1": "3863fa0d77f89955b04ecaad9a3a9c91f76937d8",
-                        "md5": "396be769f1106f99c2902348aff82d1b"
-                    },
-                    "required_dependencies": [
-                        "382216"
-                    ],
-                    "size": 1261462,
-                    "date_published": "2025-10-17T22:01:03.127Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "OmwZi68A98ftwubx",
             "type": "MOD",
             "side": "CLIENT",
@@ -1950,6 +1912,47 @@
             ]
         },
         {
+            "pakku_id": "3N75BXrxpjyOLKV0",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "create-sophisticated-backpacks"
+            },
+            "name": {
+                "curseforge": "Create Style Sophisticated Backpacks"
+            },
+            "id": {
+                "curseforge": "899330"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CreateSophBackpacks.zip",
+                    "mc_versions": [
+                        "1.21.8",
+                        "1.21.5",
+                        "1.21.4",
+                        "1.21.1",
+                        "1.21.10",
+                        "1.21.11"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7707/479/CreateSophBackpacks.zip",
+                    "id": "7707479",
+                    "parent_id": "899330",
+                    "hashes": {
+                        "sha1": "0c834a3a13d3d597b6d1273375d2bd049fc3d728",
+                        "md5": "d9f2564fab19bb0ae5230ad9dc70adb3"
+                    },
+                    "required_dependencies": [
+                        "422301"
+                    ],
+                    "size": 557473,
+                    "date_published": "2026-03-03T21:29:22.703Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "94BG5VwYw1REmZrJ",
             "pakku_links": [
                 "hRx7czGxMvYRNB0J"
@@ -2701,6 +2704,44 @@
                     ],
                     "size": 213583,
                     "date_published": "2026-05-27T04:13:27.523Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "wCVM2LsYqctKtgZO",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emiffect-status-effects-emi-plugin"
+            },
+            "name": {
+                "curseforge": "EMIffect (Status Effects EMI Plugin)"
+            },
+            "id": {
+                "curseforge": "735528"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emiffect-neoforge-2.1.5+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6759/924/emiffect-neoforge-2.1.5+mc1.21.1.jar",
+                    "id": "6759924",
+                    "parent_id": "735528",
+                    "hashes": {
+                        "sha1": "4d48dec751310a0221254aca09d6325530e60731",
+                        "md5": "c693f57b914caf9516979a3eb455c9d4"
+                    },
+                    "required_dependencies": [
+                        "580555"
+                    ],
+                    "size": 38569,
+                    "date_published": "2025-07-12T13:25:15.773Z"
                 }
             ]
         },
@@ -4267,6 +4308,43 @@
                     "required_dependencies": [],
                     "size": 90717,
                     "date_published": "2026-05-18T17:16:01.960Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zLTtsa42BeTwllwV",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "glow-up"
+            },
+            "name": {
+                "curseforge": "Glow Up - Emissive Ores"
+            },
+            "id": {
+                "curseforge": "1162010"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "glow_up-1.0-1.21.zip",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.4",
+                        "1.21.3",
+                        "1.21.1",
+                        "1.21.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6194/478/glow_up-1.0-1.21.zip",
+                    "id": "6194478",
+                    "parent_id": "1162010",
+                    "hashes": {
+                        "sha1": "a1d6af3d5601a14468d985096552d15a2fde7331",
+                        "md5": "85755efd1c3a155ec597f5c5939b5492"
+                    },
+                    "required_dependencies": [],
+                    "size": 264766,
+                    "date_published": "2025-02-15T00:57:01.533Z"
                 }
             ]
         },
@@ -8898,6 +8976,43 @@
                     ],
                     "size": 556428,
                     "date_published": "2026-01-10T21:30:49.453Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zfFjgXGSp398g3e6",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "vein-mining"
+            },
+            "name": {
+                "curseforge": "Vein Mining (Fabric/Forge/Quilt)"
+            },
+            "id": {
+                "curseforge": "431611"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "veinmining-neoforge-5.0.0-beta.2+1.21.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5579/900/veinmining-neoforge-5.0.0-beta.2+1.21.jar",
+                    "id": "5579900",
+                    "parent_id": "431611",
+                    "hashes": {
+                        "sha1": "8fd7cd1e02103b4ffee716f3a76abfd5c04d8883",
+                        "md5": "5acedd9665579dcf1fd6b13aa59c23e8"
+                    },
+                    "required_dependencies": [],
+                    "size": 221494,
+                    "date_published": "2024-07-30T06:53:19.643Z"
                 }
             ]
         },

@@ -1,12 +1,6 @@
 #Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
 
-		[types.leaves_type.autumnity]
-			maple = true
-			yellow_maple = true
-			orange_maple = true
-			red_maple = true
-
 		[types.leaves_type.atmospheric]
 			rosewood = true
 			morado = true
@@ -60,9 +54,6 @@
 			willow = true
 			apple_fruit = true
 			pear_fruit = true
-
-		[types.wood_type.autumnity]
-			maple = true
 
 		[types.wood_type.quark]
 			azalea = true
