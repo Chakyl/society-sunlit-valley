@@ -2,8 +2,8 @@ const basicQuests = [
     {
         population: 3,
         requestedItems: [
-            { item: "aquaculture:worm", count: 10 },
-            { item: "farm_and_charm:flour", count: 16 },
+            { item: 'starcatcher:worm', count: 10 },
+            { item: 'farmersdelight:wheat_dough', count: 16 },
             { item: "minecraft:poppy", count: 4 },
         ],
     },
@@ -19,9 +19,9 @@ const basicQuests = [
     {
         population: 7,
         requestedItems: [
-            { item: "farm_and_charm:nettle_tea", count: 1 },
+            { item: 'herbalbrews:green_tea', count: 1 },
             { item: "minecraft:honey_bottle", count: 4 },
-            { item: "farm_and_charm:ribwort_tea", count: 2 },
+            { item: 'herbalbrews:lavender_tea', count: 2 },
             { item: "meadow:alpine_poppy", count: 4 },
         ],
     },
@@ -32,7 +32,7 @@ const crabTrapQuests = [
         requestedItems: [
             { item: "crabbersdelight:crab_trap_bait", count: 16 },
             { item: "farmersdelight:safety_net", count: 4 },
-            { item: "crabbersdelight:pearl", count: 1 },
+            { item: 'starcatcher:pearl', count: 1 },
         ],
     },
     {
@@ -40,35 +40,35 @@ const crabTrapQuests = [
         requestedItems: [
             { item: "society:aquamarine", count: 4 },
             { item: "crabbersdelight:deluxe_crab_trap_bait", count: 16 },
-            { item: "crabbersdelight:coral_crunch", count: 4 },
+            { tag: '#minecraft:coral_plants', count: 4 },
         ],
     },
     {
         population: 7,
         requestedItems: [
-            { item: "crabbersdelight:pearl_block", count: 4 },
+            { item: 'cluttered:mermaid_pearl', count: 4 },
             { item: "minecraft:pearlescent_froglight", count: 8 },
             { item: "minecraft:heart_of_the_sea", count: 1 },
-            { item: "aquaculture:neptunium_ingot", count: 1 },
+            { item: "society:placeholder", count: 1 },
         ],
     },
 ];
 const crabTrapRewards = [
     {
         minPopulation: 2,
-        item: "aquaculture:tin_can",
+        item: 'minecraft:glass_bottle',
         count: 7,
         chance: 0.65,
     },
     {
         minPopulation: 4,
-        item: "aquaculture:driftwood",
+        item: "society:placeholder", // was Driftwood
         count: 7,
         chance: 0.35,
     },
     {
         minPopulation: 5,
-        item: "aquaculture:message_in_a_bottle",
+        item: "starcatcher:message_in_a_bottle",
         count: 1,
         chance: 0.05,
     },
@@ -80,13 +80,13 @@ const crabTrapRewards = [
     },
     {
         minPopulation: 7,
-        item: "crabbersdelight:coral_fragments",
+        item: "society:placeholder", // was Coral Fragments
         count: 16,
         chance: 0.22,
     },
     {
         minPopulation: 8,
-        item: "aquaculture:treasure_chest",
+        item: "society:placeholder", // was Treasure Chest
         count: 1,
         chance: 0.12,
     },
@@ -104,20 +104,20 @@ const crabTrapRewards = [
     },
     {
         minPopulation: 10,
-        item: "crabbersdelight:pearl_block",
+        item: 'cluttered:mermaid_pearl',
         count: 1,
         chance: 0.06,
     },
 ];
 global.fishPondDefinitions = new Map([
     [
-        "aquaculture:atlantic_herring",
+        "starcatcher:blue_herring",
         {
             quests: [
                 {
                     population: 3,
                     requestedItems: [
-                        { item: "crabbersdelight:jar_of_pickles", count: 1 },
+                        { item: 'culturaldelights:pickle_crate', count: 1 },
                         { item: "minecraft:sea_pickle", count: 16 },
                         { item: "minecraft:seagrass", count: 4 },
                     ],
@@ -132,7 +132,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "aquaculture:neptunium_nugget", count: 3 },
+                        { item: "society:placeholder", count: 3 }, // was Neptunium
                         { item: "minecraft:heart_of_the_sea", count: 4 },
                     ],
                 },
@@ -174,9 +174,9 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "vinery:rotten_cherry", count: 4 },
+                        { item: 'farmersdelight:wheat_dough', count: 4 },
                         { item: "herbalbrews:yerba_mate_tea", count: 1 },
-                        { item: "autumnity:foul_berries", count: 16 },
+                        { item: 'minecraft:spider_eye', count: 8 },
                     ],
                 },
                 {
@@ -189,7 +189,7 @@ global.fishPondDefinitions = new Map([
             additionalRewards: [
                 {
                     minPopulation: 4,
-                    item: "minecraft:spider_eye",
+                    item: 'minecraft:fermented_spider_eye',
                     count: 8,
                     chance: 0.6,
                 },
@@ -207,22 +207,22 @@ global.fishPondDefinitions = new Map([
                 },
                 {
                     minPopulation: 8,
-                    item: "moreminecarts:glass_spines",
+                    item: "society:placeholder", // was Glass Spines
                     count: 8,
                     chance: 0.43,
                 },
                 {
                     minPopulation: 9,
-                    item: "relics:spore_sack",
+                    item: "society:placeholder", // was Spore Sac
                     count: 1,
                     chance: 0.06,
                 },
             ],
         },
     ],
-    ["aquaculture:minnow", { quests: basicQuests }],
+    ['starcatcher:driftfin', { quests: basicQuests }],
     [
-        "aquaculture:bluegill",
+        'starcatcher:sage_catfish',
         {
             quests: basicQuests,
             additionalRewards: [
@@ -242,7 +242,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:perch",
+        'starcatcher:silverveil_perch',
         {
             quests: [
                 {
@@ -370,7 +370,7 @@ global.fishPondDefinitions = new Map([
                 },
                 {
                     minPopulation: 6,
-                    item: "windswept:pinecone",
+                    item: 'whimsy_deco:traffic_cone', // change to Windswept pinecones when available
                     count: 32,
                     chance: 0.31,
                 },
@@ -383,9 +383,8 @@ global.fishPondDefinitions = new Map([
             ],
         },
     ],
-    ["aquaculture:blackfish", { quests: basicQuests }],
     [
-        "aquaculture:brown_trout",
+        'starcatcher:agave_bream',
         {
             quests: [
                 {
@@ -399,14 +398,14 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "pamhc2trees:peachitem", count: 3 },
-                        { item: "bakery:linzer_tart", count: 1 },
+                        { item: "society:placeholder", count: 3 }, // was Peach
+                        { item: 'nomansland:sweet_tart', count: 1 },
                     ],
                 },
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "brewery:beer_barley", count: 16 },
+                        { item: 'kaleidoscope_tavern:riesling_dry_white', count: 16 },
                         { item: "vintagedelight:glow_berry_mason_jar", count: 3 },
                     ],
                 },
@@ -434,7 +433,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:carp",
+        'starcatcher:mirage_carp',
         {
             quests: [
                 {
@@ -482,7 +481,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:piranha",
+        'starcatcher:blue_crystal_fin',
         {
             quests: [
                 {
@@ -495,15 +494,15 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "pamhc2trees:peachitem", count: 3 },
-                        { item: "bakery:linzer_tart", count: 1 },
+                        { item: "society:placeholder", count: 3 }, // was Peach
+                        { item: 'nomansland:maple_tart', count: 1 },
                     ],
                 },
                 {
                     population: 7,
                     requestedItems: [
                         { item: "minecraft:rotten_flesh", count: 64 },
-                        { item: "crabbersdelight:raw_frog_leg", count: 3 },
+                        { item: 'nomansland:frog_leg', count: 3 },
                     ],
                 },
             ],
@@ -524,7 +523,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:smallmouth_bass",
+        'starcatcher:sea_bass',
         {
             quests: [
                 {
@@ -536,7 +535,7 @@ global.fishPondDefinitions = new Map([
                     requestedItems: [
                         { item: "minecraft:zombie_head", count: 1 },
                         { item: "minecraft:bone", count: 16 },
-                        { item: "vinery:bottle_mojang_noir", count: 1 },
+                        { item: 'kaleidoscope_tavern:vodka', count: 1 },
                     ],
                 },
                 {
@@ -546,8 +545,8 @@ global.fishPondDefinitions = new Map([
                             item: "create_enchantment_industry:hyper_experience_bottle",
                             count: 4,
                         },
-                        { item: "relics:relic_experience_bottle", count: 4 },
-                        { item: "vinery:bottle_mojang_noir", count: 1 },
+                        { item: "society:placeholder", count: 4 }, // Relics Experience Bottle
+                        { item: 'kaleidoscope_tavern:vodka', count: 1 },
                     ],
                 },
             ],
@@ -600,23 +599,23 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:pollock",
+        'starcatcher:crystalback_boreal',
         {
             quests: [
                 {
                     population: 3,
                     requestedItems: [
                         { item: "minecraft:calcite", count: 16 },
-                        { item: "farm_and_charm:onion", count: 16 },
-                        { item: "beachparty:coconut_milkshake", count: 1 },
+                        { item: 'farmersdelight:onions', count: 16 },
+                        { item: "society:placeholder", count: 1 }, // Coconut Milkshake
                     ],
                 },
                 {
                     population: 5,
                     requestedItems: [
                         { item: "society:calcite_gem", count: 1 },
-                        { item: "farm_and_charm:onion", count: 64 },
-                        { item: "beachparty:coconut_milkshake", count: 4 },
+                        { item: 'farmersdelight:onions', count: 64 },
+                        { item: "society:placeholder", count: 4 }, // Coconut Milkshake
                     ],
                 },
                 {
@@ -693,65 +692,12 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:jellyfish",
+        'starcatcher:rose_siamese_fish',
         {
             quests: [
                 {
                     population: 3,
-                    requestedItems: [
-                        { item: "minecraft:slime_ball", count: 16 },
-                        { item: "quark:slime_in_a_bucket", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "bakery:strawberry_jam", count: 8 },
-                        { item: "bakery:strawberry_cake", count: 1 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [
-                        { item: "betterarcheology:unidentified_artifact", count: 1 },
-                    ],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "minecraft:slime_ball",
-                    count: 24,
-                    chance: 0.33,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:petrified_slime",
-                    count: 3,
-                    chance: 0.22,
-                },
-                {
-                    minPopulation: 8,
-                    item: "society:ocean_jelly",
-                    count: 1,
-                    chance: 0.04,
-                },
-                {
-                    minPopulation: 8,
-                    item: "relics:jellyfish_necklace",
-                    count: 1,
-                    chance: 0.08,
-                },
-            ],
-        },
-    ],
-    [
-        "aquaculture:rainbow_trout",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [{ item: "automobility:dash_panel", count: 64 }],
+                    requestedItems: [{ item: "society:placeholder", count: 64 }], // Dash Panel
                 },
                 {
                     population: 5,
@@ -767,7 +713,7 @@ global.fishPondDefinitions = new Map([
             additionalRewards: [
                 {
                     minPopulation: 6,
-                    item: "automobility:dash_panel",
+                    item: "society:placeholder", // Dash Panel
                     count: 16,
                     chance: 0.09,
                 },
@@ -781,7 +727,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:pink_salmon",
+        'starcatcher:pink_koi',
         {
             quests: [
                 {
@@ -789,7 +735,7 @@ global.fishPondDefinitions = new Map([
                     requestedItems: [
                         { item: "supplementaries:candle_holder_pink", count: 4 },
                         { item: "minecraft:pink_dye", count: 16 },
-                        { item: "buzzier_bees:pink_clover", count: 1 },
+                        { item: 'nomansland:pink_lupine', count: 1 },
                     ],
                 },
                 {
@@ -803,8 +749,8 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "refurbished_furniture:pink_grill", count: 1 },
-                        { item: "etcetera:pink_sweater", count: 1 },
+                        { item: 'kaleidoscope_tavern:string_lights_pink', count: 4 },
+                        { item: 'snowyspirit:glow_lights_pink', count: 1 },
                         { item: "vintagedelight:salt_lamp_pink", count: 4 },
                     ],
                 },
@@ -860,35 +806,35 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "beachparty:palm_log", count: 64 },
-                        { item: "beachparty:seashell", count: 8 },
+                        { item: "society:placeholder", count: 64 }, // Palm Logs
+                        { item: 'nomansland:seashells', count: 8 },
                     ],
                 },
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "beachparty:icecream_coconut", count: 8 },
-                        { item: "beachparty:coconut_cocktail", count: 8 },
-                        { item: "beachparty:coconut_milkshake", count: 8 },
+                        { item: "society:placeholder", count: 8 }, // Coconut stuff V
+                        { item: "society:placeholder", count: 8 },
+                        { item: "society:placeholder", count: 8 },
                     ],
                 },
             ],
             additionalRewards: [
                 {
                     minPopulation: 4,
-                    item: "crabbersdelight:coral_fragments",
+                    item: "society:placeholder", // Coral Fragments
                     count: 32,
                     chance: 0.48,
                 },
                 {
                     minPopulation: 6,
-                    item: "beachparty:palm_log",
+                    item: "society:placeholder", // Palm Log
                     count: 32,
                     chance: 0.42,
                 },
                 {
                     minPopulation: 8,
-                    item: "beachparty:coconut",
+                    item: "society:placeholder", // Coconut
                     count: 6,
                     chance: 0.82,
                 },
@@ -896,7 +842,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:red_grouper",
+        'starcatcher:redscaled_tuna',
         {
             quests: [
                 {
@@ -912,13 +858,13 @@ global.fishPondDefinitions = new Map([
                     requestedItems: [
                         { item: "create:rose_quartz", count: 4 },
                         { item: "minecraft:red_tulip", count: 1 },
-                        { item: "vinery:red_wine", count: 1 },
+                        { item: 'kaleidoscope_tavern:red_queen', count: 1 },
                     ],
                 },
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "refurbished_furniture:red_grill", count: 1 },
+                        { item: 'cluttered:retro_toaster_red', count: 1 },
                         { item: "numismatics:red_card", count: 1 },
                         { item: "tanukidecor:red_rocket_lamp", count: 1 },
                     ],
@@ -933,7 +879,7 @@ global.fishPondDefinitions = new Map([
                 },
                 {
                     minPopulation: 6,
-                    item: "vinery:red_wine",
+                    item: 'kaleidoscope_tavern:red_queen',
                     count: 4,
                     chance: 0.21,
                 },
@@ -983,7 +929,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:gar",
+        'starcatcher:downfall_bream',
         {
             quests: [
                 {
@@ -1016,7 +962,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:muskellunge",
+        'nomansland:billhook_bass',
         {
             quests: [
                 {
@@ -1031,7 +977,7 @@ global.fishPondDefinitions = new Map([
                     requestedItems: [
                         { item: "society:forks_of_blue", count: 1 },
                         { item: "society:oak_resin", count: 3 },
-                        { item: "crabbersdelight:coral_crunch", count: 4 },
+                        { item: "society:placeholder", count: 4 }, // Coral Crunch
                     ],
                 },
                 {
@@ -1046,7 +992,7 @@ global.fishPondDefinitions = new Map([
             additionalRewards: [
                 {
                     minPopulation: 4,
-                    item: "moreminecarts:levitation_powder",
+                    item: "society:placeholder", // Levitation Powder
                     count: 4,
                     chance: 0.64,
                 },
@@ -1058,7 +1004,7 @@ global.fishPondDefinitions = new Map([
                 },
                 {
                     minPopulation: 8,
-                    item: "moreminecarts:hard_light_lens",
+                    item: "society:placeholder", // Hard Light Lens
                     count: 4,
                     chance: 0.32,
                 },
@@ -1066,7 +1012,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:synodontis",
+        'starcatcher:sun_seeking_carp',
         {
             quests: [
                 {
@@ -1080,8 +1026,8 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "vinery:glowing_wine", count: 1 },
-                        { item: "farm_and_charm:corn", count: 64 },
+                        { item: 'kaleidoscope_tavern:glowflower_brew', count: 1 },
+                        { item: 'culturaldelights:corn_cob', count: 64 },
                         { item: "atmospheric:orange", count: 4 },
                     ],
                 },
@@ -1113,7 +1059,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:tambaqui",
+        'starcatcher:dripfin',
         {
             quests: [
                 {
@@ -1158,7 +1104,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:atlantic_cod",
+        'starcatcher:stonefish',
         {
             quests: [
                 {
@@ -1203,7 +1149,7 @@ global.fishPondDefinitions = new Map([
                 },
                 {
                     minPopulation: 8,
-                    item: "candlelight:typewriter_copper",
+                    item: "society:placeholder", // Typewriter
                     count: 1,
                     chance: 0.08,
                 },
@@ -1211,7 +1157,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:boulti",
+        'starcatcher:sunny_sturgeon',
         {
             quests: [
                 {
@@ -1225,7 +1171,7 @@ global.fishPondDefinitions = new Map([
                     population: 5,
                     requestedItems: [
                         {
-                            item: "create_mechanical_extruder:mechanical_extruder",
+                            item: "society:placeholder", // Mechanical Extruder
                             count: 1,
                         },
                         { item: "create:brass_ingot", count: 16 },
@@ -1264,127 +1210,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:leech",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "minecraft:beef", count: 8 },
-                        { item: "minecraft:porkchop", count: 8 },
-                        { item: "minecraft:mutton", count: 8 },
-                        { item: "minecraft:chicken", count: 8 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "minecraft:rabbit", count: 4 },
-                        { item: "untitledduckmod:raw_duck", count: 4 },
-                        { item: "untitledduckmod:raw_goose", count: 2 },
-                        { item: "autumnity:turkey", count: 1 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [{ item: "society:truffle", count: 1 }],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "farm_and_charm:minced_beef",
-                    count: 16,
-                    chance: 0.45,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:living_flesh",
-                    count: 1,
-                    chance: 0.16,
-                },
-                {
-                    minPopulation: 8,
-                    item: "society:helvite",
-                    count: 2,
-                    chance: 0.12,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:neon_diamond_sign",
-                    count: 1,
-                    chance: 0.04,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:neon_heart_sign",
-                    count: 1,
-                    chance: 0.04,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:neon_club_sign",
-                    count: 1,
-                    chance: 0.04,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:neon_spade_sign",
-                    count: 1,
-                    chance: 0.04,
-                },
-            ],
-        },
-    ],
-    [
-        "aquaculture:catfish",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "society:aquamarine", count: 1 },
-                        { item: "minecraft:cornflower", count: 16 },
-                        { item: "vintagedelight:salt_lamp_light_blue", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [{ item: "farm_and_charm:cat_food", count: 24 }],
-                },
-                {
-                    population: 7,
-                    requestedItems: [
-                        { item: "minecraft:lapis_lazuli", count: 48 },
-                        { item: "minecraft:heart_of_the_sea", count: 1 },
-                        { item: "minecraft:enchanting_table", count: 1 },
-                    ],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "society:aquamarine",
-                    count: 4,
-                    chance: 0.44,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:kyanite",
-                    count: 1,
-                    chance: 0.22,
-                },
-                {
-                    minPopulation: 8,
-                    item: "minecraft:lapis_lazuli",
-                    count: 32,
-                    chance: 0.32,
-                },
-            ],
-        },
-    ],
-    [
-        "aquaculture:tuna",
+        'starcatcher:bigeye_tuna',
         {
             quests: [
                 {
@@ -1428,7 +1254,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:bayad",
+        'starcatcher:ironjaw_herring',
         {
             quests: [
                 {
@@ -1473,7 +1299,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:arapaima",
+        "aquaculture:arapaima", // resume here
         {
             quests: [
                 {

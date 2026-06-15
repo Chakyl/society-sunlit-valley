@@ -34,11 +34,11 @@
 			"population": 5,
 			"required_items": [
 				{
-					"item": "beachparty:palm_log",
+					"item": "society:placeholder",
 					"count": 64
 				},
 				{
-					"item": "beachparty:seashell",
+					"item": "nomansland:seashells",
 					"count": 8
 				}
 			]
@@ -47,15 +47,15 @@
 			"population": 7,
 			"required_items": [
 				{
-					"item": "beachparty:icecream_coconut",
+					"item": "society:placeholder",
 					"count": 8
 				},
 				{
-					"item": "beachparty:coconut_cocktail",
+					"item": "society:placeholder",
 					"count": 8
 				},
 				{
-					"item": "beachparty:coconut_milkshake",
+					"item": "society:placeholder",
 					"count": 8
 				}
 			]
@@ -65,7 +65,7 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "crabbersdelight:coral_fragments",
+				"id": "society:placeholder",
 				"count": 32
 			},
 			"chance": 0.48
@@ -73,7 +73,7 @@
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "beachparty:palm_log",
+				"id": "society:placeholder",
 				"count": 32
 			},
 			"chance": 0.42
@@ -81,7 +81,7 @@
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "beachparty:coconut",
+				"id": "society:placeholder",
 				"count": 6
 			},
 			"chance": 0.82

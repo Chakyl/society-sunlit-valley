@@ -1,6 +1,6 @@
 {
 	"color": "#ffffff",
-	"fish": "aquaculture:red_grouper",
+	"fish": "starcatcher:redscaled_tuna",
 	"max_population": 10,
 	"max_roe": 1,
 	"reproduction_rate": 4,
@@ -34,7 +34,7 @@
 					"count": 1
 				},
 				{
-					"item": "vinery:red_wine",
+					"item": "kaleidoscope_tavern:red_queen",
 					"count": 1
 				}
 			]
@@ -43,7 +43,7 @@
 			"population": 7,
 			"required_items": [
 				{
-					"item": "refurbished_furniture:red_grill",
+					"item": "cluttered:retro_toaster_red",
 					"count": 1
 				},
 				{
@@ -69,7 +69,7 @@
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "vinery:red_wine",
+				"id": "kaleidoscope_tavern:red_queen",
 				"count": 4
 			},
 			"chance": 0.21

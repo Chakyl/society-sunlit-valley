@@ -1,6 +1,6 @@
 {
 	"color": "#ffffff",
-	"fish": "aquaculture:synodontis",
+	"fish": "starcatcher:sunny_sturgeon",
 	"max_population": 10,
 	"max_roe": 1,
 	"reproduction_rate": 4,
@@ -9,16 +9,12 @@
 			"population": 3,
 			"required_items": [
 				{
-					"item": "minecraft:gold_ingot",
-					"count": 32
-				},
-				{
-					"item": "minecraft:raw_gold",
+					"item": "create:raw_zinc",
 					"count": 16
 				},
 				{
-					"item": "numismatics:crown",
-					"count": 4
+					"item": "create:zinc_ingot",
+					"count": 48
 				}
 			]
 		},
@@ -26,16 +22,16 @@
 			"population": 5,
 			"required_items": [
 				{
-					"item": "vinery:glowing_wine",
+					"item": "society:placeholder",
 					"count": 1
 				},
 				{
-					"item": "farm_and_charm:corn",
-					"count": 64
+					"item": "create:brass_ingot",
+					"count": 16
 				},
 				{
-					"item": "atmospheric:orange",
-					"count": 4
+					"item": "snowyspirit:ginger",
+					"count": 30
 				}
 			]
 		},
@@ -43,8 +39,16 @@
 			"population": 7,
 			"required_items": [
 				{
-					"item": "create:precision_mechanism",
+					"item": "society:furniture_box",
 					"count": 1
+				},
+				{
+					"item": "society:battery",
+					"count": 4
+				},
+				{
+					"item": "society:canvas",
+					"count": 16
 				}
 			]
 		}
@@ -53,26 +57,26 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "minecraft:raw_gold",
-				"count": 32
+				"id": "minecraft:granite",
+				"count": 64
 			},
-			"chance": 0.44
+			"chance": 0.69
 		},
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "society:pyrite",
-				"count": 1
+				"id": "create:brass_ingot",
+				"count": 2
 			},
 			"chance": 0.22
 		},
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "create:precision_mechanism",
+				"id": "furniture:display",
 				"count": 1
 			},
-			"chance": 0.18
+			"chance": 0.16
 		}
 	]
 }

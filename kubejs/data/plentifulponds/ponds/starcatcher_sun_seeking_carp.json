@@ -1,6 +1,6 @@
 {
 	"color": "#ffffff",
-	"fish": "aquaculture:catfish",
+	"fish": "starcatcher:sun_seeking_carp",
 	"max_population": 10,
 	"max_roe": 1,
 	"reproduction_rate": 4,
@@ -9,16 +9,16 @@
 			"population": 3,
 			"required_items": [
 				{
-					"item": "society:aquamarine",
-					"count": 1
+					"item": "minecraft:gold_ingot",
+					"count": 32
 				},
 				{
-					"item": "minecraft:cornflower",
+					"item": "minecraft:raw_gold",
 					"count": 16
 				},
 				{
-					"item": "vintagedelight:salt_lamp_light_blue",
-					"count": 1
+					"item": "numismatics:crown",
+					"count": 4
 				}
 			]
 		},
@@ -26,8 +26,16 @@
 			"population": 5,
 			"required_items": [
 				{
-					"item": "farm_and_charm:cat_food",
-					"count": 24
+					"item": "kaleidoscope_tavern:glowflower_brew",
+					"count": 1
+				},
+				{
+					"item": "culturaldelights:corn_cob",
+					"count": 64
+				},
+				{
+					"item": "atmospheric:orange",
+					"count": 4
 				}
 			]
 		},
@@ -35,15 +43,7 @@
 			"population": 7,
 			"required_items": [
 				{
-					"item": "minecraft:lapis_lazuli",
-					"count": 48
-				},
-				{
-					"item": "minecraft:heart_of_the_sea",
-					"count": 1
-				},
-				{
-					"item": "minecraft:enchanting_table",
+					"item": "create:precision_mechanism",
 					"count": 1
 				}
 			]
@@ -53,15 +53,15 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "society:aquamarine",
-				"count": 4
+				"id": "minecraft:raw_gold",
+				"count": 32
 			},
 			"chance": 0.44
 		},
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "society:kyanite",
+				"id": "society:pyrite",
 				"count": 1
 			},
 			"chance": 0.22
@@ -69,10 +69,10 @@
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "minecraft:lapis_lazuli",
-				"count": 32
+				"id": "create:precision_mechanism",
+				"count": 1
 			},
-			"chance": 0.32
+			"chance": 0.18
 		}
 	]
 }

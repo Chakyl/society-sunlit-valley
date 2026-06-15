@@ -1,6 +1,6 @@
 {
 	"color": "#ffffff",
-	"fish": "aquaculture:bluegill",
+	"fish": "starcatcher:sage_catfish",
 	"max_population": 10,
 	"max_roe": 1,
 	"reproduction_rate": 4,
@@ -9,11 +9,11 @@
 			"population": 3,
 			"required_items": [
 				{
-					"item": "aquaculture:worm",
+					"item": "starcatcher:worm",
 					"count": 10
 				},
 				{
-					"item": "farm_and_charm:flour",
+					"item": "farmersdelight:wheat_dough",
 					"count": 16
 				},
 				{
@@ -47,7 +47,7 @@
 			"population": 7,
 			"required_items": [
 				{
-					"item": "farm_and_charm:nettle_tea",
+					"item": "herbalbrews:green_tea",
 					"count": 1
 				},
 				{
@@ -55,7 +55,7 @@
 					"count": 4
 				},
 				{
-					"item": "farm_and_charm:ribwort_tea",
+					"item": "herbalbrews:lavender_tea",
 					"count": 2
 				},
 				{

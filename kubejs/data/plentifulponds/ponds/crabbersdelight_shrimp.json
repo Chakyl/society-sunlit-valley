@@ -17,7 +17,7 @@
 					"count": 4
 				},
 				{
-					"item": "crabbersdelight:pearl",
+					"item": "starcatcher:pearl",
 					"count": 1
 				}
 			]
@@ -34,7 +34,7 @@
 					"count": 16
 				},
 				{
-					"item": "crabbersdelight:coral_crunch",
+					"item": null,
 					"count": 4
 				}
 			]
@@ -43,7 +43,7 @@
 			"population": 7,
 			"required_items": [
 				{
-					"item": "crabbersdelight:pearl_block",
+					"item": "cluttered:mermaid_pearl",
 					"count": 4
 				},
 				{
@@ -55,7 +55,7 @@
 					"count": 1
 				},
 				{
-					"item": "aquaculture:neptunium_ingot",
+					"item": "society:placeholder",
 					"count": 1
 				}
 			]
@@ -65,7 +65,7 @@
 		{
 			"min_population": 2,
 			"drop": {
-				"id": "aquaculture:tin_can",
+				"id": "minecraft:glass_bottle",
 				"count": 7
 			},
 			"chance": 0.65
@@ -73,7 +73,7 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "aquaculture:driftwood",
+				"id": "society:placeholder",
 				"count": 7
 			},
 			"chance": 0.35
@@ -81,7 +81,7 @@
 		{
 			"min_population": 5,
 			"drop": {
-				"id": "aquaculture:message_in_a_bottle",
+				"id": "starcatcher:message_in_a_bottle",
 				"count": 1
 			},
 			"chance": 0.05
@@ -97,7 +97,7 @@
 		{
 			"min_population": 7,
 			"drop": {
-				"id": "crabbersdelight:coral_fragments",
+				"id": "society:placeholder",
 				"count": 16
 			},
 			"chance": 0.22
@@ -105,7 +105,7 @@
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "aquaculture:treasure_chest",
+				"id": "society:placeholder",
 				"count": 1
 			},
 			"chance": 0.12
@@ -129,7 +129,7 @@
 		{
 			"min_population": 10,
 			"drop": {
-				"id": "crabbersdelight:pearl_block",
+				"id": "cluttered:mermaid_pearl",
 				"count": 1
 			},
 			"chance": 0.06
