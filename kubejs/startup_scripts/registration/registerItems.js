@@ -1066,16 +1066,16 @@ StartupEvents.registry("item", (e) => {
         food.saturation(2);
       });
     const roeHex = fishRoeMapping.find((val) => val.item === fish.item)?.hex;
-    e.create(`society:${fishId}_roe`)
-      .texture("society:item/roe")
-      .color(0, roeHex);
-    e.create(`society:aged_${fishId}_roe`)
-      .texture("society:item/aged_roe")
-      .color(0, roeHex)
-      .food((food) => {
-  //      food.hunger(5);
-        food.saturation(2);
-      });
+  //   e.create(`society:${fishId}_roe`)
+  //     .texture("society:item/roe")
+  //     .color(0, roeHex);
+  //   e.create(`society:aged_${fishId}_roe`)
+  //     .texture("society:item/aged_roe")
+  //     .color(0, roeHex)
+  //     .food((food) => {
+  // //      food.hunger(5);
+  //       food.saturation(2);
+  //     });
     e.create(`society:${fishId}_bait`)
       .texture("society:item/fish_bait")
       .color(0, roeHex)

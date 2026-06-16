@@ -3681,8 +3681,8 @@ Array.from(global.fishPondDefinitions.keys()).forEach((fishID) => {
         "reproduction_rate": 4,
         "quests": pondData.quests.map((quest) => ({
             "population": quest.population,
-            "required_items": quest.requestedItems.map((request) => ({
-                "item": request.item,
+            "requested_items": quest.requestedItems.map((request) => ({
+                "id": request.item,
                 "count": request.count
             }))
         }))
