@@ -142,24 +142,25 @@ BlockEvents.rightClicked("minecraft:amethyst_block", (e) => {
 BlockEvents.rightClicked("society:charging_rod", (e) => {
   const { item, player, hand, block, level, server } = e;
   if (hand == "OFF_HAND") return;
-  if (hand == "MAIN_HAND") {
-    if (item.getId() === "cobblemon:thunder_stone") {
-      const upgraded = block.properties.get("upgraded") == "true";
-      Utils.server.runCommandSilent(
-        `execute in ${level.dimension} run summon lightning_bolt ${block.x} ${block.y} ${block.z}`
-      )
-      let nbt = block.getEntityData();
-      nbt.merge({ data: { stage: 0 } });
-      global.setBlockEntityData(block, nbt)
-      block.set(block.id, {
-        working: true,
-        mature: false,
-        upgraded: upgraded,
-      });
-      if (!player.isCreative()) item.count--;
-      player.swing()
+  if (hand == "MAIN_HAND")
+    if (block.properties.get("working") == "false") {
+      if (item.getId() === "cobblemon:thunder_stone") {
+        const upgraded = block.properties.get("upgraded") == "true";
+        Utils.server.runCommandSilent(
+          `execute in ${level.dimension} run summon lightning_bolt ${block.x} ${block.y} ${block.z}`
+        )
+        let nbt = block.getEntityData();
+        nbt.merge({ data: { stage: 0 } });
+        global.setBlockEntityData(block, nbt)
+        block.set(block.id, {
+          working: true,
+          mature: false,
+          upgraded: upgraded,
+        });
+        if (!player.isCreative()) item.count--;
+        player.swing()
+      }
     }
-  }
 });
 
 BlockEvents.rightClicked("minecraft:snow_block", (e) => {
@@ -236,6 +237,42 @@ BlockEvents.rightClicked("minecraft:packed_ice", (e) => {
       };
       server.runCommandSilent(
         `playsound minecraft:entity.player.hurt_freeze block @a ${player.x} ${player.y} ${player.z}`)
+    }
+  }
+});
+
+BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
+  const { item, player, hand, block, level, server } = e;
+  if (hand == "OFF_HAND") return;
+  if (hand == "MAIN_HAND") {
+    {
+      if (item.getId() === "cobblemon:sun_stone") {
+        let day = global.getDay(level);
+        let nbt = block.getEntityData();
+        const canSpawnToday = !nbt.data || !nbt.data.dayLastRaided || global.compareDay(day, nbt.data.dayLastRaided, 1)
+        if (canSpawnToday) return;
+        level.spawnParticles(
+          "atmospheric:orange_vapor",
+          true,
+          block.x,
+          block.y + 1,
+          block.z,
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          25,
+          0.01);
+        nbt.merge({
+          data: {
+            dayLastRaided: -1
+          }
+        });
+        if (!player.isCreative()) item.count--;
+        player.swing()
+        server.runCommandSilent(
+          `playsound minecraft:block.respawn_anchor.charge block @a ${player.x} ${player.y} ${player.z}`)
+        global.setBlockEntityData(block, nbt);
+      };
     }
   }
 });
