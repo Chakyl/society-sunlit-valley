@@ -8,6 +8,9 @@ StartupEvents.registry("item", (e) => {
     .maxStackSize(16);
   e.create("justhammers:small_core").texture("society:item/small_core");
   e.create("buildinggadgets2:gadget_core").texture("society:item/gadget_core");
+  e.create("society:farm_building_supplies").texture("society:item/farm_building_supplies");
+  e.create("society:greenhouse_building_supplies").texture("society:item/greenhouse_building_supplies");
+  e.create("society:village_building_supplies").texture("society:item/village_building_supplies");
   const tiers = [
     "Stone, Leather, Chainmail, and Cotton",
     "Iron",
