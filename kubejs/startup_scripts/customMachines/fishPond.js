@@ -161,7 +161,7 @@ global.handleFishPondRightClick = (clickEvent) => {
       }
       global.handleFishInsertion(clickEvent);
       if (mature === "true") {
-        global.handleFishHarvest(block, player, server);
+        global.handleFishHarvest(block, player, server, false, player.stages);
       }
       if (!type.equals("") && population == "0") {
         if (item && item.hasTag("forge:tools/fishing_rods")) {
@@ -188,7 +188,7 @@ global.handleFishPondRightClick = (clickEvent) => {
         }
       }
     } else if (population > 0) {
-      let fishItem = global.handleFishExtraction(block, player, server);
+      let fishItem = global.handleFishExtraction(block, player, server, player.stages);
       if (fishItem) player.give(fishItem);
     }
   }
