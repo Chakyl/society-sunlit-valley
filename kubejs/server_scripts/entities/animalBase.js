@@ -250,7 +250,7 @@ const handleMilk = (name, data, day, hungry, e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   if (player.isFake() && data.getInt("affection") < 100) return;
   let errorText;
-  let milkItem = global.getMilk(level, target, data, player, day, true);
+  let milkItem = global.getMilk(level, target, data, player, day, true, undefined, player.stages);
 
   if (milkItem !== -1) {
     let milk = level.createEntity("minecraft:item");
@@ -379,7 +379,7 @@ const handleMagicHarvest = (name, data, e) => {
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
 
   let errorText = "";
-  const droppedLoot = global.getMagicShearsOutput(level, target, player);
+  const droppedLoot = global.getMagicShearsOutput(level, target, player, undefined, player.stages);
   if (droppedLoot !== -1) {
     server.runCommandSilent(
       `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
@@ -566,7 +566,8 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           undefined,
           undefined,
           undefined,
-          handleSpecialItem
+          handleSpecialItem,
+          player.stages,
         );
       }
       if (
