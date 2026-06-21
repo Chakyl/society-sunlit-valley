@@ -55,6 +55,30 @@
 			x: 9.5d
 			y: -1.5d
 		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/librarian.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/trader.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			image: "dialog:textures/portraits/witch.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 9.5d
+			y: 4.5d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -250,6 +274,8 @@
 		{
 			dependencies: ["048655663A5A82FC"]
 			description: ["{ftbquests.chapter.villagers.quest4633C0427ACA18D3.description1}"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "society:villager"
@@ -294,12 +320,21 @@
 			}]
 			title: "{ftbquests.chapter.villagers.quest33338792EF0994BD.title}"
 			x: 7.0d
-			y: 5.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["33338792EF0994BD"]
+			dependencies: ["048655663A5A82FC"]
 			description: ["{ftbquests.chapter.villagers.quest49477F09DF6EBA50.description1}"]
-			icon: "minecraft:chest"
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:librarian"
+					}
+				}
+			}
 			id: "49477F09DF6EBA50"
 			tasks: [{
 				id: "078F96904FB1E9F6"
@@ -307,8 +342,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.villagers.quest49477F09DF6EBA50.title}"
-			x: 7.0d
-			y: 7.5d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
@@ -326,8 +361,8 @@
 				title: "{ftbquests.chapter.villagers.quest55F17BB945CA5BB2.task.2611303800061629606.title}"
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: 7.5d
+			x: 6.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
@@ -339,14 +374,11 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.villagers.quest7B2AB58CA9C1C19B.title}"
-			x: 8.5d
-			y: 7.5d
+			x: 7.5d
+			y: 10.5d
 		}
 		{
-			dependencies: [
-				"33338792EF0994BD"
-				"66E1AC55824DF1D9"
-			]
+			dependencies: ["66E1AC55824DF1D9"]
 			description: [
 				"{ftbquests.chapter.villagers.quest52F1DCA9462F825F.description1}"
 				""
@@ -360,14 +392,11 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.villagers.quest52F1DCA9462F825F.title}"
-			x: 6.0d
-			y: 8.5d
+			x: 9.5d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"33338792EF0994BD"
-				"5A369FC904BCF5EE"
-			]
+			dependencies: ["5A369FC904BCF5EE"]
 			description: [
 				"{ftbquests.chapter.villagers.quest1348507AE17E187E.description1}"
 				""
@@ -381,11 +410,11 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.villagers.quest1348507AE17E187E.title}"
-			x: 8.0d
-			y: 8.5d
+			x: 7.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["33338792EF0994BD"]
+			dependencies: ["49477F09DF6EBA50"]
 			description: [
 				"{ftbquests.chapter.villagers.questE7AAB1F6C287535.description1}"
 				""
@@ -398,8 +427,8 @@
 				title: "{ftbquests.chapter.villagers.questE7AAB1F6C287535.task.7809080618735313315.title}"
 				type: "checkmark"
 			}]
-			x: 7.0d
-			y: 9.0d
+			x: 4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["52F1DCA9462F825F"]
@@ -429,8 +458,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.villagers.quest327B9F8868AE76E.title}"
-			x: 6.0d
-			y: 10.0d
+			x: 9.5d
+			y: 7.0d
 		}
 	]
 	title: "{ftbquests.chapter.villagers.title}"
