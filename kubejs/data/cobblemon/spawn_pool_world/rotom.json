@@ -1,9 +1,10 @@
 {
-    "enabled": true,
-    "neededInstalledMods": [],
-    "neededUninstalledMods": [],
-    "spawns": [
-       { "id": "rotom-1",
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "rotom-1",
       "pokemon": "rotom",
       "type": "pokemon",
       "context": "grounded",
@@ -12,7 +13,7 @@
       "weight": 1,
       "condition": {
         "neededNearbyBlocks": [
-            "society:sparkpod"
+          "society:sparkpod"
         ]
       }
     }

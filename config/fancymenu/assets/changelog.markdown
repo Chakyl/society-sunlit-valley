@@ -3,6 +3,14 @@
 ### v1.0.8-SSV4.0.9
 ^^^
 --- 
+- Updated SSV version
+- Added spawns for Arboliva line
+- Added unique spawn for each of the mastery blocks (Goomy, Pupitar, Feebas, Beldum, and Rotom)
+- Blaze Tauros  now gets milked for steamed milk
+- Fixed milking recipes not all showing
+- Fixed Hoopa Unbound being unobtainable
+- Fixed issues with TM/TRs not showing the correct learnable state
+- Fixed fighting types not shopping Kousa saplings
 
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
