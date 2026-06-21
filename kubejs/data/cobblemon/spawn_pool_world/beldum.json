@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+       { "id": "beldum-1",
+      "pokemon": "beldum",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "10-25",
+      "weight": 1,
+      "condition": {
+        "neededNearbyBlocks": [
+            "minecraft:enchanting_table"
+        ]
+      }
+    }
+  ]
+}
