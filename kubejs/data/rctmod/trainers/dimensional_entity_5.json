@@ -2,16 +2,16 @@
   "displayName": "Dimensional Entity",
   "team": [
     {
-      "species": "cobblemon:darkrai",
+      "species": "cobblemon:irontreads",
       "gender": "GENDERLESS",
       "level": 100,
-      "nature": "cobblemon:bold",
-      "ability": "baddreams",
+      "nature": "cobblemon:adamant",
+      "ability": "quarkdrive",
       "moveset": [
-        "darkpulse",
-        "icebeam",
-        "nastyplot",
-        "hypnosis"
+        "knockoff",
+        "earthquake",
+        "megahorn",
+        "heavyslam"
       ],
       "ivs": {
         "hp": 31,
@@ -22,27 +22,26 @@
         "speed": 31
       },
       "evs": {
-        "special_defence": 4,
-        "special_attack": 252,
+        "defence": 252,
         "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:life_orb",
+      "heldItem": "cobblemon:assault_vest",
       "aspects": [
         "genderless"
       ]
     },
     {
-      "species": "cobblemon:ursaluna",
-      "gender": "MALE",
+      "species": "cobblemon:eternatus",
+      "gender": "GENDERLESS",
       "level": 100,
-      "nature": "cobblemon:adamant",
-      "ability": "guts",
+      "nature": "cobblemon:modest",
+      "ability": "pressure",
       "moveset": [
-        "hammerarm",
-        "facade",
-        "headlongrush",
-        "swordsdance"
+        "meteorbeam",
+        "flamethrower",
+        "eternabeam",
+        "sludgewave"
       ],
       "ivs": {
         "hp": 31,
@@ -54,25 +53,25 @@
       },
       "evs": {
         "hp": 252,
-        "attack": 252
+        "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:flame_orb",
+      "heldItem": "cobblemon:quick_claw",
       "aspects": [
-        "male"
+        "genderless"
       ]
     },
     {
-      "species": "cobblemon:palkia",
-      "gender": "GENDERLESS",
+      "species": "cobblemon:florges",
+      "gender": "FEMALE",
       "level": 100,
-      "nature": "cobblemon:bashful",
-      "ability": "pressure",
+      "nature": "cobblemon:calm",
+      "ability": "flowerveil",
       "moveset": [
-        "spacialrend",
-        "substitute",
-        "earthpower",
-        "dragontail"
+        "moonblast",
+        "safeguard",
+        "psychic",
+        "lightscreen"
       ],
       "ivs": {
         "hp": 31,
@@ -83,26 +82,58 @@
         "speed": 31
       },
       "evs": {
-        "special_attack": 252,
+        "hp": 252,
+        "special_defence": 252,
+        "speed": 6
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female",
+        "flower-red"
+      ]
+    },
+    {
+      "species": "cobblemon:serperior",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:gentle",
+      "ability": "contrary",
+      "moveset": [
+        "leafstorm",
+        "leechseed",
+        "grassyterrain",
+        "lightscreen"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_defence": 252,
         "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:leftovers",
+      "heldItem": "cobblemon:light_clay",
       "aspects": [
-        "genderless"
+        "male"
       ]
     },
     {
       "species": "cobblemon:fluttermane",
       "gender": "GENDERLESS",
       "level": 100,
-      "nature": "cobblemon:careful",
+      "nature": "cobblemon:bashful",
       "ability": "protosynthesis",
       "moveset": [
-        "mysticalfire",
+        "shadowball",
         "moonblast",
-        "powergem",
-        "shadowball"
+        "mysticalfire",
+        "powergem"
       ],
       "ivs": {
         "hp": 31,
@@ -113,27 +144,27 @@
         "speed": 31
       },
       "evs": {
+        "hp": 6,
         "special_attack": 252,
-        "special_defence": 4,
         "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:choice_specs",
+      "heldItem": "cobblemon:bright_powder",
       "aspects": [
         "genderless"
       ]
     },
     {
-      "species": "cobblemon:ironbundle",
+      "species": "cobblemon:roaringmoon",
       "gender": "GENDERLESS",
       "level": 100,
-      "nature": "cobblemon:timid",
-      "ability": "quarkdrive",
+      "nature": "cobblemon:gentle",
+      "ability": "protosynthesis",
       "moveset": [
-        "flipturn",
-        "icebeam",
-        "hydropump",
-        "freezedry"
+        "throatchop",
+        "scaleshot",
+        "phantomforce",
+        "fly"
       ],
       "ivs": {
         "hp": 31,
@@ -144,44 +175,14 @@
         "speed": 31
       },
       "evs": {
-        "special_attack": 252,
-        "speed": 252
+        "hp": 6,
+        "attack": 252,
+        "special_defence": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:heavy_duty_boots",
+      "heldItem": "cobblemon:roseli_berry",
       "aspects": [
         "genderless"
-      ]
-    },
-    {
-      "species": "cobblemon:basculegion",
-      "gender": "FEMALE",
-      "level": 100,
-      "nature": "cobblemon:mild",
-      "ability": "adaptability",
-      "moveset": [
-        "aquajet",
-        "wavecrash",
-        "lastrespects",
-        "psychicfangs"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "defence": 4,
-        "special_attack": 252,
-        "speed": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:choice_scarf",
-      "aspects": [
-        "female"
       ]
     }
   ],
