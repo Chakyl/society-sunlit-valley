@@ -1117,7 +1117,6 @@ StartupEvents.registry("item", (e) => {
 
   const vanillaPristine = [
     "minecraft:emerald",
-    "minecraft:lapis_lazuli",
     "minecraft:diamond",
     "minecraft:amethyst_shard",
     "minecraft:prismarine_crystals",
