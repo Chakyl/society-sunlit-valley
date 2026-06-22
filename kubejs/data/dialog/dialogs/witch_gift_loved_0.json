@@ -16,7 +16,26 @@
 			],
 			"portraits": [
 				{
-					"path": "witch.png",
+					"path": "loved/witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_loved.0.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "loved/witch.png",
 					"position": "INLINE",
 					"brightness": 1
 				}

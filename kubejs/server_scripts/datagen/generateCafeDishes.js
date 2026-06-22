@@ -1,7 +1,7 @@
 
 global.cooking.forEach((dish) => {
     let category = "main";
-    ["jam", "tart", "sorbet", "muffin", "candy", "candied", "pie", "cake", "pudding", "jam", "jelly", "sweet", "tart", "chocolate", "gateau"].forEach((keyword) => {
+    ["jam", "tart", "sorbet", "muffin", "candy", "candied", "pie", "cake", "cookie", "pudding", "jam", "jelly", "sweet", "tart", "chocolate", "snow", "gateau"].forEach((keyword) => {
         if (dish.item.path.includes(keyword)) category = "dessert"
     });
 

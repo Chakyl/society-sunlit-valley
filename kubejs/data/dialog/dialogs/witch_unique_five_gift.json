@@ -1,7 +1,7 @@
 {
-	"id": "witch_gift_disliked_0",
+	"id": "witch_unique_five_gift",
 	"title": "witch introduction",
-	"description": "dialog.npc.witch.gift.disliked",
+	"description": "dialog.npc.witch.unique.five_gift",
 	"entries": [
 		{
 			"id": "start",
@@ -11,15 +11,18 @@
 			},
 			"text": [
 				{
-					"translate": "dialog.npc.witch.gift_disliked.0.line_0"
+					"translate": "dialog.npc.witch.unique_five_gift.line_0"
 				}
 			],
 			"portraits": [
 				{
-					"path": "disliked/witch.png",
+					"path": "witch.png",
 					"position": "INLINE",
 					"brightness": 1
 				}
+			],
+			"command": [
+				"openshop @p witch"
 			]
 		}
 	]

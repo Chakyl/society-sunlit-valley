@@ -1,7 +1,7 @@
 // Priority: -100
 if (global.datagenDialog) {
-  runNpcDatagen("trader", {
-    name: "Carlos",
+  runNpcDatagen("witch", {
+    name: "Evelyne",
     intro: [
       "Heya @i! Ace told me all about your plans here in the valley."
     ],

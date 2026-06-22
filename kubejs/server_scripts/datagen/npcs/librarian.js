@@ -1,7 +1,7 @@
 // Priority: -100
 if (global.datagenDialog) {
   runNpcDatagen("librarian", {
-    name: "Vivian",
+    name: "Veronica",
     intro: [
       "Heya @i! Ace told me all about your plans here in the valley."
     ],
