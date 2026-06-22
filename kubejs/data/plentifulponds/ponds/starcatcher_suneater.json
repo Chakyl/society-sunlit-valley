@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:suneater",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "minecraft:torchflower",
+					"count": 4
+				},
+				{
+					"id": "atmospheric:firethorn",
+					"count": 1
+				},
+				{
+					"id": "meadow:fire_lily",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "supplementaries:fire_pit",
+					"count": 8
+				},
+				{
+					"id": "minecraft:wither_skeleton_skull",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "simplehats:fakefire",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:blaze_powder",
+				"count": 8
+			},
+			"chance": 0.42
+		},
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:blaze_rod",
+				"count": 4
+			},
+			"chance": 0.32
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:jasper",
+				"count": 1
+			},
+			"chance": 0.12
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "create:blaze_cake",
+				"count": 4
+			},
+			"chance": 0.29
+		}
+	]
+}

@@ -1,0 +1,138 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:glowstone_pufferfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "vintagedelight:glow_berry_jam_bottle",
+					"count": 4
+				},
+				{
+					"id": "farmersdelight:glow_berry_custard",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "kaleidoscope_tavern:glowflower_brew",
+					"count": 1
+				},
+				{
+					"id": "starcatcher_delight:glow_berry_taiyaki",
+					"count": 1
+				},
+				{
+					"id": "vintagedelight:glow_berry_mason_jar",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "farmersdelight:glow_berry_custard",
+					"count": 8
+				},
+				{
+					"id": "society:aged_glowing_wine",
+					"count": 2
+				},
+				{
+					"id": "atmospheric:orange",
+					"count": 16
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 3,
+			"drop": {
+				"id": "minecraft:glowstone_dust",
+				"count": 32
+			},
+			"chance": 0.27
+		},
+		{
+			"min_population": 5,
+			"drop": {
+				"id": "society:topaz",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 7,
+			"drop": {
+				"id": "minecraft:glowstone",
+				"count": 16
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:blue_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.02
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:green_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.02
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:pink_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.02
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:purple_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.02
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.02
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:turquoise_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.02
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:yellow_rocket_lamp",
+				"count": 1
+			},
+			"chance": 0.02
+		}
+	]
+}

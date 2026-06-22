@@ -1741,7 +1741,7 @@ global.fishPondDefinitions = new Map([
         { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
     ],
     [
-        "netherdepthsupgrade:searing_cod",
+        'starcatcher:pyrotrout',
         {
             lava: true,
             quests: [
@@ -1749,13 +1749,13 @@ global.fishPondDefinitions = new Map([
                     population: 3,
                     requestedItems: [
                         { item: "minecraft:quartz", count: 32 },
-                        { item: "etcetera:raw_bismuth", count: 8 },
+                        { item: "society:placeholder", count: 8 }, // Was Bismuth
                     ],
                 },
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "farm_and_charm:roaster", count: 4 },
+                        { item: 'farmersdelight:cooking_pot', count: 4 },
                         { item: "minecraft:furnace", count: 32 },
                     ],
                 },
@@ -1845,7 +1845,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "netherdepthsupgrade:blazefish",
+        'starcatcher:suneater',
         {
             lava: true,
             quests: [
@@ -1893,7 +1893,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "netherdepthsupgrade:lava_pufferfish",
+        'starcatcher:embergill',
         {
             lava: true,
             quests: [
@@ -1908,7 +1908,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "nethervinery:crimson_grapejuice", count: 16 },
+                        { item: 'kaleidoscope_tavern:gold_grape_bucket', count: 1 },
                     ],
                 },
                 {
@@ -1973,7 +1973,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "netherdepthsupgrade:obsidianfish",
+        'starcatcher:obsidian_crab',
         {
             lava: true,
             quests: [
@@ -2016,159 +2016,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "netherdepthsupgrade:bonefish",
-        {
-            lava: true,
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "society:large_milk", count: 4 },
-                        { item: "meadow:cheese_block", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "minecraft:skeleton_skull", count: 1 },
-                        { item: "minecraft:bone_block", count: 32 },
-                        { item: "vintagedelight:organic_mash", count: 16 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [{ item: "society:nether_jelly", count: 4 }],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "minecraft:bone_meal",
-                    count: 32,
-                    chance: 0.53,
-                },
-                {
-                    minPopulation: 4,
-                    item: "minecraft:bone",
-                    count: 32,
-                    chance: 0.34,
-                },
-                {
-                    minPopulation: 7,
-                    item: "society:limestone_pebble",
-                    count: 1,
-                    chance: 0.24,
-                },
-                {
-                    minPopulation: 7,
-                    item: "society:enriched_bone_meal",
-                    count: 8,
-                    chance: 0.32,
-                },
-                {
-                    minPopulation: 9,
-                    item: "dew_drop_farmland_growth:hydrating_fertilizer",
-                    count: 12,
-                    chance: 0.4,
-                },
-                {
-                    minPopulation: 9,
-                    item: "dew_drop_farmland_growth:bountiful_fertilizer",
-                    count: 8,
-                    chance: 0.35,
-                },
-                {
-                    minPopulation: 9,
-                    item: "dew_drop_farmland_growth:weak_fertilizer",
-                    count: 4,
-                    chance: 0.2,
-                },
-            ],
-        },
-    ],
-    [
-        "netherdepthsupgrade:wither_bonefish",
-        {
-            lava: true,
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [{ item: "species:wraptor_egg", count: 1 }],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "pamhc2trees:pawpawitem", count: 4 },
-                        { item: "society:energy_drink", count: 1 },
-                        { item: "nethervinery:nether_fizz", count: 1 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [{ item: "society:aged_dark_brew", count: 8 }],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "minecraft:wither_rose",
-                    count: 6,
-                    chance: 0.2,
-                },
-                {
-                    minPopulation: 5,
-                    item: "minecraft:wither_skeleton_skull",
-                    count: 1,
-                    chance: 0.36,
-                },
-                { minPopulation: 6, item: "society:neptunite", count: 1, chance: 0.22 },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:gorgeous_clock",
-                    count: 1,
-                    chance: 0.01,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:gorgeous_chest",
-                    count: 1,
-                    chance: 0.01,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:gorgeous_table",
-                    count: 1,
-                    chance: 0.01,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:gorgeous_mini_drawer",
-                    count: 1,
-                    chance: 0.01,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:gorgeous_closet",
-                    count: 1,
-                    chance: 0.01,
-                },
-                {
-                    minPopulation: 9,
-                    item: "tanukidecor:gorgeous_desk",
-                    count: 1,
-                    chance: 0.01,
-                },
-                {
-                    minPopulation: 9,
-                    item: "minecraft:nether_star",
-                    count: 1,
-                    chance: 0.01,
-                },
-            ],
-        },
-    ],
-    [
-        "netherdepthsupgrade:magmacubefish",
+        'starcatcher:magma_fish',
         {
             lava: true,
             quests: [
@@ -2224,22 +2072,22 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "netherdepthsupgrade:glowdine",
+        'starcatcher:glowstone_pufferfish',
         {
             lava: true,
             quests: [
                 {
                     population: 3,
                     requestedItems: [
-                        { item: "bakery:glowberry_jam", count: 7 },
-                        { item: "bakery:glowberry_tart", count: 4 },
+                        { item: 'vintagedelight:glow_berry_jam_bottle', count: 4 },
+                        { item: 'farmersdelight:glow_berry_custard', count: 4 },
                     ],
                 },
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "vinery:glowing_wine", count: 1 },
-                        { item: "crabbersdelight:raw_glow_squid_tentacles", count: 1 },
+                        { item: 'kaleidoscope_tavern:glowflower_brew', count: 1 },
+                        { item: 'starcatcher_delight:glow_berry_taiyaki', count: 1 },
                         { item: "vintagedelight:glow_berry_mason_jar", count: 4 },
                     ],
                 },
@@ -2312,61 +2160,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "netherdepthsupgrade:soulsucker",
-        {
-            lava: true,
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "autumnity:soul_jack_o_lantern", count: 8 },
-                        { item: "farm_and_charm:corn_grits", count: 16 },
-                        { item: "minecraft:wither_skeleton_skull", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "buzzier_bees:soul_candle", count: 16 },
-                        { item: "autumnity:soul_jack_o_lantern", count: 8 },
-                        { item: "society:fire_quartz", count: 4 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [{ item: "society:aged_lava_fizz", count: 1 }],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "minecraft:soul_sand",
-                    count: 32,
-                    chance: 0.45,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:fire_quartz",
-                    count: 4,
-                    chance: 0.24,
-                },
-                {
-                    minPopulation: 8,
-                    item: "netherdepthsupgrade:soul_sucker_leather",
-                    count: 1,
-                    chance: 0.18,
-                },
-                {
-                    minPopulation: 8,
-                    item: "species:broken_links",
-                    count: 12,
-                    chance: 0.32,
-                },
-            ],
-        },
-    ],
-    [
-        "netherdepthsupgrade:fortress_grouper",
+        'starcatcher:willish',
         {
             lava: true,
             quests: [
@@ -2380,7 +2174,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "netherdepthsupgrade:lava_sponge", count: 1 },
+                        { item: "society:placeholder", count: 1 }, // Lava Sponge
                         { item: "society:nether_jelly", count: 4 },
                         { item: "society:magma_geode", count: 16 },
                     ],
@@ -2406,62 +2200,6 @@ global.fishPondDefinitions = new Map([
                     item: "minecraft:netherite_scrap",
                     count: 1,
                     chance: 0.09,
-                },
-            ],
-        },
-    ],
-    [
-        "netherdepthsupgrade:eyeball_fish",
-        {
-            lava: true,
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "minecraft:spider_eye", count: 8 },
-                        { item: "beachparty:sunglasses", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "minecraft:ender_eye", count: 8 },
-                        { item: "simplehats:cyclopseye", count: 1 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [
-                        { item: "botania:ender_eye_block", count: 8 },
-                        { item: "minecraft:eye_armor_trim_smithing_template", count: 1 },
-                    ],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "netherdepthsupgrade:eyeball",
-                    count: 4,
-                    chance: 0.27,
-                },
-                {
-                    minPopulation: 6,
-                    item: "etcetera:raw_bismuth",
-                    count: 16,
-                    chance: 0.27,
-                },
-                { minPopulation: 6, item: "society:tigerseye", count: 1, chance: 0.22 },
-                {
-                    minPopulation: 7,
-                    item: "minecraft:ender_eye",
-                    count: 3,
-                    chance: 0.26,
-                },
-                {
-                    minPopulation: 8,
-                    item: "society:mini_oni_eye",
-                    count: 1,
-                    chance: 0.18,
                 },
             ],
         },
@@ -3048,7 +2786,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "netherdepthsupgrade:warped_kelp_roll", count: 4 },
+                        { item: 'meadow:warped_cheese_slice', count: 4 },
                         { item: "society:purple_sheet", count: 4 },
                         { item: "society:eggplant", count: 16 },
                     ],
@@ -3460,7 +3198,7 @@ global.fishPondDefinitions = new Map([
                     population: 3,
                     requestedItems: [
                         { item: "twigs:silt", count: 1 },
-                        { item: "netherdepthsupgrade:eyeball", count: 32 },
+                        { item: "society:placeholder", count: 32 }, // Eyeball
                     ],
                 },
                 {
