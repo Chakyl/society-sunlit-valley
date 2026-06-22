@@ -1,6 +1,6 @@
 {
   "config_version": "2.0.25",
-  "config_datetime": "2026-05-28_22-00-30",
+  "config_datetime": "2026-06-18_10-17-49",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": false,
@@ -135,6 +135,10 @@
     },
     {
       "name": "mvs:spruce_tree",
+      "is_disabled": true
+    },
+    {
+      "name": "oreganized:boulder",
       "is_disabled": true
     }
   ],

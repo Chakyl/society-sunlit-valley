@@ -1,0 +1,49 @@
+[playerMarkup]
+	#Player markup access: ALL, PERMISSION (node-gated), or NONE (no player markup).
+	mode = "ALL"
+	#Fallback OP level required for markup when no permission mod is installed.
+	# Default: 0
+	# Range: 0 ~ 4
+	requiredOpLevel = 0
+	#Allow markup in chat messages.
+	surfaceChat = true
+	#Allow markup in anvil item names.
+	surfaceAnvil = true
+	#Allow markup on signs.
+	surfaceSign = true
+	#Allow markup in written books.
+	surfaceBook = true
+	#Per-effect player rules, entries like "glitch=false". Overrides perCategory.
+	perEffect = []
+	#Per-category player rules, entries like "SOUND=false".
+	perCategory = []
+	#Tell a player in chat when their markup was stripped.
+	notifyOnStrip = true
+
+[apiMessages]
+	#Server cap on API/command message duration in ticks. 0 = unlimited.
+	# Default: 1200
+	# Range: 0 ~ 72000
+	maxDuration = 1200
+	#Server cap on simultaneous API messages per player. 0 = unlimited.
+	# Default: 10
+	# Range: 0 ~ 100
+	maxActiveMessages = 10
+	#Max pending steps per queue channel. 0 = unlimited.
+	# Default: 50
+	# Range: 0 ~ 1000
+	maxQueueSize = 50
+	#If non-empty, only these effects survive in API/command messages.
+	allowedEffects = []
+
+[anvil]
+	#Max characters when renaming an item in an anvil. Vanilla default is 50.
+	# Default: 50
+	# Range: > 1
+	nameMaxLength = 50
+
+[internal]
+	#Config schema version. Do not edit.
+	# Default: 1
+	# Range: > 0
+	schemaVersion = 1

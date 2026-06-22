@@ -97,6 +97,8 @@
 	# Default: 2.0
 	# Range: 0.0 ~ 2.147483647E9
 	firebombExplosionRadius = 2.0
+	#If incendiary arrows place fire blocks where they land.
+	incendiaryArrowPlacesFire = true
 
 [bulk_placement]
 	#Set to 0 to disable any key.
@@ -145,3 +147,55 @@
 	# Default: 40
 	# Range: 10 ~ 100
 	bellSanctuarySideLength = 40
+
+[bandage]
+	#The cooldown applied to all bandages after one is used. Time is calculated in ticks. 20 ticks make 1 second.
+	# Default: 140
+	# Range: > 0
+	bandageCooldown = 140
+	#The amount of health a bandage restores when applied. Healing is in hit points. 2 hit points make 1 heart.
+	# Default: 4.0
+	# Range: 0.0 ~ 2.147483647E9
+	bandageHealAmount = 4.0
+
+[ancient_bronze_mask]
+	#Time is calculated in ticks. 20 ticks make 1 second. Healing is in hit points. 2 hit points make 1 heart.
+	#How often the Ancient Bronze Mask heals its wearer while worn on the head.
+	# Default: 200
+	# Range: > 1
+	ancientBronzeMaskHealInterval = 200
+	#The amount of health the Ancient Bronze Mask restores each interval.
+	# Default: 1.0
+	# Range: 0.0 ~ 2.147483647E9
+	ancientBronzeMaskHealAmount = 1.0
+
+[warding_effigy]
+	#The warding range, in blocks, of a single Warding Effigy. Stacking additional effigies in the same block increases the range beyond this base value.
+	# Default: 24
+	# Range: > 0
+	wardingEffigyBaseRange = 24
+	#How many extra blocks of warding range each additional Warding Effigy stacked in the same block adds. Diminishing returns still apply as more are stacked.
+	# Default: 20
+	# Range: > 0
+	wardingEffigyRangePerEffigy = 20
+
+[recipe_tweaks]
+	#Toggle changes to vanilla crafting recipes.
+	andesite = true
+	bookshelf = true
+	diorite = true
+	granite = true
+	lectern = true
+	light_blue_dye_from_blue_orchid = true
+	light_gray_dye_from_white_tulip = true
+	lodestone = true
+	mushroom_stew = true
+	polished_deepslate = true
+	rabbit_stew_from_red_mushroom = true
+	red_dye_from_rose_bush = true
+	red_sandstone = true
+	sandstone = true
+	scaffolding = true
+	smoker = true
+	stone_bricks = true
+	tnt = true

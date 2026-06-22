@@ -10,6 +10,9 @@ sort = "ALPHABETICAL_DOWN"
 enable_villager_sound = false
 enable_hit_sound = true
 enable_miss_sound = true
+#Whether to use the vanilla partial ticks for minigame smoothing or a custom implementation from 1.20
+#Vanilla should look better for most people
+vanilla_partial_ticks = false
 
 [minigame_window]
 	# Default: 1.5

@@ -119,29 +119,3 @@
 	# Default: 0.05
 	# Range: 0.0 ~ 1.0
 	buriedSpawningChance = 0.05
-	#Witches use bowls to drain cauldrons of witch stew.
-	witchesEatStew = true
-
-[meeting_point]
-	#The minimum distance, from the center of the world, the Meeting Point should spawn at.
-	# Default: 1000
-	# Range: > 0
-	minMeetingPointDistance = 1000
-	#The maximum distance, from the center of the world, the Meeting Point should spawn at.
-	# Default: 2500
-	# Range: > 0
-	maxMeetingPointDistance = 2500
-
-[bell_sanctuaries]
-	#The minimum distance allowed between a pair of bell sanctuaries. Should NOT be changed after world has generated. Has NO impact on how close two DIFFERENT pairs of bell sanctuaries can be. This must be smaller than max distance
-	# Default: 50
-	# Range: 0 ~ 49999
-	minBellSanctuaryPairDistance = 50
-	#The maximum distance allowed between a pair of bell sanctuaries. Should NOT be changed after world has generated. Has NO impact on how far away two DIFFERENT pairs of bell sanctuaries can be.
-	# Default: 600
-	# Range: 0 ~ 50000
-	maxBellSanctuaryPairDistance = 600
-	#The side length of a cell used to contain bell santuary pair information. Should NOT be changed after world has generated. Has no impact on how bell sanctuary pairings are generated!
-	# Default: 40
-	# Range: 10 ~ 100
-	bellSanctuarySideLength = 40

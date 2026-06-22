@@ -30,6 +30,12 @@
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	flywheelSpeedMultiplier = 0.5
+	#.
+	#Force-exit the game if it hangs on the NVIDIA Linux GL-teardown bug at shutdown (issue #267). Disable if a driver update fixes the hang for you
+	nvidiaShutdownWatchdog = true
+	#.
+	#Allow all wrenches to auto-fill `/snr shadow_realm banish` when sneak-used, without requiring the tag ShadowHammer.
+	universalShadowWrench = false
 
 	#.
 	#Smoke Settings

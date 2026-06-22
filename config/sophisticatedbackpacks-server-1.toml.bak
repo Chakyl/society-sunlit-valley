@@ -99,10 +99,6 @@
 		# Default: 3
 		# Range: 1 ~ 6
 		slotsInRow = 3
-		#List of additional crafting shapes compacting and compression upgrades will try when checking if items can be compacted. Shapes are expected as rows of 1s and 0s separated by / where 1 means the tested item is present and 0 means the slot is empty. Example: "111/101/111" checks a hollow 3x3 shape with 8 items.
-		additionalCompactingShapes = ["111/101/111"]
-		#List of item-specific additional crafting shapes compacting and compression upgrades will try when checking if items can be compacted. Entries are expected in format of "mod:item=shape", for example "some_mod:tiny_coal=111/101/111".
-		additionalCompactingShapeOverrides = []
 
 	#Advanced Compacting Upgrade Settings
 	[server.advancedCompactingUpgrade]
@@ -592,30 +588,3 @@
 		onlyWornBackpackTriggersUpgrades = false
 		#Effect that is applied to player when they have too many backpacks. Can be any effect including modded ones like overencumbered effect some mods have.
 		nerfEffect = "minecraft:slowness"
-
-	#Mob Catcher Upgrade Settings
-	[server.mobCatcherUpgrade]
-		#Maximum slot cost a mob may have to be captured by the basic mob catcher. This is a hard limit, not a clamp.
-		# Default: 18
-		# Range: 1 ~ 120
-		basicMaxSlotCost = 18
-		#Maximum slot cost a mob may have to be captured by the advanced mob catcher. This is a hard limit, not a clamp.
-		# Default: 72
-		# Range: 1 ~ 120
-		advancedMaxSlotCost = 72
-		#Multiplier applied to animal mob slot cost.
-		# Default: 1.0
-		# Range: 0.1 ~ 10.0
-		animalMultiplier = 1.0
-		#Multiplier applied to hostile mob slot cost.
-		# Default: 2.0
-		# Range: 0.1 ~ 10.0
-		hostileMultiplier = 2.0
-		#When true, mobs that expose inventories or container menus are not capturable.
-		disallowInventoryEntities = false
-		#Entity types or entity tags prefixed with # that cannot be captured.
-		entityBlockList = []
-		#Entity types or entity tags prefixed with # treated as hostile by mob catcher slot cost and tier rules.
-		hostileOverrides = []
-		#Entity types or entity tags prefixed with # treated as passive by mob catcher slot cost and tier rules.
-		passiveOverrides = []
