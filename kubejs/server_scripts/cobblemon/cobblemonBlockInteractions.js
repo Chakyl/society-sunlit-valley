@@ -3,37 +3,59 @@ BlockEvents.rightClicked((e) => {
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
     if (item.getId() === "cobblemon:fire_stone") {
-      server.recipeManager.getAllRecipesFor("minecraft:smelting").forEach((recipe) => {
-        recipe.getIngredients()[0].getItemIds().forEach((ingredient) => {
-          if (block.id === ingredient) {
-            let resultItem = recipe.getResultItem(level.registryAccess());
-            if (resultItem.block) {
-              level.spawnParticles(
-                "minecraft:large_smoke",
-                true,
-                block.x,
-                block.y + 1,
-                block.z,
-                0.2 * rnd(1, 4),
-                0.2 * rnd(1, 4),
-                0.2 * rnd(1, 4),
-                25,
-                0.01);
-              block.set(resultItem.id)
-              if (!player.isCreative() && Math.random() < 0.1) item.count--;
-              player.swing()
-              server.runCommandSilent(`playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`)
+      let hasTriggered = false;
+      if (block.id === "minecraft:clay") {
+        hasTriggered = true;
+       level.spawnParticles(
+        "minecraft:large_smoke",
+        true,
+        block.x,
+        block.y + 1,
+        block.z,
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        25,
+        0.01); {
+        block.set("minecraft:bricks")
+        if (!player.isCreative() && Math.random() < 0.1) item.count--;
+        player.swing()
+      };
+      server.runCommandSilent(
+        `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`);
+        } else {
+        server.recipeManager.getAllRecipesFor("minecraft:smelting").forEach((recipe) => {
+          recipe.getIngredients()[0].getItemIds().forEach((ingredient) => {
+            if (block.id === ingredient) {
+              let resultItem = recipe.getResultItem(level.registryAccess());
+              if (resultItem.block) {
+                level.spawnParticles(
+                  "minecraft:large_smoke",
+                  true,
+                  block.x,
+                  block.y + 1,
+                  block.z,
+                  0.2 * rnd(1, 4),
+                  0.2 * rnd(1, 4),
+                  0.2 * rnd(1, 4),
+                  25,
+                  0.01);
+                block.set(resultItem.id)
+                if (!player.isCreative() && Math.random() < 0.1) item.count--;
+                player.swing()
+                server.runCommandSilent(`playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`)
 
-              e.cancel();
-              return;
+                e.cancel();
+                return;
+              }
             }
-          }
 
+          });
         });
-      });
+      }
     }
   }
-});
+}); 
 
 BlockEvents.rightClicked("minecraft:dirt", (e) => {
   const { item, player, hand, block, level, server } = e;
