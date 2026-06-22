@@ -1468,7 +1468,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:red_shrooma",
+        'starcatcher:shroomfish',
         {
             quests: [
                 {
@@ -1500,7 +1500,7 @@ global.fishPondDefinitions = new Map([
                 },
                 {
                     minPopulation: 6,
-                    item: "candlelight:mushroom_soup",
+                    item: 'nomansland:mashed_potatoes_with_mushrooms',
                     count: 1,
                     chance: 0.16,
                 },
@@ -1585,63 +1585,15 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:box_turtle",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "candlelight:jewelry_box", count: 1 },
-                        { item: "bakery:chocolate_box", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [{ item: "aquaculture:tackle_box", count: 1 }],
-                },
-                {
-                    population: 7,
-                    requestedItems: [{ item: "society:furniture_box", count: 4 }],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "minecraft:turtle_egg",
-                    count: 4,
-                    chance: 0.33,
-                },
-                {
-                    minPopulation: 4,
-                    item: "minecraft:scute",
-                    count: 1,
-                    chance: 0.16,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:slate",
-                    count: 1,
-                    chance: 0.22,
-                },
-                {
-                    minPopulation: 8,
-                    item: "society:furniture_box",
-                    count: 1,
-                    chance: 0.08,
-                },
-            ],
-        },
-    ],
-    [
-        "aquaculture:pacific_halibut",
+        'starcatcher:sandtail',
         {
             quests: [
                 {
                     population: 3,
                     requestedItems: [
                         { item: "supplementaries:candy", count: 4 },
-                        { item: "pamhc2trees:lycheeitem", count: 16 },
-                        { item: "vinery:bottle_mojang_noir", count: 1 },
+                        { item: "society:placeholder", count: 16 }, // Lychee
+                        { item: 'kaleidoscope_tavern:carignan', count: 1 },
                     ],
                 },
                 {
@@ -1649,7 +1601,7 @@ global.fishPondDefinitions = new Map([
                     requestedItems: [
                         { item: "society:sandstone_slate", count: 1 },
                         { item: "supplementaries:candy", count: 16 },
-                        { item: "pamhc2trees:plumitem", count: 4 },
+                        { item: "society:placeholder", count: 4 }, // Plum
                     ],
                 },
                 {
@@ -1686,7 +1638,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:goldfish",
+        'starcatcher:gold_fan',
         {
             quests: [
                 {
@@ -1724,22 +1676,22 @@ global.fishPondDefinitions = new Map([
             ],
         },
     ],
-    [
-        "crabbersdelight:shrimp",
-        { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
-    ],
-    [
-        "crabbersdelight:clawster",
-        { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
-    ],
-    [
-        "crabbersdelight:crab",
-        { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
-    ],
-    [
-        "crabbersdelight:clam",
-        { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
-    ],
+    // [
+    //     "crabbersdelight:shrimp",
+    //     { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+    // ],
+    // [
+    //     "crabbersdelight:clawster",
+    //     { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+    // ],
+    // [
+    //     "crabbersdelight:crab",
+    //     { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+    // ],
+    // [
+    //     "crabbersdelight:clam",
+    //     { quests: crabTrapQuests, additionalRewards: crabTrapRewards },
+    // ],
     [
         'starcatcher:pyrotrout',
         {
@@ -1749,7 +1701,7 @@ global.fishPondDefinitions = new Map([
                     population: 3,
                     requestedItems: [
                         { item: "minecraft:quartz", count: 32 },
-                        { item: "society:placeholder", count: 8 }, // Was Bismuth
+                        { item: "society:placeholder", count: 8 }, // Bismuth
                     ],
                 },
                 {
@@ -2204,58 +2156,58 @@ global.fishPondDefinitions = new Map([
             ],
         },
     ],
-    [
-        "society:neptuna",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "society:aquamagical_dust", count: 1 },
-                        { item: "aquaculture:neptunium_ingot", count: 2 },
-                        { item: "aquaculture:neptunes_bounty", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "aquaculture:neptunium_sword", count: 1 },
-                        { item: "aquaculture:neptunium_chestplate", count: 1 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [{ item: "society:heart_of_neptunium", count: 1 }],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "aquaculture:neptunium_nugget",
-                    count: 3,
-                    chance: 0.15,
-                },
-                {
-                    minPopulation: 6,
-                    item: "aquaculture:neptunium_ingot",
-                    count: 1,
-                    chance: 0.08,
-                },
-                {
-                    minPopulation: 8,
-                    item: "society:aquamagical_dust",
-                    count: 1,
-                    chance: 0.13,
-                },
-                {
-                    minPopulation: 10,
-                    item: "society:pristine_neptunite",
-                    count: 4,
-                    chance: 0.12,
-                },
-            ],
-        },
-    ],
+    // [
+    //     "society:neptuna",
+    //     {
+    //         quests: [
+    //             {
+    //                 population: 3,
+    //                 requestedItems: [
+    //                     { item: "society:aquamagical_dust", count: 1 },
+    //                     { item: "aquaculture:neptunium_ingot", count: 2 },
+    //                     { item: "aquaculture:neptunes_bounty", count: 1 },
+    //                 ],
+    //             },
+    //             {
+    //                 population: 5,
+    //                 requestedItems: [
+    //                     { item: "aquaculture:neptunium_sword", count: 1 },
+    //                     { item: "aquaculture:neptunium_chestplate", count: 1 },
+    //                 ],
+    //             },
+    //             {
+    //                 population: 7,
+    //                 requestedItems: [{ item: "society:heart_of_neptunium", count: 1 }],
+    //             },
+    //         ],
+    //         additionalRewards: [
+    //             {
+    //                 minPopulation: 4,
+    //                 item: "aquaculture:neptunium_nugget",
+    //                 count: 3,
+    //                 chance: 0.15,
+    //             },
+    //             {
+    //                 minPopulation: 6,
+    //                 item: "aquaculture:neptunium_ingot",
+    //                 count: 1,
+    //                 chance: 0.08,
+    //             },
+    //             {
+    //                 minPopulation: 8,
+    //                 item: "society:aquamagical_dust",
+    //                 count: 1,
+    //                 chance: 0.13,
+    //             },
+    //             {
+    //                 minPopulation: 10,
+    //                 item: "society:pristine_neptunite",
+    //                 count: 4,
+    //                 chance: 0.12,
+    //             },
+    //         ],
+    //     },
+    // ],
     [
         "unusualfishmod:raw_sneep_snorp",
         {
@@ -2263,27 +2215,27 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 3,
                     requestedItems: [
-                        { item: "minecraft:lapis_lazuli", count: 48 },
+                        { item: "society:placeholder", count: 48 }, // Lapis
                         { item: "herbalbrews:hibiscus_tea", count: 1 },
                     ],
                 },
                 {
                     population: 5,
-                    requestedItems: [{ item: "vinery:bottle_mojang_noir", count: 1 }],
+                    requestedItems: [{ item: 'kaleidoscope_tavern:carignan', count: 1 }],
                 },
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "crabbersdelight:pearl", count: 16 },
-                        { item: "crabbersdelight:coral_fragments", count: 64 },
-                        { item: "aquaculture:neptunium_ingot", count: 1 },
+                        { item: 'starcatcher:pearl', count: 16 },
+                        { item: "society:placeholder", count: 64 }, // Coral Fragments
+                        { item: "society:placeholder", count: 1 }, // Neptunium Ingot
                     ],
                 },
             ],
             additionalRewards: [
                 {
                     minPopulation: 4,
-                    item: "minecraft:lapis_lazuli",
+                    item: "society:placeholder", // Lapis
                     count: 16,
                     chance: 0.33,
                 },
@@ -2317,9 +2269,8 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "brewery:beer_oat", count: 8 },
-                        { item: "brewery:whiskey_carrasconlabel", count: 4 },
-                        { item: "brewery:whiskey_ak", count: 4 },
+                        { item: 'kaleidoscope_tavern:vodka', count: 8 },
+                        { item: 'kaleidoscope_tavern:whiskey', count: 6 },
                     ],
                 },
                 {
@@ -2361,7 +2312,7 @@ global.fishPondDefinitions = new Map([
                     population: 3,
                     requestedItems: [
                         { item: "minecraft:sea_pickle", count: 32 },
-                        { item: "crabbersdelight:sea_pickle_juice", count: 8 },
+                        { item: "society:placeholder", count: 8 }, // Sea Pickle Juice
                         { item: "vintagedelight:pickled_egg", count: 10 },
                     ],
                 },
@@ -2412,7 +2363,7 @@ global.fishPondDefinitions = new Map([
                     population: 5,
                     requestedItems: [
                         { item: "minecraft:raw_iron", count: 48 },
-                        { item: "farm_and_charm:pitchfork", count: 1 },
+                        { item: "society:placeholder", count: 1 }, // Pitchfork
                     ],
                 },
                 {
@@ -2453,7 +2404,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 3,
                     requestedItems: [
-                        { item: "snowpig:frozen_porkchop", count: 8 },
+                        { item: "society:placeholder", count: 8 }, // Frozen Porkchop
                         { item: "society:brown_sheet", count: 4 },
                     ],
                 },
@@ -2495,65 +2446,65 @@ global.fishPondDefinitions = new Map([
             ],
         },
     ],
+    // [
+    //     "unusualfishmod:raw_sailor_barb",
+    //     {
+    //         quests: [
+    //             {
+    //                 population: 3,
+    //                 requestedItems: [
+    //                     { item: "society:canvas", count: 2 },
+    //                     { item: "smallships:sail", count: 1 },
+    //                     { item: "smallships:cannon", count: 1 },
+    //                 ],
+    //             },
+    //             {
+    //                 population: 5,
+    //                 requestedItems: [
+    //                     { item: "society:canvas", count: 8 },
+    //                     { item: "smallships:jungle_cog", count: 1 },
+    //                     { item: "smallships:cannon_ball", count: 16 },
+    //                 ],
+    //             },
+    //             {
+    //                 population: 7,
+    //                 requestedItems: [
+    //                     { item: "society:oak_resin", count: 32 },
+    //                     { item: "smallships:mangrove_brigg", count: 1 },
+    //                     { item: "railways:riveted_locometal", count: 64 },
+    //                 ],
+    //             },
+    //         ],
+    //         additionalRewards: [
+    //             {
+    //                 minPopulation: 4,
+    //                 item: "smallships:sail",
+    //                 count: 1,
+    //                 chance: 0.21,
+    //             },
+    //             {
+    //                 minPopulation: 6,
+    //                 item: "society:canvas",
+    //                 count: 4,
+    //                 chance: 0.22,
+    //             },
+    //             {
+    //                 minPopulation: 8,
+    //                 item: "species:coil",
+    //                 count: 4,
+    //                 chance: 0.14,
+    //             },
+    //             {
+    //                 minPopulation: 8,
+    //                 item: "railways:riveted_locometal",
+    //                 count: 64,
+    //                 chance: 0.24,
+    //             },
+    //         ],
+    //     },
+    // ],
     [
-        "unusualfishmod:raw_sailor_barb",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "society:canvas", count: 2 },
-                        { item: "smallships:sail", count: 1 },
-                        { item: "smallships:cannon", count: 1 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "society:canvas", count: 8 },
-                        { item: "smallships:jungle_cog", count: 1 },
-                        { item: "smallships:cannon_ball", count: 16 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [
-                        { item: "society:oak_resin", count: 32 },
-                        { item: "smallships:mangrove_brigg", count: 1 },
-                        { item: "railways:riveted_locometal", count: 64 },
-                    ],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "smallships:sail",
-                    count: 1,
-                    chance: 0.21,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:canvas",
-                    count: 4,
-                    chance: 0.22,
-                },
-                {
-                    minPopulation: 8,
-                    item: "species:coil",
-                    count: 4,
-                    chance: 0.14,
-                },
-                {
-                    minPopulation: 8,
-                    item: "railways:riveted_locometal",
-                    count: 64,
-                    chance: 0.24,
-                },
-            ],
-        },
-    ],
-    [
-        "unusualfishmod:raw_aero_mono",
+        "unusualfishmod:raw_aero_mono", // Resume here
         {
             quests: [
                 {
