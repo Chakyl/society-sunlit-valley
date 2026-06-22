@@ -7,51 +7,51 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "farmersdelight:red_mushroom_colony",
+					"id": "farmersdelight:red_mushroom_colony",
 					"count": 4
 				},
 				{
-					"item": "meadow:alpine_salt",
+					"id": "meadow:alpine_salt",
 					"count": 32
 				},
 				{
-					"item": "vintagedelight:salt_lamp_light_blue",
+					"id": "vintagedelight:salt_lamp_light_blue",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "brewery:beer_oat",
+					"id": "brewery:beer_oat",
 					"count": 8
 				},
 				{
-					"item": "brewery:whiskey_carrasconlabel",
+					"id": "brewery:whiskey_carrasconlabel",
 					"count": 4
 				},
 				{
-					"item": "brewery:whiskey_ak",
+					"id": "brewery:whiskey_ak",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:geode",
+					"id": "society:geode",
 					"count": 32
 				},
 				{
-					"item": "society:frozen_geode",
+					"id": "society:frozen_geode",
 					"count": 16
 				},
 				{
-					"item": "society:magma_geode",
+					"id": "society:magma_geode",
 					"count": 16
 				}
 			]

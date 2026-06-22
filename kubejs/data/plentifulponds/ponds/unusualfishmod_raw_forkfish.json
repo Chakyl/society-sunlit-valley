@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "farmersdelight:iron_knife",
+					"id": "farmersdelight:iron_knife",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:raw_iron",
+					"id": "minecraft:raw_iron",
 					"count": 48
 				},
 				{
-					"item": "farm_and_charm:pitchfork",
+					"id": "farm_and_charm:pitchfork",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:sponge",
+					"id": "minecraft:sponge",
 					"count": 4
 				},
 				{
-					"item": "minecraft:heart_of_the_sea",
+					"id": "minecraft:heart_of_the_sea",
 					"count": 1
 				},
 				{
-					"item": "minecraft:sea_lantern",
+					"id": "minecraft:sea_lantern",
 					"count": 32
 				}
 			]

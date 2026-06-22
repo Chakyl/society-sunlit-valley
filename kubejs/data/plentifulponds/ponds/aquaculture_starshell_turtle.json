@@ -7,31 +7,31 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "pamhc2trees:starfruititem",
+					"id": "pamhc2trees:starfruititem",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:star_shards",
+					"id": "society:star_shards",
 					"count": 4
 				},
 				{
-					"item": "minecraft:nether_star",
+					"id": "minecraft:nether_star",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_dewy_star",
+					"id": "society:aged_dewy_star",
 					"count": 2
 				}
 			]

@@ -7,35 +7,35 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:magma_geode",
+					"id": "society:magma_geode",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:ochre_froglight",
+					"id": "minecraft:ochre_froglight",
 					"count": 8
 				},
 				{
-					"item": "minecraft:verdant_froglight",
+					"id": "minecraft:verdant_froglight",
 					"count": 8
 				},
 				{
-					"item": "minecraft:pearlescent_froglight",
+					"id": "minecraft:pearlescent_froglight",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:nether_jelly",
+					"id": "society:nether_jelly",
 					"count": 2
 				}
 			]

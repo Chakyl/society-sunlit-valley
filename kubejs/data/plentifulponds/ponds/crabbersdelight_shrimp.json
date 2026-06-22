@@ -7,55 +7,55 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "crabbersdelight:crab_trap_bait",
+					"id": "crabbersdelight:crab_trap_bait",
 					"count": 16
 				},
 				{
-					"item": "farmersdelight:safety_net",
+					"id": "farmersdelight:safety_net",
 					"count": 4
 				},
 				{
-					"item": "starcatcher:pearl",
+					"id": "starcatcher:pearl",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aquamarine",
+					"id": "society:aquamarine",
 					"count": 4
 				},
 				{
-					"item": "crabbersdelight:deluxe_crab_trap_bait",
+					"id": "crabbersdelight:deluxe_crab_trap_bait",
 					"count": 16
 				},
 				{
-					"item": null,
+					"id": null,
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "cluttered:mermaid_pearl",
+					"id": "cluttered:mermaid_pearl",
 					"count": 4
 				},
 				{
-					"item": "minecraft:pearlescent_froglight",
+					"id": "minecraft:pearlescent_froglight",
 					"count": 8
 				},
 				{
-					"item": "minecraft:heart_of_the_sea",
+					"id": "minecraft:heart_of_the_sea",
 					"count": 1
 				},
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 1
 				}
 			]

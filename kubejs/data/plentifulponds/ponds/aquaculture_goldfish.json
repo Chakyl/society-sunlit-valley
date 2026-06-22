@@ -7,27 +7,27 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:gold_block",
+					"id": "minecraft:gold_block",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:gilded_blackstone",
+					"id": "minecraft:gilded_blackstone",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:golden_mayonnaise",
+					"id": "society:golden_mayonnaise",
 					"count": 1
 				}
 			]

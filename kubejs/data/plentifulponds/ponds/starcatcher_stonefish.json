@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "create:andesite_alloy",
+					"id": "create:andesite_alloy",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:paper",
+					"id": "minecraft:paper",
 					"count": 36
 				},
 				{
-					"item": "minecraft:ink_sac",
+					"id": "minecraft:ink_sac",
 					"count": 16
 				},
 				{
-					"item": "quark:paper_lantern_sakura",
+					"id": "quark:paper_lantern_sakura",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_jo_special_mixture",
+					"id": "society:aged_jo_special_mixture",
 					"count": 1
 				},
 				{
-					"item": "society:aged_beer_barley",
+					"id": "society:aged_beer_barley",
 					"count": 1
 				},
 				{
-					"item": "society:aged_sheep_cheese_block",
+					"id": "society:aged_sheep_cheese_block",
 					"count": 1
 				}
 			]

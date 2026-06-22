@@ -7,51 +7,51 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:canvas",
+					"id": "society:canvas",
 					"count": 2
 				},
 				{
-					"item": "smallships:sail",
+					"id": "smallships:sail",
 					"count": 1
 				},
 				{
-					"item": "smallships:cannon",
+					"id": "smallships:cannon",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:canvas",
+					"id": "society:canvas",
 					"count": 8
 				},
 				{
-					"item": "smallships:jungle_cog",
+					"id": "smallships:jungle_cog",
 					"count": 1
 				},
 				{
-					"item": "smallships:cannon_ball",
+					"id": "smallships:cannon_ball",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:oak_resin",
+					"id": "society:oak_resin",
 					"count": 32
 				},
 				{
-					"item": "smallships:mangrove_brigg",
+					"id": "smallships:mangrove_brigg",
 					"count": 1
 				},
 				{
-					"item": "railways:riveted_locometal",
+					"id": "railways:riveted_locometal",
 					"count": 64
 				}
 			]

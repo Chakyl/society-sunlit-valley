@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "quark:lavender_blossom_sapling",
+					"id": "quark:lavender_blossom_sapling",
 					"count": 64
 				},
 				{
-					"item": "pamhc2trees:peachitem",
+					"id": "pamhc2trees:peachitem",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:merino_wool",
+					"id": "society:merino_wool",
 					"count": 4
 				},
 				{
-					"item": "society:truffle",
+					"id": "society:truffle",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "create:scorchia",
+					"id": "create:scorchia",
 					"count": 64
 				},
 				{
-					"item": "minecraft:white_concrete",
+					"id": "minecraft:white_concrete",
 					"count": 64
 				}
 			]

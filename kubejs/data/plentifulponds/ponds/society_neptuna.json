@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aquamagical_dust",
+					"id": "society:aquamagical_dust",
 					"count": 1
 				},
 				{
-					"item": "aquaculture:neptunium_ingot",
+					"id": "aquaculture:neptunium_ingot",
 					"count": 2
 				},
 				{
-					"item": "aquaculture:neptunes_bounty",
+					"id": "aquaculture:neptunes_bounty",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "aquaculture:neptunium_sword",
+					"id": "aquaculture:neptunium_sword",
 					"count": 1
 				},
 				{
-					"item": "aquaculture:neptunium_chestplate",
+					"id": "aquaculture:neptunium_chestplate",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:heart_of_neptunium",
+					"id": "society:heart_of_neptunium",
 					"count": 1
 				}
 			]

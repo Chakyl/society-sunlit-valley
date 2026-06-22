@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:torchflower",
+					"id": "minecraft:torchflower",
 					"count": 4
 				},
 				{
-					"item": "atmospheric:firethorn",
+					"id": "atmospheric:firethorn",
 					"count": 1
 				},
 				{
-					"item": "meadow:fire_lily",
+					"id": "meadow:fire_lily",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "supplementaries:fire_pit",
+					"id": "supplementaries:fire_pit",
 					"count": 8
 				},
 				{
-					"item": "minecraft:wither_skeleton_skull",
+					"id": "minecraft:wither_skeleton_skull",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "simplehats:fakefire",
+					"id": "simplehats:fakefire",
 					"count": 1
 				}
 			]

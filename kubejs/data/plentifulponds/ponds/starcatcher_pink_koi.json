@@ -7,51 +7,51 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "supplementaries:candle_holder_pink",
+					"id": "supplementaries:candle_holder_pink",
 					"count": 4
 				},
 				{
-					"item": "minecraft:pink_dye",
+					"id": "minecraft:pink_dye",
 					"count": 16
 				},
 				{
-					"item": "nomansland:pink_lupine",
+					"id": "nomansland:pink_lupine",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:pink_petals",
+					"id": "minecraft:pink_petals",
 					"count": 4
 				},
 				{
-					"item": "minecraft:pink_tulip",
+					"id": "minecraft:pink_tulip",
 					"count": 1
 				},
 				{
-					"item": "society:fluorapatite",
+					"id": "society:fluorapatite",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "kaleidoscope_tavern:string_lights_pink",
+					"id": "kaleidoscope_tavern:string_lights_pink",
 					"count": 4
 				},
 				{
-					"item": "snowyspirit:glow_lights_pink",
+					"id": "snowyspirit:glow_lights_pink",
 					"count": 1
 				},
 				{
-					"item": "vintagedelight:salt_lamp_pink",
+					"id": "vintagedelight:salt_lamp_pink",
 					"count": 4
 				}
 			]

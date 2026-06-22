@@ -7,51 +7,51 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "supplementaries:candle_holder_red",
+					"id": "supplementaries:candle_holder_red",
 					"count": 4
 				},
 				{
-					"item": "minecraft:red_dye",
+					"id": "minecraft:red_dye",
 					"count": 16
 				},
 				{
-					"item": "minecraft:rose_bush",
+					"id": "minecraft:rose_bush",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "create:rose_quartz",
+					"id": "create:rose_quartz",
 					"count": 4
 				},
 				{
-					"item": "minecraft:red_tulip",
+					"id": "minecraft:red_tulip",
 					"count": 1
 				},
 				{
-					"item": "kaleidoscope_tavern:red_queen",
+					"id": "kaleidoscope_tavern:red_queen",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "cluttered:retro_toaster_red",
+					"id": "cluttered:retro_toaster_red",
 					"count": 1
 				},
 				{
-					"item": "numismatics:red_card",
+					"id": "numismatics:red_card",
 					"count": 1
 				},
 				{
-					"item": "tanukidecor:red_rocket_lamp",
+					"id": "tanukidecor:red_rocket_lamp",
 					"count": 1
 				}
 			]

@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:chorus_flower",
+					"id": "minecraft:chorus_flower",
 					"count": 1
 				},
 				{
-					"item": "minecraft:chorus_fruit",
+					"id": "minecraft:chorus_fruit",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:forks_of_blue",
+					"id": "society:forks_of_blue",
 					"count": 1
 				},
 				{
-					"item": "society:oak_resin",
+					"id": "society:oak_resin",
 					"count": 3
 				},
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:nutty_basil",
+					"id": "society:nutty_basil",
 					"count": 1
 				},
 				{
-					"item": "minecraft:emerald",
+					"id": "minecraft:emerald",
 					"count": 16
 				},
 				{
-					"item": "minecraft:carrot",
+					"id": "minecraft:carrot",
 					"count": 64
 				}
 			]

@@ -7,27 +7,27 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 64
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "snowyspirit:glow_lights_prismatic",
+					"id": "snowyspirit:glow_lights_prismatic",
 					"count": 64
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:prismatic_shard",
+					"id": "society:prismatic_shard",
 					"count": 1
 				}
 			]

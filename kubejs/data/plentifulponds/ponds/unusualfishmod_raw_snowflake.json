@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "snowpig:frozen_porkchop",
+					"id": "snowpig:frozen_porkchop",
 					"count": 8
 				},
 				{
-					"item": "society:brown_sheet",
+					"id": "society:brown_sheet",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "snuffles:snuffle_fluff",
+					"id": "snuffles:snuffle_fluff",
 					"count": 4
 				},
 				{
-					"item": "species:frozen_meat",
+					"id": "species:frozen_meat",
 					"count": 4
 				},
 				{
-					"item": "herbalbrews:cinnamon_coffee",
+					"id": "herbalbrews:cinnamon_coffee",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:frozen_geode",
+					"id": "society:frozen_geode",
 					"count": 16
 				},
 				{
-					"item": "extractinator:slush",
+					"id": "extractinator:slush",
 					"count": 64
 				}
 			]

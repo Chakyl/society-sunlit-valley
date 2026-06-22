@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "create:raw_zinc",
+					"id": "create:raw_zinc",
 					"count": 16
 				},
 				{
-					"item": "create:zinc_ingot",
+					"id": "create:zinc_ingot",
 					"count": 48
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 1
 				},
 				{
-					"item": "create:brass_ingot",
+					"id": "create:brass_ingot",
 					"count": 16
 				},
 				{
-					"item": "snowyspirit:ginger",
+					"id": "snowyspirit:ginger",
 					"count": 30
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:furniture_box",
+					"id": "society:furniture_box",
 					"count": 1
 				},
 				{
-					"item": "society:battery",
+					"id": "society:battery",
 					"count": 4
 				},
 				{
-					"item": "society:canvas",
+					"id": "society:canvas",
 					"count": 16
 				}
 			]

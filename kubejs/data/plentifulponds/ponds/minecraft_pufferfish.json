@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:rotten_flesh",
+					"id": "minecraft:rotten_flesh",
 					"count": 16
 				},
 				{
-					"item": "minecraft:poisonous_potato",
+					"id": "minecraft:poisonous_potato",
 					"count": 4
 				},
 				{
-					"item": "farmersdelight:rotten_tomato",
+					"id": "farmersdelight:rotten_tomato",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "farmersdelight:wheat_dough",
+					"id": "farmersdelight:wheat_dough",
 					"count": 4
 				},
 				{
-					"item": "herbalbrews:yerba_mate_tea",
+					"id": "herbalbrews:yerba_mate_tea",
 					"count": 1
 				},
 				{
-					"item": "minecraft:spider_eye",
+					"id": "minecraft:spider_eye",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "veggiesdelight:stuffed_bellpeppers_block",
+					"id": "veggiesdelight:stuffed_bellpeppers_block",
 					"count": 16
 				}
 			]

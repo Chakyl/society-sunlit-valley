@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:ender_eye",
+					"id": "minecraft:ender_eye",
 					"count": 8
 				},
 				{
-					"item": "minecraft:ender_pearl",
+					"id": "minecraft:ender_pearl",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "netherdepthsupgrade:warped_kelp_roll",
+					"id": "netherdepthsupgrade:warped_kelp_roll",
 					"count": 4
 				},
 				{
-					"item": "society:purple_sheet",
+					"id": "society:purple_sheet",
 					"count": 4
 				},
 				{
-					"item": "society:eggplant",
+					"id": "society:eggplant",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:netherite_ingot",
+					"id": "minecraft:netherite_ingot",
 					"count": 4
 				},
 				{
-					"item": "society:aged_chorus_wine",
+					"id": "society:aged_chorus_wine",
 					"count": 4
 				},
 				{
-					"item": "minecraft:end_rod",
+					"id": "minecraft:end_rod",
 					"count": 16
 				}
 			]

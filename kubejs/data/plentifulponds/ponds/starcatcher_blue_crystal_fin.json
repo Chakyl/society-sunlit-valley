@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:ginger_preserves",
+					"id": "society:ginger_preserves",
 					"count": 2
 				},
 				{
-					"item": "snowyspirit:gingerbread_cookie",
+					"id": "snowyspirit:gingerbread_cookie",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 3
 				},
 				{
-					"item": "nomansland:maple_tart",
+					"id": "nomansland:maple_tart",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:rotten_flesh",
+					"id": "minecraft:rotten_flesh",
 					"count": 64
 				},
 				{
-					"item": "nomansland:frog_leg",
+					"id": "nomansland:frog_leg",
 					"count": 3
 				}
 			]

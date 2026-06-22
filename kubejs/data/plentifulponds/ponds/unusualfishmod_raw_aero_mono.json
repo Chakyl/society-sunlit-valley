@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:tuff",
+					"id": "minecraft:tuff",
 					"count": 64
 				},
 				{
-					"item": "quark:bottled_cloud",
+					"id": "quark:bottled_cloud",
 					"count": 1
 				},
 				{
-					"item": "moreminecarts:levitation_powder",
+					"id": "moreminecarts:levitation_powder",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "trials:breeze_rod",
+					"id": "trials:breeze_rod",
 					"count": 4
 				},
 				{
-					"item": "create:asurine",
+					"id": "create:asurine",
 					"count": 64
 				},
 				{
-					"item": "trials:trial_key_ominous",
+					"id": "trials:trial_key_ominous",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "windswept:dream_catcher",
+					"id": "windswept:dream_catcher",
 					"count": 16
 				}
 			]

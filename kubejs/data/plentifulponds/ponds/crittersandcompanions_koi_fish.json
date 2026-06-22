@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:amethyst_shard",
+					"id": "minecraft:amethyst_shard",
 					"count": 48
 				},
 				{
-					"item": "minecraft:amethyst_block",
+					"id": "minecraft:amethyst_block",
 					"count": 16
 				},
 				{
-					"item": "meadow:amethyst_cheese_block",
+					"id": "meadow:amethyst_cheese_block",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:purple_sheet",
+					"id": "society:purple_sheet",
 					"count": 4
 				},
 				{
-					"item": "minecraft:budding_amethyst",
+					"id": "minecraft:budding_amethyst",
 					"count": 4
 				},
 				{
-					"item": "nightlights:octopus_purple",
+					"id": "nightlights:octopus_purple",
 					"count": 2
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "pamhc2trees:plumitem",
+					"id": "pamhc2trees:plumitem",
 					"count": 16
 				},
 				{
-					"item": "vinery:jo_special_mixture",
+					"id": "vinery:jo_special_mixture",
 					"count": 1
 				}
 			]

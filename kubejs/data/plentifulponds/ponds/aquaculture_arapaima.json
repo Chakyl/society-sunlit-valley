@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:emerald",
+					"id": "minecraft:emerald",
 					"count": 4
 				},
 				{
-					"item": "brewery:hop_trellis_seed",
+					"id": "brewery:hop_trellis_seed",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vintagedelight:peanut",
+					"id": "vintagedelight:peanut",
 					"count": 32
 				},
 				{
-					"item": "pamhc2trees:hazelnutitem",
+					"id": "pamhc2trees:hazelnutitem",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "bakery:hazelnut_ella",
+					"id": "bakery:hazelnut_ella",
 					"count": 1
 				},
 				{
-					"item": "society:jade",
+					"id": "society:jade",
 					"count": 1
 				},
 				{
-					"item": "vintagedelight:magic_peanut",
+					"id": "vintagedelight:magic_peanut",
 					"count": 1
 				}
 			]

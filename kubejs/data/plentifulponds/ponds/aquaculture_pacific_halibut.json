@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "supplementaries:candy",
+					"id": "supplementaries:candy",
 					"count": 4
 				},
 				{
-					"item": "pamhc2trees:lycheeitem",
+					"id": "pamhc2trees:lycheeitem",
 					"count": 16
 				},
 				{
-					"item": "vinery:bottle_mojang_noir",
+					"id": "vinery:bottle_mojang_noir",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:sandstone_slate",
+					"id": "society:sandstone_slate",
 					"count": 1
 				},
 				{
-					"item": "supplementaries:candy",
+					"id": "supplementaries:candy",
 					"count": 16
 				},
 				{
-					"item": "pamhc2trees:plumitem",
+					"id": "pamhc2trees:plumitem",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:battery",
+					"id": "society:battery",
 					"count": 4
 				}
 			]

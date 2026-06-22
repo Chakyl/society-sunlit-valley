@@ -1,6 +1,6 @@
 {
 	"color": "#ffffff",
-	"fish": "unusualfishmod:raw_blind_sailfin",
+	"fish": "starcatcher:lush_pike",
 	"max_population": 10,
 	"max_roe": 1,
 	"reproduction_rate": 4,
@@ -9,12 +9,12 @@
 			"population": 3,
 			"requested_items": [
 				{
-					"id": "minecraft:glass",
-					"count": 64
+					"id": "minecraft:emerald",
+					"count": 4
 				},
 				{
-					"id": "minecraft:sand",
-					"count": 64
+					"id": "society:hops_seeds",
+					"count": 16
 				}
 			]
 		},
@@ -22,16 +22,12 @@
 			"population": 5,
 			"requested_items": [
 				{
-					"id": "society:rubber",
-					"count": 16
-				},
-				{
-					"id": "beautify:crimson_blinds",
+					"id": "vintagedelight:peanut",
 					"count": 32
 				},
 				{
-					"id": "society:bowl_of_soul",
-					"count": 8
+					"id": "society:placeholder",
+					"count": 4
 				}
 			]
 		},
@@ -39,8 +35,16 @@
 			"population": 7,
 			"requested_items": [
 				{
-					"id": "society:aged_forks_of_blue",
-					"count": 4
+					"id": "society:placeholder",
+					"count": 1
+				},
+				{
+					"id": "society:jade",
+					"count": 1
+				},
+				{
+					"id": "vintagedelight:magic_peanut",
+					"count": 1
 				}
 			]
 		}
@@ -49,26 +53,26 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "minecraft:sand",
-				"count": 64
+				"id": "minecraft:emerald",
+				"count": 32
 			},
 			"chance": 0.34
 		},
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "minecraft:sandstone",
-				"count": 32
+				"id": "society:malachite",
+				"count": 1
 			},
-			"chance": 0.31
+			"chance": 0.22
 		},
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "society:architects_digest",
+				"id": "society:jade",
 				"count": 1
 			},
-			"chance": 0.15
+			"chance": 0.22
 		}
 	]
 }

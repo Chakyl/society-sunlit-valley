@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:spider_eye",
+					"id": "minecraft:spider_eye",
 					"count": 8
 				},
 				{
-					"item": "beachparty:sunglasses",
+					"id": "beachparty:sunglasses",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:ender_eye",
+					"id": "minecraft:ender_eye",
 					"count": 8
 				},
 				{
-					"item": "simplehats:cyclopseye",
+					"id": "simplehats:cyclopseye",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "botania:ender_eye_block",
+					"id": "botania:ender_eye_block",
 					"count": 8
 				},
 				{
-					"item": "minecraft:eye_armor_trim_smithing_template",
+					"id": "minecraft:eye_armor_trim_smithing_template",
 					"count": 1
 				}
 			]

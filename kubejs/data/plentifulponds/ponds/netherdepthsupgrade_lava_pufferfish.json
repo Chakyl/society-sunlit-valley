@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:quartz",
+					"id": "minecraft:quartz",
 					"count": 64
 				},
 				{
-					"item": "create:rose_quartz",
+					"id": "create:rose_quartz",
 					"count": 16
 				},
 				{
-					"item": "society:fire_quartz",
+					"id": "society:fire_quartz",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "nethervinery:crimson_grapejuice",
+					"id": "nethervinery:crimson_grapejuice",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_bolvar_wine",
+					"id": "society:aged_bolvar_wine",
 					"count": 3
 				},
 				{
-					"item": "society:aged_good_catawba",
+					"id": "society:aged_good_catawba",
 					"count": 3
 				},
 				{
-					"item": "society:aged_lava_fizz",
+					"id": "society:aged_lava_fizz",
 					"count": 3
 				}
 			]

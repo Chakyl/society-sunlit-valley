@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:mycelium",
+					"id": "minecraft:mycelium",
 					"count": 16
 				},
 				{
-					"item": "minecraft:mushroom_stem",
+					"id": "minecraft:mushroom_stem",
 					"count": 32
 				},
 				{
-					"item": "minecraft:red_mushroom_block",
+					"id": "minecraft:red_mushroom_block",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:red_mushroom",
+					"id": "minecraft:red_mushroom",
 					"count": 32
 				},
 				{
-					"item": "farmersdelight:rich_soil",
+					"id": "farmersdelight:rich_soil",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:cordycep",
+					"id": "society:cordycep",
 					"count": 1
 				}
 			]

@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:diorite",
+					"id": "minecraft:diorite",
 					"count": 32
 				},
 				{
-					"item": "minecraft:pumpkin",
+					"id": "minecraft:pumpkin",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:clay",
+					"id": "minecraft:clay",
 					"count": 8
 				},
 				{
-					"item": "supplementaries:soap_block",
+					"id": "supplementaries:soap_block",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "simplehats:clockface",
+					"id": "simplehats:clockface",
 					"count": 1
 				},
 				{
-					"item": "society:broken_clock",
+					"id": "society:broken_clock",
 					"count": 1
 				},
 				{
-					"item": "supplementaries:hourglass",
+					"id": "supplementaries:hourglass",
 					"count": 64
 				}
 			]

@@ -1,6 +1,6 @@
 {
 	"color": "#ffffff",
-	"fish": "netherdepthsupgrade:fortress_grouper",
+	"fish": "starcatcher:sandtail",
 	"max_population": 10,
 	"max_roe": 1,
 	"reproduction_rate": 4,
@@ -9,12 +9,16 @@
 			"population": 3,
 			"requested_items": [
 				{
-					"id": "minecraft:nether_bricks",
+					"id": "minecraft:raw_copper",
 					"count": 16
 				},
 				{
-					"id": "minecraft:wither_skeleton_skull",
-					"count": 1
+					"id": "minecraft:copper_block",
+					"count": 16
+				},
+				{
+					"id": "minecraft:melon_slice",
+					"count": 32
 				}
 			]
 		},
@@ -22,16 +26,16 @@
 			"population": 5,
 			"requested_items": [
 				{
-					"id": "netherdepthsupgrade:lava_sponge",
-					"count": 1
-				},
-				{
-					"id": "society:nether_jelly",
+					"id": "society:earth_crystal",
 					"count": 4
 				},
 				{
-					"id": "society:magma_geode",
+					"id": "meadow:grain_cheese_slice",
 					"count": 16
+				},
+				{
+					"id": "society:placeholder",
+					"count": 4
 				}
 			]
 		},
@@ -39,11 +43,11 @@
 			"population": 7,
 			"requested_items": [
 				{
-					"id": "minecraft:nether_star",
+					"id": "society:placeholder",
 					"count": 1
 				},
 				{
-					"id": "minecraft:netherite_ingot",
+					"id": "society:placeholder",
 					"count": 1
 				}
 			]
@@ -53,26 +57,26 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "netherdepthsupgrade:fortress_grouper_plate",
-				"count": 8
+				"id": "minecraft:raw_copper",
+				"count": 64
 			},
-			"chance": 0.32
+			"chance": 0.44
 		},
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "society:ruby",
-				"count": 1
+				"id": "society:geode",
+				"count": 8
 			},
 			"chance": 0.22
 		},
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "minecraft:netherite_scrap",
-				"count": 1
+				"id": "minecraft:redstone",
+				"count": 32
 			},
-			"chance": 0.09
+			"chance": 0.32
 		}
 	]
 }

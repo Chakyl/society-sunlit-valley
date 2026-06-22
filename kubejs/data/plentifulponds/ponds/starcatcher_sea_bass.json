@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:experience_bottle",
+					"id": "minecraft:experience_bottle",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:zombie_head",
+					"id": "minecraft:zombie_head",
 					"count": 1
 				},
 				{
-					"item": "minecraft:bone",
+					"id": "minecraft:bone",
 					"count": 16
 				},
 				{
-					"item": "kaleidoscope_tavern:vodka",
+					"id": "kaleidoscope_tavern:vodka",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "create_enchantment_industry:hyper_experience_bottle",
+					"id": "create_enchantment_industry:hyper_experience_bottle",
 					"count": 4
 				},
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 4
 				},
 				{
-					"item": "kaleidoscope_tavern:vodka",
+					"id": "kaleidoscope_tavern:vodka",
 					"count": 1
 				}
 			]

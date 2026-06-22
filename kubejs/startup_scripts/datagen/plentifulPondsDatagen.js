@@ -1299,27 +1299,27 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:arapaima", // resume here
+        'starcatcher:lush_pike',
         {
             quests: [
                 {
                     population: 3,
                     requestedItems: [
                         { item: "minecraft:emerald", count: 4 },
-                        { item: "brewery:hop_trellis_seed", count: 16 },
+                        { item: 'society:hops_seeds', count: 16 },
                     ],
                 },
                 {
                     population: 5,
                     requestedItems: [
                         { item: "vintagedelight:peanut", count: 32 },
-                        { item: "pamhc2trees:hazelnutitem", count: 4 },
+                        { item: "society:placeholder", count: 4 }, // Hazelnut
                     ],
                 },
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "bakery:hazelnut_ella", count: 1 },
+                        { item: "society:placeholder", count: 1 }, // Hazelnut Ella
                         { item: "society:jade", count: 1 },
                         { item: "vintagedelight:magic_peanut", count: 1 },
                     ],
@@ -1348,7 +1348,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:atlantic_halibut",
+        'starcatcher:sandtail',
         {
             quests: [
                 {
@@ -1363,15 +1363,15 @@ global.fishPondDefinitions = new Map([
                     population: 5,
                     requestedItems: [
                         { item: "society:earth_crystal", count: 4 },
-                        { item: "meadow:piece_of_grain_cheese", count: 16 },
-                        { item: "vinery:cherry", count: 4 },
+                        { item: 'meadow:grain_cheese_slice', count: 16 },
+                        { item: "society:placeholder", count: 4 }, // Cherry
                     ],
                 },
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "society:aged_cherry_wine", count: 1 },
-                        { item: "smallships:cherry_brigg", count: 1 },
+                        { item: "society:placeholder", count: 1 }, // Aged Cherry Wine
+                        { item: "society:placeholder", count: 1 }, // Cherry Brigg
                     ],
                 },
             ],
@@ -1398,55 +1398,7 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:starshell_turtle",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [{ item: "pamhc2trees:starfruititem", count: 32 }],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "society:star_shards", count: 4 },
-                        { item: "minecraft:nether_star", count: 1 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [{ item: "society:aged_dewy_star", count: 2 }],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "minecraft:turtle_egg",
-                    count: 4,
-                    chance: 0.33,
-                },
-                {
-                    minPopulation: 4,
-                    item: "minecraft:scute",
-                    count: 1,
-                    chance: 0.14,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:star_shards",
-                    count: 2,
-                    chance: 0.24,
-                },
-                {
-                    minPopulation: 8,
-                    item: "pamhc2trees:starfruititem",
-                    count: 4,
-                    chance: 0.39,
-                },
-            ],
-        },
-    ],
-    [
-        "aquaculture:brown_shrooma",
+        'starcatcher:sporefish',
         {
             quests: [
                 {
@@ -1586,70 +1538,13 @@ global.fishPondDefinitions = new Map([
         },
     ],
     [
-        "aquaculture:arrau_turtle",
+        'starcatcher:pale_carp',
         {
             quests: [
                 {
                     population: 3,
                     requestedItems: [
-                        { item: "society:bowl_of_soul", count: 4 },
-                        { item: "society:latte", count: 4 },
-                        { item: "autumnity:snail_shell_piece", count: 4 },
-                    ],
-                },
-                {
-                    population: 5,
-                    requestedItems: [
-                        { item: "autumnity:snail_shell_block", count: 4 },
-                        { item: "autumnity:snail_goo", count: 3 },
-                        { item: "society:aquamarine", count: 1 },
-                    ],
-                },
-                {
-                    population: 7,
-                    requestedItems: [
-                        { item: "herbalbrews:black_tea", count: 16 },
-                        { item: "herbalbrews:chai_tea", count: 4 },
-                        { item: "herbalbrews:hibiscus_tea", count: 16 },
-                    ],
-                },
-            ],
-            additionalRewards: [
-                {
-                    minPopulation: 4,
-                    item: "minecraft:turtle_egg",
-                    count: 4,
-                    chance: 0.33,
-                },
-                {
-                    minPopulation: 4,
-                    item: "autumnity:snail_shell_piece",
-                    count: 12,
-                    chance: 0.43,
-                },
-                {
-                    minPopulation: 6,
-                    item: "society:aquamarine",
-                    count: 2,
-                    chance: 0.32,
-                },
-                {
-                    minPopulation: 8,
-                    item: "autumnity:snail_goo",
-                    count: 8,
-                    chance: 0.59,
-                },
-            ],
-        },
-    ],
-    [
-        "aquaculture:capitaine",
-        {
-            quests: [
-                {
-                    population: 3,
-                    requestedItems: [
-                        { item: "crabbersdelight:crab_trap_bait", count: 16 },
+                        { item: 'starcatcher:lush_bait', count: 16 },
                         { item: "twigs:rhyolite", count: 16 },
                         { item: "minecraft:torchflower", count: 4 },
                     ],

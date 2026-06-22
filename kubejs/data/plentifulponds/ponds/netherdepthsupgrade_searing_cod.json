@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:quartz",
+					"id": "minecraft:quartz",
 					"count": 32
 				},
 				{
-					"item": "etcetera:raw_bismuth",
+					"id": "etcetera:raw_bismuth",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "farm_and_charm:roaster",
+					"id": "farm_and_charm:roaster",
 					"count": 4
 				},
 				{
-					"item": "minecraft:furnace",
+					"id": "minecraft:furnace",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:cod",
+					"id": "minecraft:cod",
 					"count": 32
 				},
 				{
-					"item": "society:furniture_box",
+					"id": "society:furniture_box",
 					"count": 4
 				},
 				{
-					"item": "minecraft:fire_coral",
+					"id": "minecraft:fire_coral",
 					"count": 16
 				}
 			]

@@ -7,59 +7,59 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "starcatcher:worm",
+					"id": "starcatcher:worm",
 					"count": 10
 				},
 				{
-					"item": "farmersdelight:wheat_dough",
+					"id": "farmersdelight:wheat_dough",
 					"count": 16
 				},
 				{
-					"item": "minecraft:poppy",
+					"id": "minecraft:poppy",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:raw_gold",
+					"id": "minecraft:raw_gold",
 					"count": 4
 				},
 				{
-					"item": "society:oak_resin",
+					"id": "society:oak_resin",
 					"count": 1
 				},
 				{
-					"item": "farmersdelight:tomato",
+					"id": "farmersdelight:tomato",
 					"count": 1
 				},
 				{
-					"item": "society:sap",
+					"id": "society:sap",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "herbalbrews:green_tea",
+					"id": "herbalbrews:green_tea",
 					"count": 1
 				},
 				{
-					"item": "minecraft:honey_bottle",
+					"id": "minecraft:honey_bottle",
 					"count": 4
 				},
 				{
-					"item": "herbalbrews:lavender_tea",
+					"id": "herbalbrews:lavender_tea",
 					"count": 2
 				},
 				{
-					"item": "meadow:alpine_poppy",
+					"id": "meadow:alpine_poppy",
 					"count": 4
 				}
 			]

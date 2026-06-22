@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "twigs:silt",
+					"id": "twigs:silt",
 					"count": 1
 				},
 				{
-					"item": "netherdepthsupgrade:eyeball",
+					"id": "netherdepthsupgrade:eyeball",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:black_opal",
+					"id": "society:black_opal",
 					"count": 1
 				},
 				{
-					"item": "society:tubasmoke_carton",
+					"id": "society:tubasmoke_carton",
 					"count": 4
 				},
 				{
-					"item": "society:starfruit_preserves",
+					"id": "society:starfruit_preserves",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:pristine_star_shards",
+					"id": "society:pristine_star_shards",
 					"count": 32
 				},
 				{
-					"item": "society:aged_dewy_star",
+					"id": "society:aged_dewy_star",
 					"count": 8
 				},
 				{
-					"item": "society:aged_star_coquito",
+					"id": "society:aged_star_coquito",
 					"count": 4
 				}
 			]

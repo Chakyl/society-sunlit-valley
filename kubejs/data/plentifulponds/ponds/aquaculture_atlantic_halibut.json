@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:raw_copper",
+					"id": "minecraft:raw_copper",
 					"count": 16
 				},
 				{
-					"item": "minecraft:copper_block",
+					"id": "minecraft:copper_block",
 					"count": 16
 				},
 				{
-					"item": "minecraft:melon_slice",
+					"id": "minecraft:melon_slice",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:earth_crystal",
+					"id": "society:earth_crystal",
 					"count": 4
 				},
 				{
-					"item": "meadow:piece_of_grain_cheese",
+					"id": "meadow:piece_of_grain_cheese",
 					"count": 16
 				},
 				{
-					"item": "vinery:cherry",
+					"id": "vinery:cherry",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_cherry_wine",
+					"id": "society:aged_cherry_wine",
 					"count": 1
 				},
 				{
-					"item": "smallships:cherry_brigg",
+					"id": "smallships:cherry_brigg",
 					"count": 1
 				}
 			]

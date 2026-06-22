@@ -7,51 +7,51 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:bowl_of_soul",
+					"id": "society:bowl_of_soul",
 					"count": 4
 				},
 				{
-					"item": "society:latte",
+					"id": "society:latte",
 					"count": 4
 				},
 				{
-					"item": "autumnity:snail_shell_piece",
+					"id": "autumnity:snail_shell_piece",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "autumnity:snail_shell_block",
+					"id": "autumnity:snail_shell_block",
 					"count": 4
 				},
 				{
-					"item": "autumnity:snail_goo",
+					"id": "autumnity:snail_goo",
 					"count": 3
 				},
 				{
-					"item": "society:aquamarine",
+					"id": "society:aquamarine",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "herbalbrews:black_tea",
+					"id": "herbalbrews:black_tea",
 					"count": 16
 				},
 				{
-					"item": "herbalbrews:chai_tea",
+					"id": "herbalbrews:chai_tea",
 					"count": 4
 				},
 				{
-					"item": "herbalbrews:hibiscus_tea",
+					"id": "herbalbrews:hibiscus_tea",
 					"count": 16
 				}
 			]

@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "farm_and_charm:oat_ball",
+					"id": "farm_and_charm:oat_ball",
 					"count": 48
 				},
 				{
-					"item": "beachparty:sweetberry_milkshake",
+					"id": "beachparty:sweetberry_milkshake",
 					"count": 4
 				},
 				{
-					"item": "society:aged_grain_cheese_block",
+					"id": "society:aged_grain_cheese_block",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "atmospheric:orange",
+					"id": "atmospheric:orange",
 					"count": 16
 				},
 				{
-					"item": "veggiesdelight:bellpepper",
+					"id": "veggiesdelight:bellpepper",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "bakery:bundt_cake",
+					"id": "bakery:bundt_cake",
 					"count": 32
 				},
 				{
-					"item": "vintagedelight:pickled_pepper",
+					"id": "vintagedelight:pickled_pepper",
 					"count": 32
 				}
 			]

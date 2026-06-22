@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "trials:trial_key",
+					"id": "trials:trial_key",
 					"count": 8
 				},
 				{
-					"item": "trials:ominous_bottle",
+					"id": "trials:ominous_bottle",
 					"count": 4
 				},
 				{
-					"item": "trials:breeze_rod",
+					"id": "trials:breeze_rod",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "trials:trial_key_ominous",
+					"id": "trials:trial_key_ominous",
 					"count": 4
 				},
 				{
-					"item": "minecraft:blaze_rod",
+					"id": "minecraft:blaze_rod",
 					"count": 32
 				},
 				{
-					"item": "society:holy_symbol",
+					"id": "society:holy_symbol",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:relic_trove",
+					"id": "society:relic_trove",
 					"count": 1
 				},
 				{
-					"item": "society:artifact_trove",
+					"id": "society:artifact_trove",
 					"count": 1
 				}
 			]

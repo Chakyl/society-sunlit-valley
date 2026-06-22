@@ -7,31 +7,31 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:sunlit_pearl",
+					"id": "society:sunlit_pearl",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_improved_nether_fizz",
+					"id": "society:aged_improved_nether_fizz",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_energy_drink",
+					"id": "society:aged_energy_drink",
 					"count": 8
 				},
 				{
-					"item": "society:pristine_amethyst_chunk",
+					"id": "society:pristine_amethyst_chunk",
 					"count": 1
 				}
 			]

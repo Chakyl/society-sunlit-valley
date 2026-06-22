@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:oxidized_copper",
+					"id": "minecraft:oxidized_copper",
 					"count": 8
 				},
 				{
-					"item": "minecraft:copper_block",
+					"id": "minecraft:copper_block",
 					"count": 64
 				},
 				{
-					"item": "farm_and_charm:silo_copper",
+					"id": "farm_and_charm:silo_copper",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:verdant_froglight",
+					"id": "minecraft:verdant_froglight",
 					"count": 8
 				},
 				{
-					"item": "trials:copper_bulb",
+					"id": "trials:copper_bulb",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vinery:magnetic_wine",
+					"id": "vinery:magnetic_wine",
 					"count": 1
 				},
 				{
-					"item": "aquaculture:neptunium_ingot",
+					"id": "aquaculture:neptunium_ingot",
 					"count": 1
 				}
 			]

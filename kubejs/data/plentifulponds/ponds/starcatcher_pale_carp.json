@@ -1,6 +1,6 @@
 {
 	"color": "#ffffff",
-	"fish": "starcatcher:sun_seeking_carp",
+	"fish": "starcatcher:pale_carp",
 	"max_population": 10,
 	"max_roe": 1,
 	"reproduction_rate": 4,
@@ -9,15 +9,15 @@
 			"population": 3,
 			"requested_items": [
 				{
-					"id": "minecraft:gold_ingot",
-					"count": 32
-				},
-				{
-					"id": "minecraft:raw_gold",
+					"id": "starcatcher:lush_bait",
 					"count": 16
 				},
 				{
-					"id": "numismatics:crown",
+					"id": "twigs:rhyolite",
+					"count": 16
+				},
+				{
+					"id": "minecraft:torchflower",
 					"count": 4
 				}
 			]
@@ -26,16 +26,16 @@
 			"population": 5,
 			"requested_items": [
 				{
-					"id": "kaleidoscope_tavern:glowflower_brew",
-					"count": 1
+					"id": "twigs:tangerine_seashell",
+					"count": 2
 				},
 				{
-					"id": "culturaldelights:corn_cob",
-					"count": 64
+					"id": "minecraft:cactus",
+					"count": 16
 				},
 				{
-					"id": "atmospheric:orange",
-					"count": 4
+					"id": "twigs:pebble",
+					"count": 16
 				}
 			]
 		},
@@ -43,8 +43,8 @@
 			"population": 7,
 			"requested_items": [
 				{
-					"id": "create:precision_mechanism",
-					"count": 1
+					"id": "society:prize_ticket",
+					"count": 4
 				}
 			]
 		}
@@ -53,26 +53,26 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "minecraft:raw_gold",
-				"count": 32
+				"id": "society:earth_crystal",
+				"count": 2
 			},
-			"chance": 0.44
+			"chance": 0.78
 		},
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "society:pyrite",
-				"count": 1
+				"id": "society:geode",
+				"count": 4
 			},
-			"chance": 0.22
+			"chance": 0.33
 		},
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "create:precision_mechanism",
+				"id": "society:prize_ticket",
 				"count": 1
 			},
-			"chance": 0.18
+			"chance": 0.04
 		}
 	]
 }

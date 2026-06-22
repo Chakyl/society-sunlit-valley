@@ -7,35 +7,35 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "species:wraptor_egg",
+					"id": "species:wraptor_egg",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "pamhc2trees:pawpawitem",
+					"id": "pamhc2trees:pawpawitem",
 					"count": 4
 				},
 				{
-					"item": "society:energy_drink",
+					"id": "society:energy_drink",
 					"count": 1
 				},
 				{
-					"item": "nethervinery:nether_fizz",
+					"id": "nethervinery:nether_fizz",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_dark_brew",
+					"id": "society:aged_dark_brew",
 					"count": 8
 				}
 			]

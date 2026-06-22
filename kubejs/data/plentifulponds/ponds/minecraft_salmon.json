@@ -7,51 +7,51 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "meadow:pine_log",
+					"id": "meadow:pine_log",
 					"count": 64
 				},
 				{
-					"item": "society:salmonberry",
+					"id": "society:salmonberry",
 					"count": 16
 				},
 				{
-					"item": "meadow:alpine_poppy",
+					"id": "meadow:alpine_poppy",
 					"count": 3
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:oak_log",
+					"id": "minecraft:oak_log",
 					"count": 64
 				},
 				{
-					"item": "society:tapper",
+					"id": "society:tapper",
 					"count": 8
 				},
 				{
-					"item": "minecraft:dark_oak_log",
+					"id": "minecraft:dark_oak_log",
 					"count": 64
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:mossberry",
+					"id": "society:mossberry",
 					"count": 16
 				},
 				{
-					"item": "society:mossberry_preserves",
+					"id": "society:mossberry_preserves",
 					"count": 4
 				},
 				{
-					"item": "society:dried_mossberry",
+					"id": "society:dried_mossberry",
 					"count": 2
 				}
 			]

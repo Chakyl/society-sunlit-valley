@@ -7,31 +7,31 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:obsidian",
+					"id": "minecraft:obsidian",
 					"count": 16
 				},
 				{
-					"item": "minecraft:crying_obsidian",
+					"id": "minecraft:crying_obsidian",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:nether_raisins",
+					"id": "society:nether_raisins",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_lava_fizz",
+					"id": "society:aged_lava_fizz",
 					"count": 2
 				}
 			]

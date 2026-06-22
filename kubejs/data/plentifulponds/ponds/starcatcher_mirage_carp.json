@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:packed_mud",
+					"id": "minecraft:packed_mud",
 					"count": 32
 				},
 				{
-					"item": "minecraft:mud",
+					"id": "minecraft:mud",
 					"count": 48
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "veggiesdelight:cauliflower",
+					"id": "veggiesdelight:cauliflower",
 					"count": 16
 				},
 				{
-					"item": "society:earth_crystal",
+					"id": "society:earth_crystal",
 					"count": 2
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vintagedelight:pad_thai",
+					"id": "vintagedelight:pad_thai",
 					"count": 16
 				},
 				{
-					"item": "vintagedelight:nut_mash_mason_jar",
+					"id": "vintagedelight:nut_mash_mason_jar",
 					"count": 5
 				}
 			]

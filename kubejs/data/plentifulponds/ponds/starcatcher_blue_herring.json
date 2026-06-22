@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "culturaldelights:pickle_crate",
+					"id": "culturaldelights:pickle_crate",
 					"count": 1
 				},
 				{
-					"item": "minecraft:sea_pickle",
+					"id": "minecraft:sea_pickle",
 					"count": 16
 				},
 				{
-					"item": "minecraft:seagrass",
+					"id": "minecraft:seagrass",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vintagedelight:pickle",
+					"id": "vintagedelight:pickle",
 					"count": 4
 				},
 				{
-					"item": "minecraft:sea_lantern",
+					"id": "minecraft:sea_lantern",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 3
 				},
 				{
-					"item": "minecraft:heart_of_the_sea",
+					"id": "minecraft:heart_of_the_sea",
 					"count": 4
 				}
 			]

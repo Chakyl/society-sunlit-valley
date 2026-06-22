@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:sea_pickle",
+					"id": "minecraft:sea_pickle",
 					"count": 32
 				},
 				{
-					"item": "crabbersdelight:sea_pickle_juice",
+					"id": "crabbersdelight:sea_pickle_juice",
 					"count": 8
 				},
 				{
-					"item": "vintagedelight:pickled_egg",
+					"id": "vintagedelight:pickled_egg",
 					"count": 10
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vintagedelight:pickled_pitcher_pod",
+					"id": "vintagedelight:pickled_pitcher_pod",
 					"count": 4
 				},
 				{
-					"item": "vintagedelight:pickle_soup",
+					"id": "vintagedelight:pickle_soup",
 					"count": 4
 				},
 				{
-					"item": "vintagedelight:pickled_beetroot",
+					"id": "vintagedelight:pickled_beetroot",
 					"count": 64
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_century_egg",
+					"id": "society:aged_century_egg",
 					"count": 8
 				}
 			]

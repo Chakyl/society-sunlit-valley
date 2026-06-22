@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:diamond",
+					"id": "minecraft:diamond",
 					"count": 8
 				},
 				{
-					"item": "quark:diamond_heart",
+					"id": "quark:diamond_heart",
 					"count": 2
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "pamhc2trees:bananaitem",
+					"id": "pamhc2trees:bananaitem",
 					"count": 32
 				},
 				{
-					"item": "society:espresso",
+					"id": "society:espresso",
 					"count": 4
 				},
 				{
-					"item": "unusualfishmod:cooked_unusual_fillet",
+					"id": "unusualfishmod:cooked_unusual_fillet",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "refurbished_furniture:light_electricity_generator",
+					"id": "refurbished_furniture:light_electricity_generator",
 					"count": 1
 				},
 				{
-					"item": "society:charging_rod",
+					"id": "society:charging_rod",
 					"count": 1
 				},
 				{
-					"item": "society:battery",
+					"id": "society:battery",
 					"count": 8
 				}
 			]

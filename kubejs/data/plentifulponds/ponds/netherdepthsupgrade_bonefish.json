@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:large_milk",
+					"id": "society:large_milk",
 					"count": 4
 				},
 				{
-					"item": "meadow:cheese_block",
+					"id": "meadow:cheese_block",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:skeleton_skull",
+					"id": "minecraft:skeleton_skull",
 					"count": 1
 				},
 				{
-					"item": "minecraft:bone_block",
+					"id": "minecraft:bone_block",
 					"count": 32
 				},
 				{
-					"item": "vintagedelight:organic_mash",
+					"id": "vintagedelight:organic_mash",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:nether_jelly",
+					"id": "society:nether_jelly",
 					"count": 4
 				}
 			]

@@ -7,51 +7,51 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:calcite",
+					"id": "minecraft:calcite",
 					"count": 16
 				},
 				{
-					"item": "farmersdelight:onions",
+					"id": "farmersdelight:onions",
 					"count": 16
 				},
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:calcite_gem",
+					"id": "society:calcite_gem",
 					"count": 1
 				},
 				{
-					"item": "farmersdelight:onions",
+					"id": "farmersdelight:onions",
 					"count": 64
 				},
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_amethyst_cheese_block",
+					"id": "society:aged_amethyst_cheese_block",
 					"count": 1
 				},
 				{
-					"item": "society:large_amethyst_milk",
+					"id": "society:large_amethyst_milk",
 					"count": 4
 				},
 				{
-					"item": "meadow:piece_of_amethyst_cheese",
+					"id": "meadow:piece_of_amethyst_cheese",
 					"count": 1
 				}
 			]

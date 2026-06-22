@@ -7,31 +7,31 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "candlelight:jewelry_box",
+					"id": "candlelight:jewelry_box",
 					"count": 1
 				},
 				{
-					"item": "bakery:chocolate_box",
+					"id": "bakery:chocolate_box",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "aquaculture:tackle_box",
+					"id": "aquaculture:tackle_box",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:furniture_box",
+					"id": "society:furniture_box",
 					"count": 4
 				}
 			]

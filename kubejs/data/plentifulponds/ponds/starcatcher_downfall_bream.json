@@ -7,27 +7,27 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:ancient_fruit",
+					"id": "society:ancient_fruit",
 					"count": 3
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:ancient_fruit",
+					"id": "society:ancient_fruit",
 					"count": 6
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:ancient_fruit",
+					"id": "society:ancient_fruit",
 					"count": 12
 				}
 			]

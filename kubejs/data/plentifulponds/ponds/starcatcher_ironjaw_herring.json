@@ -7,35 +7,35 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:furniture_box",
+					"id": "society:furniture_box",
 					"count": 1
 				},
 				{
-					"item": "society:battery",
+					"id": "society:battery",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:furniture_box",
+					"id": "society:furniture_box",
 					"count": 4
 				},
 				{
-					"item": "society:mocha",
+					"id": "society:mocha",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:dirty_chai",
+					"id": "society:dirty_chai",
 					"count": 8
 				}
 			]

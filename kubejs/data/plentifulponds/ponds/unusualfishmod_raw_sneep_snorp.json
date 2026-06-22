@@ -7,39 +7,39 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:lapis_lazuli",
+					"id": "minecraft:lapis_lazuli",
 					"count": 48
 				},
 				{
-					"item": "herbalbrews:hibiscus_tea",
+					"id": "herbalbrews:hibiscus_tea",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vinery:bottle_mojang_noir",
+					"id": "vinery:bottle_mojang_noir",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "crabbersdelight:pearl",
+					"id": "crabbersdelight:pearl",
 					"count": 16
 				},
 				{
-					"item": "crabbersdelight:coral_fragments",
+					"id": "crabbersdelight:coral_fragments",
 					"count": 64
 				},
 				{
-					"item": "aquaculture:neptunium_ingot",
+					"id": "aquaculture:neptunium_ingot",
 					"count": 1
 				}
 			]

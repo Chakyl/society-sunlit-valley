@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:aged_whiskey_lilitusinglemalt",
+					"id": "society:aged_whiskey_lilitusinglemalt",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:large_goose_mayonnaise",
+					"id": "society:large_goose_mayonnaise",
 					"count": 4
 				},
 				{
-					"item": "society:large_turkey_mayonnaise",
+					"id": "society:large_turkey_mayonnaise",
 					"count": 4
 				},
 				{
-					"item": "society:large_duck_mayonnaise",
+					"id": "society:large_duck_mayonnaise",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:beemonican_seal",
+					"id": "society:beemonican_seal",
 					"count": 1
 				},
 				{
-					"item": "society:wheel_of_adaptation",
+					"id": "society:wheel_of_adaptation",
 					"count": 1
 				},
 				{
-					"item": "society:artifact_trove",
+					"id": "society:artifact_trove",
 					"count": 1
 				}
 			]

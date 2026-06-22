@@ -7,55 +7,55 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:tube_coral_block",
+					"id": "minecraft:tube_coral_block",
 					"count": 16
 				},
 				{
-					"item": "minecraft:brain_coral_block",
+					"id": "minecraft:brain_coral_block",
 					"count": 16
 				},
 				{
-					"item": "minecraft:bubble_coral_block",
+					"id": "minecraft:bubble_coral_block",
 					"count": 16
 				},
 				{
-					"item": "minecraft:fire_coral_block",
+					"id": "minecraft:fire_coral_block",
 					"count": 16
 				},
 				{
-					"item": "minecraft:horn_coral_block",
+					"id": "minecraft:horn_coral_block",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 64
 				},
 				{
-					"item": "nomansland:seashells",
+					"id": "nomansland:seashells",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 8
 				},
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 8
 				},
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 8
 				}
 			]

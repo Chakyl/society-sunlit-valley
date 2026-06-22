@@ -7,31 +7,31 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vinery:white_grape_bag",
+					"id": "vinery:white_grape_bag",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "pamhc2trees:pawpawitem",
+					"id": "pamhc2trees:pawpawitem",
 					"count": 32
 				},
 				{
-					"item": "vintagedelight:gearo_berry_bag",
+					"id": "vintagedelight:gearo_berry_bag",
 					"count": 32
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "pamhc2trees:plumitem",
+					"id": "pamhc2trees:plumitem",
 					"count": 64
 				}
 			]

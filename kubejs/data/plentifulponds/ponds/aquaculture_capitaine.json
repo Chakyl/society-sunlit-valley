@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "crabbersdelight:crab_trap_bait",
+					"id": "crabbersdelight:crab_trap_bait",
 					"count": 16
 				},
 				{
-					"item": "twigs:rhyolite",
+					"id": "twigs:rhyolite",
 					"count": 16
 				},
 				{
-					"item": "minecraft:torchflower",
+					"id": "minecraft:torchflower",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "twigs:tangerine_seashell",
+					"id": "twigs:tangerine_seashell",
 					"count": 2
 				},
 				{
-					"item": "minecraft:cactus",
+					"id": "minecraft:cactus",
 					"count": 16
 				},
 				{
-					"item": "twigs:pebble",
+					"id": "twigs:pebble",
 					"count": 16
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:prize_ticket",
+					"id": "society:prize_ticket",
 					"count": 4
 				}
 			]

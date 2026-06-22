@@ -7,43 +7,43 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:raw_iron",
+					"id": "minecraft:raw_iron",
 					"count": 16
 				},
 				{
-					"item": "minecraft:iron_block",
+					"id": "minecraft:iron_block",
 					"count": 8
 				},
 				{
-					"item": "society:earth_crystal",
+					"id": "society:earth_crystal",
 					"count": 2
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "society:placeholder",
+					"id": "society:placeholder",
 					"count": 3
 				},
 				{
-					"item": "nomansland:sweet_tart",
+					"id": "nomansland:sweet_tart",
 					"count": 1
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "kaleidoscope_tavern:riesling_dry_white",
+					"id": "kaleidoscope_tavern:riesling_dry_white",
 					"count": 16
 				},
 				{
-					"item": "vintagedelight:glow_berry_mason_jar",
+					"id": "vintagedelight:glow_berry_mason_jar",
 					"count": 3
 				}
 			]

@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "create:raw_zinc",
+					"id": "create:raw_zinc",
 					"count": 48
 				},
 				{
-					"item": "society:truffle_oil",
+					"id": "society:truffle_oil",
 					"count": 1
 				},
 				{
-					"item": "minecraft:diamond",
+					"id": "minecraft:diamond",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "minecraft:diamond",
+					"id": "minecraft:diamond",
 					"count": 32
 				},
 				{
-					"item": "create:zinc_block",
+					"id": "create:zinc_block",
 					"count": 48
 				},
 				{
-					"item": "society:truffle_tea",
+					"id": "society:truffle_tea",
 					"count": 8
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "quark:diamond_heart",
+					"id": "quark:diamond_heart",
 					"count": 1
 				},
 				{
-					"item": "aquaculture:neptunium_ingot",
+					"id": "aquaculture:neptunium_ingot",
 					"count": 1
 				}
 			]

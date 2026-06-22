@@ -7,47 +7,47 @@
 	"quests": [
 		{
 			"population": 3,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "bakery:glowberry_jam",
+					"id": "bakery:glowberry_jam",
 					"count": 7
 				},
 				{
-					"item": "bakery:glowberry_tart",
+					"id": "bakery:glowberry_tart",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 5,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "vinery:glowing_wine",
+					"id": "vinery:glowing_wine",
 					"count": 1
 				},
 				{
-					"item": "crabbersdelight:raw_glow_squid_tentacles",
+					"id": "crabbersdelight:raw_glow_squid_tentacles",
 					"count": 1
 				},
 				{
-					"item": "vintagedelight:glow_berry_mason_jar",
+					"id": "vintagedelight:glow_berry_mason_jar",
 					"count": 4
 				}
 			]
 		},
 		{
 			"population": 7,
-			"required_items": [
+			"requested_items": [
 				{
-					"item": "farmersdelight:glow_berry_custard",
+					"id": "farmersdelight:glow_berry_custard",
 					"count": 8
 				},
 				{
-					"item": "society:aged_glowing_wine",
+					"id": "society:aged_glowing_wine",
 					"count": 2
 				},
 				{
-					"item": "atmospheric:orange",
+					"id": "atmospheric:orange",
 					"count": 16
 				}
 			]
