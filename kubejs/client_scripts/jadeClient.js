@@ -161,6 +161,7 @@ global["JadeSocietyCropClientCallback"] = (
   pluginConfig
 ) => {
   const block = accessor.getBlock();
+  const blockContainer = accessor.getLevel().getBlock(accessor.getPosition());
   const state = accessor.getBlockState();
   const name = block.getIdLocation().toString();
   const strictGreenhouse = $DewdropConfig.strictGreenhouses;
@@ -210,7 +211,7 @@ global["JadeSocietyCropClientCallback"] = (
   };
   const getGrowthDay = (age, maxAge) => {
     const farmland = getFarmland(accessor.getLevel(), accessor.getPosition());
-    if (fertilizerNotApplies.includes(name)) return {age: age, maxAge: maxAge, boosted: false};
+    if (!farmland || fertilizerNotApplies.includes(name)) return {age: age, maxAge: maxAge, boosted: false};
     let delta = 0;
     if (farmland.hasTag("dew_drop_farmland_growth:weak_fertilized_farmland")) {
       delta = 1;
@@ -230,21 +231,21 @@ global["JadeSocietyCropClientCallback"] = (
     || hasGreenhouseGlass(accessor.getLevel(), accessor.getPosition());
   };
   const addGrowthLevelTooltip = (current, max, isFertile) => {
-    const { _age, _maxAge, boosted } = getGrowthDay(current, max);
-    let age = Component.of(Number(_age).toFixed());
-    let maxAge = Component.of(Number(_maxAge).toFixed());
-    if(boosted) {age = age.green(); maxAge = maxAge.darkGreen()}
+    const { age, maxAge, boosted } = getGrowthDay(current, max);
+    let ageText = Component.of(Number(age).toFixed());
+    let maxAgeText = Component.of(Number(maxAge).toFixed());
+    if(boosted) {ageText = ageText.darkGreen(); maxAgeText = maxAgeText.darkGreen()}
     if (current >= max) {
       tooltip.add(Component.translatable("jade.society.crop_growth.mature").darkGreen());
     } else {
-      tooltip.add(Component.translatable("jade.society.crop_growth", age, maxAge));
+      tooltip.add(Component.translatable("jade.society.crop_growth", ageText, maxAgeText));
     }
     if (!isFertile) {
       tooltip.add(Component.translatable("jade.society.crop_growth.stop").red());
     }
   };
 
-  if ($SereneFertility.isCrop(state) && block.hasTag("dew_drop_farmland_growth:cancel_random_tick")) {
+  if ($SereneFertility.isCrop(state) && blockContainer.hasTag("dew_drop_farmland_growth:cancel_random_tick")) {
     try {
       if (block instanceof $CropBlock) {
         addGrowthLevelTooltip(block.getAge(state), block.getMaxAge(), isCropFertile(name));
@@ -274,7 +275,7 @@ global["JadeSocietyCropClientCallback"] = (
     );
   } else {
     $JadeCropInfo.INSTANCE.appendTooltip(tooltip.getTooltip(), accessor, pluginConfig);
-    if (!block.hasTag("dew_drop_farmland_growth:cancel_random_tick") && !isCropFertile(name)) {
+    if (!blockContainer.hasTag("dew_drop_farmland_growth:cancel_random_tick") && !isCropFertile(name)) {
       tooltip.add(Component.translatable("jade.society.crop_growth.stop").red());
     }
   }
