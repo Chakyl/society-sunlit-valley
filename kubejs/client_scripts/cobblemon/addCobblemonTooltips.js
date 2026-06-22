@@ -304,6 +304,14 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:mystica_nectar', Text.translatable(`tooltip.sunlit_cobblemon.mystica_nectar.description`).gray());
   tooltip.add('sunlit_cobblemon:rainbow_steam', Text.translatable(`tooltip.sunlit_cobblemon.rainbow_steam.description`).gray());
   tooltip.add('sunlit_cobblemon:swampy_mystica_branch', Text.translatable(`tooltip.sunlit_cobblemon.swampy_mystica_branch.description`).gray());
+
+  tooltip.add('cobblemon:ice_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.ice_stone`).gray());
+  tooltip.add('cobblemon:fire_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.fire_stone`).gray());
+  tooltip.add('cobblemon:water_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.water_stone`).gray());
+  tooltip.add('cobblemon:thunder_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.thunder_stone`).gray());
+  tooltip.add('cobblemon:leaf_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.leaf_stone`).gray());
+  tooltip.add('cobblemon:shiny_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.shiny_stone`).gray());
+  tooltip.add('cobblemon:sun_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.sun_stone`).gray());
   [
     "ability_capsule", "ability_patch",
   ].forEach((item) => {
