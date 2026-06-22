@@ -9,16 +9,16 @@
 			"population": 3,
 			"requested_items": [
 				{
-					"id": "minecraft:raw_copper",
+					"id": "supplementaries:candy",
+					"count": 4
+				},
+				{
+					"id": "society:placeholder",
 					"count": 16
 				},
 				{
-					"id": "minecraft:copper_block",
-					"count": 16
-				},
-				{
-					"id": "minecraft:melon_slice",
-					"count": 32
+					"id": "kaleidoscope_tavern:carignan",
+					"count": 1
 				}
 			]
 		},
@@ -26,11 +26,11 @@
 			"population": 5,
 			"requested_items": [
 				{
-					"id": "society:earth_crystal",
-					"count": 4
+					"id": "society:sandstone_slate",
+					"count": 1
 				},
 				{
-					"id": "meadow:grain_cheese_slice",
+					"id": "supplementaries:candy",
 					"count": 16
 				},
 				{
@@ -43,12 +43,8 @@
 			"population": 7,
 			"requested_items": [
 				{
-					"id": "society:placeholder",
-					"count": 1
-				},
-				{
-					"id": "society:placeholder",
-					"count": 1
+					"id": "society:battery",
+					"count": 4
 				}
 			]
 		}
@@ -57,26 +53,34 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "minecraft:raw_copper",
-				"count": 64
+				"id": "society:granite_slate",
+				"count": 1
 			},
 			"chance": 0.44
 		},
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "society:geode",
-				"count": 8
+				"id": "society:sandstone_slate",
+				"count": 1
 			},
 			"chance": 0.22
 		},
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "minecraft:redstone",
-				"count": 32
+				"id": "society:ocean_stone",
+				"count": 1
 			},
-			"chance": 0.32
+			"chance": 0.22
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "society:battery",
+				"count": 1
+			},
+			"chance": 0.33
 		}
 	]
 }

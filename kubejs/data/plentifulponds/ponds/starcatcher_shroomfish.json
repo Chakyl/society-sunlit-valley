@@ -1,0 +1,106 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:shroomfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "minecraft:mycelium",
+					"count": 16
+				},
+				{
+					"id": "minecraft:mushroom_stem",
+					"count": 32
+				},
+				{
+					"id": "minecraft:red_mushroom_block",
+					"count": 32
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "minecraft:red_mushroom",
+					"count": 32
+				},
+				{
+					"id": "farmersdelight:rich_soil",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "society:cordycep",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:red_mushroom",
+				"count": 16
+			},
+			"chance": 0.35
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "nomansland:mashed_potatoes_with_mushrooms",
+				"count": 1
+			},
+			"chance": 0.16
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_mushroom_stool",
+				"count": 1
+			},
+			"chance": 0.03
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_mushroom_lamp",
+				"count": 1
+			},
+			"chance": 0.3
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_mushroom_bed",
+				"count": 1
+			},
+			"chance": 0.03
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_mushroom_table",
+				"count": 1
+			},
+			"chance": 0.03
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:red_mushroom_log_stool",
+				"count": 1
+			},
+			"chance": 0.03
+		}
+	]
+}
