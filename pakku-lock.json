@@ -122,6 +122,42 @@
             ]
         },
         {
+            "pakku_id": "9FJl59hDkLZVCBQy",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "alfinolib"
+            },
+            "name": {
+                "curseforge": "AlfinoLib"
+            },
+            "id": {
+                "curseforge": "1554698"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "alfinolib-1.1.7-neoforge-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8196/186/alfinolib-1.1.7-neoforge-1.21.1.jar",
+                    "id": "8196186",
+                    "parent_id": "1554698",
+                    "hashes": {
+                        "sha1": "03e2ecdebb395b341da4f28895bd677660cacf39",
+                        "md5": "3bb3fde119f70922e6b034ef2d92095a"
+                    },
+                    "required_dependencies": [],
+                    "size": 257382,
+                    "date_published": "2026-06-04T14:23:23.167Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "kzEUO5krLCQflhNc",
             "type": "MOD",
             "slug": {
@@ -4590,6 +4626,44 @@
             ]
         },
         {
+            "pakku_id": "4UH5vgyU7TlJxx0J",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "immersive-enchanting"
+            },
+            "name": {
+                "curseforge": "Immersive Enchanting"
+            },
+            "id": {
+                "curseforge": "1354719"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "immersiveenchanting-6.0.0-neoforge-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8197/612/immersiveenchanting-6.0.0-neoforge-1.21.1.jar",
+                    "id": "8197612",
+                    "parent_id": "1354719",
+                    "hashes": {
+                        "sha1": "2c8f1fc1566e73f31e91869a129b1b9540db3280",
+                        "md5": "50b4a32a06a38393ad6dbb2c70b5b6dc"
+                    },
+                    "required_dependencies": [
+                        "1554698"
+                    ],
+                    "size": 7266828,
+                    "date_published": "2026-06-04T19:23:05.930Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "fW9LTAvXH5C1vWvV",
             "type": "MOD",
             "slug": {
@@ -4701,88 +4775,6 @@
                     ],
                     "size": 2438548,
                     "date_published": "2025-06-17T15:53:15.717Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "vDRy6L74X3Edfacn",
-            "pakku_links": [
-                "oCFkRZx93Ze5suvH"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "irons-lib"
-            },
-            "name": {
-                "curseforge": "Iron's Lib"
-            },
-            "id": {
-                "curseforge": "1492763"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "irons_lib-1.21.1-1.0.2.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7907/336/irons_lib-1.21.1-1.0.2.jar",
-                    "id": "7907336",
-                    "parent_id": "1492763",
-                    "hashes": {
-                        "sha1": "ef92f362a352a30f927c30c2be72a2d843c41342",
-                        "md5": "e721286ef6096e6789252c208c8d333e"
-                    },
-                    "required_dependencies": [
-                        "388172"
-                    ],
-                    "size": 374610,
-                    "date_published": "2026-04-10T22:54:39.877Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "kVUtDU1grfNMgeXR",
-            "pakku_links": [
-                "vDRy6L74X3Edfacn"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "irons-rpg-tweaks"
-            },
-            "name": {
-                "curseforge": "Iron's Rpg Tweaks"
-            },
-            "id": {
-                "curseforge": "871799"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "irons_rpg_tweaks-2.2.2.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7907/338/irons_rpg_tweaks-2.2.2.1.jar",
-                    "id": "7907338",
-                    "parent_id": "871799",
-                    "hashes": {
-                        "sha1": "71caf1e63cc5a31abddb0ef16de19923e9b4872a",
-                        "md5": "3f4442d546cffc155607d59d5d1bde19"
-                    },
-                    "required_dependencies": [
-                        "1492763"
-                    ],
-                    "size": 287160,
-                    "date_published": "2026-04-10T22:55:22.233Z"
                 }
             ]
         },
@@ -5832,44 +5824,6 @@
                     "required_dependencies": [],
                     "size": 112984,
                     "date_published": "2025-09-09T22:40:53.220Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "QwlOlCYOsmUmbdEE",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "morejs"
-            },
-            "name": {
-                "curseforge": "MoreJS"
-            },
-            "id": {
-                "curseforge": "666198"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "morejs-neoforge-1.21.1-0.16.0.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7103/440/morejs-neoforge-1.21.1-0.16.0.jar",
-                    "id": "7103440",
-                    "parent_id": "666198",
-                    "hashes": {
-                        "sha1": "7e8aea4f03b18076cab5555f6d30e35ff919b342",
-                        "md5": "e87be3ff14acf0f95dff07155c3aaa01"
-                    },
-                    "required_dependencies": [
-                        "238086"
-                    ],
-                    "size": 157690,
-                    "date_published": "2025-10-13T16:29:36.797Z"
                 }
             ]
         },
@@ -8866,6 +8820,42 @@
             ]
         },
         {
+            "pakku_id": "gVtHUk4zBV9YGoYA",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "twigs"
+            },
+            "name": {
+                "curseforge": "Twigs"
+            },
+            "id": {
+                "curseforge": "496913"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Twigs-1.21.1-3.1.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8191/595/Twigs-1.21.1-3.1.2.jar",
+                    "id": "8191595",
+                    "parent_id": "496913",
+                    "hashes": {
+                        "sha1": "528c54b099afc36ae50c408ce9bfb78a28bdea8b",
+                        "md5": "5d88819c7aa9042f775106827200a379"
+                    },
+                    "required_dependencies": [],
+                    "size": 2711016,
+                    "date_published": "2026-06-03T15:01:14.733Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "5fW0vIgF2U6QOmNF",
             "type": "MOD",
             "slug": {
@@ -8900,6 +8890,44 @@
                     ],
                     "size": 303088,
                     "date_published": "2026-02-03T09:34:42.820Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "BpHH7XmYWBf5oK6N",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "unusual-fish-mod"
+            },
+            "name": {
+                "curseforge": "Unusual Fish Mod"
+            },
+            "id": {
+                "curseforge": "568300"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "unusualfishmod-1.21.1-1.1.11.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8276/302/unusualfishmod-1.21.1-1.1.11.jar",
+                    "id": "8276302",
+                    "parent_id": "568300",
+                    "hashes": {
+                        "sha1": "3179edb0d97b094b4cc16a8d7ccc96f9ee1d95ab",
+                        "md5": "369bd6b0e8e9d1f73d9ea7763222b262"
+                    },
+                    "required_dependencies": [
+                        "388172"
+                    ],
+                    "size": 5170195,
+                    "date_published": "2026-06-18T23:37:00.537Z"
                 }
             ]
         },
@@ -9013,6 +9041,44 @@
                     "required_dependencies": [],
                     "size": 221494,
                     "date_published": "2024-07-30T06:53:19.643Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "2fx9U3Zp0ne80Ieg",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "vintage-delight-kots"
+            },
+            "name": {
+                "curseforge": "Vintage Delight KOTS"
+            },
+            "id": {
+                "curseforge": "1569514"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "vintagedelight-kots-0.2.3.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8242/543/vintagedelight-kots-0.2.3.jar",
+                    "id": "8242543",
+                    "parent_id": "1569514",
+                    "hashes": {
+                        "sha1": "9bb3cc1ff06c917f07994998c0818947caafd31b",
+                        "md5": "8a628adae13fd82ba5d94f39026e839c"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 1306156,
+                    "date_published": "2026-06-13T15:03:30.263Z"
                 }
             ]
         },
