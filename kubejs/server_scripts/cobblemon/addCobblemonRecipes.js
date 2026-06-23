@@ -26,6 +26,26 @@ ServerEvents.recipes((e) => {
   e.shapeless("simpletms:tr_dracometeor", ["society:prismatic_shard", "4x sunlit_cobblemon:draco_meteorite"]);
   e.shapeless("cobblemon:quick_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
   e.shapeless("cobblemon:razor_claw", ["society:aquamagical_dust", "cobblemon:quick_claw"]);
+    e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    container: {
+      item: "minecraft:bowl",
+    },
+    ingredients: [
+      {
+        item: "society:eggplant",
+      },
+      {
+        item: 'cobblemon:vivichoke',
+      },
+      { tag: 'society:large_mayonnaise' },
+    ],
+    result: {
+      item: 'cobblemon:vivichoke_dip'
+    },
+  });
   e.shaped("sunlit_cobblemon:uncharged_battery", [" zr", "zrz", "rz "], {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",

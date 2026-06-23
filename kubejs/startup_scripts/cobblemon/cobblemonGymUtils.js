@@ -523,7 +523,7 @@ const trainerBuckets = new Map([
   ],
   [
     120,
-    [,
+    [
       "gym_crusher_cruelty",
       "reggie",
       "professor_oak_00c8",

@@ -1,8 +1,9 @@
 ## Sunlit Cobblemon Credits
+### Sunlit Cobblemon Dev Team
 - Chakyl - Lead developer & gameplay designer
+- KingKarma - Cobblemon developer and designer
 
 ### Dev Contributors
-- KingKarma - Fishing, Poke-Crop pools. Trainer & League bosses
 - Hexagreen - Translation support
 
 ### Translation Contributors

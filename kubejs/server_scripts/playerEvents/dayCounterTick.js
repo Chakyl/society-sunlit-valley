@@ -47,11 +47,10 @@ PlayerEvents.tick((e) => {
   ) {
     // Sleeping cuts the amount of possible days by half
     let yearCount =
-      player.stats.playTime / dayTickDuration / (((global.subSeasonDuration  * 3) * 4) / 2);
-    if (
-      !player.stages.has("master_cultivator_unlocked") &&
-      yearCount > 1 &&
-      ["spring", "summer"].includes(global.getSeasonFromLevel(level))
+      player.stats.playTime / dayTickDuration / (((global.subSeasonDuration * 3) * 4) / 2);
+    let overrideCount = player.stats.playTime / dayTickDuration / (((10 * 3) * 4) / 2);
+    if (!player.stages.has("master_cultivator_unlocked") &&
+      overrideCount > 1 || (yearCount > 1 && ["spring", "summer"].includes(global.getSeasonFromLevel(level)))
     ) {
       player.stages.add("master_cultivator_unlocked");
     }

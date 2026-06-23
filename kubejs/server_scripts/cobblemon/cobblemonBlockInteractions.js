@@ -6,56 +6,40 @@ BlockEvents.rightClicked((e) => {
       let hasTriggered = false;
       if (block.id === "minecraft:clay") {
         hasTriggered = true;
-       level.spawnParticles(
-        "minecraft:large_smoke",
-        true,
-        block.x,
-        block.y + 1,
-        block.z,
-        0.2 * rnd(1, 4),
-        0.2 * rnd(1, 4),
-        0.2 * rnd(1, 4),
-        25,
-        0.01); {
         block.set("minecraft:bricks")
-        if (!player.isCreative() && Math.random() < 0.1) item.count--;
-        player.swing()
-      };
-      server.runCommandSilent(
-        `playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`);
-        } else {
+      } else {
         server.recipeManager.getAllRecipesFor("minecraft:smelting").forEach((recipe) => {
-          recipe.getIngredients()[0].getItemIds().forEach((ingredient) => {
+          for (let ingredient of recipe.getIngredients()[0].getItemIds()) {
             if (block.id === ingredient) {
               let resultItem = recipe.getResultItem(level.registryAccess());
               if (resultItem.block) {
-                level.spawnParticles(
-                  "minecraft:large_smoke",
-                  true,
-                  block.x,
-                  block.y + 1,
-                  block.z,
-                  0.2 * rnd(1, 4),
-                  0.2 * rnd(1, 4),
-                  0.2 * rnd(1, 4),
-                  25,
-                  0.01);
+                hasTriggered = true;
                 block.set(resultItem.id)
-                if (!player.isCreative() && Math.random() < 0.1) item.count--;
-                player.swing()
-                server.runCommandSilent(`playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`)
-
-                e.cancel();
-                return;
+                break;
               }
             }
-
-          });
+          }
         });
+      }
+      if (hasTriggered) {
+        if (!player.isCreative() && Math.random() < 0.1) item.count--;
+        level.spawnParticles(
+          "minecraft:large_smoke",
+          true,
+          block.x,
+          block.y + 1,
+          block.z,
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          0.2 * rnd(1, 4),
+          25,
+          0.01);
+        player.swing()
+        server.runCommandSilent(`playsound minecraft:block.fire.extinguish block @a ${player.x} ${player.y} ${player.z}`);
       }
     }
   }
-}); 
+});
 
 BlockEvents.rightClicked("minecraft:dirt", (e) => {
   const { item, player, hand, block, level, server } = e;
@@ -267,34 +251,31 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
   const { item, player, hand, block, level, server } = e;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
-    {
-      if (item.getId() === "cobblemon:sun_stone") {
-        let day = global.getDay(level);
-        let nbt = block.getEntityData();
-        const canSpawnToday = !nbt.data || !nbt.data.dayLastRaided || global.compareDay(day, nbt.data.dayLastRaided, 1)
-        if (canSpawnToday) return;
-        level.spawnParticles(
-          "atmospheric:orange_vapor",
-          true,
-          block.x,
-          block.y + 1,
-          block.z,
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          25,
-          0.01);
-        nbt.merge({
-          data: {
-            dayLastRaided: -1
-          }
-        });
-        if (!player.isCreative()) item.count--;
-        player.swing()
-        server.runCommandSilent(
-          `playsound minecraft:block.respawn_anchor.charge block @a ${player.x} ${player.y} ${player.z}`)
-        global.setBlockEntityData(block, nbt);
-      };
-    }
+    if (item.getId() === "cobblemon:sun_stone") {
+      let day = global.getDay(level);
+      let nbt = block.getEntityData();
+      const canSpawnToday = !nbt.data || !nbt.data.dayLastRaided || global.compareDay(day, nbt.data.dayLastRaided, 1)
+      if (canSpawnToday) return;
+      level.spawnParticles(
+        "atmospheric:orange_vapor",
+        true,
+        block.x,
+        block.y + 1,
+        block.z,
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        25,
+        0.01);
+      nbt.merge({
+        data: {
+          dayLastRaided: -1
+        }
+      });
+      if (!player.isCreative()) item.count--;
+      player.swing()
+      server.runCommandSilent( `playsound minecraft:block.respawn_anchor.charge block @a ${player.x} ${player.y} ${player.z}`)
+      global.setBlockEntityData(block, nbt);
+    };
   }
 });
