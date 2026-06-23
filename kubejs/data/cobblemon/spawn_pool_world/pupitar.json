@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+       { "id": "pupitar-1",
+      "pokemon": "pupitar",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "30-54",
+      "weight": 0.25,
+      "condition": {
+        "neededNearbyBlocks": [
+            "society:moon_gnome_statue"
+        ]
+      }
+    }
+  ]
+}

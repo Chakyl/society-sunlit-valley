@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+       { "id": "sliggoo-1",
+      "pokemon": "sliggoo",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "40-50",
+      "weight": 0.25,
+      "condition": {
+        "neededNearbyBlocks": [
+            "society:mystic_willow_log"
+        ]
+      }
+    }
+  ]
+}

@@ -47,14 +47,14 @@ global.handlePicklingCan = (e) => {
             new BlockPos(x - radius, y - radius, z - radius),
             [x + radius, y + radius, z + radius]
           )) {
+            if (!level.isLoaded(pos)) continue;
             scanBlock = level.getBlock(pos);
             if (scanBlock.id === "vintagedelight:salt") {
               let saltProperties = scanBlock.getProperties();
               if (rnd50()) {
                 if (Number(saltProperties.get("layers")) > 1) {
-                  saltProperties.layers = `${
-                    Number(saltProperties.get("layers")) - 1
-                  }`;
+                  saltProperties.layers = `${Number(saltProperties.get("layers")) - 1
+                    }`;
                   scanBlock.set(scanBlock.id, saltProperties);
                 } else {
                   scanBlock.set("minecraft:air");

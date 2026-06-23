@@ -134,6 +134,7 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
   let plantData;
   if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] ribbitHut.js");
   server.scheduleInTicks(delay, () => {
+    if (!level.isLoaded(pos)) return;
     scannedBlock = level.getBlock(pos);
     if (scannedBlock && scannedBlock.hasTag("society:ribbit_hut_harvests")) {
       blockState = level.getBlockState(pos);

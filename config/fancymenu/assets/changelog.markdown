@@ -1,15 +1,20 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.7-SSV4.0.8
+### v1.0.8-SSV4.0.9
 ^^^
 --- 
-- Fixed trainer podium related crash
-- Fixed serene seasons config syncing (experimental)
-- Fixed potential crash involving coin leaderboards (experimental)
-- Fixed poison type pickling recipes not matching pickling can
-- Fixed errors with tree harvesting
-- Fixed Ursaluna Blood Moon not spawning from sun raid statues
-
+- Updated SSV version
+- Added spawns for Arboliva line
+- Added unique spawn for each of the mastery blocks (Goomy, Pupitar, Feebas, Beldum, and Rotom)
+- Added in-world interactions to some of the cobblemon stones
+- Added Vivichoke dip recipe
+- Added more Dimensional Entity trainers
+- Blaze Tauros now gets milked for steamed milk
+- Fixed milking recipes not all showing
+- Fixed Hoopa Unbound being unobtainable
+- Fixed issues with TM/TRs not showing the correct learnable state
+- Fixed tier 120 bug with trainer (thank you for telling Chakyl)
+- Fixed fighting types not shopping Kousa saplings
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
 - Added Craft station, a block that allows Pokemon to craft specific items depending on their type
@@ -75,6 +80,14 @@
 - Backported Evo stone blocks
 - Backported evo items (Metal Alloy, Syrupy Apple, Shell Helmet, etc)
 - Backported move animations (Thanks MrFreezy™!)
+
+## 1.0.7-SSV4.0.8
+- Fixed trainer podium related crash
+- Fixed serene seasons config syncing (experimental)
+- Fixed potential crash involving coin leaderboards (experimental)
+- Fixed poison type pickling recipes not matching pickling can
+- Fixed errors with tree harvesting
+- Fixed Ursaluna Blood Moon not spawning from sun raid statues
 
 ## 1.0.6-SSV4.0.8
 - Add dex completion % to Rare Pokemon tab (and renamed it to Pokemon)

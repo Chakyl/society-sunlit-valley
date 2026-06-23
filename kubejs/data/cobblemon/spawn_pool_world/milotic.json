@@ -1,0 +1,21 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+       { "id": "milotic-1",
+      "pokemon": "milotic",
+      "type": "pokemon",
+      "context": "submerged",
+      "presets": ["underwater"],
+      "bucket": "ultra-rare",
+      "level": "10-25",
+      "weight": 1,
+      "condition": {
+        "neededNearbyBlocks": [
+            "society:roe_recycler"
+        ]
+      }
+    }
+  ]
+}

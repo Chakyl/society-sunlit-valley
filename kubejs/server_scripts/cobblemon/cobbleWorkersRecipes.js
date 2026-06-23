@@ -134,6 +134,7 @@ ServerEvents.recipes((e) => {
       sapling: "atmospheric:green_aspen_sapling",
       log: "atmospheric:aspen_log",
     },
+    { sapling: "atmospheric:kousa_sapling", log: "atmospheric:kousa_log"},
     { sapling: "autumnity:orange_maple_sapling", log: "autumnity:maple_log" },
     { sapling: "autumnity:red_maple_sapling", log: "autumnity:maple_log" },
     { sapling: "autumnity:yellow_maple_sapling", log: "autumnity:maple_log" },

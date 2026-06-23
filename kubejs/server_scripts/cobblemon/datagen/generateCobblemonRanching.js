@@ -8064,8 +8064,8 @@
 //             milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },
 //         },
 //         {
-//             pokemon: "blaze",
-//             form: "aqua",
+//             pokemon: "tauros",
+//             form: "blaze",
 //             milk: { sm: "society:steamed_milk", lg: "society:steamed_milk" },
 //         },
 //         {

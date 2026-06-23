@@ -1,0 +1,199 @@
+{
+  "displayName": "Dimensional Entity",
+  "team": [
+    {
+      "species": "cobblemon:grimmsnarl",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "prankster",
+      "moveset": [
+        "thunderwave",
+        "suckerpunch",
+        "falsesurrender",
+        "spiritbreak"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 4,
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:rowap_berry",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:celesteela",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "beastboost",
+      "moveset": [
+        "brutalswing",
+        "flashcannon",
+        "heavyslam",
+        "fly"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "defence": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:buzzwole",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "beastboost",
+      "moveset": [
+        "fellstinger",
+        "darkestlariat",
+        "bulletpunch",
+        "superpower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 4,
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:pheromosa",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:hasty",
+      "ability": "beastboost",
+      "moveset": [
+        "triplekick",
+        "quiverdance",
+        "lunge",
+        "bounce"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 4,
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:groudon",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:hasty",
+      "ability": "desolateland",
+      "moveset": [
+        "eruption",
+        "solarbeam",
+        "ancientpower",
+        "precipiceblades"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 136,
+        "attack": 168,
+        "speed": 152,
+        "special_defence": 52
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "genderless",
+        "primal"
+      ]
+    },
+    {
+      "species": "cobblemon:kyogre",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:quirky",
+      "ability": "primordialsea",
+      "moveset": [
+        "originpulse",
+        "ancientpower",
+        "icebeam",
+        "aquaring"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 4,
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "genderless",
+        "primal"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

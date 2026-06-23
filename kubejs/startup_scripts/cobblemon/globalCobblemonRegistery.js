@@ -198,7 +198,6 @@ global.cobblemonCooking = [
   { item: "cobblemon:braised_vivichoke", value: 69 },
   { item: "cobblemon:roasted_leek", value: 3 },
   { item: "cobblemon:leek_and_potato_stew", value: 55 },
-  { item: "cobblemon:vivichoke_dip", value: 1 },
   { item: "cobblemon:berry_juice", value: 900 },
   { item: "cobblemon:remedy", value: 8 },
   { item: "cobblemon:fine_remedy", value: 78 },
@@ -254,6 +253,7 @@ global.cobblemonCooking = [
 
 // Cooking pot cooking
 [
+  { item: "cobblemon:vivichoke_dip", value: 184 },
   { item: "cobblemon:muscle_mochi", value: 348 },
   { item: "cobblemon:health_mochi", value: 460 },
   { item: "cobblemon:resist_mochi", value: 380 },
