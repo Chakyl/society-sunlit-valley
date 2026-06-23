@@ -28,8 +28,6 @@ const ironArmorEnchant = [ironArmor, goldArmor, diamondArmor, iridiumArmor, elec
 const goldArmorEnchant = [goldArmor, diamondArmor, iridiumArmor, electrumArmor]
 const diamondArmorEnchant = [diamondArmor, iridiumArmor, electrumArmor]
 
-
-
 const tiers = ["iron", "golden", "diamond"]
 const gearPieces = ["shovel", "pickaxe", "axe", "hoe", "sword", "helmet", "chestplate", "leggings", "boots"]
 
@@ -65,5 +63,13 @@ const nukedEnchantments = [
 ]
 
 ServerEvents.tags('enchantment', event => {
-  event.removeAllTagsFrom(nukedEnchantments)
+    event.removeAllTagsFrom(nukedEnchantments)
+})
+
+ServerEvents.generateData("last", event => {
+    for (let id of nukedEnchantments) {
+        var namespace = id.split(":")[0]
+        var path = id.split(":")[1]
+        event.json(`${namespace}:enchantment/${path}`, { "neoforge:conditions": [{ "type": "neoforge:false" }] })
+    }
 })

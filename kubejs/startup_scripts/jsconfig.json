@@ -1,29 +1,44 @@
 {
+    "compilerOptions": {
+        "plugins": [],
+        "checkJs": false,
+        // Fully TS-compatible typing generation is not possible,
+        // but turning off skipLibCheck can help debugging
+        "skipLibCheck": true,
+        "target": "ES2022",
+        "lib": [
+            "ES2022"
+        ],
+        "module": "commonjs",
+        "paths": {
+            "@package": [
+                "../../.probe/@package"
+            ],
+            "@package/*": [
+                "../../.probe/@package/*"
+            ],
+            "@side-only/startup": [
+                "../../.probe/@side-only/startup"
+            ],
+            "@side-only/startup/*": [
+                "../../.probe/@side-only/startup/*"
+            ],
+            "@special": [
+                "../../.probe/@special"
+            ],
+            "@special/*": [
+                "../../.probe/@special/*"
+            ]
+        },
+    },
+    "typeAcquisition": {
+        "enable": false
+    },
     "include": [
         "./**/*.js",
-        "./**/*.ts"
-    ],
-    "compilerOptions": {
-        "module": "none",
-        "moduleResolution": "node",
-        "allowJs": true,
-        "checkJs": false,
-        "target": "ES2015",
-        "disableSizeLimit": true,
-        "noEmit": true,
-        "assumeChangesOnlyAffectDirectDependencies": true,
-        "rootDir": ".",
-        "baseUrl": "../../.probe/packages",
-        "skipLibCheck": true,
-        "skipDefaultLibCheck": true,
-        "lib": [
-            "ES2015",
-            "ES2016.Array.Include",
-            "ES2017.Object"
-        ],
-        "typeRoots": [
-            "../../.probe/packages",
-            "../../.probe/startup"
-        ]
-    }
+        "./**/*.d.ts",
+        "../../.probe/@package/**/*.d.ts",
+        "../../.probe/@side-only/startup/**/*.d.ts",
+        "../../.probe/@special/**/*.d.ts"
+    ]
 }
