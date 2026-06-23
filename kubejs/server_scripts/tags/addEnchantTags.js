@@ -58,3 +58,12 @@ ServerEvents.tags('item', event => {
         });
     });
 })
+
+const nukedEnchantments = [
+    'minecraft:mending',
+    'minecraft:unbreaking'
+]
+
+ServerEvents.tags('enchantment', event => {
+  event.removeAllTagsFrom(nukedEnchantments)
+})
