@@ -1,0 +1,20 @@
+The following mods are used in the pack and are not availible on Modrinth but have licenses that allow for redistirbution:
+- [Tanuki Decor](https://www.curseforge.com/minecraft/mc-mods/tanukidecor) - GLP
+- [Trail Chambers Reuploaded](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded) - MIT
+- [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) - MIT (Modrinth uploaded version broken)
+- [SkillExpNotifier](https://www.curseforge.com/minecraft/mc-mods/skillexpnotifier) - MIT
+- [Serene Seasons Fix - Revived](https://www.curseforge.com/minecraft/mc-mods/serene-seasons-fix-revived) - MIT
+- [ServerConfig Updater](https://www.curseforge.com/minecraft/mc-mods/serverconfig-updater) - MIT
+- [MrCrayfish's Furniture Mod: Refurbished](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture#license) - Custom License, allows for redistribution
+- [PowerfulJS](https://www.curseforge.com/minecraft/mc-mods/powerfuljs) - LGPL
+- [GeckoJS](https://www.curseforge.com/minecraft/mc-mods/geckojs) - LGPL
+- [FTB Quest Localizer](https://www.curseforge.com/minecraft/mc-mods/ftb-quest-localizer) - MIT
+- [Framework](https://www.curseforge.com/minecraft/mc-mods/framework) - LGPL
+- [Bobby Reforged](https://www.curseforge.com/minecraft/mc-mods/bobby-reforged) - LGPL
+- [Building Gadgets](https://www.curseforge.com/minecraft/mc-mods/building-gadgets) - MIT
+- [Controllable](https://www.curseforge.com/minecraft/mc-mods/controllable) - MIT
+- [Creeper Confetti](https://www.curseforge.com/minecraft/mc-mods/creeper-confetti) - GPL
+- [Display Delight](https://www.curseforge.com/minecraft/mc-mods/creeper-confetti) - MIT/GPL
+- [ExpandAbility](https://www.curseforge.com/minecraft/mc-mods/expandability) - MIT
+- [Domestic Innovation Fixed](https://www.curseforge.com/minecraft/mc-mods/domestication-innovation-fixed) - LGPL
+- [AllTheLeaks](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) - MIT
