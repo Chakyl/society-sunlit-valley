@@ -59,7 +59,7 @@ ServerEvents.tags('item', event => {
 
 const nukedEnchantments = [
     'minecraft:mending',
-    'minecraft:unbreaking'
+    // 'minecraft:unbreaking'
 ]
 
 ServerEvents.tags('enchantment', event => {
@@ -68,8 +68,6 @@ ServerEvents.tags('enchantment', event => {
 
 ServerEvents.generateData("last", event => {
     for (let id of nukedEnchantments) {
-        var namespace = id.split(":")[0]
-        var path = id.split(":")[1]
-        event.json(`${namespace}:enchantment/${path}`, { "neoforge:conditions": [{ "type": "neoforge:false" }] })
+        event.json(`${id.namespace}:enchantment/${id.path}`, { "neoforge:conditions": [{ "type": "neoforge:false" }] })
     }
 })
