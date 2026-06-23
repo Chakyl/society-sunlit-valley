@@ -6,12 +6,15 @@
 - Updated SSV version
 - Added spawns for Arboliva line
 - Added unique spawn for each of the mastery blocks (Goomy, Pupitar, Feebas, Beldum, and Rotom)
-- Blaze Tauros  now gets milked for steamed milk
+- Added in-world interactions to some of the cobblemon stones
+- Added Vivichoke dip recipe
+- Added more Dimensional Entity trainers
+- Blaze Tauros now gets milked for steamed milk
 - Fixed milking recipes not all showing
 - Fixed Hoopa Unbound being unobtainable
 - Fixed issues with TM/TRs not showing the correct learnable state
+- Fixed tier 120 bug with trainer (thank you for telling Chakyl)
 - Fixed fighting types not shopping Kousa saplings
-
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
 - Added Craft station, a block that allows Pokemon to craft specific items depending on their type
