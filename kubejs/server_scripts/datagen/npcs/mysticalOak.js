@@ -35,6 +35,7 @@ if (global.datagenDialog) {
         "The relationship between capitalism and eco-disaster is neither coincidental nor accidental."
       ],
       friendship3: [
+        "You sap my strenght with this needless chatter. Let me rest.",
         "A sapling a day keeps the bourgeoisie away!",
         ["Capitalist ideology disguises itself in inevitabilities.", "'If I do not claim this for myself, someone else will.'", "You are not immune to this trapping, o' Soft One."],
         "Those that dismiss their own role in the abomination that is capitalism are not absolved from it in the eyes of the forest.", 
@@ -48,6 +49,13 @@ if (global.datagenDialog) {
         ["The wind feels nice today. Genuine wind is something your industrial self will never recreate.", "The blades of those metallic abominations you call fans will never compare."],
       ],
       friendship5: [
+        ["The mystery of Selene will never be unraveled. The mysteries of the moon are endless."]
+        ["I have an interest in that sage of yours, the sleepy unkempt one.", "During clear nights I see a glimmer of an eye watching me...", "Like a cardinal in spring looks at a fresh berry..."],
+        "Hello my Soft One.",
+        "The company of others is to be enjoyed, not shamed. Be kind others as you have I.",
+        "When trees drop the canopy flourishes and fungi flounder. The natural Cycle of life in these woods.",
+        ["A leaf of a weep for all my fallen communion.", "A silent blessing upon the evergreens that proceed them.", "A flame carried."],
+        ["Why does the willow weep?", "Why does the oak cherish a voluminous sack of flesh and cartilage?"],
         ["Capital has the ability to subsume all critiques into itself.", "Just like you fell the land, my kind shower those beneath us with darkness.", "A shaded death to these desperate flower buds in this sunlit valley."],
       ],
     },

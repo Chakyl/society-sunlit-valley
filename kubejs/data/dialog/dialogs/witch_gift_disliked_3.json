@@ -1,7 +1,7 @@
 {
-	"id": "witch_gift_loved_0",
+	"id": "witch_gift_disliked_3",
 	"title": "witch introduction",
-	"description": "dialog.npc.witch.gift.loved",
+	"description": "dialog.npc.witch.gift.disliked",
 	"entries": [
 		{
 			"id": "start",
@@ -11,12 +11,12 @@
 			},
 			"text": [
 				{
-					"translate": "dialog.npc.witch.gift_loved.0.line_0"
+					"translate": "dialog.npc.witch.gift_disliked.3.line_0"
 				}
 			],
 			"portraits": [
 				{
-					"path": "loved/witch.png",
+					"path": "disliked/witch.png",
 					"position": "INLINE",
 					"brightness": 1
 				}

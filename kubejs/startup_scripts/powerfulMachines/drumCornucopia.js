@@ -151,6 +151,7 @@ global.handleCornucopia = (server, level, centerPos, player, returnExperience) =
 StartupEvents.registry("block", (event) => {
   event
     .create("society:drum_cornucopia")
+    .displayName("Drum of the Cornucopia")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .soundType("wood")
@@ -159,8 +160,8 @@ StartupEvents.registry("block", (event) => {
     .box(3, 0, 3, 13, 14, 13)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.translatable("block.society.growth_obelisk.description").gray());
-      item.tooltip(Text.translatable("tooltip.society.area", `7x1x7`).green());
+      item.tooltip(Text.translatable("block.society.drum_cornucopia.description").gray());
+      item.tooltip(Text.translatable("tooltip.society.area", `20x10x20`).green());
       item.modelJson({
         parent: "society:block/kubejs/drum_cornucopia",
       });

@@ -155,6 +155,17 @@ ServerEvents.recipes((e) => {
     S: "unusualfishmod:raw_sneep_snorp",
     f: "meadow:fire_log",
   });
+  e.shaped("society:rain_totem", ["ppp", "ptp", "fff"], {
+    p: "society:pine_tar",
+    t: "society:truffle_oil",
+    f: "meadow:fire_log",
+  });
+  e.shaped("society:thunder_totem", ["ppp", "tat", "fff"], {
+    p: "society:oak_resin",
+    t: "society:truffle_oil",
+    a: "society:amulet_of_light",
+    f: "meadow:fire_log",
+  });
   // Earth Crystal
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
@@ -859,7 +870,11 @@ ServerEvents.recipes((e) => {
     s: "society:sparkstone_block",
     h: "minecraft:goat_horn",
   });
-
+  e.shaped("society:drum_cornucopia", ["lLl", "lcl", "lLl"], {
+    L: "minecraft:leather",
+    c: "society:cornucopia",
+    l: "#botania:livingwood_logs"
+  });
   e.shaped("society:mana_milker", ["rtr", "nMn", "lTl"], {
     r: "botania:rune_earth",
     t: "society:botanical_tribute",
