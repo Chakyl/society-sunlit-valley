@@ -24,6 +24,7 @@ const magnifyingGlassBlocks = [
   { id: "society:growth_obelisk", radius: 3, includeY: false },
   { id: "society:ribbit_hut", radius: 7, includeY: false },
   { id: "society:mushroom_log", radius: 8, includeY: true },
+  { id: "society:fish_pond_quest_manager", radius: 10, includeY: true },
 ];
 const magnifyingGlassBlockIds = magnifyingGlassBlocks.map((x) => x.id);
 
@@ -74,5 +75,6 @@ BlockEvents.rightClicked(magnifyingGlassBlockIds, (e) => {
         }
       }
     });
+    e.cancel();
   }
 });
