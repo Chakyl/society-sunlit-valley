@@ -1,20 +1,15 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.0.8-SSV4.0.9
+### v1.0.9-SSV4.0.9
 ^^^
 --- 
-- Updated SSV version
-- Added spawns for Arboliva line
-- Added unique spawn for each of the mastery blocks (Goomy, Pupitar, Feebas, Beldum, and Rotom)
-- Added in-world interactions to some of the cobblemon stones
-- Added Vivichoke dip recipe
-- Added more Dimensional Entity trainers
-- Blaze Tauros now gets milked for steamed milk
-- Fixed milking recipes not all showing
-- Fixed Hoopa Unbound being unobtainable
-- Fixed issues with TM/TRs not showing the correct learnable state
-- Fixed tier 120 bug with trainer (thank you for telling Chakyl)
-- Fixed fighting types not shopping Kousa saplings
+- Added ability to purchase Villager Mystery Gifts once they're received (talk to them once if you've already received one) 
+- Added ability to change Furfrou's hair style using minecraft dye
+- Added more dimensional entities
+- Mystery Gifts now have a 1/1024 chance to be shiny
+- Reduced cost of Mystery Gifts 1 billion -> 500 million
+- Backported cobble berry preserves artisan hopper fix from unreleased SSV4.1.0
+
 ## 1.0.0-SSV4.0.6
 - Added worker system made for Sunlit Cobblemon that allows you to assign Pokemon to work on your farm
 - Added Craft station, a block that allows Pokemon to craft specific items depending on their type
@@ -115,7 +110,19 @@
 - Fixed Smeargle not being ranchable
 - Fixed Flabebe line not producing ranching drops
 - Fixed Hisuian starter pledge chances
-
+## 1.0.5-SSV4.0.9
+- Updated SSV version
+- Added spawns for Arboliva line
+- Added unique spawn for each of the mastery blocks (Goomy, Pupitar, Feebas, Beldum, and Rotom)
+- Added in-world interactions to some of the cobblemon stones
+- Added Vivichoke dip recipe
+- Added more Dimensional Entity trainers
+- Blaze Tauros now gets milked for steamed milk
+- Fixed milking recipes not all showing
+- Fixed Hoopa Unbound being unobtainable
+- Fixed issues with TM/TRs not showing the correct learnable state
+- Fixed tier 120 bug with trainer (thank you for telling Chakyl)
+- Fixed fighting types not shopping Kousa saplings
 ## 1.0.5-SSV4.0.8 
 - Added 2 random TRs per day sold at the ball botique
 - Added Quick Claw -> Razor Claw transmutation and vice versa
@@ -209,19 +216,3 @@
 - Fixed season quest not having the super important client config line
 - Fixed recipe related performance issues on large servers
 
-## 1.0.1-SSV4.0.6
-- Added Flamigo as a ranchable pokemon
-- Tweaked a bunch of cobblemon spawns
-- Fixed lass_anne_00041 trainer being invalid
-- Fixed Ketchup being served too early
-- Fixed Pumpkin fields and Snowy Scrubland having no tags and being Koffing infested
-- Fixed Silicobra, Sandaconda, Bramblin, and Brambleghast not having any spawn locations
-- Fixed Cobblemon EMI missing evo/drops on servers
-- Fixed Public Contract not working on anything except craft station
-- Fixed Gardening Station ranchers not putting milk into facing inventories. This includes milk from a Spidops.
-- Fixed workstation tooltips showing null owners, probably
-
-## Society: Sunlit Valley 4.0.8
-- Auto-Petter now triggers at 7am to avoid hunger debuff
-- Fixed default journeymap configs
-- Fixed season quest not having important info

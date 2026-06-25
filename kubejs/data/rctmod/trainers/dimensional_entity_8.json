@@ -2,16 +2,16 @@
   "displayName": "Dimensional Entity",
   "team": [
     {
-      "species": "cobblemon:toxapex",
-      "gender": "FEMALE",
+      "species": "cobblemon:xerneas",
+      "gender": "GENDERLESS",
       "level": 100,
-      "nature": "cobblemon:bold",
-      "ability": "regenerator",
+      "nature": "cobblemon:modest",
+      "ability": "fairyaura",
       "moveset": [
-        "toxic",
-        "toxicspikes",
-        "poisonjab",
-        "icebeam"
+        "geomancy",
+        "moonblast",
+        "closecombat",
+        "thunder"
       ],
       "ivs": {
         "hp": 31,
@@ -22,27 +22,26 @@
         "speed": 31
       },
       "evs": {
-        "hp": 248,
-        "defence": 152,
-        "speed": 108
+        "special_attack": 252,
+        "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:rocky_helmet",
+      "heldItem": "cobblemon:power_herb",
       "aspects": [
-        "female"
+        "genderless"
       ]
     },
     {
-      "species": "cobblemon:kingambit",
-      "gender": "FEMALE",
+      "species": "cobblemon:urshifurs",
+      "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:rash",
-      "ability": "supremeoverlord",
+      "nature": "cobblemon:bashful",
+      "ability": "unseenfist",
       "moveset": [
-        "kowtowcleave",
-        "swordsdance",
-        "suckerpunch",
-        "lowkick"
+        "aquajet",
+        "surgingstrikes",
+        "closecombat",
+        "uturn"
       ],
       "ivs": {
         "hp": 31,
@@ -58,22 +57,83 @@
         "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:black_glasses",
+      "heldItem": "cobblemon:choice_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:deoxysspeed",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:naive",
+      "ability": "pressure",
+      "moveset": [
+        "knockoff",
+        "psychoboost",
+        "nightshade",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 200,
+        "special_attack": 252,
+        "speed": 56
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:heavy_duty_boots",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:garchomp",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "roughskin",
+      "moveset": [
+        "crunch",
+        "swordsdance",
+        "bulldoze",
+        "dragonclaw"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
       "aspects": [
         "female"
       ]
     },
     {
-      "species": "cobblemon:victini",
-      "gender": "GENDERLESS",
+      "species": "cobblemon:alomomola",
+      "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:adamant",
-      "ability": "victorystar",
+      "nature": "cobblemon:relaxed",
+      "ability": "regenerator",
       "moveset": [
-        "vcreate",
-        "zenheadbutt",
-        "flareblitz",
-        "workup"
+        "chillingwater",
+        "whirlpool",
+        "wish",
+        "playrough"
       ],
       "ivs": {
         "hp": 31,
@@ -85,25 +145,25 @@
       },
       "evs": {
         "hp": 252,
-        "attack": 252
+        "defence": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:muscle_band",
+      "heldItem": "cobblemon:leftovers",
       "aspects": [
-        "genderless"
+        "male"
       ]
     },
     {
-      "species": "cobblemon:fluttermane",
-      "gender": "GENDERLESS",
+      "species": "cobblemon:meowscarada",
+      "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:careful",
-      "ability": "protosynthesis",
+      "nature": "cobblemon:naughty",
+      "ability": "overgrow",
       "moveset": [
-        "mysticalfire",
-        "moonblast",
-        "powergem",
-        "shadowball"
+        "uturn",
+        "flowertrick",
+        "knockoff",
+        "tripleaxel"
       ],
       "ivs": {
         "hp": 31,
@@ -114,72 +174,14 @@
         "speed": 31
       },
       "evs": {
-        "special_attack": 252,
+        "attack": 252,
         "special_defence": 4,
         "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:choice_specs",
+      "heldItem": "cobblemon:heavy_duty_boots",
       "aspects": [
-        "genderless"
-      ]
-    },
-    {
-      "species": "cobblemon:reshiram",
-      "gender": "GENDERLESS",
-      "level": 100,
-      "nature": "cobblemon:quirky",
-      "ability": "turboblaze",
-      "moveset": [
-        "fusionflare",
-        "dragonpulse",
-        "blueflare",
-        "ancientpower"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "special_attack": 252,
-        "speed": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:shell_bell",
-      "aspects": [
-        "genderless"
-      ]
-    },
-    {
-      "species": "cobblemon:basculegion",
-      "gender": "FEMALE",
-      "level": 100,
-      "nature": "cobblemon:mild",
-      "ability": "adaptability",
-      "moveset": [
-        "lastrespects"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "defence": 4,
-        "special_attack": 252,
-        "speed": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:choice_scarf",
-      "aspects": [
-        "female"
+        "male"
       ]
     }
   ],

@@ -28,10 +28,10 @@ ItemEvents.rightClicked("sunlit_cobblemon:mystery_gift", (e) => {
     25,
     0.001
   );
-  
+  let shiny = Math.random() < 1 / 1024;
   player.tell(Component.translatable("sunlit_cobblemon.mystery_gift", Component.translatable(`cobblemon.species.${resolvedPokemon}.name`)).green())
   server.runCommandSilent(
-    `pokegiveother ${player.username} ${resolvedPokemon} originaltrainer=${resolvedOT} ottype=Player pokeball=cherish_ball`
+    `pokegiveother ${player.username} ${resolvedPokemon} originaltrainer=${resolvedOT} ottype=Player ${shiny ? "shiny " : ""} pokeball=cherish_ball`
   );
 });
 

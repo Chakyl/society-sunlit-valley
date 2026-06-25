@@ -90,14 +90,8 @@ const successParticles = (level, block) => {
 };
 
 const itemHasTag = (item, tag) => {
-  let tags = item.getTags().toList();
-  let found = false;
-  tags.forEach((itemTag) => {
-    if (itemTag.toString().includes(tag.slice(1))) {
-      found = true;
-    }
-  });
-  return found;
+  const tagString = tag.startsWith("#") ? tag.substring(1) : tag;
+  return item.hasTag(tagString);
 };
 
 const setQuality = (nbt, stage, itemQuality) => {
@@ -117,10 +111,11 @@ const getCanTakeItems = (
   recipes,
   nbt
 ) => {
+  if (properties.get("working") == "true" || properties.get("mature") == "true") return false;
   let itemCheck = recipe !== undefined;
   if (hasTag) {
     Array.from(recipes.keys()).forEach((key) => {
-      if (key.includes("#")) {
+      if (key.startsWith("#")) {
         if (itemHasTag(item, key)) {
           if (nbt.data.recipe.equals("") || nbt.data.recipe == undefined) {
             nbt.merge({ data: { recipe: key, originalInputs: [] } });
@@ -138,11 +133,7 @@ const getCanTakeItems = (
       }
     });
   }
-  return (
-    itemCheck &&
-    properties.get("working").toLowerCase() === "false" &&
-    properties.get("mature").toLowerCase() === "false"
-  );
+  return itemCheck
 };
 
 global.convertFromLegacy = (recipes, level, block) => {
