@@ -267,12 +267,12 @@ const rawLogs = [
   "minecraft:crimson_stem"
 ]
 const oresToTag = [
-    "etcetera:nether_bismuth_ore",
-    "society:sparkstone_ore",
-    "society:deepslate_sparkstone_ore",
-    "society:iridium_ore",
-    "society:deepslate_iridium_ore",
-  ]
+  "etcetera:nether_bismuth_ore",
+  "society:sparkstone_ore",
+  "society:deepslate_sparkstone_ore",
+  "society:iridium_ore",
+  "society:deepslate_iridium_ore",
+]
 ServerEvents.tags("item", (e) => {
   // Misc tags
   e.add("stardew_fishing:bobbers", "society:needle_bobber");
@@ -407,8 +407,12 @@ ServerEvents.tags("item", (e) => {
   e.add("c:tools/shears", "society:magic_shears");
   e.add("forge:shears", "society:magic_shears");
   // Bulk
-  const vegetableTags = ["c:vegetables", 'diet:vegetables', 'forge:vegetables', 'farm_and_charm:vegetables']
-  vegetableTags.forEach((tag) => {
+  [
+    "c:vegetables",
+    "diet:vegetables",
+    "forge:vegetables",
+    "farm_and_charm:vegetables"
+  ].forEach((tag) => {
     e.remove(tag, 'farm_and_charm:strawberry');
   });
   global.preserves.forEach((preserve) => {
@@ -457,7 +461,16 @@ ServerEvents.tags("item", (e) => {
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
-  ['cluttered:stripped_poplar_log', 'cluttered:stripped_willow_log', 'cluttered:stripped_fluorescent_maple_log', 'cluttered:stripped_sycamore_log', 'cluttered:stripped_flowering_crabapple_log', 'cluttered:stripped_crabapple_log', 'cluttered:stripped_flowering_willow_log', 'minecraft:stripped_pale_oak_log', "minecraft:stripped_pale_oak_log"].forEach((log) => {
+  [
+    "cluttered:stripped_poplar_log",
+    "cluttered:stripped_willow_log",
+    "cluttered:stripped_fluorescent_maple_log",
+    "cluttered:stripped_sycamore_log",
+    "cluttered:stripped_flowering_crabapple_log",
+    "cluttered:stripped_crabapple_log",
+    "cluttered:stripped_flowering_willow_log",
+    "minecraft:stripped_pale_oak_log",
+  ].forEach((log) => {
     e.add("forge:stripped_logs", log);
   });
   [
@@ -610,7 +623,7 @@ ServerEvents.tags("item", (e) => {
 
 ServerEvents.tags("block", (e) => {
   e.add("minecraft:crops", "farmersdelight:tomatoes");
-  const buildingGadgetsDeny = [
+  [
     "society:coin_leaderboard",
     "society:prize_machine",
     "translocators:item_translocator",
@@ -630,10 +643,15 @@ ServerEvents.tags("block", (e) => {
     "brewery:wooden_brewingstation",
     "brewery:copper_brewingstation",
     "brewery:netherite_brewingstation",
-  ];
-  buildingGadgetsDeny.forEach((block) => {
-    e.add("buildinggadgets2:deny", block);
-  });
+    "waystones:purple_sharestone",
+    "waystones:blue_sharestone",
+    "waystones:green_sharestone",
+    "waystones:red_sharestone",
+    "waystones:white_sharestone",
+    "waystones:deepslate_waystone",
+    "waystones:waystone"].forEach((block) => {
+      e.add("buildinggadgets2:deny", block);
+    });
   [
     "refinedstorage:hollow_cover",
     "refinedstorage:cover",
@@ -667,7 +685,16 @@ ServerEvents.tags("block", (e) => {
   oresToTag.forEach((ore) => {
     e.add("forge:ores", ore);
   });
-  ['cluttered:stripped_poplar_log', 'cluttered:stripped_willow_log', 'cluttered:stripped_fluorescent_maple_log', 'cluttered:stripped_sycamore_log', 'cluttered:stripped_flowering_crabapple_log', 'cluttered:stripped_crabapple_log', 'cluttered:stripped_flowering_willow_log', 'minecraft:stripped_pale_oak_log', "minecraft:stripped_pale_oak_log"].forEach((log) => {
+  [
+    "cluttered:stripped_poplar_log",
+    "cluttered:stripped_willow_log",
+    "cluttered:stripped_fluorescent_maple_log",
+    "cluttered:stripped_sycamore_log",
+    "cluttered:stripped_flowering_crabapple_log",
+    "cluttered:stripped_crabapple_log",
+    "cluttered:stripped_flowering_willow_log",
+    "minecraft:stripped_pale_oak_log"
+  ].forEach((log) => {
     e.add("forge:stripped_logs", log);
   });
   [
@@ -759,6 +786,7 @@ ServerEvents.tags("block", (e) => {
     e.add("society:golden_clock_advanced", log);
     e.add("buildinggadgets2:deny", log);
   });
+  e.add("buildinggadgets2:deny", "society:fish_pond");
   const agingCasks = ["society:aging_cask", "society:ancient_cask"];
   agingCasks.forEach((log) => {
     e.add("society:aging_cask", log);
