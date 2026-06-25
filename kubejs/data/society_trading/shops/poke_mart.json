@@ -468,9 +468,9 @@
       },
       "request": {
         "item": "numismatics:prismatic_coin",
-        "count": 64
+        "count": 32
       },
-      "numismatics_cost": 1073741824,
+      "numismatics_cost": 536870912,
       "stage_required": "trainer_lvl_8",
       "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "pmart_mystery_gift_genesect"
@@ -483,9 +483,9 @@
       },
       "request": {
         "item": "numismatics:prismatic_coin",
-        "count": 64
+        "count": 32
       },
-      "numismatics_cost": 1073741824,
+      "numismatics_cost": 536870912,
       "stage_required": "trainer_lvl_8",
       "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "pmart_mystery_gift_diancie"
@@ -498,9 +498,9 @@
       },
       "request": {
         "item": "numismatics:prismatic_coin",
-        "count": 64
+        "count": 32
       },
-      "numismatics_cost": 1073741824,
+      "numismatics_cost": 536870912,
       "stage_required": "trainer_lvl_8",
       "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "pmart_mystery_gift_hoopa"
@@ -513,9 +513,9 @@
       },
       "request": {
         "item": "numismatics:prismatic_coin",
-        "count": 64
+        "count": 32
       },
-      "numismatics_cost": 1073741824,
+      "numismatics_cost": 536870912,
       "stage_required": "trainer_lvl_8",
       "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "pmart_mystery_gift_meltan"
@@ -528,9 +528,9 @@
       },
       "request": {
         "item": "numismatics:prismatic_coin",
-        "count": 64
+        "count": 32
       },
-      "numismatics_cost": 1073741824,
+      "numismatics_cost": 536870912,
       "stage_required": "trainer_lvl_8",
       "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "pmart_mystery_gift_zarude"
@@ -543,12 +543,102 @@
       },
       "request": {
         "item": "numismatics:prismatic_coin",
-        "count": 64
+        "count": 32
       },
-      "numismatics_cost": 1073741824,
+      "numismatics_cost": 536870912,
       "stage_required": "trainer_lvl_8",
       "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "pmart_mystery_gift_manaphy"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"marshadow\", ot: \"banker\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_banker",
+      "unlock_description": "jei.society_trading.banker_mystery_gift",
+      "trade_id": "pmart_mystery_gift_banker"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"magearna\", ot: \"blacksmith\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_blacksmith",
+      "unlock_description": "jei.society_trading.blacksmith_mystery_gift",
+      "trade_id": "pmart_mystery_gift_blacksmith"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"celebi\", ot: \"carpenter\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_carpenter",
+      "unlock_description": "jei.society_trading.carpenter_mystery_gift",
+      "trade_id": "pmart_mystery_gift_carpenter"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"volcanion\", ot: \"fisher\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_fisher",
+      "unlock_description": "jei.society_trading.fisher_mystery_gift",
+      "trade_id": "pmart_mystery_gift_fisher"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"zeraora\", ot: \"market\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_market",
+      "unlock_description": "jei.society_trading.market_mystery_gift",
+      "trade_id": "pmart_mystery_gift_market"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"meloetta\", ot: \"shepherd\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_shepherd",
+      "unlock_description": "jei.society_trading.shepherd_mystery_gift",
+      "trade_id": "pmart_mystery_gift_shepherd"
     }
   ]
 }

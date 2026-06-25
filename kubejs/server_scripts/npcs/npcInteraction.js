@@ -74,10 +74,15 @@ ItemEvents.entityInteracted((e) => {
                 );
             }
             npcData.maxGifted = true
-        } else if (!npcData.mysteryGifted && player.stages.has("trainer_lvl_8")  && Number(npcData.friendship) >= 500) {
+        } else if (player.stages.has("trainer_lvl_8") && Number(npcData.friendship) >= 500) {
+            if (!npcData.mysteryGifted) {
+                global.giveNPCMysteryGift(player, target, server, npcId)
+                npcData.mysteryGifted = true
+            }
+            if (!player.stages.has(`mystery_gift_${npcId}`)) {
+                player.stages.add(`mystery_gift_${npcId}`)
+            }
             // Sunlit Cobblemon
-            global.giveNPCMysteryGift(player, target, server, npcId)
-            npcData.mysteryGifted = true
         } else {
             // Carpenter has two shops so it always needs dialog to choose between the two.
             let dialogNumber;

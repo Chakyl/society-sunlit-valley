@@ -565,7 +565,10 @@ const trainerBuckets = new Map([
       "dimensional_entity_4", 
       "dimensional_entity_5",
       "dimensional_entity_6", 
-      "dimensional_entity_7"
+      "dimensional_entity_7", 
+      "dimensional_entity_8", 
+      "dimensional_entity_9", 
+      "dimensional_entity_10"
     ],
   ],
 ]);
