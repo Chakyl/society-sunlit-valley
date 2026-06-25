@@ -42,12 +42,10 @@ global.handleManagerQuestSubmission = (entity, fishPondPos, attachedPlayer, dela
           quest: false,
         });
 
-        const newMaxPop = increaseStage(max_population, Number(max_population) === 7 ? 3 : 2);
-
         nbt.merge({
           data: {
             quest_id: 0,
-            max_population: newMaxPop,
+            max_population: increaseStage(max_population, Number(max_population) === 7 ? 3 : 2),
           },
         });
         fishPond.setEntityData(nbt);
