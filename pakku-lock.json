@@ -739,6 +739,43 @@
             ]
         },
         {
+            "pakku_id": "swt1rms9KQUlXfyN",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "better-advanced-tooltips-backport"
+            },
+            "name": {
+                "curseforge": "Better Advanced Tooltips Backport"
+            },
+            "id": {
+                "curseforge": "1547351"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "betteradvancedtooltips-1.20.1-1.2.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8167/579/betteradvancedtooltips-1.20.1-1.2.1.jar",
+                    "id": "8167579",
+                    "parent_id": "1547351",
+                    "hashes": {
+                        "sha1": "83b42e4ceb2429ba006aca2410100feef7f0c3f5",
+                        "md5": "eef753ed87f3061cb3a0df6897795488"
+                    },
+                    "required_dependencies": [],
+                    "size": 49615,
+                    "date_published": "2026-05-30T03:14:20.403Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "TAs2DHisMV1AUAew",
             "type": "MOD",
             "side": "CLIENT",
