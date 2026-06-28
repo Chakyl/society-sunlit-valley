@@ -4178,24 +4178,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "emberstextapi-forge-1.20.1-3.0.0-beta.2-all.jar",
+                    "file_name": "emberstextapi-1.4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8235/147/emberstextapi-forge-1.20.1-3.0.0-beta.2-all.jar",
-                    "id": "8235147",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7503/929/emberstextapi-1.4.1.jar",
+                    "id": "7503929",
                     "parent_id": "1345948",
                     "hashes": {
-                        "sha1": "3b2920082361630b664f88e18f072f82eb5d4fbf",
-                        "md5": "a39c1987a01ed6955a19071e0b77f5d3"
+                        "sha1": "306a2c3938246550e9c50fd06a17956e9c20e164",
+                        "md5": "ecb34b9ccaa2dedf869bb9a65d78310b"
                     },
-                    "required_dependencies": [],
-                    "size": 4984359,
-                    "date_published": "2026-06-12T04:30:30.947Z"
+                    "required_dependencies": [
+                        "1320863"
+                    ],
+                    "size": 124384,
+                    "date_published": "2026-01-22T00:41:08.790Z"
                 }
             ]
         },

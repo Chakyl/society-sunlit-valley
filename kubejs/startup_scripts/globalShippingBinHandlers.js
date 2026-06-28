@@ -71,10 +71,6 @@ global.getAttributeMultiplier = (attributes, multiplier) => {
   );
 };
 
-/**
- * TODO replace ListTag with SocietyStages, replace toString().includes() with has()
- * @param {Internal.Stages|Internal.ListTag} stages 
- */
 global.processShippingBinInventory = (
   inventory,
   inventorySlots,
@@ -200,11 +196,14 @@ global.handleShippingBinDebt = (
       newValue = value - totalDebt;
       debtPaid = totalDebt;
       server.runCommandSilent(
-        global.getTopLeftETAQueueCommand(
+        global.getEmbersTextAPICommand(
           player.username,
-          "debt_paid",
+          `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          `<lang key='society.shipping_bin.debt_paid_all' args='${finalName},${global.formatPrice(debtPaid.toFixed())}'>`
+          Text.translatable(
+            "society.shipping_bin.debt_paid_all",
+            global.formatPrice(debtPaid.toFixed())
+          ).toJson()
         )
       );
       global.setDebt(server, playerUUID, 0);
@@ -212,11 +211,14 @@ global.handleShippingBinDebt = (
       debtPaid = value;
       newValue = 0;
       server.runCommandSilent(
-        global.getTopLeftETAQueueCommand(
+        global.getEmbersTextAPICommand(
           player.username,
-          "debt_paid",
+          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          `<lang key='society.shipping_bin.debt_paid' args='${finalName},${global.formatPrice(debtPaid.toFixed())}'>`
+          Text.translatable(
+            "society.shipping_bin.debt_paid",
+            global.formatPrice(debtPaid.toFixed())
+          ).toJson()
         )
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
@@ -298,11 +300,15 @@ global.processValueOutput = (
         let customName = global.getShippingBinName(block.getEntityData().data, true);
         let finalName = customName ? ` ${customName} ` : "";
         server.runCommandSilent(
-          global.getTopLeftETAQueueCommand(
+          global.getEmbersTextAPICommand(
             player.username,
-            "income",
+            `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
             160,
-            `<lang key='society.shipping_bin.goods_sold' args='${finalName},${global.formatPrice(value.toFixed())}'>`
+            Text.translatable(
+              "society.shipping_bin.goods_sold",
+              finalName,
+              global.formatPrice(value.toFixed()),
+            ).toJson()
           )
         );
       }
@@ -360,11 +366,11 @@ global.processValueOutput = (
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        global.getTopLeftETAQueueCommand(
+        global.getEmbersTextAPICommand(
           player.username,
-          "fee",
+          `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
           160,
-          `<lang key='society.shipping_bin.full'>`
+          Text.translatable("society.shipping_bin.full").toJson()
         )
       );
     }
@@ -372,6 +378,7 @@ global.processValueOutput = (
 };
 
 global.cacheShippingBin = (entity) => {
+  const { level, block } = entity;
   const attributeMapping = [
     "shippingbin:crop_sell_multiplier",
     "shippingbin:wood_sell_multiplier",
@@ -384,5 +391,29 @@ global.cacheShippingBin = (entity) => {
     "brine_and_punishment",
     "the_quality_of_the_earth",
   ];
-return global.cacheOwner(entity, stagesToFind, attributeMapping);
+  let binPlayer;
+  level.getServer().players.forEach((p) => {
+    if (p.getUuid().toString() === block.getEntityData().data.owner) {
+      let newAttributes = [];
+      let stages = [];
+      attributeMapping.forEach((attr) => {
+        newAttributes.push({
+          Base: Number(
+            p.nbt.Attributes.filter((obj) => {
+              return obj.Name === attr;
+            })[0]?.Base
+          ),
+          Name: attr,
+        });
+      });
+      stagesToFind.forEach((stage) => {
+        if (p.stages.has(stage)) stages.push(stage);
+      });
+      let nbt = block.getEntityData();
+      nbt.merge({ data: { attributes: newAttributes, stages: stages } });
+      global.setBlockEntityData(block, nbt)
+      binPlayer = p;
+    }
+  });
+  return binPlayer;
 };
