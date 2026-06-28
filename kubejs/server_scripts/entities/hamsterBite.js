@@ -23,11 +23,11 @@ ItemEvents.entityInteracted((e) => {
     if (Math.random() < 0.08) {
       player.attack(20)
       server.runCommandSilent(
-        global.getCenterETAQueueCommand(
+        global.getEmbersTextAPICommand(
           player.username,
-          "error",
-          10,
-          `<lang key='society.hamster.bite'>`
+          `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:60}`,
+          100,
+          Text.translatable("society.hamster.bite").toJson()
         )
       );
     }

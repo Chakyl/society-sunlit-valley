@@ -9,12 +9,7 @@ const breakAxe = (item, server, player) => {
       `playsound minecraft:entity.warden.sonic_boom block @a ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      global.getCenterETAQueueCommand(
-        player.username,
-        "error",
-        240,
-        `<lang key='item.society.dragontooth_axe.no_skill_broken'>`
-      )
+      global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 240, Text.translatable("item.society.dragontooth_axe.no_skill_broken").toJson())
     );
   }
 };
@@ -49,7 +44,7 @@ ItemEvents.firstLeftClicked((e) => {
       .getEntitiesWithin(player.boundingBox.inflate(galaxySmashRadius + 0.5))
       .filter((entity) => entity.isMonster());
     let hammerDamage = player.potionEffects.isActive("minecraft:strength") ? 20 : 15;
-
+    
     damageableMobs.forEach((target) => {
       target.isAttackable() && target.attack(hammerDamage);
       level.spawnParticles(

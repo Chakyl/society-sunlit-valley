@@ -10,11 +10,10 @@ PlayerEvents.loggedIn((e) => {
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);
       server.runCommandSilent(
-        global.getCenterETAQueueCommand(
-          player.username,
-          "spooky",
+        global.getEmbersTextAPICommand(player.username,
+          `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60}`,
           200,
-          `<lang key='society.skull_cavern.fainted'>`
+          Text.translatable("society.skull_cavern.fainted").toJson()
         )
       );
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
