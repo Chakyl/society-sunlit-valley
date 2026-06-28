@@ -1,0 +1,30 @@
+{
+	"id": "mystical_oak_chatter_friendship4_2",
+	"title": "[2] mystical_oak chatter at friendship level: friendship4",
+	"description": "dialog.npc.mystical_oak.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.chatter_friendship4.2.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p mystical_oak"
+			]
+		}
+	]
+}

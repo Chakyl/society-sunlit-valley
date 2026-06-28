@@ -1,0 +1,45 @@
+{
+	"id": "witch_gift_hated_4",
+	"title": "witch introduction",
+	"description": "dialog.npc.witch.gift.hated",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_hated.4.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "hated/witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_hated.4.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "hated/witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

@@ -1,6 +1,6 @@
 {
   "enabled": {
-    "value": "ON"
+    "value": "OFF"
   },
   "showHudFps": {
     "value": "ON"
@@ -96,9 +96,15 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "ok_zoomer:ok_zoomer_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "emberstextapi:immersive_messages": {
       "enabled": {
         "value": "AUTO"
       },
@@ -249,6 +255,12 @@
       "pass": 2
     },
     "minecraft:title_text": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "emberstextapi:legacy_immersive_messages": {
       "enabled": {
         "value": "AUTO"
       },

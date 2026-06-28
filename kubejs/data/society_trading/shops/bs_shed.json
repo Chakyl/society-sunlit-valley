@@ -1,0 +1,208 @@
+{
+	"shop_id": "bs_shed",
+	"name": "shop.society_trading.building_shop.shed",
+	"texture": "dialog:textures/portraits/carpenter",
+	"hidden_from_selector": true,
+	"display_type": "image",
+	"jei_catalyst": {
+		"item": "society:preserves_jar"
+	},
+	"trades": [
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_basic\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_basic\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/basic/shed_basic",
+			"image_description": "portable_blueprints.worn_blueprint.basic_shed.dimensions",
+			"trade_id": "bs_shed_basic"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_alpine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_alpine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/alpine/shed_alpine",
+			"image_description": "portable_blueprints.worn_blueprint.alpine_shed.dimensions",
+			"trade_id": "bs_shed_alpine"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_arid\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_arid\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/arid/shed_arid",
+			"image_description": "portable_blueprints.worn_blueprint.arid_shed.dimensions",
+			"trade_id": "bs_shed_arid"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_bamboo\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_bamboo\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/bamboo/shed_bamboo",
+			"image_description": "portable_blueprints.worn_blueprint.bamboo_shed.dimensions",
+			"trade_id": "bs_shed_bamboo"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_bavarian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_bavarian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/bavarian/shed_bavarian",
+			"image_description": "portable_blueprints.worn_blueprint.bavarian_shed.dimensions",
+			"trade_id": "bs_shed_bavarian"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_cherry\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_cherry\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/cherry/shed_cherry",
+			"image_description": "portable_blueprints.worn_blueprint.cherry_shed.dimensions",
+			"trade_id": "bs_shed_cherry"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_entrana\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_entrana\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/entrana/shed_entrana",
+			"image_description": "portable_blueprints.worn_blueprint.entrana_shed.dimensions",
+			"trade_id": "bs_shed_entrana"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_mason\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_mason\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/mason/shed_mason",
+			"image_description": "portable_blueprints.worn_blueprint.mason_shed.dimensions",
+			"trade_id": "bs_shed_mason"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_prismarine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_prismarine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/prismarine/shed_prismarine",
+			"image_description": "portable_blueprints.worn_blueprint.prismarine_shed.dimensions",
+			"trade_id": "bs_shed_prismarine"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_siberian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_siberian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/siberian/shed_siberian",
+			"image_description": "portable_blueprints.worn_blueprint.siberian_shed.dimensions",
+			"trade_id": "bs_shed_siberian"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_tudor\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_tudor\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/tudor/shed_tudor",
+			"image_description": "portable_blueprints.worn_blueprint.tudor_shed.dimensions",
+			"trade_id": "bs_shed_tudor"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_vibrantown\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_vibrantown\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/vibrantown/shed_vibrantown",
+			"image_description": "portable_blueprints.worn_blueprint.vibrantown_shed.dimensions",
+			"trade_id": "bs_shed_vibrantown"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_floral\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_floral\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/floral/shed_floral",
+			"image_description": "portable_blueprints.worn_blueprint.floral_shed.dimensions",
+			"trade_id": "bs_shed_floral"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_sakura\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_sakura\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "meadow:fire_log",
+				"count": 32
+			},
+			"image": "society:textures/gui/buildings/sakura/shed_sakura",
+			"image_description": "portable_blueprints.worn_blueprint.sakura_shed.dimensions",
+			"trade_id": "bs_shed_sakura"
+		}
+	]
+}

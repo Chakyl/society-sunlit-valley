@@ -238,8 +238,7 @@ global.prizeMachineRewards = [
       "beachparty:chair",
       "beachparty:table",
       "beachparty:beach_chair",
-      "beachparty:deck_chair",
-      "beachparty:radio",
+      "beachparty:deck_chair"
     ],
   },
   {

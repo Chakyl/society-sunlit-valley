@@ -1,0 +1,30 @@
+{
+	"id": "librarian_chatter_friendship3_0",
+	"title": "[0] librarian chatter at friendship level: friendship3",
+	"description": "dialog.npc.librarian.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.chatter_friendship3.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p librarian"
+			]
+		}
+	]
+}

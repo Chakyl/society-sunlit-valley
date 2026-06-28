@@ -1,0 +1,86 @@
+{
+  "enabled": true,
+  "show_chopping_indicator": true,
+  "chopping_indicator_x_offset": 8,
+  "chopping_indicator_y_offset": -8,
+  "drop_loot_for_chopped_blocks": true,
+  "chopping_enabled": true,
+  "sneak_behavior": "INVERT_CHOPPING",
+  "trees_must_have_leaves": true,
+  "chop_in_creative_mode": false,
+  "hytale_like_felling": false,
+  "delay_felling_layers": true,
+  "felling_layer_delay_ticks": 2,
+  "exponential_felling_speedup": false,
+  "max_tree_blocks": 1024,
+  "max_leaves_blocks": 1024,
+  "max_break_leaves_distance": 7,
+  "ignore_persistent_leaves": true,
+  "fell_leaves_strategy": "DECAY",
+  "fell_credit_strategy": "NONE",
+  "damage_tool_per_log": true,
+  "exhaustion_per_log": true,
+  "chop_counting_algorithm": "LINEAR",
+  "chop_count_rounding": "NEAREST",
+  "can_require_more_chops_than_blocks": true,
+  "logarithmic_a": 10.0,
+  "linear_m": 1.0,
+  "linear_b": 0.0,
+  "must_use_correct_tool_for_drops": true,
+  "must_use_fast_breaking_tool": true,
+  "prevent_chopping_on_right_click": false,
+  "prevent_chop_recursion": true,
+  "items_blacklist_or_whitelist": "BLACKLIST",
+  "compat_for_apotheosis": true,
+  "compat_for_silentgear": true,
+  "silentgear_saw_chops": 5,
+  "show_feedback_messages": true,
+  "verbose_api": false,
+  "suppress_vanilla_leaf_sounds_on_fell": false,
+  "choppable_blocks": [
+    "#treeliable:choppables",
+    "#minecraft:logs"
+  ],
+  "choppable_blocks_exceptions": [
+    "minecraft:bamboo",
+    "#dynamictrees:branches",
+    "dynamictrees:trunk_shell"
+  ],
+  "leaves_blocks": [
+    "#treeliable:leaves_like",
+    "#minecraft:leaves"
+  ],
+  "leaves_blocks_exceptions": [],
+  "chopping_items": [
+    "botania:terra_axe",
+    "mekanism:atomic_disassembler",
+    "twilightforest:giant_pickaxe"
+  ],
+  "huge_mushroom_logs": [
+    "#c:mushroom_stems"
+  ],
+  "huge_mushroom_leaves": [
+    "#c:mushroom_caps"
+  ],
+  "huge_fungus_logs": [
+    "#minecraft:crimson_stems",
+    "#minecraft:warped_stems"
+  ],
+  "huge_fungus_leaves": [
+    "#minecraft:wart_blocks",
+    "minecraft:shroomlight"
+  ],
+  "problematic_leaves_trees_logs": [
+    "tropicraft:.*_log(_.*)?",
+    "alexscaves:.*_log",
+    "alexscaves:pewen_wood"
+  ],
+  "problematic_leaves_trees_leaves": [
+    "tropicraft:.*_leaves(_.*)?",
+    "alexscaves:.*_branch",
+    "alexscaves:pewen_pines"
+  ],
+  "leaf_decay_exceptions": [
+    "#spectrum:colored_leaves"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_comment": "block_names: spawns when player breaks a specific block by its registry ID. block_tags: spawns when player breaks any block belonging to a tag. entity_names: spawns when player kills a specific entity by its registry ID. entity_type_tags: spawns when player kills any entity belonging to a tag. chance is a value from 0.0 to 1.0 (e.g. 0.15 = 15%). 'default' key applies to any block/entity not explicitly listed. black_list: prevents spawning even if the block/entity would match a default entry.",
+  "block_names": {
+    "minecraft:clay": {"chance": 0.15},
+    "minecraft:mud": {"chance": 0.10},
+    "default": {"chance": 0.02}
+  },
+  "block_tags": {
+    "minecraft:dirt": {"chance": 0.05}
+  },
+  "entity_names": {
+    "minecraft:frog": {"chance": 0.30},
+    "minecraft:tropical_fish": {"chance": 0.20},
+    "default": {"chance": 0.05}
+  },
+  "entity_type_tags": {
+    "minecraft:aquatic": {"chance": 0.10}
+  },
+  "black_list": {
+    "block_names": ["minecraft:bedrock"],
+    "block_tags": ["minecraft:nether_carver_replaceables"],
+    "entity_names": ["minecraft:ender_dragon"],
+    "entity_type_tags": ["minecraft:skeletons"]
+  }
+}

@@ -63,7 +63,6 @@ ServerEvents.tags("item", (e) => {
     "beachparty:mini_fridge",
     "beachparty:crocs",
     "bakery:bakery_standard",
-    "liltractor:liltractor",
     "bakery:baker_station",
     "netherdepthsupgrade:lava_fishing_rod",
     "create:copper_backtank",

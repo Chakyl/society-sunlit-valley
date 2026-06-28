@@ -1,0 +1,26 @@
+{
+	"id": "mystical_oak_gift_loved_0",
+	"title": "mystical_oak introduction",
+	"description": "dialog.npc.mystical_oak.gift.loved",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.mystical_oak.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.mystical_oak.gift_loved.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "loved/mystical_oak.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

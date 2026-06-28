@@ -162,7 +162,7 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
               );
 
             } else {
-              let newQuest = questContent.length - 1 === quest_id ? 0 : quest_id + 1
+              let newQuest = questContent.length - 1 === Number(quest_id) ? 0 : Number(quest_id) + 1;
               questContent = questContent[newQuest];
               questItem = Item.of(questContent.item).displayName;
               checkedCount = player.stages.has("pond_house_five")

@@ -1,60 +1,14 @@
 {
   "shop_id": "witch",
   "name": "shop.society_trading.witch",
-  "texture": "botania:textures/block/mana_void",
-  "stage_required": "entered_nether",
+  "texture": "dialog:textures/portraits/witch",
+  "stage_required": "invited_witch",
+  "villager_profession": "weaponsmith",
   "jei_catalyst": {
-    "item": "herbalbrews:witch_hat"
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:witch\"}}"
   },
   "trades": [
-    {
-      "offer": {
-        "item": "labels:label",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:spur",
-        "count": 3
-      },
-      "numismatics_cost": 3,
-      "trade_id": "librarian_label_for_spur"
-    },
-    {
-      "offer": {
-        "item": "minecraft:name_tag",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 4
-      },
-      "numismatics_cost": 256,
-      "trade_id": "librarian_name_tag_for_cog"
-    },
-    {
-      "offer": {
-        "item": "gag:labeling_tool",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 2
-      },
-      "numismatics_cost": 1024,
-      "trade_id": "labeling_tool_tag_for_sun"
-    },
-    {
-      "offer": {
-        "item": "minecraft:book",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 3
-      },
-      "numismatics_cost": 24,
-      "trade_id": "librarian_book_for_bevel"
-    },
     {
       "offer": {
         "item": "society:sunlit_crystal",

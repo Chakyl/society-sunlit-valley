@@ -1,0 +1,66 @@
+
+[book]
+	#Author can be changed when signing a book. Default: true
+	changeable_author = true
+
+	[book.book_coloring]
+		#Writable Book (Book and Quill) can be colored like Leather armor. Default: true
+		writable_book_coloring = true
+		#Written Book can be colored like Leather armor. Default: false
+		written_book_coloring = false
+
+	[book.screen]
+		#Scholar two-paged in-hand book view/edit screens will replace vanilla screens. Default: true
+		replace_screens_in_hand = true
+		#Scholar two-paged lectern book view/edit screens will replace vanilla screens. Default: true
+		replace_screens_on_lectern = true
+		#Holding sneak while opening a book screen will show vanilla screen. Default: false
+		sneaking_opens_vanilla_screen = false
+		#Singleplayer game will be paused when book edit/view screen is open.
+		#Default: false, Vanilla: true
+		pause_game = false
+		#Show 'Done' button in the Scholar book screens. Default: false
+		show_done_button = false
+		#Additional tool buttons will be shown in book edit screen.
+		#This setting can be toggled in-game by pressing F1 button (by default) or clicking on the button in top right corner. Initial value: false
+		show_extra_tools = false
+
+[reading]
+	#Holding a book with 'scholar:book_open' component will render the full book model and show a reading animation. Default: true
+	animation = true
+	#Item in the opposite hand will be hidden when the reading pose is active. Default: true
+	hide_offhand_item = true
+
+[literate_mobs]
+	#Chance of the mob spawning with a book in hand.
+	#Range: 0.0 ~ 1.0
+	book_spawn_chance = 0.05
+	#Chance of the book dropping from the mob spawned with a book in hand.
+	#Range: 0.0 ~ 1.0
+	book_drop_chance = 0.5
+	#Chance of the mob reading the book it's holding. Lower value = more time between reads.
+	#Range: 0.0 ~ 1.0
+	book_reading_chance = 0.005
+
+[visuals]
+	#Lectern book rendering reflects the actual book placed on it. Default: true
+	lectern_colored_book = true
+	#Written books have an enchantment glint. Default: false, Vanilla: true
+	written_book_enchantment_glint = false
+
+[tooltip]
+	#Hovering over a slot in a Chiseled Bookshelf will show tooltip of a book that's stored in that slot. Default: true
+	chiseled_bookshelf_tooltip = true
+	#Hovering over a Lectern will show tooltip of a book that's placed on it. Default: true
+	lectern_tooltip = true
+	#Sneaking is required for tooltip to show. Default: false
+	requires_sneak = false
+
+[integration]
+
+	[integration.jei]
+		#Item dyeing recipes for 'minecraft:dyeable' items will be added to JEI. Default: true
+		jei_dyeing_recipes = true
+		#Item dyeing recipes added to JEI will shown only books, ignoring other dyeable items. Default: false
+		jei_dyeing_recipes_only_books = false
+

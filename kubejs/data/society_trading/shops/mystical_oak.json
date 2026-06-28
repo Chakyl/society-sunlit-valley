@@ -1,0 +1,134 @@
+{
+  "shop_id": "mystical_oak",
+  "name": "shop.society_trading.mystical_oak",
+  "texture": "mysticaloaktree:textures/block/wise_oak",
+  "hidden_from_selector": true,
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:mystical_oak\"}}"
+  },
+  "trades": [
+    {
+      "offer": {
+        "item": "etcetera:cotton_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "society:salmonberry",
+        "count": 8
+      },
+      "trade_id": "mystical_oak_salmonberry_for_cotton_seeds"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:zucchini_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "society:boysenberry",
+        "count": 8
+      },
+      "trade_id": "mystical_oak_boysenberry_for_zucchini_seeds"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:broccoli_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "society:cranberry",
+        "count": 16
+      },
+      "trade_id": "mystical_oak_cranberry_for_broccoli_seeds"
+    },
+    {
+      "offer": {
+        "item": "herbalbrews:tea_blossom",
+        "count": 1
+      },
+      "request": {
+        "item": "society:crystalberry",
+        "count": 8
+      },
+      "trade_id": "mystical_oak_crystalberry_for_tea_blossom"
+    },
+    {
+      "offer": {
+        "item": "cluttered:poplar_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "society:dried_alphacene_mushroom",
+        "count": 1
+      },
+      "trade_id": "mystical_oak_dried_alphacene_mushroom_for_poplar_sapling"
+    },
+    {
+      "offer": {
+        "item": "cluttered:crabapple_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "society:dried_toadstool",
+        "count": 1
+      },
+      "trade_id": "mystical_oak_dried_toadstool_for_crabapple_sapling"
+    },
+    {
+      "offer": {
+        "item": "cluttered:sycamore_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "society:dried_glow_shroom",
+        "count":1
+      },
+      "trade_id": "mystical_oak_dried_glow_shroom_for_"
+    },
+    {
+      "offer": {
+        "item": "cluttered:fluorescent_maple_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "society:dried_blue_roundhead",
+        "count": 1
+      },
+      "trade_id": "mystical_oak_dried_blue_roundhead_for_fluorescent_maple_sapling"
+    },
+    {
+      "offer": {
+        "item": "botania:black_lotus",
+        "count": 1
+      },
+      "request": {
+        "item": "society:blackfish_roe",
+        "count": 8
+      },
+      "trade_id": "mystical_oak_blackfish_roe_for_black_lotus"
+    },
+    {
+      "offer": {
+        "item": "botania:blacker_lotus",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_blackfish_roe",
+        "count": 1
+      },
+      "trade_id": "mystical_oak_aged_blackfish_roe_for_blacker_lotus"
+    },
+    {
+      "offer": {
+        "item": "society:alias_moss",
+        "count": 1
+      },
+      "request": {
+        "item": "wildernature:bison_horn",
+        "count": 1
+      },
+      "stage_removed": "alias_moss",
+      "trade_id": "mystical_oak_bison_horn_for_alias_moss"
+    }
+  ]
+}

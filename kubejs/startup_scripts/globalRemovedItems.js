@@ -356,6 +356,7 @@ global.removedItems = [
   "farmlife:sunstreak_burst_poppy",
   "farmlife:rusty_burst_poppy",
   "farmlife:olive_burst_poppy",
+  "beachparty:radio",
   "atmospheric:golden_dragon_fruit_crate",
   "atmospheric:golden_dragon_fruit",
   "farmlife:fancy_burst_poppy",
@@ -531,6 +532,7 @@ global.removedItems = [
   "sophisticatedstorage:advanced_pump_upgrade",
   "sophisticatedstorage:pump_upgrade",
   "quark:blackstone_furnace",
+  "quark:pathfinders_quill",
   "quark:dirty_glass",
   "quark:dirty_glass_pane",
   "candlelight:cooking_pan",
@@ -905,9 +907,12 @@ global.removedItems = [
   "farm_and_charm:water_sprinkler",
   "atmospheric:dragon_fruit_crate",
   "atmospheric:dragon_fruit",
+  "irons_lib:transmog_table",
+  "irons_lib:player_statue"
 ];
 
 global.hiddenItems = [
+  "@displaydelight",
   "society:auto_petter",
   "minecraft:ancient_debris",
   "society:growth_obelisk_upper",

@@ -1,0 +1,45 @@
+{
+	"id": "witch_gift_liked_2",
+	"title": "witch introduction",
+	"description": "dialog.npc.witch.gift.liked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_liked.2.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "liked/witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_liked.2.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "liked/witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}
