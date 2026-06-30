@@ -5,7 +5,7 @@ global.cooking.forEach((dish) => {
         if (dish.item.path.includes(keyword)) category = "dessert"
     });
 
-    ["bottle", "drink", "eggnog", "coffee", "latte", "_tea", "juice", "cider"].forEach((keyword) => {
+    ["bottle", "drink", "eggnog", "coffee", "latte", "_tea", "juice", "cider", "hot_chocolate"].forEach((keyword) => {
         if (dish.item.path.includes(keyword)) category = "drink"
     });
 

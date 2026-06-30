@@ -14,5 +14,23 @@ customer_wait_time = 1000
 #Range: > 20
 customer_order_time = 200
 #List of Minecraft usernames whose skins will be used for spawning customers.
-customer_usernames = ["kanlamari", "witchd", "Chakyl", "Nitbe", "Mimsy34", "meepr_dib", "stillweighting", "MattTheMeow", "JexsamVT", "ProvidenceDaemon", "Irenaiad", "Tumbly", "", "MHF_Steve", "MHF_Alex", "MHF_Herobrine", "MHF_Chicken", "MHF_Cow", "MHF_Pig", "MHF_Sheep", "MHF_Squid", "MHF_Villager", "MHF_Ocelot", "MHF_Blaze", "MHF_CaveSpider", "MHF_Creeper", "MHF_Enderman", "MHF_Ghast", "MHF_Golem", "MHF_LavaSlime", "MHF_PigZombie", "MHF_Skeleton", "MHF_Slime", "MHF_Spider", "MHF_Witch", "MHF_Zombie", "MHF_Cake", "MHF_Chest", "MHF_CoconutB", "MHF_CoconutG", "MHF_Melon", "MHF_OakLog", "MHF_Present1", "MHF_Present2", "MHF_Pumpkin", "MHF_TNT", "MHF_TNT2", "MHF_ArrowUp", "MHF_ArrowDown", "MHF_ArrowLeft", "MHF_ArrowRight", "MHF_Exclamation", "MHF_Question"]
+customer_usernames = ["Tilles",noodlescript","kanlamari", "witchd", "Chakyl", "Nitbe", "Mimsy34", "meepr_dib", "stillweighting", "MattTheMeow", "JexsamVT", "ProvidenceDaemon", "Irenaiad", "Tumbly", "", "MHF_Steve", "MHF_Alex", "MHF_Herobrine", "MHF_Chicken", "MHF_Cow", "MHF_Pig", "MHF_Sheep", "MHF_Squid", "MHF_Villager", "MHF_Ocelot", "MHF_Blaze", "MHF_CaveSpider", "MHF_Creeper", "MHF_Enderman", "MHF_Ghast", "MHF_Golem", "MHF_LavaSlime", "MHF_PigZombie", "MHF_Skeleton", "MHF_Spider", "MHF_Witch", "MHF_Zombie", "MHF_Cake", "MHF_Chest", "MHF_CoconutB", "MHF_CoconutG", "MHF_Melon", "MHF_OakLog", "MHF_Present1", "MHF_Present2", "MHF_Pumpkin", "MHF_TNT", "MHF_TNT2", "MHF_ArrowUp", "MHF_ArrowDown", "MHF_ArrowLeft", "MHF_ArrowRight", "MHF_Exclamation", "MHF_Question"]
+#The item to use as a 1 denomination of currency (e.g.: minecraft:emerald)
+currency_1 = "numismatics:spur"
+#The item to use as a 8 denomination of currency (e.g.: minecraft:emerald)
+currency_8 = "numismatics:bevel"
+#The item to use as a 16 denomination of currency (e.g.: minecraft:emerald)
+currency_16 = "numismatics:sprocket"
+#The item to use as a 64 denomination of currency (e.g.: minecraft:diamond)
+currency_64 = "numismatics:cog"
+#The item to use as a 512 denomination of currency (e.g.: minecraft:emerald)
+currency_512 = "numismatics:crown"
+#The item to use as a 4096 denomination of currency (e.g.: minecraft:emerald)
+currency_4096 = "numismatics:sun"
+#Requires KubeJs and Quality Food. The stage name with the following impact: Quality impacts of non-fish prices are doubled. Can be added to the player using the command e.g, /kubejs stages add playerName the_quality_of_the_earth
+quality_bonus_stage = "the_quality_of_the_earth"
+#Requires KubeJs. The stage name with the following impact: Items with the tag cozy_cafe:pickles are worth 100% more. Can be added to the player using the command e.g, /kubejs stages add playerName brine_and_punishment
+pickle_bonus_stage = "brine_and_punishment"
+#Allows customers to pay to player's bank account directly if Create Numismatics Utils is installed. Set to false if you don't want that to happen.
+numismatics_utils_payment = true
 
