@@ -289,3 +289,39 @@ ServerEvents.tags("block", (e) => {
     e.add("ftbchunks:interact_whitelist", item);
   });
 });
+ServerEvents.tags("block", (e) => {
+  [
+    "minecraft:sand",
+    "minecraft:sea_grass",
+    "minecraft:tall_sea_grass",
+    "minecraft:kelp",
+    "minecraft:kelp_plant",
+    "twigs:seashells",
+    "minecraft:clay",
+    "mineraft:sea_pickle",
+
+  ].forEach((block) => {
+    e.add("society:biodome_water_weak", block);
+  });
+  [
+    "minecraft:prismarine",
+    "minecraft:wet_sponge",
+    "cobblemon:water_stone_ore",
+    "minecraft:dark_prismarine",
+    "#minecraft:corals",
+    "#minecraft:coral_blocks",
+    "#minecraft:coral_plants",
+    "#minecraft:coral_fans",
+  ].forEach((block) => {
+    e.add("society:biodome_water_average", block);
+  });
+  [
+    "minecraft:conduit",
+    "cobblemon:water_stone_block",
+    "minecraft:sea_lantern",
+    "minecraft:prismarine_bricks",
+    "minecraft:turtle_egg",
+  ].forEach((block) => {
+    e.add("society:biodome_water_strong", block);
+  });
+}); 
