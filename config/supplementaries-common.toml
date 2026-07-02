@@ -81,6 +81,21 @@
 		# Default: 0.035
 		# Range: 0.0 ~ 1.0
 		mineshaft_elevator = 0.035
+		#If true, pulleys retract their rope chain over multiple ticks, animating each block via vanilla moving-piston entities. 
+		#Connected blocks become moving blocks (so they push entities, drop sand etc) and multiple pulleys can cooperate to pull a single heavy contraption — useful for elevators. 
+		#If false, the original instant retraction behavior is used.
+		continuous_retraction = true
+		#If true, multiple pulleys firing on the same tick with the same period and push direction can pool their pull budget into one structure resolve — letting two ropes share a wide elevator platform. Only relevant when 'continuous_retraction' is enabled.
+		cooperative_pulleys = true
+		#Maximum number of NON-rope blocks a single pulley can drag (the anchor and anything sticky-attached to it). Rope segments don't count toward this. Cooperating pulleys pool their budgets — two pulleys can pull twice this many blocks together.
+		# Default: 8
+		# Range: 1 ~ 128
+		pull_limit = 8
+		#Ticks to wait between unit pulls when continuous_retraction is enabled. 
+		#Lower = faster pulley. Minimum 2 ticks because each animation takes that long to play out — going lower has no effect.
+		# Default: 4
+		# Range: 2 ~ 100
+		pull_interval = 4
 
 	[redstone.dispenser_minecart]
 		enabled = true
@@ -693,6 +708,14 @@
 		death_marker = "WITH_COMPASS"
 		#Makes blocks tagged as 'tinted_on_map' use their tint color. This allows for accurate biome colors for water and grass as well as other custom block that use any tint
 		tinted_blocks_on_maps = true
+		#If Quark is installed adventurer maps will be replaced by adventurer quills. These will not lag the server when generating
+		quill_adventurer_maps = true
+		#If Quark is installed replaces buried treasure and mansion maps with their equivalent quill form. This removes the lag spike they create when generating
+		quill_vanilla_maps = true
+		#Miminum search radius for quill. Used to incrase the radius of vanilla searches. For reference buried treasures are at 50 and locate is at 100 chunks
+		# Default: 75
+		# Range: 10 ~ 600
+		min_search_radius = 75
 
 		[tweaks.map_tweaks.random_adventurer_maps]
 			#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
@@ -776,3 +799,11 @@
 		compass_right_click = false
 		#Allow these features to work in dimensions like nether or end where normally clocks don't work
 		works_in_unnatural_dimensions = false
+
+	[tweaks.piston_tweaks]
+		#If true, pistons can push blocks that have a block entity (e.g. chests, furnaces). Blocks whose push reaction is BLOCK are still immovable regardless of this setting.
+		push_block_entities = true
+		#If true, adjacent pistons facing the same direction can pool their 12-block push budget to move structures larger than a single piston could handle alone (e.g. two side-by-side pistons pushing a 24-block slime contraption). Only triggers when a single piston's vanilla resolve would fail.
+		cooperative_pistons = true
+		#If true, pushing an empty cauldron into a water or lava source (with a piston or a pulley) fills it with that fluid, instead of leaving it empty. Also tops up cauldrons being moved.
+		moved_cauldron_filling = true

@@ -1,7 +1,7 @@
 [blocks_limit]
 	#--------------------------------------------------------------------------
 	#The count limit of blocks that are used in block entities. The first para is count limit and the second para is stabilize para.
-	blocks_limit = [["create:deployer", 256, 100], ["create:mechanical_drill", 256, 100], ["create:mechanical_roller", 64, 100], ["minecraft:dirt", 2048, 10000], ["create:linear_chassis", 2048, -100], ["minecraft:netherrack", 2048, 5000], ["minecraft:stone", 2048, 4000], ["minecraft:deepslate", 2048, 4000], ["minecraft:end_stone", 2048, 4000], ["minecraft:white_wool", 2048, 80], ["create:item_vault", 2048, 360], ["metalbarrels:obsidian_barrel", 2048, 1800], ["metalbarrels:diamond_barrel", 2048, 1800], ["metalbarrels:crystal_barrel", 2048, 1800], ["metalbarrels:netherite_barrel", 2048, 2000], ["metalbarrels:gold_barrel", 2048, 1100], ["metalbarrels:iron_barrel", 2048, 800], ["metalbarrels:copper_barrel", 2048, 700], ["minecraft:barrel", 2048, 400], ["minecraft:chest", 2048, 800], ["twilightforest:twilight_oak_chest", 2048, 800], ["twilightforest:canopy_chest", 2048, 800], ["twilightforest:mangrove_chest", 2048, 800], ["twilightforest:dark_chest", 2048, 800], ["twilightforest:time_chest", 2048, 800], ["twilightforest:transformation_chest", 2048, 800], ["twilightforest:mining_chest", 2048, 800], ["twilightforest:sorting_chest", 2048, 800], ["ae2:smooth_sky_stone_chest", 2048, 800], ["quark:ancient_chest", 2048, 800], ["quark:azalea_chest", 2048, 800], ["quark:blossom_chest", 2048, 800], ["quark:oak_chest", 2048, 800], ["quark:spruce_chest", 2048, 800], ["quark:birch_chest", 2048, 800], ["quark:jungle_chest", 2048, 800], ["quark:acacia_chest", 2048, 800], ["quark:dark_oak_chest", 2048, 800], ["quark:crimson_chest", 2048, 800], ["quark:mangrove_chest", 2048, 800], ["quark:cherry_chest", 2048, 800]]
+	blocks_limit = [["create:deployer", 256, 100], ["create:mechanical_drill", 256, 100], ["create:mechanical_roller", 64, 100], ["minecraft:dirt", 2048, 10000], ["create:linear_chassis", 2048, -100], ["minecraft:netherrack", 2048, 5000], ["minecraft:stone", 2048, 4000], ["minecraft:deepslate", 2048, 4000], ["minecraft:end_stone", 2048, 4000], ["minecraft:white_wool", 2048, 80], ["create:item_vault", 2048, 360], ["minecraft:barrel", 2048, 400], ["minecraft:chest", 2048, 800], ["quark:ancient_chest", 2048, 800], ["quark:azalea_chest", 2048, 800], ["quark:blossom_chest", 2048, 800], ["quark:oak_chest", 2048, 800], ["quark:spruce_chest", 2048, 800], ["quark:birch_chest", 2048, 800], ["quark:jungle_chest", 2048, 800], ["quark:acacia_chest", 2048, 800], ["quark:dark_oak_chest", 2048, 800], ["quark:crimson_chest", 2048, 800], ["quark:mangrove_chest", 2048, 800], ["quark:cherry_chest", 2048, 800]]
 	#--------------------------------------------------------------------------
 	#Default on this config will ignore one entity crush at first time.
 	#This can keep miner not broken at the first time crush for helping player.
@@ -51,13 +51,13 @@
 	"contraption cluster scan radius" = 96.0
 	#--------------------------------------------------------------------------
 	#The local notify radius for nearby actionbar hints and overlay sync.
-	# Default: 96.0
+	# Default: 32.0
 	# Range: 1.0 ~ 512.0
 	"contraption cluster local notify radius" = 96.0
 	#--------------------------------------------------------------------------
 	#The search radius used to list nearby players inside the global cluster-blocked message.
 	#This does not change who receives the global message.
-	# Default: 96.0
+	# Default: 32.0
 	# Range: 1.0 ~ 512.0
 	"contraption cluster global nearby players radius" = 96.0
 	#--------------------------------------------------------------------------
@@ -111,3 +111,10 @@
 	# Default: 204800
 	# Range: > 0
 	"block entity max stabilize para" = 204800
+	#--------------------------------------------------------------------------
+	#Protect vanilla minecarts from lava and fire damage, and reduce non-player incoming damage to 25%.
+	#Player attacks keep vanilla damage so players can still break minecarts normally.
+	"minecart protection" = true
+	#--------------------------------------------------------------------------
+	#Enable global cluster-blocked chat notifications. Nearby hints still work when this is false.
+	"contraption cluster global notify enabled" = false

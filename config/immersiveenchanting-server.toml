@@ -1,13 +1,13 @@
 [bookshelves]
-	#The number of blocks in the X-position that the enchanting table can detect chiseled bookshelves. Each 'row' can hold up to 96 books. If you have many enchantments, you may need to increase this value to provide more space.
+	#The number of blocks in the X-level that the enchanting table can detect chiseled bookshelves. Each 'row' can hold up to 96 books. If you have many enchantments, you may need to increase this value to provide more space.
 	# Default: 2
 	# Range: 2 ~ 8
 	bookshelfSearchX = 2
-	#The number of blocks in the Y-position that the enchanting table can detect chiseled bookshelves. Each 'row' can hold up to 96 books. If you have many enchantments, you may need to increase this value to provide more space.
+	#The number of blocks in the Y-level that the enchanting table can detect chiseled bookshelves. Each 'row' can hold up to 96 books. If you have many enchantments, you may need to increase this value to provide more space.
 	# Default: 3
 	# Range: 1 ~ 8
 	bookshelfSearchY = 3
-	#The number of blocks in the Z-position that the enchanting table can detect chiseled bookshelves. Each 'row' can hold up to 96 books. If you have many enchantments, you may need to increase this value to provide more space.
+	#The number of blocks in the Z-level that the enchanting table can detect chiseled bookshelves. Each 'row' can hold up to 96 books. If you have many enchantments, you may need to increase this value to provide more space.
 	# Default: 2
 	# Range: 2 ~ 8
 	bookshelfSearchZ = 2
@@ -15,14 +15,20 @@
 [enchantingtable]
 	#Allow enchantments to be removed in the enchanting table.
 	allowEnchantmentRemoval = true
-	#If enabled, enchantments that have not been found will be obfuscated in the enchanting table.
+	#If enabled, enchantments that have not been found will have be obfuscated in the enchanting table.
 	obfuscateLockedEnchantments = false
-	#If enabled, Ancient Books are no longer required to unlock enchantments at the enchanting table. Enchantments still cost experience and materials as usual.
-	disableAncientBookRequirement = true
+	#Allow ancient books to be replicated in the enchanting table.
+	allowReplicate = true
+	#Allow ancient books to be transmuted in the enchanting table.
+	allowTransmute = true
 
 [enchantedbooks]
-	#Choose whether enchanted books should be removed completely or replaced with ancient books. Ancient books still spawn as normal.
-	#Allowed Values: REPLACE, REMOVE
-	enchantedBookLootMode = "REPLACE"
-	#If enabled, vanilla enchanted books will not appear in villager trades.
-	disableEnchantedBookTrades = true
+	#If enabled, vanilla enchanted books will spawn normally in loot tables such as chests.
+	enableEnchantedBookLootTables = false
+	#If enabled, vanilla enchanted books will appear in villager trades.
+	#Note: You must /reload for changes to take effect for this option!
+	enableEnchantedBookTrades = false
+
+[ancientbooks]
+	#If enabled, Ancient Books are no longer required to unlock enchantments at the enchanting table. Enchantments still cost experience and materials as usual.
+	disableAncientBookRequirement = false

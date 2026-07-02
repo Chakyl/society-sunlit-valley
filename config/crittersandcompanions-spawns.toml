@@ -1,0 +1,212 @@
+# Critters and Companions - Spawn Configuration
+# Each [[entity_name]] block defines one biome spawn entry for that entity.
+#
+# biome  : A biome ID (e.g. "minecraft:forest") or a biome tag prefixed with # (e.g. "#minecraft:is_forest")
+# weight : Spawn weight relative to other mobs in the same category. Set to 0 to disable.
+# min    : Minimum number of entities spawned per group.
+# max    : Maximum number of entities spawned per group.
+#
+# You can freely add, remove, or modify entries. Custom biomes and tags are supported.
+# Delete this file to regenerate it with the mod defaults on the next start.
+
+# crittersandcompanions:leaf_insect
+[[leaf_insect]]
+biome  = "#c:is_jungle"
+weight = 14
+min    = 1
+max    = 1
+[[leaf_insect]]
+biome  = "#c:is_forest"
+weight = 14
+min    = 1
+max    = 1
+
+# crittersandcompanions:red_panda
+[[red_panda]]
+biome  = "#c:is_jungle"
+weight = 8
+min    = 1
+max    = 2
+
+# crittersandcompanions:jumping_spider
+[[jumping_spider]]
+biome  = "#c:is_jungle"
+weight = 2
+min    = 1
+max    = 1
+[[jumping_spider]]
+biome  = "#c:is_forest"
+weight = 2
+min    = 1
+max    = 1
+[[jumping_spider]]
+biome  = "#c:is_lush"
+weight = 2
+min    = 1
+max    = 1
+
+# crittersandcompanions:ferret
+[[ferret]]
+biome  = "#c:is_forest"
+weight = 3
+min    = 2
+max    = 3
+[[ferret]]
+biome  = "#c:is_plains"
+weight = 4
+min    = 2
+max    = 3
+
+# crittersandcompanions:sea_bunny
+[[sea_bunny]]
+biome  = "minecraft:ocean"
+weight = 16
+min    = 1
+max    = 2
+[[sea_bunny]]
+biome  = "minecraft:deep_ocean"
+weight = 16
+min    = 1
+max    = 2
+[[sea_bunny]]
+biome  = "minecraft:warm_ocean"
+weight = 32
+min    = 1
+max    = 4
+[[sea_bunny]]
+biome  = "minecraft:lukewarm_ocean"
+weight = 16
+min    = 1
+max    = 4
+[[sea_bunny]]
+biome  = "minecraft:deep_lukewarm_ocean"
+weight = 16
+min    = 1
+max    = 4
+
+# crittersandcompanions:dumbo_octopus
+[[dumbo_octopus]]
+biome  = "minecraft:ocean"
+weight = 4
+min    = 1
+max    = 1
+[[dumbo_octopus]]
+biome  = "minecraft:deep_ocean"
+weight = 4
+min    = 1
+max    = 1
+[[dumbo_octopus]]
+biome  = "minecraft:warm_ocean"
+weight = 8
+min    = 1
+max    = 1
+[[dumbo_octopus]]
+biome  = "minecraft:lukewarm_ocean"
+weight = 6
+min    = 1
+max    = 1
+[[dumbo_octopus]]
+biome  = "minecraft:deep_lukewarm_ocean"
+weight = 6
+min    = 1
+max    = 1
+
+# crittersandcompanions:otter
+[[otter]]
+biome  = "minecraft:river"
+weight = 1
+min    = 3
+max    = 5
+
+# crittersandcompanions:koi_fish
+[[koi_fish]]
+biome  = "minecraft:river"
+weight = 4
+min    = 2
+max    = 5
+
+# crittersandcompanions:dragonfly
+[[dragonfly]]
+biome  = "minecraft:river"
+weight = 7
+min    = 1
+max    = 1
+
+# crittersandcompanions:shima_enaga
+[[shima_enaga]]
+biome  = "#c:is_snowy"
+weight = 3
+min    = 2
+max    = 3
+
+# crittersandcompanions:ladybug
+[[ladybug]]
+biome  = "#c:is_forest"
+weight = 6
+min    = 1
+max    = 3
+[[ladybug]]
+biome  = "#c:is_lush"
+weight = 6
+min    = 1
+max    = 3
+
+# crittersandcompanions:stag_beetle
+[[stag_beetle]]
+biome  = "#c:is_forest"
+weight = 4
+min    = 1
+max    = 2
+[[stag_beetle]]
+biome  = "#c:is_lush"
+weight = 4
+min    = 1
+max    = 2
+
+# crittersandcompanions:roly_poly
+[[roly_poly]]
+biome  = "#c:is_forest"
+weight = 5
+min    = 1
+max    = 3
+[[roly_poly]]
+biome  = "#c:is_lush"
+weight = 5
+min    = 1
+max    = 3
+
+# crittersandcompanions:snail
+[[snail]]
+biome  = "#c:is_forest"
+weight = 5
+min    = 1
+max    = 2
+[[snail]]
+biome  = "#c:is_lush"
+weight = 5
+min    = 1
+max    = 2
+
+# crittersandcompanions:stick_bug
+[[stick_bug]]
+biome  = "#c:is_forest"
+weight = 4
+min    = 1
+max    = 2
+[[stick_bug]]
+biome  = "#c:is_lush"
+weight = 4
+min    = 1
+max    = 2
+
+# crittersandcompanions:weevil
+[[weevil]]
+biome  = "#c:is_forest"
+weight = 4
+min    = 1
+max    = 3
+[[weevil]]
+biome  = "#c:is_lush"
+weight = 4
+min    = 1
+max    = 3

@@ -1,7 +1,7 @@
 [effects]
 	#Disable all motion-category effects (wave, bounce, shake...). Accessibility.
 	reduceMotion = false
-	#Caps neon/glow quality. 1=fast, 2=balanced, 3=quality.
+	#Caps neon/glow radius to limit render cost. 1=fast (<=3px), 2=balanced (<=6px), 3=full (<=8px).
 	# Default: 3
 	# Range: 1 ~ 3
 	maxNeonQuality = 3

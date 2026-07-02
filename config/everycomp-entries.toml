@@ -55,6 +55,9 @@
 			apple_fruit = true
 			pear_fruit = true
 
+		[types.leaves_type.minecraft]
+			pale_oak = true
+
 		[types.wood_type.quark]
 			azalea = true
 			ancient = true
@@ -90,11 +93,28 @@
 			walnut = true
 			willow = true
 
+		[types.wood_type.minecraft]
+			pale_oak = true
+
 		[types.cake.veggiesdelight]
 			carrot_cake = true
 
 		[types.cake.nomansland]
 			fruit_cake = true
+
+		[types.lantern.unusualfishmod]
+			nautical_lamp = true
+
+		[types.lantern.twigs]
+			paper_lantern = true
+			allium_paper_lantern = true
+			blue_orchid_paper_lantern = true
+			crimson_roots_paper_lantern = true
+			dandelion_paper_lantern = true
+			torchflower_paper_lantern = true
+
+		[types.lantern.meadow]
+			oil_lantern = true
 
 #Disables specific entries
 [entries]

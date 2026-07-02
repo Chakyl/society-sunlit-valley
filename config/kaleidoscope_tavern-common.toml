@@ -3,3 +3,15 @@
 	PressingTubDropContentsOnNonJuiceable = true
 	#Whether to enable infinite lava from the tap. If enabled, the tap will provide infinite lava when attached to a lava cauldron.
 	InfiniteLavaFromTap = true
+
+["vanilla bottle placement"]
+	#Whether vanilla water bottles can be placed by shift-right-clicking a block.
+	WaterBottle = true
+	#Whether vanilla honey bottles can be placed by shift-right-clicking a block.
+	HoneyBottle = true
+	#Whether vanilla potion bottles can be placed by shift-right-clicking a block.
+	PotionBottle = true
+	#Whether vanilla dragon's breath bottles can be placed by shift-right-clicking a block.
+	DragonBreathBottle = true
+	#Whether vanilla experience bottles can be placed by shift-right-clicking a block.
+	ExperienceBottle = true
