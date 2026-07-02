@@ -129,3 +129,33 @@
             }
         })
     }
+
+    const colors = [
+    "white",
+    "light_gray",
+    "gray",
+    "black",
+    "brown",
+    "red",
+    "orange",
+    "yellow",
+    "lime",
+    "green",
+    "cyan",
+    "light_blue",
+    "blue",
+    "purple",
+    "magenta",
+    "pink",
+]
+
+function autoworkPaintingHelper(event, inputTag, outputFormatter) {
+    colors.forEach((color) => {
+        event.custom({
+            type: "autowork:painting",
+            dye: { item: `minecraft:${color}_dye` },
+            input: { tag: inputTag},
+            result: { id: outputFormatter(color) }
+        })
+    })
+}
