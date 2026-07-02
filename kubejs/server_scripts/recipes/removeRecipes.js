@@ -1,8 +1,15 @@
 ServerEvents.recipes((event) => {
 
-  const removedTypes = [];
+  const removedTypes = [
+    'autowork:enriching'
+  ];
 
-  const removedIDs = [];
+  const removedIDs = [
+    'passablefoliage:enchanted_book',
+    'autowork:crushing/migrated/recipe_7',
+    'autowork:crushing/migrated/recipe_8',
+    'autowork:bulk_smelting/log_to_coal'
+  ];
 
   const removedInputs = [];
   

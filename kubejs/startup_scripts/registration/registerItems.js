@@ -1140,4 +1140,6 @@ StartupEvents.registry("item", (e) => {
   
   e.create("society:placeholder")
 
+  e.create("society:redstone_component")
+  e.create("society:advanced_redstone_component")
 });

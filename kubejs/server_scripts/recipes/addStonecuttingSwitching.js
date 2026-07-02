@@ -6,6 +6,9 @@ ServerEvents.tags('item', event => {
     event.add('society:storage_upgrade_basic', ['sophisticatedstorage:smoking_upgrade', 'sophisticatedstorage:smelting_upgrade', 'sophisticatedstorage:void_upgrade', 'sophisticatedstorage:compacting_upgrade', 'sophisticatedstorage:feeding_upgrade', 'sophisticatedstorage:magnet_upgrade', 'sophisticatedstorage:filter_upgrade', 'sophisticatedstorage:pickup_upgrade', 'sophisticatedstorage:upgrade_base', 'sophisticatedstorage:hopper_upgrade', 'sophisticatedstorage:compression_upgrade', 'sophisticatedstorage:jukebox_upgrade', 'sophisticatedstorage:stack_downgrade_tier_3', 'sophisticatedstorage:stack_downgrade_tier_2', 'sophisticatedstorage:stack_downgrade_tier_1', 'sophisticatedstorage:stonecutter_upgrade', 'sophisticatedstorage:crafting_upgrade', 'sophisticatedstorage:blasting_upgrade'])
     event.add('society:storage_upgrade_diamond', ['sophisticatedstorage:diamond_storage_upgrade', 'sophisticatedstorage:advanced_pickup_upgrade', 'sophisticatedstorage:advanced_filter_upgrade', 'sophisticatedstorage:advanced_magnet_upgrade', 'sophisticatedstorage:advanced_feeding_upgrade', 'sophisticatedstorage:advanced_compacting_upgrade', 'sophisticatedstorage:advanced_void_upgrade', 'sophisticatedstorage:auto_smelting_upgrade', 'sophisticatedstorage:auto_smoking_upgrade', 'sophisticatedstorage:auto_blasting_upgrade', 'sophisticatedstorage:advanced_jukebox_upgrade', 'sophisticatedstorage:advanced_hopper_upgrade'])
     event.add('society:storage_upgrade_prismatic', ['sophisticatedstorage:prismatic_storage_upgrade', 'sophisticatedstorage:stack_upgrade_omega_tier'])
+
+    event.add('society:redstone_component', ["society:redstone_component", 'create:powered_toggle_latch', 'create:powered_latch', 'minecraft:repeater', 'minecraft:comparator', 'quark:redstone_randomizer', 'autowork:andgate'])
+    event.add('society:advanced_redstone_component', ["society:advanced_redstone_component", 'create:pulse_timer', 'create:pulse_repeater', 'create:pulse_extender'])
 })
 
 ServerEvents.recipes((event) => {
@@ -24,4 +27,7 @@ function stonecuttingSwitching(switchingTag) {
     stonecuttingSwitching('#society:storage_upgrade_basic')
     stonecuttingSwitching('#society:storage_upgrade_diamond')
     stonecuttingSwitching('#society:storage_upgrade_prismatic')
+
+    stonecuttingSwitching('#society:redstone_component')
+    stonecuttingSwitching('#society:advanced_redstone_component')
 })

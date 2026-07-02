@@ -58,8 +58,7 @@ ServerEvents.tags('item', event => {
 })
 
 const nukedEnchantments = [
-    'minecraft:mending',
-    // 'minecraft:unbreaking'
+    'minecraft:unbreaking'
 ]
 
 ServerEvents.tags('enchantment', event => {
