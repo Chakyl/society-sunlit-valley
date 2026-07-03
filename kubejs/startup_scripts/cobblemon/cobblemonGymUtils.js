@@ -513,7 +513,6 @@ const trainerBuckets = new Map([
       "ace_swimmer_torrent",
       "cue_ball_camron_00fb",
       "picnicker_alma_01d2",
-      "ace_trainer_runan_007c",
       "ace_trainer_nick_0055",
       "professor_oak_00d2",
       "gym_crusher_salad",
@@ -615,7 +614,6 @@ global.getStreakRewards = (player, pos, winStreak) => {
     reward.spawn();
   });
   if (Math.random() <= 0.15) {
-    player.tell("rolled_rare")
     rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_streak/${rewardTier}_plus_rare`).toArray();
     rolledLoot.forEach((item) => {
       reward = player.level.createEntity("minecraft:item");

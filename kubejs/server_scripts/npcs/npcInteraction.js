@@ -74,7 +74,7 @@ ItemEvents.entityInteracted((e) => {
                 );
             }
             npcData.maxGifted = true
-        } else if (player.stages.has("trainer_lvl_8") && Number(npcData.friendship) >= 500) {
+        } else if (player.stages.has("trainer_lvl_8") && Number(npcData.friendship) >= 500 && !player.stages.has(`mystery_gift_${npcId}`)) {
             if (!npcData.mysteryGifted) {
                 global.giveNPCMysteryGift(player, target, server, npcId)
                 npcData.mysteryGifted = true
