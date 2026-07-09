@@ -631,6 +631,25 @@
             }
         },
         {
+            "id": "sulfur_caves-turtonator-1",
+            "pokemon": "turtonator",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "35-50",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
             "id": "sulfur_caves-clodsire-1",
             "pokemon": "clodsire",
             "presets": [
