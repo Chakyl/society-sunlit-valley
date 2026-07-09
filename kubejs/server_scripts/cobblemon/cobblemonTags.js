@@ -325,3 +325,42 @@ ServerEvents.tags("block", (e) => {
     e.add("society:biodome_water_strong", block);
   });
 }); 
+ServerEvents.tags("block", (e) => {
+  [
+    "minecraft:stone",
+    "minecraft:netherrack",
+    "minecraft:blackstone",
+    "minecraft:deepslate",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:cobblestone",
+    "mineceraft:cobbled_deepslate",
+    "minecraft:campfire",
+    "minecraft:soul_campfire",
+    "supplementaries:firepit",
+  ].forEach((block) => {
+    e.add("society:biodome_fire_weak", block);
+  });
+  [
+    "supplementaries:ash_bricks",
+    "minecraft:basalt",
+    "minecraft:nether_bricks",
+    "minecraft:smooth_basalt",
+    "cobblemon:fire_stone_ore",
+    "decorative_blocks:brazier",
+    "decorative_blocks:soul_brazier",
+    "society:fire_quartz",
+    "minecraft:charcoal_block",
+  ].forEach((block) => {
+    e.add("society:biodome_fire_average", block);
+  });
+  [
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "minecraft:magma_block",
+    "cobblemon:fire_stone_block",
+  ].forEach((block) => {
+    e.add("society:biodome_fire_strong", block);
+  });
+}); 

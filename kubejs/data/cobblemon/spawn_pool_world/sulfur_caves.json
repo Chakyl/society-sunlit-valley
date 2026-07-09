@@ -1,0 +1,653 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "sulfur_caves-ekans-1",
+            "pokemon": "ekans",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-20",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-ekans-2",
+            "pokemon": "ekans",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "15-30",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-arbok-1",
+            "pokemon": "arbok",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "25-35",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-growlithe-1",
+            "pokemon": "growlithe",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-arcanine-1",
+            "pokemon": "arcanine",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "25-35",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-salandit-1",
+            "pokemon": "salandit",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-20",
+            "weight": 50.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-salazzle-1",
+            "pokemon": "salazzle",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 20.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-grimer-1",
+            "pokemon": "grimer",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-20",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-muk-1",
+            "pokemon": "muk",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-gastly-1",
+            "pokemon": "gastly",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-haunter-1",
+            "pokemon": "haunter",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "20-40",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-gengar-1",
+            "pokemon": "gengar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "45-60",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-alolan-marowak-1",
+            "pokemon": "marowak alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "40-50",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-koffing-1",
+            "pokemon": "koffing",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 50.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-weezing-2",
+            "pokemon": "weezing galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-40",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-weezing-1",
+            "pokemon": "weezing",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-40",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-wooper-1",
+            "pokemon": "wooper paldean",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-corsola-1",
+            "pokemon": "corsola galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-numel-1",
+            "pokemon": "numel",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-camerupt-1",
+            "pokemon": "camerupt",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-50",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-torkoal-1",
+            "pokemon": "torkoal",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-50",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-stunky-1",
+            "pokemon": "stunky",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-skuntank-1",
+            "pokemon": "skuntank",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-40",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-skorupi-1",
+            "pokemon": "skorupi",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-20",
+            "weight": 8.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-drapion-1",
+            "pokemon": "drapion",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-45",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-croagunk-1",
+            "pokemon": "croagunk",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 7.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-toxicroak-1",
+            "pokemon": "toxicroak",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "40-55",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-toxel-1",
+            "pokemon": "toxel",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-toxtricity-1",
+            "pokemon": "toxtricity",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "20-30",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-varoom-1",
+            "pokemon": "varoom",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-20",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-revavroom-1",
+            "pokemon": "revavroom",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "20-30",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-glimmet-1",
+            "pokemon": "glimmet",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-glimmora-1",
+            "pokemon": "glimmora",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "35-50",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        },
+        {
+            "id": "sulfur_caves-clodsire-1",
+            "pokemon": "clodsire",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-45",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:sulfur_caves"
+                ]
+            }
+        }
+    ]
+}
