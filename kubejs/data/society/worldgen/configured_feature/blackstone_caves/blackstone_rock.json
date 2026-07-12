@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 148,
+          "data": {
+            "Name": "society:blackstone_boulder"
+          }
+        },
+        {
+          "weight": 20,
+          "data": {
+            "Name": "minecraft:deepslate_gold_ore"
+          }
+        },
+        {
+          "weight": 15,
+          "data": {
+            "Name": "minecraft:deepslate_redstone_ore"
+          }
+        },
+        {
+          "weight": 10,
+          "data": {
+            "Name": "oreganized:deepslate_lead_ore"
+          }
+        },
+        {
+          "weight": 10,
+          "data": {
+            "Name": "society:deepslate_sparkstone_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:magma_geode_node"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:fire_quartz"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "society:omni_geode_node"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "oreganized:deepslate_silver_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:deepslate_iridium_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "society:skull_cavern_teleporter"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:grimwood_supply_crate"
+          }
+        }
+      ]
+    }
+  }
+}

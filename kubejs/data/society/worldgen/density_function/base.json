@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:mul",
+    "argument1": -1,
+    "argument2": {
+      "type": "minecraft:shifted_noise",
+      "noise": "society:stripe",
+      "xz_scale": 2.220446049250313e-16,
+      "y_scale": 0,
+      "shift_x": 1.01,
+      "shift_y": 0,
+      "shift_z": 1.01
+    }
+  }
+}

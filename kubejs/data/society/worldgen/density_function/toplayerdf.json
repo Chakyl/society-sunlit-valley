@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "minecraft:y",
+  "min_inclusive": 504,
+  "max_exclusive": 516,
+  "when_in_range": 2,
+  "when_out_of_range": "society:biomedf"
+}

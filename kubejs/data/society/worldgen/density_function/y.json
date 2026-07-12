@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "minecraft:y",
+  "min_inclusive": 0,
+  "max_exclusive": 8,
+  "when_in_range": 2,
+  "when_out_of_range": {
+    "": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:abs",
+        "argument": {
+          "type": "minecraft:add",
+          "argument1": -8,
+          "argument2": {
+            "type": "minecraft:abs",
+            "argument": {
+              "type": "minecraft:add",
+              "argument1": -16,
+              "argument2": {
+                "type": "minecraft:abs",
+                "argument": {
+                  "type": "minecraft:add",
+                  "argument1": -32,
+                  "argument2": {
+                    "type": "minecraft:abs",
+                    "argument": {
+                      "type": "minecraft:add",
+                      "argument1": -64,
+                      "argument2": {
+                        "type": "minecraft:abs",
+                        "argument": {
+                          "type": "minecraft:add",
+                          "argument1": -128,
+                          "argument2": {
+                            "type": "minecraft:abs",
+                            "argument": {
+                              "type": "minecraft:add",
+                              "argument1": -256,
+                              "argument2": "minecraft:y"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "points": [
+        {
+          "location": 0,
+          "derivative": -0.5,
+          "value": 2
+        },
+        {
+          "location": 7,
+          "derivative": 0,
+          "value": 0
+        }
+      ]
+    },
+    "type": "minecraft:spline"
+  }
+}

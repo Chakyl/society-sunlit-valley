@@ -1,0 +1,30 @@
+{
+  "feature": {
+    "config": {},
+    "type": "quark:glow_shrooms_extras"
+  },
+  "placement": [
+    {
+      "count": 200,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "min_inclusive": {
+          "absolute": 500
+        },
+        "max_inclusive": {
+          "absolute": 512
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

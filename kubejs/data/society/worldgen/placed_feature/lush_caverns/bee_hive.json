@@ -1,0 +1,29 @@
+{
+  "feature": "society:lush_caverns/bee_hive",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 40
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": -10,
+      "y_spread": 0
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 400
+        },
+        "max_inclusive": {
+          "absolute": 460
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

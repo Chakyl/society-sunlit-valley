@@ -1,0 +1,27 @@
+{
+  "feature": "society:desert_fault/red_arid_sand_patch_floor",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 104
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 142
+        },
+        "max_inclusive": {
+          "absolute": 282
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

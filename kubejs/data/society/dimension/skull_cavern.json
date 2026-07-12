@@ -1,0 +1,120 @@
+{
+  "type": "society:skull_cavern",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "society:cavern_top",
+          "parameters": {
+            "temperature": [-1, 1],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [1.8, 2],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:skull_caves",
+          "parameters": {
+            "temperature": [-1, 0],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [1.5, 1.8],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:lush_caverns",
+          "parameters": {
+            "temperature": [0, 1],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [1.5, 1.8],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:frozen_caves",
+          "parameters": {
+            "temperature": [-1, 0],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [1, 1.5],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:frozen_maelstrom",
+          "parameters": {
+            "temperature": [0, 1],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [1, 1.5],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:desert_caves",
+          "parameters": {
+            "temperature": [-1, 0],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [0.5, 1],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:desert_fault",
+          "parameters": {
+            "temperature": [0, 1],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [0.5, 1],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:blackstone_caves",
+          "parameters": {
+            "temperature": [-1, 0],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [0, 0.5],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "society:umbra_barrens",
+          "parameters": {
+            "temperature": [0, 1],
+            "humidity": [0, 0],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [0, 0.5],
+            "offset": 0
+          }
+        }
+      ]
+    },
+    "settings": "society:skull_cavern"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:range_choice",
+  "input": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:interpolated",
+      "argument": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:noise",
+          "noise": "society:cave",
+          "xz_scale": 1,
+          "y_scale": 1.5
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": "society:x",
+              "points": [
+                {
+                  "location": -4,
+                  "derivative": 0.15,
+                  "value": -0.5
+                },
+                {
+                  "location": 2,
+                  "derivative": 0,
+                  "value": 0
+                },
+                {
+                  "location": 4,
+                  "derivative": 0.2,
+                  "value": 0.7
+                }
+              ]
+            }
+          },
+          "argument2": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": "society:z",
+              "points": [
+                {
+                  "location": -4,
+                  "derivative": 0.15,
+                  "value": -0.5
+                },
+                {
+                  "location": 2,
+                  "derivative": 0,
+                  "value": 0
+                },
+                {
+                  "location": 4,
+                  "derivative": 0.2,
+                  "value": 0.7
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "argument2": "society:y"
+  },
+  "min_inclusive": -10,
+  "max_exclusive": -0.4,
+  "when_in_range": 0,
+  "when_out_of_range": 1
+}

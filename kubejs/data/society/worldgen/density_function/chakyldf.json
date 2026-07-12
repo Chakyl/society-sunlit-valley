@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "minecraft:y",
+  "min_inclusive": 504,
+  "max_exclusive": 512,
+  "when_in_range": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:noise",
+      "noise": "minecraft:noodle",
+      "xz_scale": 6,
+      "y_scale": 2
+    },
+    "argument2": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": 504,
+      "to_y": 512,
+      "from_value": 1,
+      "to_value": -1
+    }
+  },
+  "when_out_of_range": "society:test"
+}

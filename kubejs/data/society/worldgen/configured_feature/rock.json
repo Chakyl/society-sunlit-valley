@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 163,
+          "data": {
+            "Name": "society:stone_boulder"
+          }
+        },
+        {
+          "weight": 25,
+          "data": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "weight": 20,
+          "data": {
+            "Name": "minecraft:copper_ore"
+          }
+        },
+        {
+          "weight": 15,
+          "data": {
+            "Name": "minecraft:iron_ore"
+          }
+        },
+        {
+          "weight": 13,
+          "data": {
+            "Name": "create:zinc_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:lapis_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:geode_node"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:earth_crystal"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:oak_supply_crate"
+          }
+        }
+      ]
+    }
+  }
+}

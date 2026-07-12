@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:range_choice",
+      "input": {
+        "type": "minecraft:add",
+        "argument1": "society:base",
+        "argument2": {
+          "type": "minecraft:shifted_noise",
+          "noise": "society:stripe",
+          "xz_scale": 3.469446951953614e-18,
+          "y_scale": 0,
+          "shift_x": 1.01,
+          "shift_y": 0,
+          "shift_z": 0.99
+        }
+      },
+      "min_inclusive": 0,
+      "max_exclusive": 5e-324,
+      "when_in_range": 1,
+      "when_out_of_range": -1
+    },
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": 2,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:range_choice",
+          "input": {
+            "type": "minecraft:add",
+            "argument1": "society:base",
+            "argument2": {
+              "type": "minecraft:shifted_noise",
+              "noise": "society:stripe",
+              "xz_scale": 6.938893903907228e-18,
+              "y_scale": 0,
+              "shift_x": 1.01,
+              "shift_y": 0,
+              "shift_z": 0.99
+            }
+          },
+          "min_inclusive": 0,
+          "max_exclusive": 5e-324,
+          "when_in_range": 1,
+          "when_out_of_range": -1
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": 1,
+          "argument2": {
+            "type": "minecraft:mul",
+            "argument1": {
+              "type": "minecraft:range_choice",
+              "input": {
+                "type": "minecraft:add",
+                "argument1": "society:base",
+                "argument2": {
+                  "type": "minecraft:shifted_noise",
+                  "noise": "society:stripe",
+                  "xz_scale": 1.3877787807814457e-17,
+                  "y_scale": 0,
+                  "shift_x": 1.01,
+                  "shift_y": 0,
+                  "shift_z": 0.99
+                }
+              },
+              "min_inclusive": 0,
+              "max_exclusive": 5e-324,
+              "when_in_range": 1,
+              "when_out_of_range": -1
+            },
+            "argument2": {
+              "type": "minecraft:range_choice",
+              "input": {
+                "type": "minecraft:add",
+                "argument1": "society:base",
+                "argument2": {
+                  "type": "minecraft:shifted_noise",
+                  "noise": "society:stripe",
+                  "xz_scale": 2.7755575615628914e-17,
+                  "y_scale": 0,
+                  "shift_x": 1.01,
+                  "shift_y": 0,
+                  "shift_z": 0.99
+                }
+              },
+              "min_inclusive": 0,
+              "max_exclusive": 5e-324,
+              "when_in_range": 1,
+              "when_out_of_range": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

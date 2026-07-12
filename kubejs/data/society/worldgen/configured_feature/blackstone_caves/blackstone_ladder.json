@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:all_of",
+      "predicates": [
+        {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [0, -1, 0],
+              "blocks": "minecraft:air"
+            },
+            {
+              "type": "minecraft:solid"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:not",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:bedrock"
+          }
+        }
+      ]
+    },
+    "prioritize_tip": false,
+    "layers": [
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 148,
+              "data": {
+                "Name": "society:blackstone_boulder"
+              }
+            },
+            {
+              "weight": 20,
+              "data": {
+                "Name": "minecraft:deepslate_gold_ore"
+              }
+            },
+            {
+              "weight": 15,
+              "data": {
+                "Name": "minecraft:deepslate_redstone_ore"
+              }
+            },
+            {
+              "weight": 10,
+              "data": {
+                "Name": "oreganized:deepslate_lead_ore"
+              }
+            },
+            {
+              "weight": 10,
+              "data": {
+                "Name": "society:deepslate_sparkstone_ore"
+              }
+            },
+            {
+              "weight": 3,
+              "data": {
+                "Name": "oreganized:deepslate_silver_ore"
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "society:deepslate_iridium_ore"
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "society:grimwood_supply_crate"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "height": 256,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "farmersdelight:rope",
+            "Properties": {
+              "east": "false",
+              "north": "flase",
+              "south": "false",
+              "west": "false"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

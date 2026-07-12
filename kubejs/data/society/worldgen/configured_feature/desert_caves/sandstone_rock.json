@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 163,
+          "data": {
+            "Name": "society:sandstone_boulder"
+          }
+        },
+        {
+          "weight": 20,
+          "data": {
+            "Name": "minecraft:gold_ore"
+          }
+        },
+        {
+          "weight": 10,
+          "data": {
+            "Name": "oreganized:lead_ore"
+          }
+        },
+        {
+          "weight": 6,
+          "data": {
+            "Name": "minecraft:redstone_ore"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:diamond_ore"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "society:sparkstone_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:omni_geode_node"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "oreganized:silver_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:magma_geode_node"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:fire_quartz"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "society:iridium_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:palm_supply_crate"
+          }
+        }
+      ]
+    }
+  }
+}

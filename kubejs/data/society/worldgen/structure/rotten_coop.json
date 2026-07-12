@@ -1,0 +1,17 @@
+{
+
+  "type": "moogs_structures:moogs_structures_generic_jigsaw_structure",
+  "start_pool": "society:rotten_coop",
+  "size": 1,
+  "biomes": "#mvs:has_structure/overworld_biomes",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "terrain_height_radius_check": 2,
+  "allowed_terrain_height_range": 3,
+
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "start_height": {
+    "absolute": 0
+  },
+  "spawn_overrides": {}
+}
