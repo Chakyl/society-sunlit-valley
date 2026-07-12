@@ -2,5 +2,21 @@
   {
     "action": "remove",
     "pattern": "/^autowork:.*enrich.*/"
+  },
+  {
+    "action": "remove",
+    "pattern": "/^irons_spellbooks:.+?helmet/"
+  },
+  {
+    "action": "remove",
+    "pattern": "/^irons_spellbooks:.+?chestplate/"
+  },
+  {
+    "action": "remove",
+    "pattern": "/^irons_spellbooks:.+?leggings/"
+  },
+  {
+    "action": "remove",
+    "pattern": "/^irons_spellbooks:.+?boots/"
   }
 ]

@@ -96,6 +96,9 @@
 		[types.wood_type.minecraft]
 			pale_oak = true
 
+		[types.wood_type.darkerdepths]
+			petrified = true
+
 		[types.cake.veggiesdelight]
 			carrot_cake = true
 
@@ -115,6 +118,9 @@
 
 		[types.lantern.meadow]
 			oil_lantern = true
+
+		[types.lantern.darkerdepths]
+			glowshroom_lantern = true
 
 #Disables specific entries
 [entries]
