@@ -21,7 +21,7 @@
         "type": "minecraft:enderman",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 140
+        "weight": 100
       },
       {
         "type": "minecraft:shulker",
@@ -31,9 +31,27 @@
       },
       {
         "type": "minecraft:phantom",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 60
+      },
+      {
+        "type": "creaturefeature:blitz",
         "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
+        "minCount": 2,
+        "weight": 80
+      },
+      {
+        "type": "creaturefeature:eeper",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 80
+      },
+      {
+        "type": "creaturefeature:nothing",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 20
       }
     ],
     "creature": [],
