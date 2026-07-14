@@ -137,7 +137,17 @@
 		# Show entity heads on minimap
 		# Default: true
 		entity_heads: true
-		entity_icon: { }
+		entity_icon: {
+			"minecraft:evoker": true
+			"minecraft:blaze": true
+			"minecraft:husk": true
+			"minecraft:shulker": true
+			"crittersandcompanions:roly_poly": true
+			"minecraft:bat": true
+			"minecraft:enderman": true
+			"minecraft:creeper": true
+			"minecraft:phantom": true
+		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
 		# Default: 0.5
