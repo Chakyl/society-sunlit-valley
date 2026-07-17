@@ -1,0 +1,15 @@
+#.
+#Which corner custom toasts are anchored to. 0 = top left, 1 = top right, 2 = bottom right, 3 = bottom left. Default: 1
+# Default: 1
+# Range: 0 ~ 3
+toastCorner = 1
+#.
+#Horizontal offset for custom toasts in pixels, measured inward from the anchored edge. Positive values move inward, negative values move outward. Default: 10
+# Default: 10
+# Range: -10000 ~ 10000
+toastOffsetX = 10
+#.
+#Vertical offset for custom toasts in pixels, measured inward from the anchored edge. Positive values move inward, negative values move outward. Default: 10
+# Default: 10
+# Range: -10000 ~ 10000
+toastOffsetY = 10

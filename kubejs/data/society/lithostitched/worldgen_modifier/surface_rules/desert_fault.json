@@ -1,0 +1,17 @@
+{
+  "type": "lithostitched:add_surface_rule",
+  "levels": ["society:skull_cavern"],
+  "surface_rule": {
+    "type": "minecraft:condition",
+    "if_true": {
+      "type": "minecraft:biome",
+      "biome_is": ["society:desert_fault"]
+    },
+    "then_run": {
+      "type": "minecraft:block",
+      "result_state": {
+        "Name": "society:skull_arid_sandstone"
+      }
+    }
+  }
+}
