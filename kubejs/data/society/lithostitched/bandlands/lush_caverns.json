@@ -1,0 +1,19 @@
+{
+  "base": {
+    "Name": "society:skull_granite"
+  },
+  "bands": [
+    {
+      "type": "lithostitched:repeating",
+      "interval": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      },
+      "size": 1,
+      "state": {
+        "Name": "society:skull_veridium"
+      }
+    }
+  ]
+}

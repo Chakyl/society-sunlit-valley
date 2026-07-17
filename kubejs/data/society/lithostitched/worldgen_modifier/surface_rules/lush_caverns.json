@@ -8,10 +8,8 @@
       "biome_is": ["society:lush_caverns"]
     },
     "then_run": {
-      "type": "minecraft:block",
-      "result_state": {
-        "Name": "society:skull_stone"
-      }
+      "type": "lithostitched:bandlands",
+      "options": "society:lush_caverns"
     }
   }
 }
