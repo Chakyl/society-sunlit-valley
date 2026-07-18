@@ -69,10 +69,17 @@
   "features": [
     [
       "society:blackstone_caves/blackstone_ladder",
-      "society:blackstone_caves/blackstone_rock"
+      "society:blackstone_caves/blackstone_rock",
+      "darkerdepths:large_molten_pillar"
     ],
-    ["minecraft:lake_lava_underground"],
-    ["minecraft:monster_room", "minecraft:monster_room_deep"],
+    [],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep",
+      "darkerdepths:molten_pool",
+      "darkerdepths:molten_spring",
+      "darkerdepths:scorcher_placer"
+    ],
     [],
     [],
     [
@@ -87,8 +94,7 @@
     ["minecraft:spring_water"],
     [
       "minecraft:glow_lichen",
-      "society:blackstone_caves/magma_patch_floor",
-      "society:blackstone_caves/basalt_patch_floor",
+      "society:blackstone_caves/darkslate_patch_floor",
       "minecraft:lake_lava_underground"
     ],
     [],

@@ -10,11 +10,14 @@ StartupEvents.registry("block", (event) => {
             .tagBlock("society:skull_block");
     };
     createSkullVariant("arid_sandstone", "atmospheric:block/arid_sandstone_top");
+    createSkullVariant("asurine", "create:block/palettes/stone_types/natural/asurine_0")
     createSkullVariant("blackstone", "minecraft:block/blackstone");
+    createSkullVariant("calcite", "minecraft:block/calcite");
     createSkullVariant("crimsite", "create:block/palettes/stone_types/natural/crimsite_0")
+    createSkullVariant("dusky_myalite", "quark:block/dusky_myalite");
     createSkullVariant("end_stone", "minecraft:block/end_stone");
     createSkullVariant("granite", "minecraft:block/granite")
-    createSkullVariant("limestone", "create:block/block/palettes/stone_types/limestone")
+    createSkullVariant("limestone", "create:block/palettes/stone_types/limestone")
     createSkullVariant("permafrost", "quark:block/permafrost");
     createSkullVariant("sandstone", "minecraft:block/sandstone_top");
     createSkullVariant("scoria", "create:block/palettes/stone_types/scoria")
