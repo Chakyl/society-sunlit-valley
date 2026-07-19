@@ -45,5 +45,6 @@ StartupEvents.registry("block", (event) => {
     }
 
     createBiomeOres("granite", "minecraft:block/granite", 100)
+    createBiomeOres("veridium", "create:block/palettes/stone_types/natural/veridium_0", 100)
 
 })
