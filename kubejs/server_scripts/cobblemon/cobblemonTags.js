@@ -325,7 +325,6 @@ ServerEvents.tags("block", (e) => {
     e.add("society:biodome_water_strong", block);
   });
   [
-    "minecraft:stone",
     "minecraft:netherrack",
     "minecraft:blackstone",
     "minecraft:deepslate",
