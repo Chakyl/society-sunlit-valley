@@ -324,8 +324,6 @@ ServerEvents.tags("block", (e) => {
   ].forEach((block) => {
     e.add("society:biodome_water_strong", block);
   });
-}); 
-ServerEvents.tags("block", (e) => {
   [
     "minecraft:stone",
     "minecraft:netherrack",
