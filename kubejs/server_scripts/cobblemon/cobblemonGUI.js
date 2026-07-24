@@ -57,7 +57,7 @@ PlayerEvents.tick((e) => {
     const { player, level } = e;
     const curios = player.nbt.ForgeCaps["curios:inventory"];
 
-    if (player.age % 200 == 0 && global.getHasCurio(player, "sunlit_cobblemon:poke_radar")) {
+    if (player.age % 200 == 0 && player.isCuriosEquipped("sunlit_cobblemon:poke_radar")) {
 
         let rarityMatch = /{rarity:"([^"]*)"/.exec(curios.toString());
         let mons = [];

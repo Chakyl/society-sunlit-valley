@@ -1,4 +1,5 @@
 // Priority: 1000
+const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi")
 global.getDay = (level) =>  Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 
 /**
@@ -26,9 +27,3 @@ global.getFacingPlusOffset = (facing, pos, offset) => {
       return pos.offset(offset, 0, 0);
   }
 };
-
-global.getHasCurio = (player, item) => {
-  const curios = player.nbt.ForgeCaps["curios:inventory"]
-  if (!curios) return false;
-  return curios.toString().includes(item)
-} 

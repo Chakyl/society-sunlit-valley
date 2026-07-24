@@ -64,7 +64,7 @@ const catchPokemon = (caughtMon, level, hook, server, player, nether) => {
     );
   } else {
     if (caughtMon.variant && String(caughtMon.variant).includes("magikarp_jump")) player.tell(Text.translatable("sunlit_cobblemon.special_magikarp").gold());
-    if (Math.random() < 0.04 && global.getHasCurio(player, 'sunlit_cobblemon:swampy_mystica_branch')) {
+    if (Math.random() < 0.04 && player.isCuriosEquipped('sunlit_cobblemon:swampy_mystica_branch')) {
       let lakeLegendaries = ["mesprit", "azelf", "uxie"]
       if (global.hasPartyPokemon(player, lakeLegendaries, 3)) {
         let blockToSet = level.getBlock(level.getBlock(hook.getPos()).getPos().above());

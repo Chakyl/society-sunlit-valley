@@ -453,11 +453,11 @@ const trainerBuckets = new Map([
       "ranger_beth_0255",
       "black_belt_hugh_022a",
       "swimmerf_amara_0222",
-    ],
-  ],
-  [
-    100,
-    [
+    ]
+  ]
+]);
+
+const eliteModeEasy = [
       "ace_trainer_bowie",
       "swimmerf_maria_0223",
       "swimmerm_garrett_0226",
@@ -468,11 +468,6 @@ const trainerBuckets = new Map([
       "tuber_amira_0207",
       "aroma_lady_nikki_020b",
       "dragon_tamer_ramiro_0134",
-    ],
-  ],
-  [
-    105,
-    [
       "ace_trainer_maclachlan",
       "ace_trainer_zephira",
       "beauty_nadine",
@@ -487,12 +482,7 @@ const trainerBuckets = new Map([
       "bug_catcher_tainy",
       "psychic_margaret",
       "pokefan_unove",
-      "super_nerd_leroy"
-    ],
-  ],
-  [
-    110,
-    [
+      "super_nerd_leroy",
       "camper_justin_01dd",
       "super_nerd_miguel_00aa",
       "picnicker_caitlin_009b",
@@ -504,12 +494,7 @@ const trainerBuckets = new Map([
       "channeler_rachel_0093",
       "gym_crusher_foxxy",
       "ace_trainer_janny_00af",
-      "ace_trainer_barry_0058"
-    ],
-  ],
-  [
-    115,
-    [
+      "ace_trainer_barry_0058",
       "ace_swimmer_torrent",
       "cue_ball_camron_00fb",
       "picnicker_alma_01d2",
@@ -518,11 +503,8 @@ const trainerBuckets = new Map([
       "gym_crusher_salad",
       "gym_rat_king",
       "bird_keeper_glizzy"
-    ],
-  ],
-  [
-    120,
-    [
+]
+const eliteModeHard = [
       "gym_crusher_cruelty",
       "reggie",
       "professor_oak_00c8",
@@ -531,11 +513,6 @@ const trainerBuckets = new Map([
       "raging_blue",
       "punk_girl_providence4",
       "gym_crusher_twine",
-    ],
-  ],
-  [
-    125,
-    [
       "gym_obliterator_blaze",
       "bird_legend_arctic",
       "bird_legend_zap",
@@ -543,20 +520,10 @@ const trainerBuckets = new Map([
       "gym_obliterator_warp",
       "gym_obliterator_cofh",
       "gym_obliterator_artemis",
-    ],
-  ],
-  [
-    130,
-    [
       "gym_obliterator_warlord",
       "gym_obliterator_origin",
       "gym_obliterator_tao",
-      "gym_obliterator_primal"
-    ],
-  ],
-  [
-    135,
-    [
+      "gym_obliterator_primal",
       "dimensional_entity_0",
       "dimensional_entity_1", 
       "dimensional_entity_2",
@@ -568,10 +535,7 @@ const trainerBuckets = new Map([
       "dimensional_entity_8", 
       "dimensional_entity_9", 
       "dimensional_entity_10"
-    ],
-  ],
-]);
-
+]
 global.getRandomTrainer = (levelBucket) => {
   const trainerBucket = trainerBuckets.get(levelBucket);
   // const trainer = trainerBucket[rnd(0, trainerBucket.length)];

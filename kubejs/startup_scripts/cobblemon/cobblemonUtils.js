@@ -31,7 +31,7 @@ global.getPartyLevel = (player) => {
   return levelAverage;
 };
 
-global.hasScope = (entity) => entity.nbt.ForgeCaps["curios:inventory"].toString().includes("sunlit_cobblemon:silph_scope");
+global.hasScope = (player) => player.isCuriosEquipped("sunlit_cobblemon:silph_scope");
 
 global.hasScopeSurprises = (entity) => entity.nbt.ForgeCaps["curios:inventory"].toString().includes("\"sunlit_cobblemon:silph_scope\",tag:{surprise:1b}");
 
