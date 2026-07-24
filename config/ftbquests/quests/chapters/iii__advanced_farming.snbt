@@ -1316,9 +1316,9 @@
 		{
 			dependencies: ["66E1AC55824DF1D9"]
 			description: [
-				"Entering the Nether will catch the eye of a &6Witch&r!"
+				"{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.description1}"
 				""
-				"You'll be able to purchase special magical equipment for a high price, most noteworthy being &6Crystals of Regret&r."
+				"{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.description2}"
 			]
 			icon: "society:ribbit_hut_block"
 			id: "3DE36C9FBCB58800"
@@ -1329,7 +1329,7 @@
 				table_id: 369102599118070839L
 				type: "choice"
 			}]
-			subtitle: "Inviting Evelyne"
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.subtitle}"
 			tasks: [
 				{
 					id: "2DA4C5918EDD2952"
@@ -1356,11 +1356,11 @@
 					}
 					id: "47A5E6018A6FB99F"
 					stage: "invited_witch"
-					title: "Invited the Witch"
+					title: "{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.task.5162785442142075295.title}"
 					type: "gamestage"
 				}
 			]
-			title: "Magic in the Valley"
+			title: "{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.title}"
 			x: -1.5d
 			y: 2.0d
 		}

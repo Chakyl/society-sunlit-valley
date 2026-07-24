@@ -2191,9 +2191,9 @@
 				"61501449BF31B773"
 			]
 			description: [
-				"By now your storage situation may be getting dire. Thankfully the &6Librarian&r villager sells tools for sorting your base out."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.description1}"
 				""
-				"At the end of every season, you'll also have access to the &6Book fair&r, a special shop that sells different skill books."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.description2}"
 			]
 			icon: "minecraft:bookshelf"
 			id: "42C8E1F0D9A5B2BD"
@@ -2204,7 +2204,7 @@
 				table_id: 9032317954688779283L
 				type: "choice"
 			}]
-			subtitle: "Welcoming Veronica"
+			subtitle: "{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.subtitle}"
 			tasks: [
 				{
 					id: "1FA1D3740CCD0A8D"
@@ -2217,7 +2217,7 @@
 							}
 						}
 					}
-					title: "Invited the Librarian"
+					title: "{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.task.2279335381810612877.title}"
 					type: "item"
 				}
 				{

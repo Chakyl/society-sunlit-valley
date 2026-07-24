@@ -179,9 +179,9 @@
 		{
 			dependencies: ["7037A26BF990653E"]
 			description: [
-				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description2}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description1}"
 				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description3}"
+				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description2}"
 			]
 			icon: "minecraft:fletching_table"
 			id: "41C453E806763C4F"
@@ -1793,9 +1793,9 @@
 				"6A94BB4CB99D814E"
 			]
 			description: [
-				"The &6Trader&r is willing to move into your town after noticing your work in the Skull Cavern!"
+				"{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.description1}"
 				""
-				"Unlike most other shops, money has no value here. You'll need to trade specific items to afford the trader's wares..."
+				"{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.description2}"
 			]
 			hide_dependent_lines: true
 			hide_text_until_complete: false
@@ -1808,7 +1808,7 @@
 				table_id: 8921602476353446055L
 				type: "choice"
 			}]
-			subtitle: "Welcoming Carlos"
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.subtitle}"
 			tasks: [
 				{
 					id: "0944E1D3F203821B"
@@ -1835,11 +1835,11 @@
 					}
 					id: "48A5EF6D1BB8647A"
 					stage: "invited_trader"
-					title: "Invite the Trader"
+					title: "{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.task.5234853393783612538.title}"
 					type: "gamestage"
 				}
 			]
-			title: "Bartering?"
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.title}"
 			x: -3.0d
 			y: 10.5d
 		}

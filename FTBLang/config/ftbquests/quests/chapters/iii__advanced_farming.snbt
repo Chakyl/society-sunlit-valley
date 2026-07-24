@@ -289,7 +289,7 @@
 			id: "1AA78CF8A14DEE76"
 			rewards: [{
 				id: "5A8820C7C1720E99"
-				item: "farmersdelight:basket"
+				item: "farmersdelight:bamboo_basket"
 				type: "item"
 			}]
 			tasks: [{
@@ -1312,6 +1312,57 @@
 			title: "{ftbquests.chapter.iii__advanced_farming.quest263CCA4D2EAF2629.title}"
 			x: 5.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["66E1AC55824DF1D9"]
+			description: [
+				"{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.description1}"
+				""
+				"{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.description2}"
+			]
+			icon: "society:ribbit_hut_block"
+			id: "3DE36C9FBCB58800"
+			min_required_tasks: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D016D7DF3355B6A"
+				table_id: 369102599118070839L
+				type: "choice"
+			}]
+			subtitle: "{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.subtitle}"
+			tasks: [
+				{
+					id: "2DA4C5918EDD2952"
+					item: {
+						Count: 1
+						id: "society:invitation"
+						tag: {
+							type: {
+								id: "society:witch"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "society:villager"
+						tag: {
+							type: {
+								id: "society:witch"
+							}
+						}
+					}
+					id: "47A5E6018A6FB99F"
+					stage: "invited_witch"
+					title: "{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.task.5162785442142075295.title}"
+					type: "gamestage"
+				}
+			]
+			title: "{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.title}"
+			x: -1.5d
+			y: 2.0d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"
