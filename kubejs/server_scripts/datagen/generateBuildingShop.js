@@ -11,18 +11,19 @@
 // ];
 
 // const villagerfarmBuildingTypes = [
-//     { type: "carpenter", price: 2, name: "Carpenter Home", catalyst: "sawmill:sawmill" },
-//     { type: "blacksmith", price: 2, name: "Blacksmith Home", catalyst: "minecraft:anvil" },
-//     { type: "shepherd", price: 2, name: "Shepherd Home", catalyst: "society:feeding_trough" },
-//     { type: "market", price: 2, name: "Market Home", catalyst: "minecraft:composter" },
-//     { type: "fisher", price: 2, name: "Fisher Home", catalyst: "aquaculture:worm_farm" },
-//     { type: "banker", price: 3, name: "Banker Home", catalyst: "numismatics:bank_terminal" },
-//     { type: "witch", price: 4, name: "Witch Home", catalyst: 'society:crystal_of_regret_mining' },
-//     { type: "trader", price: 5, name: "Trader Home", catalyst: "society:ancient_cog" }
+//     { type: "carpenter", price: 2, name: "Carpenter", catalyst: "sawmill:sawmill" },
+//     { type: "blacksmith", price: 2, name: "Blacksmith", catalyst: "minecraft:anvil" },
+//     { type: "shepherd", price: 2, name: "Shepherd", catalyst: "society:feeding_trough" },
+//     { type: "market", price: 2, name: "Market", catalyst: "minecraft:composter" },
+//     { type: "fisher", price: 2, name: "Fisher", catalyst: "aquaculture:worm_farm" },
+//     { type: "banker", price: 3, name: "Banker", catalyst: "numismatics:bank_terminal" },
+//     { type: "librarian", price: 5, name: "Librarian", catalyst: "minecraft:book" },
+//     { type: "witch", price: 4, name: "Witch", catalyst: 'society:crystal_of_regret_mining' },
+//     { type: "trader", price: 5, name: "Trader", catalyst: "society:ancient_cog" }
 // ];
 
-// const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "mason", "prismarine", "siberian", "tudor", "vibrantown", "floral", "sakura"];
-// const villagerBuildingSets = ["basic"];
+// const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "floral", "mason", "prismarine", "rural", "sakura", "siberian", "tudor", "vibrantown"];
+// const villagerBuildingSets = ["basic", "rural"];
 
 // let langStrings = {};
 // let blueprintLangStrings = {};
@@ -40,7 +41,7 @@
 //         shopTrades = [];
     
 //         sets.forEach((set) => {
-//             langPrefix = `portable_blueprints.worn_blueprint.${villager ? "npc_" : ""}${set}_${type}`;
+//             langPrefix = `portable_blueprints.worn_blueprint.${set}_${type}`;
 //             blueprintLangStrings[langPrefix] = `${global.formatName(set)} ${name}${villager ? " Home" : ""}`;
 //             blueprintLangStrings[`${langPrefix}.author`] = "Designed by: ";
 //             blueprintLangStrings[`${langPrefix}.dimensions`] = "";

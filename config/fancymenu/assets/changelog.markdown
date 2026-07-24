@@ -6,6 +6,7 @@
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
 - Added new system for Building Shop (Previously in the Quest book) using Building Supplies
+- Added Rural farmhouse and villager building set by Duy Luong
 - Added Floral farmhouse building set by SianaTheSavage
 - Added Sakura farmhouse building set by EeveeBeby
 - Added Butterfly and Moth breeding and genetics mechanics
@@ -43,6 +44,7 @@
 - Increased Terracotta conversion rate 1/30s -> 1/10s
 - Increased Bountiful Fertilizer crafting output 1 -> 4
 - Increased fishing spot range tolerance
+- Re-added adv pump upgrade due to fixes
 - Reduced max mana of mana fruit crops so they don't suck up as much mana
 - Reduced Sparkstone Recyler mana consumption per recycle 10k -> 5k
 - Reduced max upgrade from Hay Golems to High Quality Fertilizer

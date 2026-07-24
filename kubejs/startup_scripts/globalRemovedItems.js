@@ -1,8 +1,9 @@
 global.removedItems = [
   // TEMP 
-  'sophisticatedbackpacks:advanced_pump_upgrade',
-  // 4.1 TODO - rename to new item
+  // 2.0 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
+  'sophisticatedbackpacks:mob_catcher_upgrade',
+  'sophisticatedbackpacks:advanced_mob_catcher_upgrade',
   "cluttered:pastel_bunny_plushie",
   "cluttered:sand_seal_plush_blue",
   "cluttered:sand_seal_plush_green",

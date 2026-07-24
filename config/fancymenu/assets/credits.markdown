@@ -17,14 +17,16 @@
 - Andiecherries - Prismarine set
 - aviahime - Bamboo set
 - Charlotte.b - Coop building type
-- Duy Luong - Vibrantown set
+- Duy Luong - Vibrantown & Rural set
+- EeveeBeby - Sakura set, some villager houses
 - Howester84 - Bavarian set
-- JadeClouds - Entrana set
+- JadeClouds - Original Entrana set
 - Krewella081 - Alpine set
-- Kanlamari - Mason, Tudor, Entrana Revamp sets. Greenhouse building type
+- Kanlamari - Mason, Tudor, Entrana Revamp sets, some villager houses. Some greenhouse buildings 
 - Patchy - Woodcutter, Blacksmith, and Horse Stables
 - witchd - Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse
 - MattTheMeow - Skull Cavern honey beeode and goober den
+- SianaTheSavage - Floral set
 
 ### Dev Contributors
 - Ascens - Various tweaks and fixes
