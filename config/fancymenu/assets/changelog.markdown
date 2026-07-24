@@ -1,6 +1,6 @@
 ^^^
 ## Cozy Cafe
-### v4.1.0
+### v4.1.1
 ^^^
 --- 
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
