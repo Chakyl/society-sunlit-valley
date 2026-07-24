@@ -57,7 +57,7 @@
 - Renamed Bookseller to Book Fair
 - Fixed certain society blocks not having pickaxe minable tags
 - Fixed Mana Sprinkler having wrong working area
-- Fixed Mana Clock not working 
+- Fixed Mana Clock not working !
 - Fixed Ripper Tooth not working
 - Fixed Diamond wand not working with destruction core
 - Fixed Husbandry Hourly not appearing in the Bookseller/Book Fair
