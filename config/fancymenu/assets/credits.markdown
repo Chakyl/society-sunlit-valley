@@ -49,6 +49,7 @@
 - Markis_nub - es_es translation
 - Nur_sg  - es_es translation
 - Tomsauy - fr_fr translation
+- RafaelJMBR - pt_br
 
 ### Additional Credits
 - Shaders provided by Complementary Reimagined 
