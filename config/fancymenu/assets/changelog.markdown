@@ -40,11 +40,11 @@
 - Added stack groups to EMI/JEI 
 - Reworked Mana Clock: Now works exactly like Golden Clock but with a smaller radius and mana cost
 - Reworked furniture catalogs to be shops instead of having unique items
+- Updated pt_br translation (Thanks RafaelJMBR!)
 - Updated Galaxy Sword and Meowmageddon text to be shiny
 - Increased Terracotta conversion rate 1/30s -> 1/10s
 - Increased Bountiful Fertilizer crafting output 1 -> 4
 - Increased fishing spot range tolerance
-- Updated pt_br translation (Thanks RafaelJMBR!)
 - Re-added adv pump upgrade due to fixes
 - Reduced max mana of mana fruit crops so they don't suck up as much mana
 - Reduced Sparkstone Recyler mana consumption per recycle 10k -> 5k
