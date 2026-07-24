@@ -63,7 +63,7 @@
         "count": 2
       },
       "numismatics_cost": 1024,
-      "trade_id": "leatherworker_backpack_for_crown"
+      "trade_id": "guild_backpack"
     },
     {
       "offer": {
@@ -75,7 +75,19 @@
         "count": 6
       },
       "numismatics_cost": 24576,
-      "trade_id": "leatherworker_naturescompass_for_crown"
+      "trade_id": "guild_naturescompass"
+    },
+    {
+      "offer": {
+        "item": "via_romana:charting_map",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "guild_charting_map"
     },
     {
       "offer": {
@@ -87,7 +99,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
-      "trade_id": "guild_wood_hook_for_sun"
+      "trade_id": "guild_wood_hook"
     },
     {
       "offer": {
@@ -99,7 +111,7 @@
         "count": 16
       },
       "numismatics_cost": 64536,
-      "trade_id": "guild_pickarang_for_crown"
+      "trade_id": "guild_pickarang"
     },
     {
       "offer": {
@@ -115,7 +127,7 @@
         "count": 1
       },
       "numismatics_cost": 131072,
-      "trade_id": "cleric_hearthstone_for_sun"
+      "trade_id": "guild_hostile_lasso"
     },
     {
       "offer": {
@@ -181,7 +193,7 @@
         "count": 4
       },
       "numismatics_cost": 2048,
-      "trade_id": "guild_automobile_assembler_for_crown"
+      "trade_id": "guild_automobile_assembler"
     },
     {
       "offer": {
@@ -193,7 +205,7 @@
         "count": 48
       },
       "numismatics_cost": 196608,
-      "trade_id": "guild_auto_mechanic_table_for_sun"
+      "trade_id": "guild_auto_mechanic_table"
     },
     {
       "offer": {
@@ -206,7 +218,7 @@
       },
       "numismatics_cost": 4096,
       "stage_required": "vault_complete",
-      "trade_id": "guild_teleporter_for_sun",
+      "trade_id": "guild_teleporter",
       "unlock_description": "jei.society_trading.vault_complete"
     }
   ]

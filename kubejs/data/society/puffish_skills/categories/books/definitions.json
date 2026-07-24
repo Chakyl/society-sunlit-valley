@@ -511,6 +511,27 @@
       }
     ]
   },
+  "the_metamorphosize": {
+    "title": { "translate": "item.society.the_metamorphosize" },
+    "description": {
+      "translate": "society_skills.books.the_metamorphosize.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_metamorphosize"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s the_metamorphosize",
+          "lock_command": "kubejs stages remove @s the_metamorphosize"
+        }
+      }
+    ]
+  },
   "the_art_of_battle": {
     "title": { "translate": "item.sunlit_cobblemon.the_art_of_battle" },
     "description": {

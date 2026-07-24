@@ -1,7 +1,7 @@
 console.info("[SOCIETY] manaFruit.js loaded");
 
 const MANA_DRAIN = 2500;
-const FRUIT_MAX_MANA = MANA_DRAIN * 7;
+const FRUIT_MAX_MANA = MANA_DRAIN * 4;
 
 global.handleManaFruit = (e) => {
   const { level, block } = e;

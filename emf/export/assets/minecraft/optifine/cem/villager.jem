@@ -1,0 +1,281 @@
+{
+  "models": [
+    {
+      "invertAxis": "xy",
+      "part": "body",
+      "id": "body",
+      "attach": false,
+      "translate": [
+        0.0,
+        -24.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            16,
+            20
+          ],
+          "coordinates": [
+            -4.0,
+            12.0,
+            -3.0,
+            8.0,
+            12.0,
+            6.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "left_leg",
+      "id": "left_leg",
+      "attach": false,
+      "translate": [
+        2.0,
+        -12.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            22
+          ],
+          "coordinates": [
+            -4.0,
+            0.0,
+            -2.0,
+            4.0,
+            12.0,
+            4.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "head",
+      "id": "head",
+      "attach": false,
+      "translate": [
+        0.0,
+        -24.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            0
+          ],
+          "coordinates": [
+            -4.0,
+            24.0,
+            -4.0,
+            8.0,
+            10.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "bodywear",
+      "id": "bodywear",
+      "attach": false,
+      "translate": [
+        0.0,
+        -24.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            38
+          ],
+          "sizeAdd": 0.5,
+          "coordinates": [
+            -4.0,
+            4.0,
+            -3.0,
+            8.0,
+            20.0,
+            6.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "arms",
+      "id": "arms",
+      "attach": false,
+      "translate": [
+        0.0,
+        -21.0,
+        1.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            44,
+            22
+          ],
+          "coordinates": [
+            4.0,
+            15.0,
+            -3.0,
+            4.0,
+            8.0,
+            4.0
+          ]
+        },
+        {
+          "textureOffset": [
+            44,
+            22
+          ],
+          "coordinates": [
+            -8.0,
+            15.0,
+            -3.0,
+            4.0,
+            8.0,
+            4.0
+          ]
+        },
+        {
+          "textureOffset": [
+            40,
+            38
+          ],
+          "coordinates": [
+            -4.0,
+            15.0,
+            -3.0,
+            8.0,
+            4.0,
+            4.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "right_leg",
+      "id": "right_leg",
+      "attach": false,
+      "translate": [
+        -2.0,
+        -12.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            22
+          ],
+          "coordinates": [
+            0.0,
+            0.0,
+            -2.0,
+            4.0,
+            12.0,
+            4.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "nose",
+      "id": "nose",
+      "attach": false,
+      "translate": [
+        0.0,
+        -26.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            24,
+            0
+          ],
+          "coordinates": [
+            -1.0,
+            23.0,
+            -6.0,
+            2.0,
+            4.0,
+            2.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "headwear",
+      "id": "headwear",
+      "attach": false,
+      "translate": [
+        0.0,
+        -24.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            32,
+            0
+          ],
+          "sizeAdd": 0.51,
+          "coordinates": [
+            -4.0,
+            24.0,
+            -4.0,
+            8.0,
+            10.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "headwear2",
+      "id": "headwear2",
+      "attach": false,
+      "translate": [
+        0.0,
+        -24.0,
+        0.0
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            30,
+            47
+          ],
+          "coordinates": [
+            -8.0,
+            16.0,
+            -6.0,
+            16.0,
+            16.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ],
+  "textureSize": [
+    64,
+    64
+  ]
+}

@@ -1,0 +1,74 @@
+{
+	id: "4A1868D8BACBC7E4"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "market_basic"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_market.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_market\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "market_basic"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "market_rural"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_market.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_market\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "market_rural"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+	]
+	title: "{ftbquests.loot_table.5339132638303864804.title}"
+}

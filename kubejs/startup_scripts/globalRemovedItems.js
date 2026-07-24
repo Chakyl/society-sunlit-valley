@@ -653,9 +653,10 @@ global.removedItems = [
   "cobblemon:repeat_ball",
   "create_klinks_n_klangs:wrapper",
   // TEMP 
-  'sophisticatedbackpacks:advanced_pump_upgrade',
-  // 4.1 TODO - rename to new item
+  // 2.0 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
+  'sophisticatedbackpacks:mob_catcher_upgrade',
+  'sophisticatedbackpacks:advanced_mob_catcher_upgrade',
   "cluttered:pastel_bunny_plushie",
   "cluttered:sand_seal_plush_blue",
   "cluttered:sand_seal_plush_green",
@@ -1009,6 +1010,7 @@ global.removedItems = [
   "farmlife:sunstreak_burst_poppy",
   "farmlife:rusty_burst_poppy",
   "farmlife:olive_burst_poppy",
+  "beachparty:radio",
   "atmospheric:golden_dragon_fruit_crate",
   "atmospheric:golden_dragon_fruit",
   "farmlife:fancy_burst_poppy",
@@ -1184,6 +1186,7 @@ global.removedItems = [
   "sophisticatedstorage:advanced_pump_upgrade",
   "sophisticatedstorage:pump_upgrade",
   "quark:blackstone_furnace",
+  "quark:pathfinders_quill",
   "quark:dirty_glass",
   "quark:dirty_glass_pane",
   "candlelight:cooking_pan",
@@ -1558,10 +1561,13 @@ global.removedItems = [
   "farm_and_charm:water_sprinkler",
   "atmospheric:dragon_fruit_crate",
   "atmospheric:dragon_fruit",
+  "irons_lib:transmog_table",
+  "irons_lib:player_statue"
 ];
 
 global.hiddenItems = [
   "sunlit_cobblemon:unlooted_ball",
+  "@displaydelight",
   "society:auto_petter",
   "minecraft:ancient_debris",
   "society:growth_obelisk_upper",

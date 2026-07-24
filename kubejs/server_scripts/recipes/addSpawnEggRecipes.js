@@ -45,11 +45,7 @@ ServerEvents.recipes((e) => {
     { egg: "minecraft:parrot_spawn_egg", mineral: "society:marble", coin: "crown" },
     { egg: "autumnity:turkey_spawn_egg", mineral: "society:jasper", coin: "sun" },
     { egg: "autumnity:snail_spawn_egg", mineral: "society:amethyst_chunk", coin: "crown" },
-    {
-      egg: "buzzier_bees:grizzly_bear_spawn_egg",
-      mineral: "society:beemonican_seal",
-      coin: "ancient_coin",
-    },
+    { egg: "buzzier_bees:grizzly_bear_spawn_egg", mineral: "society:beemonican_seal", coin: "ancient_coin" },
     { egg: "snowpig:snow_pig_spawn_egg", mineral: "society:frozen_tear", coin: "crown" },
     { egg: "snuffles:snuffle_spawn_egg", mineral: "society:lemon_stone", coin: "crown" },
     { egg: "wildernature:red_wolf_spawn_egg", mineral: "society:spider_silk", coin: "crown" },
@@ -60,49 +56,19 @@ ServerEvents.recipes((e) => {
     { egg: "wildernature:minisheep_spawn_egg", mineral: "society:lemon_stone", coin: "sun" },
     { egg: "wildernature:raccoon_spawn_egg", mineral: "society:jade", coin: "crown" },
     { egg: "wildernature:deer_spawn_egg", mineral: "society:source_gem", coin: "crown" },
-    {
-      egg: "wildernature:bison_spawn_egg",
-      mineral: "society:ember_crystal_cluster",
-      coin: "crown",
-    },
+    { egg: "wildernature:bison_spawn_egg", mineral: "society:ember_crystal_cluster", coin: "crown" },
     { egg: "wildernature:pelican_spawn_egg", mineral: "society:holy_symbol", coin: "crown" },
     { egg: "wildernature:owl_spawn_egg", mineral: "society:legendary_ink", coin: "crown" },
     { egg: "wildernature:dog_spawn_egg", mineral: "society:aquamarine", coin: "crown" },
-    {
-      egg: "wildernature:hedgehog_spawn_egg",
-      mineral: "society:wheel_of_adaptation",
-      coin: "crown",
-    },
-    {
-      egg: "atmospheric:cochineal_spawn_egg",
-      mineral: "society:production_science_pack",
-      coin: "crown",
-    },
-    {
-      egg: "crittersandcompanions:red_panda_spawn_egg",
-      mineral: "society:magma_geode",
-      coin: "crown",
-    },
-    {
-      egg: "crittersandcompanions:ferret_spawn_egg",
-      mineral: "society:glitched_vhs",
-      coin: "crown",
-    },
-    {
-      egg: "crittersandcompanions:shima_enaga_spawn_egg",
-      mineral: "society:steamy_gadget",
-      coin: "crown",
-    },
-    {
-      egg: "meadow:wooly_sheep_spawn_egg",
-      mineral: "minecraft:emerald",
-      coin: "crown",
-    },
-    {
-      egg: "species:treeper_spawn_egg",
-      mineral: "society:giant_bandolier_belt",
-      coin: "crown",
-    }
+    { egg: "wildernature:hedgehog_spawn_egg", mineral: "society:wheel_of_adaptation", coin: "crown" },
+    { egg: "atmospheric:cochineal_spawn_egg", mineral: "society:production_science_pack", coin: "crown" },
+    { egg: "crittersandcompanions:red_panda_spawn_egg", mineral: "society:magma_geode", coin: "crown" },
+    { egg: "crittersandcompanions:ferret_spawn_egg", mineral: "society:glitched_vhs", coin: "crown" },
+    { egg: "crittersandcompanions:shima_enaga_spawn_egg", mineral: "society:steamy_gadget", coin: "crown" },
+    { egg: "meadow:wooly_sheep_spawn_egg", mineral: "minecraft:emerald", coin: "crown" },
+    { egg: "species:treeper_spawn_egg", mineral: "society:giant_bandolier_belt", coin: "crown" },
+    { egg: "minecraft:sulfur_cube_spawn_egg", mineral: "society:amulet_of_light", coin: "crown" },
+    { egg: "minecraft:armadillo_spawn_egg", mineral: "society:green_tea_honeycomb", coin: "crown" },
   ];
 
   recipes.forEach((recipe) => {

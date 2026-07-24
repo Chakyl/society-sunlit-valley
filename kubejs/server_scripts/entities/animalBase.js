@@ -254,7 +254,7 @@ const handleMilk = (name, data, day, hungry, e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   if (player.isFake() && data.getInt("affection") < 100) return;
   let errorText;
-  let milkItem = global.getMilk(level, target, data, player, day, true);
+  let milkItem = global.getMilk(level, target, data, player, day, true, undefined, player.stages);
 
   if (milkItem !== -1) {
     let milk = level.createEntity("minecraft:item");
@@ -391,7 +391,7 @@ const handleMagicHarvest = (name, data, e) => {
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
 
   let errorText = "";
-  const droppedLoot = global.getMagicShearsOutput(level, target, player);
+  const droppedLoot = global.getMagicShearsOutput(level, target, player, undefined, player.stages);
   if (droppedLoot !== -1) {
     server.runCommandSilent(
       `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
@@ -449,16 +449,15 @@ const handleSpecialItem = (
   let resolvedItem = item;
   let resolvedChance = chance;
   let resolvedHasQuality = hasQuality
-  let dropAmount =
-    mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1);
+  let dropAmount = mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1);
   if (plushieModifiers) {
     affection = 1000;
     mood = 256;
     resolvedChance = chance + plushieModifiers.probabilityIncrease;
     if (plushieModifiers.processItems) {
       let processOutput = global.getProcessedItem(item, dropAmount);
-      resolvedItem = processOutput.item;
-      dropAmount = Math.round(dropAmount / processOutput.divisor);
+      resolvedItem = processOutput.item.id;
+      dropAmount = Math.round(dropAmount / processOutput.divisor) *  processOutput.item.count;
       resolvedHasQuality = processOutput.preserveQuality
     }
   } else {
@@ -490,8 +489,7 @@ const handleSpecialItem = (
     specialItem.x = player.x;
     specialItem.y = player.y;
     specialItem.z = player.z;
-    specialItem.item = Item.of(
-      `${dropAmount}x ${resolvedItem}`,
+    specialItem.item = Item.of(`${dropAmount}x ${resolvedItem}`,
       quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
     );
     specialItem.spawn();
@@ -582,7 +580,8 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           undefined,
           undefined,
           undefined,
-          handleSpecialItem
+          handleSpecialItem,
+          player.stages,
         );
       }
       if (
@@ -780,6 +779,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
 
 ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
+  if (item === 'moblassos:diamond_lasso') return;
   global.handleHusbandryBase(hand, player, item, target, level, server);
 });
 

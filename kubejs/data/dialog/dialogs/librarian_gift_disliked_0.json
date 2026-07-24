@@ -1,0 +1,26 @@
+{
+	"id": "librarian_gift_disliked_0",
+	"title": "librarian introduction",
+	"description": "dialog.npc.librarian.gift.disliked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.gift_disliked.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "disliked/librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

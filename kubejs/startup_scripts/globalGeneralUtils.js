@@ -3,6 +3,8 @@ const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi")
 global.getDay = (level) =>  Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 
 /**
+ * I hate this function.
+ * 
  * Expected:
  *  day: 10 | checkedDay: 11 | amount: 1 = true. Day in the past (time commands used)
  *  day: 11 | checkedDay: 10 | amount: 1 = true. 

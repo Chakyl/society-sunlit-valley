@@ -154,19 +154,25 @@ if (global.datagenDialog) {
         ]
       },
       {
-        name: "need_to_buy",
-        text: [
-          "Need to pick up something from the shop?",
-        ]
-      },
-      {
         name: "cobblemon_mystery_gift",
         text: [
           "I finally found a Celebi for you @i!",
           "They don't often take to trainers like me, but it seemed to appreciate our care for the nearby forests.",
           "Your green thumb has finally been recognized by the big leagues!"
         ]
-      },
+      }
+    ],
+    choiceDialogs: [
+      {
+        name: "need_to_buy",
+        text: ["Need to pick up something from the shop?",],
+        options: [
+          { text: "Purchase supplies", command: "openshop @p carpenter" },
+          { text: "Invite Villagers", command: "openshop @p invitations" },
+          { text: "Build Farm buildings", command: "openselector @p building_shop" },
+          { text: "Build Village buildings", command: "openselector @p town_building_shop" }
+        ]
+      }
     ]
   });
 }

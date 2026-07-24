@@ -2934,13 +2934,7 @@ global.fishPondDefinitions = new Map([
           item: "vintagedelight:cucumber",
           count: 8,
           chance: 0.09,
-        },
-        {
-          minPopulation: 8,
-          item: "society:tanuki_leaf",
-          count: 1,
-          chance: 0.28,
-        },
+        }
       ],
     },
   ],
@@ -3296,12 +3290,6 @@ global.fishPondDefinitions = new Map([
           chance: 0.04,
         },
         {
-          minPopulation: 7,
-          item: "society:fantasy_dust",
-          count: 1,
-          chance: 0.17,
-        },
-        {
           minPopulation: 8,
           item: "species:werefang",
           count: 4,
@@ -3414,13 +3402,7 @@ global.fishPondDefinitions = new Map([
           item: "minecraft:sandstone",
           count: 32,
           chance: 0.31,
-        },
-        {
-          minPopulation: 8,
-          item: "society:architects_digest",
-          count: 1,
-          chance: 0.15,
-        },
+        }
       ],
     },
   ],

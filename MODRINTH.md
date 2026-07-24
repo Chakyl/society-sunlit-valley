@@ -1,4 +1,4 @@
-The following mods are used in the pack and are not availible on Modrinth but have licenses that allow for redistirbution:
+The following mods are used in the pack and are not available on Modrinth but have licenses that allow for redistirbution:
 - [Tanuki Decor](https://www.curseforge.com/minecraft/mc-mods/tanukidecor) - GLP
 - [Trail Chambers Reuploaded](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded) - MIT
 - [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) - MIT (Modrinth uploaded version broken)

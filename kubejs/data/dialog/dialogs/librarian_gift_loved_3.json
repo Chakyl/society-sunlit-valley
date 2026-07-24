@@ -1,0 +1,26 @@
+{
+	"id": "librarian_gift_loved_3",
+	"title": "librarian introduction",
+	"description": "dialog.npc.librarian.gift.loved",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.gift_loved.3.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "loved/librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

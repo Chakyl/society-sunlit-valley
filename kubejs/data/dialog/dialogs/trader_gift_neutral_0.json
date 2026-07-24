@@ -1,0 +1,26 @@
+{
+	"id": "trader_gift_neutral_0",
+	"title": "trader introduction",
+	"description": "dialog.npc.trader.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.gift_neutral.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

@@ -19,16 +19,15 @@ const handleAutoGrabSpecialItem = (
   let resolvedItem = item;
   let resolvedChance = chance;
   let resolvedHasQuality = hasQuality
-  let dropAmount =
-    mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1);
+  let dropAmount = mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1);
   if (plushieModifiers) {
     affection = 1000;
     mood = 256;
     resolvedChance = chance + plushieModifiers.probabilityIncrease;
     if (plushieModifiers.processItems) {
       let processOutput = global.getProcessedItem(item, dropAmount);
-      resolvedItem = processOutput.item;
-      dropAmount = Math.round(dropAmount / processOutput.divisor);
+      resolvedItem = processOutput.item.id;
+      dropAmount = Math.round(dropAmount / processOutput.divisor) * processOutput.item.count;
       resolvedHasQuality = processOutput.preserveQuality
     }
   } else {
@@ -50,11 +49,15 @@ const handleAutoGrabSpecialItem = (
     if (resolvedHasQuality && mood >= 160) {
       quality = global.getHusbandryQuality(hearts, mood);
     }
-    let specialItem = Item.of(
-      `${dropAmount}x ${resolvedItem}`,
-      quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
-    );
-    let specialItemResultCode = global.insertBelow(level, block, specialItem);
+    let remaining = dropAmount;
+    let specialItemResultCode = 1;
+
+    while (remaining > 0 && specialItemResultCode == 1) {
+      let currentAmount = Math.min(remaining, 64);
+      let specialItem = Item.of(`${currentAmount}x ${resolvedItem}`, quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null);
+      specialItemResultCode = global.insertBelow(level, block, specialItem);
+      remaining -= currentAmount;
+    }
     if (specialItemResultCode == 1) {
       recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
       if (!recycleSparkstone && global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
@@ -80,8 +83,12 @@ const handleAutoGrabSpecialItem = (
   }
 };
 
-global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
-  const { inventory, block, level } = entity;
+/**
+ * @param {Internal.BlockEntityJS} autoGrabber
+ * @param {Internal.Player|null} player
+ */
+global.autoGrabAnimal = (autoGrabber, player, animal, plushieModifiers) => {
+  const { inventory, block, level } = autoGrabber;
   let recycleSparkstone;
   let data;
   let nbt;
@@ -91,6 +98,7 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
   } else {
     data = animal.persistentData;
   }
+  const stages = global.getBlockEntityStages(autoGrabber);
   const day = global.getDay(level);
   let mood;
   let hungry;
@@ -117,7 +125,8 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
         player,
         day,
         false,
-        plushieModifiers
+        plushieModifiers,
+        stages,
       );
       if (milkItem !== -1) {
         let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
@@ -160,11 +169,12 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
         level,
         plushieModifiers ? data : animal,
         player,
-        player.server,
+        level.server,
         block,
         inventory,
         plushieModifiers,
-        handleAutoGrabSpecialItem
+        handleAutoGrabSpecialItem,
+        stages,
       );
       if (plushieModifiers && !plushieModifiers.resetDay) {
         nbt.merge({
@@ -185,7 +195,8 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
         level,
         plushieModifiers ? data : animal,
         player,
-        plushieModifiers
+        plushieModifiers,
+        stages,
       );
       if (droppedLoot !== -1) {
         level.server.runCommandSilent(
@@ -208,43 +219,39 @@ global.autoGrabAnimal = (entity, player, animal, plushieModifiers) => {
   }
 };
 
-global.runAutoGrabber = (entity) => {
+/**
+ * @param {Internal.BlockEntityJS} entity
+ * @param {Internal.Player|null} attachedPlayer
+ */
+global.runAutoGrabber = (entity, attachedPlayer) => {
   const { block, level } = entity;
   let radius = 5;
-  let attachedPlayer;
   let nearbyFarmAnimals;
   nearbyFarmAnimals = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(radius))
     .filter((entity) =>
       global.checkEntityTag(entity, "society:husbandry_animal")
     );
-  level.getServer().players.forEach((p) => {
-    if (p.getUuid().toString() === block.getEntityData().data.owner) {
-      attachedPlayer = p;
-    }
+  nearbyFarmAnimals.forEach((animal) => {
+    global.autoGrabAnimal(entity, attachedPlayer, animal);
   });
-  if (attachedPlayer) {
-    nearbyFarmAnimals.forEach((animal) => {
-      global.autoGrabAnimal(entity, attachedPlayer, animal);
-    });
-    let { x, y, z } = block;
-    let scanBlock;
-    for (let pos of BlockPos.betweenClosed(
-      new BlockPos(x - radius, y - radius, z - radius),
-      [x + radius, y + radius, z + radius]
-    )) {
-      if (!level.isLoaded(pos)) continue;
-      scanBlock = level.getBlock(pos);
-      if (scanBlock.hasTag("society:plushies")) {
-        let nbt = scanBlock.getEntityData();
-        if (nbt.data.animal) {
-          global.autoGrabAnimal(
-            entity,
-            attachedPlayer,
-            scanBlock,
-            global.getPlushieModifiers(level, nbt.data, scanBlock)
-          );
-        }
+  let { x, y, z } = block;
+  let scanBlock;
+  for (let pos of BlockPos.betweenClosed(
+    new BlockPos(x - radius, y - radius, z - radius),
+    [x + radius, y + radius, z + radius]
+  )) {
+    if (!level.isLoaded(pos)) continue;
+    scanBlock = level.getBlock(pos);
+    if (scanBlock.hasTag("society:plushies")) {
+      let nbt = scanBlock.getEntityData();
+      if (nbt.data.animal) {
+        global.autoGrabAnimal(
+          entity,
+          attachedPlayer,
+          scanBlock,
+          global.getPlushieModifiers(level, nbt.data, scanBlock)
+        );
       }
     }
   }
@@ -296,7 +303,17 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(600, 0, (entity) => {
-        global.runAutoGrabber(entity);
+        const attachedPlayer = global.cacheOwner(entity, [
+          "animal_fancy",
+          "animal_whisperer",
+          "bff",
+          "coopmaster",
+          "heretic",
+          "mana_hand",
+          "reaping_scythe",
+          "shepherd",
+        ]);
+        global.runAutoGrabber(entity, attachedPlayer);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(

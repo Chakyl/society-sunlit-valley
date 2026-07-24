@@ -286,17 +286,6 @@
         "value": 100
       }
     },
-    "elixirum:generic.crescere_mastery": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "stardew_fishing:bar_size": {
       "enabled": false,
       "min": {
@@ -306,6 +295,17 @@
       "max": {
         "default": 142,
         "value": 142
+      }
+    },
+    "elixirum:generic.crescere_mastery": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "irons_spellbooks:cast_time_reduction": {
@@ -394,6 +394,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "stardew_fishing:golden_chest_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "elixirum:generic.venenum_resistance": {
@@ -781,6 +792,17 @@
         "value": 100
       }
     },
+    "minecraft:bounciness": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:spell_type_gluttony": {
       "enabled": false,
       "min": {
@@ -867,6 +889,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "minecraft:friction_modifier": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/spider_aspect": {
@@ -2286,6 +2319,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "minecraft:air_drag_modifier": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "additional_attributes:spell_school_ender": {

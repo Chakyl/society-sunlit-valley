@@ -95,6 +95,8 @@
 	#A scalar multiplier that will be applied to sign text making it brighter, supposedly more legible
 	#Range: 0.0 ~ 5.0
 	text_color_multiplier = 1.2
+	#A list of sign blocks that will NOT be affected by the pixel consistent sign setting. Use full registry names separated by commas
+	sign_blacklist = []
 
 [projectiles]
 	#Makes snowballs render in 3D

@@ -16,9 +16,12 @@ global.mainUiElementIds = [
   "skullTeleportMessage",
   "skullCavernPlaceBlockMessage",
   "magicRopeMessage",
+  "longwingName",
   "chanceMessage",
+  "eggChanceMessage",
   "longwingCountMessage",
   "flowerCountMessage",
+  "botaniaMana",
   "pokeRadar",
   "silph_scope"
 ];
