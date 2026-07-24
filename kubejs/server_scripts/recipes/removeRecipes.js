@@ -4,6 +4,8 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    'society_trading:auto_trader',
+    'cozycafe:cafe_manager',
     "domesticationinnovation:drum",
     "domesticationinnovation:pet_bed_white",
     "domesticationinnovation:collar_tag",
@@ -502,7 +504,7 @@ ServerEvents.recipes((e) => {
     "sewingkit:gold_sewing_needle",
     "sewingkit:diamond_sewing_needle",
     "sewingkit:netherite_sewing_needle",
-    // Cleric
+    // Witch
     "paraglider:spirit_orb",
     "constructionwand:stone_wand",
     "constructionwand:iron_wand",

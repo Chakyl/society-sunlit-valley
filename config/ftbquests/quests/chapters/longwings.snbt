@@ -917,6 +917,24 @@
 			x: 17.0d
 			y: 5.0d
 		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.25d
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			height: 1.25d
+			image: "society:textures/gui/circle_white.png"
+			order: 8
+			rotation: 0.0d
+			width: 1.25d
+			x: 4.24404761904762d
+			y: 18.809523809523817d
+		}
 	]
 	order_index: 10
 	quest_links: [ ]
@@ -1838,8 +1856,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 5.404761904761912d
-			y: 8.02976190476192d
+			x: 5.351190476190482d
+			y: 8.095238095238095d
 		}
 		{
 			icon_scale: 2.0d
@@ -2405,6 +2423,8 @@
 				"6622B4312D88A164"
 				"34A2EC8B83E8037B"
 				"793A169D708B617C"
+				"48AE61B7C8084142"
+				"59F65B3F0935DB5B"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -2686,6 +2706,46 @@
 			}]
 			x: -0.04285714285718001d
 			y: 10.535714285714285d
+		}
+		{
+			icon_scale: 2.0d
+			id: "48AE61B7C8084142"
+			shape: "none"
+			tasks: [{
+				id: "099FE25781585391"
+				item: {
+					Count: 1
+					id: "longwings:butterfly"
+					tag: {
+						variant: "tropical_leafwing"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			icon_scale: 2.0d
+			id: "59F65B3F0935DB5B"
+			shape: "none"
+			tasks: [{
+				id: "5F077954BC31F303"
+				item: {
+					Count: 1
+					id: "longwings:moth"
+					tag: {
+						variant: "comet"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 4.279761904761912d
+			y: 18.809523809523817d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.longwings.subtitle0}"]

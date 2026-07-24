@@ -244,8 +244,8 @@
 				type: "dimension"
 			}]
 			title: "{ftbquests.chapter.welcome.quest5FB57C45A25D41F0.title}"
-			x: 1.5d
-			y: 1.5d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
@@ -346,6 +346,28 @@
 			title: "{ftbquests.chapter.welcome.quest5FDA526D348C8A0F.title}"
 			x: 2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			description: [
+				"{ftbquests.chapter.welcome.quest238702B124895A0A.description1}"
+				""
+				"{ftbquests.chapter.welcome.quest238702B124895A0A.description2}"
+				"{ftbquests.chapter.welcome.quest238702B124895A0A.description3}"
+				""
+				"{ftbquests.chapter.welcome.quest238702B124895A0A.description4}"
+			]
+			icon: "society:magnifying_glass"
+			id: "238702B124895A0A"
+			subtitle: "{ftbquests.chapter.welcome.quest238702B124895A0A.subtitle}"
+			tasks: [{
+				id: "071758A047AA8A61"
+				title: "{ftbquests.chapter.welcome.quest238702B124895A0A.task.510974528150211169.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.welcome.quest238702B124895A0A.title}"
+			x: 1.5d
+			y: 1.5d
 		}
 	]
 	title: "{ftbquests.chapter.welcome.title}"

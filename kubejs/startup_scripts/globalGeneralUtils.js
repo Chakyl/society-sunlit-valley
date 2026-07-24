@@ -2,6 +2,8 @@
 global.getDay = (level) =>  Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 
 /**
+ * I hate this function.
+ * 
  * Expected:
  *  day: 10 | checkedDay: 11 | amount: 1 = true. Day in the past (time commands used)
  *  day: 11 | checkedDay: 10 | amount: 1 = true. 
@@ -26,9 +28,3 @@ global.getFacingPlusOffset = (facing, pos, offset) => {
       return pos.offset(offset, 0, 0);
   }
 };
-
-global.getHasCurio = (player, item) => {
-  const curios = player.nbt.ForgeCaps["curios:inventory"]
-  if (!curios) return false;
-  return curios.toString().includes(item)
-} 

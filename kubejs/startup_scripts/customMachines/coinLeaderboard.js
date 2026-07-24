@@ -1,20 +1,30 @@
 console.info("[SOCIETY] coinLeaderboard.js loaded");
 
 const updateLeaderboardMap = (server) => {
-  let playerName;
+  let accountName;
   let playerList = server.persistentData.playerList;
   let overflowList = server.persistentData.overflowList;
   if (!playerList) return undefined;
   let leaderboardMap = new Map();
   global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
-    playerName = playerList[playerUUID];
+    accountName = playerList[playerUUID];
     if (overflowList != null && overflowList[playerUUID] != null) {
       leaderboardMap.set(
         playerName,
         bankAccount.getBalance() + overflowList[playerUUID] * 1006632960
       );
     } else {
-      leaderboardMap.set(playerName, bankAccount.getBalance());
+      if (!accountName) {
+        accountName = "";
+        Object.keys(server.persistentData.playerList).forEach((playerUUID) => {
+          if (bankAccount.isAuthorized(playerUUID)) {
+            if (accountName !== "") accountName += " & "
+            accountName += playerList[playerUUID];
+          }
+        })
+      accountName += "'s Team"
+      }
+      leaderboardMap.set(accountName, bankAccount.getBalance());
     }
   });
   return Array.from(leaderboardMap)
@@ -67,7 +77,7 @@ StartupEvents.registry("block", (e) => {
       });
     })
     .blockEntity((be) => {
-      be.serverTick(200, 0, (tick) => {
+      be.serverTick(600, 0, (tick) => {
         global.updateLeaderboard(tick.block, tick.level, tick.level.server);
       });
     });

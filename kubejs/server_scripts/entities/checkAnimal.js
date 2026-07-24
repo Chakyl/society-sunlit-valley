@@ -28,19 +28,41 @@ ItemEvents.entityInteracted((e) => {
       }
     }
     let chance = scannedBlocks * 0.15 - nearbyLongwings.length * 0.1;
+    let eggChance = chance <= 0 ? "0%" : `${Math.min(100, Math.floor((Math.min(1, chance) / 4) * 100))}%`;
     chance = chance <= 0 ? "0%" : `${Math.min(100, Math.floor(chance * 100))}%`;
     let product = target.type.toString().equals("longwings:butterfly") ? Text.translatable("item.society.butterfly_amber") : Text.translatable("item.society.moth_pollen");
+    let longWingNameMessage = `${Text.translatable(`item.longwings.${target.getNbt().Variant}`).toJson()}`;
     let chanceMessage = `${Text.translatable("society.longwings.produce_chance", chance, product).toJson()}`;
-    let longwingCountMessage = `${Text.translatable("society.longwings.longwing_count", `${nearbyLongwings.length}`).toJson()}`;
+    let eggChanceMessage = `${Text.translatable("society.longwings.produce_chance", eggChance, Text.translatable("item.society.caterpillar_eggs")).toJson()}`;
+    let longwingCountMessage = `${Text.translatable("society.longwings.longwing_count", `${nearbyLongwings.length - 1}`).toJson()}`;
     let flowerCountMessage = `${Text.translatable("society.longwings.flower_count", `${scannedBlocks}`).toJson()}`;
     global.renderUiText(
       player,
       server,
       {
-        chanceMessage: {
+        longwingName: {
           type: "text",
           x: 0,
           y: -90,
+          text: longWingNameMessage,
+          color: "#FFFFFF",
+          alignX: "center",
+          alignY: "bottom",
+        },
+        longwingNameShadow: {
+          type: "text",
+          x: 1,
+          z: -1,
+          y: -89,
+          text: longWingNameMessage,
+          color: "#000000",
+          alignX: "center",
+          alignY: "bottom",
+        },
+        chanceMessage: {
+          type: "text",
+          x: 0,
+          y: -80,
           text: chanceMessage,
           color: "#FFAA00",
           alignX: "center",
@@ -50,8 +72,27 @@ ItemEvents.entityInteracted((e) => {
           type: "text",
           x: 1,
           z: -1,
-          y: -89,
+          y: -79,
           text: chanceMessage,
+          color: "#000000",
+          alignX: "center",
+          alignY: "bottom",
+        },
+        eggChanceMessage: {
+          type: "text",
+          x: 0,
+          y: -70,
+          text: eggChanceMessage,
+          color: "#FF55FF",
+          alignX: "center",
+          alignY: "bottom",
+        },
+        eggChanceMessageShadow: {
+          type: "text",
+          x: 1,
+          z: -1,
+          y: -69,
+          text: eggChanceMessage,
           color: "#000000",
           alignX: "center",
           alignY: "bottom",
@@ -59,7 +100,7 @@ ItemEvents.entityInteracted((e) => {
         longwingCountMessage: {
           type: "text",
           x: 0,
-          y: -80,
+          y: -60,
           text: longwingCountMessage,
           color: "#FF5555",
           alignX: "center",
@@ -69,7 +110,7 @@ ItemEvents.entityInteracted((e) => {
           type: "text",
           x: 1,
           z: -1,
-          y: -79,
+          y: -59,
           text: longwingCountMessage,
           color: "#000000",
           alignX: "center",
@@ -78,7 +119,7 @@ ItemEvents.entityInteracted((e) => {
         flowerCountMessage: {
           type: "text",
           x: 0,
-          y: -70,
+          y: -50,
           text: flowerCountMessage,
           color: "#55FF55",
           alignX: "center",
@@ -88,7 +129,7 @@ ItemEvents.entityInteracted((e) => {
           type: "text",
           x: 1,
           z: -1,
-          y: -69,
+          y: -49,
           text: flowerCountMessage,
           color: "#000000",
           alignX: "center",

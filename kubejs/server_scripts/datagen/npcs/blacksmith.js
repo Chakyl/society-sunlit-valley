@@ -66,7 +66,7 @@ if (global.datagenDialog) {
         ["When I feel homesick I think of all the wonderful people around me.", "You're included on that list of course!"],
         "Hmmm Leon still owes me for fixing that shelf... I wonder if I can get something sweet today at the market!",
         ["Ugh, I slept on my neck oddly last night...", "But seeing you has made the day worth it!"],
-        ["Leon gave me a free boquet with my groceries today!", "I feel a bit guilty for mistaking nonchalance for rudness."]
+        ["Leon gave me a free bouquet with my groceries today!", "I feel a bit guilty for mistaking nonchalance for rudness."]
       ],
       friendship4: [
         "Well well well, @i's back in my shop!",

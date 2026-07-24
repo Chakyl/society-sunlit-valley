@@ -1,0 +1,26 @@
+{
+	"id": "librarian_unique_book_fair",
+	"title": "librarian introduction",
+	"description": "dialog.npc.librarian.unique.book_fair",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.unique_book_fair.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

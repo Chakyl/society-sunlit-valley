@@ -84,13 +84,11 @@ global.processShippingBinInventory = (
   let removedItems = [];
   let slotItem;
   let isSellable;
+  let isLongwing
   for (let i = 0; i < inventorySlots; i++) {
     slotItem = inventory.getStackInSlot(i).item;
-    isSellable =
-      global.trades.has(String(slotItem.id)) ||
-      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(
-        slotItem.id
-      );
+    isLongwing = ["longwings:moth", "longwings:butterfly"].includes(slotItem.id);
+    isSellable = global.trades.has(String(slotItem.id)) || isLongwing || ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id);
     if (isSellable) {
       let trade = global.trades.get(String(slotItem.id));
       let quality = undefined;
@@ -99,17 +97,15 @@ global.processShippingBinInventory = (
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }
-      if (
-        slotNbt &&
-        ((slotNbt.slime && slotNbt.slime.id) ||
-          (slotNbt.plort && slotNbt.plort.id))
-      ) {
+      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
         if (slotNbt.slime)
           trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
         if (slotNbt.plort)
           trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
-
+      if (slotNbt && isLongwing && slotNbt.variant) {
+        trade = global.trades.get(`longwings:variant/${slotNbt.variant}`);
+      }
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
@@ -142,6 +138,19 @@ global.processShippingBinInventory = (
         Item.of(slotItem).hasTag("society:brine_and_punishment")
       ) {
         itemValue *= 2;
+      }
+      if (isLongwing) {
+        let size = 1.0;
+        if (slotNbt.nbt) {
+          if (item.nbt.size && typeof item.nbt.size !== "function") {
+            size = slotNbt.size;
+          }
+        }
+        if (stages.toString().includes("the_metamorphosize")) {
+          itemValue += (Math.round((size / 0.01) * 4) * 3);
+        } else {
+          itemValue += Math.round((size / 0.01) * 4)
+        }
       }
       let additionalValue = Math.round(
         itemValue *
@@ -390,6 +399,7 @@ global.cacheShippingBin = (entity) => {
     "phenomenology_of_treasure",
     "brine_and_punishment",
     "the_quality_of_the_earth",
+    "the_metamorphosize"
   ];
   let binPlayer;
   level.getServer().players.forEach((p) => {

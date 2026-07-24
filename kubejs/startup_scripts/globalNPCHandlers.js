@@ -113,7 +113,7 @@ const villagerSpecificGifts = new Map([
         liked: ["herbalbrews:cinnamon_coffee", "society:cranberry", "society:boysenberry", "society:crystalberry", "society:salmonberry"],
         neutral: [],
         disliked: ["#society:mineral"],
-        hated: ["#minecraft:flowers", "#forge:raw_meat", "#minecraft:fishes"],
+        hated: ["#minecraft:flowers", "#forge:raw_meat", "minecraft:rabbit_foot", "#minecraft:fishes"],
     }],
     ["banker", {
         loved: ["society:legendary_ink", "wildernature:bison_horn", "candlelight:beef_wellington", "society:aged_goat_cheese_block", "meadow:goat_cheese_block"],
@@ -140,15 +140,36 @@ const villagerSpecificGifts = new Map([
         loved: ["unusualfishmod:cooked_aero_mono_stick", "society:princess_hairbrush", "vintagedelight:century_egg", "society:aquamagical_dust", "society:heart_of_neptunium", "minecraft:heart_of_the_sea"],
         liked: ["#minecraft:fishes", "minecraft:nautilus_shell", "minecraft:echo_shard", "crittersandcompanions:clam", "botania:black_lotus", "#minecraft:decorated_pot_sherds"],
         neutral: [],
-        disliked: [],
+        disliked: ["crabbersdelight:pearl_block"],
         hated: [],
     }],
     ["market", {
-        loved: ["#vinery:red_wine","society:glitched_vhs", "windswept:elder_feather", "society:latte", "society:tubasmoke_carton", "society:ancient_vespertine"],
+        loved: ["#vinery:red_wine", "society:glitched_vhs", "windswept:elder_feather", "society:latte", "society:tubasmoke_carton", "society:ancient_vespertine"],
         liked: ["society:tubasmoke_stick", "society:energy_drink", "supplementaries:antique_ink", "herbalbrews:coffee", "untitledduckmod:duck_feather"],
         neutral: [],
         disliked: [],
         hated: ["herbalbrews:milk_coffee", "society:death_liquid"],
+    }],
+    ["librarian", {
+        loved: ["#society:clothing"],
+        liked: ["supplementaries:antique_ink", "#society:dish", "society:prismatic_shard", "herbalbrews:oolong_tea", "society:sunlit_pearl", "vinery:jellie_wine", "society:bowl_of_soul"],
+        neutral: ["minecraft:rabbit_foot", "crabbersdelight:pearl_block"],
+        disliked: ["#vinery:red_wine", "#vinery:white_wine"],
+        hated: ["society:tubasmoke_stick", "society:tubasmoke_carton"],
+    }],
+    ["witch", {
+        loved: ["#society:eldritch", "society:energy_drink", 'society:pink_energy_drink', 'society:white_energy_drink', 'society:mana_energy_drink', "society:latte", "society:mocha", "society:bowl_of_soul", "herbalbrews:milk_coffee", "herbalbrews:hazelnut_coffee"],
+        liked: ["#society:mineral", "#minecraft:flowers", "herbalbrews:coffee", "society:espresso", "society:dirty_chai", "society:death_liquid"],
+        neutral: ["#society:farmer_product",],
+        disliked: ["society:truffle_tea"],
+        hated: ["#minecraft:fishes", "herbalbrews:witch_hat"],
+    }],
+    ["trader", {
+        loved: ["society:star_coquito", "society:starcardi", "society:truffle_tea", 'veggiesdelight:rice_and_vegetables', 'society:chicken_tortilla_soup'],
+        liked: ["snuffles:frosty_fluff", "#society:mineral", "#society:dish", "society:prismatic_shard", "minecraft:rabbit_foot", "society:sunlit_pearl", "crabbersdelight:pearl_block"],
+        neutral: [],
+        disliked: ["#society:clothing"],
+        hated: ["society:gnome", 'society:spider_silk'],
     }]
 ]);
 

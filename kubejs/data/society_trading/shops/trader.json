@@ -1,9 +1,12 @@
 {
   "shop_id": "trader",
   "name": "shop.society_trading.trader",
-  "texture": "minecraft:textures/block/fletching_table_side",
-  "stage_required": "entered_skull_cavern",
-  "jei_catalyst": { "item": "society:ancient_cog" },
+  "texture": "dialog:textures/portraits/trader",
+  "stage_required": "invited_trader",
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:trader\"}}"
+  },
   "villager_profession": "fletcher",
   "trades": [
     {
@@ -380,6 +383,45 @@
       "stage_required": "mining_mastery",
       "unlock_description": "jei.society_trading.mining_mastery_unlocked",
       "trade_id": "minecraft:trader_recycled_core_for_ruby_and_prismatic_shard"
+    },
+    {
+      "offer": {
+        "item": "society:monocle",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_goat_cheese_block",
+        "count": 8
+      },
+      "stage_required": "trader_clothing",
+      "unlock_description": "jei.society_trading.trader_clothing",
+      "trade_id": "trader_monocle_for_aged_goat_cheese_block"
+    },
+    {
+      "offer": {
+        "item": "society:red_glasses",
+        "count": 1
+      },
+      "request": {
+        "item": "botania:manaweave_cloth",
+        "count": 8
+      },
+      "stage_required": "trader_clothing",
+      "unlock_description": "jei.society_trading.trader_clothing",
+      "trade_id": "trader_red_glasses_for_manaweave_cloth"
+    },
+    {
+      "offer": {
+        "item": "society:spiral_glasses",
+        "count": 1
+      },
+      "request": {
+        "item": "society:pink_energy_drink",
+        "count": 8
+      },
+      "stage_required": "trader_clothing",
+      "unlock_description": "jei.society_trading.trader_clothing",
+      "trade_id": "trader_spiral_glasses_for_pink_energy_drink"
     }
   ]
 }

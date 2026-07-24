@@ -1,0 +1,83 @@
+{
+	"id": "witch_gift_neutral_4",
+	"title": "witch introduction",
+	"description": "dialog.npc.witch.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_neutral.4.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_neutral.4.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_neutral.4.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_neutral.4.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

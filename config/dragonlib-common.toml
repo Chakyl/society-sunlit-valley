@@ -1,6 +1,11 @@
 
 [dragonlib_common_config]
 
+	[dragonlib_common_config.caching]
+		#Specifies how aggressively data should be cached. The lower the value, the less data will be cached, which can reduce RAM usage. However, depending on the situation, less caching can lead to increased CPU usage and cause lag. Only works with mods that actively use the feature! If in doubt, leave unchanged. (Default: NORMAL, OFF = only the most important data will be cached)
+		#Allowed Values: NORMAL, REDUCED, MINIMAL, OFF
+		mode = "NORMAL"
+
 	[dragonlib_common_config.time]
 		#The number of ticks for one Minecraft day. If in doubt, leave it unchanged! (Default: 24000)
 		#Range: > 0
@@ -11,11 +16,6 @@
 		#The number of ticks by which the time of day is shifted to match the real daytime. By default, 0 ticks is 6 AM, but 0 ticks should represent 12 AM (midnight). If in doubt, leave it unchanged! (Default: 6000)
 		#Range: > 0
 		daytime_shift = 6000
-
-	[dragonlib_common_config.caching]
-		#Specifies how aggressively data should be cached. The lower the value, the less data will be cached, which can reduce RAM usage. However, depending on the situation, less caching can lead to increased CPU usage and cause lag. Only works with mods that actively use the feature! If in doubt, leave unchanged. (Default: NORMAL, OFF = only the most important data will be cached)
-		#Allowed Values: NORMAL, REDUCED, MINIMAL, OFF
-		mode = "NORMAL"
 
 	[dragonlib_common_config.compat]
 		#Hides the warning when Sodium is installed, but no mod that fixes the visual glitches.

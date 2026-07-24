@@ -1,4 +1,6 @@
 JEIEvents.addItems((e) => {
+  e.add("displaydelight:food_plate")
+  e.add("displaydelight:small_food_plate")
   e.add("minecraft:bundle");
   e.add("snowyspirit:ginger_crate");
   const trophies = [

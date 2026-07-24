@@ -1,0 +1,26 @@
+{
+	"id": "trader_gift_liked_0",
+	"title": "trader introduction",
+	"description": "dialog.npc.trader.gift.liked",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.gift_liked.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "liked/trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

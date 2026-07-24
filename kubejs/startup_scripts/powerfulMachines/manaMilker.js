@@ -44,7 +44,9 @@ StartupEvents.registry("block", (event) => {
           let data = animal.persistentData;
           if (mana >= MANA_PER_MILK) {
             const day = global.getDay(level);
-            let milkItem = global.getMilk(level, animal, data, undefined, day);
+            let milkItem = global.getMilk(
+              level, animal, data, null, day, undefined, undefined, global.NO_STAGES
+            );
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);
               if (success) {

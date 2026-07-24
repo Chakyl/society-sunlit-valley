@@ -6,7 +6,7 @@ const isEdging = (pos, x, z, radius) =>
   pos.z === z + radius ||
   pos.z === z - radius;
 
-const runTotem = (e, type) => {
+const runSpotTotem = (e, type) => {
   const { server, player, level, item } = e;
 
   const block = player.getOnPos();
@@ -46,9 +46,38 @@ const runTotem = (e, type) => {
 };
 
 ItemEvents.rightClicked("society:treasure_totem", (e) => {
-  runTotem(e, "digspot");
+  runSpotTotem(e, "digspot");
 });
 
 ItemEvents.rightClicked("society:bubble_totem", (e) => {
-  runTotem(e, "fishingspot");
+  runSpotTotem(e, "fishingspot");
+});
+
+
+const runWeatherTotem = (e, weather) => {
+  const { server, player, item } = e;
+
+  server.runCommandSilent(
+    `weather ${weather}`
+  );
+  server.runCommandSilent(
+    `playsound botania:terrasteel_craft block @a ${player.x} ${player.y} ${player.z}`
+  );
+  server.runCommandSilent(
+    `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
+  );
+  if (!player.isCreative()) item.count--;
+  global.addItemCooldown(player, item.id, 2000);
+};
+
+ItemEvents.rightClicked("society:dry_totem", (e) => {
+  runWeatherTotem(e, "clear");
+});
+
+ItemEvents.rightClicked("society:rain_totem", (e) => {
+  runWeatherTotem(e, "rain");
+});
+
+ItemEvents.rightClicked("society:thunder_totem", (e) => {
+  runWeatherTotem(e, "thunder");
 });

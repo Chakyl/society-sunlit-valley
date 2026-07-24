@@ -17,7 +17,7 @@
 	#The seconds that must pass after fishing a fishing spot before another fishing spot can appear for a player.
 	afterFishingCooldownSeconds = 600.0
 	#The maximum distance a bobber can be from a fishing spot to still trigger it.
-	fishingRangeTolerance = 3
+	fishingRangeTolerance = 6
 	#Fishing spots will lure fish quicker than regular water. Set to -1 to disable.
 	secondsUntilLured = 2.0
 	#The limit of fishing spots that can spawn in a given chunk overall. Once this many fishing spots have spawned, the chunk will never spawn any again. Set to -1 to disable.

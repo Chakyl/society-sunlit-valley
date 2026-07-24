@@ -1,6 +1,6 @@
 console.info("[SOCIETY] sparkstoneRecycler.js loaded");
 
-const MANA_PER_RECYCLE = 10000;
+const MANA_PER_RECYCLE = 5000;
 const RECYCLER_MAX_MANA = MANA_PER_RECYCLE * 50;
 
 global.checkSparkstoneRecyclers = (level, block) => {

@@ -155,6 +155,22 @@ ServerEvents.recipes((e) => {
     S: "unusualfishmod:raw_sneep_snorp",
     f: "meadow:fire_log",
   });
+    e.shaped("society:dry_totem", ["ppp", "ptp", "fff"], {
+    p: "society:fire_quartz",
+    t: "society:truffle_oil",
+    f: "meadow:fire_log",
+  });
+  e.shaped("society:rain_totem", ["ppp", "ptp", "fff"], {
+    p: "society:pine_tar",
+    t: "society:truffle_oil",
+    f: "meadow:fire_log",
+  });
+  e.shaped("society:thunder_totem", ["ppp", "tat", "fff"], {
+    p: "society:oak_resin",
+    t: "society:truffle_oil",
+    a: "society:amulet_of_light",
+    f: "meadow:fire_log",
+  });
   // Earth Crystal
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
@@ -493,6 +509,19 @@ ServerEvents.recipes((e) => {
     s: "society:sparkstone",
     N: "aquaculture:neptunium_ingot",
   });
+  e.shaped("society:fish_pond_hatchery", ["NSN", "sbs", "sss"], {
+    S: "society:sunlit_pearl",
+    b: "society:fish_pond_basket",
+    s: "oreganized:silver_ingot",
+    N: "aquaculture:algae",
+  });
+    e.shaped("society:fish_pond_manager", ["NCN", "ScS", "NbN"], {
+    c: "cozycafe:cafe_manager",
+    C: "minecraft:conduit",
+    b: "society:magic_bulb",
+    S: "society:sunlit_pearl",
+    N: "aquaculture:neptunium_ingot",
+  });
   // Fish
   e.shaped("society:fish_pond", [" j ", "PwP", "rNr"], {
     j: "society:river_jelly",
@@ -685,6 +714,21 @@ ServerEvents.recipes((e) => {
     "pamhc2trees:pawpawitem",
     "minecraft:sugar",
   ]);
+  e.shapeless("society:pink_energy_drink", [
+    "society:sparkpod_juice",
+    "pamhc2trees:peachitem",
+    "minecraft:sugar",
+  ]);
+  e.shapeless("society:white_energy_drink", [
+    "society:starfruit_juice",
+    "pamhc2trees:dragonfruititem",
+    "minecraft:sugar",
+  ]);
+  e.shapeless("society:mana_energy_drink", [
+    "society:mana_fruit_juice",
+    "pamhc2trees:lemonitem",
+    "minecraft:sugar",
+  ]);
   e.shapeless("society:death_liquid", [
     "minecraft:skeleton_skull",
     "society:battery",
@@ -778,6 +822,18 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
   });
   e.shaped(
+    "society:caterpillar_box",
+    ["isi", "abm", "iBi"],
+    {
+      s: "#minecraft:saplings",
+      i: "minecraft:iron_block",
+      b: "minecraft:barrel",
+      B: "society:battery",
+      a: "society:butterfly_amber",
+      m: "society:moth_pollen",
+    }
+  );
+  e.shaped(
     "dew_drop_farmland_growth:diamond_sprinkler",
     ["nDn", " s ", " b "],
     {
@@ -859,7 +915,12 @@ ServerEvents.recipes((e) => {
     s: "society:sparkstone_block",
     h: "minecraft:goat_horn",
   });
-
+  e.shaped("society:drum_cornucopia", ["LLL", "lcl", "lbl"], {
+    L: "minecraft:leather",
+    c: "society:cornucopia",
+    b: "society:magic_bulb",
+    l: "meadow:fire_log"
+  });
   e.shaped("society:mana_milker", ["rtr", "nMn", "lTl"], {
     r: "botania:rune_earth",
     t: "society:botanical_tribute",
@@ -1005,4 +1066,13 @@ ServerEvents.recipes((e) => {
   e.shapeless("dew_drop_farmland_growth:low_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:low_quality_fertilizer"])
   e.shapeless("dew_drop_farmland_growth:high_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:high_quality_fertilizer"])
   e.shapeless("dew_drop_farmland_growth:pristine_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:pristine_quality_fertilizer"])
+
+  e.custom({
+    type: "create:filling",
+    ingredients: [
+      { "item": "vintagedelight:roasted_peanut" },
+      { "amount": 125, "fluid": "create:honey" }
+    ],
+    "results": [{ "item": "vintagedelight:honey_roasted_peanut" }]
+  });
 });

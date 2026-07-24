@@ -152,13 +152,19 @@ if (global.datagenDialog) {
           "I couldn't manage to find mystic willow logs though, I had to call in a favor to Caroline to get some blocks made with them...",
           "I appreciate everything you've done for this town, and I hope you'll find this useful when building it out more!"
         ]
-      },
+      }
+    ],
+    choiceDialogs: [
       {
         name: "need_to_buy",
-        text: [
-          "Need to pick up something from the shop?",
+        text: ["Need to pick up something from the shop?",],
+        options: [
+          { text: "Purchase supplies", command: "openshop @p carpenter" },
+          { text: "Invite Villagers", command: "openshop @p invitations" },
+          { text: "Build Farm buildings", command: "openselector @p building_shop" },
+          { text: "Build Village buildings", command: "openselector @p town_building_shop" }
         ]
-      },
+      }
     ]
   });
 }

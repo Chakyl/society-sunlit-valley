@@ -35,38 +35,10 @@
 					type: "item"
 				}
 				{
-					id: "1990DE13813B0895"
-					item: {
-						Count: 1
-						id: "portable_blueprints:worn_blueprint"
-						tag: {
-							Damage: 1
-							allow_nbt: 1
-							altezza: 0
-							blueprint_name: "npc_market"
-							buildAnyway: 0b
-							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.market_house\"}"
-							}
-							free_build: 1
-							inventari_blocco_selezionati: ""
-							lunghezzaX: 0
-							lunghezzaZ: 0
-							mirrowX: 0b
-							mirrowY: 0b
-							mirrowZ: 0b
-							nome: "npc_market"
-							owner: "worn"
-							owner_name: "EeveeBeby"
-							remaining_uses: 1
-							rotateValue: 0s
-							skipObstructionBlock: 0b
-							visualizeBuild: 1b
-							wasHolding: 1b
-							worn_set: 1b
-						}
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "0059A6EC80AF7A10"
+					table_id: 5339132638303864804L
+					type: "choice"
 				}
 			]
 			subtitle: "{ftbquests.chapter.ii__building_up_the_farm.quest6ADD884F3FFE5D42.subtitle}"
@@ -381,6 +353,7 @@
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest230E02067CBC21CF.description1}"]
+			hide_until_deps_complete: true
 			id: "230E02067CBC21CF"
 			rewards: [{
 				id: "5D513DA30D642A58"
@@ -398,6 +371,7 @@
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
 			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest7B2EB2B56F155E49.description1}"]
+			hide_until_deps_visible: true
 			id: "7B2EB2B56F155E49"
 			rewards: [{
 				id: "1FB60E6724AEDA99"
@@ -559,38 +533,10 @@
 					type: "item"
 				}
 				{
-					id: "74D518051CBD8479"
-					item: {
-						Count: 1
-						id: "portable_blueprints:worn_blueprint"
-						tag: {
-							Damage: 1
-							allow_nbt: 1
-							altezza: 0
-							blueprint_name: "npc_shepherd"
-							buildAnyway: 0b
-							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.shepherd_house\"}"
-							}
-							free_build: 1
-							inventari_blocco_selezionati: ""
-							lunghezzaX: 0
-							lunghezzaZ: 0
-							mirrowX: 0b
-							mirrowY: 0b
-							mirrowZ: 0b
-							nome: "npc_shepherd"
-							owner: "worn"
-							owner_name: "EeveeBeby"
-							remaining_uses: 1
-							rotateValue: 0s
-							skipObstructionBlock: 0b
-							visualizeBuild: 0b
-							wasHolding: 1b
-							worn_set: 1b
-						}
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "122E7CE7639360EB"
+					table_id: 4010461906988332762L
+					type: "choice"
 				}
 			]
 			size: 1.5d
@@ -906,38 +852,10 @@
 					type: "item"
 				}
 				{
-					id: "3D837298E5ABEE7F"
-					item: {
-						Count: 1
-						id: "portable_blueprints:worn_blueprint"
-						tag: {
-							Damage: 1
-							allow_nbt: 1
-							altezza: 0
-							blueprint_name: "npc_fisher"
-							buildAnyway: 0b
-							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.fisher_house\"}"
-							}
-							free_build: 1
-							inventari_blocco_selezionati: ""
-							lunghezzaX: 0
-							lunghezzaZ: 0
-							mirrowX: 0b
-							mirrowY: 0b
-							mirrowZ: 0b
-							nome: "npc_fisher"
-							owner: "worn"
-							owner_name: "Nyxzerria"
-							remaining_uses: 1
-							rotateValue: 0s
-							skipObstructionBlock: 0b
-							visualizeBuild: 1b
-							wasHolding: 1b
-							worn_set: 1b
-						}
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "12BE226AAE452A77"
+					table_id: 6640627291859629655L
+					type: "choice"
 				}
 			]
 			size: 1.5d
@@ -1440,7 +1358,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.questE68DD5DFB2DFD97.title}"
-			x: 9.5d
+			x: 9.0d
 			y: -2.5d
 		}
 		{
@@ -1565,6 +1483,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest242D49A4D71EDBEA.description2}"
 			]
+			hide_until_deps_complete: true
 			id: "242D49A4D71EDBEA"
 			rewards: [{
 				count: 8
@@ -1577,8 +1496,8 @@
 				item: "society:frozen_geode"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
@@ -1859,7 +1778,6 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["5B6FD08D6063D6AA"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest61501449BF31B773.description1}"
 				""
@@ -1890,7 +1808,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest61501449BF31B773.title}"
-			x: 12.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -1902,6 +1820,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest69C3121C90AABBF4.description3}"
 			]
+			hide_until_deps_complete: true
 			icon: "refinedstorage:4k_storage_block"
 			id: "69C3121C90AABBF4"
 			tasks: [
@@ -1929,6 +1848,7 @@
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest55D658B5939D9DEB.description3}"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "refinedstorageaddons:wireless_crafting_grid"
@@ -1957,8 +1877,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest55D658B5939D9DEB.title}"
-			x: 13.5d
-			y: 0.0d
+			x: 15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
@@ -2108,8 +2028,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest6F3FC6227213B886.title}"
-			x: 11.5d
-			y: -2.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -2159,7 +2079,164 @@
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest1F12BF72B966E0CC.title}"
 			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B6FD08D6063D6AA"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest723A5C8DB06D8C36.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest723A5C8DB06D8C36.description2}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest723A5C8DB06D8C36.description3}"
+			]
+			id: "723A5C8DB06D8C36"
+			rewards: [
+				{
+					id: "35B88FDE0AB2F86E"
+					item: "cozycafe:cafe_sign"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2234E899812935DB"
+					item: "cozycafe:cafe_menu"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2C2C38F8D9DBD4C5"
+				item: "cozycafe:cafe_manager"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest723A5C8DB06D8C36.title}"
+			x: 12.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["723A5C8DB06D8C36"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.description2}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.description3}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.description4}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.description5}"
+			]
+			hide_until_deps_complete: true
+			icon: "cozycafe:cafe_menu"
+			id: "62129A6009E60E0F"
+			rewards: [{
+				count: 2
+				id: "65E808D4AE33925C"
+				item: "society:furniture_box"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64723DD811BD1C1F"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.task.7237915549357644831.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.title}"
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["723A5C8DB06D8C36"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7C30FC21953CF7D3.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7C30FC21953CF7D3.description2}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7C30FC21953CF7D3.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "cozycafe:serving_plate"
+				tag: {
+					platedFood: {
+						Count: 1b
+						id: "veggiesdelight:vegetables_wrap"
+					}
+				}
+			}
+			id: "7C30FC21953CF7D3"
+			rewards: [{
+				id: "4421B0B2ADC081B2"
+				item: "cluttered:kitchen_set_brown_counter_sink"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3254F63E9C93A786"
+					item: "cozycafe:plating_station"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2C633234709FF8E8"
+					item: { Count: 4, id: "cozycafe:serving_plate" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest7C30FC21953CF7D3.title}"
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5B6FD08D6063D6AA"
+				"61501449BF31B773"
+			]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.description2}"
+			]
+			icon: "minecraft:bookshelf"
+			id: "42C8E1F0D9A5B2BD"
+			min_required_tasks: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17367B77466C47F9"
+				table_id: 9032317954688779283L
+				type: "choice"
+			}]
+			subtitle: "{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.subtitle}"
+			tasks: [
+				{
+					id: "1FA1D3740CCD0A8D"
+					item: {
+						Count: 1
+						id: "society:invitation"
+						tag: {
+							type: {
+								id: "society:librarian"
+							}
+						}
+					}
+					title: "{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.task.2279335381810612877.title}"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "society:villager"
+						tag: {
+							type: {
+								id: "society:librarian"
+							}
+						}
+					}
+					id: "62E5A962C8F9D3E3"
+					stage: "invited_librarian"
+					type: "gamestage"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

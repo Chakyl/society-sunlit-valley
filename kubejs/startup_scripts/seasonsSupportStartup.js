@@ -12,6 +12,7 @@ const seasonName = (seasonObj) => {
     return 'winter'
   }
 }
+
 global.getSeasonFromLevel = (level) => {
   return seasonName(SeasonHelper.getSeasonState(level).getSeason())
 }
@@ -30,4 +31,8 @@ global.getSeasonFromBiome = (level, pos) => {
     return "winter"
   }
   return global.getSeasonFromLevel(level);
+}
+
+global.isLateSeason = (level) => {
+  return SeasonHelper.getSeasonState(level).getSubSeason().toString().includes("LATE");
 }

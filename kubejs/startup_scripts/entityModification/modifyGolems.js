@@ -28,16 +28,7 @@ global.handleHayGolem = (entity) => {
             "dew_drop_farmland_growth:high_quality_fertilized_farmland",
             scanBlock.getProperties()
           );
-        } else if (
-          scanBlock.id.equals(
-            "dew_drop_farmland_growth:high_quality_fertilized_farmland"
-          )
-        ) {
-          scanBlock.set(
-            "dew_drop_farmland_growth:pristine_quality_fertilized_farmland",
-            scanBlock.getProperties()
-          );
-        }
+        } 
         if (level.server) {
           level.server.runCommandSilent(
             `playsound ribbits:entity.ribbit.magic block @a ${scanBlock.x} ${scanBlock.y} ${scanBlock.z}`
@@ -131,7 +122,7 @@ EntityJSEvents.modifyEntity((event) => {
   });
   event.modify("golemoverhaul:terracotta_golem", (modifyBuilder) => {
     modifyBuilder.tick((entity) => {
-      if (entity.level.time % 600 === 0) {
+      if (entity.level.time % 200 === 0) {
         global.handleTerracottaGolem(entity);
       }
     });

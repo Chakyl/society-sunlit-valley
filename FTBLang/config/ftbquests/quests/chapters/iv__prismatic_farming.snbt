@@ -177,12 +177,11 @@
 			y: 12.5d
 		}
 		{
+			dependencies: ["7037A26BF990653E"]
 			description: [
 				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description1}"
 				""
 				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description2}"
-				""
-				"{ftbquests.chapter.iv__prismatic_farming.quest41C453E806763C4F.description3}"
 			]
 			icon: "minecraft:fletching_table"
 			id: "41C453E806763C4F"
@@ -1750,6 +1749,8 @@
 				"{ftbquests.chapter.iv__prismatic_farming.quest2C4862DD33189878.description2}"
 			]
 			id: "2C4862DD33189878"
+			invisible: true
+			optional: true
 			rewards: [{
 				count: 3
 				id: "5644B1652E87A67C"
@@ -1763,6 +1764,84 @@
 			}]
 			x: -3.0d
 			y: 20.0d
+		}
+		{
+			dependencies: ["63F8C52D082BBCB3"]
+			id: "4CCA31DA0B782830"
+			tasks: [{
+				id: "777E8C982C73B22B"
+				item: "society:drum_cornucopia"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["63F8C52D082BBCB3"]
+			id: "73D3DF7A58D2112A"
+			tasks: [{
+				id: "084DC2042C9DBB51"
+				item: "society:fish_pond_manager"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"1DC8E69A916864DC"
+				"6A94BB4CB99D814E"
+			]
+			description: [
+				"{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.description1}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.description2}"
+			]
+			hide_dependent_lines: true
+			hide_text_until_complete: false
+			icon: "society:ruby"
+			id: "7037A26BF990653E"
+			min_required_tasks: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "323C6A712377320E"
+				table_id: 8921602476353446055L
+				type: "choice"
+			}]
+			subtitle: "{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.subtitle}"
+			tasks: [
+				{
+					id: "0944E1D3F203821B"
+					item: {
+						Count: 1
+						id: "society:invitation"
+						tag: {
+							type: {
+								id: "society:trader"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "society:villager"
+						tag: {
+							type: {
+								id: "society:trader"
+							}
+						}
+					}
+					id: "48A5EF6D1BB8647A"
+					stage: "invited_trader"
+					title: "{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.task.5234853393783612538.title}"
+					type: "gamestage"
+				}
+			]
+			title: "{ftbquests.chapter.iv__prismatic_farming.quest7037A26BF990653E.title}"
+			x: -3.0d
+			y: 10.5d
 		}
 	]
 	title: "{ftbquests.chapter.iv__prismatic_farming.title}"

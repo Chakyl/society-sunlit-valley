@@ -90,14 +90,8 @@ const successParticles = (level, block) => {
 };
 
 const itemHasTag = (item, tag) => {
-  let tags = item.getTags().toList();
-  let found = false;
-  tags.forEach((itemTag) => {
-    if (itemTag.toString().includes(tag.slice(1))) {
-      found = true;
-    }
-  });
-  return found;
+  const tagString = tag.startsWith("#") ? tag.substring(1) : tag;
+  return item.hasTag(tagString);
 };
 
 const setQuality = (nbt, stage, itemQuality) => {
@@ -117,10 +111,11 @@ const getCanTakeItems = (
   recipes,
   nbt
 ) => {
+  if (properties.get("working") == "true" || properties.get("mature") == "true") return false;
   let itemCheck = recipe !== undefined;
   if (hasTag) {
     Array.from(recipes.keys()).forEach((key) => {
-      if (key.includes("#")) {
+      if (key.startsWith("#")) {
         if (itemHasTag(item, key)) {
           if (nbt.data.recipe.equals("") || nbt.data.recipe == undefined) {
             nbt.merge({ data: { recipe: key, originalInputs: [] } });
@@ -138,11 +133,7 @@ const getCanTakeItems = (
       }
     });
   }
-  return (
-    itemCheck &&
-    properties.get("working").toLowerCase() === "false" &&
-    properties.get("mature").toLowerCase() === "false"
-  );
+  return itemCheck
 };
 
 global.convertFromLegacy = (recipes, level, block) => {
@@ -779,6 +770,32 @@ global.useInventoryItems = (inventory, id, count) => {
   return 0;
 };
 
+global.inventoryUseItems = (inventory, id, count) => {
+  if (!inventory) return 0;
+
+  const slots = inventory.getSlots();
+  let remaining = count;
+
+  let total = 0;
+  for (let i = 0; i < slots; i++) {
+    let stack = inventory.getStackInSlot(i);
+    if (stack.item.id === id) total += stack.count;
+  }
+  if (total < count) return -1;
+
+  for (let i = 0; i < slots; i++) {
+    if (remaining <= 0) break;
+    let stack = inventory.getStackInSlot(i);
+    if (stack.item.id === id) {
+      let toExtract = Math.min(stack.count, remaining);
+      inventory.extractItem(i, toExtract, false);
+      remaining -= toExtract;
+    }
+  }
+
+  return 1;
+};
+
 /** All fluid handlers expect the following initialData with a capacity of 10000
  *
  *  blockInfo.initialData({ Fluid: 0, FluidType: "" });
@@ -870,12 +887,12 @@ global.spawnTextDisplay = (block, y, id, text) => {
   entity.spawn();
 };
 
-global.giveExperience = (server, player, category, xp) => {
+global.giveExperience = (server, player, category, xp, excludeMastery) => {
   if (!player.isFake()) {
     server.runCommandSilent(
       `puffish_skills experience add ${player.username} society:${category} ${xp}`
     );
-    if (player.stages.has("mastery_unlocked")) {
+    if (!excludeMastery && player.stages.has("mastery_unlocked")) {
       server.runCommandSilent(
         `puffish_skills experience add ${player.username} society:mastery ${xp}`
       );
@@ -884,29 +901,29 @@ global.giveExperience = (server, player, category, xp) => {
 };
 
 /**
- * If you can figure out a way to simplify this in a way that doesn't make it
- * More difficult to read you get an artifact in-game.
+ * If you can figure out a way to simplify this in a way that doesn't 
+ * make it more difficult to read you get an artifact in-game.
  */
 global.getProcessedItem = (item, dropAmount) => {
   let processOutput = global.mayonnaiseMachineRecipes.get(item);
   if (processOutput)
-    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: true };
+    return { divisor: 1, item: Item.of(processOutput.output[0]), preserveQuality: true };
   // Wine Keg 
   processOutput = global.wineKegRecipes.get(item);
   if (processOutput)
-    return { divisor: 3, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+    return { divisor: 3, item: Item.of(processOutput.output[0]), preserveQuality: false };
   // Oil Maker
   processOutput = global.oilMakerRecipes.get(item);
   if (processOutput)
-    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+    return { divisor: 1, item: Item.of(processOutput.output[0]), preserveQuality: false };
   // Loom
   processOutput = global.loomRecipes.get(item);
   if (processOutput && dropAmount >= 5)
-    return { divisor: 5, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+    return { divisor: 5, item: Item.of(processOutput.output[0]), preserveQuality: false };
   // Recycling Machine
   processOutput = global.recyclingMachineRecipes.get(item);
   if (processOutput)
-    return { divisor: 1, item: Item.of(processOutput.output[0]).id, preserveQuality: false };
+    return { divisor: 1, item: Item.of(processOutput.output[0]), preserveQuality: false };
   return { divisor: 1, item: item, preserveQuality: true };
 };
 

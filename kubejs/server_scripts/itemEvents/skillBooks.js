@@ -25,6 +25,7 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:the_quality_of_the_earth", skillId: "y99a5jkv7tmu7vmc" },
   { id: "society:the_red_and_the_black", skillId: "ysthrzir822oedus" },
   { id: "society:women_who_run_with_the_plushies", skillId: "2vo8noqvq4aj1egy" },
+  { id: "society:the_metamorphosize", skillId: "gjvl3ej2fhc4cwzb" },
 ].forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;

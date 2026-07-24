@@ -189,38 +189,10 @@
 					type: "item"
 				}
 				{
-					id: "16213FA11FBA47CF"
-					item: {
-						Count: 1
-						id: "portable_blueprints:worn_blueprint"
-						tag: {
-							Damage: 1
-							allow_nbt: 1
-							altezza: 0
-							blueprint_name: "npc_carpenter"
-							buildAnyway: 0b
-							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.carpenter_house\"}"
-							}
-							free_build: 1
-							inventari_blocco_selezionati: ""
-							lunghezzaX: 0
-							lunghezzaZ: 0
-							mirrowX: 0b
-							mirrowY: 0b
-							mirrowZ: 0b
-							nome: "npc_carpenter"
-							owner: "worn"
-							owner_name: "EeveeBeby"
-							remaining_uses: 1
-							rotateValue: 0s
-							skipObstructionBlock: 0b
-							visualizeBuild: 1b
-							wasHolding: 1b
-							worn_set: 1b
-						}
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "672B2E2736C0E2FA"
+					table_id: 4405638385431144688L
+					type: "choice"
 				}
 			]
 			subtitle: "{ftbquests.chapter.getting_started.quest66D159252C70D5F2.subtitle}"
@@ -710,10 +682,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"6ADD884F3FFE5D42"
-				"1A4FD076999BF29F"
-			]
+			dependencies: ["1A4FD076999BF29F"]
 			description: [
 				"{ftbquests.chapter.getting_started.quest4DB169DA4B4CCFBA.description1}"
 				""
@@ -723,39 +692,10 @@
 			id: "4DB169DA4B4CCFBA"
 			min_required_tasks: 1
 			rewards: [{
-				id: "669F3B06BA7E112C"
-				item: {
-					Count: 1
-					id: "portable_blueprints:worn_blueprint"
-					tag: {
-						Damage: 1
-						allow_nbt: 1
-						altezza: 0
-						blueprint_name: "npc_banker"
-						buildAnyway: 0b
-						display: {
-							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.banker_house\"}"
-						}
-						free_build: 1
-						inventari_blocco_selezionati: ""
-						lunghezzaX: 0
-						lunghezzaZ: 0
-						mirrowX: 0b
-						mirrowY: 0b
-						mirrowZ: 0b
-						nome: "npc_banker"
-						originPos: "x=103,y=-60,z=44"
-						owner: "worn"
-						owner_name: "Kanlamari"
-						remaining_uses: 1
-						rotateValue: 0s
-						skipObstructionBlock: 0b
-						visualizeBuild: 0b
-						wasHolding: 1b
-						worn_set: 1b
-					}
-				}
-				type: "item"
+				exclude_from_claim_all: true
+				id: "2F0A80BAD3A055DE"
+				table_id: 7261611292928821464L
+				type: "choice"
 			}]
 			subtitle: "{ftbquests.chapter.getting_started.quest4DB169DA4B4CCFBA.subtitle}"
 			tasks: [
@@ -867,39 +807,10 @@
 					type: "item"
 				}
 				{
-					id: "7694A381C94D651D"
-					item: {
-						Count: 1
-						id: "portable_blueprints:worn_blueprint"
-						tag: {
-							Damage: 1
-							allow_nbt: 1
-							altezza: 0
-							blueprint_name: "npc_blacksmith"
-							buildAnyway: 0b
-							display: {
-								Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.blacksmith_house\"}"
-							}
-							free_build: 1
-							inventari_blocco_selezionati: ""
-							lunghezzaX: 0
-							lunghezzaZ: 0
-							mirrowX: 0b
-							mirrowY: 0b
-							mirrowZ: 0b
-							nome: "npc_blacksmith"
-							originPos: "x=102,y=-60,z=41"
-							owner: "worn"
-							owner_name: "Kanlamari"
-							remaining_uses: 1
-							rotateValue: 0s
-							skipObstructionBlock: 0b
-							visualizeBuild: 0b
-							wasHolding: 1b
-							worn_set: 1b
-						}
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "276A094BCA07AC23"
+					table_id: 1765159859074953287L
+					type: "choice"
 				}
 			]
 			subtitle: "{ftbquests.chapter.getting_started.quest24C86673E1F57A3E.subtitle}"

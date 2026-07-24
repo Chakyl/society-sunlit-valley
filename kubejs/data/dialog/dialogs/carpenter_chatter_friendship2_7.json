@@ -59,6 +59,24 @@
 					"command": [
 						"openshop @p invitations"
 					]
+				},
+				{
+					"text": {
+						"translate": "dialog.npc.carpenter.build_farm"
+					},
+					"target": "end",
+					"command": [
+						"openselector @p building_shop"
+					]
+				},
+				{
+					"text": {
+						"translate": "dialog.npc.carpenter.build_village"
+					},
+					"target": "end",
+					"command": [
+						"openselector @p building_shop"
+					]
 				}
 			]
 		},
