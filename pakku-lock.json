@@ -2908,24 +2908,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
+                    "file_name": "create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6987/710/create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
-                    "id": "6987710",
+                    "url": "https://edge.forgecdn.net/files/8204/836/create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar",
+                    "id": "8204836",
                     "parent_id": "820977",
                     "hashes": {
-                        "sha1": "4e1048ce2b5453d657b42ea5dcec5ada1842b0ea",
-                        "md5": "cf941597532a7837327ee891b36f0596"
+                        "sha1": "bb724b37b191f6bcbe1e6bc395742e50352e8dbc",
+                        "md5": "ecc1671b1e2db7b0de6a5e93b6e7acd6"
                     },
-                    "required_dependencies": [],
-                    "size": 822499,
-                    "date_published": "2025-09-11T22:51:01.050Z"
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 835363,
+                    "date_published": "2026-06-06T09:58:32.300Z"
                 }
             ]
         },

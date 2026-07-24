@@ -10,7 +10,7 @@ const updateLeaderboardMap = (server) => {
     accountName = playerList[playerUUID];
     if (overflowList != null && overflowList[playerUUID] != null) {
       leaderboardMap.set(
-        playerName,
+        accountName,
         bankAccount.getBalance() + overflowList[playerUUID] * 1006632960
       );
     } else {
