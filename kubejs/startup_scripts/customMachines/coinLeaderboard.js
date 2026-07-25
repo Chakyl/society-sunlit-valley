@@ -1,31 +1,32 @@
 console.info("[SOCIETY] coinLeaderboard.js loaded");
 
 const updateLeaderboardMap = (server) => {
-  let accountName;
   let playerList = server.persistentData.playerList;
+  let cardsList = server.persistentData.cardsList;
   let overflowList = server.persistentData.overflowList;
   if (!playerList) return undefined;
   let leaderboardMap = new Map();
   global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
-    accountName = playerList[playerUUID];
-    if (overflowList != null && overflowList[playerUUID] != null) {
-      leaderboardMap.set(
-        accountName,
-        bankAccount.getBalance() + overflowList[playerUUID] * 1006632960
-      );
-    } else {
-      if (!accountName) {
-        accountName = "";
-        Object.keys(server.persistentData.playerList).forEach((playerUUID) => {
-          if (bankAccount.isAuthorized(playerUUID)) {
-            if (accountName !== "") accountName += " & "
-            accountName += playerList[playerUUID];
-          }
-        })
-      accountName += "'s Team"
-      }
-      leaderboardMap.set(accountName, bankAccount.getBalance());
+    let accountName = playerList[playerUUID];
+    let cBankId = cardsList[playerUUID];
+    let bankBalance = bankAccount.getBalance();
+
+    if (!accountName) { // blaze banker
+      accountName = bankAccount.id;
+    } else if (cBankId != null & cBankId != playerUUID) {
+      bankAccount = global.GLOBAL_BANK.getAccount(cBankId);
+      accountName = bankAccount.id;
     }
+
+    if (overflowList != null && overflowList[playerUUID] != null) {
+      bankBalance += overflowList[playerUUID] * 1006632960;
+    }
+
+    if (leaderboardMap.has(String(accountName))) {
+      leaderboardMap.set(String(accountName), leaderboardMap.get(String(accountName)) + bankBalance);
+    } else {
+      leaderboardMap.set(String(accountName), bankBalance);
+    };
   });
   return Array.from(leaderboardMap)
     .sort((a, b) => b[1] - a[1])
@@ -35,6 +36,7 @@ const updateLeaderboardMap = (server) => {
 global.updateLeaderboard = (block, level, server) => {
   let calcY = block.y + 3;
   let leaderboardMap = updateLeaderboardMap(server);
+  let playerList = server.persistentData.playerList;
   if (!leaderboardMap) return;
   if (global.susFunctionLogging)
     console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
@@ -51,12 +53,27 @@ global.updateLeaderboard = (block, level, server) => {
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
     if (balanceStr[0].length <= 1) return;
+    let accountName = balanceStr[0]
+    let bankAccount = global.GLOBAL_BANK.getAccount(accountName)
+    if (bankAccount) {
+      accountName = bankAccount.label
+      if (accountName == "Blaze Banker") { // default name
+        accountName = "";
+        Object.keys(server.persistentData.playerList).forEach((playerUUID) => {
+          if (bankAccount.isAuthorized(playerUUID)) {
+            if (accountName !== "") accountName += " & "
+            accountName += playerList[playerUUID];
+          }
+        })
+        accountName += "'s Team"
+      }
+    }
     calcY -= 0.3;
     global.spawnTextDisplay(
       block,
       calcY,
       "leaderboard",
-      Text.of(`§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`)
+      Text.of(`§6${accountName} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`)
     );
   });
 };
