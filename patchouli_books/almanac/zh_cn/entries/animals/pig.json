@@ -1,0 +1,17 @@
+{
+  "name": "猪",
+  "category": "patchouli:animals",
+  "icon": "society:truffle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: :coin: 8,192$(li)觅食: 松露 (20% 概率)$(li)掉落物: 生猪排$(br2)$(l)备注$()$(br)觅食行为需要其达到 4 颗心及以上好感度才。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pig",
+      "scale": 0.7,
+      "text": "它们头脑简单但喜怒无常，在你投入大量心思照料后会挖掘珍贵的松露。"
+    }
+  ]
+}

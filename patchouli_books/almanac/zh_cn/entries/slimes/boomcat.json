@@ -1,0 +1,17 @@
+{
+  "name": "爆裂猫",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:boomcat\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)生物群系： 骷髅洞穴$(li)心之融合$(li)挖掘点： 冰、雪块$(li)击杀爬行者（20%概率）$(br2)$(l)风险：$()$(br)饥饿时会引发不破坏方块的爆炸。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "爆裂猫史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:boomcat\"}",
+      "scale": 0.9
+    }
+  ]
+}

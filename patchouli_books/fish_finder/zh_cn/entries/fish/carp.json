@@ -1,0 +1,18 @@
+{
+  "name": "鲤鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:carp",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 40$(li)全年$(li)水域：淡水$(li)天气：春季雨天，其他季节任意$(li)时间：白天，冬季除外"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:carp",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Carp me up."
+    }
+  ]
+}

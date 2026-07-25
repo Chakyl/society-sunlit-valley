@@ -1,0 +1,17 @@
+{
+  "name": "扭曲鸟",
+  "category": "patchouli:animals",
+  "icon": "species:wraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 扭曲鸟蛋$(br2)$(l)备注$()$(br)需要其达到 2 颗心及以上好感度才会下蛋。可在诡异森林生物群系中发现。必须使用命名牌为其命名，否则会消失。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:wraptor",
+      "scale": 0.8,
+      "text": "他们讨厌住在下界以外的地方。"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "肉桂树 🍂❆",
+  "category": "patchouli:trees",
+  "icon": "pamhc2trees:cinnamon_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🍂 §4秋季§r ❆ §b冬季§r $(li)尺寸：1x1$(li)产出：$(l:tree_crops/cinnamon)4-6 肉桂$(/l)$(br2)$(l)备注$()$(li)在交易商或烘焙师那里购买树苗。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 苹果树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "L": "minecraft:jungle_leaves",
+          "W": "pamhc2trees:pamcinnamon[age=7]"
+        },
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "LLLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ]
+      }
+    }
+  ]
+}

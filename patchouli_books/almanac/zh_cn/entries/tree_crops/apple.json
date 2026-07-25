@@ -1,0 +1,30 @@
+{
+  "name": "苹果 🍂",
+  "category": "patchouli:tree_crops",
+  "icon": "minecraft:apple",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 8$(li)🍂 §4秋季§r $(li)产量：4$(li)生长阶段：8$(br2)$(l)备注$()$(li)详见：$(l:trees/pams/apple)苹果树$(/l)$(li)详见：$(l:trees/letsdo/apple)深色苹果树$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 苹果树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "F": "pamhc2trees:pamapple[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

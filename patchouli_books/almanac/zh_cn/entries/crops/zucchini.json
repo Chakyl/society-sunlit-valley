@@ -1,0 +1,30 @@
+{
+  "name": "西葫芦 🔥",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:zucchini",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 72$(li)🔥 §6夏季§r $(li)种子价格：非卖品$(li)产量：1-2$(li)生长时间：7 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 西葫芦作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:zucchini_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

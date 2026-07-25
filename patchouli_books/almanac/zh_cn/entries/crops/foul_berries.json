@@ -1,0 +1,34 @@
+{
+  "name": "秽莓 🍂",
+  "category": "patchouli:crops",
+  "icon": "autumnity:foul_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 4$(li)🍂 §4秋季§r$(li)产量：2/4$(li)生长阶段：4/5$(li)再生阶段：1/2$(br2)$(l)备注$()$(br)发现于枫木森林生物群系$(br)无种子，直接种植果实。$(br)有2个可收获阶段"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 高秽莓丛 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "U"
+          ],
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "autumnity:tall_foul_berry_bush[age=3,half=lower]",
+          "U": "autumnity:tall_foul_berry_bush[age=3,half=upper]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

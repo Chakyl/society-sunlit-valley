@@ -1,0 +1,17 @@
+{
+  "name": "山羊",
+  "category": "patchouli:animals",
+  "icon": "society:large_goat_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: :coin: 16,384$(li)挤奶: 山羊奶$(li)挤奶冷却: 2 天$(li)掉落物: 山羊角$(br2)$(l)备注$()$(br)山羊角是能享受冒险家价值加成的物品。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:goat",
+      "scale": 0.8,
+      "text": "饲养起来很麻烦，但它们的角和奶酪的价值让饲养它们变得值得。"
+    }
+  ]
+}

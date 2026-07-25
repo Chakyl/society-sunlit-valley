@@ -1,0 +1,83 @@
+{
+  "name": "杨桃树 🌐",
+  "category": "patchouli:trees",
+  "icon": "pamhc2trees:starfruit_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🌐 §5全年§r$(li)价格：:coin: 81,920$(li)尺寸：1x1$(li)产出：$(l:tree_crops/starfruit)8x 杨桃$(/l)$(br2)$(l)备注$()$(li)邀请市场入驻到你农场的第二年才会出售这种树苗。$(li)并且需要额外花费四个五彩碎片。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 杨桃树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "L": "minecraft:jungle_leaves",
+          "W": "minecraft:jungle_log[axis=y]",
+          "F": "pamhc2trees:pamstarfruit[age=7]"
+        },
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "LLLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            " FFF ",
+            " FWF ",
+            " FFF ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "甜蜜",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)心之融合$(br2)$(l)风险：$()$(br)不开心时会使你速度加快。情绪极不稳定。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "甜蜜史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:sweet\"}",
+      "scale": 0.9
+    }
+  ]
+}

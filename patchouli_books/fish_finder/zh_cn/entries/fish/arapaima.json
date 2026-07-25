@@ -1,0 +1,20 @@
+{
+  "name": "巨滑舌鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:arapaima",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 224$(li)§0🔥 §6夏季§r$(li)水域：淡水$(li)天气：雨天$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:arapaima",
+      "scale": 0.8,
+      "rotate": true,
+      "default_rotation": 180,
+      "offset": -0.3,
+      "text": "Big boy :)"
+    }
+  ]
+}

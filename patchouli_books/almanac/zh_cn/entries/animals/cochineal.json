@@ -1,0 +1,17 @@
+{
+  "name": "胭脂虫",
+  "category": "patchouli:animals",
+  "icon": "atmospheric:carmine_husk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 胭脂外壳, 火龙果 (50% 概率) $(li)掉落物: 胭脂外壳$(br2)$(l)备注$()$(br)觅食行为需要其达到 1 颗心好感度。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "atmospheric:cochineal",
+      "scale": 0.5,
+      "text": "希望由胭脂外壳制作的方块值得你饲养它们。"
+    }
+  ]
+}

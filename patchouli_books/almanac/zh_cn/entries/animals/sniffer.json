@@ -1,0 +1,17 @@
+{
+  "name": "嗅探兽",
+  "category": "patchouli:animals",
+  "icon": "minecraft:sniffer_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 嗅探兽蛋$(li)觅食: 文物碎片$(br2)$(l)备注$()$(br)觅食行为需要其达到 5 颗心及以上好感度。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sniffer",
+      "scale": 0.8,
+      "text": "They love digging in the dirt for old things."
+    }
+  ]
+}

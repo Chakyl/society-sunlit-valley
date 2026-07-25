@@ -1,0 +1,17 @@
+{
+  "name": "金苹果鸡",
+  "category": "patchouli:animals",
+  "icon": "minecraft:golden_apple",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 金苹果$(li)掉落物: 生鸡肉, 羽毛$(br2)$(l)备注$()$(br)饥饿或心情不好及好感度低于2颗心时，不会下金苹果。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "etcetera:chapple{Type:golden}",
+      "scale": 0.8,
+      "text": "苹果鸡这种奇异变体再一次出现了突变。"
+    }
+  ]
+}

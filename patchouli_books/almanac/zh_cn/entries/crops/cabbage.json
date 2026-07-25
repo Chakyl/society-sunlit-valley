@@ -1,0 +1,30 @@
+{
+  "name": "卷心菜 🍂❆",
+  "category": "patchouli:crops",
+  "icon": "farmersdelight:cabbage",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 70$(li)🍂 §4秋季 §r❆ §b冬季§r$(li)种子价格：:coin: 64$(li)产量：1$(li)生长时间：7 天$(br2)$(l)备注$()$(br)市场会出售这种作物的种子。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 卷心菜作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farmersdelight:cabbages[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

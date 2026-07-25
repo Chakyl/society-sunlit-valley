@@ -1,0 +1,17 @@
+{
+  "name": "企鹅",
+  "category": "patchouli:animals",
+  "icon": "society:penguin_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 企鹅蛋$(li)掉落物: 羽毛$(br2)$(l)备注$()$(br)需要其达到 4 颗心及以上好感度才会下蛋。可以在冻洋和冰刺生物群系发现它们。" 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:penguin",
+      "scale": 0.5,
+      "text": "我是企鹅，为什么我会输给犰狳。"
+    }
+  ]
+}

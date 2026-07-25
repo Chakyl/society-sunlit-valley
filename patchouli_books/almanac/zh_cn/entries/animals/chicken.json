@@ -1,0 +1,17 @@
+{
+  "name": "鸡",
+  "category": "patchouli:animals",
+  "icon": "minecraft:egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: :coin: 256$(li)产蛋: 鸡蛋$(li)掉落物: 生鸡肉, 羽毛$(br2)$(l)备注$()$(br)饥饿状态不会下蛋，心情不好的鸡下蛋更少。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:chicken",
+      "scale": 0.8,
+      "text": "这些不起眼的小鸟几乎不需要照料，只需食物即可。"
+    }
+  ]
+}
