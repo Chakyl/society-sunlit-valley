@@ -6,6 +6,7 @@ PlayerEvents.loggedIn((e) => {
     player.tell(Text.translatable("society.login_update.title").gray());
     player.tell(Text.translatable("society.login_update.desc_0").white());
     player.tell(Text.translatable("society.login_update.desc_1").white());
+    player.give("furniture:blueprints");
     player.stages.add("starting_items_4_1");
     player.stages.remove("starting_items_4_0");
   }
@@ -19,7 +20,7 @@ PlayerEvents.loggedIn((e) => {
           global.getNotePaperItem(
             global.translatableWithFallback("society.starting_item_sharestone.author", "Society").getString(),
             Text.translatable("society.starting_item_sharestone.text").toJson(),
-            global.translatableWithFallback("society.starting_item_sharestone.title", "Server Welcome").getString(),         
+            global.translatableWithFallback("society.starting_item_sharestone.title", "Server Welcome").getString(),
           )
         )
       );

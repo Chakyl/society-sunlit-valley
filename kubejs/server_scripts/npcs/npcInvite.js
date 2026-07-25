@@ -16,6 +16,9 @@ ItemEvents.rightClicked("society:invitation", (e) => {
     if (!player.stages.has(`invited_${baseId}`)) {
       player.stages.add(`invited_${baseId}`)
       player.tell(Text.translatable("society.invitation.place_home").green());
+      if (baseId === "market") {
+        player.tell(Text.translatable("society.new_villager.message").green());
+      }
     }
     if (!player.isCreative()) item.count--;
     server.runCommandSilent(
