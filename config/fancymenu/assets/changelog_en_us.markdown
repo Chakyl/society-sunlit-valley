@@ -8,6 +8,8 @@
 - Added Lemon Beignets
 - Added Suspicious Milk Tea
 - Added Ancient Builders Tool artifact
+- Added Overflow token support for shared accounts
+- Added double-sided text for coin leaderboard
 - Changed Earth Crystal trader trade from rice to cotton
 - Changed Jade trader trade from Aegis Wine to dried Lemon 
 - Increased height of coin leaderboard by 1/4th of a block to make it less smudged
@@ -18,6 +20,7 @@
 - Fixed issues with the Sakura building set
 - Fixed Smallmouth Bass not being catchable at night in Autumn
 - Fixed EMI not being searchable by blocktag by downgrading version
+- Optimized coin leaderboard
 
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
