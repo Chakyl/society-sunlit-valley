@@ -1,0 +1,30 @@
+{
+  "name": "生菜 🌼",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:lettuce",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 24$(li)🌼 §2春季§r$(li)种子价格：:coin: 4$(li)产量：1$(li)生长时间：3 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 生菜作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:lettuce_crop[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

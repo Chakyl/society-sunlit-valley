@@ -1,0 +1,17 @@
+{
+  "name": "鹅",
+  "category": "patchouli:animals",
+  "icon": "untitledduckmod:goose_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 鹅蛋$(li)掉落物: 生鹅肉, 鹅掌$(br2)$(l)备注$()$(br)饥饿状态不会下蛋，心情不好的鹅下蛋更少。可以用海草驯服。" 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "untitledduckmod:goose",
+      "scale": 0.8,
+      "text": "这种可恶的生物会偷走你的物品，并在受到攻击时反击。"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "哈欠兽",
+  "category": "patchouli:animals",
+  "icon": "species:petrified_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 哈欠兽蛋 (25% 概率)$(br2)$(l)备注$()$(br)需要其达到 4 颗心及以上好感度才会下蛋。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:goober",
+      "scale": 0.8,
+      "text": "它们的蛋需要熔岩的温度才能孵化。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "亚麻 🌼",
+  "category": "patchouli:crops",
+  "icon": "supplementaries:flax",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 68$(li)🌼 §2春季§r$(li)种子价格：:coin: 48$(li)产量：1$(li)生长时间：7 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 亚麻作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "1"
+          ],
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "supplementaries:flax[age=7,half=lower]",
+          "1": "supplementaries:flax[age=7,half=upper]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

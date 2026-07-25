@@ -1,0 +1,134 @@
+{
+  "name": "棕榈树 🔥",
+  "category": "patchouli:trees",
+  "icon": "beachparty:palm_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🔥 §6夏季§r $(li)价格：:coin: 128$(li)尺寸：1x1$(br2)$(l)备注$()$(li)市场会出售这种树苗。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 棕榈树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "       ",
+            "   L   ",
+            "  LLL  ",
+            " LL0LL ",
+            "  LLL  ",
+            "   L   ",
+            "       "
+          ],
+          [
+            "   L   ",
+            " LLLLL ",
+            " L   L ",
+            "LLCWCLL",
+            " L   L ",
+            " LLLLL ",
+            "   L   "
+          ],
+          [
+            "   L   ",
+            " L   L ",
+            "       ",
+            "L  W  L",
+            "       ",
+            " L   L ",
+            "   L   "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "   W   ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "    W  ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "    W  ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "    W  ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "     W ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "     W ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "     W ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "     W ",
+            "       ",
+            "       ",
+            "       "
+          ],
+          [
+            "       ",
+            "       ",
+            "       ",
+            "     WW",
+            "     W ",
+            "       ",
+            "       "
+          ]
+        ],
+        "mapping": {
+          "0": "beachparty:palm_leaves",
+          "L": "beachparty:palm_leaves",
+          "C": "beachparty:coconut_hanging",
+          "W": "beachparty:palm_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

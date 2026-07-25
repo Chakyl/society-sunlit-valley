@@ -1,0 +1,17 @@
+{
+  "name": "海龟",
+  "category": "patchouli:animals",
+  "icon": "minecraft:turtle_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 海龟蛋"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:turtle",
+      "scale": 0.8,
+      "text": "海龟俱乐部的一员。"
+    }
+  ]
+}

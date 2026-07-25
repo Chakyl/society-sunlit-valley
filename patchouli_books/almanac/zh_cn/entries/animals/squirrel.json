@@ -1,0 +1,17 @@
+{
+  "name": "松鼠",
+  "category": "patchouli:animals",
+  "icon": "pamhc2trees:hazelnutitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 野生浆果, 榛子 (25% 概率)$(li)掉落物: 榛子$(br2)$(l)备注$()$(br)觅食行为需要其达到 2 颗心及以上好感度。可在平原或森林生物群系发现。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:squirrel",
+      "scale": 0.7,
+      "text": "会爬树使它们成为最难养的动物之一。"
+    }
+  ]
+}

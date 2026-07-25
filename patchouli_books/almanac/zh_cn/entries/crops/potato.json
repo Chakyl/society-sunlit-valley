@@ -1,0 +1,30 @@
+{
+  "name": "土豆 🌼",
+  "category": "patchouli:crops",
+  "icon": "minecraft:potato",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 24$(li)🌼 §2春季§r$(li)种子价格：:coin: 2$(li)产量：1-2$(li)生长时间：7 天$(br2)$(l)备注$()$(br)毒马铃薯是土豆的稀有掉落物。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 土豆作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:potatoes[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

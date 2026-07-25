@@ -1,0 +1,17 @@
+{
+  "name": "狗",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)绵羊化石$(br)$(l)驯服物品：$()$(br)骨头$(br2)$(l)备注$()$(br)发现于平原。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:dog",
+      "scale": 0.7,
+      "text": "不太喜欢猫。"
+    }
+  ]
+}

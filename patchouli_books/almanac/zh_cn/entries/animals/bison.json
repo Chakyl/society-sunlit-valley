@@ -1,0 +1,17 @@
+{
+  "name": "野牛",
+  "category": "patchouli:animals",
+  "icon": "wildernature:bison_horn",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)挤奶: 水牛奶$(li)挤奶冷却: 1 天$(li)掉落物: 野牛肉, 皮革, 野牛角$(br2)$(l)备注$()$(br)可在针叶林生物群系发现。出于本能，它们会主动攻击附近的玩家，即使好感度很高也是如此。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:bison",
+      "scale": 0.7,
+      "text": "由于曾遭到偷猎，野牛脾气暴躁，且警惕性极高。"
+    }
+  ]
+}

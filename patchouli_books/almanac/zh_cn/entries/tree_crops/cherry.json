@@ -1,0 +1,30 @@
+{
+  "name": "樱桃 🌼",
+  "category": "patchouli:tree_crops",
+  "icon": "vinery:cherry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 12$(li)🌼 §2春季§r $(li)产量：4$(li)生长阶段：8$(br2)$(l)备注$()$(li)详见：$(l:trees/pams/cherry)樱桃树$(/l)$(li)详见：$(l:trees/letsdo/darkcherry)黑樱桃树$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 苹果树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "F": "pamhc2trees:pamcherry[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

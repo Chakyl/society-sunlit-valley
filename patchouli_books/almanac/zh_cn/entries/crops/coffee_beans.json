@@ -1,0 +1,30 @@
+{
+  "name": "咖啡豆 🌼",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:coffee_beans",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 8$(li)🌼 §2春季§r$(li)产量：1-2$(li)生长时间：3 天$(br2)$(l)备注$()$(br)发现于丛林生物群系。$(br)无种子，直接种植果实。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 咖啡豆作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "herbalbrews:coffee_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

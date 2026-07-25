@@ -1,0 +1,17 @@
+{
+  "name": "黏滑",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)结构： 史莱姆生成器$(li)挖掘点： 主世界$(br2)$(l)风险：$()$(br)变成大型史莱姆后，如果没有轮流吃两种食物就会不开心。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "黏滑史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:slimy\"}",
+      "scale": 0.9
+    }
+  ]
+}

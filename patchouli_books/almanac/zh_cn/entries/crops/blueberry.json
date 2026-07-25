@@ -1,0 +1,30 @@
+{
+  "name": "蓝莓 🔥",
+  "category": "patchouli:crops",
+  "icon": "society:blueberry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 24$(li)🔥 §6夏季§r$(li)种子价格：:coin: 8$(li)产量：3-4$(li)生长时间：7 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 蓝莓作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:blueberry[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

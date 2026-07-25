@@ -1,0 +1,19 @@
+{
+  "name": "气旋鲳鱼",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_aero_mono",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 128$(li)§0❆ §b冬季§r$(li)水域：淡水$(li)天气：任意$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:aero_mono",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.3,
+      "text": "Air supply? I thought you were a fish."
+    }
+  ]
+}

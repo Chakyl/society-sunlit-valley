@@ -1,0 +1,30 @@
+{
+  "name": "杨桃 🌐",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:starfruititem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 200$(li)🌐 §5全年§r$(li)产量：1$(li)生长阶段：8$(br2)$(l)备注$()$(li)详见：$(l:trees/pams/starfruit)杨桃树$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 杨桃树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "F": "pamhc2trees:pamstarfruit[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

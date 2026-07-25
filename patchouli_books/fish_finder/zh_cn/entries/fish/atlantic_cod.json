@@ -1,0 +1,18 @@
+{
+  "name": "大西洋鳕鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:atlantic_cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 120$(li)§0❆ §b冬季§r$(li)水域：海洋$(li)天气：任意$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:atlantic_cod",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "What a load of codswallop!"
+    }
+  ]
+}

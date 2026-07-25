@@ -1,0 +1,30 @@
+{
+  "name": "绿茶 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:green_tea_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 4$(li)🌼 §2春季§r 🔥 §6夏季§r 🍂 §4秋季§r$(li)产量：1$(li)生长时间：3 天$(br2)$(l)备注$()$(br)发现于绿色气球箱。$(br)绿茶方块可以放置在世界中自然干燥。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Tea Crop",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "herbalbrews:tea_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

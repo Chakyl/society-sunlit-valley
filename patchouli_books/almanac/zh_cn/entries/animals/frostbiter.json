@@ -1,0 +1,17 @@
+{
+  "name": "冰霜噬咬者",
+  "category": "patchouli:animals",
+  "icon": "windswept:frozen_branch",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)挤奶: 牛奶$(li)挤奶冷却: 1 天$(li)觅食: 冰冻树枝, 文物碎片$(br2)$(l)备注$()$(br)觅食行为需要其达到 5 颗心及以上好感度。可以使用冬青梅驯服。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "windswept:frostbiter",
+      "scale": 0.6,
+      "text": "朋友或冻僵？"
+    }
+  ]
+}

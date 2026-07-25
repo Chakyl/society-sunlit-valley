@@ -1,0 +1,19 @@
+{
+  "name": "黑曜石鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:obsidianfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 512$(li)维度：下界$(li)生物群系：玄武岩三角洲"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:obsidianfish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "It really likes RPG games. Not that it can play any."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "魂吸鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:soulsucker",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 312$(li)维度：下界$(li)生物群系：灵魂沙峡谷"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:soulsucker",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "I'm not gonna make the joke you can make it."
+    }
+  ]
+}

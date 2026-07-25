@@ -1,0 +1,19 @@
+{
+  "name": "琥珀虾虎鱼",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_amber_goby",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 288$(li)§0🍂 §4秋季§r$(li)水域：淡水$(li)天气：晴天$(li)时间：夜晚"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:amber_goby",
+      "scale": 0.8,
+      "rotate": true,
+      "offset": -0.3,
+      "text": "Amber like darlings hair."
+    }
+  ]
+}

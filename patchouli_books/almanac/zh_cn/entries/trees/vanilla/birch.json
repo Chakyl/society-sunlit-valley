@@ -1,0 +1,67 @@
+{
+  "name": "白桦 🌼🍂",
+  "category": "patchouli:trees",
+  "icon": "minecraft:birch_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🌼 §2春季§r 🍂 §4Autumn$(li)树苗价格：:coin: 8$(li)尺寸：1x1"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 橡树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "  L  ",
+            " L0L ",
+            "  L  ",
+            "     "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLL "
+          ],
+          [
+            "LLLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:birch_leaves",
+          "L": "minecraft:birch_leaves",
+          "W": "minecraft:birch_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

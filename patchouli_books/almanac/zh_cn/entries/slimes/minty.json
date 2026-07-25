@@ -1,0 +1,17 @@
+{
+  "name": "薄荷",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:minty\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)心之融合$(br2)$(l)风险：$()$(br)攻击玩家，拥有力量 III，会飞行，不开心时会使你醉酒。受到高伤害攻击时有几率复活。极其危险。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "薄荷史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:minty\"}",
+      "scale": 0.9
+    }
+  ]
+}

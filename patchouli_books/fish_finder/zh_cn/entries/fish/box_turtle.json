@@ -1,0 +1,18 @@
+{
+  "name": "箱龟",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:box_turtle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 320$(li)🔥 §6夏季 §r$(li)水域：河流$(li)天气：雨天或雪天$(li)时间：夜晚"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:box_turtle",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "It's gonna eat your fingy."
+    }
+  ]
+}
