@@ -17,12 +17,10 @@ const updateLeaderboardMap = (server) => {
       if (!accountName) {
         accountName = "";
         Object.keys(server.persistentData.playerList).forEach((playerUUID) => {
-          if (bankAccount.isAuthorized(playerUUID)) {
-            if (accountName !== "") accountName += " & "
-            accountName += playerList[playerUUID];
+          if (accountName !== "" &&bankAccount.isAuthorized(playerUUID)) {
+            if (accountName !== "") accountName += playerList[playerUUID] +"'s Team"
           }
         })
-      accountName += "'s Team"
       }
       leaderboardMap.set(accountName, bankAccount.getBalance());
     }

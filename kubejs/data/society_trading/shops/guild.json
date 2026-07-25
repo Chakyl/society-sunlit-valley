@@ -7,18 +7,6 @@
   "trades": [
     {
       "offer": {
-        "item": "minecraft:arrow",
-        "count": 4
-      },
-      "request": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      },
-      "numismatics_cost": 2,
-      "trade_id": "guild_arrow"
-    },
-    {
-      "offer": {
         "item": "minecraft:leather_helmet",
         "count": 1
       },
@@ -76,6 +64,18 @@
       },
       "numismatics_cost": 1024,
       "trade_id": "guild_backpack"
+    },
+    {
+      "offer": {
+        "item": "minecraft:arrow",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 2,
+      "trade_id": "guild_arrow"
     },
     {
       "offer": {
