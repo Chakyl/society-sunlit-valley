@@ -1,0 +1,17 @@
+{
+  "name": "牛",
+  "category": "patchouli:animals",
+  "icon": "society:large_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: :coin: 512$(li)挤奶: 牛奶$(li)挤奶冷却: 1 天$(li)掉落物: 生牛肉, 皮革"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cow",
+      "scale": 0.8,
+      "text": "普通的农场动物，容易饲养但价值不高。"
+    }
+  ]
+}

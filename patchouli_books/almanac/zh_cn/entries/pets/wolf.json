@@ -1,0 +1,17 @@
+{
+  "name": "狼",
+  "category": "patchouli:pets",
+  "icon": "minecraft:bone",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)长狐狸耳朵头饰, 狼化石$(br2)$(l)驯服物品：$()$(br)骨头"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:wolf",
+      "scale": 0.7,
+      "text": "所有人最好的朋友。"
+    }
+  ]
+}

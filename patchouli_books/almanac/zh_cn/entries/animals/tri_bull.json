@@ -1,0 +1,17 @@
+{
+  "name": "驯化三足牛",
+  "category": "patchouli:animals",
+  "icon": "society:large_tri_bull_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)挤奶: 三足牛奶$(li)挤奶冷却: 1 天$(li)掉落物: 生三足牛排, 皮革 $(br2)$(l)备注$()$(br)通过对牛使用月之突变血清改造而来。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:domestic_tribull",
+      "scale": 0.6,
+      "text": "它不属于这个世界...吃下三足牛奶酪会清除药水效果。"
+    }
+  ]
+}

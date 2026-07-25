@@ -1,0 +1,34 @@
+{
+  "name": "芦荟 🔥",
+  "category": "patchouli:crops",
+  "icon": "atmospheric:aloe_leaves",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 16$(li)🔥 §6夏季§r$(li)产量：1-2$(li)生长阶段：5-8$(br2)$(l)备注$()$(br)发现于繁茂沙丘生物群系。$(br)有 5 个生长阶段。$(br)在较后阶段掉落黄色花。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 芦荟作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "1"
+          ],
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "atmospheric:tall_aloe_vera[age=8,half=lower]",
+          "1": "atmospheric:tall_aloe_vera[age=8,half=upper]",
+          "F": "minecraft:sand"
+        }
+      }
+    }
+  ]
+}

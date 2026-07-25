@@ -1,0 +1,17 @@
+{
+  "name": "兔子",
+  "category": "patchouli:animals",
+  "icon": "minecraft:rabbit_foot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: :coin: 4,096$(li)觅食: 优质茸毛 (50% 概率), 兔子腿 (16% 概率)$(li)掉落物: 生兔肉, 兔子皮$(br2)$(l)备注$()$(br)优质绒毛和兔子腿分别需要其达到 4 和 7 颗心及以上好感度。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:rabbit",
+      "scale": 0.8,
+      "text": "它们不喜欢当宠物，但如果它们足够喜欢你，就会把多余的脚给你..."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "太平洋比目鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:pacific_halibut",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 400$(li)§0❆ §b冬季§r$(li)水域：海洋$(li)天气：任意$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:pacific_halibut",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Love me some city pop."
+    }
+  ]
+}

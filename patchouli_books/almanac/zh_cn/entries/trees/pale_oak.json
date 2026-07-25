@@ -1,0 +1,105 @@
+{
+  "name": "苍白橡树 🌐",
+  "category": "patchouli:trees",
+  "icon": "minecraft:pale_oak_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🌐 §5全年§r $(li)尺寸：2x2"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 苍白橡树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "        ",
+            "   LL   ",
+            "  LLLL  ",
+            " LLLLLL ",
+            " LLLLLL ",
+            "  LLLL  ",
+            "   LL   ",
+            "        "
+          ],
+          [
+            " LLLLL  ",
+            "LLLLLLLL",
+            "LLLLLLLL",
+            "LLLWWLLL",
+            "LLLWWLLL",
+            "LLLLLLLL",
+            " LLLLL  ",
+            " LLLLL  "
+          ],
+          [
+            " LLLLLL ",
+            "LLLLLLLL",
+            "LLLWWLWL",
+            "LLLLWWWL",
+            "LLLWWWLL",
+            " LLLLWL ",
+            " LLLLLL ",
+            "  LLLL  "
+          ],
+          [
+            "        ",
+            "        ",
+            "   WW W ",
+            "    WWW ",
+            "   WWW  ",
+            "     W  ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "   WW W ",
+            "    WW  ",
+            "   WWW  ",
+            "        ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "      W ",
+            "    WW  ",
+            "    WW  ",
+            "        ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "        ",
+            "    WW  ",
+            "    WW  ",
+            "        ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "        ",
+            "    WW  ",
+            "    0W  ",
+            "        ",
+            "        ",
+            "        "
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:pale_oak_log[axis=y]",
+          "L": "minecraft:pale_oak_leaves",
+          "W": "minecraft:pale_oak_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

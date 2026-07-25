@@ -1,0 +1,17 @@
+{
+  "name": "炽焰",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)生物群系： 黑石洞穴（骷髅洞穴）$(li)结构： 下界堡垒, 堡垒遗迹箱子, 下界史莱姆生成器$(li)挖掘点： 下界方块$(br2)$(l)风险：$()$(br)饥饿时会生火，愤怒时增加火焰伤害。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "炽焰史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:blazing\"}",
+      "scale": 0.9
+    }
+  ]
+}

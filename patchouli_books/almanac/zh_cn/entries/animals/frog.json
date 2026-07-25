@@ -1,0 +1,17 @@
+{
+  "name": "青蛙",
+  "category": "patchouli:animals",
+  "icon": "society:ribbit_gadget",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 树脂 (30% 概率), 青蛙腿 (10% 概率), 呱呱装置 (5% 概率), 蛙明灯 (25% 概率)$(br2)$(l)备注$()$(br)觅食行为需要其达到 1 颗心及以上好感度。 可在沼泽生物群系发现，使用蜘蛛眼驯服它们。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:frog",
+      "scale": 0.7,
+      "text": "喜欢赏金任务，讨厌史莱姆！"
+    }
+  ]
+}

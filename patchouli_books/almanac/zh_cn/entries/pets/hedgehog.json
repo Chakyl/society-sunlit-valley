@@ -1,0 +1,17 @@
+{
+  "name": "刺猬",
+  "category": "patchouli:pets",
+  "icon": "supplementaries:bamboo_spikes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)索尼克头套$(br2)$(l)备注$()$(br)发现于森林生物群系。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:hedgehog",
+      "scale": 0.7,
+      "text": "一种书呆子动物，以各种自己制造的困境而闻名。"
+    }
+  ]
+}

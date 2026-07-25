@@ -1,0 +1,17 @@
+{
+  "name": "巨嘴兽",
+  "category": "patchouli:animals",
+  "icon": "species:cruncher_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 拾荒食物袋 (40% 概率), 粗铋 (25% 概率), 龙鳞 (4% 概率), 巨嘴兽蛋 (15% 概率)$(br2)$(l)备注$()$(br)觅食行为需要其达到 1 颗心及以上的好感度。可在考古战利品中发现，并使用肉类驯服它们。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:cruncher",
+      "scale": 0.8,
+      "text": "不要饿到它。"
+    }
+  ]
+}

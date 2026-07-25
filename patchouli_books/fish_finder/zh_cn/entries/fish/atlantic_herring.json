@@ -1,0 +1,18 @@
+{
+  "name": "大西洋鲱鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:atlantic_herring",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 16$(li)§0🌼 §2春季§0 §0❆ §b冬季§r$(li)水域：海洋$(li)天气：任意$(li)时间：任意"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:atlantic_herring",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Not to be confused with the Halibut."
+    }
+  ]
+}

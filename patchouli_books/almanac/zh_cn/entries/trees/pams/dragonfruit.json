@@ -1,0 +1,83 @@
+{
+  "name": "火龙果树 ❆",
+  "category": "patchouli:trees",
+  "icon": "pamhc2trees:dragonfruit_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)❆ §b冬季§r $(li)价格：:coin: 43,008$(li)尺寸：1x1$(li)产出：$(l:tree_crops/dragonfruit)8x 火龙果$(/l)$(br2)$(l)备注$()$(li)邀请市场入驻到你农场的第二年才会出售这种树苗。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 火龙果树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "L": "minecraft:jungle_leaves",
+          "W": "minecraft:jungle_log[axis=y]",
+          "F": "pamhc2trees:pamdragonfruit[age=7]"
+        },
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "LLLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            " FFF ",
+            " FWF ",
+            " FFF ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ]
+      }
+    }
+  ]
+}

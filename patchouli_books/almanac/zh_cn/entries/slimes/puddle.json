@@ -1,0 +1,17 @@
+{
+  "name": "水洼",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:puddle\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)蟹笼： 蟹笼饵料, 豪华蟹笼饵料$(li)钓鱼点$(br2)$(l)风险：$()$(br)带有荆棘效果，离开水会不开心！"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "水洼史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:puddle\"}",
+      "scale": 0.9
+    }
+  ]
+}

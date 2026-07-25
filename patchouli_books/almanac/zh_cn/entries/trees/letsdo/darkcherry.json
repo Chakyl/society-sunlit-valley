@@ -1,0 +1,84 @@
+{
+  "name": "深色樱桃树 🌼",
+  "category": "patchouli:trees",
+  "icon": "vinery:dark_cherry_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🌼 §2春季§r $(li)树苗价格：:coin: 256$(li)尺寸：1x1$(li)产出：$(l:tree_crops/cherry)樱桃$(/l)$(br2)$(l)备注$()$(li)市场会出售这种树苗。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 橡树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "  1  ",
+            " 102 ",
+            "  3  ",
+            "     "
+          ],
+          [
+            "     ",
+            " 131 ",
+            " 1W2 ",
+            " 322 ",
+            "     "
+          ],
+          [
+            " 1213",
+            "21231",
+            "32W11",
+            "11231",
+            "2311 "
+          ],
+          [
+            "3312 ",
+            "31231",
+            "12W21",
+            "12331",
+            "12313"
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "0": "vinery:dark_cherry_leaves[has_cherries=false]",
+          "1": "vinery:dark_cherry_leaves[has_cherries=false]",
+          "2": "vinery:dark_cherry_leaves[can_grow_cherries=true, has_cherries=true]",
+          "3": "vinery:dark_cherry_leaves[can_grow_cherries=true]",
+          "W": "vinery:dark_cherry_log"
+        }
+      }
+    }
+  ]
+}

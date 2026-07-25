@@ -1,0 +1,17 @@
+{
+  "name": "雪貂",
+  "category": "patchouli:pets",
+  "icon": "minecraft:iron_shovel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)跳蛛刷怪蛋$(br)$(l)驯服物品：$()$(br)生兔肉$(br2)$(l)备注$()$(br)发现于平原或森林生物群系。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:ferret",
+      "scale": 0.7,
+      "text": "当你喂给它们生鸡肉时，它们会挖东西来出！"
+    }
+  ]
+}

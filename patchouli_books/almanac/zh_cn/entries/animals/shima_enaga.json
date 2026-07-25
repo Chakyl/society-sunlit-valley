@@ -1,0 +1,17 @@
+{
+  "name": "银喉长尾山雀",
+  "category": "patchouli:animals",
+  "icon": "atmospheric:currant",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 醋栗 (100% 概率), 樱桃 (65% 概率), 苔藓莓 (10% 概率)$(li)掉落物: 羽毛$(br2)$(l)备注$()$(br)觅食行为需要其达到 2 颗心及以上好感度。可用种子驯服。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:shima_enaga",
+      "scale": 0.7,
+      "text": "超可爱的雪鸟！！！"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "仓鼠",
+  "category": "patchouli:pets",
+  "icon": "hamsters:hamster",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)小小侏儒$(br)$(l)驯服物品：$()$(br)种子$()$(br2)$(l)备注$()$(br)发现于平原生物群系。它们不喜欢被抱着，这会重置它们的好感度。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "hamsters:hamster",
+      "scale": 0.7,
+      "text": "喂食时可能会爆炸。"
+    }
+  ]
+}

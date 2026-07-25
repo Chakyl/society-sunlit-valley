@@ -1,0 +1,24 @@
+{
+  "name": "绒毛牛",
+  "category": "patchouli:animals",
+  "icon": "meadow:highland_wool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)挤奶: 牛奶$(li)挤奶冷却: 1 天$(li)剪毛: 花纹羊毛$(li)掉落物: 花纹羊毛, 生牛肉, 皮革$(br2)$(l)备注$()$(br)可在平原或深色橡树生物群系发现多种变体。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "高地绒毛牛",
+      "entity": "meadow:wooly_cow{Variant:0}",
+      "scale": 0.8,
+      "text": "一种以独特的毛皮而闻名的牛。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "暗影绒毛牛",
+      "entity": "meadow:wooly_cow{Variant:1}",
+      "scale": 0.8
+    }
+  ]
+}

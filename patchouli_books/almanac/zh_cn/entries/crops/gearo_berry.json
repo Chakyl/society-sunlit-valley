@@ -1,0 +1,30 @@
+{
+  "name": "黯紫浆果 🌼",
+  "category": "patchouli:crops",
+  "icon": "vintagedelight:gearo_berry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 24$(li)🌼 §2春季§r$(li)产量：1-2$(li)生长时间：4 天$(li)再生时间：2 天$(br2)$(l)备注$()$(br)在多汁史莱姆那里获得的概率很小，推荐与精灵交易。$(br)无种子，直接种植果实。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 黯紫浆果丛 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "vintagedelight:gearo_berry_bush[age=4]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}
