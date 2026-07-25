@@ -70,7 +70,7 @@ global.updateLeaderboard = (block, level, server) => {
       }
     }
     calcY -= 0.3;
-    const displayText = Text.of(`§6${accountName} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`);
+    const displayText = Text.of(`§6${accountName} §7- §f● §6${global.formatPrice(balanceStr[1])}`);
     global.spawnTextDisplay(block, calcY, "leaderboard", displayText);
     global.spawnTextDisplay(block, calcY, "leaderboard", displayText, 180);
   });
