@@ -3,6 +3,7 @@
 ### v4.1.1
 ^^^
 --- 
+- Added a limit to placing coin leaderboards to prevent lag
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
 - Added new system for Building Shop (Previously in the Quest book) using Building Supplies
@@ -40,6 +41,7 @@
 - Added stack groups to EMI/JEI 
 - Reworked Mana Clock: Now works exactly like Golden Clock but with a smaller radius and mana cost
 - Reworked furniture catalogs to be shops instead of having unique items
+- Reworked coin leaderboard to support named blaze bankers and account for overflow tokens
 - Updated pt_br translation (Thanks RafaelJMBR!)
 - Updated Galaxy Sword and Meowmageddon text to be shiny
 - Increased Terracotta conversion rate 1/30s -> 1/10s
@@ -55,6 +57,7 @@
 - Removed beachparty radio due to issues
 - Removed offshoot grape fluid types as they are now unified into red/white
 - Renamed Bookseller to Book Fair
+- Fixed coin leaderboard only showing in a single direction
 - Fixed certain society blocks not having pickaxe minable tags
 - Fixed Mana Sprinkler having wrong working area
 - Fixed Mana Clock not working 
