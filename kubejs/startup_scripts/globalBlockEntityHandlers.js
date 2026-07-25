@@ -592,19 +592,21 @@ global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
 
 global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   const { level, block } = entity;
+  let nbt = block.getEntityData();
   let dayTime = level.dayTime();
-  let morningModulo = dayTime % 24000;
-
-  if (
-    forced ||
-    (morningModulo >= artMachineProgTime &&
-      morningModulo < artMachineProgTime + artMachineTickRate)
-  ) {
+  let curDay = Math.floor(dayTime / 24000);
+  if (!nbt.data.prevDay) {
+    nbt.merge({ data: { prevDay: curDay } });
+    global.setBlockEntityData(block, nbt);
+  };
+  let isNewDay = nbt.data.prevDay != curDay; // do != in the event server time gets reset
+  if (forced || isNewDay) {
+    nbt.merge({ data: { prevDay: curDay } });
+    global.setBlockEntityData(block, nbt);
     let blockProperties = level.getBlock(block.pos).getProperties();
 
     if (blockProperties.get("working").toLowerCase() === "false") return;
     global.convertFromLegacy(recipes, level, block);
-    let nbt = block.getEntityData();
     let mature;
     let recipe = recipes && recipes.get(nbt.data.recipe);
     let resolvedStage = (recipe && recipe.time) || stageCount;
