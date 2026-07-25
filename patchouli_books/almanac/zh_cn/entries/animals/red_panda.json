@@ -1,0 +1,17 @@
+{
+  "name": "小熊猫",
+  "category": "patchouli:animals",
+  "icon": "society:ruby",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 红宝石 (20% 概率), 无瑕红宝石 (10% 概率)$(br2)$(l)备注$()$(br)觅食行为需要其达到 3 颗心好感度及以上。小熊猫的生育能力有问题，使用奇迹药水可能会失败。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:red_panda",
+      "scale": 0.8,
+      "text": "红色的寻宝小猎手。"
+    }
+  ]
+}

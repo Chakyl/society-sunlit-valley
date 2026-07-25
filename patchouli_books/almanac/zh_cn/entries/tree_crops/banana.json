@@ -1,0 +1,30 @@
+{
+  "name": "香蕉 🔥",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:bananaitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 16$(li)🔥 §6夏季§r$(li)产量：3$(li)生长阶段：8$(br2)$(l)备注$()$(li)详见：$(l:trees/pams/banana)香蕉树$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 香蕉树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "F": "pamhc2trees:pambanana[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "火花豆 🌼",
+  "category": "patchouli:crops",
+  "icon": "society:sparkpod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 100$(li)🌼 §2春季§r$(li)种子价格：:coin: 4,096$(li)产量：1$(li)生长时间：8 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 火花豆作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:sparkpod[age=8]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

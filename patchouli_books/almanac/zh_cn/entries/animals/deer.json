@@ -1,0 +1,17 @@
+{
+  "name": "鹿",
+  "category": "patchouli:animals",
+  "icon": "society:dried_foul_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 脱水食品 (25% 概率)$(li)掉落物: 生鹿肉, 皮革$(br2)$(l)备注$()$(br)觅食行为需要其达到 3 颗心好感度及以上。可在森林生物群系中发现。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:deer",
+      "scale": 0.7,
+      "text": "鹿会寻找野生的浆果，如果它喜欢你的话也会和你分享。不过我很好奇为什么它们要把浆果晒干..."
+    }
+  ]
+}

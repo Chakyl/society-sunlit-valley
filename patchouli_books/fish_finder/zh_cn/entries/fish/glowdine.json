@@ -1,0 +1,19 @@
+{
+  "name": "发光沙丁鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:glowdine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 448$(li)维度：下界$(li)生物群系：诡异森林"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:glowdine",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Sprinker fish."
+    }
+  ]
+}

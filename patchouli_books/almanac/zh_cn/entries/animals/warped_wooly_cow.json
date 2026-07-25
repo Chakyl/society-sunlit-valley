@@ -1,0 +1,18 @@
+{
+  "name": "诡异绒毛牛",
+  "category": "patchouli:animals",
+  "icon": "society:large_warped_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)挤奶: 诡异牛奶$(li)挤奶冷却: 2 天$(li)剪毛: 诡异羊毛$(li)掉落物: 诡异羊毛, 生牛肉, 皮革$(br2)$(l)备注$()$(br)可在诡异森林生物群系中发现。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Warped Wooly Cow",
+      "entity": "meadow:wooly_cow{Variant:2}",
+      "scale": 0.8,
+      "text": "用它的牛奶制成的奶酪是一种昂贵的美味。"
+    }
+  ]
+}

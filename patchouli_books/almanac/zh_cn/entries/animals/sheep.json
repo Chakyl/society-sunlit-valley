@@ -1,0 +1,17 @@
+{
+  "name": "绵羊",
+  "category": "patchouli:animals",
+  "icon": "society:large_sheep_milk",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: :coin: 1,024$(li)挤奶: 羊奶$(li)挤奶冷却: 2 天$(li)剪毛: 羊毛, 优质绒毛 (50% 概率) $(li)掉落物: 生羊肉, 羊毛$(br2)$(l)备注$()$(br)优质绒毛需要其达到 5 颗心及以上好感度。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sheep",
+      "scale": 0.8,
+      "text": "它的产物用途非常广泛，但不太适合挤奶。"
+    }
+  ]
+}

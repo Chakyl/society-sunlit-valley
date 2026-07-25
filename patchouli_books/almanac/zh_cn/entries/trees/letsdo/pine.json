@@ -1,0 +1,130 @@
+{
+  "name": "阿尔卑斯树 🌐",
+  "category": "patchouli:trees",
+  "icon": "meadow:pine_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🌐 §5全年§r$(li)价格：:coin: 16$(li)尺寸：1x1$(br2)$(l)备注$()$(li)市场会出售这种树苗。$(li)转化周围的泥土。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 阿尔卑斯树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "  L  ",
+            " LLL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "0": "meadow:pine_log[axis=y]",
+          "L": "meadow:pine_leaves",
+          "W": "meadow:pine_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

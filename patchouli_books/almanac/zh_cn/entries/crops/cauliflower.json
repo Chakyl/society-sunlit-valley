@@ -1,0 +1,30 @@
+{
+  "name": "花椰菜 🌼",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:cauliflower",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 48$(li)🌼 §2春季§r$(li)种子价格：:coin: 6$(li)产量：1$(li)生长时间：7 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 草莓作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:cauliflower_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

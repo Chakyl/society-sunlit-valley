@@ -1,0 +1,49 @@
+{
+  "name": "下界葡萄 🌼🍂",
+  "category": "patchouli:crops",
+  "icon": "nethervinery:warped_grape",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 8$(li)🌼 §2春季§r 🍂 §4秋季§r$(br2)$(l)备注$()$(br)葡萄可以在特定的生物群系中找到，取决于其名称。 每种类型有其特定的生长季节。 所有葡萄必须种植在葡萄藤杆或格架上。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 葡萄藤杆 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "vinery:grapevine_stem[age=4,grape=warped]",
+          "F": "vinery:grapevine_stem"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 葡萄丛 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "nethervinery:warped_grape_bush[age=3]",
+          "F": "minecraft:warped_nylium"
+        }
+      }
+    }
+  ]
+}

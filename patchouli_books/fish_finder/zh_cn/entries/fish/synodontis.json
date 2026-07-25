@@ -1,0 +1,18 @@
+{
+  "name": "反游猫鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:synodontis",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 112$(li)§0🔥 §6夏季§r$(li)水域：河流$(li)天气：晴天$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:synodontis",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Looks like a kitty cat."
+    }
+  ]
+}

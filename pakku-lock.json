@@ -2908,24 +2908,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
+                    "file_name": "create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6987/710/create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
-                    "id": "6987710",
+                    "url": "https://edge.forgecdn.net/files/8204/836/create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar",
+                    "id": "8204836",
                     "parent_id": "820977",
                     "hashes": {
-                        "sha1": "4e1048ce2b5453d657b42ea5dcec5ada1842b0ea",
-                        "md5": "cf941597532a7837327ee891b36f0596"
+                        "sha1": "bb724b37b191f6bcbe1e6bc395742e50352e8dbc",
+                        "md5": "ecc1671b1e2db7b0de6a5e93b6e7acd6"
                     },
-                    "required_dependencies": [],
-                    "size": 822499,
-                    "date_published": "2025-09-11T22:51:01.050Z"
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 835363,
+                    "date_published": "2026-06-06T09:58:32.300Z"
                 }
             ]
         },
@@ -7885,7 +7888,7 @@
             ]
         },
         {
-            "pakku_id": "2XBqXhuDF0b9S8ED",
+            "pakku_id": "eFoG2d3PsvXL2hsy",
             "type": "MOD",
             "slug": {
                 "curseforge": "modernfix"
@@ -7899,7 +7902,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.27.66+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.27.63+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7907,16 +7910,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8459/635/modernfix-forge-5.27.66+mc1.20.1.jar",
-                    "id": "8459635",
+                    "url": "https://edge.forgecdn.net/files/8435/82/modernfix-forge-5.27.63+mc1.20.1.jar",
+                    "id": "8435082",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "322fdb7aadc06b540cff69a2a0a513bf37050f0f",
-                        "md5": "61c184687d2cd6c770a033f310ea55fc"
+                        "sha1": "ceba978d35109b5a1b5090f2bf6af67b1536d1be",
+                        "md5": "7f1761e2d08fcfc7006f38600cbfc2bb"
                     },
                     "required_dependencies": [],
-                    "size": 1002234,
-                    "date_published": "2026-07-18T18:17:53.960Z"
+                    "size": 1001494,
+                    "date_published": "2026-07-15T01:43:32.603Z"
                 }
             ]
         },
@@ -8493,6 +8496,44 @@
                     "required_dependencies": [],
                     "size": 272740,
                     "date_published": "2023-06-26T14:50:49.010Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "hmL3SWy7tSkuOJra",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "no-chat-restrictions"
+            },
+            "name": {
+                "curseforge": "No Chat Restrictions"
+            },
+            "id": {
+                "curseforge": "1442925"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "NoChatRestrictions-Forge-MC1.20.1-v1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7538/450/NoChatRestrictions-Forge-MC1.20.1-v1.0.0.jar",
+                    "id": "7538450",
+                    "parent_id": "1442925",
+                    "hashes": {
+                        "sha1": "a189c024b78b1057f7bab8a64c327ed27a6d186d",
+                        "md5": "dbd8ffddf8d747fdf41656e839dfae3a"
+                    },
+                    "required_dependencies": [],
+                    "size": 9676,
+                    "date_published": "2026-01-27T23:36:55.753Z"
                 }
             ]
         },

@@ -1,0 +1,30 @@
+{
+  "name": "西兰花 🍂",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:broccoli",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 54$(li)🍂 §4秋季§r$(li)种子价格：非卖品$(li)产量：1$(li)生长时间：5 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 西兰花作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:broccoli_crop[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

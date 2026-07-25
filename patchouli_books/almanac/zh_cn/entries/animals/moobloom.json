@@ -1,0 +1,17 @@
+{
+  "name": "哞花",
+  "category": "patchouli:animals",
+  "icon": "betterarcheology:growth_totem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)挤奶: 紫水晶奶$(li)挤奶冷却: 1 天$(li)觅食: 光辉图腾 (5% 概率)$(li)掉落物: 生牛肉, 皮革$(br2)$(l)备注$()$(br)觅食行为需要其达到 10 颗心好感度。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "buzzier_bees:moobloom",
+      "scale": 0.8,
+      "text": "偶尔会用一束特别的花为你的平淡日子增添一抹色彩。"
+    }
+  ]
+}

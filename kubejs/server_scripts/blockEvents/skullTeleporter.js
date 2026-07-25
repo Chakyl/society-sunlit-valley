@@ -20,6 +20,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
       if (!player.stages.has("skull_cavern_intro")) {
         player.stages.add("skull_cavern_intro");
         player.tell(Text.translatable("society.skull_cavern.intro").gold());
+        player.tell(Text.translatable("society.new_villager.message").green());
         player.give(Item.of("gag:escape_rope"));
         let noteTitle = global.translatableWithFallback("society.skull_cavern.intro.note.title", "A Warning").getString();
         let noteAuthor = global.translatableWithFallback("society.skull_cavern.intro.note.author", "someone...").getString();

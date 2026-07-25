@@ -1,0 +1,17 @@
+{
+  "name": "尘土",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)生物群系： 沙漠洞穴, 沙漠断层（骷髅洞穴）$(li)挖掘点： 沙子/石头$(br2)$(l)风险：$()$(br)不开心时会使你抽搐并引发雷击。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "尘土史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:dusty\"}",
+      "scale": 0.9
+    }
+  ]
+}

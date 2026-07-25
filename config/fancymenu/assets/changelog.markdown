@@ -1,8 +1,24 @@
 ^^^
 ## Cozy Cafe
-### v4.1.0
+### v4.1.1
 ^^^
 --- 
+## 4.1.1
+- Added one time login message about building shop change
+- Added message when a new villager can be invited
+- Added arrows for sale to Guild
+- Added no chat restrictions
+- Updated zh cn translation (Thanks Thirace!)
+- Shortened Coin Leaderboard shared account length
+- Fixed 'Constructing a Farmhouse' quest not being updated to new blueprints
+- Fixed Veronica's max gift message being wrong
+- Fixed coin leaderboard not working
+- Fixed fantasy boxes not working
+- Fixed Artisan Hoppers, Fish Pond Baskets, and Auto-grabbers not accounting for skills due to caching change
+- Fixed issue where crossbows and paintings had missing models (probably)
+- Fixed crash with Create Central Kitchen
+
+## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
 - Added new system for Building Shop (Previously in the Quest book) using Building Supplies

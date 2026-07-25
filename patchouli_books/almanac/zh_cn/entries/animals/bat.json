@@ -1,0 +1,17 @@
+{
+  "name": "蝙蝠",
+  "category": "patchouli:animals",
+  "icon": "pamhc2trees:plumitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 随机基础水果 (100% 概率), 李子 (25%), 百香果 (15%)$(br2)$(l)备注$()$(br)觅食行为需要其达到 3 颗心及以上好感度。必须使用命名牌为其命名，否则会消失。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:bat",
+      "scale": 1.0,
+      "text": "长着长牙，爱吃多汁的水果。"
+    }
+  ]
+}

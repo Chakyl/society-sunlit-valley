@@ -1,0 +1,17 @@
+{
+  "name": "鱿鱼",
+  "category": "patchouli:animals",
+  "icon": "minecraft:ink_sac",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)挤奶: 墨囊$(li)挤奶冷却: 1 天$(li)觅食: 生鱿鱼须 (20% 概率), 古式墨水 (10% 概率) $(li)掉落物: 墨囊$(br2)$(l)备注$()$(br)觅食行为需要其达到 5 颗心及以上好感度。必须使用命名牌为其命名，否则会消失。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:squid",
+      "scale": 0.4,
+      "text": "给鱿鱼挤奶？."
+    }
+  ]
+}

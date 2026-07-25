@@ -1,0 +1,18 @@
+{
+  "name": "水手钩鱼",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_sailor_barb",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 112$(li)§0🍂 §4秋季§r$(li)水域：海洋$(li)天气：任意$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:sailor_barb",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Uh, I'm in my prime, Optimus."
+    }
+  ]
+}

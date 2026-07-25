@@ -1,0 +1,18 @@
+{
+  "name": "金枪鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:tuna",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 192$(li)§0🔥 §6夏季§r$(li)水域：海洋$(li)天气：任意$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:tuna",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "This one also wishes it was a Sneep Snorp for some reason."
+    }
+  ]
+}

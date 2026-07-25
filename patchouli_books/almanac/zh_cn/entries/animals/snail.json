@@ -1,0 +1,17 @@
+{
+  "name": "蜗牛",
+  "category": "patchouli:animals",
+  "icon": "autumnity:snail_shell_piece",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: 草莓, 蜗牛壳$(li)掉落物: 蜗牛粘液球$(br2)$(l)备注$()$(br)觅食行为需要其达到 3 颗心及以上好感度。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "autumnity:snail",
+      "scale": 0.8,
+      "text": "它们不喜欢当宠物，但如果它们足够喜欢你，就会把多余的壳给你..."
+    }
+  ]
+}

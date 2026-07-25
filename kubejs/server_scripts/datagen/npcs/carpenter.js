@@ -12,7 +12,7 @@ if (global.datagenDialog) {
       friendship0: [
         "What can I help you with today @i?",
         "Need any building supplies @i?",
-        ["The blueprints I've made in the building shop come with all the building blocks you'll need pre-supplied!", "No need to run around crafting everything for a building, I gotcha covered!"],
+        ["The blueprints I've made in my building shop come with all the building blocks you'll need pre-supplied!", "No need to run around crafting everything for a building, I gotcha covered!"],
         "The wild berries scattered around are such a good field snack!",
         "Don't discount wild plants like nettle, you can use them to make some tasty tea!",
         "Nature is full of valuable and useful plants if you know what you're looking for.",
@@ -25,7 +25,7 @@ if (global.datagenDialog) {
       friendship1: [
         ["If you manage to find any earth crystals in the mines, be sure to make some tappers.", "You can get some valuable liquids from tapping different logs."],
         ["I came across a rotted and overgrown farmhouse while exploring the other day...", "I wonder why the farmer abandoned it."],
-        ["The building shop has plenty of blueprints for your farm to choose from.", "I just need a few basic supplies to be able to build them."],
+        ["My building shop has plenty of blueprints for your farm to choose from.", "I just need a few basic supplies to be able to build them."],
         ["What can I help you with today @i?", "What a beautiful day it is today."],
         "Potatoes are some of the only crops that can grow in the wild! I try to dig around for them when I can.",
         ["It's worth spending some time to upgrade your farm's infrastructure.", "You can use a charting map to link together your paths to travel faster!"],

@@ -1,0 +1,18 @@
+{
+  "name": "鲦鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:minnow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 16$(li)全年$(li)水域：淡水或河流$(li)天气：任意$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:minnow",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "A fish never quite worth the effort it takes to catch"
+    }
+  ]
+}

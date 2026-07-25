@@ -1,0 +1,30 @@
+{
+  "name": "甜菜根 🍂",
+  "category": "patchouli:crops",
+  "icon": "minecraft:beetroot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 24$(li)🍂 §4秋季§r$(li)种子价格：:coin: 4$(li)产量：1$(li)生长时间：3 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Beetroot Crop",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:beetroots[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

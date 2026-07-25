@@ -1,0 +1,18 @@
+{
+  "name": "河鲈",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:perch",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 16$(li)§0🌼 §2春季§0 §0🍂 §4秋季§0 §0❆ §b冬季§r$(li)水域：淡水$(li)天气：任意$(li)时间：春季秋季白天，冬季夜晚"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:perch",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Don't birds do that."
+    }
+  ]
+}

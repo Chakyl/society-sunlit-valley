@@ -1,4 +1,5 @@
 The following mods are used in the pack and are not available on Modrinth but have licenses that allow for redistirbution:
+- [Better Advanced Tooltips](https://www.curseforge.com/minecraft/mc-mods/better-advanced-tooltips-backport) - MIT
 - [Tanuki Decor](https://www.curseforge.com/minecraft/mc-mods/tanukidecor) - GLP
 - [Trail Chambers Reuploaded](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded) - MIT
 - [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) - MIT (Modrinth uploaded version broken)
@@ -8,6 +9,7 @@ The following mods are used in the pack and are not available on Modrinth but ha
 - [MrCrayfish's Furniture Mod: Refurbished](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture#license) - Custom License, allows for redistribution
 - [PowerfulJS](https://www.curseforge.com/minecraft/mc-mods/powerfuljs) - LGPL
 - [GeckoJS](https://www.curseforge.com/minecraft/mc-mods/geckojs) - LGPL
+- [KubeJs Curios](https://www.curseforge.com/minecraft/mc-mods/kubejs-curios) - MIT
 - [FTB Quest Localizer](https://www.curseforge.com/minecraft/mc-mods/ftb-quest-localizer) - MIT
 - [Framework](https://www.curseforge.com/minecraft/mc-mods/framework) - LGPL
 - [Bobby Reforged](https://www.curseforge.com/minecraft/mc-mods/bobby-reforged) - LGPL

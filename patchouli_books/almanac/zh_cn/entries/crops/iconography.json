@@ -1,0 +1,17 @@
+{
+  "sortnum": -1,
+  "name": "图标",
+  "category": "patchouli:crops",
+  "icon": "minecraft:written_book",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "为了更清晰的了解本章中提到的作物，使用了以下图标和颜色对应不同季节:$(li)🌼 §2春季§r$(li)🔥 §6夏季§r$(li)🍂 §4秋季§r$(li)❆ §b冬季§r$(li)🌐 §5全年"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "增长时长",
+      "text": "$(li)生长时间：作物每天早上 6 点生长。$(li)生长阶段：作物每次生长的阶段随机。"
+    }
+  ]
+}

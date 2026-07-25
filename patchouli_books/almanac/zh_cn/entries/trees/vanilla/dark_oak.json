@@ -1,0 +1,105 @@
+{
+  "name": "深色橡树 🍂",
+  "category": "patchouli:trees",
+  "icon": "minecraft:oak_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🍂 §4秋季§r $(li)树苗价格：:coin: 8$(li)尺寸：2x2"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 橡树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "        ",
+            "   LL   ",
+            "  LLLL  ",
+            " LLLLLL ",
+            " LLLLLL ",
+            "  LLLL  ",
+            "   LL   ",
+            "        "
+          ],
+          [
+            " LLLLL  ",
+            "LLLLLLLL",
+            "LLLLLLLL",
+            "LLLWWLLL",
+            "LLLWWLLL",
+            "LLLLLLLL",
+            " LLLLL  ",
+            " LLLLL  "
+          ],
+          [
+            " LLLLLL ",
+            "LLLLLLLL",
+            "LLLWWLWL",
+            "LLLLWWWL",
+            "LLLWWWLL",
+            " LLLLWL ",
+            " LLLLLL ",
+            "  LLLL  "
+          ],
+          [
+            "        ",
+            "        ",
+            "   WW W ",
+            "    WWW ",
+            "   WWW  ",
+            "     W  ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "   WW W ",
+            "    WW  ",
+            "   WWW  ",
+            "        ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "      W ",
+            "    WW  ",
+            "    WW  ",
+            "        ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "        ",
+            "    WW  ",
+            "    WW  ",
+            "        ",
+            "        ",
+            "        "
+          ],
+          [
+            "        ",
+            "        ",
+            "        ",
+            "    WW  ",
+            "    0W  ",
+            "        ",
+            "        ",
+            "        "
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:dark_oak_log[axis=y]",
+          "L": "minecraft:dark_oak_leaves",
+          "W": "minecraft:dark_oak_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

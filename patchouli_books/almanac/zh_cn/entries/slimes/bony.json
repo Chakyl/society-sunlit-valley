@@ -1,0 +1,17 @@
+{
+  "name": "骨感",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bony\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)生物群系： 灵魂沙峡谷$(li)结构： 主世界史莱姆生成器$(li)挖掘点： 所有$(li)红色气球箱$(br2)$(l)风险：$()$(br)它只是高兴在这里！"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "骨感史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bony\"}",
+      "scale": 0.9
+    }
+  ]
+}

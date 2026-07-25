@@ -538,8 +538,28 @@ ServerEvents.tags("item", (e) => {
     "aquaculture:arrau_turtle",
     "aquaculture:starshell_turtle",
   ].forEach((fish) => e.add("minecraft:fishes", fish));
-  // Furniture Workbench tags
-
+  const fantasyCategories = [
+    "nordic",
+    "dunmer",
+    "venthyr",
+    "bone",
+    "royal",
+    "necrolord",
+  ];
+  Ingredient.of("@fantasyfurniture").stacks.forEach((item) => {
+    if (item.toString().includes("furniture_station")) return;
+    let type = /:(.*)\//g.exec(item.id);
+    if (type && type[1]) {
+      type = type[1];
+      if (type.includes("bone")) type = "bone";
+      if (type.includes("decorations")) {
+        fantasyCategories.forEach((category) => {
+          if (item.id.includes(category)) type = category;
+        });
+      }
+      e.add(`society:${type}_fantasy_furniture`, item.id);
+    }
+  });
   const skillBooks = [
     "society:wet_weekly",
     "society:mining_monthly",

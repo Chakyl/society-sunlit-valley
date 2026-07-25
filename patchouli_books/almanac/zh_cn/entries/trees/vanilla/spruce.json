@@ -1,0 +1,88 @@
+{
+  "name": "云杉 🌼🍂❆",
+  "category": "patchouli:trees",
+  "icon": "minecraft:spruce_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🌼 §2春季§r 🍂 §4秋季§r ❆ §b冬季§r$(li)树苗价格：:coin: 8$(li)尺寸：1x1, 2x2"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 橡树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LLL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "  L  ",
+            " LWL ",
+            "  L  ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:spruce_leaves",
+          "L": "minecraft:spruce_leaves",
+          "W": "minecraft:spruce_log[axis=y]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "name": "橙子树 🔥",
+  "category": "patchouli:trees",
+  "icon": "pamhc2trees:apple_sapling",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🔥 §6夏季§r $(li)价格：:coin: 18,432$(li)尺寸：1x1$(li)产出：$(l:tree_crops/orange)8x 橙子$(/l)$(br2)$(l)备注$()$(li)邀请市场入驻到你农场的第二年才会出售这种树苗。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 苹果树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "L": "minecraft:oak_leaves",
+          "W": "minecraft:oak_log[axis=y]",
+          "F": "pamhc2trees:pamorange[age=7]"
+        },
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  0  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "LLLLL",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            "LLLLL"
+          ],
+          [
+            "     ",
+            " FFF ",
+            " FWF ",
+            " FFF ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ]
+        ]
+      }
+    }
+  ]
+}

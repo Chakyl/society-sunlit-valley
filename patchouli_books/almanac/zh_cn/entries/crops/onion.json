@@ -1,0 +1,30 @@
+{
+  "name": "洋葱 🌼",
+  "category": "patchouli:crops",
+  "icon": "farm_and_charm:onion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 12$(li)🌼 §2春季§r$(li)种子价格：:coin: 4$(li)产量：1-4$(li)生长时间：4 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 洋葱作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farm_and_charm:onion_crop[age=4]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

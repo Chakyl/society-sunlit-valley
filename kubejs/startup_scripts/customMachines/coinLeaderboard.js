@@ -10,19 +10,17 @@ const updateLeaderboardMap = (server) => {
     accountName = playerList[playerUUID];
     if (overflowList != null && overflowList[playerUUID] != null) {
       leaderboardMap.set(
-        playerName,
+        accountName,
         bankAccount.getBalance() + overflowList[playerUUID] * 1006632960
       );
     } else {
       if (!accountName) {
         accountName = "";
         Object.keys(server.persistentData.playerList).forEach((playerUUID) => {
-          if (bankAccount.isAuthorized(playerUUID)) {
-            if (accountName !== "") accountName += " & "
-            accountName += playerList[playerUUID];
+          if (accountName !== "" &&bankAccount.isAuthorized(playerUUID)) {
+            if (accountName !== "") accountName += playerList[playerUUID] +"'s Team"
           }
         })
-      accountName += "'s Team"
       }
       leaderboardMap.set(accountName, bankAccount.getBalance());
     }

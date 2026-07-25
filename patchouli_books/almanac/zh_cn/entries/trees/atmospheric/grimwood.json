@@ -1,0 +1,145 @@
+{
+  "name": "阴郁木 🌐",
+  "category": "patchouli:trees",
+  "icon": "atmospheric:grimwood_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)🌐 §5全年§r$(li)尺寸：2x2"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 阴郁木 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "  L  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            " LLL ",
+            " LWL ",
+            " LLL ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            " LLL ",
+            "LLLLL",
+            "LLWLL",
+            "LLLLL",
+            " LLL "
+          ],
+          [
+            "     ",
+            "     ",
+            "  W  ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "  TW ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "   W ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "   W ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            " WTT ",
+            "     ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "WW   ",
+            "WW   ",
+            "     "
+          ],
+          [
+            "     ",
+            "     ",
+            "WW0  ",
+            "WW   ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:air",
+          "L": "atmospheric:grimwood_leaves",
+          "W": "atmospheric:grimwood_log[axis=y]",
+          "T": "atmospheric:grimwood_log[axis=z]"
+        }
+      }
+    }
+  ]
+}

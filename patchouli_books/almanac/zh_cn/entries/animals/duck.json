@@ -1,0 +1,17 @@
+{
+  "name": "鸭",
+  "category": "patchouli:animals",
+  "icon": "untitledduckmod:duck_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: :coin: 512$(li)产蛋: 鸭蛋$(li)掉落物: 生鸭肉, 鸭毛$(br2)$(l)备注$()$(br)饥饿状态不会下蛋，心情不好的鸭子下蛋更少。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "untitledduckmod:duck",
+      "scale": 0.8,
+      "text": "鸭子的羽毛和肉质更细，比较适合用来替代鸡。"
+    }
+  ]
+}

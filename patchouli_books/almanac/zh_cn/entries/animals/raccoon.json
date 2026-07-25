@@ -1,0 +1,17 @@
+{
+  "name": "浣熊",
+  "category": "patchouli:animals",
+  "icon": "furniture:trash_bag",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)觅食: ...垃圾？ (50% 概率)$(li)掉落物: 鱼骨$(br2)$(l)备注$()$(br)觅食行为需要其达到 3 颗心好感度及以上。可在平原生物群系发现。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:raccoon",
+      "scale": 0.7,
+      "text": "它们是腐化史莱姆最好的朋友！"
+    }
+  ]
+}

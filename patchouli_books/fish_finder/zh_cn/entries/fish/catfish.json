@@ -1,0 +1,18 @@
+{
+  "name": "鲶鱼",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:catfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 144$(li)§0🌼 §2春季§r$(li)水域：河流$(li)天气：雨天或雪天$(li)时间：夜晚"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:catfish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Coquito fish!!! Coquito fish!!."
+    }
+  ]
+}
