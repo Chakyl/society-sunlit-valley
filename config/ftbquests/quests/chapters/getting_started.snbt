@@ -417,12 +417,19 @@
 			icon: "tanukidecor:antique_bed"
 			id: "1A4FD076999BF29F"
 			progression_mode: "linear"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "11939F7CA0472064"
-				table_id: 1441633631928763452L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "11939F7CA0472064"
+					table_id: 1441633631928763452L
+					type: "choice"
+				}
+				{
+					id: "761F97EF8DDC6986"
+					item: "furniture:blueprints"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			tasks: [
 				{
