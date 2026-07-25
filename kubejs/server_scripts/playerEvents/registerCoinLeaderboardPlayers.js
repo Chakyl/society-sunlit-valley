@@ -1,7 +1,5 @@
 console.info("[SOCIETY] registerCoinLeaderboardPlayers.js loaded");
 
-const CurioUtils = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
-
 PlayerEvents.loggedIn((e) => {
   const { player, server } = e;
   let playerList = server.persistentData.playerList ?? {};
@@ -14,7 +12,7 @@ ItemEvents.rightClicked(e => {
     let playerList = server.persistentData.playerList;
 
     if (item.id === 'numismatics_utils:portable_bank_terminal') {
-      let bankAccountId = CurioUtils.getCardCurio(player);
+      let bankAccountId = global.getCardCurio(player);
       let cardsList = server.persistentData.cardsList ?? {};
       if (bankAccountId == null | playerList[bankAccountId.id]) {
         cardsList[player.uuid] = null;
