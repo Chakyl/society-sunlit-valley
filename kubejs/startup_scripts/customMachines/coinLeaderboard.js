@@ -5,6 +5,10 @@ const updateLeaderboardMap = (server) => {
   let cardsList = server.persistentData.cardsList;
   let overflowList = server.persistentData.overflowList;
   if (!playerList) return undefined;
+  if (!cardsList) {
+    server.persistentData.cardsList = {};
+    cardsList = server.persistentData.cardsList;
+  }
   let leaderboardMap = new Map();
   global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
     let accountName = playerList[playerUUID];
@@ -43,12 +47,9 @@ global.updateLeaderboard = (block, level, server) => {
   global.clearOldTextDisplay(block, level, "leaderboard");
 
   // Display leaderboard name
-  global.spawnTextDisplay(
-    block,
-    calcY,
-    "leaderboard",
-    Text.translatable("block.society.coin_leaderboard.title")
-  );
+  const displayText = Text.translatable("block.society.coin_leaderboard.title")
+  global.spawnTextDisplay(block, calcY, "leaderboard", displayText);
+  global.spawnTextDisplay(block, calcY, "leaderboard", displayText, 180);
   // Display leaderboard accounts
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
@@ -69,12 +70,9 @@ global.updateLeaderboard = (block, level, server) => {
       }
     }
     calcY -= 0.3;
-    global.spawnTextDisplay(
-      block,
-      calcY,
-      "leaderboard",
-      Text.of(`§6${accountName} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`)
-    );
+    const displayText = Text.of(`§6${accountName} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`);
+    global.spawnTextDisplay(block, calcY, "leaderboard", displayText);
+    global.spawnTextDisplay(block, calcY, "leaderboard", displayText, 180);
   });
 };
 

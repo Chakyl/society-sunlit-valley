@@ -4,15 +4,7 @@ const CurioUtils = Java.loadClass("io.github.chakyl.numismaticsutils.utils.Curio
 
 PlayerEvents.loggedIn((e) => {
   const { player, server } = e;
-  let playerList = server.persistentData.playerList;
-  let cardsList = server.persistentData.cardsList;
-  if (cardsList == null) {
-    cardsList = {};
-  }
-
-  if (playerList == null) {
-    playerList = {};
-  }
+  let playerList = server.persistentData.playerList ?? {};
   playerList[player.uuid] = player.name.string;
   server.persistentData.playerList = playerList;
 });
@@ -23,7 +15,7 @@ ItemEvents.rightClicked(e => {
 
     if (item.id === 'numismatics_utils:portable_bank_terminal') {
       let bankAccountId = CurioUtils.getCardCurio(player);
-      let cardsList = server.persistentData.cardsList;
+      let cardsList = server.persistentData.cardsList ?? {};
       if (bankAccountId == null | playerList[bankAccountId.id]) {
         cardsList[player.uuid] = null;
       } else {
