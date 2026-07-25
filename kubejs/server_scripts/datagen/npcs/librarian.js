@@ -98,7 +98,7 @@ if (global.datagenDialog) {
           "Hey @i! I've got an idea on how to earn Caroline's respect!",
           "As you've probably figured out right now, she's insatiable when it comes to your role in this little town.",
           "It doesn't matter how much your farm makes, it will never be enough! Everyone around here relies on the economic activity of your farm after all.",
-          "That said, being knowledgable about your financial history will give her at least a little more peace of mind.",
+          "That said, being knowledgeable about your financial history will give her at least a little more peace of mind.",
           "It would be a shame if my two best friends didn't get along, so please read it when you get the chance ♡"
         ]
       },
