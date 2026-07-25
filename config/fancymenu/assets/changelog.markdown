@@ -15,6 +15,7 @@
 - Fixed coin leaderboard not working
 - Fixed fantasy boxes not working
 - Fixed Artisan Hoppers, Fish Pond Baskets, and Auto-grabbers not accounting for skills due to caching change
+- Fixed issue where crossbows and paintings had missing models (probably)
 - Fixed crash with Create Central Kitchen
 
 ## 4.0.0
