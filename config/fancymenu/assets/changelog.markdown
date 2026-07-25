@@ -3,7 +3,6 @@
 ### v4.1.1
 ^^^
 --- 
-- Added a limit to placing coin leaderboards to prevent lag
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
 - Added new system for Building Shop (Previously in the Quest book) using Building Supplies
