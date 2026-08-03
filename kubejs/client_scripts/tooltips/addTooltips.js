@@ -85,7 +85,7 @@ ClientEvents.lang("en_us", event => {
   artifactTooltips.forEach((tooltipMap) => {
     const key = tooltipMap.item
     const lang = tooltipMap.tooltip
-    event.add(`tooltip.always.${key.replace(":", ".")}.0`, `<ltcolor>c=FF33AA;${lang}</ltcolor>`)
+    event.add(`tooltip.always.${key.replace(":", ".")}.0`, `<ltcolor>c=301934;${lang}</ltcolor>`)
   })
 })
 
