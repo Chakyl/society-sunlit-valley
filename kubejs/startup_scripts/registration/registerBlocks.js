@@ -49,6 +49,6 @@ StartupEvents.registry("block", (event) => {
     event.create('society:sparkstone_ore')
     event.create('society:spruce_supply_crate')
     event.create('society:stone_boulder')
-    event.create('windswept:icicles')
+    // event.create('windswept:icicles')
     event.create("society:grimwood_supply_crate")
 })

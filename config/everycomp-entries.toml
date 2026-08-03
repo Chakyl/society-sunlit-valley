@@ -58,6 +58,12 @@
 		[types.leaves_type.minecraft]
 			pale_oak = true
 
+		[types.leaves_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+			flowering_acacia = true
+
 		[types.wood_type.quark]
 			azalea = true
 			ancient = true
@@ -99,6 +105,11 @@
 		[types.wood_type.darkerdepths]
 			petrified = true
 
+		[types.wood_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+
 		[types.cake.veggiesdelight]
 			carrot_cake = true
 
@@ -121,6 +132,9 @@
 
 		[types.lantern.darkerdepths]
 			glowshroom_lantern = true
+
+		[types.lantern.windswept]
+			ice_lantern = true
 
 #Disables specific entries
 [entries]

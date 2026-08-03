@@ -1,11 +1,12 @@
-
 #Windswept Content Tweaks
 [content]
 	#How much durability Wooden Buckets should have
-	#Range: 1 ~ 1000
+	# Default: 24
+	# Range: 1 ~ 1000
 	"Wooden Bucket Durability" = 24
 	#The chance that the Bumblebee Music Disc should drop from Beehives and Bee Nests
-	#Range: 0.0 ~ 1.0
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
 	"Bumblebee Disc Chance" = 0.01
 
 #Vanilla Gameplay Tweaks
@@ -29,4 +30,3 @@
 [worldgen]
 	#Roots will grow under the dirt block below a tree, chestnut trees overhanging logs will grow roots
 	"Tree Roots" = true
-
