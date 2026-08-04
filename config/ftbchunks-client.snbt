@@ -138,23 +138,23 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:sulfur_cube": true
-			"minecraft:enderman": true
-			"minecraft:zombie": true
+			"minecraft:husk": true
 			"minecraft:phantom": true
-			"minecraft:bat": true
-			"hominid:juggernaut": true
-			"minecraft:spider": true
 			"creaturefeature:beauty": true
-			"minecraft:evoker": true
-			"minecraft:breeze": true
-			"minecraft:blaze": true
-			"minecraft:skeleton": true
 			"minecraft:creeper": true
+			"minecraft:enderman": true
+			"minecraft:spider": true
+			"minecraft:bat": true
+			"crittersandcompanions:roly_poly": true
+			"minecraft:blaze": true
+			"minecraft:zombie": true
+			"minecraft:evoker": true
 			"hominid:bellman": true
 			"minecraft:shulker": true
-			"crittersandcompanions:roly_poly": true
-			"minecraft:husk": true
+			"minecraft:breeze": true
+			"minecraft:sulfur_cube": true
+			"minecraft:skeleton": true
+			"hominid:juggernaut": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

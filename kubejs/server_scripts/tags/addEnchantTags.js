@@ -1,4 +1,5 @@
 // Server Scripts
+// Definitions for compatible tool enchantments
 
 // Base gear Tiers
 

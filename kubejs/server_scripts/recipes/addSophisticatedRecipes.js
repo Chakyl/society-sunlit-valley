@@ -1,3 +1,6 @@
+// Server Scripts
+// Recipes for Soph Storage/Backpacks
+
 ServerEvents.recipes((event) => {
 
     event.shaped('sophisticatedstorage:diamond_storage_upgrade', ['ABA', 'BCB', 'ABA'], {

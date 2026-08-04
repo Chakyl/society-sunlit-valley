@@ -1,3 +1,6 @@
+// Server Scripts
+// Various methods of easily removing recipes
+
 ServerEvents.recipes((event) => {
 
   const removedTypes = [

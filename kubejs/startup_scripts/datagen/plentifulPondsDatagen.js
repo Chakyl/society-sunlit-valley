@@ -1,3 +1,6 @@
+// Server Scripts
+// Migrated fish pond definitions from 1.20.1 to Plentiful Ponds mod via datagen
+
 const basicQuests = [
     {
         population: 3,
