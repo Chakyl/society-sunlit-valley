@@ -3,20 +3,18 @@
 ### v4.1.2
 ^^^
 --- 
-## 4.1.1
-- Added one time login message about building shop change
-- Added message when a new villager can be invited
-- Added arrows for sale to Guild
-- Added no chat restrictions
-- Updated zh cn translation (Thanks Thirace!)
-- Shortened Coin Leaderboard shared account length
-- Fixed 'Constructing a Farmhouse' quest not being updated to new blueprints
-- Fixed Veronica's max gift message being wrong
-- Fixed coin leaderboard not working
-- Fixed fantasy boxes not working
-- Fixed Artisan Hoppers, Fish Pond Baskets, and Auto-grabbers not accounting for skills due to caching change
-- Fixed issue where crossbows and paintings had missing models (probably)
-- Fixed crash with Create Central Kitchen
+## 4.1.2
+- Added recipe to convert potato noodles into raw pasta
+- Added recipe to convert duck feather into feather
+- Added changelog translation support (Thanks Hexagreen!)
+- Updated ko_kr translation (Thanks Hexagreen!)
+- Fixed issues with the Wise Oak dialog
+- Fixed Fish Pond Hatchery not binding to players (will need to break and replace)
+- Fixed new villager quests accepting any invitation
+- Fixed librarian quest dependency being wrong
+- Fixed removed items being obtainable in loot
+- Fixed Fish Pond Hatchery not being upgradable
+- Fixed triple truffle not working with Auto Grabbers
 
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
@@ -84,3 +82,18 @@
 - Fixed Redstone Link using Brass Casing instead of Andesite
 - Fixed building sets having inconsistent amounts of troughs
 - Fixed Prismatic Shard/Sparkstone blocks not having minable tags
+
+## 4.1.1
+- Added one time login message about building shop change
+- Added message when a new villager can be invited
+- Added arrows for sale to Guild
+- Added no chat restrictions
+- Updated zh cn translation (Thanks Thirace!)
+- Shortened Coin Leaderboard shared account length
+- Fixed 'Constructing a Farmhouse' quest not being updated to new blueprints
+- Fixed Veronica's max gift message being wrong
+- Fixed coin leaderboard not working
+- Fixed fantasy boxes not working
+- Fixed Artisan Hoppers, Fish Pond Baskets, and Auto-grabbers not accounting for skills due to caching change
+- Fixed issue where crossbows and paintings had missing models (probably)
+- Fixed crash with Create Central Kitchen
