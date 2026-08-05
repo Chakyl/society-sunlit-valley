@@ -1,6 +1,6 @@
 console.info("[SOCIETY] upgradeSparkstoneMachines.js loaded");
 
-BlockEvents.rightClicked("society:fish_pond_basket", (e) => {
+BlockEvents.rightClicked(["society:fish_pond_basket", "society:fish_pond_hatchery"], (e) => {
   const { player, item, block, hand, level } = e;
   const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
 

@@ -196,6 +196,9 @@ LootJS.modifiers((e) => {
         '{slime:{id:"splendid_slimes:weeping"}}'
       )
     );
+  e.addLootTableModifier("atmospheric:chests/arid_garden").removeLoot(
+    "atmospheric:golden_dragon_fruit"
+  );
   e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot(
     "minecraft:diamond_sword"
   );
