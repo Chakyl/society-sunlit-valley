@@ -26,7 +26,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("simpletms:tr_dracometeor", ["society:prismatic_shard", "4x sunlit_cobblemon:draco_meteorite"]);
   e.shapeless("cobblemon:quick_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
   e.shapeless("cobblemon:razor_claw", ["society:aquamagical_dust", "cobblemon:quick_claw"]);
-    e.custom({
+  e.custom({
     type: "farmersdelight:cooking",
     cookingtime: 200,
     experience: 3.0,
@@ -46,6 +46,20 @@ ServerEvents.recipes((e) => {
       item: 'cobblemon:vivichoke_dip'
     },
   });
+  e.shaped("sunlit_cobblemon:tidal_bell", ["sss", "pbe", "lll"], {
+    s: "oreganized:silver_block",
+    b: "minecraft:bell",
+    e: "society:elytra_wing",
+    p: "society:sunlit_pearl",
+    l: "cluttered:willow_log"
+  })
+  e.shaped("sunlit_cobblemon:clear_bell", ["sss", "pbe", "lll"], {
+    s: "minecraft:gold_block",
+    b: "minecraft:bell",
+    e: "society:elytra_wing",
+    p: "minecraft:totem_of_undying",
+    l: "cluttered:willow_log"
+  })
   e.shaped("sunlit_cobblemon:uncharged_battery", [" zr", "zrz", "rz "], {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",

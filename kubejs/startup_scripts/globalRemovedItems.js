@@ -1,4 +1,7 @@
 global.removedItems = [
+  "sunlit_cobblemon:uncharged_battery",
+  "cobblemon_farmers:booster_battery",
+  "cobblemon_farmers:endless_battery",
   "unimplemented_items:potion",
   "unimplemented_items:potion_hyper",
   "unimplemented_items:potion_max",

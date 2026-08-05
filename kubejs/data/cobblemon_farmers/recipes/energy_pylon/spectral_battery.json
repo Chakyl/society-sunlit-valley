@@ -1,0 +1,11 @@
+{
+  "type": "cobblemon_farmers:energy_pylon",
+  "consume_chance": 0.75,
+  "bonus_speed": 2.0,
+  "ingredient": {
+    "item": "cobblemon_farmers:spectral_battery"
+  },
+  "result": {
+    "item": "sunlit_cobblemon:uncharged_battery"
+  }
+}
