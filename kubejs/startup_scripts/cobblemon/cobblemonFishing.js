@@ -69,7 +69,7 @@ const catchPokemon = (caughtMon, level, hook, server, player, nether) => {
       if (global.hasPartyPokemon(player, lakeLegendaries, 3)) {
         let blockToSet = level.getBlock(level.getBlock(hook.getPos()).getPos().above());
         blockToSet.set("cobblemon:moon_stone_block")
-        let spawnedAny = global.summonRaidPokemon(server, level, blockToSet, "cresselia", "", 100, 75, false, false, 0, true);
+        let spawnedAny = global.summonRaidPokemon(server, level, blockToSet, "cresselia", "", 100, 75, false, false, 0, {x: 0, y: 1.1, z: 0});
         if (spawnedAny) {
           let { x, y, z } = blockToSet;
           server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${x} ${y} ${z} 2`);

@@ -106,13 +106,13 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:sunlit_league_medallion");
   e.create("sunlit_cobblemon:poke_radar").maxStackSize(1).displayName("Poké Radar");
   e.create("sunlit_cobblemon:berry_capsule").texture(
-    "sunlit_cobblemon:item/berry_capsule",
+    "sunlit_cobblemon:item/kubejs/berry_capsule",
   );
   e.create("sunlit_cobblemon:gachamon_capsule").texture(
-    "sunlit_cobblemon:item/gachamon_capsule",
+    "sunlit_cobblemon:item/kubejs/gachamon_capsule",
   );
   e.create("sunlit_cobblemon:uncharged_battery").texture(
-    "sunlit_cobblemon:item/uncharged_battery",
+    "cobblemon_farmers:item/uncharged_battery",
   );
   e.create(`sunlit_cobblemon:fire_pledge`).texture(`cobblemon:item/fire_pledge`)
   e.create(`sunlit_cobblemon:grass_pledge`).texture(`cobblemon:item/grass_pledge`)
@@ -175,7 +175,9 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:star_pixie").texture(
     "sunlit_cobblemon:item/star_pixie",
   );
-  e.create("sunlit_cobblemon:endless_battery");
+  e.create("sunlit_cobblemon:endless_battery").texture(
+    "cobblemon_farmers:item/endless_battery",
+  );
   e.create("sunlit_cobblemon:tabula_rasa");
   e.create("sunlit_cobblemon:frozen_calamity");
   e.create("sunlit_cobblemon:blazing_calamity");

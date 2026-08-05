@@ -1,20 +1,6 @@
 {
-  "enabled": true,
-  "neededInstalledMods": [],
-  "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "walkingwake-1",
-      "pokemon": "walkingwake",
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50-70",
-      "weight": 1.0,
-      "condition": {
-        "dimensions": ["society:skull_cavern"],
-        "biomes": ["society:frozen_caves"]
-      }
-    }
-  ]
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": []
 }

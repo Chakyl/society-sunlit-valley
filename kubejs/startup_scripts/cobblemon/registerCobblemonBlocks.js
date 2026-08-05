@@ -40,7 +40,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("sunlit_cobblemon:block/ominous_black_stake");
+    .model("sunlit_cobblemon:block/kubejs/ominous_black_stake");
 
   e.create("sunlit_cobblemon:gem_box")
     .box(3, 0, 3, 13, 10, 13)
@@ -54,6 +54,13 @@ StartupEvents.registry("block", (e) => {
     })
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("sunlit_cobblemon:block/gem_box");
-
+    .model("sunlit_cobblemon:block/kubejs/gem_box");
+  e.create("sunlit_cobblemon:time_frame")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("sunlit_cobblemon:block/kubejs/time_frame");
 });

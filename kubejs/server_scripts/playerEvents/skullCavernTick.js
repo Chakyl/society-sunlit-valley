@@ -50,6 +50,13 @@ PlayerEvents.tick((e) => {
       );
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
       player.potionEffects.add("minecraft:darkness", 310, 0, true, false);
+      // [Sunlit Cobblemon] Start
+      if (!player.persistentData.skullCavernFainted) player.persistentData.skullCavernFainted = 1;
+      else player.persistentData.skullCavernFainted = player.persistentData.skullCavernFainted + 1;
+      if (player.persistentData.skullCavernFainted >= 5 && player.stages.has("mastery_unlocked")) {
+        player.potionEffects.add("sunlit_cobblemon:nightmare", 24000, 0, true, false);
+      }
+      // [Sunlit Cobblemon] End
       if (global.enableDeathDebt && !player.stages.has("debt_caverns")) {
         global.handleFee(server, player, "skull_cavern");
         if (Math.random() <= 0.02) player.give("society:debt_caverns");

@@ -144,10 +144,10 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.sunlit_cobblemon.trainer_podium.description").gray());
       item.modelJson({
-        parent: "sunlit_cobblemon:block/trainer_podium",
+        parent: "sunlit_cobblemon:block/kubejs/trainer_podium",
       });
     })
-    .model("sunlit_cobblemon:block/trainer_podium")
+    .model("sunlit_cobblemon:block/kubejs/trainer_podium")
     .blockEntity((blockInfo) => {
       blockInfo.enableSync();
       blockInfo.initialData({ owner: "-1", trainers: {} });

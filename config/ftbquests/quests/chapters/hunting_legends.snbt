@@ -1,0 +1,159 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hunting_legends"
+	group: "13003519EF914BA5"
+	icon: "cobblemon:cherish_ball"
+	id: "5A3EDE9AB0D9F112"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			icon: "sunlit_cobblemon:gem_box"
+			id: "399D1B26D9C41182"
+			tasks: [
+				{
+					id: "3E5D993D70AF2C06"
+					item: "sunlit_cobblemon:gem_box"
+					type: "item"
+				}
+				{
+					id: "6923BCA2EA1D964E"
+					item: "sunlit_cobblemon:tabula_rasa"
+					type: "item"
+				}
+			]
+			title: "The Puzzle Box"
+			x: -13.0d
+			y: -6.5d
+		}
+		{
+			disable_toast: true
+			id: "0842E7FE4BF590F2"
+			size: 1.5d
+			tasks: [{
+				id: "77574D6BF0F42078"
+				item: "society:prismatic_shard"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			icon: "sunlit_cobblemon:ominous_black_stake"
+			id: "25346B0BDB75F3FF"
+			min_required_tasks: 2
+			tasks: [
+				{
+					id: "5DE1BEAAF93A008E"
+					item: "sunlit_cobblemon:ominous_black_stake"
+					type: "item"
+				}
+				{
+					id: "03512B0C85D4771E"
+					item: "sunlit_cobblemon:frozen_calamity"
+					type: "item"
+				}
+				{
+					id: "0203ACE8EA42B229"
+					item: "sunlit_cobblemon:blazing_calamity"
+					type: "item"
+				}
+			]
+			title: "The Calamities"
+			x: -13.5d
+			y: -8.5d
+		}
+		{
+			description: [""]
+			disable_toast: true
+			icon: "society:book_of_stars"
+			id: "3D21580DE9FBDFEF"
+			size: 1.5d
+			tasks: [{
+				icon: "society:book_of_stars"
+				id: "22EED2808FCA51C1"
+				stage: "mastery_unlocked"
+				title: "{ftbquests.chapter.iv__prismatic_farming.quest25677844C218103A.task.4604507130240955467.title}"
+				type: "gamestage"
+			}]
+			x: -14.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			id: "622F93DF6D7949A8"
+			tasks: [{
+				id: "56F709064F2499CE"
+				item: "sunlit_cobblemon:rainbow_steam"
+				title: "The Genies"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			id: "08AE03954E4A57A8"
+			tasks: [{
+				id: "2DA5EE57892118A4"
+				item: "sunlit_cobblemon:swampy_mystica_branch"
+				title: "The Lake Spirits"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"25677844C218103A"
+				"08AE03954E4A57A8"
+			]
+			id: "0DF0041E26E7736A"
+			tasks: [{
+				id: "1A059CA4BDD30CD1"
+				item: "sunlit_cobblemon:mystica_nectar"
+				title: "The Strange Birds"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			id: "06B7B1187630B88D"
+			tasks: [{
+				id: "3E182403DFD0A490"
+				item: "sunlit_cobblemon:moongeist_crystal"
+				type: "item"
+			}]
+			title: "The Sun and the Moon"
+			x: -15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			icon: "sunlit_cobblemon:clear_bell"
+			id: "5C26E77F92F0EDFE"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "23DD3D07057459E4"
+					item: "sunlit_cobblemon:clear_bell"
+					type: "item"
+				}
+				{
+					id: "2144597A4267BA15"
+					item: "sunlit_cobblemon:tidal_bell"
+					type: "item"
+				}
+			]
+			title: "The Bell Jar"
+			x: -16.5d
+			y: -3.5d
+		}
+	]
+	title: "Hunting Legends"
+}
