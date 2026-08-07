@@ -225,6 +225,36 @@
     },
     {
       "offer": {
+        "item": "cobblemon:scroll_of_darkness",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:fire_pledge",
+        "count": 4
+      },
+      "second_request": {
+        "item": "society:pink_energy_drink",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_scroll_of_darkness"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:scroll_of_waters",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:water_pledge",
+        "count": 4
+      },
+      "second_request": {
+        "item": "society:mana_energy_drink",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_scroll_of_waters"
+    },
+    {
+      "offer": {
         "item": "society:ancient_cog",
         "count": 1
       },

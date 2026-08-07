@@ -104,13 +104,14 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:mystica_cookie");
   e.create("sunlit_cobblemon:sun_mirror").maxStackSize(1);
   e.create("sunlit_cobblemon:sunlit_league_medallion");
+  e.create("sunlit_cobblemon:elite_stone");
   e.create("sunlit_cobblemon:poke_radar").maxStackSize(1).displayName("Poké Radar");
-  e.create("sunlit_cobblemon:berry_capsule").texture(
-    "sunlit_cobblemon:item/kubejs/berry_capsule",
-  );
-  e.create("sunlit_cobblemon:gachamon_capsule").texture(
-    "sunlit_cobblemon:item/kubejs/gachamon_capsule",
-  );
+  e.create("sunlit_cobblemon:berry_capsule").modelJson({
+        parent: "sunlit_cobblemon:item/kubejs/berry_capsule",
+      });
+  e.create("sunlit_cobblemon:gachamon_capsule").modelJson({
+        parent: "sunlit_cobblemon:item/kubejs/gachamon_capsule",
+      });
   e.create("sunlit_cobblemon:uncharged_battery").texture(
     "cobblemon_farmers:item/uncharged_battery",
   );
@@ -189,6 +190,9 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:blooming_ring");
   e.create("sunlit_cobblemon:cornucopia_of_greed");
   e.create("sunlit_cobblemon:moongeist_crystal");
+  e.create("sunlit_cobblemon:soul_dew");
+  e.create("sunlit_cobblemon:gracidea_flower");
+  e.create("sunlit_cobblemon:pecha_shell");
   [
     "the_art_of_battle",
     "berry_labor_and_capital",

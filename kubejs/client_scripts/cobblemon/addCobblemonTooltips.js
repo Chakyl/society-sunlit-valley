@@ -283,6 +283,9 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:blooming_ring', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   tooltip.add('sunlit_cobblemon:cornucopia_of_greed', Text.translatable(`tooltip.sunlit_cobblemon.cornucopia_of_greed.description`).gray());
   tooltip.add('sunlit_cobblemon:cornucopia_of_greed', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:pecha_shell', Text.translatable(`tooltip.sunlit_cobblemon.pecha_shell.found`).gray());
+  tooltip.add('sunlit_cobblemon:pecha_shell', Text.translatable(`tooltip.sunlit_cobblemon.pecha_shell.description`).gray());
+  tooltip.add('sunlit_cobblemon:pecha_shell', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
 
   tooltip.add('sunlit_cobblemon:fire_pledge', Text.translatable(`tooltip.sunlit_cobblemon.fire_pledge.description`).red());
   tooltip.add('sunlit_cobblemon:grass_pledge', Text.translatable(`tooltip.sunlit_cobblemon.grass_pledge.description`).green());

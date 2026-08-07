@@ -11,6 +11,9 @@ const harvestCobblemonBerryBush = (block, level, pos, player) => {
     returnData.push(GrowthPoints[i])
     returnData.push(Berry)
   }
+  if (Math.random() <= 0.01 && Berry.toString().equals("cobblemon:pecha_berry")) {
+    returnData.push("sunlit_cobblemon:pecha_shell")
+  }
   nbt.merge({
     GrowthPoints: newGrowthPoints,
   });

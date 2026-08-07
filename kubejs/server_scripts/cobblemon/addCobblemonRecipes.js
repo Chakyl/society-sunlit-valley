@@ -46,6 +46,14 @@ ServerEvents.recipes((e) => {
       item: 'cobblemon:vivichoke_dip'
     },
   });
+    e.shaped('sunlit_cobblemon:gracidea_flower', ["lgp", "gsg", "hge"], {
+    g: "betterarcheology:growth_totem",
+    s: 'botania:overgrowth_seed',
+    e: "ribbits:swamp_daisy",
+    p: "minecraft:oxeye_daisy",
+    l: "botania:pure_daisy",
+    h: "herbalbrews:hibiscus"
+  })
   e.shaped("sunlit_cobblemon:tidal_bell", ["sss", "pbe", "lll"], {
     s: "oreganized:silver_block",
     b: "minecraft:bell",

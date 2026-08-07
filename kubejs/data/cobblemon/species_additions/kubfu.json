@@ -1,0 +1,30 @@
+{
+  "implemented": true,
+  "target": "cobblemon:kubfu",
+
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 1,
+    "height": 1.5,
+    "fixed": false
+  },
+
+  "behaviour": {
+    "moving": {
+      "canLook": true,
+      "walk": {
+        "walkSpeed": 0.6,
+        "canWalk": true,
+        "avoidsLand": false
+      },
+      "fly": {
+        "canFly": false
+      },
+      "swim": {
+        "swimSpeed": 0.2,
+        "canSwimInWater": false,
+        "canBreatheUnderwater": false
+      }
+    }
+  }
+}

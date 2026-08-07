@@ -154,6 +154,65 @@
 			x: -16.5d
 			y: -3.5d
 		}
+		{
+			id: "192A29795AF8F732"
+			tasks: [{
+				id: "02D8F8DC48B4E28E"
+				item: "sunlit_cobblemon:bear_scroll"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			id: "22E3DCA00B0F64ED"
+			tasks: [{
+				id: "022C7128DEFC59A9"
+				item: "sunlit_cobblemon:pecha_shell"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["192A29795AF8F732"]
+			icon: "cobblemon:scroll_of_waters"
+			id: "1A5DCE8B7402D28C"
+			tasks: [
+				{
+					id: "76A3A13703FB5481"
+					item: "cobblemon:scroll_of_waters"
+					type: "item"
+				}
+				{
+					id: "70F55DE551C7AC92"
+					item: "cobblemon:scroll_of_darkness"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			id: "332E248CD069CAC5"
+			tasks: [{
+				id: "7F761E196D41D21C"
+				item: "sunlit_cobblemon:gracidea_flower"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			id: "3C382FAA607E7F67"
+			tasks: [{
+				id: "44DEDB8324564F27"
+				item: "sunlit_cobblemon:soul_dew"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -3.5d
+		}
 	]
 	title: "Hunting Legends"
 }

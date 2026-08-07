@@ -139,6 +139,18 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
+    .waterlogged()
+    .property(booleanProperty.create("upgraded"))
+    .defaultState((state) => {
+      state
+        .set(booleanProperty.create("upgraded"), false)
+        .set(BlockProperties.WATERLOGGED, false);
+    })
+    .placementState((state) => {
+      state
+        .set(booleanProperty.create("upgraded"), false)
+        .set(BlockProperties.WATERLOGGED, false);
+    })
     .box(1, 0, 1, 15, 2, 15)
     .defaultCutout()
     .item((item) => {
@@ -154,5 +166,16 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(300, 0, (entity) => {
         global.runTrainerPodium(entity);
       });
-    });
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { upgraded: "false" },
+        apply: { model: "sunlit_cobblemon:block/kubejs/trainer_podium" },
+      },
+      {
+        when: { upgraded: "true" },
+        apply: { model: "sunlit_cobblemon:block/kubejs/trainer_podium_upgraded" },
+      },
+    ],
+  };
 });

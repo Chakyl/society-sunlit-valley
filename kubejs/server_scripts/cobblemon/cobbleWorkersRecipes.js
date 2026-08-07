@@ -278,6 +278,15 @@ ServerEvents.recipes((e) => {
     24000,
     "SPEED"
   );
+    createCobbleWorkerRecipe(
+    {
+      item: "cobblemon:metal_alloy",
+    },
+    { item: "sunlit_cobblemon:bear_scroll", count: 1 },
+    "fighting",
+    48000,
+    "ATTACK"
+  );
   createCobbleWorkerRecipe(
     {
       item: "society:prismatic_shard",

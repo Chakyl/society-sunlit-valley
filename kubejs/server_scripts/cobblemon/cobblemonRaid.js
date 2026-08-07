@@ -133,6 +133,7 @@ const sumMPRaidLevel = (nearbyPlayers, raidTier) => {
 const sunLegendaries = new Map([
     ["sunlit_cobblemon:blooming_ring", "xerneas"],
     ["sunlit_cobblemon:cornucopia_of_greed", "yveltal"],
+    ["sunlit_cobblemon:pecha_shell", "pecharunt"],
 ]);
 
 BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {

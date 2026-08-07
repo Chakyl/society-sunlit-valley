@@ -8,14 +8,15 @@ global.runBell = (entity, legendary) => {
   ) {
     let server = level.getServer();
     let { x, y, z } = block;
-    if (y >= 128 && Math.random() <= 0.025)
-    server.runCommandSilent(`playsound tanukidecor:block.clock_tower.chime block @a ${x} ${y} ${z} 3 0.4`);
-    let spawnedAny = global.summonRaidPokemon(server, level, level.getBlock(block.getPos().above()), legendary, "", 95, 75, false, false, 0);
-    if (spawnedAny) {
-      server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${x} ${y} ${z} 2`);
-      server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${x} ${y} ${z} 2`);
-      server.runCommandSilent(`playsound wildernature:cassowary_ambient block @a ${x} ${y} ${z} 3 0.4`);
-      level.spawnParticles("species:ghoul_searching2", true, x + 0.5, y + 2, z + 0.5, 0, 0, 0, 1, 2);
+    if (y >= 128 && Math.random() <= 0.025) {
+      server.runCommandSilent(`playsound tanukidecor:block.clock_tower.chime block @a ${x} ${y} ${z} 3 0.4`);
+      let spawnedAny = global.summonRaidPokemon(server, level, level.getBlock(block.getPos().above()), legendary, "", 95, 75, false, false, 0);
+      if (spawnedAny) {
+        server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${x} ${y} ${z} 2`);
+        server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${x} ${y} ${z} 2`);
+        server.runCommandSilent(`playsound wildernature:cassowary_ambient block @a ${x} ${y} ${z} 3 0.4`);
+        level.spawnParticles("species:ghoul_searching2", true, x + 0.5, y + 2, z + 0.5, 0, 0, 0, 1, 2);
+      }
     }
   }
 };
