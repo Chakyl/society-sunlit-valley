@@ -190,7 +190,9 @@ global["JadeSocietyCropClientCallback"] = (
   ].includes(name));
   const fertilizerNotApplies = [
     "farmersdelight:rice_panicles",
-    "minecraft:sweet_berry_bush"
+    "minecraft:sweet_berry_bush",
+    "windswept:wild_berry_bush",
+    "vintagedelight:gearo_berry_bush"
   ];
   const grapeMap = {
     red: "vinery:red_grape_seeds",
@@ -287,6 +289,8 @@ global["JadeSocietyCropClientCallback"] = (
         addGrowthLevelTooltip(state.getValue(BlockProperties.AGE_3), 3, isCropFertile(name));
       } 
     } catch (e) {}
+  } else if("minecraft:torchflower".equals(name)) {
+    tooltip.add(Component.translatable("jade.society.crop_growth.mature").darkGreen());
   } else {
     $JadeCropInfo.INSTANCE.appendTooltip(tooltip.getTooltip(), accessor, pluginConfig);
     if (!blockContainer.hasTag("dew_drop_farmland_growth:cancel_random_tick") && $SereneFertility.isCrop(state) && !isCropFertile(name)) {
