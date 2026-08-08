@@ -8,33 +8,37 @@
   },
   "selector_weight": -96,
   "trades": [
-		{
-			"offer": {
-				"item": "society:building_supplies",
-				"count": 1
-			},
-			"request": {
-				"item": "meadow:fire_log",
-				"count": 10
-			},
-			"numismatics_cost": 4096,
-			"trade_id": "carpenter_building_supplies"
-		},
-		{
-			"offer": {
-				"item": "society:greenhouse_building_supplies",
-				"count": 1
-			},
-			"request": {
-				"item": "society:building_supplies",
-				"count": 1
-			},
-			"second_request": {
-				"item": "moreminecarts:chiseled_organic_glass",
-				"count": 24
-			},
-			"trade_id": "carpenter_greenhouse_supplies"
-		},
+    {
+      "offer": {
+        "item": "society:building_supplies",
+        "count": 1
+      },
+      "request": {
+        "item": "meadow:fire_log",
+        "count": 10
+      },
+      "second_request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "carpenter_building_supplies"
+    },
+    {
+      "offer": {
+        "item": "society:greenhouse_building_supplies",
+        "count": 1
+      },
+      "request": {
+        "item": "society:building_supplies",
+        "count": 1
+      },
+      "second_request": {
+        "item": "moreminecarts:chiseled_organic_glass",
+        "count": 24
+      },
+      "trade_id": "carpenter_greenhouse_supplies"
+    },
     {
       "offer": {
         "item": "society:fantasy_box_bone",

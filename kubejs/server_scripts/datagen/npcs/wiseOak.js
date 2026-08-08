@@ -36,7 +36,7 @@ if (global.datagenDialog) {
         "The relationship between capitalism and eco-disaster is neither coincidental nor accidental."
       ],
       friendship3: [
-        "You sap my strenght with this needless chatter. Let me rest.",
+        "You sap my strength with this needless chatter. Let me rest.",
         "A sapling a day keeps the bourgeoisie away!",
         ["Capitalist ideology disguises itself in inevitabilities.", "'If I do not claim this for myself, someone else will.'", "You are not immune to this trapping, o' Soft One."],
         "Those that dismiss their own role in the abomination that is capitalism are not absolved from it in the eyes of the forest.",
