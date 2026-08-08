@@ -5,6 +5,8 @@ ServerEvents.recipes((e) => {
   e.shapeless(Item.of('minecraft:sugar', 8, '{quality_food:{quality:3}}'), ["society:maple_syrup"])
   e.shapeless(Item.of('minecraft:sugar', 3, '{quality_food:{quality:2}}'), ["minecraft:honey_bottle"])
   e.shapeless(Item.of('minecraft:sugar', 1, '{quality_food:{quality:1}}'), ["minecraft:sugar_cane"])
+  e.shapeless("farm_and_charm:raw_pasta", ['veggiesdelight:potato_noodle', 'veggiesdelight:potato_noodle','veggiesdelight:potato_noodle'])
+  e.shapeless("minecraft:feather", ['untitledduckmod:duck_feather'])
   e.shaped("atmospheric:blood_orange", ["mmm", "mom", "mmm"], {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",

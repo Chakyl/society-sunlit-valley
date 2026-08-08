@@ -110,11 +110,11 @@
 //         { title: "villager_caroline", content: ":caroline: Caroline respects a farmer that can handle goats." },
 //         { title: "villager_evelyne", content: ":evelyne: Evelyne finds the witch hat professionally degreading." },
 //         { title: "villager_veronica", content: ":veronica: Veronica has a small but expensive collection of archival fashion." },
+//         { title: "villager_carlos", content: ":carlos: loves a home cooked meal after being on the road so long." },
 //         { title: "longwings_size", content: "The larger a butterfly or moth is, the more it sells for." },
 //         { title: "cafe_pricing", content: "Items you sell in a cafe have a +50% base price increase." },
 //         { title: "cafe_shed", content: "Large Sheds can be made into a Cafe with some decor." },
 //         { title: "selling_vs_keeping", content: "Money can't buy everything, but most things give you money..." },
-//         // TODO:Calos
 //     ].forEach((tip) => {
 //         translationKeys[`society_tips.tip.${tip.title}`] = tip.content;
 //         JsonIO.write(`kubejs/assets/society/tips/${tip.title}.json`, {
