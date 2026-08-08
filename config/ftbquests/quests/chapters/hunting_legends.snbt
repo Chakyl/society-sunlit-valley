@@ -213,6 +213,27 @@
 			x: -11.5d
 			y: -3.5d
 		}
+		{
+			id: "29A7D5857A8970BD"
+			tasks: [{
+				id: "1469608F92502BC9"
+				item: "sunlit_cobblemon:mew_n_dna"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["29A7D5857A8970BD"]
+			id: "46FC62A2B58324FE"
+			tasks: [{
+				id: "14848ADFF4BFDFEB"
+				item: "sunlit_cobblemon:egg_of_the_king"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
 	]
 	title: "Hunting Legends"
 }

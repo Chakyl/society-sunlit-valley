@@ -307,6 +307,12 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:mystica_nectar', Text.translatable(`tooltip.sunlit_cobblemon.mystica_nectar.description`).gray());
   tooltip.add('sunlit_cobblemon:rainbow_steam', Text.translatable(`tooltip.sunlit_cobblemon.rainbow_steam.description`).gray());
   tooltip.add('sunlit_cobblemon:swampy_mystica_branch', Text.translatable(`tooltip.sunlit_cobblemon.swampy_mystica_branch.description`).gray());
+  tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.gracidea_flower.description`).gray());
+  tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.soul_dew.description`).gray());
+  tooltip.add('sunlit_cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fossil`).gold());
+  tooltip.add('sunlit_cobblemon:elite_stone', Text.translatable(`tooltip.sunlit_cobblemon.elite_stone.description`).gray());
+  tooltip.add('sunlit_cobblemon:elite_stone', Text.translatable(`tooltip.sunlit_cobblemon.elite_stone.legal`).red());
 
   tooltip.add('cobblemon:ice_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.ice_stone`).gray());
   tooltip.add('cobblemon:fire_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fire_stone`).gray());
@@ -474,7 +480,7 @@ ItemEvents.tooltip((tooltip) => {
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.vitamin`).aqua());
   });
-  ['cobblemon:helix_fossil', 'cobblemon:dome_fossil', 'cobblemon:old_amber_fossil', 'cobblemon:root_fossil', 'cobblemon:claw_fossil', 'cobblemon:skull_fossil', 'cobblemon:armor_fossil', 'cobblemon:cover_fossil', 'cobblemon:plume_fossil', 'cobblemon:jaw_fossil', 'cobblemon:sail_fossil', 'cobblemon:fossilized_bird', 'cobblemon:fossilized_fish', 'cobblemon:fossilized_drake', 'cobblemon:fossilized_dino'].forEach((item) => {
+  ['sunlit_cobblemon:egg_of_the_king','cobblemon:helix_fossil', 'cobblemon:dome_fossil', 'cobblemon:old_amber_fossil', 'cobblemon:root_fossil', 'cobblemon:claw_fossil', 'cobblemon:skull_fossil', 'cobblemon:armor_fossil', 'cobblemon:cover_fossil', 'cobblemon:plume_fossil', 'cobblemon:jaw_fossil', 'cobblemon:sail_fossil', 'cobblemon:fossilized_bird', 'cobblemon:fossilized_fish', 'cobblemon:fossilized_drake', 'cobblemon:fossilized_dino'].forEach((item) => {
     if (item.includes("fossilized")) {
       tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.combination_fossil_info`).gray());
       tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.combination_fossil`).gold());

@@ -193,6 +193,8 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:soul_dew");
   e.create("sunlit_cobblemon:gracidea_flower");
   e.create("sunlit_cobblemon:pecha_shell");
+  e.create("sunlit_cobblemon:mew_n_dna").displayName("Mew-N Dna");
+  e.create("sunlit_cobblemon:egg_of_the_king");
   [
     "the_art_of_battle",
     "berry_labor_and_capital",

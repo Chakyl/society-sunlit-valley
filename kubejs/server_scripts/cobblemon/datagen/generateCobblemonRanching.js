@@ -7853,6 +7853,17 @@
 //             ],
 //         },
 //         {
+//             pokemon: "mew",
+//             forages: [
+//                 {
+//                     item: "sunlit_cobblemon:mew_n_dna",
+//                     count: 1,
+//                     chance: 0.04,
+//                     min_hearts: 10
+//                 }
+//             ],
+//         },
+//         {
 //             pokemon: "petilil",
 //             forages: [
 //                 {

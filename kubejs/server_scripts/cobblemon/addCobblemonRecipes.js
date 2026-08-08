@@ -46,7 +46,15 @@ ServerEvents.recipes((e) => {
       item: 'cobblemon:vivichoke_dip'
     },
   });
-    e.shaped('sunlit_cobblemon:gracidea_flower', ["lgp", "gsg", "hge"], {
+    e.shaped('sunlit_cobblemon:egg_of_the_king', ["odc", "dgd", "sdj"], {
+    d: "sunlit_cobblemon:mew_n_dna",
+    o: 'cobblemon:claw_fossil',
+    c: "cobblemon:dome_fossil",
+    g: "species:petrified_egg",
+    s: "cobblemon:skull_fossil",
+    j: "cobblemon:jaw_fossil"
+  })
+  e.shaped('sunlit_cobblemon:gracidea_flower', ["lgp", "gsg", "hge"], {
     g: "betterarcheology:growth_totem",
     s: 'botania:overgrowth_seed',
     e: "ribbits:swamp_daisy",
