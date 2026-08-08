@@ -7,7 +7,11 @@
 - Added recipe to convert potato noodles into raw pasta
 - Added recipe to convert duck feather into feather
 - Added changelog translation support (Thanks Hexagreen!)
+- Added axe mineable tag to cafe menu
+- Added emoji to new npcs
+- Updated zh_cn translation (Thanks Thirace!)
 - Updated ko_kr translation (Thanks Hexagreen!)
+- Cleaned up tags for Whimsy Deco blocks
 - Fixed issues with the Wise Oak dialog
 - Fixed Fish Pond Hatchery not binding to players (will need to break and replace)
 - Fixed new villager quests accepting any invitation
@@ -15,6 +19,17 @@
 - Fixed removed items being obtainable in loot
 - Fixed Fish Pond Hatchery not being upgradable
 - Fixed triple truffle not working with Auto Grabbers
+- Fixed issues with create schematics
+- Fixed Wise Oak having an invitation
+- Fixed Fish Pond Hatchery not working with magnifying glass
+- Fixed inaccurate areas of Ribbit Hut and Drum of the Cornucopia using the Magnifying Glass
+- Fixed tomatoes not crawling ropes
+- Fixed drink-only cafes causing infinite loitering
+- Fixed Slime Vac voiding largos when in offhand
+- Fixed mixed green tea block dropping green tea instead of dried green tea
+- Fixed dialogs not showing up for five gifts
+- Fixed grape stem/lattice not showing day counter in Jade
+- Fixed issue where growth fertilizer does not apply to Berry bushes, but appears to do so in jade
 
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
