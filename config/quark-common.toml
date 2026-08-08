@@ -1672,7 +1672,7 @@
 	#is added to 'Items to Change', then a predicate named 'quark_has_enchant_minecraft_silk_touch' will be available
 	#to the netherite_pickaxe.json item model, whose value will be the enchantment level.
 	"Enchantment Predicates" = false
-	"Enchantments Begone" = false
+	"Enchantments Begone" = true
 	"Game Nerfs" = true
 	"Narrator Readout" = false
 	"Overlay Shader" = false
@@ -1716,7 +1716,7 @@
 		"Enchantments To Register" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = []
+		"Enchantments To Begone" = ["unusualfishmod:unusual_catch", "minecraft:binding_curse", "minecraft:vanishing_curse", "passablefoliage:leaf_walker"]
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
