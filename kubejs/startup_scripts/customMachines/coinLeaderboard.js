@@ -17,8 +17,8 @@ const updateLeaderboardMap = (server) => {
       if (!accountName) {
         accountName = "";
         Object.keys(server.persistentData.playerList).forEach((playerUUID) => {
-          if (accountName !== "" &&bankAccount.isAuthorized(playerUUID)) {
-            if (accountName !== "") accountName += playerList[playerUUID] +"'s Team"
+          if (accountName == "" && bankAccount.isAuthorized(playerUUID)) {
+           accountName += playerList[playerUUID] + "'s Team"
           }
         })
       }
@@ -38,14 +38,12 @@ global.updateLeaderboard = (block, level, server) => {
     console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
   global.clearOldTextDisplay(block, level, "leaderboard");
 
-  // Display leaderboard name
   global.spawnTextDisplay(
     block,
     calcY,
     "leaderboard",
     Text.translatable("block.society.coin_leaderboard.title")
   );
-  // Display leaderboard accounts
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
     if (balanceStr[0].length <= 1) return;
