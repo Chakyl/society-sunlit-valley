@@ -24,7 +24,10 @@ BlockEvents.broken("sunlit_cobblemon:trainer_podium", (e) => {
   let nearbyTrainers = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(2))
     .filter((entityType) => entityType.type === "rctmod:trainer");
-  if (nearbyTrainers.length >= 1) {
+
+  if (player.isCreative()) {
+    global.removeNearbyTrainers(level, block, true);
+  } else if (nearbyTrainers.length >= 1) {
     server.runCommandSilent(
       global.getEmbersTextAPICommand(
         player.username,
@@ -34,6 +37,10 @@ BlockEvents.broken("sunlit_cobblemon:trainer_podium", (e) => {
       )
     );
     e.cancel();
+  }
+
+  if (block.getProperties().get("upgraded").toLowerCase() == "true") {
+    block.popItem(Item.of(`sunlit_cobblemon:elite_stone`));
   }
   const nbt = block.getEntityData();
   block.popItem(Item.of("sunlit_cobblemon:trainer_podium", `{trainers:${nbt.data.trainers}}`));
@@ -50,14 +57,21 @@ BlockEvents.rightClicked("sunlit_cobblemon:trainer_podium", (e) => {
   });
   if (podiumPlayer) {
     let levelAverage = global.getPartyLevel(podiumPlayer);
-    if (!podiumPlayer.persistentData.winStreak)
-      podiumPlayer.persistentData.winStreak = 0;
+    if (!podiumPlayer.persistentData.wins)
+      podiumPlayer.persistentData.wins = 0;
+    let upgraded = block.getProperties().get("upgraded").toLowerCase();
+    if (upgraded) {
+      player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.label.elite", podiumPlayer.username).red());
+    } else {
+      player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.label", podiumPlayer.username).gold());
+    }
+    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.wins", `${Number(podiumPlayer.persistentData.wins)}`).gold());
 
-    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.label", podiumPlayer.username).gold());
-    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.streak", `${Number(podiumPlayer.persistentData.winStreak)}`).gold());
-    player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.tier", levelAverage > 100
-      ? Text.translatable("Not League legal!")
-      : `${Number(global.getPlayerPodiumLevelTier(podiumPlayer, levelAverage))}`).gold());
+    if (upgraded) {
+      player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.tier", Text.translatable("sunlit_cobblemon.trainer_podium.elite").darkRed()));
+    } else {
+      player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.tier", levelAverage > 100 ? Text.translatable("sunlit_cobblemon.trainer_podium.not_league_legal") : `${Number(global.getPlayerPodiumLevelTier(levelAverage))}`).gold());
+    }
   } else {
     player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.stranger").gray());
   }
@@ -71,7 +85,8 @@ ItemEvents.entityInteracted((e) => {
   const { hand, player, target, level, server } = e;
   if (hand == "OFF_HAND") return;
   if (target.type !== "rctmod:trainer") return;
-  if (level.getBlock(target.onPos.above()).id !== "sunlit_cobblemon:trainer_podium") {
+  let block = level.getBlock(target.onPos.above());
+  if (block.id !== "sunlit_cobblemon:trainer_podium") {
     target.setRemoved("unloaded_to_chunk");
     level.spawnParticles(
       "species:ascending_dust",
@@ -100,7 +115,9 @@ ItemEvents.entityInteracted((e) => {
     return;
   }
   let levelAverage = global.getPartyLevel(player);
-  if (levelAverage > 100) {
+  let upgraded = block.getProperties().get("upgraded").toLowerCase() == "true";
+
+  if (!upgraded && levelAverage > 100) {
     server.runCommandSilent(
       global.getEmbersTextAPICommand(
         player.username,
@@ -111,10 +128,46 @@ ItemEvents.entityInteracted((e) => {
     );
     e.cancel();
     return;
+  } else if (upgraded && !target.persistentData.eliteMode) {
+    global.removeNearbyTrainers(level, block, true);
+    server.runCommandSilent(
+      global.getEmbersTextAPICommand(
+        player.username,
+        global.animalMessageSettings,
+        80,
+        Text.translatable("sunlit_cobblemon.trainer_podium.trainer_left").toJson()
+      )
+    );
   }
-  let currentLevel = global.getPlayerPodiumLevelTier(player, levelAverage);
+  let badge = global.getGymBadgeType(player);
+  if (badge != null && badge != "none") {
+    if (!global.partyIsMonotype(player, badge)) {
+      server.runCommandSilent(
+        global.getEmbersTextAPICommand(
+          player.username,
+          global.animalMessageSettings,
+          80,
+          Text.translatable("sunlit_cobblemon.trainer_podium.badge_restricts").toJson()
+        )
+      );
+      e.cancel();
+    }
+    // TODO: This was meant to be an anticheese for changing gym badges but since the trainer podium caches trainers it doesn't work. Oh well    
+    // else if (target.persistentData.badge != badge) {
+    //   global.removeNearbyTrainers(level, block, true);
+    //   server.runCommandSilent(
+    //     global.getEmbersTextAPICommand(
+    //       player.username,
+    //       global.animalMessageSettings,
+    //       80,
+    //       Text.translatable("sunlit_cobblemon.trainer_podium.trainer_left").toJson()
+    //     )
+    //   );
+    // }
+  }
+  let currentLevel = global.getPlayerPodiumLevelTier(levelAverage);
   let trainerLevel = Number(target.persistentData.levelTier)
-  if (trainerLevel !== currentLevel) {
+  if (!upgraded && trainerLevel !== currentLevel) {
     let tooHigh = currentLevel < trainerLevel;
     server.runCommandSilent(
       global.getEmbersTextAPICommand(
@@ -138,5 +191,35 @@ EntityEvents.death((e) => {
   ) {
     server.runCommandSilent(`playsound refurbished_furniture:ui.paddle_ball.retro_lose block @a ${source.player.x} ${source.player.y} ${source.player.z}`);
     global.handleLeagueFee(server, source.player, "murder")
+  }
+});
+
+BlockEvents.rightClicked("sunlit_cobblemon:trainer_podium", (e) => {
+  const { player, item, block, hand, level } = e;
+  const upgraded = block.getProperties().get("upgraded").toLowerCase() == "true";
+  if (hand == "OFF_HAND") return;
+  if (hand == "MAIN_HAND" && !upgraded && item == 'sunlit_cobblemon:elite_stone') {
+    if (!player.isCreative()) item.count--;
+    block.getEntity().setChanged();
+    let nbt = block.getEntityData();
+    nbt.merge({ data: { upgraded: true } });
+    global.setBlockEntityData(block, nbt);
+    level.spawnParticles(
+      "farmersdelight:star",
+      true,
+      block.x,
+      block.y + 1,
+      block.z,
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      3,
+      0.01
+    );
+    block.set(block.id, {
+      upgraded: true,
+      facing: block.properties.get("facing"),
+    });
+    e.cancel();
   }
 });

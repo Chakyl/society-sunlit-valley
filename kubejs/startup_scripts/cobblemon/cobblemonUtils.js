@@ -57,6 +57,7 @@ global.getPokemonLevel = (lvlRange) => {
     Math.floor(Math.random() * (lvlRange[1] - lvlRange[0] + 1)) + lvlRange[0]
   );
 };
+
 const $CobblemonWorldSpawnerManager = Java.loadClass("com.cobblemon.mod.common.api.spawning.CobblemonWorldSpawnerManager");
 const $SpawningArea = Java.loadClass("com.cobblemon.mod.common.api.spawning.spawner.SpawningArea");
 const $SpawnBucket = Java.loadClass("com.cobblemon.mod.common.api.spawning.SpawnBucket");
@@ -133,7 +134,24 @@ global.hasPartyPokemon = (player, pokemonNames, count) => {
   });
   return regis.length >= count;
 };
-
+global.partyIsMonotype = (player, type) => {
+  if (player == undefined) return false;
+  const party = global.getPlayerParty(player);
+  if (party == undefined) return false;
+  let isMonoType = true;
+  party.forEach((pokemon) => {
+    if (isMonoType) {
+      if (pokemon.primaryType.name != type) {
+        if (pokemon.secondaryType) {
+          isMonoType = pokemon.secondaryType.name == type;
+        } else {
+          isMonoType = false;
+        }
+      }
+    }
+  });
+  return isMonoType;
+};
 
 global.handleLeagueFee = (server, player, reason) => {
   const UUID = player.getUuid();
@@ -146,13 +164,13 @@ global.handleLeagueFee = (server, player, reason) => {
   if (reason === "murder") {
     minimumFee = 10000;
     maxFee = 50000;
-    amountToDeduct = Math.min((Math.round(balance * 0.2) * (player.persistentData.winStreak + 1)), maxFee);
+    amountToDeduct = Math.min((Math.round(balance * 0.2) * (player.persistentData.wins + 1)), maxFee);
   }
   if (reason === "loss") {
     minimumFee = 512;
     maxFee = 10000;
 
-    amountToDeduct = Math.min(Math.round(balance * 0.05) * (player.persistentData.winStreak + 1), maxFee);
+    amountToDeduct = Math.min(Math.round(balance * 0.05) * (player.persistentData.wins + 1), maxFee);
   }
   amountToDeduct *= player.stages.has("trainer_level_8") ? 2 : 1;
   if (amountToDeduct < minimumFee) amountToDeduct = minimumFee;
@@ -209,3 +227,24 @@ global.setItemNbt = (item, key, value) => {
   newNbt[key] = value;
   item.nbt = newNbt;
 };
+
+global.POKEMON_TYPES = [
+  { type: "normal", hex: 0xe2e2d4 },
+  { type: "fire", hex: 0xe0641d },
+  { type: "water", hex: 0x358ad6 },
+  { type: "grass", hex: 0x4aa03c },
+  { type: "electric", hex: 0xe3af1b },
+  { type: "ice", hex: 0xe3af1b },
+  { type: "fighting", hex: 0xb1363b },
+  { type: "poison", hex: 0xa43dc0 },
+  { type: "ground", hex: 0xc38340 },
+  { type: "flying", hex: 0x9e94fa },
+  { type: "psychic", hex: 0xe7568f },
+  { type: "bug", hex: 0xa0a212 },
+  { type: "rock", hex: 0x877751 },
+  { type: "ghost", hex: 0x745bc5 },
+  { type: "dragon", hex: 0x505cf3 },
+  { type: "dark", hex: 0x505cf3 },
+  { type: "steel", hex: 0x89a7c4 },
+  { type: "fairy", hex: 0x89a7c4 }
+]

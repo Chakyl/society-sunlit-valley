@@ -61,21 +61,25 @@
   "tooltip.cobblemon.cell_battery.1": "Consume Chance: <ltcolor>c=EE1515;15%%</ltcolor>",
 
   "sunlit_cobblemon.trainer_podium.label": "§a%s's§r§7 Trainer Podium",
-  "sunlit_cobblemon.trainer_podium.streak": "§7Current Win Streak:§r §6%s",
+  "sunlit_cobblemon.trainer_podium.label.elite": "§a%s's§r§4 Elite§7 Trainer Podium",
+  "sunlit_cobblemon.trainer_podium.wins": "§7Gym Trainer Wins:§r §6%s",
   "sunlit_cobblemon.trainer_podium.tier": "§7Trainer Level Tier:§r §6%s",
   "sunlit_cobblemon.trainer_podium.not_league_legal": "Not League legal!",
+  "sunlit_cobblemon.trainer_podium.elite": "Elite!",
   "sunlit_cobblemon.trainer_podium.stranger": "This is a stranger's Trainer Podium. They aren't online to draw stats from...",
   "sunlit_cobblemon.trainer_podium.need_to_defeat_before_moving": "You need to defeat the trainer before moving the podium!",
-  "sunlit_cobblemon.trainer_podium.banned_mon": "Using a legendary or mythical Pokémon isn't allowed by the League...",
+  "sunlit_cobblemon.trainer_podium.banned_mon": "Using a legendary or mythical Pokémon outside of Elite mode isn't allowed by the League...",
+  "sunlit_cobblemon.trainer_podium.trainer_left": "The gym patron left since the gym type changed! A new one will arrive shortly.",
+  "sunlit_cobblemon.trainer_podium.badge_restricts": "Wearing a gym trainer badge means you can only use Pokémon of that type!",
   "sunlit_cobblemon.trainer_podium.too_high": "This trainer's level is too high for your team! You need an average level of %s.",
   "sunlit_cobblemon.trainer_podium.too_low": "This trainer's level is too low for your team! You need an average level of %s.",
   "sunlit_cobblemon.trainer_podium.not_your_gym": "You can't battle a trainer at someone else's gym!",
   
   "sunlit_cobblemon.raid_statue.summary": "Tier: %s | Pokémon: %s | Raid Level %s | Level: %s | Shiny Chance: %s | Hidden Ability Chance: %s",
 
-  "sunlit_cobblemon.trainer_podium.win_streak": "Your Gym win streak is now %s",
-  "sunlit_cobblemon.trainer_podium.win_streak_upgraded": "Your Gym win streak is now %s! Trainer reward money increased by x%s and difficulty increased!",
-  "sunlit_cobblemon.trainer_podium.win_streak_lost": "You lost your §6%s §cwinning streak...",
+  "sunlit_cobblemon.trainer_podium.win_streak": "Your Gym wins are now %s",
+
+  "curios.identifier.gym_badge": "Gym Badge",
 
   "block.sunlit_cobblemon.trainer_podium.description": "Invites Trainers to your Gym. Their levels will match the average of your party. \nInvitations are paused when given a redstone signal",
   "block.sunlit_cobblemon.sun_raid_statue.description": "Summons a sun raid Pokémon once a day. Shift + Right click to activate the altar",
@@ -102,6 +106,9 @@
   "tooltip.sunlit_cobblemon.sun_mirror.level": " Level: §6%s",
   "tooltip.sunlit_cobblemon.mystery_gift.random": "Random from basic set",
   "tooltip.sunlit_cobblemon.mystery_gift.from": "From: %s",
+  "tooltip.sunlit_cobblemon.type_badge.description": "Marks you as a gym leader of the badge type for your Trainer Podium.",
+  "tooltip.sunlit_cobblemon.type_badge.rewards": "Wearing it gives type related rewards and 2x prize money.",
+  "tooltip.sunlit_cobblemon.tr_tablet.description": "Can be engraved into any TR of the type using a Stonecutter.",
 
   "tooltip.sunlit_cobblemon.tm_pack.description": "12% chance for a TM",
   "tooltip.sunlit_cobblemon.greater_tm_pack.description.chance": "20% chance for a TM",

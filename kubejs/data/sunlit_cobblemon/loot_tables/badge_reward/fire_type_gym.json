@@ -6,63 +6,69 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"weight": 2,
-					"name": "cobblemon:exp_candy_l",
+					"weight": 32,
+					"name": "sunlit_cobblemon:sun_drops",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 2
+								"max": 4
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 2,
-					"name": "cobblemon:exp_candy_xl",
+					"weight": 32,
+					"name": "cobblemon:relic_coin",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 2
+								"max": 4
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 2,
-					"name": "sunlit_cobblemon:mystica_branch",
+					"weight": 32,
+					"name": "cobblemon:exp_candy_s",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 2
+								"max": 4
 							}
 						}
 					]
-				}
-			]
-		},
-		{
-			"rolls": {
-				"type": "minecraft:uniform",
-				"min": 1,
-				"max": 1
-			},
-			"weight": 2,
-			"bonus_rolls": 0,
-			"entries": [
+				},
 				{
-					"type": "minecraft:loot_table",
-					"name": "sunlit_cobblemon:trainer_podium_streak/80_plus_common"
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "sunlit_cobblemon:pristine_fire_gem"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3.3333333333333335,
+					"name": "sunlit_cobblemon:mystica_branch"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3.3333333333333335,
+					"name": "cobblemon:rare_candy"
+				},
+				{
+					"type": "minecraft:tag",
+					"weight": 2,
+					"name": "simpletms:type_fire_tm",
+					"expand": false
 				}
 			]
 		}

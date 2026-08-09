@@ -46,7 +46,7 @@ ServerEvents.recipes((e) => {
       item: 'cobblemon:vivichoke_dip'
     },
   });
-    e.shaped('sunlit_cobblemon:egg_of_the_king', ["odc", "dgd", "sdj"], {
+  e.shaped('sunlit_cobblemon:egg_of_the_king', ["odc", "dgd", "sdj"], {
     d: "sunlit_cobblemon:mew_n_dna",
     o: 'cobblemon:claw_fossil',
     c: "cobblemon:dome_fossil",
@@ -282,4 +282,15 @@ ServerEvents.recipes((e) => {
     e.shapeless(output, [`${count}x ${compactInput}`]);
   };
   compact(`sunlit_cobblemon:large_moomoo_milk`, `sunlit_cobblemon:moomoo_milk`, 4);
+
+  global.POKEMON_TYPES.forEach((type) => {
+    Ingredient.of(`#simpletms:type_${type.type}_tr`).itemIds.forEach((TR) => {
+      e.stonecutting(TR, `sunlit_cobblemon:${type.type}_tr_tablet`);
+    });
+    e.shaped(`sunlit_cobblemon:${type.type}_tr_tablet`, ["SpS", "psp", "SpS"], {
+      p: `sunlit_cobblemon:pristine_${type.type}_gem`,
+      s: 'cobblemon:hard_stone',
+      S: 'sunlit_cobblemon:sun_drops',
+    });
+  });
 });

@@ -50,7 +50,7 @@ global.removeNearbyTrainers = (level, block, forceRemoval) => {
 global.runTrainerPodium = (entity) => {
   const { level, block } = entity;
   let nbt = block.getEntityData();
-  let { owner, trainers } = nbt.data;
+  let { owner, trainers, upgraded } = nbt.data;
   let nearbyPlayers = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
     .filter((scanEntity) => scanEntity.isPlayer());
@@ -65,10 +65,13 @@ global.runTrainerPodium = (entity) => {
     if (spawnTrainer && !block.level.hasNeighborSignal(block.pos)) {
       let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
       if (levelAverage == undefined) return;
-      let levelTier = global.getPlayerPodiumLevelTier(ownerPlayer, levelAverage);
+      let levelTier = global.getPlayerPodiumLevelTier(levelAverage);
       if (levelTier == undefined) return;
       let newTrainer;
       let newTrainersArray;
+      if (upgraded) {
+        levelTier = "elite"
+      }
       if (trainers == null) {
         nbt.merge({ data: { trainers: {} } });
         global.setBlockEntityData(block, nbt);
@@ -77,12 +80,12 @@ global.runTrainerPodium = (entity) => {
       } else {
         newTrainer = trainers.get(`${levelTier}`);
       }
-      // ownerPlayer.persistentData.winStreak = 24
-      if (ownerPlayer.persistentData.winStreak == 0 || !newTrainer || newTrainer === "") {
-        if (ownerPlayer.persistentData.winStreak > 14 && ownerPlayer.persistentData.winStreak % 15 === 0) {
+      // ownerPlayer.persistentData.wins = 24
+      if (ownerPlayer.persistentData.wins == 0 || !newTrainer || newTrainer === "") {
+        if (ownerPlayer.persistentData.wins > 14 && ownerPlayer.persistentData.wins % 20 === 0) {
           newTrainer = global.getLeagueBoss(Math.min(100, levelTier))
         } else {
-          newTrainer = global.getRandomTrainer(Math.min(135, levelTier));
+          newTrainer = global.getRandomTrainer(Math.min(95, levelTier), upgraded);
         }
         newTrainersArray = trainers;
         newTrainersArray.putString(`${levelTier}`, newTrainer)
@@ -91,8 +94,7 @@ global.runTrainerPodium = (entity) => {
       }
       if (newTrainer == undefined || newTrainer == "dev.latvian.mods.rhino.Undefined@0") {
         global.removeNearbyTrainers(level, block, true);
-        console.log(newTrainer)
-        ownerPlayer.tell("[ERROR] Failed to spawn trainer at tier " + levelTier + " winstreak " + ownerPlayer.persistentData.winStreak + " for " + ownerPlayer.username + ". Tell Chakyl!");
+        ownerPlayer.tell("[ERROR] Failed to spawn trainer at tier " + levelTier + " winstreak " + ownerPlayer.persistentData.wins + " for " + ownerPlayer.username + ". Tell Chakyl!");
         newTrainersArray = trainers;
         newTrainersArray.putString(`${levelTier}`, "")
         nbt.merge({ data: { trainers: newTrainersArray } });
@@ -116,6 +118,11 @@ global.runTrainerPodium = (entity) => {
       freshTrainer.setNbt(trainerNBT);
       freshTrainer.persistentData.levelTier = levelTier
       freshTrainer.persistentData.gymLeader = owner
+      freshTrainer.persistentData.eliteMode = upgraded;
+      let badge = global.getGymBadgeType(ownerPlayer);
+      if (badge !== "none") {
+        freshTrainer.persistentData.badgeType = badge;
+      }
       freshTrainer.spawn();
       level.spawnParticles(
         "species:ascending_dust",

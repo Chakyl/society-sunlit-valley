@@ -29,36 +29,27 @@ global.handleCobblemonDefeat = (e) => {
       reward += Math.min(2000, Math.max(Math.round(loserLevel * 4 * getTrainerLevel(winningPlayer) * variance), 16));
     });
     if (losingPlayer && losingPlayer.type == "rctmod:trainer") {
-      let winStreak = winningPlayer.persistentData.winStreak;
-      winningPlayer.persistentData.winStreak = winStreak || 0;
-      winningPlayer.persistentData.winStreak++;
+      let wins = winningPlayer.persistentData.wins;
+      winningPlayer.persistentData.wins = wins || 0;
+      winningPlayer.persistentData.wins++;
       winningPlayer.persistentData.bagItemsUsed = 0;
-      winStreak++;
-      if (winStreak <= 100 && winStreak % 10 == 0) {
-        winningPlayer.tell(
-          Text.translatable("sunlit_cobblemon.trainer_podium.win_streak_upgraded", `${Number(winningPlayer.persistentData.winStreak)}`, `${Number((winningPlayer.persistentData.winStreak / 10) * 1.25)}`).green()
-        );
-      } else {
-        winningPlayer.tell(
-          Text.translatable("sunlit_cobblemon.trainer_podium.win_streak", `${Number(winningPlayer.persistentData.winStreak)}`).gold()
-        );
-      }
+      wins++;
+      winningPlayer.tell(Text.translatable("sunlit_cobblemon.trainer_podium.win_streak", `${Number(winningPlayer.persistentData.wins)}`).gold());
       reward = Math.min(5000, reward)
-      if (winStreak > 10) {
-        reward *= Math.floor(Math.min(winStreak, 100) / 10) * 1.25;
+      let badge = losingPlayer.persistentData.badgeType;
+      if (badge != "none") {
+        reward *= 2;
+        global.getTypeRewards(winningPlayer, losingPlayer.getOnPos(), badge);
       }
-      if (winStreak >= 20) {
-        global.getStreakRewards(winningPlayer, losingPlayer.getOnPos(), winStreak);
-        if (winStreak % 15 == 1) {
-          let reward;
-          for (let i = 0; i < Math.min(9, Math.max(1, (Math.floor(winStreak / 15) - 1) / 2)); i++) {
-            reward = winningPlayer.level.createEntity("minecraft:item");
-            reward.x = winningPlayer.getOnPos().x + 0.5;
-            reward.y = winningPlayer.getOnPos().y + 0.4;
-            reward.z = winningPlayer.getOnPos().z + 0.5;
-            reward.item = "sunlit_cobblemon:sunlit_league_medallion";
-            reward.spawn();
-          }
+      if (losingPlayer.persistentData.eliteMode) {
+        reward *= 2;
+        if (wins % 20 == 0) {
+          let reward = winningPlayer.level.createEntity("minecraft:item");
+          reward.x = winningPlayer.getOnPos().x + 0.5;
+          reward.y = winningPlayer.getOnPos().y + 0.4;
+          reward.z = winningPlayer.getOnPos().z + 0.5;
+          reward.item = "sunlit_cobblemon:sunlit_league_medallion";
+          reward.spawn();
         }
       }
       if (winningPlayer && winningPlayer.stages.has("the_art_of_battle")) {
@@ -85,15 +76,7 @@ global.handleCobblemonDefeat = (e) => {
     winningPlayer.type == "rctmod:trainer"
   ) {
     losingPlayer.persistentData.bagItemsUsed = 0;
-    losingPlayer.tell(losingPlayer.persistentData.bagItemsUsed)
     global.handleLeagueFee(losingPlayer.getServer(), losingPlayer, "loss")
-
-    if (losingPlayer.persistentData.winStreak > 1) {
-      losingPlayer.tell(
-        Text.translatable("sunlit_cobblemon.trainer_podium.win_streak_lost", `${Number(losingPlayer.persistentData.winStreak)}`).red()
-      );
-      losingPlayer.persistentData.winStreak = 0;
-    }
   }
 };
 

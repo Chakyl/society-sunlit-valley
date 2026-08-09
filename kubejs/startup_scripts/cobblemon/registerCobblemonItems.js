@@ -105,13 +105,30 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:sun_mirror").maxStackSize(1);
   e.create("sunlit_cobblemon:sunlit_league_medallion");
   e.create("sunlit_cobblemon:elite_stone");
+  global.POKEMON_TYPES.forEach((type) => {
+    e.create(`sunlit_cobblemon:${type.type}_badge`)
+      .maxStackSize(1)
+      .tag("sunlit_cobblemon:gym_badge")
+      .tag("curios:gym_badge")
+      .texture(`sunlit_cobblemon:item/badges/${type.type}`)
+      .tooltip(Text.translatable("tooltip.sunlit_cobblemon.type_badge.description").gray())
+      .tooltip(Text.translatable("tooltip.sunlit_cobblemon.type_badge.rewards").green());
+  });
+  global.POKEMON_TYPES.forEach((type) => {
+    e.create(`sunlit_cobblemon:${type.type}_tr_tablet`)
+      .texture(`sunlit_cobblemon:item/tr_tablet`)
+      .color(0, type.hex)
+      .tag("sunlit_cobblemon:tr_tablet")
+      .displayName(`${global.formatName(type.type)} TR Tablet`)
+      .tooltip(Text.translatable("tooltip.sunlit_cobblemon.tr_tablet.description").gray());
+  });
   e.create("sunlit_cobblemon:poke_radar").maxStackSize(1).displayName("Poké Radar");
   e.create("sunlit_cobblemon:berry_capsule").modelJson({
-        parent: "sunlit_cobblemon:item/kubejs/berry_capsule",
-      });
+    parent: "sunlit_cobblemon:item/kubejs/berry_capsule",
+  });
   e.create("sunlit_cobblemon:gachamon_capsule").modelJson({
-        parent: "sunlit_cobblemon:item/kubejs/gachamon_capsule",
-      });
+    parent: "sunlit_cobblemon:item/kubejs/gachamon_capsule",
+  });
   e.create("sunlit_cobblemon:uncharged_battery").texture(
     "cobblemon_farmers:item/uncharged_battery",
   );
@@ -193,8 +210,9 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:soul_dew");
   e.create("sunlit_cobblemon:gracidea_flower");
   e.create("sunlit_cobblemon:pecha_shell");
-  e.create("sunlit_cobblemon:mew_n_dna").displayName("Mew-N Dna");
+  e.create("sunlit_cobblemon:mew_n_dna").displayName("Mew-N DNA");
   e.create("sunlit_cobblemon:egg_of_the_king");
+
   [
     "the_art_of_battle",
     "berry_labor_and_capital",
