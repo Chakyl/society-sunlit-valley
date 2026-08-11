@@ -7,7 +7,7 @@
 //     if (blacklist.includes(dish.item)) return;
 //     let category = "main";
 //     if (!dessertBlacklist.includes(dish.item)) {
-//         [ 'misslilitu_biscuit', 'icecream', "popsicle", "jam", "tart", "sorbet", "muffin", "candy", "candied", "pie", "cake", "Slice of", "cookie", "pudding", "jam", "jelly", "sweet", "tart", "chocolate", "snow", "gateau", "custard", "honey"].forEach((keyword) => {
+//         ['misslilitu_biscuit', 'icecream', "popsicle", "jam", "tart", "sorbet", "muffin", "candy", "candied", "pie", "cake", "Slice of", "cookie", "pudding", "jam", "jelly", "sweet", "tart", "chocolate", "snow", "gateau", "custard", "honey"].forEach((keyword) => {
 //             if (dish.item.path.includes(keyword)) category = "dessert"
 //         });
 //     }
@@ -75,8 +75,12 @@
 //     dishGenerator(dish, "shippingbin:crop_sell_multiplier", "drink")
 // });
 
-// global.smokedFish.forEach((dish) => {
+// global.cobblemonCooking.forEach((dish) => {
 //     dishGenerator(dish, "shippingbin:crop_sell_multiplier", "main")
+// });
+
+// global.smokedFish.forEach((dish) => {
+//     dishGenerator(dish, "shippingbin:wood_sell_multiplier", "main")
 // });
 // const categoryOrder = {
 //     'drink': 1,
