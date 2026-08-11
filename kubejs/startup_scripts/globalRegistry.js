@@ -1347,6 +1347,7 @@ const furnaceRecipes = [
   { item: "veggiesdelight:baked_sweet_potato", value: 20 },
   { item: "veggiesdelight:mhadjeb", value: 93 },
   { item: "veggiesdelight:garlic_baked_cod", value: 57 },
+  { item: 'society:deep_a_mochi', value: 396 },
 ];
 furnaceRecipes.forEach((recipe) => {
   global.cooking.push({

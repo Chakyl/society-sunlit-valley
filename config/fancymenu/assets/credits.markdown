@@ -28,7 +28,7 @@
 - MattTheMeow - Skull Cavern honey beeode and goober den
 - SianaTheSavage - Floral set
 
-### Dev Contributors
+### Code Contributors
 - Ascens - Various tweaks and fixes
 - Emma & Providencedaemon - Advice, feedback, and misc work
 - frog the jam UNCHAINED - The above + Haruna dialogs
@@ -39,6 +39,7 @@
 - Mayhan - Fish Pond Manager, Shipping Bin renaming, Various fix contributions
 - Tomsauy - /debt commands
 - simonLeary42 - Offline caching for Artisan Hopper, Auto-Grabber, Fish Pond Basket
+- deepa - SSC deoxy's meteor code
 
 ### Translation Contributors
 - AonGreyfox - th_th translation

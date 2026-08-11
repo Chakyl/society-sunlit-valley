@@ -593,6 +593,13 @@ StartupEvents.registry("item", (e) => {
       food.hunger(2);
       food.saturation(2);
     });
+  e.create("society:deep_a_mochi")
+    .texture("society:item/deep_a_mochi")
+    .displayName("Deep-a-Mochi")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(2);
+    });
 
   e.create("society:ancient_cookie")
     .texture("society:item/ancient_cookie")

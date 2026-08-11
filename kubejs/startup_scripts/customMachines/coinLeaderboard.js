@@ -31,7 +31,7 @@ const updateLeaderboardMap = (server) => {
 };
 
 global.updateLeaderboard = (block, level, server) => {
-  let calcY = block.y + 3;
+  let calcY = block.y + 3.25;
   let leaderboardMap = updateLeaderboardMap(server);
   if (!leaderboardMap) return;
   if (global.susFunctionLogging)
