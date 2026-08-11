@@ -1,3 +1,5 @@
+console.info("[SOCIETY-S-COBBLEMON] registerCobblemonBells.js loaded");
+
 global.runBell = (entity, legendary) => {
   const { level, block } = entity;
   let dayTime = level.dayTime();

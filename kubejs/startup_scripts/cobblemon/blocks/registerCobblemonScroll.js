@@ -1,3 +1,5 @@
+console.info("[SOCIETY-S-COBBLEMON] registerCobblemonScroll.js loaded");
+
 global.runBearScroll = (entity) => {
     const { level, block } = entity;
     let dayTime = level.dayTime();

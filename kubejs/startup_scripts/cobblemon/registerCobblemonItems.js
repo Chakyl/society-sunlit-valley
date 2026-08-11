@@ -208,7 +208,11 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:cornucopia_of_greed");
   e.create("sunlit_cobblemon:moongeist_crystal");
   e.create("sunlit_cobblemon:soul_dew");
+  e.create("sunlit_cobblemon:blue_orb");
+  e.create("sunlit_cobblemon:red_orb");
   e.create("sunlit_cobblemon:gracidea_flower");
+  e.create("sunlit_cobblemon:meteor_fragment");
+  e.create("sunlit_cobblemon:viral_battery");
   e.create("sunlit_cobblemon:pecha_shell");
   e.create("sunlit_cobblemon:mew_n_dna").displayName("Mew-N DNA");
   e.create("sunlit_cobblemon:egg_of_the_king");

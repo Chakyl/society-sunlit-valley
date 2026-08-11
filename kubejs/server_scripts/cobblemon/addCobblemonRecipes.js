@@ -80,6 +80,11 @@ ServerEvents.recipes((e) => {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",
   });
+  e.shaped("sunlit_cobblemon:viral_battery", [" f ", "szs", " s "], {
+    z: "sunlit_cobblemon:uncharged_battery",
+    f: "sunlit_cobblemon:meteor_fragment",
+    s: "minecraft:netherite_scrap",
+  });
   e.shaped("cobblemon:ability_capsule", ["gsf"], {
     g: "sunlit_cobblemon:poke_genes",
     f: "sunlit_cobblemon:fairy_heart",

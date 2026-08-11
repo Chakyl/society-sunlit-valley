@@ -63,4 +63,12 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
     .model("sunlit_cobblemon:block/kubejs/time_frame");
+  e.create("sunlit_cobblemon:meteor_chunk")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(8)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .textureAll("sunlit_cobblemon:block/meteor_chunk")
 });
