@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "ribombee",
+	"forages": [
+		{
+			"item": "golemoverhaul:honey_blob",
+			"count": 1,
+			"chance": 0.35,
+			"min_hearts": 4
+		},
+		{
+			"item": "society:fairy_dust",
+			"count": 1,
+			"chance": 0.07,
+			"min_hearts": 10
+		}
+	]
+}

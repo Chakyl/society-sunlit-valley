@@ -1,4 +1,4 @@
-console.info("[SOCIETY-S-COBBLEMON] registerCobbelmonMeteor.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] registerCobblemonAtmosphericMagnet.js loaded");
 
 const $BooleanProperty = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
 global.meteor_spawned_prop = $BooleanProperty.create("meteor_spawned")
@@ -77,7 +77,7 @@ StartupEvents.registry("block", (e) => {
             item.tooltip(Text.gray("Leave the attractor out, exposed to the night sky"))
             item.tooltip(Text.gray("Keep it clear of any obstructions"))
         })
-        .model("minecraft:block/furnace")
+        .model("sunlit_cobblemon:block/kubejs/atmospheric_magnet")
         .property(global.meteor_spawned_prop)
         .defaultState(state => { state.cycle(global.meteor_spawned_prop) })
         .blockEntity(blockInfo => {

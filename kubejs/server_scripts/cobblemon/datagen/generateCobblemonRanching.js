@@ -249,6 +249,41 @@
 //                     count: 1,
 //                     chance: 0.1,
 //                     min_hearts: 8
+//                 },
+//                 {
+//                     item: "society:rain_totem",
+//                     count: 1,
+//                     chance: 0.04,
+//                     min_hearts: 10
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "politoed",
+//             forages: [
+//                 {
+//                     item: 'minecraft:ochre_froglight',
+//                     count: 8,
+//                     chance: 0.25,
+//                     min_hearts: 3
+//                 },
+//                 {
+//                     item: 'minecraft:pearlescent_froglight',
+//                     count: 8,
+//                     chance: 0.25,
+//                     min_hearts: 6
+//                 },
+//                 {
+//                     item: 'minecraft:verdant_froglight',
+//                     count: 8,
+//                     chance: 0.25,
+//                     min_hearts: 9
+//                 },
+//                 {
+//                     item: "society:rain_totem",
+//                     count: 1,
+//                     chance: 0.04,
+//                     min_hearts: 10
 //                 }
 //             ],
 //         },
@@ -568,6 +603,12 @@
 //                     count: 1,
 //                     chance: 0.05,
 //                     min_hearts: 8
+//                 },
+//                 {
+//                     item: "society:fairy_dust",
+//                     count: 1,
+//                     chance: 0.05,
+//                     min_hearts: 10
 //                 }
 
 //             ]
@@ -1229,6 +1270,41 @@
 //             ],
 //         },
 //         {
+//             pokemon: "groudon",
+//             forages: [
+
+//                 {
+//                     item: "society:dry_totem",
+//                     count: 1,
+//                     chance: 0.10,
+//                     min_hearts: 6
+//                 },
+//                 {
+//                     item: 'sunlit_cobblemon:pristine_ground_gem',
+//                     count: 1,
+//                     chance: 0.15,
+//                     min_hearts: 8
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "kyogre",
+//             forages: [
+//                 {
+//                     item: "society:rain_totem",
+//                     count: 1,
+//                     chance: 0.10,
+//                     min_hearts: 6
+//                 },
+//                 {
+//                     item: 'sunlit_cobblemon:pristine_water_gem',
+//                     count: 1,
+//                     chance: 0.15,
+//                     min_hearts: 8
+//                 }
+//             ],
+//         },
+//         {
 //             pokemon: "torkoal",
 //             forages: [
 //                 {
@@ -1266,6 +1342,12 @@
 //                     count: 4,
 //                     chance: 1,
 //                     min_hearts: 8
+//                 },
+//                 {
+//                     item: "society:dry_totem",
+//                     count: 1,
+//                     chance: 0.03,
+//                     min_hearts: 9
 //                 },
 //                 {
 //                     item: "society:nether_jelly",
@@ -2744,12 +2826,18 @@
 //                     count: 4,
 //                     chance: 0.4,
 //                     min_hearts: 4
+//                 },
+//                 {
+//                     item: "society:nether_jelly",
+//                     count: 1,
+//                     chance: 0.10,
+//                     min_hearts: 10
 //                 }
 //             ],
 //         },
 //         {
 //             pokemon: "slugma",
-//             milk: { sm: "minecraft:magma_cream", lg: "society:nether_jelly" },
+//             milk: { sm: "minecraft:magma_cream", lg: "minecraft:magma_cream" },
 //         },
 //         {
 //             pokemon: "magcargo",
@@ -2765,12 +2853,18 @@
 //                     count: 1,
 //                     chance: 0.2,
 //                     min_hearts: 8
+//                 },
+//                 {
+//                     item: "society:nether_jelly",
+//                     count: 1,
+//                     chance: 0.08,
+//                     min_hearts: 10
 //                 }
 //             ],
 //         },
 //         {
 //             pokemon: "magcargo",
-//             milk: { sm: "minecraft:magma_cream", lg: "society:nether_jelly" },
+//             milk: { sm: "minecraft:magma_cream", lg: "minecraft:magma_cream" },
 //         },
 //         {
 //             pokemon: "vulpix",
@@ -7643,6 +7737,23 @@
 //             ],
 //         },
 //         {
+//             pokemon: "ribombee",
+//             forages: [
+//                 {
+//                     item: "golemoverhaul:honey_blob",
+//                     count: 1,
+//                     chance: 0.35,
+//                     min_hearts: 4
+//                 },
+//                 {
+//                     item: "society:fairy_dust",
+//                     count: 1,
+//                     chance: 0.07,
+//                     min_hearts: 10
+//                 }
+//             ],
+//         },
+//         {
 //             pokemon: "beedrill",
 //             forages: [
 //                 {
@@ -7708,7 +7819,7 @@
 //             forages: [
 //                 {
 //                     item: "society:fine_wool",
-//                     count: 4,
+//                     count: 3,
 //                     chance: 1,
 //                     has_quality: true,
 //                     min_hearts: 5
@@ -7720,10 +7831,31 @@
 //             forages: [
 //                 {
 //                     item: "society:fine_wool",
-//                     count: 8,
-//                     chance: 1,
+//                     count: 2,
+//                     chance: 0.25,
+//                     has_quality: true,
+//                     min_hearts: 3
+//                 },
+//                 {
+//                     item: "society:fine_wool",
+//                     count: 2,
+//                     chance: 0.25,
 //                     has_quality: true,
 //                     min_hearts: 5
+//                 },
+//                 {
+//                     item: "society:fine_wool",
+//                     count: 2,
+//                     chance: 0.25,
+//                     has_quality: true,
+//                     min_hearts: 7
+//                 },
+//                 {
+//                     item: "society:fine_wool",
+//                     count: 2,
+//                     chance: 0.25,
+//                     has_quality: true,
+//                     min_hearts: 9
 //                 }
 //             ],
 //         },
