@@ -355,7 +355,7 @@ ItemEvents.tooltip((tooltip) => {
     "black_glasses", "charcoal_stick", "dragon_fang", "hard_stone", "magnet", "metal_coat", "miracle_seed",
     "mystic_water", "never_melt_ice", "poison_barb", "sharp_beak", "silk_scarf", "silver_powder", "soft_sand",
     "spell_tag", "fairy_feather", "twisted_spoon", "power_anklet", "power_band", "power_belt", "power_bracer",
-    "power_lens", "power_weight",
+    "power_lens", "power_weight", 'lagging_tail', 'luminous_moss', 'grip_claw'
   ].forEach((item) => {
     // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held_item`).gold());
@@ -366,7 +366,6 @@ ItemEvents.tooltip((tooltip) => {
     // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.stone`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
   });
-
   ['whimsy_deco:washing_machine', 'whimsy_deco:orange_lawn_mower', 'refurbished_furniture:light_stove', 'whimsy_deco:fan', 'beachparty:mini_fridge'].forEach((item) => {
     tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.rotom`).gray());
     tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());

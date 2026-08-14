@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " w ",
+    "whw",
+    " w "
+  ],
+  "key": {
+    "w": {
+      "item": "society:merino_wool"
+    },
+    "h": {
+      "item": "relics:enders_hand"
+    }
+  },
+  "result": {
+    "item": "cobblemon:protective_pads"
+  }
+}

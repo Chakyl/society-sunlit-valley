@@ -26,6 +26,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("simpletms:tr_dracometeor", ["society:prismatic_shard", "4x sunlit_cobblemon:draco_meteorite"]);
   e.shapeless("cobblemon:quick_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
   e.shapeless("cobblemon:razor_claw", ["society:aquamagical_dust", "cobblemon:quick_claw"]);
+  e.shapeless("cobblemon:grip_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
   e.custom({
     type: "farmersdelight:cooking",
     cookingtime: 200,
@@ -193,6 +194,12 @@ ServerEvents.recipes((e) => {
     c: 'society:cornucopia',
     s: 'sunlit_cobblemon:sun_essence',
     S: 'sunlit_cobblemon:sunlit_league_medallion',
+  });
+    e.shaped('sunlit_cobblemon:atmospheric_magnet', ["s s", "mpm", "SSS"], {
+    p: 'society:prismatic_shard_block',
+    s: 'society:sparkstone_block',
+    m: 'cobblemon:magnet',
+    S: 'oreganized:silver_block',
   });
   e.custom({
     "type": "farm_and_charm:stove",

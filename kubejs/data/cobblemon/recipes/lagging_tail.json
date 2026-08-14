@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  w",
+    "chw",
+    " w "
+  ],
+  "key": {
+    "w": {
+      "item": "cobblemon:hard_stone"
+    },
+    "h": {
+      "item": "society:living_flesh"
+    },
+    "c": {
+        "item": "trials:heavy_core"
+    }
+  },
+  "result": {
+    "item": "cobblemon:lagging_tail"
+  }
+}
