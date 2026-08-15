@@ -313,8 +313,6 @@ ServerEvents.tags("block", (e) => {
   ].forEach((block) => {
     e.add("society:biodome_water_sea_plants", block);
   });
-}); 
-ServerEvents.tags("block", (e) => {
   [
    "quark:cobblestone_bricks",
    "quark:cobblestone_bricks_stairs",
