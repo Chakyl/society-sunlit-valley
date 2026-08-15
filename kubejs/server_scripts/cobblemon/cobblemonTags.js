@@ -289,3 +289,119 @@ ServerEvents.tags("block", (e) => {
     e.add("ftbchunks:interact_whitelist", item);
   });
 });
+ServerEvents.tags("block", (e) => {
+  [
+    "minecraft:conduit",
+    "minecraft:sea_lantern",
+    "minecraft:prismarine_bricks",
+    "minecraft:prismarine",
+    "cobblemon:water_stone_block",
+    "cobblemon:water_stone_ore",
+    "minecraft:clay",
+    "#minecraft:coral_blocks"
+
+  ].forEach((block) => {
+    e.add("society:biodome_water_building_blocks", block);
+  });
+  [
+    "#forge:glass",
+  ].forEach((block) => {
+    e.add("society:biodome_water_glass_blocks", block);
+  });
+  [
+    "#minecraft:underwater_bonemeals",
+  ].forEach((block) => {
+    e.add("society:biodome_water_sea_plants", block);
+  });
+  [
+   "quark:cobblestone_bricks",
+   "quark:cobblestone_bricks_stairs",
+   "quark:cobblestone_bricks_slab",
+   "minecraft:blackstone_bricks",
+   "minecraft:polished_blackstone",
+   "quark:blackstone_bricks_stairs",
+   "minecraft:polished_blackstone_bricks",
+   "minecraft:gilded_blackstone",
+   "minecraft:blackstone_slab",
+   "quark:blackstone_vertical_slab",
+   "minecraft:blackstone_wall",
+   "minecraft:polished_blackstone_stairs",
+   "minecraft:polished_blackstone_slab",
+   "quark:polished_blackstone_vertical_slab",
+   "minecraft:polished_blackstone_wall",
+   "minecraft:cracked_polished_blackstone_bricks",
+   "minecraft:polished_blackstone_brick_stairs",
+   "minecraft:polished_blackstone_brick_slab",
+   "quark:polished_blackstone_brick_vertical_slab",
+   "minecraft:polished_blackstone_brick_wall",
+   "supplementaries:blackstone_tile",
+   "supplementaries:blackstone_tile_stairs",
+   "supplementaries:blackstone_tile_slab",
+   "#minecraft:walls",
+   "quark:blackstone_bricks",
+   "twigs:twisting_polished_blackstone_bricks",
+   "twigs:twisting_polished_blackstone_brick_stairs",
+   "twigs:twisting_polished_blackstone_brick_slab",
+   "twigs:weeping_polished_blackstone_bricks",
+   "twigs:weeping_polished_blackstone_brick_stairs",
+   "twigs:weeping_polished_blackstone_brick_slab",
+   "minecraft:stone_bricks",
+   "minecraft:stone_brick_stairs",
+   "minecraft:stone_brick_slab",
+   "quark:stone_brick_vertical_slab",
+   "minecraft:deepslate_bricks",
+   "minecraft:deepslate_brick_stairs",
+   "minecraft:deepslate_brick_slab",
+   "quark:deepslate_brick_vertical_slab",
+   "quark:netherrack_bricks",
+   "quark:netherrack_bricks_stairs",
+   "quark:netherrack_bricks_slab",
+   "quark:netherrack_bricks_vertical_slab",
+   "minecraft:nether_bricks",
+   "minecraft:nether_brick_stairs",
+   "minecraft:nether_brick_slab",
+   "quark:nether_brick_vertical_slab",
+   "minecraft:cracked_nether_bricks",
+   "minecraft:chiseled_nether_bricks"
+  ].forEach((block) => {
+    e.add("society:biodome_fire_building_blocks", block);
+  });
+  [
+    "decorative_blocks:brazier",
+    "decorative_blocks:soul_brazier",
+    "society:fire_quartz",
+    "minecraft:charcoal_block",
+    "cobblemon:fire_stone_block",
+    "minecraft:torch",
+    "minecraft:soul_torch",
+    "minecraft:campfire",
+    "minecraft:soul_campfire",
+    "cobblemon:fire_stone_ore",
+    "cobblemon:fire_stone_block"
+  ].forEach((block) => {
+    e.add("society:biodome_fire_hot_blocks", block);
+  });
+  [
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "minecraft:magma_block",
+    "minecraft:netherrack",
+    "minecraft:basalt",
+    "minecraft:blackstone",
+    "minecraft:calcite",
+    "minecraft:tuff",
+    "minecraft:deepslate",
+    "minecraft:sulfur"
+    
+  ].forEach((block) => {
+    e.add("society:biodome_fire_natural_blocks", block);
+  });
+});
+ServerEvents.tags("entity_type", (e) => {
+  [
+    "#forge:fishes",
+    "@unusualfishmod"
+  ].forEach((animal) => {
+    e.add("society:biodome_water_animals", animal);
+  });
+});

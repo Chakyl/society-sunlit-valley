@@ -1,0 +1,178 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "biome-swinub-2",
+            "pokemon": "swinub",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "4-29",
+            "weight": 20.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-vulpix-2",
+            "pokemon": "vulpix alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "4-29",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-cubchoo-2",
+            "pokemon": "cubchoo",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "4-20",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-eiscue-1",
+            "pokemon": "eiscue",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 8.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-smoochum-1",
+            "pokemon": "smoochum",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "5-20",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-snover-1",
+            "pokemon": "snover",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 20.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-abomasnow-1",
+            "pokemon": "abomasnow",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30-50",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-crabominable-1",
+            "pokemon": "crabominable",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30-50",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        },
+        {
+            "id": "biome-frigibax-1",
+            "pokemon": "frigibax",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "5-29",
+            "weight": 1.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "atmospheric:snowy_scrubland"
+                ]
+            }
+        }
+    ]
+}
