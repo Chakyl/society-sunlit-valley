@@ -524,6 +524,16 @@ StartupEvents.registry("item", (e) => {
       food.effect("minecraft:poison", 800, 2, 1.0);
     })
     .useAnimation("drink");
+    e.create("society:suspicious_milk_tea")
+    .texture("society:item/drinks/suspicious_milk_tea")
+    .tooltip(
+      Text.translatable("item.society.suspicious_milk_tea.description").darkPurple()
+    )
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("minecraft:poison", 800, 2, 1.0);
+    })
+    .useAnimation("drink");
   e.create("herbalbrews:ground_coffee").texture("society:item/ground_coffee");
 
   e.create("herbalbrews:cinnamon_coffee")
@@ -593,7 +603,20 @@ StartupEvents.registry("item", (e) => {
       food.hunger(2);
       food.saturation(2);
     });
-
+  e.create("society:deep_a_mochi")
+    .texture("society:item/deep_a_mochi")
+    .displayName("Deep-a-Mochi")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(2);
+    });
+  e.create("society:lemon_beignets")
+    .texture("society:item/lemon_beignets")
+    .food((food) => {
+      food.hunger(3);
+      food.saturation(3);
+      food.effect("farm_and_charm:sweets", 300, 1, 1.0);
+    });
   e.create("society:ancient_cookie")
     .texture("society:item/ancient_cookie")
     .food((food) => {

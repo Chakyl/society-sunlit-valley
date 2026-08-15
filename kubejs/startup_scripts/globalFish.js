@@ -117,6 +117,7 @@ global.autumnRiver = [
   { fish: "minecraft:salmon", weight: 26 },
   { fish: "aquaculture:brown_trout", weight: 26 },
   { fish: "aquaculture:smallmouth_bass", weight: 24 },
+  { fish: "aquaculture:smallmouth_bass", weight: 24, night: true  },
   { fish: "aquaculture:muskellunge", weight: 18, night: true },
   {
     fish: "aquaculture:arrau_turtle",
