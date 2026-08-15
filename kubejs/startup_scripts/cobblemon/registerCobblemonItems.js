@@ -230,6 +230,23 @@ StartupEvents.registry("item", (e) => {
       .texture(`sunlit_cobblemon:item/books/${item}`)
       .rarity("rare");
   });
+
+  let newBalls = [
+    "sword",
+    "shield",
+    "skull",
+    "mana",
+    "prismatic"
+  ]
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:${ball}_ball_stencil`).texture(`sunlit_cobblemon:item/create_balls/${ball}_ball_stencil`)
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:unpainted_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unpainted_${ball}_ball`)
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:unfinished_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unfinished_${ball}_ball`)
+  });
   global.cobblemonPreserves.forEach((jar) => {
     if (jar.item.includes("sunlit_cobblemon")) {
       e.create(`sunlit_cobblemon:${jar.item.split(":")[1]}`)

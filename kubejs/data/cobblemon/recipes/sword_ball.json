@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " t ",
+        "lcr",
+        " b "
+    ],
+    "key": {
+        "t": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "l": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "c": {
+            "item": "society:pure_obsidian"
+        },
+        "r": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "b": {
+            "item": "cobblemon:yellow_apricorn"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:sword_ball",
+        "count": 4
+    }
+}

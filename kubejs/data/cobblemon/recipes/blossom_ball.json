@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "zlg",
+        "lcl",
+        "blz"
+    ],
+    "key": {
+        "z": {
+            "item": "unimplemented_items:ability_patch"
+        },
+        "l": {
+            "item": "cobblemon:ability_capsule"
+        },
+        "c": {
+            "item": "cobblemon:master_ball"
+        },
+        "b": {
+            "item": "sunlit_cobblemon:blooming_ring"
+        },
+        "g": {
+            "item": "sunlit_cobblemon:cornucopia_of_greed"
+        }
+    },
+    "result":
+    {
+        "item": "cobblemon:blossom_ball",
+        "count": 1
+    }
+}
