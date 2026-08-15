@@ -134,6 +134,7 @@ global.hasPartyPokemon = (player, pokemonNames, count) => {
   });
   return regis.length >= count;
 };
+
 global.partyIsMonotype = (player, type) => {
   if (player == undefined) return false;
   const party = global.getPlayerParty(player);
@@ -232,19 +233,19 @@ global.POKEMON_TYPES = [
   { type: "normal", hex: 0xe2e2d4 },
   { type: "fire", hex: 0xf69723 },
   { type: "water", hex: 0x48b9e8 },
-  { type: "grass", hex: 0x86c53d},
+  { type: "grass", hex: 0x86c53d },
   { type: "electric", hex: 0xf0e53b },
-  { type: "ice", hex: 0xe0641d},
+  { type: "ice", hex: 0xe0641d },
   { type: "fighting", hex: 0xda5847 },
   { type: "poison", hex: 0xdb55cf },
   { type: "ground", hex: 0xe8b15f },
   { type: "flying", hex: 0xcebdff },
   { type: "psychic", hex: 0xff838e },
   { type: "bug", hex: 0xcccb34 },
-  { type: "rock", hex: 0xb3a06d},
+  { type: "rock", hex: 0xb3a06d },
   { type: "ghost", hex: 0xa176d3 },
   { type: "dragon", hex: 0x505cf3 },
-  { type: "dark", hex: 0x54778d},
+  { type: "dark", hex: 0x54778d },
   { type: "steel", hex: 0xbcd6e4 },
   { type: "fairy", hex: 0xffa5d3 }
 ]
