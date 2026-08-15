@@ -89,6 +89,28 @@ ServerEvents.recipes((e) => {
       item: 'society:deep_a_mochi',
     },
   });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    ingredients: [
+      {
+        item: 'society:oil',
+      },
+      {
+        item: 'bakery:sweet_dough',
+      },
+      {
+        item: 'pamhc2trees:lemonitem',
+      },
+      {
+        item: 'minecraft:sugar',
+      }
+    ],
+    result: {
+      item: 'society:lemon_beignets',
+    },
+  });
   e.shapeless("quark:slime_in_a_bucket", [
     "society:petrified_slime",
     "species:youth_potion",
@@ -759,6 +781,11 @@ ServerEvents.recipes((e) => {
       "society:cranberry",
       "society:crystalberry",
     ],
+  ]);
+  e.shapeless('society:suspicious_milk_tea', [
+    'society:warped_milk',
+    'herbalbrews:black_tea',
+    'atmospheric:aloe_gel_bottle'
   ]);
   e.shapeless("4x farmersdelight:canvas", ["society:canvas"]);
   e.shapeless("1x society:tubasmoke_stick", [

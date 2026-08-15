@@ -242,6 +242,7 @@ global.artifacts = [
   { item: "society:toy_train", value: 430 },
   { item: "society:aquamagical_dust", value: 512 },
   { item: "society:wheel_of_adaptation", value: 576 },
+  { item: "society:ancient_builders_tool", value: 612 },
   { item: "society:perfect_cherry", value: 777 },
   { item: "society:mini_oni_eye", value: 704 },
   { item: "society:production_science_pack", value: 1024 },
@@ -1211,6 +1212,7 @@ const craftingTableRecipes = [
   { item: "society:pink_energy_drink", value: 218 },
   { item: "society:mana_energy_drink", value: 548 },
   { item: "society:death_liquid", value: 930 },
+  { item: "society:suspicious_milk_tea", value: 2356 },
   { item: "unusualfishmod:odd_fishsticks", value: 96 },
   { item: "unusualfishmod:weird_goldfish", value: 64 },
   { item: "unusualfishmod:pickledish", value: 128 },
@@ -1348,6 +1350,7 @@ const furnaceRecipes = [
   { item: "veggiesdelight:mhadjeb", value: 93 },
   { item: "veggiesdelight:garlic_baked_cod", value: 57 },
   { item: 'society:deep_a_mochi', value: 396 },
+  { item: 'society:lemon_beignets', value: 639 },
 ];
 furnaceRecipes.forEach((recipe) => {
   global.cooking.push({

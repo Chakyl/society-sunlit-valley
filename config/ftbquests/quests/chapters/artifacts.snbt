@@ -35,7 +35,7 @@
 				item: "society:ribbit_gadget"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: 1.5d
 		}
 		{
@@ -45,7 +45,7 @@
 				item: "society:heart_of_neptunium"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
@@ -71,7 +71,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -131,7 +131,7 @@
 				item: "society:mini_oni_eye"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: -0.5d
 		}
 		{
@@ -167,7 +167,7 @@
 				item: "society:beemonican_seal"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: 1.5d
 		}
 		{
@@ -197,6 +197,7 @@
 				"566000800816BC75"
 				"1209EE6E7121636E"
 				"6CCF2A8697360014"
+				"54E20BA869846944"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -251,7 +252,7 @@
 				item: "society:production_science_pack"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: -0.5d
 		}
 		{
@@ -271,7 +272,7 @@
 				item: "society:steamy_gadget"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: 1.5d
 		}
 		{
@@ -281,7 +282,7 @@
 				item: "society:token_of_unity"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: 1.5d
 		}
 		{
@@ -301,7 +302,7 @@
 				item: "society:perfect_cherry"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: -0.5d
 		}
 		{
@@ -321,7 +322,7 @@
 				item: "society:amulet_of_light"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: 1.5d
 		}
 		{
@@ -341,7 +342,17 @@
 				item: "society:giant_bandolier_belt"
 				type: "item"
 			}]
-			x: 5.5d
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			id: "54E20BA869846944"
+			tasks: [{
+				id: "67ADFBB0116E83AE"
+				item: "society:ancient_builders_tool"
+				type: "item"
+			}]
+			x: 1.0d
 			y: -0.5d
 		}
 	]
