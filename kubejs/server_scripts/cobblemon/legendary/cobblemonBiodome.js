@@ -1,3 +1,5 @@
+console.info("[SOCIETY-S-COBBLEMON] cobblemonBiodome.js loaded");
+
 const getRitualArid = (level, player, centerPos, radius) => {
     const { x, y, z } = centerPos;
     let scanBlock;
@@ -83,7 +85,7 @@ const getRitualHumidity = (level, player, centerPos, radius) => {
 
     return ritualCanRun;
 }
-const biodomeLegendary = (level, server, player, item, block, particle, legendaryToSummon, raidLevel, isPrimal) => {
+const biodomeLegendary = (level, server, player, item, block, particle, legendaryToSummon, isPrimal) => {
     const { x, y, z } = block;
     let delay = 2;
     let count = 16;
@@ -93,7 +95,7 @@ const biodomeLegendary = (level, server, player, item, block, particle, legendar
     item.shrink(1)
     global.addItemCooldown(player, item, (delay * count * (count / 2)) + 20);
     server.scheduleInTicks(delay * count * (count / 2), () => {
-        let spawnedAny = global.summonRaidPokemon(server, level, block, legendaryToSummon, "", Math.max(80, raidLevel), 45, false, false, 0);
+        let spawnedAny = global.summonRaidPokemon(server, level, block, legendaryToSummon, isPrimal ? "primal" : "", Math.max(80, 100), 45, false, false, 0);
         if (spawnedAny) {
             server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${x} ${y} ${z} 2`);
             server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${x} ${y} ${z} 2`);
@@ -145,7 +147,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:biodome_altar", (e) => {
             server.runCommandSilent("weather clear");
         }
         server.scheduleInTicks(100, () => {
-            biodomeLegendary(level, server, player, item, block, ritualPokemon == "groudon" ? "minecraft:flame" : "species:ghoul_searching2", ritualPokemon, 100)
+            biodomeLegendary(level, server, player, item, block, ritualPokemon == "groudon" ? "minecraft:flame" : "species:ghoul_searching2", ritualPokemon, isPrimal)
         });
     } else {
         global.addItemCooldown(player, item, 20);
