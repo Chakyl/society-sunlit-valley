@@ -1,0 +1,30 @@
+{
+  "name": "李子 🍂",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:plumitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 96$(li)🍂 §4秋季§r$(li)产量：1$(li)生长阶段：8$(br2)$(l)备注$()$(li)详见：$(l:trees/pams/plum)李子树$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 李子树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:oak_leaves",
+          "F": "pamhc2trees:pamplum[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

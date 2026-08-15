@@ -1,0 +1,53 @@
+{
+  "name": "孤行兽",
+  "category": "patchouli:animals",
+  "icon": "species:ichor_bottle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)挤奶: 回复脓液瓶$(li)挤奶冷却: 2 天$(li)掉落物: 无$(br2)$(l)备注$()$(br)在冰冷的海洋生物群系找到它们的遗骸，然后按照右侧的样子重新拼接，最后需要被闪电击中。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Construct, then wait for lightning",
+      "enable_visualize": true,
+      "symmetrical": true,
+      "multiblock": {
+        "pattern": [
+          [
+            " BBB ",
+            "SBBBN",
+            " BBB ",
+            "     "
+          ],
+          [
+            " BBB ",
+            " B0B ",
+            "TBPBT",
+            "T   T"
+          ],
+          [
+            " BBB ",
+            " BBB ",
+            " BBB ",
+            "     "
+          ]
+        ],
+        "mapping": {
+          "T": "minecraft:bone_block[axis=x]",
+          "P": "minecraft:carved_pumpkin[facing=east]",
+          "B": "#species:mammutilation_body_blocks",
+          "0": "#species:mammutilation_body_blocks",
+          "S": "minecraft:lightning_rod[facing=north]",
+          "N": "minecraft:lightning_rod[facing=south]"
+        }
+      }
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "species:mammutilation",
+      "scale": 0.8,
+      "text": "一个自然的怪物，被时间遗忘了..."
+    }
+  ]
+}

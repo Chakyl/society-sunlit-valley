@@ -1,0 +1,30 @@
+{
+  "name": "荔枝 🌐",
+  "category": "patchouli:tree_crops",
+  "icon": "pamhc2trees:lycheeitem",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 16$(li)🌐 §5全年§r$(li)产量：3$(li)生长阶段：8$(br2)$(l)备注$()$(li)详见：$(l:trees/pams/lychee)荔枝树$(/l)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 荔枝树 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "0": "minecraft:jungle_leaves",
+          "F": "pamhc2trees:pamlychee[age=7]"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ]
+      }
+    }
+  ]
+}

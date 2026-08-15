@@ -1,0 +1,17 @@
+{
+  "name": "加利鸡",
+  "category": "patchouli:animals",
+  "icon": "farmlife:galliraptor_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 加利鸡蛋$(li)掉落物: 生加利鸡肉, 羽毛$(br2)$(l)备注$()$(br)通过对哈欠兽使用月之突变血清改造而来。饥饿状态不会下蛋，心情不好的加利鸡下蛋更少。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "farmlife:galliraptor",
+      "scale": 0.7,
+      "text": "这是史前生物吗？"
+    }
+  ]
+}

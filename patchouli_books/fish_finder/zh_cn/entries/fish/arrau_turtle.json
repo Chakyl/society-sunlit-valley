@@ -1,0 +1,18 @@
+{
+  "name": "巨型侧颈龟",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:arrau_turtle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 280$(li)🍂 §4秋季§r$(li)水域：河流$(li)天气：雨天$(li)时间：夜晚"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:arrau_turtle",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Runs some kind of turtle club."
+    }
+  ]
+}

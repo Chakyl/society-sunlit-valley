@@ -1,4 +1,5 @@
 {
+  "modpack.current_language_code": "en_us",
   "itemGroup.society": "Society",
   "itemGroup.society.creative_tab": "Society",
   "society.books.almanac.name": "Farmer's Almanac",
@@ -397,6 +398,9 @@
   "society.starting_item_sharestone.title": "Server Welcome",
   "society.starting_item_sharestone.author": "Society",
   "society.starting_item_sharestone.text": "Welcome!\n\nThanks for taking part in a Sunlit Valley Multiplayer Server! You've been given a White Sharestone to make traveling to other bases easier. Please be sure to claim your base before placing it!",
+  "society.login_update.title": "===[ Welcome to Society: Sunlit Valley 4.1! ]===",
+  "society.login_update.desc_0": "Thank you for playing! The Building Shop has been removed from the quest book. You can now purchase blueprints from Ace the Carpenter.",
+  "society.login_update.desc_1": "There is also a dedicated item that can be used to access the bulding shop called 'Blueprints' that can be purchased from Ace as well.",
   "society.prize_machine.hint.0": "Something seedy...",
   "society.prize_machine.hint.1": "Something writhing and squirming...",
   "society.prize_machine.hint.2": "Something upgradable...",
@@ -462,6 +466,7 @@
   "society.villager_home.error": "Something went terribly wrong! Report this issue to the developer with your logs ~",
   "society.invitation.place_home": "Place down the Villager Home block to decide where this villager lives! It can be moved at any time.",
   "society.item_frame.rod": "I need to remove my bobber before placing this here...",
+  "society.new_villager.message": "Someone new wants to move into your town! Check the Carpenter's invitation shop to invite them.",
 
   "jei.society.category.seed_making": "Seed Making",
   "jei.society.category.preserving": "Preserving",
@@ -746,7 +751,7 @@
   "block.society.moon_statue.already_taken": "You've already received a blessing today.",
   "block.society.villager_home.type": "Summons a %s",
   "block.society.villager_home.description": "Transports the villager to your town and assigns them the nearby area as their home.\n Cannot be placed near other villagers.",
-  "block.society.fish_pond_manager.description": "Manages quests for fish ponds at 7am every morning",
+  "block.society.fish_pond_manager.description": "Submits quests for fish ponds at 7am every morning",
   "block.society.caterpillar_box.description": "Hatches Caterpillar Eggs placed inside every 5 minutes. Butterflies and Moths fly out of the box's top.",
 
   "item.society.froggy_helm.description": "There's a large tongue nestled inside",
@@ -968,5 +973,6 @@
   "info.society.villager_unlock_condition.banker": "Invite the market villager to unlock invitation",
   "info.society.villager_unlock_condition.librarian": "Invite the market villager to unlock invitation",
   "info.society.villager_unlock_condition.trader": "Enter the Skull Cavern to unlock invitation",
-  "info.society.villager_unlock_condition.witch": "Enter the Nether to unlock invitation"
+  "info.society.villager_unlock_condition.witch": "Enter the Nether to unlock invitation",
+  "info.society.villager_unlock_condition.wise_oak": "Find and talk to the Wise Oak in the wild..."
 }

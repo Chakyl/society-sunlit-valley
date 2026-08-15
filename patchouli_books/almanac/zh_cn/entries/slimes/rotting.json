@@ -1,0 +1,17 @@
+{
+  "name": "腐化",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:rotting\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)生物群系： 冰冻洞穴（骷髅洞穴）$(li)结构： 史莱姆生成器$(li)挖掘点： 主世界$(li)红色气球箱$(br2)$(l)风险：$()$(br)不开心时会使你饥饿。攻击村民时会召唤史莱姆僵尸。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "腐化史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:rotting\"}",
+      "scale": 0.9
+    }
+  ]
+}

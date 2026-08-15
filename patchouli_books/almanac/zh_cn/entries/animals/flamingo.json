@@ -1,0 +1,17 @@
+{
+  "name": "火烈鸟",
+  "category": "patchouli:animals",
+  "icon": "society:flamingo_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格: 非卖品$(li)产蛋: 火烈鸟蛋$(li)掉落物: 羽毛$(br2)$(l)备注$()$(br)需要其达到 4 颗心及以上好感度才会下蛋。无法繁殖。" 
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:flamingo",
+      "scale": 0.5,
+      "text": "展现你最真实的自然色彩吧！火烈鸟！"
+    }
+  ]
+}

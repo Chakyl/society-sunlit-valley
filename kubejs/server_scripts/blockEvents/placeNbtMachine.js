@@ -54,6 +54,7 @@ BlockEvents.placed(
     "society:fish_pond_basket",
     "society:auto_grabber",
     "society:fish_pond_manager",
+    "society:fish_pond_hatchery",
   ],
   (e) => {
     const playerUUID = e.player.getUuid().toString();

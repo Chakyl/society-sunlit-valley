@@ -3162,7 +3162,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cozycafe-1.7-all.jar",
+                    "file_name": "cozycafe-1.8-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3170,18 +3170,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8448/370/cozycafe-1.7-all.jar",
-                    "id": "8448370",
+                    "url": "https://edge.forgecdn.net/files/8601/775/cozycafe-1.8-all.jar",
+                    "id": "8601775",
                     "parent_id": "1590319",
                     "hashes": {
-                        "sha1": "2da194b65bfee360b1f1288f74a840c8dbdaa4df",
-                        "md5": "f351405a07826d1f3fe5208245017756"
+                        "sha1": "6abd0466250be401d667e9f2f193368c6839964c",
+                        "md5": "26714031fb0391331a83e36daa61f975"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 418776,
-                    "date_published": "2026-07-17T01:41:00.950Z"
+                    "size": 418795,
+                    "date_published": "2026-08-08T13:19:15.467Z"
                 }
             ]
         },
@@ -3662,24 +3662,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
+                    "file_name": "create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6987/710/create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
-                    "id": "6987710",
+                    "url": "https://edge.forgecdn.net/files/8204/836/create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar",
+                    "id": "8204836",
                     "parent_id": "820977",
                     "hashes": {
-                        "sha1": "4e1048ce2b5453d657b42ea5dcec5ada1842b0ea",
-                        "md5": "cf941597532a7837327ee891b36f0596"
+                        "sha1": "bb724b37b191f6bcbe1e6bc395742e50352e8dbc",
+                        "md5": "ecc1671b1e2db7b0de6a5e93b6e7acd6"
                     },
-                    "required_dependencies": [],
-                    "size": 822499,
-                    "date_published": "2025-09-11T22:51:01.050Z"
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 835363,
+                    "date_published": "2026-06-06T09:58:32.300Z"
                 }
             ]
         },
@@ -3977,7 +3980,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreateSchematicChecker-1.21.27-6.0-forge-1.20.1.jar",
+                    "file_name": "CreateSchematicChecker-0.21.18-6.0-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3986,18 +3989,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8412/934/CreateSchematicChecker-1.21.27-6.0-forge-1.20.1.jar",
-                    "id": "8412934",
+                    "url": "https://edge.forgecdn.net/files/7797/920/CreateSchematicChecker-0.21.18-6.0-forge-1.20.1.jar",
+                    "id": "7797920",
                     "parent_id": "1357430",
                     "hashes": {
-                        "sha1": "2b0b6339a99b9a9a4a4f71482773c7038b56dca9",
-                        "md5": "9e8a6c5ff51d4fa4ad5664d0c1c16006"
+                        "sha1": "895731d668cb4fbb3a4eff892315f337c0e1660a",
+                        "md5": "b8a4a509e2daf0d54bcdbfe337d1e355"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 322410,
-                    "date_published": "2026-07-11T14:59:28.907Z"
+                    "size": 231988,
+                    "date_published": "2026-03-23T03:18:53.153Z"
                 }
             ]
         },
@@ -5142,43 +5145,6 @@
                     ],
                     "size": 69476,
                     "date_published": "2024-10-28T22:30:06.733Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "mASAhaT6RW7zFPT9",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "enchantment-disable-tag"
-            },
-            "name": {
-                "curseforge": "Enchantment Disable Tag"
-            },
-            "id": {
-                "curseforge": "1012987"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "enchantmentdisabletag-forge-1.1.0+1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5480/675/enchantmentdisabletag-forge-1.1.0+1.20.1.jar",
-                    "id": "5480675",
-                    "parent_id": "1012987",
-                    "hashes": {
-                        "sha1": "9095f28391d759eab1ee0a1c8211cf778dfaebd6",
-                        "md5": "b7f3e15f706e273fc4464f8adf9cecf8"
-                    },
-                    "required_dependencies": [],
-                    "size": 187066,
-                    "date_published": "2024-06-27T21:35:46.890Z"
                 }
             ]
         },
@@ -8691,7 +8657,7 @@
             ]
         },
         {
-            "pakku_id": "2XBqXhuDF0b9S8ED",
+            "pakku_id": "eFoG2d3PsvXL2hsy",
             "type": "MOD",
             "slug": {
                 "curseforge": "modernfix"
@@ -8705,7 +8671,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.27.66+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.27.63+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8713,16 +8679,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8459/635/modernfix-forge-5.27.66+mc1.20.1.jar",
-                    "id": "8459635",
+                    "url": "https://edge.forgecdn.net/files/8435/82/modernfix-forge-5.27.63+mc1.20.1.jar",
+                    "id": "8435082",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "322fdb7aadc06b540cff69a2a0a513bf37050f0f",
-                        "md5": "61c184687d2cd6c770a033f310ea55fc"
+                        "sha1": "ceba978d35109b5a1b5090f2bf6af67b1536d1be",
+                        "md5": "7f1761e2d08fcfc7006f38600cbfc2bb"
                     },
                     "required_dependencies": [],
-                    "size": 1002234,
-                    "date_published": "2026-07-18T18:17:53.960Z"
+                    "size": 1001494,
+                    "date_published": "2026-07-15T01:43:32.603Z"
                 }
             ]
         },
@@ -9303,7 +9269,45 @@
             ]
         },
         {
-            "pakku_id": "OxBftPebjIUsovB8",
+            "pakku_id": "hmL3SWy7tSkuOJra",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "no-chat-restrictions"
+            },
+            "name": {
+                "curseforge": "No Chat Restrictions"
+            },
+            "id": {
+                "curseforge": "1442925"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "NoChatRestrictions-Forge-MC1.20.1-v1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7538/450/NoChatRestrictions-Forge-MC1.20.1-v1.0.0.jar",
+                    "id": "7538450",
+                    "parent_id": "1442925",
+                    "hashes": {
+                        "sha1": "a189c024b78b1057f7bab8a64c327ed27a6d186d",
+                        "md5": "dbd8ffddf8d747fdf41656e839dfae3a"
+                    },
+                    "required_dependencies": [],
+                    "size": 9676,
+                    "date_published": "2026-01-27T23:36:55.753Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "DCJwKUkn63es8J43",
             "pakku_links": [
                 "sP0r5kz3HrhYT9PX",
                 "E1izozCgXnbgewv8"
@@ -11399,7 +11403,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "SVDialog-0.5.jar",
+                    "file_name": "SVDialog-0.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11407,16 +11411,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8448/121/SVDialog-0.5.jar",
-                    "id": "8448121",
+                    "url": "https://edge.forgecdn.net/files/8579/840/SVDialog-0.6.jar",
+                    "id": "8579840",
                     "parent_id": "1441305",
                     "hashes": {
-                        "sha1": "76b215bc1a123cbe6331343f49c65fa159024f9e",
-                        "md5": "5e187556d6ee1fdd113e1abf0e95178d"
+                        "sha1": "a171efc9cf6ea1fc03cb7ab94a07cc771e619390",
+                        "md5": "3a33da77a581f835ce5f04673a5b0b95"
                     },
                     "required_dependencies": [],
-                    "size": 1246126,
-                    "date_published": "2026-07-17T00:26:43.480Z"
+                    "size": 1246322,
+                    "date_published": "2026-08-05T02:20:45.347Z"
                 }
             ]
         },
@@ -12415,7 +12419,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society-1.19.jar",
+                    "file_name": "society-1.20.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12423,16 +12427,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8497/12/society-1.19.jar",
-                    "id": "8497012",
+                    "url": "https://edge.forgecdn.net/files/8603/47/society-1.20.jar",
+                    "id": "8603047",
                     "parent_id": "1424785",
                     "hashes": {
-                        "sha1": "9f61683187f2a5a03bedb6ab616943fcc45065f6",
-                        "md5": "36e88d792b6510efe5f7684e5799ae03"
+                        "sha1": "fc19e04e900003401803fa7ddbbbfa76c7885544",
+                        "md5": "80f2e513763dc5c77e886f45adebd272"
                     },
                     "required_dependencies": [],
-                    "size": 67754034,
-                    "date_published": "2026-07-24T01:07:58.057Z"
+                    "size": 67754283,
+                    "date_published": "2026-08-08T16:41:42.677Z"
                 }
             ]
         },
@@ -12768,7 +12772,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.20.4.jar",
+                    "file_name": "splendid_slimes-0.20.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12776,18 +12780,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8180/278/splendid_slimes-0.20.4.jar",
-                    "id": "8180278",
+                    "url": "https://edge.forgecdn.net/files/8602/382/splendid_slimes-0.20.5.jar",
+                    "id": "8602382",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "fa052e84ace4ba1bc19ee6ca9651e5989f77c25d",
-                        "md5": "a8d2916bf2b8bc079705777c91ba3c17"
+                        "sha1": "0ec7d337ae5fb67772ee1124319bc9599d326375",
+                        "md5": "031370e91f131a65414e77569195c628"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 511727,
-                    "date_published": "2026-06-01T13:19:49.297Z"
+                    "size": 511858,
+                    "date_published": "2026-08-08T14:49:31.270Z"
                 }
             ]
         },
@@ -13077,7 +13081,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-8.0.jar",
+                    "file_name": "dew_drop_farmland_growth-9.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13085,18 +13089,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8281/305/dew_drop_farmland_growth-8.0.jar",
-                    "id": "8281305",
+                    "url": "https://edge.forgecdn.net/files/8603/38/dew_drop_farmland_growth-9.0.jar",
+                    "id": "8603038",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "7d76c34ce24c05237810d0da3b56631a840de562",
-                        "md5": "68e120102e2f9c499c18bcb547ef1697"
+                        "sha1": "7762a6171a4c0c2dffd09424830ff70d7624dd5d",
+                        "md5": "0dd219e0ad40767073a67fc393aa5b0c"
                     },
                     "required_dependencies": [
                         "1062753"
                     ],
-                    "size": 147861,
-                    "date_published": "2026-06-19T17:19:54.893Z"
+                    "size": 148552,
+                    "date_published": "2026-08-08T16:40:09.373Z"
                 }
             ]
         },
@@ -14296,7 +14300,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "whimsy_deco-1.1.jar",
+                    "file_name": "whimsy_deco-1.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14304,18 +14308,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7058/899/whimsy_deco-1.1.jar",
-                    "id": "7058899",
+                    "url": "https://edge.forgecdn.net/files/8579/611/whimsy_deco-1.2.jar",
+                    "id": "8579611",
                     "parent_id": "1351466",
                     "hashes": {
-                        "sha1": "7408d13c279d640879857fe59ab6d22c9feafed4",
-                        "md5": "3d749f7278f5168b75df42888f5f0067"
+                        "sha1": "78ae8d7df6de2e16480ee67cf86ac9ecb90b5c97",
+                        "md5": "60a9d7464a56059e9b01447b746e9a6a"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 538351,
-                    "date_published": "2025-10-02T18:50:53.200Z"
+                    "size": 538886,
+                    "date_published": "2026-08-05T01:31:13.303Z"
                 }
             ]
         },

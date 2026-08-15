@@ -1,0 +1,17 @@
+{
+  "name": "美西螈",
+  "category": "patchouli:pets",
+  "icon": "beachparty:rubber_ring_axolotl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)美西螈伙伴头饰, 美西螈游泳圈头饰"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:axolotl",
+      "scale": 0.8,
+      "text": "繁茂洞穴的原住民，喜欢捕鱼。"
+    }
+  ]
+}

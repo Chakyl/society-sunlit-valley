@@ -1,0 +1,17 @@
+{
+  "name": "火花猫",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)结构： 暗影荒原史莱姆生成器（骷髅洞穴）$(li)心之融合$(br2)$(l)风险：$()$(br)不开心时会引发雷击。暴怒时会剧烈爆炸且非常滑。情绪极不稳定。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "火花猫史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:sparkcat\"}",
+      "scale": 0.9
+    }
+  ]
+}

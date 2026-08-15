@@ -1778,6 +1778,7 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["42C8E1F0D9A5B2BD"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest61501449BF31B773.description1}"
 				""
@@ -2186,10 +2187,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"5B6FD08D6063D6AA"
-				"61501449BF31B773"
-			]
+			dependencies: ["5B6FD08D6063D6AA"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.description1}"
 				""
@@ -2217,6 +2215,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					title: "{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.task.2279335381810612877.title}"
 					type: "item"
 				}

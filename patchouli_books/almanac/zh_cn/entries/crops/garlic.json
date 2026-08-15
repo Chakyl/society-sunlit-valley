@@ -1,0 +1,30 @@
+{
+  "name": "大蒜 🌼",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:garlic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 27$(li)🌼 §2春季§r$(li)种子价格：:coin: 32$(li)产量：1-3$(li)生长时间：5 天$(br2)$(l)备注$()$(br)邀请市场入驻到你农场的第二年才会出售这种作物的种子。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 大蒜作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:garlic_crop[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

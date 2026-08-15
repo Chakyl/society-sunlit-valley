@@ -1,0 +1,30 @@
+{
+  "name": "棉花 🔥",
+  "category": "patchouli:crops",
+  "icon": "etcetera:cotton_flower",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 24$(li)🔥 §6夏季§r$(li)产量：2$(li)生长时间：3 天$(br2)$(l)备注$()$(br)发现于绿色气球箱, 挖掘点或森林魔啾."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 棉花作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "etcetera:cotton[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

@@ -7,7 +7,7 @@ function SocietyStages(stages) {
   return {
     value: stages,
     has: function (x) {
-      return this.value.includes(x);
+      return this.value.toString().includes(String(x));
     },
   };
 }

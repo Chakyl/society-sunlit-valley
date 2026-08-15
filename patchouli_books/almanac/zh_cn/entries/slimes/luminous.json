@@ -1,0 +1,17 @@
+{
+  "name": "荧光",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:luminous\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)结构： 下界史莱姆生成器$(li)挖掘点： 下界方块$(br2)$(l)风险：$()$(br)不开心时会使你发光。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "荧光史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:luminous\"}",
+      "scale": 0.9
+    }
+  ]
+}

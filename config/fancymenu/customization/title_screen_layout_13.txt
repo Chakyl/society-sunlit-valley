@@ -128,7 +128,7 @@ element {
 
 element {
   interactable = true
-  source = [source:local]/config/fancymenu/assets/changelog.markdown
+  source = [source:local]/config/fancymenu/assets/changelog_{"placeholder":"local","values":{"key":"modpack.current_language_code"}}.markdown
   source_mode = resource
   shadow = true
   scale = 1.0

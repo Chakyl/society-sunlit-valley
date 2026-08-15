@@ -1,0 +1,17 @@
+{
+  "name": "机械",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:mechanic\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)心之融合$(br2)$(l)风险：$()$(br)会持有给予它的物品，直到被杀死或分裂。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "机械史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:mechanic\"}",
+      "scale": 0.9
+    }
+  ]
+}

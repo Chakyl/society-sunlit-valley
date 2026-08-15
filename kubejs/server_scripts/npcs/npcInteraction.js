@@ -59,14 +59,14 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
     } else if (!npcData.maxGifted && Number(npcData.friendship) >= 500) {
         if (npcId.equals("banker") && player.stages.has("slouching_towards_artistry")) {
             player.give(Item.of("2x waystones:waystone"))
-            server.runCommandSilent(`dialog ${player.username} show ${player.username} banker_unique__gift_read`);
+            server.runCommandSilent(`dialog ${player.username} show ${player.username} banker_unique_five_gift_read`);
         } else if (npcId.equals("market") && player.stages.has("universal_methods_of_farming")) {
             player.give(Item.of("16x society:sparkpod_seed"))
             server.runCommandSilent(`dialog ${player.username} show ${player.username} market_unique_five_gift_read`);
         } else if (npcId.equals("librarian") && player.stages.has("debt_caverns")) {
             player.give(Item.of('botania:diva_charm'))
             player.give(Item.of('botania:mana_ring', '{mana:500000}'))
-            server.runCommandSilent(`dialog ${player.username} show ${player.username} market_unique_five_gift_read`);
+            server.runCommandSilent(`dialog ${player.username} show ${player.username} librarian_unique_five_gift_read`);
         } else if (npcId.equals("trader")) {
             player.stages.add("trader_clothing")
             server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} ${npcId}_unique_five_gift`);

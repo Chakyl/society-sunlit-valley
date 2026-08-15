@@ -307,6 +307,7 @@ StartupEvents.registry("block", (event) => {
           "animal_fancy",
           "animal_whisperer",
           "bff",
+          "triple_truffle",
           "coopmaster",
           "heretic",
           "mana_hand",

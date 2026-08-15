@@ -1,0 +1,30 @@
+{
+  "name": "甜浆果 🌼❆",
+  "category": "patchouli:crops",
+  "icon": "minecraft:sweet_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 2$(li)🌼 §2春季§r ❆ §b冬季§r$(li)产量：1-2/2-3$(li)生长时间：2/3 天$(li)再生时间：1/2 天$(br2)$(l)备注：$()$(br)发现于针叶林生物群系。$(br)无种子，直接种植果实。$(br)有2个可收获阶段"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Sweet Berry Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:sweet_berry_bush[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

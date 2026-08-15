@@ -1,0 +1,30 @@
+{
+  "name": "茄子 🍂",
+  "category": "patchouli:crops",
+  "icon": "society:eggplant",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 42$(li)🍂 §4秋季§r$(li)种子价格：:coin: 8$(li)产量：1$(li)生长时间：6 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 茄子作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:eggplant[age=6]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

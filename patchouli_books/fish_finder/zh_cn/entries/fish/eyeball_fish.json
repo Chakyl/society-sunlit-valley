@@ -1,0 +1,19 @@
+{
+  "name": "眼球鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:eyeball_fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 408$(li)维度：下界$(li)生物群系：绯红森林"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:eyeball_fish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Terraria reference???"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ CommonAddedEvents.playerChangeDimension((e) => {
       if (!player.isPlayer()) return;
       if (!player.stages.has("entered_nether")) {
         player.stages.add("entered_nether");
+        player.tell(Text.translatable("society.new_villager.message").green());
       }
     }
 });
