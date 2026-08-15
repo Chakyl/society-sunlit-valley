@@ -32,6 +32,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
     e.add("society:is_skull_cavern", biome);
     e.add("supplementaries:has_cave_urns", biome);
     e.add("society:mining_biomes", biome);
+    e.add("cobblemon:is_skull_cavern", biome);
   });
   e.add("sereneseasons:tropical_biomes", "#atmospheric:is_rainforest");
   e.add("sereneseasons:tropical_biomes", "#atmospheric:is_dunes");
