@@ -25,6 +25,20 @@
 		{
 			"offer": {
 				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"trader_pineconetown\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_trader\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_trader.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"trader_pineconetown\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "society:building_supplies",
+				"count": 5
+			},
+			"image": "society:textures/gui/buildings/pineconetown/trader_pineconetown",
+			"image_description": "portable_blueprints.worn_blueprint.pineconetown_trader.dimensions",
+			"trade_id": "bs_trader_pineconetown"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
 				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"trader_rural\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_trader\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_trader.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"trader_rural\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
 				"count": 1
 			},

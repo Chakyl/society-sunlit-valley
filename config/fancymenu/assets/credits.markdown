@@ -4,6 +4,7 @@
 - Uni - Worldgen programmer & Skull Cavern mastermind
 - Nifast - Artist for quest book & items. Character & portrait designer
 - MattTheMeow - Building shop manager & curator
+- Emma - Supporting pack developer
 
 ### Art Contributors
 - Altessa - Kata dolls and Fredbear Plushies
@@ -24,13 +25,13 @@
 - Krewella081 - Alpine set
 - Kanlamari - Mason, Tudor, Entrana Revamp sets, some villager houses. Some greenhouse buildings 
 - Patchy - Woodcutter, Blacksmith, and Horse Stables
-- witchd - Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse
+- witchd - Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse, Pineconetown building set
 - MattTheMeow - Skull Cavern honey beeode and goober den
 - SianaTheSavage - Floral set
 
 ### Code Contributors
 - Ascens - Various tweaks and fixes
-- Emma & Providencedaemon - Advice, feedback, and misc work
+- Providencedaemon - Advice, feedback, and misc work
 - frog the jam UNCHAINED - The above + Haruna dialogs
 - Hexagreen - Translation support
 - Space_mex - Skillexpnotifier mod

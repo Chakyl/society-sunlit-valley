@@ -4008,7 +4008,7 @@
             ]
         },
         {
-            "pakku_id": "G8PY4TgHrc0mTsSS",
+            "pakku_id": "mrVomcKxYvpTPilO",
             "type": "MOD",
             "slug": {
                 "curseforge": "emi"
@@ -4022,7 +4022,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "emi-1.1.24+1.20.1+forge.jar",
+                    "file_name": "emi-1.1.22+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4030,59 +4030,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8081/375/emi-1.1.24+1.20.1+forge.jar",
-                    "id": "8081375",
+                    "url": "https://edge.forgecdn.net/files/6420/945/emi-1.1.22+1.20.1+forge.jar",
+                    "id": "6420945",
                     "parent_id": "580555",
                     "hashes": {
-                        "sha1": "ea320200878e4a49196760234a22da763671520a",
-                        "md5": "c86d5772fba9fbd4d612f2fe82397f72"
+                        "sha1": "d8049d6ec86befcd100a0ff0fc8ebc289f735997",
+                        "md5": "441c582c6e8a1d6fd9e3d16a27c1a39e"
                     },
                     "required_dependencies": [],
-                    "size": 1121750,
-                    "date_published": "2026-05-13T06:18:18.303Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "2NpFfyC0W9akeQ9W",
-            "pakku_links": [
-                "G8PY4TgHrc0mTsSS",
-                "VjY1yclSang7lBB5"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "emi-backport"
-            },
-            "name": {
-                "curseforge": "EMI++ Forked"
-            },
-            "id": {
-                "curseforge": "1411826"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "emixx-forge-1.5.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8274/454/emixx-forge-1.5.1.jar",
-                    "id": "8274454",
-                    "parent_id": "1411826",
-                    "hashes": {
-                        "sha1": "7bf56799042bb929418a497b08218e8a922e9d9e",
-                        "md5": "f0d9452a2fec8d718a58f156250a7dd9"
-                    },
-                    "required_dependencies": [
-                        "351264",
-                        "580555"
-                    ],
-                    "size": 399605,
-                    "date_published": "2026-06-18T18:02:34.723Z"
+                    "size": 1048567,
+                    "date_published": "2025-04-14T03:37:30.690Z"
                 }
             ]
         },
@@ -4488,7 +4445,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.9.2-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.24-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4496,18 +4453,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6933/150/everycomp-1.20-2.9.2-forge.jar",
-                    "id": "6933150",
+                    "url": "https://edge.forgecdn.net/files/8332/989/everycomp-1.20-2.9.24-forge.jar",
+                    "id": "8332989",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "35d4eb2f23c4309038546d78ac5fb2d28232b0aa",
-                        "md5": "1ce775fb78a475a84546846662c6ce93"
+                        "sha1": "5a058a363e1d907a08e210fd0739b7268e45b339",
+                        "md5": "95bff6ef27595ee7ec1b2e453bc51af8"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2816203,
-                    "date_published": "2025-08-27T06:58:19.960Z"
+                    "size": 2865518,
+                    "date_published": "2026-06-28T04:39:13.450Z"
                 }
             ]
         },
@@ -7865,7 +7822,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.27.63+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.27.72+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7873,16 +7830,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8435/82/modernfix-forge-5.27.63+mc1.20.1.jar",
-                    "id": "8435082",
+                    "url": "https://edge.forgecdn.net/files/8613/265/modernfix-forge-5.27.72+mc1.20.1.jar",
+                    "id": "8613265",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "ceba978d35109b5a1b5090f2bf6af67b1536d1be",
-                        "md5": "7f1761e2d08fcfc7006f38600cbfc2bb"
+                        "sha1": "a1954e427611b0f99cf48aa14700a5a1b480c2fd",
+                        "md5": "1388bcf53a67c259dbacc8073c6b685f"
                     },
                     "required_dependencies": [],
-                    "size": 1001494,
-                    "date_published": "2026-07-15T01:43:32.603Z"
+                    "size": 1000069,
+                    "date_published": "2026-08-10T01:33:53.840Z"
                 }
             ]
         },
@@ -7941,7 +7898,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.32-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.34-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7950,16 +7907,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8076/692/moonlight-1.20-2.16.32-forge.jar",
-                    "id": "8076692",
+                    "url": "https://edge.forgecdn.net/files/8261/419/moonlight-1.20-2.16.34-forge.jar",
+                    "id": "8261419",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "ddd76b693abea485bf450bb4f0b8121a863eaba0",
-                        "md5": "94d116d57d7992a711ee5ecc803a8dab"
+                        "sha1": "5e20f2f0ce56a534accb32f80853d5a246599a4d",
+                        "md5": "f80a05d17e669e9a5f40cf68821601ed"
                     },
                     "required_dependencies": [],
-                    "size": 1393038,
-                    "date_published": "2026-05-12T06:29:46.070Z"
+                    "size": 1419416,
+                    "date_published": "2026-06-16T21:20:35.297Z"
                 }
             ]
         },
@@ -9584,7 +9541,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "quality_food-1.20.1-2.3.3-all.jar",
+                    "file_name": "quality_food-1.20.1-2.4.2-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -9594,16 +9551,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8412/31/quality_food-1.20.1-2.3.3-all.jar",
-                    "id": "8412031",
+                    "url": "https://edge.forgecdn.net/files/8625/117/quality_food-1.20.1-2.4.2-all.jar",
+                    "id": "8625117",
                     "parent_id": "973932",
                     "hashes": {
-                        "sha1": "a67d70481475d8ced4c6efe4a226321374d11584",
-                        "md5": "3682436d908ac8c7b3546d085fb63be0"
+                        "sha1": "344236ed95e75ba80913bca04e6bdcc832069a5b",
+                        "md5": "21155b81c26c2de29155d61b9df49eea"
                     },
                     "required_dependencies": [],
-                    "size": 425667,
-                    "date_published": "2026-07-11T12:15:24.367Z"
+                    "size": 910827,
+                    "date_published": "2026-08-11T16:28:59.657Z"
                 }
             ]
         },
@@ -10065,6 +10022,49 @@
                     "required_dependencies": [],
                     "size": 33771,
                     "date_published": "2023-07-05T11:08:13.323Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "2NpFfyC0W9akeQ9W",
+            "pakku_links": [
+                "VjY1yclSang7lBB5",
+                "mrVomcKxYvpTPilO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emi-backport"
+            },
+            "name": {
+                "curseforge": "Reliable EMI (REMI)"
+            },
+            "id": {
+                "curseforge": "1411826"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emixx-forge-1.5.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8636/807/emixx-forge-1.5.3.jar",
+                    "id": "8636807",
+                    "parent_id": "1411826",
+                    "hashes": {
+                        "sha1": "854bbfad1ca9f8c6084f7befbae1eb179def259b",
+                        "md5": "bd2e2c54ca25bb34ac183fffc89e6b09"
+                    },
+                    "required_dependencies": [
+                        "351264",
+                        "580555"
+                    ],
+                    "size": 401124,
+                    "date_published": "2026-08-13T01:25:30.897Z"
                 }
             ]
         },
@@ -11285,7 +11285,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-1.2.6.jar",
+                    "file_name": "society_trading-1.2.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11293,18 +11293,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8448/379/society_trading-1.2.6.jar",
-                    "id": "8448379",
+                    "url": "https://edge.forgecdn.net/files/8609/214/society_trading-1.2.7.jar",
+                    "id": "8609214",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "76d004f255fab5c90c3503a624ded0fc2f57d53e",
-                        "md5": "def4971a08b886d326cee1c4f4b97caf"
+                        "sha1": "eef65d8c95e6a600411af08ba6fdea0b36578642",
+                        "md5": "a182d111c976c63e28a2cfc3ee7e8a4d"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 223066,
-                    "date_published": "2026-07-17T01:44:39.727Z"
+                    "size": 223213,
+                    "date_published": "2026-08-09T13:24:40.867Z"
                 }
             ]
         },
