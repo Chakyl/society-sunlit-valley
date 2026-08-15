@@ -1,4 +1,4 @@
-{
+  {
   "shop_id": "trader",
   "name": "shop.society_trading.trader",
   "texture": "dialog:textures/portraits/trader",
@@ -103,10 +103,10 @@
         "count": 1
       },
       "request": {
-        "item": "vinery:aegis_wine",
+        "item": "society:dried_lemon",
         "count": 4
       },
-      "trade_id": "minecraft:trader_jade_for_aegis_wine"
+      "trade_id": "minecraft:trader_jade_for_dried_lemon"
     },
     {
       "offer": {

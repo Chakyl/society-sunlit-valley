@@ -2015,6 +2015,13 @@
 //                     count: 3,
 //                     chance: 1,
 //                     min_hearts: 8
+//                 },
+//                 {
+//                     item: "sunlit_cobblemon:magikarp_taiyaki",
+//                     count: 1,
+//                     chance: 1,
+//                     hasQuality: true,
+//                     min_hearts: 10
 //                 }
 //             ],
 //         },

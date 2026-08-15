@@ -234,6 +234,52 @@
 			x: -9.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			id: "1F39E42CB1BD0007"
+			tasks: [{
+				id: "57F5A484404B6A91"
+				item: "sunlit_cobblemon:atmospheric_magnet"
+				type: "item"
+			}]
+			title: "The Alien"
+			x: -16.0d
+			y: -8.5d
+		}
+		{
+			icon: "sunlit_cobblemon:red_orb"
+			id: "665057111E4EAA4D"
+			tasks: [
+				{
+					id: "4DD1371B24507DA3"
+					item: "sunlit_cobblemon:biodome_altar"
+					type: "item"
+				}
+				{
+					id: "479C563FB7890379"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sunlit_cobblemon:red_orb"
+								}
+								{
+									Count: 1b
+									id: "sunlit_cobblemon:blue_orb"
+								}
+							]
+						}
+					}
+					title: "Any Orb"
+					type: "item"
+				}
+			]
+			x: -9.75d
+			y: -0.75d
+		}
 	]
 	title: "Hunting Legends"
 }

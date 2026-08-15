@@ -236,6 +236,7 @@ global.cobblemonCooking = [
   { item: "cobblemon:slow_candy", value: 1 },
   { item: "cobblemon:numb_candy", value: 1 },
   { item: "cobblemon:brittle_candy", value: 1 },
+  { item: "sunlit_cobblemon:magikarp_taiyaki", value: 5060 },
 ];
 // Crafting Table Cooking
 [

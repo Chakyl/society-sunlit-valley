@@ -154,6 +154,13 @@ StartupEvents.registry("item", (e) => {
       food.alwaysEdible(true);
     })
     .useAnimation("drink");
+  e.create("sunlit_cobblemon:magikarp_taiyaki")
+    .texture("sunlit_cobblemon:item/magikarp_taiyaki")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(4);
+      food.effect("farm_and_charm:sweets", 600, 1, 1.0);
+    });
   [
     "moomoo_milk",
     "large_moomoo_milk",
@@ -174,7 +181,6 @@ StartupEvents.registry("item", (e) => {
       food.saturation(2);
       food.effect("farm_and_charm:grandmas_blessing", 1200, 0, 1.0);
     })
-
   e.create(`sunlit_cobblemon:aged_moomoo_cheese`)
     .texture(`sunlit_cobblemon:item/moomoo_cheese`)
     .glow(true)
@@ -216,7 +222,6 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:pecha_shell");
   e.create("sunlit_cobblemon:mew_n_dna").displayName("Mew-N DNA");
   e.create("sunlit_cobblemon:egg_of_the_king");
-
   [
     "the_art_of_battle",
     "berry_labor_and_capital",
@@ -238,15 +243,6 @@ StartupEvents.registry("item", (e) => {
     "mana",
     "prismatic"
   ]
-  newBalls.forEach((ball) => {
-    e.create(`sunlit_cobblemon:${ball}_ball_stencil`).texture(`sunlit_cobblemon:item/create_balls/${ball}_ball_stencil`)
-  });
-  newBalls.forEach((ball) => {
-    e.create(`sunlit_cobblemon:unpainted_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unpainted_${ball}_ball`)
-  });
-  newBalls.forEach((ball) => {
-    e.create(`sunlit_cobblemon:unfinished_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unfinished_${ball}_ball`)
-  });
   global.cobblemonPreserves.forEach((jar) => {
     if (jar.item.includes("sunlit_cobblemon")) {
       e.create(`sunlit_cobblemon:${jar.item.split(":")[1]}`)
@@ -273,5 +269,14 @@ StartupEvents.registry("item", (e) => {
       .texture(`cobblemon:item/type_gem/${gem.item.path}`)
       .glow(true)
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:${ball}_ball_stencil`).texture(`sunlit_cobblemon:item/create_balls/${ball}_ball_stencil`)
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:unpainted_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unpainted_${ball}_ball`)
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:unfinished_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unfinished_${ball}_ball`)
   });
 });

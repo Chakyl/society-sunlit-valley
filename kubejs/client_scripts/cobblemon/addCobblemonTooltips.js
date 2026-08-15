@@ -291,6 +291,8 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:grass_pledge', Text.translatable(`tooltip.sunlit_cobblemon.grass_pledge.description`).green());
   tooltip.add('sunlit_cobblemon:water_pledge', Text.translatable(`tooltip.sunlit_cobblemon.water_pledge.description`).aqua());
 
+  tooltip.add('sunlit_cobblemon:magikarp_taiyaki', Text.translatable(`tooltip.sunlit_cobblemon.magikarp_taiyaki.description`).darkPurple());
+
   tooltip.add('sunlit_cobblemon:blazing_calamity', Text.translatable(`tooltip.sunlit_cobblemon.blazing_calamity.description`).gray());
   tooltip.add('sunlit_cobblemon:blazing_calamity', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
 
