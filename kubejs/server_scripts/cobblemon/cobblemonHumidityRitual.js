@@ -27,10 +27,10 @@ const getRitualHumidity = (level, centerPos, radius) => {
     return { buildingBlocks: buildingBlocks, glassBlocks: glassBlocks, seaPlants: (seaPlants * 2), aquaticMobs: (aquaticMobs * 3) };
 }
 
-BlockEvents.rightClicked("minecraft:amethyst_block", (e) => {
+BlockEvents.rightClicked("sunlit_cobblemon:biodome_altar", (e) => {
     const { block, hand, player, level, item, server } = e;
     if (hand !== "MAIN_HAND") return;
-    if (item.id !== 'society:prismatic_shard') return;
+    if (item.id !== 'sunlit_cobblemon:blue_orb') return;
     if (!global.hasScope(player)) {
         player.tell(Text.translatable("sunlit_cobblemon.need_scope").red());
         return;
@@ -68,7 +68,7 @@ BlockEvents.rightClicked("minecraft:amethyst_block", (e) => {
         }
         player.tell("Something is coming...")
         server.scheduleInTicks(100, () => {
-                    summonRaidLegendary(level, server, player, item, block, "kyogre", 100)
+                    humidRitualLegendary(level, server, player, item, block, "kyogre", 100)
                 });
     }
 });

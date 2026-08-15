@@ -1281,6 +1281,19 @@ ItemEvents.tooltip((tooltip) => {
     "society:overflow_token",
     Text.translatable("item.society.overflow_token.description.warn").red()
   );
+  // Altars/Orbs
+  tooltip.add(
+    "sunlit_cobblemon:biodome_altar",
+    Text.translatable("Looks like a home for Legendary beings").gray()
+  );
+  tooltip.add(
+    "sunlit_cobblemon:blue_orb",
+    Text.translatable("Favored by Kyogre").gray()
+  );
+  tooltip.add(
+    "sunlit_cobblemon:red_orb",
+    Text.translatable("Favored by Groudon").gray()
+  );
   // Sprinklers
   const generateSprinklerTooltip = (tooltip, tier, radius) => {
     const tooltipRadius = 1 + radius * 2;

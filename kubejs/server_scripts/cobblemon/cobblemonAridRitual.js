@@ -25,10 +25,10 @@ const getRitualArid = (level, centerPos, radius) => {
     return { buildingBlocks: buildingBlocks, hotBlocks: hotBlocks, naturalBlocks: naturalBlocks };
 }
 
-BlockEvents.rightClicked("minecraft:obsidian", (e) => {
+BlockEvents.rightClicked("sunlit_cobblemon:biodome_altar", (e) => {
     const { block, hand, player, level, item, server } = e;
     if (hand !== "MAIN_HAND") return;
-    if (item.id !== 'society:prismatic_shard') return;
+    if (item.id !== 'sunlit_cobblemon:red_orb') return;
     if (!global.hasScope(player)) {
         player.tell(Text.translatable("sunlit_cobblemon.need_scope").red());
         return;
@@ -39,11 +39,11 @@ BlockEvents.rightClicked("minecraft:obsidian", (e) => {
     let ritualCanRun = true
 
 
-    if (buildingBlocks < 75 ) {
+    if (buildingBlocks < 125 ) {
       player.tell(Text.translatable("There needs to be more Structure here...").red())
       ritualCanRun = false;
     }
-    if (hotBlocks < 75 ) {
+    if (hotBlocks < 50 ) {
       player.tell(Text.translatable("There needs to be more Heat here...").red())
       ritualCanRun = false;
     }
@@ -64,7 +64,7 @@ BlockEvents.rightClicked("minecraft:obsidian", (e) => {
         }
         player.tell("Something is coming...")
         server.scheduleInTicks(100, () => {
-                    summonRaidLegendary(level, server, player, item, block, "groudon", 100)
+                    aridRitualLegendary(level, server, player, item, block, "groudon", 100)
                 });
     }
 });
