@@ -6,6 +6,69 @@
 
 //     let ranchingDef = [
 //         {
+//             pokemon: "ragingbolt",
+//             forages: [
+//                 {
+//                     item: 'cobblemon:thunder_stone',
+//                     count: 1,
+//                     chance: 0.27,
+//                     min_hearts: 4
+//                 },
+//                 {
+//                     item: 'society:thunder_totem',
+//                     count: 1,
+//                     chance: 0.01,
+//                     min_hearts: 7
+//                 },
+//                 {
+//                     item: 'cobblemon:booster_energy',
+//                     count: 1,
+//                     chance: 0.75,
+//                     min_hearts: 10
+//                 },
+//             ],
+//         },
+//         {
+//             pokemon: "tyranitar",
+//             forages: [
+//                 {
+//                     item: "cobblemon:smooth_rock",
+//                     count: 2,
+//                     chance: 0.67,
+//                     min_hearts: 1
+//                 },
+//                 {
+//                     item: 'society:pristine_sandstone_slate',
+//                     count: 1,
+//                     chance: 0.27,
+//                     min_hearts: 7
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "ironthorns",
+//             forages: [
+//                 {
+//                     item: 'cobblemon:iron_ball',
+//                     count: 2,
+//                     chance: 0.67,
+//                     min_hearts: 1
+//                 },
+//                 {
+//                     item: 'society:pristine_thunder_egg',
+//                     count: 1,
+//                     chance: 0.27,
+//                     min_hearts: 7
+//                 },
+//                 {
+//                     item: 'cobblemon:booster_energy',
+//                     count: 1,
+//                     chance: 0.75,
+//                     min_hearts: 10
+//                 },
+//             ],
+//         },
+//         {
 //             pokemon: "tyrantrum",
 //             forages: [
 //                 {
@@ -3457,6 +3520,24 @@
 //                     chance: 0.45,
 //                     min_hearts: 7,
 //                 }
+//             ],
+//         },
+//         {
+//             pokemon: "xurkitree",
+//             forages: [
+//                 {
+//                     item: 'sunlit_cobblemon:electro_wool',
+//                     count: 1,
+//                     chance: 0.6,
+//                     min_hearts: 4,
+//                     has_quality: true
+//                 },
+//                 {
+//                     item: 'cobblemon:booster_energy',
+//                     count: 1,
+//                     chance: 0.22,
+//                     min_hearts: 10
+//                 },
 //             ],
 //         },
 //         {
