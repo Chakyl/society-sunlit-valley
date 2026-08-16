@@ -54,7 +54,7 @@ global.updateLeaderboard = (block, level, server) => {
 
   const displayText = Text.translatable("block.society.coin_leaderboard.title")
   global.spawnTextDisplay(block, calcY, "leaderboard", displayText);
-  global.spawnTextDisplay(block, calcY, "leaderboard", displayText, 180);
+  // global.spawnTextDisplay(block, calcY, "leaderboard", displayText, 180);
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
     const uuid = balanceStr[0]
@@ -80,7 +80,7 @@ global.updateLeaderboard = (block, level, server) => {
     calcY -= 0.3;
     const displayText = Text.of(`§6${accountName} §7- §f● §6${global.formatPrice(balanceStr[1])}`);
     global.spawnTextDisplay(block, calcY, "leaderboard", displayText);
-    global.spawnTextDisplay(block, calcY, "leaderboard", displayText, 180);
+    // global.spawnTextDisplay(block, calcY, "leaderboard", displayText, 180);
   });
 };
 

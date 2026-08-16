@@ -3,13 +3,12 @@
 ### v4.1.3
 ^^^
 --- 
+- Added Overflow token support for shared accounts (Re-equip your bank card to update)
 - Added Pineconetown villager home set by beawitched
 - Added Deep-a-Mochi
 - Added Lemon Beignets
 - Added Suspicious Milk Tea
 - Added Ancient Builders Tool artifact
-- Added Overflow token support for shared accounts
-- Added double-sided text for coin leaderboard
 - Changed Earth Crystal trader trade from rice to cotton
 - Changed Jade trader trade from Aegis Wine to dried Lemon 
 - Increased height of coin leaderboard by 1/4th of a block to make it less smudged
