@@ -80,7 +80,7 @@ global.runTrainerPodium = (entity) => {
       } else {
         newTrainer = trainers.get(`${levelTier}`);
       }
-      // ownerPlayer.persistentData.wins = 24
+      // ownerPlayer.persistentData.wins = 20
       if (ownerPlayer.persistentData.wins == 0 || !newTrainer || newTrainer === "") {
         if (ownerPlayer.persistentData.wins > 14 && ownerPlayer.persistentData.wins % 20 === 0) {
           newTrainer = global.getLeagueBoss(Math.min(100, levelTier))

@@ -2482,6 +2482,47 @@
             ]
         },
         {
+            "pakku_id": "1TcuDgezI5i7153z",
+            "pakku_links": [
+                "KDWmpmJACN6AFIki"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cobblemon-trainers-ex"
+            },
+            "name": {
+                "curseforge": "Cobblemon Trainers EX"
+            },
+            "id": {
+                "curseforge": "1641513"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CobblemonTrainersEX-1.2.0+1.5.2-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8660/906/CobblemonTrainersEX-1.2.0+1.5.2-forge.jar",
+                    "id": "8660906",
+                    "parent_id": "1641513",
+                    "hashes": {
+                        "sha1": "e1b9f772fb8990953f1e7f283bce3b191e04bdd2",
+                        "md5": "c91ac689fe640e48f178750a0beee47d"
+                    },
+                    "required_dependencies": [
+                        "687131"
+                    ],
+                    "size": 301852,
+                    "date_published": "2026-08-16T08:57:36.373Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "COTzC0QuzklB8VpL",
             "pakku_links": [
                 "KDWmpmJACN6AFIki"
@@ -2562,49 +2603,6 @@
                     ],
                     "size": 49358,
                     "date_published": "2024-06-19T16:57:04.577Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "ySByzOHcM9JU35pJ",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki",
-                "E1izozCgXnbgewv8"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "cobblemontrainers"
-            },
-            "name": {
-                "curseforge": "CobblemonTrainers (Discontinued)"
-            },
-            "id": {
-                "curseforge": "959503"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "CobblemonTrainers-1.1.11+1.5.2-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5601/803/CobblemonTrainers-1.1.11+1.5.2-forge.jar",
-                    "id": "5601803",
-                    "parent_id": "959503",
-                    "hashes": {
-                        "sha1": "5a7309a14211f4d3c5900b405c99588d7d00fe80",
-                        "md5": "6935a24c8e582453eb886ec3b7a5ee03"
-                    },
-                    "required_dependencies": [
-                        "687131",
-                        "419699"
-                    ],
-                    "size": 218546,
-                    "date_published": "2024-08-06T14:02:28.957Z"
                 }
             ]
         },

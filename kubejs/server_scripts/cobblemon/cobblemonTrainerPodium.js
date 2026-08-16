@@ -59,7 +59,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:trainer_podium", (e) => {
     let levelAverage = global.getPartyLevel(podiumPlayer);
     if (!podiumPlayer.persistentData.wins)
       podiumPlayer.persistentData.wins = 0;
-    let upgraded = block.getProperties().get("upgraded").toLowerCase();
+    let upgraded = block.getProperties().get("upgraded").toLowerCase() == "true";
     if (upgraded) {
       player.tell(Text.translatable("sunlit_cobblemon.trainer_podium.label.elite", podiumPlayer.username).red());
     } else {

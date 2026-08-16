@@ -458,26 +458,20 @@ const trainerBuckets = new Map([
 
 const eliteModeEasy = [
   "biker_william_00ce",
-  "ace_trainer_bowie",
   "swimmerf_maria_0223",
   "swimmerm_garrett_0226",
+  "swimmerf_tisha_0231",
+  "swimmerm_finn_0225",
   "ruin_mamoac_halotosis",
   "bird_keeper_sebastian_012c",
+  "bird_keeper_glizzy",
   "fisherman_tommy_0227",
   "tuber_alexis_022f",
   "tuber_amira_0207",
   "aroma_lady_nikki_020b",
   "dragon_tamer_ramiro_0134",
-  "ace_trainer_maclachlan",
-  "ace_trainer_zephira",
   "beauty_nadine",
-  "picnicker_donna",
-  "ace_trainer_zephira",
   "fisher_packard",
-  "picnicker_claire_022c",
-  "swimmerf_tisha_0231",
-  "swimmerm_finn_0225",
-  "ace_trainer_symes_0071",
   "ruin_mamoac_reslo",
   "bug_catcher_tainy",
   "psychic_margaret",
@@ -485,38 +479,43 @@ const eliteModeEasy = [
   "super_nerd_leroy",
   "camper_justin_01dd",
   "super_nerd_miguel_00aa",
+  "picnicker_donna",
+  "picnicker_claire_022c",
+  "picnicker_alma_01d2",
   "picnicker_caitlin_009b",
+  "punk_girl_providence3",
+  "channeler_rachel_0093",
+  "ace_trainer_bowie",
+  "ace_trainer_maclachlan",
+  "ace_trainer_zephira",
+  "ace_trainer_symes_0071",
   "ace_trainer_andrew_0002",
   "ace_trainer_wilton_0133",
-  "punk_girl_providence3",
-  "gym_crusher_alexander",
-  "gym_crusher_howitzer",
-  "channeler_rachel_0093",
-  "gym_crusher_foxxy",
   "ace_trainer_janny_00af",
   "ace_trainer_barry_0058",
+  "ace_trainer_nick_0055",
   "ace_swimmer_torrent",
   "cue_ball_camron_00fb",
-  "picnicker_alma_01d2",
-  "ace_trainer_nick_0055",
   "professor_oak_00d2",
+  "gym_crusher_alexander",
+  "gym_crusher_howitzer",
+  "gym_crusher_foxxy",
   "gym_crusher_salad",
-  "gym_rat_king",
-  "bird_keeper_glizzy"
+  "gym_rat_king"
 ]
 const eliteModeHard = [
-  "gym_crusher_cruelty",
   "reggie",
   "professor_oak_00c8",
-  "gym_crusher_dennis",
   "raging_red",
   "raging_blue",
   "punk_girl_providence4",
-  "gym_crusher_twine",
-  "gym_obliterator_blaze",
   "bird_legend_arctic",
   "bird_legend_zap",
   "bird_legend_melt",
+  "gym_crusher_cruelty",
+  "gym_crusher_dennis",
+  "gym_crusher_twine",
+  "gym_obliterator_blaze",
   "gym_obliterator_warp",
   "gym_obliterator_cofh",
   "gym_obliterator_artemis",
@@ -538,11 +537,12 @@ const eliteModeHard = [
 ]
 global.getRandomTrainer = (levelBucket, upgraded) => {
   let trainerBucket = trainerBuckets.get(levelBucket);
+  console.log("rolling")
   if (upgraded) {
     if (Math.random() < 0.75) {
-      trainerBucket = eliteModeHard;
+      trainerBucket = eliteModeEasy;
     } else {
-      trainerBucket = eliteModeEasy
+      trainerBucket = eliteModeHard
     }
   }
   console.log(trainerBucket)
@@ -557,7 +557,7 @@ const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "ka
 const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
 
 global.getLeagueBoss = (levelBucket) => {
-  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 2);
+  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 1);
   if (levelBucket == 105) bossNumber = 8;
   if (bossNumber >= 9) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}${bossNumber}`;
   return `league_${leagueBosses[rnd(0, leagueBosses.length - 1)]}${bossNumber}`;

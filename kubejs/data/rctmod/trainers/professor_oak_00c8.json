@@ -1,0 +1,196 @@
+{
+  "displayName": "Professor Oak",
+  "aiLevel": 9,
+  "team": [
+    {
+      "species": "cobblemon:tauros",
+      "gender": "MALE",
+      "level": 99,
+      "nature": "cobblemon:jolly",
+      "ability": "sheerforce",
+      "moveset": [
+        "headcharge",
+        "closecombat",
+        "throatchop",
+        "ironhead"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb"
+    },
+    {
+      "species": "cobblemon:exeggutor",
+      "gender": "MALE",
+      "level": 97,
+      "nature": "cobblemon:modest",
+      "ability": "harvest",
+      "moveset": [
+        "chloroblast",
+        "sleeppowder",
+        "psyshock",
+        "earthpower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry"
+    },
+    {
+      "species": "cobblemon:charizard",
+      "gender": "FEMALE",
+      "level": 99,
+      "nature": "cobblemon:jolly",
+      "ability": "blaze",
+      "moveset": [
+        "dragondance",
+        "flareblitz",
+        "dragonclaw",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:charzarditex"
+    },
+    {
+      "species": "cobblemon:gyarados",
+      "gender": "MALE",
+      "level": 98,
+      "nature": "cobblemon:jolly",
+      "ability": "moxie",
+      "moveset": [
+        "dragondance",
+        "waterfall",
+        "earthquake",
+        "powerwhip"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:water_gem"
+    },
+    {
+      "species": "cobblemon:mew",
+      "gender": "GENDERLESS",
+      "level": 99,
+      "nature": "cobblemon:timid",
+      "ability": "synchronize",
+      "moveset": [
+        "nastyplot",
+        "psyshock",
+        "aurasphere",
+        "darkpulse"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 252,
+        "special_defence": 4,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:fighting_gem"
+    },
+    {
+      "species": "cobblemon:jolteon",
+      "gender": "FEMALE",
+      "level": 97,
+      "nature": "cobblemon:timid",
+      "ability": "voltabsorb",
+      "moveset": [
+        "lastresort",
+        "thunderbolt",
+        "shadowball",
+        "hiddenpower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 30,
+        "defence": 30,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 252,
+        "special_defence": 4,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:eevium_z"
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}
