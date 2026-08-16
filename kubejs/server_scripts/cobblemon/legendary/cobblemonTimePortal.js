@@ -1,4 +1,5 @@
 console.info("[SOCIETY-S-COBBLEMON] cobblemonTimePortal.js loaded");
+
 const summonParadoxPokemon = (level, server, player, item, block, legendaryToSummon, raidLevel, consumeItem) => {
     const { x, y, z } = block;
     let delay = 2;
@@ -74,7 +75,7 @@ let futureParadoxPool = [
 BlockEvents.rightClicked(["minecraft:reinforced_deepslate", "sunlit_cobblemon:time_frame"], (e) => {
     const { block, hand, player, level, item, server } = e;
     if (hand !== "MAIN_HAND") return;
-    if (item.id !== 'sunlit_cobblemon:moongeist_crystal') return;
+    if (item.id !== 'cobblemon:booster_energy') return;
     if (!global.hasScope(player)) {
         player.tell(Text.translatable("sunlit_cobblemon.need_scope").red());
         return;
