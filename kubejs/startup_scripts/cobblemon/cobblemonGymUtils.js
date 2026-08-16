@@ -542,7 +542,7 @@ global.getRandomTrainer = (levelBucket, upgraded) => {
     if (Math.random() < 0.75) {
       trainerBucket = eliteModeEasy;
     } else {
-      trainerBucket = eliteModeHard
+      trainerBucket = eliteModeHard;
     }
   }
   console.log(trainerBucket)
@@ -551,15 +551,14 @@ global.getRandomTrainer = (levelBucket, upgraded) => {
   return trainerBucket[rnd(0, trainerBucket.length - 1)];
 };
 
-global.getPlayerPodiumLevelTier = ( partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5) - 5);
+global.getPlayerPodiumLevelTier = (partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5) - 5);
 
 const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma"];
 const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
 
-global.getLeagueBoss = (levelBucket) => {
-  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 1);
-  if (levelBucket == 105) bossNumber = 8;
-  if (bossNumber >= 9) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}${bossNumber}`;
+global.getLeagueBoss = (levelBucket, upgraded) => {
+  let bossNumber = Math.min(8, Math.max(1, Math.floor(levelBucket / 10) - 1));
+  if (upgraded) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}9`;
   return `league_${leagueBosses[rnd(0, leagueBosses.length - 1)]}${bossNumber}`;
 };
 
@@ -583,14 +582,14 @@ global.getTypeRewards = (player, pos, type) => {
     reward.item = item;
     reward.spawn();
   });
-    if (player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
-      reward = player.level.createEntity("minecraft:item");
-      reward.x = pos.x + 0.5;
-      reward.y = pos.y + 0.4;
-      reward.z = pos.z + 0.5;
-      reward.item = "society:animal_cracker";
-      reward.spawn();
-    }
+  if (player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = "society:animal_cracker";
+    reward.spawn();
+  }
 };
 
 global.getGymBadgeType = (player) => {

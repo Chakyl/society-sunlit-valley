@@ -83,7 +83,7 @@ global.runTrainerPodium = (entity) => {
       // ownerPlayer.persistentData.wins = 20
       if (ownerPlayer.persistentData.wins == 0 || !newTrainer || newTrainer === "") {
         if (ownerPlayer.persistentData.wins > 14 && ownerPlayer.persistentData.wins % 20 === 0) {
-          newTrainer = global.getLeagueBoss(Math.min(100, levelTier))
+          newTrainer = global.getLeagueBoss(Math.min(95, levelTier), upgraded)
         } else {
           newTrainer = global.getRandomTrainer(Math.min(95, levelTier), upgraded);
         }
@@ -118,7 +118,6 @@ global.runTrainerPodium = (entity) => {
       freshTrainer.setNbt(trainerNBT);
       freshTrainer.persistentData.levelTier = levelTier
       freshTrainer.persistentData.gymLeader = owner
-      freshTrainer.persistentData.eliteMode = upgraded;
       let badge = global.getGymBadgeType(ownerPlayer);
       if (badge !== "none") {
         freshTrainer.persistentData.badgeType = badge;

@@ -128,7 +128,7 @@ ItemEvents.entityInteracted((e) => {
     );
     e.cancel();
     return;
-  } else if (upgraded && !target.persistentData.eliteMode) {
+  } else if (upgraded && target.persistentData.levelTier !== "elite") {
     global.removeNearbyTrainers(level, block, true);
     server.runCommandSilent(
       global.getEmbersTextAPICommand(

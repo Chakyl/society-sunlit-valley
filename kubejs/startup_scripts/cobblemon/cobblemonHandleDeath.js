@@ -41,7 +41,7 @@ global.handleCobblemonDefeat = (e) => {
         reward *= 2;
         global.getTypeRewards(winningPlayer, losingPlayer.getOnPos(), badge);
       }
-      if (losingPlayer.persistentData.eliteMode) {
+      if (losingPlayer.persistentData.levelTier == "elite") {
         reward *= 2;
         if (wins % 20 == 0) {
           let reward = winningPlayer.level.createEntity("minecraft:item");

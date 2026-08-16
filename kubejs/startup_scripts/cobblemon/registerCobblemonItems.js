@@ -213,7 +213,6 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:blooming_ring");
   e.create("sunlit_cobblemon:cornucopia_of_greed");
   e.create("sunlit_cobblemon:moongeist_crystal");
-  e.create("sunlit_cobblemon:soul_dew");
   e.create("sunlit_cobblemon:blue_orb");
   e.create("sunlit_cobblemon:red_orb");
   e.create("sunlit_cobblemon:gracidea_flower");
@@ -257,6 +256,7 @@ StartupEvents.registry("item", (e) => {
   });
   global.cobblemonDehydrated.forEach((item) => {
     e.create(item.item)
+      .tag("society:dehydrated")
       .food((food) => {
         food.hunger(9);
         food.saturation(0.5);
@@ -267,6 +267,7 @@ StartupEvents.registry("item", (e) => {
   global.cobbleTypeGems.forEach((gem) => {
     e.create(`sunlit_cobblemon:pristine_${gem.item.path}`)
       .texture(`cobblemon:item/type_gem/${gem.item.path}`)
+      .tag("society:pristine_mineral")
       .glow(true)
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });

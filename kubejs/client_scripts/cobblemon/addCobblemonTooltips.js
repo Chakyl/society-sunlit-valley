@@ -324,8 +324,9 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:meteor_fragment', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
   tooltip.add('sunlit_cobblemon:meteor_chunk', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_chunk`).gray());
   tooltip.add('sunlit_cobblemon:meteor_chunk', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
-  tooltip.add('sunlit_cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.soul_dew.description`).gray());
-  tooltip.add('sunlit_cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fossil`).gold());
+  tooltip.add('cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.soul_dew.description`).gray());
+  tooltip.add('cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fossil`).gold());
+  tooltip.add('cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held_item`).gold());
   tooltip.add('sunlit_cobblemon:elite_stone', Text.translatable(`tooltip.sunlit_cobblemon.elite_stone.description`).gray());
   tooltip.add('sunlit_cobblemon:elite_stone', Text.translatable(`tooltip.sunlit_cobblemon.elite_stone.legal`).red());
 
@@ -366,7 +367,8 @@ ItemEvents.tooltip((tooltip) => {
     "black_glasses", "charcoal_stick", "dragon_fang", "hard_stone", "magnet", "metal_coat", "miracle_seed",
     "mystic_water", "never_melt_ice", "poison_barb", "sharp_beak", "silk_scarf", "silver_powder", "soft_sand",
     "spell_tag", "fairy_feather", "twisted_spoon", "power_anklet", "power_band", "power_belt", "power_bracer",
-    "power_lens", "power_weight", 'lagging_tail', 'luminous_moss', 'grip_claw'
+    "power_lens", "power_weight", 'lagging_tail', 'luminous_moss', 'grip_claw', 'electric_seed', 'psychic_seed', 
+    'grassy_seed', 'misty_seed', 'clear_amulet'
   ].forEach((item) => {
     // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held_item`).gold());

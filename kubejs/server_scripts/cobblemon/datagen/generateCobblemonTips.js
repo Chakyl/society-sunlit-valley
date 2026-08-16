@@ -20,6 +20,7 @@ if (true) {
         { title: "magikarp_taiyaki", content: "Nobody has figured out how Magikarp makes its famous Taiyaki." },
         { title: "trainer_podium_average", content: "The trainers that come to your gym are based on your team's average level." },
         { title: "trainer_podium_too_high", content: "Having an overleveled Pokémon compared to your team makes gym trainers harder." },
+        { title: "ranching_drops", content: "Ranching Stations can be used to farm a Pokémon's drops using Magic Shears or Fairy Types." },
     ].forEach((tip) => {
         translationKeys[`sunlit_cobblemon_tips.tip.${tip.title}`] = tip.content;
         JsonIO.write(`kubejs/assets/sunlit_cobblemon/tips/${tip.title}.json`, {

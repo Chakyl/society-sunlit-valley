@@ -47,6 +47,12 @@ ServerEvents.recipes((e) => {
       item: 'cobblemon:vivichoke_dip'
     },
   });
+  e.shaped('cobblemon:booster_energy', ["stb", "tet", "bts"], {
+    b: "society:broken_clock",
+    t: "cobblemon:timer_ball",
+    s: "cobblemon_farmers:spectral_battery",
+    e: "sunlit_cobblemon:endless_battery"
+  })
   e.shaped('sunlit_cobblemon:egg_of_the_king', ["odc", "dgd", "sdj"], {
     d: "sunlit_cobblemon:mew_n_dna",
     o: 'cobblemon:claw_fossil',
