@@ -4,7 +4,7 @@ const getAltarState = (name, type) => {
   const path = `sunlit_cobblemon:block/kubejs/biodome_altar${name}`;
   return [
     {
-      when: { type: type},
+      when: { type: type },
       apply: { model: path, y: 0, uvlock: false },
     }
   ];
@@ -13,6 +13,8 @@ StartupEvents.registry("block", (e) => {
   e.create("sunlit_cobblemon:biodome_altar", "cardinal")
     .property(integerProperty.create("type", 0, 2))
     .defaultCutout()
+    .box(0, 0, 0, 16, 12, 16)
+    .soundType("stone")
     .item((item) => {
       item.tooltip(Text.translatable("block.sunlit_cobblemon.biodome_altar.description").gray());
       item.modelJson({

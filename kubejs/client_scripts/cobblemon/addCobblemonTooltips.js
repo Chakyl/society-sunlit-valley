@@ -302,6 +302,11 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:moongeist_crystal', Text.translatable(`tooltip.sunlit_cobblemon.moongeist_crystal.description`).gray());
   tooltip.add('sunlit_cobblemon:moongeist_crystal', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
 
+  tooltip.add('sunlit_cobblemon:red_orb', Text.translatable(`tooltip.sunlit_cobblemon.red_orb.description`).gray());
+  tooltip.add('sunlit_cobblemon:red_orb', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:blue_orb', Text.translatable(`tooltip.sunlit_cobblemon.blue_orb.description`).gray());
+  tooltip.add('sunlit_cobblemon:blue_orb', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+
   tooltip.add('sunlit_cobblemon:tabula_rasa', Text.translatable(`tooltip.sunlit_cobblemon.tabula_rasa.description`).gray());
   tooltip.add('sunlit_cobblemon:tabula_rasa', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   tooltip.add('sunlit_cobblemon:ominous_black_stake', Text.translatable(`tooltip.sunlit_cobblemon.ominous_black_stake.description`).gray());
@@ -313,8 +318,12 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.gracidea_flower`).gray());
   tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
+  tooltip.add('sunlit_cobblemon:moondust', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.moondust`).gray());
+  tooltip.add('sunlit_cobblemon:moondust', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
   tooltip.add('sunlit_cobblemon:meteor_fragment', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_fragment`).gray());
   tooltip.add('sunlit_cobblemon:meteor_fragment', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
+  tooltip.add('sunlit_cobblemon:meteor_chunk', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_chunk`).gray());
+  tooltip.add('sunlit_cobblemon:meteor_chunk', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
   tooltip.add('sunlit_cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.soul_dew.description`).gray());
   tooltip.add('sunlit_cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fossil`).gold());
   tooltip.add('sunlit_cobblemon:elite_stone', Text.translatable(`tooltip.sunlit_cobblemon.elite_stone.description`).gray());

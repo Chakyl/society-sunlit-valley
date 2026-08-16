@@ -46,6 +46,15 @@
   "sunlit_cobblemon.regi.no_space": "It was the right combination, but there doesn't seem to be enough open area...",
   "sunlit_cobblemon.legendary_bell.too_low": "Placing the bell this low won't let it ring out...",
    
+  "sunlit_cobblemon.biodome_altar.success": "Something is coming...",
+  "sunlit_cobblemon.biodome_altar.red.building": "There needs to be more Structure here...",
+  "sunlit_cobblemon.biodome_altar.red.heat": "There needs to be more Heat here...",
+  "sunlit_cobblemon.biodome_altar.red.nature": "There needs to be more Natural Blocks here...",
+  "sunlit_cobblemon.biodome_altar.blue.building": "There needs to be more Structure here...",
+  "sunlit_cobblemon.biodome_altar.blue.nature": "There needs to be more Nature here...",
+  "sunlit_cobblemon.biodome_altar.blue.glass": "There needs to be more Glass here...",
+  "sunlit_cobblemon.biodome_altar.blue.wildlife": "There needs to be more Wildlife here...",
+  
   "tooltip.sunlit_cobblemon.bag_item_limit": "Gym leaders can only use %s bag items per battle!",
   "tooltip.sunlit_cobblemon.nearby_shiny": "Seems like there's a shiny %s nearby!",
   "tooltip.always.society.battery.0": "Used by an <ltcolor>c=ceb620;c=fff460;w=10;p=2;Electric</ltcolor> type Pokémon in an <ltcolor>c=EE1515;c=FFFFFF;w=5;p=2;Energy Pylon</ltcolor>",
@@ -61,6 +70,7 @@
   "tooltip.cobblemon.cell_battery.0": "Bonus Speed: <ltcolor>c=55FF55;+1.75x</ltcolor>",
   "tooltip.cobblemon.cell_battery.1": "Consume Chance: <ltcolor>c=EE1515;15%%</ltcolor>",
   "tooltip.always.sunlit_cobblemon.viral_battery.0": "Used by an <ltcolor>c=ceb620;c=fff460;w=10;p=2;Electric</ltcolor> type Pokémon in an <ltcolor>c=EE1515;c=FFFFFF;w=5;p=2;Energy Pylon</ltcolor>",
+  "tooltip.always.sunlit_cobblemon.viral_battery.1": "Evolves Deoxys into Speed form",
   "tooltip.sunlit_cobblemon.viral_battery.0": "Bonus Speed: <ltcolor>c=55FF55;+1.8x</ltcolor>",
   "tooltip.sunlit_cobblemon.viral_battery.1": "Consume Chance: <ltcolor>c=EE1515;5%%</ltcolor>",
 
@@ -92,7 +102,7 @@
   "block.sunlit_cobblemon.tidal_bell.description": "Has a chance to attract a Lugia flying overhead at 6am daily.",
   "block.sunlit_cobblemon.bell.height": "Must be placed high in the sky, perhaps atop a tower...",
   "block.sunlit_cobblemon.bear_scroll.description": "The mark of a true fighter. Kubfu has a chance to challenge you at 6am daily.",
-  
+  "block.sunlit_cobblemon.biodome_altar.description": "There is an orb-shaped insert in the middle of the altar.",
   "block.sunlit_cobblemon.poke_loot_ball": "Poké Loot Ball",
   "tooltip.unimplemented_items.repel.description": "Prevents Pokémon from spawning near it, even if there's Silph Scope users nearby",
 
@@ -146,6 +156,8 @@
   "tooltip.sunlit_cobblemon.elite_stone.legal": "Legendary and Mythical Pokémon are legal in Elite battles.",
   "tooltip.sunlit_cobblemon.ominous_black_stake.description": "A mysterious shrine to destruction...",
   "tooltip.sunlit_cobblemon.moongeist_crystal.description": "Used in a Moon Ritual to summon Lunala",
+  "tooltip.sunlit_cobblemon.red_orb.description": "Favored by Kyogre",
+  "tooltip.sunlit_cobblemon.blue_orb.description": "Favored by Groudon",
   "tooltip.sunlit_cobblemon.fire_pledge.description": "Proof of your loyalty to a Fire type starter",
   "tooltip.sunlit_cobblemon.grass_pledge.description": "Proof of your loyalty to a Grass type starter",
   "tooltip.sunlit_cobblemon.water_pledge.description": "Proof of your loyalty to a Water type starter",
@@ -310,7 +322,9 @@
   "tooltip.sunlit_cobblemon.cobblemon.evo_item.sweet_apple": "Evolves Applin into Appletun",
   "tooltip.sunlit_cobblemon.cobblemon.evo_item.syrupy_apple": "Evolves Applin into Dipplin",
   "tooltip.sunlit_cobblemon.cobblemon.evo_item.tart_apple": "Evolves Applin into Flapple",
-  "tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_fragment": "Evolves Deoxys into other forms",
+  "tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_fragment": "Evolves Deoxys into attack form",
+  "tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_chunk": "Evolves Deoxys into defense form",
+  "tooltip.sunlit_cobblemon.cobblemon.evo_item.moondust": "Evolves Deoxys into normal form",
   "tooltip.sunlit_cobblemon.cobblemon.evo_item.gracidea_flower": "Evolves Shaymin into its Sky form",
   "tooltip.sunlit_cobblemon.cobblemon.evo_item.unremarkable_teacup": "Evolves Counterfeit Form Poltchageist into Unremarkable Form Sinistcha",
   "tooltip.sunlit_cobblemon.cobblemon.evo_item.upgrade": "Evolves Porygon into Porygon2",
