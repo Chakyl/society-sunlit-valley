@@ -50,6 +50,7 @@ global.updateLeaderboard = (block, level, server) => {
   if (global.susFunctionLogging)
     console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
   global.clearOldTextDisplay(block, level, "leaderboard");
+  if (!global.bankerNames) global.bankerNames = {};
 
   const displayText = Text.translatable("block.society.coin_leaderboard.title")
   global.spawnTextDisplay(block, calcY, "leaderboard", displayText);
@@ -63,11 +64,15 @@ global.updateLeaderboard = (block, level, server) => {
     if (bankAccount) {
       //accountName = bankAccount.label
       //if (accountName == "Blaze Banker") { // default name
-        accountName = "";
-        for (const [uuid, name] of Object.entries(playerList)) {
-          if (bankAccount.isAuthorized(uuid)) {
-            accountName = `${name}'s Team`;
-            break;
+        accountName = global.bankerNames[uuid];
+        if (!accountName) {
+          accountName = "";
+          for (const [playerUUID, name] of Object.entries(playerList)) {
+            if (bankAccount.isAuthorized(playerUUID)) {
+              accountName = `${name}'s Team`;
+              global.bankerNames[uuid] = accountName;
+              break;
+            };
           };
         };
       //}
