@@ -2,7 +2,7 @@ console.info("[SOCIETY] coinLeaderboard.js loaded");
 
 global.updateLeaderboard = (block, level, server) => {
   let calcY = block.y + 3.25;
-  let leaderboardMap = global.leaderboard;
+  let leaderboardMap = global.leaderboard || [];
   if (!leaderboardMap) return;
   if (global.susFunctionLogging)
     console.log("[SOCIETY-SUSFN] coinLeaderboard.js");

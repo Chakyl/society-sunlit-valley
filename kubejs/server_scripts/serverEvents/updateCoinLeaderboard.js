@@ -53,7 +53,7 @@ const getTop10Coins = (server) => {
   return top10;
 };
 
-let tick = 0;
+let tick = 600;
 ServerEvents.tick(event => {
   tick++
   if (tick < 600) return;
