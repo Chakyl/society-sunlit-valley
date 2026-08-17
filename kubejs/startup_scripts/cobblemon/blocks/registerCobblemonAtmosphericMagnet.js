@@ -45,18 +45,18 @@ global.attractorTick = (attractor) => {
         // if (rnd != 0) { return } // 1 in 1000 every second
 
         /** @type {Internal.Entity} */
-        let meteorEntity = attractor.level 
+        let meteorEntity = attractor.level
             .createEntity("sunlit_cobblemon:meteor_entity")
 
         let meteorSpawnPos = Object.assign(
             { y: attractor.blockPos.y + 300 },
             rndPerimeter(attractor.blockPos.x, attractor.blockPos.z, 128)
         )
-        meteorEntity.setPosition(meteorSpawnPos.x, meteorSpawnPos.y, meteorSpawnPos.z) 
+        meteorEntity.setPosition(meteorSpawnPos.x, meteorSpawnPos.y, meteorSpawnPos.z)
 
         let attractorVec = new Vec3d(attractor.blockPos.x + 0.5, attractor.blockPos.y + 0.5, attractor.blockPos.z + 0.5)
-        let delta = getMotionVec(meteorEntity.getPos(), attractorVec).scale(2) 
-        meteorEntity.setDeltaMovement(delta) 
+        let delta = getMotionVec(meteorEntity.getPos(), attractorVec).scale(2)
+        meteorEntity.setDeltaMovement(delta)
         meteorEntity.spawn();
 
         attractor.level.getBlock(attractor.blockPos).set('sunlit_cobblemon:atmospheric_magnet', { meteor_spawned: true })
@@ -73,9 +73,7 @@ StartupEvents.registry("block", (e) => {
         .defaultCutout()
         .soundType("copper")
         .item(item => {
-            item.tooltip(Text.gray("Allures shimmering clusters from the great stars above"))
-            item.tooltip(Text.gray("Leave the attractor out, exposed to the night sky"))
-            item.tooltip(Text.gray("Keep it clear of any obstructions"))
+            item.tooltip(Text.translatable("block.sunlit_cobblemon.atmospheric_magnet.description").gray());
         })
         .model("sunlit_cobblemon:block/kubejs/atmospheric_magnet")
         .property(global.meteor_spawned_prop)

@@ -10,8 +10,21 @@
 	quests: [
 		{
 			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"The &6Gem Box&r can either be crafted or found deep in the Skull Cavern. It looks like the strange symbol on the &6Tabula Rasa&r."
+				""
+				"It seems to have 7 different ingravings of gems on it. "
+				""
+				"Perhaps you need to use those gems in a specific order, and use the Tabula Rasa on it..."
+			]
 			icon: "sunlit_cobblemon:gem_box"
 			id: "399D1B26D9C41182"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A425C9AD35BB9F1"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "3E5D993D70AF2C06"
@@ -41,10 +54,21 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["0842E7FE4BF590F2"]
+			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"At the bottom of the Skull Cavern you may come across &6Ominous Black Stakes&r."
+				""
+				"Legend says that these are an omen to the ruinous &6Chien-Pao&r and &6Chi-Yu&r..."
+			]
 			icon: "sunlit_cobblemon:ominous_black_stake"
 			id: "25346B0BDB75F3FF"
 			min_required_tasks: 2
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "106C4D41F1F3CD3D"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "5DE1BEAAF93A008E"
@@ -63,8 +87,8 @@
 				}
 			]
 			title: "The Calamities"
-			x: -13.5d
-			y: -8.5d
+			x: -12.5d
+			y: -5.0d
 		}
 		{
 			description: [""]
@@ -85,24 +109,43 @@
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
 			id: "622F93DF6D7949A8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FE24D28957BB6C0"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "56F709064F2499CE"
 				item: "sunlit_cobblemon:rainbow_steam"
-				title: "The Genies"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -2.25d
+			title: "The Genies"
+			x: -9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"The &6Lake Spirits&r are attracted to the stench of a Mystica Branch mixed with the power of the swamp."
+				""
+				"When fishing with a Poké-Bobber of any tier, you might fish one up!"
+				""
+				"Legends say &6Cresselia&r may appear if you have all three in your party."
+			]
 			id: "08AE03954E4A57A8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E09C3D9225F45FB"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "2DA5EE57892118A4"
 				item: "sunlit_cobblemon:swampy_mystica_branch"
-				title: "The Lake Spirits"
 				type: "item"
 			}]
+			title: "The Lake Spirits"
 			x: -13.5d
 			y: -1.5d
 		}
@@ -111,33 +154,63 @@
 				"25677844C218103A"
 				"08AE03954E4A57A8"
 			]
+			description: [
+				"A &6Swampy Mystica Branch&r can be mushed with Mossberries to create a very attractive bait for certain legendary birds..."
+				""
+				"Place it into your charm slot and one might periodically be attracted to its scent."
+			]
 			id: "0DF0041E26E7736A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4101D902A878FF37"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "1A059CA4BDD30CD1"
 				item: "sunlit_cobblemon:mystica_nectar"
-				title: "The Strange Birds"
 				type: "item"
 			}]
+			title: "The Strange Birds"
 			x: -13.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
 			id: "06B7B1187630B88D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49BB432E260E014F"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "3E182403DFD0A490"
 				item: "sunlit_cobblemon:moongeist_crystal"
 				type: "item"
 			}]
 			title: "The Sun and the Moon"
-			x: -15.0d
-			y: -1.5d
+			x: -9.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"Two Legendary Pokémon rule the skies above you silently."
+				""
+				"The power of the Mystic Willow may be able to enhance special bells. "
+				""
+				"Every morning the power of the bells will ring violently if &6Lugia&r or &6Ho-Oh&r is nearby, provided they are placed on a tall tower."
+			]
 			icon: "sunlit_cobblemon:clear_bell"
 			id: "5C26E77F92F0EDFE"
 			min_required_tasks: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "646715B5D0FD64C3"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "23DD3D07057459E4"
@@ -155,31 +228,62 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: ["&6Kubfu&r loves a fighter! If you can manage to have a fighting type pokemon bend the most durable metal possible into a &6Bear Scroll&r, it might just show up at your doorstep!"]
 			id: "192A29795AF8F732"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B9BABAE765F444E"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "02D8F8DC48B4E28E"
 				item: "sunlit_cobblemon:bear_scroll"
 				type: "item"
 			}]
 			title: "The Evil Bear"
-			x: -10.0d
+			x: -5.0d
 			y: -6.0d
 		}
 		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: [
+				"Ribbits love picking Pecha Berries, and they do a much better job of it than you!"
+				""
+				"Sometimes you may find the mythical shell of &6Pecharunt&r waiting for you in the inventory of a &6Ribbit Hut&r!"
+			]
 			id: "22E3DCA00B0F64ED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F84A3170DE53E34"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "022C7128DEFC59A9"
 				item: "sunlit_cobblemon:pecha_shell"
 				type: "item"
 			}]
 			title: "The Shrivelled Berry"
-			x: -11.0d
-			y: -5.0d
+			x: -6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["192A29795AF8F732"]
+			description: [
+				"The &6Trader&r has rare scrolls for barter that can be used to train a &6Kubfu&r into an &6Urshifu&r!"
+				""
+				"Not sure who needs those energy drinks, but best not to ask the Trader any questions about it..."
+			]
 			icon: "cobblemon:scroll_of_waters"
 			id: "1A5DCE8B7402D28C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49BCFB65BB9C113E"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "76A3A13703FB5481"
@@ -193,19 +297,31 @@
 				}
 			]
 			title: "Path of Destruction"
-			x: -9.0d
+			x: -3.5d
 			y: -6.0d
 		}
 		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: [
+				"This peculiar flower is imbued with the mystical power of an Overgrowth Seed. "
+				""
+				"A biome lush with flowers will surely be home to a &6Shaymin&r. Using the &6Gracidea Flower&r may allow it to come out of hiding!"
+			]
 			id: "332E248CD069CAC5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2CA0B566DF6272A0"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "7F761E196D41D21C"
 				item: "sunlit_cobblemon:gracidea_flower"
 				type: "item"
 			}]
 			title: "The Graceful Flower"
-			x: -10.5d
-			y: -7.0d
+			x: -6.5d
+			y: -7.5d
 		}
 		{
 			id: "3C382FAA607E7F67"
@@ -215,8 +331,8 @@
 				type: "item"
 			}]
 			title: "The Jets"
-			x: -11.5d
-			y: -3.5d
+			x: -7.0d
+			y: -2.5d
 		}
 		{
 			id: "29A7D5857A8970BD"
@@ -225,8 +341,8 @@
 				item: "sunlit_cobblemon:mew_n_dna"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -3.0d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["29A7D5857A8970BD"]
@@ -236,12 +352,25 @@
 				item: "sunlit_cobblemon:egg_of_the_king"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -3.0d
+			x: -6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"One has to wonder if Pokémon are able to exist outside of our planet."
+				""
+				"An expensive construct called an &6Atmospheric Magnet&r is capable of pulling in meteors. "
+				""
+				"Legends say &6Deoxys&r can arise from these meteors..."
+			]
 			id: "1F39E42CB1BD0007"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DC5CEFD2C68AEBF"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "57F5A484404B6A91"
 				item: "sunlit_cobblemon:atmospheric_magnet"
@@ -254,6 +383,12 @@
 		{
 			icon: "sunlit_cobblemon:red_orb"
 			id: "665057111E4EAA4D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DAAA5EB05EAE6B1"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "4DD1371B24507DA3"
@@ -283,8 +418,26 @@
 				}
 			]
 			title: "The Land and the Sea"
-			x: -9.75d
-			y: -0.75d
+			x: -10.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"Some Legendary and Mythical Pokémon require more than just Mastery or expensive ingredients..."
+				""
+				"Those in this category can be found from various late game progression points, such as completing the &6Community Center&r or &6Abandoned Farm&r. "
+			]
+			disable_toast: true
+			icon: "society:ribbit_hut"
+			id: "277D9FE3ED371ED0"
+			size: 1.5d
+			tasks: [{
+				id: "008CE2BF205DA75D"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -6.0d
 		}
 	]
 	title: "Hunting Legends"
