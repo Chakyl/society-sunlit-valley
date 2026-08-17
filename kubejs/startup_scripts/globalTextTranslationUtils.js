@@ -8,7 +8,8 @@ global.getTranslatedEntityName = (entity_id, fallback) => {
 }
 
 global.getTranslatedItemName = (item_id, fallback) => {
-    return global.translatableWithFallback(`item.${item_id.namespace}.${item_id.path}`, fallback)
+    const prefix = Item.of(item_id).block ? "block" : "item";
+    return global.translatableWithFallback(`${prefix}.${item_id.namespace}.${item_id.path}`, fallback)
 }
 
 global.getTranslatedTextWithColorCode = (colorCode, key) => {
