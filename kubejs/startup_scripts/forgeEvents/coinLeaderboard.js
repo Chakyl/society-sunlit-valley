@@ -5,12 +5,19 @@ ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", e => 
     if (slot !== 'card') return;
     let bankAccountId = global.getCardCurio(entity);
     const server = entity.getServer();
+    const uuid = String(entity.uuid);
     let cardsList = server.persistentData.cardsList ?? {};
     let playerList = server.persistentData.playerList;
-    if (bankAccountId == null | playerList[entity.uuid]) {
-        cardsList[entity.uuid] = null;
+    let prevAccId = cardsList[uuid];
+    if (!playerList[prevAccId] && prevAccId && cardsList[prevAccId]) {
+        cardsList[prevAccId].filter(iUUID => iUUID !== uuid);
+    };
+    if (bankAccountId == null || playerList[bankAccountId]) {
+        delete cardsList[uuid];
     } else {
-        cardsList[entity.uuid] = String(bankAccountId);
+        cardsList[uuid] = String(bankAccountId);
+        cardsList[String(bankAccountId)] = cardsList[String(bankAccountId)] ?? [];
+        cardsList[String(bankAccountId)].push(uuid);
     };
     server.persistentData.cardsList = cardsList;
 });
