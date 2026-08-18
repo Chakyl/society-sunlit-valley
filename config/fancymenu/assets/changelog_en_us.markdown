@@ -3,6 +3,7 @@
 ### v4.1.3
 ^^^
 --- 
+- Added Overflow token support for shared accounts (Re-equip your bank card to update)
 - Added Pineconetown villager home set by beawitched
 - Added Deep-a-Mochi
 - Added Lemon Beignets
@@ -18,6 +19,7 @@
 - Fixed issues with the Sakura building set
 - Fixed Smallmouth Bass not being catchable at night in Autumn
 - Fixed EMI not being searchable by blocktag by downgrading version
+- Optimized coin leaderboard
 
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
