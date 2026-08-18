@@ -1,0 +1,121 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:noivern",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "infiltrator",
+      "moveset": [
+        "dragonpulse",
+        "hurricane",
+        "razorwind",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 30,
+        "defence": 14,
+        "special_attack": 31,
+        "special_defence": 23,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:zoom_lens",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:pidgeot",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:hardy",
+      "ability": "tangledfeet",
+      "moveset": [
+        "wingattack",
+        "featherdance",
+        "tailwind",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 13,
+        "attack": 3,
+        "defence": 11,
+        "special_attack": 15,
+        "special_defence": 9,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:crobat",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:docile",
+      "ability": "innerfocus",
+      "moveset": [
+        "leechlife",
+        "bite",
+        "wingattack",
+        "crosspoison"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 28,
+        "defence": 31,
+        "special_attack": 22,
+        "special_defence": 11,
+        "speed": 18
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:gliscor",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "poisonheal",
+      "moveset": [
+        "swordsdance",
+        "firefang",
+        "icefang",
+        "thunderfang"
+      ],
+      "ivs": {
+        "hp": 21,
+        "attack": 22,
+        "defence": 14,
+        "special_attack": 29,
+        "special_defence": 2,
+        "speed": 20
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:toxic_orb",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

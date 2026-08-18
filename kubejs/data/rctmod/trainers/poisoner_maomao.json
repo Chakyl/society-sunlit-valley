@@ -1,0 +1,121 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:crobat",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:docile",
+      "ability": "innerfocus",
+      "moveset": [
+        "leechlife",
+        "crosspoison",
+        "bite",
+        "wingattack"
+      ],
+      "ivs": {
+        "hp": 11,
+        "attack": 27,
+        "defence": 21,
+        "special_attack": 9,
+        "special_defence": 30,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:drapion",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "sniper",
+      "moveset": [
+        "crunch",
+        "icefang",
+        "xscissor",
+        "crosspoison"
+      ],
+      "ivs": {
+        "hp": 19,
+        "attack": 11,
+        "defence": 28,
+        "special_attack": 9,
+        "special_defence": 14,
+        "speed": 7
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wide_lens",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:toxicroak",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:sassy",
+      "ability": "dryskin",
+      "moveset": [
+        "suckerpunch",
+        "poisonjab",
+        "taunt",
+        "toxic"
+      ],
+      "ivs": {
+        "hp": 1,
+        "attack": 11,
+        "defence": 19,
+        "special_attack": 15,
+        "special_defence": 5,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:clodsire",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:impish",
+      "ability": "poisonpoint",
+      "moveset": [
+        "earthquake",
+        "megahorn",
+        "poisonjab",
+        "toxicspikes"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 5,
+        "defence": 11,
+        "special_attack": 10,
+        "special_defence": 9,
+        "speed": 2
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

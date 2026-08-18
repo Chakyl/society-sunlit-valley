@@ -1,0 +1,119 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:kangaskhan",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:brave",
+      "ability": "scrappy",
+      "moveset": [
+        "crunch",
+        "outrage",
+        "suckerpunch",
+        "headbutt"
+      ],
+      "ivs": {
+        "hp": 26,
+        "attack": 19,
+        "special_attack": 9,
+        "special_defence": 23,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:snorlax",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:bashful",
+      "ability": "immunity",
+      "moveset": [
+        "gigaimpact",
+        "chipaway",
+        "bellydrum",
+        "hammerarm"
+      ],
+      "ivs": {
+        "defence": 31,
+        "special_attack": 13,
+        "special_defence": 22,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:maushold",
+      "gender": "GENDERLESS",
+      "level": 95,
+      "nature": "cobblemon:docile",
+      "ability": "technician",
+      "moveset": [
+        "populationbomb",
+        "babydolleyes",
+        "superfang",
+        "bulletseed"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 6,
+        "defence": 2,
+        "special_attack": 23,
+        "special_defence": 4,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wide_lens",
+      "aspects": [
+        "genderless",
+        "maushold-family-three"
+      ]
+    },
+    {
+      "species": "cobblemon:toucannon",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:naughty",
+      "ability": "skilllink",
+      "moveset": [
+        "hypervoice",
+        "featherdance",
+        "bulletseed",
+        "drillpeck"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 20,
+        "defence": 27,
+        "special_attack": 4,
+        "special_defence": 14,
+        "speed": 13
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

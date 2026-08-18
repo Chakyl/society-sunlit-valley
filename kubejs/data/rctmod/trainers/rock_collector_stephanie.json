@@ -1,0 +1,120 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:donphan",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:naughty",
+      "ability": "sturdy",
+      "moveset": [
+        "firefang",
+        "thunderfang",
+        "earthquake",
+        "rollout"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 1,
+        "defence": 14,
+        "special_attack": 24,
+        "special_defence": 24,
+        "speed": 7
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:zoom_lens",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:krookodile",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "intimidate",
+      "moveset": [
+        "honeclaws",
+        "crunch",
+        "earthquake",
+        "sandstorm"
+      ],
+      "ivs": {
+        "hp": 25,
+        "attack": 19,
+        "special_attack": 21,
+        "special_defence": 2,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wide_lens",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:golem",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "rockhead",
+      "moveset": [
+        "stoneedge",
+        "rockpolish",
+        "steamroller",
+        "heavyslam"
+      ],
+      "ivs": {
+        "hp": 26,
+        "attack": 3,
+        "defence": 12,
+        "special_attack": 17,
+        "special_defence": 26,
+        "speed": 20
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:mamoswine",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "snowcloak",
+      "moveset": [
+        "icefang",
+        "doublehit",
+        "earthquake",
+        "amnesia"
+      ],
+      "ivs": {
+        "hp": 21,
+        "attack": 15,
+        "defence": 14,
+        "special_attack": 13,
+        "special_defence": 8,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}
