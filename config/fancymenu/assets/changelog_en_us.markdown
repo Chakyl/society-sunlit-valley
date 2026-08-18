@@ -9,12 +9,15 @@
 - Added Suspicious Milk Tea
 - Added Ancient Builders Tool artifact
 - Added Red Wrench
+- Added Overflow token support for shared accounts (Re-equip your bank card to update)
 - Changed Earth Crystal trader trade from rice to cotton
 - Changed Jade trader trade from Aegis Wine to dried Lemon 
+- Changed Coin Leadeboard to fetch data once instead of once per leaderboard, improving performance large servers
 - Increased height of coin leaderboard by 1/4th of a block to make it less smudged
 - Updated quality food mod which contains various quality fixes
 - Removed ability to wicked mask certain entities due to chunkbans
-- Fixed shared accounts on Coin Leaderboard for real this time
+- Fixed shared accounts on Coin Leaderboard for real this time (Requires Re-equipping bank card)
+- Fixed Slime Golem and Otter decimating populations
 - Fixed certain Mushroom Logs dropping Red Mushroom Colonies instead of Brown
 - Fixed issues with the Sakura building set
 - Fixed Smallmouth Bass not being catchable at night in Autumn
