@@ -4,12 +4,10 @@ const getTeamName = (server, uuid) => {
   let cardsList = server.persistentData.cardsList ?? {};
   let playerList = server.persistentData.playerList ?? {};
   if (playerList[uuid]) return playerList[uuid];
-  // let bankAccount = global.GLOBAL_BANK.getAccount(String(uuid));
-  // if (bankAccount && bankAccount.label !== "Blaze Banker") return bankAccount.label;
   return playerList[cardsList[uuid][0]] + "'s Team";
 }
 
-const getTop10Coins = (server) => {
+const getLeaderboardRanking = (server) => {
   let playerList = server.persistentData.playerList;
   let cardsList = server.persistentData.cardsList;
   let overflowList = server.persistentData.overflowList;
@@ -20,43 +18,38 @@ const getTop10Coins = (server) => {
   }
   let leaderboardMap = new Map();
   global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
-    let accUUID = String(playerUUID);
-    let cBankId = cardsList[accUUID];
+    let accountUUID = String(playerUUID);
+    let cardID = cardsList[accountUUID];
     let bankBalance = bankAccount.getBalance();
 
     if (!playerList[playerUUID]) { // blaze banker, ignore
       return;
-    } else if (cBankId != null && cBankId != playerUUID) {
-      bankAccount = global.GLOBAL_BANK.getAccount(cBankId);
-      accUUID = String(bankAccount.id);
-      if (!leaderboardMap.has(accUUID)) bankBalance += bankAccount.getBalance();
+    } else if (cardID != null && cardID != playerUUID) {
+      bankAccount = global.GLOBAL_BANK.getAccount(cardID);
+      accountUUID = String(bankAccount.id);
+      if (!leaderboardMap.has(accountUUID)) bankBalance += bankAccount.getBalance();
     }
-
     if (overflowList != null && overflowList[playerUUID] != null) {
       bankBalance += overflowList[playerUUID] * 1006632960;
     }
-
-    if (leaderboardMap.has(accUUID)) {
-      leaderboardMap.set(accUUID, leaderboardMap.get(accUUID) + bankBalance);
+    if (leaderboardMap.has(accountUUID)) {
+      leaderboardMap.set(accountUUID, leaderboardMap.get(accountUUID) + bankBalance);
     } else {
-      leaderboardMap.set(accUUID, bankBalance);
+      leaderboardMap.set(accountUUID, bankBalance);
     };
   });
-  let top10Unammed = Array.from(leaderboardMap)
+  let rankingUnammed = Array.from(leaderboardMap)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10);
-  let top10 = new Array()
-  for (let lbEntry of top10Unammed) {
-    let lbData = lbEntry.toString().split(`,`);
-    top10.push([getTeamName(server, lbData[0]), lbData[1]])
+  let ranking = new Array()
+  for (let entry of rankingUnammed) {
+    let entryData = entry.toString().split(",");
+    ranking.push([getTeamName(server, entryData[0]), entryData[1]])
   };
-  return top10;
+  return ranking;
 };
 
-let tick = 600;
-ServerEvents.tick(event => {
-  tick++
-  if (tick < 600) return;
-  tick = 0;
-  global.leaderboard = getTop10Coins(event.server);
+ServerEvents.tick((e) => {
+  if (e.server.getTickCount() % 600) return;
+  global.leaderboard = getLeaderboardRanking(e.server);
 })
