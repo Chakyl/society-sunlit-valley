@@ -796,7 +796,8 @@ ServerEvents.tags("block", (e) => {
     "society_trading:auto_trader",
     "society:fish_pond_manager",
     "society:fish_pond_hatchery",
-    "society:caterpillar_box"
+    "society:caterpillar_box",
+    "society:growth_obelisk_upper"
   ].forEach((block) => {
     immovableTags.forEach((tag) => {
       e.add(tag, block);
