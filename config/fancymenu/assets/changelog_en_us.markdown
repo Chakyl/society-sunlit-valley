@@ -8,7 +8,7 @@
 - Added Lemon Beignets
 - Added Suspicious Milk Tea
 - Added Ancient Builders Tool artifact
-- Added Red Wrench
+- Added Red Wrench 
 - Added Overflow token support for shared accounts (Re-equip your bank card to update)
 - Changed Earth Crystal trader trade from rice to cotton
 - Changed Jade trader trade from Aegis Wine to dried Lemon 
