@@ -152,7 +152,17 @@
   },
   {
     "mob": "crittersandcompanions:leaf_insect",
-    "mincount": 1,
+    "mincount": 3,
+    "result": "deny"
+  },
+  {
+    "mob": "crittersandcompanions:otter",
+    "mincount": 6,
+    "result": "deny"
+  },
+  {
+    "mob": "golemoverhaul:slime_golem",
+    "mincount": 6,
     "result": "deny"
   },
   {
