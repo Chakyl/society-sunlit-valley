@@ -8,6 +8,7 @@
 - Added Lemon Beignets
 - Added Suspicious Milk Tea
 - Added Ancient Builders Tool artifact
+- Added Red Wrench
 - Changed Earth Crystal trader trade from rice to cotton
 - Changed Jade trader trade from Aegis Wine to dried Lemon 
 - Increased height of coin leaderboard by 1/4th of a block to make it less smudged

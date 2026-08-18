@@ -84,6 +84,10 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:ancient_builders_tool",
       tooltip: "Relic of the World-Shapers",
     },
+    {
+      item: "society:red_wrench",
+      tooltip: "I swear I won't use it...",
+    },
   ];
   artifactTooltips.forEach((artifact) => {
     tooltip.add(

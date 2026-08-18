@@ -253,6 +253,7 @@ global.artifacts = [
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
   { item: "society:token_of_unity", value: 3 },
+  { item: "society:red_wrench", value: 233 },
 ];
 
 // Relics
