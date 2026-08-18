@@ -151,7 +151,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:biodome_altar", (e) => {
     if (hand !== "MAIN_HAND") return;
     if (!['sunlit_cobblemon:blue_orb', 'sunlit_cobblemon:red_orb'].includes(item.id)) return;
     if (!global.hasScope(player)) {
-        player.tell(Text.translatable("sunlit_cobblemon.biodome_altar.sunlit_cobblemon.need_scope").red());
+        player.tell(Text.translatable("sunlit_cobblemon.need_scope").red());
         return;
     }
     if (player.isFake()) return;
@@ -175,10 +175,10 @@ BlockEvents.rightClicked("sunlit_cobblemon:biodome_altar", (e) => {
         server.runCommandSilent(`playsound minecraft:item.bottle.fill_dragonbreath block @a ${block.x} ${block.y} ${block.z} 1`);
         let spawnBlock = level.getBlock(block.getPos().offset(0, 1, 0));
         if (level.getEntitiesWithin(AABB.ofBlock(level.getBlock(spawnBlock)).inflate(2)).filter((e) => e.type.equals("cobblemon:pokemon")).length !== 0) {
-            player.tell(Text.translatable("sunlit_cobblemon.biodome_altar.sunlit_cobblemon.sun_raid.clear_area").red());
+            player.tell(Text.translatable("sunlit_cobblemon.sun_raid.clear_area").red());
             return;
         } else if (!spawnBlock.id.equals("minecraft:air")) {
-            player.tell(Text.translatable("sunlit_cobblemon.biodome_altar.sunlit_cobblemon.spawning.no_room").red());
+            player.tell(Text.translatable("sunlit_cobblemon.spawning.no_room").red());
             return;
         }
         player.tell(Text.translatable("sunlit_cobblemon.biodome_altar.success"));

@@ -52,5 +52,4 @@ StartupEvents.registry("block", (event) => {
                 global.runBearScroll(entity);
             });
         });
-
 });

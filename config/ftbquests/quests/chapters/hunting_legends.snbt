@@ -1,11 +1,70 @@
 {
+	autofocus_id: "0842E7FE4BF590F2"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "hunting_legends"
 	group: "13003519EF914BA5"
 	icon: "cobblemon:cherish_ball"
 	id: "5A3EDE9AB0D9F112"
-	order_index: 4
+	images: [
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0150_mewtwo/mewtwo.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0151_mew/mew.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0492_shaymin/shaymin_land.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0792_lunala/lunala.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -15.5d
+			y: -1.5d
+		}
+		{
+			height: 4.0d
+			image: "cobblemon:textures/entity_icon/0384_rayquaza/rayquaza.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -7.732142857142854d
+			y: -3.8392857142857153d
+		}
+		{
+			height: 4.0d
+			image: "cobblemon:textures/entity_icon/0383_groudon/groudon.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -7.625d
+			y: -2.4107142857142847d
+		}
+		{
+			height: 4.0d
+			image: "cobblemon:textures/entity_icon/0382_kyogre/kyogre.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -9.5d
+			y: -3.5d
+		}
+	]
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -38,10 +97,11 @@
 				}
 			]
 			title: "The Puzzle Box"
-			x: -13.0d
-			y: -6.5d
+			x: -7.0d
+			y: -1.0d
 		}
 		{
+			description: ["Some Legendary and Mythical Pokémon can be brought out using the power of &6Prismatic Shards&r!"]
 			disable_toast: true
 			id: "0842E7FE4BF590F2"
 			size: 1.5d
@@ -50,8 +110,9 @@
 				item: "society:prismatic_shard"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -7.0d
+			title: "Prismatic Legendaries"
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
@@ -87,11 +148,16 @@
 				}
 			]
 			title: "The Calamities"
-			x: -12.5d
-			y: -5.0d
+			x: -11.5d
+			y: -3.5d
 		}
 		{
-			description: [""]
+			description: [
+				"Some Legendary and Mythical Pokémon require mastery over the 5 skills to successfully summon."
+				""
+				""
+				"&oMastery requires all skill trees except trainer levels maximized!&r"
+			]
 			disable_toast: true
 			icon: "society:book_of_stars"
 			id: "3D21580DE9FBDFEF"
@@ -103,11 +169,17 @@
 				title: "{ftbquests.chapter.iv__prismatic_farming.quest25677844C218103A.task.4604507130240955467.title}"
 				type: "gamestage"
 			}]
-			x: -14.0d
+			title: "Mastery Legendaries"
+			x: -13.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"The &6Forces of Nature&r arise from the pleasant peace of a rainbow. "
+				""
+				"The rainbow pledges combined with a small spark will give you a bottle of the magic of a storm, periodically attracting one of these forces to you when equipped."
+			]
 			id: "622F93DF6D7949A8"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -121,8 +193,8 @@
 				type: "item"
 			}]
 			title: "The Genies"
-			x: -9.5d
-			y: -3.0d
+			x: -11.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
@@ -146,8 +218,8 @@
 				type: "item"
 			}]
 			title: "The Lake Spirits"
-			x: -13.5d
-			y: -1.5d
+			x: -13.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -172,11 +244,18 @@
 				type: "item"
 			}]
 			title: "The Strange Birds"
-			x: -13.5d
-			y: 0.0d
+			x: -13.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"In the frozen layer of the Skull Cavern you may stumble upon an altar with a gnome atop of it..."
+				""
+				"Legends say this is a guide to the moon ritual, that can be performed using a Moongeist Crystal."
+				""
+				"&6Moonlit Lunala&r can be fought to obtain &6Cosmog&r, provided all aspects of the moon are in place."
+			]
 			id: "06B7B1187630B88D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -190,8 +269,8 @@
 				type: "item"
 			}]
 			title: "The Sun and the Moon"
-			x: -9.5d
-			y: -4.0d
+			x: -13.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3D21580DE9FBDFEF"]
@@ -224,7 +303,7 @@
 				}
 			]
 			title: "The Bell Jar"
-			x: -16.5d
+			x: -14.5d
 			y: -3.5d
 		}
 		{
@@ -243,8 +322,8 @@
 				type: "item"
 			}]
 			title: "The Evil Bear"
-			x: -5.0d
-			y: -6.0d
+			x: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["277D9FE3ED371ED0"]
@@ -266,8 +345,8 @@
 				type: "item"
 			}]
 			title: "The Shrivelled Berry"
-			x: -6.5d
-			y: -4.5d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["192A29795AF8F732"]
@@ -297,8 +376,8 @@
 				}
 			]
 			title: "Path of Destruction"
-			x: -3.5d
-			y: -6.0d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["277D9FE3ED371ED0"]
@@ -320,8 +399,8 @@
 				type: "item"
 			}]
 			title: "The Graceful Flower"
-			x: -6.5d
-			y: -7.5d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "3C382FAA607E7F67"
@@ -331,29 +410,52 @@
 				type: "item"
 			}]
 			title: "The Jets"
-			x: -7.0d
-			y: -2.5d
+			x: -3.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0850BA6E66135437"]
+			description: [
+				"&6Mew&r is a mysterious Pokémon, whos DNA contains a little of every Pokémon in existence."
+				""
+				"You should study this phenomenon and see if you can collect a few strands of &6Mew-N-DNA&r using a &6Ranching Station&r..."
+			]
 			id: "29A7D5857A8970BD"
+			rewards: [{
+				id: "0C068D2A17EA7D84"
+				item: "sunlit_cobblemon:mew_n_dna"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1469608F92502BC9"
 				item: "sunlit_cobblemon:mew_n_dna"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -1.5d
+			x: -8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["29A7D5857A8970BD"]
+			description: [
+				"Implanting the &6Mew-N-DNA&r into a Petrified Egg alongside other prehistoric DNA grants you the &6Egg of the King&r."
+				""
+				"Pure power lies in this egg. In many ways, it is the ultimate crown of your legendary journey."
+			]
 			id: "46FC62A2B58324FE"
+			rewards: [{
+				count: 4
+				id: "7F92AC769B3BC559"
+				item: "cobblemon_farmers:worker_permit"
+				type: "item"
+			}]
+			size: 2.0d
 			tasks: [{
 				id: "14848ADFF4BFDFEB"
 				item: "sunlit_cobblemon:egg_of_the_king"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -1.5d
+			x: -8.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0842E7FE4BF590F2"]
@@ -377,10 +479,17 @@
 				type: "item"
 			}]
 			title: "The Visitor"
-			x: -16.0d
-			y: -8.5d
+			x: -10.0d
+			y: -1.0d
 		}
 		{
+			description: [
+				"The behemoths of the sea and the earth are lurking deep under the surface."
+				""
+				"To draw them out, you'll first need a &6Biodome Altar&r. Placing a &6Red&r or &6Blue Orb&r atop it will summon either &6Groudon&r or &6Kyogre&r respectively, provided the area around the altar suits their environment."
+				""
+				"You'll need to make a suitable habit for each of these legends..."
+			]
 			icon: "sunlit_cobblemon:red_orb"
 			id: "665057111E4EAA4D"
 			rewards: [{
@@ -389,6 +498,7 @@
 				table_id: 6979018325962330524L
 				type: "choice"
 			}]
+			subtitle: "Let's get this place humid!"
 			tasks: [
 				{
 					id: "4DD1371B24507DA3"
@@ -418,8 +528,8 @@
 				}
 			]
 			title: "The Land and the Sea"
-			x: -10.5d
-			y: -3.5d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -436,8 +546,111 @@
 				title: "Understood!"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: -6.0d
+			title: "Other Legendaries"
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"There are &616 Mural Stones&r scattered throughout the world. Legends say they are carved into basalt from the power of &6Legendary Pokemon&r."
+				""
+				"Assembling all 16 pieces and using a &6Prismatic Shard&r on the bottom right corner will bring life to &6Mew&r!"
+				""
+				"&oMural Stones can be obtained by ranching if they are lost for any reason.&r"
+			]
+			id: "0850BA6E66135437"
+			rewards: [{
+				count: 4
+				id: "50F7B1A3049A6D05"
+				item: "cobblemon_farmers:worker_permit"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "630C7A84B2EEF4D0"
+					item: "sunlit_cobblemon:mural_stone_1"
+					type: "item"
+				}
+				{
+					id: "7D3BD087F0EA48E5"
+					item: "sunlit_cobblemon:mural_stone_2"
+					type: "item"
+				}
+				{
+					id: "169F039217E66DEB"
+					item: "sunlit_cobblemon:mural_stone_3"
+					type: "item"
+				}
+				{
+					id: "7A3F195232F9454F"
+					item: "sunlit_cobblemon:mural_stone_4"
+					type: "item"
+				}
+				{
+					id: "2A313C685DF7DBEB"
+					item: "sunlit_cobblemon:mural_stone_5"
+					type: "item"
+				}
+				{
+					id: "1FB0FB9BFA7DAF29"
+					item: "sunlit_cobblemon:mural_stone_6"
+					type: "item"
+				}
+				{
+					id: "6FFB0A215316749B"
+					item: "sunlit_cobblemon:mural_stone_7"
+					type: "item"
+				}
+				{
+					id: "7D03FE01024DB5B1"
+					item: "sunlit_cobblemon:mural_stone_8"
+					type: "item"
+				}
+				{
+					id: "091DD4916F4871F0"
+					item: "sunlit_cobblemon:mural_stone_9"
+					type: "item"
+				}
+				{
+					id: "6C6A8108CF1FA7AB"
+					item: "sunlit_cobblemon:mural_stone_10"
+					type: "item"
+				}
+				{
+					id: "4410DA2DB5BC7388"
+					item: "sunlit_cobblemon:mural_stone_11"
+					type: "item"
+				}
+				{
+					id: "1341B6A981B70308"
+					item: "sunlit_cobblemon:mural_stone_12"
+					type: "item"
+				}
+				{
+					id: "380C4BCDE6398B5D"
+					item: "sunlit_cobblemon:mural_stone_13"
+					type: "item"
+				}
+				{
+					id: "699549D7B2FF8174"
+					item: "sunlit_cobblemon:mural_stone_14"
+					type: "item"
+				}
+				{
+					id: "0DD1EE757BA875C2"
+					item: "sunlit_cobblemon:mural_stone_15"
+					type: "item"
+				}
+				{
+					id: "2FED94F8DFD0F27F"
+					item: "sunlit_cobblemon:mural_stone_16"
+					type: "item"
+				}
+			]
+			title: "The Collective"
+			x: -8.5d
+			y: 1.5d
 		}
 	]
 	title: "Hunting Legends"

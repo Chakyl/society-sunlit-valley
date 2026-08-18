@@ -4831,6 +4831,12 @@
 //                     count: 1,
 //                     chance: 0.2,
 //                     min_hearts: 6
+//                 },
+//                 {
+//                     item: "sunlit_cobblemon:mural_stone_2",
+//                     count: 1,
+//                     chance: 0.01,
+//                     min_hearts: 10
 //                 }
 //             ],
 //         },
@@ -8713,6 +8719,42 @@
 //                 ],
 //             })
 //     });
+
+//     [
+//         { pokemon: ["rayquaza"] },
+//         { pokemon: null },
+//         { pokemon: ["hooh"] },
+//         { pokemon: ["latios"] },
+//         { pokemon: ["tornadus", "thundurus", "landorus"] },
+//         { pokemon: ["yveltal"] },
+//         { pokemon: ["kyurem"] },
+//         { pokemon: ["latias"] },
+//         { pokemon: ["lunala"] },
+//         { pokemon: ["moltres", "zapdos", "articuno"] },
+//         { pokemon: ["lugia"] },
+//         { pokemon: ["solgaleo"] },
+//         { pokemon: ["giratina"] },
+//         { pokemon: ["xerneas"] },
+//         { pokemon: ["regigigas"] },
+//         { pokemon: ["chiyu", "chienpao"] }
+//     ].forEach((legend, index) => {
+//         if (legend.pokemon) {
+//             legend.pokemon.forEach((poke) => {
+//                 ranchingDef.push(
+//                     {
+//                         pokemon: poke,
+//                         forages: [
+//                             {
+//                                 item: `sunlit_cobblemon:mural_stone_${index + 1}`,
+//                                 count: 1,
+//                                 chance: 0.01,
+//                                 min_hearts: 10
+//                             }
+//                         ],
+//                     })
+//             })
+//         }
+//     })
 //     let recipe
 //     ranchingDef.forEach((def) => {
 //         recipe = {

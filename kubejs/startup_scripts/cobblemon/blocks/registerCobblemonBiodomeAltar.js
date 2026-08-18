@@ -13,7 +13,7 @@ StartupEvents.registry("block", (e) => {
   e.create("sunlit_cobblemon:biodome_altar", "cardinal")
     .property(integerProperty.create("type", 0, 2))
     .defaultCutout()
-    .box(0, 0, 0, 16, 12, 16)
+    .box(0, 0, 0, 10, 12, 10)
     .soundType("stone")
     .item((item) => {
       item.tooltip(Text.translatable("block.sunlit_cobblemon.biodome_altar.description").gray());
