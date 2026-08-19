@@ -19,6 +19,7 @@
 - Fixed Slime Golem and Otter decimating populations
 - Fixed certain Mushroom Logs dropping Red Mushroom Colonies instead of Brown
 - Fixed issues with the Sakura building set
+- Fixed Gnomes not being Gnomes on Gnomeymap
 - Fixed Smallmouth Bass not being catchable at night in Autumn
 - Fixed EMI not being searchable by blocktag by downgrading version
 
