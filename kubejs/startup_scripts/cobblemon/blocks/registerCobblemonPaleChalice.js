@@ -6,8 +6,10 @@ global.runPaleChalice = (entity) => {
     if (Math.random() <= 0.25 && level.dimension === "sunlit_cobblemon:moontear" && level.getBlock(block.getPos()).properties.get("full") == "true") {
         let server = level.getServer();
         let { x, y, z } = block;
-
-        let spawnedAny = global.summonRaidPokemon(server, level, level.getBlock(block.getPos().above()), Math.random() <= 0.5 ? "dialga" : "palkia", "", 95, 75, false, false, 0);
+        let pokemonToSpawn = Math.random() <= 0.5 ? "dialga" : "palkia";
+        if (level.getBlock(block.pos.below()).id === "botania:chiseled_metamorphic_mesa_bricks") pokemonToSpawn = "palkia";
+        else if (level.getBlock(block.pos.below()).id === "botania:chiseled_metamorphic_mesa_bricks") pokemonToSpawn = "dialga";
+        let spawnedAny = global.summonRaidPokemon(server, level, level.getBlock(block.getPos().above()), pokemonToSpawn, "", 100, 75, false, false, 0);
         if (spawnedAny) {
             server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${x} ${y} ${z} 2`);
             server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${x} ${y} ${z} 2`);

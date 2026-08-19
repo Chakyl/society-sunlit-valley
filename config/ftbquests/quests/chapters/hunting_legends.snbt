@@ -13,7 +13,7 @@
 			rotation: 0.0d
 			width: 8.0d
 			x: -6.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			height: 8.0d
@@ -21,7 +21,7 @@
 			rotation: 0.0d
 			width: 8.0d
 			x: -10.5d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			height: 8.0d
@@ -651,6 +651,52 @@
 			title: "The Collective"
 			x: -8.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"The &6Trader&r can make a strange modification to a Broken Clock, giving you a curious device."
+				""
+				"Legends say that holding onto it just as you are whisked away from the &6Skull Cavern&r will sunder you from time and space."
+				""
+				"Best to have a way to get home..."
+			]
+			icon: "sunlit_cobblemon:pale_chalice"
+			id: "612AE21F5EE2B534"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "21DBD9D235377B99"
+					table_id: 6979018325962330524L
+					type: "choice"
+				}
+				{
+					id: "1D977CFD7A552467"
+					item: "simplerecall:recall_potion"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "14509B2C7599E584"
+					item: "sunlit_cobblemon:corrupted_clock"
+					type: "item"
+				}
+				{
+					id: "7013C55539D08501"
+					item: "sunlit_cobblemon:liquid_pale"
+					type: "item"
+				}
+				{
+					id: "30D68092C5DD3AAB"
+					item: "sunlit_cobblemon:liquid_antimatter"
+					type: "item"
+				}
+			]
+			title: "The Temple of Time"
+			x: -7.0d
+			y: 1.0d
 		}
 	]
 	title: "Hunting Legends"

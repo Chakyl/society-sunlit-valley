@@ -967,10 +967,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"43DCB8601B40FB9A"
-				"4026AD7C4083E43B"
-			]
+			dependencies: ["43DCB8601B40FB9A"]
 			description: [
 				"{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.description1}"
 				""
@@ -979,6 +976,7 @@
 				"{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.description3}"
 			]
 			id: "539CA5F135AA627D"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "1D74F3A546FEA876"
 				item: "unimplemented_items:bottle_cap"
@@ -1335,7 +1333,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["43DCB8601B40FB9A"]
+			dependencies: [
+				"43DCB8601B40FB9A"
+				"539CA5F135AA627D"
+			]
 			description: [
 				"All the best gym leaders choose a type to specialize in!"
 				""

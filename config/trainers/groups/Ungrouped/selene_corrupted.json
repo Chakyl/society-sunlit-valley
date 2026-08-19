@@ -1,0 +1,181 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:glimmora",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:lonely",
+      "ability": "toxicdebris",
+      "moveset": [
+        "mortalspin",
+        "mudshot",
+        "powergem",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:giratina",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:brave",
+      "ability": "pressure",
+      "moveset": [
+        "dracometeor",
+        "shadowforce",
+        "ancientpower",
+        "dragonclaw"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 12,
+        "defence": 20,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 26
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:ursaluna",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "guts",
+      "moveset": [
+        "hammerarm",
+        "facade",
+        "headlongrush",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 6,
+        "attack": 3,
+        "special_attack": 2,
+        "special_defence": 7
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:flame_orb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ursaluna",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:naughty",
+      "ability": "mindseye",
+      "moveset": [
+        "bloodmoon",
+        "hammerarm",
+        "headlongrush",
+        "moonblast"
+      ],
+      "ivs": {
+        "hp": 20,
+        "attack": 4,
+        "defence": 25,
+        "special_attack": 11,
+        "special_defence": 31,
+        "speed": 22
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "bloodmoon",
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:deoxysattack",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:bashful",
+      "ability": "pressure",
+      "moveset": [
+        "extremespeed",
+        "psychoboost",
+        "psychic",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 1,
+        "attack": 14,
+        "defence": 10,
+        "special_attack": 12,
+        "special_defence": 31,
+        "speed": 27
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "genderless"
+      ]
+    },
+    {
+      "species": "cobblemon:darkrai",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "baddreams",
+      "moveset": [
+        "ominouswind",
+        "dreameater",
+        "nastyplot",
+        "nightmare"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": -1,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

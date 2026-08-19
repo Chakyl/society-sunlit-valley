@@ -1,6 +1,38 @@
 console.info("[SOCIETY-S-COBBLEMON] cobblemonTrainerPodium.js loaded");
 
 BlockEvents.placed("sunlit_cobblemon:trainer_podium", (e) => {
+  if (e.level.dimension === "sunlit_cobblemon:moontear") {
+    let message = Text.translatable("society.skull_cavern.prevent_block_place").toJson();
+    global.renderUiText(
+      player,
+      server,
+      {
+        skullCavernPlaceBlockMessage: {
+          type: "text",
+          x: 0,
+          y: -90,
+          text: `${message}`,
+          color: "#FF5555",
+          alignX: "center",
+          alignY: "bottom",
+        },
+        skullCavernPlaceBlockMessageShadow: {
+          type: "text",
+          x: 1,
+          z: -1,
+          y: -89,
+          text: `${message}`,
+          color: "#000000",
+          alignX: "center",
+          alignY: "bottom",
+        },
+      },
+      global.mainUiElementIds
+    );
+    e.player.inventoryMenu.broadcastFullState();
+    e.cancel();
+    return;
+  }
   let item = e.player.getHeldItem("main_hand");
   let podiumNbt;
   if (item.id !== "sunlit_cobblemon:trainer_podium") item = e.player.getHeldItem("off_hand");
@@ -21,6 +53,10 @@ BlockEvents.placed("sunlit_cobblemon:trainer_podium", (e) => {
 
 BlockEvents.broken("sunlit_cobblemon:trainer_podium", (e) => {
   const { block, level, player, server } = e;
+  if (level.dimension === "sunlit_cobblemon:moontear") {
+    e.cancel();
+    return;
+  }
   let nearbyTrainers = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(2))
     .filter((entityType) => entityType.type === "rctmod:trainer");
@@ -85,6 +121,7 @@ ItemEvents.entityInteracted((e) => {
   const { hand, player, target, level, server } = e;
   if (hand == "OFF_HAND") return;
   if (target.type !== "rctmod:trainer") return;
+  if (level.dimension === "sunlit_cobblemon:moontear") return;
   let block = level.getBlock(target.onPos.above());
   if (block.id !== "sunlit_cobblemon:trainer_podium") {
     target.setRemoved("unloaded_to_chunk");

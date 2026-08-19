@@ -3,8 +3,9 @@
   "generator": {
     "type": "minecraft:noise",
     "biome_source": {
-      "type": "minecraft:the_end"
+      "type": "minecraft:fixed",
+      "biome": "sunlit_cobblemon:moontear"
     },
-    "settings": "minecraft:end"
+    "settings": "sunlit_cobblemon:moontear"
   }
 }

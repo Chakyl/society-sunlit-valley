@@ -72,7 +72,7 @@ PlayerEvents.tick((e) => {
                 variant = formMap.get(`${identifier}`)
             } else {
                 variant = handleVariant(aspect);
-                if (variant == "galar" && identifier === "corsola") variant = "galarian";
+                if (variant == "galar" && ["corsola", "darumaka", "darmanitan", "zigzagoon", "linoone"].includes(identifier)) variant = "galarian";
             }
             // Why is Mr Rime like that
             let foundMon = `${String(species.nationalPokedexNumber).padStart(4, '0')}_${handleIdentifier(identifier)}${variant ? `_${variant}` : ""}`

@@ -309,6 +309,11 @@ ItemEvents.tooltip((tooltip) => {
 
   tooltip.add('sunlit_cobblemon:tabula_rasa', Text.translatable(`tooltip.sunlit_cobblemon.tabula_rasa.description`).gray());
   tooltip.add('sunlit_cobblemon:tabula_rasa', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:corrupted_clock', Text.translatable(`tooltip.sunlit_cobblemon.corrupted_clock.description`).gray());
+  tooltip.add('sunlit_cobblemon:liquid_pale', Text.translatable(`tooltip.sunlit_cobblemon.liquid_pale.description`).gray());
+  tooltip.add('sunlit_cobblemon:liquid_pale', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:liquid_antimatter', Text.translatable(`tooltip.sunlit_cobblemon.liquid_pale.description`).gray());
+  tooltip.add('sunlit_cobblemon:liquid_antimatter', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   tooltip.add('sunlit_cobblemon:ominous_black_stake', Text.translatable(`tooltip.sunlit_cobblemon.ominous_black_stake.description`).gray());
   tooltip.add('sunlit_cobblemon:gem_box', Text.translatable(`tooltip.sunlit_cobblemon.gem_box.description`).gray());
   tooltip.add('sunlit_cobblemon:mystica_nectar', Text.translatable(`tooltip.sunlit_cobblemon.mystica_nectar.description`).gray());

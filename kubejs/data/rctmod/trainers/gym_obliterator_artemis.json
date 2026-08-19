@@ -1,194 +1,142 @@
 {
-  "displayName": "Gym Obliterator Artemis",
-  "aiLevel": 9,
-  "team": [
-    {
-      "species": "cobblemon:beheeyem",
-      "gender": "FEMALE",
-      "level": 100,
-      "nature": "cobblemon:quiet",
-      "ability": "analytic",
-      "moveset": [
-        "psychic",
-        "psychicterrain",
-        "calmmind",
-        "recover"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "hp": 252,
-        "special_attack": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:shell_bell",
-      "aspects": [
-        "female"
-      ]
+  "aquifers_enabled": false,
+  "default_block": {
+    "Name": "minecraft:stone"
+  },
+  "default_fluid": {
+    "Name": "minecraft:air"
+  },
+  "disable_mob_generation": true,
+  "legacy_random_source": true,
+  "noise": {
+    "height": 128,
+    "min_y": 0,
+    "size_horizontal": 2,
+    "size_vertical": 1
+  },
+  "noise_router": {
+    "barrier": 0.0,
+    "continents": 0.0,
+    "depth": 0.0,
+    "erosion": {
+      "type": "minecraft:cache_2d",
+      "argument": {
+        "type": "minecraft:end_islands"
+      }
     },
-    {
-      "species": "cobblemon:starmie",
-      "gender": "GENDERLESS",
-      "level": 100,
-      "nature": "cobblemon:mild",
-      "ability": "naturalcure",
-      "moveset": [
-        "psychic",
-        "surf",
-        "powergem",
-        "cosmicpower"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "special_attack": 252,
-        "speed": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:shell_bell",
-      "aspects": [
-        "genderless"
-      ]
+    "final_density": {
+      "type": "minecraft:squeeze",
+      "argument": {
+        "type": "minecraft:mul",
+        "argument1": 0.64,
+        "argument2": {
+          "type": "minecraft:interpolated",
+          "argument": {
+            "type": "minecraft:blend_density",
+            "argument": {
+              "type": "minecraft:add",
+              "argument1": -0.234375,
+              "argument2": {
+                "type": "minecraft:mul",
+                "argument1": {
+                  "type": "minecraft:y_clamped_gradient",
+                  "from_value": 0.0,
+                  "from_y": 4,
+                  "to_value": 1.0,
+                  "to_y": 32
+                },
+                "argument2": {
+                  "type": "minecraft:add",
+                  "argument1": 0.234375,
+                  "argument2": {
+                    "type": "minecraft:add",
+                    "argument1": -23.4375,
+                    "argument2": {
+                      "type": "minecraft:mul",
+                      "argument1": {
+                        "type": "minecraft:y_clamped_gradient",
+                        "from_value": 1.0,
+                        "from_y": 56,
+                        "to_value": 0.0,
+                        "to_y": 312
+                      },
+                      "argument2": {
+                        "type": "minecraft:add",
+                        "argument1": 23.4375,
+                        "argument2": "minecraft:end/sloped_cheese"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     },
-    {
-      "species": "cobblemon:rayquaza",
-      "gender": "GENDERLESS",
-      "level": 100,
-      "nature": "cobblemon:naughty",
-      "ability": "airlock",
-      "moveset": [
-        "dragonascent",
-        "dragondance",
-        "extremespeed",
-        "vcreate"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "attack": 252,
-        "speed": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:life_orb",
-      "aspects": [
-        "genderless"
-      ]
+    "fluid_level_floodedness": 0.0,
+    "fluid_level_spread": 0.0,
+    "initial_density_without_jaggedness": {
+      "type": "minecraft:add",
+      "argument1": -0.234375,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:y_clamped_gradient",
+          "from_value": 0.0,
+          "from_y": 4,
+          "to_value": 1.0,
+          "to_y": 32
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": 0.234375,
+          "argument2": {
+            "type": "minecraft:add",
+            "argument1": -23.4375,
+            "argument2": {
+              "type": "minecraft:mul",
+              "argument1": {
+                "type": "minecraft:y_clamped_gradient",
+                "from_value": 1.0,
+                "from_y": 56,
+                "to_value": 0.0,
+                "to_y": 312
+              },
+              "argument2": {
+                "type": "minecraft:add",
+                "argument1": 23.4375,
+                "argument2": {
+                  "type": "minecraft:add",
+                  "argument1": -0.703125,
+                  "argument2": {
+                    "type": "minecraft:cache_2d",
+                    "argument": {
+                      "type": "minecraft:end_islands"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     },
-    {
-      "species": "cobblemon:deoxysattack",
-      "gender": "GENDERLESS",
-      "level": 100,
-      "nature": "cobblemon:jolly",
-      "ability": "pressure",
-      "moveset": [
-        "thunderbolt",
-        "flashcannon",
-        "darkpulse",
-        "psychic"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "special_attack": 252,
-        "speed": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:wise_glasses",
-      "aspects": [
-        "genderless"
-      ]
-    },
-    {
-      "species": "cobblemon:clefable",
-      "gender": "FEMALE",
-      "level": 100,
-      "nature": "cobblemon:hardy",
-      "ability": "cutecharm",
-      "moveset": [
-        "metronome",
-        "luckychant",
-        "minimize",
-        "cosmicpower"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "hp": 252,
-        "attack": 120,
-        "special_attack": 120,
-        "special_defence": 18
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:leftovers",
-      "aspects": [
-        "female"
-      ]
-    },
-    {
-      "species": "cobblemon:gothitelle",
-      "gender": "FEMALE",
-      "level": 100,
-      "nature": "cobblemon:modest",
-      "ability": "frisk",
-      "moveset": [
-        "healblock",
-        "futuresight",
-        "faketears",
-        "psychic"
-      ],
-      "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {
-        "special_attack": 252,
-        "speed": 252
-      },
-      "shiny": false,
-      "heldItem": "cobblemon:shell_bell",
-      "aspects": [
-        "female"
-      ]
+    "lava": 0.0,
+    "ridges": 0.0,
+    "temperature": 0.0,
+    "vegetation": 0.0,
+    "vein_gap": 0.0,
+    "vein_ridged": 0.0,
+    "vein_toggle": 0.0
+  },
+  "ore_veins_enabled": false,
+  "sea_level": 0,
+  "spawn_target": [],
+  "surface_rule": {
+    "type": "minecraft:block",
+    "result_state": {
+      "Name": "minecraft:end_stone"
     }
-  ],
-  "winCommand": "",
-  "lossCommand": "",
-  "canOnlyBeatOnce": false,
-  "cooldownSeconds": 0,
-  "partyMaximumLevel": 100,
-  "defeatRequiredTrainers": []
+  }
 }

@@ -49,6 +49,10 @@ global.removeNearbyTrainers = (level, block, forceRemoval) => {
 
 global.runTrainerPodium = (entity) => {
   const { level, block } = entity;
+  let selene = false;
+  if (level.dimension === "sunlit_cobblemon:moontear") {
+    selene = true;
+  }
   let nbt = block.getEntityData();
   let { owner, trainers, upgraded } = nbt.data;
   let nearbyPlayers = level
@@ -57,49 +61,56 @@ global.runTrainerPodium = (entity) => {
 
   let ownerPlayer;
   nearbyPlayers.forEach((player) => {
-    if (player.getUuid().toString() === owner) ownerPlayer = player;
+    if (player.getUuid().toString() === owner || selene) ownerPlayer = player;
   });
 
   let spawnTrainer = global.removeNearbyTrainers(level, block);
   if (ownerPlayer) {
     if (spawnTrainer && !block.level.hasNeighborSignal(block.pos)) {
-      let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
-      if (levelAverage == undefined) return;
-      let levelTier = global.getPlayerPodiumLevelTier(levelAverage);
-      if (levelTier == undefined) return;
       let newTrainer;
-      let newTrainersArray;
-      if (upgraded) {
-        levelTier = "elite"
-      }
-      if (trainers == null) {
-        nbt.merge({ data: { trainers: {} } });
-        global.setBlockEntityData(block, nbt);
-        trainers = block.getEntityData().trainers;
-        newTrainer = "";
+      let levelTier = 100;
+      if (selene) {
+        newTrainer = Math.random() <= 0.5 ? "selene_timeless" : "selene_spacial";
+    
+        if (global.hasPartyPokemon(ownerPlayer, ["palkia", "dialga"], 2)) newTrainer = "selene_corrupted";
       } else {
-        newTrainer = trainers.get(`${levelTier}`);
-      }
-      // ownerPlayer.persistentData.wins = 20
-      if (ownerPlayer.persistentData.wins == 0 || !newTrainer || newTrainer === "") {
-        if (ownerPlayer.persistentData.wins > 14 && ownerPlayer.persistentData.wins % 20 === 0) {
-          newTrainer = global.getLeagueBoss(Math.min(95, levelTier), upgraded)
-        } else {
-          newTrainer = global.getRandomTrainer(Math.min(95, levelTier), upgraded);
+        let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
+        if (levelAverage == undefined) return;
+        levelTier = global.getPlayerPodiumLevelTier(levelAverage);
+        if (levelTier == undefined) return;
+        let newTrainersArray;
+        if (upgraded) {
+          levelTier = "elite"
         }
-        newTrainersArray = trainers;
-        newTrainersArray.putString(`${levelTier}`, newTrainer)
-        nbt.merge({ data: { trainers: newTrainersArray } });
-        global.setBlockEntityData(block, nbt);
-      }
-      if (newTrainer == undefined || newTrainer == "dev.latvian.mods.rhino.Undefined@0") {
-        global.removeNearbyTrainers(level, block, true);
-        ownerPlayer.tell("[ERROR] Failed to spawn trainer at tier " + levelTier + " winstreak " + ownerPlayer.persistentData.wins + " for " + ownerPlayer.username + ". Tell Chakyl!");
-        newTrainersArray = trainers;
-        newTrainersArray.putString(`${levelTier}`, "")
-        nbt.merge({ data: { trainers: newTrainersArray } });
-        global.setBlockEntityData(block, nbt);
-        return;
+        if (trainers == null) {
+          nbt.merge({ data: { trainers: {} } });
+          global.setBlockEntityData(block, nbt);
+          trainers = block.getEntityData().trainers;
+          newTrainer = "";
+        } else {
+          newTrainer = trainers.get(`${levelTier}`);
+        }
+        // ownerPlayer.persistentData.wins = 20
+        if (ownerPlayer.persistentData.wins == 0 || !newTrainer || newTrainer === "") {
+          if (ownerPlayer.persistentData.wins > 14 && ownerPlayer.persistentData.wins % 15 === 0) {
+            newTrainer = global.getLeagueBoss(Math.min(95, levelTier), upgraded)
+          } else {
+            newTrainer = global.getRandomTrainer(Math.min(95, levelTier), upgraded);
+          }
+          newTrainersArray = trainers;
+          newTrainersArray.putString(`${levelTier}`, newTrainer)
+          nbt.merge({ data: { trainers: newTrainersArray } });
+          global.setBlockEntityData(block, nbt);
+        }
+        if (newTrainer == undefined || newTrainer == "dev.latvian.mods.rhino.Undefined@0") {
+          global.removeNearbyTrainers(level, block, true);
+          ownerPlayer.tell("[ERROR] Failed to spawn trainer at tier " + levelTier + " winstreak " + ownerPlayer.persistentData.wins + " for " + ownerPlayer.username + ". Tell Chakyl!");
+          newTrainersArray = trainers;
+          newTrainersArray.putString(`${levelTier}`, "")
+          nbt.merge({ data: { trainers: newTrainersArray } });
+          global.setBlockEntityData(block, nbt);
+          return;
+        }
       }
       // console.log("Spawning trainer " + newTrainer + " at tier " + levelTier + " for " + ownerPlayer.username);
       let freshTrainer = level.createEntity("rctmod:trainer");

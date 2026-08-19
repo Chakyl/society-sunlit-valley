@@ -22,7 +22,7 @@ global.handleCobblemonDefeat = (e) => {
       loserLevels.push(element.originalPokemon.getLevel());
     });
   });
-  if (winningPlayer.isPlayer() && losingPlayer.isPlayer()) return;
+  if (winningPlayer.isPlayer() && (losingPlayer && losingPlayer.isPlayer())) return;
   if (winningPlayer && winningPlayer.isPlayer()) {
     let reward = 0;
     loserLevels.forEach((loserLevel) => {

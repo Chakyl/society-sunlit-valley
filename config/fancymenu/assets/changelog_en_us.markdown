@@ -29,7 +29,7 @@
 - Added Elite Stone for unlocking a higher level of difficulty on the Trainer Podium. Legendary/Mythical Pokemon are allowed to be used by both gym leader and trainers in this mode only
 - Reworked trainer podium yet again:
 	-  Trainer podium still scales based on team level
-	-  No more win streaks. Instead the podium will keep track of total wins, and League bosses will appear every 20 wins
+	-  No more win streaks. Instead the podium will keep track of total wins, and League bosses will appear every 15 wins
 	- Every 10 of wins you’ll get an item from the special pool dropped. Every 100 you’ll get one from a rare pool
 	- No penalty for losing outside of the normal loss fee 
 - Reworked Gardening Station dark types: Experience dropped no longer based off of nearby Pokemon defeated. Instead, a static amount of XS candies are always dropped, and at 5+ radii it turns into S. (Old system encouraged spawning a bunch of entities around its working area
