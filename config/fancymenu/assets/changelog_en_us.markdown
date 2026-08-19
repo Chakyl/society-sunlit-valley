@@ -14,8 +14,10 @@
 - Changed Coin Leadeboard to fetch data once instead of once per leaderboard, improving performance large servers
 - Increased height of coin leaderboard by 1/4th of a block to make it less smudged
 - Updated quality food mod which contains various quality fixes
+- Updated zh_cn translation (Thanks Thirace!)
+- Updated ko_kr translation (Thanks Hexagreen!)
 - Removed ability to wicked mask certain entities due to chunkbans
-- Fixed shared accounts on Coin Leaderboard for real this time (Requires Re-equipping bank card)
+- Fixed shared accounts on Coin Leaderboard for real this time (Requires Re-equipping bank card) (Thanks ManlyTorch!)
 - Fixed Slime Golem and Otter decimating populations
 - Fixed certain Mushroom Logs dropping Red Mushroom Colonies instead of Brown
 - Fixed issues with the Sakura building set
