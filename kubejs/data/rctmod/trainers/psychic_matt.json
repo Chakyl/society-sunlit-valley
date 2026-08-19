@@ -1,70 +1,16 @@
-{"displayName": "Poisoner Maomao",
+{"displayName": "Psychic Matt The Nyaonix",
   "team": [
     {
-      "species": "cobblemon:crobat",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:docile",
-      "ability": "innerfocus",
-      "moveset": [
-        "leechlife",
-        "crosspoison",
-        "bite",
-        "wingattack"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:assault_vest",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:drapion",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:adamant",
-      "ability": "sniper",
-      "moveset": [
-        "crunch",
-        "icefang",
-        "xscissor",
-        "crosspoison"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:wide_lens",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:toxicroak",
+      "species": "cobblemon:indeedee",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:sassy",
-      "ability": "dryskin",
+      "nature": "cobblemon:modest",
+      "ability": "psychicsurge",
       "moveset": [
-        "suckerpunch",
-        "poisonjab",
-        "taunt",
-        "toxic"
+        "psychic",
+        "triattack",
+        "calmmind",
+        "moonblast"
       ],
       "ivs": {
         "hp": 16,
@@ -76,22 +22,22 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "cobblemon:muscle_band",
+      "heldItem": "cobblemon:psychic_seed",
       "aspects": [
         "female"
       ]
     },
     {
-      "species": "cobblemon:clodsire",
+      "species": "cobblemon:reuniclus",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:impish",
-      "ability": "poisonpoint",
+      "nature": "cobblemon:bold",
+      "ability": "magicguard",
       "moveset": [
-        "earthquake",
-        "megahorn",
-        "poisonjab",
-        "toxicspikes"
+        "recover",
+        "lightscreen",
+        "reflect",
+        "psychic"
       ],
       "ivs": {
         "hp": 16,
@@ -106,6 +52,60 @@
       "heldItem": "cobblemon:leftovers",
       "aspects": [
         "female"
+      ]
+    },
+    {
+      "species": "cobblemon:espeon",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "magicbounce",
+      "moveset": [
+        "psychic",
+        "dazzlinggleam",
+        "shadowball",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:meowstic",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "prankster",
+      "moveset": [
+        "thunderwave",
+        "calmmind",
+        "hyperbeam",
+        "psychicnoise"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
       ]
     }
   ],

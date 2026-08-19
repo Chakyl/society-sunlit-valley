@@ -1,0 +1,94 @@
+{"displayName": "Maestro Scribe+",
+  "team": [
+    {
+      "species": "cobblemon:garchomp",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:modest",
+      "ability": "roughskin",
+      "moveset": [
+        "dragonclaw",
+        "earthquake",
+        "crunch",
+        "poisonjab"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:rocky_helmet",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:salamence",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:calm",
+      "ability": "moxie",
+      "moveset": [
+        "dualwingbeat",
+        "dragonclaw",
+        "zenheadbutt",
+        "ironhead"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:baxcalibur",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "thermalexchange",
+      "moveset": [
+        "glaiverush",
+        "dragonclaw",
+        "iciclecrash",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

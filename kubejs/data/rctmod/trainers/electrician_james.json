@@ -1,70 +1,70 @@
-{"displayName": "Poisoner Maomao",
+{"displayName": "Electrician James",
   "team": [
     {
-      "species": "cobblemon:crobat",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:docile",
-      "ability": "innerfocus",
-      "moveset": [
-        "leechlife",
-        "crosspoison",
-        "bite",
-        "wingattack"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:assault_vest",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:drapion",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:adamant",
-      "ability": "sniper",
-      "moveset": [
-        "crunch",
-        "icefang",
-        "xscissor",
-        "crosspoison"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:wide_lens",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:toxicroak",
+      "species": "cobblemon:pikachu",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:sassy",
-      "ability": "dryskin",
+      "nature": "cobblemon:modest",
+      "ability": "static",
       "moveset": [
-        "suckerpunch",
-        "poisonjab",
-        "taunt",
-        "toxic"
+        "thunderbolt",
+        "irontail",
+        "playrough",
+        "drainingkiss"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:light_ball",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:luxray",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "guts",
+      "moveset": [
+        "psychicfangs",
+        "thunderfang",
+        "firefang",
+        "icefang"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:flame_orb",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:electivire",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "vitalspirit",
+      "moveset": [
+        "supercellslam",
+        "gigaimpact",
+        "icepunch",
+        "earthquake"
       ],
       "ivs": {
         "hp": 16,
@@ -78,20 +78,17 @@
       "shiny": false,
       "heldItem": "cobblemon:muscle_band",
       "aspects": [
-        "female"
+        "male"
       ]
     },
     {
-      "species": "cobblemon:clodsire",
-      "gender": "FEMALE",
+      "species": "cobblemon:electrode",
+      "gender": "MALE",
       "level": 95,
-      "nature": "cobblemon:impish",
-      "ability": "poisonpoint",
+      "nature": "cobblemon:rash",
+      "ability": "aftermath",
       "moveset": [
-        "earthquake",
-        "megahorn",
-        "poisonjab",
-        "toxicspikes"
+        "explosion"
       ],
       "ivs": {
         "hp": 16,
@@ -103,9 +100,10 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "cobblemon:leftovers",
+      "heldItem": "cobblemon:choice_band",
       "aspects": [
-        "female"
+        "male",
+        "hisuian"
       ]
     }
   ],

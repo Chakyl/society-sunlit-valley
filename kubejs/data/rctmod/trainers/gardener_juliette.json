@@ -1,16 +1,16 @@
-{"displayName": "Poisoner Maomao",
+{"displayName": "Gardener Juliette",
   "team": [
     {
-      "species": "cobblemon:crobat",
-      "gender": "MALE",
+      "species": "cobblemon:lurantis",
+      "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:docile",
-      "ability": "innerfocus",
+      "nature": "cobblemon:adamant",
+      "ability": "contrary",
       "moveset": [
+        "superpower",
+        "petalblizzard",
         "leechlife",
-        "crosspoison",
-        "bite",
-        "wingattack"
+        "nightslash"
       ],
       "ivs": {
         "hp": 16,
@@ -24,20 +24,47 @@
       "shiny": false,
       "heldItem": "cobblemon:assault_vest",
       "aspects": [
-        "male"
+        "female"
       ]
     },
     {
-      "species": "cobblemon:drapion",
+      "species": "cobblemon:shiftry",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "chlorophyll",
+      "moveset": [
+        "sunnyday",
+        "synthesis",
+        "suckerpunch",
+        "solarblade"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:lilligant",
       "gender": "MALE",
       "level": 95,
-      "nature": "cobblemon:adamant",
-      "ability": "sniper",
+      "nature": "cobblemon:relaxed",
+      "ability": "hustle",
       "moveset": [
-        "crunch",
-        "icefang",
-        "xscissor",
-        "crosspoison"
+        "leafblade",
+        "victorydance",
+        "axekick",
+        "tripleaxel"
       ],
       "ivs": {
         "hp": 16,
@@ -51,61 +78,35 @@
       "shiny": false,
       "heldItem": "cobblemon:wide_lens",
       "aspects": [
+        "male",
+        "hisuian"
+      ]
+    },
+    {
+      "species": "cobblemon:arboliva",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "seedsower",
+      "moveset": [
+        "gigadrain",
+        "dazzlinggleam",
+        "earthpower",
+        "pollenpuff"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:grassy_seed",
+      "aspects": [
         "male"
-      ]
-    },
-    {
-      "species": "cobblemon:toxicroak",
-      "gender": "FEMALE",
-      "level": 95,
-      "nature": "cobblemon:sassy",
-      "ability": "dryskin",
-      "moveset": [
-        "suckerpunch",
-        "poisonjab",
-        "taunt",
-        "toxic"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:muscle_band",
-      "aspects": [
-        "female"
-      ]
-    },
-    {
-      "species": "cobblemon:clodsire",
-      "gender": "FEMALE",
-      "level": 95,
-      "nature": "cobblemon:impish",
-      "ability": "poisonpoint",
-      "moveset": [
-        "earthquake",
-        "megahorn",
-        "poisonjab",
-        "toxicspikes"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:leftovers",
-      "aspects": [
-        "female"
       ]
     }
   ],

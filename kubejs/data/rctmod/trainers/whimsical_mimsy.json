@@ -1,70 +1,16 @@
-{"displayName": "Poisoner Maomao",
+{"displayName": "Whimsical Mimsy",
   "team": [
     {
-      "species": "cobblemon:crobat",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:docile",
-      "ability": "innerfocus",
-      "moveset": [
-        "leechlife",
-        "crosspoison",
-        "bite",
-        "wingattack"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:assault_vest",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:drapion",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:adamant",
-      "ability": "sniper",
-      "moveset": [
-        "crunch",
-        "icefang",
-        "xscissor",
-        "crosspoison"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:wide_lens",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:toxicroak",
+      "species": "cobblemon:rapidash",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:sassy",
-      "ability": "dryskin",
+      "nature": "cobblemon:rash",
+      "ability": "pastelveil",
       "moveset": [
-        "suckerpunch",
-        "poisonjab",
-        "taunt",
-        "toxic"
+        "psychocut",
+        "stomp",
+        "smartstrike",
+        "swordsdance"
       ],
       "ivs": {
         "hp": 16,
@@ -78,20 +24,46 @@
       "shiny": false,
       "heldItem": "cobblemon:muscle_band",
       "aspects": [
-        "female"
+        "female",
+        "galarian"
       ]
     },
     {
-      "species": "cobblemon:clodsire",
+      "species": "cobblemon:florges",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:impish",
-      "ability": "poisonpoint",
+      "nature": "cobblemon:bold",
+      "ability": "flowerveil",
       "moveset": [
-        "earthquake",
-        "megahorn",
-        "poisonjab",
-        "toxicspikes"
+        "synthesis",
+        "moonblast",
+        "energyball",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "female",
+        "whiteflower"
+      ]
+    },
+    {
+      "species": "cobblemon:wigglytuff",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "competitive",
+      "moveset": [
+        "metronome"
       ],
       "ivs": {
         "hp": 16,
@@ -105,7 +77,34 @@
       "shiny": false,
       "heldItem": "cobblemon:leftovers",
       "aspects": [
-        "female"
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:sylveon",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "pixilate",
+      "moveset": [
+        "sleeptalk",
+        "psychic",
+        "doubleedge",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:fairy_feather",
+      "aspects": [
+        "male"
       ]
     }
   ],

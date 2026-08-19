@@ -1,70 +1,16 @@
-{"displayName": "Poisoner Maomao",
+{"displayName": "Frosted Flake Jexsam",
   "team": [
     {
-      "species": "cobblemon:crobat",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:docile",
-      "ability": "innerfocus",
-      "moveset": [
-        "leechlife",
-        "crosspoison",
-        "bite",
-        "wingattack"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:assault_vest",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:drapion",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:adamant",
-      "ability": "sniper",
-      "moveset": [
-        "crunch",
-        "icefang",
-        "xscissor",
-        "crosspoison"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:wide_lens",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:toxicroak",
+      "species": "cobblemon:ninetales",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:sassy",
-      "ability": "dryskin",
+      "nature": "cobblemon:modest",
+      "ability": "snowwarning",
       "moveset": [
-        "suckerpunch",
-        "poisonjab",
-        "taunt",
-        "toxic"
+        "blizzard",
+        "nastyplot",
+        "extrasensory",
+        "willowisp"
       ],
       "ivs": {
         "hp": 16,
@@ -76,22 +22,23 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "cobblemon:muscle_band",
+      "heldItem": "cobblemon:wise_glasses",
       "aspects": [
-        "female"
+        "male",
+        "alolan"
       ]
     },
     {
-      "species": "cobblemon:clodsire",
+      "species": "cobblemon:froslass",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:impish",
-      "ability": "poisonpoint",
+      "nature": "cobblemon:calm",
+      "ability": "snowcloak",
       "moveset": [
-        "earthquake",
-        "megahorn",
-        "poisonjab",
-        "toxicspikes"
+        "willowisp",
+        "blizzard",
+        "hex",
+        "thunderbolt"
       ],
       "ivs": {
         "hp": 16,
@@ -107,6 +54,60 @@
       "aspects": [
         "female"
       ]
+    },
+    {
+      "species": "cobblemon:aurorus",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "snowwarning",
+      "moveset": [
+        "freezedry",
+        "earthpower",
+        "flashcannon",
+        "meteorbeam"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:power_herb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:lapras",
+      "gender": "male",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "shellarmor",
+      "moveset": [
+        "blizzard",
+        "thunderbolt",
+        "alluringvoice",
+        "psychicnoise"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
     }
   ],
   "winCommand": "",
@@ -116,6 +117,6 @@
   "partyMaximumLevel": 100,
   "battleType": "singles",
   "aiLevel": 5,
-  "randomizeLeads": true,
+  "randomizeLeads": false,
   "defeatRequiredTrainers": []
 }

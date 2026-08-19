@@ -1,17 +1,16 @@
-{"displayName": "Poisoner Maomao",
+{"displayName": "Ace Swimmer Jameson",
   "team": [
     {
-      "species": "cobblemon:crobat",
+      "species": "cobblemon:samurott",
       "gender": "MALE",
       "level": 95,
-      "nature": "cobblemon:docile",
-      "ability": "innerfocus",
+      "nature": "cobblemon:naughty",
+      "ability": "sharpness",
       "moveset": [
-        "leechlife",
-        "crosspoison",
-        "bite",
-        "wingattack"
-      ],
+        "razorshell",
+        "furycutter",
+        "aerialace",
+        "ceaselessedge"],
       "ivs": {
         "hp": 16,
         "attack": 16,
@@ -22,76 +21,23 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "cobblemon:assault_vest",
+      "heldItem": "cobblemon:shell_bell",
       "aspects": [
-        "male"
+        "male",
+        "hisuian"
       ]
     },
     {
-      "species": "cobblemon:drapion",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:adamant",
-      "ability": "sniper",
-      "moveset": [
-        "crunch",
-        "icefang",
-        "xscissor",
-        "crosspoison"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:wide_lens",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:toxicroak",
+      "species": "cobblemon:milotic",
       "gender": "FEMALE",
       "level": 95,
-      "nature": "cobblemon:sassy",
-      "ability": "dryskin",
+      "nature": "cobblemon:rash",
+      "ability": "competitive",
       "moveset": [
-        "suckerpunch",
-        "poisonjab",
-        "taunt",
-        "toxic"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:muscle_band",
-      "aspects": [
-        "female"
-      ]
-    },
-    {
-      "species": "cobblemon:clodsire",
-      "gender": "FEMALE",
-      "level": 95,
-      "nature": "cobblemon:impish",
-      "ability": "poisonpoint",
-      "moveset": [
-        "earthquake",
-        "megahorn",
-        "poisonjab",
-        "toxicspikes"
+        "coil",
+        "surf",
+        "aquaring",
+        "drainingkiss"
       ],
       "ivs": {
         "hp": 16,
@@ -106,6 +52,60 @@
       "heldItem": "cobblemon:leftovers",
       "aspects": [
         "female"
+      ]
+    },
+    {
+      "species": "cobblemon:tentacruel",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "raindish",
+      "moveset": [
+        "raindance",
+        "muddywater",
+        "sludgewave",
+        "gigadrain"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:black_sludge",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:lapras",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "waterabsorb",
+      "moveset": [
+        "icebeam",
+        "hydropump",
+        "psychic",
+        "thunderbolt"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
       ]
     }
   ],
