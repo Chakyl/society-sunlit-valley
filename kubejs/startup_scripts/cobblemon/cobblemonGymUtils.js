@@ -452,6 +452,26 @@ const trainerBuckets = new Map([
       "ranger_beth_0255",
       "black_belt_hugh_022a",
       "swimmerf_amara_0222",
+      "dragon_tamer_scribe",
+      "the_legendary_mew_n",
+      "frosted_flake_jexsam",
+      "whimsical_mimsy",
+      "psychic_matt",
+      "electrician_james",
+      "gardener_juliette",
+      "ace_swimmer_jameson",
+      "flame_eater_bryce",
+      "foundry_worker_jarvis",
+      "hex_maniac_sabrina",
+      "rock_collector_adrianne",
+      "archaeologist_stephanie",
+      "poisoner_maomao",
+      "bird_keeper_jeremy",
+      "punch_man_fighter",
+      "normal_guy_jake",
+      "bug_catcher_jimothy",
+
+
     ]
   ]
 ]);
@@ -553,8 +573,8 @@ global.getRandomTrainer = (levelBucket, upgraded) => {
 
 global.getPlayerPodiumLevelTier = (partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5) - 5);
 
-const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma"];
-const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
+const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma", "carlos", "veronica", "evelyne"];
+const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "carlos", "veronica", "evelyne"];
 
 global.getLeagueBoss = (levelBucket, upgraded) => {
   let bossNumber = Math.min(8, Math.max(1, Math.floor(levelBucket / 10) - 1));

@@ -3,7 +3,7 @@
     {
       "species": "cobblemon:alakazam",
       "gender": "MALE",
-      "level": 90,
+      "level": 100,
       "nature": "cobblemon:bold",
       "ability": "magicguard",
       "moveset": [
@@ -29,7 +29,7 @@
     {
       "species": "cobblemon:ditto",
       "gender": "GENDERLESS",
-      "level": 90,
+      "level": 100,
       "nature": "cobblemon:timid",
       "ability": "imposter",
       "moveset": [
@@ -53,7 +53,7 @@
     {
       "species": "cobblemon:noctowl",
       "gender": "FEMALE",
-      "level": 90,
+      "level": 100,
       "nature": "cobblemon:modest",
       "ability": "keeneye",
       "moveset": [
@@ -80,7 +80,7 @@
     {
       "species": "cobblemon:togekiss",
       "gender": "MALE",
-      "level": 90,
+      "level": 100,
       "nature": "cobblemon:jolly",
       "ability": "serenegrace",
       "moveset": [
@@ -107,7 +107,7 @@
     {
       "species": "cobblemon:espeon",
       "gender": "MALE",
-      "level": 90,
+      "level": 100,
       "nature": "cobblemon:bashful",
       "ability": "synchronize",
       "moveset": [
@@ -134,7 +134,7 @@
     {
       "species": "cobblemon:sylveon",
       "gender": "FEMALE",
-      "level": 90,
+      "level": 100,
       "nature": "cobblemon:docile",
       "ability": "pixilate",
       "moveset": [
@@ -163,6 +163,7 @@
   "lossCommand": "",
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
+  "aiLevel": 7,
   "partyMaximumLevel": 100,
   "defeatRequiredTrainers": []
 }

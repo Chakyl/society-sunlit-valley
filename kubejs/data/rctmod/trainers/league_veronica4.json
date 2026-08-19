@@ -1,35 +1,9 @@
 {
   "team": [
     {
-      "species": "cobblemon:alakazam",
-      "gender": "MALE",
-      "level": 40,
-      "nature": "cobblemon:bold",
-      "ability": "magicguard",
-      "moveset": [
-        "psyshock",
-        "recover",
-        "psybeam",
-        "disable"
-      ],
-      "ivs": {
-        "hp": 8,
-        "attack": 9,
-        "defence": 14,
-        "special_attack": 13,
-        "special_defence": 2
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "minecraft:air",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
       "species": "cobblemon:ditto",
       "gender": "GENDERLESS",
-      "level": 40,
+      "level": 60,
       "nature": "cobblemon:timid",
       "ability": "imposter",
       "moveset": [
@@ -45,7 +19,7 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:sitrus_berry",
       "aspects": [
         "genderless"
       ]
@@ -53,11 +27,11 @@
     {
       "species": "cobblemon:noctowl",
       "gender": "FEMALE",
-      "level": 40,
+      "level": 60,
       "nature": "cobblemon:modest",
       "ability": "keeneye",
       "moveset": [
-        "synchronoise",
+        "moonblast",
         "extrasensory",
         "airslash",
         "echoedvoice"
@@ -72,7 +46,7 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:sitrus_berry",
       "aspects": [
         "female"
       ]
@@ -80,7 +54,7 @@
     {
       "species": "cobblemon:togetic",
       "gender": "MALE",
-      "level": 40,
+      "level": 60,
       "nature": "cobblemon:jolly",
       "ability": "serenegrace",
       "moveset": [
@@ -99,7 +73,7 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:leftovers",
       "aspects": [
         "male"
       ]
@@ -107,7 +81,7 @@
     {
       "species": "cobblemon:espeon",
       "gender": "MALE",
-      "level": 40,
+      "level": 60,
       "nature": "cobblemon:bashful",
       "ability": "synchronize",
       "moveset": [
@@ -126,7 +100,7 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:wise_glasses",
       "aspects": [
         "male"
       ]
@@ -134,14 +108,14 @@
     {
       "species": "cobblemon:sylveon",
       "gender": "FEMALE",
-      "level": 40,
+      "level": 60,
       "nature": "cobblemon:docile",
       "ability": "pixilate",
       "moveset": [
+        "moonblast",
         "drainingkiss",
-        "charm",
-        "lightscreen",
-        "babydolleyes"
+        "shadowball",
+        "magicalleaf"
       ],
       "ivs": {
         "hp": 10,
@@ -153,9 +127,35 @@
       },
       "evs": {},
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:fairy_feather",
       "aspects": [
-        "female"
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:alakazam",
+      "gender": "MALE",
+      "level": 60,
+      "nature": "cobblemon:bold",
+      "ability": "magicguard",
+      "moveset": [
+        "psyshock",
+        "recover",
+        "psychic",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 8,
+        "attack": 9,
+        "defence": 14,
+        "special_attack": 13,
+        "special_defence": 2
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
       ]
     }
   ],
@@ -163,6 +163,7 @@
   "lossCommand": "",
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
+  "aiLevel": 7,
   "partyMaximumLevel": 100,
   "defeatRequiredTrainers": []
 }

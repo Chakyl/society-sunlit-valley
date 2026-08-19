@@ -3,7 +3,7 @@
     {
       "species": "cobblemon:gholdengo",
       "gender": "GENDERLESS",
-      "level": 90,
+      "level": 80,
       "nature": "cobblemon:timid",
       "ability": "goodasgold",
       "moveset": [
@@ -30,7 +30,7 @@
     {
       "species": "cobblemon:persian",
       "gender": "MALE",
-      "level": 90,
+      "level": 80,
       "nature": "cobblemon:brave",
       "ability": "technician",
       "moveset": [
@@ -57,7 +57,7 @@
     {
       "species": "cobblemon:bruxish",
       "gender": "MALE",
-      "level": 90,
+      "level": 80,
       "nature": "cobblemon:calm",
       "ability": "strongjaw",
       "moveset": [
@@ -84,7 +84,7 @@
     {
       "species": "cobblemon:perrserker",
       "gender": "MALE",
-      "level": 90,
+      "level": 80,
       "nature": "cobblemon:hasty",
       "ability": "toughclaws",
       "moveset": [
@@ -111,7 +111,7 @@
     {
       "species": "cobblemon:golduck",
       "gender": "MALE",
-      "level": 90,
+      "level": 80,
       "nature": "cobblemon:relaxed",
       "ability": "damp",
       "moveset": [
@@ -137,7 +137,7 @@
     {
       "species": "cobblemon:sableye",
       "gender": "FEMALE",
-      "level": 90,
+      "level": 80,
       "nature": "cobblemon:hardy",
       "ability": "keeneye",
       "moveset": [
@@ -166,6 +166,7 @@
   "lossCommand": "",
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
+  "aiLevel": 7,
   "partyMaximumLevel": 100,
   "defeatRequiredTrainers": []
 }

@@ -120,16 +120,16 @@
       ]
     },
     {
-      "species": "cobblemon:gourgeist",
-      "gender": "FEMALE",
+      "species": "cobblemon:latios",
+      "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:adamant",
-      "ability": "insomnia",
+      "nature": "cobblemon:modest",
+      "ability": "levitate",
       "moveset": [
-        "trickortreat",
-        "razorleaf",
-        "shadowsneak",
-        "moonblast"
+        "lusterpurge",
+        "dragonpulse",
+        "mysticalfire",
+        "calmmind"
       ],
       "ivs": {
         "hp": 31,
@@ -140,27 +140,26 @@
         "speed": 31
       },
       "evs": {
-        "attack": 252,
+        "special_attack": 252,
         "speed": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:miracle_seed",
+      "heldItem": "cobblemon:soul_dew",
       "aspects": [
-        "female",
-        "pumpkin-size-super"
+        "male"
       ]
     },
     {
-      "species": "cobblemon:sinistcha",
-      "gender": "GENDERLESS",
+      "species": "cobblemon:latias",
+      "gender": "FEMALE",
       "level": 100,
-      "nature": "cobblemon:serious",
-      "ability": "hospitality",
+      "nature": "cobblemon:modest",
+      "ability": "levitate",
       "moveset": [
-        "matchagotcha",
-        "foulplay",
-        "strengthsap",
-        "shadowball"
+        "mistball",
+        "dragonpulse",
+        "airslash",
+        "calmmind"
       ],
       "ivs": {
         "hp": 31,
@@ -171,12 +170,13 @@
         "speed": 31
       },
       "evs": {
-        "defence": 252
+        "speed": 252,
+        "special_attack": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:miracle_seed",
+      "heldItem": "soul_dew",
       "aspects": [
-        "genderless"
+        "female"
       ]
     }
   ],
@@ -184,6 +184,7 @@
   "lossCommand": "",
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
+  "aiLevel": 9,
   "partyMaximumLevel": 100,
   "defeatRequiredTrainers": []
 }

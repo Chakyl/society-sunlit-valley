@@ -3,7 +3,7 @@
     {
       "species": "cobblemon:hatterene",
       "gender": "FEMALE",
-      "level": 70,
+      "level": 50,
       "nature": "cobblemon:calm",
       "ability": "anticipation",
       "moveset": [
@@ -30,7 +30,7 @@
     {
       "species": "cobblemon:grimmsnarl",
       "gender": "MALE",
-      "level": 70,
+      "level": 50,
       "nature": "cobblemon:naive",
       "ability": "frisk",
       "moveset": [
@@ -57,7 +57,7 @@
     {
       "species": "cobblemon:mimikyu",
       "gender": "MALE",
-      "level": 70,
+      "level": 50,
       "nature": "cobblemon:rash",
       "ability": "disguise",
       "moveset": [
@@ -84,7 +84,7 @@
     {
       "species": "cobblemon:chandelure",
       "gender": "FEMALE",
-      "level": 70,
+      "level": 50,
       "nature": "cobblemon:hasty",
       "ability": "flashfire",
       "moveset": [
@@ -111,7 +111,7 @@
     {
       "species": "cobblemon:gourgeist",
       "gender": "FEMALE",
-      "level": 70,
+      "level": 50,
       "nature": "cobblemon:quirky",
       "ability": "pickup",
       "moveset": [
@@ -139,7 +139,7 @@
     {
       "species": "cobblemon:poltchageist",
       "gender": "GENDERLESS",
-      "level": 70,
+      "level": 50,
       "nature": "cobblemon:serious",
       "ability": "hospitality",
       "moveset": [
@@ -167,6 +167,7 @@
   "lossCommand": "",
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
+  "aiLevel": 7,
   "partyMaximumLevel": 100,
   "defeatRequiredTrainers": []
 }
