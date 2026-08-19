@@ -45,9 +45,9 @@
 	#If enabled, new loot pools will be added to chest loot across the game, containing items from this mod (ropes, crops, tools etc).
 	generateFDChestLoot = false
 	#If enabled, Compost Heaps (structures containing Organic Compost piles) will sometimes generate across Villages.
-	generateVillageCompostHeaps = true
+	generateVillageCompostHeaps = false
 	#If enabled, crops from Farmer's Delight will sometimes replace standard crops in village farm plots.
-	generateFDCropsOnVillageFarms = true
+	generateFDCropsOnVillageFarms = false
 
 #Crafting
 [crafting]
