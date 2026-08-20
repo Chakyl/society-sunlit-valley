@@ -532,7 +532,7 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
         level,
         "society:raw_logs",
         plushieBlock,
-        7,
+        3,
         true
       );
       if (nearbyLogs.length > 0) {
