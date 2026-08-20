@@ -1,4 +1,4 @@
-console.info("[SOCIETY-S-COBBLEMON] trainerPodium.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] registerCobblemonTrainerPodium.js loaded");
 
 global.removeNearbyTrainers = (level, block, forceRemoval) => {
   let noTrainers = false;

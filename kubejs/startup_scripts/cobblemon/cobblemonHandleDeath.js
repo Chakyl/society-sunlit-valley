@@ -22,7 +22,7 @@ global.handleCobblemonDefeat = (e) => {
       loserLevels.push(element.originalPokemon.getLevel());
     });
   });
-  if (winningPlayer.isPlayer() && (losingPlayer && losingPlayer.isPlayer())) return;
+  if ((winningPlayer && winningPlayer.isPlayer()) && (losingPlayer && losingPlayer.isPlayer())) return;
   if (winningPlayer && winningPlayer.isPlayer()) {
     let reward = 0;
     loserLevels.forEach((loserLevel) => {
@@ -73,7 +73,7 @@ global.handleCobblemonDefeat = (e) => {
       )
     );
   } else if (
-    !winningPlayer.isPlayer() &&
+    winningPlayer && !winningPlayer.isPlayer() &&
     winningPlayer.type == "rctmod:trainer"
   ) {
     losingPlayer.persistentData.bagItemsUsed = 0;

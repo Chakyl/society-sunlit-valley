@@ -1,0 +1,94 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:talonflame",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:sassy",
+      "ability": "galewings",
+      "moveset": [
+        "bravebird",
+        "tailwind",
+        "flareblitz",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 15,
+        "attack": 24,
+        "defence": 13,
+        "special_attack": 19,
+        "special_defence": 12,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:dragapult",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:mild",
+      "ability": "clearbody",
+      "moveset": [
+        "phantomforce",
+        "uturn",
+        "dragondarts",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 13,
+        "defence": 4,
+        "special_attack": 5,
+        "special_defence": 9,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:baxcalibur",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:rash",
+      "ability": "thermalexchange",
+      "moveset": [
+        "highhorsepower",
+        "iciclespear",
+        "scaleshot",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 24,
+        "attack": 26,
+        "defence": 7,
+        "special_attack": 9,
+        "special_defence": 8,
+        "speed": 3
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "doubles",
+  "aiLevel": 10,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

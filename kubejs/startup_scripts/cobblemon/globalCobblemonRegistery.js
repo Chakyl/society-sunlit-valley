@@ -414,7 +414,6 @@ global.cobblemonFarmerProducts = [
   { item: "sunlit_cobblemon:resonance_gem", value: 460 },
   { item: "sunlit_cobblemon:moondust", value: 860 },
   { item: "sunlit_cobblemon:electro_wool", value: 512 },
-  { item: "sunlit_cobblemon:electric_canvas", value: 8192 },
   { item: "sunlit_cobblemon:spider_milk", value: 1 },
   { item: "sunlit_cobblemon:moomoo_milk", value: 320 },
   { item: "sunlit_cobblemon:large_moomoo_milk", value: 1280 },
@@ -458,6 +457,7 @@ global.cobblemonDehydrated = [
 ];
 
 global.cobblemonArtisan = [
+  { item: "sunlit_cobblemon:electric_canvas", value: 8192 },
   { item: "sunlit_cobblemon:venomshine", value: 480 },
   { item: "sunlit_cobblemon:moomoo_cheese", value: 640 },
   { item: "sunlit_cobblemon:aged_moomoo_cheese", value: 1920 },
