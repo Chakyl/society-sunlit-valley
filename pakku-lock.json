@@ -3699,7 +3699,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "copycats-3.0.7+mc.1.20.1-forge.jar",
+                    "file_name": "copycats-3.0.8+mc.1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3708,18 +3708,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7634/682/copycats-3.0.7+mc.1.20.1-forge.jar",
-                    "id": "7634682",
+                    "url": "https://edge.forgecdn.net/files/8692/227/copycats-3.0.8+mc.1.20.1-forge.jar",
+                    "id": "8692227",
                     "parent_id": "968398",
                     "hashes": {
-                        "sha1": "5d0f497695fc2ee4ef89f1898458882b9d2d3aad",
-                        "md5": "47e13c8058d400e4a6316d00f451b29c"
+                        "sha1": "d30a7bc854d0b414155fc6e8dedbd7a82d452465",
+                        "md5": "c8b104debd963337f98b76eb2964b387"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 1996097,
-                    "date_published": "2026-02-16T17:37:39.993Z"
+                    "size": 2003578,
+                    "date_published": "2026-08-20T15:14:56.320Z"
                 }
             ]
         },
@@ -11475,7 +11475,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "scholar-1.20.1-1.2.3-forge.jar",
+                    "file_name": "scholar-1.20.1-1.2.5.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11483,16 +11483,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8423/707/scholar-1.20.1-1.2.3-forge.jar",
-                    "id": "8423707",
+                    "url": "https://edge.forgecdn.net/files/8613/699/scholar-1.20.1-1.2.5.1-forge.jar",
+                    "id": "8613699",
                     "parent_id": "961802",
                     "hashes": {
-                        "sha1": "f0dd4e87872f81db8136ef19aa33e1420403da65",
-                        "md5": "c7f39f8efa916da15723c6c342b5cba6"
+                        "sha1": "925b42ce059db92ce33c3b8c205924dac996c5fd",
+                        "md5": "8388850796a2578e3ed6dbe571963b2e"
                     },
                     "required_dependencies": [],
-                    "size": 849522,
-                    "date_published": "2026-07-13T08:31:09.867Z"
+                    "size": 849896,
+                    "date_published": "2026-08-10T03:33:45.207Z"
                 }
             ]
         },
@@ -12417,7 +12417,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society-1.20.jar",
+                    "file_name": "society-1.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12425,16 +12425,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8603/47/society-1.20.jar",
-                    "id": "8603047",
+                    "url": "https://edge.forgecdn.net/files/8684/561/society-1.22.jar",
+                    "id": "8684561",
                     "parent_id": "1424785",
                     "hashes": {
-                        "sha1": "fc19e04e900003401803fa7ddbbbfa76c7885544",
-                        "md5": "80f2e513763dc5c77e886f45adebd272"
+                        "sha1": "8a3797329f678a63c707e76f589246b89eabe741",
+                        "md5": "73dc77157d3e6013a804c935d8b117c3"
                     },
                     "required_dependencies": [],
-                    "size": 67754283,
-                    "date_published": "2026-08-08T16:41:42.677Z"
+                    "size": 69954758,
+                    "date_published": "2026-08-19T13:26:18.647Z"
                 }
             ]
         },
@@ -12790,6 +12790,44 @@
                     ],
                     "size": 511858,
                     "date_published": "2026-08-08T14:49:31.270Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "jnOyW8wEvtTXcohe",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "squid-no-glitch"
+            },
+            "name": {
+                "curseforge": "Squid No Glitch"
+            },
+            "id": {
+                "curseforge": "923510"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "squidnoglitch-mc1.20.1-v1.0.3-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5345/186/squidnoglitch-mc1.20.1-v1.0.3-forge.jar",
+                    "id": "5345186",
+                    "parent_id": "923510",
+                    "hashes": {
+                        "sha1": "a4f8e186bc18b86087b0ce00c7e833e9a279c973",
+                        "md5": "f73491c210b6249e597dd23487177c3d"
+                    },
+                    "required_dependencies": [],
+                    "size": 87910,
+                    "date_published": "2024-05-15T07:51:16.113Z"
                 }
             ]
         },

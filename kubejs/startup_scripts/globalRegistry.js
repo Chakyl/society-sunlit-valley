@@ -3,6 +3,7 @@ const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics")
 const NUMISMATICS_CURIO_UTILS = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
 
 global.GLOBAL_BANK = NUMISMATICS.BANK;
+global.getCardCurio = NUMISMATICS_CURIO_UTILS.getCardCurio;
 global.getPersonalOrCurioAccount = NUMISMATICS_CURIO_UTILS.getPersonalOrCurioAccount;
 global.depositIntoPersonalOrCurio = NUMISMATICS_CURIO_UTILS.depositIntoPersonalOrCurio;
 global.deductFromPersonalOrCurio = NUMISMATICS_CURIO_UTILS.deductFromPersonalOrCurio;
@@ -253,6 +254,7 @@ global.artifacts = [
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
   { item: "society:token_of_unity", value: 3 },
+  { item: "society:red_wrench", value: 233 },
 ];
 
 // Relics
