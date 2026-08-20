@@ -31,7 +31,7 @@
 //         { title: "enriched_bonemeal", content: "Enriched Bonemeal can grow Glow Berries and duplicate tea flowers." },
 //         { title: "skill_books", content: "Wandering Traders have a chance to sell special skill books." },
 //         { title: "pet_gifts", content: "Pets will give you special items at 10 hearts of affection." },
-//         { title: "exotic_trader", content: "The Exotic Trader sells upgrades to Artisan Machines." },
+//         { title: "trader", content: "The Trader sells upgrades to Artisan Machines." },
 //         { title: "almanac", content: "The Farmer's Almanac has information on all Crops, Farm Animals, and Pets." },
 //         { title: "quality_preserves", content: "Some Artisan Machines preserve the quality from ingredients, some don't." },
 //         { title: "barkeeper", content: "The Barkeeper sells food at a premium for those too lazy to cook. You know who I'm talking about." },

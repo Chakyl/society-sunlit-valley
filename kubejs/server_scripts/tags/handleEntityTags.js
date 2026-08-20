@@ -42,4 +42,11 @@ ServerEvents.tags("entity_type", (e) => {
   ["longwings:moth", "longwings:butterfly"].forEach((animal) => {
     e.add("society:longwing", animal);
   });
+
+  [].forEach((animal) => {
+    e.add("society:cannot_lasso", animal);
+  });
+  ["botania:doppleganger", "untitledduckmod:goose", "untitledduckmod:duck"].forEach((animal) => {
+    e.add("society:cannot_wicked_mask", animal);
+  });
 });

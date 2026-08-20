@@ -40,8 +40,13 @@ ItemEvents.rightClicked(
     "buildinggadgets2:gadget_cut_paste",
     "buildinggadgets2:gadget_destruction",
     "botania:smelt_rod",
-    "supplementaries:wrench"
-  ],
+    "supplementaries:wrench",
+    "society:red_wrench",
+    "portable_blueprints:blueprint",
+    "portable_blueprints:worn_blueprint",
+    "portable_blueprints:server_blueprint",
+    "portable_blueprints:scanner",
+    "portable_blueprints:tablet"],
   (e) => {
     if (e.player.level.dimension === "society:skull_cavern") {
       // TODO: Dialog

@@ -1,61 +1,18 @@
 console.info("[SOCIETY] coinLeaderboard.js loaded");
 
-const updateLeaderboardMap = (server) => {
-  let accountName;
-  let playerList = server.persistentData.playerList;
-  let overflowList = server.persistentData.overflowList;
-  if (!playerList) return undefined;
-  let leaderboardMap = new Map();
-  global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
-    accountName = playerList[playerUUID];
-    if (overflowList != null && overflowList[playerUUID] != null) {
-      leaderboardMap.set(
-        accountName,
-        bankAccount.getBalance() + overflowList[playerUUID] * 1006632960
-      );
-    } else {
-      if (!accountName) {
-        accountName = "";
-        Object.keys(server.persistentData.playerList).forEach((playerUUID) => {
-          if (accountName !== "" &&bankAccount.isAuthorized(playerUUID)) {
-            if (accountName !== "") accountName += playerList[playerUUID] +"'s Team"
-          }
-        })
-      }
-      leaderboardMap.set(accountName, bankAccount.getBalance());
-    }
-  });
-  return Array.from(leaderboardMap)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 10);
-};
-
-global.updateLeaderboard = (block, level, server) => {
-  let calcY = block.y + 3;
-  let leaderboardMap = updateLeaderboardMap(server);
+global.updateLeaderboard = (block, level) => {
+  let calcY = block.y + 3.25;
+  let leaderboardMap = global.leaderboard || [];
   if (!leaderboardMap) return;
-  if (global.susFunctionLogging)
-    console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
+  if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] coinLeaderboard.js");
   global.clearOldTextDisplay(block, level, "leaderboard");
-
-  // Display leaderboard name
-  global.spawnTextDisplay(
-    block,
-    calcY,
-    "leaderboard",
-    Text.translatable("block.society.coin_leaderboard.title")
-  );
-  // Display leaderboard accounts
+  global.spawnTextDisplay(block, calcY, "leaderboard", Text.translatable("block.society.coin_leaderboard.title"));
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
-    if (balanceStr[0].length <= 1) return;
+    const lbName = balanceStr[0]
+    if (lbName.length <= 1) return;
     calcY -= 0.3;
-    global.spawnTextDisplay(
-      block,
-      calcY,
-      "leaderboard",
-      Text.of(`§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`)
-    );
+    global.spawnTextDisplay(block, calcY, "leaderboard", Text.of(`§6${lbName} §7- §f● §6${global.formatPrice(balanceStr[1])}`));
   });
 };
 
@@ -76,7 +33,7 @@ StartupEvents.registry("block", (e) => {
     })
     .blockEntity((be) => {
       be.serverTick(600, 0, (tick) => {
-        global.updateLeaderboard(tick.block, tick.level, tick.level.server);
+        global.updateLeaderboard(tick.block, tick.level);
       });
     });
 });

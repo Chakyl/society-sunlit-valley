@@ -32,6 +32,8 @@ ServerEvents.tags("item", (e) => {
     "numismatics",
     "whimsydeco",
     "cluttered",
+    "splendid_slimes",
+    "portableblueprints"
   ];
   modBans.forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);
@@ -39,12 +41,12 @@ ServerEvents.tags("item", (e) => {
   e.add("furniture:trash_bag_blacklist", "#society:loot_furniture");
   e.add("furniture:trash_bag_blacklist", "#society:dish");
   const itemBans = [
-    "splendid_slimes:tarr_tarr",
+    'functionalstorage:max_storage_upgrade',
     "trials:trial_key",
     "trials:trial_key_ominous",
     "trials:heavy_core",
     "trials:ominous_bottle",
-    "wildernature:stylin_purple_hat", 
+    "wildernature:stylin_purple_hat",   
     "beachparty:crocs", 
     "minecraft:bedrock",
     "moblassos:creative_lasso",

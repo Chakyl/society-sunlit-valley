@@ -5,7 +5,7 @@ ServerEvents.recipes((e) => {
   e.shapeless(Item.of('minecraft:sugar', 8, '{quality_food:{quality:3}}'), ["society:maple_syrup"])
   e.shapeless(Item.of('minecraft:sugar', 3, '{quality_food:{quality:2}}'), ["minecraft:honey_bottle"])
   e.shapeless(Item.of('minecraft:sugar', 1, '{quality_food:{quality:1}}'), ["minecraft:sugar_cane"])
-  e.shapeless("farm_and_charm:raw_pasta", ['veggiesdelight:potato_noodle', 'veggiesdelight:potato_noodle','veggiesdelight:potato_noodle'])
+  e.shapeless("farm_and_charm:raw_pasta", ['veggiesdelight:potato_noodle', 'veggiesdelight:potato_noodle', 'veggiesdelight:potato_noodle'])
   e.shapeless("minecraft:feather", ['untitledduckmod:duck_feather'])
   e.shaped("atmospheric:blood_orange", ["mmm", "mom", "mmm"], {
     o: "atmospheric:orange",
@@ -68,6 +68,47 @@ ServerEvents.recipes((e) => {
     ],
     result: {
       item: "society:mexican_street_corn",
+    },
+  });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    ingredients: [
+      {
+        item: "farmersdelight:cooked_rice",
+      },
+      {
+        item: "golemoverhaul:honey_blob",
+      },
+      {
+        item: 'pamhc2trees:lemonitem',
+      }
+    ],
+    result: {
+      item: 'society:deep_a_mochi',
+    },
+  });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    ingredients: [
+      {
+        item: 'society:oil',
+      },
+      {
+        item: 'bakery:sweet_dough',
+      },
+      {
+        item: 'pamhc2trees:lemonitem',
+      },
+      {
+        item: 'minecraft:sugar',
+      }
+    ],
+    result: {
+      item: 'society:lemon_beignets',
     },
   });
   e.shapeless("quark:slime_in_a_bucket", [
@@ -157,7 +198,7 @@ ServerEvents.recipes((e) => {
     S: "unusualfishmod:raw_sneep_snorp",
     f: "meadow:fire_log",
   });
-    e.shaped("society:dry_totem", ["ppp", "ptp", "fff"], {
+  e.shaped("society:dry_totem", ["ppp", "ptp", "fff"], {
     p: "society:fire_quartz",
     t: "society:truffle_oil",
     f: "meadow:fire_log",
@@ -517,7 +558,7 @@ ServerEvents.recipes((e) => {
     s: "oreganized:silver_ingot",
     N: "aquaculture:algae",
   });
-    e.shaped("society:fish_pond_manager", ["NCN", "ScS", "NbN"], {
+  e.shaped("society:fish_pond_manager", ["NCN", "ScS", "NbN"], {
     c: "cozycafe:cafe_manager",
     C: "minecraft:conduit",
     b: "society:magic_bulb",
@@ -740,6 +781,11 @@ ServerEvents.recipes((e) => {
       "society:cranberry",
       "society:crystalberry",
     ],
+  ]);
+  e.shapeless('society:suspicious_milk_tea', [
+    'society:warped_milk',
+    'herbalbrews:black_tea',
+    'atmospheric:aloe_gel_bottle'
   ]);
   e.shapeless("4x farmersdelight:canvas", ["society:canvas"]);
   e.shapeless("1x society:tubasmoke_stick", [

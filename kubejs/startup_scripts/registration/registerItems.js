@@ -432,7 +432,8 @@ StartupEvents.registry("item", (e) => {
     const { item } = artifact;
     if (
       item !== "society:princess_hairbrush" &&
-      item !== "society:perfect_cherry"
+      item !== "society:perfect_cherry" &&
+      item !== "society:red_wrench"
     ) {
       e.create(item)
         .texture(`society:item/artifacts/${item.path}`)
@@ -480,6 +481,19 @@ StartupEvents.registry("item", (e) => {
         }
       });
     });
+  e.create("society:red_wrench")
+    .texture("society:item/artifacts/red_wrench")
+    .maxStackSize(1)
+    .tag("society:artifacts")
+    .tag("forge:tools")
+    .tag("forge:tools/wrench")
+    .tag("forge:wrenches")
+    .tag("farm_and_charm:hangable")
+    .tag("create:upright_on_deployer")
+    .tag("create:chain_rideable")
+    .tag("refurbished_furniture:items")
+    .tag("furniture:trash_bag_blacklist")
+    .tag("supplementaries:statue_tools");
 
   // Food
   e.create("society:energy_drink")
@@ -518,6 +532,16 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/drinks/death_liquid")
     .tooltip(
       Text.translatable("item.society.death_liquid.description").darkPurple()
+    )
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("minecraft:poison", 800, 2, 1.0);
+    })
+    .useAnimation("drink");
+  e.create("society:suspicious_milk_tea")
+    .texture("society:item/drinks/suspicious_milk_tea")
+    .tooltip(
+      Text.translatable("item.society.suspicious_milk_tea.description").darkPurple()
     )
     .food((food) => {
       food.fastToEat(true);
@@ -593,7 +617,20 @@ StartupEvents.registry("item", (e) => {
       food.hunger(2);
       food.saturation(2);
     });
-
+  e.create("society:deep_a_mochi")
+    .texture("society:item/deep_a_mochi")
+    .displayName("Deep-a-Mochi")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(2);
+    });
+  e.create("society:lemon_beignets")
+    .texture("society:item/lemon_beignets")
+    .food((food) => {
+      food.hunger(3);
+      food.saturation(3);
+      food.effect("farm_and_charm:sweets", 300, 1, 1.0);
+    });
   e.create("society:ancient_cookie")
     .texture("society:item/ancient_cookie")
     .food((food) => {

@@ -40,18 +40,16 @@ PlayerEvents.tick((e) => {
   const { player, level, server } = e;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % dayTickDuration;
+  let maxPlayTime = 20 * 60 * 30 * 4
   if (
     player.age % playerTickRate == 0 &&
     morningModulo >= playerProgTime &&
     morningModulo < playerProgTime + playerTickRate
   ) {
     // Sleeping cuts the amount of possible days by half
-    let yearCount =
-      player.stats.playTime / dayTickDuration / (((global.subSeasonDuration  * 3) * 4) / 2);
+    let yearCount = player.stats.playTime / dayTickDuration / (((global.subSeasonDuration * 3) * 4) / 2);
     if (
-      !player.stages.has("master_cultivator_unlocked") &&
-      yearCount > 1 &&
-      ["spring", "summer"].includes(global.getSeasonFromLevel(level))
+      !player.stages.has("master_cultivator_unlocked") && (player.stats.playTime > maxPlayTime || (yearCount > 1 && ["spring", "summer"].includes(global.getSeasonFromLevel(level))))
     ) {
       player.stages.add("master_cultivator_unlocked");
     }
