@@ -135,6 +135,18 @@ global.hasPartyPokemon = (player, pokemonNames, count) => {
   return regis.length >= count;
 };
 
+global.getPartyCount = (player) => {
+  if (player == undefined) return 0;
+  const party = global.getPlayerParty(player);
+  if (party == undefined) return 0;
+  let count = 0;
+  // why not use .size? i blame kotlin
+    party.forEach(() => {
+    count++;
+  });
+  return count;
+};
+
 global.partyIsMonotype = (player, type) => {
   if (player == undefined) return false;
   const party = global.getPlayerParty(player);

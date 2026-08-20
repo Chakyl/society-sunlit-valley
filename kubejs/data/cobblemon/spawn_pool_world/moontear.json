@@ -1,0 +1,596 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "moontear-flittle",
+            "pokemon": "flittle",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "55-70",
+            "weight": 5.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-spinda",
+            "pokemon": "spinda",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "55-70",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-minior",
+            "pokemon": "minior",
+            "presets": [],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "55-70",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-minior",
+            "pokemon": "minior",
+            "presets": [],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "55-70",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-natu",
+            "pokemon": "natu",
+            "presets": [],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "35-50",
+            "weight": 4.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-clefairy",
+            "pokemon": "clefairy",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "55-70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-glimmet",
+            "pokemon": "glimmet",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "25-50",
+            "weight": 7.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-solosis",
+            "pokemon": "solosis",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "25-40",
+            "weight": 5.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-inkay",
+            "pokemon": "inkay",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "25-50",
+            "weight": 7.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-lunatone",
+            "pokemon": "lunatone",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "45-70",
+            "weight": 4.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-gothita",
+            "pokemon": "gothita",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "25-50",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-gothitelle",
+            "pokemon": "gothitelle",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "65-70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-lunatone",
+            "pokemon": "lunatone",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "45-70",
+            "weight": 4.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-xatu",
+            "pokemon": "xatu",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "45-70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-solosis",
+            "pokemon": "solosis",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "35-40",
+            "weight": 5.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-reuniclus",
+            "pokemon": "reuniclus",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "45-70",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-meowstic",
+            "pokemon": "meowstic",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "45-70",
+            "weight": 4.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-elgyem",
+            "pokemon": "elgyem",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "45-70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-lunatone",
+            "pokemon": "lunatone",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "45-70",
+            "weight": 4.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-hattrem",
+            "pokemon": "hattrem",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "50-65",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-clefable",
+            "pokemon": "clefable",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "70-85",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-malamar",
+            "pokemon": "malamar",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "55-70",
+            "weight": 4.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-glimmora",
+            "pokemon": "glimmora",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "50-75",
+            "weight": 4.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-rabsca",
+            "pokemon": "rabsca",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "70-85",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-absol",
+            "pokemon": "absol",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "50-85",
+            "weight": 5.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-bronzor",
+            "pokemon": "bronzor",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "50-65",
+            "weight": 6.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-hatterene",
+            "pokemon": "hatterene",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "50-65",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-beheeyem",
+            "pokemon": "beheeyem",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "50-65",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-porygon",
+            "pokemon": "porygon",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "50-65",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-baltoy",
+            "pokemon": "baltoy",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-45",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-claydol",
+            "pokemon": "claydol",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "50-65",
+            "weight": 6.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-bronzong",
+            "pokemon": "bronzong",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "50-65",
+            "weight": 6.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-spiritomb",
+            "pokemon": "spiritomb",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "50-65",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-umbreon",
+            "pokemon": "umbreon",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "50-85",
+            "weight": 53.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        },
+        {
+            "id": "moontear-metagross",
+            "pokemon": "metagross",
+            "presets": [
+                "moontear"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "50-85",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "sunlit_cobblemon:moontear"
+                ]
+            }
+        }
+    ]
+}
