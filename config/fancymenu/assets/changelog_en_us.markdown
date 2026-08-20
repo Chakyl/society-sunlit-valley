@@ -1,35 +1,31 @@
 ^^^
 ## Cozy Cafe
-### v4.1.2
+### v4.1.3
 ^^^
 --- 
-## 4.1.2
-- Added recipe to convert potato noodles into raw pasta
-- Added recipe to convert duck feather into feather
-- Added changelog translation support (Thanks Hexagreen!)
-- Added axe mineable tag to cafe menu
-- Added emoji to new npcs
+- Added Pineconetown villager home set by beawitched
+- Added Deep-a-Mochi
+- Added Lemon Beignets
+- Added Suspicious Milk Tea
+- Added Ancient Builders Tool artifact
+- Added Red Wrench artifact
+- Added Overflow token support for shared accounts (Re-equip your bank card to update)
+- Changed Earth Crystal trader trade from rice to cotton
+- Changed Jade trader trade from Aegis Wine to dried Lemon 
+- Changed Coin Leadeboard to fetch data once instead of once per leaderboard, improving performance large servers
+- Increased height of coin leaderboard by 1/4th of a block to make it less smudged
+- Updated quality food mod which contains various quality fixes
 - Updated zh_cn translation (Thanks Thirace!)
 - Updated ko_kr translation (Thanks Hexagreen!)
-- Cleaned up tags for Whimsy Deco blocks
-- Fixed issues with the Wise Oak dialog
-- Fixed Fish Pond Hatchery not binding to players (will need to break and replace)
-- Fixed new villager quests accepting any invitation
-- Fixed librarian quest dependency being wrong
-- Fixed removed items being obtainable in loot
-- Fixed Fish Pond Hatchery not being upgradable
-- Fixed triple truffle not working with Auto Grabbers
-- Fixed issues with create schematics
-- Fixed Wise Oak having an invitation
-- Fixed Fish Pond Hatchery not working with magnifying glass
-- Fixed inaccurate areas of Ribbit Hut and Drum of the Cornucopia using the Magnifying Glass
-- Fixed tomatoes not crawling ropes
-- Fixed drink-only cafes causing infinite loitering
-- Fixed Slime Vac voiding largos when in offhand
-- Fixed mixed green tea block dropping green tea instead of dried green tea
-- Fixed dialogs not showing up for five gifts
-- Fixed grape stem/lattice not showing day counter in Jade
-- Fixed issue where growth fertilizer does not apply to Berry bushes, but appears to do so in jade
+- Removed ability to wicked mask certain entities due to chunkbans
+- Fixed shared accounts on Coin Leaderboard for real this time (Requires Re-equipping bank card) (Thanks ManlyTorch!)
+- Fixed Slime Golem and Otter decimating populations
+- Fixed certain Mushroom Logs dropping Red Mushroom Colonies instead of Brown
+- Fixed issues with the Sakura building set
+- Fixed Gnomes not being Gnomes on Gnomeymap
+- Fixed Smallmouth Bass not being catchable at night in Autumn
+- Fixed Woodsy Plushies working in wrong area
+- Fixed EMI not being searchable by blocktag by downgrading version
 
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
@@ -112,3 +108,31 @@
 - Fixed Artisan Hoppers, Fish Pond Baskets, and Auto-grabbers not accounting for skills due to caching change
 - Fixed issue where crossbows and paintings had missing models (probably)
 - Fixed crash with Create Central Kitchen
+
+## 4.1.2
+- Added recipe to convert potato noodles into raw pasta
+- Added recipe to convert duck feather into feather
+- Added changelog translation support (Thanks Hexagreen!)
+- Added axe mineable tag to cafe menu
+- Added emoji to new npcs
+- Updated zh_cn translation (Thanks Thirace!)
+- Updated ko_kr translation (Thanks Hexagreen!)
+- Cleaned up tags for Whimsy Deco blocks
+- Fixed issues with the Wise Oak dialog
+- Fixed Fish Pond Hatchery not binding to players (will need to break and replace)
+- Fixed new villager quests accepting any invitation
+- Fixed librarian quest dependency being wrong
+- Fixed removed items being obtainable in loot
+- Fixed Fish Pond Hatchery not being upgradable
+- Fixed triple truffle not working with Auto Grabbers
+- Fixed issues with create schematics
+- Fixed Wise Oak having an invitation
+- Fixed Fish Pond Hatchery not working with magnifying glass
+- Fixed inaccurate areas of Ribbit Hut and Drum of the Cornucopia using the Magnifying Glass
+- Fixed tomatoes not crawling ropes
+- Fixed drink-only cafes causing infinite loitering
+- Fixed Slime Vac voiding largos when in offhand
+- Fixed mixed green tea block dropping green tea instead of dried green tea
+- Fixed dialogs not showing up for five gifts
+- Fixed grape stem/lattice not showing day counter in Jade
+- Fixed issue where growth fertilizer does not apply to Berry bushes, but appears to do so in jade

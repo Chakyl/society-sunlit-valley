@@ -80,6 +80,14 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:giant_bandolier_belt",
       tooltip: "Impossibly large, as if a giant wooly creature wore it over its shoulder",
     },
+    {
+      item: "society:ancient_builders_tool",
+      tooltip: "Relic of the World-Shapers",
+    },
+    {
+      item: "society:red_wrench",
+      tooltip: "I swear I won't use it...",
+    },
   ];
   artifactTooltips.forEach((artifact) => {
     tooltip.add(

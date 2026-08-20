@@ -23,7 +23,7 @@
 // ];
 
 // const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "floral", "mason", "prismarine", "rural", "sakura", "siberian", "tudor", "vibrantown"];
-// const villagerBuildingSets = ["basic", "rural"];
+// const villagerBuildingSets = ["basic", "pineconetown","rural"];
 
 // let langStrings = {};
 // let blueprintLangStrings = {};

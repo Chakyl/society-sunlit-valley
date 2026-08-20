@@ -3,6 +3,7 @@ const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics")
 const NUMISMATICS_CURIO_UTILS = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
 
 global.GLOBAL_BANK = NUMISMATICS.BANK;
+global.getCardCurio = NUMISMATICS_CURIO_UTILS.getCardCurio;
 global.getPersonalOrCurioAccount = NUMISMATICS_CURIO_UTILS.getPersonalOrCurioAccount;
 global.depositIntoPersonalOrCurio = NUMISMATICS_CURIO_UTILS.depositIntoPersonalOrCurio;
 global.deductFromPersonalOrCurio = NUMISMATICS_CURIO_UTILS.deductFromPersonalOrCurio;
@@ -242,6 +243,7 @@ global.artifacts = [
   { item: "society:toy_train", value: 430 },
   { item: "society:aquamagical_dust", value: 512 },
   { item: "society:wheel_of_adaptation", value: 576 },
+  { item: "society:ancient_builders_tool", value: 612 },
   { item: "society:perfect_cherry", value: 777 },
   { item: "society:mini_oni_eye", value: 704 },
   { item: "society:production_science_pack", value: 1024 },
@@ -252,6 +254,7 @@ global.artifacts = [
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
   { item: "society:token_of_unity", value: 3 },
+  { item: "society:red_wrench", value: 233 },
 ];
 
 // Relics
@@ -1211,6 +1214,7 @@ const craftingTableRecipes = [
   { item: "society:pink_energy_drink", value: 218 },
   { item: "society:mana_energy_drink", value: 548 },
   { item: "society:death_liquid", value: 930 },
+  { item: "society:suspicious_milk_tea", value: 2356 },
   { item: "unusualfishmod:odd_fishsticks", value: 96 },
   { item: "unusualfishmod:weird_goldfish", value: 64 },
   { item: "unusualfishmod:pickledish", value: 128 },
@@ -1347,6 +1351,8 @@ const furnaceRecipes = [
   { item: "veggiesdelight:baked_sweet_potato", value: 20 },
   { item: "veggiesdelight:mhadjeb", value: 93 },
   { item: "veggiesdelight:garlic_baked_cod", value: 57 },
+  { item: 'society:deep_a_mochi', value: 396 },
+  { item: 'society:lemon_beignets', value: 639 },
 ];
 furnaceRecipes.forEach((recipe) => {
   global.cooking.push({

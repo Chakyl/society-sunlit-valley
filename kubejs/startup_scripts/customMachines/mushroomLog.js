@@ -22,11 +22,11 @@ global.mushroomLogRecipes = new Map([
     ["cluttered:crabapple_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
     ["atmospheric:grimwood_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
     // Brown colony
-    ["windswept:chestnut_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
-    ["minecraft:pale_oak_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
-    ["cluttered:poplar_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
-    ["atmospheric:aspen_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
-    ["minecraft:dark_oak_log", { output: ["1x farmersdelight:red_mushroom_colony"]}],
+    ["windswept:chestnut_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
+    ["minecraft:pale_oak_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
+    ["cluttered:poplar_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
+    ["atmospheric:aspen_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
+    ["minecraft:dark_oak_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
     // Toadstool
     ["atmospheric:rosewood_log", { output: ["3x ribbits:toadstool"]}],
     ["atmospheric:morado_log", { output: ["3x ribbits:toadstool"]}],
