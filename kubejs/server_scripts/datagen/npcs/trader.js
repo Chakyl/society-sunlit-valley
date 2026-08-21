@@ -121,6 +121,15 @@ if (global.datagenDialog) {
           "I have these up for barter if you want to 'steal everyone's look'!"
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "Hey @i, I was digging through my crates recently and found many of my rare metals completely missing.",
+          "At first I thought there was a thief of some sort, but that didn't really seem right for a town like this...",
+          "Turns out this weird metal creature was eating all my stock!",
+          "I can't really afford to keep feeding it my precious goods, maybe your farm can support the little guy?"
+        ]
+      }
     ]
   });
 }

@@ -63,7 +63,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .item((item) => {
-      item.tooltip(Text.translatable("item.sunlit_cobblemon.time_frame.description").gray());
+      item.tooltip(Text.translatable("block.sunlit_cobblemon.time_frame.description").gray());
       item.modelJson({
         parent: "sunlit_cobblemon:block/kubejs/time_frame",
       });

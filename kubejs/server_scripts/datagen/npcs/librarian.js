@@ -118,6 +118,15 @@ if (global.datagenDialog) {
           "I have a selection of special books available for the book fair this season, please take a look.",
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "Hello @i, I have a small token of appreciation for you.",
+          "It's a little known secret that Diancie was used to ornament Vivianne Eaststone's centerpiece in her first Spring-Summer collection.",
+          "Diancie is a cherished heirloom that's been taken care of by many trainers before me, and a gift I recieved from Caroline after moving here.",
+          "To me it feels right to pass it on to you, for taking such good care of the town you've created. I know you'll do right by Diancie as you've done me."
+        ]
+      },
     ],
     choiceDialogs: [
       {

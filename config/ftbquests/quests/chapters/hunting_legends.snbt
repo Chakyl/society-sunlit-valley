@@ -416,9 +416,10 @@
 			icon: "cobblemon:soul_dew"
 			id: "3C382FAA607E7F67"
 			rewards: [{
-				id: "27BDCC7513EB4F19"
-				item: "cobblemon:soul_dew"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "519297604A46C29D"
+				table_id: 6979018325962330524L
+				type: "choice"
 			}]
 			tasks: [
 				{
@@ -687,7 +688,6 @@
 			]
 			icon: "sunlit_cobblemon:pale_chalice"
 			id: "612AE21F5EE2B534"
-			min_required_dependencies: 2
 			rewards: [
 				{
 					exclude_from_claim_all: true

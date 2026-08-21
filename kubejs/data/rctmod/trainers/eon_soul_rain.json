@@ -2,72 +2,18 @@
   "battleType": "doubles",
   "team": [
     {
-      "species": "cobblemon:clefairy",
-      "gender": "FEMALE",
-      "level": 100,
-      "nature": "cobblemon:bold",
-      "ability": "friendguard",
-      "moveset": [
-        "encore",
-        "moonblast",
-        "followme",
-        "meteormash"
-      ],
-            "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "minecraft:air",
-      "aspects": [
-        "female"
-      ]
-    },
-    {
-      "species": "cobblemon:volcarona",
+      "species": "cobblemon:pelipper",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:lonely",
-      "ability": "swarm",
+      "nature": "cobblemon:modest",
+      "ability": "drizzle",
       "moveset": [
-        "quiverdance",
-        "bugbuzz",
-        "heatwave",
-        "amnesia"
+        "tailwind",
+        "hurricane",
+        "protect",
+        "hydropump"
       ],
-            "ivs": {
-        "hp": 31,
-        "attack": 31,
-        "defence": 31,
-        "special_attack": 31,
-        "special_defence": 31,
-        "speed": 31
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "minecraft:air",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:kingambit",
-      "gender": "FEMALE",
-      "level": 100,
-      "nature": "cobblemon:rash",
-      "ability": "supremeoverlord",
-      "moveset": [
-        "kowtowcleave",
-        "swordsdance",
-        "suckerpunch",
-        "lowkick"
-      ],
-            "ivs": {
+      "ivs": {
         "hp": 31,
         "attack": 31,
         "defence": 31,
@@ -76,31 +22,28 @@
         "speed": 31
       },
       "evs": {
-        "hp": 6,
-        "attack": 10,
-        "special_attack": 4,
-        "special_defence": 2,
-        "speed": 9
+        "speed": 252,
+        "special_attack": 252
       },
       "shiny": false,
-      "heldItem": "cobblemon:black_glasses",
+      "heldItem": "cobblemon:focus_slash",
       "aspects": [
-        "female"
+        "male"
       ]
     },
     {
-      "species": "cobblemon:primarina",
-      "gender": "FEMALE",
+      "species": "cobblemon:incineroar",
+      "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:docile",
-      "ability": "liquidvoice",
+      "nature": "cobblemon:brave",
+      "ability": "blaze",
       "moveset": [
-        "hydropump",
-        "moonblast",
-        "hypervoice",
-        "dazzlinggleam"
+        "flareblitz",
+        "knockoff",
+        "fakeout",
+        "partingshot"
       ],
-            "ivs": {
+      "ivs": {
         "hp": 31,
         "attack": 31,
         "defence": 31,
@@ -108,9 +51,73 @@
         "special_defence": 31,
         "speed": 31
       },
-      "evs": {},
+
+      "evs": {
+        "hp": 252,
+        "attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:weakness_policy",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:archaludon",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:relaxed",
+      "ability": "stamina",
+      "moveset": [
+        "electroshot",
+        "irondefense",
+        "flashcannon",
+        "dragonclaw"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:basculegion",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:mild",
+      "ability": "adaptability",
+      "moveset": [
+        "aquajet",
+        "lastrespects",
+        "flipturn",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:choice_band",
       "aspects": [
         "female"
       ]

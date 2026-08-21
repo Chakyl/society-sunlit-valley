@@ -108,6 +108,15 @@ if (global.datagenDialog) {
           "None of that 'love and affection' stuff! She's conning everyone and you will prove it!"
         ]
       },
+      {
+        name: "cobblemon_mystery_gift",
+        text: [
+          "@i, I've used those nasty little Prismatic Shards you've been gathering!",
+          "I bring to you the god of destruction formally known as Hoopa!",
+          "With this creature, nothing will stop you! You could fight the MOON and win!!",
+          "Now leave and never ask me for anything again!"
+        ]
+      }
     ]
   });
 }

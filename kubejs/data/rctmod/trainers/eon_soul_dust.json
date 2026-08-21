@@ -1,4 +1,5 @@
 {
+  "battleType": "doubles",
   "team": [
     {
       "species": "cobblemon:tyranitar",
@@ -13,16 +14,19 @@
         "protect"
       ],
       "ivs": {
-        "hp": 16,
-        "attack": 15,
-        "defence": 23,
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
         "special_attack": 31,
-        "special_defence": 12,
-        "speed": 18
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "speed": 252,
+        "attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:assault_vest",
       "aspects": [
         "female"
       ]
@@ -31,7 +35,7 @@
       "species": "cobblemon:whimsicott",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:calm",
+      "nature": "cobblemon:timid",
       "ability": "prankster",
       "moveset": [
         "tailwind",
@@ -40,15 +44,19 @@
         "encore"
       ],
       "ivs": {
-        "hp": 24,
-        "attack": 14,
-        "defence": 29,
-        "special_attack": 8,
-        "special_defence": 29
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "speed": 252,
+        "attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:sitrus_berry",
       "aspects": [
         "male"
       ]
@@ -57,7 +65,7 @@
       "species": "cobblemon:kilowattrel",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:lonely",
+      "nature": "cobblemon:timid",
       "ability": "competitive",
       "moveset": [
         "bravebird",
@@ -66,15 +74,19 @@
         "protect"
       ],
       "ivs": {
-        "hp": 16,
-        "attack": 23,
-        "defence": 7,
-        "special_attack": 27,
-        "special_defence": 17
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "speed": 252,
+        "special_attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:focus_slash",
       "aspects": [
         "male"
       ]
@@ -83,7 +95,7 @@
       "species": "cobblemon:garchomp",
       "gender": "FEMALE",
       "level": 100,
-      "nature": "cobblemon:gentle",
+      "nature": "cobblemon:jolly",
       "ability": "sandveil",
       "moveset": [
         "dragonclaw",
@@ -92,16 +104,19 @@
         "earthquake"
       ],
       "ivs": {
-        "hp": 23,
-        "attack": 27,
-        "defence": 28,
-        "special_attack": 17,
-        "special_defence": 23,
-        "speed": 13
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "speed": 252,
+        "attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:life_orb",
       "aspects": [
         "female"
       ]
@@ -112,8 +127,7 @@
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
   "partyMaximumLevel": 100,
-  "battleType": "doubles",
-  "aiLevel": 10,
+  "aiLevel": 11,
   "randomizeLeads": false,
   "defeatRequiredTrainers": []
 }

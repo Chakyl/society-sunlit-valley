@@ -70,9 +70,9 @@ global.runTrainerPodium = (entity) => {
       let newTrainer;
       let levelTier = 100;
       if (selene) {
-        newTrainer = Math.random() <= 0.5 ? "selene_timeless" : "selene_spacial";
-    
-        if (global.hasPartyPokemon(ownerPlayer, ["palkia", "dialga"], 2)) newTrainer = "selene_corrupted";
+        newTrainer = Math.random() <= 0.5 ? "goddess_timeless" : "goddess_spacial";
+
+        if (global.hasPartyPokemon(ownerPlayer, ["palkia", "dialga"], 2)) newTrainer = "goddess_void";
       } else {
         let levelAverage = Math.min(100, global.getPartyLevel(ownerPlayer));
         if (levelAverage == undefined) return;
@@ -92,8 +92,9 @@ global.runTrainerPodium = (entity) => {
         }
         // ownerPlayer.persistentData.wins = 20
         if (ownerPlayer.persistentData.wins == 0 || !newTrainer || newTrainer === "") {
-          if (ownerPlayer.persistentData.wins > 14 && ownerPlayer.persistentData.wins % 15 === 0) {
+          if (ownerPlayer.persistentData.wins > 14 && ownerPlayer.persistentData.wins % 15 === 0 && Number(block.getEntityData().data.lastBossSpawn) != Number(ownerPlayer.persistentData.wins)) {
             newTrainer = global.getLeagueBoss(Math.min(95, levelTier), upgraded)
+            nbt.merge({ data: { lastBossSpawn: ownerPlayer.persistentData.wins } });
           } else {
             newTrainer = global.getRandomTrainer(Math.min(95, levelTier), upgraded);
           }
@@ -179,8 +180,8 @@ StartupEvents.registry("block", (event) => {
     .model("sunlit_cobblemon:block/kubejs/trainer_podium")
     .blockEntity((blockInfo) => {
       blockInfo.enableSync();
-      blockInfo.initialData({ owner: "-1", trainers: {} });
-      blockInfo.serverTick(300, 0, (entity) => {
+      blockInfo.initialData({ owner: "-1", trainers: {}, lastBossSpawn: -1 });
+      blockInfo.serverTick(200, 0, (entity) => {
         global.runTrainerPodium(entity);
       });
     }).blockstateJson = {

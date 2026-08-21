@@ -47,6 +47,11 @@ ServerEvents.recipes((e) => {
       item: 'cobblemon:vivichoke_dip'
     },
   });
+  e.shaped('8x sunlit_cobblemon:time_frame', ["tst", "tbt", "tst"], {
+    b: "society:magic_bulb",
+    t: "minecraft:echo_shard",
+    s: "minecraft:deepslate"
+  })
   e.shaped('cobblemon:booster_energy', ["stb", "tet", "bts"], {
     b: "society:broken_clock",
     t: "cobblemon:timer_ball",

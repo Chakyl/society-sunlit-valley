@@ -1,10 +1,11 @@
 {
+  "battleType": "doubles",
   "team": [
     {
       "species": "cobblemon:talonflame",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:sassy",
+      "nature": "cobblemon:adamant",
       "ability": "galewings",
       "moveset": [
         "bravebird",
@@ -13,16 +14,19 @@
         "roost"
       ],
       "ivs": {
-        "hp": 15,
-        "attack": 24,
-        "defence": 13,
-        "special_attack": 19,
-        "special_defence": 12,
-        "speed": 10
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:focus_slash",
       "aspects": [
         "male"
       ]
@@ -31,7 +35,7 @@
       "species": "cobblemon:dragapult",
       "gender": "FEMALE",
       "level": 100,
-      "nature": "cobblemon:mild",
+      "nature": "cobblemon:jolly",
       "ability": "clearbody",
       "moveset": [
         "phantomforce",
@@ -40,16 +44,20 @@
         "protect"
       ],
       "ivs": {
-        "hp": 29,
-        "attack": 13,
-        "defence": 4,
-        "special_attack": 5,
-        "special_defence": 9,
-        "speed": 19
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "attack": 124,
+        "speed": 124
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:choice_band",
       "aspects": [
         "female"
       ]
@@ -58,7 +66,7 @@
       "species": "cobblemon:baxcalibur",
       "gender": "FEMALE",
       "level": 100,
-      "nature": "cobblemon:rash",
+      "nature": "cobblemon:adamant",
       "ability": "thermalexchange",
       "moveset": [
         "highhorsepower",
@@ -67,16 +75,19 @@
         "protect"
       ],
       "ivs": {
-        "hp": 24,
-        "attack": 26,
-        "defence": 7,
-        "special_attack": 9,
-        "special_defence": 8,
-        "speed": 3
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:cobblemon:loaded_dice",
       "aspects": [
         "female"
       ]
@@ -87,8 +98,7 @@
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
   "partyMaximumLevel": 100,
-  "battleType": "doubles",
-  "aiLevel": 10,
+  "aiLevel": 11,
   "randomizeLeads": false,
   "defeatRequiredTrainers": []
 }

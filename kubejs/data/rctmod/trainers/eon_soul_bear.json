@@ -1,10 +1,11 @@
 {
+  "battleType": "doubles",
   "team": [
     {
       "species": "cobblemon:farigiraf",
       "gender": "FEMALE",
       "level": 100,
-      "nature": "cobblemon:relaxed",
+      "nature": "cobblemon:bold",
       "ability": "armortail",
       "moveset": [
         "trickroom",
@@ -13,16 +14,19 @@
         "protect"
       ],
       "ivs": {
-        "hp": 16,
-        "attack": 18,
-        "defence": 29,
-        "special_attack": 27,
-        "special_defence": 9,
-        "speed": 19
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 0
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "special_defence": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:throat_spray",
       "aspects": [
         "female"
       ]
@@ -31,25 +35,28 @@
       "species": "cobblemon:incineroar",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:bashful",
+      "nature": "cobblemon:adamant",
       "ability": "intimidate",
       "moveset": [
         "flareblitz",
         "knockoff",
-        "flamethrower",
-        "swagger"
+        "fakeout",
+        "partingshot"
       ],
       "ivs": {
-        "hp": 25,
-        "attack": 17,
-        "defence": 22,
-        "special_attack": 21,
-        "special_defence": 20,
-        "speed": 14
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 0
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:safety_goggles",
       "aspects": [
         "male"
       ]
@@ -58,7 +65,7 @@
       "species": "cobblemon:rillaboom",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:jolly",
+      "nature": "cobblemon:careful",
       "ability": "overgrow",
       "moveset": [
         "boomburst",
@@ -67,16 +74,19 @@
         "uturn"
       ],
       "ivs": {
-        "hp": 10,
-        "attack": 3,
-        "defence": 20,
-        "special_attack": 25,
-        "special_defence": 5,
-        "speed": 11
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 0
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:assault_vest",
       "aspects": [
         "male"
       ]
@@ -85,7 +95,7 @@
       "species": "cobblemon:ursaluna",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:lax",
+      "nature": "cobblemon:quiet",
       "ability": "mindseye",
       "moveset": [
         "bloodmoon",
@@ -99,11 +109,14 @@
         "defence": 31,
         "special_attack": 31,
         "special_defence": 31,
-        "speed": 31
+        "speed": 0
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
       "shiny": false,
-      "heldItem": "cobblemon:leftovers",
+      "heldItem": "cobblemon:assault_vest",
       "aspects": [
         "bloodmoon",
         "male"
@@ -115,8 +128,7 @@
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
   "partyMaximumLevel": 100,
-  "battleType": "doubles",
-  "aiLevel": 10,
+  "aiLevel": 11,
   "randomizeLeads": false,
   "defeatRequiredTrainers": []
 }

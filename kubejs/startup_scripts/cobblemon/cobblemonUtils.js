@@ -223,7 +223,10 @@ const NPCMysteryGifts = {
   carpenter: "celebi",
   fisher: "volcanion",
   market: "zeraora",
-  shepherd: "meloetta"
+  shepherd: "meloetta",
+  trader: "meltan",
+  librarian: "diancie",
+  witch: "hoopa"
 }
 
 

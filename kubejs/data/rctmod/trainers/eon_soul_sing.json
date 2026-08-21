@@ -1,4 +1,5 @@
 {
+  "battleType": "doubles",
   "team": [
     {
       "species": "cobblemon:clefairy",
@@ -10,19 +11,22 @@
         "encore",
         "moonblast",
         "followme",
-        "meteormash"
+        "helpinghand"
       ],
       "ivs": {
-        "hp": 21,
-        "attack": 3,
+        "hp": 31,
+        "attack": 31,
         "defence": 31,
-        "special_attack": 7,
-        "special_defence": 15,
-        "speed": 21
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "speed": 252,
+        "hp": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:eviolite",
       "aspects": [
         "female"
       ]
@@ -31,23 +35,27 @@
       "species": "cobblemon:volcarona",
       "gender": "MALE",
       "level": 100,
-      "nature": "cobblemon:lonely",
-      "ability": "swarm",
+      "nature": "cobblemon:modest",
+      "ability": "flamebody",
       "moveset": [
         "quiverdance",
         "bugbuzz",
         "heatwave",
-        "amnesia"
+        "protect"
       ],
       "ivs": {
-        "hp": 29,
-        "attack": 9,
-        "defence": 25,
-        "special_attack": 2,
-        "special_defence": 5,
-        "speed": 4
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "speed": 126,
+        "special_attack": 126,
+        "hp": 252
+      },
       "shiny": false,
       "heldItem": "minecraft:air",
       "aspects": [
@@ -64,7 +72,7 @@
         "kowtowcleave",
         "swordsdance",
         "suckerpunch",
-        "lowkick"
+        "protect"
       ],
       "ivs": {
         "hp": 31,
@@ -75,11 +83,8 @@
         "speed": 31
       },
       "evs": {
-        "hp": 6,
-        "attack": 10,
-        "special_attack": 4,
-        "special_defence": 2,
-        "speed": 9
+        "hp": 252,
+        "attack": 252
       },
       "shiny": false,
       "heldItem": "cobblemon:black_glasses",
@@ -91,7 +96,7 @@
       "species": "cobblemon:primarina",
       "gender": "FEMALE",
       "level": 100,
-      "nature": "cobblemon:docile",
+      "nature": "cobblemon:modest",
       "ability": "liquidvoice",
       "moveset": [
         "hydropump",
@@ -100,16 +105,19 @@
         "dazzlinggleam"
       ],
       "ivs": {
-        "hp": 22,
-        "attack": 27,
-        "defence": 9,
-        "special_attack": 19,
-        "special_defence": 7,
-        "speed": 27
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
       },
-      "evs": {},
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
       "shiny": false,
-      "heldItem": "minecraft:air",
+      "heldItem": "cobblemon:life_orb",
       "aspects": [
         "female"
       ]
@@ -120,8 +128,7 @@
   "canOnlyBeatOnce": false,
   "cooldownSeconds": 0,
   "partyMaximumLevel": 100,
-  "battleType": "doubles",
-  "aiLevel": 10,
+  "aiLevel": 11,
   "randomizeLeads": false,
   "defeatRequiredTrainers": []
 }

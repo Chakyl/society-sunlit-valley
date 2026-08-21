@@ -77,6 +77,7 @@ const specialOreSpawns = new Map([
   [
     "minecraft:coal_ore",
     [
+      { pokemon: "rolycoly", weight: 8, lvlRange: [5, 15] },
       { pokemon: "slugma", weight: 0.1, lvlRange: [5, 15] },
       { pokemon: "litwick", weight: 0.01, lvlRange: [5, 15] },
     ],
@@ -84,6 +85,9 @@ const specialOreSpawns = new Map([
   [
     "minecraft:deepslate_coal_ore",
     [
+      { pokemon: "rolycoly", weight: 8, lvlRange: [5, 15] },
+      { pokemon: "carkol", weight: 8, lvlRange: [24, 33] },
+      { pokemon: "coalossal", weight: 1, lvlRange: [43, 67] },
       { pokemon: "magcargo", weight: 1, lvlRange: [38, 55] },
     ],
   ],

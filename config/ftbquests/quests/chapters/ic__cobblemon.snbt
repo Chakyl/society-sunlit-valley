@@ -637,8 +637,6 @@
 				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description2}"
 				""
 				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description3}"
-				""
-				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description4}"
 			]
 			icon: "cobblemon:power_bracer"
 			id: "43DCB8601B40FB9A"
@@ -821,7 +819,7 @@
 				type: "item"
 			}]
 			x: 22.5d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["02A029AD9B654F48"]
@@ -846,7 +844,7 @@
 			}]
 			title: "{ftbquests.chapter.ic__cobblemon.quest5E5313D628E28251.title}"
 			x: 23.5d
-			y: -3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0CA84740D7922353"]
@@ -1192,7 +1190,7 @@
 			}]
 			title: "{ftbquests.chapter.ic__cobblemon.quest41E167BF05E599AA.title}"
 			x: 22.5d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7B184B7096AC9BD8"]
@@ -1426,6 +1424,72 @@
 			title: "Crafting TRs"
 			x: 21.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["02A029AD9B654F48"]
+			description: [
+				"Some workstations your Pokémon can work at require advance resources to craft!"
+				""
+				"The &6Crystal Ball&r and &6Energy Pylon&r both fall under this category. "
+				""
+				"These workstations are ran by &dPsychic&r and &eElectric&r Type Pokémon respectively to increase the speed and efficency of other Poké-stations!"
+			]
+			icon: "cobblemon_farmers:crystal_ball"
+			id: "3633C789C2C63493"
+			rewards: [
+				{
+					id: "694CCA3EBD072858"
+					item: "cobblemon_farmers:spectral_battery"
+					type: "item"
+				}
+				{
+					id: "4FE62CB5596B8055"
+					item: "society:pristine_diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "707A8B2BD3218352"
+					item: "cobblemon_farmers:energy_pylon"
+					type: "item"
+				}
+				{
+					id: "09C27DEDA1D01E90"
+					item: "cobblemon_farmers:crystal_ball"
+					type: "item"
+				}
+			]
+			title: "Advanced Workers"
+			x: 22.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7B184B7096AC9BD8"]
+			description: [
+				"In any &6Ancient City&r, a long lost civilization collapsed and was reborn in the distant past and future..."
+				""
+				"You can summon a few of these Pokémon at a time using &6Booster Energy&r, a time warping device."
+				""
+				"If you can't find Reinforced Deepslate, you can always craft a &6Time Frame&r using materials dropped by Pokémon from a more advanced dimension..."
+			]
+			icon: "minecraft:reinforced_deepslate"
+			id: "3E6B912CEC583E91"
+			min_required_tasks: 1
+			rewards: [{
+				id: "5FC665AAC48DC7C6"
+				item: "cobblemon:booster_energy"
+				type: "item"
+			}]
+			subtitle: "Present day... present time!"
+			tasks: [{
+				id: "54558B7409DD756E"
+				item: "cobblemon:booster_energy"
+				type: "item"
+			}]
+			title: "Past and Future"
+			x: 24.0d
+			y: -2.5d
 		}
 	]
 	title: "{ftbquests.chapter.ic__cobblemon.title}"

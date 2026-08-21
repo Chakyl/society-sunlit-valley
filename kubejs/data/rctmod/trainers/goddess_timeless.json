@@ -1,4 +1,5 @@
 {
+  "displayName": "Corrupted Goddess",
   "team": [
     {
       "species": "cobblemon:ironvaliant",
@@ -170,11 +171,11 @@
   ],
   "winCommand": "",
   "lossCommand": "",
-  "canOnlyBeatOnce": false,
+  "canOnlyBeatOnce": true,
   "cooldownSeconds": 0,
   "partyMaximumLevel": 100,
   "battleType": "singles",
-  "aiLevel": -1,
+  "aiLevel": 11,
   "randomizeLeads": false,
   "defeatRequiredTrainers": []
 }

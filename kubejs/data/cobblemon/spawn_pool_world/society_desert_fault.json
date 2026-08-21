@@ -22,7 +22,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-sandshrew-1",
             "pokemon": "sandshrew",
             "presets": [
@@ -41,7 +41,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-phanpy-1",
             "pokemon": "phanpy",
             "presets": [
@@ -60,7 +60,26 @@
                 ]
             }
         },
-                {
+        {
+            "id": "biome-seviper-1",
+            "pokemon": "seviper",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "20-59",
+            "weight": 17.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
             "id": "biome-hippowdon-1",
             "pokemon": "hippowdon",
             "presets": [
@@ -79,7 +98,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-mudbray-1",
             "pokemon": "mudbray",
             "presets": [
@@ -98,7 +117,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-mudsdale-1",
             "pokemon": "mudsdale",
             "presets": [
@@ -117,7 +136,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-silicobra-1",
             "pokemon": "silicobra",
             "presets": [
@@ -136,7 +155,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-rhydon-1",
             "pokemon": "rhydon",
             "presets": [
@@ -155,7 +174,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-rhyperior-1",
             "pokemon": "rhyperior",
             "presets": [
@@ -174,7 +193,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-krookodile-1",
             "pokemon": "krookodile",
             "presets": [
@@ -193,7 +212,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-golurk-1",
             "pokemon": "golurk",
             "presets": [
@@ -212,7 +231,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-nidoqueen-1",
             "pokemon": "nidoqueen",
             "presets": [
@@ -231,7 +250,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-nidoking-1",
             "pokemon": "nidoking",
             "presets": [
@@ -250,7 +269,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-steelix-1",
             "pokemon": "steelix",
             "presets": [
@@ -269,7 +288,7 @@
                 ]
             }
         },
-                {
+        {
             "id": "biome-gabite-1",
             "pokemon": "gabite",
             "presets": [

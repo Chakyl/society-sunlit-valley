@@ -97,7 +97,7 @@ ServerEvents.recipes((e) => {
         { item: "society:amethyst_chunk", mult: 0.6, consumeChance: 0.6, types: ["psychic", "dark", "ghost", "normal"] },
         { item: "society:ruby", mult: 0.6, consumeChance: 0.6, types: ["dragon", "ground", "flying", "ice"] },
         { item: "society:topaz", mult: 0.6, consumeChance: 0.6, types: ["fire", "electric", "rock"] },
-        { item: "society:jade", mult: 0.02, consumeChance: 1, types: ["steel", "fairy", "fighting"] },
+        { item: "society:jade", mult: 1, consumeChance: 0.2, types: ["steel", "fairy", "fighting"] },
         { item: "society:spinel", mult: 0.5, consumeChance: 0.4, types: [] },
     ].forEach((entry) => {
         createCrystalBallRecipe(entry.item, entry.types, entry.consumeChance, entry.mult)

@@ -4,6 +4,63 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
+            "id": "biome-zangoose-1",
+            "pokemon": "zangoose",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "28-39",
+            "weight": 10.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_maelstrom"
+                ]
+            }
+        },
+        {
+            "id": "biome-sandshrew-1",
+            "pokemon": "sandshrew alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "4-29",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+        {
+            "id": "biome-sandslash-1",
+            "pokemon": "sandslash alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "29-59",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+        {
             "id": "biome-vulpix-1",
             "pokemon": "vulpix alolan",
             "presets": [

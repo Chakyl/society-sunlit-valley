@@ -1,0 +1,247 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "15-30",
+            "weight": 7,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:bamboo_jungle"
+                ]
+            }
+        },
+        {
+            "id": "pangoro-1",
+            "pokemon": "pangoro",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "32-47",
+            "weight": 4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "minecraft:bamboo_jungle"
+                ]
+            }
+        },
+        {
+            "id": "wurmple-1",
+            "pokemon": "wurmple",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "1-7",
+            "weight": 6,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "windswept:chestnut_forest",
+                    "windswept:pine_barrens"
+                ]
+            }
+        },
+        {
+            "id": "cascoon-1",
+            "pokemon": "cascoon",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-12",
+            "weight": 2,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "windswept:chestnut_forest",
+                    "windswept:pine_barrens"
+                ],
+                "timeRange": "night",
+                "isRaining": false
+            }
+        },
+        {
+            "id": "silcoon-1",
+            "pokemon": "silcoon",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-12",
+            "weight": 2,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "windswept:chestnut_forest",
+                    "windswept:pine_barrens"
+                ],
+                "timeRange": "day",
+                "isRaining": false
+            }
+        },
+        {
+            "id": "beautifly-1",
+            "pokemon": "beautifly",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "12-32",
+            "weight": 7,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "windswept:chestnut_forest",
+                    "windswept:pine_barrens"
+                ],
+                "timeRange": "day",
+                "isRaining": false
+            }
+        },
+        {
+            "id": "dustox-1",
+            "pokemon": "dustox",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "12-32",
+            "weight": 7,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "windswept:chestnut_forest",
+                    "windswept:pine_barrens"
+                ],
+                "timeRange": "night",
+                "isRaining": false
+            }
+        },
+        {
+            "id": "cherubi-1",
+            "pokemon": "cherubi",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "1-9",
+            "weight": 3.0,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "pamhc2trees:pamcherry"
+                ]
+            }
+        },
+        {
+            "id": "rolycoly-1",
+            "pokemon": "rolycoly",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "1-18",
+            "weight": 1.0,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:coal_ore"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
+            }
+        },
+        {
+            "id": "carkol-1",
+            "pokemon": "carkol",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "18-34",
+            "weight": 4.0,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:coal_ore"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
+            }
+        },
+        {
+            "id": "coalossal-1",
+            "pokemon": "coalossal",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "34-54",
+            "weight": 6.0,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:deepslate_coal_ore"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
+            }
+        }
+    ]
+}

@@ -492,51 +492,6 @@
     {
       "offer": {
         "item": "sunlit_cobblemon:mystery_gift",
-        "nbt": "{pokemon: \"diancie\", ot: \"Chakyl\"}",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 32
-      },
-      "numismatics_cost": 536870912,
-      "stage_required": "trainer_lvl_8",
-      "unlock_description": "jei.society_trading.trainer_lvl_8",
-      "trade_id": "pmart_mystery_gift_diancie"
-    },
-    {
-      "offer": {
-        "item": "sunlit_cobblemon:mystery_gift",
-        "nbt": "{pokemon: \"hoopa\", ot: \"Chakyl\"}",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 32
-      },
-      "numismatics_cost": 536870912,
-      "stage_required": "trainer_lvl_8",
-      "unlock_description": "jei.society_trading.trainer_lvl_8",
-      "trade_id": "pmart_mystery_gift_hoopa"
-    },
-    {
-      "offer": {
-        "item": "sunlit_cobblemon:mystery_gift",
-        "nbt": "{pokemon: \"meltan\", ot: \"Chakyl\"}",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 32
-      },
-      "numismatics_cost": 536870912,
-      "stage_required": "trainer_lvl_8",
-      "unlock_description": "jei.society_trading.trainer_lvl_8",
-      "trade_id": "pmart_mystery_gift_meltan"
-    },
-    {
-      "offer": {
-        "item": "sunlit_cobblemon:mystery_gift",
         "nbt": "{pokemon: \"zarude\", ot: \"Chakyl\"}",
         "count": 1
       },
@@ -653,6 +608,51 @@
       "stage_required": "mystery_gift_shepherd",
       "unlock_description": "jei.society_trading.shepherd_mystery_gift",
       "trade_id": "pmart_mystery_gift_shepherd"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"diancie\", ot: \"librarian\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_librarian",
+      "unlock_description": "jei.society_trading.librarian_mystery_gift",
+      "trade_id": "pmart_mystery_gift_diancie"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"hoopa\", ot: \"librarian\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_witch",
+      "unlock_description": "jei.society_trading.witch_mystery_gift",
+      "trade_id": "pmart_mystery_gift_witch"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"meltan\", ot: \"trader\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_trader",
+      "unlock_description": "jei.society_trading.trader_mystery_gift",
+      "trade_id": "pmart_mystery_gift_meltan"
     },
     {
       "offer": {
