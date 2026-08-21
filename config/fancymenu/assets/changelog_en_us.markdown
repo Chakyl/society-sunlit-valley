@@ -1,31 +1,14 @@
 ^^^
 ## Cozy Cafe
-### v4.1.3
+### v4.1.4
 ^^^
 --- 
-- Added Pineconetown villager home set by beawitched
-- Added Deep-a-Mochi
-- Added Lemon Beignets
-- Added Suspicious Milk Tea
-- Added Ancient Builders Tool artifact
-- Added Red Wrench artifact
-- Added Overflow token support for shared accounts (Re-equip your bank card to update)
-- Changed Earth Crystal trader trade from rice to cotton
-- Changed Jade trader trade from Aegis Wine to dried Lemon 
-- Changed Coin Leadeboard to fetch data once instead of once per leaderboard, improving performance large servers
-- Increased height of coin leaderboard by 1/4th of a block to make it less smudged
-- Updated quality food mod which contains various quality fixes
-- Updated zh_cn translation (Thanks Thirace!)
-- Updated ko_kr translation (Thanks Hexagreen!)
-- Removed ability to wicked mask certain entities due to chunkbans
-- Fixed shared accounts on Coin Leaderboard for real this time (Requires Re-equipping bank card) (Thanks ManlyTorch!)
-- Fixed Slime Golem and Otter decimating populations
-- Fixed certain Mushroom Logs dropping Red Mushroom Colonies instead of Brown
-- Fixed issues with the Sakura building set
-- Fixed Gnomes not being Gnomes on Gnomeymap
-- Fixed Smallmouth Bass not being catchable at night in Autumn
-- Fixed Woodsy Plushies working in wrong area
-- Fixed EMI not being searchable by blocktag by downgrading version
+
+- Added coin retexture resourcepack (Thanks Jamiscus!)
+- Fixed blocks that had random rolled quality not dropping
+- Fixed Quality Food particles never stopping
+- FIxed copycats crash
+- Fixed shift purchasing buying until inventory is full, bankrupting farmers across the valley
 
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
@@ -136,3 +119,28 @@
 - Fixed dialogs not showing up for five gifts
 - Fixed grape stem/lattice not showing day counter in Jade
 - Fixed issue where growth fertilizer does not apply to Berry bushes, but appears to do so in jade
+
+## 4.1.3
+- Added Pineconetown villager home set by beawitched
+- Added Deep-a-Mochi
+- Added Lemon Beignets
+- Added Suspicious Milk Tea
+- Added Ancient Builders Tool artifact
+- Added Red Wrench artifact
+- Added Overflow token support for shared accounts (Re-equip your bank card to update)
+- Changed Earth Crystal trader trade from rice to cotton
+- Changed Jade trader trade from Aegis Wine to dried Lemon 
+- Changed Coin Leadeboard to fetch data once instead of once per leaderboard, improving performance large servers
+- Increased height of coin leaderboard by 1/4th of a block to make it less smudged
+- Updated quality food mod which contains various quality fixes
+- Updated zh_cn translation (Thanks Thirace!)
+- Updated ko_kr translation (Thanks Hexagreen!)
+- Removed ability to wicked mask certain entities due to chunkbans
+- Fixed shared accounts on Coin Leaderboard for real this time (Requires Re-equipping bank card) (Thanks ManlyTorch!)
+- Fixed Slime Golem and Otter decimating populations
+- Fixed certain Mushroom Logs dropping Red Mushroom Colonies instead of Brown
+- Fixed issues with the Sakura building set
+- Fixed Gnomes not being Gnomes on Gnomeymap
+- Fixed Smallmouth Bass not being catchable at night in Autumn
+- Fixed Woodsy Plushies working in wrong area
+- Fixed EMI not being searchable by blocktag by downgrading version
