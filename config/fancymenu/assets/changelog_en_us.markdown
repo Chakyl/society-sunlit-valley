@@ -7,29 +7,33 @@
 - Added item/blocks associated for the above, too many to list
 - Added backported mons: Pancham, Pangoro, Wurmple, Cherubi, Cherrim,  Rolycoly, Carkol, Coalossal,  Silcoon, Beautifly, Cascoon, Dustox, Audino, Alolan Sandshrew, Alolan Sandlash, Seviper, Zangoose
 - Added Sword Ball - 0.5x to 4x, increases by target's combined attack stats
-- Added Shield Ball - 0.5x to 4x, increases by target's combined defence stats
+- Added Shield Ball - 0.5x to 4x, increases by target's combined defense stats
 - Added Skull Ball - 3.5x in the Skull Cavern
 - Added Mana Ball - 3.5x catch rate
 - Added Prismatic ball - 4.5× on Shiny Pokémon, 3x otherwise
 - Added Blossom Ball - 0.5x, caught Pokémon become Shiny
-- Added backported Cobblemon held Items: Grip Claw, Lagging Tail, Luminous Moss, Metronome, Protective Pads, Punching Glove, Room Service, Scope Lens, Shed Shell, Terrain Extender, Throat Spray, Utility Umbrella, Wide Lens, Zoom Lens
+- Added backported Cobblemon held Items: Grip Claw, Lagging Tail, Luminous Moss, Metronome, Protective Pads, Punching Glove, Room Service, Scope Lens, Shed Shell, Terrain Extender, Throat Spray, Utility Umbrella, Wide Lens, Zoom Lens, Psychic Seed, Electric Seed, Grassy Seed, Clear Amulet
 - Added Crystal Ball, a pokemon workstation for **Psychic** types that increases chances of nearby workstations
 - Added Energy Pylon a pokemon workstation for **Electric** increases speed of nearby workstations using batteries
 - Added use for Endless Battery
 - Added Spectral Battery
-- Added Uncharged Battery
+- Added Viral Battery
+- Added Booster Energy
+- Added Soul Dew
+- Added Magikarp Taiyaki
 - Added hover to Cobblemon Farmer's workstation GUIs showing effective stats
 - Added hover to workstation GUIs showing effective stats
 - Added admin command cobblemonfarmerssetowner to override existing owner
 - Added unique spawn mechanics for Paradox pokemon and removed paradox gachamon capsule
 - Added shiny effect for ranching station: Double chances on forage drops & double magic shear rolls.
-- Added 108 pokemon as ridable and fixed some broken ones
-- Added ability to declare a Gym Leader type for the Trainer Podium using badges, allowing for greater rewards.
+- Added some cobblemon specific tips
+- Added unique spawns to Snowy Scurbland, Desert Fault, Frozen Cafes, and Sulfur Caves biomes
 - Added TR Tablets for crafting specific TRs
+- Added ability to declare a Gym Leader type for the Trainer Podium using badges, allowing for greater rewards.
 - Added Elite Stone for unlocking a higher level of difficulty on the Trainer Podium. Legendary/Mythical Pokemon are allowed to be used by both gym leader and trainers in this mode only
 - Reworked trainer podium yet again:
 	-  Trainer podium still scales based on team level
-	-  No more win streaks. Instead the podium will keep track of total wins, and League bosses will appear every 15 wins
+	-  No more win streaks. Instead the podium will keep track of total wins, and League bosses will appear every 20 wins
 	- Every 10 of wins you’ll get an item from the special pool dropped. Every 100 you’ll get one from a rare pool
 	- No penalty for losing outside of the normal loss fee 
 - Reworked Gardening Station dark types: Experience dropped no longer based off of nearby Pokemon defeated. Instead, a static amount of XS candies are always dropped, and at 5+ radii it turns into S. (Old system encouraged spawning a bunch of entities around its working area
@@ -41,9 +45,12 @@
 - Fixed Fairy types in Gardening Stations always dropping minimums in ranges (you'll get your Slowpoke tails now you sadist)
 - Fixed Crabappale logs not being fightable
 - Fixed some issues with ghost gachamon capsules
+- Fixed Electric Canvas being a farmer product instead of artisan
+- Fixed some radar texures
 - Fixed Wailmer/Wailord crashes probably
+- Fixed more max/z-move TM/TRs existing
 
-## Sunlit Valleu 4.1.0 - Cozy Cafe
+## Sunlit Valley 4.1.0 - Cozy Cafe
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
 - Added new system for Building Shop (Previously in the Quest book) using Building Supplies
@@ -168,3 +175,10 @@
 - Fixed issues with the Sakura building set
 - Fixed Smallmouth Bass not being catchable at night in Autumn
 - Fixed EMI not being searchable by blocktag by downgrading version
+
+## 4.1.4
+- Added coin retexture resourcepack (Thanks Jamiscus!)
+- Fixed blocks that had random rolled quality not dropping
+- Fixed Quality Food particles never stopping
+- FIxed copycats crash
+- Fixed shift purchasing buying until inventory is full, bankrupting farmers across the valley

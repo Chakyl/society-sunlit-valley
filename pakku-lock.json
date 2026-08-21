@@ -3639,7 +3639,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "copycats-3.0.8+mc.1.20.1-forge.jar",
+                    "file_name": "copycats-3.0.7+mc.1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3648,18 +3648,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8692/227/copycats-3.0.8+mc.1.20.1-forge.jar",
-                    "id": "8692227",
+                    "url": "https://edge.forgecdn.net/files/7634/682/copycats-3.0.7+mc.1.20.1-forge.jar",
+                    "id": "7634682",
                     "parent_id": "968398",
                     "hashes": {
-                        "sha1": "d30a7bc854d0b414155fc6e8dedbd7a82d452465",
-                        "md5": "c8b104debd963337f98b76eb2964b387"
+                        "sha1": "5d0f497695fc2ee4ef89f1898458882b9d2d3aad",
+                        "md5": "47e13c8058d400e4a6316d00f451b29c"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 2003578,
-                    "date_published": "2026-08-20T15:14:56.320Z"
+                    "size": 1996097,
+                    "date_published": "2026-02-16T17:37:39.993Z"
                 }
             ]
         },
@@ -10355,7 +10355,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "quality_food-1.20.1-2.4.2-all.jar",
+                    "file_name": "quality_food-1.20.1-2.4.3-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -10365,16 +10365,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8625/117/quality_food-1.20.1-2.4.2-all.jar",
-                    "id": "8625117",
+                    "url": "https://edge.forgecdn.net/files/8694/434/quality_food-1.20.1-2.4.3-all.jar",
+                    "id": "8694434",
                     "parent_id": "973932",
                     "hashes": {
-                        "sha1": "344236ed95e75ba80913bca04e6bdcc832069a5b",
-                        "md5": "21155b81c26c2de29155d61b9df49eea"
+                        "sha1": "1dbde28800c1bc6b81ff1719052b8c0c48903b4c",
+                        "md5": "2466b1b7c766e455e70a1d71846f83cc"
                     },
                     "required_dependencies": [],
-                    "size": 910827,
-                    "date_published": "2026-08-11T16:28:59.657Z"
+                    "size": 916288,
+                    "date_published": "2026-08-20T21:02:49.127Z"
                 }
             ]
         },
@@ -12292,7 +12292,40 @@
             ]
         },
         {
-            "pakku_id": "jn08O8K0gsfxSq9z",
+            "pakku_id": "n1gwNRN6m8fZmr6X",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "society-coins"
+            },
+            "name": {
+                "curseforge": "Society Coins"
+            },
+            "id": {
+                "curseforge": "1661835"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "SocietyCoins.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8696/776/SocietyCoins.zip",
+                    "id": "8696776",
+                    "parent_id": "1661835",
+                    "hashes": {
+                        "sha1": "f0cfdb37f7bb81ae444c2ce93795742edeedacec",
+                        "md5": "3fd35ab7338d3f6db2ee4a853c41566e"
+                    },
+                    "required_dependencies": [],
+                    "size": 10669,
+                    "date_published": "2026-08-21T04:37:24.560Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "wCELqZoMRTjL01CK",
             "pakku_links": [
                 "nubF4pshkcyyOIX9"
             ],
@@ -12309,7 +12342,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-1.2.7.jar",
+                    "file_name": "society_trading-1.2.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12317,18 +12350,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8609/214/society_trading-1.2.7.jar",
-                    "id": "8609214",
+                    "url": "https://edge.forgecdn.net/files/8694/959/society_trading-1.2.8.jar",
+                    "id": "8694959",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "eef65d8c95e6a600411af08ba6fdea0b36578642",
-                        "md5": "a182d111c976c63e28a2cfc3ee7e8a4d"
+                        "sha1": "a222894afc9fd7968b8dfbd3eaee906c2852bcb7",
+                        "md5": "e2bf09abecdd65208f1b4b331f65af0b"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 223213,
-                    "date_published": "2026-08-09T13:24:40.867Z"
+                    "size": 223293,
+                    "date_published": "2026-08-20T22:14:05.840Z"
                 }
             ]
         },
