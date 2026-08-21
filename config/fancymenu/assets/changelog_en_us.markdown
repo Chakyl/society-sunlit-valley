@@ -3,8 +3,13 @@
 ### v4.1.4
 ^^^
 --- 
+
+- Added coin retexture resourcepack (Thanks Jamiscus!)
 - Fixed blocks that had random rolled quality not dropping
 - Fixed Quality Food particles never stopping
+- FIxed copycats crash
+- Fixed shift purchasing buying until inventory is full, bankrupting farmers across the valley
+
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
