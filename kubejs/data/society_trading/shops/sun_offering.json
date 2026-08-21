@@ -439,6 +439,23 @@
     },
     {
       "offer": {
+        "item": "sunlit_cobblemon:duo_challenge_podium",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:trainer_podium",
+        "count": 1
+      },
+      "second_request": {
+        "item": "society:token_of_unity",
+        "count": 1
+      },
+      "stage_required": "community_center_complete",
+      "unlock_description": "jei.society_trading.community_center_complete",
+      "trade_id": "sun_offering_duo_challenge_podium"
+    },
+    {
+      "offer": {
         "item": "sunlit_cobblemon:sun_mirror",
         "count": 1
       },

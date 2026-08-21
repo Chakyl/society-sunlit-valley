@@ -1888,47 +1888,6 @@
             ]
         },
         {
-            "pakku_id": "KDWmpmJACN6AFIki",
-            "pakku_links": [
-                "VjY1yclSang7lBB5"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "cobblemon"
-            },
-            "name": {
-                "curseforge": "Cobblemon"
-            },
-            "id": {
-                "curseforge": "687131"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Cobblemon-forge-1.5.2+1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5375/390/Cobblemon-forge-1.5.2+1.20.1.jar",
-                    "id": "5375390",
-                    "parent_id": "687131",
-                    "hashes": {
-                        "sha1": "02601f79f0c442b75463538da7a3c7f260fda42e",
-                        "md5": "89e9852463f198a88c7fb509a0eb5dd1"
-                    },
-                    "required_dependencies": [
-                        "351264"
-                    ],
-                    "size": 104105045,
-                    "date_published": "2024-05-27T06:21:50.657Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "3Gpgqlv2zEkGjhqL",
             "pakku_links": [
                 "SMX0l4qHckvmXby2"
@@ -1971,9 +1930,6 @@
         },
         {
             "pakku_id": "QTJNYYFDFeExIJ2M",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "cobblemon-capture-xp"
@@ -2086,7 +2042,6 @@
         {
             "pakku_id": "2nY3EqV7MxDO5pZI",
             "pakku_links": [
-                "KDWmpmJACN6AFIki",
                 "G8PY4TgHrc0mTsSS"
             ],
             "type": "MOD",
@@ -2128,9 +2083,6 @@
         },
         {
             "pakku_id": "Y1pY8XXm7BQO8jeH",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "cobblemon-farmers"
@@ -2144,7 +2096,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cobblemon_farmers-2.1-all.jar",
+                    "file_name": "cobblemon_farmers-2.2-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2152,18 +2104,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8577/274/cobblemon_farmers-2.1-all.jar",
-                    "id": "8577274",
+                    "url": "https://edge.forgecdn.net/files/8695/376/cobblemon_farmers-2.2-all.jar",
+                    "id": "8695376",
                     "parent_id": "1375081",
                     "hashes": {
-                        "sha1": "5522cd65f0f671ffa9b003951c9c0bc62839c645",
-                        "md5": "fec03a36e7a6ceb3640fc6647a96e2fc"
+                        "sha1": "94fd036b0afb94d3b7881bdb62d38f9e804d03ad",
+                        "md5": "919969c63b3fc18ac6c0ba03bb5fc69d"
                     },
                     "required_dependencies": [
                         "687131"
                     ],
-                    "size": 578116,
-                    "date_published": "2026-08-04T17:49:02.380Z"
+                    "size": 578861,
+                    "date_published": "2026-08-20T23:34:30Z"
                 }
             ]
         },
@@ -2274,9 +2226,6 @@
         },
         {
             "pakku_id": "NvTe2BvotGFKiruM",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "cobbledex"
@@ -2316,8 +2265,7 @@
         {
             "pakku_id": "n1MgiZdNrhycnL0P",
             "pakku_links": [
-                "0DzlYHWUtFCckQS9",
-                "KDWmpmJACN6AFIki"
+                "0DzlYHWUtFCckQS9"
             ],
             "type": "MOD",
             "slug": {
@@ -2360,7 +2308,6 @@
             "pakku_id": "SKxgR2hD6dLnQMQG",
             "pakku_links": [
                 "sYHQOQ2qyaI704Hw",
-                "KDWmpmJACN6AFIki",
                 "E1izozCgXnbgewv8"
             ],
             "type": "MOD",
@@ -2417,7 +2364,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cobblemon_showdown-1.2.2.jar",
+                    "file_name": "cobblemon_showdown-2.0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2425,26 +2372,25 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8296/200/cobblemon_showdown-1.2.2.jar",
-                    "id": "8296200",
+                    "url": "https://edge.forgecdn.net/files/8675/705/cobblemon_showdown-2.0.3.jar",
+                    "id": "8675705",
                     "parent_id": "1469729",
                     "hashes": {
-                        "sha1": "76ebffe00f88ae6ac9e3c1e1821bd80171f96e26",
-                        "md5": "76fce4395027c1abde475948d152c09d"
+                        "sha1": "6af585dcff0d94a04f5e06c00824a57ab73b0187",
+                        "md5": "281dc0c23b8ebde684edbc9a2bc5aa6d"
                     },
                     "required_dependencies": [
                         "687131"
                     ],
-                    "size": 385204,
-                    "date_published": "2026-06-21T20:46:27.627Z"
+                    "size": 443549,
+                    "date_published": "2026-08-18T08:13:47.493Z"
                 }
             ]
         },
         {
             "pakku_id": "oWzqd7xiV7fhLFHT",
             "pakku_links": [
-                "gW9CW0bs5FmiagOp",
-                "KDWmpmJACN6AFIki"
+                "gW9CW0bs5FmiagOp"
             ],
             "type": "RESOURCE_PACK",
             "slug": {
@@ -2483,9 +2429,6 @@
         },
         {
             "pakku_id": "1TcuDgezI5i7153z",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "cobblemon-trainers-ex"
@@ -2499,7 +2442,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CobblemonTrainersEX-1.2.0+1.5.2-forge.jar",
+                    "file_name": "CobblemonTrainersEX-1.2.1+1.5.2-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2507,26 +2450,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8660/906/CobblemonTrainersEX-1.2.0+1.5.2-forge.jar",
-                    "id": "8660906",
+                    "url": "https://edge.forgecdn.net/files/8692/348/CobblemonTrainersEX-1.2.1+1.5.2-forge.jar",
+                    "id": "8692348",
                     "parent_id": "1641513",
                     "hashes": {
-                        "sha1": "e1b9f772fb8990953f1e7f283bce3b191e04bdd2",
-                        "md5": "c91ac689fe640e48f178750a0beee47d"
+                        "sha1": "514cbb486d5d2fee860cac0e7eb93a3ad84a9308",
+                        "md5": "f2ea0aa43409b5a2f26950cdb106abcf"
                     },
                     "required_dependencies": [
-                        "687131"
+                        "687131",
+                        "419699"
                     ],
-                    "size": 301852,
-                    "date_published": "2026-08-16T08:57:36.373Z"
+                    "size": 305867,
+                    "date_published": "2026-08-20T15:27:46.253Z"
                 }
             ]
         },
         {
             "pakku_id": "COTzC0QuzklB8VpL",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "cobblemon-unimplemented-items"
@@ -2566,7 +2507,6 @@
         {
             "pakku_id": "QG4QmKnbKNzbebB7",
             "pakku_links": [
-                "KDWmpmJACN6AFIki",
                 "VjY1yclSang7lBB5"
             ],
             "type": "MOD",
@@ -3838,9 +3778,6 @@
         },
         {
             "pakku_id": "o7rTja6kIcI3RoXt",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "create-klinks-n-klangs"
@@ -7404,9 +7341,6 @@
         },
         {
             "pakku_id": "Qtz6djlAa2YB8XBi",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "DATA_PACK",
             "slug": {
                 "curseforge": "just-celesteela"
@@ -10646,7 +10580,6 @@
         {
             "pakku_id": "RCQrLeTXwyF8OFoI",
             "pakku_links": [
-                "KDWmpmJACN6AFIki",
                 "ySByzOHcM9JU35pJ"
             ],
             "type": "MOD",
@@ -11298,9 +11231,6 @@
         },
         {
             "pakku_id": "ctmrUB8is6oblQ6M",
-            "pakku_links": [
-                "KDWmpmJACN6AFIki"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "rocket-mons"
@@ -13137,6 +13067,42 @@
                     ],
                     "size": 148552,
                     "date_published": "2026-08-08T16:40:09.373Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "h5gFbief0rs7P2qJ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sunlit-cobblebackported"
+            },
+            "name": {
+                "curseforge": "Sunlit Cobblebackported"
+            },
+            "id": {
+                "curseforge": "1655778"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Sunlit_Cobblebackported-forge-1.5.2-1.0_1.20.1.jar.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8665/518/Sunlit_Cobblebackported-forge-1.5.2-1.0_1.20.1.jar.jar",
+                    "id": "8665518",
+                    "parent_id": "1655778",
+                    "hashes": {
+                        "sha1": "0af6ece283f7f34cffd7e4fe0c9a854d05bc35be",
+                        "md5": "8959ccb64ba84eda4af4d1444bda8bcf"
+                    },
+                    "required_dependencies": [],
+                    "size": 106350406,
+                    "date_published": "2026-08-16T21:04:10.253Z"
                 }
             ]
         },

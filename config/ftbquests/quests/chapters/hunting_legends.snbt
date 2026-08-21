@@ -403,15 +403,38 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: [
+				"The group of wild Pokémon known as &6Team Eon&r is lead by the renowned duo &6Latias&r and &6Latios&r!"
+				""
+				"In order to get their attention, you'll need to fight 10 challenges from Team Eon from the Duo Challenge Podium!"
+				""
+				"&6Team Eon&r believes that battles only work with teamwork, and you can only fight 4v4 doubles! "
+				""
+				"If you manage to beat Latias and Latios, you'll recieve their lauded &6Soul Dew&r..."
+			]
+			icon: "cobblemon:soul_dew"
 			id: "3C382FAA607E7F67"
-			tasks: [{
-				id: "47B37AE5BE546C27"
+			rewards: [{
+				id: "27BDCC7513EB4F19"
 				item: "cobblemon:soul_dew"
 				type: "item"
 			}]
+			tasks: [
+				{
+					id: "08AEF3AA6CD37EDE"
+					item: "sunlit_cobblemon:duo_challenge_podium"
+					type: "item"
+				}
+				{
+					id: "226542D9B2E2FC4B"
+					item: "cobblemon:soul_dew"
+					type: "item"
+				}
+			]
 			title: "The Jets"
-			x: -3.5d
-			y: 0.0d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0850BA6E66135437"]
@@ -483,6 +506,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["0842E7FE4BF590F2"]
 			description: [
 				"The behemoths of the sea and the earth are lurking deep under the surface."
 				""
@@ -528,8 +552,8 @@
 				}
 			]
 			title: "The Land and the Sea"
-			x: -2.0d
-			y: 0.0d
+			x: -10.0d
+			y: 1.0d
 		}
 		{
 			description: [
