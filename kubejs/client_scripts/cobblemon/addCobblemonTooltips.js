@@ -76,15 +76,15 @@ ItemEvents.tooltip((tooltip) => {
   );
     tooltip.add(
     "sunlit_cobblemon:bifrost_stone",
-    Text.translatable("May cause destruction nearby when fed to an ancient Mammoth").red()
+    Text.translatable("tooltip.sunlit_cobblemon.bifrost_stone.description").red()
   );
     tooltip.add(
     "sunlit_cobblemon:light_scale",
-    Text.translatable("Use it with Fire in a Brazier").gray()
+    Text.translatable("tooltip.sunlit_cobblemon.light_scale.description").gray()
   );
     tooltip.add(
     "sunlit_cobblemon:dark_scale",
-    Text.translatable("Use it with Controlled Lighting in a Rod").gray()
+    Text.translatable("tooltip.sunlit_cobblemon.dark_scale.description").gray()
     );
   tooltip.addAdvanced("sunlit_cobblemon:sun_mirror", (item, advanced, text) => {
     if (item.nbt && item.nbt.monData && item.nbt.monData.getString("type")) {

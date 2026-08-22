@@ -517,15 +517,6 @@ ServerEvents.recipes((e) => {
     h: "create:mechanical_drill",
     c: "minecraft:netherite_upgrade_smithing_template",
   });
-  e.shaped("sunlit_cobblemon:bifrost_stone", [
-        "YPY",
-        "PBP",
-        "YPY"
-    ], {
-        Y: "species:youth_potion",
-        B: "botania:bifrost_perm",
-        P: "society:prismatic_shard"
-    });
   // Sparkstone
   e.shaped("society:auto_grabber", ["lal", "bfb", "nsn"], {
     f: "society:animal_feed",

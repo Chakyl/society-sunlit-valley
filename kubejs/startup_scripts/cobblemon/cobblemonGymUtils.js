@@ -462,7 +462,7 @@ const trainerBuckets = new Map([
       "ace_swimmer_jameson",
       "flame_eater_bryce",
       "foundry_worker_jarvis",
-      "hex_maniac_sabrina",
+      "hex_maniac_bea",
       "rock_collector_adrianne",
       "archaeologist_stephanie",
       "poisoner_maomao",
