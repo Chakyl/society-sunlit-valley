@@ -442,7 +442,6 @@ const trainerBuckets = new Map([
       "fisherman_andrew_00e9",
       "beauty_lola_010c",
       "aroma_lady_violet_022e",
-      "ace_trainer_samantha_0052",
       "ace_trainer_sharon_00ae",
       "beauty_sheila_010d",
       "lass_ann_007e",
@@ -470,8 +469,6 @@ const trainerBuckets = new Map([
       "punch_man_fighter",
       "normal_guy_jake",
       "bug_catcher_jimothy",
-
-
     ]
   ]
 ]);
@@ -481,6 +478,7 @@ const eliteModeEasy = [
   "swimmerf_maria_0223",
   "swimmerm_garrett_0226",
   "swimmerf_tisha_0231",
+  "ace_trainer_samantha_0052",
   "swimmerm_finn_0225",
   "ruin_mamoac_halotosis",
   "bird_keeper_sebastian_012c",
@@ -591,9 +589,31 @@ const getWinStreakBucket = (winStreak) => {
   }
   return -1;
 }
+
 global.getTypeRewards = (player, pos, type) => {
   let reward;
   let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:badge_reward/${type}_type_gym`).toArray();
+  rolledLoot.forEach((item) => {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = item;
+    reward.spawn();
+  });
+  if (player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = "society:animal_cracker";
+    reward.spawn();
+  }
+};
+
+global.getWinsRewards = (player, pos, wins) => {
+  let reward;
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_reward/${wins % 100 == 0 ? 100 : 10}_wins`).toArray();
   rolledLoot.forEach((item) => {
     reward = player.level.createEntity("minecraft:item");
     reward.x = pos.x + 0.5;

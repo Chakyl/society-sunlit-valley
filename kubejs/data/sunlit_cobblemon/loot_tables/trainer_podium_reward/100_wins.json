@@ -1,0 +1,165 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": {
+				"min": 2,
+				"max": 3
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 32,
+					"name": "cobblemon:rare_candy",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 32,
+					"name": "cobblemon:courage_candy",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 32,
+					"name": "cobblemon:health_candy",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 32,
+					"name": "cobblemon:mighty_candy",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 32,
+					"name": "cobblemon:quick_candy",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 32,
+					"name": "cobblemon:tough_candy",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 32,
+					"name": "cobblemon:smart_candy",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "sunlit_cobblemon:prismatic_tm_pack"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "sunlit_cobblemon:sun_mirror"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "sunlit_cobblemon:sunlit_league_medallion",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "sunlit_cobblemon:sun_raid_statue"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "cobblemon_farmers:worker_permit"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:ancient_origin_ball"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "cobblemon:master_ball"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cobblemon:blossom_ball"
+				}
+			]
+		}
+	]
+}

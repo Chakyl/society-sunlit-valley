@@ -35,16 +35,19 @@ global.handleCobblemonDefeat = (e) => {
       winningPlayer.persistentData.wins++;
       winningPlayer.persistentData.bagItemsUsed = 0;
       wins++;
-      winningPlayer.tell(Text.translatable("sunlit_cobblemon.trainer_podium.win_streak", `${Number(winningPlayer.persistentData.wins)}`).gold());
+      winningPlayer.tell(Text.translatable("sunlit_cobblemon.trainer_podium.wins", `${Number(winningPlayer.persistentData.wins)}`).gold());
       reward = Math.min(5000, reward)
       let badge = losingPlayer.persistentData.badgeType;
       if (badge != "none") {
         reward *= 2;
         global.getTypeRewards(winningPlayer, losingPlayer.getOnPos(), badge);
       }
+      if (wins % 10 == 0) {
+        global.getWinsRewards(winningPlayer, losingPlayer.getOnPos(), wins);
+      } 
       if (losingPlayer.persistentData.levelTier == "elite") {
         reward *= 2;
-        if (wins % 20 == 0) {
+        if (wins % 15 == 0) {
           let reward = winningPlayer.level.createEntity("minecraft:item");
           reward.x = winningPlayer.getOnPos().x + 0.5;
           reward.y = winningPlayer.getOnPos().y + 0.4;
