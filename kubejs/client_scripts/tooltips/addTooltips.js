@@ -460,18 +460,6 @@ ItemEvents.tooltip((tooltip) => {
     "society_trading:auto_trader",
     Text.translatable("item.society_trading.auto_trader.description").gray()
   );
-  tooltip.add(
-    "sunlit_cobblemon:bifrost_stone",
-    Text.translatable("May cause destruction nearby when fed to an ancient Mammoth").red()
-  );
-    tooltip.add(
-    "sunlit_cobblemon:light_scale",
-    Text.translatable("Use it with Fire in a Brazier").gray()
-  );
-    tooltip.add(
-    "sunlit_cobblemon:dark_scale",
-    Text.translatable("Use it with Controlled Lighting in a Rod").gray()
-  );
   // Fertilizers
   tooltip.add(
     "dew_drop_farmland_growth:weak_fertilizer",

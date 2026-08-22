@@ -74,6 +74,18 @@ ItemEvents.tooltip((tooltip) => {
     "unimplemented_items:repel",
     Text.translatable("tooltip.society.area", `21x21x21`).green()
   );
+    tooltip.add(
+    "sunlit_cobblemon:bifrost_stone",
+    Text.translatable("May cause destruction nearby when fed to an ancient Mammoth").red()
+  );
+    tooltip.add(
+    "sunlit_cobblemon:light_scale",
+    Text.translatable("Use it with Fire in a Brazier").gray()
+  );
+    tooltip.add(
+    "sunlit_cobblemon:dark_scale",
+    Text.translatable("Use it with Controlled Lighting in a Rod").gray()
+    );
   tooltip.addAdvanced("sunlit_cobblemon:sun_mirror", (item, advanced, text) => {
     if (item.nbt && item.nbt.monData && item.nbt.monData.getString("type")) {
       let data = item.nbt.monData

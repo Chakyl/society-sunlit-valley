@@ -1,4 +1,4 @@
-{"displayName": "Hex Maniac Sabrina",
+{"displayName": "Beawitchd",
   "team": [
     {
       "species": "cobblemon:mismagius",
@@ -28,16 +28,70 @@
       ]
     },
     {
-      "species": "cobblemon:cofagrigus",
+      "species": "cobblemon:gengar",
       "gender": "FEMALE",
       "level": 95,
       "nature": "cobblemon:calm",
-      "ability": "mummy",
+      "ability": "cursedbody",
       "moveset": [
-        "willowisp",
-        "hex",
-        "calmmind",
-        "gigadrain"
+        "shadowball",
+        "sludgewave",
+        "focusblast",
+        "icywind"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:mimikyu",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "disguise",
+      "moveset": [
+        "swordsdance",
+        "shadowclaw",
+        "playrough",
+        "shadowsneak"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:jellicent",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "cursedbody",
+      "moveset": [
+        "recover",
+        "whirlpool",
+        "acidarmor",
+        "shadowball"
       ],
       "ivs": {
         "hp": 16,
@@ -52,60 +106,6 @@
       "heldItem": "cobblemon:leftovers",
       "aspects": [
         "female"
-      ]
-    },
-    {
-      "species": "cobblemon:trevenant",
-      "gender": "MALE",
-      "level": 95,
-      "nature": "cobblemon:relaxed",
-      "ability": "harvest",
-      "moveset": [
-        "ingrain",
-        "hornleech",
-        "leechseed",
-        "willowisp"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:sitrus_berry",
-      "aspects": [
-        "male"
-      ]
-    },
-    {
-      "species": "cobblemon:shedinja",
-      "gender": "GENDERLESS",
-      "level": 95,
-      "nature": "cobblemon:rash",
-      "ability": "wonderguard",
-      "moveset": [
-        "shadowclaw",
-        "leechlife",
-        "dig",
-        "nightslash"
-      ],
-      "ivs": {
-        "hp": 16,
-        "attack": 16,
-        "defence": 16,
-        "special_attack": 16,
-        "special_defence": 16,
-        "speed": 16
-      },
-      "evs": {},
-      "shiny": false,
-      "heldItem": "cobblemon:focus_sash",
-      "aspects": [
-        "genderless"
       ]
     }
   ],
