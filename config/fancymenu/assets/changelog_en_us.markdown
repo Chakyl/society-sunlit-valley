@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.1.0-SSV4.1.3
+### v1.1.0-SSV4.1.4
 ^^^
 --- 
 - Added unique obtaining mechanics for the following legendary pokemon: Kyogre, Groudon, Rayquaza, Lugia, Ho-Oh, Dialga, Palkia, Giratina, Latias, Latios, Mewtwo, Reshiram, Zekrom, Kyurem, Kubfu, Urshifu, Darkrai, Pecharunt, Shaymin, Shaymin Sky, Mew, Deoxys.
