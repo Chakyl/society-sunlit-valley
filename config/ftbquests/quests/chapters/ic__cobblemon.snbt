@@ -1336,13 +1336,13 @@
 				"539CA5F135AA627D"
 			]
 			description: [
-				"All the best gym leaders choose a type to specialize in!"
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description1}"
 				""
-				"&6Gym Badges&r can be worn in your curios to designate you as a leader of the badge's type."
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description2}"
 				""
-				"In trainer podium battles, you'll only be able to use Pokémon against your opponent if at least one of their types matches the badge!"
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description3}"
 				""
-				"Naturally the &6Sunlit League&r pays double for wins for specialized trainers, with additional item rewards per-type."
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description4}"
 			]
 			icon: "sunlit_cobblemon:fairy_badge"
 			id: "4026AD7C4083E43B"
@@ -1360,10 +1360,10 @@
 						value: "curios:gym_badge"
 					}
 				}
-				title: "Any Gym Badge"
+				title: "{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.task.6551788134988794743.title}"
 				type: "item"
 			}]
-			title: "Declaring Your Type!"
+			title: "{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.title}"
 			x: 20.5d
 			y: -2.0d
 		}
@@ -1373,11 +1373,11 @@
 				"43DCB8601B40FB9A"
 			]
 			description: [
-				"Training to be an elite member of the Sunlit League? You'll need an &6Elite Stone&r..."
+				"{ftbquests.chapter.ic__cobblemon.quest3E0F5B5C0758B91F.description1}"
 				""
-				"Upgrading a &6Trainer Podium&r with it will summon forth more difficult trainers, with double the financial rewards..."
+				"{ftbquests.chapter.ic__cobblemon.quest3E0F5B5C0758B91F.description2}"
 				""
-				"Unlike normal gyms, the Sunlit League permits use of &6Legendary&r and &6Mythical&r Pokémon by both gym patrons and gym trainers."
+				"{ftbquests.chapter.ic__cobblemon.quest3E0F5B5C0758B91F.description3}"
 			]
 			id: "3E0F5B5C0758B91F"
 			rewards: [{
@@ -1396,11 +1396,11 @@
 		{
 			dependencies: ["4026AD7C4083E43B"]
 			description: [
-				"Ripping open TM packs to find specific TRs is an expensive habit that gets old fast."
+				"{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.description1}"
 				""
-				"&6TR Tablets&r can be cut into any availible TR, allowing you to finally get False Swipe reliably!"
+				"{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.description2}"
 				""
-				"You'll need &6Pristine Type Gems&r, an item that can be made with a &6Crystalarium&r that has &6Black Opal Upgrade&r. They also have a chance to drop from trainers while wearing the corresponding &6Gym Leader Badge&r."
+				"{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.description3}"
 			]
 			icon: "sunlit_cobblemon:steel_tr_tablet"
 			id: "4753C2B3621839B3"
@@ -1418,21 +1418,21 @@
 						value: "sunlit_cobblemon:tr_tablet"
 					}
 				}
-				title: "Any TR Tablet"
+				title: "{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.task.3333528713667145275.title}"
 				type: "item"
 			}]
-			title: "Crafting TRs"
+			title: "{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.title}"
 			x: 21.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["02A029AD9B654F48"]
 			description: [
-				"Some workstations your Pokémon can work at require advance resources to craft!"
+				"{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.description1}"
 				""
-				"The &6Crystal Ball&r and &6Energy Pylon&r both fall under this category. "
+				"{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.description2}"
 				""
-				"These workstations are ran by &dPsychic&r and &eElectric&r Type Pokémon respectively to increase the speed and efficency of other Poké-stations!"
+				"{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.description3}"
 			]
 			icon: "cobblemon_farmers:crystal_ball"
 			id: "3633C789C2C63493"
@@ -1460,18 +1460,18 @@
 					type: "item"
 				}
 			]
-			title: "Advanced Workers"
+			title: "{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.title}"
 			x: 22.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7B184B7096AC9BD8"]
 			description: [
-				"In any &6Ancient City&r, a long lost civilization collapsed and was reborn in the distant past and future..."
+				"{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.description1}"
 				""
-				"You can summon a few of these Pokémon at a time using &6Booster Energy&r, a time warping device."
+				"{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.description2}"
 				""
-				"If you can't find Reinforced Deepslate, you can always craft a &6Time Frame&r using materials dropped by Pokémon from a more advanced dimension..."
+				"{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.description3}"
 			]
 			icon: "minecraft:reinforced_deepslate"
 			id: "3E6B912CEC583E91"
@@ -1481,13 +1481,13 @@
 				item: "cobblemon:booster_energy"
 				type: "item"
 			}]
-			subtitle: "Present day... present time!"
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.subtitle}"
 			tasks: [{
 				id: "54558B7409DD756E"
 				item: "cobblemon:booster_energy"
 				type: "item"
 			}]
-			title: "Past and Future"
+			title: "{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.title}"
 			x: 24.0d
 			y: -2.5d
 		}

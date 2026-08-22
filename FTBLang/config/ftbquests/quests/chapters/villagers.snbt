@@ -384,7 +384,15 @@
 				""
 				"{ftbquests.chapter.villagers.quest52F1DCA9462F825F.description2}"
 			]
-			icon: "minecraft:brewing_stand"
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:witch"
+					}
+				}
+			}
 			id: "52F1DCA9462F825F"
 			tasks: [{
 				id: "3C94F73EFA3C7BCD"
@@ -402,7 +410,15 @@
 				""
 				"{ftbquests.chapter.villagers.quest1348507AE17E187E.description2}"
 			]
-			icon: "society:ancient_cog"
+			icon: {
+				Count: 1
+				id: "society:villager"
+				tag: {
+					type: {
+						id: "society:trader"
+					}
+				}
+			}
 			id: "1348507AE17E187E"
 			tasks: [{
 				id: "691F920167A31AB3"

@@ -1,7 +1,7 @@
 {
 	id: "7BCFE62EFE4AE0A7"
 	loot_size: 1
-	order_index: 11
+	order_index: 12
 	rewards: [
 		{
 			item: {
@@ -58,6 +58,39 @@
 					mirrowY: 0b
 					mirrowZ: 0b
 					nome: "trader_rural"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "trader_pineconetown"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_trader.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_trader\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "trader_pineconetown"
 					owner: "worn"
 					owner_name: "Ace"
 					remaining_uses: 1
