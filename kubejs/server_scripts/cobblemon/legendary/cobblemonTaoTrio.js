@@ -31,8 +31,9 @@ BlockEvents.rightClicked("decorative_blocks:brazier", (e) => {
   }
 );
 
-ItemEvents.entityInteracted("species:mammutilation", (e) => {
+ItemEvents.entityInteracted((e) => {
   const { item, player, hand, target, level, server } = e;
+  if (target.type !== "species:mammutilation") return;
   if (hand == "OFF_HAND") return;
       if (!global.hasScope(player)) {
         player.tell(Text.translatable("sunlit_cobblemon.need_scope").red());
@@ -40,8 +41,8 @@ ItemEvents.entityInteracted("species:mammutilation", (e) => {
   if (hand == "MAIN_HAND") {
       if (item.getId() === "sunlit_cobblemon:bifrost_stone") {
         summonRaidLegendary(level, server, player, item, level.getBlock(target.getOnPos()), "Kyurem", 100);
-      }
       if (!player.isCreative()) item.count--;
+      }
       player.swing();
     }
   }
