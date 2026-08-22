@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.1.0-SSV4.1.4
+### v1.1.1-SSV4.1.4
 ^^^
 --- 
 - Updated to Sunlit Valley's Cozy Cafe update
@@ -50,6 +50,10 @@
 - Fixed some radar texures
 - Fixed Wailmer/Wailord crashes probably
 - Fixed more max/z-move TM/TRs existing
+
+## 1.1.1
+- Fixed interacting with mobs with an item voiding them
+- Fixed trainer reward giving removed capsule
 
 ## Sunlit Valley 4.1.0 - Cozy Cafe
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
