@@ -35,7 +35,7 @@ global.handleCobblemonDefeat = (e) => {
       winningPlayer.persistentData.wins++;
       winningPlayer.persistentData.bagItemsUsed = 0;
       wins++;
-      winningPlayer.tell(Text.translatable("sunlit_cobblemon.trainer_podium.wins", `${Number(winningPlayer.persistentData.wins)}`).gold());
+      winningPlayer.tell(Text.translatable("sunlit_cobblemon.trainer_podium.win_increased", `${Number(winningPlayer.persistentData.wins)}`).gold());
       reward = Math.min(5000, reward)
       let badge = losingPlayer.persistentData.badgeType;
       if (badge != "none") {
