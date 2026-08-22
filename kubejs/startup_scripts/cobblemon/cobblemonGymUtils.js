@@ -555,7 +555,6 @@ const eliteModeHard = [
 ]
 global.getRandomTrainer = (levelBucket, upgraded) => {
   let trainerBucket = trainerBuckets.get(levelBucket);
-  console.log("rolling")
   if (upgraded) {
     if (Math.random() < 0.75) {
       trainerBucket = eliteModeEasy;
@@ -563,7 +562,6 @@ global.getRandomTrainer = (levelBucket, upgraded) => {
       trainerBucket = eliteModeHard;
     }
   }
-  console.log(trainerBucket)
   // const trainer = trainerBucket[rnd(0, trainerBucket.length)];
   // console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
   return trainerBucket[rnd(0, trainerBucket.length - 1)];
