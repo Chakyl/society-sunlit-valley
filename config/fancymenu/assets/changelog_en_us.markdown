@@ -50,6 +50,8 @@
 - Fixed some radar texures
 - Fixed Wailmer/Wailord crashes probably
 - Fixed more max/z-move TM/TRs existing
+
+## 1.1.1
 - Fixed interacting with mobs with an item voiding them
 - Fixed trainer reward giving removed capsule
 
