@@ -1,0 +1,122 @@
+{
+  "displayName": "Eon Challenge",
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:aerodactyl",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:jolly",
+      "ability": "rockhead",
+      "moveset": [
+        "rockslide",
+        "tailwind",
+        "dualwingbeat",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 19,
+        "attack": 11,
+        "defence": 31,
+        "special_attack": 6,
+        "special_defence": 31,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:kabutops",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:bold",
+      "ability": "battlearmor",
+      "moveset": [
+        "stoneedge",
+        "swordsdance",
+        "aquajet",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 11,
+        "defence": 16,
+        "special_attack": 13,
+        "special_defence": 12,
+        "speed": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:latias",
+      "gender": "FEMALE",
+      "level": 80,
+      "nature": "cobblemon:docile",
+      "ability": "levitate",
+      "moveset": [
+        "dracometeor",
+        "helpinghand",
+        "psyshock",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 9,
+        "attack": 23,
+        "defence": 29,
+        "special_attack": 19,
+        "special_defence": 4,
+        "speed": 21
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:haban_berry",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:latios",
+      "gender": "MALE",
+      "level": 80,
+      "nature": "cobblemon:naughty",
+      "ability": "levitate",
+      "moveset": [
+        "lusterpurge",
+        "dracometeor",
+        "protect",
+        "icebeam"
+      ],
+      "ivs": {
+        "hp": 2,
+        "attack": 14,
+        "defence": 7,
+        "special_attack": 20,
+        "special_defence": 26,
+        "speed": 28
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:haban_berry",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 10,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

@@ -1,0 +1,19 @@
+{
+  "type": "cluttered:add_item",
+  "chance": 0.09,
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+  ],
+  "item": [
+    "cluttered:poplar_sapling",
+    "cluttered:crabapple_sapling",
+    "cluttered:sycamore_sapling",
+    "cluttered:fluorescent_maple_sapling",
+    "cluttered:blue_roundhead",
+    "cluttered:fly_agaric"
+  ],
+  "maxSize": 3
+}

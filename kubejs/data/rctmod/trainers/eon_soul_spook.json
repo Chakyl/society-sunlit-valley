@@ -1,0 +1,135 @@
+{
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:blaziken",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "speedboost",
+      "moveset": [
+        "bravebird",
+        "heatwave",
+        "closecombat",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_slash",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:zoroark",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:timid",
+      "ability": "illusion",
+      "moveset": [
+        "protect",
+        "nastyplot",
+        "bittermalice",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "special_attack": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "hisuian",
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:electabuzz",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "static",
+      "moveset": [
+        "helpinghand",
+        "thunder",
+        "lightscreen",
+        "taunt"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:eviolite",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ursaluna",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:quiet",
+      "ability": "mindseye",
+      "moveset": [
+        "bloodmoon",
+        "hammerarm",
+        "moonlight",
+        "earthpower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "bloodmoon",
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 11,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

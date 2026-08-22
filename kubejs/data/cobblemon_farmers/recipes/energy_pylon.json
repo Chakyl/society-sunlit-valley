@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "r r",
+    "bbb",
+    "bBb"
+  ],
+  "key": {
+    "r": {
+      "item": "society:charging_rod"
+    },
+    "B": {
+      "item": "cobblemon:beast_ball"
+    },
+    "b": {
+      "item": "oreganized:lead_block"
+    }
+  },
+  "result": {
+    "item": "cobblemon_farmers:energy_pylon"
+  },
+  "show_notification": true
+}

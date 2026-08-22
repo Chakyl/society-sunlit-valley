@@ -1,0 +1,122 @@
+{"displayName": "Rock Collector Adrianne",
+  "team": [
+    {
+      "species": "cobblemon:garganacl",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:sassy",
+      "ability": "sturdy",
+      "moveset": [
+        "explosion",
+        "stoneedge",
+        "earthquake",
+        "heavyslam"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 11,
+        "defence": 12,
+        "special_attack": 20,
+        "special_defence": 26,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:zoom_lens",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:kabutops",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:mild",
+      "ability": "swiftswim",
+      "moveset": [
+        "stoneedge",
+        "metalsound",
+        "liquidation",
+        "leechlife"
+      ],
+      "ivs": {
+        "hp": 18,
+        "attack": 27,
+        "defence": 23,
+        "special_attack": 2,
+        "special_defence": 21,
+        "speed": 11
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wide_lens",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:lycanroc",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:hardy",
+      "ability": "sandrush",
+      "moveset": [
+        "stoneedge",
+        "stealthrock",
+        "scaryface",
+        "crunch"
+      ],
+      "ivs": {
+        "hp": 2,
+        "attack": 19,
+        "defence": 19,
+        "special_attack": 28,
+        "special_defence": 2,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:kings_rock",
+      "aspects": [
+        "female",
+        "midnight"
+      ]
+    },
+    {
+      "species": "cobblemon:gigalith",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:hardy",
+      "ability": "sandstream",
+      "moveset": [
+        "explosion",
+        "stoneedge",
+        "sandstorm",
+        "rockblast"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 25,
+        "defence": 3,
+        "special_attack": 2,
+        "special_defence": 19,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

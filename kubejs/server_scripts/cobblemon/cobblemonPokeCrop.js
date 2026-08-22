@@ -124,6 +124,13 @@ const specialSpawns = new Map([
     ],
   ],
   [
+    "pamhc2trees:pamcherry",
+    [
+      { pokemon: "cherubi", weight: 2, lvlRange: [5, 20] },
+      { pokemon: "cherrim", weight: 1, lvlRange: [25, 40] },
+    ],
+  ],
+  [
     "pamhc2trees:pamstarfruit",
     [
       { pokemon: "gossifleur", weight: 2, lvlRange: [5, 20] },
@@ -144,6 +151,12 @@ const specialSpawns = new Map([
     [
       { pokemon: "whimsicott", weight: 3, lvlRange: [20, 30] },
       { pokemon: "cottonee", weight: 3, lvlRange: [5, 20] },
+    ],
+  ],
+  [
+    "society:cranberry",
+    [
+      { pokemon: "wurmple", weight: 3, lvlRange: [7] },
     ],
   ],
   [

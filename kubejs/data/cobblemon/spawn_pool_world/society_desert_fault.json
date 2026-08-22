@@ -1,0 +1,311 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "biome-larvitar-1",
+            "pokemon": "larvitar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "4-29",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-sandshrew-1",
+            "pokemon": "sandshrew",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "4-29",
+            "weight": 25.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-phanpy-1",
+            "pokemon": "phanpy",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "4-29",
+            "weight": 25.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-seviper-1",
+            "pokemon": "seviper",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "20-59",
+            "weight": 17.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-hippowdon-1",
+            "pokemon": "hippowdon",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "20-40",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-mudbray-1",
+            "pokemon": "mudbray",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "4-29",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-mudsdale-1",
+            "pokemon": "mudsdale",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "25-50",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-silicobra-1",
+            "pokemon": "silicobra",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "4-29",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-rhydon-1",
+            "pokemon": "rhydon",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "20-40",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-rhyperior-1",
+            "pokemon": "rhyperior",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "50-60",
+            "weight": 1.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-krookodile-1",
+            "pokemon": "krookodile",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-45",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-golurk-1",
+            "pokemon": "golurk",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30-50",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-nidoqueen-1",
+            "pokemon": "nidoqueen",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30-45",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-nidoking-1",
+            "pokemon": "nidoking",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30-45",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-steelix-1",
+            "pokemon": "steelix",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30-45",
+            "weight": 4.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        },
+        {
+            "id": "biome-gabite-1",
+            "pokemon": "gabite",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "24-45",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:desert_fault"
+                ]
+            }
+        }
+    ]
+}

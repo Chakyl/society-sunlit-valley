@@ -1,0 +1,19 @@
+{
+  "name": "岩浆怪鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:magmacubefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 620$(li)维度：下界$(li)生物群系：玄武岩三角洲"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:magmacubefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "A jiggly lava-dweller puffed up"
+    }
+  ]
+}

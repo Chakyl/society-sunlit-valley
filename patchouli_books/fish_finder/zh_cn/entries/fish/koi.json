@@ -1,0 +1,18 @@
+{
+  "name": "锦鲤",
+  "category": "patchouli:fish",
+  "icon": "crittersandcompanions:koi_fish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 340$(li)§0🔥 §6夏季§r$(li)水域：淡水$(li)天气：晴天$(li)时间：白天"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:koi_fish",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Stop being so koi..."
+    }
+  ]
+}

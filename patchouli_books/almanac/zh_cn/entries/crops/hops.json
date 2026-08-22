@@ -1,0 +1,30 @@
+{
+  "name": "啤酒花 🔥",
+  "category": "patchouli:crops",
+  "icon": "brewery:hops",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 21$(li)🔥 §6夏季§r$(li)产量：2$(li)生长时间：6 天$(br2)$(l)备注$()$(br)发现于针叶林生物群系。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 啤酒花作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "brewery:hop_trellis[age=6]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

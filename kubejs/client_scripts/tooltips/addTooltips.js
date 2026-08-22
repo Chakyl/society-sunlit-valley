@@ -1,84 +1,4 @@
 ItemEvents.tooltip((tooltip) => {
-  global.plushies.forEach((plush) => {
-    tooltip.addAdvanced(plush, (item, advanced, text) => {
-      if (item.nbt) {
-        let type = global.plushieTraits[Number(item.nbt.getInt("type"))];
-        if (tooltip.shift) {
-          text.add(1, [
-            Text.translatable("tooltip.society.plushies.trait"),
-            global.getTranslatedTextWithColorCode(
-              type.color,
-              `society.item.plushie.${type.trait}`
-            ),
-          ]);
-          text.add(2, [
-            Text.translate(`society.item.plushie.trait.description`).darkGray(),
-          ]);
-          let description = Text.translate(
-            `society.item.plushie.${type.trait}.description`
-          )
-            .getString()
-            .split("\n");
-          text.add(3, [Text.gray(description[0])]);
-          text.add(4, [description[1]]);
-        } else {
-          if (item.nbt.getCompound("quality_food"))
-            text.add(1, [
-              Text.translatable("tooltip.society.plushies.rarity"),
-              Text.gold(
-                "★".repeat(
-                  item.nbt.getCompound("quality_food").getInt("quality") + 1
-                )
-              ),
-              Text.gray(
-                "☆".repeat(
-                  3 - item.nbt.getCompound("quality_food").getInt("quality")
-                )
-              ),
-            ]);
-          else text.add(1, [Text.gray("☆".repeat(4))]);
-          let affection = item.nbt.getInt("affection");
-          text.add(2, [
-            Text.translatable("tooltip.society.plushies.affection"),
-            `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${affection < 4 ? `❤`.repeat(4 - affection) : ""
-            }`,
-          ]);
-          text.add(3, [
-            Text.translatable("tooltip.society.plushies.trait"),
-            global.getTranslatedTextWithColorCode(
-              type.color,
-              `society.item.plushie.${type.trait}`
-            ),
-            Text.of(" "),
-            Text.translatable(
-              "tooltip.society.hold_key",
-              global.getTranslatedTextWithColorCode(
-                type.color,
-                "key.keyboard.shift"
-              )
-            ).gray(),
-          ]);
-          if (item.nbt.animal) {
-            let animal = item.nbt.getCompound("animal");
-            text.add(4, [
-              Text.translatable("tooltip.society.plushies.animal_type"),
-              global.getTranslatedEntityName(String(animal.type)).gold(),
-            ]);
-            if (animal.name) {
-              text.add(5, [
-                Text.translatable("tooltip.society.plushies.animal_name"),
-                `§6${String(animal.name)}`,
-              ]);
-            }
-          } else {
-            text.add(4, [Text.translatable("tooltip.society.plushies")]);
-          }
-        }
-      } else {
-        text.add(1, [Text.translatable("tooltip.society.plushies")]);
-      }
-    });
-  });
 
   const artifactTooltips = [
     {
@@ -159,6 +79,14 @@ ItemEvents.tooltip((tooltip) => {
     {
       item: "society:giant_bandolier_belt",
       tooltip: "Impossibly large, as if a giant wooly creature wore it over its shoulder",
+    },
+    {
+      item: "society:ancient_builders_tool",
+      tooltip: "Relic of the World-Shapers",
+    },
+    {
+      item: "society:red_wrench",
+      tooltip: "I swear I won't use it...",
     },
   ];
   artifactTooltips.forEach((artifact) => {
@@ -255,7 +183,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:the_spark_also_rises",
-      description: "mining any ore drops Sparkstone.",
+      description: "Mining any ore drops Sparkstone.",
     },
     {
       item: "society:universal_methods_of_farming",
@@ -278,6 +206,11 @@ ItemEvents.tooltip((tooltip) => {
       description:
         "Plushies will start at 2 hearts of affection. Increases rates of high quality Plushies.",
     },
+    {
+      item: "society:the_metamorphosize",  
+      description:
+        "Impact of size on Butterfly/Moth prices are tripled.",
+    }
   ].forEach((book) => {
     tooltip.add(
       book.item,
@@ -293,76 +226,7 @@ ItemEvents.tooltip((tooltip) => {
       Text.translatable("tooltip.society.skill_book.use").green()
     );
   });
-  tooltip.addAdvanced("society:villager_invitation", (item, advanced, text) => {
-    if (item.nbt) {
-      text.add(
-        1,
-        Text.translatable(
-          "block.society.fish_pond.fish.type",
-          `${item.nbt.get("type")}`
-        ).aqua()
-      );
-      text.add(
-        2,
-        Text.translatable("block.society.fish_pond.description").gray()
-      );
-    } else {
-      text.add(
-        1,
-        Text.translatable("block.society.fish_pond.description").gray()
-      );
-    }
-  });
-  tooltip.addAdvanced("society:villager_home", (item, advanced, text) => {
-    if (item.nbt) {
-      text.add(
-        1,
-        Text.translatable(
-          "block.society.villager_home.type",
-          `${item.nbt.getString("type")}`
-        ).green()
-      );
-      text.add(
-        2,
-        Text.translatable("block.society.villager_home.description").gray()
-      );
-    } else {
-      text.add(
-        1,
-        Text.translatable("block.society.villager_home.description").gray()
-      );
-    }
-  });
-  tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
-    if (item.nbt) {
-      text.add(
-        1,
-        Text.translatable(
-          "block.society.fish_pond.fish.type",
-          `${Item.of(item.nbt.get("type")).id}`
-        ).aqua()
-      );
-      text.add(
-        2,
-        Text.translatable(
-          "block.society.fish_pond.fish.population",
-          `${item.nbt.get("population")}`,
-          `${item.nbt.get("max_population")}`
-        ).aqua()
-      );
-    } else {
-      text.add(
-        1,
-        Text.translatable("block.society.fish_pond.description").gray()
-      );
-      text.add(
-        2,
-        Text.translatable(
-          "block.society.fish_pond.description.place"
-        ).darkAqua()
-      );
-    }
-  });
+
   tooltip.add(
     "simplerecall:recall_potion",
     Text.translatable("tooltip.society.recall_potion").gray()
@@ -387,34 +251,10 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("tooltip.society.phone.tip").green()
   );
   // Furniture
-  tooltip.add(
-    "tanukidecor:diy_workbench",
-    Text.translatable("tooltip.society.diy_workbench").gray()
-  );
-  tooltip.add("society:tanuki_catalog", [
-    Text.translatable(
-      "tooltip.society.furniture_catalog",
-      "2",
-      Text.translatable("item.numismatics.crown").gold(),
-      Text.translatable("item.society.tanuki_leaf").green()
-    ).gray(),
-  ]);
-  tooltip.add("society:modern_catalog", [
-    Text.translatable(
-      "tooltip.society.furniture_catalog",
-      "6",
-      Text.translatable("item.numismatics.crown").gold(),
-      Text.translatable("item.society.architects_digest").white()
-    ).gray(),
-  ]);
-  tooltip.add("society:fantasy_catalog", [
-    Text.translatable(
-      "tooltip.society.furniture_catalog",
-      "4",
-      Text.translatable("item.numismatics.crown").gold(),
-      Text.translatable("item.society.fantasy_dust").yellow()
-    ).gray(),
-  ]);
+  tooltip.add("tanukidecor:diy_workbench", Text.translatable("tooltip.society.diy_workbench").gray());
+  tooltip.add("society:tanuki_catalog", Text.translatable("tooltip.society.tanuki_catalog").gray());
+  tooltip.add("society:modern_catalog", Text.translatable("tooltip.society.modern_catalog").gray());
+  tooltip.add("society:fantasy_catalog", Text.translatable("tooltip.society.fantasy_catalog").gray());
   global.lootFurniture.forEach((item) => {
     tooltip.add(
       item,
@@ -433,20 +273,12 @@ ItemEvents.tooltip((tooltip) => {
     }
   });
   tooltip.add(
-    "society:architects_digest",
-    Text.translatable("item.society.architects_digest.description").gray()
-  );
-  tooltip.add(
-    "society:tanuki_leaf",
-    Text.translatable("item.society.tanuki_leaf.description").gray()
-  );
-  tooltip.add(
     /fantasyfurniture/,
     Text.translatable("tooltip.society.furnitures.fantasy").white()
   );
   tooltip.add(
-    "society:fantasy_dust",
-    Text.translatable("item.society.fantasy_dust.description").gray()
+    "society:fairy_dust",
+    Text.translatable("item.society.fairy_dust.description").gray()
   );
   // Hammers
   tooltip.add(
@@ -884,10 +716,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.translatable("item.society.frozen_tear.description").gray()
   );
   tooltip.add(
-    "liltractor:liltractor",
-    Text.translatable("tooltip.society.liltractor").gray()
-  );
-  tooltip.add(
     ["displaydelight:food_plate", "displaydelight:small_food_plate"],
     Text.translatable("tooltip.society.food_plate").gray()
   );
@@ -950,27 +778,60 @@ ItemEvents.tooltip((tooltip) => {
     "society:dragontooth_axe",
     Text.translatable("item.society.dragontooth_axe.description").red()
   );
-  tooltip.add(
-    "botania:apothecary_default",
-    Text.translatable("tooltip.society.petal_apothecary.obtain")
-  );
+  tooltip.addAdvanced("botania:apothecary_default", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.petal_apothecary.description").gold());
+    } else {
+      text.add([
+        Text.translatable("tooltip.society.petal_apothecary.obtain").append(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
   tooltip.add(
     "society:kinetic_blueprint",
     Text.translatable("item.society.kinetic_blueprint.description.tip").green()
   );
-  tooltip.add(
-    "society:kinetic_blueprint",
-    Text.translatable("tooltip.society.kinetic_blueprint.obtain")
-  );
-  tooltip.add(
-    "society:skull_cavern_teleporter",
-    Text.translatable("tooltip.society.skull_cavern_teleporter.obtain")
-  );
-  tooltip.add(
-    "relics:magic_mirror",
-    Text.translatable("tooltip.society.magic_mirror.obtain")
-  );
-
+  tooltip.addAdvanced("society:kinetic_blueprint", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.kinetic_blueprint.description").gold());
+    } else {
+      text.add([
+        Text.translatable("tooltip.society.kinetic_blueprint.obtain").append(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
+  tooltip.addAdvanced("society:skull_cavern_teleporter", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.skull_cavern_teleporter.description").gold());
+    } else {
+      text.add([
+        Text.translatable("tooltip.society.skull_cavern_teleporter.obtain").append(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
+  tooltip.addAdvanced('aquaculture:nether_star_hook', (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.nether_star_hook.description").gold());
+    } else {
+      text.add([
+        Text.translatable("tooltip.society.nether_star_hook.obtain").append(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  }); 
+  tooltip.addAdvanced("relics:magic_mirror", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.magic_mirror.description").gold());
+    } else {
+      text.add([
+        Text.translatable("tooltip.society.magic_mirror.obtain").append(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
   tooltip.add(
     [
       "moreminecarts:chiseled_organic_glass",
@@ -1027,9 +888,17 @@ ItemEvents.tooltip((tooltip) => {
     "furniture:trash_bag",
     Text.translatable("tooltip.society.trash_bag").gray()
   );
-  tooltip.add(
+    tooltip.add(
     "society:bouquet_bag",
     Text.translatable("tooltip.society.bouquet_bag").green()
+  );
+  tooltip.add(
+    "furniture:blueprints",
+    Text.translatable("tooltip.society.blueprints").gray()
+  );
+  tooltip.add(
+    'via_romana:charting_map',
+    Text.translatable("tooltip.society.charting_map").gray()
   );
   tooltip.add(
     "society:bouquet_bag",
@@ -1039,7 +908,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:scavenged_food_bag",
     Text.translatable("tooltip.society.right_click_open").gray()
   );
-    tooltip.add(
+  tooltip.add(
     "species:treeper_spawn_egg",
     Text.translatable("tooltip.society.treeper_spawn_egg").red()
   );
@@ -1067,49 +936,7 @@ ItemEvents.tooltip((tooltip) => {
     "farmersdelight:rich_soil",
     Text.translatable("tooltip.society.rich_soil").gray()
   );
-  tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
-    if (tooltip.shift) {
-      text.add(1, [
-        Text.white("")
-          .append(Text.translatable("desc.sereneseasons.fertile_seasons"))
-          .append(":"),
-        Text.of(" "),
-        Text.translatable("desc.sereneseasons.spring").green().append(","),
-        Text.of(" "),
-        Text.translatable("desc.sereneseasons.summer").yellow().append(","),
-        Text.of(" "),
-        Text.translatable("desc.sereneseasons.autumn").gold(),
-      ]);
-    } else {
-      text.add(1, [
-        Text.translatable(
-          "tooltip.society.hold_key",
-          Text.translatable("key.keyboard.shift").gray()
-        ).darkGray(),
-      ]);
-    }
-  });
-  tooltip.addAdvanced(
-    "farm_and_charm:strawberry_seed",
-    (item, advanced, text) => {
-      if (tooltip.shift) {
-        text.add(1, [
-          Text.white("")
-            .append(Text.translatable("desc.sereneseasons.fertile_seasons"))
-            .append(":"),
-          Text.of(" "),
-          Text.translatable("desc.sereneseasons.spring").green(),
-        ]);
-      } else {
-        text.add(1, [
-          Text.translatable(
-            "tooltip.society.hold_key",
-            Text.translatable("key.keyboard.shift").gray()
-          ).darkGray(),
-        ]);
-      }
-    }
-  );
+
   tooltip.add(
     "relics:jellyfish_necklace",
     Text.translatable("tooltip.society.jellyfish_necklace").red()
@@ -1178,92 +1005,10 @@ ItemEvents.tooltip((tooltip) => {
       Text.translatable("item.society.geode.description").gray()
     );
   });
-  tooltip.addAdvanced("society:car_key", (item, advanced, text) => {
-    text.add(1, [Text.translatable("item.society.car_key.description").gray()]);
-    if (item.nbt) {
-      text.add(2, [
-        Text.translatable("item.society.car_key.description.parked").green(),
-      ]);
-    } else {
-      text.add(2, [
-        Text.translatable("item.society.car_key.description.empty").red(),
-      ]);
-    }
-  });
-  const getPigColoredName = (pig) => {
-    switch (pig) {
-      case "Red":
-        return Text.translatable("society.pig_race.red_pig").red();
-      case "Blue":
-        return Text.translatable("society.pig_race.blue_pig").blue();
-      case "Yellow":
-        return Text.translatable("society.pig_race.yellow_pig").yellow();
-      case "Green":
-        return Text.translatable("society.pig_race.green_pig").green();
-      default:
-        console.log(`Invalid pig color`);
-    }
-    return Text.of(`${pig}`);
-  };
-  tooltip.addAdvanced(
-    ["society:pig_race_ticket", "society:multiplayer_pig_race_ticket"],
-    (item, advanced, text) => {
-      text.add(1, [
-        Text.translatable("item.society.pig_race_ticket.description").gray(),
-      ]);
-      if (item.nbt) {
-        text.add(2, [
-          Text.translatable(
-            "item.society.pig_race_ticket.description.bet",
-            getPigColoredName(item.nbt.bet)
-          ).gray(),
-        ]);
-      } else {
-        text.add(2, [
-          Text.translatable(
-            "item.society.pig_race_ticket.description.no_pig"
-          ).gray(),
-        ]);
-      }
-    }
-  );
+
 
   // Magnifying
-  const magnifyingBlocks = [
-    Text.translatable("block.society.auto_grabber"),
-    Text.translatable("block.society.artisan_hopper"),
-    Text.translatable("block.farmingforblockheads.chicken_nest"),
-    Text.translatable("block.society.feeding_trough"),
-    Text.translatable("block.splendid_slimes.slime_feeder"),
-    Text.translatable("block.society.snow_melter"),
-    Text.translatable("block.society.fish_pond_basket"),
-    Text.translatable("block.society.golden_clock"),
-    Text.translatable("block.society.mana_clock"),
-    Text.translatable("block.society.mana_milker"),
-    Text.translatable(
-      "item.society.magnifying_glass.description.view_block.sprinklers"
-    ),
-    Text.translatable("block.society.growth_obelisk"),
-    Text.translatable("block.society.ribbit_hut"),
-  ];
-  tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {
-    if (tooltip.shift) {
-      magnifyingBlocks.forEach((block, index) => {
-        text.add(index + 1, Text.gold(block));
-      });
-    } else {
-      text.add(
-        1,
-        Text.translatable("item.society.magnifying_glass.description").green()
-      );
-      text.add(2, [
-        Text.translatable(
-          "item.society.magnifying_glass.description.view_block",
-          Text.translatable("key.keyboard.shift").gray()
-        ).darkGray(),
-      ]);
-    }
-  });
+
   tooltip.add(
     "trials:ominous_bottle",
     Text.translatable("effect.minecraft.bad_omen")
@@ -1407,6 +1152,19 @@ ItemEvents.tooltip((tooltip) => {
     global.removedItems,
     Text.translatable("tooltip.society.removed_items").red()
   );
+  tooltip.add(
+    "society:dry_totem",
+    Text.translatable("item.society.dry_totem.description").gray()
+  );
+  tooltip.add(
+    "society:thunder_totem",
+    Text.translatable("item.society.thunder_totem.description").gray()
+  );
+  tooltip.add(
+    "society:rain_totem",
+    Text.translatable("item.society.rain_totem.description").gray()
+  );
+
   // Mastery
   tooltip.add(
     "society:treasure_totem",
@@ -1448,70 +1206,62 @@ ItemEvents.tooltip((tooltip) => {
     "society:plushie_wand",
     Text.translatable("item.society.plushie_wand.description").gray()
   );
-
-  tooltip.add(
-    [
-      "society:the_quality_of_the_earth",
-      "society:mystic_syrup",
-      "cluttered:willow_log",
-      "cluttered:willow_sapling",
-      "society:bubble_totem",
-      "society:treasure_totem",
-      "society:sparkpod_seed",
-      "society:sparkpod",
-      "society:statue_of_cravings",
-    ],
-    Text.translatable("tooltip.society.farming_mastery.required")
-  );
-  tooltip.add(
-    [
-      "society:the_spark_also_rises",
-      "society:recycled_core",
-      "society:moon_statue",
-    ],
-    Text.translatable("tooltip.society.mining_mastery.required")
-  );
-  tooltip.add(
-    [
-      "society:women_who_run_with_the_plushies",
-      "society:animal_cracker",
-      "society:sunlit_crystal",
-    ],
-    Text.translatable("tooltip.society.husbandry_mastery.required")
-  );
-  tooltip.add(
-    [
-      "society:pond_house_five",
-      "society:roe_recycler",
-      "society:net_bobber",
-      "society:needle_bobber",
-    ],
-    Text.translatable("tooltip.society.fishing_mastery.required")
-  );
-  tooltip.add(
-    [
-      "society:the_red_and_the_black",
-      "domesticationinnovation:drum",
-      "domesticationinnovation:wayward_lantern",
-      "domesticationinnovation:collar_tag",
-      "minecraft:enchanting_table",
-    ],
-    Text.translatable("tooltip.society.adventuring_mastery.required")
-  );
-
-  global.ageableProductInputs.forEach((product) => {
-    const splitProduct = product.item.split(":");
-    tooltip.addAdvanced(`society:aged_${splitProduct[1]}`, (item, advance, text) => {
-      if (product.item === "brewery:whiskey_maggoallan" || product.item === "brewery:whiskey_smokey_reverie")
-        text.set(0, text.get(0).copy().gold())
-      else
-        text.set(0, text.get(0).copy().aqua());
+  const getMasteryTooltip = (id, mastery) => {
+    tooltip.addAdvanced(id, (item, advanced, text) => {
+      if (tooltip.shift) {
+        text.add(Text.translatable("tooltip.society.general_mastery.description").aqua());
+      } else {
+        text.add([
+          Text.translatable("tooltip.society.general_mastery.required").append(" "),
+          Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+        ]);
+      }
     });
-    tooltip.addAdvanced(`society:double_aged_${splitProduct[1]}`, (item, advance, text) => {
-      if (product.item === "brewery:whiskey_maggoallan" || product.item === "brewery:whiskey_smokey_reverie")
-        text.set(0, text.get(0).copy().gold())
-      else
-        text.set(0, text.get(0).copy().darkAqua());
-    });
+  }
+
+
+  [
+    "society:the_quality_of_the_earth",
+    "society:mystic_syrup",
+    "cluttered:willow_log",
+    "cluttered:willow_sapling",
+    "society:bubble_totem",
+    "society:treasure_totem",
+    "society:sparkpod_seed",
+    "society:sparkpod",
+    "society:statue_of_cravings",
+  ].forEach((item) => {
+    getMasteryTooltip(item, "farming")
   });
+  [
+    "society:the_spark_also_rises",
+    "society:recycled_core",
+    "society:moon_statue",
+  ].forEach((item) => {
+    getMasteryTooltip(item, "mining")
+  });
+  [
+    "society:the_red_and_the_black",
+    "domesticationinnovation:drum",
+    "domesticationinnovation:wayward_lantern",
+    "domesticationinnovation:collar_tag",
+    "minecraft:enchanting_table",
+  ].forEach((item) => {
+    getMasteryTooltip(item, "adventuring")
+  });
+  [
+    "society:women_who_run_with_the_plushies",
+    "society:animal_cracker",
+    "society:sunlit_crystal",
+  ].forEach((item) => {
+    getMasteryTooltip(item, "husbandry")
+  });
+  [
+    "society:pond_house_five",
+    "society:roe_recycler",
+    "society:net_bobber",
+    "society:needle_bobber",
+  ].forEach((item) => {
+    getMasteryTooltip(item, "fishing")
+  })
 });

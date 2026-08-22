@@ -31,7 +31,7 @@ global.getPartyLevel = (player) => {
   return levelAverage;
 };
 
-global.hasScope = (entity) => entity.nbt.ForgeCaps["curios:inventory"].toString().includes("sunlit_cobblemon:silph_scope");
+global.hasScope = (player) => player.isCuriosEquipped("sunlit_cobblemon:silph_scope");
 
 global.hasScopeSurprises = (entity) => entity.nbt.ForgeCaps["curios:inventory"].toString().includes("\"sunlit_cobblemon:silph_scope\",tag:{surprise:1b}");
 
@@ -57,6 +57,7 @@ global.getPokemonLevel = (lvlRange) => {
     Math.floor(Math.random() * (lvlRange[1] - lvlRange[0] + 1)) + lvlRange[0]
   );
 };
+
 const $CobblemonWorldSpawnerManager = Java.loadClass("com.cobblemon.mod.common.api.spawning.CobblemonWorldSpawnerManager");
 const $SpawningArea = Java.loadClass("com.cobblemon.mod.common.api.spawning.spawner.SpawningArea");
 const $SpawnBucket = Java.loadClass("com.cobblemon.mod.common.api.spawning.SpawnBucket");
@@ -100,19 +101,22 @@ const getCorrectRaidPokemon = (spawns) => {
   return chosen;
 }
 
-global.summonRaidPokemon = (server, level, block, type, variant, raidLevel, spawnedLevel, shiny, hiddenAbility, raidTier, moveUp) => {
+global.summonRaidPokemon = (server, level, block, type, variant, raidLevel, spawnedLevel, shiny, hiddenAbility, raidTier, offsets) => {
   server.runCommandSilent(`execute in ${level.dimension} run pokespawnat ${block.x} ${block.y + 1} ${block.z} ${type} ${shiny ? "shiny " : ""} ${hiddenAbility ? "hiddenability " : ""} ${variant && variant.equals("") ? "" : variant} level=${raidLevel} hp_ev=84 defence_ev=84 special_defence_ev=84 speed_ev=252 uncatchable=yes hp_iv=32 defence_iv=31 special_defence_iv=31 attack_iv=31 special_attack_iv=31 speed_iv=31`);
   let spawnedPokemon = level.getEntitiesWithin(AABB.ofBlock(level.getBlock(block.getPos())).inflate(0.2)).filter((e) => e.type.equals("cobblemon:pokemon"));
   if (spawnedPokemon && spawnedPokemon.length > 0) {
     spawnedPokemon = getCorrectRaidPokemon(spawnedPokemon);
-    if (moveUp) spawnedPokemon.setDeltaMovement(new Vec3d(0, 1.1, 0));
+    if (offsets) spawnedPokemon.setDeltaMovement(new Vec3d(0 + offsets.x, 0 + offsets.y, 0 + offsets.z));
     spawnedPokemon.persistentData.raidMon = true;
-    if (type === "lunala") spawnedPokemon.persistentData.moonMon = true;
+    if (type === "lunala" || type === "darkrai") spawnedPokemon.persistentData.moonMon = true;
     spawnedPokemon.persistentData.raidMonStats = {
       tier: raidTier,
       hasHiddenAbility: hiddenAbility,
       spawnedLevel: spawnedLevel,
       variant: variant
+    }
+    if (type === "rayquaza") { 
+      spawnedPokemon.potionEffects.add("minecraft:fire_resistance", 1200, 1, false, false); 
     }
     spawnedPokemon.potionEffects.add("minecraft:glowing", 1200, 0, false, false);
     spawnedPokemon.potionEffects.add("minecraft:slow_falling", 400, 0, false, false);
@@ -134,6 +138,36 @@ global.hasPartyPokemon = (player, pokemonNames, count) => {
   return regis.length >= count;
 };
 
+global.getPartyCount = (player) => {
+  if (player == undefined) return 0;
+  const party = global.getPlayerParty(player);
+  if (party == undefined) return 0;
+  let count = 0;
+  // why not use .size? i blame kotlin
+  party.forEach(() => {
+    count++;
+  });
+  return count;
+};
+
+global.partyIsMonotype = (player, type) => {
+  if (player == undefined) return false;
+  const party = global.getPlayerParty(player);
+  if (party == undefined) return false;
+  let isMonoType = true;
+  party.forEach((pokemon) => {
+    if (isMonoType) {
+      if (pokemon.primaryType.name != type) {
+        if (pokemon.secondaryType) {
+          isMonoType = pokemon.secondaryType.name == type;
+        } else {
+          isMonoType = false;
+        }
+      }
+    }
+  });
+  return isMonoType;
+};
 
 global.handleLeagueFee = (server, player, reason) => {
   const UUID = player.getUuid();
@@ -146,13 +180,13 @@ global.handleLeagueFee = (server, player, reason) => {
   if (reason === "murder") {
     minimumFee = 10000;
     maxFee = 50000;
-    amountToDeduct = Math.min((Math.round(balance * 0.2) * (player.persistentData.winStreak + 1)), maxFee);
+    amountToDeduct = Math.min((Math.round(balance * 0.2) * (player.persistentData.wins + 1)), maxFee);
   }
   if (reason === "loss") {
     minimumFee = 512;
     maxFee = 10000;
 
-    amountToDeduct = Math.min(Math.round(balance * 0.05) * (player.persistentData.winStreak + 1), maxFee);
+    amountToDeduct = Math.min(Math.round(balance * 0.05) * (player.persistentData.wins + 1), maxFee);
   }
   amountToDeduct *= player.stages.has("trainer_level_8") ? 2 : 1;
   if (amountToDeduct < minimumFee) amountToDeduct = minimumFee;
@@ -192,7 +226,10 @@ const NPCMysteryGifts = {
   carpenter: "celebi",
   fisher: "volcanion",
   market: "zeraora",
-  shepherd: "meloetta"
+  shepherd: "meloetta",
+  trader: "meltan",
+  librarian: "diancie",
+  witch: "hoopa"
 }
 
 
@@ -209,3 +246,24 @@ global.setItemNbt = (item, key, value) => {
   newNbt[key] = value;
   item.nbt = newNbt;
 };
+
+global.POKEMON_TYPES = [
+  { type: "normal", hex: 0xe2e2d4 },
+  { type: "fire", hex: 0xf69723 },
+  { type: "water", hex: 0x48b9e8 },
+  { type: "grass", hex: 0x86c53d },
+  { type: "electric", hex: 0xf0e53b },
+  { type: "ice", hex: 0xe0641d },
+  { type: "fighting", hex: 0xda5847 },
+  { type: "poison", hex: 0xdb55cf },
+  { type: "ground", hex: 0xe8b15f },
+  { type: "flying", hex: 0xcebdff },
+  { type: "psychic", hex: 0xff838e },
+  { type: "bug", hex: 0xcccb34 },
+  { type: "rock", hex: 0xb3a06d },
+  { type: "ghost", hex: 0xa176d3 },
+  { type: "dragon", hex: 0x505cf3 },
+  { type: "dark", hex: 0x54778d },
+  { type: "steel", hex: 0xbcd6e4 },
+  { type: "fairy", hex: 0xffa5d3 }
+]

@@ -14,6 +14,7 @@ BlockEvents.rightClicked(
       "minecraft:diamond_hoe",
       "minecraft:netherite_hoe",
       "aquaculture:neptunium_hoe",
+      'farm_and_charm:pitchfork'
     ];
     if (hoes.includes(e.item.getId())) e.cancel()
   }

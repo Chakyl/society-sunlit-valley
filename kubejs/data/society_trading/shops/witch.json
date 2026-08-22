@@ -1,60 +1,14 @@
 {
   "shop_id": "witch",
   "name": "shop.society_trading.witch",
-  "texture": "botania:textures/block/mana_void",
-  "stage_required": "entered_nether",
+  "texture": "dialog:textures/portraits/witch",
+  "stage_required": "invited_witch",
+  "villager_profession": "weaponsmith",
   "jei_catalyst": {
-    "item": "herbalbrews:witch_hat"
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:witch\"}}"
   },
   "trades": [
-    {
-      "offer": {
-        "item": "labels:label",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:spur",
-        "count": 3
-      },
-      "numismatics_cost": 3,
-      "trade_id": "librarian_label_for_spur"
-    },
-    {
-      "offer": {
-        "item": "minecraft:name_tag",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 4
-      },
-      "numismatics_cost": 256,
-      "trade_id": "librarian_name_tag_for_cog"
-    },
-    {
-      "offer": {
-        "item": "gag:labeling_tool",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 2
-      },
-      "numismatics_cost": 1024,
-      "trade_id": "labeling_tool_tag_for_sun"
-    },
-    {
-      "offer": {
-        "item": "minecraft:book",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:bevel",
-        "count": 3
-      },
-      "numismatics_cost": 24,
-      "trade_id": "librarian_book_for_bevel"
-    },
     {
       "offer": {
         "item": "society:sunlit_crystal",
@@ -187,7 +141,7 @@
         "count": 64
       },
       "numismatics_cost": 262144,
-      "trade_id": "cleric_wand_of_symmetry_for_sun"
+      "trade_id": "witch_elytra_wing_for_sun"
     },
     {
       "offer": {
@@ -203,7 +157,7 @@
         "count": 1
       },
       "numismatics_cost": 163840,
-      "trade_id": "cleric_hearthstone_for_sun"
+      "trade_id": "witch_hearthstone_for_sun"
     },
     {
       "offer": {
@@ -215,7 +169,7 @@
         "count": 3
       },
       "numismatics_cost": 1536,
-      "trade_id": "cleric_goddess_statue_for_sun"
+      "trade_id": "witch_goddess_statue_for_sun"
     },
     {
       "offer": {
@@ -227,7 +181,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
-      "trade_id": "cleric_stone_wand_for_crown"
+      "trade_id": "witch_stone_wand_for_crown"
     },
     {
       "offer": {
@@ -239,7 +193,7 @@
         "count": 1
       },
       "numismatics_cost": 4096,
-      "trade_id": "cleric_core_angel_for_sun"
+      "trade_id": "witch_core_angel_for_sun"
     },
     {
       "offer": {
@@ -251,7 +205,7 @@
         "count": 1
       },
       "numismatics_cost": 16777216,
-      "trade_id": "cleric_core_destruction_for_prismatic_coin"
+      "trade_id": "witch_core_destruction_for_prismatic_coin"
     },
     {
       "offer": {
@@ -267,7 +221,7 @@
         "count": 1
       },
       "numismatics_cost": 20480,
-      "trade_id": "cleric_wand_of_symmetry_for_sun"
+      "trade_id": "witch_wand_of_symmetry_for_sun"
     },
     {
       "offer": {
@@ -475,7 +429,7 @@
       "stage_required": "community_center_complete",
       "numismatics_cost": 1073741824,
       "unlock_description": "jei.society_trading.community_center_complete",
-      "trade_id": "witch_ribbit_hut"
+      "trade_id": "witch_iridium_clock"
     },
     {
       "offer": {

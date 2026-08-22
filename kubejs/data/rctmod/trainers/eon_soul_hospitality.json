@@ -1,0 +1,130 @@
+{
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:aerodactyl",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "rockhead",
+      "moveset": [
+        "rockslide",
+        "tailwind",
+        "dualwingbeat",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "speed": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_slash",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:sneasler",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:jolly",
+      "ability": "unburden",
+      "moveset": [
+        "closecombat",
+        "direclaw",
+        "coaching",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:grassy_seed",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:sylveon",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:modest",
+      "ability": "pixilate",
+      "moveset": [
+        "protect",
+        "moonblast",
+        "hypervoice",
+        "hyperbeam"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "speed": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:fairy_feather",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:sinistcha",
+      "gender": "GENDERLESS",
+      "level": 100,
+      "nature": "cobblemon:modest",
+      "ability": "hospitality",
+      "moveset": [
+        "protect",
+        "ragepowder",
+        "shadowball",
+        "matchagotcha"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "speed": 252,
+        "hp": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 11,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

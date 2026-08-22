@@ -1,9 +1,12 @@
-{
+  {
   "shop_id": "trader",
   "name": "shop.society_trading.trader",
-  "texture": "minecraft:textures/block/fletching_table_side",
-  "stage_required": "entered_skull_cavern",
-  "jei_catalyst": { "item": "society:ancient_cog" },
+  "texture": "dialog:textures/portraits/trader",
+  "stage_required": "invited_trader",
+  "jei_catalyst": {
+    "item": "society:villager",
+    "nbt": "{type:{id:\"society:trader\"}}"
+  },
   "villager_profession": "fletcher",
   "trades": [
     {
@@ -45,10 +48,10 @@
         "count": 1
       },
       "request": {
-        "item": "farmersdelight:rice_bag",
-        "count": 4
+        "item": "etcetera:cotton_flower",
+        "count": 64
       },
-      "trade_id": "minecraft:trader_earth_crystal_for_rice_bag"
+      "trade_id": "minecraft:trader_earth_crystal_for_cotton_flower"
     },
     {
       "offer": {
@@ -100,10 +103,10 @@
         "count": 1
       },
       "request": {
-        "item": "vinery:aegis_wine",
+        "item": "society:dried_lemon",
         "count": 4
       },
-      "trade_id": "minecraft:trader_jade_for_aegis_wine"
+      "trade_id": "minecraft:trader_jade_for_dried_lemon"
     },
     {
       "offer": {
@@ -219,6 +222,36 @@
         "count": 64
       },
       "trade_id": "minecraft:trader_tasty_tail_for_masterpiece_teacup"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:scroll_of_darkness",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:fire_pledge",
+        "count": 4
+      },
+      "second_request": {
+        "item": "society:pink_energy_drink",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_scroll_of_darkness"
+    },
+    {
+      "offer": {
+        "item": "cobblemon:scroll_of_waters",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:water_pledge",
+        "count": 4
+      },
+      "second_request": {
+        "item": "society:mana_energy_drink",
+        "count": 16
+      },
+      "trade_id": "minecraft:trader_scroll_of_waters"
     },
     {
       "offer": {
@@ -373,6 +406,21 @@
     },
     {
       "offer": {
+        "item": "sunlit_cobblemon:corrupted_clock",
+        "count": 1
+      },
+      "request": {
+        "item": "society:broken_clock",
+        "count": 1
+      },
+      "second_request": {
+        "item": "cobblemon_farmers:spectral_battery",
+        "count": 4
+      },
+      "trade_id": "sunlit_cobblemon:trader_corrupted_clock"
+    },
+    {
+      "offer": {
         "item": "society:inserter",
         "count": 1
       },
@@ -402,6 +450,45 @@
       "stage_required": "mining_mastery",
       "unlock_description": "jei.society_trading.mining_mastery_unlocked",
       "trade_id": "minecraft:trader_recycled_core_for_ruby_and_prismatic_shard"
+    },
+    {
+      "offer": {
+        "item": "society:monocle",
+        "count": 1
+      },
+      "request": {
+        "item": "society:aged_goat_cheese_block",
+        "count": 8
+      },
+      "stage_required": "trader_clothing",
+      "unlock_description": "jei.society_trading.trader_clothing",
+      "trade_id": "trader_monocle_for_aged_goat_cheese_block"
+    },
+    {
+      "offer": {
+        "item": "society:red_glasses",
+        "count": 1
+      },
+      "request": {
+        "item": "botania:manaweave_cloth",
+        "count": 8
+      },
+      "stage_required": "trader_clothing",
+      "unlock_description": "jei.society_trading.trader_clothing",
+      "trade_id": "trader_red_glasses_for_manaweave_cloth"
+    },
+    {
+      "offer": {
+        "item": "society:spiral_glasses",
+        "count": 1
+      },
+      "request": {
+        "item": "society:pink_energy_drink",
+        "count": 8
+      },
+      "stage_required": "trader_clothing",
+      "unlock_description": "jei.society_trading.trader_clothing",
+      "trade_id": "trader_spiral_glasses_for_pink_energy_drink"
     }
   ]
 }

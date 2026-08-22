@@ -57,7 +57,7 @@ PlayerEvents.tick((e) => {
     const { player, level } = e;
     const curios = player.nbt.ForgeCaps["curios:inventory"];
 
-    if (player.age % 200 == 0 && global.getHasCurio(player, "sunlit_cobblemon:poke_radar")) {
+    if (player.age % 200 == 0 && player.isCuriosEquipped("sunlit_cobblemon:poke_radar")) {
 
         let rarityMatch = /{rarity:"([^"]*)"/.exec(curios.toString());
         let mons = [];
@@ -72,7 +72,7 @@ PlayerEvents.tick((e) => {
                 variant = formMap.get(`${identifier}`)
             } else {
                 variant = handleVariant(aspect);
-                if (variant == "galar" && identifier === "corsola") variant = "galarian";
+                if (variant == "galar" && ["corsola", "darumaka", "darmanitan", "zigzagoon", "linoone"].includes(identifier)) variant = "galarian";
             }
             // Why is Mr Rime like that
             let foundMon = `${String(species.nationalPokedexNumber).padStart(4, '0')}_${handleIdentifier(identifier)}${variant ? `_${variant}` : ""}`

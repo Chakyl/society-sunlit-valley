@@ -1,0 +1,30 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "politoed",
+	"forages": [
+		{
+			"item": "minecraft:ochre_froglight",
+			"count": 8,
+			"chance": 0.25,
+			"min_hearts": 3
+		},
+		{
+			"item": "minecraft:pearlescent_froglight",
+			"count": 8,
+			"chance": 0.25,
+			"min_hearts": 6
+		},
+		{
+			"item": "minecraft:verdant_froglight",
+			"count": 8,
+			"chance": 0.25,
+			"min_hearts": 9
+		},
+		{
+			"item": "society:rain_totem",
+			"count": 1,
+			"chance": 0.04,
+			"min_hearts": 10
+		}
+	]
+}

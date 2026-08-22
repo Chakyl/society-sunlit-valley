@@ -1,0 +1,199 @@
+{
+  "displayName": "Ace Trainer Barry",
+  "aiLevel": 9,
+  "team": [
+    {
+      "species": "cobblemon:landorus",
+      "gender": "MALE",
+      "level": 93,
+      "nature": "cobblemon:jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "earthquake",
+        "stoneedge",
+        "stealthrock",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "therian"
+      ]
+    },
+    {
+      "species": "cobblemon:corviknight",
+      "gender": "MALE",
+      "level": 93,
+      "nature": "cobblemon:impish",
+      "ability": "mirrorarmor",
+      "moveset": [
+        "bulkup",
+        "agility",
+        "powertrip",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 0,
+        "defence": 252,
+        "special_attack": 0,
+        "special_defence": 4,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers"
+    },
+    {
+      "species": "cobblemon:alakazam",
+      "gender": "FEMALE",
+      "level": 94,
+      "nature": "cobblemon:timid",
+      "ability": "magicguard",
+      "moveset": [
+        "nastyplot",
+        "psychic",
+        "focusblast",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash"
+    },
+    {
+      "species": "cobblemon:kommoo",
+      "gender": "MALE",
+      "level": 93,
+      "nature": "cobblemon:naive",
+      "ability": "soundproof",
+      "moveset": [
+        "clangingscales",
+        "closecombat",
+        "poisonjab",
+        "rockslide"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 4,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:kommonium_z"
+    },
+    {
+      "species": "cobblemon:latias",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:timid",
+      "ability": "levitate",
+      "moveset": [
+        "dracometeor",
+        "psyshock",
+        "surf",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:weaknesspol"
+    },
+    {
+      "species": "cobblemon:toxtricity",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:timid",
+      "ability": "punkrock",
+      "moveset": [
+        "boomburst",
+        "overdrive",
+        "sludgewave",
+        "hiddenpower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 30,
+        "defence": 31,
+        "special_attack": 30,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:toxtricitite"
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}

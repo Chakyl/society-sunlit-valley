@@ -1,0 +1,34 @@
+{
+  "name": "瓶子草 🔥",
+  "category": "patchouli:crops",
+  "icon": "minecraft:pitcher_plant",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 128$(li)🔥 §6夏季§r$(li)产量：1$(li)生长时间: 4 天$(br2)$(l)备注$()$(br)嗅探兽挖出的种子。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 瓶子草作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "U"
+          ],
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:pitcher_crop[age=4,half=lower]",
+          "U": "minecraft:pitcher_crop[age=4,half=upper]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

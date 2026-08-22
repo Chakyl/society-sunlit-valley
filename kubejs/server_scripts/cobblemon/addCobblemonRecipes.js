@@ -26,7 +26,8 @@ ServerEvents.recipes((e) => {
   e.shapeless("simpletms:tr_dracometeor", ["society:prismatic_shard", "4x sunlit_cobblemon:draco_meteorite"]);
   e.shapeless("cobblemon:quick_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
   e.shapeless("cobblemon:razor_claw", ["society:aquamagical_dust", "cobblemon:quick_claw"]);
-    e.custom({
+  e.shapeless("cobblemon:grip_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
+  e.custom({
     type: "farmersdelight:cooking",
     cookingtime: 200,
     experience: 3.0,
@@ -46,9 +47,55 @@ ServerEvents.recipes((e) => {
       item: 'cobblemon:vivichoke_dip'
     },
   });
+  e.shaped('8x sunlit_cobblemon:time_frame', ["tst", "tbt", "tst"], {
+    b: "society:magic_bulb",
+    t: "minecraft:echo_shard",
+    s: "minecraft:deepslate"
+  })
+  e.shaped('cobblemon:booster_energy', ["stb", "tet", "bts"], {
+    b: "society:broken_clock",
+    t: "cobblemon:timer_ball",
+    s: "cobblemon_farmers:spectral_battery",
+    e: "sunlit_cobblemon:endless_battery"
+  })
+  e.shaped('sunlit_cobblemon:egg_of_the_king', ["odc", "dgd", "sdj"], {
+    d: "sunlit_cobblemon:mew_n_dna",
+    o: 'cobblemon:claw_fossil',
+    c: "cobblemon:dome_fossil",
+    g: "species:petrified_egg",
+    s: "cobblemon:skull_fossil",
+    j: "cobblemon:jaw_fossil"
+  })
+  e.shaped('sunlit_cobblemon:gracidea_flower', ["lgp", "gsg", "hge"], {
+    g: "betterarcheology:growth_totem",
+    s: 'botania:overgrowth_seed',
+    e: "ribbits:swamp_daisy",
+    p: "minecraft:oxeye_daisy",
+    l: "botania:pure_daisy",
+    h: "herbalbrews:hibiscus"
+  })
+  e.shaped("sunlit_cobblemon:tidal_bell", ["sss", "pbe", "lll"], {
+    s: "oreganized:silver_block",
+    b: "minecraft:bell",
+    e: "society:elytra_wing",
+    p: "society:sunlit_pearl",
+    l: "cluttered:willow_log"
+  })
+  e.shaped("sunlit_cobblemon:clear_bell", ["sss", "pbe", "lll"], {
+    s: "minecraft:gold_block",
+    b: "minecraft:bell",
+    e: "society:elytra_wing",
+    p: "minecraft:totem_of_undying",
+    l: "cluttered:willow_log"
+  })
   e.shaped("sunlit_cobblemon:uncharged_battery", [" zr", "zrz", "rz "], {
     z: "create:zinc_ingot",
     r: "create:rose_quartz",
+  });
+  e.shaped("sunlit_cobblemon:viral_battery", [" f ", "szs", " s "], {
+    z: "sunlit_cobblemon:uncharged_battery",
+    f: "sunlit_cobblemon:meteor_fragment",
+    s: "minecraft:netherite_scrap",
   });
   e.shaped("cobblemon:ability_capsule", ["gsf"], {
     g: "sunlit_cobblemon:poke_genes",
@@ -79,6 +126,46 @@ ServerEvents.recipes((e) => {
     f: "meadow:fire_log",
     p: 'cobblemon:great_ball',
     e: "society:earth_crystal",
+  });
+    e.shaped("sunlit_cobblemon:bifrost_stone", [
+        "YPY",
+        "PBP",
+        "YPY"
+    ], {
+        Y: "species:youth_potion",
+        B: "botania:bifrost_perm",
+        P: "society:prismatic_shard"
+    });
+    e.shaped("sunlit_cobblemon:red_orb", [
+    "GCG", 
+    "SPS",
+    "GCG"
+  ], {
+    P: "sunlit_cobblemon:fire_pledge",
+    G: "sunlit_cobblemon:pristine_ground_gem",
+    S: "society:prismatic_shard",
+    C: "numismatics:ancient_coin"
+  });
+  e.shaped("sunlit_cobblemon:blue_orb", [
+    "GCG", 
+    "SPS",
+    "GCG"
+  ], {
+    P: "sunlit_cobblemon:water_pledge",
+    G: "sunlit_cobblemon:pristine_water_gem",
+    S: "society:prismatic_shard",
+    C: "numismatics:ancient_coin"
+  });
+  e.shaped("sunlit_cobblemon:biodome_altar", [
+    " A ", 
+    "WSG",
+    "LLL"
+  ], {
+    S: "society:prismatic_shard",
+    L: "atmospheric:grimwood_log",
+    W: "sunlit_cobblemon:pristine_water_gem",
+    G: "sunlit_cobblemon:pristine_ground_gem",
+    A: "sunlit_cobblemon:sun_raid_statue"
   });
   e.shapeless("sunlit_cobblemon:berry_smoothie", [
     "cobblemon:oran_berry",
@@ -158,6 +245,12 @@ ServerEvents.recipes((e) => {
     c: 'society:cornucopia',
     s: 'sunlit_cobblemon:sun_essence',
     S: 'sunlit_cobblemon:sunlit_league_medallion',
+  });
+    e.shaped('sunlit_cobblemon:atmospheric_magnet', ["s s", "mpm", "SSS"], {
+    p: 'society:prismatic_shard_block',
+    s: 'society:sparkstone_block',
+    m: 'cobblemon:magnet',
+    S: 'oreganized:silver_block',
   });
   e.custom({
     "type": "farm_and_charm:stove",
@@ -252,4 +345,15 @@ ServerEvents.recipes((e) => {
     e.shapeless(output, [`${count}x ${compactInput}`]);
   };
   compact(`sunlit_cobblemon:large_moomoo_milk`, `sunlit_cobblemon:moomoo_milk`, 4);
+
+  global.POKEMON_TYPES.forEach((type) => {
+    Ingredient.of(`#simpletms:type_${type.type}_tr`).itemIds.forEach((TR) => {
+      e.stonecutting(TR, `sunlit_cobblemon:${type.type}_tr_tablet`);
+    });
+    e.shaped(`sunlit_cobblemon:${type.type}_tr_tablet`, ["SpS", "psp", "SpS"], {
+      p: `sunlit_cobblemon:pristine_${type.type}_gem`,
+      s: 'cobblemon:hard_stone',
+      S: 'sunlit_cobblemon:sun_drops',
+    });
+  });
 });

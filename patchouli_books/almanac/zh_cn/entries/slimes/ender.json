@@ -1,0 +1,17 @@
+{
+  "name": "末影",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)结构： 暗影荒原史莱姆生成器（骷髅洞穴）$(br2)$(l)风险：$()$(br)会将实体传送到自己身边，也会将自己传送到食物处。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "末影史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:ender\"}",
+      "scale": 0.9
+    }
+  ]
+}

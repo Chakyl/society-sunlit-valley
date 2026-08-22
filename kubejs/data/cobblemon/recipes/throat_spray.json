@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " w ",
+    "afm",
+    " w "
+  ],
+  "key": {
+    "w": {
+      "item": "minecraft:honey_bottle"
+    },
+    "a": {
+      "item": "society:beer_attunecore"
+    },
+    "f": {
+      "item": "pamhc2trees:lemonitem"
+    },
+    "m": {
+      "item": "society:coconut_oil"
+    }
+  },
+  "result": {
+    "item": "cobblemon:throat_spray"
+  }
+}

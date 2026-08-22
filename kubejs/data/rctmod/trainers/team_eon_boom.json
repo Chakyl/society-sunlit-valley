@@ -1,0 +1,126 @@
+{
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:farigiraf",
+      "gender": "FEMALE",
+      "level": 75,
+      "nature": "cobblemon:relaxed",
+      "ability": "armortail",
+      "moveset": [
+        "trickroom",
+        "hypervoice",
+        "psychic",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 18,
+        "defence": 29,
+        "special_attack": 27,
+        "special_defence": 9,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:amoonguss",
+      "gender": "FEMALE",
+      "level": 75,
+      "nature": "cobblemon:timid",
+      "ability": "regenerator",
+      "moveset": [
+        "spore",
+        "protect",
+        "ragepowder",
+        "toxic"
+      ],
+      "ivs": {
+        "hp": 8,
+        "attack": 2,
+        "defence": 21,
+        "special_attack": 21,
+        "special_defence": 9,
+        "speed": 23
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:torkoal",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:naive",
+      "ability": "whitesmoke",
+      "moveset": [
+        "eruption",
+        "protect",
+        "heatwave",
+        "helpinghand"
+      ],
+      "ivs": {
+        "hp": 7,
+        "attack": 6,
+        "defence": 10,
+        "special_attack": 21,
+        "special_defence": 29,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:corviknight",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:impish",
+      "ability": "mirrorarmor",
+      "moveset": [
+        "bravebird",
+        "irondefense",
+        "roost",
+        "bodypress"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 3,
+        "defence": 20,
+        "special_attack": 25,
+        "special_defence": 5,
+        "speed": 11
+      },
+      "evs": {
+        "attack": 10,
+        "special_attack": 2,
+        "special_defence": 3,
+        "speed": 14
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 10,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

@@ -1,0 +1,19 @@
+{
+  "name": "灼热鳕鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:searing_cod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 264$(li)维度：下界$(li)生物群系：任意"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:searing_cod",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Nubby says ouch!"
+    }
+  ]
+}

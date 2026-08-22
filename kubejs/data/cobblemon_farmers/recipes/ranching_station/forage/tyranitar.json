@@ -1,0 +1,18 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "tyranitar",
+	"forages": [
+		{
+			"item": "cobblemon:smooth_rock",
+			"count": 2,
+			"chance": 0.67,
+			"min_hearts": 1
+		},
+		{
+			"item": "society:pristine_sandstone_slate",
+			"count": 1,
+			"chance": 0.27,
+			"min_hearts": 7
+		}
+	]
+}

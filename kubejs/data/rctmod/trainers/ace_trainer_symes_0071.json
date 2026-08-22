@@ -1,0 +1,205 @@
+{
+  "displayName": "Ace Trainer Symes",
+  "aiLevel": 9,
+  "team": [
+    {
+      "species": "cobblemon:rillaboom",
+      "gender": "FEMALE",
+      "level": 94,
+      "nature": "cobblemon:jolly",
+      "ability": "grassysurge",
+      "moveset": [
+        "grassyglide",
+        "uturn",
+        "knockoff",
+        "woodhammer"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 4,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:terrain_ext"
+    },
+    {
+      "species": "cobblemon:dragonite",
+      "gender": "MALE",
+      "level": 93,
+      "nature": "cobblemon:jolly",
+      "ability": "multiscale",
+      "moveset": [
+        "dualwingbeat",
+        "dragondance",
+        "firepunch",
+        "icepunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:lum_berry"
+    },
+    {
+      "species": "cobblemon:zebstrika",
+      "gender": "MALE",
+      "level": 93,
+      "nature": "cobblemon:timid",
+      "ability": "illuminate",
+      "moveset": [
+        "blizzard",
+        "thunder",
+        "freezedry",
+        "voltswitch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 4,
+        "special_attack": 252,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "sevii"
+      ]
+    },
+    {
+      "species": "cobblemon:alcremie",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:bold",
+      "ability": "sweetveil",
+      "moveset": [
+        "calmmind",
+        "moonblast",
+        "mysticalfire",
+        "acidarmor"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 0,
+        "defence": 252,
+        "special_attack": 4,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:alcremite"
+    },
+    {
+      "species": "cobblemon:samurott",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:jolly",
+      "ability": "sharpness",
+      "moveset": [
+        "shellsmash",
+        "ceaselessedge",
+        "razorshell",
+        "megahorn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:white_herb",
+      "aspects": [
+        "hisui"
+      ]
+    },
+    {
+      "species": "cobblemon:decidueye",
+      "gender": "FEMALE",
+      "level": 94,
+      "nature": "cobblemon:adamant",
+      "ability": "reckless",
+      "moveset": [
+        "highjumpkick",
+        "grassyglide",
+        "swordsdance",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 31
+      },
+      "evs": {
+        "hp": 0,
+        "attack": 252,
+        "defence": 4,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "hisui"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0
+}

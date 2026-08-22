@@ -1,0 +1,122 @@
+{"displayName": "Frosted Flake Jexsam",
+  "team": [
+    {
+      "species": "cobblemon:ninetales",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:modest",
+      "ability": "snowwarning",
+      "moveset": [
+        "blizzard",
+        "nastyplot",
+        "extrasensory",
+        "willowisp"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male",
+        "alolan"
+      ]
+    },
+    {
+      "species": "cobblemon:froslass",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:calm",
+      "ability": "snowcloak",
+      "moveset": [
+        "willowisp",
+        "blizzard",
+        "hex",
+        "thunderbolt"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:aurorus",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "snowwarning",
+      "moveset": [
+        "freezedry",
+        "earthpower",
+        "flashcannon",
+        "meteorbeam"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:power_herb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:lapras",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "shellarmor",
+      "moveset": [
+        "blizzard",
+        "thunderbolt",
+        "alluringvoice",
+        "psychicnoise"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

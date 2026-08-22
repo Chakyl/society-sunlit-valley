@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " w ",
+    "rhr",
+    " w "
+  ],
+  "key": {
+    "w": {
+      "item": "society:petrified_slime"
+    },
+    "r": {
+      "item": "unusualfishmod:relucent_shard"
+    },
+    "h": {
+      "item": "minecraft:nautilus_shell"
+    }
+  },
+  "result": {
+    "item": "cobblemon:shed_shell"
+  }
+}

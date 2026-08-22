@@ -133,6 +133,7 @@ const sumMPRaidLevel = (nearbyPlayers, raidTier) => {
 const sunLegendaries = new Map([
     ["sunlit_cobblemon:blooming_ring", "xerneas"],
     ["sunlit_cobblemon:cornucopia_of_greed", "yveltal"],
+    ["sunlit_cobblemon:pecha_shell", "pecharunt"],
 ]);
 
 BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
@@ -280,14 +281,14 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
         let spawnedAny
         if (nearbyPlayers.length > 1) {
             let groupRaidLevel = Math.min(100, sumMPRaidLevel(nearbyPlayers, nbt.data.tier));
-            spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, groupRaidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
+            spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, groupRaidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, { x: 0, y: 1.1, z: 0 });
             for (let playerI = 1; playerI < nearbyPlayers.length; playerI++) {
                 server.scheduleInTicks(20 * playerI, () => {
-                    spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, groupRaidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
+                    spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, groupRaidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, { x: 0, y: 1.1, z: 0 });
                 });
             }
         } else {
-            spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, raidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, true);
+            spawnedAny = global.summonRaidPokemon(server, level, block, nbt.data.type, nbt.data.variant, raidLevel, nbt.data.level, shiny, hiddenAbility, nbt.data.tier, { x: 0, y: 1.1, z: 0 });
         }
         if (spawnedAny) {
             if (player.stages.has("savage_sun") && Math.random() < 0.15) {
@@ -331,4 +332,4 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
     } else {
         displayStats(player, raidLevel, nbt)
     }
-});
+})

@@ -227,12 +227,14 @@ StartupEvents.registry("block", (e) => {
     .soundType("amethyst")
     .hardness(2)
     .resistance(1.0)
+    .tagBlock("minecraft:mineable/pickaxe")
     .textureAll("society:block/sparkstone_block");
 
   e.create(`society:prismatic_shard_block`)
     .soundType("amethyst")
     .hardness(2)
     .resistance(1.0)
+    .tagBlock("minecraft:mineable/pickaxe")
     .textureAll("society:block/prismatic_shard_block");
     
   // Compressed Crops block

@@ -1,0 +1,539 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "biome-zangoose-1",
+            "pokemon": "zangoose",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "28-39",
+            "weight": 10.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_maelstrom"
+                ]
+            }
+        },
+        {
+            "id": "biome-sandshrew-1",
+            "pokemon": "sandshrew alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "4-29",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+        {
+            "id": "biome-sandslash-1",
+            "pokemon": "sandslash alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "29-59",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+        {
+            "id": "biome-vulpix-1",
+            "pokemon": "vulpix alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "4-29",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+        {
+            "id": "biome-glaceon-1",
+            "pokemon": "glaceon",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-59",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+        {
+            "id": "biome-darumaka-1",
+            "pokemon": "darumaka galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-cubchoo-1",
+            "pokemon": "cubchoo",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-20",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+         {
+            "id": "biome-bergmite-1",
+            "pokemon": "bergmite",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+        {
+            "id": "biome-ninetales-1",
+            "pokemon": "ninetales alolan",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "25-49",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-swinub-1",
+            "pokemon": "swinub",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-pilowsine-1",
+            "pokemon": "pilowsine",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "25-40",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-mamoswine-1",
+            "pokemon": "mamoswine",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "45-65",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-spheal-1",
+            "pokemon": "spheal",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-froslass-1",
+            "pokemon": "froslass",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "20-40",
+            "weight": 3.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-snom-1",
+            "pokemon": "snom",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-15",
+            "weight": 50.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-sneasel-1",
+            "pokemon": "sneasel",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-weavile-1",
+            "pokemon": "weavile",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "25-40",
+            "weight": 2.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-aron-1",
+            "pokemon": "aron",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "5-30",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-avalugg-1",
+            "pokemon": "avalugg hisuian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "40-60",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                {
+            "id": "biome-avalugg-2",
+            "pokemon": "avalugg",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "40-60",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                        {
+            "id": "biome-tirtouga-1",
+            "pokemon": "tirtouga",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "15-30",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                 {
+            "id": "biome-roggenrola-1",
+            "pokemon": "roggenrola",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 8.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                 {
+            "id": "biome-geodude-1",
+            "pokemon": "geodude",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 8.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                 {
+            "id": "biome-onix-1",
+            "pokemon": "onix",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 7.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                 {
+            "id": "biome-drilbur-1",
+            "pokemon": "drilbur",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 4.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                 {
+            "id": "biome-patrat-1",
+            "pokemon": "patrat",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-20",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                 {
+            "id": "biome-minccino-1",
+            "pokemon": "minccino",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-20",
+            "weight": 7.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        },
+                 {
+            "id": "biome-bunnelby-1",
+            "pokemon": "bunnelby",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 5.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "society:frozen_caves"
+                ]
+            }
+        }
+    ]
+}

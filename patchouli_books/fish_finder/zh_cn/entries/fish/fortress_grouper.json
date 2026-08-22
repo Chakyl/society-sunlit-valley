@@ -1,0 +1,19 @@
+{
+  "name": "要塞石斑鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:fortress_grouper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 666$(li)维度：下界$(li)生物群系：任意"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:fortressgrouper",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "A I A: Fish Observer"
+    }
+  ]
+}

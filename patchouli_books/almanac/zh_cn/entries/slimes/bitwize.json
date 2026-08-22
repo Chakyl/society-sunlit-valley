@@ -1,0 +1,17 @@
+{
+  "name": "比特",
+  "category": "patchouli:slimes",
+  "icon": "splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)发现：$()$(li)生物群系： 冰冻漩涡（骷髅洞穴）$(br2)$(l)风险：$()$(br)不开心时会使你迷惑。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "比特史莱姆",
+      "entity": "splendid_slimes:splendid_slime{Breed:\"splendid_slimes:bitwise\"}",
+      "scale": 0.9
+    }
+  ]
+}

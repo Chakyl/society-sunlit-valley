@@ -21,6 +21,7 @@
 - Uni - Worldgen programmer & Skull Cavern mastermind
 - Nifast - Artist for quest book & items. Character & portrait designer
 - MattTheMeow - Building shop manager & curator
+- Emma - Supporting pack developer
 
 ### Art Contributors
 - Altessa - Kata dolls and Fredbear Plushies
@@ -34,25 +35,30 @@
 - Andiecherries - Prismarine set
 - aviahime - Bamboo set
 - Charlotte.b - Coop building type
-- Duy Luong - Vibrantown set
+- Duy Luong - Vibrantown & Rural set
+- EeveeBeby - Sakura set, some villager houses
 - Howester84 - Bavarian set
-- JadeClouds - Entrana set
+- JadeClouds - Original Entrana set
 - Krewella081 - Alpine set
-- Kanlamari - Mason, Tudor, Entrana Revamp sets. Greenhouse building type
+- Kanlamari - Mason, Tudor, Entrana Revamp sets, some villager houses. Some greenhouse buildings 
 - Patchy - Woodcutter, Blacksmith, and Horse Stables
-- witchd - Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse
+- witchd - Bench stop, Rotten Garden, Rotten Coop, Rotten Shed, Rotten Farmhouse, Pineconetown building set
 - MattTheMeow - Skull Cavern honey beeode and goober den
+- SianaTheSavage - Floral set
 
-### Dev Contributors
+### Code Contributors
 - Ascens - Various tweaks and fixes
-- Emma & Providencedaemon - Advice, feedback, and misc work
+- Providencedaemon - Advice, feedback, and misc work
 - frog the jam UNCHAINED - The above + Haruna dialogs
 - Hexagreen - Translation support
 - Space_mex - Skillexpnotifier mod
 - Devon - Farmer's Almanac trees, various fixes
 - copixel - Fish Finder
-- Mayhan - Shipping Bin renaming, Various fix contributions
+- Mayhan - Fish Pond Manager, Shipping Bin renaming, Various fix contributions
 - Tomsauy - /debt commands
+- simonLeary42 - Offline caching for Artisan Hopper, Auto-Grabber, Fish Pond Basket
+- ManlyTorch - Coin leaderboard tweaks
+- deepa - SSC deoxy's meteor code
 
 ### Translation Contributors
 - AonGreyfox - th_th translation
@@ -63,6 +69,7 @@
 - Markis_nub - es_es translation
 - Nur_sg  - es_es translation
 - Tomsauy - fr_fr translation
+- RafaelJMBR - pt_br
 
 ### Additional Credits
 - Shaders provided by Complementary Reimagined 

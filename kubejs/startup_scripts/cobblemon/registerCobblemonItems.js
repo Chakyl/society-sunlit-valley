@@ -104,15 +104,33 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:mystica_cookie");
   e.create("sunlit_cobblemon:sun_mirror").maxStackSize(1);
   e.create("sunlit_cobblemon:sunlit_league_medallion");
+  e.create("sunlit_cobblemon:elite_stone");
+  global.POKEMON_TYPES.forEach((type) => {
+    e.create(`sunlit_cobblemon:${type.type}_badge`)
+      .maxStackSize(1)
+      .tag("sunlit_cobblemon:gym_badge")
+      .tag("curios:gym_badge")
+      .texture(`sunlit_cobblemon:item/badges/${type.type}`)
+      .tooltip(Text.translatable("tooltip.sunlit_cobblemon.type_badge.description").gray())
+      .tooltip(Text.translatable("tooltip.sunlit_cobblemon.type_badge.rewards").green());
+  });
+  global.POKEMON_TYPES.forEach((type) => {
+    e.create(`sunlit_cobblemon:${type.type}_tr_tablet`)
+      .texture(`sunlit_cobblemon:item/tr_tablet`)
+      .color(0, type.hex)
+      .tag("sunlit_cobblemon:tr_tablet")
+      .displayName(`${global.formatName(type.type)} TR Tablet`)
+      .tooltip(Text.translatable("tooltip.sunlit_cobblemon.tr_tablet.description").gray());
+  });
   e.create("sunlit_cobblemon:poke_radar").maxStackSize(1).displayName("Poké Radar");
-  e.create("sunlit_cobblemon:berry_capsule").texture(
-    "sunlit_cobblemon:item/berry_capsule",
-  );
-  e.create("sunlit_cobblemon:gachamon_capsule").texture(
-    "sunlit_cobblemon:item/gachamon_capsule",
-  );
+  e.create("sunlit_cobblemon:berry_capsule").modelJson({
+    parent: "sunlit_cobblemon:item/kubejs/berry_capsule",
+  });
+  e.create("sunlit_cobblemon:gachamon_capsule").modelJson({
+    parent: "sunlit_cobblemon:item/kubejs/gachamon_capsule",
+  });
   e.create("sunlit_cobblemon:uncharged_battery").texture(
-    "sunlit_cobblemon:item/uncharged_battery",
+    "cobblemon_farmers:item/uncharged_battery",
   );
   e.create(`sunlit_cobblemon:fire_pledge`).texture(`cobblemon:item/fire_pledge`)
   e.create(`sunlit_cobblemon:grass_pledge`).texture(`cobblemon:item/grass_pledge`)
@@ -136,6 +154,13 @@ StartupEvents.registry("item", (e) => {
       food.alwaysEdible(true);
     })
     .useAnimation("drink");
+  e.create("sunlit_cobblemon:magikarp_taiyaki")
+    .texture("sunlit_cobblemon:item/magikarp_taiyaki")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(4);
+      food.effect("farm_and_charm:sweets", 600, 1, 1.0);
+    });
   [
     "moomoo_milk",
     "large_moomoo_milk",
@@ -156,7 +181,6 @@ StartupEvents.registry("item", (e) => {
       food.saturation(2);
       food.effect("farm_and_charm:grandmas_blessing", 1200, 0, 1.0);
     })
-
   e.create(`sunlit_cobblemon:aged_moomoo_cheese`)
     .texture(`sunlit_cobblemon:item/moomoo_cheese`)
     .glow(true)
@@ -175,7 +199,9 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:star_pixie").texture(
     "sunlit_cobblemon:item/star_pixie",
   );
-  e.create("sunlit_cobblemon:endless_battery");
+  e.create("sunlit_cobblemon:endless_battery").texture(
+    "cobblemon_farmers:item/endless_battery",
+  );
   e.create("sunlit_cobblemon:tabula_rasa");
   e.create("sunlit_cobblemon:frozen_calamity");
   e.create("sunlit_cobblemon:blazing_calamity");
@@ -187,6 +213,20 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:blooming_ring");
   e.create("sunlit_cobblemon:cornucopia_of_greed");
   e.create("sunlit_cobblemon:moongeist_crystal");
+  e.create("sunlit_cobblemon:blue_orb");
+  e.create("sunlit_cobblemon:red_orb");
+  e.create("sunlit_cobblemon:gracidea_flower");
+  e.create("sunlit_cobblemon:corrupted_clock");
+  e.create("sunlit_cobblemon:liquid_pale");
+  e.create("sunlit_cobblemon:liquid_antimatter");
+  e.create("sunlit_cobblemon:bifrost_stone");
+  e.create("sunlit_cobblemon:dark_scale");
+  e.create("sunlit_cobblemon:light_scale");
+  e.create("sunlit_cobblemon:meteor_fragment");
+  e.create("sunlit_cobblemon:viral_battery");
+  e.create("sunlit_cobblemon:pecha_shell");
+  e.create("sunlit_cobblemon:mew_n_dna").displayName("Mew-N DNA");
+  e.create("sunlit_cobblemon:egg_of_the_king");
   [
     "the_art_of_battle",
     "berry_labor_and_capital",
@@ -200,6 +240,14 @@ StartupEvents.registry("item", (e) => {
       .texture(`sunlit_cobblemon:item/books/${item}`)
       .rarity("rare");
   });
+
+  let newBalls = [
+    "sword",
+    "shield",
+    "skull",
+    "mana",
+    "prismatic"
+  ]
   global.cobblemonPreserves.forEach((jar) => {
     if (jar.item.includes("sunlit_cobblemon")) {
       e.create(`sunlit_cobblemon:${jar.item.split(":")[1]}`)
@@ -214,6 +262,7 @@ StartupEvents.registry("item", (e) => {
   });
   global.cobblemonDehydrated.forEach((item) => {
     e.create(item.item)
+      .tag("society:dehydrated")
       .food((food) => {
         food.hunger(9);
         food.saturation(0.5);
@@ -224,7 +273,17 @@ StartupEvents.registry("item", (e) => {
   global.cobbleTypeGems.forEach((gem) => {
     e.create(`sunlit_cobblemon:pristine_${gem.item.path}`)
       .texture(`cobblemon:item/type_gem/${gem.item.path}`)
+      .tag("society:pristine_mineral")
       .glow(true)
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:${ball}_ball_stencil`).texture(`sunlit_cobblemon:item/create_balls/${ball}_ball_stencil`)
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:unpainted_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unpainted_${ball}_ball`)
+  });
+  newBalls.forEach((ball) => {
+    e.create(`sunlit_cobblemon:unfinished_${ball}_ball`).texture(`sunlit_cobblemon:item/create_balls/unfinished_${ball}_ball`)
   });
 });

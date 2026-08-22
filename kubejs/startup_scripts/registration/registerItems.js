@@ -8,6 +8,8 @@ StartupEvents.registry("item", (e) => {
     .maxStackSize(16);
   e.create("justhammers:small_core").texture("society:item/small_core");
   e.create("buildinggadgets2:gadget_core").texture("society:item/gadget_core");
+  e.create("society:building_supplies").texture("society:item/building_supplies");
+  e.create("society:greenhouse_building_supplies").texture("society:item/greenhouse_building_supplies");
   const tiers = [
     "Stone, Leather, Chainmail, and Cotton",
     "Iron",
@@ -54,15 +56,13 @@ StartupEvents.registry("item", (e) => {
     }
   });
 
-  e.create("society:tanuki_leaf")
-    .texture("society:item/tanuki_leaf")
-    .displayName(Text.green("♤ Tanuki Leaf"));
-  e.create("society:architects_digest")
-    .texture("society:item/architects_digest")
-    .displayName("♧ Architect's Digest");
-  e.create("society:fantasy_dust")
-    .texture("society:item/fantasy_dust")
-    .displayName(Text.yellow("♡ Fantasy Dust"));
+  // e.create("society:tanuki_leaf")
+  //   .texture("society:item/tanuki_leaf")
+  //   .displayName(Text.green("♤ Tanuki Leaf"));
+  // e.create("society:architects_digest")
+  //   .texture("society:item/architects_digest")
+  //   .displayName("♧ Architect's Digest");
+  e.create("society:fairy_dust").texture("society:item/fantasy_dust")
   e.create("society:stone_hand").texture("society:item/stone_hand");
   e.create("society:ancient_cog").texture("society:item/ancient_cog");
   e.create("society:pink_matter").texture("society:item/pink_matter");
@@ -187,6 +187,9 @@ StartupEvents.registry("item", (e) => {
   e.create("splendid_slimes:slime_ticket").texture(
     "splendid_slimes:item/slime_ticket"
   );
+  e.create("society:dry_totem").texture("society:item/dry_totem");
+  e.create("society:rain_totem").texture("society:item/rain_totem");
+  e.create("society:thunder_totem").texture("society:item/thunder_totem");
   e.create("society:furniture_box").texture("society:item/furniture_box");
   const fantasyBoxes = [
     "nordic",
@@ -429,7 +432,8 @@ StartupEvents.registry("item", (e) => {
     const { item } = artifact;
     if (
       item !== "society:princess_hairbrush" &&
-      item !== "society:perfect_cherry"
+      item !== "society:perfect_cherry" &&
+      item !== "society:red_wrench"
     ) {
       e.create(item)
         .texture(`society:item/artifacts/${item.path}`)
@@ -477,6 +481,19 @@ StartupEvents.registry("item", (e) => {
         }
       });
     });
+  e.create("society:red_wrench")
+    .texture("society:item/artifacts/red_wrench")
+    .maxStackSize(1)
+    .tag("society:artifacts")
+    .tag("forge:tools")
+    .tag("forge:tools/wrench")
+    .tag("forge:wrenches")
+    .tag("farm_and_charm:hangable")
+    .tag("create:upright_on_deployer")
+    .tag("create:chain_rideable")
+    .tag("refurbished_furniture:items")
+    .tag("furniture:trash_bag_blacklist")
+    .tag("supplementaries:statue_tools");
 
   // Food
   e.create("society:energy_drink")
@@ -487,10 +504,44 @@ StartupEvents.registry("item", (e) => {
       food.effect("minecraft:speed", 4800, 2, 1.0);
     })
     .useAnimation("drink");
+  e.create("society:pink_energy_drink")
+    .texture("society:item/drinks/pink_energy_drink")
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
+      food.effect("minecraft:haste", 4800, 2, 1.0);
+    })
+    .useAnimation("drink");
+  e.create("society:white_energy_drink")
+    .texture("society:item/drinks/white_energy_drink")
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
+      food.effect("minecraft:strength", 4800, 2, 1.0);
+    })
+    .useAnimation("drink");
+  e.create("society:mana_energy_drink")
+    .texture("society:item/drinks/mana_energy_drink")
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
+      food.effect("minecraft:resistance", 4800, 2, 1.0);
+    })
+    .useAnimation("drink");
   e.create("society:death_liquid")
     .texture("society:item/drinks/death_liquid")
     .tooltip(
       Text.translatable("item.society.death_liquid.description").darkPurple()
+    )
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("minecraft:poison", 800, 2, 1.0);
+    })
+    .useAnimation("drink");
+  e.create("society:suspicious_milk_tea")
+    .texture("society:item/drinks/suspicious_milk_tea")
+    .tooltip(
+      Text.translatable("item.society.suspicious_milk_tea.description").darkPurple()
     )
     .food((food) => {
       food.fastToEat(true);
@@ -566,7 +617,20 @@ StartupEvents.registry("item", (e) => {
       food.hunger(2);
       food.saturation(2);
     });
-
+  e.create("society:deep_a_mochi")
+    .texture("society:item/deep_a_mochi")
+    .displayName("Deep-a-Mochi")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(2);
+    });
+  e.create("society:lemon_beignets")
+    .texture("society:item/lemon_beignets")
+    .food((food) => {
+      food.hunger(3);
+      food.saturation(3);
+      food.effect("farm_and_charm:sweets", 300, 1, 1.0);
+    });
   e.create("society:ancient_cookie")
     .texture("society:item/ancient_cookie")
     .food((food) => {
@@ -635,9 +699,11 @@ StartupEvents.registry("item", (e) => {
     "universal_methods_of_farming",
     "wuthering_logs",
     "women_who_run_with_the_plushies",
+    "the_metamorphosize",
   ].forEach((item) => {
     e.create(`society:${item}`)
       .texture(`society:item/books/${item}`)
+      .tag("society:skill_book")
       .rarity("rare");
   });
   e.create("society:debt_caverns")
@@ -765,6 +831,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:coconut_oil").texture("society:item/coconut_oil");
   e.create("society:butterfly_amber").texture("society:item/butterfly_amber");
   e.create("society:moth_pollen").texture("society:item/moth_pollen");
+  e.create("society:caterpillar_eggs").texture("society:item/caterpillar_eggs");
   e.create(`society:magic_rope`).texture(`society:item/magic_rope`);
   e.create(`society:magic_tunnel`).texture(`society:item/magic_tunnel`);
   e.create(`society:magnifying_glass`)
@@ -853,6 +920,7 @@ StartupEvents.registry("item", (e) => {
   global.dehydrated.forEach((dried) => {
     e.create(dried.item)
       .texture(`society:item/dried/${dried.item.path}`)
+      .tag("society:dehydrated")
       .food((food) => {
         food.hunger(9);
         food.saturation(0.5);
@@ -930,6 +998,7 @@ StartupEvents.registry("item", (e) => {
       texturePath = `${splitProduct[0]}:item/drinks/${splitProduct[1]}`;
     e.create(`society:aged_${splitProduct[1]}`)
       .texture(texturePath)
+      .tag("society:aged_product")
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
@@ -941,6 +1010,7 @@ StartupEvents.registry("item", (e) => {
 
     e.create(`society:double_aged_${splitProduct[1]}`)
       .texture(texturePath)
+      .tag("society:double_aged_product")
       .displayName(
         product.item === "brewery:whiskey_maggoallan" ||
           product.item === "brewery:whiskey_smokey_reverie"
@@ -1074,9 +1144,11 @@ StartupEvents.registry("item", (e) => {
     const roeHex = fishRoeMapping.find((val) => val.item === fish.item)?.hex;
     e.create(`society:${fishId}_roe`)
       .texture("society:item/roe")
+      .tag("society:roe")
       .color(0, roeHex);
     e.create(`society:aged_${fishId}_roe`)
       .texture("society:item/aged_roe")
+      .tag("society:aged_roe")
       .color(0, roeHex)
       .food((food) => {
         food.hunger(5);
@@ -1086,6 +1158,7 @@ StartupEvents.registry("item", (e) => {
       .texture("society:item/fish_bait")
       .color(0, roeHex)
       .tag("crabbersdelight:crab_trap_bait")
+      .tag("society:targeted_bait")
       .tooltip(Text.translatable("society.fish_bait.description").gray());
   });
 
@@ -1095,6 +1168,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/geode/${geode.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1103,6 +1177,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/frozen_geode/${geode.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1111,6 +1186,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.path}`)
       .texture(`society:item/magma_geode/${geode.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1118,6 +1194,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${gem.item.path}`)
       .texture(`society:item/gems/${gem.item.path}`)
       .glow(true)
+      .tag("society:pristine_mineral")
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });
 
@@ -1132,6 +1209,7 @@ StartupEvents.registry("item", (e) => {
   vanillaPristine.forEach((gem) => {
     e.create(`society:pristine_${gem.path}`)
       .texture(`minecraft:item/${gem.path}`)
+      .tag("society:pristine_mineral")
       .glow(true)
       .tooltip(Text.translatable("society.pristine_gems.description").gray());
   });

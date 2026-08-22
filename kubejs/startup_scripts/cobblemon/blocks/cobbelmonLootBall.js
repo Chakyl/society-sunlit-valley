@@ -8,7 +8,7 @@ global.cobblemonLootBallTypes.forEach((tier) => {
     e.create(`sunlit_cobblemon:${tier}_loot_ball`, "cardinal")
       .defaultCutout()
       .box(4, 0, 4, 11, 8.5, 11)
-      .model(`sunlit_cobblemon:block/${tier}_loot_ball`)
+      .model(`sunlit_cobblemon:block/kubejs/${tier}_loot_ball`)
       .blockEntity((blockInfo) => {
         blockInfo.enableSync();
         blockInfo.initialData({

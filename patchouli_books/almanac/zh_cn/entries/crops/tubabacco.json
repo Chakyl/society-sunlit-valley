@@ -1,0 +1,30 @@
+{
+  "name": "土烟叶 🌼❆",
+  "category": "patchouli:crops",
+  "icon": "society:tubabacco_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 87$(li)🌼 §2春季§r ❆ §b冬季§r$(li)种子价格：:coin: 512$(li)产量：1$(li)生长时间：9 天$(br2)$(l)备注$()$(br)市场会出售这种作物的种子。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 土烟叶作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:tubabacco_leaf[age=9]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

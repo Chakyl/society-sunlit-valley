@@ -6,7 +6,7 @@ const resetSkills = (tree, server, player, amount) => {
   );
   server.runCommandSilent(`puffish_skills category erase ${player.username} society:${tree}`);
   server.runCommandSilent(`puffish_skills points set ${player.username} society:${tree} 0`);
-  global.giveExperience(server, player, tree, amount);
+  global.giveExperience(server, player, tree, amount, true);
   player.tell(
     Text.translatable(
       "society.crystal_of_regret.success",

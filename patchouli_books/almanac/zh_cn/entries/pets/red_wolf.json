@@ -1,0 +1,17 @@
+{
+  "name": "红狼",
+  "category": "patchouli:pets",
+  "icon": "species:wicked_treat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)狼猎手旗帜, 狼化石$(br)$(l)驯服物品：$()$(br)骨头$(br2)$(l)备注$()$(br)发现于原始或普通针叶林生物群系。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:red_wolf",
+      "scale": 0.7,
+      "text": "这可是一匹红狼！你还想要什么？？"
+    }
+  ]
+}

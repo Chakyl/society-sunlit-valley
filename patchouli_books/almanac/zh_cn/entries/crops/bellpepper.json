@@ -1,0 +1,30 @@
+{
+  "name": "甜椒 🔥",
+  "category": "patchouli:crops",
+  "icon": "veggiesdelight:bellpepper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 32$(li)🔥 §6夏季§r$(li)种子价格：:coin: 64$(li)产量：1-3$(li)生长时间：7 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 甜椒作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "veggiesdelight:bellpepper_crop[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

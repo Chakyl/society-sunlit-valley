@@ -637,8 +637,6 @@
 				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description2}"
 				""
 				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description3}"
-				""
-				"{ftbquests.chapter.ic__cobblemon.quest43DCB8601B40FB9A.description4}"
 			]
 			icon: "cobblemon:power_bracer"
 			id: "43DCB8601B40FB9A"
@@ -821,7 +819,7 @@
 				type: "item"
 			}]
 			x: 22.5d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["02A029AD9B654F48"]
@@ -846,7 +844,7 @@
 			}]
 			title: "{ftbquests.chapter.ic__cobblemon.quest5E5313D628E28251.title}"
 			x: 23.5d
-			y: -3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0CA84740D7922353"]
@@ -976,6 +974,7 @@
 				"{ftbquests.chapter.ic__cobblemon.quest539CA5F135AA627D.description3}"
 			]
 			id: "539CA5F135AA627D"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "1D74F3A546FEA876"
 				item: "unimplemented_items:bottle_cap"
@@ -1191,7 +1190,7 @@
 			}]
 			title: "{ftbquests.chapter.ic__cobblemon.quest41E167BF05E599AA.title}"
 			x: 22.5d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7B184B7096AC9BD8"]
@@ -1203,8 +1202,6 @@
 				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description3}"
 				""
 				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description4}"
-				""
-				"{ftbquests.chapter.ic__cobblemon.quest5172D7410B79BC65.description5}"
 			]
 			icon: "sunlit_cobblemon:fire_pledge"
 			id: "5172D7410B79BC65"
@@ -1332,6 +1329,167 @@
 			title: "{ftbquests.chapter.ic__cobblemon.quest16BE1E8CB0C1AC35.title}"
 			x: 8.5d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"43DCB8601B40FB9A"
+				"539CA5F135AA627D"
+			]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description3}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.description4}"
+			]
+			icon: "sunlit_cobblemon:fairy_badge"
+			id: "4026AD7C4083E43B"
+			rewards: [{
+				id: "4C4CF1331B1B0070"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AECA0988DA04B77"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "curios:gym_badge"
+					}
+				}
+				title: "{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.task.6551788134988794743.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest4026AD7C4083E43B.title}"
+			x: 20.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"539CA5F135AA627D"
+				"43DCB8601B40FB9A"
+			]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest3E0F5B5C0758B91F.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3E0F5B5C0758B91F.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3E0F5B5C0758B91F.description3}"
+			]
+			id: "3E0F5B5C0758B91F"
+			rewards: [{
+				id: "25BC0E0A172D5527"
+				item: "sunlit_cobblemon:sunlit_league_medallion"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EE556C9A14F1020"
+				item: "sunlit_cobblemon:elite_stone"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4026AD7C4083E43B"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.description3}"
+			]
+			icon: "sunlit_cobblemon:steel_tr_tablet"
+			id: "4753C2B3621839B3"
+			rewards: [{
+				id: "5D49C896B3FD90AB"
+				item: "sunlit_cobblemon:normal_tr_tablet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E4312B40AB1EE3B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "sunlit_cobblemon:tr_tablet"
+					}
+				}
+				title: "{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.task.3333528713667145275.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest4753C2B3621839B3.title}"
+			x: 21.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["02A029AD9B654F48"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.description3}"
+			]
+			icon: "cobblemon_farmers:crystal_ball"
+			id: "3633C789C2C63493"
+			rewards: [
+				{
+					id: "694CCA3EBD072858"
+					item: "cobblemon_farmers:spectral_battery"
+					type: "item"
+				}
+				{
+					id: "4FE62CB5596B8055"
+					item: "society:pristine_diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "707A8B2BD3218352"
+					item: "cobblemon_farmers:energy_pylon"
+					type: "item"
+				}
+				{
+					id: "09C27DEDA1D01E90"
+					item: "cobblemon_farmers:crystal_ball"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.ic__cobblemon.quest3633C789C2C63493.title}"
+			x: 22.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7B184B7096AC9BD8"]
+			description: [
+				"{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.description1}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.description2}"
+				""
+				"{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.description3}"
+			]
+			icon: "minecraft:reinforced_deepslate"
+			id: "3E6B912CEC583E91"
+			min_required_tasks: 1
+			rewards: [{
+				id: "5FC665AAC48DC7C6"
+				item: "cobblemon:booster_energy"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.subtitle}"
+			tasks: [{
+				id: "54558B7409DD756E"
+				item: "cobblemon:booster_energy"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ic__cobblemon.quest3E6B912CEC583E91.title}"
+			x: 24.0d
+			y: -2.5d
 		}
 	]
 	title: "{ftbquests.chapter.ic__cobblemon.title}"

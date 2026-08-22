@@ -1,0 +1,17 @@
+{
+  "name": "柴犬",
+  "category": "patchouli:pets",
+  "icon": "minecraft:arrow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)伊布耳朵头饰$(br2)$(l)驯服物品：$()$(br)骨头"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "quark:shiba",
+      "scale": 0.7,
+      "text": "它们喜欢捡回你射出的箭。"
+    }
+  ]
+}

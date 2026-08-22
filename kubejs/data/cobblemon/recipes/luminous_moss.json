@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " w ",
+    "whw",
+    " w "
+  ],
+  "key": {
+    "w": {
+      "item": "society:mossberry_preserves"
+    },
+    "h": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "result": {
+    "item": "cobblemon:luminous_moss"
+  }
+}

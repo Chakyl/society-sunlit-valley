@@ -1,0 +1,17 @@
+{
+  "name": "猫头鹰",
+  "category": "patchouli:pets",
+  "icon": "tanukidecor:owl_clock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)可能赠送的物品：$()$(br)猫头鹰时钟$(br)$(l)驯服物品：$()$(br)腐肉$(br2)$(l)备注$()$(br)发现于森林生物群系。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "wildernature:owl",
+      "scale": 0.7,
+      "text": "你最好让它远离小动物..."
+    }
+  ]
+}

@@ -1,0 +1,784 @@
+{
+	autofocus_id: "0842E7FE4BF590F2"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hunting_legends"
+	group: "13003519EF914BA5"
+	icon: "cobblemon:cherish_ball"
+	id: "5A3EDE9AB0D9F112"
+	images: [
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0150_mewtwo/mewtwo.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0151_mew/mew.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -10.5d
+			y: 3.0d
+		}
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0492_shaymin/shaymin_land.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			height: 8.0d
+			image: "cobblemon:textures/entity_icon/0792_lunala/lunala.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: -15.5d
+			y: -1.5d
+		}
+		{
+			height: 4.0d
+			image: "cobblemon:textures/entity_icon/0384_rayquaza/rayquaza.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -7.732142857142854d
+			y: -3.8392857142857153d
+		}
+		{
+			height: 4.0d
+			image: "cobblemon:textures/entity_icon/0383_groudon/groudon.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -7.625d
+			y: -2.4107142857142847d
+		}
+		{
+			height: 4.0d
+			image: "cobblemon:textures/entity_icon/0382_kyogre/kyogre.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -9.5d
+			y: -3.5d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest399D1B26D9C41182.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest399D1B26D9C41182.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest399D1B26D9C41182.description3}"
+			]
+			icon: "sunlit_cobblemon:gem_box"
+			id: "399D1B26D9C41182"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A425C9AD35BB9F1"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "3E5D993D70AF2C06"
+					item: "sunlit_cobblemon:gem_box"
+					type: "item"
+				}
+				{
+					id: "6923BCA2EA1D964E"
+					item: "sunlit_cobblemon:tabula_rasa"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest399D1B26D9C41182.title}"
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			description: ["{ftbquests.chapter.hunting_legends.quest842E7FE4BF590F2.description1}"]
+			disable_toast: true
+			id: "0842E7FE4BF590F2"
+			size: 1.5d
+			tasks: [{
+				id: "77574D6BF0F42078"
+				item: "society:prismatic_shard"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest842E7FE4BF590F2.title}"
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest25346B0BDB75F3FF.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest25346B0BDB75F3FF.description2}"
+			]
+			icon: "sunlit_cobblemon:ominous_black_stake"
+			id: "25346B0BDB75F3FF"
+			min_required_tasks: 2
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "106C4D41F1F3CD3D"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "5DE1BEAAF93A008E"
+					item: "sunlit_cobblemon:ominous_black_stake"
+					type: "item"
+				}
+				{
+					id: "03512B0C85D4771E"
+					item: "sunlit_cobblemon:frozen_calamity"
+					type: "item"
+				}
+				{
+					id: "0203ACE8EA42B229"
+					item: "sunlit_cobblemon:blazing_calamity"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest25346B0BDB75F3FF.title}"
+			x: -11.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest3D21580DE9FBDFEF.description1}"
+				""
+				""
+				"{ftbquests.chapter.hunting_legends.quest3D21580DE9FBDFEF.description2}"
+			]
+			disable_toast: true
+			icon: "society:book_of_stars"
+			id: "3D21580DE9FBDFEF"
+			size: 1.5d
+			tasks: [{
+				icon: "society:book_of_stars"
+				id: "22EED2808FCA51C1"
+				stage: "mastery_unlocked"
+				title: "{ftbquests.chapter.hunting_legends.quest3D21580DE9FBDFEF.task.2517180691356733889.title}"
+				type: "gamestage"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest3D21580DE9FBDFEF.title}"
+			x: -13.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest622F93DF6D7949A8.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest622F93DF6D7949A8.description2}"
+			]
+			id: "622F93DF6D7949A8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FE24D28957BB6C0"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "56F709064F2499CE"
+				item: "sunlit_cobblemon:rainbow_steam"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest622F93DF6D7949A8.title}"
+			x: -11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest8AE03954E4A57A8.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest8AE03954E4A57A8.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest8AE03954E4A57A8.description3}"
+			]
+			id: "08AE03954E4A57A8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E09C3D9225F45FB"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "2DA5EE57892118A4"
+				item: "sunlit_cobblemon:swampy_mystica_branch"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest8AE03954E4A57A8.title}"
+			x: -13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"25677844C218103A"
+				"08AE03954E4A57A8"
+			]
+			description: [
+				"{ftbquests.chapter.hunting_legends.questDF0041E26E7736A.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.questDF0041E26E7736A.description2}"
+			]
+			id: "0DF0041E26E7736A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4101D902A878FF37"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "1A059CA4BDD30CD1"
+				item: "sunlit_cobblemon:mystica_nectar"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.questDF0041E26E7736A.title}"
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest6B7B1187630B88D.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest6B7B1187630B88D.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest6B7B1187630B88D.description3}"
+			]
+			id: "06B7B1187630B88D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49BB432E260E014F"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "3E182403DFD0A490"
+				item: "sunlit_cobblemon:moongeist_crystal"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest6B7B1187630B88D.title}"
+			x: -13.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3D21580DE9FBDFEF"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest5C26E77F92F0EDFE.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest5C26E77F92F0EDFE.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest5C26E77F92F0EDFE.description3}"
+			]
+			icon: "sunlit_cobblemon:clear_bell"
+			id: "5C26E77F92F0EDFE"
+			min_required_tasks: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "646715B5D0FD64C3"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "23DD3D07057459E4"
+					item: "sunlit_cobblemon:clear_bell"
+					type: "item"
+				}
+				{
+					id: "2144597A4267BA15"
+					item: "sunlit_cobblemon:tidal_bell"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest5C26E77F92F0EDFE.title}"
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: ["{ftbquests.chapter.hunting_legends.quest192A29795AF8F732.description1}"]
+			id: "192A29795AF8F732"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B9BABAE765F444E"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "02D8F8DC48B4E28E"
+				item: "sunlit_cobblemon:bear_scroll"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest192A29795AF8F732.title}"
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest22E3DCA00B0F64ED.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest22E3DCA00B0F64ED.description2}"
+			]
+			id: "22E3DCA00B0F64ED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F84A3170DE53E34"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "022C7128DEFC59A9"
+				item: "sunlit_cobblemon:pecha_shell"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest22E3DCA00B0F64ED.title}"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["192A29795AF8F732"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest1A5DCE8B7402D28C.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest1A5DCE8B7402D28C.description2}"
+			]
+			icon: "cobblemon:scroll_of_waters"
+			id: "1A5DCE8B7402D28C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49BCFB65BB9C113E"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "76A3A13703FB5481"
+					item: "cobblemon:scroll_of_waters"
+					type: "item"
+				}
+				{
+					id: "70F55DE551C7AC92"
+					item: "cobblemon:scroll_of_darkness"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest1A5DCE8B7402D28C.title}"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest332E248CD069CAC5.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest332E248CD069CAC5.description2}"
+			]
+			id: "332E248CD069CAC5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2CA0B566DF6272A0"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "7F761E196D41D21C"
+				item: "sunlit_cobblemon:gracidea_flower"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest332E248CD069CAC5.title}"
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["277D9FE3ED371ED0"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest3C382FAA607E7F67.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest3C382FAA607E7F67.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest3C382FAA607E7F67.description3}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest3C382FAA607E7F67.description4}"
+			]
+			icon: "cobblemon:soul_dew"
+			id: "3C382FAA607E7F67"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "519297604A46C29D"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "08AEF3AA6CD37EDE"
+					item: "sunlit_cobblemon:duo_challenge_podium"
+					type: "item"
+				}
+				{
+					id: "226542D9B2E2FC4B"
+					item: "cobblemon:soul_dew"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest3C382FAA607E7F67.title}"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0850BA6E66135437"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest29A7D5857A8970BD.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest29A7D5857A8970BD.description2}"
+			]
+			id: "29A7D5857A8970BD"
+			rewards: [{
+				id: "0C068D2A17EA7D84"
+				item: "sunlit_cobblemon:mew_n_dna"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1469608F92502BC9"
+				item: "sunlit_cobblemon:mew_n_dna"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["29A7D5857A8970BD"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest46FC62A2B58324FE.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest46FC62A2B58324FE.description2}"
+			]
+			id: "46FC62A2B58324FE"
+			rewards: [{
+				count: 4
+				id: "7F92AC769B3BC559"
+				item: "cobblemon_farmers:worker_permit"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "14848ADFF4BFDFEB"
+				item: "sunlit_cobblemon:egg_of_the_king"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest1F39E42CB1BD0007.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest1F39E42CB1BD0007.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest1F39E42CB1BD0007.description3}"
+			]
+			id: "1F39E42CB1BD0007"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DC5CEFD2C68AEBF"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "57F5A484404B6A91"
+				item: "sunlit_cobblemon:atmospheric_magnet"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest1F39E42CB1BD0007.title}"
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest665057111E4EAA4D.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest665057111E4EAA4D.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest665057111E4EAA4D.description3}"
+			]
+			icon: "sunlit_cobblemon:red_orb"
+			id: "665057111E4EAA4D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DAAA5EB05EAE6B1"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			subtitle: "{ftbquests.chapter.hunting_legends.quest665057111E4EAA4D.subtitle}"
+			tasks: [
+				{
+					id: "4DD1371B24507DA3"
+					item: "sunlit_cobblemon:biodome_altar"
+					type: "item"
+				}
+				{
+					id: "479C563FB7890379"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "sunlit_cobblemon:red_orb"
+								}
+								{
+									Count: 1b
+									id: "sunlit_cobblemon:blue_orb"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.hunting_legends.quest665057111E4EAA4D.task.5160094104721884025.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest665057111E4EAA4D.title}"
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest277D9FE3ED371ED0.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest277D9FE3ED371ED0.description2}"
+			]
+			disable_toast: true
+			icon: "society:ribbit_hut"
+			id: "277D9FE3ED371ED0"
+			size: 1.5d
+			tasks: [{
+				id: "008CE2BF205DA75D"
+				title: "{ftbquests.chapter.hunting_legends.quest277D9FE3ED371ED0.task.39655807249131357.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest277D9FE3ED371ED0.title}"
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest850BA6E66135437.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest850BA6E66135437.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest850BA6E66135437.description3}"
+			]
+			id: "0850BA6E66135437"
+			rewards: [{
+				count: 4
+				id: "50F7B1A3049A6D05"
+				item: "cobblemon_farmers:worker_permit"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "630C7A84B2EEF4D0"
+					item: "sunlit_cobblemon:mural_stone_1"
+					type: "item"
+				}
+				{
+					id: "7D3BD087F0EA48E5"
+					item: "sunlit_cobblemon:mural_stone_2"
+					type: "item"
+				}
+				{
+					id: "169F039217E66DEB"
+					item: "sunlit_cobblemon:mural_stone_3"
+					type: "item"
+				}
+				{
+					id: "7A3F195232F9454F"
+					item: "sunlit_cobblemon:mural_stone_4"
+					type: "item"
+				}
+				{
+					id: "2A313C685DF7DBEB"
+					item: "sunlit_cobblemon:mural_stone_5"
+					type: "item"
+				}
+				{
+					id: "1FB0FB9BFA7DAF29"
+					item: "sunlit_cobblemon:mural_stone_6"
+					type: "item"
+				}
+				{
+					id: "6FFB0A215316749B"
+					item: "sunlit_cobblemon:mural_stone_7"
+					type: "item"
+				}
+				{
+					id: "7D03FE01024DB5B1"
+					item: "sunlit_cobblemon:mural_stone_8"
+					type: "item"
+				}
+				{
+					id: "091DD4916F4871F0"
+					item: "sunlit_cobblemon:mural_stone_9"
+					type: "item"
+				}
+				{
+					id: "6C6A8108CF1FA7AB"
+					item: "sunlit_cobblemon:mural_stone_10"
+					type: "item"
+				}
+				{
+					id: "4410DA2DB5BC7388"
+					item: "sunlit_cobblemon:mural_stone_11"
+					type: "item"
+				}
+				{
+					id: "1341B6A981B70308"
+					item: "sunlit_cobblemon:mural_stone_12"
+					type: "item"
+				}
+				{
+					id: "380C4BCDE6398B5D"
+					item: "sunlit_cobblemon:mural_stone_13"
+					type: "item"
+				}
+				{
+					id: "699549D7B2FF8174"
+					item: "sunlit_cobblemon:mural_stone_14"
+					type: "item"
+				}
+				{
+					id: "0DD1EE757BA875C2"
+					item: "sunlit_cobblemon:mural_stone_15"
+					type: "item"
+				}
+				{
+					id: "2FED94F8DFD0F27F"
+					item: "sunlit_cobblemon:mural_stone_16"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest850BA6E66135437.title}"
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest612AE21F5EE2B534.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest612AE21F5EE2B534.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest612AE21F5EE2B534.description3}"
+			]
+			icon: "sunlit_cobblemon:pale_chalice"
+			id: "612AE21F5EE2B534"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "21DBD9D235377B99"
+					table_id: 6979018325962330524L
+					type: "choice"
+				}
+				{
+					id: "1D977CFD7A552467"
+					item: "simplerecall:recall_potion"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "14509B2C7599E584"
+					item: "sunlit_cobblemon:corrupted_clock"
+					type: "item"
+				}
+				{
+					id: "7013C55539D08501"
+					item: "sunlit_cobblemon:liquid_pale"
+					type: "item"
+				}
+				{
+					id: "30D68092C5DD3AAB"
+					item: "sunlit_cobblemon:liquid_antimatter"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.hunting_legends.quest612AE21F5EE2B534.title}"
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["665057111E4EAA4D"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest144FBDD4669EA53B.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest144FBDD4669EA53B.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "relics:elytra_booster"
+				tag: {
+					abilities: {
+						boost: {
+							points: 0
+							stats: {
+								capacity: 61.93525d
+								speed: 1.37094d
+							}
+						}
+					}
+				}
+			}
+			id: "144FBDD4669EA53B"
+			tasks: [{
+				id: "52C9FF6CBA454DDC"
+				title: "{ftbquests.chapter.hunting_legends.quest144FBDD4669EA53B.task.5965580023875587548.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest144FBDD4669EA53B.title}"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"{ftbquests.chapter.hunting_legends.quest4C0A9AB71539FBAE.description1}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest4C0A9AB71539FBAE.description2}"
+				""
+				"{ftbquests.chapter.hunting_legends.quest4C0A9AB71539FBAE.description3}"
+			]
+			id: "4C0A9AB71539FBAE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20ED93D942F11A2C"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "607F4A3352EB7B7A"
+				item: "sunlit_cobblemon:bifrost_stone"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.hunting_legends.quest4C0A9AB71539FBAE.title}"
+			x: -7.0d
+			y: 1.0d
+		}
+	]
+	title: "{ftbquests.chapter.hunting_legends.title}"
+}

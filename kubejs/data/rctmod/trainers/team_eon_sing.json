@@ -1,0 +1,127 @@
+{
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:clefairy",
+      "gender": "FEMALE",
+      "level": 75,
+      "nature": "cobblemon:bold",
+      "ability": "friendguard",
+      "moveset": [
+        "encore",
+        "moonblast",
+        "followme",
+        "meteormash"
+      ],
+      "ivs": {
+        "hp": 21,
+        "attack": 3,
+        "defence": 31,
+        "special_attack": 7,
+        "special_defence": 15,
+        "speed": 21
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:volcarona",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:lonely",
+      "ability": "swarm",
+      "moveset": [
+        "quiverdance",
+        "bugbuzz",
+        "heatwave",
+        "amnesia"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 9,
+        "defence": 25,
+        "special_attack": 2,
+        "special_defence": 5,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:kingambit",
+      "gender": "FEMALE",
+      "level": 75,
+      "nature": "cobblemon:rash",
+      "ability": "supremeoverlord",
+      "moveset": [
+        "kowtowcleave",
+        "swordsdance",
+        "suckerpunch",
+        "lowkick"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 3,
+        "defence": 20,
+        "special_attack": 25,
+        "special_defence": 5,
+        "speed": 11
+      },
+      "evs": {
+        "hp": 6,
+        "attack": 10,
+        "special_attack": 4,
+        "special_defence": 2,
+        "speed": 9
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:black_glasses",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:primarina",
+      "gender": "FEMALE",
+      "level": 75,
+      "nature": "cobblemon:docile",
+      "ability": "liquidvoice",
+      "moveset": [
+        "hydropump",
+        "moonblast",
+        "hypervoice",
+        "dazzlinggleam"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 27,
+        "defence": 9,
+        "special_attack": 19,
+        "special_defence": 7,
+        "speed": 27
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 10,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

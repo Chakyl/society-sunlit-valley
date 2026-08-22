@@ -1,0 +1,30 @@
+{
+  "name": "蔓越莓 🍂",
+  "category": "patchouli:crops",
+  "icon": "society:cranberry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 18$(li)🍂 §6夏季§r$(li)种子价格：:coin: 12$(li)产量：3-4$(li)生长时间：5 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 蔓越莓作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:cranberry[age=5]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

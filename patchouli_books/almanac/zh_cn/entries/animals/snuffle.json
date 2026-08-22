@@ -1,0 +1,17 @@
+{
+  "name": "魄罗",
+  "category": "patchouli:animals",
+  "icon": "snuffles:snuffle_fluff",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)剪毛: 魄罗绒毛, 霜冻绒毛, 优质绒毛 (50% 概率), 冰封毛发 (20% 概率) $(li)掉落物: 冻结之泪$(br2)$(l)备注$()$(br)优质绒毛和冰封毛发分别需要其达到 5 和 7 颗心及以上好感度。 Will slowly regrow fur overtime, and become frosty in the snow."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "snuffles:snuffle",
+      "scale": 0.8,
+      "text": "给它们投喂黏液球可以改变发型！！！"
+    }
+  ]
+}

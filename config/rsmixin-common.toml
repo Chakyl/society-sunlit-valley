@@ -1,6 +1,6 @@
 
 [rsmixin]
-	#Enables extra debug logging (throttle ticks, active node counts, importer activation/sleep, unloaded skips, etc.). Useful for diagnosing issues but spammy in logs.
+	#Turns on extra log messages for troubleshooting. Can get spammy, leave off unless you're diagnosing a problem.
 	enableDebugLogging = false
 	#Master switch for network update throttling.
 	#When enabled, full RS network updates run only every throttleInterval ticks instead of every tick.
@@ -86,4 +86,67 @@
 	#- No pattern pages with CPU-only (clear message).
 	#Safe to disable if newer versions fix these.
 	enableRebornstorageCrafterFix = true
+	#Stops your item/fluid list from rebuilding itself over and over when things reconnect.
+	#Normally, every storage block on your network can trigger a full list rebuild at the same time,
+	#which causes lag spikes when your world loads or when you place/break a lot of storage at once.
+	#This makes it rebuild the list just once instead.
+	enableStorageCacheDebounce = true
+	#Stops autocrafting patterns from being re-scanned over and over when crafters reconnect.
+	#Normally, every crafter reconnecting (like on world load) can trigger its own full pattern re-scan,
+	#which gets very slow with lots of crafters. This waits until everything has reconnected, then scans once.
+	#Works for regular RS crafters, Extra Storage crafters, and RebornStorage crafters.
+	enableCraftingRebuildDebounce = true
+	#Stops network rescans from piling up when you place or break lots of network blocks at once.
+	#The first block still connects instantly, just like normal.
+	#Any extra rescans triggered in that same instant are merged into one, run a moment later.
+	#Great for builders, schematics, or quarries that place many cables/blocks in one go.
+	#Worst case, a block takes one extra tick to connect (not noticeable in normal play).
+	enableGraphRescanCoalesce = true
+	#Fixes a bug where EnderIO's RS conduits can end up tracked as two different objects at once
+	#after a world reload, causing weird behavior like settings not sticking or conduits acting laggy/broken.
+	#Makes sure there's only ever one real conduit object being tracked.
+	enableEnderIONodeUnify = true
+	#Speeds up autocrafting for big crafting trees.
+	#Normally, every item that comes back into a crafting job gets checked against every single step
+	#of that job to see where it belongs, which gets slow with big/multi-step crafts.
+	#This looks it up directly instead, so it only checks the steps that actually need that item.
+	enableTrackedInsertIndex = true
+	#Lets autocrafting properly re-use damageable tools (hammers, saws, etc.) in recipes.
+	#Normally RS treats a damaged tool as a completely different item, so it grabs or crafts
+	#a brand new tool every single time and the damaged ones pile up unused in storage.
+	#With this on, damaged tools count as valid ingredients (most-damaged used first),
+	#a single tool is re-used across an entire batch craft until its durability runs out
+	#(only crafting a replacement when one actually breaks), and broken tools are properly
+	#consumed. The actual durability cost of each recipe is measured from the recipe itself,
+	#and recipes with random durability loss are estimated conservatively.
+	#Enchanted tools are never mixed up with plain ones.
+	enableDamageableInputReuse = true
+	#Stops a broken autocrafting task from crashing the whole server.
+	#Vanilla RS can hit an internal inventory mismatch during processing crafts and hard-crashes
+	#the server, and because the broken task is saved with the world, it crashes again on every reboot.
+	#With this on, the broken task is safely cancelled instead: its items are refunded to storage,
+	#an error is written to the log, and the server keeps running.
+	#Fixes Refined Storage issues #3751 and #3727, and the reboot crash loops behind #3755 and #3753.
+	enableCraftingCrashGuard = true
+	#Fixes grids randomly showing missing/wrong/empty item lists until reopened (RS bug #3693).
+	#Whenever the network rebuilds its item list (any block placed/broken on the network, chunks
+	#loading, etc.) while a grid is open, vanilla RS forgets to tell the player's screen about it,
+	#leaving it permanently out of sync until the grid is reopened.
+	#With this on, open grids are refreshed automatically whenever that happens.
+	enableGridResync = true
+	#Fixes disks/storage randomly wiping to 0/0 after a server restart (RS bugs #3740, #3714).
+	#Vanilla RS saves its disk data by deleting the real file and then renaming a temp file over it -
+	#if that rename fails (common on Windows with antivirus or backup software), your disk data file
+	#is destroyed and everything shows as empty on next boot.
+	#With this on, saves are atomic (the old file is never deleted first), failures are retried on the
+	#next autosave instead of silently dropped, and a clear error is logged.
+	#Tip: if you were already hit by this bug, look for a refinedstorage_disks.dat.temp file in your
+	#world's data folder - renaming it to refinedstorage_disks.dat usually recovers everything.
+	enableSafeDataSaving = true
+	#When enabled, wireless items (Wireless Grid, Fluid Grid, Crafting Monitor, and addon wireless items)
+	#can only be used in the same dimension as the network they are linked to.
+	#Trying to use one from another dimension shows an on-screen message instead of opening,
+	#even if an addon's infinite/cross-dimension wireless transmitter would normally allow it.
+	#Disabled by default (vanilla behavior).
+	enableWirelessDimensionLock = false
 

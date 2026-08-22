@@ -438,12 +438,10 @@ const trainerBuckets = new Map([
       "rocker_luca_011d",
       "swimmerf_maria_0223",
       "bird_keeper_jacob_0135",
-      "biker_william_00ce",
       "biker_jared_00c3",
       "fisherman_andrew_00e9",
       "beauty_lola_010c",
       "aroma_lady_violet_022e",
-      "ace_trainer_samantha_0052",
       "ace_trainer_sharon_00ae",
       "beauty_sheila_010d",
       "lass_ann_007e",
@@ -453,142 +451,132 @@ const trainerBuckets = new Map([
       "ranger_beth_0255",
       "black_belt_hugh_022a",
       "swimmerf_amara_0222",
-    ],
-  ],
-  [
-    100,
-    [
-      "ace_trainer_bowie",
-      "swimmerf_maria_0223",
-      "swimmerm_garrett_0226",
-      "ruin_mamoac_halotosis",
-      "bird_keeper_sebastian_012c",
-      "fisherman_tommy_0227",
-      "tuber_alexis_022f",
-      "tuber_amira_0207",
-      "aroma_lady_nikki_020b",
-      "dragon_tamer_ramiro_0134",
-    ],
-  ],
-  [
-    105,
-    [
-      "ace_trainer_maclachlan",
-      "ace_trainer_zephira",
-      "beauty_nadine",
-      "picnicker_donna",
-      "ace_trainer_zephira",
-      "fisher_packard",
-      "picnicker_claire_022c",
-      "swimmerf_tisha_0231",
-      "swimmerm_finn_0225",
-      "ace_trainer_symes_0071",
-      "ruin_mamoac_reslo",
-      "bug_catcher_tainy",
-      "psychic_margaret",
-      "pokefan_unove",
-      "super_nerd_leroy"
-    ],
-  ],
-  [
-    110,
-    [
-      "camper_justin_01dd",
-      "super_nerd_miguel_00aa",
-      "picnicker_caitlin_009b",
-      "ace_trainer_andrew_0002",
-      "ace_trainer_wilton_0133",
-      "punk_girl_providence3",
-      "gym_crusher_alexander",
-      "gym_crusher_howitzer",
-      "channeler_rachel_0093",
-      "gym_crusher_foxxy",
-      "ace_trainer_janny_00af",
-      "ace_trainer_barry_0058"
-    ],
-  ],
-  [
-    115,
-    [
-      "ace_swimmer_torrent",
-      "cue_ball_camron_00fb",
-      "picnicker_alma_01d2",
-      "ace_trainer_runan_007c",
-      "ace_trainer_nick_0055",
-      "professor_oak_00d2",
-      "gym_crusher_salad",
-      "gym_rat_king",
-      "bird_keeper_glizzy"
-    ],
-  ],
-  [
-    120,
-    [
-      "gym_crusher_cruelty",
-      "reggie",
-      "professor_oak_00c8",
-      "gym_crusher_dennis",
-      "raging_red",
-      "raging_blue",
-      "punk_girl_providence4",
-      "gym_crusher_twine",
-    ],
-  ],
-  [
-    125,
-    [
-      "gym_obliterator_blaze",
-      "bird_legend_arctic",
-      "bird_legend_zap",
-      "bird_legend_melt",
-      "gym_obliterator_warp",
-      "gym_obliterator_cofh",
-      "gym_obliterator_artemis",
-    ],
-  ],
-  [
-    130,
-    [
-      "gym_obliterator_warlord",
-      "gym_obliterator_origin",
-      "gym_obliterator_tao",
-      "gym_obliterator_primal"
-    ],
-  ],
-  [
-    135,
-    [
-      "dimensional_entity_0",
-      "dimensional_entity_1", 
-      "dimensional_entity_2",
-      "dimensional_entity_3", 
-      "dimensional_entity_4", 
-      "dimensional_entity_5",
-      "dimensional_entity_6", 
-      "dimensional_entity_7", 
-      "dimensional_entity_8", 
-      "dimensional_entity_9", 
-      "dimensional_entity_10"
-    ],
-  ],
+      "dragon_tamer_scribe",
+      "the_legendary_mew_n",
+      "frosted_flake_jexsam",
+      "whimsical_mimsy",
+      "psychic_matt",
+      "electrician_james",
+      "gardener_juliette",
+      "ace_swimmer_jameson",
+      "flame_eater_bryce",
+      "foundry_worker_jarvis",
+      "hex_maniac_bea",
+      "rock_collector_adrianne",
+      "archaeologist_stephanie",
+      "poisoner_maomao",
+      "bird_keeper_jeremy",
+      "punch_man_fighter",
+      "normal_guy_jake",
+      "bug_catcher_jimothy",
+    ]
+  ]
 ]);
 
-global.getRandomTrainer = (levelBucket) => {
-  const trainerBucket = trainerBuckets.get(levelBucket);
+const eliteModeEasy = [
+  "biker_william_00ce",
+  "swimmerf_maria_0223",
+  "swimmerm_garrett_0226",
+  "swimmerf_tisha_0231",
+  "ace_trainer_samantha_0052",
+  "swimmerm_finn_0225",
+  "ruin_mamoac_halotosis",
+  "bird_keeper_sebastian_012c",
+  "bird_keeper_glizzy",
+  "fisherman_tommy_0227",
+  "tuber_alexis_022f",
+  "tuber_amira_0207",
+  "aroma_lady_nikki_020b",
+  "dragon_tamer_ramiro_0134",
+  "beauty_nadine",
+  "fisher_packard",
+  "ruin_mamoac_reslo",
+  "bug_catcher_tainy",
+  "psychic_margaret",
+  "pokefan_unove",
+  "super_nerd_leroy",
+  "camper_justin_01dd",
+  "super_nerd_miguel_00aa",
+  "picnicker_donna",
+  "picnicker_claire_022c",
+  "picnicker_alma_01d2",
+  "picnicker_caitlin_009b",
+  "punk_girl_providence3",
+  "channeler_rachel_0093",
+  "ace_trainer_bowie",
+  "ace_trainer_maclachlan",
+  "ace_trainer_zephira",
+  "ace_trainer_symes_0071",
+  "ace_trainer_andrew_0002",
+  "ace_trainer_wilton_0133",
+  "ace_trainer_janny_00af",
+  "ace_trainer_barry_0058",
+  "ace_trainer_nick_0055",
+  "ace_swimmer_torrent",
+  "cue_ball_camron_00fb",
+  "professor_oak_00d2",
+  "gym_crusher_alexander",
+  "gym_crusher_howitzer",
+  "gym_crusher_foxxy",
+  "gym_crusher_salad",
+  "gym_rat_king"
+]
+const eliteModeHard = [
+  "reggie",
+  "professor_oak_00c8",
+  "raging_red",
+  "raging_blue",
+  "punk_girl_providence4",
+  "bird_legend_arctic",
+  "bird_legend_zap",
+  "bird_legend_melt",
+  "gym_crusher_cruelty",
+  "gym_crusher_dennis",
+  "gym_crusher_twine",
+  "gym_obliterator_blaze",
+  "gym_obliterator_warp",
+  "gym_obliterator_cofh",
+  "gym_obliterator_artemis",
+  "gym_obliterator_warlord",
+  "gym_obliterator_origin",
+  "gym_obliterator_tao",
+  "gym_obliterator_primal",
+  "dimensional_entity_0",
+  "dimensional_entity_1",
+  "dimensional_entity_2",
+  "dimensional_entity_3",
+  "dimensional_entity_4",
+  "dimensional_entity_5",
+  "dimensional_entity_6",
+  "dimensional_entity_7",
+  "dimensional_entity_8",
+  "dimensional_entity_9",
+  "dimensional_entity_10"
+]
+global.getRandomTrainer = (levelBucket, upgraded) => {
+  let trainerBucket = trainerBuckets.get(levelBucket);
+  console.log("rolling")
+  if (upgraded) {
+    if (Math.random() < 0.75) {
+      trainerBucket = eliteModeEasy;
+    } else {
+      trainerBucket = eliteModeHard;
+    }
+  }
+  console.log(trainerBucket)
   // const trainer = trainerBucket[rnd(0, trainerBucket.length)];
   // console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
   return trainerBucket[rnd(0, trainerBucket.length - 1)];
 };
 
-global.getPlayerPodiumLevelTier = (player, partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5 + (Math.floor(player.persistentData.winStreak / 10) * 5)) - 5);
+global.getPlayerPodiumLevelTier = (partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5) - 5);
 
-const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma"];
-const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
+const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma", "carlos", "veronica", "evelyne"];
+const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "carlos", "veronica", "evelyne"];
 
-global.getLeagueBoss = (levelBucket) => {
-  let bossNumber = Math.max(1, Math.floor(levelBucket / 10) - 2);
-  if (levelBucket == 105) bossNumber = 8;
-  if (bossNumber >= 9) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}${bossNumber}`;
+global.getLeagueBoss = (levelBucket, upgraded) => {
+  let bossNumber = Math.min(8, Math.max(1, Math.floor(levelBucket / 10) - 1));
+  if (upgraded) return `league_${tier9Bosses[rnd(0, tier9Bosses.length - 1)]}9`;
   return `league_${leagueBosses[rnd(0, leagueBosses.length - 1)]}${bossNumber}`;
 };
 
@@ -601,11 +589,10 @@ const getWinStreakBucket = (winStreak) => {
   }
   return -1;
 }
-global.getStreakRewards = (player, pos, winStreak) => {
-  let rewardTier = getWinStreakBucket(winStreak)
-  if (rewardTier == -1) return;
+
+global.getTypeRewards = (player, pos, type) => {
   let reward;
-  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_streak/${rewardTier}_plus_common`).toArray();
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:badge_reward/${type}_type_gym`).toArray();
   rolledLoot.forEach((item) => {
     reward = player.level.createEntity("minecraft:item");
     reward.x = pos.x + 0.5;
@@ -614,24 +601,39 @@ global.getStreakRewards = (player, pos, winStreak) => {
     reward.item = item;
     reward.spawn();
   });
-  if (Math.random() <= 0.15) {
-    player.tell("rolled_rare")
-    rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_streak/${rewardTier}_plus_rare`).toArray();
-    rolledLoot.forEach((item) => {
-      reward = player.level.createEntity("minecraft:item");
-      reward.x = pos.x + 0.5;
-      reward.y = pos.y + 0.4;
-      reward.z = pos.z + 0.5;
-      reward.item = item;
-      reward.spawn();
-    });
-    if (winStreak >= 640 && player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
-      reward = player.level.createEntity("minecraft:item");
-      reward.x = pos.x + 0.5;
-      reward.y = pos.y + 0.4;
-      reward.z = pos.z + 0.5;
-      reward.item = "society:animal_cracker";
-      reward.spawn();
-    }
+  if (player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = "society:animal_cracker";
+    reward.spawn();
   }
 };
+
+global.getWinsRewards = (player, pos, wins) => {
+  let reward;
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_reward/${wins % 100 == 0 ? 100 : 10}_wins`).toArray();
+  rolledLoot.forEach((item) => {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = item;
+    reward.spawn();
+  });
+  if (player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = "society:animal_cracker";
+    reward.spawn();
+  }
+};
+
+global.getGymBadgeType = (player) => {
+  let badge = player.findCurio("gym_badge", 0).map((slot) => Item.of(slot.stack()).id).orElse("none");
+  if (badge == "none") return "none"
+  return badge.split(":")[1].split("_")[0]
+}

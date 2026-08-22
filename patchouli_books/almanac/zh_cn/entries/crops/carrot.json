@@ -1,0 +1,30 @@
+{
+  "name": "胡萝卜 🌼🍂",
+  "category": "patchouli:crops",
+  "icon": "minecraft:carrot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 23$(li)🌼 §2春季§r 🍂 §4秋季§r$(li)种子价格：:coin: 2$(li)产量：1-3$(li)生长时间：7 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 胡萝卜作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:carrots[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

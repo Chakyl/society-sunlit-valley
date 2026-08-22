@@ -558,7 +558,7 @@
 		#A list of recipe names that should NOT be added in by default
 		"Ignored Recipes" = []
 		"Force Limited Crafting" = false
-		"Disable Recipe Book" = false
+		"Disable Recipe Book" = true
 		#If enabled, advancements granting recipes will be stopped from loading, potentially reducing the lagspike on first world join.
 		"Filter Recipe Advancements" = true
 		#This feature disables itself if any of the following mods are loaded:
@@ -1672,7 +1672,7 @@
 	#is added to 'Items to Change', then a predicate named 'quark_has_enchant_minecraft_silk_touch' will be available
 	#to the netherite_pickaxe.json item model, whose value will be the enchantment level.
 	"Enchantment Predicates" = false
-	"Enchantments Begone" = false
+	"Enchantments Begone" = true
 	"Game Nerfs" = true
 	"Narrator Readout" = false
 	"Overlay Shader" = false
@@ -1716,7 +1716,7 @@
 		"Enchantments To Register" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = []
+		"Enchantments To Begone" = ["unusualfishmod:unusual_catch", "minecraft:binding_curse", "minecraft:vanishing_curse", "passablefoliage:leaf_walker"]
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod

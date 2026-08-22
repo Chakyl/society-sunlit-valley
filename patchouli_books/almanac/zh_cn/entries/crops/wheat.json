@@ -1,0 +1,30 @@
+{
+  "name": "小麦 🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "minecraft:wheat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 46$(li)🔥 §6夏季§r 🍂 §4秋季§r$(li)种子价格：:coin: 8$(li)产量：1$(li)生长时间：7 天"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 小麦作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "minecraft:wheat[age=7]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

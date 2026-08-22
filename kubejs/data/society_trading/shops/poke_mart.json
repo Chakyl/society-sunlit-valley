@@ -3,7 +3,9 @@
   "name": "shop.society_trading.poke_mart",
   "texture": "cobblemon:textures/item/poke_balls/poke_ball",
   "selector_weight": -101,
-  "jei_catalyst": { "item": "cobblemon:poke_ball" },
+  "jei_catalyst": {
+    "item": "cobblemon:poke_ball"
+  },
   "trades": [
     {
       "offer": {
@@ -108,7 +110,6 @@
         "item": "numismatics:sun",
         "count": 1
       },
-
       "second_request": {
         "item": "numismatics:crown",
         "count": 4
@@ -415,7 +416,7 @@
       "stage_required": "trainer_lvl_5",
       "unlock_description": "jei.society_trading.trainer_lvl_5",
       "stage_removed": "berry_labor_and_capital",
-      "trade_id": "pmart_metal_alloy"
+      "trade_id": "berry_labor_and_capital"
     },
     {
       "offer": {
@@ -450,6 +451,19 @@
     },
     {
       "offer": {
+        "item": "sunlit_cobblemon:elite_stone",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 4
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_elite_stone"
+    },
+    {
+      "offer": {
         "item": "sunlit_cobblemon:silph_scope",
         "count": 1
       },
@@ -474,51 +488,6 @@
       "stage_required": "trainer_lvl_8",
       "unlock_description": "jei.society_trading.trainer_lvl_8",
       "trade_id": "pmart_mystery_gift_genesect"
-    },
-    {
-      "offer": {
-        "item": "sunlit_cobblemon:mystery_gift",
-        "nbt": "{pokemon: \"diancie\", ot: \"Chakyl\"}",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 32
-      },
-      "numismatics_cost": 536870912,
-      "stage_required": "trainer_lvl_8",
-      "unlock_description": "jei.society_trading.trainer_lvl_8",
-      "trade_id": "pmart_mystery_gift_diancie"
-    },
-    {
-      "offer": {
-        "item": "sunlit_cobblemon:mystery_gift",
-        "nbt": "{pokemon: \"hoopa\", ot: \"Chakyl\"}",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 32
-      },
-      "numismatics_cost": 536870912,
-      "stage_required": "trainer_lvl_8",
-      "unlock_description": "jei.society_trading.trainer_lvl_8",
-      "trade_id": "pmart_mystery_gift_hoopa"
-    },
-    {
-      "offer": {
-        "item": "sunlit_cobblemon:mystery_gift",
-        "nbt": "{pokemon: \"meltan\", ot: \"Chakyl\"}",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:prismatic_coin",
-        "count": 32
-      },
-      "numismatics_cost": 536870912,
-      "stage_required": "trainer_lvl_8",
-      "unlock_description": "jei.society_trading.trainer_lvl_8",
-      "trade_id": "pmart_mystery_gift_meltan"
     },
     {
       "offer": {
@@ -639,6 +608,285 @@
       "stage_required": "mystery_gift_shepherd",
       "unlock_description": "jei.society_trading.shepherd_mystery_gift",
       "trade_id": "pmart_mystery_gift_shepherd"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"diancie\", ot: \"librarian\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_librarian",
+      "unlock_description": "jei.society_trading.librarian_mystery_gift",
+      "trade_id": "pmart_mystery_gift_diancie"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"hoopa\", ot: \"librarian\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_witch",
+      "unlock_description": "jei.society_trading.witch_mystery_gift",
+      "trade_id": "pmart_mystery_gift_witch"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:mystery_gift",
+        "nbt": "{pokemon: \"meltan\", ot: \"trader\"}",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 32
+      },
+      "numismatics_cost": 536870912,
+      "stage_required": "mystery_gift_trader",
+      "unlock_description": "jei.society_trading.trader_mystery_gift",
+      "trade_id": "pmart_mystery_gift_meltan"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:normal_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_normal_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:fire_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_fire_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:water_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_water_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:electric_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_electric_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:grass_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_grass_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:ice_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_ice_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:fighting_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_fighting_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:poison_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_poison_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:ground_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_ground_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:flying_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_flying_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:psychic_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_psychic_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:bug_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_bug_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:rock_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_rock_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:ghost_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_ghost_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:dragon_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_dragon_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:dark_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_dark_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:steel_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_steel_badge"
+    },
+    {
+      "offer": {
+        "item": "sunlit_cobblemon:fairy_badge",
+        "count": 1
+      },
+      "request": {
+        "item": "sunlit_cobblemon:sunlit_league_medallion",
+        "count": 1
+      },
+      "stage_required": "trainer_lvl_5",
+      "unlock_description": "jei.society_trading.trainer_lvl_5",
+      "trade_id": "pmart_fairy_badge"
     }
   ]
 }

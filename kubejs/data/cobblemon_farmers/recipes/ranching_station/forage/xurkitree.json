@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "xurkitree",
+	"forages": [
+		{
+			"item": "sunlit_cobblemon:electro_wool",
+			"count": 1,
+			"chance": 0.6,
+			"min_hearts": 4,
+			"has_quality": true
+		},
+		{
+			"item": "cobblemon:booster_energy",
+			"count": 1,
+			"chance": 0.22,
+			"min_hearts": 10
+		}
+	]
+}

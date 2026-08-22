@@ -3,6 +3,7 @@ const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics")
 const NUMISMATICS_CURIO_UTILS = Java.loadClass("io.github.chakyl.numismaticsutils.utils.CurioUtils");
 
 global.GLOBAL_BANK = NUMISMATICS.BANK;
+global.getCardCurio = NUMISMATICS_CURIO_UTILS.getCardCurio;
 global.getPersonalOrCurioAccount = NUMISMATICS_CURIO_UTILS.getPersonalOrCurioAccount;
 global.depositIntoPersonalOrCurio = NUMISMATICS_CURIO_UTILS.depositIntoPersonalOrCurio;
 global.deductFromPersonalOrCurio = NUMISMATICS_CURIO_UTILS.deductFromPersonalOrCurio;
@@ -242,6 +243,7 @@ global.artifacts = [
   { item: "society:toy_train", value: 430 },
   { item: "society:aquamagical_dust", value: 512 },
   { item: "society:wheel_of_adaptation", value: 576 },
+  { item: "society:ancient_builders_tool", value: 612 },
   { item: "society:perfect_cherry", value: 777 },
   { item: "society:mini_oni_eye", value: 704 },
   { item: "society:production_science_pack", value: 1024 },
@@ -252,6 +254,7 @@ global.artifacts = [
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
   { item: "society:token_of_unity", value: 3 },
+  { item: "society:red_wrench", value: 233 },
 ];
 
 // Relics
@@ -580,6 +583,7 @@ global.animalProducts = [
   { item: "buzzier_bees:bee_bottle", value: 16 },
   { item: "etcetera:cotton_flower", value: 24 },
   { item: "society:butterfly_amber", value: 64 },
+  { item: "society:caterpillar_eggs", value: 132 },
   { item: "society:moth_pollen", value: 128 },
   // Misc
   { item: "minecraft:leather", value: 8 },
@@ -1087,6 +1091,7 @@ const craftingTableRecipes = [
   { item: "veggiesdelight:vegetables_wrap", value: 195 },
   { item: "veggiesdelight:vegetarian_burger", value: 188 },
   { item: "veggiesdelight:zucchini_quiche", value: 939 },
+  { item: "veggiesdelight:zucchini_quiche_slice", value: 234 },
   { item: "veggiesdelight:stuffed_zucchini_boat", value: 270 },
   { item: "veggiesdelight:steak_and_broccoli", value: 165 },
   { item: "vintagedelight:honey_mason_jar", value: 24 },
@@ -1122,6 +1127,7 @@ const craftingTableRecipes = [
   { item: "farmersdelight:grilled_salmon", value: 111 },
   { item: "farmersdelight:roasted_mutton_chops", value: 134 },
   { item: "farmersdelight:sweet_berry_cheesecake", value: 454 },
+  { item: "farmersdelight:sweet_berry_cheesecake_slice", value: 114 },
   { item: "farmersdelight:nether_salad", value: 288 },
   { item: "farmersdelight:melon_popsicle", value: 52 },
   { item: "farmersdelight:salmon_roll", value: 36 },
@@ -1140,24 +1146,34 @@ const craftingTableRecipes = [
   { item: "farmersdelight:egg_sandwich", value: 28 },
   { item: "farmersdelight:steak_and_potatoes", value: 144 },
   { item: "farmersdelight:chocolate_pie", value: 660 },
+  { item: "farmersdelight:chocolate_pie_slice", value: 165 },
   { item: "farmersdelight:honey_glazed_ham_block", value: 240 },
+  { item: "farmersdelight:honey_glazed_ham", value: 60 },
   { item: "farmersdelight:shepherds_pie_block", value: 261 },
+  { item: "farmersdelight:shepherds_pie", value: 65 },
   { item: "farmersdelight:rice_roll_medley_block", value: 290 },
   { item: "farmersdelight:apple_pie", value: 597 },
+  { item: "farmersdelight:apple_pie_slice", value: 150 },
+  { item: "farmersdelight:cake_slice", value: 64 },
   { item: "farmersdelight:melon_juice", value: 213 },
   { item: "farmersdelight:roast_chicken_block", value: 243 },
+  { item: "farmersdelight:roast_chicken", value: 60 },
   { item: "meadow:roasted_ham", value: 108 },
   { item: "meadow:cheese_stick", value: 40 },
   { item: "meadow:cheesecake", value: 35 },
+  { item: "meadow:cheesecake_slice", value: 8 },
   { item: "meadow:cheese_tart", value: 49 },
+  { item: "meadow:cheese_tart_slice", value: 12 },
   { item: "meadow:cheese_sandwich", value: 13 },
   { item: "meadow:cheese_roll", value: 14 },
   { item: "minecraft:cookie", value: 12 },
   { item: "minecraft:bread", value: 16 },
   { item: "minecraft:pumpkin_pie", value: 87 },
+  { item: "create_central_kitchen:pumpkin_pie_slice", value: 21 },
   { item: "minecraft:mushroom_stew", value: 16 },
   { item: "minecraft:cake", value: 318 },
   { item: "species:birtday_cake", value: 1572 },
+  { item: "species:birtday_cake_slice", value: 196 },
   { item: "minecraft:rabbit_stew", value: 239 },
   { item: "netherdepthsupgrade:lava_pufferfish_roll", value: 552 },
   { item: "netherdepthsupgrade:obsidianfish_roll", value: 1048 },
@@ -1194,7 +1210,11 @@ const craftingTableRecipes = [
   { item: "vintagedelight:cucumber_salad", value: 324 },
   { item: "vintagedelight:oatmeal_cookie", value: 10 },
   { item: "society:energy_drink", value: 277 },
+  { item: "society:white_energy_drink", value: 432 },
+  { item: "society:pink_energy_drink", value: 218 },
+  { item: "society:mana_energy_drink", value: 548 },
   { item: "society:death_liquid", value: 930 },
+  { item: "society:suspicious_milk_tea", value: 2356 },
   { item: "unusualfishmod:odd_fishsticks", value: 96 },
   { item: "unusualfishmod:weird_goldfish", value: 64 },
   { item: "unusualfishmod:pickledish", value: 128 },
@@ -1212,7 +1232,9 @@ const craftingTableRecipes = [
   { item: "veggiesdelight:beetroot_brownie_tray", value: 141 },
   { item: "veggiesdelight:sweet_potato_cupcake", value: 26 },
   { item: "veggiesdelight:carrot_cake", value: 256 },
+  { item: "veggiesdelight:carrot_cake_slice", value: 37 },
   { item: "veggiesdelight:sweet_potato_pie", value: 489 },
+  { item: "veggiesdelight:sweet_potato_pie_slice", value: 122 },
   { item: "veggiesdelight:cesar_salad", value: 168 },
   { item: "veggiesdelight:dandelion_and_eggs", value: 58 },
   { item: "veggiesdelight:chicken_fajitas_wrap", value: 90 },
@@ -1320,13 +1342,17 @@ const furnaceRecipes = [
   { item: "farmersdelight:smoked_ham", value: 64 },
   { item: "minecraft:popped_chorus_fruit", value: 16 },
   { item: "vintagedelight:meat_pizza", value: 522 },
+  { item: "vintagedelight:meat_pizza_slice", value: 69 },
   { item: "refurbished_furniture:toast", value: 5 },
   { item: "refurbished_furniture:cooked_vegetable_pizza", value: 414 },
+  { item: "refurbished_furniture:vegetable_pizza_slice", value: 414 },
   { item: "veggiesdelight:roasted_garlic_clove", value: 14 },
   { item: "veggiesdelight:smoked_bellpepper", value: 32 },
   { item: "veggiesdelight:baked_sweet_potato", value: 20 },
   { item: "veggiesdelight:mhadjeb", value: 93 },
   { item: "veggiesdelight:garlic_baked_cod", value: 57 },
+  { item: 'society:deep_a_mochi', value: 396 },
+  { item: 'society:lemon_beignets', value: 639 },
 ];
 furnaceRecipes.forEach((recipe) => {
   global.cooking.push({
@@ -1355,14 +1381,18 @@ dryingRecipes.forEach((recipe) => {
 const cakingStationRecipes = [
   { item: "bakery:apple_cupcake", value: 8 },
   { item: "bakery:strawberry_cake", value: 48 },
+  { item: "bakery:strawberry_cake_slice", value: 12 },
   { item: "bakery:strawberry_cupcake", value: 12 },
   { item: "bakery:sweetberry_cupcake", value: 7 },
   { item: "bakery:sweetberry_cake", value: 28 },
+  { item: "bakery:sweetberry_cake_slice", value: 7 },
   { item: "bakery:chocolate_glazed_cookie", value: 54 },
   { item: "bakery:strawberry_glazed_cookie", value: 16 },
   { item: "bakery:sweetberry_glazed_cookie", value: 12 },
   { item: "bakery:chocolate_cake", value: 142 },
+  { item: "bakery:chocolate_cake_slice", value: 36 },
   { item: "bakery:chocolate_gateau", value: 25 },
+  { item: "bakery:chocolate_gateau_slice", value: 6 },
 ];
 cakingStationRecipes.forEach((recipe) => {
   global.cooking.push({
@@ -1417,6 +1447,7 @@ const cookingPotRecipes = [
   { item: "netherdepthsupgrade:baked_obsidianfish_stew", value: 1824 },
   { item: "netherdepthsupgrade:baked_lava_pufferfish_stew", value: 1080 },
   { item: "bakery:pudding", value: 100 },
+  { item: "bakery:pudding_slice", value: 25 },
   { item: "brewery:dumplings", value: 60 },
   { item: "bakery:hazelnut_ella", value: 1000 },
   { item: "bakery:chocolate_jam", value: 84 },
@@ -1454,6 +1485,7 @@ const cookingPotRecipes = [
   { item: "crabbersdelight:clam_bake", value: 116 },
   { item: "farmersdelight:pumpkin_soup", value: 140 },
   { item: "farmersdelight:stuffed_pumpkin_block", value: 300 },
+  { item: "farmersdelight:stuffed_pumpkin", value: 75 },
   { item: "farmersdelight:dumplings", value: 102 },
   { item: "veggiesdelight:cauliflower_soup", value: 84 },
   { item: "veggiesdelight:mashed_potatoes", value: 112 },
@@ -1461,6 +1493,7 @@ const cookingPotRecipes = [
   { item: "veggiesdelight:shakshouka", value: 165 },
   { item: "veggiesdelight:roasted_vegetables", value: 240 },
   { item: "veggiesdelight:stuffed_bellpeppers_block", value: 146 },
+  { item: 'veggiesdelight:stuffed_bellpepper', value: 48 },
   { item: "veggiesdelight:garlic_rice_with_cauliflower", value: 148 },
   { item: "veggiesdelight:garlic_stuffed_mushrooms", value: 100 },
   { item: "veggiesdelight:fish_and_chips", value: 92 },
@@ -1495,6 +1528,7 @@ const stoveRecipes = [
   { item: "bakery:baguette", value: 9 },
   { item: "bakery:croissant", value: 2 },
   { item: "bakery:glowberry_tart", value: 35 },
+  { item: "bakery:glowberry_pie_slice", value: 8 },
   { item: "bakery:grilled_bacon_sandwich", value: 56 },
   { item: "brewery:pork_knuckle", value: 160 },
   { item: "candlelight:roastbeef_with_glazed_carrots", value: 72 },
@@ -1509,6 +1543,7 @@ const stoveRecipes = [
   { item: "farm_and_charm:pasta_with_onion_sauce", value: 10 },
   { item: "bakery:toast", value: 16 },
   { item: "bakery:chocolate_tart", value: 32 },
+  { item: "bakery:chocolate_tart_slice", value: 8 },
   { item: "farm_and_charm:grandmothers_strawberry_cake", value: 18 },
   { item: "bakery:braided_bread", value: 6 },
   { item: "farm_and_charm:roasted_corn", value: 88 },
@@ -1516,11 +1551,14 @@ const stoveRecipes = [
   { item: "farm_and_charm:farmers_bread", value: 12 },
   { item: "bakery:crusty_bread", value: 8 },
   { item: "bakery:bundt_cake", value: 104 },
+  { item: "bakery:bundt_cake_slice", value: 26 },
   { item: "candlelight:pork_ribs", value: 64 },
   { item: "bakery:apple_pie", value: 88 },
+  { item: "bakery:apple_pie_slice", value: 22 },
   { item: "farmersdelight:sweet_berry_cookie", value: 8 },
   { item: "society:ancient_cookie", value: 728 },
   { item: "bakery:linzer_tart", value: 1035 },
+  { item: "bakery:linzer_tart_slice", value: 258 },
   { item: "brewery:pretzel", value: 13 },
   { item: "bakery:jam_roll", value: 750 },
   { item: "autumnity:pumpkin_bread", value: 95 },
@@ -1707,7 +1745,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
-  { item: "minecraft:dragon_breath", value: 4},
+  { item: "minecraft:dragon_breath", value: 4 },
   { item: "society:sunlit_pearl", value: 1920 },
   { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },
@@ -1879,6 +1917,102 @@ global.plorts.forEach((plort) => {
   });
 });
 
+// Commented out ones are defined in longwings code but not obtainable. Maybe they'll be added?
+global.longwings = [
+  { variant: "monarch", rarity: 12, size: "normal", type: "butterfly" },
+  { variant: "giant_swallowtail", rarity: 7, size: "larger", type: "butterfly" },
+  { variant: "glasswing", rarity: 4, size: "normal", type: "butterfly" },
+  { variant: "blue_morpho", rarity: 4, size: "larger", type: "butterfly" },
+  { variant: "cabbage_white", rarity: 9, size: "small", type: "butterfly" },
+  { variant: "common_blue", rarity: 8, size: "small", type: "butterfly" },
+  { variant: "orange_tip", rarity: 8, size: "small", type: "butterfly" },
+  { variant: "sleepy_orange", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "zebra", rarity: 12, size: "normal", type: "butterfly" },
+  { variant: "julia", rarity: 10, size: "normal", type: "butterfly" },
+  // { variant: "giant_owl", rarity: 8, size: "normal", type: "butterfly" },
+  { variant: "queen", rarity: 8, size: "normal", type: "butterfly" },
+  { variant: "swallowtail", rarity: 7, size: "normal", type: "butterfly" },
+  { variant: "common_leopard", rarity: 7, size: "normal", type: "butterfly" },
+  { variant: "postman", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "shoemaker", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "malabar_banded_peacock", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "ruddy_daggerwing", rarity: 5, size: "small", type: "butterfly" },
+  { variant: "king_crow", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "hebes_pink_forester", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "red_spotted_purple", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "malachite", rarity: 7, size: "normal", type: "butterfly" },
+  { variant: "giant_glasswing", rarity: 4, size: "larger", type: "butterfly" },
+  { variant: "tailed_jay", rarity: 4, size: "normal", type: "butterfly" },
+  { variant: "comma", rarity: 8, size: "small", type: "butterfly" },
+  { variant: "sara_longwing", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "statira", rarity: 9, size: "normal", type: "butterfly" },
+  { variant: "rajah_brookes_birdwing", rarity: 4, size: "larger", type: "butterfly" },
+  { variant: "purple_king_shoemaker", rarity: 4, size: "normal", type: "butterfly" },
+  { variant: "dark_blue_tiger", rarity: 3, size: "normal", type: "butterfly" },
+  { variant: "archduke", rarity: 5, size: "small", type: "butterfly" },
+  { variant: "long_tailed_skipper", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "white_peacock", rarity: 8, size: "small", type: "butterfly" },
+  { variant: "dart_skipper", rarity: 9, size: "small", type: "butterfly" },
+  { variant: "plum_judy", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "plain_blue_crow", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "common_birdwing", rarity: 5, size: "larger", type: "butterfly" },
+  { variant: "zebra_swallowtail", rarity: 4, size: "normal", type: "butterfly" },
+  { variant: "sulphur", rarity: 6, size: "normal", type: "butterfly" },
+  { variant: "painted_lady", rarity: 12, size: "small", type: "butterfly" },
+  { variant: "small_copper", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "malay_lacewing", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "olivewing", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "novice", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "peacock", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "pearl_bordered_fritillary", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "gold_banded_forester", rarity: 4, size: "larger", type: "butterfly" },
+  { variant: "atala", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "pink_spotted_cattleheart", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "queen_alexandra_birdwing", rarity: 2, size: "larger", type: "butterfly" },
+  { variant: "marble", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "monk_skipper", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "large_tree_nymph", rarity: 4, size: "normal", type: "butterfly" },
+  { variant: "brimstone", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "black_swallowtail", rarity: 7, size: "normal", type: "butterfly" },
+  { variant: "ludlows_bhutan_swallowtail", rarity: 3, size: "larger", type: "butterfly" },
+  { variant: "great_purple_emperor", rarity: 5, size: "normal", type: "butterfly" },
+  { variant: "blue_pansy", rarity: 7, size: "normal", type: "butterfly" },
+  // { variant: "green_hairstreak", rarity: 7, size: "small", type: "butterfly" },
+  { variant: "mourning_cloak", rarity: 5, size: "small", type: "butterfly" },
+  { variant: "tropical_leafwing", rarity: 3, size: "normal", type: "butterfly" },
+  // { variant: "yellow_spotted_skipper", rarity: 4, size: "small", type: "butterfly" },
+  // { variant: "mangrove_skipper", rarity: 4, size: "small", type: "butterfly" },
+  { variant: "small_white_wave", rarity: 15, size: "small", type: "moth" },
+  { variant: "salt_marsh", rarity: 10, size: "normal", type: "moth" },
+  { variant: "tiger", rarity: 8, size: "normal", type: "moth" },
+  { variant: "rosy_maple", rarity: 6, size: "small", type: "moth" },
+  // { variant: "apamea", rarity: 15, size: "normal", type: "moth" }, 
+  { variant: "scarlet_bodied_wasp", rarity: 5, size: "normal", type: "moth" },
+  { variant: "luna", rarity: 4, size: "normal", type: "moth" },
+  { variant: "atlas", rarity: 1, size: "larger", type: "moth" },
+  { variant: "madagascan_sunset", rarity: 2, size: "larger", type: "moth" },
+  { variant: "cecropia", rarity: 4, size: "larger", type: "moth" },
+  { variant: "false_tiger", rarity: 10, size: "normal", type: "moth" },
+  { variant: "hummingbird_clearwing", rarity: 7, size: "small", type: "moth" },
+  { variant: "japanese_silk", rarity: 5, size: "normal", type: "moth" },
+  { variant: "marbled_emperor", rarity: 4, size: "normal", type: "moth" },
+  { variant: "imperial", rarity: 4, size: "normal", type: "moth" },
+  { variant: "oak_beauty", rarity: 9, size: "small", type: "moth" },
+  { variant: "dark_bordered_beauty", rarity: 5, size: "small", type: "moth" },
+  { variant: "silk", rarity: 6, size: "normal", type: "moth" },
+  // { variant: "mother_of_pearl", rarity: 5, size: "small", type: "moth" },
+  { variant: "july_belle", rarity: 7, size: "small", type: "moth" },
+  { variant: "omiza", rarity: 3, size: "normal", type: "moth" },
+  { variant: "chickweed", rarity: 8, size: "small", type: "moth" },
+  // { variant: "feathered_thorn", rarity: 5, size: "normal", type: "moth" },
+  { variant: "owl", rarity: 3, size: "larger", type: "moth" },
+  // { variant: "brown_scoopwing", rarity: 4, size: "small", type: "moth" },
+  { variant: "small_emerald", rarity: 5, size: "small", type: "moth" },
+  // { variant: "red_carpet", rarity: 6, size: "small", type: "moth" },
+  // { variant: "arched_hooktip", rarity: 6, size: "normal", type: "moth" },
+  // { variant: "small_emperor", rarity: 5, size: "small", type: "moth" },
+  { variant: "comet", rarity: 6, size: "larger", type: "moth" }
+];
 global.farmerProductMult = 1.0
 global.artisanProductMult = 1.0
 global.miningProductMult = 1.0
@@ -1957,7 +2091,7 @@ global.brews.forEach((brew) => {
 global.geodeList.forEach((treasure) => {
   const { item, value } = treasure;
   global.trades.set(item, {
-    value: global.getConfiguredValue(value, item === "society:froggy_helm" ? "meat" :"gem"),
+    value: global.getConfiguredValue(value, item === "society:froggy_helm" ? "meat" : "gem"),
     multiplier:
       item === "society:froggy_helm"
         ? "shippingbin:meat_sell_multiplier"
@@ -1967,7 +2101,7 @@ global.geodeList.forEach((treasure) => {
 global.frozenGeodeList.forEach((treasure) => {
   const { item, value } = treasure;
   global.trades.set(item, {
-    value: global.getConfiguredValue(value, item === "society:ribbit_drum" ? "meat" :"gem"),
+    value: global.getConfiguredValue(value, item === "society:ribbit_drum" ? "meat" : "gem"),
     multiplier:
       item === "society:ribbit_drum"
         ? "shippingbin:meat_sell_multiplier"
@@ -1977,7 +2111,7 @@ global.frozenGeodeList.forEach((treasure) => {
 global.magmaGeodeList.forEach((treasure) => {
   const { item, value } = treasure;
   global.trades.set(item, {
-    value: global.getConfiguredValue(value, item === "society:ribbit_gadget" ? "meat" :"gem"),
+    value: global.getConfiguredValue(value, item === "society:ribbit_gadget" ? "meat" : "gem"),
     multiplier:
       item === "society:ribbit_gadget"
         ? "shippingbin:meat_sell_multiplier"
@@ -2094,5 +2228,14 @@ global.slimeHearts.forEach((heart) => {
   global.trades.set(`splendid_slimes:slime_heart/${type}`, {
     value: global.getConfiguredValue(value, "crop"),
     multiplier: "shippingbin:crop_sell_multiplier",
+  });
+});
+//   { variant: "atala", rarity: 7, size: "small", type: "butterfly" },
+// Formula: (16 - rarity) * 78
+global.longwings.forEach((heart) => {
+  const { variant, rarity } = heart;
+  global.trades.set(`longwings:variant/${variant}`, {
+    value: global.getConfiguredValue((16 - rarity) * 78, "meat"),
+    multiplier: "shippingbin:meat_sell_multiplier",
   });
 });

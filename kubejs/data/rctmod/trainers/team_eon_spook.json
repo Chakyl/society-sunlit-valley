@@ -1,0 +1,123 @@
+{
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:blaziken",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:timid",
+      "ability": "speedboost",
+      "moveset": [
+        "bravebird",
+        "heatwave",
+        "closecombat",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 5,
+        "defence": 25,
+        "special_attack": 23,
+        "special_defence": 4,
+        "speed": 9
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:zoroark",
+      "gender": "FEMALE",
+      "level": 75,
+      "nature": "cobblemon:modest",
+      "ability": "illusion",
+      "moveset": [
+        "protect",
+        "nastyplot",
+        "bittermalice",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 1,
+        "defence": 12,
+        "special_attack": 24,
+        "special_defence": 16,
+        "speed": 21
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "hisuian",
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:electabuzz",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:bashful",
+      "ability": "static",
+      "moveset": [
+        "helpinghand",
+        "thunder",
+        "lightscreen",
+        "taunt"
+      ],
+      "ivs": {
+        "hp": 27,
+        "attack": 30,
+        "defence": 24,
+        "special_attack": 14,
+        "special_defence": 24,
+        "speed": 31
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ursaluna",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:lax",
+      "ability": "mindseye",
+      "moveset": [
+        "bloodmoon",
+        "hammerarm",
+        "moonlight",
+        "earthpower"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 3,
+        "defence": 20,
+        "special_attack": 25,
+        "special_defence": 5,
+        "speed": 11
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "bloodmoon",
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 10,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

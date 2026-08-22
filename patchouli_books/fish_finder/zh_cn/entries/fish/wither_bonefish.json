@@ -1,0 +1,19 @@
+{
+  "name": "凋灵骷髅鱼",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:wither_bonefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)价格：:coin: 412$(li)维度：下界$(li)生物群系：灵魂沙峡谷"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:wither_bonefish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Well I've been jumpin' all over, but my views were slowly shrinking."
+    }
+  ]
+}

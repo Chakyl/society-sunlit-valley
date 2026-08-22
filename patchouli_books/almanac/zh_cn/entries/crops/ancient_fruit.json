@@ -1,0 +1,30 @@
+{
+  "name": "上古水果 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "society:ancient_fruit",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 128$(li)🌼 §2春季§r 🔥 §6夏季§r 🍂 §4秋季§r$(li)产量：1$(li)生长时间：10 天$(br2)$(l)备注$()$(br)种子极为罕见。 安装古代齿轮升级的种子制造机可能是最简单的获取途径。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 上古水果作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "society:ancient_fruit[age=10]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

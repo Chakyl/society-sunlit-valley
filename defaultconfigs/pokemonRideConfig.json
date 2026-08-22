@@ -80,7 +80,7 @@
       "passengersOffSet": [[0.0, 0.0, 0.0]],
       "speedModifier": 1.0
     },
-    "Espahtla": {
+    "Espathra": {
       "stamina": 0,
       "mountType": ["WALK"],
       "ridingOffSet": [0.0, 1.0, 0.0],
@@ -194,7 +194,7 @@
     },
     "Metagross": {
       "stamina": 0,
-      "mountType": ["WALK"],
+      "mountType": ["WALK", "FLY"],
       "ridingOffSet": [0.0, 2.0, 0.0],
       "passengersOffSet": [[0.0, 0.0, 0.0]],
       "speedModifier": 1.0
@@ -283,7 +283,7 @@
       "passengersOffSet": [[0.0, 0.0, 0.0]],
       "speedModifier": 1.0
     },
-    "tauros": {
+    "Tauros": {
       "formName": "paldean aqua",
       "mountType": ["WALK"],
       "ridingOffSet": [0.0, 1.0, 0.0],
@@ -291,7 +291,7 @@
       "speedModifier": 1.3,
       "stamina": 0
     },
-    "TAuros": {
+    "Tauros": {
       "formName": "paldean blaze",
       "mountType": ["WALK"],
       "ridingOffSet": [0.0, 1.0, 0.0],
@@ -299,7 +299,7 @@
       "speedModifier": 1.2,
       "stamina": 0
     },
-    "TAUros": {
+    "Tauros": {
       "formName": "paldean combat",
       "mountType": ["WALK"],
       "ridingOffSet": [0.0, 1.0, 0.0],
@@ -475,7 +475,7 @@
       "passengersOffSet": [[0.0, 0.0, 0.0]],
       "speedModifier": 1.0
     },
-    "Groundon": {
+    "Groudon": {
       "stamina": 0,
       "mountType": ["WALK"],
       "ridingOffSet": [0.0, 2.0, 0.0],

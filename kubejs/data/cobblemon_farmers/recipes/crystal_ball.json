@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "wdw",
+    "bbb",
+    "bBb"
+  ],
+  "key": {
+    "b": {
+      "tag": "forge:stone"
+    },
+    "B": {
+      "item": "cobblemon:beast_ball"
+    },
+    "d": {
+      "item": "minecraft:diamond_block"
+    },
+    "w": {
+      "item": "minecraft:purple_carpet"
+    }
+  },
+  "result": {
+    "item": "cobblemon_farmers:crystal_ball"
+  },
+  "show_notification": true
+}

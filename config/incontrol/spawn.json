@@ -15,7 +15,6 @@
       "minecraft:spider",
       "minecraft:creeper",
       "minecraft:witch",
-      "minecraft:zombie_villager",
       "minecraft:husk",
       "minecraft:stray",
       "trials:bogged",
@@ -100,7 +99,6 @@
       "minecraft:witch",
       "minecraft:drowned",
       "minecraft:slime",
-      "minecraft:zombie_villager",
       "minecraft:husk",
       "minecraft:stray",
       "trials:bogged"
@@ -111,6 +109,7 @@
   },
   {
     "mob": [
+      "minecraft:zombie_villager",
       "crittersandcompanions:dragonfly",
       "crittersandcompanions:jumping_spider",
       "minecraft:villager",
@@ -153,7 +152,17 @@
   },
   {
     "mob": "crittersandcompanions:leaf_insect",
-    "mincount": 1,
+    "mincount": 3,
+    "result": "deny"
+  },
+  {
+    "mob": "crittersandcompanions:otter",
+    "mincount": 6,
+    "result": "deny"
+  },
+  {
+    "mob": "golemoverhaul:slime_golem",
+    "mincount": 6,
     "result": "deny"
   },
   {

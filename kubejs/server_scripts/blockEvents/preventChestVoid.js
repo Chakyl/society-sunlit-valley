@@ -38,7 +38,7 @@ BlockEvents.rightClicked(
 BlockEvents.rightClicked("farm_and_charm:mincer", (e) => {
   const { block, player, hand, item, server } = e;
   if (player.isCrouching()) return;
-  if (block.inventory.getStackInSlot(0) == item.id) {
+  if (item.id !== "minecraft:air" && block.inventory.getStackInSlot(0) == item.id) {
     player.tell(Text.translatable("society.mincer.warn").red());
     player.inventoryMenu.broadcastFullState();
     e.cancel();

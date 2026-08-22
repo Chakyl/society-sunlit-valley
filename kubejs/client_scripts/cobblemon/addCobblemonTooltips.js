@@ -74,6 +74,18 @@ ItemEvents.tooltip((tooltip) => {
     "unimplemented_items:repel",
     Text.translatable("tooltip.society.area", `21x21x21`).green()
   );
+    tooltip.add(
+    "sunlit_cobblemon:bifrost_stone",
+    Text.translatable("tooltip.sunlit_cobblemon.bifrost_stone.description").red()
+  );
+    tooltip.add(
+    "sunlit_cobblemon:light_scale",
+    Text.translatable("tooltip.sunlit_cobblemon.light_scale.description").gray()
+  );
+    tooltip.add(
+    "sunlit_cobblemon:dark_scale",
+    Text.translatable("tooltip.sunlit_cobblemon.dark_scale.description").gray()
+    );
   tooltip.addAdvanced("sunlit_cobblemon:sun_mirror", (item, advanced, text) => {
     if (item.nbt && item.nbt.monData && item.nbt.monData.getString("type")) {
       let data = item.nbt.monData
@@ -283,10 +295,15 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:blooming_ring', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   tooltip.add('sunlit_cobblemon:cornucopia_of_greed', Text.translatable(`tooltip.sunlit_cobblemon.cornucopia_of_greed.description`).gray());
   tooltip.add('sunlit_cobblemon:cornucopia_of_greed', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:pecha_shell', Text.translatable(`tooltip.sunlit_cobblemon.pecha_shell.found`).gray());
+  tooltip.add('sunlit_cobblemon:pecha_shell', Text.translatable(`tooltip.sunlit_cobblemon.pecha_shell.description`).gray());
+  tooltip.add('sunlit_cobblemon:pecha_shell', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
 
   tooltip.add('sunlit_cobblemon:fire_pledge', Text.translatable(`tooltip.sunlit_cobblemon.fire_pledge.description`).red());
   tooltip.add('sunlit_cobblemon:grass_pledge', Text.translatable(`tooltip.sunlit_cobblemon.grass_pledge.description`).green());
   tooltip.add('sunlit_cobblemon:water_pledge', Text.translatable(`tooltip.sunlit_cobblemon.water_pledge.description`).aqua());
+
+  tooltip.add('sunlit_cobblemon:magikarp_taiyaki', Text.translatable(`tooltip.sunlit_cobblemon.magikarp_taiyaki.description`).darkPurple());
 
   tooltip.add('sunlit_cobblemon:blazing_calamity', Text.translatable(`tooltip.sunlit_cobblemon.blazing_calamity.description`).gray());
   tooltip.add('sunlit_cobblemon:blazing_calamity', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
@@ -297,13 +314,38 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:moongeist_crystal', Text.translatable(`tooltip.sunlit_cobblemon.moongeist_crystal.description`).gray());
   tooltip.add('sunlit_cobblemon:moongeist_crystal', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
 
+  tooltip.add('sunlit_cobblemon:red_orb', Text.translatable(`tooltip.sunlit_cobblemon.red_orb.description`).gray());
+  tooltip.add('sunlit_cobblemon:red_orb', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:blue_orb', Text.translatable(`tooltip.sunlit_cobblemon.blue_orb.description`).gray());
+  tooltip.add('sunlit_cobblemon:blue_orb', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+
   tooltip.add('sunlit_cobblemon:tabula_rasa', Text.translatable(`tooltip.sunlit_cobblemon.tabula_rasa.description`).gray());
   tooltip.add('sunlit_cobblemon:tabula_rasa', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:corrupted_clock', Text.translatable(`tooltip.sunlit_cobblemon.corrupted_clock.description`).gray());
+  tooltip.add('sunlit_cobblemon:liquid_pale', Text.translatable(`tooltip.sunlit_cobblemon.liquid_pale.description`).gray());
+  tooltip.add('sunlit_cobblemon:liquid_pale', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:liquid_antimatter', Text.translatable(`tooltip.sunlit_cobblemon.liquid_pale.description`).gray());
+  tooltip.add('sunlit_cobblemon:liquid_antimatter', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   tooltip.add('sunlit_cobblemon:ominous_black_stake', Text.translatable(`tooltip.sunlit_cobblemon.ominous_black_stake.description`).gray());
   tooltip.add('sunlit_cobblemon:gem_box', Text.translatable(`tooltip.sunlit_cobblemon.gem_box.description`).gray());
   tooltip.add('sunlit_cobblemon:mystica_nectar', Text.translatable(`tooltip.sunlit_cobblemon.mystica_nectar.description`).gray());
   tooltip.add('sunlit_cobblemon:rainbow_steam', Text.translatable(`tooltip.sunlit_cobblemon.rainbow_steam.description`).gray());
   tooltip.add('sunlit_cobblemon:swampy_mystica_branch', Text.translatable(`tooltip.sunlit_cobblemon.swampy_mystica_branch.description`).gray());
+  tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.gracidea_flower.description`).gray());
+  tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
+  tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.gracidea_flower`).gray());
+  tooltip.add('sunlit_cobblemon:gracidea_flower', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
+  tooltip.add('sunlit_cobblemon:moondust', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.moondust`).gray());
+  tooltip.add('sunlit_cobblemon:moondust', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
+  tooltip.add('sunlit_cobblemon:meteor_fragment', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_fragment`).gray());
+  tooltip.add('sunlit_cobblemon:meteor_fragment', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
+  tooltip.add('sunlit_cobblemon:meteor_chunk', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.meteor_chunk`).gray());
+  tooltip.add('sunlit_cobblemon:meteor_chunk', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
+  tooltip.add('cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.soul_dew.description`).gray());
+  tooltip.add('cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fossil`).gold());
+  tooltip.add('cobblemon:soul_dew', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held_item`).gold());
+  tooltip.add('sunlit_cobblemon:elite_stone', Text.translatable(`tooltip.sunlit_cobblemon.elite_stone.description`).gray());
+  tooltip.add('sunlit_cobblemon:elite_stone', Text.translatable(`tooltip.sunlit_cobblemon.elite_stone.legal`).red());
 
   tooltip.add('cobblemon:ice_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.ice_stone`).gray());
   tooltip.add('cobblemon:fire_stone', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.fire_stone`).gray());
@@ -342,7 +384,8 @@ ItemEvents.tooltip((tooltip) => {
     "black_glasses", "charcoal_stick", "dragon_fang", "hard_stone", "magnet", "metal_coat", "miracle_seed",
     "mystic_water", "never_melt_ice", "poison_barb", "sharp_beak", "silk_scarf", "silver_powder", "soft_sand",
     "spell_tag", "fairy_feather", "twisted_spoon", "power_anklet", "power_band", "power_belt", "power_bracer",
-    "power_lens", "power_weight",
+    "power_lens", "power_weight", 'lagging_tail', 'luminous_moss', 'grip_claw', 'electric_seed', 'psychic_seed', 
+    'grassy_seed', 'misty_seed', 'clear_amulet'
   ].forEach((item) => {
     // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held.${item}`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held_item`).gold());
@@ -353,7 +396,6 @@ ItemEvents.tooltip((tooltip) => {
     // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.stone`).gray());
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
   });
-
   ['whimsy_deco:washing_machine', 'whimsy_deco:orange_lawn_mower', 'refurbished_furniture:light_stove', 'whimsy_deco:fan', 'beachparty:mini_fridge'].forEach((item) => {
     tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.rotom`).gray());
     tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item`).lightPurple());
@@ -402,6 +444,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "unremarkable_teacup" },
     { item: "upgrade", crit: "trade" },
     { item: "whipped_dream", crit: "trade" },
+
   ].forEach((item) => {
     // tooltip.add(`cobblemon:${item.item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.evo_item.${item.item}`).gray());
     if (item.crit)
@@ -471,7 +514,7 @@ ItemEvents.tooltip((tooltip) => {
   ].forEach((item) => {
     tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.vitamin`).aqua());
   });
-  ['cobblemon:helix_fossil', 'cobblemon:dome_fossil', 'cobblemon:old_amber_fossil', 'cobblemon:root_fossil', 'cobblemon:claw_fossil', 'cobblemon:skull_fossil', 'cobblemon:armor_fossil', 'cobblemon:cover_fossil', 'cobblemon:plume_fossil', 'cobblemon:jaw_fossil', 'cobblemon:sail_fossil', 'cobblemon:fossilized_bird', 'cobblemon:fossilized_fish', 'cobblemon:fossilized_drake', 'cobblemon:fossilized_dino'].forEach((item) => {
+  ['sunlit_cobblemon:egg_of_the_king', 'cobblemon:helix_fossil', 'cobblemon:dome_fossil', 'cobblemon:old_amber_fossil', 'cobblemon:root_fossil', 'cobblemon:claw_fossil', 'cobblemon:skull_fossil', 'cobblemon:armor_fossil', 'cobblemon:cover_fossil', 'cobblemon:plume_fossil', 'cobblemon:jaw_fossil', 'cobblemon:sail_fossil', 'cobblemon:fossilized_bird', 'cobblemon:fossilized_fish', 'cobblemon:fossilized_drake', 'cobblemon:fossilized_dino'].forEach((item) => {
     if (item.includes("fossilized")) {
       tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.combination_fossil_info`).gray());
       tooltip.add(item, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.combination_fossil`).gold());

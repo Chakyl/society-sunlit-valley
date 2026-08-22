@@ -11,10 +11,11 @@
 					Damage: 1
 					allow_nbt: 1
 					altezza: 0
-					blueprint_name: "home_tudor"
+					blueprint_name: "home_basic"
 					buildAnyway: 0b
 					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_farmhouse\"}"
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_home\"}"
 					}
 					free_build: 1
 					inventari_blocco_selezionati: ""
@@ -23,110 +24,14 @@
 					mirrowX: 0b
 					mirrowY: 0b
 					mirrowZ: 0b
-					nome: "home_tudor"
+					nome: "home_basic"
 					owner: "worn"
-					owner_name: "Chakyl"
+					owner_name: "Ace"
 					remaining_uses: 1
 					rotateValue: 0s
 					skipObstructionBlock: 0b
 					visualizeBuild: 0b
-					wasHolding: 0b
-					worn_set: 1b
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1
-				id: "portable_blueprints:worn_blueprint"
-				tag: {
-					Damage: 1
-					allow_nbt: 1
-					altezza: 0
-					blueprint_name: "home_siberian"
-					buildAnyway: 0b
-					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_farmhouse\"}"
-					}
-					free_build: 1
-					inventari_blocco_selezionati: ""
-					lunghezzaX: 0
-					lunghezzaZ: 0
-					mirrowX: 0b
-					mirrowY: 0b
-					mirrowZ: 0b
-					nome: "home_siberian"
-					owner: "worn"
-					owner_name: "Chakyl"
-					remaining_uses: 1
-					rotateValue: 0s
-					skipObstructionBlock: 0b
-					visualizeBuild: 0b
-					wasHolding: 0b
-					worn_set: 1b
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1
-				id: "portable_blueprints:worn_blueprint"
-				tag: {
-					Damage: 1
-					allow_nbt: 1
-					altezza: 0
-					blueprint_name: "home_cherry"
-					buildAnyway: 0b
-					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_farmhouse\"}"
-					}
-					free_build: 1
-					inventari_blocco_selezionati: ""
-					lunghezzaX: 0
-					lunghezzaZ: 0
-					mirrowX: 0b
-					mirrowY: 0b
-					mirrowZ: 0b
-					nome: "home_cherry"
-					owner: "worn"
-					owner_name: "Chakyl"
-					remaining_uses: 1
-					rotateValue: 0s
-					skipObstructionBlock: 0b
-					visualizeBuild: 0b
-					wasHolding: 0b
-					worn_set: 1b
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1
-				id: "portable_blueprints:worn_blueprint"
-				tag: {
-					Damage: 1
-					allow_nbt: 1
-					altezza: 0
-					blueprint_name: "home_prismarine"
-					buildAnyway: 0b
-					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_farmhouse\"}"
-					}
-					free_build: 1
-					inventari_blocco_selezionati: ""
-					lunghezzaX: 0
-					lunghezzaZ: 0
-					mirrowX: 0b
-					mirrowY: 0b
-					mirrowZ: 0b
-					nome: "home_prismarine"
-					owner: "worn"
-					owner_name: "AndieCherries"
-					remaining_uses: 1
-					rotateValue: 0s
-					skipObstructionBlock: 0b
-					visualizeBuild: 0b
-					wasHolding: 0b
+					wasHolding: 1b
 					worn_set: 1b
 				}
 			}
@@ -142,7 +47,8 @@
 					blueprint_name: "home_alpine"
 					buildAnyway: 0b
 					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_farmhouse\"}"
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_home\"}"
 					}
 					free_build: 1
 					inventari_blocco_selezionati: ""
@@ -153,107 +59,11 @@
 					mirrowZ: 0b
 					nome: "home_alpine"
 					owner: "worn"
-					owner_name: "Krewella"
+					owner_name: "Ace"
 					remaining_uses: 1
 					rotateValue: 0s
 					skipObstructionBlock: 0b
 					visualizeBuild: 0b
-					wasHolding: 0b
-					worn_set: 1b
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1
-				id: "portable_blueprints:worn_blueprint"
-				tag: {
-					Damage: 1
-					allow_nbt: 1
-					altezza: 0
-					blueprint_name: "home_entrana"
-					buildAnyway: 0b
-					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_farmhouse\"}"
-					}
-					free_build: 1
-					inventari_blocco_selezionati: ""
-					lunghezzaX: 0
-					lunghezzaZ: 0
-					mirrowX: 0b
-					mirrowY: 0b
-					mirrowZ: 0b
-					nome: "home_entrana"
-					owner: "worn"
-					owner_name: "JadeClouds"
-					remaining_uses: 1
-					rotateValue: 0s
-					skipObstructionBlock: 0b
-					visualizeBuild: 0b
-					wasHolding: 0b
-					worn_set: 1b
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1
-				id: "portable_blueprints:worn_blueprint"
-				tag: {
-					Damage: 1
-					allow_nbt: 1
-					altezza: 0
-					blueprint_name: "home_mason"
-					buildAnyway: 0b
-					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_farmhouse\"}"
-					}
-					free_build: 1
-					inventari_blocco_selezionati: ""
-					lunghezzaX: 0
-					lunghezzaZ: 0
-					mirrowX: 0b
-					mirrowY: 0b
-					mirrowZ: 0b
-					nome: "home_mason"
-					owner: "worn"
-					owner_name: "Kanlamari"
-					remaining_uses: 1
-					rotateValue: 0s
-					skipObstructionBlock: 0b
-					visualizeBuild: 1b
-					wasHolding: 1b
-					worn_set: 1b
-				}
-			}
-		}
-		{
-			item: {
-				Count: 1
-				id: "portable_blueprints:worn_blueprint"
-				tag: {
-					Damage: 1
-					allow_nbt: 1
-					altezza: 0
-					blueprint_name: "home_vibrantown"
-					buildAnyway: 0b
-					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_farmhouse\"}"
-					}
-					free_build: 1
-					inventari_blocco_selezionati: ""
-					lunghezzaX: 0
-					lunghezzaZ: 0
-					mirrowX: 0b
-					mirrowY: 0b
-					mirrowZ: 0b
-					nome: "home_vibrantown"
-					owner: "worn"
-					owner_name: "Duy Luong"
-					remaining_uses: 1
-					rotateValue: 0s
-					skipObstructionBlock: 0b
-					visualizeBuild: 1b
 					wasHolding: 1b
 					worn_set: 1b
 				}
@@ -270,7 +80,8 @@
 					blueprint_name: "home_arid"
 					buildAnyway: 0b
 					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_farmhouse\"}"
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_home\"}"
 					}
 					free_build: 1
 					inventari_blocco_selezionati: ""
@@ -281,11 +92,11 @@
 					mirrowZ: 0b
 					nome: "home_arid"
 					owner: "worn"
-					owner_name: "Saphichu"
+					owner_name: "Ace"
 					remaining_uses: 1
 					rotateValue: 0s
 					skipObstructionBlock: 0b
-					visualizeBuild: 1b
+					visualizeBuild: 0b
 					wasHolding: 1b
 					worn_set: 1b
 				}
@@ -302,7 +113,8 @@
 					blueprint_name: "home_bamboo"
 					buildAnyway: 0b
 					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_farmhouse\"}"
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_home\"}"
 					}
 					free_build: 1
 					inventari_blocco_selezionati: ""
@@ -313,12 +125,12 @@
 					mirrowZ: 0b
 					nome: "home_bamboo"
 					owner: "worn"
-					owner_name: "aviahime"
+					owner_name: "Ace"
 					remaining_uses: 1
 					rotateValue: 0s
 					skipObstructionBlock: 0b
 					visualizeBuild: 0b
-					wasHolding: 0b
+					wasHolding: 1b
 					worn_set: 1b
 				}
 			}
@@ -334,7 +146,8 @@
 					blueprint_name: "home_bavarian"
 					buildAnyway: 0b
 					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_farmhouse\"}"
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_home\"}"
 					}
 					free_build: 1
 					inventari_blocco_selezionati: ""
@@ -345,12 +158,12 @@
 					mirrowZ: 0b
 					nome: "home_bavarian"
 					owner: "worn"
-					owner_name: "Howester84"
+					owner_name: "Ace"
 					remaining_uses: 1
 					rotateValue: 0s
 					skipObstructionBlock: 0b
 					visualizeBuild: 0b
-					wasHolding: 0b
+					wasHolding: 1b
 					worn_set: 1b
 				}
 			}
@@ -363,10 +176,11 @@
 					Damage: 1
 					allow_nbt: 1
 					altezza: 0
-					blueprint_name: "home_basic"
+					blueprint_name: "home_cherry"
 					buildAnyway: 0b
 					display: {
-						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_farmhouse\"}"
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_home\"}"
 					}
 					free_build: 1
 					inventari_blocco_selezionati: ""
@@ -375,13 +189,310 @@
 					mirrowX: 0b
 					mirrowY: 0b
 					mirrowZ: 0b
-					nome: "home_basic"
+					nome: "home_cherry"
 					owner: "worn"
-					owner_name: "EeveeBeby"
+					owner_name: "Ace"
 					remaining_uses: 1
 					rotateValue: 0s
 					skipObstructionBlock: 0b
-					visualizeBuild: 1b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_entrana"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_entrana"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_mason"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_mason"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_prismarine"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_prismarine"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_rural"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_rural"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_siberian"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_siberian"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_tudor"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_tudor"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_vibrantown"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_vibrantown"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_floral"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_floral"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "home_sakura"
+					buildAnyway: 0b
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_home.author\"}"]
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_home\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "home_sakura"
+					owner: "worn"
+					owner_name: "Ace"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 0b
 					wasHolding: 1b
 					worn_set: 1b
 				}

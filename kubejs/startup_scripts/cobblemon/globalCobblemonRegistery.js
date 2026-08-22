@@ -59,10 +59,14 @@ global.cobbleAdventuring = [
   { item: "cobblemon:sharp_beak", value: 120 },
   { item: "cobblemon:safety_goggles", value: 200 },
   { item: "cobblemon:rocky_helmet", value: 40 },
+  { item: "cobblemon:grassy_seed", value: 256 },
+  { item: "cobblemon:psychic_seed", value: 256 },
+  { item: "cobblemon:electric_seed", value: 256 },
+  { item: "cobblemon:misty_seed", value: 256 },
   { item: "cobblemon:ring_target", value: 1 },
   { item: "cobblemon:red_card", value: 1 },
+  { item: "cobblemon:soft_sand", value: 50 },
   { item: "cobblemon:quick_powder", value: 210 },
-  { item: "cobblemon:quick_claw", value: 100 },
   { item: "cobblemon:poison_barb", value: 8 },
   { item: "cobblemon:never_melt_ice", value: 300 },
   { item: "cobblemon:mystic_water", value: 120 },
@@ -103,6 +107,7 @@ global.cobbleAdventuring = [
   { item: "cobblemon:charcoal_stick", value: 130 },
   { item: "cobblemon:cell_battery", value: 260 },
   { item: "cobblemon:bright_powder", value: 425 },
+  { item: "cobblemon:clear_amulet", value: 650 },
   { item: "cobblemon:blunder_policy", value: 110 },
   { item: "cobblemon:black_sludge", value: 45 },
   { item: "cobblemon:black_glasses", value: 164 },
@@ -112,6 +117,20 @@ global.cobbleAdventuring = [
   { item: "cobblemon:air_balloon", value: 204 },
   { item: "cobblemon:absorb_bulb", value: 64 },
   { item: "cobblemon:ability_shield", value: 230 },
+  { item: "cobblemon:scope_lens", value: 480 },
+  { item: "cobblemon:wide_lens", value: 320 },
+  { item: "cobblemon:zoom_lens", value: 960 },
+  { item: "cobblemon:luminous_moss", value: 7520 },
+  { item: "cobblemon:utility_umbrella", value: 1720 },
+  { item: "cobblemon:shed_shell", value: 330 },
+  { item: "cobblemon:lagging_tail", value: 8240 },
+  { item: "cobblemon:weakness_policy", value: 724 },
+  { item: "cobblemon:punching_glove", value: 4288 },
+  { item: "cobblemon:protective_pads", value: 20020 },
+  { item: "cobblemon:throat_spray", value: 697 },
+  { item: "cobblemon:metronome", value: 25 },
+  { item: "cobblemon:terrain_extender", value: 797 },
+  { item: "cobblemon:room_service", value: 10000 },
   { item: "cobblemon:exp_candy_xs", value: 5 },
   { item: "cobblemon:exp_candy_s", value: 40 },
   { item: "cobblemon:exp_candy_m", value: 150 },
@@ -129,7 +148,7 @@ global.cobbleAdventuring = [
   { item: "sunlit_cobblemon:prismatic_tm_pack", value: 2048 },
   { item: "sunlit_cobblemon:sun_drops", value: 64 },
   { item: "sunlit_cobblemon:mystica_branch", value: 2048 },
-  { item: "sunlit_cobblemon:sun_essence", value: 11810 },
+  { item: "sunlit_cobblemon:sun_essence", value: 11810 }
 ];
 
 global.cobbleTypeGems = [
@@ -222,6 +241,7 @@ global.cobblemonCooking = [
   { item: "cobblemon:slow_candy", value: 1 },
   { item: "cobblemon:numb_candy", value: 1 },
   { item: "cobblemon:brittle_candy", value: 1 },
+  { item: "sunlit_cobblemon:magikarp_taiyaki", value: 5060 },
 ];
 // Crafting Table Cooking
 [
@@ -394,7 +414,6 @@ global.cobblemonFarmerProducts = [
   { item: "sunlit_cobblemon:resonance_gem", value: 460 },
   { item: "sunlit_cobblemon:moondust", value: 860 },
   { item: "sunlit_cobblemon:electro_wool", value: 512 },
-  { item: "sunlit_cobblemon:electric_canvas", value: 8192 },
   { item: "sunlit_cobblemon:spider_milk", value: 1 },
   { item: "sunlit_cobblemon:moomoo_milk", value: 320 },
   { item: "sunlit_cobblemon:large_moomoo_milk", value: 1280 },
@@ -406,7 +425,9 @@ global.cobblemonFarmerProducts = [
   { item: "cobblemon:prism_scale", value: 6520 },
   { item: "cobblemon:deep_sea_tooth", value: 330 },
   { item: "cobblemon:razor_fang", value: 220 },
+  { item: "cobblemon:quick_claw", value: 100 },
   { item: "cobblemon:razor_claw", value: 128 },
+  { item: "cobblemon:grip_claw", value: 160 },
   { item: "cobblemon:dragon_fang", value: 1430 },
   { item: "cobblemon:medicinal_brew", value: 768 },
 ];
@@ -436,6 +457,7 @@ global.cobblemonDehydrated = [
 ];
 
 global.cobblemonArtisan = [
+  { item: "sunlit_cobblemon:electric_canvas", value: 8192 },
   { item: "sunlit_cobblemon:venomshine", value: 480 },
   { item: "sunlit_cobblemon:moomoo_cheese", value: 640 },
   { item: "sunlit_cobblemon:aged_moomoo_cheese", value: 1920 },

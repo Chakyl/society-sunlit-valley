@@ -4,7 +4,6 @@ const xOffset = 64;
 
 PlayerEvents.tick((e) => {
   const player = e.player;
-  const curios = player.nbt.ForgeCaps["curios:inventory"];
   if (global.clockIcon && player.age % 20 == 0) {
     if (
       ["gag:energized_hearthstone", "gag:hearthstone"].includes(player.getHeldItem("main_hand").id)
@@ -25,17 +24,17 @@ PlayerEvents.tick((e) => {
       });
     }
   }
-  fishRadarPainter(curios, e);
+  fishRadarPainter(e);
 });
 const fishRadarPadding = 2;
-const fishRadarPainter = (curios, e) => {
+const fishRadarPainter = (e) => {
   const { player, level } = e;
   let localConditions = Text.empty();
 
   function setLocalConditions(x) {
     localConditions = x;
   }
-  if (player.age % 100 == 0 && curios.toString().includes("society:fish_radar")) {
+  if (player.age % 100 == 0 && player.isCuriosEquipped("society:fish_radar")) {
     let fish = [];
 
     if (level.dimension !== "minecraft:the_nether") {
@@ -95,7 +94,7 @@ const fishRadarPainter = (curios, e) => {
       };
     });
     global.renderUiItemText(player, fishUiElements, fishUiElementIds);
-  } else if (player.age % 100 == 0 && !curios.toString().includes("society:fish_radar")) {
+  } else if (player.age % 100 == 0 && !player.isCuriosEquipped("society:fish_radar")) {
     let removedFishUiIds = ["fishRadarDisplay", "fishConditions", "fishRadarBottom"];
     for (let index = 0; index < 10; index++) {
       removedFishUiIds.push(`fish_radar_${index}`);

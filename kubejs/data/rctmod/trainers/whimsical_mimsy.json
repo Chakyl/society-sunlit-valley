@@ -1,0 +1,120 @@
+{"displayName": "Whimsical Mimsy",
+  "team": [
+    {
+      "species": "cobblemon:rapidash",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "pastelveil",
+      "moveset": [
+        "psychocut",
+        "stomp",
+        "smartstrike",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female",
+        "galarian"
+      ]
+    },
+    {
+      "species": "cobblemon:florges",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:bold",
+      "ability": "flowerveil",
+      "moveset": [
+        "synthesis",
+        "moonblast",
+        "energyball",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "female",
+        "whiteflower"
+      ]
+    },
+    {
+      "species": "cobblemon:wigglytuff",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "competitive",
+      "moveset": [
+        "metronome"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:sylveon",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "pixilate",
+      "moveset": [
+        "sleeptalk",
+        "psychic",
+        "doubleedge",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:fairy_feather",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

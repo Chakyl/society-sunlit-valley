@@ -1,0 +1,30 @@
+{
+  "name": "番茄 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "farmersdelight:tomato",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)属性$()$(li)作物价格：:coin: 24$(li)🌼 §2春季§r 🔥 §6夏季§r 🍂 §4秋季§r$(li)种子价格：:coin: 4$(li)产量：1$(li)生长时间：4 天$(li)再生时间：3 天$(br2)$(l)备注$()$(br)可以沿着上方的绳子继续生长。$(br)烂番茄是番茄的稀有掉落物。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": " 番茄作物 ",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            "F"
+          ]
+        ],
+        "mapping": {
+          "0": "farmersdelight:tomatoes[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

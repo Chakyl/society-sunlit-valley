@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " w ",
+    "whw",
+    " w "
+  ],
+  "key": {
+    "w": {
+      "item": "society:black_sheet"
+    },
+    "h": {
+      "item": "ribbits:umbrella_leaf"
+    }
+  },
+  "result": {
+    "item": "cobblemon:utility_umbrella"
+  }
+}

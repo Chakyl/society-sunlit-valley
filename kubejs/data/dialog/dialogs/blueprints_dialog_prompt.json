@@ -1,0 +1,38 @@
+{
+	"id": "blueprints_choice_dialog_prompt",
+	"title": "blueprints prompt",
+	"description": "dialog.npc.blueprints.dialog.prompt",
+	"entries": [
+		{
+			"id": "start",
+			"text": [
+				{
+					"translate": "dialog.npc.blueprints.dialog.prompt.line_0"
+				}
+			],
+			"options": [
+				{
+					"text": {
+						"translate": "dialog.npc.blueprints.dialog.prompt.option_0"
+					},
+					"target": "end",
+					"command": [
+						"openselector @p building_shop"
+					]
+				},
+				{
+					"text": {
+						"translate": "dialog.npc.blueprints.dialog.prompt.option_1"
+					},
+					"target": "end",
+					"command": [
+						"openselector @p town_building_shop"
+					]
+				}
+			]
+		},
+		{
+			"id": "end"
+		}
+	]
+}

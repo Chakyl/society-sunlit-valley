@@ -1,5 +1,5 @@
 console.info("[SOCIETY-S-COBBLEMON] cobblemonMysteryGift.js loaded");
-let randomGifts = ["genesect", "diancie", "hoopa", "meltan", "zarude", "manaphy"]
+let randomGifts = ["genesect", "zarude", "manaphy"]
 ItemEvents.rightClicked("sunlit_cobblemon:mystery_gift", (e) => {
   const { server, player, item, level } = e;
   server.runCommandSilent(

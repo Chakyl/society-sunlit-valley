@@ -1,0 +1,134 @@
+{
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:farigiraf",
+      "gender": "FEMALE",
+      "level": 100,
+      "nature": "cobblemon:bold",
+      "ability": "armortail",
+      "moveset": [
+        "trickroom",
+        "hypervoice",
+        "psychic",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 252,
+        "special_defence": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:throat_spray",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:incineroar",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:adamant",
+      "ability": "intimidate",
+      "moveset": [
+        "flareblitz",
+        "knockoff",
+        "fakeout",
+        "partingshot"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 252,
+        "attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:safety_goggles",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:rillaboom",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:careful",
+      "ability": "overgrow",
+      "moveset": [
+        "boomburst",
+        "grassyglide",
+        "woodhammer",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ursaluna",
+      "gender": "MALE",
+      "level": 100,
+      "nature": "cobblemon:quiet",
+      "ability": "mindseye",
+      "moveset": [
+        "bloodmoon",
+        "hammerarm",
+        "moonlight",
+        "earthpower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "attack": 31,
+        "defence": 31,
+        "special_attack": 31,
+        "special_defence": 31,
+        "speed": 0
+      },
+      "evs": {
+        "hp": 252,
+        "special_attack": 252
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "bloodmoon",
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 11,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

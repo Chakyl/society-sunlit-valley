@@ -1,0 +1,122 @@
+{
+  "battleType": "doubles",
+  "team": [
+    {
+      "species": "cobblemon:rillaboom",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:jolly",
+      "ability": "grassysurge",
+      "moveset": [
+        "boomburst",
+        "grassyglide",
+        "woodhammer",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 3,
+        "defence": 20,
+        "special_attack": 25,
+        "special_defence": 5,
+        "speed": 11
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:toxapex",
+      "gender": "FEMALE",
+      "level": 75,
+      "nature": "cobblemon:lax",
+      "ability": "regenerator",
+      "moveset": [
+        "toxic",
+        "toxicspikes",
+        "poisonjab",
+        "icebeam"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 3,
+        "defence": 20,
+        "special_attack": 25,
+        "special_defence": 5,
+        "speed": 11
+      },
+      "evs": {
+        "special_attack": 2
+      },
+      "shiny": false,
+      "heldItem": "cobblemon:rocky_helmet",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:whimsicott",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:calm",
+      "ability": "prankster",
+      "moveset": [
+        "tailwind",
+        "moonblast",
+        "protect",
+        "encore"
+      ],
+      "ivs": {
+        "hp": 24,
+        "attack": 14,
+        "defence": 29,
+        "special_attack": 8,
+        "special_defence": 29
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "minecraft:air",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:annihilape",
+      "gender": "MALE",
+      "level": 75,
+      "nature": "cobblemon:rash",
+      "ability": "defiant",
+      "moveset": [
+        "closecombat",
+        "drainpunch",
+        "ragefist",
+        "taunt"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 3,
+        "defence": 20,
+        "special_attack": 25,
+        "special_defence": 5,
+        "speed": 11
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "aiLevel": 10,
+  "randomizeLeads": false,
+  "defeatRequiredTrainers": []
+}

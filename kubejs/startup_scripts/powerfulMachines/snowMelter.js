@@ -42,7 +42,6 @@ StartupEvents.registry("block", (e) => {
     })
     .model("society:block/kubejs/snow_melter")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 1);
       blockInfo.serverTick(600, 0, (entity) => {
         global.handleSnowMelter(entity);
       });

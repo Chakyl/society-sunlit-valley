@@ -1,0 +1,26 @@
+{
+	"id": "librarian_gift_neutral_0",
+	"title": "librarian introduction",
+	"description": "dialog.npc.librarian.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.gift_neutral.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}
