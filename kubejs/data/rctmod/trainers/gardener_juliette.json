@@ -1,0 +1,122 @@
+{"displayName": "Gardener Juliette",
+  "team": [
+    {
+      "species": "cobblemon:lurantis",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "contrary",
+      "moveset": [
+        "superpower",
+        "petalblizzard",
+        "leechlife",
+        "nightslash"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:shiftry",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "chlorophyll",
+      "moveset": [
+        "sunnyday",
+        "synthesis",
+        "suckerpunch",
+        "solarblade"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:lilligant",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "hustle",
+      "moveset": [
+        "leafblade",
+        "victorydance",
+        "axekick",
+        "tripleaxel"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wide_lens",
+      "aspects": [
+        "male",
+        "hisuian"
+      ]
+    },
+    {
+      "species": "cobblemon:arboliva",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "seedsower",
+      "moveset": [
+        "gigadrain",
+        "dazzlinggleam",
+        "earthpower",
+        "pollenpuff"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:grassy_seed",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

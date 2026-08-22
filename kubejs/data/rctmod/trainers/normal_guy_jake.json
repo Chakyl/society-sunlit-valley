@@ -1,0 +1,123 @@
+{
+  "displayName": "Normal Guy Jake",
+  "team": [
+    {
+      "species": "cobblemon:kangaskhan",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:brave",
+      "ability": "scrappy",
+      "moveset": [
+        "crunch",
+        "outrage",
+        "suckerpunch",
+        "headbutt"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:snorlax",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:bashful",
+      "ability": "immunity",
+      "moveset": [
+        "gigaimpact",
+        "chipaway",
+        "bellydrum",
+        "hammerarm"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:maushold",
+      "gender": "GENDERLESS",
+      "level": 95,
+      "nature": "cobblemon:docile",
+      "ability": "technician",
+      "moveset": [
+        "populationbomb",
+        "babydolleyes",
+        "superfang",
+        "bulletseed"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wide_lens",
+      "aspects": [
+        "genderless",
+        "maushold-family-three"
+      ]
+    },
+    {
+      "species": "cobblemon:toucannon",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:naughty",
+      "ability": "skilllink",
+      "moveset": [
+        "hypervoice",
+        "featherdance",
+        "bulletseed",
+        "drillpeck"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

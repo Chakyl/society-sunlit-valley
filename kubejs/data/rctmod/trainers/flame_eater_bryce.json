@@ -1,0 +1,121 @@
+{"displayName": "Flame Eater Bryce",
+  "team": [
+    {
+      "species": "cobblemon:charizard",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:naughty",
+      "ability": "solarpower",
+      "moveset": [
+        "sunnyday",
+        "flamethrower",
+        "airslash",
+        "dragonpulse"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:shell_bell",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ceruledge",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "flashfire",
+      "moveset": [
+        "bitterblade",
+        "swordsdance",
+        "psychocut",
+        "shadowclaw"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:armarouge",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "flashfire",
+      "moveset": [
+        "armorcannon",
+        "expandingforce",
+        "aurasphere",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:chandelure",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "infiltrator",
+      "moveset": [
+        "shadowball",
+        "flamethrower",
+        "energyball",
+        "acidarmor"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

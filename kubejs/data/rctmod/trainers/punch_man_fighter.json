@@ -1,0 +1,121 @@
+{"displayName": "Punch Man Fighter",
+  "team": [
+    {
+      "species": "cobblemon:hitmonchan",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:brave",
+      "ability": "ironfist",
+      "moveset": [
+        "drainpunch",
+        "thunderpunch",
+        "icepunch",
+        "firepunch"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:punching_glove",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:crabominable",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "ironfist",
+      "moveset": [
+        "dizzypunch",
+        "closecombat",
+        "irondefense",
+        "icehammer"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:punching_glove",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:pawmot",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:careful",
+      "ability": "ironfist",
+      "moveset": [
+        "thunderpunch",
+        "agility",
+        "dig",
+        "closecombat"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:punching_glove",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:conkeldurr",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "ironfist",
+      "moveset": [
+        "machpunch",
+        "poweruppunch",
+        "megapunch",
+        "drainpunch"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:punching_glove",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}
