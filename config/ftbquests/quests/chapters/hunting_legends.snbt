@@ -719,8 +719,8 @@
 				}
 			]
 			title: "The Temple of Time"
-			x: -7.0d
-			y: 1.0d
+			x: -8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["665057111E4EAA4D"]
@@ -753,6 +753,31 @@
 			title: "The Dragon in the Ozone"
 			x: -11.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0842E7FE4BF590F2"]
+			description: [
+				"Legends say the soul of &6Kyurem&r is trapped in an ancient &6Mammutilation&r... "
+				""
+				"It can be awoke using the &6Bifrost Stone&r on the large beast."
+				""
+				"Kyruem's scales occsionally drop, giving form to both dark and light."
+			]
+			id: "4C0A9AB71539FBAE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20ED93D942F11A2C"
+				table_id: 6979018325962330524L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "607F4A3352EB7B7A"
+				item: "sunlit_cobblemon:bifrost_stone"
+				type: "item"
+			}]
+			title: "The Trio"
+			x: -7.0d
+			y: 1.0d
 		}
 	]
 	title: "Hunting Legends"
