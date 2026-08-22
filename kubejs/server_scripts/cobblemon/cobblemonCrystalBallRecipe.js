@@ -1,4 +1,4 @@
-console.info("[SOCIETY] cobblemonCrystalBallRecipe.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobblemonCrystalBallRecipe.js loaded");
 
 
 ServerEvents.recipes((e) => {

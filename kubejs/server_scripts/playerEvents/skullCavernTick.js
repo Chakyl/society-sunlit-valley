@@ -38,6 +38,7 @@ PlayerEvents.tick((e) => {
     }
     // 6AM
     if (timeModulo >= 23800) {
+      // [Sunlit Cobblemon] Start
       if (player.getHeldItem("off_hand") == 'sunlit_cobblemon:corrupted_clock' || player.getHeldItem("main_hand") == 'sunlit_cobblemon:corrupted_clock') {
         player.teleportTo("sunlit_cobblemon:moontear", player.getX(), 128, player.getZ(), 0, 0);
         let playerLevel = player.getLevel()
@@ -64,6 +65,7 @@ PlayerEvents.tick((e) => {
         player.persistentData.skullCavernEnterDay = -1;
         return;
       }
+      // [Sunlit Cobblemon] End
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);
       server.runCommandSilent(

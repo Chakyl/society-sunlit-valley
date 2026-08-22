@@ -1,4 +1,4 @@
-console.info("[SOCIETY] cobblemonCharmBait.js loaded");
+console.info("[SOCIETY-S-COBBLEMON] cobblemonCharmBait.js loaded");
 
 let spawnSkyLegendary = (server, level, player, birds, variant, sound, message) => {
     if (player.getOnPos().y < 60) return;

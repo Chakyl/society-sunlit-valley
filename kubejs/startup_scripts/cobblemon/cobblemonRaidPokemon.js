@@ -82,7 +82,7 @@ global.handleRaidDefeat = (e) => {
         let raidLevel = pokemon.getLevel()
         let commandStr = `execute in ${level.dimension} run pokespawnat ${entityMon.x} ${entityMon.y} ${entityMon.z} ${pokemon.getSpecies()} ${pokemon.getShiny() ? "shiny " : ""} ability=${pokemon.getAbility().name} ${raidMonStats.variant && raidMonStats.variant.equals("") ? "" : raidMonStats.variant} level=${Number(raidMonStats.spawnedLevel)}`;
         let tier = Math.max(0, Number(raidMonStats.tier))
-        if (pokemon.getSpecies() === "lunala") { 
+        if (pokemon.getSpecies() === "lunala") {
             commandStr = `execute in ${level.dimension} run pokespawnat ${entityMon.x} ${entityMon.y} ${entityMon.z} cosmog ${pokemon.getShiny() ? "shiny " : ""} ${raidMonStats.hasHiddenAbility ? "hiddenability " : ""} level=1`;
         }
         server.scheduleInTicks(0, () => {

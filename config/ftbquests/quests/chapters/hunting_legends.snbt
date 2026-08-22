@@ -722,6 +722,38 @@
 			x: -7.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["665057111E4EAA4D"]
+			description: [
+				"Racing through the clouds with &6Kyogre&r and &6Groudon&r may anger the great dragon lurking in the ozone layer. "
+				""
+				"You must rival its speed to be considered a threat..."
+			]
+			icon: {
+				Count: 1
+				id: "relics:elytra_booster"
+				tag: {
+					abilities: {
+						boost: {
+							points: 0
+							stats: {
+								capacity: 61.93525d
+								speed: 1.37094d
+							}
+						}
+					}
+				}
+			}
+			id: "144FBDD4669EA53B"
+			tasks: [{
+				id: "52C9FF6CBA454DDC"
+				title: "Understood...."
+				type: "checkmark"
+			}]
+			title: "The Dragon in the Ozone"
+			x: -11.0d
+			y: 0.0d
+		}
 	]
 	title: "Hunting Legends"
 }

@@ -115,6 +115,9 @@ global.summonRaidPokemon = (server, level, block, type, variant, raidLevel, spaw
       spawnedLevel: spawnedLevel,
       variant: variant
     }
+    if (type === "rayquaza") { 
+      spawnedPokemon.potionEffects.add("minecraft:fire_resistance", 1200, 1, false, false); 
+    }
     spawnedPokemon.potionEffects.add("minecraft:glowing", 1200, 0, false, false);
     spawnedPokemon.potionEffects.add("minecraft:slow_falling", 400, 0, false, false);
     server.runCommandSilent(`scale set 3 ${spawnedPokemon.getUuid().toString()}`)
@@ -141,7 +144,7 @@ global.getPartyCount = (player) => {
   if (party == undefined) return 0;
   let count = 0;
   // why not use .size? i blame kotlin
-    party.forEach(() => {
+  party.forEach(() => {
     count++;
   });
   return count;
