@@ -220,8 +220,8 @@ StartupEvents.registry("item", (e) => {
   e.create("sunlit_cobblemon:liquid_pale");
   e.create("sunlit_cobblemon:liquid_antimatter");
   e.create("sunlit_cobblemon:bifrost_stone");
-  e.create("sunlit_cobblemon:dark_stone");
-  e.create("sunlit_cobblemon:light_stone");
+  e.create("sunlit_cobblemon:dark_scale");
+  e.create("sunlit_cobblemon:light_scale");
   e.create("sunlit_cobblemon:meteor_fragment");
   e.create("sunlit_cobblemon:viral_battery");
   e.create("sunlit_cobblemon:pecha_shell");

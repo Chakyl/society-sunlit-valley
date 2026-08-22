@@ -6482,6 +6482,29 @@
 //             ],
 //         },
 //         {
+//             pokemon: "beautifly",
+//             forages: [
+//                 {
+//                     item: "society:butterfly_amber",
+//                     count: 1,
+//                     chance: 1,
+//                     min_hearts: 3
+//                 },
+//                 {
+//                     item: "society:butterfly_amber",
+//                     count: 2,
+//                     chance: 1,
+//                     min_hearts: 4
+//                 },
+//                 {
+//                     item: "society:butterfly_amber",
+//                     count: 3,
+//                     chance: 0.25,
+//                     min_hearts: 5
+//                 }
+//             ],
+//         },
+//         {
 //             pokemon: "vivillon",
 //             forages: [
 //                 {
@@ -6539,6 +6562,29 @@
 //                 {
 //                     item: "society:moth_pollen",
 //                     count: 4,
+//                     chance: 0.5,
+//                     min_hearts: 10
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "dustox",
+//             forages: [
+//                 {
+//                     item: "society:moth_pollen",
+//                     count: 2,
+//                     chance: 1,
+//                     min_hearts: 3
+//                 },
+//                 {
+//                     item: "society:moth_pollen",
+//                     count: 4,
+//                     chance: 1,
+//                     min_hearts: 6
+//                 },
+//                 {
+//                     item: "society:moth_pollen",
+//                     count: 7,
 //                     chance: 0.5,
 //                     min_hearts: 10
 //                 }
@@ -6779,6 +6825,29 @@
 //                     count: 1,
 //                     chance: 0.1,
 //                     min_hearts: 5
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "kyurem",
+//             forages: [
+//                 {
+//                     item: "sunlit_cobblemon:dark_scale",
+//                     count: 1,
+//                     chance: 0.04,
+//                     min_hearts: 10
+//                 },
+//                 {
+//                     item: "sunlit_cobblemon:light_scale",
+//                     count: 1,
+//                     chance: 0.04,
+//                     min_hearts: 10
+//                 },
+//                 {
+//                     item: `sunlit_cobblemon:mural_stone_7`,
+//                     count: 1,
+//                     chance: 0.01,
+//                     min_hearts: 10
 //                 }
 //             ],
 //         },
@@ -8727,7 +8796,7 @@
 //         { pokemon: ["latios"] },
 //         { pokemon: ["tornadus", "thundurus", "landorus"] },
 //         { pokemon: ["yveltal"] },
-//         { pokemon: ["kyurem"] },
+//         { pokemon: null },
 //         { pokemon: ["latias"] },
 //         { pokemon: ["lunala"] },
 //         { pokemon: ["moltres", "zapdos", "articuno"] },
