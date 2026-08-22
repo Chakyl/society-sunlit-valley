@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.1.0-SSV4.1.4
+### v1.1.1-SSV4.1.4
 ^^^
 --- 
 - Updated to Sunlit Valley's Cozy Cafe update
