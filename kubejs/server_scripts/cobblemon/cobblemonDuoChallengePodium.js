@@ -32,16 +32,14 @@ BlockEvents.rightClicked("sunlit_cobblemon:duo_challenge_podium", (e) => {
                 return;
             }
             let trainer;
-
-            trainer = `eon_soul_${challenges[rnd(0, challenges.length - 1)]}`
-            // if (triggerCount < 11) {
-            //     trainer = `team_eon_${challenges[triggerCount]}`
-            // } else if (triggerCount == 11) {
-            //     trainer = "team_eon_challengers"
-            //     player.tell(Text.translatable("sunlit_cobblemon.duo_challenge_podium.eon_challenger").gold());
-            // } else {
-            //     trainer = `eon_soul_${challenges[rnd(0, challenges.length - 1)]}`
-            // }
+            if (triggerCount < 11) {
+                trainer = `team_eon_${challenges[triggerCount]}`
+            } else if (triggerCount == 11) {
+                trainer = "team_eon_challengers"
+                player.tell(Text.translatable("sunlit_cobblemon.duo_challenge_podium.eon_challenger").gold());
+            } else {
+                trainer = `eon_soul_${challenges[rnd(0, challenges.length - 1)]}`
+            }
             level.getServer().runCommandSilent(`trainers makebattle ${player.username} ${trainer} ${player.username}`)
             nbt.merge({
                 data: {
