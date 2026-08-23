@@ -38,7 +38,7 @@ const getLeaderboardRanking = (server) => {
   server.players.forEach(player => players.add(String(player.uuid)));
   let playerList = server.persistentData.playerList;
   let cardsList = server.persistentData.cardsList;
-  let overflowList = server.persistentData.overflowList || [];
+  let overflowList = server.persistentData.overflowList ?? {};
   if (!playerList) return [];
   if (!cardsList) {
     server.persistentData.cardsList = {};
@@ -77,7 +77,7 @@ const updateLeaderboardRanking = (server) => {
   players = new Set();
   server.players.forEach(player => players.add(String(player.uuid)));
   let cardsList = server.persistentData.cardsList;
-  let overflowList = server.persistentData.overflowList || {};
+  let overflowList = server.persistentData.overflowList ?? {};
   let leaderboardMap = new Map();
   let iteratedPlayers = new Set();
   for (let accountUUID of global.visibleRankings) { // add top 10 & teams that were on it
