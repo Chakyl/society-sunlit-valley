@@ -116,6 +116,6 @@ const updateLeaderboardRanking = (server) => {
 if (global.lbServer) global.leaderboard = getLeaderboardRanking(global.lbServer);
 ServerEvents.loaded(e => { global.leaderboard = getLeaderboardRanking(e.server); global.lbServer = e.server; });
 ServerEvents.tick((e) => {
-  if (e.server.getTickCount() % 50) return;
+  if (e.server.getTickCount() % 600) return;
   global.leaderboard = updateLeaderboardRanking(e.server);
 });
