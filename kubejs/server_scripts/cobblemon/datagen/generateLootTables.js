@@ -67,57 +67,57 @@
 // // //     JsonIO.write(`kubejs/data/sunlit_cobblemon/loot_tables/trainer_podium_streak/${fileName}.json`, lootTable);
 // // //     previousTierName = fileName;
 // // // });
-// // let getDropRewards = (type) =>
-// //     [
-// //         { items: ['sunlit_cobblemon:sun_drops', 'cobblemon:relic_coin', 'cobblemon:exp_candy_s'], scale: 4 },
-// //         { items: [`sunlit_cobblemon:pristine_${type}_gem`], scale: 1 },
-// //         { items: ['sunlit_cobblemon:mystica_branch', 'cobblemon:rare_candy'], scale: 1 },
-// //         { items: [`simpletms:type_${type}_tm`], scale: 1 },
-// //     ]
+// let getDropRewards = (type) =>
+//     [
+//         { items: ['sunlit_cobblemon:sun_drops', 'cobblemon:relic_coin', 'cobblemon:exp_candy_s'], scale: 4 },
+//         { items: [`sunlit_cobblemon:pristine_${type}_gem`], scale: 1 },
+//         { items: ['sunlit_cobblemon:mystica_branch', 'cobblemon:rare_candy'], scale: 1 },
+//         { items: [`simpletms:type_${type}_tm`], scale: 1 },
+//     ]
 
-// // global.POKEMON_TYPES.forEach((type) => {
-// //     let pools = [];
-// //     let currentTierEntries = []
-// //     getDropRewards(type.type).map((drop, index) => {
-// //         return drop.items.map((itemId) => {
+// global.POKEMON_TYPES.forEach((type) => {
+//     let pools = [];
+//     let currentTierEntries = []
+//     getDropRewards(type.type).map((drop, index) => {
+//         return drop.items.map((itemId) => {
 
-// //             let entry = {
-// //                 type: itemId.includes("simpletms") ? "minecraft:tag" : "minecraft:item",
-// //                 weight: Math.floor(64 / ((index + 1) * 2))  / (index + 1),
-// //                 name: itemId
-// //             };
-// //             if (itemId.includes("simpletms")) {
-// //                 entry.expand = false;
-// //             }
+//             let entry = {
+//                 type: itemId.includes("simpletms") ? "minecraft:tag" : "minecraft:item",
+//                 weight: index == 1 ? 6 : (index >= 2 ? 2 : 4),
+//                 name: itemId
+//             };
+//             if (itemId.includes("simpletms")) {
+//                 entry.expand = false;
+//             }
 
-// //             if (drop.scale > 1) {
-// //                 entry.functions = [
-// //                     {
-// //                         function: "minecraft:set_count",
-// //                         count: {
-// //                             type: "minecraft:uniform",
-// //                             min: 1,
-// //                             max: drop.scale
-// //                         }
-// //                     }
-// //                 ];
-// //             }
-// //             currentTierEntries.push(entry);
-// //         })
-// //     });
+//             if (drop.scale > 1) {
+//                 entry.functions = [
+//                     {
+//                         function: "minecraft:set_count",
+//                         count: {
+//                             type: "minecraft:uniform",
+//                             min: 1,
+//                             max: drop.scale
+//                         }
+//                     }
+//                 ];
+//             }
+//             currentTierEntries.push(entry);
+//         })
+//     });
 
-// //     pools.push({
-// //         rolls: 1,
-// //         entries: currentTierEntries
-// //     });
+//     pools.push({
+//         rolls: 1,
+//         entries: currentTierEntries
+//     });
 
-// //     var lootTable = {
-// //         type: "minecraft:chest",
-// //         pools: pools
-// //     };
+//     var lootTable = {
+//         type: "minecraft:chest",
+//         pools: pools
+//     };
 
-// //     JsonIO.write(`kubejs/data/sunlit_cobblemon/loot_tables/badge_reward/${type.type}_type_gym.json`, lootTable);
-// // });
+//     JsonIO.write(`kubejs/data/sunlit_cobblemon/loot_tables/badge_reward/${type.type}_type_gym.json`, lootTable);
+// });
 
 
 // let getDropRewards = (type) =>
