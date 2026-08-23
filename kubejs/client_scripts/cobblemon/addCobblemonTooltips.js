@@ -324,7 +324,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add('sunlit_cobblemon:corrupted_clock', Text.translatable(`tooltip.sunlit_cobblemon.corrupted_clock.description`).gray());
   tooltip.add('sunlit_cobblemon:liquid_pale', Text.translatable(`tooltip.sunlit_cobblemon.liquid_pale.description`).gray());
   tooltip.add('sunlit_cobblemon:liquid_pale', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
-  tooltip.add('sunlit_cobblemon:liquid_antimatter', Text.translatable(`tooltip.sunlit_cobblemon.liquid_pale.description`).gray());
+  tooltip.add('sunlit_cobblemon:liquid_antimatter', Text.translatable(`tooltip.sunlit_cobblemon.liquid_antimatter.description`).gray());
   tooltip.add('sunlit_cobblemon:liquid_antimatter', Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.consumable`).red());
   tooltip.add('sunlit_cobblemon:ominous_black_stake', Text.translatable(`tooltip.sunlit_cobblemon.ominous_black_stake.description`).gray());
   tooltip.add('sunlit_cobblemon:gem_box', Text.translatable(`tooltip.sunlit_cobblemon.gem_box.description`).gray());

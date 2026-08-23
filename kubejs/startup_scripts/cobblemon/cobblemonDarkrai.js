@@ -13,16 +13,14 @@ global.handleDarkrai = (e) => {
     entity.tell(Text.translatable("sunlit_cobblemon.nightmare").darkRed());
     entity.potionEffects.clear()
     server.scheduleInTicks(120, () => {
-      if (entity.potionEffects.isActive("sunlit_cobblemon:nightmare")) {
-        server.runCommandSilent(`playsound species:entity.ghoul.angry block @a ${x} ${y} ${z} 3 0.3`);
-        let spawnedAny = global.summonRaidPokemon(server, level, block, "darkrai", "", 95, 75, false, false, 0);
-        if (spawnedAny) {
-          server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${x} ${y} ${z} 2`);
-          server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${x} ${y} ${z} 2`);
-          server.runCommandSilent(`playsound species:entity.ghoul.infect block @a ${x} ${y} ${z} 2`);
-          level.spawnParticles("species:ghoul_searching2", true, x + 0.5, y + 2, z + 0.5, 0, 0, 0, 1, 2);
-          entity.persistentData.skullCavernFainted = 0;
-        }
+      server.runCommandSilent(`playsound species:entity.ghoul.angry block @a ${x} ${y} ${z} 3 0.3`);
+      let spawnedAny = global.summonRaidPokemon(server, level, block, "darkrai", "", 95, 75, false, false, 0);
+      if (spawnedAny) {
+        server.runCommandSilent(`playsound cobblemon:poke_ball.send_out block @a ${x} ${y} ${z} 2`);
+        server.runCommandSilent(`playsound species:effect.gut_feeling.applied block @a ${x} ${y} ${z} 2`);
+        server.runCommandSilent(`playsound species:entity.ghoul.infect block @a ${x} ${y} ${z} 2`);
+        level.spawnParticles("species:ghoul_searching2", true, x + 0.5, y + 2, z + 0.5, 0, 0, 0, 1, 2);
+        entity.persistentData.skullCavernFainted = 0;
       }
     })
     e.cancel();

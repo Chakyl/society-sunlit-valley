@@ -134,7 +134,7 @@ StartupEvents.registry("block", (event) => {
           recipe.output.forEach((item) => {
             let pristinePath = String(Item.of(item).id).split(":")[1];
             if (pristinePath) {
-              block.popItemFromFace(`society:pristine_${pristinePath}`, block.properties.get("facing").toLowerCase());
+              block.popItemFromFace(`${recipeId.includes("cobblemon") ? "sunlit_cobblemon": "society"}:pristine_${pristinePath}`, block.properties.get("facing").toLowerCase());
             }
           })
         }

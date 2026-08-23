@@ -27,6 +27,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("cobblemon:quick_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
   e.shapeless("cobblemon:razor_claw", ["society:aquamagical_dust", "cobblemon:quick_claw"]);
   e.shapeless("cobblemon:grip_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
+  e.shapeless("sunlit_cobblemon:pale_chalice", ["sunlit_cobblemon:liquid_pale", "supplementaries:goblet"]);
   e.custom({
     type: "farmersdelight:cooking",
     cookingtime: 200,

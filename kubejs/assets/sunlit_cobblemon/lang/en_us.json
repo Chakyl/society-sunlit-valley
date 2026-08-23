@@ -13,10 +13,6 @@
   "sunlit_cobblemon.legendary_genie": "You sense a shift in the atmosphere...",
   "sunlit_cobblemon.rayquaza": "Rayquaza is angered by your presence!",
   "sunlit_cobblemon.mystery_gift": "You found %s in your Mystery Gift!",
-  "sunlit_cobblemon.dark_scale.description": "Use it with Controlled Lightning in a Rod!",
-  "sunlit_cobblemon.light_scale.description": "Use it with Fire in a Brazier!",
-  "sunlit_cobblemon.bifrost_stone.description": "May cause destruction nearby when fed to an ancient Mammoth!",
-
   "sunlit_cobblemon.win_reward": "● §6%s§7 rewarded by the League",
   "sunlit_cobblemon.silph_scope.face": "You already have something on your face...",
   "sunlit_cobblemon.silph_scope.surprise_toggled": "Surprise Pokémon Enabled: %s",
@@ -81,6 +77,10 @@
   "tooltip.always.sunlit_cobblemon.viral_battery.1": "Evolves Deoxys into Speed form",
   "tooltip.sunlit_cobblemon.viral_battery.0": "Bonus Speed: <ltcolor>c=55FF55;+1.8x</ltcolor>",
   "tooltip.sunlit_cobblemon.viral_battery.1": "Consume Chance: <ltcolor>c=EE1515;5%%</ltcolor>",
+  "tooltip.sunlit_cobblemon.dark_scale.description": "Use it with Controlled Lightning in a Rod!",
+  "tooltip.sunlit_cobblemon.light_scale.description": "Use it with Fire in a Brazier!",
+  "tooltip.sunlit_cobblemon.bifrost_stone.description": "May cause destruction nearby when fed to an ancient Mammoth!",
+
 
   "sunlit_cobblemon.trainer_podium.label": "§a%s's§r§7 Trainer Podium",
   "sunlit_cobblemon.trainer_podium.label.elite": "§a%s's§r§4 Elite§7 Trainer Podium",
@@ -104,7 +104,7 @@
 
   "sunlit_cobblemon.raid_statue.summary": "Tier: %s | Pokémon: %s | Raid Level %s | Level: %s | Shiny Chance: %s | Hidden Ability Chance: %s",
 
-  "sunlit_cobblemon.trainer_podium.wins": "Your Gym wins are now %s",
+  "sunlit_cobblemon.trainer_podium.win_increased": "Your Gym wins are now %s",
 
   "curios.identifier.gym_badge": "Gym Badge",
 
@@ -165,7 +165,7 @@
   "tooltip.sunlit_cobblemon.gem_box.description": "There's a menacing aura emanating from it...\nIt seems to have slots for gems on each side",
   "tooltip.sunlit_cobblemon.corrupted_clock.description": "A distortion of time itself. Hold onto it just before morning hits the Skull Cavern...",
   "tooltip.sunlit_cobblemon.liquid_pale.description": "A drink from Selene fit for a Chalice",
-  "tooltip.sunlit_cobblemon.liquid_antimatter.description": "A drink from Selene...?",
+  "tooltip.sunlit_cobblemon.liquid_antimatter.description": "A drink from Selene distorted by your time and space...",
   "tooltip.sunlit_cobblemon.tabula_rasa.description": "There's an engraving of a box with a 7 in it on the back...",
   "tooltip.sunlit_cobblemon.mystica_nectar.description": "Has been said to attract powerful legendary birds when worn in the charm slot",
   "tooltip.sunlit_cobblemon.rainbow_steam.description": "Has been said to attract powerful forces of nature when worn in the charm slot",
