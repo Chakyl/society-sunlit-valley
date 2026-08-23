@@ -2,6 +2,7 @@
 ## Cozy Cafe
 ### v4.1.5
 ^^^
+- Fixed coin leaderboard edge-cases
 --- 
 
 TODO 
