@@ -2,7 +2,7 @@ console.info("[SOCIETY] cobblemonCharmBait.js loaded");
 
 PlayerEvents.tick((e) => {
     const { player, server, level } = e;
-    if (player.age % 200 == 0) {
+    if (player.age % 100 == 0) {
         if (player.getOnPos().y < 150) return;
         let delta = player.getDeltaMovement()
         let speed = Math.sqrt((delta.x() * delta.x()) + (delta.y() * delta.y()) + (delta.z() * delta.z()));

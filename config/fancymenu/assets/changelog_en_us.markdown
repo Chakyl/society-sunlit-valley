@@ -55,6 +55,28 @@
 - Fixed interacting with mobs with an item voiding them
 - Fixed trainer reward giving removed capsule
 
+# 1.1.2
+- Added doubles VGC formats sun, moon, and stars to /showdown challenge
+- Added renewable recipe for Pale Chalice
+- Added better hinting for liquid antimatter
+- Increased chance of Pristine type gems dropping from trainer badges
+- Increased chance of the Clear/Tidal Bell ringing (2.5% -> 5%)
+- Increased Primsatic Shard fortune telling consume chance 15% -> 50%
+- Reduced cost of Blossom Ball: Replaced Blooming Ring/Cornucopia Greed with Mew-N-DNA
+- Fixed trainer podium wins not progressing
+- Fixed charging rod/brazier interactions
+- Fixed some unnecessary logging
+- Fixed issues with nightmare effect not working
+- Fixed creation trio not having same non-raid level
+- Fixed tooltips of the Tao trilogy items
+- Fixed Liquid Pale/Antimatter not dropping
+- Fixed softlock with duo challenge podium
+- Fixed pokedex and related crashes
+- Fixed backpack item render
+- Fixed various issues with the Cobblemon Farmers GUIs
+- Fixed Crystalarium not producing pristine Sunlit Cobblemon items
+- Fixed Duo Challenge Podium starting off with the hard trainers
+
 ## Sunlit Valley 4.1.0 - Cozy Cafe
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)

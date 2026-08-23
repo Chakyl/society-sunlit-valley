@@ -51,7 +51,7 @@ global.handleAdditionalArtisanMachineOutputs = (
           recipe.output.forEach((item) => {
             const pristinePath = String(Item.of(item).id).split(":")[1];
             if (pristinePath) {
-              global.insertBelow(level, block, `society:pristine_${pristinePath}`);
+              global.insertBelow(level, block, `${recipeId.includes("cobblemon") ? "sunlit_cobblemon": "society"}:pristine_${pristinePath}`);
             }
           });
         }

@@ -87,7 +87,7 @@
 //                 name: itemId
 //             };
 //             if (itemId.includes("simpletms")) {
-//                 entry.expand = false;
+//                 entry.expand = true;
 //             }
 
 //             if (drop.scale > 1) {
