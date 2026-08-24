@@ -85,7 +85,6 @@ BlockEvents.rightClicked(["minecraft:reinforced_deepslate", "sunlit_cobblemon:ti
     let isBottomLayer = level.getBlock(x, y + 7, z) === block.id && level.getBlock(x, y + 3, z) !== block.id;
 
     if (!isBottomLayer) {
-        player.tell();
         player.tell(Text.translatable("block.sunlit_cobblemon.time_frame.bottom").red());
         return;
     }
