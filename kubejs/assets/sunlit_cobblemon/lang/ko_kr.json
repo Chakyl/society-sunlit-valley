@@ -13,10 +13,6 @@
   "sunlit_cobblemon.legendary_genie": "대기가 흔들리는 것이 느껴진다...",
   "sunlit_cobblemon.rayquaza": "레쿠쟈가 당신의 존재를 눈치채고 분노했습니다!",
   "sunlit_cobblemon.mystery_gift": "이상한소포에 %s이(가) 들어있었다!",
-  "tooltip.sunlit_cobblemon.dark_scale.description": "번개가 담긴 막대에 사용하세요!",
-  "tooltip.sunlit_cobblemon.light_scale.description": "붉게 타오르는 장식용 화로에 사용하세요!",
-  "tooltip.sunlit_cobblemon.bifrost_stone.description": "고대 맘모스에게 먹이면 주변 지형이 파괴될 수 있습니다!",
-
   "sunlit_cobblemon.win_reward": "§7리그에서 상금 §f ● §6%s§7 수령함",
   "sunlit_cobblemon.silph_scope.face": "이미 얼굴에 무언가를 쓰고 있습니다...",
   "sunlit_cobblemon.silph_scope.surprise_toggled": "포켓몬 깜짝 등장 활성화: %s",
@@ -50,6 +46,7 @@
   "sunlit_cobblemon.regi.no_space": "순서는 맞은 것 같지만, 주변 공간이 너무 좁습니다...",
   "sunlit_cobblemon.nightmare": "잠이 오지 않습니다. 무언가가 당신을 주시하는 것 같습니다...",
   "sunlit_cobblemon.legendary_bell.too_low": "종의 위치가 너무 낮아서 제대로 울리지 않을 것 같습니다...",
+  "sunlit_cobblemon.gracidea.not_meadow": "목초지 밖에서는 아무 일도 일어나지 않을 것 같습니다...",
   
   "sunlit_cobblemon.biodome_altar.success": "무언가 다가오고 있습니다...",
   "sunlit_cobblemon.biodome_altar.red.building": "주변에 건물이 더 있어야 할 것 같습니다...",
@@ -81,7 +78,11 @@
   "tooltip.always.sunlit_cobblemon.viral_battery.1": "§f테오키스§7를 스피드폼으로 변환시킨다.",
   "tooltip.sunlit_cobblemon.viral_battery.0": "가속: <ltcolor>c=55FF55;+1.8배</ltcolor>",
   "tooltip.sunlit_cobblemon.viral_battery.1": "소모 확률: <ltcolor>c=EE1515;5%%</ltcolor>",
+  "tooltip.sunlit_cobblemon.dark_scale.description": "번개가 담긴 막대에 사용하세요!",
+  "tooltip.sunlit_cobblemon.light_scale.description": "붉게 타오르는 장식용 화로에 사용하세요!",
+  "tooltip.sunlit_cobblemon.bifrost_stone.description": "고대 맘모스에게 먹이면 주변 지형이 파괴될 수 있습니다!",
   
+
   "sunlit_cobblemon.trainer_podium.label": "§a%s§r§7의 트레이너 단상",
   "sunlit_cobblemon.trainer_podium.label.elite": "§a%s의§r§4 엘리트§7 트레이너 단상",
   "sunlit_cobblemon.trainer_podium.wins": "§7체육관 트레이너 승리 횟수:§r §6%s",
@@ -104,7 +105,7 @@
   
   "sunlit_cobblemon.raid_statue.summary": "%s티어 | 포켓몬: %s | 레이드 레벨 %s | 레벨: %s | 색이 다른 포켓몬 등장률: %s | 숨겨진 특성 등장률: %s",
 
-  "sunlit_cobblemon.trainer_podium.win_streak": "현재까지 %s승",
+  "sunlit_cobblemon.trainer_podium.win_increased": "현재까지 %s승",
 
   "curios.identifier.gym_badge": "체육관 뱃지",
 
@@ -121,6 +122,7 @@
   "block.sunlit_cobblemon.poke_loot_ball": "몬스터 전리품 볼",
   "tooltip.unimplemented_items.repel.description": "실프스코프 장착 여부에 관계 없이 주변에 포켓몬의 생성을 억제합니다",
   "block.sunlit_cobblemon.time_frame.description": "부스트에너지를 사용하여 과거와 미래의 존재를 불러낼 수 있습니다. 고대 도시의 포탈처럼 설치하세요.",
+  "block.sunlit_cobblemon.time_frame.bottom": "포탈의 하단 중앙에 써 봐야겠습니다...",
 
   "tooltip.sunlit_cobblemon.silph_scope.description": "주변에 포켓몬을 출현시킵니다",
   "tooltip.sunlit_cobblemon.silph_scope.equip": "오른쪽 클릭하여 장착하세요!",
@@ -164,7 +166,7 @@
   "tooltip.sunlit_cobblemon.gem_box.description": "위협적인 기운이 뿜어져 나오고 있다...\n각 면에 보석을 끼울 수 있을 것 같다.",
   "tooltip.sunlit_cobblemon.corrupted_clock.description": "시간의 왜곡 그 자체입니다. 해골 광산에서 해가 떠오를 때 손에 들어보세요...",
   "tooltip.sunlit_cobblemon.liquid_pale.description": "셀레네가 내려준 성배에 따를 수 있는 액체",
-  "tooltip.sunlit_cobblemon.liquid_antimatter.description": "셀레네...?",
+  "tooltip.sunlit_cobblemon.liquid_antimatter.description": "당신의 시공에 의해 왜곡된 셀레네가 남긴 액체",
   "tooltip.sunlit_cobblemon.tabula_rasa.description": "상자 뒷면에 7이 새겨져 있다...",
   "tooltip.sunlit_cobblemon.mystica_nectar.description": "부적 슬롯에 장착해두면 강력한 전설의 새가 이끌린다는 소문이 있다.",
   "tooltip.sunlit_cobblemon.rainbow_steam.description": "부적 슬롯에 장착해두면 강력한 자연의 힘이 이끌린다는 소문이 있다.",
