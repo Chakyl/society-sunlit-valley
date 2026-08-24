@@ -630,6 +630,27 @@ global.getWinsRewards = (player, pos, wins) => {
   }
 };
 
+global.getEonRewards = (player, pos, name) => {
+  let reward;
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_reward/${name.includes("soul") ? "eon_soul" : "team_eon"}`).toArray();
+  rolledLoot.forEach((item) => {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = item;
+    reward.spawn();
+  });
+  if (name.includes("challengers")) {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = "cobblemon:soul_dew";
+    reward.spawn();
+  }
+};
+
 global.getGymBadgeType = (player) => {
   let badge = player.findCurio("gym_badge", 0).map((slot) => Item.of(slot.stack()).id).orElse("none");
   if (badge == "none") return "none"
