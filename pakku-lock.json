@@ -1722,6 +1722,43 @@
             ]
         },
         {
+            "pakku_id": "u7l3b8GjuLU8PL2p",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ctm"
+            },
+            "name": {
+                "curseforge": "ConnectedTexturesMod"
+            },
+            "id": {
+                "curseforge": "267602"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CTM-1.21-1.2.1+3.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5587/515/CTM-1.21-1.2.1+3.jar",
+                    "id": "5587515",
+                    "parent_id": "267602",
+                    "hashes": {
+                        "sha1": "284232c08d3b999f05417761a3efba9b08ba20a7",
+                        "md5": "7f5650a579a6aa725a75e20512cc2bd1"
+                    },
+                    "required_dependencies": [],
+                    "size": 240791,
+                    "date_published": "2024-08-01T17:39:38.093Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "s91dUchF2OMxlqe7",
             "type": "MOD",
             "slug": {
@@ -1757,6 +1794,42 @@
                     ],
                     "size": 114165,
                     "date_published": "2025-12-22T22:30:30.770Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "k3QcYuCiOWfNtnjI",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "construction-wand-kots"
+            },
+            "name": {
+                "curseforge": "Construction Wand - KOTS"
+            },
+            "id": {
+                "curseforge": "1382688"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "constructionwand-kots-1.21.1-2.16.11.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8463/483/constructionwand-kots-1.21.1-2.16.11.jar",
+                    "id": "8463483",
+                    "parent_id": "1382688",
+                    "hashes": {
+                        "sha1": "d4b73c402803a855a7935ed3c036d243cd0e558b",
+                        "md5": "d115fc05bda86dd9adb2a17f9b5188d4"
+                    },
+                    "required_dependencies": [],
+                    "size": 202292,
+                    "date_published": "2026-07-19T08:50:38.447Z"
                 }
             ]
         },
@@ -2151,6 +2224,44 @@
             ]
         },
         {
+            "pakku_id": "o1zyrc9YeNSdCDXR",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-mobile-packages"
+            },
+            "name": {
+                "curseforge": "Create: Mobile Packages"
+            },
+            "id": {
+                "curseforge": "1232978"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_mobile_packages-1.21.1-0.7.6.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8059/964/create_mobile_packages-1.21.1-0.7.6.jar",
+                    "id": "8059964",
+                    "parent_id": "1232978",
+                    "hashes": {
+                        "sha1": "69f0fa17e88b0b9f6a372df478811c71c9b3ef2f",
+                        "md5": "5237e697103df942c3ebf55ff3c069f5"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 546326,
+                    "date_published": "2026-05-08T21:37:21.720Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "1CHE8DP6vAwy55iF",
             "pakku_links": [
                 "hRx7czGxMvYRNB0J"
@@ -2387,50 +2498,6 @@
                     ],
                     "size": 1398478,
                     "date_published": "2025-10-25T09:48:52.237Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "GhNqUqQEQy73h4JI",
-            "pakku_links": [
-                "13NN6LKuWJWCBKPZ"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "crystal-chronicles"
-            },
-            "name": {
-                "curseforge": "Crystal Chronicles - Iron's Spells 'n Spellbooks"
-            },
-            "id": {
-                "curseforge": "1153374"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "crystal_chronicles-0.1.3-alpha.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8346/590/crystal_chronicles-0.1.3-alpha.jar",
-                    "id": "8346590",
-                    "parent_id": "1153374",
-                    "hashes": {
-                        "sha1": "afdc32ab27661cd52160280dc4273d70a2d4a3d2",
-                        "md5": "2c5e0fba26b916a5b6d78d23a78607a6"
-                    },
-                    "required_dependencies": [
-                        "854949",
-                        "817423",
-                        "852512",
-                        "855414"
-                    ],
-                    "size": 2192223,
-                    "date_published": "2026-06-30T14:54:35.753Z"
                 }
             ]
         },
@@ -4160,6 +4227,45 @@
             ]
         },
         {
+            "pakku_id": "ksIaeAWwPKoplhsV",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "featurify"
+            },
+            "name": {
+                "curseforge": "Featurify - WorldGen Control"
+            },
+            "id": {
+                "curseforge": "1569688"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "featurify-neoforge-2.0.6+mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8697/614/featurify-neoforge-2.0.6+mc1.21.1.jar",
+                    "id": "8697614",
+                    "parent_id": "1569688",
+                    "hashes": {
+                        "sha1": "c0bea9ad8a62ede749371bc4d2c8ce808a52c108",
+                        "md5": "d5beb8f4a10d0f2593bd1d33ed6c1465"
+                    },
+                    "required_dependencies": [
+                        "667299"
+                    ],
+                    "size": 275890,
+                    "date_published": "2026-08-21T08:10:06.137Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "llf6mAl6KVQ75G18",
             "type": "MOD",
             "slug": {
@@ -5047,6 +5153,81 @@
             ]
         },
         {
+            "pakku_id": "fSpvtn3f1Nj6DMD5",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "industrial-hellscape"
+            },
+            "name": {
+                "curseforge": "Industrial Hellscape"
+            },
+            "id": {
+                "curseforge": "1302110"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "industrialhellscape-1.1.7.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/8693/811/industrialhellscape-1.1.7.jar",
+                    "id": "8693811",
+                    "parent_id": "1302110",
+                    "hashes": {
+                        "sha1": "f90cf07f3637cf047f04d887f119a95668fd089a",
+                        "md5": "7e5d8f4be349ae158a9c68137ec14702"
+                    },
+                    "required_dependencies": [
+                        "267602"
+                    ],
+                    "size": 3825885,
+                    "date_published": "2026-08-20T19:27:37.463Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "jJNJBa9N3OY5jgc8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "industrially-plated"
+            },
+            "name": {
+                "curseforge": "Industrially Plated"
+            },
+            "id": {
+                "curseforge": "1427452"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "industrially_plated-1.1.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8512/941/industrially_plated-1.1.0.jar",
+                    "id": "8512941",
+                    "parent_id": "1427452",
+                    "hashes": {
+                        "sha1": "623eb3661ece0ce94579f1113842eb2229d2e3e5",
+                        "md5": "24693204b1e0826a0304f7a3d114d28e"
+                    },
+                    "required_dependencies": [],
+                    "size": 1076128,
+                    "date_published": "2026-07-26T12:50:41.730Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ZE0nyQbAOBOV1449",
             "pakku_links": [
                 "jtV6pfpiXhqDVrfZ"
@@ -5165,50 +5346,6 @@
                     ],
                     "size": 406284,
                     "date_published": "2026-07-03T18:27:32.060Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "13NN6LKuWJWCBKPZ",
-            "pakku_links": [
-                "ZhYPb7GQ2JLBl7Mj"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "irons-spells-n-spellbooks"
-            },
-            "name": {
-                "curseforge": "Iron's Spells 'n Spellbooks"
-            },
-            "id": {
-                "curseforge": "855414"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "irons_spellbooks-1.21.1-3.16.2.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8364/935/irons_spellbooks-1.21.1-3.16.2.jar",
-                    "id": "8364935",
-                    "parent_id": "855414",
-                    "hashes": {
-                        "sha1": "09907e3b4bfdabd7f1f44bfd25aa6432183f39bb",
-                        "md5": "1982cbf9474f89a4d0f08c9aeba73607"
-                    },
-                    "required_dependencies": [
-                        "1492763",
-                        "658587",
-                        "388172",
-                        "309927"
-                    ],
-                    "size": 13874139,
-                    "date_published": "2026-07-03T18:32:20.937Z"
                 }
             ]
         },
@@ -5589,6 +5726,43 @@
                     ],
                     "size": 55937,
                     "date_published": "2026-05-04T06:22:50.217Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NOmX7m9woDR6jbIi",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "libtooltips"
+            },
+            "name": {
+                "curseforge": "LibTooltips"
+            },
+            "id": {
+                "curseforge": "1370245"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "libtooltips-2.3.1-NEOFORGE-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8369/25/libtooltips-2.3.1-NEOFORGE-1.21.1.jar",
+                    "id": "8369025",
+                    "parent_id": "1370245",
+                    "hashes": {
+                        "sha1": "b02a33bad4466237bb974aa3bb7d7687afe3ddbf",
+                        "md5": "8b03a16b54121e6af729abf8d23d846a"
+                    },
+                    "required_dependencies": [],
+                    "size": 18126,
+                    "date_published": "2026-07-04T13:20:14.143Z"
                 }
             ]
         },
