@@ -3,8 +3,14 @@
 ### v4.1.5
 ^^^
 --- 
+- Added truncation to Coin Leaderboard entries over 1 million
+- Added 3D food items renders to Cozy Cafe
+- Added slim skin model to Cozy Cafe
+- Fixed dessert only menus having dirty plates
+- Fixed case where Coin Leaderboard stopped rendering
+- Fixed some left in logging
+- Fixed infamous Crossbow issue
 
-TODO 
 ## 4.0.0
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
 - Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
