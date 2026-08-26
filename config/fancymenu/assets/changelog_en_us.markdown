@@ -3,6 +3,12 @@
 ### v1.1.3-SSV4.1.4
 ^^^
 --- 
+- Fixed various lang strings being broken
+- Fixed trainer podium wins not progressing for real this time
+- Fixed Duo Challenge Podium bugs 
+- Fixed double battle softlocks (Thanks Newbula!)
+
+## Sunlit Cobblemon 1.1.0 
 - Updated to Sunlit Valley's Cozy Cafe update
 - Added unique obtaining mechanics for the following legendary pokemon: Kyogre, Groudon, Rayquaza, Lugia, Ho-Oh, Dialga, Palkia, Giratina, Latias, Latios, Reshiram, Zekrom, Kyurem, Kubfu, Urshifu, Darkrai, Pecharunt, Shaymin, Shaymin Sky, Mew, Mewtwo, Deoxys.
 - Added item/blocks associated for the above, too many to list

@@ -375,6 +375,7 @@ ServerEvents.tags("block", (e) => {
     "minecraft:torch",
     "minecraft:soul_torch",
     "minecraft:campfire",
+    "minecraft:fire",
     "minecraft:soul_campfire",
     "cobblemon:fire_stone_ore",
     "cobblemon:fire_stone_block"

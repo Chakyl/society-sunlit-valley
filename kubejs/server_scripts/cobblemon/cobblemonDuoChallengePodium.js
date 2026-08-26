@@ -3,12 +3,12 @@ console.info("[SOCIETY-S-COBBLEMON] cobblemonDuoChallengePodium.js loaded");
 const $BattleRegistry = Java.loadClass("com.cobblemon.mod.common.battles.BattleRegistry");
 
 let challenges = [
-    "bear",
+    "sing",
     "boom",
     "dust",
     "hospitality",
     "rain",
-    "sing",
+    "bear",
     "soar",
     "spook",
     "surge",
