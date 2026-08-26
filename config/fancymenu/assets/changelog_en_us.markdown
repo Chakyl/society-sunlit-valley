@@ -4,6 +4,7 @@
 ^^^
 --- 
 - Legendary Bells and Bear Scroll will now store if they've spawned a legendary in the block, only spawning it if the player is close to prevent the need for babysitting
+- Updated ko_kr translation (Thanks Hexagreen!)
 - Fixed various lang strings being broken
 - Fixed fire and lava not counting for Groudon's hot blocks
 - Fixed water blocking Kyogre spawn ironically
