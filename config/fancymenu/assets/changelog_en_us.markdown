@@ -3,7 +3,10 @@
 ### v1.1.3-SSV4.1.4
 ^^^
 --- 
+- Legendary Bells and Bear Scroll will now store if they've spawned a legendary in the block, only spawning it if the player is close to prevent the need for babysitting
 - Fixed various lang strings being broken
+- Fixed fire and lava not counting for Groudon's hot blocks
+- Fixed water blocking Kyogre spawn ironically
 - Fixed trainer podium wins not progressing for real this time
 - Fixed Duo Challenge Podium bugs 
 - Fixed double battle softlocks (Thanks Newbula!)
