@@ -85,10 +85,9 @@ BlockEvents.rightClicked(["minecraft:reinforced_deepslate", "sunlit_cobblemon:ti
     let isBottomLayer = level.getBlock(x, y + 7, z) === block.id && level.getBlock(x, y + 3, z) !== block.id;
 
     if (!isBottomLayer) {
-        player.tell("This will only work at the bottom center of the frame...");
+        player.tell(Text.translatable("block.sunlit_cobblemon.time_frame.bottom").red());
         return;
     }
-    player.tell("running")
     global.addItemCooldown(player, item, 120);
     server.runCommandSilent(`playsound tanukidecor:block.grandfather_clock.chime block @a ${x} ${y} ${z} 2 1`);
     let chosenPool = Math.random() < 0.5 ? pastParadoxPool : futureParadoxPool;

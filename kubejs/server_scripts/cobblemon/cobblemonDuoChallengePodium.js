@@ -3,12 +3,12 @@ console.info("[SOCIETY-S-COBBLEMON] cobblemonDuoChallengePodium.js loaded");
 const $BattleRegistry = Java.loadClass("com.cobblemon.mod.common.battles.BattleRegistry");
 
 let challenges = [
-    "bear",
+    "sing",
     "boom",
     "dust",
     "hospitality",
     "rain",
-    "sing",
+    "bear",
     "soar",
     "spook",
     "surge",
@@ -35,7 +35,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:duo_challenge_podium", (e) => {
             if (triggerCount < 11) {
                 trainer = `team_eon_${challenges[triggerCount]}`
             } else if (triggerCount == 11) {
-                trainer = "team_eon_challengers"
+                trainer = randomMode ? "eon_soul_challengers" : "team_eon_challengers"
                 player.tell(Text.translatable("sunlit_cobblemon.duo_challenge_podium.eon_challenger").gold());
             } else {
                 trainer = `eon_soul_${challenges[rnd(0, challenges.length - 1)]}`
@@ -53,7 +53,6 @@ BlockEvents.rightClicked("sunlit_cobblemon:duo_challenge_podium", (e) => {
                     }
                 });
                 if (!randomMode) {
-
                     nbt.merge({
                         data: {
                             randomMode: true
@@ -63,7 +62,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:duo_challenge_podium", (e) => {
             } else {
                 nbt.merge({
                     data: {
-                        triggerCount: triggerCount++
+                        triggerCount: triggerCount + 1
                     }
                 });
             }

@@ -2364,7 +2364,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cobblemon_showdown-2.0.3A.jar",
+                    "file_name": "cobblemon_showdown-2.0.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2372,18 +2372,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8710/368/cobblemon_showdown-2.0.3A.jar",
-                    "id": "8710368",
+                    "url": "https://edge.forgecdn.net/files/8731/779/cobblemon_showdown-2.0.4.jar",
+                    "id": "8731779",
                     "parent_id": "1469729",
                     "hashes": {
-                        "sha1": "bd714521e47b6000813963aa2f106189f0ed8409",
-                        "md5": "81f264bc7f885c29e487bcf72ba2e82e"
+                        "sha1": "0ef2c05b8b9d641d9d04dbb6ca7865b7650f7828",
+                        "md5": "50d12e67b5e2e74acfaf803f7eea99cb"
                     },
                     "required_dependencies": [
                         "687131"
                     ],
-                    "size": 444544,
-                    "date_published": "2026-08-22T23:14:41.407Z"
+                    "size": 449477,
+                    "date_published": "2026-08-25T14:20:58.957Z"
                 }
             ]
         },
@@ -2442,7 +2442,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CobblemonTrainersEX-1.2.1A+1.5.2-forge.jar",
+                    "file_name": "CobblemonTrainersEX-1.2.2+1.5.2-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2450,19 +2450,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8705/220/CobblemonTrainersEX-1.2.1A+1.5.2-forge.jar",
-                    "id": "8705220",
+                    "url": "https://edge.forgecdn.net/files/8731/818/CobblemonTrainersEX-1.2.2+1.5.2-forge.jar",
+                    "id": "8731818",
                     "parent_id": "1641513",
                     "hashes": {
-                        "sha1": "c7052bc495be27c5c756cb1f920f165a90f149bf",
-                        "md5": "a62226f3eb21a5c57e361f8576659fa0"
+                        "sha1": "797045705596aa75218d361a613bb15096feb2fb",
+                        "md5": "3875085cf5ae3a1360f1baac4dad1bc3"
                     },
                     "required_dependencies": [
-                        "419699",
-                        "687131"
+                        "687131",
+                        "419699"
                     ],
-                    "size": 305922,
-                    "date_published": "2026-08-22T07:23:27.390Z"
+                    "size": 306263,
+                    "date_published": "2026-08-25T14:28:54.893Z"
                 }
             ]
         },
@@ -13118,7 +13118,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Sunlit_Cobblebackported-forge-1.5.2-1.2_1.20.1.jar",
+                    "file_name": "Sunlit_Cobblebackported-forge-1.5.2-1.3_1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13126,16 +13126,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8714/801/Sunlit_Cobblebackported-forge-1.5.2-1.2_1.20.1.jar",
-                    "id": "8714801",
+                    "url": "https://edge.forgecdn.net/files/8735/352/Sunlit_Cobblebackported-forge-1.5.2-1.3_1.20.1.jar",
+                    "id": "8735352",
                     "parent_id": "1655778",
                     "hashes": {
-                        "sha1": "02524256aef91be266751d2caae09fdc021af44e",
-                        "md5": "d5e89137f444901e99a75e96ed6db4c6"
+                        "sha1": "10971287d7bb4a71914a9753d49c2607c78b5f2a",
+                        "md5": "29e20a872014651811750a18425324a7"
                     },
-                    "required_dependencies": [],
-                    "size": 105634009,
-                    "date_published": "2026-08-23T13:18:29.717Z"
+                    "required_dependencies": [
+                        "351264"
+                    ],
+                    "size": 105639724,
+                    "date_published": "2026-08-25T23:40:38.587Z"
                 }
             ]
         },

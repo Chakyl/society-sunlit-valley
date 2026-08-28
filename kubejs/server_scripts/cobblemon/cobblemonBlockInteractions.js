@@ -274,8 +274,19 @@ BlockEvents.rightClicked("sunlit_cobblemon:sun_raid_statue", (e) => {
       });
       if (!player.isCreative()) item.count--;
       player.swing()
-      server.runCommandSilent( `playsound minecraft:block.respawn_anchor.charge block @a ${player.x} ${player.y} ${player.z}`)
+      server.runCommandSilent(`playsound minecraft:block.respawn_anchor.charge block @a ${player.x} ${player.y} ${player.z}`)
       global.setBlockEntityData(block, nbt);
+    };
+  }
+});
+
+BlockEvents.rightClicked("cobblemon:restoration_tank", (e) => {
+  const { item, player, hand } = e;
+  if (hand == "OFF_HAND") return;
+  if (hand == "MAIN_HAND") {
+    if (item.id === "cobblemon:blossom_ball" && player.getHeldItem("OFF_HAND").id !== "cobblemon:revival_herb") {
+      player.tell(Text.translatable("sunlit_cobblemon.blossom_ball.fossil").red())
+      e.cancel()
     };
   }
 });

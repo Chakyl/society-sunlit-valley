@@ -22,7 +22,7 @@ const getLeaderboardRanking = (server) => {
     let cardID = cardsList[accountUUID];
     let bankBalance = bankAccount.getBalance();
 
-    if (!playerList[playerUUID]) { // blaze banker, ignore
+    if (!playerList[playerUUID]) {
       return;
     } else if (cardID != null && cardID != playerUUID) {
       bankAccount = global.GLOBAL_BANK.getAccount(cardID);

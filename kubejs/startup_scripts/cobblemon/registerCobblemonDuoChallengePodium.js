@@ -11,6 +11,7 @@ StartupEvents.registry("block", (event) => {
         .defaultCutout()
         .item((item) => {
             item.tooltip(Text.translatable("block.sunlit_cobblemon.duo_challenge_podium.description").gray());
+            item.tooltip(Text.translatable("block.sunlit_cobblemon.duo_challenge_podium.warning").red());
             item.modelJson({
                 parent: "sunlit_cobblemon:block/kubejs/duo_challenge_podium",
             });
