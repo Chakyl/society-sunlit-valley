@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### v1.1.3-SSV4.1.4
+### vsunlit-cobblemon-1.1.4-SSV4.1.5
 ^^^
 --- 
 - Legendary Bells and Bear Scroll will now store if they've spawned a legendary in the block, only spawning it if the player is close to prevent the need for babysitting
