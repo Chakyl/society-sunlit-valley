@@ -3099,27 +3099,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
+                    "file_name": "CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6264/591/CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
-                    "id": "6264591",
+                    "url": "https://edge.forgecdn.net/files/8749/545/CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
+                    "id": "8749545",
                     "parent_id": "889722",
                     "hashes": {
-                        "sha1": "f49daf6ea32cd7b15816dafff5cf8fe291c89218",
-                        "md5": "4943d40efd8e79c800f495b572ad4282"
+                        "sha1": "3072ba4530ab590b81265dfa6e58da3dcb58f929",
+                        "md5": "dc02a9318b1a428245b980f9ec67310e"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 885623,
-                    "date_published": "2025-03-04T18:42:57.287Z"
+                    "size": 1927968,
+                    "date_published": "2026-08-27T20:40:51.243Z"
                 }
             ]
         },
@@ -3141,7 +3141,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "numismatics_utils-2.1.jar",
+                    "file_name": "numismatics_utils-2.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3149,20 +3149,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8026/503/numismatics_utils-2.1.jar",
-                    "id": "8026503",
+                    "url": "https://edge.forgecdn.net/files/8757/529/numismatics_utils-2.2.jar",
+                    "id": "8757529",
                     "parent_id": "1339392",
                     "hashes": {
-                        "sha1": "7b730f7c9717e261445866e4889849133a970e13",
-                        "md5": "f481fedba8889fba647fee2cc57e9e3e"
+                        "sha1": "34dd33f59033db5dedbd8427d878e196c06273b7",
+                        "md5": "e4114d3750149154ec312eac9d84defa"
                     },
                     "required_dependencies": [
                         "889722",
-                        "328085",
-                        "309927"
+                        "309927",
+                        "328085"
                     ],
-                    "size": 41436,
-                    "date_published": "2026-05-02T13:04:12.323Z"
+                    "size": 41889,
+                    "date_published": "2026-08-29T00:18:42.613Z"
                 }
             ]
         },
@@ -11318,7 +11318,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-1.2.8.jar",
+                    "file_name": "society_trading-1.2.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11326,18 +11326,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8694/959/society_trading-1.2.8.jar",
-                    "id": "8694959",
+                    "url": "https://edge.forgecdn.net/files/8757/714/society_trading-1.2.9.jar",
+                    "id": "8757714",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "a222894afc9fd7968b8dfbd3eaee906c2852bcb7",
-                        "md5": "e2bf09abecdd65208f1b4b331f65af0b"
+                        "sha1": "359bcc3e05a5cefed171c7ceca265bea1a725e59",
+                        "md5": "6132bfc66bab25c03111aa0035d0f7f1"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 223293,
-                    "date_published": "2026-08-20T22:14:05.840Z"
+                    "size": 223387,
+                    "date_published": "2026-08-29T01:01:21.207Z"
                 }
             ]
         },
