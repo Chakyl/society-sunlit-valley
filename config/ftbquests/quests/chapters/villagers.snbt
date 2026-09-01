@@ -4,7 +4,15 @@
 	default_quest_shape: ""
 	filename: "villagers"
 	group: "439B0423947443D3"
-	icon: "numismatics:crown"
+	icon: {
+		Count: 1
+		id: "society:villager"
+		tag: {
+			type: {
+				id: "society:carpenter"
+			}
+		}
+	}
 	id: "20D348A9B6875391"
 	images: [
 		{

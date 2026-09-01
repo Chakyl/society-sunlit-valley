@@ -108,7 +108,7 @@
 //         { title: "villager_haruna", content: ":haruna: Aquamagical Dust reminds Haruna of home." },
 //         { title: "villager_maria", content: ":maria: Maria views flowers as manipulative gifts." },
 //         { title: "villager_caroline", content: ":caroline: Caroline respects a farmer that can handle goats." },
-//         { title: "villager_evelyne", content: ":evelyne: Evelyne finds the witch hat professionally degreading." },
+//         { title: "villager_evelyne", content: ":evelyne: Evelyne finds the witch hat professionally degrading." },
 //         { title: "villager_veronica", content: ":veronica: Veronica has a small but expensive collection of archival fashion." },
 //         { title: "villager_carlos", content: ":carlos: loves a home cooked meal after being on the road so long." },
 //         { title: "longwings_size", content: "The larger a butterfly or moth is, the more it sells for." },
