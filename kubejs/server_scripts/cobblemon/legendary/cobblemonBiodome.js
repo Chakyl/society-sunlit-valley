@@ -15,13 +15,13 @@ const getRitualArid = (level, player, centerPos, radius) => {
         if (!level.isLoaded(pos)) continue;
         scanBlock = level.getBlock(pos);
 
-        if (scanBlock.hasTag("society:biodome_fire_hot_blocks")) {
+        if (scanBlock.hasTag("society:biodome_fire_heat_blocks")) {
             hotBlocks++;
         }
         if (scanBlock.hasTag("society:biodome_fire_natural_blocks")) {
             naturalBlocks++;
         }
-        if (scanBlock.hasTag("society:biodome_fire_building_blocks")) {
+        if (scanBlock.hasTag("society:biodome_fire_nether_blocks")) {
             buildingBlocks++;
         }
     }
@@ -61,11 +61,11 @@ const getRitualHumidity = (level, player, centerPos, radius) => {
         if (scanBlock.hasTag("society:biodome_water_sea_plants")) {
             seaPlants++;
         }
-        if (scanBlock.hasTag("society:biodome_water_building_blocks")) {
+        if (scanBlock.hasTag("society:biodome_water_aquatic_blocks")) {
             buildingBlocks++;
         }
     }
-    aquaticMobs = level.getEntitiesWithin(AABB.ofBlock(level.getBlock(centerPos)).inflate(10)).filter((e) => global.checkEntityTag(e, "society:biodome_water_animals")).length;
+    aquaticMobs = level.getEntitiesWithin(AABB.ofBlock(level.getBlock(centerPos)).inflate(10)).filter((e) => global.checkEntityTag(e, "society:biodome_water_wildlife")).length;
     if (buildingBlocks < 125) {
         player.tell(Text.translatable("sunlit_cobblemon.biodome_altar.blue.building").red())
         ritualCanRun = false;
