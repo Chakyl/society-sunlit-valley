@@ -13,16 +13,21 @@ global.handleCobblemonDefeat = (e) => {
   let winningPlayer;
   let losingPlayer;
   let loserLevels = [];
+  let loserName = "";
   e.winners.forEach((element) => {
     winningPlayer = element.entity;
   });
   e.losers.forEach((element) => {
     losingPlayer = element.entity;
+    loserName = element.getName();
     element.pokemonList.forEach((element) => {
       loserLevels.push(element.originalPokemon.getLevel());
     });
   });
-  if ((winningPlayer && winningPlayer.isPlayer()) && (losingPlayer && losingPlayer.isPlayer())) return;
+  // Yes this is insane
+  if (!(loserName && loserName.toString().includes("eon"))) {
+    if ((winningPlayer && winningPlayer.isPlayer()) && (losingPlayer && losingPlayer.isPlayer())) return;
+  }
   if (winningPlayer && winningPlayer.isPlayer()) {
     let reward = 0;
     loserLevels.forEach((loserLevel) => {
@@ -35,16 +40,19 @@ global.handleCobblemonDefeat = (e) => {
       winningPlayer.persistentData.wins++;
       winningPlayer.persistentData.bagItemsUsed = 0;
       wins++;
-      winningPlayer.tell(Text.translatable("sunlit_cobblemon.trainer_podium.win_streak", `${Number(winningPlayer.persistentData.wins)}`).gold());
+      winningPlayer.tell(Text.translatable("sunlit_cobblemon.trainer_podium.win_increased", `${Number(winningPlayer.persistentData.wins)}`).gold());
       reward = Math.min(5000, reward)
       let badge = losingPlayer.persistentData.badgeType;
       if (badge != "none") {
         reward *= 2;
         global.getTypeRewards(winningPlayer, losingPlayer.getOnPos(), badge);
       }
+      if (wins % 10 == 0) {
+        global.getWinsRewards(winningPlayer, losingPlayer.getOnPos(), wins);
+      }
       if (losingPlayer.persistentData.levelTier == "elite") {
         reward *= 2;
-        if (wins % 20 == 0) {
+        if (wins % 15 == 0) {
           let reward = winningPlayer.level.createEntity("minecraft:item");
           reward.x = winningPlayer.getOnPos().x + 0.5;
           reward.y = winningPlayer.getOnPos().y + 0.4;
@@ -58,6 +66,16 @@ global.handleCobblemonDefeat = (e) => {
       } else if (winningPlayer && Math.random() < 0.01) {
         winningPlayer.give(Item.of("sunlit_cobblemon:the_art_of_battle"))
       }
+    } else if (losingPlayer && loserName.toString().includes("eon")) {
+      global.getEonRewards(winningPlayer, losingPlayer.getOnPos(), loserName.toString());
+      winningPlayer.getServer().runCommandSilent(
+        global.getEmbersTextAPICommand(
+          winningPlayer.username,
+          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:68,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
+          160,
+          "The wild team of Pokémon shared some of their treasure with you!"
+        )
+      );
     }
     reward = Math.round(reward);
     global.depositIntoPersonalOrCurio(winningPlayer.level, winningPlayer, reward);

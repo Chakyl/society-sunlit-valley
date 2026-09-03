@@ -1,0 +1,121 @@
+{"displayName": "Poisoner Maomao",
+  "team": [
+    {
+      "species": "cobblemon:crobat",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:docile",
+      "ability": "innerfocus",
+      "moveset": [
+        "leechlife",
+        "crosspoison",
+        "bite",
+        "wingattack"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:drapion",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "sniper",
+      "moveset": [
+        "crunch",
+        "icefang",
+        "xscissor",
+        "crosspoison"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wide_lens",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:toxicroak",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:sassy",
+      "ability": "dryskin",
+      "moveset": [
+        "suckerpunch",
+        "poisonjab",
+        "taunt",
+        "toxic"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:clodsire",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:impish",
+      "ability": "poisonpoint",
+      "moveset": [
+        "earthquake",
+        "megahorn",
+        "poisonjab",
+        "toxicspikes"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

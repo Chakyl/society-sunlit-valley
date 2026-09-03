@@ -15,7 +15,7 @@ const getRitualArid = (level, player, centerPos, radius) => {
         if (!level.isLoaded(pos)) continue;
         scanBlock = level.getBlock(pos);
 
-        if (scanBlock.hasTag("society:biodome_fire_heat_blocks")) {
+        if (scanBlock.hasTag("society:biodome_fire_hot_blocks") ||  scanBlock.id === "minecraft:lava") {
             hotBlocks++;
         }
         if (scanBlock.hasTag("society:biodome_fire_natural_blocks")) {
@@ -46,6 +46,7 @@ const getRitualHumidity = (level, player, centerPos, radius) => {
     let aquaticMobs = 0;
     let buildingBlocks = 0;
     let glassBlocks = 0;
+    let waterBlocks = 0;
     let seaPlants = 0;
     let ritualCanRun = true
     for (let pos of BlockPos.betweenClosed(
@@ -54,9 +55,11 @@ const getRitualHumidity = (level, player, centerPos, radius) => {
     )) {
         if (!level.isLoaded(pos)) continue;
         scanBlock = level.getBlock(pos);
-
         if (scanBlock.hasTag("society:biodome_water_glass_blocks")) {
             glassBlocks++;
+        }
+        if (scanBlock.id === "minecraft:water") {
+            waterBlocks++;
         }
         if (scanBlock.hasTag("society:biodome_water_sea_plants")) {
             seaPlants++;
@@ -68,6 +71,10 @@ const getRitualHumidity = (level, player, centerPos, radius) => {
     aquaticMobs = level.getEntitiesWithin(AABB.ofBlock(level.getBlock(centerPos)).inflate(10)).filter((e) => global.checkEntityTag(e, "society:biodome_water_wildlife")).length;
     if (buildingBlocks < 125) {
         player.tell(Text.translatable("sunlit_cobblemon.biodome_altar.blue.building").red())
+        ritualCanRun = false;
+    }
+    if (waterBlocks < 200) {
+        player.tell(Text.translatable("sunlit_cobblemon.biodome_altar.blue.water").red())
         ritualCanRun = false;
     }
     if (seaPlants < 50) {
@@ -159,7 +166,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:biodome_altar", (e) => {
     let ritualCanRun = false;
     let isPrimal = false;
     let ritualPokemon = "";
-    let radius = 10
+    let radius = 16
     if (item.id == 'sunlit_cobblemon:red_orb') {
         ritualCanRun = getRitualArid(level, player, block.getPos(), radius);
         ritualPokemon = "groudon";
@@ -177,7 +184,7 @@ BlockEvents.rightClicked("sunlit_cobblemon:biodome_altar", (e) => {
         if (level.getEntitiesWithin(AABB.ofBlock(level.getBlock(spawnBlock)).inflate(2)).filter((e) => e.type.equals("cobblemon:pokemon")).length !== 0) {
             player.tell(Text.translatable("sunlit_cobblemon.sun_raid.clear_area").red());
             return;
-        } else if (!spawnBlock.id.equals("minecraft:air")) {
+        } else if (!spawnBlock.id.equals("minecraft:air") && !spawnBlock.id.equals("minecraft:water")) {
             player.tell(Text.translatable("sunlit_cobblemon.spawning.no_room").red());
             return;
         }

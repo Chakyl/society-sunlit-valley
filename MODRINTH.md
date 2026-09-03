@@ -20,3 +20,5 @@ The following mods are used in the pack and are not available on Modrinth but ha
 - [ExpandAbility](https://www.curseforge.com/minecraft/mc-mods/expandability) - MIT
 - [Domestic Innovation Fixed](https://www.curseforge.com/minecraft/mc-mods/domestication-innovation-fixed) - LGPL
 - [AllTheLeaks](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) - MIT
+- [Cobblemon Trainers Ex](https://www.curseforge.com/minecraft/mc-mods/cobblemon-trainers-ex#license) - Apache License Version 2.0
+- [KubeJS Curios](https://www.curseforge.com/minecraft/mc-mods/kubejs-curios) - MIT

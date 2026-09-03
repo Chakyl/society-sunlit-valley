@@ -4,13 +4,31 @@ global.runBearScroll = (entity) => {
     const { level, block } = entity;
     let dayTime = level.dayTime();
     let morningModulo = dayTime % 24000;
-    if (
-        morningModulo >= artMachineProgTime &&
-        morningModulo < artMachineProgTime + artMachineTickRate
-    ) {
-        if (Math.random() <= 0.01) {
-            let server = level.getServer();
-            let { x, y, z } = block;
+    let nbt = block.getEntityData();
+    let { hasSpawn, alreadySpawned } = nbt.data;
+    if (!hasSpawn) {
+        if (
+            morningModulo >= artMachineProgTime &&
+            morningModulo < artMachineProgTime + artMachineTickRate
+        ) {
+            if (Math.random() <= (alreadySpawned ? 0.05 : true)) {
+                let server = level.getServer();
+                let { x, y, z } = block;
+                server.runCommandSilent(`playsound etcetera:block.drum.dholak.high block @a ${x} ${y} ${z} 3 1`);
+                nbt.merge({
+                    data: {
+                        hasSpawn: true,
+                        alreadySpawned: true,
+                    }
+                });
+                global.setBlockEntityData(block, nbt);
+            }
+        }
+    } else {
+        let server = level.getServer();
+        let { x, y, z } = block;
+        let nearbyPlayers = level.getEntitiesWithin(AABB.ofBlock(block).inflate(16)).filter((scanEntity) => scanEntity.isPlayer());
+        if (nearbyPlayers.length > 0) {
             server.runCommandSilent(`playsound etcetera:block.drum.dholak.high block @a ${x} ${y} ${z} 3 1`);
             let spawnedAny = global.summonRaidPokemon(server, level, level.getBlock(block.getPos().above()), "kubfu", "", 95, 75, false, false, 0);
             if (spawnedAny) {
@@ -27,6 +45,12 @@ global.runBearScroll = (entity) => {
                     20,
                     0.01
                 );
+                nbt.merge({
+                    data: {
+                        hasSpawn: false
+                    }
+                });
+                global.setBlockEntityData(block, nbt);
             }
         }
     }
@@ -48,6 +72,7 @@ StartupEvents.registry("block", (event) => {
         .model("sunlit_cobblemon:block/kubejs/bear_scroll")
         .blockEntity((blockInfo) => {
             blockInfo.enableSync();
+            blockInfo.initialData({ alreadySpawned: false, hasSpawn: false });
             blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
                 global.runBearScroll(entity);
             });

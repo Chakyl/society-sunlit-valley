@@ -1,0 +1,122 @@
+{
+  "displayName": "Bug Catcher Jimothy",
+  "team": [
+    {
+      "species": "cobblemon:beedrill",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:quiet",
+      "ability": "swarm",
+      "moveset": [
+        "fellstinger",
+        "assurance",
+        "agility",
+        "poisonjab"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:focus_sash",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:ninjask",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:naughty",
+      "ability": "speedboost",
+      "moveset": [
+        "aerialace",
+        "swordsdance",
+        "furycutter",
+        "metalclaw"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:vikavolt",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:brave",
+      "ability": "levitate",
+      "moveset": [
+        "thunderbolt",
+        "airslash",
+        "charge",
+        "irondefense"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:quick_claw",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:scyther",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "swarm",
+      "moveset": [
+        "swordsdance",
+        "furycutter",
+        "wingattack",
+        "doublehit"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:eviolite",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

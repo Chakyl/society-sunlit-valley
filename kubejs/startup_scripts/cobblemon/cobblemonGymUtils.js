@@ -442,7 +442,6 @@ const trainerBuckets = new Map([
       "fisherman_andrew_00e9",
       "beauty_lola_010c",
       "aroma_lady_violet_022e",
-      "ace_trainer_samantha_0052",
       "ace_trainer_sharon_00ae",
       "beauty_sheila_010d",
       "lass_ann_007e",
@@ -452,6 +451,24 @@ const trainerBuckets = new Map([
       "ranger_beth_0255",
       "black_belt_hugh_022a",
       "swimmerf_amara_0222",
+      "dragon_tamer_scribe",
+      "the_legendary_mew_n",
+      "frosted_flake_jexsam",
+      "whimsical_mimsy",
+      "psychic_matt",
+      "electrician_james",
+      "gardener_juliette",
+      "ace_swimmer_jameson",
+      "flame_eater_bryce",
+      "foundry_worker_jarvis",
+      "hex_maniac_bea",
+      "rock_collector_adrianne",
+      "archaeologist_stephanie",
+      "poisoner_maomao",
+      "bird_keeper_jeremy",
+      "punch_man_fighter",
+      "normal_guy_jake",
+      "bug_catcher_jimothy",
     ]
   ]
 ]);
@@ -461,6 +478,7 @@ const eliteModeEasy = [
   "swimmerf_maria_0223",
   "swimmerm_garrett_0226",
   "swimmerf_tisha_0231",
+  "ace_trainer_samantha_0052",
   "swimmerm_finn_0225",
   "ruin_mamoac_halotosis",
   "bird_keeper_sebastian_012c",
@@ -537,7 +555,6 @@ const eliteModeHard = [
 ]
 global.getRandomTrainer = (levelBucket, upgraded) => {
   let trainerBucket = trainerBuckets.get(levelBucket);
-  console.log("rolling")
   if (upgraded) {
     if (Math.random() < 0.75) {
       trainerBucket = eliteModeEasy;
@@ -545,7 +562,6 @@ global.getRandomTrainer = (levelBucket, upgraded) => {
       trainerBucket = eliteModeHard;
     }
   }
-  console.log(trainerBucket)
   // const trainer = trainerBucket[rnd(0, trainerBucket.length)];
   // console.log("Spawning trainer " + trainer + " in bucket " + levelBucket);
   return trainerBucket[rnd(0, trainerBucket.length - 1)];
@@ -553,8 +569,8 @@ global.getRandomTrainer = (levelBucket, upgraded) => {
 
 global.getPlayerPodiumLevelTier = (partyLevel) => Math.max(10, (Math.round(partyLevel / 5) * 5) - 5);
 
-const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma"];
-const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria"];
+const leagueBosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "karma", "king", "kingkarma", "carlos", "veronica", "evelyne"];
+const tier9Bosses = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "carlos", "veronica", "evelyne"];
 
 global.getLeagueBoss = (levelBucket, upgraded) => {
   let bossNumber = Math.min(8, Math.max(1, Math.floor(levelBucket / 10) - 1));
@@ -571,6 +587,7 @@ const getWinStreakBucket = (winStreak) => {
   }
   return -1;
 }
+
 global.getTypeRewards = (player, pos, type) => {
   let reward;
   let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:badge_reward/${type}_type_gym`).toArray();
@@ -588,6 +605,48 @@ global.getTypeRewards = (player, pos, type) => {
     reward.y = pos.y + 0.4;
     reward.z = pos.z + 0.5;
     reward.item = "society:animal_cracker";
+    reward.spawn();
+  }
+};
+
+global.getWinsRewards = (player, pos, wins) => {
+  let reward;
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_reward/${wins % 100 == 0 ? 100 : 10}_wins`).toArray();
+  rolledLoot.forEach((item) => {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = item;
+    reward.spawn();
+  });
+  if (player.stages.has("husbandry_mastery") && Math.random() < 0.05) {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = "society:animal_cracker";
+    reward.spawn();
+  }
+};
+
+global.getEonRewards = (player, pos, name) => {
+  let reward;
+  let rolledLoot = Utils.rollChestLoot(`sunlit_cobblemon:trainer_podium_reward/${name.includes("soul") ? "eon_soul" : "team_eon"}`).toArray();
+  rolledLoot.forEach((item) => {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = item;
+    reward.spawn();
+  });
+  if (name.includes("challengers")) {
+    reward = player.level.createEntity("minecraft:item");
+    reward.x = pos.x + 0.5;
+    reward.y = pos.y + 0.4;
+    reward.z = pos.z + 0.5;
+    reward.item = "cobblemon:soul_dew";
     reward.spawn();
   }
 };

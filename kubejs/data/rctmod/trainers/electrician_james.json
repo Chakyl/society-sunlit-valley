@@ -1,0 +1,119 @@
+{"displayName": "Electrician James",
+  "team": [
+    {
+      "species": "cobblemon:pikachu",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:modest",
+      "ability": "static",
+      "moveset": [
+        "thunderbolt",
+        "irontail",
+        "playrough",
+        "drainingkiss"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:light_ball",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:luxray",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:adamant",
+      "ability": "guts",
+      "moveset": [
+        "psychicfangs",
+        "thunderfang",
+        "firefang",
+        "icefang"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:flame_orb",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:electivire",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "vitalspirit",
+      "moveset": [
+        "supercellslam",
+        "gigaimpact",
+        "icepunch",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:electrode",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "aftermath",
+      "moveset": [
+        "explosion"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:choice_band",
+      "aspects": [
+        "male",
+        "hisuian"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}

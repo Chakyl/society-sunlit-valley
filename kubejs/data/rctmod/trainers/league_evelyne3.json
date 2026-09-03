@@ -1,0 +1,173 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:hatterene",
+      "gender": "FEMALE",
+      "level": 50,
+      "nature": "cobblemon:calm",
+      "ability": "anticipation",
+      "moveset": [
+        "dazzlinggleam",
+        "lifedew",
+        "psychocut",
+        "psychic"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 28,
+        "defence": 20,
+        "special_attack": 2,
+        "special_defence": 16,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:grimmsnarl",
+      "gender": "MALE",
+      "level": 50,
+      "nature": "cobblemon:naive",
+      "ability": "frisk",
+      "moveset": [
+        "spiritbreak",
+        "falsesurrender",
+        "darkpulse",
+        "poweruppunch"
+      ],
+      "ivs": {
+        "hp": 22,
+        "attack": 4,
+        "defence": 7,
+        "special_attack": 27,
+        "special_defence": 14,
+        "speed": 20
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:mimikyu",
+      "gender": "MALE",
+      "level": 50,
+      "nature": "cobblemon:rash",
+      "ability": "disguise",
+      "moveset": [
+        "honeclaws",
+        "woodhammer",
+        "feintattack",
+        "shadowclaw"
+      ],
+      "ivs": {
+        "hp": 4,
+        "attack": 13,
+        "defence": 19,
+        "special_attack": 8,
+        "special_defence": 5,
+        "speed": 18
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:assault_vest",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:chandelure",
+      "gender": "FEMALE",
+      "level": 50,
+      "nature": "cobblemon:hasty",
+      "ability": "flashfire",
+      "moveset": [
+        "shadowball",
+        "willowisp",
+        "flamethrower",
+        "hex"
+      ],
+      "ivs": {
+        "hp": 29,
+        "attack": 6,
+        "defence": 27,
+        "special_attack": 5,
+        "special_defence": 15,
+        "speed": 19
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:gourgeist",
+      "gender": "FEMALE",
+      "level": 50,
+      "nature": "cobblemon:quirky",
+      "ability": "pickup",
+      "moveset": [
+        "trickortreat",
+        "razorleaf",
+        "shadowsneak",
+        "leechseed"
+      ],
+      "ivs": {
+        "hp": 1,
+        "attack": 5,
+        "defence": 20,
+        "special_attack": 20,
+        "special_defence": 23,
+        "speed": 14
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:miracle_seed",
+      "aspects": [
+        "female",
+        "pumpkin-size-super"
+      ]
+    },
+    {
+      "species": "cobblemon:poltchageist",
+      "gender": "GENDERLESS",
+      "level": 50,
+      "nature": "cobblemon:serious",
+      "ability": "hospitality",
+      "moveset": [
+        "hex",
+        "megadrain",
+        "astonish",
+        "lifedew"
+      ],
+      "ivs": {
+        "hp": 23,
+        "attack": 4,
+        "special_attack": 14,
+        "special_defence": 16,
+        "speed": 15
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:miracle_seed",
+      "aspects": [
+        "genderless"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "aiLevel": 7,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

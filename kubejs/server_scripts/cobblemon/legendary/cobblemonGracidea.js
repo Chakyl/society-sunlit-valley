@@ -79,7 +79,7 @@ ItemEvents.rightClicked('sunlit_cobblemon:gracidea_flower', (e) => {
         return;
     }
     if (!level.getBiome(player.getOnPos()).toString().includes("minecraft:meadow")) {
-        player.tell("This won't do anything outside of a meadow...")
+        player.tell(Text.translatable("sunlit_cobblemon.gracidea.not_meadow").red())
         return;
     }
 

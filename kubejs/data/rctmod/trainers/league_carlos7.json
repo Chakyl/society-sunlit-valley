@@ -1,0 +1,172 @@
+{
+  "team": [
+    {
+      "species": "cobblemon:gholdengo",
+      "gender": "GENDERLESS",
+      "level": 90,
+      "nature": "cobblemon:timid",
+      "ability": "goodasgold",
+      "moveset": [
+        "shadowball",
+        "powergem",
+        "metalsound",
+        "makeitrain"
+      ],
+      "ivs": {
+        "attack": 6,
+        "defence": 10,
+        "special_attack": 19,
+        "special_defence": 15,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "genderless",
+        "netherite-coating-none"
+      ]
+    },
+    {
+      "species": "cobblemon:persian",
+      "gender": "MALE",
+      "level": 90,
+      "nature": "cobblemon:brave",
+      "ability": "technician",
+      "moveset": [
+        "screech",
+        "feintattack",
+        "furyswipes",
+        "playrough"
+      ],
+      "ivs": {
+        "hp": 10,
+        "attack": 24,
+        "defence": 29,
+        "special_attack": 25,
+        "special_defence": 10,
+        "speed": 8
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:bruxish",
+      "gender": "MALE",
+      "level": 90,
+      "nature": "cobblemon:calm",
+      "ability": "strongjaw",
+      "moveset": [
+        "crunch",
+        "psychicfangs",
+        "screech",
+        "aquatail"
+      ],
+      "ivs": {
+        "hp": 1,
+        "attack": 19,
+        "defence": 14,
+        "special_attack": 8,
+        "special_defence": 9,
+        "speed": 1
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:perrserker",
+      "gender": "MALE",
+      "level": 90,
+      "nature": "cobblemon:hasty",
+      "ability": "toughclaws",
+      "moveset": [
+        "ironhead",
+        "irondefense",
+        "honeclaws",
+        "thrash"
+      ],
+      "ivs": {
+        "hp": 2,
+        "attack": 12,
+        "defence": 7,
+        "special_attack": 21,
+        "special_defence": 7,
+        "speed": 25
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:muscle_band",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:golduck",
+      "gender": "MALE",
+      "level": 90,
+      "nature": "cobblemon:relaxed",
+      "ability": "damp",
+      "moveset": [
+        "confusion",
+        "waterpulse",
+        "hydropump",
+        "amnesia"
+      ],
+      "ivs": {
+        "hp": 28,
+        "defence": 24,
+        "special_attack": 18,
+        "special_defence": 5,
+        "speed": 4
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:sableye",
+      "gender": "FEMALE",
+      "level": 90,
+      "nature": "cobblemon:hardy",
+      "ability": "keeneye",
+      "moveset": [
+        "shadowclaw",
+        "knockoff",
+        "zenheadbutt",
+        "detect"
+      ],
+      "ivs": {
+        "hp": 20,
+        "attack": 30,
+        "defence": 18,
+        "special_attack": 1,
+        "special_defence": 3,
+        "speed": 10
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:sitrus_berry",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "aiLevel": 7,
+  "partyMaximumLevel": 100,
+  "defeatRequiredTrainers": []
+}

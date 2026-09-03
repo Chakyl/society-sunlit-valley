@@ -27,6 +27,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("cobblemon:quick_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
   e.shapeless("cobblemon:razor_claw", ["society:aquamagical_dust", "cobblemon:quick_claw"]);
   e.shapeless("cobblemon:grip_claw", ["society:aquamagical_dust", "cobblemon:razor_claw"]);
+  e.shapeless("sunlit_cobblemon:pale_chalice", ["sunlit_cobblemon:liquid_pale", "supplementaries:goblet"]);
   e.custom({
     type: "farmersdelight:cooking",
     cookingtime: 200,
@@ -126,6 +127,46 @@ ServerEvents.recipes((e) => {
     f: "meadow:fire_log",
     p: 'cobblemon:great_ball',
     e: "society:earth_crystal",
+  });
+    e.shaped("sunlit_cobblemon:bifrost_stone", [
+        "YPY",
+        "PBP",
+        "YPY"
+    ], {
+        Y: "species:youth_potion",
+        B: "botania:bifrost_perm",
+        P: "society:prismatic_shard"
+    });
+    e.shaped("sunlit_cobblemon:red_orb", [
+    "GCG", 
+    "SPS",
+    "GCG"
+  ], {
+    P: "sunlit_cobblemon:fire_pledge",
+    G: "sunlit_cobblemon:pristine_ground_gem",
+    S: "society:prismatic_shard",
+    C: "numismatics:ancient_coin"
+  });
+  e.shaped("sunlit_cobblemon:blue_orb", [
+    "GCG", 
+    "SPS",
+    "GCG"
+  ], {
+    P: "sunlit_cobblemon:water_pledge",
+    G: "sunlit_cobblemon:pristine_water_gem",
+    S: "society:prismatic_shard",
+    C: "numismatics:ancient_coin"
+  });
+  e.shaped("sunlit_cobblemon:biodome_altar", [
+    " A ", 
+    "WSG",
+    "LLL"
+  ], {
+    S: "society:prismatic_shard",
+    L: "atmospheric:grimwood_log",
+    W: "sunlit_cobblemon:pristine_water_gem",
+    G: "sunlit_cobblemon:pristine_ground_gem",
+    A: "sunlit_cobblemon:sun_raid_statue"
   });
   e.shapeless("sunlit_cobblemon:berry_smoothie", [
     "cobblemon:oran_berry",

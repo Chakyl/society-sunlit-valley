@@ -1,0 +1,19 @@
+{
+  "name": "4v4 Doubles Star",
+  "party_size": 4,
+  "description": "Standard VGC doubles with all Pokemon legal",
+  "best_of": 1,
+  "set_level": 50,
+  "battle_timer": true,
+  "team_preview": true,
+  "species_clause": true,
+  "bans": {
+    "pokemon": [],
+    "moves": [],
+    "abilities": [],
+    "items": []
+  },
+  "battle_type": "doubles",
+  "ban_all_pokemon_except_whitelist": false,
+  "whitelist_species": []
+}

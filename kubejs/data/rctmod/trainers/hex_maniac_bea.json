@@ -1,0 +1,121 @@
+{"displayName": "Beawitchd",
+  "team": [
+    {
+      "species": "cobblemon:mismagius",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:modest",
+      "ability": "levitate",
+      "moveset": [
+        "mysticalfire",
+        "powergem",
+        "darkpulse",
+        "psyshock"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:gengar",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:calm",
+      "ability": "cursedbody",
+      "moveset": [
+        "shadowball",
+        "sludgewave",
+        "focusblast",
+        "icywind"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:wise_glasses",
+      "aspects": [
+        "female"
+      ]
+    },
+    {
+      "species": "cobblemon:mimikyu",
+      "gender": "MALE",
+      "level": 95,
+      "nature": "cobblemon:relaxed",
+      "ability": "disguise",
+      "moveset": [
+        "swordsdance",
+        "shadowclaw",
+        "playrough",
+        "shadowsneak"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:life_orb",
+      "aspects": [
+        "male"
+      ]
+    },
+    {
+      "species": "cobblemon:jellicent",
+      "gender": "FEMALE",
+      "level": 95,
+      "nature": "cobblemon:rash",
+      "ability": "cursedbody",
+      "moveset": [
+        "recover",
+        "whirlpool",
+        "acidarmor",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 16,
+        "attack": 16,
+        "defence": 16,
+        "special_attack": 16,
+        "special_defence": 16,
+        "speed": 16
+      },
+      "evs": {},
+      "shiny": false,
+      "heldItem": "cobblemon:leftovers",
+      "aspects": [
+        "female"
+      ]
+    }
+  ],
+  "winCommand": "",
+  "lossCommand": "",
+  "canOnlyBeatOnce": false,
+  "cooldownSeconds": 0,
+  "partyMaximumLevel": 100,
+  "battleType": "singles",
+  "aiLevel": 5,
+  "randomizeLeads": true,
+  "defeatRequiredTrainers": []
+}
