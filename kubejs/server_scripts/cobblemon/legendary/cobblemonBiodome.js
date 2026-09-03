@@ -15,7 +15,7 @@ const getRitualArid = (level, player, centerPos, radius) => {
         if (!level.isLoaded(pos)) continue;
         scanBlock = level.getBlock(pos);
 
-        if (scanBlock.hasTag("society:biodome_fire_hot_blocks") ||  scanBlock.id === "minecraft:lava") {
+        if (scanBlock.hasTag("society:biodome_fire_heat_blocks") ||  scanBlock.id === "minecraft:lava") {
             hotBlocks++;
         }
         if (scanBlock.hasTag("society:biodome_fire_natural_blocks")) {
