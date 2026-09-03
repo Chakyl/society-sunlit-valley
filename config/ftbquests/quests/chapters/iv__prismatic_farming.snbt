@@ -5,6 +5,7 @@
 	filename: "iv__prismatic_farming"
 	group: "457DCF55318282CA"
 	id: "2B2A6AA10AFF0156"
+	images: [ ]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -92,7 +93,7 @@
 			}]
 			tasks: [{
 				id: "58304EBAF06978FC"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:netherite_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrisegardening:netherite_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -145,8 +146,11 @@
 				count: 16
 				id: "3F51F04ABA052D79"
 				item: {
+					components: {
+						"ftbquests:missing_item": "snowyspirit:glow_lights_prismatic"
+					}
 					count: 1
-					id: "snowyspirit:glow_lights_prismatic"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]
@@ -209,8 +213,11 @@
 				count: 4
 				id: "45D17A044792C909"
 				item: {
+					components: {
+						"ftbquests:missing_item": "betterarcheology:bomb"
+					}
 					count: 1
-					id: "betterarcheology:bomb"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]
@@ -664,7 +671,7 @@
 			}]
 			tasks: [{
 				id: "7A255EE6EF6BBB75"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:hyper_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrisegardening:hyper_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -694,7 +701,7 @@
 			id: "35A8A8F8898AE3E5"
 			tasks: [{
 				id: "747623C805336417"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:pristine_quality_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrisegardening:pristine_quality_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -773,7 +780,7 @@
 				id: "280FC65D6624C825"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:garden_pot"
+						"ftbquests:missing_item": "sunrisegardening:garden_pot"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -782,7 +789,7 @@
 			}]
 			tasks: [{
 				id: "0F3C5B69FBD0192F"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:garden_pot" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrisegardening:garden_pot" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -954,8 +961,11 @@
 				count: 4
 				id: "6968D75B40D5CA6C"
 				item: {
+					components: {
+						"ftbquests:missing_item": "society:neptuna_roe"
+					}
 					count: 1
-					id: "society:neptuna_roe"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

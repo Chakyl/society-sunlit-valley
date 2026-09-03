@@ -58,6 +58,10 @@
 	pickupPlayers = true
 	#Whether players in Survival Mode can pick up unbreakable blocks. Creative players always can.
 	pickupUnbreakableBlocks = false
+	#Pickup distance scales with player reach
+	scaleDistance = true
+	#Size of entities is considered relative to player scale
+	relativePlayerScale = true
 
 [whitelist]
 	#Whitelist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config

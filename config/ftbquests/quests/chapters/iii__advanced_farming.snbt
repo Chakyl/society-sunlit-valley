@@ -4,6 +4,7 @@
 	filename: "iii__advanced_farming"
 	group: "457DCF55318282CA"
 	id: "06219592000B9C9F"
+	images: [ ]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -177,7 +178,7 @@
 			}]
 			tasks: [{
 				id: "6ED7E64530635F03"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:gold_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrisegardening:gold_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -196,7 +197,7 @@
 			}]
 			tasks: [{
 				id: "5B08BD5F101D61C1"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:diamond_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrisegardening:diamond_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -405,7 +406,7 @@
 				id: "69E47AA8BD899E47"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:high_quality_fertilizer"
+						"ftbquests:missing_item": "sunrisegardening:high_quality_fertilizer"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -519,6 +520,7 @@
 					id: "ftbquests:missing_item"
 				}
 				id: "65C4C6928BF2A227"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "splendid_slimes:splendid_slime"
@@ -797,8 +799,11 @@
 			rewards: [{
 				id: "010FC9BAC3A786B3"
 				item: {
+					components: {
+						"ftbquests:missing_item": "refurbished_furniture:wrench"
+					}
 					count: 1
-					id: "refurbished_furniture:wrench"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

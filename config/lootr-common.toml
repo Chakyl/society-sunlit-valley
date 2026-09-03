@@ -29,6 +29,10 @@
 	check_world_border = false
 	#checks structure pieces as well as structure starts when determining if a structure contains a position, more accurate but may cause lag (default true)
 	perform_piecewise_check = true
+	#the default delay between ticks. the higher this value, the slower it takes for containers to determine they should refresh, decay, or start refreshing or decaying
+	# Default: 20
+	# Range: > 0
+	tick_delay = 20
 
 [whitelist]
 	#configuration for specific whitelisting and blacklisting of dimensions, loot tables and modids

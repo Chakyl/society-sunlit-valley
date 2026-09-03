@@ -55,7 +55,7 @@
 //       offsetY: -1,
 //       predicate: {
 //         block: {
-//           blocks: ["dew_drop_farmland_growth:bountiful_fertilized_farmland"],
+//           blocks: ["sunrisegardening:bountiful_fertilized_farmland"],
 //         },
 //       },
 //     })

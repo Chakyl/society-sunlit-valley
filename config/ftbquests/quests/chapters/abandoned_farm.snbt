@@ -10,6 +10,7 @@
 	id: "7C65158A3343D7FA"
 	images: [{
 		height: 10.0d
+		id: "77E1AF529D6F494B"
 		image: "society:textures/gui/community_center_abandoned_farm.png"
 		rotation: 0.0d
 		width: 17.77777777777778d
@@ -55,12 +56,12 @@
 				{
 					count: 5L
 					id: "167D06E351C49C00"
-					item: { count: 1, id: "society:neptuna" }
+					item: { components: { "ftbquests:missing_item": "society:neptuna" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "10C2C380DEB89028"
-					item: { count: 1, id: "society:aged_starshell_turtle_roe" }
+					item: { components: { "ftbquests:missing_item": "society:aged_starshell_turtle_roe" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{

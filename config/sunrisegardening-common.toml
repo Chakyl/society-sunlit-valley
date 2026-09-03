@@ -1,0 +1,51 @@
+#
+#  ~~~ [ Farmland Hydration ] ~~~
+#
+#Allows splash water bottles to water farmland
+splash_potion_watering = true
+#The range of splash water bottles for watering, 0 to water only the block hit
+# Default: 1
+# Range: 0 ~ 8
+customer_order_time = 1
+#Allows water buckets to water farmland
+bucket_watering = false
+#Allows bottles to water farmland
+bottle_watering = true
+#Allows rain to water farmland
+rain_watering = true
+#Enables Crops checking for blocks with sprinkler tags to prevent drying
+check_sprinklers = true
+#Allows water source blocks to hydrate farmland. Best used if checkSprinklers is false 
+water_source_hydration = false
+#
+#  ~~~ [ Daily Mechanics ] ~~~
+#
+#Causes farmland to dry daily
+daily_reset = true
+#The time of day daily reset logic will occur (within 10 ticks)
+# Default: 5
+# Range: 0 ~ 24000
+daily_time_min = 5
+#The chance that farmland will become dry
+# Default: 100
+# Range: 0 ~ 100
+daily_dry_chance = 100
+#The chance that dry farmland will decay into dirt if it HAS a crop on top of it
+# Default: 0
+# Range: 0 ~ 100
+daily_crop_decay_chance = 0
+#The chance that dry farmland will decay into dirt if it DOES NOT HAVE a crop on top of it
+# Default: 25
+# Range: 0 ~ 100
+daily_cropless_decay_chance = 25
+#
+#  ~~~ [ Misc Configs] ~~~
+#
+#Prevents farmland from being trampled by players or entities
+no_trample = true
+#Farmland will not check for blocks above it, and can be built on top of without turning to dirt
+sturdy_farmland = true
+#Allows shovels to turn farmland to dirt when right clicking
+shovel_reverting = true
+#Crops will not factor in greenhouse glass if farmland (#dewdrop:waterable) is between them and the glass
+strict_greenhouses = true

@@ -5,6 +5,7 @@
 	filename: "creatures"
 	group: "439B0423947443D3"
 	id: "7DC080E5FD09BC9E"
+	images: [ ]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -38,6 +39,7 @@
 			}]
 			tasks: [{
 				id: "7371A850C556BDEC"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:barrel_golem"
@@ -63,6 +65,7 @@
 			tasks: [
 				{
 					id: "48ACC80FE89FEF9D"
+					observation_type: "entity_type"
 					observe_type: 5
 					timer: 0L
 					to_observe: "golemoverhaul:candle_golem"
@@ -92,6 +95,7 @@
 			}]
 			tasks: [{
 				id: "5040984A6FB06C1E"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:honey_golem"
@@ -112,6 +116,7 @@
 			}]
 			tasks: [{
 				id: "0F83D9F009EFB8AB"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:hay_golem"
@@ -132,6 +137,7 @@
 			}]
 			tasks: [{
 				id: "41A7F16CE512A270"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:terracotta_golem"
@@ -152,6 +158,7 @@
 			}]
 			tasks: [{
 				id: "71E5D254AB607AB2"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:kelp_golem"
@@ -172,6 +179,7 @@
 			}]
 			tasks: [{
 				id: "3106C0E203B13B16"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:slime_golem"
@@ -193,6 +201,7 @@
 			}]
 			tasks: [{
 				id: "697BA82CD29CF667"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:coal_golem"
@@ -213,6 +222,7 @@
 			}]
 			tasks: [{
 				id: "50E5413F069A19C0"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "golemoverhaul:netherite_golem"

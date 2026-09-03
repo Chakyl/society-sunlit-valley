@@ -9,10 +9,17 @@
 [color_settings]
 	#Greyscales then recolors each item. You can customize said colors by overriding 'label_colors.png' with a resourcepack
 	recolor_texture = true
-	#picks one of the 3 presets for dyes on labels. This simply changes the texture that is used.Requires a resource pack reloadNote that you can always change this manually with a resource pack to control all the colors individually
+	#Picks one of the presets for dyes on labels. This simply changes the texture that is used. Requires a resource pack reload. Note that you can always change this manually with a resource pack to control all the colors individually
 	#Allowed Values: DEFAULT, PENCIL, PASTEL, FLAT
 	color_texture_preset = "PENCIL"
 	#Reduce colors of original image before processing. Makes 3d blocks more 2d like by giving them a limited palette
 	limit_palette = true
-	#Adds an outline to label images
+	#Draws a dark outline around the label image. Only applies when 'recolor_texture' is on, as the outline shade is taken from the recolor palette
 	outline = true
+	#Where the outline is drawn: OUTSIDE grows into the transparent area around the item, INSIDE is painted over the item's own edge pixels
+	#Allowed Values: OUTSIDE, INSIDE
+	outline_position = "OUTSIDE"
+	#How many pixels thick the outline is
+	# Default: 1
+	# Range: 1 ~ 8
+	outline_thickness = 1

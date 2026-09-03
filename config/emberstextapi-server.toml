@@ -36,12 +36,6 @@
 	#If non-empty, only these effects survive in API/command messages.
 	allowedEffects = []
 
-[anvil]
-	#Max characters when renaming an item in an anvil. Vanilla default is 50.
-	# Default: 50
-	# Range: > 1
-	nameMaxLength = 50
-
 [internal]
 	#Config schema version. Do not edit.
 	# Default: 1

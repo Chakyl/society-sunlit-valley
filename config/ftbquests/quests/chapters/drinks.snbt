@@ -11,6 +11,7 @@
 		id: "ftbquests:missing_item"
 	}
 	id: "3DE5C3A5E424080B"
+	images: [ ]
 	order_index: 7
 	quest_links: [ ]
 	quests: [
@@ -648,7 +649,7 @@
 			id: "24AEAC076A7FB759"
 			tasks: [{
 				id: "7604062B983D4AB4"
-				item: { count: 1, id: "herbalbrews:hazelnut_coffee" }
+				item: { components: { "ftbquests:missing_item": "herbalbrews:hazelnut_coffee" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -17.5d
@@ -658,7 +659,7 @@
 			id: "4724101E2A82976C"
 			tasks: [{
 				id: "51348BE63BE2E64A"
-				item: { count: 1, id: "herbalbrews:cinnamon_coffee" }
+				item: { components: { "ftbquests:missing_item": "herbalbrews:cinnamon_coffee" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -16.0d
@@ -678,7 +679,7 @@
 			id: "7D0C353A618A2A32"
 			tasks: [{
 				id: "7556EB83E2856017"
-				item: { count: 1, id: "herbalbrews:chai_tea" }
+				item: { components: { "ftbquests:missing_item": "herbalbrews:chai_tea" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -11.5d

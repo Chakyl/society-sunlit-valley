@@ -8,3 +8,8 @@
 	#- ALWAYS: Will always generate the assets & will be stored in memory. There will be no cache folder
 	#Allowed Values: NEVER, RUN_ONCE, CACHED, CACHED_ZIPPED, ALWAYS
 	dynamic_assets_generation_mode = "ALWAYS"
+	#Enable Every-Compat to base textures off external Resource Packs rather than mod's default textures.
+	#ATTENTION: There are some Resource Packs that won't work well with Every-Compat, which is why this
+	#option is off by default. Disable if there are missing textures for blocks.
+	#
+	use_external_resource_pack = false

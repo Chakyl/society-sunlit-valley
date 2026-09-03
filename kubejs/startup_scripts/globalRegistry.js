@@ -235,6 +235,7 @@ global.artifacts = [
   { item: "society:toy_train", value: 430 },
   { item: "society:aquamagical_dust", value: 512 },
   { item: "society:wheel_of_adaptation", value: 576 },
+  { item: "society:ancient_builders_tool", value: 612 },
   { item: "society:perfect_cherry", value: 777 },
   { item: "society:mini_oni_eye", value: 704 },
   { item: "society:production_science_pack", value: 1024 },
@@ -245,6 +246,7 @@ global.artifacts = [
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
   { item: "society:token_of_unity", value: 3 },
+  { item: "society:red_wrench", value: 233 },
 ];
 
 // Relics

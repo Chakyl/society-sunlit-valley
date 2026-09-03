@@ -1,9 +1,9 @@
 {
-  "configVersion": 5,
+  "configVersion": 6,
   "perf": {
     "maxParticleAmount": 1500,
-    "particleDensity": 100,
-    "particleStormDensity": 200,
+    "particleDensity": 50,
+    "particleStormDensity": 167,
     "particleDistance": 16,
     "surfaceRange": 100
   },
@@ -13,10 +13,9 @@
     "windVolume": 0.1
   },
   "wind": {
-    "strength": 0.4,
-    "strengthVariance": 0.3,
-    "gustFrequency": 0.2,
-    "modulationSpeed": 0.04,
+    "strength": 0.03,
+    "gustFrequency": 0.15,
+    "modulationSpeed": 0.1,
     "yLevelAdjustment": true
   },
   "compat": {
@@ -38,14 +37,6 @@
     },
     "doSpawnHeightLimit": false,
     "spawnHeightLimit": 0
-  },
-  "shrub": {
-    "gravity": 0.2,
-    "windStrength": 0.2,
-    "stormWindStrength": 0.3,
-    "size": 0.5,
-    "rotationAmount": 0.6,
-    "bounciness": 0.2
   },
   "ripple": {
     "opacity": 0.8,

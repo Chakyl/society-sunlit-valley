@@ -1,0 +1,173 @@
+{
+  "version": 5,
+  "enabled": true,
+  "avoid_overlapping": true,
+  "moved_by_effects": true,
+  "require_item": true,
+  "require_item_in_hand": false,
+  "search_containers": true,
+  "search_containers_for_containers": true,
+  "allow_blocks": true,
+  "allow_blocks_distance": 3,
+  "render_background": true,
+  "hide_from_debug": true,
+  "compass_enable": true,
+  "compass_vertical_position": 140,
+  "compass_horizontal_position_left": false,
+  "compass_direction": false,
+  "compass_single_line": false,
+  "compass_direction_text_colour": 16755200,
+  "compass_text_colour": 14737632,
+  "compass_x_colour": 16733525,
+  "compass_y_colour": 5635925,
+  "compass_z_colour": 5592575,
+  "compass_x_items": [
+    "minecraft:compass",
+    "minecraft:recovery_compass",
+    "spelunkery:magnetic_compass",
+    "firmaciv:nav_clock",
+    "firmaciv:firmaciv_compass"
+  ],
+  "compass_y_items": [
+    "spelunkery:depth_gauge",
+    "caverns_and_chasms:depth_gauge",
+    "additionaladditions:depth_meter",
+    "supplementaries:altimeter",
+    "depthmeter:depthmeter",
+    "reduced_world_infos:altimeter"
+  ],
+  "compass_z_items": [
+    "firmaciv:sextant"
+  ],
+  "compass_anchor_items": [
+    "minecraft:compass",
+    "minecraft:recovery_compass"
+  ],
+  "compass_relative_pos": true,
+  "compass_x_blocks": [],
+  "compass_y_blocks": [],
+  "compass_z_blocks": [],
+  "clock_enable": true,
+  "clock_current_time": true,
+  "clock_day_count": false,
+  "clock_24_hour": true,
+  "clock_seasons": true,
+  "clock_text_colour": 14737632,
+  "clock_vertical_position": 85,
+  "clock_horizontal_position_left": false,
+  "clock_items": [
+    "minecraft:clock"
+  ],
+  "clock_weather_items": [
+    "caverns_and_chasms:barometer",
+    "firmaciv:barometer"
+  ],
+  "clock_day_count_items": [
+    "reduced_world_infos:attuned_clock"
+  ],
+  "clock_blocks": [
+    "supplementaries:clock_block"
+  ],
+  "clock_weather_blocks": [],
+  "clock_day_count_blocks": [],
+  "temperature_enable": true,
+  "temperature_icons": true,
+  "temperature_hot_colour": 16759694,
+  "temperature_cold_colour": 9371647,
+  "temperature_temperate_colour": 16777215,
+  "temperature_vertical_position": 112,
+  "temperature_horizontal_position_left": true,
+  "temperature_items": [
+    "oreganized:thermometer",
+    "toughasnails:thermometer",
+    "legendarysurvivaloverhaul:thermometer",
+    "cold_sweat:thermometer"
+  ],
+  "temperature_blocks": [],
+  "compat_xaeros": true,
+  "compat_antique_atlas": true,
+  "compat_oreganized_temperature": true,
+  "compat_tough_as_nails_temperature": true,
+  "compat_cold_sweat_temperature": true,
+  "compat_legendary_survival_overhaul_temperature": true,
+  "compat_thermoo_temperature": true,
+  "biome_enable": true,
+  "biome_icons": true,
+  "biome_reduced_info": false,
+  "biome_text_tinted": true,
+  "biome_text_colour": 14737632,
+  "biome_vertical_position": 112,
+  "biome_horizontal_position_left": false,
+  "biome_items": [
+    "minecraft:map",
+    "minecraft:filled_map",
+    "minecraft:empty_map",
+    "map_atlases:atlas",
+    "map_atlases:end_atlas",
+    "map_atlases:nether_atlas",
+    "naturescompass:naturescompass",
+    "antiqueatlas:antique_atlas",
+    "reduced_world_infos:biome_recognizer"
+  ],
+  "biome_blocks": [],
+  "season_items": [
+    "sereneseasons:calendar",
+    "seasonsextras:season_calendar",
+    "eclipticseasons:calendar"
+  ],
+  "season_blocks": [
+    "seasonsextras:season_calendar"
+  ],
+  "speed_enable": true,
+  "speed_vertical_position": 137,
+  "speed_horizontal_position_left": true,
+  "speed_colour": 13090689,
+  "speed_items": [
+    "oreganized:speedometer",
+    "speedometer:speedometer"
+  ],
+  "speed_blocks": [],
+  "compat_oreganized_speed": true,
+  "compat_jade": false,
+  "compat_waila_items": [
+    "minecraft:spyglass",
+    "create:goggles"
+  ],
+  "compat_waila_blocks": [],
+  "compat_map_atlases": false,
+  "compat_serene_seasons": true,
+  "compat_fabric_seasons": true,
+  "compat_simple_seasons": true,
+  "compat_tfc_seasons": true,
+  "compat_ecliptic_seasons": true,
+  "wind_enable": true,
+  "wind_icons": true,
+  "wind_vertical_position": 90,
+  "wind_horizontal_position_left": true,
+  "wind_colour": 10254644,
+  "compat_breezy": true,
+  "wind_items": [
+    "breezy:gust_gauge"
+  ],
+  "wind_blocks": [],
+  "compat_dead_reckoning": true,
+  "compass_lodestone_colour": -1500560,
+  "compass_recovery_colour": -7405585,
+  "moon_enable": true,
+  "moon_horizontal_position_left": false,
+  "moon_text_colour": -1507334,
+  "moon_text_colour_from_events": true,
+  "moon_vertical_position": 62,
+  "moon_reduced_info": true,
+  "moon_only_at_night": true,
+  "moon_items": [
+    "urkazmoontools:moonclock_item",
+    "tide:lunar_calendar",
+    "twilightforest:moon_dial",
+    "spectrum:crescent_clock"
+  ],
+  "moon_blocks": [
+    "tide:lunar_calendar",
+    "urkazmoontools:moonsensor_blockitem"
+  ]
+}

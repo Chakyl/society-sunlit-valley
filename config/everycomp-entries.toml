@@ -1,6 +1,3 @@
-#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
-[types]
-
 		[types.leaves_type.atmospheric]
 			rosewood = true
 			morado = true
@@ -55,14 +52,14 @@
 			apple_fruit = true
 			pear_fruit = true
 
-		[types.leaves_type.minecraft]
-			pale_oak = true
-
 		[types.leaves_type.windswept]
 			holly = true
 			chestnut = true
 			pine = true
 			flowering_acacia = true
+
+		[types.leaves_type.minecraft]
+			pale_oak = true
 
 		[types.wood_type.quark]
 			azalea = true
@@ -99,9 +96,6 @@
 			walnut = true
 			willow = true
 
-		[types.wood_type.minecraft]
-			pale_oak = true
-
 		[types.wood_type.darkerdepths]
 			petrified = true
 
@@ -110,14 +104,20 @@
 			chestnut = true
 			pine = true
 
+		[types.wood_type.minecraft]
+			pale_oak = true
+
 		[types.cake.veggiesdelight]
 			carrot_cake = true
 
 		[types.cake.nomansland]
 			fruit_cake = true
 
-		[types.lantern.unusualfishmod]
-			nautical_lamp = true
+		[types.lantern.darkerdepths]
+			glowshroom_lantern = true
+
+		[types.lantern.meadow]
+			oil_lantern = true
 
 		[types.lantern.twigs]
 			paper_lantern = true
@@ -127,17 +127,11 @@
 			dandelion_paper_lantern = true
 			torchflower_paper_lantern = true
 
-		[types.lantern.meadow]
-			oil_lantern = true
-
-		[types.lantern.darkerdepths]
-			glowshroom_lantern = true
+		[types.lantern.unusualfishmod]
+			nautical_lamp = true
 
 		[types.lantern.windswept]
 			ice_lantern = true
-
-#Disables specific entries
-[entries]
 
 		[entries.leaves_type.quark]
 			hedge = false

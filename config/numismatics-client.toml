@@ -1,0 +1,10 @@
+#.
+#Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
+[client]
+	#.
+	#Whether GUIs in Ponders should be scaled down
+	scalePonderGUI = true
+	#.
+	#Depending on the mode, a bevel icon can be created using :bevel:, :coin-bevel:, or :numi-bevel: respectively.
+	#Allowed Values: DEFAULT, PREFIX_COIN, PREFIX_NUMI
+	coinEmojiPrefix = "DEFAULT"

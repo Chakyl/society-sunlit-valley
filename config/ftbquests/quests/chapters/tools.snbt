@@ -12,6 +12,7 @@
 		id: "ftbquests:missing_item"
 	}
 	id: "38639EECD8CDEFB3"
+	images: [ ]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -231,20 +232,23 @@
 			rewards: [{
 				id: "4A144CE04D511BEE"
 				item: {
+					components: {
+						"ftbquests:missing_item": "refurbished_furniture:wrench"
+					}
 					count: 1
-					id: "refurbished_furniture:wrench"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]
 			tasks: [
 				{
 					id: "0F771A1CBBDC9FD5"
-					item: { count: 1, id: "refurbished_furniture:workbench" }
+					item: { components: { "ftbquests:missing_item": "refurbished_furniture:workbench" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "1975B4057900DED6"
-					item: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
+					item: { components: { "ftbquests:missing_item": "refurbished_furniture:light_electricity_generator" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]

@@ -4,6 +4,7 @@
 	filename: "ivi__mechanical_farming"
 	group: "457DCF55318282CA"
 	id: "16656DF4FC427FB2"
+	images: [ ]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -93,8 +94,11 @@
 				count: 4
 				id: "1A04AEC85EDDB536"
 				item: {
+					components: {
+						"ftbquests:missing_item": "oreganized:silver_sheet"
+					}
 					count: 1
-					id: "oreganized:silver_sheet"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

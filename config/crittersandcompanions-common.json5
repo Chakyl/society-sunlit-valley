@@ -1,5 +1,7 @@
 {
+	configVersion: 2,
 	spawning: {
+		prevent_monster_spawns_in_lush_caves: false,
 		leaf_insect: [
 			{
 				biome_spec: "#c:is_jungle",
@@ -9,7 +11,7 @@
 			},
 			{
 				biome_spec: "#c:is_forest",
-				weight: 14,
+				weight: 6,
 				min: 1,
 				max: 1
 			}
@@ -173,7 +175,7 @@
 			},
 			{
 				biome_spec: "#c:is_lush",
-				weight: 12,
+				weight: 10,
 				min: 1,
 				max: 2
 			},
@@ -193,7 +195,7 @@
 			},
 			{
 				biome_spec: "#c:is_lush",
-				weight: 8,
+				weight: 10,
 				min: 1,
 				max: 2
 			}
@@ -227,7 +229,7 @@
 			},
 			{
 				biome_spec: "#c:is_lush",
-				weight: 10,
+				weight: 8,
 				min: 1,
 				max: 2
 			},
@@ -247,7 +249,7 @@
 			},
 			{
 				biome_spec: "#c:is_lush",
-				weight: 4,
+				weight: 10,
 				min: 1,
 				max: 2
 			}
@@ -261,7 +263,7 @@
 			},
 			{
 				biome_spec: "#c:is_lush",
-				weight: 4,
+				weight: 10,
 				min: 1,
 				max: 2
 			}
@@ -274,7 +276,8 @@
 	},
 	grapplingHook: {
 		launch_speed: 1.0,
-		max_speed: 4.0,
-		max_distance: 32.0
+		max_speed: 2.0,
+		max_distance: 32.0,
+		enable_durability: true
 	}
 }

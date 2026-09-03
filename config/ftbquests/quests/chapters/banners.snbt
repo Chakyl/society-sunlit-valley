@@ -5,9 +5,13 @@
 	filename: "banners"
 	group: "15230846E14B6926"
 	icon: {
-		id: "refurbished_furniture:spatula"
+		components: {
+			"ftbquests:missing_item": "refurbished_furniture:spatula"
+		}
+		id: "ftbquests:missing_item"
 	}
 	id: "5C67DA068D003A2D"
+	images: [ ]
 	order_index: 8
 	quest_links: [ ]
 	quests: [
@@ -1124,7 +1128,10 @@
 			size: 3.0d
 			tasks: [{
 				icon: {
-					id: "refurbished_furniture:spatula"
+					components: {
+						"ftbquests:missing_item": "refurbished_furniture:spatula"
+					}
+					id: "ftbquests:missing_item"
 				}
 				id: "38C343FDC4F440C9"
 				stat: "minecraft:play_time"

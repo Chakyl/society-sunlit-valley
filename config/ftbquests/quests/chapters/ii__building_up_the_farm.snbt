@@ -5,6 +5,7 @@
 	filename: "ii__building_up_the_farm"
 	group: "457DCF55318282CA"
 	id: "4603D051DD0D1099"
+	images: [ ]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -66,7 +67,7 @@
 				id: "05D8DB298A7C0CAD"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:iron_sprinkler"
+						"ftbquests:missing_item": "sunrisegardening:iron_sprinkler"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -75,7 +76,7 @@
 			}]
 			tasks: [{
 				id: "771C38A34236A7D8"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:iron_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrisegardening:iron_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -170,7 +171,7 @@
 					id: "532FEB13B10DE71C"
 					item: {
 						components: {
-							"ftbquests:missing_item": "dew_drop_farmland_growth:hydrating_fertilizer"
+							"ftbquests:missing_item": "sunrisegardening:hydrating_fertilizer"
 						}
 						count: 1
 						id: "ftbquests:missing_item"
@@ -1371,7 +1372,7 @@
 				id: "40C6F28062432BDD"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:low_quality_fertilizer"
+						"ftbquests:missing_item": "sunrisegardening:low_quality_fertilizer"
 					}
 					count: 1
 					id: "ftbquests:missing_item"

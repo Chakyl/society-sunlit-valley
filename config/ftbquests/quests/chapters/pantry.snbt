@@ -8,6 +8,7 @@
 	id: "0ABCE0D05B56531F"
 	images: [{
 		height: 10.0d
+		id: "38117118D2ACD47B"
 		image: "society:textures/gui/community_center_greenhouse.png"
 		rotation: 0.0d
 		width: 17.77777777777778d
@@ -24,7 +25,7 @@
 				id: "2C7023C8330EF475"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:weak_fertilizer"
+						"ftbquests:missing_item": "sunrisegardening:weak_fertilizer"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -64,7 +65,7 @@
 				id: "6517D1EFE1E30357"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:gold_sprinkler"
+						"ftbquests:missing_item": "sunrisegardening:gold_sprinkler"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -120,7 +121,7 @@
 				}
 				{
 					id: "2A66DE4B86C12568"
-					item: { count: 1, id: "society:eggplant" }
+					item: { components: { "ftbquests:missing_item": "society:eggplant" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
@@ -204,7 +205,7 @@
 				{
 					count: 5L
 					id: "2068F0BB063AD8B7"
-					item: { count: 1, id: "society:eggplant" }
+					item: { components: { "ftbquests:missing_item": "society:eggplant" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{

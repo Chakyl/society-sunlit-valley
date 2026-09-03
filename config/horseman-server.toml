@@ -80,6 +80,9 @@
 	#Format: ["minecraft:overworld", "minecraft:the_end"]
 	#Default: [] (empty)
 	dimensions = []
+	#Copper Horn item is enabled. If set to false, item will not be craftable and usable.
+	#Default: true
+	copper_horn_enabled = true
 
 [free_camera]
 	#While horse is stationary - allow moving camera freely, without rotating the horse. Default: true

@@ -1,10 +1,11 @@
 [general]
 	tooltip_hints = true
-	custom_configured_screen = true
 	#Makes dynamically generated assets depend on texture packs too and not just vanilla files
 	texture_pack_support = false
 	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
 	dynamic_assets_generation_mode = "CACHED"
+	#Disables the chat warning shown when Enhanced Block Entities is installed
+	no_enhanced_block_entities_warn = false
 
 [lily_pad]
 	#set to 0 tho have lilypads at the same exact position as vanilla.negative numbers will place them in their own blockspace right below avoiding any clipping.best of both worlds at default as its barely within its space

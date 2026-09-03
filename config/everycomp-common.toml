@@ -1,11 +1,11 @@
 [general]
-	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs. Game Restart is required for this to take effect.
+	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs.
 	creative_tab = true
 	#Sends a packet to verify all dependencies mod versions are the same on connect. DIsable if it causes issues
 	mod_version_check_packet = true
 	#Don't touch unless you are told to
 	debug_packet = false
-	#Allow the item_search or searchBar to be visible. Game Restart is required for this to take effect.
+	#Allow the item_search or searchBar to be visible.
 	tab_item_search = true
 	#
 	#How dynamic assets are generated.
@@ -17,9 +17,9 @@
 	#Try and see what works best for you.
 	#Allowed Values: NEVER, RUN_ONCE, CACHED, CACHED_ZIPPED, ALWAYS
 	server_assets_generation_mode = "ALWAYS"
-	#If set to true, then all of the generated items will not be put into the mod's tab. Game Restart is required for this to take effect.
+	#If set to true, then all of the generated items will not be put into the mod's tab.
 	no_mod_creative_tab = false
-	#Generate blocktype tags for every block type. This will be applied to all the mods that use the system, not just Every Compat. Can make pack a bit faster if its off. Turn off if you dont need it. Game Restart is required for this to take effect.
+	#Generate blocktype tags for every block type. This will be applied to all the mods that use the system, not just Every Compat. Can make pack a bit faster if its off. Turn off if you dont need it.
 	generate_blocktype_tags = true
 
 	[general.tooltips]
@@ -29,8 +29,3 @@
 		block_type_enabled = false
 		#Only show on advanced settings
 		show_on_advanced_tooltips = false
-		#Enable Every-Compat to base textures off external Resource Packs rather than mod's default textures.
-		#ATTENTION: There are some Resource Packs that won't work well with Every-Compat, which is why this
-		#option is off by default. Disable if there are missing textures for blocks.
-		#
-		use_external_resource_pack = false

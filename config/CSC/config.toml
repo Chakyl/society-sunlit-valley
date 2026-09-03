@@ -1,7 +1,7 @@
 
 # #----------------------------------------------------------------------
 # CSC config version. If this value is different from the current CSC version, the old config will be archived and a fresh config will be generated.
-ConfigVersion = "1.21.26"
+ConfigVersion = "2.27.45"
 
 # #----------------------------------------------------------------------
 #     Welcome to CSC! CSC (formerly Create:SchematicChecker | Create: Schematic Validator)
@@ -91,6 +91,9 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
         "Item.of('tacz:ammo_box', '{Creative:1b}')",
         "Item.of('tacz:ammo_box', '{AllTypeCreative:1b}')",
         "minecraft:command_block",
+        "minecraft:chain_command_block",
+        "minecraft:repeating_command_block",
+        "minecraft:structure_block",
         "quark:grate",
         "minecraft:kelp" ]
     # #----------------------------------------------------------------------
@@ -159,6 +162,12 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # #----------------------------------------------------------------------
     # Conveyor's max degree, Can't get more than 45degree in Create. Only change nbt can.
     maxConveyorAllowDegree = 45
+    # #----------------------------------------------------------------------
+    # Fix Create pipe duplication of lava from Quark lava-logged blocks. Disabled by default; enable it to apply the fix.
+    fixQuarkLavaFluidloggedDuplication = false
+    # #----------------------------------------------------------------------
+    # Block Create's radial wrench menu packet that lets a client submit a block rotation or state change. Disabled by default; enable only when this protection is required.
+    blockRadialWrenchMenuPacket = false
 
 [online]
     # #----------------------------------------------------------------------
@@ -182,5 +191,16 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # Enable automatic update reminders. When set to true, if CSC has vulnerabilities that require a version update to fix, a reminder will be sent
     UpdateInfo = true
     # #----------------------------------------------------------------------
-    # Whether to upload uncheck schematics. Default is true, this can help many people and CSC!
+    # Upload samples classified as CannotCheck, Problem, Cheat, or modified by mod whitelist filtering. Default is true; samples are used only to improve CSC detection rules.
     report = true
+    # #----------------------------------------------------------------------
+    # Validate player chain-conveyor riding packets to prevent forged movement time or position. Enabled by default; disabling restores Create's original behavior.
+    validateChainConveyorRidingPacket = true
+    # #----------------------------------------------------------------------
+    # Validate Create filter item packets so only an identical item truly present in the player's inventory may be stored as a filter sample. Enabled by default; disabling restores Create's original behavior.
+    validateFilterScreenPacket = true
+    # #----------------------------------------------------------------------
+    # CSC v2 report endpoint. Keep the default HTTPS address unless you operate a compatible private ingress.
+    reportEndpoint = "https://api.torqueflux.com/v2/uploadfile/"
+    # Per-installation CSC report credential. Generated once; keep it private. Removing it registers this installation as new.
+    reportToken = "a52272dd-49d8-4d81-900c-8a877abca67f55d9438a-716a-4a5f-a6aa-368afb758d63"

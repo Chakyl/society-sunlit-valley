@@ -1,0 +1,38 @@
+#.
+#Coin settings
+[coins]
+
+	#.
+	#How much of this coin type should players receive in their bank account on first join
+	[coins.starterCurrency]
+		#.
+		# Default: 0
+		# Range: > 0
+		starter_spurs = 0
+		#.
+		# Default: 0
+		# Range: > 0
+		starter_bevels = 0
+		#.
+		# Default: 0
+		# Range: > 0
+		starter_sprockets = 0
+		#.
+		# Default: 0
+		# Range: > 0
+		starter_cogs = 0
+		#.
+		# Default: 0
+		# Range: > 0
+		starter_crowns = 0
+		#.
+		# Default: 0
+		# Range: > 0
+		starter_suns = 0
+
+#.
+#Settings relating to ComputerCraft compatibility
+[computerCraft]
+	#.
+	#Enables the getSubAccounts function. Disabled by default due to security concerns.
+	get_sub_accounts_command = false
