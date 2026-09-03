@@ -75,7 +75,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
             server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} ${npcId}_unique_five_gift`);
         }
         npcData.maxGifted = true
-    } else if (player.stages.has("trainer_lvl_8") && Number(npcData.friendship) >= 500 && !player.stages.has(`mystery_gift_${npcId}`)) {
+    } else if (player.stages.has("trainer_lvl_8") && Number(npcData.friendship) >= 500 && npcId !== "wise_oak" && !player.stages.has(`mystery_gift_${npcId}`)) {
         if (!npcData.mysteryGifted) {
             global.giveNPCMysteryGift(player, target, server, npcId)
             npcData.mysteryGifted = true
