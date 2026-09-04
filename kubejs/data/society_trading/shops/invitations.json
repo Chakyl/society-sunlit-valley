@@ -1,0 +1,143 @@
+{
+  "shop_id": "invitations",
+  "name": { "translate": "shop.society_trading.invitations" },
+  "texture": "dialog:textures/portraits/carpenter",
+  "hidden_from_auto_trader": true,
+  "jei_catalyst": {
+    "id": "society:invitation",
+    "nbt": "{\"type\":{\"id\":\"society:carpenter\"}}"
+  },
+  "selector_weight": -96,
+  "trades": [
+    {
+      "offer": {
+        "id": "society:face_note"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 4
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_face_note"
+    },
+    {
+      "offer": {
+        "id": "furniture:blueprints"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 4
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_blueprints"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:market\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 4
+      },
+      "trade_id": "village_management_market"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:blacksmith\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 4
+      },
+      "trade_id": "village_management_blacksmith"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:shepherd\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 4
+      },
+      "trade_id": "village_management_shepherd"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:fisher\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 8
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_fisher"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:banker\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 16
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_banker"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:librarian\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 16
+      },
+      "stage_required": "invited_market",
+      "unlock_description": "jei.society_trading.invited_market",
+      "trade_id": "village_management_librarian"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:witch\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 24
+      },
+      "stage_required": "entered_nether",
+      "unlock_description": "jei.society_trading.entered_nether",
+      "trade_id": "village_management_witch"
+    },
+    {
+      "offer": {
+        "id": "society:invitation",
+        "count": 1,
+        "nbt": "{\"type\":{\"id\":\"society:trader\"}}"
+      },
+      "request": {
+        "id": "meadow:fire_log",
+        "count": 24
+      },
+      "stage_required": "entered_skull_cavern",
+      "unlock_description": "jei.society_trading.entered_skull_cavern",
+      "trade_id": "village_management_trader"
+    }
+  ]
+}

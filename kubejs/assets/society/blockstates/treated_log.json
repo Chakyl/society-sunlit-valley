@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=x": {
+            "model": "society:block/kubejs/treated_log_horizontal",
+            "x": 90,
+            "y": 90
+        },
+        "axis=y": {
+            "model": "society:block/kubejs/treated_log"
+        },
+        "axis=z": {
+            "model": "society:block/kubejs/treated_log_horizontal",
+            "x": 90
+        }
+    }
+}

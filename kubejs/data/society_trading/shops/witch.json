@@ -1,0 +1,417 @@
+{
+  "shop_id": "witch",
+  "name": { "translate": "shop.society_trading.witch" },
+  "texture": "dialog:textures/portraits/witch",
+  "stage_required": "invited_witch",
+  "villager_profession": "weaponsmith",
+  "jei_catalyst": {
+    "id": "society:villager",
+    "components": {
+      "society:villager": {
+        "society:npc_id": "society:banker"
+      }
+    }
+  },
+  "trades": [
+    {
+      "offer": {
+        "id": "society:sunlit_crystal",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "second_request": {
+        "id": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 32768,
+      "stage_required": "husbandry_mastery",
+      "unlock_description": "jei.society_trading.husbandry_mastery_unlocked",
+      "trade_id": "witch_sunlit_crystal"
+    },
+    {
+      "offer": {
+        "id": "society:plushie_wand",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "second_request": {
+        "id": "society:sunlit_crystal",
+        "count": 1
+      },
+      "numismatics_cost": 32768,
+      "stage_required": "husbandry_mastery",
+      "unlock_description": "jei.society_trading.husbandry_mastery_unlocked",
+      "trade_id": "witch_plushie_wand"
+    },
+    {
+      "offer": {
+        "id": "minecraft:enchanting_table",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 8
+      },
+      "numismatics_cost": 32768,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
+      "trade_id": "librarian_enchanting_table_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:elytra_wing",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 64
+      },
+      "second_request": {
+        "id": "numismatics:sun",
+        "count": 64
+      },
+      "numismatics_cost": 262144,
+      "trade_id": "witch_elytra_wing_for_sun"
+    },
+    {
+      "offer": {
+        "id": "gag:hearthstone",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 5
+      },
+      "second_request": {
+        "id": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 163840,
+      "trade_id": "witch_hearthstone_for_sun"
+    },
+    {
+      "offer": {
+        "id": "paraglider:goddess_statue",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 3
+      },
+      "numismatics_cost": 1536,
+      "trade_id": "witch_goddess_statue_for_sun"
+    },
+    {
+      "offer": {
+        "id": "constructionwand:stone_wand",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "witch_stone_wand_for_crown"
+    },
+    {
+      "offer": {
+        "id": "constructionwand:core_angel",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_core_angel_for_sun"
+    },
+    {
+      "offer": {
+        "id": "constructionwand:core_destruction",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:prismatic_coin",
+        "count": 1
+      },
+      "numismatics_cost": 16777216,
+      "trade_id": "witch_core_destruction_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "id": "create:wand_of_symmetry",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 5
+      },
+      "second_request": {
+        "id": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 20480,
+      "trade_id": "witch_wand_of_symmetry_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:ribbit_hut",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "second_request": {
+        "id": "pamhc2trees:starfruititem",
+        "count": 16
+      },
+      "stage_required": "community_center_complete",
+      "numismatics_cost": 32768,
+      "unlock_description": "jei.society_trading.community_center_complete",
+      "trade_id": "witch_ribbit_hut"
+    },
+    {
+      "offer": {
+        "id": "society:kinetic_blueprint",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "witch_kinetic_blueprint_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:tanuki_catalog",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 24
+      },
+      "numismatics_cost": 98304,
+      "trade_id": "witch_tanuki_catalog_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:modern_catalog",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 3
+      },
+      "numismatics_cost": 262144,
+      "trade_id": "witch_modern_catalog_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "society:fantasy_catalog",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 4
+      },
+      "numismatics_cost": 1048576,
+      "trade_id": "witch_fantasy_catalog_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "waystones:red_sharestone",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 8
+      },
+      "numismatics_cost": 2097152,
+      "trade_id": "witch_red_sharestone_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "waystones:blue_sharestone",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 8
+      },
+      "numismatics_cost": 2097152,
+      "trade_id": "witch_blue_sharestone_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "waystones:green_sharestone",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 8
+      },
+      "numismatics_cost": 2097152,
+      "trade_id": "witch_green_sharestone_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "waystones:purple_sharestone",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 8
+      },
+      "numismatics_cost": 2097152,
+      "trade_id": "witch_purple_sharestone_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "waystones:warp_stone",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 20
+      },
+      "numismatics_cost": 5242880,
+      "trade_id": "witch_warp_stone_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "waystones:warp_scroll",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 8
+      },
+      "numismatics_cost": 32768,
+      "trade_id": "witch_bound_scroll_for_sun"
+    },
+    {
+      "offer": {
+        "id": "whimsy_deco:statue_endless_fortune",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:ancient_coin",
+        "count": 32
+      },
+      "numismatics_cost": 8388608,
+      "trade_id": "witch_statue_endless_fortune_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "id": "society:placeholder",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:prismatic_coin",
+        "count": 1
+      },
+      "numismatics_cost": 16777216,
+      "trade_id": "witch_golden_clock_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "id": "society:placeholder",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:prismatic_coin",
+        "count": 64
+      },
+      "second_request": {
+        "id": "minecraft:netherite_block",
+        "count": 64
+      },
+      "stage_required": "community_center_complete",
+      "numismatics_cost": 1073741824,
+      "unlock_description": "jei.society_trading.community_center_complete",
+      "trade_id": "witch_iridium_clock"
+    },
+    {
+      "offer": {
+        "id": "tanukidecor:diy_workbench",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:prismatic_coin",
+        "count": 4
+      },
+      "numismatics_cost": 67108864,
+      "trade_id": "witch_diy_workbench_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "id": "society:crystal_of_regret_farming",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "crystal_of_regret_farming_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:crystal_of_regret_husbandry",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "crystal_of_regret_husbandry_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:crystal_of_regret_mining",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "crystal_of_regret_mining_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:crystal_of_regret_adventuring",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "crystal_of_regret_adventuring_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:crystal_of_regret_fishing",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "crystal_of_regret_fishing_for_sun"
+    }
+  ]
+}

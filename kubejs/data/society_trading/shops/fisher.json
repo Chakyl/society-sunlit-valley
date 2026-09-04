@@ -1,0 +1,403 @@
+{
+  "shop_id": "fisher",
+  "name": { "translate": "shop.society_trading.fisher",
+  "texture": "dialog:textures/portraits/fisher",
+  "villager_profession": "fisherman",
+  "stage_required": "invited_fisher",
+  "jei_catalyst": {
+    "id": "society:villager",
+    "nbt": "{type:{id:\"society:fisher\"}}"
+  },
+  "selector_weight": -95,
+  "trades": [
+    {
+      "offer": {
+        "id": "aquaculture:worm",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "fisherman_worm_for_sprocket"
+    },
+    {
+      "offer": {
+        "id": "minecraft:fishing_rod",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_fishing_rod_for_crown"
+    },
+    {
+      "offer": {
+        "id": "netherdepthsupgrade:lava_fishing_rod",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 24
+      },
+      "numismatics_cost": 73728,
+      "trade_id": "fisherman_lava_fishing_rod_rod_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:fish_radar",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 4
+      },
+      "second_request": {
+        "id": "aquaculture:neptunium_ingot",
+        "count": 1
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_fish_radar_for_crown"
+    },
+    {
+      "offer": {
+        "id": "society:fish_pond",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 8
+      },
+      "second_request": {
+        "id": "society:river_jelly",
+        "count": 1
+      },
+      "numismatics_cost": 32768,
+      "trade_id": "fisherman_fish_pond_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:roe_recycler",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 2
+      },
+      "second_request": {
+        "id": "society:sunlit_pearl",
+        "count": 3
+      },
+      "numismatics_cost": 65536,
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_roe_recyclern"
+    },
+    {
+      "offer": {
+        "id": "society:fish_smoker",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 2
+      },
+      "numismatics_cost": 65536,
+      "trade_id": "fisherman_fish_smoker_for_neptunium_coin"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:note_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:spur",
+        "count": 7
+      },
+      "numismatics_cost": 7,
+      "trade_id": "fisherman_note_hook_for_spur"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:light_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 5
+      },
+      "second_request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "fisherman_light_hook_for_cog_and_sprocket"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:heavy_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 5
+      },
+      "second_request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 336,
+      "trade_id": "fisherman_heavy_hook_for_cog_and_sprocket"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:redstone_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 5
+      },
+      "second_request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 336,
+      "trade_id": "fisherman_redstone_hook_for_cog_and_sprocket"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:gold_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 5
+      },
+      "numismatics_cost": 2560,
+      "trade_id": "fisherman_gold_hook_for_crown"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:iron_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_iron_hook_for_cog"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:diamond_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 16
+      },
+      "second_request": {
+        "id": "aquaculture:neptunium_ingot",
+        "count": 2
+      },
+      "numismatics_cost": 65536,
+      "trade_id": "fisherman_diamond_hook_for_crown"
+    },
+    {
+      "offer": {
+        "id": "society:needle_bobber",
+        "count": 1
+      },
+      "request": {
+        "id": "society:heart_of_neptunium",
+        "count": 1
+      },
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_needle_bobber_for_heart_of_neptunium"
+    },
+    {
+      "offer": {
+        "id": "society:net_bobber",
+        "count": 1
+      },
+      "request": {
+        "id": "society:heart_of_neptunium",
+        "count": 1
+      },
+      "stage_required": "fishing_mastery",
+      "unlock_description": "jei.society_trading.fishing_mastery_unlocked",
+      "trade_id": "fisherman_net_bobber_for_heart_of_neptunium"
+    },
+    {
+      "offer": {
+        "id": "stardew_fishing:trap_bobber",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_trap_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "id": "stardew_fishing:cork_bobber",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 6
+      },
+      "numismatics_cost": 3072,
+      "trade_id": "fisherman_cork_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "id": "stardew_fishing:sonar_bobber",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 6
+      },
+      "numismatics_cost": 3072,
+      "trade_id": "fisherman_sonar_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "id": "stardew_fishing:treasure_bobber",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_treasure_bobber_for_sun"
+    },
+    {
+      "offer": {
+        "id": "stardew_fishing:quality_bobber",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "second_request": {
+        "id": "aquaculture:neptunium_ingot",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_quality_bobber_for_sun"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:double_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "fisherman_double_hook_for_crown"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:tackle_box",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_tackle_box_for_sun"
+    },
+    {
+      "offer": {
+        "id": "aquaculture:worm_farm",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "fisherman_worm_farm_for_crown"
+    },
+    {
+      "offer": {
+        "id": "society:neptunium_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 16
+      },
+      "numismatics_cost": 65536,
+      "trade_id": "minecraft:toolsmith_neptunium_upgrade_smithing_template_for_crown"
+    },
+    {
+      "offer": {
+        "id": "create:copper_diving_helmet",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_copper_diving_helmet_for_crown"
+    },
+    {
+      "offer": {
+        "id": "create:copper_backtank",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_copper_backtank_for_crown"
+    },
+    {
+      "offer": {
+        "id": "create:copper_diving_boots",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 3
+      },
+      "numismatics_cost": 1536,
+      "trade_id": "fisherman_copper_diving_boots_for_crown"
+    },
+    {
+      "offer": {
+        "id": "patchouli:guide_book",
+        "count": 1,
+        "nbt": "{\"patchouli:book\":\"patchouli:fish_finder\"}"
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "second_request": {
+        "id": "aquaculture:neptunium_block",
+        "count": 1
+      },
+      "numismatics_cost": 32768,
+      "trade_id": "fisherman_guide_book_for_neptunium_coin"
+    }
+  ]
+}

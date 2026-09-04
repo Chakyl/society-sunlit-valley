@@ -42,15 +42,28 @@ StartupEvents.registry("item", (e) => {
   e.create("society:recycled_core").texture("society:item/recycled_core");
   e.create("society:strawberry").texture("society:item/strawberry")
     .food((food) => {
-      // food.hunger(1);
+      food.nutrition(1);
       food.saturation(2);
       // food.fastToEat(true);
     });
   e.create("society:blueberry").texture("society:item/blueberry")
     .food((food) => {
-      // food.hunger(1);
+      food.nutrition(1);
       food.saturation(2);
       // food.fastToEat(true);
+    });
+  e.create("society:deep_a_mochi")
+    .texture("society:item/deep_a_mochi")
+    .displayName("Deep-a-Mochi")
+    .food((food) => {
+      food.nutrition(4);
+      food.saturation(2);
+    });
+  e.create("society:lemon_beignets")
+    .texture("society:item/lemon_beignets")
+    .food((food) => {
+      food.nutrition(3);
+      food.saturation(3);
     });
   e.create("society:hops").texture("society:item/hops");
   e.create("society:tubabacco_leaf").texture("society:item/tubabacco_leaf");
@@ -60,72 +73,72 @@ StartupEvents.registry("item", (e) => {
   e.create("society:tubasmoke_carton").texture("society:item/tubasmoke_carton");
   e.create("society:ancient_fruit").texture("society:item/ancient_fruit")
     .food((food) => {
-      // food.hunger(6);
+      food.nutrition(6);
       food.saturation(3);
       // food.fastToEat(true);
     });
   e.create("society:sparkpod").texture("society:item/sparkpod")
     .food((food) => {
-      // food.hunger(3);
+      food.nutrition(3);
       food.saturation(1);
       food.effect("minecraft:haste", 2000, 2, 1.0);
       // food.fastToEat(true);
     });
   e.create("society:salmonberry").texture("society:item/salmonberry")
     .food((food) => {
-      // food.hunger(1);
+      food.nutrition(1);
       food.saturation(2);
       // food.fastToEat(true);
     });
   e.create("society:boysenberry").texture("society:item/boysenberry")
     .food((food) => {
-      // food.hunger(1);
+      food.nutrition(1);
       food.saturation(3);
       // food.fastToEat(true);
     });
   e.create("society:cranberry").texture("society:item/cranberry")
     .food((food) => {
-      // food.hunger(1);
+      food.nutrition(1);
       food.saturation(2);
       // food.fastToEat(true);
     });
   e.create("society:crystalberry").texture("society:item/crystalberry")
     .food((food) => {
-      // food.hunger(1);
+      food.nutrition(1);
       food.saturation(1);
       // food.fastToEat(true);
     });
   e.create("society:mossberry").texture("society:item/mossberry")
     .food((food) => {
-      // food.hunger(2);
+      food.nutrition(2);
       food.saturation(3);
       // food.fastToEat(true);
       food.effect("minecraft:resistance", 1200, 0, 1.0);
     });
   e.create("society:ancient_juice").texture("society:item/drinks/ancient_juice")
     .food((food) => {
-      // food.hunger(6);
+      food.nutrition(6);
       // food.fastToEat(true);
       food.saturation(4);
     })
     .useAnimation("drink");
   e.create("society:starfruit_juice").texture("society:item/drinks/starfruit_juice")
     .food((food) => {
-      // food.hunger(6);
+      food.nutrition(6);
       // food.fastToEat(true);
       food.saturation(3);
     })
     .useAnimation("drink");
   e.create("society:sparkpod_juice").texture("society:item/drinks/sparkpod_juice")
     .food((food) => {
-      // food.hunger(5);
+      food.nutrition(5);
       // food.fastToEat(true);
       food.saturation(2);
     })
     .useAnimation("drink");
   e.create("society:mana_fruit_juice").texture("society:item/drinks/mana_fruit_juice")
     .food((food) => {
-      // food.hunger(6);
+      food.nutrition(6);
       // food.fastToEat(true);
       food.saturation(42);
     })
@@ -225,9 +238,9 @@ StartupEvents.registry("item", (e) => {
   );
   e.create("society:mana_fruit").texture("society:item/mana_fruit")
     .food((food) => {
-      // food.hunger(3);
+      food.nutrition(3);
       food.saturation(1);
-      food.effect("botania:soul_cross", 3000, 2, 1.0);
+      // food.effect("botania:soul_cross", 3000, 2, 1.0);
       // food.fastToEat(true);
     });
   e.create("society:canvas").texture("society:item/canvas").displayName("Artisan Canvas");
@@ -280,8 +293,24 @@ StartupEvents.registry("item", (e) => {
   e.create("society:energy_drink").texture("society:item/drinks/energy_drink")
     .food((food) => {
       // food.fastToEat(true);
-      food.effect("botania:emptiness", 4800, 0, 1.0);
-      food.effect("minecraft:speed", 4800, 2, 1.0);
+    })
+    .useAnimation("drink");
+  e.create("society:pink_energy_drink")
+    .texture("society:item/drinks/pink_energy_drink")
+    .food((food) => {
+      // food.fastToEat(true);
+    })
+    .useAnimation("drink");
+  e.create("society:white_energy_drink")
+    .texture("society:item/drinks/white_energy_drink")
+    .food((food) => {
+      // food.fastToEat(true);
+    })
+    .useAnimation("drink");
+  e.create("society:mana_energy_drink")
+    .texture("society:item/drinks/mana_energy_drink")
+    .food((food) => {
+      // food.fastToEat(true);
     })
     .useAnimation("drink");
   e.create("society:death_liquid").texture("society:item/drinks/death_liquid")

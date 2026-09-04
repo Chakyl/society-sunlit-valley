@@ -1,0 +1,54 @@
+{
+  "shop_id": "ribbit_fisher",
+  "name": { "translate": "shop.society_trading.ribbit_fisher" },
+  "texture": "crabbersdelight:textures/block/nautilus_shell_block_left",
+  "entity": "ribbits:ribbit",
+  "entity_data": "ribbits:fisherman",
+  "hidden_from_selector": true,
+  "jei_catalyst": { "id": "ribbits:ribbit_fisherman_spawn_egg" },
+  "trades": [
+    {
+      "request": { "id": "minecraft:amethyst_shard", "count": 6 },
+      "offer": { "id": "aquaculture:sushi", "count": 1 },
+      "trade_id": "ribbit_fisher_sushi"
+    },
+    {
+      "request": { "id": "minecraft:amethyst_shard", "count": 16 },
+      "offer": { "id": "crabbersdelight:pearl", "count": 1 },
+      "trade_id": "ribbit_fisher_pearl"
+    },
+    {
+      "request": { "id": "society:amethyst_chunk", "count": 2 },
+      "offer": { "id": "society:ribbit_drum", "count": 1 },
+      "trade_id": "ribbit_fisher_ribbit_drum"
+    },
+    {
+      "request": { "id": "society:amethyst_chunk", "count": 4 },
+      "offer": { "id": "society:ribbit_gadget", "count": 1 },
+      "trade_id": "ribbit_fisher_ribbit_gadget"
+    },
+    {
+      "request": { "id": "minecraft:amethyst_shard", "count": 32 },
+      "offer": { "id": "furniture:iron_fish_tank", "count": 1 },
+      "trade_id": "ribbit_fisher_iron_fish_tank"
+    },
+    {
+      "request": { "id": "minecraft:amethyst_shard", "count": 32 },
+      "offer": { "id": "furniture:copper_fish_tank", "count": 1 },
+      "trade_id": "ribbit_fisher_copper_fish_tank"
+    },
+    {
+      "request": { "id": "minecraft:amethyst_block", "count": 16 },
+      "offer": {
+        "id": "aquaculture:gold_fishing_rod",
+        "count": 1
+      },
+      "trade_id": "ribbit_fisher_gold_fishing_rod"
+    },
+    {
+      "request": { "id": "society:aged_amethyst_cheese_block", "count": 4 },
+      "offer": { "id": "society:river_jelly", "count": 1 },
+      "trade_id": "ribbit_fisher_river_jelly"
+    }
+  ]
+}

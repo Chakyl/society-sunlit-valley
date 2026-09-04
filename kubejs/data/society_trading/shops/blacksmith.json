@@ -1,0 +1,207 @@
+{
+  "shop_id": "blacksmith",
+  "name": { "translate": "shop.society_trading.blacksmith" },
+  "texture": "dialog:textures/portraits/blacksmith",
+  "jei_catalyst": {
+    "id": "society:villager",
+    "nbt": "{type:{id:\"society:blacksmith\"}}"
+  },
+  "selector_weight": -98,
+  "villager_profession": "toolsmith",
+  "stage_required": "invited_blacksmith",
+  "trades": [
+    {
+      "offer": {
+        "id": "minecraft:coal",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "blacksmith_coal_for_sprocket"
+    },
+    {
+      "offer": {
+        "id": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "blacksmith_copper_ingot_for_sprocket"
+    },
+    {
+      "offer": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "blacksmith_iron_ingot_for_cog"
+    },
+    {
+      "offer": {
+        "id": "create:zinc_ingot",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "blacksmith_zinc_ingot_for_cog"
+    },
+    {
+      "offer": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "blacksmith_gold_ingot_for_cog"
+    },
+    {
+      "offer": {
+        "id": "minecraft:redstone",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "blacksmith_redstone_for_sprocket"
+    },
+    {
+      "offer": {
+        "id": "minecraft:flint_and_steel",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 3
+      },
+      "numismatics_cost": 12288,
+      "trade_id": "blacksmith_flint_and_steel_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:iron_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "blacksmith_iron_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:gold_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "blacksmith_gold_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:diamond_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 8192,
+      "trade_id": "blacksmith_diamond_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "id": "minecraft:netherite_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 11
+      },
+      "numismatics_cost": 49556,
+      "trade_id": "blacksmith_netherite_upgrade_smithing_template_for_crown"
+    },
+    {
+      "offer": {
+        "id": "society:geode_buster",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "blacksmith_geode_buster_for_sprocket"
+    },
+    {
+      "offer": {
+        "id": "create:brown_toolbox",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 6
+      },
+      "numismatics_cost": 384,
+      "trade_id": "blacksmith_brown_toolbox_for_cog"
+    },
+    {
+      "offer": {
+        "id": "furniture:bin",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "blacksmith_bin_for_sun"
+    },
+    {
+      "offer": {
+        "id": "society:placeholder",
+        "count": 1
+      },
+      "request": {
+        "id": "minecraft:netherite_ingot",
+        "count": 20
+      },
+      "stage_required": "mining_mastery",
+      "unlock_description": "jei.society_trading.mining_mastery_unlocked",
+      "trade_id": "blacksmith_moon_statue"
+    },
+    {
+      "offer": {
+        "id": "buildinggadgets2:gadget_core",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 10
+      },
+      "numismatics_cost": 40960,
+      "trade_id": "blacksmith_gadget_core_for_sun"
+    }
+  ]
+}

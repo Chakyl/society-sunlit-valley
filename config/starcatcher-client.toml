@@ -5,7 +5,7 @@ hit_delay = 0.0
 remove_notif_on_hover = true
 #Allowed Values: METRIC, IMPERIAL, CHEESEBURGER, DEVELOPER, BANANA, DUCK, SPACE_WHALE, SCIENTIFIC
 units = "METRIC"
-#Allowed Values: ALPHABETICAL_UP, ALPHABETICAL_DOWN, MOD_UP, MOD_DOWN, RARITY_UP, RARITY_DOWN, CAUGHT_UP, CAUGHT_DOWN
+#Allowed Values: ALPHABETICAL_UP, ALPHABETICAL_DOWN, MOD_UP, MOD_DOWN, RARITY_UP, RARITY_DOWN, CAUGHT_UP, CAUGHT_DOWN, CAUGHT_GOLDEN_UP, CAUGHT_GOLDEN_DOWN
 sort = "ALPHABETICAL_DOWN"
 #Should play the hit sound
 enable_miss_sound = true
@@ -14,10 +14,10 @@ debug = false
 # Default: 1000
 # Range: > 100
 overlay_update_frequency = 1000
-#Controls whether sounds for reeling, failing minigame, completing minigame etc should play
-enable_tackle_sound = true
 #Should sweet-spots play the hit sounds
 enable_hit_sounds = true
+#Controls whether villager sounds for winning and losing the minigame should play. Does not affect tackle skins with custom sounds.
+enable_villager_sound = true
 
 [ui_settings]
 	# Default: 0.0

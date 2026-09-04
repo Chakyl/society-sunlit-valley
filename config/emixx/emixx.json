@@ -20,7 +20,9 @@
   "stackGroupsCraftables": true,
   "stackGroupsWorkstation": true,
   "stackGroupsFavorites": false,
-  "disabledStackGroups": [],
+  "disabledStackGroups": [
+    "c:foods"
+  ],
   "stackGroupItemOrder": {},
   "emiOnlyInRecipeBook": false,
   "emiOnlyInRecipeBookState": false,

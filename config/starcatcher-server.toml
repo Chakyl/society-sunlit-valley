@@ -1,6 +1,6 @@
 #Award guide when joining the world/server once per player
 give_guide = false
-#Enables/disables the ability to bonemeal farmland for worms.
+#Enables/disables the ability to bonemeal block for worms.
 enable_worms = false
 enable_minigame = true
 #Enables/disables fishes caught being unlocked for all online team members.
@@ -63,10 +63,12 @@ give_rod = true
 # Range: 0.0 ~ 100.0
 handle_speed_multiplier = 1.0
 #Hides the treasure item during minigame
-hide_treasures = false
+hide_treasures = true
 #Hides the catch during minigame
 hide_catches = false
 #Enable Starcatcher's fishing rod durability
 enable_rod_durability = false
 #Allows players to use a keybind to open the guide without having the item
 allow_guide_keybind = true
+#Whether players should see and access the guide help pages
+enable_guide_help_pages = true

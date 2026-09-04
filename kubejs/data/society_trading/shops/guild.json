@@ -1,0 +1,213 @@
+{
+  "shop_id": "guild",
+  "name": { "translate": "shop.society_trading.guild" },
+  "texture": "create:textures/block/industrial_iron_block",
+  "jei_catalyst": { "id": "minecraft:leather_boots" },
+  "selector_weight": 1,
+  "trades": [
+    {
+      "offer": {
+        "id": "minecraft:leather_helmet",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "guild_leather_helmet"
+    },
+    {
+      "offer": {
+        "id": "minecraft:leather_chestplate",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "guild_leather_chestplate"
+    },
+    {
+      "offer": {
+        "id": "minecraft:leather_leggings",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "guild_leather_leggings"
+    },
+    {
+      "offer": {
+        "id": "minecraft:leather_boots",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "guild_leather_boots"
+    },
+    {
+      "offer": {
+        "id": "sophisticatedbackpacks:backpack",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "guild_backpack"
+    },
+    {
+      "offer": {
+        "id": "minecraft:arrow",
+        "count": 4
+      },
+      "request": {
+        "id": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 2,
+      "trade_id": "guild_arrow"
+    },
+    {
+      "offer": {
+        "id": "naturescompass:naturescompass",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 6
+      },
+      "numismatics_cost": 24576,
+      "trade_id": "guild_naturescompass"
+    },
+    {
+      "offer": {
+        "id": "via_romana:charting_map",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "guild_charting_map"
+    },
+    {
+      "offer": {
+        "id": "rehooked:wood_hook",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "guild_wood_hook"
+    },
+    {
+      "offer": {
+        "id": "quark:pickarang",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 16
+      },
+      "numismatics_cost": 64536,
+      "trade_id": "guild_pickarang"
+    },
+    {
+      "offer": {
+        "id": "moblassos:hostile_lasso",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:neptunium_coin",
+        "count": 4
+      },
+      "second_request": {
+        "id": "society:prismatic_shard",
+        "count": 1
+      },
+      "numismatics_cost": 131072,
+      "trade_id": "guild_hostile_lasso"
+    },
+    {
+      "offer": {
+        "id": "domesticationinnovation:collar_tag",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 8
+      },
+      "numismatics_cost": 32768,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
+      "trade_id": "guild_collar_tag"
+    },
+    {
+      "offer": {
+        "id": "domesticationinnovation:pet_bed_white",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "guild_pet_bed_white"
+    },
+    {
+      "offer": {
+        "id": "domesticationinnovation:drum",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
+      "trade_id": "guild_drum"
+    },
+    {
+      "offer": {
+        "id": "domesticationinnovation:wayward_lantern",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "stage_required": "adventuring_mastery",
+      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
+      "trade_id": "guild_wayward_lantern"
+    },
+    {
+      "offer": {
+        "id": "society:skull_cavern_teleporter",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "stage_required": "vault_complete",
+      "trade_id": "guild_teleporter",
+      "unlock_description": "jei.society_trading.vault_complete"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+#Range of the Brazier anti-witch effect
+#Set to 0 to disable
+# Default: 64
+# Range: 0 ~ 512
+brazier_range = 64
+#Maximum Transport Chutes in a line
+# Default: 16
+# Range: 0 ~ 128
+chute_limit = 16
+#Percent of normal speed Fertile Soil should work at
+#Set to 0 to disable
+# Default: 100
+# Range: 0 ~ 100
+fertile_rate = 100
+#Range of signals through Circuit Wire
+# Default: 16
+# Range: 1 ~ 128
+redstone_range = 16
+#Range of signals through Redstone Receivers/Transmitters
+# Default: 32
+# Range: 0 ~ 128
+wireless_range = 32
+#Should the Wrench show up in the creative menu?
+creative_wrench = true

@@ -14,3 +14,25 @@
 	moltenLeadDelay = 200
 	#Can lead blocks be placed into a cauldron to melt?
 	cauldronLeadMelting = true
+	#Replace the stained glass windows in cleric temples with crystal glass
+	replaceClericWindows = true
+
+	[common.silver]
+		#The radius in blocks for the tarnishing effect of undead mobs
+		# Default: 4
+		# Range: 1 ~ 20
+		tarnishRadius = 4
+		#The chance per block check for tarnishing to occur (1.0 = 100%, 0.0 = 0%). Note that this only applies to the first tarnish stage. other nextStage are this /2
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		tarnishChance = 0.5
+		#The number of blocks around an undead mob to check every times a mob dies
+		# Default: 40
+		# Range: 1 ~ 100
+		tarnishChecksPerMob = 40
+
+	[common.electrum]
+		#the speed boost granted by electrum armor
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		speedBoost = 0.05

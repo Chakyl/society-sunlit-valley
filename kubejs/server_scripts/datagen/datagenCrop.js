@@ -2,7 +2,7 @@ const crops = [
     // Vegetables
     { crop: "veggiesdelight:turnip", storage_block: "veggiesdelight:turnip_crate", dropCount: 1, growDays: 4, seasons: ["spring"], products: ["preserves", "pickle"] },
     { crop: "veggiesdelight:cauliflower", storage_block: 'veggiesdelight:garlic_crate', dropCount: 1, growDays: 10, seasons: ["spring"], products: ["preserves", "pickle"] },
-    { crop: "minecraft:potato", storage_block: 'farmersdelight:potato_crate', dropCount: [3, 6], growDays: 7, seasons: ["spring"], products: ["preserves", "pickle"] },
+    { crop: "minecraft:potato", storage_block: 'farmersdelight:potato_crate', dropCount: [3, 6], growDays: 7, seasons: ["spring"], products: ["preserves", "pickle", "wine"], wine: 'kaleidoscope_tavern:vodka' },
     { crop: 'farmersdelight:onion', storage_block: 'farmersdelight:onion_crate', dropCount: [1, 4], growDays: 8, seasons: ["spring"], products: ["preserves", "pickle"] },
     { crop: "veggiesdelight:garlic", storage_block: 'veggiesdelight:garlic_crate', dropCount: 1, growDays: 5, seasons: ["spring"], yearTwo: true, products: ["preserves", "pickle"] },
     { crop: 'vintagedelight:cucumber', storage_block: 'vintagedelight:cucumber_crate', dropCount: 1, growDays: 10, regrowDays: 3, seasons: ["spring"], yearTwo: true, products: ["preserves", "pickle"] },
@@ -18,7 +18,7 @@ const crops = [
 
     { crop: "minecraft:beetroot", storage_block: 'farmersdelight:beetroot_crate', dropCount: 1, growDays: 5, seasons: ["autumn"], products: ["preserves", "pickle"] },
     { crop: "veggiesdelight:sweet_potato", storage_block: 'veggiesdelight:sweet_potato_crate', dropCount: [2, 4], growDays: 12, seasons: ["autumn"], yearTwo: true, products: ["preserves", "pickle"] },
-    { crop: "minecraft:pumpkin", broken_block: "farmersdelight:pumpkin_slice", dropCount: 1, growDays: 7,  seasons: ["autumn"], products: ["preserves", "pickle"] },
+    { crop: "minecraft:pumpkin", broken_block: "farmersdelight:pumpkin_slice", dropCount: 1, growDays: 7, seasons: ["autumn"], products: ["preserves", "pickle"] },
     { crop: "culturaldelights:eggplant", storage_block: 'culturaldelights:eggplant_crate', dropCount: 1, growDays: 7, regrowDays: 5, seasons: ["autumn"], products: ["preserves", "pickle"] },
     { crop: "veggiesdelight:broccoli", storage_block: 'veggiesdelight:broccoli_crate', dropCount: [1, 2], growDays: 5, seasons: ["autumn"], lootOnly: true, products: ["preserves", "pickle"] },
     { crop: 'vintagedelight:peanut', storage_block: 'vintagedelight:peanut_crate', dropCount: [1, 3], growDays: 7, seasons: ["autumn"], yearTwo: true, products: ["preserves", "pickle"] },
@@ -29,12 +29,12 @@ const crops = [
     // Fruit
     { crop: "society:strawberry", storage_block: 'society:strawberry_crate', dropCount: [1, 2], growDays: 8, regrowDays: 4, seasons: ["spring"], products: ["preserves", "wine", "dried"] },
     { crop: "society:sparkpod", storage_block: "society:sparkpod_crate", dropCount: 1, growDays: 8, seasons: ["spring"], customMult: 1.5, products: ["preserves", "wine", "dried"] },
-    { crop: "minecraft:sweet_berries", storage_block: 'quark:berry_sack', dropCount: [2, 3], growDays: 3, regrowDays: 1, seasons: ["spring"], reeseedable: true, products: ["preserves", "wine", "dried"] },
+    { crop: "minecraft:sweet_berries", storage_block: 'quark:berry_sack', dropCount: [2, 3], growDays: 3, regrowDays: 1, seasons: ["spring"], reeseedable: true, products: ["preserves", "wine", "dried"], wine: 'kaleidoscope_tavern:sweet_berry_wine' },
 
-    { crop: "minecraft:melon", broken_block: "minecraft:melon_slice", dropCount: 1, growDays: 7, seasons: ["summer"], lootOnly: true, products: ["preserves", "wine", "dried"] },
+    { crop: "minecraft:melon", broken_block: "minecraft:melon_slice", dropCount: 1, growDays: 7, seasons: ["summer"], lootOnly: true, products: ["preserves", "wine", "dried"], wine: 'kaleidoscope_tavern:watermelon_juice' },
     { crop: "society:blueberry", storage_block: 'society:blueberry_crate', dropCount: [3, 4], growDays: 13, regrowDays: 4, seasons: ["summer"], products: ["preserves", "wine", "dried"] },
 
-    { crop: "society:cranberry", storage_block: 'society:cranberry_crate', dropCount: [2, 3], growDays: 7, regrowDays: 5, seasons: ["autumn"], products: ["preserves", "wine", "dried"] },
+    { crop: "society:cranberry", storage_block: 'society:cranberry_crate', dropCount: [2, 3], growDays: 7, regrowDays: 5, seasons: ["autumn"], products: ["preserves", "wine", "dried"], wine: 'kaleidoscope_tavern:carignan' },
     { crop: 'vintagedelight:gearo_berry', storage_block: 'vintagedelight:gearo_berry_bag', dropCount: [2, 3], growDays: 7, regrowDays: 5, seasons: ["autumn"], products: ["preserves", "wine", "dried"] },
 
     { crop: "windswept:wild_berries", storage_block: 'windswept:wild_berry_basket', dropCount: [2, 3], growDays: 7, regrowDays: 5, seasons: ["winter"], products: ["preserves", "wine", "dried"] },
@@ -47,7 +47,7 @@ const crops = [
     // Grain
     { crop: "farmersdelight:cabbage", storage_block: 'farmersdelight:cabbage_crate', dropCount: 1, growDays: 8, seasons: ["spring"], products: [] },
 
-    { crop: "minecraft:wheat", storage_block: 'minecraft:hay_block', dropCount: 1, growDays: 5, seasons: ["summer", "autumn"], products: [] },
+    { crop: "minecraft:wheat", storage_block: 'minecraft:hay_block', dropCount: 1, growDays: 5, seasons: ["summer", "autumn"], products: ["wine"], wine: 'kaleidoscope_tavern:whiskey' },
     { crop: "farmersdelight:rice", storage_block: 'farmersdelight:rice_bag', dropCount: 1, growDays: 6, regrowDays: 3, seasons: ["summer", "autumn"], reeseedable: true, products: [] },
 
     { crop: 'society:hops', storage_block: '', dropCount: 3, growDays: 10, regrowDays: 1, seasons: ["summer", "autumn"], reeseedable: true, products: ["wine"] },
@@ -118,9 +118,15 @@ crops.forEach((crop) => {
 })
 const dishes = [
     // Bell Pepper
-    { dish: "veggiesdelight:cacciatore", ingredients: ["veggiesdelight:bellpepper"], dropCount: 1, type: "cooking_pot" },
-    { dish: "veggiesdelight:smoked_bellpepper", ingredients: ["veggiesdelight:bellpepper"], dropCount: 1, type: "smoker" },
-    { dish: "veggiesdelight:stuffed_bellpeppers_block", ingredients: ["veggiesdelight:bellpepper", "veggiesdelight:bellpepper", "veggiesdelight:bellpepper", "farmersdelight:tomato", "#c:raw_meat"], dropCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:smoked_bellpepper", ingredients: ["veggiesdelight:bellpepper"], cookedCount: 1, type: "smoker" },
+    { dish: "veggiesdelight:cacciatore", ingredients: ["veggiesdelight:bellpepper", "farmersdelight:tomato", 'minecraft:rabbit'], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:stuffed_bellpeppers_block", ingredients: ["veggiesdelight:bellpepper", "veggiesdelight:bellpepper", "veggiesdelight:bellpepper", "#c:raw_meat"], cookedCount: 1, type: "oven" },
     { dish: "veggiesdelight:stuffed_bellpepper", ingredients: ["veggiesdelight:stuffed_bellpeppers_block"], dropCount: 3, type: "feast" },
-    { dish: "culturaldelights:empanada", ingredients: ["veggiesdelight:bellpepper"], dropCount: 1, type: "cooking_pot" },
+    { dish: 'veggiesdelight:shakshouka', ingredients: ["veggiesdelight:bellpepper", "farmersdelight:tomato", "#c:eggs"], cookedCount: 1, type: "cooking_pot" },
+    // Broccoli
+    { dish: "veggiesdelight:steak_and_broccoli", ingredients: ["veggiesdelight:broccoli", "minecraft:beef", "farmersdelight:rice"], cookedCount: 1, type: "oven" },
+    { dish: "veggiesdelight:broccoli_soup", ingredients: ["veggiesdelight:broccoli", "veggiesdelight:broccoli", "#society:large_milk"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:pasta_with_broccoli", ingredients: ["veggiesdelight:broccoli", "#c:foods/pasta", "#society:small_milk"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:broccoli_salad", ingredients: ["veggiesdelight:broccoli", "farmersdelight:tomato", "farmersdelight:onion"], cookedCount: 1, type: "bowl" },
+
 ]

@@ -1,4 +1,6 @@
-#Allow all items tagged 'minecraft:pickaxe' to rotate or interact with this mod's blocks (Modded or otherwise).
+#Allow all items tagged 'minecraft:pickaxes' to rotate or interact with this mod's blocks (Modded or otherwise).
 tagged_pickaxe_compat = true
 #When placing connective-texture blocks, allow crouching to switch to alternative state texture connection upon placement.
 crouch_to_change_texture = true
+#Allow all items tagged 'c:tools/wrench' to rotate or interact with this mod's blocks.
+tagged_wrench_compat = true
