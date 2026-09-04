@@ -192,6 +192,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.fish_pond_manager.description").gray());
+      item.tooltip(Text.translatable("block.society.fish_pond_manager.clipboard").gray());
       item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `21x21x21`).green());
       item.modelJson({

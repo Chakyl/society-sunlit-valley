@@ -1,6 +1,7 @@
 ^^^
 ## Cozy Cafe
 ### v4.1.5
+### Happy 2-Year Anniversary Sunlit Valley!!
 ^^^
 --- 
 - Added Sale Points and Sub-Accounts from Create Numismatics update
@@ -12,7 +13,7 @@
 - Fixed crossbow/painting texture errors
 - Fixed some logging messages showing
 - Fixed certain saplings not having tags
-- Fixed Coin Leaderboards blanking in specific cases
+- Fixed bugs with Coin Leaderboard
 - Fixed bank accounts overflowing to -2 billion at 2+ billion
 - Fixed dessert only Cozy Cafe menus having dirty plates 
 ## 4.0.0
