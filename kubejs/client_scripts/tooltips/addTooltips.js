@@ -110,7 +110,7 @@ const bookTooltips = [
         tooltip: "Pickled items are worth 100% more.",
     },
     {
-        item: "society:bluegill_meridian",
+        item: "society:bluegigi_meridian",
         tooltip: "Bluegill are now worth 666 §f●.",
     },
     {

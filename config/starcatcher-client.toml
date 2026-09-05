@@ -11,6 +11,7 @@ sort = "ALPHABETICAL_DOWN"
 enable_miss_sound = true
 #Shows a bunch of extra text info during the minigame for debugging
 debug = false
+#How many MS to wait before refreshing starcatcher's ui overlays (not in minigame)
 # Default: 1000
 # Range: > 100
 overlay_update_frequency = 1000

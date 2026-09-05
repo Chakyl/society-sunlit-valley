@@ -15,7 +15,7 @@ StartupEvents.registry("item", (e) => {
         "animal_fancy",
         "banana_karenina",
         "brine_and_punishment",
-        "bluegill_meridian",
+        "bluegigi_meridian",
         "bullfish_jobs",
         "canadian_and_famous",
         "first_aid_guide",
@@ -44,7 +44,7 @@ StartupEvents.registry("item", (e) => {
      *  Artifacts
      */
 
-    global.artifacts.forEach((artifact) => {
+    global.ARTIFACTS.forEach((artifact) => {
         const { item } = artifact;
         if (
             item !== "society:princess_hairbrush" &&
@@ -93,4 +93,105 @@ StartupEvents.registry("item", (e) => {
                 }
             });
         }).rarity("uncommon");
+
+
+    e.create("society:omni_geode").texture("society:item/omni_geode");
+    e.create("society:geode_buster").texture("society:item/geode_buster");
+    e.create("society:geode").texture("society:item/geode/geode");
+    e.create("society:frozen_geode").texture("society:item/frozen_geode/frozen_geode");
+    e.create("society:magma_geode").texture("society:item/magma_geode/magma_geode");
+    
+    global.MINERALS.forEach((mineral) => {
+        if (!mineral.disable_item_generation) {
+            e.create(`society:${mineral.item.path}`).texture(`society:item/${mineral.geode_type != "base" ? `${mineral.geode_type}_` : ""}geode/${mineral.item.path}`).tag("society:mineral")
+        }
+    });
+
+    global.GEMS.forEach((gem) => {
+        if (gem.generate_item) e.create(`society:${gem.item.path}`).texture(`society:item/gems/${gem.item.path}`).tag("society:gem");
+    });
+    global.CROP_DEFINITIONS.forEach((crop) => {
+        if (crop.products.includes("preserves")) {
+            e.create(`society:${crop.item.path}_preserves`)
+                .texture(`society:item/preserves/${crop.item.path}_preserves`)
+                .tag("society:preserve")
+                .food((food) => {
+                    food.nutrition(5);
+                    food.saturation(1);
+                    // food.fastToEat(true);
+                });
+        }
+    });
+
+    global.FORAGE_CROPS.forEach((crop) => {
+        if (crop.products.includes("preserves")) {
+            e.create(`society:${crop.item.path}_preserves`)
+                .texture(`society:item/preserves/${crop.item.path}_preserves`)
+                .tag("society:preserve")
+                .food((food) => {
+                    food.nutrition(5);
+                    food.saturation(1);
+                    // food.fastToEat(true);
+                });
+        }
+    });
+
+    global.CROP_DEFINITIONS.forEach((crop) => {
+        if (crop.products.includes("pickle")) {
+            let splitProduct = crop.item.split(":");
+            e.create(`society:pickled_${splitProduct[1]}`)
+                .texture(`${splitProduct[0]}:item/${splitProduct[1]}`)
+                .color(0, 0xd8f266)
+                .tag("society:pickle")
+                .food((food) => {
+                    food.nutrition(4);
+                    food.saturation(1);
+                });
+        }
+    });
+
+    global.MUSHROOMS.forEach((crop) => {
+        e.create(`society:dried_${crop.item.path}`)
+            .texture(`society:item/dried/dried_${crop.item.path}`)
+            .tag("society:dried_product")
+            .food((food) => {
+                food.nutrition(9);
+                food.saturation(0.5);
+                food.eatSeconds(0.8);
+            });
+    });
+
+    global.CROP_DEFINITIONS.forEach((crop) => {
+        if (crop.products.includes("dried")) {
+            e.create(`society:dried_${crop.item.path}`)
+                .texture(`society:item/dried/dried_${crop.item.path}`)
+                .tag("society:dried_product")
+                .food((food) => {
+                    food.nutrition(9);
+                    food.saturation(0.5);
+                    food.eatSeconds(0.8);
+                });
+        }
+    });
+
+    global.FORAGE_CROPS.forEach((crop) => {
+        if (crop.products.includes("dried")) {
+            e.create(`society:dried_${crop.item.path}`)
+                .texture(`society:item/dried/dried_${crop.item.path}`)
+                .tag("society:dried_product")
+                .food((food) => {
+                    food.nutrition(9);
+                    food.saturation(0.5);
+                    food.eatSeconds(0.8);
+                });
+        }
+    });
+
+    // Pristine Gems
+    global.MINERALS.forEach((mineral) => {
+        e.create(`society:pristine_${mineral.item.path}`).texture(`society:item/${mineral.geode_type != "base" ? `${mineral.geode_type}_` : ""}geode/${mineral.item.path}`).glow(true).tag("society:pristine");
+    });
+    global.GEMS.forEach((gem) => {
+        if (gem.item !== "society:prismatic_shard") e.create(`society:pristine_${gem.item.path}`).texture(`${gem.item.namespace}:item/${gem.item.namespace == "society" ? `gems/` : ""}${gem.item.path}`).glow(true).tag("society:pristine");
+    });
 });

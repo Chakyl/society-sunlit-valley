@@ -683,8 +683,11 @@
 			rewards: [{
 				id: "14F813AF1E11DC78"
 				item: {
+					components: {
+						"ftbquests:missing_item": "society:pristine_opal"
+					}
 					count: 1
-					id: "society:pristine_opal"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

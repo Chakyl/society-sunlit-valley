@@ -347,7 +347,7 @@ StartupEvents.registry("item", (e) => {
     })
     .useAnimation("drink");
 
-  e.create("bakery:hazelnut_ella").texture("society:item/hazelnut_ella")
+  e.create("society:hazelnut_ella").texture("society:item/hazelnut_ella")
     .food((food) => {
       food.nutrition(5);
       food.saturation(2);
@@ -366,7 +366,7 @@ StartupEvents.registry("item", (e) => {
       // food.fastToEat(true);
     });
 
-  e.create("bakery:chocolate_donut").texture("society:item/chocolate_donut")
+  e.create("society:chocolate_donut").texture("society:item/chocolate_donut")
     .food((food) => {
       food.nutrition(5);
       food.saturation(2);
@@ -397,7 +397,7 @@ StartupEvents.registry("item", (e) => {
       food.nutrition(2);
       food.saturation(14);
       food.effect("minecraft:strength", 3000, 0, 1.0);
-      food.effect("farm_and_charm:sweets", 3000, 2, 1.0);
+      // food.effect("farm_and_charm:sweets", 3000, 2, 1.0);
     });
   e.create("society:magic_rock_candy").texture("society:item/magic_rock_candy")
     .rarity("epic")
@@ -532,82 +532,13 @@ StartupEvents.registry("item", (e) => {
     .maxStackSize(1);
   e.create("society:relic_trove").texture("society:item/relic_trove");
   e.create("society:artifact_trove").texture("society:item/artifact_trove");
-  e.create("society:omni_geode").texture("society:item/omni_geode");
-  e.create("society:prismatic_shard").texture("society:item/prismatic_shard");
-  e.create("society:geode_buster").texture("society:item/geode_buster");
-  e.create("society:geode").texture("society:item/geode/geode");
-
-  global.geodeList.forEach((geode) => {
-    if (geode.item !== "society:earth_crystal")
-      e.create(`society:${geode.item.path}`).texture(
-        `society:item/geode/${geode.item.path}`
-      );
-  });
-
-  e.create("society:frozen_geode").texture(
-    "society:item/frozen_geode/frozen_geode"
-  );
-
-  global.frozenGeodeList.forEach((geode) => {
-    e.create(`society:${geode.item.path}`).texture(
-      `society:item/frozen_geode/${geode.item.path}`
-    );
-  });
-  e.create("society:magma_geode").texture(
-    "society:item/magma_geode/magma_geode"
-  );
-
-  global.magmaGeodeList.forEach((geode) => {
-    if (geode.item !== "society:fire_quartz")
-      e.create(`society:${geode.item.path}`).texture(
-        `society:item/magma_geode/${geode.item.path}`
-      );
-  });
-
-  global.gems.forEach((gem) => {
-    e.create(`society:${gem.item.path}`).texture(
-      `society:item/gems/${gem.item.path}`
-    );
-  });
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
   e.create("society:sparkstone_dust").texture("society:item/sparkstone_dust");
   e.create("society:spark_gro").texture("society:item/spark_gro").displayName("Spark-Gro");
 
   e.create(`society:magic_bulb`).texture(`society:item/magic_bulb`);
-  global.picklableVegetables.forEach((product) => {
-    const splitProduct = product.item.split(":");
-    let texturePath = `${splitProduct[0]}:item/${splitProduct[1]}`;
-    e.create(`society:pickled_${splitProduct[1]}`)
-      .texture(texturePath)
-      .color(0, 0xd8f266)
-      .food((food) => {
-        food.nutrition(4);
-        food.saturation(1);
-      });
-  });
 
-  global.preserves.forEach((jar) => {
-    if (jar.item.includes("society")) {
-      e.create(`society:${jar.item.path}`)
-        .texture(`society:item/preserves/${jar.item.path}`)
-        .food((food) => {
-          food.nutrition(5);
-          food.saturation(1);
-          // food.fastToEat(true);
-        });
-    }
-  });
-  // Dehydrator outputs
-  global.dehydrated.forEach((dried) => {
-    e.create(dried.item)
-      .texture(`society:item/dried/${dried.item.path}`)
-      .food((food) => {
-        food.nutrition(9);
-        food.saturation(0.5);
-        food.eatSeconds(0.8);
-      });
-  });
   const ageableProductsTextureMap = [
     {
       item: "vinery:creepers_crush",
@@ -836,38 +767,6 @@ StartupEvents.registry("item", (e) => {
       .color(0, roeHex)
       .tag("crabbersdelight:crab_trap_bait")
   });
-
-  // Pristine gems
-  global.geodeList.forEach((geode) => {
-    if (geode.item === "society:froggy_helm") return;
-    e.create(`society:pristine_${geode.item.path}`).texture(`society:item/geode/${geode.item.path}`).glow(true);
-  });
-
-  global.frozenGeodeList.forEach((geode) => {
-    if (geode.item === "society:ribbit_drum") return;
-    e.create(`society:pristine_${geode.item.path}`).texture(`society:item/frozen_geode/${geode.item.path}`).glow(true);
-  });
-
-  global.magmaGeodeList.forEach((geode) => {
-    if (geode.item === "society:ribbit_gadget") return;
-    e.create(`society:pristine_${geode.item.path}`).texture(`society:item/magma_geode/${geode.item.path}`).glow(true);
-  });
-
-  global.gems.forEach((gem) => {
-    e.create(`society:pristine_${gem.item.path}`).texture(`society:item/gems/${gem.item.path}`).glow(true)
-  });
-
-  const vanillaPristine = [
-    "minecraft:emerald",
-    "minecraft:diamond",
-    "minecraft:amethyst_shard",
-    "minecraft:prismarine_crystals",
-    "minecraft:quartz",
-  ];
-  vanillaPristine.forEach((gem) => {
-    e.create(`society:pristine_${gem.path}`).texture(`minecraft:item/${gem.path}`).glow(true)
-  });
-
   e.create("veggiesdelight:garlic_seed").texture(
     "veggiesdelight:item/garlic_seed"
   );

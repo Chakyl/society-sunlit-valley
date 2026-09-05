@@ -216,8 +216,11 @@
 			rewards: [{
 				id: "5D0CB0AFFFFB6FCE"
 				item: {
+					components: {
+						"ftbquests:missing_item": "society:pristine_earth_crystal"
+					}
 					count: 1
-					id: "society:pristine_earth_crystal"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]
@@ -561,8 +564,11 @@
 			rewards: [{
 				id: "5E94113982847280"
 				item: {
+					components: {
+						"ftbquests:missing_item": "bakery:chocolate_donut"
+					}
 					count: 1
-					id: "bakery:chocolate_donut"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

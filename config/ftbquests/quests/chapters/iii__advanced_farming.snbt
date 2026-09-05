@@ -385,8 +385,11 @@
 			rewards: [{
 				id: "5DEF7D3C10F81A09"
 				item: {
+					components: {
+						"ftbquests:missing_item": "society:raisins"
+					}
 					count: 1
-					id: "society:raisins"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

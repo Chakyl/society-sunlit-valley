@@ -2065,7 +2065,7 @@
 			id: "6E6588DBC047B041"
 			tasks: [{
 				id: "0E88A8780C5E5DBE"
-				item: { count: 1, id: "bakery:chocolate_donut" }
+				item: { components: { "ftbquests:missing_item": "bakery:chocolate_donut" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 18.0d
