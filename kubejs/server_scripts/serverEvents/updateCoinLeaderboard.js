@@ -26,8 +26,8 @@ const getLeaderboardRanking = (server) => {
       return;
     } else if (cardID != null && cardID != playerUUID) {
       bankAccount = global.GLOBAL_BANK.getAccount(cardID);
-      accountUUID = String(bankAccount.id);
-      if (!leaderboardMap.has(accountUUID)) bankBalance += bankAccount.getBalance();
+      if (bankAccount != null) accountUUID = String(bankAccount.id);
+      if (bankAccount != null && !leaderboardMap.has(accountUUID)) bankBalance += bankAccount.getBalance();
     }
     if (overflowList != null && overflowList[playerUUID] != null) {
       bankBalance += overflowList[playerUUID] * 1006632960;

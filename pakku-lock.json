@@ -2408,7 +2408,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cozycafe-1.8-all.jar",
+                    "file_name": "cozycafe-1.9-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2416,18 +2416,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8601/775/cozycafe-1.8-all.jar",
-                    "id": "8601775",
+                    "url": "https://edge.forgecdn.net/files/8720/404/cozycafe-1.9-all.jar",
+                    "id": "8720404",
                     "parent_id": "1590319",
                     "hashes": {
-                        "sha1": "6abd0466250be401d667e9f2f193368c6839964c",
-                        "md5": "26714031fb0391331a83e36daa61f975"
+                        "sha1": "1de0cd65106055d3c1de287a1605c35cb6e17adb",
+                        "md5": "970b388b65a94f75b0f0e70525d1d477"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 418795,
-                    "date_published": "2026-08-08T13:19:15.467Z"
+                    "size": 423753,
+                    "date_published": "2026-08-23T23:30:32.960Z"
                 }
             ]
         },
@@ -3099,27 +3099,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
+                    "file_name": "CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6264/591/CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
-                    "id": "6264591",
+                    "url": "https://edge.forgecdn.net/files/8749/545/CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
+                    "id": "8749545",
                     "parent_id": "889722",
                     "hashes": {
-                        "sha1": "f49daf6ea32cd7b15816dafff5cf8fe291c89218",
-                        "md5": "4943d40efd8e79c800f495b572ad4282"
+                        "sha1": "3072ba4530ab590b81265dfa6e58da3dcb58f929",
+                        "md5": "dc02a9318b1a428245b980f9ec67310e"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 885623,
-                    "date_published": "2025-03-04T18:42:57.287Z"
+                    "size": 1927968,
+                    "date_published": "2026-08-27T20:40:51.243Z"
                 }
             ]
         },
@@ -3141,7 +3141,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "numismatics_utils-2.1.jar",
+                    "file_name": "numismatics_utils-2.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3149,20 +3149,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8026/503/numismatics_utils-2.1.jar",
-                    "id": "8026503",
+                    "url": "https://edge.forgecdn.net/files/8757/529/numismatics_utils-2.2.jar",
+                    "id": "8757529",
                     "parent_id": "1339392",
                     "hashes": {
-                        "sha1": "7b730f7c9717e261445866e4889849133a970e13",
-                        "md5": "f481fedba8889fba647fee2cc57e9e3e"
+                        "sha1": "34dd33f59033db5dedbd8427d878e196c06273b7",
+                        "md5": "e4114d3750149154ec312eac9d84defa"
                     },
                     "required_dependencies": [
                         "889722",
-                        "328085",
-                        "309927"
+                        "309927",
+                        "328085"
                     ],
-                    "size": 41436,
-                    "date_published": "2026-05-02T13:04:12.323Z"
+                    "size": 41889,
+                    "date_published": "2026-08-29T00:18:42.613Z"
                 }
             ]
         },
@@ -7808,7 +7808,7 @@
             ]
         },
         {
-            "pakku_id": "eFoG2d3PsvXL2hsy",
+            "pakku_id": "2XBqXhuDF0b9S8ED",
             "type": "MOD",
             "slug": {
                 "curseforge": "modernfix"
@@ -7822,7 +7822,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.27.72+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.27.8+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7830,16 +7830,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8613/265/modernfix-forge-5.27.72+mc1.20.1.jar",
-                    "id": "8613265",
+                    "url": "https://edge.forgecdn.net/files/7928/686/modernfix-forge-5.27.8+mc1.20.1.jar",
+                    "id": "7928686",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "a1954e427611b0f99cf48aa14700a5a1b480c2fd",
-                        "md5": "1388bcf53a67c259dbacc8073c6b685f"
+                        "sha1": "603c785a90fed9eb63609c9e045b2e202241edd4",
+                        "md5": "92ded3cc2f93280c56306ca669bf6946"
                     },
                     "required_dependencies": [],
-                    "size": 1000069,
-                    "date_published": "2026-08-10T01:33:53.840Z"
+                    "size": 945123,
+                    "date_published": "2026-04-15T02:23:56.177Z"
                 }
             ]
         },
@@ -11318,7 +11318,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-1.2.8.jar",
+                    "file_name": "society_trading-1.2.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11326,18 +11326,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8694/959/society_trading-1.2.8.jar",
-                    "id": "8694959",
+                    "url": "https://edge.forgecdn.net/files/8757/714/society_trading-1.2.9.jar",
+                    "id": "8757714",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "a222894afc9fd7968b8dfbd3eaee906c2852bcb7",
-                        "md5": "e2bf09abecdd65208f1b4b331f65af0b"
+                        "sha1": "359bcc3e05a5cefed171c7ceca265bea1a725e59",
+                        "md5": "6132bfc66bab25c03111aa0035d0f7f1"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 223293,
-                    "date_published": "2026-08-20T22:14:05.840Z"
+                    "size": 223387,
+                    "date_published": "2026-08-29T01:01:21.207Z"
                 }
             ]
         },

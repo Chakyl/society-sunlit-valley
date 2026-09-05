@@ -751,6 +751,7 @@
   "block.society.villager_home.type": "Summons a %s",
   "block.society.villager_home.description": "Transports the villager to your town and assigns them the nearby area as their home.\n Cannot be placed near other villagers.",
   "block.society.fish_pond_manager.description": "Submits quests for fish ponds at 7am every morning",
+  "block.society.fish_pond_manager.clipboard": "Right click with a Clipboard to copy all requested items to it",
   "block.society.caterpillar_box.description": "Hatches Caterpillar Eggs placed inside every 5 minutes. Butterflies and Moths fly out of the box's top.",
 
   "item.society.froggy_helm.description": "There's a large tongue nestled inside",
@@ -875,8 +876,7 @@
   "item.society.magnifying_glass.description": "Displays working area of some machines",
   "item.society.magnifying_glass.description.view_block": "Hold [%s] to view blocks",
   "item.society.magnifying_glass.description.view_block.sprinklers": "All Sprinklers",
-  "item.society.overflow_token.description": "Permanantly adds %s\nto your coin leaderboard score,\nbypassing the bank account's cap.",
-  "item.society.overflow_token.description.warn": "Overflow tokens cannot be recovered",
+  "item.society.overflow_token.description": "Unobtainable. Bank accounts no longer overflow to -2b",
   "item.society.book_of_stars.description": "Right click to gain experience in all skills",
   "item.society.enriched_bone_meal.tree_fruit_season": "This tree only bears fruit in %s!",
   "item.society.iron_upgrade_smithing_template.upgrade": "Iron Upgrade",

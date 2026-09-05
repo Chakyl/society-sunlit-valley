@@ -1022,10 +1022,6 @@ ItemEvents.tooltip((tooltip) => {
       Text.translatable("tooltip.society.coins", "1,006,632,960")
     ).gray()
   );
-  tooltip.add(
-    "society:overflow_token",
-    Text.translatable("item.society.overflow_token.description.warn").red()
-  );
   // Sprinklers
   const generateSprinklerTooltip = (tooltip, tier, radius) => {
     const tooltipRadius = 1 + radius * 2;

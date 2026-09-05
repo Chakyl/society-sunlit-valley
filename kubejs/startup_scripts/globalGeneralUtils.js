@@ -1,5 +1,7 @@
 // Priority: 1000
-global.getDay = (level) =>  Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi")
+
+global.getDay = (level) => Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 
 /**
  * I hate this function.
@@ -27,4 +29,25 @@ global.getFacingPlusOffset = (facing, pos, offset) => {
     case "east":
       return pos.offset(offset, 0, 0);
   }
+};
+
+global.formatPriceTruncated = (number) => {
+  let stringNumber = number.toString();
+  if (stringNumber.length < 4) return number;
+  if (stringNumber.length > 9) {
+    let output = stringNumber.slice(0, stringNumber.length - 9);
+    if (stringNumber.length === 10 && stringNumber.charAt(1) != "0") {
+      output += '.' + stringNumber.charAt(1);
+    }
+    return output + "B";
+  }
+  if (stringNumber.length > 6) {
+    let output = stringNumber.slice(0, stringNumber.length - 6);
+    if (stringNumber.length === 7 && stringNumber.charAt(1) != "0") {
+      output += '.' + stringNumber.charAt(1);
+    }
+    return output + "M";
+  }
+
+  return global.formatPrice(number);
 };
