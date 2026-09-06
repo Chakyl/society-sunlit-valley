@@ -126,7 +126,11 @@
 	#the server, and because the broken task is saved with the world, it crashes again on every reboot.
 	#With this on, the broken task is safely cancelled instead: its items are refunded to storage,
 	#an error is written to the log, and the server keeps running.
-	#Fixes Refined Storage issues #3751 and #3727, and the reboot crash loops behind #3755 and #3753.
+	#Also covers world load: a saved task that can no longer be restored (for example its crafting
+	#pattern became invalid after a pack update) is dropped with a log entry instead of crash-looping
+	#the world forever.
+	#Fixes Refined Storage issues #3751, #3727, #3645, and #3635, and the reboot crash loops behind
+	##3755 and #3753.
 	enableCraftingCrashGuard = true
 	#Fixes grids randomly showing missing/wrong/empty item lists until reopened (RS bug #3693).
 	#Whenever the network rebuilds its item list (any block placed/broken on the network, chunks
@@ -140,8 +144,9 @@
 	#is destroyed and everything shows as empty on next boot.
 	#With this on, saves are atomic (the old file is never deleted first), failures are retried on the
 	#next autosave instead of silently dropped, and a clear error is logged.
-	#Tip: if you were already hit by this bug, look for a refinedstorage_disks.dat.temp file in your
-	#world's data folder - renaming it to refinedstorage_disks.dat usually recovers everything.
+	#Also heals existing damage on server start (RS bug #3637): an empty refinedstorage_*.dat left
+	#behind by the vanilla bug is restored from its .temp backup when one exists, or removed so a
+	#fresh file can be created instead of erroring on every boot.
 	enableSafeDataSaving = true
 	#When enabled, wireless items (Wireless Grid, Fluid Grid, Crafting Monitor, and addon wireless items)
 	#can only be used in the same dimension as the network they are linked to.
@@ -149,4 +154,126 @@
 	#even if an addon's infinite/cross-dimension wireless transmitter would normally allow it.
 	#Disabled by default (vanilla behavior).
 	enableWirelessDimensionLock = false
+	#Fixes covers crafting up purple/black and turning invisible when placed, and patterns
+	#not previewing their output while Shift is held (RS bug #3747).
+	#RS registers its custom cover and pattern models during mod setup, which the game runs
+	#at the same time as its first model bake. If the bake finishes first (more likely on
+	#slower PCs), the custom models are never swapped in and stay broken for the whole session.
+	#With this on, the models are registered right before every bake, so the race can't be lost.
+	#If a bake fires before this config file has loaded, the fix is applied regardless and this
+	#setting takes effect from the next bake onward.
+	enableModelRegistrationFix = true
+	#Stops the fluid grid from destroying fluids that can't go into a bucket (RS bugs #3732, #3169).
+	#Vanilla RS takes the fluid out of the network first and only then tries to fill the bucket -
+	#if the fluid has no bucket form (Create potions, many modded fluids), the fill silently fails
+	#and the fluid is gone, leaving the player holding an empty bucket.
+	#With this on, the extraction is checked first: if a bucket can't actually hold that fluid,
+	#or the network can't supply a full bucket's worth, the click simply does nothing and
+	#no fluid or bucket is lost.
+	enableFluidExtractionGuard = true
+	#Stops big storage systems from kicking players when a grid opens (RS bugs #3724, #3719, #3716).
+	#RS sends the grid's whole item list in one message, split into ~0.9 MB packets, but refuses
+	#to send more than 10 of them. Past roughly 200k stored items the list no longer fits, RS gives
+	#up halfway, and the client is disconnected with "Failure Splitting Packets".
+	#With this on, the packet limit is raised to maxSplitPackets so the full list always arrives.
+	enableRaisedPacketLimit = true
+	#Maximum number of ~0.9 MB packets one RS message may be split into (vanilla RS: 10).
+	#Default 100 supports item lists up to roughly 90 MB - only ever used if the data needs it.
+	#Only matters if enableRaisedPacketLimit is true.
+	#Range: 10 ~ 2000
+	maxSplitPackets = 100
+	#Fixes random crashes when crafting or using JEI's + button while patterns exist (RS bug #3712).
+	#RS keeps a shared pattern cache that both the server (crafters validating patterns) and the
+	#client (rendering patterns on screen) read and write at the same time, without any locking.
+	#In singleplayer the two threads can collide, crashing with a ConcurrentModificationException
+	#in PatternItem.fromCache - or silently corrupting the cache.
+	#With this on, cache access is properly locked. No behavior change otherwise.
+	enablePatternCacheThreadSafety = true
+	#Fixes item duplication and under-consumed ingredients with storage that holds more than 64
+	#items per slot, like Sophisticated Storage barrels/backpacks (RS bugs #3242, #3640, #3614).
+	#RS asks external storage for items one slot at a time, but a single request can never return
+	#more than one full stack - from a slot holding 256 items RS gets 64, moves on, and never
+	#comes back for the rest. Shift-crafting then ignores the missing ingredients entirely,
+	#handing out the full crafted output while consuming only part of the inputs.
+	#With this on, external storage keeps draining a slot until the request is satisfied, and
+	#shift-crafting checks what is actually extractable before crafting instead of trusting
+	#the cached counts.
+	#Also fixes an NBT duplication exploit (RS bug #3700): extracting with exact mode off used to
+	#merge different item variants from several slots into copies of the first one, cloning its
+	#data (drawer contents, bee cages, etc). Extraction now never mixes variants.
+	enableOverstackExtractionFix = true
+	#Reconnects network blocks whose chunks load after the controller has already scanned
+	#(RS bugs #3578, #3703, #3609, #3601).
+	#RS only discovers nodes when a block is placed - there is no discovery on chunk load at all.
+	#After a restart, anything in a chunk that loads later than the controller (external storage,
+	#exporters, receivers, crafters) stays disconnected until a cable is broken and replaced or
+	#the controller is power-cycled.
+	#With this on, freshly loaded chunks are checked for disconnected RS blocks and the adjacent
+	#network is rescanned automatically. Uses loadRescanDelay as the settle delay after chunk load.
+	enableChunkLoadDiscovery = true
+	#Stops requesters (RS Requestify and similar addons) from starting a duplicate craft after
+	#a world reload when the original craft was still running at save time.
+	#RS saves running crafting tasks with the world but only restores them lazily on the first
+	#crafting manager tick - a requester asking right after load sees an empty task list, so
+	#RS's own duplicate check passes and the same craft is started a second time.
+	#With this on, saved tasks are always restored before any crafting request is processed.
+	enableRestoredTaskDedup = true
+	#Stops JEI's + button from kicking the player on recipes with many ingredient variants
+	#(RS bugs #3676, #3450).
+	#RS sends every possible variant for every recipe slot to the server - for recipes like the
+	#note block ("any planks") or RS covers this easily exceeds Minecraft's 32 KB limit for
+	#client-to-server packets, and the player is disconnected.
+	#With this on, each slot's list is trimmed before sending: variants the player actually has
+	#(in inventory or storage) are kept first, so the transfer still picks the right items.
+	enableJeiTransferLimit = true
+	#Speeds up rendering of patterns whose items carry a lot of NBT data (RS bugs #3618, #3582, #3674).
+	#Every frame, for every visible pattern, RS re-hashes and re-compares the pattern's entire NBT
+	#tree (which contains full copies of all input and output items) just to look up what to render.
+	#For patterns of NBT-heavy items this tanks the framerate whenever they are on screen.
+	#With this on, the client remembers the result per pattern stack, so after the first frame the
+	#lookup is instant. Client-side only; no behavior change.
+	enablePatternRenderCache = true
+	#Fixes crashes with schematic and scan tools that copy RS blocks (RS bugs #3605, #3422, #3713).
+	#Structurize/MineColonies build template copies of block entities without a world, and Create's
+	#schematicannon loads schematics into a wrapper world that is not a real server world; in both
+	#cases RS assumes a real world is present and fails (scan tool resource lists crash, and
+	#schematics containing connected cables refuse to load into the cannon).
+	#With this on, such copies get a detached placeholder node instead, so scan tools see an empty
+	#inventory and schematics load normally.
+	enableTemplateNodeGuard = true
+	#Fixes JEI's + button doing nothing even though the ingredients are in storage,
+	#until the world is rejoined (RS bugs #3680, #3681).
+	#RS snapshots the storage contents for JEI exactly once, the first time a recipe is hovered.
+	#If that happens before the item list has arrived from the server (common on slower PCs or
+	#heavy modpacks), the snapshot is empty and never recovers - JEI then blocks every transfer
+	#as "missing items" for the rest of the session.
+	#With this on, a stale snapshot is rebuilt as soon as the real item list is available.
+	enableJeiTrackerRefresh = true
+	#Stops exporters from destroying items or fluids when the destination takes less than it
+	#promised (RS bug #3652).
+	#RS asks the destination how much fits before extracting, but ignores the result of the real
+	#insert afterward - a destination that accepts less than its simulation promised (slot-filtered
+	#machines, void-on-overflow containers, buggy handlers) silently destroys the difference.
+	#With this on, anything the destination refuses is put straight back into the network.
+	enableExporterVoidGuard = true
+	#Stops autocrafting from destroying inputs the target machine does not accept (RS bug #3684).
+	#When a processing recipe pushes its inputs into a machine, RS checks each item and fluid
+	#against the machine one at a time - two fluids can both pass the check for a single tank,
+	#and RS's own log admits what happens next: "the remainder has been voided!".
+	#With this on, anything the machine does not actually accept is refunded to the network
+	#instead of destroyed. The craft still stalls (cancel it to refund the rest), but nothing
+	#is lost.
+	enableProcessingVoidGuard = true
+	#Fixes warning spam from JEI and other mods when they sample cover items (RS bug #3659).
+	#RS's cover item model returns no particle texture at all, which crashes JEI's color scanner
+	#into a logged warning for every cover variant it inspects.
+	#With this on, covers report the particle texture of the block they are made of.
+	enableCoverParticleFix = true
+	#Fixes wireless item hotkeys bound to key combinations like Shift+E (RS bug #3692).
+	#RS polls the binding's pressed state on every key event; opening and closing a screen with
+	#the same base key leaves that state stuck, so on newer Forge versions (47.2.14+) pressing
+	#the modifier alone falsely opens the wireless grid.
+	#With this on, hotkeys react only to an actual press of their bound key with the right
+	#modifiers held, so combinations behave as configured.
+	enableHotkeyModifierFix = true
 

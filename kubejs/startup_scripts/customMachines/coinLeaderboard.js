@@ -12,7 +12,7 @@ global.updateLeaderboard = (block, level) => {
     const lbName = balanceStr[0]
     if (lbName.length <= 1) return;
     calcY -= 0.3;
-    global.spawnTextDisplay(block, calcY, "leaderboard", Text.of(`§6${lbName} §7- §f● §6${global.formatPrice(balanceStr[1])}`));
+    global.spawnTextDisplay(block, calcY, "leaderboard", Text.of(`§6${lbName} §7- §f● §6${global.formatPriceTruncated(balanceStr[1])}`));
   });
 };
 

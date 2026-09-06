@@ -41,6 +41,7 @@ StartupEvents.registry("block", (event) => {
     })
     .rightClick((click) => {
       const { block } = click;
+      if (player.isFake()) return;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       global.handleBERightClick(
         "supplementaries:block.jar.place",

@@ -30,6 +30,7 @@ StartupEvents.registry("block", (event) => {
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
+      if (player.isFake()) return;
       const facing = block.properties.get("facing");
       const season = global.getSeasonFromLevel(player.level);
 

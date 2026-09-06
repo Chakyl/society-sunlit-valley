@@ -177,7 +177,6 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                     server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} librarian_choice_dialog_book_fair`);
                 } else if (npcId === "wise_oak") {
                     if (Number(npcData.friendship) >= 500) {
-                        player.tell("opening shop")
                         server.runCommandSilent(`openshop ${player.username} wise_oak`)
                     }
                 } else {
