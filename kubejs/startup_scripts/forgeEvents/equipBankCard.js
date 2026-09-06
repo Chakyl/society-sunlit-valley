@@ -1,6 +1,6 @@
 console.info("[SOCIETY] equipBankCard.js loaded");
 
-ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", (e) => {
+global.handleCardCurioChange = (e) => {
     const { entity } = e;
     if (!(entity.isPlayer())) return;
     const slot = e.getIdentifier();
@@ -11,8 +11,9 @@ ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", (e) =
     let cardsList = server.persistentData.cardsList ?? {};
     let playerList = server.persistentData.playerList ?? {};
     let prevAccId = cardsList[uuid];
-    if (!playerList[prevAccId] && prevAccId && cardsList[prevAccId]) {
-        cardsList[prevAccId].filter(iUUID => iUUID !== uuid);
+    if (!playerList[prevAccId] && cardsList[prevAccId]) {
+        cardsList[prevAccId] = cardsList[prevAccId].filter(iUUID => iUUID !== uuid);
+        if (cardsList[prevAccId].length == 0) delete cardsList[prevAccId]
     };
     if (bankAccountId == null || playerList[bankAccountId]) {
         delete cardsList[uuid];
@@ -22,4 +23,8 @@ ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", (e) =
         cardsList[String(bankAccountId)].push(uuid);
     };
     server.persistentData.cardsList = cardsList;
+}
+
+ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", (e) => {
+    global.handleCardCurioChange(e)
 });

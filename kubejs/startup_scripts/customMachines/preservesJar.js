@@ -186,6 +186,7 @@ StartupEvents.registry("block", (event) => {
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
+      if (player.isFake()) return;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
 
       if (hand == "OFF_HAND") return;

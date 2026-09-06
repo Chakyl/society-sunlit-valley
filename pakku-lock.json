@@ -2408,7 +2408,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cozycafe-1.9-all.jar",
+                    "file_name": "cozycafe-1.10-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2416,18 +2416,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8720/404/cozycafe-1.9-all.jar",
-                    "id": "8720404",
+                    "url": "https://edge.forgecdn.net/files/8818/409/cozycafe-1.10-all.jar",
+                    "id": "8818409",
                     "parent_id": "1590319",
                     "hashes": {
-                        "sha1": "1de0cd65106055d3c1de287a1605c35cb6e17adb",
-                        "md5": "970b388b65a94f75b0f0e70525d1d477"
+                        "sha1": "a1569c79066d71a72f846689d17708088b8a715f",
+                        "md5": "b1290050950c8dff12c7dd84fbefcb20"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 423753,
-                    "date_published": "2026-08-23T23:30:32.960Z"
+                    "size": 426369,
+                    "date_published": "2026-09-06T00:17:30.997Z"
                 }
             ]
         },
@@ -4022,7 +4022,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "emi-1.1.22+1.20.1+forge.jar",
+                    "file_name": "emi-1.1.24+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4030,16 +4030,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6420/945/emi-1.1.22+1.20.1+forge.jar",
-                    "id": "6420945",
+                    "url": "https://edge.forgecdn.net/files/8081/375/emi-1.1.24+1.20.1+forge.jar",
+                    "id": "8081375",
                     "parent_id": "580555",
                     "hashes": {
-                        "sha1": "d8049d6ec86befcd100a0ff0fc8ebc289f735997",
-                        "md5": "441c582c6e8a1d6fd9e3d16a27c1a39e"
+                        "sha1": "ea320200878e4a49196760234a22da763671520a",
+                        "md5": "c86d5772fba9fbd4d612f2fe82397f72"
                     },
                     "required_dependencies": [],
-                    "size": 1048567,
-                    "date_published": "2025-04-14T03:37:30.690Z"
+                    "size": 1121750,
+                    "date_published": "2026-05-13T06:18:18.303Z"
                 }
             ]
         },
@@ -9965,7 +9965,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MCT-RS-Mixin-1.20.1-1.1.0-b420-release.jar",
+                    "file_name": "MCT-RS-Mixin-1.20.1-1.1.0-b431-release.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9973,18 +9973,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8441/87/MCT-RS-Mixin-1.20.1-1.1.0-b420-release.jar",
-                    "id": "8441087",
+                    "url": "https://edge.forgecdn.net/files/8742/610/MCT-RS-Mixin-1.20.1-1.1.0-b431-release.jar",
+                    "id": "8742610",
                     "parent_id": "1431536",
                     "hashes": {
-                        "sha1": "40856555c69228ee36c32ad87d0fa84beacd7f77",
-                        "md5": "091d65bdce5e40f6edcaf73e60fa9132"
+                        "sha1": "953d73ccbac8d2e924b575a3c1d0487098ce4ebb",
+                        "md5": "e1541f10d8468f12bf4885a565411486"
                     },
                     "required_dependencies": [
                         "243076"
                     ],
-                    "size": 167405,
-                    "date_published": "2026-07-16T00:28:40.397Z"
+                    "size": 206780,
+                    "date_published": "2026-08-26T22:45:20.417Z"
                 }
             ]
         },
@@ -10026,14 +10026,14 @@
             ]
         },
         {
-            "pakku_id": "2NpFfyC0W9akeQ9W",
+            "pakku_id": "xX3iXkPB6LbdIEUV",
             "pakku_links": [
-                "VjY1yclSang7lBB5",
+                "YKsf8thN8SoFlzhX",
                 "mrVomcKxYvpTPilO"
             ],
             "type": "MOD",
             "slug": {
-                "curseforge": "emi-backport"
+                "curseforge": "reliable-emi"
             },
             "name": {
                 "curseforge": "Reliable EMI (REMI)"
@@ -10044,7 +10044,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "emixx-forge-1.5.3.jar",
+                    "file_name": "remi-forge-1.20.1-4.6.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10052,19 +10052,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8636/807/emixx-forge-1.5.3.jar",
-                    "id": "8636807",
+                    "url": "https://edge.forgecdn.net/files/8812/535/remi-forge-1.20.1-4.6.8.jar",
+                    "id": "8812535",
                     "parent_id": "1411826",
                     "hashes": {
-                        "sha1": "854bbfad1ca9f8c6084f7befbae1eb179def259b",
-                        "md5": "bd2e2c54ca25bb34ac183fffc89e6b09"
+                        "sha1": "dfb0978098a4c667d2846eb04f88ed967943f0aa",
+                        "md5": "49ac4ab4adbebbacfea51f90590dc2a2"
                     },
                     "required_dependencies": [
-                        "351264",
+                        "667299",
                         "580555"
                     ],
-                    "size": 401124,
-                    "date_published": "2026-08-13T01:25:30.897Z"
+                    "size": 919492,
+                    "date_published": "2026-09-05T07:56:07.340Z"
                 }
             ]
         },
