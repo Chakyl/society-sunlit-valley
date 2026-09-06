@@ -50,7 +50,7 @@ StartupEvents.registry("item", (e) => {
             item !== "society:princess_hairbrush" &&
             item !== "society:perfect_cherry"
         ) {
-            e.create(item).texture(`society:item/artifacts/${item.path}`).rarity("uncommon");
+            e.create(item).texture(`society:item/artifacts/${item.path}`).tag("society:artifact").rarity("uncommon");
         }
     });
     e.create("society:perfect_cherry").texture("society:item/artifacts/perfect_cherry")
@@ -92,7 +92,7 @@ StartupEvents.registry("item", (e) => {
                     }
                 }
             });
-        }).rarity("uncommon");
+        }).tag("society:artifact").rarity("uncommon");
 
 
     e.create("society:omni_geode").texture("society:item/omni_geode");
@@ -102,13 +102,13 @@ StartupEvents.registry("item", (e) => {
     e.create("society:magma_geode").texture("society:item/magma_geode/magma_geode");
     
     global.MINERALS.forEach((mineral) => {
-        if (!mineral.disable_item_generation) {
-            e.create(`society:${mineral.item.path}`).texture(`society:item/${mineral.geode_type != "base" ? `${mineral.geode_type}_` : ""}geode/${mineral.item.path}`).tag("society:mineral")
+        if (!mineral.disableItemGeneration) {
+            e.create(`society:${mineral.item.path}`).texture(`society:item/${mineral.geodeType != "base" ? `${mineral.geodeType}_` : ""}geode/${mineral.item.path}`).tag("society:mineral")
         }
     });
 
     global.GEMS.forEach((gem) => {
-        if (gem.generate_item) e.create(`society:${gem.item.path}`).texture(`society:item/gems/${gem.item.path}`).tag("society:gem");
+        if (gem.generateItem) e.create(`society:${gem.item.path}`).texture(`society:item/gems/${gem.item.path}`).tag("society:gem");
     });
     global.CROP_DEFINITIONS.forEach((crop) => {
         if (crop.products.includes("preserves")) {
@@ -189,7 +189,7 @@ StartupEvents.registry("item", (e) => {
 
     // Pristine Gems
     global.MINERALS.forEach((mineral) => {
-        e.create(`society:pristine_${mineral.item.path}`).texture(`society:item/${mineral.geode_type != "base" ? `${mineral.geode_type}_` : ""}geode/${mineral.item.path}`).glow(true).tag("society:pristine");
+        e.create(`society:pristine_${mineral.item.path}`).texture(`society:item/${mineral.geodeType != "base" ? `${mineral.geodeType}_` : ""}geode/${mineral.item.path}`).glow(true).tag("society:pristine");
     });
     global.GEMS.forEach((gem) => {
         if (gem.item !== "society:prismatic_shard") e.create(`society:pristine_${gem.item.path}`).texture(`${gem.item.namespace}:item/${gem.item.namespace == "society" ? `gems/` : ""}${gem.item.path}`).glow(true).tag("society:pristine");

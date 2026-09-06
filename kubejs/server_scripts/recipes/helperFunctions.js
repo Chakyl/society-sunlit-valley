@@ -163,12 +163,12 @@ function autoworkPaintingHelper(event, inputTag, outputFormatter) {
     })
 }
 
-function farmersdelightCookingHelper(event, output, inputArray, time, container) {
+function cookingPotRecipeHelper(e, output, inputArray, container, time) {
     output = Item.of(output);
-    container = Item.of(container);
-    event.custom({
+    container = container ? Item.of(container) : undefined;
+    e.custom({
         type: "farmersdelight:cooking",
-        cookingtime: time,
+        cookingtime: time || 600,
         experience: 0,
         ingredients: makeJsonIngredients(inputArray, undefined, { splitCounts: true }),
         container: container,
