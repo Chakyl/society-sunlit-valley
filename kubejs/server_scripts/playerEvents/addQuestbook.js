@@ -4,7 +4,11 @@ PlayerEvents.loggedIn((e) => {
   const { player } = e;
   if (!player.stages.has("starting_items")) {
     player.stages.add("starting_items");
+    player.stages.add("invited_blacksmith");
     player.give("ftbquests:book");
+    player.give("whimsy_deco:phone");
+    player.give('selling_bin:selling_bin');
+    player.tell("Welcome to the super secret dev build. You can't really do anything here, questbook is broken. Invitations don't work, don't bother!")
     if (global.multiplayerSharestones) {
       player.give("waystones:white_sharestone");
       player.give(

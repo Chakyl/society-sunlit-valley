@@ -6,7 +6,9 @@
   "stage_required": "invited_librarian",
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:librarian\"}}"
+    "components": {
+      "society:npc_id": "society:librarian"
+    }
   },
   "trades": [
     {

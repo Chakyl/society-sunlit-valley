@@ -1,10 +1,14 @@
 {
   "shop_id": "blacksmith",
-  "name": { "translate": "shop.society_trading.blacksmith" },
+  "name": {
+    "translate": "shop.society_trading.blacksmith"
+  },
   "texture": "dialog:textures/portraits/blacksmith",
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:blacksmith\"}}"
+    "components": {
+      "society:npc_id": "society:blacksmith"
+    }
   },
   "selector_weight": -98,
   "villager_profession": "toolsmith",

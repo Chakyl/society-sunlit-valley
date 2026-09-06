@@ -1,12 +1,14 @@
 {
   "shop_id": "fisher",
-  "name": { "translate": "shop.society_trading.fisher",
+  "name": { "translate": "shop.society_trading.fisher"  },
   "texture": "dialog:textures/portraits/fisher",
   "villager_profession": "fisherman",
   "stage_required": "invited_fisher",
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:fisher\"}}"
+    "components": {
+      "society:npc_id": "society:fisher"
+    }
   },
   "selector_weight": -95,
   "trades": [

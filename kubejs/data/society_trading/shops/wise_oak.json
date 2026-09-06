@@ -5,7 +5,9 @@
   "hidden_from_selector": true,
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:wise_oak\"}}"
+    "components": {
+      "society:npc_id": "society:wise_oak"
+    }
   },
   "trades": [
     {

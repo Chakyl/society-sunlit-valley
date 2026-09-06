@@ -5,7 +5,9 @@
   "hidden_from_auto_trader": true,
   "jei_catalyst": {
     "id": "society:invitation",
-    "nbt": "{\"type\":{\"id\":\"society:carpenter\"}}"
+    "components": {
+      "society:npc_id": "society:carpenter"
+    }
   },
   "selector_weight": -96,
   "trades": [

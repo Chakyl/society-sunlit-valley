@@ -4,7 +4,9 @@
   "texture": "dialog:textures/portraits/carpenter",
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:carpenter\"}}"
+    "components": {
+      "society:npc_id": "society:carpenter"
+    }
   },
   "selector_weight": -96,
   "trades": [

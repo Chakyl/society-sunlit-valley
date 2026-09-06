@@ -8,7 +8,9 @@
   "selector_weight": -99,
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:market\"}}"
+    "components": {
+      "society:npc_id": "society:market"
+    }
   },
   "trades": [
     {

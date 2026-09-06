@@ -4,7 +4,9 @@
   "texture": "dialog:textures/portraits/librarian",
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:librarian\"}}"
+    "components": {
+      "society:npc_id": "society:librarian"
+    }
   },
   "hidden_from_auto_trader": true,
   "selector_weight": -100,

@@ -4,7 +4,9 @@
   "texture": "dialog:textures/portraits/banker",
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:banker\"}}"
+    "components": {
+      "society:npc_id": "society:banker"
+    }
   },
   "villager_profession": "cartographer",
   "stage_required": "invited_banker",

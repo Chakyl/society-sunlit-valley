@@ -5,7 +5,9 @@
   "stage_required": "invited_trader",
   "jei_catalyst": {
     "id": "society:villager",
-    "nbt": "{type:{id:\"society:trader\"}}"
+    "components": {
+      "society:npc_id": "society:trader"
+    }
   },
   "villager_profession": "fletcher",
   "trades": [
