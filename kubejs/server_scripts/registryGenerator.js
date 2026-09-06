@@ -271,11 +271,8 @@ ServerEvents.generateData('after_mods', (e) => {
         if (isNaN(value)) console.log(`[SELLING BIN CALC ERROR]: NAN found for cooked dish ${dish}`)
         else data.values[dish] = global.getSaleData(value, []);
         foodMap.set(dish, value);
-        console.log(`Setting: ${dish} to ${value}`)
-        console.log(foodMap.get(dish))
     }
 
-    console.log(data)
     e.json('selling_bin:data_maps/item/selling_bin_value.json', data)
 })
 
@@ -292,3 +289,23 @@ ServerEvents.recipes((e) => {
 ServerEvents.tags('item', (e) => {
     dishes.forEach((dish) => !dish.notDish && e.add('society:dish', dish.dish))
 })
+
+// On neoforge 1.21.1, how do I remove fortune's impact on an item entry
+LootJS.lootTables((e) => {
+    global.CROP_DEFINITIONS.forEach((crop) => {
+        if (!crop.blocked && crop.cropBlock) {
+            console.log("Crop: " + crop.cropBlock)
+            e.modifyBlockTables(crop.cropBlock).modifyEntry((entry) => {
+                if (entry.isItem() && entry.item.id === crop.item) {
+                    console.log(entry.getFunctions())
+                    entry.getFunctions();
+                    entry.setCount(crop.dropCount)
+                } else {
+                    return LootEntry.empty();
+                }
+                return entry
+
+            })
+        }
+    })
+});

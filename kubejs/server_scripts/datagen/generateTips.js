@@ -118,6 +118,7 @@
 //     ].forEach((tip) => {
 //         translationKeys[`society_tips.tip.${tip.title}`] = tip.content;
 //         JsonIO.write(`kubejs/assets/society/tips/${tip.title}.json`, {
+//             "type": "tipsmod:simple",
 //             "text": {
 //                 "translate": `society_tips.tip.${tip.title}`
 //             }

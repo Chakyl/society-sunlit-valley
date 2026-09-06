@@ -1083,7 +1083,6 @@ global.miscAdventurer = [
   { item: "society:ocean_jelly", value: 256 },
   { item: "society:nether_jelly", value: 512 },
   { item: "botania:black_lotus", value: 128 },
-  { item: "automobility:dash_panel", value: 60 },
   { item: "create:experience_nugget", value: 2 },
   { item: "create:experience_block", value: 18 },
   { item: "society:gnome", value: 360 },
