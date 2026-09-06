@@ -5,9 +5,9 @@ const CROP_VALUE_PER_DAY = 12;
 const dishes = [
     // Base Ingredients
     { dish: "minecraft:bread", ingredients: ['#c:foods/dough'], cookedCount: 1, type: "smoker" },
-    { dish: "create:wheat_flour", ingredients: ["minecraft:wheat"], cookedCount: 4, type: "milling" },
-    { dish: 'farmersdelight:pie_crust', ingredients: ["create:wheat_flour", "#society:small_milk"], cookedCount: 1, type: "crafting_shapeless" },
-    { dish: "farmersdelight:cabbage_leaf", ingredients: ["farmersdelight:cabbage"], cookedCount: 2, type: "chopping" },
+    { dish: "create:wheat_flour", ingredients: ["minecraft:wheat"], cookedCount: 4, notDish: true, type: "milling" },
+    { dish: 'farmersdelight:pie_crust', ingredients: ["create:wheat_flour", "#society:small_milk"], cookedCount: 1, notDish: true, type: "crafting_shapeless" },
+    { dish: "farmersdelight:cabbage_leaf", ingredients: ["farmersdelight:cabbage"], cookedCount: 2, notDish: true, type: "chopping" },
     // Bell Pepper
     { dish: "veggiesdelight:smoked_bellpepper", ingredients: ["veggiesdelight:bellpepper"], cookedCount: 1, type: "smoker" },
     { dish: "veggiesdelight:cacciatore", ingredients: ["veggiesdelight:bellpepper", "farmersdelight:tomato", 'minecraft:rabbit'], cookedCount: 1, type: "cooking_pot" },
@@ -26,10 +26,88 @@ const dishes = [
     { dish: "veggiesdelight:zucchini_quiche_slice", ingredients: ["veggiesdelight:zucchini_quiche"], cookedCount: 4, type: "chopping" },
     { dish: "veggiesdelight:stuffed_zucchinis", ingredients: ["veggiesdelight:zucchini", "veggiesdelight:zucchini", "#c:raw_meat"], cookedCount: 1, type: "oven" },
     { dish: "veggiesdelight:stuffed_zucchini_boat", ingredients: ["#society:small_milk", "veggiesdelight:zucchini", "#c:raw_meat"], cookedCount: 1, type: "oven" },
+    // Turnip
+    { dish: "veggiesdelight:turnip_water", ingredients: ["veggiesdelight:turnip", "veggiesdelight:turnip", 'minecraft:sugar'], cookedCount: 1, type: "crafting_shapeless" },
+    // TODO: stick?
+    { dish: "veggiesdelight:turnip_mutton_skewer", ingredients: ["veggiesdelight:turnip", 'minecraft:mutton'], cookedCount: 1, type: "smoker" },
+    { dish: "veggiesdelight:turnip_salad", ingredients: ["veggiesdelight:turnip", "farmersdelight:cabbage_leaf", "farmersdelight:cabbage_leaf"], cookedCount: 1, type: "bowl" },
+    { dish: "veggiesdelight:turnip_cake", ingredients: ["veggiesdelight:turnip", "farmersdelight:rice", 'culturaldelights:corn_cob', '#c:foods/dough'], cookedCount: 1, type: "oven" },
+    { dish: "veggiesdelight:turnip_beef_stew", ingredients: ["veggiesdelight:turnip", "minecraft:carrot", 'minecraft:beef'], cookedCount: 1, type: "cooking_pot" },
+    // Cauliflower
+    // { dish: "veggiesdelight:cauliflower_kuku", ingredients: ["veggiesdelight:cauliflower"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:cauliflower_soup", ingredients: ["veggiesdelight:cauliflower"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:garlic_rice_with_cauliflower", ingredients: ["veggiesdelight:cauliflower"], cookedCount: 1, type: "smoker" },
+    // // Beetroot
+    // { dish: "minecraft:beetroot_soup", ingredients: ["minecraft:beetroot"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:beetroot_brownie_tray", ingredients: ["minecraft:beetroot"], cookedCount: 1, type: "smoker" },
+    { dish: "veggiesdelight:beetroot_brownie", ingredients: ["veggiesdelight:beetroot_brownie_tray"], cookedCount: 4, type: "chopping" },
+    // { dish: "veggiesdelight:vegetables_wrap", ingredients: ["minecraft:beetroot"], cookedCount: 1, type: "smoker" },
+    // // Garlic
+    // { dish: "veggiesdelight:garlic_chicken_stew", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:garlic_rice_with_cauliflower", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:garlic_baked_cod", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:garlic_stuffed_mushrooms", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:garlic_bread", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
+    // // Pumpkin
+    // { dish: "minecraft:pumpkin_pie", ingredients: ["minecraft:pumpkin"], cookedCount: 1, type: "smoker" },
+    // { dish: "farmersdelight:pumpkin_soup", ingredients: ["minecraft:pumpkin"], cookedCount: 1, type: "smoker" },
+    // { dish: "farmersdelight:stuffed_pumpkin_block", ingredients: ["minecraft:pumpkin"], cookedCount: 1, type: "smoker" },
+    // { dish: "farmersdelight:stuffed_pumpkin", ingredients: ["minecraft:pumpkin"], cookedCount: 1, type: "smoker" },
+    // { dish: "starcatcher_delight:pumpkin_taiyaki", ingredients: ["minecraft:pumpkin"], cookedCount: 1, type: "smoker" },
+    // // Ginger
+    // { dish: "windswept:gingerbread_cookie", ingredients: ["windswept:ginger"], cookedCount: 1, type: "smoker" },
+    // { dish: "windswept:christmas_pudding", ingredients: ["windswept:ginger"], cookedCount: 1, type: "smoker" },
+    // { dish: "windswept_delights:christmas_pudding_slice", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "windswept:ginger_tea", ingredients: ["windswept:ginger"], cookedCount: 1, type: "smoker" },
+    // // Carrots
+    // { dish: "veggiesdelight:carrot_cake", ingredients: ["minecraft:carrot"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:carrot_cake_slice", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "minecraft:golden_carrot", ingredients: ["minecraft:carrot"], cookedCount: 1, type: "smoker" },
+    // { dish: "farmersdelight:vegetable_noodles", ingredients: ["minecraft:carrot"], cookedCount: 1, type: "smoker" },
+    // { dish: "farmersdelight:vegetable_soup", ingredients: ["minecraft:carrot"], cookedCount: 1, type: "smoker" },
+    // { dish: "farmersdelight:onion_soup", ingredients: ["minecraft:carrot"], cookedCount: 1, type: "smoker" },
+    // // Potato
+    // { dish: "farmersdelight:stuffed_potato", ingredients: ["minecraft:potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:potato_noodles", ingredients: ["minecraft:potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "farmersdelight:steak_and_potatoes", ingredients: ["minecraft:potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "minecraft:baked_potato", ingredients: ["minecraft:potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "nomansland:mashed_potatoes_with_mushrooms", ingredients: ["minecraft:potato"], cookedCount: 1, type: "smoker" },
+    // // Sweet Potatoes
+    // { dish: "veggiesdelight:baked_sweet_potato", ingredients: ["veggiesdelight:sweet_potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:sweet_potato_pie", ingredients: ["veggiesdelight:sweet_potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:sweet_potato_pie_slice", ingredients: ["veggiesdelight:sweet_potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:mashed_potatoes", ingredients: ["veggiesdelight:sweet_potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:sweet_potato_pancakes", ingredients: ["veggiesdelight:sweet_potato"], cookedCount: 1, type: "smoker" },
+    // { dish: "veggiesdelight:sweet_potato_cupcake", ingredients: ["veggiesdelight:sweet_potato"], cookedCount: 1, type: "smoker" },
+    // // Cucumber
+    // { dish: "vintagedelight:cucumber_salad", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "vintagedelight:cucumber_noodles", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "unusualfishmod:pickledish", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "vintagedelight:pickle_soup", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // // Eggplant
+    // { dish: "culturaldelights:smoked_eggplant", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "culturaldelights:poached_eggplants", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "culturaldelights:eggplant_burger", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "culturaldelights:eggplant_parmesan_block", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "culturaldelights:eggplant_parmesan", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // // Corn
+    // { dish: "culturaldelights:popcorn", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "culturaldelights:creamed_corn", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "culturaldelights:elote", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // // Ghost Pepper
+    // { dish: "vintagedelight:ghost_charcoal", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "vintagedelight:ghostly_chili", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "culturaldelights:spicy_curry", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // // Peanut
+    // { dish: "vintagedelight:pad_thai", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "vintagedelight:honey_roasted_peanut", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "vintagedelight:roasted_peanut", ingredients: [""], cookedCount: 1, type: "smoker" },
+    // { dish: "vintagedelight:pb_j", ingredients: [""], cookedCount: 1, type: "smoker" },
+
 ]
 // TODO: Balance last
 const tagFoodValues = {
-    '#c:foods/dough': 16, 
+    '#c:foods/dough': 16,
     "#c:foods/pasta": 16,
     "#c:eggs": 16,
     "#c:raw_meat": 32,
@@ -132,6 +210,7 @@ const foodMap = new Map();
 foodMap.set("minecraft:air", 0)
 global.MILK.forEach((x) => foodMap.set(x.item, x.value))
 global.MEAT.forEach((x) => foodMap.set(x.item, x.value))
+global.MISC_FOOD.forEach((x) => foodMap.set(x.item, x.value))
 global.MISC_ANIMAL_PRODUCTS.forEach((x) => foodMap.set(x.item, x.value))
 
 ServerEvents.generateData('after_mods', (e) => {
@@ -209,3 +288,7 @@ ServerEvents.recipes((e) => {
         }
     }
 });
+
+ServerEvents.tags('item', (e) => {
+    dishes.forEach((dish) => !dish.notDish && e.add('society:dish', dish.dish))
+})

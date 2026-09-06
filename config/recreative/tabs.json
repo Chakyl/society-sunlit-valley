@@ -14,6 +14,7 @@
       "society:tab",
       "exposure:exposure",
       "ftblibrary:ftb_library",
+      "farmersdelight:farmersdelight",
       "portable_blueprints:portable_blueprints",
       "aquaculture:tab",
       "vanillabackport:vanilla_backport",
@@ -30,7 +31,6 @@
       "easy_npc:config_items",
       "functionalstorage:main",
       "sereneseasons:main",
-      "industrially_plated:industrially_plated_blocks",
       "unusualfishmod:unusual_fish_tab",
       "starcatcher:starcatcher",
       "veggiesdelight:veggiesdelight_tab",
@@ -55,7 +55,6 @@
       "minecraft:ingredients",
       "simplehats:simplehats",
       "starcatcher_delight:starcatcher_delight",
-      "industrially_plated:industrially_plated_signage",
       "numismatics:main",
       "minecraft:functional_blocks",
       "autowork:autowork_tab",
@@ -90,6 +89,7 @@
     "add_items": [],
     "order": [
       "society:rare_furniture",
+      "society:dishes",
       "lootr:lootr",
       "herbalbrews:herbalbrews",
       "minecraft:hotbar",
@@ -124,7 +124,6 @@
       "easy_npc:config_items",
       "functionalstorage:main",
       "sereneseasons:main",
-      "industrially_plated:industrially_plated_blocks",
       "unusualfishmod:unusual_fish_tab",
       "starcatcher:starcatcher",
       "veggiesdelight:veggiesdelight_tab",
@@ -150,7 +149,6 @@
       "minecraft:ingredients",
       "simplehats:simplehats",
       "starcatcher_delight:starcatcher_delight",
-      "industrially_plated:industrially_plated_signage",
       "numismatics:main",
       "minecraft:functional_blocks",
       "minecraft:tools_and_utilities",
@@ -187,6 +185,19 @@
     "remove_items": [],
     "add_items": [
       "#society:loot_furniture"
+    ],
+    "order": []
+  },
+  {
+    "action": "custom_tab",
+    "tab": [
+      "society:dishes"
+    ],
+    "name": "Dishes",
+    "icon": "veggiesdelight:stuffed_bellpeppers_block",
+    "remove_items": [],
+    "add_items": [
+      "#society:dish"
     ],
     "order": []
   },

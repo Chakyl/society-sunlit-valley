@@ -99,6 +99,9 @@ global.MUSHROOMS = [
     { item: "cluttered:blue_roundhead", value: 140 },
     { item: "cluttered:fly_agaric", value: 140 },
 ]
+global.MISC_FOOD = [
+    { item: "minecraft:sugar", value: 4 }
+]
 global.EGGS = [
     // Eggs
     { item: "minecraft:egg", value: 4 },
