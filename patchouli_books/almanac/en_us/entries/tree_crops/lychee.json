@@ -1,7 +1,7 @@
 {
     "name": "Lychee 🌐",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:lycheeitem",
+    "icon": "fruittreemod:lycheeitem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -14,7 +14,7 @@
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:jungle_leaves",
-                    "F": "pamhc2trees:pamlychee[age=7]"
+                    "F": "fruittreemod:pamlychee[age=7]"
                 },
                 "pattern": [
                     ["0"],

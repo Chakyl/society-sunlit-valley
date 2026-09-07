@@ -2,21 +2,21 @@
 
 // // TODO: "vintagedelight:gearo_berry_bush"
 // const cropCollectorDenied = [
-//   "pamhc2trees:pamapple",
-//   "pamhc2trees:pamcherry",
-//   "pamhc2trees:pamorange",
-//   "pamhc2trees:pampeach",
-//   "pamhc2trees:pamplum",
-//   "pamhc2trees:pamhazelnut",
-//   "pamhc2trees:pampawpaw",
-//   "pamhc2trees:pambanana",
-//   "pamhc2trees:pamcinnamon",
-//   "pamhc2trees:pamdragonfruit",
-//   "pamhc2trees:pammango",
-//   "pamhc2trees:pamstarfruit",
-//   "pamhc2trees:pamlychee",
-//   "pamhc2trees:pamlemon",
-//   "pamhc2trees:pampassionfruit",
+//   "fruittreemod:pamapple",
+//   "fruittreemod:pamcherry",
+//   "fruittreemod:pamorange",
+//   "fruittreemod:pampeach",
+//   "fruittreemod:pamplum",
+//   "fruittreemod:pamhazelnut",
+//   "fruittreemod:pampawpaw",
+//   "fruittreemod:pambanana",
+//   "fruittreemod:pamcinnamon",
+//   "fruittreemod:pamdragonfruit",
+//   "fruittreemod:pammango",
+//   "fruittreemod:pamstarfruit",
+//   "fruittreemod:pamlychee",
+//   "fruittreemod:pamlemon",
+//   "fruittreemod:pampassionfruit",
 // ];
 // const checkMaxGrown = (destroyedBlock) => {
 //   return destroyedBlock.blockState.block.isMaxAge(destroyedBlock.blockState);

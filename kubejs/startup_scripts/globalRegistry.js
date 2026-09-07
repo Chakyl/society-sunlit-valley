@@ -647,7 +647,7 @@ const furnaceRecipes = [
   { item: "buzzier_bees:crystallized_honey_block", value: 24 },
   { item: "unusualfishmod:cooked_unusual_fillet", value: 64 },
   { item: "vintagedelight:ghost_charcoal", value: 36 },
-  { item: "pamhc2trees:roastedhazelnutitem", value: 32 },
+  { item: "fruittreemod:roastedhazelnutitem", value: 32 },
   { item: "vintagedelight:roasted_peanut", value: 24 },
   { item: "atmospheric:roasted_yucca_fruit", value: 8 },
   { item: "atmospheric:roasted_yucca_bundle", value: 72 },

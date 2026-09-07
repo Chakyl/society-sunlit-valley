@@ -2,12 +2,25 @@
 // Editing misc tags
 
 ServerEvents.tags('item', (e) => {
-    e.add('oreganized:stone_types/glance', 'oreganized:glance')
-    e.add("society:prismatic_shard", "society:prismatic_shard")
+    e.add("oreganized:stone_types/glance", "oreganized:glance");
+    e.add("society:prismatic_shard", "society:prismatic_shard");
+    [
+        "etcetera:cotton",
+        "society:carrot_seeds",
+        "society:garlic_seeds",
+        "society:ginger_seeds",
+        "society:onion_seeds",
+        "society:peanut_seeds",
+        "society:potato_seeds",
+        "society:sweet_potato_seeds",
+        "culturaldelights:eggplant_seeds"
+    ].forEach((item) => {
+        e.add("c:seeds", item);
+    });
 })
 
 ServerEvents.tags('block', (e) => {
-    e.add('c:end_stones', 'society:skull_end_stone')
+    e.add("c:end_stones", "society:skull_end_stone");
     e.add("society:opens_tanuki_catalog", "society:tanuki_catalog");
     e.add("society:opens_fantasy_catalog", "society:fantasy_catalog");
     e.add("society:opens_modern_catalog", "society:modern_catalog");
@@ -20,6 +33,7 @@ ServerEvents.tags('block', (e) => {
     ].forEach((item) => {
         e.add("society_trading:opens_shop_selector", item);
     });
+    
     [
         "minecraft:crafting_table",
         "numismatics:andesite_depositor",

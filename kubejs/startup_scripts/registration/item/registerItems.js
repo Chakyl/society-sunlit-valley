@@ -1,10 +1,13 @@
 console.info("[SOCIETY] registerItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
-  e.create("society:lead_sheet").texture("society:item/lead_sheet");
-  e.create("society:silver_sheet").texture("society:item/silver_sheet");
+  e.create("oreganized:lead_sheet").texture("society:item/lead_sheet");
+  e.create("oreganized:silver_sheet").texture("society:item/silver_sheet");
   e.create("society:water_cup").texture("society:item/water_cup").maxStackSize(16);
+  e.create("justhammers:small_core").texture("society:item/small_core");
   e.create("buildinggadgets2:gadget_core").texture("society:item/gadget_core");
+  e.create("society:building_supplies").texture("society:item/building_supplies");
+  e.create("society:greenhouse_building_supplies").texture("society:item/greenhouse_building_supplies");
   const tiers = [
     "Stone, Leather, Chainmail, and Cotton",
     "Iron",
@@ -17,19 +20,21 @@ StartupEvents.registry("item", (e) => {
       let templateId = `society:${tier.toLowerCase()}_upgrade_smithing_template`;
       e.create(templateId)
         .texture(`society:item/smithing/${tier.toLowerCase()}`)
-        .displayName("Smithing Template");
-
+        .displayName("Smithing Template")
     }
   });
 
-  e.create("society:tanuki_leaf").texture("society:item/tanuki_leaf").displayName(Text.green("♤ Tanuki Leaf"));
-  e.create("society:architects_digest").texture("society:item/architects_digest").displayName("♧ Architect's Digest");
-  e.create("society:fantasy_dust").texture("society:item/fantasy_dust").displayName(Text.yellow("♡ Fantasy Dust"));
+  // e.create("society:tanuki_leaf")
+  //   .texture("society:item/tanuki_leaf")
+  //   .displayName(Text.green("♤ Tanuki Leaf"));
+  // e.create("society:architects_digest")
+  //   .texture("society:item/architects_digest")
+  //   .displayName("♧ Architect's Digest");
+  e.create("society:fairy_dust").texture("society:item/fantasy_dust")
   e.create("society:stone_hand").texture("society:item/stone_hand");
   e.create("society:ancient_cog").texture("society:item/ancient_cog");
   e.create("society:pink_matter").texture("society:item/pink_matter");
   e.create("society:broken_clock").texture("society:item/broken_clock");
-  e.create("society:sea_biscut").texture("society:item/sea_biscut").displayName("Sea Biscuit").fireResistant(true);
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
   e.create("society:ancient_roe").texture("society:item/ancient_roe");
@@ -39,8 +44,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:cordycep").texture("society:item/cordycep");
   e.create("society:enkephalin").texture("society:item/enkephalin");
   e.create("society:gray_anatomy").texture("society:item/gray_anatomy");
-  e.create("society:recycled_core").texture("society:item/recycled_core");
-  e.create("society:strawberry").texture("society:item/strawberry")
+  e.create("society:recycled_core").texture("society:item/recycled_core");  e.create("society:strawberry").texture("society:item/strawberry")
     .food((food) => {
       food.nutrition(1);
       food.saturation(2);
@@ -52,15 +56,13 @@ StartupEvents.registry("item", (e) => {
       food.saturation(2);
       // food.fastToEat(true);
     });
-  e.create("society:deep_a_mochi")
-    .texture("society:item/deep_a_mochi")
+  e.create("society:deep_a_mochi").texture("society:item/deep_a_mochi")
     .displayName("Deep-a-Mochi")
     .food((food) => {
       food.nutrition(4);
       food.saturation(2);
     });
-  e.create("society:lemon_beignets")
-    .texture("society:item/lemon_beignets")
+  e.create("society:lemon_beignets").texture("society:item/lemon_beignets")
     .food((food) => {
       food.nutrition(3);
       food.saturation(3);
@@ -122,31 +124,13 @@ StartupEvents.registry("item", (e) => {
       food.saturation(4);
     })
     .useAnimation("drink");
-  e.create("society:starfruit_juice").texture("society:item/drinks/starfruit_juice")
-    .food((food) => {
-      food.nutrition(6);
-      // food.fastToEat(true);
-      food.saturation(3);
-    })
-    .useAnimation("drink");
-  e.create("society:sparkpod_juice").texture("society:item/drinks/sparkpod_juice")
-    .food((food) => {
-      food.nutrition(5);
-      // food.fastToEat(true);
-      food.saturation(2);
-    })
-    .useAnimation("drink");
-  e.create("society:mana_fruit_juice").texture("society:item/drinks/mana_fruit_juice")
-    .food((food) => {
-      food.nutrition(6);
-      // food.fastToEat(true);
-      food.saturation(42);
-    })
-    .useAnimation("drink");
   e.create("society:prize_ticket").texture("society:item/prize_ticket");
   e.create("splendid_slimes:slime_ticket").texture(
     "splendid_slimes:item/slime_ticket"
   );
+  e.create("society:dry_totem").texture("society:item/dry_totem");
+  e.create("society:rain_totem").texture("society:item/rain_totem");
+  e.create("society:thunder_totem").texture("society:item/thunder_totem");
   e.create("society:furniture_box").texture("society:item/furniture_box");
   const fantasyBoxes = [
     "nordic",
@@ -227,8 +211,7 @@ StartupEvents.registry("item", (e) => {
 
   e.create("society:elytra_wing").texture("society:item/elytra_wing");
   e.create("society:fish_radar").texture("society:item/fish_radar");
-  e.create("society:car_key").texture("society:item/car_key")
-    .maxStackSize(1)
+  e.create("society:car_key").texture("society:item/car_key").maxStackSize(1)
     .rarity("epic");
   e.create("society:kinetic_blueprint").texture(
     "society:item/kinetic_blueprint"
@@ -243,7 +226,8 @@ StartupEvents.registry("item", (e) => {
       // food.effect("botania:soul_cross", 3000, 2, 1.0);
       // food.fastToEat(true);
     });
-  e.create("society:canvas").texture("society:item/canvas").displayName("Artisan Canvas");
+  e.create("society:canvas").texture("society:item/canvas")
+    .displayName("Artisan Canvas");
   Color.DYE.forEach((color) => {
     e.create(`society:${color}_sheet`).texture(`society:item/sheets/${color}`);
   });
@@ -268,14 +252,12 @@ StartupEvents.registry("item", (e) => {
   e.create("society:treasure_totem").texture("society:item/treasure_totem");
   e.create("society:bubble_totem").texture("society:item/bubble_totem");
   e.create("society:mystic_syrup").texture("society:item/mystic_syrup");
-  e.create("society:net_bobber").texture("society:item/net_bobber")
-    .maxStackSize(1);
-  e.create("society:needle_bobber").texture("society:item/needle_bobber")
-    .maxStackSize(1);
+  e.create("society:net_bobber").texture("society:item/net_bobber").maxStackSize(1);
+  e.create("society:needle_bobber").texture("society:item/needle_bobber").maxStackSize(1);
   e.create("society:animal_cracker").texture("society:item/animal_cracker");
   e.create("society:sunlit_crystal").texture("society:item/sunlit_crystal");
-  e.create("society:plushie_wand").texture("society:item/plushie_wand")
-    .maxStackSize(1)
+  e.create("society:plushie_wand").texture("society:item/plushie_wand").maxStackSize(1)
+  e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
   e.create("society:pig_race_ticket").texture("society:item/pig_race_ticket");
   e.create("society:multiplayer_pig_race_ticket").texture(
     "society:item/pig_race_ticket_multiplayer"
@@ -287,28 +269,23 @@ StartupEvents.registry("item", (e) => {
   e.create(`society:crystal_of_regret_mining`).displayName("Crystal of Regret: Mining").texture("society:item/crystal_of_regret_mining")
   e.create(`society:crystal_of_regret_fishing`).displayName("Crystal of Regret: Fishing").texture("society:item/crystal_of_regret_fishing")
   e.create(`society:crystal_of_regret_adventuring`).displayName("Crystal of Regret: Adventuring").texture("society:item/crystal_of_regret_adventuring")
-
-
   // Food
   e.create("society:energy_drink").texture("society:item/drinks/energy_drink")
     .food((food) => {
       // food.fastToEat(true);
     })
     .useAnimation("drink");
-  e.create("society:pink_energy_drink")
-    .texture("society:item/drinks/pink_energy_drink")
+  e.create("society:pink_energy_drink").texture("society:item/drinks/pink_energy_drink")
     .food((food) => {
       // food.fastToEat(true);
     })
     .useAnimation("drink");
-  e.create("society:white_energy_drink")
-    .texture("society:item/drinks/white_energy_drink")
+  e.create("society:white_energy_drink").texture("society:item/drinks/white_energy_drink")
     .food((food) => {
       // food.fastToEat(true);
     })
     .useAnimation("drink");
-  e.create("society:mana_energy_drink")
-    .texture("society:item/drinks/mana_energy_drink")
+  e.create("society:mana_energy_drink").texture("society:item/drinks/mana_energy_drink")
     .food((food) => {
       // food.fastToEat(true);
     })
@@ -409,7 +386,6 @@ StartupEvents.registry("item", (e) => {
       food.effect("minecraft:strength", 6000, 0, 1.0);
       food.effect("minecraft:resistance", 6000, 2, 1.0);
     });
-
 
   // Husbandry
   [
@@ -516,7 +492,7 @@ StartupEvents.registry("item", (e) => {
       .food((food) => {
         food.nutrition(item.includes("large") ? 5 : 1);
         food.saturation(1);
-        food.alwaysEdible(true);
+        // food.alwaysEdible(true);
       })
       .useAnimation("drink");
   });
@@ -524,20 +500,23 @@ StartupEvents.registry("item", (e) => {
   e.create("society:coconut_oil").texture("society:item/coconut_oil");
   e.create("society:butterfly_amber").texture("society:item/butterfly_amber");
   e.create("society:moth_pollen").texture("society:item/moth_pollen");
+  e.create("society:caterpillar_eggs").texture("society:item/caterpillar_eggs");
   e.create(`society:magic_rope`).texture(`society:item/magic_rope`);
   e.create(`society:magic_tunnel`).texture(`society:item/magic_tunnel`);
-  e.create(`society:magnifying_glass`).texture(`society:item/magnifying_glass`)
-    .maxStackSize(1);
-  e.create(`society:cornucopia`).texture(`society:item/cornucopia`)
-    .maxStackSize(1);
+  e.create(`society:magnifying_glass`).texture(`society:item/magnifying_glass`).maxStackSize(1);
+  e.create(`society:cornucopia`).texture(`society:item/cornucopia`).maxStackSize(1);
   e.create("society:relic_trove").texture("society:item/relic_trove");
   e.create("society:artifact_trove").texture("society:item/artifact_trove");
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
   e.create("society:sparkstone_dust").texture("society:item/sparkstone_dust");
-  e.create("society:spark_gro").texture("society:item/spark_gro").displayName("Spark-Gro");
+  e.create("society:spark_gro").texture("society:item/spark_gro")
+    .displayName("Spark-Gro");
 
   e.create(`society:magic_bulb`).texture(`society:item/magic_bulb`);
+  e.create("create:crushed_raw_bismuth").texture(
+    "society:item/crushed_raw_bismuth"
+  );
 
   const ageableProductsTextureMap = [
     {
@@ -610,6 +589,7 @@ StartupEvents.registry("item", (e) => {
   //     texturePath = `${splitProduct[0]}:item/drinks/${splitProduct[1]}`;
   //   e.create(`society:aged_${splitProduct[1]}`)
   //     .texture(texturePath)
+  //     .tag("society:aged_product")
   //     .displayName(
   //       product.item === "brewery:whiskey_maggoallan" ||
   //         product.item === "brewery:whiskey_smokey_reverie"
@@ -621,6 +601,7 @@ StartupEvents.registry("item", (e) => {
 
   //   e.create(`society:double_aged_${splitProduct[1]}`)
   //     .texture(texturePath)
+  //     .tag("society:double_aged_product")
   //     .displayName(
   //       product.item === "brewery:whiskey_maggoallan" ||
   //         product.item === "brewery:whiskey_smokey_reverie"
@@ -752,32 +733,56 @@ StartupEvents.registry("item", (e) => {
         food.saturation(2);
       });
     const roeHex = fishRoeMapping.find((val) => val.item === fish.item)?.hex;
-    //   e.create(`society:${fishId}_roe`)
-    //     .texture("society:item/roe")
-    //     .color(0, roeHex);
-    //   e.create(`society:aged_${fishId}_roe`)
-    //     .texture("society:item/aged_roe")
-    //     .color(0, roeHex)
-    //     .food((food) => {
-    //       food.nutrition(5);
-    //       food.saturation(2);
-    //     });
+    e.create(`society:${fishId}_roe`)
+      .texture("society:item/roe")
+      .tag("society:roe")
+      .color(0, roeHex);
+    e.create(`society:aged_${fishId}_roe`)
+      .texture("society:item/aged_roe")
+      .tag("society:aged_roe")
+      .color(0, roeHex)
+      .food((food) => {
+        food.nutrition(5);
+        food.saturation(2);
+      });
     e.create(`society:${fishId}_bait`)
       .texture("society:item/fish_bait")
       .color(0, roeHex)
       .tag("crabbersdelight:crab_trap_bait")
+      .tag("society:targeted_bait")
+      .tooltip(Text.translatable("society.fish_bait.description").gray());
   });
-  e.create("veggiesdelight:garlic_seed").texture(
-    "veggiesdelight:item/garlic_seed"
-  );
 
-  e.create("sophisticatedbackpacks:diamond_backpack_upgrade")
-  e.create("sophisticatedbackpacks:prismatic_backpack_upgrade")
-  e.create("sophisticatedstorage:diamond_storage_upgrade")
-  e.create("sophisticatedstorage:prismatic_storage_upgrade")
+  // Placeholders
+  e.create("sophisticatedbackpacks:diamond_backpack_upgrade");
+  e.create("sophisticatedbackpacks:prismatic_backpack_upgrade");
+  e.create("sophisticatedstorage:diamond_storage_upgrade");
+  e.create("sophisticatedstorage:prismatic_storage_upgrade");
+  e.create("society:placeholder");
 
-  e.create("society:placeholder")
+  e.create("society:redstone_component");
+  e.create("society:advanced_redstone_component");
 
-  e.create("society:redstone_component")
-  e.create("society:advanced_redstone_component")
+  [
+    "cherry",
+    "lemon",
+    "orange",
+    "peach",
+    "plum",
+    "hazelnut",
+    "pawpaw",
+    "cinnamon",
+    "mango",
+    "starfruit",
+    "lychee",
+    "banana",
+    "dragon_fruit",
+    "passion_fruit"
+  ].forEach((fruit) => {
+
+    e.create(`fruittreemod:${fruit}`)
+    e.create(`fruittreemod:${fruit}_sapling`)
+  });
+    e.create(`fruittreemod:apple_sapling`)
+
 });

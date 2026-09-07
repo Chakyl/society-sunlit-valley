@@ -1,7 +1,7 @@
 {
     "name": "용과 ❆",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:dragonfruititem",
+    "icon": "fruittreemod:dragonfruititem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -14,7 +14,7 @@
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:jungle_leaves",
-                    "F": "pamhc2trees:pamdragonfruit[age=7]"
+                    "F": "fruittreemod:pamdragonfruit[age=7]"
                 },
                 "pattern": [
                     ["0"],

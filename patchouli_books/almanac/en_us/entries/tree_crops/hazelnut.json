@@ -1,7 +1,7 @@
 {
     "name": "Hazelnut 🍂",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:hazelnutitem",
+    "icon": "fruittreemod:hazelnutitem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -14,7 +14,7 @@
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:oak_leaves",
-                    "F": "pamhc2trees:pamhazelnut[age=7]"
+                    "F": "fruittreemod:pamhazelnut[age=7]"
                 },
                 "pattern": [
                     ["0"],

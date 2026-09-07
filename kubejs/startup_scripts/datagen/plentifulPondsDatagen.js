@@ -2627,13 +2627,13 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "pamhc2trees:pawpawitem", count: 32 },
+                        { item: "fruittreemod:pawpawitem", count: 32 },
                         { item: "vintagedelight:gearo_berry_bag", count: 32 },
                     ],
                 },
                 {
                     population: 7,
-                    requestedItems: [{ item: "pamhc2trees:plumitem", count: 64 }],
+                    requestedItems: [{ item: "fruittreemod:plumitem", count: 64 }],
                 },
             ],
             additionalRewards: [
@@ -3013,7 +3013,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "pamhc2trees:bananaitem", count: 32 },
+                        { item: "fruittreemod:bananaitem", count: 32 },
                         { item: "society:espresso", count: 4 },
                         { item: "unusualfishmod:cooked_unusual_fillet", count: 32 },
                     ],
@@ -3098,7 +3098,7 @@ global.fishPondDefinitions = new Map([
                     population: 3,
                     requestedItems: [
                         { item: "quark:lavender_blossom_sapling", count: 64 },
-                        { item: "pamhc2trees:peachitem", count: 16 },
+                        { item: "fruittreemod:peachitem", count: 16 },
                     ],
                 },
                 {
@@ -3217,7 +3217,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "pamhc2trees:plumitem", count: 16 },
+                        { item: "fruittreemod:plumitem", count: 16 },
                         { item: "vinery:jo_special_mixture", count: 1 },
                     ],
                 },

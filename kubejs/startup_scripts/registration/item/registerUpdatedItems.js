@@ -47,12 +47,26 @@ StartupEvents.registry("item", (e) => {
     global.ARTIFACTS.forEach((artifact) => {
         const { item } = artifact;
         if (
-            item !== "society:princess_hairbrush" &&
-            item !== "society:perfect_cherry"
+            !["society:princess_hairbrush", "society:red_wrench", "society:perfect_cherry"].includes(item)
         ) {
             e.create(item).texture(`society:item/artifacts/${item.path}`).tag("society:artifact").rarity("uncommon");
         }
     });
+    
+  e.create("society:red_wrench")
+    .texture("society:item/artifacts/red_wrench")
+    .maxStackSize(1)
+    .tag("society:artifacts")
+    .tag("forge:tools")
+    .tag("forge:tools/wrench")
+    .tag("forge:wrenches")
+    .tag("farm_and_charm:hangable")
+    .tag("create:upright_on_deployer")
+    .tag("create:chain_rideable")
+    .tag("refurbished_furniture:items")
+    .tag("furniture:trash_bag_blacklist")
+    .tag("supplementaries:statue_tools");
+
     e.create("society:perfect_cherry").texture("society:item/artifacts/perfect_cherry")
         .food((food) => {
             food.nutrition(1);

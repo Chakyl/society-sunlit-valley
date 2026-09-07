@@ -1,7 +1,7 @@
 {
     "name": "Cannelle \ud83c\udf42\u2746",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:cinnamonitem",
+    "icon": "fruittreemod:cinnamonitem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -13,9 +13,9 @@
             "enable_visualize": false,
             "multiblock": {
                 "mapping": {
-                    "0": "pamhc2trees:pamcinnamon[age=7]",
-                    "L": "pamhc2trees:pamcinnamon[age=6]",
-                    "H": "pamhc2trees:pamcinnamon[age=0]"
+                    "0": "fruittreemod:pamcinnamon[age=7]",
+                    "L": "fruittreemod:pamcinnamon[age=6]",
+                    "H": "fruittreemod:pamcinnamon[age=0]"
                 },
                 "pattern": [
                     ["0"],

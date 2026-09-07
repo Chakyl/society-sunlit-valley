@@ -8,7 +8,7 @@
 		{ id: "24C3810719D254A4", item: { count: 1, id: "society:infinity_worm" } }
 		{ id: "5F61D92ECD908B79", item: { count: 1, id: "society:ancient_cog" } }
 		{ id: "0B079D5D72336E3D", item: { count: 1, id: "society:tiny_gnome" } }
-		{ id: "5BE7E800D9E9C0E6", item: { count: 1, id: "society:sea_biscut" } }
+		{ id: "5BE7E800D9E9C0E6", item: { components: { "ftbquests:missing_item": "society:sea_biscut" }, count: 1, id: "ftbquests:missing_item" } }
 		{ id: "34976875A83721DD", item: { count: 1, id: "society:cordycep" } }
 	]
 }

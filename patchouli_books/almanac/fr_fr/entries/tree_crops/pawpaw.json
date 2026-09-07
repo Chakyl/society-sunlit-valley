@@ -1,7 +1,7 @@
 {
     "name": "Papaye \ud83c\udf42",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:pawpawitem",
+    "icon": "fruittreemod:pawpawitem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -14,7 +14,7 @@
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:oak_leaves",
-                    "F": "pamhc2trees:pampawpaw[age=7]"
+                    "F": "fruittreemod:pampawpaw[age=7]"
                 },
                 "pattern": [
                     ["0"],

@@ -1,7 +1,7 @@
 {
     "name": "Mango 🔥",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:mangoitem",
+    "icon": "fruittreemod:mangoitem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -14,7 +14,7 @@
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:oak_leaves",
-                    "F": "pamhc2trees:pammango[age=7]"
+                    "F": "fruittreemod:pammango[age=7]"
                 },
                 "pattern": [
                     ["0"],

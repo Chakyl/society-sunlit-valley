@@ -1,7 +1,7 @@
 {
     "name": "복숭아 🔥",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:peachitem",
+    "icon": "fruittreemod:peachitem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -14,7 +14,7 @@
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:oak_leaves",
-                    "F": "pamhc2trees:pampeach[age=7]"
+                    "F": "fruittreemod:pampeach[age=7]"
                 },
                 "pattern": [
                     ["0"],

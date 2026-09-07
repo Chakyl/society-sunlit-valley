@@ -1247,8 +1247,11 @@
 			rewards: [{
 				id: "656C37C798D162C5"
 				item: {
+					components: {
+						"ftbquests:missing_item": "society:sea_biscut"
+					}
 					count: 1
-					id: "society:sea_biscut"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

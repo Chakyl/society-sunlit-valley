@@ -1,7 +1,7 @@
 {
     "name": "Plum 🍂",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:plumitem",
+    "icon": "fruittreemod:plumitem",
     "pages": [
         {
             "type": "patchouli:text",
@@ -14,7 +14,7 @@
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:oak_leaves",
-                    "F": "pamhc2trees:pamplum[age=7]"
+                    "F": "fruittreemod:pamplum[age=7]"
                 },
                 "pattern": [
                     ["0"],

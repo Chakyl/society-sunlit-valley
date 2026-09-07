@@ -210,7 +210,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/carrot_seed");
+  //     seedItem.texture("society:item/carrot_seeds");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {

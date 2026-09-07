@@ -1002,7 +1002,7 @@ ServerEvents.recipes((e) => {
   removeByInput.forEach((item) => {
     e.remove({ input: item });
   });
-  e.remove({ mod: "pamhc2trees" });
+  e.remove({ mod: "fruittreemod" });
   e.remove({ mod: "waystones" });
   // Remove dying
   e.remove({ type: "meadow:cooking" });
