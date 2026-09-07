@@ -1085,7 +1085,7 @@ global.miscAdventurer = [
   { item: "botania:black_lotus", value: 128 },
   { item: "create:experience_nugget", value: 2 },
   { item: "create:experience_block", value: 18 },
-  { item: "society:gnome", value: 360 },
+  { item: "whimsy_deco:gnome", value: 360 },
   { item: "minecraft:experience_bottle", value: 8 },
   { item: "create_enchantment_industry:hyper_experience_bottle", value: 550 },
   { item: "twigs:opaline_seashell", value: 16 },

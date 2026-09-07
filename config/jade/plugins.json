@@ -88,6 +88,9 @@
     "block_properties": false,
     "mod_name": true
   },
+  "redomesticate": {
+    "collar_tag": true
+  },
   "quality_food": {
     "quality": true
   },
@@ -97,9 +100,6 @@
   "functionalstorage": {
     "armory": true,
     "drawer": true
-  },
-  "create_mobile_packages": {
-    "bee_port": true
   },
   "jadeaddons": {
     "equipment_requirement": ""
@@ -129,9 +129,5 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "item_descriptions": {
-    "block_descriptions": true,
-    "entity_descriptions": true
   }
 }

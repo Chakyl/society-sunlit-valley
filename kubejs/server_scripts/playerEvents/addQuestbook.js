@@ -5,6 +5,9 @@ PlayerEvents.loggedIn((e) => {
   if (!player.stages.has("starting_items")) {
     player.stages.add("starting_items");
     player.stages.add("invited_blacksmith");
+    player.stages.add("invited_carpenter");
+    player.stages.add("invited_market");
+    player.stages.add("invited_banker");
     player.give("ftbquests:book");
     player.give("whimsy_deco:phone");
     player.give('selling_bin:selling_bin');

@@ -1,6 +1,8 @@
 {
 	"shop_id": "bs_market",
-	"name": { "translate": "shop.society_trading.building_shop.market" },
+	"name": {
+		"translate": "shop.society_trading.building_shop.market"
+	},
 	"texture": "dialog:textures/portraits/carpenter",
 	"hidden_from_selector": true,
 	"display_type": "image",
@@ -11,7 +13,32 @@
 		{
 			"offer": {
 				"id": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"market_basic\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_market\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_market.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"market_basic\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"components": {
+					"custom_name": "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_market\"}",
+					"lore": [
+						"{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_market.author\"}"
+					],
+					"custom_data": {
+						"altezza": 0,
+						"blueprint_name": "market_basic",
+						"buildAnyway": "0b",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrorX": "0b",
+						"mirrorY": "0b",
+						"mirrorZ": "0b",
+						"nome": "market_basic",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": "0s",
+						"skipObstructionBlock": "0b",
+						"visualizeBuild": "1b",
+						"wasHolding": "0b",
+						"worn_set": "1b"
+					},
+					"damage": 0
+				},
 				"count": 1
 			},
 			"request": {
@@ -19,13 +46,40 @@
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/basic/market_basic",
-			"image_description": "portable_blueprints.worn_blueprint.basic_market.dimensions",
+			"image_description": {
+				"translate": "portable_blueprints.worn_blueprint.basic_market.dimensions"
+			},
 			"trade_id": "bs_market_basic"
 		},
 		{
 			"offer": {
 				"id": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"market_pineconetown\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_market\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_market.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"market_pineconetown\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"components": {
+					"custom_name": "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_market\"}",
+					"lore": [
+						"{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_market.author\"}"
+					],
+					"custom_data": {
+						"altezza": 0,
+						"blueprint_name": "market_pineconetown",
+						"buildAnyway": "0b",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrorX": "0b",
+						"mirrorY": "0b",
+						"mirrorZ": "0b",
+						"nome": "market_pineconetown",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": "0s",
+						"skipObstructionBlock": "0b",
+						"visualizeBuild": "1b",
+						"wasHolding": "0b",
+						"worn_set": "1b"
+					},
+					"damage": 0
+				},
 				"count": 1
 			},
 			"request": {
@@ -33,13 +87,40 @@
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/pineconetown/market_pineconetown",
-			"image_description": "portable_blueprints.worn_blueprint.pineconetown_market.dimensions",
+			"image_description": {
+				"translate": "portable_blueprints.worn_blueprint.pineconetown_market.dimensions"
+			},
 			"trade_id": "bs_market_pineconetown"
 		},
 		{
 			"offer": {
 				"id": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"market_rural\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_market\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_market.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"market_rural\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"components": {
+					"custom_name": "{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_market\"}",
+					"lore": [
+						"{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_market.author\"}"
+					],
+					"custom_data": {
+						"altezza": 0,
+						"blueprint_name": "market_rural",
+						"buildAnyway": "0b",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrorX": "0b",
+						"mirrorY": "0b",
+						"mirrorZ": "0b",
+						"nome": "market_rural",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": "0s",
+						"skipObstructionBlock": "0b",
+						"visualizeBuild": "1b",
+						"wasHolding": "0b",
+						"worn_set": "1b"
+					},
+					"damage": 0
+				},
 				"count": 1
 			},
 			"request": {
@@ -47,7 +128,9 @@
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/rural/market_rural",
-			"image_description": "portable_blueprints.worn_blueprint.rural_market.dimensions",
+			"image_description": {
+				"translate": "portable_blueprints.worn_blueprint.rural_market.dimensions"
+			},
 			"trade_id": "bs_market_rural"
 		}
 	]

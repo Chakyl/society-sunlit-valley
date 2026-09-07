@@ -289,7 +289,6 @@ ServerEvents.tags('item', (e) => {
         "chimes:copper_chimes",
         "chimes:amethyst_chimes",
         "chimes:glass_bells",
-        "snowyspirit:snow_globe",
         "supplementaries:cannon",
         "supplementaries:lunch_basket",
         "minecraft:bell",
