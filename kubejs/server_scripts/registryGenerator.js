@@ -1,7 +1,7 @@
 const debug = false;
 const CROP_VALUE_PER_DAY = 12;
 
-// IMPORTANT: If a recipe is used in an ingredientg of another recipe, it must be defined before its usage!
+// IMPORTANT: If a recipes output is used an ingredient of another recipe, it must be defined before its usage!
 const dishes = [
     // Base Ingredients
     { dish: "minecraft:bread", ingredients: ['#c:foods/dough'], cookedCount: 1, type: "smoker" },
@@ -34,18 +34,18 @@ const dishes = [
     { dish: "veggiesdelight:turnip_cake", ingredients: ["veggiesdelight:turnip", "farmersdelight:rice", 'culturaldelights:corn_cob', '#c:foods/dough'], cookedCount: 1, type: "oven" },
     { dish: "veggiesdelight:turnip_beef_stew", ingredients: ["veggiesdelight:turnip", "minecraft:carrot", 'minecraft:beef'], cookedCount: 1, type: "cooking_pot" },
     // Cauliflower
-    // { dish: "veggiesdelight:cauliflower_kuku", ingredients: ["veggiesdelight:cauliflower"], cookedCount: 1, type: "smoker" },
-    // { dish: "veggiesdelight:cauliflower_soup", ingredients: ["veggiesdelight:cauliflower"], cookedCount: 1, type: "smoker" },
-    // { dish: "veggiesdelight:garlic_rice_with_cauliflower", ingredients: ["veggiesdelight:cauliflower"], cookedCount: 1, type: "smoker" },
+    { dish: "veggiesdelight:cauliflower_kuku", ingredients: ["veggiesdelight:cauliflower", "farmersdelight:onion", "veggiesdelight:garlic", "farmersdelight:milk_bottle"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:cauliflower_soup", ingredients: ["veggiesdelight:cauliflower", "veggiesdelight:cauliflower", "farmersdelight:milk_bottle"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:garlic_rice_with_cauliflower", ingredients: ["veggiesdelight:cauliflower", "veggiesdelight:garlic", "farmersdelight:cooked_rice", "#c:eggs" ], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:cauliflower_bread", ingredients: ["veggiesdelight:cauliflower", "veggiesdelight:cauliflower", "minecraft:wheat"], cookedCount: 1, type: "oven" },
     // // Beetroot
-    // { dish: "minecraft:beetroot_soup", ingredients: ["minecraft:beetroot"], cookedCount: 1, type: "smoker" },
-    // { dish: "veggiesdelight:beetroot_brownie_tray", ingredients: ["minecraft:beetroot"], cookedCount: 1, type: "smoker" },
+    { dish: "minecraft:beetroot_soup", ingredients: ["minecraft:beetroot", "minecraft:beetroot", "minecraft:beetroot"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:beetroot_brownie_tray", ingredients: ["minecraft:beetroot", "minecraft:beetroot", "minecraft:beetroot", "minecraft:cocoa_beans", "minecraft:sugar", "minecraft:cocoa_beans", "#c:eggs", "minecraft:sugar", "#c:eggs"], cookedCount: 1, type: "oven" },
     { dish: "veggiesdelight:beetroot_brownie", ingredients: ["veggiesdelight:beetroot_brownie_tray"], cookedCount: 4, type: "chopping" },
-    // { dish: "veggiesdelight:vegetables_wrap", ingredients: ["minecraft:beetroot"], cookedCount: 1, type: "smoker" },
+    { dish: "veggiesdelight:vegetables_wrap", ingredients: ["minecraft:beetroot", "#c:foods:dough", "farmersdelight:cooked_rice","farmersdelight:onion", "#c:foods/leafy_green", "#c:mushrooms"], cookedCount: 1, type: "crafting_shapeless" },
     // // Garlic
-    // { dish: "veggiesdelight:garlic_chicken_stew", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
-    // { dish: "veggiesdelight:garlic_rice_with_cauliflower", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
-    // { dish: "veggiesdelight:garlic_baked_cod", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
+    { dish: "veggiesdelight:garlic_chicken_stew", ingredients: ["veggiesdelight:garlic", "#c:foods/cooked_chicken", "farmersdelight:milk_bottle"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:garlic_baked_cod", ingredients: ["veggiesdelight:garlic", "farmersdelight:cod_slice", "fruittreemod:lemon"], cookedCount: 1, type: "oven" },
     // { dish: "veggiesdelight:garlic_stuffed_mushrooms", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
     // { dish: "veggiesdelight:garlic_bread", ingredients: ["veggiesdelight:garlic"], cookedCount: 1, type: "smoker" },
     // // Pumpkin
