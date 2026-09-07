@@ -1,5 +1,6 @@
 global.removedItems = [
   // TEMP 
+  "numismatics:salepoint",
   // 2.0 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
   'sophisticatedbackpacks:mob_catcher_upgrade',
