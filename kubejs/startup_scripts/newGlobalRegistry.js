@@ -1,4 +1,6 @@
 // priority: -20
+global.datagenDialog = false;
+
 global.CROP_DEFINITIONS = [
     // Vegetables
     { item: "veggiesdelight:turnip", storageBlock: "veggiesdelight:turnip_crate", dropCount: 1, growDays: 4, seasons: ["spring"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:turnip_crop" },

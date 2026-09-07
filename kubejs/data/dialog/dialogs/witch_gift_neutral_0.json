@@ -1,0 +1,26 @@
+{
+	"id": "witch_gift_neutral_0",
+	"title": "witch introduction",
+	"description": "dialog.npc.witch.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.witch.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.witch.gift_neutral.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "witch.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

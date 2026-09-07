@@ -1,0 +1,26 @@
+{
+	"id": "trader_gift_hated_0",
+	"title": "trader introduction",
+	"description": "dialog.npc.trader.gift.hated",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.gift_hated.0.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "hated/trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

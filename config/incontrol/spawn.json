@@ -1,1 +1,64 @@
-[]
+[
+    {
+        "mob": [
+            "minecraft:drowned"
+        ],
+        "dimension": "minecraft:overworld",
+        "minheight": 30,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "minecraft:zombie",
+            "minecraft:skeleton",
+            "minecraft:enderman",
+            "minecraft:spider",
+            "minecraft:creeper",
+            "minecraft:witch",
+            "minecraft:husk",
+            "minecraft:stray",
+            "minecraft:bogged",
+            "minecraft:slime",
+            "minecraft:skeleton_horse",
+            "windswept:chilled"
+        ],
+        "dimension": "minecraft:overworld",
+        "minheight": 50,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "minecraft:drowned"
+        ],
+        "dimension": "minecraft:overworld",
+        "maxheight": 30,
+        "result": "allow"
+    },
+    {
+        "mob": [
+            "minecraft:zombie",
+            "minecraft:skeleton",
+            "minecraft:enderman",
+            "minecraft:spider",
+            "minecraft:creeper",
+            "minecraft:witch",
+            "minecraft:drowned",
+            "minecraft:slime",
+            "minecraft:husk",
+            "minecraft:stray",
+            "minecraft:bogged"
+        ],
+        "dimension": "minecraft:overworld",
+        "maxheight": 50,
+        "result": "allow"
+    },
+    {
+        "mob": [
+            "minecraft:zombie_villager",
+            "crittersandcompanions:dragonfly",
+            "crittersandcompanions:jumping_spider",
+            "minecraft:villager"
+        ],
+        "result": "deny"
+    }
+]

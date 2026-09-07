@@ -6,7 +6,7 @@ BlockEvents.rightClicked("furniture:blueprints", (e) => {
     `playsound minecraft:item.book.page_turn block @a ${block.x} ${block.y} ${block.z}`
   );
   server.runCommandSilent(
-    `dialog ${player.username} show ${player.username} blueprints_choice_dialog_prompt`
+    `execute as ${player.username} run dialog show blueprints_choice_dialog_prompt`
   );
   e.cancel()
 });

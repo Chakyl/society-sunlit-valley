@@ -1,0 +1,30 @@
+{
+	"id": "trader_chatter_friendship1_2",
+	"title": "[2] trader chatter at friendship level: friendship1",
+	"description": "dialog.npc.trader.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.chatter_friendship1.2.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p trader"
+			]
+		}
+	]
+}

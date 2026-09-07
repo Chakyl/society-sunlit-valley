@@ -1,0 +1,23 @@
+[explosion]
+	#Will creeper's active-explosion turn into firework?
+	CREEPER_EXPLODE_INTO_FIREWORK = true
+	#Will the active-explosion firework effect hurt nearby creature?
+	CREEPER_FIREWORK_HURT_CREATURE = false
+	#Will the active-explosion firework destroy nearby environment just like creeper normally exploding?
+	CREEPER_FIREWORK_DESTROY_BLOCK = false
+	#The probability of creeper turning into firework when actively explodes.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	CREEPER_EXPLODE_INTO_FIREWORK_PROBABILITY = 1.0
+
+[death_explosion]
+	#Will creeper explode into firework when die?
+	CREEPER_EXPLODE_INTO_FIREWORK_WHEN_DIE = false
+	#Will the death-explosion firework destroy nearby environment just like creeper normally exploding?
+	CREEPER_DEATH_FIREWORK_DESTROY_BLOCK = false
+	#Will the death-explosion firework effect hurt nearby creature?
+	CREEPER_DEATH_FIREWORK_HURT_CREATURE = false
+	#The probability of creeper turning into firework when die.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	CREEPER_EXPLODE_INTO_FIREWORK_PROBABILITY_WHEN_DIE = 1.0

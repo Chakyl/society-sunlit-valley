@@ -1,0 +1,45 @@
+{
+	"id": "librarian_gift_neutral_3",
+	"title": "librarian introduction",
+	"description": "dialog.npc.librarian.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.gift_neutral.3.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.gift_neutral.3.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

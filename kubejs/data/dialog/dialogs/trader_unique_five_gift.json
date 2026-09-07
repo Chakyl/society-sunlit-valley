@@ -1,0 +1,102 @@
+{
+	"id": "trader_unique_five_gift",
+	"title": "trader introduction",
+	"description": "dialog.npc.trader.unique.five_gift",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.unique_five_gift.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.unique_five_gift.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 2,
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.unique_five_gift.line_2"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": 3,
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.unique_five_gift.line_3"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.trader.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.trader.unique_five_gift.line_4"
+				}
+			],
+			"portraits": [
+				{
+					"path": "trader.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

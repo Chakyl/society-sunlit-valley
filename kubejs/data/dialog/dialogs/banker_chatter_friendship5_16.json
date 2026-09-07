@@ -1,0 +1,30 @@
+{
+	"id": "banker_chatter_friendship5_16",
+	"title": "[16] banker chatter at friendship level: friendship5",
+	"description": "dialog.npc.banker.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.chatter_friendship5.16.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p banker"
+			]
+		}
+	]
+}

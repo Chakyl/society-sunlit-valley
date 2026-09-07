@@ -1,0 +1,26 @@
+{
+	"id": "blacksmith_gift_neutral_4",
+	"title": "blacksmith introduction",
+	"description": "dialog.npc.blacksmith.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.gift_neutral.4.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

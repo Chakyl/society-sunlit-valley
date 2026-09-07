@@ -1,0 +1,30 @@
+{
+	"id": "blacksmith_chatter_friendship5_7",
+	"title": "[7] blacksmith chatter at friendship level: friendship5",
+	"description": "dialog.npc.blacksmith.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.blacksmith.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.blacksmith.chatter_friendship5.7.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "blacksmith.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p blacksmith"
+			]
+		}
+	]
+}

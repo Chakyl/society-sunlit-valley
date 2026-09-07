@@ -1,0 +1,49 @@
+{
+	"id": "banker_chatter_friendship4_1",
+	"title": "[1] banker chatter at friendship level: friendship4",
+	"description": "dialog.npc.banker.chatter.description",
+	"allowClose": true,
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.chatter_friendship4.1.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		},
+		{
+			"id": "end",
+			"speaker": {
+				"translate": "dialog.npc.banker.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.banker.chatter_friendship4.1.line_1"
+				}
+			],
+			"portraits": [
+				{
+					"path": "banker.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"command": [
+				"openshop @p banker"
+			]
+		}
+	]
+}

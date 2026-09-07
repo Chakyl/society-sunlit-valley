@@ -1,0 +1,26 @@
+{
+	"id": "carpenter_gift_neutral_4",
+	"title": "carpenter introduction",
+	"description": "dialog.npc.carpenter.gift.neutral",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.carpenter.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.carpenter.gift_neutral.4.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "carpenter.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			]
+		}
+	]
+}

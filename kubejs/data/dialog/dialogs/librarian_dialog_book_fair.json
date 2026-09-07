@@ -1,0 +1,49 @@
+{
+	"id": "librarian_choice_dialog_book_fair",
+	"title": "librarian book_fair",
+	"description": "dialog.npc.librarian.dialog.book_fair",
+	"entries": [
+		{
+			"id": "start",
+			"speaker": {
+				"translate": "dialog.npc.librarian.name",
+				"color": "white"
+			},
+			"text": [
+				{
+					"translate": "dialog.npc.librarian.dialog.book_fair.line_0"
+				}
+			],
+			"portraits": [
+				{
+					"path": "librarian.png",
+					"position": "INLINE",
+					"brightness": 1
+				}
+			],
+			"options": [
+				{
+					"text": {
+						"translate": "dialog.npc.librarian.dialog.book_fair.option_0"
+					},
+					"target": "end",
+					"command": [
+						"openshop @p librarian"
+					]
+				},
+				{
+					"text": {
+						"translate": "dialog.npc.librarian.dialog.book_fair.option_1"
+					},
+					"target": "end",
+					"command": [
+						"openshop @p book_fair"
+					]
+				}
+			]
+		},
+		{
+			"id": "end"
+		}
+	]
+}
