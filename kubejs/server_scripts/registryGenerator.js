@@ -4,16 +4,16 @@ const CROP_VALUE_PER_DAY = 12;
 // IMPORTANT: If a recipes output is used an ingredient of another recipe, it must be defined before its usage!
 const dishes = [
     // Base Ingredients
-    { dish: "minecraft:bread", ingredients: ['#c:foods/dough'], cookedCount: 1, type: "smoker" },
+    { dish: "minecraft:bread", ingredients: ["#c:foods/dough"], cookedCount: 1, type: "smoker" },
     { dish: "create:wheat_flour", ingredients: ["minecraft:wheat"], cookedCount: 4, notDish: true, type: "milling" },
-    { dish: 'farmersdelight:pie_crust', ingredients: ["create:wheat_flour", "#society:small_milk"], cookedCount: 1, notDish: true, type: "crafting_shapeless" },
+    { dish: "farmersdelight:pie_crust", ingredients: ["create:wheat_flour", "#society:small_milk"], cookedCount: 1, notDish: true, type: "crafting_shapeless" },
     { dish: "farmersdelight:cabbage_leaf", ingredients: ["farmersdelight:cabbage"], cookedCount: 2, notDish: true, type: "chopping" },
     // Bell Pepper
     { dish: "veggiesdelight:smoked_bellpepper", ingredients: ["veggiesdelight:bellpepper"], cookedCount: 1, type: "smoker" },
     { dish: "veggiesdelight:cacciatore", ingredients: ["veggiesdelight:bellpepper", "farmersdelight:tomato", 'minecraft:rabbit'], cookedCount: 1, type: "cooking_pot" },
     { dish: "veggiesdelight:stuffed_bellpeppers_block", ingredients: ["veggiesdelight:bellpepper", "veggiesdelight:bellpepper", "veggiesdelight:bellpepper", "#c:raw_meat"], cookedCount: 1, type: "oven" },
     { dish: "veggiesdelight:stuffed_bellpepper", ingredients: ["veggiesdelight:stuffed_bellpeppers_block"], cookedCount: 3, type: "feast" },
-    { dish: 'veggiesdelight:shakshouka', ingredients: ["veggiesdelight:bellpepper", "farmersdelight:tomato", "#c:eggs"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:shakshouka", ingredients: ["veggiesdelight:bellpepper", "farmersdelight:tomato", "#c:eggs"], cookedCount: 1, type: "cooking_pot" },
     // Broccoli
     { dish: "veggiesdelight:steak_and_broccoli", ingredients: ["veggiesdelight:broccoli", "minecraft:beef", "farmersdelight:rice"], cookedCount: 1, type: "oven" },
     { dish: "veggiesdelight:broccoli_soup", ingredients: ["veggiesdelight:broccoli", "veggiesdelight:broccoli", "#society:large_milk"], cookedCount: 1, type: "cooking_pot" },
@@ -111,6 +111,35 @@ const dishes = [
     // Enable when Art { dish: "society:onion_rings", ingredients: ["farmersdelight:onion", "#c:foods/dough", "society:oil"], cookedCount: 1, type: "cooking_pot"},
     // Enable when Art { dish: "society:onion_kugel", ingredients: ["farmersdelight:onion", "farmersdelight:pie_crust", "#c:eggs"], cookedCount: 1, type: "cooking_pot"},
     // Enable when Art { dish: "society:onion_tart", ingredients: ["farmersdelight:onion", "#c:foods/dough", "#society:small_milk", "#c:cheese"], cookedCount: 1, type: "cooking_pot"},
+    // // Beef
+    { dish: "minecraft:steak", ingredients: ["minecraft:beef"], cookedCount: 1, type: "smoker" },
+    { dish: "farmersdelight:minced_beef", ingredients: ["minecraft:beef"], cookedCount: 2, type: "chopping" },
+    { dish: "farmersdelight:pasta_with_meatballs", ingredients: ["farmersdelight:minced_beef", "#c:foods/pasta", "farmersdelight:tomato_sauce"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "veggiesdelight:steak_and_broccoli", ingredients: ["minecraft:beef", "farmersdelight:rice", "veggiesdelight:broccoli"], cookedCount: 1, type: "smoker" },
+    // // Pork
+    { dish: "farmersdelight:cooked_bacon", ingredients: ["farmersdelight:bacon"], cookedCount: 1, type: "smoker" },
+    { dish: "minecraft:porkchop", ingredients: ["minecraft:pork"], cookedCount: 1, type: "smoker" },
+    { dish: "farmersdelight:bacon_and_eggs", ingredients: ["farmersdelight:cooked_bacon", "farmersdelight:cooked_bacon", "#c:eggs", "#c:eggs"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "farmersdelight:honey_glazed_ham_block", ingredients: ["minecraft:sweet_berries", "minecraft:honey_bottle", "minecraft:sweet_berries", "minecraft:sweet_berries", "farmersdelight:smoked_ham", "minecraft:sweet_berries", "farmersdelight:cooked_rice", "minecraft:bowl", "minecraft:cooked_rice"], cookedCount: 1, type: "oven" },
+    { dish: "farmersdelight:plate_of_honey_glazed_ham", ingredients: ["farmersdelight:honey_glazed_ham_block"], cookedCount: 4, type: "feast" },
+    { dish: "farmersdelight:bacon_sandwich", ingredients: ["minecraft:bread", "farmersdelight:cooked_bacon", "#c:foods/leafy_green", "farmersdelight:tomato"], cookedCount: 1, type: "crafting_shapeless" },
+    // // Mutton
+    { dish: "farmersdelight:mutton_chops", ingredients: ["minecraft:mutton"], cookedCount: 2, type: "chopping" },
+    { dish: "minecraft:cooked_mutton", ingredients: ["minecraft:mutton"], cookedCount: 1, type: "smoker" },
+    { dish: "farmersdelight:pasta_with_mutton_chop", ingredients: ["#c:foods/raw_mutton", "#c:foods/pasta", "farmersdelight:tomato_sauce"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "farmersdelight:roasted_mutton_chops", ingredients: ["#c:foods/raw_mutton", "minecraft:mutton", "minecraft:bowl", "farmersdelight:cooked_rice", "farmersdelight:tomato"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "farmersdelight:shepherds_pie_block", ingredients: ["minecraft:baked_potato", "#society:small_milk", "minecraft:baked_potato", "#c:foods/cooked_mutton", "#c:foods/cooked_mutton", "#c:foods/cooked_mutton", "farmersdelight:onion", "minecraft:bowl", "farmersdelight:onion"], cookedCount: 1, type: "oven" },
+    { dish: "farmersdelight:plate_of_shepherds_pie", ingredients: ["farmersdelight:shepherds_pie_block"], cookedCount: 4, type: "feast" },
+    { dish: "farmersdelight:mutton_wrap", ingredients: ["culturaldelights:tortilla", "#c:foods/cooked_mutton", "#c:foods/leafy_green", "farmersdelight:onion"], cookedCount: 1, type: "crafting_shapeless" },
+    // // Goat
+    { dish: "windsweptdelights:cooked_goat_shanks", ingredients: ["windsweptdelights:goat_shanks"], cookedCount: 1, type: "smoker" },
+    { dish: "windswept:cooked_goat", ingredients: ["windswept:goat"], cookedCount: 1, type: "smoker" },
+    { dish: "windswept:goat_stew", ingredients: ["#c:foods/raw_goat", "minecraft:potato", "farmersdelight:rice"], cookedCount: 1, type: "cooking_pot" },
+    { dish: "culturaldelights:mutton_sandwich", ingredients: ["minecraft:bread", "#c:foods/cooked_mutton", "#c:eggs", "minecraft:beetroot"], cookedCount: 1, type: "crafting_shapeless" },
+    { dish: "windswept:mutton_pie", ingredients: ["#c:foods/cooked_mutton", "farmersdelight:pie_crust", "minecraft:sugar", "#c:eggs"], cookedCount: 1, type: "oven" },
+    // // Venison
+    { dish: "wildernature:cooked_venison", ingredients: ["windsweptdelights:goat_shanks"], cookedCount: 1, type: "smoker" },
+
 ]
 // TODO: Balance last
 const tagFoodValues = {
