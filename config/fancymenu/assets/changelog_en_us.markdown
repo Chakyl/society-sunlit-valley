@@ -3,18 +3,21 @@
 ### vsunlit-cobblemon-1.1.4-SSV4.1.5
 ^^^
 --- 
-- Legendary Bells and Bear Scroll will now store if they've spawned a legendary in the block, only spawning it if the player is close to prevent the need for babysitting
-- Added confirmation step to using Blossom Ball in fossil machine 
-- Added warning on Duo Training Pedestal
-- Updated ko_kr translation (Thanks Hexagreen!)
-- Updated zh_cn translation (Thanks Thirace!)
-- Fixed various lang strings being broken
-- Fixed fire and lava not counting for Groudon's hot blocks
-- Fixed water blocking Kyogre spawn ironically
-- Fixed various trainers having regional pokemon that didn't look like regional pokemon
-- Fixed trainer podium wins not progressing for real this time
-- Fixed Duo Challenge Podium bugs 
-- Fixed double battle softlocks (Thanks Newbula!)
+- Updated to Society: Sunlit Valley - 4.1.5
+- Added images for Kyogre/Groudon summons to make it more obvious + improved text
+- Added SSC-Mono singles format
+- Added Sunlit Crystal as Crystal Ball recipe
+- Increased Mew-N DNA chance
+- Groudon is now cinnamon flavored
+- Fixed Magikarp Taiyaki not being obtainable without a shiny
+- Fixed Tao items consuming double of the summoning item
+- Fixed Temple of Time boss not being fightable multiple times
+- Fixed more double battle softlocks (Thanks Newbula!)
+- Fixed scroll/bell chances being too high on second spawn
+- Fixed Booster Energy consuming like berries
+- Fixed Endless Battery not working in Energy Pylon
+- Fixed performance of Crystal Ball render
+- Fixed TMs being far too common in type badge reward pools
 
 ## Sunlit Cobblemon 1.1.0 
 - Updated to Sunlit Valley's Cozy Cafe update
@@ -90,6 +93,20 @@
 - Fixed various issues with the Cobblemon Farmers GUIs
 - Fixed Crystalarium not producing pristine Sunlit Cobblemon items
 - Fixed Duo Challenge Podium starting off with the hard trainers
+
+# 1.1.3
+- Legendary Bells and Bear Scroll will now store if they've spawned a legendary in the block, only spawning it if the player is close to prevent the need for babysitting
+- Added confirmation step to using Blossom Ball in fossil machine 
+- Added warning on Duo Training Pedestal
+- Updated ko_kr translation (Thanks Hexagreen!)
+- Updated zh_cn translation (Thanks Thirace!)
+- Fixed various lang strings being broken
+- Fixed fire and lava not counting for Groudon's hot blocks
+- Fixed water blocking Kyogre spawn ironically
+- Fixed various trainers having regional pokemon that didn't look like regional pokemon
+- Fixed trainer podium wins not progressing for real this time
+- Fixed Duo Challenge Podium bugs 
+- Fixed double battle softlocks (Thanks Newbula!)
 
 ## Sunlit Valley 4.1.0 - Cozy Cafe
 - Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
@@ -223,3 +240,18 @@
 - Fixed Quality Food particles never stopping
 - FIxed copycats crash
 - Fixed shift purchasing buying until inventory is full, bankrupting farmers across the valley
+
+## 4.1.5
+- Added Sub-Accounts from Create Numismatics update
+- Added number truncation to Coin Leaderboards
+- Add tooltip for Fish Pond Manager clipboard interaction
+- Removed purchase for Overflow Tokens as the Numismatics Team fixed the overflow bug! Tokens are still usable
+- Removed Waterframes integration with the pack so it can be safely removed from the pack if it doesn't work on your system
+- Added slim skin model rendering to Cozy Cafe customers
+- Food items in Cozy Cafe will render in 3D on plates if the food item also has a block
+- Fixed crossbow/painting texture errors
+- Fixed some logging messages showing
+- Fixed certain saplings not having tags
+- Fixed Coin Leaderboards blanking in specific cases
+- Fixed bank accounts overflowing to -2 billion at 2+ billion
+- Fixed dessert only Cozy Cafe menus having dirty plates 
