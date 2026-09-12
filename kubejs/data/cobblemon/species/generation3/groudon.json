@@ -1,0 +1,252 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 383,
+  "name": "Groudon",
+  "primaryType": "ground",
+  "maleRatio": -1,
+  "height": 35,
+  "weight": 9500,
+  "pokedex": [
+    "cobblemon.species.groudon.desc"
+  ],
+  "labels": [
+    "gen3",
+    "legendary",
+    "restricted"
+  ],
+  "aspects": [
+    "standard"
+  ],
+  "abilities": [
+    "drought",
+    "h:drought"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 100,
+    "attack": 150,
+    "defence": 140,
+    "special_attack": 100,
+    "special_defence": 90,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 335,
+  "experienceGroup": "slow",
+  "catchRate": 3,
+  "eggCycles": 120,
+  "baseFriendship": 0,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canWalkOnLava": true,
+        "canBreatheUnderlava": true,
+        "avoidsWater": true,
+        "canSwimInLava": true,
+        "canSwimInWater": false
+      },
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "society:ground_cinnamon"
+      },
+      {
+        "item": "minecraft:nether_star",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:mudshot",
+    "1:scaryface",
+    "1:lavaplume",
+    "1:ancientpower",
+    "1:precipiceblades",
+    "9:earthpower",
+    "18:bulkup",
+    "27:earthquake",
+    "36:hammerarm",
+    "45:fissure",
+    "54:rest",
+    "72:fireblast",
+    "81:solarbeam",
+    "90:eruption",
+    "tm:aerialace",
+    "tm:ancientpower",
+    "tm:block",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:brutalswing",
+    "tm:bulkup",
+    "tm:bulldoze",
+    "tm:crunch",
+    "tm:cut",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:dragonclaw",
+    "tm:dragonpulse",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firefang",
+    "tm:firepunch",
+    "tm:flamethrower",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:focuspunch",
+    "tm:furycutter",
+    "tm:gigaimpact",
+    "tm:headbutt",
+    "tm:heatcrash",
+    "tm:heatwave",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:highhorsepower",
+    "tm:honeclaws",
+    "tm:hyperbeam",
+    "tm:incinerate",
+    "tm:ironhead",
+    "tm:irontail",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metalclaw",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:overheat",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:rest",
+    "tm:roar",
+    "tm:rockblast",
+    "tm:rockclimb",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:rollout",
+    "tm:safeguard",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:scaryface",
+    "tm:scorchingsands",
+    "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:solarbeam",
+    "tm:spikes",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderpunch",
+    "tm:thunderwave",
+    "tm:willowisp",
+    "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:ancientpower",
+    "tutor:block",
+    "tutor:bulkup",
+    "tutor:bulldoze",
+    "tutor:dragonpulse",
+    "tutor:earthpower",
+    "tutor:firefang",
+    "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focuspunch",
+    "tutor:furycutter",
+    "tutor:gigaimpact",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:ironhead",
+    "tutor:irontail",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
+    "tutor:scorchingsands",
+    "tutor:shadowclaw",
+    "tutor:shockwave",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:thunderbolt",
+    "tutor:thunderpunch",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Primal",
+      "primaryType": "ground",
+      "secondaryType": "fire",
+      "maleRatio": -1,
+      "height": 50,
+      "weight": 9997,
+      "pokedex": [
+        "cobblemon.species.groudon-primal.desc"
+      ],
+      "labels": [
+        "gen6",
+        "legendary",
+        "restricted",
+        "primal"
+      ],
+      "aspects": [
+        "primal"
+      ],
+      "abilities": [
+        "desolateland",
+        "h:desolateland"
+      ],
+      "baseStats": {
+        "hp": 100,
+        "attack": 180,
+        "defence": 160,
+        "special_attack": 150,
+        "special_defence": 90,
+        "speed": 90
+      },
+      "baseExperienceYield": 385,
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
+}

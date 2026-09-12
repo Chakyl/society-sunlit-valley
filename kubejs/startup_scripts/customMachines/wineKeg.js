@@ -87,6 +87,7 @@ StartupEvents.registry("block", (event) => {
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
+      if (player.isFake()) return;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
 
       if (hand == "OFF_HAND") return;
@@ -116,7 +117,7 @@ StartupEvents.registry("block", (event) => {
         block.properties.get("mature") === "true" &&
         rnd5()
       ) {
-        block.popItemFromFace("society:relic_trove", facing);
+        block.popItemFromFace("society:relic_trove", block.properties.get("facing"));
       }
       global.handleBERightClick(
         "minecraft:block.wood.place",

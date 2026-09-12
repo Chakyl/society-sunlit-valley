@@ -184,7 +184,9 @@ ServerEvents.tags("item", (e) => {
   });
   e.add("society:raw_logs", "cobblemon:apricorn_log");
   e.add("society:fossilish", "#cobblemon:fossils");
-
+  e.remove('cobblemon:held/consumed_in_wild_battle', 'cobblemon:booster_energy');
+  e.remove('cobblemon:held/consumed_in_npc_battle', 'cobblemon:booster_energy');
+  e.remove('cobblemon:held/consumed_in_pvp_battle', 'cobblemon:booster_energy');
   [
     "cobblemon",
     "aquaculture",
@@ -301,7 +303,7 @@ ServerEvents.tags("block", (e) => {
     "#minecraft:coral_blocks"
 
   ].forEach((block) => {
-    e.add("society:biodome_water_building_blocks", block);
+    e.add("society:biodome_water_aquatic_blocks", block);
   });
   [
     "#forge:glass",
@@ -362,9 +364,15 @@ ServerEvents.tags("block", (e) => {
    "minecraft:nether_brick_slab",
    "quark:nether_brick_vertical_slab",
    "minecraft:cracked_nether_bricks",
-   "minecraft:chiseled_nether_bricks"
+   "minecraft:chiseled_nether_bricks",
+   "quark:gold_bars",
+   "quark:iron_bars",
+   "quark:chain",
+   "minecraft:chain",
+   "minecraft:iron_bars",
+   "twigs:blackstone_column"
   ].forEach((block) => {
-    e.add("society:biodome_fire_building_blocks", block);
+    e.add("society:biodome_fire_nether_blocks", block);
   });
   [
     "decorative_blocks:brazier",
@@ -380,7 +388,7 @@ ServerEvents.tags("block", (e) => {
     "cobblemon:fire_stone_ore",
     "cobblemon:fire_stone_block"
   ].forEach((block) => {
-    e.add("society:biodome_fire_hot_blocks", block);
+    e.add("society:biodome_fire_heat_blocks", block);
   });
   [
     "minecraft:obsidian",
@@ -403,6 +411,6 @@ ServerEvents.tags("entity_type", (e) => {
     "#forge:fishes",
     "@unusualfishmod"
   ].forEach((animal) => {
-    e.add("society:biodome_water_animals", animal);
+    e.add("society:biodome_water_wildlife", animal);
   });
 });

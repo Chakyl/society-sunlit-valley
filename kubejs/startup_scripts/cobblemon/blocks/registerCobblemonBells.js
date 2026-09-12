@@ -13,7 +13,8 @@ global.runBell = (entity, legendary) => {
     ) {
       let { x, y, z } = block;
       let server = level.getServer();
-      if (y >= 128 && Math.random() <= (alreadySpawned ? 0.05 : 0.2)) {
+      // 2.0 TOOD: save to item
+      if (y >= 128 && Math.random() <= (alreadySpawned ? 0.01 : 0.2)) {
         server.runCommandSilent(`playsound tanukidecor:block.clock_tower.chime block @a ${x} ${y} ${z} 3 0.4`);
         nbt.merge({
           data: {

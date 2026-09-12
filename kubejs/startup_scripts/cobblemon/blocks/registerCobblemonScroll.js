@@ -11,7 +11,8 @@ global.runBearScroll = (entity) => {
             morningModulo >= artMachineProgTime &&
             morningModulo < artMachineProgTime + artMachineTickRate
         ) {
-            if (Math.random() <= (alreadySpawned ? 0.05 : true)) {
+            // 2.0 TOOD: save to item
+            if (Math.random() <= (alreadySpawned ? 0.01 : 0.2)) {
                 let server = level.getServer();
                 let { x, y, z } = block;
                 server.runCommandSilent(`playsound etcetera:block.drum.dholak.high block @a ${x} ${y} ${z} 3 1`);
