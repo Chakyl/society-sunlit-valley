@@ -1,0 +1,152 @@
+[
+  {
+    "block": "#neoforge:villager_farmlands",
+    "item": {
+      "identifier": "starcatcher:worm"
+    },
+    "weight": 1485
+  },
+  {
+    "block": "#neoforge:villager_farmlands",
+    "item": {
+      "identifier": "starcatcher:almighty_worm"
+    },
+    "weight": 396
+  },
+  {
+    "block": "#neoforge:villager_farmlands",
+    "item": {
+      "identifier": "starcatcher:seeking_worm"
+    },
+    "weight": 99
+  },
+  {
+    "block": "#neoforge:villager_farmlands",
+    "item": {
+      "data_components_patch": {
+        "starcatcher:caught_fish_info": {
+          "rarity": "golden"
+        },
+        "starcatcher:modifiers": [
+          {
+            "type": "starcatcher:extra_golden_chance",
+            "weight": 0.1
+          }
+        ]
+      },
+      "identifier": "starcatcher:worm"
+    },
+    "weight": 15
+  },
+  {
+    "block": "#neoforge:villager_farmlands",
+    "item": {
+      "data_components_patch": {
+        "starcatcher:caught_fish_info": {
+          "rarity": "golden"
+        },
+        "starcatcher:modifiers": [
+          {
+            "type": "starcatcher:extra_golden_chance",
+            "weight": 0.1
+          }
+        ]
+      },
+      "identifier": "starcatcher:almighty_worm"
+    },
+    "weight": 4
+  },
+  {
+    "block": "#neoforge:villager_farmlands",
+    "item": {
+      "data_components_patch": {
+        "starcatcher:caught_fish_info": {
+          "rarity": "golden"
+        },
+        "starcatcher:modifiers": [
+          {
+            "type": "starcatcher:extra_golden_chance",
+            "weight": 0.1
+          }
+        ]
+      },
+      "identifier": "starcatcher:seeking_worm"
+    },
+    "weight": 1
+  },
+  {
+    "block": "farmersdelight:rich_soil_farmland",
+    "item": {
+      "identifier": "starcatcher:worm"
+    },
+    "weight": 50
+  },
+  {
+    "block": "farmersdelight:rich_soil_farmland",
+    "item": {
+      "identifier": "starcatcher:almighty_worm"
+    },
+    "weight": 30
+  },
+  {
+    "block": "farmersdelight:rich_soil_farmland",
+    "item": {
+      "identifier": "starcatcher:seeking_worm"
+    },
+    "weight": 20
+  },
+  {
+    "block": "farmersdelight:rich_soil_farmland",
+    "item": {
+      "data_components_patch": {
+        "starcatcher:caught_fish_info": {
+          "rarity": "golden"
+        },
+        "starcatcher:modifiers": [
+          {
+            "type": "starcatcher:extra_golden_chance",
+            "weight": 0.1
+          }
+        ]
+      },
+      "identifier": "starcatcher:worm"
+    },
+    "weight": 5
+  },
+  {
+    "block": "farmersdelight:rich_soil_farmland",
+    "item": {
+      "data_components_patch": {
+        "starcatcher:caught_fish_info": {
+          "rarity": "golden"
+        },
+        "starcatcher:modifiers": [
+          {
+            "type": "starcatcher:extra_golden_chance",
+            "weight": 0.1
+          }
+        ]
+      },
+      "identifier": "starcatcher:almighty_worm"
+    },
+    "weight": 3
+  },
+  {
+    "block": "farmersdelight:rich_soil_farmland",
+    "item": {
+      "data_components_patch": {
+        "starcatcher:caught_fish_info": {
+          "rarity": "golden"
+        },
+        "starcatcher:modifiers": [
+          {
+            "type": "starcatcher:extra_golden_chance",
+            "weight": 0.1
+          }
+        ]
+      },
+      "identifier": "starcatcher:seeking_worm"
+    },
+    "weight": 2
+  }
+]

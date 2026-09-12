@@ -42,7 +42,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/ancient_seed");
+      seedItem.texture("society:item/seedsancient_seed");
     });
 
   e.create("society:tubabacco_leaf", "crop")
@@ -65,7 +65,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/tubabacco_seed");
+      seedItem.texture("society:item/seedstubabacco_seed");
     })
 
   e.create("society:hops", "crop")
@@ -81,12 +81,12 @@ StartupEvents.registry("block", (e) => {
     })
     .survive((state, level, pos) => global.surviveCheck(level, pos))
     // .dropSeed(false)
-    .crop("brewery:hops", 1)
+    .crop("society:hops", 1)
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("brewery:item/hops_seeds");
+      seedItem.texture("society:item/seedshops_seeds");
     });
 
   e.create("society:blueberry", "crop")
@@ -115,7 +115,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/blueberry_seeds");
+      seedItem.texture("society:item/seedsblueberry_seeds");
     });
     
   e.create("society:cranberry", "crop")
@@ -137,7 +137,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/cranberry_seeds");
+      seedItem.texture("society:item/seedscranberry_seeds");
     })
   // e.create("society:eggplant", "crop")
   //   .age(6, (builder) => {
@@ -157,7 +157,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/eggplant_seeds");
+  //     seedItem.texture("society:item/seedseggplant_seeds");
   //   }).blockstateJson = {
   //   multipart: [
   //     {
@@ -210,7 +210,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/carrot_seeds");
+  //     seedItem.texture("society:item/seedscarrot_seeds");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -259,7 +259,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/potato_seed");
+  //     seedItem.texture("society:item/seedspotato_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -305,7 +305,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/onion_seed");
+  //     seedItem.texture("society:item/seedsonion_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": [
@@ -366,7 +366,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/sweet_potato_seed");
+  //     seedItem.texture("society:item/seedssweet_potato_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -409,7 +409,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/peanut_seed");
+  //     seedItem.texture("society:item/seedspeanut_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -515,6 +515,6 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/sparkpod_spores");
+      seedItem.texture("society:item/seedssparkpod_spores");
     })
 });

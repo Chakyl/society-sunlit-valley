@@ -6,8 +6,8 @@
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
     "energy_storage.style": "PROGRESS_BAR",
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -77,6 +77,9 @@
   "ftbquests": {
     "barrier": true
   },
+  "plentifulponds": {
+    "fish_pond": true
+  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,
@@ -101,6 +104,18 @@
     "armory": true,
     "drawer": true
   },
+  "ae2": {
+    "part_icon": true,
+    "charger": true,
+    "debug": true,
+    "part_tooltip": true,
+    "grid_node_state": true,
+    "pattern_provider": true,
+    "part_mod_name": true,
+    "power_storage": true,
+    "crafting_monitor": true,
+    "part_name": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
   },
@@ -114,15 +129,15 @@
   "sunrisegardening": {
     "crop_info": true
   },
+  "untitledduckmod": {
+    "lay_egg": true,
+    "next_eat": true
+  },
   "quark": {
     "oretoise_eating_cooldown": true
   },
   "supplementaries": {
     "hat_stand": true
-  },
-  "untitledduckmod": {
-    "lay_egg": true,
-    "next_eat": true
   },
   "kaleidoscope_tavern": {
     "barrel": true

@@ -1,0 +1,304 @@
+{
+  "fishing_lvl_1": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_1"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_1.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "starcatcher:tackle_box"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_1",
+          "lock_command": "kubejs stages remove @s fishing_lvl_1"
+        }
+      }
+    ]
+  },
+  "fishing_lvl_2": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_2"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_2.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "starcatcher:worm"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_2",
+          "lock_command": "kubejs stages remove @s fishing_lvl_2"
+        }
+      }
+    ]
+  },
+  "fishing_lvl_3": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_3"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_3.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "plentifulponds:oceanite_cluster"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_3",
+          "lock_command": "kubejs stages remove @s fishing_lvl_3"
+        }
+      }
+    ]
+  },
+  "fishing_lvl_4": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_4"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_4.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "starcatcher:leaf_bobber"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_4",
+          "lock_command": "kubejs stages remove @s fishing_lvl_4"
+        }
+      }
+    ]
+  },
+  "fly_fisher": {
+    "title": {"translate": "society.skills.fishing.fly_fisher"},
+    "description": {"translate": "society.skills.fishing.fly_fisher.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "furniture:iron_fish_tank"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fly_fisher",
+          "lock_command": "kubejs stages remove @s fly_fisher"
+        }
+      }
+    ]
+  },
+  "caper_catcher": {
+    "title": {"translate": "society.skills.fishing.caper_catcher"},
+    "description": {"translate": "society.skills.fishing.caper_catcher.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:neptuna_roe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s caper_catcher",
+          "lock_command": "kubejs stages remove @s caper_catcher"
+        }
+      }
+    ]
+  },
+  "fishing_lvl_6": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_6"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_6.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:river_jelly"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_6",
+          "lock_command": "kubejs stages remove @s fishing_lvl_6"
+        }
+      }
+    ]
+  },
+  "fishing_lvl_7": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_7"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_7.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "starcatcher:glowing_bobber"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_7",
+          "lock_command": "kubejs stages remove @s fishing_lvl_7"
+        }
+      }
+    ]
+  },
+  "fishing_lvl_8": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_8"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_8.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "starcatcher:gold_hook"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_8",
+          "lock_command": "kubejs stages remove @s fishing_lvl_8"
+        }
+      }
+    ]
+  },
+  "fishing_lvl_9": {
+    "title": {"translate": "society.skills.fishing.fishing_lvl_9"},
+    "description": {"translate": "society.skills.fishing.fishing_lvl_9.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "starcatcher:pearl"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s fishing_lvl_9",
+          "lock_command": "kubejs stages remove @s fishing_lvl_9"
+        }
+      }
+    ]
+  },
+  "angler": {
+    "title": {"translate": "society.skills.fishing.angler"},
+    "description": {"translate": "society.skills.fishing.angler.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "furniture:copper_fish_tank"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s angler",
+          "lock_command": "kubejs stages remove @s angler"
+        }
+      }
+    ]
+  },
+  "prismatic_bounty": {
+    "title": {"translate": "society.skills.fishing.prismatic_bounty"},
+    "description": {"translate": "society.skills.fishing.prismatic_bounty.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:prismatic_shard"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s prismatic_bounty",
+          "lock_command": "kubejs stages remove @s prismatic_bounty"
+        }
+      }
+    ]
+  },
+  "scum_collector": {
+    "title": {"translate": "society.skills.fishing.scum_collector"},
+    "description": {"translate": "society.skills.fishing.scum_collector.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "aquaculture:algae"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s scum_collector",
+          "lock_command": "kubejs stages remove @s scum_collector"
+        }
+      }
+    ]
+  },
+  "mitosis": {
+    "title": {"translate": "society.skills.fishing.mitosis"},
+    "description": {"translate": "society.skills.fishing.mitosis.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:mini_oni_eye"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mitosis",
+          "lock_command": "kubejs stages remove @s mitosis"
+        }
+      }
+    ]
+  }
+}

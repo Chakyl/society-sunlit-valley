@@ -1,0 +1,49 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [500, 1000, 2000, 4000, 7000, 9000, 10000, 12000, 18000, 20000]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:craft_item",
+      "data": {
+        "variables": {
+        },
+        "experience": [
+        ]
+      }
+    },
+    {
+      "type": "puffish_skills:fish_item",
+      "data": {
+        "variables": {
+          "is_fish": {
+            "operations": [
+              {
+                "type": "get_fished_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "#fishes"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_fish",
+            "expression": "100"
+          },
+          {
+            "condition": "!is_fish",
+            "expression": "10"
+          }
+        ]
+      }
+    }
+  ]
+}

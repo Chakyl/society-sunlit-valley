@@ -1,6 +1,8 @@
 {
   "shop_id": "librarian",
-  "name": { "translate": "shop.society_trading.librarian" },
+  "name": {
+    "translate": "shop.society_trading.librarian"
+  },
   "texture": "dialog:textures/portraits/librarian",
   "villager_profession": "weaponsmith",
   "stage_required": "invited_librarian",
@@ -205,19 +207,7 @@
     },
     {
       "offer": {
-        "id": "refinedstorage:controller",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 2
-      },
-      "numismatics_cost": 8192,
-      "trade_id": "librarian_controller_for_sun"
-    },
-    {
-      "offer": {
-        "id": "refinedstorage:4k_storage_block",
+        "id": "ae2:controller",
         "count": 1
       },
       "request": {
@@ -225,23 +215,98 @@
         "count": 1
       },
       "numismatics_cost": 4096,
-      "trade_id": "librarian_4k_storage_block_for_sun"
+      "trade_id": "librarian_controller_for_sun"
     },
     {
       "offer": {
-        "id": "refinedstorage:64k_storage_block",
+        "id": "ae2:creative_energy_cell",
         "count": 1
       },
       "request": {
         "id": "numismatics:sun",
-        "count": 16
+        "count": 1
       },
-      "numismatics_cost": 65536,
-      "trade_id": "librarian_64k_storage_block_for_sun"
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_creative_energy_cell_for_sun"
     },
     {
       "offer": {
-        "id": "refinedstorage:cable",
+        "id": "ae2:drive",
+        "components": {
+          "block_entity_data": {
+            "id": "ae2:drive",
+            "inv": {
+              "item0": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item1": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item2": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item3": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item4": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item5": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item6": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item7": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item8": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              },
+              "item9": {
+                "count": 1,
+                "id": "ae2:item_storage_cell_16k"
+              }
+            },
+            "priority": 0,
+            "proxy": {
+              "p": 0
+            }
+          }
+        },
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 8192,
+      "trade_id": "librarian_drive_block_for_sun"
+    },
+    {
+      "offer": {
+        "id": "ae2:crafting_terminal",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 8192,
+      "trade_id": "librarian_crafting_terminal_for_sun"
+    },
+    {
+      "offer": {
+        "id": "ae2:blue_covered_cable",
         "count": 1
       },
       "request": {
@@ -250,54 +315,6 @@
       },
       "numismatics_cost": 64,
       "trade_id": "librarian_cable_for_cog"
-    },
-    {
-      "offer": {
-        "id": "refinedstorage:external_storage",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 2048,
-      "trade_id": "librarian_external_storage_for_sun"
-    },
-    {
-      "offer": {
-        "id": "refinedstorage:crafting_grid",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 2
-      },
-      "numismatics_cost": 8192,
-      "trade_id": "librarian_crafting_grid_for_sun"
-    },
-    {
-      "offer": {
-        "id": "refinedstorageaddons:wireless_crafting_grid",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 12
-      },
-      "numismatics_cost": 49152,
-      "trade_id": "librarian_wireless_crafting_grid_for_sun"
-    },
-    {
-      "offer": {
-        "id": "refinedstorage:wireless_transmitter",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 16384,
-      "trade_id": "librarian_wireless_transmitter_for_sun"
     },
     {
       "offer": {

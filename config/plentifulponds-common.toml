@@ -1,0 +1,13 @@
+[general]
+	#Enables the Aged Roe items in the creative menu. Not super useful outside of custom modpacks where a dev makes recipes.
+	enable_aged_roe = false
+
+[stages]
+	#Requires KubeJs. The stage name with the following impact: Doubles chance of receiving non-roe items from ponds. Can be added to the player using the command e.g, /kubejs stages add playerName scum_collector
+	scum_collector_stage = "scum_collector"
+	#Requires KubeJs. The stage name with the following impact: Doubles a fish being retrieved from Fish Ponds if it was born there. Can be added to the player using the command e.g, /kubejs stages add playerName mitosis
+	mitosis_stage = "mitosis"
+	#Requires KubeJs. The stage name with the following impact: Taking out fish born in Fish Ponds smokes them.25%% chance they get charred into coal. Can be added to the player using the command e.g, /kubejs stages add playerName hot_hands
+	hot_hands_stage = "hot_hands"
+	#Requires KubeJs. The stage name with the following impact: Fish Pond quests will accept half the required items. Can be added to the player using the command e.g, /kubejs stages add playerName pond_house_five
+	quest_reduction_stage = "pond_house_five"

@@ -11,7 +11,7 @@ global.CROP_DEFINITIONS = [
     { item: "vintagedelight:cucumber", storageBlock: "vintagedelight:cucumber_crate", dropCount: 1, growDays: 10, regrowDays: 3, seasons: ["spring"], yearTwo: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: 'vintagedelight:cucumber_crop' },
     { item: "farmersdelight:cabbage", storageBlock: "farmersdelight:cabbage_crate", dropCount: 1, growDays: 8, seasons: ["spring"], products: [], classifications: ["vegetable"], cropBlock: "farmersdelight:cabbages" },
 
-    { item: "farmersdelight:tomato", storageBlock: "farmersdelight:tomato_crate", dropCount: [2, 3], growDays: 6, regrowDays: 3, seasons: ["spring", "summer"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "farmersdelight:tomatoes" },
+    { item: "farmersdelight:tomato", storageBlock: "farmersdelight:tomato_crate", dropCount: [2, 3], growDays: 6, regrowDays: 3, seasons: ["spring", "summer"], products: ["preserves"], classifications: ["vegetable"], cropBlock: "farmersdelight:tomatoes" },
 
     { item: "veggiesdelight:bellpepper", storageBlock: "veggiesdelight:bellpepper_crate", dropCount: 1, growDays: 7, regrowDays: 3, seasons: ["summer"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:bellpepper_crop" },
     { item: "vintagedelight:ghost_pepper", storageBlock: "vintagedelight:ghost_pepper_crate", dropCount: [1, 3], growDays: 7, regrowDays: 3, seasons: ["summer"], yearTwo: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "vintagedelight:ghost_pepper_crop" },

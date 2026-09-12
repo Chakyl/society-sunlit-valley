@@ -1,0 +1,20 @@
+{
+  "values": {
+    "minecraft:luck_of_the_sea": [
+      {
+        "type": "starcatcher:spawn_treasure",
+        "chance": 0.02,
+        "translation_override": "hide"
+      }
+    ],
+    "minecraft:lure": [
+      {
+        "type": "starcatcher:adjust_lure_time",
+        "chance_every_tick_multiplier": 1.0,
+        "max_ticks_multiplier": 0.95,
+        "min_ticks_multiplier": 0.95,
+        "translation_override": "hide"
+      }
+    ]
+  }
+}

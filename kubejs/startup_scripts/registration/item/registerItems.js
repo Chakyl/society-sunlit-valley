@@ -44,73 +44,63 @@ StartupEvents.registry("item", (e) => {
   e.create("society:cordycep").texture("society:item/cordycep");
   e.create("society:enkephalin").texture("society:item/enkephalin");
   e.create("society:gray_anatomy").texture("society:item/gray_anatomy");
-  e.create("society:recycled_core").texture("society:item/recycled_core");  e.create("society:strawberry").texture("society:item/strawberry")
-    .food((food) => {
-      food.nutrition(1);
-      food.saturation(2);
-      // food.fastToEat(true);
-    });
-  e.create("society:blueberry").texture("society:item/blueberry")
-    .food((food) => {
-      food.nutrition(1);
-      food.saturation(2);
-      // food.fastToEat(true);
-    });
-  e.create("society:deep_a_mochi").texture("society:item/deep_a_mochi")
-    .displayName("Deep-a-Mochi")
-    .food((food) => {
-      food.nutrition(4);
-      food.saturation(2);
-    });
-  e.create("society:lemon_beignets").texture("society:item/lemon_beignets")
-    .food((food) => {
-      food.nutrition(3);
-      food.saturation(3);
-    });
+  e.create("society:recycled_core").texture("society:item/recycled_core");  
   e.create("society:hops").texture("society:item/hops");
-  e.create("society:tubabacco_leaf").texture("society:item/tubabacco_leaf");
-  e.create("society:dried_tubabacco_leaf").texture("society:item/tubabacco_leaf")
+  e.create("society:tubabacco_leaf").texture("society:item/crops/tubabacco_leaf");
+  e.create("society:dried_tubabacco_leaf").texture("society:item/crops/tubabacco_leaf")
     .color(0, 0x785246);
   e.create("society:tubasmoke_stick").texture("society:item/tubasmoke_stick");
   e.create("society:tubasmoke_carton").texture("society:item/tubasmoke_carton");
-  e.create("society:ancient_fruit").texture("society:item/ancient_fruit")
+  e.create("society:strawberry").texture("society:item/crops/strawberry")
+    .food((food) => {
+      food.nutrition(1);
+      food.saturation(2);
+      // food.fastToEat(true);
+    });
+  e.create("society:blueberry").texture("society:item/crops/blueberry")
+    .food((food) => {
+      food.nutrition(1);
+      food.saturation(2);
+      // food.fastToEat(true);
+    });
+  e.create("society:ancient_fruit").texture("society:item/crops/ancient_fruit")
     .food((food) => {
       food.nutrition(6);
       food.saturation(3);
       // food.fastToEat(true);
     });
-  e.create("society:sparkpod").texture("society:item/sparkpod")
+  e.create("society:sparkpod").texture("society:item/crops/sparkpod")
     .food((food) => {
       food.nutrition(3);
       food.saturation(1);
       food.effect("minecraft:haste", 2000, 2, 1.0);
       // food.fastToEat(true);
     });
-  e.create("society:salmonberry").texture("society:item/salmonberry")
+  e.create("society:salmonberry").texture("society:item/crops/salmonberry")
     .food((food) => {
       food.nutrition(1);
       food.saturation(2);
       // food.fastToEat(true);
     });
-  e.create("society:boysenberry").texture("society:item/boysenberry")
+  e.create("society:boysenberry").texture("society:item/crops/boysenberry")
     .food((food) => {
       food.nutrition(1);
       food.saturation(3);
       // food.fastToEat(true);
     });
-  e.create("society:cranberry").texture("society:item/cranberry")
+  e.create("society:cranberry").texture("society:item/crops/cranberry")
     .food((food) => {
       food.nutrition(1);
       food.saturation(2);
       // food.fastToEat(true);
     });
-  e.create("society:crystalberry").texture("society:item/crystalberry")
+  e.create("society:crystalberry").texture("society:item/crops/crystalberry")
     .food((food) => {
       food.nutrition(1);
       food.saturation(1);
       // food.fastToEat(true);
     });
-  e.create("society:mossberry").texture("society:item/mossberry")
+  e.create("society:mossberry").texture("society:item/crops/mossberry")
     .food((food) => {
       food.nutrition(2);
       food.saturation(3);
@@ -124,6 +114,9 @@ StartupEvents.registry("item", (e) => {
       food.saturation(4);
     })
     .useAnimation("drink");
+    
+  e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
+  e.create("society:chai_blend").texture("society:item/chai_blend");
   e.create("society:prize_ticket").texture("society:item/prize_ticket");
   e.create("splendid_slimes:slime_ticket").texture(
     "splendid_slimes:item/slime_ticket"
@@ -324,51 +317,67 @@ StartupEvents.registry("item", (e) => {
     })
     .useAnimation("drink");
 
-  e.create("society:hazelnut_ella").texture("society:item/hazelnut_ella")
+  e.create("society:pumpkin_chai_latte").texture("society:item/drinks/pumpkin_chai_latte")
+    .food((food) => {
+      food.alwaysEdible(true);
+      food.nutrition(1);
+      food.saturation(2);
+      food.effect("herbalbrews:tough", 6000, 1, 1.0);
+    })
+    .useAnimation("drink");
+
+  /**
+   *  DISHES
+   */
+  e.create("society:hazelnut_ella").texture("society:item/dishes/hazelnut_ella")
     .food((food) => {
       food.nutrition(5);
       food.saturation(2);
     });
 
-  e.create("society:chicken_tortilla_soup").texture("society:item/chicken_tortilla_soup")
+  e.create("society:chicken_tortilla_soup").texture("society:item/dishes/chicken_tortilla_soup")
     .food((food) => {
       food.nutrition(8);
       food.saturation(1);
     });
 
-  e.create("society:mexican_street_corn").texture("society:item/mexican_street_corn")
-    .food((food) => {
-      food.nutrition(7);
-      food.saturation(1);
-      // food.fastToEat(true);
-    });
-
-  e.create("society:chocolate_donut").texture("society:item/chocolate_donut")
+  e.create("society:chocolate_donut").texture("society:item/dishes/chocolate_donut")
     .food((food) => {
       food.nutrition(5);
       food.saturation(2);
     });
-  e.create("society:blueberry_icecream").texture("society:item/blueberry_icecream")
+
+  e.create("society:blueberry_icecream").texture("society:item/dishes/blueberry_icecream")
     .food((food) => {
       food.nutrition(2);
       food.saturation(2);
     });
 
-  e.create("society:ancient_cookie").texture("society:item/ancient_cookie")
+  e.create("society:ancient_cookie").texture("society:item/dishes/ancient_cookie")
     .food((food) => {
       food.nutrition(4);
       food.saturation(4);
     });
-  e.create("society:mossberry_stew").texture("society:item/mossberry_stew")
+  e.create("society:mossberry_stew").texture("society:item/dishes/mossberry_stew")
     .food((food) => {
       food.nutrition(5);
       food.saturation(3);
       // food.fastToEat(true);
       food.effect("minecraft:resistance", 2400, 0, 1.0);
     });
-  e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
-  e.create("society:chai_blend").texture("society:item/chai_blend");
-  e.create("society:sun_candy").texture("society:item/sun_candy")
+    
+  e.create("society:deep_a_mochi").texture("society:item/dishes/deep_a_mochi")
+    .displayName("Deep-a-Mochi")
+    .food((food) => {
+      food.nutrition(4);
+      food.saturation(2);
+    });
+  e.create("society:lemon_beignets").texture("society:item/dishes/lemon_beignets")
+    .food((food) => {
+      food.nutrition(3);
+      food.saturation(3);
+    });
+  e.create("society:sun_candy").texture("society:item/dishes/sun_candy")
     .rarity("epic")
     .food((food) => {
       food.nutrition(2);
@@ -376,7 +385,7 @@ StartupEvents.registry("item", (e) => {
       food.effect("minecraft:strength", 3000, 0, 1.0);
       // food.effect("farm_and_charm:sweets", 3000, 2, 1.0);
     });
-  e.create("society:magic_rock_candy").texture("society:item/magic_rock_candy")
+  e.create("society:magic_rock_candy").texture("society:item/dishes/magic_rock_candy")
     .rarity("epic")
     .food((food) => {
       food.nutrition(20);
@@ -404,7 +413,6 @@ StartupEvents.registry("item", (e) => {
     "large_duck_egg",
     "large_goose_egg",
     "large_turkey_egg",
-    "large_galliraptor_egg",
     "penguin_egg",
     "flamingo_egg",
   ].forEach((item) => {
@@ -433,17 +441,13 @@ StartupEvents.registry("item", (e) => {
     "duck",
     "goose",
     "turkey",
-    "galliraptor",
     "turtle",
     "parrot",
     "birt",
-    "springling",
     "penguin",
-    "wraptor",
     "sniffer",
     "petrified",
     "flamingo",
-    "cruncher",
     "golden",
     "dragon",
   ];
@@ -480,15 +484,13 @@ StartupEvents.registry("item", (e) => {
     "large_goat_milk",
     "warped_milk",
     "large_warped_milk",
-    "tri_bull_milk",
-    "large_tri_bull_milk",
     "amethyst_milk",
     "large_amethyst_milk",
     "grain_milk",
     "large_grain_milk",
   ].forEach((item) => {
     e.create(`society:${item}`)
-      .texture(`society:item/husbandry/${item}`)
+      .texture(`society:item/milk/${item}`)
       .food((food) => {
         food.nutrition(item.includes("large") ? 5 : 1);
         food.saturation(1);

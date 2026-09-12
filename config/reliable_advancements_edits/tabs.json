@@ -36,7 +36,7 @@
     "lootr:root": {
       "title": "Lootr",
       "icon": "minecraft:chest",
-      "background": "minecraft:textures/block/dark_oak_log.png"
+      "background": "lootr:textures/block/gold_planks.png"
     },
     "meadow:main/root": {
       "title": "Welcome to Meadow!",
@@ -91,6 +91,11 @@
       "title": "Little Joys",
       "icon": "minecraft:cookie",
       "background": "minecraft:gui/advancements/backgrounds/stone"
+    },
+    "ae2:main/root": {
+      "title": "Applied Energistics",
+      "icon": "ae2:certus_quartz_crystal",
+      "background": "ae2:textures/block/sky_stone_brick.png"
     }
   }
 }

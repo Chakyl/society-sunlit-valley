@@ -8,6 +8,7 @@ PlayerEvents.loggedIn((e) => {
     player.stages.add("invited_carpenter");
     player.stages.add("invited_market");
     player.stages.add("invited_banker");
+    player.stages.add("invited_fisher");
     player.give("ftbquests:book");
     player.give("whimsy_deco:phone");
     player.give('selling_bin:selling_bin');

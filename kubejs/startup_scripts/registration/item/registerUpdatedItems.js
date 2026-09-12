@@ -150,20 +150,6 @@ StartupEvents.registry("item", (e) => {
         }
     });
 
-    global.CROP_DEFINITIONS.forEach((crop) => {
-        if (crop.products.includes("pickle")) {
-            let splitProduct = crop.item.split(":");
-            e.create(`society:pickled_${splitProduct[1]}`)
-                .texture(`${splitProduct[0]}:item/${splitProduct[1]}`)
-                .color(0, 0xd8f266)
-                .tag("society:pickle")
-                .food((food) => {
-                    food.nutrition(4);
-                    food.saturation(1);
-                });
-        }
-    });
-
     global.MUSHROOMS.forEach((crop) => {
         e.create(`society:dried_${crop.item.path}`)
             .texture(`society:item/dried/dried_${crop.item.path}`)
@@ -201,6 +187,18 @@ StartupEvents.registry("item", (e) => {
         }
     });
 
+    global.CROP_DEFINITIONS.forEach((crop) => {
+        if (crop.products.includes("pickle")) {
+            let splitProduct = crop.item.split(":");
+            e.create(`society:pickled_${splitProduct[1]}`)
+                .texture(`society:item/pickles/pickled_${splitProduct[1]}`)
+                .tag("society:pickle")
+                .food((food) => {
+                    food.nutrition(4);
+                    food.saturation(1);
+                });
+        }
+    });
     // Pristine Gems
     global.MINERALS.forEach((mineral) => {
         e.create(`society:pristine_${mineral.item.path}`).texture(`society:item/${mineral.geodeType != "base" ? `${mineral.geodeType}_` : ""}geode/${mineral.item.path}`).glow(true).tag("society:pristine");

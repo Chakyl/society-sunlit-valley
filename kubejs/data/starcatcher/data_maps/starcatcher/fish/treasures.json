@@ -1,0 +1,145 @@
+{
+  "values": {
+    "#starcatcher:common_entries": {
+      "blacklist": [
+        {
+          "item": "minecraft:fishing_rod"
+        }
+      ],
+      "loot_tables": [
+        {
+          "loot_table": "minecraft:gameplay/fishing/treasure"
+        }
+      ]
+    },
+    "#starcatcher:epic_entries": {
+      "blacklist": [
+        {
+          "item": "minecraft:fishing_rod"
+        }
+      ],
+      "loot_tables": [
+        {
+          "loot_table": "minecraft:gameplay/fishing/treasure"
+        }
+      ]
+    },
+    "#starcatcher:legendary_entries": {
+      "blacklist": [
+        {
+          "item": "minecraft:fishing_rod"
+        }
+      ],
+      "loot_tables": [
+        {
+          "loot_table": "minecraft:gameplay/fishing/treasure"
+        }
+      ]
+    },
+    "#starcatcher:rare_entries": {
+      "blacklist": [
+        {
+          "item": "minecraft:fishing_rod"
+        }
+      ],
+      "loot_tables": [
+        {
+          "loot_table": "minecraft:gameplay/fishing/treasure"
+        }
+      ]
+    },
+    "#starcatcher:uncommon_entries": {
+      "blacklist": [
+        {
+          "item": "minecraft:fishing_rod"
+        }
+      ],
+      "loot_tables": [
+        {
+          "loot_table": "minecraft:gameplay/fishing/treasure"
+        }
+      ]
+    },
+    "starcatcher:aurora": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:iceborn_skin_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:azure_crystalback_minnow": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:azure_crystal_skin_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:boreal": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:clear_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:cerberay": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:king_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:cloudfin": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:sky_skin_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:joel": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:sharktooth_skin_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:lush_pike": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:lush_glowberry_skin_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:vesani": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:colorful_smithing_template"
+          }
+        }
+      ]
+    },
+    "starcatcher:willish": {
+      "stacks": [
+        {
+          "stack": {
+            "identifier": "starcatcher:kimbe_smithing_template"
+          }
+        }
+      ]
+    }
+  }
+}

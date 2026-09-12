@@ -53,23 +53,8 @@ const setGenerationFunction = (sets, buildingTypes, villager) => {
                         custom_name: `{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"${langPrefix}\"}`,
                         lore: [`{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"${langPrefix}.author\"}`],
                         custom_data: {
-                            altezza: 0,
                             blueprint_name: `${type}_${set}`,
-                            buildAnyway: "0b",
-                            lunghezzaX: 0,
-                            lunghezzaZ: 0,
-                            mirrorX: "0b",
-                            mirrorY: "0b",
-                            mirrorZ: "0b",
-                            nome: `${type}_${set}`,
-                            owner: "worn",
-                            owner_name: "Ace",
-                            remaining_uses: 1,
-                            rotateValue: "0s",
-                            skipObstructionBlock: "0b",
-                            visualizeBuild: "1b",
-                            wasHolding: "0b",
-                            worn_set: "1b"
+                            remaining_uses: 1
                         },
                         damage: 0
                     },
