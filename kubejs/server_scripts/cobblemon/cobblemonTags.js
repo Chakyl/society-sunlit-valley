@@ -184,7 +184,9 @@ ServerEvents.tags("item", (e) => {
   });
   e.add("society:raw_logs", "cobblemon:apricorn_log");
   e.add("society:fossilish", "#cobblemon:fossils");
-
+  e.remove('cobblemon:held/consumed_in_wild_battle', 'cobblemon:booster_energy');
+  e.remove('cobblemon:held/consumed_in_npc_battle', 'cobblemon:booster_energy');
+  e.remove('cobblemon:held/consumed_in_pvp_battle', 'cobblemon:booster_energy');
   [
     "cobblemon",
     "aquaculture",

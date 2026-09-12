@@ -8153,7 +8153,7 @@
 //                 {
 //                     item: "sunlit_cobblemon:mew_n_dna",
 //                     count: 1,
-//                     chance: 0.04,
+//                     chance: 0.05,
 //                     min_hearts: 10
 //                 }
 //             ],

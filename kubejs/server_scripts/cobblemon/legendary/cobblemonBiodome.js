@@ -97,7 +97,7 @@ const biodomeEffects = (server, level, particle, delay, count, x, y, z) => {
     for (let i = 0; i < count; i++) {
         server.scheduleInTicks(delay * i * (i / 2), () => {
             server.runCommandSilent(`playsound botania:starcaller block @a ${x} ${y} ${z} 3 0.3`);
-            server.runCommandSilent(`execute in ${level.dimension} run summon lightning_bolt ${x} ${y} ${z}`);
+            server.runCommandSilent(`execute in ${level.dimension} run summon lightning_bolt ${x} ${y + 16} ${z}`);
             level.spawnParticles(
                 particle,
                 true,
