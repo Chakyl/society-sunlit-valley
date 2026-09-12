@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"weight": 4,
+					"weight": 200,
 					"name": "sunlit_cobblemon:sun_drops",
 					"functions": [
 						{
@@ -14,14 +14,14 @@
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 4
+								"max": 6
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 4,
+					"weight": 200,
 					"name": "cobblemon:relic_coin",
 					"functions": [
 						{
@@ -29,14 +29,14 @@
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 4
+								"max": 6
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 4,
+					"weight": 200,
 					"name": "cobblemon:exp_candy_s",
 					"functions": [
 						{
@@ -44,29 +44,29 @@
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 4
+								"max": 6
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 6,
+					"weight": 300,
 					"name": "sunlit_cobblemon:pristine_fairy_gem"
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 2,
+					"weight": 100,
 					"name": "sunlit_cobblemon:mystica_branch"
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 2,
+					"weight": 100,
 					"name": "cobblemon:rare_candy"
 				},
 				{
 					"type": "minecraft:tag",
-					"weight": 2,
+					"weight": 1,
 					"name": "simpletms:type_fairy_tm",
 					"expand": true
 				}

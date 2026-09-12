@@ -32,6 +32,7 @@ StartupEvents.registry("block", (event) => {
     })
     .rightClick((click) => {
       const { player, item, block, hand, level, server } = click;
+      if (player.isFake()) return;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const season = global.getSeasonFromLevel(level);
 

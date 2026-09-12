@@ -111,6 +111,7 @@ ServerEvents.recipes((e) => {
         { item: "society:source_gem", mult: 1, consumeChance: 0.02, types: ["poison", "fairy", "steel"], },
         { item: "botania:dragonstone", mult: 1.2, consumeChance: 1, types: ["dragon", "fairy", "grass"] },
         { item: "society:prismatic_shard", mult: 2, consumeChance: 0.5, types: [], },
+        { item: "society:sunlit_crystal", mult: 3, consumeChance: 0.65, types: ["psychic"], },
     ].forEach((entry) => {
         createCrystalBallRecipe(entry.item, entry.types, entry.consumeChance, entry.mult)
     });

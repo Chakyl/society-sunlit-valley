@@ -174,6 +174,7 @@ StartupEvents.registry("block", (event) => {
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
+      if (player.isFake()) return;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing").toLowerCase();
       const nbt = block.getEntityData();
