@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### vsunlit-cobblemon-1.1.4-SSV4.1.5
+### 1.1.4-SSV4.1.5
 ^^^
 --- 
 - Updated to Society: Sunlit Valley - 4.1.5
