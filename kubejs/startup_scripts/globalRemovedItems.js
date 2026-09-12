@@ -679,6 +679,7 @@ global.removedItems = [
   "cobblemon:repeat_ball",
   "create_klinks_n_klangs:wrapper",
   // TEMP 
+  "numismatics:salepoint",
   // 2.0 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
   'sophisticatedbackpacks:mob_catcher_upgrade',
