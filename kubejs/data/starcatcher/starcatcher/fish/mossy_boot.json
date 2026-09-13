@@ -1,0 +1,86 @@
+{
+  "base_chance": 2,
+  "catch_info": {
+    "item": {
+      "identifier": "starcatcher:mossy_boot"
+    }
+  },
+  "difficulty": {
+    "decay": 0.0,
+    "hp": 100,
+    "missPenalty": 0,
+    "modifiers": [],
+    "speed": 10,
+    "sweetspots": [
+      {
+        "color_as_int": -15732736,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 30,
+        "sweetspot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": -15732736,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 30,
+        "sweetspot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": false,
+  "rarity": "trash",
+  "restrictions": [
+    {
+      "type": "starcatcher:dimension",
+      "dimension_entry": "overworld",
+      "translation_override": "dimension.minecraft.overworld"
+    },
+    {
+      "type": "starcatcher:biome",
+      "biomes": [],
+      "blacklist": [
+        "#starcatcher:is_ocean",
+        "#starcatcher:is_river",
+        "#starcatcher:is_beach"
+      ],
+      "hover_translation": "gui.guide.lakes.hover",
+      "translation_override": "gui.guide.lakes"
+    },
+    {
+      "type": "starcatcher:elevation_restriction",
+      "max_y": 2147483647,
+      "min_y": 50,
+      "translation_override": "gui.guide.elevation.surface"
+    },
+    {
+      "type": "starcatcher:fluid",
+      "fluids": [
+        "minecraft:water"
+      ],
+      "translation_override": "fluid.starcatcher.water"
+    }
+  ],
+  "size_and_weight": {
+    "average_size_cm": 41.0,
+    "average_weight_grams": 2001.0,
+    "deviation_size_cm": 21.0,
+    "deviation_weight_grams": 701.0,
+    "golden_chance": 0.02
+  },
+  "skips_minigame": false,
+  "textures": {
+    "buttons": "starcatcher:textures/gui/minigame/buttons.png",
+    "handle": "starcatcher:textures/gui/minigame/handle.png",
+    "rod": "starcatcher:textures/gui/minigame/rod.png",
+    "tank": "starcatcher:textures/gui/minigame/tanks/surface.png",
+    "treasure": "starcatcher:textures/gui/minigame/treasure.png",
+    "wheels": "starcatcher:textures/gui/minigame/wheels.png"
+  }
+}

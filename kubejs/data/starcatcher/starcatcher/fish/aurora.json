@@ -1,0 +1,120 @@
+{
+  "base_chance": 10,
+  "catch_info": {
+    "item": {
+      "identifier": "starcatcher:aurora"
+    }
+  },
+  "difficulty": {
+    "decay": 3.0,
+    "hp": 500,
+    "missPenalty": 75,
+    "modifiers": [
+      {
+        "type": "starcatcher:teleport"
+      },
+      {
+        "type": "starcatcher:freeze_on_miss",
+        "length": 40,
+        "rampTime": 10
+      }
+    ],
+    "speed": 14,
+    "sweetspots": [
+      {
+        "color_as_int": -5383962,
+        "hitbox_size_in_pixels": 33,
+        "is_flip": false,
+        "moving_rate": 1.0,
+        "reward": 15,
+        "sweetspot_type": "starcatcher:freeze",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/frozen.png",
+        "vanishing_rate": 0.1
+      },
+      {
+        "color_as_int": -5383962,
+        "hitbox_size_in_pixels": 33,
+        "is_flip": false,
+        "moving_rate": 1.0,
+        "reward": 15,
+        "sweetspot_type": "starcatcher:freeze",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/frozen.png",
+        "vanishing_rate": 0.1
+      },
+      {
+        "color_as_int": -5383962,
+        "hitbox_size_in_pixels": 33,
+        "is_flip": false,
+        "moving_rate": 1.0,
+        "reward": 15,
+        "sweetspot_type": "starcatcher:freeze",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/frozen.png",
+        "vanishing_rate": 0.1
+      },
+      {
+        "color_as_int": -5383962,
+        "hitbox_size_in_pixels": 33,
+        "is_flip": false,
+        "moving_rate": 1.0,
+        "reward": 15,
+        "sweetspot_type": "starcatcher:freeze",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/frozen.png",
+        "vanishing_rate": 0.1
+      }
+    ]
+  },
+  "has_guide_entry": true,
+  "rarity": "legendary",
+  "restrictions": [
+    {
+      "type": "starcatcher:dimension",
+      "dimension_entry": "the_end",
+      "translation_override": "dimension.minecraft.the_end"
+    },
+    {
+      "type": "starcatcher:elevation_restriction",
+      "max_y": 2147483647,
+      "min_y": 50,
+      "translation_override": "gui.guide.elevation.surface"
+    },
+    {
+      "type": "starcatcher:daytime_restriction",
+      "ranges": [
+        {
+          "max": 24000,
+          "min": 12700
+        }
+      ],
+      "translation_override": "gui.guide.night"
+    },
+    {
+      "type": "starcatcher:fluid",
+      "fluids": [
+        "minecraft:water"
+      ],
+      "translation_override": "fluid.starcatcher.water"
+    },
+    {
+      "type": "starcatcher:bait",
+      "baits": {
+        "starcatcher:legendary_bait": 50
+      }
+    }
+  ],
+  "size_and_weight": {
+    "average_size_cm": 10.0,
+    "average_weight_grams": 120.0,
+    "deviation_size_cm": 8.0,
+    "deviation_weight_grams": 30.0,
+    "golden_chance": 0.02
+  },
+  "skips_minigame": false,
+  "textures": {
+    "buttons": "starcatcher:textures/gui/minigame/buttons.png",
+    "handle": "starcatcher:textures/gui/minigame/handle.png",
+    "rod": "starcatcher:textures/gui/minigame/rod.png",
+    "tank": "starcatcher:textures/gui/minigame/tanks/surface.png",
+    "treasure": "starcatcher:textures/gui/minigame/treasure.png",
+    "wheels": "starcatcher:textures/gui/minigame/wheels.png"
+  }
+}

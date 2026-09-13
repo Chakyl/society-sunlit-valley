@@ -34,6 +34,7 @@
       "functionalstorage:main",
       "sereneseasons:main",
       "unusualfishmod:unusual_fish_tab",
+      "starcatcher:starcatcher",
       "veggiesdelight:veggiesdelight_tab",
       "wildernature:wildernature",
       "etcetera:item_group",
@@ -50,6 +51,7 @@
       "hominid:hominid_tab",
       "ribbits:general",
       "tanukidecor:tab",
+      "plentifulponds:tab",
       "nomansland:nomansland",
       "vintagedelight:vintage_tab",
       "beautify:beautify",
@@ -179,7 +181,9 @@
       "ae2:main",
       "cozycafe:tab",
       "ae2:facades",
-      "redomesticate:redomesticate"
+      "redomesticate:redomesticate",
+      "plentifulponds:tab",
+      "society:fishing"
     ]
   },
   {
@@ -205,6 +209,37 @@
     "remove_items": [],
     "add_items": [
       "#society:dish"
+    ],
+    "order": []
+  },
+  {
+    "action": "custom_tab",
+    "tab": [
+      "society:fishing"
+    ],
+    "name": "Fishing",
+    "icon": "starcatcher:starcatcher_rod",
+    "remove_items": [],
+    "add_items": [
+      "starcatcher:starcatcher_guide",
+      "starcatcher:fish_radar",
+      "starcatcher:display",
+      "starcatcher:aquarium",
+      "starcatcher:tournament_stand",
+      "plentifulponds:fish_pond",
+      "plentifulponds:sea_biscuit",
+      "plentifulponds:roe_recycler",
+      "#starcatcher:equipments",
+      "#starcatcher:tackle_boxes",
+      "#starcatcher:hats",
+      "#starcatcher:baits",
+      "#starcatcher:hooks",
+      "#starcatcher:bobbers",
+      "#society:spring_fish",
+      "#society:spring_fish",
+      "#society:summer_fish",
+      "#society:autumn_fish",
+      "#society:winter_fish"
     ],
     "order": []
   },

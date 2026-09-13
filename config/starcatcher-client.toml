@@ -6,7 +6,7 @@ remove_notif_on_hover = true
 #Allowed Values: METRIC, IMPERIAL, CHEESEBURGER, DEVELOPER, BANANA, DUCK, SPACE_WHALE, SCIENTIFIC
 units = "METRIC"
 #Allowed Values: ALPHABETICAL_UP, ALPHABETICAL_DOWN, MOD_UP, MOD_DOWN, RARITY_UP, RARITY_DOWN, CAUGHT_UP, CAUGHT_DOWN, CAUGHT_GOLDEN_UP, CAUGHT_GOLDEN_DOWN
-sort = "ALPHABETICAL_DOWN"
+sort = "RARITY_UP"
 #Should play the hit sound
 enable_miss_sound = true
 #Shows a bunch of extra text info during the minigame for debugging

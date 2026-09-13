@@ -1,0 +1,98 @@
+{
+  "base_chance": 5,
+  "catch_info": {
+    "fish_bucket": {
+      "identifier": "starcatcher:starcaught_bucket"
+    },
+    "item": {
+      "identifier": "starcatcher:blue_herring"
+    }
+  },
+  "difficulty": {
+    "decay": 1.0,
+    "hp": 75,
+    "missPenalty": 5,
+    "modifiers": [],
+    "speed": 7,
+    "sweetspots": [
+      {
+        "color_as_int": -15732736,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweetspot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": -15732736,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweetspot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": true,
+  "rarity": "common",
+  "restrictions": [
+    {
+      "type": "starcatcher:dimension",
+      "dimension_entry": "overworld",
+      "translation_override": "dimension.minecraft.overworld"
+    },
+    {
+      "type": "starcatcher:biome",
+      "biomes": [
+        "#starcatcher:is_ocean",
+        "#starcatcher:is_beach"
+      ],
+      "blacklist": []
+    },
+    {
+      "type": "starcatcher:elevation_restriction",
+      "max_y": 2147483647,
+      "min_y": 50,
+      "translation_override": "gui.guide.elevation.surface"
+    },
+    {
+      "type": "starcatcher:season",
+      "season_extra_chance": {
+        "early_spring": 0,
+        "early_winter": 0,
+        "late_spring": 0,
+        "late_winter": 0,
+        "mid_spring": 0,
+        "mid_winter": 0
+      },
+      "translation_override": "gui.guide.seasons.spring_winter"
+    },
+    {
+      "type": "starcatcher:fluid",
+      "fluids": [
+        "minecraft:water"
+      ],
+      "translation_override": "fluid.starcatcher.water"
+    }
+  ],
+  "size_and_weight": {
+    "average_size_cm": 40.0,
+    "average_weight_grams": 1600.0,
+    "deviation_size_cm": 12.0,
+    "deviation_weight_grams": 1100.0,
+    "golden_chance": 0.02
+  },
+  "skips_minigame": false,
+  "textures": {
+    "buttons": "starcatcher:textures/gui/minigame/buttons.png",
+    "handle": "starcatcher:textures/gui/minigame/handle.png",
+    "rod": "starcatcher:textures/gui/minigame/rod.png",
+    "tank": "starcatcher:textures/gui/minigame/tanks/surface.png",
+    "treasure": "starcatcher:textures/gui/minigame/treasure.png",
+    "wheels": "starcatcher:textures/gui/minigame/wheels.png"
+  }
+}

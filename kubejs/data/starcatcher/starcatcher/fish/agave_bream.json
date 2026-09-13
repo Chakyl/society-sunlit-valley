@@ -1,0 +1,127 @@
+{
+  "base_chance": 6,
+  "catch_info": {
+    "fish_bucket": {
+      "identifier": "starcatcher:starcaught_bucket"
+    },
+    "item": {
+      "identifier": "starcatcher:agave_bream"
+    }
+  },
+  "difficulty": {
+    "decay": 1.0,
+    "hp": 100,
+    "missPenalty": 20,
+    "modifiers": [
+      {
+        "type": "starcatcher:spawn_sweetspots",
+        "chance": 1.0,
+        "cooldown": 140,
+        "sudoku_vanish": false,
+        "sweetspot": {
+          "color_as_int": -15732736,
+          "hitbox_size_in_pixels": 22,
+          "is_flip": false,
+          "moving_rate": 1.0,
+          "reward": 0,
+          "sweetspot_type": "starcatcher:mirage",
+          "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+          "vanishing_rate": 0.0
+        }
+      },
+      {
+        "type": "starcatcher:spawn_sweetspots",
+        "chance": 0.3,
+        "cooldown": 100,
+        "sudoku_vanish": false,
+        "sweetspot": {
+          "color_as_int": -15732736,
+          "hitbox_size_in_pixels": 22,
+          "is_flip": false,
+          "moving_rate": 1.0,
+          "reward": 0,
+          "sweetspot_type": "starcatcher:mirage",
+          "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+          "vanishing_rate": 0.0
+        }
+      }
+    ],
+    "speed": 10,
+    "sweetspots": [
+      {
+        "color_as_int": -15732736,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 1.0,
+        "reward": 15,
+        "sweetspot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": true,
+  "rarity": "uncommon",
+  "restrictions": [
+    {
+      "type": "starcatcher:dimension",
+      "dimension_entry": "overworld",
+      "translation_override": "dimension.minecraft.overworld"
+    },
+    {
+      "type": "starcatcher:biome",
+      "biomes": [
+        "#starcatcher:is_river"
+      ],
+      "blacklist": []
+    },
+    {
+      "type": "starcatcher:season",
+      "season_extra_chance": {
+        "early_autumn": 0,
+        "late_autumn": 0,
+        "mid_autumn": 0
+      },
+      "translation_override": "gui.guide.seasons.autumn"
+    },
+    {
+      "type": "starcatcher:elevation_restriction",
+      "max_y": 2147483647,
+      "min_y": 50,
+      "translation_override": "gui.guide.elevation.surface"
+    },
+    {
+      "type": "starcatcher:daytime_restriction",
+      "ranges": [
+        {
+          "max": 12700,
+          "min": 0
+        }
+      ],
+      "translation_override": "gui.guide.day"
+    },
+    {
+      "type": "starcatcher:fluid",
+      "fluids": [
+        "minecraft:water"
+      ],
+      "translation_override": "fluid.starcatcher.water"
+    }
+  ],
+  "size_and_weight": {
+    "average_size_cm": 36.0,
+    "average_weight_grams": 2000.0,
+    "deviation_size_cm": 12.0,
+    "deviation_weight_grams": 1000.0,
+    "golden_chance": 0.02
+  },
+  "skips_minigame": false,
+  "textures": {
+    "buttons": "starcatcher:textures/gui/minigame/buttons.png",
+    "handle": "starcatcher:textures/gui/minigame/handle.png",
+    "rod": "starcatcher:textures/gui/minigame/rod.png",
+    "tank": "starcatcher:textures/gui/minigame/tanks/surface.png",
+    "treasure": "starcatcher:textures/gui/minigame/treasure.png",
+    "wheels": "starcatcher:textures/gui/minigame/wheels.png"
+  }
+}

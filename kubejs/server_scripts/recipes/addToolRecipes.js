@@ -17,7 +17,7 @@ ServerEvents.recipes((e) => {
           `${modId}:iron_${type}`,
           "society:iron_upgrade_smithing_template",
           `${modId}:stone_${type}`,
-          "minecraft:iron_ingot"
+          "minecraft:iron_block"
         );
       }
     } else {
@@ -31,27 +31,27 @@ ServerEvents.recipes((e) => {
         `${modId}:iron_${type}`,
         "society:iron_upgrade_smithing_template",
         `${modId}:chainmail_${type}`,
-        "minecraft:iron_ingot"
+        "minecraft:iron_block"
       );
     }
     e.smithing(
       `${modId}:gold${modId === "minecraft" ? "en" : ""}_${type}`,
       `society:gold_upgrade_smithing_template`,
       `${modId}:iron_${type}`,
-      "minecraft:gold_ingot"
+      "minecraft:gold_block"
     );
     e.smithing(
       `${modId}:diamond_${type}`,
       `society:diamond_upgrade_smithing_template`,
       `${modId}:gold${modId === "minecraft" ? "en" : ""}_${type}`,
-      "minecraft:diamond"
+      "minecraft:diamond_block"
     );
     if (modId !== "aquaculture") {
       e.smithing(
         `${modId}:netherite_${type}`,
         "minecraft:netherite_upgrade_smithing_template",
         `${modId}:diamond_${type}`,
-        "minecraft:netherite_ingot"
+        "minecraft:netherite_block"
       );
     }
   };
@@ -73,7 +73,7 @@ ServerEvents.recipes((e) => {
 //       `botania:manasteel_${type === "pickaxe" ? "pick" : type}`,
 //       "society:botanical_tribute",
 //       `minecraft:golden_${type}`,
-//       "botania:manasteel_ingot"
+//       "botania:manasteel_block"
 //     );
 //   };
 //   const elementiumUpgrades = (type) => {
@@ -81,7 +81,7 @@ ServerEvents.recipes((e) => {
 //       `botania:elementium_${type}`,
 //       "society:botanical_tribute",
 //       `botania:manasteel_${type === "pickaxe" ? "pick" : type}`,
-//       "botania:elementium_ingot"
+//       "botania:elementium_block"
 //     );
 //   };
 //   e.smithing(
@@ -94,7 +94,7 @@ ServerEvents.recipes((e) => {
 //   const terrasteelUpgrades = (type, runeIndex) => {
 //     e.shaped(`botania:terrasteel_${type}`, ["crc", "mTm", "cmc"], {
 //       T: Item.of(`botania:manasteel_${type}`),
-//       m: "botania:terrasteel_ingot",
+//       m: "botania:terrasteel_block",
 //       c: "society:botanical_tribute",
 //       r: `botania:rune_${runes[runeIndex]}`,
 //     }).modifyResult((grid, result) => {
@@ -123,7 +123,7 @@ ServerEvents.recipes((e) => {
           ? "minecraft:netherite_upgrade_smithing_template"
           : `society:${tier}_upgrade_smithing_template`,
         `farmersdelight:${tier === "diamond" ? "golden" : knifeTiers[index - 1]}_knife`,
-        `minecraft:${tier}${tier === "diamond" ? "" : "_ingot"}`
+        `minecraft:${tier}${tier === "diamond" ? "" : "_block"}`
       );
     }
   });
@@ -150,19 +150,19 @@ ServerEvents.recipes((e) => {
     "create:netherite_backtank",
     "minecraft:netherite_upgrade_smithing_template",
     "create:copper_backtank",
-    "minecraft:netherite_ingot"
+    "minecraft:netherite_block"
   );
   e.smithing(
     "create:netherite_diving_helmet",
     "minecraft:netherite_upgrade_smithing_template",
     "create:copper_diving_helmet",
-    "minecraft:netherite_ingot"
+    "minecraft:netherite_block"
   );
   e.smithing(
     "create:netherite_diving_boots",
     "minecraft:netherite_upgrade_smithing_template",
     "create:copper_diving_boots",
-    "minecraft:netherite_ingot"
+    "minecraft:netherite_block"
   );
   e.smithing(
     "society:dragontooth_axe",
@@ -175,7 +175,7 @@ ServerEvents.recipes((e) => {
     "dew_drop_watering_cans:iron_watering_can",
     "society:iron_upgrade_smithing_template",
     "dew_drop_watering_cans:copper_watering_can",
-    "minecraft:iron_ingot"
+    "minecraft:iron_block"
   );
   upgradeTool("watering_can", "dew_drop_watering_cans");
 });
