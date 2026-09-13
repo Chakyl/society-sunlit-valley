@@ -45,7 +45,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:enkephalin").texture("society:item/enkephalin");
   e.create("society:gray_anatomy").texture("society:item/gray_anatomy");
   e.create("society:recycled_core").texture("society:item/recycled_core");  
-  e.create("society:hops").texture("society:item/hops");
+  e.create("society:hops").texture("society:item/crops/hops");
   e.create("society:tubabacco_leaf").texture("society:item/crops/tubabacco_leaf");
   e.create("society:dried_tubabacco_leaf").texture("society:item/crops/tubabacco_leaf")
     .color(0, 0x785246);
@@ -100,6 +100,24 @@ StartupEvents.registry("item", (e) => {
       food.saturation(1);
       // food.fastToEat(true);
     });
+  [
+    "morel",
+    "winter_root",
+    "crabapple",
+    "wild_onion",
+    "leek",
+    "mint",
+    "blowball",
+    "juniper",
+    "snow_yam"
+  ].forEach((crop) => {
+      e.create(`society:${crop}`).texture(`society:item/crops/${crop}`)
+    .food((food) => {
+      food.nutrition(1);
+      food.saturation(1);
+      // food.fastToEat(true);
+    });
+  });
   e.create("society:mossberry").texture("society:item/crops/mossberry")
     .food((food) => {
       food.nutrition(2);
@@ -198,6 +216,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:oak_resin").texture("society:item/oak_resin");
   e.create("society:maple_syrup").texture("society:item/maple_syrup");
   e.create("society:battery").texture("society:item/battery");
+  e.create("society:hardwood").texture("society:item/hardwood");
   e.create("numismatics:neptunium_coin").texture("society:item/neptunium_coin").tag("numismatics:coins");
   e.create("numismatics:ancient_coin").texture("society:item/ancient_coin").tag("numismatics:coins");
   e.create("numismatics:prismatic_coin").texture("society:item/prismatic_coin").tag("numismatics:coins");
@@ -212,7 +231,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:botanical_tribute").texture(
     "society:item/botanical_tribute"
   );
-  e.create("society:mana_fruit").texture("society:item/mana_fruit")
+  e.create("society:mana_fruit").texture("society:item/crop/mana_fruit")
     .food((food) => {
       food.nutrition(3);
       food.saturation(1);
@@ -230,8 +249,7 @@ StartupEvents.registry("item", (e) => {
   );
   e.create("society:river_jelly").texture("society:item/river_jelly");
   e.create("society:ocean_jelly").texture("society:item/ocean_jelly");
-  e.create("society:nether_jelly").texture("society:item/nether_jelly")
-    .fireResistant(true);
+  e.create("society:lava_jelly").texture("society:item/lava_jelly").fireResistant(true);
   e.create("society:sunlit_pearl").texture("society:item/sunlit_pearl");
   e.create("crabbersdelight:crab_trap_bait").texture(
     "society:item/crab_trap_bait"

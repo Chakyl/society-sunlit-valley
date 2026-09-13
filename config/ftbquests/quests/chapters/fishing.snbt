@@ -1937,7 +1937,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0380803223256599"
-				item: { count: 1, id: "society:nether_jelly" }
+				item: { components: { "ftbquests:missing_item": "society:nether_jelly" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d

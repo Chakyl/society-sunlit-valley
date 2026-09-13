@@ -1,6 +1,8 @@
 {
   "shop_id": "fisher",
-  "name": { "translate": "shop.society_trading.fisher"  },
+  "name": {
+    "translate": "shop.society_trading.fisher"
+  },
   "texture": "dialog:textures/portraits/fisher",
   "villager_profession": "fisher",
   "stage_required": "invited_fisher",
@@ -29,6 +31,9 @@
     {
       "offer": {
         "id": "starcatcher:humble_rod",
+        "components": {
+          "starcatcher:tackle_skin": "starcatcher:valley"
+        },
         "count": 1
       },
       "request": {
@@ -41,6 +46,9 @@
     {
       "offer": {
         "id": "starcatcher:bamboo_rod",
+        "components": {
+          "starcatcher:tackle_skin": "starcatcher:valley"
+        },
         "count": 1
       },
       "request": {
@@ -55,6 +63,9 @@
     {
       "offer": {
         "id": "starcatcher:starcatcher_rod",
+        "components": {
+          "starcatcher:tackle_skin": "starcatcher:valley"
+        },
         "count": 1
       },
       "request": {
@@ -62,13 +73,16 @@
         "count": 4
       },
       "numismatics_cost": 2048,
-      "stage_required": "starcatcher_rod",
-      "unlock_description": "jei.society_trading.starcatcher_rod",
+      "stage_required": "fishing_lvl_6",
+      "unlock_description": "jei.society_trading.fishing_lvl_6",
       "trade_id": "fisher_starcatcher_rod"
     },
     {
       "offer": {
         "id": "starcatcher:obsidian_rod",
+        "components": {
+          "starcatcher:tackle_skin": "starcatcher:valley"
+        },
         "count": 1
       },
       "request": {
