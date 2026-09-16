@@ -1,6 +1,8 @@
 {
   "shop_id": "market",
-  "name": { "translate": "shop.society_trading.market" },
+  "name": {
+    "translate": "shop.society_trading.market"
+  },
   "texture": "dialog:textures/portraits/market",
   "villager_profession": "farmer",
   "stage_required": "invited_market",
@@ -195,7 +197,9 @@
       },
       "numismatics_cost": 64,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_spring",
         "mid_spring",
@@ -215,7 +219,9 @@
       },
       "numismatics_cost": 32,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_spring",
         "mid_spring",
@@ -349,7 +355,9 @@
       },
       "numismatics_cost": 64,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_summer",
         "mid_summer",
@@ -454,7 +462,9 @@
       ],
       "stage_required": "master_cultivator_unlocked",
       "stage_override": "universal_methods_of_farming",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "trade_id": "market_cabbage_seeds_for_cog"
     },
     {
@@ -468,7 +478,9 @@
       },
       "numismatics_cost": 64,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_autumn",
         "mid_autumn",
@@ -488,7 +500,9 @@
       },
       "numismatics_cost": 512,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_autumn",
         "mid_autumn",
@@ -529,7 +543,9 @@
         "count": 1
       },
       "stage_required": "farming_mastery",
-      "unlock_description": "jei.society_trading.farming_mastery_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.farming_mastery_unlocked"
+      },
       "trade_id": "market_willow_sapling_for_crown"
     },
     {
@@ -543,7 +559,9 @@
       },
       "numismatics_cost": 512,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_spring",
         "mid_spring",
@@ -626,7 +644,9 @@
       ],
       "stage_required": "master_cultivator_unlocked",
       "stage_override": "universal_methods_of_farming",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "trade_id": "market_cherry_sapling_for_crown"
     },
     {
@@ -640,7 +660,9 @@
       },
       "numismatics_cost": 512,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_autumn",
         "mid_autumn",
@@ -660,7 +682,9 @@
       },
       "numismatics_cost": 16384,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_summer",
         "mid_summer",
@@ -684,7 +708,9 @@
       },
       "numismatics_cost": 18432,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_summer",
         "mid_summer",
@@ -708,7 +734,9 @@
       },
       "numismatics_cost": 27648,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_autumn",
         "mid_autumn",
@@ -732,7 +760,9 @@
       },
       "numismatics_cost": 43008,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "seasons_required": [
         "early_winter",
         "mid_winter",
@@ -756,7 +786,9 @@
       },
       "numismatics_cost": 81920,
       "stage_required": "master_cultivator_unlocked",
-      "unlock_description": "jei.society_trading.advanced_crops_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.advanced_crops_unlocked"
+      },
       "trade_id": "market_starfruit_sapling_for_sun_and_prismatic_shard"
     },
     {

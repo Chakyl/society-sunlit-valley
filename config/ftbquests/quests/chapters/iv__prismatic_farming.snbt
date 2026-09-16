@@ -664,8 +664,11 @@
 			rewards: [{
 				id: "0FFE0D3F83EB0BCD"
 				item: {
+					components: {
+						"ftbquests:missing_item": "society:bonefish_bait"
+					}
 					count: 1
-					id: "society:bonefish_bait"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

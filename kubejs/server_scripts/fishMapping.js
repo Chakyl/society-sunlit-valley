@@ -209,7 +209,7 @@
 //     ["netherdepthsupgrade:wither_bonefish", "starcatcher:embergill"],
 //     ["netherdepthsupgrade:magmacubefish",  "starcatcher:glowstone_seeker"],
 //     ["netherdepthsupgrade:glowdine", "starcatcher:suneater"],
-//     ["netherdepthsupgrade:soulsucker", "starcatcher:willish"],
+//     ["netherdepthsupgrade:soulsucker", "starcatcher:scorched_bloodsucker"],
 //     ["netherdepthsupgrade:fortress_grouper",  "starcatcher:black_eel"],
 //     ["netherdepthsupgrade:eyeball_fish", "starcatcher:willish"],
 //     ["aquaculture:leech", "starcatcher:shadowfin", "starcatcher:mossfin"]

@@ -44,7 +44,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:cordycep").texture("society:item/cordycep");
   e.create("society:enkephalin").texture("society:item/enkephalin");
   e.create("society:gray_anatomy").texture("society:item/gray_anatomy");
-  e.create("society:recycled_core").texture("society:item/recycled_core");  
+  e.create("society:recycled_core").texture("society:item/recycled_core");
   e.create("society:hops").texture("society:item/crops/hops");
   e.create("society:tubabacco_leaf").texture("society:item/crops/tubabacco_leaf");
   e.create("society:dried_tubabacco_leaf").texture("society:item/crops/tubabacco_leaf")
@@ -111,12 +111,12 @@ StartupEvents.registry("item", (e) => {
     "juniper",
     "snow_yam"
   ].forEach((crop) => {
-      e.create(`society:${crop}`).texture(`society:item/crops/${crop}`)
-    .food((food) => {
-      food.nutrition(1);
-      food.saturation(1);
-      // food.fastToEat(true);
-    });
+    e.create(`society:${crop}`).texture(`society:item/crops/${crop}`)
+      .food((food) => {
+        food.nutrition(1);
+        food.saturation(1);
+        // food.fastToEat(true);
+      });
   });
   e.create("society:mossberry").texture("society:item/crops/mossberry")
     .food((food) => {
@@ -132,7 +132,7 @@ StartupEvents.registry("item", (e) => {
       food.saturation(4);
     })
     .useAnimation("drink");
-    
+
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
   e.create("society:chai_blend").texture("society:item/chai_blend");
   e.create("society:prize_ticket").texture("society:item/prize_ticket");
@@ -231,7 +231,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:botanical_tribute").texture(
     "society:item/botanical_tribute"
   );
-  e.create("society:mana_fruit").texture("society:item/crop/mana_fruit")
+  e.create("society:mana_fruit").texture("society:item/crops/mana_fruit")
     .food((food) => {
       food.nutrition(3);
       food.saturation(1);
@@ -383,7 +383,7 @@ StartupEvents.registry("item", (e) => {
       // food.fastToEat(true);
       food.effect("minecraft:resistance", 2400, 0, 1.0);
     });
-    
+
   e.create("society:deep_a_mochi").texture("society:item/dishes/deep_a_mochi")
     .displayName("Deep-a-Mochi")
     .food((food) => {
@@ -633,11 +633,6 @@ StartupEvents.registry("item", (e) => {
   // });
   const fishTexureMapping = [
     {
-      item: "unusualfishmod:raw_snowflake",
-      texture: "raw_snowflake_tail_fish",
-      displayId: "frosty_fin",
-    },
-    {
       item: "unusualfishmod:raw_bark_angelfish",
       texture: "raw_bark_angel",
       displayId: "bark_angelfish",
@@ -650,60 +645,128 @@ StartupEvents.registry("item", (e) => {
   ];
 
   const fishRoeMapping = [
-    { item: "aquaculture:atlantic_herring", hex: 0x8a9cab },
-    { item: "minecraft:pufferfish", hex: 0xf9b00a },
-    { item: "aquaculture:minnow", hex: 0x40537f },
-    { item: "aquaculture:bluegill", hex: 0x327355 },
-    { item: "aquaculture:perch", hex: 0x829c4d },
-    { item: "minecraft:salmon", hex: 0xaa3835 },
-    { item: "aquaculture:blackfish", hex: 0x6c6254 },
-    { item: "aquaculture:brown_trout", hex: 0xac8c5b },
-    { item: "aquaculture:carp", hex: 0x9e7150 },
-    { item: "aquaculture:piranha", hex: 0x8c8b9e },
-    { item: "aquaculture:smallmouth_bass", hex: 0x5da759 },
+    { item: "crittersandcompanions:koi_fish", hex: 0xef7639 },
+    { item: "starcatcher:blue_herring", hex: 0x999999 },
+    { item: "starcatcher:bluegigi", hex: 0x999999 },
+    { item: "starcatcher:garnet_mackerel", hex: 0x999999 },
+    { item: "starcatcher:ironjaw_herring", hex: 0x999999 },
+    { item: "starcatcher:petal_bass", hex: 0x999999 },
+    { item: "starcatcher:pink_koi", hex: 0x999999 },
+    { item: "starcatcher:silverveil_perch", hex: 0x999999 },
+    { item: "starcatcher:sludge_catfish", hex: 0x999999 },
+    { item: "starcatcher:bigeye_tuna", hex: 0x999999 },
+    { item: "starcatcher:deepjaw_herring", hex: 0x999999 },
+    { item: "starcatcher:dripfin", hex: 0x999999 },
+    { item: "starcatcher:gold_fan", hex: 0x999999 },
+    { item: "starcatcher:hollowbelly_darter", hex: 0x999999 },
+    { item: "starcatcher:lightning_bass", hex: 0x999999 },
+    { item: "starcatcher:lush_pike", hex: 0x999999 },
+    { item: "starcatcher:mirage_carp", hex: 0x999999 },
+    { item: "starcatcher:mossfin", hex: 0x999999 },
+    { item: "starcatcher:shadowfin", hex: 0x999999 },
+    { item: "starcatcher:agave_bream", hex: 0x999999 },
+    { item: "starcatcher:carpenjoe", hex: 0x999999 },
+    { item: "starcatcher:downfall_bream", hex: 0x999999 },
+    { item: "starcatcher:dusktail_snapper", hex: 0x999999 },
+    { item: "starcatcher:shroomfish", hex: 0x999999 },
+    { item: "starcatcher:crystalback_boreal", hex: 0x999999 },
+    { item: "starcatcher:frostgill_chub", hex: 0x999999 },
+    { item: "starcatcher:rose_siamese_fish", hex: 0x999999 },
+    { item: "starcatcher:sandtail", hex: 0x999999 },
+    { item: "starcatcher:sporefish", hex: 0x999999 },
+    { item: "starcatcher:rainfin", hex: 0x999999 },
+    { item: "starcatcher:rockgill", hex: 0x999999 },
+    { item: "starcatcher:peakdweller", hex: 0x999999 },
+    { item: "starcatcher:ripple_catfish", hex: 0x999999 },
+    { item: "starcatcher:frostjaw_trout", hex: 0x999999 },
+    { item: "starcatcher:blue_ice_pike", hex: 0x999999 },
+    { item: "starcatcher:aurora", hex: 0x999999 },
+    { item: "starcatcher:scorchfish", hex: 0x999999 },
+    { item: "starcatcher:oasis_sturgeon", hex: 0x999999 },
+    { item: "starcatcher:sage_catfish", hex: 0x999999 },
+    { item: "starcatcher:pale_carp", hex: 0x999999 },
+    { item: "starcatcher:blossomfish", hex: 0x999999 },
+    { item: "starcatcher:vesani", hex: 0x999999 },
+    { item: "starcatcher:sunflower_carp", hex: 0x999999 },
+    { item: "starcatcher:cloudfin", hex: 0x999999 },
+    { item: "starcatcher:crystalback_sturgeon", hex: 0x999999 },
+    { item: "starcatcher:azure_crystalback_minnow", hex: 0x999999 },
+    { item: "starcatcher:joel", hex: 0x999999 },
+    { item: "starcatcher:sea_bass", hex: 0x999999 },
+    { item: "starcatcher:amethystback", hex: 0x999999 },
+    { item: "starcatcher:stonefish", hex: 0x999999 },
+    { item: "starcatcher:fossilized_angelfish", hex: 0x999999 },
+    { item: "starcatcher:livid_bamboo", hex: 0x999999 },
+    { item: "starcatcher:aquamarine_pike", hex: 0x999999 },
+    { item: "starcatcher:bright_amethyst_snapper", hex: 0x999999 },
+    { item: "starcatcher:dark_amethyst_snapper", hex: 0x999999 },
+    { item: "starcatcher:deepslatefish", hex: 0x999999 },
+    { item: "starcatcher:ward", hex: 0x999999 },
+    { item: "starcatcher:glowing_dark", hex: 0x999999 },
+    { item: "starcatcher:scalding_pike", hex: 0x999999 },
+    { item: "starcatcher:cinder_squid", hex: 0x999999 },
+    { item: "starcatcher:glowstone_seeker", hex: 0x999999 },
+    { item: "starcatcher:glowstone_pufferfish", hex: 0x999999 },
+    { item: "starcatcher:end_glow", hex: 0x999999 },
+    { item: "starcatcher:purple_carp", hex: 0x999999 },
+    { item: "starcatcher:voidfin", hex: 0x999999 },
+    { item: "starcatcher:spacejelly", hex: 0x999999 },
+    { item: "starcatcher:chorus_minnow", hex: 0x999999 },
+    { item: "starcatcher:nebula_squid", hex: 0x999999 },
+    { item: "starcatcher:coggill", hex: 0x999999 },
+    { item: "starcatcher:mechanical_brass_snail", hex: 0x999999 },
+    { item: "starcatcher:mechanical_snail", hex: 0x999999 },
+    { item: "starcatcher:phillipsfish", hex: 0x999999 },
+    { item: "starcatcher:valve", hex: 0x999999 },
+    { item: "starcatcher:pipehead", hex: 0x999999 },
+    { item: "starcatcher:cogtopus", hex: 0x999999 },
+    { item: "starcatcher:drive_pike", hex: 0x999999 },
+    { item: "starcatcher:brassgill", hex: 0x999999 },
+    { item: "starcatcher:meka_agave_bream", hex: 0x999999 },
+    { item: "starcatcher:obidontiee", hex: 0x999999 },
+    { item: "starcatcher:driftfin", hex: 0x999999 },
+    { item: "starcatcher:elderscale", hex: 0x999999 },
+    { item: "starcatcher:sunny_sturgeon", hex: 0x999999 },
+    { item: "starcatcher:twilight_koi", hex: 0x999999 },
+    { item: "starcatcher:sun_seeking_carp", hex: 0x999999 },
+    { item: "starcatcher:thunder_bass", hex: 0x999999 },
+    { item: "starcatcher:crystalback_trout", hex: 0x999999 },
+    { item: "starcatcher:wintery_pike", hex: 0x999999 },
+    { item: "starcatcher:cactifish", hex: 0x999999 },
+    { item: "starcatcher:lily_snapper", hex: 0x999999 },
+    { item: "starcatcher:pale_pinfish", hex: 0x999999 },
+    { item: "starcatcher:pinfish", hex: 0x999999 },
+    { item: "starcatcher:petaldrift_carp", hex: 0x999999 },
+    { item: "starcatcher:morganite", hex: 0x999999 },
+    { item: "starcatcher:icetooth_sturgeon", hex: 0x999999 },
+    { item: "starcatcher:boreal", hex: 0x999999 },
+    { item: "starcatcher:silverfin_pike", hex: 0x999999 },
+    { item: "starcatcher:willow_bream", hex: 0x999999 },
+    { item: "starcatcher:drifting_bream", hex: 0x999999 },
+    { item: "starcatcher:mistback_chub", hex: 0x999999 },
+    { item: "starcatcher:crystalback_minnow", hex: 0x999999 },
+    { item: "starcatcher:blue_crystal_fin", hex: 0x999999 },
+    { item: "starcatcher:redscaled_tuna", hex: 0x999999 },
+    { item: "starcatcher:whiteveil", hex: 0x999999 },
+    { item: "starcatcher:yellowstone_fish", hex: 0x999999 },
+    { item: "starcatcher:vivid_moss", hex: 0x999999 },
+    { item: "starcatcher:the_quarrish", hex: 0x999999 },
+    { item: "starcatcher:ghostly_pike", hex: 0x999999 },
+    { item: "starcatcher:sculkfish", hex: 0x999999 },
+    { item: "starcatcher:suneater", hex: 0x999999 },
+    { item: "starcatcher:pyrotrout", hex: 0x999999 },
+    { item: "starcatcher:embergill", hex: 0x999999 },
+    { item: "starcatcher:magma_fish", hex: 0x999999 },
+    { item: "starcatcher:willish", hex: 0x999999 },
+    { item: "starcatcher:cerberay", hex: 0x999999 },
+    { item: "starcatcher:charfish", hex: 0x999999 },
+    { item: "starcatcher:voidbiter", hex: 0x999999 },
+
     { item: "minecraft:cod", hex: 0xcdb695 },
-    { item: "aquaculture:pollock", hex: 0x777d6c },
-    { item: "aquaculture:jellyfish", hex: 0xe3afe2 },
-    { item: "aquaculture:rainbow_trout", hex: 0x939056 },
-    { item: "aquaculture:pink_salmon", hex: 0x515133 },
+    { item: "minecraft:pufferfish", hex: 0xf9b00a },
+    { item: "minecraft:salmon", hex: 0xaa3835 },
     { item: "minecraft:tropical_fish", hex: 0xf17226 },
-    { item: "aquaculture:red_grouper", hex: 0x5e262a },
-    { item: "aquaculture:gar", hex: 0x6d774b },
-    { item: "aquaculture:muskellunge", hex: 0xb1a89f },
-    { item: "aquaculture:synodontis", hex: 0xbc9359 },
-    { item: "aquaculture:tambaqui", hex: 0xbaac8f },
-    { item: "aquaculture:atlantic_cod", hex: 0x8f8777 },
-    { item: "aquaculture:boulti", hex: 0x7a6e5d },
-    { item: "aquaculture:leech", hex: 0x26242b },
-    { item: "aquaculture:catfish", hex: 0x61667a },
-    { item: "aquaculture:tuna", hex: 0x7c7784 },
-    { item: "aquaculture:bayad", hex: 0xbfc2ad },
-    { item: "aquaculture:arapaima", hex: 0xa6b39b },
-    { item: "aquaculture:atlantic_halibut", hex: 0x504438 },
-    { item: "aquaculture:starshell_turtle", hex: 0xced2d2 },
-    { item: "aquaculture:brown_shrooma", hex: 0xbca18e },
-    { item: "aquaculture:red_shrooma", hex: 0xce494f },
-    { item: "aquaculture:arrau_turtle", hex: 0x6c7f76 },
-    { item: "aquaculture:capitaine", hex: 0xb1b07c },
-    { item: "aquaculture:box_turtle", hex: 0x787b33 },
-    { item: "aquaculture:pacific_halibut", hex: 0xa17e5e },
-    { item: "aquaculture:goldfish", hex: 0xc3a364 },
-    { item: "crabbersdelight:shrimp", hex: 0xdb4f39 },
-    { item: "crabbersdelight:clawster", hex: 0x343239 },
-    { item: "crabbersdelight:crab", hex: 0x40537f },
-    { item: "crabbersdelight:clam", hex: 0x6ba2c1 },
-    { item: "netherdepthsupgrade:searing_cod", hex: 0xe05407 },
-    { item: "netherdepthsupgrade:blazefish", hex: 0xfcf244 },
-    { item: "netherdepthsupgrade:lava_pufferfish", hex: 0xf80c0c },
-    { item: "netherdepthsupgrade:obsidianfish", hex: 0x332b45 },
-    { item: "netherdepthsupgrade:bonefish", hex: 0xd0d0d0 },
-    { item: "netherdepthsupgrade:wither_bonefish", hex: 0x282828 },
-    { item: "netherdepthsupgrade:magmacubefish", hex: 0xb63406 },
-    { item: "netherdepthsupgrade:glowdine", hex: 0xe2c267 },
-    { item: "netherdepthsupgrade:soulsucker", hex: 0x01a5aa },
-    { item: "netherdepthsupgrade:fortress_grouper", hex: 0xe3851d },
-    { item: "netherdepthsupgrade:eyeball_fish", hex: 0x911515 },
-    { item: "society:neptuna", hex: 0x3becbe },
+
     { item: "unusualfishmod:raw_sneep_snorp", hex: 0x19228e },
     { item: "unusualfishmod:raw_picklefish", hex: 0x6f7a41 },
     { item: "unusualfishmod:raw_forkfish", hex: 0x9f9734 },
@@ -723,16 +786,11 @@ StartupEvents.registry("item", (e) => {
     { item: "unusualfishmod:raw_bark_angelfish", hex: 0x755838 },
     { item: "unusualfishmod:raw_amber_goby", hex: 0xfcae2a },
     { item: "unusualfishmod:raw_eyelash", hex: 0xdc66a0 },
-    { item: "crittersandcompanions:koi_fish", hex: 0xef7639 },
   ];
   // Smoked fish, roe, aged roe, and bait
-  global.fish.forEach((fish) => {
+  global.FISH.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
-    if (
-      ["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))
-    )
-      return;
     let baseTexturePath = `${splitFish[0]}:item/${splitFish[1]}`;
     if (fishId.includes("raw_")) {
       fishId = fishId.substring(4, fishId.length);
@@ -753,18 +811,6 @@ StartupEvents.registry("item", (e) => {
         food.saturation(2);
       });
     const roeHex = fishRoeMapping.find((val) => val.item === fish.item)?.hex;
-    e.create(`society:${fishId}_roe`)
-      .texture("society:item/roe")
-      .tag("society:roe")
-      .color(0, roeHex);
-    e.create(`society:aged_${fishId}_roe`)
-      .texture("society:item/aged_roe")
-      .tag("society:aged_roe")
-      .color(0, roeHex)
-      .food((food) => {
-        food.nutrition(5);
-        food.saturation(2);
-      });
     e.create(`society:${fishId}_bait`)
       .texture("society:item/fish_bait")
       .color(0, roeHex)
@@ -803,6 +849,6 @@ StartupEvents.registry("item", (e) => {
     e.create(`fruittreemod:${fruit}`)
     e.create(`fruittreemod:${fruit}_sapling`)
   });
-    e.create(`fruittreemod:apple_sapling`)
+  e.create(`fruittreemod:apple_sapling`)
 
 });

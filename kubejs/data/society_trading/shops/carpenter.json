@@ -1,6 +1,8 @@
 {
   "shop_id": "carpenter",
-  "name": { "translate": "shop.society_trading.carpenter" },
+  "name": {
+    "translate": "shop.society_trading.carpenter"
+  },
   "texture": "dialog:textures/portraits/carpenter",
   "jei_catalyst": {
     "id": "society:villager",
@@ -390,7 +392,9 @@
         "count": 7
       },
       "stage_required": "entered_skull_cavern",
-      "unlock_description": "jei.society_trading.entered_skull_cavern",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_skull_cavern"
+      },
       "numismatics_cost": 7,
       "trade_id": "carpenter_lunalite"
     },
@@ -441,7 +445,9 @@
       },
       "numismatics_cost": 256,
       "stage_required": "entered_nether",
-      "unlock_description": "jei.society_trading.entered_nether",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_nether"
+      },
       "trade_id": "carpenter_polished_basalt"
     },
     {
@@ -455,7 +461,9 @@
       },
       "numismatics_cost": 256,
       "stage_required": "entered_nether",
-      "unlock_description": "jei.society_trading.entered_nether",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_nether"
+      },
       "trade_id": "carpenter_blackstone"
     },
     {
@@ -468,7 +476,9 @@
         "count": 2
       },
       "stage_required": "entered_nether",
-      "unlock_description": "jei.society_trading.entered_nether",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_nether"
+      },
       "numismatics_cost": 128,
       "trade_id": "carpenter_scorchia"
     },
@@ -482,7 +492,9 @@
         "count": 2
       },
       "stage_required": "entered_nether",
-      "unlock_description": "jei.society_trading.entered_nether",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_nether"
+      },
       "numismatics_cost": 128,
       "trade_id": "carpenter_bloodstone"
     },
@@ -496,7 +508,9 @@
         "count": 2
       },
       "stage_required": "entered_nether",
-      "unlock_description": "jei.society_trading.entered_nether",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_nether"
+      },
       "numismatics_cost": 128,
       "trade_id": "carpenter_scoria"
     },
@@ -522,7 +536,9 @@
         "count": 2
       },
       "stage_required": "entered_skull_cavern",
-      "unlock_description": "jei.society_trading.entered_skull_cavern",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_skull_cavern"
+      },
       "numismatics_cost": 1024,
       "trade_id": "carpenter_end_stone"
     },
@@ -536,7 +552,9 @@
         "count": 2
       },
       "stage_required": "entered_skull_cavern",
-      "unlock_description": "jei.society_trading.entered_skull_cavern",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_skull_cavern"
+      },
       "numismatics_cost": 1024,
       "trade_id": "carpenter_dusky_myalite"
     },
@@ -550,7 +568,9 @@
         "count": 4
       },
       "stage_required": "entered_skull_cavern",
-      "unlock_description": "jei.society_trading.entered_skull_cavern",
+      "unlock_description": {
+        "translate": "jei.society_trading.entered_skull_cavern"
+      },
       "numismatics_cost": 2048,
       "trade_id": "carpenter_myalite_crystal"
     },

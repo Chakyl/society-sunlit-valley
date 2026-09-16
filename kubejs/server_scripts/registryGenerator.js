@@ -191,6 +191,7 @@ let calculatePreservesValue = (cropValue) => (2 * (cropValue * 2)) + 64;
 let calculatePickleValue = (cropValue) => cropValue * 3;
 let calculateDriedValue = (cropValue) => (cropValue * 5 * 2) + 64;
 let calculatePristineValue = (baseValue) => (baseValue * 6) + 48;
+let calculateSmokeFishedValue = (baseValue) => (baseValue * 4);
 
 const formatItemName = (id) => Item.of(id).displayName.getString().replace('[', '').replace(']', '')
 if (debug) {
@@ -265,6 +266,13 @@ ServerEvents.generateData('after_mods', (e) => {
     global.ARTIFACTS.forEach((mineral) => {
         data.values[mineral.item] = global.getSaleData(mineral.value, [])
     })
+    // Roe: roundPrice(Math.floor(fish.value / 3) + 16),
+    // Aged Roe: roundPrice((Math.floor(fish.value / 3) + 16) * 15)
+    global.FISH.forEach((fish)=> {
+        data.values[fish.item] = global.getSaleData(fish.value, [])
+        let mappedItemName = global.getFishMappedItemName(fish.item);
+        data.values[`society:smoked_${mappedItemName}`] = global.getSaleData(calculateSmokeFishedValue(fish.value), [])
+    })
     // Dish Calculation very last probably idk
     for (const { dish, ingredients, cookedCount, type } of dishes) {
         let value = calculateDishValue(ingredients, cookedCount, type);
@@ -309,3 +317,6 @@ LootJS.lootTables((e) => {
         }
     })
 });
+
+
+

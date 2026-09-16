@@ -1,6 +1,8 @@
 {
   "shop_id": "book_fair",
-  "name": { "translate": "shop.society_trading.book_fair" },
+  "name": {
+    "translate": "shop.society_trading.book_fair"
+  },
   "texture": "dialog:textures/portraits/librarian",
   "jei_catalyst": {
     "id": "society:villager",
@@ -10,7 +12,12 @@
   },
   "hidden_from_auto_trader": true,
   "selector_weight": -100,
-  "seasons_required": ["late_spring", "late_summer", "late_autumn", "late_winter"],
+  "seasons_required": [
+    "late_spring",
+    "late_summer",
+    "late_autumn",
+    "late_winter"
+  ],
   "trades": [
     {
       "offer": {
@@ -25,7 +32,9 @@
       "trade_id": "book_fair_the_quality_of_the_earth_for_sun",
       "stage_required": "farming_mastery",
       "stage_removed": "the_quality_of_the_earth",
-      "unlock_description":"jei.society_trading.farming_mastery_unlocked"
+      "unlock_description": {
+        "translate": "jei.society_trading.farming_mastery_unlocked"
+      }
     },
     {
       "offer": {
@@ -40,7 +49,9 @@
       "trade_id": "book_fair_women_who_run_with_the_plushies_for_sun",
       "stage_required": "husbandry_mastery",
       "stage_removed": "women_who_run_with_the_plushies",
-      "unlock_description":"jei.society_trading.husbandry_mastery_unlocked"
+      "unlock_description": {
+        "translate": "jei.society_trading.husbandry_mastery_unlocked"
+      }
     },
     {
       "offer": {
@@ -54,11 +65,16 @@
       "numismatics_cost": 16777216,
       "stage_required": "fishing_mastery",
       "stage_removed": "pond_house_five",
-      "unlock_description":"jei.society_trading.fishing_mastery_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.fishing_mastery_unlocked"
+      },
       "trade_id": "book_fair_pond_house_five_for_prismatic"
     },
     {
-      "offer": { "id": "society:the_spark_also_rises", "count": 1 },
+      "offer": {
+        "id": "society:the_spark_also_rises",
+        "count": 1
+      },
       "request": {
         "id": "numismatics:sun",
         "count": 20
@@ -66,7 +82,9 @@
       "numismatics_cost": 81920,
       "stage_required": "mining_mastery",
       "stage_removed": "the_spark_also_rises",
-      "unlock_description":"jei.society_trading.mining_mastery_unlocked",
+      "unlock_description": {
+        "translate": "jei.society_trading.mining_mastery_unlocked"
+      },
       "trade_id": "book_fair_the_spark_also_rises"
     },
     {
@@ -82,7 +100,9 @@
       "trade_id": "book_fair_the_red_and_the_black_for_sun",
       "stage_required": "adventuring_mastery",
       "stage_removed": "the_red_and_the_black",
-      "unlock_description":"jei.society_trading.adventuring_mastery_unlocked"
+      "unlock_description": {
+        "translate": "jei.society_trading.adventuring_mastery_unlocked"
+      }
     },
     {
       "offer": {
@@ -173,9 +193,10 @@
       },
       "numismatics_cost": 32768,
       "trade_id": "book_fair_phenomenology_of_treasure_for_sun",
-      "seasons_required": ["late_spring"],
-      "stage_removed": "phenomenology_of_treasure",
-      "unlock_description":"jei.society_trading.only_spring"
+      "seasons_required": [
+        "late_spring"
+      ],
+      "stage_removed": "phenomenology_of_treasure"
     },
     {
       "offer": {
@@ -188,9 +209,10 @@
       },
       "numismatics_cost": 65536,
       "trade_id": "book_fair_bullfish_jobs_for_sun",
-      "seasons_required": ["late_spring"],
-      "stage_removed": "bullfish_jobs",
-      "unlock_description":"jei.society_trading.only_spring"
+      "seasons_required": [
+        "late_spring"
+      ],
+      "stage_removed": "bullfish_jobs"
     },
     {
       "offer": {
@@ -203,9 +225,10 @@
       },
       "numismatics_cost": 81920,
       "trade_id": "book_fair_paradise_crop_for_sun",
-      "seasons_required": ["late_summer"],
-      "stage_removed": "paradise_crop",
-      "unlock_description":"jei.society_trading.only_summer"
+      "seasons_required": [
+        "late_summer"
+      ],
+      "stage_removed": "paradise_crop"
     },
     {
       "offer": {
@@ -216,11 +239,12 @@
         "id": "numismatics:neptunium_coin",
         "count": 4
       },
-    "numismatics_cost": 131072,
+      "numismatics_cost": 131072,
       "trade_id": "book_fair_frogs_bounty_bazaar_for_sun",
-      "seasons_required": ["late_summer"],
-      "stage_removed": "frogs_bounty_bazaar",
-      "unlock_description":"jei.society_trading.only_summer"
+      "seasons_required": [
+        "late_summer"
+      ],
+      "stage_removed": "frogs_bounty_bazaar"
     },
     {
       "offer": {
@@ -233,9 +257,10 @@
       },
       "numismatics_cost": 4096,
       "trade_id": "book_fair_hitting_hard_and_soft_for_sun",
-      "seasons_required": ["late_autumn"],
-      "stage_removed": "hitting_hard_and_soft",
-      "unlock_description":"jei.society_trading.only_autumn"
+      "seasons_required": [
+        "late_autumn"
+      ],
+      "stage_removed": "hitting_hard_and_soft"
     },
     {
       "offer": {
@@ -248,9 +273,10 @@
       },
       "numismatics_cost": 4096,
       "trade_id": "book_fair_canadian_and_famous_for_sun",
-      "seasons_required": ["late_autumn"],
-      "stage_removed": "canadian_and_famous",
-      "unlock_description":"jei.society_trading.only_autumn"
+      "seasons_required": [
+        "late_autumn"
+      ],
+      "stage_removed": "canadian_and_famous"
     },
     {
       "offer": {
@@ -263,9 +289,10 @@
       },
       "numismatics_cost": 20480,
       "trade_id": "book_fair_alias_moss",
-      "seasons_required": ["late_autumn"],
-      "stage_removed": "alias_moss",
-      "unlock_description":"jei.society_trading.only_autumn"
+      "seasons_required": [
+        "late_autumn"
+      ],
+      "stage_removed": "alias_moss"
     },
     {
       "offer": {
@@ -278,9 +305,10 @@
       },
       "numismatics_cost": 81920,
       "trade_id": "book_fair_bluegigi_meridian_for_sun",
-      "seasons_required": ["late_winter"],
-      "stage_removed": "bluegigi_meridian",
-      "unlock_description":"jei.society_trading.only_winter"
+      "seasons_required": [
+        "late_winter"
+      ],
+      "stage_removed": "bluegigi_meridian"
     },
     {
       "offer": {
@@ -293,9 +321,10 @@
       },
       "numismatics_cost": 69632,
       "trade_id": "book_fair_intro_to_algorithms_for_sun",
-      "seasons_required": ["late_winter"],
-      "stage_removed": "intro_to_algorithms",
-      "unlock_description":"jei.society_trading.only_winter"
+      "seasons_required": [
+        "late_winter"
+      ],
+      "stage_removed": "intro_to_algorithms"
     },
     {
       "offer": {
@@ -402,7 +431,10 @@
       "trade_id": "book_fair_the_metamorphosize_for_sun"
     },
     {
-      "offer": { "id": "society:universal_methods_of_farming", "count": 1 },
+      "offer": {
+        "id": "society:universal_methods_of_farming",
+        "count": 1
+      },
       "request": {
         "id": "numismatics:sun",
         "count": 10

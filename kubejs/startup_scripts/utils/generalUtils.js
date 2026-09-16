@@ -11,3 +11,11 @@ global.giveExperience = (server, player, category, xp, excludeMastery) => {
     }
   }
 };
+
+global.getFishMappedItemName = (itemId) => {
+  let fishId = itemId.split(":")[1];
+  if (fishId.includes("raw_")) {
+    fishId = fishId.substring(4, fishId.length);
+  }
+  return fishId
+}

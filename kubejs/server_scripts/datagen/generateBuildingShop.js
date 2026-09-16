@@ -15,7 +15,7 @@ const villagerfarmBuildingTypes = [
     { type: "blacksmith", price: 2, name: "Blacksmith", catalyst: "minecraft:anvil" },
     { type: "shepherd", price: 2, name: "Shepherd", catalyst: "society:feeding_trough" },
     { type: "market", price: 2, name: "Market", catalyst: "minecraft:composter" },
-    { type: "fisher", price: 2, name: "Fisher", catalyst: "aquaculture:worm_farm" },
+    { type: "fisher", price: 2, name: "Fisher", catalyst: "starcatcher:tackle_box" },
     { type: "banker", price: 3, name: "Banker", catalyst: "numismatics:bank_terminal" },
     { type: "librarian", price: 5, name: "Librarian", catalyst: "minecraft:book" },
     { type: "witch", price: 4, name: "Witch", catalyst: 'society:crystal_of_regret_mining' },

@@ -1236,7 +1236,7 @@ global.fishPondDefinitions = new Map([
                     population: 7,
                     requestedItems: [
                         { item: "quark:diamond_heart", count: 1 },
-                        { item: "aquaculture:neptunium_ingot", count: 1 },
+                        { item: "plentifulponds:oceanite", count: 1 },
                     ],
                 },
             ],
@@ -2167,7 +2167,7 @@ global.fishPondDefinitions = new Map([
     //                 population: 3,
     //                 requestedItems: [
     //                     { item: "society:aquamagical_dust", count: 1 },
-    //                     { item: "aquaculture:neptunium_ingot", count: 2 },
+    //                     { item: "plentifulponds:oceanite", count: 2 },
     //                     { item: "aquaculture:neptunes_bounty", count: 1 },
     //                 ],
     //             },
@@ -2192,7 +2192,7 @@ global.fishPondDefinitions = new Map([
     //             },
     //             {
     //                 minPopulation: 6,
-    //                 item: "aquaculture:neptunium_ingot",
+    //                 item: "plentifulponds:oceanite",
     //                 count: 1,
     //                 chance: 0.08,
     //             },
@@ -2918,7 +2918,7 @@ global.fishPondDefinitions = new Map([
                     population: 7,
                     requestedItems: [
                         { item: "vinery:magnetic_wine", count: 1 },
-                        { item: "aquaculture:neptunium_ingot", count: 1 },
+                        { item: "plentifulponds:oceanite", count: 1 },
                     ],
                 },
             ],

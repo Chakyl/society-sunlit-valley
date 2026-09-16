@@ -26,7 +26,7 @@
       },
       "numismatics_cost": 32768,
       "stage_required": "husbandry_mastery",
-      "unlock_description": "jei.society_trading.husbandry_mastery_unlocked",
+      "unlock_description": { "translate":  "jei.society_trading.husbandry_mastery_unlocked" },
       "trade_id": "witch_sunlit_crystal"
     },
     {
@@ -44,7 +44,7 @@
       },
       "numismatics_cost": 32768,
       "stage_required": "husbandry_mastery",
-      "unlock_description": "jei.society_trading.husbandry_mastery_unlocked",
+      "unlock_description": { "translate":  "jei.society_trading.husbandry_mastery_unlocked" },
       "trade_id": "witch_plushie_wand"
     },
     {
@@ -58,7 +58,7 @@
       },
       "numismatics_cost": 32768,
       "stage_required": "adventuring_mastery",
-      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
+      "unlock_description": { "translate":  "jei.society_trading.adventuring_mastery_unlocked" },
       "trade_id": "librarian_enchanting_table_for_sun"
     },
     {
@@ -172,7 +172,7 @@
       },
       "stage_required": "community_center_complete",
       "numismatics_cost": 32768,
-      "unlock_description": "jei.society_trading.community_center_complete",
+      "unlock_description": { "translate":  "jei.society_trading.community_center_complete" },
       "trade_id": "witch_ribbit_hut"
     },
     {
@@ -186,7 +186,7 @@
       },
       "numismatics_cost": 4096,
       "stage_required": "boiler_room_complete",
-      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "unlock_description": { "translate":  "jei.society_trading.boiler_room_complete" },
       "trade_id": "witch_kinetic_blueprint_for_sun"
     },
     {
@@ -336,7 +336,7 @@
       },
       "stage_required": "community_center_complete",
       "numismatics_cost": 1073741824,
-      "unlock_description": "jei.society_trading.community_center_complete",
+      "unlock_description": { "translate":  "jei.society_trading.community_center_complete" },
       "trade_id": "witch_iridium_clock"
     },
     {

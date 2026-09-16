@@ -381,6 +381,85 @@ global.ARTIFACTS = [
     { item: "society:red_wrench", value: 233 },
 ];
 
+/**
+ *   Fish
+ * 
+ *  Used for: Item generation
+ * 
+ * Valid Properties:
+ * @property {string} item - Item ID
+ * @property {number} value - Sell value
+ * 
+ */
+global.FISH = [
+  { item: "starcatcher:blue_herring", value: 16 },
+  { item: "minecraft:pufferfish", value: 16 },
+  { item: "starcatcher:driftfin", value: 16 },
+  { item: "starcatcher:bluegigi", value: 16 },
+  { item: "starcatcher:silverveil_perch", value: 16 },
+  { item: "unusualfishmod:raw_sneep_snorp", value: 16 },
+  { item: "minecraft:salmon", value: 24 },
+  { item: "starcatcher:dusktail_snapper", value: 24 },
+  { item: "unusualfishmod:raw_beaked_herring", value: 32 },
+  { item: "starcatcher:agave_bream", value: 40 },
+  { item: "starcatcher:pale_carp", value: 40 },
+  { item: "starcatcher:hollowbelly_darter", value: 48 },
+  { item: "starcatcher:petal_bass", value: 40 },
+  { item: "minecraft:cod", value: 16 },
+  { item: "unusualfishmod:raw_picklefish", value: 48 },
+  { item: "starcatcher:crystalback_boreal", value: 56 },
+  { item: "starcatcher:rose_siamese_fish", value: 64 },
+  { item: "starcatcher:pink_koi", value: 64 },
+  { item: "minecraft:tropical_fish", value: 72 },
+  { item: "starcatcher:redscaled_tuna", value: 80 },
+  { item: "starcatcher:downfall_bream", value: 88 },
+  { item: "starcatcher:carpenjoe", value: 96 },
+  { item: "unusualfishmod:raw_forkfish", value: 96 },
+  { item: "unusualfishmod:raw_snowflake", value: 96 },
+  { item: "starcatcher:lightning_bass", value: 112 },
+  { item: "starcatcher:dripfin", value: 112 },
+  { item: "unusualfishmod:raw_sailor_barb", value: 112 },
+  { item: "starcatcher:frostgill_chub", value: 120 },
+  { item: "starcatcher:deepjaw_herring", value: 128 },
+  { item: "unusualfishmod:raw_aero_mono", value: 128 },
+  { item: "starcatcher:shadowfin", value: 136 },
+  { item: "starcatcher:sludge_catfish", value: 144 },
+  { item: "unusualfishmod:raw_bark_angelfish", value: 144 },
+  { item: "unusualfishmod:raw_drooping_gourami", value: 176 },
+  { item: "unusualfishmod:raw_demon_herring", value: 192 },
+  { item: "starcatcher:bigeye_tuna", value: 192 },
+  { item: "unusualfishmod:raw_triple_twirl_pleco", value: 208 },
+  { item: "starcatcher:ironjaw_herring", value: 208 },
+  { item: "starcatcher:lush_pike", value: 224 },
+  { item: "unusualfishmod:raw_blind_sailfin", value: 224 },
+  { item: "starcatcher:garnet_mackerel", value: 232 },
+  { item: "starcatcher:sporefish", value: 264 },
+  { item: "starcatcher:shroomfish", value: 264 },
+  { item: "unusualfishmod:raw_amber_goby", value: 288 },
+  { item: "starcatcher:mirage_carp", value: 288 },
+  { item: "unusualfishmod:raw_copperflame_anthias", value: 320 },
+  { item: "unusualfishmod:raw_circus_fish", value: 320 },
+  { item: "crittersandcompanions:koi_fish", value: 340 },
+  { item: "unusualfishmod:raw_hatchetfish", value: 352 },
+  { item: "unusualfishmod:raw_spindlefish", value: 368 },
+  { item: "society:neptuna", value: 384 },
+  { item: "starcatcher:sandtail", value: 400 },
+  { item: "unusualfishmod:raw_eyelash", value: 480 },
+  { item: "unusualfishmod:raw_duality_damselfish", value: 448 },
+  { item: "starcatcher:gold_fan", value: 512 },
+  // Nether
+  { item: "starcatcher:pyrotrout", value: 264 },
+  { item: "starcatcher:magma_fish", value: 408 },
+  { item: "starcatcher:glowstone_pufferfish", value: 264 },
+  { item: "starcatcher:obsidian_crab", value: 512 },
+  { item: "starcatcher:scalding_pike", value: 364 },
+  { item: "starcatcher:embergill", value: 412 },
+  { item: "starcatcher:glowstone_seeker", value: 620 },
+  { item: "starcatcher:suneater", value: 448 },
+  { item: "starcatcher:scorched_bloodsucker", value: 312 }, // Soulsucker
+  { item: "starcatcher:black_eel", value: 666 },
+  { item: "starcatcher:willish", value: 408 },
+];
 global.getSaleData = (value, processors) => {
     return {
         "base_value": value,
@@ -396,3 +475,4 @@ global.getSaleData = (value, processors) => {
         ]
     }
 }
+
