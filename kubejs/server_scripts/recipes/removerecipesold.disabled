@@ -959,7 +959,7 @@ ServerEvents.recipes((e) => {
   removeByInput.forEach((item) => {
     e.remove({ input: item });
   });
-  e.remove({ mod: "fruittreemod" });
+  e.remove({ mod: "orchard" });
   e.remove({ mod: "waystones" });
   // Remove dying
   e.remove({ type: "meadow:cooking" });

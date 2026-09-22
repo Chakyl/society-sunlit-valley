@@ -830,17 +830,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:advanced_redstone_component");
 
   [
-    "cherry",
-    "lemon",
-    "orange",
-    "peach",
-    "plum",
-    "hazelnut",
-    "pawpaw",
     "cinnamon",
-    "mango",
-    "starfruit",
-    "lychee",
     "banana",
     "dragon_fruit",
     "passion_fruit"
