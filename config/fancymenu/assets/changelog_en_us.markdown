@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### 1.1.4-SSV4.1.5
+### 1.1.4-SSV4.1.5A
 ^^^
 --- 
 - Updated to Society: Sunlit Valley - 4.1.5
@@ -241,7 +241,7 @@
 - FIxed copycats crash
 - Fixed shift purchasing buying until inventory is full, bankrupting farmers across the valley
 
-## 4.1.5
+## 4.1.5A
 - Added Sub-Accounts from Create Numismatics update
 - Added number truncation to Coin Leaderboards
 - Add tooltip for Fish Pond Manager clipboard interaction

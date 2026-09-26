@@ -1,7 +1,7 @@
 
 ^^^
 ## Sunlit Cobblemon
-### vsunlit-cobblemon-1.1.4-SSV4.1.5
+### vsunlit-cobblemon-1.1.4-SSV4.1.5A
 ^^^
 --- 
 ## v1.1.3
