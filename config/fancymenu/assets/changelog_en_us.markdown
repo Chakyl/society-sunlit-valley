@@ -1,7 +1,6 @@
 ^^^
 ## Cozy Cafe
-### v4.1.5
-### Happy 2-Year Anniversary Sunlit Valley!!
+### v4.1.5A
 ^^^
 --- 
 - Added Sale Points and Sub-Accounts from Create Numismatics update
