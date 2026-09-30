@@ -23,8 +23,11 @@
 			rewards: [{
 				id: "3F382B3123CA893C"
 				item: {
+					components: {
+						"ftbquests:missing_item": "simplehats:hatbag_epic"
+					}
 					count: 1
-					id: "simplehats:hatbag_epic"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

@@ -117,8 +117,6 @@
 [projectiles]
 	#Makes snowballs render in 3D
 	snowball_3d = true
-	#Makes slimeballs render in 3D (supplementaries only)
-	slimeball_3d = true
 	#Makes ghast & blazes fireballs render in 3D
 	fireball_3d = true
 	#Makes ghast & blazes fireballs leave a trail of particles when moving
@@ -129,6 +127,8 @@
 	charges_tumble = true
 	#Makes 3D snowballs and slimeballs (supp compat) tumble in the air when moving
 	projectiles_tumble = false
+	#Makes slimeballs render in 3D (supplementaries only)
+	slimeball_3d = true
 
 	[projectiles.dragon_fireball]
 		#Makes dragon's breath particles emissive to better match new visuals

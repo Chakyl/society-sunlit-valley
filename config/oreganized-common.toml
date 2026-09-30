@@ -1,38 +1,39 @@
-#Common
-[common]
+[electrum]
+	#the speed boost granted by electrum armor
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	speedBoost = 0.05
+
+[gothic]
+	#Replace the stained glass windows in cleric temples with crystal glass
+	replaceClericWindows = true
+
+[silver]
+	#The scribe is able to silk-touch pickaxe-related blocks
+	scribeSilkTouchStone = true
+	#The radius in blocks for the tarnishing effect of undead mobs
+	# Default: 4
+	# Range: 1 ~ 20
+	tarnishRadius = 4
+	#The chance per block check for tarnishing to occur (1.0 = 100%, 0.0 = 0%). Note that this only applies to the first tarnish stage. other nextStage are this /2
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	tarnishChance = 0.5
+	#The number of blocks around an undead mob to check every times a mob dies
+	# Default: 40
+	# Range: 1 ~ 100
+	tarnishChecksPerMob = 40
+
+[lead]
 	#Should lead poisoning events give just Poison instead of Brain Damage?
 	poisonInsteadOfBrainDamage = false
 	#Should lead ore spawn dust clouds when broken without adjacent water?
 	leadDustCloud = true
 	#Pillagers have a chance to spawn with a lead bolt in their offhand
-	pillagerSpawnWithBolts = false
-	#The scribe is able to silk-touch pickaxe-related blocks
-	scribeSilkTouchStone = true
+	pillagerSpawnWithBolts = true
 	#Time in ticks molten lead waits until flowing downwards
 	# Default: 200
 	# Range: 0 ~ 2000
 	moltenLeadDelay = 200
 	#Can lead blocks be placed into a cauldron to melt?
 	cauldronLeadMelting = true
-	#Replace the stained glass windows in cleric temples with crystal glass
-	replaceClericWindows = true
-
-	[common.silver]
-		#The radius in blocks for the tarnishing effect of undead mobs
-		# Default: 4
-		# Range: 1 ~ 20
-		tarnishRadius = 4
-		#The chance per block check for tarnishing to occur (1.0 = 100%, 0.0 = 0%). Note that this only applies to the first tarnish stage. other nextStage are this /2
-		# Default: 0.5
-		# Range: 0.0 ~ 1.0
-		tarnishChance = 0.5
-		#The number of blocks around an undead mob to check every times a mob dies
-		# Default: 40
-		# Range: 1 ~ 100
-		tarnishChecksPerMob = 40
-
-	[common.electrum]
-		#the speed boost granted by electrum armor
-		# Default: 0.05
-		# Range: 0.0 ~ 1.0
-		speedBoost = 0.05

@@ -103,7 +103,6 @@ StartupEvents.registry("item", (e) => {
   [
     "morel",
     "winter_root",
-    "crabapple",
     "wild_onion",
     "leek",
     "mint",

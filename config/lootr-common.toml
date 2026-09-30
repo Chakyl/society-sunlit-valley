@@ -50,8 +50,8 @@
 	loot_table_blacklist = []
 	#list of modids whose loot tables shouldn't be converted (in the format of ["modid", "other_modid"])
 	loot_modid_blacklist = []
-	#list of loot tables whose conversion causes problems (in the same format as `loot_table_blacklist`)
-	problematic_loot_tables = ["twilightforest:structures/stronghold_boss", "atum:chests/pharaoh"]
+	#list of loot tables which will forcefully be converted even if they are included in the loot table blacklist or the problematic loot tables (format: see loot_table_blacklist)
+	loot_table_forced_whitelist = []
 
 [breaking]
 	#configuration options for breaking containers
@@ -71,6 +71,8 @@
 	item_frames_self_support = false
 	#lootr chests will drop the contents of the player-specific inventory (generated when not generated) when broken
 	should_drop_player_loot = false
+	#breaking a lootr chest (while not sneaking) will drop a player's loot but not destroy the block, simply marking it as opened
+	break_to_drop_loot = false
 
 [power]
 	#configuration options for comparators and redstone power
@@ -81,12 +83,6 @@
 
 [notifications]
 	#configuration options for notifications
-	#prevent notifications of decaying or refreshed chests
-	disable_notifications = false
-	#maximum time (in ticks) remaining on a chest before a notification for refreshing or decaying is sent to a player (default 30 seconds, -1 for no delay)
-	# Default: 600
-	# Range: > -1
-	notification_delay = 600
 	#disables styling of breaking, decaying and refreshing messages sent to players
 	disable_message_styles = false
 
@@ -129,3 +125,9 @@
 	start_refresh_while_ticking = true
 	#overriding refresh_loot_tables, refresh_modids and refresh_dimensions: all chests will refresh after being trapped for the first time
 	refresh_all = false
+
+[team]
+	#if true, instead of providing individual loot per player, loot will be assigned based on teams. by default, the entity's scoreboard team will be used. if the player is not in a team, their own uuid will be used instead. [default: false]
+	team_loot = false
+	#the team resolver to use. by default, this is the standard minecraft scoreboard system. anyone not assigned to a scoreboard team will instead be considered in a team of just themselves. this value only needs to be set when using multiple team-based add-ons that provide teams with the same priority and you wish to specify which one you want to use. if blank or empty or the team resolver cannot be found, it will default to 'lootr:default' [default: blank]
+	pinned_team_resolver = ""

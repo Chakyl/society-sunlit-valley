@@ -46,6 +46,20 @@
 	# 
 	# Default: true
 	USE_PLAYER_SKIN_IN_PREVIEW = true
+	# Side triangles. Options: none, style_1 (filled vertical strips), style_2 (outline only).
+	# 
+	# Default: style_1
+	PREVIEW_PANEL_SIDE_TRIANGLES = "style_1"
+	# Preview corner type, independent of the main tooltip. Options: default, rounded, bevel, inner, cut, thick, full_thick, bracket,
+	# block, notch, weld, gem.
+	# 
+	# Default: default
+	PREVIEW_PANEL_CORNER_TYPE = "default"
+	# Preview background corners, independent of the border and main tooltip. Options: default (vanilla notch), square, rounded, notch.
+	# Pair notch with the preview border's notch corners.
+	# 
+	# Default: default
+	PREVIEW_PANEL_BACKGROUND_CORNER_TYPE = "default"
 
 # general §§
 [general]
@@ -69,6 +83,20 @@
 	# 
 	# Default: true
 	SHOW_TOOLTIP_WITHOUT_STACK = true
+	# Automatically scroll overflowed tooltips after three seconds. Manual scrolling disables it until the tooltip changes.
+	# 
+	# Default: true
+	AUTO_SCROLL_TOOLTIPS = true
+	# Reopen the config screen and the frame editor where you left them (category, entry and section) instead of starting from the top
+	# every time. Remembered until the game closes.
+	# 
+	# Default: true
+	REMEMBER_LAST_PAGE = true
+	# Maximum number of tooltips that can be pinned at the same time. Pinning past the limit replaces the oldest one.
+	# 
+	# Default: 3
+	# Range: 1 ~ 6
+	MAX_PINNED_TOOLTIPS = 3
 
 # divider §§
 [divider]
@@ -90,7 +118,7 @@
 	# 
 	# Default: match_inner_frame_color
 	DIVIDER_LINE_COLOR = "match_inner_frame_color"
-	# Divider line type. Options: 'gradient', 'static', 'linear'
+	# Divider line type. Options: 'gradient', 'static', 'linear', 'dashed', 'dotted', 'ornament', 'gradient_ornament'
 	# 
 	# Default: gradient
 	DIVIDER_LINE_TYPE = "gradient"
@@ -132,6 +160,36 @@
 	# Default: 1
 	# Range: -Infinity ~ Infinity
 	NO_STACK_TOOLTIP_PADDING_Y = 1
+	# Tooltip layout. Options: classic (icon inside), badge (icon halfway across the left frame), floating (compact header, external icon
+	# above the 3D preview), compact (small icon beside the title and rating specified in a subtle footer).
+	# 
+	# Default: classic
+	TOOLTIP_LAYOUT = "classic"
+	# Show the item's mod name on the left of Compact's footer, with the rating on the right. Long names are shortened to fit. The mod
+	# name is moved from the body when already present.
+	# 
+	# Default: true
+	COMPACT_SHOW_MOD_NAME = true
+	# Color of the mod name in Compact's footer, in ARGB format (#AARRGGBB). Defaults to dark gray.
+	# 
+	# Default: #FF555555
+	COMPACT_MOD_NAME_COLOR = "#FF555555"
+	# Depth (Z) offset of the whole hovered tooltip. Vanilla draws toasts (advancements, recipes) at 800, so the default keeps the
+	# tooltip over them.
+	# 
+	# Default: 400
+	# Range: 0 ~ 700
+	TOOLTIP_Z_OFFSET = 400
+	# Maximum tooltip height as a percentage of the screen height.
+	# 
+	# Default: 100
+	# Range: 10 ~ 100
+	MAX_TOOLTIP_HEIGHT = 100
+	# Maximum tooltip width as a percentage of the screen width.
+	# 
+	# Default: 100
+	# Range: 20 ~ 100
+	MAX_TOOLTIP_WIDTH = 100
 
 # style §§
 [style]
@@ -140,9 +198,10 @@
 	# Default: gradient
 	DEFAULT_INNER_OVERLAY_TYPE = "gradient"
 	# Corner style for the inner frame of the tooltip. Options: default (square), rounded (corner pixel removed), bevel (45 degree
-	# diagonal cut), inner (extra pixel in the inner corner), cut (2px chamfer), thick (solid triangular corner, top-right only), bracket
-	# (inner corner bracket), block (2x2 solid block corner), notch (rectangular inner offset), weld (reinforced inner corner), gem
-	# (hollow triangle). The notch style pairs with the matching notch background corner style.
+	# diagonal cut), inner (extra pixel in the inner corner), cut (2px chamfer), thick (solid triangular corner, top-right only),
+	# full_thick (thick on all four corners), bracket (inner corner bracket), block (2x2 solid block corner), notch (rectangular inner
+	# offset), weld (reinforced inner corner), gem (hollow triangle). The notch style pairs with the matching notch background corner
+	# style.
 	# 
 	# Default: default
 	INNER_FRAME_CORNER_TYPE = "default"
@@ -179,22 +238,61 @@
 	# 
 	# Default: false
 	SHOW_MOD_NAME = false
+	# Center the title and rating over the whole tooltip width instead of the space left next to the icon.
+	# 
+	# Default: false
+	ALIGNMENT_IGNORES_ICON = false
+	# Show the remaining and maximum durability of damaged items without enabling advanced tooltips (F3+H).
+	# 
+	# Default: false
+	SHOW_ITEM_DURABILITY = false
+	# Show the item's registry name (e.g. minecraft:diamond_sword) as a dark gray line without enabling advanced tooltips (F3+H).
+	# 
+	# Default: false
+	SHOW_REGISTRY_NAME = false
 
 # effects §§
 [effects]
 	# Effects. Options: bubbles, cinder, crystals, echo, fireflies, galaxy, magic_orbs, speed_lines, nebula, spiral, white_dust,
-	# metal_shining, rim_light, ripples, sonar, stars. You can chain effects together, for example: 'white_dust, nebula'
+	# metal_shining, rim_light, ripples, sonar, stars, fireflies_2, steel_shining, floating_stars, prism, snowfall, opal, aurora,
+	# fluorite, astral, comets, storm, sunbeams, fireworks, eruption, searchlights, blasts, firebreath, shield, lasers, missiles, wisps.
+	# You can chain effects together, for example: 'white_dust, nebula'
 	# 
 	# Default:
 	EFFECTS = ""
 	# Vignette entries for gradient overlays around the tooltip background. Each vignette must be written in parentheses in this exact
 	# order: (type, position, color, radius, extraPositionX, extraPositionY). Example: (circular, top_left, #FF567823, 0.4, 0, 0). You
-	# can define multiple vignettes by separating them with commas: (...), (...), (...). type = vignette shape (options: circular, hole).
-	# position = anchor on the tooltip (e.g. top_left, top_right, middle, right, bottom_left). color = ARGB hex in #AARRGGBB. radius =
-	# relative size factor (e.g. radius 0.4). extraPositionX / extraPositionY = additional pixel offset from the chosen position.
+	# can define multiple vignettes by separating them with commas: (...), (...), (...). type = vignette shape (options: circular, hole,
+	# ellipse, diamond, ring, linear). position = anchor on the tooltip (e.g. top_left, top_right, middle, right, bottom_left); for
+	# linear it is the edge the fade starts from (top_*, bottom_*, left, right; middle fades top and bottom). color = ARGB hex in
+	# #AARRGGBB. radius = relative size factor (e.g. radius 0.4); for linear, the fade depth as a fraction of the panel. extraPositionX /
+	# extraPositionY = additional offset as a percentage of the tooltip height / width, respectively.
 	# 
 	# Default:
 	VIGNETTES = ""
+	# Effect animation speed multiplier. Zero freezes effects.
+	# 
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	EFFECT_SPEED = 1.0
+	# Effect opacity multiplier. Zero hides effects.
+	# 
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	EFFECT_INTENSITY = 1.0
+	# Particle density multiplier.
+	# 
+	# Default: 1.0
+	# Range: 0.0 ~ 5.0
+	EFFECT_DENSITY = 1.0
+	# Freezes decorative effects and disable tooltip/icon movement, including custom frame overrides.
+	# 
+	# Default: false
+	REDUCED_MOTION = false
+	# Render effects right over the background, behind the text, icon and frame, instead of on top of everything.
+	# 
+	# Default: false
+	EFFECTS_BEHIND_TEXT = false
 
 # icon §§
 [icon]
@@ -215,11 +313,24 @@
 	# Default: 0.0
 	# Range: -Infinity ~ Infinity
 	ICON_ROTATING_SPEED = 0.0
+	# Icon background border shape. Style 1 leaves out the corner pixels, style 2 fills them for square corners.
+	# 
+	# Default: style_1
+	ICON_BORDER_STYLE = "style_1"
+	# Icon background color in #AARRGGBB. Use 'default' for the original color of each background type.
+	# 
+	# Default: default
+	ICON_BACKGROUND_COLOR = "default"
+	# Icon border color in #AARRGGBB, used by the slot_border, focus and glow backgrounds. Use 'default' for the original color of each
+	# background type.
+	# 
+	# Default: default
+	ICON_BORDER_COLOR = "default"
 
 # animations §§
 [animations]
-	# Animation played when a tooltip appears (on hover) and disappears. Options: none, fade, pop, rise, unfold, zoom, slide, swing,
-	# emerge, squash, card, shake.
+	# Animation played when a tooltip appears (on hover). Options: none, fade, pop, rise, unfold, zoom, slide, swing, emerge, squash,
+	# card, shake.
 	# 
 	# Default: none
 	TOOLTIP_APPEAR_ANIMATION = "none"
@@ -228,6 +339,22 @@
 	# Default: 0.15000000596046448
 	# Range: -Infinity ~ Infinity
 	TOOLTIP_ANIMATION_DURATION = 0.15
+	# Animation played when a tooltip disappears. Options: match_appear (same as the appear animation), none, fade, pop, rise, unfold,
+	# zoom, slide, swing, emerge, squash, card, shake.
+	# 
+	# Default: match_appear
+	TOOLTIP_DISAPPEAR_ANIMATION = "match_appear"
+	# Seconds the cursor must rest on an item before its tooltip (and its appear animation) shows up, so sweeping across an inventory
+	# doesn't flash tooltips. 0 shows them immediately.
+	# 
+	# Default: 0.0
+	# Range: 0.0 ~ 5.0
+	TOOLTIP_APPEAR_DELAY = 0.0
+	# Replay the appear animation when moving straight from one item to another. Disable it to keep the tooltip settled while sweeping
+	# across slots, only animating when it appears from nothing.
+	# 
+	# Default: false
+	TOOLTIP_ANIMATE_ON_SWITCH = false
 
 # palettes §§
 [palettes]

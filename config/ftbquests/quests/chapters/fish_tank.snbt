@@ -150,8 +150,11 @@
 					count: 4
 					id: "03EFDD129AC331F7"
 					item: {
+						components: {
+							"ftbquests:missing_item": "supplementaries:jar"
+						}
 						count: 1
-						id: "supplementaries:jar"
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}

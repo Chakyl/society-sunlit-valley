@@ -1308,7 +1308,7 @@
 			shape: "none"
 			tasks: [{
 				id: "43E10EAD00F5D8EA"
-				item: { count: 1, id: "supplementaries:flax" }
+				item: { components: { "ftbquests:missing_item": "supplementaries:flax" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -3.0714285714285694d

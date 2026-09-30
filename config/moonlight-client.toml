@@ -26,3 +26,7 @@
 	convert_foreign_configs = "GENERIC_ONLY"
 	#Show a slowly panning strip of a mod's items on its config screen
 	config_item_carousel = true
+	#Mods pinned to the top of the mods screen. Click the star on a mod tile to add or remove one
+	favourite_mods = []
+	#Sort the mods screen from Z to A
+	mod_list_descending = false

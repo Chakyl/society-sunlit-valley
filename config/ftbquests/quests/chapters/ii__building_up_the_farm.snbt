@@ -1094,8 +1094,11 @@
 			rewards: [{
 				id: "2D757CF0C0E54E8F"
 				item: {
+					components: {
+						"ftbquests:missing_item": "simplehats:hatbag_rare"
+					}
 					count: 1
-					id: "simplehats:hatbag_rare"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

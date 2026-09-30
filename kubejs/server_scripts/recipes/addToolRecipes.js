@@ -61,12 +61,12 @@ ServerEvents.recipes((e) => {
     "minecraft:netherite_sword",
     "society:prismatic_shard"
   );
-  e.smithing(
-    "society:meowmageddon",
-    "simplehats:nekoears",
-    "society:galaxy_sword",
-    "society:prismatic_shard"
-  );
+  // e.smithing(
+  //   "society:meowmageddon",
+  //   "simplehats:nekoears",
+  //   "society:galaxy_sword",
+  //   "society:prismatic_shard"
+  // );
 
 //   const manasteelUpgrades = (type) => {
 //     e.smithing(

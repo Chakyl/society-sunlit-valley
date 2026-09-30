@@ -9,3 +9,18 @@
 	#configuration options for particles
 	#set to true to enable 'unopened particles' to spawn from containers that the player has not yet opened
 	unopened_particles = true
+	#set to true to enable 'refresh particles' to spawn from containers that the player has previously opened which are set to refresh
+	refresh_particles = true
+	#set to true to enable 'decay particles' to spawn from containers that are going to decay
+	decay_particles = true
+
+[notifications]
+	#configuration options for notifications
+	#set to true to enable toast notifications of decay and refresh, obeying message notification settings; set to false to instead use on-screen message
+	display_toasts = true
+	#prevent notifications of decaying or refreshed chests
+	disable_notifications = false
+	#maximum time (in ticks) remaining on a chest before a notification for refreshing or decaying is sent to a player (default 30 seconds, -1 for no delay)
+	# Default: 600
+	# Range: > -1
+	notification_delay = 600

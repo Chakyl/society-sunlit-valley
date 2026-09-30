@@ -1,14 +1,24 @@
 {
   "frames": [
     {
+      "id": "amethyst",
       "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
-      "items": ["minecraft:dragon_egg", "minecraft:enchanted_golden_apple"],
+      "items": [
+        "minecraft:dragon_egg",
+        "minecraft:enchanted_golden_apple"
+      ],
       "gradientType": "custom",
       "borderType": "static",
-      "gradientColors": ["#C551C3", "#C551C3", "#C551C3"],
-      "specialEffect": "metal_shining"
+      "gradientColors": [
+        "#C551C3",
+        "#C551C3",
+        "#C551C3"
+      ],
+      "specialEffect": "metal_shining",
+      "priority": 6
     },
     {
+      "id": "diamond",
       "texture": "tooltipoverhaul:textures/overlay/diamond_frame.png",
       "items": [
         "minecraft:end_crystal",
@@ -32,8 +42,9 @@
         "minecraft:music_disc_relic",
         "minecraft:music_disc_pigstep"
       ],
-      "gradientType": "custom",
-      "borderType": "auto_gradient"
+      "gradientType": "rare",
+      "borderType": "gradient",
+      "priority": 5
     },
     {
       "texture": "tooltipoverhaul:textures/overlay/diamond_frame.png",
@@ -94,20 +105,20 @@
       ],
       "gradientType": "custom",
       "borderType": "static",
-      "gradientColors": ["#3D3A5E", "#3D3A5E", "#3D3A5E"]
+      "gradientColors": [
+        "#3D3A5E",
+        "#3D3A5E",
+        "#3D3A5E"
+      ]
     },
     {
+      "id": "amber",
       "texture": "tooltipoverhaul:textures/overlay/amber_frame.png",
       "items": [
         "minecraft:elytra",
         "minecraft:experience_bottle",
         "minecraft:skeleton_skull",
         "minecraft:wither_skeleton_skull",
-        "minecraft:player_wall_head",
-        "minecraft:creeper_wall_head",
-        "minecraft:zombie_wall_head",
-        "minecraft:dragon_wall_head",
-        "minecraft:piglin_wall_head",
         "minecraft:nether_star",
         "minecraft:enchanted_book",
         "minecraft:dragon_breath",
@@ -117,64 +128,14 @@
         "minecraft:skull_banner_pattern"
       ],
       "gradientType": "custom",
-      "borderType": "auto_gradient"
-    },
-    {
-      "texture": "tooltipoverhaul:textures/overlay/silver_frame.png",
-      "items": [
-        "minecraft:netherite_upgrade_smithing_template",
-        "minecraft:netherite_ingot",
-        "minecraft:netherite_scrap",
-        "minecraft:netherite_sword",
-        "minecraft:netherite_shovel",
-        "minecraft:netherite_pickaxe",
-        "minecraft:netherite_axe",
-        "minecraft:netherite_hoe",
-        "minecraft:netherite_helmet",
-        "minecraft:netherite_chestplate",
-        "minecraft:netherite_leggings",
-        "minecraft:netherite_boots",
-
-        "minecraft:emerald",
-        "minecraft:diamond",
-        "minecraft:diamond_sword",
-        "minecraft:diamond_shovel",
-        "minecraft:diamond_pickaxe",
-        "minecraft:diamond_axe",
-        "minecraft:diamond_hoe",
-        "minecraft:diamond_helmet",
-        "minecraft:diamond_chestplate",
-        "minecraft:diamond_leggings",
-        "minecraft:diamond_boots",
-        "minecraft:diamond_horse_armor",
-        "minecraft:saddle",
-
-        "minecraft:trident",
-        "minecraft:shield",
-        "minecraft:turtle_helmet",
-        "minecraft:crossbow",
-        "minecraft:bow",
-        "minecraft:ender_pearl",
-        "minecraft:eye_of_ender",
-        "minecraft:blaze_rod",
-
-        "minecraft:netherite_scrap"
-      ],
-      "gradientType": "custom",
       "borderType": "gradient",
-      "gradientColors": ["#A9A9A9", "#999999", "#8F8F8F"]
-    },
-    {
-      "items": [
-        "celestisynth:frostbound",
-        "celestisynth:keres",
-        "celestisynth:crescentia",
-        "celestisynth:breezebreaker",
-        "celestisynth:poltergeist",
-        "celestisynth:aquaflora",
-        "celestisynth:rainfall_serenity"
+      "gradientColors": [
+        "#9EA41A",
+        "#696D0D",
+        "#434509"
       ],
-      "disableScrolling": true
+      "dividerLineColor": "#9BA323",
+      "priority": 3
     },
     {
       "texture": "tooltipoverhaul:textures/overlay/king_frame.png",
@@ -187,8 +148,120 @@
       ],
       "gradientType": "custom",
       "borderType": "static",
-      "gradientColors": ["#3D3A5E", "#3D3A5E", "#3D3A5E"],
+      "gradientColors": [
+        "#3D3A5E",
+        "#3D3A5E",
+        "#3D3A5E"
+      ],
       "specialEffect": "metal_shining"
+    },
+    {
+      "items": [
+        "celestisynth:frostbound",
+        "celestisynth:breezebreaker",
+        "celestisynth:aquaflora",
+        "celestisynth:rainfall_serenity"
+      ],
+      "id": "celestisynth",
+      "disableScrolling": true,
+      "priority": 2,
+      "specialEffect": "snowfall",
+      "gradientType": "custom",
+      "showRating": false
+    },
+    {
+      "items": [
+        "terramity:unholy_lance",
+        "terramity:chthonic_cursemark",
+        "companions:shadow_bell",
+        "born_in_chaos_v1:supreme_measure",
+        "born_in_chaos_v1:stop_hammer",
+        "born_in_chaos_v1:orbofthe_summoner"
+      ],
+      "effectSettings": {
+        "opal": {
+          "colors": [
+            "#FF0000",
+            "#FF0000",
+            "#000000"
+          ],
+          "speed": 10.0
+        }
+      },
+      "specialEffect": "opal",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#D20000",
+        "#710000",
+        "#2C0000"
+      ],
+      "dividerLineColor": "match_inner_frame_color"
+    },
+    {
+      "items": [
+        "terramity:reverium_sword",
+        "terramity:reverium_shovel",
+        "terramity:reverium_pickaxe",
+        "terramity:reverium_paladin_leggings",
+        "terramity:reverium_paladin_chestplate",
+        "terramity:reverium_paladin_helmet",
+        "terramity:reverium_paladin_boots",
+        "terramity:reverium",
+        "terramity:reverium_hoe",
+        "terramity:reverium_axe",
+        "terramity:reverium_block"
+      ],
+      "specialEffect": "fluorite",
+      "effectSettings": {
+        "sunbeams": {
+          "colors": [
+            "#FFFFFF",
+            "#FFD08A",
+            "#FFFDF0"
+          ]
+        },
+        "comets": {
+          "direction": 119.9791,
+          "turbulence": 3.0,
+          "trailLength": 1.5543989,
+          "glow": 1.5862709,
+          "thickness": 1.3184303,
+          "size": 2.0137713,
+          "density": 2.1869526
+        },
+        "astral": {
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#000000"
+          ],
+          "density": 1.3370322,
+          "sharpness": 0.25
+        },
+        "fluorite": {
+          "colors": [
+            "#000000",
+            "#FFFFFF",
+            "#FFFFFF"
+          ],
+          "sharpness": 1.2199455,
+          "distortion": 1.1400627,
+          "fieldScale": 0.5,
+          "density": 1.0714321,
+          "speed": 10.0,
+          "intensity": 0.85,
+          "variation": 48.0
+        }
+      }
+    },
+    {
+      "items": [
+        "companions:croissant_egg_block",
+        "companions:relic_gold",
+        "companions:soul_gem"
+      ],
+      "name": "Stars",
+      "specialEffect": "stars"
     }
   ]
 }

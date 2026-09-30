@@ -73,7 +73,7 @@
 	#Default: false
 	force_direct_capture = false
 	#Direct capture will be used if any of these mods is installed.
-	#Format: '["mod_id", "mod_id"]'. Default: [veil, pmweather]
+	#Format: '["mod_id", "mod_id"]'. Default: [veil, pmweather, renderscale]
 	force_direct_capture_default_mods = ["veil", "pmweather"]
 	#Delay in frames before capturing an image if 'direct_capture' method is in use.
 	#Set to higher value when leftovers of GUI elements (such as nameplates) are visible on the images

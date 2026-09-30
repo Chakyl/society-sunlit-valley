@@ -1,16 +1,3 @@
-		[types.leaves_type.atmospheric]
-			rosewood = true
-			morado = true
-			flowering_morado = true
-			yucca = true
-			aspen = true
-			green_aspen = true
-			laurel = true
-			dry_laurel = true
-			kousa = true
-			currant = true
-			grimwood = true
-
 		[types.leaves_type.quark]
 			ancient = true
 			blue_blossom = true
@@ -61,19 +48,23 @@
 		[types.leaves_type.minecraft]
 			pale_oak = true
 
+		[types.leaves_type.atmospheric]
+			rosewood = true
+			morado = true
+			flowering_morado = true
+			yucca = true
+			aspen = true
+			green_aspen = true
+			laurel = true
+			dry_laurel = true
+			kousa = true
+			currant = true
+			grimwood = true
+
 		[types.wood_type.quark]
 			azalea = true
 			ancient = true
 			blossom = true
-
-		[types.wood_type.atmospheric]
-			rosewood = true
-			morado = true
-			yucca = true
-			aspen = true
-			laurel = true
-			kousa = true
-			grimwood = true
 
 		[types.wood_type.cluttered]
 			willow = true
@@ -106,6 +97,15 @@
 
 		[types.wood_type.minecraft]
 			pale_oak = true
+
+		[types.wood_type.atmospheric]
+			rosewood = true
+			morado = true
+			yucca = true
+			aspen = true
+			laurel = true
+			kousa = true
+			grimwood = true
 
 		[types.cake.veggiesdelight]
 			carrot_cake = true

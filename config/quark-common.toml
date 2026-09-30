@@ -802,6 +802,8 @@
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
+		#If true, the oak log in the vanilla azalea tree ConfiguredFeature will be replaced with Quark's azalea log. Disabling this makes Azalea unobtainable
+		"Replace Azalea Tree Log" = true
 
 	[world.big_stone_clusters]
 		#Blocks that stone clusters can replace. If you want to make it so it only replaces in one dimension,

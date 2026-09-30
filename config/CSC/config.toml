@@ -1,7 +1,7 @@
 
 # #----------------------------------------------------------------------
 # CSC config version. If this value is different from the current CSC version, the old config will be archived and a fresh config will be generated.
-ConfigVersion = "2.27.45"
+ConfigVersion = "2.27.47"
 
 # #----------------------------------------------------------------------
 #     Welcome to CSC! CSC (formerly Create:SchematicChecker | Create: Schematic Validator)
@@ -57,6 +57,7 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # #----------------------------------------------------------------------
     # The Block or Item you don't want to emerge in Schematic
     # Any block will clear if remove method failed!
+    # Block/entity ID lists support * in the path only. The namespace must match exactly. Example: create:*_valve_handle matches create:brass_valve_handle; * does not match across the colon.
     BanBlock = [
         "create:creative_crate",
         "create:creative_fluid_tank",
@@ -108,6 +109,7 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # #----------------------------------------------------------------------
     # When the KillEntity feature is set to false, this feature will be enabled. Any entity listed here will be removed from the schematic.
     # However, entities in the whitelist cannot be removed, so do not use the same ID in both lists.
+    # Block/entity ID lists support * in the path only. The namespace must match exactly. Example: create:*_valve_handle matches create:brass_valve_handle; * does not match across the colon.
     BanEntity = [
         "minecraft:armor_stand",
         "create:crafting_blueprint" ]
@@ -115,6 +117,7 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # Entities in the whitelist. They must not conflict with the blacklist. Once added, these entities will be preserved when the KillEntity feature is enabled.
     # Note: Only the entities listed below will be validated by the algorithm. Other entities will retain their NBT data using default matching.
     # Matchable item: Super Glue.
+    # Block/entity ID lists support * in the path only. The namespace must match exactly. Example: create:*_valve_handle matches create:brass_valve_handle; * does not match across the colon.
     whitelistEntity = [
         "create:super_glue" ]
 
@@ -148,6 +151,12 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # If disabled, fluid tank mismatch keeps the original behavior: mark as cheat and block upload.
     TryRemoveFluidTankNotKill = true
     # #----------------------------------------------------------------------
+    # Fix Create pipe duplication of lava from Quark lava-logged blocks. Disabled by default; enable it to apply the fix.
+    fixQuarkLavaFluidloggedDuplication = false
+    # #----------------------------------------------------------------------
+    # Block Create's radial wrench menu packet that lets a client submit a block rotation or state change. Disabled by default; enable only when this protection is required.
+    blockRadialWrenchMenuPacket = false
+    # #----------------------------------------------------------------------
     # Maximum allowed number of mismatched conveyor belts. If the number of conveyor belts with mismatched checksums in the schematic exceeds this threshold, the schematic will be deemed a cheat schematic
     # If the number of mismatches in the schematic is less than this value, the problematic conveyor belts will be removed
     maxBeltCheatLimit = 10
@@ -162,12 +171,6 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # #----------------------------------------------------------------------
     # Conveyor's max degree, Can't get more than 45degree in Create. Only change nbt can.
     maxConveyorAllowDegree = 45
-    # #----------------------------------------------------------------------
-    # Fix Create pipe duplication of lava from Quark lava-logged blocks. Disabled by default; enable it to apply the fix.
-    fixQuarkLavaFluidloggedDuplication = false
-    # #----------------------------------------------------------------------
-    # Block Create's radial wrench menu packet that lets a client submit a block rotation or state change. Disabled by default; enable only when this protection is required.
-    blockRadialWrenchMenuPacket = false
 
 [online]
     # #----------------------------------------------------------------------
@@ -194,13 +197,13 @@ UUID = "0c0fdd5e-380f-4d8f-9eb2-c057811e0481"
     # Upload samples classified as CannotCheck, Problem, Cheat, or modified by mod whitelist filtering. Default is true; samples are used only to improve CSC detection rules.
     report = true
     # #----------------------------------------------------------------------
+    # CSC v2 report endpoint. Keep the default HTTPS address unless you operate a compatible private ingress.
+    reportEndpoint = "https://api.torqueflux.com/v2/uploadfile/"
+    # Per-installation CSC report credential. Generated once; keep it private. Removing it registers this installation as new.
+    reportToken = "a52272dd-49d8-4d81-900c-8a877abca67f55d9438a-716a-4a5f-a6aa-368afb758d63"
+    # #----------------------------------------------------------------------
     # Validate player chain-conveyor riding packets to prevent forged movement time or position. Enabled by default; disabling restores Create's original behavior.
     validateChainConveyorRidingPacket = true
     # #----------------------------------------------------------------------
     # Validate Create filter item packets so only an identical item truly present in the player's inventory may be stored as a filter sample. Enabled by default; disabling restores Create's original behavior.
     validateFilterScreenPacket = true
-    # #----------------------------------------------------------------------
-    # CSC v2 report endpoint. Keep the default HTTPS address unless you operate a compatible private ingress.
-    reportEndpoint = "https://api.torqueflux.com/v2/uploadfile/"
-    # Per-installation CSC report credential. Generated once; keep it private. Removing it registers this installation as new.
-    reportToken = "a52272dd-49d8-4d81-900c-8a877abca67f55d9438a-716a-4a5f-a6aa-368afb758d63"

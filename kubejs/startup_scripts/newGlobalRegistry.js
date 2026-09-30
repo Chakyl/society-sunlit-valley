@@ -83,6 +83,7 @@ global.FORAGE_CROPS = [
     { item: "society:boysenberry", value: 12, products: ["preserves", "wine", "dried"], classifications: ["forage_crop", "fruit", "berry"] },
     { item: "society:crystalberry", value: 20, products: ["preserves", "wine", "dried"], classifications: ["forage_crop", "fruit", "berry"] },
     { item: "society:mossberry", value: 96, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:riesling_dry_white", classifications: ["forage_crop", "fruit", "berry"] },
+    { item: "society:crabapple", value: 32, storageBlock: "society:_crate", products: [], classifications: ["forage_crop", "fruit"] },
     { item: "minecraft:glow_berries", value: 24, storageBlock: "quark:glowberry_sack", products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:glowflower_brew", classifications: ["forage_crop", "fruit", "berry"] },
     { item: "minecraft:chorus_fruit", value: 16, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:polaris_sweet_white", classifications: ["forage_crop", "fruit", "berry"] },
     { item: "atmospheric:yucca_fruit", value: 8, products: ["preserves", "wine"], classifications: ["forage_crop", "fruit", "berry"] },

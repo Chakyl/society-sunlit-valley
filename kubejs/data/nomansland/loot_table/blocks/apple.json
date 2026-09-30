@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "society:crabapple",
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "nomansland:apple",
+              "properties": {
+                "age": "4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "nomansland:blocks/apple_fruit"
+}
