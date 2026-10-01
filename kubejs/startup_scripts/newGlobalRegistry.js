@@ -94,7 +94,7 @@ global.MUSHROOMS = [
     { item: "minecraft:brown_mushroom", value: 8 },
     { item: "minecraft:red_mushroom", value: 8 },
     { item: "ribbits:toadstool", value: 20 },
-    { item: "nomansland:field_mushroom", value: 12 },
+    { item: "nomansland:field_mushroom", value: 6 },
     { item: "nomansland:shelf_mushroom", value: 32 },
     { item: "minecraft:crimson_fungus", value: 16 },
     { item: "minecraft:warped_fungus", value: 16 },
