@@ -46,6 +46,8 @@
 		# Default: 0.025
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		step_size = 0.025
+		#Whether to ignore block pillars, such as tree trunks, when calculating camera offsets. This improves overall immersion at the cost of block targeting accessibility.
+		ignore_block_pillars = false
 
 		[camera.offset.min]
 			#When x-offset is limited this is the minimum amount.
@@ -369,6 +371,8 @@
 	custom_raytrace_distance = 400.0
 	#Whether to use the custom raytrace distance used for the dynamic crosshair.
 	use_custom_raytrace_distance = true
+	#The list of invisible entities to ignore while picking. This config option supports regular expressions. Example: 'minecraft:oak_.*' matches 'minecraft:oak_boat' and 'minecraft:oak_chest_boat'.
+	unpickable_invisible_entities = ["minecraft:armor_stand", "minecraft:block_display", "minecraft:item_display", "minecraft:text_display"]
 
 	[object_picker.pick_origin]
 		#The origin where the entity pick starts when using the static crosshair.

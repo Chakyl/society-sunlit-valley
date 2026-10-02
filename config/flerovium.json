@@ -3,5 +3,7 @@
   "itemBackFaceCulling": true,
   "reduceTerrainParticles": true,
   "skipEntityTangentCompute": false,
-  "fastBreakingTexture": true
+  "fastBreakingTexture": true,
+  "disableSoundDistanceCull": false,
+  "miscOptimizations": true
 }

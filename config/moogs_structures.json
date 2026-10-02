@@ -1,7 +1,7 @@
 {
-  "_comment": "Presets replace vanilla structures with Moogs ones. Spacing multipliers make structures rarer (higher) or denser (lower); effective = universal x per_mod x per_structure. Changes apply on world reload and only affect newly generated chunks.",
+  "_comment": "Presets replace vanilla structures with Moogs ones. Frequency multipliers say how common structures are: 2.0 means about twice as many, 0.5 about half as many; effective = universal x per_mod x per_structure. Changes apply on world reload and only affect newly generated chunks.",
   "presets": {},
-  "spacing": {
+  "frequency": {
     "universal_multiplier": 1.0,
     "per_mod": {},
     "per_structure": {}

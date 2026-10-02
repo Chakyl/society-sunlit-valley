@@ -14,3 +14,9 @@ transmitterSignalLifetime = 80
 # Default: 1000
 # Range: 100 ~ 20000
 sculkCellCapacity = 1000
+# Default: 250
+# Range: 1 ~ 1000
+sawBlockLimit = 250
+# Default: 20
+# Range: 1 ~ 100
+sawBlockSpeed = 20
