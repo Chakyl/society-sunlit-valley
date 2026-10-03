@@ -4,13 +4,19 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "abandoned_farm"
-	group: "106AD9AA3ADDE3AE"
+	group: "55C53193BD32CD9C"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
+	icon: {
+		components: {
+			"ftbquests:missing_item": "farm_and_charm:supply_cart"
+		}
+		id: "ftbquests:missing_item"
+	}
 	id: "7C65158A3343D7FA"
 	images: [{
 		height: 10.0d
-		id: "77E1AF529D6F494B"
+		id: "419B5F3DCEE94C3F"
 		image: "society:textures/gui/community_center_abandoned_farm.png"
 		rotation: 0.0d
 		width: 17.77777777777778d
@@ -21,6 +27,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "supplementaries:present_green"
+			}
 			id: "661A3A466ABF29BA"
 			rewards: [{
 				id: "23C19AD4A368AA0F"
@@ -50,13 +59,15 @@
 				{
 					count: 5L
 					id: "7CB76A4E375BA71B"
-					item: { count: 1, id: "society:ancient_fruit" }
+					item: { components: { "minecraft:custom_data": { quality_food: { effects: [ ], quality: 2 } } }, count: 1, id: "society:ancient_fruit" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "167D06E351C49C00"
-					item: { components: { "ftbquests:missing_item": "society:neptuna" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "ftbquests:missing_item": "5x society:neptuna" }, count: 1, id: "ftbquests:missing_item" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
@@ -76,7 +87,7 @@
 				}
 				{
 					id: "269E488B9A57FCC7"
-					item: { components: { "ftbquests:missing_item": "society:truffle_tea" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "society:truffle_tea" }
 					type: "item"
 				}
 			]
@@ -88,6 +99,12 @@
 			hide_details_until_startable: false
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"ftbquests:missing_item": "farm_and_charm:supply_cart"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "6EBAA004C1A50E98"
 			rewards: [
 				{
@@ -123,6 +140,9 @@
 			]
 			shape: "none"
 			tasks: [{
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "3D497F4CF396A37A"
 				stat: "minecraft:play_time"
 				type: "stat"

@@ -45,7 +45,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:market\"}}"
+        "components": {
+          "society:npc_id": "society:market"
+        }
       },
       "request": {
         "id": "meadow:fire_log",
@@ -57,7 +59,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:blacksmith\"}}"
+        "components": {
+          "society:npc_id": "society:blacksmith"
+        }
       },
       "request": {
         "id": "meadow:fire_log",
@@ -69,7 +73,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:shepherd\"}}"
+        "components": {
+          "society:npc_id": "society:shepherd"
+        }
       },
       "request": {
         "id": "meadow:fire_log",
@@ -81,7 +87,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:fisher\"}}"
+        "components": {
+          "society:npc_id": "society:fisher"
+        }
       },
       "request": {
         "id": "meadow:fire_log",
@@ -97,7 +105,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:banker\"}}"
+        "components": {
+          "society:npc_id": "society:banker"
+        }
       },
       "request": {
         "id": "meadow:fire_log",
@@ -113,7 +123,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:librarian\"}}"
+        "components": {
+          "society:npc_id": "society:librarian"
+        }
       },
       "request": {
         "id": "meadow:fire_log",
@@ -129,7 +141,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:witch\"}}"
+        "components": {
+          "society:npc_id": "society:witch"
+        }
       },
       "request": {
         "id": "meadow:fire_log",
@@ -145,7 +159,9 @@
       "offer": {
         "id": "society:invitation",
         "count": 1,
-        "nbt": "{\"type\":{\"id\":\"society:trader\"}}"
+        "components": {
+          "society:npc_id": "society:trader"
+        }
       },
       "request": {
         "id": "meadow:fire_log",

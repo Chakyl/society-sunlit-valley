@@ -4,12 +4,9 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "tools"
-	group: "439B0423947443D3"
+	group: "45EE533BBDF5A2A2"
 	icon: {
-		components: {
-			"ftbquests:missing_item": "etcetera:hammer"
-		}
-		id: "ftbquests:missing_item"
+		id: "etcetera:hammer"
 	}
 	id: "38639EECD8CDEFB3"
 	images: [ ]
@@ -17,6 +14,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "meadow:firewood"
+			}
 			id: "31F6C5811A72396C"
 			size: 2.0d
 			tasks: [{
@@ -35,6 +35,11 @@
 			rewards: [{
 				id: "73714A09282D81A3"
 				item: {
+					components: {
+						"minecraft:custom_data": {
+							"patchouli:book": "buildinggadgets2:buildinggadgets2book"
+						}
+					}
 					count: 1
 					id: "patchouli:guide_book"
 				}
@@ -57,6 +62,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
+			icon: {
+				id: "copycats:copycat_stairs"
+			}
 			id: "23EFDF37F9BCD63B"
 			rewards: [{
 				id: "2A8ECF9567036899"
@@ -78,9 +86,11 @@
 			dependencies: ["31F6C5811A72396C"]
 			icon: {
 				components: {
-					"ftbquests:missing_item": "constructionwand:infinity_wand"
+					"minecraft:custom_data": {
+						wand_options: { }
+					}
 				}
-				id: "ftbquests:missing_item"
+				id: "constructionwand:infinity_wand"
 			}
 			id: "2193ACEC05CC5B07"
 			rewards: [{
@@ -101,6 +111,9 @@
 		}
 		{
 			dependencies: ["2193ACEC05CC5B07"]
+			icon: {
+				id: "constructionwand:core_angel"
+			}
 			id: "086A3F527E1A973E"
 			rewards: [{
 				id: "3651413BAA3324A2"
@@ -131,7 +144,7 @@
 			}]
 			tasks: [{
 				id: "613AAD6A70EAEB13"
-				item: { count: 1, id: "create:wand_of_symmetry" }
+				item: { components: { "minecraft:custom_data": { enable: 0, symmetry: { direction: 0, enable: 1, pos: [I; 0, 0, 0 ], type: "empty" } } }, count: 1, id: "create:wand_of_symmetry" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -159,10 +172,7 @@
 		{
 			dependencies: ["31F6C5811A72396C"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "etcetera:hammer"
-				}
-				id: "ftbquests:missing_item"
+				id: "etcetera:hammer"
 			}
 			id: "6C1236C00210E5A7"
 			rewards: [{
@@ -176,12 +186,12 @@
 			tasks: [
 				{
 					id: "7FCF62F6E555A842"
-					item: { components: { "ftbquests:missing_item": "etcetera:hammer" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "etcetera:hammer" }
 					type: "item"
 				}
 				{
 					id: "36AE8ECCAE05BE9E"
-					item: { components: { "ftbquests:missing_item": "etcetera:chisel" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "etcetera:chisel" }
 					type: "item"
 				}
 			]
@@ -220,7 +230,7 @@
 			}]
 			tasks: [{
 				id: "46BF5E7112C1E0AF"
-				item: { components: { "ftbquests:missing_item": "etcetera:frame" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "etcetera:frame" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -228,6 +238,12 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "refurbished_furniture:workbench"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "12ED0E637AD47FD4"
 			rewards: [{
 				id: "4A144CE04D511BEE"
@@ -257,16 +273,16 @@
 		}
 		{
 			dependencies: ["12ED0E637AD47FD4"]
+			icon: {
+				id: "society:tanuki_catalog"
+			}
 			id: "100B4D3BEEE9C433"
 			rewards: [{
-				count: 8
-				id: "7761B099DC642B53"
+				count: 4
+				id: "08720CFEB5676102"
 				item: {
-					components: {
-						"ftbquests:missing_item": "society:tanuki_leaf"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "society:furniture_box"
 				}
 				type: "item"
 			}]
@@ -305,33 +321,24 @@
 				{
 					id: "3ABCAA3CB62FE70F"
 					item: {
-						components: {
-							"ftbquests:missing_item": "society:tanuki_catalog"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "society:tanuki_catalog"
 					}
 					type: "item"
 				}
 				{
 					id: "596526D5A33D01E0"
 					item: {
-						components: {
-							"ftbquests:missing_item": "society:modern_catalog"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "society:modern_catalog"
 					}
 					type: "item"
 				}
 				{
 					id: "03ED2ACF1F0B5B4D"
 					item: {
-						components: {
-							"ftbquests:missing_item": "society:fantasy_catalog"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "society:fantasy_catalog"
 					}
 					type: "item"
 				}
@@ -358,6 +365,12 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "simplehats:headphonesblue"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "7E94B1934D0257E8"
 			rewards: [{
 				id: "4EC96CD71AFA7A8A"
@@ -395,6 +408,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
+			icon: {
+				id: "portable_blueprints:tablet"
+			}
 			id: "54B6F31A66A23AD4"
 			rewards: [{
 				id: "21EC0DE21DADD12C"

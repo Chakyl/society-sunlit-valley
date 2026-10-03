@@ -3,12 +3,24 @@
 	default_quest_shape: ""
 	filename: "welcome"
 	group: ""
+	icon: {
+		components: {
+			"ftbquests:missing_item": "betterarcheology:growth_totem"
+		}
+		id: "ftbquests:missing_item"
+	}
 	id: "05ED409B61A4CC4D"
 	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				components: {
+					"ftbquests:missing_item": "betterarcheology:growth_totem"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "2B6877708A709B5C"
 			rewards: [
 				{
@@ -56,6 +68,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				id: "numismatics:cog"
+			}
 			id: "42BBE95A6DE1DD19"
 			tasks: [{
 				id: "18D7A7C05EC66667"
@@ -66,6 +81,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				id: "minecraft:chorus_fruit"
+			}
 			id: "25777939975C3CEE"
 			tasks: [{
 				id: "12B5F8FF7A12B850"
@@ -76,6 +94,12 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "solonion:food_book"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "7A7B131D229E5279"
 			rewards: [{
 				id: "7564618DEEDF5B88"
@@ -97,6 +121,12 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "simplehats:rainboworbiters"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "4F7FB7C8808AF152"
 			tasks: [{
 				id: "5268786D837BACF0"
@@ -107,6 +137,12 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "refurbished_furniture:computer"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "18490F31FFAB134E"
 			tasks: [{
 				id: "7A3A17A854FF5FAB"
@@ -117,6 +153,12 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "gamediscs:gaming_console"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "6EA5618181628D34"
 			tasks: [{
 				id: "56C063A91C4834B3"
@@ -127,12 +169,20 @@
 		}
 		{
 			disable_toast: true
+			icon: {
+				id: "minecraft:lily_of_the_valley"
+			}
 			id: "5FB57C45A25D41F0"
 			rewards: [
 				{
 					auto: "no_toast"
 					command: "/gamerule doPatrolSpawning false"
 					icon: {
+						components: {
+							"minecraft:custom_data": {
+								"patchouli:book": "via_romana:guide"
+							}
+						}
 						id: "patchouli:guide_book"
 					}
 					id: "59471FAB210830B3"
@@ -172,14 +222,20 @@
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
+				icon: {
+					id: "minecraft:grass_block"
+				}
 				id: "0570B72A57438956"
 				type: "dimension"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				id: "supplementaries:flag_light_blue"
+			}
 			id: "1375AE2ECAC8C147"
 			tasks: [{
 				id: "656AD09E45594435"
@@ -190,6 +246,9 @@
 		}
 		{
 			dependencies: ["18490F31FFAB134E"]
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
 			id: "25305BECA3C32315"
 			tasks: [{
 				id: "5F3330533AD364D1"
@@ -200,6 +259,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				id: "etched:radio"
+			}
 			id: "67486880FE3E2CCD"
 			tasks: [{
 				id: "5330CA06B1E9BEE3"
@@ -210,10 +272,16 @@
 		}
 		{
 			dependencies: ["1375AE2ECAC8C147"]
+			icon: {
+				id: "supplementaries:slice_map"
+			}
 			id: "5FDA526D348C8A0F"
 			rewards: [{
 				command: "/kjs stages add @p ftbchunks_mapping"
 				exclude_from_claim_all: true
+				icon: {
+					id: "supplementaries:slice_map"
+				}
 				id: "757BB197D52F88E4"
 				ignore_reward_blocking: true
 				permission_level: 2
@@ -227,6 +295,19 @@
 			}]
 			x: 2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			icon: {
+				id: "society:magnifying_glass"
+			}
+			id: "238702B124895A0A"
+			tasks: [{
+				id: "071758A047AA8A61"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
 		}
 	]
 }

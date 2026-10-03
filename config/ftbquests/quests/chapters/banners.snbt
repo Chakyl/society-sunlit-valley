@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "banners"
-	group: "15230846E14B6926"
+	group: "4ADCF90E0DB3C35C"
 	icon: {
 		components: {
 			"ftbquests:missing_item": "refurbished_furniture:spatula"
@@ -12,7 +12,7 @@
 	}
 	id: "5C67DA068D003A2D"
 	images: [ ]
-	order_index: 8
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -60,6 +60,12 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "farm_and_charm:scarecrow"
+					}
+					id: "ftbquests:missing_item"
+				}
 				id: "60BC53B1056204F0"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -111,6 +117,12 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "candlelight:candlelight_standard"
+					}
+					id: "ftbquests:missing_item"
+				}
 				id: "765B171872302421"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -166,6 +178,12 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "bakery:bakery_standard"
+					}
+					id: "ftbquests:missing_item"
+				}
 				id: "3AD3A245C817EDF9"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -178,7 +196,7 @@
 			id: "3225299E8746CC8E"
 			tasks: [{
 				id: "5EB8395DEB10BD75"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:cheese_burger" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:cheese_burger" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -188,7 +206,7 @@
 			id: "2E2BA03F054B08BA"
 			tasks: [{
 				id: "198838BEACFC450D"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:deluxe_burger" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:deluxe_burger" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -198,7 +216,7 @@
 			id: "011A1EDD02F5BC3E"
 			tasks: [{
 				id: "31ACF1A6070C84E3"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:chocolate_nut_granola_bar" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:chocolate_nut_granola_bar" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -208,7 +226,7 @@
 			id: "009EC0AF7065697A"
 			tasks: [{
 				id: "2670C9F7E53340D0"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:fruity_granola_bar" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:fruity_granola_bar" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -218,7 +236,7 @@
 			id: "6E56B91C12DE2E6C"
 			tasks: [{
 				id: "2CD02F5F1C8AFE46"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:deluxe_granola_bar" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:deluxe_granola_bar" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -228,7 +246,7 @@
 			id: "73D649D2F0E6EBEB"
 			tasks: [{
 				id: "77B2A42C2F88ABC1"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:century_egg" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:century_egg" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -238,7 +256,7 @@
 			id: "11E5B34B3BFA42DE"
 			tasks: [{
 				id: "146AB398FD4FE4DE"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:overnight_oats" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:overnight_oats" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -248,7 +266,7 @@
 			id: "303E7F3C27173B6B"
 			tasks: [{
 				id: "36433A2CB00CCD37"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:pickle_soup" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:pickle_soup" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -258,7 +276,7 @@
 			id: "6E24F9E03D102BE1"
 			tasks: [{
 				id: "7DB0B247E88EAB9D"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:ghostly_chili" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:ghostly_chili" }
 				type: "item"
 			}]
 			x: 7.0d
@@ -268,7 +286,7 @@
 			id: "07ECC644BB4C0DCD"
 			tasks: [{
 				id: "22024193C3CD3EA8"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:pad_thai" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:pad_thai" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -278,7 +296,7 @@
 			id: "5AE3A06F64BEDCBB"
 			tasks: [{
 				id: "66CFEBD37FFA96F8"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:cheese_pasta" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:cheese_pasta" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -288,7 +306,7 @@
 			id: "270B71B8B39F6232"
 			tasks: [{
 				id: "76BBC428ADBFD9F4"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:pb_j" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:pb_j" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -298,7 +316,7 @@
 			id: "66EC7A9C34D48655"
 			tasks: [{
 				id: "028738FE3AE7450F"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:cucumber_salad" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:cucumber_salad" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -308,7 +326,7 @@
 			id: "19035186A855AA64"
 			tasks: [{
 				id: "2F0ECB7E5D4130EC"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:stuffed_burrito" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:stuffed_burrito" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -318,7 +336,7 @@
 			id: "2BC28581132BB26A"
 			tasks: [{
 				id: "1B1E1F01C2571C0A"
-				item: { components: { "ftbquests:missing_item": "vintagedelight:oatmeal_cookie" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "vintagedelight:oatmeal_cookie" }
 				type: "item"
 			}]
 			x: 4.5d

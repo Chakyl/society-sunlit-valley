@@ -3,7 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iv__prismatic_farming"
-	group: "457DCF55318282CA"
+	group: "36A9504C17205521"
+	icon: {
+		id: "society:prismatic_shard"
+	}
 	id: "2B2A6AA10AFF0156"
 	images: [ ]
 	order_index: 3
@@ -23,6 +26,9 @@
 			size: 1.5d
 			tasks: [{
 				biome: "society:umbra_barrens"
+				icon: {
+					id: "minecraft:end_stone"
+				}
 				id: "52727B8A0D17120B"
 				type: "biome"
 			}]
@@ -54,6 +60,12 @@
 				}
 			]
 			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "trials:trial_key_ominous"
+					}
+					id: "ftbquests:missing_item"
+				}
 				id: "238260076624C9BF"
 				structure: "trials:trials_chambers"
 				type: "structure"
@@ -93,7 +105,7 @@
 			}]
 			tasks: [{
 				id: "58304EBAF06978FC"
-				item: { components: { "ftbquests:missing_item": "sunrisegardening:netherite_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:netherite_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -164,11 +176,14 @@
 			y: 12.5d
 		}
 		{
+			dependencies: ["7037A26BF990653E"]
+			icon: {
+				id: "minecraft:fletching_table"
+			}
 			id: "41C453E806763C4F"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "24BFB48AD8A08D85"
-				table_id: 6097669691163803424L
 				type: "choice"
 			}]
 			tasks: [{
@@ -181,6 +196,9 @@
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
+			icon: {
+				id: "society:magic_rope"
+			}
 			id: "1A81A877A381DB97"
 			rewards: [{
 				count: 2
@@ -235,7 +253,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "167474A1E9459387"
-				table_id: 2467450565259284777L
 				type: "choice"
 			}]
 			tasks: [{
@@ -286,6 +303,12 @@
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "society:artisan_hopper"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "4759B2BFFF26E78F"
 			min_required_dependencies: 1
 			rewards: [{
@@ -333,10 +356,16 @@
 			y: 14.0d
 		}
 		{
+			icon: {
+				id: "society:skull_cavern_teleporter"
+			}
 			id: "5A369FC904BCF5EE"
 			size: 1.5d
 			tasks: [{
 				dimension: "society:skull_cavern"
+				icon: {
+					id: "minecraft:skeleton_skull"
+				}
 				id: "53F45DEC3FD0866C"
 				type: "dimension"
 			}]
@@ -423,6 +452,9 @@
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
+			icon: {
+				id: "society:end_stone_boulder"
+			}
 			id: "2F83B8F22344FAD7"
 			min_required_dependencies: 1
 			rewards: [{
@@ -493,6 +525,12 @@
 				"632578AFE8A0D12D"
 				"38AC25E172172654"
 			]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "splendid_slimes:slime_incubator"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "62CB7BAB9BBB4030"
 			rewards: [{
 				id: "130DFC5746CD789A"
@@ -525,7 +563,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "013B5B6DDFC50CD9"
-				table_id: 2207679701817321554L
 				type: "random"
 			}]
 			tasks: [{
@@ -568,17 +605,14 @@
 				count: 16
 				id: "55E860F5FB918453"
 				item: {
-					components: {
-						"ftbquests:missing_item": "meadow:rennet"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "meadow:rennet"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "249CCE95116AE9B8"
-				item: { components: { "ftbquests:missing_item": "meadow:cheese_form" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "meadow:cheese_form" }
 				type: "item"
 			}]
 			x: -8.5d
@@ -586,6 +620,9 @@
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
+			icon: {
+				id: "society:ancient_cog"
+			}
 			id: "5558DB4DE54C890D"
 			min_required_dependencies: 1
 			rewards: [{
@@ -642,11 +679,8 @@
 			rewards: [{
 				id: "61B2573C969032BE"
 				item: {
-					components: {
-						"ftbquests:missing_item": "moreminecarts:chiseled_organic_glass"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "moreminecarts:chiseled_organic_glass"
 				}
 				type: "item"
 			}]
@@ -674,7 +708,7 @@
 			}]
 			tasks: [{
 				id: "7A255EE6EF6BBB75"
-				item: { components: { "ftbquests:missing_item": "sunrisegardening:hyper_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:hyper_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -686,11 +720,8 @@
 			rewards: [{
 				id: "14F813AF1E11DC78"
 				item: {
-					components: {
-						"ftbquests:missing_item": "society:pristine_opal"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "society:pristine_opal"
 				}
 				type: "item"
 			}]
@@ -707,7 +738,7 @@
 			id: "35A8A8F8898AE3E5"
 			tasks: [{
 				id: "747623C805336417"
-				item: { components: { "ftbquests:missing_item": "sunrisegardening:pristine_quality_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:pristine_quality_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -715,6 +746,12 @@
 		}
 		{
 			dependencies: ["63F8C52D082BBCB3"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "society:growth_obelisk"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "003782D1F1A74349"
 			rewards: [{
 				count: 4
@@ -786,7 +823,7 @@
 				id: "280FC65D6624C825"
 				item: {
 					components: {
-						"ftbquests:missing_item": "sunrisegardening:garden_pot"
+						"ftbquests:missing_item": "dew_drop_farmland_growth:garden_pot"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -795,7 +832,7 @@
 			}]
 			tasks: [{
 				id: "0F3C5B69FBD0192F"
-				item: { components: { "ftbquests:missing_item": "sunrisegardening:garden_pot" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:garden_pot" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -803,12 +840,17 @@
 		}
 		{
 			dependencies: ["38AC25E172172654"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "vinery:fermentation_barrel"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "506B32619EB8477F"
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "33A9A1A691675DA7"
-					table_id: 8298743981735202683L
 					type: "choice"
 				}
 				{
@@ -853,11 +895,16 @@
 		}
 		{
 			dependencies: ["506B32619EB8477F"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "vinery:red_grapejuice"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "094497558E9DB19C"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6B7CCCDAF7C48D42"
-				table_id: 8298743981735202683L
 				type: "choice"
 			}]
 			tasks: [{
@@ -875,11 +922,8 @@
 				count: 8
 				id: "61BD13A2B1C52924"
 				item: {
-					components: {
-						"ftbquests:missing_item": "vintagedelight:cucumber_seeds"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "vintagedelight:cucumber_seeds"
 				}
 				type: "item"
 			}]
@@ -921,6 +965,9 @@
 		}
 		{
 			dependencies: ["21671DA370EA7A37"]
+			icon: {
+				id: "society:needle_bobber"
+			}
 			id: "785F3754068D5C2D"
 			rewards: [{
 				id: "3CF7E830E51BAB65"
@@ -953,6 +1000,9 @@
 			}]
 			size: 1.5d
 			tasks: [{
+				icon: {
+					id: "society:milk_pail"
+				}
 				id: "5492353782FA1337"
 				stage: "husbandry_mastery"
 				type: "gamestage"
@@ -1014,6 +1064,14 @@
 			rewards: [{
 				id: "284F02BE3A8C125C"
 				item: {
+					components: {
+						"minecraft:custom_data": {
+							StoredEnchantments: [{
+								id: "domesticationinnovation:total_recall"
+								lvl: 1
+							}]
+						}
+					}
 					count: 1
 					id: "minecraft:enchanted_book"
 				}
@@ -1021,7 +1079,7 @@
 			}]
 			tasks: [{
 				id: "22F5A370A1A215F2"
-				item: { components: { "ftbquests:missing_item": "redomesticate:collar_tag" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "domesticationinnovation:collar_tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -1029,12 +1087,18 @@
 		}
 		{
 			dependencies: ["76A60EE6F3E0FF72"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "domesticationinnovation:pet_bed_white"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "40C8DC3C2A22F632"
 			rewards: [{
 				id: "25201E8D8F8BD51B"
 				item: {
 					components: {
-						"ftbquests:missing_item": "redomesticate:collar_tag"
+						"ftbquests:missing_item": "domesticationinnovation:collar_tag"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -1044,17 +1108,17 @@
 			tasks: [
 				{
 					id: "571CF103F79F06DE"
-					item: { components: { "ftbquests:missing_item": "redomesticate:pet_bed_white" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "ftbquests:missing_item": "domesticationinnovation:pet_bed_white" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "134FB6AEE27347DC"
-					item: { components: { "ftbquests:missing_item": "redomesticate:wayward_lantern" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "ftbquests:missing_item": "domesticationinnovation:wayward_lantern" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "44F41EF1A2B25FE1"
-					item: { components: { "ftbquests:missing_item": "redomesticate:drum" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "ftbquests:missing_item": "domesticationinnovation:drum" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
@@ -1164,15 +1228,20 @@
 			y: 3.25d
 		}
 		{
+			icon: {
+				id: "society:book_of_stars"
+			}
 			id: "25677844C218103A"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "7B3ADE6005BB80E9"
-				table_id: 148309168996942632L
 				type: "random"
 			}]
 			size: 1.5d
 			tasks: [{
+				icon: {
+					id: "society:book_of_stars"
+				}
 				id: "3FE67ED6D7C3F44B"
 				stage: "mastery_unlocked"
 				type: "gamestage"
@@ -1186,6 +1255,14 @@
 			rewards: [{
 				id: "05B38EF7A3C4EC93"
 				item: {
+					components: {
+						"minecraft:custom_data": {
+							StoredEnchantments: [{
+								id: "domesticationinnovation:chain_lightning"
+								lvl: 1
+							}]
+						}
+					}
 					count: 1
 					id: "minecraft:enchanted_book"
 				}
@@ -1243,6 +1320,9 @@
 		}
 		{
 			dependencies: ["40845F4C88AD03CB"]
+			icon: {
+				id: "cluttered:willow_sapling"
+			}
 			id: "458EC4BFA0C47FCB"
 			rewards: [{
 				id: "5FB77FCF4E2CC6AF"
@@ -1326,6 +1406,12 @@
 		{
 			dependencies: ["06308BDE5F4EC0D2"]
 			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:missing_item": "refinedstorage:controller"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "15061E71D3F55AE8"
 			rewards: [
 				{
@@ -1368,7 +1454,7 @@
 			}]
 			tasks: [{
 				id: "088F51D7832072C9"
-				item: { components: { "ftbquests:missing_item": "fruittreemod:starfruit_sapling" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "pamhc2trees:starfruit_sapling" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -1387,7 +1473,7 @@
 			}]
 			tasks: [{
 				id: "6DFADFB2FF71B6D0"
-				item: { components: { "ftbquests:missing_item": "society:galaxy_sword" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "society:galaxy_sword" }
 				type: "item"
 			}]
 			x: -12.0d
@@ -1436,6 +1522,66 @@
 			}]
 			x: -3.0d
 			y: 20.0d
+		}
+		{
+			dependencies: ["63F8C52D082BBCB3"]
+			id: "4CCA31DA0B782830"
+			tasks: [{
+				id: "777E8C982C73B22B"
+				item: { components: { "ftbquests:missing_item": "society:drum_cornucopia" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["63F8C52D082BBCB3"]
+			id: "73D3DF7A58D2112A"
+			tasks: [{
+				id: "084DC2042C9DBB51"
+				item: { components: { "ftbquests:missing_item": "society:fish_pond_manager" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"1DC8E69A916864DC"
+				"6A94BB4CB99D814E"
+			]
+			hide_dependent_lines: true
+			hide_text_until_complete: false
+			icon: {
+				id: "society:ruby"
+			}
+			id: "7037A26BF990653E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "323C6A712377320E"
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "0944E1D3F203821B"
+					item: { components: { "society:npc_id": "society:trader" }, count: 1, id: "society:invitation" }
+					match_components: "strict"
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"society:npc_id": "society:trader"
+						}
+						id: "society:villager"
+					}
+					id: "48A5EF6D1BB8647A"
+					stage: "invited_trader"
+					type: "gamestage"
+				}
+			]
+			x: -3.0d
+			y: 10.5d
 		}
 	]
 }

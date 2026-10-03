@@ -4,11 +4,14 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "pantry"
-	group: "106AD9AA3ADDE3AE"
+	group: "55C53193BD32CD9C"
+	icon: {
+		id: "furniture:explorers_box"
+	}
 	id: "0ABCE0D05B56531F"
 	images: [{
 		height: 10.0d
-		id: "38117118D2ACD47B"
+		id: "496D5C5C1813B6C3"
 		image: "society:textures/gui/community_center_greenhouse.png"
 		rotation: 0.0d
 		width: 17.77777777777778d
@@ -19,13 +22,16 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "supplementaries:present_green"
+			}
 			id: "7D155FD0EFEEB5AC"
 			rewards: [{
 				count: 20
 				id: "2C7023C8330EF475"
 				item: {
 					components: {
-						"ftbquests:missing_item": "sunrisegardening:weak_fertilizer"
+						"ftbquests:missing_item": "dew_drop_farmland_growth:weak_fertilizer"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -59,13 +65,16 @@
 			y: 0.3285714285714221d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_red"
+			}
 			id: "3EF57F71C1C786FE"
 			require_sequential_tasks: false
 			rewards: [{
 				id: "6517D1EFE1E30357"
 				item: {
 					components: {
-						"ftbquests:missing_item": "sunrisegardening:gold_sprinkler"
+						"ftbquests:missing_item": "dew_drop_farmland_growth:gold_sprinkler"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -99,6 +108,9 @@
 			y: -0.44285714285715017d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_orange"
+			}
 			id: "2074A4FFF17266DB"
 			rewards: [{
 				count: 3
@@ -139,11 +151,13 @@
 			y: -1.2142857142857224d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_purple"
+			}
 			id: "314D5DDD65659FDE"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "056F5C708072416C"
-				table_id: 9002246533416223198L
 				type: "random"
 			}]
 			shape: "none"
@@ -178,6 +192,9 @@
 			y: -0.4714285714285751d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_yellow"
+			}
 			id: "43591809C1D493F5"
 			rewards: [{
 				count: 2
@@ -193,25 +210,29 @@
 				{
 					count: 5L
 					id: "499CB69BCD41BFE0"
-					item: { count: 1, id: "veggiesdelight:cauliflower" }
+					item: { components: { "minecraft:custom_data": { quality_food: { effects: [ ], quality: 2 } } }, count: 1, id: "veggiesdelight:cauliflower" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "6C57B3D989FFD624"
-					item: { count: 1, id: "veggiesdelight:bellpepper" }
+					item: { components: { "minecraft:custom_data": { quality_food: { effects: [ ], quality: 2 } } }, count: 1, id: "veggiesdelight:bellpepper" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "2068F0BB063AD8B7"
 					item: { components: { "ftbquests:missing_item": "society:eggplant" }, count: 1, id: "ftbquests:missing_item" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "4101FC59B4F4D5FE"
 					item: { components: { "ftbquests:missing_item": "farm_and_charm:corn" }, count: 1, id: "ftbquests:missing_item" }
+					match_components: "strict"
 					type: "item"
 				}
 			]
@@ -226,6 +247,9 @@
 				"314D5DDD65659FDE"
 				"3EF57F71C1C786FE"
 			]
+			icon: {
+				id: "furniture:explorers_box"
+			}
 			id: "7CBAF0748446A0C2"
 			rewards: [
 				{
@@ -242,12 +266,14 @@
 				{
 					exclude_from_claim_all: true
 					id: "46FDA42C9D22205F"
-					table_id: 5635253696830077546L
 					type: "choice"
 				}
 			]
 			shape: "none"
 			tasks: [{
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "713FD6544CCC4F5C"
 				stat: "minecraft:play_time"
 				type: "stat"

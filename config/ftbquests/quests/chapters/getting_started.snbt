@@ -3,7 +3,13 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "getting_started"
-	group: "457DCF55318282CA"
+	group: "36A9504C17205521"
+	icon: {
+		components: {
+			"ftbquests:missing_item": "shippingbin:basic_shipping_bin"
+		}
+		id: "ftbquests:missing_item"
+	}
 	id: "1F990A2A648BE4A1"
 	images: [ ]
 	order_index: 0
@@ -15,11 +21,8 @@
 				count: 4
 				id: "071BAFAC9167564D"
 				item: {
-					components: {
-						"ftbquests:missing_item": "meadow:cheese_sandwich"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "meadow:cheese_sandwich"
 				}
 				type: "item"
 			}]
@@ -79,7 +82,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "303017FCE69EB127"
-				item: { components: { "ftbquests:missing_item": "shippingbin:basic_shipping_bin" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "selling_bin:selling_bin" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -107,6 +110,9 @@
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
+			icon: {
+				id: "minecraft:bell"
+			}
 			id: "66D159252C70D5F2"
 			rewards: [
 				{
@@ -118,27 +124,25 @@
 					type: "item"
 				}
 				{
-					id: "16213FA11FBA47CF"
-					item: {
-						count: 1
-						id: "portable_blueprints:worn_blueprint"
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "672B2E2736C0E2FA"
+					type: "choice"
 				}
 			]
 			tasks: [
 				{
 					id: "44E951A44F1CF7F0"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "society:npc_id": "society:carpenter" }, count: 1, id: "society:invitation" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
 					disable_toast: true
 					icon: {
 						components: {
-							"ftbquests:missing_item": "society:villager"
+							"society:npc_id": "society:carpenter"
 						}
-						id: "ftbquests:missing_item"
+						id: "society:villager"
 					}
 					id: "77941199A5AAA562"
 					stage: "invited_carpenter"
@@ -154,17 +158,14 @@
 			rewards: [{
 				id: "1A308C9DE2822BA5"
 				item: {
-					components: {
-						"ftbquests:missing_item": "unusualfishmod:pickledish"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "unusualfishmod:pickledish"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "3F0D74D09682750A"
-				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				item: { components: { "minecraft:custom_data": { contentsUuid: [I; 1447614021, -1361622470, -1334094781, -646669453 ], inventorySlots: 27, renderInfo: { upgradeItems: [{ components: { }, count: 1, id: "minecraft:air" }] }, upgradeSlots: 1 } }, count: 1, id: "sophisticatedbackpacks:backpack" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -172,6 +173,9 @@
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
+			icon: {
+				id: "numismatics:bank_terminal"
+			}
 			id: "77E2AE3656E32182"
 			rewards: [{
 				id: "228CEE9E6923AF01"
@@ -192,6 +196,12 @@
 		}
 		{
 			dependencies: ["1A4FD076999BF29F"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "bountiful:bountyboard"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "34FCF481CDFD3380"
 			rewards: [
 				{
@@ -249,18 +259,19 @@
 		}
 		{
 			dependencies: ["73A85902CE35A43A"]
+			icon: {
+				id: "society:book_of_stars"
+			}
 			id: "459BA5CC983CFAB9"
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "1A33C59283AE7F2B"
-					table_id: 148309168996942632L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "290FFA2BD8BB91E0"
-					table_id: 148309168996942632L
 					type: "choice"
 				}
 			]
@@ -275,12 +286,14 @@
 		}
 		{
 			dependencies: ["24C86673E1F57A3E"]
+			icon: {
+				id: "tanukidecor:antique_bed"
+			}
 			id: "1A4FD076999BF29F"
 			progression_mode: "linear"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "11939F7CA0472064"
-				table_id: 1441633631928763452L
 				type: "choice"
 			}]
 			size: 2.0d
@@ -296,7 +309,7 @@
 					consume_items: true
 					count: 10L
 					id: "11214822A37DCD70"
-					item: { components: { "ftbquests:missing_item": "meadow:fire_log" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "meadow:firewood" }
 					type: "item"
 				}
 			]
@@ -328,6 +341,9 @@
 		}
 		{
 			dependencies: ["3F759C6DEEBC61FD"]
+			icon: {
+				id: "minecraft:anvil"
+			}
 			id: "28029230D7FD63D6"
 			rewards: [{
 				id: "5B6BE7A8ABFD9ED3"
@@ -353,11 +369,8 @@
 			rewards: [{
 				id: "02B38977EEB3CEAE"
 				item: {
-					components: {
-						"ftbquests:missing_item": "dew_drop_watering_cans:copper_watering_can"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "dew_drop_watering_cans:copper_watering_can"
 				}
 				type: "item"
 			}]
@@ -371,6 +384,9 @@
 		}
 		{
 			dependencies: ["1A4FD076999BF29F"]
+			icon: {
+				id: "atmospheric:sun_pottery_sherd"
+			}
 			id: "7D1394F6356086D0"
 			rewards: [{
 				id: "03D8946C4D97A2B3"
@@ -394,6 +410,9 @@
 		{
 			dependencies: ["459BA5CC983CFAB9"]
 			hide_until_deps_complete: true
+			icon: {
+				id: "society:crystal_of_regret_fishing"
+			}
 			id: "681EECD8B1D07F34"
 			rewards: [{
 				count: 4
@@ -414,6 +433,9 @@
 		}
 		{
 			dependencies: ["77E2AE3656E32182"]
+			icon: {
+				id: "numismatics:white_card"
+			}
 			id: "1F0231C09608265D"
 			optional: true
 			rewards: [{
@@ -438,44 +460,41 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "35928F071913970B"
-				table_id: 3483058636960571374L
 				type: "random"
 			}]
 			tasks: [{
 				id: "24C56E6ED4DB14F1"
-				item: { components: { "ftbquests:missing_item": "whimsy_deco:phone" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "whimsy_deco:phone" }
 				type: "item"
 			}]
 			x: 14.0d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"6ADD884F3FFE5D42"
-				"1A4FD076999BF29F"
-			]
+			dependencies: ["1A4FD076999BF29F"]
+			icon: {
+				id: "society:pig_race_ticket"
+			}
 			id: "4DB169DA4B4CCFBA"
 			rewards: [{
-				id: "669F3B06BA7E112C"
-				item: {
-					count: 1
-					id: "portable_blueprints:worn_blueprint"
-				}
-				type: "item"
+				exclude_from_claim_all: true
+				id: "2F0A80BAD3A055DE"
+				type: "choice"
 			}]
 			tasks: [
 				{
 					id: "59E084CB052A33AC"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "society:npc_id": "society:banker" }, count: 1, id: "society:invitation" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
 					disable_toast: true
 					icon: {
 						components: {
-							"ftbquests:missing_item": "society:villager"
+							"society:npc_id": "society:banker"
 						}
-						id: "ftbquests:missing_item"
+						id: "society:villager"
 					}
 					id: "3289EF10C786A325"
 					stage: "invited_banker"
@@ -499,7 +518,7 @@
 			}]
 			tasks: [{
 				id: "281897C014D14C4C"
-				item: { count: 1, id: "portable_blueprints:worn_blueprint" }
+				item: { components: { "minecraft:custom_data": { allow_nbt: 1, altezza: 0, blueprint_name: "home_siberian", buildAnyway: 0, free_build: 1, inventari_blocco_selezionati: "", lunghezzaX: 0, lunghezzaZ: 0, mirrowX: 0, mirrowY: 0, mirrowZ: 0, nome: "home_siberian", owner: "worn", owner_name: "Chakyl", remaining_uses: 1, rotateValue: 0, skipObstructionBlock: 0, visualizeBuild: 1, wasHolding: 0, worn_set: 1 }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.siberian_farmhouse\"}", "minecraft:damage": 1 }, count: 1, id: "portable_blueprints:worn_blueprint" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -507,6 +526,9 @@
 		}
 		{
 			dependencies: ["66D159252C70D5F2"]
+			icon: {
+				id: "society:iron_upgrade_smithing_template"
+			}
 			id: "24C86673E1F57A3E"
 			rewards: [
 				{
@@ -518,27 +540,25 @@
 					type: "item"
 				}
 				{
-					id: "7694A381C94D651D"
-					item: {
-						count: 1
-						id: "portable_blueprints:worn_blueprint"
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "276A094BCA07AC23"
+					type: "choice"
 				}
 			]
 			tasks: [
 				{
 					id: "425CE445701BE19E"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "society:npc_id": "society:blacksmith" }, count: 1, id: "society:invitation" }
+					match_components: "strict"
 					type: "item"
 				}
 				{
 					disable_toast: true
 					icon: {
 						components: {
-							"ftbquests:missing_item": "society:villager"
+							"society:npc_id": "society:blacksmith"
 						}
-						id: "ftbquests:missing_item"
+						id: "society:villager"
 					}
 					id: "66EF68859A260B35"
 					stage: "invited_blacksmith"
@@ -550,6 +570,12 @@
 		}
 		{
 			dependencies: ["24C86673E1F57A3E"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "simplehats:presentsstack"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "3E08F21BA8F69499"
 			rewards: [{
 				id: "29EB69F5E70B1F10"
@@ -568,6 +594,9 @@
 		}
 		{
 			dependencies: ["66D159252C70D5F2"]
+			icon: {
+				id: "minecraft:grass_block"
+			}
 			id: "318022FDED8803BD"
 			rewards: [{
 				count: 2

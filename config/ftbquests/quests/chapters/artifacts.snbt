@@ -2,10 +2,13 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "artifacts"
-	group: "15230846E14B6926"
+	group: "4ADCF90E0DB3C35C"
+	icon: {
+		id: "society:heart_of_neptunium"
+	}
 	id: "5B2658A5C3FF8470"
 	images: [ ]
-	order_index: 5
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -15,7 +18,7 @@
 				item: { count: 1, id: "society:froggy_helm" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
@@ -25,7 +28,7 @@
 				item: { count: 1, id: "society:ribbit_drum" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -35,7 +38,7 @@
 				item: { count: 1, id: "society:ribbit_gadget" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: 1.5d
 		}
 		{
@@ -45,7 +48,7 @@
 				item: { count: 1, id: "society:heart_of_neptunium" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -55,17 +58,17 @@
 				item: { count: 1, id: "society:aquamagical_dust" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -0.5d
 			y: -0.5d
 		}
 		{
 			id: "1B9A309260CEB16E"
 			tasks: [{
 				id: "394CEFE8531A3137"
-				item: { components: { "ftbquests:missing_item": "society:princess_hairbrush" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "society:princess_hairbrush" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 1.5d
 		}
 		{
@@ -125,7 +128,7 @@
 				item: { count: 1, id: "society:mini_oni_eye" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 4.0d
 			y: -0.5d
 		}
 		{
@@ -135,7 +138,7 @@
 				item: { count: 1, id: "society:wheel_of_adaptation" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: -0.5d
 		}
 		{
@@ -155,7 +158,7 @@
 				item: { count: 1, id: "society:beemonican_seal" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 1.5d
 		}
 		{
@@ -185,6 +188,8 @@
 				"566000800816BC75"
 				"1209EE6E7121636E"
 				"6CCF2A8697360014"
+				"54E20BA869846944"
+				"4A88F30DE9250181"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -219,6 +224,9 @@
 			shape: "octagon"
 			size: 3.0d
 			tasks: [{
+				icon: {
+					id: "society:heart_of_neptunium"
+				}
 				id: "30CB90A24037FCC0"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -234,7 +242,7 @@
 				item: { count: 1, id: "society:production_science_pack" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 5.5d
 			y: -0.5d
 		}
 		{
@@ -244,7 +252,7 @@
 				item: { count: 1, id: "society:spider_silk" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: -2.5d
 		}
 		{
@@ -254,7 +262,7 @@
 				item: { count: 1, id: "society:steamy_gadget" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.0d
 			y: 1.5d
 		}
 		{
@@ -264,7 +272,7 @@
 				item: { count: 1, id: "society:token_of_unity" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -274,7 +282,7 @@
 				item: { count: 1, id: "society:glitched_vhs" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.0d
 			y: -0.5d
 		}
 		{
@@ -284,8 +292,8 @@
 				item: { count: 1, id: "society:perfect_cherry" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: -6.5d
+			y: 1.5d
 		}
 		{
 			id: "118335BC396DE305"
@@ -294,7 +302,7 @@
 				item: { count: 1, id: "society:toy_train" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.0d
 			y: -0.5d
 		}
 		{
@@ -304,7 +312,7 @@
 				item: { count: 1, id: "society:amulet_of_light" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -0.5d
 			y: 1.5d
 		}
 		{
@@ -314,8 +322,8 @@
 				item: { count: 1, id: "society:green_tea_honeycomb" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.5d
+			x: -6.5d
+			y: -0.5d
 		}
 		{
 			id: "6CCF2A8697360014"
@@ -324,8 +332,28 @@
 				item: { count: 1, id: "society:giant_bandolier_belt" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			id: "54E20BA869846944"
+			tasks: [{
+				id: "67ADFBB0116E83AE"
+				item: { count: 1, id: "society:ancient_builders_tool" }
+				type: "item"
+			}]
+			x: 2.5d
 			y: -0.5d
+		}
+		{
+			id: "4A88F30DE9250181"
+			tasks: [{
+				id: "62D9B2E23D5A41A0"
+				item: { count: 1, id: "society:red_wrench" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
 		}
 	]
 }

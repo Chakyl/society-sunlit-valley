@@ -4,11 +4,14 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "boiler_room"
-	group: "106AD9AA3ADDE3AE"
+	group: "55C53193BD32CD9C"
+	icon: {
+		id: "furniture:tool_box"
+	}
 	id: "36A9A59259467EB6"
 	images: [{
 		height: 10.0d
-		id: "394B3EDB5CDA7F7F"
+		id: "2C8A86E6C81EAC71"
 		image: "society:textures/gui/community_center_boiler_room.png"
 		rotation: 0.0d
 		width: 17.77777777777778d
@@ -25,6 +28,9 @@
 				"3889A9F0A1CF45FF"
 				"52A3D52D6251EDB6"
 			]
+			icon: {
+				id: "furniture:tool_box"
+			}
 			id: "3428ADDC87A77916"
 			rewards: [
 				{
@@ -57,6 +63,9 @@
 			]
 			shape: "none"
 			tasks: [{
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "4F5C6E42993777F4"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -66,6 +75,9 @@
 			y: 1.057142857142857d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_purple"
+			}
 			id: "3889A9F0A1CF45FF"
 			rewards: [{
 				id: "4897B3F9C4577A1D"
@@ -105,6 +117,9 @@
 			y: 0.2857142857142705d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_light_blue"
+			}
 			id: "52A3D52D6251EDB6"
 			rewards: [{
 				count: 5
@@ -119,7 +134,7 @@
 			tasks: [
 				{
 					id: "0B110BED5FE81EBB"
-					item: { components: { "ftbquests:missing_item": "society:earth_crystal" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "society:earth_crystal" }
 					type: "item"
 				}
 				{
@@ -129,7 +144,7 @@
 				}
 				{
 					id: "1D6BC732729FB802"
-					item: { components: { "ftbquests:missing_item": "society:fire_quartz" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "society:fire_quartz" }
 					type: "item"
 				}
 			]
@@ -137,6 +152,9 @@
 			y: -0.48571428571430175d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_blue"
+			}
 			id: "0B45A918213371FA"
 			rewards: [{
 				id: "6E3C4F2F04BA9298"
@@ -183,6 +201,9 @@
 			y: -0.5d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_red"
+			}
 			id: "0F606FEB98D44C0F"
 			rewards: [{
 				id: "496273F8A86D642D"

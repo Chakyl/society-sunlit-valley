@@ -2,11 +2,17 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "perfection"
-	group: "15230846E14B6926"
+	group: "4ADCF90E0DB3C35C"
+	icon: {
+		components: {
+			"ftbquests:missing_item": "society:golden_clock"
+		}
+		id: "ftbquests:missing_item"
+	}
 	id: "4AA29866E19A65A8"
 	images: [{
 		height: 3.0d
-		id: "0603265FC8A01FF2"
+		id: "270692AF5F2E6ED8"
 		image: "society:textures/gui/seal_iridescent.png"
 		rotation: 0.0d
 		width: 3.0d
@@ -142,7 +148,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["1B4C5FEECCEE1392"]
 			icon: {
 				components: {
 					"ftbquests:missing_item": "trofers:large_pillar"
@@ -227,6 +232,9 @@
 				"47CF88FE788DD872"
 				"2D9AD3D0C59E682B"
 			]
+			icon: {
+				id: "supplementaries:present_blue"
+			}
 			id: "272D9228BC46AEE0"
 			rewards: [{
 				id: "5BFAE126EEEBC621"
@@ -238,6 +246,9 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: {
+					id: "supplementaries:present_blue"
+				}
 				id: "0229473CF1E31A5E"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -254,6 +265,9 @@
 				"77780C73C016EE60"
 				"06EDF98282351F85"
 			]
+			icon: {
+				id: "society:furniture_box"
+			}
 			id: "45120BEE01BB36B4"
 			rewards: [
 				{
@@ -278,6 +292,9 @@
 			]
 			size: 2.0d
 			tasks: [{
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "7D559D380A8E31EE"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -505,6 +522,12 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "fantasyfurniture:decorations/bone_skeleton_skull_blossoms"
+					}
+					id: "ftbquests:missing_item"
+				}
 				id: "09B79BA0E1E2F6AA"
 				stat: "minecraft:play_time"
 				type: "stat"

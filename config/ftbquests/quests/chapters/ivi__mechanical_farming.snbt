@@ -2,7 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ivi__mechanical_farming"
-	group: "457DCF55318282CA"
+	group: "36A9504C17205521"
+	icon: {
+		id: "create:wrench"
+	}
 	id: "16656DF4FC427FB2"
 	images: [ ]
 	order_index: 4
@@ -94,11 +97,8 @@
 				count: 4
 				id: "1A04AEC85EDDB536"
 				item: {
-					components: {
-						"ftbquests:missing_item": "oreganized:silver_sheet"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "oreganized:silver_sheet"
 				}
 				type: "item"
 			}]
@@ -210,6 +210,9 @@
 			y: 3.0d
 		}
 		{
+			icon: {
+				id: "create:wrench"
+			}
 			id: "221306DB217B8F93"
 			rewards: [{
 				id: "5314621E326C669A"
@@ -230,6 +233,9 @@
 		}
 		{
 			dependencies: ["221306DB217B8F93"]
+			icon: {
+				id: "etcetera:light_bulb"
+			}
 			id: "0F8E0141BDC23F7B"
 			tasks: [{
 				id: "64BDD9087ECA22C2"
@@ -240,6 +246,9 @@
 		}
 		{
 			dependencies: ["221306DB217B8F93"]
+			icon: {
+				id: "society:rubber"
+			}
 			id: "472A339723DE2777"
 			rewards: [{
 				count: 2
@@ -273,6 +282,9 @@
 				"01B84BE72772B00B"
 				"264888DE7B32E80B"
 			]
+			icon: {
+				id: "create:water_wheel"
+			}
 			id: "6A931F456D6FEA3E"
 			rewards: [{
 				count: 4
@@ -300,6 +312,9 @@
 		}
 		{
 			dependencies: ["472A339723DE2777"]
+			icon: {
+				id: "create:belt_connector"
+			}
 			id: "74CB97A6B1ADC2B8"
 			rewards: [{
 				count: 4
@@ -404,6 +419,9 @@
 		}
 		{
 			dependencies: ["6A931F456D6FEA3E"]
+			icon: {
+				id: "create:white_sail"
+			}
 			id: "5704D9E5E98945DF"
 			rewards: [{
 				count: 16
@@ -439,6 +457,9 @@
 				"1A1129507F643085"
 				"018699F88064119B"
 			]
+			icon: {
+				id: "create:mechanical_crafter"
+			}
 			id: "3D532DC93531B0D0"
 			rewards: [{
 				id: "14A959D5C2755CA3"
@@ -465,6 +486,9 @@
 		}
 		{
 			dependencies: ["3D532DC93531B0D0"]
+			icon: {
+				id: "create:crushing_wheel"
+			}
 			id: "4C9E6CB01631C0B6"
 			rewards: [{
 				id: "69656356F460D387"
@@ -643,6 +667,9 @@
 		}
 		{
 			dependencies: ["5BAFB04B1F3B8150"]
+			icon: {
+				id: "create:fluid_pipe"
+			}
 			id: "505BE1C2FA826879"
 			ignore_reward_blocking: true
 			rewards: [{
@@ -671,6 +698,14 @@
 		{
 			dependencies: ["505BE1C2FA826879"]
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						StoredEnchantments: [{
+							id: "minecraft:protection"
+							lvl: 1
+						}]
+					}
+				}
 				id: "minecraft:enchanted_book"
 			}
 			id: "162C1DFB58132D45"
@@ -747,6 +782,12 @@
 				"1A1129507F643085"
 				"4575948F05E18615"
 			]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "pipez:advanced_upgrade"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "45D9A962F73792EA"
 			rewards: [{
 				id: "27FC316449EF8E78"
@@ -773,6 +814,12 @@
 		}
 		{
 			dependencies: ["4C9E6CB01631C0B6"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "create_hypertube:hypertube_entrance"
+				}
+				id: "ftbquests:missing_item"
+			}
 			id: "75472A79424BCD40"
 			rewards: [{
 				id: "489B88094397CA13"
@@ -808,11 +855,8 @@
 					count: 4
 					id: "761FD507A978F690"
 					item: {
-						components: {
-							"ftbquests:missing_item": "wildernature:diamond_ammunition"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "wildernature:diamond_ammunition"
 					}
 					type: "item"
 				}
@@ -820,18 +864,15 @@
 					count: 8
 					id: "6328674A60D619A0"
 					item: {
-						components: {
-							"ftbquests:missing_item": "wildernature:flint_ammunition"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "wildernature:flint_ammunition"
 					}
 					type: "item"
 				}
 			]
 			tasks: [{
 				id: "140E1FEF8B3EC12D"
-				item: { components: { "ftbquests:missing_item": "wildernature:blunderbuss" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "wildernature:blunderbuss" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -839,6 +880,9 @@
 		}
 		{
 			dependencies: ["4C9E6CB01631C0B6"]
+			icon: {
+				id: "oreganized:molten_lead_bucket"
+			}
 			id: "7718055315817CB1"
 			rewards: [{
 				id: "15301D9B9720AB6A"
@@ -902,6 +946,9 @@
 		}
 		{
 			dependencies: ["501D5F9B05EF9B3F"]
+			icon: {
+				id: "create:package_frogport"
+			}
 			id: "3211E60DF860BE29"
 			rewards: [{
 				id: "585D48B3E2E22AE1"

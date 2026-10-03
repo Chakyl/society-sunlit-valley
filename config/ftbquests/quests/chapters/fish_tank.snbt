@@ -4,11 +4,14 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "fish_tank"
-	group: "106AD9AA3ADDE3AE"
+	group: "55C53193BD32CD9C"
+	icon: {
+		id: "furniture:iron_fish_tank"
+	}
 	id: "4ACD2216D1602749"
 	images: [{
 		height: 10.0d
-		id: "027BDADF0FDC6F48"
+		id: "663A0F7FA03FD50D"
 		image: "society:textures/gui/community_center_fish_tank.png"
 		rotation: 0.0d
 		width: 17.77777777777778d
@@ -19,6 +22,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "supplementaries:present_yellow"
+			}
 			id: "03F3D0F74A5BC0C4"
 			rewards: [{
 				id: "765B2BAE7BB2EFCC"
@@ -32,7 +38,7 @@
 			tasks: [
 				{
 					id: "39BC4C648654AE4F"
-					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_beaked_herring" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "unusualfishmod:raw_beaked_herring" }
 					type: "item"
 				}
 				{
@@ -42,7 +48,7 @@
 				}
 				{
 					id: "4066FD502914ABAF"
-					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_bark_angelfish" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "unusualfishmod:raw_bark_angelfish" }
 					type: "item"
 				}
 				{
@@ -55,6 +61,9 @@
 			y: 0.27142857142856514d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_blue"
+			}
 			id: "76A35BBCA4E0CDD9"
 			rewards: [{
 				id: "7B52E86D7D2077D0"
@@ -71,7 +80,7 @@
 			tasks: [
 				{
 					id: "1BFE309FC8ED472C"
-					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_blind_sailfin" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "unusualfishmod:raw_blind_sailfin" }
 					type: "item"
 				}
 				{
@@ -94,15 +103,15 @@
 			y: -1.2714285714285793d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_light_blue"
+			}
 			id: "4D00DF575B8FC1B2"
 			rewards: [{
 				id: "16343D44A8CFEED6"
 				item: {
-					components: {
-						"ftbquests:missing_item": "vintagedelight:evaporator"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "vintagedelight:evaporator"
 				}
 				type: "item"
 			}]
@@ -110,17 +119,17 @@
 			tasks: [
 				{
 					id: "5FF4C0CAA1EE6B48"
-					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_drooping_gourami" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "unusualfishmod:raw_drooping_gourami" }
 					type: "item"
 				}
 				{
 					id: "0C937E96AC7D3693"
-					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_sneep_snorp" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "unusualfishmod:raw_sneep_snorp" }
 					type: "item"
 				}
 				{
 					id: "4EB716093337FDBD"
-					item: { components: { "ftbquests:missing_item": "unusualfishmod:raw_forkfish" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "unusualfishmod:raw_forkfish" }
 					type: "item"
 				}
 				{
@@ -133,6 +142,9 @@
 			y: -0.5000000000000071d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_green"
+			}
 			id: "610AB8B499859791"
 			rewards: [
 				{
@@ -151,10 +163,18 @@
 					id: "03EFDD129AC331F7"
 					item: {
 						components: {
-							"ftbquests:missing_item": "supplementaries:jar"
+							"minecraft:custom_data": {
+								BlockEntityTag: {
+									FluidHolder: {
+										count: 12
+										id: "moonlight:lava"
+									}
+									Items: [ ]
+								}
+							}
 						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "supplementaries:jar"
 					}
 					type: "item"
 				}
@@ -186,6 +206,9 @@
 			y: 0.27142857142856514d
 		}
 		{
+			icon: {
+				id: "supplementaries:present_red"
+			}
 			id: "3129F3C2D43EE6EE"
 			rewards: [{
 				count: 2
@@ -233,6 +256,9 @@
 				"03F3D0F74A5BC0C4"
 				"3129F3C2D43EE6EE"
 			]
+			icon: {
+				id: "furniture:iron_fish_tank"
+			}
 			id: "469CEB4C8B3C0EA9"
 			rewards: [
 				{
@@ -260,6 +286,9 @@
 			]
 			shape: "none"
 			tasks: [{
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "46B1148F60C66C53"
 				stat: "minecraft:play_time"
 				type: "stat"
