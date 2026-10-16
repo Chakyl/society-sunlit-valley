@@ -60,7 +60,7 @@
 	lantern_item_holding = true
 	#Makes lantern holding animation have the arm angled more upwards. Looks better if you have dynamic lights on
 	lantern_item_holding_up = false
-	#Renders the swaying wall lantern through the item renderer so its shading comes from the model's normals instead of the block model's baked per-face shading. This makes the lantern shade correctly no matter which wall it faces, at the cost of losing block ambient occlusion. Only affects the animated (close-up) renderer
+	#Shades swinging wall lanterns like an item instead of like a block. Makes them look the same on every wall, but loses ambient occlusion
 	entity_shading = true
 
 	[lantern.swing_physics]
@@ -111,7 +111,7 @@
 	# Default: 1.2
 	# Range: 0.0 ~ 5.0
 	text_color_multiplier = 1.2
-	#A list of sign blocks that will NOT be affected by the pixel consistent sign setting. Use full registry names separated by commas
+	#A list of sign blocks that will NOT be affected by the pixel consistent sign setting
 	sign_blacklist = []
 
 [projectiles]

@@ -999,77 +999,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "182AFC574EF22382"
-			shape: "none"
-			tasks: [{
-				id: "5C2F6F4FA9697D39"
-				item: { components: { "ftbquests:missing_item": "vinery:white_grape" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -3.2210884353741562d
-			y: 1.0459183673469212d
-		}
-		{
-			id: "03C998FCC9C88D6E"
-			shape: "none"
-			tasks: [{
-				id: "48649922686D3FD3"
-				item: { components: { "ftbquests:missing_item": "vinery:red_grape" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -1.8333333333333357d
-			y: 1.14795918367345d
-		}
-		{
-			id: "4A1F53A6A7E3BEA3"
-			shape: "none"
-			tasks: [{
-				id: "797441CBBA17E7F5"
-				item: { components: { "ftbquests:missing_item": "vinery:savanna_grapes_white" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -0.5680272108843596d
-			y: 1.331632653061206d
-		}
-		{
-			id: "7367AFA876B29972"
-			shape: "none"
-			tasks: [{
-				id: "393290913BD76A79"
-				item: { components: { "ftbquests:missing_item": "vinery:savanna_grapes_red" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 0.8401360544217624d
-			y: 1.4540816326530432d
-		}
-		{
-			id: "5C72DE0C4250FE9C"
-			shape: "none"
-			tasks: [{
-				id: "01179AB15F788A9B"
-				item: { components: { "ftbquests:missing_item": "vinery:taiga_grapes_white" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 2.1666666666666643d
-			y: 1.6173469387754906d
-		}
-		{
-			id: "2728EFA18B82FE07"
-			shape: "none"
-			tasks: [{
-				id: "4A9B93516732D426"
-				item: { components: { "ftbquests:missing_item": "vinery:taiga_grapes_red" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 3.493197278911559d
-			y: 1.739795918367335d
-		}
-		{
 			id: "5A9F07DC93864187"
 			shape: "none"
 			tasks: [{
 				id: "4E90387A453A92D9"
-				item: { components: { "ftbquests:missing_item": "vinery:jungle_grapes_white" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "kaleidoscope_tavern:grape" }
 				type: "item"
 			}]
 			x: -0.4047619047619122d
@@ -1080,7 +1014,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7DCCE8084588A795"
-				item: { components: { "ftbquests:missing_item": "vinery:jungle_grapes_red" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "kaleidoscope_tavern:green_grape" }
 				type: "item"
 			}]
 			x: 0.9217687074829897d
@@ -1091,7 +1025,7 @@
 			shape: "none"
 			tasks: [{
 				id: "450365F766909E6E"
-				item: { components: { "ftbquests:missing_item": "nethervinery:warped_grape" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "kaleidoscope_tavern:ice_grape" }
 				type: "item"
 			}]
 			x: 2.2482993197278844d
@@ -1102,7 +1036,7 @@
 			shape: "none"
 			tasks: [{
 				id: "1B4F950389A4CAF0"
-				item: { components: { "ftbquests:missing_item": "nethervinery:crimson_grape" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "kaleidoscope_tavern:gold_grape" }
 				type: "item"
 			}]
 			x: 3.6156462585033964d
@@ -1146,7 +1080,7 @@
 			shape: "none"
 			tasks: [{
 				id: "17EED783BA0B0C14"
-				item: { components: { "ftbquests:missing_item": "brewery:hops" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "society:hops" }
 				type: "item"
 			}]
 			x: 18.24761904761906d
@@ -1318,22 +1252,11 @@
 			y: -3.0867346938775526d
 		}
 		{
-			id: "2BFBF1339342625B"
-			shape: "none"
-			tasks: [{
-				id: "3B7A308D13F93521"
-				item: { components: { "ftbquests:missing_item": "farm_and_charm:lettuce" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 2.411564625850332d
-			y: -0.6887755102041027d
-		}
-		{
 			id: "31323405E4D37434"
 			shape: "none"
 			tasks: [{
 				id: "66985BDFEDD0CC63"
-				item: { components: { "ftbquests:missing_item": "farm_and_charm:onion" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "farmersdelight:onion" }
 				type: "item"
 			}]
 			x: 3.7380952380952266d
@@ -1421,7 +1344,7 @@
 			shape: "none"
 			tasks: [{
 				id: "367370B923D1B562"
-				item: { components: { "ftbquests:missing_item": "vinery:cherry" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:cherry" }
 				type: "item"
 			}]
 			x: 12.776190476190486d
@@ -1461,17 +1384,6 @@
 			y: -2.9595238095237946d
 		}
 		{
-			id: "5A54B95EF1CA2A60"
-			shape: "none"
-			tasks: [{
-				id: "322DF0546DB5AC71"
-				item: { components: { "ftbquests:missing_item": "moreminecarts:glass_cactus" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 13.966666666666669d
-			y: -1.8166666666666487d
-		}
-		{
 			id: "3759149843616EB9"
 			shape: "none"
 			tasks: [{
@@ -1501,8 +1413,8 @@
 				item: { count: 1, id: "farmersdelight:cabbage" }
 				type: "item"
 			}]
-			x: 12.680952380952384d
-			y: 0.6595238095238258d
+			x: 2.403061224489811d
+			y: -0.7397959183673706d
 		}
 		{
 			id: "41B3FCBE28E3F495"
@@ -1564,7 +1476,7 @@
 			shape: "none"
 			tasks: [{
 				id: "36514AEE32301F45"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:lycheeitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:lychee" }
 				type: "item"
 			}]
 			x: 15.56190476190477d
@@ -1586,7 +1498,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0130993A589F918B"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:peachitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:peach" }
 				type: "item"
 			}]
 			x: 18.514285714285727d
@@ -1598,7 +1510,7 @@
 			shape: "none"
 			tasks: [{
 				id: "71BEC726204AE10B"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:plumitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:plum" }
 				type: "item"
 			}]
 			x: 14.228571428571435d
@@ -1609,7 +1521,7 @@
 			shape: "none"
 			tasks: [{
 				id: "15A51121384FB49C"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:mangoitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:mango" }
 				type: "item"
 			}]
 			x: 15.71190476190477d
@@ -1620,7 +1532,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5347F6226E74E47C"
-				item: { count: 1, id: "atmospheric:orange" }
+				item: { count: 1, id: "orchard:orange" }
 				type: "item"
 			}]
 			x: 17.13333333333334d
@@ -1642,7 +1554,7 @@
 			shape: "none"
 			tasks: [{
 				id: "51D5DC2521CB0EFD"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:starfruititem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:starfruit" }
 				type: "item"
 			}]
 			x: 7.4285714285714235d
@@ -1655,12 +1567,8 @@
 				"772C142CFDDFA059"
 				"0BB3F52A90719860"
 				"6C656EEBAD2B5DAF"
-				"2728EFA18B82FE07"
-				"182AFC574EF22382"
 				"23F35DF56CCB45C3"
-				"7367AFA876B29972"
 				"3E57558B04952D59"
-				"03C998FCC9C88D6E"
 				"3B4FD0DF4257FFD4"
 				"61275A93612AE88A"
 				"7AB7A59F20160E2A"
@@ -1669,12 +1577,10 @@
 				"7ED74D28362C25CE"
 				"505F16C948C5D64D"
 				"2131DCB6116F5148"
-				"5A54B95EF1CA2A60"
 				"330CA835E3875E1D"
 				"18E4EF841B0D1DC7"
 				"56865D2E8C786C7D"
 				"4229BDFD64706E94"
-				"5C72DE0C4250FE9C"
 				"455F9A4D9B1FF43E"
 				"12716A71DB8FB7B8"
 				"5E9C5A7383377C62"
@@ -1687,7 +1593,6 @@
 				"0C6D3FEFAFAD9162"
 				"50517DAA66DAE26C"
 				"31323405E4D37434"
-				"2BFBF1339342625B"
 				"742FFD7566EF6FE1"
 				"2A5675FDBA6ADA94"
 				"09E4E46A657AA2AD"
@@ -1705,7 +1610,6 @@
 				"51250BA0BFFE960B"
 				"0F3ABAC9B0E54867"
 				"78C2FCC610571926"
-				"4A1F53A6A7E3BEA3"
 				"00C3328B0684FEB5"
 				"1BC3C14F51B04E45"
 				"22B1B6E53B4AF464"
@@ -1714,7 +1618,6 @@
 				"4809FA86B301057C"
 				"5C6688D9ADAB129D"
 				"25C97E279E59E80C"
-				"2EDDE9CF53DDEC80"
 				"4E065B6F4D72DFDF"
 				"530890B3F0CE32B1"
 				"35F8CFD09F6E7253"
@@ -1799,7 +1702,7 @@
 			shape: "none"
 			tasks: [{
 				id: "22919A73C577461C"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:pawpawitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:pawpaw" }
 				type: "item"
 			}]
 			x: 18.680952380952398d
@@ -1810,7 +1713,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5703E9BC753916D6"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:hazelnutitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:hazelnut" }
 				type: "item"
 			}]
 			x: 17.20476190476191d
@@ -1821,7 +1724,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2E9453049DBD8724"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:cinnamonitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:cinnamon" }
 				type: "item"
 			}]
 			x: 14.283333333333339d
@@ -1872,22 +1775,11 @@
 			y: -4.390816326530633d
 		}
 		{
-			id: "2EDDE9CF53DDEC80"
-			shape: "none"
-			tasks: [{
-				id: "0AEB6931F912046F"
-				item: { components: { "ftbquests:missing_item": "autumnity:foul_berries" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 18.319047619047616d
-			y: -2.1321428571428456d
-		}
-		{
 			id: "1A8D4FF9970E2760"
 			shape: "none"
 			tasks: [{
 				id: "3DBC902FC74E7C6C"
-				item: { components: { "ftbquests:missing_item": "pamhc2trees:lemonitem" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "orchard:lemon" }
 				type: "item"
 			}]
 			x: 11.419047619047632d

@@ -70,17 +70,14 @@
 			rewards: [{
 				id: "05D8DB298A7C0CAD"
 				item: {
-					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:iron_sprinkler"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "sunrisegardening:iron_sprinkler"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "771C38A34236A7D8"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:iron_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "sunrisegardening:iron_sprinkler" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -177,20 +174,12 @@
 					count: 8
 					id: "532FEB13B10DE71C"
 					item: {
-						components: {
-							"ftbquests:missing_item": "dew_drop_farmland_growth:hydrating_fertilizer"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "sunrisegardening:hydrating_fertilizer"
 					}
 					type: "item"
 				}
 			]
-			tasks: [{
-				id: "58D90C49D8129101"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
 			x: 3.0d
 			y: -0.5d
 		}
@@ -936,7 +925,7 @@
 			}]
 			tasks: [{
 				id: "45D7CACD9D012903"
-				item: { components: { "ftbquests:missing_item": "society:fish_pond" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "plentifulponds:fish_pond" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1298,30 +1287,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4A48308E11476E9B"]
-			hide_until_deps_complete: true
-			id: "2A02C6E45ED944F4"
-			rewards: [{
-				id: "656C37C798D162C5"
-				item: {
-					components: {
-						"ftbquests:missing_item": "society:sea_biscut"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "4BE2D06B565E866E"
-				item: { components: { "minecraft:custom_data": { "patchouli:book": "patchouli:fish_finder" } }, count: 1, id: "patchouli:guide_book" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -7.0d
-		}
-		{
 			dependencies: ["21B07E7D0C412FFA"]
 			hide_until_deps_complete: true
 			icon: {
@@ -1512,22 +1477,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["26315E4AC203348C"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "aquaculture:fish_bones"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "58FB1A6006C36FD8"
-			tasks: [{
-				id: "3FE319CA1C65EE1E"
-				type: "checkmark"
-			}]
-			x: 1.0d
-			y: -9.0d
-		}
-		{
 			dependencies: ["5B6FD08D6063D6AA"]
 			hide_until_deps_complete: true
 			icon: {
@@ -1585,27 +1534,6 @@
 			}]
 			x: 4.5d
 			y: -3.5d
-		}
-		{
-			dependencies: ["5B6FD08D6063D6AA"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1F12BF72B966E0CC"
-			rewards: [{
-				id: "1721DBCAD5D49190"
-				item: {
-					count: 1
-					id: "society:omni_geode"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "028B7E5B8F2E9D1C"
-				item: { components: { "ftbquests:missing_item": "extractinator:extractinator" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["5B6FD08D6063D6AA"]

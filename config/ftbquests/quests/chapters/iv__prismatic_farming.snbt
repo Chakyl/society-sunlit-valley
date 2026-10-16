@@ -105,7 +105,7 @@
 			}]
 			tasks: [{
 				id: "58304EBAF06978FC"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:netherite_sprinkler" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "sunrisegardening:netherite_sprinkler" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -708,7 +708,7 @@
 			}]
 			tasks: [{
 				id: "7A255EE6EF6BBB75"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:hyper_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "sunrisegardening:hyper_fertilizer" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -822,17 +822,14 @@
 				count: 2
 				id: "280FC65D6624C825"
 				item: {
-					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:garden_pot"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "sunrisegardening:garden_pot"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "0F3C5B69FBD0192F"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:garden_pot" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "sunrisegardening:garden_pot" }
 				type: "item"
 			}]
 			x: 4.0d

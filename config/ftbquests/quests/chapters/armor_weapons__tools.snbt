@@ -17,7 +17,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["617AC2E80908BFD7"]
 			icon: {
 				id: "minecraft:leather_chestplate"
 			}
@@ -27,8 +26,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: -3.5d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["48F1059FC059D3E5"]
@@ -41,8 +40,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.5d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0ACB2E342421B74E"]
@@ -55,8 +54,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.5d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["21FD7614E314BA14"]
@@ -69,8 +68,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7A5974D470C5AA9C"]
@@ -83,8 +82,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.5d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
@@ -97,28 +96,10 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.5d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["38A0B8D54F85B846"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "aquaculture:neptunium_chestplate"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "33FD69B12C21E495"
-			tasks: [{
-				id: "2ED9B316F07C51F3"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["617AC2E80908BFD7"]
 			icon: {
 				id: "minecraft:wooden_pickaxe"
 			}
@@ -128,8 +109,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: -0.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1B614E9E38B45BD0"]
@@ -142,8 +123,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -0.5d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["08241E18191275AE"]
@@ -156,8 +137,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -0.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["43C52E202277C5AA"]
@@ -170,8 +151,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -0.5d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["32FE1F4EF913EADA"]
@@ -184,8 +165,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -0.5d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
@@ -198,25 +179,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["54301E900FFA56D7"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "aquaculture:neptunium_pickaxe"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "4EA02089CD02F7C0"
-			tasks: [{
-				id: "1756A4BFB7D46C3B"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 1.0d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["319129CE8210964A"]
@@ -234,8 +198,8 @@
 				item: { count: 1, id: "society:galaxy_sword" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: 7.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3B30AFF91D59746A"]
@@ -305,7 +269,7 @@
 			}]
 			tasks: [{
 				id: "5299C59E4EFC60A1"
-				item: { components: { "ftbquests:missing_item": "rehooked:wood_hook" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "hooked:wood_hook" }
 				type: "item"
 			}]
 			x: -10.0d
@@ -319,8 +283,8 @@
 				item: { count: 1, id: "society:dragontooth_axe" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["10C0B87E2EA1C8A5"]
@@ -335,7 +299,7 @@
 			}]
 			tasks: [{
 				id: "1E750F85853859DC"
-				item: { components: { "ftbquests:missing_item": "rehooked:iron_hook" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "hooked:iron_hook" }
 				type: "item"
 			}]
 			x: -10.0d
@@ -354,7 +318,7 @@
 			}]
 			tasks: [{
 				id: "1709778FF4B4130C"
-				item: { components: { "ftbquests:missing_item": "rehooked:diamond_hook" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "hooked:diamond_hook" }
 				type: "item"
 			}]
 			x: -10.0d
@@ -373,29 +337,10 @@
 			}]
 			tasks: [{
 				id: "26D6DCA1D6DCB1A2"
-				item: { components: { "ftbquests:missing_item": "rehooked:ender_hook" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "hooked:ender_hook" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: -11.5d
-		}
-		{
-			dependencies: ["5C8CF40663CCE754"]
-			id: "4F54E885ECC26922"
-			rewards: [{
-				id: "7FFD73B83D19A769"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3A9A868DFD2489D9"
-				item: { components: { "ftbquests:missing_item": "rehooked:blaze_hook" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -8.5d
+			x: -9.0d
 			y: -10.5d
 		}
 		{
@@ -411,10 +356,10 @@
 			}]
 			tasks: [{
 				id: "325E99B9F0E958C5"
-				item: { components: { "ftbquests:missing_item": "rehooked:red_hook" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "hooked:redstone_hook" }
 				type: "item"
 			}]
-			x: -11.5d
+			x: -11.0d
 			y: -10.5d
 		}
 		{
@@ -529,7 +474,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["617AC2E80908BFD7"]
 			icon: {
 				components: {
 					"ftbquests:missing_item": "justhammers:netherite_reinforced_hammer"
@@ -589,57 +533,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["7A5974D470C5AA9C"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "botania:manasteel_chestplate"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "6080E8F9B0DDAE72"
-			tasks: [{
-				id: "12DAF95F0B50680C"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["6080E8F9B0DDAE72"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "botania:terrasteel_chestplate"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "6E4CC63B8CF1EDAF"
-			tasks: [{
-				id: "7EDA5896186979D5"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["6080E8F9B0DDAE72"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "botania:elementium_chestplate"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "3FC4155A11F14663"
-			tasks: [{
-				id: "033A4317987E15C2"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["38A0B8D54F85B846"]
 			icon: {
 				id: "oreganized:electrum_chestplate"
@@ -650,8 +543,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
@@ -664,8 +557,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.5d
+			x: 5.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0B85DF081F75ECA7"]
@@ -686,8 +579,8 @@
 				item: { count: 1, id: "society:meowmageddon" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 9.5d
+			y: 0.5d
 		}
 	]
 }

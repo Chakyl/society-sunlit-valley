@@ -6,3 +6,11 @@ logUntranslatedItemTagWarnings = "SILENCED"
 logLegacyTagWarnings = "DEV_SHORT"
 #Set this to true to enable showing debug information about attributes on an item when advanced tooltips is on.
 attributeAdvancedTooltipDebugInfo = true
+#The maximum allowed size of a reassembled split packet; expressed in MBs.
+# Default: 128
+# Range: 1 ~ 2048
+splitPacketMaxSizeLimitMb = 128
+#The maximum number of adhoc channels allowed to be registered.
+# Default: 2048
+# Range: 1024 ~ 16384
+maxAdhocChannelLimit = 2048

@@ -1,0 +1,208 @@
+#Mirror reflections.
+[Mirror]
+	#Mirrors render live reflections. Disable for better performance.
+	enableReflections = false
+	#Distance in blocks within which mirrors render reflections.
+	# Default: 24
+	# Range: 4 ~ 64
+	renderDistance = 24
+	#How many mirror surfaces can reflect at the same time.
+	# Default: 4
+	# Range: 1 ~ 8
+	maxMirrors = 4
+	#Reflections are slightly blurred like old glass.
+	enableBlur = true
+	#How far in blocks a mirror reflects the world.
+	# Default: 24
+	# Range: 4 ~ 64
+	reflectionRange = 24
+	#Right-clicking a mirror with paper named "Spieglein, Spieglein" or "Mirror, Mirror" summons a lit creeper behind you.
+	enableCreeperPrank = true
+
+#Cash register behaviour.
+["Cash Register"]
+	#Radius in blocks in which the cash register looks for a villager to trade with.
+	# Default: 16
+	# Range: 4 ~ 32
+	merchantRange = 16
+	#Seconds until an open cash register closes on its own.
+	# Default: 10
+	# Range: 1 ~ 120
+	autoCloseSeconds = 10
+
+#Boat in a jar behaviour.
+["Boat in a Jar"]
+	#Boats in a jar can be shaken by right-clicking them.
+	enableShaking = true
+	#Shaking a boat in a jar too hard breaks the mast.
+	enableBreaking = true
+	#Roughly how many quick shakes in a row break the mast.
+	# Default: 5
+	# Range: 2 ~ 20
+	breakThreshold = 5
+	#Speed of the rocking animation in percent. 0 stops it.
+	# Default: 100
+	# Range: 0 ~ 500
+	animationSpeed = 100
+	#Right-clicking a boat in a jar with a water bottle starts a tiny storm inside.
+	enableStorm = true
+	#Boats in a jar rock harder during thunderstorms.
+	enableThunderRocking = true
+
+#Pouffe behaviour.
+[Pouffe]
+	#Entities bounce off pouffes like a small trampoline.
+	enableBounce = true
+	#Bounce strength in percent of the landing speed.
+	# Default: 66
+	# Range: 0 ~ 100
+	bounceStrength = 66
+	#Fall damage taken on a pouffe in percent.
+	# Default: 50
+	# Range: 0 ~ 100
+	fallDamage = 50
+
+#Gramophone behaviour.
+[Gramophone]
+	#Playing disc 11 makes the surroundings flicker eerily.
+	enableEerieEleven = true
+	#The horn pulses to the music while a disc is playing.
+	enableHornPulse = true
+
+#Fish tank behaviour.
+["Fish Tank"]
+	#Nearby cats sit in front of fish tanks and stare at the fish.
+	enableCatsWatchFish = true
+
+#Training dummy settings.
+[Pells]
+	#How much damage a pells can take before it breaks.
+	# Default: 150
+	# Range: 10 ~ 1000
+	maxDurability = 150
+
+#Bin and trash bag behaviour.
+[Bin]
+	#Chance in percent that a full bin drops a trash bag.
+	# Default: 25
+	# Range: 0 ~ 100
+	bagDropChance = 25
+	#Nearly full bins give off green stink clouds.
+	enableStink = true
+	#Full bins attract buzzing flies.
+	enableFlies = true
+	#Whether opening a trash bag puts it on cooldown.
+	enableTrashBagCooldown = true
+	#Seconds before a player can open the next trash bag.
+	# Default: 60
+	# Range: 0 ~ 600
+	trashBagCooldownSeconds = 60
+	#One in this many frames spawns a fly at a full bin. Higher means fewer flies.
+	# Default: 12
+	# Range: 1 ~ 200
+	flyFrequency = 12
+	#Minimum lifetime of a fly in ticks.
+	# Default: 60
+	# Range: 10 ~ 400
+	flyLifetime = 60
+
+#Steam vents and pipes.
+[Steam]
+	#How many blocks away from a steam vent a heat source is searched.
+	# Default: 4
+	# Range: 1 ~ 16
+	ventSourceRange = 4
+	#How many pipe blocks a single steam network can have.
+	# Default: 128
+	# Range: 16 ~ 512
+	maxPipeLength = 128
+	#Pressurized pipes leak, drip and burst steam.
+	enablePipeParticles = true
+	#Pressurized pipes hiss.
+	enablePipeSounds = true
+	#Steam vents emit steam and chimney smoke.
+	enableVentParticles = true
+
+#Telescope behaviour.
+[Telescope]
+	#Shooting stars appear while looking through a telescope at night.
+	enableShootingStars = true
+	#One in this many ticks spawns a shooting star. Higher is rarer.
+	# Default: 600
+	# Range: 10 ~ 10000
+	shootingStarRarity = 600
+	#Weakest zoom level when scrolling out.
+	# Default: 2.5
+	# Range: 1.0 ~ 100.0
+	minMagnification = 2.5
+	#Strongest zoom level when scrolling in.
+	# Default: 50.0
+	# Range: 1.0 ~ 100.0
+	maxMagnification = 50.0
+	#How far in blocks you can move away from a telescope before you stop looking through it.
+	# Default: 3
+	# Range: 2 ~ 16
+	maxDistance = 3
+
+#Display animations.
+[Display]
+	#Items on displays slowly rotate.
+	enableRotation = true
+	#Items on displays gently float up and down.
+	enableBobbing = true
+
+#Chimney behaviour.
+[Chimney]
+	#Chimneys slowly get sooty over time.
+	enableSoot = true
+	#One in this many ticks a chimney gets sooty. Higher is slower.
+	# Default: 12000
+	# Range: 100 ~ 100000
+	sootRarity = 12000
+
+#Clock sounds.
+[Clock]
+	#Grandfather clocks ring a bell at dawn.
+	enableChime = true
+	#Grandfather clocks strike twelve times at midnight.
+	enableMidnightStrike = true
+	#The midnight strike makes nearby mobs flinch.
+	enableStartleMobs = true
+	#Clocks and grandfather clocks tick audibly.
+	enableTicking = true
+	#Volume of the ticking in percent.
+	# Default: 100
+	# Range: 0 ~ 200
+	tickingVolume = 100
+
+#Info tooltips that appear when looking at a block. Only affects your own screen.
+["Info Tooltips"]
+	#Shows an info tooltip when looking at a fish tank.
+	showFishTankInfo = true
+	#Shows an info tooltip when looking at a wardrobe.
+	showWardrobeInfo = true
+	#Shows an info tooltip when looking at a bin.
+	showBinInfo = true
+	#Shows an info tooltip when looking at a telescope.
+	showTelescopeInfo = true
+	#Shows an info tooltip when looking at a lamp.
+	showLampInfo = true
+	#Shows an info tooltip when looking at a cash register.
+	showCashRegisterInfo = true
+	#Shows an info tooltip when looking at a steam vent.
+	showSteamVentInfo = true
+	#Shows an info tooltip when looking at a boat in a jar.
+	showBoatInAJarInfo = true
+	#Shows an info tooltip when looking at a damaged pells.
+	showPellsInfo = true
+	#Shows the health and armor of a pells while you hold a weapon.
+	showPellsStats = true
+
+#Ambient sounds and their volume.
+[Misc]
+	#Fish tanks make quiet water sounds.
+	enableFishTankAmbience = true
+	#Volume of the coffer open and close sounds in percent.
+	# Default: 100
+	# Range: 0 ~ 200
+	cofferVolume = 100

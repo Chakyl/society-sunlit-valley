@@ -16,10 +16,7 @@
 	quests: [
 		{
 			icon: {
-				components: {
-					"ftbquests:missing_item": "betterarcheology:growth_totem"
-				}
-				id: "ftbquests:missing_item"
+				id: "minecraft:sunflower"
 			}
 			id: "2B6877708A709B5C"
 			rewards: [
@@ -91,33 +88,6 @@
 			}]
 			x: 2.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["2B6877708A709B5C"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "solonion:food_book"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "7A7B131D229E5279"
-			rewards: [{
-				id: "7564618DEEDF5B88"
-				item: {
-					components: {
-						"ftbquests:missing_item": "solonion:food_book"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "1751982CCE09E023"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -2.5d
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
