@@ -31,7 +31,7 @@
 //             translate: optionKey
 //           },
 //           target: option.target || "end",
-//           command: Array.isArray(option.command) ? option.command : [option.command]
+//           commands: Array.isArray(option.command) ? option.command : [option.command]
 //         };
 //       });
 //     }
@@ -47,7 +47,7 @@
 //             translate: "dialog.npc.carpenter.purchase_supplies"
 //           },
 //           target: "end",
-//           command: [
+//           commands: [
 //             "openshop @p carpenter"
 //           ]
 //         },
@@ -56,7 +56,7 @@
 //             translate: "dialog.npc.carpenter.invite_villagers"
 //           },
 //           target: "end",
-//           command: [
+//           commands: [
 //             "openshop @p invitations"
 //           ]
 //         },
@@ -65,7 +65,7 @@
 //             translate: "dialog.npc.carpenter.build_farm"
 //           },
 //           target: "end",
-//           command: [
+//           commands: [
 //             "openselector @p building_shop"
 //           ]
 //         },
@@ -74,7 +74,7 @@
 //             translate: "dialog.npc.carpenter.build_village"
 //           },
 //           target: "end",
-//           command: [
+//           commands: [
 //             "openselector @p building_shop"
 //           ]
 //         }]

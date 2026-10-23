@@ -1,0 +1,28 @@
+{
+  "npc_id": "fisher",
+  "job": { "translate": "shop.society_trading.fisher" },
+  "name": { "translate": "dialog.npc.fisher.name" },
+  "color": "#e9b115",
+  "is_slim": true,
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 0
+    }
+  ],
+  "dialogs": {
+    "chatter": [11, 9, 10, 10, 10, 11],
+    "gift_responses": { "loved": 7, "liked": 6, "neutral": 9, "disliked": 7, "hated": 7 }
+  },
+  "gifts": {
+    "loved": [],
+    "liked": [],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}

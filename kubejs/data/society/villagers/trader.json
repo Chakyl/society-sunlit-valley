@@ -1,0 +1,27 @@
+{
+  "npc_id": "trader",
+  "job": { "translate": "shop.society_trading.trader" },
+  "name": { "translate": "dialog.npc.trader.name" },
+  "color": "#e9b115",
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 0
+    }
+  ],
+  "dialogs": {
+    "chatter": [7, 5, 5, 7, 7, 6],
+    "gift_responses": { "loved": 5, "liked": 5, "neutral": 5, "disliked": 5, "hated": 5 }
+  },
+  "gifts": {
+    "loved": [],
+    "liked": [],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}

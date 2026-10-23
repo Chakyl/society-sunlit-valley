@@ -1,0 +1,65 @@
+{
+  "npc_id": "blacksmith",
+  "job": {
+    "translate": "shop.society_trading.blacksmith"
+  },
+  "name": {
+    "translate": "dialog.npc.blacksmith.name"
+  },
+  "color": "#e9b115",
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.work"
+      },
+      "target_tag": "society:blacksmith_workstations",
+      "start_time": 0,
+      "end_time": 4000
+    },
+    {
+      "description": {
+        "translate": "society.npc_schedule.hanging_out"
+      },
+      "target_tag": "society:villager_hangouts",
+      "start_time": 4000,
+      "end_time": 6000
+    },
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 0
+    }
+  ],
+  "dialogs": {
+    "chatter": [
+      16,
+      10,
+      13,
+      12,
+      11,
+      14
+    ],
+    "gift_responses": {
+      "loved": 8,
+      "liked": 9,
+      "neutral": 8,
+      "disliked": 8,
+      "hated": 10
+    }
+  },
+  "gifts": {
+    "loved": [
+      {"item": "windswept:lavender"}
+    ],
+    "liked": [
+      { "tag": "minecraft:flowers" },
+      { "tag": "c:raw_materials" }
+    ],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}

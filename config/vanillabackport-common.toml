@@ -1,85 +1,155 @@
 ["The Garden Awakens"]
-	#allow resin to be obtainable from creaking hearts
+	#allow Resin to be obtained from Creaking Hearts
 	resin = true
-	#allow creakings to spawn from creaking hearts
+	#allow Creakings to spawn from Creaking Hearts
 	creaking = true
-	#allow the pale garden to generate in the overworld
+	#allow Pale Garden biomes to generate
 	pale_garden = true
-	#allow features from 'The Garden Awakens' to be obtainable through wandering traders
+	#Wandering Traders to offer items from The Garden Awakens
 	pale_trades = true
-	#creaking heart trail particle color (gray by default)
+	#primary color of Creaking Heart trail particles
 	creaking_particle_color = 6250335
-	#creaking heart trail particle reverse color (orange by default)
+	#secondary color of Creaking Heart trail particles
 	creaking_particle_reverse_color = 16545810
-	#allow resin to appear on chests at woodland mansions
+	#allow Resin to generate in Woodland Mansion loot chests
 	resin_loot = true
-	#allow Creaking Hearts to generate Creakings even during the day
+	#allow Creaking Hearts to spawn Creakings during the day
 	do_creaking_hearts_work_on_day = false
+	#apply the modern recipe for leads
+	#Allowed Values: APPEND, REPLACE, IGNORE
+	lead_recipe = "APPEND"
+	#apply the modern recipe for saddles
+	#Allowed Values: APPEND, REPLACE, IGNORE
+	saddle_recipe = "APPEND"
 
 ["Chase the Skies"]
-	#allow dried ghasts to be obtainable through nether fossils and piglin bartering
+	#allow Dried Ghasts to be obtainable through Nether Fossils and Piglin bartering
 	dried_ghasts = true
-	#toggle whether leashes drop their connections when boosting with a firework rocket
+	#drop leash connections when using a Firework Rocket boost
 	leash_drop_connections = true
-	#allows ghasts drop the tears music disc
+	#allow Ghasts to drop the Tears music disc
 	tears_music_disc = true
-	#apply a modifier to the speed of happy ghasts when ridden, 1.0 is default speed
+	#movement speed multiplier for ridden Happy Ghasts
 	happy_ghast_speed_modifier = 1.0
+	#allow Leashes to have the modern physics and interactions
+	modern_leashes = true
 
 ["Bundles of Bravery"]
-	#toggle the updated controls and UI for bundles
+	#enable the modern bundle interface and controls
 	has_updated_bundles = true
-	#allow bundles to appear on chests at villages
+	#allow Bundles to generate in Village loot chests
 	bundle_loot = true
-	#toggle the modern rendering for bundles
-	has_modern_bundle_graphics = true
-	#toggle whether bundles should be dyeable
+	#allow bundles to be dyed
 	has_dyeable_bundle_recipe = true
+	#invert the bundle click controls
+	inverted_bundle_controls = false
+	#apply the modern recipe for bundles
+	#Allowed Values: APPEND, REPLACE, IGNORE
+	bundle_recipe = "APPEND"
 
 ["Spring to Life"]
-	#allow bushes to generate in the overworld
+	#allow Bushes to generate
 	bushes = true
-	#allow firefly bushes to generate in the overworld
+	#allow Firefly Bushes to generate
 	firefly_bushes = true
-	#allow wildflowers to generate in the overworld
+	#allow Wildflowers to generate
 	wildflowers = true
-	#allow dry grass to generate in the overworld
+	#allow Dry Grass to generate
 	dry_grass = true
-	#allow fallen trees to generate in the overworld
+	#allow Fallen Trees to generate
 	fallen_trees = true
-	#allow leaf litter to generate in the overworld
+	#allow Leaf Litter to generate
 	leaf_litter = true
-	#allow variants for pigs, cows and chickens to generate
+	#allow Chicken, Cow, and Pig variants to spawn
 	farm_animal_variants = true
-	#allow wolfs to have variants for their sounds
+	#allow wolves to have sound variants
 	wolf_sound_variants = true
-	#allow features from 'Spring to Life' to be obtainable through wandering traders
+	#allow Wandering Traders to offer items from Spring to Life
 	spring_trades = true
-	#allow camels to spawn outside of villages
+	#allow Camels to spawn naturally
 	camel_spawns = true
-	#allow cactus flowers to generate
+	#allow Cactus Flowers to generate
 	cactus_flowers = true
-	#allow lodestones to appear on chests at ruined portals
+	#allow Lodestones to generate in Ruined Portal loot chests
 	lodestone_loot = true
+	#global spawn chance for mob variants; use datapacks for per-variant weighting
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	mob_variants_spawn_chance = 1.0
+	#chance for a cactus to generate with a Cactus Flower
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	cactus_flower_spawn_chance = 0.25
+	#apply the modern recipe for lodestones
+	#Allowed Values: APPEND, REPLACE, IGNORE
+	lodestone_recipe = "APPEND"
 
 ["Hot as Lava"]
-	#allows chicken jockeys to drop the lava chicken music disc
+	#allow Chicken jockeys to drop the Lava Chicken music disc
 	lava_chicken_music_disc = true
 
 ["Chaos Cubed"]
-	#allow the generation of Sulfur Cave biomes
+	#allow Sulfur Cave biomes to generate
 	has_sulfur_caves = true
-	#allow the generation of Sulfur Springs on top of Sulfur Caves
+	#allow Sulfur Springs to generate in Sulfur Caves
 	has_sulfur_springs = true
-	#allow Potent Sulfur Blocks to generate Geysers
+	#allow Potent Sulfur blocks to generate Geysers
 	do_geysers_erupt = true
-	#allow Sulfur Cubes to spawn on Sulfur Caves
+	#allow Sulfur Cubes to spawn in Sulfur Caves
 	has_sulfur_cubes = true
-	#allow Sulfur Cubes with exploding archetypes to explode
+	#allow explosive Sulfur Cube archetypes to explode
 	do_sulfur_cubes_explode = true
-	#allow Sulfur Cubes with damaging archetypes to deal damage
+	#allow damaging Sulfur Cube archetypes to deal damage
 	do_sulfur_cubes_damage = true
-	#allow Wanderer traders to sell contents from Chaos Cubed
+	#allow Wandering Traders to offer items from Chaos Cubed
 	do_merchant_trade_chaos_cubed_contents = true
-	#allows the bounce music disc to generate on abandoned mineshafts
+	#allows the Bounce music disc to generate in Abandoned Mineshafts loot chests
 	has_bounce_music_disc = true
+
+["Copper Age"]
+	#allow Copper Horse Armor to generate in loot chests
+	has_copper_horse_armor_loot = true
+	#allow Copper Golems to be built using a Carved Pumpkin
+	has_copper_golems = true
+	#minimum ticks before a Copper Golem advances to the next weathering stage
+	# Default: 504000
+	# Range: > 0
+	golem_weathering_tick_from = 504000
+	#maximum ticks before a Copper Golem advances to the next weathering stage
+	# Default: 552000
+	# Range: > 0
+	golem_weathering_tick_to = 552000
+	#maximum number of items a Copper Golem can carry
+	# Default: 16
+	# Range: > 1
+	golem_item_carry_amount = 16
+	#allow Copper Nuggets to be obtainable via crafting
+	has_copper_nuggets = true
+	#allow Copper Armor, Weapons and Tools to be obtainable
+	has_copper_toolset = true
+	#allow Weathering Lightning Rods to be obtainable
+	has_weathering_lightning_rods = true
+
+["Mounts of Mayhem"]
+	#allow Parched Skeletons to spawn naturally
+	has_parched_skeletons = true
+	#allow Camel Husks to spawn naturally
+	has_camel_husks = true
+	#allow Nautilus to spawn naturally
+	has_nautilus = true
+	#allow Zombie Horses to spawn naturally
+	has_zombie_horses = true
+	#chance for a drowned to spawn riding a nautilus
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	zombie_nautilus_spawn_chance = 0.5
+	#allow Nautilus Armor to generate in loot chests
+	has_nautilus_armor_loot = true
+	#allow Spears to be obtainable and allow monsters to spawn holding them
+	has_spears = true
+	#allow mounts to float while ridden
+	can_mounts_float_while_ridden = true
+
+["Wilderness Bound"]
+	#allow Dappled Forest biomes to generate
+	has_dappled_forest = true

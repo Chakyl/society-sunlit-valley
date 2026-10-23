@@ -1,9 +1,9 @@
 {
-  "configVersion": 6,
+  "configVersion": 7,
   "perf": {
     "maxParticleAmount": 1500,
-    "particleDensity": 50,
-    "particleStormDensity": 167,
+    "particleDensity": 75,
+    "particleStormDensity": 100,
     "particleDistance": 16,
     "surfaceRange": 100
   },
@@ -36,22 +36,12 @@
       "isWhitelist": true
     },
     "doSpawnHeightLimit": false,
-    "spawnHeightLimit": 0
-  },
-  "ripple": {
-    "opacity": 0.8,
-    "size": 0.25,
-    "resolution": 16,
-    "useResourcepackResolution": true
+    "spawnHeightLimit": 0,
+    "rippleRes": 16,
+    "rippleUsePackRes": true
   },
   "streak": {
     "opacity": 0.9,
     "size": 0.5
-  },
-  "mist": {
-    "lifetime": 250,
-    "opacity": 1.0,
-    "size": 3.0,
-    "renderStyle": "BLENDED"
   }
 }

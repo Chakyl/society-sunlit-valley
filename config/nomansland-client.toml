@@ -7,6 +7,12 @@
 	deepDarkFogModifier = true
 	#If the foggy biome fog modifier is enabled
 	foggyBiomeFogModifier = true
+	#If the general fog modifier applied everywhere, is enabled
+	surfaceFogModifier = true
+	#How strongly the general fog modifier pulls fog towards the camera; 0 disables it entirely, 1 is the default look
+	# Default: 1.0
+	# Range: 0.1 ~ 1.0
+	surfaceFogIntensity = 1.0
 
 [inverted_bell_client]
 	#Whether to apply a blur effect while teleporting via Inverted Bell

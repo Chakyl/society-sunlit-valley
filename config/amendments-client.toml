@@ -4,8 +4,6 @@
 	texture_pack_support = false
 	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
 	dynamic_assets_generation_mode = "CACHED"
-	#Disables the chat warning shown when Enhanced Block Entities is installed
-	no_enhanced_block_entities_warn = false
 
 [lily_pad]
 	#set to 0 tho have lilypads at the same exact position as vanilla.negative numbers will place them in their own blockspace right below avoiding any clipping.best of both worlds at default as its barely within its space
@@ -103,6 +101,10 @@
 	torch_item_flame = false
 	#Gives the villager trade buttons the same look loom and stonecutter buttons have
 	villager_trade_buttons = true
+	#Makes the selected hotbar slot slide to its new position. Higher is faster, 0 for vanilla behavior
+	# Default: 2.5
+	# Range: 0.0 ~ 5.0
+	hotbar_slot_animation_speed = 2.5
 
 [sign]
 	#Gives signs a pixel consistent model and texture. Also affects other mods. This also makes them use a Block Model, making them render much much much faster than as block entities

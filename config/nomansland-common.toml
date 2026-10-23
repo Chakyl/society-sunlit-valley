@@ -11,6 +11,8 @@
 	torchExtinguishing = true
 	#If snow and grass can combine to form snowlogged frosted grass.
 	allowGrassFrosting = true
+	#If using a hoe/shovel on plants tills/paths the blocks below it
+	farmlandPathTweaks = true
 
 [biomes]
 	#If any custom biomes are enabled
@@ -58,10 +60,6 @@
 	# Default: 1.0
 	# Range: 0.0 ~ 10.0
 	fillingSpeedMultiplier = 1.0
-	#The time it takes to fill a cauldron with honey using a tap.
-	# Default: 80
-	# Range: 1 ~ 400
-	ticksToFillCauldron = 80
 
 [monster_anchor]
 	#The time between each resurrection from a monster anchor.
@@ -133,6 +131,8 @@
 	# Default: 2500
 	# Range: > 0
 	maxMeetingPointDistance = 2500
+	#Dimensions the Friend Moon watches over, as full dimension ids such as "minecraft:overworld". Leave empty to use every dimension that shares the overworld's dimension type, which covers most custom overworld-like dimensions.
+	friendMoonDimensions = []
 
 [bell_sanctuaries]
 	#The minimum distance allowed between a pair of bell sanctuaries. Should NOT be changed after world has generated. Has NO impact on how close two DIFFERENT pairs of bell sanctuaries can be. This must be smaller than max distance
@@ -182,7 +182,6 @@
 [recipe_tweaks]
 	#Toggle changes to vanilla crafting recipes.
 	andesite = true
-	bookshelf = true
 	diorite = true
 	granite = true
 	lectern = true
@@ -190,12 +189,9 @@
 	light_gray_dye_from_white_tulip = true
 	lodestone = true
 	mushroom_stew = true
-	polished_deepslate = true
 	rabbit_stew_from_red_mushroom = true
 	red_dye_from_rose_bush = true
 	red_sandstone = true
 	sandstone = true
 	scaffolding = true
 	smoker = true
-	stone_bricks = true
-	tnt = true

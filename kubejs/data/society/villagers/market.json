@@ -1,0 +1,27 @@
+{
+  "npc_id": "market",
+  "job": { "translate": "shop.society_trading.market" },
+  "name": { "translate": "dialog.npc.market.name" },
+  "color": "#e9b115",
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 0
+    }
+  ],
+  "dialogs": {
+    "chatter": [18, 14, 9, 16, 14, 14],
+    "gift_responses": { "loved": 10, "liked": 8, "neutral": 17, "disliked": 12, "hated": 13 }
+  },
+  "gifts": {
+    "loved": [],
+    "liked": [],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}

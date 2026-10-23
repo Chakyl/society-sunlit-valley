@@ -1,0 +1,35 @@
+{
+  "npc_id": "wise_oak",
+  "job": { "translate": "shop.society_trading.wise_oak" },
+  "name": { "translate": "dialog.npc.wise_oak.name" },
+  "color": "#e9b115",
+  "has_invitation": false,
+  "has_entity": false,
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 0
+    }
+  ],
+  "dialogs": {
+    "chatter": [7, 5, 5, 5, 5, 8],
+    "gift_responses": {
+      "loved": 0,
+      "liked": 0,
+      "neutral": 0,
+      "disliked": 0,
+      "hated": 0
+    }
+  },
+  "gifts": {
+    "loved": [],
+    "liked": [],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}

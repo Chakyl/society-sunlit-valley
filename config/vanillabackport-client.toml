@@ -1,10 +1,53 @@
 ["Spring to Life"]
-	#allow falling leaves particles to generate
+	#enable falling leaves particles
 	falling_leaves = false
-	#how often should falling leaves particles generate
-	#Range: 0.0 ~ 1.0
+	#chance for falling leaf particles to appear
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
 	falling_leaves_frequency = 0.01
 	#use the legacy spawn egg textures
 	use_legacy_spawn_eggs = false
-	#toggle the colored sheep wool undercoat
+	#use the modern colored wool undercoat for sheep
 	use_sheep_wool_undercoat = true
+
+["Bundles of Bravery"]
+	#allow access to all items in a Bundle instead of only the first 12
+	endless_bundle_ui = false
+	#enable modern bundle models
+	has_modern_bundle_models = true
+	#enable modern redstone torch models (also effects repeaters and comparators)
+	has_modern_redstone_torch_models = true
+	#enable modern banner pattern textures
+	has_modern_banner_pattern_textures = true
+
+["Chase the Skies"]
+	#enable the Locator Bar; disabling it on your client does not make you invisible on the server
+	enable_locator_bar = true
+	#keep the experience bar and jump bar visible
+	locator_display_info_bar = false
+	#display compass targets such as Lodestones and death locations
+	locator_display_compass_info = false
+	#display player heads instead of colored player markers
+	locator_display_player_heads = false
+	#display cardinal directions [N, S, E, W]
+	locator_display_cardinal_points = false
+	#extend cloud rendering to match your render distance
+	extended_cloud_reach = true
+
+["Copper Age"]
+	#enable a brown palette to render for each dye
+	enable_dye_palettes = true
+	#enable modern dye textures
+	enable_modern_dye_textures = true
+	#enable End Flash sky effects
+	end_flash_sky_visuals = true
+	#enable End Flash terrain effects
+	end_flash_terrain_visuals = true
+
+["Mounts of Mayhem"]
+	#toggles the modern Zombie Horse texture
+	has_zombie_horse_retexture = true
+
+["Wilderness Bound"]
+	#enable modern hay bale texture that is aligned with the straw bed
+	has_modern_hay_bale_texture = true

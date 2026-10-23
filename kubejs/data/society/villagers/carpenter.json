@@ -1,0 +1,27 @@
+{
+  "npc_id": "carpenter",
+  "job": { "translate": "shop.society_trading.carpenter" },
+  "name": { "translate": "dialog.npc.carpenter.name" },
+  "color": "#e9b115",
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 0
+    }
+  ],
+  "dialogs": {
+    "chatter": [11, 10, 13, 9, 9, 15],
+    "gift_responses": { "loved": 6, "liked": 7, "neutral": 8, "disliked": 10, "hated": 10 }
+  },
+  "gifts": {
+    "loved": [],
+    "liked": [],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}

@@ -306,6 +306,8 @@
 		"Enable Lava Interaction" = false
 		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = true
+		#Set this to true to use left clicks instead of right clicks for all Expanded Item Interactions. Some JEI hints may be incorrect if this is enabled
+		"Invert Clicks" = false
 
 	[management.hotbar_changer]
 		"Animation Time" = 7.0

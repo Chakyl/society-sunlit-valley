@@ -1,0 +1,40 @@
+{
+  "npc_id": "shepherd",
+  "job": {
+    "translate": "shop.society_trading.shepherd"
+  },
+  "name": {
+    "translate": "dialog.npc.shepherd.name"
+  },
+  "color": "#e9b115",
+  "is_slim": true,
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.hanging_out"
+      },
+      "target_tag": "society:villager_hangouts",
+      "start_time": 4000,
+      "end_time": 6000
+    },
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 23000
+    }
+  ],
+  "dialogs": {
+    "chatter": [15, 14, 13, 12, 14, 17],
+    "gift_responses": { "loved": 9, "liked": 10, "neutral": 8, "disliked": 8, "hated": 11 }
+  },
+  "gifts": {
+    "loved": [],
+    "liked": [],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}

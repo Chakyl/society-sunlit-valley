@@ -1,0 +1,45 @@
+{
+  "npc_id": "banker",
+  "job": {
+    "translate": "shop.society_trading.banker"
+  },
+  "name": {
+    "translate": "dialog.npc.banker.name"
+  },
+  "color": "#e9b115",
+  "is_slim": true,
+  "schedule": [
+    {
+      "description": {
+        "translate": "society.npc_schedule.sleep"
+      },
+      "target_tag": "minecraft:beds",
+      "start_time": 13000,
+      "end_time": 0
+    }
+  ],
+  "dialogs": {
+    "chatter": [
+      15,
+      20,
+      13,
+      9,
+      11,
+      18
+    ],
+    "gift_responses": {
+      "loved": 9,
+      "liked": 8,
+      "neutral": 8,
+      "disliked": 12,
+      "hated": 16
+    }
+  },
+  "gifts": {
+    "loved": [],
+    "liked": [],
+    "neutral": [],
+    "disliked": [],
+    "hated": []
+  }
+}
