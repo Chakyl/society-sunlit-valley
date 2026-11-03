@@ -40,7 +40,14 @@ const generateColorWrappedTooltip = (tooltipArray, hexColor, additionalAlwaysToo
 /**
  * Common Utilities - These are common phrases in tooltips like "Right Click to Use!"
  */
-const RIGHT_CLICK_TO_READ = "<ltcolor>c=55FF55;Right click to learn this skill!</ltcolor>";
+const registerUtil = (key, translation) => {
+  translationKeys[key] = translation;
+  return `<ltlangkey>${key}</ltlangkey>`;
+};
+
+const RIGHT_CLICK_TO_READ = registerUtil('tooltip.society.utils.right_click_to_read', '<ltcolor>c=55FF55;Right click to learn this skill!</ltcolor>');
+const PHONE_BLOCK = registerUtil('tooltip.society.utils.phone', '<ltcolor>c=AAAAAA;Right click to call any unlocked villager and access their shop</ltcolor>');
+const ARTIFACT  = registerUtil('tooltip.society.utils.artifact', "🪣 §7Artifact");
 /**
  * Category Tooltips - These are often bulk additions that often category tooltips e.g Artifact
  */
@@ -73,12 +80,12 @@ const artifactTooltips = [
     { item: "society:red_wrench", tooltips: ["I swear I won't use it..."] }
 ];
 
-generateColorWrappedTooltip(artifactTooltips, "AA00AA", "🪣 §7Artifact")
+generateColorWrappedTooltip(artifactTooltips, "AA00AA", ARTIFACT)
 const bookTooltips = [
     { item: "society:alias_moss", tooltips: ["Mossberries can be found in any season."] },
     { item: "society:animal_fancy", tooltips: ["Increases affection gained from petting farm animals."] },
     { item: "society:banana_karenina", tooltips: ["Doubles Banana Tree output."] },
-    { item: "society:brine_and_punishment", tooltips: ["Pickled items are worth 100% more."] },
+    { item: "society:brine_and_punishment", tooltips: ["Pickled items are worth 100%% more."] },
     { item: "society:bluegigi_meridian", tooltips: ["Bluegill are now worth 666 §f●."] },
     { item: "society:hitting_hard_and_soft", tooltips: ["Melee attacks do an extra 4 damage."] },
     { item: "society:canadian_and_famous", tooltips: ["Tappers output double. Doesn't affect Auto-Tappers."] },
@@ -89,10 +96,10 @@ const bookTooltips = [
     { item: "society:slime_contain_protect", tooltips: ["Incubating a Slime Heart has a chance to give you a Slime Ticket."] },
     { item: "society:slouching_towards_artistry", tooltips: ["Artisan Hoppers have a chance to not consume Sparkstone when harvesting. The chance increases the longer the product took to make."] },
     { item: "society:debt_caverns", tooltips: ["Fainting in the Skull Cavern no longer costs a fee or adds to debt."] },
-    { item: "society:phenomenology_of_treasure", tooltips: ["Artifacts and Relics are worth 200% more."] },
+    { item: "society:phenomenology_of_treasure", tooltips: ["Artifacts and Relics are worth 200%% more."] },
     { item: "society:frogs_bounty_bazaar", tooltips: ["Prize Tickets give double the prizes."] },
     { item: "society:bullfish_jobs", tooltips: ["The quality of fish taken out of Fish Ponds scales with population."] },
-    { item: "society:wuthering_logs", tooltips: ["Trees have a 15% chance to drop Fire Logs when chopped."] },
+    { item: "society:wuthering_logs", tooltips: ["Trees have a 15%% chance to drop Fire Logs when chopped."] },
     { item: "society:the_spark_also_rises", tooltips: ["Mining any ore drops Sparkstone."] },
     { item: "society:universal_methods_of_farming", tooltips: ["The Market sells all basic seeds in every season."] },
     { item: "society:the_quality_of_the_earth", tooltips: ["Quality impacts of non-fish farmer products on prices are doubled."] },
@@ -131,14 +138,14 @@ const miscTooltips = [
     { item: "society:magic_rope", tooltips: ["Teleports you down a level in the Skull Cavern."] },
     { item: "society:magic_tunnel", tooltips: ["Teleports you to the nearest cave in the direction of the block you've clicked in the Skull Cavern."] },
     { item: "society_trading:auto_trader", tooltips: ["Allows you to automatically trade from all unlocked shops. Cannot trade for stock-limited or unlocked trades."] },
-    { item: "society:invitation", tooltips: ["Invites a villager to your town and gives a block to set their home."]},
-    { item: "unusualfishmod:ripper_tooth", tooltips: ["Threatens the fish in a Fish Pond into changing their active quest."]},
-    { item: "society:river_jelly", tooltips: ["Fished up from River biomes."]},
-    { item: "society:ocean_jelly", tooltips: ["Fished up from Ocean & Beach biomes."]},
-    { item: "society:lava_jelly", tooltips: ["Fished up from lava pools."]},
+    { item: "society:invitation", tooltips: ["Invites a villager to your town and gives a block to set their home."] },
+    { item: "unusualfishmod:ripper_tooth", tooltips: ["Threatens the fish in a Fish Pond into changing their active quest."] },
+    { item: "society:river_jelly", tooltips: ["Fished up from River biomes."] },
+    { item: "society:ocean_jelly", tooltips: ["Fished up from Ocean & Beach biomes."] },
+    { item: "society:lava_jelly", tooltips: ["Fished up from lava pools."] },
 ];
 generateStandardTooltips(miscTooltips)
-generateBulkStandardsTooltips(['whimsy_deco:phone', 'whimsy_deco:black_phone', 'whimsy_deco:red_phone', 'whimsy_deco:blue_phone', 'tanukidecor:antique_phone'], ["Right click to call any unlocked villager and access their shop"])
+generateBulkStandardsTooltips(['whimsy_deco:phone', 'whimsy_deco:black_phone', 'whimsy_deco:red_phone', 'whimsy_deco:blue_phone', 'tanukidecor:antique_phone'], [PHONE_BLOCK])
 
 
 JsonIO.write(`kubejs/assets/society_tooltips/lang/en_us.json`, translationKeys);

@@ -27,8 +27,6 @@ StartupEvents.registry("block", (event) => {
     // Placeholder stuff for SK
     event.create('extractinator:slush')
     event.create('minecraft:grass')
-    event.create('moreminecarts:chiseled_organic_glass_pane')
-    event.create('moreminecarts:chiseled_organic_glass')
     event.create('moreminecarts:organic_glass_pane')
     event.create('moreminecarts:organic_glass')
     // event.create('society:blackstone_boulder')

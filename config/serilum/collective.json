@@ -1,0 +1,51 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Collective -> Config",
+	"disabledSerilumMods": {
+		"//": "The Serilum mods that are turned off, picked from the ones installed. A mod's own 'Enable' setting follows this list, and the other way round. Takes effect after a restart.",
+		"value": ""
+	},
+	"enableUpdateChecker": {
+		"//": "Whether Collective should show a message in the console if a dependent mod has an update available. Update checks are optional and async.",
+		"value": true
+	},
+	"transferItemsBetweenReplacedEntities": {
+		"//": "When enabled, transfer the held items and armour from replaced entities by any of the Entity Spawn mods which depend on Collective.",
+		"value": true
+	},
+	"findABlockCheckAroundEntitiesDelayMs": {
+		"//": "The delay of the is-there-a-block-around-check around entities in ms. Used in mods which depends on a specific blockstate in the world. Increasing this number can increase TPS if needed. min: 0, max: 3,600,000",
+		"value": 30000
+	},
+	"enablePatronPets": {
+		"//": "Enables pets for Patrons. Will be added in a future release.",
+		"value": true
+	},
+	"downloadNonEnglishTranslations": {
+		"//": "Whether Collective should attempt to download translations if the client language is set to something other than English. Uses files from https://github.com/Serilum/.translations, downloaded via https://translations.serilum.com/. Hosted via CloudFlare Pages.",
+		"value": true
+	},
+	"pushTranslationResourcePack": {
+		"//": "On a server, sends connecting players without Collective a resource pack so custom item names from server-side Serilum mods show up in their own language. Off by default; without it they see the server language instead (see serverLanguage).",
+		"value": false
+	},
+	"requireTranslationResourcePack": {
+		"//": "Marks the resource pack as required, so an accidental decline only kicks the player and asks again next join instead of being remembered for good. Turn off to make it optional.",
+		"value": true
+	},
+	"serverLanguage": {
+		"//": "The language Serilum mod text shows in for players without Collective who aren't sent the resource pack. Uses locale codes like en_us or de_de.",
+		"value": "en_us"
+	},
+	"itemNameTranslationMode": {
+		"//": "How custom item names show for players without Collective when the resource pack is off. 'auto' copies the first player to join and remembers it; 'server' always uses the server language; 'client' uses each player's own language, but those without Collective then see raw keys. options: auto, server, client",
+		"value": "auto"
+	},
+	"configScreenGuiScale": {
+		"//": "The GUI scale of the config screens of Serilum's mods, also set with the button next to the ? on those screens. 0 uses the game's own GUI scale. min: 0, max: 10",
+		"value": 0
+	},
+	"updateMinecraftWindowTitleInDevMode": {
+		"//": "Used in my local development flow. Has no effect in production, only when ran from an IDE with Collective installed.",
+		"value": false
+	}
+}

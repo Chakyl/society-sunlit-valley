@@ -20,9 +20,13 @@
 	# Range: 0.0 ~ 1.0
 	tarnishChance = 0.5
 	#The number of blocks around an undead mob to check every times a mob dies
-	# Default: 40
+	# Default: 20
 	# Range: 1 ~ 100
 	tarnishChecksPerMob = 40
+	#The maximum number of blocks to be tarnished per death/spawn event
+	# Default: 10
+	# Range: 1 ~ 100
+	maximumTarnishesPerMob = 10
 
 [lead]
 	#Should lead poisoning events give just Poison instead of Brain Damage?

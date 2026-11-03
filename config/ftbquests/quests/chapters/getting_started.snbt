@@ -424,8 +424,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "3C3B7B201B44B8AD"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				id: "6D34DCA139A38534"
+				item: { components: { "ftbfiltersystem:filter": "or(item(society:crystal_of_regret_farming)item(society:crystal_of_regret_husbandry)item(society:crystal_of_regret_mining)item(society:crystal_of_regret_fishing)item(society:crystal_of_regret_adventuring))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 4.5d

@@ -1,6 +1,6 @@
 {
-  "enableVillagerTrades": true,
-  "enableLootTableModifiers": true,
+  "enableVillagerTrades": false,
+  "enableLootTableModifiers": false,
   "enableFlattenableBlocks": true,
   "enableCompostables": true,
   "normalAppleLayTimeMin": 6000,
@@ -32,6 +32,7 @@
   "dreamCatcherStrengthDuration": 1800,
   "dreamCatcherStrengthAmplifier": 0,
   "dreamCatcherDrowsyDuration": 10,
+  "eggpleHatchChance": 1,
   "eggpleFourHatchChance": 160,
   "coppertapDripChance": 5,
   "coppertapFillCauldronChance": 7,

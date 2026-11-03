@@ -1,0 +1,11 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> What Durability? -> Config",
+	"Enable What Durability?": {
+		"//": "Whether What Durability? is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
+		"value": true
+	},
+	"itemsWithDurability": {
+		"//": "Items that keep their durability, separated by a comma. Item tags work too, starting with a '#'. For example: 'minecraft:elytra,#minecraft:trimmable_armor'. When the mod is installed on a server, the list of the server is used.",
+		"value": ""
+	}
+}

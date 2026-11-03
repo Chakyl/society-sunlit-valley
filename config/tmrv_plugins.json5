@@ -1,0 +1,32 @@
+{
+	// If `false`, the `ASYNC` dispatch strategy will be replaced by `SYNC_EMI` by default (this excludes overrides)
+	"allowDefaultAsync": null,
+	// If `true`, duplicate plugins will be disabled instead of partially loaded by default (this excludes overrides)
+	"defaultDisableDuplicatePlugins": false,
+	// Overrides plugin type by ID.
+	// OPTIONS: `NORMAL`, `DISABLED`, `FORCE_PARTIAL_LOAD` (technically others exist, but please don't use them unless you specifically want things to break)
+	"typeOverrides": {
+	
+	},
+	// Default dispatch strategy overrides.
+	// NOTES:
+	// - Setting `ASYNC` here overrides `allowDefaultAsync`.
+	// - Using `SYNC_MAIN` (runs on the main thread) is basically always a hack that replaces one problem with another. If a JEI plugin only loads by doing this, report it to the mod author as a bug.
+	// OPTIONS: `ASYNC`, `SYNC_EMI`, `SYNC_MAIN`, `SKIP`
+	"defaultPhaseOverrides": {
+	
+	},
+	// Dispatch strategy overrides per-plugin. These will override `defaultPhaseOverrides`. See `NOTES` and `OPTIONS` from `defaultPhaseOverrides` for more information.
+	// EXAMPLE: ```json
+	// "pluginPhaseOverrides": {
+	// 	"apothic_enchanting:enchantment": {
+	// 		"registerRecipes": "SYNC_MAIN"
+	// 	}
+	// }
+	// ```
+	"pluginPhaseOverrides": {
+	
+	},
+	// NOTE: Support will not be provided for errors caused by using this setting
+	"blockedEMIPluginModIDs": [  ]
+}

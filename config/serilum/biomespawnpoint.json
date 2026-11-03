@@ -1,0 +1,19 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Biome Spawn Point -> Config",
+	"Enable Biome Spawn Point": {
+		"//": "Whether Biome Spawn Point is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
+		"value": true
+	},
+	"biomeSearchRadius": {
+		"//": "How far from the center of the world (x=0, z=0), in blocks, the mod searches for one of the spawn biomes. A larger radius finds rarer biomes, but makes creating a new world take longer. min: 256, max: 30,000",
+		"value": 6400
+	},
+	"minimumDistanceFromBiomeEdge": {
+		"//": "How far inside the biome, in blocks, the spawn point should be, so players don't spawn just outside of it. When no spot that far inside the biome is found, a spot closer to the edge is used. min: 0, max: 128",
+		"value": 16
+	},
+	"preferSpawningOnLand": {
+		"//": "Whether the spawn point should be on land when the chosen biome also exists under water, like beaches that continue into the sea. A spot in water is only used when the biome has no land nearby.",
+		"value": true
+	}
+}

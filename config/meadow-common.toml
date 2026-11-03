@@ -1,3 +1,311 @@
-	[Blocks.Banner]
-		giveEffect = true
-		showTooltip = true
+#Cheese making, fondue and the cooking pot.
+[Cheese]
+	#How long the Cheese Press needs to turn milk into cheese, in ticks. 20 ticks = 1 second.
+	# Default: 2400
+	# Range: 200 ~ 24000
+	cheesePressDuration = 2400
+	#How long a whole cheese wheel takes to melt in the Fondue Pot, in ticks. 20 ticks = 1 second.
+	# Default: 100
+	# Range: 10 ~ 1200
+	fondueWheelMeltDuration = 100
+	#How long a cheese slice takes to melt in the Fondue Pot, in ticks. 20 ticks = 1 second.
+	# Default: 40
+	# Range: 10 ~ 600
+	fonduePieceMeltDuration = 40
+	#How much of the cooking time in percent you save each time you skim the foam off the Cooking Pot.
+	# Default: 15
+	# Range: 0 ~ 100
+	cookingPotSkimBonus = 15
+	#Chance in percent per random tick that cows nearby add milk to the Milk Can.
+	# Default: 2
+	# Range: 0 ~ 100
+	milkCanFillChance = 2
+	#Radius in blocks around the Milk Can in which cows add milk.
+	# Default: 3
+	# Range: 1 ~ 16
+	milkCanCowRange = 3
+
+#Wooly cows, water buffalos and where they spawn.
+[Animals]
+	#Most wool a Wooly Cow drops when sheared. It always drops at least one.
+	# Default: 3
+	# Range: 1 ~ 10
+	woolyCowMaxWool = 3
+	#Warped Wooly Cows sometimes step out of Nether Portals in the Nether.
+	enableWarpedCowPortalSpawn = true
+	#One in how many random ticks of a Nether Portal block a Warped Wooly Cow appears.
+	# Default: 200
+	# Range: 1 ~ 10000
+	warpedCowPortalSpawnRarity = 200
+	#How often Wooly Cows spawn compared to other animals. 0 = never. Changes need a game restart.
+	# Default: 14
+	# Range: 0 ~ 100
+	woolyCowSpawnWeight = 14
+	#Smallest group of Wooly Cows that spawns together. Changes need a game restart.
+	# Default: 3
+	# Range: 1 ~ 16
+	woolyCowMinGroupSize = 3
+	#Largest group of Wooly Cows that spawns together. Changes need a game restart.
+	# Default: 6
+	# Range: 1 ~ 16
+	woolyCowMaxGroupSize = 6
+	#How often Warped Wooly Cows spawn on Warped Nylium in the Warped Forest compared to other animals. 0 = never. Changes need a game restart.
+	# Default: 60
+	# Range: 0 ~ 100
+	warpedCowSpawnWeight = 60
+	#Smallest group of Warped Wooly Cows that spawns together. Changes need a game restart.
+	# Default: 2
+	# Range: 1 ~ 16
+	warpedCowMinGroupSize = 2
+	#Largest group of Warped Wooly Cows that spawns together. Changes need a game restart.
+	# Default: 4
+	# Range: 1 ~ 16
+	warpedCowMaxGroupSize = 4
+	#How often Water Buffalos spawn compared to other animals. 0 = never. Changes need a game restart.
+	# Default: 8
+	# Range: 0 ~ 100
+	waterBuffaloSpawnWeight = 8
+	#Smallest group of Water Buffalos that spawns together. Changes need a game restart.
+	# Default: 2
+	# Range: 1 ~ 16
+	waterBuffaloMinGroupSize = 2
+	#Largest group of Water Buffalos that spawns together. Changes need a game restart.
+	# Default: 3
+	# Range: 1 ~ 16
+	waterBuffaloMaxGroupSize = 3
+
+#How rain and snow fill the Wooden Cauldron.
+[Weather]
+	#Chance in percent that rain adds water to the Wooden Cauldron each time the game checks it.
+	# Default: 5
+	# Range: 0 ~ 100
+	woodenCauldronRainFillChance = 5
+	#Chance in percent that snow adds powder snow to the Wooden Cauldron each time the game checks it.
+	# Default: 10
+	# Range: 0 ~ 100
+	woodenCauldronSnowFillChance = 10
+
+#Everything about the Camera.
+[Camera]
+	#The flash dazzles monsters in front of the lens, so they stop, lose their target and glow for a moment.
+	enableCameraFlash = true
+	#Distance in blocks in front of the lens that the flash reaches.
+	# Default: 8
+	# Range: 1 ~ 32
+	cameraFlashRange = 8
+	#How long monsters stay dazzled, in ticks. 20 ticks = 1 second.
+	# Default: 100
+	# Range: 20 ~ 600
+	cameraFlashDuration = 100
+	#How long the self-timer counts down before the camera takes the shot, in ticks. 20 ticks = 1 second.
+	# Default: 60
+	# Range: 20 ~ 200
+	cameraTimerDuration = 60
+	#How many sheets of paper fit into the Camera.
+	# Default: 16
+	# Range: 1 ~ 64
+	cameraMaxPaper = 16
+	#How long the Camera waits after a photo before it can take the next one, in ticks. 20 ticks = 1 second.
+	# Default: 20
+	# Range: 1 ~ 200
+	cameraCooldown = 20
+
+#Felting Needle and Climbing Rope.
+[Tools]
+	#How long you have to use the Felting Needle to finish, in ticks. 20 ticks = 1 second.
+	# Default: 120
+	# Range: 20 ~ 600
+	feltingNeedleUseDuration = 120
+	#How many blocks a Climbing Rope reaches down when you place it.
+	# Default: 12
+	# Range: 1 ~ 64
+	climbingRopeMaxLength = 12
+
+#The bonus of the fur armor set.
+[Armor]
+	#Wearing the full fur armor set gives extra knockback resistance.
+	enableFurSetBonus = true
+	#Knockback resistance in percent from the full fur armor set.
+	# Default: 20
+	# Range: 0 ~ 100
+	furSetKnockbackResistance = 20
+
+#Changes to the landscape of the Meadow biome.
+[World]
+	#Steep slopes in the Meadow turn into limestone cliffs. Only affects newly generated chunks.
+	enableLimestoneCliffs = true
+
+#Info tooltips that appear when looking at a block. Only affects your own screen.
+["Info Tooltips"]
+	#Shows what is in the Fondue Pot and what you can do with it.
+	showFonduePotInfo = true
+	#Shows which cheese wheels are stored on the Cheese Rack.
+	showCheeseRackInfo = true
+	#Shows what is cooking in the Cooking Pot and what you can do with it.
+	showCookingPotInfo = true
+	#Shows how much milk is in the Milk Can and how to fill or empty it.
+	showMilkCanInfo = true
+	#Shows what is in the Cheese Press, how far the cheese is pressed and what you can do with it.
+	showCheesePressInfo = true
+	#Shows how much paper is in the Camera and how to take a photo.
+	showCameraInfo = true
+
+#Fine-tuning of the effects.
+[Effects]
+
+	#The Haste the Completionist Banner grants.
+	[Effects."Completionist Banner Effect"]
+		#The Completionist Banner grants Haste to players nearby.
+		bannerGiveEffect = true
+		#Radius in blocks in which the Completionist Banner grants Haste.
+		# Default: 8
+		# Range: 1 ~ 32
+		bannerEffectRadius = 8
+		#Haste level of the Completionist Banner. 0 = Haste I.
+		# Default: 1
+		# Range: 0 ~ 4
+		bannerEffectAmplifier = 1
+
+#Block animations.
+[Misc]
+	#Blocks of this mod are animated.
+	animations = true
+
+#Hunger, saturation and effect duration in ticks of the food items. Changes need a game restart.
+[Food]
+	#Hunger points restored by Cheesecake Slice. 2 points = 1 drumstick.
+	# Default: 7
+	# Range: 0 ~ 20
+	cheesecakeSliceNutrition = 7
+	#Saturation given by Cheesecake Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	cheesecakeSliceSaturation = 0.8
+	#Hunger points restored by Cheese Tart Slice. 2 points = 1 drumstick.
+	# Default: 7
+	# Range: 0 ~ 20
+	cheeseTartSliceNutrition = 7
+	#Saturation given by Cheese Tart Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	cheeseTartSliceSaturation = 0.8
+	#Hunger points restored by Cheese Slice. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	cheeseSliceNutrition = 6
+	#Saturation given by Cheese Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	cheeseSliceSaturation = 0.8
+	#Hunger points restored by Sheep Cheese Slice. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	sheepCheeseSliceNutrition = 6
+	#Saturation given by Sheep Cheese Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	sheepCheeseSliceSaturation = 0.8
+	#Hunger points restored by Grain Cheese Slice. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	grainCheeseSliceNutrition = 6
+	#Saturation given by Grain Cheese Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	grainCheeseSliceSaturation = 0.8
+	#Hunger points restored by Amethyst Cheese Slice. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	amethystCheeseSliceNutrition = 6
+	#Saturation given by Amethyst Cheese Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	amethystCheeseSliceSaturation = 0.8
+	#Hunger points restored by Buffalo Cheese Slice. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	buffaloCheeseSliceNutrition = 6
+	#Saturation given by Buffalo Cheese Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	buffaloCheeseSliceSaturation = 0.8
+	#Hunger points restored by Goat Cheese Slice. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	goatCheeseSliceNutrition = 6
+	#Saturation given by Goat Cheese Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	goatCheeseSliceSaturation = 0.8
+	#Hunger points restored by Warped Cheese Slice. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	warpedCheeseSliceNutrition = 6
+	#Saturation given by Warped Cheese Slice, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	warpedCheeseSliceSaturation = 0.8
+	#How long the effect of Warped Cheese Slice lasts in ticks. 20 ticks = 1 second.
+	# Default: 300
+	# Range: 0 ~ 72000
+	warpedCheeseSliceEffectDuration = 300
+	#Hunger points restored by Cheese Sandwich. 2 points = 1 drumstick.
+	# Default: 7
+	# Range: 0 ~ 20
+	cheeseSandwichNutrition = 7
+	#Saturation given by Cheese Sandwich, multiplied with its hunger points.
+	# Default: 0.7
+	# Range: 0.0 ~ 2.0
+	cheeseSandwichSaturation = 0.7
+	#Hunger points restored by Cheese Roll. 2 points = 1 drumstick.
+	# Default: 7
+	# Range: 0 ~ 20
+	cheeseRollNutrition = 7
+	#Saturation given by Cheese Roll, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	cheeseRollSaturation = 0.8
+	#Hunger points restored by Cheese Stick. 2 points = 1 drumstick.
+	# Default: 6
+	# Range: 0 ~ 20
+	cheeseStickNutrition = 6
+	#Saturation given by Cheese Stick, multiplied with its hunger points.
+	# Default: 0.6
+	# Range: 0.0 ~ 2.0
+	cheeseStickSaturation = 0.6
+	#Hunger points restored by Raw Buffalo Meat. 2 points = 1 drumstick.
+	# Default: 2
+	# Range: 0 ~ 20
+	rawBuffaloMeatNutrition = 2
+	#Saturation given by Raw Buffalo Meat, multiplied with its hunger points.
+	# Default: 0.3
+	# Range: 0.0 ~ 2.0
+	rawBuffaloMeatSaturation = 0.3
+	#Hunger points restored by Cooked Buffalo Meat. 2 points = 1 drumstick.
+	# Default: 8
+	# Range: 0 ~ 20
+	cookedBuffaloMeatNutrition = 8
+	#Saturation given by Cooked Buffalo Meat, multiplied with its hunger points.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	cookedBuffaloMeatSaturation = 0.8
+	#Hunger points restored by Roasted Buffalo Ham. 2 points = 1 drumstick.
+	# Default: 8
+	# Range: 0 ~ 20
+	roastedBuffaloHamNutrition = 8
+	#Saturation given by Roasted Buffalo Ham, multiplied with its hunger points.
+	# Default: 0.9
+	# Range: 0.0 ~ 2.0
+	roastedBuffaloHamSaturation = 0.9
+	#How long the effect of Roasted Buffalo Ham lasts in ticks. 20 ticks = 1 second.
+	# Default: 600
+	# Range: 0 ~ 72000
+	roastedBuffaloHamEffectDuration = 600
+	#Hunger points restored by Buffalo Sausage with Cheese. 2 points = 1 drumstick.
+	# Default: 8
+	# Range: 0 ~ 20
+	sausageWithCheeseNutrition = 8
+	#Saturation given by Buffalo Sausage with Cheese, multiplied with its hunger points.
+	# Default: 0.9
+	# Range: 0.0 ~ 2.0
+	sausageWithCheeseSaturation = 0.9

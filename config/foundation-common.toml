@@ -1,0 +1,12 @@
+#Item tooltips and notices. Only affects your own screen.
+["Info Tooltips"]
+	#Items with a rarity get a framed tooltip with their icon next to the name.
+	enableImprovedTooltips = true
+	#Item names are colored by their rarity, in tooltips and above the hotbar.
+	enableRarityColors = true
+	#Shows extra tooltip lines like Can be placed and the details while holding Shift.
+	showItemInfo = true
+	#Shows which pieces of an armor set you are wearing and its set bonus.
+	showArmorSetInfo = true
+	#Shows a short confirmation next to a block after you use it.
+	showBlockNotices = true

@@ -1,0 +1,67 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> GUI Clock -> Config",
+	"Enable GUI Clock": {
+		"//": "Whether GUI Clock is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
+		"value": true
+	},
+	"mustHaveClockInInventoryForGameTime": {
+		"//": "When enabled, will only show the game time when a clock is present in the inventory.",
+		"value": false
+	},
+	"mustHaveClockInInventoryForRealTime": {
+		"//": "When enabled, will only show the real time when a clock is present in the inventory.",
+		"value": false
+	},
+	"lowerClockWhenPlayerHasEffects": {
+		"//": "Whether the clock in the GUI should be lowered when the player has potion effects to prevent overlap.",
+		"value": false
+	},
+	"_24hourformat": {
+		"//": "Sets the format of the clock to the 24-hour format.",
+		"value": false
+	},
+	"showOnlyMinecraftClockIcon": {
+		"//": "When enabled, shows the clock item icon instead of a clock with numbers.",
+		"value": false
+	},
+	"showBothTimes": {
+		"//": "Show both in-game time and real local time.",
+		"value": false
+	},
+	"showRealTime": {
+		"//": "Show actual local time instead of in-game time.",
+		"value": false
+	},
+	"showRealTimeSeconds": {
+		"//": "Show the seconds in the clock.",
+		"value": false
+	},
+	"showDaysPlayedWorld": {
+		"//": "Show the days played in the world.",
+		"value": false
+	},
+	"minuteStep": {
+		"//": "Rounds the in-game minutes down to a multiple of this value. For example, 15 shows 6:00, 6:15, 6:30 and 6:45. 1 shows every minute. min: 1, max: 60",
+		"value": 1
+	},
+	"clockPosition": {
+		"//": "Where the clock is shown at the top of the screen. options: Left, Center, Right",
+		"value": "Left"
+	},
+	"clockHeightOffset": {
+		"//": "The vertical offset (y coord) for the Clock. This determines how far down the time should be on the screen. Can be changed to prevent GUIs from overlapping. min: 0, max: 3,000",
+		"value": 18
+	},
+	"clockWidthOffset": {
+		"//": "The horizontal offset (x coord) for the Clock. min: -3,000, max: 3,000",
+		"value": 14
+	},
+	"drawTextShadow": {
+		"//": "If the text displayed should have a shadow drawn below it.",
+		"value": true
+	},
+	"RGB": {
+		"//": "The colour of the clock text, as red, green and blue values from 0 to 255.",
+		"value": "255,170,0"
+	}
+}

@@ -1,7 +1,7 @@
 ["Biome Provider"]
 	#If Terrablender and Biolith are installed at the same time, Terrablender is used by default. Set this to false to use Biolith.
 	#If only one is installed, Darker Depths will use whichever is available.
-	prioritize_terrablender = true
+	prioritize_terrablender = false
 
 	["Biome Parameters".Terrablender]
 		#Darker Depths Terrablender region weight
@@ -19,19 +19,19 @@
 		temperature_min = 0.5
 		# Default: 0.9
 		# Range: -2.0 ~ 2.0
-		temperature_max = 0.9
+		temperature_max = 0.5
 		# Default: -0.8
 		# Range: -2.0 ~ 2.0
-		humidity_min = -0.8
+		humidity_min = -0.5
 		# Default: -0.1
 		# Range: -2.0 ~ 2.0
-		humidity_max = -0.1
+		humidity_max = -0.5
 		# Default: 0.2
 		# Range: -2.0 ~ 2.0
-		continentalness_min = 0.2
+		continentalness_min = 0.25
 		# Default: 0.3
 		# Range: -2.0 ~ 2.0
-		continentalness_max = 0.3
+		continentalness_max = 0.25
 		# Default: -0.2
 		# Range: -2.0 ~ 2.0
 		erosion_min = -0.2
@@ -40,16 +40,16 @@
 		erosion_max = 0.7
 		# Default: 0.3
 		# Range: -2.0 ~ 2.0
-		depth_min = 0.3
+		depth_min = 0.9
 		# Default: 1.5
 		# Range: -2.0 ~ 2.0
-		depth_max = 1.5
+		depth_max = 0.9
 		# Default: -1.0
 		# Range: -2.0 ~ 2.0
-		weirdness_min = -1.0
+		weirdness_min = 0.0
 		# Default: 1.0
 		# Range: -2.0 ~ 2.0
-		weirdness_max = 1.0
+		weirdness_max = 0.0
 		# Default: 0.0
 		# Range: -2.0 ~ 2.0
 		offset = 0.0
@@ -58,40 +58,40 @@
 	["Biome Parameters".glowshroom_forest]
 		# Default: 0.4
 		# Range: -2.0 ~ 2.0
-		temperature_min = 0.4
+		temperature_min = 0.5
 		# Default: 1.0
 		# Range: -2.0 ~ 2.0
-		temperature_max = 1.0
+		temperature_max = 0.5
 		# Default: 0.6
 		# Range: -2.0 ~ 2.0
-		humidity_min = 0.6
+		humidity_min = -0.5
 		# Default: 1.2
 		# Range: -2.0 ~ 2.0
-		humidity_max = 1.2
+		humidity_max = -0.5
 		# Default: -0.5
 		# Range: -2.0 ~ 2.0
-		continentalness_min = -0.5
+		continentalness_min = 0.25
 		# Default: 0.5
 		# Range: -2.0 ~ 2.0
-		continentalness_max = 0.5
+		continentalness_max = 0.25
 		# Default: 0.1
 		# Range: -2.0 ~ 2.0
-		erosion_min = 0.1
+		erosion_min = -0.2
 		# Default: 0.5
 		# Range: -2.0 ~ 2.0
-		erosion_max = 0.5
+		erosion_max = 0.7
 		# Default: 0.3
 		# Range: -2.0 ~ 2.0
-		depth_min = 0.3
+		depth_min = 0.9
 		# Default: 0.9
 		# Range: -2.0 ~ 2.0
 		depth_max = 0.9
 		# Default: -1.0
 		# Range: -2.0 ~ 2.0
-		weirdness_min = -1.0
+		weirdness_min = 0.0
 		# Default: 1.0
 		# Range: -2.0 ~ 2.0
-		weirdness_max = 1.0
+		weirdness_max = 0.0
 		# Default: 0.0
 		# Range: -2.0 ~ 2.0
 		offset = 0.0
@@ -100,40 +100,40 @@
 	["Biome Parameters".molten_cavern]
 		# Default: -1.0
 		# Range: -2.0 ~ 2.0
-		temperature_min = -1.0
+		temperature_min = 0.5
 		# Default: 0.7
 		# Range: -2.0 ~ 2.0
-		temperature_max = 0.7
+		temperature_max = 0.5
 		# Default: -0.3
 		# Range: -2.0 ~ 2.0
-		humidity_min = -0.3
+		humidity_min = -0.5
 		# Default: 1.0
 		# Range: -2.0 ~ 2.0
-		humidity_max = 1.0
+		humidity_max = -0.5
 		# Default: 0.55
 		# Range: -2.0 ~ 2.0
-		continentalness_min = 0.55
+		continentalness_min = 0.25
 		# Default: 0.7
 		# Range: -2.0 ~ 2.0
-		continentalness_max = 0.7
+		continentalness_max = 0.25
 		# Default: -0.4
 		# Range: -2.0 ~ 2.0
-		erosion_min = -0.4
+		erosion_min = -0.2
 		# Default: 0.4
 		# Range: -2.0 ~ 2.0
-		erosion_max = 0.4
+		erosion_max = 0.7
 		# Default: 0.7
 		# Range: -2.0 ~ 2.0
-		depth_min = 0.7
+		depth_min = 0.9
 		# Default: 2.0
 		# Range: -2.0 ~ 2.0
-		depth_max = 2.0
+		depth_max = 0.9
 		# Default: -1.0
 		# Range: -2.0 ~ 2.0
-		weirdness_min = -1.0
+		weirdness_min = 0.0
 		# Default: 1.0
 		# Range: -2.0 ~ 2.0
-		weirdness_max = 1.0
+		weirdness_max = 0.0
 		# Default: 0.0
 		# Range: -2.0 ~ 2.0
 		offset = 0.0

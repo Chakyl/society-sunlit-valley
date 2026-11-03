@@ -399,8 +399,8 @@
 //   });
 //   tooltip.add(
 //     [
-//       "moreminecarts:chiseled_organic_glass",
-//       "moreminecarts:chiseled_organic_glass_pane",
+//       "sunrisegardening:greenhouse_glass",
+//       "sunrisegardening:greenhouse_glass_pane",
 //       "moreminecarts:greenhouse_glass_stairs",
 //       "moreminecarts:greenhouse_glass_slab",
 //     ],
@@ -408,8 +408,8 @@
 //   );
 //   tooltip.add(
 //     [
-//       "moreminecarts:chiseled_organic_glass",
-//       "moreminecarts:chiseled_organic_glass_pane",
+//       "sunrisegardening:greenhouse_glass",
+//       "sunrisegardening:greenhouse_glass_pane",
 //       "moreminecarts:greenhouse_glass_stairs",
 //       "moreminecarts:greenhouse_glass_slab",
 //     ],
