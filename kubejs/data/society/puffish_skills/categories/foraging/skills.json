@@ -1,0 +1,110 @@
+{
+	"foraging_1": {
+		"definition": "foraging_lvl_1",
+		"x": -256,
+		"y": 0,
+		"root": true
+	},
+	"foraging_2": {
+		"definition": "foraging_lvl_2",
+		"x": -192,
+		"y": 0,
+		"root": false
+	},
+	"foraging_3": {
+		"definition": "foraging_lvl_3",
+		"x": -128,
+		"y": 0,
+		"root": false
+	},
+	"foraging_4": {
+		"definition": "foraging_lvl_4",
+		"x": -64,
+		"y": 0,
+		"root": false
+	},
+	"gatherer": {
+		"definition": "gatherer",
+		"x": 0,
+		"y": -64,
+		"root": false
+	},
+	"forester": {
+		"definition": "forester",
+		"x": 0,
+		"y": 64,
+		"root": false
+	},
+	"foraging_lvl_6_bottom": {
+		"definition": "foraging_lvl_6",
+		"x": 64,
+		"y": 64,
+		"root": false
+	},
+	"dendrologist": {
+		"definition": "dendrologist",
+		"x": 128,
+		"y": 64,
+		"root": false
+	},
+	"foraging_lvl_8_bottom": {
+		"definition": "foraging_lvl_8",
+		"x": 192,
+		"y": 64,
+		"root": false
+	},
+	"foraging_lvl_9_bottom": {
+		"definition": "foraging_lvl_9",
+		"x": 256,
+		"y": 64,
+		"root": false
+	},
+	"lumberjack": {
+		"definition": "lumberjack",
+		"x": 320,
+		"y": 96,
+		"root": false
+	},
+	"tapper": {
+		"definition": "tapper",
+		"x": 320,
+		"y": 32,
+		"root": false
+	},
+	"mycologist": {
+		"definition": "mycologist",
+		"x": 128,
+		"y": -64,
+		"root": false
+	},
+	"foraging_lvl_8_top": {
+		"definition": "foraging_lvl_8",
+		"x": 192,
+		"y": -64,
+		"root": false
+	},
+	"foraging_lvl_9_top": {
+		"definition": "foraging_lvl_9",
+		"x": 256,
+		"y": -64,
+		"root": false
+	},
+	"foraging_lvl_6_top": {
+		"definition": "foraging_lvl_6",
+		"x": 64,
+		"y": -64,
+		"root": false
+	},
+	"botanist": {
+		"definition": "botanist",
+		"x": 320,
+		"y": -96,
+		"root": false
+	},
+	"crafty": {
+		"definition": "crafty",
+		"x": 320,
+		"y": -32,
+		"root": false
+	}
+}

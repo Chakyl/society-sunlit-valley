@@ -47,5 +47,10 @@ no_trample = true
 sturdy_farmland = true
 #Allows shovels to turn farmland to dirt when right clicking
 shovel_reverting = true
+#
+#  ~~~ [ Crop Growth ] ~~~
+#
 #Crops will not factor in greenhouse glass if farmland (#dewdrop:waterable) is between them and the glass
 strict_greenhouses = true
+#Crops need sky access to grow. If greenhouse glass is used, the glass needs sky access. Transparent blocks do not block sky access
+needs_sun = true
