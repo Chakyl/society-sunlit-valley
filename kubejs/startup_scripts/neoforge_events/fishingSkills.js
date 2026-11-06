@@ -9,9 +9,7 @@ global.handleFish = (e) => {
     });
     global.giveExperience(player.server, player, "fishing", experience);
 }
-NativeEvents.onEvent(
-    "net.neoforged.neoforge.event.entity.player.ItemFishedEvent",
-    (e) => {
+NativeEvents.onEvent("net.neoforged.neoforge.event.entity.player.ItemFishedEvent", (e) => {
         global.handleFish(e);
     }
 );

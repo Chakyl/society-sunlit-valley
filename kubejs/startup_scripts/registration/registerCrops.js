@@ -42,7 +42,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/seedsancient_seed");
+      seedItem.texture("society:item/seeds/ancient_seed");
     });
 
   e.create("society:tubabacco_leaf", "crop")
@@ -65,7 +65,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/seedstubabacco_seed");
+      seedItem.texture("society:item/seeds/tubabacco_seed");
     })
 
   e.create("society:hops", "crop")
@@ -86,7 +86,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/seedshops_seeds");
+      seedItem.texture("society:item/seeds/hops_seeds");
     });
 
   e.create("society:blueberry", "crop")
@@ -115,7 +115,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/seedsblueberry_seeds");
+      seedItem.texture("society:item/seeds/blueberry_seeds");
     });
     
   e.create("society:cranberry", "crop")
@@ -137,7 +137,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/seedscranberry_seeds");
+      seedItem.texture("society:item/seeds/cranberry_seeds");
     })
   // e.create("society:eggplant", "crop")
   //   .age(6, (builder) => {
@@ -157,7 +157,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/seedseggplant_seeds");
+  //     seedItem.texture("society:item/seeds/eggplant_seeds");
   //   }).blockstateJson = {
   //   multipart: [
   //     {
@@ -210,7 +210,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/seedscarrot_seeds");
+  //     seedItem.texture("society:item/seeds/carrot_seeds");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -259,7 +259,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/seedspotato_seed");
+  //     seedItem.texture("society:item/seeds/potato_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -305,7 +305,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/seedsonion_seed");
+  //     seedItem.texture("society:item/seeds/onion_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": [
@@ -366,7 +366,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/seedssweet_potato_seed");
+  //     seedItem.texture("society:item/seeds/sweet_potato_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -409,7 +409,7 @@ StartupEvents.registry("block", (e) => {
   //   .tagBlock("minecraft:crops")
   //   .randomTick((tick) => { })
   //   .item((seedItem) => {
-  //     seedItem.texture("society:item/seedspeanut_seed");
+  //     seedItem.texture("society:item/seeds/peanut_seed");
   //   }).blockstateJson = {
   //   variants: {
   //     "age=0": {
@@ -515,6 +515,6 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:crops")
     .randomTick((tick) => { })
     .item((seedItem) => {
-      seedItem.texture("society:item/seedssparkpod_spores");
+      seedItem.texture("society:item/seeds/sparkpod_spores");
     })
 });

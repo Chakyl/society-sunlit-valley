@@ -82,7 +82,7 @@ const artifactTooltips = [
 
 generateColorWrappedTooltip(artifactTooltips, "AA00AA", ARTIFACT)
 const bookTooltips = [
-    { item: "society:alias_moss", tooltips: ["Mossberries can be found in any season."] },
+    { item: "society:alias_moss", tooltips: ["Mossberries can be found in winter and twice as often in other seasons."] },
     { item: "society:animal_fancy", tooltips: ["Increases affection gained from petting farm animals."] },
     { item: "society:banana_karenina", tooltips: ["Doubles Banana Tree output."] },
     { item: "society:brine_and_punishment", tooltips: ["Pickled items are worth 100%% more."] },

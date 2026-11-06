@@ -1,6 +1,5 @@
 StartupEvents.registry("block", (e) => {
-    e
-        .create("society:treated_log")
+    e.create("society:treated_log")
         .soundType("wood")
         .property(BlockProperties.AXIS)
         .placementState((e) => e.set(BlockProperties.AXIS, e.clickedFace.axis))
@@ -8,6 +7,19 @@ StartupEvents.registry("block", (e) => {
         .resistance(1.0)
         .requiresTool(false)
         .tagBlock("minecraft:mineable/axe");
+
+    e.create("society:hardwood_log", "cardinal")
+        .box(0, 0, 0, 16, 13, 16)
+        .defaultCutout()
+        .soundType("wood")
+        .hardness(6.5)
+        .resistance(12.0)
+        .requiresTool(false)
+        .tagBlock("minecraft:incorrect_for_wooden_tool")
+        .tagBlock("minecraft:incorrect_for_stone_tool")
+        .tagBlock("minecraft:needs_iron_tool")
+        .tagBlock("minecraft:mineable/axe");
+        
     // Ores
     e.create("society:earth_crystal")
         .box(2, 0, 2, 14, 8, 14)
@@ -18,7 +30,6 @@ StartupEvents.registry("block", (e) => {
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
         .tagBlock("minecraft:needs_stone_tool")
-        .parentModel("society:block/kubejs/earth_crystal")
         .lightLevel(0.5);
 
     e.create("society:fire_quartz")
@@ -30,8 +41,7 @@ StartupEvents.registry("block", (e) => {
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool")
-        .lightLevel(0.8)
-        .parentModel("society:block/kubejs/fire_quartz");
+        .lightLevel(0.8);
 
     e.create("society:geode_node")
         .box(4, 0, 4, 12, 9, 12)
@@ -41,8 +51,7 @@ StartupEvents.registry("block", (e) => {
         .resistance(9.0)
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
-        .tagBlock("minecraft:needs_stone_tool")
-        .parentModel("society:block/kubejs/geode_node");
+        .tagBlock("minecraft:needs_stone_tool");
 
     e.create("society:magma_geode_node")
         .box(4, 0, 4, 12, 9, 12)
@@ -53,7 +62,6 @@ StartupEvents.registry("block", (e) => {
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool")
-        .parentModel("society:block/kubejs/magma_geode_node");
 
     e.create("society:omni_geode_node")
         .box(4, 0, 4, 12, 9, 12)
@@ -63,8 +71,7 @@ StartupEvents.registry("block", (e) => {
         .resistance(9.0)
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
-        .tagBlock("minecraft:needs_diamond_tool")
-        .parentModel("society:block/kubejs/omni_geode_node");
+        .tagBlock("minecraft:needs_diamond_tool");
 
     // Skull Cavern
     e.create("society:skull_cavern_teleporter")
@@ -127,8 +134,7 @@ StartupEvents.registry("block", (e) => {
         .resistance(1.0)
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
-        .tagBlock("minecraft:needs_diamond_tool")
-        .parentModel("society:block/kubejs/iridium_ore");
+        .tagBlock("minecraft:needs_diamond_tool");
 
     e.create("society:deepslate_iridium_ore")
         .soundType("stone")
@@ -136,8 +142,7 @@ StartupEvents.registry("block", (e) => {
         .resistance(1.0)
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
-        .tagBlock("minecraft:needs_diamond_tool")
-        .parentModel("society:block/kubejs/deepslate_iridium_ore");
+        .tagBlock("minecraft:needs_diamond_tool");
 
     e.create("society:sparkstone_ore")
         .soundType("stone")
@@ -145,8 +150,7 @@ StartupEvents.registry("block", (e) => {
         .resistance(1.0)
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
-        .tagBlock("minecraft:needs_diamond_tool")
-        .parentModel("society:block/kubejs/sparkstone_ore");
+        .tagBlock("minecraft:needs_diamond_tool");
 
     e.create("society:deepslate_sparkstone_ore")
         .soundType("stone")
@@ -154,8 +158,7 @@ StartupEvents.registry("block", (e) => {
         .resistance(1.0)
         .requiresTool(true)
         .tagBlock("minecraft:mineable/pickaxe")
-        .tagBlock("minecraft:needs_diamond_tool")
-        .parentModel("society:block/kubejs/deepslate_sparkstone_ore");
+        .tagBlock("minecraft:needs_diamond_tool");
 
     e.create(`society:sparkstone_block`)
         .soundType("amethyst")
@@ -173,7 +176,6 @@ StartupEvents.registry("block", (e) => {
 
     // Compressed Crops block
     e.create("society:animal_feed_sack", "cardinal")
-        .parentModel("society:block/kubejs/animal_feed_sack")
         .mapColor("dirt")
         .soundType("sand")
         .hardness(1.0)
