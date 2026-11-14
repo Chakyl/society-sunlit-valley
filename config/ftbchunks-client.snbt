@@ -138,88 +138,93 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:sheep": true
-			"untitledduckmod:duck": true
-			"aquaculture:minnow": false
-			"crittersandcompanions:ladybug": true
-			"minecraft:parrot": true
-			"minecraft:axolotl": true
-			"unusualfishmod:jungleshark": true
-			"quark:crab": true
-			"unusualfishmod:deep_crawler": true
-			"darkerdepths:body_snatcher": true
-			"unusualfishmod:shockcat": true
-			"hominid:bellman": true
-			"crittersandcompanions:snail": true
-			"minecraft:cow": true
 			"minecraft:blaze": true
 			"creaturefeature:canary": true
-			"quark:toretoise": true
-			"minecraft:villager": true
-			"minecraft:zombie": true
-			"unusualfishmod:freshwater_mantis": true
-			"minecraft:bat": true
-			"apple_cows:apple_cow": true
-			"hominid:juggernaut": true
-			"aquaculture:brown_trout": false
+			"crittersandcompanions:roly_poly": true
+			"opposing_force:grell": true
+			"crittersandcompanions:ladybug": true
+			"golemoverhaul:barrel_golem": true
+			"minecraft:pig": true
+			"minecraft:zombie_villager": true
 			"minecraft:husk": true
-			"minecraft:skeleton": true
-			"crittersandcompanions:ferret": true
-			"minecraft:squid": true
-			"aquaculture:piranha": false
-			"crittersandcompanions:leaf_insect": true
-			"minecraft:sulfur_cube": true
-			"longwings:moth": true
-			"minecraft:glow_squid": true
-			"hominid:famished": true
-			"aquaculture:red_grouper": false
-			"minecraft:horse": true
-			"crittersandcompanions:otter": true
+			"unusualfishmod:shockcat": true
+			"nomansland:tortoise": true
+			"minecraft:chicken": true
+			"quark:stoneling": true
+			"unusualfishmod:jungleshark": true
+			"unusualfishmod:eyelash": true
 			"crittersandcompanions:stag_beetle": true
 			"aquaculture:smallmouth_bass": false
-			"unusualfishmod:eyelash": true
-			"minecraft:drowned": true
-			"aquaculture:bluegill": false
-			"wildernature:cassowary": true
-			"minecraft:zombie_villager": true
-			"minecraft:shulker": true
-			"quark:stoneling": true
-			"minecraft:evoker": true
-			"hominid:mellified": true
-			"minecraft:cat": true
-			"hominid:fossilized": true
-			"darkerdepths:void_soul_knight": true
-			"aquaculture:carp": false
-			"minecraft:phantom": true
-			"minecraft:donkey": true
-			"aquaculture:arrau_turtle": false
-			"minecraft:witch": true
-			"unusualfishmod:blindsailfin": true
-			"minecraft:rabbit": true
-			"minecraft:iron_golem": true
-			"unusualfishmod:copperflame": true
-			"untitledduckmod:goose": true
-			"minecraft:enderman": true
-			"minecraft:cave_spider": true
-			"minecraft:bee": true
-			"crittersandcompanions:roly_poly": true
-			"golemoverhaul:barrel_golem": true
-			"minecraft:breeze": true
-			"golemoverhaul:coal_golem": true
-			"minecraft:chicken": true
-			"golemoverhaul:hay_golem": true
+			"crittersandcompanions:otter": true
 			"darkerdepths:scorcher": true
-			"creaturefeature:sinister": true
-			"aquaculture:perch": false
-			"etcetera:weaver": true
-			"nomansland:tortoise": true
-			"creaturefeature:beauty": true
 			"minecraft:spider": true
+			"longwings:moth": true
+			"minecraft:phantom": true
+			"golemoverhaul:hay_golem": true
+			"quark:toretoise": true
+			"minecraft:sulfur_cube": true
+			"crittersandcompanions:leaf_insect": true
+			"minecraft:drowned": true
+			"minecraft:iron_golem": true
+			"aquaculture:minnow": false
+			"hominid:famished": true
+			"untitledduckmod:duck": true
+			"minecraft:cow": true
+			"minecraft:squid": true
+			"minecraft:shulker": true
+			"hominid:juggernaut": true
+			"minecraft:trader_llama": true
+			"minecraft:villager": true
+			"minecraft:zombie": true
+			"crittersandcompanions:ferret": true
+			"minecraft:glow_squid": true
+			"hominid:mellified": true
+			"minecraft:bat": true
+			"untitledduckmod:goose": true
+			"aquaculture:carp": false
+			"hominid:fossilized": true
+			"minecraft:donkey": true
+			"unusualfishmod:freshwater_mantis": true
+			"aquaculture:arrau_turtle": false
+			"minecraft:sheep": true
+			"aquaculture:bluegill": false
+			"darkerdepths:body_snatcher": true
 			"minecraft:wolf": true
-			"minecraft:creeper": true
+			"minecraft:cat": true
+			"wildernature:cassowary": true
+			"minecraft:bee": true
 			"longwings:butterfly": true
+			"minecraft:evoker": true
+			"aquaculture:brown_trout": false
+			"minecraft:cave_spider": true
+			"darkerdepths:void_soul_knight": true
+			"aquaculture:red_grouper": false
+			"golemoverhaul:coal_golem": true
+			"unusualfishmod:copperflame": true
+			"minecraft:wandering_trader": true
+			"etcetera:weaver": true
+			"creaturefeature:sinister": true
+			"minecraft:slime": true
+			"minecraft:skeleton": true
+			"apple_cows:apple_cow": true
+			"minecraft:rabbit": true
+			"unusualfishmod:deep_crawler": true
+			"crittersandcompanions:snail": true
+			"hominid:bellman": true
+			"minecraft:enderman": true
+			"minecraft:axolotl": true
+			"unusualfishmod:blindsailfin": true
+			"minecraft:breeze": true
+			"aquaculture:piranha": false
+			"golemoverhaul:slime_golem": true
 			"apple_cows:golden_apple_cow": true
-			"minecraft:pig": true
+			"quark:crab": true
+			"minecraft:horse": true
+			"minecraft:witch": true
+			"aquaculture:perch": false
+			"minecraft:parrot": true
+			"minecraft:creeper": true
+			"creaturefeature:beauty": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

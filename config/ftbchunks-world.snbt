@@ -68,7 +68,7 @@
 	# If true, the player must have the 'ftbchunks_mapping' Game stage to be able to use the map and minimap.
 	# Requires KubeJS and/or Gamestages to be installed.
 	# Default: false
-	require_game_stage: false
+	require_game_stage: true
 	claiming: {
 		# Dimension ID's where chunks may not be claimed. Add "minecraft:the_end" to this list if you want to disable chunk claiming in The End, or "othermod:*" to disable chunk claiming in *all* dimensions added by "othermod"
 		# Default: []

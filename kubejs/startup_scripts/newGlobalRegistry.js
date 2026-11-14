@@ -89,7 +89,19 @@ global.FORAGE_CROPS = [
     { item: "atmospheric:yucca_fruit", value: 8, products: ["preserves", "wine"], classifications: ["forage_crop", "fruit", "berry"] },
     { item: "atmospheric:currant", value: 8, products: ["preserves", "wine", "dried"], classifications: ["forage_crop", "fruit", "berry"] },
     { item: "atmospheric:aloe_leaves", value: 16, products: ["preserves"], classifications: ["forage_crop", "industrial"] },
+    { item: "society:morel", value: 16, products: ["dried"], classifications: ["forage_crop", "mushroom"] },
+    { item: "society:winter_root", value: 16, products: [], classifications: ["forage_crop", "vegetable"] },
+    { item: "society:wild_onion", value: 16, products: [], classifications: ["forage_crop", "vegetable"] },
+    { item: "society:leek", value: 16, products: [], classifications: ["forage_crop", "vegetable"] },
+    { item: "society:mint", value: 16, products: [], classifications: ["forage_crop", "herb"] },
+    { item: "society:blowball", value: 16, products: [], classifications: ["forage_crop", "flower"] },
+    { item: "society:juniper", value: 16, products: [], classifications: ["forage_crop", "seed"] },
+    { item: "society:snow_yam", value: 16, products: [], classifications: ["forage_crop", "vegetable"] },
+    { item: "society:crabapple", value: 16, products: [], classifications: ["forage_crop", "fruit", "tree_crop"] },
+    { item: "nomansland:pear", value: 16, products: [], classifications: ["forage_crop", "fruit", "tree_crop"] },
 ]
+
+
 global.MUSHROOMS = [
     { item: "minecraft:brown_mushroom", value: 8 },
     { item: "minecraft:red_mushroom", value: 8 },

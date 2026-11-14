@@ -54,3 +54,5 @@ shovel_reverting = true
 strict_greenhouses = true
 #Crops need sky access to grow. If greenhouse glass is used, the glass needs sky access. Transparent blocks do not block sky access
 needs_sun = true
+#Determines if stem crops like Pumpkins and Melons replace their stem when growing rather than trying to find a free spot
+replace_stem = true

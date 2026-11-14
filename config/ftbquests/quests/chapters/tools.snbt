@@ -63,7 +63,10 @@
 		{
 			dependencies: ["31F6C5811A72396C"]
 			icon: {
-				id: "copycats:copycat_stairs"
+				components: {
+					"ftbquests:missing_item": "copycats:copycat_stairs"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "23EFDF37F9BCD63B"
 			rewards: [{

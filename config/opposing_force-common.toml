@@ -1,0 +1,32 @@
+#Whether the spawn cap for monsters should be increased
+increaseMonsterSpawnCap = false
+#The spawn cap for monsters if increaseMonsterSpawnCap is enabled
+# Default: 90
+# Range: 0 ~ 500
+monsterSpawnCap = 90
+#Whether Protection should be half as effective against magic damageMultiplier
+protectionTweaks = true
+#Whether zombie tweaks should be enabled
+zombieTweaks = false
+
+[zombie_tweaks]
+	#The amount of extra health zombie leaders should have
+	# Default: 20.0
+	# Range: 0.0 ~ 100.0
+	zombieLeaderHealth = 20.0
+	#The amount of extra attack damageMultiplier zombie leaders should have
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	zombieLeaderAttackDamage = 2.0
+	#The amount of extra size zombie leaders should have
+	# Default: 0.3
+	# Range: 0.0 ~ 10.0
+	zombieLeaderScale = 0.3
+	#The chance hurting a zombie leader summons reinforcements nearby
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	zombieLeaderReinforcementChance = 0.5
+	#The chance for a normal zombie to spawn as a leader
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	zombieLeaderSpawnChance = 0.05

@@ -9,6 +9,7 @@ StartupEvents.registry("item", (e) => {
         "yard_work_yearly",
         "husbandry_hourly",
         "mining_monthly",
+        "foraging_fortnightly",
         "wet_weekly",
         "combat_quarterly",
         "alias_moss",

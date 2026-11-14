@@ -53,6 +53,11 @@
         "result": "allow"
     },
     {
+        "mod": "opposing_force",
+        "dimension": "minecraft:overworld",
+        "result": "deny"
+    },
+    {
         "mob": [
             "minecraft:zombie_villager",
             "crittersandcompanions:dragonfly",
@@ -60,6 +65,16 @@
             "minecraft:villager",
             "etcetera:weaver"
         ],
+        "result": "deny"
+    },
+    {
+        "mob": "crittersandcompanions:otter",
+        "mincount": 6,
+        "result": "deny"
+    },
+    {
+        "mob": "golemoverhaul:slime_golem",
+        "mincount": 6,
         "result": "deny"
     }
 ]

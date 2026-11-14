@@ -36,22 +36,22 @@
         "weight": 60
       },
       {
-        "type": "creaturefeature:blitz",
+        "type": "opposing_force:roamer",
         "maxCount": 4,
         "minCount": 2,
         "weight": 80
       },
       {
-        "type": "creaturefeature:eeper",
+        "type": "opposing_force:grell",
         "maxCount": 4,
         "minCount": 2,
         "weight": 80
       },
       {
-        "type": "creaturefeature:nothing",
+        "type": "opposing_force:dicer",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 20
+        "weight": 4
       }
     ],
     "creature": [],

@@ -1,0 +1,20 @@
+#Chance of the smoke particle to spawn. 1.0 - full. 0.0 - no smoke. Default: 0.75
+# Default: 0.75
+# Range: 0.0 ~ 1.0
+SmokeFlow = 0.75
+#Chimneys get dirty when a random tick occurs. (Chimney must be working (LIT) and not 'BLOCKED')
+#and when random tick occurs - this value controls the chance of a chimney becoming dirty.
+#1.0 - dirty on first random tick.
+#0.0 - chimney will never get dirty.
+#Default: 0.05
+# Default: 0.05
+# Range: 0.0 ~ 1.0
+DirtyChance = 0.05
+#Smoke particles are affected by wind. Default: true
+Wind = true
+#How much effect wind has on the smoke. Default: 1.0
+# Default: 1.0
+# Range: 0.0 ~ 1.7976931348623157E308
+WindStrength = 1.0
+#Wind will affect smoke from Campfires. Default: true
+WindAffectsCampfire = true

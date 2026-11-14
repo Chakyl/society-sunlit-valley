@@ -1,0 +1,4 @@
+#Controls how many ticks each machine waits before running ticking logic, higher means better performance
+# Default: 20
+# Range: 1 ~ 999
+tick_delay = 20

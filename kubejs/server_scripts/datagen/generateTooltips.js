@@ -41,13 +41,13 @@ const generateColorWrappedTooltip = (tooltipArray, hexColor, additionalAlwaysToo
  * Common Utilities - These are common phrases in tooltips like "Right Click to Use!"
  */
 const registerUtil = (key, translation) => {
-  translationKeys[key] = translation;
-  return `<ltlangkey>${key}</ltlangkey>`;
+    translationKeys[key] = translation;
+    return `<ltlangkey>${key}</ltlangkey>`;
 };
 
 const RIGHT_CLICK_TO_READ = registerUtil('tooltip.society.utils.right_click_to_read', '<ltcolor>c=55FF55;Right click to learn this skill!</ltcolor>');
 const PHONE_BLOCK = registerUtil('tooltip.society.utils.phone', '<ltcolor>c=AAAAAA;Right click to call any unlocked villager and access their shop</ltcolor>');
-const ARTIFACT  = registerUtil('tooltip.society.utils.artifact', "🪣 §7Artifact");
+const ARTIFACT = registerUtil('tooltip.society.utils.artifact', "🪣 §7Artifact");
 /**
  * Category Tooltips - These are often bulk additions that often category tooltips e.g Artifact
  */
@@ -81,7 +81,7 @@ const artifactTooltips = [
 ];
 
 generateColorWrappedTooltip(artifactTooltips, "AA00AA", ARTIFACT)
-const bookTooltips = [
+const skillBookTooltips = [
     { item: "society:alias_moss", tooltips: ["Mossberries can be found in winter and twice as often in other seasons."] },
     { item: "society:animal_fancy", tooltips: ["Increases affection gained from petting farm animals."] },
     { item: "society:banana_karenina", tooltips: ["Doubles Banana Tree output."] },
@@ -108,7 +108,17 @@ const bookTooltips = [
     { item: "society:women_who_run_with_the_plushies", tooltips: ["Plushies will start at 2 hearts of affection. Increases rates of high quality Plushies."] },
     { item: "society:the_metamorphosize", tooltips: ["Impact of size on Butterfly/Moth prices are tripled."] },
 ];
-generateColorWrappedTooltip(bookTooltips, "AAAAAA", RIGHT_CLICK_TO_READ)
+generateColorWrappedTooltip(skillBookTooltips, "AAAAAA", RIGHT_CLICK_TO_READ)
+const xpBookTooltips = [
+    { item: "society:yard_work_yearly", tooltips: ["Right click to gain Farming experience"] },
+    { item: "society:husbandry_hourly", tooltips: ["Right click to gain Husbandry experience"] },
+    { item: "society:mining_monthly", tooltips: ["Right click to gain Mining experience"] },
+    { item: "society:combat_quarterly", tooltips: ["Right click to gain Adventuring experience"] },
+    { item: "society:wet_weekly", tooltips: ["Right click to gain Fishing experience"] },
+    { item: "society:foraging_fortnightly", tooltips: ["Right click to gain Foraging experience"] },
+    { item: "society:book_of_stars", tooltips: ["Right click to gain experience in all skills"] },
+];
+generateColorWrappedTooltip(xpBookTooltips, "AAAAAA", RIGHT_CLICK_TO_READ)
 let upgradeTooltipHex = "55FF55"
 const wrapUpgradeKeyword = (word) => `</ltcolor><ltcolor>c=00AA00;${word}</ltcolor><ltcolor>c=${upgradeTooltipHex};`;
 const upgradeTooltips = [

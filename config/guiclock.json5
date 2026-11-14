@@ -1,0 +1,43 @@
+{
+	// When enabled, will only show the game time when a clock is present in the inventory.
+	"mustHaveClockInInventoryForGameTime": true,
+	// When enabled, will only show the real time when a clock is present in the inventory.
+	"mustHaveClockInInventoryForRealTime": true,
+	// Whether the clock in the GUI should be lowered when the player has potion effects to prevent overlap.
+	"lowerClockWhenPlayerHasEffects": true,
+	// Sets the format of the clock to the 24-hour format.
+	"_24hourformat": true,
+	// When enabled, shows the clock item icon instead of a clock with numbers.
+	"showOnlyMinecraftClockIcon": false,
+	// Show both in-game time and real local time.
+	"showBothTimes": false,
+	// Show actual local time instead of in-game time.
+	"showRealTime": false,
+	// Show the seconds in the clock.
+	"showRealTimeSeconds": false,
+	// Show the days played in the world.
+	"showDaysPlayedWorld": true,
+	// Places the GUI clock on the left.
+	"clockPositionIsLeft": false,
+	// Places the GUI clock in the middle.
+	"clockPositionIsCenter": false,
+	// Places the GUI clock on the right.
+	"clockPositionIsRight": true,
+	// The vertical offset (y coord) for the Clock. This determines how far down the time should be on the screen. Can be changed to prevent GUIs from overlapping.
+	// min: 0, max: 3000
+	"clockHeightOffset": 5,
+	// The horizontal offset (x coord) for the Clock.
+	// min: -3000, max: 3000
+	"clockWidthOffset": 0,
+	// If the text displayed should have a shadow drawn below it.
+	"drawTextShadow": true,
+	// The red RGB value for the clock text.
+	// min: 0, max: 255
+	"RGB_R": 255,
+	// The green RGB value for the clock text.
+	// min: 0, max: 255
+	"RGB_G": 255,
+	// The blue RGB value for the clock text.
+	// min: 0, max: 255
+	"RGB_B": 255
+}

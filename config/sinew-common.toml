@@ -1,0 +1,16 @@
+#Whether mobs with elite variants can spawn as elites
+eliteMobs = true
+#The chance for a mob with an elite variant to spawn as an elite
+# Default: 0.01
+# Range: 0.0 ~ 1.0
+eliteMobChance = 0.01
+#Whether progression tags should be used for mob spawning
+enableProgression = true
+#Whether a fix should be applied to stop mob pathfinding from being biased towards higher locations
+fixLandRandomPos = true
+#How many in-game days a player has to go without sleeping before insanity lets them perceive spectral mobs tagged #sinew:triggered_by_insanity. 0 disables insanity
+# Default: 21
+# Range: 0 ~ 1000
+insanityDays = 21
+#Whether the Resistance effect should grant 20% Damage Reduction per level instead of using its vanilla damage calculation
+resistanceUsesDamageReduction = true

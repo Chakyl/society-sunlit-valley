@@ -17,6 +17,26 @@ ServerEvents.tags('item', (e) => {
     ].forEach((item) => {
         e.add("c:seeds", item);
     });
+    [
+        "society:yard_work_yearly",
+        "society:husbandry_hourly",
+        "society:mining_monthly",
+        "society:foraging_fortnightly",
+        "society:wet_weekly",
+        "society:combat_quarterly",
+    ].forEach((item) => {
+        e.add("society:skill_xp_book", item);
+    });
+    [
+        "society:large_egg",
+        "society:large_duck_egg",
+        "society:large_goose_egg",
+        "society:large_turkey_egg",
+        "society:penguin_egg",
+        "society:flamingo_egg"
+    ].forEach((egg) => {
+        e.add("society:large_eggs", egg);
+    });
 })
 
 ServerEvents.tags('block', (e) => {
@@ -33,7 +53,7 @@ ServerEvents.tags('block', (e) => {
     ].forEach((item) => {
         e.add("society_trading:opens_shop_selector", item);
     });
-    
+
     [
         "minecraft:crafting_table",
         "numismatics:andesite_depositor",

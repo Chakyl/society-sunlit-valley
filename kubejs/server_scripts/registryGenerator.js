@@ -268,7 +268,7 @@ ServerEvents.generateData('after_mods', (e) => {
     })
     // Roe: roundPrice(Math.floor(fish.value / 3) + 16),
     // Aged Roe: roundPrice((Math.floor(fish.value / 3) + 16) * 15)
-    global.FISH.forEach((fish)=> {
+    global.FISH.forEach((fish) => {
         data.values[fish.item] = global.getSaleData(fish.value, [])
         let mappedItemName = global.getFishMappedItemName(fish.item);
         data.values[`society:smoked_${mappedItemName}`] = global.getSaleData(calculateSmokeFishedValue(fish.value), [])
@@ -283,9 +283,72 @@ ServerEvents.generateData('after_mods', (e) => {
 
     e.json('selling_bin:data_maps/item/selling_bin_value.json', data)
 })
+let basicArtisanMachineRecipe = (e, type, input, output, hours) => {
+    let inputs = []
+    for (let index = 0; index < input.count; index++) {
+        inputs.push({ item: input.id });
 
-
+    }
+    e.custom({
+        type: type,
+        blacklisted_upgrades: [],
+        required_upgrades: [],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: output
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: hours
+    })
+}
+let preservesJarRecipe = (e, input) => {
+    let output = [{ chance: 1.0, stack: { id: `society:${input.item.path}_preserves`, count: 1 } }];
+    let inputs = []
+    for (let index = 0; index < 3; index++) {
+        inputs.push({ item: input.item });
+    }
+    e.custom({
+        type: "artisan_machines:preserves_jar",
+        blacklisted_upgrades: [
+            {
+                item: "artisan_machines:stone_hand"
+            }
+        ],
+        required_upgrades: [],
+        chanced_results: output,
+        ingredients: inputs,
+        processing_hours: 72
+    })
+    for (let index = 0; index < 2; index++) {
+        inputs.push({ item: input.item });
+    }
+    e.custom({
+        type: "artisan_machines:preserves_jar",
+        blacklisted_upgrades: [],
+        required_upgrades: [
+            {
+                item: "artisan_machines:stone_hand"
+            }
+        ],
+        chanced_results: output,
+        ingredients: inputs,
+        processing_hours: 72
+    })
+}
 ServerEvents.recipes((e) => {
+    global.CROP_DEFINITIONS.forEach((crop) => {
+        if (!crop.blocked) {
+            if (crop.products.includes("preserves")) {
+                preservesJarRecipe(e, crop)
+
+            }
+            // if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(baseCropValue), [])
+            // if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
+            // if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])
+        }
+    })
     for (const { dish, ingredients, cookedCount, container, time, type } of dishes) {
         e.remove({ output: dish });
         if (type == "cooking_pot") {
