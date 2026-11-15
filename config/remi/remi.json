@@ -21,7 +21,12 @@
   "stackGroupsCraftables": true,
   "stackGroupsWorkstation": false,
   "stackGroupsFavorites": false,
-  "disabledStackGroups": [],
+  "disabledStackGroups": [
+    "minecraft:fence_gates",
+    "minecraft:fences",
+    "c:fence_gates",
+    "mynethersdelight:minecraft_block_resurgent_soil_plant"
+  ],
   "stackGroupItemOrder": {},
   "emiOnlyInRecipeBook": false,
   "emiOnlyInRecipeBookState": false,

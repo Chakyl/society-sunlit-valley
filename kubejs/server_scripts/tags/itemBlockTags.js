@@ -37,6 +37,16 @@ ServerEvents.tags('item', (e) => {
     ].forEach((egg) => {
         e.add("society:large_eggs", egg);
     });
+    [
+        "everycomp:bd/nomansland/willow_blinds",
+        "everycomp:bd/darkerdepths/petrified_blinds",
+        "everycomp:bd/minecraft/poplar_blinds",
+        "everycomp:bd/nomansland/walnut_blinds",
+        "everycomp:bd/nomansland/pine_blinds",
+        "everycomp:bd/nomansland/maple_blinds"
+    ].forEach((blind) => {
+        e.add("beautify:blinds", blind);
+    });
 })
 
 ServerEvents.tags('block', (e) => {
@@ -80,4 +90,21 @@ ServerEvents.tags('block', (e) => {
     ].forEach((item) => {
         e.add("ftbchunks:interact_whitelist", item);
     });
+    [
+        "darkerdepths:petrified_fence_gate",
+        "meadow:pine_fence_gate",
+        "quark:ancient_fence_gate",
+        "quark:azalea_fence_gate",
+        "quark:nether_brick_fence_gate",
+        "cluttered:chalcedony_picket_fence_gate",
+        "cluttered:deep_chalcedony_picket_fence_gate",
+        "cluttered:marble_picket_fence_gate",
+        "cluttered:wooden_picket_fence_gate"
+    ].forEach((gate) => {
+        e.add("minecraft:fence_gates", gate);
+    });
+    // [
+    // ].forEach((gate) => {
+    //     e.add("minecraft:fences", gate);
+    // });
 })
