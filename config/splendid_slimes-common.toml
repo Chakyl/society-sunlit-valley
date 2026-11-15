@@ -1,0 +1,44 @@
+#꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦ Splendid Slimes Config! ꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷
+[slimes]
+	#How much a full slime's hunger will equate to
+	# Default: 24000
+	# Range: > 20
+	"Slime Hunger Amount" = 24000
+	#Maximum happiness value for a Splendid Slime.
+	# Default: 1000
+	# Range: > 3
+	"Slime Max Happiness" = 1000
+	#Minimum amount of happiness a Splendid Slime can have before being considered 'Happy'.
+	# Default: 600
+	# Range: > 0
+	"Slime Happy Threshold" = 600
+	#Maximum amount of happiness a Splendid Slime can have before being considered 'Unhappy'.
+	# Default: 400
+	# Range: > 0
+	"Slime Unhappy Threshold" = 400
+	#Maximum amount of happiness a Splendid Slime can have before being considered 'Furious'.
+	# Default: 200
+	# Range: > 0
+	"Slime Furious Threshold" = 200
+	#How many ticks it takes for a Splendid Slime to try and perform Negative/Positive effects/commands. Setting this value too low may cause performance issues.
+	# Default: 800
+	# Range: > 20
+	"Slime Effect Cooldown" = 800
+	#When true, Slimes will not get hungry or perform effects when their owner is offline. This can help prevent disasters on Multiplayer servers and has no effect in single player.
+	"Slime Owner Offline Check" = true
+
+[tarrs]
+	#If true, Largo Slimes will turn into Tarrs after eating a 3rd Plort instead of just dying.
+	"Enable Tarrs" = true
+	#If true, Tarrs will be persistent and turn back into previous slime when killed
+	"Enable Forgiving Tarrs" = false
+
+[machines]
+	#Time it takes for Splendid Slimes to incubate in Slime Incubator
+	# Default: 6000
+	# Range: > 1
+	"Slime Incubation Time" = 6000
+	#Time it takes to craft items in a Plort Press
+	# Default: 1200
+	# Range: > 20
+	"Plort Pressing Time" = 1200

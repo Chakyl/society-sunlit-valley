@@ -11648,29 +11648,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Placebo-1.21.1-9.9.2.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8463/693/Placebo-1.21.1-9.9.2.jar",
-                    "id": "8463693",
-                    "parent_id": "283644",
-                    "hashes": {
-                        "sha1": "d44335094cf2db64998cb3ee31e58d8c01e80b4a",
-                        "md5": "208b373fb2bdc703cdd2e087753ed859"
-                    },
-                    "required_dependencies": [],
-                    "size": 324058,
-                    "date_published": "2026-07-19T09:43:56.697Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Placebo-1.21.1-9.9.2.jar",
+                    "file_name": "Placebo-1.21.1-9.9.4.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -11678,16 +11657,37 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/tCkE8p2N/versions/1Ypo4tf4/Placebo-1.21.1-9.9.2.jar",
-                    "id": "1Ypo4tf4",
+                    "url": "https://cdn.modrinth.com/data/tCkE8p2N/versions/B5zbSVlT/Placebo-1.21.1-9.9.4.jar",
+                    "id": "B5zbSVlT",
                     "parent_id": "tCkE8p2N",
                     "hashes": {
-                        "sha512": "e8b4ba06fdbcdef8f936c39e7ba18bbfd326fad8d2512fd6cec80c899001b506a501b1aeac5eef2a1c2d7dd98f89ae3d94fac357c243027d623e59622bd295b5",
-                        "sha1": "d44335094cf2db64998cb3ee31e58d8c01e80b4a"
+                        "sha512": "4f3a9c5974132f3638c262c56b0c2886df2bc58027c961aa11d06d0ae2e608b63f24f949b2f8c240989e2a1bfe303fd237c5f2d49269453ad6c2ff1f85f2c648",
+                        "sha1": "007d52a42020a331d5272495f6d676e0ad1a2c13"
                     },
                     "required_dependencies": [],
-                    "size": 324058,
-                    "date_published": "2026-07-19T09:43:58.304102Z"
+                    "size": 326063,
+                    "date_published": "2026-10-13T02:09:52.058831Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Placebo-1.21.1-9.9.4.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9153/39/Placebo-1.21.1-9.9.4.jar",
+                    "id": "9153039",
+                    "parent_id": "283644",
+                    "hashes": {
+                        "sha1": "007d52a42020a331d5272495f6d676e0ad1a2c13",
+                        "md5": "aa28b32050534747dab7fa167e443c1a"
+                    },
+                    "required_dependencies": [],
+                    "size": 326063,
+                    "date_published": "2026-10-13T02:09:51.347Z"
                 }
             ]
         },

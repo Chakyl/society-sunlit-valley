@@ -145,8 +145,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "39FA5736FEC4E918"
-				item: { components: { "ftbquests:missing_item": "society:aging_cask" }, count: 1, id: "ftbquests:missing_item" }
+				id: "6E17BB18745E3969"
+				item: { count: 1, id: "artisan_machines:aging_cask" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -494,8 +494,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "1BEAF5EF4A3B8977"
-				item: { components: { "ftbquests:missing_item": "society:crystalarium" }, count: 1, id: "ftbquests:missing_item" }
+				id: "7F091D010DE340BC"
+				item: { count: 1, id: "artisan_machines:crystalarium" }
 				type: "item"
 			}]
 			x: -8.5d
@@ -738,7 +738,7 @@
 			id: "35A8A8F8898AE3E5"
 			tasks: [{
 				id: "747623C805336417"
-				item: { components: { "ftbquests:missing_item": "dew_drop_farmland_growth:pristine_quality_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbquests:missing_item": "sunrise_gardening:pristine_quality_fertilizer" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -1561,16 +1561,16 @@
 			tasks: [
 				{
 					id: "0944E1D3F203821B"
-					item: { components: { "society:npc_id": "society:trader" }, count: 1, id: "society:invitation" }
+					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 					match_components: "strict"
 					type: "item"
 				}
 				{
 					icon: {
 						components: {
-							"society:npc_id": "society:trader"
+							"ftbquests:missing_item": "society:villager"
 						}
-						id: "society:villager"
+						id: "ftbquests:missing_item"
 					}
 					id: "48A5EF6D1BB8647A"
 					stage: "invited_trader"

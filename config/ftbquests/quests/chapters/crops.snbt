@@ -1344,7 +1344,7 @@
 			shape: "none"
 			tasks: [{
 				id: "367370B923D1B562"
-				item: { count: 1, id: "orchard:cherry" }
+				item: { components: { "ftbquests:missing_item": "orchard:cherry" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 12.776190476190486d
@@ -1476,7 +1476,7 @@
 			shape: "none"
 			tasks: [{
 				id: "36514AEE32301F45"
-				item: { count: 1, id: "orchard:lychee" }
+				item: { components: { "ftbquests:missing_item": "orchard:lychee" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 15.56190476190477d
@@ -1498,7 +1498,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0130993A589F918B"
-				item: { count: 1, id: "orchard:peach" }
+				item: { components: { "ftbquests:missing_item": "orchard:peach" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 18.514285714285727d
@@ -1510,7 +1510,7 @@
 			shape: "none"
 			tasks: [{
 				id: "71BEC726204AE10B"
-				item: { count: 1, id: "orchard:plum" }
+				item: { components: { "ftbquests:missing_item": "orchard:plum" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.228571428571435d
@@ -1521,7 +1521,7 @@
 			shape: "none"
 			tasks: [{
 				id: "15A51121384FB49C"
-				item: { count: 1, id: "orchard:mango" }
+				item: { components: { "ftbquests:missing_item": "orchard:mango" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 15.71190476190477d
@@ -1532,7 +1532,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5347F6226E74E47C"
-				item: { count: 1, id: "orchard:orange" }
+				item: { components: { "ftbquests:missing_item": "orchard:orange" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.13333333333334d
@@ -1554,7 +1554,7 @@
 			shape: "none"
 			tasks: [{
 				id: "51D5DC2521CB0EFD"
-				item: { count: 1, id: "orchard:starfruit" }
+				item: { components: { "ftbquests:missing_item": "orchard:starfruit" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.4285714285714235d
@@ -1702,7 +1702,7 @@
 			shape: "none"
 			tasks: [{
 				id: "22919A73C577461C"
-				item: { count: 1, id: "orchard:pawpaw" }
+				item: { components: { "ftbquests:missing_item": "orchard:pawpaw" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 18.680952380952398d
@@ -1713,7 +1713,7 @@
 			shape: "none"
 			tasks: [{
 				id: "5703E9BC753916D6"
-				item: { count: 1, id: "orchard:hazelnut" }
+				item: { components: { "ftbquests:missing_item": "orchard:hazelnut" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 17.20476190476191d
@@ -1724,7 +1724,7 @@
 			shape: "none"
 			tasks: [{
 				id: "2E9453049DBD8724"
-				item: { count: 1, id: "orchard:cinnamon" }
+				item: { components: { "ftbquests:missing_item": "orchard:cinnamon" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.283333333333339d
@@ -1779,7 +1779,7 @@
 			shape: "none"
 			tasks: [{
 				id: "3DBC902FC74E7C6C"
-				item: { count: 1, id: "orchard:lemon" }
+				item: { components: { "ftbquests:missing_item": "orchard:lemon" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.419047619047632d

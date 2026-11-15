@@ -139,7 +139,7 @@ const calculateDishValue = (ingredients, cookedCount, type) => {
     return Math.floor(((sum *= getCookingStationMult(type)) / cookedCount));
 }
 const calculatePrice = (cropDefinition) => {
-    const { dropCount, growDays, regrowDays, seasons, yearTwo, lootOnly, reeseedable, customMult, brokenblock } = cropDefinition;
+    const { dropCount, growDays, regrowDays, seasons, yearTwo, lootOnly, reeseedable, customMult, brokenBlock } = cropDefinition;
     let singleHarvest = regrowDays == undefined;
     let value = 0;
     if (singleHarvest) {
@@ -169,7 +169,7 @@ const calculatePrice = (cropDefinition) => {
     if (yearTwo) value *= 1.2;
     if (lootOnly) value *= 1.3;
     if (customMult) value *= customMult;
-    if (brokenblock) value = Math.floor(value / 9) * 9;
+    if (brokenBlock) value = Math.floor(value / 9) * 9;
     return Math.round(value);
 }
 
@@ -189,7 +189,7 @@ const mapSeasonsToIcons = (seasons) => {
 let calculateWineValue = (cropValue) => 3 * (cropValue * 3);
 let calculatePreservesValue = (cropValue) => (2 * (cropValue * 2)) + 64;
 let calculatePickleValue = (cropValue) => cropValue * 3;
-let calculateDriedValue = (cropValue) => (cropValue * 5 * 2) + 64;
+let calculateDriedValue = (cropValue) => (5 * (cropValue * 2)) + 128;
 let calculatePristineValue = (baseValue) => (baseValue * 6) + 48;
 let calculateSmokeFishedValue = (baseValue) => (baseValue * 4);
 
@@ -222,8 +222,8 @@ ServerEvents.generateData('after_mods', (e) => {
             baseCropValue = calculatePrice(crop)
             data.values[crop.item] = global.getSaleData(baseCropValue, [])
             foodMap.set(crop.item, baseCropValue);
-            if (crop.storageblock) data.values[crop.storageblock] = global.getSaleData(baseCropValue * 9, [])
-            if (crop.brokenblock) data.values[crop.brokenblock] = global.getSaleData(Math.round(baseCropValue / 9), [])
+            if (crop.storageBlock) data.values[crop.storageBlock] = global.getSaleData(baseCropValue * 9, [])
+            if (crop.brokenBlock) data.values[crop.brokenBlock] = global.getSaleData(Math.round(baseCropValue / 9), [])
             if (crop.products.includes("preserves")) data.values[`society:${crop.item.path}_preserves`] = global.getSaleData(calculatePreservesValue(baseCropValue), [])
             if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(baseCropValue), [])
             if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
@@ -234,8 +234,8 @@ ServerEvents.generateData('after_mods', (e) => {
         if (!crop.blocked) {
             data.values[crop.item] = global.getSaleData(crop.value, [])
             foodMap.set(crop.item, crop.value);
-            if (crop.storageblock) data.values[crop.storageblock] = global.getSaleData(crop.value * 9, [])
-            if (crop.brokenblock) data.values[crop.brokenblock] = global.getSaleData(Math.round(crop.value / 9), [])
+            if (crop.storageBlock) data.values[crop.storageBlock] = global.getSaleData(crop.value * 9, [])
+            if (crop.brokenBlock) data.values[crop.brokenBlock] = global.getSaleData(Math.round(crop.value / 9), [])
             if (crop.products.includes("preserves")) data.values[`society:${crop.item.path}_preserves`] = global.getSaleData(calculatePreservesValue(crop.value), [])
             if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(crop.value), [])
             if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(crop.value), [])
@@ -255,12 +255,12 @@ ServerEvents.generateData('after_mods', (e) => {
     })
     global.MINERALS.forEach((mineral) => {
         data.values[mineral.item] = global.getSaleData(mineral.value, [])
-        if (mineral.storageblock) data.values[mineral.storageblock] = global.getSaleData(mineral.value * 9, [])
+        if (mineral.storageBlock) data.values[mineral.storageBlock] = global.getSaleData(mineral.value * 9, [])
         data.values[`society:pristine_${mineral.item.path}`] = global.getSaleData(calculatePristineValue(mineral.value), [])
     })
     global.GEMS.forEach((mineral) => {
         data.values[mineral.item] = global.getSaleData(mineral.value, [])
-        if (mineral.storageblock) data.values[mineral.storageblock] = global.getSaleData(mineral.value * 9, [])
+        if (mineral.storageBlock) data.values[mineral.storageBlock] = global.getSaleData(mineral.value * 9, [])
         data.values[`society:pristine_${mineral.item.path}`] = global.getSaleData(calculatePristineValue(mineral.value), [])
     })
     global.ARTIFACTS.forEach((mineral) => {
@@ -306,9 +306,7 @@ let basicArtisanMachineRecipe = (e, type, input, output, hours) => {
 let preservesJarRecipe = (e, input) => {
     let output = [{ chance: 1.0, stack: { id: `society:${input.item.path}_preserves`, count: 1 } }];
     let inputs = []
-    for (let index = 0; index < 3; index++) {
-        inputs.push({ item: input.item });
-    }
+    inputs.push({ item: input.item });
     e.custom({
         type: "artisan_machines:preserves_jar",
         blacklisted_upgrades: [
@@ -321,9 +319,7 @@ let preservesJarRecipe = (e, input) => {
         ingredients: inputs,
         processing_hours: 72
     })
-    for (let index = 0; index < 2; index++) {
-        inputs.push({ item: input.item });
-    }
+    inputs.push({ item: input.item });
     e.custom({
         type: "artisan_machines:preserves_jar",
         blacklisted_upgrades: [],
@@ -344,7 +340,12 @@ ServerEvents.recipes((e) => {
                 preservesJarRecipe(e, crop)
 
             }
-            // if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(baseCropValue), [])
+            if (crop.products.includes("wine") && crop.wine) {
+                basicArtisanMachineRecipe(e, "artisan_machines:wine_keg", { id: crop.item, count: 3 }, { id: crop.wine, count: 1 }, 144)
+            }
+            if (crop.products.includes("dried")) {
+                basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { id: crop.dried ? crop.dried : `society:dried_${crop.item.path}`, count: 1 }, 144)
+            }
             // if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
             // if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])
         }
@@ -361,7 +362,6 @@ ServerEvents.tags('item', (e) => {
     dishes.forEach((dish) => !dish.notDish && e.add('society:dish', dish.dish))
 })
 
-// On neoforge 1.21.1, how do I remove fortune's impact on an item entry
 LootJS.lootTables((e) => {
     global.CROP_DEFINITIONS.forEach((crop) => {
         if (!crop.blocked && crop.cropBlock) {

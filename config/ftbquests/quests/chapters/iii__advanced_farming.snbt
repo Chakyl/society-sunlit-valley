@@ -361,10 +361,7 @@
 		{
 			dependencies: ["07938A28F31B7473"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "dew_drop_farmland_growth:strong_fertilizer"
-				}
-				id: "ftbquests:missing_item"
+				id: "sunrisegardening:strong_fertilizer"
 			}
 			id: "1D21615AEE411491"
 			rewards: [{
@@ -396,7 +393,7 @@
 			}]
 			tasks: [{
 				id: "01AB65BD5884A796"
-				item: { components: { "ftbquests:missing_item": "society:dehydrator" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:dehydrator" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -410,7 +407,7 @@
 				id: "69E47AA8BD899E47"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:high_quality_fertilizer"
+						"ftbquests:missing_item": "sunrise_gardening:high_quality_fertilizer"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -426,12 +423,9 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["632578AFE8A0D12D"]
+			dependencies: ["07A551F04BB9A117"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "splendid_slimes:slime_incubator"
-				}
-				id: "ftbquests:missing_item"
+				id: "splendid_slimes:slime_incubator"
 			}
 			id: "139B02AFBCBBF350"
 			rewards: [{
@@ -445,25 +439,22 @@
 			tasks: [
 				{
 					id: "656F3AFA4D80C022"
-					item: { components: { "ftbquests:missing_item": "splendid_slimes:slime_incubator" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "splendid_slimes:slime_incubator" }
 					type: "item"
 				}
 				{
 					id: "7FFDB09C606FA9A3"
-					item: { components: { "ftbquests:missing_item": "splendid_slimes:slime_heart" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "splendid_slimes:slime_breed": "splendid_slimes:slimy" }, count: 1, id: "splendid_slimes:slime_heart" }
 					type: "item"
 				}
 			]
-			x: 0.75d
-			y: 4.5d
+			x: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["07A551F04BB9A117"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "splendid_slimes:plort_rippit"
-				}
-				id: "ftbquests:missing_item"
+				id: "splendid_slimes:plort_rippit"
 			}
 			id: "41029F073ADDDC2F"
 			rewards: [{
@@ -474,18 +465,11 @@
 				}
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "515FED7B43C70FE6"
-					item: { components: { "ftbquests:missing_item": "splendid_slimes:plort" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "0C1A3A4EF0AE3856"
-					item: { components: { "ftbquests:missing_item": "splendid_slimes:plort_rippit" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0C1A3A4EF0AE3856"
+				item: { count: 1, id: "splendid_slimes:plort_rippit" }
+				type: "item"
+			}]
 			x: 8.75d
 			y: 5.5d
 		}
@@ -499,7 +483,7 @@
 			}]
 			tasks: [{
 				id: "3F72902171D6763F"
-				item: { components: { "ftbquests:missing_item": "splendid_slimes:corral_block" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "splendid_slimes:corral_block" }
 				type: "item"
 			}]
 			x: 3.25d
@@ -533,9 +517,9 @@
 			tasks: [{
 				icon: {
 					components: {
-						"ftbquests:missing_item": "splendid_slimes:slime_item"
+						"splendid_slimes:slime_breed": "splendid_slimes:slimy"
 					}
-					id: "ftbquests:missing_item"
+					id: "splendid_slimes:slime_item"
 				}
 				id: "65C4C6928BF2A227"
 				observation_type: "entity_type"
@@ -551,25 +535,25 @@
 			dependencies: ["632578AFE8A0D12D"]
 			id: "5C9C7A5A88613109"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "577C0F0F5A40DFD6"
-				type: "random"
+				id: "14F5C91918B8C3AC"
+				item: {
+					count: 1
+					id: "splendid_slimes:slimepedia"
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "5B3FC5C7783BB680"
-				item: { components: { "ftbquests:missing_item": "splendid_slimes:slime_vac" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "splendid_slimes:slime_vac" }
 				type: "item"
 			}]
-			x: 0.75d
-			y: 6.5d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["747B28CA5F55AFA7"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "splendid_slimes:slime_item"
-				}
-				id: "ftbquests:missing_item"
+				id: "minecraft:campfire"
 			}
 			id: "07A551F04BB9A117"
 			min_required_dependencies: 1
@@ -600,21 +584,15 @@
 		{
 			dependencies: ["07A551F04BB9A117"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "simplehats:slime_head"
-				}
-				id: "ftbquests:missing_item"
+				id: "starcatcher:slimey_bobber"
 			}
 			id: "1030BCF34FEAE03C"
 			rewards: [{
 				count: 8
 				id: "44E79EEB6DF983D7"
 				item: {
-					components: {
-						"ftbquests:missing_item": "splendid_slimes:rocket_pod"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "splendid_slimes:rocket_pod"
 				}
 				type: "item"
 			}]
@@ -628,17 +606,9 @@
 		{
 			dependencies: ["07A551F04BB9A117"]
 			icon: {
-				id: "splendid_slimes:slime_ticket"
+				id: "cluttered:heart_cake"
 			}
 			id: "668AEE0B5CD49EE4"
-			rewards: [{
-				id: "3FE7A424DC656AA8"
-				item: {
-					count: 1
-					id: "splendid_slimes:slime_ticket"
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "7D9ADA6687719BF7"
 				type: "checkmark"
@@ -801,10 +771,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"5C9C7A5A88613109"
-				"139B02AFBCBBF350"
-			]
+			dependencies: ["5C9C7A5A88613109"]
 			id: "2C9C87690BD8E23B"
 			min_required_dependencies: 1
 			rewards: [{
@@ -820,7 +787,7 @@
 			}]
 			tasks: [{
 				id: "2933B9035E879D0D"
-				item: { components: { "ftbquests:missing_item": "splendid_slimes:plort" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "splendid_slimes:slime_breed": "splendid_slimes:slimy" }, count: 1, id: "splendid_slimes:plort" }
 				type: "item"
 			}]
 			x: 2.25d
@@ -898,17 +865,14 @@
 			rewards: [{
 				id: "6766C5B6D5AD2DF5"
 				item: {
-					components: {
-						"ftbquests:missing_item": "society:wine_keg"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "artisan_machines:wine_keg"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "42E7CABF0E6A19DC"
-				item: { components: { "ftbquests:missing_item": "society:wine_keg" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:wine_keg" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -918,19 +882,16 @@
 			dependencies: ["07A551F04BB9A117"]
 			id: "66C1440EFF12DC66"
 			rewards: [{
-				id: "47A229EC3B1CEBC8"
+				id: "58DA5F3B1281ACDE"
 				item: {
-					components: {
-						"ftbquests:missing_item": "splendid_slimes:slime_candy"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "splendid_slimes:slime_candy"
 				}
 				type: "item"
 			}]
 			tasks: [{
-				id: "1D9713E05007CC59"
-				item: { components: { "ftbquests:missing_item": "splendid_slimes:slime_inspector" }, count: 1, id: "ftbquests:missing_item" }
+				id: "3A59F33F6E8BBFA0"
+				item: { count: 1, id: "splendid_slimes:slime_inspector" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -1096,16 +1057,16 @@
 			tasks: [
 				{
 					id: "2DA4C5918EDD2952"
-					item: { components: { "society:npc_id": "society:witch" }, count: 1, id: "society:invitation" }
+					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 					match_components: "strict"
 					type: "item"
 				}
 				{
 					icon: {
 						components: {
-							"society:npc_id": "society:witch"
+							"ftbquests:missing_item": "society:villager"
 						}
-						id: "society:villager"
+						id: "ftbquests:missing_item"
 					}
 					id: "47A5E6018A6FB99F"
 					stage: "invited_witch"

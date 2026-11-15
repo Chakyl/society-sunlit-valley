@@ -6,9 +6,9 @@
 	group: "45EE533BBDF5A2A2"
 	icon: {
 		components: {
-			"society:npc_id": "society:carpenter"
+			"society:npc_id": "society:librarian"
 		}
-		id: "society:villager"
+		id: "society:invitation"
 	}
 	id: "20D348A9B6875391"
 	images: [
@@ -101,9 +101,9 @@
 			dependencies: ["664E4A3806C40A78"]
 			icon: {
 				components: {
-					"society:npc_id": "society:shepherd"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "3CF0897E67574877"
 			rewards: [{
@@ -117,7 +117,7 @@
 			}]
 			tasks: [{
 				id: "587C3337DCD6144D"
-				item: { components: { "society:npc_id": "society:shepherd" }, count: 1, id: "society:invitation" }
+				item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -129,9 +129,9 @@
 			hide_dependent_lines: true
 			icon: {
 				components: {
-					"society:npc_id": "society:carpenter"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "664E4A3806C40A78"
 			rewards: [{
@@ -145,7 +145,7 @@
 			}]
 			tasks: [{
 				id: "0B63F83931AB06AE"
-				item: { components: { "society:npc_id": "society:carpenter" }, count: 1, id: "society:invitation" }
+				item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -158,9 +158,9 @@
 			hide_dependent_lines: true
 			icon: {
 				components: {
-					"society:npc_id": "society:market"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "048655663A5A82FC"
 			rewards: [{
@@ -174,7 +174,7 @@
 			}]
 			tasks: [{
 				id: "233BA4DFB56C7C30"
-				item: { components: { "society:npc_id": "society:market" }, count: 1, id: "society:invitation" }
+				item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -185,9 +185,9 @@
 			dependencies: ["048655663A5A82FC"]
 			icon: {
 				components: {
-					"society:npc_id": "society:fisher"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "2A64214504AAD5E5"
 			rewards: [{
@@ -201,7 +201,7 @@
 			}]
 			tasks: [{
 				id: "550ADDBC7FEA01A9"
-				item: { components: { "society:npc_id": "society:fisher" }, count: 1, id: "society:invitation" }
+				item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -212,9 +212,9 @@
 			dependencies: ["664E4A3806C40A78"]
 			icon: {
 				components: {
-					"society:npc_id": "society:blacksmith"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "499871FDD2A65F2C"
 			rewards: [{
@@ -228,7 +228,7 @@
 			}]
 			tasks: [{
 				id: "432B8C3C9C058DD3"
-				item: { components: { "society:npc_id": "society:blacksmith" }, count: 1, id: "society:invitation" }
+				item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -241,9 +241,9 @@
 			hide_dependent_lines: true
 			icon: {
 				components: {
-					"society:npc_id": "society:banker"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "4633C0427ACA18D3"
 			rewards: [{
@@ -256,7 +256,7 @@
 			}]
 			tasks: [{
 				id: "6A559CD37BBF1E5B"
-				item: { components: { "society:npc_id": "society:banker" }, count: 1, id: "society:invitation" }
+				item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -280,9 +280,9 @@
 			hide_dependency_lines: true
 			icon: {
 				components: {
-					"society:npc_id": "society:librarian"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "49477F09DF6EBA50"
 			tasks: [{
@@ -325,9 +325,9 @@
 			dependencies: ["66E1AC55824DF1D9"]
 			icon: {
 				components: {
-					"society:npc_id": "society:witch"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "52F1DCA9462F825F"
 			tasks: [{
@@ -341,9 +341,9 @@
 			dependencies: ["5A369FC904BCF5EE"]
 			icon: {
 				components: {
-					"society:npc_id": "society:trader"
+					"ftbquests:missing_item": "society:villager"
 				}
-				id: "society:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "1348507AE17E187E"
 			tasks: [{

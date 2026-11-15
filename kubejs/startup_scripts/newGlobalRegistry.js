@@ -22,7 +22,7 @@ global.CROP_DEFINITIONS = [
 
     { item: "minecraft:beetroot", storageBlock: "farmersdelight:beetroot_crate", dropCount: 1, growDays: 5, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "minecraft:beetroots" },
     { item: "veggiesdelight:sweet_potato", storageBlock: "veggiesdelight:sweet_potato_crate", dropCount: [2, 4], growDays: 12, seasons: ["autumn"], yearTwo: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:sweet_potato_crop" },
-    { item: "minecraft:pumpkin", brokenblock: "farmersdelight:pumpkin_slice", dropCount: 1, growDays: 7, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "minecraft:pumpkin_stem" },
+    { item: "minecraft:pumpkin", brokenBlock: "farmersdelight:pumpkin_slice", dropCount: 1, growDays: 7, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "minecraft:pumpkin_stem" },
     { item: "culturaldelights:eggplant", storageBlock: "culturaldelights:eggplant_crate", dropCount: 1, growDays: 7, regrowDays: 5, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "culturaldelights:eggplants" },
     { item: "veggiesdelight:broccoli", storageBlock: "veggiesdelight:broccoli_crate", dropCount: [1, 2], growDays: 5, seasons: ["autumn"], lootOnly: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:broccoli_crop" },
     { item: "vintagedelight:peanut", storageBlock: "vintagedelight:peanut_crate", dropCount: [1, 3], growDays: 7, seasons: ["autumn"], yearTwo: true, products: ["preserves"], classifications: ["nut"], cropBlock: "vintagedelight:peanut_crop" },
@@ -34,7 +34,7 @@ global.CROP_DEFINITIONS = [
     { item: "society:sparkpod", storageBlock: "society:sparkpod_crate", dropCount: 1, growDays: 8, seasons: ["spring"], customMult: 1.5, products: ["preserves", "wine", "dried"], classifications: ["fruit"], cropBlock: "society:sparkpod" },
     { item: "minecraft:sweet_berries", storageBlock: "quark:berry_sack", dropCount: [2, 3], growDays: 3, regrowDays: 1, seasons: ["spring"], reeseedable: true, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:sweet_berry_wine", classifications: ["fruit", "berry"], cropBlock: "minecraft:sweet_berry_bush" },
 
-    { item: "minecraft:melon", brokenblock: "minecraft:melon_slice", dropCount: 1, growDays: 7, seasons: ["summer"], lootOnly: true, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:watermelon_juice", classifications: ["fruit"], cropBlock: "minecraft:melon_stem" },
+    { item: "minecraft:melon", brokenBlock: "minecraft:melon_slice", dropCount: 1, growDays: 7, seasons: ["summer"], lootOnly: true, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:watermelon_juice", classifications: ["fruit"], cropBlock: "minecraft:melon_stem" },
     { item: "society:blueberry", storageBlock: "society:blueberry_crate", dropCount: [3, 4], growDays: 13, regrowDays: 4, seasons: ["summer"], products: ["preserves", "wine", "dried"], classifications: ["fruit"], cropBlock: "society:blueberry" },
 
     { item: "society:cranberry", storageBlock: "society:cranberry_crate", dropCount: [2, 3], growDays: 7, regrowDays: 5, seasons: ["autumn"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:carignan", classifications: ["fruit", "berry"], cropBlock: "society:cranberry" },

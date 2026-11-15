@@ -561,14 +561,6 @@
 		""
 		"It rolls the entire Fish Pond loot table at a random population for each Roe processed. If it doesn't drop anything, it'll have a 10%% chance to produce &6Algae&r."
 	]
-	quest.1E2D2FF9428F96DA.quest_desc: [
-		"The &6Sewing Table&r can cut Artisan Canvas into clothing and hats when combined with other materials."
-		""
-		"It requires a &6Sewing Needle&r to craft."
-		""
-		"Crafting it with a &6Chest&r allows it to retain its inventory."
-	]
-	quest.1E2D2FF9428F96DA.title: "Sewing Clothing"
 	quest.1E5531421815CDB3.quest_desc: [
 		"Upgrading your tools past wood requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template purchased from a &6Blacksmith Villager&r."
 		""
@@ -764,13 +756,12 @@
 	quest.2746CBE8BDA47E40.quest_desc: ["&6Diamond Sprinklers&r are far more expensive than the previous tier, but work in a significant area."]
 	quest.2777643C0B7C85A7.quest_subtitle: "Crab Traps (Deluxe bait only)"
 	quest.28029230D7FD63D6.quest_desc: [
-		"Wondering why your tools aren't breaking? All of the main tools and armors have &6infinite&r durability when used."
+		"Wondering why your tools aren't breaking? "
 		""
-		"There's one small tradeoff: these tools lose 15%% + 15 durability on death. This only applies to equipment in your hotbar and armor."
+		"All of the main tools and armors have &6infinite&r durability, and cannot break."
 		""
-		"Tools can be repaired in an anvil infinitely, with significantly lower experience costs. Unbreaking also reduces the amount of durability lost."
+		"They can cost a pretty penny to upgrade, so make sure not to lose them in other ways!"
 	]
-	quest.28029230D7FD63D6.quest_subtitle: "Not quite..."
 	quest.28029230D7FD63D6.title: "No Durability?"
 	quest.28203635739BC73E.quest_desc: [
 		"Baits can be added using a &6Tackle Box&r and decrease the amount of time between bites."
@@ -1240,12 +1231,6 @@
 	]
 	quest.45120BEE01BB36B4.quest_subtitle: "Complete all Bundles"
 	quest.45120BEE01BB36B4.title: "Rebuilder"
-	quest.4513A91DA55E8069.quest_desc: [
-		"&6Small Ships&r can be crafted using &6Artisan Canvas&r, allowing quicker sailing through the ocean. By default, the &6R&r hotkey can be used to drop the sail."
-		""
-		"These can be used to transport large amounts of exotic farm animals from far away lands."
-	]
-	quest.4513A91DA55E8069.title: "Set Sail"
 	quest.455F9A4D9B1FF43E.quest_desc: ["The seed for &bAncient Fruit&r is found from a variety of sources... But you'll need to figure that out for yourself."]
 	quest.455F9A4D9B1FF43E.quest_subtitle: "???"
 	quest.4564673A6912E917.quest_desc: [
@@ -1830,11 +1815,6 @@
 	]
 	quest.649860C19CAE0F17.quest_desc: ["Don't just stuff your farm with nameless livestock- naming a farm animal will make them like you a good bit more!"]
 	quest.649860C19CAE0F17.title: "Pet Names"
-	quest.64A93713A3B85B9A.quest_desc: [
-		"Is your hotbar a mess? A &6Toolbelt&r can store your tools for quick access using a single hotkey (&6R&r by default)."
-		""
-		"By default it can only carry two slots, but multiple &6Belt Pouches&r can be sewn in for more slots."
-	]
 	quest.6541E0430F050B7D.title: "8,192 Bundle"
 	quest.661A3A466ABF29BA.quest_desc: ["Only &66&r required for bundle completion."]
 	quest.661A3A466ABF29BA.title: "The Missing Bundle"

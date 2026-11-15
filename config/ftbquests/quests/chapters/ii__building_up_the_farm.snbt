@@ -44,7 +44,7 @@
 			tasks: [
 				{
 					id: "6898A763A52A07CB"
-					item: { components: { "society:npc_id": "society:market" }, count: 1, id: "society:invitation" }
+					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 					match_components: "strict"
 					type: "item"
 				}
@@ -52,9 +52,9 @@
 					disable_toast: true
 					icon: {
 						components: {
-							"society:npc_id": "society:market"
+							"ftbquests:missing_item": "society:villager"
 						}
-						id: "society:villager"
+						id: "ftbquests:missing_item"
 					}
 					id: "06F99A1BA55E885E"
 					stage: "invited_market"
@@ -158,10 +158,7 @@
 			dependencies: ["6ADD884F3FFE5D42"]
 			hide_until_deps_complete: true
 			icon: {
-				components: {
-					"ftbquests:missing_item": "dew_drop_farmland_growth:weak_fertilizer"
-				}
-				id: "ftbquests:missing_item"
+				id: "sunrisegardening:weak_fertilizer"
 			}
 			id: "1D5820FBDD8EB900"
 			rewards: [
@@ -235,17 +232,14 @@
 			rewards: [{
 				id: "0E153FE7C3B55BC9"
 				item: {
-					components: {
-						"ftbquests:missing_item": "society:seed_maker"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "artisan_machines:seed_maker"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "3DDE2D80A0FB093E"
-				item: { components: { "ftbquests:missing_item": "society:seed_maker" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:seed_maker" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -429,7 +423,7 @@
 			tasks: [
 				{
 					id: "03517B186B1545D2"
-					item: { components: { "society:npc_id": "society:shepherd" }, count: 1, id: "society:invitation" }
+					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 					match_components: "strict"
 					type: "item"
 				}
@@ -437,9 +431,9 @@
 					disable_toast: true
 					icon: {
 						components: {
-							"society:npc_id": "society:shepherd"
+							"ftbquests:missing_item": "society:villager"
 						}
-						id: "society:villager"
+						id: "ftbquests:missing_item"
 					}
 					id: "2E87112873365470"
 					stage: "invited_shepherd"
@@ -472,10 +466,7 @@
 		{
 			dependencies: ["2C3FD9E2DA520620"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "candlelight:hearth"
-				}
-				id: "ftbquests:missing_item"
+				id: "tanukidecor:neon_heart_sign"
 			}
 			id: "3D324E99DF28D224"
 			rewards: [
@@ -623,8 +614,8 @@
 				item: { count: 1, id: "society:magic_shears" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["45739CCE73037CBB"]
@@ -641,7 +632,7 @@
 			}]
 			tasks: [{
 				id: "2F796FE56AA69911"
-				item: { components: { "ftbquests:missing_item": "society:mayonnaise_machine" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:mayonnaise_machine" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -661,7 +652,7 @@
 			}]
 			tasks: [{
 				id: "10B6EDC1EF4BD4DE"
-				item: { components: { "ftbquests:missing_item": "society:cheese_press" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:cheese_press" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -692,7 +683,7 @@
 			tasks: [
 				{
 					id: "31C5F2C4CB8E33F1"
-					item: { components: { "society:npc_id": "society:fisher" }, count: 1, id: "society:invitation" }
+					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 					match_components: "strict"
 					type: "item"
 				}
@@ -700,9 +691,9 @@
 					disable_toast: true
 					icon: {
 						components: {
-							"society:npc_id": "society:fisher"
+							"ftbquests:missing_item": "society:villager"
 						}
-						id: "society:villager"
+						id: "ftbquests:missing_item"
 					}
 					id: "06F8F48507B23D58"
 					stage: "invited_fisher"
@@ -925,7 +916,7 @@
 			}]
 			tasks: [{
 				id: "45D7CACD9D012903"
-				item: { count: 1, id: "plentifulponds:fish_pond" }
+				item: { components: { "ftbquests:missing_item": "plentifulponds:fish_pond" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1026,7 +1017,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["55FAFBCDEDDA41A5"]
 			hide_until_deps_complete: true
 			id: "5AD7C2BCDA001A53"
 			rewards: [{
@@ -1039,41 +1029,11 @@
 			}]
 			tasks: [{
 				id: "4F6728330BE86674"
-				item: { components: { "ftbquests:missing_item": "society:loom" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:loom" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["5AD7C2BCDA001A53"]
-			hide_dependency_lines: false
-			hide_until_deps_complete: true
-			icon: {
-				components: {
-					"ftbquests:missing_item": "smallships:acacia_brigg"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "4513A91DA55E8069"
-			rewards: [{
-				id: "7964D2EC916385E4"
-				item: {
-					components: {
-						"ftbquests:missing_item": "smallships:cannon"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "7BDB605D869BF845"
-				item: { components: { "ftbquests:missing_item": "smallships:sail" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 3.5d
+			x: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
@@ -1092,8 +1052,8 @@
 				item: { count: 1, id: "comforts:sleeping_bag_white" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: 2.5d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["429FEBEC239B975F"]
@@ -1128,81 +1088,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["5AD7C2BCDA001A53"]
-			hide_until_deps_complete: true
-			icon: {
-				components: {
-					"ftbquests:missing_item": "sewingkit:sewing_station"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "1E2D2FF9428F96DA"
-			rewards: [{
-				id: "2D757CF0C0E54E8F"
-				item: {
-					components: {
-						"ftbquests:missing_item": "simplehats:hatbag_rare"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "18DA0E8D784CB172"
-					item: { components: { "ftbquests:missing_item": "sewingkit:sewing_station" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "313E29476FD265D4"
-					item: { components: { "ftbquests:missing_item": "sewingkit:iron_sewing_needle" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
-			x: 11.0d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"5AD7C2BCDA001A53"
-				"1E2D2FF9428F96DA"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				components: {
-					"ftbquests:missing_item": "toolbelt:belt"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "64A93713A3B85B9A"
-			rewards: [{
-				id: "54EE1670688A648F"
-				item: {
-					components: {
-						"ftbquests:missing_item": "toolbelt:pouch"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "29588D87ECD6D7B6"
-					item: { components: { "ftbquests:missing_item": "toolbelt:belt" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "0A3AE6DBA284A165"
-					item: { components: { "ftbquests:missing_item": "toolbelt:pouch" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["6ADD884F3FFE5D42"]
 			hide_until_deps_complete: true
 			id: "166D3A381C5C9A8F"
@@ -1210,13 +1095,13 @@
 				id: "5D55DA5A6302279E"
 				item: {
 					count: 1
-					id: "vintagedelight:pepper_jam_mason_jar"
+					id: "society:sweet_berries_preserves"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "37751E3B943FC4F8"
-				item: { components: { "ftbquests:missing_item": "society:preserves_jar" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:preserves_jar" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -1418,7 +1303,7 @@
 				id: "40C6F28062432BDD"
 				item: {
 					components: {
-						"ftbquests:missing_item": "dew_drop_farmland_growth:low_quality_fertilizer"
+						"ftbquests:missing_item": "sunrise_gardening:low_quality_fertilizer"
 					}
 					count: 1
 					id: "ftbquests:missing_item"
@@ -1450,7 +1335,7 @@
 			}]
 			tasks: [{
 				id: "4B83A80BBA2CE38D"
-				item: { components: { "ftbquests:missing_item": "society:oil_maker" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "artisan_machines:oil_maker" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -1641,16 +1526,16 @@
 			tasks: [
 				{
 					id: "1FA1D3740CCD0A8D"
-					item: { components: { "society:npc_id": "society:librarian" }, count: 1, id: "society:invitation" }
+					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
 					match_components: "strict"
 					type: "item"
 				}
 				{
 					icon: {
 						components: {
-							"society:npc_id": "society:librarian"
+							"ftbquests:missing_item": "society:villager"
 						}
-						id: "society:villager"
+						id: "ftbquests:missing_item"
 					}
 					id: "62E5A962C8F9D3E3"
 					stage: "invited_librarian"

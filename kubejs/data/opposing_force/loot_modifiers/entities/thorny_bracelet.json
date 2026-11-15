@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "#sinew:post_nether_spawns"
+      }
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.005
+    }
+  ],
+  "table": "opposing_force:entities/thorny_bracelet"
+}

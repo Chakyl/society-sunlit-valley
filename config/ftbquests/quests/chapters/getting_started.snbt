@@ -5,10 +5,7 @@
 	filename: "getting_started"
 	group: "36A9504C17205521"
 	icon: {
-		components: {
-			"ftbquests:missing_item": "shippingbin:basic_shipping_bin"
-		}
-		id: "ftbquests:missing_item"
+		id: "dew_drop_watering_cans:copper_watering_can"
 	}
 	id: "1F990A2A648BE4A1"
 	images: [ ]
@@ -111,7 +108,10 @@
 		{
 			dependencies: ["73A85902CE35A43A"]
 			icon: {
-				id: "minecraft:bell"
+				components: {
+					"society:npc_id": "society:carpenter"
+				}
+				id: "society:invitation"
 			}
 			id: "66D159252C70D5F2"
 			rewards: [
@@ -323,11 +323,8 @@
 				count: 4
 				id: "29719FFFA759ACC8"
 				item: {
-					components: {
-						"ftbquests:missing_item": "farm_and_charm:farmers_bread"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "buzzier_bees:honey_bread"
 				}
 				type: "item"
 			}]
@@ -345,17 +342,6 @@
 				id: "minecraft:anvil"
 			}
 			id: "28029230D7FD63D6"
-			rewards: [{
-				id: "5B6BE7A8ABFD9ED3"
-				item: {
-					components: {
-						"ftbquests:missing_item": "gag:escape_rope"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "787836F003705C9D"
 				type: "checkmark"
@@ -365,6 +351,9 @@
 		}
 		{
 			dependencies: ["3F759C6DEEBC61FD"]
+			icon: {
+				id: "dew_drop_watering_cans:copper_watering_can"
+			}
 			id: "472F40ECF199DD42"
 			rewards: [{
 				id: "02B38977EEB3CEAE"
@@ -388,6 +377,7 @@
 				id: "atmospheric:sun_pottery_sherd"
 			}
 			id: "7D1394F6356086D0"
+			invisible: true
 			rewards: [{
 				id: "03D8946C4D97A2B3"
 				item: {
@@ -425,7 +415,7 @@
 			}]
 			tasks: [{
 				id: "6D34DCA139A38534"
-				item: { components: { "ftbfiltersystem:filter": "or(item(society:crystal_of_regret_farming)item(society:crystal_of_regret_husbandry)item(society:crystal_of_regret_mining)item(society:crystal_of_regret_fishing)item(society:crystal_of_regret_adventuring))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -473,7 +463,10 @@
 		{
 			dependencies: ["1A4FD076999BF29F"]
 			icon: {
-				id: "society:pig_race_ticket"
+				components: {
+					"society:npc_id": "society:banker"
+				}
+				id: "society:invitation"
 			}
 			id: "4DB169DA4B4CCFBA"
 			rewards: [{
@@ -527,7 +520,10 @@
 		{
 			dependencies: ["66D159252C70D5F2"]
 			icon: {
-				id: "society:iron_upgrade_smithing_template"
+				components: {
+					"society:npc_id": "society:blacksmith"
+				}
+				id: "society:invitation"
 			}
 			id: "24C86673E1F57A3E"
 			rewards: [

@@ -52,6 +52,11 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "splendid_slimes": {
+    "splendid_slime": true,
+    "slime_spawner": true,
+    "slime_incubator": true
+  },
   "treechop": {
     "plugin": true,
     "show_tree_block_counts": true,
@@ -145,9 +150,5 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "item_descriptions": {
-    "block_descriptions": true,
-    "entity_descriptions": true
   }
 }
