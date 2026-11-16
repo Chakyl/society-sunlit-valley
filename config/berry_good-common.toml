@@ -1,0 +1,15 @@
+	[tweaks.sweet_berries]
+		#If Sweet Berry Bushes require pips to place, to prevent accidental placement
+		"Sweet Berries require pips" = true
+
+	[tweaks.glow_berries]
+		#If Cave Vines require pips to place, to prevent accidental placement
+		"Glow Berries require pips" = true
+		#If Glow Berries give Glowing upon consumption
+		"Glow Berries give Glowing" = false
+
+	[items.music_disc_fox]
+		#If Foxes can spawn with a Fox music disc
+		"Enable Fox music disc" = true
+		#The chance that a Fox has to spawn with a Fox music disc
+		"Fox music disc chance" = 0.01

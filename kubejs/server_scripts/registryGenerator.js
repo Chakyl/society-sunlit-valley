@@ -291,7 +291,7 @@ let basicArtisanMachineRecipe = (e, type, input, output, hours) => {
     }
     e.custom({
         type: type,
-        blacklisted_upgrades: [],
+        rank: 0,
         required_upgrades: [],
         chanced_results: [
             {
@@ -304,17 +304,17 @@ let basicArtisanMachineRecipe = (e, type, input, output, hours) => {
     })
 }
 let preservesJarRecipe = (e, input) => {
-    let output = [{ chance: 1.0, stack: { id: `society:${input.item.path}_preserves`, count: 1 } }];
+    let output = [{ chance: 1.0, stack: { identifier: `society:${input.item.path}_preserves`, count: 1 } }];
     let inputs = []
     inputs.push({ item: input.item });
     e.custom({
         type: "artisan_machines:preserves_jar",
-        blacklisted_upgrades: [
+        rank: 1,
+        required_upgrades: [
             {
                 item: "artisan_machines:stone_hand"
             }
         ],
-        required_upgrades: [],
         chanced_results: output,
         ingredients: inputs,
         processing_hours: 72
@@ -322,12 +322,8 @@ let preservesJarRecipe = (e, input) => {
     inputs.push({ item: input.item });
     e.custom({
         type: "artisan_machines:preserves_jar",
-        blacklisted_upgrades: [],
-        required_upgrades: [
-            {
-                item: "artisan_machines:stone_hand"
-            }
-        ],
+        rank: 0,
+        required_upgrades: [],
         chanced_results: output,
         ingredients: inputs,
         processing_hours: 72
@@ -341,10 +337,10 @@ ServerEvents.recipes((e) => {
 
             }
             if (crop.products.includes("wine") && crop.wine) {
-                basicArtisanMachineRecipe(e, "artisan_machines:wine_keg", { id: crop.item, count: 3 }, { id: crop.wine, count: 1 }, 144)
+                basicArtisanMachineRecipe(e, "artisan_machines:wine_keg", { id: crop.item, count: 3 }, { identifier: crop.wine, count: 1 }, 144)
             }
             if (crop.products.includes("dried")) {
-                basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { id: crop.dried ? crop.dried : `society:dried_${crop.item.path}`, count: 1 }, 144)
+                basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: crop.dried ? crop.dried : `society:dried_${crop.item.path}`, count: 1 }, 144)
             }
             // if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
             // if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])

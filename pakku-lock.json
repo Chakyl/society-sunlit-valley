@@ -708,29 +708,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "artisan_machines-0.1-NEOFORGE-1.21.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9585/193/artisan_machines-0.1-NEOFORGE-1.21.1.jar",
-                    "id": "9585193",
-                    "parent_id": "1801755",
-                    "hashes": {
-                        "sha1": "289a7c0829f897f944224649160200aa861a2d75",
-                        "md5": "d32ed0f99dadbacc6bd0d7780e40d94d"
-                    },
-                    "required_dependencies": [],
-                    "size": 463931,
-                    "date_published": "2026-11-13T02:41:18.667Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "artisan_machines-0.1-NEOFORGE-1.21.1.jar",
+                    "file_name": "artisan_machines-0.2-NEOFORGE-1.21.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -738,16 +717,37 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/jdQphBVF/versions/hDvcIodi/artisan_machines-0.1-NEOFORGE-1.21.1.jar",
-                    "id": "hDvcIodi",
+                    "url": "https://cdn.modrinth.com/data/jdQphBVF/versions/8Ny7AsYb/artisan_machines-0.2-NEOFORGE-1.21.1.jar",
+                    "id": "8Ny7AsYb",
                     "parent_id": "jdQphBVF",
                     "hashes": {
-                        "sha512": "8d760426b487954d05b054ce8f18fe769de45b8aa207d15b70a30346d86a3ba9a05d39a8c8496dbcd8167ebd25a7ec9530951c5b9d93b666c6553e18346c5555",
-                        "sha1": "289a7c0829f897f944224649160200aa861a2d75"
+                        "sha512": "1f33b6bb6d2225ef584a2380cf406b3e5d9e70340899d9da372c6160e035ee64940422132c21146e68897c3bc37bb8e5aeb2f06e2f6bf7fe6d6350ff794755a2",
+                        "sha1": "93706d6b92fd79a8bb0552a2dc3783b96378fa85"
                     },
                     "required_dependencies": [],
-                    "size": 463931,
-                    "date_published": "2026-11-13T02:47:13.790982Z"
+                    "size": 648789,
+                    "date_published": "2026-11-16T07:57:37.693005Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "artisan_machines-0.2-NEOFORGE-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9644/733/artisan_machines-0.2-NEOFORGE-1.21.1.jar",
+                    "id": "9644733",
+                    "parent_id": "1801755",
+                    "hashes": {
+                        "sha1": "93706d6b92fd79a8bb0552a2dc3783b96378fa85",
+                        "md5": "3287dfeeee8a6ce2f51a5270da358e67"
+                    },
+                    "required_dependencies": [],
+                    "size": 648789,
+                    "date_published": "2026-11-16T07:57:25.170Z"
                 }
             ]
         },
@@ -1294,6 +1294,74 @@
                     "required_dependencies": [],
                     "size": 932199,
                     "date_published": "2024-11-29T23:35:17.398501Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "HQgJf0T6N9nbUlW7",
+            "pakku_links": [
+                "IMNyJ9MamKwkvPnT"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "berry-good",
+                "modrinth": "berry-good"
+            },
+            "name": {
+                "curseforge": "Berry Good",
+                "modrinth": "Berry Good"
+            },
+            "id": {
+                "curseforge": "355589",
+                "modrinth": "2WZWaKCl"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "berry_good-1.21.1-8.0.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8892/744/berry_good-1.21.1-8.0.2.jar",
+                    "id": "8892744",
+                    "parent_id": "355589",
+                    "hashes": {
+                        "sha1": "b6d0dacc6dc69690e07b438b7b6262591e5ecf11",
+                        "md5": "ab19763546f8bcb077bfa404a97739f1"
+                    },
+                    "required_dependencies": [
+                        "382216"
+                    ],
+                    "size": 3061227,
+                    "date_published": "2026-09-16T04:06:56.413Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "berry_good-1.21.1-8.0.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/2WZWaKCl/versions/sqpGEcfC/berry_good-1.21.1-8.0.2.jar",
+                    "id": "sqpGEcfC",
+                    "parent_id": "2WZWaKCl",
+                    "hashes": {
+                        "sha512": "da9749bca0856cdcae642b52452bb56a15f2269c441c93dbaf9285abf99dcdca92f8d282dd9fba9475a8369e18091ecbafb788745a4fbeec522f8d3f56c62f9f",
+                        "sha1": "b6d0dacc6dc69690e07b438b7b6262591e5ecf11"
+                    },
+                    "required_dependencies": [
+                        "VsM5EDoI"
+                    ],
+                    "size": 3061227,
+                    "date_published": "2026-09-16T04:06:56.621186Z"
                 }
             ]
         },
@@ -2793,69 +2861,6 @@
                     "required_dependencies": [],
                     "size": 210569,
                     "date_published": "2026-04-14T09:29:40.223893Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "x84UYF3u1AjeVAwo",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "comforts",
-                "modrinth": "comforts"
-            },
-            "name": {
-                "curseforge": "Comforts",
-                "modrinth": "Comforts"
-            },
-            "id": {
-                "curseforge": "276951",
-                "modrinth": "SaCpeal4"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "comforts-neoforge-9.0.5+1.21.1.jar",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7515/858/comforts-neoforge-9.0.5+1.21.1.jar",
-                    "id": "7515858",
-                    "parent_id": "276951",
-                    "hashes": {
-                        "sha1": "21d6bee3821d62fe3356c51fb1d697871a3087ff",
-                        "md5": "ba7a318dcf4190a27e017eacac47427e"
-                    },
-                    "required_dependencies": [],
-                    "size": 422658,
-                    "date_published": "2026-01-24T04:53:25.220Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "comforts-neoforge-9.0.5+1.21.1.jar",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/SaCpeal4/versions/3kpPjcTc/comforts-neoforge-9.0.5+1.21.1.jar",
-                    "id": "3kpPjcTc",
-                    "parent_id": "SaCpeal4",
-                    "hashes": {
-                        "sha512": "e9de2952545e9e773a6e78fc501e8cd231ea19750c30404355b71df9928eb5bd0921a4429aeca9d0fa10e67717f77fcf7a2aae117ac953b8f7de246b0ad685e4",
-                        "sha1": "21d6bee3821d62fe3356c51fb1d697871a3087ff"
-                    },
-                    "required_dependencies": [],
-                    "size": 422658,
-                    "date_published": "2026-01-24T04:53:24.006527Z"
                 }
             ]
         },
@@ -12867,30 +12872,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "puffish_skills-0.19.1-1.21-neoforge.jar",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8941/352/puffish_skills-0.19.1-1.21-neoforge.jar",
-                    "id": "8941352",
-                    "parent_id": "835091",
-                    "hashes": {
-                        "sha1": "9e0b16f97427fc7b0049fa3f518579cdc9fe59f9",
-                        "md5": "1c42b09a0ef03ce447525d0b3af66f3b"
-                    },
-                    "required_dependencies": [],
-                    "size": 653105,
-                    "date_published": "2026-09-21T16:57:27.703Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "puffish_skills-0.19.1-1.21-neoforge.jar",
+                    "file_name": "puffish_skills-0.19.2-1.21-neoforge.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.1"
@@ -12899,16 +12882,38 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/hqQqvaa4/versions/uqAz8XFU/puffish_skills-0.19.1-1.21-neoforge.jar",
-                    "id": "uqAz8XFU",
+                    "url": "https://cdn.modrinth.com/data/hqQqvaa4/versions/8tfcI2wU/puffish_skills-0.19.2-1.21-neoforge.jar",
+                    "id": "8tfcI2wU",
                     "parent_id": "hqQqvaa4",
                     "hashes": {
-                        "sha512": "2b5e11f8677b472d971cab3aa36e6e9267d04065ff40b70f537ace85f704b5d6e99b259b02776618d69592f26d01d5ea6dea5a241a1c5a3a4f5cde08ee492008",
-                        "sha1": "9e0b16f97427fc7b0049fa3f518579cdc9fe59f9"
+                        "sha512": "0dd07a6ca391ce00975f5b6c147cd993ce83d4ab3dde634885bc124f2d7fdfdcb631425539e2dbfdf7e0925795737c27bd4560aa5a6940ac0547dbd72c130b7f",
+                        "sha1": "e7439fa56036bfacf228269b8b89f10cbbba13fd"
                     },
                     "required_dependencies": [],
-                    "size": 653105,
-                    "date_published": "2026-09-21T16:57:29.918626Z"
+                    "size": 652840,
+                    "date_published": "2026-10-08T19:21:41.790917Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "puffish_skills-0.19.2-1.21-neoforge.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/9101/377/puffish_skills-0.19.2-1.21-neoforge.jar",
+                    "id": "9101377",
+                    "parent_id": "835091",
+                    "hashes": {
+                        "sha1": "e7439fa56036bfacf228269b8b89f10cbbba13fd",
+                        "md5": "e3d3da1be25cc4c32c92c943b37b986f"
+                    },
+                    "required_dependencies": [],
+                    "size": 652840,
+                    "date_published": "2026-10-08T19:21:40.067Z"
                 }
             ]
         },

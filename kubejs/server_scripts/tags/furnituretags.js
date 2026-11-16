@@ -268,7 +268,8 @@ ServerEvents.tags('item', (e) => {
         "create:cuckoo_clock",
         "meadow:camera",
         "meadow:wheelbarrow",
-
+        "meadow:straw_bed",
+        
         "beautify:oak_picture_frame",
         "beautify:birch_picture_frame",
         "beautify:jungle_picture_frame",
