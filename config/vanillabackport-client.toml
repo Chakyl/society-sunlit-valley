@@ -26,7 +26,7 @@
 
 ["Chase the Skies"]
 	#enable the Locator Bar; disabling it on your client does not make you invisible on the server
-	enable_locator_bar = true
+	enable_locator_bar = false
 	#keep the experience bar and jump bar visible
 	locator_display_info_bar = false
 	#display compass targets such as Lodestones and death locations

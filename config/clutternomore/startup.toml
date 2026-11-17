@@ -1,0 +1,27 @@
+# If shape maps (grouping) should be loaded
+# default: true
+shape_maps = true
+# If vertical slabs should be added to all existing slabs
+# default: true
+vertical_slabs = true
+# If steps should be added to all existing stairs
+# default: true
+steps = true
+# If vertical stairs should be added to all existing stairs
+# default: false
+vertical_stairs = false
+# If vertical steps should be added to all existing stairs
+# default: false
+vertical_steps = false
+# If recipes should have their shapes replaced by the parent block
+# default: true
+recipe_fixes = true
+# If shapes should inherit their parent block's loot table
+# default: true
+inherit_loot_tables = true
+# If detailed warnings should be logged for development purposes
+# default: false
+detailed_logs = false
+# If a copy of the runtime datapack should be generated
+# default: false
+runtime_data_generation = false

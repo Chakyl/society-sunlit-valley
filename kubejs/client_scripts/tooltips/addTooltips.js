@@ -34,6 +34,7 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:toy_train",
       tooltip: "« Limited to 2 passengers : ants »",
     },
+    { item: "society:lost_bowtie", tooltip: 'It smells like ozone!' },
     {
       item: "society:perfect_cherry",
       tooltip: "It wants you to eat it",

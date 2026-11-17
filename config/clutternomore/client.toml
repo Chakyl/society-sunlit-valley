@@ -1,0 +1,22 @@
+# If scrolling past the end of the list should wrap around to the beginning
+# default: true
+wrap_scrolling = true
+# If the shape switcher menu should be scrolling or static
+# default: true
+scrolling = true
+# If the change block shape key should be held or toggled to open the menu
+# options: hold, toggle, press
+# default: hold
+hold = "HOLD"
+# If a copy of the runtime resourcepack should be generated
+# default: false
+runtime_asset_generation = false
+# If a small indicator on menu items with shapes should be displayed
+# default: true
+shape_indicator = true
+# If looking left/right in the shape switcher should switch shapes
+# default: false
+look_to_switch = false
+# If detailed tooltips for changing shapes should be displayed
+# default: true
+detailed_tooltips = true
