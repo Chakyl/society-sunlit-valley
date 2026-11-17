@@ -607,16 +607,4 @@ StartupEvents.registry("block", (e) => {
         .requiresTool(false)
         .parentModel("society:block/kubejs/fantasy_catalog")
         .displayName("♡ §eFantasy Catalog");
-
-    e.create("moreminecarts:greenhouse_glass_stairs", "stairs")
-        .soundType("glass")
-        .resistance(0.8)
-        .renderType("translucent")
-        .texture("moreminecarts:block/chiseled_organic_glass");
-
-    e.create("moreminecarts:greenhouse_glass_slab", "slab")
-        .soundType("glass")
-        .resistance(0.8)
-        .renderType("translucent")
-        .texture("moreminecarts:block/chiseled_organic_glass");
 });

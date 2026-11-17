@@ -401,8 +401,8 @@
 //     [
 //       "sunrisegardening:greenhouse_glass",
 //       "sunrisegardening:greenhouse_glass_pane",
-//       "moreminecarts:greenhouse_glass_stairs",
-//       "moreminecarts:greenhouse_glass_slab",
+//       "sunrisegardening:greenhouse_glass_stairs",
+//       "sunrisegardening:greenhouse_glass_slab",
 //     ],
 //     Text.translatable("tooltip.society.greenhouse_glass").gray()
 //   );
@@ -410,8 +410,8 @@
 //     [
 //       "sunrisegardening:greenhouse_glass",
 //       "sunrisegardening:greenhouse_glass_pane",
-//       "moreminecarts:greenhouse_glass_stairs",
-//       "moreminecarts:greenhouse_glass_slab",
+//       "sunrisegardening:greenhouse_glass_stairs",
+//       "sunrisegardening:greenhouse_glass_slab",
 //     ],
 //     Text.translatable("tooltip.society.greenhouse_glass.range").green()
 //   );
