@@ -266,7 +266,7 @@
 //                     population: 7,
 //                     requestedItems: [
 //                         { item: "simplehats:clockface", count: 1 },
-//                         { item: "society:broken_clock", count: 1 },
+//                         { item: "artisan_machines:broken_clock", count: 1 },
 //                         { item: "supplementaries:hourglass", count: 64 },
 //                     ],
 //                 },
@@ -476,7 +476,7 @@
 //                 },
 //                 {
 //                     minPopulation: 8,
-//                     item: "society:stone_hand",
+//                     item: "artisan_machines:stone_hand",
 //                     count: 1,
 //                     chance: 0.08,
 //                 },
@@ -1294,7 +1294,7 @@
 //                 },
 //                 {
 //                     minPopulation: 8,
-//                     item: "society:tiny_gnome",
+//                     item: "artisan_machines:tiny_gnome",
 //                     count: 1,
 //                     chance: 0.02,
 //                 },
@@ -1421,7 +1421,7 @@
 //                 },
 //                 {
 //                     population: 7,
-//                     requestedItems: [{ item: "society:cordycep", count: 1 }],
+//                     requestedItems: [{ item: "artisan_machines:cordycep", count: 1 }],
 //                 },
 //             ],
 //             additionalRewards: [
@@ -1491,7 +1491,7 @@
 //                 },
 //                 {
 //                     population: 7,
-//                     requestedItems: [{ item: "society:cordycep", count: 1 }],
+//                     requestedItems: [{ item: "artisan_machines:cordycep", count: 1 }],
 //                 },
 //             ],
 //             additionalRewards: [
@@ -3158,7 +3158,7 @@
 //                 {
 //                     population: 5,
 //                     requestedItems: [
-//                         { item: "society:black_opal", count: 1 },
+//                         { item: "artisan_machines:black_opal", count: 1 },
 //                         { item: "society:tubasmoke_carton", count: 4 },
 //                         { item: "society:starfruit_preserves", count: 32 },
 //                     ],

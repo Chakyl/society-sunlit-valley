@@ -393,7 +393,7 @@
 			}]
 			tasks: [{
 				id: "01AB65BD5884A796"
-				item: { count: 1, id: "artisan_machines:dehydrator" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:dehydrator" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -865,14 +865,17 @@
 			rewards: [{
 				id: "6766C5B6D5AD2DF5"
 				item: {
+					components: {
+						"ftbquests:missing_item": "artisan_machines:wine_keg"
+					}
 					count: 1
-					id: "artisan_machines:wine_keg"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "42E7CABF0E6A19DC"
-				item: { count: 1, id: "artisan_machines:wine_keg" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:wine_keg" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -907,7 +910,7 @@
 				id: "59AF65650E1BB645"
 				item: {
 					count: 1
-					id: "society:cordycep"
+					id: "artisan_machines:cordycep"
 				}
 				type: "item"
 			}]

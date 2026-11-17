@@ -19,7 +19,7 @@ const villagerfarmBuildingTypes = [
     { type: "banker", price: 3, name: "Banker", catalyst: "numismatics:bank_terminal" },
     { type: "librarian", price: 5, name: "Librarian", catalyst: "minecraft:book" },
     { type: "witch", price: 4, name: "Witch", catalyst: 'society:crystal_of_regret_mining' },
-    { type: "trader", price: 5, name: "Trader", catalyst: "society:ancient_cog" }
+    { type: "trader", price: 5, name: "Trader", catalyst: "artisan_machines:ancient_cog" }
 ];
 
 const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "floral", "mason", "prismarine", "rural", "sakura", "siberian", "tudor", "vibrantown"];

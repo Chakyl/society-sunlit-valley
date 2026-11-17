@@ -751,7 +751,7 @@
 //   });
 //   [
 //     "society:the_spark_also_rises",
-//     "society:recycled_core",
+//     "artisan_machines:recycled_core",
 //     "society:moon_statue",
 //   ].forEach((item) => {
 //     getMasteryTooltip(item, "mining")

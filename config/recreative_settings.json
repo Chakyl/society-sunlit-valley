@@ -1,4 +1,11 @@
 {
   "enabled": true,
-  "show_internal_tab_ids": false
+  "show_internal_tab_ids": false,
+  "show_editor_button": false,
+  "enable_button_tooltip": true,
+  "editor_button_offset_x": 0,
+  "editor_button_offset_y": 0,
+  "custom_editor_button_texture": "",
+  "custom_editor_button_texture_hovered": "",
+  "custom_editor_button_icon": "minecraft:compass"
 }

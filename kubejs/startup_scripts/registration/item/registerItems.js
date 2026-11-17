@@ -31,20 +31,7 @@ StartupEvents.registry("item", (e) => {
   //   .texture("society:item/architects_digest")
   //   .displayName("♧ Architect's Digest");
   e.create("society:fairy_dust").texture("society:item/fantasy_dust")
-  e.create("society:stone_hand").texture("society:item/stone_hand");
-  e.create("society:ancient_cog").texture("society:item/ancient_cog");
-  e.create("society:pink_matter").texture("society:item/pink_matter");
-  e.create("society:broken_clock").texture("society:item/broken_clock");
-  e.create("society:black_opal").texture("society:item/black_opal");
-  e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
-  e.create("society:ancient_roe").texture("society:item/ancient_roe");
-  e.create("society:infinity_worm").texture("society:item/infinity_worm");
   e.create("society:frosted_tip").texture("society:item/frosted_tip");
-  e.create("society:inserter").texture("society:item/inserter");
-  e.create("society:cordycep").texture("society:item/cordycep");
-  e.create("society:enkephalin").texture("society:item/enkephalin");
-  e.create("society:gray_anatomy").texture("society:item/gray_anatomy");
-  e.create("society:recycled_core").texture("society:item/recycled_core");
   e.create("society:hops").texture("society:item/crops/hops");
   e.create("society:tubabacco_leaf").texture("society:item/crops/tubabacco_leaf");
   e.create("society:dried_tubabacco_leaf").texture("society:item/crops/tubabacco_leaf")

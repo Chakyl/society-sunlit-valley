@@ -1,6 +1,3 @@
-// Server Scripts
-// Definitions for compatible tool enchantments
-
 // Base gear Tiers
 
 const ironTools = ['minecraft:iron_shovel', 'minecraft:iron_pickaxe', 'minecraft:iron_axe', 'minecraft:iron_hoe', 'minecraft:iron_sword']

@@ -232,14 +232,17 @@
 			rewards: [{
 				id: "0E153FE7C3B55BC9"
 				item: {
+					components: {
+						"ftbquests:missing_item": "artisan_machines:seed_maker"
+					}
 					count: 1
-					id: "artisan_machines:seed_maker"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "3DDE2D80A0FB093E"
-				item: { count: 1, id: "artisan_machines:seed_maker" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:seed_maker" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -632,7 +635,7 @@
 			}]
 			tasks: [{
 				id: "2F796FE56AA69911"
-				item: { count: 1, id: "artisan_machines:mayonnaise_machine" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:mayonnaise_machine" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -652,7 +655,7 @@
 			}]
 			tasks: [{
 				id: "10B6EDC1EF4BD4DE"
-				item: { count: 1, id: "artisan_machines:cheese_press" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:cheese_press" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -1029,7 +1032,7 @@
 			}]
 			tasks: [{
 				id: "4F6728330BE86674"
-				item: { count: 1, id: "artisan_machines:loom" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:loom" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -1081,7 +1084,7 @@
 			}]
 			tasks: [{
 				id: "37751E3B943FC4F8"
-				item: { count: 1, id: "artisan_machines:preserves_jar" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:preserves_jar" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -1315,7 +1318,7 @@
 			}]
 			tasks: [{
 				id: "4B83A80BBA2CE38D"
-				item: { count: 1, id: "artisan_machines:oil_maker" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:oil_maker" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d

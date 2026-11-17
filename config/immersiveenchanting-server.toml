@@ -18,7 +18,7 @@
 	#If enabled, enchantments that have not been found will be obfuscated in the enchanting table.
 	obfuscateLockedEnchantments = false
 	#If enabled, Ancient Books are no longer required to unlock enchantments at the enchanting table. Enchantments still cost experience and materials as usual.
-	disableAncientBookRequirement = false
+	disableAncientBookRequirement = true
 
 [enchantedbooks]
 	#Choose whether enchanted books should be removed completely or replaced with ancient books. Ancient books still spawn as normal.

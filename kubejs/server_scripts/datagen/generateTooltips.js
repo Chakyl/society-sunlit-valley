@@ -122,20 +122,20 @@ generateColorWrappedTooltip(xpBookTooltips, "AAAAAA", RIGHT_CLICK_TO_READ)
 let upgradeTooltipHex = "55FF55"
 const wrapUpgradeKeyword = (word) => `</ltcolor><ltcolor>c=00AA00;${word}</ltcolor><ltcolor>c=${upgradeTooltipHex};`;
 const upgradeTooltips = [
-    { item: "society:ancient_cog", tooltips: [`Use on a ${wrapUpgradeKeyword("Seed Maker")} to give it a 5%% chance of producing an Ancient Fruit Seed.`] },
-    { item: "society:pink_matter", tooltips: [`Use on an ${wrapUpgradeKeyword("Artisan Cheese Press")} to make it auto-age ${wrapUpgradeKeyword("Cheese Wheels")}.`] },
-    { item: "society:stone_hand", tooltips: [`Use on a ${wrapUpgradeKeyword("Preserve Jar")} to decrease input amount by 2.`] },
-    { item: "society:broken_clock", tooltips: [`Use on an ${wrapUpgradeKeyword("Aging Cask")} to decrease aging time by half.`] },
-    { item: "society:black_opal", tooltips: [`Use on a ${wrapUpgradeKeyword("Crystalarium")} to give it a 10%% chance of producing pristine items.`] },
-    { item: "society:enkephalin", tooltips: [`Use on a ${wrapUpgradeKeyword("Mayonnaise Machine")} to give it a 5%% chance of producing ${wrapUpgradeKeyword("Supreme Mayonnaise")}.`] },
-    { item: "society:tiny_gnome", tooltips: [`Use on an ${wrapUpgradeKeyword("Artisan Loom")} to give it a 25%% chance of producing rare furniture.`] },
-    { item: "society:ancient_roe", tooltips: [`Use on a ${wrapUpgradeKeyword("Fish Smoker")} to double output.`] },
+    { item: "artisan_machines:ancient_cog", tooltips: [`Use on a ${wrapUpgradeKeyword("Seed Maker")} to give it a 5%% chance of producing an Ancient Fruit Seed.`] },
+    { item: "artisan_machines:pink_matter", tooltips: [`Use on an ${wrapUpgradeKeyword("Artisan Cheese Press")} to make it auto-age ${wrapUpgradeKeyword("Cheese Wheels")}.`] },
+    { item: "artisan_machines:stone_hand", tooltips: [`Use on a ${wrapUpgradeKeyword("Preserve Jar")} to decrease input amount by 2.`] },
+    { item: "artisan_machines:broken_clock", tooltips: [`Use on an ${wrapUpgradeKeyword("Aging Cask")} to decrease aging time by half.`] },
+    { item: "artisan_machines:black_opal", tooltips: [`Use on a ${wrapUpgradeKeyword("Crystalarium")} to give it a 10%% chance of producing pristine items.`] },
+    { item: "artisan_machines:enkephalin", tooltips: [`Use on a ${wrapUpgradeKeyword("Mayonnaise Machine")} to give it a 5%% chance of producing ${wrapUpgradeKeyword("Supreme Mayonnaise")}.`] },
+    { item: "artisan_machines:tiny_gnome", tooltips: [`Use on an ${wrapUpgradeKeyword("Artisan Loom")} to give it a 25%% chance of producing rare furniture.`] },
+    { item: "artisan_machines:ancient_roe", tooltips: [`Use on a ${wrapUpgradeKeyword("Fish Smoker")} to double output.`] },
     { item: "society:frosted_tip", tooltips: [`Use on a ${wrapUpgradeKeyword("Charging Rod")} to work and triple output in winter.`] },
-    { item: "society:infinity_worm", tooltips: [`Use on a ${wrapUpgradeKeyword("Deluxe Worm Farm")} to let it work without inputs.`] },
-    { item: "society:inserter", tooltips: [`Use on an ${wrapUpgradeKeyword("Ancient Cask")} to let it process 4 items at a time.`] },
-    { item: "society:cordycep", tooltips: [`Use on a ${wrapUpgradeKeyword("Dehydrator")} to double ${wrapUpgradeKeyword("mushroom")} output.`] },
-    { item: "society:gray_anatomy", tooltips: [`Use on a ${wrapUpgradeKeyword("Wine Keg")} to give it a 5%% chance of producing a ${wrapUpgradeKeyword("Relic Trove")}.`] },
-    { item: "society:recycled_core", tooltips: [`Use on a ${wrapUpgradeKeyword("Recycling Machine")} to double most outputs.`] }
+    { item: "artisan_machines:infinity_worm", tooltips: [`Use on a ${wrapUpgradeKeyword("Deluxe Worm Farm")} to let it work without inputs.`] },
+    { item: "artisan_machines:inserter", tooltips: [`Use on an ${wrapUpgradeKeyword("Ancient Cask")} to let it process 4 items at a time.`] },
+    { item: "artisan_machines:cordycep", tooltips: [`Use on a ${wrapUpgradeKeyword("Dehydrator")} to double ${wrapUpgradeKeyword("mushroom")} output.`] },
+    { item: "artisan_machines:gray_anatomy", tooltips: [`Use on a ${wrapUpgradeKeyword("Wine Keg")} to give it a 5%% chance of producing a ${wrapUpgradeKeyword("Relic Trove")}.`] },
+    { item: "artisan_machines:recycled_core", tooltips: [`Use on a ${wrapUpgradeKeyword("Recycling Machine")} to double most outputs.`] }
 ];
 generateColorWrappedTooltip(upgradeTooltips, upgradeTooltipHex)
 /**

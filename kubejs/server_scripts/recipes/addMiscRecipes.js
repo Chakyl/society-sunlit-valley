@@ -637,7 +637,7 @@ ServerEvents.recipes((e) => {
   // });
 
   // e.shaped("society:gnome", [" h ", "iti", " s "], {
-  //   t: "society:tiny_gnome",
+  //   t: "artisan_machines:tiny_gnome",
   //   i: "species:ichor_bottle",
   //   h: "simplehats:gnome",
   //   s: "paraglider:spirit_orb",

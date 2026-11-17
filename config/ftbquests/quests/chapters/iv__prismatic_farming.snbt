@@ -146,7 +146,7 @@
 			}]
 			tasks: [{
 				id: "6E17BB18745E3969"
-				item: { count: 1, id: "artisan_machines:aging_cask" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:aging_cask" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -495,7 +495,7 @@
 			}]
 			tasks: [{
 				id: "7F091D010DE340BC"
-				item: { count: 1, id: "artisan_machines:crystalarium" }
+				item: { components: { "ftbquests:missing_item": "artisan_machines:crystalarium" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -8.5d
@@ -621,7 +621,7 @@
 		{
 			dependencies: ["41C453E806763C4F"]
 			icon: {
-				id: "society:ancient_cog"
+				id: "artisan_machines:ancient_cog"
 			}
 			id: "5558DB4DE54C890D"
 			min_required_dependencies: 1
@@ -639,7 +639,7 @@
 			tasks: [
 				{
 					id: "6062C4A31D0BC480"
-					item: { count: 1, id: "society:ancient_cog" }
+					item: { count: 1, id: "artisan_machines:ancient_cog" }
 					type: "item"
 				}
 				{
@@ -727,7 +727,7 @@
 			}]
 			tasks: [{
 				id: "3D6BBB724045158A"
-				item: { count: 1, id: "society:black_opal" }
+				item: { count: 1, id: "artisan_machines:black_opal" }
 				type: "item"
 			}]
 			x: -13.0d
@@ -1309,7 +1309,7 @@
 			}]
 			tasks: [{
 				id: "21411FD800D50B90"
-				item: { count: 1, id: "society:recycled_core" }
+				item: { count: 1, id: "artisan_machines:recycled_core" }
 				type: "item"
 			}]
 			x: -2.0d
