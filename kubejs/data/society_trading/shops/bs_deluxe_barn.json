@@ -81,6 +81,20 @@
 		{
 			"offer": {
 				"item": "portable_blueprints:worn_blueprint",
+				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"deluxe_barn_cavern\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cavern_deluxe_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cavern_deluxe_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"deluxe_barn_cavern\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
+				"count": 1
+			},
+			"request": {
+				"item": "society:building_supplies",
+				"count": 12
+			},
+			"image": "society:textures/gui/buildings/cavern/deluxe_barn_cavern",
+			"image_description": "portable_blueprints.worn_blueprint.cavern_deluxe_barn.dimensions",
+			"trade_id": "bs_deluxe_barn_cavern"
+		},
+		{
+			"offer": {
+				"item": "portable_blueprints:worn_blueprint",
 				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"deluxe_barn_cherry\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_deluxe_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_deluxe_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"deluxe_barn_cherry\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
 				"count": 1
 			},
