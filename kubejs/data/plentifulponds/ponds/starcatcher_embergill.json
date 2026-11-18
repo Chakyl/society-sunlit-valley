@@ -1,0 +1,118 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:embergill",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "minecraft:quartz",
+					"count": 64
+				},
+				{
+					"id": "create:rose_quartz",
+					"count": 16
+				},
+				{
+					"id": "society:fire_quartz",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "kaleidoscope_tavern:gold_grape_bucket",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "society:aged_bolvar_wine",
+					"count": 3
+				},
+				{
+					"id": "society:aged_good_catawba",
+					"count": 3
+				},
+				{
+					"id": "society:aged_lava_fizz",
+					"count": 3
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:quartz",
+				"count": 64
+			},
+			"chance": 0.48
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:fire_quartz",
+				"count": 4
+			},
+			"chance": 0.44
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_lamp",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_seat",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_bed",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_sofa",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_stool",
+				"count": 1
+			},
+			"chance": 0.01
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "tanukidecor:gorgeous_counter",
+				"count": 1
+			},
+			"chance": 0.01
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:willish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "minecraft:nether_bricks",
+					"count": 16
+				},
+				{
+					"id": "minecraft:wither_skeleton_skull",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "society:placeholder",
+					"count": 1
+				},
+				{
+					"id": "society:nether_jelly",
+					"count": 4
+				},
+				{
+					"id": "society:magma_geode",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "minecraft:nether_star",
+					"count": 1
+				},
+				{
+					"id": "minecraft:netherite_ingot",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "netherdepthsupgrade:fortress_grouper_plate",
+				"count": 8
+			},
+			"chance": 0.32
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:ruby",
+				"count": 1
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "minecraft:netherite_scrap",
+				"count": 1
+			},
+			"chance": 0.09
+		}
+	]
+}

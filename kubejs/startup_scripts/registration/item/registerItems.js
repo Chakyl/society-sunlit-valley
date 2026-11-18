@@ -765,7 +765,7 @@ StartupEvents.registry("item", (e) => {
     { item: "unusualfishmod:raw_duality_damselfish", hex: 0xafb3b6 },
     { item: "unusualfishmod:raw_blind_sailfin", hex: 0xbea39a },
     { item: "unusualfishmod:raw_circus_fish", hex: 0x9b3c2b },
-    { item: "unusualfishmod:raw_snowflake", hex: 0x91b2c8 },
+    { item: "unusualfishmod:raw_frosty_fin", hex: 0x91b2c8 },
     { item: "unusualfishmod:raw_aero_mono", hex: 0x617c92 },
     { item: "unusualfishmod:raw_hatchetfish", hex: 0xb43e5a },
     { item: "unusualfishmod:raw_spindlefish", hex: 0xf575f5 },

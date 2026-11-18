@@ -1,0 +1,90 @@
+{
+	"color": "#ffffff",
+	"fish": "minecraft:tropical_fish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "minecraft:tube_coral_block",
+					"count": 16
+				},
+				{
+					"id": "minecraft:brain_coral_block",
+					"count": 16
+				},
+				{
+					"id": "minecraft:bubble_coral_block",
+					"count": 16
+				},
+				{
+					"id": "minecraft:fire_coral_block",
+					"count": 16
+				},
+				{
+					"id": "minecraft:horn_coral_block",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "society:placeholder",
+					"count": 64
+				},
+				{
+					"id": "nomansland:seashells",
+					"count": 8
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "society:placeholder",
+					"count": 8
+				},
+				{
+					"id": "society:placeholder",
+					"count": 8
+				},
+				{
+					"id": "society:placeholder",
+					"count": 8
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "society:placeholder",
+				"count": 32
+			},
+			"chance": 0.48
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:placeholder",
+				"count": 32
+			},
+			"chance": 0.42
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:placeholder",
+				"count": 6
+			},
+			"chance": 0.82
+		}
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_beaked_herring",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "farmersdelight:red_mushroom_colony",
+					"count": 4
+				},
+				{
+					"id": "meadow:alpine_salt",
+					"count": 32
+				},
+				{
+					"id": "vintagedelight:salt_lamp_light_blue",
+					"count": 1
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "kaleidoscope_tavern:vodka",
+					"count": 8
+				},
+				{
+					"id": "kaleidoscope_tavern:whiskey",
+					"count": 6
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "society:geode",
+					"count": 32
+				},
+				{
+					"id": "society:frozen_geode",
+					"count": 16
+				},
+				{
+					"id": "society:magma_geode",
+					"count": 16
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "meadow:cobbled_limestone",
+				"count": 64
+			},
+			"chance": 0.69
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "create:raw_zinc",
+				"count": 32
+			},
+			"chance": 0.22
+		},
+		{
+			"min_population": 10,
+			"drop": {
+				"id": "society:mining_monthly",
+				"count": 1
+			},
+			"chance": 0.04
+		}
+	]
+}

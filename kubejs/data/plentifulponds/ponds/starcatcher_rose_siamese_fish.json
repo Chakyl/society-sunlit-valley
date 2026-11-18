@@ -1,0 +1,54 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:rose_siamese_fish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "society:placeholder",
+					"count": 64
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "snowyspirit:glow_lights_prismatic",
+					"count": 64
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "society:prismatic_shard",
+					"count": 1
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "society:placeholder",
+				"count": 16
+			},
+			"chance": 0.09
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:prismatic_shard",
+				"count": 1
+			},
+			"chance": 0.01
+		}
+	]
+}

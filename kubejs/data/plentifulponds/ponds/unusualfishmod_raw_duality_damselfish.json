@@ -1,0 +1,82 @@
+{
+	"color": "#ffffff",
+	"fish": "unusualfishmod:raw_duality_damselfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "quark:lavender_blossom_sapling",
+					"count": 64
+				},
+				{
+					"id": "orchard:peachitem",
+					"count": 16
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "society:merino_wool",
+					"count": 4
+				},
+				{
+					"id": "society:truffle",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "create:scorchia",
+					"count": 64
+				},
+				{
+					"id": "minecraft:white_concrete",
+					"count": 64
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:cobbled_deepslate",
+				"count": 64
+			},
+			"chance": 0.89
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "minecraft:calcite",
+				"count": 32
+			},
+			"chance": 0.59
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "create:scorchia",
+				"count": 64
+			},
+			"chance": 0.32
+		},
+		{
+			"min_population": 9,
+			"drop": {
+				"id": "minecraft:white_concrete",
+				"count": 64
+			},
+			"chance": 0.45
+		}
+	]
+}

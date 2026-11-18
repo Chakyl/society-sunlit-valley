@@ -1,0 +1,54 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:downfall_bream",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "society:ancient_fruit",
+					"count": 3
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "society:ancient_fruit",
+					"count": 6
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "society:ancient_fruit",
+					"count": 12
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:ancient_fruit_seed",
+				"count": 1
+			},
+			"chance": 0.3
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "furniture:cash_register",
+				"count": 1
+			},
+			"chance": 0.22
+		}
+	]
+}

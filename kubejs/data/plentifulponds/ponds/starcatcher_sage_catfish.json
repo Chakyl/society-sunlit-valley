@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "starcatcher:sage_catfish",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "starcatcher:worm",
+					"count": 10
+				},
+				{
+					"id": "farmersdelight:wheat_dough",
+					"count": 16
+				},
+				{
+					"id": "minecraft:poppy",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "minecraft:raw_gold",
+					"count": 4
+				},
+				{
+					"id": "society:oak_resin",
+					"count": 1
+				},
+				{
+					"id": "farmersdelight:tomato",
+					"count": 1
+				},
+				{
+					"id": "society:sap",
+					"count": 4
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "herbalbrews:green_tea",
+					"count": 1
+				},
+				{
+					"id": "minecraft:honey_bottle",
+					"count": 4
+				},
+				{
+					"id": "herbalbrews:lavender_tea",
+					"count": 2
+				},
+				{
+					"id": "meadow:alpine_poppy",
+					"count": 4
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "minecraft:kelp",
+				"count": 64
+			},
+			"chance": 0.64
+		},
+		{
+			"min_population": 10,
+			"drop": {
+				"id": "society:husbandry_hourly",
+				"count": 1
+			},
+			"chance": 0.15
+		}
+	]
+}

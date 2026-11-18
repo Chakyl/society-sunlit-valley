@@ -1,0 +1,86 @@
+{
+	"color": "#ffffff",
+	"fish": "minecraft:salmon",
+	"max_population": 10,
+	"max_roe": 1,
+	"reproduction_rate": 4,
+	"quests": [
+		{
+			"population": 3,
+			"requested_items": [
+				{
+					"id": "meadow:pine_log",
+					"count": 64
+				},
+				{
+					"id": "society:salmonberry",
+					"count": 16
+				},
+				{
+					"id": "meadow:alpine_poppy",
+					"count": 3
+				}
+			]
+		},
+		{
+			"population": 5,
+			"requested_items": [
+				{
+					"id": "minecraft:oak_log",
+					"count": 64
+				},
+				{
+					"id": "society:tapper",
+					"count": 8
+				},
+				{
+					"id": "minecraft:dark_oak_log",
+					"count": 64
+				}
+			]
+		},
+		{
+			"population": 7,
+			"requested_items": [
+				{
+					"id": "society:mossberry",
+					"count": 16
+				},
+				{
+					"id": "society:mossberry_preserves",
+					"count": 4
+				},
+				{
+					"id": "society:dried_mossberry",
+					"count": 2
+				}
+			]
+		}
+	],
+	"drops": [
+		{
+			"min_population": 4,
+			"drop": {
+				"id": "meadow:pine_log",
+				"count": 16
+			},
+			"chance": 0.34
+		},
+		{
+			"min_population": 6,
+			"drop": {
+				"id": "whimsy_deco:traffic_cone",
+				"count": 32
+			},
+			"chance": 0.31
+		},
+		{
+			"min_population": 8,
+			"drop": {
+				"id": "society:mossberry",
+				"count": 3
+			},
+			"chance": 0.82
+		}
+	]
+}

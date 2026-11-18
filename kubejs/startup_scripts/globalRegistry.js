@@ -938,8 +938,7 @@ global.fish.forEach((fish) => {
   let fishId = splitFish[1];
   if (!["barrel", "roe", "meat"].some((denied) => fishId.includes(denied))) {
     if (fishId.includes("raw_")) {
-      if (fishId === "raw_snowflake") fishId = "frosty_fin";
-      else fishId = fishId.substring(4, fishId.length);
+      fishId = fishId.substring(4, fishId.length);
     }
     global.smokedFish.push({
       item: `society:smoked_${fishId}`,
@@ -957,8 +956,7 @@ global.fish.forEach((fish) => {
   let fishId = splitFish[1];
   if (!["barrel", "meat"].some((denied) => fish.item.includes(denied))) {
     if (fishId.includes("raw_")) {
-      if (fishId === "raw_snowflake") fishId = "frosty_fin";
-      else fishId = fishId.substring(4, fishId.length);
+     fishId = fishId.substring(4, fishId.length);
     }
     global.fish.push({
       item: `society:${fishId}_roe`,
