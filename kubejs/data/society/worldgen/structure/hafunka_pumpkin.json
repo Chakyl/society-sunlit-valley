@@ -1,0 +1,15 @@
+{
+  "type": "moogs_structures:moogs_structures_generic_jigsaw_structure",
+  "start_pool": "society:hafunka_pumpkin",
+  "size": 1,
+  "biomes": "autumnity:maple_forest",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "terrain_height_radius_check": 2,
+  "allowed_terrain_height_range": 3,
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "start_height": {
+    "absolute": -10
+  },
+  "spawn_overrides": {}
+}

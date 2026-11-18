@@ -51,6 +51,8 @@ global.mushroomLogRecipes = new Map([
     // Warped crimson
     ["minecraft:crimson_stem", { output: ["3x minecraft:crimson_fungus"]}], 
     ["minecraft:warped_stem", { output: ["3x minecraft:warped_fungus"]}], 
+    ["minecraft:nether_wart_block", { output: ["4x minecraft:shroomlight"]}], 
+    ["minecraft:warped_wart_block", { output: ["4x minecraft:shroomlight"]}], 
     // Alphacene
     ["betterarcheology:rotten_log", { output: ["2x species:alphacene_mushroom"]}], 
     // Cluttershroms
