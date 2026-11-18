@@ -20,7 +20,7 @@
 - Water filled cauldrons can now wash dishes
 - Supplementaries Clocks are no longer a rare furniture
 - Reduced file size of building shop images by 42k KB
-- Renamed Cluttured Poplar to Yellow Popular to remove conflict on Vanilla's new wood type
+- Renamed Cluttered Poplar to Yellow Popular to remove conflict on Vanilla's new wood type
 - Updated ko_kr (Thanks Hexagreen!)
 - Updated ch_zn translation (Thanks Thirace!)
 - Fixed several logs not being sellable
