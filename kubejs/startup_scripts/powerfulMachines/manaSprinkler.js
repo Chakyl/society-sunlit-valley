@@ -26,16 +26,18 @@ global.manaSprinklerScan = (entity, radius) => {
         flowerBE.setChanged()
         entity.setChanged()
         triggeredSpread = true;
-        level.spawnParticles(
-          "windswept:will_o_the_wisp",
-          true,
-          scanBlock.x + 0.5,
-          scanBlock.y + 1.25,
-          scanBlock.z + 0.5,
-          0, 0, 0,
-          1,
-          0.01
-        );
+        if (Math.random() < 0.25) {
+          level.spawnParticles(
+            "species:falling_pellet_drip",
+            true,
+            scanBlock.x + 0.5,
+            scanBlock.y + 1.25,
+            scanBlock.z + 0.5,
+            0, 0, 0,
+            1,
+            0.01
+          );
+        }
       }
     }
   }

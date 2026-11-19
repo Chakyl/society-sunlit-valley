@@ -22,7 +22,7 @@
 //     { type: "trader", price: 5, name: "Trader", catalyst: "society:ancient_cog" }
 // ];
 
-// const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cherry", "entrana", "floral", "mason", "prismarine", "rural", "sakura", "siberian", "tudor", "vibrantown"];
+// const buildingSets = ["basic", "alpine", "arid", "bamboo", "bavarian", "cavern", "cherry", "entrana", "floral", "mason", "prismarine", "rural", "sakura", "siberian", "tudor", "vibrantown"];
 // const villagerBuildingSets = ["basic", "pineconetown","rural"];
 
 // let langStrings = {};

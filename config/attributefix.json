@@ -2464,6 +2464,17 @@
         "value": 1000
       }
     },
+    "minecraft:waypoint_transmit_range": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 60000000,
+        "value": 60000000
+      }
+    },
     "additional_attributes:spell_type_flaming_barrage": {
       "enabled": false,
       "min": {
@@ -2781,6 +2792,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "minecraft:waypoint_receive_range": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 60000000,
+        "value": 60000000
       }
     },
     "reforgingstation:block_reach": {

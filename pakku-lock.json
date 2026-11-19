@@ -2408,7 +2408,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cozycafe-1.10-all.jar",
+                    "file_name": "cozycafe-1.13-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2416,18 +2416,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8818/409/cozycafe-1.10-all.jar",
-                    "id": "8818409",
+                    "url": "https://edge.forgecdn.net/files/9700/781/cozycafe-1.13-all.jar",
+                    "id": "9700781",
                     "parent_id": "1590319",
                     "hashes": {
-                        "sha1": "a1569c79066d71a72f846689d17708088b8a715f",
-                        "md5": "b1290050950c8dff12c7dd84fbefcb20"
+                        "sha1": "4054031003106f14da07537e80c19396a1546943",
+                        "md5": "ada1cc8e5f0509a06bf712aafc64bc29"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 426369,
-                    "date_published": "2026-09-06T00:17:30.997Z"
+                    "size": 429072,
+                    "date_published": "2026-11-19T14:22:01.603Z"
                 }
             ]
         },
@@ -8383,81 +8383,6 @@
             ]
         },
         {
-            "pakku_id": "STYBz0lKSqvqPS3z",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "no-chat-reports"
-            },
-            "name": {
-                "curseforge": "No Chat Reports"
-            },
-            "id": {
-                "curseforge": "634062"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "NoChatReports-FORGE-1.20.1-v2.2.2.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4610/474/NoChatReports-FORGE-1.20.1-v2.2.2.jar",
-                    "id": "4610474",
-                    "parent_id": "634062",
-                    "hashes": {
-                        "sha1": "069396e689ae887d065c8d61b7945e685fbcc65b",
-                        "md5": "3153d1e860c6fefe6dac26efdb5c40c6"
-                    },
-                    "required_dependencies": [],
-                    "size": 272740,
-                    "date_published": "2023-06-26T14:50:49.010Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "hmL3SWy7tSkuOJra",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "no-chat-restrictions"
-            },
-            "name": {
-                "curseforge": "No Chat Restrictions"
-            },
-            "id": {
-                "curseforge": "1442925"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "NoChatRestrictions-Forge-MC1.20.1-v1.0.0.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7538/450/NoChatRestrictions-Forge-MC1.20.1-v1.0.0.jar",
-                    "id": "7538450",
-                    "parent_id": "1442925",
-                    "hashes": {
-                        "sha1": "a189c024b78b1057f7bab8a64c327ed27a6d186d",
-                        "md5": "dbd8ffddf8d747fdf41656e839dfae3a"
-                    },
-                    "required_dependencies": [],
-                    "size": 9676,
-                    "date_published": "2026-01-27T23:36:55.753Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "DCJwKUkn63es8J43",
             "pakku_links": [
                 "sP0r5kz3HrhYT9PX"
@@ -9170,7 +9095,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Platform-forge-1.20.1-1.3.4.jar",
+                    "file_name": "Platform-forge-1.20.1-1.4.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9178,16 +9103,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8214/829/Platform-forge-1.20.1-1.3.4.jar",
-                    "id": "8214829",
+                    "url": "https://edge.forgecdn.net/files/9318/515/Platform-forge-1.20.1-1.4.2.jar",
+                    "id": "9318515",
                     "parent_id": "997634",
                     "hashes": {
-                        "sha1": "066cc06802107183d6a1028a5e358a2bfd505402",
-                        "md5": "df08ab6aa4081252c22d3869142748dc"
+                        "sha1": "877808377db94106517625b7831f537f07e53b5d",
+                        "md5": "923b147593baea901b5a874f25360ddb"
                     },
-                    "required_dependencies": [],
-                    "size": 512461,
-                    "date_published": "2026-06-08T06:00:39.950Z"
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 1197800,
+                    "date_published": "2026-10-25T07:20:32.640Z"
                 }
             ]
         },
@@ -9541,7 +9468,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "quality_food-1.20.1-2.4.3-all.jar",
+                    "file_name": "quality_food-1.20.1-2.4.5-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -9551,16 +9478,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8694/434/quality_food-1.20.1-2.4.3-all.jar",
-                    "id": "8694434",
+                    "url": "https://edge.forgecdn.net/files/9220/286/quality_food-1.20.1-2.4.5-all.jar",
+                    "id": "9220286",
                     "parent_id": "973932",
                     "hashes": {
-                        "sha1": "1dbde28800c1bc6b81ff1719052b8c0c48903b4c",
-                        "md5": "2466b1b7c766e455e70a1d71846f83cc"
+                        "sha1": "ff8d787bd28b20e53bbf606c5e933c0c39dd2b0b",
+                        "md5": "2823157b4382fa3781ed86e75447eb83"
                     },
                     "required_dependencies": [],
-                    "size": 916288,
-                    "date_published": "2026-08-20T21:02:49.127Z"
+                    "size": 916807,
+                    "date_published": "2026-10-17T08:16:20.113Z"
                 }
             ]
         },
@@ -11357,7 +11284,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society-1.22.jar",
+                    "file_name": "society-1.24.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11365,16 +11292,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8684/561/society-1.22.jar",
-                    "id": "8684561",
+                    "url": "https://edge.forgecdn.net/files/9703/375/society-1.24.jar",
+                    "id": "9703375",
                     "parent_id": "1424785",
                     "hashes": {
-                        "sha1": "8a3797329f678a63c707e76f589246b89eabe741",
-                        "md5": "73dc77157d3e6013a804c935d8b117c3"
+                        "sha1": "817429c096625260a8e53f588eb739f8777a87c7",
+                        "md5": "bdf03bddf24b8217ccf3064ad8be9976"
                     },
                     "required_dependencies": [],
-                    "size": 69954758,
-                    "date_published": "2026-08-19T13:26:18.647Z"
+                    "size": 27424355,
+                    "date_published": "2026-11-19T17:48:18.917Z"
                 }
             ]
         },
@@ -12057,7 +11984,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-9.0.jar",
+                    "file_name": "dew_drop_farmland_growth-10.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12065,18 +11992,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8603/38/dew_drop_farmland_growth-9.0.jar",
-                    "id": "8603038",
+                    "url": "https://edge.forgecdn.net/files/9568/48/dew_drop_farmland_growth-10.0.jar",
+                    "id": "9568048",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "7762a6171a4c0c2dffd09424830ff70d7624dd5d",
-                        "md5": "0dd219e0ad40767073a67fc393aa5b0c"
+                        "sha1": "518baec53aece432842c8a6290a40ddc06863ce2",
+                        "md5": "ccd52a646e857c687b13cec70c8d9272"
                     },
                     "required_dependencies": [
                         "1062753"
                     ],
-                    "size": 148552,
-                    "date_published": "2026-08-08T16:40:09.373Z"
+                    "size": 149267,
+                    "date_published": "2026-11-12T02:07:21.277Z"
                 }
             ]
         },
@@ -12772,7 +12699,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "VanillaBackport-forge-1.20.1-1.1.7.10.jar",
+                    "file_name": "VanillaBackport-forge-1.20.1-1.2.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12780,18 +12707,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8229/712/VanillaBackport-forge-1.20.1-1.1.7.10.jar",
-                    "id": "8229712",
+                    "url": "https://edge.forgecdn.net/files/9318/528/VanillaBackport-forge-1.20.1-1.2.2.jar",
+                    "id": "9318528",
                     "parent_id": "417430",
                     "hashes": {
-                        "sha1": "a5ca598c0badd4b37a7b133ae8d2d9bf4cc20c40",
-                        "md5": "d38797d58bf537348cf0d62d04f335d1"
+                        "sha1": "122ce6162aa86d15234a20543537fb3e140096b4",
+                        "md5": "7aceff21a66e66fc96e35699c37424f5"
                     },
                     "required_dependencies": [
                         "997634"
                     ],
-                    "size": 56051142,
-                    "date_published": "2026-06-11T02:50:28.830Z"
+                    "size": 65155299,
+                    "date_published": "2026-10-25T07:25:13.203Z"
                 }
             ]
         },

@@ -89,6 +89,7 @@ ServerEvents.recipes((e) => {
   addItemFusion("minecraft:dragon_egg", "ender", "minty");
   addItemFusion("society:token_of_unity", "boomcat", "sparkcat");
   addItemFusion("society:magic_bulb", "orby", "mechanic");
+  addItemFusion("minecraft:echo_shard", "rotting", "orby");
 
   e.custom({
     type: "splendid_slimes:plort_pressing",

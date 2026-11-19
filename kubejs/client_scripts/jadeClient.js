@@ -35,8 +35,7 @@ global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
     tooltip.add(global.getTranslatedEntityName(String(nbt.animal)));
   } else {
     tooltip.add(
-      `§c${affection > 0 ? `❤`.repeat(affection) : ""}§8${
-        affection < 4 ? `❤`.repeat(4 - affection) : ""
+      `§c${affection > 0 ? `❤`.repeat(affection) : ""}§8${affection < 4 ? `❤`.repeat(4 - affection) : ""
       }`
     );
   }
@@ -108,8 +107,8 @@ global["JadeArtisanMachineClientCallback"] = (
 
   const recipe = isChargingRod
     ? {
-        output: ["society:battery"],
-      }
+      output: ["society:battery"],
+    }
     : machine.recipes.get(nbt.recipe);
   const stage = nbt.stage;
   const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
@@ -173,7 +172,7 @@ global["JadeSocietyCropClientCallback"] = (
   const strictGreenhouse = $DewdropConfig.strictGreenhouses;
   const soil = (() => {
     let scannedBlock;
-    for (let i = -2; i < 0 ; i++) {
+    for (let i = -2; i < 0; i++) {
       scannedBlock = level.getBlock(position.above(i));
       if (scannedBlock.getId().includes("farmland") || scannedBlock.getId().includes("garden_pot")) {
         return scannedBlock;
@@ -226,7 +225,7 @@ global["JadeSocietyCropClientCallback"] = (
   };
   const getGrowthDay = (age, maxAge) => {
     const farmland = soil;
-    if (!farmland || fertilizerNotApplies.includes(name)) return {age: age, maxAge: maxAge, boosted: false};
+    if (!farmland || fertilizerNotApplies.includes(name)) return { age: age, maxAge: maxAge, boosted: false };
     let delta = 0;
     if (farmland.hasTag("dew_drop_farmland_growth:weak_fertilized_farmland")) {
       delta = 1;
@@ -237,20 +236,20 @@ global["JadeSocietyCropClientCallback"] = (
     if (farmland.hasTag("dew_drop_farmland_growth:hyper_fertilized_farmland")) {
       delta = 3;
     }
-    if (delta == 0) return {age: age, maxAge: maxAge, boosted: false};
-    return {age: age == 0 ? 0 : age - delta, maxAge: Math.max(1, maxAge - delta), boosted: true};
+    if (delta == 0) return { age: age, maxAge: maxAge, boosted: false };
+    return { age: age == 0 ? 0 : age - delta, maxAge: Math.max(1, maxAge - delta), boosted: true };
   };
   const isCropFertile = (cropId) => {
     if (needsFarmland && !soil) return false;
     return $SereneFertility.isCropFertile(cropId, level, position)
-    || hasGreenhouseGlass()
-    || hasAvailableGardenPot();
+      || hasGreenhouseGlass()
+      || hasAvailableGardenPot();
   };
   const addGrowthLevelTooltip = (current, max, isFertile) => {
     const { age, maxAge, boosted } = getGrowthDay(current, max);
     let ageText = Component.of(Number(age).toFixed());
     let maxAgeText = Component.of(Number(maxAge).toFixed());
-    if(boosted) {ageText = ageText.darkGreen(); maxAgeText = maxAgeText.darkGreen()}
+    if (boosted) { ageText = ageText.darkGreen(); maxAgeText = maxAgeText.darkGreen() }
     if (current >= max) {
       tooltip.add(Component.translatable("jade.society.crop_growth.mature").darkGreen());
     } else {
@@ -262,7 +261,7 @@ global["JadeSocietyCropClientCallback"] = (
   };
 
   if (name.includes("grapevine_stem") || name.match(/vinery:.+_lattice/i)) {
-    var grape_age = state.getValue(BlockProperties.AGE_4);  
+    var grape_age = state.getValue(BlockProperties.AGE_4);
     if (grape_age == 0) return;
     addGrowthLevelTooltip(
       grape_age,
@@ -287,9 +286,9 @@ global["JadeSocietyCropClientCallback"] = (
         addGrowthLevelTooltip(state.getValue(BlockProperties.AGE_4), 4, isCropFertile(name));
       } else if (state.hasProperty(BlockProperties.AGE_3)) {
         addGrowthLevelTooltip(state.getValue(BlockProperties.AGE_3), 3, isCropFertile(name));
-      } 
-    } catch (e) {}
-  } else if("minecraft:torchflower".equals(name)) {
+      }
+    } catch (e) { }
+  } else if ("minecraft:torchflower".equals(name)) {
     tooltip.add(Component.translatable("jade.society.crop_growth.mature").darkGreen());
   } else {
     $JadeCropInfo.INSTANCE.appendTooltip(tooltip.getTooltip(), accessor, pluginConfig);
@@ -298,9 +297,9 @@ global["JadeSocietyCropClientCallback"] = (
     }
   }
   if (needsFarmland && !soil) {
-      if (name.includes("rice")) tooltip.add(Component.translatable("jade.society.crop_growth.need_watered_farmland").red());
-      else tooltip.add(Component.translatable("jade.society.crop_growth.need_farmland").red());
-  } 
+    if (name.includes("rice")) tooltip.add(Component.translatable("jade.society.crop_growth.need_watered_farmland").red());
+    else tooltip.add(Component.translatable("jade.society.crop_growth.need_farmland").red());
+  }
 };
 
 JadeEvents.onClientRegistration((e) => {
